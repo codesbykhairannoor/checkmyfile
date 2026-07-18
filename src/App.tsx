@@ -99,6 +99,7 @@ export const App: React.FC = () => {
       <div style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: 'column' }}>
         {activeTool ? (
           <ToolPage
+            key={activeTool.id}
             tool={activeTool}
             currentLang={currentLang}
             onBackToHome={handleNavigateHome}

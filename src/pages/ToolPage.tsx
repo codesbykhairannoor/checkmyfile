@@ -1,11 +1,11 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { getUiTranslations } from '../i18n/translations';
 import { getLocalizedSeo, type ToolDefinition } from '../catalog/toolsCatalog';
 import { SeoHead } from '../components/seo/SeoHead';
 import { FileDropzone } from '../components/common/FileDropzone';
 import { ProgressBar } from '../components/common/ProgressBar';
 import { DocumentLivePreview } from '../components/common/DocumentLivePreview';
-import { Play, ArrowLeft, HelpCircle, ShieldCheck } from 'lucide-react';
+import { ArrowLeft, HelpCircle, ShieldCheck } from 'lucide-react';
 import { useWorkspaceFiles } from '../hooks/useWorkspaceFiles';
 
 import { useDocumentProcessor } from '../hooks/useDocumentProcessor';
@@ -20,7 +20,6 @@ interface ToolPageProps {
 
 export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToHome, onEditorActive }) => {
   const { files, setFiles } = useWorkspaceFiles(tool.id);
-  const anotherFileInputRef = useRef<HTMLInputElement>(null);
   const {
     isProcessing, progress, statusText, isCompleted, downloadBlobUrl, downloadFilename, resultFile, errorMessage, ocrTextResult,
     startProcessing, resetProcessor
@@ -38,9 +37,16 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
   const [splitRange, setSplitRange] = useState<string>('');
   const [rotateDegrees, setRotateDegrees] = useState<number>(0);
   const [password, setPassword] = useState<string>('');
-  const [pageNumberPos, setPageNumberPos] = useState<'bottom-center' | 'bottom-right' | 'top-center' | 'top-right'>('bottom-center');
+  const [pageNumberConfig, setPageNumberConfig] = useState({
+    position: 'bottom-center' as const,
+    format: '{n} / {p}',
+    startPage: 1,
+    startNumber: 1
+  });
   const [watermarkConfig, setWatermarkConfig] = useState({
+    type: 'text' as 'text' | 'image',
     text: 'CONFIDENTIAL',
+    imageUrl: '', // Base64 data URL
     opacity: 0.22,
     color: '#bf2626',
     scale: 1,
@@ -64,15 +70,15 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
   const handleStartProcessing = () => {
     startProcessing({
       files, toolId: tool.id, toolCategory: tool.category, currentLang,
-      splitRange, rotateDegrees, password, pageNumberPos, watermarkConfig, compressQuality
+      splitRange, rotateDegrees, password, pageNumberConfig, watermarkConfig, compressQuality
     });
   };
 
-  const handleDownload = () => {
+  const handleDownload = (customName?: string) => {
     if (!downloadBlobUrl) return;
     const a = document.createElement('a');
     a.href = downloadBlobUrl;
-    a.download = downloadFilename;
+    a.download = customName || downloadFilename;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -86,16 +92,16 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
   const isEditorMode = files.length > 0 && !isProcessing && !isCompleted;
 
   return (
-    <main style={{ 
-      maxWidth: 1440, 
-      margin: '0 auto', 
+    <main style={{
+      maxWidth: 1440,
+      margin: '0 auto',
       padding: isEditorMode ? '24px' : '32px 24px',
       flex: 1,
       minHeight: 0,
       width: '100%',
       display: 'flex',
       flexDirection: 'column',
-      overflow: 'hidden'
+      overflow: 'auto'
     }}>
       <SeoHead tool={tool} lang={currentLang} />
 
@@ -112,7 +118,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
       )}
 
       {/* Header - Hidden in Workspace Mode and Result Mode to maximize preview space */}
-      {(files.length === 0 || isProcessing) && !isCompleted && (
+      {files.length === 0 && !isCompleted && (
         <div style={{ textAlign: 'center', marginBottom: 40 }}>
           <h1 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', fontWeight: 800, fontFamily: 'var(--font-display)', marginBottom: 12 }}>
             {seo.h1}
@@ -124,170 +130,38 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
       )}
 
       {/* Interactive Document Live Preview & Editor */}
-      {files.length > 0 && !isProcessing && !isCompleted && (
-        <>
-          {['rotate-pdf', 'watermark-pdf', 'page-numbers', 'split-pdf', 'merge-pdf', 'compress-pdf'].includes(tool.id) ? (
-            <div style={{ display: 'flex', width: '100%', height: '100%', flex: 1, gap: 24, minHeight: 0, justifyContent: 'center' }}>
-              {/* Left Workspace */}
-              <div style={{ flex: '1 1 680px', maxWidth: 680, minWidth: 0, minHeight: 0, display: 'flex', flexDirection: 'column', gap: 24, overflow: 'hidden', paddingRight: 8, paddingBottom: 24 }}>
-
-                <DocumentLivePreview
-                  files={files}
-                  currentLang={currentLang}
-                  externalRotate={tool.id === 'rotate-pdf' ? rotateDegrees : undefined}
-                  watermarkConfig={tool.id === 'watermark-pdf' ? watermarkConfig : undefined}
-                  pageNumberConfig={tool.id === 'page-numbers' ? { position: pageNumberPos } : undefined}
-                  splitRange={tool.id === 'split-pdf' ? splitRange : undefined}
-                  compressQuality={tool.id === 'compress-pdf' ? compressQuality : undefined}
-                  activeFileIndex={activeFileIndex}
-                />
-              </div>
-
-              <ToolSidebar
-                tool={tool} files={files} setFiles={setFiles} activeFileIndex={activeFileIndex} setActiveFileIndex={setActiveFileIndex}
-                isProcessing={isProcessing} handleStartProcessing={handleStartProcessing}
-                splitRange={splitRange} setSplitRange={setSplitRange}
-                rotateDegrees={rotateDegrees} setRotateDegrees={setRotateDegrees}
-                pageNumberPos={pageNumberPos} setPageNumberPos={setPageNumberPos as any}
-                watermarkConfig={watermarkConfig} setWatermarkConfig={setWatermarkConfig}
-                compressQuality={compressQuality} setCompressQuality={setCompressQuality}
-                formatSize={formatSize}
+      {files.length > 0 && !isCompleted && (
+        <div style={{ display: 'flex', width: '100%', height: '100%', maxHeight: 800, flex: 1, gap: 24, minHeight: 0, justifyContent: 'center' }}>
+          {/* Left Workspace */}
+          <div style={{ flex: 1, minWidth: 0, minHeight: 650, display: 'flex', flexDirection: 'column', gap: 24, overflow: 'hidden', paddingRight: 8, paddingBottom: 24 }}>
+            <DocumentLivePreview
+              files={files}
+              currentLang={currentLang}
+                activeFileIndex={activeFileIndex}
+                externalRotate={rotateDegrees}
+                watermarkConfig={tool.id === 'watermark-pdf' ? watermarkConfig : undefined}
+                pageNumberConfig={tool.id === 'page-numbers' ? pageNumberConfig : undefined}
+                splitRange={tool.id === 'split-pdf' ? splitRange : undefined}
+                compressQuality={tool.id === 'compress-pdf' ? compressQuality : undefined}
               />
-            </div>
-          ) : (
-            <DocumentLivePreview files={files} currentLang={currentLang} />
-          )}
-        </>
-      )}
+          </div>
 
-      {files.length > 0 && !isProcessing && !isCompleted && !['rotate-pdf', 'watermark-pdf', 'page-numbers', 'split-pdf', 'merge-pdf', 'compress-pdf'].includes(tool.id) && (
-        <div className="glass-panel" style={{ padding: 24, marginBottom: 24 }}>
-          <h4 style={{ fontWeight: 700, marginBottom: 16, fontSize: '1rem', color: 'var(--text-accent)' }}>
-            Processing Options:
-          </h4>
-
-          {tool.id === 'split-pdf' && (
-            <div>
-              <label style={{ display: 'block', fontSize: '0.9rem', marginBottom: 6, color: 'var(--text-muted)' }}>
-                Page Range (e.g. `1-3, 5, 8` or leave empty to split every single page):
-              </label>
-              <input
-                type="text"
-                value={splitRange}
-                onChange={(e) => setSplitRange(e.target.value)}
-                placeholder="e.g. 1-3, 5, 8"
-                style={{
-                  width: '100%',
-                  padding: '12px 16px',
-                  borderRadius: 8,
-                  border: '1px solid var(--border-color)',
-                  background: 'var(--bg-input)',
-                  color: 'var(--text-main)',
-                  outline: 'none',
-                }}
-              />
-            </div>
-          )}
-
-          {(tool.id === 'protect-pdf' || tool.id === 'unlock-pdf') && (
-            <div>
-              <label style={{ display: 'block', fontSize: '0.9rem', marginBottom: 6, color: 'var(--text-muted)' }}>
-                {tool.id === 'protect-pdf' ? 'New Password for Encryption:' : 'Password (if known):'}
-              </label>
-              <input
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="Enter password..."
-                style={{
-                  width: '100%',
-                  padding: '12px 16px',
-                  borderRadius: 8,
-                  border: '1px solid var(--border-color)',
-                  background: 'var(--bg-input)',
-                  color: 'var(--text-main)',
-                  outline: 'none',
-                }}
-              />
-            </div>
-          )}
-
-          {tool.id === 'page-numbers' && (
-            <div>
-              <label style={{ display: 'block', fontSize: '0.9rem', marginBottom: 6, color: 'var(--text-muted)' }}>
-                Page Number Position:
-              </label>
-              <select
-                value={pageNumberPos}
-                onChange={(e: any) => setPageNumberPos(e.target.value)}
-                style={{
-                  width: '100%',
-                  padding: '12px 16px',
-                  borderRadius: 8,
-                  border: '1px solid var(--border-color)',
-                  background: 'var(--bg-input)',
-                  color: 'var(--text-main)',
-                }}
-              >
-                <option value="bottom-center">Bottom Center (Page X of Y)</option>
-                <option value="bottom-right">Bottom Right</option>
-                <option value="top-center">Top Center</option>
-                <option value="top-right">Top Right</option>
-              </select>
-            </div>
-          )}
-
-          {tool.id === 'compress-pdf' && (
-            <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-              {[
-                { id: 'balanced', label: 'Balanced (Best for Most PDFs)' },
-                { id: 'extreme', label: 'Extreme (Maximum Size Reduction)' },
-                { id: 'high', label: 'High Quality (Clean Structural Optimize)' },
-              ].map((opt) => (
-                <button
-                  key={opt.id}
-                  onClick={() => setCompressQuality(opt.id as any)}
-                  className="btn-secondary"
-                  style={{
-                    background: compressQuality === opt.id ? 'var(--brand-gradient)' : undefined,
-                    color: compressQuality === opt.id ? '#fff' : undefined,
-                    border: compressQuality === opt.id ? 'none' : undefined,
-                  }}
-                >
-                  {opt.label}
-                </button>
-              ))}
-            </div>
-          )}
-
-          {tool.id === 'pdf-to-image' && (
-            <div style={{ display: 'flex', gap: 12 }}>
-              <button
-                onClick={() => setExtractImageFormat('png')}
-                className="btn-secondary"
-                style={{
-                  background: extractImageFormat === 'png' ? 'var(--brand-gradient)' : undefined,
-                  color: extractImageFormat === 'png' ? '#fff' : undefined,
-                  border: extractImageFormat === 'png' ? 'none' : undefined,
-                }}
-              >
-                Extract as PNG Images (Lossless)
-              </button>
-              <button
-                onClick={() => setExtractImageFormat('jpg')}
-                className="btn-secondary"
-                style={{
-                  background: extractImageFormat === 'jpg' ? 'var(--brand-gradient)' : undefined,
-                  color: extractImageFormat === 'jpg' ? '#fff' : undefined,
-                  border: extractImageFormat === 'jpg' ? 'none' : undefined,
-                }}
-              >
-                Extract as JPG Images (Smaller ZIP)
-              </button>
-            </div>
-          )}
+          <ToolSidebar
+            tool={tool} files={files} setFiles={setFiles} activeFileIndex={activeFileIndex} setActiveFileIndex={setActiveFileIndex}
+            isProcessing={isProcessing} handleStartProcessing={handleStartProcessing}
+            splitRange={splitRange} setSplitRange={setSplitRange}
+            rotateDegrees={rotateDegrees} setRotateDegrees={setRotateDegrees}
+            pageNumberConfig={pageNumberConfig} setPageNumberConfig={setPageNumberConfig}
+            watermarkConfig={watermarkConfig} setWatermarkConfig={setWatermarkConfig}
+            compressQuality={compressQuality} setCompressQuality={setCompressQuality}
+            password={password} setPassword={setPassword}
+            extractImageFormat={extractImageFormat} setExtractImageFormat={setExtractImageFormat}
+            formatSize={formatSize}
+          />
         </div>
       )}
+
+
 
       {/* Error Notice */}
       {errorMessage && (
@@ -318,57 +192,30 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
         />
       )}
 
-      {/* Action Buttons when files are selected */}
-      {files.length > 0 && !isProcessing && !isCompleted && !['rotate-pdf', 'watermark-pdf', 'page-numbers', 'split-pdf', 'merge-pdf', 'compress-pdf'].includes(tool.id) && (
-        <div style={{ textAlign: 'center', margin: '32px 0', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}>
-          <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center' }}>
-            <button onClick={handleStartProcessing} className="btn-primary" style={{ padding: '16px 40px', fontSize: '1.1rem' }}>
-              <Play size={20} />
-              <span>{t.processBtn} ({files.length} {files.length === 1 ? 'file' : 'files'})</span>
-            </button>
-
-            <button
-              onClick={() => anotherFileInputRef.current?.click()}
-              className="btn-secondary"
-              style={{ padding: '15px 26px', fontSize: '1rem', border: '1.5px solid var(--border-color)' }}
-            >
-              📁 Pilih / Ganti Dokumen Lain (Change File)
-            </button>
-          </div>
-
-          <input
-            type="file"
-            ref={anotherFileInputRef}
-            onChange={(e) => {
-              if (e.target.files && e.target.files.length > 0) {
-                setFiles(Array.from(e.target.files));
-                resetProcessor();
-              }
-            }}
-            style={{ display: 'none' }}
-            multiple={tool.id === 'merge-pdf' || tool.id === 'image-to-pdf'}
-          />
-        </div>
-      )}
-
-      {/* Progress & Result Bar (Moved to top so it's immediately visible) */}
-      <ProgressBar
-        currentLang={currentLang}
-        isProcessing={isProcessing}
-        progress={progress}
-        statusText={statusText}
-        isCompleted={isCompleted}
-        onDownload={handleDownload}
-        onReset={handleReset}
-      />
-
       {/* Live Preview of the Converted / Processed Result */}
       {isCompleted && resultFile && (
         <div style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
-          <DocumentLivePreview files={[resultFile]} currentLang={currentLang} isResult={true} />
+          <DocumentLivePreview 
+            files={[resultFile]} 
+            currentLang={currentLang} 
+            isResult={true} 
+            renderBottomRight={
+              <ProgressBar
+                currentLang={currentLang}
+                isProcessing={isProcessing}
+                progress={progress}
+                statusText={statusText}
+                isCompleted={isCompleted}
+                onDownload={handleDownload}
+                onReset={handleReset}
+                originalFilename={downloadFilename}
+                originalSize={tool.id === 'compress-pdf' && files.length > 0 ? files[0].size : undefined}
+                compressedSize={tool.id === 'compress-pdf' && resultFile ? resultFile.size : undefined}
+              />
+            }
+          />
         </div>
       )}
-
       {/* OCR Result Display */}
       {ocrTextResult && (
         <div className="glass-panel" style={{ padding: 24, margin: '28px 0' }}>
@@ -392,7 +239,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
       )}
 
       {/* Localized FAQ Accordion (Programmatic SEO Schema integration) */}
-      {(files.length === 0 || isProcessing) && !isCompleted && (
+      {files.length === 0 && !isCompleted && (
         <section style={{ marginTop: 64 }}>
           <div className="glass-panel" style={{ padding: 32 }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 24 }}>

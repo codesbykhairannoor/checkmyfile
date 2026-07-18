@@ -3,15 +3,18 @@ import React from 'react';
 interface PdfPreviewProps {
   canvasRef: React.RefObject<HTMLCanvasElement | null>;
   isLoadingPreview: boolean;
-  watermarkConfig?: { text: string; opacity: number; color: string; scale: number; rotation: number; };
-  pageNumberConfig?: { position: 'bottom-center' | 'bottom-right' | 'top-center' | 'top-right' };
+  watermarkConfig?: { type?: 'text' | 'image'; text: string; imageUrl?: string; opacity: number; color: string; scale: number; rotation: number; };
+  pageNumberConfig?: any;
   pageNumber: number;
+  totalPages: number;
+  containerWidth?: number;
+  containerHeight?: number;
   splitRange?: string;
   compressQuality?: 'extreme' | 'balanced' | 'high';
 }
 
 export const PdfPreview: React.FC<PdfPreviewProps> = ({
-  canvasRef, isLoadingPreview, watermarkConfig, pageNumberConfig, pageNumber, splitRange, compressQuality
+  canvasRef, isLoadingPreview, watermarkConfig, pageNumberConfig, pageNumber, totalPages, containerWidth, containerHeight, splitRange, compressQuality
 }) => {
   return (
     <>
@@ -29,25 +32,46 @@ export const PdfPreview: React.FC<PdfPreviewProps> = ({
         <div style={{ position: 'absolute', inset: 0, display: 'flex', pointerEvents: 'none', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', zIndex: 20 }}>
           <div style={{
             transform: `rotate(${watermarkConfig.rotation}deg) scale(${watermarkConfig.scale})`,
-            opacity: watermarkConfig.opacity, color: watermarkConfig.color, fontSize: 'clamp(2rem, 8vw, 6rem)',
-            fontWeight: 800, textTransform: 'uppercase', whiteSpace: 'nowrap', fontFamily: 'var(--font-display)',
+            opacity: watermarkConfig.opacity, 
+            display: 'flex', alignItems: 'center', justifyContent: 'center'
           }}>
-            {watermarkConfig.text}
+            {watermarkConfig.type === 'image' && watermarkConfig.imageUrl ? (
+              <img src={watermarkConfig.imageUrl} alt="Watermark" style={{ width: '50%', height: 'auto', objectFit: 'contain' }} />
+            ) : (
+              <span style={{ 
+                color: watermarkConfig.color, 
+                fontSize: `${Math.min(containerWidth || 600, containerHeight || 800) / 9}px`,
+                fontWeight: 'bold', whiteSpace: 'nowrap', fontFamily: 'Helvetica, Arial, sans-serif' 
+              }}>
+                {watermarkConfig.text}
+              </span>
+            )}
           </div>
         </div>
       )}
 
       {pageNumberConfig && !isLoadingPreview && (
-        <div style={{
-          position: 'absolute', inset: 20, pointerEvents: 'none', display: 'flex',
-          alignItems: pageNumberConfig.position.startsWith('top') ? 'flex-start' : 'flex-end',
-          justifyContent: pageNumberConfig.position.endsWith('left') ? 'flex-start' : pageNumberConfig.position.endsWith('right') ? 'flex-end' : 'center',
-          zIndex: 20
-        }}>
-          <div style={{ fontSize: '1rem', fontWeight: 600, color: '#1e293b', background: 'rgba(255,255,255,0.7)', padding: '4px 8px', borderRadius: 4 }}>
-            {pageNumber}
-          </div>
-        </div>
+        (() => {
+          if (pageNumber < pageNumberConfig.startPage) return null;
+          
+          const currentNumber = pageNumberConfig.startNumber + (pageNumber - pageNumberConfig.startPage);
+          const text = (pageNumberConfig.format || '{n}')
+            .replace('{n}', currentNumber.toString())
+            .replace('{p}', totalPages.toString());
+
+          return (
+            <div style={{
+              position: 'absolute', inset: 32, pointerEvents: 'none', display: 'flex',
+              alignItems: pageNumberConfig.position.startsWith('top') ? 'flex-start' : 'flex-end',
+              justifyContent: pageNumberConfig.position.endsWith('left') ? 'flex-start' : pageNumberConfig.position.endsWith('right') ? 'flex-end' : 'center',
+              zIndex: 20
+            }}>
+              <div style={{ fontSize: '14px', fontWeight: 600, color: '#1e293b', background: 'rgba(255,255,255,0.7)', padding: '4px 8px', borderRadius: 4 }}>
+                {text}
+              </div>
+            </div>
+          );
+        })()
       )}
 
       {splitRange !== undefined && !isLoadingPreview && (

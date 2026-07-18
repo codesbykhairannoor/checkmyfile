@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import * as pdfEngine from '../engines/pdfEngine';
 import * as compressEngine from '../engines/compressEngine';
 import * as officeEngine from '../engines/officeEngine';
@@ -14,7 +14,7 @@ interface ProcessorOptions {
   splitRange?: string;
   rotateDegrees?: number;
   password?: string;
-  pageNumberPos?: string;
+  pageNumberConfig?: any;
   watermarkConfig?: any;
   compressQuality?: any;
 }
@@ -29,6 +29,14 @@ export function useDocumentProcessor() {
   const [resultFile, setResultFile] = useState<File | null>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [ocrTextResult, setOcrTextResult] = useState<string | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (downloadBlobUrl) {
+        URL.revokeObjectURL(downloadBlobUrl);
+      }
+    };
+  }, [downloadBlobUrl]);
 
   const startProcessing = async (options: ProcessorOptions) => {
     const { files, toolId, toolCategory, currentLang } = options;
@@ -71,7 +79,7 @@ export function useDocumentProcessor() {
         resultBytes = await pdfEngine.unlockPdf(files[0], options.password, (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_unlocked.pdf`;
       } else if (toolId === 'page-numbers') {
-        resultBytes = await pdfEngine.addPageNumbers(files[0], options.pageNumberPos as any, (p) => setProgress(p));
+        resultBytes = await pdfEngine.addPageNumbers(files[0], options.pageNumberConfig, (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_numbered.pdf`;
       } else if (toolId === 'watermark-pdf') {
         resultBytes = await pdfEngine.addWatermark(files[0], options.watermarkConfig, (p) => setProgress(p));
@@ -137,6 +145,9 @@ export function useDocumentProcessor() {
   };
 
   const resetProcessor = () => {
+    if (downloadBlobUrl) {
+      URL.revokeObjectURL(downloadBlobUrl);
+    }
     setResultFile(null);
     setIsProcessing(false);
     setIsCompleted(false);

@@ -1,6 +1,9 @@
 import { PDFDocument, degrees } from 'pdf-lib';
 import * as pdfjsLib from 'pdfjs-dist';
 
+// Initialize PDF.js worker using public CDNs or built-in worker
+pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.mjs`;
+
 export type CompressionQuality = 'extreme' | 'balanced' | 'high';
 
 /**
@@ -78,8 +81,11 @@ export const compressPdf = async (
     const newPdfDoc = await PDFDocument.create();
 
     // Determine scale & JPEG quality based on user option
-    const scale = quality === 'extreme' ? 1.05 : 1.35; // ~100 DPI vs ~130 DPI
-    const jpegQuality = quality === 'extreme' ? 0.62 : 0.76;
+    // scale 1.0 is ~72 DPI.
+    // Extreme: 0.8 scale (~57 DPI), 0.5 quality -> Massive reduction (sometimes blurry but very small)
+    // Balanced: 1.0 scale (~72 DPI), 0.65 quality -> Good balance
+    const scale = quality === 'extreme' ? 0.8 : (quality === 'balanced' ? 1.0 : 1.25);
+    const jpegQuality = quality === 'extreme' ? 0.5 : (quality === 'balanced' ? 0.65 : 0.75);
 
     for (let pNum = 1; pNum <= numPages; pNum++) {
       const page = await pdf.getPage(pNum);
@@ -97,7 +103,15 @@ export const compressPdf = async (
         context.fillRect(0, 0, canvas.width, canvas.height);
         await page.render({ canvasContext: context, viewport, canvas } as any).promise;
         const jpegDataUrl = canvas.toDataURL('image/jpeg', jpegQuality);
-        const jpegBytes = await fetch(jpegDataUrl).then((r) => r.arrayBuffer());
+        
+        // Convert base64 data url directly to Uint8Array to prevent fetch() blockages
+        const base64Data = jpegDataUrl.split(',')[1];
+        const binaryStr = window.atob(base64Data);
+        const len = binaryStr.length;
+        const jpegBytes = new Uint8Array(len);
+        for (let i = 0; i < len; i++) {
+          jpegBytes[i] = binaryStr.charCodeAt(i);
+        }
 
         const embeddedImg = await newPdfDoc.embedJpg(jpegBytes);
         const origViewport = page.getViewport({ scale: 1.0, rotation: 0 });
@@ -121,11 +135,13 @@ export const compressPdf = async (
 
     // Return the smaller of the two approaches to guarantee we never increase file size!
     if (hybridBytes.byteLength < structuralBytes.byteLength) {
+      console.log(`[CompressEngine] Hybrid Compression succeeded! Hybrid: ${hybridBytes.byteLength}, Structural: ${structuralBytes.byteLength}`);
       return hybridBytes;
     }
+    console.log(`[CompressEngine] Hybrid Compression resulted in a LARGER file (${hybridBytes.byteLength} vs ${structuralBytes.byteLength}). Falling back to structural.`);
     return structuralBytes;
   } catch (hybridErr) {
-    console.warn('Hybrid compression fallback to structural:', hybridErr);
+    console.error('Hybrid compression failed entirely, fallback to structural:', hybridErr);
     onProgress(100);
     return structuralBytes;
   }

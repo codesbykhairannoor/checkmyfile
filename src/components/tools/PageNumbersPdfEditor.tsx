@@ -4,15 +4,15 @@ import { Hash, Download, Settings2, AlignCenter, AlignRight } from 'lucide-react
 export type PageNumberPosition = 'bottom-center' | 'bottom-right' | 'top-center' | 'top-right';
 
 interface PageNumbersPdfEditorProps {
-  position: PageNumberPosition;
-  setPosition: (pos: PageNumberPosition) => void;
+  config: any;
+  setConfig: (config: any) => void;
   onApply: () => void;
   isProcessing: boolean;
 }
 
 export const PageNumbersPdfEditor: React.FC<PageNumbersPdfEditorProps> = ({
-  position,
-  setPosition,
+  config,
+  setConfig,
   onApply,
   isProcessing
 }) => {
@@ -34,60 +34,104 @@ export const PageNumbersPdfEditor: React.FC<PageNumbersPdfEditorProps> = ({
         </label>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
           <button
-            onClick={() => setPosition('top-center')}
+            onClick={() => setConfig({ ...config, position: 'top-center' })}
             style={{ 
               display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, padding: '12px 0', 
-              background: position === 'top-center' ? 'var(--brand-gradient)' : 'var(--bg-input)', 
-              border: position === 'top-center' ? 'none' : '1px solid var(--border-color)', 
+              background: config.position === 'top-center' ? 'var(--brand-gradient)' : 'var(--bg-input)', 
+              border: config.position === 'top-center' ? 'none' : '1px solid var(--border-color)', 
               borderRadius: 12, cursor: 'pointer',
-              color: position === 'top-center' ? '#fff' : 'var(--text-main)'
+              color: config.position === 'top-center' ? '#fff' : 'var(--text-main)'
             }}
           >
             <AlignCenter size={20} />
-            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: position === 'top-center' ? 'rgba(255,255,255,0.9)' : 'var(--text-muted)' }}>Top Center</span>
+            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: config.position === 'top-center' ? 'rgba(255,255,255,0.9)' : 'var(--text-muted)' }}>Top Center</span>
           </button>
 
           <button
-            onClick={() => setPosition('top-right')}
+            onClick={() => setConfig({ ...config, position: 'top-right' })}
             style={{ 
               display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, padding: '12px 0', 
-              background: position === 'top-right' ? 'var(--brand-gradient)' : 'var(--bg-input)', 
-              border: position === 'top-right' ? 'none' : '1px solid var(--border-color)', 
+              background: config.position === 'top-right' ? 'var(--brand-gradient)' : 'var(--bg-input)', 
+              border: config.position === 'top-right' ? 'none' : '1px solid var(--border-color)', 
               borderRadius: 12, cursor: 'pointer',
-              color: position === 'top-right' ? '#fff' : 'var(--text-main)'
+              color: config.position === 'top-right' ? '#fff' : 'var(--text-main)'
             }}
           >
             <AlignRight size={20} />
-            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: position === 'top-right' ? 'rgba(255,255,255,0.9)' : 'var(--text-muted)' }}>Top Right</span>
+            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: config.position === 'top-right' ? 'rgba(255,255,255,0.9)' : 'var(--text-muted)' }}>Top Right</span>
           </button>
 
           <button
-            onClick={() => setPosition('bottom-center')}
+            onClick={() => setConfig({ ...config, position: 'bottom-center' })}
             style={{ 
               display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, padding: '12px 0', 
-              background: position === 'bottom-center' ? 'var(--brand-gradient)' : 'var(--bg-input)', 
-              border: position === 'bottom-center' ? 'none' : '1px solid var(--border-color)', 
+              background: config.position === 'bottom-center' ? 'var(--brand-gradient)' : 'var(--bg-input)', 
+              border: config.position === 'bottom-center' ? 'none' : '1px solid var(--border-color)', 
               borderRadius: 12, cursor: 'pointer',
-              color: position === 'bottom-center' ? '#fff' : 'var(--text-main)'
+              color: config.position === 'bottom-center' ? '#fff' : 'var(--text-main)'
             }}
           >
             <AlignCenter size={20} />
-            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: position === 'bottom-center' ? 'rgba(255,255,255,0.9)' : 'var(--text-muted)' }}>Bottom Center</span>
+            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: config.position === 'bottom-center' ? 'rgba(255,255,255,0.9)' : 'var(--text-muted)' }}>Bottom Center</span>
           </button>
 
           <button
-            onClick={() => setPosition('bottom-right')}
+            onClick={() => setConfig({ ...config, position: 'bottom-right' })}
             style={{ 
               display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, padding: '12px 0', 
-              background: position === 'bottom-right' ? 'var(--brand-gradient)' : 'var(--bg-input)', 
-              border: position === 'bottom-right' ? 'none' : '1px solid var(--border-color)', 
+              background: config.position === 'bottom-right' ? 'var(--brand-gradient)' : 'var(--bg-input)', 
+              border: config.position === 'bottom-right' ? 'none' : '1px solid var(--border-color)', 
               borderRadius: 12, cursor: 'pointer',
-              color: position === 'bottom-right' ? '#fff' : 'var(--text-main)'
+              color: config.position === 'bottom-right' ? '#fff' : 'var(--text-main)'
             }}
           >
             <AlignRight size={20} />
-            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: position === 'bottom-right' ? 'rgba(255,255,255,0.9)' : 'var(--text-muted)' }}>Bottom Right</span>
+            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: config.position === 'bottom-right' ? 'rgba(255,255,255,0.9)' : 'var(--text-muted)' }}>Bottom Right</span>
           </button>
+        </div>
+      </div>
+
+      <div>
+        <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'block', marginBottom: 12 }}>
+          Format Teks
+        </label>
+        <select
+          value={config.format}
+          onChange={(e) => setConfig({ ...config, format: e.target.value })}
+          style={{ width: '100%', padding: '12px 14px', borderRadius: 8, border: '1px solid var(--border-color)', background: 'var(--bg-input)', color: 'var(--text-main)', fontSize: '0.9rem', outline: 'none' }}
+        >
+          <option value="{n}">{`{n} (Contoh: 1)`}</option>
+          <option value="{n} / {p}">{`{n} / {p} (Contoh: 1 / 10)`}</option>
+          <option value="Hal {n}">{`Hal {n} (Contoh: Hal 1)`}</option>
+          <option value="Halaman {n} dari {p}">{`Halaman {n} dari {p}`}</option>
+          <option value="Page {n} of {p}">{`Page {n} of {p}`}</option>
+        </select>
+      </div>
+
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+        <div>
+          <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'block', marginBottom: 12 }}>
+            Mulai di Halaman
+          </label>
+          <input
+            type="number"
+            min="1"
+            value={config.startPage}
+            onChange={(e) => setConfig({ ...config, startPage: parseInt(e.target.value) || 1 })}
+            style={{ width: '100%', padding: '12px 14px', borderRadius: 8, border: '1px solid var(--border-color)', background: 'var(--bg-input)', color: 'var(--text-main)', fontSize: '0.9rem', outline: 'none' }}
+          />
+        </div>
+        <div>
+          <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'block', marginBottom: 12 }}>
+            Angka Awal
+          </label>
+          <input
+            type="number"
+            min="1"
+            value={config.startNumber}
+            onChange={(e) => setConfig({ ...config, startNumber: parseInt(e.target.value) || 1 })}
+            style={{ width: '100%', padding: '12px 14px', borderRadius: 8, border: '1px solid var(--border-color)', background: 'var(--bg-input)', color: 'var(--text-main)', fontSize: '0.9rem', outline: 'none' }}
+          />
         </div>
       </div>
 

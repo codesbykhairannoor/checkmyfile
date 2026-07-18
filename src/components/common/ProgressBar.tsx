@@ -1,6 +1,6 @@
 import React from 'react';
 import { getUiTranslations } from '../../i18n/translations';
-import { Download, RefreshCw, CheckCircle2, Loader2 } from 'lucide-react';
+import { Download, RefreshCw, Loader2 } from 'lucide-react';
 
 interface ProgressBarProps {
   currentLang: string;
@@ -8,9 +8,13 @@ interface ProgressBarProps {
   progress: number;
   statusText?: string;
   isCompleted: boolean;
-  onDownload: () => void;
+  onDownload: (filename?: string) => void;
   onReset: () => void;
   downloadLabel?: string;
+  style?: React.CSSProperties;
+  originalFilename?: string;
+  originalSize?: number;
+  compressedSize?: number;
 }
 
 export const ProgressBar: React.FC<ProgressBarProps> = ({
@@ -22,8 +26,38 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
   onDownload,
   onReset,
   downloadLabel,
+  style,
+  originalFilename,
+  originalSize,
+  compressedSize,
 }) => {
   const t = getUiTranslations(currentLang);
+  const [filename, setFilename] = React.useState('Checkmyfile');
+
+  const formatSize = (bytes: number) => {
+    if (bytes < 1024) return `${bytes} B`;
+    if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
+    return `${(bytes / (1024 * 1024)).toFixed(2)} MB`;
+  };
+
+  const handleDownloadClick = () => {
+    if (!filename.trim()) {
+      alert("⚠️ Nama file tidak boleh kosong! Silakan berikan nama untuk berkas Anda.");
+      return;
+    }
+    
+    let ext = '.pdf';
+    if (originalFilename && originalFilename.includes('.')) {
+      ext = originalFilename.substring(originalFilename.lastIndexOf('.'));
+    }
+    
+    let finalName = filename.trim();
+    if (!finalName.toLowerCase().endsWith(ext.toLowerCase())) {
+      finalName += ext;
+    }
+    
+    onDownload(finalName);
+  };
 
   if (!isProcessing && !isCompleted) return null;
 
@@ -31,11 +65,12 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
     <div
       className="glass-panel"
       style={{
-        padding: 28,
+        padding: isCompleted ? '12px 24px' : 28,
         margin: '28px 0',
-        textAlign: 'center',
+        textAlign: isCompleted ? 'left' : 'center',
         background: isCompleted ? 'rgba(16, 185, 129, 0.06)' : 'rgba(99, 102, 241, 0.05)',
         border: isCompleted ? '1px solid rgba(16, 185, 129, 0.3)' : '1px solid rgba(99, 102, 241, 0.3)',
+        ...style,
       }}
     >
       {isProcessing && !isCompleted && (
@@ -58,29 +93,49 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
       )}
 
       {isCompleted && (
-        <div>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, marginBottom: 16 }}>
-            <CheckCircle2 size={32} className="text-emerald-400" />
-            <h4 style={{ fontSize: '1.3rem', fontWeight: 800, color: '#10b981' }}>
-              Conversion Completed Locally!
-            </h4>
-          </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+          <input
+            type="text"
+            value={filename}
+            onChange={(e) => setFilename(e.target.value)}
+            placeholder="Masukkan nama file..."
+            style={{
+              width: '100%',
+              padding: '10px 14px',
+              borderRadius: 8,
+              border: '1px solid var(--border-color)',
+              background: 'var(--bg-input)',
+              color: 'var(--text-main)',
+              fontSize: '0.95rem',
+              outline: 'none',
+              boxShadow: 'inset 0 1px 3px rgba(0,0,0,0.1)'
+            }}
+          />
 
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: 24 }}>
-            Your document was processed safely inside your browser memory without being uploaded anywhere.
-          </p>
-
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 16, flexWrap: 'wrap' }}>
-            <button onClick={onDownload} className="btn-primary" style={{ background: '#10b981' }}>
-              <Download size={18} />
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8, marginTop: 4 }}>
+            <button onClick={handleDownloadClick} className="btn-primary" style={{ background: '#10b981', padding: '10px', fontSize: '0.9rem', justifyContent: 'center' }}>
+              <Download size={16} />
               <span>{downloadLabel || t.downloadBtn}</span>
             </button>
 
-            <button onClick={onReset} className="btn-secondary">
-              <RefreshCw size={18} />
+            <button onClick={onReset} className="btn-secondary" style={{ padding: '10px', fontSize: '0.9rem', justifyContent: 'center' }}>
+              <RefreshCw size={16} />
               <span>{t.resetBtn}</span>
             </button>
           </div>
+          
+          {originalSize !== undefined && compressedSize !== undefined && (
+            <div style={{ fontSize: '0.85rem', textAlign: 'center', marginTop: 4, background: 'rgba(16, 185, 129, 0.1)', padding: '8px', borderRadius: 8, color: '#047857', fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8 }}>
+              <span>
+                <span style={{ textDecoration: 'line-through', opacity: 0.7, marginRight: 6 }}>{formatSize(originalSize)}</span> 
+                ➔ 
+                <span style={{ marginLeft: 6 }}>{formatSize(compressedSize)}</span> 
+              </span>
+              <span style={{ background: '#10b981', color: 'white', padding: '2px 6px', borderRadius: 12, fontSize: '0.75rem' }}>
+                -{((1 - compressedSize / originalSize) * 100).toFixed(0)}%
+              </span>
+            </div>
+          )}
         </div>
       )}
     </div>

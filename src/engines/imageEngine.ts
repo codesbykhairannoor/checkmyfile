@@ -1,4 +1,4 @@
-import jsPDF from 'jspdf';
+import { PDFDocument } from 'pdf-lib';
 import * as pdfjsLib from 'pdfjs-dist';
 import { zipSync, strToU8 } from 'fflate';
 
@@ -12,37 +12,60 @@ export const convertImagesToPdf = async (
   if (files.length === 0) throw new Error('No images provided');
   onProgress(10);
 
-  const firstImgUrl = URL.createObjectURL(files[0]);
-  const firstImg = await loadImage(firstImgUrl);
-  URL.revokeObjectURL(firstImgUrl);
-
-  const orientation = firstImg.width > firstImg.height ? 'landscape' : 'portrait';
-  const doc = new jsPDF({
-    orientation,
-    unit: 'px',
-    format: [firstImg.width, firstImg.height],
-  });
+  const pdfDoc = await PDFDocument.create();
 
   for (let i = 0; i < files.length; i++) {
-    onProgress(10 + Math.round(((i + 0.5) / files.length) * 80));
+    onProgress(10 + Math.round(((i + 0.2) / files.length) * 80));
     const file = files[i];
-    const imgUrl = URL.createObjectURL(file);
-    const img = await loadImage(imgUrl);
-    URL.revokeObjectURL(imgUrl);
-
-    if (i > 0) {
-      doc.addPage([img.width, img.height], img.width > img.height ? 'landscape' : 'portrait');
+    
+    let pdfImage;
+    try {
+      const arrayBuffer = await file.arrayBuffer();
+      if (file.type.includes('png')) {
+        pdfImage = await pdfDoc.embedPng(arrayBuffer);
+      } else if (file.type.includes('jpeg') || file.type.includes('jpg')) {
+        pdfImage = await pdfDoc.embedJpg(arrayBuffer);
+      } else {
+        // Fallback for webp/gif, convert to PNG via canvas
+        const imgUrl = URL.createObjectURL(file);
+        const img = await loadImage(imgUrl);
+        URL.revokeObjectURL(imgUrl);
+        
+        const canvas = document.createElement('canvas');
+        canvas.width = img.width;
+        canvas.height = img.height;
+        const ctx = canvas.getContext('2d');
+        if (ctx) {
+          ctx.drawImage(img, 0, 0);
+          const dataUrl = canvas.toDataURL('image/png');
+          pdfImage = await pdfDoc.embedPng(dataUrl);
+        } else {
+          throw new Error('Canvas 2D context not available');
+        }
+      }
+    } catch (err) {
+      console.warn(`Failed to embed image ${file.name}:`, err);
+      continue; // Skip failed images
     }
 
-    const format = file.type.includes('png') ? 'PNG' : 'JPEG';
-    doc.addImage(img, format, 0, 0, img.width, img.height);
+    if (!pdfImage) continue;
+
+    const { width, height } = pdfImage.scale(1);
+    const page = pdfDoc.addPage([width, height]);
+    page.drawImage(pdfImage, {
+      x: 0,
+      y: 0,
+      width,
+      height,
+    });
+    
     onProgress(10 + Math.round(((i + 1) / files.length) * 80));
   }
 
   onProgress(95);
-  const out = doc.output('arraybuffer');
+  const pdfBytes = await pdfDoc.save();
   onProgress(100);
-  return new Uint8Array(out);
+  return pdfBytes;
 };
 
 const loadImage = (url: string): Promise<HTMLImageElement> => {

@@ -5,6 +5,9 @@ import { PageNumbersPdfEditor } from './PageNumbersPdfEditor';
 import { SplitPdfEditor } from './SplitPdfEditor';
 import { MergePdfEditor } from './MergePdfEditor';
 import { CompressPdfEditor } from './CompressPdfEditor';
+import { ProtectPdfEditor } from './ProtectPdfEditor';
+import { PdfToImageEditor } from './PdfToImageEditor';
+import { GenericConvertEditor } from './GenericConvertEditor';
 import type { ToolDefinition } from '../../catalog/toolsCatalog';
 
 interface ToolSidebarProps {
@@ -20,21 +23,26 @@ interface ToolSidebarProps {
   rotateDegrees: number; setRotateDegrees: (v: number) => void;
   watermarkConfig: any;
   setWatermarkConfig: (v: any) => void;
-  pageNumberPos: string;
-  setPageNumberPos: (v: string) => void;
+  pageNumberConfig: any;
+  setPageNumberConfig: (v: any) => void;
   compressQuality: 'extreme' | 'balanced' | 'high';
   setCompressQuality: (v: 'extreme' | 'balanced' | 'high') => void;
+  password?: string;
+  setPassword?: (v: string) => void;
+  extractImageFormat?: 'png' | 'jpg';
+  setExtractImageFormat?: (v: 'png' | 'jpg') => void;
   formatSize: (bytes: number) => string;
 }
 
 export const ToolSidebar: React.FC<ToolSidebarProps> = ({
   tool, files, setFiles, activeFileIndex, setActiveFileIndex, isProcessing, handleStartProcessing,
   splitRange, setSplitRange, rotateDegrees, setRotateDegrees,
-  pageNumberPos, setPageNumberPos, watermarkConfig, setWatermarkConfig, compressQuality, setCompressQuality,
+  pageNumberConfig, setPageNumberConfig, watermarkConfig, setWatermarkConfig, compressQuality, setCompressQuality,
+  password, setPassword, extractImageFormat, setExtractImageFormat,
   formatSize
 }) => {
   return (
-    <div style={{ width: 440, flexShrink: 0, flex: 1, minHeight: 0, paddingRight: 8, paddingBottom: 24, display: 'flex', flexDirection: 'column', gap: 16, marginTop: 0, overflowY: 'auto' }}>
+    <div style={{ flexShrink: 0, flex: 1, minWidth: 350, minHeight: 0, paddingRight: 8, paddingBottom: 24, display: 'flex', flexDirection: 'column', gap: 16, marginTop: 0, overflowY: 'auto' }}>
       {files.length > 0 && (
         <div style={{ background: 'var(--bg-card)', padding: 16, borderRadius: 12, border: '1px solid var(--border-color)', boxShadow: 'var(--shadow-sm)' }}>
           {files.length > 1 && (
@@ -79,26 +87,21 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
           </div>
         </div>
       )}
-      {tool.id === 'rotate-pdf' && (
-        <RotatePdfEditor rotation={rotateDegrees} setRotation={setRotateDegrees} onApply={handleStartProcessing} isProcessing={isProcessing} />
+      {tool.id === 'rotate-pdf' && <RotatePdfEditor rotation={rotateDegrees} setRotation={setRotateDegrees} onApply={handleStartProcessing} isProcessing={isProcessing} />}
+      {tool.id === 'watermark-pdf' && <WatermarkPdfEditor config={watermarkConfig} setConfig={setWatermarkConfig} onApply={handleStartProcessing} isProcessing={isProcessing} />}
+      {tool.id === 'page-numbers' && <PageNumbersPdfEditor config={pageNumberConfig} setConfig={setPageNumberConfig} onApply={handleStartProcessing} isProcessing={isProcessing} />}
+      {tool.id === 'split-pdf' && <SplitPdfEditor splitRange={splitRange} setSplitRange={setSplitRange} onApply={handleStartProcessing} isProcessing={isProcessing} />}
+      {tool.id === 'merge-pdf' && <MergePdfEditor files={files} setFiles={setFiles} onApply={handleStartProcessing} isProcessing={isProcessing} />}
+      {tool.id === 'compress-pdf' && <CompressPdfEditor quality={compressQuality} setQuality={setCompressQuality} onApply={handleStartProcessing} isProcessing={isProcessing} />}
+      {(tool.id === 'protect-pdf' || tool.id === 'unlock-pdf') && password !== undefined && setPassword && (
+        <ProtectPdfEditor mode={tool.id === 'protect-pdf' ? 'protect' : 'unlock'} password={password} setPassword={setPassword} onApply={handleStartProcessing} isProcessing={isProcessing} />
       )}
-      {tool.id === 'watermark-pdf' && (
-        <WatermarkPdfEditor config={watermarkConfig} setConfig={setWatermarkConfig} onApply={handleStartProcessing} isProcessing={isProcessing} />
+      {tool.id === 'pdf-to-image' && extractImageFormat && setExtractImageFormat && (
+        <PdfToImageEditor format={extractImageFormat} setFormat={setExtractImageFormat} onApply={handleStartProcessing} isProcessing={isProcessing} />
       )}
-      {tool.id === 'page-numbers' && (
-        <PageNumbersPdfEditor position={pageNumberPos as any} setPosition={setPageNumberPos as any} onApply={handleStartProcessing} isProcessing={isProcessing} />
+      {['pdf-to-word', 'word-to-pdf', 'excel-to-pdf', 'image-to-pdf'].includes(tool.id) && (
+        <GenericConvertEditor toolId={tool.id} onApply={handleStartProcessing} isProcessing={isProcessing} />
       )}
-      {tool.id === 'split-pdf' && (
-        <SplitPdfEditor splitRange={splitRange} setSplitRange={setSplitRange} onApply={handleStartProcessing} isProcessing={isProcessing} />
-      )}
-      {tool.id === 'merge-pdf' && (
-        <MergePdfEditor files={files} setFiles={setFiles} onApply={handleStartProcessing} isProcessing={isProcessing} />
-      )}
-      {tool.id === 'compress-pdf' && (
-        <CompressPdfEditor quality={compressQuality} setQuality={setCompressQuality} onApply={handleStartProcessing} isProcessing={isProcessing} />
-      )}
-
-
     </div>
   );
 };

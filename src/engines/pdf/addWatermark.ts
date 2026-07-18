@@ -6,7 +6,7 @@ import PptxGenJS from 'pptxgenjs';
 
 export const addWatermark = async (
   file: File,
-  config: { text: string; opacity: number; color: string; scale: number; rotation: number },
+  config: { type?: 'text' | 'image'; text: string; imageUrl?: string; opacity: number; color: string; scale: number; rotation: number },
   onProgress: (progress: number) => void
 ): Promise<Uint8Array> => {
   onProgress(30);
@@ -26,6 +26,21 @@ export const addWatermark = async (
   };
   const rgbColor = hexToRgb(config.color);
 
+  let embeddedImage: any = null;
+  if (config.type === 'image' && config.imageUrl) {
+    try {
+      const base64Data = config.imageUrl.split(',')[1];
+      const imageBytes = Uint8Array.from(atob(base64Data), c => c.charCodeAt(0));
+      if (config.imageUrl.includes('image/png')) {
+        embeddedImage = await pdf.embedPng(imageBytes);
+      } else if (config.imageUrl.includes('image/jpeg') || config.imageUrl.includes('image/jpg')) {
+        embeddedImage = await pdf.embedJpg(imageBytes);
+      }
+    } catch (e) {
+      console.warn("Failed to embed watermark image", e);
+    }
+  }
+
   for (let i = 0; i < totalPages; i++) {
     const page = pages[i];
     const { width, height } = page.getSize();
@@ -34,15 +49,43 @@ export const addWatermark = async (
     const text = config.text || 'CONFIDENTIAL';
     const textWidth = font.widthOfTextAtSize(text, textSize);
 
-    page.drawText(text, {
-      x: width / 2 - textWidth / 2,
-      y: height / 2 - textSize / 3,
-      size: textSize,
-      font,
-      color: rgb(rgbColor.r, rgbColor.g, rgbColor.b),
-      opacity: config.opacity,
-      rotate: degrees(config.rotation),
-    });
+    const angle = -config.rotation * (Math.PI / 180);
+    const cos = Math.cos(angle);
+    const sin = Math.sin(angle);
+
+    if (embeddedImage) {
+      const imgWidth = width * 0.5 * config.scale; // Matches CSS width: 50% + transform: scale()
+      const imgHeight = (embeddedImage.height / embeddedImage.width) * imgWidth;
+      
+      const cx_img = imgWidth / 2;
+      const cy_img = imgHeight / 2;
+      const dx_img = cx_img * cos - cy_img * sin;
+      const dy_img = cx_img * sin + cy_img * cos;
+
+      page.drawImage(embeddedImage, {
+        x: width / 2 - dx_img,
+        y: height / 2 - dy_img,
+        width: imgWidth,
+        height: imgHeight,
+        opacity: config.opacity,
+        rotate: degrees(-config.rotation),
+      });
+    } else {
+      const cx_text = textWidth / 2;
+      const cy_text = textSize / 3;
+      const dx_text = cx_text * cos - cy_text * sin;
+      const dy_text = cx_text * sin + cy_text * cos;
+
+      page.drawText(text, {
+        x: width / 2 - dx_text,
+        y: height / 2 - dy_text,
+        size: textSize,
+        font,
+        color: rgb(rgbColor.r, rgbColor.g, rgbColor.b),
+        opacity: config.opacity,
+        rotate: degrees(-config.rotation),
+      });
+    }
     onProgress(30 + Math.round(((i + 1) / totalPages) * 60));
   }
 
