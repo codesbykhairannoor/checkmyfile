@@ -405,51 +405,36 @@ export const convertPdfToPptx = async (
   onProgress(30);
 
   const pres = new PptxGenJS();
-  pres.layout = 'LAYOUT_16x9';
+  let layoutSet = false;
 
   for (let i = 1; i <= numPages; i++) {
     const page = await pdf.getPage(i);
-    
-    // Extract text runs
-    const content = await page.getTextContent();
-    const slideLines: string[] = [];
-    for (const item of content.items) {
-      if ('str' in item && item.str.trim()) {
-        if (!slideLines.includes(item.str.trim()) && item.str.trim().length > 2) {
-          slideLines.push(item.str.trim());
-        }
+    const viewport = page.getViewport({ scale: 2.0 }); // High-res for quality
+
+    // Detect orientation from first page
+    if (!layoutSet) {
+      if (viewport.width >= viewport.height) {
+        pres.layout = 'LAYOUT_16x9';
+      } else {
+        pres.defineLayout({ name: 'CUSTOM_PORTRAIT', width: 7.5, height: 10.0 });
+        pres.layout = 'CUSTOM_PORTRAIT';
       }
+      layoutSet = true;
     }
 
-    const slide = pres.addSlide();
-    slide.addText(`Slide ${i}: ${file.name.replace(/\.[^/.]+$/, '')}`, {
-      x: 0.5,
-      y: 0.4,
-      w: 9.0,
-      h: 0.6,
-      fontSize: 22,
-      bold: true,
-      color: '4F46E5',
-    });
+    // Render PDF page to canvas at high resolution
+    const canvas = document.createElement('canvas');
+    canvas.width = viewport.width;
+    canvas.height = viewport.height;
+    const ctx = canvas.getContext('2d');
 
-    if (slideLines.length > 0) {
-      const bullets = slideLines.slice(0, 10).map((txt) => ({ text: txt, options: { bullet: true, fontSize: 14, color: '374151' } }));
-      slide.addText(bullets as any, {
-        x: 0.6,
-        y: 1.2,
-        w: 8.8,
-        h: 4.0,
-      });
-    } else {
-      slide.addText('Slide layout or visual-only content preserved.', {
-        x: 0.6,
-        y: 2.0,
-        w: 8.8,
-        h: 1.0,
-        fontSize: 16,
-        italic: true,
-        color: '6B7280',
-      });
+    if (ctx) {
+      await page.render({ canvasContext: ctx as any, viewport }).promise;
+      const base64Image = canvas.toDataURL('image/jpeg', 0.95);
+
+      // Create slide with image filling 100% of the slide
+      const slide = pres.addSlide();
+      slide.addImage({ data: base64Image, x: 0, y: 0, w: '100%', h: '100%' });
     }
 
     onProgress(30 + Math.round((i / numPages) * 60));
