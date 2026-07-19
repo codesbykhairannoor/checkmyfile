@@ -61,6 +61,22 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
   const [isLoadingPreview, setIsLoadingPreview] = useState<boolean>(false);
   const [errorText, setErrorText] = useState<string | null>(null);
   const [pixelWidth, setPixelWidth] = useState<number>(0);
+  const [localActiveIndex, setLocalActiveIndex] = useState(activeFileIndex);
+  const [galleryUrls, setGalleryUrls] = useState<string[]>([]);
+
+  useEffect(() => {
+    setLocalActiveIndex(activeFileIndex);
+  }, [activeFileIndex]);
+
+  useEffect(() => {
+    if (files.length > 0 && ['jpg', 'jpeg', 'png', 'webp', 'gif', 'zip'].includes(files[0]?.name.split('.').pop()?.toLowerCase() || '')) {
+      const urls = files.map(f => URL.createObjectURL(f));
+      setGalleryUrls(urls);
+      return () => urls.forEach(u => URL.revokeObjectURL(u));
+    } else {
+      setGalleryUrls([]);
+    }
+  }, [files]);
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
   
@@ -71,7 +87,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
   const previewWrapperRef = useRef<HTMLDivElement>(null);
   const renderTaskRef = useRef<any>(null);
 
-  const activeFile = files[activeFileIndex] || null;
+  const activeFile = files[localActiveIndex] || files[activeFileIndex] || null;
   const fileKey = activeFile ? `${activeFile.name}-${activeFile.size}` : '';
   const previewRotate = fileRotations[fileKey] || 0;
 
@@ -463,9 +479,9 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
             )}
 
             {/* Image — fills paper proportionally */}
-            {isImage && previewImageUrl && !isLoadingPreview && (
+            {isImage && files.length > 0 && !isLoadingPreview && (
               <img
-                src={previewImageUrl}
+                src={previewImageUrl || undefined}
                 alt={activeFile.name}
                 style={{
                   display: 'block',
@@ -528,7 +544,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
         </div>
 
         {/* Right Sidebar - Thumbnails */}
-        {(isPdf && pdfDoc) || renderBottomRight ? (
+        {(isPdf && pdfDoc) || (isImage && files.length > 0) || renderBottomRight ? (
           <aside style={{ flex: 1, minWidth: 350, height: '100%', minHeight: 0, display: 'flex', flexDirection: 'column', paddingBottom: 24 }}>
             {isPdf && pdfDoc && (
             <div
@@ -541,9 +557,10 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
                 flexDirection: 'column',
               }}
             >
-              <SimpleBar style={{ height: '100%', padding: '24px' }}>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 12, borderBottom: '1px solid var(--border-color)', paddingBottom: 16 }}>
+              <div style={{ flex: 1, minHeight: 0, width: '100%' }}>
+                <SimpleBar style={{ height: '100%' }}>
+                  <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: 20 }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 12, borderBottom: '1px solid var(--border-color)', paddingBottom: 16 }}>
                 <div style={{ background: 'var(--brand-primary)', color: 'white', padding: '8px', borderRadius: 8 }}>
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
                 </div>
@@ -577,13 +594,63 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
                   </div>
                 ))}
               </div>
-                </div>
-              </SimpleBar>
+                  </div>
+                </SimpleBar>
+              </div>
             </div>
             )}
 
+            {isImage && files.length > 0 && (
+            <div
+              className="glass-panel"
+              style={{
+                width: '100%',
+                flex: 1,
+                minHeight: 0,
+                display: 'flex',
+                flexDirection: 'column',
+              }}
+            >
+              <div style={{ flex: 1, minHeight: 0, width: '100%' }}>
+                <SimpleBar style={{ height: '100%' }}>
+                  <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: 20 }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 12, borderBottom: '1px solid var(--border-color)', paddingBottom: 16 }}>
+                      <div style={{ background: 'var(--brand-primary)', color: 'white', padding: '8px', borderRadius: 8 }}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                      </div>
+                      <div>
+                        <h3 style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-display)', margin: 0 }}>Galeri Gambar</h3>
+                        <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: 0, marginTop: 4 }}>Pratinjau hasil ekstraksi gambar</p>
+                      </div>
+                    </div>
+
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', gap: 16 }}>
+                      {files.map((file, i) => (
+                        <div
+                          key={`thumb-img-${i}`}
+                          onClick={() => setLocalActiveIndex(i)}
+                          style={{ cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, transition: 'transform 0.1s ease', }}
+                          onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+                          onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                        >
+                          <div style={{
+                            width: '100%', aspectRatio: '1', background: '#fff', borderRadius: 6,
+                            boxShadow: localActiveIndex === i ? '0 0 0 3px var(--brand-primary)' : '0 2px 8px rgba(0,0,0,0.1)',
+                            overflow: 'hidden', padding: 4, display: 'flex', alignItems: 'center', justifyContent: 'center'
+                          }}>
+                            <img src={galleryUrls[i]} alt={`Preview ${i+1}`} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+                          </div>
+                          <span style={{ fontSize: '0.8rem', fontWeight: 600, color: localActiveIndex === i ? 'var(--brand-primary)' : 'var(--text-muted)', wordBreak: 'break-all', textAlign: 'center' }}>{file.name}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </SimpleBar>
+              </div>
+            </div>
+            )}
             {renderBottomRight && (
-              <div style={{ marginTop: isPdf && pdfDoc ? 24 : 0, flexShrink: 0 }}>
+              <div style={{ marginTop: 'auto', paddingTop: 16, flexShrink: 0 }}>
                 {renderBottomRight}
               </div>
             )}
