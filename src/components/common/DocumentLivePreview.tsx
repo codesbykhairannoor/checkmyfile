@@ -13,7 +13,7 @@ const A4_LANDSCAPE_RATIO = 297 / 210;
 import LazyPdfPage from '../preview/LazyPdfPage';
 import { PdfPreview } from '../preview/PdfPreview';
 import { OfficePreview } from '../preview/OfficePreview';
-// Removed SimpleBar for native flex overflow stability
+
 
 // LazyPdfPage moved to src/components/preview/LazyPdfPage.tsx
 interface DocumentLivePreviewProps {
@@ -537,14 +537,14 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
 
   if (isResult) {
     return (
-      <div style={{ display: 'flex', width: '100%', height: '100%', minHeight: 0, flex: 1, gap: 24, justifyContent: 'center' }}>
-        <div style={{ flex: 1, minWidth: 0, minHeight: 0, display: 'flex', flexDirection: 'column', gap: 12, overflow: 'hidden', paddingRight: 8, paddingBottom: 24 }}>
+      <div style={{ display: 'flex', width: '100%', height: 'calc(100vh - 220px)', maxHeight: 800, minHeight: 500, flex: 1, gap: 24, justifyContent: 'center' }}>
+        <div style={{ flex: 1, height: '100%', minWidth: 0, minHeight: 0, display: 'flex', flexDirection: 'column', gap: 12, overflow: 'hidden', paddingRight: 8, paddingBottom: 24 }}>
           {content}
         </div>
 
         {/* Right Sidebar - Thumbnails */}
         {(isPdf && pdfDoc) || (isImage && files.length > 0) || renderBottomRight ? (
-          <aside style={{ flex: 1, minWidth: 350, minHeight: 0, display: 'flex', flexDirection: 'column', paddingBottom: 24 }}>
+          <aside style={{ flex: 1, minWidth: 350, height: '100%', minHeight: 0, display: 'flex', flexDirection: 'column', paddingBottom: 24 }}>
             {isPdf && pdfDoc && (
             <div
               className="glass-panel"
@@ -557,7 +557,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
               }}
             >
               <div style={{ flex: 1, minHeight: 0, width: '100%', overflowY: 'auto' }}>
-                <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: 20 }}>
+                  <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: 20 }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 12, borderBottom: '1px solid var(--border-color)', paddingBottom: 16 }}>
                 <div style={{ background: 'var(--brand-primary)', color: 'white', padding: '8px', borderRadius: 8 }}>
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
@@ -609,7 +609,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
               }}
             >
               <div style={{ flex: 1, minHeight: 0, width: '100%', overflowY: 'auto' }}>
-                <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: 20 }}>
+                  <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: 20 }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 12, borderBottom: '1px solid var(--border-color)', paddingBottom: 16 }}>
                       <div style={{ background: 'var(--brand-primary)', color: 'white', padding: '8px', borderRadius: 8 }}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
