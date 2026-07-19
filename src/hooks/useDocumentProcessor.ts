@@ -17,6 +17,7 @@ interface ProcessorOptions {
   pageNumberConfig?: any;
   watermarkConfig?: any;
   compressQuality?: any;
+  extractImageFormat?: 'png' | 'jpg';
 }
 
 export function useDocumentProcessor() {
@@ -27,6 +28,7 @@ export function useDocumentProcessor() {
   const [downloadBlobUrl, setDownloadBlobUrl] = useState<string | null>(null);
   const [downloadFilename, setDownloadFilename] = useState<string>('converted.pdf');
   const [resultFile, setResultFile] = useState<File | null>(null);
+  const [resultPreviewFiles, setResultPreviewFiles] = useState<File[] | null>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [ocrTextResult, setOcrTextResult] = useState<string | null>(null);
 
@@ -90,9 +92,11 @@ export function useDocumentProcessor() {
       } else if (toolId === 'pdf-to-word') {
         resultBytes = await pdfEngine.convertPdfToWord(files[0], (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}.docx`;
+        setResultPreviewFiles([files[0]]);
       } else if (toolId === 'pdf-to-ppt') {
         resultBytes = await pdfEngine.convertPdfToPptx(files[0], (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}.pptx`;
+        setResultPreviewFiles([files[0]]);
       } else if (toolId === 'csv-to-excel') {
         resultBytes = await officeEngine.convertCsvToExcel(files[0], (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}.xlsx`;
@@ -106,8 +110,16 @@ export function useDocumentProcessor() {
         resultBytes = await imageEngine.convertImagesToPdf(files, (p) => setProgress(p));
         outName = `converted_${files.length}_images.pdf`;
       } else if (toolId === 'pdf-to-image') {
-        resultBytes = await pdfEngine.convertPdfToImage(files[0], (p) => setProgress(p));
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_images.zip`;
+        const { zipBytes, filename, previewFiles } = await imageEngine.convertPdfToImagesZip(
+          files[0],
+          options.extractImageFormat || 'png',
+          (p) => setProgress(p)
+        );
+        resultBytes = zipBytes;
+        outName = filename;
+        if (previewFiles && previewFiles.length > 0) {
+          setResultPreviewFiles(previewFiles);
+        }
       } else if (toolId === 'ocr-pdf') {
         const ocrRes = await ocrEngine.runOcrOnDocument(files[0], currentLang, (p, status) => {
           setProgress(p);
@@ -149,6 +161,7 @@ export function useDocumentProcessor() {
       URL.revokeObjectURL(downloadBlobUrl);
     }
     setResultFile(null);
+    setResultPreviewFiles(null);
     setIsProcessing(false);
     setIsCompleted(false);
     setProgress(0);
@@ -158,7 +171,7 @@ export function useDocumentProcessor() {
   };
 
   return {
-    isProcessing, progress, statusText, isCompleted, downloadBlobUrl, downloadFilename, resultFile, errorMessage, ocrTextResult,
+    isProcessing, progress, statusText, isCompleted, downloadBlobUrl, downloadFilename, resultFile, resultPreviewFiles, errorMessage, ocrTextResult,
     startProcessing, resetProcessor
   };
 }
