@@ -96,7 +96,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
       {tool.id === 'pdf-to-image' && extractImageFormat && setExtractImageFormat && (
         <PdfToImageEditor format={extractImageFormat} setFormat={setExtractImageFormat} onApply={handleStartProcessing} isProcessing={isProcessing} />
       )}
-      {['pdf-to-word', 'word-to-pdf', 'excel-to-pdf', 'image-to-pdf'].includes(tool.id) && (
+      {['pdf-to-word', 'word-to-pdf', 'excel-to-pdf', 'image-to-pdf', 'ppt-to-pdf', 'pdf-to-ppt', 'csv-to-pdf', 'txt-to-pdf', 'csv-to-excel', 'excel-to-csv'].includes(tool.id) && (
         <GenericConvertEditor toolId={tool.id} onApply={handleStartProcessing} isProcessing={isProcessing} />
       )}
     </div>
