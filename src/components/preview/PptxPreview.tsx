@@ -16,9 +16,15 @@ export const PptxPreview: React.FC<PptxPreviewProps> = ({ file }) => {
 
   useEffect(() => {
     if (!containerRef.current) return;
+    let lastWidth = 0;
     const ro = new ResizeObserver((entries) => {
       for (const entry of entries) {
-        setContainerWidth(entry.contentRect.width);
+        const newWidth = entry.contentRect.width;
+        // Only update if width changes by more than 20px to prevent infinite render loops
+        if (Math.abs(newWidth - lastWidth) > 20) {
+          lastWidth = newWidth;
+          setContainerWidth(newWidth);
+        }
       }
     });
     ro.observe(containerRef.current);
