@@ -36,7 +36,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
   // Tool Specific Options States
   const [splitRange, setSplitRange] = useState<string>('');
   const [rotateDegrees, setRotateDegrees] = useState<number>(0);
-  const [password, setPassword] = useState<string>('');
+
   const [pageNumberConfig, setPageNumberConfig] = useState({
     position: 'bottom-center' as const,
     format: '{n} / {p}',
@@ -70,7 +70,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
   const handleStartProcessing = () => {
     startProcessing({
       files, toolId: tool.id, toolCategory: tool.category, currentLang,
-      splitRange, rotateDegrees, password, pageNumberConfig, watermarkConfig, compressQuality, extractImageFormat
+      splitRange, rotateDegrees, pageNumberConfig, watermarkConfig, compressQuality, extractImageFormat
     });
   };
 
@@ -154,7 +154,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
             pageNumberConfig={pageNumberConfig} setPageNumberConfig={setPageNumberConfig}
             watermarkConfig={watermarkConfig} setWatermarkConfig={setWatermarkConfig}
             compressQuality={compressQuality} setCompressQuality={setCompressQuality}
-            password={password} setPassword={setPassword}
+
             extractImageFormat={extractImageFormat} setExtractImageFormat={setExtractImageFormat}
             formatSize={formatSize}
           />

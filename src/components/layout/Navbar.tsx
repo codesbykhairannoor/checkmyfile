@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { LocaleSwitcher } from './LocaleSwitcher';
-import { Sun, Moon, FileText, ChevronDown, ChevronUp, Grid, Combine, Scissors, Minimize2, RotateCw, Lock, Unlock, Hash, Stamp, FileSpreadsheet, Presentation, AlignLeft, Table, Image, Images, ScanText } from 'lucide-react';
+import { Sun, Moon, FileText, ChevronDown, ChevronUp, Grid, Combine, Scissors, Minimize2, RotateCw, Hash, Stamp, FileSpreadsheet, Presentation, AlignLeft, Table, Image, Images, ScanText } from 'lucide-react';
 import { TOOLS_CATALOG, getToolById, type ToolDefinition } from '../../catalog/toolsCatalog';
 
 interface NavbarProps {
@@ -395,24 +395,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </div>
               </div>
 
-              {/* Column 5: Edit & Security */}
-              <div className="mega-menu-col">
-                <div className="mega-menu-title">🔒 SECURITY & EDIT</div>
-                <div onClick={() => handleToolClick('protect-pdf')} className="mega-menu-item">
-                  <Lock size={18} />
-                  <div>
-                    <div className="item-title">Protect PDF</div>
-                    <div className="item-desc">Encrypt with AES-256 password</div>
-                  </div>
-                </div>
-                <div onClick={() => handleToolClick('unlock-pdf')} className="mega-menu-item">
-                  <Unlock size={18} />
-                  <div>
-                    <div className="item-title">Unlock PDF</div>
-                    <div className="item-desc">Remove passwords & restrictions</div>
-                  </div>
-                </div>
-              </div>
+
 
               {/* Column 6: Spreadsheet Tools */}
               <div className="mega-menu-col">

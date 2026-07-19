@@ -5,7 +5,7 @@ import { PageNumbersPdfEditor } from './PageNumbersPdfEditor';
 import { SplitPdfEditor } from './SplitPdfEditor';
 import { MergePdfEditor } from './MergePdfEditor';
 import { CompressPdfEditor } from './CompressPdfEditor';
-import { ProtectPdfEditor } from './ProtectPdfEditor';
+
 import { PdfToImageEditor } from './PdfToImageEditor';
 import { GenericConvertEditor } from './GenericConvertEditor';
 import type { ToolDefinition } from '../../catalog/toolsCatalog';
@@ -27,8 +27,7 @@ interface ToolSidebarProps {
   setPageNumberConfig: (v: any) => void;
   compressQuality: 'extreme' | 'balanced' | 'high';
   setCompressQuality: (v: 'extreme' | 'balanced' | 'high') => void;
-  password?: string;
-  setPassword?: (v: string) => void;
+
   extractImageFormat?: 'png' | 'jpg';
   setExtractImageFormat?: (v: 'png' | 'jpg') => void;
   formatSize: (bytes: number) => string;
@@ -38,7 +37,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
   tool, files, setFiles, activeFileIndex, setActiveFileIndex, isProcessing, handleStartProcessing,
   splitRange, setSplitRange, rotateDegrees, setRotateDegrees,
   pageNumberConfig, setPageNumberConfig, watermarkConfig, setWatermarkConfig, compressQuality, setCompressQuality,
-  password, setPassword, extractImageFormat, setExtractImageFormat,
+  extractImageFormat, setExtractImageFormat,
   formatSize
 }) => {
   return (
@@ -93,9 +92,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
       {tool.id === 'split-pdf' && <SplitPdfEditor splitRange={splitRange} setSplitRange={setSplitRange} onApply={handleStartProcessing} isProcessing={isProcessing} />}
       {tool.id === 'merge-pdf' && <MergePdfEditor files={files} setFiles={setFiles} onApply={handleStartProcessing} isProcessing={isProcessing} />}
       {tool.id === 'compress-pdf' && <CompressPdfEditor quality={compressQuality} setQuality={setCompressQuality} onApply={handleStartProcessing} isProcessing={isProcessing} />}
-      {(tool.id === 'protect-pdf' || tool.id === 'unlock-pdf') && password !== undefined && setPassword && (
-        <ProtectPdfEditor mode={tool.id === 'protect-pdf' ? 'protect' : 'unlock'} password={password} setPassword={setPassword} onApply={handleStartProcessing} isProcessing={isProcessing} />
-      )}
+
       {tool.id === 'pdf-to-image' && extractImageFormat && setExtractImageFormat && (
         <PdfToImageEditor format={extractImageFormat} setFormat={setExtractImageFormat} onApply={handleStartProcessing} isProcessing={isProcessing} />
       )}

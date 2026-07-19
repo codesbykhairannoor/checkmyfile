@@ -93,54 +93,7 @@ export const pdfTools: ToolDefinition[] = [
       },
     },
   },
-  {
-    id: 'protect-pdf',
-    category: 'pdf',
-    iconName: 'Lock',
-    slugs: generateSlugsForId('protect-pdf', {
-      en: 'protect-pdf',
-      id: 'enkripsi-pdf',
-      es: 'proteger-pdf',
-    }),
-    seo: {
-      en: {
-        title: 'Password Protect PDF Online - Add AES-256 Encryption Locally',
-        h1: 'Secure Your PDF with AES-256 Password Protection',
-        description: 'Encrypt sensitive PDF documents with strong passwords locally inside your browser before sharing.',
-        faqs: defaultFaqs('Protect PDF', 'en'),
-      },
-      id: {
-        title: 'Enkripsi & Beri Sandi PDF Online - Keamanan AES-256 Lokal',
-        h1: 'Amankan Dokumen PDF Anda dengan Kata Sandi Kuat',
-        description: 'Tambahkan enkripsi tingkat tinggi AES-256 pada file PDF rahasia Anda secara langsung tanpa mengirim file ke server.',
-        faqs: defaultFaqs('Enkripsi PDF', 'id'),
-      },
-    },
-  },
-  {
-    id: 'unlock-pdf',
-    category: 'pdf',
-    iconName: 'Unlock',
-    slugs: generateSlugsForId('unlock-pdf', {
-      en: 'unlock-pdf',
-      id: 'buka-kunci-pdf',
-      es: 'desbloquear-pdf',
-    }),
-    seo: {
-      en: {
-        title: 'Unlock PDF Online - Remove Password & Restrictions Locally',
-        h1: 'Remove Passwords & Unlock PDF Restrictions',
-        description: 'Strip password protections and printing/copying restrictions from PDFs you own directly inside WebAssembly.',
-        faqs: defaultFaqs('Unlock PDF', 'en'),
-      },
-      id: {
-        title: 'Buka Kunci PDF Online - Hapus Sandi & Pembatasan Dokumen',
-        h1: 'Hapus Kata Sandi & Buka Pembatasan File PDF',
-        description: 'Buka kunci perlindungan cetak dan salin pada dokumen PDF milik Anda secara instan di dalam memori peramban.',
-        faqs: defaultFaqs('Buka Kunci PDF', 'id'),
-      },
-    },
-  },
+
   {
     id: 'page-numbers',
     category: 'pdf',
