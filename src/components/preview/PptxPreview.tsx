@@ -33,10 +33,16 @@ export const PptxPreview: React.FC<PptxPreviewProps> = ({ file }) => {
       setLoading(true);
       setError(null);
       try {
+        console.log('[PptxPreview] Starting render...');
         // Dynamically import to avoid SSR/build issues
         const pptxPreviewLib = await import('pptx-preview');
+        console.log('[PptxPreview] Imported lib:', pptxPreviewLib);
         const init = pptxPreviewLib.init || (pptxPreviewLib as any).default?.init;
         if (!init) throw new Error('pptx-preview library init not found');
+
+        // pptx-preview relies heavily on JSZip, sometimes globally
+        const JSZip = (await import('jszip')).default || (await import('jszip'));
+        (window as any).JSZip = JSZip;
 
         if (cancelled) return;
 
@@ -52,6 +58,7 @@ export const PptxPreview: React.FC<PptxPreviewProps> = ({ file }) => {
         const w = Math.floor(containerWidth);
         const h = Math.floor(w * (9 / 16));
 
+        console.log('[PptxPreview] Initializing instance with width', w);
         const instance = init(containerRef.current, {
           width: w,
           height: h,
@@ -59,17 +66,20 @@ export const PptxPreview: React.FC<PptxPreviewProps> = ({ file }) => {
         });
         previewInstanceRef.current = instance;
 
+        console.log('[PptxPreview] Reading arrayBuffer...');
         const arrayBuffer = await file.arrayBuffer();
         if (cancelled) return;
 
+        console.log('[PptxPreview] Calling instance.preview()...');
         const pptx = await instance.preview(arrayBuffer);
+        console.log('[PptxPreview] Preview success, slides:', pptx?.slides?.length);
         if (cancelled) return;
 
         setTotalSlides(pptx?.slides?.length || 0);
         setCurrentSlide(1);
       } catch (err: any) {
         if (!cancelled) {
-          console.error('pptx-preview error:', err);
+          console.error('[PptxPreview] pptx-preview error:', err);
           setError('Gagal memuat pratinjau presentasi. File mungkin memiliki format yang tidak didukung.');
         }
       } finally {
