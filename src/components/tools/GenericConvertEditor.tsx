@@ -30,6 +30,36 @@ export const GenericConvertEditor: React.FC<GenericConvertEditorProps> = ({ tool
           title: 'Konversi Gambar ke PDF',
           desc: 'Gabungkan file gambar (PNG, JPG, dll) Anda menjadi sebuah dokumen PDF. Sangat berguna untuk mengumpulkan hasil pindai dokumen.'
         };
+      case 'ppt-to-pdf':
+        return {
+          title: 'Konversi PowerPoint ke PDF',
+          desc: 'Ubah slide presentasi PowerPoint (PPT/PPTX) Anda menjadi dokumen PDF resolusi tinggi siap cetak secara lokal.'
+        };
+      case 'pdf-to-ppt':
+        return {
+          title: 'Konversi PDF ke PowerPoint',
+          desc: 'Ekstrak setiap halaman dari dokumen PDF Anda menjadi slide presentasi Microsoft PowerPoint (PPTX) yang dapat diedit.'
+        };
+      case 'csv-to-pdf':
+        return {
+          title: 'Konversi CSV ke PDF',
+          desc: 'Olah data ekspor berpemisah koma (CSV) Anda menjadi tabel PDF yang rapi dengan pembagian halaman otomatis.'
+        };
+      case 'txt-to-pdf':
+        return {
+          title: 'Konversi Teks ke PDF',
+          desc: 'Konversikan file teks mentah (TXT) atau log kode Anda menjadi dokumen PDF berformat rapi dan profesional.'
+        };
+      case 'csv-to-excel':
+        return {
+          title: 'Konversi CSV ke Excel',
+          desc: 'Ubah file data mentah (CSV) menjadi buku kerja Microsoft Excel (XLSX) dengan kolom yang tersusun sempurna.'
+        };
+      case 'excel-to-csv':
+        return {
+          title: 'Konversi Excel ke CSV',
+          desc: 'Ekstrak data dari tabel Excel Anda (XLS/XLSX) menjadi format teks data universal CSV (Comma-Separated Values).'
+        };
       default:
         return {
           title: 'Pengaturan Alat',
