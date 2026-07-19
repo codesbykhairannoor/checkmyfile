@@ -1,5 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Presentation, ChevronLeft, ChevronRight } from 'lucide-react';
+import * as pptxPreviewLib from 'pptx-preview';
+import JSZip from 'jszip';
+
+// Expose JSZip globally for pptx-preview
+if (typeof window !== 'undefined') {
+  (window as any).JSZip = JSZip;
+}
 
 interface PptxPreviewProps {
   file: File;
@@ -39,16 +46,8 @@ export const PptxPreview: React.FC<PptxPreviewProps> = ({ file }) => {
       setLoading(true);
       setError(null);
       try {
-        console.log('[PptxPreview] Starting render...');
-        // Dynamically import to avoid SSR/build issues
-        const pptxPreviewLib = await import('pptx-preview');
-        console.log('[PptxPreview] Imported lib:', pptxPreviewLib);
         const init = pptxPreviewLib.init || (pptxPreviewLib as any).default?.init;
         if (!init) throw new Error('pptx-preview library init not found');
-
-        // pptx-preview relies heavily on JSZip, sometimes globally
-        const JSZip = (await import('jszip')).default || (await import('jszip'));
-        (window as any).JSZip = JSZip;
 
         if (cancelled) return;
 

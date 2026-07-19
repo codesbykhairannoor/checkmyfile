@@ -199,9 +199,17 @@ export const convertPptxToPdf = async (file: File, onProgress: (p: number) => vo
           const imgBytes = unzipped[shape.imgKey];
           const ext = shape.imgKey.split('.').pop()?.toLowerCase() || 'png';
           const mime = ext === 'jpg' || ext === 'jpeg' ? 'image/jpeg' : ext === 'gif' ? 'image/gif' : 'image/png';
-          const b64 = btoa(String.fromCharCode(...imgBytes));
+          
+          // Safely convert large byte arrays to base64 URL
+          const blob = new Blob([imgBytes], { type: mime });
+          const dataUrl = await new Promise<string>((resolve) => {
+            const reader = new FileReader();
+            reader.onload = () => resolve(reader.result as string);
+            reader.readAsDataURL(blob);
+          });
+
           const img = document.createElement('img');
-          img.src = `data:${mime};base64,${b64}`;
+          img.src = dataUrl;
           img.style.cssText = 'width:100%;height:100%;object-fit:contain;display:block;';
           el.appendChild(img);
         } else if (shape.type === 'text' && shape.text) {
