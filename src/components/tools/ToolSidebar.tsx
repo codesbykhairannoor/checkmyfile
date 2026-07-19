@@ -31,17 +31,41 @@ interface ToolSidebarProps {
   extractImageFormat?: 'png' | 'jpg';
   setExtractImageFormat?: (v: 'png' | 'jpg') => void;
   formatSize: (bytes: number) => string;
+  acceptTypes?: string;
+  allowMultiple?: boolean;
 }
 
 export const ToolSidebar: React.FC<ToolSidebarProps> = ({
   tool, files, setFiles, activeFileIndex, setActiveFileIndex, isProcessing, handleStartProcessing,
   splitRange, setSplitRange, rotateDegrees, setRotateDegrees,
   pageNumberConfig, setPageNumberConfig, watermarkConfig, setWatermarkConfig, compressQuality, setCompressQuality,
-  extractImageFormat, setExtractImageFormat,
-  formatSize
+  formatSize, acceptTypes = '*', allowMultiple = false
 }) => {
+  const fileInputRef = React.useRef<HTMLInputElement>(null);
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files && e.target.files.length > 0) {
+      const newFiles = Array.from(e.target.files);
+      if (allowMultiple) {
+        setFiles(prev => [...prev, ...newFiles]);
+      } else {
+        setFiles(newFiles);
+        setActiveFileIndex(0);
+      }
+    }
+  };
+
   return (
     <div style={{ flexShrink: 0, flex: 1, minWidth: 350, minHeight: 0, paddingRight: 8, paddingBottom: 24, display: 'flex', flexDirection: 'column', gap: 16, marginTop: 0, overflowY: 'auto' }}>
+      <input 
+        type="file" 
+        ref={fileInputRef} 
+        onChange={handleFileChange} 
+        accept={acceptTypes} 
+        multiple={allowMultiple} 
+        style={{ display: 'none' }} 
+      />
+
       {files.length > 0 && (
         <div style={{ background: 'var(--bg-card)', padding: 16, borderRadius: 12, border: '1px solid var(--border-color)', boxShadow: 'var(--shadow-sm)' }}>
           {files.length > 1 && (
@@ -83,6 +107,17 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
                 {formatSize(files[activeFileIndex]?.size || 0)}
               </span>
             </span>
+          </div>
+
+          {/* Quick Actions for Files */}
+          <div style={{ marginTop: 12, paddingTop: 12, borderTop: '1px solid var(--border-color)', display: 'flex', gap: 8 }}>
+            <button
+              onClick={() => fileInputRef.current?.click()}
+              className="btn-secondary"
+              style={{ flex: 1, padding: '8px', fontSize: '0.75rem', display: 'flex', justifyContent: 'center', background: 'var(--bg-input)' }}
+            >
+              {allowMultiple ? '+ Tambah File Lagi' : 'Ganti Dokumen'}
+            </button>
           </div>
         </div>
       )}

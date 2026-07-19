@@ -214,8 +214,11 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
             watermarkConfig={watermarkConfig} setWatermarkConfig={setWatermarkConfig}
             compressQuality={compressQuality} setCompressQuality={setCompressQuality}
 
-            extractImageFormat={extractImageFormat} setExtractImageFormat={setExtractImageFormat}
+            extractImageFormat={extractImageFormat}
+            setExtractImageFormat={setExtractImageFormat}
             formatSize={formatSize}
+            acceptTypes={getAcceptTypes(tool.id)}
+            allowMultiple={tool.id === 'merge-pdf' || tool.id === 'gabung-pdf' || tool.id === 'image-to-pdf' || tool.id === 'gambar-ke-pdf'}
           />
         </div>
       )}
