@@ -216,6 +216,21 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
         } else if (['png', 'jpg', 'jpeg', 'webp', 'gif'].includes(ext)) {
           // Image object URL and aspect ratio are now handled by a dedicated useEffect
           // to prevent continuous recreation when workspaceDim changes (which causes flickering/shrinking)
+          const workspaceWidth = previewWrapperRef.current?.parentElement?.clientWidth || 680;
+          const workspaceHeight = (previewWrapperRef.current?.parentElement?.clientHeight || 600) - 120;
+          
+          const baseWidth = 1000;
+          const baseHeight = baseWidth / (pageAspectRatio || 1);
+          
+          const scaleX = Math.max(0.1, workspaceWidth / baseWidth);
+          const scaleY = Math.max(0.1, workspaceHeight / baseHeight);
+          
+          const fitScale = Math.min(scaleX, scaleY);
+          const renderScale = fitScale * zoomScale;
+          
+          if (pageAspectRatio > 0.1) {
+            setPixelWidth(baseWidth * renderScale);
+          }
         } else if (ext === 'docx' || ext === 'doc') {
           // Word documents: A4 portrait as default canvas
           setPageAspectRatio(A4_PORTRAIT_RATIO);
