@@ -21,11 +21,11 @@ interface ToolPageProps {
 export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToHome, onEditorActive }) => {
   const { files, setFiles } = useWorkspaceFiles(tool.id);
   const {
-    isProcessing, progress, statusText, isCompleted, downloadBlobUrl, downloadFilename, resultFile, errorMessage, ocrTextResult,
+    isProcessing, progress, statusText, isCompleted, downloadBlobUrl, downloadFilename, resultFile, resultPreviewFiles, errorMessage, ocrTextResult,
     startProcessing, resetProcessor
   } = useDocumentProcessor();
 
-  const isWorkspaceMode = files.length > 0 && ['rotate-pdf', 'watermark-pdf', 'page-numbers', 'split-pdf', 'merge-pdf', 'compress-pdf'].includes(tool.id);
+  const isWorkspaceMode = files.length > 0;
 
   React.useEffect(() => {
     if (onEditorActive) {
@@ -70,7 +70,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
   const handleStartProcessing = () => {
     startProcessing({
       files, toolId: tool.id, toolCategory: tool.category, currentLang,
-      splitRange, rotateDegrees, password, pageNumberConfig, watermarkConfig, compressQuality
+      splitRange, rotateDegrees, password, pageNumberConfig, watermarkConfig, compressQuality, extractImageFormat
     });
   };
 
@@ -196,7 +196,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
       {isCompleted && resultFile && (
         <div style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
           <DocumentLivePreview 
-            files={[resultFile]} 
+            files={resultPreviewFiles || [resultFile]} 
             currentLang={currentLang} 
             isResult={true} 
             renderBottomRight={
