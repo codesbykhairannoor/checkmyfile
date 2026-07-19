@@ -502,7 +502,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
                   width: '100%',
                   height: '100%',
                   objectFit: 'contain',
-                  transform: `rotate(${previewRotate}deg) scale(${zoomScale})`,
+                  transform: `rotate(${previewRotate}deg)`,
                   transition: 'transform 0.2s ease',
                   transformOrigin: 'center center',
                 }}
