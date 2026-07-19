@@ -405,39 +405,80 @@ export const convertPdfToPptx = async (
   onProgress(30);
 
   const pres = new PptxGenJS();
+  let slideWidthIn = 10; // inches
+  let slideHeightIn = 7.5; // inches
   let layoutSet = false;
 
   for (let i = 1; i <= numPages; i++) {
     const page = await pdf.getPage(i);
-    const viewport = page.getViewport({ scale: 2.0 }); // High-res for quality
+    const baseViewport = page.getViewport({ scale: 1.0 });
+    const pdfW = baseViewport.width;   // PDF units (1/72 inch)
+    const pdfH = baseViewport.height;
 
-    // Detect orientation from first page
+    // Set presentation layout based on first page
     if (!layoutSet) {
-      if (viewport.width >= viewport.height) {
-        pres.layout = 'LAYOUT_16x9';
-      } else {
-        pres.defineLayout({ name: 'CUSTOM_PORTRAIT', width: 7.5, height: 10.0 });
-        pres.layout = 'CUSTOM_PORTRAIT';
-      }
+      // Keep slide at standard width, adjust height for aspect ratio
+      slideWidthIn = 10;
+      slideHeightIn = (pdfH / pdfW) * slideWidthIn;
+      // Clamp to reasonable presentation sizes
+      if (slideHeightIn > 12) { slideHeightIn = 12; }
+      pres.defineLayout({ name: 'CUSTOM_PDF', width: slideWidthIn, height: slideHeightIn });
+      pres.layout = 'CUSTOM_PDF';
       layoutSet = true;
     }
 
-    // Render PDF page to canvas at high resolution
+    // --- STEP 1: Render page as high-res image (2x) ---
+    const viewport = page.getViewport({ scale: 2.0 });
     const canvas = document.createElement('canvas');
     canvas.width = viewport.width;
     canvas.height = viewport.height;
     const ctx = canvas.getContext('2d');
+    await page.render({ canvasContext: ctx as any, viewport }).promise;
+    const base64Image = canvas.toDataURL('image/jpeg', 0.92);
 
-    if (ctx) {
-      await page.render({ canvasContext: ctx as any, viewport }).promise;
-      const base64Image = canvas.toDataURL('image/jpeg', 0.95);
+    const slide = pres.addSlide();
 
-      // Create slide with image filling 100% of the slide
-      const slide = pres.addSlide();
-      slide.addImage({ data: base64Image, x: 0, y: 0, w: '100%', h: '100%' });
+    // Add background image covering 100% of slide
+    slide.addImage({ data: base64Image, x: 0, y: 0, w: '100%', h: '100%' });
+
+    // --- STEP 2: Extract text with positions and overlay transparent text boxes ---
+    const textContent = await page.getTextContent();
+    for (const item of textContent.items) {
+      if (!('str' in item) || !item.str.trim()) continue;
+
+      // Transform matrix: [scaleX, skewY, skewX, scaleY, translateX, translateY]
+      const [, , , scaleY, tx, ty] = item.transform as number[];
+      const fontSize = Math.abs(scaleY); // font size in PDF user units
+
+      // Convert PDF coordinates to slide inches
+      // PDF origin is bottom-left, PPTX origin is top-left
+      const xIn = (tx / pdfW) * slideWidthIn;
+      const yIn = ((pdfH - ty - fontSize) / pdfH) * slideHeightIn;
+      const wIn = Math.max(0.2, ((item as any).width / pdfW) * slideWidthIn);
+      const hIn = Math.max(0.1, (fontSize / pdfH) * slideHeightIn * 1.3); // 1.3 line-height buffer
+      const fontSizePt = Math.max(6, Math.round((fontSize / pdfH) * slideHeightIn * 72));
+
+      // Clamp to within slide bounds
+      if (xIn < 0 || yIn < 0 || xIn > slideWidthIn || yIn > slideHeightIn) continue;
+
+      try {
+        slide.addText(item.str, {
+          x: xIn,
+          y: yIn,
+          w: Math.min(wIn, slideWidthIn - xIn),
+          h: Math.min(hIn, slideHeightIn - yIn),
+          fontSize: fontSizePt,
+          color: 'FFFFFF', // White so it's invisible over the image
+          transparency: 100, // Fully transparent text box — still selectable in PowerPoint
+          fontFace: 'Arial',
+          wrap: false,
+        });
+      } catch (_) {
+        // Skip items that fail to add (e.g. out-of-bounds coordinates)
+      }
     }
 
-    onProgress(30 + Math.round((i / numPages) * 60));
+    onProgress(30 + Math.round((i / numPages) * 65));
   }
 
   onProgress(95);

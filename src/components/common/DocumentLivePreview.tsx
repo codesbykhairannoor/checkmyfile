@@ -13,6 +13,7 @@ const A4_LANDSCAPE_RATIO = 297 / 210;
 import LazyPdfPage from '../preview/LazyPdfPage';
 import { PdfPreview } from '../preview/PdfPreview';
 import { OfficePreview } from '../preview/OfficePreview';
+import { PptxPreview } from '../preview/PptxPreview';
 
 
 // LazyPdfPage moved to src/components/preview/LazyPdfPage.tsx
@@ -318,6 +319,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
   const isSpreadsheet = ['xlsx', 'xls', 'csv'].includes(fileExt);
   const isTxt = fileExt === 'txt';
   const isOfficeOther = !isPdf && !isImage && !isDocx && !isSpreadsheet && !isTxt;
+  const isPptx = fileExt === 'pptx' || fileExt === 'ppt';
 
   // Removed isLandscape and formatSize as they are unused  // Paper-like shadow styles for the document container
   const paperShadow = isResult
@@ -519,8 +521,15 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
               textPreviewContent={textPreviewContent}
             />
 
-            {/* Other Office files (pptx, etc.) */}
-            {isOfficeOther && !isLoadingPreview && (
+            {/* PPTX Live Preview */}
+            {isOfficeOther && isPptx && !isLoadingPreview && (
+              <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+                <PptxPreview file={activeFile} />
+              </div>
+            )}
+
+            {/* Other unsupported Office files placeholder */}
+            {isOfficeOther && !isPptx && !isLoadingPreview && (
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', flex: 1, minHeight: '100%', padding: 32, textAlign: 'center' }}>
                 <div style={{ width: 64, height: 64, borderRadius: 16, background: 'rgba(225,29,72,0.1)', color: '#e11d48', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
                   {fileExt.includes('doc') ? <FileText size={32} /> : fileExt.includes('xls') || fileExt.includes('csv') ? <FileSpreadsheet size={32} /> : <Presentation size={32} />}
