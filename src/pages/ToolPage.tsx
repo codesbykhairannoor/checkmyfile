@@ -18,6 +18,65 @@ interface ToolPageProps {
   onEditorActive?: (active: boolean) => void;
 }
 
+// Map each tool to the file types it should accept
+const getAcceptTypes = (toolId: string): string => {
+  switch (toolId) {
+    // PDF-only tools
+    case 'merge-pdf':
+    case 'split-pdf':
+    case 'rotate-pdf':
+    case 'compress-pdf':
+    case 'watermark-pdf':
+    case 'page-numbers':
+    case 'ocr-pdf':
+    case 'pdf-to-word':
+    case 'pdf-ke-word':
+    case 'pdf-to-ppt':
+    case 'pdf-ke-ppt':
+    case 'pdf-to-image':
+    case 'pdf-ke-gambar':
+      return '.pdf,application/pdf';
+
+    // Word files only
+    case 'word-to-pdf':
+    case 'word-ke-pdf':
+      return '.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document';
+
+    // Excel files only
+    case 'excel-to-pdf':
+    case 'excel-ke-pdf':
+    case 'excel-to-csv':
+    case 'excel-ke-csv':
+      return '.xls,.xlsx,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
+
+    // PowerPoint files only
+    case 'ppt-to-pdf':
+    case 'ppt-ke-pdf':
+      return '.ppt,.pptx,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation';
+
+    // Text files only
+    case 'txt-to-pdf':
+    case 'teks-ke-pdf':
+      return '.txt,text/plain';
+
+    // CSV files only
+    case 'csv-to-pdf':
+    case 'csv-ke-pdf':
+    case 'csv-to-excel':
+    case 'csv-ke-excel':
+      return '.csv,text/csv';
+
+    // Image files only
+    case 'image-to-pdf':
+    case 'gambar-ke-pdf':
+      return '.png,.jpg,.jpeg,.webp,.gif,image/png,image/jpeg,image/webp,image/gif';
+
+    // Default: everything
+    default:
+      return '.pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.png,.jpg,.jpeg,.txt,.csv';
+  }
+};
+
 export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToHome, onEditorActive }) => {
   const { files, setFiles } = useWorkspaceFiles(tool.id);
   const {
@@ -188,7 +247,8 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
             setFiles(selected);
             resetProcessor();
           }}
-          multiple={tool.id === 'merge-pdf' || tool.id === 'image-to-pdf'}
+          accept={getAcceptTypes(tool.id)}
+          multiple={tool.id === 'merge-pdf' || tool.id === 'gabung-pdf' || tool.id === 'image-to-pdf' || tool.id === 'gambar-ke-pdf'}
         />
       )}
 
