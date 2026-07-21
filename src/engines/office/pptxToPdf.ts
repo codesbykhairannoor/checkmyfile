@@ -177,9 +177,12 @@ export const convertPptxToPdf = async (file: File, onProgress: (p: number) => vo
   container.style.cssText = `position:absolute;left:-99999px;top:0;width:${pxW}px;height:${pxH}px;overflow:hidden;box-sizing:border-box;`;
   document.body.appendChild(container);
 
-  const mmW = isLandscape ? 297 : 210;
-  const mmH = isLandscape ? 210 : 297;
-  const doc = new jsPDF({ orientation: isLandscape ? 'landscape' : 'portrait', unit: 'mm', format: 'a4' });
+  // Create jsPDF document with the EXACT dimensions of the slide in pixels
+  const doc = new jsPDF({ 
+    orientation: isLandscape ? 'landscape' : 'portrait', 
+    unit: 'px', 
+    format: [pxW, pxH] 
+  });
 
   try {
     for (let si = 0; si < slideKeys.length; si++) {
@@ -247,8 +250,8 @@ export const convertPptxToPdf = async (file: File, onProgress: (p: number) => vo
         height: pxH,
       });
 
-      if (si > 0) doc.addPage();
-      doc.addImage(canvas.toDataURL('image/jpeg', 0.92), 'JPEG', 0, 0, mmW, mmH, undefined, 'FAST');
+      if (si > 0) doc.addPage([pxW, pxH], isLandscape ? 'landscape' : 'portrait');
+      doc.addImage(canvas.toDataURL('image/jpeg', 0.92), 'JPEG', 0, 0, pxW, pxH, undefined, 'FAST');
       onProgress(25 + Math.round(((si + 1) / slideKeys.length) * 70));
     }
   } finally {
