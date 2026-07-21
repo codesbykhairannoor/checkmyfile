@@ -168,11 +168,12 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
   const t = getUiTranslations(currentLang);
   const seo = getLocalizedSeo(tool, currentLang);
 
-  const handleStartProcessing = () => {
+  const handleStartProcessing = (options?: any) => {
     startProcessing({
       files, toolId: tool.id, toolCategory: tool.category, currentLang,
       splitRange, rotateDegrees, pageNumberConfig, watermarkConfig, compressQuality, extractImageFormat,
-      removeRange, insertFile, insertAtIndex, signatureConfig, pdfPassword, cropConfig
+      removeRange, insertFile, insertAtIndex, signatureConfig, pdfPassword, cropConfig, redactConfig,
+      ...options
     });
   };
 

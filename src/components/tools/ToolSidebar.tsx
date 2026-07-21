@@ -181,10 +181,10 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
         <GrayscalePdfEditor onApply={handleStartProcessing} isProcessing={isProcessing} />
       )}
       {tool.id === 'scan-to-pdf' && (
-        <ScanToPdfEditor onProcess={handleStartProcessing} isProcessing={isProcessing} />
+        <ScanToPdfEditor onProcess={() => handleStartProcessing()} isProcessing={isProcessing} />
       )}
       {tool.id === 'remove-pdf-metadata' && (
-        <RemoveMetadataEditor onProcess={handleStartProcessing} isProcessing={isProcessing} />
+        <RemoveMetadataEditor onProcess={() => handleStartProcessing()} isProcessing={isProcessing} />
       )}
       {tool.id === 'compare-pdf' && (
         <ComparePdfEditor onProcess={(options) => handleStartProcessing(options)} isProcessing={isProcessing} />
@@ -193,7 +193,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
         <RedactPdfEditor 
           redactConfig={redactConfig} setRedactConfig={setRedactConfig} 
           activeFileIndex={activeFileIndex}
-          onProcess={handleStartProcessing} isProcessing={isProcessing} 
+          onProcess={() => handleStartProcessing()} isProcessing={isProcessing} 
         />
       )}
       {['pdf-to-word', 'word-to-pdf', 'excel-to-pdf', 'image-to-pdf', 'ppt-to-pdf', 'pdf-to-ppt', 'csv-to-pdf', 'txt-to-pdf', 'csv-to-excel', 'excel-to-csv', 'ocr-pdf'].includes(tool.id) && (

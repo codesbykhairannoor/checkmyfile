@@ -18,8 +18,8 @@ export const scanToPdf = async (
   const pdfDoc = await loadingTask.promise;
   const numPages = pdfDoc.numPages;
 
-  // Render scale (quality). 2.0 is a good balance for scan-like quality.
-  const scale = 2.0;
+  // Render scale (quality). 3.0 is high quality for crisp text.
+  const scale = 3.0;
 
   for (let i = 1; i <= numPages; i++) {
     const page = await pdfDoc.getPage(i);

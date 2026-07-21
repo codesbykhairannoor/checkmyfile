@@ -17,7 +17,7 @@ export const RedactPdfEditor: React.FC<RedactPdfEditorProps> = ({ onProcess, isP
       const page0Boxes = prev[0] || [];
       return {
         ...prev,
-        [0]: [...page0Boxes, { id, x: 30, y: 40, width: 40, height: 10 }]
+        [0]: [...page0Boxes, { id, x: 35, y: 45, width: 25, height: 5 }]
       };
     });
   };
