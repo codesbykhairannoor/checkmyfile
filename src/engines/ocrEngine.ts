@@ -1,6 +1,6 @@
 import { createWorker } from 'tesseract.js';
 import workerPath from 'tesseract.js/dist/worker.min.js?url';
-import corePath from 'tesseract.js/dist/tesseract-core.wasm.js?url';
+import corePath from 'tesseract.js-core/tesseract-core.wasm.js?url';
 import * as pdfjsLib from 'pdfjs-dist';
 
 // Map our ISO language codes to Tesseract traineddata language codes
