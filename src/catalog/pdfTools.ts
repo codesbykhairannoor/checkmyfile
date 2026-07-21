@@ -210,5 +210,51 @@ export const pdfTools: ToolDefinition[] = [
         faqs: defaultFaqs('Tanda Tangan PDF', 'id'),
       },
     },
+  },
+  {
+    id: 'protect-pdf',
+    category: 'pdf',
+    iconName: 'Lock',
+    slugs: generateSlugsForId('protect-pdf', {
+      en: 'protect-pdf',
+      id: 'kunci-pdf',
+    }),
+    seo: {
+      en: {
+        title: 'Protect PDF Online - Password Protect PDF Locally',
+        h1: 'Encrypt & Password Protect PDF Documents',
+        description: 'Secure your PDF files with AES-256 encryption and password protection locally in your browser.',
+        faqs: defaultFaqs('Protect PDF', 'en'),
+      },
+      id: {
+        title: 'Kunci PDF Online - Enkripsi PDF & Beri Kata Sandi Secara Lokal',
+        h1: 'Amankan Dokumen PDF dengan Kata Sandi',
+        description: 'Lindungi file PDF Anda dari akses tidak sah dengan enkripsi AES-256 tingkat tinggi langsung di peramban Anda.',
+        faqs: defaultFaqs('Kunci PDF', 'id'),
+      },
+    },
+  },
+  {
+    id: 'unlock-pdf',
+    category: 'pdf',
+    iconName: 'Unlock',
+    slugs: generateSlugsForId('unlock-pdf', {
+      en: 'unlock-pdf',
+      id: 'buka-kunci-pdf',
+    }),
+    seo: {
+      en: {
+        title: 'Unlock PDF Online - Remove PDF Password Locally',
+        h1: 'Unlock Password Protected PDF Documents',
+        description: 'Remove password and encryption from your PDF files instantly in your browser.',
+        faqs: defaultFaqs('Unlock PDF', 'en'),
+      },
+      id: {
+        title: 'Buka Kunci PDF Online - Hapus Kata Sandi PDF Gratis',
+        h1: 'Buka File PDF yang Dikunci Kata Sandi',
+        description: 'Hapus pengaman dan kata sandi dari dokumen PDF Anda secara instan dengan privasi terjamin 100%.',
+        faqs: defaultFaqs('Buka Kunci PDF', 'id'),
+      },
+    },
   }
 ];

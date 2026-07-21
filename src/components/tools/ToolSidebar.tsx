@@ -11,6 +11,8 @@ import { GenericConvertEditor } from './GenericConvertEditor';
 import { RemovePdfEditor } from './RemovePdfEditor';
 import { OrganizePdfEditor } from './OrganizePdfEditor';
 import { SignPdfEditor } from './SignPdfEditor';
+import { ProtectPdfEditor } from './ProtectPdfEditor';
+import { UnlockPdfEditor } from './UnlockPdfEditor';
 import type { ToolDefinition } from '../../catalog/toolsCatalog';
 
 interface ToolSidebarProps {
@@ -38,6 +40,7 @@ interface ToolSidebarProps {
   insertFile?: File | null; setInsertFile?: (v: File | null) => void;
   insertAtIndex?: number; setInsertAtIndex?: (v: number) => void;
   signatureConfig?: any; setSignatureConfig?: (v: any) => void;
+  pdfPassword?: string; setPdfPassword?: (v: string) => void;
 
   formatSize: (bytes: number) => string;
   acceptTypes?: string;
@@ -51,6 +54,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
   pageNumberConfig, setPageNumberConfig, watermarkConfig, setWatermarkConfig, compressQuality, setCompressQuality,
   extractImageFormat, setExtractImageFormat,
   removeRange, setRemoveRange, insertFile, setInsertFile, insertAtIndex, setInsertAtIndex, signatureConfig, setSignatureConfig,
+  pdfPassword, setPdfPassword,
   formatSize, acceptTypes = '*', allowMultiple = false, pdfPagesCount = 100
 }) => {
   const fileInputRef = React.useRef<HTMLInputElement>(null);
@@ -151,6 +155,12 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
       )}
       {tool.id === 'sign-pdf' && signatureConfig && setSignatureConfig && (
         <SignPdfEditor signatureConfig={signatureConfig} setSignatureConfig={setSignatureConfig} onApply={handleStartProcessing} isProcessing={isProcessing} />
+      )}
+      {tool.id === 'protect-pdf' && pdfPassword !== undefined && setPdfPassword && (
+        <ProtectPdfEditor pdfPassword={pdfPassword} setPdfPassword={setPdfPassword} onApply={handleStartProcessing} isProcessing={isProcessing} />
+      )}
+      {tool.id === 'unlock-pdf' && pdfPassword !== undefined && setPdfPassword && (
+        <UnlockPdfEditor pdfPassword={pdfPassword} setPdfPassword={setPdfPassword} onApply={handleStartProcessing} isProcessing={isProcessing} />
       )}
       {['pdf-to-word', 'word-to-pdf', 'excel-to-pdf', 'image-to-pdf', 'ppt-to-pdf', 'pdf-to-ppt', 'csv-to-pdf', 'txt-to-pdf', 'csv-to-excel', 'excel-to-csv', 'ocr-pdf'].includes(tool.id) && (
         <GenericConvertEditor toolId={tool.id} onApply={handleStartProcessing} isProcessing={isProcessing} />

@@ -1,21 +1,32 @@
-import { PDFDocument } from 'pdf-lib';
+import { decryptPDF } from '@pdfsmaller/pdf-decrypt';
 
-export const unlockPdf = async (
+export async function unlockPdf(
   file: File,
-  _password?: string,
+  password?: string,
   onProgress?: (progress: number) => void
-): Promise<Uint8Array> => {
-  if (onProgress) onProgress(30);
-  const arrayBuffer = await file.arrayBuffer();
-  let pdf: PDFDocument;
-  try {
-    pdf = await PDFDocument.load(arrayBuffer, { ignoreEncryption: true });
-  } catch (err: any) {
-    throw new Error(`Cannot unlock PDF: ${err?.message || 'File is restricted with strong owner encryption.'}`);
+): Promise<Blob> {
+  if (!password) {
+    throw new Error('Password is required to unlock the PDF');
   }
-  if (onProgress) onProgress(80);
-  const data = await pdf.save();
-  if (onProgress) onProgress(100);
-  return data;
-};
 
+  onProgress?.(10);
+  const arrayBuffer = await file.arrayBuffer();
+  const pdfBytes = new Uint8Array(arrayBuffer);
+  
+  onProgress?.(40);
+  
+  try {
+    const decryptedBytes = await decryptPDF(pdfBytes, password);
+    onProgress?.(90);
+
+    const blob = new Blob([decryptedBytes as any], { type: 'application/pdf' });
+    onProgress?.(100);
+
+    return blob;
+  } catch (error: any) {
+    if (error.message?.includes('Incorrect password')) {
+      throw new Error('Kata sandi salah. Silakan coba lagi.');
+    }
+    throw error;
+  }
+}

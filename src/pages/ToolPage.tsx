@@ -126,6 +126,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
     height: 10,
     imageUrl: ''
   });
+  const [pdfPassword, setPdfPassword] = useState<string>('');
 
   const [activeFileIndex, setActiveFileIndex] = useState<number>(0);
 
@@ -237,6 +238,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
             insertFile={insertFile} setInsertFile={setInsertFile}
             insertAtIndex={insertAtIndex} setInsertAtIndex={setInsertAtIndex}
             signatureConfig={signatureConfig} setSignatureConfig={setSignatureConfig}
+            pdfPassword={pdfPassword} setPdfPassword={setPdfPassword}
 
             formatSize={formatSize}
             acceptTypes={getAcceptTypes(tool.id)}

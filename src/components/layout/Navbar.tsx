@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { LocaleSwitcher } from './LocaleSwitcher';
-import { Sun, Moon, FileText, ChevronDown, ChevronUp, Grid, Combine, Scissors, Minimize2, RotateCw, Hash, Stamp, FileSpreadsheet, Presentation, AlignLeft, Table, Image, Images, ScanText, Trash2, LayoutList, PenTool } from 'lucide-react';
+import { Sun, Moon, FileText, ChevronDown, ChevronUp, Grid, Combine, Scissors, Minimize2, RotateCw, Hash, Stamp, FileSpreadsheet, Presentation, AlignLeft, Table, Image, Images, ScanText, Trash2, LayoutList, PenTool, Lock, Unlock } from 'lucide-react';
 import { TOOLS_CATALOG, getToolById, type ToolDefinition } from '../../catalog/toolsCatalog';
 
 interface NavbarProps {
@@ -310,9 +310,9 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </div>
               </div>
 
-              {/* Column 2: Optimize PDF */}
+              {/* Column 2: Optimize & Secure PDF */}
               <div className="mega-menu-col">
-                <div className="mega-menu-title">⚡ OPTIMIZE PDF</div>
+                <div className="mega-menu-title">⚡ OPTIMIZE & SECURE PDF</div>
                 <div onClick={() => handleToolClick('compress-pdf')} className="mega-menu-item">
                   <Minimize2 size={18} />
                   <div>
@@ -339,6 +339,20 @@ export const Navbar: React.FC<NavbarProps> = ({
                   <div>
                     <div className="item-title">Sign PDF</div>
                     <div className="item-desc">E-Sign PDF documents</div>
+                  </div>
+                </div>
+                <div onClick={() => handleToolClick('protect-pdf')} className="mega-menu-item">
+                  <Lock size={18} />
+                  <div>
+                    <div className="item-title">Protect PDF</div>
+                    <div className="item-desc">Add password and encrypt PDF</div>
+                  </div>
+                </div>
+                <div onClick={() => handleToolClick('unlock-pdf')} className="mega-menu-item">
+                  <Unlock size={18} />
+                  <div>
+                    <div className="item-title">Unlock PDF</div>
+                    <div className="item-desc">Remove password from PDF</div>
                   </div>
                 </div>
               </div>

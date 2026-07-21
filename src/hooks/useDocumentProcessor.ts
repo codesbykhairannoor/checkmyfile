@@ -7,6 +7,8 @@ import * as ocrEngine from '../engines/ocrEngine';
 import { removePdfPages } from '../engines/pdf/removePages';
 import { insertPdfPages } from '../engines/pdf/organizePdf';
 import { signPdf } from '../engines/pdf/signPdf';
+import { protectPdf } from '../engines/pdf/protectPdf';
+import { unlockPdf } from '../engines/pdf/unlockPdf';
 import { getUiTranslations } from '../i18n/translations';
 
 interface ProcessorOptions {
@@ -25,6 +27,7 @@ interface ProcessorOptions {
   insertFile?: File | null;
   insertAtIndex?: number;
   signatureConfig?: any;
+  pdfPassword?: string;
 }
 
 export function useDocumentProcessor() {
@@ -82,10 +85,12 @@ export function useDocumentProcessor() {
         resultBytes = await pdfEngine.rotatePdf(files[0], options.rotateDegrees || 0, (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_rotated.pdf`;
       } else if (toolId === 'protect-pdf') {
-        resultBytes = await pdfEngine.encryptPdf(files[0], options.password || '123456', (p) => setProgress(p));
+        const resultBlob = await protectPdf(files[0], options.pdfPassword, (p) => setProgress(p));
+        resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_protected.pdf`;
       } else if (toolId === 'unlock-pdf') {
-        resultBytes = await pdfEngine.unlockPdf(files[0], options.password, (p) => setProgress(p));
+        const resultBlob = await unlockPdf(files[0], options.pdfPassword, (p) => setProgress(p));
+        resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_unlocked.pdf`;
       } else if (toolId === 'page-numbers') {
         resultBytes = await pdfEngine.addPageNumbers(files[0], options.pageNumberConfig, (p) => setProgress(p));
