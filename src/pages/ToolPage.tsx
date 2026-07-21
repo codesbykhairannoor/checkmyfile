@@ -322,8 +322,8 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                 <div style={{ position: 'absolute', top: 16, left: 16, zIndex: 10, background: 'rgba(239,68,68,0.9)', color: '#fff', padding: '6px 12px', borderRadius: 20, fontSize: '0.8rem', fontWeight: 600 }}>Perbandingan (Diff)</div>
                 <DocumentLivePreview files={[resultFile]} currentLang={currentLang} isResult={true} hideSidebar={true} />
                 
-                {/* Accuracy Overlay */}
-                <div style={{ position: 'absolute', bottom: 24, right: 24, left: 24, background: '#fff', padding: 20, borderRadius: 12, boxShadow: '0 8px 32px rgba(0,0,0,0.15)', zIndex: 100, border: '1px solid var(--border-color)' }}>
+                {/* Accuracy Overlay - Now positioned statically below the preview to prevent covering */}
+                <div style={{ background: '#fff', padding: 20, borderTop: '1px solid var(--border-color)', zIndex: 100 }}>
                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
                      <div>
                        <h4 style={{ margin: 0, fontSize: '1.1rem', fontWeight: 800, color: 'var(--text-main)' }}>Hasil Perbandingan</h4>

@@ -68,21 +68,18 @@ export const comparePdf = async (
     const diff = diffCtx.createImageData(width, height);
 
     // Run pixelmatch
-    const numDiffPixels = pixelmatch(img1.data, img2.data, diff.data, width, height, { threshold: 0.1, diffColor: [255, 0, 0] });
+    const numDiffPixels = pixelmatch(img1.data, img2.data, diff.data, width, height, { 
+      threshold: 0.2, 
+      includeAA: true, 
+      alpha: 0.3,
+      diffColor: [239, 68, 68] 
+    });
+    
     totalDiffPixels += numDiffPixels;
     totalPixels += width * height;
 
-    // We want the diff to show the original document faded out, with red highlights
-    // So we draw img1 to diffCtx first, fade it, then draw the diff pixels over it
-    diffCtx.putImageData(img1, 0, 0);
-    diffCtx.fillStyle = 'rgba(255, 255, 255, 0.7)'; // Fade out original
-    diffCtx.fillRect(0, 0, width, height);
-    
-    // Now draw the red diff pixels on top
-    const tempCanvas = document.createElement('canvas');
-    tempCanvas.width = width; tempCanvas.height = height;
-    tempCanvas.getContext('2d')?.putImageData(diff, 0, 0);
-    diffCtx.drawImage(tempCanvas, 0, 0);
+    // pixelmatch already generates the faded background and red diffs in diff.data
+    diffCtx.putImageData(diff, 0, 0);
 
     const jpegDataUrl = diffCanvas.toDataURL('image/jpeg', 0.85);
     const image = await newPdf.embedJpg(jpegDataUrl);
