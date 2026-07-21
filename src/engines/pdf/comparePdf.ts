@@ -67,44 +67,115 @@ export const comparePdf = async (
     const img2 = ctx2.getImageData(0, 0, width, height);
 
 
-    // Smart Grid-Based Highlighter (Solves legibility issues with shifted text)
-    // Instead of coloring individual pixels (which causes messy double-vision),
-    // we use Document 2 as the pristine base and draw highlighter blocks over differences.
-    const img1Data = img1.data;
-    const img2Data = img2.data;
-    
-    // 1. Draw Document 2 as the perfect, readable base
+    // Hybrid Semantic + Pixel Highlighter
+    // 1. Draw Document 2 as the pristine base
     diffCtx.putImageData(img2, 0, 0);
     
-    const cellSize = 8;
-    const cols = Math.ceil(width / cellSize);
-    const rows = Math.ceil(height / cellSize);
-    const grid = new Uint8Array(cols * rows);
-    let numDiffPixels = 0;
-
-    // 2. Detect differences and populate grid
-    for (let y = 0; y < height; y++) {
-      for (let x = 0; x < width; x++) {
-        const i = (y * width + x) * 4;
-        const v1 = (img1Data[i] * 0.299 + img1Data[i+1] * 0.587 + img1Data[i+2] * 0.114);
-        const v2 = (img2Data[i] * 0.299 + img2Data[i+1] * 0.587 + img2Data[i+2] * 0.114);
-        
-        if (Math.abs(v1 - v2) > 40) { // Significant difference
-           numDiffPixels++;
-           const c = Math.floor(x / cellSize);
-           const r = Math.floor(y / cellSize);
-           grid[r * cols + c]++;
+    // --- SEMANTIC TEXT DIFF ENGINE ---
+    const text1 = page1 ? await page1.getTextContent() : { items: [] };
+    const text2 = page2 ? await page2.getTextContent() : { items: [] };
+    
+    const orig1: any[] = text1.items.filter((t: any) => 'str' in t && typeof t.str === 'string' && t.str.trim().length > 0);
+    const orig2: any[] = text2.items.filter((t: any) => 'str' in t && typeof t.str === 'string' && t.str.trim().length > 0);
+    
+    // Longest Common Subsequence (LCS) for text matching
+    const dp = Array(orig1.length + 1).fill(null).map(() => new Int32Array(orig2.length + 1));
+    for (let i = 1; i <= orig1.length; i++) {
+      for (let j = 1; j <= orig2.length; j++) {
+        if (orig1[i-1].str.trim() === orig2[j-1].str.trim()) {
+          dp[i][j] = dp[i-1][j-1] + 1;
+        } else {
+          dp[i][j] = Math.max(dp[i-1][j], dp[i][j-1]);
         }
       }
     }
     
-    // 3. Dilate grid to group small pixel changes into cohesive blocks (paragraphs/words)
+    const addedItems = new Set<any>();
+    let i_lcs = orig1.length, j_lcs = orig2.length;
+    while (i_lcs > 0 || j_lcs > 0) {
+      if (i_lcs > 0 && j_lcs > 0 && orig1[i_lcs-1].str.trim() === orig2[j_lcs-1].str.trim()) {
+        i_lcs--; j_lcs--;
+      } else if (j_lcs > 0 && (i_lcs === 0 || dp[i_lcs][j_lcs-1] >= dp[i_lcs-1][j_lcs])) {
+        addedItems.add(orig2[j_lcs-1]);
+        j_lcs--;
+      } else if (i_lcs > 0 && (j_lcs === 0 || dp[i_lcs][j_lcs-1] < dp[i_lcs-1][j_lcs])) {
+        i_lcs--;
+      }
+    }
+    
+    let numDiffPixels = 0;
+
+    // Draw semantic highlights for added/modified text
+    const drawHighlight = (item: any, vp: any, color: string) => {
+      const [a, b, c, d, e, f] = vp.transform;
+      const px = item.transform[4];
+      const py = item.transform[5];
+      const cx = a * px + c * py + e;
+      const cy = b * px + d * py + f;
+      const cw = item.width * Math.abs(a);
+      const ch = (item.transform[3] || item.height || 12) * Math.abs(d);
+      
+      diffCtx.fillStyle = color;
+      diffCtx.fillRect(cx, cy - ch * 0.8, Math.max(cw, 5), ch * 1.2);
+      numDiffPixels += Math.max(cw, 5) * (ch * 1.2);
+    };
+    
+    addedItems.forEach(item => drawHighlight(item, viewport2, 'rgba(239, 68, 68, 0.25)'));
+
+    // --- MASKED PIXEL DIFF ENGINE (For Graphics/Images only) ---
+    const cellSize = 8;
+    const cols = Math.ceil(width / cellSize);
+    const rows = Math.ceil(height / cellSize);
+    const grid = new Uint8Array(cols * rows);
+    
+    // Mask out text regions so shifted text doesn't trigger pixel diff
+    const mask = new Uint8Array(width * height);
+    const maskText = (item: any, vp: any) => {
+      const [a, b, c, d, e, f] = vp.transform;
+      const cx = a * item.transform[4] + c * item.transform[5] + e;
+      const cy = b * item.transform[4] + d * item.transform[5] + f;
+      const cw = item.width * Math.abs(a);
+      const ch = (item.transform[3] || item.height || 12) * Math.abs(d);
+      
+      const xStart = Math.max(0, Math.floor(cx - 5));
+      const yStart = Math.max(0, Math.floor(cy - ch * 1.0));
+      const xEnd = Math.min(width, Math.ceil(cx + cw + 5));
+      const yEnd = Math.min(height, Math.ceil(cy + ch * 0.4));
+      
+      for(let y = yStart; y < yEnd; y++) {
+         for(let x = xStart; x < xEnd; x++) {
+            mask[y * width + x] = 1;
+         }
+      }
+    };
+    
+    orig1.forEach(item => maskText(item, viewport1));
+    orig2.forEach(item => maskText(item, viewport2));
+
+    const img1Data = img1.data;
+    const img2Data = img2.data;
+
+    // Detect differences in non-text areas
+    for (let y = 0; y < height; y++) {
+      for (let x = 0; x < width; x++) {
+        if (mask[y * width + x] === 1) continue; // Ignore text areas
+        
+        const i = (y * width + x) * 4;
+        const v1 = (img1Data[i] * 0.299 + img1Data[i+1] * 0.587 + img1Data[i+2] * 0.114);
+        const v2 = (img2Data[i] * 0.299 + img2Data[i+1] * 0.587 + img2Data[i+2] * 0.114);
+        
+        if (Math.abs(v1 - v2) > 40) {
+           numDiffPixels++;
+           grid[Math.floor(y / cellSize) * cols + Math.floor(x / cellSize)]++;
+        }
+      }
+    }
+    
+    // Dilate non-text grid
     const dilatedGrid = new Uint8Array(cols * rows);
     for (let r = 0; r < rows; r++) {
       for (let c = 0; c < cols; c++) {
-        // If a cell has at least 3 changed pixels, it's a real change (ignores 1-pixel noise)
         if (grid[r * cols + c] > 2) {
-           // Mark this cell and its immediate neighbors (dilation)
            for (let dr = -1; dr <= 1; dr++) {
              for (let dc = -1; dc <= 1; dc++) {
                 const nr = r + dr, nc = c + dc;
@@ -117,8 +188,8 @@ export const comparePdf = async (
       }
     }
     
-    // 4. Draw the highlighter blocks over the base document
-    diffCtx.fillStyle = 'rgba(239, 68, 68, 0.25)'; // Semi-transparent Red/Pink Highlighter
+    // Draw non-text graphics highlights
+    diffCtx.fillStyle = 'rgba(239, 68, 68, 0.25)';
     for (let r = 0; r < rows; r++) {
       for (let c = 0; c < cols; c++) {
         if (dilatedGrid[r * cols + c] === 1) {
