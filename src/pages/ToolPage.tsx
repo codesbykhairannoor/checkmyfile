@@ -279,27 +279,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
           />
         </div>
       )}
-      {/* OCR Result Display */}
-      {ocrTextResult && (
-        <div className="glass-panel" style={{ padding: 24, margin: '28px 0' }}>
-          <h4 style={{ fontWeight: 700, marginBottom: 12, color: 'var(--text-accent)' }}>Extracted OCR Text:</h4>
-          <textarea
-            readOnly
-            value={ocrTextResult}
-            style={{
-              width: '100%',
-              height: 240,
-              padding: 16,
-              borderRadius: 8,
-              border: '1px solid var(--border-color)',
-              background: 'var(--bg-input)',
-              color: 'var(--text-main)',
-              fontFamily: 'monospace',
-              fontSize: '0.9rem',
-            }}
-          />
-        </div>
-      )}
+
 
       {/* Localized FAQ Accordion (Programmatic SEO Schema integration) */}
       {files.length === 0 && !isCompleted && (
