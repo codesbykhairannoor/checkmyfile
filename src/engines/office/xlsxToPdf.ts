@@ -27,15 +27,36 @@ export const convertExcelToPdf = async (file: File, onProgress: (p: number) => v
   if (!ws) throw new Error('No worksheets found');
   onProgress(40);
 
-  const rows = XLSX.utils.sheet_to_json(ws, { header: 1 }) as any[][];
+  // Use defval: '' so empty cells are still extracted
+  const rows = XLSX.utils.sheet_to_json(ws, { header: 1, defval: '' }) as any[][];
   if (!rows || rows.length === 0) throw new Error('Spreadsheet file is empty or has no readable rows.');
 
-  // Extract headers and data
-  const headers: string[] = rows[0].map((cell) => String(cell ?? ''));
-  const dataRows = rows.slice(1).map(row => {
-    // Ensure data rows have the same length as headers to avoid misalignment
-    const cleanRow = [];
-    for (let i = 0; i < headers.length; i++) {
+  // Find max columns
+  let maxCols = 0;
+  for (const row of rows) {
+    if (row.length > maxCols) maxCols = row.length;
+  }
+  maxCols = Math.max(1, maxCols);
+
+  const getColumnLabel = (index: number) => {
+    let label = '';
+    let curr = index;
+    while (curr >= 0) {
+      label = String.fromCharCode(65 + (curr % 26)) + label;
+      curr = Math.floor(curr / 26) - 1;
+    }
+    return label;
+  };
+
+  const headers: string[] = ['']; // Empty header for row number column
+  for (let i = 0; i < maxCols; i++) {
+    headers.push(getColumnLabel(i));
+  }
+
+  // Extract data rows
+  const dataRows = rows.map((row, rowIndex) => {
+    const cleanRow = [String(rowIndex + 1)]; // First cell is row number
+    for (let i = 0; i < maxCols; i++) {
       cleanRow.push(String(row[i] ?? ''));
     }
     return cleanRow;
@@ -70,7 +91,17 @@ export const convertExcelToPdf = async (file: File, onProgress: (p: number) => v
     headStyles: { 
       fillColor: [79, 70, 229], // #4F46E5 Brand Primary
       textColor: [255, 255, 255], 
-      fontStyle: 'bold' 
+      fontStyle: 'bold',
+      halign: 'center'
+    },
+    columnStyles: {
+      0: { 
+        fillColor: [241, 245, 249], // slate-100
+        fontStyle: 'bold', 
+        halign: 'center', 
+        textColor: [100, 116, 139],
+        cellWidth: 10
+      }
     },
     alternateRowStyles: { 
       fillColor: [248, 250, 252] // #F8FAFC Zebra Striping
