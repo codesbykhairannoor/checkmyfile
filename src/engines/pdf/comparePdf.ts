@@ -67,37 +67,34 @@ export const comparePdf = async (
     const img2 = ctx2.getImageData(0, 0, width, height);
     const diff = diffCtx.createImageData(width, height);
 
-    // Custom Red/Green Visual Diffing Engine
+    // Continuous Red/Green Visual Diffing Engine (Anaglyph style)
     const img1Data = img1.data;
     const img2Data = img2.data;
     const diffData = diff.data;
     let numDiffPixels = 0;
 
     for (let i = 0; i < img1Data.length; i += 4) {
-      const r1 = img1Data[i], g1 = img1Data[i+1], b1 = img1Data[i+2];
-      const r2 = img2Data[i], g2 = img2Data[i+1], b2 = img2Data[i+2];
+      // Calculate perceived luminance (grayscale) for both pixels
+      const v1 = (img1Data[i] * 0.299 + img1Data[i+1] * 0.587 + img1Data[i+2] * 0.114);
+      const v2 = (img2Data[i] * 0.299 + img2Data[i+1] * 0.587 + img2Data[i+2] * 0.114);
       
-      const bright1 = (r1 + g1 + b1) / 3;
-      const bright2 = (r2 + g2 + b2) / 3;
-      const brightDiff = Math.abs(bright1 - bright2);
-      
-      // If brightness difference is significant (ignore minor anti-aliasing)
-      if (brightDiff > 40) {
+      if (Math.abs(v1 - v2) > 30) {
         numDiffPixels++;
-        if (bright1 < bright2) {
-          // Doc 1 had ink (darker), Doc 2 doesn't -> Ink Removed (RED)
-          diffData[i] = 239; diffData[i+1] = 68; diffData[i+2] = 68; diffData[i+3] = 255;
-        } else {
-          // Doc 2 has ink (darker), Doc 1 didn't -> Ink Added (GREEN)
-          diffData[i] = 34; diffData[i+1] = 197; diffData[i+2] = 94; diffData[i+3] = 255;
-        }
-      } else {
-        // Match -> Draw faded Doc 2 (40% opacity)
-        diffData[i] = 255 - ((255 - r2) * 0.4);
-        diffData[i+1] = 255 - ((255 - g2) * 0.4);
-        diffData[i+2] = 255 - ((255 - b2) * 0.4);
-        diffData[i+3] = 255;
       }
+      
+      // Continuous Color Mapping:
+      // - If v1=0 (Old text) & v2=255 (New bg) -> R=255, G=0, B=0 (RED = Removed)
+      // - If v1=255 (Old bg) & v2=0 (New text) -> R=0, G=255, B=0 (GREEN = Added)
+      // - If v1=0 & v2=0 (Match text) -> R=0, G=0, B=0 (BLACK)
+      // - If v1=255 & v2=255 (Match bg) -> R=255, G=255, B=255 (WHITE)
+      // We lighten the matching black text slightly to dark gray so colors pop more
+      const baseB = Math.min(v1, v2);
+      
+      // To prevent pure black matching text from overpowering, we lighten everything by 20%
+      diffData[i]   = Math.min(255, v2 + (255 - v2) * 0.2); // Red channel comes from Doc 2 (inverts Doc 1 darkness)
+      diffData[i+1] = Math.min(255, v1 + (255 - v1) * 0.2); // Green channel comes from Doc 1 (inverts Doc 2 darkness)
+      diffData[i+2] = Math.min(255, baseB + (255 - baseB) * 0.2); // Blue channel
+      diffData[i+3] = 255;
     }
     
     totalDiffPixels += numDiffPixels;
