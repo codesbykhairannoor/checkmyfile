@@ -16,6 +16,7 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
 }) => {
   const [tab, setTab] = useState<'draw' | 'upload'>('draw');
   const [isDrawing, setIsDrawing] = useState(false);
+  const [lineWidth, setLineWidth] = useState(2);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const fileRef = useRef<HTMLInputElement>(null);
 
@@ -27,17 +28,22 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
       if (ctx) {
         ctx.lineCap = 'round';
         ctx.lineJoin = 'round';
-        ctx.lineWidth = 4;
+        ctx.lineWidth = lineWidth;
         ctx.strokeStyle = '#000';
       }
     }
-  }, [tab]);
+  }, [tab, lineWidth]);
 
   const startDrawing = (e: React.MouseEvent<HTMLCanvasElement> | React.TouchEvent<HTMLCanvasElement>) => {
     if (!canvasRef.current) return;
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
+
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    ctx.lineWidth = lineWidth;
+    ctx.strokeStyle = '#000';
 
     const rect = canvas.getBoundingClientRect();
     const xRaw = ('touches' in e) ? e.touches[0].clientX - rect.left : (e as React.MouseEvent).clientX - rect.left;
@@ -152,7 +158,13 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
               <RotateCcw size={14} />
             </button>
           </div>
-          <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', textAlign: 'center' }}>Goreskan tanda tangan Anda di atas kotak ini</p>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 6, marginTop: 4 }}>
+            <label style={{ fontSize: '0.8rem', color: 'var(--text-muted)', display: 'flex', justifyContent: 'space-between' }}>
+              <span>Ketebalan Tinta</span>
+              <span>{lineWidth}px</span>
+            </label>
+            <input type="range" min="1" max="10" value={lineWidth} onChange={e => setLineWidth(Number(e.target.value))} />
+          </div>
         </div>
       )}
 
