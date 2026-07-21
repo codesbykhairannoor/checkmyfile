@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { LocaleSwitcher } from './LocaleSwitcher';
-import { Sun, Moon, FileText, ChevronDown, ChevronUp, Grid, Combine, Scissors, Minimize2, RotateCw, Hash, Stamp, FileSpreadsheet, Presentation, AlignLeft, Table, Image, Images, ScanText, Trash2, LayoutList, PenTool, Lock, Unlock, Crop, Contrast } from 'lucide-react';
+import { Sun, Moon, FileText, ChevronDown, ChevronUp, Grid, Combine, Scissors, Minimize2, FileSpreadsheet, LayoutList, Crop, ScanText, ScanLine, Eraser, Scale, EyeOff, RotateCw, Hash, Stamp, Presentation, AlignLeft, Table, Image, Images, Trash2, PenTool, Lock, Unlock, Contrast } from 'lucide-react';
 import { TOOLS_CATALOG, getToolById, type ToolDefinition } from '../../catalog/toolsCatalog';
 
 interface NavbarProps {
@@ -315,6 +315,13 @@ export const Navbar: React.FC<NavbarProps> = ({
                     <div className="item-desc">Remove margins or cut pages</div>
                   </div>
                 </div>
+                <div onClick={() => handleToolClick('compare-pdf')} className="mega-menu-item">
+                  <Scale size={18} />
+                  <div>
+                    <div className="item-title">Compare PDF</div>
+                    <div className="item-desc">Find visual differences</div>
+                  </div>
+                </div>
               </div>
 
               {/* Column 2: Optimize & Secure PDF */}
@@ -367,6 +374,27 @@ export const Navbar: React.FC<NavbarProps> = ({
                   <div>
                     <div className="item-title">Grayscale PDF</div>
                     <div className="item-desc">Convert PDF to Black and White</div>
+                  </div>
+                </div>
+                <div onClick={() => handleToolClick('scan-to-pdf')} className="mega-menu-item">
+                  <ScanLine size={18} />
+                  <div>
+                    <div className="item-title">Scan to PDF</div>
+                    <div className="item-desc">Rasterize to uneditable PDF</div>
+                  </div>
+                </div>
+                <div onClick={() => handleToolClick('remove-pdf-metadata')} className="mega-menu-item">
+                  <Eraser size={18} />
+                  <div>
+                    <div className="item-title">Remove Metadata</div>
+                    <div className="item-desc">Clean hidden PDF properties</div>
+                  </div>
+                </div>
+                <div onClick={() => handleToolClick('redact-pdf')} className="mega-menu-item">
+                  <EyeOff size={18} />
+                  <div>
+                    <div className="item-title">Redact PDF</div>
+                    <div className="item-desc">Securely blackout private info</div>
                   </div>
                 </div>
               </div>

@@ -12,6 +12,10 @@ import { unlockPdf } from '../engines/pdf/unlockPdf';
 import { cropPdf } from '../engines/pdf/cropPdf';
 import { extractImagesPdf } from '../engines/pdf/extractImages';
 import { grayscalePdf } from '../engines/pdf/grayscalePdf';
+import { scanToPdf } from '../engines/pdf/scanToPdf';
+import { removeMetadataPdf } from '../engines/pdf/removeMetadataPdf';
+import { comparePdf } from '../engines/pdf/comparePdf';
+import { redactPdf } from '../engines/pdf/redactPdf';
 import { getUiTranslations } from '../i18n/translations';
 
 interface ProcessorOptions {
@@ -32,6 +36,8 @@ interface ProcessorOptions {
   signatureConfig?: any;
   pdfPassword?: string;
   cropConfig?: any;
+  compareFile2?: File | null;
+  redactConfig?: any;
 }
 
 export function useDocumentProcessor() {
@@ -108,6 +114,20 @@ export function useDocumentProcessor() {
         const resultBlob = await grayscalePdf(files[0], (p) => setProgress(p));
         resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_grayscale.pdf`;
+      } else if (toolId === 'scan-to-pdf') {
+        resultBytes = await scanToPdf(files[0], (p) => setProgress(p));
+        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_scanned.pdf`;
+      } else if (toolId === 'remove-pdf-metadata') {
+        resultBytes = await removeMetadataPdf(files[0]);
+        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_sanitized.pdf`;
+      } else if (toolId === 'compare-pdf') {
+        if (!options.compareFile2) throw new Error("File pembanding tidak ditemukan.");
+        resultBytes = await comparePdf(files[0], options.compareFile2, (p) => setProgress(p));
+        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_comparison.pdf`;
+      } else if (toolId === 'redact-pdf') {
+        if (!options.redactConfig) throw new Error("Konfigurasi sensor tidak ditemukan.");
+        resultBytes = await redactPdf(files[0], options.redactConfig, (p) => setProgress(p));
+        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_redacted.pdf`;
       } else if (toolId === 'page-numbers') {
         resultBytes = await pdfEngine.addPageNumbers(files[0], options.pageNumberConfig, (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_numbered.pdf`;

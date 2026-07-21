@@ -16,6 +16,10 @@ import { UnlockPdfEditor } from './UnlockPdfEditor';
 import { CropPdfEditor } from './CropPdfEditor';
 import { ExtractImagesEditor } from './ExtractImagesEditor';
 import { GrayscalePdfEditor } from './GrayscalePdfEditor';
+import { ScanToPdfEditor } from './ScanToPdfEditor';
+import { RemoveMetadataEditor } from './RemoveMetadataEditor';
+import { ComparePdfEditor } from './ComparePdfEditor';
+import { RedactPdfEditor } from './RedactPdfEditor';
 import type { ToolDefinition } from '../../catalog/toolsCatalog';
 
 interface ToolSidebarProps {
@@ -25,7 +29,7 @@ interface ToolSidebarProps {
   activeFileIndex: number;
   setActiveFileIndex: (idx: number) => void;
   isProcessing: boolean;
-  handleStartProcessing: () => void;
+  handleStartProcessing: (options?: any) => void;
   // Tool options
   splitRange: string; setSplitRange: (v: string) => void;
   rotateDegrees: number; setRotateDegrees: (v: number) => void;
@@ -45,6 +49,7 @@ interface ToolSidebarProps {
   signatureConfig?: any; setSignatureConfig?: (v: any) => void;
   pdfPassword?: string; setPdfPassword?: (v: string) => void;
   cropConfig?: any; setCropConfig?: (v: any) => void;
+  redactConfig?: any; setRedactConfig?: (v: any) => void;
 
   formatSize: (bytes: number) => string;
   acceptTypes?: string;
@@ -58,7 +63,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
   pageNumberConfig, setPageNumberConfig, watermarkConfig, setWatermarkConfig, compressQuality, setCompressQuality,
   extractImageFormat, setExtractImageFormat,
   removeRange, setRemoveRange, insertFile, setInsertFile, insertAtIndex, setInsertAtIndex, signatureConfig, setSignatureConfig,
-  pdfPassword, setPdfPassword, cropConfig, setCropConfig,
+  pdfPassword, setPdfPassword, cropConfig, setCropConfig, redactConfig, setRedactConfig,
   formatSize, acceptTypes = '*', allowMultiple = false, pdfPagesCount = 100
 }) => {
   const fileInputRef = React.useRef<HTMLInputElement>(null);
@@ -174,6 +179,22 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
       )}
       {tool.id === 'grayscale-pdf' && (
         <GrayscalePdfEditor onApply={handleStartProcessing} isProcessing={isProcessing} />
+      )}
+      {tool.id === 'scan-to-pdf' && (
+        <ScanToPdfEditor onProcess={handleStartProcessing} isProcessing={isProcessing} />
+      )}
+      {tool.id === 'remove-pdf-metadata' && (
+        <RemoveMetadataEditor onProcess={handleStartProcessing} isProcessing={isProcessing} />
+      )}
+      {tool.id === 'compare-pdf' && (
+        <ComparePdfEditor onProcess={(options) => handleStartProcessing(options)} isProcessing={isProcessing} />
+      )}
+      {tool.id === 'redact-pdf' && redactConfig && setRedactConfig && (
+        <RedactPdfEditor 
+          redactConfig={redactConfig} setRedactConfig={setRedactConfig} 
+          activeFileIndex={activeFileIndex}
+          onProcess={handleStartProcessing} isProcessing={isProcessing} 
+        />
       )}
       {['pdf-to-word', 'word-to-pdf', 'excel-to-pdf', 'image-to-pdf', 'ppt-to-pdf', 'pdf-to-ppt', 'csv-to-pdf', 'txt-to-pdf', 'csv-to-excel', 'excel-to-csv', 'ocr-pdf'].includes(tool.id) && (
         <GenericConvertEditor toolId={tool.id} onApply={handleStartProcessing} isProcessing={isProcessing} />

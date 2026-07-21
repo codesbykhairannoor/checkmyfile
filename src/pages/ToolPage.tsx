@@ -151,6 +151,8 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
     marginRight: 0
   });
 
+  const [redactConfig, setRedactConfig] = useState<Record<number, Array<{ id: string, x: number, y: number, width: number, height: number }>>>({});
+
   const [activeFileIndex, setActiveFileIndex] = useState<number>(0);
 
   const formatSize = (bytes: number) => {
@@ -242,6 +244,8 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
                 removeRange={tool.id === 'remove-pdf' ? removeRange : undefined}
                 signatureConfig={tool.id === 'sign-pdf' ? signatureConfig : undefined}
                 cropConfig={tool.id === 'crop-pdf' ? cropConfig : undefined}
+                redactConfig={tool.id === 'redact-pdf' ? redactConfig : undefined}
+                setRedactConfig={setRedactConfig}
                 onSignatureUpdate={(x, y, pageIndex) => setSignatureConfig(prev => prev ? ({ ...prev, x, y, ...(pageIndex !== undefined ? { pageIndex } : {}) }) : prev)}
               />
           </div>
@@ -264,6 +268,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
             signatureConfig={signatureConfig} setSignatureConfig={setSignatureConfig}
             pdfPassword={pdfPassword} setPdfPassword={setPdfPassword}
             cropConfig={cropConfig} setCropConfig={setCropConfig}
+            redactConfig={redactConfig} setRedactConfig={setRedactConfig}
 
             formatSize={formatSize}
             acceptTypes={getAcceptTypes(tool.id)}

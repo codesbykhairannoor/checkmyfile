@@ -59,6 +59,84 @@ const DraggableSignature = ({ config, onUpdate }: { config: any, onUpdate: (x: n
   );
 };
 
+const DraggableRedactBox = ({ config, onUpdate }: { config: any, onUpdate: (x: number, y: number, w: number, h: number) => void }) => {
+  const [isDragging, setIsDragging] = useState(false);
+  const [isResizing, setIsResizing] = useState(false);
+  const startPos = useRef({ x: 0, y: 0 });
+  const startConfig = useRef({ x: 0, y: 0, w: 0, h: 0 });
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!containerRef.current?.parentElement) return;
+      const parent = containerRef.current.parentElement;
+      const dx = e.clientX - startPos.current.x;
+      const dy = e.clientY - startPos.current.y;
+      
+      if (isDragging) {
+        const newX = startConfig.current.x + (dx / parent.clientWidth) * 100;
+        const newY = startConfig.current.y + (dy / parent.clientHeight) * 100;
+        onUpdate(Math.max(0, Math.min(100 - config.width, newX)), Math.max(0, Math.min(100 - config.height, newY)), config.width, config.height);
+      } else if (isResizing) {
+        const newW = startConfig.current.w + (dx / parent.clientWidth) * 100;
+        const newH = startConfig.current.h + (dy / parent.clientHeight) * 100;
+        onUpdate(config.x, config.y, Math.max(5, Math.min(100 - config.x, newW)), Math.max(5, Math.min(100 - config.y, newH)));
+      }
+    };
+
+    const handleMouseUp = () => { setIsDragging(false); setIsResizing(false); };
+
+    if (isDragging || isResizing) {
+      window.addEventListener('mousemove', handleMouseMove);
+      window.addEventListener('mouseup', handleMouseUp);
+    }
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mouseup', handleMouseUp);
+    };
+  }, [isDragging, isResizing, config, onUpdate]);
+
+  return (
+    <div
+      ref={containerRef}
+      onMouseDown={(e) => {
+        if ((e.target as HTMLElement).className.includes('resize-handle')) return;
+        setIsDragging(true);
+        startPos.current = { x: e.clientX, y: e.clientY };
+        startConfig.current = { x: config.x, y: config.y, w: config.width, h: config.height };
+        e.preventDefault();
+      }}
+      style={{
+        position: 'absolute',
+        left: `${config.x}%`,
+        top: `${config.y}%`,
+        width: `${config.width}%`,
+        height: `${config.height}%`,
+        zIndex: 40,
+        background: '#000000',
+        border: '2px solid #ef4444',
+        cursor: isDragging ? 'grabbing' : 'grab'
+      }}>
+      <span style={{ position: 'absolute', top: -24, left: 0, background: '#ef4444', color: '#fff', fontSize: '0.7rem', padding: '2px 6px', borderRadius: 4, whiteSpace: 'nowrap' }}>Area Sensor (Geser)</span>
+      
+      {/* Resize Handle */}
+      <div 
+        className="resize-handle"
+        onMouseDown={(e) => {
+          setIsResizing(true);
+          startPos.current = { x: e.clientX, y: e.clientY };
+          startConfig.current = { x: config.x, y: config.y, w: config.width, h: config.height };
+          e.stopPropagation();
+          e.preventDefault();
+        }}
+        style={{
+          position: 'absolute', bottom: -6, right: -6, width: 16, height: 16, background: '#ef4444', borderRadius: '50%', cursor: 'se-resize', zIndex: 41
+        }} 
+      />
+    </div>
+  );
+};
+
 
 interface PdfPreviewProps {
   pdfDoc: any;
@@ -73,6 +151,8 @@ interface PdfPreviewProps {
   removeRange?: string;
   signatureConfig?: { pageIndex: number; x: number; y: number; width: number; height: number; imageUrl: string; };
   onSignatureUpdate?: (x: number, y: number, pageIndex?: number) => void;
+  redactConfig?: Record<number, Array<{ id: string, x: number, y: number, width: number, height: number }>>;
+  setRedactConfig?: React.Dispatch<React.SetStateAction<any>>;
   compressQuality?: 'extreme' | 'balanced' | 'high';
   previewRotate: number;
   externalRotate?: number;
@@ -82,7 +162,7 @@ interface PdfPreviewProps {
 }
 
 export const PdfPreview: React.FC<PdfPreviewProps> = ({
-  pdfDoc, isLoadingPreview, watermarkConfig, pageNumberConfig, cropConfig, totalPages, containerWidth, containerHeight, splitRange, removeRange, signatureConfig, onSignatureUpdate, compressQuality,
+  pdfDoc, isLoadingPreview, watermarkConfig, pageNumberConfig, cropConfig, totalPages, containerWidth, containerHeight, splitRange, removeRange, signatureConfig, onSignatureUpdate, redactConfig, setRedactConfig, compressQuality,
   previewRotate, externalRotate, pixelWidth, paperShadow, pageAspectRatio
 }) => {
   if (isLoadingPreview || !pdfDoc) return null;
@@ -244,6 +324,24 @@ export const PdfPreview: React.FC<PdfPreviewProps> = ({
             {signatureConfig && signatureConfig.pageIndex === (pageNum - 1) && onSignatureUpdate && (
               <DraggableSignature config={signatureConfig} onUpdate={onSignatureUpdate} />
             )}
+
+            {redactConfig && redactConfig[pageNum - 1]?.map((box) => (
+              <DraggableRedactBox 
+                key={box.id} 
+                config={box} 
+                onUpdate={(x, y, w, h) => {
+                  if (setRedactConfig) {
+                    setRedactConfig((prev: any) => {
+                      const pageBoxes = prev[pageNum - 1] || [];
+                      return {
+                        ...prev,
+                        [pageNum - 1]: pageBoxes.map((b: any) => b.id === box.id ? { ...b, x, y, width: w, height: h } : b)
+                      };
+                    });
+                  }
+                }} 
+              />
+            ))}
 
             {compressQuality && (
               <div style={{

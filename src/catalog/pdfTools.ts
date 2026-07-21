@@ -327,3 +327,100 @@ export const pdfTools: ToolDefinition[] = [
     },
   }
 ];
+
+export const advancedPdfTools: ToolDefinition[] = [
+  {
+    id: 'scan-to-pdf',
+    category: 'pdf',
+    iconName: 'ScanLine',
+    slugs: generateSlugsForId('scan-to-pdf', {
+      en: 'scan-to-pdf',
+      id: 'scan-ke-pdf',
+    }),
+    seo: {
+      en: {
+        title: 'Scan to PDF - Make PDF Uneditable & Rasterize Online',
+        h1: 'Scan PDF to Make it Uneditable',
+        description: 'Rasterize your PDF documents into flat images inside a PDF. Prevents copy-pasting and editing securely in your browser.',
+        faqs: defaultFaqs('Scan to PDF', 'en'),
+      },
+      id: {
+        title: 'Scan ke PDF - Jadikan PDF Permanen Anti Edit Online',
+        h1: 'Ubah PDF Menjadi Gambar (Rasterize)',
+        description: 'Jadikan dokumen PDF Anda permanen dan anti-edit. Sistem akan mengubah teks menjadi gambar rata yang tidak bisa disalin.',
+        faqs: defaultFaqs('Scan ke PDF', 'id'),
+      },
+    },
+  },
+  {
+    id: 'remove-pdf-metadata',
+    category: 'pdf',
+    iconName: 'Eraser',
+    slugs: generateSlugsForId('remove-pdf-metadata', {
+      en: 'remove-pdf-metadata',
+      id: 'hapus-metadata-pdf',
+    }),
+    seo: {
+      en: {
+        title: 'Remove PDF Metadata - Sanitize Properties Online',
+        h1: 'Clean and Sanitize PDF Metadata',
+        description: 'Remove author, creator, and other hidden digital footprint properties from your PDF files offline for better privacy.',
+        faqs: defaultFaqs('Remove PDF Metadata', 'en'),
+      },
+      id: {
+        title: 'Hapus Metadata PDF - Bersihkan Jejak Digital Dokumen',
+        h1: 'Hapus Properti dan Metadata PDF',
+        description: 'Bersihkan nama pembuat, tanggal, dan jejak digital tersembunyi lainnya dari file PDF Anda secara privat di peramban.',
+        faqs: defaultFaqs('Hapus Metadata PDF', 'id'),
+      },
+    },
+  },
+  {
+    id: 'compare-pdf',
+    category: 'pdf',
+    iconName: 'Scale',
+    slugs: generateSlugsForId('compare-pdf', {
+      en: 'compare-pdf',
+      id: 'bandingkan-pdf',
+    }),
+    seo: {
+      en: {
+        title: 'Compare PDF - Find Differences Between Two PDFs',
+        h1: 'Compare Two PDF Documents Visually',
+        description: 'Upload two PDF files and highlight the visual differences between them pixel-by-pixel locally.',
+        faqs: defaultFaqs('Compare PDF', 'en'),
+      },
+      id: {
+        title: 'Bandingkan PDF - Cari Perbedaan 2 Dokumen PDF',
+        h1: 'Bandingkan 2 File PDF Secara Visual',
+        description: 'Cari tahu perubahan dan perbedaan antara dua versi dokumen PDF. Sorotan piksel merah akan menunjukkan bagian yang berbeda.',
+        faqs: defaultFaqs('Bandingkan PDF', 'id'),
+      },
+    },
+  },
+  {
+    id: 'redact-pdf',
+    category: 'pdf',
+    iconName: 'EyeOff',
+    slugs: generateSlugsForId('redact-pdf', {
+      en: 'redact-pdf',
+      id: 'sensor-pdf',
+    }),
+    seo: {
+      en: {
+        title: 'Redact PDF - Securely Blackout Text and Images',
+        h1: 'Securely Blackout Sensitive PDF Content',
+        description: 'Draw redaction boxes over private information. The redacted pages are fully rasterized to permanently destroy the hidden text.',
+        faqs: defaultFaqs('Redact PDF', 'en'),
+      },
+      id: {
+        title: 'Sensor PDF - Hitamkan Teks Rahasia Secara Permanen',
+        h1: 'Sensor Informasi Sensitif di Dokumen PDF',
+        description: 'Hitamkan NIK, nama, atau nominal rahasia di PDF. Kami menggunakan teknik rasterisasi untuk menjamin teks asli hancur permanen.',
+        faqs: defaultFaqs('Sensor PDF', 'id'),
+      },
+    },
+  }
+];
+
+pdfTools.push(...advancedPdfTools);
