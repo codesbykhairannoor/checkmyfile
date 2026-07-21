@@ -27,7 +27,8 @@ export const OfficePreview: React.FC<OfficePreviewProps> = ({
       {isDocx && (
         <div
           ref={docxContainerRef}
-          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', overflow: 'auto', padding: '32px 36px', color: '#1a202c', fontSize: '0.88rem', lineHeight: 1.7, background: 'transparent', opacity: isLoadingPreview ? 0 : 1, transition: 'opacity 0.2s ease' }}
+          className="docx-live-preview-container"
+          style={{ position: 'relative', width: '100%', height: '100%', overflow: 'auto', background: 'transparent', opacity: isLoadingPreview ? 0 : 1, transition: 'opacity 0.2s ease' }}
         />
       )}
 

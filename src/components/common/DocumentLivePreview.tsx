@@ -448,6 +448,19 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
             </div>
           )}
 
+          {/* ===== DOCX RENDER AREA (NO PAPER ASPECT RATIO) ===== */}
+          {isDocx && !isLoadingPreview && (
+            <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', overflow: 'hidden', flex: 1, minHeight: 0, borderRadius: 8 }}>
+              <OfficePreview
+                isDocx={isDocx}
+                isText={isTxt}
+                isLoadingPreview={isLoadingPreview}
+                docxContainerRef={docxContainerRef}
+                textPreviewContent={textPreviewContent}
+              />
+            </div>
+          )}
+
           {/* ===== PDF INFINITE SCROLL RENDER AREA ===== */}
           {isPdf && !isLoadingPreview && pdfDoc && (
             <PdfPreview
@@ -469,7 +482,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
           )}
 
           {/* ===== The actual "paper" element — aspect-ratio-driven ===== */}
-          {!isSpreadsheet && !isPdf && (
+          {!isSpreadsheet && !isPdf && !isDocx && (
             <div
               style={{
                 width: pixelWidth ? `${pixelWidth}px` : '100%',
@@ -511,13 +524,15 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
               />
             )}
 
-            <OfficePreview
-              isDocx={isDocx}
-              isText={isTxt}
-              isLoadingPreview={isLoadingPreview}
-              docxContainerRef={docxContainerRef}
-              textPreviewContent={textPreviewContent}
-            />
+            {isTxt && (
+              <OfficePreview
+                isDocx={false}
+                isText={isTxt}
+                isLoadingPreview={isLoadingPreview}
+                docxContainerRef={docxContainerRef}
+                textPreviewContent={textPreviewContent}
+              />
+            )}
 
             {/* PPTX Live Preview */}
             {isOfficeOther && isPptx && !isLoadingPreview && (

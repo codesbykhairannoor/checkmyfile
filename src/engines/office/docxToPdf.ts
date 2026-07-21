@@ -201,7 +201,13 @@ class NativePdfLayoutEngine {
     const marginBottom = this.ptToMm(paraStyle.marginBottomPt || (paraStyle.headingLevel ? 4 : 6));
     const indentLeft = this.ptToMm(paraStyle.indentLeftPt || 0) + (paraStyle.isList ? 10 : 0);
 
+    const lineHeight = this.ptToMm(fontSize * 1.4);
+    const baseline = this.ptToMm(fontSize);
+
     this.cursorY += marginTop;
+    this.checkPageBreak(lineHeight);
+
+    this.cursorY += baseline;
     this.cursorX = this.margin.left + indentLeft;
 
     if (paraStyle.isList) {
@@ -228,12 +234,9 @@ class NativePdfLayoutEngine {
     }
 
     if (runs.length === 0) {
-      this.cursorY += this.ptToMm(fontSize) + marginBottom;
+      this.cursorY += (lineHeight - baseline) + marginBottom;
       return;
     }
-
-    const lineHeight = this.ptToMm(fontSize * 1.4);
-    this.checkPageBreak(lineHeight);
 
     let currentLineHeight = lineHeight;
     
@@ -256,8 +259,11 @@ class NativePdfLayoutEngine {
         if (this.cursorX + wWidth > this.pageWidth - this.margin.right) {
           if (word.trim().length > 0) { // Wrap to next line
             this.cursorY += currentLineHeight;
+            if (this.cursorY > this.pageHeight - this.margin.bottom) {
+              this.doc.addPage();
+              this.cursorY = this.margin.top + baseline;
+            }
             this.cursorX = this.margin.left + indentLeft;
-            this.checkPageBreak(currentLineHeight);
             this.doc.text(word, this.cursorX, this.cursorY);
             this.cursorX += wWidth;
           }
@@ -267,7 +273,7 @@ class NativePdfLayoutEngine {
         }
       }
     }
-    this.cursorY += marginBottom;
+    this.cursorY += (lineHeight - baseline) + marginBottom;
   }
   
   renderTable(tblEl: Element, styleMap: Record<string, StyleDef>, defaultRun: RunStyle) {

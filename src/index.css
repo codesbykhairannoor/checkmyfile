@@ -341,3 +341,17 @@ button, input, select, textarea {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(148, 163, 184, 0.5);
 }
+
+/* DOCX Preview Override */
+.docx-live-preview-container .docx-wrapper {
+  background: transparent !important;
+  padding: 24px 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.docx-live-preview-container .docx-wrapper > section {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+  margin-bottom: 24px !important;
+}
