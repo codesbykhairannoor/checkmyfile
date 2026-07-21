@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { LocaleSwitcher } from './LocaleSwitcher';
-import { Sun, Moon, FileText, ChevronDown, ChevronUp, Grid, Combine, Scissors, Minimize2, RotateCw, Hash, Stamp, FileSpreadsheet, Presentation, AlignLeft, Table, Image, Images, ScanText } from 'lucide-react';
+import { Sun, Moon, FileText, ChevronDown, ChevronUp, Grid, Combine, Scissors, Minimize2, RotateCw, Hash, Stamp, FileSpreadsheet, Presentation, AlignLeft, Table, Image, Images, ScanText, Trash2, LayoutList, PenTool } from 'lucide-react';
 import { TOOLS_CATALOG, getToolById, type ToolDefinition } from '../../catalog/toolsCatalog';
 
 interface NavbarProps {
@@ -294,6 +294,20 @@ export const Navbar: React.FC<NavbarProps> = ({
                     <div className="item-desc">Add page numbers to header/footer</div>
                   </div>
                 </div>
+                <div onClick={() => handleToolClick('remove-pdf')} className="mega-menu-item">
+                  <Trash2 size={18} />
+                  <div>
+                    <div className="item-title">Remove Pages</div>
+                    <div className="item-desc">Delete specific PDF pages</div>
+                  </div>
+                </div>
+                <div onClick={() => handleToolClick('organize-pdf')} className="mega-menu-item">
+                  <LayoutList size={18} />
+                  <div>
+                    <div className="item-title">Organize PDF</div>
+                    <div className="item-desc">Insert pages into PDF</div>
+                  </div>
+                </div>
               </div>
 
               {/* Column 2: Optimize PDF */}
@@ -320,18 +334,19 @@ export const Navbar: React.FC<NavbarProps> = ({
                     <div className="item-desc">Stamp custom text watermarks</div>
                   </div>
                 </div>
+                <div onClick={() => handleToolClick('sign-pdf')} className="mega-menu-item">
+                  <PenTool size={18} />
+                  <div>
+                    <div className="item-title">Sign PDF</div>
+                    <div className="item-desc">E-Sign PDF documents</div>
+                  </div>
+                </div>
               </div>
 
               {/* Column 3: Convert TO PDF */}
               <div className="mega-menu-col">
                 <div className="mega-menu-title">🔄 CONVERT TO PDF</div>
-                <div onClick={() => handleToolClick('word-to-pdf')} className="mega-menu-item">
-                  <FileText size={18} />
-                  <div>
-                    <div className="item-title">WORD to PDF</div>
-                    <div className="item-desc">Convert .docx to clean PDF</div>
-                  </div>
-                </div>
+
                 <div onClick={() => handleToolClick('excel-to-pdf')} className="mega-menu-item">
                   <FileSpreadsheet size={18} />
                   <div>
@@ -366,13 +381,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               {/* Column 4: Convert FROM PDF */}
               <div className="mega-menu-col">
                 <div className="mega-menu-title">📑 CONVERT FROM PDF</div>
-                <div onClick={() => handleToolClick('pdf-to-word')} className="mega-menu-item">
-                  <FileText size={18} />
-                  <div>
-                    <div className="item-title">PDF to WORD (.docx)</div>
-                    <div className="item-desc">100% layout & font preservation</div>
-                  </div>
-                </div>
+
                 <div onClick={() => handleToolClick('pdf-to-ppt')} className="mega-menu-item">
                   <Presentation size={18} />
                   <div>
