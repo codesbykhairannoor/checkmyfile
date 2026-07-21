@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { PenTool, Download, Settings2, Image as ImageIcon, Type } from 'lucide-react';
+import { PenTool, Download, Settings2, Image as ImageIcon, RotateCcw } from 'lucide-react';
 
 interface SignPdfEditorProps {
   signatureConfig: { pageIndex: number; x: number; y: number; width: number; height: number; imageUrl: string; };
@@ -16,39 +16,71 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
   isProcessing,
   totalPages
 }) => {
-  const [tab, setTab] = useState<'type' | 'upload'>('type');
-  const [typedName, setTypedName] = useState('Tanda Tangan');
-  const [selectedFont, setSelectedFont] = useState('Caveat, cursive');
+  const [tab, setTab] = useState<'draw' | 'upload'>('draw');
+  const [isDrawing, setIsDrawing] = useState(false);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const fileRef = useRef<HTMLInputElement>(null);
 
-  // Fonts available for "Type" mode
-  const signatureFonts = [
-    { label: 'Caveat', value: 'Caveat, cursive' },
-    { label: 'Dancing Script', value: '"Dancing Script", cursive' },
-    { label: 'Pacifico', value: 'Pacifico, cursive' }
-  ];
-
-  // Generate image from text
+  // Initialize canvas context and clear on mount
   useEffect(() => {
-    if (tab === 'type' && canvasRef.current) {
-      document.fonts.load(`40px ${selectedFont}`).then(() => {
-        const canvas = canvasRef.current;
-        if (!canvas) return;
-        const ctx = canvas.getContext('2d');
-        if (!ctx) return;
-        
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        ctx.fillStyle = '#000000';
-        ctx.font = `40px ${selectedFont}`;
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        ctx.fillText(typedName || ' ', canvas.width / 2, canvas.height / 2);
-        
-        setSignatureConfig((prev: any) => ({ ...prev, imageUrl: canvas.toDataURL('image/png') }));
-      });
+    if (tab === 'draw' && canvasRef.current) {
+      const canvas = canvasRef.current;
+      const ctx = canvas.getContext('2d');
+      if (ctx) {
+        ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
+        ctx.lineWidth = 4;
+        ctx.strokeStyle = '#000';
+      }
     }
-  }, [typedName, selectedFont, tab]);
+  }, [tab]);
+
+  const startDrawing = (e: React.MouseEvent<HTMLCanvasElement> | React.TouchEvent<HTMLCanvasElement>) => {
+    if (!canvasRef.current) return;
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    const rect = canvas.getBoundingClientRect();
+    const x = ('touches' in e) ? e.touches[0].clientX - rect.left : (e as React.MouseEvent).clientX - rect.left;
+    const y = ('touches' in e) ? e.touches[0].clientY - rect.top : (e as React.MouseEvent).clientY - rect.top;
+
+    ctx.beginPath();
+    ctx.moveTo(x, y);
+    setIsDrawing(true);
+  };
+
+  const draw = (e: React.MouseEvent<HTMLCanvasElement> | React.TouchEvent<HTMLCanvasElement>) => {
+    if (!isDrawing || !canvasRef.current) return;
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    const rect = canvas.getBoundingClientRect();
+    const x = ('touches' in e) ? e.touches[0].clientX - rect.left : (e as React.MouseEvent).clientX - rect.left;
+    const y = ('touches' in e) ? e.touches[0].clientY - rect.top : (e as React.MouseEvent).clientY - rect.top;
+
+    ctx.lineTo(x, y);
+    ctx.stroke();
+  };
+
+  const stopDrawing = () => {
+    if (isDrawing && canvasRef.current) {
+      setIsDrawing(false);
+      setSignatureConfig((prev: any) => ({ ...prev, imageUrl: canvasRef.current!.toDataURL('image/png') }));
+    }
+  };
+
+  const clearCanvas = () => {
+    if (canvasRef.current) {
+      const canvas = canvasRef.current;
+      const ctx = canvas.getContext('2d');
+      if (ctx) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }
+      setSignatureConfig((prev: any) => ({ ...prev, imageUrl: '' }));
+    }
+  };
 
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -78,10 +110,10 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
       {/* Tabs */}
       <div style={{ display: 'flex', gap: 8, background: 'var(--bg-input)', padding: 4, borderRadius: 8 }}>
         <button 
-          onClick={() => setTab('type')}
-          style={{ flex: 1, padding: '8px', fontSize: '0.8rem', fontWeight: 600, borderRadius: 6, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, background: tab === 'type' ? 'var(--bg-card)' : 'transparent', color: tab === 'type' ? 'var(--brand-primary)' : 'var(--text-muted)', border: 'none', boxShadow: tab === 'type' ? '0 2px 4px rgba(0,0,0,0.05)' : 'none' }}
+          onClick={() => setTab('draw')}
+          style={{ flex: 1, padding: '8px', fontSize: '0.8rem', fontWeight: 600, borderRadius: 6, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, background: tab === 'draw' ? 'var(--bg-card)' : 'transparent', color: tab === 'draw' ? 'var(--brand-primary)' : 'var(--text-muted)', border: 'none', boxShadow: tab === 'draw' ? '0 2px 4px rgba(0,0,0,0.05)' : 'none' }}
         >
-          <Type size={14} /> Ketik
+          <PenTool size={14} /> Gambar
         </button>
         <button 
           onClick={() => setTab('upload')}
@@ -92,27 +124,31 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
       </div>
 
       {/* Mode Content */}
-      {tab === 'type' && (
+      {tab === 'draw' && (
         <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-          <input
-            type="text"
-            value={typedName}
-            onChange={e => setTypedName(e.target.value)}
-            placeholder="Ketik Nama Anda..."
-            style={{ width: '100%', padding: '10px 14px', borderRadius: 8, border: '1px solid var(--border-color)', background: 'var(--bg-input)', color: 'var(--text-main)', outline: 'none' }}
-          />
-          <select
-            value={selectedFont}
-            onChange={e => setSelectedFont(e.target.value)}
-            style={{ width: '100%', padding: '10px 14px', borderRadius: 8, border: '1px solid var(--border-color)', background: 'var(--bg-input)', color: 'var(--text-main)', outline: 'none' }}
-          >
-            {signatureFonts.map(f => <option key={f.value} value={f.value}>{f.label}</option>)}
-          </select>
-          <canvas ref={canvasRef} width={400} height={150} style={{ display: 'none' }} />
-          
-          <div style={{ padding: 16, background: '#fff', border: '1px dashed var(--border-color)', borderRadius: 8, display: 'flex', justifyContent: 'center' }}>
-            <img src={signatureConfig.imageUrl} alt="Preview" style={{ maxHeight: 60, objectFit: 'contain' }} />
+          <div style={{ position: 'relative', width: '100%', border: '2px dashed var(--border-color)', borderRadius: 8, background: '#fff', overflow: 'hidden' }}>
+            <canvas 
+              ref={canvasRef} 
+              width={320} 
+              height={180} 
+              style={{ display: 'block', width: '100%', height: '180px', cursor: 'crosshair', touchAction: 'none' }}
+              onMouseDown={startDrawing}
+              onMouseMove={draw}
+              onMouseUp={stopDrawing}
+              onMouseLeave={stopDrawing}
+              onTouchStart={startDrawing}
+              onTouchMove={draw}
+              onTouchEnd={stopDrawing}
+            />
+            <button 
+              onClick={clearCanvas}
+              style={{ position: 'absolute', top: 8, right: 8, background: 'rgba(0,0,0,0.1)', border: 'none', borderRadius: 4, padding: 6, cursor: 'pointer', color: '#333' }}
+              title="Bersihkan"
+            >
+              <RotateCcw size={14} />
+            </button>
           </div>
+          <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', textAlign: 'center' }}>Goreskan tanda tangan Anda di atas kotak ini</p>
         </div>
       )}
 
