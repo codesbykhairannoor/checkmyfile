@@ -8,6 +8,9 @@ import { CompressPdfEditor } from './CompressPdfEditor';
 
 import { PdfToImageEditor } from './PdfToImageEditor';
 import { GenericConvertEditor } from './GenericConvertEditor';
+import { RemovePdfEditor } from './RemovePdfEditor';
+import { OrganizePdfEditor } from './OrganizePdfEditor';
+import { SignPdfEditor } from './SignPdfEditor';
 import type { ToolDefinition } from '../../catalog/toolsCatalog';
 
 interface ToolSidebarProps {
@@ -30,6 +33,12 @@ interface ToolSidebarProps {
 
   extractImageFormat?: 'png' | 'jpg';
   setExtractImageFormat?: (v: 'png' | 'jpg') => void;
+
+  removeRange?: string; setRemoveRange?: (v: string) => void;
+  insertFile?: File | null; setInsertFile?: (v: File | null) => void;
+  insertAtIndex?: number; setInsertAtIndex?: (v: number) => void;
+  signatureConfig?: any; setSignatureConfig?: (v: any) => void;
+
   formatSize: (bytes: number) => string;
   acceptTypes?: string;
   allowMultiple?: boolean;
@@ -40,6 +49,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
   splitRange, setSplitRange, rotateDegrees, setRotateDegrees,
   pageNumberConfig, setPageNumberConfig, watermarkConfig, setWatermarkConfig, compressQuality, setCompressQuality,
   extractImageFormat, setExtractImageFormat,
+  removeRange, setRemoveRange, insertFile, setInsertFile, insertAtIndex, setInsertAtIndex, signatureConfig, setSignatureConfig,
   formatSize, acceptTypes = '*', allowMultiple = false
 }) => {
   const fileInputRef = React.useRef<HTMLInputElement>(null);
@@ -131,6 +141,15 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
 
       {tool.id === 'pdf-to-image' && extractImageFormat && setExtractImageFormat && (
         <PdfToImageEditor format={extractImageFormat} setFormat={setExtractImageFormat} onApply={handleStartProcessing} isProcessing={isProcessing} />
+      )}
+      {tool.id === 'remove-pdf' && removeRange !== undefined && setRemoveRange && (
+        <RemovePdfEditor removeRange={removeRange} setRemoveRange={setRemoveRange} onApply={handleStartProcessing} isProcessing={isProcessing} />
+      )}
+      {tool.id === 'organize-pdf' && insertAtIndex !== undefined && setInsertAtIndex && setInsertFile && (
+        <OrganizePdfEditor insertFile={insertFile || null} setInsertFile={setInsertFile} insertAtIndex={insertAtIndex} setInsertAtIndex={setInsertAtIndex} onApply={handleStartProcessing} isProcessing={isProcessing} totalPages={100} />
+      )}
+      {tool.id === 'sign-pdf' && signatureConfig && setSignatureConfig && (
+        <SignPdfEditor signatureConfig={signatureConfig} setSignatureConfig={setSignatureConfig} onApply={handleStartProcessing} isProcessing={isProcessing} totalPages={100} />
       )}
       {['pdf-to-word', 'word-to-pdf', 'excel-to-pdf', 'image-to-pdf', 'ppt-to-pdf', 'pdf-to-ppt', 'csv-to-pdf', 'txt-to-pdf', 'csv-to-excel', 'excel-to-csv', 'ocr-pdf'].includes(tool.id) && (
         <GenericConvertEditor toolId={tool.id} onApply={handleStartProcessing} isProcessing={isProcessing} />

@@ -4,6 +4,9 @@ import * as compressEngine from '../engines/compressEngine';
 import * as officeEngine from '../engines/officeEngine';
 import * as imageEngine from '../engines/imageEngine';
 import * as ocrEngine from '../engines/ocrEngine';
+import { removePdfPages } from '../engines/pdf/removePages';
+import { insertPdfPages } from '../engines/pdf/organizePdf';
+import { signPdf } from '../engines/pdf/signPdf';
 import { getUiTranslations } from '../i18n/translations';
 
 interface ProcessorOptions {
@@ -18,6 +21,10 @@ interface ProcessorOptions {
   watermarkConfig?: any;
   compressQuality?: any;
   extractImageFormat?: 'png' | 'jpg';
+  removeRange?: string;
+  insertFile?: File | null;
+  insertAtIndex?: number;
+  signatureConfig?: any;
 }
 
 export function useDocumentProcessor() {
@@ -86,6 +93,38 @@ export function useDocumentProcessor() {
       } else if (toolId === 'watermark-pdf') {
         resultBytes = await pdfEngine.addWatermark(files[0], options.watermarkConfig, (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_watermarked.pdf`;
+      } else if (toolId === 'remove-pdf') {
+        if (options.removeRange) {
+          const pagesToRemove: number[] = [];
+          const parts = options.removeRange.split(',');
+          for (const part of parts) {
+            const trimmed = part.trim();
+            if (trimmed.includes('-')) {
+              const [s, e] = trimmed.split('-').map(Number);
+              if (!isNaN(s) && !isNaN(e)) {
+                for (let i = s; i <= e; i++) pagesToRemove.push(i - 1);
+              }
+            } else {
+              const n = parseInt(trimmed);
+              if (!isNaN(n)) pagesToRemove.push(n - 1);
+            }
+          }
+          const resultBlob = await removePdfPages(files[0], pagesToRemove, (p) => setProgress(p));
+          resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
+        }
+        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_removed.pdf`;
+      } else if (toolId === 'organize-pdf') {
+        if (options.insertFile && options.insertAtIndex !== undefined) {
+          const resultBlob = await insertPdfPages(files[0], options.insertFile, options.insertAtIndex, (p) => setProgress(p));
+          resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
+        }
+        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_organized.pdf`;
+      } else if (toolId === 'sign-pdf') {
+        if (options.signatureConfig) {
+          const resultBlob = await signPdf(files[0], options.signatureConfig, (p) => setProgress(p));
+          resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
+        }
+        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_signed.pdf`;
       } else if (toolId === 'compress-pdf') {
         resultBytes = await compressEngine.compressPdf(files[0], options.compressQuality, (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_compressed.pdf`;

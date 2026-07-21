@@ -114,6 +114,18 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
   const [compressQuality, setCompressQuality] = useState<'extreme' | 'balanced' | 'high'>('balanced');
   const [extractImageFormat, setExtractImageFormat] = useState<'png' | 'jpg'>('png');
 
+  // New Tools States
+  const [removeRange, setRemoveRange] = useState<string>('');
+  const [insertFile, setInsertFile] = useState<File | null>(null);
+  const [insertAtIndex, setInsertAtIndex] = useState<number>(0);
+  const [signatureConfig, setSignatureConfig] = useState({
+    pageIndex: 0,
+    x: 50,
+    y: 50,
+    width: 30,
+    height: 10,
+    imageUrl: ''
+  });
 
   const [activeFileIndex, setActiveFileIndex] = useState<number>(0);
 
@@ -129,7 +141,8 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
   const handleStartProcessing = () => {
     startProcessing({
       files, toolId: tool.id, toolCategory: tool.category, currentLang,
-      splitRange, rotateDegrees, pageNumberConfig, watermarkConfig, compressQuality, extractImageFormat
+      splitRange, rotateDegrees, pageNumberConfig, watermarkConfig, compressQuality, extractImageFormat,
+      removeRange, insertFile, insertAtIndex, signatureConfig
     });
   };
 
@@ -202,6 +215,8 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
                 pageNumberConfig={tool.id === 'page-numbers' ? pageNumberConfig : undefined}
                 splitRange={tool.id === 'split-pdf' ? splitRange : undefined}
                 compressQuality={tool.id === 'compress-pdf' ? compressQuality : undefined}
+                removeRange={tool.id === 'remove-pdf' ? removeRange : undefined}
+                signatureConfig={tool.id === 'sign-pdf' ? signatureConfig : undefined}
               />
           </div>
 
@@ -216,6 +231,12 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
 
             extractImageFormat={extractImageFormat}
             setExtractImageFormat={setExtractImageFormat}
+            
+            removeRange={removeRange} setRemoveRange={setRemoveRange}
+            insertFile={insertFile} setInsertFile={setInsertFile}
+            insertAtIndex={insertAtIndex} setInsertAtIndex={setInsertAtIndex}
+            signatureConfig={signatureConfig} setSignatureConfig={setSignatureConfig}
+
             formatSize={formatSize}
             acceptTypes={getAcceptTypes(tool.id)}
             allowMultiple={tool.id === 'merge-pdf' || tool.id === 'gabung-pdf' || tool.id === 'image-to-pdf' || tool.id === 'gambar-ke-pdf'}

@@ -28,6 +28,8 @@ interface DocumentLivePreviewProps {
   };
   pageNumberConfig?: any;
   splitRange?: string;
+  removeRange?: string;
+  signatureConfig?: { pageIndex: number; x: number; y: number; width: number; height: number; imageUrl: string; };
   compressQuality?: 'extreme' | 'balanced' | 'high';
   activeFileIndex?: number;
   renderBottomRight?: React.ReactNode;
@@ -41,6 +43,8 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
   watermarkConfig,
   pageNumberConfig,
   splitRange,
+  removeRange,
+  signatureConfig,
   compressQuality,
   activeFileIndex = 0,
   renderBottomRight,
@@ -473,7 +477,9 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
               containerHeight={pixelWidth ? (pixelWidth / pageAspectRatio) : undefined}
               splitRange={splitRange}
               compressQuality={compressQuality}
-              previewRotate={previewRotate}
+              removeRange={removeRange}
+              signatureConfig={signatureConfig}
+              previewRotate={fileRotations[activeFile.name] || 0}
               externalRotate={externalRotate}
               pixelWidth={pixelWidth}
               paperShadow={paperShadow}

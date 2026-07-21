@@ -142,5 +142,73 @@ export const pdfTools: ToolDefinition[] = [
       },
     },
   },
-
+  {
+    id: 'remove-pdf',
+    category: 'pdf',
+    iconName: 'Trash2',
+    slugs: generateSlugsForId('remove-pdf', {
+      en: 'remove-pages-pdf',
+      id: 'hapus-halaman-pdf',
+    }),
+    seo: {
+      en: {
+        title: 'Remove PDF Pages Online - Delete Pages from PDF Locally',
+        h1: 'Remove Pages from PDF Instantly',
+        description: 'Delete unwanted pages from your PDF file securely inside your browser.',
+        faqs: defaultFaqs('Remove PDF Pages', 'en'),
+      },
+      id: {
+        title: 'Hapus Halaman PDF Online - Hapus Page PDF Gratis Tanpa Server',
+        h1: 'Hapus Halaman PDF dengan Cepat & Aman',
+        description: 'Pilih dan hapus halaman yang tidak diinginkan dari dokumen PDF Anda secara lokal.',
+        faqs: defaultFaqs('Hapus Halaman PDF', 'id'),
+      },
+    },
+  },
+  {
+    id: 'organize-pdf',
+    category: 'pdf',
+    iconName: 'LayoutList',
+    slugs: generateSlugsForId('organize-pdf', {
+      en: 'organize-pdf',
+      id: 'sisip-halaman-pdf',
+    }),
+    seo: {
+      en: {
+        title: 'Organize PDF Online - Insert Pages into PDF Locally',
+        h1: 'Insert Pages into PDF Precisely',
+        description: 'Insert another PDF file at a specific page index securely inside your browser.',
+        faqs: defaultFaqs('Organize PDF', 'en'),
+      },
+      id: {
+        title: 'Sisipkan Halaman PDF Online - Extract & Insert Page PDF',
+        h1: 'Sisipkan Halaman PDF di Posisi Spesifik',
+        description: 'Sisipkan dokumen PDF tambahan ke halaman tertentu pada PDF utama Anda tanpa batasan.',
+        faqs: defaultFaqs('Sisip Halaman PDF', 'id'),
+      },
+    },
+  },
+  {
+    id: 'sign-pdf',
+    category: 'pdf',
+    iconName: 'PenTool',
+    slugs: generateSlugsForId('sign-pdf', {
+      en: 'sign-pdf',
+      id: 'tanda-tangan-pdf',
+    }),
+    seo: {
+      en: {
+        title: 'Sign PDF Online - Add Electronic Signature to PDF',
+        h1: 'E-Sign PDF Documents Locally',
+        description: 'Draw, upload, or generate an electronic signature and add it to your PDF.',
+        faqs: defaultFaqs('Sign PDF', 'en'),
+      },
+      id: {
+        title: 'Tanda Tangan PDF Online - E-Sign PDF Gratis & Privat',
+        h1: 'Bubuhkan Tanda Tangan Elektronik ke PDF',
+        description: 'Gambar, ketik, atau unggah tanda tangan elektronik Anda dan letakkan di dokumen PDF secara lokal.',
+        faqs: defaultFaqs('Tanda Tangan PDF', 'id'),
+      },
+    },
+  }
 ];

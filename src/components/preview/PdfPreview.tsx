@@ -10,6 +10,8 @@ interface PdfPreviewProps {
   containerWidth?: number;
   containerHeight?: number;
   splitRange?: string;
+  removeRange?: string;
+  signatureConfig?: { pageIndex: number; x: number; y: number; width: number; height: number; imageUrl: string; };
   compressQuality?: 'extreme' | 'balanced' | 'high';
   previewRotate: number;
   externalRotate?: number;
@@ -19,7 +21,7 @@ interface PdfPreviewProps {
 }
 
 export const PdfPreview: React.FC<PdfPreviewProps> = ({
-  pdfDoc, isLoadingPreview, watermarkConfig, pageNumberConfig, totalPages, containerWidth, containerHeight, splitRange, compressQuality,
+  pdfDoc, isLoadingPreview, watermarkConfig, pageNumberConfig, totalPages, containerWidth, containerHeight, splitRange, removeRange, signatureConfig, compressQuality,
   previewRotate, externalRotate, pixelWidth, paperShadow, pageAspectRatio
 }) => {
   if (isLoadingPreview || !pdfDoc) return null;
@@ -117,6 +119,50 @@ export const PdfPreview: React.FC<PdfPreviewProps> = ({
                 </div>
               );
             })()}
+
+            {removeRange !== undefined && (() => {
+              const isRemoved = (() => {
+                if (!removeRange.trim()) return false;
+                const parts = removeRange.split(',');
+                for (const part of parts) {
+                  const trimmed = part.trim();
+                  if (trimmed.includes('-')) {
+                    const [s, e] = trimmed.split('-').map(Number);
+                    if (!isNaN(s) && !isNaN(e) && pageNum >= s && pageNum <= e) return true;
+                  } else {
+                    const n = parseInt(trimmed);
+                    if (!isNaN(n) && n === pageNum) return true;
+                  }
+                }
+                return false;
+              })();
+
+              if (isRemoved) {
+                return (
+                  <div style={{ position: 'absolute', inset: 0, background: 'rgba(239, 68, 68, 0.15)', border: '4px solid #ef4444', zIndex: 30, display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: 4 }}>
+                    <span style={{ background: '#ef4444', color: '#fff', padding: '8px 16px', borderRadius: 20, fontWeight: 700, fontSize: '0.85rem' }}>X DIHAPUS</span>
+                  </div>
+                );
+              }
+              return null;
+            })()}
+
+            {signatureConfig && signatureConfig.pageIndex === (pageNum - 1) && (
+              <div style={{
+                position: 'absolute',
+                left: `${signatureConfig.x}%`,
+                top: `${signatureConfig.y}%`,
+                width: `${signatureConfig.width}%`,
+                height: `${signatureConfig.height}%`,
+                zIndex: 40,
+                border: '2px dashed #8b5cf6',
+                background: 'rgba(139, 92, 246, 0.1)',
+                display: 'flex', alignItems: 'center', justifyContent: 'center'
+              }}>
+                <img src={signatureConfig.imageUrl} alt="Signature" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                <span style={{ position: 'absolute', top: -24, left: 0, background: '#8b5cf6', color: '#fff', fontSize: '0.7rem', padding: '2px 6px', borderRadius: 4, whiteSpace: 'nowrap' }}>Tanda Tangan</span>
+              </div>
+            )}
 
             {compressQuality && (
               <div style={{
