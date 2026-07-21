@@ -5,7 +5,7 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs
 
 export const redactPdf = async (
   file: File,
-  redactConfig: Record<number, Array<{ id: string, x: number, y: number, width: number, height: number }>>,
+  redactConfig: any,
   onProgress?: (progress: number) => void
 ): Promise<Uint8Array> => {
   const arrayBuffer = await file.arrayBuffer();
@@ -31,17 +31,65 @@ export const redactPdf = async (
 
     await page.render({ canvasContext: context, viewport } as any).promise;
 
-    // Draw the black redaction boxes!
-    const boxes = redactConfig[i - 1] || [];
+    // Draw the black redaction boxes or blur
+    const boxes = redactConfig?.boxes?.[i - 1] || [];
+    const mode = redactConfig?.mode || 'black';
+    const showLock = redactConfig?.showLock || false;
+
     if (boxes.length > 0) {
-      context.fillStyle = '#000000';
       for (const box of boxes) {
         // box coords are percentages (0-100)
         const pxX = (box.x / 100) * viewport.width;
         const pxY = (box.y / 100) * viewport.height;
         const pxW = (box.width / 100) * viewport.width;
         const pxH = (box.height / 100) * viewport.height;
-        context.fillRect(pxX, pxY, pxW, pxH);
+        
+        if (mode === 'blur') {
+          // Extract the region to blur
+          const tempCanvas = document.createElement('canvas');
+          tempCanvas.width = pxW;
+          tempCanvas.height = pxH;
+          const tempCtx = tempCanvas.getContext('2d')!;
+          tempCtx.drawImage(canvas, pxX, pxY, pxW, pxH, 0, 0, pxW, pxH);
+          
+          // Draw back with blur
+          context.filter = 'blur(12px)';
+          context.drawImage(tempCanvas, pxX, pxY);
+          context.filter = 'none';
+          
+          // Optional subtle border
+          context.strokeStyle = 'rgba(100, 116, 139, 0.5)';
+          context.lineWidth = 2;
+          context.setLineDash([5, 5]);
+          context.strokeRect(pxX, pxY, pxW, pxH);
+          context.setLineDash([]);
+        } else {
+          context.fillStyle = '#000000';
+          context.fillRect(pxX, pxY, pxW, pxH);
+        }
+
+        if (showLock) {
+          // Draw lock icon in center
+          const cx = pxX + pxW / 2;
+          const cy = pxY + pxH / 2;
+          const lockSize = Math.min(pxW, pxH) * 0.4;
+          const lockW = Math.min(lockSize, 32);
+          const lockH = lockW * 0.7;
+          
+          context.fillStyle = mode === 'blur' ? 'rgba(51, 65, 85, 0.8)' : '#ffffff';
+          context.strokeStyle = mode === 'blur' ? 'rgba(51, 65, 85, 0.8)' : '#ffffff';
+          context.lineWidth = lockW * 0.1;
+          context.lineJoin = 'round';
+          
+          // Lock body
+          const bodyY = cy;
+          context.fillRect(cx - lockW/2, bodyY, lockW, lockH);
+          
+          // Lock shackle
+          context.beginPath();
+          context.arc(cx, bodyY, lockW * 0.35, Math.PI, 0);
+          context.stroke();
+        }
       }
     }
 

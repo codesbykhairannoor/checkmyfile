@@ -155,7 +155,11 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
     marginRight: 0
   });
 
-  const [redactConfig, setRedactConfig] = useState<Record<number, Array<{ id: string, x: number, y: number, width: number, height: number }>>>({});
+  const [redactConfig, setRedactConfig] = useState<any>({
+    mode: 'black', // 'black' | 'blur'
+    showLock: false,
+    boxes: {}
+  });
 
   const [activeFileIndex, setActiveFileIndex] = useState<number>(0);
 

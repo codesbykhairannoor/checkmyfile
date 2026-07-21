@@ -32,8 +32,8 @@ export const comparePdf = async (
     const viewport1 = page1 ? page1.getViewport({ scale }) : null;
     const viewport2 = page2 ? page2.getViewport({ scale }) : null;
     
-    const width = Math.max(viewport1?.width || 0, viewport2?.width || 0) || 800;
-    const height = Math.max(viewport1?.height || 0, viewport2?.height || 0) || 1200;
+    const width = Math.ceil(Math.max(viewport1?.width || 0, viewport2?.width || 0) || 800);
+    const height = Math.ceil(Math.max(viewport1?.height || 0, viewport2?.height || 0) || 1200);
 
     const canvas1 = document.createElement('canvas');
     const canvas2 = document.createElement('canvas');

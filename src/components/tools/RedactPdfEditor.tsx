@@ -4,25 +4,27 @@ import { EyeOff, PlusCircle, AlertTriangle } from 'lucide-react';
 interface RedactPdfEditorProps {
   onProcess: () => void;
   isProcessing: boolean;
-  redactConfig: Record<number, Array<{ id: string, x: number, y: number, width: number, height: number }>>;
-  setRedactConfig: React.Dispatch<React.SetStateAction<Record<number, Array<{ id: string, x: number, y: number, width: number, height: number }>>>>;
+  redactConfig: any;
+  setRedactConfig: React.Dispatch<React.SetStateAction<any>>;
   activeFileIndex: number; // We assume activePage is always 1 internally or we add to page 1 by default, but let's just add to the currently visible page if possible, or just page 0 for now.
 }
 
 export const RedactPdfEditor: React.FC<RedactPdfEditorProps> = ({ onProcess, isProcessing, redactConfig, setRedactConfig }) => {
   const addRedactBox = () => {
-    // We add to page 0 by default, user can drag it
     const id = Math.random().toString(36).substr(2, 9);
-    setRedactConfig(prev => {
-      const page0Boxes = prev[0] || [];
+    setRedactConfig((prev: any) => {
+      const page0Boxes = prev.boxes[0] || [];
       return {
         ...prev,
-        [0]: [...page0Boxes, { id, x: 35, y: 45, width: 25, height: 5 }]
+        boxes: {
+          ...prev.boxes,
+          [0]: [...page0Boxes, { id, x: 35, y: 45, width: 25, height: 5 }]
+        }
       };
     });
   };
 
-  const totalBoxes = Object.values(redactConfig).reduce((sum, boxes) => sum + boxes.length, 0);
+  const totalBoxes: number = Object.values(redactConfig.boxes || {}).reduce((sum: number, boxes: any) => sum + boxes.length, 0) as number;
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
@@ -51,7 +53,7 @@ export const RedactPdfEditor: React.FC<RedactPdfEditorProps> = ({ onProcess, isP
         </button>
         
         <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-muted)', textAlign: 'center' }}>
-          Geser kotak hitam di bagian Pratinjau (Kiri) ke teks yang ingin disensor. Tarik sudut kanan-bawah kotak untuk memperbesar.
+          Geser kotak di bagian Pratinjau (Kiri) ke teks yang ingin disensor. Tarik sudut kanan-bawah kotak untuk memperbesar.
         </p>
 
         {totalBoxes > 0 && (
@@ -59,6 +61,36 @@ export const RedactPdfEditor: React.FC<RedactPdfEditorProps> = ({ onProcess, isP
             {totalBoxes} Area Sensor Aktif
           </div>
         )}
+
+        <div style={{ marginTop: 24, display: 'flex', flexDirection: 'column', gap: 16 }}>
+          <div>
+            <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: 8 }}>Gaya Sensor</label>
+            <div style={{ display: 'flex', gap: 8 }}>
+              <button 
+                onClick={() => setRedactConfig((prev: any) => ({ ...prev, mode: 'black' }))}
+                style={{ flex: 1, padding: '8px', borderRadius: 8, border: `1px solid ${redactConfig.mode === 'black' ? 'var(--brand-primary)' : 'var(--border-color)'}`, background: redactConfig.mode === 'black' ? 'rgba(139, 92, 246, 0.1)' : 'transparent', color: redactConfig.mode === 'black' ? 'var(--brand-primary)' : 'var(--text-muted)', fontSize: '0.85rem', fontWeight: 600, cursor: 'pointer' }}
+              >
+                Blok Hitam
+              </button>
+              <button 
+                onClick={() => setRedactConfig((prev: any) => ({ ...prev, mode: 'blur' }))}
+                style={{ flex: 1, padding: '8px', borderRadius: 8, border: `1px solid ${redactConfig.mode === 'blur' ? 'var(--brand-primary)' : 'var(--border-color)'}`, background: redactConfig.mode === 'blur' ? 'rgba(139, 92, 246, 0.1)' : 'transparent', color: redactConfig.mode === 'blur' ? 'var(--brand-primary)' : 'var(--text-muted)', fontSize: '0.85rem', fontWeight: 600, cursor: 'pointer' }}
+              >
+                Efek Blur
+              </button>
+            </div>
+          </div>
+          
+          <label style={{ display: 'flex', alignItems: 'center', gap: 12, cursor: 'pointer' }}>
+            <input 
+              type="checkbox" 
+              checked={redactConfig.showLock} 
+              onChange={(e) => setRedactConfig((prev: any) => ({ ...prev, showLock: e.target.checked }))} 
+              style={{ width: 16, height: 16, accentColor: 'var(--brand-primary)' }}
+            />
+            <span style={{ fontSize: '0.9rem', color: 'var(--text-main)', fontWeight: 500 }}>Tampilkan Ikon Gembok (Keren)</span>
+          </label>
+        </div>
       </div>
 
       <div style={{ background: 'rgba(245, 158, 11, 0.1)', padding: 16, borderRadius: 12, border: '1px solid rgba(245, 158, 11, 0.2)', display: 'flex', gap: 12, alignItems: 'flex-start' }}>
