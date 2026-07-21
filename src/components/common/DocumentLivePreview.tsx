@@ -426,7 +426,8 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
             maxWidth: '100%',
             display: 'flex',
             flexDirection: 'column',
-            alignItems: 'center'
+            alignItems: 'center',
+            flex: isTxt ? 1 : undefined
           }}
         >
           {/* Loading overlay inside the desk surface */}
@@ -455,7 +456,8 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
             <div
               style={{
                 width: pixelWidth ? `${pixelWidth}px` : '100%',
-              aspectRatio: `${pageAspectRatio}`,
+              aspectRatio: isTxt ? undefined : `${pageAspectRatio}`,
+              height: isTxt ? '100%' : undefined,
               flexShrink: 0,
               position: 'relative',
               background: '#ffffff',
