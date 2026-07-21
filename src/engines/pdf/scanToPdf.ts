@@ -2,7 +2,7 @@ import { PDFDocument } from 'pdf-lib';
 import * as pdfjsLib from 'pdfjs-dist';
 
 // Use same worker as extraction
-pdfjsLib.GlobalWorkerOptions.workerSrc = '/assets/worker.min.js';
+pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.mjs`;
 
 export const scanToPdf = async (
   file: File,

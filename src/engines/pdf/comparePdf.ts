@@ -2,7 +2,7 @@ import { PDFDocument } from 'pdf-lib';
 import * as pdfjsLib from 'pdfjs-dist';
 import pixelmatch from 'pixelmatch';
 
-pdfjsLib.GlobalWorkerOptions.workerSrc = '/assets/worker.min.js';
+pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.mjs`;
 
 export const comparePdf = async (
   file1: File,
