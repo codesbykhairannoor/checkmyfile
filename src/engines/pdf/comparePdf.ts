@@ -1,6 +1,6 @@
 import { PDFDocument } from 'pdf-lib';
 import * as pdfjsLib from 'pdfjs-dist';
-import pixelmatch from 'pixelmatch';
+
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.mjs`;
 
@@ -67,18 +67,43 @@ export const comparePdf = async (
     const img2 = ctx2.getImageData(0, 0, width, height);
     const diff = diffCtx.createImageData(width, height);
 
-    // Run pixelmatch
-    const numDiffPixels = pixelmatch(img1.data, img2.data, diff.data, width, height, { 
-      threshold: 0.2, 
-      includeAA: true, 
-      alpha: 0.3,
-      diffColor: [239, 68, 68] 
-    });
+    // Custom Red/Green Visual Diffing Engine
+    const img1Data = img1.data;
+    const img2Data = img2.data;
+    const diffData = diff.data;
+    let numDiffPixels = 0;
+
+    for (let i = 0; i < img1Data.length; i += 4) {
+      const r1 = img1Data[i], g1 = img1Data[i+1], b1 = img1Data[i+2];
+      const r2 = img2Data[i], g2 = img2Data[i+1], b2 = img2Data[i+2];
+      
+      const bright1 = (r1 + g1 + b1) / 3;
+      const bright2 = (r2 + g2 + b2) / 3;
+      const brightDiff = Math.abs(bright1 - bright2);
+      
+      // If brightness difference is significant (ignore minor anti-aliasing)
+      if (brightDiff > 40) {
+        numDiffPixels++;
+        if (bright1 < bright2) {
+          // Doc 1 had ink (darker), Doc 2 doesn't -> Ink Removed (RED)
+          diffData[i] = 239; diffData[i+1] = 68; diffData[i+2] = 68; diffData[i+3] = 255;
+        } else {
+          // Doc 2 has ink (darker), Doc 1 didn't -> Ink Added (GREEN)
+          diffData[i] = 34; diffData[i+1] = 197; diffData[i+2] = 94; diffData[i+3] = 255;
+        }
+      } else {
+        // Match -> Draw faded Doc 2 (40% opacity)
+        diffData[i] = 255 - ((255 - r2) * 0.4);
+        diffData[i+1] = 255 - ((255 - g2) * 0.4);
+        diffData[i+2] = 255 - ((255 - b2) * 0.4);
+        diffData[i+3] = 255;
+      }
+    }
     
     totalDiffPixels += numDiffPixels;
     totalPixels += width * height;
 
-    // pixelmatch already generates the faded background and red diffs in diff.data
+    // Draw the generated diff to the canvas
     diffCtx.putImageData(diff, 0, 0);
 
     const jpegDataUrl = diffCanvas.toDataURL('image/jpeg', 0.85);

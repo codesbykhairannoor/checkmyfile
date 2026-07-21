@@ -327,7 +327,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
                      <div>
                        <h4 style={{ margin: 0, fontSize: '1.1rem', fontWeight: 800, color: 'var(--text-main)' }}>Hasil Perbandingan</h4>
-                       <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-muted)' }}>Dokumen ditandai dengan sorotan merah</p>
+                       <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-muted)' }}><span style={{color: '#ef4444', fontWeight: 600}}>Merah (Dihapus)</span> & <span style={{color: '#22c55e', fontWeight: 600}}>Hijau (Ditambahkan)</span></p>
                      </div>
                      <div style={{ textAlign: 'right' }}>
                        <div style={{ fontSize: '1.8rem', fontWeight: 900, color: processorMetadata?.accuracy && processorMetadata.accuracy > 95 ? '#10b981' : '#f59e0b', lineHeight: 1 }}>
