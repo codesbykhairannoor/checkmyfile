@@ -78,11 +78,36 @@ export const comparePdf = async (
     const orig1: any[] = text1.items.filter((t: any) => 'str' in t && typeof t.str === 'string' && t.str.trim().length > 0);
     const orig2: any[] = text2.items.filter((t: any) => 'str' in t && typeof t.str === 'string' && t.str.trim().length > 0);
     
-    // Longest Common Subsequence (LCS) for text matching
-    const dp = Array(orig1.length + 1).fill(null).map(() => new Int32Array(orig2.length + 1));
-    for (let i = 1; i <= orig1.length; i++) {
-      for (let j = 1; j <= orig2.length; j++) {
-        if (orig1[i-1].str.trim() === orig2[j-1].str.trim()) {
+    // Group items into lines to prevent arbitrary word splitting by pdf.js
+    const groupIntoLines = (items: any[]) => {
+      const lines: { str: string, items: any[], y: number }[] = [];
+      let currentLine = { str: '', items: [] as any[], y: -1000 };
+      
+      for (const item of items) {
+        const y = item.transform[5];
+        if (Math.abs(y - currentLine.y) > 4) {
+          if (currentLine.items.length > 0) lines.push(currentLine);
+          currentLine = { str: '', items: [], y };
+        }
+        currentLine.items.push(item);
+        currentLine.str += item.str.trim();
+      }
+      if (currentLine.items.length > 0) lines.push(currentLine);
+      
+      return lines.map(l => ({
+        ...l,
+        normalized: l.str.replace(/\s+/g, '').toLowerCase()
+      })).filter(l => l.normalized.length > 0);
+    };
+
+    const lines1 = groupIntoLines(orig1);
+    const lines2 = groupIntoLines(orig2);
+    
+    // Longest Common Subsequence (LCS) for line matching
+    const dp = Array(lines1.length + 1).fill(null).map(() => new Int32Array(lines2.length + 1));
+    for (let i = 1; i <= lines1.length; i++) {
+      for (let j = 1; j <= lines2.length; j++) {
+        if (lines1[i-1].normalized === lines2[j-1].normalized) {
           dp[i][j] = dp[i-1][j-1] + 1;
         } else {
           dp[i][j] = Math.max(dp[i-1][j], dp[i][j-1]);
@@ -91,12 +116,12 @@ export const comparePdf = async (
     }
     
     const addedItems = new Set<any>();
-    let i_lcs = orig1.length, j_lcs = orig2.length;
+    let i_lcs = lines1.length, j_lcs = lines2.length;
     while (i_lcs > 0 || j_lcs > 0) {
-      if (i_lcs > 0 && j_lcs > 0 && orig1[i_lcs-1].str.trim() === orig2[j_lcs-1].str.trim()) {
+      if (i_lcs > 0 && j_lcs > 0 && lines1[i_lcs-1].normalized === lines2[j_lcs-1].normalized) {
         i_lcs--; j_lcs--;
       } else if (j_lcs > 0 && (i_lcs === 0 || dp[i_lcs][j_lcs-1] >= dp[i_lcs-1][j_lcs])) {
-        addedItems.add(orig2[j_lcs-1]);
+        lines2[j_lcs-1].items.forEach((item: any) => addedItems.add(item));
         j_lcs--;
       } else if (i_lcs > 0 && (j_lcs === 0 || dp[i_lcs][j_lcs-1] < dp[i_lcs-1][j_lcs])) {
         i_lcs--;
