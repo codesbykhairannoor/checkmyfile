@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Presentation } from 'lucide-react';
 import { unzipSync } from 'fflate';
-import { decode, parseSlideXml, ParsedSlide } from '../../engines/office/pptxToPdf';
+import { decode, parseSlideXml } from '../../engines/office/pptxToPdf';
+import type { ParsedSlide } from '../../engines/office/pptxToPdf';
 
 interface PptxPreviewProps {
   file: File;
