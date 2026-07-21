@@ -37,6 +37,7 @@ interface DocumentLivePreviewProps {
   cropConfig?: any;
   redactConfig?: any;
   setRedactConfig?: React.Dispatch<React.SetStateAction<any>>;
+  hideSidebar?: boolean;
 }
 
 export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
@@ -56,6 +57,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
   cropConfig,
   redactConfig,
   setRedactConfig,
+  hideSidebar = false,
 }) => {
   const [pageNumber, setPageNumber] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>(1);
@@ -617,7 +619,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
         </div>
 
         {/* Right Sidebar - Thumbnails */}
-        {((isPdf && pdfDoc) || (isImage && files.length > 0) || isPptx || isSpreadsheet || isTxt || renderBottomRight) ? (
+        {!hideSidebar && ((isPdf && pdfDoc) || (isImage && files.length > 0) || isPptx || isSpreadsheet || isTxt || renderBottomRight) ? (
           <aside style={{ flex: 1, minWidth: 350, minHeight: 0, display: 'flex', flexDirection: 'column', paddingBottom: 24 }}>
             {isPdf && pdfDoc && (
             <div

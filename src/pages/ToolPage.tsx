@@ -5,7 +5,7 @@ import { SeoHead } from '../components/seo/SeoHead';
 import { FileDropzone } from '../components/common/FileDropzone';
 import { ProgressBar } from '../components/common/ProgressBar';
 import { DocumentLivePreview } from '../components/common/DocumentLivePreview';
-import { ArrowLeft, HelpCircle, ShieldCheck } from 'lucide-react';
+import { HelpCircle, ShieldCheck } from 'lucide-react';
 import { useWorkspaceFiles } from '../hooks/useWorkspaceFiles';
 
 import { useDocumentProcessor } from '../hooks/useDocumentProcessor';
@@ -97,7 +97,7 @@ const getAcceptTypes = (toolId: string): string => {
   }
 };
 
-export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToHome, onEditorActive }) => {
+export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorActive }) => {
   const { files, setFiles } = useWorkspaceFiles(tool.id);
   const {
     isProcessing, progress, statusText, isCompleted, downloadBlobUrl, downloadFilename, resultFile, resultPreviewFiles, errorMessage,
@@ -213,17 +213,6 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
     }}>
       <SeoHead tool={tool} lang={currentLang} />
 
-      {/* Back button (Only show on selection screen) */}
-      {files.length === 0 && (
-        <button
-          onClick={onBackToHome}
-          className="btn-secondary"
-          style={{ marginBottom: 32, padding: '8px 16px', fontSize: '0.9rem' }}
-        >
-          <ArrowLeft size={16} />
-          <span>{t.backToHome}</span>
-        </button>
-      )}
 
       {/* Header - Hidden in Workspace Mode and Result Mode to maximize preview space */}
       {files.length === 0 && !isCompleted && (
@@ -327,11 +316,11 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
             <div style={{ display: 'flex', flex: 1, minHeight: 0, gap: 24, overflow: 'hidden' }}>
               <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', background: 'var(--bg-card)', borderRadius: 16, border: '1px solid var(--border-color)', position: 'relative' }}>
                 <div style={{ position: 'absolute', top: 16, left: 16, zIndex: 10, background: 'rgba(0,0,0,0.6)', color: '#fff', padding: '6px 12px', borderRadius: 20, fontSize: '0.8rem', fontWeight: 600 }}>Dokumen Asli</div>
-                <DocumentLivePreview files={[files[0]]} currentLang={currentLang} isResult={true} />
+                <DocumentLivePreview files={[files[0]]} currentLang={currentLang} isResult={true} hideSidebar={true} />
               </div>
               <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', background: 'var(--bg-card)', borderRadius: 16, border: '1px solid var(--border-color)', position: 'relative' }}>
                 <div style={{ position: 'absolute', top: 16, left: 16, zIndex: 10, background: 'rgba(239,68,68,0.9)', color: '#fff', padding: '6px 12px', borderRadius: 20, fontSize: '0.8rem', fontWeight: 600 }}>Perbandingan (Diff)</div>
-                <DocumentLivePreview files={[resultFile]} currentLang={currentLang} isResult={true} />
+                <DocumentLivePreview files={[resultFile]} currentLang={currentLang} isResult={true} hideSidebar={true} />
                 
                 {/* Accuracy Overlay */}
                 <div style={{ position: 'absolute', bottom: 24, right: 24, left: 24, background: '#fff', padding: 20, borderRadius: 12, boxShadow: '0 8px 32px rgba(0,0,0,0.15)', zIndex: 100, border: '1px solid var(--border-color)' }}>

@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { LocaleSwitcher } from './LocaleSwitcher';
-import { Sun, Moon, FileText, ChevronDown, ChevronUp, Grid, Combine, Scissors, Minimize2, FileSpreadsheet, LayoutList, Crop, ScanText, ScanLine, Eraser, Scale, EyeOff, RotateCw, Hash, Stamp, Presentation, AlignLeft, Table, Image, Images, Trash2, PenTool, Lock, Unlock, Contrast } from 'lucide-react';
+import { Sun, Moon, FileText, ChevronDown, ChevronUp, Grid, Combine, Scissors, Minimize2, FileSpreadsheet, LayoutList, Crop, ScanText, ScanLine, Eraser, Scale, EyeOff, RotateCw, Hash, Stamp, Presentation, AlignLeft, TableProperties, Image, Images, Trash2, PenTool, Lock, Unlock, Contrast } from 'lucide-react';
 import { TOOLS_CATALOG, getToolById, type ToolDefinition } from '../../catalog/toolsCatalog';
 
 interface NavbarProps {
@@ -261,9 +261,8 @@ export const Navbar: React.FC<NavbarProps> = ({
                 ✕ Close Menu
               </button>
             </div>
-
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 28 }}>
-              {/* Column 1: Organize PDF */}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 32 }}>
+              {/* Column 1: Organize PDF (8 items) */}
               <div className="mega-menu-col">
                 <div className="mega-menu-title">📁 ORGANIZE PDF</div>
                 <div onClick={() => handleToolClick('merge-pdf')} className="mega-menu-item">
@@ -324,9 +323,9 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </div>
               </div>
 
-              {/* Column 2: Optimize & Secure PDF */}
+              {/* Column 2: Optimize & Spreadsheets (7 items) */}
               <div className="mega-menu-col">
-                <div className="mega-menu-title">⚡ OPTIMIZE & SECURE PDF</div>
+                <div className="mega-menu-title">⚡ OPTIMIZE & ENHANCE</div>
                 <div onClick={() => handleToolClick('compress-pdf')} className="mega-menu-item">
                   <Minimize2 size={18} />
                   <div>
@@ -341,6 +340,48 @@ export const Navbar: React.FC<NavbarProps> = ({
                     <div className="item-desc">Extract text from scans locally</div>
                   </div>
                 </div>
+                <div onClick={() => handleToolClick('grayscale-pdf')} className="mega-menu-item">
+                  <Contrast size={18} />
+                  <div>
+                    <div className="item-title">Grayscale PDF</div>
+                    <div className="item-desc">Convert PDF to Black and White</div>
+                  </div>
+                </div>
+                <div onClick={() => handleToolClick('scan-to-pdf')} className="mega-menu-item">
+                  <ScanLine size={18} />
+                  <div>
+                    <div className="item-title">Scan to PDF</div>
+                    <div className="item-desc">Rasterize to uneditable PDF</div>
+                  </div>
+                </div>
+                <div onClick={() => handleToolClick('remove-pdf-metadata')} className="mega-menu-item">
+                  <Eraser size={18} />
+                  <div>
+                    <div className="item-title">Remove Metadata</div>
+                    <div className="item-desc">Clean hidden PDF properties</div>
+                  </div>
+                </div>
+
+                <div className="mega-menu-title" style={{ marginTop: 24 }}>📊 SPREADSHEET TOOLS</div>
+                <div onClick={() => handleToolClick('csv-to-excel')} className="mega-menu-item">
+                  <TableProperties size={18} />
+                  <div>
+                    <div className="item-title">CSV to Excel (.xlsx)</div>
+                    <div className="item-desc">Instant multi-column SheetJS</div>
+                  </div>
+                </div>
+                <div onClick={() => handleToolClick('excel-to-csv')} className="mega-menu-item">
+                  <FileText size={18} />
+                  <div>
+                    <div className="item-title">Excel to CSV</div>
+                    <div className="item-desc">Export worksheets to UTF-8 CSV</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Column 3: Security & Convert From (8 items) */}
+              <div className="mega-menu-col">
+                <div className="mega-menu-title">🔐 SECURITY & SIGN</div>
                 <div onClick={() => handleToolClick('watermark-pdf')} className="mega-menu-item">
                   <Stamp size={18} />
                   <div>
@@ -369,27 +410,6 @@ export const Navbar: React.FC<NavbarProps> = ({
                     <div className="item-desc">Remove password from PDF</div>
                   </div>
                 </div>
-                <div onClick={() => handleToolClick('grayscale-pdf')} className="mega-menu-item">
-                  <Contrast size={18} />
-                  <div>
-                    <div className="item-title">Grayscale PDF</div>
-                    <div className="item-desc">Convert PDF to Black and White</div>
-                  </div>
-                </div>
-                <div onClick={() => handleToolClick('scan-to-pdf')} className="mega-menu-item">
-                  <ScanLine size={18} />
-                  <div>
-                    <div className="item-title">Scan to PDF</div>
-                    <div className="item-desc">Rasterize to uneditable PDF</div>
-                  </div>
-                </div>
-                <div onClick={() => handleToolClick('remove-pdf-metadata')} className="mega-menu-item">
-                  <Eraser size={18} />
-                  <div>
-                    <div className="item-title">Remove Metadata</div>
-                    <div className="item-desc">Clean hidden PDF properties</div>
-                  </div>
-                </div>
                 <div onClick={() => handleToolClick('redact-pdf')} className="mega-menu-item">
                   <EyeOff size={18} />
                   <div>
@@ -397,12 +417,34 @@ export const Navbar: React.FC<NavbarProps> = ({
                     <div className="item-desc">Securely blackout private info</div>
                   </div>
                 </div>
+
+                <div className="mega-menu-title" style={{ marginTop: 24 }}>📑 CONVERT FROM PDF</div>
+                <div onClick={() => handleToolClick('pdf-to-ppt')} className="mega-menu-item">
+                  <Presentation size={18} />
+                  <div>
+                    <div className="item-title">PDF to POWERPOINT</div>
+                    <div className="item-desc">Editable PPTX slides</div>
+                  </div>
+                </div>
+                <div onClick={() => handleToolClick('pdf-to-image')} className="mega-menu-item">
+                  <Images size={18} />
+                  <div>
+                    <div className="item-title">PDF to JPG / PNG</div>
+                    <div className="item-desc">Convert all pages to ZIP</div>
+                  </div>
+                </div>
+                <div onClick={() => handleToolClick('extract-images')} className="mega-menu-item">
+                  <Image size={18} />
+                  <div>
+                    <div className="item-title">Extract Images</div>
+                    <div className="item-desc">Extract all embedded photos</div>
+                  </div>
+                </div>
               </div>
 
-              {/* Column 3: Convert TO PDF */}
+              {/* Column 4: Convert TO PDF (4 items) */}
               <div className="mega-menu-col">
                 <div className="mega-menu-title">🔄 CONVERT TO PDF</div>
-
                 <div onClick={() => handleToolClick('excel-to-pdf')} className="mega-menu-item">
                   <FileSpreadsheet size={18} />
                   <div>
@@ -424,60 +466,11 @@ export const Navbar: React.FC<NavbarProps> = ({
                     <div className="item-desc">Combine photos into PDF</div>
                   </div>
                 </div>
-
                 <div onClick={() => handleToolClick('txt-to-pdf')} className="mega-menu-item">
                   <AlignLeft size={18} />
                   <div>
                     <div className="item-title">TXT to PDF</div>
                     <div className="item-desc">Plain text & logs to PDF</div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Column 4: Convert FROM PDF */}
-              <div className="mega-menu-col">
-                <div className="mega-menu-title">📑 CONVERT FROM PDF</div>
-
-                <div onClick={() => handleToolClick('pdf-to-ppt')} className="mega-menu-item">
-                  <Presentation size={18} />
-                  <div>
-                    <div className="item-title">PDF to POWERPOINT</div>
-                    <div className="item-desc">Editable PPTX slides</div>
-                  </div>
-                </div>
-                <div onClick={() => handleToolClick('pdf-to-image')} className="mega-menu-item">
-                  <Images size={18} />
-                  <div>
-                    <div className="item-title">PDF to JPG / PNG</div>
-                    <div className="item-desc">Convert all pages to ZIP</div>
-                  </div>
-                </div>
-                <div onClick={() => handleToolClick('extract-images-pdf')} className="mega-menu-item">
-                  <Image size={18} />
-                  <div>
-                    <div className="item-title">Extract Images</div>
-                    <div className="item-desc">Extract all embedded photos</div>
-                  </div>
-                </div>
-              </div>
-
-
-
-              {/* Column 6: Spreadsheet Tools */}
-              <div className="mega-menu-col">
-                <div className="mega-menu-title">📊 SPREADSHEET TOOLS</div>
-                <div onClick={() => handleToolClick('csv-to-excel')} className="mega-menu-item">
-                  <Table size={18} />
-                  <div>
-                    <div className="item-title">CSV to Excel (.xlsx)</div>
-                    <div className="item-desc">Instant multi-column SheetJS</div>
-                  </div>
-                </div>
-                <div onClick={() => handleToolClick('excel-to-csv')} className="mega-menu-item">
-                  <FileSpreadsheet size={18} />
-                  <div>
-                    <div className="item-title">Excel to CSV</div>
-                    <div className="item-desc">Export worksheets to UTF-8 CSV</div>
                   </div>
                 </div>
               </div>
