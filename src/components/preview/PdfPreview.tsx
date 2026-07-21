@@ -163,19 +163,22 @@ export const PdfPreview: React.FC<PdfPreviewProps> = ({
             })()}
 
             {cropConfig && (
-              <div style={{
-                position: 'absolute',
-                top: `${cropConfig.marginTop}%`,
-                bottom: `${cropConfig.marginBottom}%`,
-                left: `${cropConfig.marginLeft}%`,
-                right: `${cropConfig.marginRight}%`,
-                border: '2px dashed var(--brand-primary)',
-                boxShadow: '0 0 0 9999px rgba(0, 0, 0, 0.4)',
-                pointerEvents: 'none',
-                zIndex: 25,
-              }}>
-                <div style={{ position: 'absolute', top: -24, left: 0, background: 'var(--brand-primary)', color: 'white', padding: '2px 8px', fontSize: '0.75rem', borderRadius: 4, fontWeight: 700 }}>
-                  Area Pemotongan
+              <div style={{ position: 'absolute', top: 0, bottom: 0, left: 0, right: 0, pointerEvents: 'none', zIndex: 25 }}>
+                <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: `${cropConfig.marginTop}%`, background: 'rgba(0,0,0,0.5)' }} />
+                <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: `${cropConfig.marginBottom}%`, background: 'rgba(0,0,0,0.5)' }} />
+                <div style={{ position: 'absolute', top: `${cropConfig.marginTop}%`, bottom: `${cropConfig.marginBottom}%`, left: 0, width: `${cropConfig.marginLeft}%`, background: 'rgba(0,0,0,0.5)' }} />
+                <div style={{ position: 'absolute', top: `${cropConfig.marginTop}%`, bottom: `${cropConfig.marginBottom}%`, right: 0, width: `${cropConfig.marginRight}%`, background: 'rgba(0,0,0,0.5)' }} />
+                <div style={{
+                  position: 'absolute',
+                  top: `${cropConfig.marginTop}%`,
+                  bottom: `${cropConfig.marginBottom}%`,
+                  left: `${cropConfig.marginLeft}%`,
+                  right: `${cropConfig.marginRight}%`,
+                  border: '2px dashed var(--brand-primary)',
+                }}>
+                  <div style={{ position: 'absolute', top: -24, left: 0, background: 'var(--brand-primary)', color: 'white', padding: '2px 8px', fontSize: '0.75rem', borderRadius: 4, fontWeight: 700 }}>
+                    Area Pemotongan
+                  </div>
                 </div>
               </div>
             )}
