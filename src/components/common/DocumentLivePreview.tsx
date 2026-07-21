@@ -501,7 +501,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
                   <LazyPdfPage
                     pdfDoc={pdfDoc}
                     pageNum={i + 1}
-                    zoomScale={zoomScale}
+                    zoomScale={1.0}
                     totalRotate={((externalRotate !== undefined ? externalRotate : previewRotate) % 360 + 360) % 360}
                     wrapperWidth={pixelWidth || 600}
                     paperShadow={paperShadow}
