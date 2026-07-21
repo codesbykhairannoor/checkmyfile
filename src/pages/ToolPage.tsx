@@ -101,6 +101,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
   const { files, setFiles } = useWorkspaceFiles(tool.id);
   const {
     isProcessing, progress, statusText, isCompleted, downloadBlobUrl, downloadFilename, resultFile, resultPreviewFiles, errorMessage,
+    processorMetadata,
     startProcessing, resetProcessor
   } = useDocumentProcessor();
 
@@ -322,25 +323,62 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
       {/* Live Preview of the Converted / Processed Result */}
       {isCompleted && resultFile && (
         <div style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
-          <DocumentLivePreview 
-            files={resultPreviewFiles || [resultFile]} 
-            currentLang={currentLang} 
-            isResult={true} 
-            renderBottomRight={
-              <ProgressBar
-                currentLang={currentLang}
-                isProcessing={isProcessing}
-                progress={progress}
-                statusText={statusText}
-                isCompleted={isCompleted}
-                onDownload={handleDownload}
-                onReset={handleReset}
-                originalFilename={downloadFilename}
-                originalSize={tool.id === 'compress-pdf' && files.length > 0 ? files[0].size : undefined}
-                compressedSize={tool.id === 'compress-pdf' && resultFile ? resultFile.size : undefined}
-              />
-            }
-          />
+          {tool.id === 'compare-pdf' ? (
+            <div style={{ display: 'flex', flex: 1, minHeight: 0, gap: 24, overflow: 'hidden' }}>
+              <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', background: 'var(--bg-card)', borderRadius: 16, border: '1px solid var(--border-color)', position: 'relative' }}>
+                <div style={{ position: 'absolute', top: 16, left: 16, zIndex: 10, background: 'rgba(0,0,0,0.6)', color: '#fff', padding: '6px 12px', borderRadius: 20, fontSize: '0.8rem', fontWeight: 600 }}>Dokumen Asli</div>
+                <DocumentLivePreview files={[files[0]]} currentLang={currentLang} isResult={true} />
+              </div>
+              <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', background: 'var(--bg-card)', borderRadius: 16, border: '1px solid var(--border-color)', position: 'relative' }}>
+                <div style={{ position: 'absolute', top: 16, left: 16, zIndex: 10, background: 'rgba(239,68,68,0.9)', color: '#fff', padding: '6px 12px', borderRadius: 20, fontSize: '0.8rem', fontWeight: 600 }}>Perbandingan (Diff)</div>
+                <DocumentLivePreview files={[resultFile]} currentLang={currentLang} isResult={true} />
+                
+                {/* Accuracy Overlay */}
+                <div style={{ position: 'absolute', bottom: 24, right: 24, left: 24, background: '#fff', padding: 20, borderRadius: 12, boxShadow: '0 8px 32px rgba(0,0,0,0.15)', zIndex: 100, border: '1px solid var(--border-color)' }}>
+                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
+                     <div>
+                       <h4 style={{ margin: 0, fontSize: '1.1rem', fontWeight: 800, color: 'var(--text-main)' }}>Hasil Perbandingan</h4>
+                       <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-muted)' }}>Dokumen ditandai dengan sorotan merah</p>
+                     </div>
+                     <div style={{ textAlign: 'right' }}>
+                       <div style={{ fontSize: '1.8rem', fontWeight: 900, color: processorMetadata?.accuracy && processorMetadata.accuracy > 95 ? '#10b981' : '#f59e0b', lineHeight: 1 }}>
+                         {processorMetadata?.accuracy?.toFixed(1) || '0'}%
+                       </div>
+                       <div style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--text-muted)', letterSpacing: 0.5, marginTop: 4 }}>AKURASI KEMIRIPAN</div>
+                     </div>
+                   </div>
+                   <div style={{ display: 'flex', gap: 12 }}>
+                     <button onClick={() => handleDownload()} className="btn-primary" style={{ flex: 2, padding: '12px', fontSize: '0.95rem' }}>
+                       Unduh Hasil (.pdf)
+                     </button>
+                     <button onClick={handleReset} className="btn-secondary" style={{ flex: 1, padding: '12px', fontSize: '0.95rem' }}>
+                       Mulai Ulang
+                     </button>
+                   </div>
+                </div>
+              </div>
+            </div>
+          ) : (
+            <DocumentLivePreview 
+              files={resultPreviewFiles || [resultFile]} 
+              currentLang={currentLang} 
+              isResult={true} 
+              renderBottomRight={
+                <ProgressBar
+                  currentLang={currentLang}
+                  isProcessing={isProcessing}
+                  progress={progress}
+                  statusText={statusText}
+                  isCompleted={isCompleted}
+                  onDownload={handleDownload}
+                  onReset={handleReset}
+                  originalFilename={downloadFilename}
+                  originalSize={tool.id === 'compress-pdf' && files.length > 0 ? files[0].size : undefined}
+                  compressedSize={tool.id === 'compress-pdf' && resultFile ? resultFile.size : undefined}
+                />
+              }
+            />
+          )}
         </div>
       )}
 

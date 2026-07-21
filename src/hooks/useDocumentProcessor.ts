@@ -50,6 +50,7 @@ export function useDocumentProcessor() {
   const [resultFile, setResultFile] = useState<File | null>(null);
   const [resultPreviewFiles, setResultPreviewFiles] = useState<File[] | null>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [processorMetadata, setProcessorMetadata] = useState<any>(null);
   const [ocrTextResult, setOcrTextResult] = useState<string | null>(null);
 
   useEffect(() => {
@@ -69,6 +70,7 @@ export function useDocumentProcessor() {
     setIsCompleted(false);
     setProgress(5);
     setErrorMessage(null);
+    setProcessorMetadata(null);
     setOcrTextResult(null);
     setStatusText(t.processingText);
 
@@ -122,7 +124,9 @@ export function useDocumentProcessor() {
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_sanitized.pdf`;
       } else if (toolId === 'compare-pdf') {
         if (!options.compareFile2) throw new Error("File pembanding tidak ditemukan.");
-        resultBytes = await comparePdf(files[0], options.compareFile2, (p) => setProgress(p));
+        const compareResult = await comparePdf(files[0], options.compareFile2, (p) => setProgress(p));
+        resultBytes = compareResult.bytes;
+        setProcessorMetadata({ accuracy: compareResult.accuracy });
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_comparison.pdf`;
       } else if (toolId === 'redact-pdf') {
         if (!options.redactConfig) throw new Error("Konfigurasi sensor tidak ditemukan.");
@@ -249,10 +253,11 @@ export function useDocumentProcessor() {
     setDownloadBlobUrl(null);
     setOcrTextResult(null);
     setErrorMessage(null);
+    setProcessorMetadata(null);
   };
 
   return {
-    isProcessing, progress, statusText, isCompleted, downloadBlobUrl, downloadFilename, resultFile, resultPreviewFiles, errorMessage, ocrTextResult,
+    isProcessing, progress, statusText, isCompleted, downloadBlobUrl, downloadFilename, resultFile, resultPreviewFiles, errorMessage, ocrTextResult, processorMetadata,
     startProcessing, resetProcessor
   };
 }

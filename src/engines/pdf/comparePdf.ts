@@ -8,7 +8,7 @@ export const comparePdf = async (
   file1: File,
   file2: File,
   onProgress?: (progress: number) => void
-): Promise<Uint8Array> => {
+): Promise<{ bytes: Uint8Array, accuracy: number }> => {
   const [arrayBuffer1, arrayBuffer2] = await Promise.all([
     file1.arrayBuffer(),
     file2.arrayBuffer()
@@ -21,7 +21,10 @@ export const comparePdf = async (
 
   const newPdf = await PDFDocument.create();
   const maxPages = Math.max(pdfDoc1.numPages, pdfDoc2.numPages);
-  const scale = 1.5; // Good balance for performance vs detail
+  const scale = 1.5; // lower scale for diffing to save memory
+  
+  let totalDiffPixels = 0;
+  let totalPixels = 0;
 
   for (let i = 1; i <= maxPages; i++) {
     let page1, page2;
@@ -65,7 +68,9 @@ export const comparePdf = async (
     const diff = diffCtx.createImageData(width, height);
 
     // Run pixelmatch
-    pixelmatch(img1.data, img2.data, diff.data, width, height, { threshold: 0.1, diffColor: [255, 0, 0] });
+    const numDiffPixels = pixelmatch(img1.data, img2.data, diff.data, width, height, { threshold: 0.1, diffColor: [255, 0, 0] });
+    totalDiffPixels += numDiffPixels;
+    totalPixels += width * height;
 
     // We want the diff to show the original document faded out, with red highlights
     // So we draw img1 to diffCtx first, fade it, then draw the diff pixels over it
@@ -90,5 +95,6 @@ export const comparePdf = async (
     }
   }
 
-  return await newPdf.save();
+  const accuracy = totalPixels > 0 ? Math.max(0, 100 - (totalDiffPixels / totalPixels) * 100) : 100;
+  return { bytes: await newPdf.save(), accuracy };
 };
