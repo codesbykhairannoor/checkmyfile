@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Lock, Download, Settings2 } from 'lucide-react';
 
 interface ProtectPdfEditorProps {
@@ -14,6 +14,8 @@ export const ProtectPdfEditor: React.FC<ProtectPdfEditorProps> = ({
   onApply,
   isProcessing
 }) => {
+  const [confirmPassword, setConfirmPassword] = useState('');
+  
   return (
     <div className="glass-panel" style={{ padding: 24, display: 'flex', flexDirection: 'column', gap: 24, minWidth: 320, height: '100%' }}>
       <div>
@@ -39,7 +41,22 @@ export const ProtectPdfEditor: React.FC<ProtectPdfEditorProps> = ({
             color: 'var(--text-main)', outline: 'none'
           }}
         />
-        <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+          <label style={{ fontSize: '0.8rem', fontWeight: 600, color: 'var(--text-main)', marginTop: 8 }}>Konfirmasi Kata Sandi</label>
+          <input
+            type="password"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+            placeholder="Ketik ulang kata sandi..."
+            style={{
+              width: '100%', padding: '12px 14px', borderRadius: 8,
+              border: '1px solid var(--border-color)', background: 'var(--bg-input)',
+              color: 'var(--text-main)', outline: 'none'
+            }}
+          />
+          {pdfPassword && confirmPassword && pdfPassword !== confirmPassword && (
+            <span style={{ fontSize: '0.75rem', color: '#ef4444' }}>Kata sandi tidak cocok.</span>
+          )}
+        <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: 8 }}>
           *Simpan kata sandi ini baik-baik. File yang terkunci tidak bisa dibuka jika Anda lupa kata sandinya.
         </p>
       </div>
@@ -47,7 +64,7 @@ export const ProtectPdfEditor: React.FC<ProtectPdfEditorProps> = ({
       <div style={{ marginTop: 'auto', paddingTop: 24, borderTop: '1px solid var(--border-color)' }}>
         <button
           onClick={onApply}
-          disabled={isProcessing || !pdfPassword}
+          disabled={isProcessing || !pdfPassword || pdfPassword !== confirmPassword}
           className="btn-primary"
           style={{ width: '100%', padding: '14px 20px', fontSize: '0.95rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, background: 'linear-gradient(135deg, #3b82f6 0%, #2dd4bf 100%)' }}
         >

@@ -35,6 +35,16 @@ const getAcceptTypes = (toolId: string): string => {
     case 'pdf-ke-ppt':
     case 'pdf-to-image':
     case 'pdf-ke-gambar':
+    case 'remove-pdf':
+    case 'hapus-halaman-pdf':
+    case 'organize-pdf':
+    case 'sisip-halaman-pdf':
+    case 'sign-pdf':
+    case 'tanda-tangan-pdf':
+    case 'protect-pdf':
+    case 'kunci-pdf':
+    case 'unlock-pdf':
+    case 'buka-kunci-pdf':
       return '.pdf,application/pdf';
 
     // Word files only
@@ -143,7 +153,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
     startProcessing({
       files, toolId: tool.id, toolCategory: tool.category, currentLang,
       splitRange, rotateDegrees, pageNumberConfig, watermarkConfig, compressQuality, extractImageFormat,
-      removeRange, insertFile, insertAtIndex, signatureConfig
+      removeRange, insertFile, insertAtIndex, signatureConfig, pdfPassword
     });
   };
 
