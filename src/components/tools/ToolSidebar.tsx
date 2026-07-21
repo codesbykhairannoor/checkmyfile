@@ -42,6 +42,7 @@ interface ToolSidebarProps {
   formatSize: (bytes: number) => string;
   acceptTypes?: string;
   allowMultiple?: boolean;
+  pdfPagesCount?: number;
 }
 
 export const ToolSidebar: React.FC<ToolSidebarProps> = ({
@@ -50,7 +51,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
   pageNumberConfig, setPageNumberConfig, watermarkConfig, setWatermarkConfig, compressQuality, setCompressQuality,
   extractImageFormat, setExtractImageFormat,
   removeRange, setRemoveRange, insertFile, setInsertFile, insertAtIndex, setInsertAtIndex, signatureConfig, setSignatureConfig,
-  formatSize, acceptTypes = '*', allowMultiple = false
+  formatSize, acceptTypes = '*', allowMultiple = false, pdfPagesCount = 100
 }) => {
   const fileInputRef = React.useRef<HTMLInputElement>(null);
 
@@ -146,10 +147,10 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
         <RemovePdfEditor removeRange={removeRange} setRemoveRange={setRemoveRange} onApply={handleStartProcessing} isProcessing={isProcessing} />
       )}
       {tool.id === 'organize-pdf' && insertAtIndex !== undefined && setInsertAtIndex && setInsertFile && (
-        <OrganizePdfEditor insertFile={insertFile || null} setInsertFile={setInsertFile} insertAtIndex={insertAtIndex} setInsertAtIndex={setInsertAtIndex} onApply={handleStartProcessing} isProcessing={isProcessing} totalPages={100} />
+        <OrganizePdfEditor insertFile={insertFile || null} setInsertFile={setInsertFile} insertAtIndex={insertAtIndex} setInsertAtIndex={setInsertAtIndex} onApply={handleStartProcessing} isProcessing={isProcessing} totalPages={pdfPagesCount} />
       )}
       {tool.id === 'sign-pdf' && signatureConfig && setSignatureConfig && (
-        <SignPdfEditor signatureConfig={signatureConfig} setSignatureConfig={setSignatureConfig} onApply={handleStartProcessing} isProcessing={isProcessing} totalPages={100} />
+        <SignPdfEditor signatureConfig={signatureConfig} setSignatureConfig={setSignatureConfig} onApply={handleStartProcessing} isProcessing={isProcessing} />
       )}
       {['pdf-to-word', 'word-to-pdf', 'excel-to-pdf', 'image-to-pdf', 'ppt-to-pdf', 'pdf-to-ppt', 'csv-to-pdf', 'txt-to-pdf', 'csv-to-excel', 'excel-to-csv', 'ocr-pdf'].includes(tool.id) && (
         <GenericConvertEditor toolId={tool.id} onApply={handleStartProcessing} isProcessing={isProcessing} />

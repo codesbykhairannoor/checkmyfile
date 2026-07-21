@@ -217,7 +217,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
                 compressQuality={tool.id === 'compress-pdf' ? compressQuality : undefined}
                 removeRange={tool.id === 'remove-pdf' ? removeRange : undefined}
                 signatureConfig={tool.id === 'sign-pdf' ? signatureConfig : undefined}
-                onSignatureUpdate={(x, y) => setSignatureConfig(prev => ({ ...prev, x, y }))}
+                onSignatureUpdate={(x, y, pageIndex) => setSignatureConfig(prev => prev ? ({ ...prev, x, y, ...(pageIndex !== undefined ? { pageIndex } : {}) }) : prev)}
               />
           </div>
 
@@ -241,6 +241,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
             formatSize={formatSize}
             acceptTypes={getAcceptTypes(tool.id)}
             allowMultiple={tool.id === 'merge-pdf' || tool.id === 'gabung-pdf' || tool.id === 'image-to-pdf' || tool.id === 'gambar-ke-pdf'}
+            pdfPagesCount={100}
           />
         </div>
       )}

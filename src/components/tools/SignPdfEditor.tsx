@@ -6,15 +6,13 @@ interface SignPdfEditorProps {
   setSignatureConfig: (config: any) => void;
   onApply: () => void;
   isProcessing: boolean;
-  totalPages: number;
 }
 
 export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
   signatureConfig,
   setSignatureConfig,
   onApply,
-  isProcessing,
-  totalPages
+  isProcessing
 }) => {
   const [tab, setTab] = useState<'draw' | 'upload'>('draw');
   const [isDrawing, setIsDrawing] = useState(false);
@@ -42,8 +40,11 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
     if (!ctx) return;
 
     const rect = canvas.getBoundingClientRect();
-    const x = ('touches' in e) ? e.touches[0].clientX - rect.left : (e as React.MouseEvent).clientX - rect.left;
-    const y = ('touches' in e) ? e.touches[0].clientY - rect.top : (e as React.MouseEvent).clientY - rect.top;
+    const xRaw = ('touches' in e) ? e.touches[0].clientX - rect.left : (e as React.MouseEvent).clientX - rect.left;
+    const yRaw = ('touches' in e) ? e.touches[0].clientY - rect.top : (e as React.MouseEvent).clientY - rect.top;
+    
+    const x = xRaw * (canvas.width / rect.width);
+    const y = yRaw * (canvas.height / rect.height);
 
     ctx.beginPath();
     ctx.moveTo(x, y);
@@ -57,8 +58,11 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
     if (!ctx) return;
 
     const rect = canvas.getBoundingClientRect();
-    const x = ('touches' in e) ? e.touches[0].clientX - rect.left : (e as React.MouseEvent).clientX - rect.left;
-    const y = ('touches' in e) ? e.touches[0].clientY - rect.top : (e as React.MouseEvent).clientY - rect.top;
+    const xRaw = ('touches' in e) ? e.touches[0].clientX - rect.left : (e as React.MouseEvent).clientX - rect.left;
+    const yRaw = ('touches' in e) ? e.touches[0].clientY - rect.top : (e as React.MouseEvent).clientY - rect.top;
+    
+    const x = xRaw * (canvas.width / rect.width);
+    const y = yRaw * (canvas.height / rect.height);
 
     ctx.lineTo(x, y);
     ctx.stroke();
@@ -168,13 +172,9 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
 
       {/* Position Settings */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: 12, borderTop: '1px solid var(--border-color)', paddingTop: 20 }}>
-        <h5 style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)' }}>Posisi & Ukuran (Live Preview)</h5>
-        
-        <label style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Halaman (1 - {totalPages})</label>
-        <input type="range" min="0" max={totalPages - 1} value={signatureConfig.pageIndex} onChange={e => setSignatureConfig({...signatureConfig, pageIndex: Number(e.target.value)})} />
-        
-        <label style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Ukuran</label>
+        <h5 style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)' }}>Ukuran Tanda Tangan</h5>
         <input type="range" min="5" max="50" value={signatureConfig.width} onChange={e => setSignatureConfig({...signatureConfig, width: Number(e.target.value)})} />
+        <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Klik halaman di Live Preview untuk memindahkan tanda tangan, lalu geser (drag) untuk menyesuaikan posisi.</p>
       </div>
 
       <div style={{ marginTop: 'auto', paddingTop: 24, borderTop: '1px solid var(--border-color)' }}>

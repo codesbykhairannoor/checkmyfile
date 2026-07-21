@@ -30,7 +30,7 @@ interface DocumentLivePreviewProps {
   splitRange?: string;
   removeRange?: string;
   signatureConfig?: { pageIndex: number; x: number; y: number; width: number; height: number; imageUrl: string; };
-  onSignatureUpdate?: (x: number, y: number) => void;
+  onSignatureUpdate?: (x: number, y: number, pageIndex?: number) => void;
   compressQuality?: 'extreme' | 'balanced' | 'high';
   activeFileIndex?: number;
   renderBottomRight?: React.ReactNode;

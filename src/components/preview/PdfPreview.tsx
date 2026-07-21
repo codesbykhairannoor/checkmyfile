@@ -71,7 +71,7 @@ interface PdfPreviewProps {
   splitRange?: string;
   removeRange?: string;
   signatureConfig?: { pageIndex: number; x: number; y: number; width: number; height: number; imageUrl: string; };
-  onSignatureUpdate?: (x: number, y: number) => void;
+  onSignatureUpdate?: (x: number, y: number, pageIndex?: number) => void;
   compressQuality?: 'extreme' | 'balanced' | 'high';
   previewRotate: number;
   externalRotate?: number;
@@ -93,7 +93,19 @@ export const PdfPreview: React.FC<PdfPreviewProps> = ({
         const totalRotate = ((externalRotate !== undefined ? externalRotate : previewRotate) % 360 + 360) % 360;
 
         return (
-          <div id={`pdf-page-${pageNum}`} key={i} style={{ position: 'relative', width: pixelWidth ? `${pixelWidth}px` : '100%' }}>
+          <div 
+            id={`pdf-page-${pageNum}`} 
+            key={i} 
+            style={{ position: 'relative', width: pixelWidth ? `${pixelWidth}px` : '100%', cursor: onSignatureUpdate ? 'crosshair' : 'default' }}
+            onClick={(e) => {
+              if (onSignatureUpdate && signatureConfig && signatureConfig.pageIndex !== (pageNum - 1)) {
+                const rect = e.currentTarget.getBoundingClientRect();
+                const x = ((e.clientX - rect.left) / rect.width) * 100;
+                const y = ((e.clientY - rect.top) / rect.height) * 100;
+                onSignatureUpdate(Math.max(0, Math.min(100 - signatureConfig.width, x)), Math.max(0, Math.min(100 - signatureConfig.height, y)), pageNum - 1);
+              }
+            }}
+          >
             <LazyPdfPage
               pdfDoc={pdfDoc}
               pageNum={pageNum}
