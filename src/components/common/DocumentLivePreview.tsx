@@ -507,7 +507,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
             />
 
             {/* Spreadsheet Live Preview */}
-            {isOfficeOther && isSpreadsheet && !isLoadingPreview && (
+            {isSpreadsheet && !isLoadingPreview && (
               <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
                 <SpreadsheetPreview file={activeFile} zoomScale={zoomScale} />
               </div>
