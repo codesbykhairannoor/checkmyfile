@@ -443,10 +443,18 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
             </div>
           )}
 
+          {/* ===== SPREADSHEET RENDER AREA (NO PAPER ASPECT RATIO) ===== */}
+          {isSpreadsheet && !isLoadingPreview && (
+            <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', background: '#fff', borderRadius: 8, boxShadow: '0 4px 12px rgba(0,0,0,0.08)', overflow: 'hidden' }}>
+              <SpreadsheetPreview file={activeFile} zoomScale={zoomScale} />
+            </div>
+          )}
+
           {/* ===== The actual "paper" element — aspect-ratio-driven ===== */}
-          <div
-            style={{
-              width: pixelWidth ? `${pixelWidth}px` : '100%',
+          {!isSpreadsheet && (
+            <div
+              style={{
+                width: pixelWidth ? `${pixelWidth}px` : '100%',
               aspectRatio: `${pageAspectRatio}`,
               flexShrink: 0,
               position: 'relative',
@@ -506,13 +514,6 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
               textPreviewContent={textPreviewContent}
             />
 
-            {/* Spreadsheet Live Preview */}
-            {isSpreadsheet && !isLoadingPreview && (
-              <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
-                <SpreadsheetPreview file={activeFile} zoomScale={zoomScale} />
-              </div>
-            )}
-
             {/* PPTX Live Preview */}
             {isOfficeOther && isPptx && !isLoadingPreview && (
               <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
@@ -544,6 +545,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
               </div>
             )}
           </div>
+          )}
         </div>
       </div>
 

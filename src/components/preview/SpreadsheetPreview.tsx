@@ -92,7 +92,7 @@ export const SpreadsheetPreview: React.FC<SpreadsheetPreviewProps> = ({ file, zo
     <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%', flex: 1, minHeight: 0, overflow: 'hidden' }}>
       
       {/* Zoomable Container */}
-      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', background: '#f8fafc', padding: 16, minHeight: 0 }}>
+      <div style={{ flex: '0 1 auto', display: 'flex', flexDirection: 'column', background: '#f8fafc', padding: 16, minHeight: 0 }}>
         <div style={{ overflow: 'auto', flex: '0 1 auto', maxWidth: '100%', backgroundColor: '#fff', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}>
           <div style={{
             transform: `scale(${zoomScale})`,
