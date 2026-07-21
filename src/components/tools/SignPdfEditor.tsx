@@ -32,19 +32,21 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
   // Generate image from text
   useEffect(() => {
     if (tab === 'type' && canvasRef.current) {
-      const canvas = canvasRef.current;
-      const ctx = canvas.getContext('2d');
-      if (!ctx) return;
-      
-      // Load font trick (basic)
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.fillStyle = '#000000';
-      ctx.font = `40px ${selectedFont}`;
-      ctx.textAlign = 'center';
-      ctx.textBaseline = 'middle';
-      ctx.fillText(typedName || ' ', canvas.width / 2, canvas.height / 2);
-      
-      setSignatureConfig({ ...signatureConfig, imageUrl: canvas.toDataURL('image/png') });
+      document.fonts.load(`40px ${selectedFont}`).then(() => {
+        const canvas = canvasRef.current;
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+        if (!ctx) return;
+        
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = '#000000';
+        ctx.font = `40px ${selectedFont}`;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(typedName || ' ', canvas.width / 2, canvas.height / 2);
+        
+        setSignatureConfig((prev: any) => ({ ...prev, imageUrl: canvas.toDataURL('image/png') }));
+      });
     }
   }, [typedName, selectedFont, tab]);
 
@@ -134,12 +136,6 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
         
         <label style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Halaman (1 - {totalPages})</label>
         <input type="range" min="0" max={totalPages - 1} value={signatureConfig.pageIndex} onChange={e => setSignatureConfig({...signatureConfig, pageIndex: Number(e.target.value)})} />
-        
-        <label style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Posisi Horizontal (X)</label>
-        <input type="range" min="0" max="100" value={signatureConfig.x} onChange={e => setSignatureConfig({...signatureConfig, x: Number(e.target.value)})} />
-        
-        <label style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Posisi Vertikal (Y)</label>
-        <input type="range" min="0" max="100" value={signatureConfig.y} onChange={e => setSignatureConfig({...signatureConfig, y: Number(e.target.value)})} />
         
         <label style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Ukuran</label>
         <input type="range" min="5" max="50" value={signatureConfig.width} onChange={e => setSignatureConfig({...signatureConfig, width: Number(e.target.value)})} />
