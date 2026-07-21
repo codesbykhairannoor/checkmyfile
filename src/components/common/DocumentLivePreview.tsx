@@ -383,8 +383,8 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
             </>
           )}
 
-          {/* Image Zoom Controls */}
-          {isImage && (
+          {/* Image & PPTX Zoom Controls */}
+          {(isImage || isPptx) && (
             <>
               <button onClick={() => setZoomScale((z) => Math.max(0.3, z - 0.15))} className="btn-secondary" style={{ width: 28, height: 28, padding: 0, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%' }} title="Zoom Out">
                 <ZoomOut size={16} />
@@ -524,7 +524,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
             {/* PPTX Live Preview */}
             {isOfficeOther && isPptx && !isLoadingPreview && (
               <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
-                <PptxPreview file={activeFile} />
+                <PptxPreview file={activeFile} zoomScale={zoomScale} />
               </div>
             )}
 
@@ -667,6 +667,41 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
                   </div>
               </div>
             </div>
+            )}
+
+            {isPptx && (
+              <div
+                className="glass-panel"
+                style={{
+                  width: '100%',
+                  flex: 1,
+                  minHeight: 0,
+                  display: 'flex',
+                  flexDirection: 'column',
+                }}
+              >
+                <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: 20 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 12, borderBottom: '1px solid var(--border-color)', paddingBottom: 16 }}>
+                    <div style={{ background: 'var(--brand-primary)', color: 'white', padding: '8px', borderRadius: 8 }}>
+                      <Presentation size={20} />
+                    </div>
+                    <div>
+                      <h3 style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-display)', margin: 0 }}>Rincian Berkas</h3>
+                      <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: 0, marginTop: 4 }}>Informasi presentasi</p>
+                    </div>
+                  </div>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 12, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                      <span style={{ fontWeight: 600 }}>Nama Berkas:</span>
+                      <span style={{ wordBreak: 'break-all', textAlign: 'right', maxWidth: '60%' }}>{activeFile.name}</span>
+                    </div>
+                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                      <span style={{ fontWeight: 600 }}>Ukuran:</span>
+                      <span>{(activeFile.size / 1024 / 1024).toFixed(2)} MB</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             )}
             {renderBottomRight && (
               <div style={{ marginTop: 'auto', paddingTop: 16, flexShrink: 0 }}>

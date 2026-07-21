@@ -6,6 +6,7 @@ import type { ParsedSlide } from '../../engines/office/pptxToPdf';
 
 interface PptxPreviewProps {
   file: File;
+  zoomScale?: number;
 }
 
 interface SlideRenderData extends ParsedSlide {
@@ -13,7 +14,7 @@ interface SlideRenderData extends ParsedSlide {
   images: Record<string, string>;
 }
 
-export const PptxPreview: React.FC<PptxPreviewProps> = ({ file }) => {
+export const PptxPreview: React.FC<PptxPreviewProps> = ({ file, zoomScale = 1 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -139,7 +140,8 @@ export const PptxPreview: React.FC<PptxPreviewProps> = ({ file }) => {
       {!loading && slides.length > 0 && containerWidth > 0 && (
         <div style={{ flex: 1, overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: 16, alignItems: 'center', padding: '0 8px 16px 8px' }}>
           {slides.map((slide, idx) => {
-            const scale = containerWidth / slide.slideWidth;
+            const scale = (containerWidth / slide.slideWidth) * zoomScale;
+            const scaledWidth = containerWidth * zoomScale;
             const scaledHeight = slide.slideHeight * scale;
 
             return (
@@ -148,7 +150,7 @@ export const PptxPreview: React.FC<PptxPreviewProps> = ({ file }) => {
                 className="pptx-slide-preview"
                 style={{
                   position: 'relative',
-                  width: containerWidth,
+                  width: scaledWidth,
                   height: scaledHeight,
                   backgroundColor: slide.bgColor,
                   boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
