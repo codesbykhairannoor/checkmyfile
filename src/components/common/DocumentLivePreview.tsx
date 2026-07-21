@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import * as pdfjsLib from 'pdfjs-dist';
 import { renderAsync } from 'docx-preview';
-import { RotateCw, ZoomIn, ZoomOut, Presentation, FileText, FileSpreadsheet, CheckCircle, TableProperties, ChevronLeft, ChevronRight } from 'lucide-react';
+import { RotateCw, ZoomIn, ZoomOut, Presentation, FileText, FileSpreadsheet, CheckCircle, TableProperties, ChevronLeft, ChevronRight, Lock } from 'lucide-react';
 import LazyPdfPage from '../preview/LazyPdfPage';
 import { PdfPreview } from '../preview/PdfPreview';
 import { OfficePreview } from '../preview/OfficePreview';
@@ -164,8 +164,13 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
           if (isCancelled) return;
           setPdfDoc(pdf);
           setTotalPages(pdf.numPages);
-        } catch (err) {
+        } catch (err: any) {
           console.warn('PDF Load error', err);
+          if (err.name === 'PasswordException' || err.message?.toLowerCase().includes('password')) {
+            setErrorText('Dokumen ini dilindungi kata sandi. Pratinjau tidak tersedia.');
+          } else {
+            setErrorText('Gagal memuat pratinjau dokumen.');
+          }
         }
       };
       loadPdf();
@@ -488,6 +493,19 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
               paperShadow={paperShadow}
               pageAspectRatio={pageAspectRatio}
             />
+          )}
+
+          {/* ===== ENCRYPTED / ERROR PDF RENDER AREA ===== */}
+          {isPdf && !isLoadingPreview && !pdfDoc && errorText && (
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', flex: 1, minHeight: '100%', padding: 32, textAlign: 'center' }}>
+                <div style={{ width: 64, height: 64, borderRadius: 16, background: 'rgba(245, 158, 11, 0.1)', color: '#f59e0b', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
+                  <Lock size={32} />
+                </div>
+                <h5 style={{ fontSize: '1.1rem', fontWeight: 800, marginBottom: 8, color: '#1a202c' }}>Pratinjau Tidak Tersedia</h5>
+                <p style={{ color: '#64748b', fontSize: '0.9rem', lineHeight: 1.6, maxWidth: 400, margin: '0 auto' }}>
+                  {errorText}
+                </p>
+            </div>
           )}
 
           {/* ===== The actual "paper" element — aspect-ratio-driven ===== */}
