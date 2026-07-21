@@ -92,16 +92,15 @@ export const SpreadsheetPreview: React.FC<SpreadsheetPreviewProps> = ({ file, zo
     <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%', flex: 1, minHeight: 0, overflow: 'hidden' }}>
       
       {/* Zoomable Container */}
-      <div style={{ flex: 1, overflow: 'auto', background: '#f8fafc', padding: 16, position: 'relative' }}>
-        <div style={{
-          transform: `scale(${zoomScale})`,
-          transformOrigin: 'top left',
-          display: 'inline-block',
-          minWidth: '100%',
-          backgroundColor: '#fff',
-          boxShadow: '0 4px 12px rgba(0,0,0,0.05)'
-        }}>
-          <table style={{ width: '100%', borderCollapse: 'collapse', tableLayout: 'fixed', fontSize: '13px', fontFamily: 'Calibri, Arial, sans-serif' }}>
+      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', background: '#f8fafc', padding: 16, minHeight: 0 }}>
+        <div style={{ overflow: 'auto', flex: '0 1 auto', maxWidth: '100%', backgroundColor: '#fff', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}>
+          <div style={{
+            transform: `scale(${zoomScale})`,
+            transformOrigin: 'top left',
+            display: 'inline-block',
+            minWidth: '100%',
+          }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', tableLayout: 'fixed', fontSize: '13px', fontFamily: 'Calibri, Arial, sans-serif' }}>
             <thead>
               <tr>
                 <th style={{ width: 40, background: '#f1f5f9', border: '1px solid #cbd5e1', position: 'sticky', top: 0, left: 0, zIndex: 10 }}></th>
@@ -136,6 +135,7 @@ export const SpreadsheetPreview: React.FC<SpreadsheetPreviewProps> = ({ file, zo
               )}
             </tbody>
           </table>
+        </div>
         </div>
       </div>
 
