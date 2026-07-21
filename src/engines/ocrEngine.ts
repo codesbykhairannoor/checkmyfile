@@ -1,4 +1,6 @@
 import { createWorker } from 'tesseract.js';
+import workerPath from 'tesseract.js/dist/worker.min.js?url';
+import corePath from 'tesseract.js/dist/tesseract-core.wasm.js?url';
 import * as pdfjsLib from 'pdfjs-dist';
 
 // Map our ISO language codes to Tesseract traineddata language codes
@@ -32,6 +34,9 @@ export const runOcrOnDocument = async (
   onProgress(5, `Initializing Tesseract Web Worker (${tessLang.toUpperCase()})...`);
 
   const worker = await createWorker(tessLang, 1, {
+    workerPath,
+    corePath,
+    langPath: '/tessdata',
     logger: (m) => {
       if (m.status === 'recognizing text' && typeof m.progress === 'number') {
         const p = Math.round(m.progress * 80) + 15;
