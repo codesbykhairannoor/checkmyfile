@@ -67,16 +67,11 @@ export const convertExcelToPdf = async (file: File, onProgress: (p: number) => v
   // Initialize jsPDF in landscape A4
   const doc = new jsPDF({ orientation: 'landscape', unit: 'mm', format: 'a4' });
   
-  // Title
-  doc.setFontSize(14);
-  doc.setTextColor(31, 41, 55); // #1F2937
-  doc.text(`Tabel Data: ${file.name} (Sheet: ${sheetName})`, 14, 15);
-
   onProgress(75);
 
   // Generate Table natively using vector graphics
   autoTable(doc, {
-    startY: 22,
+    startY: 14,
     head: [headers],
     body: dataRows,
     theme: 'grid',
