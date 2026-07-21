@@ -89,6 +89,9 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
   const activeFile = files[localActiveIndex] || files[activeFileIndex] || files[0] || null;
   const fileKey = activeFile ? `${activeFile.name}-${activeFile.size}` : '';
   const previewRotate = fileRotations[fileKey] || 0;
+  
+  // PDF Scroll Mode Experiment: only active for compress PDF
+  const isPdfScrollMode = activeFile?.type === 'application/pdf' || activeFile?.name.toLowerCase().endsWith('.pdf') ? !!compressQuality : false;
 
   const handleRotate = () => {
     if (!fileKey) return;
@@ -335,27 +338,29 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
           {isPdf && (
             <>
               <div style={{ width: 1, height: 22, background: 'var(--border-color)' }} />
-              <>
-                <button onClick={() => setPageNumber((p) => Math.max(1, p - 1))} disabled={pageNumber <= 1 || isLoadingPreview} className="btn-secondary" style={{ width: 28, height: 28, padding: 0, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%' }}>
-                  <ChevronLeft size={16} />
-                </button>
-                <input
-                  type="range"
-                  min={1}
-                  max={totalPages}
-                  value={pageNumber}
-                  onChange={(e) => setPageNumber(parseInt(e.target.value))}
-                  style={{ width: 80, margin: '0 8px', cursor: 'pointer' }}
-                  title="Geser untuk pindah halaman dengan cepat"
-                />
-                <span style={{ fontWeight: 700, fontSize: '0.88rem', minWidth: 60, textAlign: 'center' }}>
-                  {pageNumber} / {totalPages}
-                </span>
-                <button onClick={() => setPageNumber((p) => Math.min(totalPages, p + 1))} disabled={pageNumber >= totalPages || isLoadingPreview} className="btn-secondary" style={{ width: 28, height: 28, padding: 0, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%' }}>
-                  <ChevronRight size={16} />
-                </button>
-                <div style={{ width: 1, height: 22, background: 'var(--border-color)' }} />
-              </>
+              {!isPdfScrollMode && (
+                <>
+                  <button onClick={() => setPageNumber((p) => Math.max(1, p - 1))} disabled={pageNumber <= 1 || isLoadingPreview} className="btn-secondary" style={{ width: 28, height: 28, padding: 0, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%' }}>
+                    <ChevronLeft size={16} />
+                  </button>
+                  <input
+                    type="range"
+                    min={1}
+                    max={totalPages}
+                    value={pageNumber}
+                    onChange={(e) => setPageNumber(parseInt(e.target.value))}
+                    style={{ width: 80, margin: '0 8px', cursor: 'pointer' }}
+                    title="Geser untuk pindah halaman dengan cepat"
+                  />
+                  <span style={{ fontWeight: 700, fontSize: '0.88rem', minWidth: 60, textAlign: 'center' }}>
+                    {pageNumber} / {totalPages}
+                  </span>
+                  <button onClick={() => setPageNumber((p) => Math.min(totalPages, p + 1))} disabled={pageNumber >= totalPages || isLoadingPreview} className="btn-secondary" style={{ width: 28, height: 28, padding: 0, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%' }}>
+                    <ChevronRight size={16} />
+                  </button>
+                  <div style={{ width: 1, height: 22, background: 'var(--border-color)' }} />
+                </>
+              )}
               <button onClick={() => setZoomScale((z) => Math.max(0.5, z - 0.15))} className="btn-secondary" style={{ width: 28, height: 28, padding: 0, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%' }} title="Zoom Out">
                 <ZoomOut size={16} />
               </button>
@@ -451,8 +456,35 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
             </div>
           )}
 
+          {/* ===== PDF INFINITE SCROLL MODE (EXPERIMENT) ===== */}
+          {isPdfScrollMode && !isLoadingPreview && pdfDoc && (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 32, width: '100%', alignItems: 'center', paddingBottom: 64 }}>
+              {Array.from({ length: totalPages }).map((_, i) => (
+                <div id={`pdf-page-${i + 1}`} key={i} style={{ position: 'relative', width: pixelWidth ? `${pixelWidth}px` : '100%' }}>
+                  <LazyPdfPage
+                    pdfDoc={pdfDoc}
+                    pageNum={i + 1}
+                    zoomScale={zoomScale}
+                    totalRotate={((externalRotate !== undefined ? externalRotate : previewRotate) % 360 + 360) % 360}
+                    wrapperWidth={pixelWidth || 600}
+                    paperShadow={paperShadow}
+                    defaultRatio={pageAspectRatio}
+                  />
+                  {compressQuality && (
+                    <div style={{
+                      position: 'absolute', inset: 0, pointerEvents: 'none',
+                      backdropFilter: compressQuality === 'extreme' ? 'blur(1.5px) contrast(1.1)' : compressQuality === 'balanced' ? 'blur(0.5px)' : 'none',
+                      backgroundColor: compressQuality === 'extreme' ? 'rgba(255,255,255,0.05)' : 'transparent',
+                      zIndex: 15, borderRadius: 4
+                    }} />
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
+
           {/* ===== The actual "paper" element — aspect-ratio-driven ===== */}
-          {!isSpreadsheet && (
+          {!isSpreadsheet && !isPdfScrollMode && (
             <div
               style={{
                 width: pixelWidth ? `${pixelWidth}px` : '100%',
@@ -592,7 +624,13 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
                 {Array.from({ length: totalPages }).map((_, i) => (
                   <div
                     key={`thumb-${i}`}
-                    onClick={() => setPageNumber(i + 1)}
+                    onClick={() => {
+                      setPageNumber(i + 1);
+                      if (isPdfScrollMode) {
+                        const el = document.getElementById(`pdf-page-${i + 1}`);
+                        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                      }
+                    }}
                     style={{ cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, transition: 'transform 0.1s ease', }}
                     onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
                     onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
