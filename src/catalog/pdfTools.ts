@@ -256,5 +256,74 @@ export const pdfTools: ToolDefinition[] = [
         faqs: defaultFaqs('Buka Kunci PDF', 'id'),
       },
     },
+  },
+  {
+    id: 'crop-pdf',
+    category: 'pdf',
+    iconName: 'Crop',
+    slugs: generateSlugsForId('crop-pdf', {
+      en: 'crop-pdf',
+      id: 'potong-margin-pdf',
+    }),
+    seo: {
+      en: {
+        title: 'Crop PDF Online - Remove Margins from PDF Locally',
+        h1: 'Crop PDF Pages Instantly',
+        description: 'Remove white margins or cut PDF pages to a specific size locally in your browser.',
+        faqs: defaultFaqs('Crop PDF', 'en'),
+      },
+      id: {
+        title: 'Potong Margin PDF Online - Crop Halaman PDF Gratis',
+        h1: 'Potong Margin & Area Halaman PDF',
+        description: 'Pangkas pinggiran putih pada jurnal atau dokumen PDF Anda agar lebih nyaman dibaca di tablet atau HP.',
+        faqs: defaultFaqs('Crop PDF', 'id'),
+      },
+    },
+  },
+  {
+    id: 'extract-images-pdf',
+    category: 'pdf',
+    iconName: 'Images',
+    slugs: generateSlugsForId('extract-images-pdf', {
+      en: 'extract-images-from-pdf',
+      id: 'ambil-gambar-dari-pdf',
+    }),
+    seo: {
+      en: {
+        title: 'Extract Images from PDF - Save All Pictures from PDF',
+        h1: 'Extract Images & Photos from PDF',
+        description: 'Instantly scan your PDF and extract all embedded images as high-quality JPG/PNG files locally.',
+        faqs: defaultFaqs('Extract Images', 'en'),
+      },
+      id: {
+        title: 'Ambil Gambar dari PDF Online - Ekstrak Foto dari PDF',
+        h1: 'Ekstrak Seluruh Gambar dari PDF',
+        description: 'Ambil dan simpan semua foto, grafik, atau logo dari dokumen PDF Anda menjadi file gambar terpisah (ZIP).',
+        faqs: defaultFaqs('Ekstrak Gambar', 'id'),
+      },
+    },
+  },
+  {
+    id: 'grayscale-pdf',
+    category: 'pdf',
+    iconName: 'Contrast',
+    slugs: generateSlugsForId('grayscale-pdf', {
+      en: 'convert-pdf-to-grayscale',
+      id: 'ubah-pdf-jadi-hitam-putih',
+    }),
+    seo: {
+      en: {
+        title: 'Convert PDF to Grayscale - Black and White PDF Online',
+        h1: 'Make PDF Black and White',
+        description: 'Convert colored PDF documents to grayscale instantly in your browser to save printing ink.',
+        faqs: defaultFaqs('Grayscale PDF', 'en'),
+      },
+      id: {
+        title: 'Ubah PDF Jadi Hitam Putih - Grayscale PDF Gratis',
+        h1: 'Ubah PDF Berwarna Menjadi Hitam Putih',
+        description: 'Konversi dokumen berwarna Anda menjadi PDF hitam putih (grayscale) secara privat untuk menghemat tinta cetak.',
+        faqs: defaultFaqs('Grayscale PDF', 'id'),
+      },
+    },
   }
 ];

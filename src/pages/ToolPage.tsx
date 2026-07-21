@@ -45,6 +45,12 @@ const getAcceptTypes = (toolId: string): string => {
     case 'kunci-pdf':
     case 'unlock-pdf':
     case 'buka-kunci-pdf':
+    case 'crop-pdf':
+    case 'potong-margin-pdf':
+    case 'extract-images-pdf':
+    case 'ambil-gambar-dari-pdf':
+    case 'grayscale-pdf':
+    case 'ubah-pdf-jadi-hitam-putih':
       return '.pdf,application/pdf';
 
     // Word files only
@@ -137,6 +143,13 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
     imageUrl: ''
   });
   const [pdfPassword, setPdfPassword] = useState<string>('');
+  
+  const [cropConfig, setCropConfig] = useState({
+    marginTop: 0,
+    marginBottom: 0,
+    marginLeft: 0,
+    marginRight: 0
+  });
 
   const [activeFileIndex, setActiveFileIndex] = useState<number>(0);
 
@@ -153,7 +166,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
     startProcessing({
       files, toolId: tool.id, toolCategory: tool.category, currentLang,
       splitRange, rotateDegrees, pageNumberConfig, watermarkConfig, compressQuality, extractImageFormat,
-      removeRange, insertFile, insertAtIndex, signatureConfig, pdfPassword
+      removeRange, insertFile, insertAtIndex, signatureConfig, pdfPassword, cropConfig
     });
   };
 
@@ -249,6 +262,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToH
             insertAtIndex={insertAtIndex} setInsertAtIndex={setInsertAtIndex}
             signatureConfig={signatureConfig} setSignatureConfig={setSignatureConfig}
             pdfPassword={pdfPassword} setPdfPassword={setPdfPassword}
+            cropConfig={cropConfig} setCropConfig={setCropConfig}
 
             formatSize={formatSize}
             acceptTypes={getAcceptTypes(tool.id)}

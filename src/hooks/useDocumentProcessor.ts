@@ -9,6 +9,9 @@ import { insertPdfPages } from '../engines/pdf/organizePdf';
 import { signPdf } from '../engines/pdf/signPdf';
 import { protectPdf } from '../engines/pdf/protectPdf';
 import { unlockPdf } from '../engines/pdf/unlockPdf';
+import { cropPdf } from '../engines/pdf/cropPdf';
+import { extractImagesPdf } from '../engines/pdf/extractImages';
+import { grayscalePdf } from '../engines/pdf/grayscalePdf';
 import { getUiTranslations } from '../i18n/translations';
 
 interface ProcessorOptions {
@@ -28,6 +31,7 @@ interface ProcessorOptions {
   insertAtIndex?: number;
   signatureConfig?: any;
   pdfPassword?: string;
+  cropConfig?: any;
 }
 
 export function useDocumentProcessor() {
@@ -92,6 +96,18 @@ export function useDocumentProcessor() {
         const resultBlob = await unlockPdf(files[0], options.pdfPassword, (p) => setProgress(p));
         resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_unlocked.pdf`;
+      } else if (toolId === 'crop-pdf') {
+        const resultBlob = await cropPdf(files[0], options.cropConfig, (p) => setProgress(p));
+        resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
+        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_cropped.pdf`;
+      } else if (toolId === 'extract-images-pdf') {
+        const resultBlob = await extractImagesPdf(files[0], (p) => setProgress(p));
+        resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
+        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_images.zip`;
+      } else if (toolId === 'grayscale-pdf') {
+        const resultBlob = await grayscalePdf(files[0], (p) => setProgress(p));
+        resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
+        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_grayscale.pdf`;
       } else if (toolId === 'page-numbers') {
         resultBytes = await pdfEngine.addPageNumbers(files[0], options.pageNumberConfig, (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_numbered.pdf`;

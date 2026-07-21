@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { LocaleSwitcher } from './LocaleSwitcher';
-import { Sun, Moon, FileText, ChevronDown, ChevronUp, Grid, Combine, Scissors, Minimize2, RotateCw, Hash, Stamp, FileSpreadsheet, Presentation, AlignLeft, Table, Image, Images, ScanText, Trash2, LayoutList, PenTool, Lock, Unlock } from 'lucide-react';
+import { Sun, Moon, FileText, ChevronDown, ChevronUp, Grid, Combine, Scissors, Minimize2, RotateCw, Hash, Stamp, FileSpreadsheet, Presentation, AlignLeft, Table, Image, Images, ScanText, Trash2, LayoutList, PenTool, Lock, Unlock, Crop, Contrast } from 'lucide-react';
 import { TOOLS_CATALOG, getToolById, type ToolDefinition } from '../../catalog/toolsCatalog';
 
 interface NavbarProps {
@@ -308,6 +308,13 @@ export const Navbar: React.FC<NavbarProps> = ({
                     <div className="item-desc">Insert pages into PDF</div>
                   </div>
                 </div>
+                <div onClick={() => handleToolClick('crop-pdf')} className="mega-menu-item">
+                  <Crop size={18} />
+                  <div>
+                    <div className="item-title">Crop PDF</div>
+                    <div className="item-desc">Remove margins or cut pages</div>
+                  </div>
+                </div>
               </div>
 
               {/* Column 2: Optimize & Secure PDF */}
@@ -353,6 +360,13 @@ export const Navbar: React.FC<NavbarProps> = ({
                   <div>
                     <div className="item-title">Unlock PDF</div>
                     <div className="item-desc">Remove password from PDF</div>
+                  </div>
+                </div>
+                <div onClick={() => handleToolClick('grayscale-pdf')} className="mega-menu-item">
+                  <Contrast size={18} />
+                  <div>
+                    <div className="item-title">Grayscale PDF</div>
+                    <div className="item-desc">Convert PDF to Black and White</div>
                   </div>
                 </div>
               </div>
@@ -407,7 +421,14 @@ export const Navbar: React.FC<NavbarProps> = ({
                   <Images size={18} />
                   <div>
                     <div className="item-title">PDF to JPG / PNG</div>
-                    <div className="item-desc">Extract all pages to ZIP</div>
+                    <div className="item-desc">Convert all pages to ZIP</div>
+                  </div>
+                </div>
+                <div onClick={() => handleToolClick('extract-images-pdf')} className="mega-menu-item">
+                  <Image size={18} />
+                  <div>
+                    <div className="item-title">Extract Images</div>
+                    <div className="item-desc">Extract all embedded photos</div>
                   </div>
                 </div>
               </div>
