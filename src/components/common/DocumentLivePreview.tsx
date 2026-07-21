@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import * as pdfjsLib from 'pdfjs-dist';
 import { renderAsync } from 'docx-preview';
-import * as XLSX from 'xlsx';
 import { RotateCw, ZoomIn, ZoomOut, Presentation, FileText, FileSpreadsheet, CheckCircle, TableProperties, ChevronLeft, ChevronRight } from 'lucide-react';
 import LazyPdfPage from '../preview/LazyPdfPage';
 import { PdfPreview } from '../preview/PdfPreview';
@@ -13,7 +12,6 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs
 
 // A4 portrait ratio as default: 210mm / 297mm
 const A4_PORTRAIT_RATIO = 210 / 297;
-const A4_LANDSCAPE_RATIO = 297 / 210;
 
 // LazyPdfPage moved to src/components/preview/LazyPdfPage.tsx
 interface DocumentLivePreviewProps {
@@ -55,7 +53,6 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
   // pageAspectRatio: width / height of the actual document page (A4 portrait = 0.707)
   const [pageAspectRatio, setPageAspectRatio] = useState<number>(A4_PORTRAIT_RATIO);
   const [previewImageUrl, setPreviewImageUrl] = useState<string | null>(null);
-  const [spreadsheetHtml, setSpreadsheetHtml] = useState<string | null>(null);
   const [textPreviewContent, setTextPreviewContent] = useState<string | null>(null);
   const [isLoadingPreview, setIsLoadingPreview] = useState<boolean>(false);
   const [errorText, setErrorText] = useState<string | null>(null);
@@ -77,32 +74,25 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
     }
   }, [files]);
 
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-  
-  // We no longer use ResizeObserver to trigger re-renders because it causes infinite subpixel loops.
-  // The canvas will naturally scale via CSS `width: 100%` and `aspectRatio` when the window resizes.
-  
   const docxContainerRef = useRef<HTMLDivElement>(null);
   const previewWrapperRef = useRef<HTMLDivElement>(null);
-  const renderTaskRef = useRef<any>(null);
 
   const activeFile = files[localActiveIndex] || files[activeFileIndex] || files[0] || null;
   const fileKey = activeFile ? `${activeFile.name}-${activeFile.size}` : '';
+  const ext = activeFile?.name.split('.').pop()?.toLowerCase() || '';
+  const isPdf = activeFile?.type === 'application/pdf' || ext === 'pdf';
   const previewRotate = fileRotations[fileKey] || 0;
-  
-  // PDF Scroll Mode Experiment: only active for compress PDF
-  const isPdfScrollMode = activeFile?.type === 'application/pdf' || activeFile?.name.toLowerCase().endsWith('.pdf') ? !!compressQuality : false;
 
   const handlePageChange = (newPage: number) => {
     setPageNumber(newPage);
-    if (isPdfScrollMode) {
+    if (isPdf) {
       const el = document.getElementById(`pdf-page-${newPage}`);
       if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   };
 
   useEffect(() => {
-    if (!isPdfScrollMode || totalPages <= 0) return;
+    if (!isPdf || totalPages <= 0) return;
     
     const observer = new IntersectionObserver((entries) => {
       for (const entry of entries) {
@@ -130,7 +120,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
       clearTimeout(timeout);
       observer.disconnect();
     };
-  }, [isPdfScrollMode, totalPages, isLoadingPreview]);
+  }, [isPdf, totalPages, isLoadingPreview]);
 
   const handleRotate = () => {
     if (!fileKey) return;
@@ -146,7 +136,6 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
     setZoomScale(1.0);
     setPageAspectRatio(A4_PORTRAIT_RATIO);
     setErrorText(null);
-    setSpreadsheetHtml(null);
     setTextPreviewContent(null);
   }, [activeFileIndex, files, isResult]);
 
@@ -189,7 +178,6 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
     const renderPreview = async () => {
       setIsLoadingPreview(true);
       setErrorText(null);
-      setSpreadsheetHtml(null);
       setTextPreviewContent(null);
 
       try {
@@ -223,39 +211,6 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
           const fitScale = Math.min(scaleX, scaleY);
           const renderScale = fitScale * zoomScale;
           setPixelWidth(baseViewport.width * renderScale);
-          const viewport = page.getViewport({ scale: renderScale, rotation: totalRotate });
-
-          const canvas = canvasRef.current;
-          if (canvas) {
-            const context = canvas.getContext('2d');
-            if (context) {
-              if (renderTaskRef.current) {
-                renderTaskRef.current.cancel();
-              }
-              // CRITICAL: Always reset canvas transform identity matrix before resizing
-              context.setTransform(1, 0, 0, 1, 0, 0);
-
-              // Bump pixel ratio to 3 for ultra-HD crisp text
-              const pixelRatio = Math.max(window.devicePixelRatio || 1, 3);
-              canvas.width = Math.floor(viewport.width * pixelRatio);
-              canvas.height = Math.floor(viewport.height * pixelRatio);
-              context.scale(pixelRatio, pixelRatio);
-              context.clearRect(0, 0, viewport.width, viewport.height);
-
-              const renderTask = page.render({ canvasContext: context, viewport, canvas } as any);
-              renderTaskRef.current = renderTask;
-              try {
-                const renderTimeout = new Promise((_, reject) => setTimeout(() => reject(new Error('PDF render timeout')), 8000));
-                await Promise.race([renderTask.promise, renderTimeout]);
-              } catch (err: any) {
-                if (err.name === 'RenderingCancelledException') {
-                  // Ignore cancelled renders
-                  return;
-                }
-                throw err;
-              }
-            }
-          }
         } else if (['png', 'jpg', 'jpeg', 'webp', 'gif'].includes(ext)) {
           // Image object URL and aspect ratio are now handled by a dedicated useEffect
           // to prevent continuous recreation when workspaceDim changes (which causes flickering/shrinking)
@@ -343,7 +298,6 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
   if (!activeFile) return null;
 
   const fileExt = activeFile.name.split('.').pop()?.toLowerCase() || '';
-  const isPdf = fileExt === 'pdf';
   const isImage = ['png', 'jpg', 'jpeg', 'webp', 'gif'].includes(fileExt);
   const isDocx = fileExt === 'docx' || fileExt === 'doc';
   const isSpreadsheet = ['xlsx', 'xls', 'csv'].includes(fileExt);
@@ -494,35 +448,28 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
             </div>
           )}
 
-          {/* ===== PDF INFINITE SCROLL MODE (EXPERIMENT) ===== */}
-          {isPdfScrollMode && !isLoadingPreview && pdfDoc && (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 32, width: '100%', alignItems: 'center', paddingBottom: 64 }}>
-              {Array.from({ length: totalPages }).map((_, i) => (
-                <div id={`pdf-page-${i + 1}`} key={i} style={{ position: 'relative', width: pixelWidth ? `${pixelWidth}px` : '100%' }}>
-                  <LazyPdfPage
-                    pdfDoc={pdfDoc}
-                    pageNum={i + 1}
-                    zoomScale={1.0}
-                    totalRotate={((externalRotate !== undefined ? externalRotate : previewRotate) % 360 + 360) % 360}
-                    wrapperWidth={pixelWidth || 600}
-                    paperShadow={paperShadow}
-                    defaultRatio={pageAspectRatio}
-                  />
-                  {compressQuality && (
-                    <div style={{
-                      position: 'absolute', inset: 0, pointerEvents: 'none',
-                      backdropFilter: compressQuality === 'extreme' ? 'blur(1.5px) contrast(1.1)' : compressQuality === 'balanced' ? 'blur(0.5px)' : 'none',
-                      backgroundColor: compressQuality === 'extreme' ? 'rgba(255,255,255,0.05)' : 'transparent',
-                      zIndex: 15, borderRadius: 4
-                    }} />
-                  )}
-                </div>
-              ))}
-            </div>
+          {/* ===== PDF INFINITE SCROLL RENDER AREA ===== */}
+          {isPdf && !isLoadingPreview && pdfDoc && (
+            <PdfPreview
+              pdfDoc={pdfDoc}
+              isLoadingPreview={isLoadingPreview}
+              watermarkConfig={watermarkConfig}
+              pageNumberConfig={pageNumberConfig}
+              totalPages={totalPages}
+              containerWidth={pixelWidth}
+              containerHeight={pixelWidth ? (pixelWidth / pageAspectRatio) : undefined}
+              splitRange={splitRange}
+              compressQuality={compressQuality}
+              previewRotate={previewRotate}
+              externalRotate={externalRotate}
+              pixelWidth={pixelWidth}
+              paperShadow={paperShadow}
+              pageAspectRatio={pageAspectRatio}
+            />
           )}
 
           {/* ===== The actual "paper" element — aspect-ratio-driven ===== */}
-          {!isSpreadsheet && !isPdfScrollMode && (
+          {!isSpreadsheet && !isPdf && (
             <div
               style={{
                 width: pixelWidth ? `${pixelWidth}px` : '100%',
@@ -546,20 +493,6 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
               `,
             }}
           >
-            {isPdf && (
-              <PdfPreview
-                canvasRef={canvasRef}
-                isLoadingPreview={isLoadingPreview}
-                watermarkConfig={watermarkConfig}
-                pageNumberConfig={pageNumberConfig}
-                pageNumber={pageNumber}
-                totalPages={totalPages}
-                containerWidth={pixelWidth}
-                containerHeight={pixelWidth ? (pixelWidth / pageAspectRatio) : undefined}
-                splitRange={splitRange}
-                compressQuality={compressQuality}
-              />
-            )}
 
             {/* Image — fills paper proportionally */}
             {isImage && files.length > 0 && !isLoadingPreview && (

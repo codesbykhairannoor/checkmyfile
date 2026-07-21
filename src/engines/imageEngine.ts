@@ -82,7 +82,7 @@ export const convertPdfToImagesZip = async (
   file: File,
   imageFormat: 'png' | 'jpg',
   onProgress: (progress: number) => void
-): Promise<{ zipBytes: Uint8Array; filename: string }> => {
+): Promise<{ zipBytes: Uint8Array; filename: string; previewFiles: File[] }> => {
   onProgress(15);
   const arrayBuffer = await file.arrayBuffer();
   const pdfDoc = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
@@ -95,6 +95,8 @@ export const convertPdfToImagesZip = async (
   zipFiles['README_PRIVACY.txt'] = strToU8(
     `Processed 100% Client-Side inside your browser using BlitzDocs Wasm Platform.\nFile: ${file.name}\nTotal Pages Extracted: ${totalPages}\nFormat: ${imageFormat.toUpperCase()}\nPrivacy: Files were never sent to any server.`
   );
+
+  const previewFiles: File[] = [];
 
   for (let i = 1; i <= totalPages; i++) {
     onProgress(30 + Math.round(((i - 0.5) / totalPages) * 60));
@@ -122,7 +124,12 @@ export const convertPdfToImagesZip = async (
     }
 
     const pageNumStr = String(i).padStart(3, '0');
-    zipFiles[`page_${pageNumStr}.${imageFormat}`] = bytes;
+    const fileName = `page_${pageNumStr}.${imageFormat}`;
+    zipFiles[fileName] = bytes;
+    
+    const blob = new Blob([bytes], { type: mimeType });
+    previewFiles.push(new File([blob], fileName, { type: mimeType }));
+    
     onProgress(30 + Math.round((i / totalPages) * 60));
   }
 
@@ -134,5 +141,6 @@ export const convertPdfToImagesZip = async (
   return {
     zipBytes,
     filename: `${baseName}_images_${imageFormat.toUpperCase()}.zip`,
+    previewFiles,
   };
 };

@@ -80,7 +80,7 @@ const getAcceptTypes = (toolId: string): string => {
 export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onBackToHome, onEditorActive }) => {
   const { files, setFiles } = useWorkspaceFiles(tool.id);
   const {
-    isProcessing, progress, statusText, isCompleted, downloadBlobUrl, downloadFilename, resultFile, resultPreviewFiles, errorMessage, ocrTextResult,
+    isProcessing, progress, statusText, isCompleted, downloadBlobUrl, downloadFilename, resultFile, resultPreviewFiles, errorMessage,
     startProcessing, resetProcessor
   } = useDocumentProcessor();
 

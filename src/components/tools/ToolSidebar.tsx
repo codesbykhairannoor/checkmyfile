@@ -39,6 +39,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
   tool, files, setFiles, activeFileIndex, setActiveFileIndex, isProcessing, handleStartProcessing,
   splitRange, setSplitRange, rotateDegrees, setRotateDegrees,
   pageNumberConfig, setPageNumberConfig, watermarkConfig, setWatermarkConfig, compressQuality, setCompressQuality,
+  extractImageFormat, setExtractImageFormat,
   formatSize, acceptTypes = '*', allowMultiple = false
 }) => {
   const fileInputRef = React.useRef<HTMLInputElement>(null);

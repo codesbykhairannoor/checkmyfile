@@ -96,7 +96,7 @@ export function useDocumentProcessor() {
       } else if (toolId === 'pdf-to-ppt') {
         resultBytes = await pdfEngine.convertPdfToPptx(files[0], (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}.pptx`;
-        const generatedPptx = new File([resultBytes], outName, { type: 'application/vnd.openxmlformats-officedocument.presentationml.presentation' });
+        const generatedPptx = new File([resultBytes as any], outName, { type: 'application/vnd.openxmlformats-officedocument.presentationml.presentation' });
         setResultPreviewFiles([generatedPptx]);
       } else if (toolId === 'csv-to-excel') {
         resultBytes = await officeEngine.convertCsvToExcel(files[0], (p) => setProgress(p));

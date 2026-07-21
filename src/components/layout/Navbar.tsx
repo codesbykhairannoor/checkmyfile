@@ -353,13 +353,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     <div className="item-desc">Combine photos into PDF</div>
                   </div>
                 </div>
-                <div onClick={() => handleToolClick('csv-to-pdf')} className="mega-menu-item">
-                  <Table size={18} />
-                  <div>
-                    <div className="item-title">CSV to PDF</div>
-                    <div className="item-desc">Data exports to PDF grid</div>
-                  </div>
-                </div>
+
                 <div onClick={() => handleToolClick('txt-to-pdf')} className="mega-menu-item">
                   <AlignLeft size={18} />
                   <div>
