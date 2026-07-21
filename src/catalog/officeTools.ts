@@ -106,30 +106,7 @@ export const officeTools: ToolDefinition[] = [
       },
     },
   },
-  {
-    id: 'csv-to-pdf',
-    category: 'office',
-    iconName: 'Table',
-    slugs: generateSlugsForId('csv-to-pdf', {
-      en: 'csv-to-pdf',
-      id: 'csv-ke-pdf',
-      es: 'csv-a-pdf',
-    }),
-    seo: {
-      en: {
-        title: 'Convert CSV to PDF Online - Data Tables to PDF Locally',
-        h1: 'Convert Comma-Separated Values (CSV) into PDF Tables',
-        description: 'Parse CSV database exports or logs and render them into beautifully formatted multi-page PDF tables offline.',
-        faqs: defaultFaqs('CSV to PDF', 'en'),
-      },
-      id: {
-        title: 'Konversi CSV ke PDF Online - Data Comma-Separated Menjadi Tabel',
-        h1: 'Ubah File CSV Menjadi Dokumen Tabel PDF Terstruktur',
-        description: 'Olah data ekspor CSV Anda menjadi tabel PDF yang rapi dengan pembagian halaman otomatis di dalam peramban.',
-        faqs: defaultFaqs('CSV ke PDF', 'id'),
-      },
-    },
-  },
+
   {
     id: 'pdf-to-word',
     category: 'office',
