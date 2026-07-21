@@ -1,5 +1,64 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import LazyPdfPage from './LazyPdfPage';
+
+const DraggableSignature = ({ config, onUpdate }: { config: any, onUpdate: (x: number, y: number) => void }) => {
+  const [isDragging, setIsDragging] = useState(false);
+  const startPos = useRef({ x: 0, y: 0 });
+  const startConfig = useRef({ x: 0, y: 0 });
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!isDragging || !containerRef.current?.parentElement) return;
+      const parent = containerRef.current.parentElement;
+      const dx = e.clientX - startPos.current.x;
+      const dy = e.clientY - startPos.current.y;
+      
+      const newX = startConfig.current.x + (dx / parent.clientWidth) * 100;
+      const newY = startConfig.current.y + (dy / parent.clientHeight) * 100;
+      
+      onUpdate(Math.max(0, Math.min(100 - config.width, newX)), Math.max(0, Math.min(100 - config.height, newY)));
+    };
+
+    const handleMouseUp = () => setIsDragging(false);
+
+    if (isDragging) {
+      window.addEventListener('mousemove', handleMouseMove);
+      window.addEventListener('mouseup', handleMouseUp);
+    }
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mouseup', handleMouseUp);
+    };
+  }, [isDragging, config, onUpdate]);
+
+  return (
+    <div
+      ref={containerRef}
+      onMouseDown={(e) => {
+        setIsDragging(true);
+        startPos.current = { x: e.clientX, y: e.clientY };
+        startConfig.current = { x: config.x, y: config.y };
+        e.preventDefault();
+      }}
+      style={{
+        position: 'absolute',
+        left: `${config.x}%`,
+        top: `${config.y}%`,
+        width: `${config.width}%`,
+        height: `${config.height}%`,
+        zIndex: 40,
+        border: '2px dashed #8b5cf6',
+        background: 'rgba(139, 92, 246, 0.1)',
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        cursor: isDragging ? 'grabbing' : 'grab'
+      }}>
+      <img src={config.imageUrl} alt="Signature" style={{ width: '100%', height: '100%', objectFit: 'contain', pointerEvents: 'none' }} />
+      <span style={{ position: 'absolute', top: -24, left: 0, background: '#8b5cf6', color: '#fff', fontSize: '0.7rem', padding: '2px 6px', borderRadius: 4, whiteSpace: 'nowrap' }}>Tanda Tangan (Geser)</span>
+    </div>
+  );
+};
+
 
 interface PdfPreviewProps {
   pdfDoc: any;
@@ -12,6 +71,7 @@ interface PdfPreviewProps {
   splitRange?: string;
   removeRange?: string;
   signatureConfig?: { pageIndex: number; x: number; y: number; width: number; height: number; imageUrl: string; };
+  onSignatureUpdate?: (x: number, y: number) => void;
   compressQuality?: 'extreme' | 'balanced' | 'high';
   previewRotate: number;
   externalRotate?: number;
@@ -21,7 +81,7 @@ interface PdfPreviewProps {
 }
 
 export const PdfPreview: React.FC<PdfPreviewProps> = ({
-  pdfDoc, isLoadingPreview, watermarkConfig, pageNumberConfig, totalPages, containerWidth, containerHeight, splitRange, removeRange, signatureConfig, compressQuality,
+  pdfDoc, isLoadingPreview, watermarkConfig, pageNumberConfig, totalPages, containerWidth, containerHeight, splitRange, removeRange, signatureConfig, onSignatureUpdate, compressQuality,
   previewRotate, externalRotate, pixelWidth, paperShadow, pageAspectRatio
 }) => {
   if (isLoadingPreview || !pdfDoc) return null;
@@ -147,21 +207,8 @@ export const PdfPreview: React.FC<PdfPreviewProps> = ({
               return null;
             })()}
 
-            {signatureConfig && signatureConfig.pageIndex === (pageNum - 1) && (
-              <div style={{
-                position: 'absolute',
-                left: `${signatureConfig.x}%`,
-                top: `${signatureConfig.y}%`,
-                width: `${signatureConfig.width}%`,
-                height: `${signatureConfig.height}%`,
-                zIndex: 40,
-                border: '2px dashed #8b5cf6',
-                background: 'rgba(139, 92, 246, 0.1)',
-                display: 'flex', alignItems: 'center', justifyContent: 'center'
-              }}>
-                <img src={signatureConfig.imageUrl} alt="Signature" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                <span style={{ position: 'absolute', top: -24, left: 0, background: '#8b5cf6', color: '#fff', fontSize: '0.7rem', padding: '2px 6px', borderRadius: 4, whiteSpace: 'nowrap' }}>Tanda Tangan</span>
-              </div>
+            {signatureConfig && signatureConfig.pageIndex === (pageNum - 1) && onSignatureUpdate && (
+              <DraggableSignature config={signatureConfig} onUpdate={onSignatureUpdate} />
             )}
 
             {compressQuality && (
