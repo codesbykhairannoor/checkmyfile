@@ -65,6 +65,7 @@ interface PdfPreviewProps {
   isLoadingPreview: boolean;
   watermarkConfig?: { type?: 'text' | 'image'; text: string; imageUrl?: string; opacity: number; color: string; scale: number; rotation: number; };
   pageNumberConfig?: any;
+  cropConfig?: any;
   totalPages: number;
   containerWidth?: number;
   containerHeight?: number;
@@ -81,7 +82,7 @@ interface PdfPreviewProps {
 }
 
 export const PdfPreview: React.FC<PdfPreviewProps> = ({
-  pdfDoc, isLoadingPreview, watermarkConfig, pageNumberConfig, totalPages, containerWidth, containerHeight, splitRange, removeRange, signatureConfig, onSignatureUpdate, compressQuality,
+  pdfDoc, isLoadingPreview, watermarkConfig, pageNumberConfig, cropConfig, totalPages, containerWidth, containerHeight, splitRange, removeRange, signatureConfig, onSignatureUpdate, compressQuality,
   previewRotate, externalRotate, pixelWidth, paperShadow, pageAspectRatio
 }) => {
   if (isLoadingPreview || !pdfDoc) return null;
@@ -160,6 +161,24 @@ export const PdfPreview: React.FC<PdfPreviewProps> = ({
                 </div>
               );
             })()}
+
+            {cropConfig && (
+              <div style={{
+                position: 'absolute',
+                top: `${cropConfig.marginTop}%`,
+                bottom: `${cropConfig.marginBottom}%`,
+                left: `${cropConfig.marginLeft}%`,
+                right: `${cropConfig.marginRight}%`,
+                border: '2px dashed var(--brand-primary)',
+                boxShadow: '0 0 0 9999px rgba(0, 0, 0, 0.4)',
+                pointerEvents: 'none',
+                zIndex: 25,
+              }}>
+                <div style={{ position: 'absolute', top: -24, left: 0, background: 'var(--brand-primary)', color: 'white', padding: '2px 8px', fontSize: '0.75rem', borderRadius: 4, fontWeight: 700 }}>
+                  Area Pemotongan
+                </div>
+              </div>
+            )}
 
             {splitRange !== undefined && (() => {
               const isSelected = (() => {

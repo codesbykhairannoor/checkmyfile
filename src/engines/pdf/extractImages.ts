@@ -22,9 +22,21 @@ export async function extractImagesPdf(
         ops.fnArray[i] === pdfjsLib.OPS.paintImageXObject || 
         ops.fnArray[i] === pdfjsLib.OPS.paintInlineImageXObject
       ) {
-        const objId = ops.argsArray[i][0];
         try {
-          const img = await page.objs.get(objId);
+          let img = null;
+          if (ops.fnArray[i] === pdfjsLib.OPS.paintInlineImageXObject) {
+            img = ops.argsArray[i][0];
+          } else {
+            const objId = ops.argsArray[i][0];
+            try {
+              img = page.objs.get(objId);
+            } catch (err) {}
+            if (!img) {
+              try {
+                img = page.commonObjs.get(objId);
+              } catch (err) {}
+            }
+          }
           if (img) {
             const canvas = document.createElement('canvas');
             const ctx = canvas.getContext('2d');
@@ -73,7 +85,7 @@ export async function extractImagesPdf(
             }
           }
         } catch (e) {
-          console.warn(`Failed to extract image ${objId} on page ${pageNum}`, e);
+          console.warn(`Failed to extract image on page ${pageNum}`, e);
         }
       }
     }

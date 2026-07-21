@@ -34,6 +34,7 @@ interface DocumentLivePreviewProps {
   compressQuality?: 'extreme' | 'balanced' | 'high';
   activeFileIndex?: number;
   renderBottomRight?: React.ReactNode;
+  cropConfig?: any;
 }
 
 export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
@@ -50,6 +51,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
   compressQuality,
   activeFileIndex = 0,
   renderBottomRight,
+  cropConfig,
 }) => {
   const [pageNumber, setPageNumber] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>(1);
@@ -487,6 +489,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
               removeRange={removeRange}
               signatureConfig={signatureConfig}
               onSignatureUpdate={onSignatureUpdate}
+              cropConfig={cropConfig}
               previewRotate={fileRotations[activeFile.name] || 0}
               externalRotate={externalRotate}
               pixelWidth={pixelWidth}
