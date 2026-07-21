@@ -449,7 +449,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
           )}
 
           {/* ===== DOCX RENDER AREA (NO PAPER ASPECT RATIO) ===== */}
-          {isDocx && !isLoadingPreview && (
+          {isDocx && (
             <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', overflow: 'hidden', flex: 1, minHeight: 0, borderRadius: 8 }}>
               <OfficePreview
                 isDocx={isDocx}
