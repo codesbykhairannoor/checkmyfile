@@ -78,52 +78,81 @@ export const comparePdf = async (
     const orig1: any[] = text1.items.filter((t: any) => 'str' in t && typeof t.str === 'string' && t.str.trim().length > 0);
     const orig2: any[] = text2.items.filter((t: any) => 'str' in t && typeof t.str === 'string' && t.str.trim().length > 0);
     
-    // Group items into lines to prevent arbitrary word splitting by pdf.js
-    const groupIntoLines = (items: any[]) => {
-      const lines: { str: string, items: any[], y: number }[] = [];
-      let currentLine = { str: '', items: [] as any[], y: -1000 };
+    // Group items into words to handle both arbitrary PDF item splitting AND text wrapping/reflow
+    const extractWords = (items: any[]) => {
+      const words: { word: string, items: Set<any> }[] = [];
+      let currentWord = "";
+      let currentItems = new Set<any>();
+      let lastX = -1000, lastY = -1000, lastW = 0;
       
       for (const item of items) {
+        const x = item.transform[4];
         const y = item.transform[5];
-        if (Math.abs(y - currentLine.y) > 4) {
-          if (currentLine.items.length > 0) lines.push(currentLine);
-          currentLine = { str: '', items: [], y };
+        
+        // If there's a physical space (different line or large gap), inject a word boundary
+        if (currentWord.length > 0) {
+          const isDifferentLine = Math.abs(y - lastY) > 5;
+          const isLargeGap = (x - (lastX + lastW)) > 5;
+          
+          if (isDifferentLine || isLargeGap) {
+             const clean = currentWord.replace(/[^a-z0-9]/gi, '').toLowerCase();
+             if (clean.length > 0) words.push({ word: clean, items: currentItems });
+             currentWord = "";
+             currentItems = new Set<any>();
+          }
         }
-        currentLine.items.push(item);
-        currentLine.str += item.str.trim();
+        
+        const str = item.str;
+        for (let i = 0; i < str.length; i++) {
+          const char = str[i];
+          if (char.trim() === '') {
+            const clean = currentWord.replace(/[^a-z0-9]/gi, '').toLowerCase();
+            if (clean.length > 0) words.push({ word: clean, items: currentItems });
+            currentWord = "";
+            currentItems = new Set<any>();
+          } else {
+            currentWord += char;
+            currentItems.add(item);
+          }
+        }
+        
+        lastX = x;
+        lastY = y;
+        lastW = item.width;
       }
-      if (currentLine.items.length > 0) lines.push(currentLine);
       
-      return lines.map(l => ({
-        ...l,
-        normalized: l.str.replace(/\s+/g, '').toLowerCase()
-      })).filter(l => l.normalized.length > 0);
+      const clean = currentWord.replace(/[^a-z0-9]/gi, '').toLowerCase();
+      if (clean.length > 0) words.push({ word: clean, items: currentItems });
+      return words;
     };
 
-    const lines1 = groupIntoLines(orig1);
-    const lines2 = groupIntoLines(orig2);
+    const words1 = extractWords(orig1);
+    const words2 = extractWords(orig2);
     
-    // Longest Common Subsequence (LCS) for line matching
-    const dp = Array(lines1.length + 1).fill(null).map(() => new Int32Array(lines2.length + 1));
-    for (let i = 1; i <= lines1.length; i++) {
-      for (let j = 1; j <= lines2.length; j++) {
-        if (lines1[i-1].normalized === lines2[j-1].normalized) {
-          dp[i][j] = dp[i-1][j-1] + 1;
+    // Longest Common Subsequence (LCS) for word matching (Memory efficient flat array)
+    const m = words1.length;
+    const n = words2.length;
+    const dp = new Int32Array((m + 1) * (n + 1));
+    
+    for (let i = 1; i <= m; i++) {
+      for (let j = 1; j <= n; j++) {
+        if (words1[i-1].word === words2[j-1].word) {
+          dp[i * (n + 1) + j] = dp[(i-1) * (n + 1) + (j-1)] + 1;
         } else {
-          dp[i][j] = Math.max(dp[i-1][j], dp[i][j-1]);
+          dp[i * (n + 1) + j] = Math.max(dp[(i-1) * (n + 1) + j], dp[i * (n + 1) + (j-1)]);
         }
       }
     }
     
     const addedItems = new Set<any>();
-    let i_lcs = lines1.length, j_lcs = lines2.length;
+    let i_lcs = m, j_lcs = n;
     while (i_lcs > 0 || j_lcs > 0) {
-      if (i_lcs > 0 && j_lcs > 0 && lines1[i_lcs-1].normalized === lines2[j_lcs-1].normalized) {
+      if (i_lcs > 0 && j_lcs > 0 && words1[i_lcs-1].word === words2[j_lcs-1].word) {
         i_lcs--; j_lcs--;
-      } else if (j_lcs > 0 && (i_lcs === 0 || dp[i_lcs][j_lcs-1] >= dp[i_lcs-1][j_lcs])) {
-        lines2[j_lcs-1].items.forEach((item: any) => addedItems.add(item));
+      } else if (j_lcs > 0 && (i_lcs === 0 || dp[i_lcs * (n + 1) + (j_lcs-1)] >= dp[(i_lcs-1) * (n + 1) + j_lcs])) {
+        words2[j_lcs-1].items.forEach((item: any) => addedItems.add(item));
         j_lcs--;
-      } else if (i_lcs > 0 && (j_lcs === 0 || dp[i_lcs][j_lcs-1] < dp[i_lcs-1][j_lcs])) {
+      } else if (i_lcs > 0 && (j_lcs === 0 || dp[i_lcs * (n + 1) + (j_lcs-1)] < dp[(i_lcs-1) * (n + 1) + j_lcs])) {
         i_lcs--;
       }
     }
