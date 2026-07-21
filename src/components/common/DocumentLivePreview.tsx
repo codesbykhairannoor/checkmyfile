@@ -3,7 +3,7 @@ import * as pdfjsLib from 'pdfjs-dist';
 import { renderAsync } from 'docx-preview';
 import * as XLSX from 'xlsx';
 import { RotateCw, ZoomIn, ZoomOut, Presentation, FileText, FileSpreadsheet, CheckCircle, TableProperties } from 'lucide-react';
-import { LazyPdfPage } from './LazyPdfPage';
+import LazyPdfPage from '../preview/LazyPdfPage';
 import { PdfPreview } from '../preview/PdfPreview';
 import { OfficePreview } from '../preview/OfficePreview';
 import { PptxPreview } from '../preview/PptxPreview';
