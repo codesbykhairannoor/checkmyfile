@@ -51,6 +51,10 @@ const getAcceptTypes = (toolId: string): string => {
     case 'ambil-gambar-dari-pdf':
     case 'grayscale-pdf':
     case 'ubah-pdf-jadi-hitam-putih':
+    case 'scan-to-pdf':
+    case 'remove-pdf-metadata':
+    case 'compare-pdf':
+    case 'redact-pdf':
       return '.pdf,application/pdf';
 
     // Word files only
