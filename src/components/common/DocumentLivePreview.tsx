@@ -608,7 +608,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
         </div>
 
         {/* Right Sidebar - Thumbnails */}
-        {(isPdf && pdfDoc) || (isImage && files.length > 0) || renderBottomRight ? (
+        {((isPdf && pdfDoc) || (isImage && files.length > 0) || isPptx || isSpreadsheet || isTxt || renderBottomRight) ? (
           <aside style={{ flex: 1, minWidth: 350, minHeight: 0, display: 'flex', flexDirection: 'column', paddingBottom: 24 }}>
             {isPdf && pdfDoc && (
             <div
@@ -823,11 +823,14 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
               </div>
             )}
 
-            {renderBottomRight && (
-              <div style={{ marginTop: 'auto', paddingTop: 16, flexShrink: 0 }}>
-                {renderBottomRight}
-              </div>
-            )}
+            {renderBottomRight && (() => {
+              const hasTopSidebarContent = (isPdf && pdfDoc) || (isImage && files.length > 0) || isPptx || isSpreadsheet || isTxt;
+              return (
+                <div style={{ marginTop: 'auto', marginBottom: hasTopSidebarContent ? 0 : 'auto', paddingTop: 16, flexShrink: 0 }}>
+                  {renderBottomRight}
+                </div>
+              );
+            })()}
           </aside>
         ) : null}
       </div>
