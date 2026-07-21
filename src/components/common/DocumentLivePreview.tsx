@@ -732,6 +732,50 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
                 </div>
               </div>
             )}
+            
+            {isTxt && (
+              <div
+                className="glass-panel"
+                style={{
+                  width: '100%',
+                  flex: 1,
+                  minHeight: 0,
+                  display: 'flex',
+                  flexDirection: 'column',
+                }}
+              >
+                <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: 20 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 12, borderBottom: '1px solid var(--border-color)', paddingBottom: 16 }}>
+                    <div style={{ background: 'var(--brand-primary)', color: 'white', padding: '8px', borderRadius: 8 }}>
+                      <FileText size={20} />
+                    </div>
+                    <div>
+                      <h3 style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-display)', margin: 0 }}>Rincian Ekstraksi</h3>
+                      <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: 0, marginTop: 4 }}>Informasi hasil OCR</p>
+                    </div>
+                  </div>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 12, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                      <span style={{ fontWeight: 600 }}>Tipe Dokumen:</span>
+                      <span>Plain Text (.txt)</span>
+                    </div>
+                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                      <span style={{ fontWeight: 600 }}>Encoding:</span>
+                      <span>UTF-8</span>
+                    </div>
+                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                      <span style={{ fontWeight: 600 }}>Ukuran Teks:</span>
+                      <span>{activeFile?.size > 1024 ? (activeFile.size / 1024).toFixed(2) + ' KB' : (activeFile?.size || 0) + ' Bytes'}</span>
+                    </div>
+                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                      <span style={{ fontWeight: 600 }}>Akurasi Mesin:</span>
+                      <span style={{ color: '#10b981', fontWeight: 700 }}>Tinggi (Lokal)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
             {renderBottomRight && (
               <div style={{ marginTop: 'auto', paddingTop: 16, flexShrink: 0 }}>
                 {renderBottomRight}
