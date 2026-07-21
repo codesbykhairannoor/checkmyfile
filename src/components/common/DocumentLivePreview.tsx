@@ -93,6 +93,45 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
   // PDF Scroll Mode Experiment: only active for compress PDF
   const isPdfScrollMode = activeFile?.type === 'application/pdf' || activeFile?.name.toLowerCase().endsWith('.pdf') ? !!compressQuality : false;
 
+  const handlePageChange = (newPage: number) => {
+    setPageNumber(newPage);
+    if (isPdfScrollMode) {
+      const el = document.getElementById(`pdf-page-${newPage}`);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
+
+  useEffect(() => {
+    if (!isPdfScrollMode || totalPages <= 0) return;
+    
+    const observer = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          const match = entry.target.id.match(/pdf-page-(\d+)/);
+          if (match && match[1]) {
+            setPageNumber(parseInt(match[1]));
+          }
+        }
+      }
+    }, {
+      root: previewWrapperRef.current,
+      rootMargin: "-49% 0px -49% 0px", // Trigger when the element crosses the center of the container
+    });
+
+    // Small delay to ensure elements are mounted in the DOM
+    const timeout = setTimeout(() => {
+      for (let i = 1; i <= totalPages; i++) {
+        const el = document.getElementById(`pdf-page-${i}`);
+        if (el) observer.observe(el);
+      }
+    }, 100);
+
+    return () => {
+      clearTimeout(timeout);
+      observer.disconnect();
+    };
+  }, [isPdfScrollMode, totalPages, isLoadingPreview]);
+
   const handleRotate = () => {
     if (!fileKey) return;
     setFileRotations(prev => ({
@@ -338,29 +377,27 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
           {isPdf && (
             <>
               <div style={{ width: 1, height: 22, background: 'var(--border-color)' }} />
-              {!isPdfScrollMode && (
-                <>
-                  <button onClick={() => setPageNumber((p) => Math.max(1, p - 1))} disabled={pageNumber <= 1 || isLoadingPreview} className="btn-secondary" style={{ width: 28, height: 28, padding: 0, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%' }}>
-                    <ChevronLeft size={16} />
-                  </button>
-                  <input
-                    type="range"
-                    min={1}
-                    max={totalPages}
-                    value={pageNumber}
-                    onChange={(e) => setPageNumber(parseInt(e.target.value))}
-                    style={{ width: 80, margin: '0 8px', cursor: 'pointer' }}
-                    title="Geser untuk pindah halaman dengan cepat"
-                  />
-                  <span style={{ fontWeight: 700, fontSize: '0.88rem', minWidth: 60, textAlign: 'center' }}>
-                    {pageNumber} / {totalPages}
-                  </span>
-                  <button onClick={() => setPageNumber((p) => Math.min(totalPages, p + 1))} disabled={pageNumber >= totalPages || isLoadingPreview} className="btn-secondary" style={{ width: 28, height: 28, padding: 0, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%' }}>
-                    <ChevronRight size={16} />
-                  </button>
-                  <div style={{ width: 1, height: 22, background: 'var(--border-color)' }} />
-                </>
-              )}
+              <>
+                <button onClick={() => handlePageChange(Math.max(1, pageNumber - 1))} disabled={pageNumber <= 1 || isLoadingPreview} className="btn-secondary" style={{ width: 28, height: 28, padding: 0, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%' }}>
+                  <ChevronLeft size={16} />
+                </button>
+                <input
+                  type="range"
+                  min={1}
+                  max={totalPages}
+                  value={pageNumber}
+                  onChange={(e) => handlePageChange(parseInt(e.target.value))}
+                  style={{ width: 80, margin: '0 8px', cursor: 'pointer' }}
+                  title="Geser untuk pindah halaman dengan cepat"
+                />
+                <span style={{ fontWeight: 700, fontSize: '0.88rem', minWidth: 60, textAlign: 'center' }}>
+                  {pageNumber} / {totalPages}
+                </span>
+                <button onClick={() => handlePageChange(Math.min(totalPages, pageNumber + 1))} disabled={pageNumber >= totalPages || isLoadingPreview} className="btn-secondary" style={{ width: 28, height: 28, padding: 0, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%' }}>
+                  <ChevronRight size={16} />
+                </button>
+                <div style={{ width: 1, height: 22, background: 'var(--border-color)' }} />
+              </>
               <button onClick={() => setZoomScale((z) => Math.max(0.5, z - 0.15))} className="btn-secondary" style={{ width: 28, height: 28, padding: 0, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%' }} title="Zoom Out">
                 <ZoomOut size={16} />
               </button>
@@ -624,13 +661,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
                 {Array.from({ length: totalPages }).map((_, i) => (
                   <div
                     key={`thumb-${i}`}
-                    onClick={() => {
-                      setPageNumber(i + 1);
-                      if (isPdfScrollMode) {
-                        const el = document.getElementById(`pdf-page-${i + 1}`);
-                        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                      }
-                    }}
+                    onClick={() => handlePageChange(i + 1)}
                     style={{ cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, transition: 'transform 0.1s ease', }}
                     onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
                     onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
