@@ -34,6 +34,18 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
   const t = getUiTranslations(currentLang);
   const [filename, setFilename] = React.useState('Checkmyfile');
 
+  React.useEffect(() => {
+    if (originalFilename) {
+      // Remove extension for the input box
+      const lastDot = originalFilename.lastIndexOf('.');
+      if (lastDot > -1) {
+        setFilename(originalFilename.substring(0, lastDot));
+      } else {
+        setFilename(originalFilename);
+      }
+    }
+  }, [originalFilename]);
+
   const formatSize = (bytes: number) => {
     if (bytes < 1024) return `${bytes} B`;
     if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
