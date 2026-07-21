@@ -2,6 +2,7 @@ import type { ToolDefinition } from './types';
 import { generateSlugsForId, defaultFaqs } from './types';
 
 export const officeTools: ToolDefinition[] = [
+  /*
   {
     id: 'word-to-pdf',
     category: 'office',
@@ -34,6 +35,7 @@ export const officeTools: ToolDefinition[] = [
       },
     },
   },
+  */
   {
     id: 'excel-to-pdf',
     category: 'office',
@@ -107,6 +109,7 @@ export const officeTools: ToolDefinition[] = [
     },
   },
 
+  /*
   {
     id: 'pdf-to-word',
     category: 'office',
@@ -137,6 +140,7 @@ export const officeTools: ToolDefinition[] = [
       },
     },
   },
+  */
   {
     id: 'pdf-to-ppt',
     category: 'office',
