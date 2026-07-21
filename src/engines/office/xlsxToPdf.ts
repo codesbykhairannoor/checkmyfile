@@ -5,19 +5,18 @@ import html2canvas from 'html2canvas';
 
 export const convertCsvToPdf = async (file: File, onProgress: (p: number) => void): Promise<Uint8Array> => {
   onProgress(20);
-  const text = await file.text();
+  const wb = XLSX.read(await file.arrayBuffer(), { type: 'array' });
+  const ws = wb.Sheets[wb.SheetNames[0]];
+  if (!ws) throw new Error('No worksheets found');
   onProgress(40);
-  const rows = text.split(/\r?\n/).filter((l) => l.trim()).map((l) => l.split(',').map((c) => c.replace(/^"(.*)"$/, '$1').trim()));
-  return renderChunkedSpreadsheetRowsToPdf(rows, file.name, onProgress);
+  return renderChunkedSpreadsheetRowsToPdf(XLSX.utils.sheet_to_json(ws, { header: 1 }) as any[][], file.name, onProgress);
 };
 
 export const convertCsvToExcel = async (file: File, onProgress: (p: number) => void): Promise<Uint8Array> => {
   onProgress(20);
-  const text = await file.text();
+  const wb = XLSX.read(await file.arrayBuffer(), { type: 'array' });
   onProgress(50);
-  const rows = text.split(/\r?\n/).filter((l) => l.trim()).map((l) => l.split(',').map((c) => c.replace(/^"(.*)"$/, '$1').trim()));
-  const wb = XLSX.utils.book_new();
-  XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet(rows), 'Data Export');
+  // Optional: rename the default sheet if needed, but keeping it as parsed is usually better for pure conversion
   onProgress(85);
   return new Uint8Array(XLSX.write(wb, { bookType: 'xlsx', type: 'array' }));
 };

@@ -2,16 +2,14 @@ import React from 'react';
 
 interface OfficePreviewProps {
   isDocx: boolean;
-  isSpreadsheet: boolean;
   isText: boolean;
   isLoadingPreview: boolean;
   docxContainerRef: React.RefObject<HTMLDivElement | null>;
-  spreadsheetHtml: string | null;
   textPreviewContent: string | null;
 }
 
 export const OfficePreview: React.FC<OfficePreviewProps> = ({
-  isDocx, isSpreadsheet, isText, isLoadingPreview, docxContainerRef, spreadsheetHtml, textPreviewContent
+  isDocx, isText, isLoadingPreview, docxContainerRef, textPreviewContent
 }) => {
   return (
     <>
@@ -22,12 +20,6 @@ export const OfficePreview: React.FC<OfficePreviewProps> = ({
         />
       )}
 
-      {isSpreadsheet && spreadsheetHtml && !isLoadingPreview && (
-        <div
-          style={{ width: '100%', flex: 1, minHeight: '100%', overflow: 'auto', padding: '24px', background: '#fff' }}
-          dangerouslySetInnerHTML={{ __html: spreadsheetHtml }}
-        />
-      )}
 
       {isText && textPreviewContent && !isLoadingPreview && (
         <div

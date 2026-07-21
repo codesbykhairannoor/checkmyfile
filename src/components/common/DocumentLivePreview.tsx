@@ -2,19 +2,18 @@ import React, { useState, useEffect, useRef } from 'react';
 import * as pdfjsLib from 'pdfjs-dist';
 import { renderAsync } from 'docx-preview';
 import * as XLSX from 'xlsx';
-import { ChevronLeft, ChevronRight, ZoomIn, ZoomOut, FileText, FileSpreadsheet, Presentation, CheckCircle, RotateCw } from 'lucide-react';
+import { RotateCw, ZoomIn, ZoomOut, Presentation, FileText, FileSpreadsheet, CheckCircle, TableProperties } from 'lucide-react';
+import { LazyPdfPage } from './LazyPdfPage';
+import { PdfPreview } from '../preview/PdfPreview';
+import { OfficePreview } from '../preview/OfficePreview';
+import { PptxPreview } from '../preview/PptxPreview';
+import { SpreadsheetPreview } from '../preview/SpreadsheetPreview';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.mjs`;
 
 // A4 portrait ratio as default: 210mm / 297mm
 const A4_PORTRAIT_RATIO = 210 / 297;
 const A4_LANDSCAPE_RATIO = 297 / 210;
-
-import LazyPdfPage from '../preview/LazyPdfPage';
-import { PdfPreview } from '../preview/PdfPreview';
-import { OfficePreview } from '../preview/OfficePreview';
-import { PptxPreview } from '../preview/PptxPreview';
-
 
 // LazyPdfPage moved to src/components/preview/LazyPdfPage.tsx
 interface DocumentLivePreviewProps {
@@ -253,19 +252,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
             console.warn('Docx preview fallback:', docxErr);
           }
         } else if (['xlsx', 'xls', 'csv'].includes(ext)) {
-          // Spreadsheets: A4 landscape default canvas  
-          setPageAspectRatio(A4_LANDSCAPE_RATIO);
-          try {
-            const arrayBuffer = await activeFile.arrayBuffer();
-            const wb = XLSX.read(arrayBuffer, { type: 'array' });
-            const sheetName = wb.SheetNames[0];
-            if (sheetName && wb.Sheets[sheetName]) {
-              const htmlTable = XLSX.utils.sheet_to_html(wb.Sheets[sheetName], { id: 'spreadsheet-table' });
-              setSpreadsheetHtml(htmlTable);
-            }
-          } catch (xlsErr) {
-            console.warn('Excel preview fallback:', xlsErr);
-          }
+          // Spreadsheets are now handled by SpreadsheetPreview component natively
         } else if (ext === 'txt') {
           setPageAspectRatio(A4_PORTRAIT_RATIO);
           try {
@@ -383,8 +370,8 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
             </>
           )}
 
-          {/* Image & PPTX Zoom Controls */}
-          {(isImage || isPptx) && (
+          {/* Image & PPTX & Spreadsheet Zoom Controls */}
+          {(isImage || isPptx || isSpreadsheet) && (
             <>
               <button onClick={() => setZoomScale((z) => Math.max(0.3, z - 0.15))} className="btn-secondary" style={{ width: 28, height: 28, padding: 0, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%' }} title="Zoom Out">
                 <ZoomOut size={16} />
@@ -513,13 +500,18 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
 
             <OfficePreview
               isDocx={isDocx}
-              isSpreadsheet={isSpreadsheet}
               isText={isTxt}
               isLoadingPreview={isLoadingPreview}
               docxContainerRef={docxContainerRef}
-              spreadsheetHtml={spreadsheetHtml}
               textPreviewContent={textPreviewContent}
             />
+
+            {/* Spreadsheet Live Preview */}
+            {isOfficeOther && isSpreadsheet && !isLoadingPreview && (
+              <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+                <SpreadsheetPreview file={activeFile} zoomScale={zoomScale} />
+              </div>
+            )}
 
             {/* PPTX Live Preview */}
             {isOfficeOther && isPptx && !isLoadingPreview && (
@@ -529,7 +521,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
             )}
 
             {/* Other unsupported Office files placeholder */}
-            {isOfficeOther && !isPptx && !isLoadingPreview && (
+            {isOfficeOther && !isPptx && !isSpreadsheet && !isLoadingPreview && (
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', flex: 1, minHeight: '100%', padding: 32, textAlign: 'center' }}>
                 <div style={{ width: 64, height: 64, borderRadius: 16, background: 'rgba(225,29,72,0.1)', color: '#e11d48', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
                   {fileExt.includes('doc') ? <FileText size={32} /> : fileExt.includes('xls') || fileExt.includes('csv') ? <FileSpreadsheet size={32} /> : <Presentation size={32} />}
@@ -688,6 +680,41 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
                     <div>
                       <h3 style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-display)', margin: 0 }}>Rincian Berkas</h3>
                       <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: 0, marginTop: 4 }}>Informasi presentasi</p>
+                    </div>
+                  </div>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 12, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                      <span style={{ fontWeight: 600 }}>Nama Berkas:</span>
+                      <span style={{ wordBreak: 'break-all', textAlign: 'right', maxWidth: '60%' }}>{activeFile.name}</span>
+                    </div>
+                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                      <span style={{ fontWeight: 600 }}>Ukuran:</span>
+                      <span>{(activeFile.size / 1024 / 1024).toFixed(2)} MB</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {isSpreadsheet && (
+              <div
+                className="glass-panel"
+                style={{
+                  width: '100%',
+                  flex: 1,
+                  minHeight: 0,
+                  display: 'flex',
+                  flexDirection: 'column',
+                }}
+              >
+                <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: 20 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 12, borderBottom: '1px solid var(--border-color)', paddingBottom: 16 }}>
+                    <div style={{ background: 'var(--brand-primary)', color: 'white', padding: '8px', borderRadius: 8 }}>
+                      <TableProperties size={20} />
+                    </div>
+                    <div>
+                      <h3 style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-display)', margin: 0 }}>Rincian Berkas</h3>
+                      <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: 0, marginTop: 4 }}>Informasi lembar sebar (Spreadsheet)</p>
                     </div>
                   </div>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 12, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
