@@ -53,16 +53,26 @@ export async function signPdf(
   onProgress?.(70);
 
   // pdf-lib's coordinate system originates at bottom-left.
-  // Our UI coordinate system originates at top-left.
-  // We need to invert the Y coordinate.
+  // Our UI coordinate system originates at top-left, and x/y/width are percentages!
+  const pageWidth = page.getWidth();
   const pageHeight = page.getHeight();
-  const pdfLibY = pageHeight - config.y - config.height;
+
+  const absX = (config.x / 100) * pageWidth;
+  const absY = (config.y / 100) * pageHeight;
+  const absWidth = (config.width / 100) * pageWidth;
+
+  // Calculate height to maintain aspect ratio
+  const imgDims = embeddedImage.scale(1);
+  const aspectRatio = imgDims.height / imgDims.width;
+  const absHeight = absWidth * aspectRatio;
+
+  const pdfLibY = pageHeight - absY - absHeight;
 
   page.drawImage(embeddedImage, {
-    x: config.x,
+    x: absX,
     y: pdfLibY,
-    width: config.width,
-    height: config.height,
+    width: absWidth,
+    height: absHeight,
   });
 
   onProgress?.(90);
