@@ -1,6 +1,5 @@
 import jsPDF from 'jspdf';
 import { unzipSync } from 'fflate';
-import html2canvas from 'html2canvas';
 
 // Helper: safely decode bytes as UTF-8
 export const decode = (b: Uint8Array) => new TextDecoder('utf-8').decode(b);
@@ -172,11 +171,6 @@ export const convertPptxToPdf = async (file: File, onProgress: (p: number) => vo
   const pxH = firstParsed.slideHeight;
   const isLandscape = pxW >= pxH;
 
-  // Create off-screen container safely (fixed position behind everything)
-  const container = document.createElement('div');
-  container.style.cssText = `position:fixed;left:0;top:0;width:${pxW}px;height:${pxH}px;overflow:hidden;box-sizing:border-box;z-index:-9999;pointer-events:none;`;
-  document.body.appendChild(container);
-
   // Create jsPDF document with the EXACT dimensions of the slide in pixels
   const doc = new jsPDF({ 
     orientation: isLandscape ? 'landscape' : 'portrait', 
@@ -184,84 +178,68 @@ export const convertPptxToPdf = async (file: File, onProgress: (p: number) => vo
     format: [pxW, pxH] 
   });
 
-  try {
-    for (let si = 0; si < slideKeys.length; si++) {
-      const slideKey = slideKeys[si];
-      const slideXml = decode(unzipped[slideKey]);
-      const parsed = parseSlideXml(slideXml, slideKey, unzipped);
+  for (let si = 0; si < slideKeys.length; si++) {
+    const slideKey = slideKeys[si];
+    const slideXml = decode(unzipped[slideKey]);
+    const parsed = parseSlideXml(slideXml, slideKey, unzipped);
 
-      // Build the slide HTML
-      container.style.background = parsed.bgColor;
-      container.innerHTML = '';
+    if (si > 0) doc.addPage([pxW, pxH], isLandscape ? 'landscape' : 'portrait');
 
-      for (const shape of parsed.shapes) {
-        const el = document.createElement('div');
-        el.style.cssText = `position:absolute;left:${shape.x}px;top:${shape.y}px;width:${shape.w}px;height:${shape.h}px;overflow:hidden;box-sizing:border-box;`;
+    // Draw Slide Background
+    doc.setFillColor(parsed.bgColor);
+    doc.rect(0, 0, pxW, pxH, 'F');
 
-        if (shape.type === 'image' && shape.imgKey) {
-          const imgBytes = unzipped[shape.imgKey];
-          const ext = shape.imgKey.split('.').pop()?.toLowerCase() || 'png';
-          const mime = ext === 'jpg' || ext === 'jpeg' ? 'image/jpeg' : ext === 'gif' ? 'image/gif' : 'image/png';
-          
-          // Safely convert large byte arrays to base64 URL
-          const blob = new Blob([imgBytes], { type: mime });
-          const dataUrl = await new Promise<string>((resolve) => {
-            const reader = new FileReader();
-            reader.onload = () => resolve(reader.result as string);
-            reader.readAsDataURL(blob);
-          });
+    for (const shape of parsed.shapes) {
+      if (shape.type === 'image' && shape.imgKey) {
+        const imgBytes = unzipped[shape.imgKey];
+        if (!imgBytes) continue;
+        const ext = shape.imgKey.split('.').pop()?.toLowerCase() || 'png';
+        const mime = ext === 'jpg' || ext === 'jpeg' ? 'image/jpeg' : ext === 'gif' ? 'image/gif' : 'image/png';
+        
+        const blob = new Blob([imgBytes], { type: mime });
+        const dataUrl = await new Promise<string>((resolve) => {
+          const reader = new FileReader();
+          reader.onload = () => resolve(reader.result as string);
+          reader.readAsDataURL(blob);
+        });
 
-          const img = document.createElement('img');
-          img.src = dataUrl;
-          img.style.cssText = 'width:100%;height:100%;object-fit:contain;display:block;';
-          el.appendChild(img);
-        } else if (shape.type === 'text' && shape.text) {
-          if (shape.bgColor && shape.bgColor !== 'transparent') {
-            el.style.background = shape.bgColor;
-          }
-          el.style.display = 'flex';
-          el.style.alignItems = 'center';
-          el.style.padding = '4px 8px';
-          const span = document.createElement('span');
-          span.style.cssText = `
-            font-family: Calibri, Arial, sans-serif;
-            font-size: ${shape.fontSize}px;
-            font-weight: ${shape.bold ? '700' : '400'};
-            color: ${shape.color};
-            text-align: ${shape.align};
-            width: 100%;
-            word-break: break-word;
-            line-height: 1.3;
-            white-space: pre-wrap;
-          `;
-          span.textContent = shape.text;
-          el.appendChild(span);
+        doc.addImage(dataUrl, ext === 'png' ? 'PNG' : 'JPEG', shape.x, shape.y, shape.w, shape.h, undefined, 'FAST');
+      } else if (shape.type === 'text' && shape.text) {
+        if (shape.bgColor && shape.bgColor !== 'transparent') {
+          doc.setFillColor(shape.bgColor);
+          doc.rect(shape.x, shape.y, shape.w, shape.h, 'F');
         }
-        container.appendChild(el);
+
+        // Draw text
+        doc.setTextColor(shape.color || '#000000');
+        // A rough scaling factor for font size in jsPDF px mode
+        doc.setFontSize((shape.fontSize || 14) * 1.3);
+        // We use Helvetica since standard fonts are built-in and don't need TTF loading
+        doc.setFont('helvetica', shape.bold ? 'bold' : 'normal');
+
+        let textX = shape.x + 8; // add small padding
+        let textAlign: 'left' | 'center' | 'right' = 'left';
+        
+        if (shape.align === 'center') {
+          textX = shape.x + shape.w / 2;
+          textAlign = 'center';
+        } else if (shape.align === 'right') {
+          textX = shape.x + shape.w - 8;
+          textAlign = 'right';
+        }
+
+        // Text Y needs to account for padding
+        const textY = shape.y + 8;
+        
+        doc.text(shape.text, textX, textY, {
+          baseline: 'top',
+          align: textAlign,
+          maxWidth: Math.max(10, shape.w - 16) // subtract padding
+        });
       }
-
-      // Render to canvas and add to PDF
-      const canvas = await html2canvas(container, {
-        scale: 2,
-        useCORS: true,
-        logging: false,
-        backgroundColor: parsed.bgColor,
-        width: pxW,
-        height: pxH,
-        windowWidth: pxW,
-        windowHeight: pxH,
-        x: 0,
-        y: 0,
-        scrollX: 0,
-        scrollY: 0
-      });
-
-      if (si > 0) doc.addPage([pxW, pxH], isLandscape ? 'landscape' : 'portrait');
-      doc.addImage(canvas.toDataURL('image/jpeg', 0.92), 'JPEG', 0, 0, pxW, pxH, undefined, 'FAST');
-      onProgress(25 + Math.round(((si + 1) / slideKeys.length) * 70));
     }
-  } finally {
-    if (document.body.contains(container)) document.body.removeChild(container);
+
+    onProgress(25 + Math.round(((si + 1) / slideKeys.length) * 70));
   }
 
   onProgress(100);
