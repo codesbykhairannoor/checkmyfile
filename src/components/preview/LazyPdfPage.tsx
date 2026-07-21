@@ -61,7 +61,8 @@ const LazyPdfPage = ({
           if (context) {
             context.setTransform(1, 0, 0, 1, 0, 0);
             
-            const pixelRatio = Math.max(window.devicePixelRatio || 1, 2);
+            // Bump pixel ratio to 3 for ultra-HD crisp text (safe here due to lazy loading)
+            const pixelRatio = Math.max(window.devicePixelRatio || 1, 3);
             canvas.width = Math.floor(viewport.width * pixelRatio);
             canvas.height = Math.floor(viewport.height * pixelRatio);
             context.scale(pixelRatio, pixelRatio);

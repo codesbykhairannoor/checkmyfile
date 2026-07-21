@@ -235,7 +235,8 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
               // CRITICAL: Always reset canvas transform identity matrix before resizing
               context.setTransform(1, 0, 0, 1, 0, 0);
 
-              const pixelRatio = Math.max(window.devicePixelRatio || 1, 2);
+              // Bump pixel ratio to 3 for ultra-HD crisp text
+              const pixelRatio = Math.max(window.devicePixelRatio || 1, 3);
               canvas.width = Math.floor(viewport.width * pixelRatio);
               canvas.height = Math.floor(viewport.height * pixelRatio);
               context.scale(pixelRatio, pixelRatio);
