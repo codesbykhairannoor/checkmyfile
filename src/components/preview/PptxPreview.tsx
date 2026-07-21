@@ -1,24 +1,22 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Presentation, ChevronLeft, ChevronRight } from 'lucide-react';
-import * as pptxPreviewLib from 'pptx-preview';
-import JSZip from 'jszip';
-
-// Expose JSZip globally for pptx-preview
-if (typeof window !== 'undefined') {
-  (window as any).JSZip = JSZip;
-}
+import { Presentation } from 'lucide-react';
+import { unzipSync } from 'fflate';
+import { decode, parseSlideXml, ParsedSlide } from '../../engines/office/pptxToPdf';
 
 interface PptxPreviewProps {
   file: File;
 }
 
+interface SlideRenderData extends ParsedSlide {
+  // Map of imgKey to base64 data URL
+  images: Record<string, string>;
+}
+
 export const PptxPreview: React.FC<PptxPreviewProps> = ({ file }) => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const previewInstanceRef = useRef<any>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [totalSlides, setTotalSlides] = useState(0);
-  const [currentSlide, setCurrentSlide] = useState(1);
+  const [slides, setSlides] = useState<SlideRenderData[]>([]);
   const [containerWidth, setContainerWidth] = useState(0);
 
   useEffect(() => {
@@ -27,7 +25,6 @@ export const PptxPreview: React.FC<PptxPreviewProps> = ({ file }) => {
     const ro = new ResizeObserver((entries) => {
       for (const entry of entries) {
         const newWidth = entry.contentRect.width;
-        // Only update if width changes by more than 20px to prevent infinite render loops
         if (Math.abs(newWidth - lastWidth) > 20) {
           lastWidth = newWidth;
           setContainerWidth(newWidth);
@@ -39,52 +36,58 @@ export const PptxPreview: React.FC<PptxPreviewProps> = ({ file }) => {
   }, []);
 
   useEffect(() => {
-    if (!file || !containerRef.current || containerWidth === 0) return;
+    if (!file) return;
     let cancelled = false;
 
     const render = async () => {
       setLoading(true);
       setError(null);
       try {
-        const init = pptxPreviewLib.init || (pptxPreviewLib as any).default?.init;
-        if (!init) throw new Error('pptx-preview library init not found');
-
+        console.log('[PptxPreview] Starting custom render...');
+        const buffer = await file.arrayBuffer();
         if (cancelled) return;
+        
+        const unzipped = unzipSync(new Uint8Array(buffer));
+        
+        const slideKeys = Object.keys(unzipped)
+          .filter((k) => /^ppt\/slides\/slide\d+\.xml$/.test(k))
+          .sort((a, b) => {
+            const na = parseInt(a.match(/\d+/)?.[0] || '0');
+            const nb = parseInt(b.match(/\d+/)?.[0] || '0');
+            return na - nb;
+          });
 
-        // Destroy old instance
-        if (previewInstanceRef.current) {
-          try { previewInstanceRef.current.destroy(); } catch (_) {}
+        if (slideKeys.length === 0) throw new Error('No slides found');
+
+        const parsedSlides: SlideRenderData[] = [];
+        
+        for (const key of slideKeys) {
+          if (cancelled) return;
+          const slideXml = decode(unzipped[key]);
+          const parsed = parseSlideXml(slideXml, key, unzipped);
+          
+          const images: Record<string, string> = {};
+          
+          // Process images for this slide safely
+          for (const shape of parsed.shapes) {
+            if (shape.type === 'image' && shape.imgKey && unzipped[shape.imgKey]) {
+              if (!images[shape.imgKey]) {
+                const imgBytes = unzipped[shape.imgKey];
+                const ext = shape.imgKey.split('.').pop()?.toLowerCase() || 'png';
+                const mime = ext === 'jpg' || ext === 'jpeg' ? 'image/jpeg' : ext === 'gif' ? 'image/gif' : 'image/png';
+                const blob = new Blob([imgBytes], { type: mime });
+                images[shape.imgKey] = URL.createObjectURL(blob);
+              }
+            }
+          }
+          parsedSlides.push({ ...parsed, images });
         }
 
-        // Clear container
-        if (containerRef.current) containerRef.current.innerHTML = '';
-
-        // 16:9 ratio for slides
-        const w = Math.floor(containerWidth);
-        const h = Math.floor(w * (9 / 16));
-
-        console.log('[PptxPreview] Initializing instance with width', w);
-        const instance = init(containerRef.current, {
-          width: w,
-          height: h,
-          mode: 'scroll', // show all slides stacked
-        });
-        previewInstanceRef.current = instance;
-
-        console.log('[PptxPreview] Reading arrayBuffer...');
-        const arrayBuffer = await file.arrayBuffer();
         if (cancelled) return;
-
-        console.log('[PptxPreview] Calling instance.preview()...');
-        const pptx = await instance.preview(arrayBuffer);
-        console.log('[PptxPreview] Preview success, slides:', pptx?.slides?.length);
-        if (cancelled) return;
-
-        setTotalSlides(pptx?.slides?.length || 0);
-        setCurrentSlide(1);
+        setSlides(parsedSlides);
       } catch (err: any) {
         if (!cancelled) {
-          console.error('[PptxPreview] pptx-preview error:', err);
+          console.error('[PptxPreview] error:', err);
           setError('Gagal memuat pratinjau presentasi. File mungkin memiliki format yang tidak didukung.');
         }
       } finally {
@@ -96,59 +99,127 @@ export const PptxPreview: React.FC<PptxPreviewProps> = ({ file }) => {
 
     return () => {
       cancelled = true;
-      if (previewInstanceRef.current) {
-        try { previewInstanceRef.current.destroy(); } catch (_) {}
-        previewInstanceRef.current = null;
-      }
+      // Clean up object URLs
+      slides.forEach(s => {
+        Object.values(s.images).forEach(url => URL.revokeObjectURL(url));
+      });
     };
-  }, [file, containerWidth]);
+  }, [file]);
+
+  if (error) {
+    return (
+      <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--bg-card)', borderRadius: 12, padding: 24, textAlign: 'center', color: '#ef4444' }}>
+        <p>{error}</p>
+      </div>
+    );
+  }
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', width: '100%', flex: 1, minHeight: 0 }}>
+    <div ref={containerRef} style={{ display: 'flex', flexDirection: 'column', width: '100%', flex: 1, minHeight: 0 }}>
       {/* Slide counter badge */}
-      {totalSlides > 0 && !loading && (
+      {slides.length > 0 && !loading && (
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 8, marginBottom: 8 }}>
           <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)', background: 'var(--bg-input)', padding: '3px 10px', borderRadius: 20, fontWeight: 600 }}>
             <Presentation size={12} style={{ display: 'inline', marginRight: 5, verticalAlign: 'middle' }} />
-            {totalSlides} slide{totalSlides > 1 ? 's' : ''}
+            {slides.length} slide{slides.length > 1 ? 's' : ''}
           </span>
         </div>
       )}
 
       {/* Loading state */}
       {loading && (
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', flex: 1, gap: 12, padding: 32 }}>
-          <div style={{ width: 40, height: 40, border: '3px solid var(--border-color)', borderTopColor: 'var(--brand-primary)', borderRadius: '50%', animation: 'spin 0.8s linear infinite' }} />
-          <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: 0 }}>Memuat slide presentasi…</p>
+        <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: 'var(--bg-card)', borderRadius: 12 }}>
+          <div style={{ width: 40, height: 40, borderRadius: '50%', border: '3px solid var(--border-color)', borderTopColor: 'var(--brand-primary)', animation: 'spin 1s linear infinite', marginBottom: 16 }} />
+          <p style={{ color: 'var(--text-muted)', fontWeight: 500, fontSize: '0.9rem' }}>Memuat slide presentasi&hellip;</p>
         </div>
       )}
 
-      {/* Error state */}
-      {error && !loading && (
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', flex: 1, padding: 32, textAlign: 'center', gap: 12 }}>
-          <div style={{ width: 52, height: 52, borderRadius: 14, background: 'rgba(225,29,72,0.1)', color: '#e11d48', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <Presentation size={28} />
-          </div>
-          <h5 style={{ fontWeight: 700, fontSize: '0.95rem', margin: 0, color: '#1a202c' }}>Pratinjau tidak tersedia</h5>
-          <p style={{ fontSize: '0.82rem', color: '#64748b', margin: 0, maxWidth: 280 }}>{error}</p>
+      {/* Render Custom Slides */}
+      {!loading && slides.length > 0 && containerWidth > 0 && (
+        <div style={{ flex: 1, overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: 16, alignItems: 'center', padding: '0 8px 16px 8px' }}>
+          {slides.map((slide, idx) => {
+            const scale = containerWidth / slide.slideWidth;
+            const scaledHeight = slide.slideHeight * scale;
+
+            return (
+              <div
+                key={idx}
+                className="pptx-slide-preview"
+                style={{
+                  position: 'relative',
+                  width: containerWidth,
+                  height: scaledHeight,
+                  backgroundColor: slide.bgColor,
+                  boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+                  overflow: 'hidden',
+                  flexShrink: 0
+                }}
+              >
+                {/* Scale wrapper so we don't have to recalculate all shape dimensions */}
+                <div style={{
+                  position: 'absolute',
+                  transform: `scale(${scale})`,
+                  transformOrigin: 'top left',
+                  width: slide.slideWidth,
+                  height: slide.slideHeight,
+                }}>
+                  {slide.shapes.map((shape, sIdx) => {
+                    const baseStyle: React.CSSProperties = {
+                      position: 'absolute',
+                      left: shape.x,
+                      top: shape.y,
+                      width: shape.w,
+                      height: shape.h,
+                      overflow: 'hidden',
+                      boxSizing: 'border-box',
+                    };
+
+                    if (shape.type === 'image' && shape.imgKey && slide.images[shape.imgKey]) {
+                      return (
+                        <div key={sIdx} style={baseStyle}>
+                          <img 
+                            src={slide.images[shape.imgKey]} 
+                            style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }} 
+                            alt="" 
+                          />
+                        </div>
+                      );
+                    }
+
+                    if (shape.type === 'text' && shape.text) {
+                      return (
+                        <div key={sIdx} style={{
+                          ...baseStyle,
+                          backgroundColor: shape.bgColor !== 'transparent' ? shape.bgColor : undefined,
+                          display: 'flex',
+                          alignItems: 'center',
+                          padding: '4px 8px',
+                        }}>
+                          <span style={{
+                            fontFamily: 'Calibri, Arial, sans-serif',
+                            fontSize: `${shape.fontSize}px`,
+                            fontWeight: shape.bold ? 700 : 400,
+                            color: shape.color,
+                            textAlign: shape.align as any || 'left',
+                            width: '100%',
+                            wordBreak: 'break-word',
+                            lineHeight: 1.3,
+                            whiteSpace: 'pre-wrap'
+                          }}>
+                            {shape.text}
+                          </span>
+                        </div>
+                      );
+                    }
+
+                    return null;
+                  })}
+                </div>
+              </div>
+            );
+          })}
         </div>
       )}
-
-      {/* Actual pptx-preview render target */}
-      <div
-        ref={containerRef}
-        style={{
-          width: '100%',
-          flex: 1,
-          minHeight: 0,
-          overflowY: 'auto',
-          display: loading || error ? 'none' : 'block',
-          borderRadius: 8,
-          background: '#1a1a1a',
-        }}
-      />
     </div>
   );
 };
-
-export default PptxPreview;

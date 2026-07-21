@@ -3,19 +3,19 @@ import { unzipSync } from 'fflate';
 import html2canvas from 'html2canvas';
 
 // Helper: safely decode bytes as UTF-8
-const decode = (b: Uint8Array) => new TextDecoder('utf-8').decode(b);
+export const decode = (b: Uint8Array) => new TextDecoder('utf-8').decode(b);
 
 // Helper: convert EMUs (English Metric Units) to pixels (96dpi)
-const emuToPx = (emu: number) => Math.round(emu / 914400 * 96);
+export const emuToPx = (emu: number) => Math.round(emu / 914400 * 96);
 
 // Helper: parse a hex color string from xml attribute like "RRGGBB" or "FFRRGGBB"
-const parseColor = (hex?: string): string => {
+export const parseColor = (hex?: string): string => {
   if (!hex) return '#1F2937';
   const clean = hex.replace('#', '').slice(-6);
   return `#${clean}`;
 };
 
-interface SlideShape {
+export interface SlideShape {
   type: 'text' | 'image';
   x: number; y: number; w: number; h: number;
   text?: string;
@@ -27,14 +27,14 @@ interface SlideShape {
   imgKey?: string;
 }
 
-interface ParsedSlide {
+export interface ParsedSlide {
   bgColor: string;
   shapes: SlideShape[];
   slideWidth: number;
   slideHeight: number;
 }
 
-function parseSlideXml(slideXml: string, slideKey: string, unzipped: Record<string, Uint8Array>): ParsedSlide {
+export function parseSlideXml(slideXml: string, slideKey: string, unzipped: Record<string, Uint8Array>): ParsedSlide {
   // Slide dimensions default to 16:9 (10 inches x 7.5 inches in EMU: 9144000 x 6858000)
   let slideWidth = 9144000;
   let slideHeight = 6858000;
