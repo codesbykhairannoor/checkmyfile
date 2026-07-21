@@ -172,9 +172,9 @@ export const convertPptxToPdf = async (file: File, onProgress: (p: number) => vo
   const pxH = firstParsed.slideHeight;
   const isLandscape = pxW >= pxH;
 
-  // Create off-screen container
+  // Create off-screen container safely (fixed position behind everything)
   const container = document.createElement('div');
-  container.style.cssText = `position:absolute;left:-99999px;top:0;width:${pxW}px;height:${pxH}px;overflow:hidden;box-sizing:border-box;`;
+  container.style.cssText = `position:fixed;left:0;top:0;width:${pxW}px;height:${pxH}px;overflow:hidden;box-sizing:border-box;z-index:-9999;pointer-events:none;`;
   document.body.appendChild(container);
 
   // Create jsPDF document with the EXACT dimensions of the slide in pixels
@@ -248,6 +248,12 @@ export const convertPptxToPdf = async (file: File, onProgress: (p: number) => vo
         backgroundColor: parsed.bgColor,
         width: pxW,
         height: pxH,
+        windowWidth: pxW,
+        windowHeight: pxH,
+        x: 0,
+        y: 0,
+        scrollX: 0,
+        scrollY: 0
       });
 
       if (si > 0) doc.addPage([pxW, pxH], isLandscape ? 'landscape' : 'portrait');
