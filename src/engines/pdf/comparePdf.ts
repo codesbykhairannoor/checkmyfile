@@ -65,43 +65,70 @@ export const comparePdf = async (
 
     const img1 = ctx1.getImageData(0, 0, width, height);
     const img2 = ctx2.getImageData(0, 0, width, height);
-    const diff = diffCtx.createImageData(width, height);
 
-    // Continuous Red/Green Visual Diffing Engine (Anaglyph style)
+
+    // Smart Grid-Based Highlighter (Solves legibility issues with shifted text)
+    // Instead of coloring individual pixels (which causes messy double-vision),
+    // we use Document 2 as the pristine base and draw highlighter blocks over differences.
     const img1Data = img1.data;
     const img2Data = img2.data;
-    const diffData = diff.data;
+    
+    // 1. Draw Document 2 as the perfect, readable base
+    diffCtx.putImageData(img2, 0, 0);
+    
+    const cellSize = 8;
+    const cols = Math.ceil(width / cellSize);
+    const rows = Math.ceil(height / cellSize);
+    const grid = new Uint8Array(cols * rows);
     let numDiffPixels = 0;
 
-    for (let i = 0; i < img1Data.length; i += 4) {
-      // Calculate perceived luminance (grayscale) for both pixels
-      const v1 = (img1Data[i] * 0.299 + img1Data[i+1] * 0.587 + img1Data[i+2] * 0.114);
-      const v2 = (img2Data[i] * 0.299 + img2Data[i+1] * 0.587 + img2Data[i+2] * 0.114);
-      
-      if (Math.abs(v1 - v2) > 30) {
-        numDiffPixels++;
+    // 2. Detect differences and populate grid
+    for (let y = 0; y < height; y++) {
+      for (let x = 0; x < width; x++) {
+        const i = (y * width + x) * 4;
+        const v1 = (img1Data[i] * 0.299 + img1Data[i+1] * 0.587 + img1Data[i+2] * 0.114);
+        const v2 = (img2Data[i] * 0.299 + img2Data[i+1] * 0.587 + img2Data[i+2] * 0.114);
+        
+        if (Math.abs(v1 - v2) > 40) { // Significant difference
+           numDiffPixels++;
+           const c = Math.floor(x / cellSize);
+           const r = Math.floor(y / cellSize);
+           grid[r * cols + c]++;
+        }
       }
-      
-      // Continuous Color Mapping:
-      // - If v1=0 (Old text) & v2=255 (New bg) -> R=255, G=0, B=0 (RED = Removed)
-      // - If v1=255 (Old bg) & v2=0 (New text) -> R=0, G=255, B=0 (GREEN = Added)
-      // - If v1=0 & v2=0 (Match text) -> R=0, G=0, B=0 (BLACK)
-      // - If v1=255 & v2=255 (Match bg) -> R=255, G=255, B=255 (WHITE)
-      // We lighten the matching black text slightly to dark gray so colors pop more
-      const baseB = Math.min(v1, v2);
-      
-      // To prevent pure black matching text from overpowering, we lighten everything by 20%
-      diffData[i]   = Math.min(255, v2 + (255 - v2) * 0.2); // Red channel comes from Doc 2 (inverts Doc 1 darkness)
-      diffData[i+1] = Math.min(255, v1 + (255 - v1) * 0.2); // Green channel comes from Doc 1 (inverts Doc 2 darkness)
-      diffData[i+2] = Math.min(255, baseB + (255 - baseB) * 0.2); // Blue channel
-      diffData[i+3] = 255;
+    }
+    
+    // 3. Dilate grid to group small pixel changes into cohesive blocks (paragraphs/words)
+    const dilatedGrid = new Uint8Array(cols * rows);
+    for (let r = 0; r < rows; r++) {
+      for (let c = 0; c < cols; c++) {
+        // If a cell has at least 3 changed pixels, it's a real change (ignores 1-pixel noise)
+        if (grid[r * cols + c] > 2) {
+           // Mark this cell and its immediate neighbors (dilation)
+           for (let dr = -1; dr <= 1; dr++) {
+             for (let dc = -1; dc <= 1; dc++) {
+                const nr = r + dr, nc = c + dc;
+                if (nr >= 0 && nr < rows && nc >= 0 && nc < cols) {
+                   dilatedGrid[nr * cols + nc] = 1;
+                }
+             }
+           }
+        }
+      }
+    }
+    
+    // 4. Draw the highlighter blocks over the base document
+    diffCtx.fillStyle = 'rgba(239, 68, 68, 0.25)'; // Semi-transparent Red/Pink Highlighter
+    for (let r = 0; r < rows; r++) {
+      for (let c = 0; c < cols; c++) {
+        if (dilatedGrid[r * cols + c] === 1) {
+           diffCtx.fillRect(c * cellSize, r * cellSize, cellSize, cellSize);
+        }
+      }
     }
     
     totalDiffPixels += numDiffPixels;
     totalPixels += width * height;
-
-    // Draw the generated diff to the canvas
-    diffCtx.putImageData(diff, 0, 0);
 
     const jpegDataUrl = diffCanvas.toDataURL('image/jpeg', 0.85);
     const image = await newPdf.embedJpg(jpegDataUrl);
