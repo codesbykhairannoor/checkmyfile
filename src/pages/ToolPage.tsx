@@ -228,7 +228,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
 
       {/* Header - Hidden in Workspace Mode and Result Mode to maximize preview space */}
       {files.length === 0 && !isCompleted && (
-        <div style={{ textAlign: 'center', marginBottom: 40 }}>
+        <div style={{ textAlign: 'center', marginBottom: 40, marginTop: 40 }}>
           <h1 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', fontWeight: 800, fontFamily: 'var(--font-display)', marginBottom: 12 }}>
             {seo.h1}
           </h1>
