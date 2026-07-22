@@ -50,6 +50,18 @@
     {
       "q": "¿Mis documentos privados se suben a la nube?",
       "a": "No. Todo el procesamiento se ejecuta 100% localmente en tu navegador usando WebAssembly."
+    },
+    {
+      "q": "¿Se conservará el formato y la calidad original?",
+      "a": "Sí, nuestros motores de manipulación binaria garantizan que los elementos vectoriales, las fuentes y la fidelidad de la imagen se mantengan intactos."
+    },
+    {
+      "q": "¿Hay un límite máximo de tamaño de archivo?",
+      "a": "Como el procesamiento se realiza en tu dispositivo, no hay límites de tamaño artificiales. Puedes procesar archivos grandes siempre que tengas suficiente RAM."
+    },
+    {
+      "q": "¿Puedo usar esta herramienta sin conexión a internet?",
+      "a": "¡Sí! Una vez que cargas la página, el motor se almacena en caché. Puedes desconectarte de internet y continuar procesando archivos."
     }
   ]
 }

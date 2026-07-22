@@ -50,6 +50,18 @@
     {
       "q": "Apakah dokumen pribadi saya diunggah ke server cloud?",
       "a": "Tidak. Semua pemrosesan file dieksekusi 100% secara lokal di memori browser Anda menggunakan WebAssembly."
+    },
+    {
+      "q": "Apakah format dan kualitas asli akan dipertahankan?",
+      "a": "Ya, mesin manipulasi biner tingkat rendah kami memastikan elemen vektor, font, dan ketajaman gambar tetap utuh dan sempurna."
+    },
+    {
+      "q": "Apakah ada batasan ukuran file maksimal?",
+      "a": "Karena pemrosesan terjadi langsung di CPU dan memori perangkat Anda, tidak ada batasan ukuran file buatan. Anda dapat memproses file besar selama perangkat Anda memiliki cukup RAM."
+    },
+    {
+      "q": "Bisakah saya menggunakan alat ini secara offline tanpa koneksi internet?",
+      "a": "Ya! Setelah Anda memuat halaman ini, seluruh mesin WebAssembly di-cache. Anda dapat memutuskan koneksi internet dan terus mengedit file dengan aman."
     }
   ]
 }

@@ -50,6 +50,18 @@
     {
       "q": "Are my private documents uploaded to remote cloud servers?",
       "a": "No. All file processing is executed 100% locally in your browser memory using WebAssembly."
+    },
+    {
+      "q": "Will the original formatting and quality be preserved?",
+      "a": "Yes, our low-level binary manipulation engines ensure that vector elements, fonts, and image fidelity remain intact and pixel-perfect."
+    },
+    {
+      "q": "Is there a maximum file size limit?",
+      "a": "Since the processing happens directly on your device CPU and memory, there are no artificial file size limits. You can process large files as long as your device has enough RAM."
+    },
+    {
+      "q": "Can I use this tool offline without an internet connection?",
+      "a": "Yes! Once you load the page, the entire WebAssembly engine is cached. You can disconnect from the internet and continue editing files securely."
     }
   ]
 }
