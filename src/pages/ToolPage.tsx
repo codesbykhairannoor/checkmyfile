@@ -347,10 +347,10 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
         <div style={{ flex: 1, minHeight: 650, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
           {tool.id === 'compare-pdf' ? (
             <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 650, gap: 24, alignItems: 'center' }}>
-              <div className="mobile-col" style={{ display: 'flex', flex: 1, width: '100%', minHeight: 650, maxHeight: 800, gap: 24, overflow: 'hidden', justifyContent: 'center' }}>
+              <div className="tool-workspace-container" style={{ display: 'flex', flex: 1, width: '100%', minHeight: 650, maxHeight: 800, gap: 24, overflow: 'hidden', justifyContent: 'center' }}>
                 
                 {/* DOKUMEN ASLI PANEL */}
-                <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', position: 'relative', maxWidth: 800 }}>
+                <div className="tool-workspace-left" style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', position: 'relative', maxWidth: 800 }}>
                   <div style={{ position: 'absolute', top: 16, left: 16, zIndex: 10, background: 'rgba(0,0,0,0.6)', color: '#fff', padding: '6px 12px', borderRadius: 20, fontSize: '0.8rem', fontWeight: 600, pointerEvents: 'none' }}>Dokumen Asli</div>
                   <div style={{ flex: 1, minHeight: 0, overflow: 'hidden' }}>
                     <DocumentLivePreview 
@@ -365,7 +365,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                 </div>
 
                 {/* PERBANDINGAN PANEL */}
-                <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', position: 'relative', maxWidth: 800 }}>
+                <div className="tool-workspace-right" style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', position: 'relative', maxWidth: 800 }}>
                   <div style={{ position: 'absolute', top: 16, left: 16, zIndex: 10, background: 'rgba(239,68,68,0.9)', color: '#fff', padding: '6px 12px', borderRadius: 20, fontSize: '0.8rem', fontWeight: 600, pointerEvents: 'none' }}>Perbandingan (Diff)</div>
                   
                   <div style={{ flex: 1, minHeight: 0, overflow: 'hidden' }}>

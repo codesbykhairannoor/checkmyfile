@@ -431,9 +431,10 @@ button, input, select, textarea {
     width: 100% !important;
     min-width: 100% !important;
     height: auto !important;
+    max-height: 450px !important;
     padding-left: 0 !important;
     margin-top: 24px;
-    overflow: visible !important;
+    overflow-y: auto !important;
   }
 
   /* Footer adjustments */
