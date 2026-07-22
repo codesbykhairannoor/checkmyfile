@@ -78,44 +78,81 @@ export const comparePdf = async (
     const orig1: any[] = text1.items.filter((t: any) => 'str' in t && typeof t.str === 'string' && t.str.trim().length > 0);
     const orig2: any[] = text2.items.filter((t: any) => 'str' in t && typeof t.str === 'string' && t.str.trim().length > 0);
     
-    // Character-Level Semantic Diffing to bypass all spacing, kerning, and PDF.js split issues
-    const extractChars = (items: any[]) => {
-      const chars: { char: string, item: any }[] = [];
+    // Group items into words to handle both arbitrary PDF item splitting AND text wrapping/reflow
+    // This uses relative thresholds (based on font size) to detect word boundaries robustly.
+    const extractWords = (items: any[]) => {
+      const words: { word: string, items: Set<any> }[] = [];
+      let currentWord = "";
+      let currentItems = new Set<any>();
+      let lastX = -1000, lastY = -1000, lastW = 0, lastH = 12;
+      
       for (const item of items) {
-        const str = item.str;
-        for (let i = 0; i < str.length; i++) {
-          const char = str[i];
-          if (/[a-z0-9]/i.test(char)) {
-            chars.push({ char: char.toLowerCase(), item });
+        const [a] = item.transform || [1, 0, 0, 1, 0, 0];
+        const ch = (item.transform && item.transform[3] ? Math.abs(item.transform[3]) : item.height) || lastH;
+        let cw = (item.width || 0) * Math.abs(a);
+        if (cw < item.str.length * 2) {
+           cw = item.str.length * ch * 0.5; // fallback width
+        }
+        
+        const x = item.transform ? item.transform[4] : 0;
+        const y = item.transform ? item.transform[5] : 0;
+        
+        // If there's a physical space (different line or large gap), inject a word boundary
+        if (currentWord.length > 0) {
+          const isDifferentLine = Math.abs(y - lastY) > ch * 0.5;
+          const isLargeGap = (x - (lastX + lastW)) > ch * 0.2;
+          
+          if (isDifferentLine || isLargeGap) {
+             const clean = currentWord.replace(/[^a-z0-9]/gi, '').toLowerCase();
+             if (clean.length > 0) words.push({ word: clean, items: currentItems });
+             currentWord = "";
+             currentItems = new Set<any>();
           }
         }
+        
+        const str = item.str || '';
+        for (let i = 0; i < str.length; i++) {
+          const char = str[i];
+          if (char.trim() === '') {
+            const clean = currentWord.replace(/[^a-z0-9]/gi, '').toLowerCase();
+            if (clean.length > 0) words.push({ word: clean, items: currentItems });
+            currentWord = "";
+            currentItems = new Set<any>();
+          } else {
+            currentWord += char;
+            currentItems.add(item);
+          }
+        }
+        
+        lastX = x;
+        lastY = y;
+        lastW = cw;
+        lastH = ch;
       }
-      return chars;
+      
+      const clean = currentWord.replace(/[^a-z0-9]/gi, '').toLowerCase();
+      if (clean.length > 0) words.push({ word: clean, items: currentItems });
+      return words;
     };
 
-    let chars1 = extractChars(orig1);
-    let chars2 = extractChars(orig2);
+    const words1 = extractWords(orig1);
+    const words2 = extractWords(orig2);
     
-    let m = chars1.length;
-    let n = chars2.length;
+    let m = words1.length;
+    let n = words2.length;
     
-    // Safety limit to prevent memory exhaustion on extremely dense pages (e.g. >8000 chars)
-    if (m > 8000) { chars1 = chars1.slice(0, 8000); m = 8000; }
-    if (n > 8000) { chars2 = chars2.slice(0, 8000); n = 8000; }
-    
-    // Longest Common Subsequence (LCS) for character sequence (Memory efficient Uint16 flat array)
-    // 8000x8000 = 64M elements = 128MB allocation
-    let dp: Uint16Array;
+    // Longest Common Subsequence (LCS) for word matching (Memory efficient Int32 flat array)
+    let dp: Int32Array;
     try {
-      dp = new Uint16Array((m + 1) * (n + 1));
+      dp = new Int32Array((m + 1) * (n + 1));
     } catch (e) {
-      dp = new Uint16Array(1); // Failsafe
+      dp = new Int32Array(1); // Failsafe
       m = 0; n = 0;
     }
     
     for (let i = 1; i <= m; i++) {
       for (let j = 1; j <= n; j++) {
-        if (chars1[i-1].char === chars2[j-1].char) {
+        if (words1[i-1].word === words2[j-1].word) {
           dp[i * (n + 1) + j] = dp[(i-1) * (n + 1) + (j-1)] + 1;
         } else {
           dp[i * (n + 1) + j] = Math.max(dp[(i-1) * (n + 1) + j], dp[i * (n + 1) + (j-1)]);
@@ -126,10 +163,10 @@ export const comparePdf = async (
     const addedItems = new Set<any>();
     let i_lcs = m, j_lcs = n;
     while (i_lcs > 0 || j_lcs > 0) {
-      if (i_lcs > 0 && j_lcs > 0 && chars1[i_lcs-1].char === chars2[j_lcs-1].char) {
+      if (i_lcs > 0 && j_lcs > 0 && words1[i_lcs-1].word === words2[j_lcs-1].word) {
         i_lcs--; j_lcs--;
       } else if (j_lcs > 0 && (i_lcs === 0 || dp[i_lcs * (n + 1) + (j_lcs-1)] >= dp[(i_lcs-1) * (n + 1) + j_lcs])) {
-        addedItems.add(chars2[j_lcs-1].item);
+        words2[j_lcs-1].items.forEach((item: any) => addedItems.add(item));
         j_lcs--;
       } else if (i_lcs > 0 && (j_lcs === 0 || dp[i_lcs * (n + 1) + (j_lcs-1)] < dp[(i_lcs-1) * (n + 1) + j_lcs])) {
         i_lcs--;
