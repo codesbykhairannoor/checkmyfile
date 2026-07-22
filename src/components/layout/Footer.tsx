@@ -1,8 +1,7 @@
 import React from 'react';
 import { getUiTranslations } from '../../i18n/translations';
 import { TOOLS_CATALOG, type ToolDefinition } from '../../catalog/toolsCatalog';
-import { SUPPORTED_LANGUAGES } from '../../i18n/languages';
-import { ShieldCheck, Lock, Cpu, Globe, MapPin } from 'lucide-react';
+import { ShieldCheck } from 'lucide-react';
 
 interface FooterProps {
   currentLang: string;
@@ -20,66 +19,43 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool }) => 
   return (
     <footer
       style={{
-        background: 'var(--bg-card)',
+        background: 'var(--bg-app)', // Full width background matches app, but we'll use a distinct top border
         borderTop: '1px solid var(--border-color)',
-        padding: '64px 24px 32px',
+        padding: '64px 0 0 0',
         marginTop: 80,
+        width: '100%'
       }}
     >
-      <div style={{ maxWidth: 1280, margin: '0 auto' }}>
-        {/* Top Guarantee Banner */}
-        <div
-          className="glass-panel"
-          style={{
-            padding: 32,
-            marginBottom: 48,
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-            gap: 24,
-            background: 'rgba(99, 102, 241, 0.04)',
-          }}
-        >
-          <div style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
-            <ShieldCheck size={32} className="text-indigo-400 shrink-0" />
-            <div>
-              <h4 style={{ fontWeight: 700, marginBottom: 6 }}>{t.privacyTitle}</h4>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{t.privacyText}</p>
+      <div style={{ maxWidth: 1440, margin: '0 auto', padding: '0 32px' }}>
+        
+        {/* Top Section: Brand & Description */}
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', marginBottom: 56 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
+            <div style={{ background: 'var(--brand-primary)', color: '#fff', width: 42, height: 42, borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 900, fontSize: '1.4rem' }}>
+              B
             </div>
+            <span style={{ fontSize: '1.6rem', fontWeight: 800, fontFamily: 'var(--font-display)', letterSpacing: '-0.5px' }}>
+              BlitzDocs
+            </span>
           </div>
-
-          <div style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
-            <Cpu size={32} className="text-purple-400 shrink-0" />
-            <div>
-              <h4 style={{ fontWeight: 700, marginBottom: 6 }}>WebAssembly Client Memory</h4>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                Powered by low-level C/C++ compiled binaries (`pdf-lib`, `Tesseract.js`, `fflate`) running directly inside your browser memory for zero server latency.
-              </p>
-            </div>
-          </div>
-
-          <div style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
-            <Lock size={32} className="text-pink-400 shrink-0" />
-            <div>
-              <h4 style={{ fontWeight: 700, marginBottom: 6 }}>No File Size Limits</h4>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                Because you use your own computer CPU and RAM offline, there are no artificial daily caps or megabyte limitations.
-              </p>
-            </div>
-          </div>
+          <p style={{ maxWidth: 500, color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: 1.6 }}>
+            100% Client-Side WebAssembly Document Platform. 
+            All conversions are executed directly inside your browser memory for maximum privacy and zero server latency.
+          </p>
         </div>
 
         {/* Tools Columns */}
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-            gap: 32,
-            marginBottom: 48,
+            gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+            gap: 40,
+            marginBottom: 64,
           }}
         >
           <div>
-            <h5 style={{ fontWeight: 700, marginBottom: 16, color: 'var(--text-accent)' }}>{t.pdfTools}</h5>
-            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10 }}>
+            <h5 style={{ fontWeight: 800, marginBottom: 20, color: 'var(--text-main)', fontSize: '0.95rem', letterSpacing: '0.5px', textTransform: 'uppercase' }}>{t.pdfTools}</h5>
+            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 12, padding: 0 }}>
               {pdfTools.map((tool) => (
                 <li key={tool.id}>
                   <button
@@ -92,6 +68,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool }) => 
                       fontSize: '0.9rem',
                       textAlign: 'left',
                       transition: 'color 0.2s',
+                      padding: 0
                     }}
                     onMouseOver={(e) => (e.currentTarget.style.color = 'var(--brand-primary)')}
                     onMouseOut={(e) => (e.currentTarget.style.color = 'var(--text-muted)')}
@@ -104,8 +81,8 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool }) => 
           </div>
 
           <div>
-            <h5 style={{ fontWeight: 700, marginBottom: 16, color: 'var(--text-accent)' }}>{t.compressTools}</h5>
-            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10 }}>
+            <h5 style={{ fontWeight: 800, marginBottom: 20, color: 'var(--text-main)', fontSize: '0.95rem', letterSpacing: '0.5px', textTransform: 'uppercase' }}>{t.compressTools}</h5>
+            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 12, padding: 0 }}>
               {compressTools.map((tool) => (
                 <li key={tool.id}>
                   <button
@@ -117,6 +94,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool }) => 
                       cursor: 'pointer',
                       fontSize: '0.9rem',
                       textAlign: 'left',
+                      padding: 0
                     }}
                     onMouseOver={(e) => (e.currentTarget.style.color = 'var(--brand-primary)')}
                     onMouseOut={(e) => (e.currentTarget.style.color = 'var(--text-muted)')}
@@ -129,8 +107,8 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool }) => 
           </div>
 
           <div>
-            <h5 style={{ fontWeight: 700, marginBottom: 16, color: 'var(--text-accent)' }}>{t.officeTools}</h5>
-            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10 }}>
+            <h5 style={{ fontWeight: 800, marginBottom: 20, color: 'var(--text-main)', fontSize: '0.95rem', letterSpacing: '0.5px', textTransform: 'uppercase' }}>{t.officeTools}</h5>
+            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 12, padding: 0 }}>
               {officeTools.map((tool) => (
                 <li key={tool.id}>
                   <button
@@ -142,6 +120,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool }) => 
                       cursor: 'pointer',
                       fontSize: '0.9rem',
                       textAlign: 'left',
+                      padding: 0
                     }}
                     onMouseOver={(e) => (e.currentTarget.style.color = 'var(--brand-primary)')}
                     onMouseOut={(e) => (e.currentTarget.style.color = 'var(--text-muted)')}
@@ -154,8 +133,8 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool }) => 
           </div>
 
           <div>
-            <h5 style={{ fontWeight: 700, marginBottom: 16, color: 'var(--text-accent)' }}>{t.imageTools} & {t.ocrTools}</h5>
-            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10 }}>
+            <h5 style={{ fontWeight: 800, marginBottom: 20, color: 'var(--text-main)', fontSize: '0.95rem', letterSpacing: '0.5px', textTransform: 'uppercase' }}>{t.imageTools} & {t.ocrTools}</h5>
+            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 12, padding: 0 }}>
               {imageTools.map((tool) => (
                 <li key={tool.id}>
                   <button
@@ -167,6 +146,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool }) => 
                       cursor: 'pointer',
                       fontSize: '0.9rem',
                       textAlign: 'left',
+                      padding: 0
                     }}
                     onMouseOver={(e) => (e.currentTarget.style.color = 'var(--brand-primary)')}
                     onMouseOut={(e) => (e.currentTarget.style.color = 'var(--text-muted)')}
@@ -178,82 +158,14 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool }) => 
             </ul>
           </div>
         </div>
+      </div>
 
-        {/* SUPER SEO & GEO: 30 Programmatic Language Directory for Search Engine Bots & Fast Human Navigation */}
+      {/* Bottom Copyright Bar Full Width */}
+      <div style={{ background: 'var(--bg-input)', borderTop: '1px solid var(--border-color)', padding: '24px 32px' }}>
         <div
           style={{
-            borderTop: '1px solid var(--border-color)',
-            paddingTop: 36,
-            marginBottom: 40,
-          }}
-        >
-          <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
-            <Globe size={20} className="text-indigo-400" />
-            <h5 style={{ fontWeight: 800, fontSize: '1rem', color: 'var(--text-main)', fontFamily: 'var(--font-display)' }}>
-              30 Programmatic SEO & Geo Regions (Partial Lang URL Directory):
-            </h5>
-          </div>
-
-          <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: 20 }}>
-            Every localized route (`/:lang/:slug`) automatically injects 30 `&lt;link rel="alternate" hreflang="..."&gt;` tags, `geo.region` metadata, and `FAQPage JSON-LD` schema to maximize global rankings.
-          </p>
-
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fill, minmax(155px, 1fr))',
-              gap: 8,
-            }}
-          >
-            {SUPPORTED_LANGUAGES.map((lang) => (
-              <a
-                key={lang.code}
-                href={`/${lang.code}`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.history.pushState({}, '', `/${lang.code}`);
-                  window.dispatchEvent(new PopStateEvent('popstate'));
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                }}
-                style={{
-                  background: lang.code === currentLang ? 'var(--brand-glow)' : 'var(--bg-input)',
-                  border: lang.code === currentLang ? '1.5px solid var(--brand-primary)' : '1px solid var(--border-color)',
-                  color: lang.code === currentLang ? 'var(--text-accent)' : 'var(--text-muted)',
-                  padding: '8px 12px',
-                  borderRadius: 8,
-                  textDecoration: 'none',
-                  fontSize: '0.82rem',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'space-between',
-                  transition: 'all 0.15s ease',
-                }}
-                onMouseOver={(e) => {
-                  e.currentTarget.style.borderColor = 'var(--brand-primary)';
-                  e.currentTarget.style.color = 'var(--text-main)';
-                }}
-                onMouseOut={(e) => {
-                  if (lang.code !== currentLang) {
-                    e.currentTarget.style.borderColor = 'var(--border-color)';
-                    e.currentTarget.style.color = 'var(--text-muted)';
-                  }
-                }}
-              >
-                <div style={{ display: 'flex', alignItems: 'center', gap: 6, overflow: 'hidden' }}>
-                  <span>{lang.flag}</span>
-                  <span style={{ fontWeight: 600, whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>{lang.nativeName}</span>
-                </div>
-                <span style={{ fontSize: '0.7rem', opacity: 0.6, fontWeight: 800 }}>/{lang.code}/</span>
-              </a>
-            ))}
-          </div>
-        </div>
-
-        {/* Bottom Copyright Bar */}
-        <div
-          style={{
-            borderTop: '1px solid var(--border-color)',
-            paddingTop: 24,
+            maxWidth: 1440,
+            margin: '0 auto',
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center',
@@ -263,11 +175,11 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool }) => 
             color: 'var(--text-muted)',
           }}
         >
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-            <MapPin size={16} />
-            <span>100% Client-Side WebAssembly Execution • Files Never Leave Your Browser</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontWeight: 600 }}>
+            <ShieldCheck size={18} className="text-green-500" />
+            <span>Files Never Leave Your Browser</span>
           </div>
-          <div>© {new Date().getFullYear()} BlitzDocs Wasm Platform. {t.footerRights}</div>
+          <div style={{ fontWeight: 500 }}>© {new Date().getFullYear()} BlitzDocs Platform. {t.footerRights}</div>
         </div>
       </div>
     </footer>

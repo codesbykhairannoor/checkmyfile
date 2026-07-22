@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { getUiTranslations } from '../i18n/translations';
 import { getLocalizedSeo, type ToolDefinition } from '../catalog/toolsCatalog';
 import { SeoHead } from '../components/seo/SeoHead';
 import { FileDropzone } from '../components/common/FileDropzone';
 import { ProgressBar } from '../components/common/ProgressBar';
 import { DocumentLivePreview } from '../components/common/DocumentLivePreview';
-import { HelpCircle, ShieldCheck, Download } from 'lucide-react';
+import { Download } from 'lucide-react';
 import { useWorkspaceFiles } from '../hooks/useWorkspaceFiles';
 
 import { useDocumentProcessor } from '../hooks/useDocumentProcessor';
@@ -181,7 +180,6 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
     return `${(bytes / (1024 * 1024)).toFixed(2)} MB`;
   };
 
-  const t = getUiTranslations(currentLang);
   const seo = getLocalizedSeo(tool, currentLang);
 
   const handleStartProcessing = (options?: any) => {
@@ -420,38 +418,6 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
         </div>
       )}
 
-
-      {/* Localized FAQ Accordion (Programmatic SEO Schema integration) */}
-      {files.length === 0 && !isCompleted && (
-        <section style={{ marginTop: 64 }}>
-          <div className="glass-panel" style={{ padding: 32 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 24 }}>
-              <HelpCircle size={24} className="text-indigo-400" />
-              <h3 style={{ fontSize: '1.3rem', fontWeight: 700, fontFamily: 'var(--font-display)' }}>
-                {t.faqTitle}
-              </h3>
-            </div>
-
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
-              {seo.faqs.map((faq: { q: string; a: string }, index: number) => (
-                <div key={index} style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: 16 }}>
-                  <h4 style={{ fontWeight: 700, fontSize: '1rem', marginBottom: 8, color: 'var(--text-main)' }}>
-                    {faq.q}
-                  </h4>
-                  <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>
-                    {faq.a}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            <div style={{ marginTop: 24, display: 'flex', alignItems: 'center', gap: 10, color: '#10b981', fontSize: '0.85rem', fontWeight: 600 }}>
-              <ShieldCheck size={18} />
-              <span>All conversions executed inside your browser using WebAssembly. Files never leave your computer.</span>
-            </div>
-          </div>
-        </section>
-      )}
     </main>
   );
 };
