@@ -11,6 +11,7 @@
  * ────────────────────────────────────────────────────────────
  */
 import React from 'react';
+import '../seo-sections/seo-sections.css';
 import { SECTION_REGISTRY, resolveType } from '../seo-sections/registry';
 import type { SeoSectionData } from '../seo-sections/types';
 

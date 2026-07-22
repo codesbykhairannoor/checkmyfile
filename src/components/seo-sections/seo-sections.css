@@ -1,0 +1,125 @@
+/* ============================================================
+   SEO Rich Sections — Mobile-First Responsive CSS
+   ============================================================ */
+
+/* Base container */
+.seo-rich-sections-container {
+  padding: 0 16px;
+}
+
+/* Common section spacing */
+.seo-section {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* ── hero-features ── */
+.seo-section.hero-features > div {
+  flex-wrap: wrap !important;
+}
+.seo-section.hero-features > div > div {
+  min-width: 0;
+}
+
+/* ── how-to-steps ── */
+.seo-section.how-to-steps > div {
+  grid-template-columns: 1fr !important;
+}
+
+/* ── geo-targeting ── */
+.seo-section.geo-targeting > div {
+  flex-wrap: wrap !important;
+}
+
+/* ── split-geo 50/50 split ── */
+.seo-section.split-geo > div {
+  flex-direction: column !important;
+}
+.seo-section.split-geo > div > div:last-child {
+  min-height: 200px !important;
+}
+
+/* ── split-how-to ── */
+.seo-section.split-how-to > div > div {
+  flex-direction: column !important;
+  align-items: flex-start !important;
+}
+
+/* ── performance stats grid ── */
+.seo-section.performance > div > div:last-child {
+  grid-template-columns: 1fr !important;
+}
+
+/* ── split-performance ── */
+.seo-section.split-performance > div {
+  flex-direction: column !important;
+}
+
+/* ── FAQ cards ── */
+.seo-section.faqs .glass-panel {
+  padding: 16px !important;
+}
+
+/* ============================================================
+   DESKTOP (≥768px) — restore intended layouts
+   ============================================================ */
+@media (min-width: 768px) {
+  .seo-rich-sections-container {
+    padding: 0 24px;
+  }
+
+  .seo-section.how-to-steps > div {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+  }
+
+  .seo-section.split-geo > div {
+    flex-direction: row !important;
+  }
+
+  .seo-section.split-how-to > div > div {
+    flex-direction: row !important;
+    align-items: flex-start !important;
+  }
+
+  .seo-section.performance > div > div:last-child {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+  }
+
+  .seo-section.split-performance > div {
+    flex-direction: row !important;
+  }
+}
+
+/* ============================================================
+   MOBILE (≤480px) — tighten spacing further
+   ============================================================ */
+@media (max-width: 480px) {
+  .seo-section.hero-features,
+  .seo-section.how-to-steps,
+  .seo-section.geo-targeting,
+  .seo-section.privacy-security,
+  .seo-section.performance,
+  .seo-section.split-hero,
+  .seo-section.split-how-to,
+  .seo-section.split-geo,
+  .seo-section.split-privacy,
+  .seo-section.split-performance {
+    padding: 48px 0 !important;
+    margin: 24px 0 !important;
+    border-radius: 16px !important;
+  }
+
+  .seo-section.split-privacy {
+    padding: 48px 16px !important;
+  }
+
+  .seo-section.privacy-security {
+    padding: 40px 16px !important;
+    border-radius: 16px !important;
+  }
+
+  /* Globe visual too large on small screens */
+  .seo-section.geo-targeting svg:first-child {
+    display: none;
+  }
+}
