@@ -1,7 +1,7 @@
 /* Group C — Security: Green/Teal */
 import React from 'react';
 import type { SectionProps } from './types';
-import { ShieldCheck, Terminal, Activity, Wifi, Eye } from 'lucide-react';
+import { ShieldCheck, Terminal, Activity, Wifi } from 'lucide-react';
 
 export const SecurityHeroSection: React.FC<SectionProps> = ({ section, flipLayout }) => (
   <section className="seo-section security-hero" style={{ padding: '80px 24px', margin: '40px 0' }}>
@@ -43,25 +43,40 @@ export const SecurityHowToSection: React.FC<SectionProps> = ({ section }) => (
 
 export const SecurityGeoSection: React.FC<SectionProps> = ({ section }) => (
   <section className="seo-section security-geo" style={{ padding: '80px 24px', margin: '40px 0' }}>
-    <div style={{ maxWidth: 1000, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 48, alignItems: 'center' }}>
-      <div>
-        <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 800, marginBottom: 20, color: 'var(--text-main)', lineHeight: 1.2 }}>{section.title}</h2>
-        <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>{section.content}</p>
-      </div>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-        {[{ icon: <Wifi size={20}/>, label: 'Offline Processing', color: '#10b981' },
-          { icon: <Eye size={20}/>, label: 'Zero Visibility to Server', color: '#3b82f6' },
-          { icon: <Activity size={20}/>, label: 'Real-time Local Execution', color: '#a855f7' }
-        ].map(({ icon, label, color }) => (
-          <div key={label} style={{ display: 'flex', alignItems: 'center', gap: 16, padding: '20px 24px', background: 'var(--bg-card)', borderRadius: 16, border: '1px solid var(--border-color)' }}>
-            <div style={{ color, flexShrink: 0 }}>{icon}</div>
-            <span style={{ fontWeight: 600, color: 'var(--text-main)' }}>{label}</span>
+    <div style={{ maxWidth: 1000, margin: '0 auto' }}>
+      <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)', lineHeight: 1.2 }}>{section.title}</h2>
+      <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: 40, maxWidth: 600 }}>{section.content}</p>
+      {/* Bento grid layout */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gridTemplateRows: 'auto auto', gap: 16 }}>
+        {/* Large card top-left spanning 2 cols */}
+        <div style={{ gridColumn: '1 / 3', padding: 32, background: 'linear-gradient(135deg, rgba(16,185,129,0.12), rgba(5,150,105,0.06))', borderRadius: 20, border: '1px solid rgba(16,185,129,0.2)', display: 'flex', flexDirection: 'column', gap: 12 }}>
+          <Wifi size={32} color="#10b981" />
+          <div style={{ fontWeight: 800, fontSize: '1.2rem', color: 'var(--text-main)' }}>Offline Processing</div>
+          <div style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: 1.6 }}>Your files never need an internet connection to be processed. All computation is in-browser.</div>
+        </div>
+        {/* Small card top-right */}
+        <div style={{ padding: 24, background: 'var(--bg-card)', borderRadius: 20, border: '1px solid var(--border-color)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 8, textAlign: 'center' }}>
+          <div style={{ fontSize: '2rem', fontWeight: 900, color: '#10b981' }}>0</div>
+          <div style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-muted)' }}>API Calls Made</div>
+        </div>
+        {/* Small card bottom-left */}
+        <div style={{ padding: 24, background: 'var(--bg-card)', borderRadius: 20, border: '1px solid var(--border-color)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 8, textAlign: 'center' }}>
+          <div style={{ fontSize: '2rem', fontWeight: 900, color: '#3b82f6' }}>100%</div>
+          <div style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-muted)' }}>Private</div>
+        </div>
+        {/* Large card bottom spanning 2 cols */}
+        <div style={{ gridColumn: '2 / 4', padding: 24, background: 'var(--bg-card)', borderRadius: 20, border: '1px solid var(--border-color)', display: 'flex', alignItems: 'center', gap: 16 }}>
+          <Activity size={28} color="#a855f7" style={{ flexShrink: 0 }} />
+          <div>
+            <div style={{ fontWeight: 700, color: 'var(--text-main)', marginBottom: 4 }}>Real-time Local Execution</div>
+            <div style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>WASM processes files at native speed directly in your browser memory.</div>
           </div>
-        ))}
+        </div>
       </div>
     </div>
   </section>
 );
+
 
 export const SecurityPrivacySection: React.FC<SectionProps> = ({ section }) => (
   <section className="seo-section security-privacy" style={{ padding: '60px 24px', margin: '60px 0', borderRadius: 24, background: '#0d1117', fontFamily: 'monospace', border: '1px solid rgba(16,185,129,0.3)' }}>

@@ -45,16 +45,22 @@ export const CombinerHowToSection: React.FC<SectionProps> = ({ section }) => (
 );
 
 export const CombinerGeoSection: React.FC<SectionProps> = ({ section, flipLayout }) => (
-  <section className="seo-section combiner-geo" style={{ padding: '80px 24px', margin: '40px 0', background: 'var(--bg-card)', borderRadius: 32 }}>
-    <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', flexDirection: flipLayout ? 'row-reverse' : 'row', flexWrap: 'wrap', gap: 48, alignItems: 'center' }}>
-      <div style={{ flex: '1 1 320px', display: 'flex', justifyContent: 'center' }}>
-        <div style={{ padding: 40, background: 'linear-gradient(135deg, #6366f1, #3b82f6)', borderRadius: 32, color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 20px 40px rgba(99,102,241,0.3)' }}>
-          <Globe2 size={100} style={{ opacity: 0.9 }} />
+  <section className="seo-section combiner-geo" style={{ padding: '0', margin: '60px 0', borderRadius: 32, overflow: 'hidden', border: '1px solid var(--border-color)' }}>
+    <div style={{ display: 'flex', flexDirection: flipLayout ? 'row-reverse' : 'row', flexWrap: 'wrap', minHeight: 320 }}>
+      {/* Left — gradient accent panel */}
+      <div style={{ flex: '1 1 280px', background: 'linear-gradient(135deg, #6366f1 0%, #3b82f6 100%)', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'center', padding: '48px 40px', gap: 16 }}>
+        <Globe2 size={56} color="rgba(255,255,255,0.8)" />
+        <div style={{ fontSize: '2rem', fontWeight: 900, color: 'white', lineHeight: 1.1 }}>Local.<br/>Always.</div>
+        <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+          {['WASM', 'In-Browser', 'Private'].map(t => (
+            <div key={t} style={{ padding: '4px 12px', background: 'rgba(255,255,255,0.15)', borderRadius: 100, color: 'white', fontSize: '0.8rem', fontWeight: 700, backdropFilter: 'blur(4px)' }}>{t}</div>
+          ))}
         </div>
       </div>
-      <div style={{ flex: '1 1 400px' }}>
-        <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 800, marginBottom: 20, color: 'var(--text-main)', lineHeight: 1.2 }}>{section.title}</h2>
-        <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: 32 }}>{section.content}</p>
+      {/* Right — text content */}
+      <div style={{ flex: '2 1 360px', padding: '48px 40px', background: 'var(--bg-card)', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+        <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2.2rem)', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)', lineHeight: 1.2 }}>{section.title}</h2>
+        <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: 28 }}>{section.content}</p>
         <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
           {['No Upload', 'Instant', 'Private'].map(t => (
             <div key={t} style={{ padding: '8px 16px', background: 'rgba(99,102,241,0.1)', color: '#6366f1', borderRadius: 100, fontWeight: 700, fontSize: '0.9rem', display: 'flex', gap: 6, alignItems: 'center' }}>
@@ -66,6 +72,7 @@ export const CombinerGeoSection: React.FC<SectionProps> = ({ section, flipLayout
     </div>
   </section>
 );
+
 
 export const CombinerPrivacySection: React.FC<SectionProps> = ({ section }) => (
   <section className="seo-section combiner-privacy" style={{ padding: '80px 24px', margin: '60px 0' }}>
@@ -89,18 +96,34 @@ export const CombinerPrivacySection: React.FC<SectionProps> = ({ section }) => (
 );
 
 export const CombinerPerformanceSection: React.FC<SectionProps> = ({ section }) => (
-  <section className="seo-section combiner-performance" style={{ padding: '80px 24px', margin: '40px 0', textAlign: 'center' }}>
-    <div style={{ maxWidth: 900, margin: '0 auto' }}>
-      <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)' }}>{section.title}</h2>
-      <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: 60, maxWidth: 600, margin: '0 auto 60px' }}>{section.content}</p>
-      <div style={{ display: 'flex', justifyContent: 'center', gap: 40, flexWrap: 'wrap' }}>
-        {[{ n: '0ms', sub: 'Upload Time' }, { n: '100%', sub: 'Private' }, { n: '∞', sub: 'File Limit' }].map(({ n, sub }) => (
-          <div key={sub} style={{ minWidth: 160 }}>
-            <div style={{ fontSize: 'clamp(2.5rem, 6vw, 4rem)', fontWeight: 900, background: 'linear-gradient(135deg, #6366f1, #3b82f6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', lineHeight: 1 }}>{n}</div>
-            <div style={{ marginTop: 8, fontWeight: 600, color: 'var(--text-muted)', fontSize: '1rem' }}>{sub}</div>
-          </div>
+  <section className="seo-section combiner-performance" style={{ padding: '80px 24px', margin: '40px 0' }}>
+    <div style={{ maxWidth: 960, margin: '0 auto' }}>
+      <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 800, marginBottom: 12, color: 'var(--text-main)' }}>{section.title}</h2>
+      <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: 40, maxWidth: 600 }}>{section.content}</p>
+      {/* Comparison table */}
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 0, borderRadius: 24, overflow: 'hidden', border: '1px solid var(--border-color)' }}>
+        {/* Header row */}
+        <div style={{ padding: '16px 24px', background: 'var(--bg-card)', fontWeight: 700, color: 'var(--text-muted)', fontSize: '0.9rem', borderBottom: '1px solid var(--border-color)' }}>☁️ Cloud Tools</div>
+        <div style={{ padding: '16px 24px', background: 'linear-gradient(90deg, rgba(99,102,241,0.12), rgba(59,130,246,0.08))', fontWeight: 700, color: '#6366f1', fontSize: '0.9rem', borderBottom: '1px solid var(--border-color)', borderLeft: '1px solid var(--border-color)' }}>⚡ Our Tool</div>
+        {/* Data rows */}
+        {[
+          ['Uploads your files', 'Zero upload, ever'],
+          ['Server queue (10–60s)', 'Instant (<1s)'],
+          ['Privacy risk', '100% private'],
+          ['File size limits', 'No limits'],
+          ['Requires account', 'No account needed'],
+        ].map(([bad, good], i) => (
+          <React.Fragment key={i}>
+            <div style={{ padding: '16px 24px', background: i % 2 === 0 ? 'var(--bg-main)' : 'var(--bg-card)', color: 'var(--text-muted)', borderBottom: '1px solid var(--border-color)', display: 'flex', alignItems: 'center', gap: 8 }}>
+              <span style={{ color: '#ef4444', fontSize: '0.9rem' }}>✗</span> {bad}
+            </div>
+            <div style={{ padding: '16px 24px', background: i % 2 === 0 ? 'rgba(99,102,241,0.04)' : 'rgba(99,102,241,0.08)', color: 'var(--text-main)', fontWeight: 600, borderBottom: '1px solid var(--border-color)', borderLeft: '1px solid var(--border-color)', display: 'flex', alignItems: 'center', gap: 8 }}>
+              <span style={{ color: '#10b981', fontSize: '0.9rem' }}>✓</span> {good}
+            </div>
+          </React.Fragment>
         ))}
       </div>
     </div>
   </section>
 );
+

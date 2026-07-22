@@ -72,18 +72,40 @@ export const OrganizerPrivacySection: React.FC<SectionProps> = ({ section }) => 
 );
 
 export const OrganizerPerformanceSection: React.FC<SectionProps> = ({ section }) => (
-  <section className="seo-section organizer-performance" style={{ padding: '80px 24px', margin: '40px 0', textAlign: 'center' }}>
-    <div style={{ maxWidth: 800, margin: '0 auto' }}>
-      <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)' }}>{section.title}</h2>
-      <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: 56 }}>{section.content}</p>
-      <div style={{ display: 'flex', justifyContent: 'center', gap: 48, flexWrap: 'wrap' }}>
-        {[{ n: '1s', sub: 'Avg. Process Time' }, { n: '0', sub: 'Data Sent to Server' }, { n: '100%', sub: 'Browser-Native' }].map(({ n, sub }) => (
-          <div key={sub}>
-            <div style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 900, color: '#06b6d4', lineHeight: 1 }}>{n}</div>
-            <div style={{ marginTop: 8, color: 'var(--text-muted)', fontWeight: 600 }}>{sub}</div>
+  <section className="seo-section organizer-performance" style={{ padding: '80px 24px', margin: '40px 0', background: 'var(--bg-card)', borderRadius: 32 }}>
+    <div style={{ maxWidth: 860, margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: 48, alignItems: 'center' }}>
+      <div style={{ flex: '1 1 280px' }}>
+        <SortAsc size={48} color="#06b6d4" style={{ marginBottom: 20 }} />
+        <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)', lineHeight: 1.2 }}>{section.title}</h2>
+        <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>{section.content}</p>
+      </div>
+      {/* Horizontal progress bar metrics */}
+      <div style={{ flex: '1 1 340px', display: 'flex', flexDirection: 'column', gap: 24 }}>
+        {[
+          { label: 'Processing Speed',      pct: 98, color: '#06b6d4', value: '< 1s' },
+          { label: 'Privacy Score',         pct: 100, color: '#10b981', value: '100%' },
+          { label: 'Data Transmitted',      pct: 0,   color: '#ef4444', value: '0 bytes', inverted: true },
+          { label: 'Browser Compatibility', pct: 95,  color: '#6366f1', value: '95%' },
+        ].map(({ label, pct, color, value, inverted }) => (
+          <div key={label}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8 }}>
+              <span style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--text-main)' }}>{label}</span>
+              <span style={{ fontSize: '0.9rem', fontWeight: 800, color: inverted ? '#10b981' : color }}>{value}</span>
+            </div>
+            <div style={{ height: 10, background: 'var(--bg-main)', borderRadius: 100, overflow: 'hidden', border: '1px solid var(--border-color)' }}>
+              <div style={{
+                height: '100%',
+                width: `${inverted ? 100 : pct}%`,
+                background: inverted ? 'linear-gradient(90deg, #10b981, #059669)' : `linear-gradient(90deg, ${color}, ${color}88)`,
+                borderRadius: 100,
+                /* Visual trick: for inverted show a tiny sliver of red on the right */
+                ...(inverted ? { background: '#10b981' } : {}),
+              }} />
+            </div>
           </div>
         ))}
       </div>
     </div>
   </section>
 );
+
