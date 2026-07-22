@@ -313,9 +313,9 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
       {isCompleted && resultFile && (
         <div style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
           {tool.id === 'compare-pdf' ? (
-            <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0, gap: 24 }}>
-              <div style={{ display: 'flex', flex: 1, minHeight: 0, gap: 24, overflow: 'hidden' }}>
-                <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', background: 'var(--bg-card)', borderRadius: 16, border: '1px solid var(--border-color)', position: 'relative' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0, gap: 24, alignItems: 'center' }}>
+              <div style={{ display: 'flex', flex: 1, width: '100%', minHeight: 0, maxHeight: 800, gap: 24, overflow: 'hidden', justifyContent: 'center' }}>
+                <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', background: 'var(--bg-card)', borderRadius: 16, border: '1px solid var(--border-color)', position: 'relative', maxWidth: 800 }}>
                   <div style={{ position: 'absolute', top: 16, left: 16, zIndex: 10, background: 'rgba(0,0,0,0.6)', color: '#fff', padding: '6px 12px', borderRadius: 20, fontSize: '0.8rem', fontWeight: 600 }}>Dokumen Asli</div>
                   <div style={{ flex: 1, minHeight: 0, overflow: 'hidden' }}>
                     <DocumentLivePreview 
@@ -328,7 +328,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                     />
                   </div>
                 </div>
-                <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', background: 'var(--bg-card)', borderRadius: 16, border: '1px solid var(--border-color)', position: 'relative' }}>
+                <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', background: 'var(--bg-card)', borderRadius: 16, border: '1px solid var(--border-color)', position: 'relative', maxWidth: 800 }}>
                   <div style={{ position: 'absolute', top: 16, left: 16, zIndex: 10, background: 'rgba(239,68,68,0.9)', color: '#fff', padding: '6px 12px', borderRadius: 20, fontSize: '0.8rem', fontWeight: 600 }}>Perbandingan (Diff)</div>
                   <div style={{ flex: 1, minHeight: 0, overflow: 'hidden' }}>
                     <DocumentLivePreview files={[resultFile]} currentLang={currentLang} isResult={true} hideSidebar={true} />
