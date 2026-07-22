@@ -628,14 +628,14 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
 
   if (isResult) {
     return (
-      <div style={{ display: 'flex', width: '100%', height: 'calc(100vh - 220px)', maxHeight: 800, minHeight: 650, flex: 1, gap: 24, justifyContent: 'center' }}>
-        <div style={{ flex: 1, height: '100%', minWidth: 0, minHeight: 650, display: 'flex', flexDirection: 'column', gap: 12, overflow: 'hidden', paddingRight: 8, paddingBottom: 24 }}>
+      <div className="tool-workspace-container mobile-col" style={{ display: 'flex', width: '100%', height: '100%', maxHeight: 800, minHeight: 650, flex: 1, gap: 24, justifyContent: 'center' }}>
+        <div className="tool-workspace-left mobile-full-width" style={{ flex: 1, height: '100%', minWidth: 0, minHeight: 650, display: 'flex', flexDirection: 'column', gap: 12, overflow: 'hidden', paddingRight: 8, paddingBottom: 24 }}>
           {content}
         </div>
 
         {/* Right Sidebar - Thumbnails */}
         {!hideSidebar && ((isPdf && pdfDoc) || (isImage && files.length > 0) || isPptx || isSpreadsheet || isTxt || renderBottomRight) ? (
-          <aside style={{ flex: 1, minWidth: 350, minHeight: 0, display: 'flex', flexDirection: 'column', paddingBottom: 24 }}>
+          <aside className="tool-workspace-right mobile-full-width" style={{ flex: 1, minWidth: 350, minHeight: 0, display: 'flex', flexDirection: 'column', paddingBottom: 24 }}>
             {isPdf && pdfDoc && (
             <div
               className="glass-panel"
