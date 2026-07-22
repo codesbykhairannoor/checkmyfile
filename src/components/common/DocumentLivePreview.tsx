@@ -438,7 +438,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'flex-start',
-          minHeight: 0,
+          minHeight: 650,
           width: '100%',
           flex: 1,
           overflow: 'auto',

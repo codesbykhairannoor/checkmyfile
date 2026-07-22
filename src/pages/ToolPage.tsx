@@ -344,10 +344,10 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
 
       {/* Live Preview of the Converted / Processed Result */}
       {isCompleted && resultFile && (
-        <div style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+        <div style={{ flex: 1, minHeight: 650, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
           {tool.id === 'compare-pdf' ? (
-            <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0, gap: 24, alignItems: 'center' }}>
-              <div className="mobile-col" style={{ display: 'flex', flex: 1, width: '100%', minHeight: 0, maxHeight: 800, gap: 24, overflow: 'hidden', justifyContent: 'center' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 650, gap: 24, alignItems: 'center' }}>
+              <div className="mobile-col" style={{ display: 'flex', flex: 1, width: '100%', minHeight: 650, maxHeight: 800, gap: 24, overflow: 'hidden', justifyContent: 'center' }}>
                 
                 {/* DOKUMEN ASLI PANEL */}
                 <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', position: 'relative', maxWidth: 800 }}>
