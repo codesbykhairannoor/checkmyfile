@@ -52,14 +52,39 @@ interface SeoRichSectionsProps {
 export const SeoRichSections: React.FC<SeoRichSectionsProps> = ({ data }) => {
   if (!data) return null;
 
-  const { sections, faqs } = data;
+  const { sections, faqs, h1 } = data;
+
+  const getHash = (str: string) => {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+      hash = str.charCodeAt(i) + ((hash << 5) - hash);
+    }
+    return Math.abs(hash);
+  };
+  const seed = getHash(h1 || '');
+
+  // Randomize section order deterministically based on seed
+  const orderedSections = [...sections];
+  if (seed % 2 === 0 && orderedSections.length > 3) {
+    // Swap geo and privacy
+    const temp = orderedSections[2];
+    orderedSections[2] = orderedSections[3];
+    orderedSections[3] = temp;
+  }
+  if (seed % 3 === 0 && orderedSections.length > 4) {
+    // Swap privacy and performance
+    const temp = orderedSections[3];
+    orderedSections[3] = orderedSections[4];
+    orderedSections[4] = temp;
+  }
 
   const renderSection = (section: SeoSectionData, index: number) => {
+    const flipLayout = (seed + index) % 2 === 0;
     switch (section.type) {
       case 'hero_features':
         return (
           <section key={index} className="seo-section hero-features" style={{ padding: '80px 24px', margin: '40px 0', borderBottom: '1px solid var(--border-color)' }}>
-            <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 48 }}>
+            <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', flexDirection: flipLayout ? 'row-reverse' : 'row', flexWrap: 'wrap', alignItems: 'center', gap: 48 }}>
               <div style={{ flex: '1 1 400px' }}>
                 <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 64, height: 64, borderRadius: 16, background: 'rgba(99, 102, 241, 0.1)', color: '#6366f1', marginBottom: 24 }}>
                   <Star size={32} />
@@ -97,7 +122,7 @@ export const SeoRichSections: React.FC<SeoRichSectionsProps> = ({ data }) => {
       case 'geo_targeting':
         return (
           <section key={index} className="seo-section geo-targeting" style={{ padding: '80px 24px', margin: '40px 0' }}>
-            <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', flexWrap: 'wrap-reverse', alignItems: 'center', gap: 48 }}>
+            <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', flexDirection: flipLayout ? 'row-reverse' : 'row', flexWrap: 'wrap-reverse', alignItems: 'center', gap: 48 }}>
               <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}>
                 <div style={{ position: 'relative', width: '100%', aspectRatio: '1/1', maxWidth: 400, background: 'linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(59, 130, 246, 0.05))', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid rgba(16, 185, 129, 0.1)' }}>
                   <Globe size={160} color="rgba(16, 185, 129, 0.2)" />
@@ -176,8 +201,8 @@ export const SeoRichSections: React.FC<SeoRichSectionsProps> = ({ data }) => {
 
   return (
     <article className="seo-rich-sections-container" style={{ width: '100%', maxWidth: 1200, margin: '0 auto', paddingTop: 60 }}>
-      {/* Dynamic Sections */}
-      {sections.map((section, index) => renderSection(section, index))}
+      {/* Dynamic Sections (Order Randomized Deterministically) */}
+      {orderedSections.map((section, index) => renderSection(section, index))}
 
       {/* Dynamic SEO FAQs with Schema.org JSON-LD */}
       {faqs && faqs.length > 0 && (
