@@ -78,6 +78,42 @@ export const comparePdf = async (
     const orig1: any[] = text1.items.filter((t: any) => 'str' in t && typeof t.str === 'string' && t.str.trim().length > 0);
     const orig2: any[] = text2.items.filter((t: any) => 'str' in t && typeof t.str === 'string' && t.str.trim().length > 0);
     
+    // Sort text items geometrically (Top-to-Bottom, Left-to-Right) 
+    // to fix content stream order differences between PDF generators (e.g. Canva vs MS Word)
+    const sortGeometrically = (items: any[]) => {
+      // PDF.js coordinate space: y=0 is at the bottom of the page
+      const sortedByY = [...items].sort((a, b) => b.transform[5] - a.transform[5]);
+      
+      const lines: any[][] = [];
+      let currentLine: any[] = [];
+      let lineY = -10000;
+      
+      for (const item of sortedByY) {
+        const y = item.transform[5];
+        const ch = Math.abs(item.transform[3]) || item.height || 10;
+        
+        if (currentLine.length === 0 || Math.abs(lineY - y) < ch * 0.5) {
+          currentLine.push(item);
+          if (currentLine.length === 1) lineY = y;
+        } else {
+          lines.push(currentLine);
+          currentLine = [item];
+          lineY = y;
+        }
+      }
+      if (currentLine.length > 0) lines.push(currentLine);
+      
+      // Sort each line left-to-right
+      for (const line of lines) {
+        line.sort((a, b) => a.transform[4] - b.transform[4]);
+      }
+      
+      return lines.flat();
+    };
+
+    const sorted1 = sortGeometrically(orig1);
+    const sorted2 = sortGeometrically(orig2);
+    
     // Group items into words to handle both arbitrary PDF item splitting AND text wrapping/reflow
     // This uses relative thresholds (based on font size) to detect word boundaries robustly.
     const extractWords = (items: any[]) => {
@@ -135,8 +171,8 @@ export const comparePdf = async (
       return words;
     };
 
-    const words1 = extractWords(orig1);
-    const words2 = extractWords(orig2);
+    const words1 = extractWords(sorted1);
+    const words2 = extractWords(sorted2);
     
     let m = words1.length;
     let n = words2.length;
