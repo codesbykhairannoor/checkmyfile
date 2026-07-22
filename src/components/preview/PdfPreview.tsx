@@ -59,6 +59,94 @@ const DraggableSignature = ({ config, onUpdate }: { config: any, onUpdate: (x: n
   );
 };
 
+const DraggableEditElement = ({ 
+  element, 
+  isSelected, 
+  onClick, 
+  onUpdate 
+}: { 
+  element: any; 
+  isSelected: boolean;
+  onClick: () => void;
+  onUpdate: (updates: Partial<any>) => void;
+}) => {
+  const [isDragging, setIsDragging] = useState(false);
+  const startPos = useRef({ x: 0, y: 0 });
+  const startConfig = useRef({ x: 0, y: 0 });
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!isDragging || !containerRef.current?.parentElement) return;
+      const parent = containerRef.current.parentElement;
+      const dx = e.clientX - startPos.current.x;
+      const dy = e.clientY - startPos.current.y;
+      
+      const newX = startConfig.current.x + (dx / parent.clientWidth) * 100;
+      const newY = startConfig.current.y + (dy / parent.clientHeight) * 100;
+      
+      onUpdate({ x: Math.max(0, Math.min(100, newX)), y: Math.max(0, Math.min(100, newY)) });
+    };
+
+    const handleMouseUp = () => setIsDragging(false);
+
+    if (isDragging) {
+      window.addEventListener('mousemove', handleMouseMove);
+      window.addEventListener('mouseup', handleMouseUp);
+    }
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mouseup', handleMouseUp);
+    };
+  }, [isDragging, onUpdate]);
+
+  return (
+    <div
+      ref={containerRef}
+      onMouseDown={(e) => {
+        setIsDragging(true);
+        startPos.current = { x: e.clientX, y: e.clientY };
+        startConfig.current = { x: element.x, y: element.y };
+        onClick();
+        e.stopPropagation();
+        e.preventDefault();
+      }}
+      style={{
+        position: 'absolute',
+        left: `${element.x}%`,
+        top: `${element.y}%`,
+        width: element.type === 'image' ? `${element.width}%` : 'auto',
+        height: element.type === 'image' ? `${element.height}%` : 'auto',
+        zIndex: 50,
+        border: isSelected ? '2px dashed #3b82f6' : '1px solid transparent',
+        background: isSelected ? 'rgba(59, 130, 246, 0.1)' : 'transparent',
+        display: 'flex', 
+        alignItems: element.type === 'image' ? 'center' : 'flex-start', 
+        justifyContent: element.type === 'image' ? 'center' : 'flex-start',
+        cursor: isDragging ? 'grabbing' : 'grab',
+        padding: element.type === 'text' ? '4px 8px' : 0,
+      }}>
+      
+      {element.type === 'text' && (
+        <div style={{
+          color: element.color,
+          fontSize: `${element.fontSize}px`,
+          fontFamily: element.fontFamily === 'bold' ? 'Helvetica, Arial, sans-serif' : 'Helvetica, Arial, sans-serif',
+          fontWeight: element.fontFamily === 'bold' ? 'bold' : 'normal',
+          whiteSpace: 'pre-wrap',
+          pointerEvents: 'none'
+        }}>
+          {element.text}
+        </div>
+      )}
+
+      {element.type === 'image' && element.imageUrl && (
+        <img src={element.imageUrl} alt="Edit Element" style={{ width: '100%', height: '100%', objectFit: 'contain', pointerEvents: 'none' }} />
+      )}
+    </div>
+  );
+};
+
 const DraggableRedactBox = ({ config, mode, showLock, onUpdate }: { config: any, mode: string, showLock: boolean, onUpdate: (x: number, y: number, w: number, h: number) => void }) => {
   const [isDragging, setIsDragging] = useState(false);
   const [isResizing, setIsResizing] = useState(false);
@@ -170,11 +258,15 @@ interface PdfPreviewProps {
   paperShadow: string;
   pageAspectRatio: number;
   resizeConfig?: { pageSize: string; orientation: string; margin: number };
+  editElements?: any[];
+  setEditElements?: React.Dispatch<React.SetStateAction<any[]>>;
+  selectedEditId?: string | null;
+  setSelectedEditId?: (id: string | null) => void;
 }
 
 export const PdfPreview: React.FC<PdfPreviewProps> = ({
   pdfDoc, isLoadingPreview, watermarkConfig, pageNumberConfig, cropConfig, totalPages, containerWidth, containerHeight, splitRange, removeRange, signatureConfig, onSignatureUpdate, redactConfig, setRedactConfig, compressQuality,
-  previewRotate, externalRotate, pixelWidth, paperShadow, pageAspectRatio, resizeConfig
+  previewRotate, externalRotate, pixelWidth, paperShadow, pageAspectRatio, resizeConfig, editElements, setEditElements, selectedEditId, setSelectedEditId
 }) => {
   if (isLoadingPreview || !pdfDoc) return null;
 
@@ -265,6 +357,20 @@ export const PdfPreview: React.FC<PdfPreviewProps> = ({
             </div>
 
             {/* Overlays */}
+            {editElements && setEditElements && setSelectedEditId && (
+              <>
+                {editElements.filter(el => el.pageIndex === (pageNum - 1)).map(el => (
+                  <DraggableEditElement
+                    key={el.id}
+                    element={el}
+                    isSelected={selectedEditId === el.id}
+                    onClick={() => setSelectedEditId(el.id)}
+                    onUpdate={(updates) => setEditElements(prev => prev.map(e => e.id === el.id ? { ...e, ...updates } : e))}
+                  />
+                ))}
+              </>
+            )}
+
             {watermarkConfig && (
               <div style={{ position: 'absolute', inset: 0, display: 'flex', pointerEvents: 'none', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', zIndex: 20 }}>
                 <div style={{

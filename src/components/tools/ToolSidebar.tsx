@@ -22,6 +22,7 @@ import { ComparePdfEditor } from './ComparePdfEditor';
 import { RedactPdfEditor } from './RedactPdfEditor';
 import { ReversePdfEditor } from './ReversePdfEditor';
 import { ResizePdfEditor } from './ResizePdfEditor';
+import { EditPdfEditor } from './EditPdfEditor';
 import type { ToolDefinition } from '../../catalog/toolsCatalog';
 
 interface ToolSidebarProps {
@@ -55,6 +56,8 @@ interface ToolSidebarProps {
   
   // New tools config
   resizeConfig?: any; setResizeConfig?: (v: any) => void;
+  editElements?: any[]; setEditElements?: React.Dispatch<React.SetStateAction<any[]>>;
+  selectedEditId?: string | null; setSelectedEditId?: (id: string | null) => void;
 
   formatSize: (bytes: number) => string;
   acceptTypes?: string;
@@ -69,7 +72,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
   extractImageFormat, setExtractImageFormat,
   removeRange, setRemoveRange, insertFile, setInsertFile, insertAtIndex, setInsertAtIndex, signatureConfig, setSignatureConfig,
   pdfPassword, setPdfPassword, cropConfig, setCropConfig, redactConfig, setRedactConfig,
-  resizeConfig, setResizeConfig,
+  resizeConfig, setResizeConfig, editElements, setEditElements, selectedEditId, setSelectedEditId,
   formatSize, acceptTypes = '*', allowMultiple = false, pdfPagesCount = 100
 }) => {
   const fileInputRef = React.useRef<HTMLInputElement>(null);
@@ -188,6 +191,17 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
       )}
       {tool.id === 'resize-pdf' && resizeConfig && setResizeConfig && (
         <ResizePdfEditor config={resizeConfig} setConfig={setResizeConfig} onApply={handleStartProcessing} isProcessing={isProcessing} />
+      )}
+      {tool.id === 'edit-pdf' && editElements && setEditElements && setSelectedEditId && (
+        <EditPdfEditor 
+          elements={editElements} 
+          setElements={setEditElements} 
+          selectedId={selectedEditId || null} 
+          setSelectedId={setSelectedEditId}
+          activePageIndex={0}
+          onApply={handleStartProcessing} 
+          isProcessing={isProcessing} 
+        />
       )}
       {tool.id === 'extract-images-pdf' && (
         <ExtractImagesEditor onApply={handleStartProcessing} isProcessing={isProcessing} />

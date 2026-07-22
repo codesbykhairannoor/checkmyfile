@@ -18,6 +18,7 @@ import { comparePdf } from '../engines/pdf/comparePdf';
 import { redactPdf } from '../engines/pdf/redactPdf';
 import { reversePdf } from '../engines/pdf/reversePdf';
 import { resizePdf } from '../engines/pdf/resizePdf';
+import { editPdf } from '../engines/pdf/editPdf';
 import { getUiTranslations } from '../i18n/translations';
 
 interface ProcessorOptions {
@@ -43,6 +44,7 @@ interface ProcessorOptions {
   resizePageSize?: string;
   resizeOrientation?: string;
   resizeMargin?: number;
+  editElements?: any[];
 }
 
 export function useDocumentProcessor() {
@@ -151,6 +153,10 @@ export function useDocumentProcessor() {
         };
         resultBytes = await resizePdf(files[0], resizeOptions, (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_resized.pdf`;
+      } else if (toolId === 'edit-pdf') {
+        if (!options.editElements) throw new Error("Konfigurasi elemen edit tidak ditemukan.");
+        resultBytes = await editPdf(files[0], options.editElements, (p) => setProgress(p));
+        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_edited.pdf`;
       } else if (toolId === 'page-numbers') {
         resultBytes = await pdfEngine.addPageNumbers(files[0], options.pageNumberConfig, (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_numbered.pdf`;

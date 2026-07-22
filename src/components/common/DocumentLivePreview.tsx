@@ -38,6 +38,10 @@ interface DocumentLivePreviewProps {
   redactConfig?: any;
   setRedactConfig?: React.Dispatch<React.SetStateAction<any>>;
   resizeConfig?: any;
+  editElements?: any[];
+  setEditElements?: React.Dispatch<React.SetStateAction<any[]>>;
+  selectedEditId?: string | null;
+  setSelectedEditId?: (id: string | null) => void;
   hideSidebar?: boolean;
 }
 
@@ -59,6 +63,10 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
   redactConfig,
   setRedactConfig,
   resizeConfig,
+  editElements,
+  setEditElements,
+  selectedEditId,
+  setSelectedEditId,
   hideSidebar = false,
 }) => {
   const [pageNumber, setPageNumber] = useState<number>(1);
@@ -501,6 +509,10 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
               redactConfig={redactConfig}
               setRedactConfig={setRedactConfig}
               resizeConfig={resizeConfig}
+              editElements={editElements}
+              setEditElements={setEditElements}
+              selectedEditId={selectedEditId}
+              setSelectedEditId={setSelectedEditId}
               previewRotate={fileRotations[activeFile.name] || 0}
               externalRotate={externalRotate}
               pixelWidth={pixelWidth}

@@ -37,6 +37,32 @@ export const pdfTools: ToolDefinition[] = [
     },
   },
   {
+    id: 'edit-pdf',
+    category: 'pdf',
+    iconName: 'PenTool',
+    slugs: generateSlugsForId('edit-pdf', {
+      en: 'edit-pdf',
+      id: 'edit-pdf',
+      es: 'editar-pdf',
+      fr: 'modifier-pdf',
+      de: 'pdf-bearbeiten',
+    }),
+    seo: {
+      en: {
+        title: 'Free Online PDF Editor - Add Text & Images Locally | Zero Upload',
+        h1: 'Edit PDF Documents Directly in Your Browser',
+        description: 'A fully client-side interactive PDF Editor. Add text, overlay images, and manipulate PDFs locally with 100% privacy and zero uploads.',
+        faqs: defaultFaqs('Edit PDF', 'en'),
+      },
+      id: {
+        title: 'Edit PDF Online Gratis - Tambah Teks & Gambar Tanpa Unggah Server',
+        h1: 'Edit Dokumen PDF Secara Interaktif di Dalam Peramban',
+        description: 'Editor PDF interaktif client-side seutuhnya. Tambahkan teks, sisipkan gambar, dan manipulasi PDF Anda secara lokal dengan jaminan privasi 100%.',
+        faqs: defaultFaqs('Edit PDF', 'id'),
+      },
+    },
+  },
+  {
     id: 'split-pdf',
     category: 'pdf',
     iconName: 'Scissors',

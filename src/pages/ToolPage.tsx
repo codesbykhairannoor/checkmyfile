@@ -170,6 +170,9 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
     margin: 0
   });
 
+  const [editElements, setEditElements] = useState<any[]>([]);
+  const [selectedEditId, setSelectedEditId] = useState<string | null>(null);
+
   const [activeFileIndex, setActiveFileIndex] = useState<number>(0);
 
   const formatSize = (bytes: number) => {
@@ -254,37 +257,58 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                 cropConfig={tool.id === 'crop-pdf' ? cropConfig : undefined}
                 redactConfig={tool.id === 'redact-pdf' ? redactConfig : undefined}
                 resizeConfig={tool.id === 'resize-pdf' ? resizeConfig : undefined}
+                editElements={tool.id === 'edit-pdf' ? editElements : undefined}
+                setEditElements={setEditElements}
+                selectedEditId={tool.id === 'edit-pdf' ? selectedEditId : undefined}
+                setSelectedEditId={setSelectedEditId}
                 setRedactConfig={setRedactConfig}
                 onSignatureUpdate={(x, y, pageIndex) => setSignatureConfig(prev => prev ? ({ ...prev, x, y, ...(pageIndex !== undefined ? { pageIndex } : {}) }) : prev)}
               />
           </div>
-
-          <ToolSidebar
-            tool={tool} files={files} setFiles={setFiles} activeFileIndex={activeFileIndex} setActiveFileIndex={setActiveFileIndex}
-            isProcessing={isProcessing} handleStartProcessing={handleStartProcessing}
-            splitRange={splitRange} setSplitRange={setSplitRange}
-            rotateDegrees={rotateDegrees} setRotateDegrees={setRotateDegrees}
-            pageNumberConfig={pageNumberConfig} setPageNumberConfig={setPageNumberConfig}
-            watermarkConfig={watermarkConfig} setWatermarkConfig={setWatermarkConfig}
-            compressQuality={compressQuality} setCompressQuality={setCompressQuality}
-
-            extractImageFormat={extractImageFormat}
-            setExtractImageFormat={setExtractImageFormat}
-            
-            removeRange={removeRange} setRemoveRange={setRemoveRange}
-            insertFile={insertFile} setInsertFile={setInsertFile}
-            insertAtIndex={insertAtIndex} setInsertAtIndex={setInsertAtIndex}
-            signatureConfig={signatureConfig} setSignatureConfig={setSignatureConfig}
-            pdfPassword={pdfPassword} setPdfPassword={setPdfPassword}
-            cropConfig={cropConfig} setCropConfig={setCropConfig}
-            redactConfig={redactConfig} setRedactConfig={setRedactConfig}
-            resizeConfig={resizeConfig} setResizeConfig={setResizeConfig}
-
-            formatSize={formatSize}
-            acceptTypes={getAcceptTypes(tool.id)}
-            allowMultiple={tool.id === 'merge-pdf' || tool.id === 'gabung-pdf' || tool.id === 'image-to-pdf' || tool.id === 'gambar-ke-pdf'}
-            pdfPagesCount={100}
-          />
+          {/* Right Sidebar */}
+          <div style={{ width: 340, minWidth: 340, flexShrink: 0, height: '100%', overflowY: 'auto', paddingLeft: 8 }}>
+            <ToolSidebar 
+              tool={tool} files={files} setFiles={setFiles} activeFileIndex={activeFileIndex} setActiveFileIndex={setActiveFileIndex}
+              isProcessing={isProcessing} 
+              handleStartProcessing={() => handleStartProcessing({ 
+                splitRange, 
+                rotateDegrees, 
+                pageNumberConfig, 
+                watermarkConfig, 
+                compressQuality,
+                extractImageFormat,
+                removeRange,
+                insertFile,
+                insertAtIndex,
+                signatureConfig,
+                pdfPassword,
+                cropConfig,
+                redactConfig,
+                resizeConfig,
+                editElements
+              })}
+              splitRange={splitRange} setSplitRange={setSplitRange}
+              rotateDegrees={rotateDegrees} setRotateDegrees={setRotateDegrees}
+              pageNumberConfig={pageNumberConfig} setPageNumberConfig={setPageNumberConfig}
+              watermarkConfig={watermarkConfig} setWatermarkConfig={setWatermarkConfig}
+              compressQuality={compressQuality} setCompressQuality={setCompressQuality}
+              extractImageFormat={extractImageFormat} setExtractImageFormat={setExtractImageFormat}
+              removeRange={removeRange} setRemoveRange={setRemoveRange}
+              insertFile={insertFile} setInsertFile={setInsertFile}
+              insertAtIndex={insertAtIndex} setInsertAtIndex={setInsertAtIndex}
+              signatureConfig={signatureConfig} setSignatureConfig={setSignatureConfig}
+              pdfPassword={pdfPassword} setPdfPassword={setPdfPassword}
+              cropConfig={cropConfig} setCropConfig={setCropConfig}
+              redactConfig={redactConfig} setRedactConfig={setRedactConfig}
+              resizeConfig={resizeConfig} setResizeConfig={setResizeConfig}
+              editElements={editElements} setEditElements={setEditElements}
+              selectedEditId={selectedEditId} setSelectedEditId={setSelectedEditId}
+              formatSize={formatSize}
+              acceptTypes={getAcceptTypes(tool.id)}
+              allowMultiple={tool.id === 'merge-pdf' || tool.id === 'gabung-pdf' || tool.id === 'image-to-pdf' || tool.id === 'gambar-ke-pdf'}
+              pdfPagesCount={100}
+            />
+          </div>
         </div>
       )}
 
