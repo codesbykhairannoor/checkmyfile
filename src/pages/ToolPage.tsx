@@ -316,18 +316,22 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
             <div style={{ display: 'flex', flex: 1, minHeight: 0, gap: 24, overflow: 'hidden' }}>
               <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', background: 'var(--bg-card)', borderRadius: 16, border: '1px solid var(--border-color)', position: 'relative' }}>
                 <div style={{ position: 'absolute', top: 16, left: 16, zIndex: 10, background: 'rgba(0,0,0,0.6)', color: '#fff', padding: '6px 12px', borderRadius: 20, fontSize: '0.8rem', fontWeight: 600 }}>Dokumen Asli</div>
-                <DocumentLivePreview 
-                  files={[
-                    processorMetadata?.originalAnnotatedBytes 
-                      ? new File([processorMetadata.originalAnnotatedBytes], "Dokumen_Asli.pdf", { type: 'application/pdf' }) 
-                      : files[0]
-                  ]} 
-                  currentLang={currentLang} isResult={true} hideSidebar={true} 
-                />
+                <div style={{ flex: 1, minHeight: 0, overflow: 'hidden' }}>
+                  <DocumentLivePreview 
+                    files={[
+                      processorMetadata?.originalAnnotatedBytes 
+                        ? new File([processorMetadata.originalAnnotatedBytes], "Dokumen_Asli.pdf", { type: 'application/pdf' }) 
+                        : files[0]
+                    ]} 
+                    currentLang={currentLang} isResult={true} hideSidebar={true} 
+                  />
+                </div>
               </div>
               <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', background: 'var(--bg-card)', borderRadius: 16, border: '1px solid var(--border-color)', position: 'relative' }}>
                 <div style={{ position: 'absolute', top: 16, left: 16, zIndex: 10, background: 'rgba(239,68,68,0.9)', color: '#fff', padding: '6px 12px', borderRadius: 20, fontSize: '0.8rem', fontWeight: 600 }}>Perbandingan (Diff)</div>
-                <DocumentLivePreview files={[resultFile]} currentLang={currentLang} isResult={true} hideSidebar={true} />
+                <div style={{ flex: 1, minHeight: 0, overflow: 'hidden' }}>
+                  <DocumentLivePreview files={[resultFile]} currentLang={currentLang} isResult={true} hideSidebar={true} />
+                </div>
                 
                 {/* Accuracy Overlay - Now positioned statically below the preview to prevent covering */}
                 <div style={{ background: '#fff', padding: 20, borderTop: '1px solid var(--border-color)', zIndex: 100 }}>
