@@ -1,55 +1,55 @@
 {
-  "title": "Redact PDF — Permanently Hide Sensitive Text",
-  "h1": "Permanently Redact Sensitive Information in PDFs",
-  "description": "Black out or blur sensitive text and images in PDFs, entirely offline. No cloud risk. Essential for users in Kuala Lumpur.",
+  "title": "Redact PDF — Permanently Remove Sensitive Data",
+  "h1": "Permanently Redact Sensitive Information from PDFs Offline",
+  "description": "Black out sensitive text and images in PDFs entirely in your browser. No cloud risk. Critical for users in Kuala Lumpur.",
   "sections": [
     {
-      "type": "security_hero_features",
+      "type": "redact_hero_features",
       "title": "Why Redact PDFs Locally?",
-      "content": "Redaction means the content is sensitive. Uploading a document to redact it defeats the entire purpose. Ours works 100% in-browser."
+      "content": "Redacting means the content is classified. Uploading a document you need to hide defeats the whole purpose. Our tool runs 100% offline."
     },
     {
-      "type": "security_how_to_steps",
-      "title": "How to Redact a PDF",
+      "type": "redact_how_to_steps",
+      "title": "How to Permanently Redact a PDF",
       "steps": [
         {
-          "title": "Open Document",
-          "description": "Load the PDF containing sensitive data."
+          "title": "Open Sensitive Document",
+          "description": "Load the PDF with data that must be hidden."
         },
         {
           "title": "Mark Redaction Areas",
-          "description": "Draw boxes over content to permanently hide."
+          "description": "Draw boxes over content to permanently erase."
         },
         {
           "title": "Apply & Download",
-          "description": "Content is permanently removed and saved."
+          "description": "Content is permanently deleted from the PDF structure."
         }
       ]
     },
     {
-      "type": "security_geo_targeting",
-      "title": "Redaction Tools for Kuala Lumpur Law Firms",
-      "content": "Legal professionals in Kuala Lumpur use our offline redaction tool to prepare court documents safely."
+      "type": "redact_geo_targeting",
+      "title": "Court-Ready Redaction for Kuala Lumpur Law Firms",
+      "content": "Legal professionals in Kuala Lumpur prepare court documents with permanent, offline redaction that removes data from the PDF structure itself."
     },
     {
-      "type": "security_privacy_security",
-      "title": "True Permanent Redaction",
-      "content": "Unlike \"hiding\" content with black boxes in other tools, our redaction permanently removes data from the PDF structure."
+      "type": "redact_privacy_security",
+      "title": "True Permanent Redaction — Not Just Black Boxes",
+      "content": "Unlike tools that merely cover text with black boxes, our redaction permanently deletes the underlying data from the PDF object structure."
     },
     {
-      "type": "security_performance",
-      "title": "Redact Any Document Instantly",
-      "content": "Apply hundreds of redactions to a large document in seconds, entirely offline."
+      "type": "redact_performance",
+      "title": "Redact Entire Documents Instantly",
+      "content": "Apply hundreds of permanent redactions to large documents in seconds, completely offline."
     }
   ],
   "faqs": [
     {
-      "q": "Is the redaction permanent?",
-      "a": "Yes, the underlying text and image data is permanently removed from the PDF."
+      "q": "Is the redaction truly permanent?",
+      "a": "Yes, the underlying text and image data is permanently deleted from the PDF structure."
     },
     {
       "q": "Can I redact images too?",
-      "a": "Yes, both text regions and image areas can be redacted."
+      "a": "Yes, both text regions and image areas can be permanently redacted."
     },
     {
       "q": "Can I choose black or white cover?",

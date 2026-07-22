@@ -1,45 +1,45 @@
 {
-  "title": "Remove PDF Metadata — Strip Hidden Data Offline",
-  "h1": "Strip Hidden Metadata from PDF Files Instantly",
-  "description": "Remove author names, creation dates, and tracking data from PDFs entirely in your browser. No upload. Perfect for users in Istanbul.",
+  "title": "Remove PDF Metadata — Strip Hidden Author Data Offline",
+  "h1": "Strip All Hidden Metadata from PDF Files Instantly",
+  "description": "Remove author names, company info, GPS locations, and revision history from PDFs entirely in your browser. No upload. Perfect for Istanbul users.",
   "sections": [
     {
-      "type": "security_hero_features",
-      "title": "Why Remove PDF Metadata?",
-      "content": "PDFs carry hidden metadata — author names, software used, revision history. Strip it all before sharing, entirely offline."
+      "type": "metadata_hero_features",
+      "title": "Why Strip PDF Metadata?",
+      "content": "PDFs carry hidden metadata — your name, your company, revision history. Strip it all before sharing publicly, entirely offline."
     },
     {
-      "type": "security_how_to_steps",
-      "title": "How to Strip PDF Metadata",
+      "type": "metadata_how_to_steps",
+      "title": "Before & After — How Metadata Removal Works",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF with metadata to remove."
+          "title": "Open Your PDF",
+          "description": "Select the PDF with hidden metadata to remove."
         },
         {
-          "title": "Review Metadata",
-          "description": "See what hidden data is embedded in the file."
+          "title": "Preview Hidden Data",
+          "description": "See exactly what metadata — author, GPS, history — is embedded."
         },
         {
-          "title": "Strip & Download",
-          "description": "Remove all metadata and download the clean PDF."
+          "title": "Strip & Download Clean PDF",
+          "description": "Remove all metadata instantly and save a clean, anonymous PDF."
         }
       ]
     },
     {
-      "type": "security_geo_targeting",
-      "title": "Metadata Stripping in Istanbul",
-      "content": "Journalists and privacy-conscious users in Istanbul strip metadata before publishing PDFs publicly."
+      "type": "metadata_geo_targeting",
+      "title": "Metadata Privacy Tool for Istanbul Professionals",
+      "content": "Journalists, legal professionals, and privacy-conscious users in Istanbul strip metadata before publishing or sharing PDFs externally."
     },
     {
-      "type": "security_privacy_security",
-      "title": "Full Metadata Erasure",
-      "content": "Author info, company names, GPS coordinates from images, and editing history are all permanently removed."
+      "type": "metadata_privacy_security",
+      "title": "All Metadata Types Permanently Erased",
+      "content": "Author name, company, GPS coordinates from embedded images, revision history, software fingerprints — all permanently removed."
     },
     {
-      "type": "security_performance",
-      "title": "Strip All Metadata in One Click",
-      "content": "Metadata removal takes milliseconds. Clean PDFs ready to share in seconds."
+      "type": "metadata_performance",
+      "title": "Strip Metadata in Milliseconds",
+      "content": "Metadata removal takes milliseconds and often reduces file size by 10–15%. All offline."
     }
   ],
   "faqs": [

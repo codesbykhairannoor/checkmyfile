@@ -1,17 +1,23 @@
 /**
  * SECTION COMPONENT REGISTRY
  * ─────────────────────────────────────────────────────────
- * HOW TO ADD A NEW TOOL LAYOUT:
- *   1. Create (or reuse) a group file in src/components/seo-sections/
- *   2. Add entry here: 'my_tool_section_type': MyComponent
- *   3. Done. SeoRichSections.tsx needs ZERO changes.
+ * ARCHITECTURE: Per-tool unique sections (NO shared group templates)
  *
- * GROUP THEMES:
- *   A (combiner_*)  — Blue/Indigo   — merge, word-to-pdf, excel-to-pdf, etc.
- *   B (split_*)     — Purple/Pink   — split, extract-images, pdf-to-image, etc.
- *   C (security_*)  — Green/Teal    — protect, unlock, redact, sign, etc.
- *   D (transform_*) — Orange/Amber  — compress, rotate, resize, watermark, etc.
- *   E (organizer_*) — Cyan/Blue     — page-numbers, ocr, organize, scan, etc.
+ * Each tool has its own unique prefix + 5 section components:
+ *   hero_features | how_to_steps | geo_targeting | privacy_security | performance
+ *
+ * To add a new tool:
+ *   1. Create src/components/seo-sections/tools/MyToolSections.tsx
+ *   2. Add 5 entries here with your_tool_* prefix
+ *   3. Use your_tool_* in the JSON section type field
+ *   4. Done — SeoRichSections.tsx needs ZERO changes.
+ *
+ * SHARED (legacy merge/compress only — strip prefix before lookup):
+ *   hero_features | how_to_steps | geo_targeting | privacy_security | performance
+ *
+ * PER-TOOL (each totally unique):
+ *   protect_*   unlock_*   redact_*   sign_*   metadata_*
+ *   split_*     combiner_* transform_* organizer_*
  * ─────────────────────────────────────────────────────────
  */
 import React from 'react';
@@ -37,11 +43,12 @@ import {
   CombinerPrivacySection, CombinerPerformanceSection,
 } from './GroupACombiner';
 
-// ── Group C — Security (Green/Teal) ──
-import {
-  SecurityHeroSection, SecurityHowToSection, SecurityGeoSection,
-  SecurityPrivacySection, SecurityPerformanceSection,
-} from './GroupCSecurity';
+// ── Security — PER-TOOL unique (each totally different design) ──
+import { ProtectHeroSection, ProtectHowToSection, ProtectGeoSection, ProtectPrivacySection, ProtectPerformanceSection } from './tools/ProtectPdfSections';
+import { UnlockHeroSection, UnlockHowToSection, UnlockGeoSection, UnlockPrivacySection, UnlockPerformanceSection } from './tools/UnlockPdfSections';
+import { RedactHeroSection, RedactHowToSection, RedactGeoSection, RedactPrivacySection, RedactPerformanceSection } from './tools/RedactPdfSections';
+import { SignHeroSection, SignHowToSection, SignGeoSection, SignPrivacySection, SignPerformanceSection } from './tools/SignPdfSections';
+import { MetadataHeroSection, MetadataHowToSection, MetadataGeoSection, MetadataPrivacySection, MetadataPerformanceSection } from './tools/RemoveMetadataSections';
 
 // ── Group D — Transformer (Orange/Amber) ──
 import {
@@ -79,12 +86,40 @@ export const SECTION_REGISTRY: Record<string, SectionComponent> = {
   combiner_privacy_security: CombinerPrivacySection,
   combiner_performance:      CombinerPerformanceSection,
 
-  // ── Group C — Security: protect-pdf, unlock-pdf, redact-pdf, sign-pdf ──
-  security_hero_features:    SecurityHeroSection,
-  security_how_to_steps:     SecurityHowToSection,
-  security_geo_targeting:    SecurityGeoSection,
-  security_privacy_security: SecurityPrivacySection,
-  security_performance:      SecurityPerformanceSection,
+  // ── Security — protect-pdf (Dark Green + Gold, Vault) ──
+  protect_hero_features:    ProtectHeroSection,
+  protect_how_to_steps:     ProtectHowToSection,
+  protect_geo_targeting:    ProtectGeoSection,
+  protect_privacy_security: ProtectPrivacySection,
+  protect_performance:      ProtectPerformanceSection,
+
+  // ── Security — unlock-pdf (Amber, Key/Open) ──
+  unlock_hero_features:    UnlockHeroSection,
+  unlock_how_to_steps:     UnlockHowToSection,
+  unlock_geo_targeting:    UnlockGeoSection,
+  unlock_privacy_security: UnlockPrivacySection,
+  unlock_performance:      UnlockPerformanceSection,
+
+  // ── Security — redact-pdf (Noir Black + Red, Classified) ──
+  redact_hero_features:    RedactHeroSection,
+  redact_how_to_steps:     RedactHowToSection,
+  redact_geo_targeting:    RedactGeoSection,
+  redact_privacy_security: RedactPrivacySection,
+  redact_performance:      RedactPerformanceSection,
+
+  // ── Security — sign-pdf (Deep Blue + Purple, Signature) ──
+  sign_hero_features:    SignHeroSection,
+  sign_how_to_steps:     SignHowToSection,
+  sign_geo_targeting:    SignGeoSection,
+  sign_privacy_security: SignPrivacySection,
+  sign_performance:      SignPerformanceSection,
+
+  // ── Security — remove-pdf-metadata (Slate + Cyan, Cleanse) ──
+  metadata_hero_features:    MetadataHeroSection,
+  metadata_how_to_steps:     MetadataHowToSection,
+  metadata_geo_targeting:    MetadataGeoSection,
+  metadata_privacy_security: MetadataPrivacySection,
+  metadata_performance:      MetadataPerformanceSection,
 
   // ── Group D — Transformer: rotate-pdf, resize-pdf, watermark-pdf, grayscale-pdf, reverse-pdf ──
   transform_hero_features:    TransformerHeroSection,

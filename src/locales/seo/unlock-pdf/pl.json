@@ -1,45 +1,45 @@
 {
   "title": "Unlock PDF — Remove Password Offline",
-  "h1": "Remove PDF Password Protection Instantly",
-  "description": "Unlock password-protected PDFs directly in your browser if you know the password. 100% private. Perfect for users in Warsaw.",
+  "h1": "Remove PDF Password Protection Instantly in Your Browser",
+  "description": "Unlock password-protected PDFs locally if you know the password. 100% private. No upload. Perfect for users in Warsaw.",
   "sections": [
     {
-      "type": "security_hero_features",
+      "type": "unlock_hero_features",
       "title": "Why Unlock PDFs Locally?",
-      "content": "You have the password to your own file. Unlocking it should not require uploading it to an external service."
+      "content": "You have the password to your own file. Unlocking it should not require uploading sensitive documents to an external service."
     },
     {
-      "type": "security_how_to_steps",
-      "title": "How to Unlock a PDF",
+      "type": "unlock_how_to_steps",
+      "title": "How to Unlock a Protected PDF",
       "steps": [
         {
-          "title": "Open PDF",
+          "title": "Open Protected PDF",
           "description": "Select the password-protected PDF."
         },
         {
-          "title": "Enter Password",
-          "description": "Provide the existing password to decrypt the file."
+          "title": "Enter Your Password",
+          "description": "Provide the existing password — decryption stays in your browser."
         },
         {
           "title": "Download Unlocked PDF",
-          "description": "Get your unlocked, unencrypted PDF ready to use."
+          "description": "Get your unlocked, fully accessible PDF instantly."
         }
       ]
     },
     {
-      "type": "security_geo_targeting",
-      "title": "PDF Unlocking in Warsaw",
-      "content": "Users in Warsaw trust our offline unlocking tool to access their own password-protected documents."
+      "type": "unlock_geo_targeting",
+      "title": "Instant PDF Unlocking for Warsaw Users",
+      "content": "Users in Warsaw access their own password-protected files without sending decryption keys to any server."
     },
     {
-      "type": "security_privacy_security",
-      "title": "Passwords Never Leave Your Browser",
-      "content": "Your decryption key and document are processed entirely in browser memory — never transmitted."
+      "type": "unlock_privacy_security",
+      "title": "Your Password Never Leaves the Browser",
+      "content": "The decryption key and your document are processed entirely in browser memory — never transmitted to any server or service."
     },
     {
-      "type": "security_performance",
-      "title": "Instant Decryption",
-      "content": "AES decryption in your browser takes milliseconds, far faster than any cloud service."
+      "type": "unlock_performance",
+      "title": "Instant Browser-Local Decryption",
+      "content": "AES decryption in your browser takes under a second — far faster than any cloud service with no upload wait."
     }
   ],
   "faqs": [

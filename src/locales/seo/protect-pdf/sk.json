@@ -1,15 +1,15 @@
 {
   "title": "Password Protect PDF — Secure Files Offline",
   "h1": "Add Password Protection to PDF Files Instantly",
-  "description": "Encrypt PDF files with a strong password directly in your browser. Your document never leaves your device. Ideal for users in Bratislava.",
+  "description": "Encrypt PDF files with AES-256 directly in your browser. Your document never leaves your device. Ideal for users in Bratislava.",
   "sections": [
     {
-      "type": "security_hero_features",
+      "type": "protect_hero_features",
       "title": "Why Protect PDFs Locally?",
-      "content": "Adding a password means the file is sensitive. Never upload sensitive files to a cloud encryptor. Use ours — it runs entirely offline."
+      "content": "Adding a password means the file is sensitive. Never upload sensitive files to a cloud encryptor. Ours runs entirely offline with AES-256 encryption."
     },
     {
-      "type": "security_how_to_steps",
+      "type": "protect_how_to_steps",
       "title": "How to Password Protect a PDF",
       "steps": [
         {
@@ -27,25 +27,25 @@
       ]
     },
     {
-      "type": "security_geo_targeting",
-      "title": "Secure PDFs for Bratislava Professionals",
-      "content": "Legal and finance professionals in Bratislava use our tool to password-protect sensitive documents offline."
+      "type": "protect_geo_targeting",
+      "title": "Vault-Level PDF Protection for Bratislava",
+      "content": "Legal and finance professionals in Bratislava encrypt documents with AES-256 strength without exposing files to any server."
     },
     {
-      "type": "security_privacy_security",
-      "title": "AES-256 Encryption Locally",
-      "content": "Bank-grade AES-256 encryption applied directly in your browser with zero server involvement."
+      "type": "protect_privacy_security",
+      "title": "AES-256 Encryption — Bank-Grade, Offline",
+      "content": "Military-grade AES-256 encryption runs in your browser. No key is ever transmitted to any server."
     },
     {
-      "type": "security_performance",
+      "type": "protect_performance",
       "title": "Encrypt Any PDF in Under 1 Second",
-      "content": "Applying AES-256 encryption locally takes milliseconds — no upload, no queue."
+      "content": "AES-256 processing locally takes milliseconds — no upload, no queue, no wait."
     }
   ],
   "faqs": [
     {
       "q": "What encryption standard is used?",
-      "a": "AES-256, the same standard used by banks."
+      "a": "AES-256, the same standard used by banks and governments."
     },
     {
       "q": "Can I set different owner and user passwords?",

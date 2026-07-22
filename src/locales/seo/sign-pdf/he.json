@@ -1,45 +1,45 @@
 {
-  "title": "Sign PDF Online — Add Signature Offline",
-  "h1": "Digitally Sign PDF Documents Without Uploading",
-  "description": "Draw, type, or upload your signature and apply it to PDF documents entirely in your browser. Great for users in Jerusalem.",
+  "title": "Sign PDF Online — Draw Signature Offline",
+  "h1": "Sign PDF Documents With Your Signature Without Uploading",
+  "description": "Draw, type, or upload your signature and place it on PDFs entirely in your browser. No cloud. Perfect for users in Jerusalem.",
   "sections": [
     {
-      "type": "security_hero_features",
+      "type": "sign_hero_features",
       "title": "Why Sign PDFs Locally?",
-      "content": "Your signature is your identity. Never upload your signature image or private document to a cloud signing service."
+      "content": "Your signature is your identity. Never upload your drawn signature or a private contract to a third-party cloud signing service."
     },
     {
-      "type": "security_how_to_steps",
-      "title": "How to Sign a PDF",
+      "type": "sign_how_to_steps",
+      "title": "How to Sign a PDF in 3 Steps",
       "steps": [
         {
-          "title": "Create Signature",
-          "description": "Draw, type, or upload your signature image."
+          "title": "Create Your Signature",
+          "description": "Draw with mouse, type in signature font, or upload an image."
         },
         {
           "title": "Place on Document",
-          "description": "Drag your signature to the right position on the page."
+          "description": "Drag and resize your signature to the correct position."
         },
         {
           "title": "Download Signed PDF",
-          "description": "Save your signed document immediately."
+          "description": "Save your signed document immediately, no account needed."
         }
       ]
     },
     {
-      "type": "security_geo_targeting",
-      "title": "Digital Signatures for Jerusalem Users",
-      "content": "Freelancers and businesses in Jerusalem sign contracts and agreements with full privacy using our offline tool."
+      "type": "sign_geo_targeting",
+      "title": "Private Digital Signatures for Jerusalem",
+      "content": "Freelancers and businesses in Jerusalem sign contracts, NDAs, and agreements without exposing their identity or documents to any cloud service."
     },
     {
-      "type": "security_privacy_security",
-      "title": "Your Signature Stays on Your Device",
-      "content": "Your drawn signature and the signed document are processed entirely in browser memory — never transmitted."
+      "type": "sign_privacy_security",
+      "title": "Your Signature Identity Stays Private",
+      "content": "Your drawn signature and signed document are processed entirely in browser memory — never stored, never transmitted."
     },
     {
-      "type": "security_performance",
-      "title": "Sign Documents in Under 30 Seconds",
-      "content": "No account creation, no cloud upload — just open, sign, and download in seconds."
+      "type": "sign_performance",
+      "title": "Sign Any Document in Under 30 Seconds",
+      "content": "No account, no upload, no cloud. Draw, place, and download your signed PDF in under 30 seconds."
     }
   ],
   "faqs": [
