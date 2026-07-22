@@ -114,65 +114,91 @@ export const comparePdf = async (
     const sorted1 = sortGeometrically(orig1);
     const sorted2 = sortGeometrically(orig2);
     
-    // Group items into words to handle both arbitrary PDF item splitting AND text wrapping/reflow
-    // This uses relative thresholds (based on font size) to detect word boundaries robustly.
-    const extractWords = (items: any[]) => {
-      const words: { word: string, items: Set<any> }[] = [];
+    // Group items into words and calculate precise bounding boxes for each word.
+    // This totally decouples highlighting from PDF.js's arbitrary TextItem chunks!
+    const extractWords = (items: any[], vp: any) => {
+      const [va, vb, vc, vd, ve, vf] = vp.transform;
+      const words: { word: string, box: any }[] = [];
       let currentWord = "";
-      let currentItems = new Set<any>();
+      let charBoxes: any[] = [];
+      
       let lastX = -1000, lastY = -1000, lastW = 0, lastH = 12;
       
       for (const item of items) {
-        const [a] = item.transform || [1, 0, 0, 1, 0, 0];
-        const ch = (item.transform && item.transform[3] ? Math.abs(item.transform[3]) : item.height) || lastH;
-        let cw = (item.width || 0) * Math.abs(a);
-        if (cw < item.str.length * 2) {
-           cw = item.str.length * ch * 0.5; // fallback width
-        }
+        const px = item.transform ? item.transform[4] : 0;
+        const py = item.transform ? item.transform[5] : 0;
         
-        const x = item.transform ? item.transform[4] : 0;
-        const y = item.transform ? item.transform[5] : 0;
+        const cx = va * px + vc * py + ve;
+        const cy = vb * px + vd * py + vf;
+        const ch = (item.transform && item.transform[3] ? Math.abs(item.transform[3]) : item.height || 12) * Math.abs(vd) || lastH;
+        
+        let cw = (item.width || 0) * Math.abs(va);
+        const str = item.str || '';
+        
+        if (cw < str.length * 2) {
+           cw = str.length * ch * 0.5; // fallback width
+        }
+        const avgCharWidth = str.length > 0 ? (cw / str.length) : 0;
         
         // If there's a physical space (different line or large gap), inject a word boundary
         if (currentWord.length > 0) {
-          const isDifferentLine = Math.abs(y - lastY) > ch * 0.5;
-          const isLargeGap = (x - (lastX + lastW)) > ch * 0.2;
+          const isDifferentLine = Math.abs(cy - lastY) > ch * 0.5;
+          const isLargeGap = (cx - (lastX + lastW)) > ch * 0.25;
           
           if (isDifferentLine || isLargeGap) {
              const clean = currentWord.replace(/[^a-z0-9]/gi, '').toLowerCase();
-             if (clean.length > 0) words.push({ word: clean, items: currentItems });
+             if (clean.length > 0 && charBoxes.length > 0) {
+                const wCx = charBoxes[0].cx;
+                const wCy = charBoxes[0].cy;
+                const wCw = (charBoxes[charBoxes.length - 1].cx + charBoxes[charBoxes.length - 1].cw) - wCx;
+                const wCh = Math.max(...charBoxes.map(b => b.ch));
+                words.push({ word: clean, box: { cx: wCx, cy: wCy, cw: wCw, ch: wCh } });
+             }
              currentWord = "";
-             currentItems = new Set<any>();
+             charBoxes = [];
           }
         }
         
-        const str = item.str || '';
         for (let i = 0; i < str.length; i++) {
           const char = str[i];
+          const charCx = cx + (i * avgCharWidth);
+          
           if (char.trim() === '') {
             const clean = currentWord.replace(/[^a-z0-9]/gi, '').toLowerCase();
-            if (clean.length > 0) words.push({ word: clean, items: currentItems });
+            if (clean.length > 0 && charBoxes.length > 0) {
+               const wCx = charBoxes[0].cx;
+               const wCy = charBoxes[0].cy;
+               const wCw = (charBoxes[charBoxes.length - 1].cx + charBoxes[charBoxes.length - 1].cw) - wCx;
+               const wCh = Math.max(...charBoxes.map(b => b.ch));
+               words.push({ word: clean, box: { cx: wCx, cy: wCy, cw: wCw, ch: wCh } });
+            }
             currentWord = "";
-            currentItems = new Set<any>();
+            charBoxes = [];
           } else {
             currentWord += char;
-            currentItems.add(item);
+            charBoxes.push({ cx: charCx, cy: cy, cw: avgCharWidth, ch: ch });
           }
         }
         
-        lastX = x;
-        lastY = y;
+        lastX = cx;
+        lastY = cy;
         lastW = cw;
         lastH = ch;
       }
       
       const clean = currentWord.replace(/[^a-z0-9]/gi, '').toLowerCase();
-      if (clean.length > 0) words.push({ word: clean, items: currentItems });
+      if (clean.length > 0 && charBoxes.length > 0) {
+         const wCx = charBoxes[0].cx;
+         const wCy = charBoxes[0].cy;
+         const wCw = (charBoxes[charBoxes.length - 1].cx + charBoxes[charBoxes.length - 1].cw) - wCx;
+         const wCh = Math.max(...charBoxes.map(b => b.ch));
+         words.push({ word: clean, box: { cx: wCx, cy: wCy, cw: wCw, ch: wCh } });
+      }
       return words;
     };
 
-    const words1 = extractWords(sorted1);
-    const words2 = extractWords(sorted2);
+    const words1 = extractWords(sorted1, viewport1);
+    const words2 = extractWords(sorted2, viewport2);
     
     let m = words1.length;
     let n = words2.length;
@@ -196,13 +222,13 @@ export const comparePdf = async (
       }
     }
     
-    const addedItems = new Set<any>();
+    const addedBoxes: any[] = [];
     let i_lcs = m, j_lcs = n;
     while (i_lcs > 0 || j_lcs > 0) {
       if (i_lcs > 0 && j_lcs > 0 && words1[i_lcs-1].word === words2[j_lcs-1].word) {
         i_lcs--; j_lcs--;
       } else if (j_lcs > 0 && (i_lcs === 0 || dp[i_lcs * (n + 1) + (j_lcs-1)] >= dp[(i_lcs-1) * (n + 1) + j_lcs])) {
-        words2[j_lcs-1].items.forEach((item: any) => addedItems.add(item));
+        addedBoxes.push(words2[j_lcs-1].box);
         j_lcs--;
       } else if (i_lcs > 0 && (j_lcs === 0 || dp[i_lcs * (n + 1) + (j_lcs-1)] < dp[(i_lcs-1) * (n + 1) + j_lcs])) {
         i_lcs--;
@@ -211,22 +237,14 @@ export const comparePdf = async (
     
     let numDiffPixels = 0;
 
-    // Draw semantic highlights for added/modified text
-    const drawHighlight = (item: any, vp: any, color: string) => {
-      const [a, b, c, d, e, f] = vp.transform;
-      const px = item.transform[4];
-      const py = item.transform[5];
-      const cx = a * px + c * py + e;
-      const cy = b * px + d * py + f;
-      const cw = item.width * Math.abs(a);
-      const ch = (item.transform[3] || item.height || 12) * Math.abs(d);
-      
+    // Draw semantic highlights for added/modified text using precise word boxes
+    const drawHighlight = (box: any, color: string) => {
       diffCtx.fillStyle = color;
-      diffCtx.fillRect(cx, cy - ch * 0.8, Math.max(cw, 5), ch * 1.2);
-      numDiffPixels += Math.max(cw, 5) * (ch * 1.2);
+      diffCtx.fillRect(box.cx, box.cy - box.ch * 0.8, Math.max(box.cw, 5), box.ch * 1.2);
+      numDiffPixels += Math.max(box.cw, 5) * (box.ch * 1.2);
     };
     
-    addedItems.forEach(item => drawHighlight(item, viewport2, 'rgba(239, 68, 68, 0.25)'));
+    addedBoxes.forEach(box => drawHighlight(box, 'rgba(239, 68, 68, 0.25)'));
 
     // --- MASKED PIXEL DIFF ENGINE (For Graphics/Images only) ---
     const cellSize = 8;
