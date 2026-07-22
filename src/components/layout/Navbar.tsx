@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { LocaleSwitcher } from './LocaleSwitcher';
-import { Sun, Moon, FileText, ChevronDown, ChevronUp, Grid, Combine, Scissors, Minimize2, FileSpreadsheet, LayoutList, Crop, ScanText, ScanLine, Eraser, Scale, EyeOff, RotateCw, Hash, Stamp, Presentation, AlignLeft, TableProperties, Image, Images, Trash2, PenTool, Lock, Unlock, Contrast, Maximize, ArrowDownUp } from 'lucide-react';
+import { Sun, Moon, FileText, ChevronDown, ChevronUp, Grid, Combine, Scissors, Minimize2, FileSpreadsheet, LayoutList, Crop, ScanText, ScanLine, Eraser, Scale, EyeOff, RotateCw, Hash, Stamp, Presentation, AlignLeft, TableProperties, Image, Images, Trash2, PenTool, Lock, Unlock, Contrast, Maximize, ArrowDownUp, Edit3 } from 'lucide-react';
 import { TOOLS_CATALOG, getToolById, type ToolDefinition } from '../../catalog/toolsCatalog';
 
 interface NavbarProps {
@@ -337,9 +337,16 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </div>
               </div>
 
-              {/* Column 2: Optimize & Spreadsheets (7 items) */}
+              {/* Column 2: Optimize & Spreadsheets (8 items) */}
               <div className="mega-menu-col">
                 <div className="mega-menu-title">⚡ OPTIMIZE & ENHANCE</div>
+                <div onClick={() => handleToolClick('edit-pdf')} className="mega-menu-item" style={{ background: 'rgba(59, 130, 246, 0.05)', border: '1px solid rgba(59, 130, 246, 0.2)' }}>
+                  <Edit3 size={18} className="text-brand-primary" />
+                  <div>
+                    <div className="item-title" style={{ color: 'var(--brand-primary)' }}>Edit PDF ✨</div>
+                    <div className="item-desc">Add text & images interactively</div>
+                  </div>
+                </div>
                 <div onClick={() => handleToolClick('compress-pdf')} className="mega-menu-item">
                   <Minimize2 size={18} />
                   <div>
