@@ -253,6 +253,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                 signatureConfig={tool.id === 'sign-pdf' ? signatureConfig : undefined}
                 cropConfig={tool.id === 'crop-pdf' ? cropConfig : undefined}
                 redactConfig={tool.id === 'redact-pdf' ? redactConfig : undefined}
+                resizeConfig={tool.id === 'resize-pdf' ? resizeConfig : undefined}
                 setRedactConfig={setRedactConfig}
                 onSignatureUpdate={(x, y, pageIndex) => setSignatureConfig(prev => prev ? ({ ...prev, x, y, ...(pageIndex !== undefined ? { pageIndex } : {}) }) : prev)}
               />

@@ -37,6 +37,7 @@ interface DocumentLivePreviewProps {
   cropConfig?: any;
   redactConfig?: any;
   setRedactConfig?: React.Dispatch<React.SetStateAction<any>>;
+  resizeConfig?: any;
   hideSidebar?: boolean;
 }
 
@@ -57,6 +58,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
   cropConfig,
   redactConfig,
   setRedactConfig,
+  resizeConfig,
   hideSidebar = false,
 }) => {
   const [pageNumber, setPageNumber] = useState<number>(1);
@@ -498,6 +500,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
               cropConfig={cropConfig}
               redactConfig={redactConfig}
               setRedactConfig={setRedactConfig}
+              resizeConfig={resizeConfig}
               previewRotate={fileRotations[activeFile.name] || 0}
               externalRotate={externalRotate}
               pixelWidth={pixelWidth}

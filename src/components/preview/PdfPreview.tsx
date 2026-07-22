@@ -169,11 +169,12 @@ interface PdfPreviewProps {
   pixelWidth: number;
   paperShadow: string;
   pageAspectRatio: number;
+  resizeConfig?: { pageSize: string; orientation: string; margin: number };
 }
 
 export const PdfPreview: React.FC<PdfPreviewProps> = ({
   pdfDoc, isLoadingPreview, watermarkConfig, pageNumberConfig, cropConfig, totalPages, containerWidth, containerHeight, splitRange, removeRange, signatureConfig, onSignatureUpdate, redactConfig, setRedactConfig, compressQuality,
-  previewRotate, externalRotate, pixelWidth, paperShadow, pageAspectRatio
+  previewRotate, externalRotate, pixelWidth, paperShadow, pageAspectRatio, resizeConfig
 }) => {
   if (isLoadingPreview || !pdfDoc) return null;
 
@@ -187,7 +188,14 @@ export const PdfPreview: React.FC<PdfPreviewProps> = ({
           <div 
             id={`pdf-page-${pageNum}`} 
             key={i} 
-            style={{ position: 'relative', width: pixelWidth ? `${pixelWidth}px` : '100%', cursor: onSignatureUpdate ? 'crosshair' : 'default' }}
+            style={{ 
+              position: 'relative', 
+              width: pixelWidth ? `${pixelWidth}px` : '100%', 
+              cursor: onSignatureUpdate ? 'crosshair' : 'default',
+              padding: resizeConfig?.margin ? `${resizeConfig.margin}px` : 0,
+              background: resizeConfig ? '#ffffff' : 'transparent',
+              boxShadow: resizeConfig ? paperShadow : 'none'
+            }}
             onClick={(e) => {
               if (onSignatureUpdate && signatureConfig && signatureConfig.pageIndex !== (pageNum - 1)) {
                 const rect = e.currentTarget.getBoundingClientRect();
@@ -202,8 +210,8 @@ export const PdfPreview: React.FC<PdfPreviewProps> = ({
               pageNum={pageNum}
               zoomScale={1.0}
               totalRotate={totalRotate}
-              wrapperWidth={pixelWidth || 600}
-              paperShadow={paperShadow}
+              wrapperWidth={pixelWidth ? (pixelWidth - (resizeConfig?.margin ? resizeConfig.margin * 2 : 0)) : 600}
+              paperShadow={resizeConfig ? 'none' : paperShadow}
               defaultRatio={pageAspectRatio}
             />
 
