@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Shield, Zap, Globe, Star, MapPin, CheckCircle, Clock, ServerOff } from 'lucide-react';
+import { Shield, Zap, Globe, Star, MapPin, CheckCircle, Clock, ServerOff, Scissors, Layers, FileDown, Lock, Monitor, ArrowRight } from 'lucide-react';
 
 interface SeoSectionData {
   type: string;
@@ -52,7 +52,7 @@ interface SeoRichSectionsProps {
 export const SeoRichSections: React.FC<SeoRichSectionsProps> = ({ data }) => {
   if (!data) return null;
 
-  const { sections, faqs, title, h1, description } = data;
+  const { sections, faqs, title, description } = data;
 
   const getHash = (str: string) => {
     let hash = 0;
@@ -88,7 +88,12 @@ export const SeoRichSections: React.FC<SeoRichSectionsProps> = ({ data }) => {
     const sectionHash = getHash(section.type);
     const flipLayout = (seed + sectionHash + index) % 2 !== 0;
 
-    switch (section.type) {
+    let type = section.type;
+    if (type.startsWith('merge_') || type.startsWith('comp_')) {
+      type = type.replace('merge_', '').replace('comp_', '');
+    }
+
+    switch (type) {
       case 'hero_features':
         return (
           <section key={index} className="seo-section hero-features" style={{ padding: '80px 24px', margin: '40px 0', borderBottom: '1px solid var(--border-color)' }}>
@@ -101,8 +106,13 @@ export const SeoRichSections: React.FC<SeoRichSectionsProps> = ({ data }) => {
                 <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>{section.content}</p>
               </div>
               <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}>
-                <div style={{ width: '100%', aspectRatio: '4/3', background: 'linear-gradient(135deg, var(--bg-card), var(--bg-main))', borderRadius: 24, border: '1px solid var(--border-color)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 20px 40px rgba(0,0,0,0.05)' }}>
-                  <Shield size={100} style={{ color: '#6366f1', opacity: 0.8 }} />
+                <div style={{ width: '100%', aspectRatio: '16/9', background: 'var(--bg-card)', borderRadius: 24, border: '1px solid var(--border-color)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
+                  {/* Decorative placeholder for UI mockup */}
+                  <div style={{ width: '80%', height: '60%', background: 'var(--bg-main)', borderRadius: 12, border: '1px dashed var(--border-color)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <div style={{ width: 48, height: 48, borderRadius: '50%', background: 'rgba(99, 102, 241, 0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                      <div style={{ width: 24, height: 24, borderRadius: '50%', background: '#6366f1' }}></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -123,6 +133,95 @@ export const SeoRichSections: React.FC<SeoRichSectionsProps> = ({ data }) => {
                   <p style={{ fontSize: '1.05rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>{step.description}</p>
                 </div>
               ))}
+            </div>
+          </section>
+        );
+
+      // --- TOTALLY DISTINCT DESIGNS FOR SPLIT-PDF ---
+      case 'split_hero_features':
+        return (
+          <section key={index} className="seo-section split-hero" style={{ padding: '100px 24px', margin: '60px 0', background: 'radial-gradient(circle at center, rgba(168, 85, 247, 0.1) 0%, transparent 70%)', borderRadius: 40 }}>
+            <div style={{ maxWidth: 900, margin: '0 auto', textAlign: 'center' }}>
+              <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 80, height: 80, borderRadius: '50%', background: 'linear-gradient(135deg, #a855f7, #6366f1)', color: 'white', marginBottom: 32, boxShadow: '0 10px 30px rgba(168, 85, 247, 0.4)' }}>
+                <Scissors size={40} />
+              </div>
+              <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: 900, marginBottom: 24, color: 'var(--text-main)', letterSpacing: '-0.03em' }}>{section.title}</h2>
+              <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', lineHeight: 1.8, maxWidth: 700, margin: '0 auto' }}>{section.content}</p>
+            </div>
+          </section>
+        );
+
+      case 'split_how_to_steps':
+        return (
+          <section key={index} className="seo-section split-how-to" style={{ padding: '60px 24px', margin: '40px 0' }}>
+            <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 800, textAlign: 'left', marginBottom: 40, color: 'var(--text-main)', paddingBottom: 16, borderBottom: '2px solid var(--border-color)' }}>{section.title}</h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 32, maxWidth: 800 }}>
+              {section.steps?.map((step, i) => (
+                <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 24, padding: 32, background: 'var(--bg-card)', borderRadius: 24, border: '1px solid var(--border-color)', transition: 'transform 0.2s', cursor: 'default' }}>
+                  <div style={{ width: 64, height: 64, borderRadius: 16, background: 'rgba(168, 85, 247, 0.1)', color: '#a855f7', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, fontSize: '1.5rem', fontWeight: 900 }}>
+                    {i === 0 ? <Layers size={32} /> : i === 1 ? <Scissors size={32} /> : <FileDown size={32} />}
+                  </div>
+                  <div>
+                    <h3 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: 12, color: 'var(--text-main)' }}>{step.title}</h3>
+                    <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>{step.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        );
+
+      case 'split_geo_targeting':
+        return (
+          <section key={index} className="seo-section split-geo" style={{ padding: '80px 24px', margin: '40px 0', background: 'var(--bg-main)' }}>
+            <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', flexDirection: flipLayout ? 'row-reverse' : 'row', alignItems: 'stretch', gap: 0, borderRadius: 32, overflow: 'hidden', border: '1px solid var(--border-color)' }}>
+              <div style={{ flex: '1 1 50%', padding: '60px 40px', background: 'var(--bg-card)', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                <div style={{ display: 'inline-flex', padding: '8px 16px', background: 'var(--bg-main)', border: '1px solid var(--border-color)', borderRadius: 100, fontSize: '0.9rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: 24, alignSelf: 'flex-start' }}>Local Processing Node</div>
+                <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 800, marginBottom: 24, color: 'var(--text-main)', lineHeight: 1.2 }}>{section.title}</h2>
+                <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>{section.content}</p>
+              </div>
+              <div style={{ flex: '1 1 50%', minHeight: 300, background: 'linear-gradient(45deg, #a855f7, #ec4899)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 40, position: 'relative' }}>
+                <MapPin size={80} color="white" style={{ filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.2))' }} />
+              </div>
+            </div>
+          </section>
+        );
+
+      case 'split_privacy_security':
+        return (
+          <section key={index} className="seo-section split-privacy" style={{ padding: '80px 24px', margin: '60px 0', background: '#111827', borderRadius: 32, color: 'white', position: 'relative', overflow: 'hidden' }}>
+            <div style={{ position: 'absolute', top: -50, right: -50, width: 300, height: 300, background: 'rgba(59, 130, 246, 0.2)', filter: 'blur(100px)', borderRadius: '50%' }}></div>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', maxWidth: 800, margin: '0 auto', position: 'relative', zIndex: 1 }}>
+              <Lock size={64} color="#60a5fa" style={{ marginBottom: 32 }} />
+              <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 800, marginBottom: 24, color: 'white' }}>{section.title}</h2>
+              <p style={{ fontSize: '1.25rem', color: '#9ca3af', lineHeight: 1.8, marginBottom: 40 }}>{section.content}</p>
+              <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap', justifyContent: 'center' }}>
+                <div style={{ padding: '12px 24px', background: 'rgba(255,255,255,0.1)', borderRadius: 100, backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.2)', fontWeight: 600 }}>No External API Calls</div>
+                <div style={{ padding: '12px 24px', background: 'rgba(255,255,255,0.1)', borderRadius: 100, backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.2)', fontWeight: 600 }}>Memory-Only Execution</div>
+              </div>
+            </div>
+          </section>
+        );
+
+      case 'split_performance':
+        return (
+          <section key={index} className="seo-section split-performance" style={{ padding: '60px 0', margin: '40px 0', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 40, maxWidth: 1000, margin: '0 auto' }}>
+              <div style={{ flex: '1 1 400px' }}>
+                <Monitor size={48} color="#ec4899" style={{ marginBottom: 24 }} />
+                <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 800, marginBottom: 24, color: 'var(--text-main)', lineHeight: 1.2 }}>{section.title}</h2>
+                <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>{section.content}</p>
+              </div>
+              <div style={{ flex: '1 1 300px', display: 'flex', flexDirection: 'column', gap: 20 }}>
+                <div style={{ padding: 24, background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: 24, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                  <span style={{ fontWeight: 700, fontSize: '1.1rem', color: 'var(--text-main)' }}>Browser Speed</span>
+                  <ArrowRight size={24} color="#ec4899" />
+                </div>
+                <div style={{ padding: 24, background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: 24, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                  <span style={{ fontWeight: 700, fontSize: '1.1rem', color: 'var(--text-main)' }}>WASM Compilation</span>
+                  <ArrowRight size={24} color="#a855f7" />
+                </div>
+              </div>
             </div>
           </section>
         );

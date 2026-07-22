@@ -4,12 +4,12 @@
   "description": "Kompres file PDF berukuran besar hingga 90% menjadi sangat ringan menggunakan teknik memori lokal. Sangat cocok untuk pengguna di Jakarta.",
   "sections": [
     {
-      "type": "hero_features",
+      "type": "comp_hero_features",
       "title": "Mengapa Mengecilkan PDF Offline?",
       "content": "PDF besar susah dikirim via email. Kompresor kami mengecilkan ukuran tanpa membuat gambar buram, langsung dari browser."
     },
     {
-      "type": "how_to_steps",
+      "type": "comp_how_to_steps",
       "title": "Cara Mengecilkan File PDF",
       "steps": [
         {
@@ -27,17 +27,17 @@
       ]
     },
     {
-      "type": "geo_targeting",
+      "type": "comp_geo_targeting",
       "title": "Optimalisasi Kompresi di Jakarta, ID-JK",
       "content": "Koneksi lambat di Jakarta? Kompres file Anda secara lokal agar lebih cepat dikirim."
     },
     {
-      "type": "privacy_security",
+      "type": "comp_privacy_security",
       "title": "Kompresi Lokal yang Aman",
       "content": "Mengecilkan laporan keuangan? Algoritma kami bekerja 100% offline, menjaga data Anda tetap rahasia."
     },
     {
-      "type": "performance",
+      "type": "comp_performance",
       "title": "Mengecilkan Secepat Kilat",
       "content": "Mengompresi file 50MB secara lokal menghemat waktu Anda dari mengunggah 50MB ke internet."
     }

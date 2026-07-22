@@ -1,0 +1,67 @@
+{
+  "title": "Dividir PDF - Extraer Páginas Localmente",
+  "h1": "Divide y Extrae Páginas PDF en Segundos",
+  "description": "Extrae páginas específicas o divide un PDF grande en varios archivos localmente. Ideal para usuarios en Madrid.",
+  "sections": [
+    {
+      "type": "split_hero_features",
+      "title": "¿Por qué Dividir PDF Offline?",
+      "content": "Al tratar con documentos enormes, extraer una sola página no debería requerir subir un archivo de 1GB. Hazlo al instante en tu equipo."
+    },
+    {
+      "type": "split_how_to_steps",
+      "title": "Cómo Extraer Páginas",
+      "steps": [
+        {
+          "title": "Abre el Documento",
+          "description": "Carga el PDF de varias páginas que deseas dividir."
+        },
+        {
+          "title": "Selecciona Rangos",
+          "description": "Elige números de página específicos o selecciónalos visualmente."
+        },
+        {
+          "title": "Exportar Zip",
+          "description": "Descarga tus archivos recién divididos organizados en un ZIP."
+        }
+      ]
+    },
+    {
+      "type": "split_geo_targeting",
+      "title": "El Mejor Divisor en Madrid, ES-M",
+      "content": "Ya sea que estudies en Madrid o trabajes, extraer páginas es ahora instantáneo."
+    },
+    {
+      "type": "split_privacy_security",
+      "title": "Privacidad Total de Páginas",
+      "content": "¿Dividiendo registros confidenciales? Nuestro código se ejecuta puramente en tu entorno local."
+    },
+    {
+      "type": "split_performance",
+      "title": "Extracción sin Subida",
+      "content": "Tomar la página 14 de un PDF de 2000 páginas lleva milisegundos, omitiendo la subida."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "¿Cómo extraigo solo una página?",
+      "a": "Simplemente haz clic en la miniatura de la página y pulsa Exportar."
+    },
+    {
+      "q": "¿Puedo dividir el PDF a la mitad?",
+      "a": "Sí, especificando rangos personalizados como 1-10 y 11-20."
+    },
+    {
+      "q": "¿Perderán calidad las páginas?",
+      "a": "No, el proceso conserva el 100% de la calidad original."
+    },
+    {
+      "q": "¿Se sube mi documento al dividirlo?",
+      "a": "Nunca. El documento entero se queda en tu navegador."
+    },
+    {
+      "q": "¿Hay límite de páginas?",
+      "a": "¡Sin límites! Divide tantas páginas como aguante tu computadora."
+    }
+  ]
+}

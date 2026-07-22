@@ -4,12 +4,12 @@
   "description": "Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, perfect for users in Copenhagen.",
   "sections": [
     {
-      "type": "hero_features",
+      "type": "merge_hero_features",
       "title": "Why Merge PDF Offline?",
       "content": "Instead of uploading sensitive documents to a server, our Merge PDF tool stitches your pages together directly in your browser. Complete privacy."
     },
     {
-      "type": "how_to_steps",
+      "type": "merge_how_to_steps",
       "title": "How to Merge PDF Files",
       "steps": [
         {
@@ -27,17 +27,17 @@
       ]
     },
     {
-      "type": "geo_targeting",
+      "type": "merge_geo_targeting",
       "title": "Seamless Merging for users in Copenhagen, DK-84",
       "content": "No matter if you are in Copenhagen or traveling, combining documents takes zero milliseconds of upload time."
     },
     {
-      "type": "privacy_security",
+      "type": "merge_privacy_security",
       "title": "Enterprise-Grade Document Combining",
       "content": "Merging contracts and invoices? Do it securely with our WASM engine. No traces left behind."
     },
     {
-      "type": "performance",
+      "type": "merge_performance",
       "title": "Instant Combination",
       "content": "Stitching PDFs locally means you can merge a 500-page document faster than you can upload it."
     }

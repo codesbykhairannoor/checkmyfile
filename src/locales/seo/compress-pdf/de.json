@@ -4,12 +4,12 @@
   "description": "Shrink large PDF files up to 90% using adaptive lossless techniques directly in WebAssembly. Perfect for users in Berlin.",
   "sections": [
     {
-      "type": "hero_features",
+      "type": "comp_hero_features",
       "title": "Why Compress PDF Offline?",
       "content": "Large PDFs are a pain to email. Our compressor reduces file size drastically without blurring images, all from your browser."
     },
     {
-      "type": "how_to_steps",
+      "type": "comp_how_to_steps",
       "title": "How to Shrink PDF Files",
       "steps": [
         {
@@ -27,17 +27,17 @@
       ]
     },
     {
-      "type": "geo_targeting",
+      "type": "comp_geo_targeting",
       "title": "Optimized PDF Shrinking in Berlin, DE-BE",
       "content": "Working on a slow connection in Berlin? Compress your files locally so you can email them faster."
     },
     {
-      "type": "privacy_security",
+      "type": "comp_privacy_security",
       "title": "Secure Local Compression",
       "content": "Compressing sensitive financial reports? Our algorithm works completely offline, keeping your data safe."
     },
     {
-      "type": "performance",
+      "type": "comp_performance",
       "title": "Lightning Fast Shrink",
       "content": "Compressing a 50MB file locally saves you the time of uploading 50MB and downloading 5MB back."
     }

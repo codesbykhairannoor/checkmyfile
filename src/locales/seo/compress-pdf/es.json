@@ -4,12 +4,12 @@
   "description": "Reduce el tamaño de archivos PDF grandes hasta un 90% usando técnicas locales. Perfecto para usuarios en Madrid.",
   "sections": [
     {
-      "type": "hero_features",
+      "type": "comp_hero_features",
       "title": "¿Por qué Comprimir Offline?",
       "content": "Los PDF pesados son difíciles de enviar. Nuestro compresor reduce drásticamente el tamaño sin difuminar, todo en tu navegador."
     },
     {
-      "type": "how_to_steps",
+      "type": "comp_how_to_steps",
       "title": "Cómo Reducir Archivos PDF",
       "steps": [
         {
@@ -27,17 +27,17 @@
       ]
     },
     {
-      "type": "geo_targeting",
+      "type": "comp_geo_targeting",
       "title": "Compresión Optimizada en Madrid, ES-M",
       "content": "¿Conexión lenta en Madrid? Comprime localmente para enviar tus correos más rápido."
     },
     {
-      "type": "privacy_security",
+      "type": "comp_privacy_security",
       "title": "Compresión Segura y Local",
       "content": "¿Informes financieros? Comprime con total privacidad ya que el archivo nunca sale de tu PC."
     },
     {
-      "type": "performance",
+      "type": "comp_performance",
       "title": "Reducción Ultrarrápida",
       "content": "Comprimir un archivo grande localmente ahorra todo el tiempo de subida a la red."
     }

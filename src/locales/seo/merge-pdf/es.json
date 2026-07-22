@@ -4,12 +4,12 @@
   "description": "Combina múltiples archivos PDF en un solo documento de forma 100% local. Perfecto para usuarios en Madrid.",
   "sections": [
     {
-      "type": "hero_features",
+      "type": "merge_hero_features",
       "title": "¿Por qué Unir PDF Offline?",
       "content": "Nuestra herramienta combina tus documentos directamente en tu dispositivo sin subir nada a la nube. Privacidad total garantizada."
     },
     {
-      "type": "how_to_steps",
+      "type": "merge_how_to_steps",
       "title": "Cómo Unir Archivos PDF",
       "steps": [
         {
@@ -27,17 +27,17 @@
       ]
     },
     {
-      "type": "geo_targeting",
+      "type": "merge_geo_targeting",
       "title": "Combinación Rápida en Madrid, ES-M",
       "content": "Desde Madrid, unir tus documentos no requiere tiempo de carga gracias a nuestra tecnología WebAssembly."
     },
     {
-      "type": "privacy_security",
+      "type": "merge_privacy_security",
       "title": "Unión Segura para Empresas",
       "content": "Uniendo contratos o facturas sensibles? Hazlo de forma segura sin dejar rastro."
     },
     {
-      "type": "performance",
+      "type": "merge_performance",
       "title": "Combinación Instantánea",
       "content": "Combinar localmente significa que unes archivos más rápido de lo que tardas en subirlos."
     }

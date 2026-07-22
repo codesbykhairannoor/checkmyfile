@@ -1,0 +1,67 @@
+{
+  "title": "Split PDF - Extract Pages Securely",
+  "h1": "Split and Extract PDF Pages in Seconds",
+  "description": "Extract specific pages or split a large PDF into multiple files locally in your browser. Perfect for legal professionals in New York.",
+  "sections": [
+    {
+      "type": "split_hero_features",
+      "title": "Why Split PDFs Locally?",
+      "content": "When dealing with massive legal or corporate documents, extracting a single page shouldn't require uploading a 1GB file. Do it instantly right on your machine."
+    },
+    {
+      "type": "split_how_to_steps",
+      "title": "How to Extract Pages",
+      "steps": [
+        {
+          "title": "Open Document",
+          "description": "Load the multi-page PDF you want to split."
+        },
+        {
+          "title": "Select Ranges",
+          "description": "Pick specific page numbers or visually select pages to extract."
+        },
+        {
+          "title": "Export Zip",
+          "description": "Download your newly split files organized in a ZIP."
+        }
+      ]
+    },
+    {
+      "type": "split_geo_targeting",
+      "title": "The Best Splitter in New York, US-NY",
+      "content": "Whether you are studying in New York or working on a tight deadline, extracting pages is now instantaneous."
+    },
+    {
+      "type": "split_privacy_security",
+      "title": "Total Page Privacy",
+      "content": "Splitting confidential employee records? Rest easy knowing our code executes purely in your local environment."
+    },
+    {
+      "type": "split_performance",
+      "title": "Zero-Upload Extraction",
+      "content": "Grabbing page 14 from a 2000-page PDF takes milliseconds, skipping the excruciating upload step entirely."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I extract just one page?",
+      "a": "Simply click on the page thumbnail you want and hit Export."
+    },
+    {
+      "q": "Can I split the PDF in half?",
+      "a": "Yes, you can specify custom page ranges like 1-10 and 11-20."
+    },
+    {
+      "q": "Will the extracted pages lose quality?",
+      "a": "No, the splitting process uses binary extraction, preserving 100% of the original quality."
+    },
+    {
+      "q": "Is my document uploaded when splitting?",
+      "a": "Never. The entire 2000-page document stays strictly in your browser."
+    },
+    {
+      "q": "Is there a limit to how many pages I can split?",
+      "a": "No limits! Split as many pages as your computer can handle."
+    }
+  ]
+}

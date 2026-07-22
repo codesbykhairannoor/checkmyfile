@@ -4,12 +4,12 @@
   "description": "Satukan beberapa file PDF menjadi satu dokumen berurutan dengan teknologi WebAssembly lokal. Sangat cocok untuk pengguna di Jakarta.",
   "sections": [
     {
-      "type": "hero_features",
+      "type": "merge_hero_features",
       "title": "Mengapa Menggabungkan PDF Offline?",
       "content": "Daripada mengunggah dokumen penting ke server, alat Gabung PDF kami menyatukan halaman Anda langsung di browser. 100% Privat."
     },
     {
-      "type": "how_to_steps",
+      "type": "merge_how_to_steps",
       "title": "Cara Menggabungkan File PDF",
       "steps": [
         {
@@ -27,17 +27,17 @@
       ]
     },
     {
-      "type": "geo_targeting",
+      "type": "merge_geo_targeting",
       "title": "Penggabungan Praktis di Jakarta, ID-JK",
       "content": "Di mana pun Anda berada di Jakarta, menyatukan dokumen tidak butuh waktu unggah sama sekali."
     },
     {
-      "type": "privacy_security",
+      "type": "merge_privacy_security",
       "title": "Penggabungan Dokumen Tingkat Perusahaan",
       "content": "Menggabungkan kontrak atau faktur? Lakukan dengan aman berkat mesin WASM kami."
     },
     {
-      "type": "performance",
+      "type": "merge_performance",
       "title": "Penggabungan Instan",
       "content": "Menyatukan PDF secara lokal berarti Anda dapat menggabungkan ratusan halaman lebih cepat dari waktu unggah internet."
     }
