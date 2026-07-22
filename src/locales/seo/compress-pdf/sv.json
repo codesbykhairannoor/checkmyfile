@@ -5,63 +5,63 @@
   "sections": [
     {
       "type": "hero_features",
-      "title": "Why use our tool?",
-      "content": "Experience the fastest and most secure way to process your files directly in your browser using WebAssembly. No data leaves your device."
+      "title": "Why Compress PDF Offline?",
+      "content": "Large PDFs are a pain to email. Our compressor reduces file size drastically without blurring images, all from your browser."
     },
     {
       "type": "how_to_steps",
-      "title": "How it Works",
+      "title": "How to Shrink PDF Files",
       "steps": [
         {
-          "title": "Select Files",
-          "description": "Drag and drop or select files from your device."
+          "title": "Upload Large File",
+          "description": "Select the hefty PDF you want to shrink."
         },
         {
-          "title": "Process Locally",
-          "description": "Your device CPU processes the file securely without internet uploads."
+          "title": "Select Quality",
+          "description": "Choose between high quality or maximum compression."
         },
         {
-          "title": "Download Instantly",
-          "description": "Save the output directly to your local storage."
+          "title": "Download Tiny PDF",
+          "description": "Get your compressed file instantly, ready to share."
         }
       ]
     },
     {
       "type": "geo_targeting",
-      "title": "Optimized for users in Stockholm, SE-AB",
-      "content": "Whether you are working from a cafe in Stockholm or an office, our offline-first architecture ensures your data remains secure and lightning fast."
+      "title": "Optimized PDF Shrinking in Stockholm, SE-AB",
+      "content": "Working on a slow connection in Stockholm? Compress your files locally so you can email them faster."
     },
     {
       "type": "privacy_security",
-      "title": "Absolute Privacy & WASM Security",
-      "content": "Compliant with enterprise legal privacy requirements (GDPR/HIPAA). No server storage, no data logging."
+      "title": "Secure Local Compression",
+      "content": "Compressing sensitive financial reports? Our algorithm works completely offline, keeping your data safe."
     },
     {
       "type": "performance",
-      "title": "Unmatched Speed",
-      "content": "Since files are never uploaded to a cloud server, processing time is reduced by 90% compared to traditional cloud aggregators."
+      "title": "Lightning Fast Shrink",
+      "content": "Compressing a 50MB file locally saves you the time of uploading 50MB and downloading 5MB back."
     }
   ],
   "faqs": [
     {
-      "q": "Is this tool completely free?",
-      "a": "Yes! Our tool is 100% free with no daily usage caps, file size limits, or registration required."
+      "q": "Will compressing my PDF make it blurry?",
+      "a": "No, our tool uses adaptive compression to maintain readability while reducing size."
     },
     {
-      "q": "Are my private documents uploaded to remote cloud servers?",
-      "a": "No. All file processing is executed 100% locally in your browser memory using WebAssembly."
+      "q": "Are my files sent to a server to be compressed?",
+      "a": "No, the compression algorithm runs directly in your browser memory."
     },
     {
-      "q": "Will the original formatting and quality be preserved?",
-      "a": "Yes, our low-level binary manipulation engines ensure that vector elements, fonts, and image fidelity remain intact and pixel-perfect."
+      "q": "What is the maximum file size I can compress?",
+      "a": "Your browser memory is the only limit! You can compress massive files easily."
     },
     {
-      "q": "Is there a maximum file size limit?",
-      "a": "Since the processing happens directly on your device CPU and memory, there are no artificial file size limits. You can process large files as long as your device has enough RAM."
+      "q": "Is this compression tool free?",
+      "a": "Absolutely free with no usage limits or premium paywalls."
     },
     {
-      "q": "Can I use this tool offline without an internet connection?",
-      "a": "Yes! Once you load the page, the entire WebAssembly engine is cached. You can disconnect from the internet and continue editing files securely."
+      "q": "Can I compress multiple files at once?",
+      "a": "Batch compression is supported on modern browsers."
     }
   ]
 }

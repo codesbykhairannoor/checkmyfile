@@ -1,67 +1,67 @@
 {
-  "title": "Merge PDF - Zero Upload Client-Side Tool",
+  "title": "Merge PDF - Combine Documents Offline",
   "h1": "Merge PDF Files Instantly in Your Browser",
-  "description": "Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, 100% privacy guaranteed, zero limits. Perfect for users in Bangkok.",
+  "description": "Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, perfect for users in Bangkok.",
   "sections": [
     {
       "type": "hero_features",
-      "title": "Why use our tool?",
-      "content": "Experience the fastest and most secure way to process your files directly in your browser using WebAssembly. No data leaves your device."
+      "title": "Why Merge PDF Offline?",
+      "content": "Instead of uploading sensitive documents to a server, our Merge PDF tool stitches your pages together directly in your browser. Complete privacy."
     },
     {
       "type": "how_to_steps",
-      "title": "How it Works",
+      "title": "How to Merge PDF Files",
       "steps": [
         {
-          "title": "Select Files",
-          "description": "Drag and drop or select files from your device."
+          "title": "Add Documents",
+          "description": "Select the PDFs you want to merge together."
         },
         {
-          "title": "Process Locally",
-          "description": "Your device CPU processes the file securely without internet uploads."
+          "title": "Reorder Pages",
+          "description": "Drag and drop files to get the perfect sequence."
         },
         {
-          "title": "Download Instantly",
-          "description": "Save the output directly to your local storage."
+          "title": "Merge & Save",
+          "description": "Click merge and download your combined document instantly."
         }
       ]
     },
     {
       "type": "geo_targeting",
-      "title": "Optimized for users in Bangkok, TH-10",
-      "content": "Whether you are working from a cafe in Bangkok or an office, our offline-first architecture ensures your data remains secure and lightning fast."
+      "title": "Seamless Merging for users in Bangkok, TH-10",
+      "content": "No matter if you are in Bangkok or traveling, combining documents takes zero milliseconds of upload time."
     },
     {
       "type": "privacy_security",
-      "title": "Absolute Privacy & WASM Security",
-      "content": "Compliant with enterprise legal privacy requirements (GDPR/HIPAA). No server storage, no data logging."
+      "title": "Enterprise-Grade Document Combining",
+      "content": "Merging contracts and invoices? Do it securely with our WASM engine. No traces left behind."
     },
     {
       "type": "performance",
-      "title": "Unmatched Speed",
-      "content": "Since files are never uploaded to a cloud server, processing time is reduced by 90% compared to traditional cloud aggregators."
+      "title": "Instant Combination",
+      "content": "Stitching PDFs locally means you can merge a 500-page document faster than you can upload it."
     }
   ],
   "faqs": [
     {
-      "q": "Is this tool completely free?",
-      "a": "Yes! Our tool is 100% free with no daily usage caps, file size limits, or registration required."
+      "q": "Is merging PDFs completely free?",
+      "a": "Yes! Merge as many files as you want without paying a cent."
     },
     {
-      "q": "Are my private documents uploaded to remote cloud servers?",
-      "a": "No. All file processing is executed 100% locally in your browser memory using WebAssembly."
+      "q": "Are my merged files uploaded?",
+      "a": "No, all merging happens offline in your browser."
     },
     {
-      "q": "Will the original formatting and quality be preserved?",
-      "a": "Yes, our low-level binary manipulation engines ensure that vector elements, fonts, and image fidelity remain intact and pixel-perfect."
+      "q": "Can I reorder the files before merging?",
+      "a": "Yes, just drag and drop the files in the preview window."
     },
     {
-      "q": "Is there a maximum file size limit?",
-      "a": "Since the processing happens directly on your device CPU and memory, there are no artificial file size limits. You can process large files as long as your device has enough RAM."
+      "q": "Is there a limit on how many files I can merge?",
+      "a": "No artificial limits! Merge 10 or 100 files depending on your RAM."
     },
     {
-      "q": "Can I use this tool offline without an internet connection?",
-      "a": "Yes! Once you load the page, the entire WebAssembly engine is cached. You can disconnect from the internet and continue editing files securely."
+      "q": "Does merging ruin the formatting?",
+      "a": "Not at all. The original layers and vector data are perfectly stitched together."
     }
   ]
 }

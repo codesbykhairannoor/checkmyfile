@@ -1,67 +1,67 @@
 {
-  "title": "Unir PDF - Herramienta Local Sin Subidas",
+  "title": "Unir PDF - Combinar Documentos Offline",
   "h1": "Une Archivos PDF al Instante en tu Navegador",
-  "description": "Combina múltiples archivos PDF en un solo documento usando WebAssembly. Sin subidas de archivos, privacidad 100% garantizada. Perfecto para usuarios en Madrid.",
+  "description": "Combina múltiples archivos PDF en un solo documento de forma 100% local. Perfecto para usuarios en Madrid.",
   "sections": [
     {
       "type": "hero_features",
-      "title": "¿Por qué usar nuestra herramienta?",
-      "content": "Experimenta la forma más rápida y segura de procesar tus archivos directamente en tu navegador. Ningún dato sale de tu dispositivo."
+      "title": "¿Por qué Unir PDF Offline?",
+      "content": "Nuestra herramienta combina tus documentos directamente en tu dispositivo sin subir nada a la nube. Privacidad total garantizada."
     },
     {
       "type": "how_to_steps",
-      "title": "Cómo Funciona",
+      "title": "Cómo Unir Archivos PDF",
       "steps": [
         {
-          "title": "Seleccionar Archivos",
-          "description": "Arrastra y suelta o selecciona archivos de tu dispositivo."
+          "title": "Añadir Documentos",
+          "description": "Selecciona los PDF que deseas unir."
         },
         {
-          "title": "Procesar Localmente",
-          "description": "La CPU de tu dispositivo procesa el archivo de forma segura sin subirlo a internet."
+          "title": "Reordenar",
+          "description": "Arrastra y suelta para organizar el orden perfecto."
         },
         {
-          "title": "Descargar al Instante",
-          "description": "Guarda el resultado directamente en tu almacenamiento local."
+          "title": "Unir y Descargar",
+          "description": "Haz clic y descarga tu nuevo documento al instante."
         }
       ]
     },
     {
       "type": "geo_targeting",
-      "title": "Optimizado para usuarios en Madrid, ES-M",
-      "content": "Ya sea que trabajes desde una cafetería en Madrid o en una oficina, nuestra arquitectura garantiza que tus datos permanezcan seguros."
+      "title": "Combinación Rápida en Madrid, ES-M",
+      "content": "Desde Madrid, unir tus documentos no requiere tiempo de carga gracias a nuestra tecnología WebAssembly."
     },
     {
       "type": "privacy_security",
-      "title": "Privacidad Absoluta y Seguridad WASM",
-      "content": "Cumple con los requisitos legales de privacidad empresarial (GDPR/HIPAA). Sin almacenamiento en servidor, sin registro de datos."
+      "title": "Unión Segura para Empresas",
+      "content": "Uniendo contratos o facturas sensibles? Hazlo de forma segura sin dejar rastro."
     },
     {
       "type": "performance",
-      "title": "Velocidad Inigualable",
-      "content": "Como los archivos nunca se suben a la nube, el tiempo de procesamiento se reduce en un 90% en comparación con la nube tradicional."
+      "title": "Combinación Instantánea",
+      "content": "Combinar localmente significa que unes archivos más rápido de lo que tardas en subirlos."
     }
   ],
   "faqs": [
     {
-      "q": "¿Esta herramienta es completamente gratuita?",
-      "a": "¡Sí! Nuestra herramienta es 100% gratuita sin límites de uso diario, límites de tamaño ni registros."
+      "q": "¿Unir PDFs es gratis?",
+      "a": "¡Sí! Puedes unir todos los archivos que quieras gratis."
     },
     {
-      "q": "¿Mis documentos privados se suben a la nube?",
-      "a": "No. Todo el procesamiento se ejecuta 100% localmente en tu navegador usando WebAssembly."
+      "q": "¿Se suben mis archivos?",
+      "a": "No, todo sucede offline en tu navegador."
     },
     {
-      "q": "¿Se conservará el formato y la calidad original?",
-      "a": "Sí, nuestros motores de manipulación binaria garantizan que los elementos vectoriales, las fuentes y la fidelidad de la imagen se mantengan intactos."
+      "q": "¿Puedo cambiar el orden?",
+      "a": "Sí, simplemente arrastrando y soltando los archivos."
     },
     {
-      "q": "¿Hay un límite máximo de tamaño de archivo?",
-      "a": "Como el procesamiento se realiza en tu dispositivo, no hay límites de tamaño artificiales. Puedes procesar archivos grandes siempre que tengas suficiente RAM."
+      "q": "¿Hay un límite de archivos?",
+      "a": "¡No! Puedes unir decenas de archivos según la capacidad de tu dispositivo."
     },
     {
-      "q": "¿Puedo usar esta herramienta sin conexión a internet?",
-      "a": "¡Sí! Una vez que cargas la página, el motor se almacena en caché. Puedes desconectarte de internet y continuar procesando archivos."
+      "q": "¿Se pierde calidad al unir?",
+      "a": "En absoluto. Todos los datos originales se mantienen intactos."
     }
   ]
 }

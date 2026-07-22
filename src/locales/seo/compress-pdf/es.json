@@ -1,67 +1,67 @@
 {
   "title": "Comprimir PDF Online - Reducir Tamaño",
   "h1": "Comprime Documentos PDF sin Perder Calidad",
-  "description": "Reduce el tamaño de archivos PDF grandes hasta un 90% usando técnicas locales en WebAssembly. Perfecto para usuarios en Madrid.",
+  "description": "Reduce el tamaño de archivos PDF grandes hasta un 90% usando técnicas locales. Perfecto para usuarios en Madrid.",
   "sections": [
     {
       "type": "hero_features",
-      "title": "¿Por qué usar nuestra herramienta?",
-      "content": "Experimenta la forma más rápida y segura de procesar tus archivos directamente en tu navegador. Ningún dato sale de tu dispositivo."
+      "title": "¿Por qué Comprimir Offline?",
+      "content": "Los PDF pesados son difíciles de enviar. Nuestro compresor reduce drásticamente el tamaño sin difuminar, todo en tu navegador."
     },
     {
       "type": "how_to_steps",
-      "title": "Cómo Funciona",
+      "title": "Cómo Reducir Archivos PDF",
       "steps": [
         {
-          "title": "Seleccionar Archivos",
-          "description": "Arrastra y suelta o selecciona archivos de tu dispositivo."
+          "title": "Sube un Archivo Pesado",
+          "description": "Selecciona el PDF que quieres comprimir."
         },
         {
-          "title": "Procesar Localmente",
-          "description": "La CPU de tu dispositivo procesa el archivo de forma segura sin subirlo a internet."
+          "title": "Elige la Calidad",
+          "description": "Selecciona el nivel de compresión deseado."
         },
         {
-          "title": "Descargar al Instante",
-          "description": "Guarda el resultado directamente en tu almacenamiento local."
+          "title": "Descarga al Instante",
+          "description": "Obtén tu PDF ligero listo para enviar."
         }
       ]
     },
     {
       "type": "geo_targeting",
-      "title": "Optimizado para usuarios en Madrid, ES-M",
-      "content": "Ya sea que trabajes desde una cafetería en Madrid o en una oficina, nuestra arquitectura garantiza que tus datos permanezcan seguros."
+      "title": "Compresión Optimizada en Madrid, ES-M",
+      "content": "¿Conexión lenta en Madrid? Comprime localmente para enviar tus correos más rápido."
     },
     {
       "type": "privacy_security",
-      "title": "Privacidad Absoluta y Seguridad WASM",
-      "content": "Cumple con los requisitos legales de privacidad empresarial (GDPR/HIPAA). Sin almacenamiento en servidor, sin registro de datos."
+      "title": "Compresión Segura y Local",
+      "content": "¿Informes financieros? Comprime con total privacidad ya que el archivo nunca sale de tu PC."
     },
     {
       "type": "performance",
-      "title": "Velocidad Inigualable",
-      "content": "Como los archivos nunca se suben a la nube, el tiempo de procesamiento se reduce en un 90% en comparación con la nube tradicional."
+      "title": "Reducción Ultrarrápida",
+      "content": "Comprimir un archivo grande localmente ahorra todo el tiempo de subida a la red."
     }
   ],
   "faqs": [
     {
-      "q": "¿Esta herramienta es completamente gratuita?",
-      "a": "¡Sí! Nuestra herramienta es 100% gratuita sin límites de uso diario, límites de tamaño ni registros."
+      "q": "¿Se verá borroso mi PDF?",
+      "a": "No, usamos compresión adaptativa para reducir el tamaño sin perder legibilidad."
     },
     {
-      "q": "¿Mis documentos privados se suben a la nube?",
-      "a": "No. Todo el procesamiento se ejecuta 100% localmente en tu navegador usando WebAssembly."
+      "q": "¿Los archivos van a un servidor?",
+      "a": "No, todo el proceso de compresión ocurre en tu propio ordenador."
     },
     {
-      "q": "¿Se conservará el formato y la calidad original?",
-      "a": "Sí, nuestros motores de manipulación binaria garantizan que los elementos vectoriales, las fuentes y la fidelidad de la imagen se mantengan intactos."
+      "q": "¿Cuál es el límite de tamaño?",
+      "a": "No hay límite, puedes comprimir cualquier archivo."
     },
     {
-      "q": "¿Hay un límite máximo de tamaño de archivo?",
-      "a": "Como el procesamiento se realiza en tu dispositivo, no hay límites de tamaño artificiales. Puedes procesar archivos grandes siempre que tengas suficiente RAM."
+      "q": "¿Es completamente gratis?",
+      "a": "Totalmente gratis y sin marcas de agua escondidas."
     },
     {
-      "q": "¿Puedo usar esta herramienta sin conexión a internet?",
-      "a": "¡Sí! Una vez que cargas la página, el motor se almacena en caché. Puedes desconectarte de internet y continuar procesando archivos."
+      "q": "¿Puedo comprimir varios?",
+      "a": "Sí, puedes seleccionar múltiples archivos a la vez."
     }
   ]
 }

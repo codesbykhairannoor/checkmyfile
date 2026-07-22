@@ -5,63 +5,63 @@
   "sections": [
     {
       "type": "hero_features",
-      "title": "Mengapa menggunakan alat kami?",
-      "content": "Rasakan cara tercepat dan paling aman untuk memproses file Anda langsung di browser menggunakan WebAssembly. Tidak ada data yang keluar dari perangkat Anda."
+      "title": "Mengapa Mengecilkan PDF Offline?",
+      "content": "PDF besar susah dikirim via email. Kompresor kami mengecilkan ukuran tanpa membuat gambar buram, langsung dari browser."
     },
     {
       "type": "how_to_steps",
-      "title": "Cara Kerja",
+      "title": "Cara Mengecilkan File PDF",
       "steps": [
         {
-          "title": "Pilih File",
-          "description": "Seret dan lepas atau pilih file dari perangkat Anda."
+          "title": "Pilih File Besar",
+          "description": "Pilih PDF berat yang ingin Anda kecilkan ukurannya."
         },
         {
-          "title": "Proses Lokal",
-          "description": "CPU perangkat Anda memproses file dengan aman tanpa mengunggah ke internet."
+          "title": "Pilih Kualitas",
+          "description": "Pilih antara kualitas tinggi atau kompresi maksimal."
         },
         {
-          "title": "Unduh Instan",
-          "description": "Simpan hasilnya langsung ke penyimpanan lokal Anda."
+          "title": "Unduh File Kecil",
+          "description": "Dapatkan file terkompresi Anda secara instan."
         }
       ]
     },
     {
       "type": "geo_targeting",
-      "title": "Dioptimalkan untuk pengguna di Jakarta, ID-JK",
-      "content": "Baik Anda bekerja dari kafe di Jakarta maupun di kantor, arsitektur offline-first kami memastikan data Anda tetap aman dan secepat kilat."
+      "title": "Optimalisasi Kompresi di Jakarta, ID-JK",
+      "content": "Koneksi lambat di Jakarta? Kompres file Anda secara lokal agar lebih cepat dikirim."
     },
     {
       "type": "privacy_security",
-      "title": "Privasi Mutlak & Keamanan WASM",
-      "content": "Mematuhi persyaratan privasi hukum perusahaan (GDPR/HIPAA). Tidak ada penyimpanan server, tidak ada pencatatan data."
+      "title": "Kompresi Lokal yang Aman",
+      "content": "Mengecilkan laporan keuangan? Algoritma kami bekerja 100% offline, menjaga data Anda tetap rahasia."
     },
     {
       "type": "performance",
-      "title": "Kecepatan Tak Tertandingi",
-      "content": "Karena file tidak pernah diunggah ke server cloud, waktu pemrosesan berkurang hingga 90% dibandingkan dengan agregator cloud tradisional."
+      "title": "Mengecilkan Secepat Kilat",
+      "content": "Mengompresi file 50MB secara lokal menghemat waktu Anda dari mengunggah 50MB ke internet."
     }
   ],
   "faqs": [
     {
-      "q": "Apakah alat ini sepenuhnya gratis?",
-      "a": "Ya! Alat kami 100% gratis tanpa batasan penggunaan harian, batasan ukuran file, atau pendaftaran."
+      "q": "Apakah PDF saya jadi buram?",
+      "a": "Tidak, alat kami menggunakan kompresi adaptif untuk menjaga kualitas agar tetap terbaca."
     },
     {
-      "q": "Apakah dokumen pribadi saya diunggah ke server cloud?",
-      "a": "Tidak. Semua pemrosesan file dieksekusi 100% secara lokal di memori browser Anda menggunakan WebAssembly."
+      "q": "Apakah file saya dikirim ke server?",
+      "a": "Tidak, algoritma kompresi berjalan langsung di memori browser Anda."
     },
     {
-      "q": "Apakah format dan kualitas asli akan dipertahankan?",
-      "a": "Ya, mesin manipulasi biner tingkat rendah kami memastikan elemen vektor, font, dan ketajaman gambar tetap utuh dan sempurna."
+      "q": "Berapa ukuran file maksimal?",
+      "a": "Tidak ada! Anda bisa mengompres file sebesar apa pun selama memori perangkat kuat."
     },
     {
-      "q": "Apakah ada batasan ukuran file maksimal?",
-      "a": "Karena pemrosesan terjadi langsung di CPU dan memori perangkat Anda, tidak ada batasan ukuran file buatan. Anda dapat memproses file besar selama perangkat Anda memiliki cukup RAM."
+      "q": "Apakah kompresi ini gratis?",
+      "a": "Sepenuhnya gratis tanpa batasan tersembunyi."
     },
     {
-      "q": "Bisakah saya menggunakan alat ini secara offline tanpa koneksi internet?",
-      "a": "Ya! Setelah Anda memuat halaman ini, seluruh mesin WebAssembly di-cache. Anda dapat memutuskan koneksi internet dan terus mengedit file dengan aman."
+      "q": "Bisa kompres banyak file sekaligus?",
+      "a": "Ya, kompresi massal (batch) didukung penuh."
     }
   ]
 }
