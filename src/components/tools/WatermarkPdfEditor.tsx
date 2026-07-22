@@ -94,10 +94,10 @@ export const WatermarkPdfEditor: React.FC<WatermarkPdfEditorProps> = ({
         </div>
       )}
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16 }}>
         {/* Color (Only for Text) */}
         {config.type === 'text' && (
-          <div>
+          <div style={{ flex: '1 1 calc(50% - 16px)', minWidth: 120 }}>
             <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'block', marginBottom: 8 }}>Warna</label>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, background: 'var(--bg-input)', border: '1px solid var(--border-color)', padding: '6px 12px', borderRadius: 12 }}>
               <input
@@ -112,7 +112,7 @@ export const WatermarkPdfEditor: React.FC<WatermarkPdfEditorProps> = ({
         )}
 
         {/* Opacity */}
-        <div>
+        <div style={{ flex: '1 1 calc(50% - 16px)', minWidth: 120 }}>
           <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'block', marginBottom: 8 }}>
             Transparansi ({(config.opacity * 100).toFixed(0)}%)
           </label>
@@ -128,9 +128,9 @@ export const WatermarkPdfEditor: React.FC<WatermarkPdfEditorProps> = ({
         </div>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16 }}>
         {/* Scale */}
-        <div>
+        <div style={{ flex: '1 1 calc(50% - 16px)', minWidth: 120 }}>
           <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'block', marginBottom: 8 }}>
             Ukuran ({(config.scale * 100).toFixed(0)}%)
           </label>
@@ -146,7 +146,7 @@ export const WatermarkPdfEditor: React.FC<WatermarkPdfEditorProps> = ({
         </div>
 
         {/* Rotation */}
-        <div>
+        <div style={{ flex: '1 1 calc(50% - 16px)', minWidth: 120 }}>
           <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'block', marginBottom: 8 }}>
             Rotasi ({config.rotation}°)
           </label>

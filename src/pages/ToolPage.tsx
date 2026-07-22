@@ -347,7 +347,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
         <div style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
           {tool.id === 'compare-pdf' ? (
             <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0, gap: 24, alignItems: 'center' }}>
-              <div style={{ display: 'flex', flex: 1, width: '100%', minHeight: 0, maxHeight: 800, gap: 24, overflow: 'hidden', justifyContent: 'center' }}>
+              <div className="mobile-col" style={{ display: 'flex', flex: 1, width: '100%', minHeight: 0, maxHeight: 800, gap: 24, overflow: 'hidden', justifyContent: 'center' }}>
                 
                 {/* DOKUMEN ASLI PANEL */}
                 <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', position: 'relative', maxWidth: 800 }}>
@@ -373,7 +373,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                   </div>
                   
                   {/* FLOATING ACTION PILL */}
-                  <div style={{ position: 'absolute', bottom: 24, left: '50%', transform: 'translateX(-50%)', zIndex: 20, background: 'rgba(255,255,255,0.95)', backdropFilter: 'blur(10px)', padding: '12px 24px', borderRadius: 100, boxShadow: '0 8px 32px rgba(0,0,0,0.15)', display: 'flex', alignItems: 'center', gap: 24, border: '1px solid rgba(0,0,0,0.05)', whiteSpace: 'nowrap' }}>
+                  <div style={{ position: 'absolute', bottom: 24, left: '50%', transform: 'translateX(-50%)', zIndex: 20, background: 'rgba(255,255,255,0.95)', backdropFilter: 'blur(10px)', padding: '12px 24px', borderRadius: 100, boxShadow: '0 8px 32px rgba(0,0,0,0.15)', display: 'flex', alignItems: 'center', gap: 24, border: '1px solid rgba(0,0,0,0.05)', whiteSpace: 'normal', width: 'max-content', maxWidth: '90%' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
                       <div style={{ fontSize: '1.6rem', fontWeight: 900, color: processorMetadata?.accuracy && processorMetadata.accuracy > 95 ? '#10b981' : '#f59e0b', lineHeight: 1 }}>
                         {processorMetadata?.accuracy?.toFixed(1) || '0'}%

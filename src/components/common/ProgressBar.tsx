@@ -124,13 +124,13 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
             }}
           />
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8, marginTop: 4 }}>
-            <button onClick={handleDownloadClick} className="btn-primary" style={{ background: '#10b981', padding: '10px', fontSize: '0.9rem', justifyContent: 'center' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 4 }}>
+            <button onClick={handleDownloadClick} className="btn-primary" style={{ flex: '1 1 min-content', background: '#10b981', padding: '10px', fontSize: '0.9rem', justifyContent: 'center', whiteSpace: 'nowrap' }}>
               <Download size={16} />
               <span>{downloadLabel || t.downloadBtn}</span>
             </button>
 
-            <button onClick={onReset} className="btn-secondary" style={{ padding: '10px', fontSize: '0.9rem', justifyContent: 'center' }}>
+            <button onClick={onReset} className="btn-secondary" style={{ flex: '1 1 min-content', padding: '10px', fontSize: '0.9rem', justifyContent: 'center', whiteSpace: 'nowrap' }}>
               <RefreshCw size={16} />
               <span>{t.resetBtn}</span>
             </button>

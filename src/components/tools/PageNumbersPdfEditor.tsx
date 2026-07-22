@@ -32,10 +32,11 @@ export const PageNumbersPdfEditor: React.FC<PageNumbersPdfEditorProps> = ({
         <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'block', marginBottom: 12 }}>
           Pilih Posisi Angka
         </label>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
           <button
             onClick={() => setConfig({ ...config, position: 'top-center' })}
             style={{ 
+              flex: '1 1 calc(50% - 10px)',
               display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, padding: '12px 0', 
               background: config.position === 'top-center' ? 'var(--brand-gradient)' : 'var(--bg-input)', 
               border: config.position === 'top-center' ? 'none' : '1px solid var(--border-color)', 
@@ -50,6 +51,7 @@ export const PageNumbersPdfEditor: React.FC<PageNumbersPdfEditorProps> = ({
           <button
             onClick={() => setConfig({ ...config, position: 'top-right' })}
             style={{ 
+              flex: '1 1 calc(50% - 10px)',
               display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, padding: '12px 0', 
               background: config.position === 'top-right' ? 'var(--brand-gradient)' : 'var(--bg-input)', 
               border: config.position === 'top-right' ? 'none' : '1px solid var(--border-color)', 
@@ -64,6 +66,7 @@ export const PageNumbersPdfEditor: React.FC<PageNumbersPdfEditorProps> = ({
           <button
             onClick={() => setConfig({ ...config, position: 'bottom-center' })}
             style={{ 
+              flex: '1 1 calc(50% - 10px)',
               display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, padding: '12px 0', 
               background: config.position === 'bottom-center' ? 'var(--brand-gradient)' : 'var(--bg-input)', 
               border: config.position === 'bottom-center' ? 'none' : '1px solid var(--border-color)', 
@@ -78,6 +81,7 @@ export const PageNumbersPdfEditor: React.FC<PageNumbersPdfEditorProps> = ({
           <button
             onClick={() => setConfig({ ...config, position: 'bottom-right' })}
             style={{ 
+              flex: '1 1 calc(50% - 10px)',
               display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, padding: '12px 0', 
               background: config.position === 'bottom-right' ? 'var(--brand-gradient)' : 'var(--bg-input)', 
               border: config.position === 'bottom-right' ? 'none' : '1px solid var(--border-color)', 
