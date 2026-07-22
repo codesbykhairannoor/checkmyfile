@@ -1,0 +1,67 @@
+{
+  "title": "PDF to PowerPoint — Recover Editable Slides",
+  "h1": "Convert PDF to PowerPoint Presentation Offline",
+  "description": "Transform PDF documents back into editable .pptx presentations locally. No cloud needed. Perfect for users in Seoul.",
+  "sections": [
+    {
+      "type": "split_hero_features",
+      "title": "Why Convert PDF to PowerPoint Offline?",
+      "content": "Recovering slide content from a PDF for editing should not require uploading sensitive decks to a cloud service."
+    },
+    {
+      "type": "split_how_to_steps",
+      "title": "How to Convert PDF to PowerPoint",
+      "steps": [
+        {
+          "title": "Upload PDF",
+          "description": "Select the PDF containing your slide content."
+        },
+        {
+          "title": "Map Pages to Slides",
+          "description": "Each PDF page becomes one editable slide."
+        },
+        {
+          "title": "Download .pptx",
+          "description": "Get your fully editable PowerPoint presentation."
+        }
+      ]
+    },
+    {
+      "type": "split_geo_targeting",
+      "title": "Slide Recovery in Seoul",
+      "content": "Presenters in Seoul use our tool to recover and re-edit presentations from old PDF archives."
+    },
+    {
+      "type": "split_privacy_security",
+      "title": "Your Slides Are Never Exposed",
+      "content": "Confidential slide decks recovered and converted without any server interaction."
+    },
+    {
+      "type": "split_performance",
+      "title": "Convert Slides at Lightning Speed",
+      "content": "A 60-slide PDF converted to PowerPoint in under 10 seconds with zero upload time."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Are slide layouts preserved?",
+      "a": "Content is mapped to slides; some layout adjustments may be needed."
+    },
+    {
+      "q": "Can I edit the slides after?",
+      "a": "Yes, the .pptx file is fully editable in PowerPoint or Google Slides."
+    },
+    {
+      "q": "Is there a page limit?",
+      "a": "No, convert as many pages as your RAM allows."
+    },
+    {
+      "q": "Does it work with image-heavy PDFs?",
+      "a": "Yes, images are embedded in each slide."
+    },
+    {
+      "q": "Is this free?",
+      "a": "예, 완전 무료입니다."
+    }
+  ]
+}

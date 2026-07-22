@@ -1,0 +1,67 @@
+{
+  "title": "Unlock PDF — Remove Password Offline",
+  "h1": "Remove PDF Password Protection Instantly",
+  "description": "Unlock password-protected PDFs directly in your browser if you know the password. 100% private. Perfect for users in New York.",
+  "sections": [
+    {
+      "type": "security_hero_features",
+      "title": "Why Unlock PDFs Locally?",
+      "content": "You have the password to your own file. Unlocking it should not require uploading it to an external service."
+    },
+    {
+      "type": "security_how_to_steps",
+      "title": "How to Unlock a PDF",
+      "steps": [
+        {
+          "title": "Open PDF",
+          "description": "Select the password-protected PDF."
+        },
+        {
+          "title": "Enter Password",
+          "description": "Provide the existing password to decrypt the file."
+        },
+        {
+          "title": "Download Unlocked PDF",
+          "description": "Get your unlocked, unencrypted PDF ready to use."
+        }
+      ]
+    },
+    {
+      "type": "security_geo_targeting",
+      "title": "PDF Unlocking in New York",
+      "content": "Users in New York trust our offline unlocking tool to access their own password-protected documents."
+    },
+    {
+      "type": "security_privacy_security",
+      "title": "Passwords Never Leave Your Browser",
+      "content": "Your decryption key and document are processed entirely in browser memory — never transmitted."
+    },
+    {
+      "type": "security_performance",
+      "title": "Instant Decryption",
+      "content": "AES decryption in your browser takes milliseconds, far faster than any cloud service."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does it work without the password?",
+      "a": "No, you must know the existing password to unlock."
+    },
+    {
+      "q": "Can I unlock permissions-restricted PDFs?",
+      "a": "Yes, permission restrictions are removed after password verification."
+    },
+    {
+      "q": "Is the decryption process secure?",
+      "a": "All decryption happens in your browser memory; nothing is transmitted."
+    },
+    {
+      "q": "What if the password is wrong?",
+      "a": "You will see an error and can try again with the correct password."
+    },
+    {
+      "q": "Is this free?",
+      "a": "Yes, completely free."
+    }
+  ]
+}

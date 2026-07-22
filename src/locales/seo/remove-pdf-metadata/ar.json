@@ -1,0 +1,67 @@
+{
+  "title": "Remove PDF Metadata — Strip Hidden Data Offline",
+  "h1": "Strip Hidden Metadata from PDF Files Instantly",
+  "description": "Remove author names, creation dates, and tracking data from PDFs entirely in your browser. No upload. Perfect for users in Riyadh.",
+  "sections": [
+    {
+      "type": "security_hero_features",
+      "title": "Why Remove PDF Metadata?",
+      "content": "PDFs carry hidden metadata — author names, software used, revision history. Strip it all before sharing, entirely offline."
+    },
+    {
+      "type": "security_how_to_steps",
+      "title": "How to Strip PDF Metadata",
+      "steps": [
+        {
+          "title": "Open PDF",
+          "description": "Select the PDF with metadata to remove."
+        },
+        {
+          "title": "Review Metadata",
+          "description": "See what hidden data is embedded in the file."
+        },
+        {
+          "title": "Strip & Download",
+          "description": "Remove all metadata and download the clean PDF."
+        }
+      ]
+    },
+    {
+      "type": "security_geo_targeting",
+      "title": "Metadata Stripping in Riyadh",
+      "content": "Journalists and privacy-conscious users in Riyadh strip metadata before publishing PDFs publicly."
+    },
+    {
+      "type": "security_privacy_security",
+      "title": "Full Metadata Erasure",
+      "content": "Author info, company names, GPS coordinates from images, and editing history are all permanently removed."
+    },
+    {
+      "type": "security_performance",
+      "title": "Strip All Metadata in One Click",
+      "content": "Metadata removal takes milliseconds. Clean PDFs ready to share in seconds."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What metadata is removed?",
+      "a": "Author, creator, producer, title, keywords, and all XMP/EXIF data."
+    },
+    {
+      "q": "Are document bookmarks affected?",
+      "a": "No, bookmarks and structure are preserved; only metadata is removed."
+    },
+    {
+      "q": "Can I preview the metadata first?",
+      "a": "Yes, we show a list of all detected metadata before removing."
+    },
+    {
+      "q": "Is the document content affected?",
+      "a": "No, the content, images, and structure remain intact."
+    },
+    {
+      "q": "Is this free?",
+      "a": "نعم، مجاناً تماماً."
+    }
+  ]
+}

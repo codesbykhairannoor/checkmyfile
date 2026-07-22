@@ -1,0 +1,67 @@
+{
+  "title": "Sign PDF Online — Add Signature Offline",
+  "h1": "Digitally Sign PDF Documents Without Uploading",
+  "description": "Draw, type, or upload your signature and apply it to PDF documents entirely in your browser. Great for users in Amsterdam.",
+  "sections": [
+    {
+      "type": "security_hero_features",
+      "title": "Why Sign PDFs Locally?",
+      "content": "Your signature is your identity. Never upload your signature image or private document to a cloud signing service."
+    },
+    {
+      "type": "security_how_to_steps",
+      "title": "How to Sign a PDF",
+      "steps": [
+        {
+          "title": "Create Signature",
+          "description": "Draw, type, or upload your signature image."
+        },
+        {
+          "title": "Place on Document",
+          "description": "Drag your signature to the right position on the page."
+        },
+        {
+          "title": "Download Signed PDF",
+          "description": "Save your signed document immediately."
+        }
+      ]
+    },
+    {
+      "type": "security_geo_targeting",
+      "title": "Digital Signatures for Amsterdam Users",
+      "content": "Freelancers and businesses in Amsterdam sign contracts and agreements with full privacy using our offline tool."
+    },
+    {
+      "type": "security_privacy_security",
+      "title": "Your Signature Stays on Your Device",
+      "content": "Your drawn signature and the signed document are processed entirely in browser memory — never transmitted."
+    },
+    {
+      "type": "security_performance",
+      "title": "Sign Documents in Under 30 Seconds",
+      "content": "No account creation, no cloud upload — just open, sign, and download in seconds."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How can I create my signature?",
+      "a": "Draw with your mouse, type your name in a signature font, or upload an image."
+    },
+    {
+      "q": "Can I sign multiple pages?",
+      "a": "Yes, place your signature on any or all pages."
+    },
+    {
+      "q": "Is the signature legally binding?",
+      "a": "Our tool applies a visual signature. For legally binding e-signatures, check your jurisdiction."
+    },
+    {
+      "q": "Can I resize the signature?",
+      "a": "Yes, drag the corners to resize it after placing."
+    },
+    {
+      "q": "Is this free?",
+      "a": "Ja, volledig gratis."
+    }
+  ]
+}

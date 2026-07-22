@@ -1,0 +1,67 @@
+{
+  "title": "Redact PDF — Permanently Hide Sensitive Text",
+  "h1": "Permanently Redact Sensitive Information in PDFs",
+  "description": "Black out or blur sensitive text and images in PDFs, entirely offline. No cloud risk. Essential for users in Rome.",
+  "sections": [
+    {
+      "type": "security_hero_features",
+      "title": "Why Redact PDFs Locally?",
+      "content": "Redaction means the content is sensitive. Uploading a document to redact it defeats the entire purpose. Ours works 100% in-browser."
+    },
+    {
+      "type": "security_how_to_steps",
+      "title": "How to Redact a PDF",
+      "steps": [
+        {
+          "title": "Open Document",
+          "description": "Load the PDF containing sensitive data."
+        },
+        {
+          "title": "Mark Redaction Areas",
+          "description": "Draw boxes over content to permanently hide."
+        },
+        {
+          "title": "Apply & Download",
+          "description": "Content is permanently removed and saved."
+        }
+      ]
+    },
+    {
+      "type": "security_geo_targeting",
+      "title": "Redaction Tools for Rome Law Firms",
+      "content": "Legal professionals in Rome use our offline redaction tool to prepare court documents safely."
+    },
+    {
+      "type": "security_privacy_security",
+      "title": "True Permanent Redaction",
+      "content": "Unlike \"hiding\" content with black boxes in other tools, our redaction permanently removes data from the PDF structure."
+    },
+    {
+      "type": "security_performance",
+      "title": "Redact Any Document Instantly",
+      "content": "Apply hundreds of redactions to a large document in seconds, entirely offline."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is the redaction permanent?",
+      "a": "Yes, the underlying text and image data is permanently removed from the PDF."
+    },
+    {
+      "q": "Can I redact images too?",
+      "a": "Yes, both text regions and image areas can be redacted."
+    },
+    {
+      "q": "Can I choose black or white cover?",
+      "a": "Yes, pick the redaction style that suits your document."
+    },
+    {
+      "q": "Does this meet legal standards?",
+      "a": "Our redaction removes data at the PDF object level, meeting court requirements."
+    },
+    {
+      "q": "Is this free?",
+      "a": "Sì, completamente gratuito."
+    }
+  ]
+}

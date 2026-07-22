@@ -1,0 +1,67 @@
+{
+  "title": "PDF to Image Converter — Extract Pages Offline",
+  "h1": "Convert PDF Pages to PNG or JPG Images",
+  "description": "Extract every page from a PDF as high-quality images directly in your browser. Zero upload, total privacy. Best for users in Paris.",
+  "sections": [
+    {
+      "type": "split_hero_features",
+      "title": "Why Extract PDF Pages Offline?",
+      "content": "PDFs often contain confidential diagrams, blueprints, or reports. Extract pages as images without any server access."
+    },
+    {
+      "type": "split_how_to_steps",
+      "title": "How to Convert PDF to Images",
+      "steps": [
+        {
+          "title": "Load PDF",
+          "description": "Select the PDF you want to extract images from."
+        },
+        {
+          "title": "Choose Format",
+          "description": "Pick PNG (lossless) or JPG (compressed) output."
+        },
+        {
+          "title": "Download Images",
+          "description": "Get all pages as individual image files in a ZIP."
+        }
+      ]
+    },
+    {
+      "type": "split_geo_targeting",
+      "title": "PDF to Image for Paris Designers",
+      "content": "Designers in Paris extract PDF pages as images for presentations and social media without cloud uploads."
+    },
+    {
+      "type": "split_privacy_security",
+      "title": "Confidential Diagrams Stay Private",
+      "content": "Technical blueprints and legal documents extracted as images without any data leaving your device."
+    },
+    {
+      "type": "split_performance",
+      "title": "Extract All Pages Instantly",
+      "content": "A 500-page PDF converted to images in seconds. No upload, no wait."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What image formats are available?",
+      "a": "PNG and JPG with adjustable quality settings."
+    },
+    {
+      "q": "Can I extract specific pages?",
+      "a": "Yes, specify page ranges like 1-5 or 3,7,12."
+    },
+    {
+      "q": "What resolution are the exported images?",
+      "a": "Default 150 DPI, adjustable up to 300 DPI."
+    },
+    {
+      "q": "Are all pages exported at once?",
+      "a": "Yes, all selected pages are zipped for a single download."
+    },
+    {
+      "q": "Is this free?",
+      "a": "Oui, entièrement gratuit."
+    }
+  ]
+}

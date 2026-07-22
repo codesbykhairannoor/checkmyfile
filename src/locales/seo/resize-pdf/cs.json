@@ -1,0 +1,67 @@
+{
+  "title": "Resize PDF Pages — Change Paper Size Offline",
+  "h1": "Resize PDF Pages to A4, Letter, or Custom Sizes",
+  "description": "Change the paper size of every PDF page to A4, US Letter, or custom dimensions entirely in your browser. No upload. Ideal for users in Prague.",
+  "sections": [
+    {
+      "type": "transform_hero_features",
+      "title": "Why Resize PDFs Locally?",
+      "content": "Preparing documents for printing requires proper page sizing. Resize locally without uploading internal documents to the cloud."
+    },
+    {
+      "type": "transform_how_to_steps",
+      "title": "How to Resize PDF Pages",
+      "steps": [
+        {
+          "title": "Open PDF",
+          "description": "Load the PDF with incorrect page dimensions."
+        },
+        {
+          "title": "Select Target Size",
+          "description": "Choose A4, Letter, A3, or enter custom dimensions."
+        },
+        {
+          "title": "Download Resized PDF",
+          "description": "Get your properly sized document instantly."
+        }
+      ]
+    },
+    {
+      "type": "transform_geo_targeting",
+      "title": "PDF Resizing for Prague Print Shops",
+      "content": "Print shops and offices in Prague resize documents to standard sizes without cloud dependency."
+    },
+    {
+      "type": "transform_privacy_security",
+      "title": "Internal Documents Stay Internal",
+      "content": "Resize business reports and proposals without any server-side processing."
+    },
+    {
+      "type": "transform_performance",
+      "title": "Resize Hundreds of Pages Instantly",
+      "content": "Resizing a 500-page PDF takes under 2 seconds. All in your browser."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What sizes are available?",
+      "a": "A4, A3, A5, US Letter, Legal, and custom dimensions."
+    },
+    {
+      "q": "Does content scale with the page?",
+      "a": "Yes, content is scaled proportionally by default."
+    },
+    {
+      "q": "Can I resize individual pages?",
+      "a": "Yes, apply different sizes to specific pages."
+    },
+    {
+      "q": "Is the quality affected?",
+      "a": "Vector content is re-rendered perfectly; images may scale."
+    },
+    {
+      "q": "Is this free?",
+      "a": "Ano, zcela zdarma."
+    }
+  ]
+}

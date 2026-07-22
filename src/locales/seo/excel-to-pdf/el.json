@@ -1,0 +1,67 @@
+{
+  "title": "Excel to PDF — Convert Spreadsheets Offline",
+  "h1": "Convert Excel Spreadsheets to PDF Securely",
+  "description": "Turn .xlsx and .csv files into crisp PDFs locally in your browser. Financial data stays on your device. Perfect for users in Athens.",
+  "sections": [
+    {
+      "type": "combiner_hero_features",
+      "title": "Why Convert Excel Offline?",
+      "content": "Spreadsheets often contain sensitive financial data. Our browser-based engine converts without any server involvement."
+    },
+    {
+      "type": "combiner_how_to_steps",
+      "title": "How to Export Excel as PDF",
+      "steps": [
+        {
+          "title": "Open Spreadsheet",
+          "description": "Select your .xlsx or .csv file."
+        },
+        {
+          "title": "Choose Sheet Range",
+          "description": "Pick which sheets or rows to include."
+        },
+        {
+          "title": "Export as PDF",
+          "description": "Download your spreadsheet as a clean PDF."
+        }
+      ]
+    },
+    {
+      "type": "combiner_geo_targeting",
+      "title": "Excel to PDF for Athens Businesses",
+      "content": "Businesses in Athens use our tool to share financial reports without exposing raw spreadsheet data."
+    },
+    {
+      "type": "combiner_privacy_security",
+      "title": "Protect Financial Spreadsheets",
+      "content": "Balance sheets, payroll data — all processed offline. Zero data sent to any third party."
+    },
+    {
+      "type": "combiner_performance",
+      "title": "Spreadsheet-to-PDF in Seconds",
+      "content": "No upload queue, no compression artifacts. Your spreadsheet renders natively in-browser."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Are all Excel formulas preserved?",
+      "a": "Yes, formula results are captured in the PDF snapshot."
+    },
+    {
+      "q": "Can I convert multiple sheets?",
+      "a": "Yes, you can include all sheets or specific ones."
+    },
+    {
+      "q": "What file types are supported?",
+      "a": ".xlsx, .xls, and .csv are all supported."
+    },
+    {
+      "q": "Is this secure for financial data?",
+      "a": "Absolutely. The file never leaves your browser."
+    },
+    {
+      "q": "Does it support graphs?",
+      "a": "Ναι, εντελώς δωρεάν."
+    }
+  ]
+}

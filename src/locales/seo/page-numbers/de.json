@@ -1,0 +1,67 @@
+{
+  "title": "Add Page Numbers to PDF — Offline Number Stamp",
+  "h1": "Insert Page Numbers into PDF Documents Locally",
+  "description": "Stamp page numbers at the header or footer of your PDF entirely in your browser. No upload. Ideal for users in Berlin.",
+  "sections": [
+    {
+      "type": "organizer_hero_features",
+      "title": "Why Add Page Numbers Offline?",
+      "content": "Page numbers are a formatting step, not a reason to upload confidential documents to a cloud service."
+    },
+    {
+      "type": "organizer_how_to_steps",
+      "title": "How to Add Page Numbers",
+      "steps": [
+        {
+          "title": "Open PDF",
+          "description": "Select the PDF to number."
+        },
+        {
+          "title": "Configure Style",
+          "description": "Choose position, format (1/12, Page 1, i, ii…), and font."
+        },
+        {
+          "title": "Apply & Download",
+          "description": "Download your paginated PDF instantly."
+        }
+      ]
+    },
+    {
+      "type": "organizer_geo_targeting",
+      "title": "Page Numbering for Berlin Legal Docs",
+      "content": "Legal professionals in Berlin number briefs and reports locally without cloud service dependency."
+    },
+    {
+      "type": "organizer_privacy_security",
+      "title": "Internal Documents Stay Numbered & Private",
+      "content": "Add page numbers to contracts and confidential reports without any server involvement."
+    },
+    {
+      "type": "organizer_performance",
+      "title": "Number a 1000-Page PDF Instantly",
+      "content": "Stamping page numbers locally takes milliseconds for any size document."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What number formats are available?",
+      "a": "Arabic (1, 2, 3), Roman (i, ii, iii), and letter (a, b, c) formats."
+    },
+    {
+      "q": "Can I start from a custom number?",
+      "a": "Yes, set any starting page number."
+    },
+    {
+      "q": "Can I skip numbering the first page?",
+      "a": "Yes, set the page offset to skip cover pages."
+    },
+    {
+      "q": "Where can I position numbers?",
+      "a": "Header-left, header-center, header-right, and same for footer."
+    },
+    {
+      "q": "Is this free?",
+      "a": "Ja, komplett kostenlos."
+    }
+  ]
+}

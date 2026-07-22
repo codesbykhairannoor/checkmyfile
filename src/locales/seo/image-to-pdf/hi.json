@@ -1,0 +1,67 @@
+{
+  "title": "Image to PDF — Combine Photos Offline",
+  "h1": "Convert Images to PDF Without Uploading",
+  "description": "Turn JPG, PNG, and WebP images into a single PDF document in your browser. Your photos stay private. Perfect for users in New Delhi.",
+  "sections": [
+    {
+      "type": "combiner_hero_features",
+      "title": "Why Convert Images Offline?",
+      "content": "Photos contain location data and personal moments. Convert them to PDF without exposing them to any cloud service."
+    },
+    {
+      "type": "combiner_how_to_steps",
+      "title": "How to Turn Images Into PDF",
+      "steps": [
+        {
+          "title": "Select Images",
+          "description": "Choose JPG, PNG, or WebP files from your device."
+        },
+        {
+          "title": "Arrange Order",
+          "description": "Drag to reorder images before generating the PDF."
+        },
+        {
+          "title": "Export PDF",
+          "description": "Download your image PDF in one click."
+        }
+      ]
+    },
+    {
+      "type": "combiner_geo_targeting",
+      "title": "Image to PDF for New Delhi Users",
+      "content": "Photographers and designers in New Delhi use our tool to package portfolios without cloud uploads."
+    },
+    {
+      "type": "combiner_privacy_security",
+      "title": "Photos Never Leave Your Device",
+      "content": "Personal photos, ID scans, medical images — all converted 100% locally without any server contact."
+    },
+    {
+      "type": "combiner_performance",
+      "title": "Batch Convert Instantly",
+      "content": "Convert 50 images into a single PDF in under 5 seconds. No upload, no wait."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What image formats are supported?",
+      "a": "JPG, JPEG, PNG, and WebP are all supported."
+    },
+    {
+      "q": "Can I combine multiple images?",
+      "a": "Yes, select as many images as you want and reorder them."
+    },
+    {
+      "q": "Is image quality preserved?",
+      "a": "Yes, images are embedded at their original resolution."
+    },
+    {
+      "q": "Does it strip EXIF metadata?",
+      "a": "You can optionally strip EXIF data for privacy."
+    },
+    {
+      "q": "Is there a limit on image count?",
+      "a": "हाँ, पूरी तरह मुफ्त।"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "title": "CSV to Excel Converter — Offline & Instant",
+  "h1": "Convert CSV Files to Excel Spreadsheets Locally",
+  "description": "Transform .csv files into structured .xlsx spreadsheets entirely in your browser. No upload. Perfect for data teams in Jakarta.",
+  "sections": [
+    {
+      "type": "organizer_hero_features",
+      "title": "Why Convert CSV Offline?",
+      "content": "CSV files often contain customer or financial data. Convert them to Excel locally without exposing your datasets to any cloud service."
+    },
+    {
+      "type": "organizer_how_to_steps",
+      "title": "How to Convert CSV to Excel",
+      "steps": [
+        {
+          "title": "Open CSV File",
+          "description": "Select the CSV file to convert."
+        },
+        {
+          "title": "Preview Data",
+          "description": "See the parsed columns and rows before export."
+        },
+        {
+          "title": "Download .xlsx",
+          "description": "Get your Excel spreadsheet instantly."
+        }
+      ]
+    },
+    {
+      "type": "organizer_geo_targeting",
+      "title": "Data Tools for Jakarta Analysts",
+      "content": "Data analysts in Jakarta convert CSV exports to Excel without uploading sensitive datasets."
+    },
+    {
+      "type": "organizer_privacy_security",
+      "title": "Customer Data Stays on Your Machine",
+      "content": "CRM exports, transaction logs, and survey data converted locally with zero cloud involvement."
+    },
+    {
+      "type": "organizer_performance",
+      "title": "Convert Large CSV Files Instantly",
+      "content": "Convert a 100,000-row CSV to Excel in seconds. All browser-native processing."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is the column structure preserved?",
+      "a": "Yes, all columns are mapped to Excel columns."
+    },
+    {
+      "q": "Can I convert multiple CSVs?",
+      "a": "Yes, batch conversion to multiple sheets is supported."
+    },
+    {
+      "q": "Are special characters handled?",
+      "a": "Yes, UTF-8 and various encodings are supported."
+    },
+    {
+      "q": "Can I set delimiters?",
+      "a": "Yes, comma, semicolon, and tab delimiters are supported."
+    },
+    {
+      "q": "Is this free?",
+      "a": "Ya, sepenuhnya gratis."
+    }
+  ]
+}

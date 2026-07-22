@@ -1,0 +1,67 @@
+{
+  "title": "Add Watermark to PDF — Offline Watermarking",
+  "h1": "Stamp PDFs with Text or Image Watermarks Locally",
+  "description": "Add \"CONFIDENTIAL\", logos, or custom text watermarks to PDFs entirely in your browser. No upload. Best for users in Tokyo.",
+  "sections": [
+    {
+      "type": "transform_hero_features",
+      "title": "Why Watermark PDFs Offline?",
+      "content": "Adding watermarks means your document is sensitive. Never upload draft contracts or confidential reports to a cloud watermarker."
+    },
+    {
+      "type": "transform_how_to_steps",
+      "title": "How to Watermark a PDF",
+      "steps": [
+        {
+          "title": "Open PDF",
+          "description": "Select the PDF to watermark."
+        },
+        {
+          "title": "Design Watermark",
+          "description": "Type text or upload a logo image."
+        },
+        {
+          "title": "Apply & Download",
+          "description": "Get your watermarked PDF in one click."
+        }
+      ]
+    },
+    {
+      "type": "transform_geo_targeting",
+      "title": "Document Watermarking in Tokyo",
+      "content": "Legal and creative professionals in Tokyo stamp documents with watermarks without cloud uploads."
+    },
+    {
+      "type": "transform_privacy_security",
+      "title": "Confidential Drafts Stay Private",
+      "content": "Draft contracts and unreleased designs watermarked locally without any server contact."
+    },
+    {
+      "type": "transform_performance",
+      "title": "Stamp Thousands of Pages Instantly",
+      "content": "Apply watermarks to a 1000-page document in under 3 seconds. All in your browser."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I use a logo as a watermark?",
+      "a": "Yes, upload a PNG logo and set transparency."
+    },
+    {
+      "q": "Can I adjust watermark opacity?",
+      "a": "Yes, from 10% to 100% opacity."
+    },
+    {
+      "q": "Can I apply it to specific pages only?",
+      "a": "Yes, choose page ranges."
+    },
+    {
+      "q": "Is diagonal placement available?",
+      "a": "Yes, rotate watermarks to any angle."
+    },
+    {
+      "q": "Is this free?",
+      "a": "はい、完全無料です。"
+    }
+  ]
+}

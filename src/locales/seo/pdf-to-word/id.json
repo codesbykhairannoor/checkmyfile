@@ -1,0 +1,67 @@
+{
+  "title": "PDF to Word Converter — Offline & Editable",
+  "h1": "Convert PDF to Editable Word Documents Locally",
+  "description": "Transform PDFs back into .docx files you can edit, right in your browser. No upload needed. Great for users in Jakarta.",
+  "sections": [
+    {
+      "type": "split_hero_features",
+      "title": "Why Convert PDF Back Offline?",
+      "content": "When you need to edit a PDF, converting it offline keeps your original document confidential."
+    },
+    {
+      "type": "split_how_to_steps",
+      "title": "How to Convert PDF to Word",
+      "steps": [
+        {
+          "title": "Load PDF",
+          "description": "Select the PDF file you need to convert."
+        },
+        {
+          "title": "Detect Text Layers",
+          "description": "Our engine reads text and structure from the PDF."
+        },
+        {
+          "title": "Download .docx",
+          "description": "Get your editable Word document ready to modify."
+        }
+      ]
+    },
+    {
+      "type": "split_geo_targeting",
+      "title": "PDF to Word for Jakarta Offices",
+      "content": "Office workers in Jakarta use our tool to recover editable text from PDFs without cloud dependency."
+    },
+    {
+      "type": "split_privacy_security",
+      "title": "Legal Documents Stay Confidential",
+      "content": "Contracts, NDAs, and reports converted back to Word entirely in your browser memory."
+    },
+    {
+      "type": "split_performance",
+      "title": "Recover Editable Text in Seconds",
+      "content": "Extract text from a 50-page PDF in under 3 seconds without uploading a single byte."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is all text preserved?",
+      "a": "Yes, text from all layers is extracted and formatted."
+    },
+    {
+      "q": "Does it work on scanned PDFs?",
+      "a": "For scanned PDFs, use our OCR tool first."
+    },
+    {
+      "q": "Are images included in the .docx?",
+      "a": "Yes, embedded images are included in the output."
+    },
+    {
+      "q": "Can I edit the .docx after?",
+      "a": "Absolutely, the output is a fully editable Word document."
+    },
+    {
+      "q": "Is this free?",
+      "a": "Ya, sepenuhnya gratis."
+    }
+  ]
+}

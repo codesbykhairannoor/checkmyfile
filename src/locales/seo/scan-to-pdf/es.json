@@ -1,0 +1,67 @@
+{
+  "title": "Scan to PDF — Convert Camera Shots Offline",
+  "h1": "Convert Photos and Scans to PDF Locally",
+  "description": "Turn photos of documents taken with your camera into clean PDFs entirely in your browser. No upload. Best for users in Madrid.",
+  "sections": [
+    {
+      "type": "organizer_hero_features",
+      "title": "Why Use Scan-to-PDF Offline?",
+      "content": "Photos of documents contain sensitive information. Process them locally without any cloud access."
+    },
+    {
+      "type": "organizer_how_to_steps",
+      "title": "How to Convert Scans to PDF",
+      "steps": [
+        {
+          "title": "Import Photos",
+          "description": "Select photos taken with your phone or camera."
+        },
+        {
+          "title": "Enhance Scan",
+          "description": "Auto-crop, deskew, and enhance contrast."
+        },
+        {
+          "title": "Export PDF",
+          "description": "Download a clean, professional-looking scanned PDF."
+        }
+      ]
+    },
+    {
+      "type": "organizer_geo_targeting",
+      "title": "Scan to PDF for Madrid Field Workers",
+      "content": "Field workers and freelancers in Madrid digitize paper documents on-the-go without uploading to cloud services."
+    },
+    {
+      "type": "organizer_privacy_security",
+      "title": "Scanned Documents Stay on Device",
+      "content": "Invoices, contracts, and ID scans processed entirely in browser memory without any server access."
+    },
+    {
+      "type": "organizer_performance",
+      "title": "Convert Scans in Real Time",
+      "content": "Photo enhancement and PDF generation happens in milliseconds, even for high-resolution camera shots."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What photo formats are supported?",
+      "a": "JPG, PNG, WebP, and HEIC from modern cameras."
+    },
+    {
+      "q": "Does it fix tilted scans?",
+      "a": "Yes, auto-deskew corrects slight angles automatically."
+    },
+    {
+      "q": "Can I combine multiple scans?",
+      "a": "Yes, add multiple photos to create a multi-page PDF."
+    },
+    {
+      "q": "Does it enhance contrast?",
+      "a": "Yes, document enhancement mode sharpens text for clarity."
+    },
+    {
+      "q": "Is this free?",
+      "a": "Sí, completamente gratis."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "title": "OCR PDF — Make Scans Searchable Offline",
+  "h1": "Extract and Recognize Text from Scanned PDFs",
+  "description": "Run OCR on scanned PDFs to make them searchable and copyable, entirely in your browser using Tesseract. No upload. Great for users in Oslo.",
+  "sections": [
+    {
+      "type": "organizer_hero_features",
+      "title": "Why Run OCR Locally?",
+      "content": "Scanned PDFs contain sensitive text. Running OCR on a cloud service exposes that text to a third party. Ours runs 100% offline."
+    },
+    {
+      "type": "organizer_how_to_steps",
+      "title": "How to OCR a PDF",
+      "steps": [
+        {
+          "title": "Load Scanned PDF",
+          "description": "Select the image-based or scanned PDF."
+        },
+        {
+          "title": "Select Language",
+          "description": "Choose the document language for better accuracy."
+        },
+        {
+          "title": "Download Searchable PDF",
+          "description": "Get a text-layer PDF ready to search and copy."
+        }
+      ]
+    },
+    {
+      "type": "organizer_geo_targeting",
+      "title": "OCR Tool for Oslo Archives",
+      "content": "Government agencies and businesses in Oslo digitize paper archives using our offline OCR tool."
+    },
+    {
+      "type": "organizer_privacy_security",
+      "title": "Scanned Content Never Exposed",
+      "content": "OCR processing using Tesseract WASM runs entirely in browser memory — no API calls, no data transmission."
+    },
+    {
+      "type": "organizer_performance",
+      "title": "OCR Any Document Locally",
+      "content": "Process a 20-page scanned PDF in under 30 seconds. All Tesseract processing happens in-browser."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What languages does OCR support?",
+      "a": "Over 100 languages via Tesseract engine."
+    },
+    {
+      "q": "How accurate is the OCR?",
+      "a": "Accuracy depends on scan quality; clear, high-contrast scans yield 95%+ accuracy."
+    },
+    {
+      "q": "Does it create a searchable PDF?",
+      "a": "Yes, a text layer is added making the PDF fully searchable."
+    },
+    {
+      "q": "Can I copy text from the result?",
+      "a": "Yes, the output PDF has selectable, copyable text."
+    },
+    {
+      "q": "Is this free?",
+      "a": "Ja, helt gratis."
+    }
+  ]
+}

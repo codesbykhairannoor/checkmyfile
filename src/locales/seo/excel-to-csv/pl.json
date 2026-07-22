@@ -1,0 +1,67 @@
+{
+  "title": "Excel to CSV Converter — Export Spreadsheets Offline",
+  "h1": "Convert Excel Spreadsheets to CSV Locally",
+  "description": "Export .xlsx files to clean .csv format entirely in your browser. No upload. Ideal for developers in Warsaw.",
+  "sections": [
+    {
+      "type": "organizer_hero_features",
+      "title": "Why Export to CSV Offline?",
+      "content": "Exporting spreadsheets to CSV for data pipelines should not expose your raw data to any external API."
+    },
+    {
+      "type": "organizer_how_to_steps",
+      "title": "How to Convert Excel to CSV",
+      "steps": [
+        {
+          "title": "Open Excel File",
+          "description": "Select the .xlsx spreadsheet."
+        },
+        {
+          "title": "Choose Sheet",
+          "description": "Pick which sheet to export as CSV."
+        },
+        {
+          "title": "Download CSV",
+          "description": "Get your clean CSV file instantly."
+        }
+      ]
+    },
+    {
+      "type": "organizer_geo_targeting",
+      "title": "Developer Tools for Warsaw",
+      "content": "Developers and data engineers in Warsaw export spreadsheets to CSV for pipelines without cloud intermediaries."
+    },
+    {
+      "type": "organizer_privacy_security",
+      "title": "Spreadsheet Data Stays Local",
+      "content": "Financial models and business data exported to CSV without any server-side processing."
+    },
+    {
+      "type": "organizer_performance",
+      "title": "Export Any Spreadsheet Instantly",
+      "content": "Export a 50,000-row Excel file to CSV in under 1 second. All in-browser."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I export multiple sheets?",
+      "a": "Yes, export each sheet as a separate CSV file."
+    },
+    {
+      "q": "Is Excel formatting preserved in CSV?",
+      "a": "CSV is plain text; formatting is removed but all values are preserved."
+    },
+    {
+      "q": "Can I choose the delimiter?",
+      "a": "Yes, choose comma, semicolon, or tab."
+    },
+    {
+      "q": "Are formulas exported as values?",
+      "a": "Yes, formula results (not formulas) are written to the CSV."
+    },
+    {
+      "q": "Is this free?",
+      "a": "Tak, całkowicie bezpłatnie."
+    }
+  ]
+}

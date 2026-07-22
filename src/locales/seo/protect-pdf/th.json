@@ -1,0 +1,67 @@
+{
+  "title": "Password Protect PDF — Secure Files Offline",
+  "h1": "Add Password Protection to PDF Files Instantly",
+  "description": "Encrypt PDF files with a strong password directly in your browser. Your document never leaves your device. Ideal for users in Bangkok.",
+  "sections": [
+    {
+      "type": "security_hero_features",
+      "title": "Why Protect PDFs Locally?",
+      "content": "Adding a password means the file is sensitive. Never upload sensitive files to a cloud encryptor. Use ours — it runs entirely offline."
+    },
+    {
+      "type": "security_how_to_steps",
+      "title": "How to Password Protect a PDF",
+      "steps": [
+        {
+          "title": "Open PDF",
+          "description": "Select the PDF you want to lock."
+        },
+        {
+          "title": "Set Password",
+          "description": "Choose a strong password for encryption."
+        },
+        {
+          "title": "Download Protected PDF",
+          "description": "Get your AES-256 encrypted PDF immediately."
+        }
+      ]
+    },
+    {
+      "type": "security_geo_targeting",
+      "title": "Secure PDFs for Bangkok Professionals",
+      "content": "Legal and finance professionals in Bangkok use our tool to password-protect sensitive documents offline."
+    },
+    {
+      "type": "security_privacy_security",
+      "title": "AES-256 Encryption Locally",
+      "content": "Bank-grade AES-256 encryption applied directly in your browser with zero server involvement."
+    },
+    {
+      "type": "security_performance",
+      "title": "Encrypt Any PDF in Under 1 Second",
+      "content": "Applying AES-256 encryption locally takes milliseconds — no upload, no queue."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What encryption standard is used?",
+      "a": "AES-256, the same standard used by banks."
+    },
+    {
+      "q": "Can I set different owner and user passwords?",
+      "a": "Yes, you can set both separately."
+    },
+    {
+      "q": "Is the original file modified?",
+      "a": "No, a new encrypted copy is created."
+    },
+    {
+      "q": "Can I restrict printing or editing?",
+      "a": "Yes, permission restrictions can be set alongside the password."
+    },
+    {
+      "q": "Is this free?",
+      "a": "ใช่ ฟรีทั้งหมด"
+    }
+  ]
+}
