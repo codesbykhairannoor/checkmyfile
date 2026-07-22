@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Shield, Zap, Globe, Star, MapPin, CheckCircle, Clock, ServerOff, Scissors, Layers, FileDown, Lock, Monitor, ArrowRight } from 'lucide-react';
 
 interface SeoSectionData {
@@ -16,33 +16,18 @@ interface SeoJson {
   faqs: { q: string; a: string }[];
 }
 
+// Eagerly load all SEO JSON files at build time into memory.
+// This completely eliminates network waterfalls and loading flickers when switching languages or tools.
+const seoModules = import.meta.glob('../../locales/seo/**/*.json', { eager: true }) as Record<string, any>;
+
 export const useSeoData = (toolId: string, lang: string) => {
-  const [data, setData] = useState<SeoJson | null>(null);
-  const [loading, setLoading] = useState(true);
+  const exactPath = `../../locales/seo/${toolId}/${lang}.json`;
+  const fallbackPath = `../../locales/seo/${toolId}/en.json`;
+  
+  const module = seoModules[exactPath] || seoModules[fallbackPath];
+  const data = module ? (module.default || module) : null;
 
-  useEffect(() => {
-    let isMounted = true;
-    setLoading(true);
-
-    const loadSeoData = async () => {
-      try {
-        const module = await import(`../../locales/seo/${toolId}/${lang}.json`);
-        if (isMounted) {
-          setData(module.default || module);
-        }
-      } catch (error) {
-        console.warn(`[SEO] Failed to load SEO data for ${toolId} in ${lang}.`, error);
-        if (isMounted) setData(null);
-      } finally {
-        if (isMounted) setLoading(false);
-      }
-    };
-
-    loadSeoData();
-    return () => { isMounted = false; };
-  }, [toolId, lang]);
-
-  return { data, loading };
+  return { data, loading: false };
 };
 
 interface SeoRichSectionsProps {
