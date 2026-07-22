@@ -126,7 +126,10 @@ export function useDocumentProcessor() {
         if (!options.compareFile2) throw new Error("File pembanding tidak ditemukan.");
         const compareResult = await comparePdf(files[0], options.compareFile2, (p) => setProgress(p));
         resultBytes = compareResult.bytes;
-        setProcessorMetadata({ accuracy: compareResult.accuracy });
+        setProcessorMetadata({ 
+          accuracy: compareResult.accuracy,
+          originalAnnotatedBytes: compareResult.originalBytes 
+        });
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_comparison.pdf`;
       } else if (toolId === 'redact-pdf') {
         if (!options.redactConfig) throw new Error("Konfigurasi sensor tidak ditemukan.");

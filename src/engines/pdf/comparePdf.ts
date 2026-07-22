@@ -8,7 +8,7 @@ export const comparePdf = async (
   file1: File,
   file2: File,
   onProgress?: (progress: number) => void
-): Promise<{ bytes: Uint8Array, accuracy: number }> => {
+): Promise<{ bytes: Uint8Array, originalBytes?: Uint8Array, accuracy: number }> => {
   const [arrayBuffer1, arrayBuffer2] = await Promise.all([
     file1.arrayBuffer(),
     file2.arrayBuffer()
@@ -19,7 +19,8 @@ export const comparePdf = async (
     pdfjsLib.getDocument({ data: arrayBuffer2 }).promise
   ]);
 
-  const newPdf = await PDFDocument.create();
+  const newPdf1 = await PDFDocument.create();
+  const newPdf2 = await PDFDocument.create();
   const maxPages = Math.max(pdfDoc1.numPages, pdfDoc2.numPages);
   const scale = 1.5; // lower scale for diffing to save memory
   
@@ -40,17 +41,20 @@ export const comparePdf = async (
 
     const canvas1 = document.createElement('canvas');
     const canvas2 = document.createElement('canvas');
-    const diffCanvas = document.createElement('canvas');
+    const diffCanvas1 = document.createElement('canvas');
+    const diffCanvas2 = document.createElement('canvas');
     
     canvas1.width = width; canvas1.height = height;
     canvas2.width = width; canvas2.height = height;
-    diffCanvas.width = width; diffCanvas.height = height;
+    diffCanvas1.width = width; diffCanvas1.height = height;
+    diffCanvas2.width = width; diffCanvas2.height = height;
 
     const ctx1 = canvas1.getContext('2d');
     const ctx2 = canvas2.getContext('2d');
-    const diffCtx = diffCanvas.getContext('2d');
+    const diffCtx1 = diffCanvas1.getContext('2d');
+    const diffCtx2 = diffCanvas2.getContext('2d');
 
-    if (!ctx1 || !ctx2 || !diffCtx) throw new Error('Could not create canvas contexts');
+    if (!ctx1 || !ctx2 || !diffCtx1 || !diffCtx2) throw new Error('Could not create canvas contexts');
 
     // Fill white backgrounds
     ctx1.fillStyle = '#ffffff'; ctx1.fillRect(0, 0, width, height);
@@ -66,11 +70,9 @@ export const comparePdf = async (
     const img1 = ctx1.getImageData(0, 0, width, height);
     const img2 = ctx2.getImageData(0, 0, width, height);
 
-
-    // Hybrid Semantic + Pixel Highlighter
-    // 1. Draw Document 2 as the pristine base
-    diffCtx.putImageData(img2, 0, 0);
-    
+    // Draw base images onto diff canvases
+    diffCtx1.putImageData(img1, 0, 0);
+    diffCtx2.putImageData(img2, 0, 0);
     // --- SEMANTIC TEXT DIFF ENGINE ---
     const text1 = page1 ? await page1.getTextContent() : { items: [] };
     const text2 = page2 ? await page2.getTextContent() : { items: [] };
@@ -223,6 +225,7 @@ export const comparePdf = async (
     }
     
     const addedBoxes: any[] = [];
+    const removedBoxes: any[] = [];
     let i_lcs = m, j_lcs = n;
     while (i_lcs > 0 || j_lcs > 0) {
       if (i_lcs > 0 && j_lcs > 0 && words1[i_lcs-1].word === words2[j_lcs-1].word) {
@@ -231,6 +234,7 @@ export const comparePdf = async (
         addedBoxes.push(words2[j_lcs-1].box);
         j_lcs--;
       } else if (i_lcs > 0 && (j_lcs === 0 || dp[i_lcs * (n + 1) + (j_lcs-1)] < dp[(i_lcs-1) * (n + 1) + j_lcs])) {
+        removedBoxes.push(words1[i_lcs-1].box);
         i_lcs--;
       }
     }
@@ -238,13 +242,14 @@ export const comparePdf = async (
     let numDiffPixels = 0;
 
     // Draw semantic highlights for added/modified text using precise word boxes
-    const drawHighlight = (box: any, color: string) => {
-      diffCtx.fillStyle = color;
-      diffCtx.fillRect(box.cx, box.cy - box.ch * 0.8, Math.max(box.cw, 5), box.ch * 1.2);
-      numDiffPixels += Math.max(box.cw, 5) * (box.ch * 1.2);
+    const drawHighlight = (ctx: any, box: any, color: string) => {
+      ctx.fillStyle = color;
+      ctx.fillRect(box.cx, box.cy - box.ch * 0.8, Math.max(box.cw, 5), box.ch * 1.2);
+      numDiffPixels += Math.max(box.cw, 5) * (box.ch * 1.2); // Just counting added pixels for accuracy
     };
     
-    addedBoxes.forEach(box => drawHighlight(box, 'rgba(239, 68, 68, 0.25)'));
+    removedBoxes.forEach(box => drawHighlight(diffCtx1, box, 'rgba(239, 68, 68, 0.25)'));
+    addedBoxes.forEach(box => drawHighlight(diffCtx2, box, 'rgba(239, 68, 68, 0.25)'));
 
     // --- MASKED PIXEL DIFF ENGINE (For Graphics/Images only) ---
     const cellSize = 8;
@@ -319,11 +324,13 @@ export const comparePdf = async (
     }
     
     // Draw non-text graphics highlights
-    diffCtx.fillStyle = 'rgba(239, 68, 68, 0.25)';
+    diffCtx1.fillStyle = 'rgba(239, 68, 68, 0.25)';
+    diffCtx2.fillStyle = 'rgba(239, 68, 68, 0.25)';
     for (let r = 0; r < rows; r++) {
       for (let c = 0; c < cols; c++) {
         if (dilatedGrid[r * cols + c] === 1) {
-           diffCtx.fillRect(c * cellSize, r * cellSize, cellSize, cellSize);
+           diffCtx1.fillRect(c * cellSize, r * cellSize, cellSize, cellSize);
+           diffCtx2.fillRect(c * cellSize, r * cellSize, cellSize, cellSize);
         }
       }
     }
@@ -331,11 +338,16 @@ export const comparePdf = async (
     totalDiffPixels += numDiffPixels;
     totalPixels += width * height;
 
-    const jpegDataUrl = diffCanvas.toDataURL('image/jpeg', 0.85);
-    const image = await newPdf.embedJpg(jpegDataUrl);
+    const jpegDataUrl1 = diffCanvas1.toDataURL('image/jpeg', 0.85);
+    const jpegDataUrl2 = diffCanvas2.toDataURL('image/jpeg', 0.85);
+    const image1 = await newPdf1.embedJpg(jpegDataUrl1);
+    const image2 = await newPdf2.embedJpg(jpegDataUrl2);
 
-    const newPage = newPdf.addPage([width / scale, height / scale]);
-    newPage.drawImage(image, { x: 0, y: 0, width: width / scale, height: height / scale });
+    const newPage1 = newPdf1.addPage([width / scale, height / scale]);
+    newPage1.drawImage(image1, { x: 0, y: 0, width: width / scale, height: height / scale });
+
+    const newPage2 = newPdf2.addPage([width / scale, height / scale]);
+    newPage2.drawImage(image2, { x: 0, y: 0, width: width / scale, height: height / scale });
 
     if (onProgress) {
       onProgress((i / maxPages) * 100);
@@ -343,5 +355,9 @@ export const comparePdf = async (
   }
 
   const accuracy = totalPixels > 0 ? Math.max(0, 100 - (totalDiffPixels / totalPixels) * 100) : 100;
-  return { bytes: await newPdf.save(), accuracy };
+  return { 
+    bytes: await newPdf2.save(), 
+    originalBytes: await newPdf1.save(),
+    accuracy 
+  };
 };
