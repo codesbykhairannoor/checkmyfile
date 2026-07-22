@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { LocaleSwitcher } from './LocaleSwitcher';
-import { Sun, Moon, FileText, ChevronDown, ChevronUp, Grid, Combine, Scissors, Minimize2, FileSpreadsheet, LayoutList, Crop, ScanText, ScanLine, Eraser, Scale, EyeOff, RotateCw, Hash, Stamp, Presentation, AlignLeft, TableProperties, Image, Images, Trash2, PenTool, Lock, Unlock, Contrast, Maximize, ArrowDownUp, Edit3 } from 'lucide-react';
+import { Sun, Moon, FileText, ChevronDown, ChevronUp, Grid, Combine, Scissors, Minimize2, FileSpreadsheet, LayoutList, Crop, ScanText, ScanLine, Eraser, Scale, EyeOff, RotateCw, Hash, Stamp, Presentation, AlignLeft, TableProperties, Image, Images, Trash2, PenTool, Lock, Unlock, Contrast, Maximize, ArrowDownUp, Edit3, Menu, X, Globe } from 'lucide-react';
 import { TOOLS_CATALOG, getToolById, type ToolDefinition } from '../../catalog/toolsCatalog';
 
 interface NavbarProps {
@@ -22,6 +22,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 }) => {
   const [isLangModalOpen, setIsLangModalOpen] = useState(false);
   const [isAllToolsOpen, setIsAllToolsOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const navRef = useRef<HTMLDivElement>(null);
 
   // Close dropdowns if clicked outside
@@ -37,6 +38,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   const handleToolClick = (toolId: string) => {
     setIsAllToolsOpen(false);
+    setIsMobileMenuOpen(false);
     const tool = getToolById(toolId);
     if (tool && onSelectTool) {
       onSelectTool(tool);
@@ -108,8 +110,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
           </div>
 
-          {/* Top Bar Navigation Tabs (iLovePDF Style) */}
-          <nav style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+          {/* Top Bar Navigation Tabs (Desktop Only) */}
+          <nav className="desktop-only" style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
             <button
               onClick={() => handleToolClick('merge-pdf')}
               className="nav-tab-btn"
@@ -196,8 +198,8 @@ export const Navbar: React.FC<NavbarProps> = ({
           </nav>
         </div>
 
-        {/* Right Section: Mode Toggle Icon, Language Dropdown */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+        {/* Right Section (Desktop Only) */}
+        <div className="desktop-only" style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
           <button
             onClick={onToggleTheme}
             style={{
@@ -227,9 +229,107 @@ export const Navbar: React.FC<NavbarProps> = ({
             onOpen={() => setIsLangModalOpen(true)}
           />
         </div>
+
+        {/* Hamburger Mobile Menu Toggle */}
+        <div className="mobile-only" style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            style={{
+              background: 'transparent',
+              border: 'none',
+              color: 'var(--text-main)',
+              cursor: 'pointer',
+              display: 'flex',
+              padding: 8,
+              borderRadius: 8,
+            }}
+          >
+            {isMobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
+          </button>
+        </div>
       </div>
 
-      {/* MEGA MENU: ALL PDF TOOLS PANEL (iLovePDF Full Grid) */}
+      {/* Mobile Menu Overlay */}
+      {isMobileMenuOpen && (
+        <div
+          className="mobile-only"
+          style={{
+            position: 'absolute',
+            top: '100%',
+            left: 0,
+            right: 0,
+            background: 'var(--bg-app)',
+            borderBottom: '1px solid var(--border-color)',
+            flexDirection: 'column',
+            padding: '16px 24px 32px',
+            maxHeight: 'calc(100vh - 70px)',
+            overflowY: 'auto',
+            boxShadow: '0 10px 25px rgba(0,0,0,0.1)',
+            zIndex: 40,
+          }}
+        >
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 16, marginBottom: 24 }}>
+            <button
+              onClick={() => handleToolClick('merge-pdf')}
+              style={{ background: 'var(--bg-input)', border: '1px solid var(--border-color)', padding: 12, borderRadius: 8, fontWeight: 700, color: 'var(--text-main)' }}
+            >
+              MERGE PDF
+            </button>
+            <button
+              onClick={() => handleToolClick('split-pdf')}
+              style={{ background: 'var(--bg-input)', border: '1px solid var(--border-color)', padding: 12, borderRadius: 8, fontWeight: 700, color: 'var(--text-main)' }}
+            >
+              SPLIT PDF
+            </button>
+            <button
+              onClick={() => handleToolClick('compress-pdf')}
+              style={{ background: 'var(--bg-input)', border: '1px solid var(--border-color)', padding: 12, borderRadius: 8, fontWeight: 700, color: 'var(--text-main)' }}
+            >
+              COMPRESS PDF
+            </button>
+          </div>
+
+          <div style={{ display: 'flex', justifyContent: 'space-between', borderTop: '1px solid var(--border-color)', paddingTop: 24 }}>
+            <button
+              onClick={() => setIsLangModalOpen(true)}
+              style={{ display: 'flex', alignItems: 'center', gap: 8, background: 'transparent', border: 'none', color: 'var(--text-main)', fontWeight: 600, fontSize: '0.9rem' }}
+            >
+              <Globe size={18} /> Language ({currentLang.toUpperCase()})
+            </button>
+            
+            <button
+              onClick={onToggleTheme}
+              style={{ background: 'var(--bg-input)', border: '1px solid var(--border-color)', borderRadius: '50%', width: 40, height: 40, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-main)' }}
+            >
+              {isLightMode ? <Moon size={20} /> : <Sun size={20} />}
+            </button>
+          </div>
+          
+          <div style={{ marginTop: 32 }}>
+            <button
+              onClick={() => setIsAllToolsOpen(!isAllToolsOpen)}
+              style={{
+                width: '100%',
+                background: 'var(--brand-gradient)',
+                color: '#fff',
+                border: 'none',
+                padding: '14px',
+                borderRadius: 8,
+                fontWeight: 800,
+                fontSize: '1rem',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+              }}
+            >
+              <span>ALL PDF TOOLS</span>
+              {isAllToolsOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Desktop Mega Menu Dropdown */}
       {isAllToolsOpen && (
         <div
           style={{

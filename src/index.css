@@ -53,6 +53,15 @@ body.light-theme {
   padding: 0;
 }
 
+/* Responsive Visibility */
+.mobile-only {
+  display: none !important;
+}
+
+.desktop-only {
+  display: flex !important;
+}
+
 body {
   font-family: var(--font-main);
   background-color: var(--bg-app);
@@ -356,3 +365,91 @@ button, input, select, textarea {
   box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
   margin-bottom: 24px !important;
 }
+
+/* ==========================================================================
+   MOBILE OPTIMIZATION RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+
+/* Mobile Layout Helpers */
+@media (max-width: 768px) {
+  /* Override main layouts to block/column */
+  .mobile-col {
+    flex-direction: column !important;
+  }
+  
+  .mobile-only {
+    display: flex !important;
+  }
+  
+  .desktop-only {
+    display: none !important;
+  }
+  
+  /* Reset max widths and min widths for containers */
+  .mobile-full-width {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Make grid 1 column */
+  .tools-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .mega-menu-col {
+    min-width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .dropzone {
+    padding: 32px 16px;
+  }
+
+  /* Adjust typography */
+  h1 {
+    font-size: clamp(1.5rem, 6vw, 2rem) !important;
+  }
+  
+  /* Tool Page Specific Overrides */
+  .tool-workspace-container {
+    flex-direction: column !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  
+  .tool-workspace-left {
+    min-height: 400px !important;
+    height: 50vh !important;
+    width: 100% !important;
+    padding-right: 0 !important;
+  }
+  
+  .tool-workspace-right {
+    width: 100% !important;
+    min-width: 100% !important;
+    height: auto !important;
+    padding-left: 0 !important;
+    margin-top: 24px;
+    overflow: visible !important;
+  }
+
+  /* Footer adjustments */
+  footer {
+    padding-top: 32px !important;
+  }
+  
+  footer .footer-tools-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  
+  footer .footer-bottom {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+}
+

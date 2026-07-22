@@ -238,9 +238,9 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
 
       {/* Interactive Document Live Preview & Editor */}
       {files.length > 0 && !isCompleted && (
-        <div style={{ display: 'flex', width: '100%', height: '100%', maxHeight: 800, flex: 1, gap: 24, minHeight: 0, justifyContent: 'center' }}>
+        <div className="tool-workspace-container" style={{ display: 'flex', width: '100%', height: '100%', maxHeight: 800, flex: 1, gap: 24, minHeight: 0, justifyContent: 'center' }}>
           {/* Left Workspace */}
-          <div style={{ flex: 1, minWidth: 0, minHeight: 650, display: 'flex', flexDirection: 'column', gap: 24, overflow: 'hidden', paddingRight: 8, paddingBottom: 24 }}>
+          <div className="tool-workspace-left" style={{ flex: 1, minWidth: 0, minHeight: 650, display: 'flex', flexDirection: 'column', gap: 24, overflow: 'hidden', paddingRight: 8, paddingBottom: 24 }}>
             <DocumentLivePreview
               files={files}
               currentLang={currentLang}
@@ -264,7 +264,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
               />
           </div>
           {/* Right Sidebar */}
-          <div style={{ width: 340, minWidth: 340, flexShrink: 0, height: '100%', overflowY: 'auto', paddingLeft: 8 }}>
+          <div className="tool-workspace-right" style={{ width: 340, minWidth: 340, flexShrink: 0, height: '100%', overflowY: 'auto', paddingLeft: 8 }}>
             <ToolSidebar 
               tool={tool} files={files} setFiles={setFiles} activeFileIndex={activeFileIndex} setActiveFileIndex={setActiveFileIndex}
               isProcessing={isProcessing} 
