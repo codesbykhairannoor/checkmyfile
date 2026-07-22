@@ -5,7 +5,7 @@ import { SeoHead } from '../components/seo/SeoHead';
 import { FileDropzone } from '../components/common/FileDropzone';
 import { ProgressBar } from '../components/common/ProgressBar';
 import { DocumentLivePreview } from '../components/common/DocumentLivePreview';
-import { HelpCircle, ShieldCheck } from 'lucide-react';
+import { HelpCircle, ShieldCheck, Download } from 'lucide-react';
 import { useWorkspaceFiles } from '../hooks/useWorkspaceFiles';
 
 import { useDocumentProcessor } from '../hooks/useDocumentProcessor';
@@ -315,8 +315,10 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
           {tool.id === 'compare-pdf' ? (
             <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0, gap: 24, alignItems: 'center' }}>
               <div style={{ display: 'flex', flex: 1, width: '100%', minHeight: 0, maxHeight: 800, gap: 24, overflow: 'hidden', justifyContent: 'center' }}>
-                <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', background: 'var(--bg-card)', borderRadius: 16, border: '1px solid var(--border-color)', position: 'relative', maxWidth: 800 }}>
-                  <div style={{ position: 'absolute', top: 16, left: 16, zIndex: 10, background: 'rgba(0,0,0,0.6)', color: '#fff', padding: '6px 12px', borderRadius: 20, fontSize: '0.8rem', fontWeight: 600 }}>Dokumen Asli</div>
+                
+                {/* DOKUMEN ASLI PANEL */}
+                <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', position: 'relative', maxWidth: 800 }}>
+                  <div style={{ position: 'absolute', top: 16, left: 16, zIndex: 10, background: 'rgba(0,0,0,0.6)', color: '#fff', padding: '6px 12px', borderRadius: 20, fontSize: '0.8rem', fontWeight: 600, pointerEvents: 'none' }}>Dokumen Asli</div>
                   <div style={{ flex: 1, minHeight: 0, overflow: 'hidden' }}>
                     <DocumentLivePreview 
                       files={[
@@ -328,37 +330,35 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                     />
                   </div>
                 </div>
-                <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', background: 'var(--bg-card)', borderRadius: 16, border: '1px solid var(--border-color)', position: 'relative', maxWidth: 800 }}>
-                  <div style={{ position: 'absolute', top: 16, left: 16, zIndex: 10, background: 'rgba(239,68,68,0.9)', color: '#fff', padding: '6px 12px', borderRadius: 20, fontSize: '0.8rem', fontWeight: 600 }}>Perbandingan (Diff)</div>
+
+                {/* PERBANDINGAN PANEL */}
+                <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', position: 'relative', maxWidth: 800 }}>
+                  <div style={{ position: 'absolute', top: 16, left: 16, zIndex: 10, background: 'rgba(239,68,68,0.9)', color: '#fff', padding: '6px 12px', borderRadius: 20, fontSize: '0.8rem', fontWeight: 600, pointerEvents: 'none' }}>Perbandingan (Diff)</div>
+                  
                   <div style={{ flex: 1, minHeight: 0, overflow: 'hidden' }}>
                     <DocumentLivePreview files={[resultFile]} currentLang={currentLang} isResult={true} hideSidebar={true} />
                   </div>
+                  
+                  {/* FLOATING ACTION PILL */}
+                  <div style={{ position: 'absolute', bottom: 24, left: '50%', transform: 'translateX(-50%)', zIndex: 20, background: 'rgba(255,255,255,0.95)', backdropFilter: 'blur(10px)', padding: '12px 24px', borderRadius: 100, boxShadow: '0 8px 32px rgba(0,0,0,0.15)', display: 'flex', alignItems: 'center', gap: 24, border: '1px solid rgba(0,0,0,0.05)', whiteSpace: 'nowrap' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                      <div style={{ fontSize: '1.6rem', fontWeight: 900, color: processorMetadata?.accuracy && processorMetadata.accuracy > 95 ? '#10b981' : '#f59e0b', lineHeight: 1 }}>
+                        {processorMetadata?.accuracy?.toFixed(1) || '0'}%
+                      </div>
+                      <div style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--text-muted)', lineHeight: 1.2, letterSpacing: 0.5 }}>AKURASI<br/>KEMIRIPAN</div>
+                    </div>
+                    <div style={{ width: 1, height: 32, background: 'var(--border-color)' }}></div>
+                    <div style={{ display: 'flex', gap: 12 }}>
+                      <button onClick={handleReset} className="btn-secondary" style={{ padding: '8px 16px', fontSize: '0.9rem', borderRadius: 100 }}>
+                        Ulangi
+                      </button>
+                      <button onClick={() => handleDownload()} className="btn-primary" style={{ padding: '8px 16px', fontSize: '0.9rem', borderRadius: 100, display: 'flex', alignItems: 'center', gap: 8 }}>
+                        <Download size={16} /> Unduh Hasil
+                      </button>
+                    </div>
+                  </div>
                 </div>
-              </div>
 
-              {/* Accuracy Overlay - Moved to bottom spanning both columns, constrained to avoid extreme stretching */}
-              <div style={{ background: '#fff', padding: 24, borderRadius: 16, border: '1px solid var(--border-color)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', maxWidth: 900, width: '100%', margin: '0 auto', boxShadow: '0 4px 12px rgba(0,0,0,0.05)', flexShrink: 0 }}>
-                 <div style={{ display: 'flex', alignItems: 'center', gap: 32 }}>
-                   <div style={{ textAlign: 'center' }}>
-                     <div style={{ fontSize: '2.5rem', fontWeight: 900, color: processorMetadata?.accuracy && processorMetadata.accuracy > 95 ? '#10b981' : '#f59e0b', lineHeight: 1 }}>
-                       {processorMetadata?.accuracy?.toFixed(1) || '0'}%
-                     </div>
-                     <div style={{ fontSize: '0.75rem', fontWeight: 800, color: 'var(--text-muted)', letterSpacing: 1, marginTop: 6 }}>AKURASI KEMIRIPAN</div>
-                   </div>
-                   <div style={{ width: 1, height: 50, background: 'var(--border-color)' }}></div>
-                   <div>
-                     <h4 style={{ margin: 0, fontSize: '1.25rem', fontWeight: 800, color: 'var(--text-main)', marginBottom: 6 }}>Hasil Perbandingan</h4>
-                     <p style={{ margin: 0, fontSize: '0.95rem', color: 'var(--text-muted)' }}>Area yang berbeda ditandai dengan <span style={{color: '#ef4444', fontWeight: 600}}>sorotan merah</span></p>
-                   </div>
-                 </div>
-                 <div style={{ display: 'flex', gap: 16 }}>
-                   <button onClick={handleReset} className="btn-secondary" style={{ padding: '14px 28px', fontSize: '1.05rem' }}>
-                     Mulai Ulang
-                   </button>
-                   <button onClick={() => handleDownload()} className="btn-primary" style={{ padding: '14px 28px', fontSize: '1.05rem' }}>
-                     Unduh Hasil (.pdf)
-                   </button>
-                 </div>
               </div>
             </div>
           ) : (
