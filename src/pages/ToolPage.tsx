@@ -4,6 +4,7 @@ import { SeoHead } from '../components/seo/SeoHead';
 import { FileDropzone } from '../components/common/FileDropzone';
 import { ProgressBar } from '../components/common/ProgressBar';
 import { DocumentLivePreview } from '../components/common/DocumentLivePreview';
+import { SeoRichSections } from '../components/common/SeoRichSections';
 import { Download } from 'lucide-react';
 import { useWorkspaceFiles } from '../hooks/useWorkspaceFiles';
 
@@ -224,17 +225,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
       <SeoHead tool={tool} lang={currentLang} />
 
 
-      {/* Header - Hidden in Workspace Mode and Result Mode to maximize preview space */}
-      {files.length === 0 && !isCompleted && (
-        <div style={{ textAlign: 'center', marginBottom: 40, marginTop: 40 }}>
-          <h1 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', fontWeight: 800, fontFamily: 'var(--font-display)', marginBottom: 12 }}>
-            {seo.h1}
-          </h1>
-          <p style={{ color: 'var(--text-muted)', fontSize: '1.05rem', maxWidth: 700, margin: '0 auto' }}>
-            {seo.description}
-          </p>
-        </div>
-      )}
+      {/* Header handled by SeoRichSections */}
 
       {/* Interactive Document Live Preview & Editor */}
       {files.length > 0 && !isCompleted && (
@@ -328,15 +319,18 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
 
       {/* Dropzone (Hidden when files are already selected to keep UI clean and avoid clutter) */}
       {files.length === 0 && (
-        <FileDropzone
-          currentLang={currentLang}
-          onFilesSelected={(selected) => {
-            setFiles(selected);
-            resetProcessor();
-          }}
-          accept={getAcceptTypes(tool.id)}
-          multiple={tool.id === 'merge-pdf' || tool.id === 'gabung-pdf' || tool.id === 'image-to-pdf' || tool.id === 'gambar-ke-pdf'}
-        />
+        <>
+          <FileDropzone
+            currentLang={currentLang}
+            onFilesSelected={(selected) => {
+              setFiles(selected);
+              resetProcessor();
+            }}
+            accept={getAcceptTypes(tool.id)}
+            multiple={tool.id === 'merge-pdf' || tool.id === 'gabung-pdf' || tool.id === 'image-to-pdf' || tool.id === 'gambar-ke-pdf'}
+          />
+          <SeoRichSections toolId={tool.id} lang={currentLang} fallbackH1={seo.h1} fallbackDescription={seo.description} />
+        </>
       )}
 
       {/* Live Preview of the Converted / Processed Result */}

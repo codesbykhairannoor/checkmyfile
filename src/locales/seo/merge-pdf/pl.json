@@ -1,0 +1,55 @@
+{
+  "title": "merge pdf - Zero Upload Client-Side Tool (Polish)",
+  "h1": "merge pdf Documents Directly in Your Browser",
+  "description": "Use merge-pdf completely in your browser with 100% privacy. No uploads required. Perfect for users in Warsaw.",
+  "sections": [
+    {
+      "type": "hero_features",
+      "title": "Why use our merge-pdf tool?",
+      "content": "Experience the fastest and most secure way to process your files directly in your browser using WebAssembly. No data leaves your device."
+    },
+    {
+      "type": "how_to_steps",
+      "title": "How it Works",
+      "steps": [
+        {
+          "title": "Select Files",
+          "description": "Drag and drop or select files from your device."
+        },
+        {
+          "title": "Process Locally",
+          "description": "Your device CPU processes the file securely without internet uploads."
+        },
+        {
+          "title": "Download Instantly",
+          "description": "Save the output directly to your local storage."
+        }
+      ]
+    },
+    {
+      "type": "geo_targeting",
+      "title": "Optimized for users in Warsaw, PL-MZ",
+      "content": "Whether you are working from a cafe in Warsaw or an office, our offline-first architecture ensures your data remains secure and lightning fast."
+    },
+    {
+      "type": "privacy_security",
+      "title": "Absolute Privacy & WASM Security",
+      "content": "Compliant with enterprise legal privacy requirements (GDPR/HIPAA). No server storage, no data logging."
+    },
+    {
+      "type": "performance",
+      "title": "Unmatched Speed",
+      "content": "Since files are never uploaded to a cloud server, processing time is reduced by 90% compared to traditional cloud aggregators."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is this merge-pdf tool completely free?",
+      "a": "Yes! Our tool is 100% free with no daily usage caps, file size limits, or registration required."
+    },
+    {
+      "q": "Are my private documents uploaded to remote cloud servers?",
+      "a": "No. All file processing is executed 100% locally in your browser memory using WebAssembly."
+    }
+  ]
+}
