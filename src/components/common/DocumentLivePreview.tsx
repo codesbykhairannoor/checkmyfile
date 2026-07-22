@@ -438,7 +438,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'flex-start',
-          minHeight: 650,
+          minHeight: 0,
           width: '100%',
           flex: 1,
           overflow: 'auto',
@@ -628,8 +628,8 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
 
   if (isResult) {
     return (
-      <div className="tool-workspace-container mobile-col" style={{ display: 'flex', width: '100%', height: '100%', maxHeight: 800, minHeight: 650, flex: 1, gap: 24, justifyContent: 'center' }}>
-        <div className="tool-workspace-left mobile-full-width" style={{ flex: 1, height: '100%', minWidth: 0, minHeight: 650, display: 'flex', flexDirection: 'column', gap: 12, overflow: 'hidden', paddingRight: 8, paddingBottom: 24 }}>
+      <div className="tool-workspace-container mobile-col" style={{ display: 'flex', width: '100%', height: 'calc(100vh - 220px)', maxHeight: 800, minHeight: 0, flex: 1, gap: 24, justifyContent: 'center' }}>
+        <div className="tool-workspace-left mobile-full-width" style={{ flex: 1, height: '100%', minWidth: 0, minHeight: 0, display: 'flex', flexDirection: 'column', gap: 12, overflow: 'hidden', paddingRight: 8, paddingBottom: 24 }}>
           {content}
         </div>
 

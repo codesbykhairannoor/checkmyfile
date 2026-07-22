@@ -5,8 +5,15 @@
 - Do not use asymmetric base widths (e.g., `flex: 1 1 680px` vs `flex: 1 1 0%`) because it causes one panel to dominate the screen (e.g., 70:30 ratio) on large monitors.
 
 ## Prevent Workspace Shrinkage (The "Tiny PDF" Bug)
-- Flex column wrappers containing the `DocumentLivePreview` or canvas must ALWAYS have a safe `minHeight` (e.g., `minHeight: 650px`).
-- Using `minHeight: 0` allows the browser to shrink the workspace vertically to make room for bottom elements (like the Progress Bar), which forces the PDF canvas inside to scale down into a tiny, illegible thumbnail.
+- To prevent the PDF canvas from scaling down into a tiny thumbnail on mobile, you must ensure the container has a minimum height so the JS canvas scaling logic has a nonzero `clientHeight` to measure.
+- **CRITICAL**: NEVER fix this by hardcoding `minHeight: 650px` inline! Inline `minHeight` prevents flexbox from shrinking on small desktop screens, causing the UI to overflow and chop off the canvas.
+- **Instead**, keep `minHeight: 0` inline and rely on CSS media queries (e.g., applying classes like `.tool-workspace-left` with `min-height: 50vh !important` on mobile).
 
 ## Prevent Infinite Stretching ("Membentang")
 - Whenever an element is moved out of a constrained sidebar into a full-width section (like moving the Download box to the bottom), its design must remain cohesive and not stretch absurdly wide if the screen is large.
+
+## Strict Viewport Height (100vh) Separation
+- **Desktop**: When a workspace requires a full-screen app feel, DO use viewport heights (e.g., `height: calc(100vh - 220px)`). Do NOT remove these inline `vh` declarations when optimizing for mobile.
+- **Mobile**: NEVER let `100vh` dictate the height of a vertical column layout on mobile, as it will squish elements (Toolbar, Canvas, Sidebar) together and make the page unscrollable.
+- **Implementation**: Override the height strictly in the mobile CSS media query using `height: auto !important` and `max-height: none !important`. 
+- **CRITICAL**: Never hardcode `height: 50vh !important` on a mobile wrapper containing multiple children, as it will prematurely cut off content. Let mobile scroll naturally with `height: auto`.
