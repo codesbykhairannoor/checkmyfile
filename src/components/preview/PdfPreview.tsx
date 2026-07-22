@@ -183,6 +183,43 @@ export const PdfPreview: React.FC<PdfPreviewProps> = ({
       {Array.from({ length: totalPages }).map((_, i) => {
         const pageNum = i + 1;
         const totalRotate = ((externalRotate !== undefined ? externalRotate : previewRotate) % 360 + 360) % 360;
+        
+        let wrapperHeight = undefined;
+        let innerScale = 1;
+        
+        if (resizeConfig) {
+          const PAGE_SIZES: Record<string, [number, number]> = {
+            'A4': [595.28, 841.89],
+            'A3': [841.89, 1190.55],
+            'Letter': [612, 792],
+            'Legal': [612, 1008]
+          };
+          let [targetW, targetH] = PAGE_SIZES[resizeConfig.pageSize] || PAGE_SIZES['A4'];
+          
+          if (resizeConfig.orientation === 'Portrait' && targetW > targetH) {
+            [targetW, targetH] = [targetH, targetW];
+          } else if (resizeConfig.orientation === 'Landscape' && targetW < targetH) {
+            [targetW, targetH] = [targetH, targetW];
+          } else if (resizeConfig.orientation === 'Auto') {
+            if ((pageAspectRatio > 1 && targetW < targetH) || (pageAspectRatio < 1 && targetW > targetH)) {
+              [targetW, targetH] = [targetH, targetW];
+            }
+          }
+          
+          const targetRatio = targetW / targetH;
+          wrapperHeight = pixelWidth / targetRatio;
+          
+          // Calculate scale to fit the original PDF inside the new paper size (minus margin)
+          const availableW = pixelWidth - (resizeConfig.margin * 2);
+          const availableH = wrapperHeight - (resizeConfig.margin * 2);
+          
+          const origW = availableW;
+          const origH = origW / pageAspectRatio;
+          
+          if (origH > availableH) {
+             innerScale = availableH / origH;
+          }
+        }
 
         return (
           <div 
@@ -191,10 +228,14 @@ export const PdfPreview: React.FC<PdfPreviewProps> = ({
             style={{ 
               position: 'relative', 
               width: pixelWidth ? `${pixelWidth}px` : '100%', 
+              height: wrapperHeight ? `${wrapperHeight}px` : 'auto',
               cursor: onSignatureUpdate ? 'crosshair' : 'default',
-              padding: resizeConfig?.margin ? `${resizeConfig.margin}px` : 0,
               background: resizeConfig ? '#ffffff' : 'transparent',
-              boxShadow: resizeConfig ? paperShadow : 'none'
+              boxShadow: resizeConfig ? paperShadow : 'none',
+              display: resizeConfig ? 'flex' : 'block',
+              alignItems: 'center',
+              justifyContent: 'center',
+              overflow: 'hidden'
             }}
             onClick={(e) => {
               if (onSignatureUpdate && signatureConfig && signatureConfig.pageIndex !== (pageNum - 1)) {
@@ -205,15 +246,23 @@ export const PdfPreview: React.FC<PdfPreviewProps> = ({
               }
             }}
           >
-            <LazyPdfPage
-              pdfDoc={pdfDoc}
-              pageNum={pageNum}
-              zoomScale={1.0}
-              totalRotate={totalRotate}
-              wrapperWidth={pixelWidth ? (pixelWidth - (resizeConfig?.margin ? resizeConfig.margin * 2 : 0)) : 600}
-              paperShadow={resizeConfig ? 'none' : paperShadow}
-              defaultRatio={pageAspectRatio}
-            />
+            <div style={{
+              transform: resizeConfig ? `scale(${innerScale})` : 'none',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: resizeConfig ? (pixelWidth - (resizeConfig.margin * 2)) : '100%'
+            }}>
+              <LazyPdfPage
+                pdfDoc={pdfDoc}
+                pageNum={pageNum}
+                zoomScale={1.0}
+                totalRotate={totalRotate}
+                wrapperWidth={resizeConfig ? (pixelWidth - (resizeConfig.margin * 2)) : (pixelWidth || 600)}
+                paperShadow={resizeConfig ? 'none' : paperShadow}
+                defaultRatio={pageAspectRatio}
+              />
+            </div>
 
             {/* Overlays */}
             {watermarkConfig && (
