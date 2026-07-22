@@ -240,16 +240,21 @@ export const comparePdf = async (
     }
     
     let numDiffPixels = 0;
+    let addedArea = 0;
+    let removedArea = 0;
 
     // Draw semantic highlights for added/modified text using precise word boxes
-    const drawHighlight = (ctx: any, box: any, color: string) => {
+    const drawHighlight = (ctx: any, box: any, color: string, isAdded: boolean) => {
       ctx.fillStyle = color;
+      const area = Math.max(box.cw, 5) * (box.ch * 1.2);
       ctx.fillRect(box.cx, box.cy - box.ch * 0.8, Math.max(box.cw, 5), box.ch * 1.2);
-      numDiffPixels += Math.max(box.cw, 5) * (box.ch * 1.2); // Just counting added pixels for accuracy
+      if (isAdded) addedArea += area; else removedArea += area;
     };
     
-    removedBoxes.forEach(box => drawHighlight(diffCtx1, box, 'rgba(239, 68, 68, 0.25)'));
-    addedBoxes.forEach(box => drawHighlight(diffCtx2, box, 'rgba(239, 68, 68, 0.25)'));
+    removedBoxes.forEach(box => drawHighlight(diffCtx1, box, 'rgba(239, 68, 68, 0.25)', false));
+    addedBoxes.forEach(box => drawHighlight(diffCtx2, box, 'rgba(239, 68, 68, 0.25)', true));
+    
+    numDiffPixels += Math.max(addedArea, removedArea);
 
     // --- MASKED PIXEL DIFF ENGINE (For Graphics/Images only) ---
     const cellSize = 8;
