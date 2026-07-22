@@ -20,6 +20,8 @@ import { ScanToPdfEditor } from './ScanToPdfEditor';
 import { RemoveMetadataEditor } from './RemoveMetadataEditor';
 import { ComparePdfEditor } from './ComparePdfEditor';
 import { RedactPdfEditor } from './RedactPdfEditor';
+import { ReversePdfEditor } from './ReversePdfEditor';
+import { ResizePdfEditor } from './ResizePdfEditor';
 import type { ToolDefinition } from '../../catalog/toolsCatalog';
 
 interface ToolSidebarProps {
@@ -50,6 +52,9 @@ interface ToolSidebarProps {
   pdfPassword?: string; setPdfPassword?: (v: string) => void;
   cropConfig?: any; setCropConfig?: (v: any) => void;
   redactConfig?: any; setRedactConfig?: (v: any) => void;
+  
+  // New tools config
+  resizeConfig?: any; setResizeConfig?: (v: any) => void;
 
   formatSize: (bytes: number) => string;
   acceptTypes?: string;
@@ -64,6 +69,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
   extractImageFormat, setExtractImageFormat,
   removeRange, setRemoveRange, insertFile, setInsertFile, insertAtIndex, setInsertAtIndex, signatureConfig, setSignatureConfig,
   pdfPassword, setPdfPassword, cropConfig, setCropConfig, redactConfig, setRedactConfig,
+  resizeConfig, setResizeConfig,
   formatSize, acceptTypes = '*', allowMultiple = false, pdfPagesCount = 100
 }) => {
   const fileInputRef = React.useRef<HTMLInputElement>(null);
@@ -173,6 +179,15 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
       )}
       {tool.id === 'crop-pdf' && cropConfig && setCropConfig && (
         <CropPdfEditor cropConfig={cropConfig} setCropConfig={setCropConfig} onApply={handleStartProcessing} isProcessing={isProcessing} />
+      )}
+      {tool.id === 'redact-pdf' && redactConfig && setRedactConfig && (
+        <RedactPdfEditor redactConfig={redactConfig} setRedactConfig={setRedactConfig} onProcess={handleStartProcessing} isProcessing={isProcessing} activeFileIndex={activeFileIndex} />
+      )}
+      {tool.id === 'reverse-pdf' && (
+        <ReversePdfEditor onApply={handleStartProcessing} isProcessing={isProcessing} />
+      )}
+      {tool.id === 'resize-pdf' && resizeConfig && setResizeConfig && (
+        <ResizePdfEditor config={resizeConfig} setConfig={setResizeConfig} onApply={handleStartProcessing} isProcessing={isProcessing} />
       )}
       {tool.id === 'extract-images-pdf' && (
         <ExtractImagesEditor onApply={handleStartProcessing} isProcessing={isProcessing} />

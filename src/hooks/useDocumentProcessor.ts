@@ -16,6 +16,8 @@ import { scanToPdf } from '../engines/pdf/scanToPdf';
 import { removeMetadataPdf } from '../engines/pdf/removeMetadataPdf';
 import { comparePdf } from '../engines/pdf/comparePdf';
 import { redactPdf } from '../engines/pdf/redactPdf';
+import { reversePdf } from '../engines/pdf/reversePdf';
+import { resizePdf } from '../engines/pdf/resizePdf';
 import { getUiTranslations } from '../i18n/translations';
 
 interface ProcessorOptions {
@@ -38,6 +40,9 @@ interface ProcessorOptions {
   cropConfig?: any;
   compareFile2?: File | null;
   redactConfig?: any;
+  resizePageSize?: string;
+  resizeOrientation?: string;
+  resizeMargin?: number;
 }
 
 export function useDocumentProcessor() {
@@ -135,6 +140,17 @@ export function useDocumentProcessor() {
         if (!options.redactConfig) throw new Error("Konfigurasi sensor tidak ditemukan.");
         resultBytes = await redactPdf(files[0], options.redactConfig, (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_redacted.pdf`;
+      } else if (toolId === 'reverse-pdf') {
+        resultBytes = await reversePdf(files[0], (p) => setProgress(p));
+        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_reversed.pdf`;
+      } else if (toolId === 'resize-pdf') {
+        const resizeOptions = {
+          pageSize: options.resizePageSize || 'A4',
+          orientation: options.resizeOrientation || 'Auto',
+          margin: options.resizeMargin || 0
+        };
+        resultBytes = await resizePdf(files[0], resizeOptions, (p) => setProgress(p));
+        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_resized.pdf`;
       } else if (toolId === 'page-numbers') {
         resultBytes = await pdfEngine.addPageNumbers(files[0], options.pageNumberConfig, (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_numbered.pdf`;

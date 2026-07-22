@@ -420,6 +420,52 @@ export const advancedPdfTools: ToolDefinition[] = [
         faqs: defaultFaqs('Sensor PDF', 'id'),
       },
     },
+  },
+  {
+    id: 'reverse-pdf',
+    category: 'pdf',
+    iconName: 'ArrowDownUp',
+    slugs: generateSlugsForId('reverse-pdf', {
+      en: 'reverse-pdf',
+      id: 'balik-urutan-pdf',
+    }),
+    seo: {
+      en: {
+        title: 'Reverse PDF Pages - Change PDF Page Order Backwards',
+        h1: 'Reverse the Page Order of Your PDF',
+        description: 'Instantly reverse the sequence of pages in your PDF document from last to first securely in your browser.',
+        faqs: defaultFaqs('Reverse PDF', 'en'),
+      },
+      id: {
+        title: 'Balik Urutan Halaman PDF - Balik PDF dari Belakang',
+        h1: 'Balikkan Urutan Halaman PDF Anda',
+        description: 'Balik urutan halaman PDF Anda dari halaman terakhir menjadi yang pertama dalam hitungan detik secara lokal.',
+        faqs: defaultFaqs('Balik Urutan PDF', 'id'),
+      },
+    },
+  },
+  {
+    id: 'resize-pdf',
+    category: 'pdf',
+    iconName: 'Maximize',
+    slugs: generateSlugsForId('resize-pdf', {
+      en: 'resize-pdf',
+      id: 'ubah-ukuran-pdf',
+    }),
+    seo: {
+      en: {
+        title: 'Resize PDF Pages - Change PDF Page Size and Margins',
+        h1: 'Change the Size and Margins of PDF Pages',
+        description: 'Resize your PDF pages to standard sizes like A4 or Letter, add margins, and perfectly center your content.',
+        faqs: defaultFaqs('Resize PDF', 'en'),
+      },
+      id: {
+        title: 'Ubah Ukuran Kertas PDF & Tambah Margin',
+        h1: 'Ubah Ukuran Kertas PDF Anda (A4, F4, Letter)',
+        description: 'Ubah ukuran halaman PDF Anda ke standar A4/Letter, tambah batas margin putih, dan pusatkan konten tanpa memotong isi.',
+        faqs: defaultFaqs('Ubah Ukuran PDF', 'id'),
+      },
+    },
   }
 ];
 

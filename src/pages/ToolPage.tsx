@@ -55,6 +55,8 @@ const getAcceptTypes = (toolId: string): string => {
     case 'remove-pdf-metadata':
     case 'compare-pdf':
     case 'redact-pdf':
+    case 'reverse-pdf':
+    case 'resize-pdf':
       return '.pdf,application/pdf';
 
     // Word files only
@@ -162,6 +164,12 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
     boxes: {}
   });
 
+  const [resizeConfig, setResizeConfig] = useState({
+    pageSize: 'A4',
+    orientation: 'Auto',
+    margin: 0
+  });
+
   const [activeFileIndex, setActiveFileIndex] = useState<number>(0);
 
   const formatSize = (bytes: number) => {
@@ -178,6 +186,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
       files, toolId: tool.id, toolCategory: tool.category, currentLang,
       splitRange, rotateDegrees, pageNumberConfig, watermarkConfig, compressQuality, extractImageFormat,
       removeRange, insertFile, insertAtIndex, signatureConfig, pdfPassword, cropConfig, redactConfig,
+      resizePageSize: resizeConfig.pageSize, resizeOrientation: resizeConfig.orientation, resizeMargin: resizeConfig.margin,
       ...options
     });
   };
@@ -268,6 +277,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
             pdfPassword={pdfPassword} setPdfPassword={setPdfPassword}
             cropConfig={cropConfig} setCropConfig={setCropConfig}
             redactConfig={redactConfig} setRedactConfig={setRedactConfig}
+            resizeConfig={resizeConfig} setResizeConfig={setResizeConfig}
 
             formatSize={formatSize}
             acceptTypes={getAcceptTypes(tool.id)}
