@@ -52,26 +52,31 @@ interface SeoRichSectionsProps {
 export const SeoRichSections: React.FC<SeoRichSectionsProps> = ({ data }) => {
   if (!data) return null;
 
-  const { sections, faqs, h1 } = data;
+  const { sections, faqs, title, h1, description } = data;
 
   const getHash = (str: string) => {
     let hash = 0;
     for (let i = 0; i < str.length; i++) {
-      hash = str.charCodeAt(i) + ((hash << 5) - hash);
+      hash = (Math.imul(31, hash) + str.charCodeAt(i)) | 0;
     }
     return Math.abs(hash);
   };
-  const seed = getHash(h1 || '');
+  
+  // Combine title and description to guarantee vastly different hashes for different tools/langs
+  const seed = getHash((title || '') + (description || ''));
 
   // Randomize section order deterministically based on seed
   const orderedSections = [...sections];
-  if (seed % 2 === 0 && orderedSections.length > 3) {
+  const flipOrder1 = (seed % 10) > 4; 
+  const flipOrder2 = (seed % 7) > 3;
+
+  if (flipOrder1 && orderedSections.length > 3) {
     // Swap geo and privacy
     const temp = orderedSections[2];
     orderedSections[2] = orderedSections[3];
     orderedSections[3] = temp;
   }
-  if (seed % 3 === 0 && orderedSections.length > 4) {
+  if (flipOrder2 && orderedSections.length > 4) {
     // Swap privacy and performance
     const temp = orderedSections[3];
     orderedSections[3] = orderedSections[4];
@@ -79,7 +84,10 @@ export const SeoRichSections: React.FC<SeoRichSectionsProps> = ({ data }) => {
   }
 
   const renderSection = (section: SeoSectionData, index: number) => {
-    const flipLayout = (seed + index) % 2 === 0;
+    // Use a mix of the global seed, the section type's own hash, and its index to decide layout
+    const sectionHash = getHash(section.type);
+    const flipLayout = (seed + sectionHash + index) % 2 !== 0;
+
     switch (section.type) {
       case 'hero_features':
         return (
