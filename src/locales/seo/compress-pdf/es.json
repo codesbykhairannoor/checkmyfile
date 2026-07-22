@@ -1,55 +1,55 @@
 {
-  "title": "compress pdf - Zero Upload Client-Side Tool (Spanish)",
-  "h1": "compress pdf Documents Directly in Your Browser",
-  "description": "Use compress-pdf completely in your browser with 100% privacy. No uploads required. Perfect for users in Madrid.",
+  "title": "Comprimir PDF Online - Reducir Tamaño",
+  "h1": "Comprime Documentos PDF sin Perder Calidad",
+  "description": "Reduce el tamaño de archivos PDF grandes hasta un 90% usando técnicas locales en WebAssembly. Perfecto para usuarios en Madrid.",
   "sections": [
     {
       "type": "hero_features",
-      "title": "Why use our compress-pdf tool?",
-      "content": "Experience the fastest and most secure way to process your files directly in your browser using WebAssembly. No data leaves your device."
+      "title": "¿Por qué usar nuestra herramienta?",
+      "content": "Experimenta la forma más rápida y segura de procesar tus archivos directamente en tu navegador. Ningún dato sale de tu dispositivo."
     },
     {
       "type": "how_to_steps",
-      "title": "How it Works",
+      "title": "Cómo Funciona",
       "steps": [
         {
-          "title": "Select Files",
-          "description": "Drag and drop or select files from your device."
+          "title": "Seleccionar Archivos",
+          "description": "Arrastra y suelta o selecciona archivos de tu dispositivo."
         },
         {
-          "title": "Process Locally",
-          "description": "Your device CPU processes the file securely without internet uploads."
+          "title": "Procesar Localmente",
+          "description": "La CPU de tu dispositivo procesa el archivo de forma segura sin subirlo a internet."
         },
         {
-          "title": "Download Instantly",
-          "description": "Save the output directly to your local storage."
+          "title": "Descargar al Instante",
+          "description": "Guarda el resultado directamente en tu almacenamiento local."
         }
       ]
     },
     {
       "type": "geo_targeting",
-      "title": "Optimized for users in Madrid, ES-M",
-      "content": "Whether you are working from a cafe in Madrid or an office, our offline-first architecture ensures your data remains secure and lightning fast."
+      "title": "Optimizado para usuarios en Madrid, ES-M",
+      "content": "Ya sea que trabajes desde una cafetería en Madrid o en una oficina, nuestra arquitectura garantiza que tus datos permanezcan seguros."
     },
     {
       "type": "privacy_security",
-      "title": "Absolute Privacy & WASM Security",
-      "content": "Compliant with enterprise legal privacy requirements (GDPR/HIPAA). No server storage, no data logging."
+      "title": "Privacidad Absoluta y Seguridad WASM",
+      "content": "Cumple con los requisitos legales de privacidad empresarial (GDPR/HIPAA). Sin almacenamiento en servidor, sin registro de datos."
     },
     {
       "type": "performance",
-      "title": "Unmatched Speed",
-      "content": "Since files are never uploaded to a cloud server, processing time is reduced by 90% compared to traditional cloud aggregators."
+      "title": "Velocidad Inigualable",
+      "content": "Como los archivos nunca se suben a la nube, el tiempo de procesamiento se reduce en un 90% en comparación con la nube tradicional."
     }
   ],
   "faqs": [
     {
-      "q": "Is this compress-pdf tool completely free?",
-      "a": "Yes! Our tool is 100% free with no daily usage caps, file size limits, or registration required."
+      "q": "¿Esta herramienta es completamente gratuita?",
+      "a": "¡Sí! Nuestra herramienta es 100% gratuita sin límites de uso diario, límites de tamaño ni registros."
     },
     {
-      "q": "Are my private documents uploaded to remote cloud servers?",
-      "a": "No. All file processing is executed 100% locally in your browser memory using WebAssembly."
+      "q": "¿Mis documentos privados se suben a la nube?",
+      "a": "No. Todo el procesamiento se ejecuta 100% localmente en tu navegador usando WebAssembly."
     }
   ]
 }

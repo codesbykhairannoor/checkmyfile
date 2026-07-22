@@ -4,7 +4,7 @@ import { SeoHead } from '../components/seo/SeoHead';
 import { FileDropzone } from '../components/common/FileDropzone';
 import { ProgressBar } from '../components/common/ProgressBar';
 import { DocumentLivePreview } from '../components/common/DocumentLivePreview';
-import { SeoRichSections } from '../components/common/SeoRichSections';
+import { SeoRichSections, useSeoData } from '../components/common/SeoRichSections';
 import { Download } from 'lucide-react';
 import { useWorkspaceFiles } from '../hooks/useWorkspaceFiles';
 
@@ -149,6 +149,8 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
     height: 10,
     imageUrl: ''
   });
+  
+  const seoData = useSeoData(tool.id, currentLang);
   const [pdfPassword, setPdfPassword] = useState<string>('');
   
   const [cropConfig, setCropConfig] = useState({
@@ -225,7 +227,17 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
       <SeoHead tool={tool} lang={currentLang} />
 
 
-      {/* Header handled by SeoRichSections */}
+      {/* Dynamic Header - Hidden in Workspace Mode and Result Mode to maximize preview space */}
+      {files.length === 0 && !isCompleted && (
+        <div style={{ textAlign: 'center', marginBottom: 40, marginTop: 40, padding: '0 20px' }}>
+          <h1 style={{ fontSize: 'clamp(1.8rem, 4vw, 3.5rem)', fontWeight: 900, fontFamily: 'var(--font-display)', marginBottom: 16, background: 'linear-gradient(to right, var(--text-main), var(--text-accent))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+            {seoData.data ? seoData.data.h1 : seo.h1}
+          </h1>
+          <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem', maxWidth: 800, margin: '0 auto', lineHeight: 1.6 }}>
+            {seoData.data ? seoData.data.description : seo.description}
+          </p>
+        </div>
+      )}
 
       {/* Interactive Document Live Preview & Editor */}
       {files.length > 0 && !isCompleted && (
@@ -329,7 +341,11 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
             accept={getAcceptTypes(tool.id)}
             multiple={tool.id === 'merge-pdf' || tool.id === 'gabung-pdf' || tool.id === 'image-to-pdf' || tool.id === 'gambar-ke-pdf'}
           />
-          <SeoRichSections toolId={tool.id} lang={currentLang} fallbackH1={seo.h1} fallbackDescription={seo.description} />
+          {seoData.loading ? (
+             <div style={{ minHeight: 400, display: 'flex', justifyContent: 'center', alignItems: 'center' }}><div className="spinner" style={{ width: 40, height: 40, border: '4px solid var(--border-color)', borderTopColor: 'var(--text-accent)', borderRadius: '50%', animation: 'spin 1s linear infinite' }}></div></div>
+          ) : (
+             <SeoRichSections data={seoData.data} />
+          )}
         </>
       )}
 

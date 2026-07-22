@@ -16,14 +16,7 @@ interface SeoJson {
   faqs: { q: string; a: string }[];
 }
 
-interface SeoRichSectionsProps {
-  toolId: string;
-  lang: string;
-  fallbackH1: string;
-  fallbackDescription: string;
-}
-
-export const SeoRichSections: React.FC<SeoRichSectionsProps> = ({ toolId, lang, fallbackH1, fallbackDescription }) => {
+export const useSeoData = (toolId: string, lang: string) => {
   const [data, setData] = useState<SeoJson | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -49,52 +42,52 @@ export const SeoRichSections: React.FC<SeoRichSectionsProps> = ({ toolId, lang, 
     return () => { isMounted = false; };
   }, [toolId, lang]);
 
-  if (loading) {
-    return <div style={{ minHeight: 400, display: 'flex', justifyContent: 'center', alignItems: 'center' }}><div className="spinner" style={{ width: 40, height: 40, border: '4px solid var(--border-color)', borderTopColor: 'var(--text-accent)', borderRadius: '50%', animation: 'spin 1s linear infinite' }}></div></div>;
-  }
+  return { data, loading };
+};
 
-  if (!data) {
-    return (
-      <div style={{ textAlign: 'center', padding: '60px 20px' }}>
-        <h1 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', fontWeight: 800, fontFamily: 'var(--font-display)', marginBottom: 12 }}>
-          {fallbackH1}
-        </h1>
-        <p style={{ color: 'var(--text-muted)', fontSize: '1.05rem', maxWidth: 700, margin: '0 auto' }}>
-          {fallbackDescription}
-        </p>
-      </div>
-    );
-  }
+interface SeoRichSectionsProps {
+  data: SeoJson | null;
+}
 
-  const { h1, description, sections, faqs } = data;
+export const SeoRichSections: React.FC<SeoRichSectionsProps> = ({ data }) => {
+  if (!data) return null;
+
+  const { sections, faqs } = data;
 
   const renderSection = (section: SeoSectionData, index: number) => {
     switch (section.type) {
       case 'hero_features':
         return (
-          <section key={index} className="seo-section hero-features" style={{ padding: '80px 24px', textAlign: 'center', background: 'var(--bg-card)', borderRadius: 24, margin: '40px 0', border: '1px solid var(--border-color)' }}>
-            <div style={{ maxWidth: 800, margin: '0 auto' }}>
-              <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 64, height: 64, borderRadius: 16, background: 'rgba(99, 102, 241, 0.1)', color: '#6366f1', marginBottom: 24 }}>
-                <Star size={32} />
+          <section key={index} className="seo-section hero-features" style={{ padding: '80px 24px', margin: '40px 0', borderBottom: '1px solid var(--border-color)' }}>
+            <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 48 }}>
+              <div style={{ flex: '1 1 400px' }}>
+                <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 64, height: 64, borderRadius: 16, background: 'rgba(99, 102, 241, 0.1)', color: '#6366f1', marginBottom: 24 }}>
+                  <Star size={32} />
+                </div>
+                <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 800, marginBottom: 24, color: 'var(--text-main)', lineHeight: 1.2 }}>{section.title}</h2>
+                <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>{section.content}</p>
               </div>
-              <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2.2rem)', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)' }}>{section.title}</h2>
-              <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: 1.7 }}>{section.content}</p>
+              <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}>
+                <div style={{ width: '100%', aspectRatio: '4/3', background: 'linear-gradient(135deg, var(--bg-card), var(--bg-main))', borderRadius: 24, border: '1px solid var(--border-color)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 20px 40px rgba(0,0,0,0.05)' }}>
+                  <Shield size={100} style={{ color: '#6366f1', opacity: 0.8 }} />
+                </div>
+              </div>
             </div>
           </section>
         );
       
       case 'how_to_steps':
         return (
-          <section key={index} className="seo-section how-to-steps" style={{ padding: '60px 24px', margin: '40px 0' }}>
-            <h2 style={{ fontSize: '2rem', fontWeight: 800, textAlign: 'center', marginBottom: 48, color: 'var(--text-main)' }}>{section.title}</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 32, maxWidth: 1000, margin: '0 auto' }}>
+          <section key={index} className="seo-section how-to-steps" style={{ padding: '80px 24px', margin: '40px 0', background: 'var(--bg-card)', borderRadius: 32 }}>
+            <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 800, textAlign: 'center', marginBottom: 60, color: 'var(--text-main)' }}>{section.title}</h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: 40, maxWidth: 1000, margin: '0 auto' }}>
               {section.steps?.map((step, i) => (
-                <div key={i} className="glass-panel" style={{ padding: 32, textAlign: 'center', position: 'relative' }}>
-                  <div style={{ position: 'absolute', top: -20, left: '50%', transform: 'translateX(-50%)', width: 48, height: 48, borderRadius: '50%', background: 'linear-gradient(135deg, #6366f1, #a855f7)', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem', fontWeight: 800, boxShadow: '0 8px 16px rgba(99,102,241,0.3)' }}>
+                <div key={i} style={{ textAlign: 'left', position: 'relative', paddingLeft: 40 }}>
+                  <div style={{ position: 'absolute', top: 0, left: 0, width: 28, height: 28, borderRadius: '50%', background: 'var(--text-main)', color: 'var(--bg-main)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', fontWeight: 800 }}>
                     {i + 1}
                   </div>
-                  <h3 style={{ fontSize: '1.2rem', fontWeight: 700, marginTop: 16, marginBottom: 12, color: 'var(--text-main)' }}>{step.title}</h3>
-                  <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>{step.description}</p>
+                  <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: 12, color: 'var(--text-main)' }}>{step.title}</h3>
+                  <p style={{ fontSize: '1.05rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>{step.description}</p>
                 </div>
               ))}
             </div>
@@ -103,33 +96,43 @@ export const SeoRichSections: React.FC<SeoRichSectionsProps> = ({ toolId, lang, 
 
       case 'geo_targeting':
         return (
-          <section key={index} className="seo-section geo-targeting" style={{ padding: '60px 24px', margin: '40px 0', background: 'linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(59, 130, 246, 0.05))', borderRadius: 24 }}>
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', maxWidth: 800, margin: '0 auto' }}>
-              <Globe size={48} color="#10b981" style={{ marginBottom: 24 }} />
-              <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2.2rem)', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)' }}>{section.title}</h2>
-              <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: 1.7 }}>{section.content}</p>
+          <section key={index} className="seo-section geo-targeting" style={{ padding: '80px 24px', margin: '40px 0' }}>
+            <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', flexWrap: 'wrap-reverse', alignItems: 'center', gap: 48 }}>
+              <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}>
+                <div style={{ width: '100%', aspectRatio: '1/1', maxWidth: 400, background: 'linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(59, 130, 246, 0.1))', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <Globe size={120} color="#10b981" />
+                </div>
+              </div>
+              <div style={{ flex: '1 1 400px' }}>
+                <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 800, marginBottom: 24, color: 'var(--text-main)', lineHeight: 1.2 }}>{section.title}</h2>
+                <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>{section.content}</p>
+              </div>
             </div>
           </section>
         );
 
       case 'privacy_security':
         return (
-          <section key={index} className="seo-section privacy-security" style={{ padding: '60px 24px', margin: '40px 0', border: '1px solid rgba(16, 185, 129, 0.3)', borderRadius: 24, background: 'rgba(16, 185, 129, 0.02)' }}>
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', maxWidth: 800, margin: '0 auto' }}>
-              <Shield size={48} color="#10b981" style={{ marginBottom: 24 }} />
-              <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2.2rem)', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)' }}>{section.title}</h2>
-              <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: 1.7 }}>{section.content}</p>
+          <section key={index} className="seo-section privacy-security" style={{ padding: '80px 24px', margin: '60px 0', background: 'linear-gradient(to right, rgba(16, 185, 129, 0.05), transparent)', borderRadius: 32, borderLeft: '8px solid #10b981' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'flex-start', gap: 32, maxWidth: 1000, margin: '0 auto' }}>
+              <div style={{ width: 80, height: 80, borderRadius: 24, background: '#10b981', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                <Shield size={40} />
+              </div>
+              <div style={{ flex: 1, minWidth: 300 }}>
+                <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)' }}>{section.title}</h2>
+                <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.7 }}>{section.content}</p>
+              </div>
             </div>
           </section>
         );
 
       case 'performance':
         return (
-          <section key={index} className="seo-section performance" style={{ padding: '60px 24px', margin: '40px 0' }}>
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', maxWidth: 800, margin: '0 auto' }}>
-              <Zap size={48} color="#f59e0b" style={{ marginBottom: 24 }} />
-              <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2.2rem)', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)' }}>{section.title}</h2>
-              <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: 1.7 }}>{section.content}</p>
+          <section key={index} className="seo-section performance" style={{ padding: '80px 24px', margin: '40px 0', textAlign: 'center' }}>
+            <div style={{ maxWidth: 800, margin: '0 auto' }}>
+              <Zap size={64} color="#f59e0b" style={{ marginBottom: 32, filter: 'drop-shadow(0 0 20px rgba(245, 158, 11, 0.4))' }} />
+              <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 800, marginBottom: 24, color: 'var(--text-main)', lineHeight: 1.2 }}>{section.title}</h2>
+              <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>{section.content}</p>
             </div>
           </section>
         );
@@ -141,16 +144,6 @@ export const SeoRichSections: React.FC<SeoRichSectionsProps> = ({ toolId, lang, 
 
   return (
     <article className="seo-rich-sections-container" style={{ width: '100%', maxWidth: 1200, margin: '0 auto', paddingTop: 60 }}>
-      {/* Dynamic Header */}
-      <div style={{ textAlign: 'center', marginBottom: 80, padding: '0 20px' }}>
-        <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 900, fontFamily: 'var(--font-display)', marginBottom: 16, background: 'linear-gradient(to right, var(--text-main), var(--text-accent))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-          {h1}
-        </h1>
-        <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem', maxWidth: 800, margin: '0 auto', lineHeight: 1.6 }}>
-          {description}
-        </p>
-      </div>
-
       {/* Dynamic Sections */}
       {sections.map((section, index) => renderSection(section, index))}
 

@@ -1,55 +1,55 @@
 {
-  "title": "merge pdf - Zero Upload Client-Side Tool (Indonesian)",
-  "h1": "merge pdf Documents Directly in Your Browser",
-  "description": "Use merge-pdf completely in your browser with 100% privacy. No uploads required. Perfect for users in Jakarta.",
+  "title": "Gabung PDF - Pemrosesan Lokal Tanpa Unggah Server",
+  "h1": "Gabungkan File PDF Secara Instan di Browser Anda",
+  "description": "Satukan beberapa file PDF menjadi satu dokumen berurutan dengan teknologi WebAssembly lokal. Tanpa batasan kuota, 100% privat dan aman. Sangat cocok untuk pengguna di Jakarta.",
   "sections": [
     {
       "type": "hero_features",
-      "title": "Why use our merge-pdf tool?",
-      "content": "Experience the fastest and most secure way to process your files directly in your browser using WebAssembly. No data leaves your device."
+      "title": "Mengapa menggunakan alat kami?",
+      "content": "Rasakan cara tercepat dan paling aman untuk memproses file Anda langsung di browser menggunakan WebAssembly. Tidak ada data yang keluar dari perangkat Anda."
     },
     {
       "type": "how_to_steps",
-      "title": "How it Works",
+      "title": "Cara Kerja",
       "steps": [
         {
-          "title": "Select Files",
-          "description": "Drag and drop or select files from your device."
+          "title": "Pilih File",
+          "description": "Seret dan lepas atau pilih file dari perangkat Anda."
         },
         {
-          "title": "Process Locally",
-          "description": "Your device CPU processes the file securely without internet uploads."
+          "title": "Proses Lokal",
+          "description": "CPU perangkat Anda memproses file dengan aman tanpa mengunggah ke internet."
         },
         {
-          "title": "Download Instantly",
-          "description": "Save the output directly to your local storage."
+          "title": "Unduh Instan",
+          "description": "Simpan hasilnya langsung ke penyimpanan lokal Anda."
         }
       ]
     },
     {
       "type": "geo_targeting",
-      "title": "Optimized for users in Jakarta, ID-JK",
-      "content": "Whether you are working from a cafe in Jakarta or an office, our offline-first architecture ensures your data remains secure and lightning fast."
+      "title": "Dioptimalkan untuk pengguna di Jakarta, ID-JK",
+      "content": "Baik Anda bekerja dari kafe di Jakarta maupun di kantor, arsitektur offline-first kami memastikan data Anda tetap aman dan secepat kilat."
     },
     {
       "type": "privacy_security",
-      "title": "Absolute Privacy & WASM Security",
-      "content": "Compliant with enterprise legal privacy requirements (GDPR/HIPAA). No server storage, no data logging."
+      "title": "Privasi Mutlak & Keamanan WASM",
+      "content": "Mematuhi persyaratan privasi hukum perusahaan (GDPR/HIPAA). Tidak ada penyimpanan server, tidak ada pencatatan data."
     },
     {
       "type": "performance",
-      "title": "Unmatched Speed",
-      "content": "Since files are never uploaded to a cloud server, processing time is reduced by 90% compared to traditional cloud aggregators."
+      "title": "Kecepatan Tak Tertandingi",
+      "content": "Karena file tidak pernah diunggah ke server cloud, waktu pemrosesan berkurang hingga 90% dibandingkan dengan agregator cloud tradisional."
     }
   ],
   "faqs": [
     {
-      "q": "Is this merge-pdf tool completely free?",
-      "a": "Yes! Our tool is 100% free with no daily usage caps, file size limits, or registration required."
+      "q": "Apakah alat ini sepenuhnya gratis?",
+      "a": "Ya! Alat kami 100% gratis tanpa batasan penggunaan harian, batasan ukuran file, atau pendaftaran."
     },
     {
-      "q": "Are my private documents uploaded to remote cloud servers?",
-      "a": "No. All file processing is executed 100% locally in your browser memory using WebAssembly."
+      "q": "Apakah dokumen pribadi saya diunggah ke server cloud?",
+      "a": "Tidak. Semua pemrosesan file dieksekusi 100% secara lokal di memori browser Anda menggunakan WebAssembly."
     }
   ]
 }
