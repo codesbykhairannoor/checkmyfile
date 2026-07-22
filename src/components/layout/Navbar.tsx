@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { LocaleSwitcher } from './LocaleSwitcher';
-import { Sun, Moon, FileText, ChevronDown, ChevronUp, Grid, Combine, Scissors, Minimize2, FileSpreadsheet, LayoutList, Crop, ScanText, ScanLine, Eraser, Scale, EyeOff, RotateCw, Hash, Stamp, Presentation, AlignLeft, TableProperties, Image, Images, Trash2, PenTool, Lock, Unlock, Contrast } from 'lucide-react';
+import { Sun, Moon, FileText, ChevronDown, ChevronUp, Grid, Combine, Scissors, Minimize2, FileSpreadsheet, LayoutList, Crop, ScanText, ScanLine, Eraser, Scale, EyeOff, RotateCw, Hash, Stamp, Presentation, AlignLeft, TableProperties, Image, Images, Trash2, PenTool, Lock, Unlock, Contrast, Maximize, ArrowDownUp } from 'lucide-react';
 import { TOOLS_CATALOG, getToolById, type ToolDefinition } from '../../catalog/toolsCatalog';
 
 interface NavbarProps {
@@ -319,6 +319,20 @@ export const Navbar: React.FC<NavbarProps> = ({
                   <div>
                     <div className="item-title">Compare PDF</div>
                     <div className="item-desc">Find visual differences</div>
+                  </div>
+                </div>
+                <div onClick={() => handleToolClick('resize-pdf')} className="mega-menu-item">
+                  <Maximize size={18} />
+                  <div>
+                    <div className="item-title">Resize PDF</div>
+                    <div className="item-desc">Change paper size & margins</div>
+                  </div>
+                </div>
+                <div onClick={() => handleToolClick('reverse-pdf')} className="mega-menu-item">
+                  <ArrowDownUp size={18} />
+                  <div>
+                    <div className="item-title">Reverse PDF</div>
+                    <div className="item-desc">Reverse page order backwards</div>
                   </div>
                 </div>
               </div>
