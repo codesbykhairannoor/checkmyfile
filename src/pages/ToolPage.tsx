@@ -408,12 +408,28 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
               files={resultPreviewFiles || [resultFile]}
               currentLang={currentLang}
               isResult={true}
+              renderBottomRight={
+                tool.id !== 'compare-pdf' ? (
+                  <ProgressBar
+                    currentLang={currentLang}
+                    isProcessing={isProcessing}
+                    progress={progress}
+                    statusText={statusText}
+                    isCompleted={isCompleted}
+                    onDownload={handleDownload}
+                    onReset={handleReset}
+                    originalFilename={downloadFilename}
+                    originalSize={tool.id === 'compress-pdf' && files.length > 0 ? files[0].size : undefined}
+                    compressedSize={tool.id === 'compress-pdf' && resultFile ? resultFile.size : undefined}
+                  />
+                ) : undefined
+              }
             />
           )}
 
-          {/* THE ANCHOR SECTION: Full Width Download Box */}
-          <div style={{ width: '100%', maxWidth: 1440, margin: '24px auto', padding: '0 24px' }}>
-            {tool.id === 'compare-pdf' ? (
+          {/* THE ANCHOR SECTION: Only for Compare PDF */}
+          {tool.id === 'compare-pdf' && (
+            <div style={{ width: '100%', maxWidth: 1440, margin: '24px auto', padding: '0 24px' }}>
               <div className="glass-panel" style={{ padding: '24px 32px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 24, background: 'rgba(16, 185, 129, 0.05)', border: '1px solid rgba(16, 185, 129, 0.3)' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
                   <div style={{ fontSize: '2rem', fontWeight: 900, color: processorMetadata?.accuracy && processorMetadata.accuracy > 95 ? '#10b981' : '#f59e0b', lineHeight: 1 }}>
@@ -431,22 +447,8 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                   </button>
                 </div>
               </div>
-            ) : (
-              <ProgressBar
-                currentLang={currentLang}
-                isProcessing={isProcessing}
-                progress={progress}
-                statusText={statusText}
-                isCompleted={isCompleted}
-                onDownload={handleDownload}
-                onReset={handleReset}
-                originalFilename={downloadFilename}
-                originalSize={tool.id === 'compress-pdf' && files.length > 0 ? files[0].size : undefined}
-                compressedSize={tool.id === 'compress-pdf' && resultFile ? resultFile.size : undefined}
-                style={{ margin: 0 }}
-              />
-            )}
-          </div>
+            </div>
+          )}
         </div>
       )}
 
