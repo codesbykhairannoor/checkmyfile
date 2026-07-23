@@ -1,6 +1,42 @@
 import React, { useState, useEffect, useRef } from 'react';
 import LazyPdfPage from './LazyPdfPage';
 
+const toRoman = (num: number): string => {
+  if (num < 1) return '';
+  const val = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+  const rom = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
+  let roman = '';
+  for (let i = 0; i < val.length; i++) {
+    while (num >= val[i]) {
+      roman += rom[i];
+      num -= val[i];
+    }
+  }
+  return roman;
+};
+
+const toAlpha = (num: number): string => {
+  if (num < 1) return '';
+  let alpha = '';
+  while (num > 0) {
+    const r = (num - 1) % 26;
+    alpha = String.fromCharCode(65 + r) + alpha;
+    num = Math.floor((num - r) / 26);
+  }
+  return alpha;
+};
+
+const formatNumber = (num: number, style?: string): string => {
+  switch (style) {
+    case 'roman_upper': return toRoman(num);
+    case 'roman_lower': return toRoman(num).toLowerCase();
+    case 'alpha_upper': return toAlpha(num);
+    case 'alpha_lower': return toAlpha(num).toLowerCase();
+    case 'arabic':
+    default: return num.toString();
+  }
+};
+
 const DraggableSignature = ({ config, onUpdate }: { config: any, onUpdate: (x: number, y: number) => void }) => {
   const [isDragging, setIsDragging] = useState(false);
   const startPos = useRef({ x: 0, y: 0 });
@@ -397,9 +433,12 @@ export const PdfPreview: React.FC<PdfPreviewProps> = ({
               if (pageNum < pageNumberConfig.startPage) return null;
               
               const currentNumber = pageNumberConfig.startNumber + (pageNum - pageNumberConfig.startPage);
+              const formattedNumber = formatNumber(currentNumber, pageNumberConfig.numberStyle);
+              const formattedTotal = formatNumber(totalPages, pageNumberConfig.numberStyle);
+              
               const text = (pageNumberConfig.format || '{n}')
-                .replace('{n}', currentNumber.toString())
-                .replace('{p}', totalPages.toString());
+                .replace('{n}', formattedNumber)
+                .replace('{p}', formattedTotal);
 
               return (
                 <div style={{

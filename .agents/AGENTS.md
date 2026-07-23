@@ -31,3 +31,7 @@
 ## No Glow Effects
 - The user **HATES** the "glow" concept (e.g., blurred radiant or ambient background shadows).
 - **NEVER** use `filter: blur(...)` or `radial-gradient` glow effects for decorative ambient lighting behind elements. Keep designs clean, flat, and solid.
+
+## Scroll Lock & Full-Width CTA (The Anchor Strategy)
+- When building a dual-panel workspace that feels constrained or scroll-locked due to `100vh` or flex constraints, **do not** hide the primary Call-to-Action (like the Download Box) inside the Right Sidebar.
+- **Instead**, move the Download Box / Action Bar OUT of the sidebars and make it a full-width bottom section (spanning below the dual-panel flex container). This forces the browser to create a vertical scrollbar, freeing the panels from scroll-lock and allowing both sidebars to use `flex: 1` symmetrically.

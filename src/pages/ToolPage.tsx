@@ -397,24 +397,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                     <DocumentLivePreview files={[resultFile]} currentLang={currentLang} isResult={true} hideSidebar={true} />
                   </div>
 
-                  {/* FLOATING ACTION PILL */}
-                  <div style={{ position: 'absolute', bottom: 24, left: '50%', transform: 'translateX(-50%)', zIndex: 20, background: 'rgba(255,255,255,0.95)', backdropFilter: 'blur(10px)', padding: '12px 24px', borderRadius: 100, boxShadow: '0 8px 32px rgba(0,0,0,0.15)', display: 'flex', alignItems: 'center', gap: 24, border: '1px solid rgba(0,0,0,0.05)', whiteSpace: 'normal', width: 'max-content', maxWidth: '90%' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                      <div style={{ fontSize: '1.6rem', fontWeight: 900, color: processorMetadata?.accuracy && processorMetadata.accuracy > 95 ? '#10b981' : '#f59e0b', lineHeight: 1 }}>
-                        {processorMetadata?.accuracy?.toFixed(1) || '0'}%
-                      </div>
-                      <div style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--text-muted)', lineHeight: 1.2, letterSpacing: 0.5 }}>AKURASI<br />KEMIRIPAN</div>
-                    </div>
-                    <div style={{ width: 1, height: 32, background: 'var(--border-color)' }}></div>
-                    <div style={{ display: 'flex', gap: 12 }}>
-                      <button onClick={handleReset} className="btn-secondary" style={{ padding: '8px 16px', fontSize: '0.9rem', borderRadius: 100 }}>
-                        Ulangi
-                      </button>
-                      <button onClick={() => handleDownload()} className="btn-primary" style={{ padding: '8px 16px', fontSize: '0.9rem', borderRadius: 100, display: 'flex', alignItems: 'center', gap: 8 }}>
-                        <Download size={16} /> Unduh Hasil
-                      </button>
-                    </div>
-                  </div>
+                  {/* CTA dipindah ke Anchor Bawah */}
                 </div>
 
               </div>
@@ -424,27 +407,52 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
               files={resultPreviewFiles || [resultFile]}
               currentLang={currentLang}
               isResult={true}
-              renderBottomRight={
-                <ProgressBar
-                  currentLang={currentLang}
-                  isProcessing={isProcessing}
-                  progress={progress}
-                  statusText={statusText}
-                  isCompleted={isCompleted}
-                  onDownload={handleDownload}
-                  onReset={handleReset}
-                  originalFilename={downloadFilename}
-                  originalSize={tool.id === 'compress-pdf' && files.length > 0 ? files[0].size : undefined}
-                  compressedSize={tool.id === 'compress-pdf' && resultFile ? resultFile.size : undefined}
-                />
-              }
             />
           )}
+
+          {/* THE ANCHOR SECTION: Full Width Download Box */}
+          <div style={{ width: '100%', maxWidth: 1440, margin: '24px auto', padding: '0 24px' }}>
+            {tool.id === 'compare-pdf' ? (
+              <div className="glass-panel" style={{ padding: '24px 32px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 24, background: 'rgba(16, 185, 129, 0.05)', border: '1px solid rgba(16, 185, 129, 0.3)' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
+                  <div style={{ fontSize: '2rem', fontWeight: 900, color: processorMetadata?.accuracy && processorMetadata.accuracy > 95 ? '#10b981' : '#f59e0b', lineHeight: 1 }}>
+                    {processorMetadata?.accuracy?.toFixed(1) || '0'}%
+                  </div>
+                  <div>
+                    <h4 style={{ margin: 0, fontSize: '1.1rem', fontWeight: 800 }}>Akurasi Kemiripan</h4>
+                    <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-muted)' }}>Hasil perbandingan dokumen telah selesai.</p>
+                  </div>
+                </div>
+                <div style={{ display: 'flex', gap: 12 }}>
+                  <button onClick={handleReset} className="btn-secondary" style={{ padding: '12px 24px', fontSize: '1rem', borderRadius: 12 }}>Ulangi</button>
+                  <button onClick={() => handleDownload()} className="btn-primary" style={{ padding: '12px 24px', fontSize: '1rem', borderRadius: 12, display: 'flex', alignItems: 'center', gap: 10 }}>
+                    <Download size={18} /> Unduh Hasil
+                  </button>
+                </div>
+              </div>
+            ) : (
+              <ProgressBar
+                currentLang={currentLang}
+                isProcessing={isProcessing}
+                progress={progress}
+                statusText={statusText}
+                isCompleted={isCompleted}
+                onDownload={handleDownload}
+                onReset={handleReset}
+                originalFilename={downloadFilename}
+                originalSize={tool.id === 'compress-pdf' && files.length > 0 ? files[0].size : undefined}
+                compressedSize={tool.id === 'compress-pdf' && resultFile ? resultFile.size : undefined}
+                style={{ margin: 0 }}
+              />
+            )}
+          </div>
         </div>
       )}
 
-      {/* Internal Linking Silo (White Hat AEO) */}
-      <RelatedTools currentToolId={tool.id} category={tool.category} currentLang={currentLang} />
+      {/* Internal Linking Silo (White Hat AEO) - Only show when idle */}
+      {files.length === 0 && !isCompleted && (
+        <RelatedTools currentToolId={tool.id} category={tool.category} currentLang={currentLang} />
+      )}
 
       </article>
     </main>
