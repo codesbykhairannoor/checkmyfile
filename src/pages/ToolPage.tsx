@@ -283,7 +283,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
           <ToolSidebar
             tool={tool} files={files} setFiles={setFiles} activeFileIndex={activeFileIndex} setActiveFileIndex={setActiveFileIndex}
             isProcessing={isProcessing}
-            handleStartProcessing={() => handleStartProcessing({
+            handleStartProcessing={(options) => handleStartProcessing({
               splitRange,
               rotateDegrees,
               pageNumberConfig,
@@ -298,7 +298,8 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
               cropConfig,
               redactConfig,
               resizeConfig,
-              editElements
+              editElements,
+              ...options
             })}
             splitRange={splitRange} setSplitRange={setSplitRange}
             rotateDegrees={rotateDegrees} setRotateDegrees={setRotateDegrees}
