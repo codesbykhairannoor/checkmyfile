@@ -1,67 +1,85 @@
 {
-  "title": "Scan to PDF — Convert Camera Shots Offline",
-  "h1": "Convert Photos and Scans to PDF Locally",
-  "description": "Turn photos of documents taken with your camera into clean PDFs entirely in your browser. No upload. Best for users in Prague.",
+  "title": "Skenování do PDF — Převod snímků z fotoaparátu offline",
+  "h1": "Převést fotografie a skeny do PDF lokálně",
+  "description": "Proměňte fotografie dokumentů pořízených fotoaparátem na čisté soubory PDF zcela ve vašem prohlížeči. Žádné nahrávání. 100% bezpečné místní zpracování.",
+  "buttonText": "Scan to PDF",
+  "badges": [
+    "Použít webovou kameru",
+    "Mobilní skener",
+    "Automatické oříznutí"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Use Scan-to-PDF Offline?",
-      "content": "Photos of documents contain sensitive information. Process them locally without any cloud access."
+      "type": "scan_hero_features",
+      "title": "Proč používat skenování do PDF offline?",
+      "content": "Fotografie dokumentů obsahují citlivé informace. Zpracujte je lokálně bez jakéhokoli cloudového přístupu."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Scans to PDF",
+      "type": "scan_how_to_steps",
+      "title": "Jak převést skeny do PDF",
       "steps": [
         {
-          "title": "Import Photos",
-          "description": "Select photos taken with your phone or camera."
+          "title": "Import fotografií",
+          "description": "Vyberte fotografie pořízené telefonem nebo fotoaparátem."
         },
         {
-          "title": "Enhance Scan",
-          "description": "Auto-crop, deskew, and enhance contrast."
+          "title": "Vylepšit skenování",
+          "description": "Automatické oříznutí, zkosení a vylepšení kontrastu."
         },
         {
           "title": "Export PDF",
-          "description": "Download a clean, professional-looking scanned PDF."
+          "description": "Stáhněte si čisté, profesionálně vypadající naskenované PDF."
         }
-      ]
+      ],
+      "badgeText": "Rychlý průvodce"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Scan to PDF for Prague Field Workers",
-      "content": "Field workers and freelancers in Prague digitize paper documents on-the-go without uploading to cloud services."
+      "type": "scan_geo_targeting",
+      "title": "100% bezpečné místní zpracování",
+      "content": "Všechny operace se provádějí přímo na vašem místním zařízení. Ke zpracování vašich dokumentů používáme pokročilou technologii WebAssembly, aniž bychom je kdy nahrávali na externí servery, což zajišťuje naprosté soukromí.",
+      "badgeText": "Místní zpracování"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Documents Stay on Device",
-      "content": "Invoices, contracts, and ID scans processed entirely in browser memory without any server access."
+      "type": "scan_privacy_security",
+      "title": "Naskenované dokumenty zůstanou na zařízení",
+      "content": "Faktury, smlouvy a skeny ID se zpracovávají výhradně v paměti prohlížeče bez jakéhokoli přístupu k serveru.",
+      "badgeText": "Bezpečnost především"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Scans in Real Time",
-      "content": "Photo enhancement and PDF generation happens in milliseconds, even for high-resolution camera shots."
+      "type": "scan_performance",
+      "title": "Převod skenování v reálném čase",
+      "content": "Vylepšení fotografií a generování PDF probíhá během milisekund, a to i u snímků z fotoaparátu s vysokým rozlišením.",
+      "badgeText": "Bleskově rychlý"
     }
   ],
   "faqs": [
     {
-      "q": "What photo formats are supported?",
-      "a": "JPG, PNG, WebP, and HEIC from modern cameras."
+      "q": "Jaké formáty fotografií jsou podporovány?",
+      "a": "JPG, PNG, WebP a HEIC z moderních fotoaparátů."
     },
     {
-      "q": "Does it fix tilted scans?",
-      "a": "Yes, auto-deskew corrects slight angles automatically."
+      "q": "Opravuje to nakloněné skeny?",
+      "a": "Ano, auto-deskew automaticky opravuje malé úhly."
     },
     {
-      "q": "Can I combine multiple scans?",
-      "a": "Yes, add multiple photos to create a multi-page PDF."
+      "q": "Mohu kombinovat více skenů?",
+      "a": "Ano, přidejte více fotografií a vytvořte vícestránkový soubor PDF."
     },
     {
-      "q": "Does it enhance contrast?",
-      "a": "Yes, document enhancement mode sharpens text for clarity."
+      "q": "Zvyšuje kontrast?",
+      "a": "Ano, režim vylepšení dokumentu zostřuje text pro srozumitelnost."
     },
     {
-      "q": "Is this free?",
-      "a": "Ano, zcela zdarma."
+      "q": "Je to zdarma?",
+      "a": "Ano, vždy zdarma."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "PowerPoint to PDF Converter — Offline & Free",
-  "h1": "Convert PowerPoint Presentations to PDF Instantly",
-  "description": "Convert .pptx presentations to high-quality PDFs directly in your browser. No cloud needed. Perfect for presenters in Kuala Lumpur.",
+  "title": "Penukar PowerPoint ke PDF — Luar Talian & Percuma",
+  "h1": "Tukar Persembahan PowerPoint kepada PDF Serta-merta",
+  "description": "Tukar pembentangan .pptx kepada PDF berkualiti tinggi terus dalam penyemak imbas anda. Tiada awan diperlukan. 100% pemprosesan tempatan selamat.",
+  "buttonText": "Convert Slides",
+  "badges": [
+    "Mesyuarat Lembaga",
+    "Dek Padang",
+    "Produk Belum Dikeluarkan"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Presentations Offline?",
-      "content": "Your slides may contain unreleased products or confidential strategies. Convert without risking data exposure."
+      "type": "ppt_hero_features",
+      "title": "Mengapa Menukar Persembahan Luar Talian?",
+      "content": "Slaid anda mungkin mengandungi produk yang belum dikeluarkan atau strategi sulit. Tukar tanpa mempertaruhkan pendedahan data."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert PowerPoint to PDF",
+      "type": "ppt_how_to_steps",
+      "title": "Cara Menukar PowerPoint kepada PDF",
       "steps": [
         {
-          "title": "Load Presentation",
-          "description": "Select your .pptx file from your device."
+          "title": "Muatkan Persembahan",
+          "description": "Pilih fail .pptx anda daripada peranti anda."
         },
         {
-          "title": "Select Slide Range",
-          "description": "Include all slides or specific ones."
+          "title": "Pilih Julat Slaid",
+          "description": "Sertakan semua slaid atau yang khusus."
         },
         {
-          "title": "Download PDF",
-          "description": "Get your PDF with all formatting preserved."
+          "title": "Muat turun PDF",
+          "description": "Dapatkan PDF anda dengan semua pemformatan dipelihara."
         }
-      ]
+      ],
+      "badgeText": "Panduan Pantas"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Presentation Conversion in Kuala Lumpur",
-      "content": "Presenters in Kuala Lumpur trust us to convert slide decks without leaking unreleased content to cloud servers."
+      "type": "ppt_geo_targeting",
+      "title": "100% Pemprosesan Tempatan Selamat",
+      "content": "Semua operasi dilakukan terus pada peranti tempatan anda. Kami menggunakan teknologi WebAssembly termaju untuk memproses dokumen anda tanpa pernah memuat naiknya ke pelayan luaran, memastikan privasi lengkap.",
+      "badgeText": "Pemprosesan Setempat"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Confidential Slides Stay Confidential",
-      "content": "Pre-launch product decks? Board presentations? Converted 100% locally without network access."
+      "type": "ppt_privacy_security",
+      "title": "Slaid Sulit Kekal Sulit",
+      "content": "Dek produk prapelancaran? Pembentangan dewan? Ditukar 100% secara tempatan tanpa akses rangkaian.",
+      "badgeText": "Keselamatan Diutamakan"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Slide Export",
-      "content": "Convert 100-slide decks in seconds. No queue, no waiting, no upload bandwidth wasted."
+      "type": "ppt_performance",
+      "title": "Eksport Slaid Segera",
+      "content": "Tukar dek 100 slaid dalam beberapa saat. Tiada giliran, tiada tunggu, tiada lebar jalur muat naik yang sia-sia.",
+      "badgeText": "Sepantas Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "Are slide animations preserved?",
-      "a": "Animations are flattened into static PDF frames."
+      "q": "Adakah animasi slaid dipelihara?",
+      "a": "Animasi diratakan ke dalam bingkai PDF statik."
     },
     {
-      "q": "What resolution is the output?",
-      "a": "High-resolution rendering at 150 DPI by default."
+      "q": "Apakah resolusi output?",
+      "a": "Paparan resolusi tinggi pada 150 DPI secara lalai."
     },
     {
-      "q": "Can I convert selected slides only?",
-      "a": "Yes, specify slide ranges like 1-10 or 5,8,12."
+      "q": "Bolehkah saya menukar slaid terpilih sahaja?",
+      "a": "Ya, nyatakan julat slaid seperti 1-10 atau 5,8,12."
     },
     {
-      "q": "Is .ppt (old format) supported?",
-      "a": "Yes, both .ppt and .pptx are supported."
+      "q": "Adakah .ppt (format lama) disokong?",
+      "a": "Ya, kedua-dua .ppt dan .pptx disokong."
     },
     {
-      "q": "Is this free to use?",
-      "a": "Ya, percuma sepenuhnya."
+      "q": "Adakah ini percuma untuk digunakan?",
+      "a": "Ya, percuma sepenuhnya tanpa tera air."
     }
-  ]
+  ],
+  "faqTitle": "Soalan Lazim",
+  "supportCenter": "Pusat Sokongan"
 }

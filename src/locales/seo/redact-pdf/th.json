@@ -1,67 +1,85 @@
 {
-  "title": "Redact PDF — Permanently Remove Sensitive Data",
-  "h1": "Permanently Redact Sensitive Information from PDFs Offline",
-  "description": "Black out sensitive text and images in PDFs entirely in your browser. No cloud risk. Critical for users in Bangkok.",
+  "title": "Redact PDF — ลบข้อมูลที่ละเอียดอ่อนอย่างถาวร",
+  "h1": "ตรวจทานข้อมูลที่ละเอียดอ่อนจาก PDF แบบออฟไลน์อย่างถาวร",
+  "description": "ปิดทับข้อความและรูปภาพที่ละเอียดอ่อนในรูปแบบ PDF ทั้งหมดในเบราว์เซอร์ของคุณ ไม่มีความเสี่ยงจากคลาวด์ การประมวลผลภายในที่ปลอดภัย 100%",
+  "buttonText": "Redact Text",
+  "badges": [
+    "ลบอย่างถาวร",
+    "ข้อมูลไฟดับ",
+    "การโต้ตอบที่ปลอดภัย"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "redact_hero_features",
-      "title": "Why Redact PDFs Locally?",
-      "content": "Redacting means the content is classified. Uploading a document you need to hide defeats the whole purpose. Our tool runs 100% offline."
+      "title": "เหตุใดจึงต้องแก้ไข PDF ในเครื่อง",
+      "content": "การปกปิดหมายถึงเนื้อหาถูกจัดประเภท การอัปโหลดเอกสารที่คุณต้องการซ่อนจะถือเป็นการเอาชนะวัตถุประสงค์ทั้งหมด เครื่องมือของเราทำงานออฟไลน์ 100%"
     },
     {
       "type": "redact_how_to_steps",
-      "title": "How to Permanently Redact a PDF",
+      "title": "วิธีแก้ไข PDF อย่างถาวร",
       "steps": [
         {
-          "title": "Open Sensitive Document",
-          "description": "Load the PDF with data that must be hidden."
+          "title": "เปิดเอกสารที่ละเอียดอ่อน",
+          "description": "โหลด PDF พร้อมข้อมูลที่ต้องซ่อน"
         },
         {
-          "title": "Mark Redaction Areas",
-          "description": "Draw boxes over content to permanently erase."
+          "title": "ทำเครื่องหมายพื้นที่การเรียบเรียง",
+          "description": "วาดกล่องไว้เหนือเนื้อหาเพื่อลบอย่างถาวร"
         },
         {
-          "title": "Apply & Download",
-          "description": "Content is permanently deleted from the PDF structure."
+          "title": "สมัครและดาวน์โหลด",
+          "description": "เนื้อหาจะถูกลบออกจากโครงสร้าง PDF อย่างถาวร"
         }
-      ]
+      ],
+      "badgeText": "คู่มือฉบับย่อ"
     },
     {
       "type": "redact_geo_targeting",
-      "title": "Court-Ready Redaction for Bangkok Law Firms",
-      "content": "Legal professionals in Bangkok prepare court documents with permanent, offline redaction that removes data from the PDF structure itself."
+      "title": "การประมวลผลภายในที่ปลอดภัย 100%",
+      "content": "การดำเนินการทั้งหมดดำเนินการโดยตรงบนอุปกรณ์ท้องถิ่นของคุณ เราใช้เทคโนโลยี WebAssembly ขั้นสูงเพื่อประมวลผลเอกสารของคุณโดยไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ภายนอก เพื่อให้มั่นใจถึงความเป็นส่วนตัวโดยสมบูรณ์",
+      "badgeText": "การประมวลผลในท้องถิ่น"
     },
     {
       "type": "redact_privacy_security",
-      "title": "True Permanent Redaction — Not Just Black Boxes",
-      "content": "Unlike tools that merely cover text with black boxes, our redaction permanently deletes the underlying data from the PDF object structure."
+      "title": "การแก้ไขอย่างถาวรอย่างแท้จริง — ไม่ใช่แค่กล่องดำ",
+      "content": "ต่างจากเครื่องมือที่ปกปิดข้อความด้วยกล่องดำเท่านั้น การแก้ไขของเราจะลบข้อมูลพื้นฐานออกจากโครงสร้างออบเจ็กต์ PDF อย่างถาวร",
+      "badgeText": "ความปลอดภัยต้องมาก่อน"
     },
     {
       "type": "redact_performance",
-      "title": "Redact Entire Documents Instantly",
-      "content": "Apply hundreds of permanent redactions to large documents in seconds, completely offline."
+      "title": "ตรวจทานเอกสารทั้งหมดทันที",
+      "content": "ใช้การแก้ไขถาวรหลายร้อยรายการกับเอกสารขนาดใหญ่ในไม่กี่วินาที ออฟไลน์โดยสมบูรณ์",
+      "badgeText": "เร็วปานสายฟ้า"
     }
   ],
   "faqs": [
     {
-      "q": "Is the redaction truly permanent?",
-      "a": "Yes, the underlying text and image data is permanently deleted from the PDF structure."
+      "q": "การปกปิดจะถาวรจริงหรือ?",
+      "a": "ใช่ ข้อมูลข้อความและรูปภาพที่ซ่อนอยู่จะถูกลบออกจากโครงสร้าง PDF อย่างถาวร"
     },
     {
-      "q": "Can I redact images too?",
-      "a": "Yes, both text regions and image areas can be permanently redacted."
+      "q": "ฉันสามารถแก้ไขรูปภาพด้วยได้หรือไม่",
+      "a": "ใช่ ทั้งบริเวณข้อความและพื้นที่รูปภาพสามารถทำซ้ำได้อย่างถาวร"
     },
     {
-      "q": "Can I choose black or white cover?",
-      "a": "Yes, pick the redaction style that suits your document."
+      "q": "ฉันสามารถเลือกปกสีดำหรือสีขาวได้หรือไม่?",
+      "a": "ใช่ เลือกรูปแบบการเขียนที่เหมาะกับเอกสารของคุณ"
     },
     {
-      "q": "Does this meet legal standards?",
-      "a": "Our redaction removes data at the PDF object level, meeting court requirements."
+      "q": "สิ่งนี้เป็นไปตามมาตรฐานทางกฎหมายหรือไม่?",
+      "a": "การแก้ไขของเราจะลบข้อมูลในระดับออบเจ็กต์ PDF ซึ่งเป็นไปตามข้อกำหนดของศาล"
     },
     {
-      "q": "Is this free?",
-      "a": "ใช่ ฟรีทั้งหมด"
+      "q": "ฟรีหรือเปล่า?",
+      "a": "ใช่ ฟรีเสมอ"
     }
-  ]
+  ],
+  "faqTitle": "คำถามที่พบบ่อย",
+  "supportCenter": "ศูนย์สนับสนุน"
 }

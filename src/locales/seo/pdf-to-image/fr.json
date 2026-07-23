@@ -1,67 +1,85 @@
 {
-  "title": "PDF to Image Converter — Extract Pages Offline",
-  "h1": "Convert PDF Pages to PNG or JPG Images",
-  "description": "Extract every page from a PDF as high-quality images directly in your browser. Zero upload, total privacy. Best for users in Paris.",
+  "title": "Convertisseur PDF en image — Extraire des pages hors ligne",
+  "h1": "Convertir des pages PDF en images PNG ou JPG",
+  "description": "Extrayez chaque page d'un PDF sous forme d'images de haute qualité directement dans votre navigateur. Zéro téléchargement, traitement local 100 % sécurisé.",
+  "buttonText": "Extract Images",
+  "badges": [
+    "Portefeuilles de conception",
+    "Présentations",
+    "Haute qualité"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract PDF Pages Offline?",
-      "content": "PDFs often contain confidential diagrams, blueprints, or reports. Extract pages as images without any server access."
+      "type": "pdf_image_hero_features",
+      "title": "Pourquoi extraire des pages PDF hors ligne ?",
+      "content": "Les PDF contiennent souvent des diagrammes, des plans ou des rapports confidentiels. Extrayez des pages sous forme d'images sans aucun accès au serveur."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Images",
+      "type": "pdf_image_how_to_steps",
+      "title": "Comment convertir un PDF en images",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF you want to extract images from."
+          "title": "Charger le PDF",
+          "description": "Sélectionnez le PDF dont vous souhaitez extraire les images."
         },
         {
-          "title": "Choose Format",
-          "description": "Pick PNG (lossless) or JPG (compressed) output."
+          "title": "Choisissez Format",
+          "description": "Choisissez une sortie PNG (sans perte) ou JPG (compressée)."
         },
         {
-          "title": "Download Images",
-          "description": "Get all pages as individual image files in a ZIP."
+          "title": "Télécharger des images",
+          "description": "Obtenez toutes les pages sous forme de fichiers image individuels dans un ZIP."
         }
-      ]
+      ],
+      "badgeText": "Guide rapide"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF to Image for Paris Designers",
-      "content": "Designers in Paris extract PDF pages as images for presentations and social media without cloud uploads."
+      "type": "pdf_image_geo_targeting",
+      "title": "Traitement local 100 % sécurisé",
+      "content": "Toutes les opérations sont effectuées directement sur votre appareil local. Nous utilisons la technologie avancée WebAssembly pour traiter vos documents sans jamais les télécharger sur des serveurs externes, garantissant ainsi une confidentialité totale.",
+      "badgeText": "Traitement local"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Confidential Diagrams Stay Private",
-      "content": "Technical blueprints and legal documents extracted as images without any data leaving your device."
+      "type": "pdf_image_privacy_security",
+      "title": "Les diagrammes confidentiels restent privés",
+      "content": "Plans techniques et documents juridiques extraits sous forme d'images sans qu'aucune donnée ne quitte votre appareil.",
+      "badgeText": "La sécurité d'abord"
     },
     {
-      "type": "split_performance",
-      "title": "Extract All Pages Instantly",
-      "content": "A 500-page PDF converted to images in seconds. No upload, no wait."
+      "type": "pdf_image_performance",
+      "title": "Extraire toutes les pages instantanément",
+      "content": "Un PDF de 500 pages converti en images en quelques secondes. Pas de téléchargement, pas d'attente.",
+      "badgeText": "Rapide comme l'éclair"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are available?",
-      "a": "PNG and JPG with adjustable quality settings."
+      "q": "Quels formats d'images sont disponibles ?",
+      "a": "PNG et JPG avec paramètres de qualité réglables."
     },
     {
-      "q": "Can I extract specific pages?",
-      "a": "Yes, specify page ranges like 1-5 or 3,7,12."
+      "q": "Puis-je extraire des pages spécifiques ?",
+      "a": "Oui, spécifiez des plages de pages telles que 1-5 ou 3,7,12."
     },
     {
-      "q": "What resolution are the exported images?",
-      "a": "Default 150 DPI, adjustable up to 300 DPI."
+      "q": "Quelle est la résolution des images exportées ?",
+      "a": "Par défaut 150 DPI, réglable jusqu'à 300 DPI."
     },
     {
-      "q": "Are all pages exported at once?",
-      "a": "Yes, all selected pages are zipped for a single download."
+      "q": "Toutes les pages sont-elles exportées en même temps ?",
+      "a": "Oui, toutes les pages sélectionnées sont compressées pour un seul téléchargement."
     },
     {
-      "q": "Is this free?",
-      "a": "Oui, entièrement gratuit."
+      "q": "Est-ce gratuit ?",
+      "a": "Entièrement gratuit, toujours."
     }
-  ]
+  ],
+  "faqTitle": "Foire aux questions",
+  "supportCenter": "Centre d'assistance"
 }

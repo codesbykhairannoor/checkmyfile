@@ -1,67 +1,85 @@
 {
-  "title": "CSV to Excel Converter — Offline & Instant",
-  "h1": "Convert CSV Files to Excel Spreadsheets Locally",
-  "description": "Transform .csv files into structured .xlsx spreadsheets entirely in your browser. No upload. Perfect for data teams in Athens.",
+  "title": "Μετατροπέας CSV σε Excel — Offline & Instant",
+  "h1": "Μετατροπή αρχείων CSV σε υπολογιστικά φύλλα Excel τοπικά",
+  "description": "Μετατρέψτε αρχεία .csv σε δομημένα υπολογιστικά φύλλα .xlsx εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση. 100% ασφαλής τοπική επεξεργασία.",
+  "buttonText": "Convert CSV",
+  "badges": [
+    "Υποστήριξη UTF-8",
+    "Πολύστηλη",
+    "Άμεση μετατροπή"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Convert CSV Offline?",
-      "content": "CSV files often contain customer or financial data. Convert them to Excel locally without exposing your datasets to any cloud service."
+      "type": "csv_excel_hero_features",
+      "title": "Γιατί να μετατρέψετε CSV εκτός σύνδεσης;",
+      "content": "Τα αρχεία CSV συχνά περιέχουν δεδομένα πελατών ή οικονομικών δεδομένων. Μετατρέψτε τα σε Excel τοπικά χωρίς να εκθέσετε τα σύνολα δεδομένων σας σε καμία υπηρεσία cloud."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert CSV to Excel",
+      "type": "csv_excel_how_to_steps",
+      "title": "Πώς να μετατρέψετε το CSV σε Excel",
       "steps": [
         {
-          "title": "Open CSV File",
-          "description": "Select the CSV file to convert."
+          "title": "Ανοίξτε το αρχείο CSV",
+          "description": "Επιλέξτε το αρχείο CSV για μετατροπή."
         },
         {
-          "title": "Preview Data",
-          "description": "See the parsed columns and rows before export."
+          "title": "Προεπισκόπηση δεδομένων",
+          "description": "Δείτε τις αναλυμένες στήλες και γραμμές πριν από την εξαγωγή."
         },
         {
-          "title": "Download .xlsx",
-          "description": "Get your Excel spreadsheet instantly."
+          "title": "Λήψη .xlsx",
+          "description": "Λάβετε το υπολογιστικό φύλλο Excel σας άμεσα."
         }
-      ]
+      ],
+      "badgeText": "Γρήγορος Οδηγός"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Data Tools for Athens Analysts",
-      "content": "Data analysts in Athens convert CSV exports to Excel without uploading sensitive datasets."
+      "type": "csv_excel_geo_targeting",
+      "title": "100% Ασφαλής Τοπική Επεξεργασία",
+      "content": "Όλες οι λειτουργίες εκτελούνται απευθείας στην τοπική συσκευή σας. Χρησιμοποιούμε προηγμένη τεχνολογία WebAssembly για να επεξεργαζόμαστε τα έγγραφά σας χωρίς ποτέ να τα ανεβάσουμε σε εξωτερικούς διακομιστές, διασφαλίζοντας πλήρες απόρρητο.",
+      "badgeText": "Τοπική Επεξεργασία"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Customer Data Stays on Your Machine",
-      "content": "CRM exports, transaction logs, and survey data converted locally with zero cloud involvement."
+      "type": "csv_excel_privacy_security",
+      "title": "Τα δεδομένα πελατών παραμένουν στο μηχάνημά σας",
+      "content": "Εξαγωγές CRM, αρχεία καταγραφής συναλλαγών και δεδομένα ερευνών που μετατρέπονται τοπικά με μηδενική συμμετοχή στο cloud.",
+      "badgeText": "Πρώτα η ασφάλεια"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Large CSV Files Instantly",
-      "content": "Convert a 100,000-row CSV to Excel in seconds. All browser-native processing."
+      "type": "csv_excel_performance",
+      "title": "Μετατροπή μεγάλων αρχείων CSV άμεσα",
+      "content": "Μετατρέψτε ένα CSV 100.000 σειρών σε Excel σε δευτερόλεπτα. Όλη η εγγενής επεξεργασία του προγράμματος περιήγησης.",
+      "badgeText": "Αστραπιαία"
     }
   ],
   "faqs": [
     {
-      "q": "Is the column structure preserved?",
-      "a": "Yes, all columns are mapped to Excel columns."
+      "q": "Διατηρείται η δομή του κίονα;",
+      "a": "Ναι, όλες οι στήλες αντιστοιχίζονται σε στήλες του Excel."
     },
     {
-      "q": "Can I convert multiple CSVs?",
-      "a": "Yes, batch conversion to multiple sheets is supported."
+      "q": "Μπορώ να μετατρέψω πολλά CSV;",
+      "a": "Ναι, υποστηρίζεται η μαζική μετατροπή σε πολλαπλά φύλλα."
     },
     {
-      "q": "Are special characters handled?",
-      "a": "Yes, UTF-8 and various encodings are supported."
+      "q": "Χειρίζονται ειδικοί χαρακτήρες;",
+      "a": "Ναι, υποστηρίζονται UTF-8 και διάφορες κωδικοποιήσεις."
     },
     {
-      "q": "Can I set delimiters?",
-      "a": "Yes, comma, semicolon, and tab delimiters are supported."
+      "q": "Μπορώ να ορίσω οριοθέτες;",
+      "a": "Ναι, υποστηρίζονται οριοθέτες κόμματος, ερωτηματικού και καρτελών."
     },
     {
-      "q": "Is this free?",
-      "a": "Ναι, εντελώς δωρεάν."
+      "q": "Αυτό είναι δωρεάν;",
+      "a": "Ναι, πάντα δωρεάν."
     }
-  ]
+  ],
+  "faqTitle": "Συχνές Ερωτήσεις",
+  "supportCenter": "Κέντρο Υποστήριξης"
 }

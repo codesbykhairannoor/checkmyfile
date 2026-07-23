@@ -1,67 +1,85 @@
 {
-  "title": "Compare PDF Files — Spot Differences Locally",
-  "h1": "Compare Two PDF Documents Side by Side",
-  "description": "Upload two PDFs and highlight differences between them entirely in your browser. No upload to servers. Ideal for users in New Delhi.",
+  "title": "पीडीएफ फाइलों की तुलना करें - स्थानीय स्तर पर अंतर पहचानें",
+  "h1": "दो पीडीएफ दस्तावेज़ों की एक साथ तुलना करें",
+  "description": "दो पीडीएफ अपलोड करें और अपने ब्राउज़र में उनके बीच के अंतर को पूरी तरह से उजागर करें। सर्वर पर कोई अपलोड नहीं. 100% सुरक्षित स्थानीय प्रसंस्करण।",
+  "buttonText": "Compare PDFs",
+  "badges": [
+    "अंतर खोजें",
+    "परिवर्तन हाइलाइट करें",
+    "दृश्य अंतर"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Compare PDFs Locally?",
-      "content": "Comparing contract versions or document revisions often involves highly sensitive content. Do it entirely offline."
+      "type": "compare_hero_features",
+      "title": "स्थानीय स्तर पर PDF की तुलना क्यों करें?",
+      "content": "अनुबंध संस्करणों या दस्तावेज़ संशोधनों की तुलना में अक्सर अत्यधिक संवेदनशील सामग्री शामिल होती है। इसे पूरी तरह ऑफ़लाइन करें."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Compare Two PDFs",
+      "type": "compare_how_to_steps",
+      "title": "दो पीडीएफ की तुलना कैसे करें",
       "steps": [
         {
-          "title": "Load Both PDFs",
-          "description": "Select the two PDF versions to compare."
+          "title": "दोनों पीडीएफ़ लोड करें",
+          "description": "तुलना करने के लिए दो पीडीएफ संस्करण चुनें।"
         },
         {
-          "title": "View Differences",
-          "description": "Highlighted changes appear side by side."
+          "title": "अंतर देखें",
+          "description": "हाइलाइट किए गए परिवर्तन साथ-साथ दिखाई देते हैं."
         },
         {
-          "title": "Export Diff Report",
-          "description": "Download a comparison report with all changes marked."
+          "title": "निर्यात अंतर रिपोर्ट",
+          "description": "चिह्नित सभी परिवर्तनों के साथ एक तुलना रिपोर्ट डाउनलोड करें।"
         }
-      ]
+      ],
+      "badgeText": "त्वरित मार्गदर्शिका"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Comparison for New Delhi Law Firms",
-      "content": "Legal professionals in New Delhi compare contract revisions without uploading privileged documents to cloud services."
+      "type": "compare_geo_targeting",
+      "title": "100% सुरक्षित स्थानीय प्रसंस्करण",
+      "content": "सभी ऑपरेशन सीधे आपके स्थानीय डिवाइस पर किए जाते हैं। हम पूर्ण गोपनीयता सुनिश्चित करते हुए, आपके दस्तावेज़ों को बाहरी सर्वर पर अपलोड किए बिना संसाधित करने के लिए उन्नत WebAssembly तकनीक का उपयोग करते हैं।",
+      "badgeText": "स्थानीय प्रसंस्करण"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Privileged Documents Stay Private",
-      "content": "Compare NDAs, contracts, and regulatory filings without any server interaction."
+      "type": "compare_privacy_security",
+      "title": "विशेषाधिकार प्राप्त दस्तावेज़ निजी रहें",
+      "content": "बिना किसी सर्वर इंटरैक्शन के एनडीए, अनुबंध और नियामक फाइलिंग की तुलना करें।",
+      "badgeText": "सुरक्षा पहले"
     },
     {
-      "type": "organizer_performance",
-      "title": "Instant Side-by-Side Comparison",
-      "content": "Compare 100-page documents in seconds with highlighted differences rendered in-browser."
+      "type": "compare_performance",
+      "title": "त्वरित साथ-साथ तुलना",
+      "content": "ब्राउज़र में प्रस्तुत किए गए हाइलाइट किए गए अंतरों के साथ सेकंडों में 100-पृष्ठ दस्तावेज़ों की तुलना करें।",
+      "badgeText": "बिजली की तेजी"
     }
   ],
   "faqs": [
     {
-      "q": "What types of differences are detected?",
-      "a": "Text additions, deletions, and formatting changes are highlighted."
+      "q": "किस प्रकार के अंतर पाए जाते हैं?",
+      "a": "पाठ जोड़ने, हटाने और स्वरूपण परिवर्तन पर प्रकाश डाला गया है।"
     },
     {
-      "q": "Can I compare scanned PDFs?",
-      "a": "For scanned PDFs, use OCR first to extract text before comparing."
+      "q": "क्या मैं स्कैन की गई पीडीएफ़ की तुलना कर सकता हूँ?",
+      "a": "स्कैन की गई पीडीएफ के लिए, तुलना करने से पहले टेक्स्ट निकालने के लिए ओसीआर का उपयोग करें।"
     },
     {
-      "q": "Can I export the comparison?",
-      "a": "Yes, download a marked-up PDF showing all differences."
+      "q": "क्या मैं तुलना निर्यात कर सकता हूँ?",
+      "a": "हां, सभी अंतर दिखाने वाली एक चिह्नित पीडीएफ डाउनलोड करें।"
     },
     {
-      "q": "How many versions can I compare?",
-      "a": "Two documents at a time in the side-by-side view."
+      "q": "मैं कितने संस्करणों की तुलना कर सकता हूँ?",
+      "a": "एक समय में दो दस्तावेज़ अगल-बगल दृश्य में।"
     },
     {
-      "q": "Is this free?",
-      "a": "हाँ, पूरी तरह मुफ्त।"
+      "q": "क्या यह मुफ़्त है?",
+      "a": "हाँ, पूर्णतया निःशुल्क।"
     }
-  ]
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न",
+  "supportCenter": "सहायता केंद्र"
 }

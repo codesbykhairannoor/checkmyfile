@@ -1,67 +1,85 @@
 {
-  "title": "OCR PDF — Make Scans Searchable Offline",
-  "h1": "Extract and Recognize Text from Scanned PDFs",
-  "description": "Run OCR on scanned PDFs to make them searchable and copyable, entirely in your browser using Tesseract. No upload. Great for users in Bratislava.",
+  "title": "OCR PDF — Umožnite prehľadávať skeny offline",
+  "h1": "Extrahovať a rozpoznať text z naskenovaných súborov PDF",
+  "description": "Spustite OCR na naskenovaných PDF, aby sa dali vyhľadávať a kopírovať, úplne vo vašom prehliadači pomocou Tesseract. Žiadne nahrávanie. 100% bezpečné lokálne spracovanie.",
+  "buttonText": "Run OCR",
+  "badges": [
+    "Extrahovať text",
+    "Prehľadávateľné PDF",
+    "Rozpoznávanie AI"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Run OCR Locally?",
-      "content": "Scanned PDFs contain sensitive text. Running OCR on a cloud service exposes that text to a third party. Ours runs 100% offline."
+      "type": "ocr_hero_features",
+      "title": "Prečo spúšťať OCR lokálne?",
+      "content": "Naskenované súbory PDF obsahujú citlivý text. Spustenie OCR v cloudovej službe sprístupní tento text tretej strane. Naša beží 100 % offline."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to OCR a PDF",
+      "type": "ocr_how_to_steps",
+      "title": "Ako OCR PDF",
       "steps": [
         {
-          "title": "Load Scanned PDF",
-          "description": "Select the image-based or scanned PDF."
+          "title": "Načítať naskenované PDF",
+          "description": "Vyberte súbor PDF založený na obrázkoch alebo naskenovaný."
         },
         {
-          "title": "Select Language",
-          "description": "Choose the document language for better accuracy."
+          "title": "Vyberte jazyk",
+          "description": "Pre lepšiu presnosť vyberte jazyk dokumentu."
         },
         {
-          "title": "Download Searchable PDF",
-          "description": "Get a text-layer PDF ready to search and copy."
+          "title": "Stiahnuť PDF s možnosťou vyhľadávania",
+          "description": "Pripravte si PDF s textovou vrstvou na vyhľadávanie a kopírovanie."
         }
-      ]
+      ],
+      "badgeText": "Rýchly sprievodca"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "OCR Tool for Bratislava Archives",
-      "content": "Government agencies and businesses in Bratislava digitize paper archives using our offline OCR tool."
+      "type": "ocr_geo_targeting",
+      "title": "100% bezpečné miestne spracovanie",
+      "content": "Všetky operácie sa vykonávajú priamo na vašom lokálnom zariadení. Používame pokročilú technológiu WebAssembly na spracovanie vašich dokumentov bez ich nahrávania na externé servery, čím zaisťujeme úplné súkromie.",
+      "badgeText": "Miestne spracovanie"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Content Never Exposed",
-      "content": "OCR processing using Tesseract WASM runs entirely in browser memory — no API calls, no data transmission."
+      "type": "ocr_privacy_security",
+      "title": "Naskenovaný obsah nikdy nebol vystavený",
+      "content": "Spracovanie OCR pomocou Tesseract WASM prebieha výlučne v pamäti prehliadača – žiadne volania API, žiadny prenos údajov.",
+      "badgeText": "Bezpečnosť na prvom mieste"
     },
     {
-      "type": "organizer_performance",
-      "title": "OCR Any Document Locally",
-      "content": "Process a 20-page scanned PDF in under 30 seconds. All Tesseract processing happens in-browser."
+      "type": "ocr_performance",
+      "title": "OCR ľubovoľný dokument lokálne",
+      "content": "Spracujte 20-stranový naskenovaný súbor PDF za menej ako 30 sekúnd. Všetko spracovanie Tesseractu prebieha v prehliadači.",
+      "badgeText": "Rýchlosť blesku"
     }
   ],
   "faqs": [
     {
-      "q": "What languages does OCR support?",
-      "a": "Over 100 languages via Tesseract engine."
+      "q": "Aké jazyky podporuje OCR?",
+      "a": "Viac ako 100 jazykov prostredníctvom nástroja Tesseract."
     },
     {
-      "q": "How accurate is the OCR?",
-      "a": "Accuracy depends on scan quality; clear, high-contrast scans yield 95%+ accuracy."
+      "q": "Ako presné je OCR?",
+      "a": "Presnosť závisí od kvality skenovania; jasné skeny s vysokým kontrastom poskytujú presnosť 95 %+."
     },
     {
-      "q": "Does it create a searchable PDF?",
-      "a": "Yes, a text layer is added making the PDF fully searchable."
+      "q": "Vytvára PDF s možnosťou vyhľadávania?",
+      "a": "Áno, je pridaná textová vrstva, vďaka ktorej je možné PDF plne vyhľadávať."
     },
     {
-      "q": "Can I copy text from the result?",
-      "a": "Yes, the output PDF has selectable, copyable text."
+      "q": "Môžem skopírovať text z výsledku?",
+      "a": "Áno, výstupné PDF má voliteľný a kopírovateľný text."
     },
     {
-      "q": "Is this free?",
-      "a": "Áno, úplne zadarmo."
+      "q": "Je to zadarmo?",
+      "a": "Áno, vždy zadarmo."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
 }

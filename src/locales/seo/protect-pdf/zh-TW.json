@@ -1,0 +1,85 @@
+{
+  "title": "密碼保護 PDF — 離線保護文件",
+  "h1": "立即為 PDF 文件添加密碼保護",
+  "description": "直接在瀏覽器中使用 AES-256 加密 PDF 文件。 您的文件永遠不會離開您的裝置。 100% 安全的本地處理。",
+  "buttonText": "Protect PDF",
+  "badges": [
+    "AES-256 加密",
+    "安全密碼",
+    "僅限客戶端"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "protect_hero_features",
+      "title": "為什麼要在本地保護 PDF？",
+      "content": "新增密碼表示該檔案是敏感檔案。 切勿將敏感文件上傳到雲端加密器。 我們的系統完全離線運行，並採用 AES-256 加密。"
+    },
+    {
+      "type": "protect_how_to_steps",
+      "title": "如何使用密碼保護 PDF",
+      "steps": [
+        {
+          "title": "開啟 PDF",
+          "description": "選擇您要鎖定的 PDF。"
+        },
+        {
+          "title": "設定密碼",
+          "description": "選擇一個強密碼進行加密。"
+        },
+        {
+          "title": "下載受保護的 PDF",
+          "description": "立即取得 AES-256 加密的 PDF。"
+        }
+      ],
+      "badgeText": "快速指南"
+    },
+    {
+      "type": "protect_geo_targeting",
+      "title": "100% 安全的本地處理",
+      "content": "所有操作都直接在本地設備上執行。 我們使用先進的 WebAssembly 技術來處理您的文檔，而無需將其上傳到外部伺服器，從而確保完全的隱私。",
+      "badgeText": "本地處理"
+    },
+    {
+      "type": "protect_privacy_security",
+      "title": "AES-256 加密 — 銀行級、離線",
+      "content": "軍用級 AES-256 加密在您的瀏覽器中運作。 任何密鑰都不會傳輸到任何伺服器。",
+      "badgeText": "安全第一"
+    },
+    {
+      "type": "protect_performance",
+      "title": "在 1 秒內加密任何 PDF",
+      "content": "本地 AES-256 處理只需幾毫秒 — 無需上傳、無需排隊、無需等待。",
+      "badgeText": "快如閃電"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "使用什麼加密標準？",
+      "a": "AES-256，銀行和政府使用相同的標準。"
+    },
+    {
+      "q": "我可以設定不同的所有者和使用者密碼嗎？",
+      "a": "是的，您可以分別設定兩者。"
+    },
+    {
+      "q": "原檔案是否被修改？",
+      "a": "不，會建立一個新的加密副本。"
+    },
+    {
+      "q": "我可以限制列印或編輯嗎？",
+      "a": "是的，可以與密碼一起設定權限限制。"
+    },
+    {
+      "q": "這是免費的嗎？",
+      "a": "是的，完全免費。"
+    }
+  ],
+  "faqTitle": "常見問題",
+  "supportCenter": "支援中心"
+}

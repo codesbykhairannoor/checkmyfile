@@ -1,67 +1,85 @@
 {
-  "title": "Add Watermark to PDF — Offline Watermarking",
-  "h1": "Stamp PDFs with Text or Image Watermarks Locally",
-  "description": "Add \"CONFIDENTIAL\", logos, or custom text watermarks to PDFs entirely in your browser. No upload. Best for users in Kuala Lumpur.",
+  "title": "Tambahkan Tera Air pada PDF — Penanda Air Luar Talian",
+  "h1": "Setem PDF dengan Teks atau Tera Air Imej Secara Setempat",
+  "description": "Tambahkan \"SULIT\", logo atau tera air teks tersuai pada PDF sepenuhnya dalam penyemak imbas anda. Tiada muat naik. 100% pemprosesan tempatan selamat.",
+  "buttonText": "Add Watermark",
+  "badges": [
+    "Teks Tersuai",
+    "Kelegapan boleh laras",
+    "Perlindungan Jenama"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Watermark PDFs Offline?",
-      "content": "Adding watermarks means your document is sensitive. Never upload draft contracts or confidential reports to a cloud watermarker."
+      "type": "watermark_hero_features",
+      "title": "Mengapa Tera Air PDF Luar Talian?",
+      "content": "Menambah tera air bermakna dokumen anda sensitif. Jangan sekali-kali memuat naik draf kontrak atau laporan sulit ke penanda air awan."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Watermark a PDF",
+      "type": "watermark_how_to_steps",
+      "title": "Cara Menanda Air PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to watermark."
+          "title": "Buka PDF",
+          "description": "Pilih PDF untuk tera air."
         },
         {
-          "title": "Design Watermark",
-          "description": "Type text or upload a logo image."
+          "title": "Tera Air Reka Bentuk",
+          "description": "Taip teks atau muat naik imej logo."
         },
         {
-          "title": "Apply & Download",
-          "description": "Get your watermarked PDF in one click."
+          "title": "Mohon & Muat Turun",
+          "description": "Dapatkan PDF bertanda air anda dalam satu klik."
         }
-      ]
+      ],
+      "badgeText": "Panduan Pantas"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Document Watermarking in Kuala Lumpur",
-      "content": "Legal and creative professionals in Kuala Lumpur stamp documents with watermarks without cloud uploads."
+      "type": "watermark_geo_targeting",
+      "title": "100% Pemprosesan Tempatan Selamat",
+      "content": "Semua operasi dilakukan terus pada peranti tempatan anda. Kami menggunakan teknologi WebAssembly termaju untuk memproses dokumen anda tanpa pernah memuat naiknya ke pelayan luaran, memastikan privasi lengkap.",
+      "badgeText": "Pemprosesan Setempat"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Confidential Drafts Stay Private",
-      "content": "Draft contracts and unreleased designs watermarked locally without any server contact."
+      "type": "watermark_privacy_security",
+      "title": "Draf Sulit Kekal Peribadi",
+      "content": "Draf kontrak dan reka bentuk yang belum dikeluarkan ditanda air secara tempatan tanpa sebarang hubungan pelayan.",
+      "badgeText": "Keselamatan Diutamakan"
     },
     {
-      "type": "transform_performance",
-      "title": "Stamp Thousands of Pages Instantly",
-      "content": "Apply watermarks to a 1000-page document in under 3 seconds. All in your browser."
+      "type": "watermark_performance",
+      "title": "Cop Ribuan Halaman Serta-merta",
+      "content": "Gunakan tera air pada dokumen 1000 halaman dalam masa kurang dari 3 saat. Semua dalam penyemak imbas anda.",
+      "badgeText": "Sepantas Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "Can I use a logo as a watermark?",
-      "a": "Yes, upload a PNG logo and set transparency."
+      "q": "Bolehkah saya menggunakan logo sebagai tera air?",
+      "a": "Ya, muat naik logo PNG dan tetapkan ketelusan."
     },
     {
-      "q": "Can I adjust watermark opacity?",
-      "a": "Yes, from 10% to 100% opacity."
+      "q": "Bolehkah saya melaraskan kelegapan tera air?",
+      "a": "Ya, dari 10% hingga 100% kelegapan."
     },
     {
-      "q": "Can I apply it to specific pages only?",
-      "a": "Yes, choose page ranges."
+      "q": "Bolehkah saya menggunakannya pada halaman tertentu sahaja?",
+      "a": "Ya, pilih julat halaman."
     },
     {
-      "q": "Is diagonal placement available?",
-      "a": "Yes, rotate watermarks to any angle."
+      "q": "Adakah peletakan pepenjuru tersedia?",
+      "a": "Ya, putar tera air ke mana-mana sudut."
     },
     {
-      "q": "Is this free?",
-      "a": "Ya, percuma sepenuhnya."
+      "q": "Adakah ini percuma?",
+      "a": "Ya, sentiasa percuma."
     }
-  ]
+  ],
+  "faqTitle": "Soalan Lazim",
+  "supportCenter": "Pusat Sokongan"
 }

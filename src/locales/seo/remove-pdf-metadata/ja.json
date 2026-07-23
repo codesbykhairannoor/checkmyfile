@@ -1,67 +1,85 @@
 {
-  "title": "Remove PDF Metadata — Strip Hidden Author Data Offline",
-  "h1": "Strip All Hidden Metadata from PDF Files Instantly",
-  "description": "Remove author names, company info, GPS locations, and revision history from PDFs entirely in your browser. No upload. Perfect for Tokyo users.",
+  "title": "PDF メタデータを削除 — 非表示の作成者データをオフラインで削除",
+  "h1": "PDF ファイルからすべての非表示のメタデータを即座に削除します",
+  "description": "ブラウザで PDF から著者名、会社情報、GPS 位置情報、改訂履歴を完全に削除します。 アップロードはありません。 100% 安全なローカル処理。",
+  "buttonText": "Process Document",
+  "badges": [
+    "安全でプライベート",
+    "オフライン エンジン",
+    "ゼロアップロード"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "metadata_hero_features",
-      "title": "Why Strip PDF Metadata?",
-      "content": "PDFs carry hidden metadata — your name, your company, revision history. Strip it all before sharing publicly, entirely offline."
+      "title": "PDF メタデータを削除する理由",
+      "content": "PDF には、あなたの名前、会社、改訂履歴などの隠されたメタデータが含まれています。 完全にオフラインで公開共有する前に、すべてを削除します。"
     },
     {
       "type": "metadata_how_to_steps",
-      "title": "Before & After — How Metadata Removal Works",
+      "title": "前後 — メタデータ削除の仕組み",
       "steps": [
         {
-          "title": "Open Your PDF",
-          "description": "Select the PDF with hidden metadata to remove."
+          "title": "PDF を開きます",
+          "description": "削除する非表示のメタデータを含む PDF を選択します。"
         },
         {
-          "title": "Preview Hidden Data",
-          "description": "See exactly what metadata — author, GPS, history — is embedded."
+          "title": "非表示のデータをプレビューする",
+          "description": "どのようなメタデータ (作成者、GPS、履歴) が埋め込まれているかを正確に確認できます。"
         },
         {
-          "title": "Strip & Download Clean PDF",
-          "description": "Remove all metadata instantly and save a clean, anonymous PDF."
+          "title": "クリーンな PDF をストリップしてダウンロード",
+          "description": "すべてのメタデータを即座に削除し、クリーンな匿名 PDF を保存します。"
         }
-      ]
+      ],
+      "badgeText": "クイックガイド"
     },
     {
       "type": "metadata_geo_targeting",
-      "title": "Metadata Privacy Tool for Tokyo Professionals",
-      "content": "Journalists, legal professionals, and privacy-conscious users in Tokyo strip metadata before publishing or sharing PDFs externally."
+      "title": "100% 安全なローカル処理",
+      "content": "すべての操作はローカル デバイス上で直接実行されます。 当社は高度な WebAssembly テクノロジーを使用して、ドキュメントを外部サーバーにアップロードすることなく処理し、完全なプライバシーを確​​保します。",
+      "badgeText": "ローカル処理"
     },
     {
       "type": "metadata_privacy_security",
-      "title": "All Metadata Types Permanently Erased",
-      "content": "Author name, company, GPS coordinates from embedded images, revision history, software fingerprints — all permanently removed."
+      "title": "すべてのメタデータ タイプが完全に消去されました",
+      "content": "著者名、会社名、埋め込まれた画像の GPS 座標、改訂履歴、ソフトウェアのフィンガープリントはすべて永久に削除されます。",
+      "badgeText": "セキュリティ第一"
     },
     {
       "type": "metadata_performance",
-      "title": "Strip Metadata in Milliseconds",
-      "content": "Metadata removal takes milliseconds and often reduces file size by 10–15%. All offline."
+      "title": "メタデータをミリ秒単位で削除",
+      "content": "メタデータの削除には数ミリ秒かかり、多くの場合、ファイル サイズが 10 ～ 15% 削減されます。 すべてオフライン。",
+      "badgeText": "超高速"
     }
   ],
   "faqs": [
     {
-      "q": "What metadata is removed?",
-      "a": "Author, creator, producer, title, keywords, and all XMP/EXIF data."
+      "q": "どのようなメタデータが削除されますか?",
+      "a": "著者、作成者、プロデューサー、タイトル、キーワード、およびすべての XMP/EXIF データ。"
     },
     {
-      "q": "Are document bookmarks affected?",
-      "a": "No, bookmarks and structure are preserved; only metadata is removed."
+      "q": "ドキュメントのブックマークは影響を受けますか?",
+      "a": "いいえ、ブックマークと構造は保持されます。 メタデータのみが削除されます。"
     },
     {
-      "q": "Can I preview the metadata first?",
-      "a": "Yes, we show a list of all detected metadata before removing."
+      "q": "最初にメタデータをプレビューできますか?",
+      "a": "はい、削除する前に、検出されたすべてのメタデータのリストが表示されます。"
     },
     {
-      "q": "Is the document content affected?",
-      "a": "No, the content, images, and structure remain intact."
+      "q": "文書の内容は影響を受けますか?",
+      "a": "いいえ、コンテンツ、画像、構造はそのまま残ります。"
     },
     {
-      "q": "Is this free?",
-      "a": "はい、完全無料です。"
+      "q": "これは無料ですか？",
+      "a": "はい、いつでも無料です。"
     }
-  ]
+  ],
+  "faqTitle": "よくある質問",
+  "supportCenter": "サポート センター"
 }

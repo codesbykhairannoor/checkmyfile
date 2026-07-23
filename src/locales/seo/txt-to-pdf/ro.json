@@ -1,67 +1,85 @@
 {
-  "title": "Text to PDF Converter — Offline & Instant",
-  "h1": "Convert Plain Text Files to PDF Locally",
-  "description": "Transform .txt files into clean, readable PDFs directly in your browser. No upload required. Ideal for users in Bucharest.",
+  "title": "Convertor text în PDF — Offline și instantaneu",
+  "h1": "Conversia locală a fișierelor text simplu în PDF",
+  "description": "Transformați fișierele .txt în fișiere PDF curate și lizibile direct în browser. Nu este necesară încărcarea. Procesare locală 100% sigură.",
+  "buttonText": "Convert Text",
+  "badges": [
+    "Fragmente de cod",
+    "Jurnalele serverului",
+    "Manuscrise"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Text Files Offline?",
-      "content": "Text files often contain code, scripts, or sensitive notes. Our offline converter ensures zero data transmission."
+      "type": "txt_hero_features",
+      "title": "De ce să convertiți fișierele text offline?",
+      "content": "Fișierele text conțin adesea cod, scripturi sau note sensibile. Convertorul nostru offline asigură transmisia de date zero."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Text to PDF",
+      "type": "txt_how_to_steps",
+      "title": "Cum se convertesc text în PDF",
       "steps": [
         {
-          "title": "Open Text File",
-          "description": "Select your .txt file or paste text directly."
+          "title": "Deschideți fișierul text",
+          "description": "Selectați fișierul .txt sau inserați direct text."
         },
         {
-          "title": "Choose Font & Style",
-          "description": "Pick font size and layout preferences."
+          "title": "Alegeți Font și stil",
+          "description": "Alegeți dimensiunea fontului și preferințele de aspect."
         },
         {
-          "title": "Download PDF",
-          "description": "Export your text as a beautifully formatted PDF."
+          "title": "Descărcați PDF",
+          "description": "Exportați textul ca un PDF frumos formatat."
         }
-      ]
+      ],
+      "badgeText": "Ghid rapid"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Text to PDF for Bucharest Developers",
-      "content": "Developers and writers in Bucharest use our tool to convert scripts and notes without cloud dependency."
+      "type": "txt_geo_targeting",
+      "title": "Procesare locală 100% sigură",
+      "content": "Toate operațiunile sunt efectuate direct pe dispozitivul local. Folosim tehnologie avansată WebAssembly pentru a vă procesa documentele fără a le încărca vreodată pe servere externe, asigurând confidențialitate completă.",
+      "badgeText": "Prelucrare locală"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Code Stays on Your Machine",
-      "content": "Source code, legal notes, medical records — text files converted with zero server involvement."
+      "type": "txt_privacy_security",
+      "title": "Codul rămâne pe mașina dvs.",
+      "content": "Cod sursă, note legale, dosare medicale — fișiere text convertite fără implicarea serverului.",
+      "badgeText": "Securitatea în primul rând"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Text Rendering",
-      "content": "Convert any size text file to PDF in milliseconds. No upload, no compression, no delay."
+      "type": "txt_performance",
+      "title": "Redare instantanee a textului",
+      "content": "Convertiți fișierul text de orice dimensiune în PDF în milisecunde. Fără încărcare, fără compresie, fără întârziere.",
+      "badgeText": "Rapid fulger"
     }
   ],
   "faqs": [
     {
-      "q": "Can I paste text directly?",
-      "a": "Yes, you can type or paste text without uploading a file."
+      "q": "Pot lipi text direct?",
+      "a": "Da, puteți tasta sau lipi text fără a încărca un fișier."
     },
     {
-      "q": "What fonts are available?",
-      "a": "Standard web fonts like Arial, Times New Roman, and monospace."
+      "q": "Ce fonturi sunt disponibile?",
+      "a": "Fonturi web standard precum Arial, Times New Roman și monospace."
     },
     {
-      "q": "Is code syntax preserved?",
-      "a": "Monospace formatting is preserved for code blocks."
+      "q": "Este păstrată sintaxa codului?",
+      "a": "Formatarea monospațială este păstrată pentru blocurile de cod."
     },
     {
-      "q": "Can I set page margins?",
-      "a": "Yes, customize top, bottom, left, and right margins."
+      "q": "Pot seta marginile paginii?",
+      "a": "Da, personalizați marginile de sus, de jos, din stânga și din dreapta."
     },
     {
-      "q": "Is this free?",
+      "q": "Este gratuit?",
       "a": "Da, complet gratuit."
     }
-  ]
+  ],
+  "faqTitle": "Întrebări frecvente",
+  "supportCenter": "Centrul de suport"
 }

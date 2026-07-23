@@ -1,67 +1,85 @@
 {
-  "title": "Sign PDF Online — Draw Signature Offline",
-  "h1": "Sign PDF Documents With Your Signature Without Uploading",
-  "description": "Draw, type, or upload your signature and place it on PDFs entirely in your browser. No cloud. Perfect for users in Kyiv.",
+  "title": "Підпишіть PDF онлайн — намалюйте підпис офлайн",
+  "h1": "Підписуйте PDF-документи своїм підписом без завантаження",
+  "description": "Намалюйте, введіть або завантажте свій підпис і розмістіть його на PDF-файлах у своєму браузері. Без хмари. 100% безпечна локальна обробка.",
+  "buttonText": "Sign PDF",
+  "badges": [
+    "Цифровий підпис",
+    "Намалюйте або введіть",
+    "Юридично обов'язковий"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "sign_hero_features",
-      "title": "Why Sign PDFs Locally?",
-      "content": "Your signature is your identity. Never upload your drawn signature or a private contract to a third-party cloud signing service."
+      "title": "Навіщо підписувати PDF-файли локально?",
+      "content": "Ваш підпис - це ваша особистість. Ніколи не завантажуйте свій намальований підпис або приватний контракт у сторонню службу хмарного підпису."
     },
     {
       "type": "sign_how_to_steps",
-      "title": "How to Sign a PDF in 3 Steps",
+      "title": "Як підписати PDF-файл у 3 кроки",
       "steps": [
         {
-          "title": "Create Your Signature",
-          "description": "Draw with mouse, type in signature font, or upload an image."
+          "title": "Створіть свій підпис",
+          "description": "Малюйте мишкою, вводьте шрифт підпису або завантажуйте зображення."
         },
         {
-          "title": "Place on Document",
-          "description": "Drag and resize your signature to the correct position."
+          "title": "Розмістити на документі",
+          "description": "Перетягніть і змініть розмір свого підпису в правильне положення."
         },
         {
-          "title": "Download Signed PDF",
-          "description": "Save your signed document immediately, no account needed."
+          "title": "Завантажити підписаний PDF",
+          "description": "Негайно збережіть свій підписаний документ, обліковий запис не потрібен."
         }
-      ]
+      ],
+      "badgeText": "Короткий посібник"
     },
     {
       "type": "sign_geo_targeting",
-      "title": "Private Digital Signatures for Kyiv",
-      "content": "Freelancers and businesses in Kyiv sign contracts, NDAs, and agreements without exposing their identity or documents to any cloud service."
+      "title": "100% безпечна локальна обробка",
+      "content": "Усі операції виконуються безпосередньо на локальному пристрої. Ми використовуємо передову технологію WebAssembly для обробки ваших документів, не завантажуючи їх на зовнішні сервери, забезпечуючи повну конфіденційність.",
+      "badgeText": "Локальна обробка"
     },
     {
       "type": "sign_privacy_security",
-      "title": "Your Signature Identity Stays Private",
-      "content": "Your drawn signature and signed document are processed entirely in browser memory — never stored, never transmitted."
+      "title": "Ваша особа підпису залишається конфіденційною",
+      "content": "Ваш намальований підпис і підписаний документ повністю обробляються в пам’яті браузера — ніколи не зберігаються і не передаються.",
+      "badgeText": "Безпека перш за все"
     },
     {
       "type": "sign_performance",
-      "title": "Sign Any Document in Under 30 Seconds",
-      "content": "No account, no upload, no cloud. Draw, place, and download your signed PDF in under 30 seconds."
+      "title": "Підпишіть будь-який документ менш ніж за 30 секунд",
+      "content": "Ні облікового запису, ні завантаження, ні хмари. Намалюйте, розмістіть і завантажте свій підписаний PDF менш ніж за 30 секунд.",
+      "badgeText": "Блискавичний"
     }
   ],
   "faqs": [
     {
-      "q": "How can I create my signature?",
-      "a": "Draw with your mouse, type your name in a signature font, or upload an image."
+      "q": "Як я можу створити свій підпис?",
+      "a": "Малюйте мишею, вводьте своє ім’я фірмовим шрифтом або завантажуйте зображення."
     },
     {
-      "q": "Can I sign multiple pages?",
-      "a": "Yes, place your signature on any or all pages."
+      "q": "Чи можу я підписати кілька сторінок?",
+      "a": "Так, розмістіть свій підпис на будь-якій або всіх сторінках."
     },
     {
-      "q": "Is the signature legally binding?",
-      "a": "Our tool applies a visual signature. For legally binding e-signatures, check your jurisdiction."
+      "q": "Чи має підпис юридичну силу?",
+      "a": "Наш інструмент застосовує візуальний підпис. Щоб отримати юридично зобов’язуючі електронні підписи, перевірте свою юрисдикцію."
     },
     {
-      "q": "Can I resize the signature?",
-      "a": "Yes, drag the corners to resize it after placing."
+      "q": "Чи можу я змінити розмір підпису?",
+      "a": "Так, перетягніть кути, щоб змінити розмір після розміщення."
     },
     {
-      "q": "Is this free?",
-      "a": "Так, повністю безкоштовно."
+      "q": "Це безкоштовно?",
+      "a": "Так, абсолютно безкоштовно."
     }
-  ]
+  ],
+  "faqTitle": "Часті запитання",
+  "supportCenter": "Центр підтримки"
 }

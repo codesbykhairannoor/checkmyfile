@@ -1,67 +1,85 @@
 {
-  "title": "Add Watermark to PDF — Offline Watermarking",
-  "h1": "Stamp PDFs with Text or Image Watermarks Locally",
-  "description": "Add \"CONFIDENTIAL\", logos, or custom text watermarks to PDFs entirely in your browser. No upload. Best for users in Stockholm.",
+  "title": "Lägg till vattenstämpel till PDF — Offline vattenstämpel",
+  "h1": "Stämpla PDF-filer med text- eller bildvattenstämplar lokalt",
+  "description": "Lägg till \"KONFIDENTIAL\", logotyper eller anpassade textvattenstämplar till PDF-filer helt och hållet i din webbläsare. Ingen uppladdning. 100 % säker lokal bearbetning.",
+  "buttonText": "Add Watermark",
+  "badges": [
+    "Anpassad text",
+    "Justerbar opacitet",
+    "Varumärkesskydd"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Watermark PDFs Offline?",
-      "content": "Adding watermarks means your document is sensitive. Never upload draft contracts or confidential reports to a cloud watermarker."
+      "type": "watermark_hero_features",
+      "title": "Varför vattenstämpel PDF-filer offline?",
+      "content": "Att lägga till vattenstämplar betyder att ditt dokument är känsligt. Ladda aldrig upp utkast till kontrakt eller konfidentiella rapporter till en molnvattenmärkare."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Watermark a PDF",
+      "type": "watermark_how_to_steps",
+      "title": "Hur man vattenmärker en PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to watermark."
+          "title": "Öppna PDF",
+          "description": "Välj PDF till vattenstämpel."
         },
         {
-          "title": "Design Watermark",
-          "description": "Type text or upload a logo image."
+          "title": "Design vattenstämpel",
+          "description": "Skriv text eller ladda upp en logotypbild."
         },
         {
-          "title": "Apply & Download",
-          "description": "Get your watermarked PDF in one click."
+          "title": "Ansök och ladda ner",
+          "description": "Få din vattenstämplade PDF med ett klick."
         }
-      ]
+      ],
+      "badgeText": "Snabbguide"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Document Watermarking in Stockholm",
-      "content": "Legal and creative professionals in Stockholm stamp documents with watermarks without cloud uploads."
+      "type": "watermark_geo_targeting",
+      "title": "100 % säker lokal bearbetning",
+      "content": "Alla operationer utförs direkt på din lokala enhet. Vi använder avancerad WebAssembly-teknik för att behandla dina dokument utan att någonsin ladda upp dem till externa servrar, vilket säkerställer fullständig integritet.",
+      "badgeText": "Lokal bearbetning"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Confidential Drafts Stay Private",
-      "content": "Draft contracts and unreleased designs watermarked locally without any server contact."
+      "type": "watermark_privacy_security",
+      "title": "Konfidentiella utkast Förbli privata",
+      "content": "Utkast till kontrakt och outgivna designs vattenmärkta lokalt utan någon serverkontakt.",
+      "badgeText": "Säkerhet först"
     },
     {
-      "type": "transform_performance",
-      "title": "Stamp Thousands of Pages Instantly",
-      "content": "Apply watermarks to a 1000-page document in under 3 seconds. All in your browser."
+      "type": "watermark_performance",
+      "title": "Stämpla tusentals sidor direkt",
+      "content": "Använd vattenstämplar på ett 1000-sidigt dokument på under 3 sekunder. Allt i din webbläsare.",
+      "badgeText": "Blixtsnabb"
     }
   ],
   "faqs": [
     {
-      "q": "Can I use a logo as a watermark?",
-      "a": "Yes, upload a PNG logo and set transparency."
+      "q": "Kan jag använda en logotyp som vattenstämpel?",
+      "a": "Ja, ladda upp en PNG-logotyp och ställ in transparens."
     },
     {
-      "q": "Can I adjust watermark opacity?",
-      "a": "Yes, from 10% to 100% opacity."
+      "q": "Kan jag justera vattenstämpelns opacitet?",
+      "a": "Ja, från 10 % till 100 % opacitet."
     },
     {
-      "q": "Can I apply it to specific pages only?",
-      "a": "Yes, choose page ranges."
+      "q": "Kan jag tillämpa det bara på specifika sidor?",
+      "a": "Ja, välj sidintervall."
     },
     {
-      "q": "Is diagonal placement available?",
-      "a": "Yes, rotate watermarks to any angle."
+      "q": "Är diagonal placering tillgänglig?",
+      "a": "Ja, rotera vattenstämplar till valfri vinkel."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, helt gratis."
+      "q": "Är detta gratis?",
+      "a": "Ja, alltid gratis."
     }
-  ]
+  ],
+  "faqTitle": "Vanliga frågor",
+  "supportCenter": "Supportcenter"
 }

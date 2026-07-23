@@ -1,67 +1,85 @@
 {
-  "title": "Reverse PDF — Flip Page Order Offline",
-  "h1": "Reverse the Page Order of Any PDF Locally",
-  "description": "Flip the page sequence of PDF documents entirely in your browser. No upload, instant result. Great for users in Istanbul.",
+  "title": "PDF'yi Ters Çevir — Sayfa Sırasını Çevrimdışı Çevir",
+  "h1": "Herhangi Bir PDF'nin Sayfa Sırasını Yerel Olarak Tersine Çevirme",
+  "description": "PDF belgelerinin sayfa sırasını tamamen tarayıcınızda çevirin. Yükleme yok, anında sonuç. %100 güvenli yerel işleme.",
+  "buttonText": "Reverse Order",
+  "badges": [
+    "Tüm Sayfaları Ters Çevir",
+    "Taramaları Onar",
+    "Tek Tıklama"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Reverse PDF Page Order Offline?",
-      "content": "When a scanner outputs pages in reverse, you need a quick local fix — not a cloud upload of your entire document."
+      "type": "reverse_hero_features",
+      "title": "Çevrimdışı PDF Sayfa Sırasını Neden Tersine Çevirmelisiniz?",
+      "content": "Bir tarayıcı sayfaları tersten gönderdiğinde belgenizin tamamının buluta yüklenmesine değil, hızlı bir yerel düzeltmeye ihtiyacınız olur."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Reverse PDF Page Order",
+      "type": "reverse_how_to_steps",
+      "title": "PDF Sayfa Sırasını Tersine Çevirme",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF with incorrect page order."
+          "title": "PDF'yi aç",
+          "description": "Yanlış sayfa sırasına sahip PDF'yi seçin."
         },
         {
-          "title": "Confirm Reversal",
-          "description": "Preview the new first and last page."
+          "title": "Geri Alma İşlemini Onayla",
+          "description": "Yeni ilk ve son sayfayı önizleyin."
         },
         {
-          "title": "Download Reversed PDF",
-          "description": "Get the reordered PDF instantly."
+          "title": "Tersine çevrilmiş PDF'yi İndir",
+          "description": "Yeniden sıralanan PDF'yi anında alın."
         }
-      ]
+      ],
+      "badgeText": "Hızlı Kılavuz"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Page Order Fix for Istanbul Users",
-      "content": "Office users in Istanbul fix scanner reversal issues instantly without cloud uploads."
+      "type": "reverse_geo_targeting",
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Documents Never Leave Your Device",
-      "content": "Reversed contracts, reports, and records are processed entirely in browser memory."
+      "type": "reverse_privacy_security",
+      "title": "Belgeler Cihazınızdan Asla Ayrılmayın",
+      "content": "Tersine çevrilen sözleşmeler, raporlar ve kayıtlar tamamen tarayıcı belleğinde işlenir.",
+      "badgeText": "Önce Güvenlik"
     },
     {
-      "type": "transform_performance",
-      "title": "Reverse Any PDF in Seconds",
-      "content": "Reversing a 1000-page document takes milliseconds. All in your browser."
+      "type": "reverse_performance",
+      "title": "Herhangi Bir PDF'yi Saniyeler İçinde Tersine Çevirme",
+      "content": "1000 sayfalık bir belgeyi ters çevirmek milisaniyeler alır. Hepsi tarayıcınızda.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [
     {
-      "q": "Does this reverse all pages?",
-      "a": "Yes, the full page order is flipped."
+      "q": "Bu tüm sayfaları tersine çevirir mi?",
+      "a": "Evet, tam sayfa sırası ters çevrilmiştir."
     },
     {
-      "q": "Can I select a range to reverse?",
-      "a": "Yes, specify start and end pages to reverse selectively."
+      "q": "Tersine çevrilecek bir aralık seçebilir miyim?",
+      "a": "Evet, seçici olarak tersine çevrilecek başlangıç ​​ve bitiş sayfalarını belirtin."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "No, reversal is a structural operation with no quality loss."
+      "q": "Kalite etkilenir mi?",
+      "a": "Hayır, tersine çevirme kalite kaybı olmayan yapısal bir işlemdir."
     },
     {
-      "q": "Can I undo?",
-      "a": "Apply reversal again to undo."
+      "q": "Geri alabilir miyim?",
+      "a": "Geri almak için geri alma işlemini tekrar uygulayın."
     },
     {
-      "q": "Is this free?",
-      "a": "Evet, tamamen ücretsiz."
+      "q": "Bu bedava mı?",
+      "a": "Evet, her zaman ücretsiz."
     }
-  ]
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi"
 }

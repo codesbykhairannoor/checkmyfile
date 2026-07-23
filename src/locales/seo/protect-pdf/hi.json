@@ -1,67 +1,85 @@
 {
-  "title": "Password Protect PDF — Secure Files Offline",
-  "h1": "Add Password Protection to PDF Files Instantly",
-  "description": "Encrypt PDF files with AES-256 directly in your browser. Your document never leaves your device. Ideal for users in New Delhi.",
+  "title": "पासवर्ड प्रोटेक्ट पीडीएफ - सुरक्षित फ़ाइलें ऑफ़लाइन",
+  "h1": "पीडीएफ फाइलों में तुरंत पासवर्ड सुरक्षा जोड़ें",
+  "description": "सीधे अपने ब्राउज़र में AES-256 के साथ पीडीएफ फाइलों को एन्क्रिप्ट करें। आपका दस्तावेज़ कभी भी आपका डिवाइस नहीं छोड़ता. 100% सुरक्षित स्थानीय प्रसंस्करण।",
+  "buttonText": "Protect PDF",
+  "badges": [
+    "एईएस-256 एन्क्रिप्शन",
+    "सुरक्षित पासवर्ड",
+    "केवल क्लाइंट-साइड"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "protect_hero_features",
-      "title": "Why Protect PDFs Locally?",
-      "content": "Adding a password means the file is sensitive. Never upload sensitive files to a cloud encryptor. Ours runs entirely offline with AES-256 encryption."
+      "title": "पीडीएफ़ को स्थानीय स्तर पर सुरक्षित क्यों रखें?",
+      "content": "पासवर्ड जोड़ने का मतलब है कि फ़ाइल संवेदनशील है। संवेदनशील फ़ाइलों को कभी भी क्लाउड एन्क्रिप्टर पर अपलोड न करें। हमारा AES-256 एन्क्रिप्शन के साथ पूरी तरह ऑफ़लाइन चलता है।"
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Password Protect a PDF",
+      "title": "पीडीएफ को पासवर्ड से कैसे सुरक्षित रखें",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF you want to lock."
+          "title": "पीडीएफ खोलें",
+          "description": "वह पीडीएफ चुनें जिसे आप लॉक करना चाहते हैं।"
         },
         {
-          "title": "Set Password",
-          "description": "Choose a strong password for encryption."
+          "title": "पासवर्ड सेट करें",
+          "description": "एन्क्रिप्शन के लिए एक मजबूत पासवर्ड चुनें."
         },
         {
-          "title": "Download Protected PDF",
-          "description": "Get your AES-256 encrypted PDF immediately."
+          "title": "संरक्षित पीडीएफ डाउनलोड करें",
+          "description": "अपना AES-256 एन्क्रिप्टेड पीडीएफ तुरंत प्राप्त करें।"
         }
-      ]
+      ],
+      "badgeText": "त्वरित मार्गदर्शिका"
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Vault-Level PDF Protection for New Delhi",
-      "content": "Legal and finance professionals in New Delhi encrypt documents with AES-256 strength without exposing files to any server."
+      "title": "100% सुरक्षित स्थानीय प्रसंस्करण",
+      "content": "सभी ऑपरेशन सीधे आपके स्थानीय डिवाइस पर किए जाते हैं। हम पूर्ण गोपनीयता सुनिश्चित करते हुए, आपके दस्तावेज़ों को बाहरी सर्वर पर अपलोड किए बिना संसाधित करने के लिए उन्नत WebAssembly तकनीक का उपयोग करते हैं।",
+      "badgeText": "स्थानीय प्रसंस्करण"
     },
     {
       "type": "protect_privacy_security",
-      "title": "AES-256 Encryption — Bank-Grade, Offline",
-      "content": "Military-grade AES-256 encryption runs in your browser. No key is ever transmitted to any server."
+      "title": "AES-256 एन्क्रिप्शन - बैंक-ग्रेड, ऑफ़लाइन",
+      "content": "मिलिट्री-ग्रेड AES-256 एन्क्रिप्शन आपके ब्राउज़र में चलता है। कोई भी कुंजी कभी भी किसी सर्वर पर प्रेषित नहीं की जाती है।",
+      "badgeText": "सुरक्षा पहले"
     },
     {
       "type": "protect_performance",
-      "title": "Encrypt Any PDF in Under 1 Second",
-      "content": "AES-256 processing locally takes milliseconds — no upload, no queue, no wait."
+      "title": "किसी भी पीडीएफ को 1 सेकंड से कम समय में एन्क्रिप्ट करें",
+      "content": "AES-256 प्रसंस्करण में स्थानीय रूप से मिलीसेकंड लगते हैं - कोई अपलोड नहीं, कोई कतार नहीं, कोई प्रतीक्षा नहीं।",
+      "badgeText": "बिजली की तेजी"
     }
   ],
   "faqs": [
     {
-      "q": "What encryption standard is used?",
-      "a": "AES-256, the same standard used by banks and governments."
+      "q": "किस एन्क्रिप्शन मानक का उपयोग किया जाता है?",
+      "a": "AES-256, बैंकों और सरकारों द्वारा उपयोग किया जाने वाला समान मानक।"
     },
     {
-      "q": "Can I set different owner and user passwords?",
-      "a": "Yes, you can set both separately."
+      "q": "क्या मैं अलग-अलग स्वामी और उपयोगकर्ता पासवर्ड सेट कर सकता हूँ?",
+      "a": "हाँ, आप दोनों को अलग-अलग सेट कर सकते हैं।"
     },
     {
-      "q": "Is the original file modified?",
-      "a": "No, a new encrypted copy is created."
+      "q": "क्या मूल फ़ाइल संशोधित है?",
+      "a": "नहीं, एक नई एन्क्रिप्टेड प्रतिलिपि बनाई गई है।"
     },
     {
-      "q": "Can I restrict printing or editing?",
-      "a": "Yes, permission restrictions can be set alongside the password."
+      "q": "क्या मैं मुद्रण या संपादन प्रतिबंधित कर सकता हूँ?",
+      "a": "हाँ, अनुमति प्रतिबंध पासवर्ड के साथ सेट किए जा सकते हैं।"
     },
     {
-      "q": "Is this free?",
-      "a": "हाँ, पूरी तरह मुफ्त।"
+      "q": "क्या यह मुफ़्त है?",
+      "a": "हाँ, पूर्णतया निःशुल्क।"
     }
-  ]
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न",
+  "supportCenter": "सहायता केंद्र"
 }

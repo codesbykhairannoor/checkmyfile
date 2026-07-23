@@ -1,67 +1,85 @@
 {
-  "title": "Add Watermark to PDF — Offline Watermarking",
-  "h1": "Stamp PDFs with Text or Image Watermarks Locally",
-  "description": "Add \"CONFIDENTIAL\", logos, or custom text watermarks to PDFs entirely in your browser. No upload. Best for users in Helsinki.",
+  "title": "Lisää vesileima PDF-tiedostoon — Offline-vesileima",
+  "h1": "Leimaa PDF-tiedostot teksti- tai kuvavesileimoilla paikallisesti",
+  "description": "Lisää \"LUOTTAMUKSELLINEN\", logoja tai mukautettuja tekstivesileimoja PDF-tiedostoihin kokonaan selaimessasi. Ei latausta. 100 % turvallinen paikallinen käsittely.",
+  "buttonText": "Add Watermark",
+  "badges": [
+    "Mukautettu teksti",
+    "Säädettävä opasiteetti",
+    "Brändin suojaus"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Watermark PDFs Offline?",
-      "content": "Adding watermarks means your document is sensitive. Never upload draft contracts or confidential reports to a cloud watermarker."
+      "type": "watermark_hero_features",
+      "title": "Miksi vesileima-pdf-tiedostot offline-tilassa?",
+      "content": "Vesileimojen lisääminen tarkoittaa, että asiakirjasi on arkaluonteinen. Älä koskaan lataa sopimusluonnoksia tai luottamuksellisia raportteja pilvivesileimaan."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Watermark a PDF",
+      "type": "watermark_how_to_steps",
+      "title": "PDF-tiedoston vesileima",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to watermark."
+          "title": "Avaa PDF",
+          "description": "Valitse PDF vesileimaan."
         },
         {
-          "title": "Design Watermark",
-          "description": "Type text or upload a logo image."
+          "title": "Suunnittelu vesileima",
+          "description": "Kirjoita tekstiä tai lataa logokuva."
         },
         {
-          "title": "Apply & Download",
-          "description": "Get your watermarked PDF in one click."
+          "title": "Käytä ja lataa",
+          "description": "Hanki vesileimattu PDF yhdellä napsautuksella."
         }
-      ]
+      ],
+      "badgeText": "Pikaopas"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Document Watermarking in Helsinki",
-      "content": "Legal and creative professionals in Helsinki stamp documents with watermarks without cloud uploads."
+      "type": "watermark_geo_targeting",
+      "title": "100 % suojattu paikallinen käsittely",
+      "content": "Kaikki toiminnot suoritetaan suoraan paikallisella laitteellasi. Käytämme edistynyttä WebAssembly-tekniikkaa asiakirjojen käsittelyyn lataamatta niitä koskaan ulkoisille palvelimille, mikä takaa täydellisen yksityisyyden.",
+      "badgeText": "Paikallinen käsittely"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Confidential Drafts Stay Private",
-      "content": "Draft contracts and unreleased designs watermarked locally without any server contact."
+      "type": "watermark_privacy_security",
+      "title": "Luottamukselliset luonnokset pysyvät yksityisinä",
+      "content": "Sopimusluonnokset ja julkaisemattomat suunnitelmat vesileimattu paikallisesti ilman palvelinkontaktia.",
+      "badgeText": "Turvallisuus ensin"
     },
     {
-      "type": "transform_performance",
-      "title": "Stamp Thousands of Pages Instantly",
-      "content": "Apply watermarks to a 1000-page document in under 3 seconds. All in your browser."
+      "type": "watermark_performance",
+      "title": "Leimaa tuhansia sivuja välittömästi",
+      "content": "Lisää vesileimoja 1000-sivuiseen asiakirjaan alle 3 sekunnissa. Kaikki selaimessasi.",
+      "badgeText": "Salamannopeasti"
     }
   ],
   "faqs": [
     {
-      "q": "Can I use a logo as a watermark?",
-      "a": "Yes, upload a PNG logo and set transparency."
+      "q": "Voinko käyttää logoa vesileimana?",
+      "a": "Kyllä, lataa PNG-logo ja aseta läpinäkyvyys."
     },
     {
-      "q": "Can I adjust watermark opacity?",
-      "a": "Yes, from 10% to 100% opacity."
+      "q": "Voinko säätää vesileiman peittävyyttä?",
+      "a": "Kyllä, 10 %:sta 100 %:iin opasiteetti."
     },
     {
-      "q": "Can I apply it to specific pages only?",
-      "a": "Yes, choose page ranges."
+      "q": "Voinko käyttää sitä vain tietyillä sivuilla?",
+      "a": "Kyllä, valitse sivualueet."
     },
     {
-      "q": "Is diagonal placement available?",
-      "a": "Yes, rotate watermarks to any angle."
+      "q": "Onko diagonaalinen sijoitus käytettävissä?",
+      "a": "Kyllä, käännä vesileimat mihin tahansa kulmaan."
     },
     {
-      "q": "Is this free?",
-      "a": "Kyllä, täysin ilmainen."
+      "q": "Onko tämä ilmainen?",
+      "a": "Kyllä, aina ilmainen."
     }
-  ]
+  ],
+  "faqTitle": "Usein kysytyt kysymykset",
+  "supportCenter": "Tukikeskus"
 }

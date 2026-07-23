@@ -1,67 +1,85 @@
 {
-  "title": "Excel to CSV Converter — Export Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to CSV Locally",
-  "description": "Export .xlsx files to clean .csv format entirely in your browser. No upload. Ideal for developers in Seoul.",
+  "title": "Excel-CSV 변환기 — 스프레드시트를 오프라인으로 내보내기",
+  "h1": "Excel 스프레드시트를 로컬에서 CSV로 변환",
+  "description": ".xlsx 파일을 내보내 브라우저에서 .csv 형식을 완전히 정리하세요. 업로드가 없습니다. 100% 안전한 로컬 처리.",
+  "buttonText": "Convert to CSV",
+  "badges": [
+    "원시 데이터",
+    "데이터베이스 가져오기",
+    "빠른 내보내기"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Export to CSV Offline?",
-      "content": "Exporting spreadsheets to CSV for data pipelines should not expose your raw data to any external API."
+      "type": "excel_csv_hero_features",
+      "title": "왜 오프라인으로 CSV로 내보내나요?",
+      "content": "데이터 파이프라인을 위해 스프레드시트를 CSV로 내보낼 때 원시 데이터가 외부 API에 노출되어서는 안 됩니다."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Excel to CSV",
+      "type": "excel_csv_how_to_steps",
+      "title": "Excel을 CSV로 변환하는 방법",
       "steps": [
         {
-          "title": "Open Excel File",
-          "description": "Select the .xlsx spreadsheet."
+          "title": "엑셀 파일 열기",
+          "description": ".xlsx 스프레드시트를 선택합니다."
         },
         {
-          "title": "Choose Sheet",
-          "description": "Pick which sheet to export as CSV."
+          "title": "시트 선택",
+          "description": "CSV로 내보낼 시트를 선택하세요."
         },
         {
-          "title": "Download CSV",
-          "description": "Get your clean CSV file instantly."
+          "title": "CSV 다운로드",
+          "description": "깨끗한 CSV 파일을 즉시 받으세요."
         }
-      ]
+      ],
+      "badgeText": "빠른 가이드"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Developer Tools for Seoul",
-      "content": "Developers and data engineers in Seoul export spreadsheets to CSV for pipelines without cloud intermediaries."
+      "type": "excel_csv_geo_targeting",
+      "title": "100% 안전한 로컬 처리",
+      "content": "모든 작업은 로컬 장치에서 직접 수행됩니다. 우리는 고급 WebAssembly 기술을 사용하여 문서를 외부 서버에 업로드하지 않고 처리하여 완벽한 개인 정보 보호를 보장합니다.",
+      "badgeText": "로컬 처리"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Spreadsheet Data Stays Local",
-      "content": "Financial models and business data exported to CSV without any server-side processing."
+      "type": "excel_csv_privacy_security",
+      "title": "스프레드시트 데이터가 로컬에 유지됨",
+      "content": "서버 측 처리 없이 재무 모델 및 비즈니스 데이터를 CSV로 내보냅니다.",
+      "badgeText": "보안 우선"
     },
     {
-      "type": "organizer_performance",
-      "title": "Export Any Spreadsheet Instantly",
-      "content": "Export a 50,000-row Excel file to CSV in under 1 second. All in-browser."
+      "type": "excel_csv_performance",
+      "title": "스프레드시트를 즉시 내보내기",
+      "content": "50,000행의 Excel 파일을 1초 이내에 CSV로 내보냅니다. 모든 브라우저 내.",
+      "badgeText": "번개처럼 빠르게"
     }
   ],
   "faqs": [
     {
-      "q": "Can I export multiple sheets?",
-      "a": "Yes, export each sheet as a separate CSV file."
+      "q": "여러 시트를 내보낼 수 있나요?",
+      "a": "예, 각 시트를 별도의 CSV 파일로 내보냅니다."
     },
     {
-      "q": "Is Excel formatting preserved in CSV?",
-      "a": "CSV is plain text; formatting is removed but all values are preserved."
+      "q": "Excel 형식이 CSV로 유지되나요?",
+      "a": "CSV는 일반 텍스트입니다. 서식은 제거되지만 모든 값은 유지됩니다."
     },
     {
-      "q": "Can I choose the delimiter?",
-      "a": "Yes, choose comma, semicolon, or tab."
+      "q": "구분자를 선택할 수 있나요?",
+      "a": "예, 쉼표, 세미콜론 또는 탭을 선택하세요."
     },
     {
-      "q": "Are formulas exported as values?",
-      "a": "Yes, formula results (not formulas) are written to the CSV."
+      "q": "수식을 값으로 내보내나요?",
+      "a": "예, 수식 결과(수식이 아님)가 CSV에 기록됩니다."
     },
     {
-      "q": "Is this free?",
+      "q": "이거 무료인가요?",
       "a": "예, 완전 무료입니다."
     }
-  ]
+  ],
+  "faqTitle": "자주 묻는 질문",
+  "supportCenter": "지원 센터"
 }

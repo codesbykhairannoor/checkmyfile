@@ -1,67 +1,85 @@
 {
-  "title": "Crop PDF Margins — Trim Pages Offline",
-  "h1": "Crop and Trim PDF Page Margins Instantly",
-  "description": "Remove unwanted whitespace or crop PDF pages to custom dimensions, all locally. No upload. Ideal for users in Kuala Lumpur.",
+  "title": "Pangkas Jidar PDF — Pangkas Halaman Luar Talian",
+  "h1": "Pangkas dan Pangkas Jidar Halaman PDF Serta-merta",
+  "description": "Alih keluar ruang kosong yang tidak diingini atau pangkas halaman PDF ke dimensi tersuai, semuanya secara setempat. Cepat dan selamat sepenuhnya.",
+  "buttonText": "Crop PDF",
+  "badges": [
+    "Editor margin visual",
+    "Pemotongan seragam",
+    "Kependaman sifar"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Crop PDFs Locally?",
-      "content": "Scanned documents often have large margins. Crop them locally without exposing internal document structure to the cloud."
+      "type": "crop_hero_features",
+      "title": "Mengapa Pangkas PDF Secara Tempatan?",
+      "content": "Dokumen yang diimbas selalunya mempunyai margin yang besar. Pangkasnya secara tempatan tanpa mendedahkan struktur dokumen dalaman kepada awan."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Crop PDF Pages",
+      "type": "crop_how_to_steps",
+      "title": "Cara Memangkas Halaman PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to crop."
+          "title": "Buka PDF",
+          "description": "Muatkan PDF yang ingin anda pangkas."
         },
         {
-          "title": "Set Margins",
-          "description": "Drag guides or enter exact margin values."
+          "title": "Tetapkan Margin",
+          "description": "Seret panduan atau masukkan nilai jidar yang tepat."
         },
         {
-          "title": "Export Cropped PDF",
-          "description": "Download the trimmed PDF instantly."
+          "title": "Eksport PDF Pangkas",
+          "description": "Muat turun PDF yang dipangkas serta-merta."
         }
-      ]
+      ],
+      "badgeText": "Panduan Pantas"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Precise Cropping for Kuala Lumpur Users",
-      "content": "Architects and designers in Kuala Lumpur use our crop tool to clean up scanned blueprints without cloud uploads."
+      "type": "crop_geo_targeting",
+      "title": "100% Pemprosesan Tempatan Selamat",
+      "content": "Semua operasi dilakukan terus pada peranti tempatan anda. Kami menggunakan teknologi WebAssembly termaju untuk memproses dokumen anda tanpa pernah memuat naiknya ke pelayan luaran, memastikan privasi lengkap.",
+      "badgeText": "Pemprosesan Setempat"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Technical Documents Stay Local",
-      "content": "Architectural plans and legal PDFs cropped locally without any server round-trip."
+      "type": "crop_privacy_security",
+      "title": "Dokumen Teknikal Kekal Setempat",
+      "content": "Pelan seni bina dan PDF undang-undang dipangkas secara tempatan tanpa sebarang perjalanan pergi dan balik pelayan.",
+      "badgeText": "Keselamatan Diutamakan"
     },
     {
-      "type": "split_performance",
-      "title": "Crop Any Size PDF Instantly",
-      "content": "Crop margins from a 200-page document in under 2 seconds. All in your browser."
+      "type": "crop_performance",
+      "title": "Pangkas Sebarang Saiz PDF Serta-merta",
+      "content": "Pangkas margin daripada dokumen 200 halaman dalam masa kurang dari 2 saat. Semua dalam penyemak imbas anda.",
+      "badgeText": "Sepantas Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "Can I crop all pages uniformly?",
-      "a": "Yes, apply the same crop to every page at once."
+      "q": "Bolehkah saya memangkas semua halaman secara seragam?",
+      "a": "Ya, gunakan pemangkasan yang sama pada setiap halaman sekaligus."
     },
     {
-      "q": "Can I crop individual pages?",
-      "a": "Yes, you can set per-page crop values."
+      "q": "Bolehkah saya memangkas halaman individu?",
+      "a": "Ya, anda boleh menetapkan nilai tanaman setiap halaman."
     },
     {
-      "q": "What are the minimum margin values?",
-      "a": "You can crop all the way to 0 margin on any side."
+      "q": "Apakah nilai margin minimum?",
+      "a": "Anda boleh memangkas sehingga 0 margin di mana-mana bahagian."
     },
     {
-      "q": "Will content be cut off?",
-      "a": "Only whitespace is removed by default; you control the guides."
+      "q": "Adakah kandungan akan dipotong?",
+      "a": "Hanya ruang putih dialih keluar secara lalai; anda mengawal panduan."
     },
     {
-      "q": "Is this free?",
+      "q": "Adakah ini percuma?",
       "a": "Ya, percuma sepenuhnya."
     }
-  ]
+  ],
+  "faqTitle": "Soalan Lazim",
+  "supportCenter": "Pusat Sokongan"
 }

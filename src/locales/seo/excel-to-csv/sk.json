@@ -1,67 +1,85 @@
 {
-  "title": "Excel to CSV Converter — Export Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to CSV Locally",
-  "description": "Export .xlsx files to clean .csv format entirely in your browser. No upload. Ideal for developers in Bratislava.",
+  "title": "Prevodník Excel do CSV — Export tabuliek offline",
+  "h1": "Lokálne previesť tabuľky programu Excel do formátu CSV",
+  "description": "Exportujte súbory .xlsx do čistého formátu .csv úplne vo svojom prehliadači. Žiadne nahrávanie. 100% bezpečné lokálne spracovanie.",
+  "buttonText": "Convert to CSV",
+  "badges": [
+    "Nespracované údaje",
+    "Import databázy",
+    "Rýchly export"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Export to CSV Offline?",
-      "content": "Exporting spreadsheets to CSV for data pipelines should not expose your raw data to any external API."
+      "type": "excel_csv_hero_features",
+      "title": "Prečo exportovať do CSV offline?",
+      "content": "Export tabuliek do CSV pre dátové kanály by nemal vystaviť nespracované údaje žiadnemu externému API."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Excel to CSV",
+      "type": "excel_csv_how_to_steps",
+      "title": "Ako previesť Excel do CSV",
       "steps": [
         {
-          "title": "Open Excel File",
-          "description": "Select the .xlsx spreadsheet."
+          "title": "Otvoriť súbor Excel",
+          "description": "Vyberte tabuľku .xlsx."
         },
         {
-          "title": "Choose Sheet",
-          "description": "Pick which sheet to export as CSV."
+          "title": "Vyberte Hárok",
+          "description": "Vyberte, ktorý hárok chcete exportovať ako CSV."
         },
         {
-          "title": "Download CSV",
-          "description": "Get your clean CSV file instantly."
+          "title": "Stiahnuť CSV",
+          "description": "Získajte svoj čistý súbor CSV okamžite."
         }
-      ]
+      ],
+      "badgeText": "Rýchly sprievodca"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Developer Tools for Bratislava",
-      "content": "Developers and data engineers in Bratislava export spreadsheets to CSV for pipelines without cloud intermediaries."
+      "type": "excel_csv_geo_targeting",
+      "title": "100% bezpečné miestne spracovanie",
+      "content": "Všetky operácie sa vykonávajú priamo na vašom lokálnom zariadení. Používame pokročilú technológiu WebAssembly na spracovanie vašich dokumentov bez ich nahrávania na externé servery, čím zaisťujeme úplné súkromie.",
+      "badgeText": "Miestne spracovanie"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Spreadsheet Data Stays Local",
-      "content": "Financial models and business data exported to CSV without any server-side processing."
+      "type": "excel_csv_privacy_security",
+      "title": "Tabuľkové údaje zostávajú lokálne",
+      "content": "Finančné modely a obchodné údaje exportované do CSV bez akéhokoľvek spracovania na strane servera.",
+      "badgeText": "Bezpečnosť na prvom mieste"
     },
     {
-      "type": "organizer_performance",
-      "title": "Export Any Spreadsheet Instantly",
-      "content": "Export a 50,000-row Excel file to CSV in under 1 second. All in-browser."
+      "type": "excel_csv_performance",
+      "title": "Exportovať ľubovoľnú tabuľku okamžite",
+      "content": "Exportujte súbor Excel s 50 000 riadkami do CSV za menej ako 1 sekundu. Všetko v prehliadači.",
+      "badgeText": "Rýchlosť blesku"
     }
   ],
   "faqs": [
     {
-      "q": "Can I export multiple sheets?",
-      "a": "Yes, export each sheet as a separate CSV file."
+      "q": "Môžem exportovať viacero listov?",
+      "a": "Áno, exportovať každý hárok ako samostatný súbor CSV."
     },
     {
-      "q": "Is Excel formatting preserved in CSV?",
-      "a": "CSV is plain text; formatting is removed but all values are preserved."
+      "q": "Je formátovanie Excelu zachované v CSV?",
+      "a": "CSV je obyčajný text; formátovanie sa odstráni, ale všetky hodnoty sa zachovajú."
     },
     {
-      "q": "Can I choose the delimiter?",
-      "a": "Yes, choose comma, semicolon, or tab."
+      "q": "Môžem si vybrať oddeľovač?",
+      "a": "Áno, vyberte čiarku, bodkočiarku alebo tabulátor."
     },
     {
-      "q": "Are formulas exported as values?",
-      "a": "Yes, formula results (not formulas) are written to the CSV."
+      "q": "Exportujú sa vzorce ako hodnoty?",
+      "a": "Áno, výsledky vzorcov (nie vzorce) sa zapisujú do CSV."
     },
     {
-      "q": "Is this free?",
+      "q": "Je to zadarmo?",
       "a": "Áno, úplne zadarmo."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
 }

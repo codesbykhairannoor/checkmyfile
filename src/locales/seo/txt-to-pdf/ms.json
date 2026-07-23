@@ -1,67 +1,85 @@
 {
-  "title": "Text to PDF Converter — Offline & Instant",
-  "h1": "Convert Plain Text Files to PDF Locally",
-  "description": "Transform .txt files into clean, readable PDFs directly in your browser. No upload required. Ideal for users in Kuala Lumpur.",
+  "title": "Penukar Teks ke PDF — Luar Talian & Segera",
+  "h1": "Tukar Fail Teks Biasa kepada PDF Secara Setempat",
+  "description": "Ubah fail .txt kepada PDF yang bersih dan boleh dibaca terus dalam penyemak imbas anda. Tiada muat naik diperlukan. 100% pemprosesan tempatan selamat.",
+  "buttonText": "Convert Text",
+  "badges": [
+    "Coretan Kod",
+    "Log Pelayan",
+    "Manuskrip"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Text Files Offline?",
-      "content": "Text files often contain code, scripts, or sensitive notes. Our offline converter ensures zero data transmission."
+      "type": "txt_hero_features",
+      "title": "Mengapa Menukar Fail Teks Luar Talian?",
+      "content": "Fail teks selalunya mengandungi kod, skrip atau nota sensitif. Penukar luar talian kami memastikan penghantaran data sifar."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Text to PDF",
+      "type": "txt_how_to_steps",
+      "title": "Cara Menukar Teks kepada PDF",
       "steps": [
         {
-          "title": "Open Text File",
-          "description": "Select your .txt file or paste text directly."
+          "title": "Buka Fail Teks",
+          "description": "Pilih fail .txt anda atau tampal teks terus."
         },
         {
-          "title": "Choose Font & Style",
-          "description": "Pick font size and layout preferences."
+          "title": "Pilih Fon & Gaya",
+          "description": "Pilih saiz fon dan pilihan susun atur."
         },
         {
-          "title": "Download PDF",
-          "description": "Export your text as a beautifully formatted PDF."
+          "title": "Muat turun PDF",
+          "description": "Eksport teks anda sebagai PDF berformat indah."
         }
-      ]
+      ],
+      "badgeText": "Panduan Pantas"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Text to PDF for Kuala Lumpur Developers",
-      "content": "Developers and writers in Kuala Lumpur use our tool to convert scripts and notes without cloud dependency."
+      "type": "txt_geo_targeting",
+      "title": "100% Pemprosesan Tempatan Selamat",
+      "content": "Semua operasi dilakukan terus pada peranti tempatan anda. Kami menggunakan teknologi WebAssembly termaju untuk memproses dokumen anda tanpa pernah memuat naiknya ke pelayan luaran, memastikan privasi lengkap.",
+      "badgeText": "Pemprosesan Setempat"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Code Stays on Your Machine",
-      "content": "Source code, legal notes, medical records — text files converted with zero server involvement."
+      "type": "txt_privacy_security",
+      "title": "Kod Kekal pada Mesin Anda",
+      "content": "Kod sumber, nota undang-undang, rekod perubatan — fail teks ditukar dengan penglibatan pelayan sifar.",
+      "badgeText": "Keselamatan Diutamakan"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Text Rendering",
-      "content": "Convert any size text file to PDF in milliseconds. No upload, no compression, no delay."
+      "type": "txt_performance",
+      "title": "Penyampaian Teks Segera",
+      "content": "Tukar sebarang fail teks saiz kepada PDF dalam milisaat. Tiada muat naik, tiada pemampatan, tiada penangguhan.",
+      "badgeText": "Sepantas Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "Can I paste text directly?",
-      "a": "Yes, you can type or paste text without uploading a file."
+      "q": "Bolehkah saya menampal teks secara langsung?",
+      "a": "Ya, anda boleh menaip atau menampal teks tanpa memuat naik fail."
     },
     {
-      "q": "What fonts are available?",
-      "a": "Standard web fonts like Arial, Times New Roman, and monospace."
+      "q": "Apakah fon yang tersedia?",
+      "a": "Fon web standard seperti Arial, Times New Roman dan monospace."
     },
     {
-      "q": "Is code syntax preserved?",
-      "a": "Monospace formatting is preserved for code blocks."
+      "q": "Adakah sintaks kod dikekalkan?",
+      "a": "Pemformatan monospace dikekalkan untuk blok kod."
     },
     {
-      "q": "Can I set page margins?",
-      "a": "Yes, customize top, bottom, left, and right margins."
+      "q": "Bolehkah saya menetapkan margin halaman?",
+      "a": "Ya, sesuaikan jidar atas, bawah, kiri dan kanan."
     },
     {
-      "q": "Is this free?",
+      "q": "Adakah ini percuma?",
       "a": "Ya, percuma sepenuhnya."
     }
-  ]
+  ],
+  "faqTitle": "Soalan Lazim",
+  "supportCenter": "Pusat Sokongan"
 }

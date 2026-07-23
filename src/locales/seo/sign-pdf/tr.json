@@ -1,67 +1,85 @@
 {
-  "title": "Sign PDF Online — Draw Signature Offline",
-  "h1": "Sign PDF Documents With Your Signature Without Uploading",
-  "description": "Draw, type, or upload your signature and place it on PDFs entirely in your browser. No cloud. Perfect for users in Istanbul.",
+  "title": "PDF'yi Çevrimiçi İmzalayın — İmzayı Çevrimdışı Çizin",
+  "h1": "PDF Belgelerini Yüklemeden İmzanızla İmzalayın",
+  "description": "İmzanızı çizin, yazın veya yükleyin ve tamamen tarayıcınızda PDF'lere yerleştirin. Bulut yok. %100 güvenli yerel işleme.",
+  "buttonText": "Sign PDF",
+  "badges": [
+    "Dijital İmza",
+    "Çiz veya Yaz",
+    "Yasal olarak bağlayıcı"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "sign_hero_features",
-      "title": "Why Sign PDFs Locally?",
-      "content": "Your signature is your identity. Never upload your drawn signature or a private contract to a third-party cloud signing service."
+      "title": "Neden PDF'leri Yerel Olarak İmzalamalısınız?",
+      "content": "İmzanız kimliğinizdir. Çizilmiş imzanızı veya özel sözleşmenizi asla üçüncü taraf bir bulut imzalama hizmetine yüklemeyin."
     },
     {
       "type": "sign_how_to_steps",
-      "title": "How to Sign a PDF in 3 Steps",
+      "title": "3 Adımda PDF Nasıl İmzalanır",
       "steps": [
         {
-          "title": "Create Your Signature",
-          "description": "Draw with mouse, type in signature font, or upload an image."
+          "title": "İmzanızı Oluşturun",
+          "description": "Fareyle çizin, imza yazı tipini yazın veya bir resim yükleyin."
         },
         {
-          "title": "Place on Document",
-          "description": "Drag and resize your signature to the correct position."
+          "title": "Belgeye Yerleştir",
+          "description": "İmzanızı doğru konuma sürükleyip yeniden boyutlandırın."
         },
         {
-          "title": "Download Signed PDF",
-          "description": "Save your signed document immediately, no account needed."
+          "title": "İmzalı PDF'yi İndir",
+          "description": "İmzalı belgenizi hemen kaydedin, hesaba gerek yok."
         }
-      ]
+      ],
+      "badgeText": "Hızlı Kılavuz"
     },
     {
       "type": "sign_geo_targeting",
-      "title": "Private Digital Signatures for Istanbul",
-      "content": "Freelancers and businesses in Istanbul sign contracts, NDAs, and agreements without exposing their identity or documents to any cloud service."
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
     },
     {
       "type": "sign_privacy_security",
-      "title": "Your Signature Identity Stays Private",
-      "content": "Your drawn signature and signed document are processed entirely in browser memory — never stored, never transmitted."
+      "title": "İmza Kimliğiniz Gizli Kalır",
+      "content": "Çizilen imzanız ve imzalanan belgeniz tamamen tarayıcı belleğinde işlenir; asla saklanmaz, asla iletilmez.",
+      "badgeText": "Önce Güvenlik"
     },
     {
       "type": "sign_performance",
-      "title": "Sign Any Document in Under 30 Seconds",
-      "content": "No account, no upload, no cloud. Draw, place, and download your signed PDF in under 30 seconds."
+      "title": "Herhangi Bir Belgeyi 30 Saniyeden Kısa Sürede İmzalayın",
+      "content": "Hesap yok, yükleme yok, bulut yok. İmzalı PDF'nizi 30 saniyeden kısa sürede çizin, yerleştirin ve indirin.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [
     {
-      "q": "How can I create my signature?",
-      "a": "Draw with your mouse, type your name in a signature font, or upload an image."
+      "q": "İmzamı nasıl oluşturabilirim?",
+      "a": "Farenizle çizim yapın, adınızı imza yazı tipiyle yazın veya bir resim yükleyin."
     },
     {
-      "q": "Can I sign multiple pages?",
-      "a": "Yes, place your signature on any or all pages."
+      "q": "Birden fazla sayfayı imzalayabilir miyim?",
+      "a": "Evet, imzanızı herhangi bir sayfaya veya tüm sayfalara koyun."
     },
     {
-      "q": "Is the signature legally binding?",
-      "a": "Our tool applies a visual signature. For legally binding e-signatures, check your jurisdiction."
+      "q": "İmza yasal olarak bağlayıcı mıdır?",
+      "a": "Aracımız görsel bir imza uygular. Yasal olarak bağlayıcı e-imzalar için yargı yetki alanınızı kontrol edin."
     },
     {
-      "q": "Can I resize the signature?",
-      "a": "Yes, drag the corners to resize it after placing."
+      "q": "İmzayı yeniden boyutlandırabilir miyim?",
+      "a": "Evet, yerleştirdikten sonra yeniden boyutlandırmak için köşelerden sürükleyin."
     },
     {
-      "q": "Is this free?",
+      "q": "Bu bedava mı?",
       "a": "Evet, tamamen ücretsiz."
     }
-  ]
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi"
 }

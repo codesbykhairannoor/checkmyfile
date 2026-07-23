@@ -1,67 +1,85 @@
 {
-  "title": "Organize PDF Pages — Reorder & Delete Offline",
-  "h1": "Reorder, Delete, or Duplicate PDF Pages Locally",
-  "description": "Drag and drop to rearrange, remove, or duplicate PDF pages entirely in your browser. No upload. Great for users in Bucharest.",
+  "title": "Organizați pagini PDF — Reordonați și ștergeți offline",
+  "h1": "Reordonați, ștergeți sau duplicați paginile PDF la nivel local",
+  "description": "Trageți și plasați pentru a rearanja, elimina sau duplica paginile PDF în întregime în browser. Rapid și complet sigur.",
+  "buttonText": "Organize Pages",
+  "badges": [
+    "Drag & Drop",
+    "Reordonează paginile",
+    "Editor vizual"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Organize PDFs Locally?",
-      "content": "Reorganizing page structure is an editing operation. Your internal document should stay internal during editing."
+      "type": "organize_hero_features",
+      "title": "De ce să organizați PDF-urile local?",
+      "content": "Reorganizarea structurii paginii este o operație de editare. Documentul dvs. intern ar trebui să rămână intern în timpul editării."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Organize PDF Pages",
+      "type": "organize_how_to_steps",
+      "title": "Cum să organizați paginile PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to reorganize."
+          "title": "Deschide PDF",
+          "description": "Încărcați PDF-ul pe care doriți să îl reorganizați."
         },
         {
-          "title": "Drag to Reorder",
-          "description": "Drag page thumbnails to the desired position."
+          "title": "Trageți pentru a reordona",
+          "description": "Trageți miniaturile paginilor în poziția dorită."
         },
         {
-          "title": "Save Organized PDF",
-          "description": "Download the restructured PDF immediately."
+          "title": "Salvați PDF organizat",
+          "description": "Descărcați imediat PDF-ul restructurat."
         }
-      ]
+      ],
+      "badgeText": "Ghid rapid"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Organization for Bucharest Teams",
-      "content": "Teams in Bucharest reorganize proposal and report PDFs without uploading to any cloud service."
+      "type": "organize_geo_targeting",
+      "title": "Procesare locală 100% sigură",
+      "content": "Toate operațiunile sunt efectuate direct pe dispozitivul local. Folosim tehnologie avansată WebAssembly pentru a vă procesa documentele fără a le încărca vreodată pe servere externe, asigurând confidențialitate completă.",
+      "badgeText": "Prelucrare locală"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Page Structure Is Private Business",
-      "content": "Reordering internal reports and proposals with zero data leaving your browser."
+      "type": "organize_privacy_security",
+      "title": "Structura paginii este afaceri private",
+      "content": "Reordonarea rapoartelor interne și a propunerilor fără date care părăsesc browserul dvs.",
+      "badgeText": "Securitatea în primul rând"
     },
     {
-      "type": "organizer_performance",
-      "title": "Reorganize Any PDF in Seconds",
-      "content": "Reorder pages in a 500-page document through a smooth drag-and-drop interface with zero upload."
+      "type": "organize_performance",
+      "title": "Reorganizați orice PDF în câteva secunde",
+      "content": "Reordonați paginile într-un document de 500 de pagini printr-o interfață lină de glisare și plasare, fără încărcare.",
+      "badgeText": "Rapid fulger"
     }
   ],
   "faqs": [
     {
-      "q": "Can I delete pages?",
-      "a": "Yes, click the delete icon on any page thumbnail."
+      "q": "Pot șterge pagini?",
+      "a": "Da, faceți clic pe pictograma de ștergere de pe orice miniatură a paginii."
     },
     {
-      "q": "Can I duplicate pages?",
-      "a": "Yes, duplicate individual pages with one click."
+      "q": "Pot duplica paginile?",
+      "a": "Da, duplicați pagini individuale cu un singur clic."
     },
     {
-      "q": "Can I rotate while organizing?",
-      "a": "Yes, per-page rotation is available in the organizer."
+      "q": "Pot să mă rotesc în timp ce mă organizez?",
+      "a": "Da, rotația pe pagină este disponibilă în organizator."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No limit! Organize documents of any size."
+      "q": "Există o limită de pagini?",
+      "a": "Fără limită! Organizați documente de orice dimensiune."
     },
     {
-      "q": "Is this free?",
+      "q": "Este gratuit?",
       "a": "Da, complet gratuit."
     }
-  ]
+  ],
+  "faqTitle": "Întrebări frecvente",
+  "supportCenter": "Centrul de suport"
 }

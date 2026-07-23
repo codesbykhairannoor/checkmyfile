@@ -1,67 +1,85 @@
 {
-  "title": "PowerPoint to PDF Converter — Offline & Free",
-  "h1": "Convert PowerPoint Presentations to PDF Instantly",
-  "description": "Convert .pptx presentations to high-quality PDFs directly in your browser. No cloud needed. Perfect for presenters in Athens.",
+  "title": "Μετατροπέας PowerPoint σε PDF — Εκτός σύνδεσης και δωρεάν",
+  "h1": "Μετατροπή Παρουσιάσεων PowerPoint σε PDF Αμέσως",
+  "description": "Μετατρέψτε παρουσιάσεις .pptx σε PDF υψηλής ποιότητας απευθείας στο πρόγραμμα περιήγησής σας. Δεν χρειάζεται σύννεφο. 100% ασφαλής τοπική επεξεργασία.",
+  "buttonText": "Convert Slides",
+  "badges": [
+    "Συνεδριάσεις ΔΣ",
+    "Pitch Decks",
+    "Ακυκλοφόρητα Προϊόντα"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Presentations Offline?",
-      "content": "Your slides may contain unreleased products or confidential strategies. Convert without risking data exposure."
+      "type": "ppt_hero_features",
+      "title": "Γιατί να μετατρέψετε τις παρουσιάσεις εκτός σύνδεσης;",
+      "content": "Οι διαφάνειές σας μπορεί να περιέχουν ακυκλοφόρητα προϊόντα ή εμπιστευτικές στρατηγικές. Μετατροπή χωρίς κίνδυνο έκθεσης δεδομένων."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert PowerPoint to PDF",
+      "type": "ppt_how_to_steps",
+      "title": "Πώς να μετατρέψετε το PowerPoint σε PDF",
       "steps": [
         {
-          "title": "Load Presentation",
-          "description": "Select your .pptx file from your device."
+          "title": "Φόρτωση Παρουσίασης",
+          "description": "Επιλέξτε το αρχείο .pptx από τη συσκευή σας."
         },
         {
-          "title": "Select Slide Range",
-          "description": "Include all slides or specific ones."
+          "title": "Επιλέξτε Εύρος διαφανειών",
+          "description": "Συμπεριλάβετε όλες τις διαφάνειες ή συγκεκριμένες."
         },
         {
-          "title": "Download PDF",
-          "description": "Get your PDF with all formatting preserved."
+          "title": "Λήψη PDF",
+          "description": "Αποκτήστε το PDF σας με όλη τη μορφοποίηση διατηρημένη."
         }
-      ]
+      ],
+      "badgeText": "Γρήγορος Οδηγός"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Presentation Conversion in Athens",
-      "content": "Presenters in Athens trust us to convert slide decks without leaking unreleased content to cloud servers."
+      "type": "ppt_geo_targeting",
+      "title": "100% Ασφαλής Τοπική Επεξεργασία",
+      "content": "Όλες οι λειτουργίες εκτελούνται απευθείας στην τοπική συσκευή σας. Χρησιμοποιούμε προηγμένη τεχνολογία WebAssembly για να επεξεργαζόμαστε τα έγγραφά σας χωρίς ποτέ να τα ανεβάσουμε σε εξωτερικούς διακομιστές, διασφαλίζοντας πλήρες απόρρητο.",
+      "badgeText": "Τοπική Επεξεργασία"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Confidential Slides Stay Confidential",
-      "content": "Pre-launch product decks? Board presentations? Converted 100% locally without network access."
+      "type": "ppt_privacy_security",
+      "title": "Εμπιστευτικές διαφάνειες Παραμείνετε εμπιστευτικές",
+      "content": "Καταστρώματα προϊόντων πριν από την κυκλοφορία; Παρουσιάσεις Διοικητικού Συμβουλίου; Μετατράπηκε 100% τοπικά χωρίς πρόσβαση στο δίκτυο.",
+      "badgeText": "Πρώτα η ασφάλεια"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Slide Export",
-      "content": "Convert 100-slide decks in seconds. No queue, no waiting, no upload bandwidth wasted."
+      "type": "ppt_performance",
+      "title": "Άμεση εξαγωγή διαφανειών",
+      "content": "Μετατροπή καταστρωμάτων 100 διαφανειών σε δευτερόλεπτα. Χωρίς ουρά, χωρίς αναμονή, χωρίς σπατάλη εύρους ζώνης μεταφόρτωσης.",
+      "badgeText": "Αστραπιαία"
     }
   ],
   "faqs": [
     {
-      "q": "Are slide animations preserved?",
-      "a": "Animations are flattened into static PDF frames."
+      "q": "Διατηρούνται κινούμενα σχέδια διαφανειών;",
+      "a": "Τα κινούμενα σχέδια ισοπεδώνονται σε στατικά πλαίσια PDF."
     },
     {
-      "q": "What resolution is the output?",
-      "a": "High-resolution rendering at 150 DPI by default."
+      "q": "Τι ανάλυση είναι η έξοδος;",
+      "a": "Από προεπιλογή απόδοση υψηλής ανάλυσης στα 150 DPI."
     },
     {
-      "q": "Can I convert selected slides only?",
-      "a": "Yes, specify slide ranges like 1-10 or 5,8,12."
+      "q": "Μπορώ να μετατρέψω μόνο επιλεγμένες διαφάνειες;",
+      "a": "Ναι, καθορίστε εύρη διαφανειών όπως 1-10 ή 5,8,12."
     },
     {
-      "q": "Is .ppt (old format) supported?",
-      "a": "Yes, both .ppt and .pptx are supported."
+      "q": "Υποστηρίζεται το .ppt (παλιά μορφή);",
+      "a": "Ναι, υποστηρίζονται και τα .ppt και .pptx."
     },
     {
-      "q": "Is this free to use?",
-      "a": "Ναι, εντελώς δωρεάν."
+      "q": "Είναι δωρεάν για χρήση;",
+      "a": "Ναι, εντελώς δωρεάν χωρίς υδατογραφήματα."
     }
-  ]
+  ],
+  "faqTitle": "Συχνές Ερωτήσεις",
+  "supportCenter": "Κέντρο Υποστήριξης"
 }

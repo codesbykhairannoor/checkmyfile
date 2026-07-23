@@ -1,67 +1,85 @@
 {
-  "title": "Remove PDF Metadata — Strip Hidden Author Data Offline",
-  "h1": "Strip All Hidden Metadata from PDF Files Instantly",
-  "description": "Remove author names, company info, GPS locations, and revision history from PDFs entirely in your browser. No upload. Perfect for Jakarta users.",
+  "title": "Hapus Metadata PDF — Hapus Data Penulis Tersembunyi Secara Offline",
+  "h1": "Hapus Semua Metadata Tersembunyi dari File PDF Secara Instan",
+  "description": "Hapus nama penulis, info perusahaan, lokasi GPS, dan riwayat revisi dari PDF sepenuhnya di browser Anda. Tidak ada unggahan. Pemrosesan lokal 100% aman.",
+  "buttonText": "Process Document",
+  "badges": [
+    "Aman & Pribadi",
+    "Mesin Offline",
+    "Nol Unggah"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "metadata_hero_features",
-      "title": "Why Strip PDF Metadata?",
-      "content": "PDFs carry hidden metadata — your name, your company, revision history. Strip it all before sharing publicly, entirely offline."
+      "title": "Mengapa Menghapus Metadata PDF?",
+      "content": "PDF membawa metadata tersembunyi — nama Anda, perusahaan Anda, riwayat revisi. Hapus semuanya sebelum dibagikan secara publik, sepenuhnya offline."
     },
     {
       "type": "metadata_how_to_steps",
-      "title": "Before & After — How Metadata Removal Works",
+      "title": "Sebelum & Sesudah — Cara Kerja Penghapusan Metadata",
       "steps": [
         {
-          "title": "Open Your PDF",
-          "description": "Select the PDF with hidden metadata to remove."
+          "title": "Buka PDF Anda",
+          "description": "Pilih PDF dengan metadata tersembunyi untuk dihapus."
         },
         {
-          "title": "Preview Hidden Data",
-          "description": "See exactly what metadata — author, GPS, history — is embedded."
+          "title": "Pratinjau Data Tersembunyi",
+          "description": "Lihat dengan tepat metadata apa — penulis, GPS, riwayat — yang tertanam."
         },
         {
-          "title": "Strip & Download Clean PDF",
-          "description": "Remove all metadata instantly and save a clean, anonymous PDF."
+          "title": "Hapus & Unduh PDF Bersih",
+          "description": "Hapus semua metadata secara instan dan simpan PDF yang bersih dan anonim."
         }
-      ]
+      ],
+      "badgeText": "Panduan Singkat"
     },
     {
       "type": "metadata_geo_targeting",
-      "title": "Metadata Privacy Tool for Jakarta Professionals",
-      "content": "Journalists, legal professionals, and privacy-conscious users in Jakarta strip metadata before publishing or sharing PDFs externally."
+      "title": "Pemrosesan Lokal 100% Aman",
+      "content": "Semua operasi dilakukan langsung di perangkat lokal Anda. Kami menggunakan teknologi WebAssembly yang canggih untuk memproses dokumen Anda tanpa harus mengunggahnya ke server eksternal, sehingga memastikan privasi sepenuhnya.",
+      "badgeText": "Pemrosesan Lokal"
     },
     {
       "type": "metadata_privacy_security",
-      "title": "All Metadata Types Permanently Erased",
-      "content": "Author name, company, GPS coordinates from embedded images, revision history, software fingerprints — all permanently removed."
+      "title": "Semua Jenis Metadata Dihapus Secara Permanen",
+      "content": "Nama penulis, perusahaan, koordinat GPS dari gambar yang disematkan, riwayat revisi, sidik jari perangkat lunak — semuanya dihapus secara permanen.",
+      "badgeText": "Keamanan Pertama"
     },
     {
       "type": "metadata_performance",
-      "title": "Strip Metadata in Milliseconds",
-      "content": "Metadata removal takes milliseconds and often reduces file size by 10–15%. All offline."
+      "title": "Hapus Metadata dalam Milidetik",
+      "content": "Penghapusan metadata memerlukan waktu beberapa milidetik dan sering kali mengurangi ukuran file sebesar 10–15%. Semua offline.",
+      "badgeText": "Secepat Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "What metadata is removed?",
-      "a": "Author, creator, producer, title, keywords, and all XMP/EXIF data."
+      "q": "Metadata apa yang dihapus?",
+      "a": "Penulis, pencipta, produser, judul, kata kunci, dan semua data XMP/EXIF."
     },
     {
-      "q": "Are document bookmarks affected?",
-      "a": "No, bookmarks and structure are preserved; only metadata is removed."
+      "q": "Apakah penanda dokumen terpengaruh?",
+      "a": "Tidak, penanda dan strukturnya dipertahankan; hanya metadata yang dihapus."
     },
     {
-      "q": "Can I preview the metadata first?",
-      "a": "Yes, we show a list of all detected metadata before removing."
+      "q": "Bisakah saya melihat pratinjau metadatanya terlebih dahulu?",
+      "a": "Ya, kami menampilkan daftar semua metadata yang terdeteksi sebelum menghapusnya."
     },
     {
-      "q": "Is the document content affected?",
-      "a": "No, the content, images, and structure remain intact."
+      "q": "Apakah konten dokumen terpengaruh?",
+      "a": "Tidak, konten, gambar, dan strukturnya tetap utuh."
     },
     {
-      "q": "Is this free?",
-      "a": "Ya, sepenuhnya gratis."
+      "q": "Apakah ini gratis?",
+      "a": "Ya, selalu gratis."
     }
-  ]
+  ],
+  "faqTitle": "Pertanyaan yang Sering Diajukan",
+  "supportCenter": "Pusat Dukungan"
 }

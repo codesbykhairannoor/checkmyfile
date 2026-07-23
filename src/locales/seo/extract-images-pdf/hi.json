@@ -1,67 +1,85 @@
 {
-  "title": "Extract Images from PDF — Offline Extractor",
-  "h1": "Extract All Embedded Images from PDF Files",
-  "description": "Pull out every image from a PDF and download them as PNG or JPG files, all in your browser. No cloud. Ideal for users in New Delhi.",
+  "title": "पीडीएफ से छवियाँ निकालें - ऑफ़लाइन एक्सट्रैक्टर",
+  "h1": "पीडीएफ फाइलों से सभी एंबेडेड छवियाँ निकालें",
+  "description": "प्रत्येक छवि को पीडीएफ से निकालें और उन्हें अपने ब्राउज़र में पीएनजी या जेपीजी फ़ाइलों के रूप में डाउनलोड करें। कोई बादल नहीं. 100% सुरक्षित स्थानीय प्रसंस्करण।",
+  "buttonText": "Extract All Images",
+  "badges": [
+    "उत्पाद तस्वीरें",
+    "गोपनीय आरेख",
+    "वैक्टर"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract Images Offline?",
-      "content": "PDFs with confidential diagrams or product photos should never be uploaded. Extract images directly in your browser."
+      "type": "extract_images_hero_features",
+      "title": "छवियाँ ऑफ़लाइन क्यों निकालें?",
+      "content": "गोपनीय आरेख या उत्पाद फ़ोटो वाली पीडीएफ़ कभी भी अपलोड नहीं की जानी चाहिए। सीधे अपने ब्राउज़र में छवियाँ निकालें."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Extract Images from PDF",
+      "type": "extract_images_how_to_steps",
+      "title": "पीडीएफ से छवियाँ कैसे निकालें",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Open the PDF containing embedded images."
+          "title": "पीडीएफ लोड करें",
+          "description": "एम्बेडेड छवियों वाली पीडीएफ खोलें।"
         },
         {
-          "title": "Scan for Images",
-          "description": "Our engine locates all embedded image objects."
+          "title": "छवियों के लिए स्कैन करें",
+          "description": "हमारा इंजन सभी एम्बेडेड छवि ऑब्जेक्ट का पता लगाता है।"
         },
         {
-          "title": "Download ZIP",
-          "description": "Get all extracted images in a single ZIP file."
+          "title": "ज़िप डाउनलोड करें",
+          "description": "सभी निकाली गई छवियाँ एक ही ज़िप फ़ाइल में प्राप्त करें।"
         }
-      ]
+      ],
+      "badgeText": "त्वरित मार्गदर्शिका"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Image Extraction in New Delhi",
-      "content": "Publishers and marketers in New Delhi extract product photos and diagrams from PDFs without cloud uploads."
+      "type": "extract_images_geo_targeting",
+      "title": "100% सुरक्षित स्थानीय प्रसंस्करण",
+      "content": "सभी ऑपरेशन सीधे आपके स्थानीय डिवाइस पर किए जाते हैं। हम पूर्ण गोपनीयता सुनिश्चित करते हुए, आपके दस्तावेज़ों को बाहरी सर्वर पर अपलोड किए बिना संसाधित करने के लिए उन्नत WebAssembly तकनीक का उपयोग करते हैं।",
+      "badgeText": "स्थानीय प्रसंस्करण"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Product Images Stay Confidential",
-      "content": "Unreleased product photos embedded in PDFs extracted locally without any server access."
+      "type": "extract_images_privacy_security",
+      "title": "उत्पाद छवियाँ गोपनीय रहती हैं",
+      "content": "पीडीएफ में एम्बेडेड अप्रकाशित उत्पाद तस्वीरें बिना किसी सर्वर एक्सेस के स्थानीय रूप से निकाली गईं।",
+      "badgeText": "सुरक्षा पहले"
     },
     {
-      "type": "split_performance",
-      "title": "Extract Hundreds of Images Fast",
-      "content": "Extract 500 images from a PDF in seconds. All native browser processing."
+      "type": "extract_images_performance",
+      "title": "तेजी से सैकड़ों छवियाँ निकालें",
+      "content": "एक पीडीएफ से कुछ ही सेकंड में 500 छवियाँ निकालें। सभी देशी ब्राउज़र प्रसंस्करण।",
+      "badgeText": "बिजली की तेजी"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are extracted?",
-      "a": "Images are saved in their original format (PNG, JPG, etc.)."
+      "q": "कौन से छवि प्रारूप निकाले जाते हैं?",
+      "a": "छवियाँ उनके मूल प्रारूप (पीएनजी, जेपीजी, आदि) में सहेजी जाती हैं।"
     },
     {
-      "q": "Are images at full resolution?",
-      "a": "Yes, extracted at the original embedded resolution."
+      "q": "क्या छवियाँ पूर्ण रिज़ॉल्यूशन पर हैं?",
+      "a": "हां, मूल एम्बेडेड रिज़ॉल्यूशन पर निकाला गया।"
     },
     {
-      "q": "Can I choose specific pages?",
-      "a": "Yes, specify which pages to extract images from."
+      "q": "क्या मैं विशिष्ट पृष्ठ चुन सकता हूँ?",
+      "a": "हाँ, निर्दिष्ट करें कि किन पृष्ठों से छवियाँ निकाली जानी हैं।"
     },
     {
-      "q": "Does it extract vector graphics?",
-      "a": "Vector elements are rasterized to PNG/JPG."
+      "q": "क्या यह वेक्टर ग्राफ़िक्स निकालता है?",
+      "a": "वेक्टर तत्वों को पीएनजी/जेपीजी में रेखापुंज किया गया है।"
     },
     {
-      "q": "Is this free?",
-      "a": "हाँ, पूरी तरह मुफ्त।"
+      "q": "क्या यह मुफ़्त है?",
+      "a": "हाँ, हमेशा मुफ़्त."
     }
-  ]
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न",
+  "supportCenter": "सहायता केंद्र"
 }

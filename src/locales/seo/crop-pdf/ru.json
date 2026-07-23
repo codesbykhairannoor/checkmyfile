@@ -1,67 +1,85 @@
 {
-  "title": "Crop PDF Margins — Trim Pages Offline",
-  "h1": "Crop and Trim PDF Page Margins Instantly",
-  "description": "Remove unwanted whitespace or crop PDF pages to custom dimensions, all locally. No upload. Ideal for users in Moscow.",
+  "title": "Обрезать поля PDF — обрезать страницы в автономном режиме",
+  "h1": "Мгновенно обрезайте и обрезайте поля страницы PDF",
+  "description": "Удаляйте ненужные пробелы или обрезайте PDF-страницы до нестандартных размеров — и все это локально. Быстро и полностью безопасно.",
+  "buttonText": "Crop PDF",
+  "badges": [
+    "Редактор визуальных полей",
+    "Равномерная обрезка",
+    "Нулевая задержка"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Crop PDFs Locally?",
-      "content": "Scanned documents often have large margins. Crop them locally without exposing internal document structure to the cloud."
+      "type": "crop_hero_features",
+      "title": "Зачем обрезать PDF-файлы локально?",
+      "content": "Отсканированные документы часто имеют большие поля. Обрезайте их локально, не раскрывая внутреннюю структуру документа в облаке."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Crop PDF Pages",
+      "type": "crop_how_to_steps",
+      "title": "Как обрезать страницы PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to crop."
+          "title": "Открыть PDF",
+          "description": "Загрузите PDF-файл, который хотите обрезать."
         },
         {
-          "title": "Set Margins",
-          "description": "Drag guides or enter exact margin values."
+          "title": "Установить поля",
+          "description": "Перетащите направляющие или введите точные значения полей."
         },
         {
-          "title": "Export Cropped PDF",
-          "description": "Download the trimmed PDF instantly."
+          "title": "Экспортировать обрезанный PDF",
+          "description": "Загрузите обрезанный PDF-файл мгновенно."
         }
-      ]
+      ],
+      "badgeText": "Краткое руководство"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Precise Cropping for Moscow Users",
-      "content": "Architects and designers in Moscow use our crop tool to clean up scanned blueprints without cloud uploads."
+      "type": "crop_geo_targeting",
+      "title": "100% безопасная локальная обработка",
+      "content": "Все операции выполняются непосредственно на вашем локальном устройстве. Мы используем передовую технологию WebAssembly для обработки ваших документов, не загружая их на внешние серверы, обеспечивая полную конфиденциальность.",
+      "badgeText": "Локальная обработка"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Technical Documents Stay Local",
-      "content": "Architectural plans and legal PDFs cropped locally without any server round-trip."
+      "type": "crop_privacy_security",
+      "title": "Техническая документация остается локальной",
+      "content": "Архитектурные планы и юридические PDF-файлы обрезаются локально без обращения к серверу.",
+      "badgeText": "Безопасность превыше всего"
     },
     {
-      "type": "split_performance",
-      "title": "Crop Any Size PDF Instantly",
-      "content": "Crop margins from a 200-page document in under 2 seconds. All in your browser."
+      "type": "crop_performance",
+      "title": "Мгновенно обрезайте PDF-файлы любого размера",
+      "content": "Обрезайте поля 200-страничного документа менее чем за 2 секунды. Все в вашем браузере.",
+      "badgeText": "Молниеносно"
     }
   ],
   "faqs": [
     {
-      "q": "Can I crop all pages uniformly?",
-      "a": "Yes, apply the same crop to every page at once."
+      "q": "Могу ли я обрезать все страницы одинаково?",
+      "a": "Да, примените одну и ту же обрезку ко всем страницам одновременно."
     },
     {
-      "q": "Can I crop individual pages?",
-      "a": "Yes, you can set per-page crop values."
+      "q": "Могу ли я обрезать отдельные страницы?",
+      "a": "Да, вы можете установить значения обрезки для каждой страницы."
     },
     {
-      "q": "What are the minimum margin values?",
-      "a": "You can crop all the way to 0 margin on any side."
+      "q": "Каковы минимальные значения маржи?",
+      "a": "Вы можете обрезать до 0 полей с любой стороны."
     },
     {
-      "q": "Will content be cut off?",
-      "a": "Only whitespace is removed by default; you control the guides."
+      "q": "Контент будет отключен?",
+      "a": "По умолчанию удаляются только пробелы; вы управляете гидами."
     },
     {
-      "q": "Is this free?",
-      "a": "Да, полностью бесплатно."
+      "q": "Это бесплатно?",
+      "a": "Да, совершенно бесплатно."
     }
-  ]
+  ],
+  "faqTitle": "Часто задаваемые вопросы",
+  "supportCenter": "Центр поддержки"
 }

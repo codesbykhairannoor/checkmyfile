@@ -7,13 +7,7 @@ export const officeTools: ToolDefinition[] = [
     id: 'word-to-pdf',
     category: 'office',
     iconName: 'FileText',
-    slugs: generateSlugsForId('word-to-pdf', {
-      en: 'word-to-pdf',
-      id: 'word-ke-pdf',
-      es: 'word-a-pdf',
-      fr: 'word-en-pdf',
-      de: 'word-in-pdf',
-    }),
+    slugs: generateSlugsForId('word-to-pdf', { en: 'word-to-pdf', id: 'word-ke-pdf', es: 'word-a-pdf', fr: 'word-en-pdf', de: 'word-in-pdf', pt: 'word-para-pdf', it: 'word-in-pdf', nl: 'word-naar-pdf' }),
     seo: {
       en: {
         title: 'Convert Word to PDF Online - DOCX to PDF Locally | Zero Upload',
@@ -40,11 +34,7 @@ export const officeTools: ToolDefinition[] = [
     id: 'excel-to-pdf',
     category: 'office',
     iconName: 'FileSpreadsheet',
-    slugs: generateSlugsForId('excel-to-pdf', {
-      en: 'excel-to-pdf',
-      id: 'excel-ke-pdf',
-      es: 'excel-a-pdf',
-    }),
+    slugs: generateSlugsForId('excel-to-pdf', { en: 'excel-to-pdf', id: 'excel-ke-pdf', es: 'excel-a-pdf', fr: 'excel-en-pdf', de: 'excel-in-pdf', pt: 'excel-para-pdf', it: 'excel-in-pdf', nl: 'excel-naar-pdf' }),
     seo: {
       en: {
         title: 'Convert Excel to PDF Online - XLSX & XLS to PDF Locally',
@@ -64,11 +54,7 @@ export const officeTools: ToolDefinition[] = [
     id: 'ppt-to-pdf',
     category: 'office',
     iconName: 'Presentation',
-    slugs: generateSlugsForId('ppt-to-pdf', {
-      en: 'ppt-to-pdf',
-      id: 'ppt-ke-pdf',
-      es: 'ppt-a-pdf',
-    }),
+    slugs: generateSlugsForId('ppt-to-pdf', { en: 'ppt-to-pdf', id: 'ppt-ke-pdf', es: 'ppt-a-pdf', fr: 'ppt-en-pdf', de: 'ppt-in-pdf', pt: 'ppt-para-pdf', it: 'ppt-in-pdf', nl: 'ppt-naar-pdf' }),
     seo: {
       en: {
         title: 'Convert PowerPoint to PDF - PPTX Slides to PDF Locally',
@@ -88,11 +74,7 @@ export const officeTools: ToolDefinition[] = [
     id: 'txt-to-pdf',
     category: 'office',
     iconName: 'AlignLeft',
-    slugs: generateSlugsForId('txt-to-pdf', {
-      en: 'txt-to-pdf',
-      id: 'teks-ke-pdf',
-      es: 'texto-a-pdf',
-    }),
+    slugs: generateSlugsForId('txt-to-pdf', { en: 'txt-to-pdf', id: 'teks-ke-pdf', es: 'texto-a-pdf', fr: 'texte-en-pdf', de: 'text-in-pdf', pt: 'texto-para-pdf', it: 'testo-in-pdf', nl: 'tekst-naar-pdf' }),
     seo: {
       en: {
         title: 'Convert TXT to PDF Online - Plain Text to PDF Document',

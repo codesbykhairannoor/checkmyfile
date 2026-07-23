@@ -1,67 +1,85 @@
 {
-  "title": "Grayscale PDF — Convert to Black and White Offline",
-  "h1": "Convert Color PDF Pages to Grayscale Instantly",
-  "description": "Turn color PDFs into black-and-white versions to reduce file size or prepare for printing, entirely in your browser. Ideal for users in Hanoi.",
+  "title": "PDF thang độ xám — Chuyển đổi sang đen trắng ngoại tuyến",
+  "h1": "Chuyển đổi các trang PDF màu sang thang độ xám ngay lập tức",
+  "description": "Biến các tệp PDF màu thành phiên bản đen trắng để giảm kích thước tệp hoặc chuẩn bị in, hoàn toàn trong trình duyệt của bạn. Xử lý cục bộ an toàn 100%.",
+  "buttonText": "Convert to Grayscale",
+  "badges": [
+    "Tiết Kiệm Mực",
+    "Đen trắng",
+    "Hoàn hảo cho việc in ấn"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Convert to Grayscale Offline?",
-      "content": "Removing color from a PDF is a pre-print or archiving step. Do it locally without exposing confidential document design."
+      "type": "grayscale_hero_features",
+      "title": "Tại sao chuyển đổi sang thang độ xám ngoại tuyến?",
+      "content": "Xóa màu khỏi tệp PDF là bước in trước hoặc lưu trữ. Thực hiện việc đó cục bộ mà không để lộ thiết kế tài liệu bí mật."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Make PDF Grayscale",
+      "type": "grayscale_how_to_steps",
+      "title": "Cách tạo thang độ xám PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the color PDF to convert."
+          "title": "Mở PDF",
+          "description": "Chọn màu PDF để chuyển đổi."
         },
         {
-          "title": "Choose Conversion Mode",
-          "description": "Pick luminance or contrast-adjusted grayscale."
+          "title": "Chọn Chế độ chuyển đổi",
+          "description": "Chọn độ sáng hoặc thang độ xám được điều chỉnh theo độ tương phản."
         },
         {
-          "title": "Download Grayscale PDF",
-          "description": "Save the black-and-white PDF immediately."
+          "title": "Tải xuống bản PDF thang độ xám",
+          "description": "Lưu bản PDF đen trắng ngay lập tức."
         }
-      ]
+      ],
+      "badgeText": "Hướng dẫn nhanh"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Grayscale PDF for Hanoi Printers",
-      "content": "Businesses in Hanoi convert color PDFs to grayscale for cost-effective printing without cloud uploads."
+      "type": "grayscale_geo_targeting",
+      "title": "Xử lý cục bộ an toàn 100%",
+      "content": "Tất cả các hoạt động được thực hiện trực tiếp trên thiết bị cục bộ của bạn. Chúng tôi sử dụng công nghệ WebAssembly tiên tiến để xử lý tài liệu của bạn mà không cần tải chúng lên máy chủ bên ngoài, đảm bảo quyền riêng tư hoàn toàn.",
+      "badgeText": "Xử lý cục bộ"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Design Files Stay Confidential",
-      "content": "Internal design documents and branded materials converted to grayscale without cloud exposure."
+      "type": "grayscale_privacy_security",
+      "title": "Tệp thiết kế được giữ bí mật",
+      "content": "Tài liệu thiết kế nội bộ và tài liệu có thương hiệu được chuyển đổi sang thang độ xám mà không tiếp xúc với đám mây.",
+      "badgeText": "Bảo mật là trên hết"
     },
     {
-      "type": "transform_performance",
-      "title": "Convert Color Instantly",
-      "content": "A 200-page color PDF converted to grayscale in under 2 seconds. Zero upload."
+      "type": "grayscale_performance",
+      "title": "Chuyển đổi màu ngay lập tức",
+      "content": "Một bản PDF màu 200 trang được chuyển đổi sang thang độ xám trong vòng chưa đầy 2 giây. Không tải lên.",
+      "badgeText": "Nhanh như chớp"
     }
   ],
   "faqs": [
     {
-      "q": "Does grayscale reduce file size?",
-      "a": "Often yes, especially for image-heavy PDFs."
+      "q": "Thang độ xám có làm giảm kích thước tệp không?",
+      "a": "Thường thì có, đặc biệt đối với các tệp PDF có nhiều hình ảnh."
     },
     {
-      "q": "Are all pages converted?",
-      "a": "Yes by default; you can also select specific pages."
+      "q": "Có phải tất cả các trang đều được chuyển đổi?",
+      "a": "Có theo mặc định; bạn cũng có thể chọn các trang cụ thể."
     },
     {
-      "q": "Is the conversion reversible?",
-      "a": "The color information is removed; keep the original for reversal."
+      "q": "Việc chuyển đổi có thể đảo ngược được không?",
+      "a": "Thông tin màu sắc bị xóa; giữ bản gốc để đảo ngược."
     },
     {
-      "q": "Does it affect text quality?",
-      "a": "No, text remains crisp and black."
+      "q": "Nó có ảnh hưởng đến chất lượng văn bản không?",
+      "a": "Không, văn bản vẫn sắc nét và có màu đen."
     },
     {
-      "q": "Is this free?",
+      "q": "Cái này có miễn phí không?",
       "a": "Có, hoàn toàn miễn phí."
     }
-  ]
+  ],
+  "faqTitle": "Câu hỏi thường gặp",
+  "supportCenter": "Trung tâm hỗ trợ"
 }

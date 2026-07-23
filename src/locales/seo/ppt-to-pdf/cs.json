@@ -1,67 +1,85 @@
 {
-  "title": "PowerPoint to PDF Converter — Offline & Free",
-  "h1": "Convert PowerPoint Presentations to PDF Instantly",
-  "description": "Convert .pptx presentations to high-quality PDFs directly in your browser. No cloud needed. Perfect for presenters in Prague.",
+  "title": "Převaděč PowerPoint do PDF — offline a zdarma",
+  "h1": "Okamžitě převést PowerPointové prezentace do PDF",
+  "description": "Převeďte prezentace .pptx na vysoce kvalitní soubory PDF přímo ve vašem prohlížeči. Není potřeba žádný cloud. 100% bezpečné místní zpracování.",
+  "buttonText": "Convert Slides",
+  "badges": [
+    "Schůze představenstva",
+    "Pitch Decks",
+    "Nevydané produkty"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Presentations Offline?",
-      "content": "Your slides may contain unreleased products or confidential strategies. Convert without risking data exposure."
+      "type": "ppt_hero_features",
+      "title": "Proč převádět prezentace offline?",
+      "content": "Vaše snímky mohou obsahovat nevydané produkty nebo důvěrné strategie. Převeďte bez rizika vystavení dat."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert PowerPoint to PDF",
+      "type": "ppt_how_to_steps",
+      "title": "Jak převést PowerPoint do PDF",
       "steps": [
         {
-          "title": "Load Presentation",
-          "description": "Select your .pptx file from your device."
+          "title": "Načíst prezentaci",
+          "description": "Vyberte soubor .pptx ze svého zařízení."
         },
         {
-          "title": "Select Slide Range",
-          "description": "Include all slides or specific ones."
+          "title": "Vyberte rozsah snímků",
+          "description": "Zahrňte všechny snímky nebo konkrétní snímky."
         },
         {
-          "title": "Download PDF",
-          "description": "Get your PDF with all formatting preserved."
+          "title": "Stáhnout PDF",
+          "description": "Získejte svůj PDF se zachovaným veškerým formátováním."
         }
-      ]
+      ],
+      "badgeText": "Rychlý průvodce"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Presentation Conversion in Prague",
-      "content": "Presenters in Prague trust us to convert slide decks without leaking unreleased content to cloud servers."
+      "type": "ppt_geo_targeting",
+      "title": "100% bezpečné místní zpracování",
+      "content": "Všechny operace se provádějí přímo na vašem místním zařízení. Ke zpracování vašich dokumentů používáme pokročilou technologii WebAssembly, aniž bychom je kdy nahrávali na externí servery, což zajišťuje naprosté soukromí.",
+      "badgeText": "Místní zpracování"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Confidential Slides Stay Confidential",
-      "content": "Pre-launch product decks? Board presentations? Converted 100% locally without network access."
+      "type": "ppt_privacy_security",
+      "title": "Důvěrné snímky Zůstaňte v důvěrnosti",
+      "content": "Před uvedením produktových balíčků? Prezentace na desce? Převedeno 100 % lokálně bez přístupu k síti.",
+      "badgeText": "Bezpečnost především"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Slide Export",
-      "content": "Convert 100-slide decks in seconds. No queue, no waiting, no upload bandwidth wasted."
+      "type": "ppt_performance",
+      "title": "Okamžitý export snímků",
+      "content": "Převeďte balíčky se 100 snímky během několika sekund. Žádná fronta, žádné čekání, žádné plýtvání šířkou pásma nahrávání.",
+      "badgeText": "Bleskově rychlý"
     }
   ],
   "faqs": [
     {
-      "q": "Are slide animations preserved?",
-      "a": "Animations are flattened into static PDF frames."
+      "q": "Jsou animace snímků zachovány?",
+      "a": "Animace jsou sloučeny do statických snímků PDF."
     },
     {
-      "q": "What resolution is the output?",
-      "a": "High-resolution rendering at 150 DPI by default."
+      "q": "Jaké rozlišení má výstup?",
+      "a": "Vykreslování ve vysokém rozlišení ve výchozím nastavení 150 DPI."
     },
     {
-      "q": "Can I convert selected slides only?",
-      "a": "Yes, specify slide ranges like 1-10 or 5,8,12."
+      "q": "Mohu převést pouze vybrané snímky?",
+      "a": "Ano, zadejte rozsahy snímků jako 1-10 nebo 5,8,12."
     },
     {
-      "q": "Is .ppt (old format) supported?",
-      "a": "Yes, both .ppt and .pptx are supported."
+      "q": "Je podporován .ppt (starý formát)?",
+      "a": "Ano, jsou podporovány soubory .ppt i .pptx."
     },
     {
-      "q": "Is this free to use?",
-      "a": "Ano, zcela zdarma."
+      "q": "Je to zdarma k použití?",
+      "a": "Ano, zcela zdarma bez vodoznaků."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
 }

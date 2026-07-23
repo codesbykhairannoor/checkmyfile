@@ -1,67 +1,85 @@
 {
-  "title": "PowerPoint to PDF Converter — Offline & Free",
-  "h1": "Convert PowerPoint Presentations to PDF Instantly",
-  "description": "Convert .pptx presentations to high-quality PDFs directly in your browser. No cloud needed. Perfect for presenters in Tokyo.",
+  "title": "PowerPoint から PDF へのコンバーター — オフライン & 無料",
+  "h1": "PowerPoint プレゼンテーションを即座に PDF に変換",
+  "description": "ブラウザで .pptx プレゼンテーションを高品質の PDF に直接変換します。 クラウドは必要ありません。 100% 安全なローカル処理。",
+  "buttonText": "Convert Slides",
+  "badges": [
+    "取締役会会議",
+    "ピッチデッキ",
+    "未発売商品"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Presentations Offline?",
-      "content": "Your slides may contain unreleased products or confidential strategies. Convert without risking data exposure."
+      "type": "ppt_hero_features",
+      "title": "プレゼンテーションをオフラインで変換する理由",
+      "content": "スライドには、未発表の製品や機密戦略が含まれている場合があります。 データ漏洩の危険を冒さずに変換します。"
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert PowerPoint to PDF",
+      "type": "ppt_how_to_steps",
+      "title": "PowerPoint を PDF に変換する方法",
       "steps": [
         {
-          "title": "Load Presentation",
-          "description": "Select your .pptx file from your device."
+          "title": "プレゼンテーションをロード",
+          "description": "デバイスから .pptx ファイルを選択します。"
         },
         {
-          "title": "Select Slide Range",
-          "description": "Include all slides or specific ones."
+          "title": "スライド範囲を選択",
+          "description": "すべてのスライドまたは特定のスライドを含めます。"
         },
         {
-          "title": "Download PDF",
-          "description": "Get your PDF with all formatting preserved."
+          "title": "PDF をダウンロード",
+          "description": "すべての書式が保持された PDF を取得します。"
         }
-      ]
+      ],
+      "badgeText": "クイックガイド"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Presentation Conversion in Tokyo",
-      "content": "Presenters in Tokyo trust us to convert slide decks without leaking unreleased content to cloud servers."
+      "type": "ppt_geo_targeting",
+      "title": "100% 安全なローカル処理",
+      "content": "すべての操作はローカル デバイス上で直接実行されます。 当社は高度な WebAssembly テクノロジーを使用して、ドキュメントを外部サーバーにアップロードすることなく処理し、完全なプライバシーを確​​保します。",
+      "badgeText": "ローカル処理"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Confidential Slides Stay Confidential",
-      "content": "Pre-launch product decks? Board presentations? Converted 100% locally without network access."
+      "type": "ppt_privacy_security",
+      "title": "機密スライドは機密のまま",
+      "content": "発売前の製品デッキ? 理事会のプレゼンテーション? ネットワークにアクセスせずに 100% ローカルで変換されます。",
+      "badgeText": "セキュリティ第一"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Slide Export",
-      "content": "Convert 100-slide decks in seconds. No queue, no waiting, no upload bandwidth wasted."
+      "type": "ppt_performance",
+      "title": "インスタント スライド エクスポート",
+      "content": "100 枚のスライドデッキを数秒で変換します。 キューや待機、アップロード帯域幅の無駄はありません。",
+      "badgeText": "超高速"
     }
   ],
   "faqs": [
     {
-      "q": "Are slide animations preserved?",
-      "a": "Animations are flattened into static PDF frames."
+      "q": "スライドアニメーションは保存されますか?",
+      "a": "アニメーションは静的な PDF フレームに平坦化されます。"
     },
     {
-      "q": "What resolution is the output?",
-      "a": "High-resolution rendering at 150 DPI by default."
+      "q": "出力の解像度は何ですか?",
+      "a": "デフォルトでは 150 DPI での高解像度レンダリング。"
     },
     {
-      "q": "Can I convert selected slides only?",
-      "a": "Yes, specify slide ranges like 1-10 or 5,8,12."
+      "q": "選択したスライドのみを変換できますか?",
+      "a": "はい、1 ～ 10 または 5、8、12 などのスライド範囲を指定します。"
     },
     {
-      "q": "Is .ppt (old format) supported?",
-      "a": "Yes, both .ppt and .pptx are supported."
+      "q": ".ppt (古い形式) はサポートされていますか?",
+      "a": "はい、.ppt と .pptx の両方がサポートされています。"
     },
     {
-      "q": "Is this free to use?",
-      "a": "はい、完全無料です。"
+      "q": "これは無料で使用できますか?",
+      "a": "はい、ウォーターマークなしで完全に無料です。"
     }
-  ]
+  ],
+  "faqTitle": "よくある質問",
+  "supportCenter": "サポート センター"
 }

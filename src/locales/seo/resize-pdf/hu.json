@@ -1,67 +1,85 @@
 {
-  "title": "Resize PDF Pages — Change Paper Size Offline",
-  "h1": "Resize PDF Pages to A4, Letter, or Custom Sizes",
-  "description": "Change the paper size of every PDF page to A4, US Letter, or custom dimensions entirely in your browser. No upload. Ideal for users in Budapest.",
+  "title": "PDF-oldalak átméretezése — A papírméret módosítása offline módban",
+  "h1": "PDF-oldalak átméretezése A4-es, Letter- vagy egyéni méretre",
+  "description": "Módosítsa minden PDF-oldal papírméretét A4-re, US Letterre vagy teljesen egyéni méretekre a böngészőben. Nincs feltöltés. 100%-ban biztonságos helyi feldolgozás.",
+  "buttonText": "Resize Pages",
+  "badges": [
+    "A4, Letter, Egyedi",
+    "Margók hozzáadása",
+    "Formátum javítás"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Resize PDFs Locally?",
-      "content": "Preparing documents for printing requires proper page sizing. Resize locally without uploading internal documents to the cloud."
+      "type": "resize_hero_features",
+      "title": "Miért érdemes helyileg átméretezni a PDF fájlokat?",
+      "content": "A dokumentumok nyomtatásra való előkészítése megfelelő oldalméretet igényel. Helyi átméretezés anélkül, hogy belső dokumentumokat töltene fel a felhőbe."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Resize PDF Pages",
+      "type": "resize_how_to_steps",
+      "title": "PDF-oldalak átméretezése",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page dimensions."
+          "title": "PDF megnyitása",
+          "description": "Helytelen oldalméretekkel töltse be a PDF-fájlt."
         },
         {
-          "title": "Select Target Size",
-          "description": "Choose A4, Letter, A3, or enter custom dimensions."
+          "title": "Válassza ki a célméretet",
+          "description": "Válassza az A4, Letter, A3 lehetőséget, vagy adja meg az egyéni méreteket."
         },
         {
-          "title": "Download Resized PDF",
-          "description": "Get your properly sized document instantly."
+          "title": "Átméretezett PDF letöltése",
+          "description": "Azonnal szerezze be megfelelő méretű dokumentumát."
         }
-      ]
+      ],
+      "badgeText": "Gyors útmutató"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Resizing for Budapest Print Shops",
-      "content": "Print shops and offices in Budapest resize documents to standard sizes without cloud dependency."
+      "type": "resize_geo_targeting",
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Minden művelet közvetlenül a helyi eszközön történik. Fejlett WebAssembly technológiát használunk a dokumentumok feldolgozásához anélkül, hogy azokat külső szerverekre feltöltenénk, így biztosítva a teljes adatvédelmet.",
+      "badgeText": "Helyi feldolgozás"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Internal Documents Stay Internal",
-      "content": "Resize business reports and proposals without any server-side processing."
+      "type": "resize_privacy_security",
+      "title": "A belső dokumentumok belső maradnak",
+      "content": "Az üzleti jelentések és ajánlatok átméretezése szerveroldali feldolgozás nélkül.",
+      "badgeText": "Első a biztonság"
     },
     {
-      "type": "transform_performance",
-      "title": "Resize Hundreds of Pages Instantly",
-      "content": "Resizing a 500-page PDF takes under 2 seconds. All in your browser."
+      "type": "resize_performance",
+      "title": "Több száz oldal átméretezése azonnal",
+      "content": "Egy 500 oldalas PDF átméretezése kevesebb mint 2 másodpercet vesz igénybe. Mindezt a böngészőjében.",
+      "badgeText": "Villámgyors"
     }
   ],
   "faqs": [
     {
-      "q": "What sizes are available?",
-      "a": "A4, A3, A5, US Letter, Legal, and custom dimensions."
+      "q": "Milyen méretek kaphatók?",
+      "a": "A4, A3, A5, US Letter, Legal és egyéni méretek."
     },
     {
-      "q": "Does content scale with the page?",
-      "a": "Yes, content is scaled proportionally by default."
+      "q": "A tartalom méreteződik az oldallal?",
+      "a": "Igen, a tartalom alapértelmezés szerint arányosan van méretezve."
     },
     {
-      "q": "Can I resize individual pages?",
-      "a": "Yes, apply different sizes to specific pages."
+      "q": "Átméretezhetem az egyes oldalakat?",
+      "a": "Igen, különböző méreteket alkalmazhat bizonyos oldalakra."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "Vector content is re-rendered perfectly; images may scale."
+      "q": "A minőséget befolyásolja?",
+      "a": "A vektoros tartalmat tökéletesen újrarendereli; a képek méretezhetnek."
     },
     {
-      "q": "Is this free?",
+      "q": "Ez ingyenes?",
       "a": "Igen, teljesen ingyenes."
     }
-  ]
+  ],
+  "faqTitle": "Gyakran Ismételt Kérdések",
+  "supportCenter": "Támogatási Központ"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Split PDF - Extract Pages Securely",
-  "h1": "Split and Extract PDF Pages in Seconds",
-  "description": "Extract specific pages or split a large PDF into multiple files locally in your browser. Perfect for legal professionals in Tokyo.",
+  "title": "PDF の分割 - ページを安全に抽出",
+  "h1": "PDF ページを数秒で分割して抽出",
+  "description": "特定のページを抽出したり、大きな PDF をブラウザーでローカルに複数のファイルに分割したりできます。 高速かつ完全に安全です。",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Split PDFs Locally?",
-      "content": "When dealing with massive legal or corporate documents, extracting a single page shouldn't require uploading a 1GB file. Do it instantly right on your machine."
+      "title": "PDF をローカルで分割する理由",
+      "content": "大量の法的文書や企業文書を扱う場合、単一ページを抽出するのに 1 GB のファイルをアップロードする必要はありません。 マシン上ですぐに実行できます。"
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Extract Pages",
+      "title": "ページを抽出する方法",
       "steps": [
         {
-          "title": "Open Document",
-          "description": "Load the multi-page PDF you want to split."
+          "title": "ドキュメントを開く",
+          "description": "分割したい複数ページの PDF を読み込みます。"
         },
         {
-          "title": "Select Ranges",
-          "description": "Pick specific page numbers or visually select pages to extract."
+          "title": "範囲を選択",
+          "description": "特定のページ番号を選択するか、抽出するページを視覚的に選択します。"
         },
         {
-          "title": "Export Zip",
-          "description": "Download your newly split files organized in a ZIP."
+          "title": "エクスポート ZIP",
+          "description": "新しく分割されたファイルを ZIP 形式でダウンロードします。"
         }
-      ]
+      ],
+      "badgeText": "クイックガイド"
     },
     {
       "type": "split_geo_targeting",
-      "title": "The Best Splitter in Tokyo, JP-13",
-      "content": "Whether you are studying in Tokyo or working on a tight deadline, extracting pages is now instantaneous."
+      "title": "100% 安全なローカル処理",
+      "content": "すべての操作はローカル デバイス上で直接実行されます。 当社は高度な WebAssembly テクノロジーを使用して、ドキュメントを外部サーバーにアップロードすることなく処理し、完全なプライバシーを確​​保します。",
+      "badgeText": "ローカル処理"
     },
     {
       "type": "split_privacy_security",
-      "title": "Total Page Privacy",
-      "content": "Splitting confidential employee records? Rest easy knowing our code executes purely in your local environment."
+      "title": "ページ全体のプライバシー",
+      "content": "従業員の機密記録を分割しますか? 私たちのコードは純粋にローカル環境で実行されるので、安心してください。",
+      "badgeText": "セキュリティ第一"
     },
     {
       "type": "split_performance",
-      "title": "Zero-Upload Extraction",
-      "content": "Grabbing page 14 from a 2000-page PDF takes milliseconds, skipping the excruciating upload step entirely."
+      "title": "ゼロアップロード抽出",
+      "content": "2000 ページの PDF から 14 ページを取得するには数ミリ秒かかり、耐え難いアップロード手順を完全にスキップします。",
+      "badgeText": "超高速"
     }
   ],
   "faqs": [
     {
-      "q": "How do I extract just one page?",
-      "a": "Simply click on the page thumbnail you want and hit Export."
+      "q": "1 ページだけを抽出するにはどうすればよいですか?",
+      "a": "必要なページのサムネイルをクリックして、[エクスポート] をクリックするだけです。"
     },
     {
-      "q": "Can I split the PDF in half?",
-      "a": "Yes, you can specify custom page ranges like 1-10 and 11-20."
+      "q": "PDFを半分に分割できますか?",
+      "a": "はい、1 ～ 10 や 11 ～ 20 などのカスタム ページ範囲を指定できます。"
     },
     {
-      "q": "Will the extracted pages lose quality?",
-      "a": "No, the splitting process uses binary extraction, preserving 100% of the original quality."
+      "q": "抽出されたページの品質は低下しますか?",
+      "a": "いいえ、分割プロセスではバイナリ抽出が使用され、元の品質が 100% 維持されます。"
     },
     {
-      "q": "Is my document uploaded when splitting?",
-      "a": "Never. The entire 2000-page document stays strictly in your browser."
+      "q": "分割時にドキュメントはアップロードされますか?",
+      "a": "一度もない。 2000 ページの文書全体はブラウザ内に厳密に保存されます。"
     },
     {
-      "q": "Is there a limit to how many pages I can split?",
-      "a": "No limits! Split as many pages as your computer can handle."
+      "q": "分割できるページ数に制限はありますか?",
+      "a": "制限はありません！ コンピュータが処理できる限り多くのページを分割します。"
     }
-  ]
+  ],
+  "badges": [
+    "インスタント分割",
+    "正確な範囲",
+    "制限なし"
+  ],
+  "stats": [
+    "Ultra Fast",
+    "No Upload",
+    "Batch Zip",
+    "Secure"
+  ],
+  "buttonText": "Split PDF",
+  "faqTitle": "よくある質問",
+  "supportCenter": "サポート センター"
 }

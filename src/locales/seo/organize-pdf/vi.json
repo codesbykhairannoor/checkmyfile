@@ -1,67 +1,85 @@
 {
-  "title": "Organize PDF Pages — Reorder & Delete Offline",
-  "h1": "Reorder, Delete, or Duplicate PDF Pages Locally",
-  "description": "Drag and drop to rearrange, remove, or duplicate PDF pages entirely in your browser. No upload. Great for users in Hanoi.",
+  "title": "Sắp xếp các trang PDF — Sắp xếp lại & Xóa ngoại tuyến",
+  "h1": "Sắp xếp lại, xóa hoặc sao chép các trang PDF cục bộ",
+  "description": "Kéo và thả để sắp xếp lại, xóa hoặc sao chép hoàn toàn các trang PDF trong trình duyệt của bạn. Nhanh chóng và hoàn toàn an toàn.",
+  "buttonText": "Organize Pages",
+  "badges": [
+    "Kéo và thả",
+    "Sắp xếp lại các trang",
+    "Trình chỉnh sửa trực quan"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Organize PDFs Locally?",
-      "content": "Reorganizing page structure is an editing operation. Your internal document should stay internal during editing."
+      "type": "organize_hero_features",
+      "title": "Tại sao phải tổ chức các tệp PDF cục bộ?",
+      "content": "Sắp xếp lại cấu trúc trang là một hoạt động chỉnh sửa. Tài liệu nội bộ của bạn phải được giữ nguyên trong quá trình chỉnh sửa."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Organize PDF Pages",
+      "type": "organize_how_to_steps",
+      "title": "Cách sắp xếp các trang PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to reorganize."
+          "title": "Mở PDF",
+          "description": "Tải tệp PDF bạn muốn sắp xếp lại."
         },
         {
-          "title": "Drag to Reorder",
-          "description": "Drag page thumbnails to the desired position."
+          "title": "Kéo để sắp xếp lại",
+          "description": "Kéo hình thu nhỏ của trang đến vị trí mong muốn."
         },
         {
-          "title": "Save Organized PDF",
-          "description": "Download the restructured PDF immediately."
+          "title": "Lưu PDF có tổ chức",
+          "description": "Tải xuống bản PDF được cấu trúc lại ngay lập tức."
         }
-      ]
+      ],
+      "badgeText": "Hướng dẫn nhanh"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Organization for Hanoi Teams",
-      "content": "Teams in Hanoi reorganize proposal and report PDFs without uploading to any cloud service."
+      "type": "organize_geo_targeting",
+      "title": "Xử lý cục bộ an toàn 100%",
+      "content": "Tất cả các hoạt động được thực hiện trực tiếp trên thiết bị cục bộ của bạn. Chúng tôi sử dụng công nghệ WebAssembly tiên tiến để xử lý tài liệu của bạn mà không cần tải chúng lên máy chủ bên ngoài, đảm bảo quyền riêng tư hoàn toàn.",
+      "badgeText": "Xử lý cục bộ"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Page Structure Is Private Business",
-      "content": "Reordering internal reports and proposals with zero data leaving your browser."
+      "type": "organize_privacy_security",
+      "title": "Cấu trúc trang là doanh nghiệp tư nhân",
+      "content": "Sắp xếp lại các báo cáo và đề xuất nội bộ không có dữ liệu rời khỏi trình duyệt của bạn.",
+      "badgeText": "Bảo mật là trên hết"
     },
     {
-      "type": "organizer_performance",
-      "title": "Reorganize Any PDF in Seconds",
-      "content": "Reorder pages in a 500-page document through a smooth drag-and-drop interface with zero upload."
+      "type": "organize_performance",
+      "title": "Sắp xếp lại mọi tệp PDF trong vài giây",
+      "content": "Sắp xếp lại các trang trong tài liệu 500 trang thông qua giao diện kéo và thả mượt mà mà không cần tải lên.",
+      "badgeText": "Nhanh như chớp"
     }
   ],
   "faqs": [
     {
-      "q": "Can I delete pages?",
-      "a": "Yes, click the delete icon on any page thumbnail."
+      "q": "Tôi có thể xóa trang được không?",
+      "a": "Có, hãy nhấp vào biểu tượng xóa trên hình thu nhỏ của bất kỳ trang nào."
     },
     {
-      "q": "Can I duplicate pages?",
-      "a": "Yes, duplicate individual pages with one click."
+      "q": "Tôi có thể sao chép các trang không?",
+      "a": "Có, sao chép từng trang riêng lẻ chỉ bằng một cú nhấp chuột."
     },
     {
-      "q": "Can I rotate while organizing?",
-      "a": "Yes, per-page rotation is available in the organizer."
+      "q": "Tôi có thể luân phiên trong khi sắp xếp không?",
+      "a": "Có, tính năng xoay từng trang có sẵn trong trình tổ chức."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No limit! Organize documents of any size."
+      "q": "Có giới hạn trang không?",
+      "a": "Không có giới hạn! Sắp xếp các tài liệu có kích thước bất kỳ."
     },
     {
-      "q": "Is this free?",
+      "q": "Cái này có miễn phí không?",
       "a": "Có, hoàn toàn miễn phí."
     }
-  ]
+  ],
+  "faqTitle": "Câu hỏi thường gặp",
+  "supportCenter": "Trung tâm hỗ trợ"
 }

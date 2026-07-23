@@ -1,67 +1,85 @@
 {
-  "title": "Split PDF - Extract Pages Securely",
-  "h1": "Split and Extract PDF Pages in Seconds",
-  "description": "Extract specific pages or split a large PDF into multiple files locally in your browser. Perfect for legal professionals in Budapest.",
+  "title": "PDF felosztása – Oldalak biztonságos kibontása",
+  "h1": "PDF-oldalak felosztása és kibontása másodpercek alatt",
+  "description": "Kivonat bizonyos oldalakat, vagy feloszthat egy nagy PDF-t több fájlra helyileg a böngészőben. Gyors és teljesen biztonságos.",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Split PDFs Locally?",
-      "content": "When dealing with massive legal or corporate documents, extracting a single page shouldn't require uploading a 1GB file. Do it instantly right on your machine."
+      "title": "Miért osztja fel a PDF-eket helyileg?",
+      "content": "Ha hatalmas jogi vagy vállalati dokumentumokkal foglalkozik, egyetlen oldal kibontásához nem szükséges 1 GB-os fájl feltöltése. Csináld meg azonnal közvetlenül a gépeden."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Extract Pages",
+      "title": "Oldalak kibontása",
       "steps": [
         {
-          "title": "Open Document",
-          "description": "Load the multi-page PDF you want to split."
+          "title": "Nyitott dokumentum",
+          "description": "Töltse be a felosztani kívánt többoldalas PDF-fájlt."
         },
         {
-          "title": "Select Ranges",
-          "description": "Pick specific page numbers or visually select pages to extract."
+          "title": "Tartományok kiválasztása",
+          "description": "Válasszon konkrét oldalszámokat, vagy vizuálisan válassza ki a kivonandó oldalakat."
         },
         {
-          "title": "Export Zip",
-          "description": "Download your newly split files organized in a ZIP."
+          "title": "Export zip",
+          "description": "Töltse le az újonnan felosztott fájlokat ZIP-be rendezve."
         }
-      ]
+      ],
+      "badgeText": "Gyors útmutató"
     },
     {
       "type": "split_geo_targeting",
-      "title": "The Best Splitter in Budapest, HU-BU",
-      "content": "Whether you are studying in Budapest or working on a tight deadline, extracting pages is now instantaneous."
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Minden művelet közvetlenül a helyi eszközön történik. Fejlett WebAssembly technológiát használunk a dokumentumok feldolgozásához anélkül, hogy azokat külső szerverekre feltöltenénk, így biztosítva a teljes adatvédelmet.",
+      "badgeText": "Helyi feldolgozás"
     },
     {
       "type": "split_privacy_security",
-      "title": "Total Page Privacy",
-      "content": "Splitting confidential employee records? Rest easy knowing our code executes purely in your local environment."
+      "title": "Teljes oldal adatvédelem",
+      "content": "Megosztja a bizalmas alkalmazotti nyilvántartásokat? Nyugodtan tudhatja, hogy kódunk kizárólag az Ön helyi környezetben fut.",
+      "badgeText": "Első a biztonság"
     },
     {
       "type": "split_performance",
-      "title": "Zero-Upload Extraction",
-      "content": "Grabbing page 14 from a 2000-page PDF takes milliseconds, skipping the excruciating upload step entirely."
+      "title": "Feltöltés nélküli kivonat",
+      "content": "Egy 2000 oldalas PDF 14. oldalának lefoglalása ezredmásodperceket vesz igénybe, így a kínzó feltöltési lépést teljesen kihagyja.",
+      "badgeText": "Villámgyors"
     }
   ],
   "faqs": [
     {
-      "q": "How do I extract just one page?",
-      "a": "Simply click on the page thumbnail you want and hit Export."
+      "q": "Hogyan bonthatok ki csak egy oldalt?",
+      "a": "Egyszerűen kattintson a kívánt oldal bélyegképére, és kattintson az Exportálás gombra."
     },
     {
-      "q": "Can I split the PDF in half?",
-      "a": "Yes, you can specify custom page ranges like 1-10 and 11-20."
+      "q": "Feloszthatom a PDF-t?",
+      "a": "Igen, megadhat egyéni oldaltartományokat, például 1-10 és 11-20."
     },
     {
-      "q": "Will the extracted pages lose quality?",
-      "a": "No, the splitting process uses binary extraction, preserving 100% of the original quality."
+      "q": "A kibontott oldalak minősége romlik?",
+      "a": "Nem, a felosztási folyamat bináris extrakciót használ, megőrzi az eredeti minőség 100%-át."
     },
     {
-      "q": "Is my document uploaded when splitting?",
-      "a": "Never. The entire 2000-page document stays strictly in your browser."
+      "q": "Fel van töltve a dokumentumom felosztáskor?",
+      "a": "Soha. A teljes 2000 oldalas dokumentum szigorúan a böngészőben marad."
     },
     {
-      "q": "Is there a limit to how many pages I can split?",
-      "a": "No limits! Split as many pages as your computer can handle."
+      "q": "Van korlátozás arra, hogy hány oldalt oszthatok fel?",
+      "a": "Nincsenek korlátok! Osszon fel annyi oldalt, amennyit a számítógépe képes kezelni."
     }
-  ]
+  ],
+  "badges": [
+    "Azonnali felosztás",
+    "Pontos hatótávolság",
+    "Nincsenek határok"
+  ],
+  "stats": [
+    "Ultra Fast",
+    "No Upload",
+    "Batch Zip",
+    "Secure"
+  ],
+  "buttonText": "Split PDF",
+  "faqTitle": "Gyakran Ismételt Kérdések",
+  "supportCenter": "Támogatási Központ"
 }

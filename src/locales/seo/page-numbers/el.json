@@ -1,67 +1,85 @@
 {
-  "title": "Add Page Numbers to PDF — Offline Number Stamp",
-  "h1": "Insert Page Numbers into PDF Documents Locally",
-  "description": "Stamp page numbers at the header or footer of your PDF entirely in your browser. No upload. Ideal for users in Athens.",
+  "title": "Προσθήκη αριθμών σελίδων σε PDF — Σφραγίδα αριθμών εκτός σύνδεσης",
+  "h1": "Εισαγάγετε αριθμούς σελίδων σε έγγραφα PDF τοπικά",
+  "description": "Σφραγίστε τους αριθμούς σελίδων στην κεφαλίδα ή στο υποσέλιδο του PDF σας εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Γρήγορο και απόλυτα ασφαλές.",
+  "buttonText": "Add Page Numbers",
+  "badges": [
+    "Προσαρμοσμένη θέση",
+    "Κεφαλίδα & Υποσέλιδο",
+    "Αρίθμηση Bates"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Add Page Numbers Offline?",
-      "content": "Page numbers are a formatting step, not a reason to upload confidential documents to a cloud service."
+      "type": "pagenum_hero_features",
+      "title": "Γιατί να προσθέσετε αριθμούς σελίδων εκτός σύνδεσης;",
+      "content": "Οι αριθμοί σελίδων είναι ένα βήμα μορφοποίησης, όχι ένας λόγος για τη μεταφόρτωση εμπιστευτικών εγγράφων σε μια υπηρεσία cloud."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Add Page Numbers",
+      "type": "pagenum_how_to_steps",
+      "title": "Τρόπος προσθήκης αριθμών σελίδων",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to number."
+          "title": "Ανοίξτε το PDF",
+          "description": "Επιλέξτε τον αριθμό PDF προς αριθμό."
         },
         {
-          "title": "Configure Style",
-          "description": "Choose position, format (1/12, Page 1, i, ii…), and font."
+          "title": "Διαμόρφωση στυλ",
+          "description": "Επιλέξτε θέση, μορφή (1/12, Σελίδα 1, i, ii…) και γραμματοσειρά."
         },
         {
-          "title": "Apply & Download",
-          "description": "Download your paginated PDF instantly."
+          "title": "Εφαρμογή & Λήψη",
+          "description": "Κατεβάστε το σελιδοποιημένο PDF σας άμεσα."
         }
-      ]
+      ],
+      "badgeText": "Γρήγορος Οδηγός"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Page Numbering for Athens Legal Docs",
-      "content": "Legal professionals in Athens number briefs and reports locally without cloud service dependency."
+      "type": "pagenum_geo_targeting",
+      "title": "100% Ασφαλής Τοπική Επεξεργασία",
+      "content": "Όλες οι λειτουργίες εκτελούνται απευθείας στην τοπική συσκευή σας. Χρησιμοποιούμε προηγμένη τεχνολογία WebAssembly για να επεξεργαζόμαστε τα έγγραφά σας χωρίς ποτέ να τα ανεβάσουμε σε εξωτερικούς διακομιστές, διασφαλίζοντας πλήρες απόρρητο.",
+      "badgeText": "Τοπική Επεξεργασία"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Internal Documents Stay Numbered & Private",
-      "content": "Add page numbers to contracts and confidential reports without any server involvement."
+      "type": "pagenum_privacy_security",
+      "title": "Τα εσωτερικά έγγραφα παραμένουν αριθμημένα & ιδιωτικά",
+      "content": "Προσθέστε αριθμούς σελίδων σε συμβόλαια και εμπιστευτικές αναφορές χωρίς καμία συμμετοχή διακομιστή.",
+      "badgeText": "Πρώτα η ασφάλεια"
     },
     {
-      "type": "organizer_performance",
-      "title": "Number a 1000-Page PDF Instantly",
-      "content": "Stamping page numbers locally takes milliseconds for any size document."
+      "type": "pagenum_performance",
+      "title": "Αριθμήστε ένα PDF 1000 σελίδων αμέσως",
+      "content": "Η τοπική σφράγιση αριθμών σελίδων διαρκεί χιλιοστά του δευτερολέπτου για οποιοδήποτε έγγραφο μεγέθους.",
+      "badgeText": "Αστραπιαία"
     }
   ],
   "faqs": [
     {
-      "q": "What number formats are available?",
-      "a": "Arabic (1, 2, 3), Roman (i, ii, iii), and letter (a, b, c) formats."
+      "q": "Ποιες μορφές αριθμών είναι διαθέσιμες;",
+      "a": "Μορφές αραβικών (1, 2, 3), ρωμαϊκών (i, ii, iii) και γραμμάτων (a, b, c)."
     },
     {
-      "q": "Can I start from a custom number?",
-      "a": "Yes, set any starting page number."
+      "q": "Μπορώ να ξεκινήσω από έναν προσαρμοσμένο αριθμό;",
+      "a": "Ναι, ορίστε οποιονδήποτε αριθμό αρχικής σελίδας."
     },
     {
-      "q": "Can I skip numbering the first page?",
-      "a": "Yes, set the page offset to skip cover pages."
+      "q": "Μπορώ να παραλείψω την αρίθμηση της πρώτης σελίδας;",
+      "a": "Ναι, ρυθμίστε τη μετατόπιση σελίδας ώστε να παραλείπονται εξώφυλλα."
     },
     {
-      "q": "Where can I position numbers?",
-      "a": "Header-left, header-center, header-right, and same for footer."
+      "q": "Πού μπορώ να τοποθετήσω αριθμούς;",
+      "a": "Κεφαλίδα-αριστερά, κεφαλίδα-κέντρο, κεφαλίδα-δεξιά και το ίδιο για το υποσέλιδο."
     },
     {
-      "q": "Is this free?",
-      "a": "Ναι, εντελώς δωρεάν."
+      "q": "Αυτό είναι δωρεάν;",
+      "a": "Ναι, πάντα δωρεάν."
     }
-  ]
+  ],
+  "faqTitle": "Συχνές Ερωτήσεις",
+  "supportCenter": "Κέντρο Υποστήριξης"
 }

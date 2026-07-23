@@ -1,67 +1,85 @@
 {
-  "title": "PDF to Image Converter — Extract Pages Offline",
-  "h1": "Convert PDF Pages to PNG or JPG Images",
-  "description": "Extract every page from a PDF as high-quality images directly in your browser. Zero upload, total privacy. Best for users in Kuala Lumpur.",
+  "title": "Penukar PDF ke Imej — Ekstrak Halaman Luar Talian",
+  "h1": "Tukar Halaman PDF kepada Imej PNG atau JPG",
+  "description": "Ekstrak setiap halaman daripada PDF sebagai imej berkualiti tinggi terus dalam penyemak imbas anda. Muat naik sifar, pemprosesan tempatan selamat 100%.",
+  "buttonText": "Extract Images",
+  "badges": [
+    "Portfolio Reka Bentuk",
+    "Persembahan",
+    "Kualiti Tinggi"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract PDF Pages Offline?",
-      "content": "PDFs often contain confidential diagrams, blueprints, or reports. Extract pages as images without any server access."
+      "type": "pdf_image_hero_features",
+      "title": "Mengapa Ekstrak Halaman PDF Luar Talian?",
+      "content": "PDF selalunya mengandungi gambar rajah sulit, pelan tindakan atau laporan. Ekstrak halaman sebagai imej tanpa sebarang akses pelayan."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Images",
+      "type": "pdf_image_how_to_steps",
+      "title": "Cara Menukar PDF kepada Imej",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF you want to extract images from."
+          "title": "Muatkan PDF",
+          "description": "Pilih PDF yang anda ingin ekstrak imej."
         },
         {
-          "title": "Choose Format",
-          "description": "Pick PNG (lossless) or JPG (compressed) output."
+          "title": "Pilih Format",
+          "description": "Pilih output PNG (tidak rugi) atau JPG (dimampatkan)."
         },
         {
-          "title": "Download Images",
-          "description": "Get all pages as individual image files in a ZIP."
+          "title": "Muat Turun Imej",
+          "description": "Dapatkan semua halaman sebagai fail imej individu dalam ZIP."
         }
-      ]
+      ],
+      "badgeText": "Panduan Pantas"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF to Image for Kuala Lumpur Designers",
-      "content": "Designers in Kuala Lumpur extract PDF pages as images for presentations and social media without cloud uploads."
+      "type": "pdf_image_geo_targeting",
+      "title": "100% Pemprosesan Tempatan Selamat",
+      "content": "Semua operasi dilakukan terus pada peranti tempatan anda. Kami menggunakan teknologi WebAssembly termaju untuk memproses dokumen anda tanpa pernah memuat naiknya ke pelayan luaran, memastikan privasi lengkap.",
+      "badgeText": "Pemprosesan Setempat"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Confidential Diagrams Stay Private",
-      "content": "Technical blueprints and legal documents extracted as images without any data leaving your device."
+      "type": "pdf_image_privacy_security",
+      "title": "Gambarajah Sulit Kekal Peribadi",
+      "content": "Pelan tindakan teknikal dan dokumen undang-undang yang diekstrak sebagai imej tanpa sebarang data meninggalkan peranti anda.",
+      "badgeText": "Keselamatan Diutamakan"
     },
     {
-      "type": "split_performance",
-      "title": "Extract All Pages Instantly",
-      "content": "A 500-page PDF converted to images in seconds. No upload, no wait."
+      "type": "pdf_image_performance",
+      "title": "Ekstrak Semua Halaman Serta-merta",
+      "content": "PDF 500 halaman ditukar kepada imej dalam beberapa saat. Tiada muat naik, jangan tunggu.",
+      "badgeText": "Sepantas Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are available?",
-      "a": "PNG and JPG with adjustable quality settings."
+      "q": "Apakah format imej yang tersedia?",
+      "a": "PNG dan JPG dengan tetapan kualiti boleh laras."
     },
     {
-      "q": "Can I extract specific pages?",
-      "a": "Yes, specify page ranges like 1-5 or 3,7,12."
+      "q": "Bolehkah saya mengekstrak halaman tertentu?",
+      "a": "Ya, nyatakan julat halaman seperti 1-5 atau 3,7,12."
     },
     {
-      "q": "What resolution are the exported images?",
-      "a": "Default 150 DPI, adjustable up to 300 DPI."
+      "q": "Apakah resolusi imej yang dieksport?",
+      "a": "150 DPI lalai, boleh laras sehingga 300 DPI."
     },
     {
-      "q": "Are all pages exported at once?",
-      "a": "Yes, all selected pages are zipped for a single download."
+      "q": "Adakah semua halaman dieksport serentak?",
+      "a": "Ya, semua halaman yang dipilih dizip untuk satu muat turun."
     },
     {
-      "q": "Is this free?",
-      "a": "Ya, percuma sepenuhnya."
+      "q": "Adakah ini percuma?",
+      "a": "Percuma sepenuhnya, sentiasa."
     }
-  ]
+  ],
+  "faqTitle": "Soalan Lazim",
+  "supportCenter": "Pusat Sokongan"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Organize PDF Pages — Reorder & Delete Offline",
-  "h1": "Reorder, Delete, or Duplicate PDF Pages Locally",
-  "description": "Drag and drop to rearrange, remove, or duplicate PDF pages entirely in your browser. No upload. Great for users in Amsterdam.",
+  "title": "Organiseer PDF-pagina's - Offline ordenen en verwijderen",
+  "h1": "PDF-pagina's lokaal opnieuw ordenen, verwijderen of dupliceren",
+  "description": "Slepen en neerzetten om PDF-pagina's volledig in uw browser opnieuw in te delen, te verwijderen of te dupliceren. Snel en volledig veilig.",
+  "buttonText": "Organize Pages",
+  "badges": [
+    "Slepen en neerzetten",
+    "Pagina's opnieuw rangschikken",
+    "Visuele editor"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Organize PDFs Locally?",
-      "content": "Reorganizing page structure is an editing operation. Your internal document should stay internal during editing."
+      "type": "organize_hero_features",
+      "title": "Waarom PDF's lokaal organiseren?",
+      "content": "Het reorganiseren van de paginastructuur is een bewerkingshandeling. Uw interne document moet tijdens het bewerken intern blijven."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Organize PDF Pages",
+      "type": "organize_how_to_steps",
+      "title": "PDF-pagina's ordenen",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to reorganize."
+          "title": "PDF openen",
+          "description": "Laad de PDF die u wilt reorganiseren."
         },
         {
-          "title": "Drag to Reorder",
-          "description": "Drag page thumbnails to the desired position."
+          "title": "Sleep om de volgorde te wijzigen",
+          "description": "Sleep paginaminiaturen naar de gewenste positie."
         },
         {
-          "title": "Save Organized PDF",
-          "description": "Download the restructured PDF immediately."
+          "title": "Georganiseerde PDF opslaan",
+          "description": "Download onmiddellijk de geherstructureerde PDF."
         }
-      ]
+      ],
+      "badgeText": "Beknopte handleiding"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Organization for Amsterdam Teams",
-      "content": "Teams in Amsterdam reorganize proposal and report PDFs without uploading to any cloud service."
+      "type": "organize_geo_targeting",
+      "title": "100% veilige lokale verwerking",
+      "content": "Alle bewerkingen worden rechtstreeks op uw lokale apparaat uitgevoerd. We gebruiken geavanceerde WebAssembly-technologie om uw documenten te verwerken zonder ze ooit naar externe servers te uploaden, waardoor volledige privacy wordt gegarandeerd.",
+      "badgeText": "Lokale verwerking"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Page Structure Is Private Business",
-      "content": "Reordering internal reports and proposals with zero data leaving your browser."
+      "type": "organize_privacy_security",
+      "title": "Paginastructuur is privébedrijf",
+      "content": "Herschikken van interne rapporten en voorstellen zonder dat er gegevens uw browser verlaten.",
+      "badgeText": "Beveiliging eerst"
     },
     {
-      "type": "organizer_performance",
-      "title": "Reorganize Any PDF in Seconds",
-      "content": "Reorder pages in a 500-page document through a smooth drag-and-drop interface with zero upload."
+      "type": "organize_performance",
+      "title": "Reorganiseer elke PDF in enkele seconden",
+      "content": "Herschik pagina's in een document van 500 pagina's via een soepele drag-and-drop-interface zonder upload.",
+      "badgeText": "Bliksemsnel"
     }
   ],
   "faqs": [
     {
-      "q": "Can I delete pages?",
-      "a": "Yes, click the delete icon on any page thumbnail."
+      "q": "Kan ik pagina's verwijderen?",
+      "a": "Ja, klik op het verwijderpictogram op een paginaminiatuur."
     },
     {
-      "q": "Can I duplicate pages?",
-      "a": "Yes, duplicate individual pages with one click."
+      "q": "Kan ik pagina's dupliceren?",
+      "a": "Ja, dupliceer individuele pagina's met één klik."
     },
     {
-      "q": "Can I rotate while organizing?",
-      "a": "Yes, per-page rotation is available in the organizer."
+      "q": "Kan ik rouleren tijdens het organiseren?",
+      "a": "Ja, rotatie per pagina is beschikbaar in de organisator."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No limit! Organize documents of any size."
+      "q": "Is er een paginalimiet?",
+      "a": "Geen limiet! Organiseer documenten van elk formaat."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, volledig gratis."
+      "q": "Is dit gratis?",
+      "a": "Ja, helemaal gratis."
     }
-  ]
+  ],
+  "faqTitle": "Veelgestelde vragen",
+  "supportCenter": "Ondersteuningscentrum"
 }

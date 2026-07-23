@@ -1,67 +1,80 @@
 {
-  "title": "PDF to Word Converter — Offline & Editable",
-  "h1": "Convert PDF to Editable Word Documents Locally",
-  "description": "Transform PDFs back into .docx files you can edit, right in your browser. No upload needed. Great for users in Istanbul.",
+  "title": "PDF'den Word'e Dönüştürücü - Çevrimdışı ve Düzenlenebilir",
+  "h1": "PDF'yi Yerel Olarak Düzenlenebilir Word Belgelerine Dönüştürme",
+  "description": "PDF'leri doğrudan tarayıcınızda düzenleyebileceğiniz .docx dosyalarına dönüştürün. Yüklemeye gerek yok. İstanbul'daki kullanıcılar için harika.",
+  "buttonText": "Word'e Dönüştür",
+  "badges": [
+    "Düzenlenebilir Belgeler",
+    "Metin Kurtarma",
+    "Çevrimdışı Süreç"
+  ],
+  "stats": [
+    "%100",
+    "Yerel",
+    "0'lar",
+    "Bekleme Süresi"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF Back Offline?",
-      "content": "When you need to edit a PDF, converting it offline keeps your original document confidential."
+      "title": "Neden çevrimdışı kullanılmalı?",
+      "content": "Bir PDF'yi düzenlemeniz gerektiğinde onu çevrimdışına dönüştürmek, orijinal belgenizin gizli kalmasını sağlar."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Word",
+      "title": "Nasıl kullanılır",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF file you need to convert."
+          "title": "PDF'yi yükle",
+          "description": "Dönüştürmeniz gereken PDF dosyasını seçin."
         },
         {
-          "title": "Detect Text Layers",
-          "description": "Our engine reads text and structure from the PDF."
+          "title": "Metin Katmanlarını Algıla",
+          "description": "Motorumuz PDF'deki metni ve yapıyı okur."
         },
         {
-          "title": "Download .docx",
-          "description": "Get your editable Word document ready to modify."
+          "title": ".docx dosyasını indirin",
+          "description": "Düzenlenebilir Word belgenizi değiştirmeye hazır hale getirin."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "PDF to Word for Istanbul Offices",
-      "content": "Office workers in Istanbul use our tool to recover editable text from PDFs without cloud dependency."
+      "title": "İstanbul Ofisleri için PDF'i Word'e Dönüştürme",
+      "content": "İstanbul'daki ofis çalışanları, bulut bağımlılığı olmadan PDF'lerden düzenlenebilir metinleri kurtarmak için aracımızı kullanıyor."
     },
     {
       "type": "split_privacy_security",
-      "title": "Legal Documents Stay Confidential",
-      "content": "Contracts, NDAs, and reports converted back to Word entirely in your browser memory."
+      "title": "Yasal Belgeler Gizli Kalır",
+      "content": "Sözleşmeler, Gizlilik Sözleşmeleri ve raporlar tamamen tarayıcınızın belleğinde Word'e dönüştürülür."
     },
     {
       "type": "split_performance",
-      "title": "Recover Editable Text in Seconds",
-      "content": "Extract text from a 50-page PDF in under 3 seconds without uploading a single byte."
+      "title": "Düzenlenebilir Metni Saniyeler İçinde Kurtarın",
+      "content": "Tek bir bayt yüklemeden 50 sayfalık PDF'den metni 3 saniyeden kısa sürede çıkarın."
     }
   ],
   "faqs": [
     {
-      "q": "Is all text preserved?",
-      "a": "Yes, text from all layers is extracted and formatted."
+      "q": "Metnin tamamı korunuyor mu?",
+      "a": "Evet, tüm katmanlardaki metinler çıkarılır ve biçimlendirilir."
     },
     {
-      "q": "Does it work on scanned PDFs?",
-      "a": "For scanned PDFs, use our OCR tool first."
+      "q": "Taranmış PDF'lerde çalışır mı?",
+      "a": "Taranmış PDF'ler için öncelikle OCR aracımızı kullanın."
     },
     {
-      "q": "Are images included in the .docx?",
-      "a": "Yes, embedded images are included in the output."
+      "q": "Resimler .docx dosyasına dahil mi?",
+      "a": "Evet, gömülü görüntüler çıktıya dahil edilir."
     },
     {
-      "q": "Can I edit the .docx after?",
-      "a": "Absolutely, the output is a fully editable Word document."
+      "q": "Daha sonra .docx dosyasını düzenleyebilir miyim?",
+      "a": "Kesinlikle çıktı tamamen düzenlenebilir bir Word belgesidir."
     },
     {
-      "q": "Is this free?",
+      "q": "Bu bedava mı?",
       "a": "Evet, tamamen ücretsiz."
     }
-  ]
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular"
 }

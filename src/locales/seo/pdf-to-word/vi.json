@@ -1,67 +1,80 @@
 {
-  "title": "PDF to Word Converter — Offline & Editable",
-  "h1": "Convert PDF to Editable Word Documents Locally",
-  "description": "Transform PDFs back into .docx files you can edit, right in your browser. No upload needed. Great for users in Hanoi.",
+  "title": "Chuyển đổi PDF sang Word - Ngoại tuyến & có thể chỉnh sửa",
+  "h1": "Chuyển đổi PDF sang tài liệu Word có thể chỉnh sửa cục bộ",
+  "description": "Chuyển đổi các tệp PDF trở lại thành tệp .docx mà bạn có thể chỉnh sửa ngay trong trình duyệt của mình. Không cần tải lên. Tuyệt vời cho người dùng ở Hà Nội.",
+  "buttonText": "Chuyển đổi sang Word",
+  "badges": [
+    "Tài liệu có thể chỉnh sửa",
+    "Phục hồi văn bản",
+    "Quy trình ngoại tuyến"
+  ],
+  "stats": [
+    "100%",
+    "Địa phương",
+    "0 giây",
+    "Thời gian chờ"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF Back Offline?",
-      "content": "When you need to edit a PDF, converting it offline keeps your original document confidential."
+      "title": "Tại sao sử dụng ngoại tuyến?",
+      "content": "Khi bạn cần chỉnh sửa một tệp PDF, việc chuyển đổi ngoại tuyến sẽ giữ bí mật tài liệu gốc của bạn."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Word",
+      "title": "Cách sử dụng",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF file you need to convert."
+          "title": "Tải PDF",
+          "description": "Chọn tệp PDF bạn cần chuyển đổi."
         },
         {
-          "title": "Detect Text Layers",
-          "description": "Our engine reads text and structure from the PDF."
+          "title": "Phát hiện lớp văn bản",
+          "description": "Công cụ của chúng tôi đọc văn bản và cấu trúc từ PDF."
         },
         {
-          "title": "Download .docx",
-          "description": "Get your editable Word document ready to modify."
+          "title": "Tải xuống .docx",
+          "description": "Chuẩn bị sẵn sàng tài liệu Word có thể chỉnh sửa của bạn để sửa đổi."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "PDF to Word for Hanoi Offices",
-      "content": "Office workers in Hanoi use our tool to recover editable text from PDFs without cloud dependency."
+      "title": "PDF sang Word cho văn phòng Hà Nội",
+      "content": "Nhân viên văn phòng tại Hà Nội sử dụng công cụ của chúng tôi để khôi phục văn bản có thể chỉnh sửa từ tệp PDF mà không cần phụ thuộc vào đám mây."
     },
     {
       "type": "split_privacy_security",
-      "title": "Legal Documents Stay Confidential",
-      "content": "Contracts, NDAs, and reports converted back to Word entirely in your browser memory."
+      "title": "Văn bản pháp luật được giữ bí mật",
+      "content": "Hợp đồng, NDA và báo cáo được chuyển đổi hoàn toàn về Word trong bộ nhớ trình duyệt của bạn."
     },
     {
       "type": "split_performance",
-      "title": "Recover Editable Text in Seconds",
-      "content": "Extract text from a 50-page PDF in under 3 seconds without uploading a single byte."
+      "title": "Khôi phục văn bản có thể chỉnh sửa trong vài giây",
+      "content": "Trích xuất văn bản từ tệp PDF 50 trang trong vòng chưa đầy 3 giây mà không cần tải lên một byte nào."
     }
   ],
   "faqs": [
     {
-      "q": "Is all text preserved?",
-      "a": "Yes, text from all layers is extracted and formatted."
+      "q": "Tất cả văn bản có được bảo tồn không?",
+      "a": "Có, văn bản từ tất cả các lớp được trích xuất và định dạng."
     },
     {
-      "q": "Does it work on scanned PDFs?",
-      "a": "For scanned PDFs, use our OCR tool first."
+      "q": "Nó có hoạt động trên các bản PDF được quét không?",
+      "a": "Đối với các tệp PDF được quét, trước tiên hãy sử dụng công cụ OCR của chúng tôi."
     },
     {
-      "q": "Are images included in the .docx?",
-      "a": "Yes, embedded images are included in the output."
+      "q": "Hình ảnh có được đưa vào .docx không?",
+      "a": "Có, hình ảnh nhúng được đưa vào đầu ra."
     },
     {
-      "q": "Can I edit the .docx after?",
-      "a": "Absolutely, the output is a fully editable Word document."
+      "q": "Tôi có thể chỉnh sửa .docx sau không?",
+      "a": "Hoàn toàn có thể, đầu ra là một tài liệu Word hoàn toàn có thể chỉnh sửa được."
     },
     {
-      "q": "Is this free?",
+      "q": "Cái này có miễn phí không?",
       "a": "Có, hoàn toàn miễn phí."
     }
-  ]
+  ],
+  "faqTitle": "Câu hỏi thường gặp"
 }

@@ -1,67 +1,78 @@
 {
-  "title": "Merge PDF - Combine Documents Offline",
-  "h1": "Merge PDF Files Instantly in Your Browser",
-  "description": "Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, perfect for users in Beijing.",
+  "title": "合并 PDF - 离线合并文档",
+  "h1": "在浏览器中立即合并 PDF 文件",
+  "description": "使用纯客户端 WebAssembly 将多个 PDF 文件合并为一个文档。 无需上传文件，非常适合纽约用户。",
   "sections": [
     {
       "type": "merge_hero_features",
-      "title": "Why Merge PDF Offline?",
-      "content": "Instead of uploading sensitive documents to a server, our Merge PDF tool stitches your pages together directly in your browser. Complete privacy."
+      "title": "为什么要离线合并 PDF？",
+      "content": "我们的合并 PDF 工具无需将敏感文档上传到服务器，而是直接在浏览器中将您的页面拼接在一起。 完全的隐私。"
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Merge PDF Files",
+      "title": "如何合并 PDF 文件",
       "steps": [
         {
-          "title": "Add Documents",
-          "description": "Select the PDFs you want to merge together."
+          "title": "添加文档",
+          "description": "选择要合并在一起的 PDF。"
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop files to get the perfect sequence."
+          "title": "重新排序页面",
+          "description": "拖放文件以获得完美的序列。"
         },
         {
-          "title": "Merge & Save",
-          "description": "Click merge and download your combined document instantly."
+          "title": "合并并保存",
+          "description": "单击“合并”并立即下载合并的文档。"
         }
-      ]
+      ],
+      "badgeText": "快速指南"
     },
     {
       "type": "merge_geo_targeting",
-      "title": "Seamless Merging for users in Beijing, CN-BJ",
-      "content": "No matter if you are in Beijing or traveling, combining documents takes zero milliseconds of upload time."
+      "title": "100% 安全的本地处理",
+      "content": "所有操作都直接在本地设备上执行。 我们使用先进的 WebAssembly 技术来处理您的文档，而无需将其上传到外部服务器，从而确保完全的隐私。",
+      "badgeText": "本地处理"
     },
     {
       "type": "merge_privacy_security",
-      "title": "Enterprise-Grade Document Combining",
-      "content": "Merging contracts and invoices? Do it securely with our WASM engine. No traces left behind."
+      "title": "企业级文档合并",
+      "content": "合并合同和发票？ 使用我们的 WASM 引擎安全地完成此操作。 没有留下任何痕迹。",
+      "badgeText": "安全第一"
     },
     {
       "type": "merge_performance",
-      "title": "Instant Combination",
-      "content": "Stitching PDFs locally means you can merge a 500-page document faster than you can upload it."
+      "title": "即时组合",
+      "content": "在本地拼接 PDF 意味着您合并 500 页文档的速度比上传文档的速度更快。",
+      "badgeText": "快如闪电"
     }
   ],
   "faqs": [
     {
-      "q": "Is merging PDFs completely free?",
-      "a": "Yes! Merge as many files as you want without paying a cent."
+      "q": "合并 PDF 是完全免费的吗？",
+      "a": "是的！ 合并任意数量的文件，无需支付一分钱。"
     },
     {
-      "q": "Are my merged files uploaded?",
-      "a": "No, all merging happens offline in your browser."
+      "q": "我的合并文件上传了吗？",
+      "a": "不，所有合并都是在浏览器中离线进行的。"
     },
     {
-      "q": "Can I reorder the files before merging?",
-      "a": "Yes, just drag and drop the files in the preview window."
+      "q": "我可以在合并之前对文件重新排序吗？",
+      "a": "是的，只需将文件拖放到预览窗口中即可。"
     },
     {
-      "q": "Is there a limit on how many files I can merge?",
-      "a": "No artificial limits! Merge 10 or 100 files depending on your RAM."
+      "q": "我可以合并的文件数量有限制吗？",
+      "a": "没有人为限制！ 根据您的 RAM 合并 10 或 100 个文件。"
     },
     {
-      "q": "Does merging ruin the formatting?",
-      "a": "Not at all. The original layers and vector data are perfectly stitched together."
+      "q": "合并会破坏格式吗？",
+      "a": "一点也不。 原始图层和矢量数据完美地拼接在一起。"
     }
+  ],
+  "faqTitle": "常见问题",
+  "supportCenter": "支持中心",
+  "badges": [
+    "零服务器延迟",
+    "没有上传带宽",
+    "即时处理"
   ]
 }

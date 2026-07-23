@@ -1,67 +1,85 @@
 {
-  "title": "PDF to Image Converter — Extract Pages Offline",
-  "h1": "Convert PDF Pages to PNG or JPG Images",
-  "description": "Extract every page from a PDF as high-quality images directly in your browser. Zero upload, total privacy. Best for users in Stockholm.",
+  "title": "PDF till bildkonverterare — Extrahera sidor offline",
+  "h1": "Konvertera PDF-sidor till PNG- eller JPG-bilder",
+  "description": "Extrahera varje sida från en PDF som högkvalitativa bilder direkt i din webbläsare. Ingen uppladdning, 100 % säker lokal bearbetning.",
+  "buttonText": "Extract Images",
+  "badges": [
+    "Designportföljer",
+    "Presentationer",
+    "Hög kvalitet"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract PDF Pages Offline?",
-      "content": "PDFs often contain confidential diagrams, blueprints, or reports. Extract pages as images without any server access."
+      "type": "pdf_image_hero_features",
+      "title": "Varför extrahera PDF-sidor offline?",
+      "content": "PDF-filer innehåller ofta konfidentiella diagram, ritningar eller rapporter. Extrahera sidor som bilder utan serveråtkomst."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Images",
+      "type": "pdf_image_how_to_steps",
+      "title": "Hur man konverterar PDF till bilder",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF you want to extract images from."
+          "title": "Ladda PDF",
+          "description": "Välj PDF-filen du vill extrahera bilder från."
         },
         {
-          "title": "Choose Format",
-          "description": "Pick PNG (lossless) or JPG (compressed) output."
+          "title": "Välj Format",
+          "description": "Välj PNG (förlustfri) eller JPG (komprimerad) utdata."
         },
         {
-          "title": "Download Images",
-          "description": "Get all pages as individual image files in a ZIP."
+          "title": "Ladda ner bilder",
+          "description": "Få alla sidor som individuella bildfiler i ett ZIP-format."
         }
-      ]
+      ],
+      "badgeText": "Snabbguide"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF to Image for Stockholm Designers",
-      "content": "Designers in Stockholm extract PDF pages as images for presentations and social media without cloud uploads."
+      "type": "pdf_image_geo_targeting",
+      "title": "100 % säker lokal bearbetning",
+      "content": "Alla operationer utförs direkt på din lokala enhet. Vi använder avancerad WebAssembly-teknik för att behandla dina dokument utan att någonsin ladda upp dem till externa servrar, vilket säkerställer fullständig integritet.",
+      "badgeText": "Lokal bearbetning"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Confidential Diagrams Stay Private",
-      "content": "Technical blueprints and legal documents extracted as images without any data leaving your device."
+      "type": "pdf_image_privacy_security",
+      "title": "Konfidentiella diagram Håll dig privat",
+      "content": "Tekniska ritningar och juridiska dokument extraheras som bilder utan att någon data lämnar din enhet.",
+      "badgeText": "Säkerhet först"
     },
     {
-      "type": "split_performance",
-      "title": "Extract All Pages Instantly",
-      "content": "A 500-page PDF converted to images in seconds. No upload, no wait."
+      "type": "pdf_image_performance",
+      "title": "Extrahera alla sidor direkt",
+      "content": "En 500-sidig PDF konverterad till bilder på några sekunder. Ingen uppladdning, ingen väntan.",
+      "badgeText": "Blixtsnabb"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are available?",
-      "a": "PNG and JPG with adjustable quality settings."
+      "q": "Vilka bildformat finns tillgängliga?",
+      "a": "PNG och JPG med justerbara kvalitetsinställningar."
     },
     {
-      "q": "Can I extract specific pages?",
-      "a": "Yes, specify page ranges like 1-5 or 3,7,12."
+      "q": "Kan jag extrahera specifika sidor?",
+      "a": "Ja, ange sidintervall som 1-5 eller 3,7,12."
     },
     {
-      "q": "What resolution are the exported images?",
-      "a": "Default 150 DPI, adjustable up to 300 DPI."
+      "q": "Vilken upplösning har de exporterade bilderna?",
+      "a": "Standard 150 DPI, justerbar upp till 300 DPI."
     },
     {
-      "q": "Are all pages exported at once?",
-      "a": "Yes, all selected pages are zipped for a single download."
+      "q": "Exporteras alla sidor samtidigt?",
+      "a": "Ja, alla valda sidor är zippade för en enda nedladdning."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, helt gratis."
+      "q": "Är detta gratis?",
+      "a": "Helt gratis, alltid."
     }
-  ]
+  ],
+  "faqTitle": "Vanliga frågor",
+  "supportCenter": "Supportcenter"
 }

@@ -1,7 +1,19 @@
 {
   "title": "Password Protect PDF — Secure Files Offline",
   "h1": "Add Password Protection to PDF Files Instantly",
-  "description": "Encrypt PDF files with AES-256 directly in your browser. Your document never leaves your device. Ideal for users in New York.",
+  "description": "Encrypt PDF files with AES-256 directly in your browser. Your document never leaves your device. 100% secure local processing.",
+  "buttonText": "Protect PDF",
+  "badges": [
+    "AES-256 Encryption",
+    "Secure Password",
+    "Client-Side Only"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "protect_hero_features",
@@ -28,8 +40,8 @@
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Vault-Level PDF Protection for New York",
-      "content": "Legal and finance professionals in New York encrypt documents with AES-256 strength without exposing files to any server."
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy."
     },
     {
       "type": "protect_privacy_security",

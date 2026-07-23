@@ -1,67 +1,80 @@
 {
-  "title": "PDF to PowerPoint — Recover Editable Slides",
-  "h1": "Convert PDF to PowerPoint Presentation Offline",
-  "description": "Transform PDF documents back into editable .pptx presentations locally. No cloud needed. Perfect for users in Paris.",
+  "title": "PDF vers PowerPoint - Récupérer des diapositives modifiables",
+  "h1": "Convertir un PDF en présentation PowerPoint hors ligne",
+  "description": "Transformez les documents PDF en présentations .pptx modifiables localement. Aucun cloud n'est nécessaire. Parfait pour les utilisateurs à Paris.",
+  "buttonText": "Convertir en PPT",
+  "badges": [
+    "Diapositives modifiables",
+    "Récupération de présentation",
+    "Conversion rapide"
+  ],
+  "stats": [
+    "100%",
+    "Locale",
+    "0s",
+    "Temps d'attente"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF to PowerPoint Offline?",
-      "content": "Recovering slide content from a PDF for editing should not require uploading sensitive decks to a cloud service."
+      "title": "Pourquoi utiliser hors ligne ?",
+      "content": "La récupération du contenu d'une diapositive à partir d'un PDF pour l'éditer ne devrait pas nécessiter le téléchargement de présentations sensibles sur un service cloud."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to PowerPoint",
+      "title": "Comment faire",
       "steps": [
         {
-          "title": "Upload PDF",
-          "description": "Select the PDF containing your slide content."
+          "title": "Télécharger le PDF",
+          "description": "Sélectionnez le PDF contenant le contenu de votre diapositive."
         },
         {
-          "title": "Map Pages to Slides",
-          "description": "Each PDF page becomes one editable slide."
+          "title": "Mapper des pages vers des diapositives",
+          "description": "Chaque page PDF devient une diapositive modifiable."
         },
         {
-          "title": "Download .pptx",
-          "description": "Get your fully editable PowerPoint presentation."
+          "title": "Télécharger .pptx",
+          "description": "Obtenez votre présentation PowerPoint entièrement modifiable."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "Slide Recovery in Paris",
-      "content": "Presenters in Paris use our tool to recover and re-edit presentations from old PDF archives."
+      "title": "Récupération de diapositives à Paris",
+      "content": "Les présentateurs à Paris utilisent notre outil pour récupérer et rééditer des présentations à partir d'anciennes archives PDF."
     },
     {
       "type": "split_privacy_security",
-      "title": "Your Slides Are Never Exposed",
-      "content": "Confidential slide decks recovered and converted without any server interaction."
+      "title": "Vos diapositives ne sont jamais exposées",
+      "content": "Diapositives confidentielles récupérées et converties sans aucune interaction avec le serveur."
     },
     {
       "type": "split_performance",
-      "title": "Convert Slides at Lightning Speed",
-      "content": "A 60-slide PDF converted to PowerPoint in under 10 seconds with zero upload time."
+      "title": "Convertissez des diapositives à la vitesse de l'éclair",
+      "content": "Un PDF de 60 diapositives converti en PowerPoint en moins de 10 secondes sans temps de téléchargement."
     }
   ],
   "faqs": [
     {
-      "q": "Are slide layouts preserved?",
-      "a": "Content is mapped to slides; some layout adjustments may be needed."
+      "q": "Les dispositions des diapositives sont-elles conservées ?",
+      "a": "Le contenu est mappé sur des diapositives ; certains ajustements de mise en page peuvent être nécessaires."
     },
     {
-      "q": "Can I edit the slides after?",
-      "a": "Yes, the .pptx file is fully editable in PowerPoint or Google Slides."
+      "q": "Puis-je modifier les diapositives après ?",
+      "a": "Oui, le fichier .pptx est entièrement modifiable dans PowerPoint ou Google Slides."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No, convert as many pages as your RAM allows."
+      "q": "Y a-t-il une limite de pages ?",
+      "a": "Non, convertissez autant de pages que votre RAM le permet."
     },
     {
-      "q": "Does it work with image-heavy PDFs?",
-      "a": "Yes, images are embedded in each slide."
+      "q": "Est-ce que cela fonctionne avec des PDF contenant beaucoup d'images ?",
+      "a": "Oui, les images sont intégrées dans chaque diapositive."
     },
     {
-      "q": "Is this free?",
+      "q": "Est-ce gratuit ?",
       "a": "Oui, entièrement gratuit."
     }
-  ]
+  ],
+  "faqTitle": "Foire Aux Questions"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Excel to CSV Converter — Export Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to CSV Locally",
-  "description": "Export .xlsx files to clean .csv format entirely in your browser. No upload. Ideal for developers in Jerusalem.",
+  "title": "ממיר Excel ל-CSV — ייצוא גיליונות אלקטרוניים במצב לא מקוון",
+  "h1": "המר גיליונות אלקטרוניים של Excel ל-CSV באופן מקומי",
+  "description": "ייצא קבצי .xlsx לפורמט .csv נקי לחלוטין בדפדפן שלך. אין העלאה. עיבוד מקומי מאובטח של 100%.",
+  "buttonText": "Convert to CSV",
+  "badges": [
+    "נתונים גולמיים",
+    "ייבוא ​​מסד נתונים",
+    "ייצוא מהיר"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Export to CSV Offline?",
-      "content": "Exporting spreadsheets to CSV for data pipelines should not expose your raw data to any external API."
+      "type": "excel_csv_hero_features",
+      "title": "למה לייצא ל-CSV במצב לא מקוון?",
+      "content": "ייצוא גיליונות אלקטרוניים ל-CSV עבור צינורות נתונים לא אמור לחשוף את הנתונים הגולמיים שלך לשום API חיצוני."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Excel to CSV",
+      "type": "excel_csv_how_to_steps",
+      "title": "כיצד להמיר אקסל ל-CSV",
       "steps": [
         {
-          "title": "Open Excel File",
-          "description": "Select the .xlsx spreadsheet."
+          "title": "פתח את קובץ Excel",
+          "description": "בחר את הגיליון האלקטרוני ‎.xlsx."
         },
         {
-          "title": "Choose Sheet",
-          "description": "Pick which sheet to export as CSV."
+          "title": "בחר גיליון",
+          "description": "בחר איזה גיליון לייצא כ-CSV."
         },
         {
-          "title": "Download CSV",
-          "description": "Get your clean CSV file instantly."
+          "title": "הורד CSV",
+          "description": "קבל את קובץ ה-CSV הנקי שלך באופן מיידי."
         }
-      ]
+      ],
+      "badgeText": "מדריך מהיר"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Developer Tools for Jerusalem",
-      "content": "Developers and data engineers in Jerusalem export spreadsheets to CSV for pipelines without cloud intermediaries."
+      "type": "excel_csv_geo_targeting",
+      "title": "100% עיבוד מקומי מאובטח",
+      "content": "כל הפעולות מבוצעות ישירות במכשיר המקומי שלך. אנו משתמשים בטכנולוגיית WebAssembly מתקדמת כדי לעבד את המסמכים שלך מבלי להעלות אותם לשרתים חיצוניים, מה שמבטיח פרטיות מלאה.",
+      "badgeText": "עיבוד מקומי"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Spreadsheet Data Stays Local",
-      "content": "Financial models and business data exported to CSV without any server-side processing."
+      "type": "excel_csv_privacy_security",
+      "title": "נתוני גיליון אלקטרוני נשארים מקומיים",
+      "content": "מודלים פיננסיים ונתונים עסקיים מיוצאים ל-CSV ללא כל עיבוד בצד השרת.",
+      "badgeText": "אבטחה תחילה"
     },
     {
-      "type": "organizer_performance",
-      "title": "Export Any Spreadsheet Instantly",
-      "content": "Export a 50,000-row Excel file to CSV in under 1 second. All in-browser."
+      "type": "excel_csv_performance",
+      "title": "ייצא כל גיליון אלקטרוני באופן מיידי",
+      "content": "ייצא קובץ Excel בן 50,000 שורות ל-CSV תוך פחות משנייה אחת. הכל בדפדפן.",
+      "badgeText": "מהיר ברק"
     }
   ],
   "faqs": [
     {
-      "q": "Can I export multiple sheets?",
-      "a": "Yes, export each sheet as a separate CSV file."
+      "q": "האם אוכל לייצא גיליונות מרובים?",
+      "a": "כן, ייצא כל גיליון כקובץ CSV נפרד."
     },
     {
-      "q": "Is Excel formatting preserved in CSV?",
-      "a": "CSV is plain text; formatting is removed but all values are preserved."
+      "q": "האם עיצוב Excel נשמר ב-CSV?",
+      "a": "CSV הוא טקסט רגיל; העיצוב הוסר אך כל הערכים נשמרים."
     },
     {
-      "q": "Can I choose the delimiter?",
-      "a": "Yes, choose comma, semicolon, or tab."
+      "q": "האם אני יכול לבחור את המפריד?",
+      "a": "כן, בחר פסיק, נקודה-פסיק או טאב."
     },
     {
-      "q": "Are formulas exported as values?",
-      "a": "Yes, formula results (not formulas) are written to the CSV."
+      "q": "האם נוסחאות מיוצאות כערכים?",
+      "a": "כן, תוצאות נוסחאות (לא נוסחאות) נכתבות ל-CSV."
     },
     {
-      "q": "Is this free?",
-      "a": "כן, חינם לחלוטין."
+      "q": "האם זה בחינם?",
+      "a": "כן, לגמרי בחינם."
     }
-  ]
+  ],
+  "faqTitle": "שאלות נפוצות",
+  "supportCenter": "מרכז תמיכה"
 }

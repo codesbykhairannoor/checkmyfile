@@ -1,0 +1,85 @@
+{
+  "title": "反轉 PDF — 翻頁離線訂購",
+  "h1": "本地反轉任何 PDF 的頁面順序",
+  "description": "在瀏覽器中完全翻轉 PDF 文件的頁面順序。 無需上傳，即時結果。 100% 安全的本地處理。",
+  "buttonText": "Reverse Order",
+  "badges": [
+    "反轉所有頁面",
+    "修復掃描",
+    "一鍵點擊"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "reverse_hero_features",
+      "title": "為什麼要離線反轉 PDF 頁面順序？",
+      "content": "當掃描器反向輸出頁面時，您需要快速本地修復，而不是整個文件的雲端上傳。"
+    },
+    {
+      "type": "reverse_how_to_steps",
+      "title": "如何反轉 PDF 頁面順序",
+      "steps": [
+        {
+          "title": "開啟 PDF",
+          "description": "選擇頁面順序不正確的 PDF。"
+        },
+        {
+          "title": "確認逆轉",
+          "description": "預覽新的第一頁和最後一頁。"
+        },
+        {
+          "title": "下載反轉 PDF",
+          "description": "立即取得重新排序的 PDF。"
+        }
+      ],
+      "badgeText": "快速指南"
+    },
+    {
+      "type": "reverse_geo_targeting",
+      "title": "100% 安全的本地處理",
+      "content": "所有操作都直接在本地設備上執行。 我們使用先進的 WebAssembly 技術來處理您的文檔，而無需將其上傳到外部伺服器，從而確保完全的隱私。",
+      "badgeText": "本地處理"
+    },
+    {
+      "type": "reverse_privacy_security",
+      "title": "文件永遠不會離開您的裝置",
+      "content": "撤銷的合約、報告和記錄完全在瀏覽器記憶體中處理。",
+      "badgeText": "安全第一"
+    },
+    {
+      "type": "reverse_performance",
+      "title": "在幾秒鐘內反轉任何 PDF",
+      "content": "反轉 1000 頁的文件只需幾毫秒。 一切都在您的瀏覽器中。",
+      "badgeText": "快如閃電"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "這會反轉所有頁面嗎？",
+      "a": "是的，整頁順序被翻轉了。"
+    },
+    {
+      "q": "我可以選擇一個範圍來反轉嗎？",
+      "a": "是的，指定要選擇性反轉的起始頁和結束頁。"
+    },
+    {
+      "q": "品質有影響嗎？",
+      "a": "不，反轉是一種結構性操作，沒有質量損失。"
+    },
+    {
+      "q": "我可以撤銷嗎？",
+      "a": "再次施加反轉以撤銷。"
+    },
+    {
+      "q": "這是免費的嗎？",
+      "a": "是的，永遠免費。"
+    }
+  ],
+  "faqTitle": "常見問題",
+  "supportCenter": "支援中心"
+}

@@ -1,67 +1,85 @@
 {
-  "title": "Grayscale PDF — Convert to Black and White Offline",
-  "h1": "Convert Color PDF Pages to Grayscale Instantly",
-  "description": "Turn color PDFs into black-and-white versions to reduce file size or prepare for printing, entirely in your browser. Ideal for users in Jerusalem.",
+  "title": "PDF בגווני אפור — המר לשחור ולבן במצב לא מקוון",
+  "h1": "המר דפי PDF צבעוניים לגווני אפור באופן מיידי",
+  "description": "הפוך קובצי PDF צבעוניים לגרסאות שחור-לבן כדי להקטין את גודל הקובץ או להתכונן להדפסה, לגמרי בדפדפן שלך. עיבוד מקומי מאובטח של 100%.",
+  "buttonText": "Convert to Grayscale",
+  "badges": [
+    "שמור דיו",
+    "שחור ולבן",
+    "מושלם להדפסה"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Convert to Grayscale Offline?",
-      "content": "Removing color from a PDF is a pre-print or archiving step. Do it locally without exposing confidential document design."
+      "type": "grayscale_hero_features",
+      "title": "למה להמיר לגווני אפור במצב לא מקוון?",
+      "content": "הסרת צבע מ-PDF היא שלב הדפסה מראש או ארכיון. עשה זאת באופן מקומי מבלי לחשוף עיצוב מסמכים סודי."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Make PDF Grayscale",
+      "type": "grayscale_how_to_steps",
+      "title": "כיצד ליצור PDF בגווני אפור",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the color PDF to convert."
+          "title": "פתח PDF",
+          "description": "בחר את ה-PDF הצבעוני להמרה."
         },
         {
-          "title": "Choose Conversion Mode",
-          "description": "Pick luminance or contrast-adjusted grayscale."
+          "title": "בחר מצב המרה",
+          "description": "בחר גוון אפור מותאם בהירות או ניגודיות."
         },
         {
-          "title": "Download Grayscale PDF",
-          "description": "Save the black-and-white PDF immediately."
+          "title": "הורד PDF בגווני אפור",
+          "description": "שמור את ה-PDF בשחור-לבן באופן מיידי."
         }
-      ]
+      ],
+      "badgeText": "מדריך מהיר"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Grayscale PDF for Jerusalem Printers",
-      "content": "Businesses in Jerusalem convert color PDFs to grayscale for cost-effective printing without cloud uploads."
+      "type": "grayscale_geo_targeting",
+      "title": "100% עיבוד מקומי מאובטח",
+      "content": "כל הפעולות מבוצעות ישירות במכשיר המקומי שלך. אנו משתמשים בטכנולוגיית WebAssembly מתקדמת כדי לעבד את המסמכים שלך מבלי להעלות אותם לשרתים חיצוניים, מה שמבטיח פרטיות מלאה.",
+      "badgeText": "עיבוד מקומי"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Design Files Stay Confidential",
-      "content": "Internal design documents and branded materials converted to grayscale without cloud exposure."
+      "type": "grayscale_privacy_security",
+      "title": "קבצי עיצוב נשארים חסויים",
+      "content": "מסמכי עיצוב פנימיים וחומרים ממותגים מומרים לגווני אפור ללא חשיפה לענן.",
+      "badgeText": "אבטחה תחילה"
     },
     {
-      "type": "transform_performance",
-      "title": "Convert Color Instantly",
-      "content": "A 200-page color PDF converted to grayscale in under 2 seconds. Zero upload."
+      "type": "grayscale_performance",
+      "title": "המר צבע באופן מיידי",
+      "content": "PDF צבעוני בן 200 עמודים שהומר לגווני אפור תוך פחות מ-2 שניות. אפס העלאה.",
+      "badgeText": "מהיר ברק"
     }
   ],
   "faqs": [
     {
-      "q": "Does grayscale reduce file size?",
-      "a": "Often yes, especially for image-heavy PDFs."
+      "q": "האם גווני אפור מפחיתים את גודל הקובץ?",
+      "a": "לעתים קרובות כן, במיוחד עבור קובצי PDF עתירי תמונות."
     },
     {
-      "q": "Are all pages converted?",
-      "a": "Yes by default; you can also select specific pages."
+      "q": "האם כל הדפים מומרים?",
+      "a": "כן כברירת מחדל; אתה יכול גם לבחור דפים ספציפיים."
     },
     {
-      "q": "Is the conversion reversible?",
-      "a": "The color information is removed; keep the original for reversal."
+      "q": "האם ההמרה הפיכה?",
+      "a": "מידע הצבע מוסר; לשמור את המקור להיפוך."
     },
     {
-      "q": "Does it affect text quality?",
-      "a": "No, text remains crisp and black."
+      "q": "האם זה משפיע על איכות הטקסט?",
+      "a": "לא, הטקסט נשאר חד ושחור."
     },
     {
-      "q": "Is this free?",
-      "a": "כן, חינם לחלוטין."
+      "q": "האם זה בחינם?",
+      "a": "כן, לגמרי בחינם."
     }
-  ]
+  ],
+  "faqTitle": "שאלות נפוצות",
+  "supportCenter": "מרכז תמיכה"
 }

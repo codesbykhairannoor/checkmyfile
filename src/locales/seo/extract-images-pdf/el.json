@@ -1,67 +1,85 @@
 {
-  "title": "Extract Images from PDF — Offline Extractor",
-  "h1": "Extract All Embedded Images from PDF Files",
-  "description": "Pull out every image from a PDF and download them as PNG or JPG files, all in your browser. No cloud. Ideal for users in Athens.",
+  "title": "Εξαγωγή εικόνων από PDF — Offline Extractor",
+  "h1": "Εξαγωγή όλων των ενσωματωμένων εικόνων από αρχεία PDF",
+  "description": "Τραβήξτε έξω κάθε εικόνα από ένα PDF και πραγματοποιήστε λήψη τους ως αρχεία PNG ή JPG, όλα στο πρόγραμμα περιήγησής σας. Χωρίς σύννεφο. 100% ασφαλής τοπική επεξεργασία.",
+  "buttonText": "Extract All Images",
+  "badges": [
+    "Φωτογραφίες Προϊόντος",
+    "Εμπιστευτικά Διαγράμματα",
+    "Διανύσματα"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract Images Offline?",
-      "content": "PDFs with confidential diagrams or product photos should never be uploaded. Extract images directly in your browser."
+      "type": "extract_images_hero_features",
+      "title": "Γιατί να εξάγετε εικόνες εκτός σύνδεσης;",
+      "content": "Τα αρχεία PDF με εμπιστευτικά διαγράμματα ή φωτογραφίες προϊόντων δεν πρέπει ποτέ να ανεβαίνουν. Εξαγωγή εικόνων απευθείας στο πρόγραμμα περιήγησής σας."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Extract Images from PDF",
+      "type": "extract_images_how_to_steps",
+      "title": "Πώς να εξαγάγετε εικόνες από PDF",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Open the PDF containing embedded images."
+          "title": "Φόρτωση PDF",
+          "description": "Ανοίξτε το PDF που περιέχει ενσωματωμένες εικόνες."
         },
         {
-          "title": "Scan for Images",
-          "description": "Our engine locates all embedded image objects."
+          "title": "Σάρωση για εικόνες",
+          "description": "Ο κινητήρας μας εντοπίζει όλα τα ενσωματωμένα αντικείμενα εικόνας."
         },
         {
-          "title": "Download ZIP",
-          "description": "Get all extracted images in a single ZIP file."
+          "title": "Λήψη ZIP",
+          "description": "Λάβετε όλες τις εξαγόμενες εικόνες σε ένα μόνο αρχείο ZIP."
         }
-      ]
+      ],
+      "badgeText": "Γρήγορος Οδηγός"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Image Extraction in Athens",
-      "content": "Publishers and marketers in Athens extract product photos and diagrams from PDFs without cloud uploads."
+      "type": "extract_images_geo_targeting",
+      "title": "100% Ασφαλής Τοπική Επεξεργασία",
+      "content": "Όλες οι λειτουργίες εκτελούνται απευθείας στην τοπική συσκευή σας. Χρησιμοποιούμε προηγμένη τεχνολογία WebAssembly για να επεξεργαζόμαστε τα έγγραφά σας χωρίς ποτέ να τα ανεβάσουμε σε εξωτερικούς διακομιστές, διασφαλίζοντας πλήρες απόρρητο.",
+      "badgeText": "Τοπική Επεξεργασία"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Product Images Stay Confidential",
-      "content": "Unreleased product photos embedded in PDFs extracted locally without any server access."
+      "type": "extract_images_privacy_security",
+      "title": "Εικόνες προϊόντων Παραμείνετε εμπιστευτικές",
+      "content": "Φωτογραφίες προϊόντων που δεν έχουν κυκλοφορήσει ενσωματωμένες σε αρχεία PDF που έχουν εξαχθεί τοπικά χωρίς πρόσβαση διακομιστή.",
+      "badgeText": "Πρώτα η ασφάλεια"
     },
     {
-      "type": "split_performance",
-      "title": "Extract Hundreds of Images Fast",
-      "content": "Extract 500 images from a PDF in seconds. All native browser processing."
+      "type": "extract_images_performance",
+      "title": "Εξαγωγή εκατοντάδων εικόνων γρήγορα",
+      "content": "Εξαγωγή 500 εικόνων από ένα PDF σε δευτερόλεπτα. Όλη η εγγενής επεξεργασία του προγράμματος περιήγησης.",
+      "badgeText": "Αστραπιαία"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are extracted?",
-      "a": "Images are saved in their original format (PNG, JPG, etc.)."
+      "q": "Ποιες μορφές εικόνας εξάγονται;",
+      "a": "Οι εικόνες αποθηκεύονται στην αρχική τους μορφή (PNG, JPG, κ.λπ.)."
     },
     {
-      "q": "Are images at full resolution?",
-      "a": "Yes, extracted at the original embedded resolution."
+      "q": "Οι εικόνες είναι σε πλήρη ανάλυση;",
+      "a": "Ναι, εξήχθη στην αρχική ενσωματωμένη ανάλυση."
     },
     {
-      "q": "Can I choose specific pages?",
-      "a": "Yes, specify which pages to extract images from."
+      "q": "Μπορώ να επιλέξω συγκεκριμένες σελίδες;",
+      "a": "Ναι, καθορίστε από ποιες σελίδες θα εξαχθούν εικόνες."
     },
     {
-      "q": "Does it extract vector graphics?",
-      "a": "Vector elements are rasterized to PNG/JPG."
+      "q": "Εξάγει διανυσματικά γραφικά;",
+      "a": "Τα διανυσματικά στοιχεία ραστεροποιούνται σε PNG/JPG."
     },
     {
-      "q": "Is this free?",
-      "a": "Ναι, εντελώς δωρεάν."
+      "q": "Αυτό είναι δωρεάν;",
+      "a": "Ναι, πάντα δωρεάν."
     }
-  ]
+  ],
+  "faqTitle": "Συχνές Ερωτήσεις",
+  "supportCenter": "Κέντρο Υποστήριξης"
 }

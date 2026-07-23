@@ -1,67 +1,85 @@
 {
-  "title": "OCR PDF — Make Scans Searchable Offline",
-  "h1": "Extract and Recognize Text from Scanned PDFs",
-  "description": "Run OCR on scanned PDFs to make them searchable and copyable, entirely in your browser using Tesseract. No upload. Great for users in Riyadh.",
+  "title": "OCR PDF — جعل عمليات المسح قابلة للبحث دون الاتصال بالإنترنت",
+  "h1": "استخراج النص والتعرف عليه من ملفات PDF الممسوحة ضوئيًا",
+  "description": "قم بتشغيل OCR على ملفات PDF الممسوحة ضوئيًا لجعلها قابلة للبحث والنسخ، بالكامل في متصفحك باستخدام Tesseract. لا يوجد تحميل. معالجة محلية آمنة بنسبة 100%.",
+  "buttonText": "Run OCR",
+  "badges": [
+    "استخراج النص",
+    "ملف PDF قابل للبحث",
+    "التعرف على الذكاء الاصطناعي"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Run OCR Locally?",
-      "content": "Scanned PDFs contain sensitive text. Running OCR on a cloud service exposes that text to a third party. Ours runs 100% offline."
+      "type": "ocr_hero_features",
+      "title": "لماذا يتم تشغيل التعرف الضوئي على الحروف (OCR) محليًا؟",
+      "content": "تحتوي ملفات PDF الممسوحة ضوئيًا على نص حساس. يؤدي تشغيل تقنية التعرف الضوئي على الحروف (OCR) على خدمة سحابية إلى كشف هذا النص لطرف ثالث. لدينا يعمل 100٪ دون اتصال بالإنترنت."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to OCR a PDF",
+      "type": "ocr_how_to_steps",
+      "title": "كيفية التعرف الضوئي على الحروف لملف PDF",
       "steps": [
         {
-          "title": "Load Scanned PDF",
-          "description": "Select the image-based or scanned PDF."
+          "title": "تحميل ملف PDF الممسوح ضوئيًا",
+          "description": "حدد ملف PDF المستند إلى الصورة أو الممسوح ضوئيًا."
         },
         {
-          "title": "Select Language",
-          "description": "Choose the document language for better accuracy."
+          "title": "اختر اللغة",
+          "description": "اختر لغة المستند للحصول على دقة أفضل."
         },
         {
-          "title": "Download Searchable PDF",
-          "description": "Get a text-layer PDF ready to search and copy."
+          "title": "تنزيل ملف PDF قابل للبحث",
+          "description": "احصل على ملف PDF بطبقة نصية جاهز للبحث والنسخ."
         }
-      ]
+      ],
+      "badgeText": "الدليل السريع"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "OCR Tool for Riyadh Archives",
-      "content": "Government agencies and businesses in Riyadh digitize paper archives using our offline OCR tool."
+      "type": "ocr_geo_targeting",
+      "title": "معالجة محلية آمنة بنسبة 100%",
+      "content": "يتم تنفيذ جميع العمليات مباشرة على جهازك المحلي. نحن نستخدم تقنية WebAssembly المتقدمة لمعالجة مستنداتك دون تحميلها على خوادم خارجية، مما يضمن الخصوصية الكاملة.",
+      "badgeText": "المعالجة المحلية"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Content Never Exposed",
-      "content": "OCR processing using Tesseract WASM runs entirely in browser memory — no API calls, no data transmission."
+      "type": "ocr_privacy_security",
+      "title": "المحتوى الممسوح ضوئيًا لم يتم كشفه مطلقًا",
+      "content": "تعمل معالجة التعرف الضوئي على الحروف باستخدام Tesseract WASM بالكامل في ذاكرة المتصفح - لا توجد مكالمات API ولا نقل بيانات.",
+      "badgeText": "الأمن أولا"
     },
     {
-      "type": "organizer_performance",
-      "title": "OCR Any Document Locally",
-      "content": "Process a 20-page scanned PDF in under 30 seconds. All Tesseract processing happens in-browser."
+      "type": "ocr_performance",
+      "title": "التعرف الضوئي على الحروف لأي مستند محليًا",
+      "content": "قم بمعالجة ملف PDF ممسوح ضوئيًا مكون من 20 صفحة في أقل من 30 ثانية. تتم جميع عمليات معالجة Tesseract داخل المتصفح.",
+      "badgeText": "بسرعة البرق"
     }
   ],
   "faqs": [
     {
-      "q": "What languages does OCR support?",
-      "a": "Over 100 languages via Tesseract engine."
+      "q": "ما هي اللغات التي يدعمها التعرف الضوئي على الحروف؟",
+      "a": "أكثر من 100 لغة عبر محرك Tesseract."
     },
     {
-      "q": "How accurate is the OCR?",
-      "a": "Accuracy depends on scan quality; clear, high-contrast scans yield 95%+ accuracy."
+      "q": "ما مدى دقة التعرف الضوئي على الحروف؟",
+      "a": "تعتمد الدقة على جودة المسح الضوئي؛ توفر عمليات المسح الواضحة وعالية التباين دقة تزيد عن 95%."
     },
     {
-      "q": "Does it create a searchable PDF?",
-      "a": "Yes, a text layer is added making the PDF fully searchable."
+      "q": "هل يقوم بإنشاء ملف PDF قابل للبحث؟",
+      "a": "نعم، تتم إضافة طبقة نصية مما يجعل ملف PDF قابلاً للبحث بشكل كامل."
     },
     {
-      "q": "Can I copy text from the result?",
-      "a": "Yes, the output PDF has selectable, copyable text."
+      "q": "هل يمكنني نسخ النص من النتيجة؟",
+      "a": "نعم، يحتوي ملف PDF الناتج على نص قابل للتحديد والنسخ."
     },
     {
-      "q": "Is this free?",
-      "a": "نعم، مجاناً تماماً."
+      "q": "هل هذا مجاني؟",
+      "a": "نعم، دائما مجانا."
     }
-  ]
+  ],
+  "faqTitle": "الأسئلة المتداولة",
+  "supportCenter": "مركز الدعم"
 }

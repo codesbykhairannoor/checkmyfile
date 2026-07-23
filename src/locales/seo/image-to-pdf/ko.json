@@ -1,67 +1,85 @@
 {
-  "title": "Image to PDF — Combine Photos Offline",
-  "h1": "Convert Images to PDF Without Uploading",
-  "description": "Turn JPG, PNG, and WebP images into a single PDF document in your browser. Your photos stay private. Perfect for users in Seoul.",
+  "title": "이미지를 PDF로 — 오프라인으로 사진 결합",
+  "h1": "업로드하지 않고 이미지를 PDF로 변환",
+  "description": "브라우저에서 JPG, PNG 및 WebP 이미지를 단일 PDF 문서로 변환하세요. 귀하의 사진은 비공개로 유지됩니다. 100% 안전한 로컬 처리.",
+  "buttonText": "Convert Images",
+  "badges": [
+    "포트폴리오",
+    "신분증 스캔",
+    "사진앨범"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Images Offline?",
-      "content": "Photos contain location data and personal moments. Convert them to PDF without exposing them to any cloud service."
+      "type": "image_hero_features",
+      "title": "이미지를 오프라인으로 변환하는 이유는 무엇입니까?",
+      "content": "사진에는 ​​위치 데이터와 개인적인 순간이 포함되어 있습니다. 클라우드 서비스에 노출시키지 않고 PDF로 변환하세요."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Turn Images Into PDF",
+      "type": "image_how_to_steps",
+      "title": "이미지를 PDF로 변환하는 방법",
       "steps": [
         {
-          "title": "Select Images",
-          "description": "Choose JPG, PNG, or WebP files from your device."
+          "title": "이미지 선택",
+          "description": "장치에서 JPG, PNG 또는 WebP 파일을 선택하세요."
         },
         {
-          "title": "Arrange Order",
-          "description": "Drag to reorder images before generating the PDF."
+          "title": "정렬 순서",
+          "description": "PDF를 생성하기 전에 드래그하여 이미지 순서를 바꾸세요."
         },
         {
-          "title": "Export PDF",
-          "description": "Download your image PDF in one click."
+          "title": "PDF 내보내기",
+          "description": "한 번의 클릭으로 이미지 PDF를 다운로드하세요."
         }
-      ]
+      ],
+      "badgeText": "빠른 가이드"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Image to PDF for Seoul Users",
-      "content": "Photographers and designers in Seoul use our tool to package portfolios without cloud uploads."
+      "type": "image_geo_targeting",
+      "title": "100% 안전한 로컬 처리",
+      "content": "모든 작업은 로컬 장치에서 직접 수행됩니다. 우리는 고급 WebAssembly 기술을 사용하여 문서를 외부 서버에 업로드하지 않고 처리하여 완벽한 개인 정보 보호를 보장합니다.",
+      "badgeText": "로컬 처리"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Photos Never Leave Your Device",
-      "content": "Personal photos, ID scans, medical images — all converted 100% locally without any server contact."
+      "type": "image_privacy_security",
+      "title": "사진은 절대 기기를 떠나지 마세요",
+      "content": "개인 사진, 신분증 스캔, 의료 이미지 등 모두 서버 접속 없이 100% 로컬로 변환됩니다.",
+      "badgeText": "보안 우선"
     },
     {
-      "type": "combiner_performance",
-      "title": "Batch Convert Instantly",
-      "content": "Convert 50 images into a single PDF in under 5 seconds. No upload, no wait."
+      "type": "image_performance",
+      "title": "즉시 일괄 변환",
+      "content": "50개의 이미지를 5초 이내에 단일 PDF로 변환합니다. 업로드하지 마세요. 기다리지 마세요.",
+      "badgeText": "번개처럼 빠르게"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are supported?",
-      "a": "JPG, JPEG, PNG, and WebP are all supported."
+      "q": "어떤 이미지 형식이 지원되나요?",
+      "a": "JPG, JPEG, PNG, WebP가 모두 지원됩니다."
     },
     {
-      "q": "Can I combine multiple images?",
-      "a": "Yes, select as many images as you want and reorder them."
+      "q": "여러 이미지를 결합할 수 있나요?",
+      "a": "예, 원하는 만큼 이미지를 선택하고 순서를 바꾸세요."
     },
     {
-      "q": "Is image quality preserved?",
-      "a": "Yes, images are embedded at their original resolution."
+      "q": "이미지 품질이 보존되나요?",
+      "a": "예, 이미지는 원래 해상도로 삽입됩니다."
     },
     {
-      "q": "Does it strip EXIF metadata?",
-      "a": "You can optionally strip EXIF data for privacy."
+      "q": "EXIF 메타데이터를 제거합니까?",
+      "a": "개인 정보 보호를 위해 선택적으로 EXIF ​​데이터를 제거할 수 있습니다."
     },
     {
-      "q": "Is there a limit on image count?",
-      "a": "예, 완전 무료입니다."
+      "q": "이미지 개수에 제한이 있나요?",
+      "a": "제한 없음! 수백 개의 이미지를 하나의 PDF로 결합합니다."
     }
-  ]
+  ],
+  "faqTitle": "자주 묻는 질문",
+  "supportCenter": "지원 센터"
 }

@@ -32,8 +32,8 @@ export const compressPdf = async (
   pdfDoc.setAuthor('');
   pdfDoc.setSubject('');
   pdfDoc.setKeywords([]);
-  pdfDoc.setProducer('BlitzDocs Optimizer');
-  pdfDoc.setCreator('BlitzDocs Optimizer');
+  pdfDoc.setProducer('HandleMyFile Optimizer');
+  pdfDoc.setCreator('HandleMyFile Optimizer');
   onProgress(40);
 
   if (quality === 'balanced' || quality === 'extreme') {

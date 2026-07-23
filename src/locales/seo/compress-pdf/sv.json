@@ -1,67 +1,85 @@
 {
-  "title": "Compress PDF Online - Reduce File Size",
-  "h1": "Compress PDF Documents without Losing Quality",
-  "description": "Shrink large PDF files up to 90% using adaptive lossless techniques directly in WebAssembly. Perfect for users in Stockholm.",
+  "title": "Komprimera PDF Online - Minska filstorleken",
+  "h1": "Komprimera PDF-dokument utan att förlora kvalitet",
+  "description": "Krympa stora PDF-filer upp till 90 % med hjälp av adaptiva förlustfria tekniker direkt i WebAssembly. 100 % säker lokal bearbetning.",
   "sections": [
     {
-      "type": "comp_hero_features",
-      "title": "Why Compress PDF Offline?",
-      "content": "Large PDFs are a pain to email. Our compressor reduces file size drastically without blurring images, all from your browser."
+      "type": "compress_hero_features",
+      "title": "Varför komprimera PDF offline?",
+      "content": "Stora PDF-filer är jobbigt att e-posta. Vår kompressor minskar filstorleken drastiskt utan att bilderna blir suddiga, allt från din webbläsare."
     },
     {
-      "type": "comp_how_to_steps",
-      "title": "How to Shrink PDF Files",
+      "type": "compress_how_to_steps",
+      "title": "Hur man förminskar PDF-filer",
       "steps": [
         {
-          "title": "Upload Large File",
-          "description": "Select the hefty PDF you want to shrink."
+          "title": "Ladda upp stor fil",
+          "description": "Välj den rejäla PDF-fil du vill krympa."
         },
         {
-          "title": "Select Quality",
-          "description": "Choose between high quality or maximum compression."
+          "title": "Välj Kvalitet",
+          "description": "Välj mellan hög kvalitet eller maximal komprimering."
         },
         {
-          "title": "Download Tiny PDF",
-          "description": "Get your compressed file instantly, ready to share."
+          "title": "Ladda ner Tiny PDF",
+          "description": "Få din komprimerade fil direkt, redo att dela."
         }
-      ]
+      ],
+      "badgeText": "Snabbguide"
     },
     {
-      "type": "comp_geo_targeting",
-      "title": "Optimized PDF Shrinking in Stockholm, SE-AB",
-      "content": "Working on a slow connection in Stockholm? Compress your files locally so you can email them faster."
+      "type": "compress_geo_targeting",
+      "title": "100 % säker lokal bearbetning",
+      "content": "Alla operationer utförs direkt på din lokala enhet. Vi använder avancerad WebAssembly-teknik för att behandla dina dokument utan att någonsin ladda upp dem till externa servrar, vilket säkerställer fullständig integritet.",
+      "badgeText": "Lokal bearbetning"
     },
     {
-      "type": "comp_privacy_security",
-      "title": "Secure Local Compression",
-      "content": "Compressing sensitive financial reports? Our algorithm works completely offline, keeping your data safe."
+      "type": "compress_privacy_security",
+      "title": "Säker lokal komprimering",
+      "content": "Komprimera känsliga finansiella rapporter? Vår algoritm fungerar helt offline och håller din data säker.",
+      "badgeText": "Säkerhet först"
     },
     {
-      "type": "comp_performance",
-      "title": "Lightning Fast Shrink",
-      "content": "Compressing a 50MB file locally saves you the time of uploading 50MB and downloading 5MB back."
+      "type": "compress_performance",
+      "title": "Blixtsnabb krympa",
+      "content": "Om du komprimerar en 50 MB fil lokalt sparar du tid för att ladda upp 50 MB och ladda ner 5 MB tillbaka.",
+      "badgeText": "Blixtsnabb"
     }
   ],
   "faqs": [
     {
-      "q": "Will compressing my PDF make it blurry?",
-      "a": "No, our tool uses adaptive compression to maintain readability while reducing size."
+      "q": "Kommer komprimering av min PDF att göra den suddig?",
+      "a": "Nej, vårt verktyg använder adaptiv komprimering för att bibehålla läsbarheten samtidigt som det minskar storleken."
     },
     {
-      "q": "Are my files sent to a server to be compressed?",
-      "a": "No, the compression algorithm runs directly in your browser memory."
+      "q": "Skickas mina filer till en server för att komprimeras?",
+      "a": "Nej, komprimeringsalgoritmen körs direkt i din webbläsares minne."
     },
     {
-      "q": "What is the maximum file size I can compress?",
-      "a": "Your browser memory is the only limit! You can compress massive files easily."
+      "q": "Vilken är den maximala filstorleken jag kan komprimera?",
+      "a": "Din webbläsares minne är den enda begränsningen! Du kan enkelt komprimera stora filer."
     },
     {
-      "q": "Is this compression tool free?",
-      "a": "Absolutely free with no usage limits or premium paywalls."
+      "q": "Är detta komprimeringsverktyg gratis?",
+      "a": "Helt gratis utan användningsgränser eller premium betalväggar."
     },
     {
-      "q": "Can I compress multiple files at once?",
-      "a": "Batch compression is supported on modern browsers."
+      "q": "Kan jag komprimera flera filer samtidigt?",
+      "a": "Batch-komprimering stöds i moderna webbläsare."
     }
-  ]
+  ],
+  "badges": [
+    "90 % komprimering",
+    "Förlustfritt alternativ",
+    "Inga uppladdningar"
+  ],
+  "stats": [
+    "Zero Wait",
+    "High Quality",
+    "WebAssembly",
+    "Private"
+  ],
+  "buttonText": "Compress PDF",
+  "faqTitle": "Vanliga frågor",
+  "supportCenter": "Supportcenter"
 }

@@ -1,0 +1,85 @@
+{
+  "title": "PDF szerkesztése – Ingyenes offline PDF-szerkesztő",
+  "h1": "PDF-dokumentumok szerkesztése közvetlenül a böngészőben",
+  "description": "Adjon hozzá szöveget, aláírásokat és megjegyzéseket PDF-fájljaihoz helyileg. Nincs feltöltés, maximális adatvédelem. 100%-ban biztonságos helyi feldolgozás.",
+  "sections": [
+    {
+      "type": "edit_hero_features",
+      "title": "Miért szerkesztheti a PDF-eket helyben?",
+      "content": "Az érzékeny szerződések és űrlapok felhőszerkesztőbe való feltöltése hatalmas adatvédelmi kockázatot jelent. WebAssembly szerkesztőnk közvetlenül az eszközén fut, így biztosítva, hogy dokumentumai soha ne hagyják el a számítógépet."
+    },
+    {
+      "type": "edit_how_to_steps",
+      "title": "PDF szerkesztése",
+      "steps": [
+        {
+          "title": "Nyitott dokumentum",
+          "description": "Válassza ki a megjegyzésekkel ellátni vagy aláírni kívánt PDF-fájlt."
+        },
+        {
+          "title": "Szöveg és elemek hozzáadása",
+          "description": "Használja intuitív eszközeinket szöveg hozzáadásához, rajzolásához vagy képek elhelyezéséhez."
+        },
+        {
+          "title": "Módosítások mentése",
+          "description": "Exportálja a módosított PDF-fájlt azonnal, a letöltések megvárása nélkül."
+        }
+      ],
+      "badgeText": "Gyors útmutató"
+    },
+    {
+      "type": "edit_geo_targeting",
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Minden művelet közvetlenül a helyi eszközön történik. Fejlett WebAssembly technológiát használunk a dokumentumok feldolgozásához anélkül, hogy azokat külső szerverekre feltöltenénk, így biztosítva a teljes adatvédelmet.",
+      "badgeText": "Helyi feldolgozás"
+    },
+    {
+      "type": "edit_privacy_security",
+      "title": "Nulla adatátvitel",
+      "content": "A hagyományos PDF-szerkesztőkkel ellentétben, amelyek feltöltik a fájlokat a szervereikre, platformunk mindent feldolgoz a böngésző memóriájában.",
+      "badgeText": "Első a biztonság"
+    },
+    {
+      "type": "edit_performance",
+      "title": "Azonnali offline renderelés",
+      "content": "Szerkesztőnk hatalmas PDF fájlokat tölt be ezredmásodpercek alatt. Több száz megjegyzést adhat hozzá késedelem vagy hálózati késleltetés nélkül.",
+      "badgeText": "Villámgyors"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Szerkeszthetem a meglévő szöveget a PDF-ben?",
+      "a": "Jelenleg új szöveget, alakzatokat és képeket adhat hozzá a meglévő dokumentumhoz."
+    },
+    {
+      "q": "Fel vannak töltve a fájljaim valahova?",
+      "a": "Nem, minden szerkesztés helyileg, a böngészőben történik a WebAssembly segítségével."
+    },
+    {
+      "q": "Aláírhatom a dokumentumokat?",
+      "a": "Igen, lerajzolhatod az aláírásodat, vagy feltölthetsz róla képet."
+    },
+    {
+      "q": "A szerkesztő ingyenesen használható?",
+      "a": "Igen, 100%-ban ingyenes, prémium fizetőfalak vagy rejtett díjak nélkül."
+    },
+    {
+      "q": "Működik mobil eszközökön?",
+      "a": "Igen, a szerkesztő teljesen érzékeny, és támogatja az érintéses bevitelt a rajzoláshoz."
+    }
+  ],
+  "badges": [
+    "Nincs vízjel",
+    "100% ingyenes",
+    "Offline szerkesztő"
+  ],
+  "stats": [
+    "100% Private",
+    "0 Server Uploads",
+    "Client-Side Only",
+    "No Accounts"
+  ],
+  "buttonText": "Start Editing",
+  "faqTitle": "Gyakran Ismételt Kérdések",
+  "supportCenter": "Támogatási Központ"
+}

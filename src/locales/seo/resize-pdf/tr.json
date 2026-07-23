@@ -1,67 +1,85 @@
 {
-  "title": "Resize PDF Pages — Change Paper Size Offline",
-  "h1": "Resize PDF Pages to A4, Letter, or Custom Sizes",
-  "description": "Change the paper size of every PDF page to A4, US Letter, or custom dimensions entirely in your browser. No upload. Ideal for users in Istanbul.",
+  "title": "PDF Sayfalarını Yeniden Boyutlandır — Kağıt Boyutunu Çevrimdışı Değiştirin",
+  "h1": "PDF Sayfalarını A4, Letter veya Özel Boyutlara Yeniden Boyutlandır",
+  "description": "Her PDF sayfasının kağıt boyutunu tamamen tarayıcınızda A4, US Letter veya özel boyutlara değiştirin. Yükleme yok. %100 güvenli yerel işleme.",
+  "buttonText": "Resize Pages",
+  "badges": [
+    "A4, Mektup, Özel",
+    "Kenar Boşlukları Ekle",
+    "Biçim Düzeltme"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Resize PDFs Locally?",
-      "content": "Preparing documents for printing requires proper page sizing. Resize locally without uploading internal documents to the cloud."
+      "type": "resize_hero_features",
+      "title": "Neden PDF'leri Yerel Olarak Yeniden Boyutlandırmalısınız?",
+      "content": "Belgeleri yazdırmaya hazırlamak, sayfanın doğru boyutlandırılmasını gerektirir. Dahili belgeleri buluta yüklemeden yerel olarak yeniden boyutlandırın."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Resize PDF Pages",
+      "type": "resize_how_to_steps",
+      "title": "PDF Sayfaları Nasıl Yeniden Boyutlandırılır",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page dimensions."
+          "title": "PDF'yi aç",
+          "description": "PDF'yi yanlış sayfa boyutlarıyla yükleyin."
         },
         {
-          "title": "Select Target Size",
-          "description": "Choose A4, Letter, A3, or enter custom dimensions."
+          "title": "Hedef Boyutunu Seçin",
+          "description": "A4, Letter, A3'ü seçin veya özel boyutlar girin."
         },
         {
-          "title": "Download Resized PDF",
-          "description": "Get your properly sized document instantly."
+          "title": "Yeniden Boyutlandırılmış PDF'yi İndir",
+          "description": "Uygun boyuttaki belgenizi anında alın."
         }
-      ]
+      ],
+      "badgeText": "Hızlı Kılavuz"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Resizing for Istanbul Print Shops",
-      "content": "Print shops and offices in Istanbul resize documents to standard sizes without cloud dependency."
+      "type": "resize_geo_targeting",
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Internal Documents Stay Internal",
-      "content": "Resize business reports and proposals without any server-side processing."
+      "type": "resize_privacy_security",
+      "title": "Dahili Belgeler Dahili Kalın",
+      "content": "İş raporlarını ve tekliflerini herhangi bir sunucu tarafında işleme gerek kalmadan yeniden boyutlandırın.",
+      "badgeText": "Önce Güvenlik"
     },
     {
-      "type": "transform_performance",
-      "title": "Resize Hundreds of Pages Instantly",
-      "content": "Resizing a 500-page PDF takes under 2 seconds. All in your browser."
+      "type": "resize_performance",
+      "title": "Yüzlerce Sayfayı Anında Yeniden Boyutlandırın",
+      "content": "500 sayfalık PDF'yi yeniden boyutlandırmak 2 saniyeden kısa sürer. Hepsi tarayıcınızda.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [
     {
-      "q": "What sizes are available?",
-      "a": "A4, A3, A5, US Letter, Legal, and custom dimensions."
+      "q": "Hangi boyutlar mevcut?",
+      "a": "A4, A3, A5, US Letter, Legal ve özel boyutlar."
     },
     {
-      "q": "Does content scale with the page?",
-      "a": "Yes, content is scaled proportionally by default."
+      "q": "İçerik sayfayla birlikte ölçekleniyor mu?",
+      "a": "Evet, içerik varsayılan olarak orantılı olarak ölçeklendirilir."
     },
     {
-      "q": "Can I resize individual pages?",
-      "a": "Yes, apply different sizes to specific pages."
+      "q": "Sayfaları tek tek yeniden boyutlandırabilir miyim?",
+      "a": "Evet, belirli sayfalara farklı boyutlar uygulayın."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "Vector content is re-rendered perfectly; images may scale."
+      "q": "Kalite etkilenir mi?",
+      "a": "Vektör içeriği mükemmel bir şekilde yeniden işleniyor; resimler ölçeklenebilir."
     },
     {
-      "q": "Is this free?",
+      "q": "Bu bedava mı?",
       "a": "Evet, tamamen ücretsiz."
     }
-  ]
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi"
 }

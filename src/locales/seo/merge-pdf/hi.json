@@ -1,67 +1,78 @@
 {
-  "title": "Merge PDF - Combine Documents Offline",
-  "h1": "Merge PDF Files Instantly in Your Browser",
-  "description": "Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, perfect for users in New Delhi.",
+  "title": "पीडीएफ मर्ज करें - दस्तावेज़ों को ऑफ़लाइन संयोजित करें",
+  "h1": "अपने ब्राउज़र में तुरंत पीडीएफ फाइलों को मर्ज करें",
+  "description": "शुद्ध क्लाइंट-साइड WebAssembly का उपयोग करके एकाधिक पीडीएफ फाइलों को एक ही दस्तावेज़ में संयोजित करें। कोई फ़ाइल अपलोड नहीं, न्यूयॉर्क के उपयोगकर्ताओं के लिए बिल्कुल सही।",
   "sections": [
     {
       "type": "merge_hero_features",
-      "title": "Why Merge PDF Offline?",
-      "content": "Instead of uploading sensitive documents to a server, our Merge PDF tool stitches your pages together directly in your browser. Complete privacy."
+      "title": "पीडीएफ को ऑफलाइन मर्ज क्यों करें?",
+      "content": "संवेदनशील दस्तावेज़ों को सर्वर पर अपलोड करने के बजाय, हमारा मर्ज पीडीएफ टूल आपके पेजों को सीधे आपके ब्राउज़र में एक साथ जोड़ देता है। पूर्ण गोपनीयता."
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Merge PDF Files",
+      "title": "पीडीएफ फाइलों को कैसे मर्ज करें",
       "steps": [
         {
-          "title": "Add Documents",
-          "description": "Select the PDFs you want to merge together."
+          "title": "दस्तावेज़ जोड़ें",
+          "description": "उन पीडीएफ़ का चयन करें जिन्हें आप एक साथ मर्ज करना चाहते हैं।"
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop files to get the perfect sequence."
+          "title": "पेज पुनः व्यवस्थित करें",
+          "description": "सही अनुक्रम प्राप्त करने के लिए फ़ाइलों को खींचें और छोड़ें।"
         },
         {
-          "title": "Merge & Save",
-          "description": "Click merge and download your combined document instantly."
+          "title": "मर्ज करें और सहेजें",
+          "description": "मर्ज पर क्लिक करें और अपना संयुक्त दस्तावेज़ तुरंत डाउनलोड करें।"
         }
-      ]
+      ],
+      "badgeText": "त्वरित मार्गदर्शिका"
     },
     {
       "type": "merge_geo_targeting",
-      "title": "Seamless Merging for users in New Delhi, IN-DL",
-      "content": "No matter if you are in New Delhi or traveling, combining documents takes zero milliseconds of upload time."
+      "title": "100% सुरक्षित स्थानीय प्रसंस्करण",
+      "content": "सभी ऑपरेशन सीधे आपके स्थानीय डिवाइस पर किए जाते हैं। हम पूर्ण गोपनीयता सुनिश्चित करते हुए, आपके दस्तावेज़ों को बाहरी सर्वर पर अपलोड किए बिना संसाधित करने के लिए उन्नत WebAssembly तकनीक का उपयोग करते हैं।",
+      "badgeText": "स्थानीय प्रसंस्करण"
     },
     {
       "type": "merge_privacy_security",
-      "title": "Enterprise-Grade Document Combining",
-      "content": "Merging contracts and invoices? Do it securely with our WASM engine. No traces left behind."
+      "title": "एंटरप्राइज़-ग्रेड दस्तावेज़ संयोजन",
+      "content": "अनुबंध और चालान का विलय? इसे हमारे WASM इंजन के साथ सुरक्षित रूप से करें। पीछे कोई निशान नहीं छोड़ा.",
+      "badgeText": "सुरक्षा पहले"
     },
     {
       "type": "merge_performance",
-      "title": "Instant Combination",
-      "content": "Stitching PDFs locally means you can merge a 500-page document faster than you can upload it."
+      "title": "त्वरित संयोजन",
+      "content": "पीडीएफ को स्थानीय रूप से सिलाई करने का मतलब है कि आप 500 पेज के दस्तावेज़ को अपलोड करने की तुलना में तेज़ी से मर्ज कर सकते हैं।",
+      "badgeText": "बिजली की तेजी"
     }
   ],
   "faqs": [
     {
-      "q": "Is merging PDFs completely free?",
-      "a": "Yes! Merge as many files as you want without paying a cent."
+      "q": "क्या PDF का विलय पूर्णतः निःशुल्क है?",
+      "a": "हाँ! एक प्रतिशत का भुगतान किए बिना जितनी चाहें उतनी फ़ाइलें मर्ज करें।"
     },
     {
-      "q": "Are my merged files uploaded?",
-      "a": "No, all merging happens offline in your browser."
+      "q": "क्या मेरी मर्ज की गई फ़ाइलें अपलोड हो गई हैं?",
+      "a": "नहीं, सभी विलय आपके ब्राउज़र में ऑफ़लाइन होते हैं।"
     },
     {
-      "q": "Can I reorder the files before merging?",
-      "a": "Yes, just drag and drop the files in the preview window."
+      "q": "क्या मैं विलय से पहले फ़ाइलों को पुनः व्यवस्थित कर सकता हूँ?",
+      "a": "हाँ, बस फ़ाइलों को पूर्वावलोकन विंडो में खींचें और छोड़ें।"
     },
     {
-      "q": "Is there a limit on how many files I can merge?",
-      "a": "No artificial limits! Merge 10 or 100 files depending on your RAM."
+      "q": "क्या इसकी कोई सीमा है कि मैं कितनी फ़ाइलें मर्ज कर सकता हूँ?",
+      "a": "कोई कृत्रिम सीमा नहीं! अपनी रैम के आधार पर 10 या 100 फ़ाइलें मर्ज करें।"
     },
     {
-      "q": "Does merging ruin the formatting?",
-      "a": "Not at all. The original layers and vector data are perfectly stitched together."
+      "q": "क्या विलय से फ़ॉर्मेटिंग ख़राब हो जाती है?",
+      "a": "बिल्कुल नहीं। मूल परतें और वेक्टर डेटा पूरी तरह से एक साथ सिले हुए हैं।"
     }
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न",
+  "supportCenter": "सहायता केंद्र",
+  "badges": [
+    "शून्य सर्वर विलंबता",
+    "कोई अपलोड बैंडविड्थ नहीं",
+    "त्वरित प्रसंस्करण"
   ]
 }

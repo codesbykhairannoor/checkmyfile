@@ -1,67 +1,85 @@
 {
-  "title": "Image to PDF — Combine Photos Offline",
-  "h1": "Convert Images to PDF Without Uploading",
-  "description": "Turn JPG, PNG, and WebP images into a single PDF document in your browser. Your photos stay private. Perfect for users in Bucharest.",
+  "title": "Imagine în PDF — Combinați fotografii offline",
+  "h1": "Convertiți imaginile în PDF fără încărcare",
+  "description": "Transformați imaginile JPG, PNG și WebP într-un singur document PDF în browser. Fotografiile tale rămân private. Procesare locală 100% sigură.",
+  "buttonText": "Convert Images",
+  "badges": [
+    "Portofolii",
+    "Scanări ID",
+    "Albume foto"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Images Offline?",
-      "content": "Photos contain location data and personal moments. Convert them to PDF without exposing them to any cloud service."
+      "type": "image_hero_features",
+      "title": "De ce să convertiți imaginile offline?",
+      "content": "Fotografiile conțin date despre locație și momente personale. Convertiți-le în PDF fără a le expune niciunui serviciu cloud."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Turn Images Into PDF",
+      "type": "image_how_to_steps",
+      "title": "Cum să transformați imaginile în PDF",
       "steps": [
         {
-          "title": "Select Images",
-          "description": "Choose JPG, PNG, or WebP files from your device."
+          "title": "Selectați Imagini",
+          "description": "Alegeți fișiere JPG, PNG sau WebP de pe dispozitiv."
         },
         {
-          "title": "Arrange Order",
-          "description": "Drag to reorder images before generating the PDF."
+          "title": "Aranjați Ordine",
+          "description": "Trageți pentru a reordona imaginile înainte de a genera PDF-ul."
         },
         {
           "title": "Export PDF",
-          "description": "Download your image PDF in one click."
+          "description": "Descărcați imaginea dvs. PDF cu un singur clic."
         }
-      ]
+      ],
+      "badgeText": "Ghid rapid"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Image to PDF for Bucharest Users",
-      "content": "Photographers and designers in Bucharest use our tool to package portfolios without cloud uploads."
+      "type": "image_geo_targeting",
+      "title": "Procesare locală 100% sigură",
+      "content": "Toate operațiunile sunt efectuate direct pe dispozitivul local. Folosim tehnologie avansată WebAssembly pentru a vă procesa documentele fără a le încărca vreodată pe servere externe, asigurând confidențialitate completă.",
+      "badgeText": "Prelucrare locală"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Photos Never Leave Your Device",
-      "content": "Personal photos, ID scans, medical images — all converted 100% locally without any server contact."
+      "type": "image_privacy_security",
+      "title": "Fotografiile nu părăsesc dispozitivul dvs.",
+      "content": "Fotografii personale, scanări de identitate, imagini medicale - toate convertite 100% local, fără niciun contact cu serverul.",
+      "badgeText": "Securitatea în primul rând"
     },
     {
-      "type": "combiner_performance",
-      "title": "Batch Convert Instantly",
-      "content": "Convert 50 images into a single PDF in under 5 seconds. No upload, no wait."
+      "type": "image_performance",
+      "title": "Conversie lot instantanee",
+      "content": "Convertiți 50 de imagini într-un singur PDF în mai puțin de 5 secunde. Fără încărcare, fără așteptare.",
+      "badgeText": "Rapid fulger"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are supported?",
-      "a": "JPG, JPEG, PNG, and WebP are all supported."
+      "q": "Ce formate de imagine sunt acceptate?",
+      "a": "JPG, JPEG, PNG și WebP sunt toate acceptate."
     },
     {
-      "q": "Can I combine multiple images?",
-      "a": "Yes, select as many images as you want and reorder them."
+      "q": "Pot combina mai multe imagini?",
+      "a": "Da, selectați câte imagini doriți și reordonați-le."
     },
     {
-      "q": "Is image quality preserved?",
-      "a": "Yes, images are embedded at their original resolution."
+      "q": "Calitatea imaginii este păstrată?",
+      "a": "Da, imaginile sunt încorporate la rezoluția lor originală."
     },
     {
-      "q": "Does it strip EXIF metadata?",
-      "a": "You can optionally strip EXIF data for privacy."
+      "q": "Îndepărtează metadatele EXIF?",
+      "a": "Opțional, puteți elimina datele EXIF ​​pentru confidențialitate."
     },
     {
-      "q": "Is there a limit on image count?",
-      "a": "Da, complet gratuit."
+      "q": "Există o limită a numărului de imagini?",
+      "a": "Fără limită! Combinați sute de imagini într-un singur PDF."
     }
-  ]
+  ],
+  "faqTitle": "Întrebări frecvente",
+  "supportCenter": "Centrul de suport"
 }

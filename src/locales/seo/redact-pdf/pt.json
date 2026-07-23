@@ -1,67 +1,85 @@
 {
-  "title": "Redact PDF — Permanently Remove Sensitive Data",
-  "h1": "Permanently Redact Sensitive Information from PDFs Offline",
-  "description": "Black out sensitive text and images in PDFs entirely in your browser. No cloud risk. Critical for users in São Paulo.",
+  "title": "Editar PDF — Remover dados confidenciais permanentemente",
+  "h1": "Editar permanentemente informações confidenciais de PDFs off-line",
+  "description": "Oculte textos e imagens confidenciais em PDFs inteiramente no seu navegador. Sem risco de nuvem. Processamento local 100% seguro.",
+  "buttonText": "Redact Text",
+  "badges": [
+    "Apagamento Permanente",
+    "Informações sobre apagão",
+    "Redação segura"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "redact_hero_features",
-      "title": "Why Redact PDFs Locally?",
-      "content": "Redacting means the content is classified. Uploading a document you need to hide defeats the whole purpose. Our tool runs 100% offline."
+      "title": "Por que editar PDFs localmente?",
+      "content": "A redação significa que o conteúdo é classificado. Carregar um documento que você precisa ocultar anula todo o propósito. Nossa ferramenta funciona 100% offline."
     },
     {
       "type": "redact_how_to_steps",
-      "title": "How to Permanently Redact a PDF",
+      "title": "Como redigir permanentemente um PDF",
       "steps": [
         {
-          "title": "Open Sensitive Document",
-          "description": "Load the PDF with data that must be hidden."
+          "title": "Abrir documento confidencial",
+          "description": "Carregue o PDF com dados que devem ser ocultados."
         },
         {
-          "title": "Mark Redaction Areas",
-          "description": "Draw boxes over content to permanently erase."
+          "title": "Marcar áreas de redação",
+          "description": "Desenhe caixas sobre o conteúdo para apagá-lo permanentemente."
         },
         {
-          "title": "Apply & Download",
-          "description": "Content is permanently deleted from the PDF structure."
+          "title": "Inscreva-se e baixe",
+          "description": "O conteúdo é excluído permanentemente da estrutura do PDF."
         }
-      ]
+      ],
+      "badgeText": "Guia rápido"
     },
     {
       "type": "redact_geo_targeting",
-      "title": "Court-Ready Redaction for São Paulo Law Firms",
-      "content": "Legal professionals in São Paulo prepare court documents with permanent, offline redaction that removes data from the PDF structure itself."
+      "title": "Processamento local 100% seguro",
+      "content": "Todas as operações são realizadas diretamente no seu dispositivo local. Utilizamos tecnologia avançada WebAssembly para processar seus documentos sem nunca enviá-los para servidores externos, garantindo total privacidade.",
+      "badgeText": "Processamento Local"
     },
     {
       "type": "redact_privacy_security",
-      "title": "True Permanent Redaction — Not Just Black Boxes",
-      "content": "Unlike tools that merely cover text with black boxes, our redaction permanently deletes the underlying data from the PDF object structure."
+      "title": "Redação verdadeiramente permanente — não apenas caixas pretas",
+      "content": "Ao contrário das ferramentas que apenas cobrem o texto com caixas pretas, nossa redação exclui permanentemente os dados subjacentes da estrutura do objeto PDF.",
+      "badgeText": "Segurança em primeiro lugar"
     },
     {
       "type": "redact_performance",
-      "title": "Redact Entire Documents Instantly",
-      "content": "Apply hundreds of permanent redactions to large documents in seconds, completely offline."
+      "title": "Edite documentos inteiros instantaneamente",
+      "content": "Aplique centenas de redações permanentes a documentos grandes em segundos, totalmente offline.",
+      "badgeText": "Rápido como um raio"
     }
   ],
   "faqs": [
     {
-      "q": "Is the redaction truly permanent?",
-      "a": "Yes, the underlying text and image data is permanently deleted from the PDF structure."
+      "q": "A redação é verdadeiramente permanente?",
+      "a": "Sim, os dados de texto e imagem subjacentes são excluídos permanentemente da estrutura do PDF."
     },
     {
-      "q": "Can I redact images too?",
-      "a": "Yes, both text regions and image areas can be permanently redacted."
+      "q": "Posso redigir imagens também?",
+      "a": "Sim, tanto as regiões de texto quanto as áreas de imagem podem ser editadas permanentemente."
     },
     {
-      "q": "Can I choose black or white cover?",
-      "a": "Yes, pick the redaction style that suits your document."
+      "q": "Posso escolher capa preta ou branca?",
+      "a": "Sim, escolha o estilo de redação adequado ao seu documento."
     },
     {
-      "q": "Does this meet legal standards?",
-      "a": "Our redaction removes data at the PDF object level, meeting court requirements."
+      "q": "Isso atende aos padrões legais?",
+      "a": "Nossa redação remove dados no nível do objeto PDF, atendendo às exigências judiciais."
     },
     {
-      "q": "Is this free?",
-      "a": "Sim, completamente gratuito."
+      "q": "Isso é grátis?",
+      "a": "Sim, sempre grátis."
     }
-  ]
+  ],
+  "faqTitle": "Perguntas Frequentes",
+  "supportCenter": "Centro de Apoio"
 }

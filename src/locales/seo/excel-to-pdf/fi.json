@@ -1,67 +1,85 @@
 {
-  "title": "Excel to PDF — Convert Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to PDF Securely",
-  "description": "Turn .xlsx and .csv files into crisp PDFs locally in your browser. Financial data stays on your device. Perfect for users in Helsinki.",
+  "title": "Excel PDF:ksi — Muunna laskentataulukot offline-tilassa",
+  "h1": "Muunna Excel-laskentataulukot PDF-muotoon turvallisesti",
+  "description": "Muuta .xlsx- ja .csv-tiedostot selkeiksi PDF-tiedostoiksi paikallisesti selaimessasi. Taloustiedot pysyvät laitteessasi. 100 % turvallinen paikallinen käsittely.",
+  "buttonText": "Convert Spreadsheet",
+  "badges": [
+    "Taloudelliset raportit",
+    "Laskut",
+    "Tietojen vienti"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Excel Offline?",
-      "content": "Spreadsheets often contain sensitive financial data. Our browser-based engine converts without any server involvement."
+      "type": "excel_hero_features",
+      "title": "Miksi muuntaa Excel offline-tilassa?",
+      "content": "Laskentataulukot sisältävät usein arkaluontoisia taloustietoja. Selainpohjainen moottorimme muuntaa ilman palvelimen osallistumista."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Export Excel as PDF",
+      "type": "excel_how_to_steps",
+      "title": "Excelin vieminen PDF-muodossa",
       "steps": [
         {
-          "title": "Open Spreadsheet",
-          "description": "Select your .xlsx or .csv file."
+          "title": "Avaa laskentataulukko",
+          "description": "Valitse .xlsx- tai .csv-tiedostosi."
         },
         {
-          "title": "Choose Sheet Range",
-          "description": "Pick which sheets or rows to include."
+          "title": "Valitse taulukkoalue",
+          "description": "Valitse sisällytettävät taulukot tai rivit."
         },
         {
-          "title": "Export as PDF",
-          "description": "Download your spreadsheet as a clean PDF."
+          "title": "Vie PDF-muodossa",
+          "description": "Lataa laskentataulukko puhtaana PDF-tiedostona."
         }
-      ]
+      ],
+      "badgeText": "Pikaopas"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Excel to PDF for Helsinki Businesses",
-      "content": "Businesses in Helsinki use our tool to share financial reports without exposing raw spreadsheet data."
+      "type": "excel_geo_targeting",
+      "title": "100 % suojattu paikallinen käsittely",
+      "content": "Kaikki toiminnot suoritetaan suoraan paikallisella laitteellasi. Käytämme edistynyttä WebAssembly-tekniikkaa asiakirjojen käsittelyyn lataamatta niitä koskaan ulkoisille palvelimille, mikä takaa täydellisen yksityisyyden.",
+      "badgeText": "Paikallinen käsittely"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Protect Financial Spreadsheets",
-      "content": "Balance sheets, payroll data — all processed offline. Zero data sent to any third party."
+      "type": "excel_privacy_security",
+      "title": "Suojaa talouslaskentataulukoita",
+      "content": "Taseet, palkkatiedot – kaikki käsitellään offline-tilassa. Nolla dataa lähetetty millekään kolmannelle osapuolelle.",
+      "badgeText": "Turvallisuus ensin"
     },
     {
-      "type": "combiner_performance",
-      "title": "Spreadsheet-to-PDF in Seconds",
-      "content": "No upload queue, no compression artifacts. Your spreadsheet renders natively in-browser."
+      "type": "excel_performance",
+      "title": "Laskentataulukosta PDF-tiedostoksi sekunneissa",
+      "content": "Ei latausjonoa, ei pakkausartefaktteja. Laskentataulukkosi hahmonnetaan natiivisti selaimessa.",
+      "badgeText": "Salamannopeasti"
     }
   ],
   "faqs": [
     {
-      "q": "Are all Excel formulas preserved?",
-      "a": "Yes, formula results are captured in the PDF snapshot."
+      "q": "Säilytetäänkö kaikki Excel-kaavat?",
+      "a": "Kyllä, kaavan tulokset tallennetaan PDF-vedoskuvaan."
     },
     {
-      "q": "Can I convert multiple sheets?",
-      "a": "Yes, you can include all sheets or specific ones."
+      "q": "Voinko muuntaa useita arkkeja?",
+      "a": "Kyllä, voit sisällyttää kaikki tai tietyt arkit."
     },
     {
-      "q": "What file types are supported?",
-      "a": ".xlsx, .xls, and .csv are all supported."
+      "q": "Mitä tiedostotyyppejä tuetaan?",
+      "a": ".xlsx, .xls ja .csv ovat kaikki tuettuja."
     },
     {
-      "q": "Is this secure for financial data?",
-      "a": "Absolutely. The file never leaves your browser."
+      "q": "Onko tämä turvallista taloustiedoille?",
+      "a": "Täysin. Tiedosto ei koskaan poistu selaimesta."
     },
     {
-      "q": "Does it support graphs?",
-      "a": "Kyllä, täysin ilmainen."
+      "q": "Tukeeko se kaavioita?",
+      "a": "Kaaviot ja upotetut kaaviot hahmonnetaan PDF-tiedostossa."
     }
-  ]
+  ],
+  "faqTitle": "Usein kysytyt kysymykset",
+  "supportCenter": "Tukikeskus"
 }

@@ -1,0 +1,85 @@
+{
+  "title": "組織 PDF 頁面 — 重新排序和離線刪除",
+  "h1": "在本地重新排序、刪除或複製 PDF 頁面",
+  "description": "拖放以在瀏覽器中完全重新排列、刪除或複製 PDF 頁面。 快速且完全安全。",
+  "buttonText": "Organize Pages",
+  "badges": [
+    "拖放",
+    "重新排序頁面",
+    "可視化編輯器"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "organize_hero_features",
+      "title": "為什麼要在本地組織 PDF？",
+      "content": "重新組織頁面結構是一種編輯操作。 您的內部文件在編輯過程中應保持內部狀態。"
+    },
+    {
+      "type": "organize_how_to_steps",
+      "title": "如何組織 PDF 頁面",
+      "steps": [
+        {
+          "title": "開啟 PDF",
+          "description": "載入您想要重新組織的 PDF。"
+        },
+        {
+          "title": "拖曳以重新排序",
+          "description": "將頁面縮圖拖曳至所需位置。"
+        },
+        {
+          "title": "保存組織好的 PDF",
+          "description": "立即下載重組後的 PDF。"
+        }
+      ],
+      "badgeText": "快速指南"
+    },
+    {
+      "type": "organize_geo_targeting",
+      "title": "100% 安全的本地處理",
+      "content": "所有操作都直接在本地設備上執行。 我們使用先進的 WebAssembly 技術來處理您的文檔，而無需將其上傳到外部伺服器，從而確保完全的隱私。",
+      "badgeText": "本地處理"
+    },
+    {
+      "type": "organize_privacy_security",
+      "title": "頁面結構是私人事務",
+      "content": "重新排序內部報告和提案，使瀏覽器中的資料為零。",
+      "badgeText": "安全第一"
+    },
+    {
+      "type": "organize_performance",
+      "title": "在幾秒鐘內重新組織任何 PDF",
+      "content": "透過零上傳的流暢拖放介面對 500 頁文件中的頁面進行重新排序。",
+      "badgeText": "快如閃電"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "我可以刪除頁面嗎？",
+      "a": "是的，按一下任何頁面縮圖上的刪除圖示。"
+    },
+    {
+      "q": "我可以複製頁面嗎？",
+      "a": "是的，一鍵複製單一頁面。"
+    },
+    {
+      "q": "我可以在整理時輪換嗎？",
+      "a": "是的，管理器中可以按頁面輪換。"
+    },
+    {
+      "q": "有頁數限制嗎？",
+      "a": "沒有限制！ 整理任何大小的文檔。"
+    },
+    {
+      "q": "這是免費的嗎？",
+      "a": "是的，完全免費。"
+    }
+  ],
+  "faqTitle": "常見問題",
+  "supportCenter": "支援中心"
+}

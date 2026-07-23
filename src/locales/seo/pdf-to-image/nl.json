@@ -1,67 +1,85 @@
 {
-  "title": "PDF to Image Converter — Extract Pages Offline",
-  "h1": "Convert PDF Pages to PNG or JPG Images",
-  "description": "Extract every page from a PDF as high-quality images directly in your browser. Zero upload, total privacy. Best for users in Amsterdam.",
+  "title": "PDF naar afbeelding-converter — Pagina's offline extraheren",
+  "h1": "Converteer PDF-pagina's naar PNG- of JPG-afbeeldingen",
+  "description": "Extraheer elke pagina uit een PDF als afbeeldingen van hoge kwaliteit, rechtstreeks in uw browser. Geen upload, 100% veilige lokale verwerking.",
+  "buttonText": "Extract Images",
+  "badges": [
+    "Ontwerpportfolio's",
+    "Presentaties",
+    "Hoge kwaliteit"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract PDF Pages Offline?",
-      "content": "PDFs often contain confidential diagrams, blueprints, or reports. Extract pages as images without any server access."
+      "type": "pdf_image_hero_features",
+      "title": "Waarom PDF-pagina's offline extraheren?",
+      "content": "PDF's bevatten vaak vertrouwelijke diagrammen, blauwdrukken of rapporten. Extraheer pagina's als afbeeldingen zonder enige servertoegang."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Images",
+      "type": "pdf_image_how_to_steps",
+      "title": "Hoe PDF naar afbeeldingen te converteren",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF you want to extract images from."
+          "title": "PDF laden",
+          "description": "Selecteer de PDF waaruit u afbeeldingen wilt extraheren."
         },
         {
-          "title": "Choose Format",
-          "description": "Pick PNG (lossless) or JPG (compressed) output."
+          "title": "Kies Opmaak",
+          "description": "Kies PNG (lossless) of JPG (gecomprimeerde) uitvoer."
         },
         {
-          "title": "Download Images",
-          "description": "Get all pages as individual image files in a ZIP."
+          "title": "Afbeeldingen downloaden",
+          "description": "Ontvang alle pagina's als individuele afbeeldingsbestanden in een ZIP."
         }
-      ]
+      ],
+      "badgeText": "Beknopte handleiding"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF to Image for Amsterdam Designers",
-      "content": "Designers in Amsterdam extract PDF pages as images for presentations and social media without cloud uploads."
+      "type": "pdf_image_geo_targeting",
+      "title": "100% veilige lokale verwerking",
+      "content": "Alle bewerkingen worden rechtstreeks op uw lokale apparaat uitgevoerd. We gebruiken geavanceerde WebAssembly-technologie om uw documenten te verwerken zonder ze ooit naar externe servers te uploaden, waardoor volledige privacy wordt gegarandeerd.",
+      "badgeText": "Lokale verwerking"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Confidential Diagrams Stay Private",
-      "content": "Technical blueprints and legal documents extracted as images without any data leaving your device."
+      "type": "pdf_image_privacy_security",
+      "title": "Vertrouwelijke diagrammen blijven privé",
+      "content": "Technische blauwdrukken en juridische documenten worden als afbeeldingen geëxtraheerd zonder dat er gegevens uw apparaat verlaten.",
+      "badgeText": "Beveiliging eerst"
     },
     {
-      "type": "split_performance",
-      "title": "Extract All Pages Instantly",
-      "content": "A 500-page PDF converted to images in seconds. No upload, no wait."
+      "type": "pdf_image_performance",
+      "title": "Pak alle pagina's onmiddellijk uit",
+      "content": "Een PDF van 500 pagina's die binnen enkele seconden naar afbeeldingen is omgezet. Geen upload, geen wachttijd.",
+      "badgeText": "Bliksemsnel"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are available?",
-      "a": "PNG and JPG with adjustable quality settings."
+      "q": "Welke afbeeldingsformaten zijn beschikbaar?",
+      "a": "PNG en JPG met aanpasbare kwaliteitsinstellingen."
     },
     {
-      "q": "Can I extract specific pages?",
-      "a": "Yes, specify page ranges like 1-5 or 3,7,12."
+      "q": "Kan ik specifieke pagina's extraheren?",
+      "a": "Ja, geef paginabereiken op zoals 1-5 of 3,7,12."
     },
     {
-      "q": "What resolution are the exported images?",
-      "a": "Default 150 DPI, adjustable up to 300 DPI."
+      "q": "Welke resolutie hebben de geëxporteerde afbeeldingen?",
+      "a": "Standaard 150 DPI, instelbaar tot 300 DPI."
     },
     {
-      "q": "Are all pages exported at once?",
-      "a": "Yes, all selected pages are zipped for a single download."
+      "q": "Worden alle pagina's in één keer geëxporteerd?",
+      "a": "Ja, alle geselecteerde pagina's zijn gecomprimeerd voor een enkele download."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, volledig gratis."
+      "q": "Is dit gratis?",
+      "a": "Geheel gratis, altijd."
     }
-  ]
+  ],
+  "faqTitle": "Veelgestelde vragen",
+  "supportCenter": "Ondersteuningscentrum"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Excel to PDF — Convert Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to PDF Securely",
-  "description": "Turn .xlsx and .csv files into crisp PDFs locally in your browser. Financial data stays on your device. Perfect for users in Warsaw.",
+  "title": "Excel do formatu PDF — Konwertuj arkusze kalkulacyjne w trybie offline",
+  "h1": "Bezpiecznie konwertuj arkusze kalkulacyjne Excel do formatu PDF",
+  "description": "Zamień pliki .xlsx i .csv w wyraźne pliki PDF lokalnie w przeglądarce. Dane finansowe pozostają na Twoim urządzeniu. 100% bezpieczne przetwarzanie lokalne.",
+  "buttonText": "Convert Spreadsheet",
+  "badges": [
+    "Sprawozdania finansowe",
+    "Faktury",
+    "Eksporty danych"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Excel Offline?",
-      "content": "Spreadsheets often contain sensitive financial data. Our browser-based engine converts without any server involvement."
+      "type": "excel_hero_features",
+      "title": "Dlaczego warto konwertować program Excel w trybie offline?",
+      "content": "Arkusze kalkulacyjne często zawierają wrażliwe dane finansowe. Nasz oparty na przeglądarce silnik konwertuje bez udziału serwera."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Export Excel as PDF",
+      "type": "excel_how_to_steps",
+      "title": "Jak wyeksportować program Excel jako plik PDF",
       "steps": [
         {
-          "title": "Open Spreadsheet",
-          "description": "Select your .xlsx or .csv file."
+          "title": "Otwórz arkusz kalkulacyjny",
+          "description": "Wybierz plik .xlsx lub .csv."
         },
         {
-          "title": "Choose Sheet Range",
-          "description": "Pick which sheets or rows to include."
+          "title": "Wybierz zakres arkuszy",
+          "description": "Wybierz, które arkusze lub wiersze mają zostać uwzględnione."
         },
         {
-          "title": "Export as PDF",
-          "description": "Download your spreadsheet as a clean PDF."
+          "title": "Eksportuj jako PDF",
+          "description": "Pobierz arkusz kalkulacyjny jako czysty plik PDF."
         }
-      ]
+      ],
+      "badgeText": "Krótki przewodnik"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Excel to PDF for Warsaw Businesses",
-      "content": "Businesses in Warsaw use our tool to share financial reports without exposing raw spreadsheet data."
+      "type": "excel_geo_targeting",
+      "title": "100% bezpieczne przetwarzanie lokalne",
+      "content": "Wszystkie operacje wykonywane są bezpośrednio na Twoim urządzeniu lokalnym. Korzystamy z zaawansowanej technologii WebAssembly, aby przetwarzać Twoje dokumenty bez konieczności przesyłania ich na serwery zewnętrzne, zapewniając całkowitą prywatność.",
+      "badgeText": "Przetwarzanie lokalne"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Protect Financial Spreadsheets",
-      "content": "Balance sheets, payroll data — all processed offline. Zero data sent to any third party."
+      "type": "excel_privacy_security",
+      "title": "Chroń arkusze kalkulacyjne",
+      "content": "Bilanse, dane płacowe – wszystko przetwarzane w trybie offline. Zero danych wysyłanych do osób trzecich.",
+      "badgeText": "Bezpieczeństwo przede wszystkim"
     },
     {
-      "type": "combiner_performance",
-      "title": "Spreadsheet-to-PDF in Seconds",
-      "content": "No upload queue, no compression artifacts. Your spreadsheet renders natively in-browser."
+      "type": "excel_performance",
+      "title": "Zamiana arkusza kalkulacyjnego na plik PDF w kilka sekund",
+      "content": "Brak kolejki przesyłania, brak artefaktów kompresji. Twój arkusz kalkulacyjny renderuje się natywnie w przeglądarce.",
+      "badgeText": "Błyskawicznie"
     }
   ],
   "faqs": [
     {
-      "q": "Are all Excel formulas preserved?",
-      "a": "Yes, formula results are captured in the PDF snapshot."
+      "q": "Czy wszystkie formuły programu Excel są zachowywane?",
+      "a": "Tak, wyniki formuł są przechwytywane w migawce PDF."
     },
     {
-      "q": "Can I convert multiple sheets?",
-      "a": "Yes, you can include all sheets or specific ones."
+      "q": "Czy mogę konwertować wiele arkuszy?",
+      "a": "Tak, możesz uwzględnić wszystkie arkusze lub wybrane."
     },
     {
-      "q": "What file types are supported?",
-      "a": ".xlsx, .xls, and .csv are all supported."
+      "q": "Jakie typy plików są obsługiwane?",
+      "a": "Obsługiwane są pliki .xlsx, .xls i .csv."
     },
     {
-      "q": "Is this secure for financial data?",
-      "a": "Absolutely. The file never leaves your browser."
+      "q": "Czy jest to bezpieczne dla danych finansowych?",
+      "a": "Absolutnie. Plik nigdy nie opuszcza przeglądarki."
     },
     {
-      "q": "Does it support graphs?",
-      "a": "Tak, całkowicie bezpłatnie."
+      "q": "Czy obsługuje wykresy?",
+      "a": "Wykresy i osadzone wykresy są renderowane w formacie PDF."
     }
-  ]
+  ],
+  "faqTitle": "Często zadawane pytania",
+  "supportCenter": "Centrum wsparcia"
 }

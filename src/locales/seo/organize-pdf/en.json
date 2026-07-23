@@ -1,15 +1,27 @@
 {
   "title": "Organize PDF Pages — Reorder & Delete Offline",
   "h1": "Reorder, Delete, or Duplicate PDF Pages Locally",
-  "description": "Drag and drop to rearrange, remove, or duplicate PDF pages entirely in your browser. No upload. Great for users in New York.",
+  "description": "Drag and drop to rearrange, remove, or duplicate PDF pages entirely in your browser. Fast and completely secure.",
+  "buttonText": "Organize Pages",
+  "badges": [
+    "Drag & Drop",
+    "Reorder Pages",
+    "Visual Editor"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
+      "type": "organize_hero_features",
       "title": "Why Organize PDFs Locally?",
       "content": "Reorganizing page structure is an editing operation. Your internal document should stay internal during editing."
     },
     {
-      "type": "organizer_how_to_steps",
+      "type": "organize_how_to_steps",
       "title": "How to Organize PDF Pages",
       "steps": [
         {
@@ -27,17 +39,17 @@
       ]
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Organization for New York Teams",
-      "content": "Teams in New York reorganize proposal and report PDFs without uploading to any cloud service."
+      "type": "organize_geo_targeting",
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy."
     },
     {
-      "type": "organizer_privacy_security",
+      "type": "organize_privacy_security",
       "title": "Page Structure Is Private Business",
       "content": "Reordering internal reports and proposals with zero data leaving your browser."
     },
     {
-      "type": "organizer_performance",
+      "type": "organize_performance",
       "title": "Reorganize Any PDF in Seconds",
       "content": "Reorder pages in a 500-page document through a smooth drag-and-drop interface with zero upload."
     }

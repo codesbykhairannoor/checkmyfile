@@ -1,67 +1,85 @@
 {
-  "title": "Organize PDF Pages — Reorder & Delete Offline",
-  "h1": "Reorder, Delete, or Duplicate PDF Pages Locally",
-  "description": "Drag and drop to rearrange, remove, or duplicate PDF pages entirely in your browser. No upload. Great for users in Athens.",
+  "title": "Οργάνωση σελίδων PDF — Αναδιάταξη & Διαγραφή εκτός σύνδεσης",
+  "h1": "Αναδιάταξη, Διαγραφή ή Αντιγραφή σελίδων PDF τοπικά",
+  "description": "Σύρετε και αποθέστε για αναδιάταξη, κατάργηση ή αντιγραφή σελίδων PDF εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Γρήγορο και απόλυτα ασφαλές.",
+  "buttonText": "Organize Pages",
+  "badges": [
+    "Σύρετε και αποθέστε",
+    "Αναδιάταξη σελίδων",
+    "Οπτικός επεξεργαστής"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Organize PDFs Locally?",
-      "content": "Reorganizing page structure is an editing operation. Your internal document should stay internal during editing."
+      "type": "organize_hero_features",
+      "title": "Γιατί να οργανώνουμε αρχεία PDF τοπικά;",
+      "content": "Η αναδιοργάνωση της δομής της σελίδας είναι μια λειτουργία επεξεργασίας. Το εσωτερικό σας έγγραφο θα πρέπει να παραμένει εσωτερικό κατά την επεξεργασία."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Organize PDF Pages",
+      "type": "organize_how_to_steps",
+      "title": "Πώς να οργανώσετε σελίδες PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to reorganize."
+          "title": "Ανοίξτε το PDF",
+          "description": "Φορτώστε το PDF που θέλετε να αναδιοργανώσετε."
         },
         {
-          "title": "Drag to Reorder",
-          "description": "Drag page thumbnails to the desired position."
+          "title": "Σύρετε για αναδιάταξη",
+          "description": "Σύρετε τις μικρογραφίες σελίδων στην επιθυμητή θέση."
         },
         {
-          "title": "Save Organized PDF",
-          "description": "Download the restructured PDF immediately."
+          "title": "Αποθήκευση οργανωμένου PDF",
+          "description": "Κατεβάστε αμέσως το αναδομημένο PDF."
         }
-      ]
+      ],
+      "badgeText": "Γρήγορος Οδηγός"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Organization for Athens Teams",
-      "content": "Teams in Athens reorganize proposal and report PDFs without uploading to any cloud service."
+      "type": "organize_geo_targeting",
+      "title": "100% Ασφαλής Τοπική Επεξεργασία",
+      "content": "Όλες οι λειτουργίες εκτελούνται απευθείας στην τοπική συσκευή σας. Χρησιμοποιούμε προηγμένη τεχνολογία WebAssembly για να επεξεργαζόμαστε τα έγγραφά σας χωρίς ποτέ να τα ανεβάσουμε σε εξωτερικούς διακομιστές, διασφαλίζοντας πλήρες απόρρητο.",
+      "badgeText": "Τοπική Επεξεργασία"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Page Structure Is Private Business",
-      "content": "Reordering internal reports and proposals with zero data leaving your browser."
+      "type": "organize_privacy_security",
+      "title": "Η δομή της σελίδας είναι ιδιωτική επιχείρηση",
+      "content": "Αναδιάταξη εσωτερικών αναφορών και προτάσεων με μηδενικά δεδομένα που φεύγουν από το πρόγραμμα περιήγησής σας.",
+      "badgeText": "Πρώτα η ασφάλεια"
     },
     {
-      "type": "organizer_performance",
-      "title": "Reorganize Any PDF in Seconds",
-      "content": "Reorder pages in a 500-page document through a smooth drag-and-drop interface with zero upload."
+      "type": "organize_performance",
+      "title": "Αναδιοργάνωση οποιουδήποτε PDF σε δευτερόλεπτα",
+      "content": "Αναδιάταξη σελίδων σε ένα έγγραφο 500 σελίδων μέσω μιας ομαλής διεπαφής μεταφοράς και απόθεσης με μηδενική μεταφόρτωση.",
+      "badgeText": "Αστραπιαία"
     }
   ],
   "faqs": [
     {
-      "q": "Can I delete pages?",
-      "a": "Yes, click the delete icon on any page thumbnail."
+      "q": "Μπορώ να διαγράψω σελίδες;",
+      "a": "Ναι, κάντε κλικ στο εικονίδιο διαγραφής σε οποιαδήποτε μικρογραφία σελίδας."
     },
     {
-      "q": "Can I duplicate pages?",
-      "a": "Yes, duplicate individual pages with one click."
+      "q": "Μπορώ να αντιγράψω σελίδες;",
+      "a": "Ναι, αντιγράψτε μεμονωμένες σελίδες με ένα κλικ."
     },
     {
-      "q": "Can I rotate while organizing?",
-      "a": "Yes, per-page rotation is available in the organizer."
+      "q": "Μπορώ να κάνω εναλλαγή κατά την οργάνωση;",
+      "a": "Ναι, η εναλλαγή ανά σελίδα είναι διαθέσιμη στον διοργανωτή."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No limit! Organize documents of any size."
+      "q": "Υπάρχει όριο σελίδας;",
+      "a": "Χωρίς όριο! Οργανώστε έγγραφα οποιουδήποτε μεγέθους."
     },
     {
-      "q": "Is this free?",
+      "q": "Αυτό είναι δωρεάν;",
       "a": "Ναι, εντελώς δωρεάν."
     }
-  ]
+  ],
+  "faqTitle": "Συχνές Ερωτήσεις",
+  "supportCenter": "Κέντρο Υποστήριξης"
 }

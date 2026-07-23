@@ -1,67 +1,85 @@
 {
-  "title": "Extract Images from PDF — Offline Extractor",
-  "h1": "Extract All Embedded Images from PDF Files",
-  "description": "Pull out every image from a PDF and download them as PNG or JPG files, all in your browser. No cloud. Ideal for users in Budapest.",
+  "title": "Képek kibontása PDF-ből — Offline Extractor",
+  "h1": "Az összes beágyazott kép kibontása PDF-fájlokból",
+  "description": "Húzz ki minden képet a PDF-ből, és töltsd le PNG vagy JPG fájlként, mindezt a böngésződben. Nincs felhő. 100%-ban biztonságos helyi feldolgozás.",
+  "buttonText": "Extract All Images",
+  "badges": [
+    "Termékfotók",
+    "Bizalmas diagramok",
+    "Vektorok"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract Images Offline?",
-      "content": "PDFs with confidential diagrams or product photos should never be uploaded. Extract images directly in your browser."
+      "type": "extract_images_hero_features",
+      "title": "Miért érdemes offline képeket kivonni?",
+      "content": "Bizalmas diagramokat vagy termékfotókat tartalmazó PDF-fájlokat soha nem szabad feltölteni. Kivonat képeket közvetlenül a böngészőben."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Extract Images from PDF",
+      "type": "extract_images_how_to_steps",
+      "title": "Hogyan lehet képeket kivonni a PDF-ből",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Open the PDF containing embedded images."
+          "title": "PDF betöltése",
+          "description": "Nyissa meg a beágyazott képeket tartalmazó PDF-fájlt."
         },
         {
-          "title": "Scan for Images",
-          "description": "Our engine locates all embedded image objects."
+          "title": "Képek keresése",
+          "description": "Motorunk megkeresi az összes beágyazott képobjektumot."
         },
         {
-          "title": "Download ZIP",
-          "description": "Get all extracted images in a single ZIP file."
+          "title": "ZIP letöltése",
+          "description": "Az összes kibontott képet egyetlen ZIP-fájlban kaphatja meg."
         }
-      ]
+      ],
+      "badgeText": "Gyors útmutató"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Image Extraction in Budapest",
-      "content": "Publishers and marketers in Budapest extract product photos and diagrams from PDFs without cloud uploads."
+      "type": "extract_images_geo_targeting",
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Minden művelet közvetlenül a helyi eszközön történik. Fejlett WebAssembly technológiát használunk a dokumentumok feldolgozásához anélkül, hogy azokat külső szerverekre feltöltenénk, így biztosítva a teljes adatvédelmet.",
+      "badgeText": "Helyi feldolgozás"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Product Images Stay Confidential",
-      "content": "Unreleased product photos embedded in PDFs extracted locally without any server access."
+      "type": "extract_images_privacy_security",
+      "title": "A termék képei Maradjon bizalmas",
+      "content": "Kiadatlan termékfotók PDF-fájlokba ágyazva, helyileg, szerver hozzáférés nélkül.",
+      "badgeText": "Első a biztonság"
     },
     {
-      "type": "split_performance",
-      "title": "Extract Hundreds of Images Fast",
-      "content": "Extract 500 images from a PDF in seconds. All native browser processing."
+      "type": "extract_images_performance",
+      "title": "Több száz kép gyors kibontása",
+      "content": "Kivonat 500 képet egy PDF-ből másodpercek alatt. Minden natív böngésző feldolgozás.",
+      "badgeText": "Villámgyors"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are extracted?",
-      "a": "Images are saved in their original format (PNG, JPG, etc.)."
+      "q": "Milyen képformátumok kerülnek kibontásra?",
+      "a": "A képek eredeti formátumukban (PNG, JPG stb.) kerülnek mentésre."
     },
     {
-      "q": "Are images at full resolution?",
-      "a": "Yes, extracted at the original embedded resolution."
+      "q": "Teljes felbontásúak a képek?",
+      "a": "Igen, az eredeti beágyazott felbontással kibontva."
     },
     {
-      "q": "Can I choose specific pages?",
-      "a": "Yes, specify which pages to extract images from."
+      "q": "Választhatok konkrét oldalakat?",
+      "a": "Igen, adja meg, hogy mely oldalakról kívánja kivonni a képeket."
     },
     {
-      "q": "Does it extract vector graphics?",
-      "a": "Vector elements are rasterized to PNG/JPG."
+      "q": "Kivonja a vektorgrafikát?",
+      "a": "A vektorelemek PNG/JPG formátumba vannak raszterizálva."
     },
     {
-      "q": "Is this free?",
-      "a": "Igen, teljesen ingyenes."
+      "q": "Ez ingyenes?",
+      "a": "Igen, mindig ingyenes."
     }
-  ]
+  ],
+  "faqTitle": "Gyakran Ismételt Kérdések",
+  "supportCenter": "Támogatási Központ"
 }

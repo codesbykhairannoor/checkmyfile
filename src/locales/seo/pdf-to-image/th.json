@@ -1,67 +1,85 @@
 {
-  "title": "PDF to Image Converter — Extract Pages Offline",
-  "h1": "Convert PDF Pages to PNG or JPG Images",
-  "description": "Extract every page from a PDF as high-quality images directly in your browser. Zero upload, total privacy. Best for users in Bangkok.",
+  "title": "PDF to Image Converter — แยกหน้าออฟไลน์",
+  "h1": "แปลงหน้า PDF เป็นรูปภาพ PNG หรือ JPG",
+  "description": "แยกทุกหน้าจาก PDF เป็นรูปภาพคุณภาพสูงได้โดยตรงจากเบราว์เซอร์ของคุณ การอัปโหลดเป็นศูนย์ การประมวลผลภายในที่ปลอดภัย 100%",
+  "buttonText": "Extract Images",
+  "badges": [
+    "ผลงานการออกแบบ",
+    "การนำเสนอ",
+    "คุณภาพสูง"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract PDF Pages Offline?",
-      "content": "PDFs often contain confidential diagrams, blueprints, or reports. Extract pages as images without any server access."
+      "type": "pdf_image_hero_features",
+      "title": "เหตุใดจึงต้องแยกหน้า PDF ออฟไลน์",
+      "content": "PDF มักจะมีไดอะแกรม พิมพ์เขียว หรือรายงานที่เป็นความลับ แยกหน้าเป็นรูปภาพโดยไม่ต้องเข้าถึงเซิร์ฟเวอร์"
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Images",
+      "type": "pdf_image_how_to_steps",
+      "title": "วิธีแปลง PDF เป็นรูปภาพ",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF you want to extract images from."
+          "title": "โหลด PDF",
+          "description": "เลือก PDF ที่คุณต้องการแยกรูปภาพ"
         },
         {
-          "title": "Choose Format",
-          "description": "Pick PNG (lossless) or JPG (compressed) output."
+          "title": "เลือกรูปแบบ",
+          "description": "เลือกเอาต์พุต PNG (lossless) หรือ JPG (บีบอัด)"
         },
         {
-          "title": "Download Images",
-          "description": "Get all pages as individual image files in a ZIP."
+          "title": "ดาวน์โหลดรูปภาพ",
+          "description": "รับทุกหน้าเป็นไฟล์ภาพแต่ละไฟล์ในรูปแบบ ZIP"
         }
-      ]
+      ],
+      "badgeText": "คู่มือฉบับย่อ"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF to Image for Bangkok Designers",
-      "content": "Designers in Bangkok extract PDF pages as images for presentations and social media without cloud uploads."
+      "type": "pdf_image_geo_targeting",
+      "title": "การประมวลผลภายในที่ปลอดภัย 100%",
+      "content": "การดำเนินการทั้งหมดดำเนินการโดยตรงบนอุปกรณ์ท้องถิ่นของคุณ เราใช้เทคโนโลยี WebAssembly ขั้นสูงเพื่อประมวลผลเอกสารของคุณโดยไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ภายนอก เพื่อให้มั่นใจถึงความเป็นส่วนตัวโดยสมบูรณ์",
+      "badgeText": "การประมวลผลในท้องถิ่น"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Confidential Diagrams Stay Private",
-      "content": "Technical blueprints and legal documents extracted as images without any data leaving your device."
+      "type": "pdf_image_privacy_security",
+      "title": "ไดอะแกรมที่เป็นความลับยังคงเป็นส่วนตัว",
+      "content": "พิมพ์เขียวทางเทคนิคและเอกสารทางกฎหมายที่แยกออกมาเป็นรูปภาพโดยไม่มีข้อมูลใด ๆ ออกจากอุปกรณ์ของคุณ",
+      "badgeText": "ความปลอดภัยต้องมาก่อน"
     },
     {
-      "type": "split_performance",
-      "title": "Extract All Pages Instantly",
-      "content": "A 500-page PDF converted to images in seconds. No upload, no wait."
+      "type": "pdf_image_performance",
+      "title": "แยกหน้าทั้งหมดทันที",
+      "content": "PDF 500 หน้าแปลงเป็นรูปภาพในไม่กี่วินาที ไม่ต้องอัพโหลด ไม่ต้องรอ",
+      "badgeText": "เร็วปานสายฟ้า"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are available?",
-      "a": "PNG and JPG with adjustable quality settings."
+      "q": "มีรูปแบบภาพอะไรบ้าง?",
+      "a": "PNG และ JPG พร้อมการตั้งค่าคุณภาพที่ปรับได้"
     },
     {
-      "q": "Can I extract specific pages?",
-      "a": "Yes, specify page ranges like 1-5 or 3,7,12."
+      "q": "ฉันสามารถแยกหน้าใดหน้าหนึ่งได้หรือไม่",
+      "a": "ใช่ ระบุช่วงหน้า เช่น 1-5 หรือ 3,7,12"
     },
     {
-      "q": "What resolution are the exported images?",
-      "a": "Default 150 DPI, adjustable up to 300 DPI."
+      "q": "ภาพที่ส่งออกมีความละเอียดเท่าใด",
+      "a": "ค่าเริ่มต้น 150 DPI ปรับได้สูงสุด 300 DPI"
     },
     {
-      "q": "Are all pages exported at once?",
-      "a": "Yes, all selected pages are zipped for a single download."
+      "q": "เพจทั้งหมดถูกส่งออกพร้อมกันหรือไม่",
+      "a": "ใช่ หน้าที่เลือกทั้งหมดจะถูกซิปไว้สำหรับการดาวน์โหลดครั้งเดียว"
     },
     {
-      "q": "Is this free?",
-      "a": "ใช่ ฟรีทั้งหมด"
+      "q": "ฟรีหรือเปล่า?",
+      "a": "ฟรีโดยสมบูรณ์เสมอ"
     }
-  ]
+  ],
+  "faqTitle": "คำถามที่พบบ่อย",
+  "supportCenter": "ศูนย์สนับสนุน"
 }

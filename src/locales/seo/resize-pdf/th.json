@@ -1,67 +1,85 @@
 {
-  "title": "Resize PDF Pages — Change Paper Size Offline",
-  "h1": "Resize PDF Pages to A4, Letter, or Custom Sizes",
-  "description": "Change the paper size of every PDF page to A4, US Letter, or custom dimensions entirely in your browser. No upload. Ideal for users in Bangkok.",
+  "title": "ปรับขนาดหน้า PDF — เปลี่ยนขนาดกระดาษออฟไลน์",
+  "h1": "ปรับขนาดหน้า PDF เป็น A4, Letter หรือขนาดที่กำหนดเอง",
+  "description": "เปลี่ยนขนาดกระดาษของทุกหน้า PDF เป็น A4, US Letter หรือขนาดที่กำหนดเองทั้งหมดในเบราว์เซอร์ของคุณ ไม่มีการอัพโหลด การประมวลผลภายในที่ปลอดภัย 100%",
+  "buttonText": "Resize Pages",
+  "badges": [
+    "A4, จดหมาย, กำหนดเอง",
+    "เพิ่มระยะขอบ",
+    "แก้ไขรูปแบบ"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Resize PDFs Locally?",
-      "content": "Preparing documents for printing requires proper page sizing. Resize locally without uploading internal documents to the cloud."
+      "type": "resize_hero_features",
+      "title": "เหตุใดจึงต้องปรับขนาด PDF ในเครื่อง",
+      "content": "การเตรียมเอกสารสำหรับการพิมพ์จำเป็นต้องมีขนาดหน้าที่เหมาะสม ปรับขนาดในเครื่องโดยไม่ต้องอัปโหลดเอกสารภายในไปยังระบบคลาวด์"
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Resize PDF Pages",
+      "type": "resize_how_to_steps",
+      "title": "วิธีปรับขนาดหน้า PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page dimensions."
+          "title": "เปิด PDF",
+          "description": "โหลด PDF ด้วยขนาดหน้าไม่ถูกต้อง"
         },
         {
-          "title": "Select Target Size",
-          "description": "Choose A4, Letter, A3, or enter custom dimensions."
+          "title": "เลือกขนาดเป้าหมาย",
+          "description": "เลือก A4, Letter, A3 หรือป้อนขนาดที่กำหนดเอง"
         },
         {
-          "title": "Download Resized PDF",
-          "description": "Get your properly sized document instantly."
+          "title": "ดาวน์โหลด PDF ที่ปรับขนาดแล้ว",
+          "description": "รับเอกสารที่มีขนาดเหมาะสมของคุณทันที"
         }
-      ]
+      ],
+      "badgeText": "คู่มือฉบับย่อ"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Resizing for Bangkok Print Shops",
-      "content": "Print shops and offices in Bangkok resize documents to standard sizes without cloud dependency."
+      "type": "resize_geo_targeting",
+      "title": "การประมวลผลภายในที่ปลอดภัย 100%",
+      "content": "การดำเนินการทั้งหมดดำเนินการโดยตรงบนอุปกรณ์ท้องถิ่นของคุณ เราใช้เทคโนโลยี WebAssembly ขั้นสูงเพื่อประมวลผลเอกสารของคุณโดยไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ภายนอก เพื่อให้มั่นใจถึงความเป็นส่วนตัวโดยสมบูรณ์",
+      "badgeText": "การประมวลผลในท้องถิ่น"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Internal Documents Stay Internal",
-      "content": "Resize business reports and proposals without any server-side processing."
+      "type": "resize_privacy_security",
+      "title": "เอกสารภายในยังคงอยู่ภายใน",
+      "content": "ปรับขนาดรายงานและข้อเสนอทางธุรกิจโดยไม่ต้องประมวลผลฝั่งเซิร์ฟเวอร์",
+      "badgeText": "ความปลอดภัยต้องมาก่อน"
     },
     {
-      "type": "transform_performance",
-      "title": "Resize Hundreds of Pages Instantly",
-      "content": "Resizing a 500-page PDF takes under 2 seconds. All in your browser."
+      "type": "resize_performance",
+      "title": "ปรับขนาดหลายร้อยหน้าทันที",
+      "content": "การปรับขนาด PDF 500 หน้าใช้เวลาไม่ถึง 2 วินาที ทั้งหมดในเบราว์เซอร์ของคุณ",
+      "badgeText": "เร็วปานสายฟ้า"
     }
   ],
   "faqs": [
     {
-      "q": "What sizes are available?",
-      "a": "A4, A3, A5, US Letter, Legal, and custom dimensions."
+      "q": "มีขนาดอะไรบ้าง?",
+      "a": "ขนาด A4, A3, A5, US Letter, Legal และแบบกำหนดเอง"
     },
     {
-      "q": "Does content scale with the page?",
-      "a": "Yes, content is scaled proportionally by default."
+      "q": "เนื้อหาปรับขนาดตามหน้าหรือไม่?",
+      "a": "ใช่ เนื้อหาจะถูกปรับขนาดตามค่าเริ่มต้น"
     },
     {
-      "q": "Can I resize individual pages?",
-      "a": "Yes, apply different sizes to specific pages."
+      "q": "ฉันสามารถปรับขนาดแต่ละหน้าได้หรือไม่",
+      "a": "ใช่ ใช้ขนาดที่แตกต่างกันกับหน้าเว็บเฉพาะ"
     },
     {
-      "q": "Is the quality affected?",
-      "a": "Vector content is re-rendered perfectly; images may scale."
+      "q": "คุณภาพได้รับผลกระทบหรือไม่?",
+      "a": "เนื้อหาเวกเตอร์ได้รับการเรนเดอร์ใหม่อย่างสมบูรณ์แบบ รูปภาพอาจมีขนาด"
     },
     {
-      "q": "Is this free?",
-      "a": "ใช่ ฟรีทั้งหมด"
+      "q": "ฟรีหรือเปล่า?",
+      "a": "ใช่ สมบูรณ์ฟรี"
     }
-  ]
+  ],
+  "faqTitle": "คำถามที่พบบ่อย",
+  "supportCenter": "ศูนย์สนับสนุน"
 }

@@ -1,0 +1,85 @@
+{
+  "title": "PDF bewerken - Gratis offline PDF-editor",
+  "h1": "Bewerk PDF-documenten rechtstreeks in uw browser",
+  "description": "Voeg lokaal tekst, handtekeningen en annotaties toe aan uw PDF-bestanden. Geen uploads, maximale privacy. 100% veilige lokale verwerking.",
+  "sections": [
+    {
+      "type": "edit_hero_features",
+      "title": "Waarom PDF's lokaal bewerken?",
+      "content": "Het uploaden van gevoelige contracten en formulieren naar een cloudeditor vormt een enorm privacyrisico. Onze WebAssembly-editor draait rechtstreeks op uw apparaat, zodat uw documenten uw computer nooit verlaten."
+    },
+    {
+      "type": "edit_how_to_steps",
+      "title": "Een PDF bewerken",
+      "steps": [
+        {
+          "title": "Document openen",
+          "description": "Selecteer het PDF-bestand dat u wilt annoteren of ondertekenen."
+        },
+        {
+          "title": "Tekst en elementen toevoegen",
+          "description": "Gebruik onze intuïtieve tools om tekst toe te voegen, te tekenen of afbeeldingen te plaatsen."
+        },
+        {
+          "title": "Wijzigingen opslaan",
+          "description": "Exporteer de gewijzigde PDF direct zonder te wachten op downloads."
+        }
+      ],
+      "badgeText": "Beknopte handleiding"
+    },
+    {
+      "type": "edit_geo_targeting",
+      "title": "100% veilige lokale verwerking",
+      "content": "Alle bewerkingen worden rechtstreeks op uw lokale apparaat uitgevoerd. We gebruiken geavanceerde WebAssembly-technologie om uw documenten te verwerken zonder ze ooit naar externe servers te uploaden, waardoor volledige privacy wordt gegarandeerd.",
+      "badgeText": "Lokale verwerking"
+    },
+    {
+      "type": "edit_privacy_security",
+      "title": "Geen gegevensoverdracht",
+      "content": "In tegenstelling tot traditionele PDF-editors die uw bestanden naar hun servers uploaden, verwerkt ons platform alles in uw browsergeheugen.",
+      "badgeText": "Beveiliging eerst"
+    },
+    {
+      "type": "edit_performance",
+      "title": "Direct offline renderen",
+      "content": "Onze editor laadt enorme PDF-bestanden in milliseconden. U kunt honderden annotaties toevoegen zonder enige vertraging of netwerkvertraging.",
+      "badgeText": "Bliksemsnel"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Kan ik bestaande tekst in de PDF bewerken?",
+      "a": "Momenteel kunt u nieuwe tekst, vormen en afbeeldingen toevoegen aan het bestaande document."
+    },
+    {
+      "q": "Worden mijn bestanden ergens geüpload?",
+      "a": "Nee, alle bewerkingen gebeuren lokaal in uw browser met behulp van WebAssembly."
+    },
+    {
+      "q": "Kan ik documenten ondertekenen?",
+      "a": "Ja, u kunt uw handtekening zetten of er een afbeelding van uploaden."
+    },
+    {
+      "q": "Is de editor gratis te gebruiken?",
+      "a": "Ja, het is 100% gratis, zonder premium betaalmuren of verborgen kosten."
+    },
+    {
+      "q": "Werkt het op mobiele apparaten?",
+      "a": "Ja, de editor is volledig responsief en ondersteunt aanraakinvoer voor tekenen."
+    }
+  ],
+  "badges": [
+    "Geen watermerken",
+    "100% gratis",
+    "Offline-editor"
+  ],
+  "stats": [
+    "100% Private",
+    "0 Server Uploads",
+    "Client-Side Only",
+    "No Accounts"
+  ],
+  "buttonText": "Start Editing",
+  "faqTitle": "Veelgestelde vragen",
+  "supportCenter": "Ondersteuningscentrum"
+}

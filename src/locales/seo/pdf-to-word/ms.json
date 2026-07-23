@@ -1,67 +1,80 @@
 {
-  "title": "PDF to Word Converter — Offline & Editable",
-  "h1": "Convert PDF to Editable Word Documents Locally",
-  "description": "Transform PDFs back into .docx files you can edit, right in your browser. No upload needed. Great for users in Kuala Lumpur.",
+  "title": "PDF to Word Converter — Luar Talian & Boleh Disunting",
+  "h1": "Tukar PDF kepada Dokumen Word Boleh Disunting Secara Setempat",
+  "description": "Ubah PDF kembali kepada fail .docx yang boleh anda edit, terus dalam penyemak imbas anda. Tiada muat naik diperlukan. Bagus untuk pengguna di Kuala Lumpur.",
+  "buttonText": "Tukar kepada Word",
+  "badges": [
+    "Dokumen Boleh Diedit",
+    "Pemulihan Teks",
+    "Proses Luar Talian"
+  ],
+  "stats": [
+    "100%",
+    "Tempatan",
+    "0s",
+    "Masa Tunggu"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF Back Offline?",
-      "content": "When you need to edit a PDF, converting it offline keeps your original document confidential."
+      "title": "Mengapa Guna Luar Talian?",
+      "content": "Apabila anda perlu mengedit PDF, menukarnya di luar talian memastikan dokumen asal anda sulit."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Word",
+      "title": "Cara Mengguna",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF file you need to convert."
+          "title": "Muatkan PDF",
+          "description": "Pilih fail PDF yang anda perlu tukar."
         },
         {
-          "title": "Detect Text Layers",
-          "description": "Our engine reads text and structure from the PDF."
+          "title": "Kesan Lapisan Teks",
+          "description": "Enjin kami membaca teks dan struktur daripada PDF."
         },
         {
-          "title": "Download .docx",
-          "description": "Get your editable Word document ready to modify."
+          "title": "Muat turun .docx",
+          "description": "Sediakan dokumen Word anda yang boleh diedit untuk diubah suai."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "PDF to Word for Kuala Lumpur Offices",
-      "content": "Office workers in Kuala Lumpur use our tool to recover editable text from PDFs without cloud dependency."
+      "title": "PDF to Word untuk Pejabat Kuala Lumpur",
+      "content": "Pekerja pejabat di Kuala Lumpur menggunakan alat kami untuk memulihkan teks boleh diedit daripada PDF tanpa pergantungan awan."
     },
     {
       "type": "split_privacy_security",
-      "title": "Legal Documents Stay Confidential",
-      "content": "Contracts, NDAs, and reports converted back to Word entirely in your browser memory."
+      "title": "Dokumen Undang-undang Kekal Rahsia",
+      "content": "Kontrak, NDA dan laporan ditukar kembali kepada Word sepenuhnya dalam memori penyemak imbas anda."
     },
     {
       "type": "split_performance",
-      "title": "Recover Editable Text in Seconds",
-      "content": "Extract text from a 50-page PDF in under 3 seconds without uploading a single byte."
+      "title": "Pulihkan Teks Boleh Disunting dalam Beberapa Saat",
+      "content": "Ekstrak teks daripada PDF 50 halaman dalam masa kurang daripada 3 saat tanpa memuat naik satu bait."
     }
   ],
   "faqs": [
     {
-      "q": "Is all text preserved?",
-      "a": "Yes, text from all layers is extracted and formatted."
+      "q": "Adakah semua teks disimpan?",
+      "a": "Ya, teks daripada semua lapisan diekstrak dan diformat."
     },
     {
-      "q": "Does it work on scanned PDFs?",
-      "a": "For scanned PDFs, use our OCR tool first."
+      "q": "Adakah ia berfungsi pada PDF yang diimbas?",
+      "a": "Untuk PDF yang diimbas, gunakan alat OCR kami dahulu."
     },
     {
-      "q": "Are images included in the .docx?",
-      "a": "Yes, embedded images are included in the output."
+      "q": "Adakah imej disertakan dalam .docx?",
+      "a": "Ya, imej terbenam disertakan dalam output."
     },
     {
-      "q": "Can I edit the .docx after?",
-      "a": "Absolutely, the output is a fully editable Word document."
+      "q": "Bolehkah saya mengedit .docx selepas itu?",
+      "a": "Sudah tentu, output adalah dokumen Word yang boleh diedit sepenuhnya."
     },
     {
-      "q": "Is this free?",
+      "q": "Adakah ini percuma?",
       "a": "Ya, percuma sepenuhnya."
     }
-  ]
+  ],
+  "faqTitle": "Soalan Lazim"
 }

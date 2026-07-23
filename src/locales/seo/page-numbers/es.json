@@ -1,67 +1,85 @@
 {
-  "title": "Add Page Numbers to PDF — Offline Number Stamp",
-  "h1": "Insert Page Numbers into PDF Documents Locally",
-  "description": "Stamp page numbers at the header or footer of your PDF entirely in your browser. No upload. Ideal for users in Madrid.",
+  "title": "Agregar números de página a PDF: sello numérico sin conexión",
+  "h1": "Insertar números de página en documentos PDF localmente",
+  "description": "Sello los números de página en el encabezado o pie de página de su PDF completamente en su navegador. Rápido y completamente seguro.",
+  "buttonText": "Add Page Numbers",
+  "badges": [
+    "Posición personalizada",
+    "Encabezado y pie de página",
+    "Numeración Bates"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Add Page Numbers Offline?",
-      "content": "Page numbers are a formatting step, not a reason to upload confidential documents to a cloud service."
+      "type": "pagenum_hero_features",
+      "title": "¿Por qué agregar números de página sin conexión?",
+      "content": "Los números de página son un paso de formato, no un motivo para cargar documentos confidenciales en un servicio en la nube."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Add Page Numbers",
+      "type": "pagenum_how_to_steps",
+      "title": "Cómo agregar números de página",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to number."
+          "title": "Abrir PDF",
+          "description": "Seleccione el PDF a numerar."
         },
         {
-          "title": "Configure Style",
-          "description": "Choose position, format (1/12, Page 1, i, ii…), and font."
+          "title": "Configurar estilo",
+          "description": "Elija la posición, el formato (1/12, Página 1, i, ii…) y la fuente."
         },
         {
-          "title": "Apply & Download",
-          "description": "Download your paginated PDF instantly."
+          "title": "Aplicar y descargar",
+          "description": "Descargue su PDF paginado al instante."
         }
-      ]
+      ],
+      "badgeText": "Guía rápida"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Page Numbering for Madrid Legal Docs",
-      "content": "Legal professionals in Madrid number briefs and reports locally without cloud service dependency."
+      "type": "pagenum_geo_targeting",
+      "title": "Procesamiento local 100% seguro",
+      "content": "Todas las operaciones se realizan directamente en su dispositivo local. Utilizamos tecnología avanzada de WebAssembly para procesar sus documentos sin tener que cargarlos en servidores externos, lo que garantiza una privacidad total.",
+      "badgeText": "Procesamiento local"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Internal Documents Stay Numbered & Private",
-      "content": "Add page numbers to contracts and confidential reports without any server involvement."
+      "type": "pagenum_privacy_security",
+      "title": "Los documentos internos permanecen numerados y privados",
+      "content": "Agregue números de página a contratos e informes confidenciales sin la participación del servidor.",
+      "badgeText": "La seguridad es lo primero"
     },
     {
-      "type": "organizer_performance",
-      "title": "Number a 1000-Page PDF Instantly",
-      "content": "Stamping page numbers locally takes milliseconds for any size document."
+      "type": "pagenum_performance",
+      "title": "Numere un PDF de 1000 páginas al instante",
+      "content": "Sellar los números de página localmente lleva milisegundos para documentos de cualquier tamaño.",
+      "badgeText": "A la velocidad del rayo"
     }
   ],
   "faqs": [
     {
-      "q": "What number formats are available?",
-      "a": "Arabic (1, 2, 3), Roman (i, ii, iii), and letter (a, b, c) formats."
+      "q": "¿Qué formatos de números están disponibles?",
+      "a": "Formatos árabe (1, 2, 3), romano (i, ii, iii) y letra (a, b, c)."
     },
     {
-      "q": "Can I start from a custom number?",
-      "a": "Yes, set any starting page number."
+      "q": "¿Puedo comenzar desde un número personalizado?",
+      "a": "Sí, establezca cualquier número de página inicial."
     },
     {
-      "q": "Can I skip numbering the first page?",
-      "a": "Yes, set the page offset to skip cover pages."
+      "q": "¿Puedo saltarme la numeración de la primera página?",
+      "a": "Sí, configure el desplazamiento de página para omitir las portadas."
     },
     {
-      "q": "Where can I position numbers?",
-      "a": "Header-left, header-center, header-right, and same for footer."
+      "q": "¿Dónde puedo colocar los números?",
+      "a": "Encabezado izquierdo, encabezado central, encabezado derecho y lo mismo para el pie de página."
     },
     {
-      "q": "Is this free?",
-      "a": "Sí, completamente gratis."
+      "q": "¿Es esto gratis?",
+      "a": "Sí, siempre gratis."
     }
-  ]
+  ],
+  "faqTitle": "Preguntas frecuentes",
+  "supportCenter": "Centro de soporte"
 }

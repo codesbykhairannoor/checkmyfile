@@ -1,67 +1,85 @@
 {
-  "title": "Compare PDF Files — Spot Differences Locally",
-  "h1": "Compare Two PDF Documents Side by Side",
-  "description": "Upload two PDFs and highlight differences between them entirely in your browser. No upload to servers. Ideal for users in Helsinki.",
+  "title": "Vertaa PDF-tiedostoja — Hae paikallisesti eroja",
+  "h1": "Vertaa kahta PDF-dokumenttia vierekkäin",
+  "description": "Lataa kaksi PDF-tiedostoa ja korosta niiden väliset erot kokonaan selaimessasi. Ei latausta palvelimille. 100 % turvallinen paikallinen käsittely.",
+  "buttonText": "Compare PDFs",
+  "badges": [
+    "Etsi eroja",
+    "Korosta muutokset",
+    "Visuaalinen ero"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Compare PDFs Locally?",
-      "content": "Comparing contract versions or document revisions often involves highly sensitive content. Do it entirely offline."
+      "type": "compare_hero_features",
+      "title": "Miksi vertailla PDF-tiedostoja paikallisesti?",
+      "content": "Sopimusversioiden tai asiakirjaversioiden vertailu sisältää usein erittäin arkaluontoista sisältöä. Tee se kokonaan offline-tilassa."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Compare Two PDFs",
+      "type": "compare_how_to_steps",
+      "title": "Kuinka vertailla kahta PDF-tiedostoa",
       "steps": [
         {
-          "title": "Load Both PDFs",
-          "description": "Select the two PDF versions to compare."
+          "title": "Lataa molemmat PDF-tiedostot",
+          "description": "Valitse kaksi PDF-versiota verrattavaksi."
         },
         {
-          "title": "View Differences",
-          "description": "Highlighted changes appear side by side."
+          "title": "Näytä erot",
+          "description": "Korostetut muutokset näkyvät vierekkäin."
         },
         {
-          "title": "Export Diff Report",
-          "description": "Download a comparison report with all changes marked."
+          "title": "Vie eroraportti",
+          "description": "Lataa vertailuraportti, jossa kaikki muutokset on merkitty."
         }
-      ]
+      ],
+      "badgeText": "Pikaopas"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Comparison for Helsinki Law Firms",
-      "content": "Legal professionals in Helsinki compare contract revisions without uploading privileged documents to cloud services."
+      "type": "compare_geo_targeting",
+      "title": "100 % suojattu paikallinen käsittely",
+      "content": "Kaikki toiminnot suoritetaan suoraan paikallisella laitteellasi. Käytämme edistynyttä WebAssembly-tekniikkaa asiakirjojen käsittelyyn lataamatta niitä koskaan ulkoisille palvelimille, mikä takaa täydellisen yksityisyyden.",
+      "badgeText": "Paikallinen käsittely"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Privileged Documents Stay Private",
-      "content": "Compare NDAs, contracts, and regulatory filings without any server interaction."
+      "type": "compare_privacy_security",
+      "title": "Etuoikeutetut asiakirjat pysyvät yksityisinä",
+      "content": "Vertaa NDA-sopimuksia, sopimuksia ja viranomaisilmoituksia ilman palvelinvuorovaikutusta.",
+      "badgeText": "Turvallisuus ensin"
     },
     {
-      "type": "organizer_performance",
-      "title": "Instant Side-by-Side Comparison",
-      "content": "Compare 100-page documents in seconds with highlighted differences rendered in-browser."
+      "type": "compare_performance",
+      "title": "Välitön vierekkäinen vertailu",
+      "content": "Vertaa 100-sivuisia asiakirjoja sekunneissa korostettuihin eroihin, jotka näkyvät selaimessa.",
+      "badgeText": "Salamannopeasti"
     }
   ],
   "faqs": [
     {
-      "q": "What types of differences are detected?",
-      "a": "Text additions, deletions, and formatting changes are highlighted."
+      "q": "Millaisia ​​eroja havaitaan?",
+      "a": "Tekstin lisäykset, poistot ja muotoilun muutokset näkyvät korostettuina."
     },
     {
-      "q": "Can I compare scanned PDFs?",
-      "a": "For scanned PDFs, use OCR first to extract text before comparing."
+      "q": "Voinko verrata skannattuja PDF-tiedostoja?",
+      "a": "Käytä skannatuissa PDF-tiedostoissa tekstin erottelua ennen vertailua."
     },
     {
-      "q": "Can I export the comparison?",
-      "a": "Yes, download a marked-up PDF showing all differences."
+      "q": "Voinko viedä vertailun?",
+      "a": "Kyllä, lataa merkitty PDF, joka näyttää kaikki erot."
     },
     {
-      "q": "How many versions can I compare?",
-      "a": "Two documents at a time in the side-by-side view."
+      "q": "Kuinka montaa versiota voin verrata?",
+      "a": "Kaksi asiakirjaa kerrallaan vierekkäisessä näkymässä."
     },
     {
-      "q": "Is this free?",
+      "q": "Onko tämä ilmainen?",
       "a": "Kyllä, täysin ilmainen."
     }
-  ]
+  ],
+  "faqTitle": "Usein kysytyt kysymykset",
+  "supportCenter": "Tukikeskus"
 }

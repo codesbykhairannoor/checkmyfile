@@ -1,67 +1,80 @@
 {
-  "title": "PDF to PowerPoint — Recover Editable Slides",
-  "h1": "Convert PDF to PowerPoint Presentation Offline",
-  "description": "Transform PDF documents back into editable .pptx presentations locally. No cloud needed. Perfect for users in New Delhi.",
+  "title": "पीडीएफ से पावरपॉइंट - संपादन योग्य स्लाइड पुनर्प्राप्त करें",
+  "h1": "पीडीएफ को पावरपॉइंट प्रेजेंटेशन ऑफ़लाइन में कनवर्ट करें",
+  "description": "पीडीएफ दस्तावेज़ों को स्थानीय स्तर पर संपादन योग्य .pptx प्रस्तुतियों में परिवर्तित करें। किसी बादल की जरूरत नहीं. नई दिल्ली के उपयोगकर्ताओं के लिए बिल्कुल सही।",
+  "buttonText": "पीपीटी में कनवर्ट करें",
+  "badges": [
+    "संपादन योग्य स्लाइड",
+    "प्रस्तुति पुनर्प्राप्ति",
+    "तेजी से रूपांतरण"
+  ],
+  "stats": [
+    "100%",
+    "स्थानीय",
+    "0",
+    "प्रतीक्षा समय"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF to PowerPoint Offline?",
-      "content": "Recovering slide content from a PDF for editing should not require uploading sensitive decks to a cloud service."
+      "title": "ऑफ़लाइन उपयोग क्यों करें?",
+      "content": "संपादन के लिए पीडीएफ से स्लाइड सामग्री को पुनर्प्राप्त करने के लिए क्लाउड सेवा पर संवेदनशील डेक अपलोड करने की आवश्यकता नहीं होनी चाहिए।"
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to PowerPoint",
+      "title": "कैसे उपयोग करें",
       "steps": [
         {
-          "title": "Upload PDF",
-          "description": "Select the PDF containing your slide content."
+          "title": "पीडीएफ अपलोड करें",
+          "description": "अपनी स्लाइड सामग्री वाली पीडीएफ का चयन करें।"
         },
         {
-          "title": "Map Pages to Slides",
-          "description": "Each PDF page becomes one editable slide."
+          "title": "पेजों को स्लाइड में मैप करें",
+          "description": "प्रत्येक पीडीएफ पृष्ठ एक संपादन योग्य स्लाइड बन जाता है।"
         },
         {
-          "title": "Download .pptx",
-          "description": "Get your fully editable PowerPoint presentation."
+          "title": ".pptx डाउनलोड करें",
+          "description": "अपनी पूर्णतः संपादन योग्य PowerPoint प्रस्तुति प्राप्त करें।"
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "Slide Recovery in New Delhi",
-      "content": "Presenters in New Delhi use our tool to recover and re-edit presentations from old PDF archives."
+      "title": "नई दिल्ली में स्लाइड रिकवरी",
+      "content": "नई दिल्ली में प्रस्तुतकर्ता पुराने पीडीएफ संग्रहों से प्रस्तुतियों को पुनर्प्राप्त करने और पुनः संपादित करने के लिए हमारे टूल का उपयोग करते हैं।"
     },
     {
       "type": "split_privacy_security",
-      "title": "Your Slides Are Never Exposed",
-      "content": "Confidential slide decks recovered and converted without any server interaction."
+      "title": "आपकी स्लाइडें कभी भी उजागर नहीं होतीं",
+      "content": "गोपनीय स्लाइड डेक को बिना किसी सर्वर इंटरैक्शन के पुनर्प्राप्त और परिवर्तित किया गया।"
     },
     {
       "type": "split_performance",
-      "title": "Convert Slides at Lightning Speed",
-      "content": "A 60-slide PDF converted to PowerPoint in under 10 seconds with zero upload time."
+      "title": "बिजली की गति से स्लाइड परिवर्तित करें",
+      "content": "एक 60-स्लाइड पीडीएफ को शून्य अपलोड समय के साथ 10 सेकंड से कम समय में पावरपॉइंट में परिवर्तित किया गया।"
     }
   ],
   "faqs": [
     {
-      "q": "Are slide layouts preserved?",
-      "a": "Content is mapped to slides; some layout adjustments may be needed."
+      "q": "क्या स्लाइड लेआउट संरक्षित हैं?",
+      "a": "सामग्री को स्लाइड पर मैप किया जाता है; कुछ लेआउट समायोजन की आवश्यकता हो सकती है."
     },
     {
-      "q": "Can I edit the slides after?",
-      "a": "Yes, the .pptx file is fully editable in PowerPoint or Google Slides."
+      "q": "क्या मैं इसके बाद स्लाइडों को संपादित कर सकता हूँ?",
+      "a": "हां, .pptx फ़ाइल PowerPoint या Google Slides में पूरी तरह से संपादन योग्य है।"
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No, convert as many pages as your RAM allows."
+      "q": "क्या कोई पृष्ठ सीमा है?",
+      "a": "नहीं, उतने ही पेज कनवर्ट करें जितनी आपकी रैम अनुमति देती है।"
     },
     {
-      "q": "Does it work with image-heavy PDFs?",
-      "a": "Yes, images are embedded in each slide."
+      "q": "क्या यह छवि-भारी पीडीएफ़ के साथ काम करता है?",
+      "a": "हाँ, प्रत्येक स्लाइड में छवियाँ अंतर्निहित हैं।"
     },
     {
-      "q": "Is this free?",
-      "a": "हाँ, पूरी तरह मुफ्त।"
+      "q": "क्या यह मुफ़्त है?",
+      "a": "हां, बिल्कुल मुफ्त।"
     }
-  ]
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न"
 }

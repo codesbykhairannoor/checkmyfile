@@ -1,7 +1,19 @@
 {
   "title": "Sign PDF Online — Draw Signature Offline",
   "h1": "Sign PDF Documents With Your Signature Without Uploading",
-  "description": "Draw, type, or upload your signature and place it on PDFs entirely in your browser. No cloud. Perfect for users in New York.",
+  "description": "Draw, type, or upload your signature and place it on PDFs entirely in your browser. No cloud. 100% secure local processing.",
+  "buttonText": "Sign PDF",
+  "badges": [
+    "Digital Signature",
+    "Draw or Type",
+    "Legally Binding"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "sign_hero_features",
@@ -28,8 +40,8 @@
     },
     {
       "type": "sign_geo_targeting",
-      "title": "Private Digital Signatures for New York",
-      "content": "Freelancers and businesses in New York sign contracts, NDAs, and agreements without exposing their identity or documents to any cloud service."
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy."
     },
     {
       "type": "sign_privacy_security",

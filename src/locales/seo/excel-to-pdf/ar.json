@@ -1,67 +1,85 @@
 {
-  "title": "Excel to PDF — Convert Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to PDF Securely",
-  "description": "Turn .xlsx and .csv files into crisp PDFs locally in your browser. Financial data stays on your device. Perfect for users in Riyadh.",
+  "title": "Excel إلى PDF — تحويل جداول البيانات دون الاتصال بالإنترنت",
+  "h1": "تحويل جداول بيانات Excel إلى PDF بشكل آمن",
+  "description": "قم بتحويل ملفات .xlsx و.csv إلى ملفات PDF واضحة محليًا في متصفحك. تبقى البيانات المالية على جهازك. معالجة محلية آمنة بنسبة 100%.",
+  "buttonText": "Convert Spreadsheet",
+  "badges": [
+    "التقارير المالية",
+    "الفواتير",
+    "صادرات البيانات"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Excel Offline?",
-      "content": "Spreadsheets often contain sensitive financial data. Our browser-based engine converts without any server involvement."
+      "type": "excel_hero_features",
+      "title": "لماذا تحويل Excel دون اتصال؟",
+      "content": "تحتوي جداول البيانات غالبًا على بيانات مالية حساسة. يقوم محركنا القائم على المتصفح بالتحويل دون أي مشاركة للخادم."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Export Excel as PDF",
+      "type": "excel_how_to_steps",
+      "title": "كيفية تصدير Excel بصيغة PDF",
       "steps": [
         {
-          "title": "Open Spreadsheet",
-          "description": "Select your .xlsx or .csv file."
+          "title": "فتح جدول البيانات",
+          "description": "حدد ملف .xlsx أو .csv."
         },
         {
-          "title": "Choose Sheet Range",
-          "description": "Pick which sheets or rows to include."
+          "title": "اختر نطاق الورقة",
+          "description": "اختر الأوراق أو الصفوف التي تريد تضمينها."
         },
         {
-          "title": "Export as PDF",
-          "description": "Download your spreadsheet as a clean PDF."
+          "title": "تصدير بصيغة PDF",
+          "description": "قم بتنزيل جدول البيانات الخاص بك كملف PDF نظيف."
         }
-      ]
+      ],
+      "badgeText": "الدليل السريع"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Excel to PDF for Riyadh Businesses",
-      "content": "Businesses in Riyadh use our tool to share financial reports without exposing raw spreadsheet data."
+      "type": "excel_geo_targeting",
+      "title": "معالجة محلية آمنة بنسبة 100%",
+      "content": "يتم تنفيذ جميع العمليات مباشرة على جهازك المحلي. نحن نستخدم تقنية WebAssembly المتقدمة لمعالجة مستنداتك دون تحميلها على خوادم خارجية، مما يضمن الخصوصية الكاملة.",
+      "badgeText": "المعالجة المحلية"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Protect Financial Spreadsheets",
-      "content": "Balance sheets, payroll data — all processed offline. Zero data sent to any third party."
+      "type": "excel_privacy_security",
+      "title": "حماية جداول البيانات المالية",
+      "content": "الميزانيات العمومية وبيانات الرواتب - تتم معالجتها جميعًا دون الاتصال بالإنترنت. صفر بيانات يتم إرسالها إلى أي طرف ثالث.",
+      "badgeText": "الأمن أولا"
     },
     {
-      "type": "combiner_performance",
-      "title": "Spreadsheet-to-PDF in Seconds",
-      "content": "No upload queue, no compression artifacts. Your spreadsheet renders natively in-browser."
+      "type": "excel_performance",
+      "title": "تحويل جدول البيانات إلى PDF في ثوانٍ",
+      "content": "لا توجد قائمة انتظار للتحميل، ولا توجد عناصر ضغط. يتم عرض جدول البيانات الخاص بك في المتصفح أصلاً.",
+      "badgeText": "بسرعة البرق"
     }
   ],
   "faqs": [
     {
-      "q": "Are all Excel formulas preserved?",
-      "a": "Yes, formula results are captured in the PDF snapshot."
+      "q": "هل تم الحفاظ على جميع صيغ Excel؟",
+      "a": "نعم، يتم التقاط نتائج الصيغة في لقطة PDF."
     },
     {
-      "q": "Can I convert multiple sheets?",
-      "a": "Yes, you can include all sheets or specific ones."
+      "q": "هل يمكنني تحويل أوراق متعددة؟",
+      "a": "نعم، يمكنك تضمين جميع الأوراق أو أوراق محددة."
     },
     {
-      "q": "What file types are supported?",
-      "a": ".xlsx, .xls, and .csv are all supported."
+      "q": "ما هي أنواع الملفات المدعومة؟",
+      "a": "يتم دعم كل من .xlsx، و.xls، و.csv."
     },
     {
-      "q": "Is this secure for financial data?",
-      "a": "Absolutely. The file never leaves your browser."
+      "q": "هل هذا آمن للبيانات المالية؟",
+      "a": "قطعاً. الملف لا يغادر متصفحك أبدًا."
     },
     {
-      "q": "Does it support graphs?",
-      "a": "نعم، مجاناً تماماً."
+      "q": "هل يدعم الرسوم البيانية؟",
+      "a": "يتم عرض المخططات والرسوم البيانية المضمنة في ملف PDF."
     }
-  ]
+  ],
+  "faqTitle": "الأسئلة المتداولة",
+  "supportCenter": "مركز الدعم"
 }

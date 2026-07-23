@@ -1,67 +1,78 @@
 {
-  "title": "Merge PDF - Combine Documents Offline",
-  "h1": "Merge PDF Files Instantly in Your Browser",
-  "description": "Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, perfect for users in Bucharest.",
+  "title": "Merge PDF - Combinați documente offline",
+  "h1": "Îmbinați fișierele PDF instantaneu în browser",
+  "description": "Combinați mai multe fișiere PDF într-un singur document utilizând WebAssembly pur partea client. Fără încărcări de fișiere, perfect pentru utilizatorii din New York.",
   "sections": [
     {
       "type": "merge_hero_features",
-      "title": "Why Merge PDF Offline?",
-      "content": "Instead of uploading sensitive documents to a server, our Merge PDF tool stitches your pages together directly in your browser. Complete privacy."
+      "title": "De ce să fuzionați PDF offline?",
+      "content": "În loc să încărcați documente sensibile pe un server, instrumentul nostru Merge PDF vă îmbină paginile direct în browser. Confidențialitate completă."
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Merge PDF Files",
+      "title": "Cum să îmbinați fișierele PDF",
       "steps": [
         {
-          "title": "Add Documents",
-          "description": "Select the PDFs you want to merge together."
+          "title": "Adăugați documente",
+          "description": "Selectați fișierele PDF pe care doriți să le îmbinați."
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop files to get the perfect sequence."
+          "title": "Reordonează paginile",
+          "description": "Trageți și plasați fișiere pentru a obține secvența perfectă."
         },
         {
-          "title": "Merge & Save",
-          "description": "Click merge and download your combined document instantly."
+          "title": "Îmbinați și salvați",
+          "description": "Faceți clic pe îmbinare și descărcați instantaneu documentul dvs. combinat."
         }
-      ]
+      ],
+      "badgeText": "Ghid rapid"
     },
     {
       "type": "merge_geo_targeting",
-      "title": "Seamless Merging for users in Bucharest, RO-B",
-      "content": "No matter if you are in Bucharest or traveling, combining documents takes zero milliseconds of upload time."
+      "title": "Procesare locală 100% sigură",
+      "content": "Toate operațiunile sunt efectuate direct pe dispozitivul local. Folosim tehnologie avansată WebAssembly pentru a vă procesa documentele fără a le încărca vreodată pe servere externe, asigurând confidențialitate completă.",
+      "badgeText": "Prelucrare locală"
     },
     {
       "type": "merge_privacy_security",
-      "title": "Enterprise-Grade Document Combining",
-      "content": "Merging contracts and invoices? Do it securely with our WASM engine. No traces left behind."
+      "title": "Combinarea documentelor de nivel Enterprise",
+      "content": "Fuzionarea contractelor și facturilor? Fă-o în siguranță cu motorul nostru WASM. Nu au lăsat urme în urmă.",
+      "badgeText": "Securitatea în primul rând"
     },
     {
       "type": "merge_performance",
-      "title": "Instant Combination",
-      "content": "Stitching PDFs locally means you can merge a 500-page document faster than you can upload it."
+      "title": "Combinație instantanee",
+      "content": "Asamblarea locală a PDF-urilor înseamnă că puteți îmbina un document de 500 de pagini mai rapid decât îl puteți încărca.",
+      "badgeText": "Rapid fulger"
     }
   ],
   "faqs": [
     {
-      "q": "Is merging PDFs completely free?",
-      "a": "Yes! Merge as many files as you want without paying a cent."
+      "q": "Fuzionarea PDF-urilor este complet gratuită?",
+      "a": "Da! Îmbinați câte fișiere doriți fără să plătiți un cent."
     },
     {
-      "q": "Are my merged files uploaded?",
-      "a": "No, all merging happens offline in your browser."
+      "q": "Fișierele mele îmbinate sunt încărcate?",
+      "a": "Nu, toate îmbinările au loc offline în browserul dvs."
     },
     {
-      "q": "Can I reorder the files before merging?",
-      "a": "Yes, just drag and drop the files in the preview window."
+      "q": "Pot reordona fișierele înainte de îmbinare?",
+      "a": "Da, doar trageți și plasați fișierele în fereastra de previzualizare."
     },
     {
-      "q": "Is there a limit on how many files I can merge?",
-      "a": "No artificial limits! Merge 10 or 100 files depending on your RAM."
+      "q": "Există o limită la câte fișiere pot îmbina?",
+      "a": "Fără limite artificiale! Îmbinați 10 sau 100 de fișiere, în funcție de RAM."
     },
     {
-      "q": "Does merging ruin the formatting?",
-      "a": "Not at all. The original layers and vector data are perfectly stitched together."
+      "q": "Fuziunea distruge formatarea?",
+      "a": "Deloc. Straturile originale și datele vectoriale sunt perfect îmbinate împreună."
     }
+  ],
+  "faqTitle": "Întrebări frecvente",
+  "supportCenter": "Centrul de suport",
+  "badges": [
+    "Latență server zero",
+    "Fără lățime de bandă de încărcare",
+    "Prelucrare instantanee"
   ]
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Image to PDF — Combine Photos Offline",
-  "h1": "Convert Images to PDF Without Uploading",
-  "description": "Turn JPG, PNG, and WebP images into a single PDF document in your browser. Your photos stay private. Perfect for users in Hanoi.",
+  "title": "Hình ảnh sang PDF — Kết hợp ảnh ngoại tuyến",
+  "h1": "Chuyển đổi hình ảnh sang PDF mà không cần tải lên",
+  "description": "Biến hình ảnh JPG, PNG và WebP thành một tài liệu PDF duy nhất trong trình duyệt của bạn. Ảnh của bạn luôn ở chế độ riêng tư. Xử lý cục bộ an toàn 100%.",
+  "buttonText": "Convert Images",
+  "badges": [
+    "Danh mục đầu tư",
+    "Quét ID",
+    "Album ảnh"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Images Offline?",
-      "content": "Photos contain location data and personal moments. Convert them to PDF without exposing them to any cloud service."
+      "type": "image_hero_features",
+      "title": "Tại sao chuyển đổi hình ảnh ngoại tuyến?",
+      "content": "Ảnh chứa dữ liệu vị trí và khoảnh khắc cá nhân. Chuyển đổi chúng sang PDF mà không để chúng tiếp xúc với bất kỳ dịch vụ đám mây nào."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Turn Images Into PDF",
+      "type": "image_how_to_steps",
+      "title": "Cách chuyển hình ảnh thành PDF",
       "steps": [
         {
-          "title": "Select Images",
-          "description": "Choose JPG, PNG, or WebP files from your device."
+          "title": "Chọn Hình Ảnh",
+          "description": "Chọn tệp JPG, PNG hoặc WebP từ thiết bị của bạn."
         },
         {
-          "title": "Arrange Order",
-          "description": "Drag to reorder images before generating the PDF."
+          "title": "Sắp xếp thứ tự",
+          "description": "Kéo để sắp xếp lại hình ảnh trước khi tạo tệp PDF."
         },
         {
-          "title": "Export PDF",
-          "description": "Download your image PDF in one click."
+          "title": "Xuất PDF",
+          "description": "Tải xuống bản PDF hình ảnh của bạn chỉ bằng một cú nhấp chuột."
         }
-      ]
+      ],
+      "badgeText": "Hướng dẫn nhanh"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Image to PDF for Hanoi Users",
-      "content": "Photographers and designers in Hanoi use our tool to package portfolios without cloud uploads."
+      "type": "image_geo_targeting",
+      "title": "Xử lý cục bộ an toàn 100%",
+      "content": "Tất cả các hoạt động được thực hiện trực tiếp trên thiết bị cục bộ của bạn. Chúng tôi sử dụng công nghệ WebAssembly tiên tiến để xử lý tài liệu của bạn mà không cần tải chúng lên máy chủ bên ngoài, đảm bảo quyền riêng tư hoàn toàn.",
+      "badgeText": "Xử lý cục bộ"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Photos Never Leave Your Device",
-      "content": "Personal photos, ID scans, medical images — all converted 100% locally without any server contact."
+      "type": "image_privacy_security",
+      "title": "Hình ảnh Không bao giờ rời khỏi thiết bị của bạn",
+      "content": "Ảnh cá nhân, bản quét ID, hình ảnh y tế - tất cả đều được chuyển đổi cục bộ 100% mà không cần bất kỳ liên hệ nào với máy chủ.",
+      "badgeText": "Bảo mật là trên hết"
     },
     {
-      "type": "combiner_performance",
-      "title": "Batch Convert Instantly",
-      "content": "Convert 50 images into a single PDF in under 5 seconds. No upload, no wait."
+      "type": "image_performance",
+      "title": "Chuyển đổi hàng loạt ngay lập tức",
+      "content": "Chuyển đổi 50 hình ảnh thành một tệp PDF trong vòng chưa đầy 5 giây. Không tải lên, không chờ đợi.",
+      "badgeText": "Nhanh như chớp"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are supported?",
-      "a": "JPG, JPEG, PNG, and WebP are all supported."
+      "q": "Những định dạng hình ảnh nào được hỗ trợ?",
+      "a": "JPG, JPEG, PNG và WebP đều được hỗ trợ."
     },
     {
-      "q": "Can I combine multiple images?",
-      "a": "Yes, select as many images as you want and reorder them."
+      "q": "Tôi có thể kết hợp nhiều hình ảnh không?",
+      "a": "Có, chọn bao nhiêu hình ảnh tùy thích và sắp xếp lại chúng."
     },
     {
-      "q": "Is image quality preserved?",
-      "a": "Yes, images are embedded at their original resolution."
+      "q": "Chất lượng hình ảnh có được giữ nguyên không?",
+      "a": "Có, hình ảnh được nhúng ở độ phân giải gốc."
     },
     {
-      "q": "Does it strip EXIF metadata?",
-      "a": "You can optionally strip EXIF data for privacy."
+      "q": "Nó có loại bỏ siêu dữ liệu EXIF ​​​​không?",
+      "a": "Bạn có thể tùy ý loại bỏ dữ liệu EXIF ​​​​để bảo mật."
     },
     {
-      "q": "Is there a limit on image count?",
-      "a": "Có, hoàn toàn miễn phí."
+      "q": "Có giới hạn về số lượng hình ảnh không?",
+      "a": "Không có giới hạn! Kết hợp hàng trăm hình ảnh thành một bản PDF."
     }
-  ]
+  ],
+  "faqTitle": "Câu hỏi thường gặp",
+  "supportCenter": "Trung tâm hỗ trợ"
 }

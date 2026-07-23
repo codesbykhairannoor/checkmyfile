@@ -1,67 +1,85 @@
 {
-  "title": "Redact PDF — Permanently Remove Sensitive Data",
-  "h1": "Permanently Redact Sensitive Information from PDFs Offline",
-  "description": "Black out sensitive text and images in PDFs entirely in your browser. No cloud risk. Critical for users in Helsinki.",
+  "title": "Muokkaa PDF - Poista pysyvästi arkaluonteiset tiedot",
+  "h1": "Poista pysyvästi arkaluonteiset tiedot PDF-tiedostoista offline-tilassa",
+  "description": "Peitä PDF-tiedostojen arkaluontoinen teksti ja kuvat kokonaan selaimessasi. Ei pilviriskiä. 100 % turvallinen paikallinen käsittely.",
+  "buttonText": "Redact Text",
+  "badges": [
+    "Pysyvä poisto",
+    "Pimennystiedot",
+    "Turvallinen editointi"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "redact_hero_features",
-      "title": "Why Redact PDFs Locally?",
-      "content": "Redacting means the content is classified. Uploading a document you need to hide defeats the whole purpose. Our tool runs 100% offline."
+      "title": "Miksi PDF-tiedostoja on vähennettävä paikallisesti?",
+      "content": "Redaktointi tarkoittaa, että sisältö on luokiteltu. Piilotettavan asiakirjan lataaminen epäonnistuu koko tarkoituksessa. Työkalumme toimii 100 % offline-tilassa."
     },
     {
       "type": "redact_how_to_steps",
-      "title": "How to Permanently Redact a PDF",
+      "title": "PDF-tiedoston muokkaaminen pysyvästi",
       "steps": [
         {
-          "title": "Open Sensitive Document",
-          "description": "Load the PDF with data that must be hidden."
+          "title": "Avaa arkaluonteinen asiakirja",
+          "description": "Lataa PDF-tiedosto datalla, joka on piilotettava."
         },
         {
-          "title": "Mark Redaction Areas",
-          "description": "Draw boxes over content to permanently erase."
+          "title": "Merkitse muokkausalueet",
+          "description": "Pyyhi pysyvästi piirtämällä laatikoita sisällön päälle."
         },
         {
-          "title": "Apply & Download",
-          "description": "Content is permanently deleted from the PDF structure."
+          "title": "Käytä ja lataa",
+          "description": "Sisältö poistetaan pysyvästi PDF-rakenteesta."
         }
-      ]
+      ],
+      "badgeText": "Pikaopas"
     },
     {
       "type": "redact_geo_targeting",
-      "title": "Court-Ready Redaction for Helsinki Law Firms",
-      "content": "Legal professionals in Helsinki prepare court documents with permanent, offline redaction that removes data from the PDF structure itself."
+      "title": "100 % suojattu paikallinen käsittely",
+      "content": "Kaikki toiminnot suoritetaan suoraan paikallisella laitteellasi. Käytämme edistynyttä WebAssembly-tekniikkaa asiakirjojen käsittelyyn lataamatta niitä koskaan ulkoisille palvelimille, mikä takaa täydellisen yksityisyyden.",
+      "badgeText": "Paikallinen käsittely"
     },
     {
       "type": "redact_privacy_security",
-      "title": "True Permanent Redaction — Not Just Black Boxes",
-      "content": "Unlike tools that merely cover text with black boxes, our redaction permanently deletes the underlying data from the PDF object structure."
+      "title": "Todellinen pysyvä editointi – ei vain mustia laatikoita",
+      "content": "Toisin kuin työkalut, jotka vain peittävät tekstin mustilla laatikoilla, muokkausmme poistaa pysyvästi alla olevat tiedot PDF-objektirakenteesta.",
+      "badgeText": "Turvallisuus ensin"
     },
     {
       "type": "redact_performance",
-      "title": "Redact Entire Documents Instantly",
-      "content": "Apply hundreds of permanent redactions to large documents in seconds, completely offline."
+      "title": "Poista kaikki asiakirjat välittömästi",
+      "content": "Tee satoja pysyviä muokkauksia suuriin asiakirjoihin sekunneissa, täysin offline-tilassa.",
+      "badgeText": "Salamannopeasti"
     }
   ],
   "faqs": [
     {
-      "q": "Is the redaction truly permanent?",
-      "a": "Yes, the underlying text and image data is permanently deleted from the PDF structure."
+      "q": "Onko muokkaus todella pysyvä?",
+      "a": "Kyllä, taustalla oleva teksti- ja kuvatiedot poistetaan pysyvästi PDF-rakenteesta."
     },
     {
-      "q": "Can I redact images too?",
-      "a": "Yes, both text regions and image areas can be permanently redacted."
+      "q": "Voinko myös muokata kuvia?",
+      "a": "Kyllä, sekä teksti- että kuva-alueet voidaan muokata pysyvästi."
     },
     {
-      "q": "Can I choose black or white cover?",
-      "a": "Yes, pick the redaction style that suits your document."
+      "q": "Voinko valita mustan tai valkoisen kannen?",
+      "a": "Kyllä, valitse asiakirjaasi sopiva muokkaustyyli."
     },
     {
-      "q": "Does this meet legal standards?",
-      "a": "Our redaction removes data at the PDF object level, meeting court requirements."
+      "q": "Täyttääkö tämä lakivaatimukset?",
+      "a": "Redaktsioonimme poistaa tiedot PDF-objektitasolla, mikä täyttää oikeuden vaatimukset."
     },
     {
-      "q": "Is this free?",
-      "a": "Kyllä, täysin ilmainen."
+      "q": "Onko tämä ilmainen?",
+      "a": "Kyllä, aina ilmainen."
     }
-  ]
+  ],
+  "faqTitle": "Usein kysytyt kysymykset",
+  "supportCenter": "Tukikeskus"
 }

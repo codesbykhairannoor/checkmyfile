@@ -1,67 +1,85 @@
 {
-  "title": "Add Page Numbers to PDF — Offline Number Stamp",
-  "h1": "Insert Page Numbers into PDF Documents Locally",
-  "description": "Stamp page numbers at the header or footer of your PDF entirely in your browser. No upload. Ideal for users in Helsinki.",
+  "title": "Lisää sivunumeroita PDF-tiedostoon — Offline-numeroleima",
+  "h1": "Lisää sivunumerot PDF-dokumentteihin paikallisesti",
+  "description": "Leimaa sivunumerot PDF-tiedoston ylä- tai alatunnisteeseen kokonaan selaimessasi. Nopea ja täysin turvallinen.",
+  "buttonText": "Add Page Numbers",
+  "badges": [
+    "Mukautettu sijainti",
+    "Ylä- ja alatunniste",
+    "Batesin numerointi"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Add Page Numbers Offline?",
-      "content": "Page numbers are a formatting step, not a reason to upload confidential documents to a cloud service."
+      "type": "pagenum_hero_features",
+      "title": "Miksi lisätä sivunumeroita offline-tilassa?",
+      "content": "Sivunumerot ovat muotoiluvaihe, eivät syy luottamuksellisten asiakirjojen lataamiseen pilvipalveluun."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Add Page Numbers",
+      "type": "pagenum_how_to_steps",
+      "title": "Sivunumeroiden lisääminen",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to number."
+          "title": "Avaa PDF",
+          "description": "Valitse PDF numeroon."
         },
         {
-          "title": "Configure Style",
-          "description": "Choose position, format (1/12, Page 1, i, ii…), and font."
+          "title": "Määritä tyyli",
+          "description": "Valitse sijainti, muoto (1/12, sivu 1, i, ii…) ja fontti."
         },
         {
-          "title": "Apply & Download",
-          "description": "Download your paginated PDF instantly."
+          "title": "Käytä ja lataa",
+          "description": "Lataa sivutettu PDF välittömästi."
         }
-      ]
+      ],
+      "badgeText": "Pikaopas"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Page Numbering for Helsinki Legal Docs",
-      "content": "Legal professionals in Helsinki number briefs and reports locally without cloud service dependency."
+      "type": "pagenum_geo_targeting",
+      "title": "100 % suojattu paikallinen käsittely",
+      "content": "Kaikki toiminnot suoritetaan suoraan paikallisella laitteellasi. Käytämme edistynyttä WebAssembly-tekniikkaa asiakirjojen käsittelyyn lataamatta niitä koskaan ulkoisille palvelimille, mikä takaa täydellisen yksityisyyden.",
+      "badgeText": "Paikallinen käsittely"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Internal Documents Stay Numbered & Private",
-      "content": "Add page numbers to contracts and confidential reports without any server involvement."
+      "type": "pagenum_privacy_security",
+      "title": "Sisäiset asiakirjat pysyvät numeroituina ja yksityisinä",
+      "content": "Lisää sivunumeroita sopimuksiin ja luottamuksellisiin raportteihin ilman palvelimen osallistumista.",
+      "badgeText": "Turvallisuus ensin"
     },
     {
-      "type": "organizer_performance",
-      "title": "Number a 1000-Page PDF Instantly",
-      "content": "Stamping page numbers locally takes milliseconds for any size document."
+      "type": "pagenum_performance",
+      "title": "Numeroi 1000-sivuinen PDF välittömästi",
+      "content": "Sivunumeroiden leimaaminen paikallisesti kestää millisekunteja kaikenkokoisille asiakirjoille.",
+      "badgeText": "Salamannopeasti"
     }
   ],
   "faqs": [
     {
-      "q": "What number formats are available?",
-      "a": "Arabic (1, 2, 3), Roman (i, ii, iii), and letter (a, b, c) formats."
+      "q": "Mitä numeromuotoja on saatavilla?",
+      "a": "Arabia (1, 2, 3), roomalainen (i, ii, iii) ja kirjain (a, b, c) muodossa."
     },
     {
-      "q": "Can I start from a custom number?",
-      "a": "Yes, set any starting page number."
+      "q": "Voinko aloittaa mukautetusta numerosta?",
+      "a": "Kyllä, aseta mikä tahansa aloitussivun numero."
     },
     {
-      "q": "Can I skip numbering the first page?",
-      "a": "Yes, set the page offset to skip cover pages."
+      "q": "Voinko ohittaa ensimmäisen sivun numeroimisen?",
+      "a": "Kyllä, aseta sivusiirto ohittaaksesi kansilehdet."
     },
     {
-      "q": "Where can I position numbers?",
-      "a": "Header-left, header-center, header-right, and same for footer."
+      "q": "Mihin voin sijoittaa numerot?",
+      "a": "Ylätunniste-vasen, otsikko-keskus, otsikko-oikea ja sama alatunnisteessa."
     },
     {
-      "q": "Is this free?",
-      "a": "Kyllä, täysin ilmainen."
+      "q": "Onko tämä ilmainen?",
+      "a": "Kyllä, aina ilmainen."
     }
-  ]
+  ],
+  "faqTitle": "Usein kysytyt kysymykset",
+  "supportCenter": "Tukikeskus"
 }

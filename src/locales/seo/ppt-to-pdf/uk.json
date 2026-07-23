@@ -1,67 +1,85 @@
 {
-  "title": "PowerPoint to PDF Converter — Offline & Free",
-  "h1": "Convert PowerPoint Presentations to PDF Instantly",
-  "description": "Convert .pptx presentations to high-quality PDFs directly in your browser. No cloud needed. Perfect for presenters in Kyiv.",
+  "title": "Конвертер PowerPoint у PDF — офлайн і безкоштовно",
+  "h1": "Миттєво конвертуйте презентації PowerPoint у PDF",
+  "description": "Перетворюйте презентації .pptx у високоякісні PDF-файли безпосередньо у вашому браузері. Хмара не потрібна. 100% безпечна локальна обробка.",
+  "buttonText": "Convert Slides",
+  "badges": [
+    "Засідання ради",
+    "Pitch Decks",
+    "Невипущені продукти"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Presentations Offline?",
-      "content": "Your slides may contain unreleased products or confidential strategies. Convert without risking data exposure."
+      "type": "ppt_hero_features",
+      "title": "Навіщо конвертувати презентації в автономному режимі?",
+      "content": "Ваші слайди можуть містити неопубліковані продукти або конфіденційні стратегії. Перетворюйте, не ризикуючи відкритим доступом до даних."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert PowerPoint to PDF",
+      "type": "ppt_how_to_steps",
+      "title": "Як конвертувати PowerPoint у PDF",
       "steps": [
         {
-          "title": "Load Presentation",
-          "description": "Select your .pptx file from your device."
+          "title": "Завантажити презентацію",
+          "description": "Виберіть файл .pptx на своєму пристрої."
         },
         {
-          "title": "Select Slide Range",
-          "description": "Include all slides or specific ones."
+          "title": "Виберіть діапазон слайдів",
+          "description": "Включити всі слайди або окремі слайди."
         },
         {
-          "title": "Download PDF",
-          "description": "Get your PDF with all formatting preserved."
+          "title": "Завантажити PDF",
+          "description": "Отримайте PDF зі збереженням усіх форматів."
         }
-      ]
+      ],
+      "badgeText": "Короткий посібник"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Presentation Conversion in Kyiv",
-      "content": "Presenters in Kyiv trust us to convert slide decks without leaking unreleased content to cloud servers."
+      "type": "ppt_geo_targeting",
+      "title": "100% безпечна локальна обробка",
+      "content": "Усі операції виконуються безпосередньо на локальному пристрої. Ми використовуємо передову технологію WebAssembly для обробки ваших документів, не завантажуючи їх на зовнішні сервери, забезпечуючи повну конфіденційність.",
+      "badgeText": "Локальна обробка"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Confidential Slides Stay Confidential",
-      "content": "Pre-launch product decks? Board presentations? Converted 100% locally without network access."
+      "type": "ppt_privacy_security",
+      "title": "Конфіденційні слайди Залишайтеся конфіденційними",
+      "content": "Колоди продуктів перед запуском? Презентації ради? Конвертовано на 100% локально без доступу до мережі.",
+      "badgeText": "Безпека перш за все"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Slide Export",
-      "content": "Convert 100-slide decks in seconds. No queue, no waiting, no upload bandwidth wasted."
+      "type": "ppt_performance",
+      "title": "Миттєвий експорт слайдів",
+      "content": "Перетворіть колоди зі 100 слайдів за секунди. Ні черги, ні очікування, ні пропускної здатності завантаження.",
+      "badgeText": "Блискавичний"
     }
   ],
   "faqs": [
     {
-      "q": "Are slide animations preserved?",
-      "a": "Animations are flattened into static PDF frames."
+      "q": "Чи зберігаються анімації слайдів?",
+      "a": "Анімації зводяться в статичні кадри PDF."
     },
     {
-      "q": "What resolution is the output?",
-      "a": "High-resolution rendering at 150 DPI by default."
+      "q": "Яка роздільна здатність виходу?",
+      "a": "За замовчуванням візуалізація з високою роздільною здатністю 150 DPI."
     },
     {
-      "q": "Can I convert selected slides only?",
-      "a": "Yes, specify slide ranges like 1-10 or 5,8,12."
+      "q": "Чи можна конвертувати лише вибрані слайди?",
+      "a": "Так, укажіть діапазони слайдів, наприклад 1-10 або 5,8,12."
     },
     {
-      "q": "Is .ppt (old format) supported?",
-      "a": "Yes, both .ppt and .pptx are supported."
+      "q": "Чи підтримується .ppt (старий формат)?",
+      "a": "Так, підтримуються як .ppt, так і .pptx."
     },
     {
-      "q": "Is this free to use?",
-      "a": "Так, повністю безкоштовно."
+      "q": "Це безкоштовне використання?",
+      "a": "Так, абсолютно безкоштовно, без водяних знаків."
     }
-  ]
+  ],
+  "faqTitle": "Часті запитання",
+  "supportCenter": "Центр підтримки"
 }

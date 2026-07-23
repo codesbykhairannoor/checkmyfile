@@ -1,67 +1,85 @@
 {
-  "title": "Excel to CSV Converter — Export Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to CSV Locally",
-  "description": "Export .xlsx files to clean .csv format entirely in your browser. No upload. Ideal for developers in Istanbul.",
+  "title": "Excel'den CSV'ye Dönüştürücü — Elektronik Tabloları Çevrimdışı Dışa Aktar",
+  "h1": "Excel Elektronik Tablolarını Yerel Olarak CSV'ye Dönüştürün",
+  "description": ".xlsx dosyalarını tamamen tarayıcınızda temiz .csv biçimine aktarın. Yükleme yok. %100 güvenli yerel işleme.",
+  "buttonText": "Convert to CSV",
+  "badges": [
+    "Ham Veri",
+    "Veritabanı İçe Aktarma",
+    "Hızlı İhracat"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Export to CSV Offline?",
-      "content": "Exporting spreadsheets to CSV for data pipelines should not expose your raw data to any external API."
+      "type": "excel_csv_hero_features",
+      "title": "Neden CSV'ye Çevrimdışı Aktarma Yapmalısınız?",
+      "content": "Veri hatları için e-tabloları CSV'ye aktarmak, ham verilerinizi herhangi bir harici API'ye maruz bırakmamalıdır."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Excel to CSV",
+      "type": "excel_csv_how_to_steps",
+      "title": "Excel'i CSV'ye Dönüştürme",
       "steps": [
         {
-          "title": "Open Excel File",
-          "description": "Select the .xlsx spreadsheet."
+          "title": "Excel Dosyasını Aç",
+          "description": ".xlsx e-tablosunu seçin."
         },
         {
-          "title": "Choose Sheet",
-          "description": "Pick which sheet to export as CSV."
+          "title": "Sayfa Seçin",
+          "description": "Hangi sayfanın CSV olarak dışa aktarılacağını seçin."
         },
         {
-          "title": "Download CSV",
-          "description": "Get your clean CSV file instantly."
+          "title": "CSV'yi İndirin",
+          "description": "Temiz CSV dosyanızı anında alın."
         }
-      ]
+      ],
+      "badgeText": "Hızlı Kılavuz"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Developer Tools for Istanbul",
-      "content": "Developers and data engineers in Istanbul export spreadsheets to CSV for pipelines without cloud intermediaries."
+      "type": "excel_csv_geo_targeting",
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Spreadsheet Data Stays Local",
-      "content": "Financial models and business data exported to CSV without any server-side processing."
+      "type": "excel_csv_privacy_security",
+      "title": "Elektronik Tablo Verileri Yerel Kalıyor",
+      "content": "Sunucu tarafında herhangi bir işlem yapılmadan CSV'ye aktarılan finansal modeller ve iş verileri.",
+      "badgeText": "Önce Güvenlik"
     },
     {
-      "type": "organizer_performance",
-      "title": "Export Any Spreadsheet Instantly",
-      "content": "Export a 50,000-row Excel file to CSV in under 1 second. All in-browser."
+      "type": "excel_csv_performance",
+      "title": "Herhangi Bir Elektronik Tabloyu Anında Dışa Aktarın",
+      "content": "50.000 satırlık bir Excel dosyasını 1 saniyeden kısa sürede CSV'ye aktarın. Hepsi tarayıcıda.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [
     {
-      "q": "Can I export multiple sheets?",
-      "a": "Yes, export each sheet as a separate CSV file."
+      "q": "Birden fazla sayfayı dışa aktarabilir miyim?",
+      "a": "Evet, her sayfayı ayrı bir CSV dosyası olarak dışa aktarın."
     },
     {
-      "q": "Is Excel formatting preserved in CSV?",
-      "a": "CSV is plain text; formatting is removed but all values are preserved."
+      "q": "Excel biçimlendirmesi CSV'de korunuyor mu?",
+      "a": "CSV düz metindir; biçimlendirme kaldırılır ancak tüm değerler korunur."
     },
     {
-      "q": "Can I choose the delimiter?",
-      "a": "Yes, choose comma, semicolon, or tab."
+      "q": "Sınırlayıcıyı seçebilir miyim?",
+      "a": "Evet, virgül, noktalı virgül veya sekmeyi seçin."
     },
     {
-      "q": "Are formulas exported as values?",
-      "a": "Yes, formula results (not formulas) are written to the CSV."
+      "q": "Formüller değer olarak dışa aktarılıyor mu?",
+      "a": "Evet, formül sonuçları (formüller değil) CSV'ye yazılır."
     },
     {
-      "q": "Is this free?",
+      "q": "Bu bedava mı?",
       "a": "Evet, tamamen ücretsiz."
     }
-  ]
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi"
 }

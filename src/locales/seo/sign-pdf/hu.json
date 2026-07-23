@@ -1,67 +1,85 @@
 {
-  "title": "Sign PDF Online — Draw Signature Offline",
-  "h1": "Sign PDF Documents With Your Signature Without Uploading",
-  "description": "Draw, type, or upload your signature and place it on PDFs entirely in your browser. No cloud. Perfect for users in Budapest.",
+  "title": "PDF aláírása online — Aláírás rajzolása offline",
+  "h1": "Aláírja a PDF dokumentumokat aláírásával feltöltés nélkül",
+  "description": "Rajzolja le, írja be vagy töltse fel aláírását, és helyezze el PDF-fájlokba a böngészőjében. Nincs felhő. 100%-ban biztonságos helyi feldolgozás.",
+  "buttonText": "Sign PDF",
+  "badges": [
+    "Digitális aláírás",
+    "Rajzolj vagy gépelj",
+    "Jogilag kötelező erejű"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "sign_hero_features",
-      "title": "Why Sign PDFs Locally?",
-      "content": "Your signature is your identity. Never upload your drawn signature or a private contract to a third-party cloud signing service."
+      "title": "Miért írjon alá PDF-eket helyben?",
+      "content": "Az aláírásod a személyazonosságod. Soha ne töltse fel rajzolt aláírását vagy magánszerződését harmadik fél felhőaláíró szolgáltatásába."
     },
     {
       "type": "sign_how_to_steps",
-      "title": "How to Sign a PDF in 3 Steps",
+      "title": "PDF aláírása 3 lépésben",
       "steps": [
         {
-          "title": "Create Your Signature",
-          "description": "Draw with mouse, type in signature font, or upload an image."
+          "title": "Aláírás létrehozása",
+          "description": "Rajzoljon egérrel, írja be az aláírás betűtípusát, vagy töltsön fel képet."
         },
         {
-          "title": "Place on Document",
-          "description": "Drag and resize your signature to the correct position."
+          "title": "Hely a dokumentumon",
+          "description": "Húzza át és méretezze át aláírását a megfelelő helyre."
         },
         {
-          "title": "Download Signed PDF",
-          "description": "Save your signed document immediately, no account needed."
+          "title": "Aláírt PDF letöltése",
+          "description": "Azonnal mentse el az aláírt dokumentumot, nincs szükség fiókra."
         }
-      ]
+      ],
+      "badgeText": "Gyors útmutató"
     },
     {
       "type": "sign_geo_targeting",
-      "title": "Private Digital Signatures for Budapest",
-      "content": "Freelancers and businesses in Budapest sign contracts, NDAs, and agreements without exposing their identity or documents to any cloud service."
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Minden művelet közvetlenül a helyi eszközön történik. Fejlett WebAssembly technológiát használunk a dokumentumok feldolgozásához anélkül, hogy azokat külső szerverekre feltöltenénk, így biztosítva a teljes adatvédelmet.",
+      "badgeText": "Helyi feldolgozás"
     },
     {
       "type": "sign_privacy_security",
-      "title": "Your Signature Identity Stays Private",
-      "content": "Your drawn signature and signed document are processed entirely in browser memory — never stored, never transmitted."
+      "title": "Aláíró személyazonossága privát marad",
+      "content": "A rajzolt aláírást és az aláírt dokumentumot teljes egészében a böngésző memóriája dolgozza fel – soha nem tárolja, nem továbbítja.",
+      "badgeText": "Első a biztonság"
     },
     {
       "type": "sign_performance",
-      "title": "Sign Any Document in Under 30 Seconds",
-      "content": "No account, no upload, no cloud. Draw, place, and download your signed PDF in under 30 seconds."
+      "title": "Bármilyen dokumentum aláírása 30 másodperc alatt",
+      "content": "Nincs fiók, nincs feltöltés, nincs felhő. Rajzolja le, helyezze el és töltse le aláírt PDF-jét 30 másodpercen belül.",
+      "badgeText": "Villámgyors"
     }
   ],
   "faqs": [
     {
-      "q": "How can I create my signature?",
-      "a": "Draw with your mouse, type your name in a signature font, or upload an image."
+      "q": "Hogyan hozhatom létre az aláírásomat?",
+      "a": "Rajzoljon az egérrel, írja be a nevét aláírási betűtípussal, vagy töltsön fel képet."
     },
     {
-      "q": "Can I sign multiple pages?",
-      "a": "Yes, place your signature on any or all pages."
+      "q": "Több oldalt is aláírhatok?",
+      "a": "Igen, helyezze el aláírását bármelyik vagy az összes oldalra."
     },
     {
-      "q": "Is the signature legally binding?",
-      "a": "Our tool applies a visual signature. For legally binding e-signatures, check your jurisdiction."
+      "q": "Az aláírás jogilag kötelező érvényű?",
+      "a": "Eszközünk vizuális aláírást alkalmaz. A jogilag kötelező erejű e-aláírásokért ellenőrizze a joghatóságát."
     },
     {
-      "q": "Can I resize the signature?",
-      "a": "Yes, drag the corners to resize it after placing."
+      "q": "Átméretezhetem az aláírást?",
+      "a": "Igen, húzza a sarkokat az átméretezéshez az elhelyezés után."
     },
     {
-      "q": "Is this free?",
+      "q": "Ez ingyenes?",
       "a": "Igen, teljesen ingyenes."
     }
-  ]
+  ],
+  "faqTitle": "Gyakran Ismételt Kérdések",
+  "supportCenter": "Támogatási Központ"
 }

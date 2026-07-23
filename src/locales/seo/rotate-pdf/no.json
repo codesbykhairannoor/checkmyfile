@@ -1,67 +1,85 @@
 {
-  "title": "Rotate PDF Pages — Fix Orientation Offline",
-  "h1": "Rotate PDF Pages to the Correct Orientation",
-  "description": "Fix upside-down or sideways PDF pages instantly in your browser. No upload. Perfect for users in Oslo.",
+  "title": "Roter PDF-sider — Fix Orientation Offline",
+  "h1": "Roter PDF-sider til riktig orientering",
+  "description": "Fiks opp-ned eller sideveis PDF-sider umiddelbart i nettleseren din. Rask og helt sikker.",
+  "buttonText": "Rotate Pages",
+  "badges": [
+    "Roter 90°/180°",
+    "Batchbehandling",
+    "Øyeblikkelig fiks"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Rotate PDFs Locally?",
-      "content": "Scanned documents often come out sideways. Fix their orientation instantly without uploading anything to the cloud."
+      "type": "rotate_hero_features",
+      "title": "Hvorfor rotere PDF-er lokalt?",
+      "content": "Skannede dokumenter kommer ofte ut sidelengs. Fiks deres orientering umiddelbart uten å laste opp noe til skyen."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Rotate PDF Pages",
+      "type": "rotate_how_to_steps",
+      "title": "Hvordan rotere PDF-sider",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page orientation."
+          "title": "Åpne PDF",
+          "description": "Last inn PDF-filen med feil sideretning."
         },
         {
-          "title": "Select Pages & Direction",
-          "description": "Choose pages to rotate and direction (90°, 180°, 270°)."
+          "title": "Velg sider og retning",
+          "description": "Velg sider å rotere og retning (90°, 180°, 270°)."
         },
         {
-          "title": "Download Fixed PDF",
-          "description": "Save the correctly oriented PDF immediately."
+          "title": "Last ned fast PDF",
+          "description": "Lagre den riktig orienterte PDF-filen umiddelbart."
         }
-      ]
+      ],
+      "badgeText": "Hurtigguide"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Rotation for Oslo Offices",
-      "content": "Office workers in Oslo fix scanner output orientation without relying on cloud services."
+      "type": "rotate_geo_targeting",
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle operasjoner utføres direkte på din lokale enhet. Vi bruker avansert WebAssembly-teknologi for å behandle dokumentene dine uten å laste dem opp til eksterne servere, noe som sikrer fullstendig personvern.",
+      "badgeText": "Lokal behandling"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Scanned Documents Stay Private",
-      "content": "Scanned medical or legal documents rotated locally without any server access."
+      "type": "rotate_privacy_security",
+      "title": "Skannede dokumenter forblir private",
+      "content": "Skannede medisinske eller juridiske dokumenter roterte lokalt uten servertilgang.",
+      "badgeText": "Sikkerhet først"
     },
     {
-      "type": "transform_performance",
-      "title": "Rotate Any PDF in Milliseconds",
-      "content": "Rotating 500 pages takes less than a second. No upload, no wait."
+      "type": "rotate_performance",
+      "title": "Roter hvilken som helst PDF i millisekunder",
+      "content": "Rotering av 500 sider tar mindre enn ett sekund. Ingen opplasting, ingen vent.",
+      "badgeText": "Lynrask"
     }
   ],
   "faqs": [
     {
-      "q": "Can I rotate individual pages?",
-      "a": "Yes, select specific pages or all at once."
+      "q": "Kan jeg rotere individuelle sider?",
+      "a": "Ja, velg bestemte sider eller alle samtidig."
     },
     {
-      "q": "What rotation angles are available?",
-      "a": "90°, 180°, and 270° clockwise and counter-clockwise."
+      "q": "Hvilke rotasjonsvinkler er tilgjengelige?",
+      "a": "90°, 180° og 270° med klokken og mot klokken."
     },
     {
-      "q": "Does rotation affect image quality?",
-      "a": "No, rotation is lossless — no re-encoding occurs."
+      "q": "Påvirker rotasjon bildekvaliteten?",
+      "a": "Nei, rotasjon er tapsfri - ingen omkoding skjer."
     },
     {
-      "q": "Can I undo a rotation?",
-      "a": "Yes, apply the reverse rotation before downloading."
+      "q": "Kan jeg angre en rotasjon?",
+      "a": "Ja, bruk omvendt rotasjon før du laster ned."
     },
     {
-      "q": "Is this free?",
+      "q": "Er dette gratis?",
       "a": "Ja, helt gratis."
     }
-  ]
+  ],
+  "faqTitle": "Ofte stilte spørsmål",
+  "supportCenter": "Støttesenter"
 }

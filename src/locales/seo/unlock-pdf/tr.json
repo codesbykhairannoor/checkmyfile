@@ -1,67 +1,85 @@
 {
-  "title": "Unlock PDF — Remove Password Offline",
-  "h1": "Remove PDF Password Protection Instantly in Your Browser",
-  "description": "Unlock password-protected PDFs locally if you know the password. 100% private. No upload. Perfect for users in Istanbul.",
+  "title": "PDF'nin Kilidini Aç — Şifreyi Çevrimdışı Kaldır",
+  "h1": "Tarayıcınızdan PDF Şifre Korumasını Anında Kaldırın",
+  "description": "Parolayı biliyorsanız parola korumalı PDF'lerin kilidini yerel olarak açın. %100 özel. Yükleme yok. %100 güvenli yerel işleme.",
+  "buttonText": "Unlock PDF",
+  "badges": [
+    "Şifreyi Kaldır",
+    "Anında Kilit Açma",
+    "Sunucu Günlüğü Yok"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "unlock_hero_features",
-      "title": "Why Unlock PDFs Locally?",
-      "content": "You have the password to your own file. Unlocking it should not require uploading sensitive documents to an external service."
+      "title": "Neden PDF'lerin Kilidini Yerel Olarak Açmanız Gerekiyor?",
+      "content": "Kendi dosyanızın şifresi var. Kilidini açmak, hassas belgelerin harici bir hizmete yüklenmesini gerektirmemelidir."
     },
     {
       "type": "unlock_how_to_steps",
-      "title": "How to Unlock a Protected PDF",
+      "title": "Korumalı bir PDF'nin Kilidi Nasıl Açılır",
       "steps": [
         {
-          "title": "Open Protected PDF",
-          "description": "Select the password-protected PDF."
+          "title": "Korumalı PDF'yi Aç",
+          "description": "Parola korumalı PDF'yi seçin."
         },
         {
-          "title": "Enter Your Password",
-          "description": "Provide the existing password — decryption stays in your browser."
+          "title": "Şifrenizi Girin",
+          "description": "Mevcut şifreyi girin; şifre çözme işlemi tarayıcınızda kalır."
         },
         {
-          "title": "Download Unlocked PDF",
-          "description": "Get your unlocked, fully accessible PDF instantly."
+          "title": "Kilitsiz PDF'yi İndir",
+          "description": "Kilidi açılmış, tamamen erişilebilir PDF'nizi anında alın."
         }
-      ]
+      ],
+      "badgeText": "Hızlı Kılavuz"
     },
     {
       "type": "unlock_geo_targeting",
-      "title": "Instant PDF Unlocking for Istanbul Users",
-      "content": "Users in Istanbul access their own password-protected files without sending decryption keys to any server."
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Your Password Never Leaves the Browser",
-      "content": "The decryption key and your document are processed entirely in browser memory — never transmitted to any server or service."
+      "title": "Şifreniz Tarayıcıdan Asla Çıkmaz",
+      "content": "Şifre çözme anahtarı ve belgeniz tamamen tarayıcı belleğinde işlenir; hiçbir zaman herhangi bir sunucuya veya hizmete iletilmez.",
+      "badgeText": "Önce Güvenlik"
     },
     {
       "type": "unlock_performance",
-      "title": "Instant Browser-Local Decryption",
-      "content": "AES decryption in your browser takes under a second — far faster than any cloud service with no upload wait."
+      "title": "Anında Tarayıcı-Yerel Şifre Çözme",
+      "content": "Tarayıcınızda AES şifre çözme işlemi bir saniyeden kısa sürer; yükleme beklemesi gerektirmeyen herhangi bir bulut hizmetinden çok daha hızlıdır.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [
     {
-      "q": "Does it work without the password?",
-      "a": "No, you must know the existing password to unlock."
+      "q": "Şifre olmadan çalışıyor mu?",
+      "a": "Hayır, kilidi açmak için mevcut şifreyi bilmeniz gerekir."
     },
     {
-      "q": "Can I unlock permissions-restricted PDFs?",
-      "a": "Yes, permission restrictions are removed after password verification."
+      "q": "İzinleri kısıtlı PDF'lerin kilidini açabilir miyim?",
+      "a": "Evet, şifre doğrulamasının ardından izin kısıtlamaları kaldırılır."
     },
     {
-      "q": "Is the decryption process secure?",
-      "a": "All decryption happens in your browser memory; nothing is transmitted."
+      "q": "Şifre çözme işlemi güvenli mi?",
+      "a": "Tüm şifre çözme işlemleri tarayıcınızın belleğinde gerçekleşir; hiçbir şey iletilmiyor."
     },
     {
-      "q": "What if the password is wrong?",
-      "a": "You will see an error and can try again with the correct password."
+      "q": "Şifre yanlışsa ne olur?",
+      "a": "Bir hata göreceksiniz ve doğru şifreyle tekrar deneyebilirsiniz."
     },
     {
-      "q": "Is this free?",
+      "q": "Bu bedava mı?",
       "a": "Evet, tamamen ücretsiz."
     }
-  ]
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi"
 }

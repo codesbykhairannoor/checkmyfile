@@ -1,67 +1,85 @@
 {
-  "title": "Reverse PDF — Flip Page Order Offline",
-  "h1": "Reverse the Page Order of Any PDF Locally",
-  "description": "Flip the page sequence of PDF documents entirely in your browser. No upload, instant result. Great for users in Hanoi.",
+  "title": "Đảo ngược PDF — Thứ tự lật trang ngoại tuyến",
+  "h1": "Đảo ngược thứ tự trang của bất kỳ tệp PDF nào cục bộ",
+  "description": "Lật chuỗi trang của tài liệu PDF hoàn toàn trong trình duyệt của bạn. Không tải lên, kết quả ngay lập tức. Xử lý cục bộ an toàn 100%.",
+  "buttonText": "Reverse Order",
+  "badges": [
+    "Đảo ngược tất cả các trang",
+    "Sửa lỗi quét",
+    "Một cú nhấp chuột"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Reverse PDF Page Order Offline?",
-      "content": "When a scanner outputs pages in reverse, you need a quick local fix — not a cloud upload of your entire document."
+      "type": "reverse_hero_features",
+      "title": "Tại sao đảo ngược thứ tự trang PDF ngoại tuyến?",
+      "content": "Khi máy quét xuất ra các trang ngược lại, bạn cần khắc phục cục bộ nhanh chóng — chứ không phải tải toàn bộ tài liệu lên đám mây."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Reverse PDF Page Order",
+      "type": "reverse_how_to_steps",
+      "title": "Cách đảo ngược thứ tự trang PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF with incorrect page order."
+          "title": "Mở PDF",
+          "description": "Chọn tệp PDF có thứ tự trang không chính xác."
         },
         {
-          "title": "Confirm Reversal",
-          "description": "Preview the new first and last page."
+          "title": "Xác nhận đảo ngược",
+          "description": "Xem trước trang đầu tiên và trang cuối cùng mới."
         },
         {
-          "title": "Download Reversed PDF",
-          "description": "Get the reordered PDF instantly."
+          "title": "Tải xuống bản PDF đảo ngược",
+          "description": "Nhận bản PDF được sắp xếp lại ngay lập tức."
         }
-      ]
+      ],
+      "badgeText": "Hướng dẫn nhanh"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Page Order Fix for Hanoi Users",
-      "content": "Office users in Hanoi fix scanner reversal issues instantly without cloud uploads."
+      "type": "reverse_geo_targeting",
+      "title": "Xử lý cục bộ an toàn 100%",
+      "content": "Tất cả các hoạt động được thực hiện trực tiếp trên thiết bị cục bộ của bạn. Chúng tôi sử dụng công nghệ WebAssembly tiên tiến để xử lý tài liệu của bạn mà không cần tải chúng lên máy chủ bên ngoài, đảm bảo quyền riêng tư hoàn toàn.",
+      "badgeText": "Xử lý cục bộ"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Documents Never Leave Your Device",
-      "content": "Reversed contracts, reports, and records are processed entirely in browser memory."
+      "type": "reverse_privacy_security",
+      "title": "Tài liệu không bao giờ rời khỏi thiết bị của bạn",
+      "content": "Hợp đồng, báo cáo và hồ sơ đảo ngược được xử lý hoàn toàn trong bộ nhớ trình duyệt.",
+      "badgeText": "Bảo mật là trên hết"
     },
     {
-      "type": "transform_performance",
-      "title": "Reverse Any PDF in Seconds",
-      "content": "Reversing a 1000-page document takes milliseconds. All in your browser."
+      "type": "reverse_performance",
+      "title": "Đảo ngược bất kỳ tệp PDF nào trong vài giây",
+      "content": "Đảo ngược tài liệu 1000 trang mất một phần nghìn giây. Tất cả trong trình duyệt của bạn.",
+      "badgeText": "Nhanh như chớp"
     }
   ],
   "faqs": [
     {
-      "q": "Does this reverse all pages?",
-      "a": "Yes, the full page order is flipped."
+      "q": "Điều này có đảo ngược tất cả các trang không?",
+      "a": "Có, thứ tự trang đầy đủ bị lật."
     },
     {
-      "q": "Can I select a range to reverse?",
-      "a": "Yes, specify start and end pages to reverse selectively."
+      "q": "Tôi có thể chọn một phạm vi để đảo ngược không?",
+      "a": "Có, chỉ định trang bắt đầu và trang kết thúc để đảo ngược có chọn lọc."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "No, reversal is a structural operation with no quality loss."
+      "q": "Chất lượng có bị ảnh hưởng không?",
+      "a": "Không, đảo ngược là một hoạt động có cấu trúc không làm giảm chất lượng."
     },
     {
-      "q": "Can I undo?",
-      "a": "Apply reversal again to undo."
+      "q": "Tôi có thể hoàn tác được không?",
+      "a": "Áp dụng đảo ngược một lần nữa để hoàn tác."
     },
     {
-      "q": "Is this free?",
-      "a": "Có, hoàn toàn miễn phí."
+      "q": "Cái này có miễn phí không?",
+      "a": "Có, luôn miễn phí."
     }
-  ]
+  ],
+  "faqTitle": "Câu hỏi thường gặp",
+  "supportCenter": "Trung tâm hỗ trợ"
 }

@@ -1,15 +1,27 @@
 {
   "title": "Excel to PDF — Convert Spreadsheets Offline",
   "h1": "Convert Excel Spreadsheets to PDF Securely",
-  "description": "Turn .xlsx and .csv files into crisp PDFs locally in your browser. Financial data stays on your device. Perfect for users in New York.",
+  "description": "Turn .xlsx and .csv files into crisp PDFs locally in your browser. Financial data stays on your device. 100% secure local processing.",
+  "buttonText": "Convert Spreadsheet",
+  "badges": [
+    "Financial Reports",
+    "Invoices",
+    "Data Exports"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
+      "type": "excel_hero_features",
       "title": "Why Convert Excel Offline?",
       "content": "Spreadsheets often contain sensitive financial data. Our browser-based engine converts without any server involvement."
     },
     {
-      "type": "combiner_how_to_steps",
+      "type": "excel_how_to_steps",
       "title": "How to Export Excel as PDF",
       "steps": [
         {
@@ -27,17 +39,17 @@
       ]
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Excel to PDF for New York Businesses",
-      "content": "Businesses in New York use our tool to share financial reports without exposing raw spreadsheet data."
+      "type": "excel_geo_targeting",
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy."
     },
     {
-      "type": "combiner_privacy_security",
+      "type": "excel_privacy_security",
       "title": "Protect Financial Spreadsheets",
       "content": "Balance sheets, payroll data — all processed offline. Zero data sent to any third party."
     },
     {
-      "type": "combiner_performance",
+      "type": "excel_performance",
       "title": "Spreadsheet-to-PDF in Seconds",
       "content": "No upload queue, no compression artifacts. Your spreadsheet renders natively in-browser."
     }

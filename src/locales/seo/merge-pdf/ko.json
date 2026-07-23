@@ -1,67 +1,78 @@
 {
-  "title": "Merge PDF - Combine Documents Offline",
-  "h1": "Merge PDF Files Instantly in Your Browser",
-  "description": "Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, perfect for users in Seoul.",
+  "title": "PDF 병합 - 오프라인으로 문서 결합",
+  "h1": "브라우저에서 PDF 파일을 즉시 병합",
+  "description": "순수 클라이언트 측 WebAssembly를 사용하여 여러 PDF 파일을 단일 문서로 결합합니다. 파일 업로드가 없으므로 뉴욕 사용자에게 적합합니다.",
   "sections": [
     {
       "type": "merge_hero_features",
-      "title": "Why Merge PDF Offline?",
-      "content": "Instead of uploading sensitive documents to a server, our Merge PDF tool stitches your pages together directly in your browser. Complete privacy."
+      "title": "PDF를 오프라인으로 병합하는 이유는 무엇입니까?",
+      "content": "민감한 문서를 서버에 업로드하는 대신 PDF 병합 도구를 사용하면 브라우저에서 직접 페이지를 연결할 수 있습니다. 완전한 프라이버시."
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Merge PDF Files",
+      "title": "PDF 파일을 병합하는 방법",
       "steps": [
         {
-          "title": "Add Documents",
-          "description": "Select the PDFs you want to merge together."
+          "title": "문서 추가",
+          "description": "함께 병합하려는 PDF를 선택합니다."
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop files to get the perfect sequence."
+          "title": "페이지 재정렬",
+          "description": "완벽한 시퀀스를 얻으려면 파일을 드래그 앤 드롭하세요."
         },
         {
-          "title": "Merge & Save",
-          "description": "Click merge and download your combined document instantly."
+          "title": "병합 및 저장",
+          "description": "병합을 클릭하고 결합된 문서를 즉시 다운로드하세요."
         }
-      ]
+      ],
+      "badgeText": "빠른 가이드"
     },
     {
       "type": "merge_geo_targeting",
-      "title": "Seamless Merging for users in Seoul, KR-11",
-      "content": "No matter if you are in Seoul or traveling, combining documents takes zero milliseconds of upload time."
+      "title": "100% 안전한 로컬 처리",
+      "content": "모든 작업은 로컬 장치에서 직접 수행됩니다. 우리는 고급 WebAssembly 기술을 사용하여 문서를 외부 서버에 업로드하지 않고 처리하여 완벽한 개인 정보 보호를 보장합니다.",
+      "badgeText": "로컬 처리"
     },
     {
       "type": "merge_privacy_security",
-      "title": "Enterprise-Grade Document Combining",
-      "content": "Merging contracts and invoices? Do it securely with our WASM engine. No traces left behind."
+      "title": "엔터프라이즈급 문서 결합",
+      "content": "계약서와 송장을 병합하시겠습니까? WASM 엔진으로 안전하게 수행하세요. 흔적이 남지 않았습니다.",
+      "badgeText": "보안 우선"
     },
     {
       "type": "merge_performance",
-      "title": "Instant Combination",
-      "content": "Stitching PDFs locally means you can merge a 500-page document faster than you can upload it."
+      "title": "즉석 조합",
+      "content": "PDF를 로컬에서 연결하면 500페이지 문서를 업로드하는 것보다 더 빠르게 병합할 수 있습니다.",
+      "badgeText": "번개처럼 빠르게"
     }
   ],
   "faqs": [
     {
-      "q": "Is merging PDFs completely free?",
-      "a": "Yes! Merge as many files as you want without paying a cent."
+      "q": "PDF 병합은 완전히 무료인가요?",
+      "a": "예! 한 푼도 지불하지 않고 원하는 만큼 많은 파일을 병합하세요."
     },
     {
-      "q": "Are my merged files uploaded?",
-      "a": "No, all merging happens offline in your browser."
+      "q": "병합된 파일이 업로드되나요?",
+      "a": "아니요, 모든 병합은 브라우저에서 오프라인으로 이루어집니다."
     },
     {
-      "q": "Can I reorder the files before merging?",
-      "a": "Yes, just drag and drop the files in the preview window."
+      "q": "병합하기 전에 파일 순서를 변경할 수 있나요?",
+      "a": "예, 미리보기 창에 파일을 끌어서 놓기만 하면 됩니다."
     },
     {
-      "q": "Is there a limit on how many files I can merge?",
-      "a": "No artificial limits! Merge 10 or 100 files depending on your RAM."
+      "q": "병합할 수 있는 파일 수에 제한이 있나요?",
+      "a": "인위적인 제한은 없습니다! RAM에 따라 10개 또는 100개의 파일을 병합합니다."
     },
     {
-      "q": "Does merging ruin the formatting?",
-      "a": "Not at all. The original layers and vector data are perfectly stitched together."
+      "q": "병합하면 서식이 손상되나요?",
+      "a": "별말씀을요. 원본 레이어와 벡터 데이터가 완벽하게 결합되었습니다."
     }
+  ],
+  "faqTitle": "자주 묻는 질문",
+  "supportCenter": "지원 센터",
+  "badges": [
+    "서버 지연 시간 없음",
+    "업로드 대역폭 없음",
+    "즉각적인 처리"
   ]
 }

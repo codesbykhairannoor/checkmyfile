@@ -1,67 +1,85 @@
 {
-  "title": "Image to PDF — Combine Photos Offline",
-  "h1": "Convert Images to PDF Without Uploading",
-  "description": "Turn JPG, PNG, and WebP images into a single PDF document in your browser. Your photos stay private. Perfect for users in Istanbul.",
+  "title": "Görüntüyü PDF'ye Dönüştürme — Fotoğrafları Çevrimdışı Birleştir",
+  "h1": "Görüntüleri Yüklemeden PDF'ye Dönüştürün",
+  "description": "JPG, PNG ve WebP görsellerini tarayıcınızda tek bir PDF belgesine dönüştürün. Fotoğraflarınız gizli kalır. %100 güvenli yerel işleme.",
+  "buttonText": "Convert Images",
+  "badges": [
+    "Portfolyolar",
+    "Kimlik Taramaları",
+    "Fotoğraf Albümleri"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Images Offline?",
-      "content": "Photos contain location data and personal moments. Convert them to PDF without exposing them to any cloud service."
+      "type": "image_hero_features",
+      "title": "Neden Görüntüleri Çevrimdışına Dönüştürmelisiniz?",
+      "content": "Fotoğraflar konum verilerini ve kişisel anları içerir. Bunları herhangi bir bulut hizmetine maruz bırakmadan PDF'ye dönüştürün."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Turn Images Into PDF",
+      "type": "image_how_to_steps",
+      "title": "Görüntüler PDF'ye Nasıl Dönüştürülür",
       "steps": [
         {
-          "title": "Select Images",
-          "description": "Choose JPG, PNG, or WebP files from your device."
+          "title": "Görselleri Seçin",
+          "description": "Cihazınızdan JPG, PNG veya WebP dosyalarını seçin."
         },
         {
-          "title": "Arrange Order",
-          "description": "Drag to reorder images before generating the PDF."
+          "title": "Siparişi Düzenle",
+          "description": "PDF'yi oluşturmadan önce görüntüleri yeniden sıralamak için sürükleyin."
         },
         {
-          "title": "Export PDF",
-          "description": "Download your image PDF in one click."
+          "title": "PDF'yi Dışa Aktar",
+          "description": "Tek tıklamayla görsel PDF'nizi indirin."
         }
-      ]
+      ],
+      "badgeText": "Hızlı Kılavuz"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Image to PDF for Istanbul Users",
-      "content": "Photographers and designers in Istanbul use our tool to package portfolios without cloud uploads."
+      "type": "image_geo_targeting",
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Photos Never Leave Your Device",
-      "content": "Personal photos, ID scans, medical images — all converted 100% locally without any server contact."
+      "type": "image_privacy_security",
+      "title": "Fotoğraflar Cihazınızdan Asla Ayrılmayın",
+      "content": "Kişisel fotoğraflar, kimlik taramaları, tıbbi görüntüler; hepsi herhangi bir sunucu bağlantısı olmadan %100 yerel olarak dönüştürülür.",
+      "badgeText": "Önce Güvenlik"
     },
     {
-      "type": "combiner_performance",
-      "title": "Batch Convert Instantly",
-      "content": "Convert 50 images into a single PDF in under 5 seconds. No upload, no wait."
+      "type": "image_performance",
+      "title": "Anında Toplu Dönüştürme",
+      "content": "50 görüntüyü 5 saniyeden kısa sürede tek bir PDF'ye dönüştürün. Yükleme yok, bekleme yok.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are supported?",
-      "a": "JPG, JPEG, PNG, and WebP are all supported."
+      "q": "Hangi resim formatları destekleniyor?",
+      "a": "JPG, JPEG, PNG ve WebP'nin tümü desteklenir."
     },
     {
-      "q": "Can I combine multiple images?",
-      "a": "Yes, select as many images as you want and reorder them."
+      "q": "Birden fazla görüntüyü birleştirebilir miyim?",
+      "a": "Evet, istediğiniz kadar resim seçin ve yeniden sıralayın."
     },
     {
-      "q": "Is image quality preserved?",
-      "a": "Yes, images are embedded at their original resolution."
+      "q": "Görüntü kalitesi korunuyor mu?",
+      "a": "Evet, resimler orijinal çözünürlüklerinde gömülür."
     },
     {
-      "q": "Does it strip EXIF metadata?",
-      "a": "You can optionally strip EXIF data for privacy."
+      "q": "EXIF meta verilerini siliyor mu?",
+      "a": "İsteğe bağlı olarak gizlilik için EXIF ​​verilerini kaldırabilirsiniz."
     },
     {
-      "q": "Is there a limit on image count?",
-      "a": "Evet, tamamen ücretsiz."
+      "q": "Resim sayısında bir sınır var mı?",
+      "a": "Sınır yok! Yüzlerce görüntüyü tek bir PDF'de birleştirin."
     }
-  ]
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi"
 }

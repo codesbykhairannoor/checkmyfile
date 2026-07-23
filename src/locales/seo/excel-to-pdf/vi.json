@@ -1,67 +1,85 @@
 {
-  "title": "Excel to PDF — Convert Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to PDF Securely",
-  "description": "Turn .xlsx and .csv files into crisp PDFs locally in your browser. Financial data stays on your device. Perfect for users in Hanoi.",
+  "title": "Excel sang PDF — Chuyển đổi bảng tính ngoại tuyến",
+  "h1": "Chuyển đổi bảng tính Excel sang PDF một cách an toàn",
+  "description": "Biến các tệp .xlsx và .csv thành các tệp PDF sắc nét cục bộ trong trình duyệt của bạn. Dữ liệu tài chính vẫn còn trên thiết bị của bạn. Xử lý cục bộ an toàn 100%.",
+  "buttonText": "Convert Spreadsheet",
+  "badges": [
+    "Báo cáo tài chính",
+    "Hóa đơn",
+    "Xuất dữ liệu"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Excel Offline?",
-      "content": "Spreadsheets often contain sensitive financial data. Our browser-based engine converts without any server involvement."
+      "type": "excel_hero_features",
+      "title": "Tại sao chuyển đổi Excel ngoại tuyến?",
+      "content": "Bảng tính thường chứa dữ liệu tài chính nhạy cảm. Công cụ dựa trên trình duyệt của chúng tôi chuyển đổi mà không cần bất kỳ sự tham gia nào của máy chủ."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Export Excel as PDF",
+      "type": "excel_how_to_steps",
+      "title": "Cách xuất Excel dưới dạng PDF",
       "steps": [
         {
-          "title": "Open Spreadsheet",
-          "description": "Select your .xlsx or .csv file."
+          "title": "Mở bảng tính",
+          "description": "Chọn tệp .xlsx hoặc .csv của bạn."
         },
         {
-          "title": "Choose Sheet Range",
-          "description": "Pick which sheets or rows to include."
+          "title": "Chọn phạm vi trang tính",
+          "description": "Chọn trang tính hoặc hàng để đưa vào."
         },
         {
-          "title": "Export as PDF",
-          "description": "Download your spreadsheet as a clean PDF."
+          "title": "Xuất dưới dạng PDF",
+          "description": "Tải xuống bảng tính của bạn dưới dạng PDF sạch."
         }
-      ]
+      ],
+      "badgeText": "Hướng dẫn nhanh"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Excel to PDF for Hanoi Businesses",
-      "content": "Businesses in Hanoi use our tool to share financial reports without exposing raw spreadsheet data."
+      "type": "excel_geo_targeting",
+      "title": "Xử lý cục bộ an toàn 100%",
+      "content": "Tất cả các hoạt động được thực hiện trực tiếp trên thiết bị cục bộ của bạn. Chúng tôi sử dụng công nghệ WebAssembly tiên tiến để xử lý tài liệu của bạn mà không cần tải chúng lên máy chủ bên ngoài, đảm bảo quyền riêng tư hoàn toàn.",
+      "badgeText": "Xử lý cục bộ"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Protect Financial Spreadsheets",
-      "content": "Balance sheets, payroll data — all processed offline. Zero data sent to any third party."
+      "type": "excel_privacy_security",
+      "title": "Bảo vệ bảng tính tài chính",
+      "content": "Bảng cân đối kế toán, dữ liệu bảng lương - tất cả đều được xử lý ngoại tuyến. Không có dữ liệu nào được gửi cho bất kỳ bên thứ ba nào.",
+      "badgeText": "Bảo mật là trên hết"
     },
     {
-      "type": "combiner_performance",
-      "title": "Spreadsheet-to-PDF in Seconds",
-      "content": "No upload queue, no compression artifacts. Your spreadsheet renders natively in-browser."
+      "type": "excel_performance",
+      "title": "Bảng tính sang PDF trong vài giây",
+      "content": "Không có hàng đợi tải lên, không có tạo phẩm nén. Bảng tính của bạn hiển thị nguyên bản trong trình duyệt.",
+      "badgeText": "Nhanh như chớp"
     }
   ],
   "faqs": [
     {
-      "q": "Are all Excel formulas preserved?",
-      "a": "Yes, formula results are captured in the PDF snapshot."
+      "q": "Có phải tất cả các công thức Excel đều được giữ nguyên không?",
+      "a": "Có, kết quả công thức được ghi lại trong ảnh chụp nhanh PDF."
     },
     {
-      "q": "Can I convert multiple sheets?",
-      "a": "Yes, you can include all sheets or specific ones."
+      "q": "Tôi có thể chuyển đổi nhiều tờ không?",
+      "a": "Có, bạn có thể bao gồm tất cả các trang tính hoặc những trang cụ thể."
     },
     {
-      "q": "What file types are supported?",
-      "a": ".xlsx, .xls, and .csv are all supported."
+      "q": "Những loại tập tin được hỗ trợ?",
+      "a": ".xlsx, .xls và .csv đều được hỗ trợ."
     },
     {
-      "q": "Is this secure for financial data?",
-      "a": "Absolutely. The file never leaves your browser."
+      "q": "Điều này có an toàn cho dữ liệu tài chính không?",
+      "a": "Tuyệt đối. Tệp không bao giờ rời khỏi trình duyệt của bạn."
     },
     {
-      "q": "Does it support graphs?",
-      "a": "Có, hoàn toàn miễn phí."
+      "q": "Nó có hỗ trợ đồ thị không?",
+      "a": "Biểu đồ và đồ thị nhúng được hiển thị dưới dạng PDF."
     }
-  ]
+  ],
+  "faqTitle": "Câu hỏi thường gặp",
+  "supportCenter": "Trung tâm hỗ trợ"
 }

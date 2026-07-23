@@ -1,0 +1,85 @@
+{
+  "title": "Ta bort sidor från PDF — Ta bort PDF-sidor offline",
+  "h1": "Ta bort sidor från PDF direkt",
+  "description": "Ta bort oönskade sidor från din PDF-fil säkert i din webbläsare. Snabbt och helt säkert.",
+  "buttonText": "Remove Pages",
+  "badges": [
+    "Välj & ta bort",
+    "Visual Editor",
+    "Noll latens"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "remove_hero_features",
+      "title": "Varför ta bort sidor lokalt?",
+      "content": "Att ta bort känsliga eller onödiga sidor från ditt dokument bör göras på din enhet, inte på en server. Vi garanterar 100 % integritet."
+    },
+    {
+      "type": "remove_how_to_steps",
+      "title": "Hur man tar bort PDF-sidor",
+      "steps": [
+        {
+          "title": "Öppna PDF",
+          "description": "Ladda PDF-filen du vill rensa."
+        },
+        {
+          "title": "Välj sidor att ta bort",
+          "description": "Håll muspekaren över sidor och klicka på papperskorgen för att markera dem för radering."
+        },
+        {
+          "title": "Exportera ren PDF",
+          "description": "Ladda ner din nya PDF utan de raderade sidorna."
+        }
+      ],
+      "badgeText": "Snabbguide"
+    },
+    {
+      "type": "remove_geo_targeting",
+      "title": "100 % säker lokal bearbetning",
+      "content": "Alla operationer utförs direkt på din lokala enhet. Vi använder avancerad WebAssembly-teknik för att behandla dina dokument utan att någonsin ladda upp dem till externa servrar, vilket säkerställer fullständig integritet.",
+      "badgeText": "Lokal bearbetning"
+    },
+    {
+      "type": "remove_privacy_security",
+      "title": "Total radering Sekretess",
+      "content": "När du tar bort en sida raderas den permanent från dokumentet i webbläsarens minne innan den sparas.",
+      "badgeText": "Säkerhet först"
+    },
+    {
+      "type": "remove_performance",
+      "title": "Omedelbar sidaborttagning",
+      "content": "Att extrahera och ta bort sidor från till och med ett 1000-sidigt dokument tar millisekunder med vår optimerade WASM-motor.",
+      "badgeText": "Blixtsnabb"
+    }
+  ],
+  "faqTitle": "Vanliga frågor",
+  "faqs": [
+    {
+      "q": "Kan de raderade sidorna återställas?",
+      "a": "När du har laddat ner den nya PDF-filen tas de borttagna sidorna bort permanent från den filen. Din originalfil förblir orörd."
+    },
+    {
+      "q": "Behöver jag ladda upp min PDF?",
+      "a": "Nej. Hela borttagningsprocessen sker lokalt i din webbläsare."
+    },
+    {
+      "q": "Finns det en gräns för hur många sidor jag kan ta bort?",
+      "a": "Nej, du kan radera hur många sidor du vill, helt gratis."
+    },
+    {
+      "q": "Kommer layouten på återstående sidor att ändras?",
+      "a": "Nej, de återstående sidorna kommer att behålla sin exakta ursprungliga formatering och layout."
+    },
+    {
+      "q": "Kan jag välja flera sidor samtidigt?",
+      "a": "Ja, du kan klicka på flera sidor för att markera dem alla för radering samtidigt."
+    }
+  ],
+  "supportCenter": "Supportcenter"
+}

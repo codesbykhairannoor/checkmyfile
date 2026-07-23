@@ -1,67 +1,80 @@
 {
-  "title": "PDF to Word Converter — Offline & Editable",
-  "h1": "Convert PDF to Editable Word Documents Locally",
-  "description": "Transform PDFs back into .docx files you can edit, right in your browser. No upload needed. Great for users in New Delhi.",
+  "title": "पीडीएफ से वर्ड कन्वर्टर - ऑफ़लाइन और संपादन योग्य",
+  "h1": "पीडीएफ को स्थानीय रूप से संपादन योग्य वर्ड दस्तावेज़ों में बदलें",
+  "description": "PDF को वापस .docx फ़ाइलों में रूपांतरित करें जिन्हें आप सीधे अपने ब्राउज़र में संपादित कर सकते हैं। अपलोड की आवश्यकता नहीं. नई दिल्ली के उपयोगकर्ताओं के लिए बढ़िया.",
+  "buttonText": "वर्ड में कनवर्ट करें",
+  "badges": [
+    "संपादन योग्य दस्तावेज़",
+    "पाठ पुनर्प्राप्ति",
+    "ऑफलाइन प्रक्रिया"
+  ],
+  "stats": [
+    "100%",
+    "स्थानीय",
+    "0",
+    "प्रतीक्षा समय"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF Back Offline?",
-      "content": "When you need to edit a PDF, converting it offline keeps your original document confidential."
+      "title": "ऑफ़लाइन उपयोग क्यों करें?",
+      "content": "जब आपको किसी पीडीएफ को संपादित करने की आवश्यकता होती है, तो इसे ऑफ़लाइन परिवर्तित करने से आपका मूल दस्तावेज़ गोपनीय रहता है।"
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Word",
+      "title": "कैसे उपयोग करें",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF file you need to convert."
+          "title": "पीडीएफ लोड करें",
+          "description": "वह पीडीएफ फ़ाइल चुनें जिसे आपको कनवर्ट करना है।"
         },
         {
-          "title": "Detect Text Layers",
-          "description": "Our engine reads text and structure from the PDF."
+          "title": "टेक्स्ट परतों का पता लगाएं",
+          "description": "हमारा इंजन पीडीएफ से पाठ और संरचना पढ़ता है।"
         },
         {
-          "title": "Download .docx",
-          "description": "Get your editable Word document ready to modify."
+          "title": ".docx डाउनलोड करें",
+          "description": "अपने संपादन योग्य Word दस्तावेज़ को संशोधित करने के लिए तैयार रखें।"
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "PDF to Word for New Delhi Offices",
-      "content": "Office workers in New Delhi use our tool to recover editable text from PDFs without cloud dependency."
+      "title": "नई दिल्ली कार्यालयों के लिए वर्ड से पीडीएफ",
+      "content": "नई दिल्ली में कार्यालय कर्मचारी क्लाउड निर्भरता के बिना पीडीएफ से संपादन योग्य पाठ को पुनर्प्राप्त करने के लिए हमारे टूल का उपयोग करते हैं।"
     },
     {
       "type": "split_privacy_security",
-      "title": "Legal Documents Stay Confidential",
-      "content": "Contracts, NDAs, and reports converted back to Word entirely in your browser memory."
+      "title": "कानूनी दस्तावेज़ गोपनीय रहते हैं",
+      "content": "अनुबंध, एनडीए और रिपोर्ट पूरी तरह से आपके ब्राउज़र मेमोरी में वर्ड में परिवर्तित हो गए।"
     },
     {
       "type": "split_performance",
-      "title": "Recover Editable Text in Seconds",
-      "content": "Extract text from a 50-page PDF in under 3 seconds without uploading a single byte."
+      "title": "संपादन योग्य पाठ को सेकंडों में पुनर्प्राप्त करें",
+      "content": "एक भी बाइट अपलोड किए बिना 50 पेज की पीडीएफ से 3 सेकंड से कम समय में टेक्स्ट निकालें।"
     }
   ],
   "faqs": [
     {
-      "q": "Is all text preserved?",
-      "a": "Yes, text from all layers is extracted and formatted."
+      "q": "क्या सारा पाठ संरक्षित है?",
+      "a": "हाँ, सभी परतों से पाठ निकाला और स्वरूपित किया जाता है।"
     },
     {
-      "q": "Does it work on scanned PDFs?",
-      "a": "For scanned PDFs, use our OCR tool first."
+      "q": "क्या यह स्कैन की गई पीडीएफ़ पर काम करता है?",
+      "a": "स्कैन की गई पीडीएफ़ के लिए, पहले हमारे OCR टूल का उपयोग करें।"
     },
     {
-      "q": "Are images included in the .docx?",
-      "a": "Yes, embedded images are included in the output."
+      "q": "क्या छवियाँ .docx में शामिल हैं?",
+      "a": "हां, एम्बेडेड छवियां आउटपुट में शामिल हैं।"
     },
     {
-      "q": "Can I edit the .docx after?",
-      "a": "Absolutely, the output is a fully editable Word document."
+      "q": "क्या मैं .docx को बाद में संपादित कर सकता हूँ?",
+      "a": "बिल्कुल, आउटपुट पूरी तरह से संपादन योग्य वर्ड दस्तावेज़ है।"
     },
     {
-      "q": "Is this free?",
-      "a": "हाँ, पूरी तरह मुफ्त।"
+      "q": "क्या यह मुफ़्त है?",
+      "a": "हां, बिल्कुल मुफ्त।"
     }
-  ]
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न"
 }

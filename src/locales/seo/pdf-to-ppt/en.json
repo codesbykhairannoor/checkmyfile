@@ -2,6 +2,18 @@
   "title": "PDF to PowerPoint — Recover Editable Slides",
   "h1": "Convert PDF to PowerPoint Presentation Offline",
   "description": "Transform PDF documents back into editable .pptx presentations locally. No cloud needed. Perfect for users in New York.",
+  "buttonText": "Convert to PPT",
+  "badges": [
+    "Editable Slides",
+    "Presentation Recovery",
+    "Fast Conversion"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "split_hero_features",

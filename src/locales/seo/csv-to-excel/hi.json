@@ -1,67 +1,85 @@
 {
-  "title": "CSV to Excel Converter — Offline & Instant",
-  "h1": "Convert CSV Files to Excel Spreadsheets Locally",
-  "description": "Transform .csv files into structured .xlsx spreadsheets entirely in your browser. No upload. Perfect for data teams in New Delhi.",
+  "title": "सीएसवी से एक्सेल कन्वर्टर - ऑफ़लाइन और त्वरित",
+  "h1": "सीएसवी फ़ाइलों को स्थानीय रूप से एक्सेल स्प्रेडशीट में कनवर्ट करें",
+  "description": "अपने ब्राउज़र में .csv फ़ाइलों को पूरी तरह से संरचित .xlsx स्प्रेडशीट में बदलें। कोई अपलोड नहीं. 100% सुरक्षित स्थानीय प्रसंस्करण।",
+  "buttonText": "Convert CSV",
+  "badges": [
+    "यूटीएफ-8 समर्थन",
+    "मल्टी-कॉलम",
+    "तुरंत रूपांतरित करें"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Convert CSV Offline?",
-      "content": "CSV files often contain customer or financial data. Convert them to Excel locally without exposing your datasets to any cloud service."
+      "type": "csv_excel_hero_features",
+      "title": "सीएसवी को ऑफ़लाइन क्यों बदलें?",
+      "content": "CSV फ़ाइलों में अक्सर ग्राहक या वित्तीय डेटा होता है। अपने डेटासेट को किसी भी क्लाउड सेवा में उजागर किए बिना उन्हें स्थानीय रूप से एक्सेल में कनवर्ट करें।"
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert CSV to Excel",
+      "type": "csv_excel_how_to_steps",
+      "title": "सीएसवी को एक्सेल में कैसे बदलें",
       "steps": [
         {
-          "title": "Open CSV File",
-          "description": "Select the CSV file to convert."
+          "title": "सीएसवी फ़ाइल खोलें",
+          "description": "कनवर्ट करने के लिए CSV फ़ाइल का चयन करें."
         },
         {
-          "title": "Preview Data",
-          "description": "See the parsed columns and rows before export."
+          "title": "पूर्वावलोकन डेटा",
+          "description": "निर्यात से पहले पार्स किए गए कॉलम और पंक्तियाँ देखें।"
         },
         {
-          "title": "Download .xlsx",
-          "description": "Get your Excel spreadsheet instantly."
+          "title": "डाउनलोड .xlsx",
+          "description": "अपनी एक्सेल स्प्रेडशीट तुरंत प्राप्त करें।"
         }
-      ]
+      ],
+      "badgeText": "त्वरित मार्गदर्शिका"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Data Tools for New Delhi Analysts",
-      "content": "Data analysts in New Delhi convert CSV exports to Excel without uploading sensitive datasets."
+      "type": "csv_excel_geo_targeting",
+      "title": "100% सुरक्षित स्थानीय प्रसंस्करण",
+      "content": "सभी ऑपरेशन सीधे आपके स्थानीय डिवाइस पर किए जाते हैं। हम पूर्ण गोपनीयता सुनिश्चित करते हुए, आपके दस्तावेज़ों को बाहरी सर्वर पर अपलोड किए बिना संसाधित करने के लिए उन्नत WebAssembly तकनीक का उपयोग करते हैं।",
+      "badgeText": "स्थानीय प्रसंस्करण"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Customer Data Stays on Your Machine",
-      "content": "CRM exports, transaction logs, and survey data converted locally with zero cloud involvement."
+      "type": "csv_excel_privacy_security",
+      "title": "ग्राहक डेटा आपकी मशीन पर रहता है",
+      "content": "सीआरएम निर्यात, लेनदेन लॉग और सर्वेक्षण डेटा को शून्य क्लाउड भागीदारी के साथ स्थानीय रूप से परिवर्तित किया गया।",
+      "badgeText": "सुरक्षा पहले"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Large CSV Files Instantly",
-      "content": "Convert a 100,000-row CSV to Excel in seconds. All browser-native processing."
+      "type": "csv_excel_performance",
+      "title": "बड़ी CSV फ़ाइलों को तुरंत रूपांतरित करें",
+      "content": "100,000-पंक्ति सीएसवी को सेकंडों में एक्सेल में बदलें। सभी ब्राउज़र-मूल प्रसंस्करण।",
+      "badgeText": "बिजली की तेजी"
     }
   ],
   "faqs": [
     {
-      "q": "Is the column structure preserved?",
-      "a": "Yes, all columns are mapped to Excel columns."
+      "q": "क्या स्तंभ संरचना संरक्षित है?",
+      "a": "हां, सभी कॉलम एक्सेल कॉलम में मैप किए गए हैं।"
     },
     {
-      "q": "Can I convert multiple CSVs?",
-      "a": "Yes, batch conversion to multiple sheets is supported."
+      "q": "क्या मैं एकाधिक सीएसवी परिवर्तित कर सकता हूँ?",
+      "a": "हां, एकाधिक शीट में बैच रूपांतरण समर्थित है।"
     },
     {
-      "q": "Are special characters handled?",
-      "a": "Yes, UTF-8 and various encodings are supported."
+      "q": "क्या विशेष पात्रों को संभाला जाता है?",
+      "a": "हाँ, UTF-8 और विभिन्न एन्कोडिंग समर्थित हैं।"
     },
     {
-      "q": "Can I set delimiters?",
-      "a": "Yes, comma, semicolon, and tab delimiters are supported."
+      "q": "क्या मैं सीमांकक सेट कर सकता हूँ?",
+      "a": "हाँ, अल्पविराम, अर्धविराम और टैब सीमांकक समर्थित हैं।"
     },
     {
-      "q": "Is this free?",
-      "a": "हाँ, पूरी तरह मुफ्त।"
+      "q": "क्या यह मुफ़्त है?",
+      "a": "हाँ, हमेशा मुफ़्त."
     }
-  ]
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न",
+  "supportCenter": "सहायता केंद्र"
 }

@@ -1,15 +1,27 @@
 {
   "title": "PowerPoint to PDF Converter — Offline & Free",
   "h1": "Convert PowerPoint Presentations to PDF Instantly",
-  "description": "Convert .pptx presentations to high-quality PDFs directly in your browser. No cloud needed. Perfect for presenters in New York.",
+  "description": "Convert .pptx presentations to high-quality PDFs directly in your browser. No cloud needed. 100% secure local processing.",
+  "buttonText": "Convert Slides",
+  "badges": [
+    "Board Meetings",
+    "Pitch Decks",
+    "Unreleased Products"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
+      "type": "ppt_hero_features",
       "title": "Why Convert Presentations Offline?",
       "content": "Your slides may contain unreleased products or confidential strategies. Convert without risking data exposure."
     },
     {
-      "type": "combiner_how_to_steps",
+      "type": "ppt_how_to_steps",
       "title": "How to Convert PowerPoint to PDF",
       "steps": [
         {
@@ -27,17 +39,17 @@
       ]
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Presentation Conversion in New York",
-      "content": "Presenters in New York trust us to convert slide decks without leaking unreleased content to cloud servers."
+      "type": "ppt_geo_targeting",
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy."
     },
     {
-      "type": "combiner_privacy_security",
+      "type": "ppt_privacy_security",
       "title": "Confidential Slides Stay Confidential",
       "content": "Pre-launch product decks? Board presentations? Converted 100% locally without network access."
     },
     {
-      "type": "combiner_performance",
+      "type": "ppt_performance",
       "title": "Instant Slide Export",
       "content": "Convert 100-slide decks in seconds. No queue, no waiting, no upload bandwidth wasted."
     }

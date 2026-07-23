@@ -1,67 +1,80 @@
 {
-  "title": "Word to PDF Converter — No Upload Required",
-  "h1": "Convert Word Documents to PDF Instantly",
-  "description": "Transform .docx files into perfect PDFs directly in your browser. Zero upload, 100% private. Ideal for users in Hanoi.",
+  "title": "Trình chuyển đổi Word sang PDF — Không cần tải lên",
+  "h1": "Chuyển đổi tài liệu Word sang PDF ngay lập tức",
+  "description": "Chuyển đổi tệp .docx thành tệp PDF hoàn hảo trực tiếp trong trình duyệt của bạn. Không tải lên, 100% riêng tư. Lý tưởng cho người dùng ở Hà Nội.",
+  "buttonText": "Chuyển đổi tài liệu",
+  "badges": [
+    "Hợp đồng lao động",
+    "Tóm tắt pháp luật",
+    "Sơ yếu lý lịch & CV"
+  ],
+  "stats": [
+    "100%",
+    "Địa phương",
+    "0 giây",
+    "Thời gian chờ"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Word to PDF Offline?",
-      "content": "Your Word document contains sensitive data. Our converter runs entirely in WebAssembly — your file never touches a server."
+      "type": "word_hero_features",
+      "title": "Tại sao sử dụng ngoại tuyến?",
+      "content": "Tài liệu Word của bạn chứa dữ liệu nhạy cảm. Trình chuyển đổi của chúng tôi chạy hoàn toàn trong WebAssugging — tệp của bạn không bao giờ chạm vào máy chủ."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Word to PDF",
+      "type": "word_how_to_steps",
+      "title": "Cách sử dụng",
       "steps": [
         {
-          "title": "Select .docx File",
-          "description": "Pick your Word document from your computer."
+          "title": "Chọn tệp .docx",
+          "description": "Chọn tài liệu Word của bạn từ máy tính của bạn."
         },
         {
-          "title": "Preview Output",
-          "description": "See the PDF rendering before finalizing."
+          "title": "Xem trước đầu ra",
+          "description": "Xem kết xuất PDF trước khi hoàn thiện."
         },
         {
-          "title": "Download PDF",
-          "description": "Save your perfectly converted PDF instantly."
+          "title": "Tải xuống bản PDF",
+          "description": "Lưu bản PDF được chuyển đổi hoàn hảo của bạn ngay lập tức."
         }
       ]
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Word to PDF for Hanoi Users",
-      "content": "Used by professionals in Hanoi who need to share documents without losing formatting."
+      "type": "word_geo_targeting",
+      "title": "Word sang PDF cho người dùng Hà Nội",
+      "content": "Được sử dụng bởi các chuyên gia ở Hà Nội có nhu cầu chia sẻ tài liệu mà không làm mất định dạng."
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Your Contracts Stay Private",
-      "content": "Converting employment contracts? Legal briefs? Our WASM processor never phones home."
+      "type": "word_privacy_security",
+      "title": "Hợp đồng của bạn được giữ kín",
+      "content": "Chuyển đổi hợp đồng lao động? Tóm tắt pháp lý? Bộ xử lý WASM của chúng tôi không bao giờ gọi điện về nhà."
     },
     {
-      "type": "combiner_performance",
-      "title": "No More Conversion Queues",
-      "content": "Cloud converters put you in a queue. Ours converts in under 2 seconds, entirely offline."
+      "type": "word_performance",
+      "title": "Không còn hàng đợi chuyển đổi",
+      "content": "Bộ chuyển đổi đám mây khiến bạn phải xếp hàng. Của chúng tôi chuyển đổi trong vòng chưa đầy 2 giây, hoàn toàn ngoại tuyến."
     }
   ],
   "faqs": [
     {
-      "q": "Does it preserve Word formatting?",
-      "a": "Yes, fonts, tables, and images are preserved using our WASM renderer."
+      "q": "Nó có giữ nguyên định dạng Word không?",
+      "a": "Có, phông chữ, bảng và hình ảnh được giữ nguyên bằng trình kết xuất WASM của chúng tôi."
     },
     {
-      "q": "What Word versions are supported?",
-      "a": "All modern .docx files are supported."
+      "q": "Phiên bản Word nào được hỗ trợ?",
+      "a": "Tất cả các tệp .docx hiện đại đều được hỗ trợ."
     },
     {
-      "q": "Is there a file size limit?",
-      "a": "No server limits! Only your device RAM is the constraint."
+      "q": "Có giới hạn kích thước tập tin?",
+      "a": "Không có giới hạn máy chủ! Chỉ có RAM thiết bị của bạn là hạn chế."
     },
     {
-      "q": "Can I batch convert multiple files?",
-      "a": "Yes, select multiple .docx files at once."
+      "q": "Tôi có thể chuyển đổi hàng loạt nhiều tập tin không?",
+      "a": "Có, chọn nhiều tệp .docx cùng một lúc."
     },
     {
-      "q": "Is this free?",
+      "q": "Cái này có miễn phí không?",
       "a": "Có, hoàn toàn miễn phí."
     }
-  ]
+  ],
+  "faqTitle": "Câu hỏi thường gặp"
 }

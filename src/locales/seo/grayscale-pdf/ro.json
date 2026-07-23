@@ -1,67 +1,85 @@
 {
-  "title": "Grayscale PDF — Convert to Black and White Offline",
-  "h1": "Convert Color PDF Pages to Grayscale Instantly",
-  "description": "Turn color PDFs into black-and-white versions to reduce file size or prepare for printing, entirely in your browser. Ideal for users in Bucharest.",
+  "title": "PDF în tonuri de gri — Convertiți în alb-negru offline",
+  "h1": "Convertiți instantaneu paginile PDF color în tonuri de gri",
+  "description": "Transformați PDF-urile color în versiuni alb-negru pentru a reduce dimensiunea fișierului sau pentru a se pregăti pentru imprimare, în întregime în browser. Procesare locală 100% sigură.",
+  "buttonText": "Convert to Grayscale",
+  "badges": [
+    "Economisiți cerneală",
+    "Alb-negru",
+    "Perfect pentru imprimare"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Convert to Grayscale Offline?",
-      "content": "Removing color from a PDF is a pre-print or archiving step. Do it locally without exposing confidential document design."
+      "type": "grayscale_hero_features",
+      "title": "De ce convertiți în tonuri de gri offline?",
+      "content": "Eliminarea culorii dintr-un PDF este un pas de pre-printare sau de arhivare. Faceți-o local fără a expune designul documentelor confidențiale."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Make PDF Grayscale",
+      "type": "grayscale_how_to_steps",
+      "title": "Cum să faci PDF în tonuri de gri",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the color PDF to convert."
+          "title": "Deschide PDF",
+          "description": "Selectați PDF-ul color de convertit."
         },
         {
-          "title": "Choose Conversion Mode",
-          "description": "Pick luminance or contrast-adjusted grayscale."
+          "title": "Alegeți Modul de conversie",
+          "description": "Alegeți luminanță sau tonuri de gri ajustate la contrast."
         },
         {
-          "title": "Download Grayscale PDF",
-          "description": "Save the black-and-white PDF immediately."
+          "title": "Descărcați PDF în tonuri de gri",
+          "description": "Salvați imediat PDF-ul alb-negru."
         }
-      ]
+      ],
+      "badgeText": "Ghid rapid"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Grayscale PDF for Bucharest Printers",
-      "content": "Businesses in Bucharest convert color PDFs to grayscale for cost-effective printing without cloud uploads."
+      "type": "grayscale_geo_targeting",
+      "title": "Procesare locală 100% sigură",
+      "content": "Toate operațiunile sunt efectuate direct pe dispozitivul local. Folosim tehnologie avansată WebAssembly pentru a vă procesa documentele fără a le încărca vreodată pe servere externe, asigurând confidențialitate completă.",
+      "badgeText": "Prelucrare locală"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Design Files Stay Confidential",
-      "content": "Internal design documents and branded materials converted to grayscale without cloud exposure."
+      "type": "grayscale_privacy_security",
+      "title": "Fișierele de design rămân confidențiale",
+      "content": "Documente de design intern și materiale de marcă convertite în tonuri de gri fără expunere la nor.",
+      "badgeText": "Securitatea în primul rând"
     },
     {
-      "type": "transform_performance",
-      "title": "Convert Color Instantly",
-      "content": "A 200-page color PDF converted to grayscale in under 2 seconds. Zero upload."
+      "type": "grayscale_performance",
+      "title": "Convertiți culoarea instantaneu",
+      "content": "Un PDF color de 200 de pagini convertit în tonuri de gri în mai puțin de 2 secunde. Încărcare zero.",
+      "badgeText": "Rapid fulger"
     }
   ],
   "faqs": [
     {
-      "q": "Does grayscale reduce file size?",
-      "a": "Often yes, especially for image-heavy PDFs."
+      "q": "Nuantele de gri reduce dimensiunea fișierului?",
+      "a": "Adesea da, mai ales pentru PDF-urile cu imagini grele."
     },
     {
-      "q": "Are all pages converted?",
-      "a": "Yes by default; you can also select specific pages."
+      "q": "Sunt toate paginile convertite?",
+      "a": "Da implicit; de asemenea, puteți selecta anumite pagini."
     },
     {
-      "q": "Is the conversion reversible?",
-      "a": "The color information is removed; keep the original for reversal."
+      "q": "Este conversia reversibilă?",
+      "a": "Informațiile de culoare sunt eliminate; păstrați originalul pentru inversare."
     },
     {
-      "q": "Does it affect text quality?",
-      "a": "No, text remains crisp and black."
+      "q": "Afectează calitatea textului?",
+      "a": "Nu, textul rămâne clar și negru."
     },
     {
-      "q": "Is this free?",
+      "q": "Este gratuit?",
       "a": "Da, complet gratuit."
     }
-  ]
+  ],
+  "faqTitle": "Întrebări frecvente",
+  "supportCenter": "Centrul de suport"
 }

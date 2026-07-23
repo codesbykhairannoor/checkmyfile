@@ -1,67 +1,85 @@
 {
-  "title": "Excel to CSV Converter — Export Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to CSV Locally",
-  "description": "Export .xlsx files to clean .csv format entirely in your browser. No upload. Ideal for developers in New Delhi.",
+  "title": "एक्सेल से सीएसवी कन्वर्टर - स्प्रेडशीट ऑफ़लाइन निर्यात करें",
+  "h1": "एक्सेल स्प्रेडशीट को स्थानीय रूप से सीएसवी में कनवर्ट करें",
+  "description": "अपने ब्राउज़र में .csv प्रारूप को पूरी तरह साफ़ करने के लिए .xlsx फ़ाइलें निर्यात करें। कोई अपलोड नहीं. 100% सुरक्षित स्थानीय प्रसंस्करण।",
+  "buttonText": "Convert to CSV",
+  "badges": [
+    "कच्चा डेटा",
+    "डेटाबेस आयात",
+    "तेजी से निर्यात"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Export to CSV Offline?",
-      "content": "Exporting spreadsheets to CSV for data pipelines should not expose your raw data to any external API."
+      "type": "excel_csv_hero_features",
+      "title": "सीएसवी ऑफ़लाइन में निर्यात क्यों करें?",
+      "content": "डेटा पाइपलाइनों के लिए सीएसवी में स्प्रेडशीट निर्यात करने से आपके कच्चे डेटा को किसी बाहरी एपीआई के संपर्क में नहीं आना चाहिए।"
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Excel to CSV",
+      "type": "excel_csv_how_to_steps",
+      "title": "एक्सेल को सीएसवी में कैसे बदलें",
       "steps": [
         {
-          "title": "Open Excel File",
-          "description": "Select the .xlsx spreadsheet."
+          "title": "एक्सेल फ़ाइल खोलें",
+          "description": ".xlsx स्प्रेडशीट का चयन करें."
         },
         {
-          "title": "Choose Sheet",
-          "description": "Pick which sheet to export as CSV."
+          "title": "शीट चुनें",
+          "description": "सीएसवी के रूप में निर्यात करने के लिए कौन सी शीट चुनें।"
         },
         {
-          "title": "Download CSV",
-          "description": "Get your clean CSV file instantly."
+          "title": "सीएसवी डाउनलोड करें",
+          "description": "अपनी साफ़ CSV फ़ाइल तुरंत प्राप्त करें।"
         }
-      ]
+      ],
+      "badgeText": "त्वरित मार्गदर्शिका"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Developer Tools for New Delhi",
-      "content": "Developers and data engineers in New Delhi export spreadsheets to CSV for pipelines without cloud intermediaries."
+      "type": "excel_csv_geo_targeting",
+      "title": "100% सुरक्षित स्थानीय प्रसंस्करण",
+      "content": "सभी ऑपरेशन सीधे आपके स्थानीय डिवाइस पर किए जाते हैं। हम पूर्ण गोपनीयता सुनिश्चित करते हुए, आपके दस्तावेज़ों को बाहरी सर्वर पर अपलोड किए बिना संसाधित करने के लिए उन्नत WebAssembly तकनीक का उपयोग करते हैं।",
+      "badgeText": "स्थानीय प्रसंस्करण"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Spreadsheet Data Stays Local",
-      "content": "Financial models and business data exported to CSV without any server-side processing."
+      "type": "excel_csv_privacy_security",
+      "title": "स्प्रेडशीट डेटा स्थानीय रहता है",
+      "content": "वित्तीय मॉडल और व्यावसायिक डेटा बिना किसी सर्वर-साइड प्रोसेसिंग के सीएसवी को निर्यात किया जाता है।",
+      "badgeText": "सुरक्षा पहले"
     },
     {
-      "type": "organizer_performance",
-      "title": "Export Any Spreadsheet Instantly",
-      "content": "Export a 50,000-row Excel file to CSV in under 1 second. All in-browser."
+      "type": "excel_csv_performance",
+      "title": "किसी भी स्प्रेडशीट को तुरंत निर्यात करें",
+      "content": "50,000-पंक्ति एक्सेल फ़ाइल को 1 सेकंड से कम समय में सीएसवी में निर्यात करें। सभी ब्राउज़र में.",
+      "badgeText": "बिजली की तेजी"
     }
   ],
   "faqs": [
     {
-      "q": "Can I export multiple sheets?",
-      "a": "Yes, export each sheet as a separate CSV file."
+      "q": "क्या मैं एकाधिक शीट निर्यात कर सकता हूँ?",
+      "a": "हाँ, प्रत्येक शीट को एक अलग CSV फ़ाइल के रूप में निर्यात करें।"
     },
     {
-      "q": "Is Excel formatting preserved in CSV?",
-      "a": "CSV is plain text; formatting is removed but all values are preserved."
+      "q": "क्या एक्सेल फ़ॉर्मेटिंग CSV में संरक्षित है?",
+      "a": "सीएसवी सादा पाठ है; फ़ॉर्मेटिंग हटा दी गई है लेकिन सभी मान संरक्षित हैं।"
     },
     {
-      "q": "Can I choose the delimiter?",
-      "a": "Yes, choose comma, semicolon, or tab."
+      "q": "क्या मैं सीमांकक चुन सकता हूँ?",
+      "a": "हाँ, अल्पविराम, अर्धविराम या टैब चुनें।"
     },
     {
-      "q": "Are formulas exported as values?",
-      "a": "Yes, formula results (not formulas) are written to the CSV."
+      "q": "क्या सूत्र मान के रूप में निर्यात किए जाते हैं?",
+      "a": "हाँ, सूत्र परिणाम (सूत्र नहीं) सीएसवी को लिखे जाते हैं।"
     },
     {
-      "q": "Is this free?",
-      "a": "हाँ, पूरी तरह मुफ्त।"
+      "q": "क्या यह मुफ़्त है?",
+      "a": "हाँ, पूर्णतया निःशुल्क।"
     }
-  ]
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न",
+  "supportCenter": "सहायता केंद्र"
 }

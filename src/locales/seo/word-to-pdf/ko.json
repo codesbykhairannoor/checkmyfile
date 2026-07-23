@@ -1,67 +1,80 @@
 {
-  "title": "Word to PDF Converter — No Upload Required",
-  "h1": "Convert Word Documents to PDF Instantly",
-  "description": "Transform .docx files into perfect PDFs directly in your browser. Zero upload, 100% private. Ideal for users in Seoul.",
+  "title": "Word를 PDF로 변환기 — 업로드가 필요하지 않음",
+  "h1": "Word 문서를 PDF로 즉시 변환",
+  "description": "브라우저에서 직접 .docx 파일을 완벽한 PDF로 변환하세요. 업로드가 없고 100% 비공개입니다. 서울 사용자에게 적합합니다.",
+  "buttonText": "문서 변환",
+  "badges": [
+    "고용 계약",
+    "법률 브리핑",
+    "이력서 및 CV"
+  ],
+  "stats": [
+    "100%",
+    "현지의",
+    "0초",
+    "대기 시간"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Word to PDF Offline?",
-      "content": "Your Word document contains sensitive data. Our converter runs entirely in WebAssembly — your file never touches a server."
+      "type": "word_hero_features",
+      "title": "오프라인 사용의 이유",
+      "content": "Word 문서에는 민감한 데이터가 포함되어 있습니다. 우리 변환기는 완전히 WebAssembly에서 실행됩니다. 귀하의 파일은 서버에 닿지 않습니다."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Word to PDF",
+      "type": "word_how_to_steps",
+      "title": "사용 방법",
       "steps": [
         {
-          "title": "Select .docx File",
-          "description": "Pick your Word document from your computer."
+          "title": ".docx 파일 선택",
+          "description": "컴퓨터에서 Word 문서를 선택하세요."
         },
         {
-          "title": "Preview Output",
-          "description": "See the PDF rendering before finalizing."
+          "title": "미리보기 출력",
+          "description": "마무리하기 전에 PDF 렌더링을 확인하세요."
         },
         {
-          "title": "Download PDF",
-          "description": "Save your perfectly converted PDF instantly."
+          "title": "PDF 다운로드",
+          "description": "완벽하게 변환된 PDF를 즉시 저장하세요."
         }
       ]
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Word to PDF for Seoul Users",
-      "content": "Used by professionals in Seoul who need to share documents without losing formatting."
+      "type": "word_geo_targeting",
+      "title": "서울 사용자를 위한 Word를 PDF로",
+      "content": "서식을 잃지 않고 문서를 공유해야 하는 서울의 전문가가 사용합니다."
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Your Contracts Stay Private",
-      "content": "Converting employment contracts? Legal briefs? Our WASM processor never phones home."
+      "type": "word_privacy_security",
+      "title": "귀하의 계약은 비공개로 유지됩니다",
+      "content": "고용계약을 전환하시나요? 법적 브리핑? WASM 프로세서는 절대로 집에 전화하지 않습니다."
     },
     {
-      "type": "combiner_performance",
-      "title": "No More Conversion Queues",
-      "content": "Cloud converters put you in a queue. Ours converts in under 2 seconds, entirely offline."
+      "type": "word_performance",
+      "title": "더 이상 전환 대기열이 없습니다",
+      "content": "클라우드 변환기는 사용자를 대기열에 넣습니다. 우리는 2초 안에 완전히 오프라인으로 전환합니다."
     }
   ],
   "faqs": [
     {
-      "q": "Does it preserve Word formatting?",
-      "a": "Yes, fonts, tables, and images are preserved using our WASM renderer."
+      "q": "Word 서식이 유지되나요?",
+      "a": "예, WASM 렌더러를 사용하면 글꼴, 표, 이미지가 보존됩니다."
     },
     {
-      "q": "What Word versions are supported?",
-      "a": "All modern .docx files are supported."
+      "q": "어떤 Word 버전이 지원되나요?",
+      "a": "모든 최신 .docx 파일이 지원됩니다."
     },
     {
-      "q": "Is there a file size limit?",
-      "a": "No server limits! Only your device RAM is the constraint."
+      "q": "파일 크기 제한이 있나요?",
+      "a": "서버 제한이 없습니다! 장치 RAM만 제약 조건입니다."
     },
     {
-      "q": "Can I batch convert multiple files?",
-      "a": "Yes, select multiple .docx files at once."
+      "q": "여러 파일을 일괄 변환할 수 있나요?",
+      "a": "예, 한 번에 여러 .docx 파일을 선택하세요."
     },
     {
-      "q": "Is this free?",
-      "a": "예, 완전 무료입니다."
+      "q": "이거 무료인가요?",
+      "a": "네, 완전 무료입니다."
     }
-  ]
+  ],
+  "faqTitle": "자주 묻는 질문"
 }

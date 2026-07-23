@@ -1,67 +1,85 @@
 {
-  "title": "PDF to Image Converter — Extract Pages Offline",
-  "h1": "Convert PDF Pages to PNG or JPG Images",
-  "description": "Extract every page from a PDF as high-quality images directly in your browser. Zero upload, total privacy. Best for users in Athens.",
+  "title": "Μετατροπέας PDF σε εικόνα — Εξαγωγή σελίδων εκτός σύνδεσης",
+  "h1": "Μετατροπή σελίδων PDF σε εικόνες PNG ή JPG",
+  "description": "Εξάγετε κάθε σελίδα από ένα PDF ως εικόνες υψηλής ποιότητας απευθείας στο πρόγραμμα περιήγησής σας. Μηδενική μεταφόρτωση, 100% ασφαλής τοπική επεξεργασία.",
+  "buttonText": "Extract Images",
+  "badges": [
+    "Χαρτοφυλάκια Σχεδιασμού",
+    "Παρουσιάσεις",
+    "Υψηλής Ποιότητας"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract PDF Pages Offline?",
-      "content": "PDFs often contain confidential diagrams, blueprints, or reports. Extract pages as images without any server access."
+      "type": "pdf_image_hero_features",
+      "title": "Γιατί να κάνετε εξαγωγή σελίδων PDF εκτός σύνδεσης;",
+      "content": "Τα PDF περιέχουν συχνά εμπιστευτικά διαγράμματα, σχεδιαγράμματα ή αναφορές. Εξαγωγή σελίδων ως εικόνες χωρίς πρόσβαση διακομιστή."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Images",
+      "type": "pdf_image_how_to_steps",
+      "title": "Πώς να μετατρέψετε PDF σε εικόνες",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF you want to extract images from."
+          "title": "Φόρτωση PDF",
+          "description": "Επιλέξτε το PDF από το οποίο θέλετε να εξαγάγετε εικόνες."
         },
         {
-          "title": "Choose Format",
-          "description": "Pick PNG (lossless) or JPG (compressed) output."
+          "title": "Επιλέξτε Μορφή",
+          "description": "Επιλέξτε έξοδο PNG (χωρίς απώλειες) ή JPG (συμπιεσμένη)."
         },
         {
-          "title": "Download Images",
-          "description": "Get all pages as individual image files in a ZIP."
+          "title": "Λήψη εικόνων",
+          "description": "Λάβετε όλες τις σελίδες ως μεμονωμένα αρχεία εικόνας σε ένα ZIP."
         }
-      ]
+      ],
+      "badgeText": "Γρήγορος Οδηγός"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF to Image for Athens Designers",
-      "content": "Designers in Athens extract PDF pages as images for presentations and social media without cloud uploads."
+      "type": "pdf_image_geo_targeting",
+      "title": "100% Ασφαλής Τοπική Επεξεργασία",
+      "content": "Όλες οι λειτουργίες εκτελούνται απευθείας στην τοπική συσκευή σας. Χρησιμοποιούμε προηγμένη τεχνολογία WebAssembly για να επεξεργαζόμαστε τα έγγραφά σας χωρίς ποτέ να τα ανεβάσουμε σε εξωτερικούς διακομιστές, διασφαλίζοντας πλήρες απόρρητο.",
+      "badgeText": "Τοπική Επεξεργασία"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Confidential Diagrams Stay Private",
-      "content": "Technical blueprints and legal documents extracted as images without any data leaving your device."
+      "type": "pdf_image_privacy_security",
+      "title": "Εμπιστευτικά διαγράμματα Stay Private",
+      "content": "Τεχνικά σχεδιαγράμματα και νομικά έγγραφα που εξάγονται ως εικόνες χωρίς να φεύγουν δεδομένα από τη συσκευή σας.",
+      "badgeText": "Πρώτα η ασφάλεια"
     },
     {
-      "type": "split_performance",
-      "title": "Extract All Pages Instantly",
-      "content": "A 500-page PDF converted to images in seconds. No upload, no wait."
+      "type": "pdf_image_performance",
+      "title": "Εξαγωγή όλων των σελίδων αμέσως",
+      "content": "Ένα PDF 500 σελίδων που μετατρέπεται σε εικόνες σε δευτερόλεπτα. Χωρίς μεταφόρτωση, χωρίς αναμονή.",
+      "badgeText": "Αστραπιαία"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are available?",
-      "a": "PNG and JPG with adjustable quality settings."
+      "q": "Ποιες μορφές εικόνας είναι διαθέσιμες;",
+      "a": "PNG και JPG με ρυθμιζόμενες ρυθμίσεις ποιότητας."
     },
     {
-      "q": "Can I extract specific pages?",
-      "a": "Yes, specify page ranges like 1-5 or 3,7,12."
+      "q": "Μπορώ να εξαγάγω συγκεκριμένες σελίδες;",
+      "a": "Ναι, καθορίστε εύρη σελίδων όπως 1-5 ή 3,7,12."
     },
     {
-      "q": "What resolution are the exported images?",
-      "a": "Default 150 DPI, adjustable up to 300 DPI."
+      "q": "Τι ανάλυση έχουν οι εξαγόμενες εικόνες;",
+      "a": "Προεπιλογή 150 DPI, ρυθμιζόμενο έως 300 DPI."
     },
     {
-      "q": "Are all pages exported at once?",
-      "a": "Yes, all selected pages are zipped for a single download."
+      "q": "Εξάγονται όλες οι σελίδες ταυτόχρονα;",
+      "a": "Ναι, όλες οι επιλεγμένες σελίδες συμπιέζονται για μία μόνο λήψη."
     },
     {
-      "q": "Is this free?",
-      "a": "Ναι, εντελώς δωρεάν."
+      "q": "Αυτό είναι δωρεάν;",
+      "a": "Εντελώς δωρεάν, πάντα."
     }
-  ]
+  ],
+  "faqTitle": "Συχνές Ερωτήσεις",
+  "supportCenter": "Κέντρο Υποστήριξης"
 }

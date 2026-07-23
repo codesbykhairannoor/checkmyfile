@@ -1,67 +1,85 @@
 {
-  "title": "Unlock PDF — Remove Password Offline",
-  "h1": "Remove PDF Password Protection Instantly in Your Browser",
-  "description": "Unlock password-protected PDFs locally if you know the password. 100% private. No upload. Perfect for users in Jerusalem.",
+  "title": "ביטול נעילת PDF — הסר סיסמה במצב לא מקוון",
+  "h1": "הסר הגנה באמצעות סיסמה של PDF באופן מיידי בדפדפן שלך",
+  "description": "בטל את הנעילה של קובצי PDF מוגני סיסמה באופן מקומי אם אתה יודע את הסיסמה. 100% פרטי. אין העלאה. עיבוד מקומי מאובטח של 100%.",
+  "buttonText": "Unlock PDF",
+  "badges": [
+    "הסר סיסמה",
+    "ביטול נעילה מיידי",
+    "אין יומני שרת"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "unlock_hero_features",
-      "title": "Why Unlock PDFs Locally?",
-      "content": "You have the password to your own file. Unlocking it should not require uploading sensitive documents to an external service."
+      "title": "למה לפתוח קובצי PDF באופן מקומי?",
+      "content": "יש לך את הסיסמה לקובץ שלך. ביטול הנעילה לא אמור לדרוש העלאת מסמכים רגישים לשירות חיצוני."
     },
     {
       "type": "unlock_how_to_steps",
-      "title": "How to Unlock a Protected PDF",
+      "title": "כיצד לפתוח קובץ PDF מוגן",
       "steps": [
         {
-          "title": "Open Protected PDF",
-          "description": "Select the password-protected PDF."
+          "title": "פתח PDF מוגן",
+          "description": "בחר את ה-PDF המוגן באמצעות סיסמה."
         },
         {
-          "title": "Enter Your Password",
-          "description": "Provide the existing password — decryption stays in your browser."
+          "title": "הזן את הסיסמה שלך",
+          "description": "ספק את הסיסמה הקיימת - הפענוח נשאר בדפדפן שלך."
         },
         {
-          "title": "Download Unlocked PDF",
-          "description": "Get your unlocked, fully accessible PDF instantly."
+          "title": "הורד PDF לא נעול",
+          "description": "קבל את ה-PDF הפתוח והנגיש במלואו באופן מיידי."
         }
-      ]
+      ],
+      "badgeText": "מדריך מהיר"
     },
     {
       "type": "unlock_geo_targeting",
-      "title": "Instant PDF Unlocking for Jerusalem Users",
-      "content": "Users in Jerusalem access their own password-protected files without sending decryption keys to any server."
+      "title": "100% עיבוד מקומי מאובטח",
+      "content": "כל הפעולות מבוצעות ישירות במכשיר המקומי שלך. אנו משתמשים בטכנולוגיית WebAssembly מתקדמת כדי לעבד את המסמכים שלך מבלי להעלות אותם לשרתים חיצוניים, מה שמבטיח פרטיות מלאה.",
+      "badgeText": "עיבוד מקומי"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Your Password Never Leaves the Browser",
-      "content": "The decryption key and your document are processed entirely in browser memory — never transmitted to any server or service."
+      "title": "הסיסמה שלך לעולם לא עוזבת את הדפדפן",
+      "content": "מפתח הפענוח והמסמך שלך מעובדים במלואם בזיכרון הדפדפן - לעולם לא משודרים לשום שרת או שירות.",
+      "badgeText": "אבטחה תחילה"
     },
     {
       "type": "unlock_performance",
-      "title": "Instant Browser-Local Decryption",
-      "content": "AES decryption in your browser takes under a second — far faster than any cloud service with no upload wait."
+      "title": "פענוח מיידי של דפדפן מקומי",
+      "content": "פענוח AES בדפדפן שלך לוקח פחות משנייה - הרבה יותר מהר מכל שירות ענן ללא המתנה להעלאה.",
+      "badgeText": "מהיר ברק"
     }
   ],
   "faqs": [
     {
-      "q": "Does it work without the password?",
-      "a": "No, you must know the existing password to unlock."
+      "q": "זה עובד בלי הסיסמה?",
+      "a": "לא, עליך לדעת את הסיסמה הקיימת כדי לבטל את הנעילה."
     },
     {
-      "q": "Can I unlock permissions-restricted PDFs?",
-      "a": "Yes, permission restrictions are removed after password verification."
+      "q": "האם אני יכול לפתוח קובצי PDF מוגבלי הרשאות?",
+      "a": "כן, הגבלות ההרשאה יוסרו לאחר אימות הסיסמה."
     },
     {
-      "q": "Is the decryption process secure?",
-      "a": "All decryption happens in your browser memory; nothing is transmitted."
+      "q": "האם תהליך הפענוח מאובטח?",
+      "a": "כל הפענוח מתרחש בזיכרון הדפדפן שלך; שום דבר לא מועבר."
     },
     {
-      "q": "What if the password is wrong?",
-      "a": "You will see an error and can try again with the correct password."
+      "q": "מה אם הסיסמה שגויה?",
+      "a": "תראה שגיאה ותוכל לנסות שוב עם הסיסמה הנכונה."
     },
     {
-      "q": "Is this free?",
-      "a": "כן, חינם לחלוטין."
+      "q": "האם זה בחינם?",
+      "a": "כן, לגמרי בחינם."
     }
-  ]
+  ],
+  "faqTitle": "שאלות נפוצות",
+  "supportCenter": "מרכז תמיכה"
 }

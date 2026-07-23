@@ -1,67 +1,85 @@
 {
-  "title": "Resize PDF Pages — Change Paper Size Offline",
-  "h1": "Resize PDF Pages to A4, Letter, or Custom Sizes",
-  "description": "Change the paper size of every PDF page to A4, US Letter, or custom dimensions entirely in your browser. No upload. Ideal for users in Bratislava.",
+  "title": "Zmeniť veľkosť stránok PDF — Zmena veľkosti papiera v režime offline",
+  "h1": "Zmena veľkosti strán PDF na A4, Letter alebo vlastné veľkosti",
+  "description": "Zmeňte veľkosť papiera každej stránky PDF na formát A4, US Letter alebo vlastné rozmery úplne vo vašom prehliadači. Žiadne nahrávanie. 100% bezpečné lokálne spracovanie.",
+  "buttonText": "Resize Pages",
+  "badges": [
+    "A4, Letter, Custom",
+    "Pridať okraje",
+    "Oprava formátu"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Resize PDFs Locally?",
-      "content": "Preparing documents for printing requires proper page sizing. Resize locally without uploading internal documents to the cloud."
+      "type": "resize_hero_features",
+      "title": "Prečo meniť veľkosť súborov PDF lokálne?",
+      "content": "Príprava dokumentov na tlač vyžaduje správnu veľkosť strany. Zmeňte veľkosť lokálne bez nahrávania interných dokumentov do cloudu."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Resize PDF Pages",
+      "type": "resize_how_to_steps",
+      "title": "Ako zmeniť veľkosť stránok PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page dimensions."
+          "title": "Otvoriť PDF",
+          "description": "Načítajte súbor PDF s nesprávnymi rozmermi strany."
         },
         {
-          "title": "Select Target Size",
-          "description": "Choose A4, Letter, A3, or enter custom dimensions."
+          "title": "Vyberte cieľovú veľkosť",
+          "description": "Vyberte A4, Letter, A3 alebo zadajte vlastné rozmery."
         },
         {
-          "title": "Download Resized PDF",
-          "description": "Get your properly sized document instantly."
+          "title": "Stiahnuť PDF so zmenenou veľkosťou",
+          "description": "Získajte okamžite svoj dokument správnej veľkosti."
         }
-      ]
+      ],
+      "badgeText": "Rýchly sprievodca"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Resizing for Bratislava Print Shops",
-      "content": "Print shops and offices in Bratislava resize documents to standard sizes without cloud dependency."
+      "type": "resize_geo_targeting",
+      "title": "100% bezpečné miestne spracovanie",
+      "content": "Všetky operácie sa vykonávajú priamo na vašom lokálnom zariadení. Používame pokročilú technológiu WebAssembly na spracovanie vašich dokumentov bez ich nahrávania na externé servery, čím zaisťujeme úplné súkromie.",
+      "badgeText": "Miestne spracovanie"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Internal Documents Stay Internal",
-      "content": "Resize business reports and proposals without any server-side processing."
+      "type": "resize_privacy_security",
+      "title": "Interné dokumenty Zostanú interné",
+      "content": "Zmeňte veľkosť obchodných správ a návrhov bez akéhokoľvek spracovania na strane servera.",
+      "badgeText": "Bezpečnosť na prvom mieste"
     },
     {
-      "type": "transform_performance",
-      "title": "Resize Hundreds of Pages Instantly",
-      "content": "Resizing a 500-page PDF takes under 2 seconds. All in your browser."
+      "type": "resize_performance",
+      "title": "Okamžite zmeniť veľkosť stoviek strán",
+      "content": "Zmena veľkosti 500-stranového PDF trvá menej ako 2 sekundy. Všetko vo vašom prehliadači.",
+      "badgeText": "Rýchlosť blesku"
     }
   ],
   "faqs": [
     {
-      "q": "What sizes are available?",
-      "a": "A4, A3, A5, US Letter, Legal, and custom dimensions."
+      "q": "Aké veľkosti sú k dispozícii?",
+      "a": "Rozmery A4, A3, A5, US Letter, Legal a vlastné rozmery."
     },
     {
-      "q": "Does content scale with the page?",
-      "a": "Yes, content is scaled proportionally by default."
+      "q": "Prispôsobuje sa obsah stránke?",
+      "a": "Áno, obsah je štandardne škálovaný proporcionálne."
     },
     {
-      "q": "Can I resize individual pages?",
-      "a": "Yes, apply different sizes to specific pages."
+      "q": "Môžem zmeniť veľkosť jednotlivých stránok?",
+      "a": "Áno, použiť rôzne veľkosti na konkrétne strany."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "Vector content is re-rendered perfectly; images may scale."
+      "q": "Je ovplyvnená kvalita?",
+      "a": "Vektorový obsah je dokonale vykreslený; obrázky sa môžu meniť."
     },
     {
-      "q": "Is this free?",
+      "q": "Je to zadarmo?",
       "a": "Áno, úplne zadarmo."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
 }

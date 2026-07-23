@@ -1,0 +1,85 @@
+{
+  "title": "Alih Keluar Halaman daripada PDF — Padam Halaman PDF Luar Talian",
+  "h1": "Alih Keluar Halaman daripada PDF Serta-merta",
+  "description": "Padam halaman yang tidak diingini daripada fail PDF anda dengan selamat di dalam penyemak imbas anda. Cepat dan selamat sepenuhnya.",
+  "buttonText": "Remove Pages",
+  "badges": [
+    "Pilih & Padam",
+    "Editor Visual",
+    "Kependaman sifar"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "remove_hero_features",
+      "title": "Mengapa Alih Keluar Halaman Secara Setempat?",
+      "content": "Memadamkan halaman sensitif atau tidak perlu daripada dokumen anda harus dilakukan pada peranti anda, bukan pelayan. Kami memastikan privasi 100%."
+    },
+    {
+      "type": "remove_how_to_steps",
+      "title": "Cara Mengalih Keluar Halaman PDF",
+      "steps": [
+        {
+          "title": "Buka PDF",
+          "description": "Muatkan PDF yang ingin anda bersihkan."
+        },
+        {
+          "title": "Pilih Halaman untuk Dipadamkan",
+          "description": "Tuding pada halaman dan klik ikon sampah untuk menandakannya untuk dipadamkan."
+        },
+        {
+          "title": "Eksport PDF Bersih",
+          "description": "Muat turun PDF baharu anda tanpa halaman yang dipadamkan."
+        }
+      ],
+      "badgeText": "Panduan Pantas"
+    },
+    {
+      "type": "remove_geo_targeting",
+      "title": "100% Pemprosesan Tempatan Selamat",
+      "content": "Semua operasi dilakukan terus pada peranti tempatan anda. Kami menggunakan teknologi WebAssembly termaju untuk memproses dokumen anda tanpa pernah memuat naiknya ke pelayan luaran, memastikan privasi lengkap.",
+      "badgeText": "Pemprosesan Setempat"
+    },
+    {
+      "type": "remove_privacy_security",
+      "title": "Privasi Pemadaman Jumlah",
+      "content": "Apabila anda mengalih keluar halaman, ia dipadamkan secara kekal daripada dokumen dalam memori penyemak imbas anda sebelum disimpan.",
+      "badgeText": "Keselamatan Diutamakan"
+    },
+    {
+      "type": "remove_performance",
+      "title": "Pembuangan Halaman Segera",
+      "content": "Mengekstrak dan memadam halaman daripada dokumen 1000 halaman mengambil masa milisaat menggunakan enjin WASM kami yang dioptimumkan.",
+      "badgeText": "Sepantas Kilat"
+    }
+  ],
+  "faqTitle": "Soalan Lazim",
+  "faqs": [
+    {
+      "q": "Adakah halaman yang dipadam boleh dipulihkan?",
+      "a": "Sebaik sahaja anda memuat turun PDF baharu, halaman yang dipadam akan dialih keluar secara kekal daripada fail itu. Fail asal anda kekal tidak disentuh."
+    },
+    {
+      "q": "Adakah saya perlu memuat naik PDF saya?",
+      "a": "Tidak. Seluruh proses penyingkiran halaman berlaku secara setempat dalam penyemak imbas web anda."
+    },
+    {
+      "q": "Adakah terdapat had kepada berapa banyak halaman yang boleh saya padamkan?",
+      "a": "Tidak, anda boleh memadam seberapa banyak halaman yang anda mahu, percuma sepenuhnya."
+    },
+    {
+      "q": "Adakah susun atur halaman yang tinggal akan berubah?",
+      "a": "Tidak, halaman yang selebihnya akan mengekalkan pemformatan dan reka letak asal yang tepat."
+    },
+    {
+      "q": "Bolehkah saya memilih berbilang halaman sekaligus?",
+      "a": "Ya, anda boleh mengklik pada berbilang halaman untuk menandakan kesemuanya untuk dipadam secara serentak."
+    }
+  ],
+  "supportCenter": "Pusat Sokongan"
+}

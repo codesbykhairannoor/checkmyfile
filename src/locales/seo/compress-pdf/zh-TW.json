@@ -1,0 +1,85 @@
+{
+  "title": "線上壓縮 PDF - 減小檔案大小",
+  "h1": "壓縮 PDF 文件而不損失品質",
+  "description": "直接在 WebAssembly 中使用自適應無損技術將大型 PDF 文件縮小高達 90%。 100% 安全的本地處理。",
+  "sections": [
+    {
+      "type": "compress_hero_features",
+      "title": "為什麼要離線壓縮 PDF？",
+      "content": "透過電子郵件發送大型 PDF 很麻煩。 我們的壓縮器可大幅減少檔案大小，且圖片不會模糊，這一切都可以透過您的瀏覽器完成。"
+    },
+    {
+      "type": "compress_how_to_steps",
+      "title": "如何縮小 PDF 檔案",
+      "steps": [
+        {
+          "title": "上傳大檔案",
+          "description": "選擇您想要縮小的大型 PDF。"
+        },
+        {
+          "title": "選擇品質",
+          "description": "在高品質或最大壓縮之間進行選擇。"
+        },
+        {
+          "title": "下載小 PDF",
+          "description": "立即取得您的壓縮文件，準備分享。"
+        }
+      ],
+      "badgeText": "快速指南"
+    },
+    {
+      "type": "compress_geo_targeting",
+      "title": "100% 安全的本地處理",
+      "content": "所有操作都直接在本地設備上執行。 我們使用先進的 WebAssembly 技術來處理您的文檔，而無需將其上傳到外部伺服器，從而確保完全的隱私。",
+      "badgeText": "本地處理"
+    },
+    {
+      "type": "compress_privacy_security",
+      "title": "安全本地壓縮",
+      "content": "壓縮敏感的財務報告？ 我們的演算法完全離線工作，確保您的資料安全。",
+      "badgeText": "安全第一"
+    },
+    {
+      "type": "compress_performance",
+      "title": "閃電般快速縮小",
+      "content": "在本地壓縮 50MB 檔案可以節省上傳 50MB 和下載 5MB 的時間。",
+      "badgeText": "快如閃電"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "壓縮 PDF 會使其變得模糊嗎？",
+      "a": "不，我們的工具使用自適應壓縮來保持可讀性，同時減少大小。"
+    },
+    {
+      "q": "我的檔案是否會傳送到伺服器進行壓縮？",
+      "a": "不，壓縮演算法直接在瀏覽器記憶體中運作。"
+    },
+    {
+      "q": "我可以壓縮的最大檔案大小是多少？",
+      "a": "您的瀏覽器記憶體是唯一的限制！ 您可以輕鬆壓縮大量檔案。"
+    },
+    {
+      "q": "這個壓縮工具是免費的嗎？",
+      "a": "完全免費，沒有使用限製或高級付費專區。"
+    },
+    {
+      "q": "我可以一次壓縮多個檔案嗎？",
+      "a": "現代瀏覽器支援批量壓縮。"
+    }
+  ],
+  "badges": [
+    "90% 壓縮",
+    "無損選項",
+    "沒有上傳"
+  ],
+  "stats": [
+    "Zero Wait",
+    "High Quality",
+    "WebAssembly",
+    "Private"
+  ],
+  "buttonText": "Compress PDF",
+  "faqTitle": "常見問題",
+  "supportCenter": "支援中心"
+}

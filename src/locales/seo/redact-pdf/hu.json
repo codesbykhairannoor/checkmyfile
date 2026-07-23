@@ -1,67 +1,85 @@
 {
-  "title": "Redact PDF — Permanently Remove Sensitive Data",
-  "h1": "Permanently Redact Sensitive Information from PDFs Offline",
-  "description": "Black out sensitive text and images in PDFs entirely in your browser. No cloud risk. Critical for users in Budapest.",
+  "title": "PDF szerkesztése — Érzékeny adatok végleges eltávolítása",
+  "h1": "Kényes információk végleges törlése a PDF-fájlokból offline",
+  "description": "A PDF-fájlok érzékeny szövegeit és képeit teljesen fedje el böngészőjében. Nincs felhő kockázat. 100%-ban biztonságos helyi feldolgozás.",
+  "buttonText": "Redact Text",
+  "badges": [
+    "Végleges törlés",
+    "Blackout Info",
+    "Biztonságos szerkesztés"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "redact_hero_features",
-      "title": "Why Redact PDFs Locally?",
-      "content": "Redacting means the content is classified. Uploading a document you need to hide defeats the whole purpose. Our tool runs 100% offline."
+      "title": "Miért kell helyileg redukálni a PDF-fájlokat?",
+      "content": "A szerkesztés azt jelenti, hogy a tartalom minősített. Az elrejteni kívánt dokumentum feltöltése az egész célt meghiúsítja. Eszközünk 100%-ban offline módban működik."
     },
     {
       "type": "redact_how_to_steps",
-      "title": "How to Permanently Redact a PDF",
+      "title": "PDF végleges szerkesztése",
       "steps": [
         {
-          "title": "Open Sensitive Document",
-          "description": "Load the PDF with data that must be hidden."
+          "title": "Kényes dokumentum megnyitása",
+          "description": "Töltse be a PDF-fájlt olyan adatokkal, amelyeket el kell rejteni."
         },
         {
-          "title": "Mark Redaction Areas",
-          "description": "Draw boxes over content to permanently erase."
+          "title": "Szerkesztési területek megjelölése",
+          "description": "A végleges törléshez húzzon dobozokat a tartalom fölé."
         },
         {
-          "title": "Apply & Download",
-          "description": "Content is permanently deleted from the PDF structure."
+          "title": "Alkalmazás és letöltés",
+          "description": "A tartalom véglegesen törlődik a PDF-struktúrából."
         }
-      ]
+      ],
+      "badgeText": "Gyors útmutató"
     },
     {
       "type": "redact_geo_targeting",
-      "title": "Court-Ready Redaction for Budapest Law Firms",
-      "content": "Legal professionals in Budapest prepare court documents with permanent, offline redaction that removes data from the PDF structure itself."
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Minden művelet közvetlenül a helyi eszközön történik. Fejlett WebAssembly technológiát használunk a dokumentumok feldolgozásához anélkül, hogy azokat külső szerverekre feltöltenénk, így biztosítva a teljes adatvédelmet.",
+      "badgeText": "Helyi feldolgozás"
     },
     {
       "type": "redact_privacy_security",
-      "title": "True Permanent Redaction — Not Just Black Boxes",
-      "content": "Unlike tools that merely cover text with black boxes, our redaction permanently deletes the underlying data from the PDF object structure."
+      "title": "Igazi állandó szerkesztés – nem csak fekete dobozok",
+      "content": "Ellentétben azokkal az eszközökkel, amelyek csak a szöveget fekete dobozokkal borítják, a mi szerkesztésünk véglegesen törli a mögöttes adatokat a PDF objektumstruktúrájából.",
+      "badgeText": "Első a biztonság"
     },
     {
       "type": "redact_performance",
-      "title": "Redact Entire Documents Instantly",
-      "content": "Apply hundreds of permanent redactions to large documents in seconds, completely offline."
+      "title": "A teljes dokumentumok azonnali szerkesztése",
+      "content": "Alkalmazzon több száz állandó szerkesztést nagy dokumentumokon másodpercek alatt, teljesen offline állapotban.",
+      "badgeText": "Villámgyors"
     }
   ],
   "faqs": [
     {
-      "q": "Is the redaction truly permanent?",
-      "a": "Yes, the underlying text and image data is permanently deleted from the PDF structure."
+      "q": "Valóban végleges a szerkesztés?",
+      "a": "Igen, a mögöttes szöveg- és képadatok véglegesen törlődnek a PDF-struktúrából."
     },
     {
-      "q": "Can I redact images too?",
-      "a": "Yes, both text regions and image areas can be permanently redacted."
+      "q": "A képeket is ki tudom szerkeszteni?",
+      "a": "Igen, mind a szöveg-, mind a képterületek véglegesen szerkeszthetők."
     },
     {
-      "q": "Can I choose black or white cover?",
-      "a": "Yes, pick the redaction style that suits your document."
+      "q": "Fekete vagy fehér borítót választhatok?",
+      "a": "Igen, válassza ki a dokumentumának megfelelő szerkesztési stílust."
     },
     {
-      "q": "Does this meet legal standards?",
-      "a": "Our redaction removes data at the PDF object level, meeting court requirements."
+      "q": "Ez megfelel a jogi normáknak?",
+      "a": "A mi szerkesztésünk a bírósági követelményeknek megfelelően eltávolítja az adatokat PDF objektum szinten."
     },
     {
-      "q": "Is this free?",
-      "a": "Igen, teljesen ingyenes."
+      "q": "Ez ingyenes?",
+      "a": "Igen, mindig ingyenes."
     }
-  ]
+  ],
+  "faqTitle": "Gyakran Ismételt Kérdések",
+  "supportCenter": "Támogatási Központ"
 }

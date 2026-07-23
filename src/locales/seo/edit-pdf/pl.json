@@ -1,0 +1,85 @@
+{
+  "title": "Edytuj plik PDF — bezpłatny edytor plików PDF offline",
+  "h1": "Edytuj dokumenty PDF bezpośrednio w przeglądarce",
+  "description": "Dodawaj lokalnie tekst, podpisy i adnotacje do plików PDF. Brak przesyłania, maksymalna prywatność. 100% bezpieczne przetwarzanie lokalne.",
+  "sections": [
+    {
+      "type": "edit_hero_features",
+      "title": "Dlaczego warto edytować pliki PDF lokalnie?",
+      "content": "Przesyłanie wrażliwych umów i formularzy do edytora w chmurze stanowi ogromne ryzyko prywatności. Nasz edytor WebAssembly działa bezpośrednio na Twoim urządzeniu, dzięki czemu Twoje dokumenty nigdy nie opuszczą Twojego komputera."
+    },
+    {
+      "type": "edit_how_to_steps",
+      "title": "Jak edytować plik PDF",
+      "steps": [
+        {
+          "title": "Otwórz dokument",
+          "description": "Wybierz plik PDF, do którego chcesz dodać adnotację lub podpisać."
+        },
+        {
+          "title": "Dodaj tekst i elementy",
+          "description": "Skorzystaj z naszych intuicyjnych narzędzi, aby dodać tekst, narysować lub umieścić obrazy."
+        },
+        {
+          "title": "Zapisz zmiany",
+          "description": "Eksportuj zmodyfikowany plik PDF natychmiast, bez czekania na pobranie."
+        }
+      ],
+      "badgeText": "Krótki przewodnik"
+    },
+    {
+      "type": "edit_geo_targeting",
+      "title": "100% bezpieczne przetwarzanie lokalne",
+      "content": "Wszystkie operacje wykonywane są bezpośrednio na Twoim urządzeniu lokalnym. Korzystamy z zaawansowanej technologii WebAssembly, aby przetwarzać Twoje dokumenty bez konieczności przesyłania ich na serwery zewnętrzne, zapewniając całkowitą prywatność.",
+      "badgeText": "Przetwarzanie lokalne"
+    },
+    {
+      "type": "edit_privacy_security",
+      "title": "Zerowa transmisja danych",
+      "content": "W przeciwieństwie do tradycyjnych edytorów PDF, które przesyłają Twoje pliki na swoje serwery, nasza platforma przetwarza wszystko, co znajduje się w pamięci Twojej przeglądarki.",
+      "badgeText": "Bezpieczeństwo przede wszystkim"
+    },
+    {
+      "type": "edit_performance",
+      "title": "Natychmiastowe renderowanie offline",
+      "content": "Nasz edytor ładuje ogromne pliki PDF w ciągu milisekund. Możesz dodać setki adnotacji bez opóźnień i opóźnień sieciowych.",
+      "badgeText": "Błyskawicznie"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Czy mogę edytować istniejący tekst w pliku PDF?",
+      "a": "Obecnie możesz dodawać nowy tekst, kształty i obrazy do istniejącego dokumentu."
+    },
+    {
+      "q": "Czy moje pliki są gdzieś przesłane?",
+      "a": "Nie, cała edycja odbywa się lokalnie w przeglądarce przy użyciu zestawu WebAssembly."
+    },
+    {
+      "q": "Czy mogę podpisywać dokumenty?",
+      "a": "Tak, możesz narysować swój podpis lub przesłać jego obraz."
+    },
+    {
+      "q": "Czy korzystanie z edytora jest darmowe?",
+      "a": "Tak, jest w 100% darmowy, bez płatnych ścian premium i ukrytych opłat."
+    },
+    {
+      "q": "Czy to działa na urządzeniach mobilnych?",
+      "a": "Tak, edytor jest w pełni responsywny i obsługuje wprowadzanie dotykowe podczas rysowania."
+    }
+  ],
+  "badges": [
+    "Brak znaków wodnych",
+    "100% za darmo",
+    "Edytor offline"
+  ],
+  "stats": [
+    "100% Private",
+    "0 Server Uploads",
+    "Client-Side Only",
+    "No Accounts"
+  ],
+  "buttonText": "Start Editing",
+  "faqTitle": "Często zadawane pytania",
+  "supportCenter": "Centrum wsparcia"
+}

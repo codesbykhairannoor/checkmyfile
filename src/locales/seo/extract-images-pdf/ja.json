@@ -1,67 +1,85 @@
 {
-  "title": "Extract Images from PDF — Offline Extractor",
-  "h1": "Extract All Embedded Images from PDF Files",
-  "description": "Pull out every image from a PDF and download them as PNG or JPG files, all in your browser. No cloud. Ideal for users in Tokyo.",
+  "title": "PDF から画像を抽出 — オフライン抽出",
+  "h1": "PDF ファイルからすべての埋め込み画像を抽出",
+  "description": "PDF からすべての画像を抽出し、PNG または JPG ファイルとしてブラウザでダウンロードします。 雲はありません。 100% 安全なローカル処理。",
+  "buttonText": "Extract All Images",
+  "badges": [
+    "製品写真",
+    "機密図",
+    "ベクトル"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract Images Offline?",
-      "content": "PDFs with confidential diagrams or product photos should never be uploaded. Extract images directly in your browser."
+      "type": "extract_images_hero_features",
+      "title": "画像をオフラインで抽出する理由",
+      "content": "機密の図や製品の写真を含む PDF はアップロードしないでください。 ブラウザで画像を直接抽出します。"
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Extract Images from PDF",
+      "type": "extract_images_how_to_steps",
+      "title": "PDF から画像を抽出する方法",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Open the PDF containing embedded images."
+          "title": "PDF をロード",
+          "description": "画像が埋め込まれている PDF を開きます。"
         },
         {
-          "title": "Scan for Images",
-          "description": "Our engine locates all embedded image objects."
+          "title": "画像をスキャン",
+          "description": "私たちのエンジンは、埋め込まれたすべての画像オブジェクトを見つけます。"
         },
         {
-          "title": "Download ZIP",
-          "description": "Get all extracted images in a single ZIP file."
+          "title": "ZIP をダウンロード",
+          "description": "抽出されたすべてのイメージを 1 つの ZIP ファイルにまとめて取得します。"
         }
-      ]
+      ],
+      "badgeText": "クイックガイド"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Image Extraction in Tokyo",
-      "content": "Publishers and marketers in Tokyo extract product photos and diagrams from PDFs without cloud uploads."
+      "type": "extract_images_geo_targeting",
+      "title": "100% 安全なローカル処理",
+      "content": "すべての操作はローカル デバイス上で直接実行されます。 当社は高度な WebAssembly テクノロジーを使用して、ドキュメントを外部サーバーにアップロードすることなく処理し、完全なプライバシーを確​​保します。",
+      "badgeText": "ローカル処理"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Product Images Stay Confidential",
-      "content": "Unreleased product photos embedded in PDFs extracted locally without any server access."
+      "type": "extract_images_privacy_security",
+      "title": "製品画像は機密扱いにしてください",
+      "content": "サーバーにアクセスせずにローカルで抽出された PDF に埋め込まれた未発表の製品写真。",
+      "badgeText": "セキュリティ第一"
     },
     {
-      "type": "split_performance",
-      "title": "Extract Hundreds of Images Fast",
-      "content": "Extract 500 images from a PDF in seconds. All native browser processing."
+      "type": "extract_images_performance",
+      "title": "数百枚の画像を高速に抽出",
+      "content": "PDF から 500 枚の画像を数秒で抽出します。 すべてネイティブブラウザ処理。",
+      "badgeText": "超高速"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are extracted?",
-      "a": "Images are saved in their original format (PNG, JPG, etc.)."
+      "q": "どのような画像形式が抽出されますか?",
+      "a": "画像は元の形式 (PNG、JPG など) で保存されます。"
     },
     {
-      "q": "Are images at full resolution?",
-      "a": "Yes, extracted at the original embedded resolution."
+      "q": "画像はフル解像度ですか?",
+      "a": "はい、元の埋め込み解像度で抽出されます。"
     },
     {
-      "q": "Can I choose specific pages?",
-      "a": "Yes, specify which pages to extract images from."
+      "q": "特定のページを選択できますか?",
+      "a": "はい、画像を抽出するページを指定します。"
     },
     {
-      "q": "Does it extract vector graphics?",
-      "a": "Vector elements are rasterized to PNG/JPG."
+      "q": "ベクターグラフィックスを抽出しますか?",
+      "a": "ベクター要素は PNG/JPG にラスタライズされます。"
     },
     {
-      "q": "Is this free?",
-      "a": "はい、完全無料です。"
+      "q": "これは無料ですか？",
+      "a": "はい、いつでも無料です。"
     }
-  ]
+  ],
+  "faqTitle": "よくある質問",
+  "supportCenter": "サポート センター"
 }

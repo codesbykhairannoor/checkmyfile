@@ -1,67 +1,85 @@
 {
-  "title": "PDF to Image Converter — Extract Pages Offline",
-  "h1": "Convert PDF Pages to PNG or JPG Images",
-  "description": "Extract every page from a PDF as high-quality images directly in your browser. Zero upload, total privacy. Best for users in New Delhi.",
+  "title": "पीडीएफ से छवि कनवर्टर - पेज ऑफ़लाइन निकालें",
+  "h1": "पीडीएफ पेजों को पीएनजी या जेपीजी छवियों में कनवर्ट करें",
+  "description": "पीडीएफ से प्रत्येक पृष्ठ को सीधे अपने ब्राउज़र में उच्च-गुणवत्ता वाली छवियों के रूप में निकालें। शून्य अपलोड, 100% सुरक्षित स्थानीय प्रसंस्करण।",
+  "buttonText": "Extract Images",
+  "badges": [
+    "डिज़ाइन पोर्टफोलियो",
+    "प्रस्तुतियाँ",
+    "उच्च गुणवत्ता"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract PDF Pages Offline?",
-      "content": "PDFs often contain confidential diagrams, blueprints, or reports. Extract pages as images without any server access."
+      "type": "pdf_image_hero_features",
+      "title": "पीडीएफ पेज ऑफ़लाइन क्यों निकालें?",
+      "content": "पीडीएफ में अक्सर गोपनीय आरेख, ब्लूप्रिंट या रिपोर्ट होती हैं। बिना किसी सर्वर एक्सेस के पृष्ठों को छवियों के रूप में निकालें।"
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Images",
+      "type": "pdf_image_how_to_steps",
+      "title": "पीडीएफ को इमेज में कैसे बदलें",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF you want to extract images from."
+          "title": "पीडीएफ लोड करें",
+          "description": "वह पीडीएफ चुनें जिससे आप छवियां निकालना चाहते हैं।"
         },
         {
-          "title": "Choose Format",
-          "description": "Pick PNG (lossless) or JPG (compressed) output."
+          "title": "प्रारूप चुनें",
+          "description": "पीएनजी (दोषरहित) या जेपीजी (संपीड़ित) आउटपुट चुनें।"
         },
         {
-          "title": "Download Images",
-          "description": "Get all pages as individual image files in a ZIP."
+          "title": "छवियाँ डाउनलोड करें",
+          "description": "सभी पृष्ठों को एक ज़िप में व्यक्तिगत छवि फ़ाइलों के रूप में प्राप्त करें।"
         }
-      ]
+      ],
+      "badgeText": "त्वरित मार्गदर्शिका"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF to Image for New Delhi Designers",
-      "content": "Designers in New Delhi extract PDF pages as images for presentations and social media without cloud uploads."
+      "type": "pdf_image_geo_targeting",
+      "title": "100% सुरक्षित स्थानीय प्रसंस्करण",
+      "content": "सभी ऑपरेशन सीधे आपके स्थानीय डिवाइस पर किए जाते हैं। हम पूर्ण गोपनीयता सुनिश्चित करते हुए, आपके दस्तावेज़ों को बाहरी सर्वर पर अपलोड किए बिना संसाधित करने के लिए उन्नत WebAssembly तकनीक का उपयोग करते हैं।",
+      "badgeText": "स्थानीय प्रसंस्करण"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Confidential Diagrams Stay Private",
-      "content": "Technical blueprints and legal documents extracted as images without any data leaving your device."
+      "type": "pdf_image_privacy_security",
+      "title": "गोपनीय आरेख निजी रहें",
+      "content": "तकनीकी ब्लूप्रिंट और कानूनी दस्तावेज़ आपके डिवाइस से बिना कोई डेटा छोड़े छवियों के रूप में निकाले जाते हैं।",
+      "badgeText": "सुरक्षा पहले"
     },
     {
-      "type": "split_performance",
-      "title": "Extract All Pages Instantly",
-      "content": "A 500-page PDF converted to images in seconds. No upload, no wait."
+      "type": "pdf_image_performance",
+      "title": "सभी पृष्ठ तुरंत निकालें",
+      "content": "500 पेज की पीडीएफ कुछ ही सेकंड में छवियों में परिवर्तित हो गई। कोई अपलोड नहीं, कोई प्रतीक्षा नहीं.",
+      "badgeText": "बिजली की तेजी"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are available?",
-      "a": "PNG and JPG with adjustable quality settings."
+      "q": "कौन से छवि प्रारूप उपलब्ध हैं?",
+      "a": "समायोज्य गुणवत्ता सेटिंग्स के साथ पीएनजी और जेपीजी।"
     },
     {
-      "q": "Can I extract specific pages?",
-      "a": "Yes, specify page ranges like 1-5 or 3,7,12."
+      "q": "क्या मैं विशिष्ट पृष्ठ निकाल सकता हूँ?",
+      "a": "हाँ, 1-5 या 3,7,12 जैसी पृष्ठ श्रेणियाँ निर्दिष्ट करें।"
     },
     {
-      "q": "What resolution are the exported images?",
-      "a": "Default 150 DPI, adjustable up to 300 DPI."
+      "q": "निर्यात की गई छवियाँ किस रिज़ॉल्यूशन की हैं?",
+      "a": "डिफ़ॉल्ट 150 डीपीआई, 300 डीपीआई तक समायोज्य।"
     },
     {
-      "q": "Are all pages exported at once?",
-      "a": "Yes, all selected pages are zipped for a single download."
+      "q": "क्या सभी पृष्ठ एक ही बार में निर्यात किये जाते हैं?",
+      "a": "हां, सभी चयनित पेज एक ही डाउनलोड के लिए ज़िप किए गए हैं।"
     },
     {
-      "q": "Is this free?",
-      "a": "हाँ, पूरी तरह मुफ्त।"
+      "q": "क्या यह मुफ़्त है?",
+      "a": "पूर्णतः निःशुल्क, सदैव।"
     }
-  ]
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न",
+  "supportCenter": "सहायता केंद्र"
 }

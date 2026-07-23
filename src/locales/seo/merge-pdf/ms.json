@@ -1,67 +1,78 @@
 {
-  "title": "Merge PDF - Combine Documents Offline",
-  "h1": "Merge PDF Files Instantly in Your Browser",
-  "description": "Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, perfect for users in Kuala Lumpur.",
+  "title": "Gabung PDF - Gabungkan Dokumen Luar Talian",
+  "h1": "Gabungkan Fail PDF Serta-merta dalam Penyemak Imbas Anda",
+  "description": "Gabungkan berbilang fail PDF ke dalam satu dokumen menggunakan WebAssembly sebelah pelanggan tulen. Tiada muat naik fail, sesuai untuk pengguna di New York.",
   "sections": [
     {
       "type": "merge_hero_features",
-      "title": "Why Merge PDF Offline?",
-      "content": "Instead of uploading sensitive documents to a server, our Merge PDF tool stitches your pages together directly in your browser. Complete privacy."
+      "title": "Mengapa Gabung PDF Luar Talian?",
+      "content": "Daripada memuat naik dokumen sensitif ke pelayan, alat Gabung PDF kami mencantumkan halaman anda secara langsung dalam penyemak imbas anda. Privasi lengkap."
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Merge PDF Files",
+      "title": "Cara Menggabungkan Fail PDF",
       "steps": [
         {
-          "title": "Add Documents",
-          "description": "Select the PDFs you want to merge together."
+          "title": "Tambah Dokumen",
+          "description": "Pilih PDF yang anda ingin gabungkan bersama."
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop files to get the perfect sequence."
+          "title": "Susun Semula Halaman",
+          "description": "Seret dan lepaskan fail untuk mendapatkan urutan yang sempurna."
         },
         {
-          "title": "Merge & Save",
-          "description": "Click merge and download your combined document instantly."
+          "title": "Gabung & Simpan",
+          "description": "Klik cantumkan dan muat turun dokumen gabungan anda serta-merta."
         }
-      ]
+      ],
+      "badgeText": "Panduan Pantas"
     },
     {
       "type": "merge_geo_targeting",
-      "title": "Seamless Merging for users in Kuala Lumpur, MY-14",
-      "content": "No matter if you are in Kuala Lumpur or traveling, combining documents takes zero milliseconds of upload time."
+      "title": "100% Pemprosesan Tempatan Selamat",
+      "content": "Semua operasi dilakukan terus pada peranti tempatan anda. Kami menggunakan teknologi WebAssembly termaju untuk memproses dokumen anda tanpa pernah memuat naiknya ke pelayan luaran, memastikan privasi lengkap.",
+      "badgeText": "Pemprosesan Setempat"
     },
     {
       "type": "merge_privacy_security",
-      "title": "Enterprise-Grade Document Combining",
-      "content": "Merging contracts and invoices? Do it securely with our WASM engine. No traces left behind."
+      "title": "Penggabungan Dokumen Gred Perusahaan",
+      "content": "Menggabungkan kontrak dan invois? Lakukan dengan selamat dengan enjin WASM kami. Tiada kesan tertinggal.",
+      "badgeText": "Keselamatan Diutamakan"
     },
     {
       "type": "merge_performance",
-      "title": "Instant Combination",
-      "content": "Stitching PDFs locally means you can merge a 500-page document faster than you can upload it."
+      "title": "Gabungan Segera",
+      "content": "Mencantum PDF secara setempat bermakna anda boleh menggabungkan dokumen 500 halaman lebih cepat daripada anda boleh memuat naiknya.",
+      "badgeText": "Sepantas Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "Is merging PDFs completely free?",
-      "a": "Yes! Merge as many files as you want without paying a cent."
+      "q": "Adakah penggabungan PDF percuma sepenuhnya?",
+      "a": "Ya! Gabungkan seberapa banyak fail yang anda mahu tanpa membayar satu sen."
     },
     {
-      "q": "Are my merged files uploaded?",
-      "a": "No, all merging happens offline in your browser."
+      "q": "Adakah fail gabungan saya dimuat naik?",
+      "a": "Tidak, semua penggabungan berlaku di luar talian dalam penyemak imbas anda."
     },
     {
-      "q": "Can I reorder the files before merging?",
-      "a": "Yes, just drag and drop the files in the preview window."
+      "q": "Bolehkah saya menyusun semula fail sebelum digabungkan?",
+      "a": "Ya, hanya seret dan lepaskan fail dalam tetingkap pratonton."
     },
     {
-      "q": "Is there a limit on how many files I can merge?",
-      "a": "No artificial limits! Merge 10 or 100 files depending on your RAM."
+      "q": "Adakah terdapat had pada berapa banyak fail yang boleh saya gabungkan?",
+      "a": "Tiada had buatan! Gabungkan 10 atau 100 fail bergantung pada RAM anda."
     },
     {
-      "q": "Does merging ruin the formatting?",
-      "a": "Not at all. The original layers and vector data are perfectly stitched together."
+      "q": "Adakah penggabungan merosakkan pemformatan?",
+      "a": "Tidak sama sekali. Lapisan asal dan data vektor dicantum dengan sempurna."
     }
+  ],
+  "faqTitle": "Soalan Lazim",
+  "supportCenter": "Pusat Sokongan",
+  "badges": [
+    "Kependaman pelayan sifar",
+    "Tiada lebar jalur muat naik",
+    "Pemprosesan segera"
   ]
 }

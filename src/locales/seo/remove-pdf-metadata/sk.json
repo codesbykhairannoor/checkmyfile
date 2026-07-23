@@ -1,67 +1,85 @@
 {
-  "title": "Remove PDF Metadata — Strip Hidden Author Data Offline",
-  "h1": "Strip All Hidden Metadata from PDF Files Instantly",
-  "description": "Remove author names, company info, GPS locations, and revision history from PDFs entirely in your browser. No upload. Perfect for Bratislava users.",
+  "title": "Odstrániť metadáta PDF – odstrániť skryté údaje autora offline",
+  "h1": "Okamžite odstráňte všetky skryté metadáta zo súborov PDF",
+  "description": "Odstráňte mená autorov, informácie o spoločnosti, polohy GPS a históriu revízií zo súborov PDF úplne vo svojom prehliadači. Žiadne nahrávanie. 100% bezpečné lokálne spracovanie.",
+  "buttonText": "Process Document",
+  "badges": [
+    "Bezpečné a súkromné ​​",
+    "Offline engine",
+    "Nulové nahrávanie"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "metadata_hero_features",
-      "title": "Why Strip PDF Metadata?",
-      "content": "PDFs carry hidden metadata — your name, your company, revision history. Strip it all before sharing publicly, entirely offline."
+      "title": "Prečo odstrániť metadáta PDF?",
+      "content": "Súbory PDF obsahujú skryté metadáta – vaše meno, vašu spoločnosť, históriu verzií. Pred verejným zdieľaním úplne offline odstráňte všetko."
     },
     {
       "type": "metadata_how_to_steps",
-      "title": "Before & After — How Metadata Removal Works",
+      "title": "Pred a po – Ako funguje odstránenie metadát",
       "steps": [
         {
-          "title": "Open Your PDF",
-          "description": "Select the PDF with hidden metadata to remove."
+          "title": "Otvoriť svoj PDF",
+          "description": "Vyberte súbor PDF so skrytými metadátami, ktorý chcete odstrániť."
         },
         {
-          "title": "Preview Hidden Data",
-          "description": "See exactly what metadata — author, GPS, history — is embedded."
+          "title": "Náhľad skrytých údajov",
+          "description": "Presne uvidíte, aké metadáta – autor, GPS, história – sú vložené."
         },
         {
           "title": "Strip & Download Clean PDF",
-          "description": "Remove all metadata instantly and save a clean, anonymous PDF."
+          "description": "Okamžite odstráňte všetky metadáta a uložte čisté, anonymné PDF."
         }
-      ]
+      ],
+      "badgeText": "Rýchly sprievodca"
     },
     {
       "type": "metadata_geo_targeting",
-      "title": "Metadata Privacy Tool for Bratislava Professionals",
-      "content": "Journalists, legal professionals, and privacy-conscious users in Bratislava strip metadata before publishing or sharing PDFs externally."
+      "title": "100% bezpečné miestne spracovanie",
+      "content": "Všetky operácie sa vykonávajú priamo na vašom lokálnom zariadení. Používame pokročilú technológiu WebAssembly na spracovanie vašich dokumentov bez ich nahrávania na externé servery, čím zaisťujeme úplné súkromie.",
+      "badgeText": "Miestne spracovanie"
     },
     {
       "type": "metadata_privacy_security",
-      "title": "All Metadata Types Permanently Erased",
-      "content": "Author name, company, GPS coordinates from embedded images, revision history, software fingerprints — all permanently removed."
+      "title": "Všetky typy metadát sú natrvalo vymazané",
+      "content": "Meno autora, spoločnosť, súradnice GPS z vložených obrázkov, história revízií, softvérové ​​odtlačky prstov – všetko natrvalo odstránené.",
+      "badgeText": "Bezpečnosť na prvom mieste"
     },
     {
       "type": "metadata_performance",
-      "title": "Strip Metadata in Milliseconds",
-      "content": "Metadata removal takes milliseconds and often reduces file size by 10–15%. All offline."
+      "title": "Strip metadáta v milisekundách",
+      "content": "Odstránenie metadát trvá milisekundy a často znižuje veľkosť súboru o 10 – 15 %. Všetko offline.",
+      "badgeText": "Rýchlosť blesku"
     }
   ],
   "faqs": [
     {
-      "q": "What metadata is removed?",
-      "a": "Author, creator, producer, title, keywords, and all XMP/EXIF data."
+      "q": "Aké metadáta sa odstránia?",
+      "a": "Autor, tvorca, producent, názov, kľúčové slová a všetky údaje XMP/EXIF."
     },
     {
-      "q": "Are document bookmarks affected?",
-      "a": "No, bookmarks and structure are preserved; only metadata is removed."
+      "q": "Sú ovplyvnené záložky dokumentov?",
+      "a": "Nie, záložky a štruktúra sú zachované; odstránia sa iba metadáta."
     },
     {
-      "q": "Can I preview the metadata first?",
-      "a": "Yes, we show a list of all detected metadata before removing."
+      "q": "Môžem si najskôr zobraziť ukážku metadát?",
+      "a": "Áno, pred odstránením zobrazujeme zoznam všetkých zistených metadát."
     },
     {
-      "q": "Is the document content affected?",
-      "a": "No, the content, images, and structure remain intact."
+      "q": "Je ovplyvnený obsah dokumentu?",
+      "a": "Nie, obsah, obrázky a štruktúra zostávajú nedotknuté."
     },
     {
-      "q": "Is this free?",
-      "a": "Áno, úplne zadarmo."
+      "q": "Je to zadarmo?",
+      "a": "Áno, vždy zadarmo."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
 }

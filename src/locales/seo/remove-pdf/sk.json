@@ -1,0 +1,85 @@
+{
+  "title": "Odstrániť stránky z PDF — Odstrániť stránky PDF offline",
+  "h1": "Okamžite odstrániť stránky z PDF",
+  "description": "Bezpečne odstráňte nechcené stránky zo súboru PDF vo svojom prehliadači. Rýchle a úplne bezpečné.",
+  "buttonText": "Remove Pages",
+  "badges": [
+    "Vybrať a odstrániť",
+    "Vizuálny editor",
+    "Nulová latencia"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "remove_hero_features",
+      "title": "Prečo odstrániť stránky lokálne?",
+      "content": "Odstránenie citlivých alebo nepotrebných strán z dokumentu by sa malo vykonávať na vašom zariadení, nie na serveri. Zabezpečujeme 100% súkromie."
+    },
+    {
+      "type": "remove_how_to_steps",
+      "title": "Ako odstrániť stránky PDF",
+      "steps": [
+        {
+          "title": "Otvoriť PDF",
+          "description": "Načítajte súbor PDF, ktorý chcete vyčistiť."
+        },
+        {
+          "title": "Vyberte Stránky na vymazanie",
+          "description": "Umiestnite kurzor myši na stránky a kliknutím na ikonu koša ich označte na odstránenie."
+        },
+        {
+          "title": "Export Clean PDF",
+          "description": "Stiahnite si nový PDF bez odstránených stránok."
+        }
+      ],
+      "badgeText": "Rýchly sprievodca"
+    },
+    {
+      "type": "remove_geo_targeting",
+      "title": "100% bezpečné miestne spracovanie",
+      "content": "Všetky operácie sa vykonávajú priamo na vašom lokálnom zariadení. Používame pokročilú technológiu WebAssembly na spracovanie vašich dokumentov bez ich nahrávania na externé servery, čím zaisťujeme úplné súkromie.",
+      "badgeText": "Miestne spracovanie"
+    },
+    {
+      "type": "remove_privacy_security",
+      "title": "Súkromie úplného vymazania",
+      "content": "Keď odstránite stránku, pred uložením sa natrvalo odstráni z dokumentu v pamäti prehliadača.",
+      "badgeText": "Bezpečnosť na prvom mieste"
+    },
+    {
+      "type": "remove_performance",
+      "title": "Okamžité odstránenie stránky",
+      "content": "Extrahovanie a odstraňovanie stránok aj z 1000-stranového dokumentu trvá milisekundy pomocou nášho optimalizovaného WASM motora.",
+      "badgeText": "Rýchlosť blesku"
+    }
+  ],
+  "faqTitle": "Často kladené otázky",
+  "faqs": [
+    {
+      "q": "Dajú sa odstránené stránky obnoviť?",
+      "a": "Po stiahnutí nového PDF sa odstránené strany natrvalo odstránia z tohto súboru. Váš pôvodný súbor zostane nedotknutý."
+    },
+    {
+      "q": "Musím nahrať svoje PDF?",
+      "a": "Nie. Celý proces odstránenia stránky prebieha lokálne vo vašom webovom prehliadači."
+    },
+    {
+      "q": "Existuje obmedzenie počtu stránok, ktoré môžem odstrániť?",
+      "a": "Nie, môžete odstrániť toľko stránok, koľko chcete, úplne zadarmo."
+    },
+    {
+      "q": "Zmení sa rozloženie zostávajúcich strán?",
+      "a": "Nie, zvyšné strany si zachovajú presné pôvodné formátovanie a rozloženie."
+    },
+    {
+      "q": "Môžem vybrať viacero stránok naraz?",
+      "a": "Áno, môžete kliknúť na viacero stránok a označiť ich všetky na odstránenie súčasne."
+    }
+  ],
+  "supportCenter": "Centrum podpory"
+}

@@ -1,67 +1,78 @@
 {
-  "title": "Merge PDF - Combine Documents Offline",
-  "h1": "Merge PDF Files Instantly in Your Browser",
-  "description": "Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, perfect for users in Warsaw.",
+  "title": "Scal PDF — łącz dokumenty w trybie offline",
+  "h1": "Scal pliki PDF natychmiast w swojej przeglądarce",
+  "description": "Połącz wiele plików PDF w jeden dokument, korzystając wyłącznie z modułu WebAssembly po stronie klienta. Brak przesyłania plików, idealny dla użytkowników w Nowym Jorku.",
   "sections": [
     {
       "type": "merge_hero_features",
-      "title": "Why Merge PDF Offline?",
-      "content": "Instead of uploading sensitive documents to a server, our Merge PDF tool stitches your pages together directly in your browser. Complete privacy."
+      "title": "Dlaczego warto scalić pliki PDF offline?",
+      "content": "Zamiast przesyłać poufne dokumenty na serwer, nasze narzędzie Scal pliki PDF łączy strony bezpośrednio w przeglądarce. Pełna prywatność."
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Merge PDF Files",
+      "title": "Jak scalić pliki PDF",
       "steps": [
         {
-          "title": "Add Documents",
-          "description": "Select the PDFs you want to merge together."
+          "title": "Dodaj dokumenty",
+          "description": "Wybierz pliki PDF, które chcesz połączyć."
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop files to get the perfect sequence."
+          "title": "Zmień kolejność stron",
+          "description": "Przeciągnij i upuść pliki, aby uzyskać idealną sekwencję."
         },
         {
-          "title": "Merge & Save",
-          "description": "Click merge and download your combined document instantly."
+          "title": "Scal i zapisz",
+          "description": "Kliknij opcję Scal i natychmiast pobierz połączony dokument."
         }
-      ]
+      ],
+      "badgeText": "Krótki przewodnik"
     },
     {
       "type": "merge_geo_targeting",
-      "title": "Seamless Merging for users in Warsaw, PL-MZ",
-      "content": "No matter if you are in Warsaw or traveling, combining documents takes zero milliseconds of upload time."
+      "title": "100% bezpieczne przetwarzanie lokalne",
+      "content": "Wszystkie operacje wykonywane są bezpośrednio na Twoim urządzeniu lokalnym. Korzystamy z zaawansowanej technologii WebAssembly, aby przetwarzać Twoje dokumenty bez konieczności przesyłania ich na serwery zewnętrzne, zapewniając całkowitą prywatność.",
+      "badgeText": "Przetwarzanie lokalne"
     },
     {
       "type": "merge_privacy_security",
-      "title": "Enterprise-Grade Document Combining",
-      "content": "Merging contracts and invoices? Do it securely with our WASM engine. No traces left behind."
+      "title": "Łączenie dokumentów klasy korporacyjnej",
+      "content": "Łączenie umów i faktur? Zrób to bezpiecznie dzięki naszemu silnikowi WASM. Nie pozostawiono żadnych śladów.",
+      "badgeText": "Bezpieczeństwo przede wszystkim"
     },
     {
       "type": "merge_performance",
-      "title": "Instant Combination",
-      "content": "Stitching PDFs locally means you can merge a 500-page document faster than you can upload it."
+      "title": "Natychmiastowa kombinacja",
+      "content": "Lokalne łączenie plików PDF oznacza, że ​​możesz scalić 500-stronicowy dokument szybciej, niż możesz go przesłać.",
+      "badgeText": "Błyskawicznie"
     }
   ],
   "faqs": [
     {
-      "q": "Is merging PDFs completely free?",
-      "a": "Yes! Merge as many files as you want without paying a cent."
+      "q": "Czy łączenie plików PDF jest całkowicie bezpłatne?",
+      "a": "Tak! Scal dowolną liczbę plików, nie płacąc ani centa."
     },
     {
-      "q": "Are my merged files uploaded?",
-      "a": "No, all merging happens offline in your browser."
+      "q": "Czy moje scalone pliki zostały przesłane?",
+      "a": "Nie, całe łączenie odbywa się w trybie offline w Twojej przeglądarce."
     },
     {
-      "q": "Can I reorder the files before merging?",
-      "a": "Yes, just drag and drop the files in the preview window."
+      "q": "Czy mogę zmienić kolejność plików przed połączeniem?",
+      "a": "Tak, po prostu przeciągnij i upuść pliki w oknie podglądu."
     },
     {
-      "q": "Is there a limit on how many files I can merge?",
-      "a": "No artificial limits! Merge 10 or 100 files depending on your RAM."
+      "q": "Czy istnieje ograniczenie liczby plików, które mogę scalić?",
+      "a": "Żadnych sztucznych ograniczeń! Scal 10 lub 100 plików w zależności od pamięci RAM."
     },
     {
-      "q": "Does merging ruin the formatting?",
-      "a": "Not at all. The original layers and vector data are perfectly stitched together."
+      "q": "Czy scalanie psuje formatowanie?",
+      "a": "Zupełnie nie. Oryginalne warstwy i dane wektorowe są doskonale połączone."
     }
+  ],
+  "faqTitle": "Często zadawane pytania",
+  "supportCenter": "Centrum wsparcia",
+  "badges": [
+    "Zero opóźnień serwera",
+    "Brak przepustowości przesyłania",
+    "Natychmiastowe przetwarzanie"
   ]
 }

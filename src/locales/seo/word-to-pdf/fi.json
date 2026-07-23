@@ -1,67 +1,80 @@
 {
-  "title": "Word to PDF Converter — No Upload Required",
-  "h1": "Convert Word Documents to PDF Instantly",
-  "description": "Transform .docx files into perfect PDFs directly in your browser. Zero upload, 100% private. Ideal for users in Helsinki.",
+  "title": "Word to PDF Converter — Ei latausta vaadittu",
+  "h1": "Muunna Word-asiakirjat PDF-muotoon välittömästi",
+  "description": "Muunna .docx-tiedostot täydellisiksi PDF-tiedostoiksi suoraan selaimessasi. Ei latausta, 100% yksityinen. Ihanteellinen Helsingin käyttäjille.",
+  "buttonText": "Muunna asiakirja",
+  "badges": [
+    "Työsopimukset",
+    "Oikeudelliset alushousut",
+    "Ansioluettelot & CV:t"
+  ],
+  "stats": [
+    "100 %",
+    "Paikallinen",
+    "0s",
+    "Odota Aika"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Word to PDF Offline?",
-      "content": "Your Word document contains sensitive data. Our converter runs entirely in WebAssembly — your file never touches a server."
+      "type": "word_hero_features",
+      "title": "Miksi käyttää offline-tilassa?",
+      "content": "Word-asiakirjasi sisältää arkaluontoisia tietoja. Muuntimemme toimii kokonaan WebAssemblyssa – tiedostosi ei koskaan kosketa palvelinta."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Word to PDF",
+      "type": "word_how_to_steps",
+      "title": "Kuinka käyttää",
       "steps": [
         {
-          "title": "Select .docx File",
-          "description": "Pick your Word document from your computer."
+          "title": "Valitse .docx-tiedosto",
+          "description": "Valitse Word-dokumentti tietokoneeltasi."
         },
         {
-          "title": "Preview Output",
-          "description": "See the PDF rendering before finalizing."
+          "title": "Esikatselutulos",
+          "description": "Katso PDF-renderöinti ennen viimeistelyä."
         },
         {
-          "title": "Download PDF",
-          "description": "Save your perfectly converted PDF instantly."
+          "title": "Lataa PDF",
+          "description": "Tallenna täydellisesti muunnetut PDF-tiedostot välittömästi."
         }
       ]
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Word to PDF for Helsinki Users",
-      "content": "Used by professionals in Helsinki who need to share documents without losing formatting."
+      "type": "word_geo_targeting",
+      "title": "Word to PDF helsinkiläisille käyttäjille",
+      "content": "Sitä käyttävät helsinkiläiset ammattilaiset, joiden on jaettava asiakirjoja muotoilua menettämättä."
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Your Contracts Stay Private",
-      "content": "Converting employment contracts? Legal briefs? Our WASM processor never phones home."
+      "type": "word_privacy_security",
+      "title": "Sopimuksesi pysyvät yksityisinä",
+      "content": "Työsopimusten muuntaminen? Oikeudelliset alushousut? WASM-prosessorimme ei koskaan soita kotiin."
     },
     {
-      "type": "combiner_performance",
-      "title": "No More Conversion Queues",
-      "content": "Cloud converters put you in a queue. Ours converts in under 2 seconds, entirely offline."
+      "type": "word_performance",
+      "title": "Ei enää tulosjonoja",
+      "content": "Pilvimuuntimet asettavat sinut jonoon. Meidän muunnos alle kahdessa sekunnissa, täysin offline-tilassa."
     }
   ],
   "faqs": [
     {
-      "q": "Does it preserve Word formatting?",
-      "a": "Yes, fonts, tables, and images are preserved using our WASM renderer."
+      "q": "Säilyttääkö se Wordin muotoilun?",
+      "a": "Kyllä, fontit, taulukot ja kuvat säilytetään WASM-renderöijillämme."
     },
     {
-      "q": "What Word versions are supported?",
-      "a": "All modern .docx files are supported."
+      "q": "Mitä Word-versioita tuetaan?",
+      "a": "Kaikki nykyaikaiset .docx-tiedostot ovat tuettuja."
     },
     {
-      "q": "Is there a file size limit?",
-      "a": "No server limits! Only your device RAM is the constraint."
+      "q": "Onko tiedostokokorajoitusta?",
+      "a": "Ei palvelinrajoituksia! Vain laitteesi RAM on rajoitus."
     },
     {
-      "q": "Can I batch convert multiple files?",
-      "a": "Yes, select multiple .docx files at once."
+      "q": "Voinko erämuuntaa useita tiedostoja?",
+      "a": "Kyllä, valitse useita .docx-tiedostoja kerralla."
     },
     {
-      "q": "Is this free?",
+      "q": "Onko tämä ilmainen?",
       "a": "Kyllä, täysin ilmainen."
     }
-  ]
+  ],
+  "faqTitle": "Usein Kysytyt Kysymykset"
 }

@@ -1,67 +1,80 @@
 {
-  "title": "PDF to PowerPoint — Recover Editable Slides",
-  "h1": "Convert PDF to PowerPoint Presentation Offline",
-  "description": "Transform PDF documents back into editable .pptx presentations locally. No cloud needed. Perfect for users in Helsinki.",
+  "title": "PDF PowerPointiin – Palauta muokattavat diat",
+  "h1": "Muunna PDF PowerPoint-esitykseen offline-tilassa",
+  "description": "Muunna PDF-dokumentit takaisin muokattaviksi .pptx-esityksiksi paikallisesti. Pilviä ei tarvita. Täydellinen Helsingin käyttäjille.",
+  "buttonText": "Muunna PPT:ksi",
+  "badges": [
+    "Muokattavat diat",
+    "Esityksen palautus",
+    "Nopea muunnos"
+  ],
+  "stats": [
+    "100 %",
+    "Paikallinen",
+    "0s",
+    "Odota Aika"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF to PowerPoint Offline?",
-      "content": "Recovering slide content from a PDF for editing should not require uploading sensitive decks to a cloud service."
+      "title": "Miksi käyttää offline-tilassa?",
+      "content": "Diasisällön palauttaminen PDF-tiedostosta muokkausta varten ei saa edellyttää arkaluonteisten kansien lataamista pilvipalveluun."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to PowerPoint",
+      "title": "Kuinka käyttää",
       "steps": [
         {
-          "title": "Upload PDF",
-          "description": "Select the PDF containing your slide content."
+          "title": "Lataa PDF",
+          "description": "Valitse dian sisällön sisältävä PDF."
         },
         {
-          "title": "Map Pages to Slides",
-          "description": "Each PDF page becomes one editable slide."
+          "title": "Yhdistä sivut Slidesiin",
+          "description": "Jokaisesta PDF-sivusta tulee yksi muokattava dia."
         },
         {
-          "title": "Download .pptx",
-          "description": "Get your fully editable PowerPoint presentation."
+          "title": "Lataa .pptx",
+          "description": "Hanki täysin muokattavissa oleva PowerPoint-esitys."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "Slide Recovery in Helsinki",
-      "content": "Presenters in Helsinki use our tool to recover and re-edit presentations from old PDF archives."
+      "title": "Slide Recovery Helsingissä",
+      "content": "Helsingin esittelijät käyttävät työkaluamme vanhojen PDF-arkistojen esitysten palauttamiseen ja muokkaamiseen."
     },
     {
       "type": "split_privacy_security",
-      "title": "Your Slides Are Never Exposed",
-      "content": "Confidential slide decks recovered and converted without any server interaction."
+      "title": "Diojasi ei koskaan paljasteta",
+      "content": "Luottamukselliset diat palautettiin ja muunnettiin ilman palvelimen vuorovaikutusta."
     },
     {
       "type": "split_performance",
-      "title": "Convert Slides at Lightning Speed",
-      "content": "A 60-slide PDF converted to PowerPoint in under 10 seconds with zero upload time."
+      "title": "Muunna dioja salaman nopeudella",
+      "content": "60 dian PDF muunnetaan PowerPointiksi alle 10 sekunnissa ilman latausaikaa."
     }
   ],
   "faqs": [
     {
-      "q": "Are slide layouts preserved?",
-      "a": "Content is mapped to slides; some layout adjustments may be needed."
+      "q": "Säilytetäänkö diojen asettelut?",
+      "a": "Sisältö on kartoitettu dioihin; joitain asettelun muutoksia saatetaan tarvita."
     },
     {
-      "q": "Can I edit the slides after?",
-      "a": "Yes, the .pptx file is fully editable in PowerPoint or Google Slides."
+      "q": "Voinko muokata dioja sen jälkeen?",
+      "a": "Kyllä, .pptx-tiedosto on täysin muokattavissa PowerPointissa tai Google Slidesissa."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No, convert as many pages as your RAM allows."
+      "q": "Onko sivurajoitusta?",
+      "a": "Ei, muunna niin monta sivua kuin RAM-muistisi sallii."
     },
     {
-      "q": "Does it work with image-heavy PDFs?",
-      "a": "Yes, images are embedded in each slide."
+      "q": "Toimiiko se paljon kuvia sisältävien PDF-tiedostojen kanssa?",
+      "a": "Kyllä, kuvat upotetaan jokaiseen diaan."
     },
     {
-      "q": "Is this free?",
+      "q": "Onko tämä ilmainen?",
       "a": "Kyllä, täysin ilmainen."
     }
-  ]
+  ],
+  "faqTitle": "Usein Kysytyt Kysymykset"
 }

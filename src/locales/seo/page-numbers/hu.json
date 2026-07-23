@@ -1,67 +1,85 @@
 {
-  "title": "Add Page Numbers to PDF — Offline Number Stamp",
-  "h1": "Insert Page Numbers into PDF Documents Locally",
-  "description": "Stamp page numbers at the header or footer of your PDF entirely in your browser. No upload. Ideal for users in Budapest.",
+  "title": "Oldalszámok hozzáadása a PDF-hez — Offline számbélyegző",
+  "h1": "Oldalszámok beszúrása PDF dokumentumokba helyileg",
+  "description": "Az oldalszámokat bélyegezze meg a PDF-fájl fejlécében vagy láblécében a böngészőben. Gyors és teljesen biztonságos.",
+  "buttonText": "Add Page Numbers",
+  "badges": [
+    "Egyéni pozíció",
+    "Fejléc és lábléc",
+    "Bates számozás"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Add Page Numbers Offline?",
-      "content": "Page numbers are a formatting step, not a reason to upload confidential documents to a cloud service."
+      "type": "pagenum_hero_features",
+      "title": "Miért adjunk hozzá oldalszámokat offline módban?",
+      "content": "Az oldalszámok formázási lépést jelentenek, nem pedig okot a bizalmas dokumentumok felhőszolgáltatásba való feltöltésére."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Add Page Numbers",
+      "type": "pagenum_how_to_steps",
+      "title": "Oldalszámok hozzáadása",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to number."
+          "title": "PDF megnyitása",
+          "description": "Válassza ki a számozni kívánt PDF-fájlt."
         },
         {
-          "title": "Configure Style",
-          "description": "Choose position, format (1/12, Page 1, i, ii…), and font."
+          "title": "Stílus konfigurálása",
+          "description": "Válassza ki a pozíciót, a formátumot (1/12, 1. oldal, i, ii…) és a betűtípust."
         },
         {
-          "title": "Apply & Download",
-          "description": "Download your paginated PDF instantly."
+          "title": "Alkalmazás és letöltés",
+          "description": "Azonnal töltse le oldalszámozott PDF-jét."
         }
-      ]
+      ],
+      "badgeText": "Gyors útmutató"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Page Numbering for Budapest Legal Docs",
-      "content": "Legal professionals in Budapest number briefs and reports locally without cloud service dependency."
+      "type": "pagenum_geo_targeting",
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Minden művelet közvetlenül a helyi eszközön történik. Fejlett WebAssembly technológiát használunk a dokumentumok feldolgozásához anélkül, hogy azokat külső szerverekre feltöltenénk, így biztosítva a teljes adatvédelmet.",
+      "badgeText": "Helyi feldolgozás"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Internal Documents Stay Numbered & Private",
-      "content": "Add page numbers to contracts and confidential reports without any server involvement."
+      "type": "pagenum_privacy_security",
+      "title": "A belső dokumentumok számozottak és privátak maradnak",
+      "content": "Adjon oldalszámokat a szerződésekhez és a bizalmas jelentésekhez a szerver közreműködése nélkül.",
+      "badgeText": "Első a biztonság"
     },
     {
-      "type": "organizer_performance",
-      "title": "Number a 1000-Page PDF Instantly",
-      "content": "Stamping page numbers locally takes milliseconds for any size document."
+      "type": "pagenum_performance",
+      "title": "Számoljon meg egy 1000 oldalas PDF-et azonnal",
+      "content": "Az oldalszámok helyi bélyegzése ezredmásodperceket vesz igénybe bármilyen méretű dokumentum esetén.",
+      "badgeText": "Villámgyors"
     }
   ],
   "faqs": [
     {
-      "q": "What number formats are available?",
-      "a": "Arabic (1, 2, 3), Roman (i, ii, iii), and letter (a, b, c) formats."
+      "q": "Milyen számformátumok állnak rendelkezésre?",
+      "a": "Arab (1, 2, 3), római (i, ii, iii) és betű (a, b, c) formátum."
     },
     {
-      "q": "Can I start from a custom number?",
-      "a": "Yes, set any starting page number."
+      "q": "Kezdhetek egyéni számmal?",
+      "a": "Igen, állítson be bármilyen kezdőoldalszámot."
     },
     {
-      "q": "Can I skip numbering the first page?",
-      "a": "Yes, set the page offset to skip cover pages."
+      "q": "Kihagyhatom az első oldal számozását?",
+      "a": "Igen, állítsa be az oldaleltolást a borítólapok kihagyásához."
     },
     {
-      "q": "Where can I position numbers?",
-      "a": "Header-left, header-center, header-right, and same for footer."
+      "q": "Hol helyezhetem el a számokat?",
+      "a": "Fejléc balra, fejléc közepére, fejléc jobbra, és ugyanez a láblécnél."
     },
     {
-      "q": "Is this free?",
-      "a": "Igen, teljesen ingyenes."
+      "q": "Ez ingyenes?",
+      "a": "Igen, mindig ingyenes."
     }
-  ]
+  ],
+  "faqTitle": "Gyakran Ismételt Kérdések",
+  "supportCenter": "Támogatási Központ"
 }

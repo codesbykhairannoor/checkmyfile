@@ -1,0 +1,85 @@
+{
+  "title": "Modifica PDF - Editor PDF offline gratuito",
+  "h1": "Modifica documenti PDF direttamente nel tuo browser",
+  "description": "Aggiungi testo, firme e annotazioni ai tuoi file PDF localmente. Nessun caricamento, massima privacy. Elaborazione locale sicura al 100%.",
+  "sections": [
+    {
+      "type": "edit_hero_features",
+      "title": "Perché modificare i PDF localmente?",
+      "content": "Il caricamento di contratti e moduli sensibili su un editor cloud rappresenta un enorme rischio per la privacy. Il nostro editor WebAssembly viene eseguito direttamente sul tuo dispositivo, garantendo che i tuoi documenti non lascino mai il tuo computer."
+    },
+    {
+      "type": "edit_how_to_steps",
+      "title": "Come modificare un PDF",
+      "steps": [
+        {
+          "title": "Apri documento",
+          "description": "Seleziona il file PDF che desideri annotare o firmare."
+        },
+        {
+          "title": "Aggiungi testo ed elementi",
+          "description": "Utilizza i nostri strumenti intuitivi per aggiungere testo, disegnare o posizionare immagini."
+        },
+        {
+          "title": "Salva modifiche",
+          "description": "Esporta istantaneamente il PDF modificato senza attendere i download."
+        }
+      ],
+      "badgeText": "Guida rapida"
+    },
+    {
+      "type": "edit_geo_targeting",
+      "title": "Elaborazione locale sicura al 100%",
+      "content": "Tutte le operazioni vengono eseguite direttamente sul tuo dispositivo locale. Utilizziamo la tecnologia avanzata WebAssembly per elaborare i tuoi documenti senza mai caricarli su server esterni, garantendo la completa privacy.",
+      "badgeText": "Elaborazione locale"
+    },
+    {
+      "type": "edit_privacy_security",
+      "title": "Trasmissione dati zero",
+      "content": "A differenza dei tradizionali editor PDF che caricano i tuoi file sui loro server, la nostra piattaforma elabora tutto nella memoria del tuo browser.",
+      "badgeText": "La sicurezza prima di tutto"
+    },
+    {
+      "type": "edit_performance",
+      "title": "Rendering offline istantaneo",
+      "content": "Il nostro editor carica enormi file PDF in millisecondi. Puoi aggiungere centinaia di annotazioni senza alcun ritardo o ritardo della rete.",
+      "badgeText": "Velocissimo"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Posso modificare il testo esistente nel PDF?",
+      "a": "Attualmente puoi aggiungere nuovo testo, forme e immagini al documento esistente."
+    },
+    {
+      "q": "I miei file vengono caricati da qualche parte?",
+      "a": "No, tutte le modifiche avvengono localmente all'interno del tuo browser utilizzando WebAssembly."
+    },
+    {
+      "q": "Posso firmare i documenti?",
+      "a": "Sì, puoi disegnare la tua firma o caricarne un'immagine."
+    },
+    {
+      "q": "L'editor è gratuito?",
+      "a": "Sì, è gratuito al 100% senza paywall premium o costi nascosti."
+    },
+    {
+      "q": "Funziona sui dispositivi mobili?",
+      "a": "Sì, l'editor è completamente reattivo e supporta l'input touch per il disegno."
+    }
+  ],
+  "badges": [
+    "Nessuna filigrana",
+    "100% gratuito",
+    "Redattore offline"
+  ],
+  "stats": [
+    "100% Private",
+    "0 Server Uploads",
+    "Client-Side Only",
+    "No Accounts"
+  ],
+  "buttonText": "Start Editing",
+  "faqTitle": "Domande frequenti",
+  "supportCenter": "Centro di supporto"
+}

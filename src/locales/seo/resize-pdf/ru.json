@@ -1,67 +1,85 @@
 {
-  "title": "Resize PDF Pages — Change Paper Size Offline",
-  "h1": "Resize PDF Pages to A4, Letter, or Custom Sizes",
-  "description": "Change the paper size of every PDF page to A4, US Letter, or custom dimensions entirely in your browser. No upload. Ideal for users in Moscow.",
+  "title": "Изменение размера страниц PDF — изменение размера бумаги в автономном режиме",
+  "h1": "Изменение размера страниц PDF до формата A4, Letter или нестандартного размера",
+  "description": "Полностью измените размер бумаги каждой страницы PDF на A4, US Letter или другие размеры в браузере. Нет загрузки. 100% безопасная локальная обработка.",
+  "buttonText": "Resize Pages",
+  "badges": [
+    "A4, Letter, Пользовательский",
+    "Добавить поля",
+    "Исправление формата"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Resize PDFs Locally?",
-      "content": "Preparing documents for printing requires proper page sizing. Resize locally without uploading internal documents to the cloud."
+      "type": "resize_hero_features",
+      "title": "Зачем изменять размер PDF-файлов локально?",
+      "content": "Подготовка документов к печати требует правильного размера страницы. Изменяйте размеры локально, не загружая внутренние документы в облако."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Resize PDF Pages",
+      "type": "resize_how_to_steps",
+      "title": "Как изменить размер страниц PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page dimensions."
+          "title": "Открыть PDF",
+          "description": "Загрузите PDF-файл с неправильными размерами страницы."
         },
         {
-          "title": "Select Target Size",
-          "description": "Choose A4, Letter, A3, or enter custom dimensions."
+          "title": "Выберите целевой размер",
+          "description": "Выберите A4, Letter, A3 или введите нестандартные размеры."
         },
         {
-          "title": "Download Resized PDF",
-          "description": "Get your properly sized document instantly."
+          "title": "Скачать PDF с измененным размером",
+          "description": "Получите документ нужного размера мгновенно."
         }
-      ]
+      ],
+      "badgeText": "Краткое руководство"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Resizing for Moscow Print Shops",
-      "content": "Print shops and offices in Moscow resize documents to standard sizes without cloud dependency."
+      "type": "resize_geo_targeting",
+      "title": "100% безопасная локальная обработка",
+      "content": "Все операции выполняются непосредственно на вашем локальном устройстве. Мы используем передовую технологию WebAssembly для обработки ваших документов, не загружая их на внешние серверы, обеспечивая полную конфиденциальность.",
+      "badgeText": "Локальная обработка"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Internal Documents Stay Internal",
-      "content": "Resize business reports and proposals without any server-side processing."
+      "type": "resize_privacy_security",
+      "title": "Внутренние документы остаются внутренними",
+      "content": "Изменяйте размер бизнес-отчетов и предложений без какой-либо обработки на стороне сервера.",
+      "badgeText": "Безопасность превыше всего"
     },
     {
-      "type": "transform_performance",
-      "title": "Resize Hundreds of Pages Instantly",
-      "content": "Resizing a 500-page PDF takes under 2 seconds. All in your browser."
+      "type": "resize_performance",
+      "title": "Мгновенное изменение размера сотен страниц",
+      "content": "Изменение размера 500-страничного PDF-файла занимает менее 2 секунд. Все в вашем браузере.",
+      "badgeText": "Молниеносно"
     }
   ],
   "faqs": [
     {
-      "q": "What sizes are available?",
-      "a": "A4, A3, A5, US Letter, Legal, and custom dimensions."
+      "q": "Какие размеры доступны?",
+      "a": "Размеры A4, A3, A5, US Letter, Legal и нестандартные."
     },
     {
-      "q": "Does content scale with the page?",
-      "a": "Yes, content is scaled proportionally by default."
+      "q": "Масштабируется ли содержимое вместе со страницей?",
+      "a": "Да, контент по умолчанию масштабируется пропорционально."
     },
     {
-      "q": "Can I resize individual pages?",
-      "a": "Yes, apply different sizes to specific pages."
+      "q": "Могу ли я изменить размер отдельных страниц?",
+      "a": "Да, применяйте разные размеры к определенным страницам."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "Vector content is re-rendered perfectly; images may scale."
+      "q": "Качество страдает?",
+      "a": "Векторный контент прекрасно перерисовывается; изображения могут масштабироваться."
     },
     {
-      "q": "Is this free?",
-      "a": "Да, полностью бесплатно."
+      "q": "Это бесплатно?",
+      "a": "Да, совершенно бесплатно."
     }
-  ]
+  ],
+  "faqTitle": "Часто задаваемые вопросы",
+  "supportCenter": "Центр поддержки"
 }

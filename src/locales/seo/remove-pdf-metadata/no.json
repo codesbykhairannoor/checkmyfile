@@ -1,67 +1,85 @@
 {
-  "title": "Remove PDF Metadata — Strip Hidden Author Data Offline",
-  "h1": "Strip All Hidden Metadata from PDF Files Instantly",
-  "description": "Remove author names, company info, GPS locations, and revision history from PDFs entirely in your browser. No upload. Perfect for Oslo users.",
+  "title": "Fjern PDF-metadata — Strip skjulte forfatterdata frakoblet",
+  "h1": "Fjern alle skjulte metadata fra PDF-filer umiddelbart",
+  "description": "Fjern forfatternavn, firmainformasjon, GPS-plasseringer og revisjonshistorikk fra PDF-filer helt i nettleseren din. Ingen opplasting. 100 % sikker lokal behandling.",
+  "buttonText": "Process Document",
+  "badges": [
+    "Sikker og privat",
+    "Frakoblet motor",
+    "Null opplasting"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "metadata_hero_features",
-      "title": "Why Strip PDF Metadata?",
-      "content": "PDFs carry hidden metadata — your name, your company, revision history. Strip it all before sharing publicly, entirely offline."
+      "title": "Hvorfor fjerne PDF-metadata?",
+      "content": "PDF-filer inneholder skjulte metadata – navnet ditt, firmaet ditt, revisjonshistorikk. Fjern alt før du deler offentlig, helt offline."
     },
     {
       "type": "metadata_how_to_steps",
-      "title": "Before & After — How Metadata Removal Works",
+      "title": "Før og etter — Slik fungerer fjerning av metadata",
       "steps": [
         {
-          "title": "Open Your PDF",
-          "description": "Select the PDF with hidden metadata to remove."
+          "title": "Åpne PDF-en din",
+          "description": "Velg PDF-filen med skjulte metadata som skal fjernes."
         },
         {
-          "title": "Preview Hidden Data",
-          "description": "See exactly what metadata — author, GPS, history — is embedded."
+          "title": "Forhåndsvis skjulte data",
+          "description": "Se nøyaktig hvilke metadata – forfatter, GPS, historie – som er innebygd."
         },
         {
-          "title": "Strip & Download Clean PDF",
-          "description": "Remove all metadata instantly and save a clean, anonymous PDF."
+          "title": "Strip og last ned Clean PDF",
+          "description": "Fjern alle metadata umiddelbart og lagre en ren, anonym PDF."
         }
-      ]
+      ],
+      "badgeText": "Hurtigguide"
     },
     {
       "type": "metadata_geo_targeting",
-      "title": "Metadata Privacy Tool for Oslo Professionals",
-      "content": "Journalists, legal professionals, and privacy-conscious users in Oslo strip metadata before publishing or sharing PDFs externally."
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle operasjoner utføres direkte på din lokale enhet. Vi bruker avansert WebAssembly-teknologi for å behandle dokumentene dine uten å laste dem opp til eksterne servere, noe som sikrer fullstendig personvern.",
+      "badgeText": "Lokal behandling"
     },
     {
       "type": "metadata_privacy_security",
-      "title": "All Metadata Types Permanently Erased",
-      "content": "Author name, company, GPS coordinates from embedded images, revision history, software fingerprints — all permanently removed."
+      "title": "Alle metadatatyper slettes permanent",
+      "content": "Forfatternavn, firma, GPS-koordinater fra innebygde bilder, revisjonshistorikk, programvarefingeravtrykk – alt fjernet permanent.",
+      "badgeText": "Sikkerhet først"
     },
     {
       "type": "metadata_performance",
-      "title": "Strip Metadata in Milliseconds",
-      "content": "Metadata removal takes milliseconds and often reduces file size by 10–15%. All offline."
+      "title": "Strip Metadata i millisekunder",
+      "content": "Fjerning av metadata tar millisekunder og reduserer ofte filstørrelsen med 10–15 %. Alt frakoblet.",
+      "badgeText": "Lynrask"
     }
   ],
   "faqs": [
     {
-      "q": "What metadata is removed?",
-      "a": "Author, creator, producer, title, keywords, and all XMP/EXIF data."
+      "q": "Hvilke metadata fjernes?",
+      "a": "Forfatter, skaper, produsent, tittel, nøkkelord og alle XMP/EXIF-data."
     },
     {
-      "q": "Are document bookmarks affected?",
-      "a": "No, bookmarks and structure are preserved; only metadata is removed."
+      "q": "Blir dokumentbokmerker berørt?",
+      "a": "Nei, bokmerker og struktur er bevart; kun metadata fjernes."
     },
     {
-      "q": "Can I preview the metadata first?",
-      "a": "Yes, we show a list of all detected metadata before removing."
+      "q": "Kan jeg forhåndsvise metadataene først?",
+      "a": "Ja, vi viser en liste over alle oppdagede metadata før fjerning."
     },
     {
-      "q": "Is the document content affected?",
-      "a": "No, the content, images, and structure remain intact."
+      "q": "Blir dokumentinnholdet påvirket?",
+      "a": "Nei, innholdet, bildene og strukturen forblir intakt."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, helt gratis."
+      "q": "Er dette gratis?",
+      "a": "Ja, alltid gratis."
     }
-  ]
+  ],
+  "faqTitle": "Ofte stilte spørsmål",
+  "supportCenter": "Støttesenter"
 }

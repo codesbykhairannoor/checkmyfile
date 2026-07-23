@@ -1,67 +1,85 @@
 {
-  "title": "Split PDF - Extract Pages Securely",
-  "h1": "Split and Extract PDF Pages in Seconds",
-  "description": "Extract specific pages or split a large PDF into multiple files locally in your browser. Perfect for legal professionals in Hanoi.",
+  "title": "Tách PDF - Trích xuất trang an toàn",
+  "h1": "Tách và trích xuất các trang PDF trong vài giây",
+  "description": "Trích xuất các trang cụ thể hoặc chia một tệp PDF lớn thành nhiều tệp cục bộ trong trình duyệt của bạn. Nhanh chóng và hoàn toàn an toàn.",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Split PDFs Locally?",
-      "content": "When dealing with massive legal or corporate documents, extracting a single page shouldn't require uploading a 1GB file. Do it instantly right on your machine."
+      "title": "Tại sao phải chia nhỏ tệp PDF cục bộ?",
+      "content": "Khi xử lý các tài liệu pháp lý hoặc tài liệu doanh nghiệp lớn, việc trích xuất một trang không cần phải tải lên tệp 1GB. Làm điều đó ngay lập tức ngay trên máy của bạn."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Extract Pages",
+      "title": "Cách trích xuất trang",
       "steps": [
         {
-          "title": "Open Document",
-          "description": "Load the multi-page PDF you want to split."
+          "title": "Mở tài liệu",
+          "description": "Tải tệp PDF nhiều trang mà bạn muốn chia nhỏ."
         },
         {
-          "title": "Select Ranges",
-          "description": "Pick specific page numbers or visually select pages to extract."
+          "title": "Chọn dãy",
+          "description": "Chọn số trang cụ thể hoặc chọn trang trực quan để trích xuất."
         },
         {
-          "title": "Export Zip",
-          "description": "Download your newly split files organized in a ZIP."
+          "title": "Xuất Zip",
+          "description": "Tải xuống các tệp mới được chia nhỏ của bạn được sắp xếp theo dạng ZIP."
         }
-      ]
+      ],
+      "badgeText": "Hướng dẫn nhanh"
     },
     {
       "type": "split_geo_targeting",
-      "title": "The Best Splitter in Hanoi, VN-HN",
-      "content": "Whether you are studying in Hanoi or working on a tight deadline, extracting pages is now instantaneous."
+      "title": "Xử lý cục bộ an toàn 100%",
+      "content": "Tất cả các hoạt động được thực hiện trực tiếp trên thiết bị cục bộ của bạn. Chúng tôi sử dụng công nghệ WebAssembly tiên tiến để xử lý tài liệu của bạn mà không cần tải chúng lên máy chủ bên ngoài, đảm bảo quyền riêng tư hoàn toàn.",
+      "badgeText": "Xử lý cục bộ"
     },
     {
       "type": "split_privacy_security",
-      "title": "Total Page Privacy",
-      "content": "Splitting confidential employee records? Rest easy knowing our code executes purely in your local environment."
+      "title": "Tổng quyền riêng tư của trang",
+      "content": "Tách hồ sơ nhân viên bí mật? Hãy yên tâm khi biết mã của chúng tôi thực thi hoàn toàn trong môi trường cục bộ của bạn.",
+      "badgeText": "Bảo mật là trên hết"
     },
     {
       "type": "split_performance",
-      "title": "Zero-Upload Extraction",
-      "content": "Grabbing page 14 from a 2000-page PDF takes milliseconds, skipping the excruciating upload step entirely."
+      "title": "Trích xuất không tải lên",
+      "content": "Việc lấy trang 14 từ bản PDF 2000 trang mất một phần nghìn giây, bỏ qua hoàn toàn bước tải lên phức tạp.",
+      "badgeText": "Nhanh như chớp"
     }
   ],
   "faqs": [
     {
-      "q": "How do I extract just one page?",
-      "a": "Simply click on the page thumbnail you want and hit Export."
+      "q": "Làm cách nào để trích xuất chỉ một trang?",
+      "a": "Chỉ cần nhấp vào hình thu nhỏ của trang bạn muốn và nhấn Xuất."
     },
     {
-      "q": "Can I split the PDF in half?",
-      "a": "Yes, you can specify custom page ranges like 1-10 and 11-20."
+      "q": "Tôi có thể chia đôi bản PDF được không?",
+      "a": "Có, bạn có thể chỉ định phạm vi trang tùy chỉnh như 1-10 và 11-20."
     },
     {
-      "q": "Will the extracted pages lose quality?",
-      "a": "No, the splitting process uses binary extraction, preserving 100% of the original quality."
+      "q": "Các trang được trích xuất có bị giảm chất lượng không?",
+      "a": "Không, quá trình chia tách sử dụng trích xuất nhị phân, bảo toàn 100% chất lượng ban đầu."
     },
     {
-      "q": "Is my document uploaded when splitting?",
-      "a": "Never. The entire 2000-page document stays strictly in your browser."
+      "q": "Tài liệu của tôi có được tải lên khi chia tách không?",
+      "a": "Không bao giờ. Toàn bộ tài liệu 2000 trang nằm hoàn toàn trong trình duyệt của bạn."
     },
     {
-      "q": "Is there a limit to how many pages I can split?",
-      "a": "No limits! Split as many pages as your computer can handle."
+      "q": "Có giới hạn về số lượng trang tôi có thể chia không?",
+      "a": "Không có giới hạn! Chia nhiều trang mà máy tính của bạn có thể xử lý."
     }
-  ]
+  ],
+  "badges": [
+    "Chia ngay lập tức",
+    "Phạm vi chính xác",
+    "Không giới hạn"
+  ],
+  "stats": [
+    "Ultra Fast",
+    "No Upload",
+    "Batch Zip",
+    "Secure"
+  ],
+  "buttonText": "Split PDF",
+  "faqTitle": "Câu hỏi thường gặp",
+  "supportCenter": "Trung tâm hỗ trợ"
 }

@@ -1,0 +1,85 @@
+{
+  "title": "Excel 到 CSV 轉換器 — 離線匯出電子表格",
+  "h1": "在本機將 Excel 電子表格轉換為 CSV",
+  "description": "完全在瀏覽器中將 .xlsx 檔案匯出為乾淨的 .csv 格式。 沒有上傳。 100% 安全的本地處理。",
+  "buttonText": "Convert to CSV",
+  "badges": [
+    "原始資料",
+    "資料庫導入",
+    "快速匯出"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "excel_csv_hero_features",
+      "title": "為什麼要離線匯出為 CSV？",
+      "content": "將電子表格匯出為 CSV 以用於資料管道不應將原始資料暴露給任何外部 API。"
+    },
+    {
+      "type": "excel_csv_how_to_steps",
+      "title": "如何將 Excel 轉換為 CSV",
+      "steps": [
+        {
+          "title": "開啟 Excel 檔案",
+          "description": "選擇 .xlsx 電子表格。"
+        },
+        {
+          "title": "選擇表",
+          "description": "選擇要匯出為 CSV 的工作表。"
+        },
+        {
+          "title": "下載 CSV",
+          "description": "立即取得乾淨的 CSV 檔案。"
+        }
+      ],
+      "badgeText": "快速指南"
+    },
+    {
+      "type": "excel_csv_geo_targeting",
+      "title": "100% 安全的本地處理",
+      "content": "所有操作都直接在本地設備上執行。 我們使用先進的 WebAssembly 技術來處理您的文檔，而無需將其上傳到外部伺服器，從而確保完全的隱私。",
+      "badgeText": "本地處理"
+    },
+    {
+      "type": "excel_csv_privacy_security",
+      "title": "電子表格資料保留在本地",
+      "content": "財務模型和業務資料匯出為 CSV，無需任何伺服器端處理。",
+      "badgeText": "安全第一"
+    },
+    {
+      "type": "excel_csv_performance",
+      "title": "立即匯出任何電子表格",
+      "content": "在 1 秒內將 50,000 行的 Excel 檔案匯出為 CSV。 全部在瀏覽器中。",
+      "badgeText": "快如閃電"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "我可以匯出多張紙嗎？",
+      "a": "是的，將每個工作表匯出為單獨的 CSV 檔案。"
+    },
+    {
+      "q": "CSV 中是否保留 Excel 格式？",
+      "a": "CSV 是純文字；格式被刪除，但所有值都被保留。"
+    },
+    {
+      "q": "我可以選擇分隔符號嗎？",
+      "a": "是的，選擇逗號、分號或製表符。"
+    },
+    {
+      "q": "公式是否導出為值？",
+      "a": "是的，公式結果（不是公式）會寫入 CSV。"
+    },
+    {
+      "q": "這是免費的嗎？",
+      "a": "是的，完全免費。"
+    }
+  ],
+  "faqTitle": "常見問題",
+  "supportCenter": "支援中心"
+}

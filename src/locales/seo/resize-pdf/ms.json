@@ -1,67 +1,85 @@
 {
-  "title": "Resize PDF Pages — Change Paper Size Offline",
-  "h1": "Resize PDF Pages to A4, Letter, or Custom Sizes",
-  "description": "Change the paper size of every PDF page to A4, US Letter, or custom dimensions entirely in your browser. No upload. Ideal for users in Kuala Lumpur.",
+  "title": "Saiz semula Halaman PDF — Tukar Saiz Kertas Luar Talian",
+  "h1": "Saiz semula Halaman PDF kepada A4, Huruf atau Saiz Tersuai",
+  "description": "Tukar saiz kertas setiap halaman PDF kepada A4, Surat AS atau dimensi tersuai sepenuhnya dalam penyemak imbas anda. Tiada muat naik. 100% pemprosesan tempatan selamat.",
+  "buttonText": "Resize Pages",
+  "badges": [
+    "A4, Surat, Tersuai",
+    "Tambah Margin",
+    "Pembetulan Format"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Resize PDFs Locally?",
-      "content": "Preparing documents for printing requires proper page sizing. Resize locally without uploading internal documents to the cloud."
+      "type": "resize_hero_features",
+      "title": "Mengapa Ubah Saiz PDF Secara Setempat?",
+      "content": "Menyediakan dokumen untuk dicetak memerlukan saiz halaman yang betul. Ubah saiz secara setempat tanpa memuat naik dokumen dalaman ke awan."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Resize PDF Pages",
+      "type": "resize_how_to_steps",
+      "title": "Cara Mengubah Saiz Halaman PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page dimensions."
+          "title": "Buka PDF",
+          "description": "Muatkan PDF dengan dimensi halaman yang salah."
         },
         {
-          "title": "Select Target Size",
-          "description": "Choose A4, Letter, A3, or enter custom dimensions."
+          "title": "Pilih Saiz Sasaran",
+          "description": "Pilih A4, Letter, A3 atau masukkan dimensi tersuai."
         },
         {
-          "title": "Download Resized PDF",
-          "description": "Get your properly sized document instantly."
+          "title": "Muat Turun PDF Bersaiz",
+          "description": "Dapatkan dokumen bersaiz betul anda serta-merta."
         }
-      ]
+      ],
+      "badgeText": "Panduan Pantas"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Resizing for Kuala Lumpur Print Shops",
-      "content": "Print shops and offices in Kuala Lumpur resize documents to standard sizes without cloud dependency."
+      "type": "resize_geo_targeting",
+      "title": "100% Pemprosesan Tempatan Selamat",
+      "content": "Semua operasi dilakukan terus pada peranti tempatan anda. Kami menggunakan teknologi WebAssembly termaju untuk memproses dokumen anda tanpa pernah memuat naiknya ke pelayan luaran, memastikan privasi lengkap.",
+      "badgeText": "Pemprosesan Setempat"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Internal Documents Stay Internal",
-      "content": "Resize business reports and proposals without any server-side processing."
+      "type": "resize_privacy_security",
+      "title": "Dokumen Dalaman Kekal Dalaman",
+      "content": "Ubah saiz laporan dan cadangan perniagaan tanpa sebarang pemprosesan bahagian pelayan.",
+      "badgeText": "Keselamatan Diutamakan"
     },
     {
-      "type": "transform_performance",
-      "title": "Resize Hundreds of Pages Instantly",
-      "content": "Resizing a 500-page PDF takes under 2 seconds. All in your browser."
+      "type": "resize_performance",
+      "title": "Ubah Saiz Beratus Halaman Serta-merta",
+      "content": "Mengubah saiz PDF 500 halaman mengambil masa kurang dari 2 saat. Semua dalam penyemak imbas anda.",
+      "badgeText": "Sepantas Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "What sizes are available?",
-      "a": "A4, A3, A5, US Letter, Legal, and custom dimensions."
+      "q": "Apakah saiz yang ada?",
+      "a": "A4, A3, A5, Surat AS, Undang-undang dan dimensi tersuai."
     },
     {
-      "q": "Does content scale with the page?",
-      "a": "Yes, content is scaled proportionally by default."
+      "q": "Adakah skala kandungan dengan halaman?",
+      "a": "Ya, kandungan diskalakan secara berkadar secara lalai."
     },
     {
-      "q": "Can I resize individual pages?",
-      "a": "Yes, apply different sizes to specific pages."
+      "q": "Bolehkah saya mengubah saiz halaman individu?",
+      "a": "Ya, gunakan saiz yang berbeza pada halaman tertentu."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "Vector content is re-rendered perfectly; images may scale."
+      "q": "Adakah kualiti terjejas?",
+      "a": "Kandungan vektor dipaparkan semula dengan sempurna; imej mungkin berskala."
     },
     {
-      "q": "Is this free?",
+      "q": "Adakah ini percuma?",
       "a": "Ya, percuma sepenuhnya."
     }
-  ]
+  ],
+  "faqTitle": "Soalan Lazim",
+  "supportCenter": "Pusat Sokongan"
 }

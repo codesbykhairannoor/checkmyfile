@@ -1,67 +1,85 @@
 {
-  "title": "Redact PDF — Permanently Remove Sensitive Data",
-  "h1": "Permanently Redact Sensitive Information from PDFs Offline",
-  "description": "Black out sensitive text and images in PDFs entirely in your browser. No cloud risk. Critical for users in Bratislava.",
+  "title": "Redigovať PDF – natrvalo odstrániť citlivé údaje",
+  "h1": "Trvalá úprava citlivých informácií zo súborov PDF offline",
+  "description": "Citlivý text a obrázky v súboroch PDF úplne začiernite vo svojom prehliadači. Žiadne cloudové riziko. 100% bezpečné lokálne spracovanie.",
+  "buttonText": "Redact Text",
+  "badges": [
+    "Trvalé vymazanie",
+    "Informácie o výpadku",
+    "Bezpečná redakcia"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "redact_hero_features",
-      "title": "Why Redact PDFs Locally?",
-      "content": "Redacting means the content is classified. Uploading a document you need to hide defeats the whole purpose. Our tool runs 100% offline."
+      "title": "Prečo upravovať súbory PDF lokálne?",
+      "content": "Redigovanie znamená, že obsah je klasifikovaný. Odovzdanie dokumentu, ktorý musíte skryť, popiera celý účel. Náš nástroj beží 100 % offline."
     },
     {
       "type": "redact_how_to_steps",
-      "title": "How to Permanently Redact a PDF",
+      "title": "Ako natrvalo upraviť PDF",
       "steps": [
         {
-          "title": "Open Sensitive Document",
-          "description": "Load the PDF with data that must be hidden."
+          "title": "Otvoriť citlivý dokument",
+          "description": "Načítajte PDF s údajmi, ktoré musia byť skryté."
         },
         {
-          "title": "Mark Redaction Areas",
-          "description": "Draw boxes over content to permanently erase."
+          "title": "Označte oblasti úprav",
+          "description": "Nakreslite rámčeky na obsah, ktorý chcete natrvalo vymazať."
         },
         {
-          "title": "Apply & Download",
-          "description": "Content is permanently deleted from the PDF structure."
+          "title": "Použiť a stiahnuť",
+          "description": "Obsah sa natrvalo odstráni zo štruktúry PDF."
         }
-      ]
+      ],
+      "badgeText": "Rýchly sprievodca"
     },
     {
       "type": "redact_geo_targeting",
-      "title": "Court-Ready Redaction for Bratislava Law Firms",
-      "content": "Legal professionals in Bratislava prepare court documents with permanent, offline redaction that removes data from the PDF structure itself."
+      "title": "100% bezpečné miestne spracovanie",
+      "content": "Všetky operácie sa vykonávajú priamo na vašom lokálnom zariadení. Používame pokročilú technológiu WebAssembly na spracovanie vašich dokumentov bez ich nahrávania na externé servery, čím zaisťujeme úplné súkromie.",
+      "badgeText": "Miestne spracovanie"
     },
     {
       "type": "redact_privacy_security",
-      "title": "True Permanent Redaction — Not Just Black Boxes",
-      "content": "Unlike tools that merely cover text with black boxes, our redaction permanently deletes the underlying data from the PDF object structure."
+      "title": "Skutočná trvalá redakcia – nielen čierne skrinky",
+      "content": "Na rozdiel od nástrojov, ktoré iba zakrývajú text čiernymi políčkami, naša redakcia natrvalo odstráni základné údaje zo štruktúry objektu PDF.",
+      "badgeText": "Bezpečnosť na prvom mieste"
     },
     {
       "type": "redact_performance",
-      "title": "Redact Entire Documents Instantly",
-      "content": "Apply hundreds of permanent redactions to large documents in seconds, completely offline."
+      "title": "Okamžitá úprava celých dokumentov",
+      "content": "Aplikujte stovky trvalých úprav na veľké dokumenty v priebehu niekoľkých sekúnd, úplne offline.",
+      "badgeText": "Rýchlosť blesku"
     }
   ],
   "faqs": [
     {
-      "q": "Is the redaction truly permanent?",
-      "a": "Yes, the underlying text and image data is permanently deleted from the PDF structure."
+      "q": "Je redakcia skutočne trvalá?",
+      "a": "Áno, podkladový text a obrazové údaje sa natrvalo odstránia zo štruktúry PDF."
     },
     {
-      "q": "Can I redact images too?",
-      "a": "Yes, both text regions and image areas can be permanently redacted."
+      "q": "Môžem upravovať aj obrázky?",
+      "a": "Áno, textové aj obrazové oblasti môžu byť trvalo redigované."
     },
     {
-      "q": "Can I choose black or white cover?",
-      "a": "Yes, pick the redaction style that suits your document."
+      "q": "Môžem si vybrať čierny alebo biely obal?",
+      "a": "Áno, vyberte štýl úpravy, ktorý vyhovuje vášmu dokumentu."
     },
     {
-      "q": "Does this meet legal standards?",
-      "a": "Our redaction removes data at the PDF object level, meeting court requirements."
+      "q": "Spĺňa to zákonné normy?",
+      "a": "Naša redakcia odstraňuje údaje na úrovni objektu PDF, čím spĺňa požiadavky súdu."
     },
     {
-      "q": "Is this free?",
-      "a": "Áno, úplne zadarmo."
+      "q": "Je to zadarmo?",
+      "a": "Áno, vždy zadarmo."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
 }

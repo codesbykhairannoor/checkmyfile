@@ -1,67 +1,80 @@
 {
-  "title": "PDF to Word Converter — Offline & Editable",
-  "h1": "Convert PDF to Editable Word Documents Locally",
-  "description": "Transform PDFs back into .docx files you can edit, right in your browser. No upload needed. Great for users in Bratislava.",
+  "title": "Konvertor PDF do Wordu – offline a upraviteľný",
+  "h1": "Konvertujte PDF na upraviteľné dokumenty Word lokálne",
+  "description": "Transformujte súbory PDF späť na súbory .docx, ktoré môžete upravovať priamo vo svojom prehliadači. Nie je potrebné žiadne nahrávanie. Skvelé pre užívateľov v Bratislave.",
+  "buttonText": "Previesť na Word",
+  "badges": [
+    "Upraviteľné dokumenty",
+    "Obnova textu",
+    "Offline proces"
+  ],
+  "stats": [
+    "100%",
+    "Miestne",
+    "0 s",
+    "Čas čakania"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF Back Offline?",
-      "content": "When you need to edit a PDF, converting it offline keeps your original document confidential."
+      "title": "Prečo používať offline?",
+      "content": "Keď potrebujete upraviť PDF, konvertovaním offline zostane váš pôvodný dokument dôverný."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Word",
+      "title": "Ako používať",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF file you need to convert."
+          "title": "Načítať PDF",
+          "description": "Vyberte súbor PDF, ktorý potrebujete previesť."
         },
         {
-          "title": "Detect Text Layers",
-          "description": "Our engine reads text and structure from the PDF."
+          "title": "Rozpoznať textové vrstvy",
+          "description": "Náš nástroj číta text a štruktúru z PDF."
         },
         {
-          "title": "Download .docx",
-          "description": "Get your editable Word document ready to modify."
+          "title": "Stiahnite si .docx",
+          "description": "Pripravte si upraviteľný dokument programu Word na úpravu."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "PDF to Word for Bratislava Offices",
-      "content": "Office workers in Bratislava use our tool to recover editable text from PDFs without cloud dependency."
+      "title": "PDF do Wordu pre bratislavské kancelárie",
+      "content": "Pracovníci kancelárie v Bratislave používajú náš nástroj na obnovenie upraviteľného textu z PDF bez závislosti na cloude."
     },
     {
       "type": "split_privacy_security",
-      "title": "Legal Documents Stay Confidential",
-      "content": "Contracts, NDAs, and reports converted back to Word entirely in your browser memory."
+      "title": "Právne dokumenty zostanú dôverné",
+      "content": "Zmluvy, zmluvy o mlčanlivosti a zostavy konvertované späť do programu Word úplne v pamäti prehliadača."
     },
     {
       "type": "split_performance",
-      "title": "Recover Editable Text in Seconds",
-      "content": "Extract text from a 50-page PDF in under 3 seconds without uploading a single byte."
+      "title": "Obnovte upraviteľný text za pár sekúnd",
+      "content": "Extrahujte text z 50-stranového PDF za menej ako 3 sekundy bez odovzdania jediného bajtu."
     }
   ],
   "faqs": [
     {
-      "q": "Is all text preserved?",
-      "a": "Yes, text from all layers is extracted and formatted."
+      "q": "Je celý text zachovaný?",
+      "a": "Áno, text zo všetkých vrstiev sa extrahuje a naformátuje."
     },
     {
-      "q": "Does it work on scanned PDFs?",
-      "a": "For scanned PDFs, use our OCR tool first."
+      "q": "Funguje to na naskenovaných PDF?",
+      "a": "V prípade naskenovaných súborov PDF najskôr použite náš nástroj OCR."
     },
     {
-      "q": "Are images included in the .docx?",
-      "a": "Yes, embedded images are included in the output."
+      "q": "Sú obrázky zahrnuté v .docx?",
+      "a": "Áno, vo výstupe sú zahrnuté vložené obrázky."
     },
     {
-      "q": "Can I edit the .docx after?",
-      "a": "Absolutely, the output is a fully editable Word document."
+      "q": "Môžem upraviť .docx po?",
+      "a": "Výstupom je plne upraviteľný dokument programu Word."
     },
     {
-      "q": "Is this free?",
+      "q": "Je to zadarmo?",
       "a": "Áno, úplne zadarmo."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky"
 }

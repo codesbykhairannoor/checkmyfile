@@ -1,67 +1,85 @@
 {
-  "title": "CSV to Excel Converter — Offline & Instant",
-  "h1": "Convert CSV Files to Excel Spreadsheets Locally",
-  "description": "Transform .csv files into structured .xlsx spreadsheets entirely in your browser. No upload. Perfect for data teams in Bangkok.",
+  "title": "เครื่องมือแปลง CSV เป็น Excel — ออฟไลน์และทันใจ",
+  "h1": "แปลงไฟล์ CSV เป็นสเปรดชีต Excel ในเครื่อง",
+  "description": "แปลงไฟล์ .csv ให้เป็นสเปรดชีต .xlsx ที่มีโครงสร้างทั้งหมดในเบราว์เซอร์ของคุณ ไม่มีการอัพโหลด การประมวลผลภายในที่ปลอดภัย 100%",
+  "buttonText": "Convert CSV",
+  "badges": [
+    "รองรับ UTF-8",
+    "หลายคอลัมน์",
+    "แปลงทันที"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Convert CSV Offline?",
-      "content": "CSV files often contain customer or financial data. Convert them to Excel locally without exposing your datasets to any cloud service."
+      "type": "csv_excel_hero_features",
+      "title": "ทำไมต้องแปลง CSV ออฟไลน์",
+      "content": "ไฟล์ CSV มักจะมีข้อมูลลูกค้าหรือข้อมูลทางการเงิน แปลงเป็น Excel ภายในเครื่องโดยไม่ต้องเปิดเผยชุดข้อมูลของคุณกับบริการคลาวด์ใดๆ"
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert CSV to Excel",
+      "type": "csv_excel_how_to_steps",
+      "title": "วิธีแปลง CSV เป็น Excel",
       "steps": [
         {
-          "title": "Open CSV File",
-          "description": "Select the CSV file to convert."
+          "title": "เปิดไฟล์ CSV",
+          "description": "เลือกไฟล์ CSV ที่จะแปลง"
         },
         {
-          "title": "Preview Data",
-          "description": "See the parsed columns and rows before export."
+          "title": "ดูตัวอย่างข้อมูล",
+          "description": "ดูคอลัมน์และแถวที่แยกวิเคราะห์ก่อนส่งออก"
         },
         {
-          "title": "Download .xlsx",
-          "description": "Get your Excel spreadsheet instantly."
+          "title": "ดาวน์โหลด .xlsx",
+          "description": "รับสเปรดชีต Excel ของคุณทันที"
         }
-      ]
+      ],
+      "badgeText": "คู่มือฉบับย่อ"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Data Tools for Bangkok Analysts",
-      "content": "Data analysts in Bangkok convert CSV exports to Excel without uploading sensitive datasets."
+      "type": "csv_excel_geo_targeting",
+      "title": "การประมวลผลภายในที่ปลอดภัย 100%",
+      "content": "การดำเนินการทั้งหมดดำเนินการโดยตรงบนอุปกรณ์ท้องถิ่นของคุณ เราใช้เทคโนโลยี WebAssembly ขั้นสูงเพื่อประมวลผลเอกสารของคุณโดยไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ภายนอก เพื่อให้มั่นใจถึงความเป็นส่วนตัวโดยสมบูรณ์",
+      "badgeText": "การประมวลผลในท้องถิ่น"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Customer Data Stays on Your Machine",
-      "content": "CRM exports, transaction logs, and survey data converted locally with zero cloud involvement."
+      "type": "csv_excel_privacy_security",
+      "title": "ข้อมูลลูกค้าจะยังคงอยู่ในเครื่องของคุณ",
+      "content": "การส่งออก CRM บันทึกธุรกรรม และข้อมูลการสำรวจที่แปลงภายในเครื่องโดยไม่เกี่ยวข้องกับระบบคลาวด์",
+      "badgeText": "ความปลอดภัยต้องมาก่อน"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Large CSV Files Instantly",
-      "content": "Convert a 100,000-row CSV to Excel in seconds. All browser-native processing."
+      "type": "csv_excel_performance",
+      "title": "แปลงไฟล์ CSV ขนาดใหญ่ได้ทันที",
+      "content": "แปลง CSV 100,000 แถวเป็น Excel ในไม่กี่วินาที การประมวลผลแบบเนทีฟของเบราว์เซอร์ทั้งหมด",
+      "badgeText": "เร็วปานสายฟ้า"
     }
   ],
   "faqs": [
     {
-      "q": "Is the column structure preserved?",
-      "a": "Yes, all columns are mapped to Excel columns."
+      "q": "โครงสร้างคอลัมน์ยังคงอยู่หรือไม่?",
+      "a": "ใช่ คอลัมน์ทั้งหมดถูกแมปกับคอลัมน์ Excel"
     },
     {
-      "q": "Can I convert multiple CSVs?",
-      "a": "Yes, batch conversion to multiple sheets is supported."
+      "q": "ฉันสามารถแปลง CSV หลายรายการได้หรือไม่",
+      "a": "ใช่ รองรับการแปลงเป็นชุดหลายแผ่น"
     },
     {
-      "q": "Are special characters handled?",
-      "a": "Yes, UTF-8 and various encodings are supported."
+      "q": "มีการจัดการอักขระพิเศษหรือไม่",
+      "a": "ใช่ รองรับ UTF-8 และการเข้ารหัสต่างๆ"
     },
     {
-      "q": "Can I set delimiters?",
-      "a": "Yes, comma, semicolon, and tab delimiters are supported."
+      "q": "ฉันสามารถตั้งค่าตัวคั่นได้หรือไม่?",
+      "a": "ใช่ รองรับเครื่องหมายจุลภาค อัฒภาค และตัวคั่นแท็บ"
     },
     {
-      "q": "Is this free?",
-      "a": "ใช่ ฟรีทั้งหมด"
+      "q": "ฟรีหรือเปล่า?",
+      "a": "ใช่ ฟรีเสมอ"
     }
-  ]
+  ],
+  "faqTitle": "คำถามที่พบบ่อย",
+  "supportCenter": "ศูนย์สนับสนุน"
 }

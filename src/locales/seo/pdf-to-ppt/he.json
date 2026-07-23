@@ -1,67 +1,80 @@
 {
-  "title": "PDF to PowerPoint — Recover Editable Slides",
-  "h1": "Convert PDF to PowerPoint Presentation Offline",
-  "description": "Transform PDF documents back into editable .pptx presentations locally. No cloud needed. Perfect for users in Jerusalem.",
+  "title": "PDF ל-PowerPoint - שחזור שקופיות הניתנות לעריכה",
+  "h1": "המרת PDF למצגת PowerPoint במצב לא מקוון",
+  "description": "הפוך מסמכי PDF חזרה למצגות pptx הניתנות לעריכה באופן מקומי. אין צורך בענן. מושלם למשתמשים בירושלים.",
+  "buttonText": "המר ל-PPT",
+  "badges": [
+    "שקופיות הניתנות לעריכה",
+    "שחזור מצגות",
+    "המרה מהירה"
+  ],
+  "stats": [
+    "100%",
+    "מְקוֹמִי",
+    "0s",
+    "זמן המתנה"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF to PowerPoint Offline?",
-      "content": "Recovering slide content from a PDF for editing should not require uploading sensitive decks to a cloud service."
+      "title": "למה להשתמש במצב לא מקוון?",
+      "content": "שחזור תוכן שקופיות מ-PDF לעריכה לא צריך לדרוש העלאת חפיסות רגישות לשירות ענן."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to PowerPoint",
+      "title": "איך להשתמש",
       "steps": [
         {
-          "title": "Upload PDF",
-          "description": "Select the PDF containing your slide content."
+          "title": "העלה PDF",
+          "description": "בחר את ה-PDF המכיל את תוכן השקופיות שלך."
         },
         {
-          "title": "Map Pages to Slides",
-          "description": "Each PDF page becomes one editable slide."
+          "title": "מפה דפים ל-Slides",
+          "description": "כל עמוד PDF הופך לשקופית אחת הניתנת לעריכה."
         },
         {
-          "title": "Download .pptx",
-          "description": "Get your fully editable PowerPoint presentation."
+          "title": "הורד את .pptx",
+          "description": "קבל את מצגת PowerPoint הניתנת לעריכה מלאה."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "Slide Recovery in Jerusalem",
-      "content": "Presenters in Jerusalem use our tool to recover and re-edit presentations from old PDF archives."
+      "title": "שחזור מגלשות בירושלים",
+      "content": "מציגים בירושלים משתמשים בכלי שלנו כדי לשחזר ולערוך מחדש מצגות מארכיוני PDF ישנים."
     },
     {
       "type": "split_privacy_security",
-      "title": "Your Slides Are Never Exposed",
-      "content": "Confidential slide decks recovered and converted without any server interaction."
+      "title": "השקופיות שלך לעולם לא נחשפות",
+      "content": "חפיסות שקופיות סודיות שוחזרו והומרו ללא כל אינטראקציה עם השרת."
     },
     {
       "type": "split_performance",
-      "title": "Convert Slides at Lightning Speed",
-      "content": "A 60-slide PDF converted to PowerPoint in under 10 seconds with zero upload time."
+      "title": "המרת שקופיות במהירות הבזק",
+      "content": "PDF של 60 שקופיות שהומר ל-PowerPoint תוך פחות מ-10 שניות עם זמן העלאה אפס."
     }
   ],
   "faqs": [
     {
-      "q": "Are slide layouts preserved?",
-      "a": "Content is mapped to slides; some layout adjustments may be needed."
+      "q": "האם פריסות השקופיות נשמרות?",
+      "a": "התוכן ממופה לשקופיות; ייתכן שיהיה צורך בהתאמות פריסה מסוימות."
     },
     {
-      "q": "Can I edit the slides after?",
-      "a": "Yes, the .pptx file is fully editable in PowerPoint or Google Slides."
+      "q": "האם אוכל לערוך את השקופיות לאחר מכן?",
+      "a": "כן, קובץ ה-.pptx ניתן לעריכה מלאה ב-PowerPoint או ב-Google Slides."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No, convert as many pages as your RAM allows."
+      "q": "האם יש הגבלת עמודים?",
+      "a": "לא, המר כמה דפים ש-RAM מאפשר לך."
     },
     {
-      "q": "Does it work with image-heavy PDFs?",
-      "a": "Yes, images are embedded in each slide."
+      "q": "האם זה עובד עם קובצי PDF עתירי תמונות?",
+      "a": "כן, תמונות מוטמעות בכל שקופית."
     },
     {
-      "q": "Is this free?",
+      "q": "האם זה בחינם?",
       "a": "כן, חינם לחלוטין."
     }
-  ]
+  ],
+  "faqTitle": "שאלות נפוצות"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Rotate PDF Pages — Fix Orientation Offline",
-  "h1": "Rotate PDF Pages to the Correct Orientation",
-  "description": "Fix upside-down or sideways PDF pages instantly in your browser. No upload. Perfect for users in Hanoi.",
+  "title": "Xoay trang PDF — Sửa định hướng ngoại tuyến",
+  "h1": "Xoay các trang PDF theo đúng hướng",
+  "description": "Sửa các trang PDF lộn ngược hoặc sang một bên ngay lập tức trong trình duyệt của bạn. Nhanh chóng và hoàn toàn an toàn.",
+  "buttonText": "Rotate Pages",
+  "badges": [
+    "Xoay 90°/180°",
+    "Xử lý hàng loạt",
+    "Khắc phục tức thì"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Rotate PDFs Locally?",
-      "content": "Scanned documents often come out sideways. Fix their orientation instantly without uploading anything to the cloud."
+      "type": "rotate_hero_features",
+      "title": "Tại sao phải xoay tệp PDF cục bộ?",
+      "content": "Tài liệu được quét thường bị lệch sang một bên. Sửa hướng của chúng ngay lập tức mà không cần tải bất cứ thứ gì lên đám mây."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Rotate PDF Pages",
+      "type": "rotate_how_to_steps",
+      "title": "Cách xoay trang PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page orientation."
+          "title": "Mở PDF",
+          "description": "Tải tệp PDF có hướng trang không chính xác."
         },
         {
-          "title": "Select Pages & Direction",
-          "description": "Choose pages to rotate and direction (90°, 180°, 270°)."
+          "title": "Chọn Trang & Hướng",
+          "description": "Chọn các trang để xoay và hướng (90°, 180°, 270°)."
         },
         {
-          "title": "Download Fixed PDF",
-          "description": "Save the correctly oriented PDF immediately."
+          "title": "Tải xuống bản PDF cố định",
+          "description": "Lưu tệp PDF được định hướng chính xác ngay lập tức."
         }
-      ]
+      ],
+      "badgeText": "Hướng dẫn nhanh"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Rotation for Hanoi Offices",
-      "content": "Office workers in Hanoi fix scanner output orientation without relying on cloud services."
+      "type": "rotate_geo_targeting",
+      "title": "Xử lý cục bộ an toàn 100%",
+      "content": "Tất cả các hoạt động được thực hiện trực tiếp trên thiết bị cục bộ của bạn. Chúng tôi sử dụng công nghệ WebAssembly tiên tiến để xử lý tài liệu của bạn mà không cần tải chúng lên máy chủ bên ngoài, đảm bảo quyền riêng tư hoàn toàn.",
+      "badgeText": "Xử lý cục bộ"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Scanned Documents Stay Private",
-      "content": "Scanned medical or legal documents rotated locally without any server access."
+      "type": "rotate_privacy_security",
+      "title": "Tài liệu được quét ở chế độ riêng tư",
+      "content": "Các tài liệu y tế hoặc pháp lý được quét được luân chuyển cục bộ mà không có bất kỳ quyền truy cập máy chủ nào.",
+      "badgeText": "Bảo mật là trên hết"
     },
     {
-      "type": "transform_performance",
-      "title": "Rotate Any PDF in Milliseconds",
-      "content": "Rotating 500 pages takes less than a second. No upload, no wait."
+      "type": "rotate_performance",
+      "title": "Xoay bất kỳ tệp PDF nào trong một phần nghìn giây",
+      "content": "Xoay 500 trang chỉ mất chưa đầy một giây. Không tải lên, không chờ đợi.",
+      "badgeText": "Nhanh như chớp"
     }
   ],
   "faqs": [
     {
-      "q": "Can I rotate individual pages?",
-      "a": "Yes, select specific pages or all at once."
+      "q": "Tôi có thể xoay từng trang riêng lẻ được không?",
+      "a": "Có, chọn các trang cụ thể hoặc tất cả cùng một lúc."
     },
     {
-      "q": "What rotation angles are available?",
-      "a": "90°, 180°, and 270° clockwise and counter-clockwise."
+      "q": "Những góc quay nào có sẵn?",
+      "a": "90°, 180° và 270° theo chiều kim đồng hồ và ngược chiều kim đồng hồ."
     },
     {
-      "q": "Does rotation affect image quality?",
-      "a": "No, rotation is lossless — no re-encoding occurs."
+      "q": "Xoay có ảnh hưởng đến chất lượng hình ảnh không?",
+      "a": "Không, việc quay không mất dữ liệu - không xảy ra quá trình mã hóa lại."
     },
     {
-      "q": "Can I undo a rotation?",
-      "a": "Yes, apply the reverse rotation before downloading."
+      "q": "Tôi có thể hoàn tác một vòng quay không?",
+      "a": "Có, áp dụng xoay ngược lại trước khi tải xuống."
     },
     {
-      "q": "Is this free?",
+      "q": "Cái này có miễn phí không?",
       "a": "Có, hoàn toàn miễn phí."
     }
-  ]
+  ],
+  "faqTitle": "Câu hỏi thường gặp",
+  "supportCenter": "Trung tâm hỗ trợ"
 }

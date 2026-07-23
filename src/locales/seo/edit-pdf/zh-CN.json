@@ -1,0 +1,85 @@
+{
+  "title": "编辑 PDF - 免费离线 PDF 编辑器",
+  "h1": "直接在浏览器中编辑 PDF 文档",
+  "description": "在本地向 PDF 文件添加文本、签名和注释。 没有上传，最大程度的隐私。 100% 安全的本地处理。",
+  "sections": [
+    {
+      "type": "edit_hero_features",
+      "title": "为什么要在本地编辑 PDF？",
+      "content": "将敏感合同和表格上传到云编辑器会带来巨大的隐私风险。 我们的 WebAssembly 编辑器直接在您的设备上运行，确保您的文档永远不会离开您的计算机。"
+    },
+    {
+      "type": "edit_how_to_steps",
+      "title": "如何编辑 PDF",
+      "steps": [
+        {
+          "title": "打开文档",
+          "description": "选择您要注释或签名的 PDF 文件。"
+        },
+        {
+          "title": "添加文本和元素",
+          "description": "使用我们直观的工具添加文本、绘制或放置图像。"
+        },
+        {
+          "title": "保存更改",
+          "description": "立即导出修改后的 PDF，无需等待下载。"
+        }
+      ],
+      "badgeText": "快速指南"
+    },
+    {
+      "type": "edit_geo_targeting",
+      "title": "100% 安全的本地处理",
+      "content": "所有操作都直接在本地设备上执行。 我们使用先进的 WebAssembly 技术来处理您的文档，而无需将其上传到外部服务器，从而确保完全的隐私。",
+      "badgeText": "本地处理"
+    },
+    {
+      "type": "edit_privacy_security",
+      "title": "零数据传输",
+      "content": "与将文件上传到服务器的传统 PDF 编辑器不同，我们的平台会处理浏览器内存中的所有内容。",
+      "badgeText": "安全第一"
+    },
+    {
+      "type": "edit_performance",
+      "title": "即时离线渲染",
+      "content": "我们的编辑器可以在几毫秒内加载巨大的 PDF 文件。 您可以添加数百个注释，而不会出现任何延迟或网络延迟。",
+      "badgeText": "快如闪电"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "我可以编辑 PDF 中的现有文本吗？",
+      "a": "目前，您可以在现有文档上添加新文本、形状和图像。"
+    },
+    {
+      "q": "我的文件上传到任何地方了吗？",
+      "a": "不会，所有编辑都使用 WebAssembly 在浏览器本地进行。"
+    },
+    {
+      "q": "我可以签署文件吗？",
+      "a": "是的，您可以绘制签名或上传签名图像。"
+    },
+    {
+      "q": "该编辑器可以免费使用吗？",
+      "a": "是的，它 100% 免费，没有高级付费墙或隐藏费用。"
+    },
+    {
+      "q": "它适用于移动设备吗？",
+      "a": "是的，编辑器具有完全响应能力，并支持触摸输入进行绘图。"
+    }
+  ],
+  "badges": [
+    "无水印",
+    "100% 免费",
+    "离线编辑器"
+  ],
+  "stats": [
+    "100% Private",
+    "0 Server Uploads",
+    "Client-Side Only",
+    "No Accounts"
+  ],
+  "buttonText": "Start Editing",
+  "faqTitle": "常见问题",
+  "supportCenter": "支持中心"
+}

@@ -1,67 +1,85 @@
 {
-  "title": "Image to PDF — Combine Photos Offline",
-  "h1": "Convert Images to PDF Without Uploading",
-  "description": "Turn JPG, PNG, and WebP images into a single PDF document in your browser. Your photos stay private. Perfect for users in Bangkok.",
+  "title": "รูปภาพเป็น PDF — รวมรูปภาพออฟไลน์",
+  "h1": "แปลงรูปภาพเป็น PDF โดยไม่ต้องอัปโหลด",
+  "description": "เปลี่ยนรูปภาพ JPG, PNG และ WebP ให้เป็นเอกสาร PDF เดียวในเบราว์เซอร์ของคุณ รูปภาพของคุณยังคงเป็นส่วนตัว การประมวลผลภายในที่ปลอดภัย 100%",
+  "buttonText": "Convert Images",
+  "badges": [
+    "แฟ้มผลงาน",
+    "สแกนบัตรประจำตัว",
+    "อัลบั้มภาพ"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Images Offline?",
-      "content": "Photos contain location data and personal moments. Convert them to PDF without exposing them to any cloud service."
+      "type": "image_hero_features",
+      "title": "เหตุใดจึงแปลงรูปภาพออฟไลน์",
+      "content": "รูปภาพประกอบด้วยข้อมูลตำแหน่งและช่วงเวลาส่วนตัว แปลงเป็น PDF โดยไม่เปิดเผยต่อบริการคลาวด์ใดๆ"
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Turn Images Into PDF",
+      "type": "image_how_to_steps",
+      "title": "วิธีเปลี่ยนรูปภาพให้เป็น PDF",
       "steps": [
         {
-          "title": "Select Images",
-          "description": "Choose JPG, PNG, or WebP files from your device."
+          "title": "เลือกรูปภาพ",
+          "description": "เลือกไฟล์ JPG, PNG หรือ WebP จากอุปกรณ์ของคุณ"
         },
         {
-          "title": "Arrange Order",
-          "description": "Drag to reorder images before generating the PDF."
+          "title": "จัดเรียงออเดอร์",
+          "description": "ลากเพื่อจัดเรียงรูปภาพใหม่ก่อนสร้าง PDF"
         },
         {
-          "title": "Export PDF",
-          "description": "Download your image PDF in one click."
+          "title": "ส่งออก PDF",
+          "description": "ดาวน์โหลดภาพ PDF ของคุณได้ในคลิกเดียว"
         }
-      ]
+      ],
+      "badgeText": "คู่มือฉบับย่อ"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Image to PDF for Bangkok Users",
-      "content": "Photographers and designers in Bangkok use our tool to package portfolios without cloud uploads."
+      "type": "image_geo_targeting",
+      "title": "การประมวลผลภายในที่ปลอดภัย 100%",
+      "content": "การดำเนินการทั้งหมดดำเนินการโดยตรงบนอุปกรณ์ท้องถิ่นของคุณ เราใช้เทคโนโลยี WebAssembly ขั้นสูงเพื่อประมวลผลเอกสารของคุณโดยไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ภายนอก เพื่อให้มั่นใจถึงความเป็นส่วนตัวโดยสมบูรณ์",
+      "badgeText": "การประมวลผลในท้องถิ่น"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Photos Never Leave Your Device",
-      "content": "Personal photos, ID scans, medical images — all converted 100% locally without any server contact."
+      "type": "image_privacy_security",
+      "title": "รูปภาพไม่เคยออกจากอุปกรณ์ของคุณ",
+      "content": "ภาพถ่ายส่วนตัว สแกน ID รูปภาพทางการแพทย์ — ทั้งหมดแปลง 100% ในเครื่องโดยไม่ต้องติดต่อกับเซิร์ฟเวอร์",
+      "badgeText": "ความปลอดภัยต้องมาก่อน"
     },
     {
-      "type": "combiner_performance",
-      "title": "Batch Convert Instantly",
-      "content": "Convert 50 images into a single PDF in under 5 seconds. No upload, no wait."
+      "type": "image_performance",
+      "title": "ชุดแปลงทันที",
+      "content": "แปลงรูปภาพ 50 รูปเป็น PDF เดียวในเวลาไม่ถึง 5 วินาที ไม่ต้องอัพโหลด ไม่ต้องรอ",
+      "badgeText": "เร็วปานสายฟ้า"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are supported?",
-      "a": "JPG, JPEG, PNG, and WebP are all supported."
+      "q": "รองรับรูปแบบภาพใดบ้าง?",
+      "a": "รองรับ JPG, JPEG, PNG และ WebP ทั้งหมด"
     },
     {
-      "q": "Can I combine multiple images?",
-      "a": "Yes, select as many images as you want and reorder them."
+      "q": "ฉันสามารถรวมภาพหลายภาพเข้าด้วยกันได้หรือไม่?",
+      "a": "ใช่ เลือกรูปภาพได้มากเท่าที่คุณต้องการและเรียงลำดับใหม่"
     },
     {
-      "q": "Is image quality preserved?",
-      "a": "Yes, images are embedded at their original resolution."
+      "q": "คุณภาพของภาพจะคงอยู่หรือไม่?",
+      "a": "ใช่ รูปภาพถูกฝังไว้ที่ความละเอียดดั้งเดิม"
     },
     {
-      "q": "Does it strip EXIF metadata?",
-      "a": "You can optionally strip EXIF data for privacy."
+      "q": "มันดึงข้อมูลเมตา EXIF ​​​​ออกหรือไม่",
+      "a": "คุณสามารถเลือกตัดข้อมูล EXIF ​​​​เพื่อความเป็นส่วนตัวได้"
     },
     {
-      "q": "Is there a limit on image count?",
-      "a": "ใช่ ฟรีทั้งหมด"
+      "q": "มีการจำกัดจำนวนภาพหรือไม่?",
+      "a": "ไม่มีขีดจำกัด! รวมรูปภาพนับร้อยเป็น PDF เดียว"
     }
-  ]
+  ],
+  "faqTitle": "คำถามที่พบบ่อย",
+  "supportCenter": "ศูนย์สนับสนุน"
 }

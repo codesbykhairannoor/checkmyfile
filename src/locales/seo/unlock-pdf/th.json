@@ -1,67 +1,85 @@
 {
-  "title": "Unlock PDF — Remove Password Offline",
-  "h1": "Remove PDF Password Protection Instantly in Your Browser",
-  "description": "Unlock password-protected PDFs locally if you know the password. 100% private. No upload. Perfect for users in Bangkok.",
+  "title": "ปลดล็อค PDF — ลบรหัสผ่านออฟไลน์",
+  "h1": "ลบการป้องกันรหัสผ่าน PDF ทันทีในเบราว์เซอร์ของคุณ",
+  "description": "ปลดล็อก PDF ที่ป้องกันด้วยรหัสผ่านในเครื่องหากคุณรู้รหัสผ่าน ส่วนตัว 100% ไม่มีการอัพโหลด การประมวลผลภายในที่ปลอดภัย 100%",
+  "buttonText": "Unlock PDF",
+  "badges": [
+    "ลบรหัสผ่าน",
+    "ปลดล็อคทันที",
+    "ไม่มีบันทึกเซิร์ฟเวอร์"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "unlock_hero_features",
-      "title": "Why Unlock PDFs Locally?",
-      "content": "You have the password to your own file. Unlocking it should not require uploading sensitive documents to an external service."
+      "title": "เหตุใดจึงต้องปลดล็อค PDF ในเครื่อง?",
+      "content": "คุณมีรหัสผ่านไปยังไฟล์ของคุณเอง การปลดล็อคไม่ควรต้องอัพโหลดเอกสารสำคัญไปยังบริการภายนอก"
     },
     {
       "type": "unlock_how_to_steps",
-      "title": "How to Unlock a Protected PDF",
+      "title": "วิธีปลดล็อก PDF ที่ได้รับการป้องกัน",
       "steps": [
         {
-          "title": "Open Protected PDF",
-          "description": "Select the password-protected PDF."
+          "title": "เปิด PDF ที่ได้รับการป้องกัน",
+          "description": "เลือก PDF ที่มีการป้องกันด้วยรหัสผ่าน"
         },
         {
-          "title": "Enter Your Password",
-          "description": "Provide the existing password — decryption stays in your browser."
+          "title": "ใส่รหัสผ่านของคุณ",
+          "description": "ระบุรหัสผ่านที่มีอยู่ — การถอดรหัสจะยังคงอยู่ในเบราว์เซอร์ของคุณ"
         },
         {
-          "title": "Download Unlocked PDF",
-          "description": "Get your unlocked, fully accessible PDF instantly."
+          "title": "ดาวน์โหลด PDF ที่ปลดล็อคแล้ว",
+          "description": "รับ PDF ที่ปลดล็อคและเข้าถึงได้อย่างเต็มที่ทันที"
         }
-      ]
+      ],
+      "badgeText": "คู่มือฉบับย่อ"
     },
     {
       "type": "unlock_geo_targeting",
-      "title": "Instant PDF Unlocking for Bangkok Users",
-      "content": "Users in Bangkok access their own password-protected files without sending decryption keys to any server."
+      "title": "การประมวลผลภายในที่ปลอดภัย 100%",
+      "content": "การดำเนินการทั้งหมดดำเนินการโดยตรงบนอุปกรณ์ท้องถิ่นของคุณ เราใช้เทคโนโลยี WebAssembly ขั้นสูงเพื่อประมวลผลเอกสารของคุณโดยไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ภายนอก เพื่อให้มั่นใจถึงความเป็นส่วนตัวโดยสมบูรณ์",
+      "badgeText": "การประมวลผลในท้องถิ่น"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Your Password Never Leaves the Browser",
-      "content": "The decryption key and your document are processed entirely in browser memory — never transmitted to any server or service."
+      "title": "รหัสผ่านของคุณจะไม่ออกจากเบราว์เซอร์",
+      "content": "คีย์ถอดรหัสและเอกสารของคุณได้รับการประมวลผลทั้งหมดในหน่วยความจำเบราว์เซอร์ — ไม่เคยถูกส่งไปยังเซิร์ฟเวอร์หรือบริการใดๆ",
+      "badgeText": "ความปลอดภัยต้องมาก่อน"
     },
     {
       "type": "unlock_performance",
-      "title": "Instant Browser-Local Decryption",
-      "content": "AES decryption in your browser takes under a second — far faster than any cloud service with no upload wait."
+      "title": "การถอดรหัสภายในเบราว์เซอร์ทันที",
+      "content": "การถอดรหัส AES ในเบราว์เซอร์ของคุณใช้เวลาไม่ถึงวินาที — เร็วกว่าบริการคลาวด์ใดๆ มากโดยไม่ต้องรอการอัปโหลด",
+      "badgeText": "เร็วปานสายฟ้า"
     }
   ],
   "faqs": [
     {
-      "q": "Does it work without the password?",
-      "a": "No, you must know the existing password to unlock."
+      "q": "มันทำงานโดยไม่มีรหัสผ่านหรือไม่?",
+      "a": "ไม่ คุณต้องรู้รหัสผ่านที่มีอยู่เพื่อปลดล็อค"
     },
     {
-      "q": "Can I unlock permissions-restricted PDFs?",
-      "a": "Yes, permission restrictions are removed after password verification."
+      "q": "ฉันสามารถปลดล็อค PDF ที่จำกัดสิทธิ์ได้หรือไม่",
+      "a": "ใช่ ข้อจำกัดการอนุญาตจะถูกลบออกหลังจากการยืนยันรหัสผ่าน"
     },
     {
-      "q": "Is the decryption process secure?",
-      "a": "All decryption happens in your browser memory; nothing is transmitted."
+      "q": "กระบวนการถอดรหัสปลอดภัยหรือไม่?",
+      "a": "การถอดรหัสทั้งหมดเกิดขึ้นในหน่วยความจำเบราว์เซอร์ของคุณ ไม่มีอะไรถูกส่ง"
     },
     {
-      "q": "What if the password is wrong?",
-      "a": "You will see an error and can try again with the correct password."
+      "q": "จะทำอย่างไรถ้ารหัสผ่านผิด?",
+      "a": "คุณจะเห็นข้อผิดพลาดและสามารถลองอีกครั้งโดยใช้รหัสผ่านที่ถูกต้อง"
     },
     {
-      "q": "Is this free?",
-      "a": "ใช่ ฟรีทั้งหมด"
+      "q": "ฟรีหรือเปล่า?",
+      "a": "ใช่ สมบูรณ์ฟรี"
     }
-  ]
+  ],
+  "faqTitle": "คำถามที่พบบ่อย",
+  "supportCenter": "ศูนย์สนับสนุน"
 }

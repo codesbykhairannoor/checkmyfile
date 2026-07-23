@@ -1,67 +1,85 @@
 {
-  "title": "Password Protect PDF — Secure Files Offline",
-  "h1": "Add Password Protection to PDF Files Instantly",
-  "description": "Encrypt PDF files with AES-256 directly in your browser. Your document never leaves your device. Ideal for users in Athens.",
+  "title": "Προστασία με κωδικό πρόσβασης PDF — Ασφαλή αρχεία εκτός σύνδεσης",
+  "h1": "Προσθέστε προστασία με κωδικό πρόσβασης σε αρχεία PDF άμεσα",
+  "description": "Κρυπτογράφηση αρχείων PDF με AES-256 απευθείας στο πρόγραμμα περιήγησής σας. Το έγγραφό σας δεν φεύγει ποτέ από τη συσκευή σας. 100% ασφαλής τοπική επεξεργασία.",
+  "buttonText": "Protect PDF",
+  "badges": [
+    "Κρυπτογράφηση AES-256",
+    "Ασφαλής κωδικός πρόσβασης",
+    "Μόνο από την πλευρά του πελάτη"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "protect_hero_features",
-      "title": "Why Protect PDFs Locally?",
-      "content": "Adding a password means the file is sensitive. Never upload sensitive files to a cloud encryptor. Ours runs entirely offline with AES-256 encryption."
+      "title": "Γιατί να προστατέψετε τα PDF τοπικά;",
+      "content": "Η προσθήκη κωδικού πρόσβασης σημαίνει ότι το αρχείο είναι ευαίσθητο. Μην ανεβάζετε ποτέ ευαίσθητα αρχεία σε κρυπτογράφηση cloud. Το δικό μας εκτελείται εντελώς εκτός σύνδεσης με κρυπτογράφηση AES-256."
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Password Protect a PDF",
+      "title": "Πώς να προστατέψετε με κωδικό πρόσβασης ένα PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF you want to lock."
+          "title": "Ανοίξτε το PDF",
+          "description": "Επιλέξτε το PDF που θέλετε να κλειδώσετε."
         },
         {
-          "title": "Set Password",
-          "description": "Choose a strong password for encryption."
+          "title": "Ορισμός κωδικού πρόσβασης",
+          "description": "Επιλέξτε έναν ισχυρό κωδικό πρόσβασης για κρυπτογράφηση."
         },
         {
-          "title": "Download Protected PDF",
-          "description": "Get your AES-256 encrypted PDF immediately."
+          "title": "Λήψη Προστατευμένου PDF",
+          "description": "Αποκτήστε αμέσως το κρυπτογραφημένο PDF AES-256."
         }
-      ]
+      ],
+      "badgeText": "Γρήγορος Οδηγός"
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Vault-Level PDF Protection for Athens",
-      "content": "Legal and finance professionals in Athens encrypt documents with AES-256 strength without exposing files to any server."
+      "title": "100% Ασφαλής Τοπική Επεξεργασία",
+      "content": "Όλες οι λειτουργίες εκτελούνται απευθείας στην τοπική συσκευή σας. Χρησιμοποιούμε προηγμένη τεχνολογία WebAssembly για να επεξεργαζόμαστε τα έγγραφά σας χωρίς ποτέ να τα ανεβάσουμε σε εξωτερικούς διακομιστές, διασφαλίζοντας πλήρες απόρρητο.",
+      "badgeText": "Τοπική Επεξεργασία"
     },
     {
       "type": "protect_privacy_security",
-      "title": "AES-256 Encryption — Bank-Grade, Offline",
-      "content": "Military-grade AES-256 encryption runs in your browser. No key is ever transmitted to any server."
+      "title": "Κρυπτογράφηση AES-256 — Βαθμός τράπεζας, εκτός σύνδεσης",
+      "content": "Η κρυπτογράφηση AES-256 στρατιωτικού βαθμού εκτελείται στο πρόγραμμα περιήγησής σας. Κανένα κλειδί δεν μεταδίδεται ποτέ σε κανένα διακομιστή.",
+      "badgeText": "Πρώτα η ασφάλεια"
     },
     {
       "type": "protect_performance",
-      "title": "Encrypt Any PDF in Under 1 Second",
-      "content": "AES-256 processing locally takes milliseconds — no upload, no queue, no wait."
+      "title": "Κρυπτογράφηση οποιουδήποτε PDF σε λιγότερο από 1 δευτερόλεπτο",
+      "content": "Η τοπική επεξεργασία του AES-256 διαρκεί χιλιοστά του δευτερολέπτου — χωρίς μεταφόρτωση, χωρίς ουρά, χωρίς αναμονή.",
+      "badgeText": "Αστραπιαία"
     }
   ],
   "faqs": [
     {
-      "q": "What encryption standard is used?",
-      "a": "AES-256, the same standard used by banks and governments."
+      "q": "Ποιο πρότυπο κρυπτογράφησης χρησιμοποιείται;",
+      "a": "AES-256, το ίδιο πρότυπο που χρησιμοποιείται από τράπεζες και κυβερνήσεις."
     },
     {
-      "q": "Can I set different owner and user passwords?",
-      "a": "Yes, you can set both separately."
+      "q": "Μπορώ να ορίσω διαφορετικούς κωδικούς πρόσβασης κατόχου και χρήστη;",
+      "a": "Ναι, μπορείτε να ρυθμίσετε και τα δύο ξεχωριστά."
     },
     {
-      "q": "Is the original file modified?",
-      "a": "No, a new encrypted copy is created."
+      "q": "Έχει τροποποιηθεί το αρχικό αρχείο;",
+      "a": "Όχι, δημιουργείται ένα νέο κρυπτογραφημένο αντίγραφο."
     },
     {
-      "q": "Can I restrict printing or editing?",
-      "a": "Yes, permission restrictions can be set alongside the password."
+      "q": "Μπορώ να περιορίσω την εκτύπωση ή την επεξεργασία;",
+      "a": "Ναι, μπορούν να οριστούν περιορισμοί αδειών μαζί με τον κωδικό πρόσβασης."
     },
     {
-      "q": "Is this free?",
+      "q": "Αυτό είναι δωρεάν;",
       "a": "Ναι, εντελώς δωρεάν."
     }
-  ]
+  ],
+  "faqTitle": "Συχνές Ερωτήσεις",
+  "supportCenter": "Κέντρο Υποστήριξης"
 }

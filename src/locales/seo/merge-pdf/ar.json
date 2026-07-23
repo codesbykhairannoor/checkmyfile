@@ -1,67 +1,78 @@
 {
-  "title": "Merge PDF - Combine Documents Offline",
-  "h1": "Merge PDF Files Instantly in Your Browser",
-  "description": "Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, perfect for users in Riyadh.",
+  "title": "دمج PDF - دمج المستندات دون الاتصال بالإنترنت",
+  "h1": "دمج ملفات PDF على الفور في متصفحك",
+  "description": "قم بدمج ملفات PDF متعددة في مستند واحد باستخدام WebAssembly من جانب العميل. لا توجد تحميلات للملفات، مثالية للمستخدمين في نيويورك.",
   "sections": [
     {
       "type": "merge_hero_features",
-      "title": "Why Merge PDF Offline?",
-      "content": "Instead of uploading sensitive documents to a server, our Merge PDF tool stitches your pages together directly in your browser. Complete privacy."
+      "title": "لماذا دمج PDF دون اتصال؟",
+      "content": "بدلاً من تحميل المستندات الحساسة إلى الخادم، تقوم أداة دمج PDF الخاصة بنا بدمج صفحاتك معًا مباشرةً في متصفحك. الخصوصية الكاملة."
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Merge PDF Files",
+      "title": "كيفية دمج ملفات PDF",
       "steps": [
         {
-          "title": "Add Documents",
-          "description": "Select the PDFs you want to merge together."
+          "title": "إضافة المستندات",
+          "description": "حدد ملفات PDF التي تريد دمجها معًا."
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop files to get the perfect sequence."
+          "title": "إعادة ترتيب الصفحات",
+          "description": "قم بسحب وإسقاط الملفات للحصول على التسلسل المثالي."
         },
         {
-          "title": "Merge & Save",
-          "description": "Click merge and download your combined document instantly."
+          "title": "دمج وحفظ",
+          "description": "انقر فوق دمج وقم بتنزيل المستند المدمج على الفور."
         }
-      ]
+      ],
+      "badgeText": "الدليل السريع"
     },
     {
       "type": "merge_geo_targeting",
-      "title": "Seamless Merging for users in Riyadh, SA-01",
-      "content": "No matter if you are in Riyadh or traveling, combining documents takes zero milliseconds of upload time."
+      "title": "معالجة محلية آمنة بنسبة 100%",
+      "content": "يتم تنفيذ جميع العمليات مباشرة على جهازك المحلي. نحن نستخدم تقنية WebAssembly المتقدمة لمعالجة مستنداتك دون تحميلها على خوادم خارجية، مما يضمن الخصوصية الكاملة.",
+      "badgeText": "المعالجة المحلية"
     },
     {
       "type": "merge_privacy_security",
-      "title": "Enterprise-Grade Document Combining",
-      "content": "Merging contracts and invoices? Do it securely with our WASM engine. No traces left behind."
+      "title": "دمج المستندات على مستوى المؤسسات",
+      "content": "دمج العقود والفواتير؟ افعل ذلك بشكل آمن باستخدام محرك WASM الخاص بنا. لم تترك أي آثار وراءها.",
+      "badgeText": "الأمن أولا"
     },
     {
       "type": "merge_performance",
-      "title": "Instant Combination",
-      "content": "Stitching PDFs locally means you can merge a 500-page document faster than you can upload it."
+      "title": "تركيبة فورية",
+      "content": "إن دمج ملفات PDF محليًا يعني أنه يمكنك دمج مستند مكون من 500 صفحة بشكل أسرع مما يمكنك تحميله.",
+      "badgeText": "بسرعة البرق"
     }
   ],
   "faqs": [
     {
-      "q": "Is merging PDFs completely free?",
-      "a": "Yes! Merge as many files as you want without paying a cent."
+      "q": "هل دمج ملفات PDF مجاني تمامًا؟",
+      "a": "نعم! دمج العديد من الملفات كما تريد دون دفع سنت واحد."
     },
     {
-      "q": "Are my merged files uploaded?",
-      "a": "No, all merging happens offline in your browser."
+      "q": "هل تم تحميل ملفاتي المدمجة؟",
+      "a": "لا، تتم جميع عمليات الدمج دون الاتصال بالإنترنت في متصفحك."
     },
     {
-      "q": "Can I reorder the files before merging?",
-      "a": "Yes, just drag and drop the files in the preview window."
+      "q": "هل يمكنني إعادة ترتيب الملفات قبل الدمج؟",
+      "a": "نعم، ما عليك سوى سحب الملفات وإسقاطها في نافذة المعاينة."
     },
     {
-      "q": "Is there a limit on how many files I can merge?",
-      "a": "No artificial limits! Merge 10 or 100 files depending on your RAM."
+      "q": "هل هناك حد لعدد الملفات التي يمكنني دمجها؟",
+      "a": "لا حدود مصطنعة! دمج 10 أو 100 ملف حسب ذاكرة الوصول العشوائي الخاصة بك."
     },
     {
-      "q": "Does merging ruin the formatting?",
-      "a": "Not at all. The original layers and vector data are perfectly stitched together."
+      "q": "هل الدمج يفسد التنسيق؟",
+      "a": "مُطْلَقاً. تم دمج الطبقات الأصلية وبيانات المتجهات معًا بشكل مثالي."
     }
+  ],
+  "faqTitle": "الأسئلة المتداولة",
+  "supportCenter": "مركز الدعم",
+  "badges": [
+    "زمن استجابة الخادم صفر",
+    "لا يوجد نطاق ترددي للتحميل",
+    "معالجة فورية"
   ]
 }

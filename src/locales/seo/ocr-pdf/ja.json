@@ -1,67 +1,85 @@
 {
-  "title": "OCR PDF — Make Scans Searchable Offline",
-  "h1": "Extract and Recognize Text from Scanned PDFs",
-  "description": "Run OCR on scanned PDFs to make them searchable and copyable, entirely in your browser using Tesseract. No upload. Great for users in Tokyo.",
+  "title": "OCR PDF — スキャンをオフラインで検索可能にする",
+  "h1": "スキャンした PDF からテキストを抽出して認識する",
+  "description": "Tesseract を使用して、スキャンした PDF で OCR を実行し、ブラウザ内で検索およびコピーできるようにします。 アップロードはありません。 100% 安全なローカル処理。",
+  "buttonText": "Run OCR",
+  "badges": [
+    "テキストの抽出",
+    "検索可能な PDF",
+    "AI認識"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Run OCR Locally?",
-      "content": "Scanned PDFs contain sensitive text. Running OCR on a cloud service exposes that text to a third party. Ours runs 100% offline."
+      "type": "ocr_hero_features",
+      "title": "OCR をローカルで実行する理由",
+      "content": "スキャンした PDF には機密テキストが含まれています。 クラウド サービスで OCR を実行すると、そのテキストが第三者に公開されます。 私たちのものは 100% オフラインで実行されます。"
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to OCR a PDF",
+      "type": "ocr_how_to_steps",
+      "title": "PDF を OCR する方法",
       "steps": [
         {
-          "title": "Load Scanned PDF",
-          "description": "Select the image-based or scanned PDF."
+          "title": "スキャンした PDF をロード",
+          "description": "画像ベースの PDF またはスキャンした PDF を選択します。"
         },
         {
-          "title": "Select Language",
-          "description": "Choose the document language for better accuracy."
+          "title": "言語を選択",
+          "description": "精度を高めるためにドキュメントの言語を選択してください。"
         },
         {
-          "title": "Download Searchable PDF",
-          "description": "Get a text-layer PDF ready to search and copy."
+          "title": "検索可能な PDF をダウンロード",
+          "description": "検索してコピーできるテキストレイヤー PDF を取得します。"
         }
-      ]
+      ],
+      "badgeText": "クイックガイド"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "OCR Tool for Tokyo Archives",
-      "content": "Government agencies and businesses in Tokyo digitize paper archives using our offline OCR tool."
+      "type": "ocr_geo_targeting",
+      "title": "100% 安全なローカル処理",
+      "content": "すべての操作はローカル デバイス上で直接実行されます。 当社は高度な WebAssembly テクノロジーを使用して、ドキュメントを外部サーバーにアップロードすることなく処理し、完全なプライバシーを確​​保します。",
+      "badgeText": "ローカル処理"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Content Never Exposed",
-      "content": "OCR processing using Tesseract WASM runs entirely in browser memory — no API calls, no data transmission."
+      "type": "ocr_privacy_security",
+      "title": "スキャンされたコンテンツは決して公開されません",
+      "content": "Tesseract WASM を使用した OCR 処理は完全にブラウザー メモリ内で実行されます。API 呼び出しやデータ送信はありません。",
+      "badgeText": "セキュリティ第一"
     },
     {
-      "type": "organizer_performance",
-      "title": "OCR Any Document Locally",
-      "content": "Process a 20-page scanned PDF in under 30 seconds. All Tesseract processing happens in-browser."
+      "type": "ocr_performance",
+      "title": "あらゆるドキュメントをローカルで OCR",
+      "content": "20 ページのスキャンされた PDF を 30 秒以内に処理します。 Tesseract の処理はすべてブラウザ内で行われます。",
+      "badgeText": "超高速"
     }
   ],
   "faqs": [
     {
-      "q": "What languages does OCR support?",
-      "a": "Over 100 languages via Tesseract engine."
+      "q": "OCR はどの言語をサポートしていますか?",
+      "a": "Tesseract エンジン経由で 100 以上の言語。"
     },
     {
-      "q": "How accurate is the OCR?",
-      "a": "Accuracy depends on scan quality; clear, high-contrast scans yield 95%+ accuracy."
+      "q": "OCRの精度はどのくらいですか?",
+      "a": "精度はスキャンの品質に依存します。 鮮明で高コントラストのスキャンにより、95% 以上の精度が得られます。"
     },
     {
-      "q": "Does it create a searchable PDF?",
-      "a": "Yes, a text layer is added making the PDF fully searchable."
+      "q": "検索可能な PDF が作成されますか?",
+      "a": "はい、テキスト レイヤーが追加され、PDF が完全に検索可能になります。"
     },
     {
-      "q": "Can I copy text from the result?",
-      "a": "Yes, the output PDF has selectable, copyable text."
+      "q": "結果からテキストをコピーできますか?",
+      "a": "はい、出力 PDF には選択およびコピー可能なテキストが含まれています。"
     },
     {
-      "q": "Is this free?",
-      "a": "はい、完全無料です。"
+      "q": "これは無料ですか？",
+      "a": "はい、いつでも無料です。"
     }
-  ]
+  ],
+  "faqTitle": "よくある質問",
+  "supportCenter": "サポート センター"
 }

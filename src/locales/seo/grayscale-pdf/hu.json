@@ -1,67 +1,85 @@
 {
-  "title": "Grayscale PDF — Convert to Black and White Offline",
-  "h1": "Convert Color PDF Pages to Grayscale Instantly",
-  "description": "Turn color PDFs into black-and-white versions to reduce file size or prepare for printing, entirely in your browser. Ideal for users in Budapest.",
+  "title": "Szürkeárnyalatos PDF — Konvertálás fekete-fehérre offline",
+  "h1": "Színes PDF-oldalak azonnali szürkeárnyalatos átalakítása",
+  "description": "Változtassa színes PDF-fájlokat fekete-fehér változatokká, hogy csökkentse a fájlméretet, vagy készüljön fel a nyomtatásra, teljes egészében a böngészőjében. 100%-ban biztonságos helyi feldolgozás.",
+  "buttonText": "Convert to Grayscale",
+  "badges": [
+    "Mentse el a tintát",
+    "Fekete-fehér",
+    "Nyomtatáshoz tökéletes"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Convert to Grayscale Offline?",
-      "content": "Removing color from a PDF is a pre-print or archiving step. Do it locally without exposing confidential document design."
+      "type": "grayscale_hero_features",
+      "title": "Miért konvertálhat offline szürkeárnyalatosra?",
+      "content": "A színek eltávolítása a PDF-ből egy nyomtatás előtti vagy archiválási lépés. Helyben végezze el anélkül, hogy felfedné a bizalmas dokumentumtervezést."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Make PDF Grayscale",
+      "type": "grayscale_how_to_steps",
+      "title": "PDF készítése szürkeárnyalatos",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the color PDF to convert."
+          "title": "PDF megnyitása",
+          "description": "Válassza ki a konvertálni kívánt PDF-színt."
         },
         {
-          "title": "Choose Conversion Mode",
-          "description": "Pick luminance or contrast-adjusted grayscale."
+          "title": "Válassza a Konverziós módot",
+          "description": "Válasszon fényerőt vagy kontraszttal beállított szürkeárnyalatot."
         },
         {
-          "title": "Download Grayscale PDF",
-          "description": "Save the black-and-white PDF immediately."
+          "title": "Szürkeárnyalatos PDF letöltése",
+          "description": "Azonnal mentse a fekete-fehér PDF-fájlt."
         }
-      ]
+      ],
+      "badgeText": "Gyors útmutató"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Grayscale PDF for Budapest Printers",
-      "content": "Businesses in Budapest convert color PDFs to grayscale for cost-effective printing without cloud uploads."
+      "type": "grayscale_geo_targeting",
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Minden művelet közvetlenül a helyi eszközön történik. Fejlett WebAssembly technológiát használunk a dokumentumok feldolgozásához anélkül, hogy azokat külső szerverekre feltöltenénk, így biztosítva a teljes adatvédelmet.",
+      "badgeText": "Helyi feldolgozás"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Design Files Stay Confidential",
-      "content": "Internal design documents and branded materials converted to grayscale without cloud exposure."
+      "type": "grayscale_privacy_security",
+      "title": "A tervezési fájlok bizalmasak maradnak",
+      "content": "A belső tervezési dokumentumok és a márkás anyagok szürkeárnyalatossá konvertálva felhőhatás nélkül.",
+      "badgeText": "Első a biztonság"
     },
     {
-      "type": "transform_performance",
-      "title": "Convert Color Instantly",
-      "content": "A 200-page color PDF converted to grayscale in under 2 seconds. Zero upload."
+      "type": "grayscale_performance",
+      "title": "Színek átalakítása azonnal",
+      "content": "Egy 200 oldalas színes PDF 2 másodpercen belül szürkeárnyalatossá konvertálva. Nulla feltöltés.",
+      "badgeText": "Villámgyors"
     }
   ],
   "faqs": [
     {
-      "q": "Does grayscale reduce file size?",
-      "a": "Often yes, especially for image-heavy PDFs."
+      "q": "A szürkeárnyalatok csökkentik a fájlméretet?",
+      "a": "Gyakran igen, különösen a sok képet tartalmazó PDF-ek esetében."
     },
     {
-      "q": "Are all pages converted?",
-      "a": "Yes by default; you can also select specific pages."
+      "q": "Minden oldal konvertálva van?",
+      "a": "Alapértelmezés szerint igen; adott oldalakat is kiválaszthat."
     },
     {
-      "q": "Is the conversion reversible?",
-      "a": "The color information is removed; keep the original for reversal."
+      "q": "Az átalakítás visszafordítható?",
+      "a": "A színinformáció el lesz távolítva; tartsa meg az eredetit a visszavonáshoz."
     },
     {
-      "q": "Does it affect text quality?",
-      "a": "No, text remains crisp and black."
+      "q": "Befolyásolja a szöveg minőségét?",
+      "a": "Nem, a szöveg éles és fekete marad."
     },
     {
-      "q": "Is this free?",
+      "q": "Ez ingyenes?",
       "a": "Igen, teljesen ingyenes."
     }
-  ]
+  ],
+  "faqTitle": "Gyakran Ismételt Kérdések",
+  "supportCenter": "Támogatási Központ"
 }

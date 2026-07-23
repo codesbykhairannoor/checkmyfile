@@ -1,67 +1,80 @@
 {
-  "title": "PDF to PowerPoint — Recover Editable Slides",
-  "h1": "Convert PDF to PowerPoint Presentation Offline",
-  "description": "Transform PDF documents back into editable .pptx presentations locally. No cloud needed. Perfect for users in Athens.",
+  "title": "PDF σε PowerPoint — Ανάκτηση επεξεργάσιμων διαφανειών",
+  "h1": "Μετατροπή PDF σε Παρουσίαση PowerPoint εκτός σύνδεσης",
+  "description": "Μετατρέψτε τα έγγραφα PDF ξανά σε επεξεργάσιμες παρουσιάσεις .pptx τοπικά. Δεν χρειάζεται σύννεφο. Ιδανικό για χρήστες στην Αθήνα.",
+  "buttonText": "Μετατροπή σε PPT",
+  "badges": [
+    "Επεξεργάσιμες Διαφάνειες",
+    "Ανάκτηση παρουσίασης",
+    "Γρήγορη Μετατροπή"
+  ],
+  "stats": [
+    "100%",
+    "Τοπικός",
+    "0s",
+    "Χρόνος αναμονής"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF to PowerPoint Offline?",
-      "content": "Recovering slide content from a PDF for editing should not require uploading sensitive decks to a cloud service."
+      "title": "Γιατί να χρησιμοποιήσετε offline;",
+      "content": "Η ανάκτηση περιεχομένου διαφάνειας από ένα PDF για επεξεργασία δεν θα πρέπει να απαιτεί τη μεταφόρτωση ευαίσθητων καταστρωμάτων σε μια υπηρεσία cloud."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to PowerPoint",
+      "title": "Πώς να χρησιμοποιήσετε",
       "steps": [
         {
-          "title": "Upload PDF",
-          "description": "Select the PDF containing your slide content."
+          "title": "Ανεβάστε PDF",
+          "description": "Επιλέξτε το PDF που περιέχει το περιεχόμενο της διαφάνειας σας."
         },
         {
-          "title": "Map Pages to Slides",
-          "description": "Each PDF page becomes one editable slide."
+          "title": "Χάρτης Σελίδες σε Διαφάνειες",
+          "description": "Κάθε σελίδα PDF γίνεται μια επεξεργάσιμη διαφάνεια."
         },
         {
-          "title": "Download .pptx",
-          "description": "Get your fully editable PowerPoint presentation."
+          "title": "Λήψη .pptx",
+          "description": "Αποκτήστε την πλήρως επεξεργάσιμη παρουσίασή σας στο PowerPoint."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "Slide Recovery in Athens",
-      "content": "Presenters in Athens use our tool to recover and re-edit presentations from old PDF archives."
+      "title": "Slide Recovery στην Αθήνα",
+      "content": "Οι παρουσιαστές στην Αθήνα χρησιμοποιούν το εργαλείο μας για να ανακτήσουν και να επεξεργαστούν ξανά παρουσιάσεις από παλιά αρχεία PDF."
     },
     {
       "type": "split_privacy_security",
-      "title": "Your Slides Are Never Exposed",
-      "content": "Confidential slide decks recovered and converted without any server interaction."
+      "title": "Οι διαφάνειές σας δεν εκτίθενται ποτέ",
+      "content": "Τα εμπιστευτικά καταστρώματα διαφανειών ανακτήθηκαν και μετατράπηκαν χωρίς καμία αλληλεπίδραση διακομιστή."
     },
     {
       "type": "split_performance",
-      "title": "Convert Slides at Lightning Speed",
-      "content": "A 60-slide PDF converted to PowerPoint in under 10 seconds with zero upload time."
+      "title": "Μετατροπή διαφανειών με ταχύτητα αστραπής",
+      "content": "Ένα PDF 60 διαφανειών που μετατράπηκε σε PowerPoint σε λιγότερο από 10 δευτερόλεπτα με μηδενικό χρόνο μεταφόρτωσης."
     }
   ],
   "faqs": [
     {
-      "q": "Are slide layouts preserved?",
-      "a": "Content is mapped to slides; some layout adjustments may be needed."
+      "q": "Διατηρούνται οι διατάξεις των διαφανειών;",
+      "a": "Το περιεχόμενο αντιστοιχίζεται σε διαφάνειες. μπορεί να χρειαστούν κάποιες προσαρμογές διάταξης."
     },
     {
-      "q": "Can I edit the slides after?",
-      "a": "Yes, the .pptx file is fully editable in PowerPoint or Google Slides."
+      "q": "Μπορώ να επεξεργαστώ τις διαφάνειες μετά;",
+      "a": "Ναι, το αρχείο .pptx είναι πλήρως επεξεργάσιμο στο PowerPoint ή στις Παρουσιάσεις Google."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No, convert as many pages as your RAM allows."
+      "q": "Υπάρχει όριο σελίδας;",
+      "a": "Όχι, μετατρέψτε όσες σελίδες σας επιτρέπει η RAM."
     },
     {
-      "q": "Does it work with image-heavy PDFs?",
-      "a": "Yes, images are embedded in each slide."
+      "q": "Λειτουργεί με αρχεία PDF με πολλές εικόνες;",
+      "a": "Ναι, οι εικόνες είναι ενσωματωμένες σε κάθε διαφάνεια."
     },
     {
-      "q": "Is this free?",
+      "q": "Αυτό είναι δωρεάν;",
       "a": "Ναι, εντελώς δωρεάν."
     }
-  ]
+  ],
+  "faqTitle": "Συχνές Ερωτήσεις"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Reverse PDF — Flip Page Order Offline",
-  "h1": "Reverse the Page Order of Any PDF Locally",
-  "description": "Flip the page sequence of PDF documents entirely in your browser. No upload, instant result. Great for users in Moscow.",
+  "title": "Обратный PDF — перевернуть порядок страниц в автономном режиме",
+  "h1": "Локально изменить порядок страниц любого PDF-файла",
+  "description": "Полностью переверните последовательность страниц PDF-документов в браузере. Никакой загрузки, мгновенный результат. 100% безопасная локальная обработка.",
+  "buttonText": "Reverse Order",
+  "badges": [
+    "Перевернуть все страницы",
+    "Исправление сканирований",
+    "Один клик"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Reverse PDF Page Order Offline?",
-      "content": "When a scanner outputs pages in reverse, you need a quick local fix — not a cloud upload of your entire document."
+      "type": "reverse_hero_features",
+      "title": "Зачем менять порядок страниц PDF в автономном режиме?",
+      "content": "Когда сканер выводит страницы в обратном порядке, вам нужно быстрое локальное исправление, а не загрузка всего документа в облако."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Reverse PDF Page Order",
+      "type": "reverse_how_to_steps",
+      "title": "Как изменить порядок страниц PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF with incorrect page order."
+          "title": "Открыть PDF",
+          "description": "Выберите PDF-файл с неправильным порядком страниц."
         },
         {
-          "title": "Confirm Reversal",
-          "description": "Preview the new first and last page."
+          "title": "Подтвердить разворот",
+          "description": "Предварительный просмотр новой первой и последней страницы."
         },
         {
-          "title": "Download Reversed PDF",
-          "description": "Get the reordered PDF instantly."
+          "title": "Скачать перевернутый PDF",
+          "description": "Получите измененный PDF-файл мгновенно."
         }
-      ]
+      ],
+      "badgeText": "Краткое руководство"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Page Order Fix for Moscow Users",
-      "content": "Office users in Moscow fix scanner reversal issues instantly without cloud uploads."
+      "type": "reverse_geo_targeting",
+      "title": "100% безопасная локальная обработка",
+      "content": "Все операции выполняются непосредственно на вашем локальном устройстве. Мы используем передовую технологию WebAssembly для обработки ваших документов, не загружая их на внешние серверы, обеспечивая полную конфиденциальность.",
+      "badgeText": "Локальная обработка"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Documents Never Leave Your Device",
-      "content": "Reversed contracts, reports, and records are processed entirely in browser memory."
+      "type": "reverse_privacy_security",
+      "title": "Документы никогда не покидают ваше устройство",
+      "content": "Отмененные контракты, отчеты и записи полностью обрабатываются в памяти браузера.",
+      "badgeText": "Безопасность превыше всего"
     },
     {
-      "type": "transform_performance",
-      "title": "Reverse Any PDF in Seconds",
-      "content": "Reversing a 1000-page document takes milliseconds. All in your browser."
+      "type": "reverse_performance",
+      "title": "Переверните любой PDF-файл за считанные секунды",
+      "content": "Переворачивание 1000-страничного документа занимает миллисекунды. Все в вашем браузере.",
+      "badgeText": "Молниеносно"
     }
   ],
   "faqs": [
     {
-      "q": "Does this reverse all pages?",
-      "a": "Yes, the full page order is flipped."
+      "q": "Это переворачивает все страницы?",
+      "a": "Да, полный порядок страниц перевернут."
     },
     {
-      "q": "Can I select a range to reverse?",
-      "a": "Yes, specify start and end pages to reverse selectively."
+      "q": "Могу ли я выбрать диапазон для разворота?",
+      "a": "Да, укажите начальную и конечную страницы для выборочного изменения."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "No, reversal is a structural operation with no quality loss."
+      "q": "Качество страдает?",
+      "a": "Нет, разворот — это структурная операция без потери качества."
     },
     {
-      "q": "Can I undo?",
-      "a": "Apply reversal again to undo."
+      "q": "Могу ли я отменить?",
+      "a": "Примените разворот еще раз, чтобы отменить действие."
     },
     {
-      "q": "Is this free?",
-      "a": "Да, полностью бесплатно."
+      "q": "Это бесплатно?",
+      "a": "Да, всегда бесплатно."
     }
-  ]
+  ],
+  "faqTitle": "Часто задаваемые вопросы",
+  "supportCenter": "Центр поддержки"
 }

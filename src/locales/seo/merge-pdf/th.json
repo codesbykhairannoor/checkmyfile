@@ -1,67 +1,78 @@
 {
-  "title": "Merge PDF - Combine Documents Offline",
-  "h1": "Merge PDF Files Instantly in Your Browser",
-  "description": "Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, perfect for users in Bangkok.",
+  "title": "รวม PDF - รวมเอกสารออฟไลน์",
+  "h1": "รวมไฟล์ PDF ทันทีในเบราว์เซอร์ของคุณ",
+  "description": "รวมไฟล์ PDF หลายไฟล์ไว้ในเอกสารเดียวโดยใช้ WebAssembly ฝั่งไคลเอ็นต์ล้วนๆ ไม่มีการอัปโหลดไฟล์ เหมาะสำหรับผู้ใช้ในนิวยอร์ก",
   "sections": [
     {
       "type": "merge_hero_features",
-      "title": "Why Merge PDF Offline?",
-      "content": "Instead of uploading sensitive documents to a server, our Merge PDF tool stitches your pages together directly in your browser. Complete privacy."
+      "title": "เหตุใดจึงรวม PDF ออฟไลน์",
+      "content": "แทนที่จะอัพโหลดเอกสารสำคัญไปยังเซิร์ฟเวอร์ เครื่องมือ Merge PDF ของเราจะรวมหน้าของคุณเข้าด้วยกันโดยตรงในเบราว์เซอร์ของคุณ ความเป็นส่วนตัวที่สมบูรณ์"
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Merge PDF Files",
+      "title": "วิธีรวมไฟล์ PDF",
       "steps": [
         {
-          "title": "Add Documents",
-          "description": "Select the PDFs you want to merge together."
+          "title": "เพิ่มเอกสาร",
+          "description": "เลือก PDF ที่คุณต้องการรวมเข้าด้วยกัน"
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop files to get the perfect sequence."
+          "title": "เรียงลำดับหน้าใหม่",
+          "description": "ลากและวางไฟล์เพื่อให้ได้ลำดับที่สมบูรณ์แบบ"
         },
         {
-          "title": "Merge & Save",
-          "description": "Click merge and download your combined document instantly."
+          "title": "ผสานและบันทึก",
+          "description": "คลิกผสานและดาวน์โหลดเอกสารรวมของคุณทันที"
         }
-      ]
+      ],
+      "badgeText": "คู่มือฉบับย่อ"
     },
     {
       "type": "merge_geo_targeting",
-      "title": "Seamless Merging for users in Bangkok, TH-10",
-      "content": "No matter if you are in Bangkok or traveling, combining documents takes zero milliseconds of upload time."
+      "title": "การประมวลผลภายในที่ปลอดภัย 100%",
+      "content": "การดำเนินการทั้งหมดดำเนินการโดยตรงบนอุปกรณ์ท้องถิ่นของคุณ เราใช้เทคโนโลยี WebAssembly ขั้นสูงเพื่อประมวลผลเอกสารของคุณโดยไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ภายนอก เพื่อให้มั่นใจถึงความเป็นส่วนตัวโดยสมบูรณ์",
+      "badgeText": "การประมวลผลในท้องถิ่น"
     },
     {
       "type": "merge_privacy_security",
-      "title": "Enterprise-Grade Document Combining",
-      "content": "Merging contracts and invoices? Do it securely with our WASM engine. No traces left behind."
+      "title": "การรวมเอกสารระดับองค์กร",
+      "content": "การรวมสัญญาและใบแจ้งหนี้เข้าด้วยกัน? ทำอย่างปลอดภัยด้วยเครื่องมือ WASM ของเรา ไม่มีร่องรอยหลงเหลืออยู่",
+      "badgeText": "ความปลอดภัยต้องมาก่อน"
     },
     {
       "type": "merge_performance",
-      "title": "Instant Combination",
-      "content": "Stitching PDFs locally means you can merge a 500-page document faster than you can upload it."
+      "title": "การรวมกันทันที",
+      "content": "การรวม PDF ในเครื่องหมายความว่าคุณสามารถรวมเอกสาร 500 หน้าได้เร็วกว่าที่คุณสามารถอัปโหลดได้",
+      "badgeText": "เร็วปานสายฟ้า"
     }
   ],
   "faqs": [
     {
-      "q": "Is merging PDFs completely free?",
-      "a": "Yes! Merge as many files as you want without paying a cent."
+      "q": "การรวม PDF ไม่มีค่าใช้จ่ายใด ๆ หรือไม่?",
+      "a": "ใช่! รวมไฟล์ได้มากเท่าที่คุณต้องการโดยไม่ต้องเสียเงินสักบาท"
     },
     {
-      "q": "Are my merged files uploaded?",
-      "a": "No, all merging happens offline in your browser."
+      "q": "ไฟล์ที่รวมของฉันถูกอัพโหลดหรือไม่?",
+      "a": "ไม่ การรวมทั้งหมดเกิดขึ้นแบบออฟไลน์ในเบราว์เซอร์ของคุณ"
     },
     {
-      "q": "Can I reorder the files before merging?",
-      "a": "Yes, just drag and drop the files in the preview window."
+      "q": "ฉันสามารถเรียงลำดับไฟล์ใหม่ก่อนที่จะรวมเข้าด้วยกันได้หรือไม่",
+      "a": "ใช่ เพียงลากและวางไฟล์ในหน้าต่างแสดงตัวอย่าง"
     },
     {
-      "q": "Is there a limit on how many files I can merge?",
-      "a": "No artificial limits! Merge 10 or 100 files depending on your RAM."
+      "q": "มีการจำกัดจำนวนไฟล์ที่ฉันสามารถรวมได้หรือไม่?",
+      "a": "ไม่มีข้อจำกัดเทียม! รวม 10 หรือ 100 ไฟล์ขึ้นอยู่กับ RAM ของคุณ"
     },
     {
-      "q": "Does merging ruin the formatting?",
-      "a": "Not at all. The original layers and vector data are perfectly stitched together."
+      "q": "การผสานจะทำให้การจัดรูปแบบเสียหายหรือไม่",
+      "a": "ไม่เลย. เลเยอร์ดั้งเดิมและข้อมูลเวกเตอร์ถูกเย็บเข้าด้วยกันอย่างลงตัว"
     }
+  ],
+  "faqTitle": "คำถามที่พบบ่อย",
+  "supportCenter": "ศูนย์สนับสนุน",
+  "badges": [
+    "เวลาแฝงของเซิร์ฟเวอร์เป็นศูนย์",
+    "ไม่มีแบนด์วิธการอัพโหลด",
+    "การประมวลผลทันที"
   ]
 }

@@ -1,67 +1,85 @@
 {
-  "title": "PowerPoint to PDF Converter — Offline & Free",
-  "h1": "Convert PowerPoint Presentations to PDF Instantly",
-  "description": "Convert .pptx presentations to high-quality PDFs directly in your browser. No cloud needed. Perfect for presenters in New Delhi.",
+  "title": "पावरपॉइंट से पीडीएफ कन्वर्टर - ऑफ़लाइन और मुफ़्त",
+  "h1": "पॉवरपॉइंट प्रेजेंटेशन को तुरंत पीडीएफ में बदलें",
+  "description": ".pptx प्रस्तुतियों को सीधे अपने ब्राउज़र में उच्च-गुणवत्ता वाले PDF में बदलें। किसी बादल की जरूरत नहीं. 100% सुरक्षित स्थानीय प्रसंस्करण।",
+  "buttonText": "Convert Slides",
+  "badges": [
+    "बोर्ड बैठकें",
+    "पिच डेक",
+    "अप्रकाशित उत्पाद"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Presentations Offline?",
-      "content": "Your slides may contain unreleased products or confidential strategies. Convert without risking data exposure."
+      "type": "ppt_hero_features",
+      "title": "प्रस्तुतियों को ऑफ़लाइन क्यों बदलें?",
+      "content": "आपकी स्लाइड में अप्रकाशित उत्पाद या गोपनीय रणनीतियाँ हो सकती हैं। डेटा एक्सपोज़र को जोखिम में डाले बिना कनवर्ट करें।"
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert PowerPoint to PDF",
+      "type": "ppt_how_to_steps",
+      "title": "पावरप्वाइंट को पीडीएफ में कैसे बदलें",
       "steps": [
         {
-          "title": "Load Presentation",
-          "description": "Select your .pptx file from your device."
+          "title": "प्रेजेंटेशन लोड करें",
+          "description": "अपने डिवाइस से अपनी .pptx फ़ाइल चुनें।"
         },
         {
-          "title": "Select Slide Range",
-          "description": "Include all slides or specific ones."
+          "title": "स्लाइड रेंज का चयन करें",
+          "description": "सभी स्लाइड या विशिष्ट स्लाइड शामिल करें।"
         },
         {
-          "title": "Download PDF",
-          "description": "Get your PDF with all formatting preserved."
+          "title": "पीडीएफ डाउनलोड करें",
+          "description": "सभी फ़ॉर्मेटिंग संरक्षित रखते हुए अपना पीडीएफ़ प्राप्त करें।"
         }
-      ]
+      ],
+      "badgeText": "त्वरित मार्गदर्शिका"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Presentation Conversion in New Delhi",
-      "content": "Presenters in New Delhi trust us to convert slide decks without leaking unreleased content to cloud servers."
+      "type": "ppt_geo_targeting",
+      "title": "100% सुरक्षित स्थानीय प्रसंस्करण",
+      "content": "सभी ऑपरेशन सीधे आपके स्थानीय डिवाइस पर किए जाते हैं। हम पूर्ण गोपनीयता सुनिश्चित करते हुए, आपके दस्तावेज़ों को बाहरी सर्वर पर अपलोड किए बिना संसाधित करने के लिए उन्नत WebAssembly तकनीक का उपयोग करते हैं।",
+      "badgeText": "स्थानीय प्रसंस्करण"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Confidential Slides Stay Confidential",
-      "content": "Pre-launch product decks? Board presentations? Converted 100% locally without network access."
+      "type": "ppt_privacy_security",
+      "title": "गोपनीय स्लाइड गोपनीय रहें",
+      "content": "प्री-लॉन्च उत्पाद डेक? बोर्ड प्रस्तुतियाँ? नेटवर्क पहुंच के बिना 100% स्थानीय रूप से परिवर्तित।",
+      "badgeText": "सुरक्षा पहले"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Slide Export",
-      "content": "Convert 100-slide decks in seconds. No queue, no waiting, no upload bandwidth wasted."
+      "type": "ppt_performance",
+      "title": "त्वरित स्लाइड निर्यात",
+      "content": "100-स्लाइड डेक को सेकंड में बदलें। कोई कतार नहीं, कोई प्रतीक्षा नहीं, कोई अपलोड बैंडविड्थ बर्बाद नहीं।",
+      "badgeText": "बिजली की तेजी"
     }
   ],
   "faqs": [
     {
-      "q": "Are slide animations preserved?",
-      "a": "Animations are flattened into static PDF frames."
+      "q": "क्या स्लाइड एनिमेशन संरक्षित हैं?",
+      "a": "एनिमेशन को स्थिर पीडीएफ फ्रेम में समतल किया गया है।"
     },
     {
-      "q": "What resolution is the output?",
-      "a": "High-resolution rendering at 150 DPI by default."
+      "q": "आउटपुट क्या रिज़ॉल्यूशन है?",
+      "a": "डिफ़ॉल्ट रूप से 150 डीपीआई पर उच्च-रिज़ॉल्यूशन रेंडरिंग।"
     },
     {
-      "q": "Can I convert selected slides only?",
-      "a": "Yes, specify slide ranges like 1-10 or 5,8,12."
+      "q": "क्या मैं केवल चयनित स्लाइडों को परिवर्तित कर सकता हूँ?",
+      "a": "हाँ, 1-10 या 5,8,12 जैसी स्लाइड श्रेणियाँ निर्दिष्ट करें।"
     },
     {
-      "q": "Is .ppt (old format) supported?",
-      "a": "Yes, both .ppt and .pptx are supported."
+      "q": "क्या .ppt (पुराना प्रारूप) समर्थित है?",
+      "a": "हाँ, .ppt और .pptx दोनों समर्थित हैं।"
     },
     {
-      "q": "Is this free to use?",
-      "a": "हाँ, पूरी तरह मुफ्त।"
+      "q": "क्या इसका उपयोग मुफ़्त है?",
+      "a": "हाँ, बिना किसी वॉटरमार्क के पूर्णतः निःशुल्क।"
     }
-  ]
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न",
+  "supportCenter": "सहायता केंद्र"
 }

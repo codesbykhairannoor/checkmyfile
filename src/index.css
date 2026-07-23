@@ -453,3 +453,49 @@ button, input, select, textarea {
   }
 }
 
+
+/* File Dropzone Animations */
+@keyframes float-fast {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float-fast {
+  animation: float-fast 3s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.1); }
+}
+
+.dropzone-container {
+  position: relative;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 48px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.dropzone-active {
+  transform: scale(1.02);
+  border-color: transparent;
+}
+
+.dropzone-glow {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: var(--brand-glow);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.dropzone-active .dropzone-glow {
+  opacity: 1;
+}
+

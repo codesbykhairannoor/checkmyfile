@@ -1,67 +1,85 @@
 {
-  "title": "Scan to PDF — Convert Camera Shots Offline",
-  "h1": "Convert Photos and Scans to PDF Locally",
-  "description": "Turn photos of documents taken with your camera into clean PDFs entirely in your browser. No upload. Best for users in Bangkok.",
+  "title": "สแกนเป็น PDF — แปลงภาพจากกล้องออฟไลน์",
+  "h1": "แปลงภาพถ่ายและสแกนเป็น PDF ในเครื่อง",
+  "description": "เปลี่ยนรูปภาพเอกสารที่ถ่ายด้วยกล้องของคุณให้เป็นไฟล์ PDF ที่สมบูรณ์ในเบราว์เซอร์ของคุณ ไม่มีการอัพโหลด การประมวลผลภายในที่ปลอดภัย 100%",
+  "buttonText": "Scan to PDF",
+  "badges": [
+    "ใช้เว็บแคม",
+    "เครื่องสแกนมือถือ",
+    "ครอบตัดอัตโนมัติ"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Use Scan-to-PDF Offline?",
-      "content": "Photos of documents contain sensitive information. Process them locally without any cloud access."
+      "type": "scan_hero_features",
+      "title": "เหตุใดจึงต้องใช้ Scan-to-PDF ออฟไลน์",
+      "content": "ภาพถ่ายเอกสารมีข้อมูลที่ละเอียดอ่อน ประมวลผลภายในเครื่องโดยไม่ต้องมีการเข้าถึงระบบคลาวด์"
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Scans to PDF",
+      "type": "scan_how_to_steps",
+      "title": "วิธีแปลงไฟล์สแกนเป็น PDF",
       "steps": [
         {
-          "title": "Import Photos",
-          "description": "Select photos taken with your phone or camera."
+          "title": "นำเข้ารูปถ่าย",
+          "description": "เลือกรูปภาพที่ถ่ายด้วยโทรศัพท์หรือกล้องถ่ายรูปของคุณ"
         },
         {
-          "title": "Enhance Scan",
-          "description": "Auto-crop, deskew, and enhance contrast."
+          "title": "ปรับปรุงการสแกน",
+          "description": "ครอบตัดอัตโนมัติ ปรับมุม และเพิ่มคอนทราสต์"
         },
         {
-          "title": "Export PDF",
-          "description": "Download a clean, professional-looking scanned PDF."
+          "title": "ส่งออก PDF",
+          "description": "ดาวน์โหลด PDF ที่สแกนแล้วดูสะอาดตาและดูเป็นมืออาชีพ"
         }
-      ]
+      ],
+      "badgeText": "คู่มือฉบับย่อ"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Scan to PDF for Bangkok Field Workers",
-      "content": "Field workers and freelancers in Bangkok digitize paper documents on-the-go without uploading to cloud services."
+      "type": "scan_geo_targeting",
+      "title": "การประมวลผลภายในที่ปลอดภัย 100%",
+      "content": "การดำเนินการทั้งหมดดำเนินการโดยตรงบนอุปกรณ์ท้องถิ่นของคุณ เราใช้เทคโนโลยี WebAssembly ขั้นสูงเพื่อประมวลผลเอกสารของคุณโดยไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ภายนอก เพื่อให้มั่นใจถึงความเป็นส่วนตัวโดยสมบูรณ์",
+      "badgeText": "การประมวลผลในท้องถิ่น"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Documents Stay on Device",
-      "content": "Invoices, contracts, and ID scans processed entirely in browser memory without any server access."
+      "type": "scan_privacy_security",
+      "title": "เอกสารที่สแกนจะยังคงอยู่ในอุปกรณ์",
+      "content": "ใบแจ้งหนี้ สัญญา และการสแกน ID ที่ประมวลผลทั้งหมดในหน่วยความจำเบราว์เซอร์โดยไม่มีการเข้าถึงเซิร์ฟเวอร์",
+      "badgeText": "ความปลอดภัยต้องมาก่อน"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Scans in Real Time",
-      "content": "Photo enhancement and PDF generation happens in milliseconds, even for high-resolution camera shots."
+      "type": "scan_performance",
+      "title": "แปลงการสแกนแบบเรียลไทม์",
+      "content": "การปรับปรุงภาพถ่ายและการสร้าง PDF เกิดขึ้นในหน่วยมิลลิวินาที แม้แต่ภาพถ่ายจากกล้องที่มีความละเอียดสูงก็ตาม",
+      "badgeText": "เร็วปานสายฟ้า"
     }
   ],
   "faqs": [
     {
-      "q": "What photo formats are supported?",
-      "a": "JPG, PNG, WebP, and HEIC from modern cameras."
+      "q": "รองรับรูปถ่ายรูปแบบใดบ้าง?",
+      "a": "JPG, PNG, WebP และ HEIC จากกล้องสมัยใหม่"
     },
     {
-      "q": "Does it fix tilted scans?",
-      "a": "Yes, auto-deskew corrects slight angles automatically."
+      "q": "มันแก้ไขการสแกนที่เอียงหรือไม่?",
+      "a": "ใช่ Auto-deskew จะแก้ไขมุมเล็กน้อยโดยอัตโนมัติ"
     },
     {
-      "q": "Can I combine multiple scans?",
-      "a": "Yes, add multiple photos to create a multi-page PDF."
+      "q": "ฉันสามารถรวมการสแกนหลายรายการเข้าด้วยกันได้หรือไม่",
+      "a": "ใช่ เพิ่มรูปภาพหลายรูปเพื่อสร้าง PDF หลายหน้า"
     },
     {
-      "q": "Does it enhance contrast?",
-      "a": "Yes, document enhancement mode sharpens text for clarity."
+      "q": "มันเพิ่มความคมชัดหรือไม่?",
+      "a": "ใช่ โหมดการปรับปรุงเอกสารจะทำให้ข้อความคมชัดขึ้น"
     },
     {
-      "q": "Is this free?",
-      "a": "ใช่ ฟรีทั้งหมด"
+      "q": "ฟรีหรือเปล่า?",
+      "a": "ใช่ ฟรีเสมอ"
     }
-  ]
+  ],
+  "faqTitle": "คำถามที่พบบ่อย",
+  "supportCenter": "ศูนย์สนับสนุน"
 }

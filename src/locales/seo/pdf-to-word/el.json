@@ -1,67 +1,80 @@
 {
-  "title": "PDF to Word Converter — Offline & Editable",
-  "h1": "Convert PDF to Editable Word Documents Locally",
-  "description": "Transform PDFs back into .docx files you can edit, right in your browser. No upload needed. Great for users in Athens.",
+  "title": "Μετατροπέας PDF σε Word — Εκτός σύνδεσης και Επεξεργάσιμο",
+  "h1": "Μετατροπή PDF σε επεξεργάσιμα έγγραφα Word τοπικά",
+  "description": "Μετατρέψτε τα PDF ξανά σε αρχεία .docx που μπορείτε να επεξεργαστείτε, απευθείας στο πρόγραμμα περιήγησής σας. Δεν χρειάζεται μεταφόρτωση. Ιδανικό για χρήστες στην Αθήνα.",
+  "buttonText": "Μετατροπή σε Word",
+  "badges": [
+    "Επεξεργάσιμα έγγραφα",
+    "Ανάκτηση κειμένου",
+    "Διαδικασία εκτός σύνδεσης"
+  ],
+  "stats": [
+    "100%",
+    "Τοπικός",
+    "0s",
+    "Χρόνος αναμονής"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF Back Offline?",
-      "content": "When you need to edit a PDF, converting it offline keeps your original document confidential."
+      "title": "Γιατί να χρησιμοποιήσετε offline;",
+      "content": "Όταν χρειάζεται να επεξεργαστείτε ένα PDF, η μετατροπή του εκτός σύνδεσης διατηρεί το αρχικό σας έγγραφο εμπιστευτικό."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Word",
+      "title": "Πώς να χρησιμοποιήσετε",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF file you need to convert."
+          "title": "Φόρτωση PDF",
+          "description": "Επιλέξτε το αρχείο PDF που θέλετε να μετατρέψετε."
         },
         {
-          "title": "Detect Text Layers",
-          "description": "Our engine reads text and structure from the PDF."
+          "title": "Ανίχνευση επιπέδων κειμένου",
+          "description": "Η μηχανή μας διαβάζει κείμενο και δομή από το PDF."
         },
         {
-          "title": "Download .docx",
-          "description": "Get your editable Word document ready to modify."
+          "title": "Λήψη .docx",
+          "description": "Ετοιμάστε το επεξεργάσιμο έγγραφο του Word για τροποποίηση."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "PDF to Word for Athens Offices",
-      "content": "Office workers in Athens use our tool to recover editable text from PDFs without cloud dependency."
+      "title": "PDF σε Word για τα γραφεία της Αθήνας",
+      "content": "Οι υπάλληλοι γραφείου στην Αθήνα χρησιμοποιούν το εργαλείο μας για να ανακτήσουν επεξεργάσιμο κείμενο από αρχεία PDF χωρίς εξάρτηση από το cloud."
     },
     {
       "type": "split_privacy_security",
-      "title": "Legal Documents Stay Confidential",
-      "content": "Contracts, NDAs, and reports converted back to Word entirely in your browser memory."
+      "title": "Τα νομικά έγγραφα παραμένουν εμπιστευτικά",
+      "content": "Τα συμβόλαια, οι NDA και οι αναφορές μετατράπηκαν ξανά σε Word εξ ολοκλήρου στη μνήμη του προγράμματος περιήγησής σας."
     },
     {
       "type": "split_performance",
-      "title": "Recover Editable Text in Seconds",
-      "content": "Extract text from a 50-page PDF in under 3 seconds without uploading a single byte."
+      "title": "Ανάκτηση επεξεργάσιμου κειμένου σε δευτερόλεπτα",
+      "content": "Εξαγωγή κειμένου από ένα PDF 50 σελίδων σε λιγότερο από 3 δευτερόλεπτα χωρίς να ανεβάσετε ούτε ένα byte."
     }
   ],
   "faqs": [
     {
-      "q": "Is all text preserved?",
-      "a": "Yes, text from all layers is extracted and formatted."
+      "q": "Διατηρείται όλο το κείμενο;",
+      "a": "Ναι, το κείμενο από όλα τα επίπεδα εξάγεται και μορφοποιείται."
     },
     {
-      "q": "Does it work on scanned PDFs?",
-      "a": "For scanned PDFs, use our OCR tool first."
+      "q": "Λειτουργεί σε σαρωμένα PDF;",
+      "a": "Για σαρωμένα αρχεία PDF, χρησιμοποιήστε πρώτα το εργαλείο μας OCR."
     },
     {
-      "q": "Are images included in the .docx?",
-      "a": "Yes, embedded images are included in the output."
+      "q": "Περιλαμβάνονται εικόνες στο .docx;",
+      "a": "Ναι, οι ενσωματωμένες εικόνες περιλαμβάνονται στην έξοδο."
     },
     {
-      "q": "Can I edit the .docx after?",
-      "a": "Absolutely, the output is a fully editable Word document."
+      "q": "Μπορώ να επεξεργαστώ το .docx μετά;",
+      "a": "Οπωσδήποτε, η έξοδος είναι ένα πλήρως επεξεργάσιμο έγγραφο του Word."
     },
     {
-      "q": "Is this free?",
+      "q": "Αυτό είναι δωρεάν;",
       "a": "Ναι, εντελώς δωρεάν."
     }
-  ]
+  ],
+  "faqTitle": "Συχνές Ερωτήσεις"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "PowerPoint to PDF Converter — Offline & Free",
-  "h1": "Convert PowerPoint Presentations to PDF Instantly",
-  "description": "Convert .pptx presentations to high-quality PDFs directly in your browser. No cloud needed. Perfect for presenters in Helsinki.",
+  "title": "PowerPoint PDF Converter – offline ja ilmainen",
+  "h1": "Muunna PowerPoint-esitykset PDF-muotoon välittömästi",
+  "description": "Muunna .pptx-esityksiä korkealaatuisiksi PDF-tiedostoiksi suoraan selaimessasi. Pilviä ei tarvita. 100 % turvallinen paikallinen käsittely.",
+  "buttonText": "Convert Slides",
+  "badges": [
+    "Hallituksen kokoukset",
+    "Pitch Decks",
+    "Julkaisemattomat tuotteet"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Presentations Offline?",
-      "content": "Your slides may contain unreleased products or confidential strategies. Convert without risking data exposure."
+      "type": "ppt_hero_features",
+      "title": "Miksi esitykset muunnetaan offline-tilassa?",
+      "content": "Diasi voivat sisältää julkaisemattomia tuotteita tai luottamuksellisia strategioita. Muunna vaarantamatta tietojen paljastamista."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert PowerPoint to PDF",
+      "type": "ppt_how_to_steps",
+      "title": "Kuinka muuntaa PowerPoint PDF:ksi",
       "steps": [
         {
-          "title": "Load Presentation",
-          "description": "Select your .pptx file from your device."
+          "title": "Lataa esitys",
+          "description": "Valitse .pptx-tiedosto laitteeltasi."
         },
         {
-          "title": "Select Slide Range",
-          "description": "Include all slides or specific ones."
+          "title": "Valitse Slide Range",
+          "description": "Sisällytä kaikki diat tai tietyt diat."
         },
         {
-          "title": "Download PDF",
-          "description": "Get your PDF with all formatting preserved."
+          "title": "Lataa PDF",
+          "description": "Hanki PDF-tiedosto kaikkine muotoiluineen."
         }
-      ]
+      ],
+      "badgeText": "Pikaopas"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Presentation Conversion in Helsinki",
-      "content": "Presenters in Helsinki trust us to convert slide decks without leaking unreleased content to cloud servers."
+      "type": "ppt_geo_targeting",
+      "title": "100 % suojattu paikallinen käsittely",
+      "content": "Kaikki toiminnot suoritetaan suoraan paikallisella laitteellasi. Käytämme edistynyttä WebAssembly-tekniikkaa asiakirjojen käsittelyyn lataamatta niitä koskaan ulkoisille palvelimille, mikä takaa täydellisen yksityisyyden.",
+      "badgeText": "Paikallinen käsittely"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Confidential Slides Stay Confidential",
-      "content": "Pre-launch product decks? Board presentations? Converted 100% locally without network access."
+      "type": "ppt_privacy_security",
+      "title": "Luottamukselliset diat Pysy luottamuksellisina",
+      "content": "Julkaisua edeltävät tuotepaketit? Hallituksen esittelyt? Muunnetaan 100 % paikallisesti ilman verkkoyhteyttä.",
+      "badgeText": "Turvallisuus ensin"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Slide Export",
-      "content": "Convert 100-slide decks in seconds. No queue, no waiting, no upload bandwidth wasted."
+      "type": "ppt_performance",
+      "title": "Välitön diavienti",
+      "content": "Muunna 100 dian dekkiä sekunneissa. Ei jonoa, ei odottelua, ei lähetyskaistanleveyttä hukkaan.",
+      "badgeText": "Salamannopeasti"
     }
   ],
   "faqs": [
     {
-      "q": "Are slide animations preserved?",
-      "a": "Animations are flattened into static PDF frames."
+      "q": "Säilytetäänkö diaanimaatiot?",
+      "a": "Animaatiot litistetään staattisiksi PDF-kehyksiksi."
     },
     {
-      "q": "What resolution is the output?",
-      "a": "High-resolution rendering at 150 DPI by default."
+      "q": "Mikä resoluutio on ulostulo?",
+      "a": "Korkearesoluutioinen renderöinti oletuksena 150 DPI:llä."
     },
     {
-      "q": "Can I convert selected slides only?",
-      "a": "Yes, specify slide ranges like 1-10 or 5,8,12."
+      "q": "Voinko muuntaa vain valitut diat?",
+      "a": "Kyllä, määritä dia-alueet, kuten 1-10 tai 5,8,12."
     },
     {
-      "q": "Is .ppt (old format) supported?",
-      "a": "Yes, both .ppt and .pptx are supported."
+      "q": "Onko .ppt (vanha muoto) tuettu?",
+      "a": "Kyllä, sekä .ppt että .pptx ovat tuettuja."
     },
     {
-      "q": "Is this free to use?",
-      "a": "Kyllä, täysin ilmainen."
+      "q": "Onko tämä ilmainen käyttää?",
+      "a": "Kyllä, täysin ilmainen ilman vesileimoja."
     }
-  ]
+  ],
+  "faqTitle": "Usein kysytyt kysymykset",
+  "supportCenter": "Tukikeskus"
 }

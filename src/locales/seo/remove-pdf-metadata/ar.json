@@ -1,67 +1,85 @@
 {
-  "title": "Remove PDF Metadata — Strip Hidden Author Data Offline",
-  "h1": "Strip All Hidden Metadata from PDF Files Instantly",
-  "description": "Remove author names, company info, GPS locations, and revision history from PDFs entirely in your browser. No upload. Perfect for Riyadh users.",
+  "title": "إزالة بيانات تعريف PDF - إزالة بيانات المؤلف المخفية دون اتصال",
+  "h1": "إزالة كافة البيانات الوصفية المخفية من ملفات PDF على الفور",
+  "description": "قم بإزالة أسماء المؤلفين ومعلومات الشركة ومواقع نظام تحديد المواقع العالمي (GPS) وسجل المراجعة من ملفات PDF بالكامل في متصفحك. لا يوجد تحميل. معالجة محلية آمنة بنسبة 100%.",
+  "buttonText": "Process Document",
+  "badges": [
+    "آمن وخاص",
+    "محرك غير متصل",
+    "تحميل صفر"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "metadata_hero_features",
-      "title": "Why Strip PDF Metadata?",
-      "content": "PDFs carry hidden metadata — your name, your company, revision history. Strip it all before sharing publicly, entirely offline."
+      "title": "لماذا تجريد البيانات الوصفية لملف PDF؟",
+      "content": "تحتوي ملفات PDF على بيانات تعريف مخفية - اسمك وشركتك وتاريخ المراجعة. قم بإزالة كل شيء قبل المشاركة بشكل عام، دون الاتصال بالإنترنت تمامًا."
     },
     {
       "type": "metadata_how_to_steps",
-      "title": "Before & After — How Metadata Removal Works",
+      "title": "قبل وبعد — كيف تعمل إزالة البيانات الوصفية",
       "steps": [
         {
-          "title": "Open Your PDF",
-          "description": "Select the PDF with hidden metadata to remove."
+          "title": "افتح ملف PDF الخاص بك",
+          "description": "حدد ملف PDF الذي يحتوي على بيانات تعريف مخفية لإزالتها."
         },
         {
-          "title": "Preview Hidden Data",
-          "description": "See exactly what metadata — author, GPS, history — is embedded."
+          "title": "معاينة البيانات المخفية",
+          "description": "تعرف بالضبط على البيانات الوصفية - المؤلف ونظام تحديد المواقع العالمي (GPS) والتاريخ - المضمنة."
         },
         {
-          "title": "Strip & Download Clean PDF",
-          "description": "Remove all metadata instantly and save a clean, anonymous PDF."
+          "title": "تجريد وتنزيل ملف PDF النظيف",
+          "description": "قم بإزالة كافة البيانات الوصفية على الفور واحفظ ملف PDF نظيفًا ومجهول الهوية."
         }
-      ]
+      ],
+      "badgeText": "الدليل السريع"
     },
     {
       "type": "metadata_geo_targeting",
-      "title": "Metadata Privacy Tool for Riyadh Professionals",
-      "content": "Journalists, legal professionals, and privacy-conscious users in Riyadh strip metadata before publishing or sharing PDFs externally."
+      "title": "معالجة محلية آمنة بنسبة 100%",
+      "content": "يتم تنفيذ جميع العمليات مباشرة على جهازك المحلي. نحن نستخدم تقنية WebAssembly المتقدمة لمعالجة مستنداتك دون تحميلها على خوادم خارجية، مما يضمن الخصوصية الكاملة.",
+      "badgeText": "المعالجة المحلية"
     },
     {
       "type": "metadata_privacy_security",
-      "title": "All Metadata Types Permanently Erased",
-      "content": "Author name, company, GPS coordinates from embedded images, revision history, software fingerprints — all permanently removed."
+      "title": "تم مسح جميع أنواع البيانات التعريفية نهائيًا",
+      "content": "اسم المؤلف، والشركة، وإحداثيات نظام تحديد المواقع العالمي (GPS) من الصور المضمنة، وسجل المراجعة، وبصمات أصابع البرنامج - تمت إزالتها نهائيًا.",
+      "badgeText": "الأمن أولا"
     },
     {
       "type": "metadata_performance",
-      "title": "Strip Metadata in Milliseconds",
-      "content": "Metadata removal takes milliseconds and often reduces file size by 10–15%. All offline."
+      "title": "تجريد البيانات التعريفية بالمللي ثانية",
+      "content": "تستغرق إزالة البيانات التعريفية ميلي ثانية وغالبًا ما تقلل حجم الملف بنسبة 10-15%. جميع غير متصل.",
+      "badgeText": "بسرعة البرق"
     }
   ],
   "faqs": [
     {
-      "q": "What metadata is removed?",
-      "a": "Author, creator, producer, title, keywords, and all XMP/EXIF data."
+      "q": "ما هي البيانات الوصفية التي تتم إزالتها؟",
+      "a": "المؤلف والمنشئ والمنتج والعنوان والكلمات الرئيسية وجميع بيانات XMP/EXIF."
     },
     {
-      "q": "Are document bookmarks affected?",
-      "a": "No, bookmarks and structure are preserved; only metadata is removed."
+      "q": "هل تتأثر الإشارات المرجعية للمستندات؟",
+      "a": "لا، يتم الاحتفاظ بالإشارات المرجعية والبنية؛ تتم إزالة البيانات التعريفية فقط."
     },
     {
-      "q": "Can I preview the metadata first?",
-      "a": "Yes, we show a list of all detected metadata before removing."
+      "q": "هل يمكنني معاينة البيانات الوصفية أولاً؟",
+      "a": "نعم، نعرض قائمة بجميع البيانات الوصفية المكتشفة قبل إزالتها."
     },
     {
-      "q": "Is the document content affected?",
-      "a": "No, the content, images, and structure remain intact."
+      "q": "هل يتأثر محتوى المستند؟",
+      "a": "لا، المحتوى والصور والبنية تظل سليمة."
     },
     {
-      "q": "Is this free?",
-      "a": "نعم، مجاناً تماماً."
+      "q": "هل هذا مجاني؟",
+      "a": "نعم، دائما مجانا."
     }
-  ]
+  ],
+  "faqTitle": "الأسئلة المتداولة",
+  "supportCenter": "مركز الدعم"
 }

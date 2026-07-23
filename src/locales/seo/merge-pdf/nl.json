@@ -1,67 +1,78 @@
 {
-  "title": "Merge PDF - Combine Documents Offline",
-  "h1": "Merge PDF Files Instantly in Your Browser",
-  "description": "Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, perfect for users in Amsterdam.",
+  "title": "PDF samenvoegen - Documenten offline combineren",
+  "h1": "Voeg PDF-bestanden direct samen in uw browser",
+  "description": "Combineer meerdere PDF-bestanden in één document met pure WebAssembly aan de clientzijde. Geen bestandsuploads, perfect voor gebruikers in New York.",
   "sections": [
     {
       "type": "merge_hero_features",
-      "title": "Why Merge PDF Offline?",
-      "content": "Instead of uploading sensitive documents to a server, our Merge PDF tool stitches your pages together directly in your browser. Complete privacy."
+      "title": "Waarom PDF offline samenvoegen?",
+      "content": "In plaats van gevoelige documenten naar een server te uploaden, voegt onze PDF samenvoegen-tool uw pagina's rechtstreeks in uw browser samen. Volledige privacy."
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Merge PDF Files",
+      "title": "PDF-bestanden samenvoegen",
       "steps": [
         {
-          "title": "Add Documents",
-          "description": "Select the PDFs you want to merge together."
+          "title": "Documenten toevoegen",
+          "description": "Selecteer de PDF's die u wilt samenvoegen."
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop files to get the perfect sequence."
+          "title": "Pagina's opnieuw rangschikken",
+          "description": "Versleep bestanden en zet ze neer om de perfecte volgorde te krijgen."
         },
         {
-          "title": "Merge & Save",
-          "description": "Click merge and download your combined document instantly."
+          "title": "Samenvoegen en opslaan",
+          "description": "Klik op samenvoegen en download uw gecombineerde document onmiddellijk."
         }
-      ]
+      ],
+      "badgeText": "Beknopte handleiding"
     },
     {
       "type": "merge_geo_targeting",
-      "title": "Seamless Merging for users in Amsterdam, NL-NH",
-      "content": "No matter if you are in Amsterdam or traveling, combining documents takes zero milliseconds of upload time."
+      "title": "100% veilige lokale verwerking",
+      "content": "Alle bewerkingen worden rechtstreeks op uw lokale apparaat uitgevoerd. We gebruiken geavanceerde WebAssembly-technologie om uw documenten te verwerken zonder ze ooit naar externe servers te uploaden, waardoor volledige privacy wordt gegarandeerd.",
+      "badgeText": "Lokale verwerking"
     },
     {
       "type": "merge_privacy_security",
-      "title": "Enterprise-Grade Document Combining",
-      "content": "Merging contracts and invoices? Do it securely with our WASM engine. No traces left behind."
+      "title": "Documentcombinatie op ondernemingsniveau",
+      "content": "Contracten en facturen samenvoegen? Doe het veilig met onze WASM-engine. Geen sporen achtergelaten.",
+      "badgeText": "Beveiliging eerst"
     },
     {
       "type": "merge_performance",
-      "title": "Instant Combination",
-      "content": "Stitching PDFs locally means you can merge a 500-page document faster than you can upload it."
+      "title": "Directe combinatie",
+      "content": "Door PDF's lokaal samen te voegen, kunt u een document van 500 pagina's sneller samenvoegen dan dat u het kunt uploaden.",
+      "badgeText": "Bliksemsnel"
     }
   ],
   "faqs": [
     {
-      "q": "Is merging PDFs completely free?",
-      "a": "Yes! Merge as many files as you want without paying a cent."
+      "q": "Is het samenvoegen van PDF's volledig gratis?",
+      "a": "Ja! Voeg zoveel bestanden samen als je wilt, zonder een cent te betalen."
     },
     {
-      "q": "Are my merged files uploaded?",
-      "a": "No, all merging happens offline in your browser."
+      "q": "Worden mijn samengevoegde bestanden geüpload?",
+      "a": "Nee, al het samenvoegen gebeurt offline in uw browser."
     },
     {
-      "q": "Can I reorder the files before merging?",
-      "a": "Yes, just drag and drop the files in the preview window."
+      "q": "Kan ik de bestanden opnieuw rangschikken voordat ik ze samenvoeg?",
+      "a": "Ja, u hoeft de bestanden alleen maar naar het voorbeeldvenster te slepen en neer te zetten."
     },
     {
-      "q": "Is there a limit on how many files I can merge?",
-      "a": "No artificial limits! Merge 10 or 100 files depending on your RAM."
+      "q": "Is er een limiet voor het aantal bestanden dat ik kan samenvoegen?",
+      "a": "Geen kunstmatige grenzen! Voeg 10 of 100 bestanden samen, afhankelijk van uw RAM-geheugen."
     },
     {
-      "q": "Does merging ruin the formatting?",
-      "a": "Not at all. The original layers and vector data are perfectly stitched together."
+      "q": "Vernietigt het samenvoegen de opmaak?",
+      "a": "Helemaal niet. De originele lagen en vectorgegevens zijn perfect aan elkaar gestikt."
     }
+  ],
+  "faqTitle": "Veelgestelde vragen",
+  "supportCenter": "Ondersteuningscentrum",
+  "badges": [
+    "Geen serverlatentie",
+    "Geen uploadbandbreedte",
+    "Onmiddellijke verwerking"
   ]
 }

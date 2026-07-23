@@ -1,67 +1,85 @@
 {
-  "title": "PowerPoint to PDF Converter — Offline & Free",
-  "h1": "Convert PowerPoint Presentations to PDF Instantly",
-  "description": "Convert .pptx presentations to high-quality PDFs directly in your browser. No cloud needed. Perfect for presenters in Amsterdam.",
+  "title": "PowerPoint naar PDF-converter - offline en gratis",
+  "h1": "Converteer PowerPoint-presentaties direct naar PDF",
+  "description": "Converteer .pptx-presentaties rechtstreeks in uw browser naar hoogwaardige PDF's. Geen wolk nodig. 100% veilige lokale verwerking.",
+  "buttonText": "Convert Slides",
+  "badges": [
+    "Bestuursvergaderingen",
+    "Pitch-decks",
+    "Niet-uitgebrachte producten"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Presentations Offline?",
-      "content": "Your slides may contain unreleased products or confidential strategies. Convert without risking data exposure."
+      "type": "ppt_hero_features",
+      "title": "Waarom presentaties offline converteren?",
+      "content": "Uw dia's kunnen nog niet eerder uitgebrachte producten of vertrouwelijke strategieën bevatten. Converteer zonder risico op gegevensblootstelling."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert PowerPoint to PDF",
+      "type": "ppt_how_to_steps",
+      "title": "Hoe PowerPoint naar PDF te converteren",
       "steps": [
         {
-          "title": "Load Presentation",
-          "description": "Select your .pptx file from your device."
+          "title": "Presentatie laden",
+          "description": "Selecteer uw .pptx-bestand op uw apparaat."
         },
         {
-          "title": "Select Slide Range",
-          "description": "Include all slides or specific ones."
+          "title": "Selecteer Diabereik",
+          "description": "Voeg alle dia's of specifieke dia's toe."
         },
         {
-          "title": "Download PDF",
-          "description": "Get your PDF with all formatting preserved."
+          "title": "PDF downloaden",
+          "description": "Ontvang uw PDF met behoud van alle opmaak."
         }
-      ]
+      ],
+      "badgeText": "Beknopte handleiding"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Presentation Conversion in Amsterdam",
-      "content": "Presenters in Amsterdam trust us to convert slide decks without leaking unreleased content to cloud servers."
+      "type": "ppt_geo_targeting",
+      "title": "100% veilige lokale verwerking",
+      "content": "Alle bewerkingen worden rechtstreeks op uw lokale apparaat uitgevoerd. We gebruiken geavanceerde WebAssembly-technologie om uw documenten te verwerken zonder ze ooit naar externe servers te uploaden, waardoor volledige privacy wordt gegarandeerd.",
+      "badgeText": "Lokale verwerking"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Confidential Slides Stay Confidential",
-      "content": "Pre-launch product decks? Board presentations? Converted 100% locally without network access."
+      "type": "ppt_privacy_security",
+      "title": "Vertrouwelijke dia's blijven vertrouwelijk",
+      "content": "Productdecks vóór lancering? Bestuurspresentaties? 100% lokaal geconverteerd zonder netwerktoegang.",
+      "badgeText": "Beveiliging eerst"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Slide Export",
-      "content": "Convert 100-slide decks in seconds. No queue, no waiting, no upload bandwidth wasted."
+      "type": "ppt_performance",
+      "title": "Direct dia-export",
+      "content": "Converteer decks met 100 dia's in enkele seconden. Geen wachtrij, geen wachttijden, geen verspilling van uploadbandbreedte.",
+      "badgeText": "Bliksemsnel"
     }
   ],
   "faqs": [
     {
-      "q": "Are slide animations preserved?",
-      "a": "Animations are flattened into static PDF frames."
+      "q": "Blijven dia-animaties behouden?",
+      "a": "Animaties worden afgevlakt tot statische PDF-frames."
     },
     {
-      "q": "What resolution is the output?",
-      "a": "High-resolution rendering at 150 DPI by default."
+      "q": "Welke resolutie is de uitvoer?",
+      "a": "Weergave in hoge resolutie met standaard 150 DPI."
     },
     {
-      "q": "Can I convert selected slides only?",
-      "a": "Yes, specify slide ranges like 1-10 or 5,8,12."
+      "q": "Kan ik alleen geselecteerde dia's converteren?",
+      "a": "Ja, specificeer diabereiken zoals 1-10 of 5,8,12."
     },
     {
-      "q": "Is .ppt (old format) supported?",
-      "a": "Yes, both .ppt and .pptx are supported."
+      "q": "Wordt .ppt (oud formaat) ondersteund?",
+      "a": "Ja, zowel .ppt als .pptx worden ondersteund."
     },
     {
-      "q": "Is this free to use?",
-      "a": "Ja, volledig gratis."
+      "q": "Is dit gratis te gebruiken?",
+      "a": "Ja, volledig gratis zonder watermerken."
     }
-  ]
+  ],
+  "faqTitle": "Veelgestelde vragen",
+  "supportCenter": "Ondersteuningscentrum"
 }

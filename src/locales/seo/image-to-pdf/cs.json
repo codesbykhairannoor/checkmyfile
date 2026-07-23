@@ -1,67 +1,85 @@
 {
-  "title": "Image to PDF — Combine Photos Offline",
-  "h1": "Convert Images to PDF Without Uploading",
-  "description": "Turn JPG, PNG, and WebP images into a single PDF document in your browser. Your photos stay private. Perfect for users in Prague.",
+  "title": "Obrázek do PDF — Kombinace fotografií offline",
+  "h1": "Převést obrázky do PDF bez nahrávání",
+  "description": "Převeďte obrázky JPG, PNG a WebP do jediného dokumentu PDF ve vašem prohlížeči. Vaše fotky zůstanou soukromé. 100% bezpečné místní zpracování.",
+  "buttonText": "Convert Images",
+  "badges": [
+    "Portfolia",
+    "ID skeny",
+    "Fotoalba"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Images Offline?",
-      "content": "Photos contain location data and personal moments. Convert them to PDF without exposing them to any cloud service."
+      "type": "image_hero_features",
+      "title": "Proč převádět obrázky offline?",
+      "content": "Fotografie obsahují údaje o poloze a osobní momenty. Převeďte je do formátu PDF, aniž byste je vystavili jakékoli cloudové službě."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Turn Images Into PDF",
+      "type": "image_how_to_steps",
+      "title": "Jak převést obrázky do PDF",
       "steps": [
         {
-          "title": "Select Images",
-          "description": "Choose JPG, PNG, or WebP files from your device."
+          "title": "Vybrat obrázky",
+          "description": "Vyberte ze svého zařízení soubory JPG, PNG nebo WebP."
         },
         {
-          "title": "Arrange Order",
-          "description": "Drag to reorder images before generating the PDF."
+          "title": "Uspořádat objednávku",
+          "description": "Přetažením změňte pořadí obrázků před generováním PDF."
         },
         {
           "title": "Export PDF",
-          "description": "Download your image PDF in one click."
+          "description": "Stáhněte si obrázek PDF jedním kliknutím."
         }
-      ]
+      ],
+      "badgeText": "Rychlý průvodce"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Image to PDF for Prague Users",
-      "content": "Photographers and designers in Prague use our tool to package portfolios without cloud uploads."
+      "type": "image_geo_targeting",
+      "title": "100% bezpečné místní zpracování",
+      "content": "Všechny operace se provádějí přímo na vašem místním zařízení. Ke zpracování vašich dokumentů používáme pokročilou technologii WebAssembly, aniž bychom je kdy nahrávali na externí servery, což zajišťuje naprosté soukromí.",
+      "badgeText": "Místní zpracování"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Photos Never Leave Your Device",
-      "content": "Personal photos, ID scans, medical images — all converted 100% locally without any server contact."
+      "type": "image_privacy_security",
+      "title": "Fotografie nikdy neopouštějte zařízení",
+      "content": "Osobní fotografie, skeny průkazů totožnosti, lékařské snímky – to vše je 100% převedeno lokálně bez jakéhokoli kontaktu se serverem.",
+      "badgeText": "Bezpečnost především"
     },
     {
-      "type": "combiner_performance",
-      "title": "Batch Convert Instantly",
-      "content": "Convert 50 images into a single PDF in under 5 seconds. No upload, no wait."
+      "type": "image_performance",
+      "title": "Okamžitý dávkový převod",
+      "content": "Převeďte 50 obrázků do jednoho PDF za méně než 5 sekund. Žádné nahrávání, žádné čekání.",
+      "badgeText": "Bleskově rychlý"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are supported?",
-      "a": "JPG, JPEG, PNG, and WebP are all supported."
+      "q": "Jaké formáty obrázků jsou podporovány?",
+      "a": "JPG, JPEG, PNG a WebP jsou podporovány."
     },
     {
-      "q": "Can I combine multiple images?",
-      "a": "Yes, select as many images as you want and reorder them."
+      "q": "Mohu spojit více obrázků?",
+      "a": "Ano, vyberte tolik obrázků, kolik chcete, a změňte jejich pořadí."
     },
     {
-      "q": "Is image quality preserved?",
-      "a": "Yes, images are embedded at their original resolution."
+      "q": "Je zachována kvalita obrazu?",
+      "a": "Ano, obrázky jsou vkládány v původním rozlišení."
     },
     {
-      "q": "Does it strip EXIF metadata?",
-      "a": "You can optionally strip EXIF data for privacy."
+      "q": "Odstraňuje metadata EXIF?",
+      "a": "Z důvodu ochrany soukromí můžete volitelně odstranit data EXIF."
     },
     {
-      "q": "Is there a limit on image count?",
-      "a": "Ano, zcela zdarma."
+      "q": "Je nějaký limit na počet obrázků?",
+      "a": "Žádný limit! Spojte stovky obrázků do jednoho PDF."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
 }

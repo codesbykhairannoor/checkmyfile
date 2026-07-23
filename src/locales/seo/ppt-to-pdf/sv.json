@@ -1,67 +1,85 @@
 {
-  "title": "PowerPoint to PDF Converter — Offline & Free",
-  "h1": "Convert PowerPoint Presentations to PDF Instantly",
-  "description": "Convert .pptx presentations to high-quality PDFs directly in your browser. No cloud needed. Perfect for presenters in Stockholm.",
+  "title": "PowerPoint till PDF-konverterare — offline och gratis",
+  "h1": "Konvertera PowerPoint-presentationer till PDF direkt",
+  "description": "Konvertera .pptx-presentationer till högkvalitativa PDF-filer direkt i din webbläsare. Inget moln behövs. 100 % säker lokal bearbetning.",
+  "buttonText": "Convert Slides",
+  "badges": [
+    "Styrelsemöten",
+    "Pitch Decks",
+    "Osläppta produkter"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Presentations Offline?",
-      "content": "Your slides may contain unreleased products or confidential strategies. Convert without risking data exposure."
+      "type": "ppt_hero_features",
+      "title": "Varför konvertera presentationer offline?",
+      "content": "Dina bilder kan innehålla outgivna produkter eller konfidentiella strategier. Konvertera utan att riskera dataexponering."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert PowerPoint to PDF",
+      "type": "ppt_how_to_steps",
+      "title": "Hur man konverterar PowerPoint till PDF",
       "steps": [
         {
-          "title": "Load Presentation",
-          "description": "Select your .pptx file from your device."
+          "title": "Ladda presentation",
+          "description": "Välj din .pptx-fil från din enhet."
         },
         {
-          "title": "Select Slide Range",
-          "description": "Include all slides or specific ones."
+          "title": "Välj Slide Range",
+          "description": "Inkludera alla bilder eller specifika."
         },
         {
-          "title": "Download PDF",
-          "description": "Get your PDF with all formatting preserved."
+          "title": "Ladda ner PDF",
+          "description": "Skaffa din PDF med all formatering bevarad."
         }
-      ]
+      ],
+      "badgeText": "Snabbguide"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Presentation Conversion in Stockholm",
-      "content": "Presenters in Stockholm trust us to convert slide decks without leaking unreleased content to cloud servers."
+      "type": "ppt_geo_targeting",
+      "title": "100 % säker lokal bearbetning",
+      "content": "Alla operationer utförs direkt på din lokala enhet. Vi använder avancerad WebAssembly-teknik för att behandla dina dokument utan att någonsin ladda upp dem till externa servrar, vilket säkerställer fullständig integritet.",
+      "badgeText": "Lokal bearbetning"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Confidential Slides Stay Confidential",
-      "content": "Pre-launch product decks? Board presentations? Converted 100% locally without network access."
+      "type": "ppt_privacy_security",
+      "title": "Konfidentiella bilder Behåll konfidentiella",
+      "content": "Förlansering av produktdäck? Styrelsepresentationer? Konverterad 100% lokalt utan nätverksåtkomst.",
+      "badgeText": "Säkerhet först"
     },
     {
-      "type": "combiner_performance",
+      "type": "ppt_performance",
       "title": "Instant Slide Export",
-      "content": "Convert 100-slide decks in seconds. No queue, no waiting, no upload bandwidth wasted."
+      "content": "Konvertera kortlek med 100 diabilder på några sekunder. Ingen kö, ingen väntan, ingen slösad bandbredd för uppladdning.",
+      "badgeText": "Blixtsnabb"
     }
   ],
   "faqs": [
     {
-      "q": "Are slide animations preserved?",
-      "a": "Animations are flattened into static PDF frames."
+      "q": "Bevaras bildanimationer?",
+      "a": "Animationer plattas till statiska PDF-ramar."
     },
     {
-      "q": "What resolution is the output?",
-      "a": "High-resolution rendering at 150 DPI by default."
+      "q": "Vilken upplösning är utgången?",
+      "a": "Högupplöst rendering vid 150 DPI som standard."
     },
     {
-      "q": "Can I convert selected slides only?",
-      "a": "Yes, specify slide ranges like 1-10 or 5,8,12."
+      "q": "Kan jag endast konvertera utvalda bilder?",
+      "a": "Ja, ange bildintervall som 1-10 eller 5,8,12."
     },
     {
-      "q": "Is .ppt (old format) supported?",
-      "a": "Yes, both .ppt and .pptx are supported."
+      "q": "Stöds .ppt (gammalt format)?",
+      "a": "Ja, både .ppt och .pptx stöds."
     },
     {
-      "q": "Is this free to use?",
-      "a": "Ja, helt gratis."
+      "q": "Är detta gratis att använda?",
+      "a": "Ja, helt gratis utan vattenstämplar."
     }
-  ]
+  ],
+  "faqTitle": "Vanliga frågor",
+  "supportCenter": "Supportcenter"
 }

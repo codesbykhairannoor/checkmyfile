@@ -1,67 +1,85 @@
 {
-  "title": "Crop PDF Margins — Trim Pages Offline",
-  "h1": "Crop and Trim PDF Page Margins Instantly",
-  "description": "Remove unwanted whitespace or crop PDF pages to custom dimensions, all locally. No upload. Ideal for users in Berlin.",
+  "title": "PDF-Ränder zuschneiden – Seiten offline zuschneiden",
+  "h1": "PDF-Seitenränder sofort zuschneiden und zuschneiden",
+  "description": "Entfernen Sie unerwünschte Leerzeichen oder schneiden Sie PDF-Seiten lokal auf benutzerdefinierte Abmessungen zu. Schnell und absolut sicher.",
+  "buttonText": "Crop PDF",
+  "badges": [
+    "Visueller Randeditor",
+    "Gleichmäßiges Zuschneiden",
+    "Keine Latenz"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Crop PDFs Locally?",
-      "content": "Scanned documents often have large margins. Crop them locally without exposing internal document structure to the cloud."
+      "type": "crop_hero_features",
+      "title": "Warum PDFs lokal zuschneiden?",
+      "content": "Gescannte Dokumente haben oft große Ränder. Schneiden Sie sie lokal zu, ohne die interne Dokumentstruktur der Cloud preiszugeben."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Crop PDF Pages",
+      "type": "crop_how_to_steps",
+      "title": "So beschneiden Sie PDF-Seiten",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to crop."
+          "title": "PDF öffnen",
+          "description": "Laden Sie die PDF-Datei, die Sie zuschneiden möchten."
         },
         {
-          "title": "Set Margins",
-          "description": "Drag guides or enter exact margin values."
+          "title": "Ränder festlegen",
+          "description": "Ziehen Sie Hilfslinien oder geben Sie genaue Randwerte ein."
         },
         {
-          "title": "Export Cropped PDF",
-          "description": "Download the trimmed PDF instantly."
+          "title": "Zugeschnittenes PDF exportieren",
+          "description": "Laden Sie das zugeschnittene PDF sofort herunter."
         }
-      ]
+      ],
+      "badgeText": "Kurzanleitung"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Precise Cropping for Berlin Users",
-      "content": "Architects and designers in Berlin use our crop tool to clean up scanned blueprints without cloud uploads."
+      "type": "crop_geo_targeting",
+      "title": "100 % sichere lokale Verarbeitung",
+      "content": "Alle Vorgänge werden direkt auf Ihrem lokalen Gerät ausgeführt. Wir verwenden fortschrittliche WebAssembly-Technologie, um Ihre Dokumente zu verarbeiten, ohne sie jemals auf externe Server hochzuladen, und gewährleisten so absolute Privatsphäre.",
+      "badgeText": "Lokale Verarbeitung"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Technical Documents Stay Local",
-      "content": "Architectural plans and legal PDFs cropped locally without any server round-trip."
+      "type": "crop_privacy_security",
+      "title": "Technische Dokumente bleiben lokal",
+      "content": "Lokal zugeschnittene Architekturpläne und rechtliche PDFs ohne Server-Round-Trip.",
+      "badgeText": "Sicherheit geht vor"
     },
     {
-      "type": "split_performance",
-      "title": "Crop Any Size PDF Instantly",
-      "content": "Crop margins from a 200-page document in under 2 seconds. All in your browser."
+      "type": "crop_performance",
+      "title": "PDFs jeder Größe sofort zuschneiden",
+      "content": "Beschneiden Sie die Ränder eines 200-seitigen Dokuments in weniger als 2 Sekunden. Alles in Ihrem Browser.",
+      "badgeText": "Blitzschnell"
     }
   ],
   "faqs": [
     {
-      "q": "Can I crop all pages uniformly?",
-      "a": "Yes, apply the same crop to every page at once."
+      "q": "Kann ich alle Seiten einheitlich zuschneiden?",
+      "a": "Ja, wenden Sie den gleichen Zuschnitt auf jede Seite gleichzeitig an."
     },
     {
-      "q": "Can I crop individual pages?",
-      "a": "Yes, you can set per-page crop values."
+      "q": "Kann ich einzelne Seiten zuschneiden?",
+      "a": "Ja, Sie können Beschnittwerte pro Seite festlegen."
     },
     {
-      "q": "What are the minimum margin values?",
-      "a": "You can crop all the way to 0 margin on any side."
+      "q": "Was sind die Mindestmargenwerte?",
+      "a": "Sie können auf jeder Seite bis zum Rand von 0 zuschneiden."
     },
     {
-      "q": "Will content be cut off?",
-      "a": "Only whitespace is removed by default; you control the guides."
+      "q": "Werden Inhalte abgeschnitten?",
+      "a": "Standardmäßig werden nur Leerzeichen entfernt; Du kontrollierst die Führer."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, komplett kostenlos."
+      "q": "Ist das kostenlos?",
+      "a": "Ja, völlig kostenlos."
     }
-  ]
+  ],
+  "faqTitle": "Häufig gestellte Fragen",
+  "supportCenter": "Support-Center"
 }

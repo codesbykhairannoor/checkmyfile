@@ -1,67 +1,85 @@
 {
-  "title": "Split PDF - Extract Pages Securely",
-  "h1": "Split and Extract PDF Pages in Seconds",
-  "description": "Extract specific pages or split a large PDF into multiple files locally in your browser. Perfect for legal professionals in Bangkok.",
+  "title": "แยก PDF - แยกหน้าอย่างปลอดภัย",
+  "h1": "แยกและแยกหน้า PDF ในไม่กี่วินาที",
+  "description": "แยกหน้าเฉพาะหรือแยก PDF ขนาดใหญ่ออกเป็นหลายไฟล์ในเบราว์เซอร์ของคุณ รวดเร็วและปลอดภัยอย่างสมบูรณ์",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Split PDFs Locally?",
-      "content": "When dealing with massive legal or corporate documents, extracting a single page shouldn't require uploading a 1GB file. Do it instantly right on your machine."
+      "title": "เหตุใดจึงต้องแยก PDF ในเครื่อง?",
+      "content": "เมื่อต้องจัดการกับเอกสารทางกฎหมายหรือเอกสารขององค์กรจำนวนมาก การแยกหน้าเดียวไม่ควรต้องอัปโหลดไฟล์ขนาด 1GB ทำได้ทันทีบนเครื่องของคุณ"
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Extract Pages",
+      "title": "วิธีแยกหน้า",
       "steps": [
         {
-          "title": "Open Document",
-          "description": "Load the multi-page PDF you want to split."
+          "title": "เปิดเอกสาร",
+          "description": "โหลด PDF หลายหน้าที่คุณต้องการแยก"
         },
         {
-          "title": "Select Ranges",
-          "description": "Pick specific page numbers or visually select pages to extract."
+          "title": "เลือกช่วง",
+          "description": "เลือกหมายเลขหน้าที่ต้องการหรือเลือกหน้าที่ต้องการแยกออกมาด้วยสายตา"
         },
         {
-          "title": "Export Zip",
-          "description": "Download your newly split files organized in a ZIP."
+          "title": "ส่งออกซิป",
+          "description": "ดาวน์โหลดไฟล์แยกใหม่ของคุณที่จัดเป็น ZIP"
         }
-      ]
+      ],
+      "badgeText": "คู่มือฉบับย่อ"
     },
     {
       "type": "split_geo_targeting",
-      "title": "The Best Splitter in Bangkok, TH-10",
-      "content": "Whether you are studying in Bangkok or working on a tight deadline, extracting pages is now instantaneous."
+      "title": "การประมวลผลภายในที่ปลอดภัย 100%",
+      "content": "การดำเนินการทั้งหมดดำเนินการโดยตรงบนอุปกรณ์ท้องถิ่นของคุณ เราใช้เทคโนโลยี WebAssembly ขั้นสูงเพื่อประมวลผลเอกสารของคุณโดยไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ภายนอก เพื่อให้มั่นใจถึงความเป็นส่วนตัวโดยสมบูรณ์",
+      "badgeText": "การประมวลผลในท้องถิ่น"
     },
     {
       "type": "split_privacy_security",
-      "title": "Total Page Privacy",
-      "content": "Splitting confidential employee records? Rest easy knowing our code executes purely in your local environment."
+      "title": "ความเป็นส่วนตัวของหน้าทั้งหมด",
+      "content": "แยกบันทึกพนักงานที่เป็นความลับใช่ไหม สบายใจได้เลยเมื่อรู้ว่าโค้ดของเรารันในสภาพแวดล้อมท้องถิ่นของคุณเท่านั้น",
+      "badgeText": "ความปลอดภัยต้องมาก่อน"
     },
     {
       "type": "split_performance",
-      "title": "Zero-Upload Extraction",
-      "content": "Grabbing page 14 from a 2000-page PDF takes milliseconds, skipping the excruciating upload step entirely."
+      "title": "การแตกไฟล์แบบ Zero-Upload",
+      "content": "การดึงหน้า 14 จาก PDF ขนาด 2,000 หน้าใช้เวลาเป็นมิลลิวินาที โดยข้ามขั้นตอนการอัปโหลดอันแสนสาหัสไปเลย",
+      "badgeText": "เร็วปานสายฟ้า"
     }
   ],
   "faqs": [
     {
-      "q": "How do I extract just one page?",
-      "a": "Simply click on the page thumbnail you want and hit Export."
+      "q": "ฉันจะดึงข้อมูลเพียงหน้าเดียวได้อย่างไร",
+      "a": "เพียงคลิกภาพขนาดย่อของหน้าที่คุณต้องการแล้วกดส่งออก"
     },
     {
-      "q": "Can I split the PDF in half?",
-      "a": "Yes, you can specify custom page ranges like 1-10 and 11-20."
+      "q": "ฉันสามารถแบ่ง PDF ออกเป็นสองส่วนได้หรือไม่",
+      "a": "ได้ คุณสามารถระบุช่วงหน้าที่กำหนดเองได้ เช่น 1-10 และ 11-20"
     },
     {
-      "q": "Will the extracted pages lose quality?",
-      "a": "No, the splitting process uses binary extraction, preserving 100% of the original quality."
+      "q": "หน้าที่แยกออกมาจะสูญเสียคุณภาพหรือไม่",
+      "a": "ไม่ กระบวนการแยกใช้การแยกแบบไบนารี โดยคงคุณภาพต้นฉบับไว้ 100%"
     },
     {
-      "q": "Is my document uploaded when splitting?",
-      "a": "Never. The entire 2000-page document stays strictly in your browser."
+      "q": "เอกสารของฉันถูกอัพโหลดเมื่อแยกหรือไม่?",
+      "a": "ไม่เคย. เอกสาร 2,000 หน้าทั้งหมดจะยังคงอยู่ในเบราว์เซอร์ของคุณอย่างเคร่งครัด"
     },
     {
-      "q": "Is there a limit to how many pages I can split?",
-      "a": "No limits! Split as many pages as your computer can handle."
+      "q": "มีการจำกัดจำนวนหน้าที่สามารถแบ่งได้หรือไม่?",
+      "a": "ไม่มีขีดจำกัด! แบ่งหน้าได้มากเท่าที่คอมพิวเตอร์ของคุณสามารถจัดการได้"
     }
-  ]
+  ],
+  "badges": [
+    "แยกทันที",
+    "ช่วงที่แม่นยำ",
+    "ไม่มีขีดจำกัด"
+  ],
+  "stats": [
+    "Ultra Fast",
+    "No Upload",
+    "Batch Zip",
+    "Secure"
+  ],
+  "buttonText": "Split PDF",
+  "faqTitle": "คำถามที่พบบ่อย",
+  "supportCenter": "ศูนย์สนับสนุน"
 }

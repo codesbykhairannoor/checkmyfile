@@ -1,67 +1,85 @@
 {
-  "title": "Scan to PDF — Convert Camera Shots Offline",
-  "h1": "Convert Photos and Scans to PDF Locally",
-  "description": "Turn photos of documents taken with your camera into clean PDFs entirely in your browser. No upload. Best for users in Kyiv.",
+  "title": "Сканування в PDF — конвертуйте знімки камери в режимі офлайн",
+  "h1": "Перетворюйте фотографії та скановані файли на PDF локально",
+  "description": "Перетворюйте фотографії документів, зроблені камерою, на чисті PDF-файли у своєму браузері. Без завантаження. 100% безпечна локальна обробка.",
+  "buttonText": "Scan to PDF",
+  "badges": [
+    "Використовуйте веб-камеру",
+    "Мобільний сканер",
+    "Автоматичне обрізання"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Use Scan-to-PDF Offline?",
-      "content": "Photos of documents contain sensitive information. Process them locally without any cloud access."
+      "type": "scan_hero_features",
+      "title": "Навіщо використовувати сканування в PDF офлайн?",
+      "content": "Фотографії документів містять конфіденційну інформацію. Обробляйте їх локально без доступу до хмари."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Scans to PDF",
+      "type": "scan_how_to_steps",
+      "title": "Як конвертувати скани в PDF",
       "steps": [
         {
-          "title": "Import Photos",
-          "description": "Select photos taken with your phone or camera."
+          "title": "Імпорт фотографій",
+          "description": "Виберіть фотографії, зроблені телефоном або камерою."
         },
         {
           "title": "Enhance Scan",
-          "description": "Auto-crop, deskew, and enhance contrast."
+          "description": "Автоматичне обрізання, виправлення та підвищення контрастності."
         },
         {
-          "title": "Export PDF",
-          "description": "Download a clean, professional-looking scanned PDF."
+          "title": "Експорт PDF",
+          "description": "Завантажте чистий відсканований PDF-файл професійного вигляду."
         }
-      ]
+      ],
+      "badgeText": "Короткий посібник"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Scan to PDF for Kyiv Field Workers",
-      "content": "Field workers and freelancers in Kyiv digitize paper documents on-the-go without uploading to cloud services."
+      "type": "scan_geo_targeting",
+      "title": "100% безпечна локальна обробка",
+      "content": "Усі операції виконуються безпосередньо на локальному пристрої. Ми використовуємо передову технологію WebAssembly для обробки ваших документів, не завантажуючи їх на зовнішні сервери, забезпечуючи повну конфіденційність.",
+      "badgeText": "Локальна обробка"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Documents Stay on Device",
-      "content": "Invoices, contracts, and ID scans processed entirely in browser memory without any server access."
+      "type": "scan_privacy_security",
+      "title": "Відскановані документи залишаються на пристрої",
+      "content": "Рахунки-фактури, контракти та сканування ідентифікаторів повністю обробляються в пам’яті браузера без доступу до сервера.",
+      "badgeText": "Безпека перш за все"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Scans in Real Time",
-      "content": "Photo enhancement and PDF generation happens in milliseconds, even for high-resolution camera shots."
+      "type": "scan_performance",
+      "title": "Перетворення сканів у реальному часі",
+      "content": "Покращення фотографій і створення PDF-файлів відбувається за мілісекунди навіть для знімків камери з високою роздільною здатністю.",
+      "badgeText": "Блискавичний"
     }
   ],
   "faqs": [
     {
-      "q": "What photo formats are supported?",
-      "a": "JPG, PNG, WebP, and HEIC from modern cameras."
+      "q": "Які формати фотографій підтримуються?",
+      "a": "JPG, PNG, WebP і HEIC із сучасних камер."
     },
     {
-      "q": "Does it fix tilted scans?",
-      "a": "Yes, auto-deskew corrects slight angles automatically."
+      "q": "Чи виправляє сканування під нахилом?",
+      "a": "Так, автоматичне вирівнювання автоматично виправляє невеликі кути."
     },
     {
-      "q": "Can I combine multiple scans?",
-      "a": "Yes, add multiple photos to create a multi-page PDF."
+      "q": "Чи можу я поєднати кілька сканувань?",
+      "a": "Так, додайте кілька фотографій, щоб створити багатосторінковий PDF-файл."
     },
     {
-      "q": "Does it enhance contrast?",
-      "a": "Yes, document enhancement mode sharpens text for clarity."
+      "q": "Це посилює контраст?",
+      "a": "Так, режим покращення документа робить текст чіткішим."
     },
     {
-      "q": "Is this free?",
-      "a": "Так, повністю безкоштовно."
+      "q": "Це безкоштовно?",
+      "a": "Так, завжди безкоштовно."
     }
-  ]
+  ],
+  "faqTitle": "Часті запитання",
+  "supportCenter": "Центр підтримки"
 }

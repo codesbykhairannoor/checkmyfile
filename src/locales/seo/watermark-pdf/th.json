@@ -1,67 +1,85 @@
 {
-  "title": "Add Watermark to PDF — Offline Watermarking",
-  "h1": "Stamp PDFs with Text or Image Watermarks Locally",
-  "description": "Add \"CONFIDENTIAL\", logos, or custom text watermarks to PDFs entirely in your browser. No upload. Best for users in Bangkok.",
+  "title": "เพิ่มลายน้ำลงใน PDF — ลายน้ำออฟไลน์",
+  "h1": "ประทับตรา PDF ด้วยลายน้ำข้อความหรือรูปภาพในเครื่อง",
+  "description": "เพิ่ม \"ความลับ\" โลโก้ หรือลายน้ำข้อความที่กำหนดเองลงใน PDF ทั้งหมดในเบราว์เซอร์ของคุณ ไม่มีการอัพโหลด การประมวลผลภายในที่ปลอดภัย 100%",
+  "buttonText": "Add Watermark",
+  "badges": [
+    "ข้อความที่กำหนดเอง",
+    "ความทึบที่ปรับได้",
+    "การคุ้มครองแบรนด์"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Watermark PDFs Offline?",
-      "content": "Adding watermarks means your document is sensitive. Never upload draft contracts or confidential reports to a cloud watermarker."
+      "type": "watermark_hero_features",
+      "title": "เหตุใด Watermark PDF จึงออฟไลน์",
+      "content": "การเพิ่มลายน้ำหมายความว่าเอกสารของคุณมีความละเอียดอ่อน อย่าอัปโหลดร่างสัญญาหรือรายงานที่เป็นความลับไปยังลายน้ำบนคลาวด์"
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Watermark a PDF",
+      "type": "watermark_how_to_steps",
+      "title": "วิธีการลายน้ำ PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to watermark."
+          "title": "เปิด PDF",
+          "description": "เลือก PDF ให้เป็นลายน้ำ"
         },
         {
-          "title": "Design Watermark",
-          "description": "Type text or upload a logo image."
+          "title": "ออกแบบลายน้ำ",
+          "description": "พิมพ์ข้อความหรืออัปโหลดรูปภาพโลโก้"
         },
         {
-          "title": "Apply & Download",
-          "description": "Get your watermarked PDF in one click."
+          "title": "สมัครและดาวน์โหลด",
+          "description": "รับ PDF แบบใส่ลายน้ำได้ในคลิกเดียว"
         }
-      ]
+      ],
+      "badgeText": "คู่มือฉบับย่อ"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Document Watermarking in Bangkok",
-      "content": "Legal and creative professionals in Bangkok stamp documents with watermarks without cloud uploads."
+      "type": "watermark_geo_targeting",
+      "title": "การประมวลผลภายในที่ปลอดภัย 100%",
+      "content": "การดำเนินการทั้งหมดดำเนินการโดยตรงบนอุปกรณ์ท้องถิ่นของคุณ เราใช้เทคโนโลยี WebAssembly ขั้นสูงเพื่อประมวลผลเอกสารของคุณโดยไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ภายนอก เพื่อให้มั่นใจถึงความเป็นส่วนตัวโดยสมบูรณ์",
+      "badgeText": "การประมวลผลในท้องถิ่น"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Confidential Drafts Stay Private",
-      "content": "Draft contracts and unreleased designs watermarked locally without any server contact."
+      "type": "watermark_privacy_security",
+      "title": "ร่างที่เป็นความลับยังคงเป็นส่วนตัว",
+      "content": "ร่างสัญญาและการออกแบบที่ยังไม่เผยแพร่มีลายน้ำภายในเครื่องโดยไม่ต้องติดต่อกับเซิร์ฟเวอร์",
+      "badgeText": "ความปลอดภัยต้องมาก่อน"
     },
     {
-      "type": "transform_performance",
-      "title": "Stamp Thousands of Pages Instantly",
-      "content": "Apply watermarks to a 1000-page document in under 3 seconds. All in your browser."
+      "type": "watermark_performance",
+      "title": "ประทับตรานับพันหน้าได้ทันที",
+      "content": "ใส่ลายน้ำบนเอกสาร 1,000 หน้าภายในเวลาไม่ถึง 3 วินาที ทั้งหมดในเบราว์เซอร์ของคุณ",
+      "badgeText": "เร็วปานสายฟ้า"
     }
   ],
   "faqs": [
     {
-      "q": "Can I use a logo as a watermark?",
-      "a": "Yes, upload a PNG logo and set transparency."
+      "q": "ฉันสามารถใช้โลโก้เป็นลายน้ำได้หรือไม่?",
+      "a": "ใช่ อัปโหลดโลโก้ PNG และตั้งค่าความโปร่งใส"
     },
     {
-      "q": "Can I adjust watermark opacity?",
-      "a": "Yes, from 10% to 100% opacity."
+      "q": "ฉันสามารถปรับความทึบของลายน้ำได้หรือไม่",
+      "a": "ใช่ ตั้งแต่ 10% ถึง 100% ความทึบ"
     },
     {
-      "q": "Can I apply it to specific pages only?",
-      "a": "Yes, choose page ranges."
+      "q": "ฉันสามารถนำไปใช้กับบางหน้าเท่านั้นได้หรือไม่",
+      "a": "ใช่ เลือกช่วงหน้า"
     },
     {
-      "q": "Is diagonal placement available?",
-      "a": "Yes, rotate watermarks to any angle."
+      "q": "มีตำแหน่งแนวทแยงหรือไม่",
+      "a": "ใช่ หมุนลายน้ำไปที่มุมใดก็ได้"
     },
     {
-      "q": "Is this free?",
-      "a": "ใช่ ฟรีทั้งหมด"
+      "q": "ฟรีหรือเปล่า?",
+      "a": "ใช่ ฟรีเสมอ"
     }
-  ]
+  ],
+  "faqTitle": "คำถามที่พบบ่อย",
+  "supportCenter": "ศูนย์สนับสนุน"
 }

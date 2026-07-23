@@ -1,67 +1,78 @@
 {
-  "title": "Merge PDF - Combine Documents Offline",
-  "h1": "Merge PDF Files Instantly in Your Browser",
-  "description": "Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, perfect for users in Prague.",
+  "title": "Sloučit PDF - Kombinovat dokumenty offline",
+  "h1": "Okamžité sloučení souborů PDF ve vašem prohlížeči",
+  "description": "Kombinujte více souborů PDF do jednoho dokumentu pomocí čistě klientského WebAssembly. Žádné nahrávání souborů, ideální pro uživatele v New Yorku.",
   "sections": [
     {
       "type": "merge_hero_features",
-      "title": "Why Merge PDF Offline?",
-      "content": "Instead of uploading sensitive documents to a server, our Merge PDF tool stitches your pages together directly in your browser. Complete privacy."
+      "title": "Proč sloučit PDF offline?",
+      "content": "Namísto nahrávání citlivých dokumentů na server náš nástroj Merge PDF spojí vaše stránky dohromady přímo ve vašem prohlížeči. Úplné soukromí."
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Merge PDF Files",
+      "title": "Jak sloučit soubory PDF",
       "steps": [
         {
-          "title": "Add Documents",
-          "description": "Select the PDFs you want to merge together."
+          "title": "Přidat dokumenty",
+          "description": "Vyberte soubory PDF, které chcete sloučit."
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop files to get the perfect sequence."
+          "title": "Změnit pořadí stránek",
+          "description": "Přetažením souborů získáte dokonalou sekvenci."
         },
         {
-          "title": "Merge & Save",
-          "description": "Click merge and download your combined document instantly."
+          "title": "Sloučit a uložit",
+          "description": "Klikněte na sloučit a stáhněte si kombinovaný dokument okamžitě."
         }
-      ]
+      ],
+      "badgeText": "Rychlý průvodce"
     },
     {
       "type": "merge_geo_targeting",
-      "title": "Seamless Merging for users in Prague, CZ-10",
-      "content": "No matter if you are in Prague or traveling, combining documents takes zero milliseconds of upload time."
+      "title": "100% bezpečné místní zpracování",
+      "content": "Všechny operace se provádějí přímo na vašem místním zařízení. Ke zpracování vašich dokumentů používáme pokročilou technologii WebAssembly, aniž bychom je kdy nahrávali na externí servery, což zajišťuje naprosté soukromí.",
+      "badgeText": "Místní zpracování"
     },
     {
       "type": "merge_privacy_security",
-      "title": "Enterprise-Grade Document Combining",
-      "content": "Merging contracts and invoices? Do it securely with our WASM engine. No traces left behind."
+      "title": "Kombinace dokumentů podnikové úrovně",
+      "content": "Sloučení smluv a faktur? Udělejte to bezpečně s naším motorem WASM. Nezůstaly po něm žádné stopy.",
+      "badgeText": "Bezpečnost především"
     },
     {
       "type": "merge_performance",
-      "title": "Instant Combination",
-      "content": "Stitching PDFs locally means you can merge a 500-page document faster than you can upload it."
+      "title": "Okamžitá kombinace",
+      "content": "Lokální spojování PDF znamená, že můžete sloučit 500stránkový dokument rychleji, než jej můžete odeslat.",
+      "badgeText": "Bleskově rychlý"
     }
   ],
   "faqs": [
     {
-      "q": "Is merging PDFs completely free?",
-      "a": "Yes! Merge as many files as you want without paying a cent."
+      "q": "Je slučování PDF zcela zdarma?",
+      "a": "Ano! Sloučte tolik souborů, kolik chcete, aniž byste museli platit ani cent."
     },
     {
-      "q": "Are my merged files uploaded?",
-      "a": "No, all merging happens offline in your browser."
+      "q": "Jsou mé sloučené soubory nahrané?",
+      "a": "Ne, veškeré slučování probíhá offline ve vašem prohlížeči."
     },
     {
-      "q": "Can I reorder the files before merging?",
-      "a": "Yes, just drag and drop the files in the preview window."
+      "q": "Mohu změnit pořadí souborů před sloučením?",
+      "a": "Ano, stačí přetáhnout soubory v okně náhledu."
     },
     {
-      "q": "Is there a limit on how many files I can merge?",
-      "a": "No artificial limits! Merge 10 or 100 files depending on your RAM."
+      "q": "Existuje nějaké omezení počtu souborů, které mohu sloučit?",
+      "a": "Žádné umělé limity! Sloučit 10 nebo 100 souborů v závislosti na vaší RAM."
     },
     {
-      "q": "Does merging ruin the formatting?",
-      "a": "Not at all. The original layers and vector data are perfectly stitched together."
+      "q": "Zničí sloučení formátování?",
+      "a": "vůbec ne. Původní vrstvy a vektorová data jsou dokonale sešitá."
     }
+  ],
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory",
+  "badges": [
+    "Nulová latence serveru",
+    "Žádná šířka pásma pro nahrávání",
+    "Okamžité zpracování"
   ]
 }

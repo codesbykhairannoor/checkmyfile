@@ -1,67 +1,85 @@
 {
-  "title": "Compare PDF Files — Spot Differences Locally",
-  "h1": "Compare Two PDF Documents Side by Side",
-  "description": "Upload two PDFs and highlight differences between them entirely in your browser. No upload to servers. Ideal for users in Athens.",
+  "title": "Συγκρίνετε αρχεία PDF — Σημειώστε διαφορές τοπικά",
+  "h1": "Συγκρίνετε δύο έγγραφα PDF το ένα δίπλα στο άλλο",
+  "description": "Ανεβάστε δύο αρχεία PDF και επισημάνετε τις διαφορές μεταξύ τους εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση σε διακομιστές. 100% ασφαλής τοπική επεξεργασία.",
+  "buttonText": "Compare PDFs",
+  "badges": [
+    "Βρείτε τις διαφορές",
+    "Επισήμανση αλλαγών",
+    "Visual Diff"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Compare PDFs Locally?",
-      "content": "Comparing contract versions or document revisions often involves highly sensitive content. Do it entirely offline."
+      "type": "compare_hero_features",
+      "title": "Γιατί να συγκρίνετε αρχεία PDF τοπικά;",
+      "content": "Η σύγκριση εκδόσεων συμβάσεων ή αναθεωρήσεων εγγράφων συχνά περιλαμβάνει εξαιρετικά ευαίσθητο περιεχόμενο. Κάντε το εντελώς εκτός σύνδεσης."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Compare Two PDFs",
+      "type": "compare_how_to_steps",
+      "title": "Πώς να συγκρίνετε δύο αρχεία PDF",
       "steps": [
         {
-          "title": "Load Both PDFs",
-          "description": "Select the two PDF versions to compare."
+          "title": "Φόρτωση και των δύο PDF",
+          "description": "Επιλέξτε τις δύο εκδόσεις PDF για σύγκριση."
         },
         {
-          "title": "View Differences",
-          "description": "Highlighted changes appear side by side."
+          "title": "Προβολή διαφορών",
+          "description": "Οι επισημασμένες αλλαγές εμφανίζονται δίπλα-δίπλα."
         },
         {
-          "title": "Export Diff Report",
-          "description": "Download a comparison report with all changes marked."
+          "title": "Αναφορά διαφορών εξαγωγής",
+          "description": "Κατεβάστε μια αναφορά σύγκρισης με όλες τις αλλαγές επισημασμένες."
         }
-      ]
+      ],
+      "badgeText": "Γρήγορος Οδηγός"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Comparison for Athens Law Firms",
-      "content": "Legal professionals in Athens compare contract revisions without uploading privileged documents to cloud services."
+      "type": "compare_geo_targeting",
+      "title": "100% Ασφαλής Τοπική Επεξεργασία",
+      "content": "Όλες οι λειτουργίες εκτελούνται απευθείας στην τοπική συσκευή σας. Χρησιμοποιούμε προηγμένη τεχνολογία WebAssembly για να επεξεργαζόμαστε τα έγγραφά σας χωρίς ποτέ να τα ανεβάσουμε σε εξωτερικούς διακομιστές, διασφαλίζοντας πλήρες απόρρητο.",
+      "badgeText": "Τοπική Επεξεργασία"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Privileged Documents Stay Private",
-      "content": "Compare NDAs, contracts, and regulatory filings without any server interaction."
+      "type": "compare_privacy_security",
+      "title": "Προνομιακά Έγγραφα Παραμείνουν Ιδιωτικά",
+      "content": "Συγκρίνετε NDA, συμβόλαια και ρυθμιστικές αρχειοθετήσεις χωρίς καμία αλληλεπίδραση διακομιστή.",
+      "badgeText": "Πρώτα η ασφάλεια"
     },
     {
-      "type": "organizer_performance",
-      "title": "Instant Side-by-Side Comparison",
-      "content": "Compare 100-page documents in seconds with highlighted differences rendered in-browser."
+      "type": "compare_performance",
+      "title": "Άμεση σύγκριση δίπλα-δίπλα",
+      "content": "Συγκρίνετε έγγραφα 100 σελίδων σε δευτερόλεπτα με τις επισημασμένες διαφορές που αποδίδονται στο πρόγραμμα περιήγησης.",
+      "badgeText": "Αστραπιαία"
     }
   ],
   "faqs": [
     {
-      "q": "What types of differences are detected?",
-      "a": "Text additions, deletions, and formatting changes are highlighted."
+      "q": "Τι είδους διαφορές εντοπίζονται;",
+      "a": "Οι προσθήκες κειμένου, οι διαγραφές και οι αλλαγές μορφοποίησης επισημαίνονται."
     },
     {
-      "q": "Can I compare scanned PDFs?",
-      "a": "For scanned PDFs, use OCR first to extract text before comparing."
+      "q": "Μπορώ να συγκρίνω σαρωμένα αρχεία PDF;",
+      "a": "Για σαρωμένα αρχεία PDF, χρησιμοποιήστε πρώτα το OCR για εξαγωγή κειμένου πριν από τη σύγκριση."
     },
     {
-      "q": "Can I export the comparison?",
-      "a": "Yes, download a marked-up PDF showing all differences."
+      "q": "Μπορώ να εξάγω τη σύγκριση;",
+      "a": "Ναι, κάντε λήψη ενός σημειωμένου PDF που δείχνει όλες τις διαφορές."
     },
     {
-      "q": "How many versions can I compare?",
-      "a": "Two documents at a time in the side-by-side view."
+      "q": "Πόσες εκδόσεις μπορώ να συγκρίνω;",
+      "a": "Δύο έγγραφα κάθε φορά σε προβολή δίπλα-δίπλα."
     },
     {
-      "q": "Is this free?",
+      "q": "Αυτό είναι δωρεάν;",
       "a": "Ναι, εντελώς δωρεάν."
     }
-  ]
+  ],
+  "faqTitle": "Συχνές Ερωτήσεις",
+  "supportCenter": "Κέντρο Υποστήριξης"
 }

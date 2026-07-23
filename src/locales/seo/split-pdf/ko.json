@@ -1,67 +1,85 @@
 {
-  "title": "Split PDF - Extract Pages Securely",
-  "h1": "Split and Extract PDF Pages in Seconds",
-  "description": "Extract specific pages or split a large PDF into multiple files locally in your browser. Perfect for legal professionals in Seoul.",
+  "title": "PDF 분할 - 안전하게 페이지 추출",
+  "h1": "몇 초 만에 PDF 페이지 분할 및 추출",
+  "description": "브라우저에서 로컬로 특정 페이지를 추출하거나 대용량 PDF를 여러 파일로 분할합니다. 빠르고 완벽하게 안전합니다.",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Split PDFs Locally?",
-      "content": "When dealing with massive legal or corporate documents, extracting a single page shouldn't require uploading a 1GB file. Do it instantly right on your machine."
+      "title": "PDF를 로컬로 분할하는 이유는 무엇입니까?",
+      "content": "대규모 법률 또는 기업 문서를 처리할 때 단일 페이지를 추출하는 데 1GB 파일을 업로드할 필요가 없습니다. 귀하의 컴퓨터에서 바로 즉시 수행하십시오."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Extract Pages",
+      "title": "페이지를 추출하는 방법",
       "steps": [
         {
-          "title": "Open Document",
-          "description": "Load the multi-page PDF you want to split."
+          "title": "문서 열기",
+          "description": "분할하려는 여러 페이지로 구성된 PDF를 로드합니다."
         },
         {
-          "title": "Select Ranges",
-          "description": "Pick specific page numbers or visually select pages to extract."
+          "title": "범위 선택",
+          "description": "특정 페이지 번호를 선택하거나 추출할 페이지를 시각적으로 선택하세요."
         },
         {
-          "title": "Export Zip",
-          "description": "Download your newly split files organized in a ZIP."
+          "title": "우편번호 내보내기",
+          "description": "ZIP으로 구성된 새로 분할된 파일을 다운로드하세요."
         }
-      ]
+      ],
+      "badgeText": "빠른 가이드"
     },
     {
       "type": "split_geo_targeting",
-      "title": "The Best Splitter in Seoul, KR-11",
-      "content": "Whether you are studying in Seoul or working on a tight deadline, extracting pages is now instantaneous."
+      "title": "100% 안전한 로컬 처리",
+      "content": "모든 작업은 로컬 장치에서 직접 수행됩니다. 우리는 고급 WebAssembly 기술을 사용하여 문서를 외부 서버에 업로드하지 않고 처리하여 완벽한 개인 정보 보호를 보장합니다.",
+      "badgeText": "로컬 처리"
     },
     {
       "type": "split_privacy_security",
-      "title": "Total Page Privacy",
-      "content": "Splitting confidential employee records? Rest easy knowing our code executes purely in your local environment."
+      "title": "전체 페이지 개인정보 보호",
+      "content": "기밀 직원 기록을 분할하시나요? 우리 코드가 로컬 환경에서만 실행된다는 사실을 알고 안심하세요.",
+      "badgeText": "보안 우선"
     },
     {
       "type": "split_performance",
-      "title": "Zero-Upload Extraction",
-      "content": "Grabbing page 14 from a 2000-page PDF takes milliseconds, skipping the excruciating upload step entirely."
+      "title": "제로 업로드 추출",
+      "content": "2000페이지짜리 PDF에서 14페이지를 가져오는 데는 밀리초가 걸리며, 힘든 업로드 단계를 완전히 건너뜁니다.",
+      "badgeText": "번개처럼 빠르게"
     }
   ],
   "faqs": [
     {
-      "q": "How do I extract just one page?",
-      "a": "Simply click on the page thumbnail you want and hit Export."
+      "q": "한 페이지만 추출하려면 어떻게 해야 하나요?",
+      "a": "원하는 페이지 축소판을 클릭하고 내보내기를 누르기만 하면 됩니다."
     },
     {
-      "q": "Can I split the PDF in half?",
-      "a": "Yes, you can specify custom page ranges like 1-10 and 11-20."
+      "q": "PDF를 반으로 나눌 수 있나요?",
+      "a": "예, 1-10 및 11-20과 같은 사용자 정의 페이지 범위를 지정할 수 있습니다."
     },
     {
-      "q": "Will the extracted pages lose quality?",
-      "a": "No, the splitting process uses binary extraction, preserving 100% of the original quality."
+      "q": "추출된 페이지의 품질이 저하되나요?",
+      "a": "아니요, 분할 프로세스에서는 바이너리 추출을 사용하여 원래 품질을 100% 보존합니다."
     },
     {
-      "q": "Is my document uploaded when splitting?",
-      "a": "Never. The entire 2000-page document stays strictly in your browser."
+      "q": "분할 시 내 문서가 업로드되나요?",
+      "a": "절대. 전체 2000페이지 문서가 브라우저에 그대로 유지됩니다."
     },
     {
-      "q": "Is there a limit to how many pages I can split?",
-      "a": "No limits! Split as many pages as your computer can handle."
+      "q": "분할할 수 있는 페이지 수에 제한이 있나요?",
+      "a": "제한 없음! 컴퓨터가 처리할 수 있는 만큼 페이지를 분할하세요."
     }
-  ]
+  ],
+  "badges": [
+    "즉시 분할",
+    "정확한 범위",
+    "제한 없음"
+  ],
+  "stats": [
+    "Ultra Fast",
+    "No Upload",
+    "Batch Zip",
+    "Secure"
+  ],
+  "buttonText": "Split PDF",
+  "faqTitle": "자주 묻는 질문",
+  "supportCenter": "지원 센터"
 }

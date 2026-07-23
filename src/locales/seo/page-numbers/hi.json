@@ -1,67 +1,85 @@
 {
-  "title": "Add Page Numbers to PDF — Offline Number Stamp",
-  "h1": "Insert Page Numbers into PDF Documents Locally",
-  "description": "Stamp page numbers at the header or footer of your PDF entirely in your browser. No upload. Ideal for users in New Delhi.",
+  "title": "पीडीएफ में पेज नंबर जोड़ें - ऑफ़लाइन नंबर स्टाम्प",
+  "h1": "स्थानीय रूप से पीडीएफ दस्तावेज़ों में पेज नंबर डालें",
+  "description": "अपने ब्राउज़र में पूरी तरह से अपने पीडीएफ के शीर्षलेख या पादलेख पर पेज नंबर अंकित करें। तेज़ और पूरी तरह से सुरक्षित.",
+  "buttonText": "Add Page Numbers",
+  "badges": [
+    "कस्टम स्थिति",
+    "शीर्ष लेख और पादलेख",
+    "बेट्स नंबरिंग"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Add Page Numbers Offline?",
-      "content": "Page numbers are a formatting step, not a reason to upload confidential documents to a cloud service."
+      "type": "pagenum_hero_features",
+      "title": "पेज नंबर ऑफ़लाइन क्यों जोड़ें?",
+      "content": "पेज नंबर एक फ़ॉर्मेटिंग चरण है, गोपनीय दस्तावेज़ों को क्लाउड सेवा पर अपलोड करने का कोई कारण नहीं।"
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Add Page Numbers",
+      "type": "pagenum_how_to_steps",
+      "title": "पेज नंबर कैसे जोड़ें",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to number."
+          "title": "पीडीएफ खोलें",
+          "description": "क्रमांकित करने के लिए पीडीएफ का चयन करें।"
         },
         {
-          "title": "Configure Style",
-          "description": "Choose position, format (1/12, Page 1, i, ii…), and font."
+          "title": "शैली कॉन्फ़िगर करें",
+          "description": "स्थिति, प्रारूप (1/12, पृष्ठ 1, i, ii…), और फ़ॉन्ट चुनें।"
         },
         {
-          "title": "Apply & Download",
-          "description": "Download your paginated PDF instantly."
+          "title": "आवेदन करें और डाउनलोड करें",
+          "description": "अपना पृष्ठांकित पीडीएफ तुरंत डाउनलोड करें।"
         }
-      ]
+      ],
+      "badgeText": "त्वरित मार्गदर्शिका"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Page Numbering for New Delhi Legal Docs",
-      "content": "Legal professionals in New Delhi number briefs and reports locally without cloud service dependency."
+      "type": "pagenum_geo_targeting",
+      "title": "100% सुरक्षित स्थानीय प्रसंस्करण",
+      "content": "सभी ऑपरेशन सीधे आपके स्थानीय डिवाइस पर किए जाते हैं। हम पूर्ण गोपनीयता सुनिश्चित करते हुए, आपके दस्तावेज़ों को बाहरी सर्वर पर अपलोड किए बिना संसाधित करने के लिए उन्नत WebAssembly तकनीक का उपयोग करते हैं।",
+      "badgeText": "स्थानीय प्रसंस्करण"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Internal Documents Stay Numbered & Private",
-      "content": "Add page numbers to contracts and confidential reports without any server involvement."
+      "type": "pagenum_privacy_security",
+      "title": "आंतरिक दस्तावेज़ क्रमांकित और निजी रहते हैं",
+      "content": "किसी भी सर्वर की भागीदारी के बिना अनुबंधों और गोपनीय रिपोर्टों में पृष्ठ संख्याएँ जोड़ें।",
+      "badgeText": "सुरक्षा पहले"
     },
     {
-      "type": "organizer_performance",
-      "title": "Number a 1000-Page PDF Instantly",
-      "content": "Stamping page numbers locally takes milliseconds for any size document."
+      "type": "pagenum_performance",
+      "title": "1000 पेज की पीडीएफ को तुरंत क्रमांकित करें",
+      "content": "किसी भी आकार के दस्तावेज़ के लिए पृष्ठ संख्याओं पर स्थानीय रूप से मोहर लगाने में मिलीसेकेंड का समय लगता है।",
+      "badgeText": "बिजली की तेजी"
     }
   ],
   "faqs": [
     {
-      "q": "What number formats are available?",
-      "a": "Arabic (1, 2, 3), Roman (i, ii, iii), and letter (a, b, c) formats."
+      "q": "कौन से संख्या प्रारूप उपलब्ध हैं?",
+      "a": "अरबी (1, 2, 3), रोमन (i, ii, iii), और अक्षर (ए, बी, सी) प्रारूप।"
     },
     {
-      "q": "Can I start from a custom number?",
-      "a": "Yes, set any starting page number."
+      "q": "क्या मैं कस्टम नंबर से शुरुआत कर सकता हूँ?",
+      "a": "हां, कोई भी आरंभिक पृष्ठ क्रमांक सेट करें."
     },
     {
-      "q": "Can I skip numbering the first page?",
-      "a": "Yes, set the page offset to skip cover pages."
+      "q": "क्या मैं पहले पृष्ठ पर क्रमांकन करना छोड़ सकता हूँ?",
+      "a": "हां, कवर पेजों को छोड़ने के लिए पेज ऑफसेट सेट करें।"
     },
     {
-      "q": "Where can I position numbers?",
-      "a": "Header-left, header-center, header-right, and same for footer."
+      "q": "मैं संख्याएँ कहाँ रख सकता हूँ?",
+      "a": "शीर्षलेख-बाएँ, शीर्षलेख-केंद्र, शीर्षलेख-दाएँ, और पादलेख के लिए भी यही बात लागू होती है।"
     },
     {
-      "q": "Is this free?",
-      "a": "हाँ, पूरी तरह मुफ्त।"
+      "q": "क्या यह मुफ़्त है?",
+      "a": "हाँ, हमेशा मुफ़्त."
     }
-  ]
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न",
+  "supportCenter": "सहायता केंद्र"
 }

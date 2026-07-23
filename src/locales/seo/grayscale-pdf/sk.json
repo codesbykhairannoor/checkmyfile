@@ -1,67 +1,85 @@
 {
-  "title": "Grayscale PDF — Convert to Black and White Offline",
-  "h1": "Convert Color PDF Pages to Grayscale Instantly",
-  "description": "Turn color PDFs into black-and-white versions to reduce file size or prepare for printing, entirely in your browser. Ideal for users in Bratislava.",
+  "title": "PDF v odtieňoch sivej — Previesť na čiernobiele offline",
+  "h1": "Okamžitý prevod farebných stránok PDF do odtieňov sivej",
+  "description": "Premeňte farebné súbory PDF na čiernobiele verzie, aby ste zmenšili veľkosť súboru alebo sa pripravili na tlač, a to úplne vo vašom prehliadači. 100% bezpečné lokálne spracovanie.",
+  "buttonText": "Convert to Grayscale",
+  "badges": [
+    "Uložiť atrament",
+    "Black & White",
+    "Ideálne pre tlač"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Convert to Grayscale Offline?",
-      "content": "Removing color from a PDF is a pre-print or archiving step. Do it locally without exposing confidential document design."
+      "type": "grayscale_hero_features",
+      "title": "Prečo konvertovať na odtiene šedej offline?",
+      "content": "Odstránenie farby z PDF je predtlač alebo archivácia. Urobte to lokálne bez toho, aby ste odhalili dôverný dizajn dokumentu."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Make PDF Grayscale",
+      "type": "grayscale_how_to_steps",
+      "title": "Ako vytvoriť PDF v odtieňoch sivej",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the color PDF to convert."
+          "title": "Otvoriť PDF",
+          "description": "Vyberte farebný súbor PDF, ktorý chcete previesť."
         },
         {
-          "title": "Choose Conversion Mode",
-          "description": "Pick luminance or contrast-adjusted grayscale."
+          "title": "Vyberte režim konverzie",
+          "description": "Vyberte jas alebo kontrast v odtieňoch šedej."
         },
         {
-          "title": "Download Grayscale PDF",
-          "description": "Save the black-and-white PDF immediately."
+          "title": "Stiahnuť PDF v odtieňoch sivej",
+          "description": "Okamžite uložte čiernobiele PDF."
         }
-      ]
+      ],
+      "badgeText": "Rýchly sprievodca"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Grayscale PDF for Bratislava Printers",
-      "content": "Businesses in Bratislava convert color PDFs to grayscale for cost-effective printing without cloud uploads."
+      "type": "grayscale_geo_targeting",
+      "title": "100% bezpečné miestne spracovanie",
+      "content": "Všetky operácie sa vykonávajú priamo na vašom lokálnom zariadení. Používame pokročilú technológiu WebAssembly na spracovanie vašich dokumentov bez ich nahrávania na externé servery, čím zaisťujeme úplné súkromie.",
+      "badgeText": "Miestne spracovanie"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Design Files Stay Confidential",
-      "content": "Internal design documents and branded materials converted to grayscale without cloud exposure."
+      "type": "grayscale_privacy_security",
+      "title": "Súbory dizajnu zostanú dôverné",
+      "content": "Interné dizajnové dokumenty a značkové materiály prevedené do odtieňov sivej bez vystavenia mraku.",
+      "badgeText": "Bezpečnosť na prvom mieste"
     },
     {
-      "type": "transform_performance",
-      "title": "Convert Color Instantly",
-      "content": "A 200-page color PDF converted to grayscale in under 2 seconds. Zero upload."
+      "type": "grayscale_performance",
+      "title": "Okamžite previesť farbu",
+      "content": "200-stranové farebné PDF prevedené do odtieňov sivej za menej ako 2 sekundy. Nulové nahrávanie.",
+      "badgeText": "Rýchlosť blesku"
     }
   ],
   "faqs": [
     {
-      "q": "Does grayscale reduce file size?",
-      "a": "Often yes, especially for image-heavy PDFs."
+      "q": "Zmenšujú odtiene sivej veľkosť súboru?",
+      "a": "Často áno, najmä pri PDF s množstvom obrázkov."
     },
     {
-      "q": "Are all pages converted?",
-      "a": "Yes by default; you can also select specific pages."
+      "q": "Sú všetky stránky skonvertované?",
+      "a": "Štandardne áno; môžete tiež vybrať konkrétne stránky."
     },
     {
-      "q": "Is the conversion reversible?",
-      "a": "The color information is removed; keep the original for reversal."
+      "q": "Je konverzia reverzibilná?",
+      "a": "Informácie o farbe sú odstránené; originál si ponechajte na prevrátenie."
     },
     {
-      "q": "Does it affect text quality?",
-      "a": "No, text remains crisp and black."
+      "q": "Má to vplyv na kvalitu textu?",
+      "a": "Nie, text zostáva ostrý a čierny."
     },
     {
-      "q": "Is this free?",
+      "q": "Je to zadarmo?",
       "a": "Áno, úplne zadarmo."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
 }

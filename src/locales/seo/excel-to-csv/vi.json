@@ -1,67 +1,85 @@
 {
-  "title": "Excel to CSV Converter — Export Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to CSV Locally",
-  "description": "Export .xlsx files to clean .csv format entirely in your browser. No upload. Ideal for developers in Hanoi.",
+  "title": "Trình chuyển đổi Excel sang CSV — Xuất bảng tính ngoại tuyến",
+  "h1": "Chuyển đổi bảng tính Excel sang CSV cục bộ",
+  "description": "Xuất tệp .xlsx sang định dạng .csv hoàn toàn sạch trong trình duyệt của bạn. Không tải lên. Xử lý cục bộ an toàn 100%.",
+  "buttonText": "Convert to CSV",
+  "badges": [
+    "Dữ liệu thô",
+    "Nhập cơ sở dữ liệu",
+    "Xuất nhanh"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Export to CSV Offline?",
-      "content": "Exporting spreadsheets to CSV for data pipelines should not expose your raw data to any external API."
+      "type": "excel_csv_hero_features",
+      "title": "Tại sao xuất sang CSV ngoại tuyến?",
+      "content": "Xuất bảng tính sang CSV cho đường dẫn dữ liệu sẽ không hiển thị dữ liệu thô của bạn với bất kỳ API bên ngoài nào."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Excel to CSV",
+      "type": "excel_csv_how_to_steps",
+      "title": "Cách chuyển Excel sang CSV",
       "steps": [
         {
-          "title": "Open Excel File",
-          "description": "Select the .xlsx spreadsheet."
+          "title": "Mở tệp Excel",
+          "description": "Chọn bảng tính .xlsx."
         },
         {
-          "title": "Choose Sheet",
-          "description": "Pick which sheet to export as CSV."
+          "title": "Chọn Trang tính",
+          "description": "Chọn trang tính để xuất dưới dạng CSV."
         },
         {
-          "title": "Download CSV",
-          "description": "Get your clean CSV file instantly."
+          "title": "Tải xuống CSV",
+          "description": "Nhận tệp CSV sạch của bạn ngay lập tức."
         }
-      ]
+      ],
+      "badgeText": "Hướng dẫn nhanh"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Developer Tools for Hanoi",
-      "content": "Developers and data engineers in Hanoi export spreadsheets to CSV for pipelines without cloud intermediaries."
+      "type": "excel_csv_geo_targeting",
+      "title": "Xử lý cục bộ an toàn 100%",
+      "content": "Tất cả các hoạt động được thực hiện trực tiếp trên thiết bị cục bộ của bạn. Chúng tôi sử dụng công nghệ WebAssembly tiên tiến để xử lý tài liệu của bạn mà không cần tải chúng lên máy chủ bên ngoài, đảm bảo quyền riêng tư hoàn toàn.",
+      "badgeText": "Xử lý cục bộ"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Spreadsheet Data Stays Local",
-      "content": "Financial models and business data exported to CSV without any server-side processing."
+      "type": "excel_csv_privacy_security",
+      "title": "Dữ liệu bảng tính vẫn cục bộ",
+      "content": "Mô hình tài chính và dữ liệu kinh doanh được xuất sang CSV mà không cần xử lý phía máy chủ.",
+      "badgeText": "Bảo mật là trên hết"
     },
     {
-      "type": "organizer_performance",
-      "title": "Export Any Spreadsheet Instantly",
-      "content": "Export a 50,000-row Excel file to CSV in under 1 second. All in-browser."
+      "type": "excel_csv_performance",
+      "title": "Xuất bất kỳ bảng tính nào ngay lập tức",
+      "content": "Xuất tệp Excel 50.000 hàng sang CSV trong vòng chưa đầy 1 giây. Tất cả trong trình duyệt.",
+      "badgeText": "Nhanh như chớp"
     }
   ],
   "faqs": [
     {
-      "q": "Can I export multiple sheets?",
-      "a": "Yes, export each sheet as a separate CSV file."
+      "q": "Tôi có thể xuất nhiều tờ không?",
+      "a": "Có, xuất từng trang tính dưới dạng tệp CSV riêng biệt."
     },
     {
-      "q": "Is Excel formatting preserved in CSV?",
-      "a": "CSV is plain text; formatting is removed but all values are preserved."
+      "q": "Định dạng Excel có được giữ nguyên trong CSV không?",
+      "a": "CSV là văn bản thuần túy; định dạng bị xóa nhưng tất cả các giá trị được giữ nguyên."
     },
     {
-      "q": "Can I choose the delimiter?",
-      "a": "Yes, choose comma, semicolon, or tab."
+      "q": "Tôi có thể chọn dấu phân cách không?",
+      "a": "Có, hãy chọn dấu phẩy, dấu chấm phẩy hoặc tab."
     },
     {
-      "q": "Are formulas exported as values?",
-      "a": "Yes, formula results (not formulas) are written to the CSV."
+      "q": "Công thức có được xuất dưới dạng giá trị không?",
+      "a": "Có, kết quả công thức (không phải công thức) được ghi vào CSV."
     },
     {
-      "q": "Is this free?",
+      "q": "Cái này có miễn phí không?",
       "a": "Có, hoàn toàn miễn phí."
     }
-  ]
+  ],
+  "faqTitle": "Câu hỏi thường gặp",
+  "supportCenter": "Trung tâm hỗ trợ"
 }

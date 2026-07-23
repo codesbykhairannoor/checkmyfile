@@ -1,67 +1,85 @@
 {
-  "title": "Resize PDF Pages — Change Paper Size Offline",
-  "h1": "Resize PDF Pages to A4, Letter, or Custom Sizes",
-  "description": "Change the paper size of every PDF page to A4, US Letter, or custom dimensions entirely in your browser. No upload. Ideal for users in Riyadh.",
+  "title": "تغيير حجم صفحات PDF — تغيير حجم الورق دون اتصال",
+  "h1": "تغيير حجم صفحات PDF إلى أحجام A4 أو Letter أو مخصصة",
+  "description": "قم بتغيير حجم الورق لكل صفحة PDF إلى A4 أو US Letter أو الأبعاد المخصصة بالكامل في متصفحك. لا يوجد تحميل. معالجة محلية آمنة بنسبة 100%.",
+  "buttonText": "Resize Pages",
+  "badges": [
+    "A4، Letter، مخصص",
+    "إضافة هوامش",
+    "إصلاح التنسيق"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Resize PDFs Locally?",
-      "content": "Preparing documents for printing requires proper page sizing. Resize locally without uploading internal documents to the cloud."
+      "type": "resize_hero_features",
+      "title": "لماذا تغيير حجم ملفات PDF محليا؟",
+      "content": "يتطلب إعداد المستندات للطباعة حجمًا مناسبًا للصفحة. قم بتغيير الحجم محليًا دون تحميل المستندات الداخلية إلى السحابة."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Resize PDF Pages",
+      "type": "resize_how_to_steps",
+      "title": "كيفية تغيير حجم صفحات PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page dimensions."
+          "title": "افتح ملف PDF",
+          "description": "قم بتحميل ملف PDF بأبعاد صفحة غير صحيحة."
         },
         {
-          "title": "Select Target Size",
-          "description": "Choose A4, Letter, A3, or enter custom dimensions."
+          "title": "حدد حجم الهدف",
+          "description": "اختر A4، أو Letter، أو A3، أو أدخل الأبعاد المخصصة."
         },
         {
-          "title": "Download Resized PDF",
-          "description": "Get your properly sized document instantly."
+          "title": "تنزيل ملف PDF تم تغيير حجمه",
+          "description": "احصل على مستندك بالحجم المناسب على الفور."
         }
-      ]
+      ],
+      "badgeText": "الدليل السريع"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Resizing for Riyadh Print Shops",
-      "content": "Print shops and offices in Riyadh resize documents to standard sizes without cloud dependency."
+      "type": "resize_geo_targeting",
+      "title": "معالجة محلية آمنة بنسبة 100%",
+      "content": "يتم تنفيذ جميع العمليات مباشرة على جهازك المحلي. نحن نستخدم تقنية WebAssembly المتقدمة لمعالجة مستنداتك دون تحميلها على خوادم خارجية، مما يضمن الخصوصية الكاملة.",
+      "badgeText": "المعالجة المحلية"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Internal Documents Stay Internal",
-      "content": "Resize business reports and proposals without any server-side processing."
+      "type": "resize_privacy_security",
+      "title": "المستندات الداخلية تبقى داخلية",
+      "content": "قم بتغيير حجم تقارير الأعمال والمقترحات دون أي معالجة من جانب الخادم.",
+      "badgeText": "الأمن أولا"
     },
     {
-      "type": "transform_performance",
-      "title": "Resize Hundreds of Pages Instantly",
-      "content": "Resizing a 500-page PDF takes under 2 seconds. All in your browser."
+      "type": "resize_performance",
+      "title": "تغيير حجم مئات الصفحات على الفور",
+      "content": "يستغرق تغيير حجم ملف PDF مكون من 500 صفحة أقل من ثانيتين. كل ذلك في متصفحك.",
+      "badgeText": "بسرعة البرق"
     }
   ],
   "faqs": [
     {
-      "q": "What sizes are available?",
-      "a": "A4, A3, A5, US Letter, Legal, and custom dimensions."
+      "q": "ما هي الأحجام المتوفرة؟",
+      "a": "أبعاد A4 وA3 وA5 وUS Letter والأبعاد القانونية والمخصصة."
     },
     {
-      "q": "Does content scale with the page?",
-      "a": "Yes, content is scaled proportionally by default."
+      "q": "هل يتسع المحتوى مع الصفحة؟",
+      "a": "نعم، يتم تغيير حجم المحتوى بشكل متناسب افتراضيًا."
     },
     {
-      "q": "Can I resize individual pages?",
-      "a": "Yes, apply different sizes to specific pages."
+      "q": "هل يمكنني تغيير حجم الصفحات الفردية؟",
+      "a": "نعم، قم بتطبيق أحجام مختلفة على صفحات محددة."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "Vector content is re-rendered perfectly; images may scale."
+      "q": "هل تتأثر الجودة؟",
+      "a": "تتم إعادة عرض محتوى المتجهات بشكل مثالي؛ قد يتم قياس الصور."
     },
     {
-      "q": "Is this free?",
-      "a": "نعم، مجاناً تماماً."
+      "q": "هل هذا مجاني؟",
+      "a": "نعم، مجاني تماما."
     }
-  ]
+  ],
+  "faqTitle": "الأسئلة المتداولة",
+  "supportCenter": "مركز الدعم"
 }

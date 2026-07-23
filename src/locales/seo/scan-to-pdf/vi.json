@@ -1,67 +1,85 @@
 {
-  "title": "Scan to PDF — Convert Camera Shots Offline",
-  "h1": "Convert Photos and Scans to PDF Locally",
-  "description": "Turn photos of documents taken with your camera into clean PDFs entirely in your browser. No upload. Best for users in Hanoi.",
+  "title": "Quét sang PDF — Chuyển đổi ảnh chụp từ máy ảnh ngoại tuyến",
+  "h1": "Chuyển đổi ảnh và bản quét thành PDF cục bộ",
+  "description": "Biến ảnh tài liệu được chụp bằng máy ảnh của bạn thành các tệp PDF sạch hoàn toàn trong trình duyệt của bạn. Không tải lên. Xử lý cục bộ an toàn 100%.",
+  "buttonText": "Scan to PDF",
+  "badges": [
+    "Sử dụng Webcam",
+    "Máy quét di động",
+    "Tự động cắt"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Use Scan-to-PDF Offline?",
-      "content": "Photos of documents contain sensitive information. Process them locally without any cloud access."
+      "type": "scan_hero_features",
+      "title": "Tại sao nên sử dụng tính năng Quét sang PDF ngoại tuyến?",
+      "content": "Hình ảnh tài liệu chứa thông tin nhạy cảm. Xử lý chúng cục bộ mà không cần truy cập vào đám mây."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Scans to PDF",
+      "type": "scan_how_to_steps",
+      "title": "Cách chuyển đổi bản quét sang PDF",
       "steps": [
         {
-          "title": "Import Photos",
-          "description": "Select photos taken with your phone or camera."
+          "title": "Nhập ảnh",
+          "description": "Chọn ảnh chụp bằng điện thoại hoặc máy ảnh của bạn."
         },
         {
-          "title": "Enhance Scan",
-          "description": "Auto-crop, deskew, and enhance contrast."
+          "title": "Tăng cường quét",
+          "description": "Tự động cắt, chỉnh độ sáng và tăng cường độ tương phản."
         },
         {
-          "title": "Export PDF",
-          "description": "Download a clean, professional-looking scanned PDF."
+          "title": "Xuất PDF",
+          "description": "Tải xuống bản PDF được quét rõ ràng, chuyên nghiệp."
         }
-      ]
+      ],
+      "badgeText": "Hướng dẫn nhanh"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Scan to PDF for Hanoi Field Workers",
-      "content": "Field workers and freelancers in Hanoi digitize paper documents on-the-go without uploading to cloud services."
+      "type": "scan_geo_targeting",
+      "title": "Xử lý cục bộ an toàn 100%",
+      "content": "Tất cả các hoạt động được thực hiện trực tiếp trên thiết bị cục bộ của bạn. Chúng tôi sử dụng công nghệ WebAssembly tiên tiến để xử lý tài liệu của bạn mà không cần tải chúng lên máy chủ bên ngoài, đảm bảo quyền riêng tư hoàn toàn.",
+      "badgeText": "Xử lý cục bộ"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Documents Stay on Device",
-      "content": "Invoices, contracts, and ID scans processed entirely in browser memory without any server access."
+      "type": "scan_privacy_security",
+      "title": "Tài liệu được quét vẫn còn trên thiết bị",
+      "content": "Hóa đơn, hợp đồng và quét ID được xử lý hoàn toàn trong bộ nhớ trình duyệt mà không cần bất kỳ quyền truy cập máy chủ nào.",
+      "badgeText": "Bảo mật là trên hết"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Scans in Real Time",
-      "content": "Photo enhancement and PDF generation happens in milliseconds, even for high-resolution camera shots."
+      "type": "scan_performance",
+      "title": "Chuyển đổi bản quét trong thời gian thực",
+      "content": "Cải thiện ảnh và tạo PDF diễn ra trong một phần nghìn giây, ngay cả đối với ảnh chụp bằng máy ảnh có độ phân giải cao.",
+      "badgeText": "Nhanh như chớp"
     }
   ],
   "faqs": [
     {
-      "q": "What photo formats are supported?",
-      "a": "JPG, PNG, WebP, and HEIC from modern cameras."
+      "q": "Những định dạng ảnh nào được hỗ trợ?",
+      "a": "JPG, PNG, WebP và HEIC từ máy ảnh hiện đại."
     },
     {
-      "q": "Does it fix tilted scans?",
-      "a": "Yes, auto-deskew corrects slight angles automatically."
+      "q": "Nó có sửa được bản quét nghiêng không?",
+      "a": "Có, tính năng tự động chỉnh góc tự động."
     },
     {
-      "q": "Can I combine multiple scans?",
-      "a": "Yes, add multiple photos to create a multi-page PDF."
+      "q": "Tôi có thể kết hợp nhiều lần quét không?",
+      "a": "Có, thêm nhiều ảnh để tạo một bản PDF nhiều trang."
     },
     {
-      "q": "Does it enhance contrast?",
-      "a": "Yes, document enhancement mode sharpens text for clarity."
+      "q": "Nó có tăng cường độ tương phản không?",
+      "a": "Có, chế độ nâng cao tài liệu sẽ làm sắc nét văn bản cho rõ ràng."
     },
     {
-      "q": "Is this free?",
-      "a": "Có, hoàn toàn miễn phí."
+      "q": "Cái này có miễn phí không?",
+      "a": "Có, luôn miễn phí."
     }
-  ]
+  ],
+  "faqTitle": "Câu hỏi thường gặp",
+  "supportCenter": "Trung tâm hỗ trợ"
 }

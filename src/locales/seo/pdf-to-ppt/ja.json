@@ -1,67 +1,80 @@
 {
-  "title": "PDF to PowerPoint — Recover Editable Slides",
-  "h1": "Convert PDF to PowerPoint Presentation Offline",
-  "description": "Transform PDF documents back into editable .pptx presentations locally. No cloud needed. Perfect for users in Tokyo.",
+  "title": "PDF から PowerPoint へ — 編集可能なスライドを復元",
+  "h1": "PDF を PowerPoint プレゼンテーションにオフラインで変換",
+  "description": "PDF ドキュメントをローカルで編集可能な .pptx プレゼンテーションに変換します。 クラウドは必要ありません。 東京のユーザーに最適です。",
+  "buttonText": "PPTに変換",
+  "badges": [
+    "編集可能なスライド",
+    "プレゼンテーションの回復",
+    "高速変換"
+  ],
+  "stats": [
+    "100%",
+    "地元",
+    "0秒",
+    "待ち時間"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF to PowerPoint Offline?",
-      "content": "Recovering slide content from a PDF for editing should not require uploading sensitive decks to a cloud service."
+      "title": "オフラインで使う理由",
+      "content": "編集のために PDF からスライド コンテンツを復元する場合、機密性の高いデッキをクラウド サービスにアップロードする必要はありません。"
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to PowerPoint",
+      "title": "使い方",
       "steps": [
         {
-          "title": "Upload PDF",
-          "description": "Select the PDF containing your slide content."
+          "title": "PDFをアップロードする",
+          "description": "スライドのコンテンツを含む PDF を選択します。"
         },
         {
-          "title": "Map Pages to Slides",
-          "description": "Each PDF page becomes one editable slide."
+          "title": "ページをスライドにマップする",
+          "description": "各 PDF ページは 1 つの編集可能なスライドになります。"
         },
         {
-          "title": "Download .pptx",
-          "description": "Get your fully editable PowerPoint presentation."
+          "title": ".pptxをダウンロード",
+          "description": "完全に編集可能な PowerPoint プレゼンテーションを入手してください。"
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "Slide Recovery in Tokyo",
-      "content": "Presenters in Tokyo use our tool to recover and re-edit presentations from old PDF archives."
+      "title": "東京でのスライドリカバリー",
+      "content": "東京のプレゼンターは、当社のツールを使用して古い PDF アーカイブからプレゼンテーションを復元し、再編集します。"
     },
     {
       "type": "split_privacy_security",
-      "title": "Your Slides Are Never Exposed",
-      "content": "Confidential slide decks recovered and converted without any server interaction."
+      "title": "スライドが公開されることはありません",
+      "content": "機密のスライドデッキは、サーバーとの対話なしで復元および変換されました。"
     },
     {
       "type": "split_performance",
-      "title": "Convert Slides at Lightning Speed",
-      "content": "A 60-slide PDF converted to PowerPoint in under 10 seconds with zero upload time."
+      "title": "スライドを超高速で変換",
+      "content": "60 枚のスライドから成る PDF が、アップロード時間なしで 10 秒以内に PowerPoint に変換されました。"
     }
   ],
   "faqs": [
     {
-      "q": "Are slide layouts preserved?",
-      "a": "Content is mapped to slides; some layout adjustments may be needed."
+      "q": "スライドのレイアウトは保持されますか?",
+      "a": "コンテンツはスライドにマッピングされます。 レイアウトの調整が必要になる場合があります。"
     },
     {
-      "q": "Can I edit the slides after?",
-      "a": "Yes, the .pptx file is fully editable in PowerPoint or Google Slides."
+      "q": "後でスライドを編集できますか?",
+      "a": "はい、.pptx ファイルは PowerPoint または Google スライドで完全に編集できます。"
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No, convert as many pages as your RAM allows."
+      "q": "ページ制限はありますか?",
+      "a": "いいえ、RAM が許す限り多くのページを変換してください。"
     },
     {
-      "q": "Does it work with image-heavy PDFs?",
-      "a": "Yes, images are embedded in each slide."
+      "q": "画像の多い PDF でも機能しますか?",
+      "a": "はい、画像は各スライドに埋め込まれています。"
     },
     {
-      "q": "Is this free?",
+      "q": "これは無料ですか？",
       "a": "はい、完全無料です。"
     }
-  ]
+  ],
+  "faqTitle": "よくある質問"
 }

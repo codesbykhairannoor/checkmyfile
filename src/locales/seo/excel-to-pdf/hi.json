@@ -1,67 +1,85 @@
 {
-  "title": "Excel to PDF — Convert Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to PDF Securely",
-  "description": "Turn .xlsx and .csv files into crisp PDFs locally in your browser. Financial data stays on your device. Perfect for users in New Delhi.",
+  "title": "एक्सेल से पीडीएफ - स्प्रैडशीट्स को ऑफ़लाइन रूपांतरित करें",
+  "h1": "एक्सेल स्प्रेडशीट को सुरक्षित रूप से पीडीएफ में बदलें",
+  "description": "अपने ब्राउज़र में .xlsx और .csv फ़ाइलों को स्थानीय रूप से स्पष्ट PDF में बदलें। वित्तीय डेटा आपके डिवाइस पर रहता है. 100% सुरक्षित स्थानीय प्रसंस्करण।",
+  "buttonText": "Convert Spreadsheet",
+  "badges": [
+    "वित्तीय रिपोर्ट",
+    "चालान",
+    "डेटा निर्यात"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Excel Offline?",
-      "content": "Spreadsheets often contain sensitive financial data. Our browser-based engine converts without any server involvement."
+      "type": "excel_hero_features",
+      "title": "एक्सेल को ऑफ़लाइन क्यों बदलें?",
+      "content": "स्प्रेडशीट में अक्सर संवेदनशील वित्तीय डेटा होता है। हमारा ब्राउज़र-आधारित इंजन बिना किसी सर्वर भागीदारी के रूपांतरित होता है।"
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Export Excel as PDF",
+      "type": "excel_how_to_steps",
+      "title": "एक्सेल को पीडीएफ के रूप में कैसे निर्यात करें",
       "steps": [
         {
-          "title": "Open Spreadsheet",
-          "description": "Select your .xlsx or .csv file."
+          "title": "स्प्रेडशीट खोलें",
+          "description": "अपनी .xlsx या .csv फ़ाइल चुनें."
         },
         {
-          "title": "Choose Sheet Range",
-          "description": "Pick which sheets or rows to include."
+          "title": "शीट रेंज चुनें",
+          "description": "चुनें कि कौन सी शीट या पंक्तियाँ शामिल करनी हैं।"
         },
         {
-          "title": "Export as PDF",
-          "description": "Download your spreadsheet as a clean PDF."
+          "title": "पीडीएफ के रूप में निर्यात करें",
+          "description": "अपनी स्प्रेडशीट को एक साफ़ पीडीएफ के रूप में डाउनलोड करें।"
         }
-      ]
+      ],
+      "badgeText": "त्वरित मार्गदर्शिका"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Excel to PDF for New Delhi Businesses",
-      "content": "Businesses in New Delhi use our tool to share financial reports without exposing raw spreadsheet data."
+      "type": "excel_geo_targeting",
+      "title": "100% सुरक्षित स्थानीय प्रसंस्करण",
+      "content": "सभी ऑपरेशन सीधे आपके स्थानीय डिवाइस पर किए जाते हैं। हम पूर्ण गोपनीयता सुनिश्चित करते हुए, आपके दस्तावेज़ों को बाहरी सर्वर पर अपलोड किए बिना संसाधित करने के लिए उन्नत WebAssembly तकनीक का उपयोग करते हैं।",
+      "badgeText": "स्थानीय प्रसंस्करण"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Protect Financial Spreadsheets",
-      "content": "Balance sheets, payroll data — all processed offline. Zero data sent to any third party."
+      "type": "excel_privacy_security",
+      "title": "वित्तीय स्प्रेडशीट को सुरक्षित रखें",
+      "content": "बैलेंस शीट, पेरोल डेटा - सभी ऑफ़लाइन संसाधित। किसी तीसरे पक्ष को शून्य डेटा भेजा गया।",
+      "badgeText": "सुरक्षा पहले"
     },
     {
-      "type": "combiner_performance",
-      "title": "Spreadsheet-to-PDF in Seconds",
-      "content": "No upload queue, no compression artifacts. Your spreadsheet renders natively in-browser."
+      "type": "excel_performance",
+      "title": "स्प्रेडशीट-टू-पीडीएफ सेकंड में",
+      "content": "कोई अपलोड कतार नहीं, कोई संपीड़न कलाकृतियाँ नहीं। आपकी स्प्रैडशीट ब्राउज़र में मूल रूप से प्रस्तुत होती है।",
+      "badgeText": "बिजली की तेजी"
     }
   ],
   "faqs": [
     {
-      "q": "Are all Excel formulas preserved?",
-      "a": "Yes, formula results are captured in the PDF snapshot."
+      "q": "क्या सभी एक्सेल सूत्र संरक्षित हैं?",
+      "a": "हाँ, सूत्र परिणाम पीडीएफ स्नैपशॉट में कैप्चर किए जाते हैं।"
     },
     {
-      "q": "Can I convert multiple sheets?",
-      "a": "Yes, you can include all sheets or specific ones."
+      "q": "क्या मैं एकाधिक शीट परिवर्तित कर सकता हूँ?",
+      "a": "हाँ, आप सभी शीट या विशिष्ट शीट शामिल कर सकते हैं।"
     },
     {
-      "q": "What file types are supported?",
-      "a": ".xlsx, .xls, and .csv are all supported."
+      "q": "कौन से फ़ाइल प्रकार समर्थित हैं?",
+      "a": ".xlsx, .xls, और .csv सभी समर्थित हैं।"
     },
     {
-      "q": "Is this secure for financial data?",
-      "a": "Absolutely. The file never leaves your browser."
+      "q": "क्या यह वित्तीय डेटा के लिए सुरक्षित है?",
+      "a": "बिल्कुल। फ़ाइल आपके ब्राउज़र को कभी नहीं छोड़ती."
     },
     {
-      "q": "Does it support graphs?",
-      "a": "हाँ, पूरी तरह मुफ्त।"
+      "q": "क्या यह ग्राफ़ का समर्थन करता है?",
+      "a": "चार्ट और एम्बेडेड ग्राफ़ पीडीएफ में प्रस्तुत किए गए हैं।"
     }
-  ]
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न",
+  "supportCenter": "सहायता केंद्र"
 }

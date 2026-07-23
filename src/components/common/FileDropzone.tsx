@@ -61,9 +61,15 @@ export const FileDropzone: React.FC<FileDropzoneProps> = ({
         onDragOver={handleDragOver}
         onDragLeave={handleDragLeave}
         onDrop={handleDrop}
-        className={`dropzone ${isDragging ? 'active' : ''}`}
-        style={{ display: 'block' }}
+        className={`dropzone-container ${isDragging ? 'dropzone-active' : ''}`}
+        style={{ 
+          display: 'block', 
+          cursor: 'pointer',
+          padding: '48px 32px',
+          textAlign: 'center'
+        }}
       >
+        <div className="dropzone-glow"></div>
         <input
           type="file"
           accept={accept}
@@ -71,13 +77,26 @@ export const FileDropzone: React.FC<FileDropzoneProps> = ({
           onChange={handleFileInput}
           style={{ display: 'none' }}
         />
-        <UploadCloud size={56} className="text-indigo-400 animate-float" style={{ margin: '0 auto 16px' }} />
-        <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: 8 }}>{t.dropzoneTitle}</h3>
-        <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: 24 }}>{t.dropzoneSubtitle}</p>
-        
-        <span className="btn-primary" style={{ pointerEvents: 'none' }}>
-          {t.selectFilesBtn}
-        </span>
+        <div style={{ position: 'relative', zIndex: 10 }}>
+          <UploadCloud 
+            size={56} 
+            className="animate-float-fast" 
+            style={{ margin: '0 auto 20px', color: 'var(--brand-primary)' }} 
+          />
+          <h3 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: 8, fontFamily: 'var(--font-display)' }}>
+            {t.dropzoneTitle}
+          </h3>
+          <p style={{ color: 'var(--text-muted)', fontSize: '1rem', marginBottom: 28, fontWeight: 500 }}>
+            {t.dropzoneSubtitle}
+          </p>
+          
+          <div style={{ display: 'inline-block', position: 'relative' }}>
+            <div className="dropzone-glow" style={{ animation: 'pulse-glow 3s infinite', borderRadius: 9999, opacity: 1, zIndex: -1 }}></div>
+            <span className="btn-primary" style={{ padding: '16px 40px', fontSize: '1.1rem', pointerEvents: 'none', position: 'relative', zIndex: 2 }}>
+              {t.selectFilesBtn}
+            </span>
+          </div>
+        </div>
       </label>
 
       {selectedFiles.length > 0 && (

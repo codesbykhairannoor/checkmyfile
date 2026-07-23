@@ -1,0 +1,85 @@
+{
+  "title": "Chỉnh sửa PDF - Trình chỉnh sửa PDF ngoại tuyến miễn phí",
+  "h1": "Chỉnh sửa tài liệu PDF trực tiếp trong trình duyệt của bạn",
+  "description": "Thêm văn bản, chữ ký và chú thích vào tệp PDF của bạn cục bộ. Không tải lên, bảo mật tối đa. Xử lý cục bộ an toàn 100%.",
+  "sections": [
+    {
+      "type": "edit_hero_features",
+      "title": "Tại sao chỉnh sửa tệp PDF cục bộ?",
+      "content": "Tải các hợp đồng và biểu mẫu nhạy cảm lên trình chỉnh sửa đám mây là một rủi ro lớn về quyền riêng tư. Trình chỉnh sửa WebAssembly của chúng tôi chạy trực tiếp trên thiết bị của bạn, đảm bảo tài liệu của bạn không bao giờ rời khỏi máy tính."
+    },
+    {
+      "type": "edit_how_to_steps",
+      "title": "Cách chỉnh sửa PDF",
+      "steps": [
+        {
+          "title": "Mở tài liệu",
+          "description": "Chọn tệp PDF bạn muốn chú thích hoặc ký tên."
+        },
+        {
+          "title": "Thêm văn bản và thành phần",
+          "description": "Sử dụng các công cụ trực quan của chúng tôi để thêm văn bản, vẽ hoặc đặt hình ảnh."
+        },
+        {
+          "title": "Lưu thay đổi",
+          "description": "Xuất bản PDF đã sửa đổi ngay lập tức mà không cần chờ tải xuống."
+        }
+      ],
+      "badgeText": "Hướng dẫn nhanh"
+    },
+    {
+      "type": "edit_geo_targeting",
+      "title": "Xử lý cục bộ an toàn 100%",
+      "content": "Tất cả các hoạt động được thực hiện trực tiếp trên thiết bị cục bộ của bạn. Chúng tôi sử dụng công nghệ WebAssembly tiên tiến để xử lý tài liệu của bạn mà không cần tải chúng lên máy chủ bên ngoài, đảm bảo quyền riêng tư hoàn toàn.",
+      "badgeText": "Xử lý cục bộ"
+    },
+    {
+      "type": "edit_privacy_security",
+      "title": "Truyền dữ liệu bằng không",
+      "content": "Không giống như các trình chỉnh sửa PDF truyền thống tải tệp của bạn lên máy chủ của họ, nền tảng của chúng tôi xử lý mọi thứ trong bộ nhớ trình duyệt của bạn.",
+      "badgeText": "Bảo mật là trên hết"
+    },
+    {
+      "type": "edit_performance",
+      "title": "Hiển thị ngoại tuyến tức thì",
+      "content": "Trình chỉnh sửa của chúng tôi tải các tệp PDF lớn trong một phần nghìn giây. Bạn có thể thêm hàng trăm chú thích mà không gặp bất kỳ hiện tượng lag hay trễ mạng nào.",
+      "badgeText": "Nhanh như chớp"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Tôi có thể chỉnh sửa văn bản hiện có trong PDF không?",
+      "a": "Hiện tại, bạn có thể thêm văn bản, hình dạng và hình ảnh mới vào tài liệu hiện có."
+    },
+    {
+      "q": "Các tập tin của tôi có được tải lên ở bất cứ đâu không?",
+      "a": "Không, tất cả chỉnh sửa diễn ra cục bộ trong trình duyệt của bạn bằng WebAssugging."
+    },
+    {
+      "q": "Tôi có thể ký các tài liệu không?",
+      "a": "Có, bạn có thể vẽ chữ ký của mình hoặc tải hình ảnh của nó lên."
+    },
+    {
+      "q": "Trình chỉnh sửa có được sử dụng miễn phí không?",
+      "a": "Có, nó miễn phí 100%, không có tường phí cao cấp hoặc phí ẩn."
+    },
+    {
+      "q": "Nó có hoạt động trên thiết bị di động không?",
+      "a": "Có, trình chỉnh sửa hoàn toàn đáp ứng và hỗ trợ đầu vào cảm ứng để vẽ."
+    }
+  ],
+  "badges": [
+    "Không có hình mờ",
+    "Miễn phí 100%",
+    "Trình chỉnh sửa ngoại tuyến"
+  ],
+  "stats": [
+    "100% Private",
+    "0 Server Uploads",
+    "Client-Side Only",
+    "No Accounts"
+  ],
+  "buttonText": "Start Editing",
+  "faqTitle": "Câu hỏi thường gặp",
+  "supportCenter": "Trung tâm hỗ trợ"
+}

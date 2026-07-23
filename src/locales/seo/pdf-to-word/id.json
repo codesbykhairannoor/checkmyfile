@@ -1,67 +1,80 @@
 {
-  "title": "PDF to Word Converter — Offline & Editable",
-  "h1": "Convert PDF to Editable Word Documents Locally",
-  "description": "Transform PDFs back into .docx files you can edit, right in your browser. No upload needed. Great for users in Jakarta.",
+  "title": "Konverter PDF ke Word — Offline & Dapat Diedit",
+  "h1": "Konversi PDF ke Dokumen Word yang Dapat Diedit Secara Lokal",
+  "description": "Ubah PDF kembali menjadi file .docx yang dapat Anda edit, langsung di browser Anda. Tidak perlu mengunggah. Cocok untuk pengguna di Jakarta.",
+  "buttonText": "Konversikan ke Kata",
+  "badges": [
+    "Dokumen yang Dapat Diedit",
+    "Pemulihan Teks",
+    "Proses Offline"
+  ],
+  "stats": [
+    "100%",
+    "Lokal",
+    "0 detik",
+    "Waktu Tunggu"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF Back Offline?",
-      "content": "When you need to edit a PDF, converting it offline keeps your original document confidential."
+      "title": "Mengapa Menggunakan Offline?",
+      "content": "Saat Anda perlu mengedit PDF, mengonversinya secara offline akan menjaga kerahasiaan dokumen asli Anda."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Word",
+      "title": "Cara Menggunakan",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF file you need to convert."
+          "title": "Muat PDF",
+          "description": "Pilih file PDF yang perlu Anda konversi."
         },
         {
-          "title": "Detect Text Layers",
-          "description": "Our engine reads text and structure from the PDF."
+          "title": "Deteksi Lapisan Teks",
+          "description": "Mesin kami membaca teks dan struktur dari PDF."
         },
         {
-          "title": "Download .docx",
-          "description": "Get your editable Word document ready to modify."
+          "title": "Unduh .docx",
+          "description": "Siapkan dokumen Word Anda yang dapat diedit untuk dimodifikasi."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "PDF to Word for Jakarta Offices",
-      "content": "Office workers in Jakarta use our tool to recover editable text from PDFs without cloud dependency."
+      "title": "PDF ke Word untuk Kantor Jakarta",
+      "content": "Pekerja kantor di Jakarta menggunakan alat kami untuk memulihkan teks yang dapat diedit dari PDF tanpa ketergantungan cloud."
     },
     {
       "type": "split_privacy_security",
-      "title": "Legal Documents Stay Confidential",
-      "content": "Contracts, NDAs, and reports converted back to Word entirely in your browser memory."
+      "title": "Dokumen Hukum Tetap Rahasia",
+      "content": "Kontrak, NDA, dan laporan dikonversi kembali ke Word sepenuhnya di memori browser Anda."
     },
     {
       "type": "split_performance",
-      "title": "Recover Editable Text in Seconds",
-      "content": "Extract text from a 50-page PDF in under 3 seconds without uploading a single byte."
+      "title": "Pulihkan Teks yang Dapat Diedit dalam Hitungan Detik",
+      "content": "Ekstrak teks dari PDF 50 halaman dalam waktu kurang dari 3 detik tanpa mengunggah satu byte pun."
     }
   ],
   "faqs": [
     {
-      "q": "Is all text preserved?",
-      "a": "Yes, text from all layers is extracted and formatted."
+      "q": "Apakah semua teks dipertahankan?",
+      "a": "Ya, teks dari semua lapisan diekstraksi dan diformat."
     },
     {
-      "q": "Does it work on scanned PDFs?",
-      "a": "For scanned PDFs, use our OCR tool first."
+      "q": "Apakah ini berfungsi pada PDF yang dipindai?",
+      "a": "Untuk PDF yang dipindai, gunakan alat OCR kami terlebih dahulu."
     },
     {
-      "q": "Are images included in the .docx?",
-      "a": "Yes, embedded images are included in the output."
+      "q": "Apakah gambar disertakan dalam .docx?",
+      "a": "Ya, gambar yang disematkan disertakan dalam output."
     },
     {
-      "q": "Can I edit the .docx after?",
-      "a": "Absolutely, the output is a fully editable Word document."
+      "q": "Bisakah saya mengedit .docx setelahnya?",
+      "a": "Tentu saja, keluarannya adalah dokumen Word yang dapat diedit sepenuhnya."
     },
     {
-      "q": "Is this free?",
+      "q": "Apakah ini gratis?",
       "a": "Ya, sepenuhnya gratis."
     }
-  ]
+  ],
+  "faqTitle": "Pertanyaan yang Sering Diajukan"
 }

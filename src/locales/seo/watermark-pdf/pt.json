@@ -1,67 +1,85 @@
 {
-  "title": "Add Watermark to PDF — Offline Watermarking",
-  "h1": "Stamp PDFs with Text or Image Watermarks Locally",
-  "description": "Add \"CONFIDENTIAL\", logos, or custom text watermarks to PDFs entirely in your browser. No upload. Best for users in São Paulo.",
+  "title": "Adicionar marca d'água ao PDF — Marca d'água offline",
+  "h1": "Carimbe PDFs com marcas d'água de texto ou imagem localmente",
+  "description": "Adicione \"CONFIDENCIAL\", logotipos ou marcas d'água de texto personalizadas a PDFs inteiramente em seu navegador. Sem upload. Processamento local 100% seguro.",
+  "buttonText": "Add Watermark",
+  "badges": [
+    "Texto personalizado",
+    "Opacidade ajustável",
+    "Proteção da marca"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Watermark PDFs Offline?",
-      "content": "Adding watermarks means your document is sensitive. Never upload draft contracts or confidential reports to a cloud watermarker."
+      "type": "watermark_hero_features",
+      "title": "Por que colocar marca d'água em PDFs off-line?",
+      "content": "Adicionar marcas d’água significa que seu documento é confidencial. Nunca carregue minutas de contratos ou relatórios confidenciais em uma marca d'água na nuvem."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Watermark a PDF",
+      "type": "watermark_how_to_steps",
+      "title": "Como colocar marca d'água em um PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to watermark."
+          "title": "Abrir PDF",
+          "description": "Selecione o PDF para colocar marca d'água."
         },
         {
-          "title": "Design Watermark",
-          "description": "Type text or upload a logo image."
+          "title": "Marca d'água de design",
+          "description": "Digite o texto ou carregue uma imagem de logotipo."
         },
         {
-          "title": "Apply & Download",
-          "description": "Get your watermarked PDF in one click."
+          "title": "Inscreva-se e baixe",
+          "description": "Obtenha seu PDF com marca d'água com um clique."
         }
-      ]
+      ],
+      "badgeText": "Guia rápido"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Document Watermarking in São Paulo",
-      "content": "Legal and creative professionals in São Paulo stamp documents with watermarks without cloud uploads."
+      "type": "watermark_geo_targeting",
+      "title": "Processamento local 100% seguro",
+      "content": "Todas as operações são realizadas diretamente no seu dispositivo local. Utilizamos tecnologia avançada WebAssembly para processar seus documentos sem nunca enviá-los para servidores externos, garantindo total privacidade.",
+      "badgeText": "Processamento Local"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Confidential Drafts Stay Private",
-      "content": "Draft contracts and unreleased designs watermarked locally without any server contact."
+      "type": "watermark_privacy_security",
+      "title": "Rascunhos confidenciais permanecem privados",
+      "content": "Rascunhos de contratos e designs não lançados com marca d'água localmente, sem qualquer contato com o servidor.",
+      "badgeText": "Segurança em primeiro lugar"
     },
     {
-      "type": "transform_performance",
-      "title": "Stamp Thousands of Pages Instantly",
-      "content": "Apply watermarks to a 1000-page document in under 3 seconds. All in your browser."
+      "type": "watermark_performance",
+      "title": "Carimbe milhares de páginas instantaneamente",
+      "content": "Aplique marcas d’água em um documento de 1.000 páginas em menos de 3 segundos. Tudo no seu navegador.",
+      "badgeText": "Rápido como um raio"
     }
   ],
   "faqs": [
     {
-      "q": "Can I use a logo as a watermark?",
-      "a": "Yes, upload a PNG logo and set transparency."
+      "q": "Posso usar um logotipo como marca d'água?",
+      "a": "Sim, carregue um logotipo PNG e defina a transparência."
     },
     {
-      "q": "Can I adjust watermark opacity?",
-      "a": "Yes, from 10% to 100% opacity."
+      "q": "Posso ajustar a opacidade da marca d’água?",
+      "a": "Sim, de 10% a 100% de opacidade."
     },
     {
-      "q": "Can I apply it to specific pages only?",
-      "a": "Yes, choose page ranges."
+      "q": "Posso aplicá-lo apenas a páginas específicas?",
+      "a": "Sim, escolha intervalos de páginas."
     },
     {
-      "q": "Is diagonal placement available?",
-      "a": "Yes, rotate watermarks to any angle."
+      "q": "O posicionamento diagonal está disponível?",
+      "a": "Sim, gire as marcas d’água em qualquer ângulo."
     },
     {
-      "q": "Is this free?",
-      "a": "Sim, completamente gratuito."
+      "q": "Isso é grátis?",
+      "a": "Sim, sempre grátis."
     }
-  ]
+  ],
+  "faqTitle": "Perguntas Frequentes",
+  "supportCenter": "Centro de Apoio"
 }

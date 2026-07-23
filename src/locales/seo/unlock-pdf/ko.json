@@ -1,67 +1,85 @@
 {
-  "title": "Unlock PDF — Remove Password Offline",
-  "h1": "Remove PDF Password Protection Instantly in Your Browser",
-  "description": "Unlock password-protected PDFs locally if you know the password. 100% private. No upload. Perfect for users in Seoul.",
+  "title": "PDF 잠금 해제 — 오프라인에서 비밀번호 제거",
+  "h1": "브라우저에서 PDF 비밀번호 보호를 즉시 제거",
+  "description": "비밀번호를 알고 있는 경우 비밀번호로 보호된 PDF를 로컬에서 잠금 해제하세요. 100% 비공개입니다. 업로드가 없습니다. 100% 안전한 로컬 처리.",
+  "buttonText": "Unlock PDF",
+  "badges": [
+    "비밀번호 제거",
+    "즉시 잠금 해제",
+    "서버 로그 없음"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "unlock_hero_features",
-      "title": "Why Unlock PDFs Locally?",
-      "content": "You have the password to your own file. Unlocking it should not require uploading sensitive documents to an external service."
+      "title": "로컬에서 PDF를 잠금 해제하는 이유는 무엇입니까?",
+      "content": "당신은 자신의 파일에 대한 비밀번호를 가지고 있습니다. 잠금을 해제하려면 민감한 문서를 외부 서비스에 업로드할 필요가 없습니다."
     },
     {
       "type": "unlock_how_to_steps",
-      "title": "How to Unlock a Protected PDF",
+      "title": "보호된 PDF를 잠금 해제하는 방법",
       "steps": [
         {
-          "title": "Open Protected PDF",
-          "description": "Select the password-protected PDF."
+          "title": "보호된 PDF 열기",
+          "description": "비밀번호로 보호된 PDF를 선택하세요."
         },
         {
-          "title": "Enter Your Password",
-          "description": "Provide the existing password — decryption stays in your browser."
+          "title": "비밀번호를 입력하세요",
+          "description": "기존 비밀번호를 제공하세요. 복호화는 브라우저에 남아 있습니다."
         },
         {
-          "title": "Download Unlocked PDF",
-          "description": "Get your unlocked, fully accessible PDF instantly."
+          "title": "잠금 해제된 PDF 다운로드",
+          "description": "잠금 해제되어 완전히 액세스 가능한 PDF를 즉시 얻으세요."
         }
-      ]
+      ],
+      "badgeText": "빠른 가이드"
     },
     {
       "type": "unlock_geo_targeting",
-      "title": "Instant PDF Unlocking for Seoul Users",
-      "content": "Users in Seoul access their own password-protected files without sending decryption keys to any server."
+      "title": "100% 안전한 로컬 처리",
+      "content": "모든 작업은 로컬 장치에서 직접 수행됩니다. 우리는 고급 WebAssembly 기술을 사용하여 문서를 외부 서버에 업로드하지 않고 처리하여 완벽한 개인 정보 보호를 보장합니다.",
+      "badgeText": "로컬 처리"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Your Password Never Leaves the Browser",
-      "content": "The decryption key and your document are processed entirely in browser memory — never transmitted to any server or service."
+      "title": "귀하의 비밀번호는 브라우저를 떠나지 않습니다",
+      "content": "암호 해독 키와 문서는 전적으로 브라우저 메모리에서 처리되며 서버나 서비스로 전송되지 않습니다.",
+      "badgeText": "보안 우선"
     },
     {
       "type": "unlock_performance",
-      "title": "Instant Browser-Local Decryption",
-      "content": "AES decryption in your browser takes under a second — far faster than any cloud service with no upload wait."
+      "title": "인스턴트 브라우저-로컬 복호화",
+      "content": "브라우저의 AES 암호 해독은 1초도 채 걸리지 않습니다. 이는 업로드 대기 없이 어떤 클라우드 서비스보다 훨씬 빠릅니다.",
+      "badgeText": "번개처럼 빠르게"
     }
   ],
   "faqs": [
     {
-      "q": "Does it work without the password?",
-      "a": "No, you must know the existing password to unlock."
+      "q": "비밀번호 없이 작동하나요?",
+      "a": "아니요, 잠금을 해제하려면 기존 비밀번호를 알아야 합니다."
     },
     {
-      "q": "Can I unlock permissions-restricted PDFs?",
-      "a": "Yes, permission restrictions are removed after password verification."
+      "q": "권한이 제한된 PDF를 잠금 해제할 수 있나요?",
+      "a": "예, 비밀번호 확인 후 권한 제한이 제거됩니다."
     },
     {
-      "q": "Is the decryption process secure?",
-      "a": "All decryption happens in your browser memory; nothing is transmitted."
+      "q": "복호화 과정은 안전한가요?",
+      "a": "모든 암호 해독은 브라우저 메모리에서 이루어집니다. 아무것도 전송되지 않습니다."
     },
     {
-      "q": "What if the password is wrong?",
-      "a": "You will see an error and can try again with the correct password."
+      "q": "비밀번호가 틀리면 어떻게 되나요?",
+      "a": "오류가 표시되며 올바른 비밀번호로 다시 시도할 수 있습니다."
     },
     {
-      "q": "Is this free?",
+      "q": "이거 무료인가요?",
       "a": "예, 완전 무료입니다."
     }
-  ]
+  ],
+  "faqTitle": "자주 묻는 질문",
+  "supportCenter": "지원 센터"
 }

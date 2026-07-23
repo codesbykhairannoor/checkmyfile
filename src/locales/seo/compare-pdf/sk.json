@@ -1,67 +1,85 @@
 {
-  "title": "Compare PDF Files — Spot Differences Locally",
-  "h1": "Compare Two PDF Documents Side by Side",
-  "description": "Upload two PDFs and highlight differences between them entirely in your browser. No upload to servers. Ideal for users in Bratislava.",
+  "title": "Porovnajte súbory PDF – lokálne rozdiely",
+  "h1": "Porovnajte dva dokumenty PDF vedľa seba",
+  "description": "Odovzdajte dva súbory PDF a zvýraznite rozdiely medzi nimi úplne vo svojom prehliadači. Žiadne nahrávanie na servery. 100% bezpečné lokálne spracovanie.",
+  "buttonText": "Compare PDFs",
+  "badges": [
+    "Nájdite rozdiely",
+    "Zvýrazniť zmeny",
+    "Vizuálny rozdiel"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Compare PDFs Locally?",
-      "content": "Comparing contract versions or document revisions often involves highly sensitive content. Do it entirely offline."
+      "type": "compare_hero_features",
+      "title": "Prečo porovnávať súbory PDF lokálne?",
+      "content": "Porovnávanie verzií zmlúv alebo revízií dokumentov často zahŕňa vysoko citlivý obsah. Urobte to úplne offline."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Compare Two PDFs",
+      "type": "compare_how_to_steps",
+      "title": "Ako porovnať dva súbory PDF",
       "steps": [
         {
-          "title": "Load Both PDFs",
-          "description": "Select the two PDF versions to compare."
+          "title": "Načítať oba súbory PDF",
+          "description": "Vyberte dve verzie PDF na porovnanie."
         },
         {
-          "title": "View Differences",
-          "description": "Highlighted changes appear side by side."
+          "title": "Zobraziť rozdiely",
+          "description": "Zvýraznené zmeny sa zobrazia vedľa seba."
         },
         {
-          "title": "Export Diff Report",
-          "description": "Download a comparison report with all changes marked."
+          "title": "Exportovať prehľad rozdielov",
+          "description": "Stiahnite si porovnávaciu správu so všetkými označenými zmenami."
         }
-      ]
+      ],
+      "badgeText": "Rýchly sprievodca"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Comparison for Bratislava Law Firms",
-      "content": "Legal professionals in Bratislava compare contract revisions without uploading privileged documents to cloud services."
+      "type": "compare_geo_targeting",
+      "title": "100% bezpečné miestne spracovanie",
+      "content": "Všetky operácie sa vykonávajú priamo na vašom lokálnom zariadení. Používame pokročilú technológiu WebAssembly na spracovanie vašich dokumentov bez ich nahrávania na externé servery, čím zaisťujeme úplné súkromie.",
+      "badgeText": "Miestne spracovanie"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Privileged Documents Stay Private",
-      "content": "Compare NDAs, contracts, and regulatory filings without any server interaction."
+      "type": "compare_privacy_security",
+      "title": "Privilegované dokumenty Zostaňte v súkromí",
+      "content": "Porovnajte NDA, zmluvy a regulačné podania bez akejkoľvek interakcie so serverom.",
+      "badgeText": "Bezpečnosť na prvom mieste"
     },
     {
-      "type": "organizer_performance",
-      "title": "Instant Side-by-Side Comparison",
-      "content": "Compare 100-page documents in seconds with highlighted differences rendered in-browser."
+      "type": "compare_performance",
+      "title": "Okamžité porovnanie vedľa seba",
+      "content": "Porovnajte 100-stranové dokumenty za pár sekúnd so zvýraznenými rozdielmi vykreslenými v prehliadači.",
+      "badgeText": "Rýchlosť blesku"
     }
   ],
   "faqs": [
     {
-      "q": "What types of differences are detected?",
-      "a": "Text additions, deletions, and formatting changes are highlighted."
+      "q": "Aké typy rozdielov sa zisťujú?",
+      "a": "Pridania textu, vymazania a zmeny formátovania sú zvýraznené."
     },
     {
-      "q": "Can I compare scanned PDFs?",
-      "a": "For scanned PDFs, use OCR first to extract text before comparing."
+      "q": "Môžem porovnať naskenované súbory PDF?",
+      "a": "V prípade naskenovaných súborov PDF použite najskôr OCR na extrahovanie textu pred porovnaním."
     },
     {
-      "q": "Can I export the comparison?",
-      "a": "Yes, download a marked-up PDF showing all differences."
+      "q": "Môžem exportovať porovnanie?",
+      "a": "Áno, stiahnite si označené PDF so všetkými rozdielmi."
     },
     {
-      "q": "How many versions can I compare?",
-      "a": "Two documents at a time in the side-by-side view."
+      "q": "Koľko verzií môžem porovnať?",
+      "a": "Dva dokumenty naraz v zobrazení vedľa seba."
     },
     {
-      "q": "Is this free?",
+      "q": "Je to zadarmo?",
       "a": "Áno, úplne zadarmo."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Excel to CSV Converter — Export Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to CSV Locally",
-  "description": "Export .xlsx files to clean .csv format entirely in your browser. No upload. Ideal for developers in Riyadh.",
+  "title": "محول Excel إلى CSV — تصدير جداول البيانات دون الاتصال بالإنترنت",
+  "h1": "تحويل جداول بيانات Excel إلى CSV محلياً",
+  "description": "قم بتصدير ملفات .xlsx لتنظيف تنسيق .csv بالكامل في متصفحك. لا يوجد تحميل. معالجة محلية آمنة بنسبة 100%.",
+  "buttonText": "Convert to CSV",
+  "badges": [
+    "بيانات أولية",
+    "استيراد قاعدة البيانات",
+    "تصدير سريع"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Export to CSV Offline?",
-      "content": "Exporting spreadsheets to CSV for data pipelines should not expose your raw data to any external API."
+      "type": "excel_csv_hero_features",
+      "title": "لماذا التصدير إلى CSV دون اتصال؟",
+      "content": "يجب ألا يؤدي تصدير جداول البيانات إلى ملف CSV لخطوط أنابيب البيانات إلى تعريض بياناتك الأولية لأي واجهة برمجة تطبيقات خارجية."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Excel to CSV",
+      "type": "excel_csv_how_to_steps",
+      "title": "كيفية تحويل إكسل إلى CSV",
       "steps": [
         {
-          "title": "Open Excel File",
-          "description": "Select the .xlsx spreadsheet."
+          "title": "فتح ملف اكسل",
+          "description": "حدد جدول البيانات .xlsx."
         },
         {
-          "title": "Choose Sheet",
-          "description": "Pick which sheet to export as CSV."
+          "title": "اختر ورقة",
+          "description": "اختر الورقة التي تريد تصديرها كملف CSV."
         },
         {
-          "title": "Download CSV",
-          "description": "Get your clean CSV file instantly."
+          "title": "تحميل CSV",
+          "description": "احصل على ملف CSV النظيف على الفور."
         }
-      ]
+      ],
+      "badgeText": "الدليل السريع"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Developer Tools for Riyadh",
-      "content": "Developers and data engineers in Riyadh export spreadsheets to CSV for pipelines without cloud intermediaries."
+      "type": "excel_csv_geo_targeting",
+      "title": "معالجة محلية آمنة بنسبة 100%",
+      "content": "يتم تنفيذ جميع العمليات مباشرة على جهازك المحلي. نحن نستخدم تقنية WebAssembly المتقدمة لمعالجة مستنداتك دون تحميلها على خوادم خارجية، مما يضمن الخصوصية الكاملة.",
+      "badgeText": "المعالجة المحلية"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Spreadsheet Data Stays Local",
-      "content": "Financial models and business data exported to CSV without any server-side processing."
+      "type": "excel_csv_privacy_security",
+      "title": "تظل بيانات جدول البيانات محلية",
+      "content": "يتم تصدير النماذج المالية وبيانات الأعمال إلى ملف CSV دون أي معالجة من جانب الخادم.",
+      "badgeText": "الأمن أولا"
     },
     {
-      "type": "organizer_performance",
-      "title": "Export Any Spreadsheet Instantly",
-      "content": "Export a 50,000-row Excel file to CSV in under 1 second. All in-browser."
+      "type": "excel_csv_performance",
+      "title": "تصدير أي جدول بيانات على الفور",
+      "content": "قم بتصدير ملف Excel مكون من 50000 صف إلى ملف CSV في أقل من ثانية واحدة. كل ذلك في المتصفح.",
+      "badgeText": "بسرعة البرق"
     }
   ],
   "faqs": [
     {
-      "q": "Can I export multiple sheets?",
-      "a": "Yes, export each sheet as a separate CSV file."
+      "q": "هل يمكنني تصدير أوراق متعددة؟",
+      "a": "نعم، قم بتصدير كل ورقة كملف CSV منفصل."
     },
     {
-      "q": "Is Excel formatting preserved in CSV?",
-      "a": "CSV is plain text; formatting is removed but all values are preserved."
+      "q": "هل يتم الاحتفاظ بتنسيق Excel في ملف CSV؟",
+      "a": "CSV هو نص عادي. تتم إزالة التنسيق ولكن يتم الاحتفاظ بجميع القيم."
     },
     {
-      "q": "Can I choose the delimiter?",
-      "a": "Yes, choose comma, semicolon, or tab."
+      "q": "هل يمكنني اختيار المحدد؟",
+      "a": "نعم، اختر فاصلة أو فاصلة منقوطة أو علامة تبويب."
     },
     {
-      "q": "Are formulas exported as values?",
-      "a": "Yes, formula results (not formulas) are written to the CSV."
+      "q": "هل يتم تصدير الصيغ كقيم؟",
+      "a": "نعم، تتم كتابة نتائج الصيغة (وليس الصيغ) إلى ملف CSV."
     },
     {
-      "q": "Is this free?",
-      "a": "نعم، مجاناً تماماً."
+      "q": "هل هذا مجاني؟",
+      "a": "نعم، مجاني تماما."
     }
-  ]
+  ],
+  "faqTitle": "الأسئلة المتداولة",
+  "supportCenter": "مركز الدعم"
 }

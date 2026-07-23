@@ -1,67 +1,80 @@
 {
-  "title": "PDF to Word Converter — Offline & Editable",
-  "h1": "Convert PDF to Editable Word Documents Locally",
-  "description": "Transform PDFs back into .docx files you can edit, right in your browser. No upload needed. Great for users in Helsinki.",
+  "title": "PDF to Word Converter – offline-tilassa ja muokattavissa",
+  "h1": "Muunna PDF muokattaviksi Word-asiakirjoiksi paikallisesti",
+  "description": "Muunna PDF-tiedostot takaisin .docx-tiedostoiksi, joita voit muokata suoraan selaimessasi. Ei latausta tarvita. Sopii helsinkiläisille käyttäjille.",
+  "buttonText": "Muunna Wordiksi",
+  "badges": [
+    "Muokattavat asiakirjat",
+    "Tekstin palautus",
+    "Offline-prosessi"
+  ],
+  "stats": [
+    "100 %",
+    "Paikallinen",
+    "0s",
+    "Odota Aika"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF Back Offline?",
-      "content": "When you need to edit a PDF, converting it offline keeps your original document confidential."
+      "title": "Miksi käyttää offline-tilassa?",
+      "content": "Kun PDF-tiedostoa on muokattava, sen offline-tilassa muuntaminen pitää alkuperäisen asiakirjan luottamuksellisina."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Word",
+      "title": "Kuinka käyttää",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF file you need to convert."
+          "title": "Lataa PDF",
+          "description": "Valitse muunnettava PDF-tiedosto."
         },
         {
-          "title": "Detect Text Layers",
-          "description": "Our engine reads text and structure from the PDF."
+          "title": "Tunnista tekstitasot",
+          "description": "Moottorimme lukee tekstiä ja rakennetta PDF-tiedostosta."
         },
         {
-          "title": "Download .docx",
-          "description": "Get your editable Word document ready to modify."
+          "title": "Lataa .docx",
+          "description": "Valmista muokattava Word-asiakirjasi muokattavaksi."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "PDF to Word for Helsinki Offices",
-      "content": "Office workers in Helsinki use our tool to recover editable text from PDFs without cloud dependency."
+      "title": "PDF Wordiksi Helsingin toimistoille",
+      "content": "Helsingin toimistotyöntekijät käyttävät työkalumme palauttamaan muokattavaa tekstiä PDF-tiedostoista ilman pilviriippuvuutta."
     },
     {
       "type": "split_privacy_security",
-      "title": "Legal Documents Stay Confidential",
-      "content": "Contracts, NDAs, and reports converted back to Word entirely in your browser memory."
+      "title": "Oikeudelliset asiakirjat pysyvät luottamuksellisina",
+      "content": "Sopimukset, NDA:t ja raportit muunnetaan takaisin Wordiksi kokonaan selaimesi muistissa."
     },
     {
       "type": "split_performance",
-      "title": "Recover Editable Text in Seconds",
-      "content": "Extract text from a 50-page PDF in under 3 seconds without uploading a single byte."
+      "title": "Palauta muokattava teksti sekunneissa",
+      "content": "Pura tekstiä 50-sivuisesta PDF-tiedostosta alle 3 sekunnissa lataamatta yhtään tavua."
     }
   ],
   "faqs": [
     {
-      "q": "Is all text preserved?",
-      "a": "Yes, text from all layers is extracted and formatted."
+      "q": "Onko kaikki teksti säilytetty?",
+      "a": "Kyllä, teksti kaikista tasoista puretaan ja muotoillaan."
     },
     {
-      "q": "Does it work on scanned PDFs?",
-      "a": "For scanned PDFs, use our OCR tool first."
+      "q": "Toimiiko se skannatuissa PDF-tiedostoissa?",
+      "a": "Käytä skannatuissa PDF-tiedostoissa ensin OCR-työkaluamme."
     },
     {
-      "q": "Are images included in the .docx?",
-      "a": "Yes, embedded images are included in the output."
+      "q": "Sisältyvätkö kuvat .docx-tiedostoon?",
+      "a": "Kyllä, upotetut kuvat sisältyvät tulosteeseen."
     },
     {
-      "q": "Can I edit the .docx after?",
-      "a": "Absolutely, the output is a fully editable Word document."
+      "q": "Voinko muokata .docx-tiedostoa sen jälkeen?",
+      "a": "Ehdottomasti tulos on täysin muokattavissa oleva Word-asiakirja."
     },
     {
-      "q": "Is this free?",
+      "q": "Onko tämä ilmainen?",
       "a": "Kyllä, täysin ilmainen."
     }
-  ]
+  ],
+  "faqTitle": "Usein Kysytyt Kysymykset"
 }

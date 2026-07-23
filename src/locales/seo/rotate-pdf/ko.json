@@ -1,67 +1,85 @@
 {
-  "title": "Rotate PDF Pages — Fix Orientation Offline",
-  "h1": "Rotate PDF Pages to the Correct Orientation",
-  "description": "Fix upside-down or sideways PDF pages instantly in your browser. No upload. Perfect for users in Seoul.",
+  "title": "PDF 페이지 회전 - 오프라인 방향 수정",
+  "h1": "PDF 페이지를 올바른 방향으로 회전",
+  "description": "거꾸로 또는 옆으로 뒤집힌 PDF 페이지를 브라우저에서 즉시 수정하세요. 빠르고 완벽하게 안전합니다.",
+  "buttonText": "Rotate Pages",
+  "badges": [
+    "90°/180° 회전",
+    "일괄 처리",
+    "즉각적인 수정"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Rotate PDFs Locally?",
-      "content": "Scanned documents often come out sideways. Fix their orientation instantly without uploading anything to the cloud."
+      "type": "rotate_hero_features",
+      "title": "PDF를 로컬에서 회전하는 이유는 무엇입니까?",
+      "content": "스캔한 문서가 옆으로 나오는 경우가 많습니다. 클라우드에 아무것도 업로드하지 않고도 방향을 즉시 수정할 수 있습니다."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Rotate PDF Pages",
+      "type": "rotate_how_to_steps",
+      "title": "PDF 페이지를 회전하는 방법",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page orientation."
+          "title": "PDF 열기",
+          "description": "페이지 방향이 잘못된 PDF를 로드하십시오."
         },
         {
-          "title": "Select Pages & Direction",
-          "description": "Choose pages to rotate and direction (90°, 180°, 270°)."
+          "title": "페이지 및 방향 선택",
+          "description": "회전할 페이지와 방향(90°, 180°, 270°)을 선택합니다."
         },
         {
-          "title": "Download Fixed PDF",
-          "description": "Save the correctly oriented PDF immediately."
+          "title": "고정 PDF 다운로드",
+          "description": "올바른 방향의 PDF를 즉시 저장하십시오."
         }
-      ]
+      ],
+      "badgeText": "빠른 가이드"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Rotation for Seoul Offices",
-      "content": "Office workers in Seoul fix scanner output orientation without relying on cloud services."
+      "type": "rotate_geo_targeting",
+      "title": "100% 안전한 로컬 처리",
+      "content": "모든 작업은 로컬 장치에서 직접 수행됩니다. 우리는 고급 WebAssembly 기술을 사용하여 문서를 외부 서버에 업로드하지 않고 처리하여 완벽한 개인 정보 보호를 보장합니다.",
+      "badgeText": "로컬 처리"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Scanned Documents Stay Private",
-      "content": "Scanned medical or legal documents rotated locally without any server access."
+      "type": "rotate_privacy_security",
+      "title": "스캔한 문서는 비공개로 유지",
+      "content": "스캔된 의료 또는 법률 문서는 서버 액세스 없이 로컬로 회전됩니다.",
+      "badgeText": "보안 우선"
     },
     {
-      "type": "transform_performance",
-      "title": "Rotate Any PDF in Milliseconds",
-      "content": "Rotating 500 pages takes less than a second. No upload, no wait."
+      "type": "rotate_performance",
+      "title": "모든 PDF를 밀리초 단위로 회전",
+      "content": "500페이지를 회전하는 데 1초도 채 걸리지 않습니다. 업로드하지 마세요. 기다리지 마세요.",
+      "badgeText": "번개처럼 빠르게"
     }
   ],
   "faqs": [
     {
-      "q": "Can I rotate individual pages?",
-      "a": "Yes, select specific pages or all at once."
+      "q": "개별 페이지를 회전할 수 있나요?",
+      "a": "예, 특정 페이지를 선택하거나 한 번에 모두 선택하세요."
     },
     {
-      "q": "What rotation angles are available?",
-      "a": "90°, 180°, and 270° clockwise and counter-clockwise."
+      "q": "어떤 회전 각도를 사용할 수 있나요?",
+      "a": "90°, 180°, 270° 시계 방향 및 시계 반대 방향."
     },
     {
-      "q": "Does rotation affect image quality?",
-      "a": "No, rotation is lossless — no re-encoding occurs."
+      "q": "회전이 이미지 품질에 영향을 미치나요?",
+      "a": "아니요, 회전은 무손실입니다. 재인코딩이 발생하지 않습니다."
     },
     {
-      "q": "Can I undo a rotation?",
-      "a": "Yes, apply the reverse rotation before downloading."
+      "q": "회전을 취소할 수 있나요?",
+      "a": "예, 다운로드하기 전에 역회전을 적용하세요."
     },
     {
-      "q": "Is this free?",
+      "q": "이거 무료인가요?",
       "a": "예, 완전 무료입니다."
     }
-  ]
+  ],
+  "faqTitle": "자주 묻는 질문",
+  "supportCenter": "지원 센터"
 }

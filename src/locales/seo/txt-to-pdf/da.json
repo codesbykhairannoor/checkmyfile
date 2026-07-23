@@ -1,67 +1,85 @@
 {
-  "title": "Text to PDF Converter — Offline & Instant",
-  "h1": "Convert Plain Text Files to PDF Locally",
-  "description": "Transform .txt files into clean, readable PDFs directly in your browser. No upload required. Ideal for users in Copenhagen.",
+  "title": "Tekst til PDF-konvertering — Offline & Instant",
+  "h1": "Konverter almindelige tekstfiler til PDF lokalt",
+  "description": "Omdan .txt-filer til rene, læsbare PDF-filer direkte i din browser. Ingen upload påkrævet. 100 % sikker lokal behandling.",
+  "buttonText": "Convert Text",
+  "badges": [
+    "Kodestykker",
+    "Serverlogs",
+    "Manuskripter"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Text Files Offline?",
-      "content": "Text files often contain code, scripts, or sensitive notes. Our offline converter ensures zero data transmission."
+      "type": "txt_hero_features",
+      "title": "Hvorfor konvertere tekstfiler offline?",
+      "content": "Tekstfiler indeholder ofte kode, scripts eller følsomme noter. Vores offline konverter sikrer nul datatransmission."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Text to PDF",
+      "type": "txt_how_to_steps",
+      "title": "Sådan konverteres tekst til PDF",
       "steps": [
         {
-          "title": "Open Text File",
-          "description": "Select your .txt file or paste text directly."
+          "title": "Åbn tekstfil",
+          "description": "Vælg din .txt-fil, eller indsæt tekst direkte."
         },
         {
-          "title": "Choose Font & Style",
-          "description": "Pick font size and layout preferences."
+          "title": "Vælg Font & Style",
+          "description": "Vælg skriftstørrelse og layoutpræferencer."
         },
         {
           "title": "Download PDF",
-          "description": "Export your text as a beautifully formatted PDF."
+          "description": "Eksporter din tekst som en smukt formateret PDF."
         }
-      ]
+      ],
+      "badgeText": "Hurtig guide"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Text to PDF for Copenhagen Developers",
-      "content": "Developers and writers in Copenhagen use our tool to convert scripts and notes without cloud dependency."
+      "type": "txt_geo_targeting",
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle handlinger udføres direkte på din lokale enhed. Vi bruger avanceret WebAssembly-teknologi til at behandle dine dokumenter uden nogensinde at uploade dem til eksterne servere, hvilket sikrer fuldstændigt privatliv.",
+      "badgeText": "Lokal behandling"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Code Stays on Your Machine",
-      "content": "Source code, legal notes, medical records — text files converted with zero server involvement."
+      "type": "txt_privacy_security",
+      "title": "Koden bliver på din maskine",
+      "content": "Kildekode, juridiske noter, lægejournaler — tekstfiler konverteret uden serverinvolvering.",
+      "badgeText": "Sikkerhed først"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Text Rendering",
-      "content": "Convert any size text file to PDF in milliseconds. No upload, no compression, no delay."
+      "type": "txt_performance",
+      "title": "Øjeblikkelig tekstgengivelse",
+      "content": "Konverter enhver størrelse tekstfil til PDF på millisekunder. Ingen upload, ingen komprimering, ingen forsinkelse.",
+      "badgeText": "Lynhurtigt"
     }
   ],
   "faqs": [
     {
-      "q": "Can I paste text directly?",
-      "a": "Yes, you can type or paste text without uploading a file."
+      "q": "Kan jeg indsætte tekst direkte?",
+      "a": "Ja, du kan skrive eller indsætte tekst uden at uploade en fil."
     },
     {
-      "q": "What fonts are available?",
-      "a": "Standard web fonts like Arial, Times New Roman, and monospace."
+      "q": "Hvilke skrifttyper er tilgængelige?",
+      "a": "Standard webskrifttyper som Arial, Times New Roman og monospace."
     },
     {
-      "q": "Is code syntax preserved?",
-      "a": "Monospace formatting is preserved for code blocks."
+      "q": "Er kodesyntaks bevaret?",
+      "a": "Monospace-formatering er bevaret for kodeblokke."
     },
     {
-      "q": "Can I set page margins?",
-      "a": "Yes, customize top, bottom, left, and right margins."
+      "q": "Kan jeg indstille sidemargener?",
+      "a": "Ja, tilpas top-, bund-, venstre- og højremargener."
     },
     {
-      "q": "Is this free?",
+      "q": "Er dette gratis?",
       "a": "Ja, helt gratis."
     }
-  ]
+  ],
+  "faqTitle": "Ofte stillede spørgsmål",
+  "supportCenter": "Supportcenter"
 }

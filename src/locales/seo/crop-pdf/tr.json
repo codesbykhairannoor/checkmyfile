@@ -1,67 +1,85 @@
 {
-  "title": "Crop PDF Margins — Trim Pages Offline",
-  "h1": "Crop and Trim PDF Page Margins Instantly",
-  "description": "Remove unwanted whitespace or crop PDF pages to custom dimensions, all locally. No upload. Ideal for users in Istanbul.",
+  "title": "PDF Kenar Boşluklarını Kırp — Sayfaları Çevrimdışı Kırp",
+  "h1": "PDF Sayfa Kenar Boşluklarını Anında Kırpın ve Kırpın",
+  "description": "İstenmeyen boşlukları kaldırın veya PDF sayfalarını yerel olarak özel boyutlara kırpın. Hızlı ve tamamen güvenli.",
+  "buttonText": "Crop PDF",
+  "badges": [
+    "Görsel kenar boşluğu düzenleyicisi",
+    "Düzgün kırpma",
+    "Sıfır gecikme"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Crop PDFs Locally?",
-      "content": "Scanned documents often have large margins. Crop them locally without exposing internal document structure to the cloud."
+      "type": "crop_hero_features",
+      "title": "Neden PDF'leri Yerel Olarak Kırpmalısınız?",
+      "content": "Taranan belgelerde genellikle büyük kenar boşlukları bulunur. Dahili belge yapısını buluta göstermeden bunları yerel olarak kırpın."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Crop PDF Pages",
+      "type": "crop_how_to_steps",
+      "title": "PDF Sayfaları Nasıl Kırpılır",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to crop."
+          "title": "PDF'yi aç",
+          "description": "Kırpmak istediğiniz PDF'yi yükleyin."
         },
         {
-          "title": "Set Margins",
-          "description": "Drag guides or enter exact margin values."
+          "title": "Kenar Boşluklarını Ayarla",
+          "description": "Kılavuzları sürükleyin veya tam kenar boşluğu değerlerini girin."
         },
         {
-          "title": "Export Cropped PDF",
-          "description": "Download the trimmed PDF instantly."
+          "title": "Kırpılmış PDF'yi Dışa Aktar",
+          "description": "Kırpılmış PDF'yi anında indirin."
         }
-      ]
+      ],
+      "badgeText": "Hızlı Kılavuz"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Precise Cropping for Istanbul Users",
-      "content": "Architects and designers in Istanbul use our crop tool to clean up scanned blueprints without cloud uploads."
+      "type": "crop_geo_targeting",
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Technical Documents Stay Local",
-      "content": "Architectural plans and legal PDFs cropped locally without any server round-trip."
+      "type": "crop_privacy_security",
+      "title": "Teknik Belgeler Yerel Kalın",
+      "content": "Mimari planlar ve yasal PDF'ler, herhangi bir sunucu gidiş-dönüş işlemine gerek kalmadan yerel olarak kırpılır.",
+      "badgeText": "Önce Güvenlik"
     },
     {
-      "type": "split_performance",
-      "title": "Crop Any Size PDF Instantly",
-      "content": "Crop margins from a 200-page document in under 2 seconds. All in your browser."
+      "type": "crop_performance",
+      "title": "Herhangi Bir Boyuttaki PDF'yi Anında Kırpın",
+      "content": "200 sayfalık bir belgenin kenar boşluklarını 2 saniyeden kısa sürede kırpın. Hepsi tarayıcınızda.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [
     {
-      "q": "Can I crop all pages uniformly?",
-      "a": "Yes, apply the same crop to every page at once."
+      "q": "Tüm sayfaları eşit şekilde kırpabilir miyim?",
+      "a": "Evet, aynı kırpmayı her sayfaya aynı anda uygulayın."
     },
     {
-      "q": "Can I crop individual pages?",
-      "a": "Yes, you can set per-page crop values."
+      "q": "Sayfaları tek tek kırpabilir miyim?",
+      "a": "Evet, sayfa başına kırpma değerlerini ayarlayabilirsiniz."
     },
     {
-      "q": "What are the minimum margin values?",
-      "a": "You can crop all the way to 0 margin on any side."
+      "q": "Minimum marj değerleri nelerdir?",
+      "a": "Herhangi bir tarafta 0 kenar boşluğuna kadar kırpabilirsiniz."
     },
     {
-      "q": "Will content be cut off?",
-      "a": "Only whitespace is removed by default; you control the guides."
+      "q": "İçerik kesilecek mi?",
+      "a": "Varsayılan olarak yalnızca boşluklar kaldırılır; kılavuzları kontrol ediyorsunuz."
     },
     {
-      "q": "Is this free?",
+      "q": "Bu bedava mı?",
       "a": "Evet, tamamen ücretsiz."
     }
-  ]
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi"
 }

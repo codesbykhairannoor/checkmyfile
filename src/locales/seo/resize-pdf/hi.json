@@ -1,67 +1,85 @@
 {
-  "title": "Resize PDF Pages — Change Paper Size Offline",
-  "h1": "Resize PDF Pages to A4, Letter, or Custom Sizes",
-  "description": "Change the paper size of every PDF page to A4, US Letter, or custom dimensions entirely in your browser. No upload. Ideal for users in New Delhi.",
+  "title": "पीडीएफ पृष्ठों का आकार बदलें - पेपर का आकार ऑफ़लाइन बदलें",
+  "h1": "पीडीएफ पेजों का आकार A4, अक्षर या कस्टम आकार में बदलें",
+  "description": "अपने ब्राउज़र में प्रत्येक पीडीएफ पेज के पेपर आकार को ए4, यूएस लेटर, या कस्टम आयामों में बदलें। कोई अपलोड नहीं. 100% सुरक्षित स्थानीय प्रसंस्करण।",
+  "buttonText": "Resize Pages",
+  "badges": [
+    "ए4, पत्र, कस्टम",
+    "मार्जिन जोड़ें",
+    "प्रारूप ठीक करें"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Resize PDFs Locally?",
-      "content": "Preparing documents for printing requires proper page sizing. Resize locally without uploading internal documents to the cloud."
+      "type": "resize_hero_features",
+      "title": "स्थानीय स्तर पर PDF का आकार क्यों बदलें?",
+      "content": "मुद्रण के लिए दस्तावेज़ तैयार करने के लिए उचित पृष्ठ आकार की आवश्यकता होती है। आंतरिक दस्तावेज़ों को क्लाउड पर अपलोड किए बिना स्थानीय रूप से आकार बदलें।"
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Resize PDF Pages",
+      "type": "resize_how_to_steps",
+      "title": "पीडीएफ पेजों का आकार कैसे बदलें",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page dimensions."
+          "title": "पीडीएफ खोलें",
+          "description": "गलत पेज आयामों के साथ पीडीएफ लोड करें।"
         },
         {
-          "title": "Select Target Size",
-          "description": "Choose A4, Letter, A3, or enter custom dimensions."
+          "title": "लक्ष्य आकार चुनें",
+          "description": "A4, अक्षर, A3 चुनें या कस्टम आयाम दर्ज करें।"
         },
         {
-          "title": "Download Resized PDF",
-          "description": "Get your properly sized document instantly."
+          "title": "रिसाइज्ड पीडीएफ डाउनलोड करें",
+          "description": "अपना उचित आकार का दस्तावेज़ तुरंत प्राप्त करें।"
         }
-      ]
+      ],
+      "badgeText": "त्वरित मार्गदर्शिका"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Resizing for New Delhi Print Shops",
-      "content": "Print shops and offices in New Delhi resize documents to standard sizes without cloud dependency."
+      "type": "resize_geo_targeting",
+      "title": "100% सुरक्षित स्थानीय प्रसंस्करण",
+      "content": "सभी ऑपरेशन सीधे आपके स्थानीय डिवाइस पर किए जाते हैं। हम पूर्ण गोपनीयता सुनिश्चित करते हुए, आपके दस्तावेज़ों को बाहरी सर्वर पर अपलोड किए बिना संसाधित करने के लिए उन्नत WebAssembly तकनीक का उपयोग करते हैं।",
+      "badgeText": "स्थानीय प्रसंस्करण"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Internal Documents Stay Internal",
-      "content": "Resize business reports and proposals without any server-side processing."
+      "type": "resize_privacy_security",
+      "title": "आंतरिक दस्तावेज़ आंतरिक रहें",
+      "content": "बिना किसी सर्वर-साइड प्रोसेसिंग के व्यावसायिक रिपोर्ट और प्रस्तावों का आकार बदलें।",
+      "badgeText": "सुरक्षा पहले"
     },
     {
-      "type": "transform_performance",
-      "title": "Resize Hundreds of Pages Instantly",
-      "content": "Resizing a 500-page PDF takes under 2 seconds. All in your browser."
+      "type": "resize_performance",
+      "title": "तुरंत सैकड़ों पेजों का आकार बदलें",
+      "content": "500 पेज की पीडीएफ का आकार बदलने में 2 सेकंड से कम समय लगता है। सब कुछ आपके ब्राउज़र में.",
+      "badgeText": "बिजली की तेजी"
     }
   ],
   "faqs": [
     {
-      "q": "What sizes are available?",
-      "a": "A4, A3, A5, US Letter, Legal, and custom dimensions."
+      "q": "कौन से आकार उपलब्ध हैं?",
+      "a": "A4, A3, A5, यूएस लेटर, कानूनी और कस्टम आयाम।"
     },
     {
-      "q": "Does content scale with the page?",
-      "a": "Yes, content is scaled proportionally by default."
+      "q": "क्या सामग्री पृष्ठ के अनुरूप होती है?",
+      "a": "हाँ, सामग्री डिफ़ॉल्ट रूप से आनुपातिक रूप से मापी जाती है।"
     },
     {
-      "q": "Can I resize individual pages?",
-      "a": "Yes, apply different sizes to specific pages."
+      "q": "क्या मैं अलग-अलग पृष्ठों का आकार बदल सकता हूँ?",
+      "a": "हाँ, विशिष्ट पृष्ठों पर भिन्न आकार लागू करें।"
     },
     {
-      "q": "Is the quality affected?",
-      "a": "Vector content is re-rendered perfectly; images may scale."
+      "q": "क्या गुणवत्ता प्रभावित हुई है?",
+      "a": "वेक्टर सामग्री को पूरी तरह से पुनः प्रस्तुत किया गया है; छवियाँ स्केल हो सकती हैं."
     },
     {
-      "q": "Is this free?",
-      "a": "हाँ, पूरी तरह मुफ्त।"
+      "q": "क्या यह मुफ़्त है?",
+      "a": "हाँ, पूर्णतया निःशुल्क।"
     }
-  ]
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न",
+  "supportCenter": "सहायता केंद्र"
 }

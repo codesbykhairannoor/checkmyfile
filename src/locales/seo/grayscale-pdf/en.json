@@ -1,15 +1,27 @@
 {
   "title": "Grayscale PDF — Convert to Black and White Offline",
   "h1": "Convert Color PDF Pages to Grayscale Instantly",
-  "description": "Turn color PDFs into black-and-white versions to reduce file size or prepare for printing, entirely in your browser. Ideal for users in New York.",
+  "description": "Turn color PDFs into black-and-white versions to reduce file size or prepare for printing, entirely in your browser. 100% secure local processing.",
+  "buttonText": "Convert to Grayscale",
+  "badges": [
+    "Save Ink",
+    "Black & White",
+    "Perfect for Print"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
+      "type": "grayscale_hero_features",
       "title": "Why Convert to Grayscale Offline?",
       "content": "Removing color from a PDF is a pre-print or archiving step. Do it locally without exposing confidential document design."
     },
     {
-      "type": "transform_how_to_steps",
+      "type": "grayscale_how_to_steps",
       "title": "How to Make PDF Grayscale",
       "steps": [
         {
@@ -27,17 +39,17 @@
       ]
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Grayscale PDF for New York Printers",
-      "content": "Businesses in New York convert color PDFs to grayscale for cost-effective printing without cloud uploads."
+      "type": "grayscale_geo_targeting",
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy."
     },
     {
-      "type": "transform_privacy_security",
+      "type": "grayscale_privacy_security",
       "title": "Design Files Stay Confidential",
       "content": "Internal design documents and branded materials converted to grayscale without cloud exposure."
     },
     {
-      "type": "transform_performance",
+      "type": "grayscale_performance",
       "title": "Convert Color Instantly",
       "content": "A 200-page color PDF converted to grayscale in under 2 seconds. Zero upload."
     }

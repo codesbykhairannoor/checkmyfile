@@ -1,67 +1,80 @@
 {
-  "title": "PDF to Word Converter — Offline & Editable",
-  "h1": "Convert PDF to Editable Word Documents Locally",
-  "description": "Transform PDFs back into .docx files you can edit, right in your browser. No upload needed. Great for users in Tokyo.",
+  "title": "PDF から Word へのコンバーター — オフラインで編集可能",
+  "h1": "PDF をローカルで編集可能な Word ドキュメントに変換",
+  "description": "PDF をブラウザ内で直接編集できる .docx ファイルに変換します。 アップロードは必要ありません。 東京のユーザーに最適です。",
+  "buttonText": "Wordに変換",
+  "badges": [
+    "編集可能なドキュメント",
+    "テキストの回復",
+    "オフラインプロセス"
+  ],
+  "stats": [
+    "100%",
+    "地元",
+    "0秒",
+    "待ち時間"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF Back Offline?",
-      "content": "When you need to edit a PDF, converting it offline keeps your original document confidential."
+      "title": "オフラインで使う理由",
+      "content": "PDF を編集する必要がある場合、オフラインで変換すると、元の文書の機密性が保たれます。"
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Word",
+      "title": "使い方",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF file you need to convert."
+          "title": "PDFをロードする",
+          "description": "変換する必要がある PDF ファイルを選択します。"
         },
         {
-          "title": "Detect Text Layers",
-          "description": "Our engine reads text and structure from the PDF."
+          "title": "テキストレイヤーの検出",
+          "description": "私たちのエンジンは PDF からテキストと構造を読み取ります。"
         },
         {
-          "title": "Download .docx",
-          "description": "Get your editable Word document ready to modify."
+          "title": ".docx をダウンロード",
+          "description": "編集可能な Word 文書を変更できるようにします。"
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "PDF to Word for Tokyo Offices",
-      "content": "Office workers in Tokyo use our tool to recover editable text from PDFs without cloud dependency."
+      "title": "東京オフィス向け PDF から Word へ",
+      "content": "東京のオフィスワーカーは、クラウドに依存せずに PDF から編集可能なテキストを復元するために当社のツールを使用しています。"
     },
     {
       "type": "split_privacy_security",
-      "title": "Legal Documents Stay Confidential",
-      "content": "Contracts, NDAs, and reports converted back to Word entirely in your browser memory."
+      "title": "法的文書の機密保持",
+      "content": "契約書、NDA、レポートはすべてブラウザーのメモリ内で Word に変換されます。"
     },
     {
       "type": "split_performance",
-      "title": "Recover Editable Text in Seconds",
-      "content": "Extract text from a 50-page PDF in under 3 seconds without uploading a single byte."
+      "title": "編集可能なテキストを数秒で復元",
+      "content": "1 バイトもアップロードせずに、50 ページの PDF からテキストを 3 秒以内に抽出します。"
     }
   ],
   "faqs": [
     {
-      "q": "Is all text preserved?",
-      "a": "Yes, text from all layers is extracted and formatted."
+      "q": "すべてのテキストは保存されますか?",
+      "a": "はい、すべてのレイヤーからテキストが抽出され、フォーマットされます。"
     },
     {
-      "q": "Does it work on scanned PDFs?",
-      "a": "For scanned PDFs, use our OCR tool first."
+      "q": "スキャンした PDF でも機能しますか?",
+      "a": "スキャンした PDF の場合は、まず OCR ツールを使用します。"
     },
     {
-      "q": "Are images included in the .docx?",
-      "a": "Yes, embedded images are included in the output."
+      "q": "画像は .docx に含まれていますか?",
+      "a": "はい、埋め込み画像は出力に含まれます。"
     },
     {
-      "q": "Can I edit the .docx after?",
-      "a": "Absolutely, the output is a fully editable Word document."
+      "q": "後で .docx を編集できますか?",
+      "a": "もちろん、出力は完全に編集可能な Word ドキュメントです。"
     },
     {
-      "q": "Is this free?",
+      "q": "これは無料ですか？",
       "a": "はい、完全無料です。"
     }
-  ]
+  ],
+  "faqTitle": "よくある質問"
 }

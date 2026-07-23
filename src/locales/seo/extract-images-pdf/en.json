@@ -1,15 +1,27 @@
 {
   "title": "Extract Images from PDF — Offline Extractor",
   "h1": "Extract All Embedded Images from PDF Files",
-  "description": "Pull out every image from a PDF and download them as PNG or JPG files, all in your browser. No cloud. Ideal for users in New York.",
+  "description": "Pull out every image from a PDF and download them as PNG or JPG files, all in your browser. No cloud. 100% secure local processing.",
+  "buttonText": "Extract All Images",
+  "badges": [
+    "Product Photos",
+    "Confidential Diagrams",
+    "Vectors"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
+      "type": "extract_images_hero_features",
       "title": "Why Extract Images Offline?",
       "content": "PDFs with confidential diagrams or product photos should never be uploaded. Extract images directly in your browser."
     },
     {
-      "type": "split_how_to_steps",
+      "type": "extract_images_how_to_steps",
       "title": "How to Extract Images from PDF",
       "steps": [
         {
@@ -27,17 +39,17 @@
       ]
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Image Extraction in New York",
-      "content": "Publishers and marketers in New York extract product photos and diagrams from PDFs without cloud uploads."
+      "type": "extract_images_geo_targeting",
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy."
     },
     {
-      "type": "split_privacy_security",
+      "type": "extract_images_privacy_security",
       "title": "Product Images Stay Confidential",
       "content": "Unreleased product photos embedded in PDFs extracted locally without any server access."
     },
     {
-      "type": "split_performance",
+      "type": "extract_images_performance",
       "title": "Extract Hundreds of Images Fast",
       "content": "Extract 500 images from a PDF in seconds. All native browser processing."
     }

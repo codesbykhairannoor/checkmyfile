@@ -1,67 +1,80 @@
 {
-  "title": "Word to PDF Converter — No Upload Required",
-  "h1": "Convert Word Documents to PDF Instantly",
-  "description": "Transform .docx files into perfect PDFs directly in your browser. Zero upload, 100% private. Ideal for users in Istanbul.",
+  "title": "Word'den PDF'ye Dönüştürücü — Yükleme Gerekmez",
+  "h1": "Word Belgelerini Anında PDF'ye Dönüştürün",
+  "description": ".docx dosyalarını doğrudan tarayıcınızda mükemmel PDF'lere dönüştürün. Sıfır yükleme, %100 özel. İstanbul'daki kullanıcılar için idealdir.",
+  "buttonText": "Belgeyi Dönüştür",
+  "badges": [
+    "İş Sözleşmeleri",
+    "Yasal Özetler",
+    "Özgeçmişler ve CV'ler"
+  ],
+  "stats": [
+    "%100",
+    "Yerel",
+    "0'lar",
+    "Bekleme Süresi"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Word to PDF Offline?",
-      "content": "Your Word document contains sensitive data. Our converter runs entirely in WebAssembly — your file never touches a server."
+      "type": "word_hero_features",
+      "title": "Neden çevrimdışı kullanılmalı?",
+      "content": "Word belgeniz hassas veriler içeriyor. Dönüştürücümüz tamamen WebAssembly'de çalışır; dosyanız hiçbir zaman bir sunucuya dokunmaz."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Word to PDF",
+      "type": "word_how_to_steps",
+      "title": "Nasıl kullanılır",
       "steps": [
         {
-          "title": "Select .docx File",
-          "description": "Pick your Word document from your computer."
+          "title": ".docx Dosyasını Seçin",
+          "description": "Word belgenizi bilgisayarınızdan seçin."
         },
         {
-          "title": "Preview Output",
-          "description": "See the PDF rendering before finalizing."
+          "title": "Çıktıyı Önizle",
+          "description": "Sonlandırmadan önce PDF oluşturmaya bakın."
         },
         {
-          "title": "Download PDF",
-          "description": "Save your perfectly converted PDF instantly."
+          "title": "PDF'yi indir",
+          "description": "Mükemmel şekilde dönüştürülmüş PDF'nizi anında kaydedin."
         }
       ]
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Word to PDF for Istanbul Users",
-      "content": "Used by professionals in Istanbul who need to share documents without losing formatting."
+      "type": "word_geo_targeting",
+      "title": "İstanbul Kullanıcıları için Word'den PDF'e",
+      "content": "İstanbul'da, formatını kaybetmeden belge paylaşımına ihtiyaç duyan profesyoneller tarafından kullanılır."
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Your Contracts Stay Private",
-      "content": "Converting employment contracts? Legal briefs? Our WASM processor never phones home."
+      "type": "word_privacy_security",
+      "title": "Sözleşmeleriniz Gizli Kalsın",
+      "content": "İş sözleşmelerini dönüştürmek mi istiyorsunuz? Hukuki özetler mi? WASM işlemcimiz asla eve telefon etmez."
     },
     {
-      "type": "combiner_performance",
-      "title": "No More Conversion Queues",
-      "content": "Cloud converters put you in a queue. Ours converts in under 2 seconds, entirely offline."
+      "type": "word_performance",
+      "title": "Artık Dönüşüm Sırası Yok",
+      "content": "Bulut dönüştürücüler sizi sıraya sokar. Bizimki tamamen çevrimdışı olarak 2 saniyeden kısa sürede dönüştürülür."
     }
   ],
   "faqs": [
     {
-      "q": "Does it preserve Word formatting?",
-      "a": "Yes, fonts, tables, and images are preserved using our WASM renderer."
+      "q": "Word biçimlendirmesini koruyor mu?",
+      "a": "Evet, yazı tipleri, tablolar ve resimler WASM oluşturucumuz kullanılarak korunur."
     },
     {
-      "q": "What Word versions are supported?",
-      "a": "All modern .docx files are supported."
+      "q": "Hangi Word sürümleri destekleniyor?",
+      "a": "Tüm modern .docx dosyaları desteklenir."
     },
     {
-      "q": "Is there a file size limit?",
-      "a": "No server limits! Only your device RAM is the constraint."
+      "q": "Dosya boyutu sınırı var mı?",
+      "a": "Sunucu sınırlaması yok! Yalnızca cihazınızın RAM'i kısıtlamadır."
     },
     {
-      "q": "Can I batch convert multiple files?",
-      "a": "Yes, select multiple .docx files at once."
+      "q": "Birden fazla dosyayı toplu olarak dönüştürebilir miyim?",
+      "a": "Evet, aynı anda birden fazla .docx dosyası seçin."
     },
     {
-      "q": "Is this free?",
+      "q": "Bu bedava mı?",
       "a": "Evet, tamamen ücretsiz."
     }
-  ]
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular"
 }

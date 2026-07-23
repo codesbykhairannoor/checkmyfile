@@ -1,67 +1,85 @@
 {
-  "title": "Add Watermark to PDF — Offline Watermarking",
-  "h1": "Stamp PDFs with Text or Image Watermarks Locally",
-  "description": "Add \"CONFIDENTIAL\", logos, or custom text watermarks to PDFs entirely in your browser. No upload. Best for users in Warsaw.",
+  "title": "Dodaj znak wodny do pliku PDF — znak wodny offline",
+  "h1": "Lokalnie stempluj pliki PDF tekstowymi lub obrazowymi znakami wodnymi",
+  "description": "Dodaj „POUFNE”, logo lub niestandardowe tekstowe znaki wodne do plików PDF całkowicie w przeglądarce. Brak przesyłania. 100% bezpieczne przetwarzanie lokalne.",
+  "buttonText": "Add Watermark",
+  "badges": [
+    "Tekst niestandardowy",
+    "Regulowane krycie",
+    "Ochrona marki"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Watermark PDFs Offline?",
-      "content": "Adding watermarks means your document is sensitive. Never upload draft contracts or confidential reports to a cloud watermarker."
+      "type": "watermark_hero_features",
+      "title": "Dlaczego pliki PDF ze znakiem wodnym są offline?",
+      "content": "Dodanie znaków wodnych oznacza, że ​​dokument jest poufny. Nigdy nie przesyłaj wersji roboczych umów ani poufnych raportów do znaku wodnego w chmurze."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Watermark a PDF",
+      "type": "watermark_how_to_steps",
+      "title": "Jak dodać znak wodny do pliku PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to watermark."
+          "title": "Otwórz PDF",
+          "description": "Wybierz plik PDF do znaku wodnego."
         },
         {
-          "title": "Design Watermark",
-          "description": "Type text or upload a logo image."
+          "title": "Projekt znaku wodnego",
+          "description": "Wpisz tekst lub prześlij obraz logo."
         },
         {
-          "title": "Apply & Download",
-          "description": "Get your watermarked PDF in one click."
+          "title": "Zastosuj i pobierz",
+          "description": "Pobierz plik PDF ze znakiem wodnym jednym kliknięciem."
         }
-      ]
+      ],
+      "badgeText": "Krótki przewodnik"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Document Watermarking in Warsaw",
-      "content": "Legal and creative professionals in Warsaw stamp documents with watermarks without cloud uploads."
+      "type": "watermark_geo_targeting",
+      "title": "100% bezpieczne przetwarzanie lokalne",
+      "content": "Wszystkie operacje wykonywane są bezpośrednio na Twoim urządzeniu lokalnym. Korzystamy z zaawansowanej technologii WebAssembly, aby przetwarzać Twoje dokumenty bez konieczności przesyłania ich na serwery zewnętrzne, zapewniając całkowitą prywatność.",
+      "badgeText": "Przetwarzanie lokalne"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Confidential Drafts Stay Private",
-      "content": "Draft contracts and unreleased designs watermarked locally without any server contact."
+      "type": "watermark_privacy_security",
+      "title": "Poufne wersje robocze pozostają prywatne",
+      "content": "Wersje robocze umów i niewydane projekty są oznaczone lokalnie znakami wodnymi, bez kontaktu z serwerem.",
+      "badgeText": "Bezpieczeństwo przede wszystkim"
     },
     {
-      "type": "transform_performance",
-      "title": "Stamp Thousands of Pages Instantly",
-      "content": "Apply watermarks to a 1000-page document in under 3 seconds. All in your browser."
+      "type": "watermark_performance",
+      "title": "Natychmiastowe stemplowanie tysięcy stron",
+      "content": "Zastosuj znaki wodne do 1000-stronicowego dokumentu w mniej niż 3 sekundy. Wszystko w Twojej przeglądarce.",
+      "badgeText": "Błyskawicznie"
     }
   ],
   "faqs": [
     {
-      "q": "Can I use a logo as a watermark?",
-      "a": "Yes, upload a PNG logo and set transparency."
+      "q": "Czy mogę użyć logo jako znaku wodnego?",
+      "a": "Tak, prześlij logo PNG i ustaw przezroczystość."
     },
     {
-      "q": "Can I adjust watermark opacity?",
-      "a": "Yes, from 10% to 100% opacity."
+      "q": "Czy mogę dostosować krycie znaku wodnego?",
+      "a": "Tak, od 10% do 100% krycia."
     },
     {
-      "q": "Can I apply it to specific pages only?",
-      "a": "Yes, choose page ranges."
+      "q": "Czy mogę zastosować go tylko do określonych stron?",
+      "a": "Tak, wybierz zakresy stron."
     },
     {
-      "q": "Is diagonal placement available?",
-      "a": "Yes, rotate watermarks to any angle."
+      "q": "Czy dostępne jest rozmieszczenie ukośne?",
+      "a": "Tak, obracaj znaki wodne pod dowolnym kątem."
     },
     {
-      "q": "Is this free?",
-      "a": "Tak, całkowicie bezpłatnie."
+      "q": "Czy to jest bezpłatne?",
+      "a": "Tak, zawsze bezpłatnie."
     }
-  ]
+  ],
+  "faqTitle": "Często zadawane pytania",
+  "supportCenter": "Centrum wsparcia"
 }

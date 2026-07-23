@@ -1,67 +1,85 @@
 {
-  "title": "Grayscale PDF — Convert to Black and White Offline",
-  "h1": "Convert Color PDF Pages to Grayscale Instantly",
-  "description": "Turn color PDFs into black-and-white versions to reduce file size or prepare for printing, entirely in your browser. Ideal for users in Seoul.",
+  "title": "회색조 PDF — 흑백 오프라인으로 변환",
+  "h1": "컬러 PDF 페이지를 그레이스케일로 즉시 변환",
+  "description": "브라우저에서 컬러 PDF를 흑백 버전으로 변환하여 파일 크기를 줄이거나 인쇄 준비를 모두 완료하세요. 100% 안전한 로컬 처리.",
+  "buttonText": "Convert to Grayscale",
+  "badges": [
+    "잉크 절약",
+    "흑백",
+    "인쇄에 적합"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Convert to Grayscale Offline?",
-      "content": "Removing color from a PDF is a pre-print or archiving step. Do it locally without exposing confidential document design."
+      "type": "grayscale_hero_features",
+      "title": "그레이스케일 오프라인으로 변환하는 이유는 무엇입니까?",
+      "content": "PDF에서 색상을 제거하는 것은 인쇄 전 또는 보관 단계입니다. 기밀 문서 디자인을 노출하지 않고 로컬에서 수행합니다."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Make PDF Grayscale",
+      "type": "grayscale_how_to_steps",
+      "title": "PDF 그레이스케일을 만드는 방법",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the color PDF to convert."
+          "title": "PDF 열기",
+          "description": "변환할 컬러 PDF를 선택하세요."
         },
         {
-          "title": "Choose Conversion Mode",
-          "description": "Pick luminance or contrast-adjusted grayscale."
+          "title": "변환 모드 선택",
+          "description": "휘도 또는 대비 조정 회색조를 선택합니다."
         },
         {
-          "title": "Download Grayscale PDF",
-          "description": "Save the black-and-white PDF immediately."
+          "title": "그레이스케일 PDF 다운로드",
+          "description": "흑백 PDF를 즉시 저장하세요."
         }
-      ]
+      ],
+      "badgeText": "빠른 가이드"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Grayscale PDF for Seoul Printers",
-      "content": "Businesses in Seoul convert color PDFs to grayscale for cost-effective printing without cloud uploads."
+      "type": "grayscale_geo_targeting",
+      "title": "100% 안전한 로컬 처리",
+      "content": "모든 작업은 로컬 장치에서 직접 수행됩니다. 우리는 고급 WebAssembly 기술을 사용하여 문서를 외부 서버에 업로드하지 않고 처리하여 완벽한 개인 정보 보호를 보장합니다.",
+      "badgeText": "로컬 처리"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Design Files Stay Confidential",
-      "content": "Internal design documents and branded materials converted to grayscale without cloud exposure."
+      "type": "grayscale_privacy_security",
+      "title": "디자인 파일은 기밀로 유지됩니다",
+      "content": "내부 디자인 문서 및 브랜드 자료는 클라우드 노출 없이 그레이스케일로 변환됩니다.",
+      "badgeText": "보안 우선"
     },
     {
-      "type": "transform_performance",
-      "title": "Convert Color Instantly",
-      "content": "A 200-page color PDF converted to grayscale in under 2 seconds. Zero upload."
+      "type": "grayscale_performance",
+      "title": "즉시 색상 변환",
+      "content": "200페이지 컬러 PDF가 2초 이내에 회색조로 변환됩니다. 업로드가 없습니다.",
+      "badgeText": "번개처럼 빠르게"
     }
   ],
   "faqs": [
     {
-      "q": "Does grayscale reduce file size?",
-      "a": "Often yes, especially for image-heavy PDFs."
+      "q": "회색조가 파일 크기를 줄입니까?",
+      "a": "특히 이미지가 많은 PDF의 경우 그렇습니다."
     },
     {
-      "q": "Are all pages converted?",
-      "a": "Yes by default; you can also select specific pages."
+      "q": "모든 페이지가 변환되었나요?",
+      "a": "예, 기본적으로는 그렇습니다. 특정 페이지를 선택할 수도 있습니다."
     },
     {
-      "q": "Is the conversion reversible?",
-      "a": "The color information is removed; keep the original for reversal."
+      "q": "변환을 되돌릴 수 있나요?",
+      "a": "색상 정보가 제거됩니다. 취소를 위해 원본을 보관하세요."
     },
     {
-      "q": "Does it affect text quality?",
-      "a": "No, text remains crisp and black."
+      "q": "텍스트 품질에 영향을 미치나요?",
+      "a": "아니요, 텍스트는 선명하고 검은색으로 유지됩니다."
     },
     {
-      "q": "Is this free?",
+      "q": "이거 무료인가요?",
       "a": "예, 완전 무료입니다."
     }
-  ]
+  ],
+  "faqTitle": "자주 묻는 질문",
+  "supportCenter": "지원 센터"
 }

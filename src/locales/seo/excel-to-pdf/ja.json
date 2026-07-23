@@ -1,67 +1,85 @@
 {
-  "title": "Excel to PDF — Convert Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to PDF Securely",
-  "description": "Turn .xlsx and .csv files into crisp PDFs locally in your browser. Financial data stays on your device. Perfect for users in Tokyo.",
+  "title": "Excel から PDF — スプレッドシートをオフラインで変換",
+  "h1": "Excel スプレッドシートを PDF に安全に変換",
+  "description": ".xlsx および .csv ファイルをブラウザーでローカルに鮮明な PDF に変換します。 財務データはデバイスに残ります。 100% 安全なローカル処理。",
+  "buttonText": "Convert Spreadsheet",
+  "badges": [
+    "財務報告書",
+    "請求書",
+    "データのエクスポート"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Excel Offline?",
-      "content": "Spreadsheets often contain sensitive financial data. Our browser-based engine converts without any server involvement."
+      "type": "excel_hero_features",
+      "title": "Excel をオフラインで変換する理由",
+      "content": "スプレッドシートには機密の財務データが含まれることがよくあります。 当社のブラウザベースのエンジンは、サーバーを介さずに変換します。"
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Export Excel as PDF",
+      "type": "excel_how_to_steps",
+      "title": "Excel を PDF としてエクスポートする方法",
       "steps": [
         {
-          "title": "Open Spreadsheet",
-          "description": "Select your .xlsx or .csv file."
+          "title": "スプレッドシートを開く",
+          "description": ".xlsx または .csv ファイルを選択します。"
         },
         {
-          "title": "Choose Sheet Range",
-          "description": "Pick which sheets or rows to include."
+          "title": "シート範囲を選択",
+          "description": "含めるシートまたは行を選択します。"
         },
         {
-          "title": "Export as PDF",
-          "description": "Download your spreadsheet as a clean PDF."
+          "title": "PDF としてエクスポート",
+          "description": "スプレッドシートをクリーンな PDF としてダウンロードします。"
         }
-      ]
+      ],
+      "badgeText": "クイックガイド"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Excel to PDF for Tokyo Businesses",
-      "content": "Businesses in Tokyo use our tool to share financial reports without exposing raw spreadsheet data."
+      "type": "excel_geo_targeting",
+      "title": "100% 安全なローカル処理",
+      "content": "すべての操作はローカル デバイス上で直接実行されます。 当社は高度な WebAssembly テクノロジーを使用して、ドキュメントを外部サーバーにアップロードすることなく処理し、完全なプライバシーを確​​保します。",
+      "badgeText": "ローカル処理"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Protect Financial Spreadsheets",
-      "content": "Balance sheets, payroll data — all processed offline. Zero data sent to any third party."
+      "type": "excel_privacy_security",
+      "title": "財務スプレッドシートを保護",
+      "content": "貸借対照表、給与データはすべてオフラインで処理されます。 第三者に送信されるデータはゼロです。",
+      "badgeText": "セキュリティ第一"
     },
     {
-      "type": "combiner_performance",
-      "title": "Spreadsheet-to-PDF in Seconds",
-      "content": "No upload queue, no compression artifacts. Your spreadsheet renders natively in-browser."
+      "type": "excel_performance",
+      "title": "数秒でスプレッドシートから PDF に変換",
+      "content": "アップロードキューや圧縮アーティファクトはありません。 スプレッドシートはブラウザ内でネイティブにレンダリングされます。",
+      "badgeText": "超高速"
     }
   ],
   "faqs": [
     {
-      "q": "Are all Excel formulas preserved?",
-      "a": "Yes, formula results are captured in the PDF snapshot."
+      "q": "Excel の数式はすべて保存されますか?",
+      "a": "はい、数式の結果は PDF スナップショットにキャプチャされます。"
     },
     {
-      "q": "Can I convert multiple sheets?",
-      "a": "Yes, you can include all sheets or specific ones."
+      "q": "複数のシートを変換できますか?",
+      "a": "はい、すべてのシートまたは特定のシートを含めることができます。"
     },
     {
-      "q": "What file types are supported?",
-      "a": ".xlsx, .xls, and .csv are all supported."
+      "q": "どのようなファイル形式がサポートされていますか?",
+      "a": ".xlsx、.xls、および .csv はすべてサポートされています。"
     },
     {
-      "q": "Is this secure for financial data?",
-      "a": "Absolutely. The file never leaves your browser."
+      "q": "これは財務データにとって安全ですか?",
+      "a": "絶対に。 ファイルがブラウザから離れることはありません。"
     },
     {
-      "q": "Does it support graphs?",
-      "a": "はい、完全無料です。"
+      "q": "グラフはサポートされていますか?",
+      "a": "チャートと埋め込みグラフは PDF でレンダリングされます。"
     }
-  ]
+  ],
+  "faqTitle": "よくある質問",
+  "supportCenter": "サポート センター"
 }

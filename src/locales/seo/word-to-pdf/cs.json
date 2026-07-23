@@ -1,67 +1,80 @@
 {
-  "title": "Word to PDF Converter — No Upload Required",
-  "h1": "Convert Word Documents to PDF Instantly",
-  "description": "Transform .docx files into perfect PDFs directly in your browser. Zero upload, 100% private. Ideal for users in Prague.",
+  "title": "Převodník z Wordu do PDF — Není vyžadováno nahrávání",
+  "h1": "Okamžitý převod dokumentů Word do PDF",
+  "description": "Transformujte soubory .docx na dokonalé soubory PDF přímo ve vašem prohlížeči. Nulové nahrávání, 100% soukromé. Ideální pro uživatele v Praze.",
+  "buttonText": "Převést dokument",
+  "badges": [
+    "Pracovní smlouvy",
+    "Právní informace",
+    "Životopisy a životopisy"
+  ],
+  "stats": [
+    "100 %",
+    "Místní",
+    "0 s",
+    "Doba čekání"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Word to PDF Offline?",
-      "content": "Your Word document contains sensitive data. Our converter runs entirely in WebAssembly — your file never touches a server."
+      "type": "word_hero_features",
+      "title": "Proč používat offline?",
+      "content": "Váš dokument aplikace Word obsahuje citlivá data. Náš převodník běží výhradně ve WebAssembly – váš soubor se nikdy nedotkne serveru."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Word to PDF",
+      "type": "word_how_to_steps",
+      "title": "Jak používat",
       "steps": [
         {
-          "title": "Select .docx File",
-          "description": "Pick your Word document from your computer."
+          "title": "Vyberte soubor .docx",
+          "description": "Vyberte si dokument Word z počítače."
         },
         {
-          "title": "Preview Output",
-          "description": "See the PDF rendering before finalizing."
+          "title": "Náhled výstupu",
+          "description": "Před finalizací si prohlédněte vykreslení PDF."
         },
         {
-          "title": "Download PDF",
-          "description": "Save your perfectly converted PDF instantly."
+          "title": "Stáhnout PDF",
+          "description": "Okamžitě si uložte dokonale převedené PDF."
         }
       ]
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Word to PDF for Prague Users",
-      "content": "Used by professionals in Prague who need to share documents without losing formatting."
+      "type": "word_geo_targeting",
+      "title": "Word to PDF pro pražské uživatele",
+      "content": "Používají ho profesionálové v Praze, kteří potřebují sdílet dokumenty bez ztráty formátování."
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Your Contracts Stay Private",
-      "content": "Converting employment contracts? Legal briefs? Our WASM processor never phones home."
+      "type": "word_privacy_security",
+      "title": "Vaše smlouvy zůstanou soukromé",
+      "content": "Přeměna pracovních smluv? Právní informace? Náš procesor WASM nikdy netelefonuje domů."
     },
     {
-      "type": "combiner_performance",
-      "title": "No More Conversion Queues",
-      "content": "Cloud converters put you in a queue. Ours converts in under 2 seconds, entirely offline."
+      "type": "word_performance",
+      "title": "Žádné další konverzní fronty",
+      "content": "Cloudové konvertory vás zařadí do fronty. Naše konverze za méně než 2 sekundy, zcela offline."
     }
   ],
   "faqs": [
     {
-      "q": "Does it preserve Word formatting?",
-      "a": "Yes, fonts, tables, and images are preserved using our WASM renderer."
+      "q": "Zachovává formátování Wordu?",
+      "a": "Ano, písma, tabulky a obrázky jsou zachovány pomocí našeho rendereru WASM."
     },
     {
-      "q": "What Word versions are supported?",
-      "a": "All modern .docx files are supported."
+      "q": "Jaké verze aplikace Word jsou podporovány?",
+      "a": "Podporovány jsou všechny moderní soubory .docx."
     },
     {
-      "q": "Is there a file size limit?",
-      "a": "No server limits! Only your device RAM is the constraint."
+      "q": "Je nějaký limit velikosti souboru?",
+      "a": "Žádné limity serveru! Omezením je pouze RAM vašeho zařízení."
     },
     {
-      "q": "Can I batch convert multiple files?",
-      "a": "Yes, select multiple .docx files at once."
+      "q": "Mohu dávkově převést více souborů?",
+      "a": "Ano, vybrat více souborů .docx najednou."
     },
     {
-      "q": "Is this free?",
+      "q": "Je to zdarma?",
       "a": "Ano, zcela zdarma."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky"
 }

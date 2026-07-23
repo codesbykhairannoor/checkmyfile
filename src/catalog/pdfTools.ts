@@ -241,10 +241,7 @@ export const pdfTools: ToolDefinition[] = [
     id: 'sign-pdf',
     category: 'pdf',
     iconName: 'PenTool',
-    slugs: generateSlugsForId('sign-pdf', {
-      en: 'sign-pdf',
-      id: 'tanda-tangan-pdf',
-    }),
+    slugs: generateSlugsForId('sign-pdf', { en: 'sign-pdf', id: 'ttd-pdf', es: 'firmar-pdf', fr: 'signer-pdf', de: 'pdf-unterschreiben', pt: 'assinar-pdf', it: 'firma-pdf', nl: 'pdf-ondertekenen' }),
     seo: {
       en: {
         title: 'Sign PDF Online - Add Electronic Signature to PDF',
@@ -264,10 +261,7 @@ export const pdfTools: ToolDefinition[] = [
     id: 'protect-pdf',
     category: 'pdf',
     iconName: 'Lock',
-    slugs: generateSlugsForId('protect-pdf', {
-      en: 'protect-pdf',
-      id: 'kunci-pdf',
-    }),
+    slugs: generateSlugsForId('protect-pdf', { en: 'protect-pdf', id: 'kunci-pdf', es: 'proteger-pdf', fr: 'proteger-pdf', de: 'pdf-schuetzen', pt: 'proteger-pdf', it: 'proteggi-pdf', nl: 'pdf-beveiligen' }),
     seo: {
       en: {
         title: 'Protect PDF Online - Password Protect PDF Locally',
@@ -287,10 +281,7 @@ export const pdfTools: ToolDefinition[] = [
     id: 'unlock-pdf',
     category: 'pdf',
     iconName: 'Unlock',
-    slugs: generateSlugsForId('unlock-pdf', {
-      en: 'unlock-pdf',
-      id: 'buka-kunci-pdf',
-    }),
+    slugs: generateSlugsForId('unlock-pdf', { en: 'unlock-pdf', id: 'buka-kunci-pdf', es: 'desbloquear-pdf', fr: 'deverrouiller-pdf', de: 'pdf-entsperren', pt: 'desbloquear-pdf', it: 'sblocca-pdf', nl: 'pdf-ontgrendelen' }),
     seo: {
       en: {
         title: 'Unlock PDF Online - Remove PDF Password Locally',
@@ -405,10 +396,7 @@ export const advancedPdfTools: ToolDefinition[] = [
     id: 'remove-pdf-metadata',
     category: 'pdf',
     iconName: 'Eraser',
-    slugs: generateSlugsForId('remove-pdf-metadata', {
-      en: 'remove-pdf-metadata',
-      id: 'hapus-metadata-pdf',
-    }),
+    slugs: generateSlugsForId('remove-pdf-metadata', { en: 'remove-pdf-metadata', id: 'hapus-metadata-pdf', es: 'eliminar-metadatos-pdf', fr: 'supprimer-metadonnees-pdf', de: 'pdf-metadaten-entfernen', pt: 'remover-metadados-pdf', it: 'rimuovi-metadati-pdf', nl: 'pdf-metadata-verwijderen' }),
     seo: {
       en: {
         title: 'Remove PDF Metadata - Sanitize Properties Online',
@@ -451,10 +439,7 @@ export const advancedPdfTools: ToolDefinition[] = [
     id: 'redact-pdf',
     category: 'pdf',
     iconName: 'EyeOff',
-    slugs: generateSlugsForId('redact-pdf', {
-      en: 'redact-pdf',
-      id: 'sensor-pdf',
-    }),
+    slugs: generateSlugsForId('redact-pdf', { en: 'redact-pdf', id: 'sensor-pdf', es: 'redactar-pdf', fr: 'masquer-pdf', de: 'pdf-schwaerzen', pt: 'redigir-pdf', it: 'oscura-pdf', nl: 'pdf-redigeren' }),
     seo: {
       en: {
         title: 'Redact PDF - Securely Blackout Text and Images',

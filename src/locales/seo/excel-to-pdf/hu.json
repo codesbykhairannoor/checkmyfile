@@ -1,67 +1,85 @@
 {
-  "title": "Excel to PDF — Convert Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to PDF Securely",
-  "description": "Turn .xlsx and .csv files into crisp PDFs locally in your browser. Financial data stays on your device. Perfect for users in Budapest.",
+  "title": "Excel PDF-be — Táblázatok konvertálása offline módban",
+  "h1": "Az Excel-táblázatok biztonságos konvertálása PDF-formátumba",
+  "description": "Változtassa át az .xlsx és .csv fájlokat éles PDF-fájlokká helyileg a böngészőjében. A pénzügyi adatok az eszközön maradnak. 100%-ban biztonságos helyi feldolgozás.",
+  "buttonText": "Convert Spreadsheet",
+  "badges": [
+    "Pénzügyi jelentések",
+    "Számlák",
+    "Adatexportálás"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Excel Offline?",
-      "content": "Spreadsheets often contain sensitive financial data. Our browser-based engine converts without any server involvement."
+      "type": "excel_hero_features",
+      "title": "Miért lehet az Excelt offline konvertálni?",
+      "content": "A táblázatok gyakran érzékeny pénzügyi adatokat tartalmaznak. Böngésző alapú motorunk szerver közreműködése nélkül konvertálódik."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Export Excel as PDF",
+      "type": "excel_how_to_steps",
+      "title": "Az Excel exportálása PDF formátumban",
       "steps": [
         {
-          "title": "Open Spreadsheet",
-          "description": "Select your .xlsx or .csv file."
+          "title": "Táblázat megnyitása",
+          "description": "Válassza ki az .xlsx vagy .csv fájlt."
         },
         {
-          "title": "Choose Sheet Range",
-          "description": "Pick which sheets or rows to include."
+          "title": "Laptartomány kiválasztása",
+          "description": "Válassza ki, mely lapokat vagy sorokat szeretné felvenni."
         },
         {
-          "title": "Export as PDF",
-          "description": "Download your spreadsheet as a clean PDF."
+          "title": "Exportálás PDF formátumban",
+          "description": "Töltse le a táblázatot tiszta PDF formátumban."
         }
-      ]
+      ],
+      "badgeText": "Gyors útmutató"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Excel to PDF for Budapest Businesses",
-      "content": "Businesses in Budapest use our tool to share financial reports without exposing raw spreadsheet data."
+      "type": "excel_geo_targeting",
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Minden művelet közvetlenül a helyi eszközön történik. Fejlett WebAssembly technológiát használunk a dokumentumok feldolgozásához anélkül, hogy azokat külső szerverekre feltöltenénk, így biztosítva a teljes adatvédelmet.",
+      "badgeText": "Helyi feldolgozás"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Protect Financial Spreadsheets",
-      "content": "Balance sheets, payroll data — all processed offline. Zero data sent to any third party."
+      "type": "excel_privacy_security",
+      "title": "Pénzügyi táblázatok védelme",
+      "content": "Mérlegek, bérszámfejtési adatok – mindez offline feldolgozva. Nulla adatot küldenek harmadik félnek.",
+      "badgeText": "Első a biztonság"
     },
     {
-      "type": "combiner_performance",
-      "title": "Spreadsheet-to-PDF in Seconds",
-      "content": "No upload queue, no compression artifacts. Your spreadsheet renders natively in-browser."
+      "type": "excel_performance",
+      "title": "Táblázat PDF-be másodpercek alatt",
+      "content": "Nincs feltöltési sor, nincsenek tömörítési melléktermékek. A táblázat natív módon jelenik meg a böngészőben.",
+      "badgeText": "Villámgyors"
     }
   ],
   "faqs": [
     {
-      "q": "Are all Excel formulas preserved?",
-      "a": "Yes, formula results are captured in the PDF snapshot."
+      "q": "Minden Excel képlet megmarad?",
+      "a": "Igen, a képleteredményeket a rendszer rögzíti a PDF-pillanatképben."
     },
     {
-      "q": "Can I convert multiple sheets?",
-      "a": "Yes, you can include all sheets or specific ones."
+      "q": "Átalakíthatok több lapot?",
+      "a": "Igen, megadhatja az összes lapot vagy bizonyos lapot."
     },
     {
-      "q": "What file types are supported?",
-      "a": ".xlsx, .xls, and .csv are all supported."
+      "q": "Milyen fájltípusok támogatottak?",
+      "a": "Az .xlsx, .xls és .csv egyaránt támogatott."
     },
     {
-      "q": "Is this secure for financial data?",
-      "a": "Absolutely. The file never leaves your browser."
+      "q": "Biztonságos ez a pénzügyi adatok számára?",
+      "a": "Teljesen. A fájl soha nem hagyja el a böngészőt."
     },
     {
-      "q": "Does it support graphs?",
-      "a": "Igen, teljesen ingyenes."
+      "q": "Támogatja a grafikonokat?",
+      "a": "A diagramok és a beágyazott grafikonok a PDF-ben jelennek meg."
     }
-  ]
+  ],
+  "faqTitle": "Gyakran Ismételt Kérdések",
+  "supportCenter": "Támogatási Központ"
 }

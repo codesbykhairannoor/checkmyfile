@@ -1,67 +1,85 @@
 {
-  "title": "Text to PDF Converter — Offline & Instant",
-  "h1": "Convert Plain Text Files to PDF Locally",
-  "description": "Transform .txt files into clean, readable PDFs directly in your browser. No upload required. Ideal for users in Istanbul.",
+  "title": "Metinden PDF'ye Dönüştürücü — Çevrimdışı ve Anında",
+  "h1": "Düz Metin Dosyalarını Yerel Olarak PDF'ye Dönüştürün",
+  "description": ".txt dosyalarını doğrudan tarayıcınızda temiz, okunabilir PDF'lere dönüştürün. Yükleme gerekmez. %100 güvenli yerel işleme.",
+  "buttonText": "Convert Text",
+  "badges": [
+    "Kod Parçacıkları",
+    "Sunucu Günlükleri",
+    "El yazmaları"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Text Files Offline?",
-      "content": "Text files often contain code, scripts, or sensitive notes. Our offline converter ensures zero data transmission."
+      "type": "txt_hero_features",
+      "title": "Metin Dosyalarını Neden Çevrimdışına Dönüştürmelisiniz?",
+      "content": "Metin dosyaları genellikle kod, komut dosyaları veya hassas notlar içerir. Çevrimdışı dönüştürücümüz sıfır veri iletimi sağlar."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Text to PDF",
+      "type": "txt_how_to_steps",
+      "title": "Metni PDF'ye Dönüştürme",
       "steps": [
         {
-          "title": "Open Text File",
-          "description": "Select your .txt file or paste text directly."
+          "title": "Metin Dosyasını Aç",
+          "description": ".txt dosyanızı seçin veya metni doğrudan yapıştırın."
         },
         {
-          "title": "Choose Font & Style",
-          "description": "Pick font size and layout preferences."
+          "title": "Yazı Tipi ve Stili Seçin",
+          "description": "Yazı tipi boyutunu ve düzen tercihlerini seçin."
         },
         {
-          "title": "Download PDF",
-          "description": "Export your text as a beautifully formatted PDF."
+          "title": "PDF'yi İndir",
+          "description": "Metninizi güzel biçimlendirilmiş bir PDF olarak dışa aktarın."
         }
-      ]
+      ],
+      "badgeText": "Hızlı Kılavuz"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Text to PDF for Istanbul Developers",
-      "content": "Developers and writers in Istanbul use our tool to convert scripts and notes without cloud dependency."
+      "type": "txt_geo_targeting",
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Code Stays on Your Machine",
-      "content": "Source code, legal notes, medical records — text files converted with zero server involvement."
+      "type": "txt_privacy_security",
+      "title": "Kod Makinenizde Kalır",
+      "content": "Kaynak kodu, yasal notlar, tıbbi kayıtlar — sıfır sunucu katılımıyla dönüştürülen metin dosyaları.",
+      "badgeText": "Önce Güvenlik"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Text Rendering",
-      "content": "Convert any size text file to PDF in milliseconds. No upload, no compression, no delay."
+      "type": "txt_performance",
+      "title": "Anında Metin Oluşturma",
+      "content": "Herhangi bir boyuttaki metin dosyasını milisaniyeler içinde PDF'ye dönüştürün. Yükleme yok, sıkıştırma yok, gecikme yok.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [
     {
-      "q": "Can I paste text directly?",
-      "a": "Yes, you can type or paste text without uploading a file."
+      "q": "Metni doğrudan yapıştırabilir miyim?",
+      "a": "Evet, dosya yüklemeden metin yazabilir veya yapıştırabilirsiniz."
     },
     {
-      "q": "What fonts are available?",
-      "a": "Standard web fonts like Arial, Times New Roman, and monospace."
+      "q": "Hangi yazı tipleri mevcut?",
+      "a": "Arial, Times New Roman ve monospace gibi standart web yazı tipleri."
     },
     {
-      "q": "Is code syntax preserved?",
-      "a": "Monospace formatting is preserved for code blocks."
+      "q": "Kod sözdizimi korunuyor mu?",
+      "a": "Kod blokları için tek aralıklı biçimlendirme korunur."
     },
     {
-      "q": "Can I set page margins?",
-      "a": "Yes, customize top, bottom, left, and right margins."
+      "q": "Sayfa kenar boşluklarını ayarlayabilir miyim?",
+      "a": "Evet, üst, alt, sol ve sağ kenar boşluklarını özelleştirin."
     },
     {
-      "q": "Is this free?",
+      "q": "Bu bedava mı?",
       "a": "Evet, tamamen ücretsiz."
     }
-  ]
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi"
 }

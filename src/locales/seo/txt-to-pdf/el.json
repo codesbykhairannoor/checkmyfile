@@ -1,67 +1,85 @@
 {
-  "title": "Text to PDF Converter — Offline & Instant",
-  "h1": "Convert Plain Text Files to PDF Locally",
-  "description": "Transform .txt files into clean, readable PDFs directly in your browser. No upload required. Ideal for users in Athens.",
+  "title": "Μετατροπέας κειμένου σε PDF — Εκτός σύνδεσης & Άμεση",
+  "h1": "Μετατροπή αρχείων απλού κειμένου σε PDF τοπικά",
+  "description": "Μετατρέψτε αρχεία .txt σε καθαρά, ευανάγνωστα PDF απευθείας στο πρόγραμμα περιήγησής σας. Δεν απαιτείται μεταφόρτωση. 100% ασφαλής τοπική επεξεργασία.",
+  "buttonText": "Convert Text",
+  "badges": [
+    "Αποσπάσματα κώδικα",
+    "Αρχεία καταγραφής διακομιστή",
+    "Χειρόγραφα"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Text Files Offline?",
-      "content": "Text files often contain code, scripts, or sensitive notes. Our offline converter ensures zero data transmission."
+      "type": "txt_hero_features",
+      "title": "Γιατί να μετατρέψετε αρχεία κειμένου εκτός σύνδεσης;",
+      "content": "Τα αρχεία κειμένου συχνά περιέχουν κώδικα, σενάρια ή ευαίσθητες σημειώσεις. Ο μετατροπέας μας εκτός σύνδεσης εξασφαλίζει μηδενική μετάδοση δεδομένων."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Text to PDF",
+      "type": "txt_how_to_steps",
+      "title": "Πώς να μετατρέψετε κείμενο σε PDF",
       "steps": [
         {
-          "title": "Open Text File",
-          "description": "Select your .txt file or paste text directly."
+          "title": "Άνοιγμα αρχείου κειμένου",
+          "description": "Επιλέξτε το αρχείο .txt ή επικολλήστε απευθείας κείμενο."
         },
         {
-          "title": "Choose Font & Style",
-          "description": "Pick font size and layout preferences."
+          "title": "Επιλέξτε Γραμματοσειρά & Στυλ",
+          "description": "Επιλέξτε μέγεθος γραμματοσειράς και προτιμήσεις διάταξης."
         },
         {
-          "title": "Download PDF",
-          "description": "Export your text as a beautifully formatted PDF."
+          "title": "Λήψη PDF",
+          "description": "Εξάγετε το κείμενό σας ως ένα όμορφα διαμορφωμένο PDF."
         }
-      ]
+      ],
+      "badgeText": "Γρήγορος Οδηγός"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Text to PDF for Athens Developers",
-      "content": "Developers and writers in Athens use our tool to convert scripts and notes without cloud dependency."
+      "type": "txt_geo_targeting",
+      "title": "100% Ασφαλής Τοπική Επεξεργασία",
+      "content": "Όλες οι λειτουργίες εκτελούνται απευθείας στην τοπική συσκευή σας. Χρησιμοποιούμε προηγμένη τεχνολογία WebAssembly για να επεξεργαζόμαστε τα έγγραφά σας χωρίς ποτέ να τα ανεβάσουμε σε εξωτερικούς διακομιστές, διασφαλίζοντας πλήρες απόρρητο.",
+      "badgeText": "Τοπική Επεξεργασία"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Code Stays on Your Machine",
-      "content": "Source code, legal notes, medical records — text files converted with zero server involvement."
+      "type": "txt_privacy_security",
+      "title": "Ο κώδικας παραμένει στο μηχάνημά σας",
+      "content": "Πηγαίος κώδικας, νομικές σημειώσεις, ιατρικά αρχεία — αρχεία κειμένου που μετατρέπονται με μηδενική συμμετοχή διακομιστή.",
+      "badgeText": "Πρώτα η ασφάλεια"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Text Rendering",
-      "content": "Convert any size text file to PDF in milliseconds. No upload, no compression, no delay."
+      "type": "txt_performance",
+      "title": "Άμεση απόδοση κειμένου",
+      "content": "Μετατρέψτε οποιοδήποτε μέγεθος αρχείου κειμένου σε PDF σε χιλιοστά του δευτερολέπτου. Χωρίς μεταφόρτωση, χωρίς συμπίεση, χωρίς καθυστέρηση.",
+      "badgeText": "Αστραπιαία"
     }
   ],
   "faqs": [
     {
-      "q": "Can I paste text directly?",
-      "a": "Yes, you can type or paste text without uploading a file."
+      "q": "Μπορώ να επικολλήσω απευθείας κείμενο;",
+      "a": "Ναι, μπορείτε να πληκτρολογήσετε ή να επικολλήσετε κείμενο χωρίς να ανεβάσετε αρχείο."
     },
     {
-      "q": "What fonts are available?",
-      "a": "Standard web fonts like Arial, Times New Roman, and monospace."
+      "q": "Ποιες γραμματοσειρές είναι διαθέσιμες;",
+      "a": "Τυπικές γραμματοσειρές ιστού όπως Arial, Times New Roman και monospace."
     },
     {
-      "q": "Is code syntax preserved?",
-      "a": "Monospace formatting is preserved for code blocks."
+      "q": "Διατηρείται η σύνταξη του κώδικα;",
+      "a": "Η μορφοποίηση Monospace διατηρείται για μπλοκ κώδικα."
     },
     {
-      "q": "Can I set page margins?",
-      "a": "Yes, customize top, bottom, left, and right margins."
+      "q": "Μπορώ να ορίσω περιθώρια σελίδας;",
+      "a": "Ναι, προσαρμόστε τα επάνω, κάτω, αριστερά και δεξιά περιθώρια."
     },
     {
-      "q": "Is this free?",
+      "q": "Αυτό είναι δωρεάν;",
       "a": "Ναι, εντελώς δωρεάν."
     }
-  ]
+  ],
+  "faqTitle": "Συχνές Ερωτήσεις",
+  "supportCenter": "Κέντρο Υποστήριξης"
 }

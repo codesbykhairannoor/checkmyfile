@@ -1,67 +1,85 @@
 {
-  "title": "Organize PDF Pages — Reorder & Delete Offline",
-  "h1": "Reorder, Delete, or Duplicate PDF Pages Locally",
-  "description": "Drag and drop to rearrange, remove, or duplicate PDF pages entirely in your browser. No upload. Great for users in Istanbul.",
+  "title": "PDF Sayfalarını Düzenleyin — Çevrimdışı Yeniden Sıralayın ve Silin",
+  "h1": "PDF Sayfalarını Yerel Olarak Yeniden Sıralayın, Silin veya Çoğaltın",
+  "description": "PDF sayfalarını tamamen tarayıcınızda yeniden düzenlemek, kaldırmak veya çoğaltmak için sürükleyip bırakın. Hızlı ve tamamen güvenli.",
+  "buttonText": "Organize Pages",
+  "badges": [
+    "Sürükle ve Bırak",
+    "Sayfaları Yeniden Sırala",
+    "Görsel Düzenleyici"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Organize PDFs Locally?",
-      "content": "Reorganizing page structure is an editing operation. Your internal document should stay internal during editing."
+      "type": "organize_hero_features",
+      "title": "PDF'leri Neden Yerel Olarak Düzenlemelisiniz?",
+      "content": "Sayfa yapısını yeniden düzenlemek bir düzenleme işlemidir. Dahili belgeniz düzenleme sırasında dahili kalmalıdır."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Organize PDF Pages",
+      "type": "organize_how_to_steps",
+      "title": "PDF Sayfaları Nasıl Düzenlenir",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to reorganize."
+          "title": "PDF'yi aç",
+          "description": "Yeniden düzenlemek istediğiniz PDF'yi yükleyin."
         },
         {
-          "title": "Drag to Reorder",
-          "description": "Drag page thumbnails to the desired position."
+          "title": "Yeniden Sıralamak için Sürükleyin",
+          "description": "Sayfa küçük resimlerini istediğiniz konuma sürükleyin."
         },
         {
-          "title": "Save Organized PDF",
-          "description": "Download the restructured PDF immediately."
+          "title": "Düzenlenmiş PDF'yi Kaydet",
+          "description": "Yeniden yapılandırılmış PDF'yi hemen indirin."
         }
-      ]
+      ],
+      "badgeText": "Hızlı Kılavuz"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Organization for Istanbul Teams",
-      "content": "Teams in Istanbul reorganize proposal and report PDFs without uploading to any cloud service."
+      "type": "organize_geo_targeting",
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Page Structure Is Private Business",
-      "content": "Reordering internal reports and proposals with zero data leaving your browser."
+      "type": "organize_privacy_security",
+      "title": "Sayfa Yapısı Özel Bir İştir",
+      "content": "Tarayıcınızdan çıkan sıfır veriyle dahili raporları ve teklifleri yeniden sıralamak.",
+      "badgeText": "Önce Güvenlik"
     },
     {
-      "type": "organizer_performance",
-      "title": "Reorganize Any PDF in Seconds",
-      "content": "Reorder pages in a 500-page document through a smooth drag-and-drop interface with zero upload."
+      "type": "organize_performance",
+      "title": "Herhangi Bir PDF'yi Saniyeler İçinde Yeniden Düzenleyin",
+      "content": "Sıfır yükleme ile sorunsuz bir sürükle ve bırak arayüzü aracılığıyla 500 sayfalık bir belgedeki sayfaları yeniden sıralayın.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [
     {
-      "q": "Can I delete pages?",
-      "a": "Yes, click the delete icon on any page thumbnail."
+      "q": "Sayfaları silebilir miyim?",
+      "a": "Evet, herhangi bir sayfa küçük resmindeki sil simgesini tıklayın."
     },
     {
-      "q": "Can I duplicate pages?",
-      "a": "Yes, duplicate individual pages with one click."
+      "q": "Sayfaları çoğaltabilir miyim?",
+      "a": "Evet, tek tıklamayla tek tek sayfaları çoğaltın."
     },
     {
-      "q": "Can I rotate while organizing?",
-      "a": "Yes, per-page rotation is available in the organizer."
+      "q": "Düzenleme sırasında rotasyon yapabilir miyim?",
+      "a": "Evet, düzenleyicide sayfa başına rotasyon mevcuttur."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No limit! Organize documents of any size."
+      "q": "Sayfa sınırlaması var mı?",
+      "a": "Sınır yok! Her boyuttaki belgeleri düzenleyin."
     },
     {
-      "q": "Is this free?",
+      "q": "Bu bedava mı?",
       "a": "Evet, tamamen ücretsiz."
     }
-  ]
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi"
 }

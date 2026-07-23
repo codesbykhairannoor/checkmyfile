@@ -1,67 +1,85 @@
 {
-  "title": "Password Protect PDF — Secure Files Offline",
-  "h1": "Add Password Protection to PDF Files Instantly",
-  "description": "Encrypt PDF files with AES-256 directly in your browser. Your document never leaves your device. Ideal for users in Kuala Lumpur.",
+  "title": "Lindungi Kata Laluan PDF — Fail Selamat Luar Talian",
+  "h1": "Tambahkan Perlindungan Kata Laluan pada Fail PDF Serta-merta",
+  "description": "Sulitkan fail PDF dengan AES-256 terus dalam penyemak imbas anda. Dokumen anda tidak pernah meninggalkan peranti anda. 100% pemprosesan tempatan selamat.",
+  "buttonText": "Protect PDF",
+  "badges": [
+    "Penyulitan AES-256",
+    "Kata Laluan Selamat",
+    "Sebelah Pelanggan Sahaja"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "protect_hero_features",
-      "title": "Why Protect PDFs Locally?",
-      "content": "Adding a password means the file is sensitive. Never upload sensitive files to a cloud encryptor. Ours runs entirely offline with AES-256 encryption."
+      "title": "Mengapa Melindungi PDF Secara Tempatan?",
+      "content": "Menambah kata laluan bermakna fail itu sensitif. Jangan sekali-kali memuat naik fail sensitif ke penyulitan awan. Kami berjalan di luar talian sepenuhnya dengan penyulitan AES-256."
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Password Protect a PDF",
+      "title": "Bagaimana Kata Laluan Melindungi PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF you want to lock."
+          "title": "Buka PDF",
+          "description": "Pilih PDF yang anda mahu kunci."
         },
         {
-          "title": "Set Password",
-          "description": "Choose a strong password for encryption."
+          "title": "Tetapkan Kata Laluan",
+          "description": "Pilih kata laluan yang kukuh untuk penyulitan."
         },
         {
-          "title": "Download Protected PDF",
-          "description": "Get your AES-256 encrypted PDF immediately."
+          "title": "Muat turun PDF Dilindungi",
+          "description": "Dapatkan PDF yang disulitkan AES-256 anda dengan segera."
         }
-      ]
+      ],
+      "badgeText": "Panduan Pantas"
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Vault-Level PDF Protection for Kuala Lumpur",
-      "content": "Legal and finance professionals in Kuala Lumpur encrypt documents with AES-256 strength without exposing files to any server."
+      "title": "100% Pemprosesan Tempatan Selamat",
+      "content": "Semua operasi dilakukan terus pada peranti tempatan anda. Kami menggunakan teknologi WebAssembly termaju untuk memproses dokumen anda tanpa pernah memuat naiknya ke pelayan luaran, memastikan privasi lengkap.",
+      "badgeText": "Pemprosesan Setempat"
     },
     {
       "type": "protect_privacy_security",
-      "title": "AES-256 Encryption — Bank-Grade, Offline",
-      "content": "Military-grade AES-256 encryption runs in your browser. No key is ever transmitted to any server."
+      "title": "Penyulitan AES-256 — Gred Bank, Luar Talian",
+      "content": "Penyulitan AES-256 gred tentera dijalankan dalam penyemak imbas anda. Tiada kunci pernah dihantar ke mana-mana pelayan.",
+      "badgeText": "Keselamatan Diutamakan"
     },
     {
       "type": "protect_performance",
-      "title": "Encrypt Any PDF in Under 1 Second",
-      "content": "AES-256 processing locally takes milliseconds — no upload, no queue, no wait."
+      "title": "Sulitkan Mana-mana PDF dalam Bawah 1 Saat",
+      "content": "Pemprosesan AES-256 secara tempatan mengambil masa milisaat — tiada muat naik, tiada giliran, tiada tunggu.",
+      "badgeText": "Sepantas Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "What encryption standard is used?",
-      "a": "AES-256, the same standard used by banks and governments."
+      "q": "Apakah standard penyulitan yang digunakan?",
+      "a": "AES-256, standard yang sama digunakan oleh bank dan kerajaan."
     },
     {
-      "q": "Can I set different owner and user passwords?",
-      "a": "Yes, you can set both separately."
+      "q": "Bolehkah saya menetapkan kata laluan pemilik dan pengguna yang berbeza?",
+      "a": "Ya, anda boleh menetapkan kedua-duanya secara berasingan."
     },
     {
-      "q": "Is the original file modified?",
-      "a": "No, a new encrypted copy is created."
+      "q": "Adakah fail asal diubah suai?",
+      "a": "Tidak, salinan disulitkan baharu dibuat."
     },
     {
-      "q": "Can I restrict printing or editing?",
-      "a": "Yes, permission restrictions can be set alongside the password."
+      "q": "Bolehkah saya menyekat pencetakan atau penyuntingan?",
+      "a": "Ya, sekatan kebenaran boleh ditetapkan bersama kata laluan."
     },
     {
-      "q": "Is this free?",
+      "q": "Adakah ini percuma?",
       "a": "Ya, percuma sepenuhnya."
     }
-  ]
+  ],
+  "faqTitle": "Soalan Lazim",
+  "supportCenter": "Pusat Sokongan"
 }

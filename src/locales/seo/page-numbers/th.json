@@ -1,67 +1,85 @@
 {
-  "title": "Add Page Numbers to PDF — Offline Number Stamp",
-  "h1": "Insert Page Numbers into PDF Documents Locally",
-  "description": "Stamp page numbers at the header or footer of your PDF entirely in your browser. No upload. Ideal for users in Bangkok.",
+  "title": "เพิ่มหมายเลขหน้าลงใน PDF — การประทับหมายเลขแบบออฟไลน์",
+  "h1": "แทรกหมายเลขหน้าลงในเอกสาร PDF ในเครื่อง",
+  "description": "ประทับตราหมายเลขหน้าที่ส่วนหัวหรือส่วนท้ายของ PDF ของคุณในเบราว์เซอร์ของคุณ รวดเร็วและปลอดภัยอย่างสมบูรณ์",
+  "buttonText": "Add Page Numbers",
+  "badges": [
+    "ตำแหน่งที่กำหนดเอง",
+    "ส่วนหัวและส่วนท้าย",
+    "การนับเลขเบตส์"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Add Page Numbers Offline?",
-      "content": "Page numbers are a formatting step, not a reason to upload confidential documents to a cloud service."
+      "type": "pagenum_hero_features",
+      "title": "เหตุใดจึงต้องเพิ่มหมายเลขหน้าแบบออฟไลน์",
+      "content": "หมายเลขหน้าเป็นขั้นตอนการจัดรูปแบบ ไม่ใช่เหตุผลในการอัปโหลดเอกสารที่เป็นความลับไปยังบริการคลาวด์"
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Add Page Numbers",
+      "type": "pagenum_how_to_steps",
+      "title": "วิธีเพิ่มหมายเลขหน้า",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to number."
+          "title": "เปิด PDF",
+          "description": "เลือก PDF เป็นหมายเลข"
         },
         {
-          "title": "Configure Style",
-          "description": "Choose position, format (1/12, Page 1, i, ii…), and font."
+          "title": "กำหนดค่าสไตล์",
+          "description": "เลือกตำแหน่ง รูปแบบ (1/12, หน้า 1, i, ii…) และแบบอักษร"
         },
         {
-          "title": "Apply & Download",
-          "description": "Download your paginated PDF instantly."
+          "title": "สมัครและดาวน์โหลด",
+          "description": "ดาวน์โหลด PDF แบบแบ่งหน้าของคุณได้ทันที"
         }
-      ]
+      ],
+      "badgeText": "คู่มือฉบับย่อ"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Page Numbering for Bangkok Legal Docs",
-      "content": "Legal professionals in Bangkok number briefs and reports locally without cloud service dependency."
+      "type": "pagenum_geo_targeting",
+      "title": "การประมวลผลภายในที่ปลอดภัย 100%",
+      "content": "การดำเนินการทั้งหมดดำเนินการโดยตรงบนอุปกรณ์ท้องถิ่นของคุณ เราใช้เทคโนโลยี WebAssembly ขั้นสูงเพื่อประมวลผลเอกสารของคุณโดยไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ภายนอก เพื่อให้มั่นใจถึงความเป็นส่วนตัวโดยสมบูรณ์",
+      "badgeText": "การประมวลผลในท้องถิ่น"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Internal Documents Stay Numbered & Private",
-      "content": "Add page numbers to contracts and confidential reports without any server involvement."
+      "type": "pagenum_privacy_security",
+      "title": "เอกสารภายในมีหมายเลขและเป็นส่วนตัว",
+      "content": "เพิ่มหมายเลขหน้าในสัญญาและรายงานที่เป็นความลับโดยไม่ต้องเกี่ยวข้องกับเซิร์ฟเวอร์",
+      "badgeText": "ความปลอดภัยต้องมาก่อน"
     },
     {
-      "type": "organizer_performance",
-      "title": "Number a 1000-Page PDF Instantly",
-      "content": "Stamping page numbers locally takes milliseconds for any size document."
+      "type": "pagenum_performance",
+      "title": "กำหนดหมายเลข PDF 1,000 หน้าทันที",
+      "content": "การประทับหมายเลขหน้าภายในเครื่องจะใช้เวลาเป็นมิลลิวินาทีสำหรับเอกสารขนาดใดก็ได้",
+      "badgeText": "เร็วปานสายฟ้า"
     }
   ],
   "faqs": [
     {
-      "q": "What number formats are available?",
-      "a": "Arabic (1, 2, 3), Roman (i, ii, iii), and letter (a, b, c) formats."
+      "q": "มีรูปแบบตัวเลขอะไรบ้าง?",
+      "a": "รูปแบบอารบิก (1, 2, 3) โรมัน (i, ii, iii) และตัวอักษร (a, b, c)"
     },
     {
-      "q": "Can I start from a custom number?",
-      "a": "Yes, set any starting page number."
+      "q": "ฉันสามารถเริ่มจากหมายเลขที่กำหนดเองได้หรือไม่",
+      "a": "ใช่ กำหนดหมายเลขหน้าเริ่มต้น"
     },
     {
-      "q": "Can I skip numbering the first page?",
-      "a": "Yes, set the page offset to skip cover pages."
+      "q": "ฉันสามารถข้ามการเรียงลำดับหน้าแรกได้หรือไม่",
+      "a": "ใช่ ตั้งค่าออฟเซ็ตหน้าให้ข้ามหน้าปก"
     },
     {
-      "q": "Where can I position numbers?",
-      "a": "Header-left, header-center, header-right, and same for footer."
+      "q": "ฉันจะวางตำแหน่งหมายเลขได้ที่ไหน",
+      "a": "ส่วนหัวซ้าย, ส่วนหัวตรงกลาง, ส่วนหัวด้านขวา และเหมือนกันสำหรับส่วนท้าย"
     },
     {
-      "q": "Is this free?",
-      "a": "ใช่ ฟรีทั้งหมด"
+      "q": "ฟรีหรือเปล่า?",
+      "a": "ใช่ ฟรีเสมอ"
     }
-  ]
+  ],
+  "faqTitle": "คำถามที่พบบ่อย",
+  "supportCenter": "ศูนย์สนับสนุน"
 }

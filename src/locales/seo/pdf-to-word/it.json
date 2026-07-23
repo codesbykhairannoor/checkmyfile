@@ -1,67 +1,80 @@
 {
-  "title": "PDF to Word Converter — Offline & Editable",
-  "h1": "Convert PDF to Editable Word Documents Locally",
-  "description": "Transform PDFs back into .docx files you can edit, right in your browser. No upload needed. Great for users in Rome.",
+  "title": "Convertitore da PDF a Word: offline e modificabile",
+  "h1": "Converti PDF in documenti Word modificabili localmente",
+  "description": "Trasforma nuovamente i PDF in file .docx che puoi modificare, direttamente nel tuo browser. Nessun caricamento necessario. Ottimo per gli utenti di Roma.",
+  "buttonText": "Converti in Word",
+  "badges": [
+    "Documenti modificabili",
+    "Recupero del testo",
+    "Processo offline"
+  ],
+  "stats": [
+    "100%",
+    "Locale",
+    "0s",
+    "Tempo di attesa"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF Back Offline?",
-      "content": "When you need to edit a PDF, converting it offline keeps your original document confidential."
+      "title": "Perché usare offline?",
+      "content": "Quando devi modificare un PDF, la conversione offline mantiene riservato il documento originale."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Word",
+      "title": "Come usare",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF file you need to convert."
+          "title": "Carica PDF",
+          "description": "Seleziona il file PDF che devi convertire."
         },
         {
-          "title": "Detect Text Layers",
-          "description": "Our engine reads text and structure from the PDF."
+          "title": "Rileva livelli di testo",
+          "description": "Il nostro motore legge il testo e la struttura dal PDF."
         },
         {
-          "title": "Download .docx",
-          "description": "Get your editable Word document ready to modify."
+          "title": "Scarica il file .docx",
+          "description": "Prepara il tuo documento Word modificabile per la modifica."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "PDF to Word for Rome Offices",
-      "content": "Office workers in Rome use our tool to recover editable text from PDFs without cloud dependency."
+      "title": "Da PDF a Word per gli uffici di Roma",
+      "content": "Gli impiegati di Roma utilizzano il nostro strumento per recuperare testo modificabile da PDF senza dipendenza dal cloud."
     },
     {
       "type": "split_privacy_security",
-      "title": "Legal Documents Stay Confidential",
-      "content": "Contracts, NDAs, and reports converted back to Word entirely in your browser memory."
+      "title": "I documenti legali rimangono riservati",
+      "content": "Contratti, NDA e report riconvertiti in Word interamente nella memoria del browser."
     },
     {
       "type": "split_performance",
-      "title": "Recover Editable Text in Seconds",
-      "content": "Extract text from a 50-page PDF in under 3 seconds without uploading a single byte."
+      "title": "Recupera testo modificabile in pochi secondi",
+      "content": "Estrai testo da un PDF di 50 pagine in meno di 3 secondi senza caricare un singolo byte."
     }
   ],
   "faqs": [
     {
-      "q": "Is all text preserved?",
-      "a": "Yes, text from all layers is extracted and formatted."
+      "q": "Tutto il testo è conservato?",
+      "a": "Sì, il testo di tutti i livelli viene estratto e formattato."
     },
     {
-      "q": "Does it work on scanned PDFs?",
-      "a": "For scanned PDFs, use our OCR tool first."
+      "q": "Funziona su PDF scansionati?",
+      "a": "Per i PDF scansionati, utilizza prima il nostro strumento OCR."
     },
     {
-      "q": "Are images included in the .docx?",
-      "a": "Yes, embedded images are included in the output."
+      "q": "Le immagini sono incluse nel file .docx?",
+      "a": "Sì, le immagini incorporate sono incluse nell'output."
     },
     {
-      "q": "Can I edit the .docx after?",
-      "a": "Absolutely, the output is a fully editable Word document."
+      "q": "Posso modificare il file .docx dopo?",
+      "a": "Assolutamente, l'output è un documento Word completamente modificabile."
     },
     {
-      "q": "Is this free?",
+      "q": "E' gratis?",
       "a": "Sì, completamente gratuito."
     }
-  ]
+  ],
+  "faqTitle": "Domande Frequenti"
 }

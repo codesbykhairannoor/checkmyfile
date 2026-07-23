@@ -1,67 +1,85 @@
 {
-  "title": "Resize PDF Pages — Change Paper Size Offline",
-  "h1": "Resize PDF Pages to A4, Letter, or Custom Sizes",
-  "description": "Change the paper size of every PDF page to A4, US Letter, or custom dimensions entirely in your browser. No upload. Ideal for users in Seoul.",
+  "title": "PDF 페이지 크기 조정 — 오프라인으로 용지 크기 변경",
+  "h1": "PDF 페이지 크기를 A4, Letter 또는 사용자 정의 크기로 조정",
+  "description": "브라우저에서 모든 PDF 페이지의 용지 크기를 A4, US Letter 또는 사용자 정의 크기로 완전히 변경하세요. 업로드가 없습니다. 100% 안전한 로컬 처리.",
+  "buttonText": "Resize Pages",
+  "badges": [
+    "A4, Letter, 사용자 정의",
+    "여백 추가",
+    "형식 수정"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Resize PDFs Locally?",
-      "content": "Preparing documents for printing requires proper page sizing. Resize locally without uploading internal documents to the cloud."
+      "type": "resize_hero_features",
+      "title": "PDF 크기를 로컬에서 조정하는 이유는 무엇입니까?",
+      "content": "인쇄할 문서를 준비하려면 적절한 페이지 크기가 필요합니다. 내부 문서를 클라우드에 업로드하지 않고 로컬에서 크기를 조정합니다."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Resize PDF Pages",
+      "type": "resize_how_to_steps",
+      "title": "PDF 페이지 크기를 조정하는 방법",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page dimensions."
+          "title": "PDF 열기",
+          "description": "페이지 크기가 잘못된 PDF를 로드하십시오."
         },
         {
-          "title": "Select Target Size",
-          "description": "Choose A4, Letter, A3, or enter custom dimensions."
+          "title": "대상 크기 선택",
+          "description": "A4, Letter, A3를 선택하거나 사용자 정의 크기를 입력합니다."
         },
         {
-          "title": "Download Resized PDF",
-          "description": "Get your properly sized document instantly."
+          "title": "크기가 조정된 PDF 다운로드",
+          "description": "적절한 크기의 문서를 즉시 가져옵니다."
         }
-      ]
+      ],
+      "badgeText": "빠른 가이드"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Resizing for Seoul Print Shops",
-      "content": "Print shops and offices in Seoul resize documents to standard sizes without cloud dependency."
+      "type": "resize_geo_targeting",
+      "title": "100% 안전한 로컬 처리",
+      "content": "모든 작업은 로컬 장치에서 직접 수행됩니다. 우리는 고급 WebAssembly 기술을 사용하여 문서를 외부 서버에 업로드하지 않고 처리하여 완벽한 개인 정보 보호를 보장합니다.",
+      "badgeText": "로컬 처리"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Internal Documents Stay Internal",
-      "content": "Resize business reports and proposals without any server-side processing."
+      "type": "resize_privacy_security",
+      "title": "내부 문서 내부 유지",
+      "content": "서버 측 처리 없이 비즈니스 보고서 및 제안의 크기를 조정합니다.",
+      "badgeText": "보안 우선"
     },
     {
-      "type": "transform_performance",
-      "title": "Resize Hundreds of Pages Instantly",
-      "content": "Resizing a 500-page PDF takes under 2 seconds. All in your browser."
+      "type": "resize_performance",
+      "title": "수백 페이지의 크기를 즉시 조정",
+      "content": "500페이지 분량의 PDF 크기를 조정하는 데는 2초 미만이 소요됩니다. 모든 것이 브라우저에 있습니다.",
+      "badgeText": "번개처럼 빠르게"
     }
   ],
   "faqs": [
     {
-      "q": "What sizes are available?",
-      "a": "A4, A3, A5, US Letter, Legal, and custom dimensions."
+      "q": "어떤 사이즈를 이용할 수 있나요?",
+      "a": "A4, A3, A5, US Letter, Legal 및 사용자 정의 치수."
     },
     {
-      "q": "Does content scale with the page?",
-      "a": "Yes, content is scaled proportionally by default."
+      "q": "콘텐츠가 페이지에 따라 확장되나요?",
+      "a": "예, 콘텐츠는 기본적으로 비례적으로 크기가 조정됩니다."
     },
     {
-      "q": "Can I resize individual pages?",
-      "a": "Yes, apply different sizes to specific pages."
+      "q": "개별 페이지의 크기를 조정할 수 있나요?",
+      "a": "예, 특정 페이지에 다양한 크기를 적용합니다."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "Vector content is re-rendered perfectly; images may scale."
+      "q": "품질에 영향이 있나요?",
+      "a": "벡터 콘텐츠가 완벽하게 다시 렌더링됩니다. 이미지 크기가 조정될 수 있습니다."
     },
     {
-      "q": "Is this free?",
+      "q": "이거 무료인가요?",
       "a": "예, 완전 무료입니다."
     }
-  ]
+  ],
+  "faqTitle": "자주 묻는 질문",
+  "supportCenter": "지원 센터"
 }

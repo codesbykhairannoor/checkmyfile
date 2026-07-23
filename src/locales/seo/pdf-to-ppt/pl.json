@@ -1,67 +1,80 @@
 {
-  "title": "PDF to PowerPoint — Recover Editable Slides",
-  "h1": "Convert PDF to PowerPoint Presentation Offline",
-  "description": "Transform PDF documents back into editable .pptx presentations locally. No cloud needed. Perfect for users in Warsaw.",
+  "title": "PDF do programu PowerPoint — odzyskaj edytowalne slajdy",
+  "h1": "Konwertuj plik PDF na prezentację programu PowerPoint w trybie offline",
+  "description": "Lokalnie przekształcaj dokumenty PDF z powrotem w edytowalne prezentacje w formacie .pptx. Nie potrzeba chmury. Idealny dla użytkowników w Warszawie.",
+  "buttonText": "Konwertuj na PPT",
+  "badges": [
+    "Edytowalne slajdy",
+    "Odzyskiwanie prezentacji",
+    "Szybka konwersja"
+  ],
+  "stats": [
+    "100%",
+    "Lokalny",
+    "0s",
+    "Czas oczekiwania"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF to PowerPoint Offline?",
-      "content": "Recovering slide content from a PDF for editing should not require uploading sensitive decks to a cloud service."
+      "title": "Dlaczego używać offline?",
+      "content": "Odzyskiwanie zawartości slajdów z pliku PDF do edycji nie powinno wymagać przesyłania poufnych prezentacji do usługi w chmurze."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to PowerPoint",
+      "title": "Jak używać",
       "steps": [
         {
-          "title": "Upload PDF",
-          "description": "Select the PDF containing your slide content."
+          "title": "Prześlij plik PDF",
+          "description": "Wybierz plik PDF zawierający zawartość slajdu."
         },
         {
-          "title": "Map Pages to Slides",
-          "description": "Each PDF page becomes one editable slide."
+          "title": "Mapuj strony na slajdy",
+          "description": "Każda strona PDF staje się jednym edytowalnym slajdem."
         },
         {
-          "title": "Download .pptx",
-          "description": "Get your fully editable PowerPoint presentation."
+          "title": "Pobierz plik .pptx",
+          "description": "Uzyskaj w pełni edytowalną prezentację programu PowerPoint."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "Slide Recovery in Warsaw",
-      "content": "Presenters in Warsaw use our tool to recover and re-edit presentations from old PDF archives."
+      "title": "Odzyskiwanie slajdów w Warszawie",
+      "content": "Prezenterzy w Warszawie korzystają z naszego narzędzia do odzyskiwania i ponownej edycji prezentacji ze starych archiwów PDF."
     },
     {
       "type": "split_privacy_security",
-      "title": "Your Slides Are Never Exposed",
-      "content": "Confidential slide decks recovered and converted without any server interaction."
+      "title": "Twoje slajdy nigdy nie są eksponowane",
+      "content": "Poufne slajdy odzyskane i przekonwertowane bez interakcji z serwerem."
     },
     {
       "type": "split_performance",
-      "title": "Convert Slides at Lightning Speed",
-      "content": "A 60-slide PDF converted to PowerPoint in under 10 seconds with zero upload time."
+      "title": "Konwertuj slajdy z błyskawiczną szybkością",
+      "content": "Plik PDF zawierający 60 slajdów przekonwertowany do formatu programu PowerPoint w niecałe 10 sekund przy zerowym czasie przesyłania."
     }
   ],
   "faqs": [
     {
-      "q": "Are slide layouts preserved?",
-      "a": "Content is mapped to slides; some layout adjustments may be needed."
+      "q": "Czy układy slajdów są zachowane?",
+      "a": "Treść jest mapowana na slajdy; mogą być potrzebne pewne zmiany w układzie."
     },
     {
-      "q": "Can I edit the slides after?",
-      "a": "Yes, the .pptx file is fully editable in PowerPoint or Google Slides."
+      "q": "Czy mogę później edytować slajdy?",
+      "a": "Tak, plik .pptx można w pełni edytować w programie PowerPoint lub Prezentacjach Google."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No, convert as many pages as your RAM allows."
+      "q": "Czy istnieje limit stron?",
+      "a": "Nie, przekonwertuj tyle stron, na ile pozwala Twoja pamięć RAM."
     },
     {
-      "q": "Does it work with image-heavy PDFs?",
-      "a": "Yes, images are embedded in each slide."
+      "q": "Czy to działa z plikami PDF zawierającymi dużo obrazów?",
+      "a": "Tak, obrazy są osadzone w każdym slajdzie."
     },
     {
-      "q": "Is this free?",
-      "a": "Tak, całkowicie bezpłatnie."
+      "q": "Czy to jest bezpłatne?",
+      "a": "Tak, całkowicie darmowe."
     }
-  ]
+  ],
+  "faqTitle": "Często zadawane pytania"
 }

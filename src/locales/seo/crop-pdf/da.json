@@ -1,67 +1,85 @@
 {
-  "title": "Crop PDF Margins — Trim Pages Offline",
-  "h1": "Crop and Trim PDF Page Margins Instantly",
-  "description": "Remove unwanted whitespace or crop PDF pages to custom dimensions, all locally. No upload. Ideal for users in Copenhagen.",
+  "title": "Beskær PDF-margener — Trim sider offline",
+  "h1": "Beskær og trim PDF-sidemargener øjeblikkeligt",
+  "description": "Fjern uønsket mellemrum eller beskær PDF-sider til tilpassede dimensioner, alt sammen lokalt. Hurtigt og helt sikkert.",
+  "buttonText": "Crop PDF",
+  "badges": [
+    "Visuel margin editor",
+    "Ensartet beskæring",
+    "Nul latenstid"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Crop PDFs Locally?",
-      "content": "Scanned documents often have large margins. Crop them locally without exposing internal document structure to the cloud."
+      "type": "crop_hero_features",
+      "title": "Hvorfor beskære PDF'er lokalt?",
+      "content": "Scannede dokumenter har ofte store marginer. Beskær dem lokalt uden at udsætte intern dokumentstruktur for skyen."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Crop PDF Pages",
+      "type": "crop_how_to_steps",
+      "title": "Sådan beskærer du PDF-sider",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to crop."
+          "title": "Åbn PDF",
+          "description": "Indlæs den PDF, du vil beskære."
         },
         {
-          "title": "Set Margins",
-          "description": "Drag guides or enter exact margin values."
+          "title": "Indstil marginer",
+          "description": "Træk hjælpelinjer eller indtast nøjagtige margenværdier."
         },
         {
-          "title": "Export Cropped PDF",
-          "description": "Download the trimmed PDF instantly."
+          "title": "Eksportér beskåret PDF",
+          "description": "Download den trimmede PDF med det samme."
         }
-      ]
+      ],
+      "badgeText": "Hurtig guide"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Precise Cropping for Copenhagen Users",
-      "content": "Architects and designers in Copenhagen use our crop tool to clean up scanned blueprints without cloud uploads."
+      "type": "crop_geo_targeting",
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle handlinger udføres direkte på din lokale enhed. Vi bruger avanceret WebAssembly-teknologi til at behandle dine dokumenter uden nogensinde at uploade dem til eksterne servere, hvilket sikrer fuldstændigt privatliv.",
+      "badgeText": "Lokal behandling"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Technical Documents Stay Local",
-      "content": "Architectural plans and legal PDFs cropped locally without any server round-trip."
+      "type": "crop_privacy_security",
+      "title": "Tekniske dokumenter Forbliv lokalt",
+      "content": "Arkitektoniske planer og juridiske PDF'er beskåret lokalt uden nogen server tur-retur.",
+      "badgeText": "Sikkerhed først"
     },
     {
-      "type": "split_performance",
-      "title": "Crop Any Size PDF Instantly",
-      "content": "Crop margins from a 200-page document in under 2 seconds. All in your browser."
+      "type": "crop_performance",
+      "title": "Beskær enhver størrelse PDF øjeblikkeligt",
+      "content": "Beskæringsmargener fra et 200-siders dokument på under 2 sekunder. Alt sammen i din browser.",
+      "badgeText": "Lynhurtigt"
     }
   ],
   "faqs": [
     {
-      "q": "Can I crop all pages uniformly?",
-      "a": "Yes, apply the same crop to every page at once."
+      "q": "Kan jeg beskære alle sider ensartet?",
+      "a": "Ja, anvend den samme beskæring på hver side på én gang."
     },
     {
-      "q": "Can I crop individual pages?",
-      "a": "Yes, you can set per-page crop values."
+      "q": "Kan jeg beskære individuelle sider?",
+      "a": "Ja, du kan indstille beskæringsværdier pr. side."
     },
     {
-      "q": "What are the minimum margin values?",
-      "a": "You can crop all the way to 0 margin on any side."
+      "q": "Hvad er minimumsmarginværdierne?",
+      "a": "Du kan beskære hele vejen til 0 margen på enhver side."
     },
     {
-      "q": "Will content be cut off?",
-      "a": "Only whitespace is removed by default; you control the guides."
+      "q": "Bliver indholdet afskåret?",
+      "a": "Kun mellemrum fjernes som standard; du styrer guiderne."
     },
     {
-      "q": "Is this free?",
+      "q": "Er dette gratis?",
       "a": "Ja, helt gratis."
     }
-  ]
+  ],
+  "faqTitle": "Ofte stillede spørgsmål",
+  "supportCenter": "Supportcenter"
 }

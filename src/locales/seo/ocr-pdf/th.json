@@ -1,67 +1,85 @@
 {
-  "title": "OCR PDF — Make Scans Searchable Offline",
-  "h1": "Extract and Recognize Text from Scanned PDFs",
-  "description": "Run OCR on scanned PDFs to make them searchable and copyable, entirely in your browser using Tesseract. No upload. Great for users in Bangkok.",
+  "title": "OCR PDF — ทำให้การสแกนสามารถค้นหาได้แบบออฟไลน์",
+  "h1": "แยกและจดจำข้อความจาก PDF ที่สแกน",
+  "description": "เรียกใช้ OCR บน PDF ที่สแกนเพื่อให้สามารถค้นหาและคัดลอกได้ทั้งหมดในเบราว์เซอร์ของคุณโดยใช้ Tesseract ไม่มีการอัพโหลด การประมวลผลภายในที่ปลอดภัย 100%",
+  "buttonText": "Run OCR",
+  "badges": [
+    "แยกข้อความ",
+    "PDF ที่ค้นหาได้",
+    "การรับรู้ของเอไอ"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Run OCR Locally?",
-      "content": "Scanned PDFs contain sensitive text. Running OCR on a cloud service exposes that text to a third party. Ours runs 100% offline."
+      "type": "ocr_hero_features",
+      "title": "เหตุใดจึงเรียกใช้ OCR ในเครื่อง",
+      "content": "PDF ที่สแกนมีข้อความที่ละเอียดอ่อน การเรียกใช้ OCR บนบริการคลาวด์จะทำให้ข้อความนั้นถูกเปิดเผยต่อบุคคลที่สาม ของเราทำงานแบบออฟไลน์ 100%"
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to OCR a PDF",
+      "type": "ocr_how_to_steps",
+      "title": "วิธี OCR เป็น PDF",
       "steps": [
         {
-          "title": "Load Scanned PDF",
-          "description": "Select the image-based or scanned PDF."
+          "title": "โหลด PDF ที่สแกน",
+          "description": "เลือก PDF ตามรูปภาพหรือที่สแกน"
         },
         {
-          "title": "Select Language",
-          "description": "Choose the document language for better accuracy."
+          "title": "เลือกภาษา",
+          "description": "เลือกภาษาของเอกสารเพื่อความแม่นยำยิ่งขึ้น"
         },
         {
-          "title": "Download Searchable PDF",
-          "description": "Get a text-layer PDF ready to search and copy."
+          "title": "ดาวน์โหลด PDF ที่ค้นหาได้",
+          "description": "เตรียม PDF เลเยอร์ข้อความให้พร้อมสำหรับการค้นหาและคัดลอก"
         }
-      ]
+      ],
+      "badgeText": "คู่มือฉบับย่อ"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "OCR Tool for Bangkok Archives",
-      "content": "Government agencies and businesses in Bangkok digitize paper archives using our offline OCR tool."
+      "type": "ocr_geo_targeting",
+      "title": "การประมวลผลภายในที่ปลอดภัย 100%",
+      "content": "การดำเนินการทั้งหมดดำเนินการโดยตรงบนอุปกรณ์ท้องถิ่นของคุณ เราใช้เทคโนโลยี WebAssembly ขั้นสูงเพื่อประมวลผลเอกสารของคุณโดยไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ภายนอก เพื่อให้มั่นใจถึงความเป็นส่วนตัวโดยสมบูรณ์",
+      "badgeText": "การประมวลผลในท้องถิ่น"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Content Never Exposed",
-      "content": "OCR processing using Tesseract WASM runs entirely in browser memory — no API calls, no data transmission."
+      "type": "ocr_privacy_security",
+      "title": "เนื้อหาที่สแกนไม่เคยถูกเปิดเผย",
+      "content": "การประมวลผล OCR โดยใช้ Tesseract WASM ทำงานในหน่วยความจำเบราว์เซอร์ทั้งหมด ไม่มีการเรียก API ไม่มีการส่งข้อมูล",
+      "badgeText": "ความปลอดภัยต้องมาก่อน"
     },
     {
-      "type": "organizer_performance",
-      "title": "OCR Any Document Locally",
-      "content": "Process a 20-page scanned PDF in under 30 seconds. All Tesseract processing happens in-browser."
+      "type": "ocr_performance",
+      "title": "OCR เอกสารใด ๆ ในเครื่อง",
+      "content": "ประมวลผล PDF ที่สแกน 20 หน้าภายในเวลาไม่ถึง 30 วินาที การประมวลผล Tesseract ทั้งหมดเกิดขึ้นในเบราว์เซอร์",
+      "badgeText": "เร็วปานสายฟ้า"
     }
   ],
   "faqs": [
     {
-      "q": "What languages does OCR support?",
-      "a": "Over 100 languages via Tesseract engine."
+      "q": "OCR รองรับภาษาใดบ้าง",
+      "a": "มากกว่า 100 ภาษาผ่านเครื่องมือ Tesseract"
     },
     {
-      "q": "How accurate is the OCR?",
-      "a": "Accuracy depends on scan quality; clear, high-contrast scans yield 95%+ accuracy."
+      "q": "OCR มีความแม่นยำเพียงใด?",
+      "a": "ความแม่นยำขึ้นอยู่กับคุณภาพการสแกน การสแกนที่ชัดเจนและมีคอนทราสต์สูงให้ความแม่นยำ 95%+"
     },
     {
-      "q": "Does it create a searchable PDF?",
-      "a": "Yes, a text layer is added making the PDF fully searchable."
+      "q": "มันสร้าง PDF ที่สามารถค้นหาได้หรือไม่?",
+      "a": "ใช่ มีการเพิ่มเลเยอร์ข้อความทำให้สามารถค้นหา PDF ได้อย่างสมบูรณ์"
     },
     {
-      "q": "Can I copy text from the result?",
-      "a": "Yes, the output PDF has selectable, copyable text."
+      "q": "ฉันสามารถคัดลอกข้อความจากผลลัพธ์ได้หรือไม่",
+      "a": "ใช่ เอาต์พุต PDF มีข้อความที่สามารถเลือกและคัดลอกได้"
     },
     {
-      "q": "Is this free?",
-      "a": "ใช่ ฟรีทั้งหมด"
+      "q": "ฟรีหรือเปล่า?",
+      "a": "ใช่ ฟรีเสมอ"
     }
-  ]
+  ],
+  "faqTitle": "คำถามที่พบบ่อย",
+  "supportCenter": "ศูนย์สนับสนุน"
 }

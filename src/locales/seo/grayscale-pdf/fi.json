@@ -1,67 +1,85 @@
 {
-  "title": "Grayscale PDF — Convert to Black and White Offline",
-  "h1": "Convert Color PDF Pages to Grayscale Instantly",
-  "description": "Turn color PDFs into black-and-white versions to reduce file size or prepare for printing, entirely in your browser. Ideal for users in Helsinki.",
+  "title": "Harmaasävy PDF — Muunna mustavalkoiseksi offline-tilassa",
+  "h1": "Muunna värilliset PDF-sivut harmaasävyiksi välittömästi",
+  "description": "Muuta värilliset PDF-tiedostot mustavalkoisiksi versioiksi pienentääksesi tiedostokokoa tai valmistautuaksesi tulostukseen kokonaan selaimessasi. 100 % turvallinen paikallinen käsittely.",
+  "buttonText": "Convert to Grayscale",
+  "badges": [
+    "Säästä mustetta",
+    "Mustavalkoinen",
+    "Täydellinen tulostukseen"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Convert to Grayscale Offline?",
-      "content": "Removing color from a PDF is a pre-print or archiving step. Do it locally without exposing confidential document design."
+      "type": "grayscale_hero_features",
+      "title": "Miksi muuntaa harmaasävyiksi offline-tilassa?",
+      "content": "Värien poistaminen PDF-tiedostosta on esitulostus tai arkistointivaihe. Tee se paikallisesti paljastamatta luottamuksellista asiakirjasuunnittelua."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Make PDF Grayscale",
+      "type": "grayscale_how_to_steps",
+      "title": "Kuinka tehdä PDF:stä harmaasävy",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the color PDF to convert."
+          "title": "Avaa PDF",
+          "description": "Valitse muunnettavan PDF-väri."
         },
         {
-          "title": "Choose Conversion Mode",
-          "description": "Pick luminance or contrast-adjusted grayscale."
+          "title": "Valitse muunnostila",
+          "description": "Valitse luminanssi tai kontrastisäätöinen harmaasävy."
         },
         {
-          "title": "Download Grayscale PDF",
-          "description": "Save the black-and-white PDF immediately."
+          "title": "Lataa harmaasävyinen PDF",
+          "description": "Tallenna mustavalkoinen PDF välittömästi."
         }
-      ]
+      ],
+      "badgeText": "Pikaopas"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Grayscale PDF for Helsinki Printers",
-      "content": "Businesses in Helsinki convert color PDFs to grayscale for cost-effective printing without cloud uploads."
+      "type": "grayscale_geo_targeting",
+      "title": "100 % suojattu paikallinen käsittely",
+      "content": "Kaikki toiminnot suoritetaan suoraan paikallisella laitteellasi. Käytämme edistynyttä WebAssembly-tekniikkaa asiakirjojen käsittelyyn lataamatta niitä koskaan ulkoisille palvelimille, mikä takaa täydellisen yksityisyyden.",
+      "badgeText": "Paikallinen käsittely"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Design Files Stay Confidential",
-      "content": "Internal design documents and branded materials converted to grayscale without cloud exposure."
+      "type": "grayscale_privacy_security",
+      "title": "Suunnittelutiedostot pysyvät luottamuksellisina",
+      "content": "Sisäiset suunnitteluasiakirjat ja merkkimateriaalit muunnetaan harmaasävyiksi ilman pilviä.",
+      "badgeText": "Turvallisuus ensin"
     },
     {
-      "type": "transform_performance",
-      "title": "Convert Color Instantly",
-      "content": "A 200-page color PDF converted to grayscale in under 2 seconds. Zero upload."
+      "type": "grayscale_performance",
+      "title": "Muunna värit välittömästi",
+      "content": "200-sivuinen värillinen PDF muunnetaan harmaasävyiksi alle kahdessa sekunnissa. Nolla latausta.",
+      "badgeText": "Salamannopeasti"
     }
   ],
   "faqs": [
     {
-      "q": "Does grayscale reduce file size?",
-      "a": "Often yes, especially for image-heavy PDFs."
+      "q": "Vähentääkö harmaasävy tiedostokokoa?",
+      "a": "Usein kyllä, varsinkin paljon kuvia sisältäville PDF-tiedostoille."
     },
     {
-      "q": "Are all pages converted?",
-      "a": "Yes by default; you can also select specific pages."
+      "q": "Onko kaikki sivut muunnettu?",
+      "a": "Kyllä oletuksena; voit myös valita tiettyjä sivuja."
     },
     {
-      "q": "Is the conversion reversible?",
-      "a": "The color information is removed; keep the original for reversal."
+      "q": "Onko muunnos peruttavissa?",
+      "a": "Väritiedot poistetaan; säilytä alkuperäinen peruutusta varten."
     },
     {
-      "q": "Does it affect text quality?",
-      "a": "No, text remains crisp and black."
+      "q": "Vaikuttaako tekstin laatuun?",
+      "a": "Ei, teksti pysyy terävänä ja mustana."
     },
     {
-      "q": "Is this free?",
+      "q": "Onko tämä ilmainen?",
       "a": "Kyllä, täysin ilmainen."
     }
-  ]
+  ],
+  "faqTitle": "Usein kysytyt kysymykset",
+  "supportCenter": "Tukikeskus"
 }

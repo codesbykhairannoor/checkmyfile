@@ -1,67 +1,85 @@
 {
-  "title": "Add Watermark to PDF — Offline Watermarking",
-  "h1": "Stamp PDFs with Text or Image Watermarks Locally",
-  "description": "Add \"CONFIDENTIAL\", logos, or custom text watermarks to PDFs entirely in your browser. No upload. Best for users in Jerusalem.",
+  "title": "הוסף סימן מים ל-PDF — סימון מים לא מקוון",
+  "h1": "חותמת קובצי PDF עם סימני מים של טקסט או תמונה באופן מקומי",
+  "description": "הוסף \"סודי\", סמלי לוגו או סימני מים מותאמים אישית של טקסט לקובצי PDF לחלוטין בדפדפן שלך. אין העלאה. עיבוד מקומי מאובטח של 100%.",
+  "buttonText": "Add Watermark",
+  "badges": [
+    "טקסט מותאם אישית",
+    "אטימות מתכווננת",
+    "הגנת מותג"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Watermark PDFs Offline?",
-      "content": "Adding watermarks means your document is sensitive. Never upload draft contracts or confidential reports to a cloud watermarker."
+      "type": "watermark_hero_features",
+      "title": "מדוע קובצי PDF לא מקוונים של סימן מים?",
+      "content": "הוספת סימני מים פירושה שהמסמך שלך רגיש. לעולם אל תעלה טיוטות חוזים או דוחות חסויים לסמן מים בענן."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Watermark a PDF",
+      "type": "watermark_how_to_steps",
+      "title": "כיצד לסמן מים בקובץ PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to watermark."
+          "title": "פתח PDF",
+          "description": "בחר את ה-PDF לסימן מים."
         },
         {
-          "title": "Design Watermark",
-          "description": "Type text or upload a logo image."
+          "title": "עיצוב סימן מים",
+          "description": "הקלד טקסט או העלה תמונת לוגו."
         },
         {
-          "title": "Apply & Download",
-          "description": "Get your watermarked PDF in one click."
+          "title": "החל והורד",
+          "description": "קבל את ה-PDF שלך עם סימן מים בלחיצה אחת."
         }
-      ]
+      ],
+      "badgeText": "מדריך מהיר"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Document Watermarking in Jerusalem",
-      "content": "Legal and creative professionals in Jerusalem stamp documents with watermarks without cloud uploads."
+      "type": "watermark_geo_targeting",
+      "title": "100% עיבוד מקומי מאובטח",
+      "content": "כל הפעולות מבוצעות ישירות במכשיר המקומי שלך. אנו משתמשים בטכנולוגיית WebAssembly מתקדמת כדי לעבד את המסמכים שלך מבלי להעלות אותם לשרתים חיצוניים, מה שמבטיח פרטיות מלאה.",
+      "badgeText": "עיבוד מקומי"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Confidential Drafts Stay Private",
-      "content": "Draft contracts and unreleased designs watermarked locally without any server contact."
+      "type": "watermark_privacy_security",
+      "title": "טיוטות סודיות נשארות פרטיות",
+      "content": "טיוטת חוזים ועיצובים שלא פורסמו בסימן מים מקומי ללא כל קשר לשרת.",
+      "badgeText": "אבטחה תחילה"
     },
     {
-      "type": "transform_performance",
-      "title": "Stamp Thousands of Pages Instantly",
-      "content": "Apply watermarks to a 1000-page document in under 3 seconds. All in your browser."
+      "type": "watermark_performance",
+      "title": "חותמת אלפי דפים באופן מיידי",
+      "content": "החל סימני מים על מסמך בן 1000 עמודים תוך פחות מ-3 שניות. הכל בדפדפן שלך.",
+      "badgeText": "מהיר ברק"
     }
   ],
   "faqs": [
     {
-      "q": "Can I use a logo as a watermark?",
-      "a": "Yes, upload a PNG logo and set transparency."
+      "q": "האם אני יכול להשתמש בלוגו כסימן מים?",
+      "a": "כן, העלה לוגו PNG והגדר שקיפות."
     },
     {
-      "q": "Can I adjust watermark opacity?",
-      "a": "Yes, from 10% to 100% opacity."
+      "q": "האם אני יכול להתאים את אטימות סימן המים?",
+      "a": "כן, מ-10% עד 100% אטימות."
     },
     {
-      "q": "Can I apply it to specific pages only?",
-      "a": "Yes, choose page ranges."
+      "q": "האם אני יכול להחיל את זה על דפים ספציפיים בלבד?",
+      "a": "כן, בחר טווחי דפים."
     },
     {
-      "q": "Is diagonal placement available?",
-      "a": "Yes, rotate watermarks to any angle."
+      "q": "האם מיקום אלכסוני זמין?",
+      "a": "כן, סובב סימני מים לכל זווית."
     },
     {
-      "q": "Is this free?",
-      "a": "כן, חינם לחלוטין."
+      "q": "האם זה בחינם?",
+      "a": "כן, תמיד בחינם."
     }
-  ]
+  ],
+  "faqTitle": "שאלות נפוצות",
+  "supportCenter": "מרכז תמיכה"
 }

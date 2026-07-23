@@ -1,67 +1,85 @@
 {
-  "title": "Add Page Numbers to PDF — Offline Number Stamp",
-  "h1": "Insert Page Numbers into PDF Documents Locally",
-  "description": "Stamp page numbers at the header or footer of your PDF entirely in your browser. No upload. Ideal for users in Tokyo.",
+  "title": "PDF にページ番号を追加 — オフライン番号スタンプ",
+  "h1": "PDF ドキュメントにページ番号をローカルで挿入する",
+  "description": "ブラウザ内で PDF のヘッダーまたはフッター全体にページ番号をスタンプします。 高速かつ完全に安全です。",
+  "buttonText": "Add Page Numbers",
+  "badges": [
+    "カスタム位置",
+    "ヘッダーとフッター",
+    "通し番号付け"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Add Page Numbers Offline?",
-      "content": "Page numbers are a formatting step, not a reason to upload confidential documents to a cloud service."
+      "type": "pagenum_hero_features",
+      "title": "オフラインでページ番号を追加する理由",
+      "content": "ページ番号は書式設定の手順であり、機密文書をクラウド サービスにアップロードする理由ではありません。"
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Add Page Numbers",
+      "type": "pagenum_how_to_steps",
+      "title": "ページ番号を追加する方法",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to number."
+          "title": "PDF を開く",
+          "description": "番号を付ける PDF を選択します。"
         },
         {
-          "title": "Configure Style",
-          "description": "Choose position, format (1/12, Page 1, i, ii…), and font."
+          "title": "スタイルの構成",
+          "description": "位置、形式 (1/12、ページ 1、i、ii…)、およびフォントを選択します。"
         },
         {
-          "title": "Apply & Download",
-          "description": "Download your paginated PDF instantly."
+          "title": "申し込みとダウンロード",
+          "description": "ページ分割された PDF をすぐにダウンロードします。"
         }
-      ]
+      ],
+      "badgeText": "クイックガイド"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Page Numbering for Tokyo Legal Docs",
-      "content": "Legal professionals in Tokyo number briefs and reports locally without cloud service dependency."
+      "type": "pagenum_geo_targeting",
+      "title": "100% 安全なローカル処理",
+      "content": "すべての操作はローカル デバイス上で直接実行されます。 当社は高度な WebAssembly テクノロジーを使用して、ドキュメントを外部サーバーにアップロードすることなく処理し、完全なプライバシーを確​​保します。",
+      "badgeText": "ローカル処理"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Internal Documents Stay Numbered & Private",
-      "content": "Add page numbers to contracts and confidential reports without any server involvement."
+      "type": "pagenum_privacy_security",
+      "title": "内部文書には番号が付けられ、機密性が保たれます",
+      "content": "サーバーを介さずに、契約書や機密レポートにページ番号を追加します。",
+      "badgeText": "セキュリティ第一"
     },
     {
-      "type": "organizer_performance",
-      "title": "Number a 1000-Page PDF Instantly",
-      "content": "Stamping page numbers locally takes milliseconds for any size document."
+      "type": "pagenum_performance",
+      "title": "1000 ページの PDF に即座に番号を付ける",
+      "content": "ページ番号をローカルにスタンプするには、どのようなサイズのドキュメントでも数ミリ秒かかります。",
+      "badgeText": "超高速"
     }
   ],
   "faqs": [
     {
-      "q": "What number formats are available?",
-      "a": "Arabic (1, 2, 3), Roman (i, ii, iii), and letter (a, b, c) formats."
+      "q": "どのような数値形式が利用可能ですか?",
+      "a": "アラビア語 (1、2、3)、ローマ字 (i、ii、iii)、および文字 (a、b、c) 形式。"
     },
     {
-      "q": "Can I start from a custom number?",
-      "a": "Yes, set any starting page number."
+      "q": "カスタム番号から開始できますか?",
+      "a": "はい、任意の開始ページ番号を設定します。"
     },
     {
-      "q": "Can I skip numbering the first page?",
-      "a": "Yes, set the page offset to skip cover pages."
+      "q": "最初のページの番号付けをスキップできますか?",
+      "a": "はい、表紙をスキップするようにページ オフセットを設定します。"
     },
     {
-      "q": "Where can I position numbers?",
-      "a": "Header-left, header-center, header-right, and same for footer."
+      "q": "数字をどこに配置すればよいでしょうか?",
+      "a": "ヘッダー左、ヘッダー中央、ヘッダー右、フッターも同様です。"
     },
     {
-      "q": "Is this free?",
-      "a": "はい、完全無料です。"
+      "q": "これは無料ですか？",
+      "a": "はい、いつでも無料です。"
     }
-  ]
+  ],
+  "faqTitle": "よくある質問",
+  "supportCenter": "サポート センター"
 }

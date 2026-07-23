@@ -1,67 +1,85 @@
 {
-  "title": "Compare PDF Files — Spot Differences Locally",
-  "h1": "Compare Two PDF Documents Side by Side",
-  "description": "Upload two PDFs and highlight differences between them entirely in your browser. No upload to servers. Ideal for users in Kuala Lumpur.",
+  "title": "Bandingkan Fail PDF — Spot Perbezaan Dalam Setempat",
+  "h1": "Bandingkan Dua Dokumen PDF Bersebelahan",
+  "description": "Muat naik dua PDF dan serlahkan perbezaan antara mereka sepenuhnya dalam penyemak imbas anda. Tiada muat naik ke pelayan. 100% pemprosesan tempatan selamat.",
+  "buttonText": "Compare PDFs",
+  "badges": [
+    "Cari Perbezaan",
+    "Serlahkan Perubahan",
+    "Perbezaan Visual"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Compare PDFs Locally?",
-      "content": "Comparing contract versions or document revisions often involves highly sensitive content. Do it entirely offline."
+      "type": "compare_hero_features",
+      "title": "Mengapa Bandingkan PDF Secara Tempatan?",
+      "content": "Membandingkan versi kontrak atau semakan dokumen selalunya melibatkan kandungan yang sangat sensitif. Lakukan sepenuhnya di luar talian."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Compare Two PDFs",
+      "type": "compare_how_to_steps",
+      "title": "Cara Membandingkan Dua PDF",
       "steps": [
         {
-          "title": "Load Both PDFs",
-          "description": "Select the two PDF versions to compare."
+          "title": "Muatkan Kedua-dua PDF",
+          "description": "Pilih dua versi PDF untuk dibandingkan."
         },
         {
-          "title": "View Differences",
-          "description": "Highlighted changes appear side by side."
+          "title": "Lihat Perbezaan",
+          "description": "Perubahan yang diserlahkan muncul bersebelahan."
         },
         {
-          "title": "Export Diff Report",
-          "description": "Download a comparison report with all changes marked."
+          "title": "Laporan Perbezaan Eksport",
+          "description": "Muat turun laporan perbandingan dengan semua perubahan ditandakan."
         }
-      ]
+      ],
+      "badgeText": "Panduan Pantas"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Comparison for Kuala Lumpur Law Firms",
-      "content": "Legal professionals in Kuala Lumpur compare contract revisions without uploading privileged documents to cloud services."
+      "type": "compare_geo_targeting",
+      "title": "100% Pemprosesan Tempatan Selamat",
+      "content": "Semua operasi dilakukan terus pada peranti tempatan anda. Kami menggunakan teknologi WebAssembly termaju untuk memproses dokumen anda tanpa pernah memuat naiknya ke pelayan luaran, memastikan privasi lengkap.",
+      "badgeText": "Pemprosesan Setempat"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Privileged Documents Stay Private",
-      "content": "Compare NDAs, contracts, and regulatory filings without any server interaction."
+      "type": "compare_privacy_security",
+      "title": "Dokumen Keistimewaan Kekal Peribadi",
+      "content": "Bandingkan NDA, kontrak dan pemfailan kawal selia tanpa sebarang interaksi pelayan.",
+      "badgeText": "Keselamatan Diutamakan"
     },
     {
-      "type": "organizer_performance",
-      "title": "Instant Side-by-Side Comparison",
-      "content": "Compare 100-page documents in seconds with highlighted differences rendered in-browser."
+      "type": "compare_performance",
+      "title": "Perbandingan Sebelah Segera",
+      "content": "Bandingkan dokumen 100 halaman dalam beberapa saat dengan perbezaan yang diserlahkan yang dipaparkan dalam penyemak imbas.",
+      "badgeText": "Sepantas Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "What types of differences are detected?",
-      "a": "Text additions, deletions, and formatting changes are highlighted."
+      "q": "Apakah jenis perbezaan yang dikesan?",
+      "a": "Penambahan teks, pemadaman dan perubahan pemformatan diserlahkan."
     },
     {
-      "q": "Can I compare scanned PDFs?",
-      "a": "For scanned PDFs, use OCR first to extract text before comparing."
+      "q": "Bolehkah saya membandingkan PDF yang diimbas?",
+      "a": "Untuk PDF yang diimbas, gunakan OCR dahulu untuk mengekstrak teks sebelum membandingkan."
     },
     {
-      "q": "Can I export the comparison?",
-      "a": "Yes, download a marked-up PDF showing all differences."
+      "q": "Bolehkah saya mengeksport perbandingan?",
+      "a": "Ya, muat turun PDF bertanda yang menunjukkan semua perbezaan."
     },
     {
-      "q": "How many versions can I compare?",
-      "a": "Two documents at a time in the side-by-side view."
+      "q": "Berapa banyak versi yang boleh saya bandingkan?",
+      "a": "Dua dokumen pada satu masa dalam pandangan sebelah menyebelah."
     },
     {
-      "q": "Is this free?",
+      "q": "Adakah ini percuma?",
       "a": "Ya, percuma sepenuhnya."
     }
-  ]
+  ],
+  "faqTitle": "Soalan Lazim",
+  "supportCenter": "Pusat Sokongan"
 }

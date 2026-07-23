@@ -1,67 +1,85 @@
 {
-  "title": "Compress PDF Online - Reduce File Size",
-  "h1": "Compress PDF Documents without Losing Quality",
-  "description": "Shrink large PDF files up to 90% using adaptive lossless techniques directly in WebAssembly. Perfect for users in Athens.",
+  "title": "Συμπίεση PDF Online - Μείωση μεγέθους αρχείου",
+  "h1": "Συμπίεση εγγράφων PDF χωρίς απώλεια ποιότητας",
+  "description": "Συρρικνώστε μεγάλα αρχεία PDF έως και 90% χρησιμοποιώντας προσαρμοστικές τεχνικές χωρίς απώλειες απευθείας στο WebAssembly. 100% ασφαλής τοπική επεξεργασία.",
   "sections": [
     {
-      "type": "comp_hero_features",
-      "title": "Why Compress PDF Offline?",
-      "content": "Large PDFs are a pain to email. Our compressor reduces file size drastically without blurring images, all from your browser."
+      "type": "compress_hero_features",
+      "title": "Γιατί να συμπιέσω το PDF εκτός σύνδεσης;",
+      "content": "Τα μεγάλα αρχεία PDF είναι ο πόνος για το email. Ο συμπιεστής μας μειώνει δραστικά το μέγεθος του αρχείου χωρίς να θολώνει τις εικόνες, όλα από το πρόγραμμα περιήγησής σας."
     },
     {
-      "type": "comp_how_to_steps",
-      "title": "How to Shrink PDF Files",
+      "type": "compress_how_to_steps",
+      "title": "Πώς να συρρικνώσετε τα αρχεία PDF",
       "steps": [
         {
-          "title": "Upload Large File",
-          "description": "Select the hefty PDF you want to shrink."
+          "title": "Μεταφόρτωση μεγάλου αρχείου",
+          "description": "Επιλέξτε το μεγάλο PDF που θέλετε να συρρικνώσετε."
         },
         {
-          "title": "Select Quality",
-          "description": "Choose between high quality or maximum compression."
+          "title": "Επιλέξτε Ποιότητα",
+          "description": "Επιλέξτε μεταξύ υψηλής ποιότητας ή μέγιστης συμπίεσης."
         },
         {
-          "title": "Download Tiny PDF",
-          "description": "Get your compressed file instantly, ready to share."
+          "title": "Κατεβάστε το Tiny PDF",
+          "description": "Αποκτήστε το συμπιεσμένο αρχείο σας άμεσα, έτοιμο για κοινή χρήση."
         }
-      ]
+      ],
+      "badgeText": "Γρήγορος Οδηγός"
     },
     {
-      "type": "comp_geo_targeting",
-      "title": "Optimized PDF Shrinking in Athens, GR-I",
-      "content": "Working on a slow connection in Athens? Compress your files locally so you can email them faster."
+      "type": "compress_geo_targeting",
+      "title": "100% Ασφαλής Τοπική Επεξεργασία",
+      "content": "Όλες οι λειτουργίες εκτελούνται απευθείας στην τοπική συσκευή σας. Χρησιμοποιούμε προηγμένη τεχνολογία WebAssembly για να επεξεργαζόμαστε τα έγγραφά σας χωρίς ποτέ να τα ανεβάσουμε σε εξωτερικούς διακομιστές, διασφαλίζοντας πλήρες απόρρητο.",
+      "badgeText": "Τοπική Επεξεργασία"
     },
     {
-      "type": "comp_privacy_security",
-      "title": "Secure Local Compression",
-      "content": "Compressing sensitive financial reports? Our algorithm works completely offline, keeping your data safe."
+      "type": "compress_privacy_security",
+      "title": "Ασφαλής τοπική συμπίεση",
+      "content": "Συμπίεση ευαίσθητων οικονομικών εκθέσεων; Ο αλγόριθμός μας λειτουργεί εντελώς εκτός σύνδεσης, διατηρώντας τα δεδομένα σας ασφαλή.",
+      "badgeText": "Πρώτα η ασφάλεια"
     },
     {
-      "type": "comp_performance",
+      "type": "compress_performance",
       "title": "Lightning Fast Shrink",
-      "content": "Compressing a 50MB file locally saves you the time of uploading 50MB and downloading 5MB back."
+      "content": "Η συμπίεση ενός αρχείου 50 MB τοπικά σάς εξοικονομεί χρόνο για τη μεταφόρτωση 50 MB και τη λήψη 5 MB πίσω.",
+      "badgeText": "Αστραπιαία"
     }
   ],
   "faqs": [
     {
-      "q": "Will compressing my PDF make it blurry?",
-      "a": "No, our tool uses adaptive compression to maintain readability while reducing size."
+      "q": "Η συμπίεση του PDF μου θα το κάνει θολό;",
+      "a": "Όχι, το εργαλείο μας χρησιμοποιεί προσαρμοστική συμπίεση για τη διατήρηση της αναγνωσιμότητας με ταυτόχρονη μείωση του μεγέθους."
     },
     {
-      "q": "Are my files sent to a server to be compressed?",
-      "a": "No, the compression algorithm runs directly in your browser memory."
+      "q": "Αποστέλλονται τα αρχεία μου σε διακομιστή για συμπίεση;",
+      "a": "Όχι, ο αλγόριθμος συμπίεσης εκτελείται απευθείας στη μνήμη του προγράμματος περιήγησής σας."
     },
     {
-      "q": "What is the maximum file size I can compress?",
-      "a": "Your browser memory is the only limit! You can compress massive files easily."
+      "q": "Ποιο είναι το μέγιστο μέγεθος αρχείου που μπορώ να συμπιέσω;",
+      "a": "Η μνήμη του προγράμματος περιήγησής σας είναι το μόνο όριο! Μπορείτε να συμπιέσετε τεράστια αρχεία εύκολα."
     },
     {
-      "q": "Is this compression tool free?",
-      "a": "Absolutely free with no usage limits or premium paywalls."
+      "q": "Αυτό το εργαλείο συμπίεσης είναι δωρεάν;",
+      "a": "Εντελώς δωρεάν χωρίς όρια χρήσης ή premium paywalls."
     },
     {
-      "q": "Can I compress multiple files at once?",
-      "a": "Batch compression is supported on modern browsers."
+      "q": "Μπορώ να συμπιέσω πολλά αρχεία ταυτόχρονα;",
+      "a": "Η συμπίεση κατά παρτίδες υποστηρίζεται σε σύγχρονα προγράμματα περιήγησης."
     }
-  ]
+  ],
+  "badges": [
+    "Συμπίεση 90%",
+    "Επιλογή χωρίς απώλειες",
+    "Δεν υπάρχουν μεταφορτώσεις"
+  ],
+  "stats": [
+    "Zero Wait",
+    "High Quality",
+    "WebAssembly",
+    "Private"
+  ],
+  "buttonText": "Compress PDF",
+  "faqTitle": "Συχνές Ερωτήσεις",
+  "supportCenter": "Κέντρο Υποστήριξης"
 }

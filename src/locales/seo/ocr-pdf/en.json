@@ -1,15 +1,27 @@
 {
   "title": "OCR PDF — Make Scans Searchable Offline",
   "h1": "Extract and Recognize Text from Scanned PDFs",
-  "description": "Run OCR on scanned PDFs to make them searchable and copyable, entirely in your browser using Tesseract. No upload. Great for users in New York.",
+  "description": "Run OCR on scanned PDFs to make them searchable and copyable, entirely in your browser using Tesseract. No upload. 100% secure local processing.",
+  "buttonText": "Run OCR",
+  "badges": [
+    "Extract Text",
+    "Searchable PDF",
+    "AI Recognition"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
+      "type": "ocr_hero_features",
       "title": "Why Run OCR Locally?",
       "content": "Scanned PDFs contain sensitive text. Running OCR on a cloud service exposes that text to a third party. Ours runs 100% offline."
     },
     {
-      "type": "organizer_how_to_steps",
+      "type": "ocr_how_to_steps",
       "title": "How to OCR a PDF",
       "steps": [
         {
@@ -27,17 +39,17 @@
       ]
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "OCR Tool for New York Archives",
-      "content": "Government agencies and businesses in New York digitize paper archives using our offline OCR tool."
+      "type": "ocr_geo_targeting",
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy."
     },
     {
-      "type": "organizer_privacy_security",
+      "type": "ocr_privacy_security",
       "title": "Scanned Content Never Exposed",
       "content": "OCR processing using Tesseract WASM runs entirely in browser memory — no API calls, no data transmission."
     },
     {
-      "type": "organizer_performance",
+      "type": "ocr_performance",
       "title": "OCR Any Document Locally",
       "content": "Process a 20-page scanned PDF in under 30 seconds. All Tesseract processing happens in-browser."
     }

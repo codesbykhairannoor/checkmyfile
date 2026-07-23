@@ -1,67 +1,85 @@
 {
-  "title": "Rotate PDF Pages — Fix Orientation Offline",
-  "h1": "Rotate PDF Pages to the Correct Orientation",
-  "description": "Fix upside-down or sideways PDF pages instantly in your browser. No upload. Perfect for users in Madrid.",
+  "title": "Girar páginas PDF: corregir la orientación sin conexión",
+  "h1": "Girar páginas PDF a la orientación correcta",
+  "description": "Corrige páginas PDF al revés o de lado al instante en tu navegador. Rápido y completamente seguro.",
+  "buttonText": "Rotate Pages",
+  "badges": [
+    "Girar 90°/180°",
+    "Procesamiento por lotes",
+    "Solución instantánea"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Rotate PDFs Locally?",
-      "content": "Scanned documents often come out sideways. Fix their orientation instantly without uploading anything to the cloud."
+      "type": "rotate_hero_features",
+      "title": "¿Por qué rotar archivos PDF localmente?",
+      "content": "Los documentos escaneados suelen salir de lado. Fija su orientación al instante sin subir nada a la nube."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Rotate PDF Pages",
+      "type": "rotate_how_to_steps",
+      "title": "Cómo rotar páginas PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page orientation."
+          "title": "Abrir PDF",
+          "description": "Cargue el PDF con la orientación de página incorrecta."
         },
         {
-          "title": "Select Pages & Direction",
-          "description": "Choose pages to rotate and direction (90°, 180°, 270°)."
+          "title": "Seleccionar páginas y dirección",
+          "description": "Elija páginas para rotar y dirección (90°, 180°, 270°)."
         },
         {
-          "title": "Download Fixed PDF",
-          "description": "Save the correctly oriented PDF immediately."
+          "title": "Descargar PDF fijo",
+          "description": "Guarde el PDF correctamente orientado inmediatamente."
         }
-      ]
+      ],
+      "badgeText": "Guía rápida"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Rotation for Madrid Offices",
-      "content": "Office workers in Madrid fix scanner output orientation without relying on cloud services."
+      "type": "rotate_geo_targeting",
+      "title": "Procesamiento local 100% seguro",
+      "content": "Todas las operaciones se realizan directamente en su dispositivo local. Utilizamos tecnología avanzada de WebAssembly para procesar sus documentos sin tener que cargarlos en servidores externos, lo que garantiza una privacidad total.",
+      "badgeText": "Procesamiento local"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Scanned Documents Stay Private",
-      "content": "Scanned medical or legal documents rotated locally without any server access."
+      "type": "rotate_privacy_security",
+      "title": "Los documentos escaneados permanecen privados",
+      "content": "Los documentos médicos o legales escaneados se rotan localmente sin ningún acceso al servidor.",
+      "badgeText": "La seguridad es lo primero"
     },
     {
-      "type": "transform_performance",
-      "title": "Rotate Any PDF in Milliseconds",
-      "content": "Rotating 500 pages takes less than a second. No upload, no wait."
+      "type": "rotate_performance",
+      "title": "Rotar cualquier PDF en milisegundos",
+      "content": "Rotar 500 páginas lleva menos de un segundo. Sin subir, sin esperar.",
+      "badgeText": "A la velocidad del rayo"
     }
   ],
   "faqs": [
     {
-      "q": "Can I rotate individual pages?",
-      "a": "Yes, select specific pages or all at once."
+      "q": "¿Puedo rotar páginas individuales?",
+      "a": "Sí, seleccione páginas específicas o todas a la vez."
     },
     {
-      "q": "What rotation angles are available?",
-      "a": "90°, 180°, and 270° clockwise and counter-clockwise."
+      "q": "¿Qué ángulos de rotación están disponibles?",
+      "a": "90°, 180° y 270° en sentido horario y antihorario."
     },
     {
-      "q": "Does rotation affect image quality?",
-      "a": "No, rotation is lossless — no re-encoding occurs."
+      "q": "¿La rotación afecta la calidad de la imagen?",
+      "a": "No, la rotación no tiene pérdidas: no se produce ninguna recodificación."
     },
     {
-      "q": "Can I undo a rotation?",
-      "a": "Yes, apply the reverse rotation before downloading."
+      "q": "¿Puedo deshacer una rotación?",
+      "a": "Sí, aplique la rotación inversa antes de descargar."
     },
     {
-      "q": "Is this free?",
+      "q": "¿Es esto gratis?",
       "a": "Sí, completamente gratis."
     }
-  ]
+  ],
+  "faqTitle": "Preguntas frecuentes",
+  "supportCenter": "Centro de soporte"
 }

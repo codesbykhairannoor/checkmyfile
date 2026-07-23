@@ -1,67 +1,85 @@
 {
-  "title": "CSV to Excel Converter — Offline & Instant",
-  "h1": "Convert CSV Files to Excel Spreadsheets Locally",
-  "description": "Transform .csv files into structured .xlsx spreadsheets entirely in your browser. No upload. Perfect for data teams in Amsterdam.",
+  "title": "Converter CSV naar Excel - Offline en direct",
+  "h1": "Converteer CSV-bestanden lokaal naar Excel-spreadsheets",
+  "description": "Transformeer .csv-bestanden volledig in uw browser naar gestructureerde .xlsx-spreadsheets. Geen upload. 100% veilige lokale verwerking.",
+  "buttonText": "Convert CSV",
+  "badges": [
+    "UTF-8-ondersteuning",
+    "Meerdere kolommen",
+    "Directe conversie"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Convert CSV Offline?",
-      "content": "CSV files often contain customer or financial data. Convert them to Excel locally without exposing your datasets to any cloud service."
+      "type": "csv_excel_hero_features",
+      "title": "Waarom CSV offline converteren?",
+      "content": "CSV-bestanden bevatten vaak klant- of financiële gegevens. Converteer ze lokaal naar Excel zonder uw datasets bloot te stellen aan een cloudservice."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert CSV to Excel",
+      "type": "csv_excel_how_to_steps",
+      "title": "Hoe CSV naar Excel te converteren",
       "steps": [
         {
-          "title": "Open CSV File",
-          "description": "Select the CSV file to convert."
+          "title": "CSV-bestand openen",
+          "description": "Selecteer het CSV-bestand dat u wilt converteren."
         },
         {
-          "title": "Preview Data",
-          "description": "See the parsed columns and rows before export."
+          "title": "Voorbeeld van gegevens",
+          "description": "Bekijk de geparseerde kolommen en rijen vóór het exporteren."
         },
         {
           "title": "Download .xlsx",
-          "description": "Get your Excel spreadsheet instantly."
+          "description": "Ontvang direct uw Excel-spreadsheet."
         }
-      ]
+      ],
+      "badgeText": "Beknopte handleiding"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Data Tools for Amsterdam Analysts",
-      "content": "Data analysts in Amsterdam convert CSV exports to Excel without uploading sensitive datasets."
+      "type": "csv_excel_geo_targeting",
+      "title": "100% veilige lokale verwerking",
+      "content": "Alle bewerkingen worden rechtstreeks op uw lokale apparaat uitgevoerd. We gebruiken geavanceerde WebAssembly-technologie om uw documenten te verwerken zonder ze ooit naar externe servers te uploaden, waardoor volledige privacy wordt gegarandeerd.",
+      "badgeText": "Lokale verwerking"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Customer Data Stays on Your Machine",
-      "content": "CRM exports, transaction logs, and survey data converted locally with zero cloud involvement."
+      "type": "csv_excel_privacy_security",
+      "title": "Klantgegevens blijven op uw computer staan ​​",
+      "content": "CRM-exports, transactielogboeken en enquêtegegevens worden lokaal geconverteerd zonder betrokkenheid van de cloud.",
+      "badgeText": "Beveiliging eerst"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Large CSV Files Instantly",
-      "content": "Convert a 100,000-row CSV to Excel in seconds. All browser-native processing."
+      "type": "csv_excel_performance",
+      "title": "Converteer grote CSV-bestanden direct",
+      "content": "Converteer een CSV van 100.000 rijen in enkele seconden naar Excel. Alle browser-native verwerking.",
+      "badgeText": "Bliksemsnel"
     }
   ],
   "faqs": [
     {
-      "q": "Is the column structure preserved?",
-      "a": "Yes, all columns are mapped to Excel columns."
+      "q": "Blijft de kolomstructuur behouden?",
+      "a": "Ja, alle kolommen worden toegewezen aan Excel-kolommen."
     },
     {
-      "q": "Can I convert multiple CSVs?",
-      "a": "Yes, batch conversion to multiple sheets is supported."
+      "q": "Kan ik meerdere CSV's converteren?",
+      "a": "Ja, batchconversie naar meerdere bladen wordt ondersteund."
     },
     {
-      "q": "Are special characters handled?",
-      "a": "Yes, UTF-8 and various encodings are supported."
+      "q": "Worden speciale tekens verwerkt?",
+      "a": "Ja, UTF-8 en verschillende coderingen worden ondersteund."
     },
     {
-      "q": "Can I set delimiters?",
-      "a": "Yes, comma, semicolon, and tab delimiters are supported."
+      "q": "Kan ik scheidingstekens instellen?",
+      "a": "Ja, komma-, puntkomma- en tabscheidingstekens worden ondersteund."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, volledig gratis."
+      "q": "Is dit gratis?",
+      "a": "Ja, altijd gratis."
     }
-  ]
+  ],
+  "faqTitle": "Veelgestelde vragen",
+  "supportCenter": "Ondersteuningscentrum"
 }

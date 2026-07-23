@@ -1,67 +1,80 @@
 {
-  "title": "Word to PDF Converter — No Upload Required",
-  "h1": "Convert Word Documents to PDF Instantly",
-  "description": "Transform .docx files into perfect PDFs directly in your browser. Zero upload, 100% private. Ideal for users in Riyadh.",
+  "title": "محول Word إلى PDF — لا يلزم التحميل",
+  "h1": "تحويل مستندات Word إلى PDF على الفور",
+  "description": "قم بتحويل ملفات .docx إلى ملفات PDF مثالية مباشرةً في متصفحك. صفر تحميل، 100% خاص. مثالي للمستخدمين في الرياض.",
+  "buttonText": "تحويل الوثيقة",
+  "badges": [
+    "عقود العمل",
+    "ملخصات قانونية",
+    "السيرة الذاتية والسيرة الذاتية"
+  ],
+  "stats": [
+    "100%",
+    "محلي",
+    "0 ثانية",
+    "وقت الانتظار"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Word to PDF Offline?",
-      "content": "Your Word document contains sensitive data. Our converter runs entirely in WebAssembly — your file never touches a server."
+      "type": "word_hero_features",
+      "title": "لماذا الاستخدام دون اتصال؟",
+      "content": "يحتوي مستند Word الخاص بك على بيانات حساسة. يعمل المحول الخاص بنا بالكامل في WebAssembly - لا يلمس ملفك الخادم أبدًا."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Word to PDF",
+      "type": "word_how_to_steps",
+      "title": "كيفية الاستخدام",
       "steps": [
         {
-          "title": "Select .docx File",
-          "description": "Pick your Word document from your computer."
+          "title": "حدد ملف .docx",
+          "description": "اختر مستند Word الخاص بك من جهاز الكمبيوتر الخاص بك."
         },
         {
-          "title": "Preview Output",
-          "description": "See the PDF rendering before finalizing."
+          "title": "معاينة الإخراج",
+          "description": "راجع عرض PDF قبل الانتهاء."
         },
         {
-          "title": "Download PDF",
-          "description": "Save your perfectly converted PDF instantly."
+          "title": "تحميل بصيغة PDF",
+          "description": "احفظ ملف PDF المحول بشكل مثالي على الفور."
         }
       ]
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Word to PDF for Riyadh Users",
-      "content": "Used by professionals in Riyadh who need to share documents without losing formatting."
+      "type": "word_geo_targeting",
+      "title": "Word إلى PDF لمستخدمي الرياض",
+      "content": "يُستخدم من قبل المتخصصين في الرياض الذين يحتاجون إلى مشاركة المستندات دون فقدان التنسيق."
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Your Contracts Stay Private",
-      "content": "Converting employment contracts? Legal briefs? Our WASM processor never phones home."
+      "type": "word_privacy_security",
+      "title": "عقودك تبقى خاصة",
+      "content": "تحويل عقود العمل؟ ملخصات قانونية؟ معالج WASM الخاص بنا لا يتصل بالمنزل أبدًا."
     },
     {
-      "type": "combiner_performance",
-      "title": "No More Conversion Queues",
-      "content": "Cloud converters put you in a queue. Ours converts in under 2 seconds, entirely offline."
+      "type": "word_performance",
+      "title": "لا مزيد من قوائم انتظار التحويل",
+      "content": "تضعك محولات السحابة في قائمة الانتظار. يتم التحويل في أقل من ثانيتين، دون الاتصال بالإنترنت تمامًا."
     }
   ],
   "faqs": [
     {
-      "q": "Does it preserve Word formatting?",
-      "a": "Yes, fonts, tables, and images are preserved using our WASM renderer."
+      "q": "هل يحافظ على تنسيق Word؟",
+      "a": "نعم، يتم الاحتفاظ بالخطوط والجداول والصور باستخدام جهاز عرض WASM الخاص بنا."
     },
     {
-      "q": "What Word versions are supported?",
-      "a": "All modern .docx files are supported."
+      "q": "ما هي إصدارات Word المدعومة؟",
+      "a": "يتم دعم كافة ملفات .docx الحديثة."
     },
     {
-      "q": "Is there a file size limit?",
-      "a": "No server limits! Only your device RAM is the constraint."
+      "q": "هل هناك حد لحجم الملف؟",
+      "a": "لا حدود للخادم! فقط ذاكرة الوصول العشوائي لجهازك هي القيد."
     },
     {
-      "q": "Can I batch convert multiple files?",
-      "a": "Yes, select multiple .docx files at once."
+      "q": "هل يمكنني تحويل ملفات متعددة دفعة واحدة؟",
+      "a": "نعم، حدد ملفات .docx متعددة مرة واحدة."
     },
     {
-      "q": "Is this free?",
-      "a": "نعم، مجاناً تماماً."
+      "q": "هل هذا مجاني؟",
+      "a": "نعم، مجاني بالكامل."
     }
-  ]
+  ],
+  "faqTitle": "أسئلة مكررة"
 }

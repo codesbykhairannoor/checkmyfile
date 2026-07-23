@@ -1,67 +1,85 @@
 {
-  "title": "Compress PDF Online - Reduce File Size",
-  "h1": "Compress PDF Documents without Losing Quality",
-  "description": "Shrink large PDF files up to 90% using adaptive lossless techniques directly in WebAssembly. Perfect for users in Tokyo.",
+  "title": "オンラインで PDF を圧縮 - ファイル サイズを削減",
+  "h1": "品質を落とさずに PDF ドキュメントを圧縮",
+  "description": "WebAssembly で適応型ロスレス技術を直接使用して、大きな PDF ファイルを最大 90% 縮小します。 100% 安全なローカル処理。",
   "sections": [
     {
-      "type": "comp_hero_features",
-      "title": "Why Compress PDF Offline?",
-      "content": "Large PDFs are a pain to email. Our compressor reduces file size drastically without blurring images, all from your browser."
+      "type": "compress_hero_features",
+      "title": "PDF をオフラインで圧縮する理由",
+      "content": "大きな PDF を電子メールで送信するのは面倒です。 当社のコンプレッサーは、画像をぼかさずにファイル サイズを大幅に縮小します。すべてブラウザから実行できます。"
     },
     {
-      "type": "comp_how_to_steps",
-      "title": "How to Shrink PDF Files",
+      "type": "compress_how_to_steps",
+      "title": "PDF ファイルを縮小する方法",
       "steps": [
         {
-          "title": "Upload Large File",
-          "description": "Select the hefty PDF you want to shrink."
+          "title": "大きなファイルをアップロードする",
+          "description": "縮小したい大きな PDF を選択します。"
         },
         {
-          "title": "Select Quality",
-          "description": "Choose between high quality or maximum compression."
+          "title": "品質を選択",
+          "description": "高品質または最大圧縮のいずれかを選択します。"
         },
         {
-          "title": "Download Tiny PDF",
-          "description": "Get your compressed file instantly, ready to share."
+          "title": "小さな PDF をダウンロード",
+          "description": "圧縮ファイルをすぐに取得して、すぐに共有できます。"
         }
-      ]
+      ],
+      "badgeText": "クイックガイド"
     },
     {
-      "type": "comp_geo_targeting",
-      "title": "Optimized PDF Shrinking in Tokyo, JP-13",
-      "content": "Working on a slow connection in Tokyo? Compress your files locally so you can email them faster."
+      "type": "compress_geo_targeting",
+      "title": "100% 安全なローカル処理",
+      "content": "すべての操作はローカル デバイス上で直接実行されます。 当社は高度な WebAssembly テクノロジーを使用して、ドキュメントを外部サーバーにアップロードすることなく処理し、完全なプライバシーを確​​保します。",
+      "badgeText": "ローカル処理"
     },
     {
-      "type": "comp_privacy_security",
-      "title": "Secure Local Compression",
-      "content": "Compressing sensitive financial reports? Our algorithm works completely offline, keeping your data safe."
+      "type": "compress_privacy_security",
+      "title": "安全なローカル圧縮",
+      "content": "機密性の高い財務報告書を圧縮していますか? 当社のアルゴリズムは完全にオフラインで動作し、データを安全に保ちます。",
+      "badgeText": "セキュリティ第一"
     },
     {
-      "type": "comp_performance",
-      "title": "Lightning Fast Shrink",
-      "content": "Compressing a 50MB file locally saves you the time of uploading 50MB and downloading 5MB back."
+      "type": "compress_performance",
+      "title": "超高速収縮",
+      "content": "50MB のファイルをローカルで圧縮すると、50MB をアップロードし、5MB をダウンロードして戻す時間を節約できます。",
+      "badgeText": "超高速"
     }
   ],
   "faqs": [
     {
-      "q": "Will compressing my PDF make it blurry?",
-      "a": "No, our tool uses adaptive compression to maintain readability while reducing size."
+      "q": "PDFを圧縮すると不鮮明になりますか?",
+      "a": "いいえ、私たちのツールは適応圧縮を使用して、サイズを削減しながら可読性を維持します。"
     },
     {
-      "q": "Are my files sent to a server to be compressed?",
-      "a": "No, the compression algorithm runs directly in your browser memory."
+      "q": "ファイルは圧縮するためにサーバーに送信されますか?",
+      "a": "いいえ、圧縮アルゴリズムはブラウザのメモリ内で直接実行されます。"
     },
     {
-      "q": "What is the maximum file size I can compress?",
-      "a": "Your browser memory is the only limit! You can compress massive files easily."
+      "q": "圧縮できるファイルの最大サイズはどれくらいですか?",
+      "a": "ブラウザのメモリが唯一の制限です。 大容量ファイルも簡単に圧縮できます。"
     },
     {
-      "q": "Is this compression tool free?",
-      "a": "Absolutely free with no usage limits or premium paywalls."
+      "q": "この圧縮ツールは無料ですか?",
+      "a": "完全に無料で、使用制限やプレミアムペイウォールはありません。"
     },
     {
-      "q": "Can I compress multiple files at once?",
-      "a": "Batch compression is supported on modern browsers."
+      "q": "複数のファイルを一度に圧縮できますか?",
+      "a": "バッチ圧縮は最新のブラウザでサポートされています。"
     }
-  ]
+  ],
+  "badges": [
+    "90% 圧縮",
+    "ロスレス オプション",
+    "アップロードはありません"
+  ],
+  "stats": [
+    "Zero Wait",
+    "High Quality",
+    "WebAssembly",
+    "Private"
+  ],
+  "buttonText": "Compress PDF",
+  "faqTitle": "よくある質問",
+  "supportCenter": "サポート センター"
 }

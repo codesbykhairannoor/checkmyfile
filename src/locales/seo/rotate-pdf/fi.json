@@ -1,67 +1,85 @@
 {
-  "title": "Rotate PDF Pages — Fix Orientation Offline",
-  "h1": "Rotate PDF Pages to the Correct Orientation",
-  "description": "Fix upside-down or sideways PDF pages instantly in your browser. No upload. Perfect for users in Helsinki.",
+  "title": "Kierrä PDF-sivuja — Korjaa suunta offline-tilassa",
+  "h1": "Kierrä PDF-sivuja oikeaan suuntaan",
+  "description": "Korjaa ylösalaisin tai sivusuunnassa olevat PDF-sivut välittömästi selaimessasi. Nopea ja täysin turvallinen.",
+  "buttonText": "Rotate Pages",
+  "badges": [
+    "Kierrä 90°/180°",
+    "Eräkäsittely",
+    "Välitön korjaus"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Rotate PDFs Locally?",
-      "content": "Scanned documents often come out sideways. Fix their orientation instantly without uploading anything to the cloud."
+      "type": "rotate_hero_features",
+      "title": "Miksi PDF-tiedostoja kierrätetään paikallisesti?",
+      "content": "Skannatut asiakirjat tulevat usein ulos sivuttain. Korjaa niiden suunta välittömästi lataamatta mitään pilveen."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Rotate PDF Pages",
+      "type": "rotate_how_to_steps",
+      "title": "PDF-sivujen kiertäminen",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page orientation."
+          "title": "Avaa PDF",
+          "description": "Lataa PDF-tiedosto väärässä sivusuunnassa."
         },
         {
-          "title": "Select Pages & Direction",
-          "description": "Choose pages to rotate and direction (90°, 180°, 270°)."
+          "title": "Valitse Sivut ja suunta",
+          "description": "Valitse käännettävät sivut ja suunta (90°, 180°, 270°)."
         },
         {
-          "title": "Download Fixed PDF",
-          "description": "Save the correctly oriented PDF immediately."
+          "title": "Lataa kiinteä PDF",
+          "description": "Tallenna oikein suunnattu PDF välittömästi."
         }
-      ]
+      ],
+      "badgeText": "Pikaopas"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Rotation for Helsinki Offices",
-      "content": "Office workers in Helsinki fix scanner output orientation without relying on cloud services."
+      "type": "rotate_geo_targeting",
+      "title": "100 % suojattu paikallinen käsittely",
+      "content": "Kaikki toiminnot suoritetaan suoraan paikallisella laitteellasi. Käytämme edistynyttä WebAssembly-tekniikkaa asiakirjojen käsittelyyn lataamatta niitä koskaan ulkoisille palvelimille, mikä takaa täydellisen yksityisyyden.",
+      "badgeText": "Paikallinen käsittely"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Scanned Documents Stay Private",
-      "content": "Scanned medical or legal documents rotated locally without any server access."
+      "type": "rotate_privacy_security",
+      "title": "Skannatut asiakirjat pysyvät yksityisinä",
+      "content": "Skannatut lääketieteelliset tai juridiset asiakirjat pyörivät paikallisesti ilman palvelinkäyttöä.",
+      "badgeText": "Turvallisuus ensin"
     },
     {
-      "type": "transform_performance",
-      "title": "Rotate Any PDF in Milliseconds",
-      "content": "Rotating 500 pages takes less than a second. No upload, no wait."
+      "type": "rotate_performance",
+      "title": "Kierrä mitä tahansa PDF-tiedostoa millisekunneissa",
+      "content": "500 sivun kääntäminen kestää alle sekunnin. Ei latausta, ei odottelua.",
+      "badgeText": "Salamannopeasti"
     }
   ],
   "faqs": [
     {
-      "q": "Can I rotate individual pages?",
-      "a": "Yes, select specific pages or all at once."
+      "q": "Voinko kiertää yksittäisiä sivuja?",
+      "a": "Kyllä, valitse tietyt sivut tai kaikki kerralla."
     },
     {
-      "q": "What rotation angles are available?",
-      "a": "90°, 180°, and 270° clockwise and counter-clockwise."
+      "q": "Mitä kiertokulmia on saatavilla?",
+      "a": "90°, 180° ja 270° myötä- ja vastapäivään."
     },
     {
-      "q": "Does rotation affect image quality?",
-      "a": "No, rotation is lossless — no re-encoding occurs."
+      "q": "Vaikuttaako kierto kuvanlaatuun?",
+      "a": "Ei, kierto on häviötöntä – uudelleenkoodausta ei tapahdu."
     },
     {
-      "q": "Can I undo a rotation?",
-      "a": "Yes, apply the reverse rotation before downloading."
+      "q": "Voinko peruuttaa kierron?",
+      "a": "Kyllä, käytä käänteistä kiertoa ennen lataamista."
     },
     {
-      "q": "Is this free?",
+      "q": "Onko tämä ilmainen?",
       "a": "Kyllä, täysin ilmainen."
     }
-  ]
+  ],
+  "faqTitle": "Usein kysytyt kysymykset",
+  "supportCenter": "Tukikeskus"
 }

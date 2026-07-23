@@ -1,67 +1,85 @@
 {
-  "title": "Split PDF - Extract Pages Securely",
-  "h1": "Split and Extract PDF Pages in Seconds",
-  "description": "Extract specific pages or split a large PDF into multiple files locally in your browser. Perfect for legal professionals in Stockholm.",
+  "title": "Dela PDF - Extrahera sidor säkert",
+  "h1": "Dela och extrahera PDF-sidor på några sekunder",
+  "description": "Extrahera specifika sidor eller dela upp en stor PDF i flera filer lokalt i din webbläsare. Snabbt och helt säkert.",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Split PDFs Locally?",
-      "content": "When dealing with massive legal or corporate documents, extracting a single page shouldn't require uploading a 1GB file. Do it instantly right on your machine."
+      "title": "Varför dela upp PDF-filer lokalt?",
+      "content": "När du har att göra med stora juridiska dokument eller företagsdokument bör det inte krävas att du laddar upp en 1 GB-fil för att extrahera en enda sida. Gör det direkt direkt på din maskin."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Extract Pages",
+      "title": "Hur man extraherar sidor",
       "steps": [
         {
-          "title": "Open Document",
-          "description": "Load the multi-page PDF you want to split."
+          "title": "Öppna dokument",
+          "description": "Ladda den flersidiga PDF-filen du vill dela."
         },
         {
-          "title": "Select Ranges",
-          "description": "Pick specific page numbers or visually select pages to extract."
+          "title": "Välj Områden",
+          "description": "Välj specifika sidnummer eller välj visuellt sidor att extrahera."
         },
         {
-          "title": "Export Zip",
-          "description": "Download your newly split files organized in a ZIP."
+          "title": "Exportera zip",
+          "description": "Ladda ner dina nyligen delade filer organiserade i ett ZIP-format."
         }
-      ]
+      ],
+      "badgeText": "Snabbguide"
     },
     {
       "type": "split_geo_targeting",
-      "title": "The Best Splitter in Stockholm, SE-AB",
-      "content": "Whether you are studying in Stockholm or working on a tight deadline, extracting pages is now instantaneous."
+      "title": "100 % säker lokal bearbetning",
+      "content": "Alla operationer utförs direkt på din lokala enhet. Vi använder avancerad WebAssembly-teknik för att behandla dina dokument utan att någonsin ladda upp dem till externa servrar, vilket säkerställer fullständig integritet.",
+      "badgeText": "Lokal bearbetning"
     },
     {
       "type": "split_privacy_security",
-      "title": "Total Page Privacy",
-      "content": "Splitting confidential employee records? Rest easy knowing our code executes purely in your local environment."
+      "title": "Total sida Sekretess",
+      "content": "Dela upp konfidentiella anställdas register? Ta det lugnt med att veta att vår kod körs enbart i din lokala miljö.",
+      "badgeText": "Säkerhet först"
     },
     {
       "type": "split_performance",
-      "title": "Zero-Upload Extraction",
-      "content": "Grabbing page 14 from a 2000-page PDF takes milliseconds, skipping the excruciating upload step entirely."
+      "title": "Nolluppladdningsextraktion",
+      "content": "Att hämta sida 14 från en PDF-fil på 2000 sidor tar millisekunder och hoppar över det olidliga uppladdningssteget helt.",
+      "badgeText": "Blixtsnabb"
     }
   ],
   "faqs": [
     {
-      "q": "How do I extract just one page?",
-      "a": "Simply click on the page thumbnail you want and hit Export."
+      "q": "Hur extraherar jag bara en sida?",
+      "a": "Klicka bara på sidminiatyren du vill ha och tryck på Exportera."
     },
     {
-      "q": "Can I split the PDF in half?",
-      "a": "Yes, you can specify custom page ranges like 1-10 and 11-20."
+      "q": "Kan jag dela PDF-filen på mitten?",
+      "a": "Ja, du kan ange anpassade sidintervall som 1-10 och 11-20."
     },
     {
-      "q": "Will the extracted pages lose quality?",
-      "a": "No, the splitting process uses binary extraction, preserving 100% of the original quality."
+      "q": "Kommer de extraherade sidorna att förlora kvalitet?",
+      "a": "Nej, uppdelningsprocessen använder binär extraktion, vilket bevarar 100 % av den ursprungliga kvaliteten."
     },
     {
-      "q": "Is my document uploaded when splitting?",
-      "a": "Never. The entire 2000-page document stays strictly in your browser."
+      "q": "Laddas mitt dokument upp vid delning?",
+      "a": "Aldrig. Hela dokumentet på 2000 sidor stannar strikt i din webbläsare."
     },
     {
-      "q": "Is there a limit to how many pages I can split?",
-      "a": "No limits! Split as many pages as your computer can handle."
+      "q": "Finns det en gräns för hur många sidor jag kan dela upp?",
+      "a": "Inga gränser! Dela upp så många sidor som din dator kan hantera."
     }
-  ]
+  ],
+  "badges": [
+    "Instant Split",
+    "Exakt intervall",
+    "Inga gränser"
+  ],
+  "stats": [
+    "Ultra Fast",
+    "No Upload",
+    "Batch Zip",
+    "Secure"
+  ],
+  "buttonText": "Split PDF",
+  "faqTitle": "Vanliga frågor",
+  "supportCenter": "Supportcenter"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Scan to PDF — Convert Camera Shots Offline",
-  "h1": "Convert Photos and Scans to PDF Locally",
-  "description": "Turn photos of documents taken with your camera into clean PDFs entirely in your browser. No upload. Best for users in Bucharest.",
+  "title": "Scanare în PDF — Convertiți fotografiile camerei offline",
+  "h1": "Conversia locală a fotografiilor și scanărilor în PDF",
+  "description": "Transformați fotografiile documentelor realizate cu camera dvs. în fișiere PDF curate în întregime în browser. Fără încărcare. Procesare locală 100% sigură.",
+  "buttonText": "Scan to PDF",
+  "badges": [
+    "Utilizați camera web",
+    "Scaner mobil",
+    "Decupare automată"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Use Scan-to-PDF Offline?",
-      "content": "Photos of documents contain sensitive information. Process them locally without any cloud access."
+      "type": "scan_hero_features",
+      "title": "De ce să folosiți Scan-to-PDF offline?",
+      "content": "Fotografiile documentelor conțin informații sensibile. Procesați-le local, fără acces la cloud."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Scans to PDF",
+      "type": "scan_how_to_steps",
+      "title": "Cum se convertesc scanările în PDF",
       "steps": [
         {
-          "title": "Import Photos",
-          "description": "Select photos taken with your phone or camera."
+          "title": "Importați fotografii",
+          "description": "Selectați fotografiile făcute cu telefonul sau cu camera foto."
         },
         {
-          "title": "Enhance Scan",
-          "description": "Auto-crop, deskew, and enhance contrast."
+          "title": "Scanare îmbunătățită",
+          "description": "Decupați automat, declinați și îmbunătățiți contrastul."
         },
         {
           "title": "Export PDF",
-          "description": "Download a clean, professional-looking scanned PDF."
+          "description": "Descărcați un PDF scanat curat, cu aspect profesional."
         }
-      ]
+      ],
+      "badgeText": "Ghid rapid"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Scan to PDF for Bucharest Field Workers",
-      "content": "Field workers and freelancers in Bucharest digitize paper documents on-the-go without uploading to cloud services."
+      "type": "scan_geo_targeting",
+      "title": "Procesare locală 100% sigură",
+      "content": "Toate operațiunile sunt efectuate direct pe dispozitivul local. Folosim tehnologie avansată WebAssembly pentru a vă procesa documentele fără a le încărca vreodată pe servere externe, asigurând confidențialitate completă.",
+      "badgeText": "Prelucrare locală"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Documents Stay on Device",
-      "content": "Invoices, contracts, and ID scans processed entirely in browser memory without any server access."
+      "type": "scan_privacy_security",
+      "title": "Documentele scanate rămân pe dispozitiv",
+      "content": "Facturile, contractele și scanările de identitate procesate în întregime în memoria browserului, fără acces la server.",
+      "badgeText": "Securitatea în primul rând"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Scans in Real Time",
-      "content": "Photo enhancement and PDF generation happens in milliseconds, even for high-resolution camera shots."
+      "type": "scan_performance",
+      "title": "Convertiți scanările în timp real",
+      "content": "Îmbunătățirea fotografiilor și generarea PDF au loc în milisecunde, chiar și pentru fotografii de înaltă rezoluție.",
+      "badgeText": "Rapid fulger"
     }
   ],
   "faqs": [
     {
-      "q": "What photo formats are supported?",
-      "a": "JPG, PNG, WebP, and HEIC from modern cameras."
+      "q": "Ce formate foto sunt acceptate?",
+      "a": "JPG, PNG, WebP și HEIC de la camerele moderne."
     },
     {
-      "q": "Does it fix tilted scans?",
-      "a": "Yes, auto-deskew corrects slight angles automatically."
+      "q": "Repară scanările înclinate?",
+      "a": "Da, declinarea automată corectează automat unghiurile ușoare."
     },
     {
-      "q": "Can I combine multiple scans?",
-      "a": "Yes, add multiple photos to create a multi-page PDF."
+      "q": "Pot combina mai multe scanări?",
+      "a": "Da, adăugați mai multe fotografii pentru a crea un PDF cu mai multe pagini."
     },
     {
-      "q": "Does it enhance contrast?",
-      "a": "Yes, document enhancement mode sharpens text for clarity."
+      "q": "Îmbunătățește contrastul?",
+      "a": "Da, modul de îmbunătățire a documentelor clarifică textul pentru claritate."
     },
     {
-      "q": "Is this free?",
-      "a": "Da, complet gratuit."
+      "q": "Este gratuit?",
+      "a": "Da, întotdeauna gratuit."
     }
-  ]
+  ],
+  "faqTitle": "Întrebări frecvente",
+  "supportCenter": "Centrul de suport"
 }

@@ -1,0 +1,85 @@
+{
+  "title": "刪除 PDF 元資料 — 離線刪除隱藏的作者資料",
+  "h1": "立即從 PDF 檔案中刪除所有隱藏元資料",
+  "description": "完全在瀏覽器中從 PDF 中刪除作者姓名、公司資訊、GPS 位置和修訂歷史記錄。 沒有上傳。 100% 安全的本地處理。",
+  "buttonText": "Process Document",
+  "badges": [
+    "安全且私密",
+    "離線引擎",
+    "零上傳"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "metadata_hero_features",
+      "title": "為什麼要剝離 PDF 元資料？",
+      "content": "PDF 帶有隱藏的元資料 - 您的姓名、您的公司、修訂歷史記錄。 在公開分享之前將其全部剝離，完全離線。"
+    },
+    {
+      "type": "metadata_how_to_steps",
+      "title": "前後 — 元資料刪除的工作原理",
+      "steps": [
+        {
+          "title": "打開您的 PDF",
+          "description": "選擇要刪除的包含隱藏元資料的 PDF。"
+        },
+        {
+          "title": "預覽隱藏資料",
+          "description": "準確查看嵌入的元資料（作者、GPS、歷史記錄）。"
+        },
+        {
+          "title": "剝離並下載乾淨的 PDF",
+          "description": "立即刪除所有元資料並保存乾淨、匿名的 PDF。"
+        }
+      ],
+      "badgeText": "快速指南"
+    },
+    {
+      "type": "metadata_geo_targeting",
+      "title": "100% 安全的本地處理",
+      "content": "所有操作都直接在本地設備上執行。 我們使用先進的 WebAssembly 技術來處理您的文檔，而無需將其上傳到外部伺服器，從而確保完全的隱私。",
+      "badgeText": "本地處理"
+    },
+    {
+      "type": "metadata_privacy_security",
+      "title": "所有元資料型別永久刪除",
+      "content": "作者姓名、公司、嵌入影像的 GPS 座標、修訂歷史記錄、軟體指紋－全部永久刪除。",
+      "badgeText": "安全第一"
+    },
+    {
+      "type": "metadata_performance",
+      "title": "以毫秒為單位剝離元資料",
+      "content": "元資料刪除只需幾毫秒，通常可以將檔案大小減少 10-15%。 全部離線。",
+      "badgeText": "快如閃電"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "刪除了哪些元資料？",
+      "a": "作者、創作者、製作人、標題、關鍵字和所有 XMP/EXIF 資料。"
+    },
+    {
+      "q": "文檔書籤是否受到影響？",
+      "a": "不，書籤和結構會被保留；只刪除元資料。"
+    },
+    {
+      "q": "我可以先預覽元資料嗎？",
+      "a": "是的，我們在刪除之前顯示所有檢測到的元資料的清單。"
+    },
+    {
+      "q": "文檔內容是否受到影響？",
+      "a": "不，內容、影像和結構保持不變。"
+    },
+    {
+      "q": "這是免費的嗎？",
+      "a": "是的，永遠免費。"
+    }
+  ],
+  "faqTitle": "常見問題",
+  "supportCenter": "支援中心"
+}

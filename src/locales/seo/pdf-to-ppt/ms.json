@@ -1,67 +1,80 @@
 {
-  "title": "PDF to PowerPoint — Recover Editable Slides",
-  "h1": "Convert PDF to PowerPoint Presentation Offline",
-  "description": "Transform PDF documents back into editable .pptx presentations locally. No cloud needed. Perfect for users in Kuala Lumpur.",
+  "title": "PDF ke PowerPoint — Pulihkan Slaid Boleh Disunting",
+  "h1": "Tukar PDF kepada Persembahan PowerPoint Luar Talian",
+  "description": "Ubah semula dokumen PDF kepada pembentangan .pptx yang boleh diedit secara tempatan. Tiada awan diperlukan. Sesuai untuk pengguna di Kuala Lumpur.",
+  "buttonText": "Tukar kepada PPT",
+  "badges": [
+    "Slaid Boleh Sunting",
+    "Pemulihan Persembahan",
+    "Penukaran Pantas"
+  ],
+  "stats": [
+    "100%",
+    "Tempatan",
+    "0s",
+    "Masa Tunggu"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF to PowerPoint Offline?",
-      "content": "Recovering slide content from a PDF for editing should not require uploading sensitive decks to a cloud service."
+      "title": "Mengapa Guna Luar Talian?",
+      "content": "Memulihkan kandungan slaid daripada PDF untuk diedit tidak sepatutnya memerlukan muat naik dek sensitif ke perkhidmatan awan."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to PowerPoint",
+      "title": "Cara Mengguna",
       "steps": [
         {
-          "title": "Upload PDF",
-          "description": "Select the PDF containing your slide content."
+          "title": "Muat naik PDF",
+          "description": "Pilih PDF yang mengandungi kandungan slaid anda."
         },
         {
-          "title": "Map Pages to Slides",
-          "description": "Each PDF page becomes one editable slide."
+          "title": "Petakan Halaman ke Slaid",
+          "description": "Setiap halaman PDF menjadi satu slaid boleh diedit."
         },
         {
-          "title": "Download .pptx",
-          "description": "Get your fully editable PowerPoint presentation."
+          "title": "Muat turun .pptx",
+          "description": "Dapatkan persembahan PowerPoint anda yang boleh diedit sepenuhnya."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "Slide Recovery in Kuala Lumpur",
-      "content": "Presenters in Kuala Lumpur use our tool to recover and re-edit presentations from old PDF archives."
+      "title": "Pemulihan Slaid di Kuala Lumpur",
+      "content": "Penyampai di Kuala Lumpur menggunakan alat kami untuk memulihkan dan mengedit semula pembentangan daripada arkib PDF lama."
     },
     {
       "type": "split_privacy_security",
-      "title": "Your Slides Are Never Exposed",
-      "content": "Confidential slide decks recovered and converted without any server interaction."
+      "title": "Slaid Anda Tidak Pernah Didedahkan",
+      "content": "Dek slaid sulit dipulihkan dan ditukar tanpa sebarang interaksi pelayan."
     },
     {
       "type": "split_performance",
-      "title": "Convert Slides at Lightning Speed",
-      "content": "A 60-slide PDF converted to PowerPoint in under 10 seconds with zero upload time."
+      "title": "Tukar Slaid pada Sepantas Kilat",
+      "content": "PDF 60 slaid ditukar kepada PowerPoint dalam masa kurang daripada 10 saat dengan masa muat naik sifar."
     }
   ],
   "faqs": [
     {
-      "q": "Are slide layouts preserved?",
-      "a": "Content is mapped to slides; some layout adjustments may be needed."
+      "q": "Adakah susun atur slaid dipelihara?",
+      "a": "Kandungan dipetakan ke slaid; beberapa pelarasan susun atur mungkin diperlukan."
     },
     {
-      "q": "Can I edit the slides after?",
-      "a": "Yes, the .pptx file is fully editable in PowerPoint or Google Slides."
+      "q": "Bolehkah saya mengedit slaid selepas itu?",
+      "a": "Ya, fail .pptx boleh diedit sepenuhnya dalam PowerPoint atau Slaid Google."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No, convert as many pages as your RAM allows."
+      "q": "Adakah terdapat had halaman?",
+      "a": "Tidak, tukarkan seberapa banyak halaman yang dibenarkan oleh RAM anda."
     },
     {
-      "q": "Does it work with image-heavy PDFs?",
-      "a": "Yes, images are embedded in each slide."
+      "q": "Adakah ia berfungsi dengan PDF berat imej?",
+      "a": "Ya, imej dibenamkan dalam setiap slaid."
     },
     {
-      "q": "Is this free?",
+      "q": "Adakah ini percuma?",
       "a": "Ya, percuma sepenuhnya."
     }
-  ]
+  ],
+  "faqTitle": "Soalan Lazim"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Image to PDF — Combine Photos Offline",
-  "h1": "Convert Images to PDF Without Uploading",
-  "description": "Turn JPG, PNG, and WebP images into a single PDF document in your browser. Your photos stay private. Perfect for users in New Delhi.",
+  "title": "पीडीएफ में छवि - फ़ोटो को ऑफ़लाइन संयोजित करें",
+  "h1": "बिना अपलोड किए छवियों को पीडीएफ में बदलें",
+  "description": "अपने ब्राउज़र में JPG, PNG और WebP छवियों को एक एकल PDF दस्तावेज़ में बदलें। आपकी तस्वीरें निजी रहती हैं. 100% सुरक्षित स्थानीय प्रसंस्करण।",
+  "buttonText": "Convert Images",
+  "badges": [
+    "पोर्टफोलियो",
+    "आईडी स्कैन",
+    "फ़ोटो एल्बम"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Images Offline?",
-      "content": "Photos contain location data and personal moments. Convert them to PDF without exposing them to any cloud service."
+      "type": "image_hero_features",
+      "title": "छवियाँ ऑफ़लाइन क्यों बदलें?",
+      "content": "फ़ोटो में स्थान डेटा और व्यक्तिगत क्षण होते हैं। उन्हें किसी भी क्लाउड सेवा में उजागर किए बिना पीडीएफ में परिवर्तित करें।"
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Turn Images Into PDF",
+      "type": "image_how_to_steps",
+      "title": "छवियों को पीडीएफ में कैसे बदलें",
       "steps": [
         {
-          "title": "Select Images",
-          "description": "Choose JPG, PNG, or WebP files from your device."
+          "title": "छवियाँ चुनें",
+          "description": "अपने डिवाइस से JPG, PNG, या WebP फ़ाइलें चुनें।"
         },
         {
-          "title": "Arrange Order",
-          "description": "Drag to reorder images before generating the PDF."
+          "title": "ऑर्डर व्यवस्थित करें",
+          "description": "पीडीएफ बनाने से पहले छवियों को पुन: व्यवस्थित करने के लिए खींचें।"
         },
         {
-          "title": "Export PDF",
-          "description": "Download your image PDF in one click."
+          "title": "पीडीएफ निर्यात करें",
+          "description": "एक क्लिक में अपनी छवि पीडीएफ डाउनलोड करें।"
         }
-      ]
+      ],
+      "badgeText": "त्वरित मार्गदर्शिका"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Image to PDF for New Delhi Users",
-      "content": "Photographers and designers in New Delhi use our tool to package portfolios without cloud uploads."
+      "type": "image_geo_targeting",
+      "title": "100% सुरक्षित स्थानीय प्रसंस्करण",
+      "content": "सभी ऑपरेशन सीधे आपके स्थानीय डिवाइस पर किए जाते हैं। हम पूर्ण गोपनीयता सुनिश्चित करते हुए, आपके दस्तावेज़ों को बाहरी सर्वर पर अपलोड किए बिना संसाधित करने के लिए उन्नत WebAssembly तकनीक का उपयोग करते हैं।",
+      "badgeText": "स्थानीय प्रसंस्करण"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Photos Never Leave Your Device",
-      "content": "Personal photos, ID scans, medical images — all converted 100% locally without any server contact."
+      "type": "image_privacy_security",
+      "title": "तस्वीरें आपका डिवाइस कभी नहीं छोड़तीं",
+      "content": "व्यक्तिगत तस्वीरें, आईडी स्कैन, मेडिकल छवियां - सभी बिना किसी सर्वर संपर्क के 100% स्थानीय रूप से परिवर्तित हो गईं।",
+      "badgeText": "सुरक्षा पहले"
     },
     {
-      "type": "combiner_performance",
-      "title": "Batch Convert Instantly",
-      "content": "Convert 50 images into a single PDF in under 5 seconds. No upload, no wait."
+      "type": "image_performance",
+      "title": "बैच तुरंत रूपांतरित करें",
+      "content": "5 सेकंड से कम समय में 50 छवियों को एक पीडीएफ में बदलें। कोई अपलोड नहीं, कोई प्रतीक्षा नहीं.",
+      "badgeText": "बिजली की तेजी"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are supported?",
-      "a": "JPG, JPEG, PNG, and WebP are all supported."
+      "q": "कौन से छवि प्रारूप समर्थित हैं?",
+      "a": "JPG, JPEG, PNG और WebP सभी समर्थित हैं।"
     },
     {
-      "q": "Can I combine multiple images?",
-      "a": "Yes, select as many images as you want and reorder them."
+      "q": "क्या मैं अनेक छवियाँ संयोजित कर सकता हूँ?",
+      "a": "हाँ, जितनी चाहें उतनी छवियाँ चुनें और उन्हें पुनः व्यवस्थित करें।"
     },
     {
-      "q": "Is image quality preserved?",
-      "a": "Yes, images are embedded at their original resolution."
+      "q": "क्या छवि गुणवत्ता संरक्षित है?",
+      "a": "हां, छवियां उनके मूल रिज़ॉल्यूशन पर एम्बेडेड हैं।"
     },
     {
-      "q": "Does it strip EXIF metadata?",
-      "a": "You can optionally strip EXIF data for privacy."
+      "q": "क्या यह EXIF ​​मेटाडेटा को हटा देता है?",
+      "a": "आप गोपनीयता के लिए वैकल्पिक रूप से EXIF ​​डेटा छीन सकते हैं।"
     },
     {
-      "q": "Is there a limit on image count?",
-      "a": "हाँ, पूरी तरह मुफ्त।"
+      "q": "क्या छवि गणना की कोई सीमा है?",
+      "a": "कोई सीमा नहीं! सैकड़ों छवियों को एक पीडीएफ में संयोजित करें।"
     }
-  ]
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न",
+  "supportCenter": "सहायता केंद्र"
 }

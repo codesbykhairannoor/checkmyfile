@@ -1,67 +1,85 @@
 {
-  "title": "Text to PDF Converter — Offline & Instant",
-  "h1": "Convert Plain Text Files to PDF Locally",
-  "description": "Transform .txt files into clean, readable PDFs directly in your browser. No upload required. Ideal for users in Seoul.",
+  "title": "텍스트를 PDF로 변환기 — 오프라인 및 즉시",
+  "h1": "일반 텍스트 파일을 로컬에서 PDF로 변환",
+  "description": "브라우저에서 직접 .txt 파일을 깔끔하고 읽기 쉬운 PDF로 변환하세요. 업로드가 필요하지 않습니다. 100% 안전한 로컬 처리.",
+  "buttonText": "Convert Text",
+  "badges": [
+    "코드 조각",
+    "서버 로그",
+    "원고"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Text Files Offline?",
-      "content": "Text files often contain code, scripts, or sensitive notes. Our offline converter ensures zero data transmission."
+      "type": "txt_hero_features",
+      "title": "텍스트 파일을 오프라인으로 변환하는 이유는 무엇입니까?",
+      "content": "텍스트 파일에는 코드, 스크립트 또는 민감한 메모가 포함되는 경우가 많습니다. 우리의 오프라인 변환기는 제로 데이터 전송을 보장합니다."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Text to PDF",
+      "type": "txt_how_to_steps",
+      "title": "텍스트를 PDF로 변환하는 방법",
       "steps": [
         {
-          "title": "Open Text File",
-          "description": "Select your .txt file or paste text directly."
+          "title": "텍스트 파일 열기",
+          "description": ".txt 파일을 선택하거나 텍스트를 직접 붙여넣으세요."
         },
         {
-          "title": "Choose Font & Style",
-          "description": "Pick font size and layout preferences."
+          "title": "글꼴 및 스타일 선택",
+          "description": "글꼴 크기와 레이아웃 기본 설정을 선택하세요."
         },
         {
-          "title": "Download PDF",
-          "description": "Export your text as a beautifully formatted PDF."
+          "title": "PDF 다운로드",
+          "description": "텍스트를 보기 좋은 형식의 PDF로 내보냅니다."
         }
-      ]
+      ],
+      "badgeText": "빠른 가이드"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Text to PDF for Seoul Developers",
-      "content": "Developers and writers in Seoul use our tool to convert scripts and notes without cloud dependency."
+      "type": "txt_geo_targeting",
+      "title": "100% 안전한 로컬 처리",
+      "content": "모든 작업은 로컬 장치에서 직접 수행됩니다. 우리는 고급 WebAssembly 기술을 사용하여 문서를 외부 서버에 업로드하지 않고 처리하여 완벽한 개인 정보 보호를 보장합니다.",
+      "badgeText": "로컬 처리"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Code Stays on Your Machine",
-      "content": "Source code, legal notes, medical records — text files converted with zero server involvement."
+      "type": "txt_privacy_security",
+      "title": "코드가 컴퓨터에 남아 있습니다",
+      "content": "소스 코드, 법적 메모, 의료 기록 — 서버 개입 없이 변환된 텍스트 파일입니다.",
+      "badgeText": "보안 우선"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Text Rendering",
-      "content": "Convert any size text file to PDF in milliseconds. No upload, no compression, no delay."
+      "type": "txt_performance",
+      "title": "인스턴트 텍스트 렌더링",
+      "content": "모든 크기의 텍스트 파일을 밀리초 안에 PDF로 변환합니다. 업로드도, 압축도, 지연도 없습니다.",
+      "badgeText": "번개처럼 빠르게"
     }
   ],
   "faqs": [
     {
-      "q": "Can I paste text directly?",
-      "a": "Yes, you can type or paste text without uploading a file."
+      "q": "텍스트를 직접 붙여넣을 수 있나요?",
+      "a": "예, 파일을 업로드하지 않고도 텍스트를 입력하거나 붙여넣을 수 있습니다."
     },
     {
-      "q": "What fonts are available?",
-      "a": "Standard web fonts like Arial, Times New Roman, and monospace."
+      "q": "어떤 글꼴을 사용할 수 있나요?",
+      "a": "Arial, Times New Roman 및 고정 폭과 같은 표준 웹 글꼴입니다."
     },
     {
-      "q": "Is code syntax preserved?",
-      "a": "Monospace formatting is preserved for code blocks."
+      "q": "코드 구문이 보존되나요?",
+      "a": "코드 블록에 대해 고정 폭 형식이 유지됩니다."
     },
     {
-      "q": "Can I set page margins?",
-      "a": "Yes, customize top, bottom, left, and right margins."
+      "q": "페이지 여백을 설정할 수 있나요?",
+      "a": "예, 위쪽, 아래쪽, 왼쪽 및 오른쪽 여백을 사용자 정의합니다."
     },
     {
-      "q": "Is this free?",
+      "q": "이거 무료인가요?",
       "a": "예, 완전 무료입니다."
     }
-  ]
+  ],
+  "faqTitle": "자주 묻는 질문",
+  "supportCenter": "지원 센터"
 }

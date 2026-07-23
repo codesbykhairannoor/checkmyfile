@@ -1,67 +1,85 @@
 {
-  "title": "PowerPoint to PDF Converter — Offline & Free",
-  "h1": "Convert PowerPoint Presentations to PDF Instantly",
-  "description": "Convert .pptx presentations to high-quality PDFs directly in your browser. No cloud needed. Perfect for presenters in Warsaw.",
+  "title": "Konwerter programu PowerPoint na PDF — offline i bezpłatny",
+  "h1": "Natychmiastowa konwersja prezentacji programu PowerPoint do formatu PDF",
+  "description": "Konwertuj prezentacje .pptx na wysokiej jakości pliki PDF bezpośrednio w przeglądarce. Nie potrzeba chmury. 100% bezpieczne przetwarzanie lokalne.",
+  "buttonText": "Convert Slides",
+  "badges": [
+    "Posiedzenia Zarządu",
+    "Platformy Pitch",
+    "Niepublikowane produkty"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Presentations Offline?",
-      "content": "Your slides may contain unreleased products or confidential strategies. Convert without risking data exposure."
+      "type": "ppt_hero_features",
+      "title": "Dlaczego warto konwertować prezentacje offline?",
+      "content": "Twoje slajdy mogą zawierać niepublikowane produkty lub poufne strategie. Konwertuj bez ryzyka ujawnienia danych."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert PowerPoint to PDF",
+      "type": "ppt_how_to_steps",
+      "title": "Jak przekonwertować program PowerPoint do formatu PDF",
       "steps": [
         {
-          "title": "Load Presentation",
-          "description": "Select your .pptx file from your device."
+          "title": "Załaduj prezentację",
+          "description": "Wybierz plik .pptx na swoim urządzeniu."
         },
         {
-          "title": "Select Slide Range",
-          "description": "Include all slides or specific ones."
+          "title": "Wybierz zakres slajdów",
+          "description": "Dołącz wszystkie slajdy lub wybrane."
         },
         {
-          "title": "Download PDF",
-          "description": "Get your PDF with all formatting preserved."
+          "title": "Pobierz PDF",
+          "description": "Pobierz plik PDF z zachowaniem całego formatowania."
         }
-      ]
+      ],
+      "badgeText": "Krótki przewodnik"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Presentation Conversion in Warsaw",
-      "content": "Presenters in Warsaw trust us to convert slide decks without leaking unreleased content to cloud servers."
+      "type": "ppt_geo_targeting",
+      "title": "100% bezpieczne przetwarzanie lokalne",
+      "content": "Wszystkie operacje wykonywane są bezpośrednio na Twoim urządzeniu lokalnym. Korzystamy z zaawansowanej technologii WebAssembly, aby przetwarzać Twoje dokumenty bez konieczności przesyłania ich na serwery zewnętrzne, zapewniając całkowitą prywatność.",
+      "badgeText": "Przetwarzanie lokalne"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Confidential Slides Stay Confidential",
-      "content": "Pre-launch product decks? Board presentations? Converted 100% locally without network access."
+      "type": "ppt_privacy_security",
+      "title": "Poufne slajdy Zachowaj poufność",
+      "content": "Talie produktów przed wprowadzeniem na rynek? Prezentacje zarządu? Konwersja w 100% lokalna, bez dostępu do sieci.",
+      "badgeText": "Bezpieczeństwo przede wszystkim"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Slide Export",
-      "content": "Convert 100-slide decks in seconds. No queue, no waiting, no upload bandwidth wasted."
+      "type": "ppt_performance",
+      "title": "Natychmiastowy eksport slajdów",
+      "content": "Konwertuj 100 slajdów w ciągu kilku sekund. Bez kolejki, bez czekania, bez marnowania przepustowości przesyłania.",
+      "badgeText": "Błyskawicznie"
     }
   ],
   "faqs": [
     {
-      "q": "Are slide animations preserved?",
-      "a": "Animations are flattened into static PDF frames."
+      "q": "Czy animacje slajdów są zachowane?",
+      "a": "Animacje są spłaszczane w statyczne ramki PDF."
     },
     {
-      "q": "What resolution is the output?",
-      "a": "High-resolution rendering at 150 DPI by default."
+      "q": "Jaka jest rozdzielczość wyjściowa?",
+      "a": "Domyślnie renderowanie w wysokiej rozdzielczości przy 150 DPI."
     },
     {
-      "q": "Can I convert selected slides only?",
-      "a": "Yes, specify slide ranges like 1-10 or 5,8,12."
+      "q": "Czy mogę konwertować tylko wybrane slajdy?",
+      "a": "Tak, określ zakresy slajdów, np. 1-10 lub 5,8,12."
     },
     {
-      "q": "Is .ppt (old format) supported?",
-      "a": "Yes, both .ppt and .pptx are supported."
+      "q": "Czy obsługiwany jest plik .ppt (stary format)?",
+      "a": "Tak, obsługiwane są zarówno pliki .ppt, jak i .pptx."
     },
     {
-      "q": "Is this free to use?",
-      "a": "Tak, całkowicie bezpłatnie."
+      "q": "Czy korzystanie z tego jest bezpłatne?",
+      "a": "Tak, całkowicie za darmo, bez znaków wodnych."
     }
-  ]
+  ],
+  "faqTitle": "Często zadawane pytania",
+  "supportCenter": "Centrum wsparcia"
 }

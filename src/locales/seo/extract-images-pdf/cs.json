@@ -1,67 +1,85 @@
 {
-  "title": "Extract Images from PDF — Offline Extractor",
-  "h1": "Extract All Embedded Images from PDF Files",
-  "description": "Pull out every image from a PDF and download them as PNG or JPG files, all in your browser. No cloud. Ideal for users in Prague.",
+  "title": "Extrahovat obrázky z PDF — Offline Extractor",
+  "h1": "Extrahujte všechny vložené obrázky ze souborů PDF",
+  "description": "Vytáhněte každý obrázek z PDF a stáhněte si je jako soubory PNG nebo JPG, to vše ve vašem prohlížeči. Žádný mrak. 100% bezpečné místní zpracování.",
+  "buttonText": "Extract All Images",
+  "badges": [
+    "Fotografie produktů",
+    "Důvěrné diagramy",
+    "vektory"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract Images Offline?",
-      "content": "PDFs with confidential diagrams or product photos should never be uploaded. Extract images directly in your browser."
+      "type": "extract_images_hero_features",
+      "title": "Proč extrahovat obrázky offline?",
+      "content": "Nikdy byste neměli nahrávat soubory PDF s důvěrnými diagramy nebo fotografiemi produktů. Extrahujte obrázky přímo ve vašem prohlížeči."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Extract Images from PDF",
+      "type": "extract_images_how_to_steps",
+      "title": "Jak extrahovat obrázky z PDF",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Open the PDF containing embedded images."
+          "title": "Načíst PDF",
+          "description": "Otevřete PDF obsahující vložené obrázky."
         },
         {
-          "title": "Scan for Images",
-          "description": "Our engine locates all embedded image objects."
+          "title": "Vyhledat obrázky",
+          "description": "Náš engine najde všechny vložené obrazové objekty."
         },
         {
-          "title": "Download ZIP",
-          "description": "Get all extracted images in a single ZIP file."
+          "title": "Stáhnout ZIP",
+          "description": "Získejte všechny extrahované obrázky v jediném souboru ZIP."
         }
-      ]
+      ],
+      "badgeText": "Rychlý průvodce"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Image Extraction in Prague",
-      "content": "Publishers and marketers in Prague extract product photos and diagrams from PDFs without cloud uploads."
+      "type": "extract_images_geo_targeting",
+      "title": "100% bezpečné místní zpracování",
+      "content": "Všechny operace se provádějí přímo na vašem místním zařízení. Ke zpracování vašich dokumentů používáme pokročilou technologii WebAssembly, aniž bychom je kdy nahrávali na externí servery, což zajišťuje naprosté soukromí.",
+      "badgeText": "Místní zpracování"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Product Images Stay Confidential",
-      "content": "Unreleased product photos embedded in PDFs extracted locally without any server access."
+      "type": "extract_images_privacy_security",
+      "title": "Obrázky produktů Zůstaňte v důvěrnosti",
+      "content": "Nevydané fotografie produktů vložené do souborů PDF extrahované lokálně bez jakéhokoli přístupu na server.",
+      "badgeText": "Bezpečnost především"
     },
     {
-      "type": "split_performance",
-      "title": "Extract Hundreds of Images Fast",
-      "content": "Extract 500 images from a PDF in seconds. All native browser processing."
+      "type": "extract_images_performance",
+      "title": "Extrahujte rychle stovky obrázků",
+      "content": "Extrahujte 500 obrázků z PDF během několika sekund. Veškeré nativní zpracování prohlížeče.",
+      "badgeText": "Bleskově rychlý"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are extracted?",
-      "a": "Images are saved in their original format (PNG, JPG, etc.)."
+      "q": "Jaké obrazové formáty jsou extrahovány?",
+      "a": "Obrázky se ukládají v původním formátu (PNG, JPG atd.)."
     },
     {
-      "q": "Are images at full resolution?",
-      "a": "Yes, extracted at the original embedded resolution."
+      "q": "Jsou obrázky v plném rozlišení?",
+      "a": "Ano, extrahováno v původním vloženém rozlišení."
     },
     {
-      "q": "Can I choose specific pages?",
-      "a": "Yes, specify which pages to extract images from."
+      "q": "Mohu si vybrat konkrétní stránky?",
+      "a": "Ano, určete, ze kterých stránek se mají obrázky extrahovat."
     },
     {
-      "q": "Does it extract vector graphics?",
-      "a": "Vector elements are rasterized to PNG/JPG."
+      "q": "Extrahuje vektorovou grafiku?",
+      "a": "Vektorové prvky jsou rastrovány do PNG/JPG."
     },
     {
-      "q": "Is this free?",
-      "a": "Ano, zcela zdarma."
+      "q": "Je to zdarma?",
+      "a": "Ano, vždy zdarma."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
 }

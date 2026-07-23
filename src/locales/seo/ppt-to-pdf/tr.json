@@ -1,67 +1,85 @@
 {
-  "title": "PowerPoint to PDF Converter — Offline & Free",
-  "h1": "Convert PowerPoint Presentations to PDF Instantly",
-  "description": "Convert .pptx presentations to high-quality PDFs directly in your browser. No cloud needed. Perfect for presenters in Istanbul.",
+  "title": "PowerPoint'ten PDF'ye Dönüştürücü — Çevrimdışı ve Ücretsiz",
+  "h1": "PowerPoint Sunumlarını Anında PDF'ye Dönüştürün",
+  "description": ".pptx sunumlarını doğrudan tarayıcınızda yüksek kaliteli PDF'lere dönüştürün. Buluta gerek yok. %100 güvenli yerel işleme.",
+  "buttonText": "Convert Slides",
+  "badges": [
+    "Yönetim Kurulu Toplantıları",
+    "Sunum Sunumları",
+    "Yayınlanmamış Ürünler"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Presentations Offline?",
-      "content": "Your slides may contain unreleased products or confidential strategies. Convert without risking data exposure."
+      "type": "ppt_hero_features",
+      "title": "Sunumları Neden Çevrimdışına Dönüştürmelisiniz?",
+      "content": "Slaytlarınız yayınlanmamış ürünler veya gizli stratejiler içerebilir. Verilerin açığa çıkmasını riske atmadan dönüştürün."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert PowerPoint to PDF",
+      "type": "ppt_how_to_steps",
+      "title": "PowerPoint'i PDF'ye Dönüştürme",
       "steps": [
         {
-          "title": "Load Presentation",
-          "description": "Select your .pptx file from your device."
+          "title": "Sunumu Yükle",
+          "description": "Cihazınızdan .pptx dosyanızı seçin."
         },
         {
-          "title": "Select Slide Range",
-          "description": "Include all slides or specific ones."
+          "title": "Slayt Aralığını Seçin",
+          "description": "Tüm slaytları veya belirli slaytları ekleyin."
         },
         {
-          "title": "Download PDF",
-          "description": "Get your PDF with all formatting preserved."
+          "title": "PDF'yi İndir",
+          "description": "PDF'nizi tüm biçimlendirmeleri korunarak alın."
         }
-      ]
+      ],
+      "badgeText": "Hızlı Kılavuz"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Presentation Conversion in Istanbul",
-      "content": "Presenters in Istanbul trust us to convert slide decks without leaking unreleased content to cloud servers."
+      "type": "ppt_geo_targeting",
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Confidential Slides Stay Confidential",
-      "content": "Pre-launch product decks? Board presentations? Converted 100% locally without network access."
+      "type": "ppt_privacy_security",
+      "title": "Gizli Slaytlar Gizli Kalsın",
+      "content": "Lansman öncesi ürün desteleri mi? Kurul sunumları mı? Ağ erişimi olmadan %100 yerel olarak dönüştürüldü.",
+      "badgeText": "Önce Güvenlik"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Slide Export",
-      "content": "Convert 100-slide decks in seconds. No queue, no waiting, no upload bandwidth wasted."
+      "type": "ppt_performance",
+      "title": "Anında Slayt Dışa Aktarma",
+      "content": "100 slaytlı desteleri saniyeler içinde dönüştürün. Sıra yok, bekleme yok, yükleme bant genişliği israfı yok.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [
     {
-      "q": "Are slide animations preserved?",
-      "a": "Animations are flattened into static PDF frames."
+      "q": "Slayt animasyonları korunuyor mu?",
+      "a": "Animasyonlar statik PDF çerçeveleri halinde düzleştirilir."
     },
     {
-      "q": "What resolution is the output?",
-      "a": "High-resolution rendering at 150 DPI by default."
+      "q": "Çıktı hangi çözünürlükte?",
+      "a": "Varsayılan olarak 150 DPI'da yüksek çözünürlüklü görüntü oluşturma."
     },
     {
-      "q": "Can I convert selected slides only?",
-      "a": "Yes, specify slide ranges like 1-10 or 5,8,12."
+      "q": "Yalnızca seçilen slaytları dönüştürebilir miyim?",
+      "a": "Evet, 1-10 veya 5,8,12 gibi slayt aralıklarını belirtin."
     },
     {
-      "q": "Is .ppt (old format) supported?",
-      "a": "Yes, both .ppt and .pptx are supported."
+      "q": ".ppt (eski biçim) destekleniyor mu?",
+      "a": "Evet, hem .ppt hem de .pptx desteklenmektedir."
     },
     {
-      "q": "Is this free to use?",
-      "a": "Evet, tamamen ücretsiz."
+      "q": "Bunu kullanmak ücretsiz mi?",
+      "a": "Evet, filigran olmadan tamamen ücretsiz."
     }
-  ]
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi"
 }

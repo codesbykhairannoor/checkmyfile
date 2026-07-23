@@ -1,67 +1,85 @@
 {
-  "title": "CSV to Excel Converter — Offline & Instant",
-  "h1": "Convert CSV Files to Excel Spreadsheets Locally",
-  "description": "Transform .csv files into structured .xlsx spreadsheets entirely in your browser. No upload. Perfect for data teams in Riyadh.",
+  "title": "محول CSV إلى Excel — غير متصل وفوري",
+  "h1": "تحويل ملفات CSV إلى جداول بيانات Excel محليًا",
+  "description": "قم بتحويل ملفات .csv إلى جداول بيانات .xlsx منظمة بالكامل في متصفحك. لا يوجد تحميل. معالجة محلية آمنة بنسبة 100%.",
+  "buttonText": "Convert CSV",
+  "badges": [
+    "دعم UTF-8",
+    "متعدد الأعمدة",
+    "تحويل فوري"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Convert CSV Offline?",
-      "content": "CSV files often contain customer or financial data. Convert them to Excel locally without exposing your datasets to any cloud service."
+      "type": "csv_excel_hero_features",
+      "title": "لماذا تحويل CSV دون اتصال؟",
+      "content": "غالبًا ما تحتوي ملفات CSV على بيانات العملاء أو البيانات المالية. قم بتحويلها إلى Excel محليًا دون تعريض مجموعات البيانات الخاصة بك لأي خدمة سحابية."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert CSV to Excel",
+      "type": "csv_excel_how_to_steps",
+      "title": "كيفية تحويل CSV إلى Excel",
       "steps": [
         {
-          "title": "Open CSV File",
-          "description": "Select the CSV file to convert."
+          "title": "افتح ملف CSV",
+          "description": "حدد ملف CSV لتحويله."
         },
         {
-          "title": "Preview Data",
-          "description": "See the parsed columns and rows before export."
+          "title": "معاينة البيانات",
+          "description": "راجع الأعمدة والصفوف التي تم تحليلها قبل التصدير."
         },
         {
-          "title": "Download .xlsx",
-          "description": "Get your Excel spreadsheet instantly."
+          "title": "تحميل .xlsx",
+          "description": "احصل على جدول بيانات Excel الخاص بك على الفور."
         }
-      ]
+      ],
+      "badgeText": "الدليل السريع"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Data Tools for Riyadh Analysts",
-      "content": "Data analysts in Riyadh convert CSV exports to Excel without uploading sensitive datasets."
+      "type": "csv_excel_geo_targeting",
+      "title": "معالجة محلية آمنة بنسبة 100%",
+      "content": "يتم تنفيذ جميع العمليات مباشرة على جهازك المحلي. نحن نستخدم تقنية WebAssembly المتقدمة لمعالجة مستنداتك دون تحميلها على خوادم خارجية، مما يضمن الخصوصية الكاملة.",
+      "badgeText": "المعالجة المحلية"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Customer Data Stays on Your Machine",
-      "content": "CRM exports, transaction logs, and survey data converted locally with zero cloud involvement."
+      "type": "csv_excel_privacy_security",
+      "title": "تبقى بيانات العميل على جهازك",
+      "content": "يتم تصدير CRM وسجلات المعاملات وبيانات المسح التي يتم تحويلها محليًا دون مشاركة سحابية.",
+      "badgeText": "الأمن أولا"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Large CSV Files Instantly",
-      "content": "Convert a 100,000-row CSV to Excel in seconds. All browser-native processing."
+      "type": "csv_excel_performance",
+      "title": "تحويل ملفات CSV الكبيرة على الفور",
+      "content": "قم بتحويل ملف CSV مكون من 100000 صف إلى Excel في ثوانٍ. جميع المعالجة الأصلية للمتصفح.",
+      "badgeText": "بسرعة البرق"
     }
   ],
   "faqs": [
     {
-      "q": "Is the column structure preserved?",
-      "a": "Yes, all columns are mapped to Excel columns."
+      "q": "هل تم الحفاظ على هيكل العمود؟",
+      "a": "نعم، يتم تعيين كافة الأعمدة إلى أعمدة Excel."
     },
     {
-      "q": "Can I convert multiple CSVs?",
-      "a": "Yes, batch conversion to multiple sheets is supported."
+      "q": "هل يمكنني تحويل ملفات CSV متعددة؟",
+      "a": "نعم، يتم دعم تحويل الدفعة إلى أوراق متعددة."
     },
     {
-      "q": "Are special characters handled?",
-      "a": "Yes, UTF-8 and various encodings are supported."
+      "q": "هل يتم التعامل مع الأحرف الخاصة؟",
+      "a": "نعم، يتم دعم UTF-8 والترميزات المختلفة."
     },
     {
-      "q": "Can I set delimiters?",
-      "a": "Yes, comma, semicolon, and tab delimiters are supported."
+      "q": "هل يمكنني وضع محددات؟",
+      "a": "نعم، يتم دعم الفاصلة والفاصلة المنقوطة ومحددات علامات التبويب."
     },
     {
-      "q": "Is this free?",
-      "a": "نعم، مجاناً تماماً."
+      "q": "هل هذا مجاني؟",
+      "a": "نعم، دائما مجانا."
     }
-  ]
+  ],
+  "faqTitle": "الأسئلة المتداولة",
+  "supportCenter": "مركز الدعم"
 }

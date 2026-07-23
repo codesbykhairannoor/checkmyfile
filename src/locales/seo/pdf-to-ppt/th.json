@@ -1,67 +1,80 @@
 {
-  "title": "PDF to PowerPoint — Recover Editable Slides",
-  "h1": "Convert PDF to PowerPoint Presentation Offline",
-  "description": "Transform PDF documents back into editable .pptx presentations locally. No cloud needed. Perfect for users in Bangkok.",
+  "title": "PDF เป็น PowerPoint — กู้คืนสไลด์ที่แก้ไขได้",
+  "h1": "แปลง PDF เป็นงานนำเสนอ PowerPoint ออฟไลน์",
+  "description": "แปลงเอกสาร PDF กลับเป็นงานนำเสนอ .pptx ที่แก้ไขได้ในเครื่อง ไม่จำเป็นต้องใช้คลาวด์ เหมาะสำหรับผู้ใช้งานในกรุงเทพฯ",
+  "buttonText": "แปลงเป็น PPT",
+  "badges": [
+    "สไลด์ที่สามารถแก้ไขได้",
+    "การกู้คืนการนำเสนอ",
+    "การแปลงอย่างรวดเร็ว"
+  ],
+  "stats": [
+    "100%",
+    "ท้องถิ่น",
+    "0 วินาที",
+    "รอเวลา"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF to PowerPoint Offline?",
-      "content": "Recovering slide content from a PDF for editing should not require uploading sensitive decks to a cloud service."
+      "title": "ทำไมต้องใช้ออฟไลน์?",
+      "content": "การกู้คืนเนื้อหาสไลด์จาก PDF เพื่อแก้ไขไม่ควรต้องอัปโหลดชุดข้อมูลที่ละเอียดอ่อนไปยังบริการคลาวด์"
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to PowerPoint",
+      "title": "วิธีใช้",
       "steps": [
         {
-          "title": "Upload PDF",
-          "description": "Select the PDF containing your slide content."
+          "title": "อัปโหลด PDF",
+          "description": "เลือก PDF ที่มีเนื้อหาสไลด์ของคุณ"
         },
         {
-          "title": "Map Pages to Slides",
-          "description": "Each PDF page becomes one editable slide."
+          "title": "แมปเพจเป็นสไลด์",
+          "description": "หน้า PDF แต่ละหน้าจะกลายเป็นสไลด์เดียวที่แก้ไขได้"
         },
         {
-          "title": "Download .pptx",
-          "description": "Get your fully editable PowerPoint presentation."
+          "title": "ดาวน์โหลด .pptx",
+          "description": "รับงานนำเสนอ PowerPoint ที่สามารถแก้ไขได้อย่างสมบูรณ์"
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "Slide Recovery in Bangkok",
-      "content": "Presenters in Bangkok use our tool to recover and re-edit presentations from old PDF archives."
+      "title": "Slide Recovery ในกรุงเทพ",
+      "content": "ผู้นำเสนอในกรุงเทพฯ ใช้เครื่องมือของเราเพื่อกู้คืนและแก้ไขงานนำเสนอจากไฟล์ PDF เก่า"
     },
     {
       "type": "split_privacy_security",
-      "title": "Your Slides Are Never Exposed",
-      "content": "Confidential slide decks recovered and converted without any server interaction."
+      "title": "สไลด์ของคุณไม่เคยถูกเปิดเผย",
+      "content": "ชุดสไลด์ที่เป็นความลับได้รับการกู้คืนและแปลงโดยไม่ต้องโต้ตอบกับเซิร์ฟเวอร์"
     },
     {
       "type": "split_performance",
-      "title": "Convert Slides at Lightning Speed",
-      "content": "A 60-slide PDF converted to PowerPoint in under 10 seconds with zero upload time."
+      "title": "แปลงสไลด์ด้วยความเร็วปานสายฟ้า",
+      "content": "PDF 60 สไลด์แปลงเป็น PowerPoint ภายในเวลาไม่ถึง 10 วินาทีโดยไม่ต้องเสียเวลาอัพโหลด"
     }
   ],
   "faqs": [
     {
-      "q": "Are slide layouts preserved?",
-      "a": "Content is mapped to slides; some layout adjustments may be needed."
+      "q": "เค้าโครงสไลด์จะยังคงอยู่หรือไม่",
+      "a": "เนื้อหาถูกแมปกับสไลด์ อาจจำเป็นต้องมีการปรับเค้าโครงบางอย่าง"
     },
     {
-      "q": "Can I edit the slides after?",
-      "a": "Yes, the .pptx file is fully editable in PowerPoint or Google Slides."
+      "q": "ฉันสามารถแก้ไขสไลด์หลังจากนั้นได้หรือไม่",
+      "a": "ใช่ ไฟล์ .pptx สามารถแก้ไขได้อย่างสมบูรณ์ใน PowerPoint หรือ Google Slides"
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No, convert as many pages as your RAM allows."
+      "q": "มีการจำกัดหน้าหรือไม่?",
+      "a": "ไม่ แปลงเพจได้มากเท่าที่ RAM ของคุณอนุญาต"
     },
     {
-      "q": "Does it work with image-heavy PDFs?",
-      "a": "Yes, images are embedded in each slide."
+      "q": "ใช้งานได้กับ PDF ที่มีรูปภาพจำนวนมากหรือไม่",
+      "a": "ใช่ รูปภาพจะถูกฝังไว้ในแต่ละสไลด์"
     },
     {
-      "q": "Is this free?",
-      "a": "ใช่ ฟรีทั้งหมด"
+      "q": "ฟรีหรือเปล่า?",
+      "a": "ใช่ ฟรีโดยสมบูรณ์."
     }
-  ]
+  ],
+  "faqTitle": "คำถามที่พบบ่อย"
 }

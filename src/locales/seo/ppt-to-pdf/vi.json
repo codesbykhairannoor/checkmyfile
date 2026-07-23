@@ -1,67 +1,85 @@
 {
-  "title": "PowerPoint to PDF Converter — Offline & Free",
-  "h1": "Convert PowerPoint Presentations to PDF Instantly",
-  "description": "Convert .pptx presentations to high-quality PDFs directly in your browser. No cloud needed. Perfect for presenters in Hanoi.",
+  "title": "Trình chuyển đổi PowerPoint sang PDF — Ngoại tuyến & Miễn phí",
+  "h1": "Chuyển đổi bản trình bày PowerPoint sang PDF ngay lập tức",
+  "description": "Chuyển đổi bản trình bày .pptx thành tệp PDF chất lượng cao trực tiếp trong trình duyệt của bạn. Không cần đám mây. Xử lý cục bộ an toàn 100%.",
+  "buttonText": "Convert Slides",
+  "badges": [
+    "Cuộc họp Hội đồng quản trị",
+    "Sàn sân",
+    "Sản phẩm chưa được phát hành"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Presentations Offline?",
-      "content": "Your slides may contain unreleased products or confidential strategies. Convert without risking data exposure."
+      "type": "ppt_hero_features",
+      "title": "Tại sao chuyển đổi bản trình bày ngoại tuyến?",
+      "content": "Các slide của bạn có thể chứa các sản phẩm chưa được phát hành hoặc các chiến lược bí mật. Chuyển đổi mà không gặp rủi ro về việc lộ dữ liệu."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert PowerPoint to PDF",
+      "type": "ppt_how_to_steps",
+      "title": "Cách chuyển đổi PowerPoint sang PDF",
       "steps": [
         {
-          "title": "Load Presentation",
-          "description": "Select your .pptx file from your device."
+          "title": "Tải bản trình bày",
+          "description": "Chọn tệp .pptx từ thiết bị của bạn."
         },
         {
-          "title": "Select Slide Range",
-          "description": "Include all slides or specific ones."
+          "title": "Chọn phạm vi slide",
+          "description": "Bao gồm tất cả các slide hoặc những slide cụ thể."
         },
         {
-          "title": "Download PDF",
-          "description": "Get your PDF with all formatting preserved."
+          "title": "Tải xuống bản PDF",
+          "description": "Nhận bản PDF của bạn với tất cả các định dạng được giữ nguyên."
         }
-      ]
+      ],
+      "badgeText": "Hướng dẫn nhanh"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Presentation Conversion in Hanoi",
-      "content": "Presenters in Hanoi trust us to convert slide decks without leaking unreleased content to cloud servers."
+      "type": "ppt_geo_targeting",
+      "title": "Xử lý cục bộ an toàn 100%",
+      "content": "Tất cả các hoạt động được thực hiện trực tiếp trên thiết bị cục bộ của bạn. Chúng tôi sử dụng công nghệ WebAssembly tiên tiến để xử lý tài liệu của bạn mà không cần tải chúng lên máy chủ bên ngoài, đảm bảo quyền riêng tư hoàn toàn.",
+      "badgeText": "Xử lý cục bộ"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Confidential Slides Stay Confidential",
-      "content": "Pre-launch product decks? Board presentations? Converted 100% locally without network access."
+      "type": "ppt_privacy_security",
+      "title": "Các slide bí mật Giữ bí mật",
+      "content": "Bộ sản phẩm trước khi ra mắt? Trình bày của hội đồng? Chuyển đổi 100% cục bộ mà không cần truy cập mạng.",
+      "badgeText": "Bảo mật là trên hết"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Slide Export",
-      "content": "Convert 100-slide decks in seconds. No queue, no waiting, no upload bandwidth wasted."
+      "type": "ppt_performance",
+      "title": "Xuất slide tức thì",
+      "content": "Chuyển đổi 100 bản trình bày trong vài giây. Không phải xếp hàng, không phải chờ đợi, không lãng phí băng thông tải lên.",
+      "badgeText": "Nhanh như chớp"
     }
   ],
   "faqs": [
     {
-      "q": "Are slide animations preserved?",
-      "a": "Animations are flattened into static PDF frames."
+      "q": "Hoạt ảnh slide có được giữ nguyên không?",
+      "a": "Ảnh động được làm phẳng thành các khung PDF tĩnh."
     },
     {
-      "q": "What resolution is the output?",
-      "a": "High-resolution rendering at 150 DPI by default."
+      "q": "Độ phân giải đầu ra là gì?",
+      "a": "Hiển thị độ phân giải cao ở mức 150 dpi theo mặc định."
     },
     {
-      "q": "Can I convert selected slides only?",
-      "a": "Yes, specify slide ranges like 1-10 or 5,8,12."
+      "q": "Tôi có thể chỉ chuyển đổi các slide đã chọn không?",
+      "a": "Có, chỉ định phạm vi trang chiếu như 1-10 hoặc 5,8,12."
     },
     {
-      "q": "Is .ppt (old format) supported?",
-      "a": "Yes, both .ppt and .pptx are supported."
+      "q": ".ppt (định dạng cũ) có được hỗ trợ không?",
+      "a": "Có, cả .ppt và .pptx đều được hỗ trợ."
     },
     {
-      "q": "Is this free to use?",
-      "a": "Có, hoàn toàn miễn phí."
+      "q": "Cái này có miễn phí sử dụng không?",
+      "a": "Có, hoàn toàn miễn phí không có hình mờ."
     }
-  ]
+  ],
+  "faqTitle": "Câu hỏi thường gặp",
+  "supportCenter": "Trung tâm hỗ trợ"
 }

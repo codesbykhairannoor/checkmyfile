@@ -1,67 +1,85 @@
 {
-  "title": "Reverse PDF — Flip Page Order Offline",
-  "h1": "Reverse the Page Order of Any PDF Locally",
-  "description": "Flip the page sequence of PDF documents entirely in your browser. No upload, instant result. Great for users in New Delhi.",
+  "title": "रिवर्स पीडीएफ - फ्लिप पेज ऑर्डर ऑफलाइन",
+  "h1": "किसी भी पीडीएफ के पृष्ठ क्रम को स्थानीय रूप से उलटें",
+  "description": "अपने ब्राउज़र में पीडीएफ दस्तावेज़ों के पृष्ठ अनुक्रम को पूरी तरह पलटें। कोई अपलोड नहीं, तुरंत परिणाम। 100% सुरक्षित स्थानीय प्रसंस्करण।",
+  "buttonText": "Reverse Order",
+  "badges": [
+    "सभी पेज उलटें",
+    "स्कैन ठीक करें",
+    "एक क्लिक"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Reverse PDF Page Order Offline?",
-      "content": "When a scanner outputs pages in reverse, you need a quick local fix — not a cloud upload of your entire document."
+      "type": "reverse_hero_features",
+      "title": "पीडीएफ पेज ऑर्डर को ऑफलाइन रिवर्स क्यों करें?",
+      "content": "जब कोई स्कैनर पृष्ठों को उल्टा आउटपुट करता है, तो आपको त्वरित स्थानीय सुधार की आवश्यकता होती है - आपके संपूर्ण दस्तावेज़ के क्लाउड अपलोड की नहीं।"
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Reverse PDF Page Order",
+      "type": "reverse_how_to_steps",
+      "title": "पीडीएफ पेज ऑर्डर को कैसे उलटें",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF with incorrect page order."
+          "title": "पीडीएफ खोलें",
+          "description": "गलत पृष्ठ क्रम वाली पीडीएफ का चयन करें।"
         },
         {
-          "title": "Confirm Reversal",
-          "description": "Preview the new first and last page."
+          "title": "उलटने की पुष्टि करें",
+          "description": "नए प्रथम और अंतिम पृष्ठ का पूर्वावलोकन करें."
         },
         {
-          "title": "Download Reversed PDF",
-          "description": "Get the reordered PDF instantly."
+          "title": "उलटा पीडीएफ डाउनलोड करें",
+          "description": "पुनः व्यवस्थित पीडीएफ तुरंत प्राप्त करें।"
         }
-      ]
+      ],
+      "badgeText": "त्वरित मार्गदर्शिका"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Page Order Fix for New Delhi Users",
-      "content": "Office users in New Delhi fix scanner reversal issues instantly without cloud uploads."
+      "type": "reverse_geo_targeting",
+      "title": "100% सुरक्षित स्थानीय प्रसंस्करण",
+      "content": "सभी ऑपरेशन सीधे आपके स्थानीय डिवाइस पर किए जाते हैं। हम पूर्ण गोपनीयता सुनिश्चित करते हुए, आपके दस्तावेज़ों को बाहरी सर्वर पर अपलोड किए बिना संसाधित करने के लिए उन्नत WebAssembly तकनीक का उपयोग करते हैं।",
+      "badgeText": "स्थानीय प्रसंस्करण"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Documents Never Leave Your Device",
-      "content": "Reversed contracts, reports, and records are processed entirely in browser memory."
+      "type": "reverse_privacy_security",
+      "title": "दस्तावेज़ आपका डिवाइस कभी नहीं छोड़ते",
+      "content": "उलटे अनुबंध, रिपोर्ट और रिकॉर्ड पूरी तरह से ब्राउज़र मेमोरी में संसाधित होते हैं।",
+      "badgeText": "सुरक्षा पहले"
     },
     {
-      "type": "transform_performance",
-      "title": "Reverse Any PDF in Seconds",
-      "content": "Reversing a 1000-page document takes milliseconds. All in your browser."
+      "type": "reverse_performance",
+      "title": "किसी भी पीडीएफ को सेकंडों में उलटें",
+      "content": "1000 पेज के दस्तावेज़ को उलटने में मिलीसेकेंड का समय लगता है। सब कुछ आपके ब्राउज़र में.",
+      "badgeText": "बिजली की तेजी"
     }
   ],
   "faqs": [
     {
-      "q": "Does this reverse all pages?",
-      "a": "Yes, the full page order is flipped."
+      "q": "क्या इससे सभी पन्ने पलट जाते हैं?",
+      "a": "हां, पूरे पेज का ऑर्डर फ़्लिप किया गया है।"
     },
     {
-      "q": "Can I select a range to reverse?",
-      "a": "Yes, specify start and end pages to reverse selectively."
+      "q": "क्या मैं उलटने के लिए एक सीमा का चयन कर सकता हूँ?",
+      "a": "हां, चयनात्मक रूप से उलटने के लिए प्रारंभ और अंतिम पृष्ठों को निर्दिष्ट करें।"
     },
     {
-      "q": "Is the quality affected?",
-      "a": "No, reversal is a structural operation with no quality loss."
+      "q": "क्या गुणवत्ता प्रभावित हुई है?",
+      "a": "नहीं, उत्क्रमण एक संरचनात्मक कार्रवाई है जिसमें कोई गुणवत्ता हानि नहीं होती है।"
     },
     {
-      "q": "Can I undo?",
-      "a": "Apply reversal again to undo."
+      "q": "क्या मैं पूर्ववत कर सकता हूँ?",
+      "a": "पूर्ववत करने के लिए पुन: उत्क्रमण लागू करें."
     },
     {
-      "q": "Is this free?",
-      "a": "हाँ, पूरी तरह मुफ्त।"
+      "q": "क्या यह मुफ़्त है?",
+      "a": "हाँ, हमेशा मुफ़्त."
     }
-  ]
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न",
+  "supportCenter": "सहायता केंद्र"
 }

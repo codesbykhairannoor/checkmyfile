@@ -1,0 +1,85 @@
+{
+  "title": "CSV 到 Excel 轉換器 — 離線且即時",
+  "h1": "在本機將 CSV 檔案轉換為 Excel 電子表格",
+  "description": "完全在瀏覽器中將 .csv 檔案轉換為結構化 .xlsx 電子表格。 沒有上傳。 100% 安全的本地處理。",
+  "buttonText": "Convert CSV",
+  "badges": [
+    "UTF-8 支援",
+    "多欄",
+    "即時轉換"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "csv_excel_hero_features",
+      "title": "為什麼離線轉換 CSV？",
+      "content": "CSV 檔案通常包含客戶或財務資料。 將它們在本地轉換為 Excel，無需將資料集暴露給任何雲端服務。"
+    },
+    {
+      "type": "csv_excel_how_to_steps",
+      "title": "如何將 CSV 轉換為 Excel",
+      "steps": [
+        {
+          "title": "開啟 CSV 檔案",
+          "description": "選擇要轉換的 CSV 檔案。"
+        },
+        {
+          "title": "預覽資料",
+          "description": "匯出前查看解析的列和行。"
+        },
+        {
+          "title": "下載.xlsx",
+          "description": "立即取得您的 Excel 電子表格。"
+        }
+      ],
+      "badgeText": "快速指南"
+    },
+    {
+      "type": "csv_excel_geo_targeting",
+      "title": "100% 安全的本地處理",
+      "content": "所有操作都直接在本地設備上執行。 我們使用先進的 WebAssembly 技術來處理您的文檔，而無需將其上傳到外部伺服器，從而確保完全的隱私。",
+      "badgeText": "本地處理"
+    },
+    {
+      "type": "csv_excel_privacy_security",
+      "title": "客戶資料保留在您的機器上",
+      "content": "CRM 匯出、交易日誌和調查資料在本地轉換，零雲參與。",
+      "badgeText": "安全第一"
+    },
+    {
+      "type": "csv_excel_performance",
+      "title": "立即轉換大型 CSV 檔案",
+      "content": "在幾秒鐘內將 100,000 行 CSV 轉換為 Excel。 所有瀏覽器本機處理。",
+      "badgeText": "快如閃電"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "柱結構是否保留？",
+      "a": "是的，所有欄位都對應到 Excel 欄位。"
+    },
+    {
+      "q": "我可以轉換多個 CSV 嗎？",
+      "a": "是的，支援批量轉換為多張紙。"
+    },
+    {
+      "q": "是否處理特殊字元？",
+      "a": "是的，支援 UTF-8 和各種編碼。"
+    },
+    {
+      "q": "我可以設定分隔符號嗎？",
+      "a": "是的，支援逗號、分號和製表符分隔符號。"
+    },
+    {
+      "q": "這是免費的嗎？",
+      "a": "是的，永遠免費。"
+    }
+  ],
+  "faqTitle": "常見問題",
+  "supportCenter": "支援中心"
+}

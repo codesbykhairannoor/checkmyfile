@@ -1,0 +1,85 @@
+{
+  "title": "Usuń strony z pliku PDF — Usuń strony PDF w trybie offline",
+  "h1": "Natychmiastowe usuwanie stron z pliku PDF",
+  "description": "Usuń niechciane strony z pliku PDF bezpiecznie w przeglądarce. Szybko i całkowicie bezpiecznie.",
+  "buttonText": "Remove Pages",
+  "badges": [
+    "Wybierz i usuń",
+    "Edytor wizualny",
+    "Zerowe opóźnienie"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "remove_hero_features",
+      "title": "Dlaczego warto usuwać strony lokalnie?",
+      "content": "Usuwanie wrażliwych lub niepotrzebnych stron z dokumentu powinno odbywać się na urządzeniu, a nie na serwerze. Zapewniamy 100% prywatności."
+    },
+    {
+      "type": "remove_how_to_steps",
+      "title": "Jak usunąć strony PDF",
+      "steps": [
+        {
+          "title": "Otwórz PDF",
+          "description": "Załaduj plik PDF, który chcesz wyczyścić."
+        },
+        {
+          "title": "Wybierz strony do usunięcia",
+          "description": "Najedź kursorem na strony i kliknij ikonę kosza, aby oznaczyć je do usunięcia."
+        },
+        {
+          "title": "Eksportuj czysty plik PDF",
+          "description": "Pobierz nowy plik PDF bez usuniętych stron."
+        }
+      ],
+      "badgeText": "Krótki przewodnik"
+    },
+    {
+      "type": "remove_geo_targeting",
+      "title": "100% bezpieczne przetwarzanie lokalne",
+      "content": "Wszystkie operacje wykonywane są bezpośrednio na Twoim urządzeniu lokalnym. Korzystamy z zaawansowanej technologii WebAssembly, aby przetwarzać Twoje dokumenty bez konieczności przesyłania ich na serwery zewnętrzne, zapewniając całkowitą prywatność.",
+      "badgeText": "Przetwarzanie lokalne"
+    },
+    {
+      "type": "remove_privacy_security",
+      "title": "Całkowita prywatność usuwania",
+      "content": "Gdy usuniesz stronę, przed zapisaniem zostanie ona trwale usunięta z dokumentu w pamięci przeglądarki.",
+      "badgeText": "Bezpieczeństwo przede wszystkim"
+    },
+    {
+      "type": "remove_performance",
+      "title": "Natychmiastowe usuwanie strony",
+      "content": "Wyodrębnianie i usuwanie stron nawet z 1000-stronicowego dokumentu zajmuje milisekundy przy użyciu naszego zoptymalizowanego silnika WASM.",
+      "badgeText": "Błyskawicznie"
+    }
+  ],
+  "faqTitle": "Często zadawane pytania",
+  "faqs": [
+    {
+      "q": "Czy usunięte strony można odzyskać?",
+      "a": "Po pobraniu nowego pliku PDF usunięte strony zostaną trwale usunięte z tego pliku. Twój oryginalny plik pozostaje nietknięty."
+    },
+    {
+      "q": "Czy muszę przesyłać plik PDF?",
+      "a": "Nie. Cały proces usuwania strony odbywa się lokalnie w Twojej przeglądarce internetowej."
+    },
+    {
+      "q": "Czy istnieje ograniczenie liczby stron, które mogę usunąć?",
+      "a": "Nie, możesz usunąć dowolną liczbę stron, całkowicie za darmo."
+    },
+    {
+      "q": "Czy układ pozostałych stron ulegnie zmianie?",
+      "a": "Nie, pozostałe strony zachowają dokładnie oryginalne formatowanie i układ."
+    },
+    {
+      "q": "Czy mogę wybrać wiele stron jednocześnie?",
+      "a": "Tak, możesz kliknąć wiele stron, aby oznaczyć je wszystkie do usunięcia jednocześnie."
+    }
+  ],
+  "supportCenter": "Centrum wsparcia"
+}

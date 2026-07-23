@@ -1,67 +1,85 @@
 {
-  "title": "Crop PDF Margins — Trim Pages Offline",
-  "h1": "Crop and Trim PDF Page Margins Instantly",
-  "description": "Remove unwanted whitespace or crop PDF pages to custom dimensions, all locally. No upload. Ideal for users in Bucharest.",
+  "title": "Decupați marginile PDF — Decupați paginile offline",
+  "h1": "Decupați și tăiați instantaneu marjele paginii PDF",
+  "description": "Eliminați spațiile nedorite sau decupați paginile PDF la dimensiuni personalizate, toate local. Rapid și complet sigur.",
+  "buttonText": "Crop PDF",
+  "badges": [
+    "Editor de marjă vizuală",
+    "Decupare uniformă",
+    "Latență zero"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Crop PDFs Locally?",
-      "content": "Scanned documents often have large margins. Crop them locally without exposing internal document structure to the cloud."
+      "type": "crop_hero_features",
+      "title": "De ce decupați PDF-urile local?",
+      "content": "Documentele scanate au adesea marje mari. Decupați-le local fără a expune structura internă a documentului în cloud."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Crop PDF Pages",
+      "type": "crop_how_to_steps",
+      "title": "Cum să decupați paginile PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to crop."
+          "title": "Deschide PDF",
+          "description": "Încărcați PDF-ul pe care doriți să-l decupați."
         },
         {
-          "title": "Set Margins",
-          "description": "Drag guides or enter exact margin values."
+          "title": "Set Margini",
+          "description": "Trageți ghidajele sau introduceți valorile exacte ale marginilor."
         },
         {
-          "title": "Export Cropped PDF",
-          "description": "Download the trimmed PDF instantly."
+          "title": "Exportați PDF decupat",
+          "description": "Descărcați instantaneu PDF-ul tăiat."
         }
-      ]
+      ],
+      "badgeText": "Ghid rapid"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Precise Cropping for Bucharest Users",
-      "content": "Architects and designers in Bucharest use our crop tool to clean up scanned blueprints without cloud uploads."
+      "type": "crop_geo_targeting",
+      "title": "Procesare locală 100% sigură",
+      "content": "Toate operațiunile sunt efectuate direct pe dispozitivul local. Folosim tehnologie avansată WebAssembly pentru a vă procesa documentele fără a le încărca vreodată pe servere externe, asigurând confidențialitate completă.",
+      "badgeText": "Prelucrare locală"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Technical Documents Stay Local",
-      "content": "Architectural plans and legal PDFs cropped locally without any server round-trip."
+      "type": "crop_privacy_security",
+      "title": "Documente tehnice Stay Local",
+      "content": "Planurile arhitecturale și PDF-urile legale decupate local fără nicio călătorie dus-întors pe server.",
+      "badgeText": "Securitatea în primul rând"
     },
     {
-      "type": "split_performance",
-      "title": "Crop Any Size PDF Instantly",
-      "content": "Crop margins from a 200-page document in under 2 seconds. All in your browser."
+      "type": "crop_performance",
+      "title": "Decupați PDF de orice dimensiune instantaneu",
+      "content": "Decupați marginile dintr-un document de 200 de pagini în mai puțin de 2 secunde. Toate în browserul dvs.",
+      "badgeText": "Rapid fulger"
     }
   ],
   "faqs": [
     {
-      "q": "Can I crop all pages uniformly?",
-      "a": "Yes, apply the same crop to every page at once."
+      "q": "Pot decupa toate paginile uniform?",
+      "a": "Da, aplicați aceeași decupare la fiecare pagină deodată."
     },
     {
-      "q": "Can I crop individual pages?",
-      "a": "Yes, you can set per-page crop values."
+      "q": "Pot decupa pagini individuale?",
+      "a": "Da, puteți seta valori de decupare pe pagină."
     },
     {
-      "q": "What are the minimum margin values?",
-      "a": "You can crop all the way to 0 margin on any side."
+      "q": "Care sunt valorile minime ale marjei?",
+      "a": "Puteți decupa până la marginea 0 pe orice parte."
     },
     {
-      "q": "Will content be cut off?",
-      "a": "Only whitespace is removed by default; you control the guides."
+      "q": "Conținutul va fi întrerupt?",
+      "a": "Doar spațiile albe sunt eliminate implicit; tu controlezi ghizii."
     },
     {
-      "q": "Is this free?",
+      "q": "Este gratuit?",
       "a": "Da, complet gratuit."
     }
-  ]
+  ],
+  "faqTitle": "Întrebări frecvente",
+  "supportCenter": "Centrul de suport"
 }

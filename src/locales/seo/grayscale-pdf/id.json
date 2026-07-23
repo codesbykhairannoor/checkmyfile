@@ -1,67 +1,85 @@
 {
-  "title": "Grayscale PDF — Convert to Black and White Offline",
-  "h1": "Convert Color PDF Pages to Grayscale Instantly",
-  "description": "Turn color PDFs into black-and-white versions to reduce file size or prepare for printing, entirely in your browser. Ideal for users in Jakarta.",
+  "title": "PDF Skala Abu-abu — Konversi ke Hitam Putih Offline",
+  "h1": "Ubah Halaman PDF Berwarna menjadi Skala Abu-Abu Secara Instan",
+  "description": "Ubah PDF berwarna menjadi versi hitam-putih untuk mengurangi ukuran file atau mempersiapkan pencetakan, sepenuhnya di browser Anda. Pemrosesan lokal 100% aman.",
+  "buttonText": "Convert to Grayscale",
+  "badges": [
+    "Hemat Tinta",
+    "Hitam Putih",
+    "Sempurna untuk Cetak"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Convert to Grayscale Offline?",
-      "content": "Removing color from a PDF is a pre-print or archiving step. Do it locally without exposing confidential document design."
+      "type": "grayscale_hero_features",
+      "title": "Mengapa Mengonversi ke Grayscale Offline?",
+      "content": "Menghapus warna dari PDF adalah langkah pra-cetak atau pengarsipan. Lakukan secara lokal tanpa mengungkap desain dokumen rahasia."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Make PDF Grayscale",
+      "type": "grayscale_how_to_steps",
+      "title": "Cara Membuat PDF Grayscale",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the color PDF to convert."
+          "title": "Buka PDF",
+          "description": "Pilih PDF berwarna yang akan dikonversi."
         },
         {
-          "title": "Choose Conversion Mode",
-          "description": "Pick luminance or contrast-adjusted grayscale."
+          "title": "Pilih Mode Konversi",
+          "description": "Pilih kecerahan atau skala abu-abu yang disesuaikan dengan kontras."
         },
         {
-          "title": "Download Grayscale PDF",
-          "description": "Save the black-and-white PDF immediately."
+          "title": "Unduh PDF Skala Abu-Abu",
+          "description": "Simpan segera PDF hitam putihnya."
         }
-      ]
+      ],
+      "badgeText": "Panduan Singkat"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Grayscale PDF for Jakarta Printers",
-      "content": "Businesses in Jakarta convert color PDFs to grayscale for cost-effective printing without cloud uploads."
+      "type": "grayscale_geo_targeting",
+      "title": "Pemrosesan Lokal 100% Aman",
+      "content": "Semua operasi dilakukan langsung di perangkat lokal Anda. Kami menggunakan teknologi WebAssembly yang canggih untuk memproses dokumen Anda tanpa harus mengunggahnya ke server eksternal, sehingga memastikan privasi sepenuhnya.",
+      "badgeText": "Pemrosesan Lokal"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Design Files Stay Confidential",
-      "content": "Internal design documents and branded materials converted to grayscale without cloud exposure."
+      "type": "grayscale_privacy_security",
+      "title": "File Desain Tetap Rahasia",
+      "content": "Dokumen desain internal dan material bermerek diubah menjadi skala abu-abu tanpa paparan cloud.",
+      "badgeText": "Keamanan Pertama"
     },
     {
-      "type": "transform_performance",
-      "title": "Convert Color Instantly",
-      "content": "A 200-page color PDF converted to grayscale in under 2 seconds. Zero upload."
+      "type": "grayscale_performance",
+      "title": "Konversi Warna Secara Instan",
+      "content": "PDF berwarna setebal 200 halaman diubah menjadi skala abu-abu dalam waktu kurang dari 2 detik. Nol unggahan.",
+      "badgeText": "Secepat Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "Does grayscale reduce file size?",
-      "a": "Often yes, especially for image-heavy PDFs."
+      "q": "Apakah skala abu-abu mengurangi ukuran file?",
+      "a": "Seringkali ya, terutama untuk PDF dengan banyak gambar."
     },
     {
-      "q": "Are all pages converted?",
-      "a": "Yes by default; you can also select specific pages."
+      "q": "Apakah semua halaman dikonversi?",
+      "a": "Ya secara default; Anda juga dapat memilih halaman tertentu."
     },
     {
-      "q": "Is the conversion reversible?",
-      "a": "The color information is removed; keep the original for reversal."
+      "q": "Apakah konversinya dapat dibalik?",
+      "a": "Informasi warna dihapus; simpan yang asli untuk pembalikan."
     },
     {
-      "q": "Does it affect text quality?",
-      "a": "No, text remains crisp and black."
+      "q": "Apakah ini mempengaruhi kualitas teks?",
+      "a": "Tidak, teks tetap tajam dan hitam."
     },
     {
-      "q": "Is this free?",
+      "q": "Apakah ini gratis?",
       "a": "Ya, sepenuhnya gratis."
     }
-  ]
+  ],
+  "faqTitle": "Pertanyaan yang Sering Diajukan",
+  "supportCenter": "Pusat Dukungan"
 }

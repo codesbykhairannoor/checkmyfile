@@ -1,67 +1,85 @@
 {
-  "title": "Unlock PDF — Remove Password Offline",
-  "h1": "Remove PDF Password Protection Instantly in Your Browser",
-  "description": "Unlock password-protected PDFs locally if you know the password. 100% private. No upload. Perfect for users in Athens.",
+  "title": "Ξεκλείδωμα PDF — Κατάργηση κωδικού πρόσβασης εκτός σύνδεσης",
+  "h1": "Καταργήστε την προστασία κωδικού πρόσβασης PDF αμέσως στο πρόγραμμα περιήγησής σας",
+  "description": "Ξεκλειδώστε τοπικά τα PDF που προστατεύονται με κωδικό πρόσβασης, εάν γνωρίζετε τον κωδικό πρόσβασης. 100% ιδιωτικό. Χωρίς μεταφόρτωση. 100% ασφαλής τοπική επεξεργασία.",
+  "buttonText": "Unlock PDF",
+  "badges": [
+    "Αφαίρεση κωδικού πρόσβασης",
+    "Άμεσο ξεκλείδωμα",
+    "Δεν υπάρχουν αρχεία καταγραφής διακομιστή"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "unlock_hero_features",
-      "title": "Why Unlock PDFs Locally?",
-      "content": "You have the password to your own file. Unlocking it should not require uploading sensitive documents to an external service."
+      "title": "Γιατί να ξεκλειδώνετε τα αρχεία PDF τοπικά;",
+      "content": "Έχετε τον κωδικό πρόσβασης στο δικό σας αρχείο. Το ξεκλείδωμά του δεν θα πρέπει να απαιτεί τη μεταφόρτωση ευαίσθητων εγγράφων σε εξωτερική υπηρεσία."
     },
     {
       "type": "unlock_how_to_steps",
-      "title": "How to Unlock a Protected PDF",
+      "title": "Πώς να ξεκλειδώσετε ένα προστατευμένο PDF",
       "steps": [
         {
-          "title": "Open Protected PDF",
-          "description": "Select the password-protected PDF."
+          "title": "Ανοίξτε το Protected PDF",
+          "description": "Επιλέξτε το PDF που προστατεύεται με κωδικό πρόσβασης."
         },
         {
-          "title": "Enter Your Password",
-          "description": "Provide the existing password — decryption stays in your browser."
+          "title": "Εισαγάγετε τον κωδικό πρόσβασής σας",
+          "description": "Καταχωρίστε τον υπάρχοντα κωδικό πρόσβασης — η αποκρυπτογράφηση παραμένει στο πρόγραμμα περιήγησής σας."
         },
         {
-          "title": "Download Unlocked PDF",
-          "description": "Get your unlocked, fully accessible PDF instantly."
+          "title": "Λήψη Unlocked PDF",
+          "description": "Αποκτήστε το ξεκλείδωτο, πλήρως προσβάσιμο PDF σας άμεσα."
         }
-      ]
+      ],
+      "badgeText": "Γρήγορος Οδηγός"
     },
     {
       "type": "unlock_geo_targeting",
-      "title": "Instant PDF Unlocking for Athens Users",
-      "content": "Users in Athens access their own password-protected files without sending decryption keys to any server."
+      "title": "100% Ασφαλής Τοπική Επεξεργασία",
+      "content": "Όλες οι λειτουργίες εκτελούνται απευθείας στην τοπική συσκευή σας. Χρησιμοποιούμε προηγμένη τεχνολογία WebAssembly για να επεξεργαζόμαστε τα έγγραφά σας χωρίς ποτέ να τα ανεβάσουμε σε εξωτερικούς διακομιστές, διασφαλίζοντας πλήρες απόρρητο.",
+      "badgeText": "Τοπική Επεξεργασία"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Your Password Never Leaves the Browser",
-      "content": "The decryption key and your document are processed entirely in browser memory — never transmitted to any server or service."
+      "title": "Ο κωδικός πρόσβασής σας δεν φεύγει ποτέ από το πρόγραμμα περιήγησης",
+      "content": "Το κλειδί αποκρυπτογράφησης και το έγγραφό σας επεξεργάζονται εξ ολοκλήρου στη μνήμη του προγράμματος περιήγησης — δεν μεταδίδονται ποτέ σε κανένα διακομιστή ή υπηρεσία.",
+      "badgeText": "Πρώτα η ασφάλεια"
     },
     {
       "type": "unlock_performance",
       "title": "Instant Browser-Local Decryption",
-      "content": "AES decryption in your browser takes under a second — far faster than any cloud service with no upload wait."
+      "content": "Η αποκρυπτογράφηση AES στο πρόγραμμα περιήγησής σας διαρκεί λιγότερο από ένα δευτερόλεπτο — πολύ πιο γρήγορα από οποιαδήποτε υπηρεσία cloud χωρίς αναμονή μεταφόρτωσης.",
+      "badgeText": "Αστραπιαία"
     }
   ],
   "faqs": [
     {
-      "q": "Does it work without the password?",
-      "a": "No, you must know the existing password to unlock."
+      "q": "Λειτουργεί χωρίς τον κωδικό πρόσβασης;",
+      "a": "Όχι, πρέπει να γνωρίζετε τον υπάρχοντα κωδικό πρόσβασης για να ξεκλειδώσετε."
     },
     {
-      "q": "Can I unlock permissions-restricted PDFs?",
-      "a": "Yes, permission restrictions are removed after password verification."
+      "q": "Μπορώ να ξεκλειδώσω αρχεία PDF με περιορισμούς αδειών;",
+      "a": "Ναι, οι περιορισμοί αδειών καταργούνται μετά την επαλήθευση κωδικού πρόσβασης."
     },
     {
-      "q": "Is the decryption process secure?",
-      "a": "All decryption happens in your browser memory; nothing is transmitted."
+      "q": "Είναι ασφαλής η διαδικασία αποκρυπτογράφησης;",
+      "a": "Όλη η αποκρυπτογράφηση γίνεται στη μνήμη του προγράμματος περιήγησής σας. τίποτα δεν μεταδίδεται."
     },
     {
-      "q": "What if the password is wrong?",
-      "a": "You will see an error and can try again with the correct password."
+      "q": "Τι γίνεται αν ο κωδικός πρόσβασης είναι λάθος;",
+      "a": "Θα δείτε ένα σφάλμα και μπορείτε να δοκιμάσετε ξανά με τον σωστό κωδικό πρόσβασης."
     },
     {
-      "q": "Is this free?",
+      "q": "Αυτό είναι δωρεάν;",
       "a": "Ναι, εντελώς δωρεάν."
     }
-  ]
+  ],
+  "faqTitle": "Συχνές Ερωτήσεις",
+  "supportCenter": "Κέντρο Υποστήριξης"
 }

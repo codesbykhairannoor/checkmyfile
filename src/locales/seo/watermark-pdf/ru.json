@@ -1,67 +1,85 @@
 {
-  "title": "Add Watermark to PDF — Offline Watermarking",
-  "h1": "Stamp PDFs with Text or Image Watermarks Locally",
-  "description": "Add \"CONFIDENTIAL\", logos, or custom text watermarks to PDFs entirely in your browser. No upload. Best for users in Moscow.",
+  "title": "Добавить водяной знак в PDF — водяные знаки в автономном режиме",
+  "h1": "Локальная печать PDF-файлов текстовыми или графическими водяными знаками",
+  "description": "Добавляйте «КОНФИДЕНЦИАЛЬНО», логотипы или собственные текстовые водяные знаки в PDF-файлы полностью в своем браузере. Нет загрузки. 100% безопасная локальная обработка.",
+  "buttonText": "Add Watermark",
+  "badges": [
+    "Пользовательский текст",
+    "Регулируемая непрозрачность",
+    "Защита бренда"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Watermark PDFs Offline?",
-      "content": "Adding watermarks means your document is sensitive. Never upload draft contracts or confidential reports to a cloud watermarker."
+      "type": "watermark_hero_features",
+      "title": "Почему PDF-файлы с водяными знаками офлайн?",
+      "content": "Добавление водяных знаков означает, что ваш документ является конфиденциальным. Никогда не загружайте проекты контрактов или конфиденциальные отчеты в облачный водяной знак."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Watermark a PDF",
+      "type": "watermark_how_to_steps",
+      "title": "Как поставить водяной знак в PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to watermark."
+          "title": "Открыть PDF",
+          "description": "Выберите PDF-файл для водяного знака."
         },
         {
-          "title": "Design Watermark",
-          "description": "Type text or upload a logo image."
+          "title": "Дизайн водяного знака",
+          "description": "Введите текст или загрузите изображение логотипа."
         },
         {
-          "title": "Apply & Download",
-          "description": "Get your watermarked PDF in one click."
+          "title": "Применить и скачать",
+          "description": "Получите PDF-файл с водяными знаками в один клик."
         }
-      ]
+      ],
+      "badgeText": "Краткое руководство"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Document Watermarking in Moscow",
-      "content": "Legal and creative professionals in Moscow stamp documents with watermarks without cloud uploads."
+      "type": "watermark_geo_targeting",
+      "title": "100% безопасная локальная обработка",
+      "content": "Все операции выполняются непосредственно на вашем локальном устройстве. Мы используем передовую технологию WebAssembly для обработки ваших документов, не загружая их на внешние серверы, обеспечивая полную конфиденциальность.",
+      "badgeText": "Локальная обработка"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Confidential Drafts Stay Private",
-      "content": "Draft contracts and unreleased designs watermarked locally without any server contact."
+      "type": "watermark_privacy_security",
+      "title": "Конфиденциальные черновики остаются конфиденциальными",
+      "content": "Черновики контрактов и неизданные проекты помечаются водяными знаками локально без какого-либо контакта с сервером.",
+      "badgeText": "Безопасность превыше всего"
     },
     {
-      "type": "transform_performance",
-      "title": "Stamp Thousands of Pages Instantly",
-      "content": "Apply watermarks to a 1000-page document in under 3 seconds. All in your browser."
+      "type": "watermark_performance",
+      "title": "Мгновенно штампуйте тысячи страниц",
+      "content": "Нанесите водяные знаки на документ объемом 1000 страниц менее чем за 3 секунды. Все в вашем браузере.",
+      "badgeText": "Молниеносно"
     }
   ],
   "faqs": [
     {
-      "q": "Can I use a logo as a watermark?",
-      "a": "Yes, upload a PNG logo and set transparency."
+      "q": "Могу ли я использовать логотип в качестве водяного знака?",
+      "a": "Да, загрузите логотип PNG и установите прозрачность."
     },
     {
-      "q": "Can I adjust watermark opacity?",
-      "a": "Yes, from 10% to 100% opacity."
+      "q": "Могу ли я настроить непрозрачность водяного знака?",
+      "a": "Да, от 10% до 100% непрозрачности."
     },
     {
-      "q": "Can I apply it to specific pages only?",
-      "a": "Yes, choose page ranges."
+      "q": "Могу ли я применить его только к определенным страницам?",
+      "a": "Да, выберите диапазоны страниц."
     },
     {
-      "q": "Is diagonal placement available?",
-      "a": "Yes, rotate watermarks to any angle."
+      "q": "Возможно ли диагональное размещение?",
+      "a": "Да, поворачивайте водяные знаки под любым углом."
     },
     {
-      "q": "Is this free?",
-      "a": "Да, полностью бесплатно."
+      "q": "Это бесплатно?",
+      "a": "Да, всегда бесплатно."
     }
-  ]
+  ],
+  "faqTitle": "Часто задаваемые вопросы",
+  "supportCenter": "Центр поддержки"
 }

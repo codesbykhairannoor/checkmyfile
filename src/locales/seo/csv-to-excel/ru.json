@@ -1,67 +1,85 @@
 {
-  "title": "CSV to Excel Converter — Offline & Instant",
-  "h1": "Convert CSV Files to Excel Spreadsheets Locally",
-  "description": "Transform .csv files into structured .xlsx spreadsheets entirely in your browser. No upload. Perfect for data teams in Moscow.",
+  "title": "Конвертер CSV в Excel — офлайн и мгновенно",
+  "h1": "Преобразование файлов CSV в таблицы Excel локально",
+  "description": "Преобразуйте файлы .csv в структурированные таблицы .xlsx прямо в браузере. Нет загрузки. 100% безопасная локальная обработка.",
+  "buttonText": "Convert CSV",
+  "badges": [
+    "Поддержка UTF-8",
+    "Многоколоночный",
+    "Мгновенное конвертирование"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Convert CSV Offline?",
-      "content": "CSV files often contain customer or financial data. Convert them to Excel locally without exposing your datasets to any cloud service."
+      "type": "csv_excel_hero_features",
+      "title": "Зачем конвертировать CSV в автономном режиме?",
+      "content": "Файлы CSV часто содержат данные о клиентах или финансовые данные. Преобразуйте их в Excel локально, не подвергая свои наборы данных каким-либо облачным сервисам."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert CSV to Excel",
+      "type": "csv_excel_how_to_steps",
+      "title": "Как конвертировать CSV в Excel",
       "steps": [
         {
-          "title": "Open CSV File",
-          "description": "Select the CSV file to convert."
+          "title": "Открыть файл CSV",
+          "description": "Выберите CSV-файл для преобразования."
         },
         {
-          "title": "Preview Data",
-          "description": "See the parsed columns and rows before export."
+          "title": "Предварительный просмотр данных",
+          "description": "Перед экспортом просмотрите проанализированные столбцы и строки."
         },
         {
-          "title": "Download .xlsx",
-          "description": "Get your Excel spreadsheet instantly."
+          "title": "Скачать .xlsx",
+          "description": "Получите таблицу Excel мгновенно."
         }
-      ]
+      ],
+      "badgeText": "Краткое руководство"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Data Tools for Moscow Analysts",
-      "content": "Data analysts in Moscow convert CSV exports to Excel without uploading sensitive datasets."
+      "type": "csv_excel_geo_targeting",
+      "title": "100% безопасная локальная обработка",
+      "content": "Все операции выполняются непосредственно на вашем локальном устройстве. Мы используем передовую технологию WebAssembly для обработки ваших документов, не загружая их на внешние серверы, обеспечивая полную конфиденциальность.",
+      "badgeText": "Локальная обработка"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Customer Data Stays on Your Machine",
-      "content": "CRM exports, transaction logs, and survey data converted locally with zero cloud involvement."
+      "type": "csv_excel_privacy_security",
+      "title": "Данные клиентов остаются на вашем компьютере",
+      "content": "Экспорт CRM, журналы транзакций и данные опросов преобразуются локально без использования облака.",
+      "badgeText": "Безопасность превыше всего"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Large CSV Files Instantly",
-      "content": "Convert a 100,000-row CSV to Excel in seconds. All browser-native processing."
+      "type": "csv_excel_performance",
+      "title": "Мгновенно конвертируйте большие файлы CSV",
+      "content": "Преобразование CSV-файла из 100 000 строк в Excel за считанные секунды. Вся обработка в браузере.",
+      "badgeText": "Молниеносно"
     }
   ],
   "faqs": [
     {
-      "q": "Is the column structure preserved?",
-      "a": "Yes, all columns are mapped to Excel columns."
+      "q": "Сохраняется ли структура столбцов?",
+      "a": "Да, все столбцы сопоставлены со столбцами Excel."
     },
     {
-      "q": "Can I convert multiple CSVs?",
-      "a": "Yes, batch conversion to multiple sheets is supported."
+      "q": "Могу ли я конвертировать несколько CSV-файлов?",
+      "a": "Да, поддерживается пакетное преобразование в несколько листов."
     },
     {
-      "q": "Are special characters handled?",
-      "a": "Yes, UTF-8 and various encodings are supported."
+      "q": "Обрабатываются ли специальные символы?",
+      "a": "Да, поддерживаются UTF-8 и различные кодировки."
     },
     {
-      "q": "Can I set delimiters?",
-      "a": "Yes, comma, semicolon, and tab delimiters are supported."
+      "q": "Могу ли я установить разделители?",
+      "a": "Да, поддерживаются запятая, точка с запятой и разделители табуляции."
     },
     {
-      "q": "Is this free?",
-      "a": "Да, полностью бесплатно."
+      "q": "Это бесплатно?",
+      "a": "Да, всегда бесплатно."
     }
-  ]
+  ],
+  "faqTitle": "Часто задаваемые вопросы",
+  "supportCenter": "Центр поддержки"
 }

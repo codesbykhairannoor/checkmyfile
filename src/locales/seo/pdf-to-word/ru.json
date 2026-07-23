@@ -1,67 +1,80 @@
 {
-  "title": "PDF to Word Converter — Offline & Editable",
-  "h1": "Convert PDF to Editable Word Documents Locally",
-  "description": "Transform PDFs back into .docx files you can edit, right in your browser. No upload needed. Great for users in Moscow.",
+  "title": "Конвертер PDF в Word — автономно и с возможностью редактирования",
+  "h1": "Преобразование PDF в редактируемые документы Word локально",
+  "description": "Преобразуйте PDF-файлы обратно в файлы .docx, которые можно редактировать прямо в браузере. Загрузка не требуется. Отлично подходит для пользователей в Москве.",
+  "buttonText": "Конвертировать в Word",
+  "badges": [
+    "Редактируемые документы",
+    "Восстановление текста",
+    "Автономный процесс"
+  ],
+  "stats": [
+    "100%",
+    "Местный",
+    "0 с",
+    "Время ожидания"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF Back Offline?",
-      "content": "When you need to edit a PDF, converting it offline keeps your original document confidential."
+      "title": "Зачем использовать офлайн?",
+      "content": "Когда вам нужно отредактировать PDF-файл, его преобразование в автономном режиме сохранит конфиденциальность исходного документа."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Word",
+      "title": "Как использовать",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF file you need to convert."
+          "title": "Загрузить PDF",
+          "description": "Выберите PDF-файл, который нужно конвертировать."
         },
         {
-          "title": "Detect Text Layers",
-          "description": "Our engine reads text and structure from the PDF."
+          "title": "Обнаружение текстовых слоев",
+          "description": "Наш движок считывает текст и структуру из PDF-файла."
         },
         {
-          "title": "Download .docx",
-          "description": "Get your editable Word document ready to modify."
+          "title": "Скачать .docx",
+          "description": "Подготовьте редактируемый документ Word к изменению."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "PDF to Word for Moscow Offices",
-      "content": "Office workers in Moscow use our tool to recover editable text from PDFs without cloud dependency."
+      "title": "PDF в Word для московских офисов",
+      "content": "Офисные работники в Москве используют наш инструмент для восстановления редактируемого текста из PDF-файлов без зависимости от облака."
     },
     {
       "type": "split_privacy_security",
-      "title": "Legal Documents Stay Confidential",
-      "content": "Contracts, NDAs, and reports converted back to Word entirely in your browser memory."
+      "title": "Юридические документы остаются конфиденциальными",
+      "content": "Контракты, соглашения о неразглашении и отчеты полностью преобразуются обратно в Word в памяти вашего браузера."
     },
     {
       "type": "split_performance",
-      "title": "Recover Editable Text in Seconds",
-      "content": "Extract text from a 50-page PDF in under 3 seconds without uploading a single byte."
+      "title": "Восстановить редактируемый текст за секунды",
+      "content": "Извлекайте текст из 50-страничного PDF-файла менее чем за 3 секунды, не загружая ни одного байта."
     }
   ],
   "faqs": [
     {
-      "q": "Is all text preserved?",
-      "a": "Yes, text from all layers is extracted and formatted."
+      "q": "Весь текст сохраняется?",
+      "a": "Да, текст из всех слоев извлекается и форматируется."
     },
     {
-      "q": "Does it work on scanned PDFs?",
-      "a": "For scanned PDFs, use our OCR tool first."
+      "q": "Работает ли он с отсканированными PDF-файлами?",
+      "a": "Для отсканированных PDF-файлов сначала используйте наш инструмент OCR."
     },
     {
-      "q": "Are images included in the .docx?",
-      "a": "Yes, embedded images are included in the output."
+      "q": "Включены ли изображения в файл .docx?",
+      "a": "Да, встроенные изображения включены в выходные данные."
     },
     {
-      "q": "Can I edit the .docx after?",
-      "a": "Absolutely, the output is a fully editable Word document."
+      "q": "Могу ли я потом редактировать .docx?",
+      "a": "Разумеется, на выходе получается полностью редактируемый документ Word."
     },
     {
-      "q": "Is this free?",
-      "a": "Да, полностью бесплатно."
+      "q": "Это бесплатно?",
+      "a": "Да, абсолютно бесплатно."
     }
-  ]
+  ],
+  "faqTitle": "Часто задаваемые вопросы"
 }

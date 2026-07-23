@@ -1,67 +1,85 @@
 {
-  "title": "Excel to PDF — Convert Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to PDF Securely",
-  "description": "Turn .xlsx and .csv files into crisp PDFs locally in your browser. Financial data stays on your device. Perfect for users in Seoul.",
+  "title": "Excel에서 PDF로 — 스프레드시트를 오프라인으로 변환",
+  "h1": "Excel 스프레드시트를 PDF로 안전하게 변환",
+  "description": ".xlsx 및 .csv 파일을 브라우저에서 로컬로 선명한 PDF로 변환하세요. 금융 데이터는 귀하의 장치에 유지됩니다. 100% 안전한 로컬 처리.",
+  "buttonText": "Convert Spreadsheet",
+  "badges": [
+    "재무 보고서",
+    "송장",
+    "데이터 내보내기"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Excel Offline?",
-      "content": "Spreadsheets often contain sensitive financial data. Our browser-based engine converts without any server involvement."
+      "type": "excel_hero_features",
+      "title": "Excel을 오프라인으로 변환하는 이유는 무엇입니까?",
+      "content": "스프레드시트에는 민감한 재무 데이터가 포함되는 경우가 많습니다. 우리의 브라우저 기반 엔진은 서버 개입 없이 변환합니다."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Export Excel as PDF",
+      "type": "excel_how_to_steps",
+      "title": "Excel을 PDF로 내보내는 방법",
       "steps": [
         {
-          "title": "Open Spreadsheet",
-          "description": "Select your .xlsx or .csv file."
+          "title": "스프레드시트 열기",
+          "description": ".xlsx 또는 .csv 파일을 선택합니다."
         },
         {
-          "title": "Choose Sheet Range",
-          "description": "Pick which sheets or rows to include."
+          "title": "시트 범위 선택",
+          "description": "포함할 시트나 행을 선택합니다."
         },
         {
-          "title": "Export as PDF",
-          "description": "Download your spreadsheet as a clean PDF."
+          "title": "PDF로 내보내기",
+          "description": "스프레드시트를 깨끗한 PDF로 다운로드하세요."
         }
-      ]
+      ],
+      "badgeText": "빠른 가이드"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Excel to PDF for Seoul Businesses",
-      "content": "Businesses in Seoul use our tool to share financial reports without exposing raw spreadsheet data."
+      "type": "excel_geo_targeting",
+      "title": "100% 안전한 로컬 처리",
+      "content": "모든 작업은 로컬 장치에서 직접 수행됩니다. 우리는 고급 WebAssembly 기술을 사용하여 문서를 외부 서버에 업로드하지 않고 처리하여 완벽한 개인 정보 보호를 보장합니다.",
+      "badgeText": "로컬 처리"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Protect Financial Spreadsheets",
-      "content": "Balance sheets, payroll data — all processed offline. Zero data sent to any third party."
+      "type": "excel_privacy_security",
+      "title": "재무 스프레드시트를 보호하세요",
+      "content": "대차대조표, 급여 데이터 — 모두 오프라인으로 처리됩니다. 제3자에게 데이터가 전송되지 않습니다.",
+      "badgeText": "보안 우선"
     },
     {
-      "type": "combiner_performance",
-      "title": "Spreadsheet-to-PDF in Seconds",
-      "content": "No upload queue, no compression artifacts. Your spreadsheet renders natively in-browser."
+      "type": "excel_performance",
+      "title": "단 몇 초만에 스프레드시트를 PDF로",
+      "content": "업로드 대기열이 없고 압축 아티팩트가 없습니다. 스프레드시트는 기본적으로 브라우저 내에서 렌더링됩니다.",
+      "badgeText": "번개처럼 빠르게"
     }
   ],
   "faqs": [
     {
-      "q": "Are all Excel formulas preserved?",
-      "a": "Yes, formula results are captured in the PDF snapshot."
+      "q": "모든 Excel 수식이 보존되나요?",
+      "a": "예, 수식 결과는 PDF 스냅샷에 캡처됩니다."
     },
     {
-      "q": "Can I convert multiple sheets?",
-      "a": "Yes, you can include all sheets or specific ones."
+      "q": "여러 시트를 변환할 수 있나요?",
+      "a": "예, 모든 시트를 포함하거나 특정 시트를 포함할 수 있습니다."
     },
     {
-      "q": "What file types are supported?",
-      "a": ".xlsx, .xls, and .csv are all supported."
+      "q": "어떤 파일 형식이 지원되나요?",
+      "a": ".xlsx, .xls 및 .csv가 모두 지원됩니다."
     },
     {
-      "q": "Is this secure for financial data?",
-      "a": "Absolutely. The file never leaves your browser."
+      "q": "금융 데이터에 안전한가요?",
+      "a": "전적으로. 파일은 브라우저를 떠나지 않습니다."
     },
     {
-      "q": "Does it support graphs?",
-      "a": "예, 완전 무료입니다."
+      "q": "그래프를 지원하나요?",
+      "a": "차트와 포함된 그래프가 PDF로 렌더링됩니다."
     }
-  ]
+  ],
+  "faqTitle": "자주 묻는 질문",
+  "supportCenter": "지원 센터"
 }

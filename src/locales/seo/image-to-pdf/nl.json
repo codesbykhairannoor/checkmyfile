@@ -1,67 +1,85 @@
 {
-  "title": "Image to PDF — Combine Photos Offline",
-  "h1": "Convert Images to PDF Without Uploading",
-  "description": "Turn JPG, PNG, and WebP images into a single PDF document in your browser. Your photos stay private. Perfect for users in Amsterdam.",
+  "title": "Afbeelding naar PDF — Foto's offline combineren",
+  "h1": "Afbeeldingen naar PDF converteren zonder te uploaden",
+  "description": "Zet JPG-, PNG- en WebP-afbeeldingen om in één PDF-document in uw browser. Je foto's blijven privé. 100% veilige lokale verwerking.",
+  "buttonText": "Convert Images",
+  "badges": [
+    "Portefeuilles",
+    "ID-scans",
+    "Fotoalbums"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Images Offline?",
-      "content": "Photos contain location data and personal moments. Convert them to PDF without exposing them to any cloud service."
+      "type": "image_hero_features",
+      "title": "Waarom afbeeldingen offline converteren?",
+      "content": "Foto's bevatten locatiegegevens en persoonlijke momenten. Converteer ze naar PDF zonder ze bloot te stellen aan een cloudservice."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Turn Images Into PDF",
+      "type": "image_how_to_steps",
+      "title": "Afbeeldingen omzetten in PDF",
       "steps": [
         {
-          "title": "Select Images",
-          "description": "Choose JPG, PNG, or WebP files from your device."
+          "title": "Selecteer Afbeeldingen",
+          "description": "Kies JPG-, PNG- of WebP-bestanden op uw apparaat."
         },
         {
-          "title": "Arrange Order",
-          "description": "Drag to reorder images before generating the PDF."
+          "title": "Bestelling regelen",
+          "description": "Sleep om de volgorde van afbeeldingen te wijzigen voordat u de PDF genereert."
         },
         {
-          "title": "Export PDF",
-          "description": "Download your image PDF in one click."
+          "title": "PDF exporteren",
+          "description": "Download uw afbeeldings-PDF met één klik."
         }
-      ]
+      ],
+      "badgeText": "Beknopte handleiding"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Image to PDF for Amsterdam Users",
-      "content": "Photographers and designers in Amsterdam use our tool to package portfolios without cloud uploads."
+      "type": "image_geo_targeting",
+      "title": "100% veilige lokale verwerking",
+      "content": "Alle bewerkingen worden rechtstreeks op uw lokale apparaat uitgevoerd. We gebruiken geavanceerde WebAssembly-technologie om uw documenten te verwerken zonder ze ooit naar externe servers te uploaden, waardoor volledige privacy wordt gegarandeerd.",
+      "badgeText": "Lokale verwerking"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Photos Never Leave Your Device",
-      "content": "Personal photos, ID scans, medical images — all converted 100% locally without any server contact."
+      "type": "image_privacy_security",
+      "title": "Foto's verlaten nooit uw apparaat",
+      "content": "Persoonlijke foto's, ID-scans, medische beelden: allemaal 100% lokaal geconverteerd zonder enig servercontact.",
+      "badgeText": "Beveiliging eerst"
     },
     {
-      "type": "combiner_performance",
-      "title": "Batch Convert Instantly",
-      "content": "Convert 50 images into a single PDF in under 5 seconds. No upload, no wait."
+      "type": "image_performance",
+      "title": "Direct batchconversie",
+      "content": "Converteer 50 afbeeldingen naar één PDF in minder dan 5 seconden. Geen upload, geen wachttijd.",
+      "badgeText": "Bliksemsnel"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are supported?",
-      "a": "JPG, JPEG, PNG, and WebP are all supported."
+      "q": "Welke afbeeldingsformaten worden ondersteund?",
+      "a": "JPG, JPEG, PNG en WebP worden allemaal ondersteund."
     },
     {
-      "q": "Can I combine multiple images?",
-      "a": "Yes, select as many images as you want and reorder them."
+      "q": "Kan ik meerdere afbeeldingen combineren?",
+      "a": "Ja, selecteer zoveel afbeeldingen als je wilt en herschik ze."
     },
     {
-      "q": "Is image quality preserved?",
-      "a": "Yes, images are embedded at their original resolution."
+      "q": "Blijft de beeldkwaliteit behouden?",
+      "a": "Ja, afbeeldingen worden in de oorspronkelijke resolutie ingesloten."
     },
     {
-      "q": "Does it strip EXIF metadata?",
-      "a": "You can optionally strip EXIF data for privacy."
+      "q": "Verwijdert het EXIF-metagegevens?",
+      "a": "U kunt optioneel EXIF-gegevens verwijderen voor privacy."
     },
     {
-      "q": "Is there a limit on image count?",
-      "a": "Ja, volledig gratis."
+      "q": "Is er een limiet voor het aantal afbeeldingen?",
+      "a": "Geen limiet! Combineer honderden afbeeldingen in één PDF."
     }
-  ]
+  ],
+  "faqTitle": "Veelgestelde vragen",
+  "supportCenter": "Ondersteuningscentrum"
 }

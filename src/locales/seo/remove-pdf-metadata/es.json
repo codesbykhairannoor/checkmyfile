@@ -1,67 +1,85 @@
 {
-  "title": "Remove PDF Metadata — Strip Hidden Author Data Offline",
-  "h1": "Strip All Hidden Metadata from PDF Files Instantly",
-  "description": "Remove author names, company info, GPS locations, and revision history from PDFs entirely in your browser. No upload. Perfect for Madrid users.",
+  "title": "Eliminar metadatos de PDF: eliminar datos de autor ocultos sin conexión",
+  "h1": "Elimina todos los metadatos ocultos de los archivos PDF al instante",
+  "description": "Elimine completamente los nombres de los autores, la información de la empresa, las ubicaciones GPS y el historial de revisiones de los archivos PDF en su navegador. Sin carga. Procesamiento local 100% seguro.",
+  "buttonText": "Process Document",
+  "badges": [
+    "Seguro y privado",
+    "Motor sin conexión",
+    "Carga cero"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "metadata_hero_features",
-      "title": "Why Strip PDF Metadata?",
-      "content": "PDFs carry hidden metadata — your name, your company, revision history. Strip it all before sharing publicly, entirely offline."
+      "title": "¿Por qué eliminar los metadatos de PDF?",
+      "content": "Los archivos PDF contienen metadatos ocultos: su nombre, su empresa, historial de revisiones. Quítelo todo antes de compartirlo públicamente, completamente fuera de línea."
     },
     {
       "type": "metadata_how_to_steps",
-      "title": "Before & After — How Metadata Removal Works",
+      "title": "Antes y después: cómo funciona la eliminación de metadatos",
       "steps": [
         {
-          "title": "Open Your PDF",
-          "description": "Select the PDF with hidden metadata to remove."
+          "title": "Abra su PDF",
+          "description": "Seleccione el PDF con metadatos ocultos para eliminar."
         },
         {
-          "title": "Preview Hidden Data",
-          "description": "See exactly what metadata — author, GPS, history — is embedded."
+          "title": "Vista previa de datos ocultos",
+          "description": "Vea exactamente qué metadatos (autor, GPS, historial) están integrados."
         },
         {
-          "title": "Strip & Download Clean PDF",
-          "description": "Remove all metadata instantly and save a clean, anonymous PDF."
+          "title": "Quitar y descargar PDF limpio",
+          "description": "Elimine todos los metadatos al instante y guarde un PDF limpio y anónimo."
         }
-      ]
+      ],
+      "badgeText": "Guía rápida"
     },
     {
       "type": "metadata_geo_targeting",
-      "title": "Metadata Privacy Tool for Madrid Professionals",
-      "content": "Journalists, legal professionals, and privacy-conscious users in Madrid strip metadata before publishing or sharing PDFs externally."
+      "title": "Procesamiento local 100% seguro",
+      "content": "Todas las operaciones se realizan directamente en su dispositivo local. Utilizamos tecnología avanzada de WebAssembly para procesar sus documentos sin tener que cargarlos en servidores externos, lo que garantiza una privacidad total.",
+      "badgeText": "Procesamiento local"
     },
     {
       "type": "metadata_privacy_security",
-      "title": "All Metadata Types Permanently Erased",
-      "content": "Author name, company, GPS coordinates from embedded images, revision history, software fingerprints — all permanently removed."
+      "title": "Todos los tipos de metadatos borrados permanentemente",
+      "content": "Nombre del autor, empresa, coordenadas GPS de imágenes incrustadas, historial de revisiones, huellas digitales del software, todo eliminado permanentemente.",
+      "badgeText": "La seguridad es lo primero"
     },
     {
       "type": "metadata_performance",
-      "title": "Strip Metadata in Milliseconds",
-      "content": "Metadata removal takes milliseconds and often reduces file size by 10–15%. All offline."
+      "title": "Eliminar metadatos en milisegundos",
+      "content": "La eliminación de metadatos tarda milisegundos y, a menudo, reduce el tamaño del archivo entre un 10 y un 15 %. Todo sin conexión.",
+      "badgeText": "A la velocidad del rayo"
     }
   ],
   "faqs": [
     {
-      "q": "What metadata is removed?",
-      "a": "Author, creator, producer, title, keywords, and all XMP/EXIF data."
+      "q": "¿Qué metadatos se eliminan?",
+      "a": "Autor, creador, productor, título, palabras clave y todos los datos XMP/EXIF."
     },
     {
-      "q": "Are document bookmarks affected?",
-      "a": "No, bookmarks and structure are preserved; only metadata is removed."
+      "q": "¿Se ven afectados los marcadores de documentos?",
+      "a": "No, se conservan los marcadores y la estructura; sólo se eliminan los metadatos."
     },
     {
-      "q": "Can I preview the metadata first?",
-      "a": "Yes, we show a list of all detected metadata before removing."
+      "q": "¿Puedo obtener una vista previa de los metadatos primero?",
+      "a": "Sí, mostramos una lista de todos los metadatos detectados antes de eliminarlos."
     },
     {
-      "q": "Is the document content affected?",
-      "a": "No, the content, images, and structure remain intact."
+      "q": "¿Se ve afectado el contenido del documento?",
+      "a": "No, el contenido, las imágenes y la estructura permanecen intactos."
     },
     {
-      "q": "Is this free?",
-      "a": "Sí, completamente gratis."
+      "q": "¿Es esto gratis?",
+      "a": "Sí, siempre gratis."
     }
-  ]
+  ],
+  "faqTitle": "Preguntas frecuentes",
+  "supportCenter": "Centro de soporte"
 }

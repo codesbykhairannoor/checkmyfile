@@ -1,67 +1,85 @@
 {
-  "title": "Excel to PDF — Convert Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to PDF Securely",
-  "description": "Turn .xlsx and .csv files into crisp PDFs locally in your browser. Financial data stays on your device. Perfect for users in Athens.",
+  "title": "Excel σε PDF — Μετατροπή υπολογιστικών φύλλων εκτός σύνδεσης",
+  "h1": "Μετατροπή υπολογιστικών φύλλων του Excel σε PDF με ασφάλεια",
+  "description": "Μετατρέψτε τα αρχεία .xlsx και .csv σε καθαρά PDF τοπικά στο πρόγραμμα περιήγησής σας. Τα οικονομικά δεδομένα παραμένουν στη συσκευή σας. 100% ασφαλής τοπική επεξεργασία.",
+  "buttonText": "Convert Spreadsheet",
+  "badges": [
+    "Οικονομικές Εκθέσεις",
+    "Τιμολόγια",
+    "Εξαγωγές Δεδομένων"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Excel Offline?",
-      "content": "Spreadsheets often contain sensitive financial data. Our browser-based engine converts without any server involvement."
+      "type": "excel_hero_features",
+      "title": "Γιατί να μετατρέψετε το Excel εκτός σύνδεσης;",
+      "content": "Τα υπολογιστικά φύλλα περιέχουν συχνά ευαίσθητα οικονομικά δεδομένα. Η μηχανή μας που βασίζεται σε πρόγραμμα περιήγησης μετατρέπει χωρίς καμία συμμετοχή διακομιστή."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Export Excel as PDF",
+      "type": "excel_how_to_steps",
+      "title": "Πώς να εξαγάγετε το Excel ως PDF",
       "steps": [
         {
-          "title": "Open Spreadsheet",
-          "description": "Select your .xlsx or .csv file."
+          "title": "Άνοιγμα υπολογιστικού φύλλου",
+          "description": "Επιλέξτε το αρχείο .xlsx ή .csv."
         },
         {
-          "title": "Choose Sheet Range",
-          "description": "Pick which sheets or rows to include."
+          "title": "Επιλέξτε Εύρος φύλλων",
+          "description": "Επιλέξτε ποια φύλλα ή σειρές θα συμπεριληφθούν."
         },
         {
-          "title": "Export as PDF",
-          "description": "Download your spreadsheet as a clean PDF."
+          "title": "Εξαγωγή ως PDF",
+          "description": "Κατεβάστε το υπολογιστικό φύλλο σας ως καθαρό PDF."
         }
-      ]
+      ],
+      "badgeText": "Γρήγορος Οδηγός"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Excel to PDF for Athens Businesses",
-      "content": "Businesses in Athens use our tool to share financial reports without exposing raw spreadsheet data."
+      "type": "excel_geo_targeting",
+      "title": "100% Ασφαλής Τοπική Επεξεργασία",
+      "content": "Όλες οι λειτουργίες εκτελούνται απευθείας στην τοπική συσκευή σας. Χρησιμοποιούμε προηγμένη τεχνολογία WebAssembly για να επεξεργαζόμαστε τα έγγραφά σας χωρίς ποτέ να τα ανεβάσουμε σε εξωτερικούς διακομιστές, διασφαλίζοντας πλήρες απόρρητο.",
+      "badgeText": "Τοπική Επεξεργασία"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Protect Financial Spreadsheets",
-      "content": "Balance sheets, payroll data — all processed offline. Zero data sent to any third party."
+      "type": "excel_privacy_security",
+      "title": "Προστασία οικονομικών υπολογιστικών φύλλων",
+      "content": "Ισολογισμοί, δεδομένα μισθοδοσίας — όλα υποβάλλονται σε επεξεργασία εκτός σύνδεσης. Μηδενικά δεδομένα αποστέλλονται σε τρίτους.",
+      "badgeText": "Πρώτα η ασφάλεια"
     },
     {
-      "type": "combiner_performance",
-      "title": "Spreadsheet-to-PDF in Seconds",
-      "content": "No upload queue, no compression artifacts. Your spreadsheet renders natively in-browser."
+      "type": "excel_performance",
+      "title": "Υπολογιστικό φύλλο σε PDF σε δευτερόλεπτα",
+      "content": "Χωρίς ουρά μεταφόρτωσης, χωρίς τεχνουργήματα συμπίεσης. Το υπολογιστικό φύλλο σας αποδίδεται εγγενώς στο πρόγραμμα περιήγησης.",
+      "badgeText": "Αστραπιαία"
     }
   ],
   "faqs": [
     {
-      "q": "Are all Excel formulas preserved?",
-      "a": "Yes, formula results are captured in the PDF snapshot."
+      "q": "Διατηρούνται όλοι οι τύποι του Excel;",
+      "a": "Ναι, τα αποτελέσματα του τύπου καταγράφονται στο στιγμιότυπο PDF."
     },
     {
-      "q": "Can I convert multiple sheets?",
-      "a": "Yes, you can include all sheets or specific ones."
+      "q": "Μπορώ να μετατρέψω πολλά φύλλα;",
+      "a": "Ναι, μπορείτε να συμπεριλάβετε όλα τα φύλλα ή συγκεκριμένα."
     },
     {
-      "q": "What file types are supported?",
-      "a": ".xlsx, .xls, and .csv are all supported."
+      "q": "Ποιοι τύποι αρχείων υποστηρίζονται;",
+      "a": "Υποστηρίζονται όλα τα .xlsx, .xls και .csv."
     },
     {
-      "q": "Is this secure for financial data?",
-      "a": "Absolutely. The file never leaves your browser."
+      "q": "Είναι αυτό ασφαλές για οικονομικά δεδομένα;",
+      "a": "Απολύτως. Το αρχείο δεν φεύγει ποτέ από το πρόγραμμα περιήγησής σας."
     },
     {
-      "q": "Does it support graphs?",
-      "a": "Ναι, εντελώς δωρεάν."
+      "q": "Υποστηρίζει γραφήματα;",
+      "a": "Τα γραφήματα και τα ενσωματωμένα γραφήματα αποδίδονται στο PDF."
     }
-  ]
+  ],
+  "faqTitle": "Συχνές Ερωτήσεις",
+  "supportCenter": "Κέντρο Υποστήριξης"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Add Page Numbers to PDF — Offline Number Stamp",
-  "h1": "Insert Page Numbers into PDF Documents Locally",
-  "description": "Stamp page numbers at the header or footer of your PDF entirely in your browser. No upload. Ideal for users in Moscow.",
+  "title": "Добавление номеров страниц в PDF — печать номера в автономном режиме",
+  "h1": "Вставка номеров страниц в PDF-документы локально",
+  "description": "Проставляйте номера страниц в верхнем или нижнем колонтитуле PDF-файла прямо в браузере. Быстро и полностью безопасно.",
+  "buttonText": "Add Page Numbers",
+  "badges": [
+    "Пользовательская позиция",
+    "Верхний и нижний колонтитулы",
+    "Нумерация Бейтса"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Add Page Numbers Offline?",
-      "content": "Page numbers are a formatting step, not a reason to upload confidential documents to a cloud service."
+      "type": "pagenum_hero_features",
+      "title": "Зачем добавлять номера страниц в автономном режиме?",
+      "content": "Номера страниц — это этап форматирования, а не повод загружать конфиденциальные документы в облачный сервис."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Add Page Numbers",
+      "type": "pagenum_how_to_steps",
+      "title": "Как добавить номера страниц",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to number."
+          "title": "Открыть PDF",
+          "description": "Выберите PDF-файл для нумерации."
         },
         {
-          "title": "Configure Style",
-          "description": "Choose position, format (1/12, Page 1, i, ii…), and font."
+          "title": "Настроить стиль",
+          "description": "Выберите положение, формат (1/12, страница 1, i, ii…) и шрифт."
         },
         {
-          "title": "Apply & Download",
-          "description": "Download your paginated PDF instantly."
+          "title": "Применить и скачать",
+          "description": "Загрузите PDF-файл с разбивкой на страницы мгновенно."
         }
-      ]
+      ],
+      "badgeText": "Краткое руководство"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Page Numbering for Moscow Legal Docs",
-      "content": "Legal professionals in Moscow number briefs and reports locally without cloud service dependency."
+      "type": "pagenum_geo_targeting",
+      "title": "100% безопасная локальная обработка",
+      "content": "Все операции выполняются непосредственно на вашем локальном устройстве. Мы используем передовую технологию WebAssembly для обработки ваших документов, не загружая их на внешние серверы, обеспечивая полную конфиденциальность.",
+      "badgeText": "Локальная обработка"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Internal Documents Stay Numbered & Private",
-      "content": "Add page numbers to contracts and confidential reports without any server involvement."
+      "type": "pagenum_privacy_security",
+      "title": "Внутренние документы остаются пронумерованными и конфиденциальными",
+      "content": "Добавляйте номера страниц в контракты и конфиденциальные отчеты без участия сервера.",
+      "badgeText": "Безопасность превыше всего"
     },
     {
-      "type": "organizer_performance",
-      "title": "Number a 1000-Page PDF Instantly",
-      "content": "Stamping page numbers locally takes milliseconds for any size document."
+      "type": "pagenum_performance",
+      "title": "Пронумеруйте 1000-страничный PDF-файл мгновенно",
+      "content": "Локальная штамповка номеров страниц занимает миллисекунды для документа любого размера.",
+      "badgeText": "Молниеносно"
     }
   ],
   "faqs": [
     {
-      "q": "What number formats are available?",
-      "a": "Arabic (1, 2, 3), Roman (i, ii, iii), and letter (a, b, c) formats."
+      "q": "Какие числовые форматы доступны?",
+      "a": "Арабский (1, 2, 3), римский (i, ii, iii) и буквенный (a, b, c) форматы."
     },
     {
-      "q": "Can I start from a custom number?",
-      "a": "Yes, set any starting page number."
+      "q": "Могу ли я начать с индивидуального номера?",
+      "a": "Да, задайте любой номер начальной страницы."
     },
     {
-      "q": "Can I skip numbering the first page?",
-      "a": "Yes, set the page offset to skip cover pages."
+      "q": "Можно ли пропустить нумерацию первой страницы?",
+      "a": "Да, установите смещение страницы, чтобы пропускать титульные страницы."
     },
     {
-      "q": "Where can I position numbers?",
-      "a": "Header-left, header-center, header-right, and same for footer."
+      "q": "Где разместить цифры?",
+      "a": "Заголовок слева, заголовок по центру, заголовок справа и то же самое для нижнего колонтитула."
     },
     {
-      "q": "Is this free?",
-      "a": "Да, полностью бесплатно."
+      "q": "Это бесплатно?",
+      "a": "Да, всегда бесплатно."
     }
-  ]
+  ],
+  "faqTitle": "Часто задаваемые вопросы",
+  "supportCenter": "Центр поддержки"
 }

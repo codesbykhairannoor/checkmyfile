@@ -1,67 +1,85 @@
 {
-  "title": "Unlock PDF — Remove Password Offline",
-  "h1": "Remove PDF Password Protection Instantly in Your Browser",
-  "description": "Unlock password-protected PDFs locally if you know the password. 100% private. No upload. Perfect for users in Kuala Lumpur.",
+  "title": "Buka kunci PDF — Alih Keluar Kata Laluan Luar Talian",
+  "h1": "Alih Keluar Perlindungan Kata Laluan PDF Serta-merta dalam Penyemak Imbas Anda",
+  "description": "Buka kunci PDF yang dilindungi kata laluan secara setempat jika anda tahu kata laluan itu. 100% persendirian. Tiada muat naik. 100% pemprosesan tempatan selamat.",
+  "buttonText": "Unlock PDF",
+  "badges": [
+    "Alih Keluar Kata Laluan",
+    "Buka Kunci Segera",
+    "Tiada Log Pelayan"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "unlock_hero_features",
-      "title": "Why Unlock PDFs Locally?",
-      "content": "You have the password to your own file. Unlocking it should not require uploading sensitive documents to an external service."
+      "title": "Mengapa Membuka Kunci PDF Secara Tempatan?",
+      "content": "Anda mempunyai kata laluan ke fail anda sendiri. Membuka kuncinya tidak sepatutnya memerlukan memuat naik dokumen sensitif ke perkhidmatan luaran."
     },
     {
       "type": "unlock_how_to_steps",
-      "title": "How to Unlock a Protected PDF",
+      "title": "Cara Membuka Kunci PDF yang Dilindungi",
       "steps": [
         {
-          "title": "Open Protected PDF",
-          "description": "Select the password-protected PDF."
+          "title": "Buka PDF Dilindungi",
+          "description": "Pilih PDF yang dilindungi kata laluan."
         },
         {
-          "title": "Enter Your Password",
-          "description": "Provide the existing password — decryption stays in your browser."
+          "title": "Masukkan Kata Laluan Anda",
+          "description": "Berikan kata laluan sedia ada — penyahsulitan kekal dalam penyemak imbas anda."
         },
         {
-          "title": "Download Unlocked PDF",
-          "description": "Get your unlocked, fully accessible PDF instantly."
+          "title": "Muat turun PDF Tidak Berkunci",
+          "description": "Dapatkan PDF anda yang tidak berkunci dan boleh diakses sepenuhnya serta-merta."
         }
-      ]
+      ],
+      "badgeText": "Panduan Pantas"
     },
     {
       "type": "unlock_geo_targeting",
-      "title": "Instant PDF Unlocking for Kuala Lumpur Users",
-      "content": "Users in Kuala Lumpur access their own password-protected files without sending decryption keys to any server."
+      "title": "100% Pemprosesan Tempatan Selamat",
+      "content": "Semua operasi dilakukan terus pada peranti tempatan anda. Kami menggunakan teknologi WebAssembly termaju untuk memproses dokumen anda tanpa pernah memuat naiknya ke pelayan luaran, memastikan privasi lengkap.",
+      "badgeText": "Pemprosesan Setempat"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Your Password Never Leaves the Browser",
-      "content": "The decryption key and your document are processed entirely in browser memory — never transmitted to any server or service."
+      "title": "Kata Laluan Anda Tidak Pernah Meninggalkan Penyemak Imbas",
+      "content": "Kunci penyahsulitan dan dokumen anda diproses sepenuhnya dalam memori penyemak imbas — tidak pernah dihantar ke mana-mana pelayan atau perkhidmatan.",
+      "badgeText": "Keselamatan Diutamakan"
     },
     {
       "type": "unlock_performance",
-      "title": "Instant Browser-Local Decryption",
-      "content": "AES decryption in your browser takes under a second — far faster than any cloud service with no upload wait."
+      "title": "Penyahsulitan Penyemak Imbas Segera",
+      "content": "Penyahsulitan AES dalam penyemak imbas anda mengambil masa di bawah satu saat — jauh lebih pantas daripada mana-mana perkhidmatan awan tanpa menunggu muat naik.",
+      "badgeText": "Sepantas Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "Does it work without the password?",
-      "a": "No, you must know the existing password to unlock."
+      "q": "Adakah ia berfungsi tanpa kata laluan?",
+      "a": "Tidak, anda mesti tahu kata laluan sedia ada untuk membuka kunci."
     },
     {
-      "q": "Can I unlock permissions-restricted PDFs?",
-      "a": "Yes, permission restrictions are removed after password verification."
+      "q": "Bolehkah saya membuka kunci PDF yang dihadkan kebenaran?",
+      "a": "Ya, sekatan kebenaran dialih keluar selepas pengesahan kata laluan."
     },
     {
-      "q": "Is the decryption process secure?",
-      "a": "All decryption happens in your browser memory; nothing is transmitted."
+      "q": "Adakah proses penyahsulitan selamat?",
+      "a": "Semua penyahsulitan berlaku dalam memori penyemak imbas anda; tiada apa yang dihantar."
     },
     {
-      "q": "What if the password is wrong?",
-      "a": "You will see an error and can try again with the correct password."
+      "q": "Bagaimana jika kata laluan salah?",
+      "a": "Anda akan melihat ralat dan boleh mencuba lagi dengan kata laluan yang betul."
     },
     {
-      "q": "Is this free?",
+      "q": "Adakah ini percuma?",
       "a": "Ya, percuma sepenuhnya."
     }
-  ]
+  ],
+  "faqTitle": "Soalan Lazim",
+  "supportCenter": "Pusat Sokongan"
 }

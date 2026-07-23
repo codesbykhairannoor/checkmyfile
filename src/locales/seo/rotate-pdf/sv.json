@@ -1,67 +1,85 @@
 {
-  "title": "Rotate PDF Pages — Fix Orientation Offline",
-  "h1": "Rotate PDF Pages to the Correct Orientation",
-  "description": "Fix upside-down or sideways PDF pages instantly in your browser. No upload. Perfect for users in Stockholm.",
+  "title": "Rotera PDF-sidor — Fixa orientering offline",
+  "h1": "Rotera PDF-sidor till rätt orientering",
+  "description": "Fixa PDF-sidor upp och ner eller åt sidan direkt i din webbläsare. Snabbt och helt säkert.",
+  "buttonText": "Rotate Pages",
+  "badges": [
+    "Rotera 90°/180°",
+    "Batchbearbetning",
+    "Omedelbar fix"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Rotate PDFs Locally?",
-      "content": "Scanned documents often come out sideways. Fix their orientation instantly without uploading anything to the cloud."
+      "type": "rotate_hero_features",
+      "title": "Varför rotera PDF-filer lokalt?",
+      "content": "Skannade dokument kommer ofta ut i sidled. Fixa deras orientering direkt utan att ladda upp något till molnet."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Rotate PDF Pages",
+      "type": "rotate_how_to_steps",
+      "title": "Hur man roterar PDF-sidor",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page orientation."
+          "title": "Öppna PDF",
+          "description": "Ladda PDF-filen med felaktig sidriktning."
         },
         {
-          "title": "Select Pages & Direction",
-          "description": "Choose pages to rotate and direction (90°, 180°, 270°)."
+          "title": "Välj Sidor och riktning",
+          "description": "Välj sidor att rotera och riktning (90°, 180°, 270°)."
         },
         {
-          "title": "Download Fixed PDF",
-          "description": "Save the correctly oriented PDF immediately."
+          "title": "Ladda ner fixad PDF",
+          "description": "Spara den korrekt orienterade PDF-filen omedelbart."
         }
-      ]
+      ],
+      "badgeText": "Snabbguide"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Rotation for Stockholm Offices",
-      "content": "Office workers in Stockholm fix scanner output orientation without relying on cloud services."
+      "type": "rotate_geo_targeting",
+      "title": "100 % säker lokal bearbetning",
+      "content": "Alla operationer utförs direkt på din lokala enhet. Vi använder avancerad WebAssembly-teknik för att behandla dina dokument utan att någonsin ladda upp dem till externa servrar, vilket säkerställer fullständig integritet.",
+      "badgeText": "Lokal bearbetning"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Scanned Documents Stay Private",
-      "content": "Scanned medical or legal documents rotated locally without any server access."
+      "type": "rotate_privacy_security",
+      "title": "Skannade dokument förbli privata",
+      "content": "Skannade medicinska eller juridiska dokument roterades lokalt utan serveråtkomst.",
+      "badgeText": "Säkerhet först"
     },
     {
-      "type": "transform_performance",
-      "title": "Rotate Any PDF in Milliseconds",
-      "content": "Rotating 500 pages takes less than a second. No upload, no wait."
+      "type": "rotate_performance",
+      "title": "Rotera valfri PDF-fil på millisekunder",
+      "content": "Att rotera 500 sidor tar mindre än en sekund. Ingen uppladdning, ingen väntan.",
+      "badgeText": "Blixtsnabb"
     }
   ],
   "faqs": [
     {
-      "q": "Can I rotate individual pages?",
-      "a": "Yes, select specific pages or all at once."
+      "q": "Kan jag rotera enskilda sidor?",
+      "a": "Ja, välj specifika sidor eller alla på en gång."
     },
     {
-      "q": "What rotation angles are available?",
-      "a": "90°, 180°, and 270° clockwise and counter-clockwise."
+      "q": "Vilka rotationsvinklar finns tillgängliga?",
+      "a": "90°, 180° och 270° medurs och moturs."
     },
     {
-      "q": "Does rotation affect image quality?",
-      "a": "No, rotation is lossless — no re-encoding occurs."
+      "q": "Påverkar rotation bildkvaliteten?",
+      "a": "Nej, rotation är förlustfri - ingen omkodning sker."
     },
     {
-      "q": "Can I undo a rotation?",
-      "a": "Yes, apply the reverse rotation before downloading."
+      "q": "Kan jag ångra en rotation?",
+      "a": "Ja, använd omvänd rotation innan nedladdning."
     },
     {
-      "q": "Is this free?",
+      "q": "Är detta gratis?",
       "a": "Ja, helt gratis."
     }
-  ]
+  ],
+  "faqTitle": "Vanliga frågor",
+  "supportCenter": "Supportcenter"
 }

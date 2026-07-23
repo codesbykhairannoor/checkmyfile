@@ -1,67 +1,85 @@
 {
-  "title": "Resize PDF Pages — Change Paper Size Offline",
-  "h1": "Resize PDF Pages to A4, Letter, or Custom Sizes",
-  "description": "Change the paper size of every PDF page to A4, US Letter, or custom dimensions entirely in your browser. No upload. Ideal for users in Paris.",
+  "title": "Redimensionner les pages PDF – Modifier le format du papier hors ligne",
+  "h1": "Redimensionnez les pages PDF au format A4, Lettre ou personnalisé",
+  "description": "Modifiez le format de papier de chaque page PDF en A4, US Letter ou en dimensions personnalisées entièrement dans votre navigateur. Aucun téléchargement. Traitement local 100% sécurisé.",
+  "buttonText": "Resize Pages",
+  "badges": [
+    "A4, Lettre, Personnalisé",
+    "Ajouter des marges",
+    "Correction du format"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Resize PDFs Locally?",
-      "content": "Preparing documents for printing requires proper page sizing. Resize locally without uploading internal documents to the cloud."
+      "type": "resize_hero_features",
+      "title": "Pourquoi redimensionner les PDF localement ?",
+      "content": "La préparation des documents pour l'impression nécessite un format de page approprié. Redimensionnez localement sans télécharger de documents internes sur le cloud."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Resize PDF Pages",
+      "type": "resize_how_to_steps",
+      "title": "Comment redimensionner des pages PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page dimensions."
+          "title": "Ouvrir le PDF",
+          "description": "Chargez le PDF avec des dimensions de page incorrectes."
         },
         {
-          "title": "Select Target Size",
-          "description": "Choose A4, Letter, A3, or enter custom dimensions."
+          "title": "Sélectionnez la taille cible",
+          "description": "Choisissez A4, Letter, A3 ou entrez des dimensions personnalisées."
         },
         {
-          "title": "Download Resized PDF",
-          "description": "Get your properly sized document instantly."
+          "title": "Télécharger le PDF redimensionné",
+          "description": "Obtenez instantanément votre document au format approprié."
         }
-      ]
+      ],
+      "badgeText": "Guide rapide"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Resizing for Paris Print Shops",
-      "content": "Print shops and offices in Paris resize documents to standard sizes without cloud dependency."
+      "type": "resize_geo_targeting",
+      "title": "Traitement local 100 % sécurisé",
+      "content": "Toutes les opérations sont effectuées directement sur votre appareil local. Nous utilisons la technologie avancée WebAssembly pour traiter vos documents sans jamais les télécharger sur des serveurs externes, garantissant ainsi une confidentialité totale.",
+      "badgeText": "Traitement local"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Internal Documents Stay Internal",
-      "content": "Resize business reports and proposals without any server-side processing."
+      "type": "resize_privacy_security",
+      "title": "Les documents internes restent internes",
+      "content": "Redimensionnez les rapports commerciaux et les propositions sans aucun traitement côté serveur.",
+      "badgeText": "La sécurité d'abord"
     },
     {
-      "type": "transform_performance",
-      "title": "Resize Hundreds of Pages Instantly",
-      "content": "Resizing a 500-page PDF takes under 2 seconds. All in your browser."
+      "type": "resize_performance",
+      "title": "Redimensionnez des centaines de pages instantanément",
+      "content": "Le redimensionnement d'un PDF de 500 pages prend moins de 2 secondes. Tout cela dans votre navigateur.",
+      "badgeText": "Rapide comme l'éclair"
     }
   ],
   "faqs": [
     {
-      "q": "What sizes are available?",
-      "a": "A4, A3, A5, US Letter, Legal, and custom dimensions."
+      "q": "Quelles tailles sont disponibles ?",
+      "a": "Dimensions A4, A3, A5, US Letter, Legal et personnalisées."
     },
     {
-      "q": "Does content scale with the page?",
-      "a": "Yes, content is scaled proportionally by default."
+      "q": "Le contenu évolue-t-il avec la page ?",
+      "a": "Oui, le contenu est mis à l'échelle proportionnellement par défaut."
     },
     {
-      "q": "Can I resize individual pages?",
-      "a": "Yes, apply different sizes to specific pages."
+      "q": "Puis-je redimensionner des pages individuelles ?",
+      "a": "Oui, appliquez des tailles différentes à des pages spécifiques."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "Vector content is re-rendered perfectly; images may scale."
+      "q": "La qualité est-elle affectée ?",
+      "a": "Le contenu vectoriel est parfaitement restitué ; les images peuvent être mises à l’échelle."
     },
     {
-      "q": "Is this free?",
-      "a": "Oui, entièrement gratuit."
+      "q": "Est-ce gratuit ?",
+      "a": "Oui, totalement gratuit."
     }
-  ]
+  ],
+  "faqTitle": "Foire aux questions",
+  "supportCenter": "Centre d'assistance"
 }

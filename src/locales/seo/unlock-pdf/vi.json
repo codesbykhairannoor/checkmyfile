@@ -1,67 +1,85 @@
 {
-  "title": "Unlock PDF — Remove Password Offline",
-  "h1": "Remove PDF Password Protection Instantly in Your Browser",
-  "description": "Unlock password-protected PDFs locally if you know the password. 100% private. No upload. Perfect for users in Hanoi.",
+  "title": "Mở khóa PDF — Xóa mật khẩu ngoại tuyến",
+  "h1": "Xóa ngay lập tức bảo vệ mật khẩu PDF trong trình duyệt của bạn",
+  "description": "Mở khóa cục bộ các tệp PDF được bảo vệ bằng mật khẩu nếu bạn biết mật khẩu. 100% riêng tư. Không tải lên. Xử lý cục bộ an toàn 100%.",
+  "buttonText": "Unlock PDF",
+  "badges": [
+    "Xóa mật khẩu",
+    "Mở khóa tức thì",
+    "Không có nhật ký máy chủ"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "unlock_hero_features",
-      "title": "Why Unlock PDFs Locally?",
-      "content": "You have the password to your own file. Unlocking it should not require uploading sensitive documents to an external service."
+      "title": "Tại sao phải mở khóa tệp PDF cục bộ?",
+      "content": "Bạn có mật khẩu cho tập tin của riêng bạn. Việc mở khóa nó không yêu cầu tải các tài liệu nhạy cảm lên một dịch vụ bên ngoài."
     },
     {
       "type": "unlock_how_to_steps",
-      "title": "How to Unlock a Protected PDF",
+      "title": "Cách mở khóa tệp PDF được bảo vệ",
       "steps": [
         {
-          "title": "Open Protected PDF",
-          "description": "Select the password-protected PDF."
+          "title": "Mở PDF được bảo vệ",
+          "description": "Chọn tệp PDF được bảo vệ bằng mật khẩu."
         },
         {
-          "title": "Enter Your Password",
-          "description": "Provide the existing password — decryption stays in your browser."
+          "title": "Nhập mật khẩu của bạn",
+          "description": "Cung cấp mật khẩu hiện có - quá trình giải mã vẫn được lưu trong trình duyệt của bạn."
         },
         {
-          "title": "Download Unlocked PDF",
-          "description": "Get your unlocked, fully accessible PDF instantly."
+          "title": "Tải xuống bản PDF đã mở khóa",
+          "description": "Nhận bản PDF đã mở khóa, có thể truy cập đầy đủ của bạn ngay lập tức."
         }
-      ]
+      ],
+      "badgeText": "Hướng dẫn nhanh"
     },
     {
       "type": "unlock_geo_targeting",
-      "title": "Instant PDF Unlocking for Hanoi Users",
-      "content": "Users in Hanoi access their own password-protected files without sending decryption keys to any server."
+      "title": "Xử lý cục bộ an toàn 100%",
+      "content": "Tất cả các hoạt động được thực hiện trực tiếp trên thiết bị cục bộ của bạn. Chúng tôi sử dụng công nghệ WebAssembly tiên tiến để xử lý tài liệu của bạn mà không cần tải chúng lên máy chủ bên ngoài, đảm bảo quyền riêng tư hoàn toàn.",
+      "badgeText": "Xử lý cục bộ"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Your Password Never Leaves the Browser",
-      "content": "The decryption key and your document are processed entirely in browser memory — never transmitted to any server or service."
+      "title": "Mật khẩu của bạn không bao giờ rời khỏi trình duyệt",
+      "content": "Khóa giải mã và tài liệu của bạn được xử lý hoàn toàn trong bộ nhớ trình duyệt — không bao giờ được truyền tới bất kỳ máy chủ hoặc dịch vụ nào.",
+      "badgeText": "Bảo mật là trên hết"
     },
     {
       "type": "unlock_performance",
-      "title": "Instant Browser-Local Decryption",
-      "content": "AES decryption in your browser takes under a second — far faster than any cloud service with no upload wait."
+      "title": "Giải mã cục bộ-trình duyệt tức thì",
+      "content": "Quá trình giải mã AES trong trình duyệt của bạn chỉ mất chưa đến một giây — nhanh hơn nhiều so với bất kỳ dịch vụ đám mây nào mà không phải chờ tải lên.",
+      "badgeText": "Nhanh như chớp"
     }
   ],
   "faqs": [
     {
-      "q": "Does it work without the password?",
-      "a": "No, you must know the existing password to unlock."
+      "q": "Nó có hoạt động mà không cần mật khẩu không?",
+      "a": "Không, bạn phải biết mật khẩu hiện có để mở khóa."
     },
     {
-      "q": "Can I unlock permissions-restricted PDFs?",
-      "a": "Yes, permission restrictions are removed after password verification."
+      "q": "Tôi có thể mở khóa các tệp PDF bị giới hạn quyền không?",
+      "a": "Có, các hạn chế về quyền sẽ được xóa sau khi xác minh mật khẩu."
     },
     {
-      "q": "Is the decryption process secure?",
-      "a": "All decryption happens in your browser memory; nothing is transmitted."
+      "q": "Quá trình giải mã có an toàn không?",
+      "a": "Tất cả quá trình giải mã diễn ra trong bộ nhớ trình duyệt của bạn; không có gì được truyền đi."
     },
     {
-      "q": "What if the password is wrong?",
-      "a": "You will see an error and can try again with the correct password."
+      "q": "Nếu mật khẩu sai thì sao?",
+      "a": "Bạn sẽ thấy lỗi và có thể thử lại với mật khẩu chính xác."
     },
     {
-      "q": "Is this free?",
+      "q": "Cái này có miễn phí không?",
       "a": "Có, hoàn toàn miễn phí."
     }
-  ]
+  ],
+  "faqTitle": "Câu hỏi thường gặp",
+  "supportCenter": "Trung tâm hỗ trợ"
 }

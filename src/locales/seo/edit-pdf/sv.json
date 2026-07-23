@@ -1,0 +1,85 @@
+{
+  "title": "Redigera PDF - Gratis offline PDF Editor",
+  "h1": "Redigera PDF-dokument direkt i din webbläsare",
+  "description": "Lägg till text, signaturer och kommentarer till dina PDF-filer lokalt. Inga uppladdningar, maximal sekretess. 100 % säker lokal bearbetning.",
+  "sections": [
+    {
+      "type": "edit_hero_features",
+      "title": "Varför redigera PDF-filer lokalt?",
+      "content": "Att ladda upp känsliga kontrakt och formulär till en molnredigerare är en enorm integritetsrisk. Vår WebAssembly-redigerare körs direkt på din enhet och säkerställer att dina dokument aldrig lämnar din dator."
+    },
+    {
+      "type": "edit_how_to_steps",
+      "title": "Hur man redigerar en PDF",
+      "steps": [
+        {
+          "title": "Öppna dokument",
+          "description": "Välj den PDF-fil du vill kommentera eller signera."
+        },
+        {
+          "title": "Lägg till text och element",
+          "description": "Använd våra intuitiva verktyg för att lägga till text, rita eller placera bilder."
+        },
+        {
+          "title": "Spara ändringar",
+          "description": "Exportera den ändrade PDF-filen direkt utan att vänta på nedladdningar."
+        }
+      ],
+      "badgeText": "Snabbguide"
+    },
+    {
+      "type": "edit_geo_targeting",
+      "title": "100 % säker lokal bearbetning",
+      "content": "Alla operationer utförs direkt på din lokala enhet. Vi använder avancerad WebAssembly-teknik för att behandla dina dokument utan att någonsin ladda upp dem till externa servrar, vilket säkerställer fullständig integritet.",
+      "badgeText": "Lokal bearbetning"
+    },
+    {
+      "type": "edit_privacy_security",
+      "title": "Noll dataöverföring",
+      "content": "Till skillnad från traditionella PDF-redigerare som laddar upp dina filer till sina servrar, behandlar vår plattform allt i ditt webbläsarminne.",
+      "badgeText": "Säkerhet först"
+    },
+    {
+      "type": "edit_performance",
+      "title": "Omedelbar offline-rendering",
+      "content": "Vår redaktör laddar enorma PDF-filer på millisekunder. Du kan lägga till hundratals kommentarer utan fördröjning eller nätverksfördröjning.",
+      "badgeText": "Blixtsnabb"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Kan jag redigera befintlig text i PDF-filen?",
+      "a": "För närvarande kan du lägga till ny text, former och bilder över det befintliga dokumentet."
+    },
+    {
+      "q": "Laddas mina filer upp någonstans?",
+      "a": "Nej, all redigering sker lokalt i din webbläsare med hjälp av WebAssembly."
+    },
+    {
+      "q": "Kan jag skriva under dokument?",
+      "a": "Ja, du kan rita din signatur eller ladda upp en bild av den."
+    },
+    {
+      "q": "Är redigeraren gratis att använda?",
+      "a": "Ja, det är 100 % gratis utan premium betalväggar eller dolda avgifter."
+    },
+    {
+      "q": "Fungerar det på mobila enheter?",
+      "a": "Ja, redigeraren är helt lyhörd och stöder pekinmatning för ritning."
+    }
+  ],
+  "badges": [
+    "Inga vattenstämplar",
+    "100 % gratis",
+    "Offlineredigerare"
+  ],
+  "stats": [
+    "100% Private",
+    "0 Server Uploads",
+    "Client-Side Only",
+    "No Accounts"
+  ],
+  "buttonText": "Start Editing",
+  "faqTitle": "Vanliga frågor",
+  "supportCenter": "Supportcenter"
+}

@@ -1,67 +1,85 @@
 {
-  "title": "Reverse PDF — Flip Page Order Offline",
-  "h1": "Reverse the Page Order of Any PDF Locally",
-  "description": "Flip the page sequence of PDF documents entirely in your browser. No upload, instant result. Great for users in Helsinki.",
+  "title": "Käänteinen PDF — Käännä sivujärjestys offline-tilassa",
+  "h1": "Käännä minkä tahansa PDF-tiedoston sivujärjestys paikallisesti",
+  "description": "Käännä PDF-dokumenttien sivusarja kokonaan selaimessasi. Ei latausta, välitön tulos. 100 % turvallinen paikallinen käsittely.",
+  "buttonText": "Reverse Order",
+  "badges": [
+    "Kääntää kaikki sivut",
+    "Korjaa skannaukset",
+    "Yksi napsautus"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Reverse PDF Page Order Offline?",
-      "content": "When a scanner outputs pages in reverse, you need a quick local fix — not a cloud upload of your entire document."
+      "type": "reverse_hero_features",
+      "title": "Miksi kääntää PDF-sivujärjestys offline-tilassa?",
+      "content": "Kun skanneri tulostaa sivuja käänteisesti, tarvitset nopean paikallisen korjauksen – et koko asiakirjan pilvilatausta."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Reverse PDF Page Order",
+      "type": "reverse_how_to_steps",
+      "title": "Kuinka kääntää PDF-sivujärjestys",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF with incorrect page order."
+          "title": "Avaa PDF",
+          "description": "Valitse PDF, jonka sivujärjestys on väärä."
         },
         {
-          "title": "Confirm Reversal",
-          "description": "Preview the new first and last page."
+          "title": "Vahvista peruutus",
+          "description": "Esikatsele uutta ensimmäistä ja viimeistä sivua."
         },
         {
-          "title": "Download Reversed PDF",
-          "description": "Get the reordered PDF instantly."
+          "title": "Lataa käänteinen PDF",
+          "description": "Hanki uudelleen tilattu PDF välittömästi."
         }
-      ]
+      ],
+      "badgeText": "Pikaopas"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Page Order Fix for Helsinki Users",
-      "content": "Office users in Helsinki fix scanner reversal issues instantly without cloud uploads."
+      "type": "reverse_geo_targeting",
+      "title": "100 % suojattu paikallinen käsittely",
+      "content": "Kaikki toiminnot suoritetaan suoraan paikallisella laitteellasi. Käytämme edistynyttä WebAssembly-tekniikkaa asiakirjojen käsittelyyn lataamatta niitä koskaan ulkoisille palvelimille, mikä takaa täydellisen yksityisyyden.",
+      "badgeText": "Paikallinen käsittely"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Documents Never Leave Your Device",
-      "content": "Reversed contracts, reports, and records are processed entirely in browser memory."
+      "type": "reverse_privacy_security",
+      "title": "Asiakirjat eivät koskaan jätä laitteeltasi",
+      "content": "Käänteiset sopimukset, raportit ja tietueet käsitellään kokonaan selaimen muistissa.",
+      "badgeText": "Turvallisuus ensin"
     },
     {
-      "type": "transform_performance",
-      "title": "Reverse Any PDF in Seconds",
-      "content": "Reversing a 1000-page document takes milliseconds. All in your browser."
+      "type": "reverse_performance",
+      "title": "Kääntää kaikki PDF-tiedostot sekunneissa",
+      "content": "1000-sivuisen asiakirjan kääntäminen taaksepäin kestää millisekunteja. Kaikki selaimessasi.",
+      "badgeText": "Salamannopeasti"
     }
   ],
   "faqs": [
     {
-      "q": "Does this reverse all pages?",
-      "a": "Yes, the full page order is flipped."
+      "q": "Kääntääkö tämä kaikki sivut?",
+      "a": "Kyllä, koko sivujärjestys on käännetty."
     },
     {
-      "q": "Can I select a range to reverse?",
-      "a": "Yes, specify start and end pages to reverse selectively."
+      "q": "Voinko valita käännettävän alueen?",
+      "a": "Kyllä, määritä aloitus- ja lopetussivut käännettäväksi valikoivasti."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "No, reversal is a structural operation with no quality loss."
+      "q": "Vaikuttaako laatuun?",
+      "a": "Ei, kääntäminen on rakenteellinen toimenpide ilman laadun heikkenemistä."
     },
     {
-      "q": "Can I undo?",
-      "a": "Apply reversal again to undo."
+      "q": "Voinko peruuttaa?",
+      "a": "Käytä peruutusta uudelleen kumoaaksesi."
     },
     {
-      "q": "Is this free?",
-      "a": "Kyllä, täysin ilmainen."
+      "q": "Onko tämä ilmainen?",
+      "a": "Kyllä, aina ilmainen."
     }
-  ]
+  ],
+  "faqTitle": "Usein kysytyt kysymykset",
+  "supportCenter": "Tukikeskus"
 }

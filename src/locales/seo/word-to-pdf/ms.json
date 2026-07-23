@@ -1,67 +1,80 @@
 {
-  "title": "Word to PDF Converter — No Upload Required",
-  "h1": "Convert Word Documents to PDF Instantly",
-  "description": "Transform .docx files into perfect PDFs directly in your browser. Zero upload, 100% private. Ideal for users in Kuala Lumpur.",
+  "title": "Word to PDF Converter — Tiada Muat Naik Diperlukan",
+  "h1": "Tukar Dokumen Word kepada PDF Serta-merta",
+  "description": "Ubah fail .docx kepada PDF yang sempurna terus dalam penyemak imbas anda. Sifar muat naik, 100% peribadi. Sesuai untuk pengguna di Kuala Lumpur.",
+  "buttonText": "Tukar Dokumen",
+  "badges": [
+    "Kontrak Pekerjaan",
+    "Taklimat Undang-undang",
+    "Resume & CV"
+  ],
+  "stats": [
+    "100%",
+    "Tempatan",
+    "0s",
+    "Masa Tunggu"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Word to PDF Offline?",
-      "content": "Your Word document contains sensitive data. Our converter runs entirely in WebAssembly — your file never touches a server."
+      "type": "word_hero_features",
+      "title": "Mengapa Guna Luar Talian?",
+      "content": "Dokumen Word anda mengandungi data sensitif. Penukar kami berjalan sepenuhnya dalam WebAssembly — fail anda tidak pernah menyentuh pelayan."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Word to PDF",
+      "type": "word_how_to_steps",
+      "title": "Cara Mengguna",
       "steps": [
         {
-          "title": "Select .docx File",
-          "description": "Pick your Word document from your computer."
+          "title": "Pilih Fail .docx",
+          "description": "Pilih dokumen Word anda daripada komputer anda."
         },
         {
-          "title": "Preview Output",
-          "description": "See the PDF rendering before finalizing."
+          "title": "Pratonton Output",
+          "description": "Lihat pemaparan PDF sebelum memuktamadkan."
         },
         {
-          "title": "Download PDF",
-          "description": "Save your perfectly converted PDF instantly."
+          "title": "Muat turun PDF",
+          "description": "Simpan PDF anda yang telah ditukar dengan sempurna serta-merta."
         }
       ]
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Word to PDF for Kuala Lumpur Users",
-      "content": "Used by professionals in Kuala Lumpur who need to share documents without losing formatting."
+      "type": "word_geo_targeting",
+      "title": "Word to PDF untuk Pengguna Kuala Lumpur",
+      "content": "Digunakan oleh profesional di Kuala Lumpur yang perlu berkongsi dokumen tanpa kehilangan pemformatan."
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Your Contracts Stay Private",
-      "content": "Converting employment contracts? Legal briefs? Our WASM processor never phones home."
+      "type": "word_privacy_security",
+      "title": "Kontrak Anda Kekal Peribadi",
+      "content": "Menukar kontrak pekerjaan? Taklimat undang-undang? Pemproses WASM kami tidak pernah menelefon ke rumah."
     },
     {
-      "type": "combiner_performance",
-      "title": "No More Conversion Queues",
-      "content": "Cloud converters put you in a queue. Ours converts in under 2 seconds, entirely offline."
+      "type": "word_performance",
+      "title": "Tiada Lagi Barisan Penukaran",
+      "content": "Penukar awan meletakkan anda dalam baris gilir. Kami menukar dalam masa kurang dari 2 saat, sepenuhnya di luar talian."
     }
   ],
   "faqs": [
     {
-      "q": "Does it preserve Word formatting?",
-      "a": "Yes, fonts, tables, and images are preserved using our WASM renderer."
+      "q": "Adakah ia mengekalkan pemformatan Word?",
+      "a": "Ya, fon, jadual dan imej dikekalkan menggunakan pemapar WASM kami."
     },
     {
-      "q": "What Word versions are supported?",
-      "a": "All modern .docx files are supported."
+      "q": "Apakah versi Word yang disokong?",
+      "a": "Semua fail .docx moden disokong."
     },
     {
-      "q": "Is there a file size limit?",
-      "a": "No server limits! Only your device RAM is the constraint."
+      "q": "Adakah terdapat had saiz fail?",
+      "a": "Tiada had pelayan! Hanya RAM peranti anda menjadi kekangan."
     },
     {
-      "q": "Can I batch convert multiple files?",
-      "a": "Yes, select multiple .docx files at once."
+      "q": "Bolehkah saya menukar berbilang fail secara kelompok?",
+      "a": "Ya, pilih berbilang fail .docx sekali gus."
     },
     {
-      "q": "Is this free?",
+      "q": "Adakah ini percuma?",
       "a": "Ya, percuma sepenuhnya."
     }
-  ]
+  ],
+  "faqTitle": "Soalan Lazim"
 }

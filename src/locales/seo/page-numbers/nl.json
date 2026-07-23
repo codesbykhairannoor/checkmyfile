@@ -1,67 +1,85 @@
 {
-  "title": "Add Page Numbers to PDF — Offline Number Stamp",
-  "h1": "Insert Page Numbers into PDF Documents Locally",
-  "description": "Stamp page numbers at the header or footer of your PDF entirely in your browser. No upload. Ideal for users in Amsterdam.",
+  "title": "Paginanummers toevoegen aan PDF — Offline nummerstempel",
+  "h1": "Paginanummers lokaal in PDF-documenten invoegen",
+  "description": "Stempel paginanummers in de kop- of voettekst van uw PDF, volledig in uw browser. Snel en volledig veilig.",
+  "buttonText": "Add Page Numbers",
+  "badges": [
+    "Aangepaste positie",
+    "Kop- en voettekst",
+    "Bates-nummering"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Add Page Numbers Offline?",
-      "content": "Page numbers are a formatting step, not a reason to upload confidential documents to a cloud service."
+      "type": "pagenum_hero_features",
+      "title": "Waarom paginanummers offline toevoegen?",
+      "content": "Paginanummers zijn een opmaakstap en geen reden om vertrouwelijke documenten naar een cloudservice te uploaden."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Add Page Numbers",
+      "type": "pagenum_how_to_steps",
+      "title": "Paginanummers toevoegen",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to number."
+          "title": "PDF openen",
+          "description": "Selecteer de PDF die u wilt nummeren."
         },
         {
-          "title": "Configure Style",
-          "description": "Choose position, format (1/12, Page 1, i, ii…), and font."
+          "title": "Stijl configureren",
+          "description": "Kies positie, formaat (1/12, Pagina 1, i, ii…) en lettertype."
         },
         {
-          "title": "Apply & Download",
-          "description": "Download your paginated PDF instantly."
+          "title": "Toepassen en downloaden",
+          "description": "Download uw gepagineerde PDF direct."
         }
-      ]
+      ],
+      "badgeText": "Beknopte handleiding"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Page Numbering for Amsterdam Legal Docs",
-      "content": "Legal professionals in Amsterdam number briefs and reports locally without cloud service dependency."
+      "type": "pagenum_geo_targeting",
+      "title": "100% veilige lokale verwerking",
+      "content": "Alle bewerkingen worden rechtstreeks op uw lokale apparaat uitgevoerd. We gebruiken geavanceerde WebAssembly-technologie om uw documenten te verwerken zonder ze ooit naar externe servers te uploaden, waardoor volledige privacy wordt gegarandeerd.",
+      "badgeText": "Lokale verwerking"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Internal Documents Stay Numbered & Private",
-      "content": "Add page numbers to contracts and confidential reports without any server involvement."
+      "type": "pagenum_privacy_security",
+      "title": "Interne documenten blijven genummerd en privé",
+      "content": "Voeg paginanummers toe aan contracten en vertrouwelijke rapporten zonder tussenkomst van de server.",
+      "badgeText": "Beveiliging eerst"
     },
     {
-      "type": "organizer_performance",
-      "title": "Number a 1000-Page PDF Instantly",
-      "content": "Stamping page numbers locally takes milliseconds for any size document."
+      "type": "pagenum_performance",
+      "title": "Nummer een PDF van 1000 pagina's direct",
+      "content": "Het lokaal stempelen van paginanummers duurt milliseconden voor documenten van elk formaat.",
+      "badgeText": "Bliksemsnel"
     }
   ],
   "faqs": [
     {
-      "q": "What number formats are available?",
-      "a": "Arabic (1, 2, 3), Roman (i, ii, iii), and letter (a, b, c) formats."
+      "q": "Welke getalformaten zijn beschikbaar?",
+      "a": "Arabische (1, 2, 3), Romeinse (i, ii, iii) en letterformaten (a, b, c)."
     },
     {
-      "q": "Can I start from a custom number?",
-      "a": "Yes, set any starting page number."
+      "q": "Kan ik starten vanaf een aangepast nummer?",
+      "a": "Ja, stel een startpaginanummer in."
     },
     {
-      "q": "Can I skip numbering the first page?",
-      "a": "Yes, set the page offset to skip cover pages."
+      "q": "Kan ik het nummeren van de eerste pagina overslaan?",
+      "a": "Ja, stel de pagina-offset in om omslagpagina's over te slaan."
     },
     {
-      "q": "Where can I position numbers?",
-      "a": "Header-left, header-center, header-right, and same for footer."
+      "q": "Waar kan ik nummers positioneren?",
+      "a": "Koptekst links, koptekst midden, koptekst rechts en hetzelfde voor voettekst."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, volledig gratis."
+      "q": "Is dit gratis?",
+      "a": "Ja, altijd gratis."
     }
-  ]
+  ],
+  "faqTitle": "Veelgestelde vragen",
+  "supportCenter": "Ondersteuningscentrum"
 }

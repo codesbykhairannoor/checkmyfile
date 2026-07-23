@@ -2,6 +2,18 @@
   "title": "PDF to Word Converter — Offline & Editable",
   "h1": "Convert PDF to Editable Word Documents Locally",
   "description": "Transform PDFs back into .docx files you can edit, right in your browser. No upload needed. Great for users in New York.",
+  "buttonText": "Convert to Word",
+  "badges": [
+    "Editable Documents",
+    "Text Recovery",
+    "Offline Process"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "split_hero_features",

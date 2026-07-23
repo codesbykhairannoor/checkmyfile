@@ -1,67 +1,80 @@
 {
-  "title": "PDF to Word Converter — Offline & Editable",
-  "h1": "Convert PDF to Editable Word Documents Locally",
-  "description": "Transform PDFs back into .docx files you can edit, right in your browser. No upload needed. Great for users in Jerusalem.",
+  "title": "ממיר PDF ל-Word - לא מקוון וניתן לעריכה",
+  "h1": "המרת PDF למסמכי Word הניתנים לעריכה באופן מקומי",
+  "description": "הפוך קובצי PDF חזרה לקובצי docx שאתה יכול לערוך, ישירות בדפדפן שלך. אין צורך בהעלאה. מעולה למשתמשים בירושלים.",
+  "buttonText": "המר ל-Word",
+  "badges": [
+    "מסמכים הניתנים לעריכה",
+    "שחזור טקסט",
+    "תהליך לא מקוון"
+  ],
+  "stats": [
+    "100%",
+    "מְקוֹמִי",
+    "0s",
+    "זמן המתנה"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF Back Offline?",
-      "content": "When you need to edit a PDF, converting it offline keeps your original document confidential."
+      "title": "למה להשתמש במצב לא מקוון?",
+      "content": "כאשר אתה צריך לערוך קובץ PDF, המרתו במצב לא מקוון שומרת על סודיות המסמך המקורי שלך."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Word",
+      "title": "איך להשתמש",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF file you need to convert."
+          "title": "טען PDF",
+          "description": "בחר את קובץ ה-PDF שאתה צריך להמיר."
         },
         {
-          "title": "Detect Text Layers",
-          "description": "Our engine reads text and structure from the PDF."
+          "title": "זיהוי שכבות טקסט",
+          "description": "המנוע שלנו קורא טקסט ומבנה מה-PDF."
         },
         {
-          "title": "Download .docx",
-          "description": "Get your editable Word document ready to modify."
+          "title": "הורד את .docx",
+          "description": "הכן את מסמך Word הניתן לעריכה לשינוי."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "PDF to Word for Jerusalem Offices",
-      "content": "Office workers in Jerusalem use our tool to recover editable text from PDFs without cloud dependency."
+      "title": "PDF ל-Word עבור משרדי ירושלים",
+      "content": "עובדי משרד בירושלים משתמשים בכלי שלנו כדי לשחזר טקסט הניתן לעריכה מקובצי PDF ללא תלות בענן."
     },
     {
       "type": "split_privacy_security",
-      "title": "Legal Documents Stay Confidential",
-      "content": "Contracts, NDAs, and reports converted back to Word entirely in your browser memory."
+      "title": "מסמכים משפטיים נשארים חסויים",
+      "content": "חוזים, אישורי הגנה ודוחות שהומרו בחזרה ל-Word במלואם בזיכרון הדפדפן שלך."
     },
     {
       "type": "split_performance",
-      "title": "Recover Editable Text in Seconds",
-      "content": "Extract text from a 50-page PDF in under 3 seconds without uploading a single byte."
+      "title": "שחזר טקסט הניתן לעריכה בשניות",
+      "content": "חלץ טקסט מ-PDF בן 50 עמודים תוך פחות מ-3 שניות מבלי להעלות ולו בייט אחד."
     }
   ],
   "faqs": [
     {
-      "q": "Is all text preserved?",
-      "a": "Yes, text from all layers is extracted and formatted."
+      "q": "האם כל הטקסט נשמר?",
+      "a": "כן, טקסט מכל השכבות חולץ ומעוצב."
     },
     {
-      "q": "Does it work on scanned PDFs?",
-      "a": "For scanned PDFs, use our OCR tool first."
+      "q": "האם זה עובד על קובצי PDF סרוקים?",
+      "a": "עבור קובצי PDF סרוקים, השתמש תחילה בכלי ה-OCR שלנו."
     },
     {
-      "q": "Are images included in the .docx?",
-      "a": "Yes, embedded images are included in the output."
+      "q": "האם תמונות כלולות ב-.docx?",
+      "a": "כן, תמונות מוטבעות כלולות בפלט."
     },
     {
-      "q": "Can I edit the .docx after?",
-      "a": "Absolutely, the output is a fully editable Word document."
+      "q": "האם אוכל לערוך את ה-.docx לאחר מכן?",
+      "a": "בהחלט, הפלט הוא מסמך Word הניתן לעריכה מלאה."
     },
     {
-      "q": "Is this free?",
+      "q": "האם זה בחינם?",
       "a": "כן, חינם לחלוטין."
     }
-  ]
+  ],
+  "faqTitle": "שאלות נפוצות"
 }

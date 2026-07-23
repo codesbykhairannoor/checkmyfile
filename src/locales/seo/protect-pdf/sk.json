@@ -1,67 +1,85 @@
 {
-  "title": "Password Protect PDF — Secure Files Offline",
-  "h1": "Add Password Protection to PDF Files Instantly",
-  "description": "Encrypt PDF files with AES-256 directly in your browser. Your document never leaves your device. Ideal for users in Bratislava.",
+  "title": "Ochrana PDF heslom — Zabezpečenie súborov offline",
+  "h1": "Okamžite pridajte ochranu heslom k súborom PDF",
+  "description": "Šifrujte súbory PDF pomocou AES-256 priamo vo vašom prehliadači. Váš dokument nikdy neopustí vaše zariadenie. 100% bezpečné lokálne spracovanie.",
+  "buttonText": "Protect PDF",
+  "badges": [
+    "Šifrovanie AES-256",
+    "Zabezpečené heslo",
+    "Iba na strane klienta"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "protect_hero_features",
-      "title": "Why Protect PDFs Locally?",
-      "content": "Adding a password means the file is sensitive. Never upload sensitive files to a cloud encryptor. Ours runs entirely offline with AES-256 encryption."
+      "title": "Prečo chrániť súbory PDF lokálne?",
+      "content": "Pridanie hesla znamená, že súbor je citlivý. Nikdy neodovzdávajte citlivé súbory do cloudového šifrovača. Naša beží úplne offline so šifrovaním AES-256."
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Password Protect a PDF",
+      "title": "Ako chrániť heslom PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF you want to lock."
+          "title": "Otvoriť PDF",
+          "description": "Vyberte súbor PDF, ktorý chcete uzamknúť."
         },
         {
-          "title": "Set Password",
-          "description": "Choose a strong password for encryption."
+          "title": "Nastaviť heslo",
+          "description": "Vyberte si silné heslo na šifrovanie."
         },
         {
-          "title": "Download Protected PDF",
-          "description": "Get your AES-256 encrypted PDF immediately."
+          "title": "Stiahnite si chránené PDF",
+          "description": "Okamžite získajte svoje šifrované PDF AES-256."
         }
-      ]
+      ],
+      "badgeText": "Rýchly sprievodca"
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Vault-Level PDF Protection for Bratislava",
-      "content": "Legal and finance professionals in Bratislava encrypt documents with AES-256 strength without exposing files to any server."
+      "title": "100% bezpečné miestne spracovanie",
+      "content": "Všetky operácie sa vykonávajú priamo na vašom lokálnom zariadení. Používame pokročilú technológiu WebAssembly na spracovanie vašich dokumentov bez ich nahrávania na externé servery, čím zaisťujeme úplné súkromie.",
+      "badgeText": "Miestne spracovanie"
     },
     {
       "type": "protect_privacy_security",
-      "title": "AES-256 Encryption — Bank-Grade, Offline",
-      "content": "Military-grade AES-256 encryption runs in your browser. No key is ever transmitted to any server."
+      "title": "Šifrovanie AES-256 – banková úroveň, offline",
+      "content": "Vo vašom prehliadači beží šifrovanie AES-256 na vojenskej úrovni. Žiadny kľúč sa nikdy neprenáša na žiadny server.",
+      "badgeText": "Bezpečnosť na prvom mieste"
     },
     {
       "type": "protect_performance",
-      "title": "Encrypt Any PDF in Under 1 Second",
-      "content": "AES-256 processing locally takes milliseconds — no upload, no queue, no wait."
+      "title": "Šifrovať akýkoľvek súbor PDF za menej ako 1 sekundu",
+      "content": "Lokálne spracovanie AES-256 trvá milisekundy – žiadne nahrávanie, žiadne fronty, žiadne čakanie.",
+      "badgeText": "Rýchlosť blesku"
     }
   ],
   "faqs": [
     {
-      "q": "What encryption standard is used?",
-      "a": "AES-256, the same standard used by banks and governments."
+      "q": "Aký štandard šifrovania sa používa?",
+      "a": "AES-256, rovnaký štandard, aký používajú banky a vlády."
     },
     {
-      "q": "Can I set different owner and user passwords?",
-      "a": "Yes, you can set both separately."
+      "q": "Môžem nastaviť iné heslá vlastníka a používateľa?",
+      "a": "Áno, obe môžete nastaviť samostatne."
     },
     {
-      "q": "Is the original file modified?",
-      "a": "No, a new encrypted copy is created."
+      "q": "Je pôvodný súbor upravený?",
+      "a": "Nie, vytvorí sa nová šifrovaná kópia."
     },
     {
-      "q": "Can I restrict printing or editing?",
-      "a": "Yes, permission restrictions can be set alongside the password."
+      "q": "Môžem obmedziť tlač alebo úpravu?",
+      "a": "Áno, popri hesle je možné nastaviť obmedzenia povolení."
     },
     {
-      "q": "Is this free?",
+      "q": "Je to zadarmo?",
       "a": "Áno, úplne zadarmo."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
 }

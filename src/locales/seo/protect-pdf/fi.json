@@ -1,67 +1,85 @@
 {
-  "title": "Password Protect PDF — Secure Files Offline",
-  "h1": "Add Password Protection to PDF Files Instantly",
-  "description": "Encrypt PDF files with AES-256 directly in your browser. Your document never leaves your device. Ideal for users in Helsinki.",
+  "title": "Salasanasuojattu PDF — suojatut tiedostot offline-tilassa",
+  "h1": "Lisää salasanasuojaus PDF-tiedostoihin välittömästi",
+  "description": "Salaa PDF-tiedostot AES-256:lla suoraan selaimessasi. Asiakirjasi ei koskaan poistu laitteestasi. 100 % turvallinen paikallinen käsittely.",
+  "buttonText": "Protect PDF",
+  "badges": [
+    "AES-256-salaus",
+    "Suojattu salasana",
+    "Vain asiakaspuolella"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "protect_hero_features",
-      "title": "Why Protect PDFs Locally?",
-      "content": "Adding a password means the file is sensitive. Never upload sensitive files to a cloud encryptor. Ours runs entirely offline with AES-256 encryption."
+      "title": "Miksi suojata PDF-tiedostoja paikallisesti?",
+      "content": "Salasanan lisääminen tarkoittaa, että tiedosto on arkaluonteinen. Älä koskaan lataa arkaluontoisia tiedostoja pilvisalaukseen. Meillä toimii täysin offline-tilassa AES-256-salauksella."
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Password Protect a PDF",
+      "title": "PDF-tiedoston salasanasuojaus",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF you want to lock."
+          "title": "Avaa PDF",
+          "description": "Valitse PDF, jonka haluat lukita."
         },
         {
-          "title": "Set Password",
-          "description": "Choose a strong password for encryption."
+          "title": "Aseta salasana",
+          "description": "Valitse salaukselle vahva salasana."
         },
         {
-          "title": "Download Protected PDF",
-          "description": "Get your AES-256 encrypted PDF immediately."
+          "title": "Lataa suojattu PDF",
+          "description": "Hanki AES-256-salattu PDF-tiedosto välittömästi."
         }
-      ]
+      ],
+      "badgeText": "Pikaopas"
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Vault-Level PDF Protection for Helsinki",
-      "content": "Legal and finance professionals in Helsinki encrypt documents with AES-256 strength without exposing files to any server."
+      "title": "100 % suojattu paikallinen käsittely",
+      "content": "Kaikki toiminnot suoritetaan suoraan paikallisella laitteellasi. Käytämme edistynyttä WebAssembly-tekniikkaa asiakirjojen käsittelyyn lataamatta niitä koskaan ulkoisille palvelimille, mikä takaa täydellisen yksityisyyden.",
+      "badgeText": "Paikallinen käsittely"
     },
     {
       "type": "protect_privacy_security",
-      "title": "AES-256 Encryption — Bank-Grade, Offline",
-      "content": "Military-grade AES-256 encryption runs in your browser. No key is ever transmitted to any server."
+      "title": "AES-256-salaus — pankkitasoinen, offline-tilassa",
+      "content": "Sotilasluokan AES-256-salaus toimii selaimessasi. Mitään avainta ei koskaan lähetetä millekään palvelimelle.",
+      "badgeText": "Turvallisuus ensin"
     },
     {
       "type": "protect_performance",
-      "title": "Encrypt Any PDF in Under 1 Second",
-      "content": "AES-256 processing locally takes milliseconds — no upload, no queue, no wait."
+      "title": "Salaa mikä tahansa PDF alle 1 sekunnissa",
+      "content": "AES-256:n paikallinen käsittely kestää millisekunteja – ei latausta, ei jonoa, ei odottelua.",
+      "badgeText": "Salamannopeasti"
     }
   ],
   "faqs": [
     {
-      "q": "What encryption standard is used?",
-      "a": "AES-256, the same standard used by banks and governments."
+      "q": "Mitä salausstandardia käytetään?",
+      "a": "AES-256, sama standardi, jota pankit ja hallitukset käyttävät."
     },
     {
-      "q": "Can I set different owner and user passwords?",
-      "a": "Yes, you can set both separately."
+      "q": "Voinko asettaa eri omistajan ja käyttäjän salasanat?",
+      "a": "Kyllä, voit asettaa molemmat erikseen."
     },
     {
-      "q": "Is the original file modified?",
-      "a": "No, a new encrypted copy is created."
+      "q": "Onko alkuperäistä tiedostoa muokattu?",
+      "a": "Ei, uusi salattu kopio luodaan."
     },
     {
-      "q": "Can I restrict printing or editing?",
-      "a": "Yes, permission restrictions can be set alongside the password."
+      "q": "Voinko rajoittaa tulostusta tai muokkaamista?",
+      "a": "Kyllä, salasanan rinnalle voidaan asettaa käyttöoikeusrajoituksia."
     },
     {
-      "q": "Is this free?",
+      "q": "Onko tämä ilmainen?",
       "a": "Kyllä, täysin ilmainen."
     }
-  ]
+  ],
+  "faqTitle": "Usein kysytyt kysymykset",
+  "supportCenter": "Tukikeskus"
 }

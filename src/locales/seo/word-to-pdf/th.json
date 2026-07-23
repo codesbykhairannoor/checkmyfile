@@ -1,67 +1,80 @@
 {
-  "title": "Word to PDF Converter — No Upload Required",
-  "h1": "Convert Word Documents to PDF Instantly",
-  "description": "Transform .docx files into perfect PDFs directly in your browser. Zero upload, 100% private. Ideal for users in Bangkok.",
+  "title": "โปรแกรมแปลง Word เป็น PDF — ไม่ต้องอัพโหลด",
+  "h1": "แปลงเอกสาร Word เป็น PDF ทันที",
+  "description": "แปลงไฟล์ .docx ให้เป็น PDF ที่สมบูรณ์แบบได้โดยตรงในเบราว์เซอร์ของคุณ อัพโหลดเป็นศูนย์ เป็นส่วนตัว 100% เหมาะสำหรับผู้ใช้งานในกรุงเทพฯ",
+  "buttonText": "แปลงเอกสาร",
+  "badges": [
+    "สัญญาการจ้างงาน",
+    "บทสรุปทางกฎหมาย",
+    "เรซูเม่และ CV"
+  ],
+  "stats": [
+    "100%",
+    "ท้องถิ่น",
+    "0 วินาที",
+    "รอเวลา"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Word to PDF Offline?",
-      "content": "Your Word document contains sensitive data. Our converter runs entirely in WebAssembly — your file never touches a server."
+      "type": "word_hero_features",
+      "title": "ทำไมต้องใช้ออฟไลน์?",
+      "content": "เอกสาร Word ของคุณมีข้อมูลที่ละเอียดอ่อน ตัวแปลงของเราทำงานใน WebAssembly ทั้งหมด — ไฟล์ของคุณไม่เคยสัมผัสกับเซิร์ฟเวอร์"
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Word to PDF",
+      "type": "word_how_to_steps",
+      "title": "วิธีใช้",
       "steps": [
         {
-          "title": "Select .docx File",
-          "description": "Pick your Word document from your computer."
+          "title": "เลือกไฟล์ .docx",
+          "description": "เลือกเอกสาร Word จากคอมพิวเตอร์ของคุณ"
         },
         {
-          "title": "Preview Output",
-          "description": "See the PDF rendering before finalizing."
+          "title": "ดูตัวอย่างผลลัพธ์",
+          "description": "ดูการเรนเดอร์ PDF ก่อนทำการสรุป"
         },
         {
-          "title": "Download PDF",
-          "description": "Save your perfectly converted PDF instantly."
+          "title": "ดาวน์โหลด PDF",
+          "description": "บันทึก PDF ที่แปลงอย่างสมบูรณ์แบบของคุณได้ทันที"
         }
       ]
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Word to PDF for Bangkok Users",
-      "content": "Used by professionals in Bangkok who need to share documents without losing formatting."
+      "type": "word_geo_targeting",
+      "title": "Word เป็น PDF สำหรับผู้ใช้ในกรุงเทพฯ",
+      "content": "ใช้โดยมืออาชีพในกรุงเทพที่ต้องการแชร์เอกสารโดยไม่สูญเสียการจัดรูปแบบ"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Your Contracts Stay Private",
-      "content": "Converting employment contracts? Legal briefs? Our WASM processor never phones home."
+      "type": "word_privacy_security",
+      "title": "สัญญาของคุณยังคงเป็นส่วนตัว",
+      "content": "การแปลงสัญญาจ้างงาน? บทสรุปทางกฎหมาย? โปรเซสเซอร์ WASM ของเราจะไม่โทรศัพท์บ้าน"
     },
     {
-      "type": "combiner_performance",
-      "title": "No More Conversion Queues",
-      "content": "Cloud converters put you in a queue. Ours converts in under 2 seconds, entirely offline."
+      "type": "word_performance",
+      "title": "ไม่มีคิวการแปลงอีกต่อไป",
+      "content": "ตัวแปลงระบบคลาวด์ทำให้คุณอยู่ในคิว แปลงของเราภายในเวลาไม่ถึง 2 วินาทีแบบออฟไลน์ทั้งหมด"
     }
   ],
   "faqs": [
     {
-      "q": "Does it preserve Word formatting?",
-      "a": "Yes, fonts, tables, and images are preserved using our WASM renderer."
+      "q": "มันรักษาการจัดรูปแบบ Word หรือไม่?",
+      "a": "ใช่ แบบอักษร ตาราง และรูปภาพจะถูกเก็บรักษาไว้โดยใช้ตัวเรนเดอร์ WASM ของเรา"
     },
     {
-      "q": "What Word versions are supported?",
-      "a": "All modern .docx files are supported."
+      "q": "รองรับ Word เวอร์ชันใดบ้าง",
+      "a": "รองรับไฟล์ .docx สมัยใหม่ทั้งหมด"
     },
     {
-      "q": "Is there a file size limit?",
-      "a": "No server limits! Only your device RAM is the constraint."
+      "q": "มีการจำกัดขนาดไฟล์หรือไม่?",
+      "a": "ไม่มีการจำกัดเซิร์ฟเวอร์! เฉพาะ RAM อุปกรณ์ของคุณเท่านั้นที่เป็นข้อจำกัด"
     },
     {
-      "q": "Can I batch convert multiple files?",
-      "a": "Yes, select multiple .docx files at once."
+      "q": "ฉันสามารถแปลงไฟล์หลายไฟล์เป็นชุดได้หรือไม่",
+      "a": "ใช่ เลือกไฟล์ .docx หลายไฟล์พร้อมกัน"
     },
     {
-      "q": "Is this free?",
-      "a": "ใช่ ฟรีทั้งหมด"
+      "q": "ฟรีหรือเปล่า?",
+      "a": "ใช่ ฟรีโดยสมบูรณ์."
     }
-  ]
+  ],
+  "faqTitle": "คำถามที่พบบ่อย"
 }

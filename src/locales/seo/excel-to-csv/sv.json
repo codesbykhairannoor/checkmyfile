@@ -1,67 +1,85 @@
 {
-  "title": "Excel to CSV Converter — Export Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to CSV Locally",
-  "description": "Export .xlsx files to clean .csv format entirely in your browser. No upload. Ideal for developers in Stockholm.",
+  "title": "Excel till CSV-konverterare — Exportera kalkylblad offline",
+  "h1": "Konvertera Excel-kalkylblad till CSV lokalt",
+  "description": "Exportera .xlsx-filer till rent .csv-format helt i din webbläsare. Ingen uppladdning. 100 % säker lokal bearbetning.",
+  "buttonText": "Convert to CSV",
+  "badges": [
+    "Rådata",
+    "Databasimport",
+    "Snabb export"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Export to CSV Offline?",
-      "content": "Exporting spreadsheets to CSV for data pipelines should not expose your raw data to any external API."
+      "type": "excel_csv_hero_features",
+      "title": "Varför exportera till CSV offline?",
+      "content": "Att exportera kalkylark till CSV för datapipelines bör inte exponera dina rådata för något externt API."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Excel to CSV",
+      "type": "excel_csv_how_to_steps",
+      "title": "Hur man konverterar Excel till CSV",
       "steps": [
         {
-          "title": "Open Excel File",
-          "description": "Select the .xlsx spreadsheet."
+          "title": "Öppna Excel-fil",
+          "description": "Välj kalkylarket .xlsx."
         },
         {
-          "title": "Choose Sheet",
-          "description": "Pick which sheet to export as CSV."
+          "title": "Välj Blad",
+          "description": "Välj vilket blad som ska exporteras som CSV."
         },
         {
-          "title": "Download CSV",
-          "description": "Get your clean CSV file instantly."
+          "title": "Ladda ner CSV",
+          "description": "Få din rena CSV-fil direkt."
         }
-      ]
+      ],
+      "badgeText": "Snabbguide"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Developer Tools for Stockholm",
-      "content": "Developers and data engineers in Stockholm export spreadsheets to CSV for pipelines without cloud intermediaries."
+      "type": "excel_csv_geo_targeting",
+      "title": "100 % säker lokal bearbetning",
+      "content": "Alla operationer utförs direkt på din lokala enhet. Vi använder avancerad WebAssembly-teknik för att behandla dina dokument utan att någonsin ladda upp dem till externa servrar, vilket säkerställer fullständig integritet.",
+      "badgeText": "Lokal bearbetning"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Spreadsheet Data Stays Local",
-      "content": "Financial models and business data exported to CSV without any server-side processing."
+      "type": "excel_csv_privacy_security",
+      "title": "Kalkylbladsdata förblir lokal",
+      "content": "Finansiella modeller och affärsdata exporteras till CSV utan någon bearbetning på serversidan.",
+      "badgeText": "Säkerhet först"
     },
     {
-      "type": "organizer_performance",
-      "title": "Export Any Spreadsheet Instantly",
-      "content": "Export a 50,000-row Excel file to CSV in under 1 second. All in-browser."
+      "type": "excel_csv_performance",
+      "title": "Exportera alla kalkylblad direkt",
+      "content": "Exportera en Excel-fil med 50 000 rader till CSV på mindre än 1 sekund. Allt i webbläsaren.",
+      "badgeText": "Blixtsnabb"
     }
   ],
   "faqs": [
     {
-      "q": "Can I export multiple sheets?",
-      "a": "Yes, export each sheet as a separate CSV file."
+      "q": "Kan jag exportera flera ark?",
+      "a": "Ja, exportera varje ark som en separat CSV-fil."
     },
     {
-      "q": "Is Excel formatting preserved in CSV?",
-      "a": "CSV is plain text; formatting is removed but all values are preserved."
+      "q": "Bevaras Excel-formateringen i CSV?",
+      "a": "CSV är vanlig text; formateringen tas bort men alla värden bevaras."
     },
     {
-      "q": "Can I choose the delimiter?",
-      "a": "Yes, choose comma, semicolon, or tab."
+      "q": "Kan jag välja avgränsare?",
+      "a": "Ja, välj kommatecken, semikolon eller tabb."
     },
     {
-      "q": "Are formulas exported as values?",
-      "a": "Yes, formula results (not formulas) are written to the CSV."
+      "q": "Exporteras formler som värden?",
+      "a": "Ja, formelresultat (inte formler) skrivs till CSV."
     },
     {
-      "q": "Is this free?",
+      "q": "Är detta gratis?",
       "a": "Ja, helt gratis."
     }
-  ]
+  ],
+  "faqTitle": "Vanliga frågor",
+  "supportCenter": "Supportcenter"
 }

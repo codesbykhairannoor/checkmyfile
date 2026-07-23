@@ -1,67 +1,85 @@
 {
-  "title": "Remove PDF Metadata — Strip Hidden Author Data Offline",
-  "h1": "Strip All Hidden Metadata from PDF Files Instantly",
-  "description": "Remove author names, company info, GPS locations, and revision history from PDFs entirely in your browser. No upload. Perfect for Moscow users.",
+  "title": "Удалить метаданные PDF — удалить скрытые данные автора в автономном режиме",
+  "h1": "Мгновенно удалите все скрытые метаданные из PDF-файлов",
+  "description": "Полностью удалите имена авторов, информацию о компании, местоположения GPS и историю изменений из PDF-файлов в своем браузере. Нет загрузки. 100% безопасная локальная обработка.",
+  "buttonText": "Process Document",
+  "badges": [
+    "Безопасный и конфиденциальный",
+    "Автономный движок",
+    "Нулевая загрузка"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "metadata_hero_features",
-      "title": "Why Strip PDF Metadata?",
-      "content": "PDFs carry hidden metadata — your name, your company, revision history. Strip it all before sharing publicly, entirely offline."
+      "title": "Зачем удалять метаданные PDF?",
+      "content": "PDF-файлы содержат скрытые метаданные — ваше имя, вашу компанию, историю изменений. Снимите все это, прежде чем публиковать публично, полностью в автономном режиме."
     },
     {
       "type": "metadata_how_to_steps",
-      "title": "Before & After — How Metadata Removal Works",
+      "title": "До и после — как работает удаление метаданных",
       "steps": [
         {
-          "title": "Open Your PDF",
-          "description": "Select the PDF with hidden metadata to remove."
+          "title": "Откройте PDF-файл",
+          "description": "Выберите PDF-файл со скрытыми метаданными, которые нужно удалить."
         },
         {
-          "title": "Preview Hidden Data",
-          "description": "See exactly what metadata — author, GPS, history — is embedded."
+          "title": "Предварительный просмотр скрытых данных",
+          "description": "Посмотрите, какие именно метаданные — автор, GPS, история — встроены."
         },
         {
-          "title": "Strip & Download Clean PDF",
-          "description": "Remove all metadata instantly and save a clean, anonymous PDF."
+          "title": "Разобрать и скачать чистый PDF",
+          "description": "Мгновенно удалите все метаданные и сохраните чистый анонимный PDF-файл."
         }
-      ]
+      ],
+      "badgeText": "Краткое руководство"
     },
     {
       "type": "metadata_geo_targeting",
-      "title": "Metadata Privacy Tool for Moscow Professionals",
-      "content": "Journalists, legal professionals, and privacy-conscious users in Moscow strip metadata before publishing or sharing PDFs externally."
+      "title": "100% безопасная локальная обработка",
+      "content": "Все операции выполняются непосредственно на вашем локальном устройстве. Мы используем передовую технологию WebAssembly для обработки ваших документов, не загружая их на внешние серверы, обеспечивая полную конфиденциальность.",
+      "badgeText": "Локальная обработка"
     },
     {
       "type": "metadata_privacy_security",
-      "title": "All Metadata Types Permanently Erased",
-      "content": "Author name, company, GPS coordinates from embedded images, revision history, software fingerprints — all permanently removed."
+      "title": "Все типы метаданных безвозвратно удалены",
+      "content": "Имя автора, компания, GPS-координаты из встроенных изображений, история изменений, отпечатки программного обеспечения — все это удаляется без возможности восстановления.",
+      "badgeText": "Безопасность превыше всего"
     },
     {
       "type": "metadata_performance",
-      "title": "Strip Metadata in Milliseconds",
-      "content": "Metadata removal takes milliseconds and often reduces file size by 10–15%. All offline."
+      "title": "Удаление метаданных за миллисекунды",
+      "content": "Удаление метаданных занимает миллисекунды и часто уменьшает размер файла на 10–15%. Все офлайн.",
+      "badgeText": "Молниеносно"
     }
   ],
   "faqs": [
     {
-      "q": "What metadata is removed?",
-      "a": "Author, creator, producer, title, keywords, and all XMP/EXIF data."
+      "q": "Какие метаданные удаляются?",
+      "a": "Автор, создатель, продюсер, название, ключевые слова и все данные XMP/EXIF."
     },
     {
-      "q": "Are document bookmarks affected?",
-      "a": "No, bookmarks and structure are preserved; only metadata is removed."
+      "q": "Затронуты ли закладки документов?",
+      "a": "Нет, закладки и структура сохраняются; удаляются только метаданные."
     },
     {
-      "q": "Can I preview the metadata first?",
-      "a": "Yes, we show a list of all detected metadata before removing."
+      "q": "Могу ли я сначала просмотреть метаданные?",
+      "a": "Да, перед удалением мы показываем список всех обнаруженных метаданных."
     },
     {
-      "q": "Is the document content affected?",
-      "a": "No, the content, images, and structure remain intact."
+      "q": "Изменится ли содержимое документа?",
+      "a": "Нет, содержание, изображения и структура остаются нетронутыми."
     },
     {
-      "q": "Is this free?",
-      "a": "Да, полностью бесплатно."
+      "q": "Это бесплатно?",
+      "a": "Да, всегда бесплатно."
     }
-  ]
+  ],
+  "faqTitle": "Часто задаваемые вопросы",
+  "supportCenter": "Центр поддержки"
 }

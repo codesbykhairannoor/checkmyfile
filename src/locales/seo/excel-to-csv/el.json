@@ -1,67 +1,85 @@
 {
-  "title": "Excel to CSV Converter — Export Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to CSV Locally",
-  "description": "Export .xlsx files to clean .csv format entirely in your browser. No upload. Ideal for developers in Athens.",
+  "title": "Μετατροπέας Excel σε CSV — Εξαγωγή υπολογιστικών φύλλων εκτός σύνδεσης",
+  "h1": "Μετατροπή υπολογιστικών φύλλων του Excel σε CSV τοπικά",
+  "description": "Εξάγετε αρχεία .xlsx για να καθαρίσετε τη μορφή .csv εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση. 100% ασφαλής τοπική επεξεργασία.",
+  "buttonText": "Convert to CSV",
+  "badges": [
+    "Ακατέργαστα δεδομένα",
+    "Εισαγωγή βάσης δεδομένων",
+    "Γρήγορη εξαγωγή"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Export to CSV Offline?",
-      "content": "Exporting spreadsheets to CSV for data pipelines should not expose your raw data to any external API."
+      "type": "excel_csv_hero_features",
+      "title": "Γιατί να γίνει εξαγωγή σε CSV εκτός σύνδεσης;",
+      "content": "Η εξαγωγή υπολογιστικών φύλλων σε CSV για αγωγούς δεδομένων δεν θα πρέπει να εκθέτει τα ανεπεξέργαστα δεδομένα σας σε οποιοδήποτε εξωτερικό API."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Excel to CSV",
+      "type": "excel_csv_how_to_steps",
+      "title": "Πώς να μετατρέψετε το Excel σε CSV",
       "steps": [
         {
-          "title": "Open Excel File",
-          "description": "Select the .xlsx spreadsheet."
+          "title": "Ανοίξτε το αρχείο Excel",
+          "description": "Επιλέξτε το υπολογιστικό φύλλο .xlsx."
         },
         {
-          "title": "Choose Sheet",
-          "description": "Pick which sheet to export as CSV."
+          "title": "Επιλέξτε Φύλλο",
+          "description": "Επιλέξτε ποιο φύλλο θα εξαχθεί ως CSV."
         },
         {
-          "title": "Download CSV",
-          "description": "Get your clean CSV file instantly."
+          "title": "Λήψη CSV",
+          "description": "Αποκτήστε το καθαρό αρχείο CSV σας αμέσως."
         }
-      ]
+      ],
+      "badgeText": "Γρήγορος Οδηγός"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Developer Tools for Athens",
-      "content": "Developers and data engineers in Athens export spreadsheets to CSV for pipelines without cloud intermediaries."
+      "type": "excel_csv_geo_targeting",
+      "title": "100% Ασφαλής Τοπική Επεξεργασία",
+      "content": "Όλες οι λειτουργίες εκτελούνται απευθείας στην τοπική συσκευή σας. Χρησιμοποιούμε προηγμένη τεχνολογία WebAssembly για να επεξεργαζόμαστε τα έγγραφά σας χωρίς ποτέ να τα ανεβάσουμε σε εξωτερικούς διακομιστές, διασφαλίζοντας πλήρες απόρρητο.",
+      "badgeText": "Τοπική Επεξεργασία"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Spreadsheet Data Stays Local",
-      "content": "Financial models and business data exported to CSV without any server-side processing."
+      "type": "excel_csv_privacy_security",
+      "title": "Τα δεδομένα υπολογιστικού φύλλου παραμένουν τοπικά",
+      "content": "Οικονομικά μοντέλα και επιχειρηματικά δεδομένα που εξάγονται σε CSV χωρίς καμία επεξεργασία από την πλευρά του διακομιστή.",
+      "badgeText": "Πρώτα η ασφάλεια"
     },
     {
-      "type": "organizer_performance",
-      "title": "Export Any Spreadsheet Instantly",
-      "content": "Export a 50,000-row Excel file to CSV in under 1 second. All in-browser."
+      "type": "excel_csv_performance",
+      "title": "Άμεση εξαγωγή οποιουδήποτε υπολογιστικού φύλλου",
+      "content": "Εξάγετε ένα αρχείο Excel 50.000 σειρών σε CSV σε λιγότερο από 1 δευτερόλεπτο. Όλα εντός προγράμματος περιήγησης.",
+      "badgeText": "Αστραπιαία"
     }
   ],
   "faqs": [
     {
-      "q": "Can I export multiple sheets?",
-      "a": "Yes, export each sheet as a separate CSV file."
+      "q": "Μπορώ να εξάγω πολλά φύλλα;",
+      "a": "Ναι, εξαγωγή κάθε φύλλου ως ξεχωριστό αρχείο CSV."
     },
     {
-      "q": "Is Excel formatting preserved in CSV?",
-      "a": "CSV is plain text; formatting is removed but all values are preserved."
+      "q": "Διατηρείται η μορφοποίηση Excel σε CSV;",
+      "a": "Το CSV είναι απλό κείμενο. Η μορφοποίηση αφαιρείται αλλά διατηρούνται όλες οι τιμές."
     },
     {
-      "q": "Can I choose the delimiter?",
-      "a": "Yes, choose comma, semicolon, or tab."
+      "q": "Μπορώ να επιλέξω τον οριοθέτη;",
+      "a": "Ναι, επιλέξτε κόμμα, ερωτηματικό ή καρτέλα."
     },
     {
-      "q": "Are formulas exported as values?",
-      "a": "Yes, formula results (not formulas) are written to the CSV."
+      "q": "Οι τύποι εξάγονται ως τιμές;",
+      "a": "Ναι, τα αποτελέσματα των τύπων (όχι οι τύποι) εγγράφονται στο CSV."
     },
     {
-      "q": "Is this free?",
+      "q": "Αυτό είναι δωρεάν;",
       "a": "Ναι, εντελώς δωρεάν."
     }
-  ]
+  ],
+  "faqTitle": "Συχνές Ερωτήσεις",
+  "supportCenter": "Κέντρο Υποστήριξης"
 }

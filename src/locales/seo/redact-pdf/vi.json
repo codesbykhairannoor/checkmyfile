@@ -1,67 +1,85 @@
 {
-  "title": "Redact PDF — Permanently Remove Sensitive Data",
-  "h1": "Permanently Redact Sensitive Information from PDFs Offline",
-  "description": "Black out sensitive text and images in PDFs entirely in your browser. No cloud risk. Critical for users in Hanoi.",
+  "title": "Làm lại PDF — Xóa vĩnh viễn dữ liệu nhạy cảm",
+  "h1": "Xóa vĩnh viễn thông tin nhạy cảm từ các tệp PDF ngoại tuyến",
+  "description": "Bôi đen hoàn toàn văn bản và hình ảnh nhạy cảm trong tệp PDF trong trình duyệt của bạn. Không có rủi ro về đám mây. Xử lý cục bộ an toàn 100%.",
+  "buttonText": "Redact Text",
+  "badges": [
+    "Xóa vĩnh viễn",
+    "Thông tin mất điện",
+    "Biên tập an toàn"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "redact_hero_features",
-      "title": "Why Redact PDFs Locally?",
-      "content": "Redacting means the content is classified. Uploading a document you need to hide defeats the whole purpose. Our tool runs 100% offline."
+      "title": "Tại sao phải biên tập lại các tệp PDF cục bộ?",
+      "content": "Làm lại có nghĩa là nội dung được phân loại. Tải lên một tài liệu bạn cần để che giấu toàn bộ mục đích. Công cụ của chúng tôi chạy ngoại tuyến 100%."
     },
     {
       "type": "redact_how_to_steps",
-      "title": "How to Permanently Redact a PDF",
+      "title": "Cách biên tập lại vĩnh viễn một tệp PDF",
       "steps": [
         {
-          "title": "Open Sensitive Document",
-          "description": "Load the PDF with data that must be hidden."
+          "title": "Mở tài liệu nhạy cảm",
+          "description": "Tải tệp PDF có dữ liệu phải được ẩn."
         },
         {
-          "title": "Mark Redaction Areas",
-          "description": "Draw boxes over content to permanently erase."
+          "title": "Đánh dấu khu vực biên tập",
+          "description": "Vẽ các hộp trên nội dung để xóa vĩnh viễn."
         },
         {
-          "title": "Apply & Download",
-          "description": "Content is permanently deleted from the PDF structure."
+          "title": "Áp dụng & Tải xuống",
+          "description": "Nội dung sẽ bị xóa vĩnh viễn khỏi cấu trúc PDF."
         }
-      ]
+      ],
+      "badgeText": "Hướng dẫn nhanh"
     },
     {
       "type": "redact_geo_targeting",
-      "title": "Court-Ready Redaction for Hanoi Law Firms",
-      "content": "Legal professionals in Hanoi prepare court documents with permanent, offline redaction that removes data from the PDF structure itself."
+      "title": "Xử lý cục bộ an toàn 100%",
+      "content": "Tất cả các hoạt động được thực hiện trực tiếp trên thiết bị cục bộ của bạn. Chúng tôi sử dụng công nghệ WebAssembly tiên tiến để xử lý tài liệu của bạn mà không cần tải chúng lên máy chủ bên ngoài, đảm bảo quyền riêng tư hoàn toàn.",
+      "badgeText": "Xử lý cục bộ"
     },
     {
       "type": "redact_privacy_security",
-      "title": "True Permanent Redaction — Not Just Black Boxes",
-      "content": "Unlike tools that merely cover text with black boxes, our redaction permanently deletes the underlying data from the PDF object structure."
+      "title": "Biên tập vĩnh viễn thực sự - Không chỉ hộp đen",
+      "content": "Không giống như các công cụ chỉ che văn bản bằng hộp đen, tính năng biên tập của chúng tôi sẽ xóa vĩnh viễn dữ liệu cơ bản khỏi cấu trúc đối tượng PDF.",
+      "badgeText": "Bảo mật là trên hết"
     },
     {
       "type": "redact_performance",
-      "title": "Redact Entire Documents Instantly",
-      "content": "Apply hundreds of permanent redactions to large documents in seconds, completely offline."
+      "title": "Biên tập lại toàn bộ tài liệu ngay lập tức",
+      "content": "Áp dụng hàng trăm thao tác chỉnh sửa vĩnh viễn cho các tài liệu lớn chỉ trong vài giây, hoàn toàn ngoại tuyến.",
+      "badgeText": "Nhanh như chớp"
     }
   ],
   "faqs": [
     {
-      "q": "Is the redaction truly permanent?",
-      "a": "Yes, the underlying text and image data is permanently deleted from the PDF structure."
+      "q": "Việc chỉnh sửa có thực sự vĩnh viễn không?",
+      "a": "Có, dữ liệu văn bản và hình ảnh cơ bản sẽ bị xóa vĩnh viễn khỏi cấu trúc PDF."
     },
     {
-      "q": "Can I redact images too?",
-      "a": "Yes, both text regions and image areas can be permanently redacted."
+      "q": "Tôi có thể biên tập lại hình ảnh không?",
+      "a": "Có, cả vùng văn bản và vùng hình ảnh đều có thể được biên tập lại vĩnh viễn."
     },
     {
-      "q": "Can I choose black or white cover?",
-      "a": "Yes, pick the redaction style that suits your document."
+      "q": "Tôi có thể chọn bìa đen hoặc trắng không?",
+      "a": "Có, hãy chọn kiểu biên tập phù hợp với tài liệu của bạn."
     },
     {
-      "q": "Does this meet legal standards?",
-      "a": "Our redaction removes data at the PDF object level, meeting court requirements."
+      "q": "Điều này có đáp ứng các tiêu chuẩn pháp lý không?",
+      "a": "Việc biên tập của chúng tôi sẽ xóa dữ liệu ở cấp độ đối tượng PDF, đáp ứng các yêu cầu của tòa án."
     },
     {
-      "q": "Is this free?",
-      "a": "Có, hoàn toàn miễn phí."
+      "q": "Cái này có miễn phí không?",
+      "a": "Có, luôn miễn phí."
     }
-  ]
+  ],
+  "faqTitle": "Câu hỏi thường gặp",
+  "supportCenter": "Trung tâm hỗ trợ"
 }

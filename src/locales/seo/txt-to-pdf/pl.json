@@ -1,67 +1,85 @@
 {
-  "title": "Text to PDF Converter — Offline & Instant",
-  "h1": "Convert Plain Text Files to PDF Locally",
-  "description": "Transform .txt files into clean, readable PDFs directly in your browser. No upload required. Ideal for users in Warsaw.",
+  "title": "Konwerter tekstu na PDF — offline i natychmiastowo",
+  "h1": "Konwertuj pliki tekstowe na format PDF lokalnie",
+  "description": "Przekształcaj pliki .txt w czyste, czytelne pliki PDF bezpośrednio w przeglądarce. Nie jest wymagane przesyłanie. 100% bezpieczne przetwarzanie lokalne.",
+  "buttonText": "Convert Text",
+  "badges": [
+    "Fragmenty kodu",
+    "Dzienniki serwera",
+    "Rękopisy"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Text Files Offline?",
-      "content": "Text files often contain code, scripts, or sensitive notes. Our offline converter ensures zero data transmission."
+      "type": "txt_hero_features",
+      "title": "Dlaczego warto konwertować pliki tekstowe w trybie offline?",
+      "content": "Pliki tekstowe często zawierają kod, skrypty lub poufne notatki. Nasz konwerter offline zapewnia zerową transmisję danych."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Text to PDF",
+      "type": "txt_how_to_steps",
+      "title": "Jak przekonwertować tekst na format PDF",
       "steps": [
         {
-          "title": "Open Text File",
-          "description": "Select your .txt file or paste text directly."
+          "title": "Otwórz plik tekstowy",
+          "description": "Wybierz plik .txt lub bezpośrednio wklej tekst."
         },
         {
-          "title": "Choose Font & Style",
-          "description": "Pick font size and layout preferences."
+          "title": "Wybierz czcionkę i styl",
+          "description": "Wybierz rozmiar czcionki i preferencje dotyczące układu."
         },
         {
-          "title": "Download PDF",
-          "description": "Export your text as a beautifully formatted PDF."
+          "title": "Pobierz PDF",
+          "description": "Eksportuj swój tekst jako pięknie sformatowany plik PDF."
         }
-      ]
+      ],
+      "badgeText": "Krótki przewodnik"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Text to PDF for Warsaw Developers",
-      "content": "Developers and writers in Warsaw use our tool to convert scripts and notes without cloud dependency."
+      "type": "txt_geo_targeting",
+      "title": "100% bezpieczne przetwarzanie lokalne",
+      "content": "Wszystkie operacje wykonywane są bezpośrednio na Twoim urządzeniu lokalnym. Korzystamy z zaawansowanej technologii WebAssembly, aby przetwarzać Twoje dokumenty bez konieczności przesyłania ich na serwery zewnętrzne, zapewniając całkowitą prywatność.",
+      "badgeText": "Przetwarzanie lokalne"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Code Stays on Your Machine",
-      "content": "Source code, legal notes, medical records — text files converted with zero server involvement."
+      "type": "txt_privacy_security",
+      "title": "Kod pozostaje na Twojej maszynie",
+      "content": "Kod źródłowy, uwagi prawne, dokumentacja medyczna — pliki tekstowe konwertowane przy zerowym zaangażowaniu serwera.",
+      "badgeText": "Bezpieczeństwo przede wszystkim"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Text Rendering",
-      "content": "Convert any size text file to PDF in milliseconds. No upload, no compression, no delay."
+      "type": "txt_performance",
+      "title": "Natychmiastowe renderowanie tekstu",
+      "content": "Konwertuj plik tekstowy dowolnego rozmiaru na format PDF w ciągu milisekund. Bez przesyłania, bez kompresji i bez opóźnień.",
+      "badgeText": "Błyskawicznie"
     }
   ],
   "faqs": [
     {
-      "q": "Can I paste text directly?",
-      "a": "Yes, you can type or paste text without uploading a file."
+      "q": "Czy mogę wkleić tekst bezpośrednio?",
+      "a": "Tak, możesz wpisać lub wkleić tekst bez przesyłania pliku."
     },
     {
-      "q": "What fonts are available?",
-      "a": "Standard web fonts like Arial, Times New Roman, and monospace."
+      "q": "Jakie czcionki są dostępne?",
+      "a": "Standardowe czcionki internetowe, takie jak Arial, Times New Roman i monospace."
     },
     {
-      "q": "Is code syntax preserved?",
-      "a": "Monospace formatting is preserved for code blocks."
+      "q": "Czy składnia kodu jest zachowana?",
+      "a": "Formatowanie o stałej szerokości jest zachowywane dla bloków kodu."
     },
     {
-      "q": "Can I set page margins?",
-      "a": "Yes, customize top, bottom, left, and right margins."
+      "q": "Czy mogę ustawić marginesy strony?",
+      "a": "Tak, dostosuj marginesy górny, dolny, lewy i prawy."
     },
     {
-      "q": "Is this free?",
-      "a": "Tak, całkowicie bezpłatnie."
+      "q": "Czy to jest bezpłatne?",
+      "a": "Tak, całkowicie za darmo."
     }
-  ]
+  ],
+  "faqTitle": "Często zadawane pytania",
+  "supportCenter": "Centrum wsparcia"
 }

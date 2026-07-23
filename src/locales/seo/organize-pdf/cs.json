@@ -1,67 +1,85 @@
 {
-  "title": "Organize PDF Pages — Reorder & Delete Offline",
-  "h1": "Reorder, Delete, or Duplicate PDF Pages Locally",
-  "description": "Drag and drop to rearrange, remove, or duplicate PDF pages entirely in your browser. No upload. Great for users in Prague.",
+  "title": "Uspořádat stránky PDF — změnit pořadí a odstranit offline",
+  "h1": "Lokálně změnit pořadí, odstranit nebo duplikovat stránky PDF",
+  "description": "Přetažením můžete změnit uspořádání, odstranit nebo duplikovat stránky PDF zcela ve svém prohlížeči. Rychlé a zcela bezpečné.",
+  "buttonText": "Organize Pages",
+  "badges": [
+    "Drag & Drop",
+    "Změnit pořadí stránek",
+    "Vizuální editor"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Organize PDFs Locally?",
-      "content": "Reorganizing page structure is an editing operation. Your internal document should stay internal during editing."
+      "type": "organize_hero_features",
+      "title": "Proč organizovat soubory PDF lokálně?",
+      "content": "Reorganizace struktury stránky je editační operace. Váš interní dokument by měl během úprav zůstat interní."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Organize PDF Pages",
+      "type": "organize_how_to_steps",
+      "title": "Jak uspořádat stránky PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to reorganize."
+          "title": "Otevřít PDF",
+          "description": "Načtěte soubor PDF, který chcete reorganizovat."
         },
         {
-          "title": "Drag to Reorder",
-          "description": "Drag page thumbnails to the desired position."
+          "title": "Přetažením změníte pořadí",
+          "description": "Přetáhněte miniatury stránek na požadované místo."
         },
         {
-          "title": "Save Organized PDF",
-          "description": "Download the restructured PDF immediately."
+          "title": "Uložit uspořádané PDF",
+          "description": "Okamžitě si stáhněte restrukturalizované PDF."
         }
-      ]
+      ],
+      "badgeText": "Rychlý průvodce"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Organization for Prague Teams",
-      "content": "Teams in Prague reorganize proposal and report PDFs without uploading to any cloud service."
+      "type": "organize_geo_targeting",
+      "title": "100% bezpečné místní zpracování",
+      "content": "Všechny operace se provádějí přímo na vašem místním zařízení. Ke zpracování vašich dokumentů používáme pokročilou technologii WebAssembly, aniž bychom je kdy nahrávali na externí servery, což zajišťuje naprosté soukromí.",
+      "badgeText": "Místní zpracování"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Page Structure Is Private Business",
-      "content": "Reordering internal reports and proposals with zero data leaving your browser."
+      "type": "organize_privacy_security",
+      "title": "Struktura stránky je soukromý podnik",
+      "content": "Změna pořadí interních sestav a návrhů s nulovými daty opouštějícími váš prohlížeč.",
+      "badgeText": "Bezpečnost především"
     },
     {
-      "type": "organizer_performance",
-      "title": "Reorganize Any PDF in Seconds",
-      "content": "Reorder pages in a 500-page document through a smooth drag-and-drop interface with zero upload."
+      "type": "organize_performance",
+      "title": "Reorganizujte jakékoli PDF během několika sekund",
+      "content": "Změňte pořadí stránek v 500stránkovém dokumentu pomocí hladkého rozhraní přetahování s nulovým nahráváním.",
+      "badgeText": "Bleskově rychlý"
     }
   ],
   "faqs": [
     {
-      "q": "Can I delete pages?",
-      "a": "Yes, click the delete icon on any page thumbnail."
+      "q": "Mohu smazat stránky?",
+      "a": "Ano, klikněte na ikonu odstranění na libovolné miniatuře stránky."
     },
     {
-      "q": "Can I duplicate pages?",
-      "a": "Yes, duplicate individual pages with one click."
+      "q": "Mohu duplikovat stránky?",
+      "a": "Ano, duplikovat jednotlivé stránky jedním kliknutím."
     },
     {
-      "q": "Can I rotate while organizing?",
-      "a": "Yes, per-page rotation is available in the organizer."
+      "q": "Mohu se při organizování otáčet?",
+      "a": "Ano, v organizátoru je k dispozici rotace po stránce."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No limit! Organize documents of any size."
+      "q": "Je nějaký počet stránek?",
+      "a": "Žádný limit! Uspořádejte dokumenty libovolné velikosti."
     },
     {
-      "q": "Is this free?",
+      "q": "Je to zdarma?",
       "a": "Ano, zcela zdarma."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Rotate PDF Pages — Fix Orientation Offline",
-  "h1": "Rotate PDF Pages to the Correct Orientation",
-  "description": "Fix upside-down or sideways PDF pages instantly in your browser. No upload. Perfect for users in Jakarta.",
+  "title": "Putar Halaman PDF — Perbaiki Orientasi Offline",
+  "h1": "Putar Halaman PDF ke Orientasi yang Benar",
+  "description": "Perbaiki halaman PDF yang terbalik atau menyamping secara instan di browser Anda. Cepat dan sepenuhnya aman.",
+  "buttonText": "Rotate Pages",
+  "badges": [
+    "Putar 90°/180°",
+    "Pemrosesan Batch",
+    "Perbaikan Instan"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Rotate PDFs Locally?",
-      "content": "Scanned documents often come out sideways. Fix their orientation instantly without uploading anything to the cloud."
+      "type": "rotate_hero_features",
+      "title": "Mengapa Memutar PDF Secara Lokal?",
+      "content": "Dokumen yang dipindai sering kali keluar ke samping. Perbaiki orientasinya secara instan tanpa mengunggah apa pun ke cloud."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Rotate PDF Pages",
+      "type": "rotate_how_to_steps",
+      "title": "Cara Memutar Halaman PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page orientation."
+          "title": "Buka PDF",
+          "description": "Muat PDF dengan orientasi halaman yang salah."
         },
         {
-          "title": "Select Pages & Direction",
-          "description": "Choose pages to rotate and direction (90°, 180°, 270°)."
+          "title": "Pilih Halaman & Arah",
+          "description": "Pilih halaman untuk diputar dan diarahkan (90°, 180°, 270°)."
         },
         {
-          "title": "Download Fixed PDF",
-          "description": "Save the correctly oriented PDF immediately."
+          "title": "Unduh Memperbaiki PDF",
+          "description": "Segera simpan PDF yang berorientasi dengan benar."
         }
-      ]
+      ],
+      "badgeText": "Panduan Singkat"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Rotation for Jakarta Offices",
-      "content": "Office workers in Jakarta fix scanner output orientation without relying on cloud services."
+      "type": "rotate_geo_targeting",
+      "title": "Pemrosesan Lokal 100% Aman",
+      "content": "Semua operasi dilakukan langsung di perangkat lokal Anda. Kami menggunakan teknologi WebAssembly yang canggih untuk memproses dokumen Anda tanpa harus mengunggahnya ke server eksternal, sehingga memastikan privasi sepenuhnya.",
+      "badgeText": "Pemrosesan Lokal"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Scanned Documents Stay Private",
-      "content": "Scanned medical or legal documents rotated locally without any server access."
+      "type": "rotate_privacy_security",
+      "title": "Dokumen yang Dipindai Tetap Pribadi",
+      "content": "Dokumen medis atau hukum yang dipindai diputar secara lokal tanpa akses server apa pun.",
+      "badgeText": "Keamanan Pertama"
     },
     {
-      "type": "transform_performance",
-      "title": "Rotate Any PDF in Milliseconds",
-      "content": "Rotating 500 pages takes less than a second. No upload, no wait."
+      "type": "rotate_performance",
+      "title": "Putar PDF Apa Pun dalam Milidetik",
+      "content": "Memutar 500 halaman membutuhkan waktu kurang dari satu detik. Tidak ada unggahan, tidak perlu menunggu.",
+      "badgeText": "Secepat Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "Can I rotate individual pages?",
-      "a": "Yes, select specific pages or all at once."
+      "q": "Bisakah saya merotasi halaman satu per satu?",
+      "a": "Ya, pilih halaman tertentu atau sekaligus."
     },
     {
-      "q": "What rotation angles are available?",
-      "a": "90°, 180°, and 270° clockwise and counter-clockwise."
+      "q": "Sudut rotasi apa yang tersedia?",
+      "a": "90°, 180°, dan 270° searah jarum jam dan berlawanan arah jarum jam."
     },
     {
-      "q": "Does rotation affect image quality?",
-      "a": "No, rotation is lossless — no re-encoding occurs."
+      "q": "Apakah rotasi mempengaruhi kualitas gambar?",
+      "a": "Tidak, rotasi tidak menghasilkan kerugian — tidak terjadi pengkodean ulang."
     },
     {
-      "q": "Can I undo a rotation?",
-      "a": "Yes, apply the reverse rotation before downloading."
+      "q": "Bisakah saya membatalkan rotasi?",
+      "a": "Ya, terapkan rotasi terbalik sebelum mengunduh."
     },
     {
-      "q": "Is this free?",
+      "q": "Apakah ini gratis?",
       "a": "Ya, sepenuhnya gratis."
     }
-  ]
+  ],
+  "faqTitle": "Pertanyaan yang Sering Diajukan",
+  "supportCenter": "Pusat Dukungan"
 }

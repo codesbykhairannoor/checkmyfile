@@ -1,67 +1,85 @@
 {
-  "title": "PDF to Image Converter — Extract Pages Offline",
-  "h1": "Convert PDF Pages to PNG or JPG Images",
-  "description": "Extract every page from a PDF as high-quality images directly in your browser. Zero upload, total privacy. Best for users in Hanoi.",
+  "title": "Chuyển đổi PDF sang hình ảnh — Trích xuất trang ngoại tuyến",
+  "h1": "Chuyển đổi trang PDF thành hình ảnh PNG hoặc JPG",
+  "description": "Trích xuất mọi trang từ PDF dưới dạng hình ảnh chất lượng cao trực tiếp trong trình duyệt của bạn. Không tải lên, xử lý cục bộ an toàn 100%.",
+  "buttonText": "Extract Images",
+  "badges": [
+    "Danh mục thiết kế",
+    "Bài thuyết trình",
+    "Chất lượng cao"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract PDF Pages Offline?",
-      "content": "PDFs often contain confidential diagrams, blueprints, or reports. Extract pages as images without any server access."
+      "type": "pdf_image_hero_features",
+      "title": "Tại sao trích xuất trang PDF ngoại tuyến?",
+      "content": "Các tệp PDF thường chứa các sơ đồ, bản thiết kế hoặc báo cáo bí mật. Trích xuất các trang dưới dạng hình ảnh mà không cần truy cập máy chủ."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Images",
+      "type": "pdf_image_how_to_steps",
+      "title": "Cách chuyển đổi PDF sang hình ảnh",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF you want to extract images from."
+          "title": "Tải PDF",
+          "description": "Chọn tệp PDF bạn muốn trích xuất hình ảnh."
         },
         {
-          "title": "Choose Format",
-          "description": "Pick PNG (lossless) or JPG (compressed) output."
+          "title": "Chọn định dạng",
+          "description": "Chọn đầu ra PNG (không mất dữ liệu) hoặc JPG (nén)."
         },
         {
-          "title": "Download Images",
-          "description": "Get all pages as individual image files in a ZIP."
+          "title": "Tải xuống hình ảnh",
+          "description": "Nhận tất cả các trang dưới dạng tệp hình ảnh riêng lẻ trong ZIP."
         }
-      ]
+      ],
+      "badgeText": "Hướng dẫn nhanh"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF to Image for Hanoi Designers",
-      "content": "Designers in Hanoi extract PDF pages as images for presentations and social media without cloud uploads."
+      "type": "pdf_image_geo_targeting",
+      "title": "Xử lý cục bộ an toàn 100%",
+      "content": "Tất cả các hoạt động được thực hiện trực tiếp trên thiết bị cục bộ của bạn. Chúng tôi sử dụng công nghệ WebAssembly tiên tiến để xử lý tài liệu của bạn mà không cần tải chúng lên máy chủ bên ngoài, đảm bảo quyền riêng tư hoàn toàn.",
+      "badgeText": "Xử lý cục bộ"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Confidential Diagrams Stay Private",
-      "content": "Technical blueprints and legal documents extracted as images without any data leaving your device."
+      "type": "pdf_image_privacy_security",
+      "title": "Sơ đồ bí mật Giữ kín",
+      "content": "Bản thiết kế kỹ thuật và tài liệu pháp lý được trích xuất dưới dạng hình ảnh mà không có bất kỳ dữ liệu nào rời khỏi thiết bị của bạn.",
+      "badgeText": "Bảo mật là trên hết"
     },
     {
-      "type": "split_performance",
-      "title": "Extract All Pages Instantly",
-      "content": "A 500-page PDF converted to images in seconds. No upload, no wait."
+      "type": "pdf_image_performance",
+      "title": "Trích xuất tất cả các trang ngay lập tức",
+      "content": "Một bản PDF 500 trang được chuyển đổi thành hình ảnh trong vài giây. Không tải lên, không chờ đợi.",
+      "badgeText": "Nhanh như chớp"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are available?",
-      "a": "PNG and JPG with adjustable quality settings."
+      "q": "Những định dạng hình ảnh nào có sẵn?",
+      "a": "PNG và JPG với cài đặt chất lượng có thể điều chỉnh."
     },
     {
-      "q": "Can I extract specific pages?",
-      "a": "Yes, specify page ranges like 1-5 or 3,7,12."
+      "q": "Tôi có thể trích xuất các trang cụ thể không?",
+      "a": "Có, chỉ định phạm vi trang như 1-5 hoặc 3,7,12."
     },
     {
-      "q": "What resolution are the exported images?",
-      "a": "Default 150 DPI, adjustable up to 300 DPI."
+      "q": "Độ phân giải của hình ảnh được xuất là gì?",
+      "a": "Mặc định 150DPI, có thể điều chỉnh lên tới 300DPI."
     },
     {
-      "q": "Are all pages exported at once?",
-      "a": "Yes, all selected pages are zipped for a single download."
+      "q": "Tất cả các trang có được xuất cùng một lúc không?",
+      "a": "Có, tất cả các trang đã chọn đều được nén để tải xuống một lần."
     },
     {
-      "q": "Is this free?",
-      "a": "Có, hoàn toàn miễn phí."
+      "q": "Cái này có miễn phí không?",
+      "a": "Hoàn toàn miễn phí luôn."
     }
-  ]
+  ],
+  "faqTitle": "Câu hỏi thường gặp",
+  "supportCenter": "Trung tâm hỗ trợ"
 }

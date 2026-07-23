@@ -1,67 +1,85 @@
 {
-  "title": "Compress PDF Online - Reduce File Size",
-  "h1": "Compress PDF Documents without Losing Quality",
-  "description": "Shrink large PDF files up to 90% using adaptive lossless techniques directly in WebAssembly. Perfect for users in São Paulo.",
+  "title": "Compactar PDF Online - Reduza o tamanho do arquivo",
+  "h1": "Compacte documentos PDF sem perder qualidade",
+  "description": "Reduza arquivos PDF grandes em até 90% usando técnicas adaptativas sem perdas diretamente no WebAssembly. Processamento local 100% seguro.",
   "sections": [
     {
-      "type": "comp_hero_features",
-      "title": "Why Compress PDF Offline?",
-      "content": "Large PDFs are a pain to email. Our compressor reduces file size drastically without blurring images, all from your browser."
+      "type": "compress_hero_features",
+      "title": "Por que compactar PDF offline?",
+      "content": "PDFs grandes são difíceis de enviar por e-mail. Nosso compressor reduz drasticamente o tamanho do arquivo sem desfocar as imagens, tudo no seu navegador."
     },
     {
-      "type": "comp_how_to_steps",
-      "title": "How to Shrink PDF Files",
+      "type": "compress_how_to_steps",
+      "title": "Como reduzir arquivos PDF",
       "steps": [
         {
-          "title": "Upload Large File",
-          "description": "Select the hefty PDF you want to shrink."
+          "title": "Carregar arquivo grande",
+          "description": "Selecione o PDF robusto que você deseja reduzir."
         },
         {
-          "title": "Select Quality",
-          "description": "Choose between high quality or maximum compression."
+          "title": "Selecione Qualidade",
+          "description": "Escolha entre alta qualidade ou compactação máxima."
         },
         {
-          "title": "Download Tiny PDF",
-          "description": "Get your compressed file instantly, ready to share."
+          "title": "Baixar PDF minúsculo",
+          "description": "Obtenha seu arquivo compactado instantaneamente, pronto para compartilhar."
         }
-      ]
+      ],
+      "badgeText": "Guia rápido"
     },
     {
-      "type": "comp_geo_targeting",
-      "title": "Optimized PDF Shrinking in São Paulo, BR-SP",
-      "content": "Working on a slow connection in São Paulo? Compress your files locally so you can email them faster."
+      "type": "compress_geo_targeting",
+      "title": "Processamento local 100% seguro",
+      "content": "Todas as operações são realizadas diretamente no seu dispositivo local. Utilizamos tecnologia avançada WebAssembly para processar seus documentos sem nunca enviá-los para servidores externos, garantindo total privacidade.",
+      "badgeText": "Processamento Local"
     },
     {
-      "type": "comp_privacy_security",
-      "title": "Secure Local Compression",
-      "content": "Compressing sensitive financial reports? Our algorithm works completely offline, keeping your data safe."
+      "type": "compress_privacy_security",
+      "title": "Compressão local segura",
+      "content": "Comprimindo relatórios financeiros confidenciais? Nosso algoritmo funciona totalmente offline, mantendo seus dados seguros.",
+      "badgeText": "Segurança em primeiro lugar"
     },
     {
-      "type": "comp_performance",
-      "title": "Lightning Fast Shrink",
-      "content": "Compressing a 50MB file locally saves you the time of uploading 50MB and downloading 5MB back."
+      "type": "compress_performance",
+      "title": "Encolhimento extremamente rápido",
+      "content": "A compactação local de um arquivo de 50 MB economiza o tempo de upload de 50 MB e download de 5 MB de volta.",
+      "badgeText": "Rápido como um raio"
     }
   ],
   "faqs": [
     {
-      "q": "Will compressing my PDF make it blurry?",
-      "a": "No, our tool uses adaptive compression to maintain readability while reducing size."
+      "q": "A compactação do meu PDF o deixará embaçado?",
+      "a": "Não, nossa ferramenta usa compactação adaptativa para manter a legibilidade e reduzir o tamanho."
     },
     {
-      "q": "Are my files sent to a server to be compressed?",
-      "a": "No, the compression algorithm runs directly in your browser memory."
+      "q": "Meus arquivos são enviados para um servidor para serem compactados?",
+      "a": "Não, o algoritmo de compressão é executado diretamente na memória do seu navegador."
     },
     {
-      "q": "What is the maximum file size I can compress?",
-      "a": "Your browser memory is the only limit! You can compress massive files easily."
+      "q": "Qual é o tamanho máximo de arquivo que posso compactar?",
+      "a": "A memória do seu navegador é o único limite! Você pode compactar arquivos enormes facilmente."
     },
     {
-      "q": "Is this compression tool free?",
-      "a": "Absolutely free with no usage limits or premium paywalls."
+      "q": "Esta ferramenta de compressão é gratuita?",
+      "a": "Totalmente gratuito, sem limites de uso ou acesso pago premium."
     },
     {
-      "q": "Can I compress multiple files at once?",
-      "a": "Batch compression is supported on modern browsers."
+      "q": "Posso compactar vários arquivos de uma vez?",
+      "a": "A compactação em lote é compatível com navegadores modernos."
     }
-  ]
+  ],
+  "badges": [
+    "Compressão de 90%",
+    "Opção sem perdas",
+    "Sem envios"
+  ],
+  "stats": [
+    "Zero Wait",
+    "High Quality",
+    "WebAssembly",
+    "Private"
+  ],
+  "buttonText": "Compress PDF",
+  "faqTitle": "Perguntas Frequentes",
+  "supportCenter": "Centro de Apoio"
 }

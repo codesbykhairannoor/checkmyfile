@@ -1,67 +1,80 @@
 {
-  "title": "PDF to Word Converter — Offline & Editable",
-  "h1": "Convert PDF to Editable Word Documents Locally",
-  "description": "Transform PDFs back into .docx files you can edit, right in your browser. No upload needed. Great for users in Riyadh.",
+  "title": "محول PDF إلى Word - غير متصل وقابل للتحرير",
+  "h1": "تحويل PDF إلى مستندات Word قابلة للتحرير محليًا",
+  "description": "قم بتحويل ملفات PDF مرة أخرى إلى ملفات .docx التي يمكنك تحريرها مباشرة في متصفحك. لا حاجة للتحميل. رائع للمستخدمين في الرياض.",
+  "buttonText": "تحويل إلى كلمة",
+  "badges": [
+    "وثائق قابلة للتحرير",
+    "استعادة النص",
+    "عملية دون اتصال"
+  ],
+  "stats": [
+    "100%",
+    "محلي",
+    "0 ثانية",
+    "وقت الانتظار"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF Back Offline?",
-      "content": "When you need to edit a PDF, converting it offline keeps your original document confidential."
+      "title": "لماذا الاستخدام دون اتصال؟",
+      "content": "عندما تحتاج إلى تحرير ملف PDF، فإن تحويله دون الاتصال بالإنترنت يحافظ على سرية المستند الأصلي."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Word",
+      "title": "كيفية الاستخدام",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF file you need to convert."
+          "title": "تحميل قوات الدفاع الشعبي",
+          "description": "حدد ملف PDF الذي تريد تحويله."
         },
         {
-          "title": "Detect Text Layers",
-          "description": "Our engine reads text and structure from the PDF."
+          "title": "كشف طبقات النص",
+          "description": "يقرأ محركنا النص والبنية من ملف PDF."
         },
         {
-          "title": "Download .docx",
-          "description": "Get your editable Word document ready to modify."
+          "title": "تحميل.دوكإكس",
+          "description": "احصل على مستند Word القابل للتحرير جاهزًا للتعديل."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "PDF to Word for Riyadh Offices",
-      "content": "Office workers in Riyadh use our tool to recover editable text from PDFs without cloud dependency."
+      "title": "PDF إلى Word لمكاتب الرياض",
+      "content": "يستخدم موظفو المكاتب في الرياض أداتنا لاستعادة النص القابل للتحرير من ملفات PDF دون الاعتماد على السحابة."
     },
     {
       "type": "split_privacy_security",
-      "title": "Legal Documents Stay Confidential",
-      "content": "Contracts, NDAs, and reports converted back to Word entirely in your browser memory."
+      "title": "تظل المستندات القانونية سرية",
+      "content": "يتم تحويل العقود واتفاقيات عدم الإفصاح والتقارير مرة أخرى إلى Word بالكامل في ذاكرة المتصفح الخاص بك."
     },
     {
       "type": "split_performance",
-      "title": "Recover Editable Text in Seconds",
-      "content": "Extract text from a 50-page PDF in under 3 seconds without uploading a single byte."
+      "title": "استعادة النص القابل للتحرير في ثواني",
+      "content": "استخرج النص من ملف PDF مكون من 50 صفحة في أقل من 3 ثوانٍ دون تحميل بايت واحد."
     }
   ],
   "faqs": [
     {
-      "q": "Is all text preserved?",
-      "a": "Yes, text from all layers is extracted and formatted."
+      "q": "هل كل النص محفوظ؟",
+      "a": "نعم، يتم استخراج النص من جميع الطبقات وتنسيقه."
     },
     {
-      "q": "Does it work on scanned PDFs?",
-      "a": "For scanned PDFs, use our OCR tool first."
+      "q": "هل يعمل على ملفات PDF الممسوحة ضوئيا؟",
+      "a": "بالنسبة لملفات PDF الممسوحة ضوئيًا، استخدم أداة التعرف الضوئي على الحروف (OCR) الخاصة بنا أولاً."
     },
     {
-      "q": "Are images included in the .docx?",
-      "a": "Yes, embedded images are included in the output."
+      "q": "هل الصور مضمنة في ملف .docx؟",
+      "a": "نعم، يتم تضمين الصور المضمنة في الإخراج."
     },
     {
-      "q": "Can I edit the .docx after?",
-      "a": "Absolutely, the output is a fully editable Word document."
+      "q": "هل يمكنني تعديل ملف .docx بعد ذلك؟",
+      "a": "بالتأكيد، الإخراج هو مستند Word قابل للتحرير بالكامل."
     },
     {
-      "q": "Is this free?",
-      "a": "نعم، مجاناً تماماً."
+      "q": "هل هذا مجاني؟",
+      "a": "نعم، مجاني بالكامل."
     }
-  ]
+  ],
+  "faqTitle": "أسئلة مكررة"
 }

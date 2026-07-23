@@ -1,67 +1,85 @@
 {
-  "title": "Scan to PDF — Convert Camera Shots Offline",
-  "h1": "Convert Photos and Scans to PDF Locally",
-  "description": "Turn photos of documents taken with your camera into clean PDFs entirely in your browser. No upload. Best for users in Jerusalem.",
+  "title": "סריקה ל-PDF — המר צילומי מצלמה במצב לא מקוון",
+  "h1": "המר תמונות וסריקות ל-PDF באופן מקומי",
+  "description": "הפוך תמונות של מסמכים שצולמו עם המצלמה שלך לקובצי PDF נקיים לגמרי בדפדפן שלך. אין העלאה. עיבוד מקומי מאובטח של 100%.",
+  "buttonText": "Scan to PDF",
+  "badges": [
+    "השתמש במצלמת אינטרנט",
+    "סורק נייד",
+    "חיתוך אוטומטי"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Use Scan-to-PDF Offline?",
-      "content": "Photos of documents contain sensitive information. Process them locally without any cloud access."
+      "type": "scan_hero_features",
+      "title": "מדוע להשתמש בסריקה ל-PDF במצב לא מקוון?",
+      "content": "תמונות של מסמכים מכילות מידע רגיש. עבד אותם באופן מקומי ללא כל גישה לענן."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Scans to PDF",
+      "type": "scan_how_to_steps",
+      "title": "כיצד להמיר סריקות ל-PDF",
       "steps": [
         {
-          "title": "Import Photos",
-          "description": "Select photos taken with your phone or camera."
+          "title": "ייבוא ​​תמונות",
+          "description": "בחר תמונות שצולמו עם הטלפון או המצלמה שלך."
         },
         {
-          "title": "Enhance Scan",
-          "description": "Auto-crop, deskew, and enhance contrast."
+          "title": "שפר סריקה",
+          "description": "חיתוך אוטומטי, הטיה והגברת הניגודיות."
         },
         {
-          "title": "Export PDF",
-          "description": "Download a clean, professional-looking scanned PDF."
+          "title": "ייצוא PDF",
+          "description": "הורד קובץ PDF סרוק נקי ומקצועי."
         }
-      ]
+      ],
+      "badgeText": "מדריך מהיר"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Scan to PDF for Jerusalem Field Workers",
-      "content": "Field workers and freelancers in Jerusalem digitize paper documents on-the-go without uploading to cloud services."
+      "type": "scan_geo_targeting",
+      "title": "100% עיבוד מקומי מאובטח",
+      "content": "כל הפעולות מבוצעות ישירות במכשיר המקומי שלך. אנו משתמשים בטכנולוגיית WebAssembly מתקדמת כדי לעבד את המסמכים שלך מבלי להעלות אותם לשרתים חיצוניים, מה שמבטיח פרטיות מלאה.",
+      "badgeText": "עיבוד מקומי"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Documents Stay on Device",
-      "content": "Invoices, contracts, and ID scans processed entirely in browser memory without any server access."
+      "type": "scan_privacy_security",
+      "title": "מסמכים סרוקים נשארים במכשיר",
+      "content": "חשבוניות, חוזים וסריקות מזהות מעובדות במלואן בזיכרון הדפדפן ללא כל גישה לשרת.",
+      "badgeText": "אבטחה תחילה"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Scans in Real Time",
-      "content": "Photo enhancement and PDF generation happens in milliseconds, even for high-resolution camera shots."
+      "type": "scan_performance",
+      "title": "המרת סריקות בזמן אמת",
+      "content": "שיפור התמונות ויצירת PDF מתרחשים באלפיות שניות, אפילו עבור צילומי מצלמה ברזולוציה גבוהה.",
+      "badgeText": "מהיר ברק"
     }
   ],
   "faqs": [
     {
-      "q": "What photo formats are supported?",
-      "a": "JPG, PNG, WebP, and HEIC from modern cameras."
+      "q": "באילו פורמטים תצלומים נתמכים?",
+      "a": "JPG, PNG, WebP ו-HEIC ממצלמות מודרניות."
     },
     {
-      "q": "Does it fix tilted scans?",
-      "a": "Yes, auto-deskew corrects slight angles automatically."
+      "q": "האם זה מתקן סריקות מוטות?",
+      "a": "כן, הסרה אוטומטית מתקנת זוויות קלות באופן אוטומטי."
     },
     {
-      "q": "Can I combine multiple scans?",
-      "a": "Yes, add multiple photos to create a multi-page PDF."
+      "q": "האם אני יכול לשלב מספר סריקות?",
+      "a": "כן, הוסף מספר תמונות כדי ליצור PDF מרובה עמודים."
     },
     {
-      "q": "Does it enhance contrast?",
-      "a": "Yes, document enhancement mode sharpens text for clarity."
+      "q": "האם זה משפר את הניגודיות?",
+      "a": "כן, מצב שיפור המסמכים מחדד את הטקסט לבהירות."
     },
     {
-      "q": "Is this free?",
-      "a": "כן, חינם לחלוטין."
+      "q": "האם זה בחינם?",
+      "a": "כן, תמיד בחינם."
     }
-  ]
+  ],
+  "faqTitle": "שאלות נפוצות",
+  "supportCenter": "מרכז תמיכה"
 }

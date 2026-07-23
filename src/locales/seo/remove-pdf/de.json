@@ -1,0 +1,85 @@
+{
+  "title": "Seiten aus PDF entfernen – PDF-Seiten offline löschen",
+  "h1": "Seiten sofort aus PDF entfernen",
+  "description": "Löschen Sie unerwünschte Seiten sicher aus Ihrer PDF-Datei in Ihrem Browser. Schnell und absolut sicher.",
+  "buttonText": "Remove Pages",
+  "badges": [
+    "Select & Delete",
+    "Visual Editor",
+    "Keine Latenz"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "remove_hero_features",
+      "title": "Warum Seiten lokal entfernen?",
+      "content": "Das Löschen vertraulicher oder unnötiger Seiten aus Ihrem Dokument sollte auf Ihrem Gerät und nicht auf einem Server erfolgen. We ensure 100% privacy."
+    },
+    {
+      "type": "remove_how_to_steps",
+      "title": "So entfernen Sie PDF-Seiten",
+      "steps": [
+        {
+          "title": "PDF öffnen",
+          "description": "Laden Sie das PDF, das Sie bereinigen möchten."
+        },
+        {
+          "title": "Wählen Sie die zu löschenden Seiten aus",
+          "description": "Bewegen Sie den Mauszeiger über Seiten und klicken Sie auf das Papierkorbsymbol, um sie zum Löschen zu markieren."
+        },
+        {
+          "title": "Export Clean PDF",
+          "description": "Laden Sie Ihr neues PDF ohne die gelöschten Seiten herunter."
+        }
+      ],
+      "badgeText": "Kurzanleitung"
+    },
+    {
+      "type": "remove_geo_targeting",
+      "title": "100 % sichere lokale Verarbeitung",
+      "content": "Alle Vorgänge werden direkt auf Ihrem lokalen Gerät ausgeführt. Wir verwenden fortschrittliche WebAssembly-Technologie, um Ihre Dokumente zu verarbeiten, ohne sie jemals auf externe Server hochzuladen, und gewährleisten so absolute Privatsphäre.",
+      "badgeText": "Lokale Verarbeitung"
+    },
+    {
+      "type": "remove_privacy_security",
+      "title": "Privatsphäre beim vollständigen Löschen",
+      "content": "Wenn Sie eine Seite entfernen, wird sie vor dem Speichern dauerhaft aus dem Dokument in Ihrem Browserspeicher gelöscht.",
+      "badgeText": "Sicherheit geht vor"
+    },
+    {
+      "type": "remove_performance",
+      "title": "Instant Page Removal",
+      "content": "Das Extrahieren und Löschen von Seiten selbst aus einem 1000-seitigen Dokument dauert mit unserer optimierten WASM-Engine Millisekunden.",
+      "badgeText": "Blitzschnell"
+    }
+  ],
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "q": "Können die gelöschten Seiten wiederhergestellt werden?",
+      "a": "Sobald Sie die neue PDF-Datei herunterladen, werden die gelöschten Seiten dauerhaft aus dieser Datei entfernt. Ihre Originaldatei bleibt unberührt."
+    },
+    {
+      "q": "Muss ich mein PDF hochladen?",
+      "a": "Nein. Der gesamte Seitenentfernungsprozess findet lokal in Ihrem Webbrowser statt."
+    },
+    {
+      "q": "Gibt es eine Begrenzung, wie viele Seiten ich löschen kann?",
+      "a": "Nein, Sie können so viele Seiten löschen, wie Sie möchten, völlig kostenlos."
+    },
+    {
+      "q": "Wird sich das Layout der verbleibenden Seiten ändern?",
+      "a": "Nein, die übrigen Seiten behalten ihre exakte ursprüngliche Formatierung und ihr ursprüngliches Layout."
+    },
+    {
+      "q": "Kann ich mehrere Seiten gleichzeitig auswählen?",
+      "a": "Ja, Sie können auf mehrere Seiten klicken, um sie alle gleichzeitig zum Löschen zu markieren."
+    }
+  ],
+  "supportCenter": "Support-Center"
+}

@@ -17,3 +17,17 @@
 - **Mobile**: NEVER let `100vh` dictate the height of a vertical column layout on mobile, as it will squish elements (Toolbar, Canvas, Sidebar) together and make the page unscrollable.
 - **Implementation**: Override the height strictly in the mobile CSS media query using `height: auto !important` and `max-height: none !important`. 
 - **CRITICAL**: Never hardcode `height: 50vh !important` on a mobile wrapper containing multiple children, as it will prematurely cut off content. Let mobile scroll naturally with `height: auto`.
+
+## Strict Typography Rules (The Premium Math Standard)
+- **Section Titles (H2)**: Must strictly use `clamp(2.2rem, 5vw, 3.5rem)` across all sections (How-To, Geo, Privacy, Performance, FAQ) to ensure congruence.
+- **Section Descriptions (P)**: Must strictly use `clamp(1.05rem, 2vw, 1.25rem)` with a comfortable line-height (e.g., 1.7 or 1.8).
+- **Sub-titles (H3)**: Must strictly use `clamp(1.25rem, 3vw, 1.5rem)`.
+- **Hero/Main Titles (H1)**: Must strictly use `clamp(1.8rem, 4vw, 3.5rem)` (or up to 4.5rem if space allows).
+
+## Full-Bleed Background Constraints
+- When building sections that require edge-to-edge full-bleed backgrounds (like alternating white/gray sections), **NEVER** wrap the entire page `<main>` in a `maxWidth` constraint if `<main>` also has `overflow: auto`. `overflow: auto` creates a scroll context that instantly clips negative margin CSS breakout tricks.
+- **Instead**, make the scrollable `<main>` 100% wide (no padding, no max-width) and apply the `maxWidth: 1440px` and horizontal `padding` (e.g., `0 24px`) explicitly to its inner children (Header, Editor Workspace, Dropzone). This allows full-width sections to span `100vw` naturally without fighting their parent.
+
+## No Glow Effects
+- The user **HATES** the "glow" concept (e.g., blurred radiant or ambient background shadows).
+- **NEVER** use `filter: blur(...)` or `radial-gradient` glow effects for decorative ambient lighting behind elements. Keep designs clean, flat, and solid.

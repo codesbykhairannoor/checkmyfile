@@ -1,67 +1,85 @@
 {
-  "title": "Add Watermark to PDF — Offline Watermarking",
-  "h1": "Stamp PDFs with Text or Image Watermarks Locally",
-  "description": "Add \"CONFIDENTIAL\", logos, or custom text watermarks to PDFs entirely in your browser. No upload. Best for users in Rome.",
+  "title": "Aggiungi filigrana al PDF: filigrana offline",
+  "h1": "Timbra i PDF con filigrane di testo o immagine localmente",
+  "description": "Aggiungi \"CONFIDENZIALE\", loghi o filigrane di testo personalizzate ai PDF interamente nel tuo browser. Nessun caricamento. Elaborazione locale sicura al 100%.",
+  "buttonText": "Add Watermark",
+  "badges": [
+    "Testo personalizzato",
+    "Opacità regolabile",
+    "Protezione del marchio"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Watermark PDFs Offline?",
-      "content": "Adding watermarks means your document is sensitive. Never upload draft contracts or confidential reports to a cloud watermarker."
+      "type": "watermark_hero_features",
+      "title": "Perché filigranare i PDF offline?",
+      "content": "L'aggiunta di filigrane significa che il tuo documento è sensibile. Non caricare mai bozze di contratto o rapporti riservati su un watermarker cloud."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Watermark a PDF",
+      "type": "watermark_how_to_steps",
+      "title": "Come filigranare un PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to watermark."
+          "title": "Apri PDF",
+          "description": "Seleziona il PDF a cui applicare la filigrana."
         },
         {
-          "title": "Design Watermark",
-          "description": "Type text or upload a logo image."
+          "title": "Filigrana di progettazione",
+          "description": "Digita il testo o carica un'immagine del logo."
         },
         {
-          "title": "Apply & Download",
-          "description": "Get your watermarked PDF in one click."
+          "title": "Applica e scarica",
+          "description": "Ottieni il tuo PDF con filigrana in un clic."
         }
-      ]
+      ],
+      "badgeText": "Guida rapida"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Document Watermarking in Rome",
-      "content": "Legal and creative professionals in Rome stamp documents with watermarks without cloud uploads."
+      "type": "watermark_geo_targeting",
+      "title": "Elaborazione locale sicura al 100%",
+      "content": "Tutte le operazioni vengono eseguite direttamente sul tuo dispositivo locale. Utilizziamo la tecnologia avanzata WebAssembly per elaborare i tuoi documenti senza mai caricarli su server esterni, garantendo la completa privacy.",
+      "badgeText": "Elaborazione locale"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Confidential Drafts Stay Private",
-      "content": "Draft contracts and unreleased designs watermarked locally without any server contact."
+      "type": "watermark_privacy_security",
+      "title": "Le bozze riservate restano private",
+      "content": "Bozze di contratti e progetti inediti filigranati localmente senza alcun contatto con il server.",
+      "badgeText": "La sicurezza prima di tutto"
     },
     {
-      "type": "transform_performance",
-      "title": "Stamp Thousands of Pages Instantly",
-      "content": "Apply watermarks to a 1000-page document in under 3 seconds. All in your browser."
+      "type": "watermark_performance",
+      "title": "Timbro istantaneamente migliaia di pagine",
+      "content": "Applica filigrane a un documento di 1000 pagine in meno di 3 secondi. Tutto nel tuo browser.",
+      "badgeText": "Velocissimo"
     }
   ],
   "faqs": [
     {
-      "q": "Can I use a logo as a watermark?",
-      "a": "Yes, upload a PNG logo and set transparency."
+      "q": "Posso utilizzare un logo come filigrana?",
+      "a": "Sì, carica un logo PNG e imposta la trasparenza."
     },
     {
-      "q": "Can I adjust watermark opacity?",
-      "a": "Yes, from 10% to 100% opacity."
+      "q": "Posso regolare l'opacità della filigrana?",
+      "a": "Sì, dal 10% al 100% di opacità."
     },
     {
-      "q": "Can I apply it to specific pages only?",
-      "a": "Yes, choose page ranges."
+      "q": "Posso applicarlo solo a pagine specifiche?",
+      "a": "Sì, scegli gli intervalli di pagine."
     },
     {
-      "q": "Is diagonal placement available?",
-      "a": "Yes, rotate watermarks to any angle."
+      "q": "È disponibile il posizionamento diagonale?",
+      "a": "Sì, ruota le filigrane in qualsiasi angolazione."
     },
     {
-      "q": "Is this free?",
-      "a": "Sì, completamente gratuito."
+      "q": "E' gratis?",
+      "a": "Sì, sempre gratuito."
     }
-  ]
+  ],
+  "faqTitle": "Domande frequenti",
+  "supportCenter": "Centro di supporto"
 }

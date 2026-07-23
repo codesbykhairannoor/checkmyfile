@@ -1,67 +1,85 @@
 {
-  "title": "Crop PDF Margins — Trim Pages Offline",
-  "h1": "Crop and Trim PDF Page Margins Instantly",
-  "description": "Remove unwanted whitespace or crop PDF pages to custom dimensions, all locally. No upload. Ideal for users in Amsterdam.",
+  "title": "PDF-marges bijsnijden — Pagina's offline bijsnijden",
+  "h1": "PDF-paginamarges direct bijsnijden en bijsnijden",
+  "description": "Verwijder ongewenste witruimte of snijd PDF-pagina's bij tot aangepaste afmetingen, allemaal lokaal. Snel en volledig veilig.",
+  "buttonText": "Crop PDF",
+  "badges": [
+    "Visuele marge-editor",
+    "Uniforme uitsnede",
+    "Geen latentie"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Crop PDFs Locally?",
-      "content": "Scanned documents often have large margins. Crop them locally without exposing internal document structure to the cloud."
+      "type": "crop_hero_features",
+      "title": "Waarom PDF's lokaal bijsnijden?",
+      "content": "Gescande documenten hebben vaak grote marges. Snijd ze lokaal bij zonder de interne documentstructuur aan de cloud bloot te stellen."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Crop PDF Pages",
+      "type": "crop_how_to_steps",
+      "title": "PDF-pagina's bijsnijden",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to crop."
+          "title": "PDF openen",
+          "description": "Laad de PDF die u wilt bijsnijden."
         },
         {
-          "title": "Set Margins",
-          "description": "Drag guides or enter exact margin values."
+          "title": "Marges instellen",
+          "description": "Sleep hulplijnen of voer exacte margewaarden in."
         },
         {
-          "title": "Export Cropped PDF",
-          "description": "Download the trimmed PDF instantly."
+          "title": "Bijgesneden PDF exporteren",
+          "description": "Download de bijgesneden PDF direct."
         }
-      ]
+      ],
+      "badgeText": "Beknopte handleiding"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Precise Cropping for Amsterdam Users",
-      "content": "Architects and designers in Amsterdam use our crop tool to clean up scanned blueprints without cloud uploads."
+      "type": "crop_geo_targeting",
+      "title": "100% veilige lokale verwerking",
+      "content": "Alle bewerkingen worden rechtstreeks op uw lokale apparaat uitgevoerd. We gebruiken geavanceerde WebAssembly-technologie om uw documenten te verwerken zonder ze ooit naar externe servers te uploaden, waardoor volledige privacy wordt gegarandeerd.",
+      "badgeText": "Lokale verwerking"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Technical Documents Stay Local",
-      "content": "Architectural plans and legal PDFs cropped locally without any server round-trip."
+      "type": "crop_privacy_security",
+      "title": "Technische documenten Blijf lokaal",
+      "content": "Architectuurplannen en juridische PDF's worden lokaal bijgesneden zonder enige serverrondreis.",
+      "badgeText": "Beveiliging eerst"
     },
     {
-      "type": "split_performance",
-      "title": "Crop Any Size PDF Instantly",
-      "content": "Crop margins from a 200-page document in under 2 seconds. All in your browser."
+      "type": "crop_performance",
+      "title": "Snijd elk formaat PDF direct bij",
+      "content": "Snijd marges bij uit een document van 200 pagina's in minder dan 2 seconden. Alles in uw browser.",
+      "badgeText": "Bliksemsnel"
     }
   ],
   "faqs": [
     {
-      "q": "Can I crop all pages uniformly?",
-      "a": "Yes, apply the same crop to every page at once."
+      "q": "Kan ik alle pagina's uniform bijsnijden?",
+      "a": "Ja, pas dezelfde uitsnede op elke pagina tegelijk toe."
     },
     {
-      "q": "Can I crop individual pages?",
-      "a": "Yes, you can set per-page crop values."
+      "q": "Kan ik afzonderlijke pagina's bijsnijden?",
+      "a": "Ja, u kunt bijsnijdwaarden per pagina instellen."
     },
     {
-      "q": "What are the minimum margin values?",
-      "a": "You can crop all the way to 0 margin on any side."
+      "q": "Wat zijn de minimale margewaarden?",
+      "a": "U kunt aan elke kant helemaal bijsnijden tot een marge van 0."
     },
     {
-      "q": "Will content be cut off?",
-      "a": "Only whitespace is removed by default; you control the guides."
+      "q": "Wordt de inhoud verwijderd?",
+      "a": "Alleen witruimte wordt standaard verwijderd; jij bestuurt de gidsen."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, volledig gratis."
+      "q": "Is dit gratis?",
+      "a": "Ja, helemaal gratis."
     }
-  ]
+  ],
+  "faqTitle": "Veelgestelde vragen",
+  "supportCenter": "Ondersteuningscentrum"
 }

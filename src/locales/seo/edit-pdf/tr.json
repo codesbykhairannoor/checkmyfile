@@ -1,0 +1,85 @@
+{
+  "title": "PDF'yi Düzenle - Ücretsiz Çevrimdışı PDF Düzenleyici",
+  "h1": "PDF Belgelerini Doğrudan Tarayıcınızda Düzenleyin",
+  "description": "PDF dosyalarınıza yerel olarak metin, imza ve açıklamalar ekleyin. Yükleme yok, maksimum gizlilik. %100 güvenli yerel işleme.",
+  "sections": [
+    {
+      "type": "edit_hero_features",
+      "title": "PDF'leri Neden Yerel Olarak Düzenlemelisiniz?",
+      "content": "Hassas sözleşmeleri ve formları bir bulut düzenleyiciye yüklemek büyük bir gizlilik riskidir. WebAssembly düzenleyicimiz doğrudan cihazınızda çalışarak belgelerinizin bilgisayarınızdan asla ayrılmamasını sağlar."
+    },
+    {
+      "type": "edit_how_to_steps",
+      "title": "PDF Nasıl Düzenlenir",
+      "steps": [
+        {
+          "title": "Belgeyi Aç",
+          "description": "Açıklama eklemek veya imzalamak istediğiniz PDF dosyasını seçin."
+        },
+        {
+          "title": "Metin ve Öğe Ekle",
+          "description": "Metin eklemek, çizim yapmak veya görsel yerleştirmek için sezgisel araçlarımızı kullanın."
+        },
+        {
+          "title": "Değişiklikleri Kaydet",
+          "description": "Değiştirilen PDF'yi indirmeyi beklemeden anında dışa aktarın."
+        }
+      ],
+      "badgeText": "Hızlı Kılavuz"
+    },
+    {
+      "type": "edit_geo_targeting",
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
+    },
+    {
+      "type": "edit_privacy_security",
+      "title": "Sıfır Veri İletimi",
+      "content": "Dosyalarınızı sunucularına yükleyen geleneksel PDF düzenleyicilerden farklı olarak platformumuz, tarayıcınızın belleğindeki her şeyi işler.",
+      "badgeText": "Önce Güvenlik"
+    },
+    {
+      "type": "edit_performance",
+      "title": "Anında Çevrimdışı Oluşturma",
+      "content": "Editörümüz büyük PDF dosyalarını milisaniyeler içinde yükler. Herhangi bir gecikme veya ağ gecikmesi olmadan yüzlerce ek açıklama ekleyebilirsiniz.",
+      "badgeText": "Yıldırım Hızında"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "PDF'deki mevcut metni düzenleyebilir miyim?",
+      "a": "Şu anda mevcut belgenin üzerine yeni metin, şekil ve görseller ekleyebilirsiniz."
+    },
+    {
+      "q": "Dosyalarım herhangi bir yere yüklendi mi?",
+      "a": "Hayır, tüm düzenleme WebAssembly kullanılarak tarayıcınızda yerel olarak gerçekleşir."
+    },
+    {
+      "q": "Belgeleri imzalayabilir miyim?",
+      "a": "Evet, imzanızı çizebilir veya resmini yükleyebilirsiniz."
+    },
+    {
+      "q": "Editörün kullanımı ücretsiz mi?",
+      "a": "Evet, hiçbir premium ödeme duvarı veya gizli ücret olmadan %100 ücretsizdir."
+    },
+    {
+      "q": "Mobil cihazlarda çalışıyor mu?",
+      "a": "Evet, editör tamamen duyarlıdır ve çizim için dokunmatik girişi destekler."
+    }
+  ],
+  "badges": [
+    "Filigran Yok",
+    "%100 Ücretsiz",
+    "Çevrimdışı Düzenleyici"
+  ],
+  "stats": [
+    "100% Private",
+    "0 Server Uploads",
+    "Client-Side Only",
+    "No Accounts"
+  ],
+  "buttonText": "Start Editing",
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi"
+}

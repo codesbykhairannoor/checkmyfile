@@ -1,67 +1,85 @@
 {
-  "title": "Add Watermark to PDF — Offline Watermarking",
-  "h1": "Stamp PDFs with Text or Image Watermarks Locally",
-  "description": "Add \"CONFIDENTIAL\", logos, or custom text watermarks to PDFs entirely in your browser. No upload. Best for users in Jakarta.",
+  "title": "Tambahkan Tanda Air ke PDF — Tanda Air Offline",
+  "h1": "Stempel PDF dengan Tanda Air Teks atau Gambar Secara Lokal",
+  "description": "Tambahkan \"RAHASIA\", logo, atau tanda air teks khusus ke PDF sepenuhnya di browser Anda. Tidak ada unggahan. Pemrosesan lokal 100% aman.",
+  "buttonText": "Add Watermark",
+  "badges": [
+    "Teks Khusus",
+    "Opasitas yang Dapat Disesuaikan",
+    "Perlindungan Merek"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Watermark PDFs Offline?",
-      "content": "Adding watermarks means your document is sensitive. Never upload draft contracts or confidential reports to a cloud watermarker."
+      "type": "watermark_hero_features",
+      "title": "Mengapa PDF diberi Watermark Offline?",
+      "content": "Menambahkan tanda air berarti dokumen Anda sensitif. Jangan pernah mengunggah draf kontrak atau laporan rahasia ke penanda air cloud."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Watermark a PDF",
+      "type": "watermark_how_to_steps",
+      "title": "Cara Memberi Tanda Air pada PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to watermark."
+          "title": "Buka PDF",
+          "description": "Pilih PDF yang akan diberi tanda air."
         },
         {
-          "title": "Design Watermark",
-          "description": "Type text or upload a logo image."
+          "title": "Tanda Air Desain",
+          "description": "Ketik teks atau unggah gambar logo."
         },
         {
-          "title": "Apply & Download",
-          "description": "Get your watermarked PDF in one click."
+          "title": "Terapkan & Unduh",
+          "description": "Dapatkan PDF Anda yang diberi watermark dalam satu klik."
         }
-      ]
+      ],
+      "badgeText": "Panduan Singkat"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Document Watermarking in Jakarta",
-      "content": "Legal and creative professionals in Jakarta stamp documents with watermarks without cloud uploads."
+      "type": "watermark_geo_targeting",
+      "title": "Pemrosesan Lokal 100% Aman",
+      "content": "Semua operasi dilakukan langsung di perangkat lokal Anda. Kami menggunakan teknologi WebAssembly yang canggih untuk memproses dokumen Anda tanpa harus mengunggahnya ke server eksternal, sehingga memastikan privasi sepenuhnya.",
+      "badgeText": "Pemrosesan Lokal"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Confidential Drafts Stay Private",
-      "content": "Draft contracts and unreleased designs watermarked locally without any server contact."
+      "type": "watermark_privacy_security",
+      "title": "Draf Rahasia Tetap Pribadi",
+      "content": "Draf kontrak dan desain yang belum dirilis diberi watermark secara lokal tanpa kontak server apa pun.",
+      "badgeText": "Keamanan Pertama"
     },
     {
-      "type": "transform_performance",
-      "title": "Stamp Thousands of Pages Instantly",
-      "content": "Apply watermarks to a 1000-page document in under 3 seconds. All in your browser."
+      "type": "watermark_performance",
+      "title": "Stempel Ribuan Halaman Seketika",
+      "content": "Terapkan tanda air ke dokumen setebal 1000 halaman dalam waktu kurang dari 3 detik. Semua ada di browser Anda.",
+      "badgeText": "Secepat Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "Can I use a logo as a watermark?",
-      "a": "Yes, upload a PNG logo and set transparency."
+      "q": "Bisakah saya menggunakan logo sebagai tanda air?",
+      "a": "Ya, unggah logo PNG dan atur transparansi."
     },
     {
-      "q": "Can I adjust watermark opacity?",
-      "a": "Yes, from 10% to 100% opacity."
+      "q": "Bisakah saya menyesuaikan opasitas tanda air?",
+      "a": "Ya, dari opacity 10% hingga 100%."
     },
     {
-      "q": "Can I apply it to specific pages only?",
-      "a": "Yes, choose page ranges."
+      "q": "Bisakah saya menerapkannya pada halaman tertentu saja?",
+      "a": "Ya, pilih rentang halaman."
     },
     {
-      "q": "Is diagonal placement available?",
-      "a": "Yes, rotate watermarks to any angle."
+      "q": "Apakah penempatan diagonal tersedia?",
+      "a": "Ya, putar tanda air ke sudut mana pun."
     },
     {
-      "q": "Is this free?",
-      "a": "Ya, sepenuhnya gratis."
+      "q": "Apakah ini gratis?",
+      "a": "Ya, selalu gratis."
     }
-  ]
+  ],
+  "faqTitle": "Pertanyaan yang Sering Diajukan",
+  "supportCenter": "Pusat Dukungan"
 }

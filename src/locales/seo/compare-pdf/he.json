@@ -1,67 +1,85 @@
 {
-  "title": "Compare PDF Files — Spot Differences Locally",
-  "h1": "Compare Two PDF Documents Side by Side",
-  "description": "Upload two PDFs and highlight differences between them entirely in your browser. No upload to servers. Ideal for users in Jerusalem.",
+  "title": "השווה קבצי PDF — הבדלים מקומיים",
+  "h1": "השווה שני מסמכי PDF זה לצד זה",
+  "description": "העלה שני קובצי PDF והדגש את ההבדלים ביניהם לחלוטין בדפדפן שלך. אין העלאה לשרתים. עיבוד מקומי מאובטח של 100%.",
+  "buttonText": "Compare PDFs",
+  "badges": [
+    "מצא הבדלים",
+    "הדגש שינויים",
+    "הבדל חזותי"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Compare PDFs Locally?",
-      "content": "Comparing contract versions or document revisions often involves highly sensitive content. Do it entirely offline."
+      "type": "compare_hero_features",
+      "title": "למה להשוות קובצי PDF באופן מקומי?",
+      "content": "השוואת גרסאות חוזה או תיקוני מסמכים כרוכה לעתים קרובות בתוכן רגיש ביותר. עשה את זה לגמרי במצב לא מקוון."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Compare Two PDFs",
+      "type": "compare_how_to_steps",
+      "title": "כיצד להשוות שני קובצי PDF",
       "steps": [
         {
-          "title": "Load Both PDFs",
-          "description": "Select the two PDF versions to compare."
+          "title": "טען את שני קובצי ה-PDF",
+          "description": "בחר את שתי גרסאות ה-PDF להשוואה."
         },
         {
-          "title": "View Differences",
-          "description": "Highlighted changes appear side by side."
+          "title": "הצג הבדלים",
+          "description": "שינויים מודגשים מופיעים זה לצד זה."
         },
         {
-          "title": "Export Diff Report",
-          "description": "Download a comparison report with all changes marked."
+          "title": "ייצוא דוח הבדל",
+          "description": "הורד דוח השוואה עם כל השינויים מסומנים."
         }
-      ]
+      ],
+      "badgeText": "מדריך מהיר"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Comparison for Jerusalem Law Firms",
-      "content": "Legal professionals in Jerusalem compare contract revisions without uploading privileged documents to cloud services."
+      "type": "compare_geo_targeting",
+      "title": "100% עיבוד מקומי מאובטח",
+      "content": "כל הפעולות מבוצעות ישירות במכשיר המקומי שלך. אנו משתמשים בטכנולוגיית WebAssembly מתקדמת כדי לעבד את המסמכים שלך מבלי להעלות אותם לשרתים חיצוניים, מה שמבטיח פרטיות מלאה.",
+      "badgeText": "עיבוד מקומי"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Privileged Documents Stay Private",
-      "content": "Compare NDAs, contracts, and regulatory filings without any server interaction."
+      "type": "compare_privacy_security",
+      "title": "מסמכים מועדפים נשארים פרטיים",
+      "content": "השווה מסמכי NDA, חוזים והגשות רגולטוריות ללא כל אינטראקציה עם שרת.",
+      "badgeText": "אבטחה תחילה"
     },
     {
-      "type": "organizer_performance",
-      "title": "Instant Side-by-Side Comparison",
-      "content": "Compare 100-page documents in seconds with highlighted differences rendered in-browser."
+      "type": "compare_performance",
+      "title": "השוואה מיידית זה לצד זה",
+      "content": "השווה מסמכים של 100 עמודים בשניות עם הבדלים מודגשים המוצגים בדפדפן.",
+      "badgeText": "מהיר ברק"
     }
   ],
   "faqs": [
     {
-      "q": "What types of differences are detected?",
-      "a": "Text additions, deletions, and formatting changes are highlighted."
+      "q": "אילו סוגי הבדלים מתגלים?",
+      "a": "תוספות טקסט, מחיקות ושינויי עיצוב מודגשים."
     },
     {
-      "q": "Can I compare scanned PDFs?",
-      "a": "For scanned PDFs, use OCR first to extract text before comparing."
+      "q": "האם אוכל להשוות קובצי PDF סרוקים?",
+      "a": "עבור קובצי PDF סרוקים, השתמש תחילה ב-OCR כדי לחלץ טקסט לפני ההשוואה."
     },
     {
-      "q": "Can I export the comparison?",
-      "a": "Yes, download a marked-up PDF showing all differences."
+      "q": "האם אני יכול לייצא את ההשוואה?",
+      "a": "כן, הורד קובץ PDF מסומן המציג את כל ההבדלים."
     },
     {
-      "q": "How many versions can I compare?",
-      "a": "Two documents at a time in the side-by-side view."
+      "q": "כמה גרסאות אני יכול להשוות?",
+      "a": "שני מסמכים בכל פעם בתצוגה זה לצד זה."
     },
     {
-      "q": "Is this free?",
-      "a": "כן, חינם לחלוטין."
+      "q": "האם זה בחינם?",
+      "a": "כן, לגמרי בחינם."
     }
-  ]
+  ],
+  "faqTitle": "שאלות נפוצות",
+  "supportCenter": "מרכז תמיכה"
 }

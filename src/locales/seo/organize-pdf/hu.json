@@ -1,67 +1,85 @@
 {
-  "title": "Organize PDF Pages — Reorder & Delete Offline",
-  "h1": "Reorder, Delete, or Duplicate PDF Pages Locally",
-  "description": "Drag and drop to rearrange, remove, or duplicate PDF pages entirely in your browser. No upload. Great for users in Budapest.",
+  "title": "PDF-oldalak rendezése — Offline átrendezés és törlés",
+  "h1": "PDF-oldalak átrendezése, törlése vagy másolása helyileg",
+  "description": "Húzza át a PDF-oldalak teljes átrendezéséhez, eltávolításához vagy megkettőzéséhez a böngészőben. Gyors és teljesen biztonságos.",
+  "buttonText": "Organize Pages",
+  "badges": [
+    "Drag & Drop",
+    "Oldalak átrendezése",
+    "Vizuális szerkesztő"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Organize PDFs Locally?",
-      "content": "Reorganizing page structure is an editing operation. Your internal document should stay internal during editing."
+      "type": "organize_hero_features",
+      "title": "Miért érdemes helyileg rendezni a PDF-eket?",
+      "content": "Az oldalszerkezet átszervezése egy szerkesztési művelet. A belső dokumentumnak belsőnek kell maradnia a szerkesztés során."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Organize PDF Pages",
+      "type": "organize_how_to_steps",
+      "title": "PDF-oldalak rendezése",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to reorganize."
+          "title": "PDF megnyitása",
+          "description": "Töltse be az átszervezni kívánt PDF-fájlt."
         },
         {
-          "title": "Drag to Reorder",
-          "description": "Drag page thumbnails to the desired position."
+          "title": "Húzza az átrendezéshez",
+          "description": "Húzza az oldalak bélyegképét a kívánt helyre."
         },
         {
-          "title": "Save Organized PDF",
-          "description": "Download the restructured PDF immediately."
+          "title": "Rendezett PDF mentése",
+          "description": "Azonnal töltse le az átalakított PDF-et."
         }
-      ]
+      ],
+      "badgeText": "Gyors útmutató"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Organization for Budapest Teams",
-      "content": "Teams in Budapest reorganize proposal and report PDFs without uploading to any cloud service."
+      "type": "organize_geo_targeting",
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Minden művelet közvetlenül a helyi eszközön történik. Fejlett WebAssembly technológiát használunk a dokumentumok feldolgozásához anélkül, hogy azokat külső szerverekre feltöltenénk, így biztosítva a teljes adatvédelmet.",
+      "badgeText": "Helyi feldolgozás"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Page Structure Is Private Business",
-      "content": "Reordering internal reports and proposals with zero data leaving your browser."
+      "type": "organize_privacy_security",
+      "title": "Az oldal szerkezete magánvállalkozás",
+      "content": "Belső jelentések és javaslatok átrendezése nulla adattal a böngészőből.",
+      "badgeText": "Első a biztonság"
     },
     {
-      "type": "organizer_performance",
-      "title": "Reorganize Any PDF in Seconds",
-      "content": "Reorder pages in a 500-page document through a smooth drag-and-drop interface with zero upload."
+      "type": "organize_performance",
+      "title": "Bármilyen PDF átszervezése másodpercek alatt",
+      "content": "Az oldalak átrendezése egy 500 oldalas dokumentumban a gördülékeny fogd és vidd felületen, nulla feltöltés nélkül.",
+      "badgeText": "Villámgyors"
     }
   ],
   "faqs": [
     {
-      "q": "Can I delete pages?",
-      "a": "Yes, click the delete icon on any page thumbnail."
+      "q": "Törölhetek oldalakat?",
+      "a": "Igen, kattintson a törlés ikonra bármely oldal bélyegképén."
     },
     {
-      "q": "Can I duplicate pages?",
-      "a": "Yes, duplicate individual pages with one click."
+      "q": "Másolhatok oldalakat?",
+      "a": "Igen, az egyes oldalak megkettőzése egyetlen kattintással."
     },
     {
-      "q": "Can I rotate while organizing?",
-      "a": "Yes, per-page rotation is available in the organizer."
+      "q": "Forgathatok szervezés közben?",
+      "a": "Igen, az oldalankénti rotáció elérhető a szervezőben."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No limit! Organize documents of any size."
+      "q": "Van oldalkorlát?",
+      "a": "Nincs határ! Bármilyen méretű dokumentumok rendszerezése."
     },
     {
-      "q": "Is this free?",
+      "q": "Ez ingyenes?",
       "a": "Igen, teljesen ingyenes."
     }
-  ]
+  ],
+  "faqTitle": "Gyakran Ismételt Kérdések",
+  "supportCenter": "Támogatási Központ"
 }

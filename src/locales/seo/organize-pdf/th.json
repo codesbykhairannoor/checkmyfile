@@ -1,67 +1,85 @@
 {
-  "title": "Organize PDF Pages — Reorder & Delete Offline",
-  "h1": "Reorder, Delete, or Duplicate PDF Pages Locally",
-  "description": "Drag and drop to rearrange, remove, or duplicate PDF pages entirely in your browser. No upload. Great for users in Bangkok.",
+  "title": "จัดระเบียบหน้า PDF — เรียงลำดับใหม่และลบออฟไลน์",
+  "h1": "เรียงลำดับ ลบ หรือทำซ้ำหน้า PDF ในเครื่อง",
+  "description": "ลากและวางเพื่อจัดเรียง ลบ หรือทำซ้ำหน้า PDF ทั้งหมดในเบราว์เซอร์ของคุณ รวดเร็วและปลอดภัยอย่างสมบูรณ์",
+  "buttonText": "Organize Pages",
+  "badges": [
+    "ลากและวาง",
+    "เรียงลำดับหน้าใหม่",
+    "โปรแกรมแก้ไขภาพ"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Organize PDFs Locally?",
-      "content": "Reorganizing page structure is an editing operation. Your internal document should stay internal during editing."
+      "type": "organize_hero_features",
+      "title": "เหตุใดจึงต้องจัดระเบียบ PDF ภายในเครื่อง",
+      "content": "การจัดระเบียบโครงสร้างเพจใหม่เป็นการดำเนินการแก้ไข เอกสารภายในของคุณควรคงอยู่ภายในระหว่างการแก้ไข"
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Organize PDF Pages",
+      "type": "organize_how_to_steps",
+      "title": "วิธีจัดระเบียบหน้า PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to reorganize."
+          "title": "เปิด PDF",
+          "description": "โหลด PDF ที่คุณต้องการจัดระเบียบใหม่"
         },
         {
-          "title": "Drag to Reorder",
-          "description": "Drag page thumbnails to the desired position."
+          "title": "ลากเพื่อจัดลำดับใหม่",
+          "description": "ลากรูปขนาดย่อของหน้าไปยังตำแหน่งที่ต้องการ"
         },
         {
-          "title": "Save Organized PDF",
-          "description": "Download the restructured PDF immediately."
+          "title": "บันทึก PDF ที่จัดระเบียบ",
+          "description": "ดาวน์โหลด PDF ที่ปรับโครงสร้างใหม่ทันที"
         }
-      ]
+      ],
+      "badgeText": "คู่มือฉบับย่อ"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Organization for Bangkok Teams",
-      "content": "Teams in Bangkok reorganize proposal and report PDFs without uploading to any cloud service."
+      "type": "organize_geo_targeting",
+      "title": "การประมวลผลภายในที่ปลอดภัย 100%",
+      "content": "การดำเนินการทั้งหมดดำเนินการโดยตรงบนอุปกรณ์ท้องถิ่นของคุณ เราใช้เทคโนโลยี WebAssembly ขั้นสูงเพื่อประมวลผลเอกสารของคุณโดยไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ภายนอก เพื่อให้มั่นใจถึงความเป็นส่วนตัวโดยสมบูรณ์",
+      "badgeText": "การประมวลผลในท้องถิ่น"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Page Structure Is Private Business",
-      "content": "Reordering internal reports and proposals with zero data leaving your browser."
+      "type": "organize_privacy_security",
+      "title": "โครงสร้างเพจเป็นธุรกิจส่วนตัว",
+      "content": "การจัดลำดับรายงานภายในและข้อเสนอใหม่โดยไม่มีข้อมูลออกจากเบราว์เซอร์ของคุณ",
+      "badgeText": "ความปลอดภัยต้องมาก่อน"
     },
     {
-      "type": "organizer_performance",
-      "title": "Reorganize Any PDF in Seconds",
-      "content": "Reorder pages in a 500-page document through a smooth drag-and-drop interface with zero upload."
+      "type": "organize_performance",
+      "title": "จัดระเบียบ PDF ใหม่ในไม่กี่วินาที",
+      "content": "จัดลำดับหน้าใหม่ในเอกสาร 500 หน้าผ่านอินเทอร์เฟซแบบลากและวางที่ราบรื่นโดยไม่ต้องอัปโหลด",
+      "badgeText": "เร็วปานสายฟ้า"
     }
   ],
   "faqs": [
     {
-      "q": "Can I delete pages?",
-      "a": "Yes, click the delete icon on any page thumbnail."
+      "q": "ฉันสามารถลบหน้าได้หรือไม่?",
+      "a": "ใช่ คลิกไอคอนลบบนภาพขนาดย่อของหน้าใดก็ได้"
     },
     {
-      "q": "Can I duplicate pages?",
-      "a": "Yes, duplicate individual pages with one click."
+      "q": "ฉันสามารถทำซ้ำหน้าได้หรือไม่?",
+      "a": "ใช่ ทำซ้ำแต่ละหน้าได้ด้วยคลิกเดียว"
     },
     {
-      "q": "Can I rotate while organizing?",
-      "a": "Yes, per-page rotation is available in the organizer."
+      "q": "ฉันสามารถหมุนขณะจัดระเบียบได้หรือไม่",
+      "a": "ใช่ การหมุนเวียนต่อหน้ามีอยู่ในตัวจัดระเบียบ"
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No limit! Organize documents of any size."
+      "q": "มีการจำกัดหน้าหรือไม่?",
+      "a": "ไม่มีขีดจำกัด! จัดระเบียบเอกสารทุกขนาด"
     },
     {
-      "q": "Is this free?",
-      "a": "ใช่ ฟรีทั้งหมด"
+      "q": "ฟรีหรือเปล่า?",
+      "a": "ใช่ สมบูรณ์ฟรี"
     }
-  ]
+  ],
+  "faqTitle": "คำถามที่พบบ่อย",
+  "supportCenter": "ศูนย์สนับสนุน"
 }

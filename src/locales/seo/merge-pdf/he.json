@@ -1,67 +1,78 @@
 {
-  "title": "Merge PDF - Combine Documents Offline",
-  "h1": "Merge PDF Files Instantly in Your Browser",
-  "description": "Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, perfect for users in Jerusalem.",
+  "title": "מיזוג PDF - שילוב מסמכים במצב לא מקוון",
+  "h1": "מיזוג קבצי PDF באופן מיידי בדפדפן שלך",
+  "description": "שלב קובצי PDF מרובים למסמך אחד באמצעות WebAssembly טהור בצד הלקוח. אין העלאות קבצים, מושלם למשתמשים בניו יורק.",
   "sections": [
     {
       "type": "merge_hero_features",
-      "title": "Why Merge PDF Offline?",
-      "content": "Instead of uploading sensitive documents to a server, our Merge PDF tool stitches your pages together directly in your browser. Complete privacy."
+      "title": "למה למזג PDF במצב לא מקוון?",
+      "content": "במקום להעלות מסמכים רגישים לשרת, כלי המיזוג PDF שלנו מחבר את הדפים שלך ישירות בדפדפן שלך. פרטיות מלאה."
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Merge PDF Files",
+      "title": "כיצד למזג קבצי PDF",
       "steps": [
         {
-          "title": "Add Documents",
-          "description": "Select the PDFs you want to merge together."
+          "title": "הוסף מסמכים",
+          "description": "בחר את קובצי ה-PDF שברצונך למזג יחד."
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop files to get the perfect sequence."
+          "title": "סדר מחדש דפים",
+          "description": "גרור ושחרר קבצים כדי לקבל את הרצף המושלם."
         },
         {
-          "title": "Merge & Save",
-          "description": "Click merge and download your combined document instantly."
+          "title": "מיזוג ושמור",
+          "description": "לחץ על מיזוג והורד את המסמך המשולב שלך באופן מיידי."
         }
-      ]
+      ],
+      "badgeText": "מדריך מהיר"
     },
     {
       "type": "merge_geo_targeting",
-      "title": "Seamless Merging for users in Jerusalem, IL-JM",
-      "content": "No matter if you are in Jerusalem or traveling, combining documents takes zero milliseconds of upload time."
+      "title": "100% עיבוד מקומי מאובטח",
+      "content": "כל הפעולות מבוצעות ישירות במכשיר המקומי שלך. אנו משתמשים בטכנולוגיית WebAssembly מתקדמת כדי לעבד את המסמכים שלך מבלי להעלות אותם לשרתים חיצוניים, מה שמבטיח פרטיות מלאה.",
+      "badgeText": "עיבוד מקומי"
     },
     {
       "type": "merge_privacy_security",
-      "title": "Enterprise-Grade Document Combining",
-      "content": "Merging contracts and invoices? Do it securely with our WASM engine. No traces left behind."
+      "title": "שילוב מסמכים ברמה ארגונית",
+      "content": "מיזוג חוזים וחשבוניות? עשה זאת בצורה מאובטחת עם מנוע ה-WASM שלנו. לא נשארו עקבות.",
+      "badgeText": "אבטחה תחילה"
     },
     {
       "type": "merge_performance",
-      "title": "Instant Combination",
-      "content": "Stitching PDFs locally means you can merge a 500-page document faster than you can upload it."
+      "title": "שילוב מיידי",
+      "content": "חיבור קובצי PDF באופן מקומי אומר שאתה יכול למזג מסמך בן 500 עמודים מהר יותר ממה שאתה יכול להעלות אותו.",
+      "badgeText": "מהיר ברק"
     }
   ],
   "faqs": [
     {
-      "q": "Is merging PDFs completely free?",
-      "a": "Yes! Merge as many files as you want without paying a cent."
+      "q": "האם מיזוג קובצי PDF בחינם לחלוטין?",
+      "a": "כֵּן! מיזוג כמה קבצים שתרצה מבלי לשלם אגורה."
     },
     {
-      "q": "Are my merged files uploaded?",
-      "a": "No, all merging happens offline in your browser."
+      "q": "האם הקבצים הממוזגים שלי מועלים?",
+      "a": "לא, כל המיזוג מתרחש במצב לא מקוון בדפדפן שלך."
     },
     {
-      "q": "Can I reorder the files before merging?",
-      "a": "Yes, just drag and drop the files in the preview window."
+      "q": "האם אוכל לסדר מחדש את הקבצים לפני המיזוג?",
+      "a": "כן, פשוט גרור ושחרר את הקבצים בחלון התצוגה המקדימה."
     },
     {
-      "q": "Is there a limit on how many files I can merge?",
-      "a": "No artificial limits! Merge 10 or 100 files depending on your RAM."
+      "q": "האם יש הגבלה על כמה קבצים אני יכול למזג?",
+      "a": "ללא מגבלות מלאכותיות! מיזוג 10 או 100 קבצים בהתאם ל-RAM שלך."
     },
     {
-      "q": "Does merging ruin the formatting?",
-      "a": "Not at all. The original layers and vector data are perfectly stitched together."
+      "q": "האם מיזוג הורס את העיצוב?",
+      "a": "כְּלָל לֹא. השכבות המקוריות ונתוני הווקטור מחוברים זה לזה בצורה מושלמת."
     }
+  ],
+  "faqTitle": "שאלות נפוצות",
+  "supportCenter": "מרכז תמיכה",
+  "badges": [
+    "אפס השהיית שרת",
+    "אין רוחב פס להעלאה",
+    "עיבוד מיידי"
   ]
 }

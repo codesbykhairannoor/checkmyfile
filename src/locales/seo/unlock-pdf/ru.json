@@ -1,67 +1,85 @@
 {
-  "title": "Unlock PDF — Remove Password Offline",
-  "h1": "Remove PDF Password Protection Instantly in Your Browser",
-  "description": "Unlock password-protected PDFs locally if you know the password. 100% private. No upload. Perfect for users in Moscow.",
+  "title": "Разблокировать PDF — удалить пароль в автономном режиме",
+  "h1": "Мгновенно удалите защиту PDF-файла паролем в вашем браузере",
+  "description": "Разблокируйте PDF-файлы, защищенные паролем, локально, если вы знаете пароль. 100% приват. Нет загрузки. 100% безопасная локальная обработка.",
+  "buttonText": "Unlock PDF",
+  "badges": [
+    "Удалить пароль",
+    "Мгновенная разблокировка",
+    "Нет журналов сервера"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "unlock_hero_features",
-      "title": "Why Unlock PDFs Locally?",
-      "content": "You have the password to your own file. Unlocking it should not require uploading sensitive documents to an external service."
+      "title": "Зачем разблокировать PDF-файлы локально?",
+      "content": "У вас есть пароль к вашему собственному файлу. Для его разблокировки не требуется загрузка конфиденциальных документов на внешний сервис."
     },
     {
       "type": "unlock_how_to_steps",
-      "title": "How to Unlock a Protected PDF",
+      "title": "Как разблокировать защищенный PDF-файл",
       "steps": [
         {
-          "title": "Open Protected PDF",
-          "description": "Select the password-protected PDF."
+          "title": "Открыть защищенный PDF",
+          "description": "Выберите PDF-файл, защищенный паролем."
         },
         {
-          "title": "Enter Your Password",
-          "description": "Provide the existing password — decryption stays in your browser."
+          "title": "Введите свой пароль",
+          "description": "Укажите существующий пароль — расшифровка останется в вашем браузере."
         },
         {
-          "title": "Download Unlocked PDF",
-          "description": "Get your unlocked, fully accessible PDF instantly."
+          "title": "Скачать разблокированный PDF",
+          "description": "Получите разблокированный, полностью доступный PDF-файл мгновенно."
         }
-      ]
+      ],
+      "badgeText": "Краткое руководство"
     },
     {
       "type": "unlock_geo_targeting",
-      "title": "Instant PDF Unlocking for Moscow Users",
-      "content": "Users in Moscow access their own password-protected files without sending decryption keys to any server."
+      "title": "100% безопасная локальная обработка",
+      "content": "Все операции выполняются непосредственно на вашем локальном устройстве. Мы используем передовую технологию WebAssembly для обработки ваших документов, не загружая их на внешние серверы, обеспечивая полную конфиденциальность.",
+      "badgeText": "Локальная обработка"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Your Password Never Leaves the Browser",
-      "content": "The decryption key and your document are processed entirely in browser memory — never transmitted to any server or service."
+      "title": "Ваш пароль никогда не покидает браузер",
+      "content": "Ключ дешифрования и ваш документ полностью обрабатываются в памяти браузера и никогда не передаются на какой-либо сервер или службу.",
+      "badgeText": "Безопасность превыше всего"
     },
     {
       "type": "unlock_performance",
-      "title": "Instant Browser-Local Decryption",
-      "content": "AES decryption in your browser takes under a second — far faster than any cloud service with no upload wait."
+      "title": "Мгновенное расшифровывание в браузере",
+      "content": "Расшифровка AES в вашем браузере занимает меньше секунды — намного быстрее, чем любой облачный сервис без ожидания загрузки.",
+      "badgeText": "Молниеносно"
     }
   ],
   "faqs": [
     {
-      "q": "Does it work without the password?",
-      "a": "No, you must know the existing password to unlock."
+      "q": "Без пароля работает?",
+      "a": "Нет, для разблокировки вы должны знать существующий пароль."
     },
     {
-      "q": "Can I unlock permissions-restricted PDFs?",
-      "a": "Yes, permission restrictions are removed after password verification."
+      "q": "Могу ли я разблокировать PDF-файлы с ограниченными разрешениями?",
+      "a": "Да, ограничения разрешений снимаются после проверки пароля."
     },
     {
-      "q": "Is the decryption process secure?",
-      "a": "All decryption happens in your browser memory; nothing is transmitted."
+      "q": "Безопасен ли процесс расшифровки?",
+      "a": "Вся расшифровка происходит в памяти вашего браузера; ничего не передается."
     },
     {
-      "q": "What if the password is wrong?",
-      "a": "You will see an error and can try again with the correct password."
+      "q": "Что делать, если пароль неправильный?",
+      "a": "Вы увидите ошибку и сможете повторить попытку, указав правильный пароль."
     },
     {
-      "q": "Is this free?",
-      "a": "Да, полностью бесплатно."
+      "q": "Это бесплатно?",
+      "a": "Да, совершенно бесплатно."
     }
-  ]
+  ],
+  "faqTitle": "Часто задаваемые вопросы",
+  "supportCenter": "Центр поддержки"
 }

@@ -24,22 +24,26 @@
           "title": "Merge & Save",
           "description": "Click merge and download your combined document instantly."
         }
-      ]
+      ],
+      "badgeText": "Quick Guide"
     },
     {
       "type": "merge_geo_targeting",
-      "title": "Seamless Merging for users in New York, US-NY",
-      "content": "No matter if you are in New York or traveling, combining documents takes zero milliseconds of upload time."
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy.",
+      "badgeText": "Local Processing"
     },
     {
       "type": "merge_privacy_security",
       "title": "Enterprise-Grade Document Combining",
-      "content": "Merging contracts and invoices? Do it securely with our WASM engine. No traces left behind."
+      "content": "Merging contracts and invoices? Do it securely with our WASM engine. No traces left behind.",
+      "badgeText": "Security First"
     },
     {
       "type": "merge_performance",
       "title": "Instant Combination",
-      "content": "Stitching PDFs locally means you can merge a 500-page document faster than you can upload it."
+      "content": "Stitching PDFs locally means you can merge a 500-page document faster than you can upload it.",
+      "badgeText": "Lightning Fast"
     }
   ],
   "faqs": [
@@ -63,5 +67,12 @@
       "q": "Does merging ruin the formatting?",
       "a": "Not at all. The original layers and vector data are perfectly stitched together."
     }
+  ],
+  "faqTitle": "Frequently Asked Questions",
+  "supportCenter": "Support Center",
+  "badges": [
+    "Zero server latency",
+    "No upload bandwidth",
+    "Instant processing"
   ]
 }

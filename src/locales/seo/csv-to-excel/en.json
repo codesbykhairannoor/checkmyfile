@@ -1,15 +1,27 @@
 {
   "title": "CSV to Excel Converter — Offline & Instant",
   "h1": "Convert CSV Files to Excel Spreadsheets Locally",
-  "description": "Transform .csv files into structured .xlsx spreadsheets entirely in your browser. No upload. Perfect for data teams in New York.",
+  "description": "Transform .csv files into structured .xlsx spreadsheets entirely in your browser. No upload. 100% secure local processing.",
+  "buttonText": "Convert CSV",
+  "badges": [
+    "UTF-8 Support",
+    "Multi-Column",
+    "Instant Convert"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
+      "type": "csv_excel_hero_features",
       "title": "Why Convert CSV Offline?",
       "content": "CSV files often contain customer or financial data. Convert them to Excel locally without exposing your datasets to any cloud service."
     },
     {
-      "type": "organizer_how_to_steps",
+      "type": "csv_excel_how_to_steps",
       "title": "How to Convert CSV to Excel",
       "steps": [
         {
@@ -27,17 +39,17 @@
       ]
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Data Tools for New York Analysts",
-      "content": "Data analysts in New York convert CSV exports to Excel without uploading sensitive datasets."
+      "type": "csv_excel_geo_targeting",
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy."
     },
     {
-      "type": "organizer_privacy_security",
+      "type": "csv_excel_privacy_security",
       "title": "Customer Data Stays on Your Machine",
       "content": "CRM exports, transaction logs, and survey data converted locally with zero cloud involvement."
     },
     {
-      "type": "organizer_performance",
+      "type": "csv_excel_performance",
       "title": "Convert Large CSV Files Instantly",
       "content": "Convert a 100,000-row CSV to Excel in seconds. All browser-native processing."
     }

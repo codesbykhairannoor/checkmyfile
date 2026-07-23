@@ -1,67 +1,85 @@
 {
-  "title": "Grayscale PDF — Convert to Black and White Offline",
-  "h1": "Convert Color PDF Pages to Grayscale Instantly",
-  "description": "Turn color PDFs into black-and-white versions to reduce file size or prepare for printing, entirely in your browser. Ideal for users in Rome.",
+  "title": "PDF in scala di grigi: converti in bianco e nero offline",
+  "h1": "Converti istantaneamente pagine PDF a colori in scala di grigi",
+  "description": "Trasforma i PDF a colori in versioni in bianco e nero per ridurre le dimensioni del file o prepararli per la stampa, interamente nel tuo browser. Elaborazione locale sicura al 100%.",
+  "buttonText": "Convert to Grayscale",
+  "badges": [
+    "Risparmia inchiostro",
+    "Bianco e nero",
+    "Perfetto per la stampa"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Convert to Grayscale Offline?",
-      "content": "Removing color from a PDF is a pre-print or archiving step. Do it locally without exposing confidential document design."
+      "type": "grayscale_hero_features",
+      "title": "Perché convertire in scala di grigi offline?",
+      "content": "La rimozione del colore da un PDF è una fase di prestampa o archiviazione. Fallo localmente senza esporre la progettazione di documenti riservati."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Make PDF Grayscale",
+      "type": "grayscale_how_to_steps",
+      "title": "Come creare PDF in scala di grigi",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the color PDF to convert."
+          "title": "Apri PDF",
+          "description": "Seleziona il PDF a colori da convertire."
         },
         {
-          "title": "Choose Conversion Mode",
-          "description": "Pick luminance or contrast-adjusted grayscale."
+          "title": "Scegli la modalità di conversione",
+          "description": "Scegli la luminanza o la scala di grigi con contrasto regolato."
         },
         {
-          "title": "Download Grayscale PDF",
-          "description": "Save the black-and-white PDF immediately."
+          "title": "Scarica il PDF in scala di grigi",
+          "description": "Salva immediatamente il PDF in bianco e nero."
         }
-      ]
+      ],
+      "badgeText": "Guida rapida"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Grayscale PDF for Rome Printers",
-      "content": "Businesses in Rome convert color PDFs to grayscale for cost-effective printing without cloud uploads."
+      "type": "grayscale_geo_targeting",
+      "title": "Elaborazione locale sicura al 100%",
+      "content": "Tutte le operazioni vengono eseguite direttamente sul tuo dispositivo locale. Utilizziamo la tecnologia avanzata WebAssembly per elaborare i tuoi documenti senza mai caricarli su server esterni, garantendo la completa privacy.",
+      "badgeText": "Elaborazione locale"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Design Files Stay Confidential",
-      "content": "Internal design documents and branded materials converted to grayscale without cloud exposure."
+      "type": "grayscale_privacy_security",
+      "title": "I file di progettazione rimangono riservati",
+      "content": "Documenti di progettazione interna e materiali con marchio convertiti in scala di grigi senza esposizione alle nuvole.",
+      "badgeText": "La sicurezza prima di tutto"
     },
     {
-      "type": "transform_performance",
-      "title": "Convert Color Instantly",
-      "content": "A 200-page color PDF converted to grayscale in under 2 seconds. Zero upload."
+      "type": "grayscale_performance",
+      "title": "Converti colore istantaneamente",
+      "content": "Un PDF a colori di 200 pagine convertito in scala di grigi in meno di 2 secondi. Caricamento zero.",
+      "badgeText": "Velocissimo"
     }
   ],
   "faqs": [
     {
-      "q": "Does grayscale reduce file size?",
-      "a": "Often yes, especially for image-heavy PDFs."
+      "q": "La scala di grigi riduce le dimensioni del file?",
+      "a": "Spesso sì, soprattutto per i PDF ricchi di immagini."
     },
     {
-      "q": "Are all pages converted?",
-      "a": "Yes by default; you can also select specific pages."
+      "q": "Tutte le pagine sono convertite?",
+      "a": "Sì per impostazione predefinita; puoi anche selezionare pagine specifiche."
     },
     {
-      "q": "Is the conversion reversible?",
-      "a": "The color information is removed; keep the original for reversal."
+      "q": "La conversione è reversibile?",
+      "a": "Le informazioni sul colore vengono rimosse; conservare l'originale per l'inversione."
     },
     {
-      "q": "Does it affect text quality?",
-      "a": "No, text remains crisp and black."
+      "q": "Influisce sulla qualità del testo?",
+      "a": "No, il testo rimane nitido e nero."
     },
     {
-      "q": "Is this free?",
+      "q": "E' gratis?",
       "a": "Sì, completamente gratuito."
     }
-  ]
+  ],
+  "faqTitle": "Domande frequenti",
+  "supportCenter": "Centro di supporto"
 }

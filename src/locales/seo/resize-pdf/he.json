@@ -1,67 +1,85 @@
 {
-  "title": "Resize PDF Pages — Change Paper Size Offline",
-  "h1": "Resize PDF Pages to A4, Letter, or Custom Sizes",
-  "description": "Change the paper size of every PDF page to A4, US Letter, or custom dimensions entirely in your browser. No upload. Ideal for users in Jerusalem.",
+  "title": "שנה גודל של דפי PDF — שנה גודל נייר במצב לא מקוון",
+  "h1": "שנה את גודל דפי PDF לגדלים A4, Letter או מותאמים אישית",
+  "description": "שנה את גודל הנייר של כל דף PDF ל-A4, US Letter או ממדים מותאמים אישית לחלוטין בדפדפן שלך. אין העלאה. עיבוד מקומי מאובטח של 100%.",
+  "buttonText": "Resize Pages",
+  "badges": [
+    "A4, Letter, Custom",
+    "הוסף שוליים",
+    "תיקון פורמט"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Resize PDFs Locally?",
-      "content": "Preparing documents for printing requires proper page sizing. Resize locally without uploading internal documents to the cloud."
+      "type": "resize_hero_features",
+      "title": "מדוע לשנות את גודל קובצי PDF באופן מקומי?",
+      "content": "הכנת מסמכים להדפסה דורשת גודל עמוד מתאים. שנה גודל מקומי מבלי להעלות מסמכים פנימיים לענן."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Resize PDF Pages",
+      "type": "resize_how_to_steps",
+      "title": "כיצד לשנות גודל של דפי PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page dimensions."
+          "title": "פתח PDF",
+          "description": "טען את ה-PDF עם מידות עמוד שגויות."
         },
         {
-          "title": "Select Target Size",
-          "description": "Choose A4, Letter, A3, or enter custom dimensions."
+          "title": "בחר גודל יעד",
+          "description": "בחר A4, Letter, A3, או הזן מידות מותאמות אישית."
         },
         {
-          "title": "Download Resized PDF",
-          "description": "Get your properly sized document instantly."
+          "title": "הורד PDF בגודל שונה",
+          "description": "קבל את המסמך בגודל הנכון שלך באופן מיידי."
         }
-      ]
+      ],
+      "badgeText": "מדריך מהיר"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Resizing for Jerusalem Print Shops",
-      "content": "Print shops and offices in Jerusalem resize documents to standard sizes without cloud dependency."
+      "type": "resize_geo_targeting",
+      "title": "100% עיבוד מקומי מאובטח",
+      "content": "כל הפעולות מבוצעות ישירות במכשיר המקומי שלך. אנו משתמשים בטכנולוגיית WebAssembly מתקדמת כדי לעבד את המסמכים שלך מבלי להעלות אותם לשרתים חיצוניים, מה שמבטיח פרטיות מלאה.",
+      "badgeText": "עיבוד מקומי"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Internal Documents Stay Internal",
-      "content": "Resize business reports and proposals without any server-side processing."
+      "type": "resize_privacy_security",
+      "title": "מסמכים פנימיים נשארים פנימיים",
+      "content": "שנה גודל של דוחות והצעות עסקיים ללא כל עיבוד בצד השרת.",
+      "badgeText": "אבטחה תחילה"
     },
     {
-      "type": "transform_performance",
-      "title": "Resize Hundreds of Pages Instantly",
-      "content": "Resizing a 500-page PDF takes under 2 seconds. All in your browser."
+      "type": "resize_performance",
+      "title": "שנה גודל של מאות דפים באופן מיידי",
+      "content": "שינוי גודל קובץ PDF בן 500 עמודים לוקח פחות מ-2 שניות. הכל בדפדפן שלך.",
+      "badgeText": "מהיר ברק"
     }
   ],
   "faqs": [
     {
-      "q": "What sizes are available?",
-      "a": "A4, A3, A5, US Letter, Legal, and custom dimensions."
+      "q": "אילו גדלים זמינים?",
+      "a": "A4, A3, A5, US Letter, משפטי ומידות מותאמות אישית."
     },
     {
-      "q": "Does content scale with the page?",
-      "a": "Yes, content is scaled proportionally by default."
+      "q": "האם התוכן מתרחב עם הדף?",
+      "a": "כן, התוכן מוגדל באופן פרופורציונלי כברירת מחדל."
     },
     {
-      "q": "Can I resize individual pages?",
-      "a": "Yes, apply different sizes to specific pages."
+      "q": "האם אני יכול לשנות גודל של דפים בודדים?",
+      "a": "כן, החל גדלים שונים על דפים ספציפיים."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "Vector content is re-rendered perfectly; images may scale."
+      "q": "האם האיכות מושפעת?",
+      "a": "תוכן וקטור מעובד מחדש בצורה מושלמת; תמונות עשויות לשנות קנה מידה."
     },
     {
-      "q": "Is this free?",
-      "a": "כן, חינם לחלוטין."
+      "q": "האם זה בחינם?",
+      "a": "כן, לגמרי בחינם."
     }
-  ]
+  ],
+  "faqTitle": "שאלות נפוצות",
+  "supportCenter": "מרכז תמיכה"
 }

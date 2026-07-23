@@ -1,67 +1,85 @@
 {
-  "title": "Grayscale PDF — Convert to Black and White Offline",
-  "h1": "Convert Color PDF Pages to Grayscale Instantly",
-  "description": "Turn color PDFs into black-and-white versions to reduce file size or prepare for printing, entirely in your browser. Ideal for users in Madrid.",
+  "title": "PDF en escala de grises: convertir a blanco y negro sin conexión",
+  "h1": "Convierta páginas PDF en color a escala de grises al instante",
+  "description": "Convierta archivos PDF en color en versiones en blanco y negro para reducir el tamaño del archivo o prepárelos para imprimir, completamente en su navegador. Procesamiento local 100% seguro.",
+  "buttonText": "Convert to Grayscale",
+  "badges": [
+    "Ahorrar tinta",
+    "Blanco y negro",
+    "Perfecto para imprimir"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Convert to Grayscale Offline?",
-      "content": "Removing color from a PDF is a pre-print or archiving step. Do it locally without exposing confidential document design."
+      "type": "grayscale_hero_features",
+      "title": "¿Por qué convertir a escala de grises sin conexión?",
+      "content": "Eliminar el color de un PDF es un paso previo a la impresión o al archivado. Hágalo localmente sin exponer el diseño del documento confidencial."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Make PDF Grayscale",
+      "type": "grayscale_how_to_steps",
+      "title": "Cómo hacer PDF en escala de grises",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the color PDF to convert."
+          "title": "Abrir PDF",
+          "description": "Seleccione el PDF en color para convertir."
         },
         {
-          "title": "Choose Conversion Mode",
-          "description": "Pick luminance or contrast-adjusted grayscale."
+          "title": "Elija el modo de conversión",
+          "description": "Elija luminancia o escala de grises ajustada al contraste."
         },
         {
-          "title": "Download Grayscale PDF",
-          "description": "Save the black-and-white PDF immediately."
+          "title": "Descargar PDF en escala de grises",
+          "description": "Guarde el PDF en blanco y negro inmediatamente."
         }
-      ]
+      ],
+      "badgeText": "Guía rápida"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Grayscale PDF for Madrid Printers",
-      "content": "Businesses in Madrid convert color PDFs to grayscale for cost-effective printing without cloud uploads."
+      "type": "grayscale_geo_targeting",
+      "title": "Procesamiento local 100% seguro",
+      "content": "Todas las operaciones se realizan directamente en su dispositivo local. Utilizamos tecnología avanzada de WebAssembly para procesar sus documentos sin tener que cargarlos en servidores externos, lo que garantiza una privacidad total.",
+      "badgeText": "Procesamiento local"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Design Files Stay Confidential",
-      "content": "Internal design documents and branded materials converted to grayscale without cloud exposure."
+      "type": "grayscale_privacy_security",
+      "title": "Los archivos de diseño son confidenciales",
+      "content": "Documentos de diseño internos y materiales de marca convertidos a escala de grises sin exposición a las nubes.",
+      "badgeText": "La seguridad es lo primero"
     },
     {
-      "type": "transform_performance",
-      "title": "Convert Color Instantly",
-      "content": "A 200-page color PDF converted to grayscale in under 2 seconds. Zero upload."
+      "type": "grayscale_performance",
+      "title": "Convertir color al instante",
+      "content": "Un PDF en color de 200 páginas convertido a escala de grises en menos de 2 segundos. Carga cero.",
+      "badgeText": "A la velocidad del rayo"
     }
   ],
   "faqs": [
     {
-      "q": "Does grayscale reduce file size?",
-      "a": "Often yes, especially for image-heavy PDFs."
+      "q": "¿La escala de grises reduce el tamaño del archivo?",
+      "a": "A menudo sí, especialmente para archivos PDF con muchas imágenes."
     },
     {
-      "q": "Are all pages converted?",
-      "a": "Yes by default; you can also select specific pages."
+      "q": "¿Se convierten todas las páginas?",
+      "a": "Sí por defecto; También puede seleccionar páginas específicas."
     },
     {
-      "q": "Is the conversion reversible?",
-      "a": "The color information is removed; keep the original for reversal."
+      "q": "¿La conversión es reversible?",
+      "a": "Se elimina la información del color; Conserve el original para su reversión."
     },
     {
-      "q": "Does it affect text quality?",
-      "a": "No, text remains crisp and black."
+      "q": "¿Afecta la calidad del texto?",
+      "a": "No, el texto permanece nítido y negro."
     },
     {
-      "q": "Is this free?",
+      "q": "¿Es esto gratis?",
       "a": "Sí, completamente gratis."
     }
-  ]
+  ],
+  "faqTitle": "Preguntas frecuentes",
+  "supportCenter": "Centro de soporte"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Add Page Numbers to PDF — Offline Number Stamp",
-  "h1": "Insert Page Numbers into PDF Documents Locally",
-  "description": "Stamp page numbers at the header or footer of your PDF entirely in your browser. No upload. Ideal for users in Beijing.",
+  "title": "添加页码到 PDF — 离线编号标记",
+  "h1": "在本地将页码插入 PDF 文档",
+  "description": "完全在浏览器中在 PDF 的页眉或页脚上标记页码。 快速且完全安全。",
+  "buttonText": "Add Page Numbers",
+  "badges": [
+    "自定义位置",
+    "页眉和页脚",
+    "贝茨编号"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Add Page Numbers Offline?",
-      "content": "Page numbers are a formatting step, not a reason to upload confidential documents to a cloud service."
+      "type": "pagenum_hero_features",
+      "title": "为什么要离线添加页码？",
+      "content": "页码是一个格式化步骤，而不是将机密文档上传到云服务的原因。"
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Add Page Numbers",
+      "type": "pagenum_how_to_steps",
+      "title": "如何添加页码",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to number."
+          "title": "打开 PDF",
+          "description": "选择要编号的 PDF。"
         },
         {
-          "title": "Configure Style",
-          "description": "Choose position, format (1/12, Page 1, i, ii…), and font."
+          "title": "配置样式",
+          "description": "选择位置、格式（1/12、第 1 页、i、ii...）和字体。"
         },
         {
-          "title": "Apply & Download",
-          "description": "Download your paginated PDF instantly."
+          "title": "申请并下载",
+          "description": "立即下载分页 PDF。"
         }
-      ]
+      ],
+      "badgeText": "快速指南"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Page Numbering for Beijing Legal Docs",
-      "content": "Legal professionals in Beijing number briefs and reports locally without cloud service dependency."
+      "type": "pagenum_geo_targeting",
+      "title": "100% 安全的本地处理",
+      "content": "所有操作都直接在本地设备上执行。 我们使用先进的 WebAssembly 技术来处理您的文档，而无需将其上传到外部服务器，从而确保完全的隐私。",
+      "badgeText": "本地处理"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Internal Documents Stay Numbered & Private",
-      "content": "Add page numbers to contracts and confidential reports without any server involvement."
+      "type": "pagenum_privacy_security",
+      "title": "内部文件保持编号且私密",
+      "content": "将页码添加到合同和机密报告中，无需任何服务器参与。",
+      "badgeText": "安全第一"
     },
     {
-      "type": "organizer_performance",
-      "title": "Number a 1000-Page PDF Instantly",
-      "content": "Stamping page numbers locally takes milliseconds for any size document."
+      "type": "pagenum_performance",
+      "title": "立即为 1000 页 PDF 编号",
+      "content": "对于任何大小的文档，在本地标记页码都需要几毫秒。",
+      "badgeText": "快如闪电"
     }
   ],
   "faqs": [
     {
-      "q": "What number formats are available?",
-      "a": "Arabic (1, 2, 3), Roman (i, ii, iii), and letter (a, b, c) formats."
+      "q": "有哪些数字格式可用？",
+      "a": "阿拉伯语 (1、2、3)、罗马语 (i、ii、iii) 和字母 (a、b、c) 格式。"
     },
     {
-      "q": "Can I start from a custom number?",
-      "a": "Yes, set any starting page number."
+      "q": "我可以从自定义号码开始吗？",
+      "a": "是的，设置任意起始页码。"
     },
     {
-      "q": "Can I skip numbering the first page?",
-      "a": "Yes, set the page offset to skip cover pages."
+      "q": "我可以跳过第一页的编号吗？",
+      "a": "是的，设置页面偏移以跳过封面。"
     },
     {
-      "q": "Where can I position numbers?",
-      "a": "Header-left, header-center, header-right, and same for footer."
+      "q": "我可以在哪里放置数字？",
+      "a": "页眉左、页眉中、页眉右，页脚也相同。"
     },
     {
-      "q": "Is this free?",
-      "a": "是的，完全免费。"
+      "q": "这是免费的吗？",
+      "a": "是的，永远免费。"
     }
-  ]
+  ],
+  "faqTitle": "常见问题",
+  "supportCenter": "支持中心"
 }

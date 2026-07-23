@@ -1,67 +1,85 @@
 {
-  "title": "Scan to PDF — Convert Camera Shots Offline",
-  "h1": "Convert Photos and Scans to PDF Locally",
-  "description": "Turn photos of documents taken with your camera into clean PDFs entirely in your browser. No upload. Best for users in Budapest.",
+  "title": "Szkennelés PDF-be — Konvertálja a kamerafelvételeket offline módban",
+  "h1": "Fényképek és beolvasott anyagok konvertálása PDF-be helyileg",
+  "description": "A fényképezőgéppel készített dokumentumokról készült fényképeket tiszta PDF-fájlokká alakíthatja a böngészőben. Nincs feltöltés. 100%-ban biztonságos helyi feldolgozás.",
+  "buttonText": "Scan to PDF",
+  "badges": [
+    "Webkamera használata",
+    "Mobil szkenner",
+    "Automatikus kivágás"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Use Scan-to-PDF Offline?",
-      "content": "Photos of documents contain sensitive information. Process them locally without any cloud access."
+      "type": "scan_hero_features",
+      "title": "Miért használja a PDF-be szkennelés offline módot?",
+      "content": "A dokumentumokról készült fényképek bizalmas információkat tartalmaznak. Feldolgozhatja őket helyben, felhőalapú hozzáférés nélkül."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Scans to PDF",
+      "type": "scan_how_to_steps",
+      "title": "Beolvasott beolvasások PDF formátumba konvertálása",
       "steps": [
         {
-          "title": "Import Photos",
-          "description": "Select photos taken with your phone or camera."
+          "title": "Fényképek importálása",
+          "description": "Válassza ki a telefonjával vagy fényképezőgépével készített fényképeket."
         },
         {
           "title": "Enhance Scan",
-          "description": "Auto-crop, deskew, and enhance contrast."
+          "description": "Automatikus körbevágás, torzítás és kontraszt fokozása."
         },
         {
-          "title": "Export PDF",
-          "description": "Download a clean, professional-looking scanned PDF."
+          "title": "PDF exportálása",
+          "description": "Töltsön le egy tiszta, professzionális megjelenésű beolvasott PDF-et."
         }
-      ]
+      ],
+      "badgeText": "Gyors útmutató"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Scan to PDF for Budapest Field Workers",
-      "content": "Field workers and freelancers in Budapest digitize paper documents on-the-go without uploading to cloud services."
+      "type": "scan_geo_targeting",
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Minden művelet közvetlenül a helyi eszközön történik. Fejlett WebAssembly technológiát használunk a dokumentumok feldolgozásához anélkül, hogy azokat külső szerverekre feltöltenénk, így biztosítva a teljes adatvédelmet.",
+      "badgeText": "Helyi feldolgozás"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Documents Stay on Device",
-      "content": "Invoices, contracts, and ID scans processed entirely in browser memory without any server access."
+      "type": "scan_privacy_security",
+      "title": "A beszkennelt dokumentumok az eszközön maradnak",
+      "content": "A számlák, szerződések és azonosító vizsgálatok teljes egészében a böngésző memóriájában dolgoznak fel szerver hozzáférés nélkül.",
+      "badgeText": "Első a biztonság"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Scans in Real Time",
-      "content": "Photo enhancement and PDF generation happens in milliseconds, even for high-resolution camera shots."
+      "type": "scan_performance",
+      "title": "Szkennelések konvertálása valós időben",
+      "content": "A fényképek javítása és a PDF generálása ezredmásodpercek alatt megtörténik, még a nagy felbontású kamerafelvételeknél is.",
+      "badgeText": "Villámgyors"
     }
   ],
   "faqs": [
     {
-      "q": "What photo formats are supported?",
-      "a": "JPG, PNG, WebP, and HEIC from modern cameras."
+      "q": "Milyen fotóformátumok támogatottak?",
+      "a": "JPG, PNG, WebP és HEIC a modern kamerákból."
     },
     {
-      "q": "Does it fix tilted scans?",
-      "a": "Yes, auto-deskew corrects slight angles automatically."
+      "q": "Javítja a ferde szkenneléseket?",
+      "a": "Igen, az automatikus ferdeség automatikusan korrigálja az enyhe szögeket."
     },
     {
-      "q": "Can I combine multiple scans?",
-      "a": "Yes, add multiple photos to create a multi-page PDF."
+      "q": "Kombinálhatok több szkennelést?",
+      "a": "Igen, adjon hozzá több fényképet többoldalas PDF létrehozásához."
     },
     {
-      "q": "Does it enhance contrast?",
-      "a": "Yes, document enhancement mode sharpens text for clarity."
+      "q": "Növeli a kontrasztot?",
+      "a": "Igen, a dokumentumjavító mód élesíti a szöveget az érthetőség érdekében."
     },
     {
-      "q": "Is this free?",
-      "a": "Igen, teljesen ingyenes."
+      "q": "Ez ingyenes?",
+      "a": "Igen, mindig ingyenes."
     }
-  ]
+  ],
+  "faqTitle": "Gyakran Ismételt Kérdések",
+  "supportCenter": "Támogatási Központ"
 }

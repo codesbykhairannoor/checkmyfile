@@ -1,67 +1,85 @@
 {
-  "title": "Excel to PDF — Convert Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to PDF Securely",
-  "description": "Turn .xlsx and .csv files into crisp PDFs locally in your browser. Financial data stays on your device. Perfect for users in Kuala Lumpur.",
+  "title": "Excel kepada PDF — Tukar Hamparan Luar Talian",
+  "h1": "Tukar Hamparan Excel kepada PDF Dengan Selamat",
+  "description": "Tukar fail .xlsx dan .csv menjadi PDF yang tajam secara setempat dalam penyemak imbas anda. Data kewangan kekal pada peranti anda. 100% pemprosesan tempatan selamat.",
+  "buttonText": "Convert Spreadsheet",
+  "badges": [
+    "Laporan Kewangan",
+    "Invois",
+    "Eksport Data"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Excel Offline?",
-      "content": "Spreadsheets often contain sensitive financial data. Our browser-based engine converts without any server involvement."
+      "type": "excel_hero_features",
+      "title": "Mengapa Menukar Excel Luar Talian?",
+      "content": "Hamparan selalunya mengandungi data kewangan yang sensitif. Enjin berasaskan pelayar kami menukar tanpa sebarang penglibatan pelayan."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Export Excel as PDF",
+      "type": "excel_how_to_steps",
+      "title": "Cara Mengeksport Excel sebagai PDF",
       "steps": [
         {
-          "title": "Open Spreadsheet",
-          "description": "Select your .xlsx or .csv file."
+          "title": "Buka Hamparan",
+          "description": "Pilih fail .xlsx atau .csv anda."
         },
         {
-          "title": "Choose Sheet Range",
-          "description": "Pick which sheets or rows to include."
+          "title": "Pilih Julat Helaian",
+          "description": "Pilih helaian atau baris yang hendak disertakan."
         },
         {
-          "title": "Export as PDF",
-          "description": "Download your spreadsheet as a clean PDF."
+          "title": "Eksport sebagai PDF",
+          "description": "Muat turun hamparan anda sebagai PDF yang bersih."
         }
-      ]
+      ],
+      "badgeText": "Panduan Pantas"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Excel to PDF for Kuala Lumpur Businesses",
-      "content": "Businesses in Kuala Lumpur use our tool to share financial reports without exposing raw spreadsheet data."
+      "type": "excel_geo_targeting",
+      "title": "100% Pemprosesan Tempatan Selamat",
+      "content": "Semua operasi dilakukan terus pada peranti tempatan anda. Kami menggunakan teknologi WebAssembly termaju untuk memproses dokumen anda tanpa pernah memuat naiknya ke pelayan luaran, memastikan privasi lengkap.",
+      "badgeText": "Pemprosesan Setempat"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Protect Financial Spreadsheets",
-      "content": "Balance sheets, payroll data — all processed offline. Zero data sent to any third party."
+      "type": "excel_privacy_security",
+      "title": "Lindungi Hamparan Kewangan",
+      "content": "Kunci kira-kira, data gaji — semua diproses di luar talian. Data sifar dihantar kepada mana-mana pihak ketiga.",
+      "badgeText": "Keselamatan Diutamakan"
     },
     {
-      "type": "combiner_performance",
-      "title": "Spreadsheet-to-PDF in Seconds",
-      "content": "No upload queue, no compression artifacts. Your spreadsheet renders natively in-browser."
+      "type": "excel_performance",
+      "title": "Hamparan-ke-PDF dalam Saat",
+      "content": "Tiada baris gilir muat naik, tiada artifak mampatan. Hamparan anda dipaparkan secara asli dalam penyemak imbas.",
+      "badgeText": "Sepantas Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "Are all Excel formulas preserved?",
-      "a": "Yes, formula results are captured in the PDF snapshot."
+      "q": "Adakah semua formula Excel dipelihara?",
+      "a": "Ya, hasil formula ditangkap dalam petikan PDF."
     },
     {
-      "q": "Can I convert multiple sheets?",
-      "a": "Yes, you can include all sheets or specific ones."
+      "q": "Bolehkah saya menukar berbilang helaian?",
+      "a": "Ya, anda boleh memasukkan semua helaian atau helaian tertentu."
     },
     {
-      "q": "What file types are supported?",
-      "a": ".xlsx, .xls, and .csv are all supported."
+      "q": "Apakah jenis fail yang disokong?",
+      "a": ".xlsx, .xls dan .csv semuanya disokong."
     },
     {
-      "q": "Is this secure for financial data?",
-      "a": "Absolutely. The file never leaves your browser."
+      "q": "Adakah ini selamat untuk data kewangan?",
+      "a": "betul-betul. Fail itu tidak pernah meninggalkan penyemak imbas anda."
     },
     {
-      "q": "Does it support graphs?",
-      "a": "Ya, percuma sepenuhnya."
+      "q": "Adakah ia menyokong graf?",
+      "a": "Carta dan graf terbenam dipaparkan dalam PDF."
     }
-  ]
+  ],
+  "faqTitle": "Soalan Lazim",
+  "supportCenter": "Pusat Sokongan"
 }

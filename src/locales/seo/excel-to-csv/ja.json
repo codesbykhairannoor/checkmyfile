@@ -1,67 +1,85 @@
 {
-  "title": "Excel to CSV Converter — Export Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to CSV Locally",
-  "description": "Export .xlsx files to clean .csv format entirely in your browser. No upload. Ideal for developers in Tokyo.",
+  "title": "Excel から CSV へのコンバーター - スプレッドシートをオフラインでエクスポート",
+  "h1": "Excel スプレッドシートをローカルで CSV に変換",
+  "description": ".xlsx ファイルをブラウザ内で完全にクリーンな .csv 形式にエクスポートします。 アップロードはありません。 100% 安全なローカル処理。",
+  "buttonText": "Convert to CSV",
+  "badges": [
+    "生データ",
+    "データベースのインポート",
+    "高速エクスポート"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Export to CSV Offline?",
-      "content": "Exporting spreadsheets to CSV for data pipelines should not expose your raw data to any external API."
+      "type": "excel_csv_hero_features",
+      "title": "オフラインで CSV にエクスポートする理由",
+      "content": "データ パイプライン用にスプレッドシートを CSV にエクスポートする場合、生データが外部 API に公開されるべきではありません。"
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Excel to CSV",
+      "type": "excel_csv_how_to_steps",
+      "title": "Excel を CSV に変換する方法",
       "steps": [
         {
-          "title": "Open Excel File",
-          "description": "Select the .xlsx spreadsheet."
+          "title": "Excel ファイルを開く",
+          "description": ".xlsx スプレッドシートを選択します。"
         },
         {
-          "title": "Choose Sheet",
-          "description": "Pick which sheet to export as CSV."
+          "title": "シートを選択",
+          "description": "CSV としてエクスポートするシートを選択します。"
         },
         {
-          "title": "Download CSV",
-          "description": "Get your clean CSV file instantly."
+          "title": "CSV をダウンロード",
+          "description": "クリーンな CSV ファイルをすぐに入手できます。"
         }
-      ]
+      ],
+      "badgeText": "クイックガイド"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Developer Tools for Tokyo",
-      "content": "Developers and data engineers in Tokyo export spreadsheets to CSV for pipelines without cloud intermediaries."
+      "type": "excel_csv_geo_targeting",
+      "title": "100% 安全なローカル処理",
+      "content": "すべての操作はローカル デバイス上で直接実行されます。 当社は高度な WebAssembly テクノロジーを使用して、ドキュメントを外部サーバーにアップロードすることなく処理し、完全なプライバシーを確​​保します。",
+      "badgeText": "ローカル処理"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Spreadsheet Data Stays Local",
-      "content": "Financial models and business data exported to CSV without any server-side processing."
+      "type": "excel_csv_privacy_security",
+      "title": "スプレッドシート データはローカルに残ります",
+      "content": "財務モデルとビジネス データは、サーバー側で処理することなく CSV にエクスポートされます。",
+      "badgeText": "セキュリティ第一"
     },
     {
-      "type": "organizer_performance",
-      "title": "Export Any Spreadsheet Instantly",
-      "content": "Export a 50,000-row Excel file to CSV in under 1 second. All in-browser."
+      "type": "excel_csv_performance",
+      "title": "あらゆるスプレッドシートを即座にエクスポート",
+      "content": "50,000 行の Excel ファイルを 1 秒以内に CSV にエクスポートします。 すべてブラウザ内で。",
+      "badgeText": "超高速"
     }
   ],
   "faqs": [
     {
-      "q": "Can I export multiple sheets?",
-      "a": "Yes, export each sheet as a separate CSV file."
+      "q": "複数のシートをエクスポートできますか?",
+      "a": "はい、各シートを個別の CSV ファイルとしてエクスポートします。"
     },
     {
-      "q": "Is Excel formatting preserved in CSV?",
-      "a": "CSV is plain text; formatting is removed but all values are preserved."
+      "q": "Excel の書式設定は CSV に保存されますか?",
+      "a": "CSV はプレーンテキストです。 書式設定は削除されますが、すべての値は保持されます。"
     },
     {
-      "q": "Can I choose the delimiter?",
-      "a": "Yes, choose comma, semicolon, or tab."
+      "q": "区切り文字を選択できますか?",
+      "a": "はい、カンマ、セミコロン、またはタブを選択します。"
     },
     {
-      "q": "Are formulas exported as values?",
-      "a": "Yes, formula results (not formulas) are written to the CSV."
+      "q": "数式は値としてエクスポートされますか?",
+      "a": "はい、数式の結果 (数式ではない) が CSV に書き込まれます。"
     },
     {
-      "q": "Is this free?",
-      "a": "はい、完全無料です。"
+      "q": "これは無料ですか？",
+      "a": "はい、完全に無料です。"
     }
-  ]
+  ],
+  "faqTitle": "よくある質問",
+  "supportCenter": "サポート センター"
 }

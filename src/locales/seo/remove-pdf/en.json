@@ -1,0 +1,81 @@
+{
+  "title": "Remove Pages from PDF — Delete PDF Pages Offline",
+  "h1": "Remove Pages from PDF Instantly",
+  "description": "Delete unwanted pages from your PDF file securely inside your browser. Fast and completely secure.",
+  "buttonText": "Remove Pages",
+  "badges": [
+    "Select & Delete",
+    "Visual Editor",
+    "Zero latency"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "remove_hero_features",
+      "title": "Why Remove Pages Locally?",
+      "content": "Deleting sensitive or unnecessary pages from your document should be done on your device, not a server. We ensure 100% privacy."
+    },
+    {
+      "type": "remove_how_to_steps",
+      "title": "How to Remove PDF Pages",
+      "steps": [
+        {
+          "title": "Open PDF",
+          "description": "Load the PDF you want to clean up."
+        },
+        {
+          "title": "Select Pages to Delete",
+          "description": "Hover over pages and click the trash icon to mark them for deletion."
+        },
+        {
+          "title": "Export Clean PDF",
+          "description": "Download your new PDF without the deleted pages."
+        }
+      ]
+    },
+    {
+      "type": "remove_geo_targeting",
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy."
+    },
+    {
+      "type": "remove_privacy_security",
+      "title": "Total Deletion Privacy",
+      "content": "When you remove a page, it is permanently deleted from the document in your browser memory before saving."
+    },
+    {
+      "type": "remove_performance",
+      "title": "Instant Page Removal",
+      "content": "Extracting and deleting pages from even a 1000-page document takes milliseconds using our optimized WASM engine."
+    }
+  ],
+  "faqTitle": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "q": "Are the deleted pages recoverable?",
+      "a": "Once you download the new PDF, the deleted pages are permanently removed from that file. Your original file remains untouched."
+    },
+    {
+      "q": "Do I need to upload my PDF?",
+      "a": "No. The entire page removal process happens locally in your web browser."
+    },
+    {
+      "q": "Is there a limit to how many pages I can delete?",
+      "a": "No, you can delete as many pages as you want, completely free."
+    },
+    {
+      "q": "Will the layout of remaining pages change?",
+      "a": "No, the remaining pages will retain their exact original formatting and layout."
+    },
+    {
+      "q": "Can I select multiple pages at once?",
+      "a": "Yes, you can click on multiple pages to mark them all for deletion simultaneously."
+    }
+  ],
+  "supportCenter": "Support Center"
+}

@@ -1,67 +1,85 @@
 {
-  "title": "PowerPoint to PDF Converter — Offline & Free",
-  "h1": "Convert PowerPoint Presentations to PDF Instantly",
-  "description": "Convert .pptx presentations to high-quality PDFs directly in your browser. No cloud needed. Perfect for presenters in Bangkok.",
+  "title": "โปรแกรมแปลง PowerPoint เป็น PDF — ออฟไลน์และฟรี",
+  "h1": "แปลงงานนำเสนอ PowerPoint เป็น PDF ทันที",
+  "description": "แปลงงานนำเสนอ .pptx เป็น PDF คุณภาพสูงได้โดยตรงในเบราว์เซอร์ของคุณ ไม่จำเป็นต้องใช้คลาวด์ การประมวลผลภายในที่ปลอดภัย 100%",
+  "buttonText": "Convert Slides",
+  "badges": [
+    "การประชุมคณะกรรมการ",
+    "สำรับสนาม",
+    "สินค้าที่ยังไม่ได้เผยแพร่"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Presentations Offline?",
-      "content": "Your slides may contain unreleased products or confidential strategies. Convert without risking data exposure."
+      "type": "ppt_hero_features",
+      "title": "เหตุใดจึงต้องแปลงการนำเสนอแบบออฟไลน์",
+      "content": "สไลด์ของคุณอาจมีผลิตภัณฑ์ที่ยังไม่เผยแพร่หรือกลยุทธ์ที่เป็นความลับ แปลงโดยไม่ต้องเสี่ยงต่อการเปิดเผยข้อมูล"
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert PowerPoint to PDF",
+      "type": "ppt_how_to_steps",
+      "title": "วิธีแปลง PowerPoint เป็น PDF",
       "steps": [
         {
-          "title": "Load Presentation",
-          "description": "Select your .pptx file from your device."
+          "title": "โหลดการนำเสนอ",
+          "description": "เลือกไฟล์ .pptx จากอุปกรณ์ของคุณ"
         },
         {
-          "title": "Select Slide Range",
-          "description": "Include all slides or specific ones."
+          "title": "เลือกช่วงสไลด์",
+          "description": "รวมสไลด์ทั้งหมดหรือสไลด์เฉพาะ"
         },
         {
-          "title": "Download PDF",
-          "description": "Get your PDF with all formatting preserved."
+          "title": "ดาวน์โหลดไฟล์ PDF",
+          "description": "รับ PDF ของคุณโดยคงการจัดรูปแบบทั้งหมดไว้"
         }
-      ]
+      ],
+      "badgeText": "คู่มือฉบับย่อ"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Presentation Conversion in Bangkok",
-      "content": "Presenters in Bangkok trust us to convert slide decks without leaking unreleased content to cloud servers."
+      "type": "ppt_geo_targeting",
+      "title": "การประมวลผลภายในที่ปลอดภัย 100%",
+      "content": "การดำเนินการทั้งหมดดำเนินการโดยตรงบนอุปกรณ์ท้องถิ่นของคุณ เราใช้เทคโนโลยี WebAssembly ขั้นสูงเพื่อประมวลผลเอกสารของคุณโดยไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ภายนอก เพื่อให้มั่นใจถึงความเป็นส่วนตัวโดยสมบูรณ์",
+      "badgeText": "การประมวลผลในท้องถิ่น"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Confidential Slides Stay Confidential",
-      "content": "Pre-launch product decks? Board presentations? Converted 100% locally without network access."
+      "type": "ppt_privacy_security",
+      "title": "สไลด์ที่เป็นความลับ รักษาความลับ",
+      "content": "สำรับผลิตภัณฑ์ก่อนการเปิดตัว? การนำเสนอของคณะกรรมการ? แปลงภายในเครื่อง 100% โดยไม่ต้องเข้าถึงเครือข่าย",
+      "badgeText": "ความปลอดภัยต้องมาก่อน"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Slide Export",
-      "content": "Convert 100-slide decks in seconds. No queue, no waiting, no upload bandwidth wasted."
+      "type": "ppt_performance",
+      "title": "ส่งออกสไลด์ทันที",
+      "content": "แปลงสำรับ 100 สไลด์ในไม่กี่วินาที ไม่ต้องรอคิว ไม่ต้องรอ ไม่ต้องเปลืองแบนด์วิธในการอัพโหลด",
+      "badgeText": "เร็วปานสายฟ้า"
     }
   ],
   "faqs": [
     {
-      "q": "Are slide animations preserved?",
-      "a": "Animations are flattened into static PDF frames."
+      "q": "ภาพเคลื่อนไหวของสไลด์จะยังคงอยู่หรือไม่",
+      "a": "ภาพเคลื่อนไหวจะถูกทำให้เป็นเฟรม PDF แบบคงที่"
     },
     {
-      "q": "What resolution is the output?",
-      "a": "High-resolution rendering at 150 DPI by default."
+      "q": "ความละเอียดเอาต์พุตคืออะไร?",
+      "a": "การเรนเดอร์ความละเอียดสูงที่ 150 DPI โดยค่าเริ่มต้น"
     },
     {
-      "q": "Can I convert selected slides only?",
-      "a": "Yes, specify slide ranges like 1-10 or 5,8,12."
+      "q": "ฉันสามารถแปลงเฉพาะสไลด์ที่เลือกได้หรือไม่",
+      "a": "ใช่ ระบุช่วงสไลด์ เช่น 1-10 หรือ 5,8,12"
     },
     {
-      "q": "Is .ppt (old format) supported?",
-      "a": "Yes, both .ppt and .pptx are supported."
+      "q": "รองรับ .ppt (รูปแบบเก่า) หรือไม่",
+      "a": "ใช่ รองรับทั้ง .ppt และ .pptx"
     },
     {
-      "q": "Is this free to use?",
-      "a": "ใช่ ฟรีทั้งหมด"
+      "q": "ใช้งานได้ฟรีหรือเปล่า?",
+      "a": "ใช่ ใช้งานได้ฟรีโดยไม่มีลายน้ำ"
     }
-  ]
+  ],
+  "faqTitle": "คำถามที่พบบ่อย",
+  "supportCenter": "ศูนย์สนับสนุน"
 }

@@ -1,15 +1,27 @@
 {
   "title": "Text to PDF Converter — Offline & Instant",
   "h1": "Convert Plain Text Files to PDF Locally",
-  "description": "Transform .txt files into clean, readable PDFs directly in your browser. No upload required. Ideal for users in New York.",
+  "description": "Transform .txt files into clean, readable PDFs directly in your browser. No upload required. 100% secure local processing.",
+  "buttonText": "Convert Text",
+  "badges": [
+    "Code Snippets",
+    "Server Logs",
+    "Manuscripts"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
+      "type": "txt_hero_features",
       "title": "Why Convert Text Files Offline?",
       "content": "Text files often contain code, scripts, or sensitive notes. Our offline converter ensures zero data transmission."
     },
     {
-      "type": "combiner_how_to_steps",
+      "type": "txt_how_to_steps",
       "title": "How to Convert Text to PDF",
       "steps": [
         {
@@ -27,17 +39,17 @@
       ]
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Text to PDF for New York Developers",
-      "content": "Developers and writers in New York use our tool to convert scripts and notes without cloud dependency."
+      "type": "txt_geo_targeting",
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy."
     },
     {
-      "type": "combiner_privacy_security",
+      "type": "txt_privacy_security",
       "title": "Code Stays on Your Machine",
       "content": "Source code, legal notes, medical records — text files converted with zero server involvement."
     },
     {
-      "type": "combiner_performance",
+      "type": "txt_performance",
       "title": "Instant Text Rendering",
       "content": "Convert any size text file to PDF in milliseconds. No upload, no compression, no delay."
     }

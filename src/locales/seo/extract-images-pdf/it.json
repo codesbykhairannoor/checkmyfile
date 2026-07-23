@@ -1,67 +1,85 @@
 {
-  "title": "Extract Images from PDF — Offline Extractor",
-  "h1": "Extract All Embedded Images from PDF Files",
-  "description": "Pull out every image from a PDF and download them as PNG or JPG files, all in your browser. No cloud. Ideal for users in Rome.",
+  "title": "Estrai immagini da PDF — Estrattore offline",
+  "h1": "Estrai tutte le immagini incorporate dai file PDF",
+  "description": "Estrai tutte le immagini da un PDF e scaricale come file PNG o JPG, tutto nel tuo browser. Nessuna nuvola. Elaborazione locale sicura al 100%.",
+  "buttonText": "Extract All Images",
+  "badges": [
+    "Foto del prodotto",
+    "Diagrammi riservati",
+    "Vettori"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract Images Offline?",
-      "content": "PDFs with confidential diagrams or product photos should never be uploaded. Extract images directly in your browser."
+      "type": "extract_images_hero_features",
+      "title": "Perché estrarre le immagini offline?",
+      "content": "I PDF con diagrammi riservati o foto di prodotti non devono mai essere caricati. Estrai le immagini direttamente nel tuo browser."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Extract Images from PDF",
+      "type": "extract_images_how_to_steps",
+      "title": "Come estrarre immagini da PDF",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Open the PDF containing embedded images."
+          "title": "Carica PDF",
+          "description": "Apri il PDF contenente le immagini incorporate."
         },
         {
-          "title": "Scan for Images",
-          "description": "Our engine locates all embedded image objects."
+          "title": "Cerca immagini",
+          "description": "Il nostro motore individua tutti gli oggetti immagine incorporati."
         },
         {
-          "title": "Download ZIP",
-          "description": "Get all extracted images in a single ZIP file."
+          "title": "Scarica ZIP",
+          "description": "Ottieni tutte le immagini estratte in un unico file ZIP."
         }
-      ]
+      ],
+      "badgeText": "Guida rapida"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Image Extraction in Rome",
-      "content": "Publishers and marketers in Rome extract product photos and diagrams from PDFs without cloud uploads."
+      "type": "extract_images_geo_targeting",
+      "title": "Elaborazione locale sicura al 100%",
+      "content": "Tutte le operazioni vengono eseguite direttamente sul tuo dispositivo locale. Utilizziamo la tecnologia avanzata WebAssembly per elaborare i tuoi documenti senza mai caricarli su server esterni, garantendo la completa privacy.",
+      "badgeText": "Elaborazione locale"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Product Images Stay Confidential",
-      "content": "Unreleased product photos embedded in PDFs extracted locally without any server access."
+      "type": "extract_images_privacy_security",
+      "title": "Le immagini dei prodotti rimangono confidenziali",
+      "content": "Foto di prodotti inedite incorporate in PDF estratti localmente senza alcun accesso al server.",
+      "badgeText": "La sicurezza prima di tutto"
     },
     {
-      "type": "split_performance",
-      "title": "Extract Hundreds of Images Fast",
-      "content": "Extract 500 images from a PDF in seconds. All native browser processing."
+      "type": "extract_images_performance",
+      "title": "Estrai centinaia di immagini velocemente",
+      "content": "Estrai 500 immagini da un PDF in pochi secondi. Tutta l'elaborazione nativa del browser.",
+      "badgeText": "Velocissimo"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are extracted?",
-      "a": "Images are saved in their original format (PNG, JPG, etc.)."
+      "q": "Quali formati di immagine vengono estratti?",
+      "a": "Le immagini vengono salvate nel loro formato originale (PNG, JPG, ecc.)."
     },
     {
-      "q": "Are images at full resolution?",
-      "a": "Yes, extracted at the original embedded resolution."
+      "q": "Le immagini sono alla massima risoluzione?",
+      "a": "Sì, estratto alla risoluzione incorporata originale."
     },
     {
-      "q": "Can I choose specific pages?",
-      "a": "Yes, specify which pages to extract images from."
+      "q": "Posso scegliere pagine specifiche?",
+      "a": "Sì, specifica da quali pagine estrarre le immagini."
     },
     {
-      "q": "Does it extract vector graphics?",
-      "a": "Vector elements are rasterized to PNG/JPG."
+      "q": "Estrae la grafica vettoriale?",
+      "a": "Gli elementi vettoriali vengono rasterizzati in PNG/JPG."
     },
     {
-      "q": "Is this free?",
-      "a": "Sì, completamente gratuito."
+      "q": "E' gratis?",
+      "a": "Sì, sempre gratuito."
     }
-  ]
+  ],
+  "faqTitle": "Domande frequenti",
+  "supportCenter": "Centro di supporto"
 }

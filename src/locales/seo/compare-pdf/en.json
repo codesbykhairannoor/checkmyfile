@@ -1,15 +1,27 @@
 {
   "title": "Compare PDF Files — Spot Differences Locally",
   "h1": "Compare Two PDF Documents Side by Side",
-  "description": "Upload two PDFs and highlight differences between them entirely in your browser. No upload to servers. Ideal for users in New York.",
+  "description": "Upload two PDFs and highlight differences between them entirely in your browser. No upload to servers. 100% secure local processing.",
+  "buttonText": "Compare PDFs",
+  "badges": [
+    "Find Differences",
+    "Highlight Changes",
+    "Visual Diff"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
+      "type": "compare_hero_features",
       "title": "Why Compare PDFs Locally?",
       "content": "Comparing contract versions or document revisions often involves highly sensitive content. Do it entirely offline."
     },
     {
-      "type": "organizer_how_to_steps",
+      "type": "compare_how_to_steps",
       "title": "How to Compare Two PDFs",
       "steps": [
         {
@@ -27,17 +39,17 @@
       ]
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Comparison for New York Law Firms",
-      "content": "Legal professionals in New York compare contract revisions without uploading privileged documents to cloud services."
+      "type": "compare_geo_targeting",
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy."
     },
     {
-      "type": "organizer_privacy_security",
+      "type": "compare_privacy_security",
       "title": "Privileged Documents Stay Private",
       "content": "Compare NDAs, contracts, and regulatory filings without any server interaction."
     },
     {
-      "type": "organizer_performance",
+      "type": "compare_performance",
       "title": "Instant Side-by-Side Comparison",
       "content": "Compare 100-page documents in seconds with highlighted differences rendered in-browser."
     }

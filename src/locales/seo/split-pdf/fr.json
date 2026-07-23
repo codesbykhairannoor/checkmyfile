@@ -1,67 +1,85 @@
 {
-  "title": "Split PDF - Extract Pages Securely",
-  "h1": "Split and Extract PDF Pages in Seconds",
-  "description": "Extract specific pages or split a large PDF into multiple files locally in your browser. Perfect for legal professionals in Paris.",
+  "title": "Diviser un PDF - Extraire des pages en toute sécurité",
+  "h1": "Diviser et extraire des pages PDF en quelques secondes",
+  "description": "Extrayez des pages spécifiques ou divisez un PDF volumineux en plusieurs fichiers localement dans votre navigateur. Rapide et totalement sécurisé.",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Split PDFs Locally?",
-      "content": "When dealing with massive legal or corporate documents, extracting a single page shouldn't require uploading a 1GB file. Do it instantly right on your machine."
+      "title": "Pourquoi diviser des PDF localement ?",
+      "content": "Lorsqu'il s'agit de documents juridiques ou d'entreprise volumineux, l'extraction d'une seule page ne devrait pas nécessiter le téléchargement d'un fichier de 1 Go. Faites-le instantanément directement sur votre machine."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Extract Pages",
+      "title": "Comment extraire des pages",
       "steps": [
         {
-          "title": "Open Document",
-          "description": "Load the multi-page PDF you want to split."
+          "title": "Ouvrir le document",
+          "description": "Chargez le PDF multipage que vous souhaitez diviser."
         },
         {
-          "title": "Select Ranges",
-          "description": "Pick specific page numbers or visually select pages to extract."
+          "title": "Sélectionnez des plages",
+          "description": "Choisissez des numéros de page spécifiques ou sélectionnez visuellement les pages à extraire."
         },
         {
-          "title": "Export Zip",
-          "description": "Download your newly split files organized in a ZIP."
+          "title": "Exporter le code postal",
+          "description": "Téléchargez vos fichiers nouvellement divisés organisés dans un ZIP."
         }
-      ]
+      ],
+      "badgeText": "Guide rapide"
     },
     {
       "type": "split_geo_targeting",
-      "title": "The Best Splitter in Paris, FR-IDF",
-      "content": "Whether you are studying in Paris or working on a tight deadline, extracting pages is now instantaneous."
+      "title": "Traitement local 100 % sécurisé",
+      "content": "Toutes les opérations sont effectuées directement sur votre appareil local. Nous utilisons la technologie avancée WebAssembly pour traiter vos documents sans jamais les télécharger sur des serveurs externes, garantissant ainsi une confidentialité totale.",
+      "badgeText": "Traitement local"
     },
     {
       "type": "split_privacy_security",
-      "title": "Total Page Privacy",
-      "content": "Splitting confidential employee records? Rest easy knowing our code executes purely in your local environment."
+      "title": "Confidentialité totale des pages",
+      "content": "Diviser les dossiers confidentiels des employés ? Soyez tranquille en sachant que notre code s’exécute uniquement dans votre environnement local.",
+      "badgeText": "La sécurité d'abord"
     },
     {
       "type": "split_performance",
-      "title": "Zero-Upload Extraction",
-      "content": "Grabbing page 14 from a 2000-page PDF takes milliseconds, skipping the excruciating upload step entirely."
+      "title": "Extraction sans téléchargement",
+      "content": "Récupérer la page 14 d'un PDF de 2 000 pages prend quelques millisecondes, sautant ainsi l'atroce étape de téléchargement.",
+      "badgeText": "Rapide comme l'éclair"
     }
   ],
   "faqs": [
     {
-      "q": "How do I extract just one page?",
-      "a": "Simply click on the page thumbnail you want and hit Export."
+      "q": "Comment extraire une seule page ?",
+      "a": "Cliquez simplement sur la vignette de la page souhaitée et appuyez sur Exporter."
     },
     {
-      "q": "Can I split the PDF in half?",
-      "a": "Yes, you can specify custom page ranges like 1-10 and 11-20."
+      "q": "Puis-je diviser le PDF en deux ?",
+      "a": "Oui, vous pouvez spécifier des plages de pages personnalisées telles que 1-10 et 11-20."
     },
     {
-      "q": "Will the extracted pages lose quality?",
-      "a": "No, the splitting process uses binary extraction, preserving 100% of the original quality."
+      "q": "Les pages extraites perdront-elles en qualité ?",
+      "a": "Non, le processus de fractionnement utilise une extraction binaire, préservant 100 % de la qualité originale."
     },
     {
-      "q": "Is my document uploaded when splitting?",
-      "a": "Never. The entire 2000-page document stays strictly in your browser."
+      "q": "Mon document est-il téléchargé lors du fractionnement ?",
+      "a": "Jamais. L'intégralité du document de 2000 pages reste strictement dans votre navigateur."
     },
     {
-      "q": "Is there a limit to how many pages I can split?",
-      "a": "No limits! Split as many pages as your computer can handle."
+      "q": "Y a-t-il une limite au nombre de pages que je peux diviser ?",
+      "a": "Aucune limite ! Divisez autant de pages que votre ordinateur peut en gérer."
     }
-  ]
+  ],
+  "badges": [
+    "Partage instantané",
+    "Plage précise",
+    "Aucune limite"
+  ],
+  "stats": [
+    "Ultra Fast",
+    "No Upload",
+    "Batch Zip",
+    "Secure"
+  ],
+  "buttonText": "Split PDF",
+  "faqTitle": "Foire aux questions",
+  "supportCenter": "Centre d'assistance"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Compare PDF Files — Spot Differences Locally",
-  "h1": "Compare Two PDF Documents Side by Side",
-  "description": "Upload two PDFs and highlight differences between them entirely in your browser. No upload to servers. Ideal for users in Bangkok.",
+  "title": "เปรียบเทียบไฟล์ PDF — ค้นหาความแตกต่างในพื้นที่",
+  "h1": "เปรียบเทียบเอกสาร PDF สองฉบับเคียงข้างกัน",
+  "description": "อัปโหลด PDF สองไฟล์และเน้นความแตกต่างระหว่างไฟล์เหล่านั้นทั้งหมดในเบราว์เซอร์ของคุณ ไม่มีการอัพโหลดไปยังเซิร์ฟเวอร์ การประมวลผลภายในที่ปลอดภัย 100%",
+  "buttonText": "Compare PDFs",
+  "badges": [
+    "ค้นหาความแตกต่าง",
+    "เน้นการเปลี่ยนแปลง",
+    "ความแตกต่างของภาพ"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Compare PDFs Locally?",
-      "content": "Comparing contract versions or document revisions often involves highly sensitive content. Do it entirely offline."
+      "type": "compare_hero_features",
+      "title": "เหตุใดจึงต้องเปรียบเทียบ PDF ภายในเครื่อง",
+      "content": "การเปรียบเทียบเวอร์ชันสัญญาหรือการแก้ไขเอกสารมักเกี่ยวข้องกับเนื้อหาที่มีความละเอียดอ่อนสูง ทำแบบออฟไลน์ทั้งหมด"
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Compare Two PDFs",
+      "type": "compare_how_to_steps",
+      "title": "วิธีเปรียบเทียบ PDF สองไฟล์",
       "steps": [
         {
-          "title": "Load Both PDFs",
-          "description": "Select the two PDF versions to compare."
+          "title": "โหลด PDF ทั้งสองไฟล์",
+          "description": "เลือก PDF ทั้งสองเวอร์ชันเพื่อเปรียบเทียบ"
         },
         {
-          "title": "View Differences",
-          "description": "Highlighted changes appear side by side."
+          "title": "ดูความแตกต่าง",
+          "description": "การเปลี่ยนแปลงที่ไฮไลต์จะปรากฏขึ้นเคียงข้างกัน"
         },
         {
-          "title": "Export Diff Report",
-          "description": "Download a comparison report with all changes marked."
+          "title": "รายงานผลต่างการส่งออก",
+          "description": "ดาวน์โหลดรายงานการเปรียบเทียบที่มีการทำเครื่องหมายการเปลี่ยนแปลงทั้งหมด"
         }
-      ]
+      ],
+      "badgeText": "คู่มือฉบับย่อ"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Comparison for Bangkok Law Firms",
-      "content": "Legal professionals in Bangkok compare contract revisions without uploading privileged documents to cloud services."
+      "type": "compare_geo_targeting",
+      "title": "การประมวลผลภายในที่ปลอดภัย 100%",
+      "content": "การดำเนินการทั้งหมดดำเนินการโดยตรงบนอุปกรณ์ท้องถิ่นของคุณ เราใช้เทคโนโลยี WebAssembly ขั้นสูงเพื่อประมวลผลเอกสารของคุณโดยไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ภายนอก เพื่อให้มั่นใจถึงความเป็นส่วนตัวโดยสมบูรณ์",
+      "badgeText": "การประมวลผลในท้องถิ่น"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Privileged Documents Stay Private",
-      "content": "Compare NDAs, contracts, and regulatory filings without any server interaction."
+      "type": "compare_privacy_security",
+      "title": "เอกสารสิทธิพิเศษยังคงเป็นส่วนตัว",
+      "content": "เปรียบเทียบ NDA สัญญา และการยื่นตามกฎระเบียบโดยไม่ต้องโต้ตอบกับเซิร์ฟเวอร์",
+      "badgeText": "ความปลอดภัยต้องมาก่อน"
     },
     {
-      "type": "organizer_performance",
-      "title": "Instant Side-by-Side Comparison",
-      "content": "Compare 100-page documents in seconds with highlighted differences rendered in-browser."
+      "type": "compare_performance",
+      "title": "การเปรียบเทียบแบบเคียงข้างกันทันที",
+      "content": "เปรียบเทียบเอกสาร 100 หน้าในไม่กี่วินาทีโดยเน้นความแตกต่างที่แสดงผลในเบราว์เซอร์",
+      "badgeText": "เร็วปานสายฟ้า"
     }
   ],
   "faqs": [
     {
-      "q": "What types of differences are detected?",
-      "a": "Text additions, deletions, and formatting changes are highlighted."
+      "q": "ตรวจพบความแตกต่างประเภทใดบ้าง?",
+      "a": "การเพิ่มข้อความ การลบ และการเปลี่ยนแปลงการจัดรูปแบบจะถูกไฮไลต์"
     },
     {
-      "q": "Can I compare scanned PDFs?",
-      "a": "For scanned PDFs, use OCR first to extract text before comparing."
+      "q": "ฉันสามารถเปรียบเทียบ PDF ที่สแกนได้หรือไม่",
+      "a": "สำหรับ PDF ที่สแกน ให้ใช้ OCR ก่อนเพื่อแยกข้อความก่อนทำการเปรียบเทียบ"
     },
     {
-      "q": "Can I export the comparison?",
-      "a": "Yes, download a marked-up PDF showing all differences."
+      "q": "ฉันสามารถส่งออกการเปรียบเทียบได้หรือไม่",
+      "a": "ใช่ ดาวน์โหลดไฟล์ PDF ที่มาร์กอัปซึ่งแสดงความแตกต่างทั้งหมด"
     },
     {
-      "q": "How many versions can I compare?",
-      "a": "Two documents at a time in the side-by-side view."
+      "q": "เทียบได้กี่รุ่นครับ?",
+      "a": "เอกสารสองฉบับพร้อมกันในมุมมองแบบเคียงข้างกัน"
     },
     {
-      "q": "Is this free?",
-      "a": "ใช่ ฟรีทั้งหมด"
+      "q": "ฟรีหรือเปล่า?",
+      "a": "ใช่ สมบูรณ์ฟรี"
     }
-  ]
+  ],
+  "faqTitle": "คำถามที่พบบ่อย",
+  "supportCenter": "ศูนย์สนับสนุน"
 }

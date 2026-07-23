@@ -1,67 +1,85 @@
 {
-  "title": "Rotate PDF Pages — Fix Orientation Offline",
-  "h1": "Rotate PDF Pages to the Correct Orientation",
-  "description": "Fix upside-down or sideways PDF pages instantly in your browser. No upload. Perfect for users in Bratislava.",
+  "title": "Otočiť stránky PDF — Oprava orientácie offline",
+  "h1": "Otočte stránky PDF do správnej orientácie",
+  "description": "Okamžite opravte prevrátené alebo prevrátené stránky PDF vo svojom prehliadači. Rýchle a úplne bezpečné.",
+  "buttonText": "Rotate Pages",
+  "badges": [
+    "Otočiť o 90°/180°",
+    "Dávkové spracovanie",
+    "Okamžitá oprava"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Rotate PDFs Locally?",
-      "content": "Scanned documents often come out sideways. Fix their orientation instantly without uploading anything to the cloud."
+      "type": "rotate_hero_features",
+      "title": "Prečo lokálne otáčať súbory PDF?",
+      "content": "Naskenované dokumenty často vychádzajú bokom. Okamžite opravte ich orientáciu bez nahrávania čohokoľvek do cloudu."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Rotate PDF Pages",
+      "type": "rotate_how_to_steps",
+      "title": "Ako otáčať stránky PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page orientation."
+          "title": "Otvoriť PDF",
+          "description": "Vložte PDF s nesprávnou orientáciou strany."
         },
         {
-          "title": "Select Pages & Direction",
-          "description": "Choose pages to rotate and direction (90°, 180°, 270°)."
+          "title": "Vyberte strany a smer",
+          "description": "Vyberte strany na otočenie a smer (90°, 180°, 270°)."
         },
         {
-          "title": "Download Fixed PDF",
-          "description": "Save the correctly oriented PDF immediately."
+          "title": "Stiahnuť pevné PDF",
+          "description": "Správne orientované PDF ihneď uložte."
         }
-      ]
+      ],
+      "badgeText": "Rýchly sprievodca"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Rotation for Bratislava Offices",
-      "content": "Office workers in Bratislava fix scanner output orientation without relying on cloud services."
+      "type": "rotate_geo_targeting",
+      "title": "100% bezpečné miestne spracovanie",
+      "content": "Všetky operácie sa vykonávajú priamo na vašom lokálnom zariadení. Používame pokročilú technológiu WebAssembly na spracovanie vašich dokumentov bez ich nahrávania na externé servery, čím zaisťujeme úplné súkromie.",
+      "badgeText": "Miestne spracovanie"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Scanned Documents Stay Private",
-      "content": "Scanned medical or legal documents rotated locally without any server access."
+      "type": "rotate_privacy_security",
+      "title": "Naskenované dokumenty zostanú v súkromí",
+      "content": "Naskenované lekárske alebo právne dokumenty sa otáčajú lokálne bez akéhokoľvek prístupu na server.",
+      "badgeText": "Bezpečnosť na prvom mieste"
     },
     {
-      "type": "transform_performance",
-      "title": "Rotate Any PDF in Milliseconds",
-      "content": "Rotating 500 pages takes less than a second. No upload, no wait."
+      "type": "rotate_performance",
+      "title": "Otočiť ľubovoľné PDF v milisekundách",
+      "content": "Otočenie 500 strán trvá menej ako sekundu. Žiadne nahrávanie, žiadne čakanie.",
+      "badgeText": "Rýchlosť blesku"
     }
   ],
   "faqs": [
     {
-      "q": "Can I rotate individual pages?",
-      "a": "Yes, select specific pages or all at once."
+      "q": "Môžem otáčať jednotlivé strany?",
+      "a": "Áno, vyberte konkrétne stránky alebo všetky naraz."
     },
     {
-      "q": "What rotation angles are available?",
-      "a": "90°, 180°, and 270° clockwise and counter-clockwise."
+      "q": "Aké uhly otáčania sú k dispozícii?",
+      "a": "90°, 180° a 270° v smere a proti smeru hodinových ručičiek."
     },
     {
-      "q": "Does rotation affect image quality?",
-      "a": "No, rotation is lossless — no re-encoding occurs."
+      "q": "Ovplyvňuje rotácia kvalitu obrazu?",
+      "a": "Nie, rotácia je bezstratová – nedochádza k žiadnemu opätovnému kódovaniu."
     },
     {
-      "q": "Can I undo a rotation?",
-      "a": "Yes, apply the reverse rotation before downloading."
+      "q": "Môžem zrušiť rotáciu?",
+      "a": "Áno, pred stiahnutím použite opačnú rotáciu."
     },
     {
-      "q": "Is this free?",
+      "q": "Je to zadarmo?",
       "a": "Áno, úplne zadarmo."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
 }

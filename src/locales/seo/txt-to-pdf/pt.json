@@ -1,67 +1,85 @@
 {
-  "title": "Text to PDF Converter — Offline & Instant",
-  "h1": "Convert Plain Text Files to PDF Locally",
-  "description": "Transform .txt files into clean, readable PDFs directly in your browser. No upload required. Ideal for users in São Paulo.",
+  "title": "Conversor de texto para PDF — offline e instantâneo",
+  "h1": "Converta arquivos de texto simples em PDF localmente",
+  "description": "Transforme arquivos .txt em PDFs limpos e legíveis diretamente no seu navegador. Não é necessário fazer upload. Processamento local 100% seguro.",
+  "buttonText": "Convert Text",
+  "badges": [
+    "Trechos de código",
+    "Registros do servidor",
+    "Manuscritos"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Text Files Offline?",
-      "content": "Text files often contain code, scripts, or sensitive notes. Our offline converter ensures zero data transmission."
+      "type": "txt_hero_features",
+      "title": "Por que converter arquivos de texto offline?",
+      "content": "Os arquivos de texto geralmente contêm código, scripts ou notas confidenciais. Nosso conversor offline garante transmissão zero de dados."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Text to PDF",
+      "type": "txt_how_to_steps",
+      "title": "Como converter texto em PDF",
       "steps": [
         {
-          "title": "Open Text File",
-          "description": "Select your .txt file or paste text directly."
+          "title": "Abrir arquivo de texto",
+          "description": "Selecione seu arquivo .txt ou cole o texto diretamente."
         },
         {
-          "title": "Choose Font & Style",
-          "description": "Pick font size and layout preferences."
+          "title": "Escolha fonte e estilo",
+          "description": "Escolha o tamanho da fonte e as preferências de layout."
         },
         {
-          "title": "Download PDF",
-          "description": "Export your text as a beautifully formatted PDF."
+          "title": "Baixar PDF",
+          "description": "Exporte seu texto como um PDF lindamente formatado."
         }
-      ]
+      ],
+      "badgeText": "Guia rápido"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Text to PDF for São Paulo Developers",
-      "content": "Developers and writers in São Paulo use our tool to convert scripts and notes without cloud dependency."
+      "type": "txt_geo_targeting",
+      "title": "Processamento local 100% seguro",
+      "content": "Todas as operações são realizadas diretamente no seu dispositivo local. Utilizamos tecnologia avançada WebAssembly para processar seus documentos sem nunca enviá-los para servidores externos, garantindo total privacidade.",
+      "badgeText": "Processamento Local"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Code Stays on Your Machine",
-      "content": "Source code, legal notes, medical records — text files converted with zero server involvement."
+      "type": "txt_privacy_security",
+      "title": "O código permanece na sua máquina",
+      "content": "Código-fonte, notas legais, registros médicos — arquivos de texto convertidos sem envolvimento do servidor.",
+      "badgeText": "Segurança em primeiro lugar"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Text Rendering",
-      "content": "Convert any size text file to PDF in milliseconds. No upload, no compression, no delay."
+      "type": "txt_performance",
+      "title": "Renderização instantânea de texto",
+      "content": "Converta arquivos de texto de qualquer tamanho em PDF em milissegundos. Sem upload, sem compressão, sem atraso.",
+      "badgeText": "Rápido como um raio"
     }
   ],
   "faqs": [
     {
-      "q": "Can I paste text directly?",
-      "a": "Yes, you can type or paste text without uploading a file."
+      "q": "Posso colar texto diretamente?",
+      "a": "Sim, você pode digitar ou colar texto sem enviar um arquivo."
     },
     {
-      "q": "What fonts are available?",
-      "a": "Standard web fonts like Arial, Times New Roman, and monospace."
+      "q": "Quais fontes estão disponíveis?",
+      "a": "Fontes padrão da web como Arial, Times New Roman e monoespaçada."
     },
     {
-      "q": "Is code syntax preserved?",
-      "a": "Monospace formatting is preserved for code blocks."
+      "q": "A sintaxe do código é preservada?",
+      "a": "A formatação monoespaçada é preservada para blocos de código."
     },
     {
-      "q": "Can I set page margins?",
-      "a": "Yes, customize top, bottom, left, and right margins."
+      "q": "Posso definir as margens da página?",
+      "a": "Sim, personalize as margens superior, inferior, esquerda e direita."
     },
     {
-      "q": "Is this free?",
-      "a": "Sim, completamente gratuito."
+      "q": "Isso é grátis?",
+      "a": "Sim, totalmente gratuito."
     }
-  ]
+  ],
+  "faqTitle": "Perguntas Frequentes",
+  "supportCenter": "Centro de Apoio"
 }

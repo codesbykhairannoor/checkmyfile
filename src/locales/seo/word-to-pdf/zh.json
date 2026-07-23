@@ -2,15 +2,27 @@
   "title": "Word to PDF Converter — No Upload Required",
   "h1": "Convert Word Documents to PDF Instantly",
   "description": "Transform .docx files into perfect PDFs directly in your browser. Zero upload, 100% private. Ideal for users in Beijing.",
+  "buttonText": "Convert Document",
+  "badges": [
+    "Employment Contracts",
+    "Legal Briefs",
+    "Resumes & CVs"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Word to PDF Offline?",
+      "type": "word_hero_features",
+      "title": "为什么要离线使用？",
       "content": "Your Word document contains sensitive data. Our converter runs entirely in WebAssembly — your file never touches a server."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Word to PDF",
+      "type": "word_how_to_steps",
+      "title": "如何使用",
       "steps": [
         {
           "title": "Select .docx File",
@@ -27,17 +39,17 @@
       ]
     },
     {
-      "type": "combiner_geo_targeting",
+      "type": "word_geo_targeting",
       "title": "Word to PDF for Beijing Users",
       "content": "Used by professionals in Beijing who need to share documents without losing formatting."
     },
     {
-      "type": "combiner_privacy_security",
+      "type": "word_privacy_security",
       "title": "Your Contracts Stay Private",
       "content": "Converting employment contracts? Legal briefs? Our WASM processor never phones home."
     },
     {
-      "type": "combiner_performance",
+      "type": "word_performance",
       "title": "No More Conversion Queues",
       "content": "Cloud converters put you in a queue. Ours converts in under 2 seconds, entirely offline."
     }
@@ -63,5 +75,6 @@
       "q": "Is this free?",
       "a": "是的，完全免费。"
     }
-  ]
+  ],
+  "faqTitle": "常见问题"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "PowerPoint to PDF Converter — Offline & Free",
-  "h1": "Convert PowerPoint Presentations to PDF Instantly",
-  "description": "Convert .pptx presentations to high-quality PDFs directly in your browser. No cloud needed. Perfect for presenters in Oslo.",
+  "title": "PowerPoint til PDF-konvertering — Frakoblet og gratis",
+  "h1": "Konverter PowerPoint-presentasjoner til PDF umiddelbart",
+  "description": "Konverter .pptx-presentasjoner til PDF-filer av høy kvalitet direkte i nettleseren din. Ingen sky nødvendig. 100 % sikker lokal behandling.",
+  "buttonText": "Convert Slides",
+  "badges": [
+    "Styremøter",
+    "Pitch Decks",
+    "Uutgitte produkter"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Presentations Offline?",
-      "content": "Your slides may contain unreleased products or confidential strategies. Convert without risking data exposure."
+      "type": "ppt_hero_features",
+      "title": "Hvorfor konvertere presentasjoner frakoblet?",
+      "content": "Lysbildene dine kan inneholde uutgitte produkter eller konfidensielle strategier. Konverter uten å risikere dataeksponering."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert PowerPoint to PDF",
+      "type": "ppt_how_to_steps",
+      "title": "Hvordan konvertere PowerPoint til PDF",
       "steps": [
         {
-          "title": "Load Presentation",
-          "description": "Select your .pptx file from your device."
+          "title": "Last inn presentasjon",
+          "description": "Velg .pptx-filen fra enheten din."
         },
         {
-          "title": "Select Slide Range",
-          "description": "Include all slides or specific ones."
+          "title": "Velg lysbildeområde",
+          "description": "Ta med alle lysbilder eller spesifikke."
         },
         {
-          "title": "Download PDF",
-          "description": "Get your PDF with all formatting preserved."
+          "title": "Last ned PDF",
+          "description": "Få PDF-filen med all formatering bevart."
         }
-      ]
+      ],
+      "badgeText": "Hurtigguide"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Presentation Conversion in Oslo",
-      "content": "Presenters in Oslo trust us to convert slide decks without leaking unreleased content to cloud servers."
+      "type": "ppt_geo_targeting",
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle operasjoner utføres direkte på din lokale enhet. Vi bruker avansert WebAssembly-teknologi for å behandle dokumentene dine uten å laste dem opp til eksterne servere, noe som sikrer fullstendig personvern.",
+      "badgeText": "Lokal behandling"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Confidential Slides Stay Confidential",
-      "content": "Pre-launch product decks? Board presentations? Converted 100% locally without network access."
+      "type": "ppt_privacy_security",
+      "title": "Konfidensielle lysbilder Hold deg konfidensielle",
+      "content": "Produktdekk før lansering? Styrepresentasjoner? Konvertert 100 % lokalt uten nettverkstilgang.",
+      "badgeText": "Sikkerhet først"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Slide Export",
-      "content": "Convert 100-slide decks in seconds. No queue, no waiting, no upload bandwidth wasted."
+      "type": "ppt_performance",
+      "title": "Øyeblikkelig lysbildeeksport",
+      "content": "Konverter kortstokker med 100 lysbilder på sekunder. Ingen kø, ingen venting, ingen bortkastet opplastingsbåndbredde.",
+      "badgeText": "Lynrask"
     }
   ],
   "faqs": [
     {
-      "q": "Are slide animations preserved?",
-      "a": "Animations are flattened into static PDF frames."
+      "q": "Er lysbildeanimasjoner bevart?",
+      "a": "Animasjoner er flatet ut til statiske PDF-rammer."
     },
     {
-      "q": "What resolution is the output?",
-      "a": "High-resolution rendering at 150 DPI by default."
+      "q": "Hvilken oppløsning er utgangen?",
+      "a": "Høyoppløselig gjengivelse ved 150 DPI som standard."
     },
     {
-      "q": "Can I convert selected slides only?",
-      "a": "Yes, specify slide ranges like 1-10 or 5,8,12."
+      "q": "Kan jeg kun konvertere utvalgte lysbilder?",
+      "a": "Ja, spesifiser lysbildeområder som 1-10 eller 5,8,12."
     },
     {
-      "q": "Is .ppt (old format) supported?",
-      "a": "Yes, both .ppt and .pptx are supported."
+      "q": "Støttes .ppt (gammelt format)?",
+      "a": "Ja, både .ppt og .pptx støttes."
     },
     {
-      "q": "Is this free to use?",
-      "a": "Ja, helt gratis."
+      "q": "Er dette gratis å bruke?",
+      "a": "Ja, helt gratis uten vannmerker."
     }
-  ]
+  ],
+  "faqTitle": "Ofte stilte spørsmål",
+  "supportCenter": "Støttesenter"
 }

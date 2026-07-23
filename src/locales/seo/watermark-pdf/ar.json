@@ -1,67 +1,85 @@
 {
-  "title": "Add Watermark to PDF — Offline Watermarking",
-  "h1": "Stamp PDFs with Text or Image Watermarks Locally",
-  "description": "Add \"CONFIDENTIAL\", logos, or custom text watermarks to PDFs entirely in your browser. No upload. Best for users in Riyadh.",
+  "title": "إضافة علامة مائية إلى PDF — علامة مائية دون اتصال",
+  "h1": "ختم ملفات PDF بعلامات مائية نصية أو صورية محليًا",
+  "description": "أضف \"سريًا\" أو شعارات أو علامات مائية نصية مخصصة إلى ملفات PDF بالكامل في متصفحك. لا يوجد تحميل. معالجة محلية آمنة بنسبة 100%.",
+  "buttonText": "Add Watermark",
+  "badges": [
+    "نص مخصص",
+    "العتامة القابلة للتعديل",
+    "حماية العلامة التجارية"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Watermark PDFs Offline?",
-      "content": "Adding watermarks means your document is sensitive. Never upload draft contracts or confidential reports to a cloud watermarker."
+      "type": "watermark_hero_features",
+      "title": "لماذا العلامة المائية لملفات PDF دون اتصال؟",
+      "content": "إن إضافة العلامات المائية يعني أن المستند الخاص بك حساس. لا تقم أبدًا بتحميل مسودة العقود أو التقارير السرية إلى علامة مائية سحابية."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Watermark a PDF",
+      "type": "watermark_how_to_steps",
+      "title": "كيفية وضع علامة مائية على ملف PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to watermark."
+          "title": "افتح ملف PDF",
+          "description": "حدد ملف PDF لإضافة علامة مائية."
         },
         {
-          "title": "Design Watermark",
-          "description": "Type text or upload a logo image."
+          "title": "تصميم علامة مائية",
+          "description": "اكتب نصًا أو قم بتحميل صورة الشعار."
         },
         {
-          "title": "Apply & Download",
-          "description": "Get your watermarked PDF in one click."
+          "title": "تطبيق وتحميل",
+          "description": "احصل على ملف PDF ذو العلامة المائية بنقرة واحدة."
         }
-      ]
+      ],
+      "badgeText": "الدليل السريع"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Document Watermarking in Riyadh",
-      "content": "Legal and creative professionals in Riyadh stamp documents with watermarks without cloud uploads."
+      "type": "watermark_geo_targeting",
+      "title": "معالجة محلية آمنة بنسبة 100%",
+      "content": "يتم تنفيذ جميع العمليات مباشرة على جهازك المحلي. نحن نستخدم تقنية WebAssembly المتقدمة لمعالجة مستنداتك دون تحميلها على خوادم خارجية، مما يضمن الخصوصية الكاملة.",
+      "badgeText": "المعالجة المحلية"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Confidential Drafts Stay Private",
-      "content": "Draft contracts and unreleased designs watermarked locally without any server contact."
+      "type": "watermark_privacy_security",
+      "title": "المسودات السرية تبقى خاصة",
+      "content": "صياغة العقود والتصميمات غير المنشورة تحمل علامة مائية محليًا دون أي اتصال بالخادم.",
+      "badgeText": "الأمن أولا"
     },
     {
-      "type": "transform_performance",
-      "title": "Stamp Thousands of Pages Instantly",
-      "content": "Apply watermarks to a 1000-page document in under 3 seconds. All in your browser."
+      "type": "watermark_performance",
+      "title": "ختم آلاف الصفحات على الفور",
+      "content": "قم بتطبيق العلامات المائية على مستند مكون من 1000 صفحة في أقل من 3 ثوانٍ. كل ذلك في متصفحك.",
+      "badgeText": "بسرعة البرق"
     }
   ],
   "faqs": [
     {
-      "q": "Can I use a logo as a watermark?",
-      "a": "Yes, upload a PNG logo and set transparency."
+      "q": "هل يمكنني استخدام الشعار كعلامة مائية؟",
+      "a": "نعم، قم بتحميل شعار PNG وقم بتعيين الشفافية."
     },
     {
-      "q": "Can I adjust watermark opacity?",
-      "a": "Yes, from 10% to 100% opacity."
+      "q": "هل يمكنني ضبط عتامة العلامة المائية؟",
+      "a": "نعم، من 10% إلى 100% عتامة."
     },
     {
-      "q": "Can I apply it to specific pages only?",
-      "a": "Yes, choose page ranges."
+      "q": "هل يمكنني تطبيقه على صفحات محددة فقط؟",
+      "a": "نعم، اختر نطاقات الصفحات."
     },
     {
-      "q": "Is diagonal placement available?",
-      "a": "Yes, rotate watermarks to any angle."
+      "q": "هل الموضع القطري متاح؟",
+      "a": "نعم، قم بتدوير العلامات المائية إلى أي زاوية."
     },
     {
-      "q": "Is this free?",
-      "a": "نعم، مجاناً تماماً."
+      "q": "هل هذا مجاني؟",
+      "a": "نعم، دائما مجانا."
     }
-  ]
+  ],
+  "faqTitle": "الأسئلة المتداولة",
+  "supportCenter": "مركز الدعم"
 }

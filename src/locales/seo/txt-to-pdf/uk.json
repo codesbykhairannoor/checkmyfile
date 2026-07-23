@@ -1,67 +1,85 @@
 {
-  "title": "Text to PDF Converter — Offline & Instant",
-  "h1": "Convert Plain Text Files to PDF Locally",
-  "description": "Transform .txt files into clean, readable PDFs directly in your browser. No upload required. Ideal for users in Kyiv.",
+  "title": "Конвертер тексту в PDF — офлайн і миттєво",
+  "h1": "Перетворюйте звичайні текстові файли на PDF локально",
+  "description": "Перетворюйте файли .txt на чисті PDF-файли, які можна читати, безпосередньо у вашому браузері. Завантажувати не потрібно. 100% безпечна локальна обробка.",
+  "buttonText": "Convert Text",
+  "badges": [
+    "Фрагменти коду",
+    "Журнали сервера",
+    "Рукописи"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Text Files Offline?",
-      "content": "Text files often contain code, scripts, or sensitive notes. Our offline converter ensures zero data transmission."
+      "type": "txt_hero_features",
+      "title": "Навіщо конвертувати текстові файли в автономному режимі?",
+      "content": "Текстові файли часто містять код, сценарії або конфіденційні нотатки. Наш автономний конвертер забезпечує нульову передачу даних."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Text to PDF",
+      "type": "txt_how_to_steps",
+      "title": "Як конвертувати текст у PDF",
       "steps": [
         {
-          "title": "Open Text File",
-          "description": "Select your .txt file or paste text directly."
+          "title": "Відкрити текстовий файл",
+          "description": "Виберіть файл .txt або вставте текст безпосередньо."
         },
         {
-          "title": "Choose Font & Style",
-          "description": "Pick font size and layout preferences."
+          "title": "Виберіть шрифт і стиль",
+          "description": "Виберіть розмір шрифту та параметри макета."
         },
         {
-          "title": "Download PDF",
-          "description": "Export your text as a beautifully formatted PDF."
+          "title": "Завантажити PDF",
+          "description": "Експортуйте свій текст як красиво відформатований PDF."
         }
-      ]
+      ],
+      "badgeText": "Короткий посібник"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Text to PDF for Kyiv Developers",
-      "content": "Developers and writers in Kyiv use our tool to convert scripts and notes without cloud dependency."
+      "type": "txt_geo_targeting",
+      "title": "100% безпечна локальна обробка",
+      "content": "Усі операції виконуються безпосередньо на локальному пристрої. Ми використовуємо передову технологію WebAssembly для обробки ваших документів, не завантажуючи їх на зовнішні сервери, забезпечуючи повну конфіденційність.",
+      "badgeText": "Локальна обробка"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Code Stays on Your Machine",
-      "content": "Source code, legal notes, medical records — text files converted with zero server involvement."
+      "type": "txt_privacy_security",
+      "title": "Код залишається на вашій машині",
+      "content": "Вихідний код, юридичні примітки, медичні записи — текстові файли, конвертовані без участі сервера.",
+      "badgeText": "Безпека перш за все"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Text Rendering",
-      "content": "Convert any size text file to PDF in milliseconds. No upload, no compression, no delay."
+      "type": "txt_performance",
+      "title": "Миттєве відтворення тексту",
+      "content": "Перетворіть текстовий файл будь-якого розміру в PDF за мілісекунди. Ні завантаження, ні стиснення, ні затримки.",
+      "badgeText": "Блискавичний"
     }
   ],
   "faqs": [
     {
-      "q": "Can I paste text directly?",
-      "a": "Yes, you can type or paste text without uploading a file."
+      "q": "Чи можу я вставити текст безпосередньо?",
+      "a": "Так, ви можете вводити або вставляти текст, не завантажуючи файл."
     },
     {
-      "q": "What fonts are available?",
-      "a": "Standard web fonts like Arial, Times New Roman, and monospace."
+      "q": "Які шрифти доступні?",
+      "a": "Стандартні веб-шрифти, такі як Arial, Times New Roman і моноширинні."
     },
     {
-      "q": "Is code syntax preserved?",
-      "a": "Monospace formatting is preserved for code blocks."
+      "q": "Чи збережено синтаксис коду?",
+      "a": "Для блоків коду зберігається моноширинне форматування."
     },
     {
-      "q": "Can I set page margins?",
-      "a": "Yes, customize top, bottom, left, and right margins."
+      "q": "Чи можу я встановити поля сторінки?",
+      "a": "Так, налаштувати верхнє, нижнє, ліве та праве поля."
     },
     {
-      "q": "Is this free?",
-      "a": "Так, повністю безкоштовно."
+      "q": "Це безкоштовно?",
+      "a": "Так, абсолютно безкоштовно."
     }
-  ]
+  ],
+  "faqTitle": "Часті запитання",
+  "supportCenter": "Центр підтримки"
 }

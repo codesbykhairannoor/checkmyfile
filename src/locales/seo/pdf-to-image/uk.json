@@ -1,67 +1,85 @@
 {
-  "title": "PDF to Image Converter — Extract Pages Offline",
-  "h1": "Convert PDF Pages to PNG or JPG Images",
-  "description": "Extract every page from a PDF as high-quality images directly in your browser. Zero upload, total privacy. Best for users in Kyiv.",
+  "title": "Конвертер PDF у зображення — витягуйте сторінки офлайн",
+  "h1": "Перетворення сторінок PDF на зображення PNG або JPG",
+  "description": "Витягуйте кожну сторінку з PDF-файлу як високоякісні зображення безпосередньо у своєму браузері. Нульове завантаження, 100% безпечна локальна обробка.",
+  "buttonText": "Extract Images",
+  "badges": [
+    "Дизайн портфоліо",
+    "Презентації",
+    "Висока якість"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract PDF Pages Offline?",
-      "content": "PDFs often contain confidential diagrams, blueprints, or reports. Extract pages as images without any server access."
+      "type": "pdf_image_hero_features",
+      "title": "Навіщо видобувати PDF-сторінки в автономному режимі?",
+      "content": "PDF-файли часто містять конфіденційні діаграми, креслення або звіти. Витягуйте сторінки як зображення без доступу до сервера."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Images",
+      "type": "pdf_image_how_to_steps",
+      "title": "Як конвертувати PDF у зображення",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF you want to extract images from."
+          "title": "Завантажити PDF",
+          "description": "Виберіть PDF-файл, з якого потрібно витягти зображення."
         },
         {
-          "title": "Choose Format",
-          "description": "Pick PNG (lossless) or JPG (compressed) output."
+          "title": "Виберіть Формат",
+          "description": "Виберіть PNG (без втрат) або JPG (стиснутий)."
         },
         {
-          "title": "Download Images",
-          "description": "Get all pages as individual image files in a ZIP."
+          "title": "Завантажити зображення",
+          "description": "Отримайте всі сторінки як окремі файли зображень у ZIP."
         }
-      ]
+      ],
+      "badgeText": "Короткий посібник"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF to Image for Kyiv Designers",
-      "content": "Designers in Kyiv extract PDF pages as images for presentations and social media without cloud uploads."
+      "type": "pdf_image_geo_targeting",
+      "title": "100% безпечна локальна обробка",
+      "content": "Усі операції виконуються безпосередньо на локальному пристрої. Ми використовуємо передову технологію WebAssembly для обробки ваших документів, не завантажуючи їх на зовнішні сервери, забезпечуючи повну конфіденційність.",
+      "badgeText": "Локальна обробка"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Confidential Diagrams Stay Private",
-      "content": "Technical blueprints and legal documents extracted as images without any data leaving your device."
+      "type": "pdf_image_privacy_security",
+      "title": "Конфіденційні діаграми залишаються приватними",
+      "content": "Технічні креслення та юридичні документи, отримані у вигляді зображень, без жодних даних, що залишають ваш пристрій.",
+      "badgeText": "Безпека перш за все"
     },
     {
-      "type": "split_performance",
-      "title": "Extract All Pages Instantly",
-      "content": "A 500-page PDF converted to images in seconds. No upload, no wait."
+      "type": "pdf_image_performance",
+      "title": "Витягніть усі сторінки миттєво",
+      "content": "PDF-файл на 500 сторінок перетворюється на зображення за лічені секунди. Ні завантаження, ні очікування.",
+      "badgeText": "Блискавичний"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are available?",
-      "a": "PNG and JPG with adjustable quality settings."
+      "q": "Які формати зображень доступні?",
+      "a": "PNG і JPG із налаштуваннями якості."
     },
     {
-      "q": "Can I extract specific pages?",
-      "a": "Yes, specify page ranges like 1-5 or 3,7,12."
+      "q": "Чи можу я витягти певні сторінки?",
+      "a": "Так, укажіть діапазони сторінок, наприклад 1-5 або 3,7,12."
     },
     {
-      "q": "What resolution are the exported images?",
-      "a": "Default 150 DPI, adjustable up to 300 DPI."
+      "q": "Яка роздільна здатність експортованих зображень?",
+      "a": "За замовчуванням 150 DPI, регулюється до 300 DPI."
     },
     {
-      "q": "Are all pages exported at once?",
-      "a": "Yes, all selected pages are zipped for a single download."
+      "q": "Чи всі сторінки експортуються одночасно?",
+      "a": "Так, усі вибрані сторінки заархівовано для одного завантаження."
     },
     {
-      "q": "Is this free?",
-      "a": "Так, повністю безкоштовно."
+      "q": "Це безкоштовно?",
+      "a": "Повністю безкоштовно, завжди."
     }
-  ]
+  ],
+  "faqTitle": "Часті запитання",
+  "supportCenter": "Центр підтримки"
 }

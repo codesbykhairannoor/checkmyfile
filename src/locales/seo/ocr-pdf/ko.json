@@ -1,67 +1,85 @@
 {
-  "title": "OCR PDF — Make Scans Searchable Offline",
-  "h1": "Extract and Recognize Text from Scanned PDFs",
-  "description": "Run OCR on scanned PDFs to make them searchable and copyable, entirely in your browser using Tesseract. No upload. Great for users in Seoul.",
+  "title": "OCR PDF — 스캔을 오프라인에서 검색 가능하게 만들기",
+  "h1": "스캔한 PDF에서 텍스트 추출 및 인식",
+  "description": "스캔한 PDF에 OCR을 실행하면 Tesseract를 사용하여 브라우저에서 완전히 검색 및 복사할 수 있습니다. 업로드가 없습니다. 100% 안전한 로컬 처리.",
+  "buttonText": "Run OCR",
+  "badges": [
+    "텍스트 추출",
+    "검색 가능한 PDF",
+    "AI 인식"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Run OCR Locally?",
-      "content": "Scanned PDFs contain sensitive text. Running OCR on a cloud service exposes that text to a third party. Ours runs 100% offline."
+      "type": "ocr_hero_features",
+      "title": "OCR을 로컬에서 실행하는 이유는 무엇입니까?",
+      "content": "스캔한 PDF에는 민감한 텍스트가 포함되어 있습니다. 클라우드 서비스에서 OCR을 실행하면 해당 텍스트가 제3자에게 노출됩니다. 우리 회사는 100% 오프라인으로 운영됩니다."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to OCR a PDF",
+      "type": "ocr_how_to_steps",
+      "title": "PDF를 OCR하는 방법",
       "steps": [
         {
-          "title": "Load Scanned PDF",
-          "description": "Select the image-based or scanned PDF."
+          "title": "스캔한 PDF 로드",
+          "description": "이미지 기반 또는 스캔한 PDF를 선택합니다."
         },
         {
-          "title": "Select Language",
-          "description": "Choose the document language for better accuracy."
+          "title": "언어 선택",
+          "description": "정확성을 높이려면 문서 언어를 선택하세요."
         },
         {
-          "title": "Download Searchable PDF",
-          "description": "Get a text-layer PDF ready to search and copy."
+          "title": "검색 가능한 PDF 다운로드",
+          "description": "검색하고 복사할 수 있는 텍스트 레이어 PDF를 준비하세요."
         }
-      ]
+      ],
+      "badgeText": "빠른 가이드"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "OCR Tool for Seoul Archives",
-      "content": "Government agencies and businesses in Seoul digitize paper archives using our offline OCR tool."
+      "type": "ocr_geo_targeting",
+      "title": "100% 안전한 로컬 처리",
+      "content": "모든 작업은 로컬 장치에서 직접 수행됩니다. 우리는 고급 WebAssembly 기술을 사용하여 문서를 외부 서버에 업로드하지 않고 처리하여 완벽한 개인 정보 보호를 보장합니다.",
+      "badgeText": "로컬 처리"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Content Never Exposed",
-      "content": "OCR processing using Tesseract WASM runs entirely in browser memory — no API calls, no data transmission."
+      "type": "ocr_privacy_security",
+      "title": "스캔한 콘텐츠는 절대 노출되지 않음",
+      "content": "Tesseract WASM을 사용한 OCR 처리는 API 호출이나 데이터 전송 없이 전적으로 브라우저 메모리에서 실행됩니다.",
+      "badgeText": "보안 우선"
     },
     {
-      "type": "organizer_performance",
-      "title": "OCR Any Document Locally",
-      "content": "Process a 20-page scanned PDF in under 30 seconds. All Tesseract processing happens in-browser."
+      "type": "ocr_performance",
+      "title": "모든 문서를 로컬로 OCR",
+      "content": "20페이지 분량의 스캔된 PDF를 30초 이내에 처리합니다. 모든 Tesseract 처리는 브라우저 내에서 이루어집니다.",
+      "badgeText": "번개처럼 빠르게"
     }
   ],
   "faqs": [
     {
-      "q": "What languages does OCR support?",
-      "a": "Over 100 languages via Tesseract engine."
+      "q": "OCR은 어떤 언어를 지원합니까?",
+      "a": "Tesseract 엔진을 통한 100개 이상의 언어."
     },
     {
-      "q": "How accurate is the OCR?",
-      "a": "Accuracy depends on scan quality; clear, high-contrast scans yield 95%+ accuracy."
+      "q": "OCR은 얼마나 정확합니까?",
+      "a": "정확도는 스캔 품질에 따라 달라집니다. 선명한 고대비 스캔은 95% 이상의 정확도를 제공합니다."
     },
     {
-      "q": "Does it create a searchable PDF?",
-      "a": "Yes, a text layer is added making the PDF fully searchable."
+      "q": "검색 가능한 PDF를 생성합니까?",
+      "a": "예, PDF를 완전히 검색할 수 있도록 텍스트 레이어가 추가되었습니다."
     },
     {
-      "q": "Can I copy text from the result?",
-      "a": "Yes, the output PDF has selectable, copyable text."
+      "q": "결과에서 텍스트를 복사할 수 있나요?",
+      "a": "예, 출력 PDF에는 선택 및 복사 가능한 텍스트가 있습니다."
     },
     {
-      "q": "Is this free?",
-      "a": "예, 완전 무료입니다."
+      "q": "이거 무료인가요?",
+      "a": "예, 항상 무료입니다."
     }
-  ]
+  ],
+  "faqTitle": "자주 묻는 질문",
+  "supportCenter": "지원 센터"
 }

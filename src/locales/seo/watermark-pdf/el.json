@@ -1,67 +1,85 @@
 {
-  "title": "Add Watermark to PDF — Offline Watermarking",
-  "h1": "Stamp PDFs with Text or Image Watermarks Locally",
-  "description": "Add \"CONFIDENTIAL\", logos, or custom text watermarks to PDFs entirely in your browser. No upload. Best for users in Athens.",
+  "title": "Προσθήκη υδατογραφήματος σε PDF — Υδατογράφημα εκτός σύνδεσης",
+  "h1": "Σφραγίστε αρχεία PDF με υδατογραφήματα κειμένου ή εικόνας τοπικά",
+  "description": "Προσθέστε \"ΕΜΠΙΣΤΕΥΤΙΚΟ\", λογότυπα ή προσαρμοσμένα υδατογραφήματα κειμένου σε αρχεία PDF εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση. 100% ασφαλής τοπική επεξεργασία.",
+  "buttonText": "Add Watermark",
+  "badges": [
+    "Προσαρμοσμένο κείμενο",
+    "Ρυθμιζόμενη αδιαφάνεια",
+    "Προστασία της επωνυμίας"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Watermark PDFs Offline?",
-      "content": "Adding watermarks means your document is sensitive. Never upload draft contracts or confidential reports to a cloud watermarker."
+      "type": "watermark_hero_features",
+      "title": "Γιατί υδατογραφήματα PDF εκτός σύνδεσης;",
+      "content": "Η προσθήκη υδατογραφημάτων σημαίνει ότι το έγγραφό σας είναι ευαίσθητο. Ποτέ μην ανεβάζετε πρόχειρα συμβόλαια ή εμπιστευτικές αναφορές σε υδατοσήμανση cloud."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Watermark a PDF",
+      "type": "watermark_how_to_steps",
+      "title": "Πώς να κάνετε υδατογράφημα σε ένα PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to watermark."
+          "title": "Ανοίξτε το PDF",
+          "description": "Επιλέξτε το PDF για υδατογράφημα."
         },
         {
-          "title": "Design Watermark",
-          "description": "Type text or upload a logo image."
+          "title": "Σχεδιασμός Υδατογράφημα",
+          "description": "Πληκτρολογήστε κείμενο ή ανεβάστε μια εικόνα λογότυπου."
         },
         {
-          "title": "Apply & Download",
-          "description": "Get your watermarked PDF in one click."
+          "title": "Εφαρμογή & Λήψη",
+          "description": "Αποκτήστε το υδατογραφημένο PDF σας με ένα κλικ."
         }
-      ]
+      ],
+      "badgeText": "Γρήγορος Οδηγός"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Document Watermarking in Athens",
-      "content": "Legal and creative professionals in Athens stamp documents with watermarks without cloud uploads."
+      "type": "watermark_geo_targeting",
+      "title": "100% Ασφαλής Τοπική Επεξεργασία",
+      "content": "Όλες οι λειτουργίες εκτελούνται απευθείας στην τοπική συσκευή σας. Χρησιμοποιούμε προηγμένη τεχνολογία WebAssembly για να επεξεργαζόμαστε τα έγγραφά σας χωρίς ποτέ να τα ανεβάσουμε σε εξωτερικούς διακομιστές, διασφαλίζοντας πλήρες απόρρητο.",
+      "badgeText": "Τοπική Επεξεργασία"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Confidential Drafts Stay Private",
-      "content": "Draft contracts and unreleased designs watermarked locally without any server contact."
+      "type": "watermark_privacy_security",
+      "title": "Τα εμπιστευτικά προσχέδια παραμένουν ιδιωτικά",
+      "content": "Προσχέδια συμβολαίων και ακυκλοφόρητα σχέδια υδατογραφημένα τοπικά χωρίς καμία επαφή διακομιστή.",
+      "badgeText": "Πρώτα η ασφάλεια"
     },
     {
-      "type": "transform_performance",
-      "title": "Stamp Thousands of Pages Instantly",
-      "content": "Apply watermarks to a 1000-page document in under 3 seconds. All in your browser."
+      "type": "watermark_performance",
+      "title": "Σφραγίστε χιλιάδες σελίδες αμέσως",
+      "content": "Εφαρμόστε υδατογραφήματα σε ένα έγγραφο 1000 σελίδων σε λιγότερο από 3 δευτερόλεπτα. Όλα στο πρόγραμμα περιήγησής σας.",
+      "badgeText": "Αστραπιαία"
     }
   ],
   "faqs": [
     {
-      "q": "Can I use a logo as a watermark?",
-      "a": "Yes, upload a PNG logo and set transparency."
+      "q": "Μπορώ να χρησιμοποιήσω ένα λογότυπο ως υδατογράφημα;",
+      "a": "Ναι, ανεβάστε ένα λογότυπο PNG και ορίστε τη διαφάνεια."
     },
     {
-      "q": "Can I adjust watermark opacity?",
-      "a": "Yes, from 10% to 100% opacity."
+      "q": "Μπορώ να προσαρμόσω την αδιαφάνεια του υδατογραφήματος;",
+      "a": "Ναι, από 10% έως 100% αδιαφάνεια."
     },
     {
-      "q": "Can I apply it to specific pages only?",
-      "a": "Yes, choose page ranges."
+      "q": "Μπορώ να το εφαρμόσω μόνο σε συγκεκριμένες σελίδες;",
+      "a": "Ναι, επιλέξτε εύρη σελίδων."
     },
     {
-      "q": "Is diagonal placement available?",
-      "a": "Yes, rotate watermarks to any angle."
+      "q": "Είναι διαθέσιμη η διαγώνια τοποθέτηση;",
+      "a": "Ναι, περιστρέψτε τα υδατογραφήματα σε οποιαδήποτε γωνία."
     },
     {
-      "q": "Is this free?",
-      "a": "Ναι, εντελώς δωρεάν."
+      "q": "Αυτό είναι δωρεάν;",
+      "a": "Ναι, πάντα δωρεάν."
     }
-  ]
+  ],
+  "faqTitle": "Συχνές Ερωτήσεις",
+  "supportCenter": "Κέντρο Υποστήριξης"
 }

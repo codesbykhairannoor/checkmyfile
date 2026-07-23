@@ -1,67 +1,85 @@
 {
-  "title": "Reverse PDF — Flip Page Order Offline",
-  "h1": "Reverse the Page Order of Any PDF Locally",
-  "description": "Flip the page sequence of PDF documents entirely in your browser. No upload, instant result. Great for users in Budapest.",
+  "title": "Fordított PDF — Lapozási sorrend Offline",
+  "h1": "Bármely PDF oldal sorrendjének megfordítása helyileg",
+  "description": "Fordítsa meg a PDF-dokumentumok oldalsorozatát a böngészőben. Nincs feltöltés, azonnali eredmény. 100%-ban biztonságos helyi feldolgozás.",
+  "buttonText": "Reverse Order",
+  "badges": [
+    "Minden oldal megfordítása",
+    "Szkennelések javítása",
+    "Egy kattintás"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Reverse PDF Page Order Offline?",
-      "content": "When a scanner outputs pages in reverse, you need a quick local fix — not a cloud upload of your entire document."
+      "type": "reverse_hero_features",
+      "title": "Miért fordítsa meg a PDF oldalsorrendjét offline állapotban?",
+      "content": "Amikor egy lapolvasó fordítottan nyomtatja ki az oldalakat, gyors helyi javításra van szüksége – nem a teljes dokumentum felhőbe történő feltöltésére."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Reverse PDF Page Order",
+      "type": "reverse_how_to_steps",
+      "title": "Hogyan lehet megfordítani a PDF oldalsorrendjét",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF with incorrect page order."
+          "title": "PDF megnyitása",
+          "description": "Válassza ki a hibás oldalsorrenddel rendelkező PDF-fájlt."
         },
         {
-          "title": "Confirm Reversal",
-          "description": "Preview the new first and last page."
+          "title": "Visszafordítás megerősítése",
+          "description": "Tekintse meg az új első és utolsó oldal előnézetét."
         },
         {
-          "title": "Download Reversed PDF",
-          "description": "Get the reordered PDF instantly."
+          "title": "Fordított PDF letöltése",
+          "description": "Azonnal megkapja az újrarendelt PDF-fájlt."
         }
-      ]
+      ],
+      "badgeText": "Gyors útmutató"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Page Order Fix for Budapest Users",
-      "content": "Office users in Budapest fix scanner reversal issues instantly without cloud uploads."
+      "type": "reverse_geo_targeting",
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Minden művelet közvetlenül a helyi eszközön történik. Fejlett WebAssembly technológiát használunk a dokumentumok feldolgozásához anélkül, hogy azokat külső szerverekre feltöltenénk, így biztosítva a teljes adatvédelmet.",
+      "badgeText": "Helyi feldolgozás"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Documents Never Leave Your Device",
-      "content": "Reversed contracts, reports, and records are processed entirely in browser memory."
+      "type": "reverse_privacy_security",
+      "title": "A dokumentumok soha nem hagyják el a készüléket",
+      "content": "A visszavont szerződések, jelentések és rekordok feldolgozása teljes egészében a böngésző memóriájában történik.",
+      "badgeText": "Első a biztonság"
     },
     {
-      "type": "transform_performance",
-      "title": "Reverse Any PDF in Seconds",
-      "content": "Reversing a 1000-page document takes milliseconds. All in your browser."
+      "type": "reverse_performance",
+      "title": "Bármely PDF visszafordítása másodpercek alatt",
+      "content": "Egy 1000 oldalas dokumentum visszafordítása ezredmásodperceket vesz igénybe. Mindezt a böngészőjében.",
+      "badgeText": "Villámgyors"
     }
   ],
   "faqs": [
     {
-      "q": "Does this reverse all pages?",
-      "a": "Yes, the full page order is flipped."
+      "q": "Ez megfordítja az összes oldalt?",
+      "a": "Igen, a teljes oldal sorrendje meg van fordítva."
     },
     {
-      "q": "Can I select a range to reverse?",
-      "a": "Yes, specify start and end pages to reverse selectively."
+      "q": "Kiválaszthatok egy tartományt a megfordítandó tartományban?",
+      "a": "Igen, adja meg a kezdő és záró oldalt a szelektív visszafordításhoz."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "No, reversal is a structural operation with no quality loss."
+      "q": "A minőséget befolyásolja?",
+      "a": "Nem, a visszafordítás strukturális művelet, minőségveszteség nélkül."
     },
     {
-      "q": "Can I undo?",
-      "a": "Apply reversal again to undo."
+      "q": "Visszavonhatom?",
+      "a": "A visszavonáshoz alkalmazza újra a megfordítást."
     },
     {
-      "q": "Is this free?",
-      "a": "Igen, teljesen ingyenes."
+      "q": "Ez ingyenes?",
+      "a": "Igen, mindig ingyenes."
     }
-  ]
+  ],
+  "faqTitle": "Gyakran Ismételt Kérdések",
+  "supportCenter": "Támogatási Központ"
 }

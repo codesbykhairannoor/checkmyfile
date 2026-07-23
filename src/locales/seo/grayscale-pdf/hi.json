@@ -1,67 +1,85 @@
 {
-  "title": "Grayscale PDF — Convert to Black and White Offline",
-  "h1": "Convert Color PDF Pages to Grayscale Instantly",
-  "description": "Turn color PDFs into black-and-white versions to reduce file size or prepare for printing, entirely in your browser. Ideal for users in New Delhi.",
+  "title": "ग्रेस्केल पीडीएफ - ब्लैक एंड व्हाइट ऑफ़लाइन में कनवर्ट करें",
+  "h1": "रंगीन पीडीएफ पेजों को तुरंत ग्रेस्केल में बदलें",
+  "description": "फ़ाइल का आकार कम करने या पूरी तरह से अपने ब्राउज़र में मुद्रण के लिए तैयार करने के लिए रंगीन पीडीएफ को काले और सफेद संस्करणों में बदलें। 100% सुरक्षित स्थानीय प्रसंस्करण।",
+  "buttonText": "Convert to Grayscale",
+  "badges": [
+    "स्याही बचाएं",
+    "काला और सफ़ेद",
+    "प्रिंट के लिए बिल्कुल सही"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Convert to Grayscale Offline?",
-      "content": "Removing color from a PDF is a pre-print or archiving step. Do it locally without exposing confidential document design."
+      "type": "grayscale_hero_features",
+      "title": "ग्रेस्केल ऑफ़लाइन में क्यों कनवर्ट करें?",
+      "content": "पीडीएफ से रंग हटाना एक प्री-प्रिंट या संग्रहित करने का चरण है। गोपनीय दस्तावेज़ डिज़ाइन को उजागर किए बिना इसे स्थानीय रूप से करें।"
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Make PDF Grayscale",
+      "type": "grayscale_how_to_steps",
+      "title": "पीडीएफ ग्रेस्केल कैसे बनाएं",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the color PDF to convert."
+          "title": "पीडीएफ खोलें",
+          "description": "कन्वर्ट करने के लिए रंग पीडीएफ का चयन करें।"
         },
         {
-          "title": "Choose Conversion Mode",
-          "description": "Pick luminance or contrast-adjusted grayscale."
+          "title": "रूपांतरण मोड चुनें",
+          "description": "चमक या कंट्रास्ट-समायोजित ग्रेस्केल चुनें।"
         },
         {
-          "title": "Download Grayscale PDF",
-          "description": "Save the black-and-white PDF immediately."
+          "title": "ग्रेस्केल पीडीएफ डाउनलोड करें",
+          "description": "श्वेत-श्याम पीडीएफ को तुरंत सहेजें।"
         }
-      ]
+      ],
+      "badgeText": "त्वरित मार्गदर्शिका"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Grayscale PDF for New Delhi Printers",
-      "content": "Businesses in New Delhi convert color PDFs to grayscale for cost-effective printing without cloud uploads."
+      "type": "grayscale_geo_targeting",
+      "title": "100% सुरक्षित स्थानीय प्रसंस्करण",
+      "content": "सभी ऑपरेशन सीधे आपके स्थानीय डिवाइस पर किए जाते हैं। हम पूर्ण गोपनीयता सुनिश्चित करते हुए, आपके दस्तावेज़ों को बाहरी सर्वर पर अपलोड किए बिना संसाधित करने के लिए उन्नत WebAssembly तकनीक का उपयोग करते हैं।",
+      "badgeText": "स्थानीय प्रसंस्करण"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Design Files Stay Confidential",
-      "content": "Internal design documents and branded materials converted to grayscale without cloud exposure."
+      "type": "grayscale_privacy_security",
+      "title": "डिज़ाइन फ़ाइलें गोपनीय रहती हैं",
+      "content": "आंतरिक डिज़ाइन दस्तावेज़ और ब्रांडेड सामग्री क्लाउड एक्सपोज़र के बिना ग्रेस्केल में परिवर्तित हो गईं।",
+      "badgeText": "सुरक्षा पहले"
     },
     {
-      "type": "transform_performance",
-      "title": "Convert Color Instantly",
-      "content": "A 200-page color PDF converted to grayscale in under 2 seconds. Zero upload."
+      "type": "grayscale_performance",
+      "title": "तुरंत रंग बदलें",
+      "content": "200 पेज का रंगीन पीडीएफ 2 सेकंड से कम समय में ग्रेस्केल में परिवर्तित हो गया। शून्य अपलोड.",
+      "badgeText": "बिजली की तेजी"
     }
   ],
   "faqs": [
     {
-      "q": "Does grayscale reduce file size?",
-      "a": "Often yes, especially for image-heavy PDFs."
+      "q": "क्या ग्रेस्केल फ़ाइल का आकार कम करता है?",
+      "a": "अक्सर हाँ, विशेष रूप से छवि-भारी पीडीएफ़ के लिए।"
     },
     {
-      "q": "Are all pages converted?",
-      "a": "Yes by default; you can also select specific pages."
+      "q": "क्या सभी पृष्ठ परिवर्तित हो गए हैं?",
+      "a": "हाँ डिफ़ॉल्ट रूप से; आप विशिष्ट पृष्ठ भी चुन सकते हैं."
     },
     {
-      "q": "Is the conversion reversible?",
-      "a": "The color information is removed; keep the original for reversal."
+      "q": "क्या रूपांतरण प्रतिवर्ती है?",
+      "a": "रंग की जानकारी हटा दी गई है; उलटने के लिए मूल रखें।"
     },
     {
-      "q": "Does it affect text quality?",
-      "a": "No, text remains crisp and black."
+      "q": "क्या यह पाठ की गुणवत्ता को प्रभावित करता है?",
+      "a": "नहीं, टेक्स्ट स्पष्ट और काला रहता है।"
     },
     {
-      "q": "Is this free?",
-      "a": "हाँ, पूरी तरह मुफ्त।"
+      "q": "क्या यह मुफ़्त है?",
+      "a": "हाँ, पूर्णतया निःशुल्क।"
     }
-  ]
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न",
+  "supportCenter": "सहायता केंद्र"
 }

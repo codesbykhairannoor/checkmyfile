@@ -1,67 +1,85 @@
 {
-  "title": "PDF to Image Converter — Extract Pages Offline",
-  "h1": "Convert PDF Pages to PNG or JPG Images",
-  "description": "Extract every page from a PDF as high-quality images directly in your browser. Zero upload, total privacy. Best for users in Copenhagen.",
+  "title": "PDF til billedkonvertering — Udpak sider offline",
+  "h1": "Konverter PDF-sider til PNG- eller JPG-billeder",
+  "description": "Uddrag hver side fra en PDF som billeder i høj kvalitet direkte i din browser. Zero upload, 100% secure local processing.",
+  "buttonText": "Extract Images",
+  "badges": [
+    "Designporteføljer",
+    "Præsentationer",
+    "Høj kvalitet"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
+      "type": "pdf_image_hero_features",
       "title": "Why Extract PDF Pages Offline?",
-      "content": "PDFs often contain confidential diagrams, blueprints, or reports. Extract pages as images without any server access."
+      "content": "PDF'er indeholder ofte fortrolige diagrammer, tegninger eller rapporter. Uddrag sider som billeder uden serveradgang."
     },
     {
-      "type": "split_how_to_steps",
+      "type": "pdf_image_how_to_steps",
       "title": "How to Convert PDF to Images",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF you want to extract images from."
+          "title": "Indlæs PDF",
+          "description": "Vælg den PDF, du vil udtrække billeder fra."
         },
         {
-          "title": "Choose Format",
-          "description": "Pick PNG (lossless) or JPG (compressed) output."
+          "title": "Vælg Format",
+          "description": "Vælg PNG (tabsfri) eller JPG (komprimeret) output."
         },
         {
-          "title": "Download Images",
-          "description": "Get all pages as individual image files in a ZIP."
+          "title": "Download billeder",
+          "description": "Få alle sider som individuelle billedfiler i en ZIP."
         }
-      ]
+      ],
+      "badgeText": "Hurtig guide"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF to Image for Copenhagen Designers",
-      "content": "Designers in Copenhagen extract PDF pages as images for presentations and social media without cloud uploads."
+      "type": "pdf_image_geo_targeting",
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle handlinger udføres direkte på din lokale enhed. Vi bruger avanceret WebAssembly-teknologi til at behandle dine dokumenter uden nogensinde at uploade dem til eksterne servere, hvilket sikrer fuldstændigt privatliv.",
+      "badgeText": "Lokal behandling"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Confidential Diagrams Stay Private",
-      "content": "Technical blueprints and legal documents extracted as images without any data leaving your device."
+      "type": "pdf_image_privacy_security",
+      "title": "Fortrolige diagrammer Forbliv privat",
+      "content": "Tekniske tegninger og juridiske dokumenter udtrukket som billeder, uden at nogen data forlader din enhed.",
+      "badgeText": "Sikkerhed først"
     },
     {
-      "type": "split_performance",
-      "title": "Extract All Pages Instantly",
-      "content": "A 500-page PDF converted to images in seconds. No upload, no wait."
+      "type": "pdf_image_performance",
+      "title": "Udpak alle sider med det samme",
+      "content": "En 500-siders PDF konverteret til billeder på få sekunder. Ingen upload, nej vent.",
+      "badgeText": "Lynhurtigt"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are available?",
-      "a": "PNG and JPG with adjustable quality settings."
+      "q": "Hvilke billedformater er tilgængelige?",
+      "a": "PNG og JPG med justerbare kvalitetsindstillinger."
     },
     {
-      "q": "Can I extract specific pages?",
-      "a": "Yes, specify page ranges like 1-5 or 3,7,12."
+      "q": "Kan jeg udtrække bestemte sider?",
+      "a": "Ja, angiv sideintervaller som 1-5 eller 3,7,12."
     },
     {
-      "q": "What resolution are the exported images?",
-      "a": "Default 150 DPI, adjustable up to 300 DPI."
+      "q": "Hvilken opløsning er de eksporterede billeder?",
+      "a": "Standard 150 DPI, justerbar op til 300 DPI."
     },
     {
-      "q": "Are all pages exported at once?",
-      "a": "Yes, all selected pages are zipped for a single download."
+      "q": "Bliver alle sider eksporteret på én gang?",
+      "a": "Ja, alle valgte sider zippes til en enkelt download."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, helt gratis."
+      "q": "Er dette gratis?",
+      "a": "Helt gratis, altid."
     }
-  ]
+  ],
+  "faqTitle": "Ofte stillede spørgsmål",
+  "supportCenter": "Supportcenter"
 }

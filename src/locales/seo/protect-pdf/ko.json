@@ -1,67 +1,85 @@
 {
-  "title": "Password Protect PDF — Secure Files Offline",
-  "h1": "Add Password Protection to PDF Files Instantly",
-  "description": "Encrypt PDF files with AES-256 directly in your browser. Your document never leaves your device. Ideal for users in Seoul.",
+  "title": "PDF를 비밀번호로 보호 — 오프라인에서 파일 보호",
+  "h1": "PDF 파일에 즉시 비밀번호 보호 추가",
+  "description": "브라우저에서 직접 AES-256으로 PDF 파일을 암호화하세요. 문서가 기기 외부로 유출되지 않습니다. 100% 안전한 로컬 처리.",
+  "buttonText": "Protect PDF",
+  "badges": [
+    "AES-256 암호화",
+    "보안 비밀번호",
+    "클라이언트측만"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "protect_hero_features",
-      "title": "Why Protect PDFs Locally?",
-      "content": "Adding a password means the file is sensitive. Never upload sensitive files to a cloud encryptor. Ours runs entirely offline with AES-256 encryption."
+      "title": "PDF를 로컬에서 보호하는 이유는 무엇입니까?",
+      "content": "비밀번호를 추가한다는 것은 해당 파일이 민감하다는 것을 의미합니다. 민감한 파일을 클라우드 암호화 도구에 업로드하지 마십시오. 우리 회사는 AES-256 암호화를 통해 완전히 오프라인으로 실행됩니다."
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Password Protect a PDF",
+      "title": "PDF를 비밀번호로 보호하는 방법",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF you want to lock."
+          "title": "PDF 열기",
+          "description": "잠그려는 PDF를 선택합니다."
         },
         {
-          "title": "Set Password",
-          "description": "Choose a strong password for encryption."
+          "title": "비밀번호 설정",
+          "description": "암호화를 위해 강력한 비밀번호를 선택하세요."
         },
         {
-          "title": "Download Protected PDF",
-          "description": "Get your AES-256 encrypted PDF immediately."
+          "title": "보호된 PDF 다운로드",
+          "description": "AES-256 암호화된 PDF를 즉시 받으세요."
         }
-      ]
+      ],
+      "badgeText": "빠른 가이드"
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Vault-Level PDF Protection for Seoul",
-      "content": "Legal and finance professionals in Seoul encrypt documents with AES-256 strength without exposing files to any server."
+      "title": "100% 안전한 로컬 처리",
+      "content": "모든 작업은 로컬 장치에서 직접 수행됩니다. 우리는 고급 WebAssembly 기술을 사용하여 문서를 외부 서버에 업로드하지 않고 처리하여 완벽한 개인 정보 보호를 보장합니다.",
+      "badgeText": "로컬 처리"
     },
     {
       "type": "protect_privacy_security",
-      "title": "AES-256 Encryption — Bank-Grade, Offline",
-      "content": "Military-grade AES-256 encryption runs in your browser. No key is ever transmitted to any server."
+      "title": "AES-256 암호화 — 은행급, 오프라인",
+      "content": "군사급 AES-256 암호화가 브라우저에서 실행됩니다. 어떤 키도 서버로 전송되지 않습니다.",
+      "badgeText": "보안 우선"
     },
     {
       "type": "protect_performance",
-      "title": "Encrypt Any PDF in Under 1 Second",
-      "content": "AES-256 processing locally takes milliseconds — no upload, no queue, no wait."
+      "title": "1초 안에 모든 PDF를 암호화하세요",
+      "content": "AES-256을 로컬에서 처리하는 데는 밀리초가 소요됩니다. 업로드도, 대기열도, 대기도 없습니다.",
+      "badgeText": "번개처럼 빠르게"
     }
   ],
   "faqs": [
     {
-      "q": "What encryption standard is used?",
-      "a": "AES-256, the same standard used by banks and governments."
+      "q": "어떤 암호화 표준이 사용됩니까?",
+      "a": "AES-256은 은행과 정부에서 사용하는 것과 동일한 표준입니다."
     },
     {
-      "q": "Can I set different owner and user passwords?",
-      "a": "Yes, you can set both separately."
+      "q": "소유자 비밀번호와 사용자 비밀번호를 다르게 설정할 수 있나요?",
+      "a": "예, 두 가지를 별도로 설정할 수 있습니다."
     },
     {
-      "q": "Is the original file modified?",
-      "a": "No, a new encrypted copy is created."
+      "q": "원본 파일이 수정되었나요?",
+      "a": "아니요, 새로운 암호화된 복사본이 생성됩니다."
     },
     {
-      "q": "Can I restrict printing or editing?",
-      "a": "Yes, permission restrictions can be set alongside the password."
+      "q": "인쇄나 편집을 제한할 수 있나요?",
+      "a": "예, 비밀번호와 함께 권한 제한을 설정할 수 있습니다."
     },
     {
-      "q": "Is this free?",
+      "q": "이거 무료인가요?",
       "a": "예, 완전 무료입니다."
     }
-  ]
+  ],
+  "faqTitle": "자주 묻는 질문",
+  "supportCenter": "지원 센터"
 }

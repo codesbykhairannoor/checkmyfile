@@ -1,67 +1,85 @@
 {
-  "title": "Resize PDF Pages — Change Paper Size Offline",
-  "h1": "Resize PDF Pages to A4, Letter, or Custom Sizes",
-  "description": "Change the paper size of every PDF page to A4, US Letter, or custom dimensions entirely in your browser. No upload. Ideal for users in Helsinki.",
+  "title": "Muuta PDF-sivujen kokoa — Muuta paperikokoa offline-tilassa",
+  "h1": "Muuta PDF-sivujen koko A4-, Letter- tai mukautettuun kokoon",
+  "description": "Muuta jokaisen PDF-sivun paperikooksi A4, US Letter tai mukautetut mitat kokonaan selaimessasi. Ei latausta. 100 % turvallinen paikallinen käsittely.",
+  "buttonText": "Resize Pages",
+  "badges": [
+    "A4, Letter, Custom",
+    "Lisää marginaalit",
+    "Korjaa muoto"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Resize PDFs Locally?",
-      "content": "Preparing documents for printing requires proper page sizing. Resize locally without uploading internal documents to the cloud."
+      "type": "resize_hero_features",
+      "title": "Miksi muuttaa PDF-tiedostojen kokoa paikallisesti?",
+      "content": "Asiakirjojen valmistelu tulostamista varten vaatii oikean sivukoon. Muuta kokoa paikallisesti lataamatta sisäisiä asiakirjoja pilveen."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Resize PDF Pages",
+      "type": "resize_how_to_steps",
+      "title": "PDF-sivujen koon muuttaminen",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page dimensions."
+          "title": "Avaa PDF",
+          "description": "Lataa PDF-tiedosto, jonka sivumitat ovat väärät."
         },
         {
-          "title": "Select Target Size",
-          "description": "Choose A4, Letter, A3, or enter custom dimensions."
+          "title": "Valitse kohdekoko",
+          "description": "Valitse A4, Letter, A3 tai anna mukautetut mitat."
         },
         {
-          "title": "Download Resized PDF",
-          "description": "Get your properly sized document instantly."
+          "title": "Lataa muutettu PDF",
+          "description": "Hanki oikeankokoinen asiakirja välittömästi."
         }
-      ]
+      ],
+      "badgeText": "Pikaopas"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Resizing for Helsinki Print Shops",
-      "content": "Print shops and offices in Helsinki resize documents to standard sizes without cloud dependency."
+      "type": "resize_geo_targeting",
+      "title": "100 % suojattu paikallinen käsittely",
+      "content": "Kaikki toiminnot suoritetaan suoraan paikallisella laitteellasi. Käytämme edistynyttä WebAssembly-tekniikkaa asiakirjojen käsittelyyn lataamatta niitä koskaan ulkoisille palvelimille, mikä takaa täydellisen yksityisyyden.",
+      "badgeText": "Paikallinen käsittely"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Internal Documents Stay Internal",
-      "content": "Resize business reports and proposals without any server-side processing."
+      "type": "resize_privacy_security",
+      "title": "Sisäiset asiakirjat pysyvät sisäisenä",
+      "content": "Muuta liiketoimintaraporttien ja ehdotusten kokoa ilman palvelinpuolen käsittelyä.",
+      "badgeText": "Turvallisuus ensin"
     },
     {
-      "type": "transform_performance",
-      "title": "Resize Hundreds of Pages Instantly",
-      "content": "Resizing a 500-page PDF takes under 2 seconds. All in your browser."
+      "type": "resize_performance",
+      "title": "Muuta satojen sivujen kokoa välittömästi",
+      "content": "500-sivuisen PDF-tiedoston koon muuttaminen kestää alle 2 sekuntia. Kaikki selaimessasi.",
+      "badgeText": "Salamannopeasti"
     }
   ],
   "faqs": [
     {
-      "q": "What sizes are available?",
-      "a": "A4, A3, A5, US Letter, Legal, and custom dimensions."
+      "q": "Mitä kokoja on saatavilla?",
+      "a": "A4, A3, A5, US Letter, Legal ja mukautetut mitat."
     },
     {
-      "q": "Does content scale with the page?",
-      "a": "Yes, content is scaled proportionally by default."
+      "q": "Skaalautuuko sisältö sivun kanssa?",
+      "a": "Kyllä, sisältö skaalataan oletusarvoisesti suhteellisesti."
     },
     {
-      "q": "Can I resize individual pages?",
-      "a": "Yes, apply different sizes to specific pages."
+      "q": "Voinko muuttaa yksittäisten sivujen kokoa?",
+      "a": "Kyllä, käytä eri kokoja tietyillä sivuilla."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "Vector content is re-rendered perfectly; images may scale."
+      "q": "Vaikuttaako laatuun?",
+      "a": "Vektorisisältö renderöitiin täydellisesti uudelleen; kuvat voivat skaalata."
     },
     {
-      "q": "Is this free?",
+      "q": "Onko tämä ilmainen?",
       "a": "Kyllä, täysin ilmainen."
     }
-  ]
+  ],
+  "faqTitle": "Usein kysytyt kysymykset",
+  "supportCenter": "Tukikeskus"
 }

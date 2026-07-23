@@ -1,67 +1,85 @@
 {
-  "title": "Crop PDF Margins — Trim Pages Offline",
-  "h1": "Crop and Trim PDF Page Margins Instantly",
-  "description": "Remove unwanted whitespace or crop PDF pages to custom dimensions, all locally. No upload. Ideal for users in Tokyo.",
+  "title": "PDF の余白をトリミング — オフラインでページをトリミング",
+  "h1": "PDF ページの余白を即座にトリミングおよびトリミング",
+  "description": "不要な空白を削除したり、PDF ページをカスタム寸法にトリミングしたりすることはすべてローカルで行えます。 高速かつ完全に安全です。",
+  "buttonText": "Crop PDF",
+  "badges": [
+    "ビジュアルマージンエディタ",
+    "均一なトリミング",
+    "ゼロ遅延"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Crop PDFs Locally?",
-      "content": "Scanned documents often have large margins. Crop them locally without exposing internal document structure to the cloud."
+      "type": "crop_hero_features",
+      "title": "PDF をローカルでトリミングする理由",
+      "content": "スキャンされたドキュメントには大きな余白があることがよくあります。 内部のドキュメント構造をクラウドに公開することなく、ローカルでトリミングします。"
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Crop PDF Pages",
+      "type": "crop_how_to_steps",
+      "title": "PDF ページをトリミングする方法",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to crop."
+          "title": "PDF を開く",
+          "description": "切り抜きたいPDFを読み込みます。"
         },
         {
-          "title": "Set Margins",
-          "description": "Drag guides or enter exact margin values."
+          "title": "余白を設定する",
+          "description": "ガイドをドラッグするか、正確なマージン値を入力します。"
         },
         {
-          "title": "Export Cropped PDF",
-          "description": "Download the trimmed PDF instantly."
+          "title": "トリミングされた PDF をエクスポート",
+          "description": "トリミングされた PDF をすぐにダウンロードします。"
         }
-      ]
+      ],
+      "badgeText": "クイックガイド"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Precise Cropping for Tokyo Users",
-      "content": "Architects and designers in Tokyo use our crop tool to clean up scanned blueprints without cloud uploads."
+      "type": "crop_geo_targeting",
+      "title": "100% 安全なローカル処理",
+      "content": "すべての操作はローカル デバイス上で直接実行されます。 当社は高度な WebAssembly テクノロジーを使用して、ドキュメントを外部サーバーにアップロードすることなく処理し、完全なプライバシーを確​​保します。",
+      "badgeText": "ローカル処理"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Technical Documents Stay Local",
-      "content": "Architectural plans and legal PDFs cropped locally without any server round-trip."
+      "type": "crop_privacy_security",
+      "title": "技術文書はローカルに留まります",
+      "content": "建築計画と法定 PDF は、サーバーとの往復なしにローカルでトリミングされます。",
+      "badgeText": "セキュリティ第一"
     },
     {
-      "type": "split_performance",
-      "title": "Crop Any Size PDF Instantly",
-      "content": "Crop margins from a 200-page document in under 2 seconds. All in your browser."
+      "type": "crop_performance",
+      "title": "あらゆるサイズの PDF を即座にトリミング",
+      "content": "200 ページのドキュメントから 2 秒以内に余白をトリミングします。 すべてブラウザ内で。",
+      "badgeText": "超高速"
     }
   ],
   "faqs": [
     {
-      "q": "Can I crop all pages uniformly?",
-      "a": "Yes, apply the same crop to every page at once."
+      "q": "すべてのページを均一にトリミングできますか?",
+      "a": "はい、同じトリミングをすべてのページに一度に適用します。"
     },
     {
-      "q": "Can I crop individual pages?",
-      "a": "Yes, you can set per-page crop values."
+      "q": "個々のページをトリミングできますか?",
+      "a": "はい、ページごとのトリミング値を設定できます。"
     },
     {
-      "q": "What are the minimum margin values?",
-      "a": "You can crop all the way to 0 margin on any side."
+      "q": "最小マージン値はいくらですか?",
+      "a": "どの辺でも余白が 0 になるまでトリミングできます。"
     },
     {
-      "q": "Will content be cut off?",
-      "a": "Only whitespace is removed by default; you control the guides."
+      "q": "内容が打ち切られてしまうのでしょうか？",
+      "a": "デフォルトでは空白のみが削除されます。 あなたがガイドをコントロールします。"
     },
     {
-      "q": "Is this free?",
-      "a": "はい、完全無料です。"
+      "q": "これは無料ですか？",
+      "a": "はい、完全に無料です。"
     }
-  ]
+  ],
+  "faqTitle": "よくある質問",
+  "supportCenter": "サポート センター"
 }

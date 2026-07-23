@@ -1,67 +1,85 @@
 {
-  "title": "Add Watermark to PDF — Offline Watermarking",
-  "h1": "Stamp PDFs with Text or Image Watermarks Locally",
-  "description": "Add \"CONFIDENTIAL\", logos, or custom text watermarks to PDFs entirely in your browser. No upload. Best for users in Budapest.",
+  "title": "Vízjel hozzáadása a PDF-hez — Offline vízjel",
+  "h1": "Bélyegezze a PDF-fájlokat szöveges vagy képi vízjelekkel helyileg",
+  "description": "Adjon hozzá \"CONFIDENTIAL\", logókat vagy egyéni szöveges vízjeleket a PDF-fájlokhoz a böngészőjében. Nincs feltöltés. 100%-ban biztonságos helyi feldolgozás.",
+  "buttonText": "Add Watermark",
+  "badges": [
+    "Egyéni szöveg",
+    "Állítható átlátszóság",
+    "Márkavédelem"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Watermark PDFs Offline?",
-      "content": "Adding watermarks means your document is sensitive. Never upload draft contracts or confidential reports to a cloud watermarker."
+      "type": "watermark_hero_features",
+      "title": "Miért a vízjel PDF-ek offline?",
+      "content": "A vízjelek hozzáadása azt jelenti, hogy a dokumentum érzékeny. Soha ne töltsön fel szerződéstervezeteket vagy bizalmas jelentéseket felhővízjelzőbe."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Watermark a PDF",
+      "type": "watermark_how_to_steps",
+      "title": "PDF vízjelezése",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to watermark."
+          "title": "PDF megnyitása",
+          "description": "Válassza ki a vízjelhez csatolandó PDF-fájlt."
         },
         {
-          "title": "Design Watermark",
-          "description": "Type text or upload a logo image."
+          "title": "Design vízjel",
+          "description": "Írjon be szöveget vagy töltsön fel egy logót."
         },
         {
-          "title": "Apply & Download",
-          "description": "Get your watermarked PDF in one click."
+          "title": "Alkalmazás és letöltés",
+          "description": "Szerezze meg vízjellel ellátott PDF-jét egyetlen kattintással."
         }
-      ]
+      ],
+      "badgeText": "Gyors útmutató"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Document Watermarking in Budapest",
-      "content": "Legal and creative professionals in Budapest stamp documents with watermarks without cloud uploads."
+      "type": "watermark_geo_targeting",
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Minden művelet közvetlenül a helyi eszközön történik. Fejlett WebAssembly technológiát használunk a dokumentumok feldolgozásához anélkül, hogy azokat külső szerverekre feltöltenénk, így biztosítva a teljes adatvédelmet.",
+      "badgeText": "Helyi feldolgozás"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Confidential Drafts Stay Private",
-      "content": "Draft contracts and unreleased designs watermarked locally without any server contact."
+      "type": "watermark_privacy_security",
+      "title": "A bizalmas piszkozatok maradjanak privátok",
+      "content": "Szerződéstervezetek és kiadatlan tervek helyileg vízjellel ellátva, szerverkapcsolat nélkül.",
+      "badgeText": "Első a biztonság"
     },
     {
-      "type": "transform_performance",
-      "title": "Stamp Thousands of Pages Instantly",
-      "content": "Apply watermarks to a 1000-page document in under 3 seconds. All in your browser."
+      "type": "watermark_performance",
+      "title": "Több ezer oldal bélyegzése azonnal",
+      "content": "Vízjelek alkalmazása 1000 oldalas dokumentumra kevesebb mint 3 másodperc alatt. Mindezt a böngészőjében.",
+      "badgeText": "Villámgyors"
     }
   ],
   "faqs": [
     {
-      "q": "Can I use a logo as a watermark?",
-      "a": "Yes, upload a PNG logo and set transparency."
+      "q": "Használhatok logót vízjelként?",
+      "a": "Igen, tölts fel PNG logót, és állítsd be az átlátszóságot."
     },
     {
-      "q": "Can I adjust watermark opacity?",
-      "a": "Yes, from 10% to 100% opacity."
+      "q": "Beállíthatom a vízjel átlátszatlanságát?",
+      "a": "Igen, 10%-ról 100%-ra átlátszóság."
     },
     {
-      "q": "Can I apply it to specific pages only?",
-      "a": "Yes, choose page ranges."
+      "q": "Alkalmazhatom csak bizonyos oldalakra?",
+      "a": "Igen, válasszon oldaltartományokat."
     },
     {
-      "q": "Is diagonal placement available?",
-      "a": "Yes, rotate watermarks to any angle."
+      "q": "Lehetséges átlós elhelyezés?",
+      "a": "Igen, forgassa el a vízjeleket bármilyen szögben."
     },
     {
-      "q": "Is this free?",
-      "a": "Igen, teljesen ingyenes."
+      "q": "Ez ingyenes?",
+      "a": "Igen, mindig ingyenes."
     }
-  ]
+  ],
+  "faqTitle": "Gyakran Ismételt Kérdések",
+  "supportCenter": "Támogatási Központ"
 }

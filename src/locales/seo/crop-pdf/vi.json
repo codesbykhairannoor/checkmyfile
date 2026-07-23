@@ -1,67 +1,85 @@
 {
-  "title": "Crop PDF Margins — Trim Pages Offline",
-  "h1": "Crop and Trim PDF Page Margins Instantly",
-  "description": "Remove unwanted whitespace or crop PDF pages to custom dimensions, all locally. No upload. Ideal for users in Hanoi.",
+  "title": "Cắt lề PDF — Cắt trang ngoại tuyến",
+  "h1": "Cắt và cắt lề trang PDF ngay lập tức",
+  "description": "Xóa khoảng trắng không mong muốn hoặc cắt các trang PDF thành kích thước tùy chỉnh, tất cả đều cục bộ. Nhanh chóng và hoàn toàn an toàn.",
+  "buttonText": "Crop PDF",
+  "badges": [
+    "Trình chỉnh sửa lề trực quan",
+    "Cắt xén đồng đều",
+    "Độ trễ bằng không"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Crop PDFs Locally?",
-      "content": "Scanned documents often have large margins. Crop them locally without exposing internal document structure to the cloud."
+      "type": "crop_hero_features",
+      "title": "Tại sao cắt tệp PDF cục bộ?",
+      "content": "Tài liệu scan thường có lề lớn. Cắt chúng cục bộ mà không để lộ cấu trúc tài liệu nội bộ lên đám mây."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Crop PDF Pages",
+      "type": "crop_how_to_steps",
+      "title": "Cách cắt trang PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to crop."
+          "title": "Mở PDF",
+          "description": "Tải tệp PDF bạn muốn cắt."
         },
         {
-          "title": "Set Margins",
-          "description": "Drag guides or enter exact margin values."
+          "title": "Đặt lề",
+          "description": "Kéo hướng dẫn hoặc nhập giá trị lề chính xác."
         },
         {
-          "title": "Export Cropped PDF",
-          "description": "Download the trimmed PDF instantly."
+          "title": "Xuất PDF đã cắt",
+          "description": "Tải xuống bản PDF đã được cắt xén ngay lập tức."
         }
-      ]
+      ],
+      "badgeText": "Hướng dẫn nhanh"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Precise Cropping for Hanoi Users",
-      "content": "Architects and designers in Hanoi use our crop tool to clean up scanned blueprints without cloud uploads."
+      "type": "crop_geo_targeting",
+      "title": "Xử lý cục bộ an toàn 100%",
+      "content": "Tất cả các hoạt động được thực hiện trực tiếp trên thiết bị cục bộ của bạn. Chúng tôi sử dụng công nghệ WebAssembly tiên tiến để xử lý tài liệu của bạn mà không cần tải chúng lên máy chủ bên ngoài, đảm bảo quyền riêng tư hoàn toàn.",
+      "badgeText": "Xử lý cục bộ"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Technical Documents Stay Local",
-      "content": "Architectural plans and legal PDFs cropped locally without any server round-trip."
+      "type": "crop_privacy_security",
+      "title": "Tài liệu kỹ thuật Ở địa phương",
+      "content": "Các kế hoạch kiến ​​trúc và các tệp PDF hợp pháp được cắt cục bộ mà không cần bất kỳ chuyến đi khứ hồi nào từ máy chủ.",
+      "badgeText": "Bảo mật là trên hết"
     },
     {
-      "type": "split_performance",
-      "title": "Crop Any Size PDF Instantly",
-      "content": "Crop margins from a 200-page document in under 2 seconds. All in your browser."
+      "type": "crop_performance",
+      "title": "Cắt PDF kích thước bất kỳ ngay lập tức",
+      "content": "Cắt lề từ tài liệu 200 trang trong vòng chưa đầy 2 giây. Tất cả trong trình duyệt của bạn.",
+      "badgeText": "Nhanh như chớp"
     }
   ],
   "faqs": [
     {
-      "q": "Can I crop all pages uniformly?",
-      "a": "Yes, apply the same crop to every page at once."
+      "q": "Tôi có thể cắt tất cả các trang một cách thống nhất không?",
+      "a": "Có, áp dụng cùng một kiểu cắt cho mọi trang cùng một lúc."
     },
     {
-      "q": "Can I crop individual pages?",
-      "a": "Yes, you can set per-page crop values."
+      "q": "Tôi có thể cắt từng trang riêng lẻ không?",
+      "a": "Có, bạn có thể đặt giá trị cắt trên mỗi trang."
     },
     {
-      "q": "What are the minimum margin values?",
-      "a": "You can crop all the way to 0 margin on any side."
+      "q": "Giá trị ký quỹ tối thiểu là gì?",
+      "a": "Bạn có thể cắt hết cỡ về 0 lề ở bất kỳ phía nào."
     },
     {
-      "q": "Will content be cut off?",
-      "a": "Only whitespace is removed by default; you control the guides."
+      "q": "Nội dung sẽ bị cắt bỏ?",
+      "a": "Theo mặc định, chỉ có khoảng trắng bị xóa; bạn kiểm soát các hướng dẫn."
     },
     {
-      "q": "Is this free?",
+      "q": "Cái này có miễn phí không?",
       "a": "Có, hoàn toàn miễn phí."
     }
-  ]
+  ],
+  "faqTitle": "Câu hỏi thường gặp",
+  "supportCenter": "Trung tâm hỗ trợ"
 }

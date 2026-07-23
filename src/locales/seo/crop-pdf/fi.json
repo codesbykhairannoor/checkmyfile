@@ -1,67 +1,85 @@
 {
-  "title": "Crop PDF Margins — Trim Pages Offline",
-  "h1": "Crop and Trim PDF Page Margins Instantly",
-  "description": "Remove unwanted whitespace or crop PDF pages to custom dimensions, all locally. No upload. Ideal for users in Helsinki.",
+  "title": "Rajaa PDF-reunukset — Leikkaa sivuja offline-tilassa",
+  "h1": "Rajaa ja leikkaa PDF-sivun marginaalit välittömästi",
+  "description": "Poista ei-toivotut välilyönnit tai rajaa PDF-sivuja mukautettuihin mittoihin, kaikki paikallisesti. Nopea ja täysin turvallinen.",
+  "buttonText": "Crop PDF",
+  "badges": [
+    "Visuaalinen marginaalieditori",
+    "Tasainen rajaus",
+    "Nolla latenssia"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Crop PDFs Locally?",
-      "content": "Scanned documents often have large margins. Crop them locally without exposing internal document structure to the cloud."
+      "type": "crop_hero_features",
+      "title": "Miksi rajata PDF-tiedostoja paikallisesti?",
+      "content": "Skannatuissa asiakirjoissa on usein suuret marginaalit. Rajaa ne paikallisesti paljastamatta sisäistä dokumenttirakennetta pilvelle."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Crop PDF Pages",
+      "type": "crop_how_to_steps",
+      "title": "PDF-sivujen rajaaminen",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to crop."
+          "title": "Avaa PDF",
+          "description": "Lataa PDF, jonka haluat rajata."
         },
         {
-          "title": "Set Margins",
-          "description": "Drag guides or enter exact margin values."
+          "title": "Aseta marginaalit",
+          "description": "Vedä apuviivat tai anna tarkat marginaaliarvot."
         },
         {
-          "title": "Export Cropped PDF",
-          "description": "Download the trimmed PDF instantly."
+          "title": "Vie rajattu PDF",
+          "description": "Lataa leikattu PDF välittömästi."
         }
-      ]
+      ],
+      "badgeText": "Pikaopas"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Precise Cropping for Helsinki Users",
-      "content": "Architects and designers in Helsinki use our crop tool to clean up scanned blueprints without cloud uploads."
+      "type": "crop_geo_targeting",
+      "title": "100 % suojattu paikallinen käsittely",
+      "content": "Kaikki toiminnot suoritetaan suoraan paikallisella laitteellasi. Käytämme edistynyttä WebAssembly-tekniikkaa asiakirjojen käsittelyyn lataamatta niitä koskaan ulkoisille palvelimille, mikä takaa täydellisen yksityisyyden.",
+      "badgeText": "Paikallinen käsittely"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Technical Documents Stay Local",
-      "content": "Architectural plans and legal PDFs cropped locally without any server round-trip."
+      "type": "crop_privacy_security",
+      "title": "Tekniset asiakirjat pysyvät paikallisina",
+      "content": "Arkkitehtoniset suunnitelmat ja lailliset PDF-tiedostot rajataan paikallisesti ilman palvelimen edestakaista kuljetusta.",
+      "badgeText": "Turvallisuus ensin"
     },
     {
-      "type": "split_performance",
-      "title": "Crop Any Size PDF Instantly",
-      "content": "Crop margins from a 200-page document in under 2 seconds. All in your browser."
+      "type": "crop_performance",
+      "title": "Rajaa minkä tahansa kokoinen PDF välittömästi",
+      "content": "Rajaa marginaalit 200-sivuisesta asiakirjasta alle kahdessa sekunnissa. Kaikki selaimessasi.",
+      "badgeText": "Salamannopeasti"
     }
   ],
   "faqs": [
     {
-      "q": "Can I crop all pages uniformly?",
-      "a": "Yes, apply the same crop to every page at once."
+      "q": "Voinko rajata kaikki sivut tasaisesti?",
+      "a": "Kyllä, käytä samaa rajausta jokaiselle sivulle kerralla."
     },
     {
-      "q": "Can I crop individual pages?",
-      "a": "Yes, you can set per-page crop values."
+      "q": "Voinko rajata yksittäisiä sivuja?",
+      "a": "Kyllä, voit määrittää sivukohtaiset rajausarvot."
     },
     {
-      "q": "What are the minimum margin values?",
-      "a": "You can crop all the way to 0 margin on any side."
+      "q": "Mitkä ovat marginaalin vähimmäisarvot?",
+      "a": "Voit rajata 0 marginaaliin asti miltä tahansa puolelta."
     },
     {
-      "q": "Will content be cut off?",
-      "a": "Only whitespace is removed by default; you control the guides."
+      "q": "Katkaistaanko sisältö?",
+      "a": "Vain välilyönnit poistetaan oletusarvoisesti; sinä hallitset oppaita."
     },
     {
-      "q": "Is this free?",
+      "q": "Onko tämä ilmainen?",
       "a": "Kyllä, täysin ilmainen."
     }
-  ]
+  ],
+  "faqTitle": "Usein kysytyt kysymykset",
+  "supportCenter": "Tukikeskus"
 }

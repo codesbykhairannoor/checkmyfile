@@ -1,67 +1,85 @@
 {
-  "title": "Reverse PDF — Flip Page Order Offline",
-  "h1": "Reverse the Page Order of Any PDF Locally",
-  "description": "Flip the page sequence of PDF documents entirely in your browser. No upload, instant result. Great for users in Kyiv.",
+  "title": "Зворотний PDF — порядок перегортання сторінок офлайн",
+  "h1": "Локально змінити порядок сторінок будь-якого PDF-файлу",
+  "description": "Перегортайте послідовність сторінок PDF-документів у своєму браузері. Без завантаження, миттєвий результат. 100% безпечна локальна обробка.",
+  "buttonText": "Reverse Order",
+  "badges": [
+    "Перевернути всі сторінки",
+    "Виправити сканування",
+    "Один клік"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Reverse PDF Page Order Offline?",
-      "content": "When a scanner outputs pages in reverse, you need a quick local fix — not a cloud upload of your entire document."
+      "type": "reverse_hero_features",
+      "title": "Навіщо змінювати порядок сторінок PDF у режимі офлайн?",
+      "content": "Коли сканер виводить сторінки навпаки, вам потрібне швидке локальне виправлення, а не завантаження всього документа в хмару."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Reverse PDF Page Order",
+      "type": "reverse_how_to_steps",
+      "title": "Як змінити порядок сторінок PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF with incorrect page order."
+          "title": "Відкрити PDF",
+          "description": "Виберіть PDF із неправильним порядком сторінок."
         },
         {
-          "title": "Confirm Reversal",
-          "description": "Preview the new first and last page."
+          "title": "Підтвердити сторнування",
+          "description": "Перегляньте нову першу та останню сторінку."
         },
         {
-          "title": "Download Reversed PDF",
-          "description": "Get the reordered PDF instantly."
+          "title": "Завантажити перевернутий PDF",
+          "description": "Миттєво отримайте перевпорядкований PDF-файл."
         }
-      ]
+      ],
+      "badgeText": "Короткий посібник"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Page Order Fix for Kyiv Users",
-      "content": "Office users in Kyiv fix scanner reversal issues instantly without cloud uploads."
+      "type": "reverse_geo_targeting",
+      "title": "100% безпечна локальна обробка",
+      "content": "Усі операції виконуються безпосередньо на локальному пристрої. Ми використовуємо передову технологію WebAssembly для обробки ваших документів, не завантажуючи їх на зовнішні сервери, забезпечуючи повну конфіденційність.",
+      "badgeText": "Локальна обробка"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Documents Never Leave Your Device",
-      "content": "Reversed contracts, reports, and records are processed entirely in browser memory."
+      "type": "reverse_privacy_security",
+      "title": "Документи ніколи не залишають ваш пристрій",
+      "content": "Скасовані контракти, звіти та записи повністю обробляються в пам’яті браузера.",
+      "badgeText": "Безпека перш за все"
     },
     {
-      "type": "transform_performance",
-      "title": "Reverse Any PDF in Seconds",
-      "content": "Reversing a 1000-page document takes milliseconds. All in your browser."
+      "type": "reverse_performance",
+      "title": "Перевернути будь-який PDF-файл за лічені секунди",
+      "content": "Перевертання 1000-сторінкового документа займає мілісекунди. Все у вашому браузері.",
+      "badgeText": "Блискавичний"
     }
   ],
   "faqs": [
     {
-      "q": "Does this reverse all pages?",
-      "a": "Yes, the full page order is flipped."
+      "q": "Це перевертає всі сторінки?",
+      "a": "Так, повний порядок сторінок перевернуто."
     },
     {
-      "q": "Can I select a range to reverse?",
-      "a": "Yes, specify start and end pages to reverse selectively."
+      "q": "Чи можу я вибрати діапазон для сторнування?",
+      "a": "Так, укажіть початкову та кінцеву сторінки для вибіркового перегортання."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "No, reversal is a structural operation with no quality loss."
+      "q": "Чи впливає якість?",
+      "a": "Ні, сторнування – це структурна операція без втрати якості."
     },
     {
-      "q": "Can I undo?",
-      "a": "Apply reversal again to undo."
+      "q": "Чи можу я скасувати?",
+      "a": "Застосуйте розворот ще раз, щоб скасувати."
     },
     {
-      "q": "Is this free?",
-      "a": "Так, повністю безкоштовно."
+      "q": "Це безкоштовно?",
+      "a": "Так, завжди безкоштовно."
     }
-  ]
+  ],
+  "faqTitle": "Часті запитання",
+  "supportCenter": "Центр підтримки"
 }

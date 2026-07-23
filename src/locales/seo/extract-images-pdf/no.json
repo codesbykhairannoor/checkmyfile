@@ -1,67 +1,85 @@
 {
-  "title": "Extract Images from PDF — Offline Extractor",
-  "h1": "Extract All Embedded Images from PDF Files",
-  "description": "Pull out every image from a PDF and download them as PNG or JPG files, all in your browser. No cloud. Ideal for users in Oslo.",
+  "title": "Trekk ut bilder fra PDF — Offline Extractor",
+  "h1": "Trekk ut alle innebygde bilder fra PDF-filer",
+  "description": "Trekk ut hvert bilde fra en PDF og last dem ned som PNG- eller JPG-filer, alt i nettleseren din. Ingen sky. 100 % sikker lokal behandling.",
+  "buttonText": "Extract All Images",
+  "badges": [
+    "Produktbilder",
+    "Konfidensielle diagrammer",
+    "Vektorer"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract Images Offline?",
-      "content": "PDFs with confidential diagrams or product photos should never be uploaded. Extract images directly in your browser."
+      "type": "extract_images_hero_features",
+      "title": "Hvorfor trekke ut bilder frakoblet?",
+      "content": "PDF-filer med konfidensielle diagrammer eller produktbilder skal aldri lastes opp. Trekk ut bilder direkte i nettleseren din."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Extract Images from PDF",
+      "type": "extract_images_how_to_steps",
+      "title": "Hvordan trekke ut bilder fra PDF",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Open the PDF containing embedded images."
+          "title": "Last ned PDF",
+          "description": "Åpne PDF-filen som inneholder innebygde bilder."
         },
         {
-          "title": "Scan for Images",
-          "description": "Our engine locates all embedded image objects."
+          "title": "Skann etter bilder",
+          "description": "Motoren vår lokaliserer alle innebygde bildeobjekter."
         },
         {
-          "title": "Download ZIP",
-          "description": "Get all extracted images in a single ZIP file."
+          "title": "Last ned ZIP",
+          "description": "Få alle utpakkede bilder i en enkelt ZIP-fil."
         }
-      ]
+      ],
+      "badgeText": "Hurtigguide"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Image Extraction in Oslo",
-      "content": "Publishers and marketers in Oslo extract product photos and diagrams from PDFs without cloud uploads."
+      "type": "extract_images_geo_targeting",
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle operasjoner utføres direkte på din lokale enhet. Vi bruker avansert WebAssembly-teknologi for å behandle dokumentene dine uten å laste dem opp til eksterne servere, noe som sikrer fullstendig personvern.",
+      "badgeText": "Lokal behandling"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Product Images Stay Confidential",
-      "content": "Unreleased product photos embedded in PDFs extracted locally without any server access."
+      "type": "extract_images_privacy_security",
+      "title": "Produktbilder forbli konfidensielle",
+      "content": "Ikke-utgitte produktbilder innebygd i PDF-er hentet ut lokalt uten servertilgang.",
+      "badgeText": "Sikkerhet først"
     },
     {
-      "type": "split_performance",
-      "title": "Extract Hundreds of Images Fast",
-      "content": "Extract 500 images from a PDF in seconds. All native browser processing."
+      "type": "extract_images_performance",
+      "title": "Trekk ut hundrevis av bilder raskt",
+      "content": "Trekk ut 500 bilder fra en PDF på sekunder. All innfødt nettleserbehandling.",
+      "badgeText": "Lynrask"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are extracted?",
-      "a": "Images are saved in their original format (PNG, JPG, etc.)."
+      "q": "Hvilke bildeformater trekkes ut?",
+      "a": "Bildene lagres i originalformatet (PNG, JPG osv.)."
     },
     {
-      "q": "Are images at full resolution?",
-      "a": "Yes, extracted at the original embedded resolution."
+      "q": "Har bildene full oppløsning?",
+      "a": "Ja, trukket ut med den opprinnelige innebygde oppløsningen."
     },
     {
-      "q": "Can I choose specific pages?",
-      "a": "Yes, specify which pages to extract images from."
+      "q": "Kan jeg velge bestemte sider?",
+      "a": "Ja, spesifiser hvilke sider du vil trekke ut bilder fra."
     },
     {
-      "q": "Does it extract vector graphics?",
-      "a": "Vector elements are rasterized to PNG/JPG."
+      "q": "Trekker den ut vektorgrafikk?",
+      "a": "Vektorelementer er rasterisert til PNG/JPG."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, helt gratis."
+      "q": "Er dette gratis?",
+      "a": "Ja, alltid gratis."
     }
-  ]
+  ],
+  "faqTitle": "Ofte stilte spørsmål",
+  "supportCenter": "Støttesenter"
 }

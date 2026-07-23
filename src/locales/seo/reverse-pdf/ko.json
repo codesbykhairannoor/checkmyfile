@@ -1,67 +1,85 @@
 {
-  "title": "Reverse PDF — Flip Page Order Offline",
-  "h1": "Reverse the Page Order of Any PDF Locally",
-  "description": "Flip the page sequence of PDF documents entirely in your browser. No upload, instant result. Great for users in Seoul.",
+  "title": "역방향 PDF - 페이지 넘기기 오프라인 주문",
+  "h1": "PDF의 페이지 순서를 로컬에서 뒤집기",
+  "description": "브라우저에서 PDF 문서의 페이지 순서를 완전히 뒤집을 수 있습니다. 업로드가 없으며 즉시 결과가 나타납니다. 100% 안전한 로컬 처리.",
+  "buttonText": "Reverse Order",
+  "badges": [
+    "모든 페이지 반전",
+    "스캔 수정",
+    "원클릭"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Reverse PDF Page Order Offline?",
-      "content": "When a scanner outputs pages in reverse, you need a quick local fix — not a cloud upload of your entire document."
+      "type": "reverse_hero_features",
+      "title": "PDF 페이지를 오프라인으로 역방향으로 주문하는 이유는 무엇입니까?",
+      "content": "스캐너가 페이지를 거꾸로 출력하는 경우 전체 문서를 클라우드로 업로드하는 것이 아니라 빠른 로컬 수정이 필요합니다."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Reverse PDF Page Order",
+      "type": "reverse_how_to_steps",
+      "title": "PDF 페이지 순서를 바꾸는 방법",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF with incorrect page order."
+          "title": "PDF 열기",
+          "description": "페이지 순서가 잘못된 PDF를 선택하세요."
         },
         {
-          "title": "Confirm Reversal",
-          "description": "Preview the new first and last page."
+          "title": "취소 확인",
+          "description": "새로운 첫 번째 페이지와 마지막 페이지를 미리 봅니다."
         },
         {
-          "title": "Download Reversed PDF",
-          "description": "Get the reordered PDF instantly."
+          "title": "반전된 PDF 다운로드",
+          "description": "재정렬된 PDF를 즉시 받아보세요."
         }
-      ]
+      ],
+      "badgeText": "빠른 가이드"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Page Order Fix for Seoul Users",
-      "content": "Office users in Seoul fix scanner reversal issues instantly without cloud uploads."
+      "type": "reverse_geo_targeting",
+      "title": "100% 안전한 로컬 처리",
+      "content": "모든 작업은 로컬 장치에서 직접 수행됩니다. 우리는 고급 WebAssembly 기술을 사용하여 문서를 외부 서버에 업로드하지 않고 처리하여 완벽한 개인 정보 보호를 보장합니다.",
+      "badgeText": "로컬 처리"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Documents Never Leave Your Device",
-      "content": "Reversed contracts, reports, and records are processed entirely in browser memory."
+      "type": "reverse_privacy_security",
+      "title": "문서는 절대 기기 밖으로 나가지 않습니다",
+      "content": "역계약, 보고서 및 기록은 모두 브라우저 메모리에서 처리됩니다.",
+      "badgeText": "보안 우선"
     },
     {
-      "type": "transform_performance",
-      "title": "Reverse Any PDF in Seconds",
-      "content": "Reversing a 1000-page document takes milliseconds. All in your browser."
+      "type": "reverse_performance",
+      "title": "모든 PDF를 몇 초 만에 뒤집기",
+      "content": "1000페이지 문서를 뒤집는 데는 밀리초가 걸립니다. 모든 것이 브라우저에 있습니다.",
+      "badgeText": "번개처럼 빠르게"
     }
   ],
   "faqs": [
     {
-      "q": "Does this reverse all pages?",
-      "a": "Yes, the full page order is flipped."
+      "q": "이렇게 하면 모든 페이지가 반전되나요?",
+      "a": "예, 전체 페이지 순서가 뒤집어졌습니다."
     },
     {
-      "q": "Can I select a range to reverse?",
-      "a": "Yes, specify start and end pages to reverse selectively."
+      "q": "되돌릴 범위를 선택할 수 있나요?",
+      "a": "예, 선택적으로 반전할 시작 페이지와 끝 페이지를 지정하세요."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "No, reversal is a structural operation with no quality loss."
+      "q": "품질에 영향이 있나요?",
+      "a": "아니요, 반전은 품질 손실이 없는 구조적 작업입니다."
     },
     {
-      "q": "Can I undo?",
-      "a": "Apply reversal again to undo."
+      "q": "취소할 수 있나요?",
+      "a": "실행 취소하려면 취소를 다시 적용하세요."
     },
     {
-      "q": "Is this free?",
-      "a": "예, 완전 무료입니다."
+      "q": "이거 무료인가요?",
+      "a": "예, 항상 무료입니다."
     }
-  ]
+  ],
+  "faqTitle": "자주 묻는 질문",
+  "supportCenter": "지원 센터"
 }

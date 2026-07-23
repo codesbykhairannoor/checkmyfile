@@ -1,67 +1,85 @@
 {
-  "title": "Text to PDF Converter — Offline & Instant",
-  "h1": "Convert Plain Text Files to PDF Locally",
-  "description": "Transform .txt files into clean, readable PDFs directly in your browser. No upload required. Ideal for users in Prague.",
+  "title": "Převodník textu do PDF — Offline & Instant",
+  "h1": "Převést soubory prostého textu do PDF lokálně",
+  "description": "Transformujte soubory .txt na čisté a čitelné soubory PDF přímo ve vašem prohlížeči. Není vyžadováno nahrávání. 100% bezpečné místní zpracování.",
+  "buttonText": "Convert Text",
+  "badges": [
+    "Úryvky kódu",
+    "Protokoly serveru",
+    "Rukopisy"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Text Files Offline?",
-      "content": "Text files often contain code, scripts, or sensitive notes. Our offline converter ensures zero data transmission."
+      "type": "txt_hero_features",
+      "title": "Proč převádět textové soubory offline?",
+      "content": "Textové soubory často obsahují kód, skripty nebo citlivé poznámky. Náš offline převodník zajišťuje nulový přenos dat."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Text to PDF",
+      "type": "txt_how_to_steps",
+      "title": "Jak převést text do PDF",
       "steps": [
         {
-          "title": "Open Text File",
-          "description": "Select your .txt file or paste text directly."
+          "title": "Otevřít textový soubor",
+          "description": "Vyberte soubor .txt nebo vložte text přímo."
         },
         {
-          "title": "Choose Font & Style",
-          "description": "Pick font size and layout preferences."
+          "title": "Vyberte písmo a styl",
+          "description": "Vyberte velikost písma a předvolby rozvržení."
         },
         {
-          "title": "Download PDF",
-          "description": "Export your text as a beautifully formatted PDF."
+          "title": "Stáhnout PDF",
+          "description": "Exportujte svůj text jako krásně formátovaný PDF."
         }
-      ]
+      ],
+      "badgeText": "Rychlý průvodce"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Text to PDF for Prague Developers",
-      "content": "Developers and writers in Prague use our tool to convert scripts and notes without cloud dependency."
+      "type": "txt_geo_targeting",
+      "title": "100% bezpečné místní zpracování",
+      "content": "Všechny operace se provádějí přímo na vašem místním zařízení. Ke zpracování vašich dokumentů používáme pokročilou technologii WebAssembly, aniž bychom je kdy nahrávali na externí servery, což zajišťuje naprosté soukromí.",
+      "badgeText": "Místní zpracování"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Code Stays on Your Machine",
-      "content": "Source code, legal notes, medical records — text files converted with zero server involvement."
+      "type": "txt_privacy_security",
+      "title": "Kód zůstává na vašem počítači",
+      "content": "Zdrojový kód, právní poznámky, lékařské záznamy — textové soubory převedené bez zapojení serveru.",
+      "badgeText": "Bezpečnost především"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Text Rendering",
-      "content": "Convert any size text file to PDF in milliseconds. No upload, no compression, no delay."
+      "type": "txt_performance",
+      "title": "Okamžité vykreslování textu",
+      "content": "Převeďte textový soubor libovolné velikosti do PDF během milisekund. Žádné nahrávání, žádná komprese, žádné zpoždění.",
+      "badgeText": "Bleskově rychlý"
     }
   ],
   "faqs": [
     {
-      "q": "Can I paste text directly?",
-      "a": "Yes, you can type or paste text without uploading a file."
+      "q": "Mohu vložit text přímo?",
+      "a": "Ano, můžete psát nebo vkládat text bez nahrání souboru."
     },
     {
-      "q": "What fonts are available?",
-      "a": "Standard web fonts like Arial, Times New Roman, and monospace."
+      "q": "Jaká písma jsou k dispozici?",
+      "a": "Standardní webová písma jako Arial, Times New Roman a monospace."
     },
     {
-      "q": "Is code syntax preserved?",
-      "a": "Monospace formatting is preserved for code blocks."
+      "q": "Je syntaxe kódu zachována?",
+      "a": "Pro bloky kódu je zachováno jednoprostorové formátování."
     },
     {
-      "q": "Can I set page margins?",
-      "a": "Yes, customize top, bottom, left, and right margins."
+      "q": "Mohu nastavit okraje stránky?",
+      "a": "Ano, přizpůsobit horní, dolní, levý a pravý okraj."
     },
     {
-      "q": "Is this free?",
+      "q": "Je to zdarma?",
       "a": "Ano, zcela zdarma."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
 }

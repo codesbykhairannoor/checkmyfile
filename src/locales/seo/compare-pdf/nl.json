@@ -1,67 +1,85 @@
 {
-  "title": "Compare PDF Files — Spot Differences Locally",
-  "h1": "Compare Two PDF Documents Side by Side",
-  "description": "Upload two PDFs and highlight differences between them entirely in your browser. No upload to servers. Ideal for users in Amsterdam.",
+  "title": "Vergelijk PDF-bestanden — Zoek verschillen lokaal",
+  "h1": "Vergelijk twee PDF-documenten naast elkaar",
+  "description": "Upload twee PDF's en markeer de verschillen ertussen volledig in uw browser. Geen upload naar servers. 100% veilige lokale verwerking.",
+  "buttonText": "Compare PDFs",
+  "badges": [
+    "Zoek verschillen",
+    "Markeer wijzigingen",
+    "Visueel verschil"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Compare PDFs Locally?",
-      "content": "Comparing contract versions or document revisions often involves highly sensitive content. Do it entirely offline."
+      "type": "compare_hero_features",
+      "title": "Waarom PDF's lokaal vergelijken?",
+      "content": "Bij het vergelijken van contractversies of documentrevisies gaat het vaak om zeer gevoelige inhoud. Doe het volledig offline."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Compare Two PDFs",
+      "type": "compare_how_to_steps",
+      "title": "Hoe twee PDF's te vergelijken",
       "steps": [
         {
-          "title": "Load Both PDFs",
-          "description": "Select the two PDF versions to compare."
+          "title": "Beide PDF's laden",
+          "description": "Selecteer de twee PDF-versies om te vergelijken."
         },
         {
-          "title": "View Differences",
-          "description": "Highlighted changes appear side by side."
+          "title": "Verschillen bekijken",
+          "description": "Gemarkeerde wijzigingen verschijnen naast elkaar."
         },
         {
-          "title": "Export Diff Report",
-          "description": "Download a comparison report with all changes marked."
+          "title": "Export Diff-rapport",
+          "description": "Download een vergelijkingsrapport waarin alle wijzigingen zijn gemarkeerd."
         }
-      ]
+      ],
+      "badgeText": "Beknopte handleiding"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Comparison for Amsterdam Law Firms",
-      "content": "Legal professionals in Amsterdam compare contract revisions without uploading privileged documents to cloud services."
+      "type": "compare_geo_targeting",
+      "title": "100% veilige lokale verwerking",
+      "content": "Alle bewerkingen worden rechtstreeks op uw lokale apparaat uitgevoerd. We gebruiken geavanceerde WebAssembly-technologie om uw documenten te verwerken zonder ze ooit naar externe servers te uploaden, waardoor volledige privacy wordt gegarandeerd.",
+      "badgeText": "Lokale verwerking"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Privileged Documents Stay Private",
-      "content": "Compare NDAs, contracts, and regulatory filings without any server interaction."
+      "type": "compare_privacy_security",
+      "title": "Bevoorrechte documenten blijven privé",
+      "content": "Vergelijk geheimhoudingsverklaringen, contracten en registratiedossiers zonder enige serverinteractie.",
+      "badgeText": "Beveiliging eerst"
     },
     {
-      "type": "organizer_performance",
-      "title": "Instant Side-by-Side Comparison",
-      "content": "Compare 100-page documents in seconds with highlighted differences rendered in-browser."
+      "type": "compare_performance",
+      "title": "Directe vergelijking naast elkaar",
+      "content": "Vergelijk documenten van 100 pagina's binnen enkele seconden, waarbij de gemarkeerde verschillen in de browser worden weergegeven.",
+      "badgeText": "Bliksemsnel"
     }
   ],
   "faqs": [
     {
-      "q": "What types of differences are detected?",
-      "a": "Text additions, deletions, and formatting changes are highlighted."
+      "q": "Welke soorten verschillen worden gedetecteerd?",
+      "a": "Teksttoevoegingen, -verwijderingen en wijzigingen in de opmaak worden gemarkeerd."
     },
     {
-      "q": "Can I compare scanned PDFs?",
-      "a": "For scanned PDFs, use OCR first to extract text before comparing."
+      "q": "Kan ik gescande PDF's vergelijken?",
+      "a": "Voor gescande PDF's gebruikt u eerst OCR om tekst te extraheren voordat u gaat vergelijken."
     },
     {
-      "q": "Can I export the comparison?",
-      "a": "Yes, download a marked-up PDF showing all differences."
+      "q": "Kan ik de vergelijking exporteren?",
+      "a": "Ja, download een gemarkeerde PDF waarin alle verschillen worden weergegeven."
     },
     {
-      "q": "How many versions can I compare?",
-      "a": "Two documents at a time in the side-by-side view."
+      "q": "Hoeveel versies kan ik vergelijken?",
+      "a": "Twee documenten tegelijk in de zij-aan-zij-weergave."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, volledig gratis."
+      "q": "Is dit gratis?",
+      "a": "Ja, helemaal gratis."
     }
-  ]
+  ],
+  "faqTitle": "Veelgestelde vragen",
+  "supportCenter": "Ondersteuningscentrum"
 }

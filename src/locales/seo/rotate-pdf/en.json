@@ -1,15 +1,27 @@
 {
   "title": "Rotate PDF Pages — Fix Orientation Offline",
   "h1": "Rotate PDF Pages to the Correct Orientation",
-  "description": "Fix upside-down or sideways PDF pages instantly in your browser. No upload. Perfect for users in New York.",
+  "description": "Fix upside-down or sideways PDF pages instantly in your browser. Fast and completely secure.",
+  "buttonText": "Rotate Pages",
+  "badges": [
+    "Rotate 90°/180°",
+    "Batch Processing",
+    "Instant Fix"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
+      "type": "rotate_hero_features",
       "title": "Why Rotate PDFs Locally?",
       "content": "Scanned documents often come out sideways. Fix their orientation instantly without uploading anything to the cloud."
     },
     {
-      "type": "transform_how_to_steps",
+      "type": "rotate_how_to_steps",
       "title": "How to Rotate PDF Pages",
       "steps": [
         {
@@ -27,17 +39,17 @@
       ]
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Rotation for New York Offices",
-      "content": "Office workers in New York fix scanner output orientation without relying on cloud services."
+      "type": "rotate_geo_targeting",
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy."
     },
     {
-      "type": "transform_privacy_security",
+      "type": "rotate_privacy_security",
       "title": "Scanned Documents Stay Private",
       "content": "Scanned medical or legal documents rotated locally without any server access."
     },
     {
-      "type": "transform_performance",
+      "type": "rotate_performance",
       "title": "Rotate Any PDF in Milliseconds",
       "content": "Rotating 500 pages takes less than a second. No upload, no wait."
     }

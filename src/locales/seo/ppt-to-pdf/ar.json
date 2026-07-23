@@ -1,67 +1,85 @@
 {
-  "title": "PowerPoint to PDF Converter — Offline & Free",
-  "h1": "Convert PowerPoint Presentations to PDF Instantly",
-  "description": "Convert .pptx presentations to high-quality PDFs directly in your browser. No cloud needed. Perfect for presenters in Riyadh.",
+  "title": "محول PowerPoint إلى PDF — غير متصل ومجاني",
+  "h1": "تحويل عروض PowerPoint التقديمية إلى PDF على الفور",
+  "description": "قم بتحويل العروض التقديمية بتنسيق ‎.pptx إلى ملفات PDF عالية الجودة مباشرةً في متصفحك. لا حاجة للسحابة. معالجة محلية آمنة بنسبة 100%.",
+  "buttonText": "Convert Slides",
+  "badges": [
+    "اجتماعات مجلس الإدارة",
+    "تشكيلات الملعب",
+    "المنتجات التي لم يتم إصدارها"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Presentations Offline?",
-      "content": "Your slides may contain unreleased products or confidential strategies. Convert without risking data exposure."
+      "type": "ppt_hero_features",
+      "title": "لماذا تحويل العروض التقديمية دون الاتصال بالإنترنت؟",
+      "content": "قد تحتوي شرائحك على منتجات لم يتم إصدارها أو إستراتيجيات سرية. تحويل دون المخاطرة بالتعرض للبيانات."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert PowerPoint to PDF",
+      "type": "ppt_how_to_steps",
+      "title": "كيفية تحويل PowerPoint إلى PDF",
       "steps": [
         {
-          "title": "Load Presentation",
-          "description": "Select your .pptx file from your device."
+          "title": "تحميل العرض",
+          "description": "حدد ملف .pptx من جهازك."
         },
         {
-          "title": "Select Slide Range",
-          "description": "Include all slides or specific ones."
+          "title": "حدد نطاق الشريحة",
+          "description": "قم بتضمين جميع الشرائح أو شرائح محددة."
         },
         {
-          "title": "Download PDF",
-          "description": "Get your PDF with all formatting preserved."
+          "title": "تحميل بصيغة PDF",
+          "description": "احصل على ملف PDF الخاص بك مع الاحتفاظ بجميع التنسيقات."
         }
-      ]
+      ],
+      "badgeText": "الدليل السريع"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Presentation Conversion in Riyadh",
-      "content": "Presenters in Riyadh trust us to convert slide decks without leaking unreleased content to cloud servers."
+      "type": "ppt_geo_targeting",
+      "title": "معالجة محلية آمنة بنسبة 100%",
+      "content": "يتم تنفيذ جميع العمليات مباشرة على جهازك المحلي. نحن نستخدم تقنية WebAssembly المتقدمة لمعالجة مستنداتك دون تحميلها على خوادم خارجية، مما يضمن الخصوصية الكاملة.",
+      "badgeText": "المعالجة المحلية"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Confidential Slides Stay Confidential",
-      "content": "Pre-launch product decks? Board presentations? Converted 100% locally without network access."
+      "type": "ppt_privacy_security",
+      "title": "الشرائح السرية تبقى سرية",
+      "content": "مجموعات المنتجات قبل الإطلاق؟ عروض المجلس؟ تم التحويل بنسبة 100% محليًا دون الوصول إلى الشبكة.",
+      "badgeText": "الأمن أولا"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Slide Export",
-      "content": "Convert 100-slide decks in seconds. No queue, no waiting, no upload bandwidth wasted."
+      "type": "ppt_performance",
+      "title": "تصدير الشرائح الفوري",
+      "content": "تحويل الطوابق 100 شريحة في ثوان. لا توجد قائمة انتظار، ولا انتظار، ولا يتم إهدار النطاق الترددي للتحميل.",
+      "badgeText": "بسرعة البرق"
     }
   ],
   "faqs": [
     {
-      "q": "Are slide animations preserved?",
-      "a": "Animations are flattened into static PDF frames."
+      "q": "هل يتم الحفاظ على الرسوم المتحركة للشرائح؟",
+      "a": "يتم تسوية الرسوم المتحركة في إطارات PDF ثابتة."
     },
     {
-      "q": "What resolution is the output?",
-      "a": "High-resolution rendering at 150 DPI by default."
+      "q": "ما القرار هو الإخراج؟",
+      "a": "عرض عالي الدقة عند 150 نقطة في البوصة بشكل افتراضي."
     },
     {
-      "q": "Can I convert selected slides only?",
-      "a": "Yes, specify slide ranges like 1-10 or 5,8,12."
+      "q": "هل يمكنني تحويل الشرائح المحددة فقط؟",
+      "a": "نعم، حدد نطاقات الشرائح مثل 1-10 أو 5,8,12."
     },
     {
-      "q": "Is .ppt (old format) supported?",
-      "a": "Yes, both .ppt and .pptx are supported."
+      "q": "هل يتم دعم ‎.ppt (التنسيق القديم)؟",
+      "a": "نعم، يتم دعم كل من .ppt و.pptx."
     },
     {
-      "q": "Is this free to use?",
-      "a": "نعم، مجاناً تماماً."
+      "q": "هل هذا مجاني للاستخدام؟",
+      "a": "نعم، مجاني تمامًا بدون علامات مائية."
     }
-  ]
+  ],
+  "faqTitle": "الأسئلة المتداولة",
+  "supportCenter": "مركز الدعم"
 }

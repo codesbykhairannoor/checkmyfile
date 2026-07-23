@@ -1,67 +1,85 @@
 {
-  "title": "Excel to CSV Converter — Export Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to CSV Locally",
-  "description": "Export .xlsx files to clean .csv format entirely in your browser. No upload. Ideal for developers in Budapest.",
+  "title": "Excel–CSV konverter — Táblázatok offline exportálása",
+  "h1": "Excel-táblázatok helyi konvertálása CSV-re",
+  "description": "Exportáljon .xlsx fájlokat a .csv formátum teljes tisztaságához a böngészőben. Nincs feltöltés. 100%-ban biztonságos helyi feldolgozás.",
+  "buttonText": "Convert to CSV",
+  "badges": [
+    "Nyers adatok",
+    "Adatbázis importálása",
+    "Gyors export"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Export to CSV Offline?",
-      "content": "Exporting spreadsheets to CSV for data pipelines should not expose your raw data to any external API."
+      "type": "excel_csv_hero_features",
+      "title": "Miért exportálhat offline CSV-be?",
+      "content": "A táblázatok CSV-fájlba exportálása adatfolyamokhoz nem teheti ki a nyers adatokat semmilyen külső API-nak."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Excel to CSV",
+      "type": "excel_csv_how_to_steps",
+      "title": "Az Excel konvertálása CSV-vé",
       "steps": [
         {
-          "title": "Open Excel File",
-          "description": "Select the .xlsx spreadsheet."
+          "title": "Nyissa meg az Excel fájlt",
+          "description": "Válassza ki az .xlsx táblázatot."
         },
         {
-          "title": "Choose Sheet",
-          "description": "Pick which sheet to export as CSV."
+          "title": "Válassza a Munkalapot",
+          "description": "Válassza ki, melyik lapot szeretné CSV-ként exportálni."
         },
         {
-          "title": "Download CSV",
-          "description": "Get your clean CSV file instantly."
+          "title": "CSV letöltése",
+          "description": "Azonnal szerezze be tiszta CSV-fájlját."
         }
-      ]
+      ],
+      "badgeText": "Gyors útmutató"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Developer Tools for Budapest",
-      "content": "Developers and data engineers in Budapest export spreadsheets to CSV for pipelines without cloud intermediaries."
+      "type": "excel_csv_geo_targeting",
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Minden művelet közvetlenül a helyi eszközön történik. Fejlett WebAssembly technológiát használunk a dokumentumok feldolgozásához anélkül, hogy azokat külső szerverekre feltöltenénk, így biztosítva a teljes adatvédelmet.",
+      "badgeText": "Helyi feldolgozás"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Spreadsheet Data Stays Local",
-      "content": "Financial models and business data exported to CSV without any server-side processing."
+      "type": "excel_csv_privacy_security",
+      "title": "A táblázat adatai lokálisak maradnak",
+      "content": "A pénzügyi modellek és az üzleti adatok CSV-fájlba exportálva szerveroldali feldolgozás nélkül.",
+      "badgeText": "Első a biztonság"
     },
     {
-      "type": "organizer_performance",
-      "title": "Export Any Spreadsheet Instantly",
-      "content": "Export a 50,000-row Excel file to CSV in under 1 second. All in-browser."
+      "type": "excel_csv_performance",
+      "title": "Bármely táblázat exportálása azonnal",
+      "content": "Egy 50 000 soros Excel-fájl exportálása CSV-fájlba 1 másodpercen belül. Minden a böngészőben.",
+      "badgeText": "Villámgyors"
     }
   ],
   "faqs": [
     {
-      "q": "Can I export multiple sheets?",
-      "a": "Yes, export each sheet as a separate CSV file."
+      "q": "Exportálhatok több lapot?",
+      "a": "Igen, minden munkalapot külön CSV-fájlként exportálhat."
     },
     {
-      "q": "Is Excel formatting preserved in CSV?",
-      "a": "CSV is plain text; formatting is removed but all values are preserved."
+      "q": "Megőrzik az Excel formázását a CSV-ben?",
+      "a": "A CSV egyszerű szöveg; A formázás eltávolítva, de minden érték megmarad."
     },
     {
-      "q": "Can I choose the delimiter?",
-      "a": "Yes, choose comma, semicolon, or tab."
+      "q": "Választhatom a határolót?",
+      "a": "Igen, válasszon vesszőt, pontosvesszőt vagy tabulátort."
     },
     {
-      "q": "Are formulas exported as values?",
-      "a": "Yes, formula results (not formulas) are written to the CSV."
+      "q": "A képleteket értékként exportálják?",
+      "a": "Igen, a képleteredmények (nem a képletek) a CSV-fájlba kerülnek."
     },
     {
-      "q": "Is this free?",
+      "q": "Ez ingyenes?",
       "a": "Igen, teljesen ingyenes."
     }
-  ]
+  ],
+  "faqTitle": "Gyakran Ismételt Kérdések",
+  "supportCenter": "Támogatási Központ"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Redact PDF — Permanently Remove Sensitive Data",
-  "h1": "Permanently Redact Sensitive Information from PDFs Offline",
-  "description": "Black out sensitive text and images in PDFs entirely in your browser. No cloud risk. Critical for users in Tokyo.",
+  "title": "PDF を編集 — 機密データを完全に削除",
+  "h1": "PDF の機密情報をオフラインで永久に編集する",
+  "description": "PDF 内の機密性の高いテキストと画像をブラウザーで完全に黒く塗りつぶします。 クラウドのリスクはありません。 100% 安全なローカル処理。",
+  "buttonText": "Redact Text",
+  "badges": [
+    "永久消去",
+    "停電情報",
+    "安全な編集"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "redact_hero_features",
-      "title": "Why Redact PDFs Locally?",
-      "content": "Redacting means the content is classified. Uploading a document you need to hide defeats the whole purpose. Our tool runs 100% offline."
+      "title": "PDF をローカルで編集する理由",
+      "content": "編集とは、コンテンツが機密扱いであることを意味します。 隠す必要がある文書をアップロードすることは、目的全体を無効にします。 私たちのツールは 100% オフラインで実行されます。"
     },
     {
       "type": "redact_how_to_steps",
-      "title": "How to Permanently Redact a PDF",
+      "title": "PDF を永久に編集する方法",
       "steps": [
         {
-          "title": "Open Sensitive Document",
-          "description": "Load the PDF with data that must be hidden."
+          "title": "機密文書を開く",
+          "description": "非表示にする必要があるデータを含む PDF をロードします。"
         },
         {
-          "title": "Mark Redaction Areas",
-          "description": "Draw boxes over content to permanently erase."
+          "title": "編集領域をマークする",
+          "description": "コンテンツ上にボックスを描画して完全に消去します。"
         },
         {
-          "title": "Apply & Download",
-          "description": "Content is permanently deleted from the PDF structure."
+          "title": "申し込みとダウンロード",
+          "description": "コンテンツは PDF 構造から完全に削除されます。"
         }
-      ]
+      ],
+      "badgeText": "クイックガイド"
     },
     {
       "type": "redact_geo_targeting",
-      "title": "Court-Ready Redaction for Tokyo Law Firms",
-      "content": "Legal professionals in Tokyo prepare court documents with permanent, offline redaction that removes data from the PDF structure itself."
+      "title": "100% 安全なローカル処理",
+      "content": "すべての操作はローカル デバイス上で直接実行されます。 当社は高度な WebAssembly テクノロジーを使用して、ドキュメントを外部サーバーにアップロードすることなく処理し、完全なプライバシーを確​​保します。",
+      "badgeText": "ローカル処理"
     },
     {
       "type": "redact_privacy_security",
-      "title": "True Permanent Redaction — Not Just Black Boxes",
-      "content": "Unlike tools that merely cover text with black boxes, our redaction permanently deletes the underlying data from the PDF object structure."
+      "title": "真の永久的な編集 — ブラック ボックスだけではない",
+      "content": "単にテキストをブラック ボックスで覆うツールとは異なり、編集では PDF オブジェクト構造から基礎となるデータが完全に削除されます。",
+      "badgeText": "セキュリティ第一"
     },
     {
       "type": "redact_performance",
-      "title": "Redact Entire Documents Instantly",
-      "content": "Apply hundreds of permanent redactions to large documents in seconds, completely offline."
+      "title": "文書全体を即座に編集する",
+      "content": "完全にオフラインで、数百件の永続的な編集を大きな文書に数秒で適用します。",
+      "badgeText": "超高速"
     }
   ],
   "faqs": [
     {
-      "q": "Is the redaction truly permanent?",
-      "a": "Yes, the underlying text and image data is permanently deleted from the PDF structure."
+      "q": "編集は本当に永続的なものですか?",
+      "a": "はい、基礎となるテキストと画像データは PDF 構造から完全に削除されます。"
     },
     {
-      "q": "Can I redact images too?",
-      "a": "Yes, both text regions and image areas can be permanently redacted."
+      "q": "画像も編集できますか?",
+      "a": "はい、テキスト領域と画像領域の両方を永続的に編集できます。"
     },
     {
-      "q": "Can I choose black or white cover?",
-      "a": "Yes, pick the redaction style that suits your document."
+      "q": "カバーは白か黒か選べますか？",
+      "a": "はい、文書に合った墨消しスタイルを選択してください。"
     },
     {
-      "q": "Does this meet legal standards?",
-      "a": "Our redaction removes data at the PDF object level, meeting court requirements."
+      "q": "これは法的基準を満たしていますか?",
+      "a": "当社の編集では PDF オブジェクト レベルでデータを削除し、裁判所の要件を満たします。"
     },
     {
-      "q": "Is this free?",
-      "a": "はい、完全無料です。"
+      "q": "これは無料ですか？",
+      "a": "はい、いつでも無料です。"
     }
-  ]
+  ],
+  "faqTitle": "よくある質問",
+  "supportCenter": "サポート センター"
 }

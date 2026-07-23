@@ -1,67 +1,85 @@
 {
-  "title": "PDF to Image Converter — Extract Pages Offline",
-  "h1": "Convert PDF Pages to PNG or JPG Images",
-  "description": "Extract every page from a PDF as high-quality images directly in your browser. Zero upload, total privacy. Best for users in Bratislava.",
+  "title": "PDF to Image Converter — Extrahovať stránky offline",
+  "h1": "Previesť stránky PDF na obrázky PNG alebo JPG",
+  "description": "Extrahujte každú stránku z PDF ako obrázky vysokej kvality priamo vo vašom prehliadači. Nulové nahrávanie, 100% bezpečné miestne spracovanie.",
+  "buttonText": "Extract Images",
+  "badges": [
+    "Dizajn portfólia",
+    "Prezentácie",
+    "Vysoká kvalita"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract PDF Pages Offline?",
-      "content": "PDFs often contain confidential diagrams, blueprints, or reports. Extract pages as images without any server access."
+      "type": "pdf_image_hero_features",
+      "title": "Prečo extrahovať stránky PDF offline?",
+      "content": "Súbory PDF často obsahujú dôverné diagramy, plány alebo správy. Extrahujte stránky ako obrázky bez akéhokoľvek prístupu na server."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Images",
+      "type": "pdf_image_how_to_steps",
+      "title": "Ako previesť PDF na obrázky",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF you want to extract images from."
+          "title": "Načítať PDF",
+          "description": "Vyberte súbor PDF, z ktorého chcete extrahovať obrázky."
         },
         {
-          "title": "Choose Format",
-          "description": "Pick PNG (lossless) or JPG (compressed) output."
+          "title": "Vyberte Formát",
+          "description": "Vyberte výstup PNG (bezstratový) alebo JPG (komprimovaný)."
         },
         {
-          "title": "Download Images",
-          "description": "Get all pages as individual image files in a ZIP."
+          "title": "Stiahnuť obrázky",
+          "description": "Získajte všetky stránky ako samostatné obrazové súbory v ZIP."
         }
-      ]
+      ],
+      "badgeText": "Rýchly sprievodca"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF to Image for Bratislava Designers",
-      "content": "Designers in Bratislava extract PDF pages as images for presentations and social media without cloud uploads."
+      "type": "pdf_image_geo_targeting",
+      "title": "100% bezpečné miestne spracovanie",
+      "content": "Všetky operácie sa vykonávajú priamo na vašom lokálnom zariadení. Používame pokročilú technológiu WebAssembly na spracovanie vašich dokumentov bez ich nahrávania na externé servery, čím zaisťujeme úplné súkromie.",
+      "badgeText": "Miestne spracovanie"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Confidential Diagrams Stay Private",
-      "content": "Technical blueprints and legal documents extracted as images without any data leaving your device."
+      "type": "pdf_image_privacy_security",
+      "title": "Dôverné diagramy Zostaňte v súkromí",
+      "content": "Technické plány a právne dokumenty extrahované ako obrázky bez toho, aby z vášho zariadenia odišli akékoľvek údaje.",
+      "badgeText": "Bezpečnosť na prvom mieste"
     },
     {
-      "type": "split_performance",
-      "title": "Extract All Pages Instantly",
-      "content": "A 500-page PDF converted to images in seconds. No upload, no wait."
+      "type": "pdf_image_performance",
+      "title": "Okamžite extrahujte všetky stránky",
+      "content": "500-stranové PDF prevedené na obrázky za pár sekúnd. Žiadne nahrávanie, žiadne čakanie.",
+      "badgeText": "Rýchlosť blesku"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are available?",
-      "a": "PNG and JPG with adjustable quality settings."
+      "q": "Aké obrazové formáty sú k dispozícii?",
+      "a": "PNG a JPG s nastaviteľnými nastaveniami kvality."
     },
     {
-      "q": "Can I extract specific pages?",
-      "a": "Yes, specify page ranges like 1-5 or 3,7,12."
+      "q": "Môžem extrahovať konkrétne stránky?",
+      "a": "Áno, špecifikujte rozsahy strán ako 1-5 alebo 3,7,12."
     },
     {
-      "q": "What resolution are the exported images?",
-      "a": "Default 150 DPI, adjustable up to 300 DPI."
+      "q": "Aké rozlíšenie majú exportované obrázky?",
+      "a": "Predvolené 150 DPI, nastaviteľné až do 300 DPI."
     },
     {
-      "q": "Are all pages exported at once?",
-      "a": "Yes, all selected pages are zipped for a single download."
+      "q": "Exportujú sa všetky stránky naraz?",
+      "a": "Áno, všetky vybrané stránky sú skomprimované na jedno stiahnutie."
     },
     {
-      "q": "Is this free?",
-      "a": "Áno, úplne zadarmo."
+      "q": "Je to zadarmo?",
+      "a": "Úplne zadarmo, vždy."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
 }

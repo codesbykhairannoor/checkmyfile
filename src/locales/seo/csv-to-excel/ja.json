@@ -1,67 +1,85 @@
 {
-  "title": "CSV to Excel Converter — Offline & Instant",
-  "h1": "Convert CSV Files to Excel Spreadsheets Locally",
-  "description": "Transform .csv files into structured .xlsx spreadsheets entirely in your browser. No upload. Perfect for data teams in Tokyo.",
+  "title": "CSV から Excel へのコンバーター — オフラインおよびインスタント",
+  "h1": "CSV ファイルをローカルで Excel スプレッドシートに変換する",
+  "description": "ブラウザ内で .csv ファイルを構造化された .xlsx スプレッドシートに完全に変換します。 アップロードはありません。 100% 安全なローカル処理。",
+  "buttonText": "Convert CSV",
+  "badges": [
+    "UTF-8 のサポート",
+    "複数列",
+    "インスタント変換"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Convert CSV Offline?",
-      "content": "CSV files often contain customer or financial data. Convert them to Excel locally without exposing your datasets to any cloud service."
+      "type": "csv_excel_hero_features",
+      "title": "CSV をオフラインで変換する理由",
+      "content": "CSV ファイルには、顧客データや財務データが含まれることがよくあります。 データセットをクラウド サービスに公開することなく、ローカルで Excel に変換します。"
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert CSV to Excel",
+      "type": "csv_excel_how_to_steps",
+      "title": "CSV を Excel に変換する方法",
       "steps": [
         {
-          "title": "Open CSV File",
-          "description": "Select the CSV file to convert."
+          "title": "CSV ファイルを開く",
+          "description": "変換する CSV ファイルを選択します。"
         },
         {
-          "title": "Preview Data",
-          "description": "See the parsed columns and rows before export."
+          "title": "データのプレビュー",
+          "description": "エクスポートする前に、解析された列と行を確認します。"
         },
         {
-          "title": "Download .xlsx",
-          "description": "Get your Excel spreadsheet instantly."
+          "title": ".xlsx をダウンロード",
+          "description": "Excel スプレッドシートをすぐに入手できます。"
         }
-      ]
+      ],
+      "badgeText": "クイックガイド"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Data Tools for Tokyo Analysts",
-      "content": "Data analysts in Tokyo convert CSV exports to Excel without uploading sensitive datasets."
+      "type": "csv_excel_geo_targeting",
+      "title": "100% 安全なローカル処理",
+      "content": "すべての操作はローカル デバイス上で直接実行されます。 当社は高度な WebAssembly テクノロジーを使用して、ドキュメントを外部サーバーにアップロードすることなく処理し、完全なプライバシーを確​​保します。",
+      "badgeText": "ローカル処理"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Customer Data Stays on Your Machine",
-      "content": "CRM exports, transaction logs, and survey data converted locally with zero cloud involvement."
+      "type": "csv_excel_privacy_security",
+      "title": "顧客データはマシン上に残ります",
+      "content": "CRM エクスポート、トランザクション ログ、調査データは、クラウドを介さずにローカルで変換されます。",
+      "badgeText": "セキュリティ第一"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Large CSV Files Instantly",
-      "content": "Convert a 100,000-row CSV to Excel in seconds. All browser-native processing."
+      "type": "csv_excel_performance",
+      "title": "大きな CSV ファイルを瞬時に変換",
+      "content": "100,000 行の CSV を数秒で Excel に変換します。 すべてブラウザネイティブの処理。",
+      "badgeText": "超高速"
     }
   ],
   "faqs": [
     {
-      "q": "Is the column structure preserved?",
-      "a": "Yes, all columns are mapped to Excel columns."
+      "q": "柱の構造は保存されていますか?",
+      "a": "はい、すべての列は Excel 列にマップされます。"
     },
     {
-      "q": "Can I convert multiple CSVs?",
-      "a": "Yes, batch conversion to multiple sheets is supported."
+      "q": "複数の CSV を変換できますか?",
+      "a": "はい、複数シートへの一括変換がサポートされています。"
     },
     {
-      "q": "Are special characters handled?",
-      "a": "Yes, UTF-8 and various encodings are supported."
+      "q": "特殊文字は扱えますか?",
+      "a": "はい、UTF-8 およびさまざまなエンコーディングがサポートされています。"
     },
     {
-      "q": "Can I set delimiters?",
-      "a": "Yes, comma, semicolon, and tab delimiters are supported."
+      "q": "区切り文字を設定できますか?",
+      "a": "はい、カンマ、セミコロン、タブ区切り文字がサポートされています。"
     },
     {
-      "q": "Is this free?",
-      "a": "はい、完全無料です。"
+      "q": "これは無料ですか？",
+      "a": "はい、いつでも無料です。"
     }
-  ]
+  ],
+  "faqTitle": "よくある質問",
+  "supportCenter": "サポート センター"
 }

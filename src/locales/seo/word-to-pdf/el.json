@@ -1,67 +1,80 @@
 {
-  "title": "Word to PDF Converter — No Upload Required",
-  "h1": "Convert Word Documents to PDF Instantly",
-  "description": "Transform .docx files into perfect PDFs directly in your browser. Zero upload, 100% private. Ideal for users in Athens.",
+  "title": "Μετατροπέας Word σε PDF — Δεν απαιτείται μεταφόρτωση",
+  "h1": "Μετατροπή εγγράφων Word σε PDF Αμέσως",
+  "description": "Μετατρέψτε τα αρχεία .docx σε τέλεια PDF απευθείας στο πρόγραμμα περιήγησής σας. Μηδενική μεταφόρτωση, 100% ιδιωτικό. Ιδανικό για χρήστες στην Αθήνα.",
+  "buttonText": "Μετατροπή εγγράφου",
+  "badges": [
+    "Συμβάσεις Εργασίας",
+    "Νομικά Στοιχεία",
+    "Βιογραφικά & βιογραφικά"
+  ],
+  "stats": [
+    "100%",
+    "Τοπικός",
+    "0s",
+    "Χρόνος αναμονής"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Word to PDF Offline?",
-      "content": "Your Word document contains sensitive data. Our converter runs entirely in WebAssembly — your file never touches a server."
+      "type": "word_hero_features",
+      "title": "Γιατί να χρησιμοποιήσετε offline;",
+      "content": "Το έγγραφο Word περιέχει ευαίσθητα δεδομένα. Ο μετατροπέας μας εκτελείται εξ ολοκλήρου στο WebAssembly — το αρχείο σας δεν αγγίζει ποτέ διακομιστή."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Word to PDF",
+      "type": "word_how_to_steps",
+      "title": "Πώς να χρησιμοποιήσετε",
       "steps": [
         {
-          "title": "Select .docx File",
-          "description": "Pick your Word document from your computer."
+          "title": "Επιλέξτε .docx Αρχείο",
+          "description": "Επιλέξτε το έγγραφο του Word από τον υπολογιστή σας."
         },
         {
-          "title": "Preview Output",
-          "description": "See the PDF rendering before finalizing."
+          "title": "Έξοδος προεπισκόπησης",
+          "description": "Δείτε την απόδοση PDF πριν την οριστικοποίηση."
         },
         {
-          "title": "Download PDF",
-          "description": "Save your perfectly converted PDF instantly."
+          "title": "Λήψη PDF",
+          "description": "Αποθηκεύστε το PDF που έχετε μετατρέψει τέλεια αμέσως."
         }
       ]
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Word to PDF for Athens Users",
-      "content": "Used by professionals in Athens who need to share documents without losing formatting."
+      "type": "word_geo_targeting",
+      "title": "Word σε PDF για χρήστες της Αθήνας",
+      "content": "Χρησιμοποιείται από επαγγελματίες στην Αθήνα που χρειάζονται κοινή χρήση εγγράφων χωρίς απώλεια μορφοποίησης."
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Your Contracts Stay Private",
-      "content": "Converting employment contracts? Legal briefs? Our WASM processor never phones home."
+      "type": "word_privacy_security",
+      "title": "Τα συμβόλαιά σας παραμένουν ιδιωτικά",
+      "content": "Μετατροπή συμβάσεων εργασίας; Νομικά σλιπ; Ο επεξεργαστής μας WASM δεν τηλεφωνεί ποτέ στο σπίτι."
     },
     {
-      "type": "combiner_performance",
-      "title": "No More Conversion Queues",
-      "content": "Cloud converters put you in a queue. Ours converts in under 2 seconds, entirely offline."
+      "type": "word_performance",
+      "title": "Όχι άλλες ουρές μετατροπής",
+      "content": "Οι μετατροπείς Cloud σας βάζουν σε μια ουρά. Το δικό μας μετατρέπεται σε λιγότερο από 2 δευτερόλεπτα, εντελώς εκτός σύνδεσης."
     }
   ],
   "faqs": [
     {
-      "q": "Does it preserve Word formatting?",
-      "a": "Yes, fonts, tables, and images are preserved using our WASM renderer."
+      "q": "Διατηρεί τη μορφοποίηση του Word;",
+      "a": "Ναι, οι γραμματοσειρές, οι πίνακες και οι εικόνες διατηρούνται χρησιμοποιώντας το πρόγραμμα απόδοσης WASM."
     },
     {
-      "q": "What Word versions are supported?",
-      "a": "All modern .docx files are supported."
+      "q": "Ποιες εκδόσεις του Word υποστηρίζονται;",
+      "a": "Υποστηρίζονται όλα τα σύγχρονα αρχεία .docx."
     },
     {
-      "q": "Is there a file size limit?",
-      "a": "No server limits! Only your device RAM is the constraint."
+      "q": "Υπάρχει όριο μεγέθους αρχείου;",
+      "a": "Χωρίς όρια διακομιστή! Μόνο η μνήμη RAM της συσκευής σας είναι ο περιορισμός."
     },
     {
-      "q": "Can I batch convert multiple files?",
-      "a": "Yes, select multiple .docx files at once."
+      "q": "Μπορώ να μετατρέψω ομαδικά πολλά αρχεία;",
+      "a": "Ναι, επιλέξτε πολλά αρχεία .docx ταυτόχρονα."
     },
     {
-      "q": "Is this free?",
+      "q": "Αυτό είναι δωρεάν;",
       "a": "Ναι, εντελώς δωρεάν."
     }
-  ]
+  ],
+  "faqTitle": "Συχνές Ερωτήσεις"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Compare PDF Files — Spot Differences Locally",
-  "h1": "Compare Two PDF Documents Side by Side",
-  "description": "Upload two PDFs and highlight differences between them entirely in your browser. No upload to servers. Ideal for users in Moscow.",
+  "title": "Сравнивайте PDF-файлы — находите различия локально",
+  "h1": "Сравнить два PDF-документа бок о бок",
+  "description": "Загрузите два PDF-файла и полностью выделите различия между ними в браузере. Никакой загрузки на серверы. 100% безопасная локальная обработка.",
+  "buttonText": "Compare PDFs",
+  "badges": [
+    "Найдите различия",
+    "Выделить изменения",
+    "Визуальное различие"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Compare PDFs Locally?",
-      "content": "Comparing contract versions or document revisions often involves highly sensitive content. Do it entirely offline."
+      "type": "compare_hero_features",
+      "title": "Зачем сравнивать PDF-файлы локально?",
+      "content": "Сравнение версий контрактов или версий документов часто связано с очень конфиденциальным контентом. Сделайте это полностью в автономном режиме."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Compare Two PDFs",
+      "type": "compare_how_to_steps",
+      "title": "Как сравнить два PDF-файла",
       "steps": [
         {
-          "title": "Load Both PDFs",
-          "description": "Select the two PDF versions to compare."
+          "title": "Загрузить оба PDF-файла",
+          "description": "Выберите две версии PDF для сравнения."
         },
         {
-          "title": "View Differences",
-          "description": "Highlighted changes appear side by side."
+          "title": "Посмотреть различия",
+          "description": "Выделенные изменения отображаются рядом."
         },
         {
-          "title": "Export Diff Report",
-          "description": "Download a comparison report with all changes marked."
+          "title": "Отчет об экспортных различиях",
+          "description": "Загрузите отчет сравнения со всеми отмеченными изменениями."
         }
-      ]
+      ],
+      "badgeText": "Краткое руководство"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Comparison for Moscow Law Firms",
-      "content": "Legal professionals in Moscow compare contract revisions without uploading privileged documents to cloud services."
+      "type": "compare_geo_targeting",
+      "title": "100% безопасная локальная обработка",
+      "content": "Все операции выполняются непосредственно на вашем локальном устройстве. Мы используем передовую технологию WebAssembly для обработки ваших документов, не загружая их на внешние серверы, обеспечивая полную конфиденциальность.",
+      "badgeText": "Локальная обработка"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Privileged Documents Stay Private",
-      "content": "Compare NDAs, contracts, and regulatory filings without any server interaction."
+      "type": "compare_privacy_security",
+      "title": "Привилегированные документы остаются конфиденциальными",
+      "content": "Сравнивайте соглашения о неразглашении, контракты и нормативную документацию без взаимодействия с сервером.",
+      "badgeText": "Безопасность превыше всего"
     },
     {
-      "type": "organizer_performance",
-      "title": "Instant Side-by-Side Comparison",
-      "content": "Compare 100-page documents in seconds with highlighted differences rendered in-browser."
+      "type": "compare_performance",
+      "title": "Мгновенное параллельное сравнение",
+      "content": "Сравните 100-страничные документы за считанные секунды с выделенными различиями, отображаемыми в браузере.",
+      "badgeText": "Молниеносно"
     }
   ],
   "faqs": [
     {
-      "q": "What types of differences are detected?",
-      "a": "Text additions, deletions, and formatting changes are highlighted."
+      "q": "Какие виды различий обнаружены?",
+      "a": "Добавления, удаления и изменения форматирования текста выделяются."
     },
     {
-      "q": "Can I compare scanned PDFs?",
-      "a": "For scanned PDFs, use OCR first to extract text before comparing."
+      "q": "Могу ли я сравнить отсканированные PDF-файлы?",
+      "a": "Для отсканированных PDF-файлов сначала используйте OCR, чтобы извлечь текст, прежде чем сравнивать."
     },
     {
-      "q": "Can I export the comparison?",
-      "a": "Yes, download a marked-up PDF showing all differences."
+      "q": "Могу ли я экспортировать сравнение?",
+      "a": "Да, загрузите размеченный PDF-файл, показывающий все различия."
     },
     {
-      "q": "How many versions can I compare?",
-      "a": "Two documents at a time in the side-by-side view."
+      "q": "Сколько версий я могу сравнить?",
+      "a": "Два документа одновременно в режиме просмотра рядом."
     },
     {
-      "q": "Is this free?",
-      "a": "Да, полностью бесплатно."
+      "q": "Это бесплатно?",
+      "a": "Да, совершенно бесплатно."
     }
-  ]
+  ],
+  "faqTitle": "Часто задаваемые вопросы",
+  "supportCenter": "Центр поддержки"
 }

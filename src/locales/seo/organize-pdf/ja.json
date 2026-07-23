@@ -1,67 +1,85 @@
 {
-  "title": "Organize PDF Pages — Reorder & Delete Offline",
-  "h1": "Reorder, Delete, or Duplicate PDF Pages Locally",
-  "description": "Drag and drop to rearrange, remove, or duplicate PDF pages entirely in your browser. No upload. Great for users in Tokyo.",
+  "title": "PDF ページの整理 — オフラインでの並べ替えと削除",
+  "h1": "PDF ページをローカルで並べ替え、削除、または複製する",
+  "description": "ドラッグ アンド ドロップすると、ブラウザ内で PDF ページ全体を再配置、削除、または複製できます。 高速かつ完全に安全です。",
+  "buttonText": "Organize Pages",
+  "badges": [
+    "ドラッグ アンド ドロップ",
+    "ページの並べ替え",
+    "ビジュアルエディター"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Organize PDFs Locally?",
-      "content": "Reorganizing page structure is an editing operation. Your internal document should stay internal during editing."
+      "type": "organize_hero_features",
+      "title": "PDF をローカルで整理する理由",
+      "content": "ページ構造の再編成は編集操作です。 内部文書は編集中も内部に保持される必要があります。"
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Organize PDF Pages",
+      "type": "organize_how_to_steps",
+      "title": "PDF ページを整理する方法",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to reorganize."
+          "title": "PDF を開く",
+          "description": "再編成したい PDF を読み込みます。"
         },
         {
-          "title": "Drag to Reorder",
-          "description": "Drag page thumbnails to the desired position."
+          "title": "ドラッグして並べ替え",
+          "description": "ページのサムネイルを目的の位置にドラッグします。"
         },
         {
-          "title": "Save Organized PDF",
-          "description": "Download the restructured PDF immediately."
+          "title": "整理された PDF を保存",
+          "description": "再構成された PDF をすぐにダウンロードします。"
         }
-      ]
+      ],
+      "badgeText": "クイックガイド"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Organization for Tokyo Teams",
-      "content": "Teams in Tokyo reorganize proposal and report PDFs without uploading to any cloud service."
+      "type": "organize_geo_targeting",
+      "title": "100% 安全なローカル処理",
+      "content": "すべての操作はローカル デバイス上で直接実行されます。 当社は高度な WebAssembly テクノロジーを使用して、ドキュメントを外部サーバーにアップロードすることなく処理し、完全なプライバシーを確​​保します。",
+      "badgeText": "ローカル処理"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Page Structure Is Private Business",
-      "content": "Reordering internal reports and proposals with zero data leaving your browser."
+      "type": "organize_privacy_security",
+      "title": "ページ構造はプライベートビジネスです",
+      "content": "ブラウザから出たデータがゼロの内部レポートと提案を並べ替えます。",
+      "badgeText": "セキュリティ第一"
     },
     {
-      "type": "organizer_performance",
-      "title": "Reorganize Any PDF in Seconds",
-      "content": "Reorder pages in a 500-page document through a smooth drag-and-drop interface with zero upload."
+      "type": "organize_performance",
+      "title": "あらゆる PDF を数秒で再編成",
+      "content": "アップロード不要のスムーズなドラッグ アンド ドロップ インターフェイスを通じて、500 ページのドキュメント内のページを並べ替えます。",
+      "badgeText": "超高速"
     }
   ],
   "faqs": [
     {
-      "q": "Can I delete pages?",
-      "a": "Yes, click the delete icon on any page thumbnail."
+      "q": "ページを削除してもいいですか?",
+      "a": "はい、任意のページのサムネイルにある削除アイコンをクリックします。"
     },
     {
-      "q": "Can I duplicate pages?",
-      "a": "Yes, duplicate individual pages with one click."
+      "q": "ページを複製することはできますか?",
+      "a": "はい、ワンクリックで個々のページを複製できます。"
     },
     {
-      "q": "Can I rotate while organizing?",
-      "a": "Yes, per-page rotation is available in the organizer."
+      "q": "整理しながら回転できますか？",
+      "a": "はい、オーガナイザーではページごとのローテーションが可能です。"
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No limit! Organize documents of any size."
+      "q": "ページ制限はありますか?",
+      "a": "制限なし！ あらゆるサイズの文書を整理します。"
     },
     {
-      "q": "Is this free?",
-      "a": "はい、完全無料です。"
+      "q": "これは無料ですか？",
+      "a": "はい、完全に無料です。"
     }
-  ]
+  ],
+  "faqTitle": "よくある質問",
+  "supportCenter": "サポート センター"
 }

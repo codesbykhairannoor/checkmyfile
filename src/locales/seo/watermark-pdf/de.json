@@ -1,67 +1,85 @@
 {
-  "title": "Add Watermark to PDF — Offline Watermarking",
-  "h1": "Stamp PDFs with Text or Image Watermarks Locally",
-  "description": "Add \"CONFIDENTIAL\", logos, or custom text watermarks to PDFs entirely in your browser. No upload. Best for users in Berlin.",
+  "title": "Wasserzeichen zu PDF hinzufügen – Offline-Wasserzeichen",
+  "h1": "Stempeln Sie PDFs lokal mit Text- oder Bildwasserzeichen",
+  "description": "Fügen Sie „VERTRAULICH“, Logos oder benutzerdefinierte Textwasserzeichen vollständig in Ihrem Browser zu PDFs hinzu. Kein Upload. 100 % sichere lokale Verarbeitung.",
+  "buttonText": "Add Watermark",
+  "badges": [
+    "Benutzerdefinierter Text",
+    "Einstellbare Deckkraft",
+    "Markenschutz"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Watermark PDFs Offline?",
-      "content": "Adding watermarks means your document is sensitive. Never upload draft contracts or confidential reports to a cloud watermarker."
+      "type": "watermark_hero_features",
+      "title": "Warum PDFs offline mit Wasserzeichen versehen?",
+      "content": "Das Hinzufügen von Wasserzeichen bedeutet, dass Ihr Dokument vertraulich ist. Laden Sie niemals Vertragsentwürfe oder vertrauliche Berichte in ein Cloud-Wasserzeichen hoch."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Watermark a PDF",
+      "type": "watermark_how_to_steps",
+      "title": "So versehen Sie ein PDF mit einem Wasserzeichen",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to watermark."
+          "title": "PDF öffnen",
+          "description": "Wählen Sie die PDF-Datei aus, die Sie mit einem Wasserzeichen versehen möchten."
         },
         {
-          "title": "Design Watermark",
-          "description": "Type text or upload a logo image."
+          "title": "Design-Wasserzeichen",
+          "description": "Geben Sie Text ein oder laden Sie ein Logobild hoch."
         },
         {
-          "title": "Apply & Download",
-          "description": "Get your watermarked PDF in one click."
+          "title": "Bewerben und herunterladen",
+          "description": "Holen Sie sich Ihr mit Wasserzeichen versehenes PDF mit einem Klick."
         }
-      ]
+      ],
+      "badgeText": "Kurzanleitung"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Document Watermarking in Berlin",
-      "content": "Legal and creative professionals in Berlin stamp documents with watermarks without cloud uploads."
+      "type": "watermark_geo_targeting",
+      "title": "100 % sichere lokale Verarbeitung",
+      "content": "Alle Vorgänge werden direkt auf Ihrem lokalen Gerät ausgeführt. Wir verwenden fortschrittliche WebAssembly-Technologie, um Ihre Dokumente zu verarbeiten, ohne sie jemals auf externe Server hochzuladen, und gewährleisten so absolute Privatsphäre.",
+      "badgeText": "Lokale Verarbeitung"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Confidential Drafts Stay Private",
-      "content": "Draft contracts and unreleased designs watermarked locally without any server contact."
+      "type": "watermark_privacy_security",
+      "title": "Vertrauliche Entwürfe bleiben privat",
+      "content": "Vertragsentwürfe und unveröffentlichte Designs werden lokal ohne Serverkontakt mit Wasserzeichen versehen.",
+      "badgeText": "Sicherheit geht vor"
     },
     {
-      "type": "transform_performance",
-      "title": "Stamp Thousands of Pages Instantly",
-      "content": "Apply watermarks to a 1000-page document in under 3 seconds. All in your browser."
+      "type": "watermark_performance",
+      "title": "Stempeln Sie sofort Tausende von Seiten",
+      "content": "Fügen Sie einem 1000-seitigen Dokument in weniger als 3 Sekunden Wasserzeichen hinzu. Alles in Ihrem Browser.",
+      "badgeText": "Blitzschnell"
     }
   ],
   "faqs": [
     {
-      "q": "Can I use a logo as a watermark?",
-      "a": "Yes, upload a PNG logo and set transparency."
+      "q": "Kann ich ein Logo als Wasserzeichen verwenden?",
+      "a": "Ja, laden Sie ein PNG-Logo hoch und legen Sie die Transparenz fest."
     },
     {
-      "q": "Can I adjust watermark opacity?",
-      "a": "Yes, from 10% to 100% opacity."
+      "q": "Kann ich die Deckkraft des Wasserzeichens anpassen?",
+      "a": "Ja, von 10 % bis 100 % Deckkraft."
     },
     {
-      "q": "Can I apply it to specific pages only?",
-      "a": "Yes, choose page ranges."
+      "q": "Kann ich es nur auf bestimmte Seiten anwenden?",
+      "a": "Ja, wählen Sie Seitenbereiche aus."
     },
     {
-      "q": "Is diagonal placement available?",
-      "a": "Yes, rotate watermarks to any angle."
+      "q": "Ist eine diagonale Platzierung möglich?",
+      "a": "Ja, Wasserzeichen können in einen beliebigen Winkel gedreht werden."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, komplett kostenlos."
+      "q": "Ist das kostenlos?",
+      "a": "Ja, immer kostenlos."
     }
-  ]
+  ],
+  "faqTitle": "Häufig gestellte Fragen",
+  "supportCenter": "Support-Center"
 }

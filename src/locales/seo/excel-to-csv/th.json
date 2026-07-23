@@ -1,67 +1,85 @@
 {
-  "title": "Excel to CSV Converter — Export Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to CSV Locally",
-  "description": "Export .xlsx files to clean .csv format entirely in your browser. No upload. Ideal for developers in Bangkok.",
+  "title": "โปรแกรมแปลง Excel เป็น CSV — ส่งออกสเปรดชีตออฟไลน์",
+  "h1": "แปลงสเปรดชีต Excel เป็น CSV ในเครื่อง",
+  "description": "ส่งออกไฟล์ .xlsx เพื่อล้างรูปแบบ .csv ทั้งหมดในเบราว์เซอร์ของคุณ ไม่มีการอัพโหลด การประมวลผลภายในที่ปลอดภัย 100%",
+  "buttonText": "Convert to CSV",
+  "badges": [
+    "ข้อมูลดิบ",
+    "การนำเข้าฐานข้อมูล",
+    "ส่งออกอย่างรวดเร็ว"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Export to CSV Offline?",
-      "content": "Exporting spreadsheets to CSV for data pipelines should not expose your raw data to any external API."
+      "type": "excel_csv_hero_features",
+      "title": "เหตุใดจึงส่งออกเป็น CSV ออฟไลน์",
+      "content": "การส่งออกสเปรดชีตเป็น CSV สำหรับไปป์ไลน์ข้อมูลไม่ควรเปิดเผยข้อมูลดิบของคุณไปยัง API ภายนอก"
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Excel to CSV",
+      "type": "excel_csv_how_to_steps",
+      "title": "วิธีแปลง Excel เป็น CSV",
       "steps": [
         {
-          "title": "Open Excel File",
-          "description": "Select the .xlsx spreadsheet."
+          "title": "เปิดไฟล์ Excel",
+          "description": "เลือกสเปรดชีต .xlsx"
         },
         {
-          "title": "Choose Sheet",
-          "description": "Pick which sheet to export as CSV."
+          "title": "เลือกแผ่นงาน",
+          "description": "เลือกแผ่นงานที่จะส่งออกเป็น CSV"
         },
         {
-          "title": "Download CSV",
-          "description": "Get your clean CSV file instantly."
+          "title": "ดาวน์โหลด CSV",
+          "description": "รับไฟล์ CSV ที่สะอาดของคุณทันที"
         }
-      ]
+      ],
+      "badgeText": "คู่มือฉบับย่อ"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Developer Tools for Bangkok",
-      "content": "Developers and data engineers in Bangkok export spreadsheets to CSV for pipelines without cloud intermediaries."
+      "type": "excel_csv_geo_targeting",
+      "title": "การประมวลผลภายในที่ปลอดภัย 100%",
+      "content": "การดำเนินการทั้งหมดดำเนินการโดยตรงบนอุปกรณ์ท้องถิ่นของคุณ เราใช้เทคโนโลยี WebAssembly ขั้นสูงเพื่อประมวลผลเอกสารของคุณโดยไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ภายนอก เพื่อให้มั่นใจถึงความเป็นส่วนตัวโดยสมบูรณ์",
+      "badgeText": "การประมวลผลในท้องถิ่น"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Spreadsheet Data Stays Local",
-      "content": "Financial models and business data exported to CSV without any server-side processing."
+      "type": "excel_csv_privacy_security",
+      "title": "ข้อมูลสเปรดชีตยังคงอยู่ในเครื่อง",
+      "content": "โมเดลทางการเงินและข้อมูลธุรกิจที่ส่งออกเป็น CSV โดยไม่มีการประมวลผลฝั่งเซิร์ฟเวอร์",
+      "badgeText": "ความปลอดภัยต้องมาก่อน"
     },
     {
-      "type": "organizer_performance",
-      "title": "Export Any Spreadsheet Instantly",
-      "content": "Export a 50,000-row Excel file to CSV in under 1 second. All in-browser."
+      "type": "excel_csv_performance",
+      "title": "ส่งออกสเปรดชีตใดๆ ได้ทันที",
+      "content": "ส่งออกไฟล์ Excel 50,000 แถวเป็น CSV ภายในเวลาไม่ถึง 1 วินาที ทั้งหมดในเบราว์เซอร์",
+      "badgeText": "เร็วปานสายฟ้า"
     }
   ],
   "faqs": [
     {
-      "q": "Can I export multiple sheets?",
-      "a": "Yes, export each sheet as a separate CSV file."
+      "q": "ฉันสามารถส่งออกหลายแผ่นได้หรือไม่",
+      "a": "ใช่ ส่งออกแต่ละชีตเป็นไฟล์ CSV แยกต่างหาก"
     },
     {
-      "q": "Is Excel formatting preserved in CSV?",
-      "a": "CSV is plain text; formatting is removed but all values are preserved."
+      "q": "การจัดรูปแบบ Excel จะยังคงอยู่ใน CSV หรือไม่",
+      "a": "CSV เป็นข้อความธรรมดา การจัดรูปแบบจะถูกลบออกแต่ค่าทั้งหมดจะยังคงอยู่"
     },
     {
-      "q": "Can I choose the delimiter?",
-      "a": "Yes, choose comma, semicolon, or tab."
+      "q": "ฉันสามารถเลือกตัวคั่นได้หรือไม่?",
+      "a": "ใช่ เลือกลูกน้ำ อัฒภาค หรือแท็บ"
     },
     {
-      "q": "Are formulas exported as values?",
-      "a": "Yes, formula results (not formulas) are written to the CSV."
+      "q": "สูตรถูกส่งออกเป็นค่าหรือไม่",
+      "a": "ใช่ ผลลัพธ์ของสูตร (ไม่ใช่สูตร) ​​จะถูกเขียนลงใน CSV"
     },
     {
-      "q": "Is this free?",
-      "a": "ใช่ ฟรีทั้งหมด"
+      "q": "ฟรีหรือเปล่า?",
+      "a": "ใช่ สมบูรณ์ฟรี"
     }
-  ]
+  ],
+  "faqTitle": "คำถามที่พบบ่อย",
+  "supportCenter": "ศูนย์สนับสนุน"
 }

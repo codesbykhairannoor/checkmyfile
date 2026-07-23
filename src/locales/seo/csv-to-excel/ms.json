@@ -1,67 +1,85 @@
 {
-  "title": "CSV to Excel Converter — Offline & Instant",
-  "h1": "Convert CSV Files to Excel Spreadsheets Locally",
-  "description": "Transform .csv files into structured .xlsx spreadsheets entirely in your browser. No upload. Perfect for data teams in Kuala Lumpur.",
+  "title": "Penukar CSV ke Excel — Luar Talian & Segera",
+  "h1": "Tukar Fail CSV kepada Hamparan Excel Secara Setempat",
+  "description": "Ubah fail .csv kepada hamparan .xlsx berstruktur sepenuhnya dalam penyemak imbas anda. Tiada muat naik. 100% pemprosesan tempatan selamat.",
+  "buttonText": "Convert CSV",
+  "badges": [
+    "Sokongan UTF-8",
+    "Berbilang Lajur",
+    "Tukar Segera"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Convert CSV Offline?",
-      "content": "CSV files often contain customer or financial data. Convert them to Excel locally without exposing your datasets to any cloud service."
+      "type": "csv_excel_hero_features",
+      "title": "Mengapa Menukar CSV Luar Talian?",
+      "content": "Fail CSV selalunya mengandungi data pelanggan atau kewangan. Tukarkannya kepada Excel secara tempatan tanpa mendedahkan set data anda kepada mana-mana perkhidmatan awan."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert CSV to Excel",
+      "type": "csv_excel_how_to_steps",
+      "title": "Cara Menukar CSV kepada Excel",
       "steps": [
         {
-          "title": "Open CSV File",
-          "description": "Select the CSV file to convert."
+          "title": "Buka Fail CSV",
+          "description": "Pilih fail CSV untuk ditukar."
         },
         {
-          "title": "Preview Data",
-          "description": "See the parsed columns and rows before export."
+          "title": "Pratonton Data",
+          "description": "Lihat lajur dan baris yang dihuraikan sebelum eksport."
         },
         {
-          "title": "Download .xlsx",
-          "description": "Get your Excel spreadsheet instantly."
+          "title": "Muat turun .xlsx",
+          "description": "Dapatkan hamparan Excel anda dengan serta-merta."
         }
-      ]
+      ],
+      "badgeText": "Panduan Pantas"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Data Tools for Kuala Lumpur Analysts",
-      "content": "Data analysts in Kuala Lumpur convert CSV exports to Excel without uploading sensitive datasets."
+      "type": "csv_excel_geo_targeting",
+      "title": "100% Pemprosesan Tempatan Selamat",
+      "content": "Semua operasi dilakukan terus pada peranti tempatan anda. Kami menggunakan teknologi WebAssembly termaju untuk memproses dokumen anda tanpa pernah memuat naiknya ke pelayan luaran, memastikan privasi lengkap.",
+      "badgeText": "Pemprosesan Setempat"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Customer Data Stays on Your Machine",
-      "content": "CRM exports, transaction logs, and survey data converted locally with zero cloud involvement."
+      "type": "csv_excel_privacy_security",
+      "title": "Data Pelanggan Kekal pada Mesin Anda",
+      "content": "Eksport CRM, log transaksi dan data tinjauan ditukar secara tempatan dengan penglibatan awan sifar.",
+      "badgeText": "Keselamatan Diutamakan"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Large CSV Files Instantly",
-      "content": "Convert a 100,000-row CSV to Excel in seconds. All browser-native processing."
+      "type": "csv_excel_performance",
+      "title": "Tukar Fail CSV Besar Dengan Segera",
+      "content": "Tukar CSV 100,000 baris kepada Excel dalam beberapa saat. Semua pemprosesan asli pelayar.",
+      "badgeText": "Sepantas Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "Is the column structure preserved?",
-      "a": "Yes, all columns are mapped to Excel columns."
+      "q": "Adakah struktur lajur dipelihara?",
+      "a": "Ya, semua lajur dipetakan ke lajur Excel."
     },
     {
-      "q": "Can I convert multiple CSVs?",
-      "a": "Yes, batch conversion to multiple sheets is supported."
+      "q": "Bolehkah saya menukar berbilang CSV?",
+      "a": "Ya, penukaran kelompok kepada berbilang helaian disokong."
     },
     {
-      "q": "Are special characters handled?",
-      "a": "Yes, UTF-8 and various encodings are supported."
+      "q": "Adakah watak istimewa dikendalikan?",
+      "a": "Ya, UTF-8 dan pelbagai pengekodan disokong."
     },
     {
-      "q": "Can I set delimiters?",
-      "a": "Yes, comma, semicolon, and tab delimiters are supported."
+      "q": "Bolehkah saya menetapkan pembatas?",
+      "a": "Ya, koma, koma bertitik dan pembatas tab disokong."
     },
     {
-      "q": "Is this free?",
-      "a": "Ya, percuma sepenuhnya."
+      "q": "Adakah ini percuma?",
+      "a": "Ya, sentiasa percuma."
     }
-  ]
+  ],
+  "faqTitle": "Soalan Lazim",
+  "supportCenter": "Pusat Sokongan"
 }

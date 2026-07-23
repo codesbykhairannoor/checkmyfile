@@ -1,67 +1,85 @@
 {
-  "title": "CSV to Excel Converter — Offline & Instant",
-  "h1": "Convert CSV Files to Excel Spreadsheets Locally",
-  "description": "Transform .csv files into structured .xlsx spreadsheets entirely in your browser. No upload. Perfect for data teams in Hanoi.",
+  "title": "Trình chuyển đổi CSV sang Excel — Ngoại tuyến & Tức thì",
+  "h1": "Chuyển đổi tệp CSV sang bảng tính Excel cục bộ",
+  "description": "Chuyển đổi tệp .csv thành bảng tính .xlsx có cấu trúc hoàn toàn trong trình duyệt của bạn. Không tải lên. Xử lý cục bộ an toàn 100%.",
+  "buttonText": "Convert CSV",
+  "badges": [
+    "Hỗ trợ UTF-8",
+    "Nhiều cột",
+    "Chuyển đổi tức thì"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Convert CSV Offline?",
-      "content": "CSV files often contain customer or financial data. Convert them to Excel locally without exposing your datasets to any cloud service."
+      "type": "csv_excel_hero_features",
+      "title": "Tại sao chuyển đổi CSV ngoại tuyến?",
+      "content": "Tệp CSV thường chứa dữ liệu khách hàng hoặc tài chính. Chuyển đổi chúng sang Excel cục bộ mà không làm lộ tập dữ liệu của bạn sang bất kỳ dịch vụ đám mây nào."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert CSV to Excel",
+      "type": "csv_excel_how_to_steps",
+      "title": "Cách chuyển đổi CSV sang Excel",
       "steps": [
         {
-          "title": "Open CSV File",
-          "description": "Select the CSV file to convert."
+          "title": "Mở tệp CSV",
+          "description": "Chọn tệp CSV để chuyển đổi."
         },
         {
-          "title": "Preview Data",
-          "description": "See the parsed columns and rows before export."
+          "title": "Xem trước dữ liệu",
+          "description": "Xem các cột và hàng được phân tích cú pháp trước khi xuất."
         },
         {
-          "title": "Download .xlsx",
-          "description": "Get your Excel spreadsheet instantly."
+          "title": "Tải xuống .xlsx",
+          "description": "Nhận bảng tính Excel của bạn ngay lập tức."
         }
-      ]
+      ],
+      "badgeText": "Hướng dẫn nhanh"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Data Tools for Hanoi Analysts",
-      "content": "Data analysts in Hanoi convert CSV exports to Excel without uploading sensitive datasets."
+      "type": "csv_excel_geo_targeting",
+      "title": "Xử lý cục bộ an toàn 100%",
+      "content": "Tất cả các hoạt động được thực hiện trực tiếp trên thiết bị cục bộ của bạn. Chúng tôi sử dụng công nghệ WebAssembly tiên tiến để xử lý tài liệu của bạn mà không cần tải chúng lên máy chủ bên ngoài, đảm bảo quyền riêng tư hoàn toàn.",
+      "badgeText": "Xử lý cục bộ"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Customer Data Stays on Your Machine",
-      "content": "CRM exports, transaction logs, and survey data converted locally with zero cloud involvement."
+      "type": "csv_excel_privacy_security",
+      "title": "Dữ liệu khách hàng vẫn còn trên máy của bạn",
+      "content": "Xuất CRM, nhật ký giao dịch và dữ liệu khảo sát được chuyển đổi cục bộ mà không cần sử dụng đám mây.",
+      "badgeText": "Bảo mật là trên hết"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Large CSV Files Instantly",
-      "content": "Convert a 100,000-row CSV to Excel in seconds. All browser-native processing."
+      "type": "csv_excel_performance",
+      "title": "Chuyển đổi tệp CSV lớn ngay lập tức",
+      "content": "Chuyển đổi CSV 100.000 hàng sang Excel trong vài giây. Tất cả xử lý gốc của trình duyệt.",
+      "badgeText": "Nhanh như chớp"
     }
   ],
   "faqs": [
     {
-      "q": "Is the column structure preserved?",
-      "a": "Yes, all columns are mapped to Excel columns."
+      "q": "Cấu trúc cột có được bảo tồn không?",
+      "a": "Có, tất cả các cột đều được ánh xạ tới các cột Excel."
     },
     {
-      "q": "Can I convert multiple CSVs?",
-      "a": "Yes, batch conversion to multiple sheets is supported."
+      "q": "Tôi có thể chuyển đổi nhiều CSV không?",
+      "a": "Có, hỗ trợ chuyển đổi hàng loạt sang nhiều trang tính."
     },
     {
-      "q": "Are special characters handled?",
-      "a": "Yes, UTF-8 and various encodings are supported."
+      "q": "Các ký tự đặc biệt có được xử lý không?",
+      "a": "Có, UTF-8 và các bảng mã khác nhau được hỗ trợ."
     },
     {
-      "q": "Can I set delimiters?",
-      "a": "Yes, comma, semicolon, and tab delimiters are supported."
+      "q": "Tôi có thể đặt dấu phân cách không?",
+      "a": "Có, dấu phẩy, dấu chấm phẩy và dấu phân cách tab được hỗ trợ."
     },
     {
-      "q": "Is this free?",
-      "a": "Có, hoàn toàn miễn phí."
+      "q": "Cái này có miễn phí không?",
+      "a": "Có, luôn miễn phí."
     }
-  ]
+  ],
+  "faqTitle": "Câu hỏi thường gặp",
+  "supportCenter": "Trung tâm hỗ trợ"
 }

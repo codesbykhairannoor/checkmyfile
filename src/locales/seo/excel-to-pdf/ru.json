@@ -1,67 +1,85 @@
 {
-  "title": "Excel to PDF — Convert Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to PDF Securely",
-  "description": "Turn .xlsx and .csv files into crisp PDFs locally in your browser. Financial data stays on your device. Perfect for users in Moscow.",
+  "title": "Excel в PDF — конвертирование электронных таблиц в автономном режиме",
+  "h1": "Безопасное преобразование таблиц Excel в PDF",
+  "description": "Превращайте файлы .xlsx и .csv в четкие PDF-файлы локально в браузере. Финансовые данные остаются на вашем устройстве. 100% безопасная локальная обработка.",
+  "buttonText": "Convert Spreadsheet",
+  "badges": [
+    "Финансовые отчеты",
+    "Счета-фактуры",
+    "Экспорт данных"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Excel Offline?",
-      "content": "Spreadsheets often contain sensitive financial data. Our browser-based engine converts without any server involvement."
+      "type": "excel_hero_features",
+      "title": "Зачем конвертировать Excel в автономном режиме?",
+      "content": "Электронные таблицы часто содержат конфиденциальные финансовые данные. Наш браузерный движок конвертирует без какого-либо участия сервера."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Export Excel as PDF",
+      "type": "excel_how_to_steps",
+      "title": "Как экспортировать Excel в PDF",
       "steps": [
         {
-          "title": "Open Spreadsheet",
-          "description": "Select your .xlsx or .csv file."
+          "title": "Открыть электронную таблицу",
+          "description": "Выберите файл .xlsx или .csv."
         },
         {
-          "title": "Choose Sheet Range",
-          "description": "Pick which sheets or rows to include."
+          "title": "Выберите диапазон листов",
+          "description": "Выберите, какие листы или строки включить."
         },
         {
-          "title": "Export as PDF",
-          "description": "Download your spreadsheet as a clean PDF."
+          "title": "Экспортировать в PDF",
+          "description": "Загрузите таблицу в виде чистого PDF-файла."
         }
-      ]
+      ],
+      "badgeText": "Краткое руководство"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Excel to PDF for Moscow Businesses",
-      "content": "Businesses in Moscow use our tool to share financial reports without exposing raw spreadsheet data."
+      "type": "excel_geo_targeting",
+      "title": "100% безопасная локальная обработка",
+      "content": "Все операции выполняются непосредственно на вашем локальном устройстве. Мы используем передовую технологию WebAssembly для обработки ваших документов, не загружая их на внешние серверы, обеспечивая полную конфиденциальность.",
+      "badgeText": "Локальная обработка"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Protect Financial Spreadsheets",
-      "content": "Balance sheets, payroll data — all processed offline. Zero data sent to any third party."
+      "type": "excel_privacy_security",
+      "title": "Защитите финансовые таблицы",
+      "content": "Балансовые отчеты, данные о заработной плате — все обрабатывается оффлайн. Нулевые данные пересылаются третьим лицам.",
+      "badgeText": "Безопасность превыше всего"
     },
     {
-      "type": "combiner_performance",
-      "title": "Spreadsheet-to-PDF in Seconds",
-      "content": "No upload queue, no compression artifacts. Your spreadsheet renders natively in-browser."
+      "type": "excel_performance",
+      "title": "Преобразование электронной таблицы в PDF за считанные секунды",
+      "content": "Нет очереди на загрузку, нет артефактов сжатия. Ваша электронная таблица изначально отображается в браузере.",
+      "badgeText": "Молниеносно"
     }
   ],
   "faqs": [
     {
-      "q": "Are all Excel formulas preserved?",
-      "a": "Yes, formula results are captured in the PDF snapshot."
+      "q": "Все формулы Excel сохранены?",
+      "a": "Да, результаты формулы сохраняются в снимке PDF."
     },
     {
-      "q": "Can I convert multiple sheets?",
-      "a": "Yes, you can include all sheets or specific ones."
+      "q": "Могу ли я конвертировать несколько листов?",
+      "a": "Да, вы можете включить все листы или определенные."
     },
     {
-      "q": "What file types are supported?",
-      "a": ".xlsx, .xls, and .csv are all supported."
+      "q": "Какие типы файлов поддерживаются?",
+      "a": "Поддерживаются форматы .xlsx, .xls и .csv."
     },
     {
-      "q": "Is this secure for financial data?",
-      "a": "Absolutely. The file never leaves your browser."
+      "q": "Безопасно ли это для финансовых данных?",
+      "a": "Абсолютно. Файл никогда не покидает ваш браузер."
     },
     {
-      "q": "Does it support graphs?",
-      "a": "Да, полностью бесплатно."
+      "q": "Поддерживает ли он графики?",
+      "a": "Диаграммы и встроенные графики отображаются в формате PDF."
     }
-  ]
+  ],
+  "faqTitle": "Часто задаваемые вопросы",
+  "supportCenter": "Центр поддержки"
 }

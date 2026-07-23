@@ -1,67 +1,85 @@
 {
-  "title": "Split PDF - Extract Pages Securely",
-  "h1": "Split and Extract PDF Pages in Seconds",
-  "description": "Extract specific pages or split a large PDF into multiple files locally in your browser. Perfect for legal professionals in Bratislava.",
+  "title": "Rozdeliť PDF – bezpečne extrahovať stránky",
+  "h1": "Rozdelenie a extrahovanie stránok PDF za pár sekúnd",
+  "description": "Extrahujte konkrétne stránky alebo rozdeľte veľké PDF do viacerých súborov lokálne vo vašom prehliadači. Rýchle a úplne bezpečné.",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Split PDFs Locally?",
-      "content": "When dealing with massive legal or corporate documents, extracting a single page shouldn't require uploading a 1GB file. Do it instantly right on your machine."
+      "title": "Prečo rozdeliť súbory PDF lokálne?",
+      "content": "Pri práci s rozsiahlymi právnymi alebo firemnými dokumentmi by extrahovanie jednej stránky nemalo vyžadovať odovzdanie súboru s veľkosťou 1 GB. Urobte to okamžite priamo na vašom stroji."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Extract Pages",
+      "title": "Ako extrahovať stránky",
       "steps": [
         {
-          "title": "Open Document",
-          "description": "Load the multi-page PDF you want to split."
+          "title": "Otvoriť dokument",
+          "description": "Vložte viacstranový súbor PDF, ktorý chcete rozdeliť."
         },
         {
-          "title": "Select Ranges",
-          "description": "Pick specific page numbers or visually select pages to extract."
+          "title": "Vyberte rozsahy",
+          "description": "Vyberte konkrétne čísla strán alebo vizuálne vyberte strany, ktoré chcete extrahovať."
         },
         {
-          "title": "Export Zip",
-          "description": "Download your newly split files organized in a ZIP."
+          "title": "Exportovať Zip",
+          "description": "Stiahnite si svoje novo rozdelené súbory usporiadané v ZIP."
         }
-      ]
+      ],
+      "badgeText": "Rýchly sprievodca"
     },
     {
       "type": "split_geo_targeting",
-      "title": "The Best Splitter in Bratislava, SK-BL",
-      "content": "Whether you are studying in Bratislava or working on a tight deadline, extracting pages is now instantaneous."
+      "title": "100% bezpečné miestne spracovanie",
+      "content": "Všetky operácie sa vykonávajú priamo na vašom lokálnom zariadení. Používame pokročilú technológiu WebAssembly na spracovanie vašich dokumentov bez ich nahrávania na externé servery, čím zaisťujeme úplné súkromie.",
+      "badgeText": "Miestne spracovanie"
     },
     {
       "type": "split_privacy_security",
-      "title": "Total Page Privacy",
-      "content": "Splitting confidential employee records? Rest easy knowing our code executes purely in your local environment."
+      "title": "Súkromie stránky",
+      "content": "Rozdelenie dôverných záznamov zamestnancov? Upokojte sa, pretože viete, že náš kód sa spúšťa výlučne vo vašom lokálnom prostredí.",
+      "badgeText": "Bezpečnosť na prvom mieste"
     },
     {
       "type": "split_performance",
-      "title": "Zero-Upload Extraction",
-      "content": "Grabbing page 14 from a 2000-page PDF takes milliseconds, skipping the excruciating upload step entirely."
+      "title": "Extrakcia s nulovým nahrávaním",
+      "content": "Získanie 14. strany z 2000-stranového PDF trvá milisekúnd, čím sa úplne preskočí mučivý krok nahrávania.",
+      "badgeText": "Rýchlosť blesku"
     }
   ],
   "faqs": [
     {
-      "q": "How do I extract just one page?",
-      "a": "Simply click on the page thumbnail you want and hit Export."
+      "q": "Ako získam iba jednu stránku?",
+      "a": "Jednoducho kliknite na požadovanú miniatúru stránky a stlačte Exportovať."
     },
     {
-      "q": "Can I split the PDF in half?",
-      "a": "Yes, you can specify custom page ranges like 1-10 and 11-20."
+      "q": "Môžem rozdeliť PDF na polovicu?",
+      "a": "Áno, môžete zadať vlastné rozsahy strán ako 1-10 a 11-20."
     },
     {
-      "q": "Will the extracted pages lose quality?",
-      "a": "No, the splitting process uses binary extraction, preserving 100% of the original quality."
+      "q": "Stratia extrahované stránky kvalitu?",
+      "a": "Nie, proces štiepenia využíva binárnu extrakciu, ktorá zachováva 100 % pôvodnej kvality."
     },
     {
-      "q": "Is my document uploaded when splitting?",
-      "a": "Never. The entire 2000-page document stays strictly in your browser."
+      "q": "Odovzdáva sa môj dokument pri rozdelení?",
+      "a": "Nikdy. Celý 2000-stranový dokument zostane striktne vo vašom prehliadači."
     },
     {
-      "q": "Is there a limit to how many pages I can split?",
-      "a": "No limits! Split as many pages as your computer can handle."
+      "q": "Existuje nejaký limit na počet strán, ktoré môžem rozdeliť?",
+      "a": "Žiadne limity! Rozdeľte toľko stránok, koľko váš počítač zvládne."
     }
-  ]
+  ],
+  "badges": [
+    "Okamžité rozdelenie",
+    "Presný rozsah",
+    "Žiadne limity"
+  ],
+  "stats": [
+    "Ultra Fast",
+    "No Upload",
+    "Batch Zip",
+    "Secure"
+  ],
+  "buttonText": "Split PDF",
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Rotate PDF Pages — Fix Orientation Offline",
-  "h1": "Rotate PDF Pages to the Correct Orientation",
-  "description": "Fix upside-down or sideways PDF pages instantly in your browser. No upload. Perfect for users in Beijing.",
+  "title": "旋转 PDF 页面 - 离线修复方向",
+  "h1": "将 PDF 页面旋转到正确的方向",
+  "description": "在浏览器中立即修复颠倒或横向的 PDF 页面。 快速且完全安全。",
+  "buttonText": "Rotate Pages",
+  "badges": [
+    "旋转 90°/180°",
+    "批处理",
+    "即时修复"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Rotate PDFs Locally?",
-      "content": "Scanned documents often come out sideways. Fix their orientation instantly without uploading anything to the cloud."
+      "type": "rotate_hero_features",
+      "title": "为什么要在本地旋转 PDF？",
+      "content": "扫描的文档通常会横向显示。 立即修复它们的方向，无需将任何内容上传到云端。"
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Rotate PDF Pages",
+      "type": "rotate_how_to_steps",
+      "title": "如何旋转 PDF 页面",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page orientation."
+          "title": "打开 PDF",
+          "description": "加载页面方向不正确的 PDF。"
         },
         {
-          "title": "Select Pages & Direction",
-          "description": "Choose pages to rotate and direction (90°, 180°, 270°)."
+          "title": "选择页面和方向",
+          "description": "选择要旋转的页面和方向（90°、180°、270°）。"
         },
         {
-          "title": "Download Fixed PDF",
-          "description": "Save the correctly oriented PDF immediately."
+          "title": "下载固定 PDF",
+          "description": "立即保存方向正确的 PDF。"
         }
-      ]
+      ],
+      "badgeText": "快速指南"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Rotation for Beijing Offices",
-      "content": "Office workers in Beijing fix scanner output orientation without relying on cloud services."
+      "type": "rotate_geo_targeting",
+      "title": "100% 安全的本地处理",
+      "content": "所有操作都直接在本地设备上执行。 我们使用先进的 WebAssembly 技术来处理您的文档，而无需将其上传到外部服务器，从而确保完全的隐私。",
+      "badgeText": "本地处理"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Scanned Documents Stay Private",
-      "content": "Scanned medical or legal documents rotated locally without any server access."
+      "type": "rotate_privacy_security",
+      "title": "扫描文档保密",
+      "content": "扫描的医疗或法律文档在本地轮换，无需任何服务器访问。",
+      "badgeText": "安全第一"
     },
     {
-      "type": "transform_performance",
-      "title": "Rotate Any PDF in Milliseconds",
-      "content": "Rotating 500 pages takes less than a second. No upload, no wait."
+      "type": "rotate_performance",
+      "title": "在几毫秒内旋转任何 PDF",
+      "content": "旋转 500 页只需不到一秒。 无需上传，无需等待。",
+      "badgeText": "快如闪电"
     }
   ],
   "faqs": [
     {
-      "q": "Can I rotate individual pages?",
-      "a": "Yes, select specific pages or all at once."
+      "q": "我可以旋转单个页面吗？",
+      "a": "是的，选择特定页面或一次选择全部页面。"
     },
     {
-      "q": "What rotation angles are available?",
-      "a": "90°, 180°, and 270° clockwise and counter-clockwise."
+      "q": "有哪些旋转角度可用？",
+      "a": "顺时针和逆时针 90°、180° 和 270°。"
     },
     {
-      "q": "Does rotation affect image quality?",
-      "a": "No, rotation is lossless — no re-encoding occurs."
+      "q": "旋转会影响图像质量吗？",
+      "a": "不会，旋转是无损的——不会发生重新编码。"
     },
     {
-      "q": "Can I undo a rotation?",
-      "a": "Yes, apply the reverse rotation before downloading."
+      "q": "我可以撤消旋转吗？",
+      "a": "是的，在下载之前应用反向旋转。"
     },
     {
-      "q": "Is this free?",
+      "q": "这是免费的吗？",
       "a": "是的，完全免费。"
     }
-  ]
+  ],
+  "faqTitle": "常见问题",
+  "supportCenter": "支持中心"
 }

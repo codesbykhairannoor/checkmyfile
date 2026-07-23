@@ -1,15 +1,27 @@
 {
   "title": "Add Watermark to PDF — Offline Watermarking",
   "h1": "Stamp PDFs with Text or Image Watermarks Locally",
-  "description": "Add \"CONFIDENTIAL\", logos, or custom text watermarks to PDFs entirely in your browser. No upload. Best for users in New York.",
+  "description": "Add \"CONFIDENTIAL\", logos, or custom text watermarks to PDFs entirely in your browser. No upload. 100% secure local processing.",
+  "buttonText": "Add Watermark",
+  "badges": [
+    "Custom Text",
+    "Adjustable Opacity",
+    "Brand Protection"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
+      "type": "watermark_hero_features",
       "title": "Why Watermark PDFs Offline?",
       "content": "Adding watermarks means your document is sensitive. Never upload draft contracts or confidential reports to a cloud watermarker."
     },
     {
-      "type": "transform_how_to_steps",
+      "type": "watermark_how_to_steps",
       "title": "How to Watermark a PDF",
       "steps": [
         {
@@ -27,17 +39,17 @@
       ]
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Document Watermarking in New York",
-      "content": "Legal and creative professionals in New York stamp documents with watermarks without cloud uploads."
+      "type": "watermark_geo_targeting",
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy."
     },
     {
-      "type": "transform_privacy_security",
+      "type": "watermark_privacy_security",
       "title": "Confidential Drafts Stay Private",
       "content": "Draft contracts and unreleased designs watermarked locally without any server contact."
     },
     {
-      "type": "transform_performance",
+      "type": "watermark_performance",
       "title": "Stamp Thousands of Pages Instantly",
       "content": "Apply watermarks to a 1000-page document in under 3 seconds. All in your browser."
     }

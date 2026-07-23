@@ -1,67 +1,85 @@
 {
-  "title": "Unlock PDF — Remove Password Offline",
-  "h1": "Remove PDF Password Protection Instantly in Your Browser",
-  "description": "Unlock password-protected PDFs locally if you know the password. 100% private. No upload. Perfect for users in Rome.",
+  "title": "Sblocca PDF - Rimuovi password offline",
+  "h1": "Rimuovi istantaneamente la protezione tramite password dei PDF nel tuo browser",
+  "description": "Sblocca localmente i PDF protetti da password se conosci la password. 100% privato. Nessun caricamento. Elaborazione locale sicura al 100%.",
+  "buttonText": "Unlock PDF",
+  "badges": [
+    "Rimuovi password",
+    "Sblocco istantaneo",
+    "Nessun registro del server"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "unlock_hero_features",
-      "title": "Why Unlock PDFs Locally?",
-      "content": "You have the password to your own file. Unlocking it should not require uploading sensitive documents to an external service."
+      "title": "Perché sbloccare i PDF localmente?",
+      "content": "Hai la password per il tuo file. Per sbloccarlo non dovrebbe essere necessario caricare documenti sensibili su un servizio esterno."
     },
     {
       "type": "unlock_how_to_steps",
-      "title": "How to Unlock a Protected PDF",
+      "title": "Come sbloccare un PDF protetto",
       "steps": [
         {
-          "title": "Open Protected PDF",
-          "description": "Select the password-protected PDF."
+          "title": "Apri PDF protetto",
+          "description": "Seleziona il PDF protetto da password."
         },
         {
-          "title": "Enter Your Password",
-          "description": "Provide the existing password — decryption stays in your browser."
+          "title": "Inserisci la tua password",
+          "description": "Fornisci la password esistente: la decrittografia rimane nel tuo browser."
         },
         {
-          "title": "Download Unlocked PDF",
-          "description": "Get your unlocked, fully accessible PDF instantly."
+          "title": "Scarica PDF sbloccato",
+          "description": "Ottieni immediatamente il tuo PDF sbloccato e completamente accessibile."
         }
-      ]
+      ],
+      "badgeText": "Guida rapida"
     },
     {
       "type": "unlock_geo_targeting",
-      "title": "Instant PDF Unlocking for Rome Users",
-      "content": "Users in Rome access their own password-protected files without sending decryption keys to any server."
+      "title": "Elaborazione locale sicura al 100%",
+      "content": "Tutte le operazioni vengono eseguite direttamente sul tuo dispositivo locale. Utilizziamo la tecnologia avanzata WebAssembly per elaborare i tuoi documenti senza mai caricarli su server esterni, garantendo la completa privacy.",
+      "badgeText": "Elaborazione locale"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Your Password Never Leaves the Browser",
-      "content": "The decryption key and your document are processed entirely in browser memory — never transmitted to any server or service."
+      "title": "La tua password non lascia mai il browser",
+      "content": "La chiave di decrittazione e il tuo documento vengono elaborati interamente nella memoria del browser, mai trasmessi a nessun server o servizio.",
+      "badgeText": "La sicurezza prima di tutto"
     },
     {
       "type": "unlock_performance",
-      "title": "Instant Browser-Local Decryption",
-      "content": "AES decryption in your browser takes under a second — far faster than any cloud service with no upload wait."
+      "title": "Decrittografia istantanea locale del browser",
+      "content": "La decrittografia AES nel tuo browser richiede meno di un secondo: molto più veloce di qualsiasi servizio cloud senza tempi di caricamento.",
+      "badgeText": "Velocissimo"
     }
   ],
   "faqs": [
     {
-      "q": "Does it work without the password?",
-      "a": "No, you must know the existing password to unlock."
+      "q": "Funziona senza password?",
+      "a": "No, devi conoscere la password esistente per sbloccare."
     },
     {
-      "q": "Can I unlock permissions-restricted PDFs?",
-      "a": "Yes, permission restrictions are removed after password verification."
+      "q": "Posso sbloccare i PDF con autorizzazioni limitate?",
+      "a": "Sì, le restrizioni sui permessi vengono rimosse dopo la verifica della password."
     },
     {
-      "q": "Is the decryption process secure?",
-      "a": "All decryption happens in your browser memory; nothing is transmitted."
+      "q": "Il processo di decrittazione è sicuro?",
+      "a": "Tutta la decrittazione avviene nella memoria del tuo browser; non viene trasmesso nulla."
     },
     {
-      "q": "What if the password is wrong?",
-      "a": "You will see an error and can try again with the correct password."
+      "q": "Cosa succede se la password è sbagliata?",
+      "a": "Vedrai un errore e potrai riprovare con la password corretta."
     },
     {
-      "q": "Is this free?",
+      "q": "E' gratis?",
       "a": "Sì, completamente gratuito."
     }
-  ]
+  ],
+  "faqTitle": "Domande frequenti",
+  "supportCenter": "Centro di supporto"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "OCR PDF — Make Scans Searchable Offline",
-  "h1": "Extract and Recognize Text from Scanned PDFs",
-  "description": "Run OCR on scanned PDFs to make them searchable and copyable, entirely in your browser using Tesseract. No upload. Great for users in Hanoi.",
+  "title": "OCR PDF — Giúp các bản quét có thể tìm kiếm được ngoại tuyến",
+  "h1": "Trích xuất và nhận dạng văn bản từ các tệp PDF được quét",
+  "description": "Chạy OCR trên các tệp PDF được quét để làm cho chúng có thể tìm kiếm và sao chép được, hoàn toàn trong trình duyệt của bạn bằng Tesseract. Không tải lên. Xử lý cục bộ an toàn 100%.",
+  "buttonText": "Run OCR",
+  "badges": [
+    "Trích xuất văn bản",
+    "PDF có thể tìm kiếm",
+    "Nhận dạng AI"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Run OCR Locally?",
-      "content": "Scanned PDFs contain sensitive text. Running OCR on a cloud service exposes that text to a third party. Ours runs 100% offline."
+      "type": "ocr_hero_features",
+      "title": "Tại sao chạy OCR cục bộ?",
+      "content": "Các tệp PDF được quét chứa văn bản nhạy cảm. Chạy OCR trên dịch vụ đám mây sẽ hiển thị văn bản đó cho bên thứ ba. Của chúng tôi chạy 100% ngoại tuyến."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to OCR a PDF",
+      "type": "ocr_how_to_steps",
+      "title": "Cách OCR một tệp PDF",
       "steps": [
         {
-          "title": "Load Scanned PDF",
-          "description": "Select the image-based or scanned PDF."
+          "title": "Tải bản PDF đã quét",
+          "description": "Chọn PDF dựa trên hình ảnh hoặc được quét."
         },
         {
-          "title": "Select Language",
-          "description": "Choose the document language for better accuracy."
+          "title": "Chọn ngôn ngữ",
+          "description": "Chọn ngôn ngữ tài liệu để có độ chính xác cao hơn."
         },
         {
-          "title": "Download Searchable PDF",
-          "description": "Get a text-layer PDF ready to search and copy."
+          "title": "Tải xuống bản PDF có thể tìm kiếm",
+          "description": "Chuẩn bị sẵn bản PDF lớp văn bản để tìm kiếm và sao chép."
         }
-      ]
+      ],
+      "badgeText": "Hướng dẫn nhanh"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "OCR Tool for Hanoi Archives",
-      "content": "Government agencies and businesses in Hanoi digitize paper archives using our offline OCR tool."
+      "type": "ocr_geo_targeting",
+      "title": "Xử lý cục bộ an toàn 100%",
+      "content": "Tất cả các hoạt động được thực hiện trực tiếp trên thiết bị cục bộ của bạn. Chúng tôi sử dụng công nghệ WebAssembly tiên tiến để xử lý tài liệu của bạn mà không cần tải chúng lên máy chủ bên ngoài, đảm bảo quyền riêng tư hoàn toàn.",
+      "badgeText": "Xử lý cục bộ"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Content Never Exposed",
-      "content": "OCR processing using Tesseract WASM runs entirely in browser memory — no API calls, no data transmission."
+      "type": "ocr_privacy_security",
+      "title": "Nội dung được quét không bao giờ bị lộ",
+      "content": "Quá trình xử lý OCR bằng Tesseract WASM chạy hoàn toàn trong bộ nhớ trình duyệt — không gọi API, không truyền dữ liệu.",
+      "badgeText": "Bảo mật là trên hết"
     },
     {
-      "type": "organizer_performance",
-      "title": "OCR Any Document Locally",
-      "content": "Process a 20-page scanned PDF in under 30 seconds. All Tesseract processing happens in-browser."
+      "type": "ocr_performance",
+      "title": "OCR Bất kỳ tài liệu nào cục bộ",
+      "content": "Xử lý bản PDF được quét 20 trang trong vòng chưa đầy 30 giây. Tất cả quá trình xử lý Tesseract đều diễn ra trong trình duyệt.",
+      "badgeText": "Nhanh như chớp"
     }
   ],
   "faqs": [
     {
-      "q": "What languages does OCR support?",
-      "a": "Over 100 languages via Tesseract engine."
+      "q": "OCR hỗ trợ những ngôn ngữ nào?",
+      "a": "Hơn 100 ngôn ngữ thông qua công cụ Tesseract."
     },
     {
-      "q": "How accurate is the OCR?",
-      "a": "Accuracy depends on scan quality; clear, high-contrast scans yield 95%+ accuracy."
+      "q": "OCR chính xác đến mức nào?",
+      "a": "Độ chính xác phụ thuộc vào chất lượng quét; quét rõ ràng, có độ tương phản cao mang lại độ chính xác hơn 95%."
     },
     {
-      "q": "Does it create a searchable PDF?",
-      "a": "Yes, a text layer is added making the PDF fully searchable."
+      "q": "Nó có tạo ra một bản PDF có thể tìm kiếm được không?",
+      "a": "Có, một lớp văn bản được thêm vào giúp cho tệp PDF có thể tìm kiếm được đầy đủ."
     },
     {
-      "q": "Can I copy text from the result?",
-      "a": "Yes, the output PDF has selectable, copyable text."
+      "q": "Tôi có thể sao chép văn bản từ kết quả không?",
+      "a": "Có, tệp PDF đầu ra có văn bản có thể lựa chọn và sao chép được."
     },
     {
-      "q": "Is this free?",
-      "a": "Có, hoàn toàn miễn phí."
+      "q": "Cái này có miễn phí không?",
+      "a": "Có, luôn miễn phí."
     }
-  ]
+  ],
+  "faqTitle": "Câu hỏi thường gặp",
+  "supportCenter": "Trung tâm hỗ trợ"
 }

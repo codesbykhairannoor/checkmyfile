@@ -1,67 +1,85 @@
 {
-  "title": "OCR PDF — Make Scans Searchable Offline",
-  "h1": "Extract and Recognize Text from Scanned PDFs",
-  "description": "Run OCR on scanned PDFs to make them searchable and copyable, entirely in your browser using Tesseract. No upload. Great for users in Jakarta.",
+  "title": "OCR PDF — Membuat Pemindaian Dapat Dicari Secara Offline",
+  "h1": "Ekstrak dan Kenali Teks dari PDF yang Dipindai",
+  "description": "Jalankan OCR pada PDF yang dipindai agar dapat dicari dan disalin, sepenuhnya di browser Anda menggunakan Tesseract. Tidak ada unggahan. Pemrosesan lokal 100% aman.",
+  "buttonText": "Run OCR",
+  "badges": [
+    "Ekstrak Teks",
+    "PDF yang dapat dicari",
+    "Pengakuan AI"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Run OCR Locally?",
-      "content": "Scanned PDFs contain sensitive text. Running OCR on a cloud service exposes that text to a third party. Ours runs 100% offline."
+      "type": "ocr_hero_features",
+      "title": "Mengapa Menjalankan OCR Secara Lokal?",
+      "content": "PDF yang dipindai berisi teks sensitif. Menjalankan OCR pada layanan cloud memaparkan teks tersebut kepada pihak ketiga. Kami berjalan 100% offline."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to OCR a PDF",
+      "type": "ocr_how_to_steps",
+      "title": "Cara OCR PDF",
       "steps": [
         {
-          "title": "Load Scanned PDF",
-          "description": "Select the image-based or scanned PDF."
+          "title": "Muat PDF yang Dipindai",
+          "description": "Pilih PDF berbasis gambar atau pindaian."
         },
         {
-          "title": "Select Language",
-          "description": "Choose the document language for better accuracy."
+          "title": "Pilih Bahasa",
+          "description": "Pilih bahasa dokumen untuk akurasi yang lebih baik."
         },
         {
-          "title": "Download Searchable PDF",
-          "description": "Get a text-layer PDF ready to search and copy."
+          "title": "Unduh PDF yang Dapat Dicari",
+          "description": "Siapkan PDF lapisan teks untuk dicari dan disalin."
         }
-      ]
+      ],
+      "badgeText": "Panduan Singkat"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "OCR Tool for Jakarta Archives",
-      "content": "Government agencies and businesses in Jakarta digitize paper archives using our offline OCR tool."
+      "type": "ocr_geo_targeting",
+      "title": "Pemrosesan Lokal 100% Aman",
+      "content": "Semua operasi dilakukan langsung di perangkat lokal Anda. Kami menggunakan teknologi WebAssembly yang canggih untuk memproses dokumen Anda tanpa harus mengunggahnya ke server eksternal, sehingga memastikan privasi sepenuhnya.",
+      "badgeText": "Pemrosesan Lokal"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Content Never Exposed",
-      "content": "OCR processing using Tesseract WASM runs entirely in browser memory — no API calls, no data transmission."
+      "type": "ocr_privacy_security",
+      "title": "Konten yang Dipindai Tidak Pernah Terkena",
+      "content": "Pemrosesan OCR menggunakan Tesseract WASM berjalan sepenuhnya di memori browser — tanpa panggilan API, tanpa transmisi data.",
+      "badgeText": "Keamanan Pertama"
     },
     {
-      "type": "organizer_performance",
-      "title": "OCR Any Document Locally",
-      "content": "Process a 20-page scanned PDF in under 30 seconds. All Tesseract processing happens in-browser."
+      "type": "ocr_performance",
+      "title": "OCR Semua Dokumen Secara Lokal",
+      "content": "Memproses PDF pindaian 20 halaman dalam waktu kurang dari 30 detik. Semua pemrosesan Tesseract terjadi di browser.",
+      "badgeText": "Secepat Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "What languages does OCR support?",
-      "a": "Over 100 languages via Tesseract engine."
+      "q": "Bahasa apa saja yang didukung OCR?",
+      "a": "Lebih dari 100 bahasa melalui mesin Tesseract."
     },
     {
-      "q": "How accurate is the OCR?",
-      "a": "Accuracy depends on scan quality; clear, high-contrast scans yield 95%+ accuracy."
+      "q": "Seberapa akurat OCRnya?",
+      "a": "Akurasi bergantung pada kualitas pemindaian; pemindaian yang jelas dan kontras tinggi menghasilkan akurasi 95%+."
     },
     {
-      "q": "Does it create a searchable PDF?",
-      "a": "Yes, a text layer is added making the PDF fully searchable."
+      "q": "Apakah itu membuat PDF yang dapat dicari?",
+      "a": "Ya, lapisan teks ditambahkan sehingga PDF dapat dicari sepenuhnya."
     },
     {
-      "q": "Can I copy text from the result?",
-      "a": "Yes, the output PDF has selectable, copyable text."
+      "q": "Bisakah saya menyalin teks dari hasilnya?",
+      "a": "Ya, PDF keluaran memiliki teks yang dapat dipilih dan disalin."
     },
     {
-      "q": "Is this free?",
-      "a": "Ya, sepenuhnya gratis."
+      "q": "Apakah ini gratis?",
+      "a": "Ya, selalu gratis."
     }
-  ]
+  ],
+  "faqTitle": "Pertanyaan yang Sering Diajukan",
+  "supportCenter": "Pusat Dukungan"
 }

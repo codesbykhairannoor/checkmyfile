@@ -1,67 +1,78 @@
 {
-  "title": "Merge PDF - Combine Documents Offline",
-  "h1": "Merge PDF Files Instantly in Your Browser",
-  "description": "Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, perfect for users in Oslo.",
+  "title": "Slå sammen PDF - Kombiner dokumenter frakoblet",
+  "h1": "Slå sammen PDF-filer umiddelbart i nettleseren din",
+  "description": "Kombiner flere PDF-filer til ett enkelt dokument ved å bruke ren klientside WebAssembly. Ingen filopplasting, perfekt for brukere i New York.",
   "sections": [
     {
       "type": "merge_hero_features",
-      "title": "Why Merge PDF Offline?",
-      "content": "Instead of uploading sensitive documents to a server, our Merge PDF tool stitches your pages together directly in your browser. Complete privacy."
+      "title": "Hvorfor slå sammen PDF frakoblet?",
+      "content": "I stedet for å laste opp sensitive dokumenter til en server, setter vårt Merge PDF-verktøy sammen sidene dine direkte i nettleseren din. Fullstendig privatliv."
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Merge PDF Files",
+      "title": "Hvordan slå sammen PDF-filer",
       "steps": [
         {
-          "title": "Add Documents",
-          "description": "Select the PDFs you want to merge together."
+          "title": "Legg til dokumenter",
+          "description": "Velg PDF-filene du vil slå sammen."
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop files to get the perfect sequence."
+          "title": "Omorganisere sider",
+          "description": "Dra og slipp filer for å få den perfekte sekvensen."
         },
         {
-          "title": "Merge & Save",
-          "description": "Click merge and download your combined document instantly."
+          "title": "Slå sammen og lagre",
+          "description": "Klikk på slå sammen og last ned det kombinerte dokumentet umiddelbart."
         }
-      ]
+      ],
+      "badgeText": "Hurtigguide"
     },
     {
       "type": "merge_geo_targeting",
-      "title": "Seamless Merging for users in Oslo, NO-03",
-      "content": "No matter if you are in Oslo or traveling, combining documents takes zero milliseconds of upload time."
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle operasjoner utføres direkte på din lokale enhet. Vi bruker avansert WebAssembly-teknologi for å behandle dokumentene dine uten å laste dem opp til eksterne servere, noe som sikrer fullstendig personvern.",
+      "badgeText": "Lokal behandling"
     },
     {
       "type": "merge_privacy_security",
       "title": "Enterprise-Grade Document Combining",
-      "content": "Merging contracts and invoices? Do it securely with our WASM engine. No traces left behind."
+      "content": "Slå sammen kontrakter og fakturaer? Gjør det sikkert med vår WASM-motor. Ingen spor etterlatt seg.",
+      "badgeText": "Sikkerhet først"
     },
     {
       "type": "merge_performance",
-      "title": "Instant Combination",
-      "content": "Stitching PDFs locally means you can merge a 500-page document faster than you can upload it."
+      "title": "Øyeblikkelig kombinasjon",
+      "content": "Å sette sammen PDF-er lokalt betyr at du kan slå sammen et 500-siders dokument raskere enn du kan laste det opp.",
+      "badgeText": "Lynrask"
     }
   ],
   "faqs": [
     {
-      "q": "Is merging PDFs completely free?",
-      "a": "Yes! Merge as many files as you want without paying a cent."
+      "q": "Er sammenslåing av PDF-er helt gratis?",
+      "a": "Ja! Slå sammen så mange filer du vil uten å betale en cent."
     },
     {
-      "q": "Are my merged files uploaded?",
-      "a": "No, all merging happens offline in your browser."
+      "q": "Er mine sammenslåtte filer lastet opp?",
+      "a": "Nei, all sammenslåing skjer offline i nettleseren din."
     },
     {
-      "q": "Can I reorder the files before merging?",
-      "a": "Yes, just drag and drop the files in the preview window."
+      "q": "Kan jeg omorganisere filene før sammenslåing?",
+      "a": "Ja, bare dra og slipp filene i forhåndsvisningsvinduet."
     },
     {
-      "q": "Is there a limit on how many files I can merge?",
-      "a": "No artificial limits! Merge 10 or 100 files depending on your RAM."
+      "q": "Er det en grense for hvor mange filer jeg kan slå sammen?",
+      "a": "Ingen kunstige grenser! Slå sammen 10 eller 100 filer avhengig av RAM."
     },
     {
-      "q": "Does merging ruin the formatting?",
-      "a": "Not at all. The original layers and vector data are perfectly stitched together."
+      "q": "Ødelegger sammenslåing formateringen?",
+      "a": "Ikke i det hele tatt. De originale lagene og vektordataene er perfekt sydd sammen."
     }
+  ],
+  "faqTitle": "Ofte stilte spørsmål",
+  "supportCenter": "Støttesenter",
+  "badges": [
+    "Null serverforsinkelse",
+    "Ingen opplastingsbåndbredde",
+    "Øyeblikkelig behandling"
   ]
 }

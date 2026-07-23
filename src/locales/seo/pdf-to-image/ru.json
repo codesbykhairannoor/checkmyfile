@@ -1,67 +1,85 @@
 {
-  "title": "PDF to Image Converter — Extract Pages Offline",
-  "h1": "Convert PDF Pages to PNG or JPG Images",
-  "description": "Extract every page from a PDF as high-quality images directly in your browser. Zero upload, total privacy. Best for users in Moscow.",
+  "title": "Конвертер PDF в изображения — извлечение страниц в автономном режиме",
+  "h1": "Конвертируйте PDF-страницы в изображения PNG или JPG",
+  "description": "Извлекайте каждую страницу из PDF-файла в виде высококачественных изображений прямо в браузере. Нулевая загрузка, 100% безопасная локальная обработка.",
+  "buttonText": "Extract Images",
+  "badges": [
+    "Портфолио дизайнеров",
+    "Презентации",
+    "Высокое качество"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract PDF Pages Offline?",
-      "content": "PDFs often contain confidential diagrams, blueprints, or reports. Extract pages as images without any server access."
+      "type": "pdf_image_hero_features",
+      "title": "Зачем извлекать PDF-страницы в автономном режиме?",
+      "content": "PDF-файлы часто содержат конфиденциальные диаграммы, чертежи или отчеты. Извлекайте страницы в виде изображений без доступа к серверу."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Images",
+      "type": "pdf_image_how_to_steps",
+      "title": "Как конвертировать PDF в изображения",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF you want to extract images from."
+          "title": "Загрузить PDF",
+          "description": "Выберите PDF-файл, из которого вы хотите извлечь изображения."
         },
         {
-          "title": "Choose Format",
-          "description": "Pick PNG (lossless) or JPG (compressed) output."
+          "title": "Выберите формат",
+          "description": "Выберите формат PNG (без потерь) или JPG (сжатый)."
         },
         {
-          "title": "Download Images",
-          "description": "Get all pages as individual image files in a ZIP."
+          "title": "Загрузить изображения",
+          "description": "Получите все страницы в виде отдельных файлов изображений в ZIP-архиве."
         }
-      ]
+      ],
+      "badgeText": "Краткое руководство"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF to Image for Moscow Designers",
-      "content": "Designers in Moscow extract PDF pages as images for presentations and social media without cloud uploads."
+      "type": "pdf_image_geo_targeting",
+      "title": "100% безопасная локальная обработка",
+      "content": "Все операции выполняются непосредственно на вашем локальном устройстве. Мы используем передовую технологию WebAssembly для обработки ваших документов, не загружая их на внешние серверы, обеспечивая полную конфиденциальность.",
+      "badgeText": "Локальная обработка"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Confidential Diagrams Stay Private",
-      "content": "Technical blueprints and legal documents extracted as images without any data leaving your device."
+      "type": "pdf_image_privacy_security",
+      "title": "Конфиденциальные диаграммы остаются конфиденциальными",
+      "content": "Технические чертежи и юридические документы, извлеченные в виде изображений, без каких-либо данных с вашего устройства.",
+      "badgeText": "Безопасность превыше всего"
     },
     {
-      "type": "split_performance",
-      "title": "Extract All Pages Instantly",
-      "content": "A 500-page PDF converted to images in seconds. No upload, no wait."
+      "type": "pdf_image_performance",
+      "title": "Мгновенно извлечь все страницы",
+      "content": "500-страничный PDF-файл преобразуется в изображения за считанные секунды. Ни загрузки, ни ожидания.",
+      "badgeText": "Молниеносно"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are available?",
-      "a": "PNG and JPG with adjustable quality settings."
+      "q": "Какие форматы изображений доступны?",
+      "a": "PNG и JPG с регулируемыми настройками качества."
     },
     {
-      "q": "Can I extract specific pages?",
-      "a": "Yes, specify page ranges like 1-5 or 3,7,12."
+      "q": "Могу ли я извлечь определенные страницы?",
+      "a": "Да, укажите диапазоны страниц, например 1–5 или 3,7,12."
     },
     {
-      "q": "What resolution are the exported images?",
-      "a": "Default 150 DPI, adjustable up to 300 DPI."
+      "q": "В каком разрешении экспортируются изображения?",
+      "a": "По умолчанию 150 точек на дюйм, можно настроить до 300 точек на дюйм."
     },
     {
-      "q": "Are all pages exported at once?",
-      "a": "Yes, all selected pages are zipped for a single download."
+      "q": "Все страницы экспортируются одновременно?",
+      "a": "Да, все выбранные страницы заархивированы для одной загрузки."
     },
     {
-      "q": "Is this free?",
-      "a": "Да, полностью бесплатно."
+      "q": "Это бесплатно?",
+      "a": "Абсолютно бесплатно, всегда."
     }
-  ]
+  ],
+  "faqTitle": "Часто задаваемые вопросы",
+  "supportCenter": "Центр поддержки"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Image to PDF — Combine Photos Offline",
-  "h1": "Convert Images to PDF Without Uploading",
-  "description": "Turn JPG, PNG, and WebP images into a single PDF document in your browser. Your photos stay private. Perfect for users in Athens.",
+  "title": "Εικόνα σε PDF — Συνδυάστε φωτογραφίες εκτός σύνδεσης",
+  "h1": "Μετατροπή εικόνων σε PDF χωρίς μεταφόρτωση",
+  "description": "Μετατρέψτε τις εικόνες JPG, PNG και WebP σε ένα μόνο έγγραφο PDF στο πρόγραμμα περιήγησής σας. Οι φωτογραφίες σας παραμένουν ιδιωτικές. 100% ασφαλής τοπική επεξεργασία.",
+  "buttonText": "Convert Images",
+  "badges": [
+    "Χαρτοφυλάκια",
+    "Σαρώσεις ταυτότητας",
+    "Άλμπουμ φωτογραφιών"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Images Offline?",
-      "content": "Photos contain location data and personal moments. Convert them to PDF without exposing them to any cloud service."
+      "type": "image_hero_features",
+      "title": "Γιατί να μετατρέψετε εικόνες εκτός σύνδεσης;",
+      "content": "Οι φωτογραφίες περιέχουν δεδομένα τοποθεσίας και προσωπικές στιγμές. Μετατρέψτε τα σε PDF χωρίς να τα εκθέσετε σε καμία υπηρεσία cloud."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Turn Images Into PDF",
+      "type": "image_how_to_steps",
+      "title": "Πώς να μετατρέψετε τις εικόνες σε PDF",
       "steps": [
         {
-          "title": "Select Images",
-          "description": "Choose JPG, PNG, or WebP files from your device."
+          "title": "Επιλέξτε Εικόνες",
+          "description": "Επιλέξτε αρχεία JPG, PNG ή WebP από τη συσκευή σας."
         },
         {
-          "title": "Arrange Order",
-          "description": "Drag to reorder images before generating the PDF."
+          "title": "Τακτοποίηση Παραγγελίας",
+          "description": "Σύρετε για να αναδιατάξετε τις εικόνες πριν δημιουργήσετε το PDF."
         },
         {
-          "title": "Export PDF",
-          "description": "Download your image PDF in one click."
+          "title": "Εξαγωγή PDF",
+          "description": "Κατεβάστε την εικόνα σας σε μορφή PDF με ένα κλικ."
         }
-      ]
+      ],
+      "badgeText": "Γρήγορος Οδηγός"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Image to PDF for Athens Users",
-      "content": "Photographers and designers in Athens use our tool to package portfolios without cloud uploads."
+      "type": "image_geo_targeting",
+      "title": "100% Ασφαλής Τοπική Επεξεργασία",
+      "content": "Όλες οι λειτουργίες εκτελούνται απευθείας στην τοπική συσκευή σας. Χρησιμοποιούμε προηγμένη τεχνολογία WebAssembly για να επεξεργαζόμαστε τα έγγραφά σας χωρίς ποτέ να τα ανεβάσουμε σε εξωτερικούς διακομιστές, διασφαλίζοντας πλήρες απόρρητο.",
+      "badgeText": "Τοπική Επεξεργασία"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Photos Never Leave Your Device",
-      "content": "Personal photos, ID scans, medical images — all converted 100% locally without any server contact."
+      "type": "image_privacy_security",
+      "title": "Φωτογραφίες Ποτέ Μην Φεύγετε από τη Συσκευή σας",
+      "content": "Προσωπικές φωτογραφίες, σαρώσεις ταυτότητας, ιατρικές εικόνες — όλα μετατρέπονται 100% τοπικά χωρίς καμία επαφή με τον διακομιστή.",
+      "badgeText": "Πρώτα η ασφάλεια"
     },
     {
-      "type": "combiner_performance",
-      "title": "Batch Convert Instantly",
-      "content": "Convert 50 images into a single PDF in under 5 seconds. No upload, no wait."
+      "type": "image_performance",
+      "title": "Μετατροπή παρτίδας άμεσα",
+      "content": "Μετατρέψτε 50 εικόνες σε ένα μόνο PDF σε λιγότερο από 5 δευτερόλεπτα. Χωρίς μεταφόρτωση, χωρίς αναμονή.",
+      "badgeText": "Αστραπιαία"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are supported?",
-      "a": "JPG, JPEG, PNG, and WebP are all supported."
+      "q": "Ποιες μορφές εικόνας υποστηρίζονται;",
+      "a": "Υποστηρίζονται όλα τα JPG, JPEG, PNG και WebP."
     },
     {
-      "q": "Can I combine multiple images?",
-      "a": "Yes, select as many images as you want and reorder them."
+      "q": "Μπορώ να συνδυάσω πολλές εικόνες;",
+      "a": "Ναι, επιλέξτε όσες εικόνες θέλετε και αναδιατάξτε τις."
     },
     {
-      "q": "Is image quality preserved?",
-      "a": "Yes, images are embedded at their original resolution."
+      "q": "Διατηρείται η ποιότητα της εικόνας;",
+      "a": "Ναι, οι εικόνες είναι ενσωματωμένες στην αρχική τους ανάλυση."
     },
     {
-      "q": "Does it strip EXIF metadata?",
-      "a": "You can optionally strip EXIF data for privacy."
+      "q": "Απογυμνώνει τα μεταδεδομένα EXIF;",
+      "a": "Μπορείτε προαιρετικά να αφαιρέσετε τα δεδομένα EXIF ​​για απόρρητο."
     },
     {
-      "q": "Is there a limit on image count?",
-      "a": "Ναι, εντελώς δωρεάν."
+      "q": "Υπάρχει όριο στον αριθμό των εικόνων;",
+      "a": "Χωρίς όριο! Συνδυάστε εκατοντάδες εικόνες σε ένα PDF."
     }
-  ]
+  ],
+  "faqTitle": "Συχνές Ερωτήσεις",
+  "supportCenter": "Κέντρο Υποστήριξης"
 }

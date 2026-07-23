@@ -1,67 +1,85 @@
 {
-  "title": "OCR PDF — Make Scans Searchable Offline",
-  "h1": "Extract and Recognize Text from Scanned PDFs",
-  "description": "Run OCR on scanned PDFs to make them searchable and copyable, entirely in your browser using Tesseract. No upload. Great for users in Stockholm.",
+  "title": "OCR PDF — Gör skanningar sökbara offline",
+  "h1": "Extrahera och känna igen text från skannade PDF-filer",
+  "description": "Kör OCR på skannade PDF-filer för att göra dem sökbara och kopierbara, helt i din webbläsare med hjälp av Tesseract. Ingen uppladdning. 100 % säker lokal bearbetning.",
+  "buttonText": "Run OCR",
+  "badges": [
+    "Extrahera text",
+    "Sökbar PDF",
+    "AI-igenkänning"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Run OCR Locally?",
-      "content": "Scanned PDFs contain sensitive text. Running OCR on a cloud service exposes that text to a third party. Ours runs 100% offline."
+      "type": "ocr_hero_features",
+      "title": "Varför köra OCR lokalt?",
+      "content": "Skannade PDF-filer innehåller känslig text. Att köra OCR på en molntjänst exponerar den texten för en tredje part. Vår körs 100% offline."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to OCR a PDF",
+      "type": "ocr_how_to_steps",
+      "title": "Hur man OCR en PDF",
       "steps": [
         {
-          "title": "Load Scanned PDF",
-          "description": "Select the image-based or scanned PDF."
+          "title": "Ladda skannad PDF",
+          "description": "Välj den bildbaserade eller skannade PDF-filen."
         },
         {
-          "title": "Select Language",
-          "description": "Choose the document language for better accuracy."
+          "title": "Välj språk",
+          "description": "Välj dokumentspråk för bättre noggrannhet."
         },
         {
-          "title": "Download Searchable PDF",
-          "description": "Get a text-layer PDF ready to search and copy."
+          "title": "Ladda ner sökbar PDF",
+          "description": "Skaffa en PDF-fil med textlager redo att söka och kopiera."
         }
-      ]
+      ],
+      "badgeText": "Snabbguide"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "OCR Tool for Stockholm Archives",
-      "content": "Government agencies and businesses in Stockholm digitize paper archives using our offline OCR tool."
+      "type": "ocr_geo_targeting",
+      "title": "100 % säker lokal bearbetning",
+      "content": "Alla operationer utförs direkt på din lokala enhet. Vi använder avancerad WebAssembly-teknik för att behandla dina dokument utan att någonsin ladda upp dem till externa servrar, vilket säkerställer fullständig integritet.",
+      "badgeText": "Lokal bearbetning"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Content Never Exposed",
-      "content": "OCR processing using Tesseract WASM runs entirely in browser memory — no API calls, no data transmission."
+      "type": "ocr_privacy_security",
+      "title": "Skannat innehåll har aldrig exponerats",
+      "content": "OCR-bearbetning med Tesseract WASM körs helt i webbläsarens minne – inga API-anrop, ingen dataöverföring.",
+      "badgeText": "Säkerhet först"
     },
     {
-      "type": "organizer_performance",
-      "title": "OCR Any Document Locally",
-      "content": "Process a 20-page scanned PDF in under 30 seconds. All Tesseract processing happens in-browser."
+      "type": "ocr_performance",
+      "title": "OCR Alla dokument lokalt",
+      "content": "Bearbeta en 20-sidig skannad PDF på under 30 sekunder. All Tesseract-bearbetning sker i webbläsaren.",
+      "badgeText": "Blixtsnabb"
     }
   ],
   "faqs": [
     {
-      "q": "What languages does OCR support?",
-      "a": "Over 100 languages via Tesseract engine."
+      "q": "Vilka språk stöder OCR?",
+      "a": "Över 100 språk via Tesseract-motorn."
     },
     {
-      "q": "How accurate is the OCR?",
-      "a": "Accuracy depends on scan quality; clear, high-contrast scans yield 95%+ accuracy."
+      "q": "Hur exakt är OCR?",
+      "a": "Noggrannheten beror på skanningskvaliteten; tydliga skanningar med hög kontrast ger 95 %+ noggrannhet."
     },
     {
-      "q": "Does it create a searchable PDF?",
-      "a": "Yes, a text layer is added making the PDF fully searchable."
+      "q": "Skapar det en sökbar PDF?",
+      "a": "Ja, ett textlager läggs till som gör PDF:en helt sökbar."
     },
     {
-      "q": "Can I copy text from the result?",
-      "a": "Yes, the output PDF has selectable, copyable text."
+      "q": "Kan jag kopiera text från resultatet?",
+      "a": "Ja, den utgående PDF-filen har valbar, kopierbar text."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, helt gratis."
+      "q": "Är detta gratis?",
+      "a": "Ja, alltid gratis."
     }
-  ]
+  ],
+  "faqTitle": "Vanliga frågor",
+  "supportCenter": "Supportcenter"
 }

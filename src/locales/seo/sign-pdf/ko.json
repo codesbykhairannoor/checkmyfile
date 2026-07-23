@@ -1,67 +1,85 @@
 {
-  "title": "Sign PDF Online — Draw Signature Offline",
-  "h1": "Sign PDF Documents With Your Signature Without Uploading",
-  "description": "Draw, type, or upload your signature and place it on PDFs entirely in your browser. No cloud. Perfect for users in Seoul.",
+  "title": "온라인으로 PDF에 서명 — 오프라인으로 서명 그리기",
+  "h1": "업로드하지 않고 서명으로 PDF 문서에 서명",
+  "description": "서명을 그리거나 입력하거나 업로드하여 브라우저에서 PDF에 완전히 배치하세요. 클라우드가 없습니다. 100% 안전한 로컬 처리.",
+  "buttonText": "Sign PDF",
+  "badges": [
+    "디지털 서명",
+    "그리기 또는 입력",
+    "법적 구속력"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "sign_hero_features",
-      "title": "Why Sign PDFs Locally?",
-      "content": "Your signature is your identity. Never upload your drawn signature or a private contract to a third-party cloud signing service."
+      "title": "PDF에 로컬로 서명하는 이유는 무엇입니까?",
+      "content": "귀하의 서명은 귀하의 신원입니다. 작성한 서명이나 개인 계약서를 타사 클라우드 서명 서비스에 업로드하지 마십시오."
     },
     {
       "type": "sign_how_to_steps",
-      "title": "How to Sign a PDF in 3 Steps",
+      "title": "3단계로 PDF에 서명하는 방법",
       "steps": [
         {
-          "title": "Create Your Signature",
-          "description": "Draw with mouse, type in signature font, or upload an image."
+          "title": "서명을 작성하세요",
+          "description": "마우스로 그림을 그리거나, 서명 글꼴을 입력하거나, 이미지를 업로드하세요."
         },
         {
-          "title": "Place on Document",
-          "description": "Drag and resize your signature to the correct position."
+          "title": "문서에 배치",
+          "description": "서명을 올바른 위치로 끌어서 크기를 조정하세요."
         },
         {
-          "title": "Download Signed PDF",
-          "description": "Save your signed document immediately, no account needed."
+          "title": "서명된 PDF 다운로드",
+          "description": "서명된 문서를 즉시 저장하세요. 계정이 필요하지 않습니다."
         }
-      ]
+      ],
+      "badgeText": "빠른 가이드"
     },
     {
       "type": "sign_geo_targeting",
-      "title": "Private Digital Signatures for Seoul",
-      "content": "Freelancers and businesses in Seoul sign contracts, NDAs, and agreements without exposing their identity or documents to any cloud service."
+      "title": "100% 안전한 로컬 처리",
+      "content": "모든 작업은 로컬 장치에서 직접 수행됩니다. 우리는 고급 WebAssembly 기술을 사용하여 문서를 외부 서버에 업로드하지 않고 처리하여 완벽한 개인 정보 보호를 보장합니다.",
+      "badgeText": "로컬 처리"
     },
     {
       "type": "sign_privacy_security",
-      "title": "Your Signature Identity Stays Private",
-      "content": "Your drawn signature and signed document are processed entirely in browser memory — never stored, never transmitted."
+      "title": "귀하의 서명 신원은 비공개로 유지됩니다",
+      "content": "귀하가 작성한 서명과 서명된 문서는 전적으로 브라우저 메모리에서 처리되며 저장되거나 전송되지 않습니다.",
+      "badgeText": "보안 우선"
     },
     {
       "type": "sign_performance",
-      "title": "Sign Any Document in Under 30 Seconds",
-      "content": "No account, no upload, no cloud. Draw, place, and download your signed PDF in under 30 seconds."
+      "title": "30초 이내에 모든 문서에 서명",
+      "content": "계정도 없고, 업로드도 없고, 클라우드도 없습니다. 30초 안에 서명된 PDF를 그리고, 배치하고, 다운로드하세요.",
+      "badgeText": "번개처럼 빠르게"
     }
   ],
   "faqs": [
     {
-      "q": "How can I create my signature?",
-      "a": "Draw with your mouse, type your name in a signature font, or upload an image."
+      "q": "서명을 어떻게 만들 수 있나요?",
+      "a": "마우스로 그림을 그리거나 서명 글꼴로 이름을 입력하거나 이미지를 업로드하세요."
     },
     {
-      "q": "Can I sign multiple pages?",
-      "a": "Yes, place your signature on any or all pages."
+      "q": "여러 페이지에 서명할 수 있나요?",
+      "a": "예, 일부 또는 모든 페이지에 서명을 넣으세요."
     },
     {
-      "q": "Is the signature legally binding?",
-      "a": "Our tool applies a visual signature. For legally binding e-signatures, check your jurisdiction."
+      "q": "서명은 법적 구속력이 있나요?",
+      "a": "우리 도구는 시각적 서명을 적용합니다. 법적 구속력이 있는 전자 서명의 경우 관할권을 확인하세요."
     },
     {
-      "q": "Can I resize the signature?",
-      "a": "Yes, drag the corners to resize it after placing."
+      "q": "서명 크기를 조정할 수 있나요?",
+      "a": "예, 배치한 후 모서리를 드래그하여 크기를 조정하세요."
     },
     {
-      "q": "Is this free?",
+      "q": "이거 무료인가요?",
       "a": "예, 완전 무료입니다."
     }
-  ]
+  ],
+  "faqTitle": "자주 묻는 질문",
+  "supportCenter": "지원 센터"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Resize PDF Pages — Change Paper Size Offline",
-  "h1": "Resize PDF Pages to A4, Letter, or Custom Sizes",
-  "description": "Change the paper size of every PDF page to A4, US Letter, or custom dimensions entirely in your browser. No upload. Ideal for users in Athens.",
+  "title": "Αλλαγή μεγέθους σελίδων PDF — Αλλαγή μεγέθους χαρτιού εκτός σύνδεσης",
+  "h1": "Αλλαγή μεγέθους σελίδων PDF σε A4, Letter ή προσαρμοσμένα μεγέθη",
+  "description": "Αλλάξτε το μέγεθος χαρτιού κάθε σελίδας PDF σε A4, US Letter ή προσαρμοσμένες διαστάσεις εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση. 100% ασφαλής τοπική επεξεργασία.",
+  "buttonText": "Resize Pages",
+  "badges": [
+    "A4, Letter, Custom",
+    "Προσθήκη περιθωρίων",
+    "Διόρθωση μορφής"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Resize PDFs Locally?",
-      "content": "Preparing documents for printing requires proper page sizing. Resize locally without uploading internal documents to the cloud."
+      "type": "resize_hero_features",
+      "title": "Γιατί να αλλάξετε το μέγεθος των αρχείων PDF τοπικά;",
+      "content": "Η προετοιμασία εγγράφων για εκτύπωση απαιτεί σωστό μέγεθος σελίδας. Αλλάξτε το μέγεθος τοπικά χωρίς να ανεβάσετε εσωτερικά έγγραφα στο cloud."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Resize PDF Pages",
+      "type": "resize_how_to_steps",
+      "title": "Πώς να αλλάξετε το μέγεθος των σελίδων PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page dimensions."
+          "title": "Ανοίξτε το PDF",
+          "description": "Φορτώστε το PDF με εσφαλμένες διαστάσεις σελίδας."
         },
         {
-          "title": "Select Target Size",
-          "description": "Choose A4, Letter, A3, or enter custom dimensions."
+          "title": "Επιλέξτε Μέγεθος στόχου",
+          "description": "Επιλέξτε A4, Letter, A3 ή εισαγάγετε προσαρμοσμένες διαστάσεις."
         },
         {
-          "title": "Download Resized PDF",
-          "description": "Get your properly sized document instantly."
+          "title": "Λήψη PDF με αλλαγή μεγέθους",
+          "description": "Αποκτήστε το έγγραφό σας με το σωστό μέγεθος αμέσως."
         }
-      ]
+      ],
+      "badgeText": "Γρήγορος Οδηγός"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Resizing for Athens Print Shops",
-      "content": "Print shops and offices in Athens resize documents to standard sizes without cloud dependency."
+      "type": "resize_geo_targeting",
+      "title": "100% Ασφαλής Τοπική Επεξεργασία",
+      "content": "Όλες οι λειτουργίες εκτελούνται απευθείας στην τοπική συσκευή σας. Χρησιμοποιούμε προηγμένη τεχνολογία WebAssembly για να επεξεργαζόμαστε τα έγγραφά σας χωρίς ποτέ να τα ανεβάσουμε σε εξωτερικούς διακομιστές, διασφαλίζοντας πλήρες απόρρητο.",
+      "badgeText": "Τοπική Επεξεργασία"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Internal Documents Stay Internal",
-      "content": "Resize business reports and proposals without any server-side processing."
+      "type": "resize_privacy_security",
+      "title": "Εσωτερικά έγγραφα Stay Internal",
+      "content": "Αλλαγή μεγέθους αναφορών και προτάσεων επιχειρήσεων χωρίς καμία επεξεργασία από την πλευρά του διακομιστή.",
+      "badgeText": "Πρώτα η ασφάλεια"
     },
     {
-      "type": "transform_performance",
-      "title": "Resize Hundreds of Pages Instantly",
-      "content": "Resizing a 500-page PDF takes under 2 seconds. All in your browser."
+      "type": "resize_performance",
+      "title": "Αλλαγή μεγέθους εκατοντάδων σελίδων άμεσα",
+      "content": "Η αλλαγή μεγέθους ενός PDF 500 σελίδων διαρκεί λιγότερο από 2 δευτερόλεπτα. Όλα στο πρόγραμμα περιήγησής σας.",
+      "badgeText": "Αστραπιαία"
     }
   ],
   "faqs": [
     {
-      "q": "What sizes are available?",
-      "a": "A4, A3, A5, US Letter, Legal, and custom dimensions."
+      "q": "Τι μεγέθη είναι διαθέσιμα;",
+      "a": "Διαστάσεις A4, A3, A5, US Letter, Legal και προσαρμοσμένες διαστάσεις."
     },
     {
-      "q": "Does content scale with the page?",
-      "a": "Yes, content is scaled proportionally by default."
+      "q": "Κλιμακώνεται το περιεχόμενο με τη σελίδα;",
+      "a": "Ναι, το περιεχόμενο κλιμακώνεται αναλογικά από προεπιλογή."
     },
     {
-      "q": "Can I resize individual pages?",
-      "a": "Yes, apply different sizes to specific pages."
+      "q": "Μπορώ να αλλάξω το μέγεθος μεμονωμένων σελίδων;",
+      "a": "Ναι, εφαρμόστε διαφορετικά μεγέθη σε συγκεκριμένες σελίδες."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "Vector content is re-rendered perfectly; images may scale."
+      "q": "Επηρεάζεται η ποιότητα;",
+      "a": "Το διανυσματικό περιεχόμενο αποδίδεται ξανά τέλεια. οι εικόνες μπορεί να κλιμακωθούν."
     },
     {
-      "q": "Is this free?",
+      "q": "Αυτό είναι δωρεάν;",
       "a": "Ναι, εντελώς δωρεάν."
     }
-  ]
+  ],
+  "faqTitle": "Συχνές Ερωτήσεις",
+  "supportCenter": "Κέντρο Υποστήριξης"
 }

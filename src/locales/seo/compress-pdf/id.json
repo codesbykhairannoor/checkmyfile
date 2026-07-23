@@ -1,67 +1,85 @@
 {
-  "title": "Kompres PDF Online - Kecilkan Ukuran File",
-  "h1": "Kecilkan Ukuran Dokumen PDF Tanpa Mengurangi Kualitas",
-  "description": "Kompres file PDF berukuran besar hingga 90% menjadi sangat ringan menggunakan teknik memori lokal. Sangat cocok untuk pengguna di Jakarta.",
+  "title": "Kompres PDF Online - Kurangi Ukuran File",
+  "h1": "Kompres Dokumen PDF tanpa Kehilangan Kualitas",
+  "description": "Kecilkan file PDF besar hingga 90% menggunakan teknik adaptif lossless langsung di WebAssembly. Pemrosesan lokal 100% aman.",
   "sections": [
     {
-      "type": "comp_hero_features",
-      "title": "Mengapa Mengecilkan PDF Offline?",
-      "content": "PDF besar susah dikirim via email. Kompresor kami mengecilkan ukuran tanpa membuat gambar buram, langsung dari browser."
+      "type": "compress_hero_features",
+      "title": "Mengapa Kompres PDF Offline?",
+      "content": "PDF berukuran besar sulit dikirim melalui email. Kompresor kami mengurangi ukuran file secara drastis tanpa mengaburkan gambar, semuanya dari browser Anda."
     },
     {
-      "type": "comp_how_to_steps",
+      "type": "compress_how_to_steps",
       "title": "Cara Mengecilkan File PDF",
       "steps": [
         {
-          "title": "Pilih File Besar",
-          "description": "Pilih PDF berat yang ingin Anda kecilkan ukurannya."
+          "title": "Unggah File Besar",
+          "description": "Pilih PDF besar dan kuat yang ingin Anda kecilkan."
         },
         {
           "title": "Pilih Kualitas",
-          "description": "Pilih antara kualitas tinggi atau kompresi maksimal."
+          "description": "Pilih antara kualitas tinggi atau kompresi maksimum."
         },
         {
-          "title": "Unduh File Kecil",
-          "description": "Dapatkan file terkompresi Anda secara instan."
+          "title": "Unduh PDF Kecil",
+          "description": "Dapatkan file terkompresi Anda secara instan, siap untuk dibagikan."
         }
-      ]
+      ],
+      "badgeText": "Panduan Singkat"
     },
     {
-      "type": "comp_geo_targeting",
-      "title": "Optimalisasi Kompresi di Jakarta, ID-JK",
-      "content": "Koneksi lambat di Jakarta? Kompres file Anda secara lokal agar lebih cepat dikirim."
+      "type": "compress_geo_targeting",
+      "title": "Pemrosesan Lokal 100% Aman",
+      "content": "Semua operasi dilakukan langsung di perangkat lokal Anda. Kami menggunakan teknologi WebAssembly yang canggih untuk memproses dokumen Anda tanpa harus mengunggahnya ke server eksternal, sehingga memastikan privasi sepenuhnya.",
+      "badgeText": "Pemrosesan Lokal"
     },
     {
-      "type": "comp_privacy_security",
-      "title": "Kompresi Lokal yang Aman",
-      "content": "Mengecilkan laporan keuangan? Algoritma kami bekerja 100% offline, menjaga data Anda tetap rahasia."
+      "type": "compress_privacy_security",
+      "title": "Amankan Kompresi Lokal",
+      "content": "Mengompresi laporan keuangan sensitif? Algoritme kami bekerja sepenuhnya offline, menjaga keamanan data Anda.",
+      "badgeText": "Keamanan Pertama"
     },
     {
-      "type": "comp_performance",
-      "title": "Mengecilkan Secepat Kilat",
-      "content": "Mengompresi file 50MB secara lokal menghemat waktu Anda dari mengunggah 50MB ke internet."
+      "type": "compress_performance",
+      "title": "Penyusutan Secepat Kilat",
+      "content": "Mengompresi file 50MB secara lokal menghemat waktu Anda mengunggah 50MB dan mengunduh kembali 5MB.",
+      "badgeText": "Secepat Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "Apakah PDF saya jadi buram?",
-      "a": "Tidak, alat kami menggunakan kompresi adaptif untuk menjaga kualitas agar tetap terbaca."
+      "q": "Apakah mengompresi PDF saya akan membuatnya buram?",
+      "a": "Tidak, alat kami menggunakan kompresi adaptif untuk menjaga keterbacaan sekaligus mengurangi ukuran."
     },
     {
-      "q": "Apakah file saya dikirim ke server?",
+      "q": "Apakah file saya dikirim ke server untuk dikompresi?",
       "a": "Tidak, algoritma kompresi berjalan langsung di memori browser Anda."
     },
     {
-      "q": "Berapa ukuran file maksimal?",
-      "a": "Tidak ada! Anda bisa mengompres file sebesar apa pun selama memori perangkat kuat."
+      "q": "Berapa ukuran file maksimum yang dapat saya kompres?",
+      "a": "Memori browser Anda adalah satu-satunya batasan! Anda dapat mengompres file berukuran besar dengan mudah."
     },
     {
-      "q": "Apakah kompresi ini gratis?",
-      "a": "Sepenuhnya gratis tanpa batasan tersembunyi."
+      "q": "Apakah alat kompresi ini gratis?",
+      "a": "Benar-benar gratis tanpa batasan penggunaan atau paywall premium."
     },
     {
-      "q": "Bisa kompres banyak file sekaligus?",
-      "a": "Ya, kompresi massal (batch) didukung penuh."
+      "q": "Bisakah saya mengompres banyak file sekaligus?",
+      "a": "Kompresi batch didukung di browser modern."
     }
-  ]
+  ],
+  "badges": [
+    "Kompresi 90%",
+    "Opsi Tanpa Rugi",
+    "Tidak Ada Unggahan"
+  ],
+  "stats": [
+    "Zero Wait",
+    "High Quality",
+    "WebAssembly",
+    "Private"
+  ],
+  "buttonText": "Compress PDF",
+  "faqTitle": "Pertanyaan yang Sering Diajukan",
+  "supportCenter": "Pusat Dukungan"
 }

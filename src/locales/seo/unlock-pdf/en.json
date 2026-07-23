@@ -1,7 +1,19 @@
 {
   "title": "Unlock PDF — Remove Password Offline",
   "h1": "Remove PDF Password Protection Instantly in Your Browser",
-  "description": "Unlock password-protected PDFs locally if you know the password. 100% private. No upload. Perfect for users in New York.",
+  "description": "Unlock password-protected PDFs locally if you know the password. 100% private. No upload. 100% secure local processing.",
+  "buttonText": "Unlock PDF",
+  "badges": [
+    "Remove Password",
+    "Instant Unlock",
+    "No Server Logs"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "unlock_hero_features",
@@ -28,8 +40,8 @@
     },
     {
       "type": "unlock_geo_targeting",
-      "title": "Instant PDF Unlocking for New York Users",
-      "content": "Users in New York access their own password-protected files without sending decryption keys to any server."
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy."
     },
     {
       "type": "unlock_privacy_security",

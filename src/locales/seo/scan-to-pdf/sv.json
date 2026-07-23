@@ -1,67 +1,85 @@
 {
-  "title": "Scan to PDF — Convert Camera Shots Offline",
-  "h1": "Convert Photos and Scans to PDF Locally",
-  "description": "Turn photos of documents taken with your camera into clean PDFs entirely in your browser. No upload. Best for users in Stockholm.",
+  "title": "Skanna till PDF — Konvertera kamerabilder offline",
+  "h1": "Konvertera foton och skanningar till PDF lokalt",
+  "description": "Förvandla foton av dokument tagna med din kamera till rena PDF-filer helt och hållet i din webbläsare. Ingen uppladdning. 100 % säker lokal bearbetning.",
+  "buttonText": "Scan to PDF",
+  "badges": [
+    "Använd webbkamera",
+    "Mobil skanner",
+    "Autobeskärning"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Use Scan-to-PDF Offline?",
-      "content": "Photos of documents contain sensitive information. Process them locally without any cloud access."
+      "type": "scan_hero_features",
+      "title": "Varför använda Skanna-till-PDF offline?",
+      "content": "Foton på dokument innehåller känslig information. Bearbeta dem lokalt utan någon molnåtkomst."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Scans to PDF",
+      "type": "scan_how_to_steps",
+      "title": "Hur man konverterar skanningar till PDF",
       "steps": [
         {
-          "title": "Import Photos",
-          "description": "Select photos taken with your phone or camera."
+          "title": "Importera foton",
+          "description": "Välj foton tagna med din telefon eller kamera."
         },
         {
-          "title": "Enhance Scan",
-          "description": "Auto-crop, deskew, and enhance contrast."
+          "title": "Förbättra Scan",
+          "description": "Beskär automatiskt, snedställ och förbättra kontrasten."
         },
         {
-          "title": "Export PDF",
-          "description": "Download a clean, professional-looking scanned PDF."
+          "title": "Exportera PDF",
+          "description": "Ladda ner en ren, professionellt utseende skannad PDF."
         }
-      ]
+      ],
+      "badgeText": "Snabbguide"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Scan to PDF for Stockholm Field Workers",
-      "content": "Field workers and freelancers in Stockholm digitize paper documents on-the-go without uploading to cloud services."
+      "type": "scan_geo_targeting",
+      "title": "100 % säker lokal bearbetning",
+      "content": "Alla operationer utförs direkt på din lokala enhet. Vi använder avancerad WebAssembly-teknik för att behandla dina dokument utan att någonsin ladda upp dem till externa servrar, vilket säkerställer fullständig integritet.",
+      "badgeText": "Lokal bearbetning"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Documents Stay on Device",
-      "content": "Invoices, contracts, and ID scans processed entirely in browser memory without any server access."
+      "type": "scan_privacy_security",
+      "title": "Skannade dokument stannar kvar på enheten",
+      "content": "Fakturor, kontrakt och ID-skanningar behandlas helt i webbläsarens minne utan någon serveråtkomst.",
+      "badgeText": "Säkerhet först"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Scans in Real Time",
-      "content": "Photo enhancement and PDF generation happens in milliseconds, even for high-resolution camera shots."
+      "type": "scan_performance",
+      "title": "Konvertera skanningar i realtid",
+      "content": "Fotoförbättring och PDF-generering sker på millisekunder, även för högupplösta kamerabilder.",
+      "badgeText": "Blixtsnabb"
     }
   ],
   "faqs": [
     {
-      "q": "What photo formats are supported?",
-      "a": "JPG, PNG, WebP, and HEIC from modern cameras."
+      "q": "Vilka fotoformat stöds?",
+      "a": "JPG, PNG, WebP och HEIC från moderna kameror."
     },
     {
-      "q": "Does it fix tilted scans?",
-      "a": "Yes, auto-deskew corrects slight angles automatically."
+      "q": "Fixar den lutade skanningar?",
+      "a": "Ja, automatisk avskedning korrigerar lätta vinklar automatiskt."
     },
     {
-      "q": "Can I combine multiple scans?",
-      "a": "Yes, add multiple photos to create a multi-page PDF."
+      "q": "Kan jag kombinera flera skanningar?",
+      "a": "Ja, lägg till flera foton för att skapa en flersidig PDF."
     },
     {
-      "q": "Does it enhance contrast?",
-      "a": "Yes, document enhancement mode sharpens text for clarity."
+      "q": "Förstärker det kontrasten?",
+      "a": "Ja, dokumentförbättringsläget skärper texten för tydlighetens skull."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, helt gratis."
+      "q": "Är detta gratis?",
+      "a": "Ja, alltid gratis."
     }
-  ]
+  ],
+  "faqTitle": "Vanliga frågor",
+  "supportCenter": "Supportcenter"
 }

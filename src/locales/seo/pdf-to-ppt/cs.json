@@ -1,67 +1,80 @@
 {
-  "title": "PDF to PowerPoint — Recover Editable Slides",
-  "h1": "Convert PDF to PowerPoint Presentation Offline",
-  "description": "Transform PDF documents back into editable .pptx presentations locally. No cloud needed. Perfect for users in Prague.",
+  "title": "PDF do PowerPointu — Obnovte upravitelné snímky",
+  "h1": "Převeďte PDF do prezentace PowerPoint offline",
+  "description": "Transformujte dokumenty PDF zpět na upravitelné prezentace .pptx lokálně. Není potřeba žádný cloud. Ideální pro uživatele v Praze.",
+  "buttonText": "Převést na PPT",
+  "badges": [
+    "Upravitelné snímky",
+    "Obnova prezentace",
+    "Rychlá konverze"
+  ],
+  "stats": [
+    "100 %",
+    "Místní",
+    "0 s",
+    "Doba čekání"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF to PowerPoint Offline?",
-      "content": "Recovering slide content from a PDF for editing should not require uploading sensitive decks to a cloud service."
+      "title": "Proč používat offline?",
+      "content": "Obnovení obsahu snímků z PDF pro úpravy by nemělo vyžadovat nahrávání citlivých balíčků do cloudové služby."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to PowerPoint",
+      "title": "Jak používat",
       "steps": [
         {
-          "title": "Upload PDF",
-          "description": "Select the PDF containing your slide content."
+          "title": "Nahrát PDF",
+          "description": "Vyberte PDF obsahující obsah vašeho snímku."
         },
         {
-          "title": "Map Pages to Slides",
-          "description": "Each PDF page becomes one editable slide."
+          "title": "Mapovat stránky na snímky",
+          "description": "Každá stránka PDF se stane jedním upravitelným snímkem."
         },
         {
-          "title": "Download .pptx",
-          "description": "Get your fully editable PowerPoint presentation."
+          "title": "Stáhnout .pptx",
+          "description": "Získejte plně editovatelnou prezentaci v PowerPointu."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "Slide Recovery in Prague",
-      "content": "Presenters in Prague use our tool to recover and re-edit presentations from old PDF archives."
+      "title": "Obnova diapozitivů v Praze",
+      "content": "Přednášející v Praze používají náš nástroj k obnově a opětovné úpravě prezentací ze starých archivů PDF."
     },
     {
       "type": "split_privacy_security",
-      "title": "Your Slides Are Never Exposed",
-      "content": "Confidential slide decks recovered and converted without any server interaction."
+      "title": "Vaše diapozitivy nejsou nikdy vystaveny",
+      "content": "Důvěrné balíčky snímků byly obnoveny a převedeny bez jakékoli interakce se serverem."
     },
     {
       "type": "split_performance",
-      "title": "Convert Slides at Lightning Speed",
-      "content": "A 60-slide PDF converted to PowerPoint in under 10 seconds with zero upload time."
+      "title": "Převádějte snímky rychlostí blesku",
+      "content": "PDF s 60 snímky převedené do PowerPointu za méně než 10 sekund s nulovou dobou nahrávání."
     }
   ],
   "faqs": [
     {
-      "q": "Are slide layouts preserved?",
-      "a": "Content is mapped to slides; some layout adjustments may be needed."
+      "q": "Jsou rozložení snímků zachována?",
+      "a": "Obsah je mapován na snímky; mohou být nutné některé úpravy rozvržení."
     },
     {
-      "q": "Can I edit the slides after?",
-      "a": "Yes, the .pptx file is fully editable in PowerPoint or Google Slides."
+      "q": "Mohu upravit snímky poté?",
+      "a": "Ano, soubor .pptx je plně upravitelný v PowerPointu nebo v Prezentacích Google."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No, convert as many pages as your RAM allows."
+      "q": "Je nějaký počet stránek?",
+      "a": "Ne, převeďte tolik stránek, kolik vám RAM dovolí."
     },
     {
-      "q": "Does it work with image-heavy PDFs?",
-      "a": "Yes, images are embedded in each slide."
+      "q": "Funguje to s obrázky PDF?",
+      "a": "Ano, obrázky jsou vloženy do každého snímku."
     },
     {
-      "q": "Is this free?",
+      "q": "Je to zdarma?",
       "a": "Ano, zcela zdarma."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky"
 }

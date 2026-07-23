@@ -1,67 +1,85 @@
 {
-  "title": "Add Watermark to PDF — Offline Watermarking",
-  "h1": "Stamp PDFs with Text or Image Watermarks Locally",
-  "description": "Add \"CONFIDENTIAL\", logos, or custom text watermarks to PDFs entirely in your browser. No upload. Best for users in Bucharest.",
+  "title": "Adăugați filigran la PDF — Filigran offline",
+  "h1": "Ștampilați fișierele PDF cu filigrane text sau imagine local",
+  "description": "Adăugați „CONFIDENTIAL”, sigle sau filigrane de text personalizate în PDF-uri în întregime în browser. Fără încărcare. Procesare locală 100% sigură.",
+  "buttonText": "Add Watermark",
+  "badges": [
+    "Text personalizat",
+    "Opacitate reglabilă",
+    "Protecția mărcii"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Watermark PDFs Offline?",
-      "content": "Adding watermarks means your document is sensitive. Never upload draft contracts or confidential reports to a cloud watermarker."
+      "type": "watermark_hero_features",
+      "title": "De ce PDF-uri cu filigran offline?",
+      "content": "Adăugarea de filigrane înseamnă că documentul este sensibil. Nu încărcați niciodată proiecte de contracte sau rapoarte confidențiale pe un marcator de apă în cloud."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Watermark a PDF",
+      "type": "watermark_how_to_steps",
+      "title": "Cum să filigranezi un PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to watermark."
+          "title": "Deschide PDF",
+          "description": "Selectați PDF-ul cu filigran."
         },
         {
           "title": "Design Watermark",
-          "description": "Type text or upload a logo image."
+          "description": "Tastați text sau încărcați o imagine de siglă."
         },
         {
-          "title": "Apply & Download",
-          "description": "Get your watermarked PDF in one click."
+          "title": "Aplicați și descărcați",
+          "description": "Obțineți PDF-ul cu filigran cu un singur clic."
         }
-      ]
+      ],
+      "badgeText": "Ghid rapid"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Document Watermarking in Bucharest",
-      "content": "Legal and creative professionals in Bucharest stamp documents with watermarks without cloud uploads."
+      "type": "watermark_geo_targeting",
+      "title": "Procesare locală 100% sigură",
+      "content": "Toate operațiunile sunt efectuate direct pe dispozitivul local. Folosim tehnologie avansată WebAssembly pentru a vă procesa documentele fără a le încărca vreodată pe servere externe, asigurând confidențialitate completă.",
+      "badgeText": "Prelucrare locală"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Confidential Drafts Stay Private",
-      "content": "Draft contracts and unreleased designs watermarked locally without any server contact."
+      "type": "watermark_privacy_security",
+      "title": "Schițele confidențiale rămân private",
+      "content": "Schițe de contracte și modele nelansate filigranate local, fără niciun contact cu serverul.",
+      "badgeText": "Securitatea în primul rând"
     },
     {
-      "type": "transform_performance",
-      "title": "Stamp Thousands of Pages Instantly",
-      "content": "Apply watermarks to a 1000-page document in under 3 seconds. All in your browser."
+      "type": "watermark_performance",
+      "title": "Ștampilați instantaneu mii de pagini",
+      "content": "Aplicați filigrane pe un document de 1000 de pagini în mai puțin de 3 secunde. Toate în browserul dvs.",
+      "badgeText": "Rapid fulger"
     }
   ],
   "faqs": [
     {
-      "q": "Can I use a logo as a watermark?",
-      "a": "Yes, upload a PNG logo and set transparency."
+      "q": "Pot folosi un logo ca filigran?",
+      "a": "Da, încărcați o siglă PNG și setați transparența."
     },
     {
-      "q": "Can I adjust watermark opacity?",
-      "a": "Yes, from 10% to 100% opacity."
+      "q": "Pot ajusta opacitatea filigranului?",
+      "a": "Da, de la 10% la 100% opacitate."
     },
     {
-      "q": "Can I apply it to specific pages only?",
-      "a": "Yes, choose page ranges."
+      "q": "Îl pot aplica numai la anumite pagini?",
+      "a": "Da, alegeți intervale de pagini."
     },
     {
-      "q": "Is diagonal placement available?",
-      "a": "Yes, rotate watermarks to any angle."
+      "q": "Este disponibilă plasarea în diagonală?",
+      "a": "Da, rotiți filigranele în orice unghi."
     },
     {
-      "q": "Is this free?",
-      "a": "Da, complet gratuit."
+      "q": "Este gratuit?",
+      "a": "Da, întotdeauna gratuit."
     }
-  ]
+  ],
+  "faqTitle": "Întrebări frecvente",
+  "supportCenter": "Centrul de suport"
 }

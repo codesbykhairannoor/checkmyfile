@@ -1,67 +1,78 @@
 {
-  "title": "Merge PDF - Combine Documents Offline",
-  "h1": "Merge PDF Files Instantly in Your Browser",
-  "description": "Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, perfect for users in Kyiv.",
+  "title": "Об’єднати PDF – об’єднати документи в автономному режимі",
+  "h1": "Миттєво об’єднайте PDF-файли у своєму браузері",
+  "description": "Об’єднайте кілька PDF-файлів в один документ за допомогою чистої клієнтської WebAssembly. Без завантаження файлів, ідеально підходить для користувачів у Нью-Йорку.",
   "sections": [
     {
       "type": "merge_hero_features",
-      "title": "Why Merge PDF Offline?",
-      "content": "Instead of uploading sensitive documents to a server, our Merge PDF tool stitches your pages together directly in your browser. Complete privacy."
+      "title": "Навіщо об’єднувати PDF в автономному режимі?",
+      "content": "Замість того, щоб завантажувати конфіденційні документи на сервер, наш інструмент Merge PDF з’єднує ваші сторінки прямо у вашому браузері. Повна приватність."
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Merge PDF Files",
+      "title": "Як об’єднати PDF-файли",
       "steps": [
         {
-          "title": "Add Documents",
-          "description": "Select the PDFs you want to merge together."
+          "title": "Додати документи",
+          "description": "Виберіть PDF-файли, які потрібно об’єднати."
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop files to get the perfect sequence."
+          "title": "Змінити порядок сторінок",
+          "description": "Перетягніть файли, щоб отримати ідеальну послідовність."
         },
         {
-          "title": "Merge & Save",
-          "description": "Click merge and download your combined document instantly."
+          "title": "Об’єднати та зберегти",
+          "description": "Натисніть «Об’єднати» та миттєво завантажте об’єднаний документ."
         }
-      ]
+      ],
+      "badgeText": "Короткий посібник"
     },
     {
       "type": "merge_geo_targeting",
-      "title": "Seamless Merging for users in Kyiv, UA-30",
-      "content": "No matter if you are in Kyiv or traveling, combining documents takes zero milliseconds of upload time."
+      "title": "100% безпечна локальна обробка",
+      "content": "Усі операції виконуються безпосередньо на локальному пристрої. Ми використовуємо передову технологію WebAssembly для обробки ваших документів, не завантажуючи їх на зовнішні сервери, забезпечуючи повну конфіденційність.",
+      "badgeText": "Локальна обробка"
     },
     {
       "type": "merge_privacy_security",
-      "title": "Enterprise-Grade Document Combining",
-      "content": "Merging contracts and invoices? Do it securely with our WASM engine. No traces left behind."
+      "title": "Комбінування документів корпоративного рівня",
+      "content": "Об’єднання контрактів і рахунків? Зробіть це безпечно за допомогою нашої системи WASM. Ніяких слідів позаду.",
+      "badgeText": "Безпека перш за все"
     },
     {
       "type": "merge_performance",
-      "title": "Instant Combination",
-      "content": "Stitching PDFs locally means you can merge a 500-page document faster than you can upload it."
+      "title": "Миттєва комбінація",
+      "content": "З’єднання PDF-файлів локально означає, що ви можете об’єднати 500-сторінковий документ швидше, ніж ви можете його завантажити.",
+      "badgeText": "Блискавичний"
     }
   ],
   "faqs": [
     {
-      "q": "Is merging PDFs completely free?",
-      "a": "Yes! Merge as many files as you want without paying a cent."
+      "q": "Чи об’єднання PDF-файлів абсолютно безкоштовне?",
+      "a": "так! Об’єднайте скільки завгодно файлів, не заплативши жодного цента."
     },
     {
-      "q": "Are my merged files uploaded?",
-      "a": "No, all merging happens offline in your browser."
+      "q": "Чи завантажено мої об’єднані файли?",
+      "a": "Ні, усе об’єднання відбувається офлайн у вашому браузері."
     },
     {
-      "q": "Can I reorder the files before merging?",
-      "a": "Yes, just drag and drop the files in the preview window."
+      "q": "Чи можу я змінити порядок файлів перед об’єднанням?",
+      "a": "Так, просто перетягніть файли у вікно попереднього перегляду."
     },
     {
-      "q": "Is there a limit on how many files I can merge?",
-      "a": "No artificial limits! Merge 10 or 100 files depending on your RAM."
+      "q": "Чи є обмеження щодо кількості файлів, які я можу об’єднати?",
+      "a": "Ніяких штучних обмежень! Об’єднайте 10 або 100 файлів залежно від оперативної пам’яті."
     },
     {
-      "q": "Does merging ruin the formatting?",
-      "a": "Not at all. The original layers and vector data are perfectly stitched together."
+      "q": "Чи псує об’єднання форматування?",
+      "a": "Зовсім ні. Оригінальні шари та векторні дані ідеально зшиваються."
     }
+  ],
+  "faqTitle": "Часті запитання",
+  "supportCenter": "Центр підтримки",
+  "badges": [
+    "Нульова затримка сервера",
+    "Немає пропускної здатності завантаження",
+    "Миттєва обробка"
   ]
 }

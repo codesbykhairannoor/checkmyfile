@@ -1,67 +1,85 @@
 {
-  "title": "Redact PDF — Permanently Remove Sensitive Data",
-  "h1": "Permanently Redact Sensitive Information from PDFs Offline",
-  "description": "Black out sensitive text and images in PDFs entirely in your browser. No cloud risk. Critical for users in New Delhi.",
+  "title": "रिएक्ट पीडीएफ - संवेदनशील डेटा को स्थायी रूप से हटा दें",
+  "h1": "ऑफ़लाइन पीडीएफ़ से संवेदनशील जानकारी को स्थायी रूप से संशोधित करें",
+  "description": "अपने ब्राउज़र में पीडीएफ़ में मौजूद संवेदनशील पाठ और छवियों को पूरी तरह से ब्लैक आउट कर दें। बादल का कोई ख़तरा नहीं. 100% सुरक्षित स्थानीय प्रसंस्करण।",
+  "buttonText": "Redact Text",
+  "badges": [
+    "स्थायी मिटाएँ",
+    "ब्लैकआउट जानकारी",
+    "सुरक्षित रिडक्शन"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "redact_hero_features",
-      "title": "Why Redact PDFs Locally?",
-      "content": "Redacting means the content is classified. Uploading a document you need to hide defeats the whole purpose. Our tool runs 100% offline."
+      "title": "पीडीएफ़ को स्थानीय रूप से क्यों संपादित करें?",
+      "content": "रिडक्टिंग का मतलब है कि सामग्री को वर्गीकृत किया गया है। जिस दस्तावेज़ को आपको छिपाने की आवश्यकता है उसे अपलोड करने से पूरा उद्देश्य विफल हो जाता है। हमारा टूल 100% ऑफ़लाइन चलता है।"
     },
     {
       "type": "redact_how_to_steps",
-      "title": "How to Permanently Redact a PDF",
+      "title": "पीडीएफ को स्थायी रूप से कैसे संपादित करें",
       "steps": [
         {
-          "title": "Open Sensitive Document",
-          "description": "Load the PDF with data that must be hidden."
+          "title": "संवेदनशील दस्तावेज़ खोलें",
+          "description": "पीडीएफ को उस डेटा के साथ लोड करें जिसे छिपाया जाना चाहिए।"
         },
         {
-          "title": "Mark Redaction Areas",
-          "description": "Draw boxes over content to permanently erase."
+          "title": "सुधार क्षेत्रों को चिह्नित करें",
+          "description": "स्थायी रूप से मिटाने के लिए सामग्री पर बॉक्स बनाएं।"
         },
         {
-          "title": "Apply & Download",
-          "description": "Content is permanently deleted from the PDF structure."
+          "title": "आवेदन करें और डाउनलोड करें",
+          "description": "सामग्री पीडीएफ संरचना से स्थायी रूप से हटा दी गई है।"
         }
-      ]
+      ],
+      "badgeText": "त्वरित मार्गदर्शिका"
     },
     {
       "type": "redact_geo_targeting",
-      "title": "Court-Ready Redaction for New Delhi Law Firms",
-      "content": "Legal professionals in New Delhi prepare court documents with permanent, offline redaction that removes data from the PDF structure itself."
+      "title": "100% सुरक्षित स्थानीय प्रसंस्करण",
+      "content": "सभी ऑपरेशन सीधे आपके स्थानीय डिवाइस पर किए जाते हैं। हम पूर्ण गोपनीयता सुनिश्चित करते हुए, आपके दस्तावेज़ों को बाहरी सर्वर पर अपलोड किए बिना संसाधित करने के लिए उन्नत WebAssembly तकनीक का उपयोग करते हैं।",
+      "badgeText": "स्थानीय प्रसंस्करण"
     },
     {
       "type": "redact_privacy_security",
-      "title": "True Permanent Redaction — Not Just Black Boxes",
-      "content": "Unlike tools that merely cover text with black boxes, our redaction permanently deletes the underlying data from the PDF object structure."
+      "title": "ट्रू परमानेंट रिडक्शन - सिर्फ ब्लैक बॉक्स नहीं",
+      "content": "उन उपकरणों के विपरीत, जो केवल ब्लैक बॉक्स के साथ टेक्स्ट को कवर करते हैं, हमारा रिडक्शन पीडीएफ ऑब्जेक्ट संरचना से अंतर्निहित डेटा को स्थायी रूप से हटा देता है।",
+      "badgeText": "सुरक्षा पहले"
     },
     {
       "type": "redact_performance",
-      "title": "Redact Entire Documents Instantly",
-      "content": "Apply hundreds of permanent redactions to large documents in seconds, completely offline."
+      "title": "संपूर्ण दस्तावेज़ों को तुरंत संशोधित करें",
+      "content": "बड़े दस्तावेज़ों में सैकड़ों स्थायी संशोधन सेकंडों में लागू करें, पूरी तरह से ऑफ़लाइन।",
+      "badgeText": "बिजली की तेजी"
     }
   ],
   "faqs": [
     {
-      "q": "Is the redaction truly permanent?",
-      "a": "Yes, the underlying text and image data is permanently deleted from the PDF structure."
+      "q": "क्या पुनर्निमाण वास्तव में स्थायी है?",
+      "a": "हां, अंतर्निहित पाठ और छवि डेटा पीडीएफ संरचना से स्थायी रूप से हटा दिया गया है।"
     },
     {
-      "q": "Can I redact images too?",
-      "a": "Yes, both text regions and image areas can be permanently redacted."
+      "q": "क्या मैं छवियों को भी संपादित कर सकता हूँ?",
+      "a": "हां, पाठ क्षेत्र और छवि क्षेत्र दोनों को स्थायी रूप से संशोधित किया जा सकता है।"
     },
     {
-      "q": "Can I choose black or white cover?",
-      "a": "Yes, pick the redaction style that suits your document."
+      "q": "क्या मैं काला या सफ़ेद कवर चुन सकता हूँ?",
+      "a": "हां, वह संपादन शैली चुनें जो आपके दस्तावेज़ के अनुकूल हो।"
     },
     {
-      "q": "Does this meet legal standards?",
-      "a": "Our redaction removes data at the PDF object level, meeting court requirements."
+      "q": "क्या यह कानूनी मानकों को पूरा करता है?",
+      "a": "हमारा रिडक्शन अदालत की आवश्यकताओं को पूरा करते हुए, पीडीएफ ऑब्जेक्ट स्तर पर डेटा हटा देता है।"
     },
     {
-      "q": "Is this free?",
-      "a": "हाँ, पूरी तरह मुफ्त।"
+      "q": "क्या यह मुफ़्त है?",
+      "a": "हाँ, हमेशा मुफ़्त."
     }
-  ]
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न",
+  "supportCenter": "सहायता केंद्र"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Password Protect PDF — Secure Files Offline",
-  "h1": "Add Password Protection to PDF Files Instantly",
-  "description": "Encrypt PDF files with AES-256 directly in your browser. Your document never leaves your device. Ideal for users in Stockholm.",
+  "title": "Lösenordsskyddad PDF — Säkra filer offline",
+  "h1": "Lägg till lösenordsskydd till PDF-filer direkt",
+  "description": "Kryptera PDF-filer med AES-256 direkt i din webbläsare. Ditt dokument lämnar aldrig din enhet. 100 % säker lokal bearbetning.",
+  "buttonText": "Protect PDF",
+  "badges": [
+    "AES-256-kryptering",
+    "Säkert lösenord",
+    "Endast på klientsidan"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "protect_hero_features",
-      "title": "Why Protect PDFs Locally?",
-      "content": "Adding a password means the file is sensitive. Never upload sensitive files to a cloud encryptor. Ours runs entirely offline with AES-256 encryption."
+      "title": "Varför skydda PDF-filer lokalt?",
+      "content": "Att lägga till ett lösenord betyder att filen är känslig. Ladda aldrig upp känsliga filer till en molnkryptering. Vår körs helt offline med AES-256-kryptering."
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Password Protect a PDF",
+      "title": "Hur man lösenordsskyddar en PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF you want to lock."
+          "title": "Öppna PDF",
+          "description": "Välj den PDF du vill låsa."
         },
         {
-          "title": "Set Password",
-          "description": "Choose a strong password for encryption."
+          "title": "Ange lösenord",
+          "description": "Välj ett starkt lösenord för kryptering."
         },
         {
-          "title": "Download Protected PDF",
-          "description": "Get your AES-256 encrypted PDF immediately."
+          "title": "Ladda ner skyddad PDF",
+          "description": "Få din AES-256 krypterade PDF direkt."
         }
-      ]
+      ],
+      "badgeText": "Snabbguide"
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Vault-Level PDF Protection for Stockholm",
-      "content": "Legal and finance professionals in Stockholm encrypt documents with AES-256 strength without exposing files to any server."
+      "title": "100 % säker lokal bearbetning",
+      "content": "Alla operationer utförs direkt på din lokala enhet. Vi använder avancerad WebAssembly-teknik för att behandla dina dokument utan att någonsin ladda upp dem till externa servrar, vilket säkerställer fullständig integritet.",
+      "badgeText": "Lokal bearbetning"
     },
     {
       "type": "protect_privacy_security",
       "title": "AES-256 Encryption — Bank-Grade, Offline",
-      "content": "Military-grade AES-256 encryption runs in your browser. No key is ever transmitted to any server."
+      "content": "AES-256-kryptering av militär kvalitet körs i din webbläsare. Ingen nyckel överförs någonsin till någon server.",
+      "badgeText": "Säkerhet först"
     },
     {
       "type": "protect_performance",
-      "title": "Encrypt Any PDF in Under 1 Second",
-      "content": "AES-256 processing locally takes milliseconds — no upload, no queue, no wait."
+      "title": "Kryptera alla PDF-filer på under 1 sekund",
+      "content": "Bearbetning av AES-256 lokalt tar millisekunder — ingen uppladdning, ingen kö, ingen väntan.",
+      "badgeText": "Blixtsnabb"
     }
   ],
   "faqs": [
     {
-      "q": "What encryption standard is used?",
-      "a": "AES-256, the same standard used by banks and governments."
+      "q": "Vilken krypteringsstandard används?",
+      "a": "AES-256, samma standard som används av banker och regeringar."
     },
     {
-      "q": "Can I set different owner and user passwords?",
-      "a": "Yes, you can set both separately."
+      "q": "Kan jag ställa in olika ägar- och användarlösenord?",
+      "a": "Ja, du kan ställa in båda separat."
     },
     {
-      "q": "Is the original file modified?",
-      "a": "No, a new encrypted copy is created."
+      "q": "Är originalfilen modifierad?",
+      "a": "Nej, en ny krypterad kopia skapas."
     },
     {
-      "q": "Can I restrict printing or editing?",
-      "a": "Yes, permission restrictions can be set alongside the password."
+      "q": "Kan jag begränsa utskrift eller redigering?",
+      "a": "Ja, behörighetsbegränsningar kan ställas in tillsammans med lösenordet."
     },
     {
-      "q": "Is this free?",
+      "q": "Är detta gratis?",
       "a": "Ja, helt gratis."
     }
-  ]
+  ],
+  "faqTitle": "Vanliga frågor",
+  "supportCenter": "Supportcenter"
 }

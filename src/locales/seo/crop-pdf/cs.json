@@ -1,67 +1,85 @@
 {
-  "title": "Crop PDF Margins — Trim Pages Offline",
-  "h1": "Crop and Trim PDF Page Margins Instantly",
-  "description": "Remove unwanted whitespace or crop PDF pages to custom dimensions, all locally. No upload. Ideal for users in Prague.",
+  "title": "Oříznout okraje PDF — oříznout stránky offline",
+  "h1": "Okamžitě oříznout a oříznout okraje stránky PDF",
+  "description": "Odstraňte nežádoucí mezery nebo ořízněte stránky PDF na vlastní rozměry, to vše lokálně. Rychlé a zcela bezpečné.",
+  "buttonText": "Crop PDF",
+  "badges": [
+    "Vizuální editor okrajů",
+    "Jednotné oříznutí",
+    "Nulová latence"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Crop PDFs Locally?",
-      "content": "Scanned documents often have large margins. Crop them locally without exposing internal document structure to the cloud."
+      "type": "crop_hero_features",
+      "title": "Proč oříznout PDF lokálně?",
+      "content": "Naskenované dokumenty mají často velké okraje. Ořízněte je lokálně, aniž byste vystavili vnitřní strukturu dokumentu cloudu."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Crop PDF Pages",
+      "type": "crop_how_to_steps",
+      "title": "Jak oříznout stránky PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to crop."
+          "title": "Otevřít PDF",
+          "description": "Načtěte PDF, které chcete oříznout."
         },
         {
-          "title": "Set Margins",
-          "description": "Drag guides or enter exact margin values."
+          "title": "Nastavit okraje",
+          "description": "Přetáhněte vodítka nebo zadejte přesné hodnoty okrajů."
         },
         {
-          "title": "Export Cropped PDF",
-          "description": "Download the trimmed PDF instantly."
+          "title": "Exportovat oříznuté PDF",
+          "description": "Stáhněte si oříznuté PDF okamžitě."
         }
-      ]
+      ],
+      "badgeText": "Rychlý průvodce"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Precise Cropping for Prague Users",
-      "content": "Architects and designers in Prague use our crop tool to clean up scanned blueprints without cloud uploads."
+      "type": "crop_geo_targeting",
+      "title": "100% bezpečné místní zpracování",
+      "content": "Všechny operace se provádějí přímo na vašem místním zařízení. Ke zpracování vašich dokumentů používáme pokročilou technologii WebAssembly, aniž bychom je kdy nahrávali na externí servery, což zajišťuje naprosté soukromí.",
+      "badgeText": "Místní zpracování"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Technical Documents Stay Local",
-      "content": "Architectural plans and legal PDFs cropped locally without any server round-trip."
+      "type": "crop_privacy_security",
+      "title": "Technické dokumenty Zůstaňte na místě",
+      "content": "Architektonické plány a právní soubory PDF se oříznou lokálně bez jakékoli zpáteční cesty na serveru.",
+      "badgeText": "Bezpečnost především"
     },
     {
-      "type": "split_performance",
-      "title": "Crop Any Size PDF Instantly",
-      "content": "Crop margins from a 200-page document in under 2 seconds. All in your browser."
+      "type": "crop_performance",
+      "title": "Okamžitě oříznout PDF libovolné velikosti",
+      "content": "Ořízněte okraje z 200stránkového dokumentu za méně než 2 sekundy. Vše ve vašem prohlížeči.",
+      "badgeText": "Bleskově rychlý"
     }
   ],
   "faqs": [
     {
-      "q": "Can I crop all pages uniformly?",
-      "a": "Yes, apply the same crop to every page at once."
+      "q": "Mohu oříznout všechny stránky jednotně?",
+      "a": "Ano, použít stejné oříznutí na každou stránku najednou."
     },
     {
-      "q": "Can I crop individual pages?",
-      "a": "Yes, you can set per-page crop values."
+      "q": "Mohu oříznout jednotlivé stránky?",
+      "a": "Ano, můžete nastavit hodnoty oříznutí na stránku."
     },
     {
-      "q": "What are the minimum margin values?",
-      "a": "You can crop all the way to 0 margin on any side."
+      "q": "Jaké jsou minimální hodnoty marže?",
+      "a": "Na libovolné straně můžete oříznout až na 0 okraj."
     },
     {
-      "q": "Will content be cut off?",
-      "a": "Only whitespace is removed by default; you control the guides."
+      "q": "Bude obsah odříznut?",
+      "a": "Ve výchozím nastavení jsou odstraněny pouze prázdné znaky; ovládáte průvodce."
     },
     {
-      "q": "Is this free?",
+      "q": "Je to zdarma?",
       "a": "Ano, zcela zdarma."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
 }

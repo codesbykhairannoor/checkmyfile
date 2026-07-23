@@ -1,67 +1,85 @@
 {
-  "title": "OCR PDF — Make Scans Searchable Offline",
-  "h1": "Extract and Recognize Text from Scanned PDFs",
-  "description": "Run OCR on scanned PDFs to make them searchable and copyable, entirely in your browser using Tesseract. No upload. Great for users in Madrid.",
+  "title": "OCR PDF: hacer que los escaneos se puedan buscar sin conexión",
+  "h1": "Extraer y reconocer texto de archivos PDF escaneados",
+  "description": "Ejecute OCR en archivos PDF escaneados para que se puedan buscar y copiar, completamente en su navegador usando Tesseract. Sin carga. Procesamiento local 100% seguro.",
+  "buttonText": "Run OCR",
+  "badges": [
+    "Extraer texto",
+    "PDF con capacidad de búsqueda",
+    "Reconocimiento de IA"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Run OCR Locally?",
-      "content": "Scanned PDFs contain sensitive text. Running OCR on a cloud service exposes that text to a third party. Ours runs 100% offline."
+      "type": "ocr_hero_features",
+      "title": "¿Por qué ejecutar OCR localmente?",
+      "content": "Los PDF escaneados contienen texto confidencial. La ejecución de OCR en un servicio en la nube expone ese texto a un tercero. El nuestro funciona 100% sin conexión."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to OCR a PDF",
+      "type": "ocr_how_to_steps",
+      "title": "Cómo realizar OCR en un PDF",
       "steps": [
         {
-          "title": "Load Scanned PDF",
-          "description": "Select the image-based or scanned PDF."
+          "title": "Cargar PDF escaneado",
+          "description": "Seleccione el PDF escaneado o basado en imágenes."
         },
         {
-          "title": "Select Language",
-          "description": "Choose the document language for better accuracy."
+          "title": "Seleccionar idioma",
+          "description": "Elija el idioma del documento para una mayor precisión."
         },
         {
-          "title": "Download Searchable PDF",
-          "description": "Get a text-layer PDF ready to search and copy."
+          "title": "Descargar PDF con capacidad de búsqueda",
+          "description": "Obtenga un PDF con capa de texto listo para buscar y copiar."
         }
-      ]
+      ],
+      "badgeText": "Guía rápida"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "OCR Tool for Madrid Archives",
-      "content": "Government agencies and businesses in Madrid digitize paper archives using our offline OCR tool."
+      "type": "ocr_geo_targeting",
+      "title": "Procesamiento local 100% seguro",
+      "content": "Todas las operaciones se realizan directamente en su dispositivo local. Utilizamos tecnología avanzada de WebAssembly para procesar sus documentos sin tener que cargarlos en servidores externos, lo que garantiza una privacidad total.",
+      "badgeText": "Procesamiento local"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Content Never Exposed",
-      "content": "OCR processing using Tesseract WASM runs entirely in browser memory — no API calls, no data transmission."
+      "type": "ocr_privacy_security",
+      "title": "Contenido escaneado nunca expuesto",
+      "content": "El procesamiento de OCR con Tesseract WASM se ejecuta completamente en la memoria del navegador: sin llamadas API ni transmisión de datos.",
+      "badgeText": "La seguridad es lo primero"
     },
     {
-      "type": "organizer_performance",
-      "title": "OCR Any Document Locally",
-      "content": "Process a 20-page scanned PDF in under 30 seconds. All Tesseract processing happens in-browser."
+      "type": "ocr_performance",
+      "title": "OCR cualquier documento localmente",
+      "content": "Procese un PDF escaneado de 20 páginas en menos de 30 segundos. Todo el procesamiento de Tesseract se realiza en el navegador.",
+      "badgeText": "A la velocidad del rayo"
     }
   ],
   "faqs": [
     {
-      "q": "What languages does OCR support?",
-      "a": "Over 100 languages via Tesseract engine."
+      "q": "¿Qué idiomas admite OCR?",
+      "a": "Más de 100 idiomas a través del motor Tesseract."
     },
     {
-      "q": "How accurate is the OCR?",
-      "a": "Accuracy depends on scan quality; clear, high-contrast scans yield 95%+ accuracy."
+      "q": "¿Qué tan preciso es el OCR?",
+      "a": "La precisión depende de la calidad del escaneo; Los escaneos claros y de alto contraste ofrecen una precisión superior al 95 %."
     },
     {
-      "q": "Does it create a searchable PDF?",
-      "a": "Yes, a text layer is added making the PDF fully searchable."
+      "q": "¿Crea un PDF con capacidad de búsqueda?",
+      "a": "Sí, se agrega una capa de texto que hace que el PDF sea totalmente apto para búsquedas."
     },
     {
-      "q": "Can I copy text from the result?",
-      "a": "Yes, the output PDF has selectable, copyable text."
+      "q": "¿Puedo copiar texto del resultado?",
+      "a": "Sí, el PDF de salida tiene texto seleccionable y copiable."
     },
     {
-      "q": "Is this free?",
-      "a": "Sí, completamente gratis."
+      "q": "¿Es esto gratis?",
+      "a": "Sí, siempre gratis."
     }
-  ]
+  ],
+  "faqTitle": "Preguntas frecuentes",
+  "supportCenter": "Centro de soporte"
 }

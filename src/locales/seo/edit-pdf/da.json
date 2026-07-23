@@ -1,0 +1,85 @@
+{
+  "title": "Rediger PDF - Gratis offline PDF Editor",
+  "h1": "Rediger PDF-dokumenter direkte i din browser",
+  "description": "Tilføj tekst, signaturer og anmærkninger til dine PDF-filer lokalt. Ingen uploads, maksimalt privatliv. 100 % sikker lokal behandling.",
+  "sections": [
+    {
+      "type": "edit_hero_features",
+      "title": "Hvorfor redigere PDF'er lokalt?",
+      "content": "At uploade følsomme kontrakter og formularer til en cloud-editor er en massiv privatlivsrisiko. Vores WebAssembly-editor kører direkte på din enhed og sikrer, at dine dokumenter aldrig forlader din computer."
+    },
+    {
+      "type": "edit_how_to_steps",
+      "title": "Sådan redigeres en PDF",
+      "steps": [
+        {
+          "title": "Åbn dokument",
+          "description": "Vælg den PDF-fil, du vil kommentere eller underskrive."
+        },
+        {
+          "title": "Tilføj tekst og elementer",
+          "description": "Brug vores intuitive værktøjer til at tilføje tekst, tegne eller placere billeder."
+        },
+        {
+          "title": "Gem ændringer",
+          "description": "Eksporter den ændrede PDF øjeblikkeligt uden at vente på downloads."
+        }
+      ],
+      "badgeText": "Hurtig guide"
+    },
+    {
+      "type": "edit_geo_targeting",
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle handlinger udføres direkte på din lokale enhed. Vi bruger avanceret WebAssembly-teknologi til at behandle dine dokumenter uden nogensinde at uploade dem til eksterne servere, hvilket sikrer fuldstændigt privatliv.",
+      "badgeText": "Lokal behandling"
+    },
+    {
+      "type": "edit_privacy_security",
+      "title": "Nul datatransmission",
+      "content": "I modsætning til traditionelle PDF-editorer, der uploader dine filer til deres servere, behandler vores platform alt i din browserhukommelse.",
+      "badgeText": "Sikkerhed først"
+    },
+    {
+      "type": "edit_performance",
+      "title": "Øjeblikkelig offlinegengivelse",
+      "content": "Vores editor indlæser enorme PDF-filer på millisekunder. Du kan tilføje hundredvis af annoteringer uden forsinkelse eller netværksforsinkelse.",
+      "badgeText": "Lynhurtigt"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Kan jeg redigere eksisterende tekst i PDF'en?",
+      "a": "I øjeblikket kan du tilføje ny tekst, figurer og billeder over det eksisterende dokument."
+    },
+    {
+      "q": "Er mine filer uploadet nogen steder?",
+      "a": "Nej, al redigering sker lokalt i din browser ved hjælp af WebAssembly."
+    },
+    {
+      "q": "Kan jeg underskrive dokumenter?",
+      "a": "Ja, du kan tegne din signatur eller uploade et billede af den."
+    },
+    {
+      "q": "Er editoren gratis at bruge?",
+      "a": "Ja, det er 100 % gratis uden premium betalingsmure eller skjulte gebyrer."
+    },
+    {
+      "q": "Virker det på mobile enheder?",
+      "a": "Ja, editoren reagerer fuldt ud og understøtter berøringsinput til tegning."
+    }
+  ],
+  "badges": [
+    "Ingen vandmærker",
+    "100 % gratis",
+    "Offline redaktør"
+  ],
+  "stats": [
+    "100% Private",
+    "0 Server Uploads",
+    "Client-Side Only",
+    "No Accounts"
+  ],
+  "buttonText": "Start Editing",
+  "faqTitle": "Ofte stillede spørgsmål",
+  "supportCenter": "Supportcenter"
+}

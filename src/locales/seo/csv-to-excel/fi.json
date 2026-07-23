@@ -1,67 +1,85 @@
 {
   "title": "CSV to Excel Converter — Offline & Instant",
-  "h1": "Convert CSV Files to Excel Spreadsheets Locally",
-  "description": "Transform .csv files into structured .xlsx spreadsheets entirely in your browser. No upload. Perfect for data teams in Helsinki.",
+  "h1": "Muunna CSV-tiedostot Excel-laskentataulukoiksi paikallisesti",
+  "description": "Muunna .csv-tiedostot strukturoiduiksi .xlsx-laskentataulukoiksi kokonaan selaimessasi. Ei latausta. 100 % turvallinen paikallinen käsittely.",
+  "buttonText": "Convert CSV",
+  "badges": [
+    "UTF-8-tuki",
+    "Monisarainen",
+    "Välitön muunnos"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Convert CSV Offline?",
-      "content": "CSV files often contain customer or financial data. Convert them to Excel locally without exposing your datasets to any cloud service."
+      "type": "csv_excel_hero_features",
+      "title": "Miksi muuntaa CSV offline-tilassa?",
+      "content": "CSV-tiedostot sisältävät usein asiakas- tai taloustietoja. Muunna ne Exceliksi paikallisesti paljastamatta tietojoukkojasi millekään pilvipalvelulle."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert CSV to Excel",
+      "type": "csv_excel_how_to_steps",
+      "title": "Kuinka muuntaa CSV-tiedosto Exceliksi",
       "steps": [
         {
-          "title": "Open CSV File",
-          "description": "Select the CSV file to convert."
+          "title": "Avaa CSV-tiedosto",
+          "description": "Valitse muunnettava CSV-tiedosto."
         },
         {
-          "title": "Preview Data",
-          "description": "See the parsed columns and rows before export."
+          "title": "Esikatselutiedot",
+          "description": "Katso jäsennetyt sarakkeet ja rivit ennen vientiä."
         },
         {
-          "title": "Download .xlsx",
-          "description": "Get your Excel spreadsheet instantly."
+          "title": "Lataa .xlsx",
+          "description": "Hanki Excel-laskentataulukkosi välittömästi."
         }
-      ]
+      ],
+      "badgeText": "Pikaopas"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Data Tools for Helsinki Analysts",
-      "content": "Data analysts in Helsinki convert CSV exports to Excel without uploading sensitive datasets."
+      "type": "csv_excel_geo_targeting",
+      "title": "100 % suojattu paikallinen käsittely",
+      "content": "Kaikki toiminnot suoritetaan suoraan paikallisella laitteellasi. Käytämme edistynyttä WebAssembly-tekniikkaa asiakirjojen käsittelyyn lataamatta niitä koskaan ulkoisille palvelimille, mikä takaa täydellisen yksityisyyden.",
+      "badgeText": "Paikallinen käsittely"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Customer Data Stays on Your Machine",
-      "content": "CRM exports, transaction logs, and survey data converted locally with zero cloud involvement."
+      "type": "csv_excel_privacy_security",
+      "title": "Asiakastiedot pysyvät laitteellasi",
+      "content": "CRM-vientit, tapahtumalokit ja kyselytiedot muunnetaan paikallisesti ilman pilvipalvelua.",
+      "badgeText": "Turvallisuus ensin"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Large CSV Files Instantly",
-      "content": "Convert a 100,000-row CSV to Excel in seconds. All browser-native processing."
+      "type": "csv_excel_performance",
+      "title": "Muunna suuret CSV-tiedostot välittömästi",
+      "content": "Muunna 100 000 rivin CSV-tiedosto Exceliksi sekunneissa. Kaikki selaimen alkuperäinen käsittely.",
+      "badgeText": "Salamannopeasti"
     }
   ],
   "faqs": [
     {
-      "q": "Is the column structure preserved?",
-      "a": "Yes, all columns are mapped to Excel columns."
+      "q": "Onko sarakkeen rakenne säilynyt?",
+      "a": "Kyllä, kaikki sarakkeet on yhdistetty Excel-sarakkeisiin."
     },
     {
-      "q": "Can I convert multiple CSVs?",
-      "a": "Yes, batch conversion to multiple sheets is supported."
+      "q": "Voinko muuntaa useita CSV-tiedostoja?",
+      "a": "Kyllä, erämuunnos useiksi arkeiksi on tuettu."
     },
     {
-      "q": "Are special characters handled?",
-      "a": "Yes, UTF-8 and various encodings are supported."
+      "q": "Käsitelläänkö erikoismerkkejä?",
+      "a": "Kyllä, UTF-8 ja erilaisia ​​koodauksia tuetaan."
     },
     {
-      "q": "Can I set delimiters?",
-      "a": "Yes, comma, semicolon, and tab delimiters are supported."
+      "q": "Voinko asettaa erottimet?",
+      "a": "Kyllä, pilkku-, puolipiste- ja sarkainerottimet ovat tuettuja."
     },
     {
-      "q": "Is this free?",
-      "a": "Kyllä, täysin ilmainen."
+      "q": "Onko tämä ilmainen?",
+      "a": "Kyllä, aina ilmainen."
     }
-  ]
+  ],
+  "faqTitle": "Usein kysytyt kysymykset",
+  "supportCenter": "Tukikeskus"
 }

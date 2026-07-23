@@ -1,67 +1,85 @@
 {
-  "title": "Excel to PDF — Convert Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to PDF Securely",
-  "description": "Turn .xlsx and .csv files into crisp PDFs locally in your browser. Financial data stays on your device. Perfect for users in Bratislava.",
+  "title": "Excel do PDF — Prevod tabuliek offline",
+  "h1": "Bezpečne previesť tabuľky Excelu do PDF",
+  "description": "Premeňte súbory .xlsx a .csv na ostré súbory PDF lokálne vo svojom prehliadači. Finančné údaje zostanú vo vašom zariadení. 100% bezpečné lokálne spracovanie.",
+  "buttonText": "Convert Spreadsheet",
+  "badges": [
+    "Finančné správy",
+    "Faktúry",
+    "Export údajov"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Excel Offline?",
-      "content": "Spreadsheets often contain sensitive financial data. Our browser-based engine converts without any server involvement."
+      "type": "excel_hero_features",
+      "title": "Prečo konvertovať Excel offline?",
+      "content": "Tabuľky často obsahujú citlivé finančné údaje. Náš nástroj založený na prehliadači konvertuje bez akéhokoľvek zapojenia servera."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Export Excel as PDF",
+      "type": "excel_how_to_steps",
+      "title": "Ako exportovať Excel ako PDF",
       "steps": [
         {
-          "title": "Open Spreadsheet",
-          "description": "Select your .xlsx or .csv file."
+          "title": "Otvoriť tabuľku",
+          "description": "Vyberte svoj súbor .xlsx alebo .csv."
         },
         {
-          "title": "Choose Sheet Range",
-          "description": "Pick which sheets or rows to include."
+          "title": "Vyberte rozsah hárkov",
+          "description": "Vyberte, ktoré hárky alebo riadky chcete zahrnúť."
         },
         {
-          "title": "Export as PDF",
-          "description": "Download your spreadsheet as a clean PDF."
+          "title": "Exportovať ako PDF",
+          "description": "Stiahnite si tabuľku ako čistý súbor PDF."
         }
-      ]
+      ],
+      "badgeText": "Rýchly sprievodca"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Excel to PDF for Bratislava Businesses",
-      "content": "Businesses in Bratislava use our tool to share financial reports without exposing raw spreadsheet data."
+      "type": "excel_geo_targeting",
+      "title": "100% bezpečné miestne spracovanie",
+      "content": "Všetky operácie sa vykonávajú priamo na vašom lokálnom zariadení. Používame pokročilú technológiu WebAssembly na spracovanie vašich dokumentov bez ich nahrávania na externé servery, čím zaisťujeme úplné súkromie.",
+      "badgeText": "Miestne spracovanie"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Protect Financial Spreadsheets",
-      "content": "Balance sheets, payroll data — all processed offline. Zero data sent to any third party."
+      "type": "excel_privacy_security",
+      "title": "Chráňte finančné tabuľky",
+      "content": "Súvahy, mzdové údaje – všetko spracované offline. Žiadne údaje odoslané akejkoľvek tretej strane.",
+      "badgeText": "Bezpečnosť na prvom mieste"
     },
     {
-      "type": "combiner_performance",
-      "title": "Spreadsheet-to-PDF in Seconds",
-      "content": "No upload queue, no compression artifacts. Your spreadsheet renders natively in-browser."
+      "type": "excel_performance",
+      "title": "Tabuľkový prevod do PDF za pár sekúnd",
+      "content": "Žiadne nahrávacie fronty, žiadne kompresné artefakty. Vaša tabuľka sa natívne vykresľuje v prehliadači.",
+      "badgeText": "Rýchlosť blesku"
     }
   ],
   "faqs": [
     {
-      "q": "Are all Excel formulas preserved?",
-      "a": "Yes, formula results are captured in the PDF snapshot."
+      "q": "Sú všetky vzorce Excelu zachované?",
+      "a": "Áno, výsledky vzorca sú zachytené v snímke PDF."
     },
     {
-      "q": "Can I convert multiple sheets?",
-      "a": "Yes, you can include all sheets or specific ones."
+      "q": "Môžem previesť viacero listov?",
+      "a": "Áno, môžete zahrnúť všetky hárky alebo konkrétne."
     },
     {
-      "q": "What file types are supported?",
-      "a": ".xlsx, .xls, and .csv are all supported."
+      "q": "Aké typy súborov sú podporované?",
+      "a": "Podporované sú všetky súbory .xlsx, .xls a .csv."
     },
     {
-      "q": "Is this secure for financial data?",
-      "a": "Absolutely. The file never leaves your browser."
+      "q": "Je to bezpečné pre finančné údaje?",
+      "a": "Absolútne. Súbor nikdy neopustí váš prehliadač."
     },
     {
-      "q": "Does it support graphs?",
-      "a": "Áno, úplne zadarmo."
+      "q": "Podporuje grafy?",
+      "a": "Grafy a vložené grafy sa vykresľujú v PDF."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Compress PDF Online - Reduce File Size",
-  "h1": "Compress PDF Documents without Losing Quality",
-  "description": "Shrink large PDF files up to 90% using adaptive lossless techniques directly in WebAssembly. Perfect for users in Istanbul.",
+  "title": "PDF'yi Çevrimiçi Sıkıştır - Dosya Boyutunu Küçült",
+  "h1": "PDF Belgelerini Kaliteyi Kaybetmeden Sıkıştırın",
+  "description": "Doğrudan WebAssembly'de uyarlanabilir kayıpsız teknikleri kullanarak büyük PDF dosyalarını %90'a kadar küçültün. %100 güvenli yerel işleme.",
   "sections": [
     {
-      "type": "comp_hero_features",
-      "title": "Why Compress PDF Offline?",
-      "content": "Large PDFs are a pain to email. Our compressor reduces file size drastically without blurring images, all from your browser."
+      "type": "compress_hero_features",
+      "title": "PDF'yi Neden Çevrimdışı Sıkıştırmalısınız?",
+      "content": "Büyük PDF'lerin e-posta ile gönderilmesi zahmetlidir. Sıkıştırıcımız, tarayıcınızdan görüntüleri bulanıklaştırmadan dosya boyutunu önemli ölçüde azaltır."
     },
     {
-      "type": "comp_how_to_steps",
-      "title": "How to Shrink PDF Files",
+      "type": "compress_how_to_steps",
+      "title": "PDF Dosyaları Nasıl Küçültülür",
       "steps": [
         {
-          "title": "Upload Large File",
-          "description": "Select the hefty PDF you want to shrink."
+          "title": "Büyük Dosya Yükle",
+          "description": "Küçültmek istediğiniz büyük PDF'yi seçin."
         },
         {
-          "title": "Select Quality",
-          "description": "Choose between high quality or maximum compression."
+          "title": "Kaliteyi Seçin",
+          "description": "Yüksek kalite veya maksimum sıkıştırma arasında seçim yapın."
         },
         {
-          "title": "Download Tiny PDF",
-          "description": "Get your compressed file instantly, ready to share."
+          "title": "Minik PDF'yi İndirin",
+          "description": "Sıkıştırılmış dosyanızı anında, paylaşıma hazır hale getirin."
         }
-      ]
+      ],
+      "badgeText": "Hızlı Kılavuz"
     },
     {
-      "type": "comp_geo_targeting",
-      "title": "Optimized PDF Shrinking in Istanbul, TR-34",
-      "content": "Working on a slow connection in Istanbul? Compress your files locally so you can email them faster."
+      "type": "compress_geo_targeting",
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
     },
     {
-      "type": "comp_privacy_security",
-      "title": "Secure Local Compression",
-      "content": "Compressing sensitive financial reports? Our algorithm works completely offline, keeping your data safe."
+      "type": "compress_privacy_security",
+      "title": "Güvenli Yerel Sıkıştırma",
+      "content": "Hassas mali raporları mı sıkıştırıyorsunuz? Algoritmamız tamamen çevrimdışı çalışarak verilerinizi güvende tutar.",
+      "badgeText": "Önce Güvenlik"
     },
     {
-      "type": "comp_performance",
-      "title": "Lightning Fast Shrink",
-      "content": "Compressing a 50MB file locally saves you the time of uploading 50MB and downloading 5MB back."
+      "type": "compress_performance",
+      "title": "Yıldırım Hızında Küçültme",
+      "content": "50 MB'lık bir dosyayı yerel olarak sıkıştırmak, 50 MB'ı yükleme ve 5 MB'ı geri indirme zamanından tasarruf etmenizi sağlar.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [
     {
-      "q": "Will compressing my PDF make it blurry?",
-      "a": "No, our tool uses adaptive compression to maintain readability while reducing size."
+      "q": "PDF'mi sıkıştırmak onu bulanıklaştırır mı?",
+      "a": "Hayır, aracımız boyutu küçültürken okunabilirliği korumak için uyarlanabilir sıkıştırmayı kullanır."
     },
     {
-      "q": "Are my files sent to a server to be compressed?",
-      "a": "No, the compression algorithm runs directly in your browser memory."
+      "q": "Dosyalarım sıkıştırılmak üzere bir sunucuya mı gönderiliyor?",
+      "a": "Hayır, sıkıştırma algoritması doğrudan tarayıcınızın belleğinde çalışır."
     },
     {
-      "q": "What is the maximum file size I can compress?",
-      "a": "Your browser memory is the only limit! You can compress massive files easily."
+      "q": "Sıkıştırabileceğim maksimum dosya boyutu nedir?",
+      "a": "Tarayıcınızın hafızası tek sınırdır! Büyük dosyaları kolayca sıkıştırabilirsiniz."
     },
     {
-      "q": "Is this compression tool free?",
-      "a": "Absolutely free with no usage limits or premium paywalls."
+      "q": "Bu sıkıştırma aracı ücretsiz mi?",
+      "a": "Kullanım sınırı veya premium ödeme duvarı olmadan tamamen ücretsizdir."
     },
     {
-      "q": "Can I compress multiple files at once?",
-      "a": "Batch compression is supported on modern browsers."
+      "q": "Birden fazla dosyayı aynı anda sıkıştırabilir miyim?",
+      "a": "Toplu sıkıştırma modern tarayıcılarda desteklenir."
     }
-  ]
+  ],
+  "badges": [
+    "%90 Sıkıştırma",
+    "Kayıpsız Seçenek",
+    "Yükleme Yok"
+  ],
+  "stats": [
+    "Zero Wait",
+    "High Quality",
+    "WebAssembly",
+    "Private"
+  ],
+  "buttonText": "Compress PDF",
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi"
 }

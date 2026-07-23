@@ -1,67 +1,80 @@
 {
-  "title": "PDF to Word Converter — Offline & Editable",
-  "h1": "Convert PDF to Editable Word Documents Locally",
-  "description": "Transform PDFs back into .docx files you can edit, right in your browser. No upload needed. Great for users in Oslo.",
+  "title": "PDF til Word-konvertering – Frakoblet og redigerbar",
+  "h1": "Konverter PDF til redigerbare Word-dokumenter lokalt",
+  "description": "Gjør PDF-filer tilbake til .docx-filer du kan redigere direkte i nettleseren din. Ingen opplasting nødvendig. Flott for brukere i Oslo.",
+  "buttonText": "Konverter til Word",
+  "badges": [
+    "Redigerbare dokumenter",
+    "Tekstgjenoppretting",
+    "Offline prosess"
+  ],
+  "stats": [
+    "100 %",
+    "Lokalt",
+    "0s",
+    "Ventetid"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF Back Offline?",
-      "content": "When you need to edit a PDF, converting it offline keeps your original document confidential."
+      "title": "Hvorfor bruke offline?",
+      "content": "Når du trenger å redigere en PDF, holder konvertering av den frakoblet det originale dokumentet ditt konfidensielt."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Word",
+      "title": "Hvordan bruke",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF file you need to convert."
+          "title": "Last ned PDF",
+          "description": "Velg PDF-filen du trenger å konvertere."
         },
         {
-          "title": "Detect Text Layers",
-          "description": "Our engine reads text and structure from the PDF."
+          "title": "Oppdag tekstlag",
+          "description": "Motoren vår leser tekst og struktur fra PDF-en."
         },
         {
-          "title": "Download .docx",
-          "description": "Get your editable Word document ready to modify."
+          "title": "Last ned .docx",
+          "description": "Gjør det redigerbare Word-dokumentet ditt klart til endring."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "PDF to Word for Oslo Offices",
-      "content": "Office workers in Oslo use our tool to recover editable text from PDFs without cloud dependency."
+      "title": "PDF til Word for Oslo-kontorer",
+      "content": "Kontorarbeidere i Oslo bruker verktøyet vårt til å gjenopprette redigerbar tekst fra PDF-filer uten skyavhengighet."
     },
     {
       "type": "split_privacy_security",
-      "title": "Legal Documents Stay Confidential",
-      "content": "Contracts, NDAs, and reports converted back to Word entirely in your browser memory."
+      "title": "Juridiske dokumenter forblir konfidensielle",
+      "content": "Kontrakter, NDAer og rapporter konvertert tilbake til Word helt i nettleserens minne."
     },
     {
       "type": "split_performance",
-      "title": "Recover Editable Text in Seconds",
-      "content": "Extract text from a 50-page PDF in under 3 seconds without uploading a single byte."
+      "title": "Gjenopprett redigerbar tekst på sekunder",
+      "content": "Trekk ut tekst fra en 50-siders PDF på under 3 sekunder uten å laste opp en eneste byte."
     }
   ],
   "faqs": [
     {
-      "q": "Is all text preserved?",
-      "a": "Yes, text from all layers is extracted and formatted."
+      "q": "Er all tekst bevart?",
+      "a": "Ja, tekst fra alle lag trekkes ut og formateres."
     },
     {
-      "q": "Does it work on scanned PDFs?",
-      "a": "For scanned PDFs, use our OCR tool first."
+      "q": "Fungerer det på skannede PDF-filer?",
+      "a": "For skannede PDF-er, bruk først OCR-verktøyet vårt."
     },
     {
-      "q": "Are images included in the .docx?",
-      "a": "Yes, embedded images are included in the output."
+      "q": "Er bilder inkludert i .docx?",
+      "a": "Ja, innebygde bilder er inkludert i utdataene."
     },
     {
-      "q": "Can I edit the .docx after?",
-      "a": "Absolutely, the output is a fully editable Word document."
+      "q": "Kan jeg redigere .docx etterpå?",
+      "a": "Absolutt, utdataene er et fullt redigerbart Word-dokument."
     },
     {
-      "q": "Is this free?",
+      "q": "Er dette gratis?",
       "a": "Ja, helt gratis."
     }
-  ]
+  ],
+  "faqTitle": "Ofte Stilte Spørsmål"
 }

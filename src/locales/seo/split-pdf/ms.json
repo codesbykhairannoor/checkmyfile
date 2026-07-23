@@ -1,67 +1,85 @@
 {
-  "title": "Split PDF - Extract Pages Securely",
-  "h1": "Split and Extract PDF Pages in Seconds",
-  "description": "Extract specific pages or split a large PDF into multiple files locally in your browser. Perfect for legal professionals in Kuala Lumpur.",
+  "title": "Pisahkan PDF - Ekstrak Halaman Dengan Selamat",
+  "h1": "Pisahkan dan Ekstrak Halaman PDF dalam Beberapa Saat",
+  "description": "Ekstrak halaman tertentu atau bahagikan PDF yang besar kepada berbilang fail secara setempat dalam penyemak imbas anda. Cepat dan selamat sepenuhnya.",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Split PDFs Locally?",
-      "content": "When dealing with massive legal or corporate documents, extracting a single page shouldn't require uploading a 1GB file. Do it instantly right on your machine."
+      "title": "Mengapa Pisahkan PDF Secara Tempatan?",
+      "content": "Apabila berurusan dengan dokumen undang-undang atau korporat yang besar, mengekstrak satu halaman tidak sepatutnya memerlukan muat naik fail 1GB. Lakukan serta-merta pada mesin anda."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Extract Pages",
+      "title": "Cara Mengekstrak Halaman",
       "steps": [
         {
-          "title": "Open Document",
-          "description": "Load the multi-page PDF you want to split."
+          "title": "Buka Dokumen",
+          "description": "Muatkan PDF berbilang halaman yang anda mahu belah."
         },
         {
-          "title": "Select Ranges",
-          "description": "Pick specific page numbers or visually select pages to extract."
+          "title": "Pilih Julat",
+          "description": "Pilih nombor halaman tertentu atau pilih halaman secara visual untuk diekstrak."
         },
         {
-          "title": "Export Zip",
-          "description": "Download your newly split files organized in a ZIP."
+          "title": "Eksport Zip",
+          "description": "Muat turun fail anda yang baru dipecahkan yang disusun dalam ZIP."
         }
-      ]
+      ],
+      "badgeText": "Panduan Pantas"
     },
     {
       "type": "split_geo_targeting",
-      "title": "The Best Splitter in Kuala Lumpur, MY-14",
-      "content": "Whether you are studying in Kuala Lumpur or working on a tight deadline, extracting pages is now instantaneous."
+      "title": "100% Pemprosesan Tempatan Selamat",
+      "content": "Semua operasi dilakukan terus pada peranti tempatan anda. Kami menggunakan teknologi WebAssembly termaju untuk memproses dokumen anda tanpa pernah memuat naiknya ke pelayan luaran, memastikan privasi lengkap.",
+      "badgeText": "Pemprosesan Setempat"
     },
     {
       "type": "split_privacy_security",
-      "title": "Total Page Privacy",
-      "content": "Splitting confidential employee records? Rest easy knowing our code executes purely in your local environment."
+      "title": "Jumlah Privasi Halaman",
+      "content": "Memecahkan rekod pekerja sulit? Bertenang kerana mengetahui kod kami dilaksanakan semata-mata dalam persekitaran setempat anda.",
+      "badgeText": "Keselamatan Diutamakan"
     },
     {
       "type": "split_performance",
-      "title": "Zero-Upload Extraction",
-      "content": "Grabbing page 14 from a 2000-page PDF takes milliseconds, skipping the excruciating upload step entirely."
+      "title": "Pengekstrakan Sifar Muat Naik",
+      "content": "Mengambil halaman 14 daripada PDF 2000 halaman mengambil masa milisaat, melangkau langkah muat naik yang menyusahkan sepenuhnya.",
+      "badgeText": "Sepantas Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "How do I extract just one page?",
-      "a": "Simply click on the page thumbnail you want and hit Export."
+      "q": "Bagaimanakah cara saya mengekstrak hanya satu halaman?",
+      "a": "Cuma klik pada lakaran kecil halaman yang anda mahu dan tekan Eksport."
     },
     {
-      "q": "Can I split the PDF in half?",
-      "a": "Yes, you can specify custom page ranges like 1-10 and 11-20."
+      "q": "Bolehkah saya membahagikan PDF kepada separuh?",
+      "a": "Ya, anda boleh menentukan julat halaman tersuai seperti 1-10 dan 11-20."
     },
     {
-      "q": "Will the extracted pages lose quality?",
-      "a": "No, the splitting process uses binary extraction, preserving 100% of the original quality."
+      "q": "Adakah halaman yang diekstrak akan kehilangan kualiti?",
+      "a": "Tidak, proses pemisahan menggunakan pengekstrakan binari, mengekalkan 100% kualiti asal."
     },
     {
-      "q": "Is my document uploaded when splitting?",
-      "a": "Never. The entire 2000-page document stays strictly in your browser."
+      "q": "Adakah dokumen saya dimuat naik semasa membelah?",
+      "a": "tidak pernah. Keseluruhan dokumen 2000 halaman kekal dalam penyemak imbas anda."
     },
     {
-      "q": "Is there a limit to how many pages I can split?",
-      "a": "No limits! Split as many pages as your computer can handle."
+      "q": "Adakah terdapat had kepada berapa banyak halaman yang boleh saya belah?",
+      "a": "Tiada had! Pisahkan seberapa banyak halaman yang boleh dikendalikan oleh komputer anda."
     }
-  ]
+  ],
+  "badges": [
+    "Pemisahan Segera",
+    "Julat Tepat",
+    "Tiada Had"
+  ],
+  "stats": [
+    "Ultra Fast",
+    "No Upload",
+    "Batch Zip",
+    "Secure"
+  ],
+  "buttonText": "Split PDF",
+  "faqTitle": "Soalan Lazim",
+  "supportCenter": "Pusat Sokongan"
 }

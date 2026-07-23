@@ -1,67 +1,78 @@
 {
-  "title": "Unir PDF - Combinar Documentos Offline",
-  "h1": "Une Archivos PDF al Instante en tu Navegador",
-  "description": "Combina múltiples archivos PDF en un solo documento de forma 100% local. Perfecto para usuarios en Madrid.",
+  "title": "Fusionar PDF - Combinar documentos sin conexión",
+  "h1": "Fusione archivos PDF al instante en su navegador",
+  "description": "Combine varios archivos PDF en un solo documento utilizando WebAssembly del lado del cliente. Sin carga de archivos, perfecto para usuarios de Nueva York.",
   "sections": [
     {
       "type": "merge_hero_features",
-      "title": "¿Por qué Unir PDF Offline?",
-      "content": "Nuestra herramienta combina tus documentos directamente en tu dispositivo sin subir nada a la nube. Privacidad total garantizada."
+      "title": "¿Por qué fusionar PDF sin conexión?",
+      "content": "En lugar de cargar documentos confidenciales a un servidor, nuestra herramienta Fusionar PDF une sus páginas directamente en su navegador. Privacidad total."
     },
     {
       "type": "merge_how_to_steps",
-      "title": "Cómo Unir Archivos PDF",
+      "title": "Cómo fusionar archivos PDF",
       "steps": [
         {
-          "title": "Añadir Documentos",
-          "description": "Selecciona los PDF que deseas unir."
+          "title": "Agregar documentos",
+          "description": "Seleccione los archivos PDF que desea fusionar."
         },
         {
-          "title": "Reordenar",
-          "description": "Arrastra y suelta para organizar el orden perfecto."
+          "title": "Reordenar páginas",
+          "description": "Arrastre y suelte archivos para obtener la secuencia perfecta."
         },
         {
-          "title": "Unir y Descargar",
-          "description": "Haz clic y descarga tu nuevo documento al instante."
+          "title": "Fusionar y guardar",
+          "description": "Haga clic en fusionar y descargue su documento combinado al instante."
         }
-      ]
+      ],
+      "badgeText": "Guía rápida"
     },
     {
       "type": "merge_geo_targeting",
-      "title": "Combinación Rápida en Madrid, ES-M",
-      "content": "Desde Madrid, unir tus documentos no requiere tiempo de carga gracias a nuestra tecnología WebAssembly."
+      "title": "Procesamiento local 100% seguro",
+      "content": "Todas las operaciones se realizan directamente en su dispositivo local. Utilizamos tecnología avanzada de WebAssembly para procesar sus documentos sin tener que cargarlos en servidores externos, lo que garantiza una privacidad total.",
+      "badgeText": "Procesamiento local"
     },
     {
       "type": "merge_privacy_security",
-      "title": "Unión Segura para Empresas",
-      "content": "Uniendo contratos o facturas sensibles? Hazlo de forma segura sin dejar rastro."
+      "title": "Combinación de documentos de nivel empresarial",
+      "content": "¿Fusionar contratos y facturas? Hazlo de forma segura con nuestro motor WASM. No quedan rastros.",
+      "badgeText": "La seguridad es lo primero"
     },
     {
       "type": "merge_performance",
-      "title": "Combinación Instantánea",
-      "content": "Combinar localmente significa que unes archivos más rápido de lo que tardas en subirlos."
+      "title": "Combinación instantánea",
+      "content": "Unir archivos PDF localmente significa que puede fusionar un documento de 500 páginas más rápido de lo que puede cargarlo.",
+      "badgeText": "A la velocidad del rayo"
     }
   ],
   "faqs": [
     {
-      "q": "¿Unir PDFs es gratis?",
-      "a": "¡Sí! Puedes unir todos los archivos que quieras gratis."
+      "q": "¿La combinación de archivos PDF es completamente gratuita?",
+      "a": "¡Sí! Combina tantos archivos como quieras sin pagar un centavo."
     },
     {
-      "q": "¿Se suben mis archivos?",
-      "a": "No, todo sucede offline en tu navegador."
+      "q": "¿Se cargan mis archivos combinados?",
+      "a": "No, todas las fusiones se realizan sin conexión en su navegador."
     },
     {
-      "q": "¿Puedo cambiar el orden?",
-      "a": "Sí, simplemente arrastrando y soltando los archivos."
+      "q": "¿Puedo reordenar los archivos antes de fusionarlos?",
+      "a": "Sí, simplemente arrastre y suelte los archivos en la ventana de vista previa."
     },
     {
-      "q": "¿Hay un límite de archivos?",
-      "a": "¡No! Puedes unir decenas de archivos según la capacidad de tu dispositivo."
+      "q": "¿Existe un límite en la cantidad de archivos que puedo fusionar?",
+      "a": "¡Sin límites artificiales! Fusiona 10 o 100 archivos dependiendo de tu RAM."
     },
     {
-      "q": "¿Se pierde calidad al unir?",
-      "a": "En absoluto. Todos los datos originales se mantienen intactos."
+      "q": "¿La fusión arruina el formato?",
+      "a": "De nada. Las capas originales y los datos vectoriales están perfectamente unidos."
     }
+  ],
+  "faqTitle": "Preguntas frecuentes",
+  "supportCenter": "Centro de soporte",
+  "badges": [
+    "Latencia cero del servidor",
+    "Sin ancho de banda de carga",
+    "Procesamiento instantáneo"
   ]
 }

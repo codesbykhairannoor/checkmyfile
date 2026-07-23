@@ -1,67 +1,85 @@
 {
-  "title": "Rotate PDF Pages — Fix Orientation Offline",
-  "h1": "Rotate PDF Pages to the Correct Orientation",
-  "description": "Fix upside-down or sideways PDF pages instantly in your browser. No upload. Perfect for users in New Delhi.",
+  "title": "पीडीएफ पेजों को घुमाएं - ओरिएंटेशन को ऑफ़लाइन ठीक करें",
+  "h1": "पीडीएफ पेजों को सही दिशा में घुमाएँ",
+  "description": "अपने ब्राउज़र में उलटे या किनारे वाले पीडीएफ पेजों को तुरंत ठीक करें। तेज़ और पूरी तरह से सुरक्षित.",
+  "buttonText": "Rotate Pages",
+  "badges": [
+    "90°/180° घुमाएँ",
+    "बैच प्रसंस्करण",
+    "तुरंत ठीक करें"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Rotate PDFs Locally?",
-      "content": "Scanned documents often come out sideways. Fix their orientation instantly without uploading anything to the cloud."
+      "type": "rotate_hero_features",
+      "title": "पीडीएफ़ को स्थानीय रूप से क्यों घुमाएँ?",
+      "content": "स्कैन किए गए दस्तावेज़ अक्सर किनारे से निकलते हैं। क्लाउड पर कुछ भी अपलोड किए बिना तुरंत उनका ओरिएंटेशन ठीक करें।"
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Rotate PDF Pages",
+      "type": "rotate_how_to_steps",
+      "title": "पीडीएफ पेजों को कैसे घुमाएं",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page orientation."
+          "title": "पीडीएफ खोलें",
+          "description": "गलत पेज ओरिएंटेशन के साथ पीडीएफ लोड करें।"
         },
         {
-          "title": "Select Pages & Direction",
-          "description": "Choose pages to rotate and direction (90°, 180°, 270°)."
+          "title": "पेज और दिशा",
+          "description": "का चयन करें घुमाने और दिशा देने के लिए पृष्ठ चुनें (90°, 180°, 270°)।"
         },
         {
-          "title": "Download Fixed PDF",
-          "description": "Save the correctly oriented PDF immediately."
+          "title": "फिक्स्ड पीडीएफ डाउनलोड करें",
+          "description": "सही ढंग से उन्मुख पीडीएफ को तुरंत सहेजें।"
         }
-      ]
+      ],
+      "badgeText": "त्वरित मार्गदर्शिका"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Rotation for New Delhi Offices",
-      "content": "Office workers in New Delhi fix scanner output orientation without relying on cloud services."
+      "type": "rotate_geo_targeting",
+      "title": "100% सुरक्षित स्थानीय प्रसंस्करण",
+      "content": "सभी ऑपरेशन सीधे आपके स्थानीय डिवाइस पर किए जाते हैं। हम पूर्ण गोपनीयता सुनिश्चित करते हुए, आपके दस्तावेज़ों को बाहरी सर्वर पर अपलोड किए बिना संसाधित करने के लिए उन्नत WebAssembly तकनीक का उपयोग करते हैं।",
+      "badgeText": "स्थानीय प्रसंस्करण"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Scanned Documents Stay Private",
-      "content": "Scanned medical or legal documents rotated locally without any server access."
+      "type": "rotate_privacy_security",
+      "title": "स्कैन किए गए दस्तावेज़ निजी रहें",
+      "content": "स्कैन किए गए मेडिकल या कानूनी दस्तावेज़ बिना किसी सर्वर एक्सेस के स्थानीय रूप से घुमाए जाते हैं।",
+      "badgeText": "सुरक्षा पहले"
     },
     {
-      "type": "transform_performance",
-      "title": "Rotate Any PDF in Milliseconds",
-      "content": "Rotating 500 pages takes less than a second. No upload, no wait."
+      "type": "rotate_performance",
+      "title": "किसी भी पीडीएफ को मिलीसेकंड में घुमाएँ",
+      "content": "500 पेज घूमने में एक सेकंड से भी कम समय लगता है। कोई अपलोड नहीं, कोई प्रतीक्षा नहीं.",
+      "badgeText": "बिजली की तेजी"
     }
   ],
   "faqs": [
     {
-      "q": "Can I rotate individual pages?",
-      "a": "Yes, select specific pages or all at once."
+      "q": "क्या मैं अलग-अलग पेजों को घुमा सकता हूँ?",
+      "a": "हां, विशिष्ट पेज या सभी पेज एक साथ चुनें।"
     },
     {
-      "q": "What rotation angles are available?",
-      "a": "90°, 180°, and 270° clockwise and counter-clockwise."
+      "q": "कौन से घूर्णन कोण उपलब्ध हैं?",
+      "a": "90°, 180°, और 270° दक्षिणावर्त और वामावर्त।"
     },
     {
-      "q": "Does rotation affect image quality?",
-      "a": "No, rotation is lossless — no re-encoding occurs."
+      "q": "क्या घूर्णन छवि गुणवत्ता को प्रभावित करता है?",
+      "a": "नहीं, रोटेशन हानि रहित है - कोई पुन: एन्कोडिंग नहीं होती है।"
     },
     {
-      "q": "Can I undo a rotation?",
-      "a": "Yes, apply the reverse rotation before downloading."
+      "q": "क्या मैं किसी रोटेशन को पूर्ववत कर सकता हूँ?",
+      "a": "हां, डाउनलोड करने से पहले रिवर्स रोटेशन लागू करें।"
     },
     {
-      "q": "Is this free?",
-      "a": "हाँ, पूरी तरह मुफ्त।"
+      "q": "क्या यह मुफ़्त है?",
+      "a": "हाँ, पूर्णतया निःशुल्क।"
     }
-  ]
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न",
+  "supportCenter": "सहायता केंद्र"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Grayscale PDF — Convert to Black and White Offline",
-  "h1": "Convert Color PDF Pages to Grayscale Instantly",
-  "description": "Turn color PDFs into black-and-white versions to reduce file size or prepare for printing, entirely in your browser. Ideal for users in Tokyo.",
+  "title": "グレースケール PDF — オフラインで白黒に変換",
+  "h1": "カラー PDF ページを即座にグレースケールに変換",
+  "description": "カラー PDF を白黒バージョンに変換して、ファイル サイズを削減したり、印刷の準備をすべてブラウザ内で行うことができます。 100% 安全なローカル処理。",
+  "buttonText": "Convert to Grayscale",
+  "badges": [
+    "Save Ink",
+    "Black & White",
+    "印刷に最適"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Convert to Grayscale Offline?",
-      "content": "Removing color from a PDF is a pre-print or archiving step. Do it locally without exposing confidential document design."
+      "type": "grayscale_hero_features",
+      "title": "オフラインでグレースケールに変換する理由",
+      "content": "PDF からの色の削除は、印刷前またはアーカイブの手順です。 機密文書のデザインを公開することなく、ローカルで実行します。"
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Make PDF Grayscale",
+      "type": "grayscale_how_to_steps",
+      "title": "PDF をグレースケールにする方法",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the color PDF to convert."
+          "title": "PDF を開く",
+          "description": "変換するカラー PDF を選択します。"
         },
         {
-          "title": "Choose Conversion Mode",
-          "description": "Pick luminance or contrast-adjusted grayscale."
+          "title": "変換モードを選択",
+          "description": "輝度またはコントラスト調整されたグレースケールを選択します。"
         },
         {
-          "title": "Download Grayscale PDF",
-          "description": "Save the black-and-white PDF immediately."
+          "title": "グレースケール PDF をダウンロード",
+          "description": "白黒 PDF をすぐに保存します。"
         }
-      ]
+      ],
+      "badgeText": "クイックガイド"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Grayscale PDF for Tokyo Printers",
-      "content": "Businesses in Tokyo convert color PDFs to grayscale for cost-effective printing without cloud uploads."
+      "type": "grayscale_geo_targeting",
+      "title": "100% 安全なローカル処理",
+      "content": "すべての操作はローカル デバイス上で直接実行されます。 当社は高度な WebAssembly テクノロジーを使用して、ドキュメントを外部サーバーにアップロードすることなく処理し、完全なプライバシーを確​​保します。",
+      "badgeText": "ローカル処理"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Design Files Stay Confidential",
-      "content": "Internal design documents and branded materials converted to grayscale without cloud exposure."
+      "type": "grayscale_privacy_security",
+      "title": "設計ファイルの機密性は保たれます",
+      "content": "内部設計ドキュメントとブランド資料は、雲にさらされることなくグレースケールに変換されました。",
+      "badgeText": "セキュリティ第一"
     },
     {
-      "type": "transform_performance",
-      "title": "Convert Color Instantly",
-      "content": "A 200-page color PDF converted to grayscale in under 2 seconds. Zero upload."
+      "type": "grayscale_performance",
+      "title": "即座に色を変換",
+      "content": "200 ページのカラー PDF が 2 秒以内にグレースケールに変換されました。 アップロードゼロ。",
+      "badgeText": "超高速"
     }
   ],
   "faqs": [
     {
-      "q": "Does grayscale reduce file size?",
-      "a": "Often yes, especially for image-heavy PDFs."
+      "q": "グレースケールはファイルサイズを削減しますか?",
+      "a": "多くの場合、特に画像が多い PDF の場合はそうです。"
     },
     {
-      "q": "Are all pages converted?",
-      "a": "Yes by default; you can also select specific pages."
+      "q": "すべてのページが変換されますか?",
+      "a": "デフォルトでははい。 特定のページを選択することもできます。"
     },
     {
-      "q": "Is the conversion reversible?",
-      "a": "The color information is removed; keep the original for reversal."
+      "q": "変換は可逆的ですか?",
+      "a": "色の情報は削除されます。 取り消しのためにオリジナルを保持します。"
     },
     {
-      "q": "Does it affect text quality?",
-      "a": "No, text remains crisp and black."
+      "q": "テキストの品質に影響はありますか?",
+      "a": "いいえ、テキストは鮮明な黒色のままです。"
     },
     {
-      "q": "Is this free?",
-      "a": "はい、完全無料です。"
+      "q": "これは無料ですか？",
+      "a": "はい、完全に無料です。"
     }
-  ]
+  ],
+  "faqTitle": "よくある質問",
+  "supportCenter": "サポート センター"
 }

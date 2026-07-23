@@ -1,67 +1,85 @@
 {
-  "title": "Excel to PDF — Convert Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to PDF Securely",
-  "description": "Turn .xlsx and .csv files into crisp PDFs locally in your browser. Financial data stays on your device. Perfect for users in Amsterdam.",
+  "title": "Excel naar PDF — Spreadsheets offline converteren",
+  "h1": "Converteer Excel-spreadsheets veilig naar PDF",
+  "description": "Zet .xlsx- en .csv-bestanden lokaal in uw browser om in scherpe PDF's. Financiële gegevens blijven op uw apparaat staan. 100% veilige lokale verwerking.",
+  "buttonText": "Convert Spreadsheet",
+  "badges": [
+    "Financiële rapporten",
+    "Facturen",
+    "Gegevensexporten"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Excel Offline?",
-      "content": "Spreadsheets often contain sensitive financial data. Our browser-based engine converts without any server involvement."
+      "type": "excel_hero_features",
+      "title": "Waarom Excel offline converteren?",
+      "content": "Spreadsheets bevatten vaak gevoelige financiële gegevens. Onze browsergebaseerde engine converteert zonder tussenkomst van de server."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Export Excel as PDF",
+      "type": "excel_how_to_steps",
+      "title": "Hoe Excel als PDF te exporteren",
       "steps": [
         {
-          "title": "Open Spreadsheet",
-          "description": "Select your .xlsx or .csv file."
+          "title": "Spreadsheet openen",
+          "description": "Selecteer uw .xlsx- of .csv-bestand."
         },
         {
-          "title": "Choose Sheet Range",
-          "description": "Pick which sheets or rows to include."
+          "title": "Kies Bladbereik",
+          "description": "Kies welke bladen of rijen u wilt opnemen."
         },
         {
-          "title": "Export as PDF",
-          "description": "Download your spreadsheet as a clean PDF."
+          "title": "Exporteren als PDF",
+          "description": "Download uw spreadsheet als een schone PDF."
         }
-      ]
+      ],
+      "badgeText": "Beknopte handleiding"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Excel to PDF for Amsterdam Businesses",
-      "content": "Businesses in Amsterdam use our tool to share financial reports without exposing raw spreadsheet data."
+      "type": "excel_geo_targeting",
+      "title": "100% veilige lokale verwerking",
+      "content": "Alle bewerkingen worden rechtstreeks op uw lokale apparaat uitgevoerd. We gebruiken geavanceerde WebAssembly-technologie om uw documenten te verwerken zonder ze ooit naar externe servers te uploaden, waardoor volledige privacy wordt gegarandeerd.",
+      "badgeText": "Lokale verwerking"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Protect Financial Spreadsheets",
-      "content": "Balance sheets, payroll data — all processed offline. Zero data sent to any third party."
+      "type": "excel_privacy_security",
+      "title": "Bescherm financiële spreadsheets",
+      "content": "Balansen, salarisgegevens: allemaal offline verwerkt. Geen gegevens verzonden naar een derde partij.",
+      "badgeText": "Beveiliging eerst"
     },
     {
-      "type": "combiner_performance",
-      "title": "Spreadsheet-to-PDF in Seconds",
-      "content": "No upload queue, no compression artifacts. Your spreadsheet renders natively in-browser."
+      "type": "excel_performance",
+      "title": "Spreadsheet-naar-PDF in seconden",
+      "content": "Geen uploadwachtrij, geen compressieartefacten. Uw spreadsheet wordt native in de browser weergegeven.",
+      "badgeText": "Bliksemsnel"
     }
   ],
   "faqs": [
     {
-      "q": "Are all Excel formulas preserved?",
-      "a": "Yes, formula results are captured in the PDF snapshot."
+      "q": "Blijven alle Excel-formules behouden?",
+      "a": "Ja, formuleresultaten worden vastgelegd in de PDF-momentopname."
     },
     {
-      "q": "Can I convert multiple sheets?",
-      "a": "Yes, you can include all sheets or specific ones."
+      "q": "Kan ik meerdere bladen converteren?",
+      "a": "Ja, u kunt alle bladen of specifieke bladen opnemen."
     },
     {
-      "q": "What file types are supported?",
-      "a": ".xlsx, .xls, and .csv are all supported."
+      "q": "Welke bestandstypen worden ondersteund?",
+      "a": ".xlsx, .xls en .csv worden allemaal ondersteund."
     },
     {
-      "q": "Is this secure for financial data?",
-      "a": "Absolutely. The file never leaves your browser."
+      "q": "Is dit veilig voor financiële gegevens?",
+      "a": "Absoluut. Het bestand verlaat uw browser nooit."
     },
     {
-      "q": "Does it support graphs?",
-      "a": "Ja, volledig gratis."
+      "q": "Ondersteunt het grafieken?",
+      "a": "Grafieken en ingesloten grafieken worden weergegeven in de PDF."
     }
-  ]
+  ],
+  "faqTitle": "Veelgestelde vragen",
+  "supportCenter": "Ondersteuningscentrum"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Sign PDF Online — Draw Signature Offline",
-  "h1": "Sign PDF Documents With Your Signature Without Uploading",
-  "description": "Draw, type, or upload your signature and place it on PDFs entirely in your browser. No cloud. Perfect for users in Hanoi.",
+  "title": "Ký PDF trực tuyến — Vẽ chữ ký ngoại tuyến",
+  "h1": "Ký tài liệu PDF bằng chữ ký của bạn mà không cần tải lên",
+  "description": "Vẽ, nhập hoặc tải lên chữ ký của bạn và đặt nó trên các tệp PDF hoàn toàn trong trình duyệt của bạn. Không có đám mây. Xử lý cục bộ an toàn 100%.",
+  "buttonText": "Sign PDF",
+  "badges": [
+    "Chữ ký số",
+    "Vẽ hoặc gõ",
+    "Ràng buộc về mặt pháp lý"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "sign_hero_features",
-      "title": "Why Sign PDFs Locally?",
-      "content": "Your signature is your identity. Never upload your drawn signature or a private contract to a third-party cloud signing service."
+      "title": "Tại sao ký các tệp PDF cục bộ?",
+      "content": "Chữ ký của bạn là danh tính của bạn. Không bao giờ tải chữ ký đã vẽ hoặc hợp đồng riêng tư của bạn lên dịch vụ ký trên nền tảng đám mây của bên thứ ba."
     },
     {
       "type": "sign_how_to_steps",
-      "title": "How to Sign a PDF in 3 Steps",
+      "title": "Cách ký PDF trong 3 bước",
       "steps": [
         {
-          "title": "Create Your Signature",
-          "description": "Draw with mouse, type in signature font, or upload an image."
+          "title": "Tạo chữ ký của bạn",
+          "description": "Vẽ bằng chuột, nhập phông chữ chữ ký hoặc tải hình ảnh lên."
         },
         {
-          "title": "Place on Document",
-          "description": "Drag and resize your signature to the correct position."
+          "title": "Đặt trên tài liệu",
+          "description": "Kéo và thay đổi kích thước chữ ký của bạn đến đúng vị trí."
         },
         {
-          "title": "Download Signed PDF",
-          "description": "Save your signed document immediately, no account needed."
+          "title": "Tải xuống bản PDF đã ký",
+          "description": "Lưu tài liệu đã ký của bạn ngay lập tức, không cần tài khoản."
         }
-      ]
+      ],
+      "badgeText": "Hướng dẫn nhanh"
     },
     {
       "type": "sign_geo_targeting",
-      "title": "Private Digital Signatures for Hanoi",
-      "content": "Freelancers and businesses in Hanoi sign contracts, NDAs, and agreements without exposing their identity or documents to any cloud service."
+      "title": "Xử lý cục bộ an toàn 100%",
+      "content": "Tất cả các hoạt động được thực hiện trực tiếp trên thiết bị cục bộ của bạn. Chúng tôi sử dụng công nghệ WebAssembly tiên tiến để xử lý tài liệu của bạn mà không cần tải chúng lên máy chủ bên ngoài, đảm bảo quyền riêng tư hoàn toàn.",
+      "badgeText": "Xử lý cục bộ"
     },
     {
       "type": "sign_privacy_security",
-      "title": "Your Signature Identity Stays Private",
-      "content": "Your drawn signature and signed document are processed entirely in browser memory — never stored, never transmitted."
+      "title": "Danh tính chữ ký của bạn được giữ kín",
+      "content": "Chữ ký được vẽ và tài liệu đã ký của bạn được xử lý hoàn toàn trong bộ nhớ trình duyệt — không bao giờ được lưu trữ, không bao giờ được truyền đi.",
+      "badgeText": "Bảo mật là trên hết"
     },
     {
       "type": "sign_performance",
-      "title": "Sign Any Document in Under 30 Seconds",
-      "content": "No account, no upload, no cloud. Draw, place, and download your signed PDF in under 30 seconds."
+      "title": "Ký bất kỳ tài liệu nào trong vòng dưới 30 giây",
+      "content": "Không có tài khoản, không tải lên, không có đám mây. Vẽ, đặt và tải xuống bản PDF đã ký của bạn trong vòng chưa đầy 30 giây.",
+      "badgeText": "Nhanh như chớp"
     }
   ],
   "faqs": [
     {
-      "q": "How can I create my signature?",
-      "a": "Draw with your mouse, type your name in a signature font, or upload an image."
+      "q": "Làm cách nào để tạo chữ ký của tôi?",
+      "a": "Vẽ bằng chuột, nhập tên của bạn bằng phông chữ chữ ký hoặc tải hình ảnh lên."
     },
     {
-      "q": "Can I sign multiple pages?",
-      "a": "Yes, place your signature on any or all pages."
+      "q": "Tôi có thể ký nhiều trang được không?",
+      "a": "Có, đặt chữ ký của bạn trên bất kỳ hoặc tất cả các trang."
     },
     {
-      "q": "Is the signature legally binding?",
-      "a": "Our tool applies a visual signature. For legally binding e-signatures, check your jurisdiction."
+      "q": "Chữ ký có ràng buộc về mặt pháp lý không?",
+      "a": "Công cụ của chúng tôi áp dụng chữ ký trực quan. Để biết chữ ký điện tử có tính ràng buộc về mặt pháp lý, hãy kiểm tra quyền tài phán của bạn."
     },
     {
-      "q": "Can I resize the signature?",
-      "a": "Yes, drag the corners to resize it after placing."
+      "q": "Tôi có thể thay đổi kích thước chữ ký không?",
+      "a": "Có, kéo các góc để thay đổi kích thước sau khi đặt."
     },
     {
-      "q": "Is this free?",
+      "q": "Cái này có miễn phí không?",
       "a": "Có, hoàn toàn miễn phí."
     }
-  ]
+  ],
+  "faqTitle": "Câu hỏi thường gặp",
+  "supportCenter": "Trung tâm hỗ trợ"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Add Watermark to PDF — Offline Watermarking",
-  "h1": "Stamp PDFs with Text or Image Watermarks Locally",
-  "description": "Add \"CONFIDENTIAL\", logos, or custom text watermarks to PDFs entirely in your browser. No upload. Best for users in Seoul.",
+  "title": "PDF에 워터마크 추가 — 오프라인 워터마크",
+  "h1": "텍스트 또는 이미지 워터마크를 사용하여 PDF에 로컬 스탬프",
+  "description": "브라우저에서 \"기밀\", 로고 또는 사용자 정의 텍스트 워터마크를 PDF 전체에 추가하세요. 업로드가 없습니다. 100% 안전한 로컬 처리.",
+  "buttonText": "Add Watermark",
+  "badges": [
+    "사용자 정의 텍스트",
+    "조정 가능한 불투명도",
+    "브랜드 보호"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Watermark PDFs Offline?",
-      "content": "Adding watermarks means your document is sensitive. Never upload draft contracts or confidential reports to a cloud watermarker."
+      "type": "watermark_hero_features",
+      "title": "PDF에 워터마크를 오프라인으로 표시하는 이유는 무엇입니까?",
+      "content": "워터마크를 추가한다는 것은 문서가 민감하다는 것을 의미합니다. 초안 계약서나 기밀 보고서를 클라우드 워터마커에 업로드하지 마세요."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Watermark a PDF",
+      "type": "watermark_how_to_steps",
+      "title": "PDF에 워터마킹하는 방법",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to watermark."
+          "title": "PDF 열기",
+          "description": "워터마크를 추가할 PDF를 선택하세요."
         },
         {
-          "title": "Design Watermark",
-          "description": "Type text or upload a logo image."
+          "title": "디자인 워터마크",
+          "description": "텍스트를 입력하거나 로고 이미지를 업로드하세요."
         },
         {
-          "title": "Apply & Download",
-          "description": "Get your watermarked PDF in one click."
+          "title": "신청 및 다운로드",
+          "description": "한 번의 클릭으로 워터마크가 있는 PDF를 받으세요."
         }
-      ]
+      ],
+      "badgeText": "빠른 가이드"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Document Watermarking in Seoul",
-      "content": "Legal and creative professionals in Seoul stamp documents with watermarks without cloud uploads."
+      "type": "watermark_geo_targeting",
+      "title": "100% 안전한 로컬 처리",
+      "content": "모든 작업은 로컬 장치에서 직접 수행됩니다. 우리는 고급 WebAssembly 기술을 사용하여 문서를 외부 서버에 업로드하지 않고 처리하여 완벽한 개인 정보 보호를 보장합니다.",
+      "badgeText": "로컬 처리"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Confidential Drafts Stay Private",
-      "content": "Draft contracts and unreleased designs watermarked locally without any server contact."
+      "type": "watermark_privacy_security",
+      "title": "기밀 초안은 비공개로 유지",
+      "content": "초안 계약서와 미공개 디자인은 서버 연결 없이 로컬로 워터마크가 표시됩니다.",
+      "badgeText": "보안 우선"
     },
     {
-      "type": "transform_performance",
-      "title": "Stamp Thousands of Pages Instantly",
-      "content": "Apply watermarks to a 1000-page document in under 3 seconds. All in your browser."
+      "type": "watermark_performance",
+      "title": "수천 페이지를 즉시 스탬프",
+      "content": "3초 이내에 1000페이지 문서에 워터마크를 적용합니다. 모든 것이 브라우저에 있습니다.",
+      "badgeText": "번개처럼 빠르게"
     }
   ],
   "faqs": [
     {
-      "q": "Can I use a logo as a watermark?",
-      "a": "Yes, upload a PNG logo and set transparency."
+      "q": "로고를 워터마크로 사용할 수 있나요?",
+      "a": "예, PNG 로고를 업로드하고 투명도를 설정하세요."
     },
     {
-      "q": "Can I adjust watermark opacity?",
-      "a": "Yes, from 10% to 100% opacity."
+      "q": "워터마크 불투명도를 조정할 수 있나요?",
+      "a": "예, 불투명도는 10%에서 100%까지입니다."
     },
     {
-      "q": "Can I apply it to specific pages only?",
-      "a": "Yes, choose page ranges."
+      "q": "특정 페이지에만 적용할 수 있나요?",
+      "a": "예, 페이지 범위를 선택하세요."
     },
     {
-      "q": "Is diagonal placement available?",
-      "a": "Yes, rotate watermarks to any angle."
+      "q": "대각선 배치가 가능한가요?",
+      "a": "예, 워터마크를 원하는 각도로 회전할 수 있습니다."
     },
     {
-      "q": "Is this free?",
-      "a": "예, 완전 무료입니다."
+      "q": "이거 무료인가요?",
+      "a": "예, 항상 무료입니다."
     }
-  ]
+  ],
+  "faqTitle": "자주 묻는 질문",
+  "supportCenter": "지원 센터"
 }

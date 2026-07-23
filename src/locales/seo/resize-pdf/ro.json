@@ -1,67 +1,85 @@
 {
-  "title": "Resize PDF Pages — Change Paper Size Offline",
-  "h1": "Resize PDF Pages to A4, Letter, or Custom Sizes",
-  "description": "Change the paper size of every PDF page to A4, US Letter, or custom dimensions entirely in your browser. No upload. Ideal for users in Bucharest.",
+  "title": "Redimensionați paginile PDF — Schimbați dimensiunea hârtiei offline",
+  "h1": "Redimensionați paginile PDF la dimensiuni A4, Letter sau personalizate",
+  "description": "Schimbați dimensiunea hârtiei fiecărei pagini PDF la A4, US Letter sau dimensiuni personalizate în întregime în browser. Fără încărcare. Procesare locală 100% sigură.",
+  "buttonText": "Resize Pages",
+  "badges": [
+    "A4, Letter, Personalizat",
+    "Adăugați marje",
+    "Format Fix"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Resize PDFs Locally?",
-      "content": "Preparing documents for printing requires proper page sizing. Resize locally without uploading internal documents to the cloud."
+      "type": "resize_hero_features",
+      "title": "De ce să redimensionați PDF-urile local?",
+      "content": "Pregătirea documentelor pentru imprimare necesită o dimensiune adecvată a paginii. Redimensionați local fără a încărca documente interne în cloud."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Resize PDF Pages",
+      "type": "resize_how_to_steps",
+      "title": "Cum se redimensionează paginile PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page dimensions."
+          "title": "Deschide PDF",
+          "description": "Încărcați PDF-ul cu dimensiuni incorecte ale paginii."
         },
         {
-          "title": "Select Target Size",
-          "description": "Choose A4, Letter, A3, or enter custom dimensions."
+          "title": "Selectați Dimensiunea țintă",
+          "description": "Alegeți A4, Letter, A3 sau introduceți dimensiuni personalizate."
         },
         {
-          "title": "Download Resized PDF",
-          "description": "Get your properly sized document instantly."
+          "title": "Descărcați PDF redimensionat",
+          "description": "Obțineți instantaneu documentul cu dimensiunea corectă."
         }
-      ]
+      ],
+      "badgeText": "Ghid rapid"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Resizing for Bucharest Print Shops",
-      "content": "Print shops and offices in Bucharest resize documents to standard sizes without cloud dependency."
+      "type": "resize_geo_targeting",
+      "title": "Procesare locală 100% sigură",
+      "content": "Toate operațiunile sunt efectuate direct pe dispozitivul local. Folosim tehnologie avansată WebAssembly pentru a vă procesa documentele fără a le încărca vreodată pe servere externe, asigurând confidențialitate completă.",
+      "badgeText": "Prelucrare locală"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Internal Documents Stay Internal",
-      "content": "Resize business reports and proposals without any server-side processing."
+      "type": "resize_privacy_security",
+      "title": "Documentele interne rămân interne",
+      "content": "Redimensionați rapoartele și propunerile de afaceri fără nicio prelucrare pe partea serverului.",
+      "badgeText": "Securitatea în primul rând"
     },
     {
-      "type": "transform_performance",
-      "title": "Resize Hundreds of Pages Instantly",
-      "content": "Resizing a 500-page PDF takes under 2 seconds. All in your browser."
+      "type": "resize_performance",
+      "title": "Redimensionați sute de pagini instantaneu",
+      "content": "Redimensionarea unui PDF de 500 de pagini durează mai puțin de 2 secunde. Toate în browserul dvs.",
+      "badgeText": "Rapid fulger"
     }
   ],
   "faqs": [
     {
-      "q": "What sizes are available?",
-      "a": "A4, A3, A5, US Letter, Legal, and custom dimensions."
+      "q": "Ce dimensiuni sunt disponibile?",
+      "a": "Dimensiuni A4, A3, A5, US Letter, Legal și personalizate."
     },
     {
-      "q": "Does content scale with the page?",
-      "a": "Yes, content is scaled proportionally by default."
+      "q": "Conținutul se adaptează cu pagina?",
+      "a": "Da, conținutul este scalat proporțional în mod implicit."
     },
     {
-      "q": "Can I resize individual pages?",
-      "a": "Yes, apply different sizes to specific pages."
+      "q": "Pot redimensiona pagini individuale?",
+      "a": "Da, aplicați dimensiuni diferite pentru anumite pagini."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "Vector content is re-rendered perfectly; images may scale."
+      "q": "Calitatea este afectată?",
+      "a": "Conținutul vectorial este redat perfect; imaginile pot scala."
     },
     {
-      "q": "Is this free?",
+      "q": "Este gratuit?",
       "a": "Da, complet gratuit."
     }
-  ]
+  ],
+  "faqTitle": "Întrebări frecvente",
+  "supportCenter": "Centrul de suport"
 }

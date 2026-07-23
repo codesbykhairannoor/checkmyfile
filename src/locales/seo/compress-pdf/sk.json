@@ -1,67 +1,85 @@
 {
-  "title": "Compress PDF Online - Reduce File Size",
-  "h1": "Compress PDF Documents without Losing Quality",
-  "description": "Shrink large PDF files up to 90% using adaptive lossless techniques directly in WebAssembly. Perfect for users in Bratislava.",
+  "title": "Komprimovať PDF online – Zmenšiť veľkosť súboru",
+  "h1": "Komprimujte dokumenty PDF bez straty kvality",
+  "description": "Zmenšite veľké súbory PDF až o 90 % pomocou adaptívnych bezstratových techník priamo vo WebAssembly. 100% bezpečné lokálne spracovanie.",
   "sections": [
     {
-      "type": "comp_hero_features",
-      "title": "Why Compress PDF Offline?",
-      "content": "Large PDFs are a pain to email. Our compressor reduces file size drastically without blurring images, all from your browser."
+      "type": "compress_hero_features",
+      "title": "Prečo komprimovať PDF offline?",
+      "content": "Veľké súbory PDF sú nepríjemnou záležitosťou pre odosielanie e-mailov. Náš kompresor drasticky znižuje veľkosť súboru bez rozmazania obrázkov, a to všetko z vášho prehliadača."
     },
     {
-      "type": "comp_how_to_steps",
-      "title": "How to Shrink PDF Files",
+      "type": "compress_how_to_steps",
+      "title": "Ako zmenšiť súbory PDF",
       "steps": [
         {
-          "title": "Upload Large File",
-          "description": "Select the hefty PDF you want to shrink."
+          "title": "Nahrať veľký súbor",
+          "description": "Vyberte veľký súbor PDF, ktorý chcete zmenšiť."
         },
         {
-          "title": "Select Quality",
-          "description": "Choose between high quality or maximum compression."
+          "title": "Vyberte kvalitu",
+          "description": "Vyberte si medzi vysokou kvalitou alebo maximálnou kompresiou."
         },
         {
-          "title": "Download Tiny PDF",
-          "description": "Get your compressed file instantly, ready to share."
+          "title": "Stiahnite si Tiny PDF",
+          "description": "Získajte komprimovaný súbor okamžite, pripravený na zdieľanie."
         }
-      ]
+      ],
+      "badgeText": "Rýchly sprievodca"
     },
     {
-      "type": "comp_geo_targeting",
-      "title": "Optimized PDF Shrinking in Bratislava, SK-BL",
-      "content": "Working on a slow connection in Bratislava? Compress your files locally so you can email them faster."
+      "type": "compress_geo_targeting",
+      "title": "100% bezpečné miestne spracovanie",
+      "content": "Všetky operácie sa vykonávajú priamo na vašom lokálnom zariadení. Používame pokročilú technológiu WebAssembly na spracovanie vašich dokumentov bez ich nahrávania na externé servery, čím zaisťujeme úplné súkromie.",
+      "badgeText": "Miestne spracovanie"
     },
     {
-      "type": "comp_privacy_security",
-      "title": "Secure Local Compression",
-      "content": "Compressing sensitive financial reports? Our algorithm works completely offline, keeping your data safe."
+      "type": "compress_privacy_security",
+      "title": "Bezpečná lokálna kompresia",
+      "content": "Komprimovanie citlivých finančných správ? Náš algoritmus funguje úplne offline, vďaka čomu sú vaše údaje v bezpečí.",
+      "badgeText": "Bezpečnosť na prvom mieste"
     },
     {
-      "type": "comp_performance",
-      "title": "Lightning Fast Shrink",
-      "content": "Compressing a 50MB file locally saves you the time of uploading 50MB and downloading 5MB back."
+      "type": "compress_performance",
+      "title": "Bleskovo rýchle zmršťovanie",
+      "content": "Lokálna kompresia 50 MB súboru vám ušetrí čas nahrávania 50 MB a sťahovania 5 MB späť.",
+      "badgeText": "Rýchlosť blesku"
     }
   ],
   "faqs": [
     {
-      "q": "Will compressing my PDF make it blurry?",
-      "a": "No, our tool uses adaptive compression to maintain readability while reducing size."
+      "q": "Bude moje PDF po kompresii rozmazané?",
+      "a": "Nie, náš nástroj používa adaptívnu kompresiu na zachovanie čitateľnosti pri súčasnom zmenšení veľkosti."
     },
     {
-      "q": "Are my files sent to a server to be compressed?",
-      "a": "No, the compression algorithm runs directly in your browser memory."
+      "q": "Odosielajú sa moje súbory na server na komprimáciu?",
+      "a": "Nie, kompresný algoritmus beží priamo v pamäti vášho prehliadača."
     },
     {
-      "q": "What is the maximum file size I can compress?",
-      "a": "Your browser memory is the only limit! You can compress massive files easily."
+      "q": "Aká je maximálna veľkosť súboru, ktorú môžem komprimovať?",
+      "a": "Pamäť vášho prehliadača je jediným limitom! Môžete ľahko komprimovať veľké súbory."
     },
     {
-      "q": "Is this compression tool free?",
-      "a": "Absolutely free with no usage limits or premium paywalls."
+      "q": "Je tento nástroj na kompresiu bezplatný?",
+      "a": "Úplne zadarmo bez obmedzení používania alebo prémiových paywallov."
     },
     {
-      "q": "Can I compress multiple files at once?",
-      "a": "Batch compression is supported on modern browsers."
+      "q": "Môžem komprimovať viacero súborov naraz?",
+      "a": "Dávková kompresia je podporovaná v moderných prehliadačoch."
     }
-  ]
+  ],
+  "badges": [
+    "90% kompresia",
+    "Bezstratová možnosť",
+    "Žiadne nahrávania"
+  ],
+  "stats": [
+    "Zero Wait",
+    "High Quality",
+    "WebAssembly",
+    "Private"
+  ],
+  "buttonText": "Compress PDF",
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
 }

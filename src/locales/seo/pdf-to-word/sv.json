@@ -1,67 +1,80 @@
 {
-  "title": "PDF to Word Converter — Offline & Editable",
-  "h1": "Convert PDF to Editable Word Documents Locally",
-  "description": "Transform PDFs back into .docx files you can edit, right in your browser. No upload needed. Great for users in Stockholm.",
+  "title": "PDF till Word Converter — Offline & redigerbar",
+  "h1": "Konvertera PDF till redigerbara Word-dokument lokalt",
+  "description": "Förvandla tillbaka PDF-filer till .docx-filer som du kan redigera direkt i din webbläsare. Ingen uppladdning behövs. Perfekt för användare i Stockholm.",
+  "buttonText": "Konvertera till Word",
+  "badges": [
+    "Redigerbara dokument",
+    "Textåterställning",
+    "Offlineprocess"
+  ],
+  "stats": [
+    "100 %",
+    "Lokal",
+    "0s",
+    "Väntetid"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF Back Offline?",
-      "content": "When you need to edit a PDF, converting it offline keeps your original document confidential."
+      "title": "Varför använda offline?",
+      "content": "När du behöver redigera en PDF håller konvertering av den offline ditt originaldokument konfidentiellt."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Word",
+      "title": "Hur man använder",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF file you need to convert."
+          "title": "Ladda PDF",
+          "description": "Välj den PDF-fil du behöver konvertera."
         },
         {
-          "title": "Detect Text Layers",
-          "description": "Our engine reads text and structure from the PDF."
+          "title": "Upptäck textlager",
+          "description": "Vår motor läser text och struktur från PDF:en."
         },
         {
-          "title": "Download .docx",
-          "description": "Get your editable Word document ready to modify."
+          "title": "Ladda ner .docx",
+          "description": "Gör ditt redigerbara Word-dokument redo att ändras."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "PDF to Word for Stockholm Offices",
-      "content": "Office workers in Stockholm use our tool to recover editable text from PDFs without cloud dependency."
+      "title": "PDF till Word för Stockholmskontor",
+      "content": "Kontorsarbetare i Stockholm använder vårt verktyg för att återställa redigerbar text från PDF-filer utan molnberoende."
     },
     {
       "type": "split_privacy_security",
-      "title": "Legal Documents Stay Confidential",
-      "content": "Contracts, NDAs, and reports converted back to Word entirely in your browser memory."
+      "title": "Juridiska dokument förblir konfidentiella",
+      "content": "Kontrakt, NDA och rapporter konverteras tillbaka till Word helt och hållet i webbläsarens minne."
     },
     {
       "type": "split_performance",
-      "title": "Recover Editable Text in Seconds",
-      "content": "Extract text from a 50-page PDF in under 3 seconds without uploading a single byte."
+      "title": "Återställ redigerbar text på några sekunder",
+      "content": "Extrahera text från en 50-sidig PDF på under 3 sekunder utan att ladda upp en enda byte."
     }
   ],
   "faqs": [
     {
-      "q": "Is all text preserved?",
-      "a": "Yes, text from all layers is extracted and formatted."
+      "q": "Är all text bevarad?",
+      "a": "Ja, text från alla lager extraheras och formateras."
     },
     {
-      "q": "Does it work on scanned PDFs?",
-      "a": "For scanned PDFs, use our OCR tool first."
+      "q": "Fungerar det på skannade PDF-filer?",
+      "a": "För skannade PDF-filer, använd först vårt OCR-verktyg."
     },
     {
-      "q": "Are images included in the .docx?",
-      "a": "Yes, embedded images are included in the output."
+      "q": "Ingår bilder i .docx?",
+      "a": "Ja, inbäddade bilder ingår i utdata."
     },
     {
-      "q": "Can I edit the .docx after?",
-      "a": "Absolutely, the output is a fully editable Word document."
+      "q": "Kan jag redigera .docx efter?",
+      "a": "Absolut, resultatet är ett helt redigerbart Word-dokument."
     },
     {
-      "q": "Is this free?",
+      "q": "Är detta gratis?",
       "a": "Ja, helt gratis."
     }
-  ]
+  ],
+  "faqTitle": "Vanliga Frågor"
 }

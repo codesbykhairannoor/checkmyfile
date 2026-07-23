@@ -1,67 +1,85 @@
 {
-  "title": "Add Watermark to PDF — Offline Watermarking",
-  "h1": "Stamp PDFs with Text or Image Watermarks Locally",
-  "description": "Add \"CONFIDENTIAL\", logos, or custom text watermarks to PDFs entirely in your browser. No upload. Best for users in Amsterdam.",
+  "title": "Watermerk toevoegen aan PDF — Offline watermerken",
+  "h1": "Stempel PDF's lokaal met tekst- of afbeeldingswatermerken",
+  "description": "Voeg \"VERTROUWELIJK\", logo's of aangepaste tekstwatermerken volledig in uw browser toe aan PDF's. Geen upload. 100% veilige lokale verwerking.",
+  "buttonText": "Add Watermark",
+  "badges": [
+    "Aangepaste tekst",
+    "Instelbare dekking",
+    "Merkbescherming"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Watermark PDFs Offline?",
-      "content": "Adding watermarks means your document is sensitive. Never upload draft contracts or confidential reports to a cloud watermarker."
+      "type": "watermark_hero_features",
+      "title": "Waarom PDF's offline watermerken?",
+      "content": "Als u watermerken toevoegt, is uw document gevoelig. Upload nooit conceptcontracten of vertrouwelijke rapporten naar een cloudwatermarker."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Watermark a PDF",
+      "type": "watermark_how_to_steps",
+      "title": "Een PDF van een watermerk voorzien",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to watermark."
+          "title": "PDF openen",
+          "description": "Selecteer de PDF die u wilt watermerken."
         },
         {
-          "title": "Design Watermark",
-          "description": "Type text or upload a logo image."
+          "title": "Ontwerpwatermerk",
+          "description": "Typ tekst of upload een logoafbeelding."
         },
         {
-          "title": "Apply & Download",
-          "description": "Get your watermarked PDF in one click."
+          "title": "Toepassen en downloaden",
+          "description": "Ontvang uw PDF met watermerk in één klik."
         }
-      ]
+      ],
+      "badgeText": "Beknopte handleiding"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Document Watermarking in Amsterdam",
-      "content": "Legal and creative professionals in Amsterdam stamp documents with watermarks without cloud uploads."
+      "type": "watermark_geo_targeting",
+      "title": "100% veilige lokale verwerking",
+      "content": "Alle bewerkingen worden rechtstreeks op uw lokale apparaat uitgevoerd. We gebruiken geavanceerde WebAssembly-technologie om uw documenten te verwerken zonder ze ooit naar externe servers te uploaden, waardoor volledige privacy wordt gegarandeerd.",
+      "badgeText": "Lokale verwerking"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Confidential Drafts Stay Private",
-      "content": "Draft contracts and unreleased designs watermarked locally without any server contact."
+      "type": "watermark_privacy_security",
+      "title": "Vertrouwelijke concepten blijven privé",
+      "content": "Conceptcontracten en niet-uitgebrachte ontwerpen lokaal voorzien van een watermerk zonder enig servercontact.",
+      "badgeText": "Beveiliging eerst"
     },
     {
-      "type": "transform_performance",
-      "title": "Stamp Thousands of Pages Instantly",
-      "content": "Apply watermarks to a 1000-page document in under 3 seconds. All in your browser."
+      "type": "watermark_performance",
+      "title": "Stempel duizenden pagina's direct",
+      "content": "Pas binnen 3 seconden watermerken toe op een document van 1000 pagina's. Alles in uw browser.",
+      "badgeText": "Bliksemsnel"
     }
   ],
   "faqs": [
     {
-      "q": "Can I use a logo as a watermark?",
-      "a": "Yes, upload a PNG logo and set transparency."
+      "q": "Kan ik een logo als watermerk gebruiken?",
+      "a": "Ja, upload een PNG-logo en stel de transparantie in."
     },
     {
-      "q": "Can I adjust watermark opacity?",
-      "a": "Yes, from 10% to 100% opacity."
+      "q": "Kan ik de dekking van het watermerk aanpassen?",
+      "a": "Ja, van 10% tot 100% dekking."
     },
     {
-      "q": "Can I apply it to specific pages only?",
-      "a": "Yes, choose page ranges."
+      "q": "Kan ik het alleen op specifieke pagina's toepassen?",
+      "a": "Ja, kies paginabereiken."
     },
     {
-      "q": "Is diagonal placement available?",
-      "a": "Yes, rotate watermarks to any angle."
+      "q": "Is diagonale plaatsing mogelijk?",
+      "a": "Ja, draai watermerken in elke hoek."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, volledig gratis."
+      "q": "Is dit gratis?",
+      "a": "Ja, altijd gratis."
     }
-  ]
+  ],
+  "faqTitle": "Veelgestelde vragen",
+  "supportCenter": "Ondersteuningscentrum"
 }

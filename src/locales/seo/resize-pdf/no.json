@@ -1,67 +1,85 @@
 {
-  "title": "Resize PDF Pages — Change Paper Size Offline",
-  "h1": "Resize PDF Pages to A4, Letter, or Custom Sizes",
-  "description": "Change the paper size of every PDF page to A4, US Letter, or custom dimensions entirely in your browser. No upload. Ideal for users in Oslo.",
+  "title": "Endre størrelse på PDF-sider — Endre papirstørrelse frakoblet",
+  "h1": "Endre størrelsen på PDF-sider til A4, Letter eller egendefinerte størrelser",
+  "description": "Endre papirstørrelsen på hver PDF-side til A4, US Letter eller egendefinerte dimensjoner helt i nettleseren din. Ingen opplasting. 100 % sikker lokal behandling.",
+  "buttonText": "Resize Pages",
+  "badges": [
+    "A4, Letter, Custom",
+    "Legg til marger",
+    "Formatfiks"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Resize PDFs Locally?",
-      "content": "Preparing documents for printing requires proper page sizing. Resize locally without uploading internal documents to the cloud."
+      "type": "resize_hero_features",
+      "title": "Hvorfor endre størrelse på PDF-er lokalt?",
+      "content": "Forberedelse av dokumenter for utskrift krever riktig sidestørrelse. Endre størrelse lokalt uten å laste opp interne dokumenter til skyen."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Resize PDF Pages",
+      "type": "resize_how_to_steps",
+      "title": "Hvordan endre størrelse på PDF-sider",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page dimensions."
+          "title": "Åpne PDF",
+          "description": "Last inn PDF-en med feil sidedimensjoner."
         },
         {
-          "title": "Select Target Size",
-          "description": "Choose A4, Letter, A3, or enter custom dimensions."
+          "title": "Velg målstørrelse",
+          "description": "Velg A4, Letter, A3, eller angi egendefinerte dimensjoner."
         },
         {
-          "title": "Download Resized PDF",
-          "description": "Get your properly sized document instantly."
+          "title": "Last ned endret størrelse PDF",
+          "description": "Få dokumentet i riktig størrelse umiddelbart."
         }
-      ]
+      ],
+      "badgeText": "Hurtigguide"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Resizing for Oslo Print Shops",
-      "content": "Print shops and offices in Oslo resize documents to standard sizes without cloud dependency."
+      "type": "resize_geo_targeting",
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle operasjoner utføres direkte på din lokale enhet. Vi bruker avansert WebAssembly-teknologi for å behandle dokumentene dine uten å laste dem opp til eksterne servere, noe som sikrer fullstendig personvern.",
+      "badgeText": "Lokal behandling"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Internal Documents Stay Internal",
-      "content": "Resize business reports and proposals without any server-side processing."
+      "type": "resize_privacy_security",
+      "title": "Interne dokumenter forblir interne",
+      "content": "Endre størrelse på forretningsrapporter og forslag uten noen behandling på serversiden.",
+      "badgeText": "Sikkerhet først"
     },
     {
-      "type": "transform_performance",
-      "title": "Resize Hundreds of Pages Instantly",
-      "content": "Resizing a 500-page PDF takes under 2 seconds. All in your browser."
+      "type": "resize_performance",
+      "title": "Endre størrelsen på hundrevis av sider umiddelbart",
+      "content": "Endre størrelse på en 500-siders PDF tar under 2 sekunder. Alt i nettleseren din.",
+      "badgeText": "Lynrask"
     }
   ],
   "faqs": [
     {
-      "q": "What sizes are available?",
-      "a": "A4, A3, A5, US Letter, Legal, and custom dimensions."
+      "q": "Hvilke størrelser er tilgjengelige?",
+      "a": "A4, A3, A5, US Letter, juridiske og tilpassede dimensjoner."
     },
     {
-      "q": "Does content scale with the page?",
-      "a": "Yes, content is scaled proportionally by default."
+      "q": "Skalerer innholdet med siden?",
+      "a": "Ja, innhold skaleres proporsjonalt som standard."
     },
     {
-      "q": "Can I resize individual pages?",
-      "a": "Yes, apply different sizes to specific pages."
+      "q": "Kan jeg endre størrelsen på individuelle sider?",
+      "a": "Ja, bruk forskjellige størrelser på bestemte sider."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "Vector content is re-rendered perfectly; images may scale."
+      "q": "Blir kvaliteten påvirket?",
+      "a": "Vektorinnhold gjengis perfekt på nytt; bilder kan skaleres."
     },
     {
-      "q": "Is this free?",
+      "q": "Er dette gratis?",
       "a": "Ja, helt gratis."
     }
-  ]
+  ],
+  "faqTitle": "Ofte stilte spørsmål",
+  "supportCenter": "Støttesenter"
 }

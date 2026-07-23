@@ -1,67 +1,85 @@
 {
-  "title": "Password Protect PDF — Secure Files Offline",
-  "h1": "Add Password Protection to PDF Files Instantly",
-  "description": "Encrypt PDF files with AES-256 directly in your browser. Your document never leaves your device. Ideal for users in Tokyo.",
+  "title": "PDF をパスワードで保護 — オフラインでファイルを保護",
+  "h1": "PDF ファイルに即座にパスワード保護を追加",
+  "description": "ブラウザで直接 PDF ファイルを AES-256 で暗号化します。 ドキュメントがデバイスから離れることはありません。 100% 安全なローカル処理。",
+  "buttonText": "Protect PDF",
+  "badges": [
+    "AES-256 暗号化",
+    "安全なパスワード",
+    "クライアント側のみ"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "protect_hero_features",
-      "title": "Why Protect PDFs Locally?",
-      "content": "Adding a password means the file is sensitive. Never upload sensitive files to a cloud encryptor. Ours runs entirely offline with AES-256 encryption."
+      "title": "PDF をローカルで保護する理由",
+      "content": "パスワードを追加すると、ファイルは機密であることを意味します。 機密ファイルをクラウド暗号化ツールにアップロードしないでください。 私たちのものは、AES-256 暗号化を使用して完全にオフラインで実行されます。"
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Password Protect a PDF",
+      "title": "PDF をパスワードで保護する方法",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF you want to lock."
+          "title": "PDF を開く",
+          "description": "ロックしたい PDF を選択します。"
         },
         {
-          "title": "Set Password",
-          "description": "Choose a strong password for encryption."
+          "title": "パスワードを設定",
+          "description": "暗号化には強力なパスワードを選択してください。"
         },
         {
-          "title": "Download Protected PDF",
-          "description": "Get your AES-256 encrypted PDF immediately."
+          "title": "保護された PDF をダウンロード",
+          "description": "AES-256 で暗号化された PDF を今すぐ入手してください。"
         }
-      ]
+      ],
+      "badgeText": "クイックガイド"
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Vault-Level PDF Protection for Tokyo",
-      "content": "Legal and finance professionals in Tokyo encrypt documents with AES-256 strength without exposing files to any server."
+      "title": "100% 安全なローカル処理",
+      "content": "すべての操作はローカル デバイス上で直接実行されます。 当社は高度な WebAssembly テクノロジーを使用して、ドキュメントを外部サーバーにアップロードすることなく処理し、完全なプライバシーを確​​保します。",
+      "badgeText": "ローカル処理"
     },
     {
       "type": "protect_privacy_security",
-      "title": "AES-256 Encryption — Bank-Grade, Offline",
-      "content": "Military-grade AES-256 encryption runs in your browser. No key is ever transmitted to any server."
+      "title": "AES-256 暗号化 — 銀行レベル、オフライン",
+      "content": "軍用グレードの AES-256 暗号化がブラウザで実行されます。 キーがサーバーに送信されることはありません。",
+      "badgeText": "セキュリティ第一"
     },
     {
       "type": "protect_performance",
-      "title": "Encrypt Any PDF in Under 1 Second",
-      "content": "AES-256 processing locally takes milliseconds — no upload, no queue, no wait."
+      "title": "あらゆる PDF を 1 秒以内に暗号化",
+      "content": "AES-256 のローカル処理には数ミリ秒かかります。アップロードもキューも待機もありません。",
+      "badgeText": "超高速"
     }
   ],
   "faqs": [
     {
-      "q": "What encryption standard is used?",
-      "a": "AES-256, the same standard used by banks and governments."
+      "q": "どのような暗号化標準が使用されていますか?",
+      "a": "AES-256、銀行や政府で使用されているのと同じ規格。"
     },
     {
-      "q": "Can I set different owner and user passwords?",
-      "a": "Yes, you can set both separately."
+      "q": "異なる所有者パスワードとユーザーパスワードを設定できますか?",
+      "a": "はい、両方を個別に設定できます。"
     },
     {
-      "q": "Is the original file modified?",
-      "a": "No, a new encrypted copy is created."
+      "q": "元のファイルは変更されていますか?",
+      "a": "いいえ、新しい暗号化されたコピーが作成されます。"
     },
     {
-      "q": "Can I restrict printing or editing?",
-      "a": "Yes, permission restrictions can be set alongside the password."
+      "q": "印刷や編集を制限できますか?",
+      "a": "はい、パスワードと一緒に権限制限を設定できます。"
     },
     {
-      "q": "Is this free?",
-      "a": "はい、完全無料です。"
+      "q": "これは無料ですか？",
+      "a": "はい、完全に無料です。"
     }
-  ]
+  ],
+  "faqTitle": "よくある質問",
+  "supportCenter": "サポート センター"
 }

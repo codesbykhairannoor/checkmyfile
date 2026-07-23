@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 import { getLocalizedSeo, type ToolDefinition } from '../catalog/toolsCatalog';
 import { SeoHead } from '../components/seo/SeoHead';
+import { Breadcrumbs } from '../components/common/Breadcrumbs';
+import { RelatedTools } from '../components/seo/RelatedTools';
 import { FileDropzone } from '../components/common/FileDropzone';
 import { ProgressBar } from '../components/common/ProgressBar';
 import { DocumentLivePreview } from '../components/common/DocumentLivePreview';
 import { SeoRichSections, useSeoData } from '../components/common/SeoRichSections';
 import { Download } from 'lucide-react';
 import { useWorkspaceFiles } from '../hooks/useWorkspaceFiles';
-
 import { useDocumentProcessor } from '../hooks/useDocumentProcessor';
 import { ToolSidebar } from '../components/tools/ToolSidebar';
+import { smartHighlight } from '../utils/textFormatting';
+import { getUiTranslations } from '../i18n/translations';
 
 interface ToolPageProps {
   tool: ToolDefinition;
@@ -149,10 +152,10 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
     height: 10,
     imageUrl: ''
   });
-  
+
   const seoData = useSeoData(tool.id, currentLang);
   const [pdfPassword, setPdfPassword] = useState<string>('');
-  
+
   const [cropConfig, setCropConfig] = useState({
     marginTop: 0,
     marginBottom: 0,
@@ -210,13 +213,8 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
     resetProcessor();
   };
 
-  const isEditorMode = files.length > 0 && !isProcessing && !isCompleted;
-
   return (
     <main style={{
-      maxWidth: 1440,
-      margin: '0 auto',
-      padding: isEditorMode ? '24px' : '32px 24px',
       flex: 1,
       minHeight: 0,
       width: '100%',
@@ -225,13 +223,27 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
       overflow: 'auto'
     }}>
       <SeoHead tool={tool} lang={currentLang} />
+      
+      {/* ── Breadcrumb Navigation (Semantic AEO & UI UX) ── */}
+      <Breadcrumbs 
+        currentLang={currentLang} 
+        items={[
+          { label: getUiTranslations(currentLang)[`nav${tool.category === 'pdf' ? 'OrganizePdf' : tool.category === 'compress' ? 'OptimizeEnhance' : tool.category === 'office' ? 'SpreadsheetTools' : tool.category === 'image' ? 'ImageTools' : 'OcrTools'}` as keyof ReturnType<typeof getUiTranslations>] || 'Tools', url: `/${currentLang}` },
+          { label: seoData.data ? seoData.data.h1 : seo.h1 }
+        ]} 
+      />
+
+      <article style={{ width: '100%', flex: 1, display: 'flex', flexDirection: 'column' }}>
 
 
       {/* Dynamic Header - Hidden in Workspace Mode and Result Mode to maximize preview space */}
       {files.length === 0 && !isCompleted && (
-        <div style={{ textAlign: 'center', marginBottom: 40, marginTop: 40, padding: '0 20px' }}>
-          <h1 style={{ fontSize: 'clamp(1.8rem, 4vw, 3.5rem)', fontWeight: 900, fontFamily: 'var(--font-display)', marginBottom: 16, background: 'linear-gradient(to right, var(--text-main), var(--text-accent))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-            {seoData.data ? seoData.data.h1 : seo.h1}
+        <div style={{ textAlign: 'center', padding: '0 24px', maxWidth: 1440, margin: '64px auto 40px auto', width: '100%' }}>
+          <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 900, marginBottom: 20, letterSpacing: '-0.03em', lineHeight: 1.15, fontFamily: 'var(--font-display)' }}>
+            {(() => {
+              const fullTitle = seoData.data ? seoData.data.h1 : seo.h1;
+              return smartHighlight(fullTitle);
+            })()}
           </h1>
           <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem', maxWidth: 800, margin: '0 auto', lineHeight: 1.6 }}>
             {seoData.data ? seoData.data.description : seo.description}
@@ -241,39 +253,40 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
 
       {/* Interactive Document Live Preview & Editor */}
       {files.length > 0 && !isCompleted && (
-        <div className="tool-workspace-container" style={{ display: 'flex', width: '100%', height: '100%', maxHeight: 800, flex: 1, gap: 24, minHeight: 0, justifyContent: 'center' }}>
-          {/* Left Workspace */}
+        <div style={{ maxWidth: 1440, margin: '0 auto', width: '100%', padding: '24px 24px 0', flex: 1, display: 'flex', flexDirection: 'column' }}>
+          <div className="tool-workspace-container" style={{ display: 'flex', width: '100%', height: '100%', maxHeight: 800, flex: 1, gap: 24, minHeight: 0, justifyContent: 'center' }}>
+            {/* Left Workspace */}
           <div className="tool-workspace-left" style={{ flex: 1, minWidth: 0, minHeight: 650, display: 'flex', flexDirection: 'column', gap: 24, overflow: 'hidden', paddingRight: 8, paddingBottom: 24 }}>
             <DocumentLivePreview
               files={files}
               currentLang={currentLang}
-                activeFileIndex={activeFileIndex}
-                externalRotate={rotateDegrees}
-                watermarkConfig={tool.id === 'watermark-pdf' ? watermarkConfig : undefined}
-                pageNumberConfig={tool.id === 'page-numbers' ? pageNumberConfig : undefined}
-                splitRange={tool.id === 'split-pdf' ? splitRange : undefined}
-                compressQuality={tool.id === 'compress-pdf' ? compressQuality : undefined}
-                removeRange={tool.id === 'remove-pdf' ? removeRange : undefined}
-                signatureConfig={tool.id === 'sign-pdf' ? signatureConfig : undefined}
-                cropConfig={tool.id === 'crop-pdf' ? cropConfig : undefined}
-                redactConfig={tool.id === 'redact-pdf' ? redactConfig : undefined}
-                resizeConfig={tool.id === 'resize-pdf' ? resizeConfig : undefined}
-                editElements={tool.id === 'edit-pdf' ? editElements : undefined}
-                setEditElements={setEditElements}
-                selectedEditId={tool.id === 'edit-pdf' ? selectedEditId : undefined}
-                setSelectedEditId={setSelectedEditId}
-                setRedactConfig={setRedactConfig}
-                onSignatureUpdate={(x, y, pageIndex) => setSignatureConfig(prev => prev ? ({ ...prev, x, y, ...(pageIndex !== undefined ? { pageIndex } : {}) }) : prev)}
-              />
+              activeFileIndex={activeFileIndex}
+              externalRotate={rotateDegrees}
+              watermarkConfig={tool.id === 'watermark-pdf' ? watermarkConfig : undefined}
+              pageNumberConfig={tool.id === 'page-numbers' ? pageNumberConfig : undefined}
+              splitRange={tool.id === 'split-pdf' ? splitRange : undefined}
+              compressQuality={tool.id === 'compress-pdf' ? compressQuality : undefined}
+              removeRange={tool.id === 'remove-pdf' ? removeRange : undefined}
+              signatureConfig={tool.id === 'sign-pdf' ? signatureConfig : undefined}
+              cropConfig={tool.id === 'crop-pdf' ? cropConfig : undefined}
+              redactConfig={tool.id === 'redact-pdf' ? redactConfig : undefined}
+              resizeConfig={tool.id === 'resize-pdf' ? resizeConfig : undefined}
+              editElements={tool.id === 'edit-pdf' ? editElements : undefined}
+              setEditElements={setEditElements}
+              selectedEditId={tool.id === 'edit-pdf' ? selectedEditId : undefined}
+              setSelectedEditId={setSelectedEditId}
+              setRedactConfig={setRedactConfig}
+              onSignatureUpdate={(x, y, pageIndex) => setSignatureConfig(prev => prev ? ({ ...prev, x, y, ...(pageIndex !== undefined ? { pageIndex } : {}) }) : prev)}
+            />
           </div>
-          <ToolSidebar 
+          <ToolSidebar
             tool={tool} files={files} setFiles={setFiles} activeFileIndex={activeFileIndex} setActiveFileIndex={setActiveFileIndex}
-            isProcessing={isProcessing} 
-            handleStartProcessing={() => handleStartProcessing({ 
-              splitRange, 
-              rotateDegrees, 
-              pageNumberConfig, 
-              watermarkConfig, 
+            isProcessing={isProcessing}
+            handleStartProcessing={() => handleStartProcessing({
+              splitRange,
+              rotateDegrees,
+              pageNumberConfig,
+              watermarkConfig,
               compressQuality,
               extractImageFormat,
               removeRange,
@@ -305,68 +318,72 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
             formatSize={formatSize}
             acceptTypes={getAcceptTypes(tool.id)}
             allowMultiple={tool.id === 'merge-pdf' || tool.id === 'gabung-pdf' || tool.id === 'image-to-pdf' || tool.id === 'gambar-ke-pdf'}
-            pdfPagesCount={100}
           />
         </div>
+      </div>
       )}
 
 
 
       {/* Error Notice */}
       {errorMessage && (
-        <div
-          style={{
-            background: 'rgba(239, 68, 68, 0.1)',
-            border: '1px solid rgba(239, 68, 68, 0.3)',
-            color: '#ef4444',
-            padding: 16,
-            borderRadius: 12,
-            marginBottom: 20,
-            textAlign: 'center',
-          }}
-        >
-          <strong>Processing Error:</strong> {errorMessage}
+        <div style={{ maxWidth: 1440, margin: '0 auto', width: '100%', padding: '0 24px' }}>
+          <div
+            style={{
+              background: 'rgba(239, 68, 68, 0.1)',
+              border: '1px solid rgba(239, 68, 68, 0.3)',
+              color: '#ef4444',
+              padding: 16,
+              borderRadius: 12,
+              marginBottom: 20,
+              textAlign: 'center',
+            }}
+          >
+            <strong>Processing Error:</strong> {errorMessage}
+          </div>
         </div>
       )}
 
       {/* Dropzone (Hidden when files are already selected to keep UI clean and avoid clutter) */}
       {files.length === 0 && (
         <>
-          <FileDropzone
-            currentLang={currentLang}
-            onFilesSelected={(selected) => {
-              setFiles(selected);
-              resetProcessor();
-            }}
-            accept={getAcceptTypes(tool.id)}
-            multiple={tool.id === 'merge-pdf' || tool.id === 'gabung-pdf' || tool.id === 'image-to-pdf' || tool.id === 'gambar-ke-pdf'}
-          />
+          <div style={{ maxWidth: 1440, margin: '0 auto', width: '100%', padding: '0 24px' }}>
+            <FileDropzone
+              currentLang={currentLang}
+              onFilesSelected={(selected) => {
+                setFiles(selected);
+                resetProcessor();
+              }}
+              accept={getAcceptTypes(tool.id)}
+              multiple={tool.id === 'merge-pdf' || tool.id === 'gabung-pdf' || tool.id === 'image-to-pdf' || tool.id === 'gambar-ke-pdf'}
+            />
+          </div>
           {seoData.loading ? (
-             <div style={{ minHeight: 400, display: 'flex', justifyContent: 'center', alignItems: 'center' }}><div className="spinner" style={{ width: 40, height: 40, border: '4px solid var(--border-color)', borderTopColor: 'var(--text-accent)', borderRadius: '50%', animation: 'spin 1s linear infinite' }}></div></div>
+            <div style={{ minHeight: 400, display: 'flex', justifyContent: 'center', alignItems: 'center' }}><div className="spinner" style={{ width: 40, height: 40, border: '4px solid var(--border-color)', borderTopColor: 'var(--text-accent)', borderRadius: '50%', animation: 'spin 1s linear infinite' }}></div></div>
           ) : (
-             <SeoRichSections data={seoData.data} />
+            <SeoRichSections data={seoData.data} />
           )}
         </>
       )}
 
       {/* Live Preview of the Converted / Processed Result */}
       {isCompleted && resultFile && (
-        <div style={{ flex: 1, minHeight: 650, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+        <div style={{ flex: 1, minHeight: 650, display: 'flex', flexDirection: 'column', overflow: 'hidden', maxWidth: 1440, margin: '0 auto', width: '100%', padding: '32px 24px 0' }}>
           {tool.id === 'compare-pdf' ? (
             <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 650, gap: 24, alignItems: 'center' }}>
               <div className="tool-workspace-container" style={{ display: 'flex', flex: 1, width: '100%', minHeight: 650, maxHeight: 800, gap: 24, overflow: 'hidden', justifyContent: 'center' }}>
-                
+
                 {/* DOKUMEN ASLI PANEL */}
                 <div className="tool-workspace-left" style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', position: 'relative', maxWidth: 800 }}>
                   <div style={{ position: 'absolute', top: 16, left: 16, zIndex: 10, background: 'rgba(0,0,0,0.6)', color: '#fff', padding: '6px 12px', borderRadius: 20, fontSize: '0.8rem', fontWeight: 600, pointerEvents: 'none' }}>Dokumen Asli</div>
                   <div style={{ flex: 1, minHeight: 0, overflow: 'hidden' }}>
-                    <DocumentLivePreview 
+                    <DocumentLivePreview
                       files={[
-                        processorMetadata?.originalAnnotatedBytes 
-                          ? new File([processorMetadata.originalAnnotatedBytes], "Dokumen_Asli.pdf", { type: 'application/pdf' }) 
+                        processorMetadata?.originalAnnotatedBytes
+                          ? new File([processorMetadata.originalAnnotatedBytes], "Dokumen_Asli.pdf", { type: 'application/pdf' })
                           : files[0]
-                      ]} 
-                      currentLang={currentLang} isResult={true} hideSidebar={true} 
+                      ]}
+                      currentLang={currentLang} isResult={true} hideSidebar={true}
                     />
                   </div>
                 </div>
@@ -374,18 +391,18 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                 {/* PERBANDINGAN PANEL */}
                 <div className="tool-workspace-right" style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', position: 'relative', maxWidth: 800 }}>
                   <div style={{ position: 'absolute', top: 16, left: 16, zIndex: 10, background: 'rgba(239,68,68,0.9)', color: '#fff', padding: '6px 12px', borderRadius: 20, fontSize: '0.8rem', fontWeight: 600, pointerEvents: 'none' }}>Perbandingan (Diff)</div>
-                  
+
                   <div style={{ flex: 1, minHeight: 0, overflow: 'hidden' }}>
                     <DocumentLivePreview files={[resultFile]} currentLang={currentLang} isResult={true} hideSidebar={true} />
                   </div>
-                  
+
                   {/* FLOATING ACTION PILL */}
                   <div style={{ position: 'absolute', bottom: 24, left: '50%', transform: 'translateX(-50%)', zIndex: 20, background: 'rgba(255,255,255,0.95)', backdropFilter: 'blur(10px)', padding: '12px 24px', borderRadius: 100, boxShadow: '0 8px 32px rgba(0,0,0,0.15)', display: 'flex', alignItems: 'center', gap: 24, border: '1px solid rgba(0,0,0,0.05)', whiteSpace: 'normal', width: 'max-content', maxWidth: '90%' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
                       <div style={{ fontSize: '1.6rem', fontWeight: 900, color: processorMetadata?.accuracy && processorMetadata.accuracy > 95 ? '#10b981' : '#f59e0b', lineHeight: 1 }}>
                         {processorMetadata?.accuracy?.toFixed(1) || '0'}%
                       </div>
-                      <div style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--text-muted)', lineHeight: 1.2, letterSpacing: 0.5 }}>AKURASI<br/>KEMIRIPAN</div>
+                      <div style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--text-muted)', lineHeight: 1.2, letterSpacing: 0.5 }}>AKURASI<br />KEMIRIPAN</div>
                     </div>
                     <div style={{ width: 1, height: 32, background: 'var(--border-color)' }}></div>
                     <div style={{ display: 'flex', gap: 12 }}>
@@ -402,10 +419,10 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
               </div>
             </div>
           ) : (
-            <DocumentLivePreview 
-              files={resultPreviewFiles || [resultFile]} 
-              currentLang={currentLang} 
-              isResult={true} 
+            <DocumentLivePreview
+              files={resultPreviewFiles || [resultFile]}
+              currentLang={currentLang}
+              isResult={true}
               renderBottomRight={
                 <ProgressBar
                   currentLang={currentLang}
@@ -425,6 +442,10 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
         </div>
       )}
 
+      {/* Internal Linking Silo (White Hat AEO) */}
+      <RelatedTools currentToolId={tool.id} category={tool.category} currentLang={currentLang} />
+
+      </article>
     </main>
   );
 };

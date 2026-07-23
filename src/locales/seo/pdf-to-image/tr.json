@@ -1,67 +1,85 @@
 {
-  "title": "PDF to Image Converter — Extract Pages Offline",
-  "h1": "Convert PDF Pages to PNG or JPG Images",
-  "description": "Extract every page from a PDF as high-quality images directly in your browser. Zero upload, total privacy. Best for users in Istanbul.",
+  "title": "PDF'den Görüntüye Dönüştürücü — Sayfaları Çevrimdışı Çıkarma",
+  "h1": "PDF Sayfalarını PNG veya JPG Görüntülerine Dönüştürme",
+  "description": "PDF'deki her sayfayı yüksek kaliteli görüntüler olarak doğrudan tarayıcınızdan çıkarın. Sıfır yükleme, %100 güvenli yerel işleme.",
+  "buttonText": "Extract Images",
+  "badges": [
+    "Tasarım Portfolyoları",
+    "Sunumlar",
+    "Yüksek Kalite"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract PDF Pages Offline?",
-      "content": "PDFs often contain confidential diagrams, blueprints, or reports. Extract pages as images without any server access."
+      "type": "pdf_image_hero_features",
+      "title": "Neden PDF Sayfalarını Çevrimdışı Çıkartmalısınız?",
+      "content": "PDF'ler genellikle gizli diyagramlar, planlar veya raporlar içerir. Sayfaları herhangi bir sunucu erişimi olmadan görüntü olarak çıkarın."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Images",
+      "type": "pdf_image_how_to_steps",
+      "title": "PDF'yi Görüntülere Dönüştürme",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF you want to extract images from."
+          "title": "PDF'yi yükle",
+          "description": "Görüntüleri çıkarmak istediğiniz PDF'yi seçin."
         },
         {
-          "title": "Choose Format",
-          "description": "Pick PNG (lossless) or JPG (compressed) output."
+          "title": "Format Seçin",
+          "description": "PNG (kayıpsız) veya JPG (sıkıştırılmış) çıktıyı seçin."
         },
         {
-          "title": "Download Images",
-          "description": "Get all pages as individual image files in a ZIP."
+          "title": "Görselleri İndir",
+          "description": "Tüm sayfaları ayrı ayrı görüntü dosyaları olarak bir ZIP dosyasında alın."
         }
-      ]
+      ],
+      "badgeText": "Hızlı Kılavuz"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF to Image for Istanbul Designers",
-      "content": "Designers in Istanbul extract PDF pages as images for presentations and social media without cloud uploads."
+      "type": "pdf_image_geo_targeting",
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Confidential Diagrams Stay Private",
-      "content": "Technical blueprints and legal documents extracted as images without any data leaving your device."
+      "type": "pdf_image_privacy_security",
+      "title": "Gizli Diyagramlar Gizli Kalır",
+      "content": "Cihazınızdan herhangi bir veri çıkmadan resim olarak çıkarılan teknik planlar ve yasal belgeler.",
+      "badgeText": "Önce Güvenlik"
     },
     {
-      "type": "split_performance",
-      "title": "Extract All Pages Instantly",
-      "content": "A 500-page PDF converted to images in seconds. No upload, no wait."
+      "type": "pdf_image_performance",
+      "title": "Tüm Sayfaları Anında Çıkarın",
+      "content": "Saniyeler içinde görsellere dönüştürülen 500 sayfalık PDF. Yükleme yok, bekleme yok.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are available?",
-      "a": "PNG and JPG with adjustable quality settings."
+      "q": "Hangi görüntü formatları mevcut?",
+      "a": "Ayarlanabilir kalite ayarlarıyla PNG ve JPG."
     },
     {
-      "q": "Can I extract specific pages?",
-      "a": "Yes, specify page ranges like 1-5 or 3,7,12."
+      "q": "Belirli sayfaları çıkarabilir miyim?",
+      "a": "Evet, 1-5 veya 3,7,12 gibi sayfa aralıklarını belirtin."
     },
     {
-      "q": "What resolution are the exported images?",
-      "a": "Default 150 DPI, adjustable up to 300 DPI."
+      "q": "Dışa aktarılan görsellerin çözünürlüğü nedir?",
+      "a": "Varsayılan 150 DPI, 300 DPI'ya kadar ayarlanabilir."
     },
     {
-      "q": "Are all pages exported at once?",
-      "a": "Yes, all selected pages are zipped for a single download."
+      "q": "Tüm sayfalar aynı anda mı dışa aktarılıyor?",
+      "a": "Evet, seçilen tüm sayfalar tek bir indirme için sıkıştırılır."
     },
     {
-      "q": "Is this free?",
-      "a": "Evet, tamamen ücretsiz."
+      "q": "Bu bedava mı?",
+      "a": "Tamamen ücretsiz, her zaman."
     }
-  ]
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi"
 }

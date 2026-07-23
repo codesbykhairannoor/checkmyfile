@@ -1,67 +1,85 @@
 {
-  "title": "Redact PDF — Permanently Remove Sensitive Data",
-  "h1": "Permanently Redact Sensitive Information from PDFs Offline",
-  "description": "Black out sensitive text and images in PDFs entirely in your browser. No cloud risk. Critical for users in Jerusalem.",
+  "title": "עריכת PDF - הסר לצמיתות נתונים רגישים",
+  "h1": "סלק לצמיתות מידע רגיש מקובצי PDF במצב לא מקוון",
+  "description": "השחת טקסט ותמונות רגישים בקובצי PDF לחלוטין בדפדפן שלך. אין סיכון בענן. עיבוד מקומי מאובטח של 100%.",
+  "buttonText": "Redact Text",
+  "badges": [
+    "מחיקה לצמיתות",
+    "מידע על Blackout",
+    "עיבוד מאובטח"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "redact_hero_features",
-      "title": "Why Redact PDFs Locally?",
-      "content": "Redacting means the content is classified. Uploading a document you need to hide defeats the whole purpose. Our tool runs 100% offline."
+      "title": "מדוע לערוך מסמכי PDF באופן מקומי?",
+      "content": "עריכה פירושה שהתוכן מסווג. העלאת מסמך שאתה צריך כדי להסתיר מביס את כל המטרה. הכלי שלנו פועל 100% במצב לא מקוון."
     },
     {
       "type": "redact_how_to_steps",
-      "title": "How to Permanently Redact a PDF",
+      "title": "כיצד לערוך לצמיתות PDF",
       "steps": [
         {
-          "title": "Open Sensitive Document",
-          "description": "Load the PDF with data that must be hidden."
+          "title": "פתח מסמך רגיש",
+          "description": "טען את ה-PDF עם נתונים שחייבים להיות מוסתרים."
         },
         {
-          "title": "Mark Redaction Areas",
-          "description": "Draw boxes over content to permanently erase."
+          "title": "סמן אזורי עיבוד",
+          "description": "צייר תיבות על תוכן כדי למחוק לצמיתות."
         },
         {
-          "title": "Apply & Download",
-          "description": "Content is permanently deleted from the PDF structure."
+          "title": "החל והורד",
+          "description": "התוכן נמחק לצמיתות ממבנה ה-PDF."
         }
-      ]
+      ],
+      "badgeText": "מדריך מהיר"
     },
     {
       "type": "redact_geo_targeting",
-      "title": "Court-Ready Redaction for Jerusalem Law Firms",
-      "content": "Legal professionals in Jerusalem prepare court documents with permanent, offline redaction that removes data from the PDF structure itself."
+      "title": "100% עיבוד מקומי מאובטח",
+      "content": "כל הפעולות מבוצעות ישירות במכשיר המקומי שלך. אנו משתמשים בטכנולוגיית WebAssembly מתקדמת כדי לעבד את המסמכים שלך מבלי להעלות אותם לשרתים חיצוניים, מה שמבטיח פרטיות מלאה.",
+      "badgeText": "עיבוד מקומי"
     },
     {
       "type": "redact_privacy_security",
-      "title": "True Permanent Redaction — Not Just Black Boxes",
-      "content": "Unlike tools that merely cover text with black boxes, our redaction permanently deletes the underlying data from the PDF object structure."
+      "title": "עיבוד קבוע אמיתי - לא רק קופסאות שחורות",
+      "content": "בניגוד לכלים שרק מכסים טקסט בקופסאות שחורות, העריכה שלנו מוחקת לצמיתות את הנתונים הבסיסיים ממבנה אובייקט ה-PDF.",
+      "badgeText": "אבטחה תחילה"
     },
     {
       "type": "redact_performance",
-      "title": "Redact Entire Documents Instantly",
-      "content": "Apply hundreds of permanent redactions to large documents in seconds, completely offline."
+      "title": "עריכת מסמכים שלמים באופן מיידי",
+      "content": "החל מאות עריכות קבועות על מסמכים גדולים תוך שניות, במצב לא מקוון לחלוטין.",
+      "badgeText": "מהיר ברק"
     }
   ],
   "faqs": [
     {
-      "q": "Is the redaction truly permanent?",
-      "a": "Yes, the underlying text and image data is permanently deleted from the PDF structure."
+      "q": "האם העריכה באמת קבועה?",
+      "a": "כן, נתוני הטקסט והתמונה הבסיסיים נמחקים לצמיתות ממבנה ה-PDF."
     },
     {
-      "q": "Can I redact images too?",
-      "a": "Yes, both text regions and image areas can be permanently redacted."
+      "q": "האם אני יכול לשנות גם תמונות?",
+      "a": "כן, ניתן לערוך לצמיתות גם אזורי טקסט וגם אזורי תמונה."
     },
     {
-      "q": "Can I choose black or white cover?",
-      "a": "Yes, pick the redaction style that suits your document."
+      "q": "האם אני יכול לבחור כיסוי שחור או לבן?",
+      "a": "כן, בחר את סגנון העריכה המתאים למסמך שלך."
     },
     {
-      "q": "Does this meet legal standards?",
-      "a": "Our redaction removes data at the PDF object level, meeting court requirements."
+      "q": "האם זה עומד בסטנדרטים המשפטיים?",
+      "a": "העריכה שלנו מסירה נתונים ברמת אובייקט PDF, ועומדת בדרישות בית המשפט."
     },
     {
-      "q": "Is this free?",
-      "a": "כן, חינם לחלוטין."
+      "q": "האם זה בחינם?",
+      "a": "כן, תמיד בחינם."
     }
-  ]
+  ],
+  "faqTitle": "שאלות נפוצות",
+  "supportCenter": "מרכז תמיכה"
 }

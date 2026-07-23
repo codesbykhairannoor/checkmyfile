@@ -1,15 +1,27 @@
 {
   "title": "Crop PDF Margins — Trim Pages Offline",
   "h1": "Crop and Trim PDF Page Margins Instantly",
-  "description": "Remove unwanted whitespace or crop PDF pages to custom dimensions, all locally. No upload. Ideal for users in New York.",
+  "description": "Remove unwanted whitespace or crop PDF pages to custom dimensions, all locally. Fast and completely secure.",
+  "buttonText": "Crop PDF",
+  "badges": [
+    "Visual margin editor",
+    "Uniform cropping",
+    "Zero latency"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
+      "type": "crop_hero_features",
       "title": "Why Crop PDFs Locally?",
       "content": "Scanned documents often have large margins. Crop them locally without exposing internal document structure to the cloud."
     },
     {
-      "type": "split_how_to_steps",
+      "type": "crop_how_to_steps",
       "title": "How to Crop PDF Pages",
       "steps": [
         {
@@ -27,17 +39,17 @@
       ]
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Precise Cropping for New York Users",
-      "content": "Architects and designers in New York use our crop tool to clean up scanned blueprints without cloud uploads."
+      "type": "crop_geo_targeting",
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy."
     },
     {
-      "type": "split_privacy_security",
+      "type": "crop_privacy_security",
       "title": "Technical Documents Stay Local",
       "content": "Architectural plans and legal PDFs cropped locally without any server round-trip."
     },
     {
-      "type": "split_performance",
+      "type": "crop_performance",
       "title": "Crop Any Size PDF Instantly",
       "content": "Crop margins from a 200-page document in under 2 seconds. All in your browser."
     }

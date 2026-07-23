@@ -1,67 +1,85 @@
 {
-  "title": "Unlock PDF — Remove Password Offline",
-  "h1": "Remove PDF Password Protection Instantly in Your Browser",
-  "description": "Unlock password-protected PDFs locally if you know the password. 100% private. No upload. Perfect for users in Copenhagen.",
+  "title": "Lås PDF op — Fjern adgangskode offline",
+  "h1": "Fjern PDF-adgangskodebeskyttelse øjeblikkeligt i din browser",
+  "description": "Lås adgangskodebeskyttede PDF'er op lokalt, hvis du kender adgangskoden. 100% privat. Ingen upload. 100 % sikker lokal behandling.",
+  "buttonText": "Unlock PDF",
+  "badges": [
+    "Fjern adgangskode",
+    "Øjeblikkelig oplåsning",
+    "Ingen serverlogs"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "unlock_hero_features",
-      "title": "Why Unlock PDFs Locally?",
-      "content": "You have the password to your own file. Unlocking it should not require uploading sensitive documents to an external service."
+      "title": "Hvorfor låse op for PDF-filer lokalt?",
+      "content": "Du har adgangskoden til din egen fil. Oplåsning af den burde ikke kræve upload af følsomme dokumenter til en ekstern tjeneste."
     },
     {
       "type": "unlock_how_to_steps",
-      "title": "How to Unlock a Protected PDF",
+      "title": "Sådan låser du op for en beskyttet PDF",
       "steps": [
         {
-          "title": "Open Protected PDF",
-          "description": "Select the password-protected PDF."
+          "title": "Åbn beskyttet PDF",
+          "description": "Vælg den adgangskodebeskyttede PDF."
         },
         {
-          "title": "Enter Your Password",
-          "description": "Provide the existing password — decryption stays in your browser."
+          "title": "Indtast din adgangskode",
+          "description": "Angiv den eksisterende adgangskode - dekryptering forbliver i din browser."
         },
         {
-          "title": "Download Unlocked PDF",
-          "description": "Get your unlocked, fully accessible PDF instantly."
+          "title": "Download ulåst PDF",
+          "description": "Få din ulåste, fuldt tilgængelige PDF med det samme."
         }
-      ]
+      ],
+      "badgeText": "Hurtig guide"
     },
     {
       "type": "unlock_geo_targeting",
-      "title": "Instant PDF Unlocking for Copenhagen Users",
-      "content": "Users in Copenhagen access their own password-protected files without sending decryption keys to any server."
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle handlinger udføres direkte på din lokale enhed. Vi bruger avanceret WebAssembly-teknologi til at behandle dine dokumenter uden nogensinde at uploade dem til eksterne servere, hvilket sikrer fuldstændigt privatliv.",
+      "badgeText": "Lokal behandling"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Your Password Never Leaves the Browser",
-      "content": "The decryption key and your document are processed entirely in browser memory — never transmitted to any server or service."
+      "title": "Din adgangskode forlader aldrig browseren",
+      "content": "Dekrypteringsnøglen og dit dokument behandles udelukkende i browserens hukommelse - sendes aldrig til nogen server eller tjeneste.",
+      "badgeText": "Sikkerhed først"
     },
     {
       "type": "unlock_performance",
-      "title": "Instant Browser-Local Decryption",
-      "content": "AES decryption in your browser takes under a second — far faster than any cloud service with no upload wait."
+      "title": "Øjeblikkelig browser-lokal dekryptering",
+      "content": "AES-dekryptering i din browser tager under et sekund - langt hurtigere end nogen cloud-tjeneste uden at vente på upload.",
+      "badgeText": "Lynhurtigt"
     }
   ],
   "faqs": [
     {
-      "q": "Does it work without the password?",
-      "a": "No, you must know the existing password to unlock."
+      "q": "Virker det uden adgangskoden?",
+      "a": "Nej, du skal kende den eksisterende adgangskode for at låse op."
     },
     {
-      "q": "Can I unlock permissions-restricted PDFs?",
-      "a": "Yes, permission restrictions are removed after password verification."
+      "q": "Kan jeg låse op for tilladelsesbegrænsede PDF'er?",
+      "a": "Ja, tilladelsesbegrænsninger fjernes efter adgangskodebekræftelse."
     },
     {
-      "q": "Is the decryption process secure?",
-      "a": "All decryption happens in your browser memory; nothing is transmitted."
+      "q": "Er dekrypteringsprocessen sikker?",
+      "a": "Al dekryptering sker i din browsers hukommelse; intet overføres."
     },
     {
-      "q": "What if the password is wrong?",
-      "a": "You will see an error and can try again with the correct password."
+      "q": "Hvad hvis adgangskoden er forkert?",
+      "a": "Du vil se en fejl og kan prøve igen med den korrekte adgangskode."
     },
     {
-      "q": "Is this free?",
+      "q": "Er dette gratis?",
       "a": "Ja, helt gratis."
     }
-  ]
+  ],
+  "faqTitle": "Ofte stillede spørgsmål",
+  "supportCenter": "Supportcenter"
 }

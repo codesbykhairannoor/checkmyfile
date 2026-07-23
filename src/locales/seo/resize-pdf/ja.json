@@ -1,67 +1,85 @@
 {
-  "title": "Resize PDF Pages — Change Paper Size Offline",
-  "h1": "Resize PDF Pages to A4, Letter, or Custom Sizes",
-  "description": "Change the paper size of every PDF page to A4, US Letter, or custom dimensions entirely in your browser. No upload. Ideal for users in Tokyo.",
+  "title": "PDF ページのサイズを変更する — オフラインで用紙サイズを変更する",
+  "h1": "PDF ページのサイズを A4、レター、またはカスタム サイズに変更する",
+  "description": "ブラウザですべての PDF ページの用紙サイズを A4、US レター、またはカスタム サイズに完全に変更します。 アップロードはありません。 100% 安全なローカル処理。",
+  "buttonText": "Resize Pages",
+  "badges": [
+    "A4、レター、カスタム",
+    "余白を追加する",
+    "フォーマット修正"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Resize PDFs Locally?",
-      "content": "Preparing documents for printing requires proper page sizing. Resize locally without uploading internal documents to the cloud."
+      "type": "resize_hero_features",
+      "title": "PDF をローカルでサイズ変更する理由",
+      "content": "印刷用にドキュメントを準備するには、適切なページ サイズ設定が必要です。 内部ドキュメントをクラウドにアップロードせずに、ローカルでサイズを変更します。"
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Resize PDF Pages",
+      "type": "resize_how_to_steps",
+      "title": "PDF ページのサイズを変更する方法",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page dimensions."
+          "title": "PDF を開く",
+          "description": "ページ寸法が正しくない PDF をロードします。"
         },
         {
-          "title": "Select Target Size",
-          "description": "Choose A4, Letter, A3, or enter custom dimensions."
+          "title": "ターゲット サイズを選択",
+          "description": "A4、レター、A3 を選択するか、カスタム寸法を入力します。"
         },
         {
-          "title": "Download Resized PDF",
-          "description": "Get your properly sized document instantly."
+          "title": "サイズ変更された PDF をダウンロード",
+          "description": "適切なサイズのドキュメントをすぐに入手できます。"
         }
-      ]
+      ],
+      "badgeText": "クイックガイド"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Resizing for Tokyo Print Shops",
-      "content": "Print shops and offices in Tokyo resize documents to standard sizes without cloud dependency."
+      "type": "resize_geo_targeting",
+      "title": "100% 安全なローカル処理",
+      "content": "すべての操作はローカル デバイス上で直接実行されます。 当社は高度な WebAssembly テクノロジーを使用して、ドキュメントを外部サーバーにアップロードすることなく処理し、完全なプライバシーを確​​保します。",
+      "badgeText": "ローカル処理"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Internal Documents Stay Internal",
-      "content": "Resize business reports and proposals without any server-side processing."
+      "type": "resize_privacy_security",
+      "title": "内部文書は内部に残ります",
+      "content": "サーバー側の処理を行わずに、ビジネス レポートと提案書のサイズを変更します。",
+      "badgeText": "セキュリティ第一"
     },
     {
-      "type": "transform_performance",
-      "title": "Resize Hundreds of Pages Instantly",
-      "content": "Resizing a 500-page PDF takes under 2 seconds. All in your browser."
+      "type": "resize_performance",
+      "title": "数百ページのサイズを瞬時に変更",
+      "content": "500 ページの PDF のサイズ変更には 2 秒もかかりません。 すべてブラウザ内で。",
+      "badgeText": "超高速"
     }
   ],
   "faqs": [
     {
-      "q": "What sizes are available?",
-      "a": "A4, A3, A5, US Letter, Legal, and custom dimensions."
+      "q": "どのようなサイズが利用可能ですか?",
+      "a": "A4、A3、A5、US レター、リーガル、およびカスタム寸法。"
     },
     {
-      "q": "Does content scale with the page?",
-      "a": "Yes, content is scaled proportionally by default."
+      "q": "コンテンツはページに合わせて拡大されますか?",
+      "a": "はい、デフォルトではコンテンツは比例して拡大縮小されます。"
     },
     {
-      "q": "Can I resize individual pages?",
-      "a": "Yes, apply different sizes to specific pages."
+      "q": "個々のページのサイズを変更できますか?",
+      "a": "はい、特定のページに異なるサイズを適用します。"
     },
     {
-      "q": "Is the quality affected?",
-      "a": "Vector content is re-rendered perfectly; images may scale."
+      "q": "品質に影響はありますか?",
+      "a": "ベクター コンテンツは完全に再レンダリングされます。 画像は拡大縮小される場合があります。"
     },
     {
-      "q": "Is this free?",
-      "a": "はい、完全無料です。"
+      "q": "これは無料ですか？",
+      "a": "はい、完全に無料です。"
     }
-  ]
+  ],
+  "faqTitle": "よくある質問",
+  "supportCenter": "サポート センター"
 }

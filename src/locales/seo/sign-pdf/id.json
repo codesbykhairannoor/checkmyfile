@@ -1,67 +1,85 @@
 {
-  "title": "Sign PDF Online — Draw Signature Offline",
-  "h1": "Sign PDF Documents With Your Signature Without Uploading",
-  "description": "Draw, type, or upload your signature and place it on PDFs entirely in your browser. No cloud. Perfect for users in Jakarta.",
+  "title": "Tanda Tangan PDF Online — Gambar Tanda Tangan Offline",
+  "h1": "Tandatangani Dokumen PDF Dengan Tanda Tangan Anda Tanpa Mengunggah",
+  "description": "Gambar, ketik, atau unggah tanda tangan Anda dan letakkan di PDF seluruhnya di browser Anda. Tidak ada awan. Pemrosesan lokal 100% aman.",
+  "buttonText": "Sign PDF",
+  "badges": [
+    "Tanda Tangan Digital",
+    "Gambar atau Ketik",
+    "Mengikat Secara Hukum"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "sign_hero_features",
-      "title": "Why Sign PDFs Locally?",
-      "content": "Your signature is your identity. Never upload your drawn signature or a private contract to a third-party cloud signing service."
+      "title": "Mengapa Menandatangani PDF Secara Lokal?",
+      "content": "Tanda tangan Anda adalah identitas Anda. Jangan pernah mengunggah tanda tangan Anda yang dibuat atau kontrak pribadi ke layanan penandatanganan cloud pihak ketiga."
     },
     {
       "type": "sign_how_to_steps",
-      "title": "How to Sign a PDF in 3 Steps",
+      "title": "Cara Menandatangani PDF dalam 3 Langkah",
       "steps": [
         {
-          "title": "Create Your Signature",
-          "description": "Draw with mouse, type in signature font, or upload an image."
+          "title": "Buat Tanda Tangan Anda",
+          "description": "Menggambar dengan mouse, mengetikkan font tanda tangan, atau mengunggah gambar."
         },
         {
-          "title": "Place on Document",
-          "description": "Drag and resize your signature to the correct position."
+          "title": "Tempatkan pada Dokumen",
+          "description": "Seret dan ubah ukuran tanda tangan Anda ke posisi yang benar."
         },
         {
-          "title": "Download Signed PDF",
-          "description": "Save your signed document immediately, no account needed."
+          "title": "Unduh PDF yang Ditandatangani",
+          "description": "Simpan segera dokumen yang Anda tandatangani, tidak perlu akun."
         }
-      ]
+      ],
+      "badgeText": "Panduan Singkat"
     },
     {
       "type": "sign_geo_targeting",
-      "title": "Private Digital Signatures for Jakarta",
-      "content": "Freelancers and businesses in Jakarta sign contracts, NDAs, and agreements without exposing their identity or documents to any cloud service."
+      "title": "Pemrosesan Lokal 100% Aman",
+      "content": "Semua operasi dilakukan langsung di perangkat lokal Anda. Kami menggunakan teknologi WebAssembly yang canggih untuk memproses dokumen Anda tanpa harus mengunggahnya ke server eksternal, sehingga memastikan privasi sepenuhnya.",
+      "badgeText": "Pemrosesan Lokal"
     },
     {
       "type": "sign_privacy_security",
-      "title": "Your Signature Identity Stays Private",
-      "content": "Your drawn signature and signed document are processed entirely in browser memory — never stored, never transmitted."
+      "title": "Identitas Tanda Tangan Anda Tetap Pribadi",
+      "content": "Tanda tangan dan dokumen yang Anda tandatangani diproses seluruhnya di memori browser — tidak pernah disimpan, tidak pernah dikirimkan.",
+      "badgeText": "Keamanan Pertama"
     },
     {
       "type": "sign_performance",
-      "title": "Sign Any Document in Under 30 Seconds",
-      "content": "No account, no upload, no cloud. Draw, place, and download your signed PDF in under 30 seconds."
+      "title": "Tandatangani Dokumen Apa Pun dalam Waktu Kurang dari 30 Detik",
+      "content": "Tanpa akun, tanpa unggahan, tanpa cloud. Gambar, letakkan, dan unduh PDF yang Anda tandatangani dalam waktu kurang dari 30 detik.",
+      "badgeText": "Secepat Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "How can I create my signature?",
-      "a": "Draw with your mouse, type your name in a signature font, or upload an image."
+      "q": "Bagaimana cara membuat tanda tangan saya?",
+      "a": "Gambarlah dengan mouse Anda, ketikkan nama Anda dalam font tanda tangan, atau unggah gambar."
     },
     {
-      "q": "Can I sign multiple pages?",
-      "a": "Yes, place your signature on any or all pages."
+      "q": "Bisakah saya menandatangani beberapa halaman?",
+      "a": "Ya, letakkan tanda tangan Anda di salah satu atau semua halaman."
     },
     {
-      "q": "Is the signature legally binding?",
-      "a": "Our tool applies a visual signature. For legally binding e-signatures, check your jurisdiction."
+      "q": "Apakah tanda tangan tersebut mengikat secara hukum?",
+      "a": "Alat kami menerapkan tanda tangan visual. Untuk tanda tangan elektronik yang mengikat secara hukum, periksa yurisdiksi Anda."
     },
     {
-      "q": "Can I resize the signature?",
-      "a": "Yes, drag the corners to resize it after placing."
+      "q": "Bisakah saya mengubah ukuran tanda tangan?",
+      "a": "Ya, seret sudut untuk mengubah ukurannya setelah ditempatkan."
     },
     {
-      "q": "Is this free?",
+      "q": "Apakah ini gratis?",
       "a": "Ya, sepenuhnya gratis."
     }
-  ]
+  ],
+  "faqTitle": "Pertanyaan yang Sering Diajukan",
+  "supportCenter": "Pusat Dukungan"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "OCR PDF — Make Scans Searchable Offline",
-  "h1": "Extract and Recognize Text from Scanned PDFs",
-  "description": "Run OCR on scanned PDFs to make them searchable and copyable, entirely in your browser using Tesseract. No upload. Great for users in Bucharest.",
+  "title": "OCR PDF — Faceți scanările căutabile offline",
+  "h1": "Extrageți și recunoașteți textul din PDF-urile scanate",
+  "description": "Rulați OCR pe PDF-urile scanate pentru a le face căutate și copiate, în întregime în browser folosind Tesseract. Fără încărcare. Procesare locală 100% sigură.",
+  "buttonText": "Run OCR",
+  "badges": [
+    "Extrage text",
+    "PDF căutabil",
+    "Recunoaștere AI"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Run OCR Locally?",
-      "content": "Scanned PDFs contain sensitive text. Running OCR on a cloud service exposes that text to a third party. Ours runs 100% offline."
+      "type": "ocr_hero_features",
+      "title": "De ce să rulați OCR local?",
+      "content": "PDF-urile scanate conțin text sensibil. Rularea OCR pe un serviciu cloud expune acel text unei terțe părți. Al nostru rulează 100% offline."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to OCR a PDF",
+      "type": "ocr_how_to_steps",
+      "title": "Cum să OCR un PDF",
       "steps": [
         {
-          "title": "Load Scanned PDF",
-          "description": "Select the image-based or scanned PDF."
+          "title": "Încărcați PDF scanat",
+          "description": "Selectați PDF-ul bazat pe imagine sau scanat."
         },
         {
-          "title": "Select Language",
-          "description": "Choose the document language for better accuracy."
+          "title": "Selectați limba",
+          "description": "Alegeți limba documentului pentru o mai bună acuratețe."
         },
         {
-          "title": "Download Searchable PDF",
-          "description": "Get a text-layer PDF ready to search and copy."
+          "title": "Descărcați PDF căutabil",
+          "description": "Pregătiți un PDF cu strat de text pentru căutare și copiere."
         }
-      ]
+      ],
+      "badgeText": "Ghid rapid"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "OCR Tool for Bucharest Archives",
-      "content": "Government agencies and businesses in Bucharest digitize paper archives using our offline OCR tool."
+      "type": "ocr_geo_targeting",
+      "title": "Procesare locală 100% sigură",
+      "content": "Toate operațiunile sunt efectuate direct pe dispozitivul local. Folosim tehnologie avansată WebAssembly pentru a vă procesa documentele fără a le încărca vreodată pe servere externe, asigurând confidențialitate completă.",
+      "badgeText": "Prelucrare locală"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Content Never Exposed",
-      "content": "OCR processing using Tesseract WASM runs entirely in browser memory — no API calls, no data transmission."
+      "type": "ocr_privacy_security",
+      "title": "Conținut scanat niciodată expus",
+      "content": "Procesarea OCR folosind Tesseract WASM rulează în întregime în memoria browserului - fără apeluri API, fără transmitere de date.",
+      "badgeText": "Securitatea în primul rând"
     },
     {
-      "type": "organizer_performance",
-      "title": "OCR Any Document Locally",
-      "content": "Process a 20-page scanned PDF in under 30 seconds. All Tesseract processing happens in-browser."
+      "type": "ocr_performance",
+      "title": "OCR Orice document local",
+      "content": "Procesați un PDF scanat de 20 de pagini în mai puțin de 30 de secunde. Toată procesarea Tesseract are loc în browser.",
+      "badgeText": "Rapid fulger"
     }
   ],
   "faqs": [
     {
-      "q": "What languages does OCR support?",
-      "a": "Over 100 languages via Tesseract engine."
+      "q": "Ce limbi acceptă OCR?",
+      "a": "Peste 100 de limbi prin motorul Tesseract."
     },
     {
-      "q": "How accurate is the OCR?",
-      "a": "Accuracy depends on scan quality; clear, high-contrast scans yield 95%+ accuracy."
+      "q": "Cât de precis este OCR?",
+      "a": "Precizia depinde de calitatea scanării; scanările clare, cu contrast ridicat oferă o precizie de peste 95%."
     },
     {
-      "q": "Does it create a searchable PDF?",
-      "a": "Yes, a text layer is added making the PDF fully searchable."
+      "q": "Creează un PDF care poate fi căutat?",
+      "a": "Da, este adăugat un strat de text, făcând PDF-ul complet căutat."
     },
     {
-      "q": "Can I copy text from the result?",
-      "a": "Yes, the output PDF has selectable, copyable text."
+      "q": "Pot copia textul din rezultat?",
+      "a": "Da, PDF-ul de ieșire are text selectabil și copiabil."
     },
     {
-      "q": "Is this free?",
-      "a": "Da, complet gratuit."
+      "q": "Este gratuit?",
+      "a": "Da, întotdeauna gratuit."
     }
-  ]
+  ],
+  "faqTitle": "Întrebări frecvente",
+  "supportCenter": "Centrul de suport"
 }

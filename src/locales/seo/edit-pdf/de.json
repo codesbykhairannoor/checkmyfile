@@ -1,0 +1,85 @@
+{
+  "title": "PDF bearbeiten – Kostenloser Offline-PDF-Editor",
+  "h1": "Bearbeiten Sie PDF-Dokumente direkt in Ihrem Browser",
+  "description": "Fügen Sie Ihren PDF-Dateien lokal Text, Signaturen und Anmerkungen hinzu. Keine Uploads, maximale Privatsphäre. 100 % sichere lokale Verarbeitung.",
+  "sections": [
+    {
+      "type": "edit_hero_features",
+      "title": "Warum PDFs lokal bearbeiten?",
+      "content": "Das Hochladen sensibler Verträge und Formulare in einen Cloud-Editor stellt ein enormes Datenschutzrisiko dar. Unser WebAssembly-Editor läuft direkt auf Ihrem Gerät und stellt sicher, dass Ihre Dokumente Ihren Computer nie verlassen."
+    },
+    {
+      "type": "edit_how_to_steps",
+      "title": "So bearbeiten Sie ein PDF",
+      "steps": [
+        {
+          "title": "Dokument öffnen",
+          "description": "Wählen Sie die PDF-Datei aus, die Sie mit Anmerkungen versehen oder signieren möchten."
+        },
+        {
+          "title": "Text und Elemente hinzufügen",
+          "description": "Nutzen Sie unsere intuitiven Tools, um Text hinzuzufügen, zu zeichnen oder Bilder zu platzieren."
+        },
+        {
+          "title": "Änderungen speichern",
+          "description": "Exportieren Sie das geänderte PDF sofort, ohne auf Downloads warten zu müssen."
+        }
+      ],
+      "badgeText": "Kurzanleitung"
+    },
+    {
+      "type": "edit_geo_targeting",
+      "title": "100 % sichere lokale Verarbeitung",
+      "content": "Alle Vorgänge werden direkt auf Ihrem lokalen Gerät ausgeführt. Wir verwenden fortschrittliche WebAssembly-Technologie, um Ihre Dokumente zu verarbeiten, ohne sie jemals auf externe Server hochzuladen, und gewährleisten so absolute Privatsphäre.",
+      "badgeText": "Lokale Verarbeitung"
+    },
+    {
+      "type": "edit_privacy_security",
+      "title": "Keine Datenübertragung",
+      "content": "Im Gegensatz zu herkömmlichen PDF-Editoren, die Ihre Dateien auf ihre Server hochladen, verarbeitet unsere Plattform alles in Ihrem Browserspeicher.",
+      "badgeText": "Sicherheit geht vor"
+    },
+    {
+      "type": "edit_performance",
+      "title": "Sofortiges Offline-Rendering",
+      "content": "Unser Editor lädt riesige PDF-Dateien in Millisekunden. Sie können Hunderte von Anmerkungen ohne Verzögerung oder Netzwerkverzögerung hinzufügen.",
+      "badgeText": "Blitzschnell"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Kann ich vorhandenen Text im PDF bearbeiten?",
+      "a": "Derzeit können Sie dem vorhandenen Dokument neuen Text, Formen und Bilder hinzufügen."
+    },
+    {
+      "q": "Werden meine Dateien irgendwo hochgeladen?",
+      "a": "Nein, die gesamte Bearbeitung erfolgt lokal in Ihrem Browser mithilfe von WebAssembly."
+    },
+    {
+      "q": "Kann ich Dokumente unterschreiben?",
+      "a": "Ja, Sie können Ihre Unterschrift zeichnen oder ein Bild davon hochladen."
+    },
+    {
+      "q": "Ist die Nutzung des Editors kostenlos?",
+      "a": "Ja, es ist 100 % kostenlos, ohne Premium-Paywalls oder versteckte Gebühren."
+    },
+    {
+      "q": "Funktioniert es auf Mobilgeräten?",
+      "a": "Ja, der Editor reagiert vollständig und unterstützt die Touch-Eingabe zum Zeichnen."
+    }
+  ],
+  "badges": [
+    "Keine Wasserzeichen",
+    "100 % kostenlos",
+    "Offline-Editor"
+  ],
+  "stats": [
+    "100% Private",
+    "0 Server Uploads",
+    "Client-Side Only",
+    "No Accounts"
+  ],
+  "buttonText": "Start Editing",
+  "faqTitle": "Häufig gestellte Fragen",
+  "supportCenter": "Support-Center"
+}

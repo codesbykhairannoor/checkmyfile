@@ -1,0 +1,85 @@
+{
+  "title": "Rediger PDF - Gratis offline PDF Editor",
+  "h1": "Rediger PDF-dokumenter direkte i nettleseren din",
+  "description": "Legg til tekst, signaturer og merknader til PDF-filene dine lokalt. Ingen opplastinger, maksimalt personvern. 100 % sikker lokal behandling.",
+  "sections": [
+    {
+      "type": "edit_hero_features",
+      "title": "Hvorfor redigere PDF-filer lokalt?",
+      "content": "Å laste opp sensitive kontrakter og skjemaer til en skyredigerer er en enorm personvernrisiko. WebAssembly-editoren vår kjører direkte på enheten din, og sikrer at dokumentene dine aldri forlater datamaskinen."
+    },
+    {
+      "type": "edit_how_to_steps",
+      "title": "Hvordan redigere en PDF",
+      "steps": [
+        {
+          "title": "Åpne dokument",
+          "description": "Velg PDF-filen du vil kommentere eller signere."
+        },
+        {
+          "title": "Legg til tekst og elementer",
+          "description": "Bruk våre intuitive verktøy for å legge til tekst, tegne eller plassere bilder."
+        },
+        {
+          "title": "Lagre endringer",
+          "description": "Eksporter den endrede PDF-filen umiddelbart uten å vente på nedlastinger."
+        }
+      ],
+      "badgeText": "Hurtigguide"
+    },
+    {
+      "type": "edit_geo_targeting",
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle operasjoner utføres direkte på din lokale enhet. Vi bruker avansert WebAssembly-teknologi for å behandle dokumentene dine uten å laste dem opp til eksterne servere, noe som sikrer fullstendig personvern.",
+      "badgeText": "Lokal behandling"
+    },
+    {
+      "type": "edit_privacy_security",
+      "title": "Null dataoverføring",
+      "content": "I motsetning til tradisjonelle PDF-redigerere som laster opp filene dine til serverne deres, behandler plattformen vår alt i nettleserens minne.",
+      "badgeText": "Sikkerhet først"
+    },
+    {
+      "type": "edit_performance",
+      "title": "Øyeblikkelig frakoblet gjengivelse",
+      "content": "Redaktøren vår laster inn enorme PDF-filer på millisekunder. Du kan legge til hundrevis av merknader uten forsinkelser eller nettverksforsinkelser.",
+      "badgeText": "Lynrask"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Kan jeg redigere eksisterende tekst i PDF-en?",
+      "a": "For øyeblikket kan du legge til ny tekst, former og bilder over det eksisterende dokumentet."
+    },
+    {
+      "q": "Er filene mine lastet opp noe sted?",
+      "a": "Nei, all redigering skjer lokalt i nettleseren din ved hjelp av WebAssembly."
+    },
+    {
+      "q": "Kan jeg signere dokumenter?",
+      "a": "Ja, du kan tegne signaturen din eller laste opp et bilde av den."
+    },
+    {
+      "q": "Er redaktøren gratis å bruke?",
+      "a": "Ja, det er 100 % gratis uten premium betalingsmurer eller skjulte avgifter."
+    },
+    {
+      "q": "Fungerer det på mobile enheter?",
+      "a": "Ja, redaktøren er fullstendig responsiv og støtter berøringsinndata for tegning."
+    }
+  ],
+  "badges": [
+    "Ingen vannmerker",
+    "100 % gratis",
+    "Frakoblet redaktør"
+  ],
+  "stats": [
+    "100% Private",
+    "0 Server Uploads",
+    "Client-Side Only",
+    "No Accounts"
+  ],
+  "buttonText": "Start Editing",
+  "faqTitle": "Ofte stilte spørsmål",
+  "supportCenter": "Støttesenter"
+}

@@ -1,67 +1,85 @@
 {
-  "title": "Excel to CSV Converter — Export Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to CSV Locally",
-  "description": "Export .xlsx files to clean .csv format entirely in your browser. No upload. Ideal for developers in Kuala Lumpur.",
+  "title": "Excel to CSV Converter — Eksport Hamparan Luar Talian",
+  "h1": "Tukar Hamparan Excel kepada CSV Setempat",
+  "description": "Eksport fail .xlsx untuk membersihkan format .csv sepenuhnya dalam penyemak imbas anda. Tiada muat naik. 100% pemprosesan tempatan selamat.",
+  "buttonText": "Convert to CSV",
+  "badges": [
+    "Data Mentah",
+    "Import Pangkalan Data",
+    "Eksport Pantas"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Export to CSV Offline?",
-      "content": "Exporting spreadsheets to CSV for data pipelines should not expose your raw data to any external API."
+      "type": "excel_csv_hero_features",
+      "title": "Mengapa Eksport ke CSV Luar Talian?",
+      "content": "Mengeksport hamparan ke CSV untuk saluran paip data tidak seharusnya mendedahkan data mentah anda kepada mana-mana API luaran."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Excel to CSV",
+      "type": "excel_csv_how_to_steps",
+      "title": "Cara Menukar Excel kepada CSV",
       "steps": [
         {
-          "title": "Open Excel File",
-          "description": "Select the .xlsx spreadsheet."
+          "title": "Buka Fail Excel",
+          "description": "Pilih hamparan .xlsx."
         },
         {
-          "title": "Choose Sheet",
-          "description": "Pick which sheet to export as CSV."
+          "title": "Pilih Helaian",
+          "description": "Pilih helaian untuk dieksport sebagai CSV."
         },
         {
-          "title": "Download CSV",
-          "description": "Get your clean CSV file instantly."
+          "title": "Muat turun CSV",
+          "description": "Dapatkan fail CSV bersih anda serta-merta."
         }
-      ]
+      ],
+      "badgeText": "Panduan Pantas"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Developer Tools for Kuala Lumpur",
-      "content": "Developers and data engineers in Kuala Lumpur export spreadsheets to CSV for pipelines without cloud intermediaries."
+      "type": "excel_csv_geo_targeting",
+      "title": "100% Pemprosesan Tempatan Selamat",
+      "content": "Semua operasi dilakukan terus pada peranti tempatan anda. Kami menggunakan teknologi WebAssembly termaju untuk memproses dokumen anda tanpa pernah memuat naiknya ke pelayan luaran, memastikan privasi lengkap.",
+      "badgeText": "Pemprosesan Setempat"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Spreadsheet Data Stays Local",
-      "content": "Financial models and business data exported to CSV without any server-side processing."
+      "type": "excel_csv_privacy_security",
+      "title": "Data Hamparan Kekal Setempat",
+      "content": "Model kewangan dan data perniagaan dieksport ke CSV tanpa sebarang pemprosesan bahagian pelayan.",
+      "badgeText": "Keselamatan Diutamakan"
     },
     {
-      "type": "organizer_performance",
-      "title": "Export Any Spreadsheet Instantly",
-      "content": "Export a 50,000-row Excel file to CSV in under 1 second. All in-browser."
+      "type": "excel_csv_performance",
+      "title": "Eksport Mana-mana Hamparan Dengan Segera",
+      "content": "Eksport fail Excel 50,000 baris ke CSV dalam masa kurang dari 1 saat. Semua dalam penyemak imbas.",
+      "badgeText": "Sepantas Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "Can I export multiple sheets?",
-      "a": "Yes, export each sheet as a separate CSV file."
+      "q": "Bolehkah saya mengeksport berbilang helaian?",
+      "a": "Ya, eksport setiap helaian sebagai fail CSV yang berasingan."
     },
     {
-      "q": "Is Excel formatting preserved in CSV?",
-      "a": "CSV is plain text; formatting is removed but all values are preserved."
+      "q": "Adakah pemformatan Excel disimpan dalam CSV?",
+      "a": "CSV ialah teks biasa; pemformatan dialih keluar tetapi semua nilai dikekalkan."
     },
     {
-      "q": "Can I choose the delimiter?",
-      "a": "Yes, choose comma, semicolon, or tab."
+      "q": "Bolehkah saya memilih pembatas?",
+      "a": "Ya, pilih koma, titik bertitik atau tab."
     },
     {
-      "q": "Are formulas exported as values?",
-      "a": "Yes, formula results (not formulas) are written to the CSV."
+      "q": "Adakah formula dieksport sebagai nilai?",
+      "a": "Ya, hasil formula (bukan formula) ditulis ke CSV."
     },
     {
-      "q": "Is this free?",
+      "q": "Adakah ini percuma?",
       "a": "Ya, percuma sepenuhnya."
     }
-  ]
+  ],
+  "faqTitle": "Soalan Lazim",
+  "supportCenter": "Pusat Sokongan"
 }

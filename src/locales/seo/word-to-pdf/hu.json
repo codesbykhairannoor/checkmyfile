@@ -1,67 +1,80 @@
 {
-  "title": "Word to PDF Converter — No Upload Required",
-  "h1": "Convert Word Documents to PDF Instantly",
-  "description": "Transform .docx files into perfect PDFs directly in your browser. Zero upload, 100% private. Ideal for users in Budapest.",
+  "title": "Word–PDF konvertáló – nem szükséges feltöltés",
+  "h1": "Word-dokumentumok azonnali konvertálása PDF-be",
+  "description": "Alakítsa át a .docx fájlokat tökéletes PDF-ekké közvetlenül a böngészőjében. Nulla feltöltés, 100% privát. Ideális budapesti felhasználóknak.",
+  "buttonText": "Dokumentum konvertálása",
+  "badges": [
+    "Munkaszerződések",
+    "Jogi rövidnadrágok",
+    "Önéletrajzok és önéletrajzok"
+  ],
+  "stats": [
+    "100%",
+    "Helyi",
+    "0s",
+    "Várj Idő"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Word to PDF Offline?",
-      "content": "Your Word document contains sensitive data. Our converter runs entirely in WebAssembly — your file never touches a server."
+      "type": "word_hero_features",
+      "title": "Miért használja offline?",
+      "content": "A Word-dokumentum érzékeny adatokat tartalmaz. Átalakítónk teljes egészében WebAssembly-ben fut – a fájl soha nem érinti a szervert."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Word to PDF",
+      "type": "word_how_to_steps",
+      "title": "Hogyan kell használni",
       "steps": [
         {
-          "title": "Select .docx File",
-          "description": "Pick your Word document from your computer."
+          "title": "Válassza ki a .docx fájlt",
+          "description": "Válassza ki a Word-dokumentumot a számítógépéről."
         },
         {
-          "title": "Preview Output",
-          "description": "See the PDF rendering before finalizing."
+          "title": "Előnézeti kimenet",
+          "description": "Tekintse meg a PDF renderelést a véglegesítés előtt."
         },
         {
-          "title": "Download PDF",
-          "description": "Save your perfectly converted PDF instantly."
+          "title": "PDF letöltése",
+          "description": "Mentse el a tökéletesen konvertált PDF-fájlt azonnal."
         }
       ]
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Word to PDF for Budapest Users",
-      "content": "Used by professionals in Budapest who need to share documents without losing formatting."
+      "type": "word_geo_targeting",
+      "title": "Word to PDF budapesti felhasználóknak",
+      "content": "Olyan budapesti szakemberek használják, akiknek a formázás elvesztése nélkül kell megosztaniuk a dokumentumokat."
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Your Contracts Stay Private",
-      "content": "Converting employment contracts? Legal briefs? Our WASM processor never phones home."
+      "type": "word_privacy_security",
+      "title": "Szerződései továbbra is privátak maradnak",
+      "content": "Munkaszerződések átalakítása? Jogi rövidnadrág? Our WASM processor never phones home."
     },
     {
-      "type": "combiner_performance",
-      "title": "No More Conversion Queues",
-      "content": "Cloud converters put you in a queue. Ours converts in under 2 seconds, entirely offline."
+      "type": "word_performance",
+      "title": "Nincs több konverziós sor",
+      "content": "A felhőkonverterek sorba állítják. A miénk 2 másodperc alatt konvertálódik, teljesen offline állapotban."
     }
   ],
   "faqs": [
     {
-      "q": "Does it preserve Word formatting?",
-      "a": "Yes, fonts, tables, and images are preserved using our WASM renderer."
+      "q": "Megőrzi a Word formázását?",
+      "a": "Igen, a betűtípusokat, táblázatokat és képeket a WASM megjelenítőnk őrzi meg."
     },
     {
-      "q": "What Word versions are supported?",
-      "a": "All modern .docx files are supported."
+      "q": "Milyen Word-verziók támogatottak?",
+      "a": "Minden modern .docx fájl támogatott."
     },
     {
-      "q": "Is there a file size limit?",
-      "a": "No server limits! Only your device RAM is the constraint."
+      "q": "Van-e fájlméret korlátozás?",
+      "a": "Nincsenek szerverkorlátok! Csak az eszköz RAM-ja a korlátozás."
     },
     {
-      "q": "Can I batch convert multiple files?",
-      "a": "Yes, select multiple .docx files at once."
+      "q": "Konvertálhatok kötegelt több fájlt?",
+      "a": "Igen, válasszon ki egyszerre több .docx fájlt."
     },
     {
-      "q": "Is this free?",
+      "q": "Ez ingyenes?",
       "a": "Igen, teljesen ingyenes."
     }
-  ]
+  ],
+  "faqTitle": "Gyakran Ismételt Kérdések"
 }

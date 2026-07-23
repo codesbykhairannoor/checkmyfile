@@ -1,67 +1,85 @@
 {
-  "title": "Redact PDF — Permanently Remove Sensitive Data",
-  "h1": "Permanently Redact Sensitive Information from PDFs Offline",
-  "description": "Black out sensitive text and images in PDFs entirely in your browser. No cloud risk. Critical for users in Berlin.",
+  "title": "PDF redigieren – Sensible Daten dauerhaft entfernen",
+  "h1": "Vertrauliche Informationen aus PDFs dauerhaft offline schwärzen",
+  "description": "Schwärzen Sie vertrauliche Texte und Bilder in PDFs vollständig in Ihrem Browser. Kein Cloud-Risiko. 100 % sichere lokale Verarbeitung.",
+  "buttonText": "Redact Text",
+  "badges": [
+    "Dauerhaftes Löschen",
+    "Blackout-Info",
+    "Sichere Schwärzung"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "redact_hero_features",
-      "title": "Why Redact PDFs Locally?",
-      "content": "Redacting means the content is classified. Uploading a document you need to hide defeats the whole purpose. Our tool runs 100% offline."
+      "title": "Warum PDFs lokal redigieren?",
+      "content": "Schwärzen bedeutet, dass der Inhalt klassifiziert wird. Das Hochladen eines Dokuments, das Sie verstecken müssen, macht den gesamten Zweck zunichte. Unser Tool läuft zu 100 % offline."
     },
     {
       "type": "redact_how_to_steps",
-      "title": "How to Permanently Redact a PDF",
+      "title": "So schwärzen Sie ein PDF dauerhaft",
       "steps": [
         {
-          "title": "Open Sensitive Document",
-          "description": "Load the PDF with data that must be hidden."
+          "title": "Vertrauliches Dokument öffnen",
+          "description": "Laden Sie das PDF mit Daten, die ausgeblendet werden müssen."
         },
         {
-          "title": "Mark Redaction Areas",
-          "description": "Draw boxes over content to permanently erase."
+          "title": "Schwärzungsbereiche markieren",
+          "description": "Zeichnen Sie Kästchen über den Inhalt, um ihn dauerhaft zu löschen."
         },
         {
-          "title": "Apply & Download",
-          "description": "Content is permanently deleted from the PDF structure."
+          "title": "Bewerben und herunterladen",
+          "description": "Der Inhalt wird dauerhaft aus der PDF-Struktur gelöscht."
         }
-      ]
+      ],
+      "badgeText": "Kurzanleitung"
     },
     {
       "type": "redact_geo_targeting",
-      "title": "Court-Ready Redaction for Berlin Law Firms",
-      "content": "Legal professionals in Berlin prepare court documents with permanent, offline redaction that removes data from the PDF structure itself."
+      "title": "100 % sichere lokale Verarbeitung",
+      "content": "Alle Vorgänge werden direkt auf Ihrem lokalen Gerät ausgeführt. Wir verwenden fortschrittliche WebAssembly-Technologie, um Ihre Dokumente zu verarbeiten, ohne sie jemals auf externe Server hochzuladen, und gewährleisten so absolute Privatsphäre.",
+      "badgeText": "Lokale Verarbeitung"
     },
     {
       "type": "redact_privacy_security",
-      "title": "True Permanent Redaction — Not Just Black Boxes",
-      "content": "Unlike tools that merely cover text with black boxes, our redaction permanently deletes the underlying data from the PDF object structure."
+      "title": "Echte permanente Schwärzung – nicht nur Black Boxes",
+      "content": "Im Gegensatz zu Tools, die Text lediglich mit schwarzen Kästchen abdecken, löscht unsere Schwärzung die zugrunde liegenden Daten dauerhaft aus der PDF-Objektstruktur.",
+      "badgeText": "Sicherheit geht vor"
     },
     {
       "type": "redact_performance",
-      "title": "Redact Entire Documents Instantly",
-      "content": "Apply hundreds of permanent redactions to large documents in seconds, completely offline."
+      "title": "Komplette Dokumente sofort schwärzen",
+      "content": "Wenden Sie in Sekundenschnelle Hunderte von dauerhaften Schwärzungen auf große Dokumente an, völlig offline.",
+      "badgeText": "Blitzschnell"
     }
   ],
   "faqs": [
     {
-      "q": "Is the redaction truly permanent?",
-      "a": "Yes, the underlying text and image data is permanently deleted from the PDF structure."
+      "q": "Ist die Redaktion wirklich dauerhaft?",
+      "a": "Ja, die zugrunde liegenden Text- und Bilddaten werden dauerhaft aus der PDF-Struktur gelöscht."
     },
     {
-      "q": "Can I redact images too?",
-      "a": "Yes, both text regions and image areas can be permanently redacted."
+      "q": "Kann ich Bilder auch redigieren?",
+      "a": "Ja, sowohl Textbereiche als auch Bildbereiche können dauerhaft geschwärzt werden."
     },
     {
-      "q": "Can I choose black or white cover?",
-      "a": "Yes, pick the redaction style that suits your document."
+      "q": "Kann ich einen schwarzen oder weißen Bezug wählen?",
+      "a": "Ja, wählen Sie den Schwärzungsstil, der zu Ihrem Dokument passt."
     },
     {
-      "q": "Does this meet legal standards?",
-      "a": "Our redaction removes data at the PDF object level, meeting court requirements."
+      "q": "Entspricht dies den gesetzlichen Standards?",
+      "a": "Unsere Schwärzung entfernt Daten auf PDF-Objektebene und erfüllt so die Anforderungen des Gerichts."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, komplett kostenlos."
+      "q": "Ist das kostenlos?",
+      "a": "Ja, immer kostenlos."
     }
-  ]
+  ],
+  "faqTitle": "Häufig gestellte Fragen",
+  "supportCenter": "Support-Center"
 }

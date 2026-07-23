@@ -1,67 +1,85 @@
 {
-  "title": "Excel to CSV Converter — Export Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to CSV Locally",
-  "description": "Export .xlsx files to clean .csv format entirely in your browser. No upload. Ideal for developers in Bucharest.",
+  "title": "Convertor Excel în CSV — Exportați foi de calcul offline",
+  "h1": "Conversia locală a foilor de calcul Excel în CSV",
+  "description": "Exportați fișierele .xlsx în format .csv curăți în întregime în browser. Fără încărcare. Procesare locală 100% sigură.",
+  "buttonText": "Convert to CSV",
+  "badges": [
+    "Date brute",
+    "Import baze de date",
+    "Export rapid"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Export to CSV Offline?",
-      "content": "Exporting spreadsheets to CSV for data pipelines should not expose your raw data to any external API."
+      "type": "excel_csv_hero_features",
+      "title": "De ce să exportați în CSV offline?",
+      "content": "Exportarea foilor de calcul în CSV pentru conducte de date nu ar trebui să expună datele dvs. brute la niciun API extern."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Excel to CSV",
+      "type": "excel_csv_how_to_steps",
+      "title": "Cum se convertesc Excel în CSV",
       "steps": [
         {
-          "title": "Open Excel File",
-          "description": "Select the .xlsx spreadsheet."
+          "title": "Deschideți fișierul Excel",
+          "description": "Selectați foaia de calcul .xlsx."
         },
         {
-          "title": "Choose Sheet",
-          "description": "Pick which sheet to export as CSV."
+          "title": "Alegeți Foaie",
+          "description": "Alegeți ce foaie să exportați ca CSV."
         },
         {
-          "title": "Download CSV",
-          "description": "Get your clean CSV file instantly."
+          "title": "Descărcați CSV",
+          "description": "Obțineți fișierul CSV curat instantaneu."
         }
-      ]
+      ],
+      "badgeText": "Ghid rapid"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Developer Tools for Bucharest",
-      "content": "Developers and data engineers in Bucharest export spreadsheets to CSV for pipelines without cloud intermediaries."
+      "type": "excel_csv_geo_targeting",
+      "title": "Procesare locală 100% sigură",
+      "content": "Toate operațiunile sunt efectuate direct pe dispozitivul local. Folosim tehnologie avansată WebAssembly pentru a vă procesa documentele fără a le încărca vreodată pe servere externe, asigurând confidențialitate completă.",
+      "badgeText": "Prelucrare locală"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Spreadsheet Data Stays Local",
-      "content": "Financial models and business data exported to CSV without any server-side processing."
+      "type": "excel_csv_privacy_security",
+      "title": "Datele din foile de calcul rămân locale",
+      "content": "Modele financiare și date de afaceri exportate în CSV fără nicio prelucrare pe partea serverului.",
+      "badgeText": "Securitatea în primul rând"
     },
     {
-      "type": "organizer_performance",
-      "title": "Export Any Spreadsheet Instantly",
-      "content": "Export a 50,000-row Excel file to CSV in under 1 second. All in-browser."
+      "type": "excel_csv_performance",
+      "title": "Exportați orice foaie de calcul instantaneu",
+      "content": "Exportați un fișier Excel cu 50.000 de rânduri în CSV în mai puțin de 1 secundă. Toate în browser.",
+      "badgeText": "Rapid fulger"
     }
   ],
   "faqs": [
     {
-      "q": "Can I export multiple sheets?",
-      "a": "Yes, export each sheet as a separate CSV file."
+      "q": "Pot exporta mai multe foi?",
+      "a": "Da, exportați fiecare foaie ca fișier CSV separat."
     },
     {
-      "q": "Is Excel formatting preserved in CSV?",
-      "a": "CSV is plain text; formatting is removed but all values are preserved."
+      "q": "Formatarea Excel este păstrată în CSV?",
+      "a": "CSV este text simplu; formatarea este eliminată, dar toate valorile sunt păstrate."
     },
     {
-      "q": "Can I choose the delimiter?",
-      "a": "Yes, choose comma, semicolon, or tab."
+      "q": "Pot alege delimitatorul?",
+      "a": "Da, alegeți virgulă, punct și virgulă sau tabulator."
     },
     {
-      "q": "Are formulas exported as values?",
-      "a": "Yes, formula results (not formulas) are written to the CSV."
+      "q": "Formulele sunt exportate ca valori?",
+      "a": "Da, rezultatele formulelor (nu formulele) sunt scrise în CSV."
     },
     {
-      "q": "Is this free?",
+      "q": "Este gratuit?",
       "a": "Da, complet gratuit."
     }
-  ]
+  ],
+  "faqTitle": "Întrebări frecvente",
+  "supportCenter": "Centrul de suport"
 }

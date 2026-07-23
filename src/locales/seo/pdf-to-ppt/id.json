@@ -1,67 +1,80 @@
 {
-  "title": "PDF to PowerPoint — Recover Editable Slides",
-  "h1": "Convert PDF to PowerPoint Presentation Offline",
-  "description": "Transform PDF documents back into editable .pptx presentations locally. No cloud needed. Perfect for users in Jakarta.",
+  "title": "PDF ke PowerPoint — Memulihkan Slide yang Dapat Diedit",
+  "h1": "Konversi PDF ke Presentasi PowerPoint Offline",
+  "description": "Ubah kembali dokumen PDF menjadi presentasi .pptx yang dapat diedit secara lokal. Tidak diperlukan awan. Cocok untuk pengguna di Jakarta.",
+  "buttonText": "Konversikan ke PPT",
+  "badges": [
+    "Slide yang Dapat Diedit",
+    "Pemulihan Presentasi",
+    "Konversi Cepat"
+  ],
+  "stats": [
+    "100%",
+    "Lokal",
+    "0 detik",
+    "Waktu Tunggu"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF to PowerPoint Offline?",
-      "content": "Recovering slide content from a PDF for editing should not require uploading sensitive decks to a cloud service."
+      "title": "Mengapa Menggunakan Offline?",
+      "content": "Memulihkan konten slide dari PDF untuk diedit tidak perlu mengunggah dek sensitif ke layanan cloud."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to PowerPoint",
+      "title": "Cara Menggunakan",
       "steps": [
         {
-          "title": "Upload PDF",
-          "description": "Select the PDF containing your slide content."
+          "title": "Unggah PDF",
+          "description": "Pilih PDF yang berisi konten slide Anda."
         },
         {
-          "title": "Map Pages to Slides",
-          "description": "Each PDF page becomes one editable slide."
+          "title": "Petakan Halaman ke Slide",
+          "description": "Setiap halaman PDF menjadi satu slide yang dapat diedit."
         },
         {
-          "title": "Download .pptx",
-          "description": "Get your fully editable PowerPoint presentation."
+          "title": "Unduh .pptx",
+          "description": "Dapatkan presentasi PowerPoint Anda yang dapat diedit sepenuhnya."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "Slide Recovery in Jakarta",
-      "content": "Presenters in Jakarta use our tool to recover and re-edit presentations from old PDF archives."
+      "title": "Pemulihan Slide di Jakarta",
+      "content": "Presenter di Jakarta menggunakan alat kami untuk memulihkan dan mengedit ulang presentasi dari arsip PDF lama."
     },
     {
       "type": "split_privacy_security",
-      "title": "Your Slides Are Never Exposed",
-      "content": "Confidential slide decks recovered and converted without any server interaction."
+      "title": "Slide Anda Tidak Pernah Terekspos",
+      "content": "Dek slide rahasia dipulihkan dan dikonversi tanpa interaksi server apa pun."
     },
     {
       "type": "split_performance",
-      "title": "Convert Slides at Lightning Speed",
-      "content": "A 60-slide PDF converted to PowerPoint in under 10 seconds with zero upload time."
+      "title": "Konversi Slide dengan Kecepatan Kilat",
+      "content": "PDF 60 slide dikonversi ke PowerPoint dalam waktu kurang dari 10 detik tanpa waktu unggah."
     }
   ],
   "faqs": [
     {
-      "q": "Are slide layouts preserved?",
-      "a": "Content is mapped to slides; some layout adjustments may be needed."
+      "q": "Apakah tata letak slide dipertahankan?",
+      "a": "Konten dipetakan ke slide; beberapa penyesuaian tata letak mungkin diperlukan."
     },
     {
-      "q": "Can I edit the slides after?",
-      "a": "Yes, the .pptx file is fully editable in PowerPoint or Google Slides."
+      "q": "Bisakah saya mengedit slide setelahnya?",
+      "a": "Ya, file .pptx dapat diedit sepenuhnya di PowerPoint atau Google Slides."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No, convert as many pages as your RAM allows."
+      "q": "Apakah ada batasan halaman?",
+      "a": "Tidak, konversikan halaman sebanyak yang dimungkinkan oleh RAM Anda."
     },
     {
-      "q": "Does it work with image-heavy PDFs?",
-      "a": "Yes, images are embedded in each slide."
+      "q": "Apakah ini berfungsi dengan PDF yang banyak gambarnya?",
+      "a": "Ya, gambar tertanam di setiap slide."
     },
     {
-      "q": "Is this free?",
+      "q": "Apakah ini gratis?",
       "a": "Ya, sepenuhnya gratis."
     }
-  ]
+  ],
+  "faqTitle": "Pertanyaan yang Sering Diajukan"
 }

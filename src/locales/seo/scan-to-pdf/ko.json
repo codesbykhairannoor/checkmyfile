@@ -1,67 +1,85 @@
 {
-  "title": "Scan to PDF — Convert Camera Shots Offline",
-  "h1": "Convert Photos and Scans to PDF Locally",
-  "description": "Turn photos of documents taken with your camera into clean PDFs entirely in your browser. No upload. Best for users in Seoul.",
+  "title": "PDF로 스캔 - 카메라 샷을 오프라인으로 변환",
+  "h1": "사진과 스캔을 로컬에서 PDF로 변환",
+  "description": "카메라로 찍은 문서 사진을 브라우저에서 완전히 깨끗한 PDF로 변환하세요. 업로드가 없습니다. 100% 안전한 로컬 처리.",
+  "buttonText": "Scan to PDF",
+  "badges": [
+    "웹캠 사용",
+    "모바일 스캐너",
+    "자동 자르기"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Use Scan-to-PDF Offline?",
-      "content": "Photos of documents contain sensitive information. Process them locally without any cloud access."
+      "type": "scan_hero_features",
+      "title": "Scan-to-PDF를 오프라인으로 사용하는 이유는 무엇입니까?",
+      "content": "문서 사진에는 민감한 정보가 포함되어 있습니다. 클라우드 액세스 없이 로컬로 처리합니다."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Scans to PDF",
+      "type": "scan_how_to_steps",
+      "title": "스캔을 PDF로 변환하는 방법",
       "steps": [
         {
-          "title": "Import Photos",
-          "description": "Select photos taken with your phone or camera."
+          "title": "사진 가져오기",
+          "description": "휴대폰이나 카메라로 찍은 사진을 선택하세요."
         },
         {
-          "title": "Enhance Scan",
-          "description": "Auto-crop, deskew, and enhance contrast."
+          "title": "스캔 강화",
+          "description": "자동 자르기, 기울기 조정 및 대비 향상."
         },
         {
-          "title": "Export PDF",
-          "description": "Download a clean, professional-looking scanned PDF."
+          "title": "PDF 내보내기",
+          "description": "깨끗하고 전문적인 느낌의 스캔 PDF를 다운로드하세요."
         }
-      ]
+      ],
+      "badgeText": "빠른 가이드"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Scan to PDF for Seoul Field Workers",
-      "content": "Field workers and freelancers in Seoul digitize paper documents on-the-go without uploading to cloud services."
+      "type": "scan_geo_targeting",
+      "title": "100% 안전한 로컬 처리",
+      "content": "모든 작업은 로컬 장치에서 직접 수행됩니다. 우리는 고급 WebAssembly 기술을 사용하여 문서를 외부 서버에 업로드하지 않고 처리하여 완벽한 개인 정보 보호를 보장합니다.",
+      "badgeText": "로컬 처리"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Documents Stay on Device",
-      "content": "Invoices, contracts, and ID scans processed entirely in browser memory without any server access."
+      "type": "scan_privacy_security",
+      "title": "스캔한 문서가 기기에 남아 있음",
+      "content": "청구서, 계약서, ID 스캔은 서버 액세스 없이 브라우저 메모리에서 완전히 처리됩니다.",
+      "badgeText": "보안 우선"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Scans in Real Time",
-      "content": "Photo enhancement and PDF generation happens in milliseconds, even for high-resolution camera shots."
+      "type": "scan_performance",
+      "title": "실시간으로 스캔 변환",
+      "content": "고해상도 카메라 촬영의 경우에도 사진 향상 및 PDF 생성이 밀리초 안에 이루어집니다.",
+      "badgeText": "번개처럼 빠르게"
     }
   ],
   "faqs": [
     {
-      "q": "What photo formats are supported?",
-      "a": "JPG, PNG, WebP, and HEIC from modern cameras."
+      "q": "어떤 사진 형식이 지원되나요?",
+      "a": "최신 카메라의 JPG, PNG, WebP 및 HEIC."
     },
     {
-      "q": "Does it fix tilted scans?",
-      "a": "Yes, auto-deskew corrects slight angles automatically."
+      "q": "기울어진 스캔을 수정합니까?",
+      "a": "예, 자동 기울기 조정은 약간의 각도를 자동으로 수정합니다."
     },
     {
-      "q": "Can I combine multiple scans?",
-      "a": "Yes, add multiple photos to create a multi-page PDF."
+      "q": "여러 스캔을 결합할 수 있나요?",
+      "a": "예, 여러 사진을 추가하여 여러 페이지로 구성된 PDF를 만드세요."
     },
     {
-      "q": "Does it enhance contrast?",
-      "a": "Yes, document enhancement mode sharpens text for clarity."
+      "q": "대비가 향상되나요?",
+      "a": "예, 문서 향상 모드는 명확성을 위해 텍스트를 선명하게 합니다."
     },
     {
-      "q": "Is this free?",
-      "a": "예, 완전 무료입니다."
+      "q": "이거 무료인가요?",
+      "a": "예, 항상 무료입니다."
     }
-  ]
+  ],
+  "faqTitle": "자주 묻는 질문",
+  "supportCenter": "지원 센터"
 }

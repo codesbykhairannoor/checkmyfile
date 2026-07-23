@@ -1,67 +1,85 @@
 {
-  "title": "Text to PDF Converter — Offline & Instant",
-  "h1": "Convert Plain Text Files to PDF Locally",
-  "description": "Transform .txt files into clean, readable PDFs directly in your browser. No upload required. Ideal for users in Tokyo.",
+  "title": "テキストから PDF へのコンバーター — オフラインおよびインスタント",
+  "h1": "プレーン テキスト ファイルをローカルで PDF に変換",
+  "description": "ブラウザ内で .txt ファイルをクリーンで読みやすい PDF に直接変換します。 アップロードは必要ありません。 100% 安全なローカル処理。",
+  "buttonText": "Convert Text",
+  "badges": [
+    "コード スニペット",
+    "サーバーログ",
+    "原稿"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Text Files Offline?",
-      "content": "Text files often contain code, scripts, or sensitive notes. Our offline converter ensures zero data transmission."
+      "type": "txt_hero_features",
+      "title": "テキスト ファイルをオフラインで変換する理由",
+      "content": "テキスト ファイルには、コード、スクリプト、または機密メモが含まれることがよくあります。 当社のオフラインコンバーターはデータ転送ゼロを保証します。"
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Text to PDF",
+      "type": "txt_how_to_steps",
+      "title": "テキストを PDF に変換する方法",
       "steps": [
         {
-          "title": "Open Text File",
-          "description": "Select your .txt file or paste text directly."
+          "title": "テキスト ファイルを開く",
+          "description": ".txt ファイルを選択するか、テキストを直接貼り付けます。"
         },
         {
-          "title": "Choose Font & Style",
-          "description": "Pick font size and layout preferences."
+          "title": "フォントとスタイルを選択",
+          "description": "フォント サイズとレイアウトの設定を選択します。"
         },
         {
-          "title": "Download PDF",
-          "description": "Export your text as a beautifully formatted PDF."
+          "title": "PDF をダウンロード",
+          "description": "テキストを美しくフォーマットされた PDF としてエクスポートします。"
         }
-      ]
+      ],
+      "badgeText": "クイックガイド"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Text to PDF for Tokyo Developers",
-      "content": "Developers and writers in Tokyo use our tool to convert scripts and notes without cloud dependency."
+      "type": "txt_geo_targeting",
+      "title": "100% 安全なローカル処理",
+      "content": "すべての操作はローカル デバイス上で直接実行されます。 当社は高度な WebAssembly テクノロジーを使用して、ドキュメントを外部サーバーにアップロードすることなく処理し、完全なプライバシーを確​​保します。",
+      "badgeText": "ローカル処理"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Code Stays on Your Machine",
-      "content": "Source code, legal notes, medical records — text files converted with zero server involvement."
+      "type": "txt_privacy_security",
+      "title": "コードはマシン上に残ります",
+      "content": "ソース コード、法的メモ、医療記録 — サーバーの関与なしでテキスト ファイルが変換されます。",
+      "badgeText": "セキュリティ第一"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Text Rendering",
-      "content": "Convert any size text file to PDF in milliseconds. No upload, no compression, no delay."
+      "type": "txt_performance",
+      "title": "インスタントテキストレンダリング",
+      "content": "あらゆるサイズのテキスト ファイルをミリ秒単位で PDF に変換します。 アップロード、圧縮、遅延はありません。",
+      "badgeText": "超高速"
     }
   ],
   "faqs": [
     {
-      "q": "Can I paste text directly?",
-      "a": "Yes, you can type or paste text without uploading a file."
+      "q": "テキストを直接貼り付けることはできますか?",
+      "a": "はい、ファイルをアップロードしなくても、テキストを入力または貼り付けることができます。"
     },
     {
-      "q": "What fonts are available?",
-      "a": "Standard web fonts like Arial, Times New Roman, and monospace."
+      "q": "どのようなフォントが利用可能ですか?",
+      "a": "Arial、Times New Roman、monospace などの標準 Web フォント。"
     },
     {
-      "q": "Is code syntax preserved?",
-      "a": "Monospace formatting is preserved for code blocks."
+      "q": "コード構文は保持されますか?",
+      "a": "等幅書式設定はコード ブロックに対して保持されます。"
     },
     {
-      "q": "Can I set page margins?",
-      "a": "Yes, customize top, bottom, left, and right margins."
+      "q": "ページ余白を設定できますか?",
+      "a": "はい、上下左右の余白をカスタマイズできます。"
     },
     {
-      "q": "Is this free?",
-      "a": "はい、完全無料です。"
+      "q": "これは無料ですか？",
+      "a": "はい、完全に無料です。"
     }
-  ]
+  ],
+  "faqTitle": "よくある質問",
+  "supportCenter": "サポート センター"
 }

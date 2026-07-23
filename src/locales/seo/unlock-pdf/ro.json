@@ -1,67 +1,85 @@
 {
-  "title": "Unlock PDF — Remove Password Offline",
-  "h1": "Remove PDF Password Protection Instantly in Your Browser",
-  "description": "Unlock password-protected PDFs locally if you know the password. 100% private. No upload. Perfect for users in Bucharest.",
+  "title": "Deblocați PDF — Eliminați parola offline",
+  "h1": "Eliminați instantaneu protecția prin parolă PDF din browser",
+  "description": "Deblocați local PDF-uri protejate cu parolă dacă cunoașteți parola. 100% privat. Fără încărcare. Procesare locală 100% sigură.",
+  "buttonText": "Unlock PDF",
+  "badges": [
+    "Eliminați parola",
+    "Deblocare instantanee",
+    "Fără jurnalele de server"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "unlock_hero_features",
-      "title": "Why Unlock PDFs Locally?",
-      "content": "You have the password to your own file. Unlocking it should not require uploading sensitive documents to an external service."
+      "title": "De ce să deblochezi fișierele PDF la nivel local?",
+      "content": "Aveți parola pentru propriul fișier. Deblocarea acestuia nu ar trebui să necesite încărcarea documentelor sensibile la un serviciu extern."
     },
     {
       "type": "unlock_how_to_steps",
-      "title": "How to Unlock a Protected PDF",
+      "title": "Cum să deblochezi un PDF protejat",
       "steps": [
         {
-          "title": "Open Protected PDF",
-          "description": "Select the password-protected PDF."
+          "title": "Deschide PDF protejat",
+          "description": "Selectați PDF-ul protejat prin parolă."
         },
         {
-          "title": "Enter Your Password",
-          "description": "Provide the existing password — decryption stays in your browser."
+          "title": "Introduceți parola",
+          "description": "Furnizați parola existentă - decriptarea rămâne în browser."
         },
         {
-          "title": "Download Unlocked PDF",
-          "description": "Get your unlocked, fully accessible PDF instantly."
+          "title": "Descărcați PDF deblocat",
+          "description": "Obțineți instantaneu PDF-ul deblocat și complet accesibil."
         }
-      ]
+      ],
+      "badgeText": "Ghid rapid"
     },
     {
       "type": "unlock_geo_targeting",
-      "title": "Instant PDF Unlocking for Bucharest Users",
-      "content": "Users in Bucharest access their own password-protected files without sending decryption keys to any server."
+      "title": "Procesare locală 100% sigură",
+      "content": "Toate operațiunile sunt efectuate direct pe dispozitivul local. Folosim tehnologie avansată WebAssembly pentru a vă procesa documentele fără a le încărca vreodată pe servere externe, asigurând confidențialitate completă.",
+      "badgeText": "Prelucrare locală"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Your Password Never Leaves the Browser",
-      "content": "The decryption key and your document are processed entirely in browser memory — never transmitted to any server or service."
+      "title": "Parola dvs. nu părăsește niciodată browserul",
+      "content": "Cheia de decriptare și documentul dvs. sunt procesate în întregime în memoria browserului - nu sunt niciodată transmise niciunui server sau serviciu.",
+      "badgeText": "Securitatea în primul rând"
     },
     {
       "type": "unlock_performance",
-      "title": "Instant Browser-Local Decryption",
-      "content": "AES decryption in your browser takes under a second — far faster than any cloud service with no upload wait."
+      "title": "Instant Browser-Decriptare locală",
+      "content": "Decriptarea AES în browser durează mai puțin de o secundă - mult mai rapid decât orice serviciu cloud, fără așteptare de încărcare.",
+      "badgeText": "Rapid fulger"
     }
   ],
   "faqs": [
     {
-      "q": "Does it work without the password?",
-      "a": "No, you must know the existing password to unlock."
+      "q": "Functioneaza fara parola?",
+      "a": "Nu, trebuie să cunoașteți parola existentă pentru a debloca."
     },
     {
-      "q": "Can I unlock permissions-restricted PDFs?",
-      "a": "Yes, permission restrictions are removed after password verification."
+      "q": "Pot debloca fișiere PDF cu permisiuni restricționate?",
+      "a": "Da, restricțiile de permisiune sunt eliminate după verificarea parolei."
     },
     {
-      "q": "Is the decryption process secure?",
-      "a": "All decryption happens in your browser memory; nothing is transmitted."
+      "q": "Procesul de decriptare este sigur?",
+      "a": "Toată decriptarea are loc în memoria browserului dvs.; nu se transmite nimic."
     },
     {
-      "q": "What if the password is wrong?",
-      "a": "You will see an error and can try again with the correct password."
+      "q": "Ce se întâmplă dacă parola este greșită?",
+      "a": "Veți vedea o eroare și puteți încerca din nou cu parola corectă."
     },
     {
-      "q": "Is this free?",
+      "q": "Este gratuit?",
       "a": "Da, complet gratuit."
     }
-  ]
+  ],
+  "faqTitle": "Întrebări frecvente",
+  "supportCenter": "Centrul de suport"
 }

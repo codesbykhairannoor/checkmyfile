@@ -1,67 +1,85 @@
 {
-  "title": "Compare PDF Files — Spot Differences Locally",
-  "h1": "Compare Two PDF Documents Side by Side",
-  "description": "Upload two PDFs and highlight differences between them entirely in your browser. No upload to servers. Ideal for users in Tokyo.",
+  "title": "PDF ファイルを比較 — ローカルで違いを見つける",
+  "h1": "2 つの PDF ドキュメントを並べて比較",
+  "description": "2 つの PDF をアップロードし、ブラウザ内でそれらの違い全体を強調表示します。 サーバーへのアップロードはありません。 100% 安全なローカル処理。",
+  "buttonText": "Compare PDFs",
+  "badges": [
+    "違いを見つける",
+    "変更点を強調表示",
+    "視覚的な差分"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Compare PDFs Locally?",
-      "content": "Comparing contract versions or document revisions often involves highly sensitive content. Do it entirely offline."
+      "type": "compare_hero_features",
+      "title": "PDF をローカルで比較する理由",
+      "content": "契約バージョンまたは文書リビジョンの比較には、多くの場合、非常に機密性の高い内容が含まれます。 完全にオフラインで実行します。"
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Compare Two PDFs",
+      "type": "compare_how_to_steps",
+      "title": "2 つの PDF を比較する方法",
       "steps": [
         {
-          "title": "Load Both PDFs",
-          "description": "Select the two PDF versions to compare."
+          "title": "両方の PDF をロード",
+          "description": "比較する 2 つの PDF バージョンを選択します。"
         },
         {
-          "title": "View Differences",
-          "description": "Highlighted changes appear side by side."
+          "title": "違いを表示",
+          "description": "強調表示された変更が並べて表示されます。"
         },
         {
-          "title": "Export Diff Report",
-          "description": "Download a comparison report with all changes marked."
+          "title": "差分レポートのエクスポート",
+          "description": "すべての変更をマークした比較レポートをダウンロードします。"
         }
-      ]
+      ],
+      "badgeText": "クイックガイド"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Comparison for Tokyo Law Firms",
-      "content": "Legal professionals in Tokyo compare contract revisions without uploading privileged documents to cloud services."
+      "type": "compare_geo_targeting",
+      "title": "100% 安全なローカル処理",
+      "content": "すべての操作はローカル デバイス上で直接実行されます。 当社は高度な WebAssembly テクノロジーを使用して、ドキュメントを外部サーバーにアップロードすることなく処理し、完全なプライバシーを確​​保します。",
+      "badgeText": "ローカル処理"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Privileged Documents Stay Private",
-      "content": "Compare NDAs, contracts, and regulatory filings without any server interaction."
+      "type": "compare_privacy_security",
+      "title": "特権文書は非公開のまま",
+      "content": "サーバーとのやり取りを行わずに、NDA、契約、規制当局への提出書類を比較します。",
+      "badgeText": "セキュリティ第一"
     },
     {
-      "type": "organizer_performance",
-      "title": "Instant Side-by-Side Comparison",
-      "content": "Compare 100-page documents in seconds with highlighted differences rendered in-browser."
+      "type": "compare_performance",
+      "title": "即時に並べて比較",
+      "content": "100 ページのドキュメントをブラウザ内で表示された強調表示された相違点と数秒で比較します。",
+      "badgeText": "超高速"
     }
   ],
   "faqs": [
     {
-      "q": "What types of differences are detected?",
-      "a": "Text additions, deletions, and formatting changes are highlighted."
+      "q": "どのような種類の差異が検出されるのでしょうか?",
+      "a": "テキストの追加、削除、書式変更が強調表示されます。"
     },
     {
-      "q": "Can I compare scanned PDFs?",
-      "a": "For scanned PDFs, use OCR first to extract text before comparing."
+      "q": "スキャンした PDF を比較できますか?",
+      "a": "スキャンされた PDF の場合は、比較する前にまず OCR を使用してテキストを抽出します。"
     },
     {
-      "q": "Can I export the comparison?",
-      "a": "Yes, download a marked-up PDF showing all differences."
+      "q": "比較をエクスポートできますか?",
+      "a": "はい、すべての違いを示すマークアップされた PDF をダウンロードしてください。"
     },
     {
-      "q": "How many versions can I compare?",
-      "a": "Two documents at a time in the side-by-side view."
+      "q": "いくつのバージョンを比較できますか?",
+      "a": "一度に 2 つのドキュメントを並べて表示します。"
     },
     {
-      "q": "Is this free?",
-      "a": "はい、完全無料です。"
+      "q": "これは無料ですか？",
+      "a": "はい、完全に無料です。"
     }
-  ]
+  ],
+  "faqTitle": "よくある質問",
+  "supportCenter": "サポート センター"
 }

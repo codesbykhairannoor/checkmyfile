@@ -1,67 +1,80 @@
 {
-  "title": "Word to PDF Converter — No Upload Required",
-  "h1": "Convert Word Documents to PDF Instantly",
-  "description": "Transform .docx files into perfect PDFs directly in your browser. Zero upload, 100% private. Ideal for users in Stockholm.",
+  "title": "Word to PDF Converter — Ingen uppladdning krävs",
+  "h1": "Konvertera Word-dokument till PDF direkt",
+  "description": "Förvandla .docx-filer till perfekta PDF-filer direkt i din webbläsare. Ingen uppladdning, 100 % privat. Perfekt för användare i Stockholm.",
+  "buttonText": "Konvertera dokument",
+  "badges": [
+    "Anställningsavtal",
+    "Juridiska kort",
+    "CV och CV"
+  ],
+  "stats": [
+    "100 %",
+    "Lokal",
+    "0s",
+    "Väntetid"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Word to PDF Offline?",
-      "content": "Your Word document contains sensitive data. Our converter runs entirely in WebAssembly — your file never touches a server."
+      "type": "word_hero_features",
+      "title": "Varför använda offline?",
+      "content": "Ditt Word-dokument innehåller känsliga data. Vår omvandlare körs helt i WebAssembly - din fil rör aldrig en server."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Word to PDF",
+      "type": "word_how_to_steps",
+      "title": "Hur man använder",
       "steps": [
         {
-          "title": "Select .docx File",
-          "description": "Pick your Word document from your computer."
+          "title": "Välj .docx-fil",
+          "description": "Välj ditt Word-dokument från din dator."
         },
         {
-          "title": "Preview Output",
-          "description": "See the PDF rendering before finalizing."
+          "title": "Förhandsgranska Utdata",
+          "description": "Se PDF-renderingen innan du slutför."
         },
         {
-          "title": "Download PDF",
-          "description": "Save your perfectly converted PDF instantly."
+          "title": "Ladda ner PDF",
+          "description": "Spara din perfekt konverterade PDF direkt."
         }
       ]
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Word to PDF for Stockholm Users",
-      "content": "Used by professionals in Stockholm who need to share documents without losing formatting."
+      "type": "word_geo_targeting",
+      "title": "Word till PDF för Stockholmsanvändare",
+      "content": "Används av proffs i Stockholm som behöver dela dokument utan att förlora formatering."
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Your Contracts Stay Private",
-      "content": "Converting employment contracts? Legal briefs? Our WASM processor never phones home."
+      "type": "word_privacy_security",
+      "title": "Dina kontrakt förblir privata",
+      "content": "Konvertera anställningsavtal? Juridisk information? Vår WASM-processor ringer aldrig hem."
     },
     {
-      "type": "combiner_performance",
-      "title": "No More Conversion Queues",
-      "content": "Cloud converters put you in a queue. Ours converts in under 2 seconds, entirely offline."
+      "type": "word_performance",
+      "title": "Inga fler konverteringsköer",
+      "content": "Molnkonverterare sätter dig i kö. Vår konverterar på under 2 sekunder, helt offline."
     }
   ],
   "faqs": [
     {
-      "q": "Does it preserve Word formatting?",
-      "a": "Yes, fonts, tables, and images are preserved using our WASM renderer."
+      "q": "Behåller den Word-formateringen?",
+      "a": "Ja, typsnitt, tabeller och bilder bevaras med vår WASM-renderare."
     },
     {
-      "q": "What Word versions are supported?",
-      "a": "All modern .docx files are supported."
+      "q": "Vilka Word-versioner stöds?",
+      "a": "Alla moderna .docx-filer stöds."
     },
     {
-      "q": "Is there a file size limit?",
-      "a": "No server limits! Only your device RAM is the constraint."
+      "q": "Finns det en filstorleksgräns?",
+      "a": "Inga servergränser! Endast din enhets RAM är begränsningen."
     },
     {
-      "q": "Can I batch convert multiple files?",
-      "a": "Yes, select multiple .docx files at once."
+      "q": "Kan jag batchkonvertera flera filer?",
+      "a": "Ja, välj flera .docx-filer samtidigt."
     },
     {
-      "q": "Is this free?",
+      "q": "Är detta gratis?",
       "a": "Ja, helt gratis."
     }
-  ]
+  ],
+  "faqTitle": "Vanliga Frågor"
 }

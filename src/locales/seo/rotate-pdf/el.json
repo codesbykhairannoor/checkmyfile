@@ -1,67 +1,85 @@
 {
-  "title": "Rotate PDF Pages — Fix Orientation Offline",
-  "h1": "Rotate PDF Pages to the Correct Orientation",
-  "description": "Fix upside-down or sideways PDF pages instantly in your browser. No upload. Perfect for users in Athens.",
+  "title": "Περιστροφή σελίδων PDF — Διόρθωση προσανατολισμού εκτός σύνδεσης",
+  "h1": "Περιστρέψτε τις σελίδες PDF στον σωστό προσανατολισμό",
+  "description": "Διορθώστε τις ανάποδες ή πλάγιες σελίδες PDF αμέσως στο πρόγραμμα περιήγησής σας. Γρήγορο και απόλυτα ασφαλές.",
+  "buttonText": "Rotate Pages",
+  "badges": [
+    "Περιστροφή 90°/180°",
+    "Επεξεργασία παρτίδας",
+    "Άμεση επιδιόρθωση"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Rotate PDFs Locally?",
-      "content": "Scanned documents often come out sideways. Fix their orientation instantly without uploading anything to the cloud."
+      "type": "rotate_hero_features",
+      "title": "Γιατί να περιστρέψετε αρχεία PDF τοπικά;",
+      "content": "Τα σαρωμένα έγγραφα βγαίνουν συχνά στο πλάι. Διορθώστε τον προσανατολισμό τους αμέσως χωρίς να ανεβάσετε τίποτα στο cloud."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Rotate PDF Pages",
+      "type": "rotate_how_to_steps",
+      "title": "Τρόπος περιστροφής σελίδων PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page orientation."
+          "title": "Ανοίξτε το PDF",
+          "description": "Φορτώστε το PDF με λανθασμένο προσανατολισμό σελίδας."
         },
         {
-          "title": "Select Pages & Direction",
-          "description": "Choose pages to rotate and direction (90°, 180°, 270°)."
+          "title": "Επιλέξτε Σελίδες & Κατεύθυνση",
+          "description": "Επιλέξτε σελίδες για περιστροφή και κατεύθυνση (90°, 180°, 270°)."
         },
         {
-          "title": "Download Fixed PDF",
-          "description": "Save the correctly oriented PDF immediately."
+          "title": "Λήψη Διορθωμένο PDF",
+          "description": "Αποθηκεύστε αμέσως το σωστά προσανατολισμένο PDF."
         }
-      ]
+      ],
+      "badgeText": "Γρήγορος Οδηγός"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Rotation for Athens Offices",
-      "content": "Office workers in Athens fix scanner output orientation without relying on cloud services."
+      "type": "rotate_geo_targeting",
+      "title": "100% Ασφαλής Τοπική Επεξεργασία",
+      "content": "Όλες οι λειτουργίες εκτελούνται απευθείας στην τοπική συσκευή σας. Χρησιμοποιούμε προηγμένη τεχνολογία WebAssembly για να επεξεργαζόμαστε τα έγγραφά σας χωρίς ποτέ να τα ανεβάσουμε σε εξωτερικούς διακομιστές, διασφαλίζοντας πλήρες απόρρητο.",
+      "badgeText": "Τοπική Επεξεργασία"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Scanned Documents Stay Private",
-      "content": "Scanned medical or legal documents rotated locally without any server access."
+      "type": "rotate_privacy_security",
+      "title": "Τα σαρωμένα έγγραφα παραμένουν ιδιωτικά",
+      "content": "Τα σαρωμένα ιατρικά ή νομικά έγγραφα εναλλάσσονται τοπικά χωρίς πρόσβαση σε διακομιστή.",
+      "badgeText": "Πρώτα η ασφάλεια"
     },
     {
-      "type": "transform_performance",
-      "title": "Rotate Any PDF in Milliseconds",
-      "content": "Rotating 500 pages takes less than a second. No upload, no wait."
+      "type": "rotate_performance",
+      "title": "Περιστρέψτε οποιοδήποτε PDF σε χιλιοστά του δευτερολέπτου",
+      "content": "Η περιστροφή 500 σελίδων διαρκεί λιγότερο από ένα δευτερόλεπτο. Χωρίς μεταφόρτωση, χωρίς αναμονή.",
+      "badgeText": "Αστραπιαία"
     }
   ],
   "faqs": [
     {
-      "q": "Can I rotate individual pages?",
-      "a": "Yes, select specific pages or all at once."
+      "q": "Μπορώ να περιστρέψω μεμονωμένες σελίδες;",
+      "a": "Ναι, επιλέξτε συγκεκριμένες σελίδες ή όλες ταυτόχρονα."
     },
     {
-      "q": "What rotation angles are available?",
-      "a": "90°, 180°, and 270° clockwise and counter-clockwise."
+      "q": "Ποιες γωνίες περιστροφής είναι διαθέσιμες;",
+      "a": "90°, 180° και 270° δεξιόστροφα και αριστερόστροφα."
     },
     {
-      "q": "Does rotation affect image quality?",
-      "a": "No, rotation is lossless — no re-encoding occurs."
+      "q": "Η περιστροφή επηρεάζει την ποιότητα της εικόνας;",
+      "a": "Όχι, η περιστροφή είναι χωρίς απώλειες — δεν πραγματοποιείται εκ νέου κωδικοποίηση."
     },
     {
-      "q": "Can I undo a rotation?",
-      "a": "Yes, apply the reverse rotation before downloading."
+      "q": "Μπορώ να αναιρέσω μια περιστροφή;",
+      "a": "Ναι, εφαρμόστε την αντίστροφη περιστροφή πριν από τη λήψη."
     },
     {
-      "q": "Is this free?",
+      "q": "Αυτό είναι δωρεάν;",
       "a": "Ναι, εντελώς δωρεάν."
     }
-  ]
+  ],
+  "faqTitle": "Συχνές Ερωτήσεις",
+  "supportCenter": "Κέντρο Υποστήριξης"
 }

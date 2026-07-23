@@ -1,67 +1,85 @@
 {
-  "title": "Unlock PDF — Remove Password Offline",
-  "h1": "Remove PDF Password Protection Instantly in Your Browser",
-  "description": "Unlock password-protected PDFs locally if you know the password. 100% private. No upload. Perfect for users in Berlin.",
+  "title": "PDF entsperren – Passwort offline entfernen",
+  "h1": "Entfernen Sie den PDF-Passwortschutz sofort in Ihrem Browser",
+  "description": "Entsperren Sie passwortgeschützte PDFs lokal, wenn Sie das Passwort kennen. 100 % privat. Kein Upload. 100 % sichere lokale Verarbeitung.",
+  "buttonText": "Unlock PDF",
+  "badges": [
+    "Passwort entfernen",
+    "Sofortige Freischaltung",
+    "Keine Serverprotokolle"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "unlock_hero_features",
-      "title": "Why Unlock PDFs Locally?",
-      "content": "You have the password to your own file. Unlocking it should not require uploading sensitive documents to an external service."
+      "title": "Warum PDFs lokal entsperren?",
+      "content": "Sie haben das Passwort für Ihre eigene Datei. Das Entsperren sollte nicht das Hochladen sensibler Dokumente an einen externen Dienst erfordern."
     },
     {
       "type": "unlock_how_to_steps",
-      "title": "How to Unlock a Protected PDF",
+      "title": "So entsperren Sie ein geschütztes PDF",
       "steps": [
         {
-          "title": "Open Protected PDF",
-          "description": "Select the password-protected PDF."
+          "title": "Geschütztes PDF öffnen",
+          "description": "Wählen Sie das passwortgeschützte PDF aus."
         },
         {
-          "title": "Enter Your Password",
-          "description": "Provide the existing password — decryption stays in your browser."
+          "title": "Geben Sie Ihr Passwort ein",
+          "description": "Geben Sie das vorhandene Passwort ein – die Entschlüsselung bleibt in Ihrem Browser."
         },
         {
-          "title": "Download Unlocked PDF",
-          "description": "Get your unlocked, fully accessible PDF instantly."
+          "title": "Laden Sie das entsperrte PDF herunter",
+          "description": "Erhalten Sie sofort Ihr freigeschaltetes, vollständig zugängliches PDF."
         }
-      ]
+      ],
+      "badgeText": "Kurzanleitung"
     },
     {
       "type": "unlock_geo_targeting",
-      "title": "Instant PDF Unlocking for Berlin Users",
-      "content": "Users in Berlin access their own password-protected files without sending decryption keys to any server."
+      "title": "100 % sichere lokale Verarbeitung",
+      "content": "Alle Vorgänge werden direkt auf Ihrem lokalen Gerät ausgeführt. Wir verwenden fortschrittliche WebAssembly-Technologie, um Ihre Dokumente zu verarbeiten, ohne sie jemals auf externe Server hochzuladen, und gewährleisten so absolute Privatsphäre.",
+      "badgeText": "Lokale Verarbeitung"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Your Password Never Leaves the Browser",
-      "content": "The decryption key and your document are processed entirely in browser memory — never transmitted to any server or service."
+      "title": "Ihr Passwort verlässt niemals den Browser",
+      "content": "Der Entschlüsselungsschlüssel und Ihr Dokument werden vollständig im Browserspeicher verarbeitet und niemals an einen Server oder Dienst übertragen.",
+      "badgeText": "Sicherheit geht vor"
     },
     {
       "type": "unlock_performance",
-      "title": "Instant Browser-Local Decryption",
-      "content": "AES decryption in your browser takes under a second — far faster than any cloud service with no upload wait."
+      "title": "Sofortige browserlokale Entschlüsselung",
+      "content": "Die AES-Entschlüsselung in Ihrem Browser dauert weniger als eine Sekunde – viel schneller als bei jedem Cloud-Dienst ohne Wartezeit beim Hochladen.",
+      "badgeText": "Blitzschnell"
     }
   ],
   "faqs": [
     {
-      "q": "Does it work without the password?",
-      "a": "No, you must know the existing password to unlock."
+      "q": "Funktioniert es ohne Passwort?",
+      "a": "Nein, zum Entsperren müssen Sie das bestehende Passwort kennen."
     },
     {
-      "q": "Can I unlock permissions-restricted PDFs?",
-      "a": "Yes, permission restrictions are removed after password verification."
+      "q": "Kann ich PDFs mit eingeschränkten Berechtigungen entsperren?",
+      "a": "Ja, Berechtigungsbeschränkungen werden nach der Passwortüberprüfung entfernt."
     },
     {
-      "q": "Is the decryption process secure?",
-      "a": "All decryption happens in your browser memory; nothing is transmitted."
+      "q": "Ist der Entschlüsselungsprozess sicher?",
+      "a": "Die gesamte Entschlüsselung erfolgt im Speicher Ihres Browsers; es wird nichts übertragen."
     },
     {
-      "q": "What if the password is wrong?",
-      "a": "You will see an error and can try again with the correct password."
+      "q": "Was ist, wenn das Passwort falsch ist?",
+      "a": "Sie sehen eine Fehlermeldung und können es mit dem richtigen Passwort erneut versuchen."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, komplett kostenlos."
+      "q": "Ist das kostenlos?",
+      "a": "Ja, völlig kostenlos."
     }
-  ]
+  ],
+  "faqTitle": "Häufig gestellte Fragen",
+  "supportCenter": "Support-Center"
 }

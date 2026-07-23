@@ -1,67 +1,85 @@
 {
-  "title": "Text to PDF Converter — Offline & Instant",
-  "h1": "Convert Plain Text Files to PDF Locally",
-  "description": "Transform .txt files into clean, readable PDFs directly in your browser. No upload required. Ideal for users in Hanoi.",
+  "title": "Chuyển đổi văn bản sang PDF - Ngoại tuyến & tức thì",
+  "h1": "Chuyển đổi tệp văn bản thuần túy sang PDF cục bộ",
+  "description": "Chuyển đổi tệp .txt thành tệp PDF rõ ràng, dễ đọc ngay trong trình duyệt của bạn. Không cần tải lên. Xử lý cục bộ an toàn 100%.",
+  "buttonText": "Convert Text",
+  "badges": [
+    "Đoạn mã",
+    "Nhật ký máy chủ",
+    "Bản thảo"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Text Files Offline?",
-      "content": "Text files often contain code, scripts, or sensitive notes. Our offline converter ensures zero data transmission."
+      "type": "txt_hero_features",
+      "title": "Tại sao chuyển đổi tập tin văn bản ngoại tuyến?",
+      "content": "Các tệp văn bản thường chứa mã, tập lệnh hoặc ghi chú nhạy cảm. Bộ chuyển đổi ngoại tuyến của chúng tôi đảm bảo truyền dữ liệu bằng không."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Text to PDF",
+      "type": "txt_how_to_steps",
+      "title": "Cách chuyển đổi văn bản sang PDF",
       "steps": [
         {
-          "title": "Open Text File",
-          "description": "Select your .txt file or paste text directly."
+          "title": "Mở tệp văn bản",
+          "description": "Chọn tệp .txt của bạn hoặc dán văn bản trực tiếp."
         },
         {
-          "title": "Choose Font & Style",
-          "description": "Pick font size and layout preferences."
+          "title": "Chọn Phông chữ & Kiểu dáng",
+          "description": "Chọn kích thước phông chữ và tùy chọn bố cục."
         },
         {
-          "title": "Download PDF",
-          "description": "Export your text as a beautifully formatted PDF."
+          "title": "Tải xuống bản PDF",
+          "description": "Xuất văn bản của bạn dưới dạng PDF có định dạng đẹp."
         }
-      ]
+      ],
+      "badgeText": "Hướng dẫn nhanh"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Text to PDF for Hanoi Developers",
-      "content": "Developers and writers in Hanoi use our tool to convert scripts and notes without cloud dependency."
+      "type": "txt_geo_targeting",
+      "title": "Xử lý cục bộ an toàn 100%",
+      "content": "Tất cả các hoạt động được thực hiện trực tiếp trên thiết bị cục bộ của bạn. Chúng tôi sử dụng công nghệ WebAssembly tiên tiến để xử lý tài liệu của bạn mà không cần tải chúng lên máy chủ bên ngoài, đảm bảo quyền riêng tư hoàn toàn.",
+      "badgeText": "Xử lý cục bộ"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Code Stays on Your Machine",
-      "content": "Source code, legal notes, medical records — text files converted with zero server involvement."
+      "type": "txt_privacy_security",
+      "title": "Mã vẫn còn trên máy của bạn",
+      "content": "Mã nguồn, ghi chú pháp lý, hồ sơ y tế — các tệp văn bản được chuyển đổi mà không cần đến máy chủ.",
+      "badgeText": "Bảo mật là trên hết"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Text Rendering",
-      "content": "Convert any size text file to PDF in milliseconds. No upload, no compression, no delay."
+      "type": "txt_performance",
+      "title": "Hiển thị văn bản tức thì",
+      "content": "Chuyển đổi bất kỳ tệp văn bản kích thước nào sang PDF trong một phần nghìn giây. Không tải lên, không nén, không chậm trễ.",
+      "badgeText": "Nhanh như chớp"
     }
   ],
   "faqs": [
     {
-      "q": "Can I paste text directly?",
-      "a": "Yes, you can type or paste text without uploading a file."
+      "q": "Tôi có thể dán văn bản trực tiếp không?",
+      "a": "Có, bạn có thể nhập hoặc dán văn bản mà không cần tải tệp lên."
     },
     {
-      "q": "What fonts are available?",
-      "a": "Standard web fonts like Arial, Times New Roman, and monospace."
+      "q": "Những phông chữ nào có sẵn?",
+      "a": "Các phông chữ web tiêu chuẩn như Arial, Times New Roman và monospace."
     },
     {
-      "q": "Is code syntax preserved?",
-      "a": "Monospace formatting is preserved for code blocks."
+      "q": "Cú pháp mã có được giữ nguyên không?",
+      "a": "Định dạng monospace được giữ nguyên cho các khối mã."
     },
     {
-      "q": "Can I set page margins?",
-      "a": "Yes, customize top, bottom, left, and right margins."
+      "q": "Tôi có thể đặt lề trang không?",
+      "a": "Có, tùy chỉnh lề trên, dưới, trái và phải."
     },
     {
-      "q": "Is this free?",
+      "q": "Cái này có miễn phí không?",
       "a": "Có, hoàn toàn miễn phí."
     }
-  ]
+  ],
+  "faqTitle": "Câu hỏi thường gặp",
+  "supportCenter": "Trung tâm hỗ trợ"
 }

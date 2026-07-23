@@ -1,67 +1,85 @@
 {
-  "title": "Image to PDF — Combine Photos Offline",
-  "h1": "Convert Images to PDF Without Uploading",
-  "description": "Turn JPG, PNG, and WebP images into a single PDF document in your browser. Your photos stay private. Perfect for users in Jakarta.",
+  "title": "Gambar ke PDF — Gabungkan Foto Offline",
+  "h1": "Konversi Gambar ke PDF Tanpa Mengunggah",
+  "description": "Ubah gambar JPG, PNG, dan WebP menjadi satu dokumen PDF di browser Anda. Foto Anda tetap pribadi. Pemrosesan lokal 100% aman.",
+  "buttonText": "Convert Images",
+  "badges": [
+    "Portofolio",
+    "Pemindaian ID",
+    "Album Foto"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Images Offline?",
-      "content": "Photos contain location data and personal moments. Convert them to PDF without exposing them to any cloud service."
+      "type": "image_hero_features",
+      "title": "Mengapa Mengonversi Gambar Offline?",
+      "content": "Foto berisi data lokasi dan momen pribadi. Konversikan ke PDF tanpa memaparkannya ke layanan cloud apa pun."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Turn Images Into PDF",
+      "type": "image_how_to_steps",
+      "title": "Cara Mengubah Gambar Menjadi PDF",
       "steps": [
         {
-          "title": "Select Images",
-          "description": "Choose JPG, PNG, or WebP files from your device."
+          "title": "Pilih Gambar",
+          "description": "Pilih file JPG, PNG, atau WebP dari perangkat Anda."
         },
         {
-          "title": "Arrange Order",
-          "description": "Drag to reorder images before generating the PDF."
+          "title": "Atur Pesanan",
+          "description": "Seret untuk menyusun ulang gambar sebelum membuat PDF."
         },
         {
-          "title": "Export PDF",
-          "description": "Download your image PDF in one click."
+          "title": "Ekspor PDF",
+          "description": "Unduh PDF gambar Anda dalam satu klik."
         }
-      ]
+      ],
+      "badgeText": "Panduan Singkat"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Image to PDF for Jakarta Users",
-      "content": "Photographers and designers in Jakarta use our tool to package portfolios without cloud uploads."
+      "type": "image_geo_targeting",
+      "title": "Pemrosesan Lokal 100% Aman",
+      "content": "Semua operasi dilakukan langsung di perangkat lokal Anda. Kami menggunakan teknologi WebAssembly yang canggih untuk memproses dokumen Anda tanpa harus mengunggahnya ke server eksternal, sehingga memastikan privasi sepenuhnya.",
+      "badgeText": "Pemrosesan Lokal"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Photos Never Leave Your Device",
-      "content": "Personal photos, ID scans, medical images — all converted 100% locally without any server contact."
+      "type": "image_privacy_security",
+      "title": "Foto Tidak Pernah Meninggalkan Perangkat Anda",
+      "content": "Foto pribadi, pindaian ID, gambar medis — semuanya dikonversi 100% secara lokal tanpa kontak server apa pun.",
+      "badgeText": "Keamanan Pertama"
     },
     {
-      "type": "combiner_performance",
-      "title": "Batch Convert Instantly",
-      "content": "Convert 50 images into a single PDF in under 5 seconds. No upload, no wait."
+      "type": "image_performance",
+      "title": "Konversi Batch Secara Instan",
+      "content": "Ubah 50 gambar menjadi satu PDF dalam waktu kurang dari 5 detik. Tidak ada unggahan, tidak perlu menunggu.",
+      "badgeText": "Secepat Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are supported?",
-      "a": "JPG, JPEG, PNG, and WebP are all supported."
+      "q": "Format gambar apa yang didukung?",
+      "a": "JPG, JPEG, PNG, dan WebP semuanya didukung."
     },
     {
-      "q": "Can I combine multiple images?",
-      "a": "Yes, select as many images as you want and reorder them."
+      "q": "Bisakah saya menggabungkan banyak gambar?",
+      "a": "Ya, pilih gambar sebanyak yang Anda inginkan dan susun ulang."
     },
     {
-      "q": "Is image quality preserved?",
-      "a": "Yes, images are embedded at their original resolution."
+      "q": "Apakah kualitas gambar tetap terjaga?",
+      "a": "Ya, gambar disematkan pada resolusi aslinya."
     },
     {
-      "q": "Does it strip EXIF metadata?",
-      "a": "You can optionally strip EXIF data for privacy."
+      "q": "Apakah ini menghapus metadata EXIF?",
+      "a": "Anda juga dapat menghapus data EXIF ​​​​untuk privasi."
     },
     {
-      "q": "Is there a limit on image count?",
-      "a": "Ya, sepenuhnya gratis."
+      "q": "Apakah ada batasan jumlah gambar?",
+      "a": "Tidak ada batasan! Gabungkan ratusan gambar menjadi satu PDF."
     }
-  ]
+  ],
+  "faqTitle": "Pertanyaan yang Sering Diajukan",
+  "supportCenter": "Pusat Dukungan"
 }

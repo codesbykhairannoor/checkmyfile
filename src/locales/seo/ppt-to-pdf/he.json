@@ -1,67 +1,85 @@
 {
-  "title": "PowerPoint to PDF Converter — Offline & Free",
-  "h1": "Convert PowerPoint Presentations to PDF Instantly",
-  "description": "Convert .pptx presentations to high-quality PDFs directly in your browser. No cloud needed. Perfect for presenters in Jerusalem.",
+  "title": "ממיר PowerPoint ל-PDF — לא מקוון ובחינם",
+  "h1": "המר מצגות PowerPoint ל-PDF באופן מיידי",
+  "description": "המר מצגות .pptx לקובצי PDF באיכות גבוהה ישירות בדפדפן שלך. אין צורך בענן. עיבוד מקומי מאובטח של 100%.",
+  "buttonText": "Convert Slides",
+  "badges": [
+    "ישיבות דירקטוריון",
+    "Pitch Decks",
+    "מוצרים שלא פורסמו"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Presentations Offline?",
-      "content": "Your slides may contain unreleased products or confidential strategies. Convert without risking data exposure."
+      "type": "ppt_hero_features",
+      "title": "למה להמיר מצגות במצב לא מקוון?",
+      "content": "השקופיות שלך עשויות להכיל מוצרים שלא פורסמו או אסטרטגיות סודיות. המרה מבלי להסתכן בחשיפה לנתונים."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert PowerPoint to PDF",
+      "type": "ppt_how_to_steps",
+      "title": "כיצד להמיר PowerPoint ל-PDF",
       "steps": [
         {
-          "title": "Load Presentation",
-          "description": "Select your .pptx file from your device."
+          "title": "טען מצגת",
+          "description": "בחר את קובץ ה-.pptx שלך מהמכשיר שלך."
         },
         {
-          "title": "Select Slide Range",
-          "description": "Include all slides or specific ones."
+          "title": "בחר טווח שקופיות",
+          "description": "כלול את כל השקופיות או אלו ספציפיות."
         },
         {
-          "title": "Download PDF",
-          "description": "Get your PDF with all formatting preserved."
+          "title": "הורד PDF",
+          "description": "קבל את ה-PDF שלך עם כל הפורמטים שמורים."
         }
-      ]
+      ],
+      "badgeText": "מדריך מהיר"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Presentation Conversion in Jerusalem",
-      "content": "Presenters in Jerusalem trust us to convert slide decks without leaking unreleased content to cloud servers."
+      "type": "ppt_geo_targeting",
+      "title": "100% עיבוד מקומי מאובטח",
+      "content": "כל הפעולות מבוצעות ישירות במכשיר המקומי שלך. אנו משתמשים בטכנולוגיית WebAssembly מתקדמת כדי לעבד את המסמכים שלך מבלי להעלות אותם לשרתים חיצוניים, מה שמבטיח פרטיות מלאה.",
+      "badgeText": "עיבוד מקומי"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Confidential Slides Stay Confidential",
-      "content": "Pre-launch product decks? Board presentations? Converted 100% locally without network access."
+      "type": "ppt_privacy_security",
+      "title": "שקופיות סודיות נשארות חסויות",
+      "content": "חפיסות מוצרים לפני השקה? מצגות מועצת המנהלים? הומר 100% באופן מקומי ללא גישה לרשת.",
+      "badgeText": "אבטחה תחילה"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Slide Export",
-      "content": "Convert 100-slide decks in seconds. No queue, no waiting, no upload bandwidth wasted."
+      "type": "ppt_performance",
+      "title": "ייצוא שקופיות מיידי",
+      "content": "המרת חפיסות של 100 שקופיות בשניות. אין תור, אין המתנה, אין בזבוז רוחב פס להעלאה.",
+      "badgeText": "מהיר ברק"
     }
   ],
   "faqs": [
     {
-      "q": "Are slide animations preserved?",
-      "a": "Animations are flattened into static PDF frames."
+      "q": "האם נשמרות אנימציות שקופיות?",
+      "a": "אנימציות משטחות למסגרות PDF סטטיות."
     },
     {
-      "q": "What resolution is the output?",
-      "a": "High-resolution rendering at 150 DPI by default."
+      "q": "מה הרזולוציה של הפלט?",
+      "a": "עיבוד ברזולוציה גבוהה ב-150 DPI כברירת מחדל."
     },
     {
-      "q": "Can I convert selected slides only?",
-      "a": "Yes, specify slide ranges like 1-10 or 5,8,12."
+      "q": "האם אוכל להמיר שקופיות נבחרות בלבד?",
+      "a": "כן, ציין טווחי שקופיות כמו 1-10 או 5,8,12."
     },
     {
-      "q": "Is .ppt (old format) supported?",
-      "a": "Yes, both .ppt and .pptx are supported."
+      "q": "האם .ppt (פורמט ישן) נתמך?",
+      "a": "כן, הן .ppt והן .pptx נתמכות."
     },
     {
-      "q": "Is this free to use?",
-      "a": "כן, חינם לחלוטין."
+      "q": "האם זה בחינם לשימוש?",
+      "a": "כן, לגמרי בחינם ללא סימני מים."
     }
-  ]
+  ],
+  "faqTitle": "שאלות נפוצות",
+  "supportCenter": "מרכז תמיכה"
 }

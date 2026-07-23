@@ -1,67 +1,85 @@
 {
-  "title": "PowerPoint to PDF Converter — Offline & Free",
-  "h1": "Convert PowerPoint Presentations to PDF Instantly",
-  "description": "Convert .pptx presentations to high-quality PDFs directly in your browser. No cloud needed. Perfect for presenters in Bucharest.",
+  "title": "Convertor PowerPoint în PDF - Offline și gratuit",
+  "h1": "Convertiți instantaneu prezentările PowerPoint în PDF",
+  "description": "Convertiți prezentările .pptx în PDF-uri de înaltă calitate direct în browser. Nu este nevoie de cloud. Procesare locală 100% sigură.",
+  "buttonText": "Convert Slides",
+  "badges": [
+    "Şedinţele Consiliului",
+    "Punți de pitch",
+    "Produse nelansate"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Presentations Offline?",
-      "content": "Your slides may contain unreleased products or confidential strategies. Convert without risking data exposure."
+      "type": "ppt_hero_features",
+      "title": "De ce să convertiți prezentările offline?",
+      "content": "Slide-urile dvs. pot conține produse nelansate sau strategii confidențiale. Convertiți fără a risca expunerea datelor."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert PowerPoint to PDF",
+      "type": "ppt_how_to_steps",
+      "title": "Cum se convertesc PowerPoint în PDF",
       "steps": [
         {
-          "title": "Load Presentation",
-          "description": "Select your .pptx file from your device."
+          "title": "Încărcare prezentare",
+          "description": "Selectați fișierul .pptx de pe dispozitiv."
         },
         {
-          "title": "Select Slide Range",
-          "description": "Include all slides or specific ones."
+          "title": "Selectați Intervalul de diapozitive",
+          "description": "Includeți toate diapozitivele sau unele specifice."
         },
         {
-          "title": "Download PDF",
-          "description": "Get your PDF with all formatting preserved."
+          "title": "Descărcați PDF",
+          "description": "Obțineți PDF-ul cu toate formatările păstrate."
         }
-      ]
+      ],
+      "badgeText": "Ghid rapid"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Presentation Conversion in Bucharest",
-      "content": "Presenters in Bucharest trust us to convert slide decks without leaking unreleased content to cloud servers."
+      "type": "ppt_geo_targeting",
+      "title": "Procesare locală 100% sigură",
+      "content": "Toate operațiunile sunt efectuate direct pe dispozitivul local. Folosim tehnologie avansată WebAssembly pentru a vă procesa documentele fără a le încărca vreodată pe servere externe, asigurând confidențialitate completă.",
+      "badgeText": "Prelucrare locală"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Confidential Slides Stay Confidential",
-      "content": "Pre-launch product decks? Board presentations? Converted 100% locally without network access."
+      "type": "ppt_privacy_security",
+      "title": "Slide-urile confidențiale Rămân confidențiale",
+      "content": "Pachete de produse înainte de lansare? Prezentări la bord? Convertit 100% local, fără acces la rețea.",
+      "badgeText": "Securitatea în primul rând"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Slide Export",
-      "content": "Convert 100-slide decks in seconds. No queue, no waiting, no upload bandwidth wasted."
+      "type": "ppt_performance",
+      "title": "Export instantaneu de diapozitive",
+      "content": "Convertiți pachetele cu 100 de diapozitive în secunde. Fără coadă, fără așteptare, fără lățime de bandă de încărcare irosită.",
+      "badgeText": "Rapid fulger"
     }
   ],
   "faqs": [
     {
-      "q": "Are slide animations preserved?",
-      "a": "Animations are flattened into static PDF frames."
+      "q": "Animațiile diapozitivelor sunt păstrate?",
+      "a": "Animațiile sunt aplatizate în cadre PDF statice."
     },
     {
-      "q": "What resolution is the output?",
-      "a": "High-resolution rendering at 150 DPI by default."
+      "q": "Ce rezoluție are ieșirea?",
+      "a": "Redare de înaltă rezoluție la 150 DPI în mod implicit."
     },
     {
-      "q": "Can I convert selected slides only?",
-      "a": "Yes, specify slide ranges like 1-10 or 5,8,12."
+      "q": "Pot converti doar diapozitivele selectate?",
+      "a": "Da, specificați intervale de diapozitive precum 1-10 sau 5,8,12."
     },
     {
-      "q": "Is .ppt (old format) supported?",
-      "a": "Yes, both .ppt and .pptx are supported."
+      "q": "Este .ppt (format vechi) acceptat?",
+      "a": "Da, atât .ppt, cât și .pptx sunt acceptate."
     },
     {
-      "q": "Is this free to use?",
-      "a": "Da, complet gratuit."
+      "q": "Este gratuit de utilizat?",
+      "a": "Da, complet gratuit, fără filigrane."
     }
-  ]
+  ],
+  "faqTitle": "Întrebări frecvente",
+  "supportCenter": "Centrul de suport"
 }

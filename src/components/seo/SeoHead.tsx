@@ -2,15 +2,23 @@ import React, { useEffect } from 'react';
 import { SUPPORTED_LANGUAGES, getLanguageByCode } from '../../i18n/languages';
 import { getLocalizedSeo, type ToolDefinition } from '../../catalog/toolsCatalog';
 
+import { getUiTranslations } from '../../i18n/translations';
+
 interface SeoHeadProps {
   tool?: ToolDefinition;
-  lang: string;
+  lang?: string;
+  currentLang?: string;
+  title?: string;
+  description?: string;
+  slug?: string;
 }
 
-export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang }) => {
+export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang, currentLang, title: customTitle, description: customDescription, slug }) => {
   useEffect(() => {
-    const origin = window.location.origin || 'https://www.blitzdocs.app';
-    const langInfo = getLanguageByCode(lang);
+    const activeLang = lang || currentLang || 'en';
+    const origin = window.location.origin || 'https://www.helpmyfile.com';
+    const langInfo = getLanguageByCode(activeLang);
+    const t = getUiTranslations(activeLang);
     
     // 1. Set html lang attribute for search engine bots
     document.documentElement.setAttribute('lang', langInfo.code);
@@ -21,14 +29,23 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang }) => {
     }
 
     // Determine current title, description, and faqs
-    let title = `All-in-One Zero-Upload Client-Side Wasm Document Platform (${langInfo.nativeName})`;
-    let description = 'Process PDF, Word, Excel, and Images locally inside your browser memory. 100% Privacy, zero uploads required.';
+    let title = customTitle || `${t.homeHeroTitle || 'HandleMyFile'} - ${langInfo.nativeName}`;
+    let description = customDescription || t.homeHeroSubtitle || 'Process PDF, Word, Excel, and Images locally inside your browser memory. 100% Privacy, zero uploads required.';
     let faqs: { q: string; a: string }[] = [];
 
     if (tool) {
-      const seoData = getLocalizedSeo(tool, lang);
-      title = `${seoData.title} | ${langInfo.nativeName}`;
-      description = seoData.description;
+      const seoData = getLocalizedSeo(tool, activeLang);
+      const hasSpecificSeo = !!tool.seo[activeLang];
+      
+      if (hasSpecificSeo) {
+        title = `${seoData.title} | ${langInfo.nativeName}`;
+        description = seoData.description;
+      } else {
+        const slug = tool.slugs[activeLang] || tool.id;
+        const toolName = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+        title = `${toolName} - ${t.homeHeroTitle || 'HandleMyFile'} | ${langInfo.nativeName}`;
+        description = `${toolName} - ${t.homeHeroSubtitle || 'Process PDF locally. 100% Privacy, zero uploads.'}`;
+      }
       faqs = seoData.faqs;
     }
 
@@ -59,8 +76,8 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang }) => {
     // 4. Update Canonical & Hreflang Tags (Partial Lang URL structure)
     document.querySelectorAll('link[rel="canonical"], link[rel="alternate"][hreflang]').forEach((el) => el.remove());
 
-    const currentSlug = tool ? (tool.slugs[lang] || tool.id) : '';
-    const currentPath = tool ? `/${lang}/${currentSlug}` : `/${lang}`;
+    const currentSlug = tool ? (tool.slugs[activeLang] || tool.id) : (slug || '');
+    const currentPath = currentSlug ? `/${activeLang}/${currentSlug}` : `/${activeLang}`;
     const canonicalUrl = `${origin}${currentPath}`;
     setMetaTag('og:url', 'property', canonicalUrl);
 
@@ -72,8 +89,8 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang }) => {
 
     // Add hreflang links for all 30 supported languages
     SUPPORTED_LANGUAGES.forEach((l) => {
-      const langSlug = tool ? (tool.slugs[l.code] || tool.id) : '';
-      const langPath = tool ? `/${l.code}/${langSlug}` : `/${l.code}`;
+      const langSlug = tool ? (tool.slugs[l.code] || tool.id) : (slug || '');
+      const langPath = langSlug ? `/${l.code}/${langSlug}` : `/${l.code}`;
       const hreflangLink = document.createElement('link');
       hreflangLink.setAttribute('rel', 'alternate');
       hreflangLink.setAttribute('hreflang', l.code);
@@ -82,8 +99,8 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang }) => {
     });
 
     // Add x-default pointing to English version
-    const xDefaultSlug = tool ? (tool.slugs['en'] || tool.id) : '';
-    const xDefaultPath = tool ? `/en/${xDefaultSlug}` : `/en`;
+    const xDefaultSlug = tool ? (tool.slugs['en'] || tool.id) : (slug || '');
+    const xDefaultPath = xDefaultSlug ? `/en/${xDefaultSlug}` : `/en`;
     const xDefaultLink = document.createElement('link');
     xDefaultLink.setAttribute('rel', 'alternate');
     xDefaultLink.setAttribute('hreflang', 'x-default');
@@ -102,14 +119,14 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang }) => {
           '@type': 'ListItem',
           position: 1,
           name: `Home (${langInfo.nativeName})`,
-          item: `${origin}/${lang}`,
+          item: `${origin}/${activeLang}`,
         },
-        ...(tool
+        ...(tool || customTitle
           ? [
               {
                 '@type': 'ListItem',
                 position: 2,
-                name: getLocalizedSeo(tool, lang).h1,
+                name: tool ? getLocalizedSeo(tool, activeLang).h1 : customTitle,
                 item: canonicalUrl,
               },
             ]

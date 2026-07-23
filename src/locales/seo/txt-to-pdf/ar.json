@@ -1,67 +1,85 @@
 {
-  "title": "Text to PDF Converter — Offline & Instant",
-  "h1": "Convert Plain Text Files to PDF Locally",
-  "description": "Transform .txt files into clean, readable PDFs directly in your browser. No upload required. Ideal for users in Riyadh.",
+  "title": "محول النص إلى PDF – غير متصل وفوري",
+  "h1": "تحويل ملفات نصية عادية إلى PDF محلياً",
+  "description": "قم بتحويل ملفات .txt إلى ملفات PDF نظيفة وقابلة للقراءة مباشرة في متصفحك. لا يلزم التحميل. معالجة محلية آمنة بنسبة 100%.",
+  "buttonText": "Convert Text",
+  "badges": [
+    "مقتطفات الكود",
+    "سجلات الخادم",
+    "المخطوطات"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Text Files Offline?",
-      "content": "Text files often contain code, scripts, or sensitive notes. Our offline converter ensures zero data transmission."
+      "type": "txt_hero_features",
+      "title": "لماذا تحويل الملفات النصية دون اتصال؟",
+      "content": "غالبًا ما تحتوي الملفات النصية على تعليمات برمجية أو نصوص برمجية أو ملاحظات حساسة. يضمن المحول غير المتصل بالإنترنت نقل البيانات صفرًا."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Text to PDF",
+      "type": "txt_how_to_steps",
+      "title": "كيفية تحويل النص إلى PDF",
       "steps": [
         {
-          "title": "Open Text File",
-          "description": "Select your .txt file or paste text directly."
+          "title": "فتح ملف نصي",
+          "description": "حدد ملف .txt الخاص بك أو الصق النص مباشرةً."
         },
         {
-          "title": "Choose Font & Style",
-          "description": "Pick font size and layout preferences."
+          "title": "اختر الخط والنمط",
+          "description": "اختر حجم الخط وتفضيلات التخطيط."
         },
         {
-          "title": "Download PDF",
-          "description": "Export your text as a beautifully formatted PDF."
+          "title": "تحميل بصيغة PDF",
+          "description": "قم بتصدير النص الخاص بك كملف PDF منسق بشكل جميل."
         }
-      ]
+      ],
+      "badgeText": "الدليل السريع"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Text to PDF for Riyadh Developers",
-      "content": "Developers and writers in Riyadh use our tool to convert scripts and notes without cloud dependency."
+      "type": "txt_geo_targeting",
+      "title": "معالجة محلية آمنة بنسبة 100%",
+      "content": "يتم تنفيذ جميع العمليات مباشرة على جهازك المحلي. نحن نستخدم تقنية WebAssembly المتقدمة لمعالجة مستنداتك دون تحميلها على خوادم خارجية، مما يضمن الخصوصية الكاملة.",
+      "badgeText": "المعالجة المحلية"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Code Stays on Your Machine",
-      "content": "Source code, legal notes, medical records — text files converted with zero server involvement."
+      "type": "txt_privacy_security",
+      "title": "يبقى الكود على جهازك",
+      "content": "كود المصدر، والمذكرات القانونية، والسجلات الطبية - ملفات نصية تم تحويلها بدون مشاركة الخادم.",
+      "badgeText": "الأمن أولا"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Text Rendering",
-      "content": "Convert any size text file to PDF in milliseconds. No upload, no compression, no delay."
+      "type": "txt_performance",
+      "title": "عرض النص الفوري",
+      "content": "قم بتحويل ملف نصي بأي حجم إلى PDF بالمللي ثانية. لا تحميل، لا ضغط، لا تأخير.",
+      "badgeText": "بسرعة البرق"
     }
   ],
   "faqs": [
     {
-      "q": "Can I paste text directly?",
-      "a": "Yes, you can type or paste text without uploading a file."
+      "q": "هل يمكنني لصق النص مباشرة؟",
+      "a": "نعم، يمكنك كتابة نص أو لصقه دون تحميل ملف."
     },
     {
-      "q": "What fonts are available?",
-      "a": "Standard web fonts like Arial, Times New Roman, and monospace."
+      "q": "ما الخطوط المتوفرة؟",
+      "a": "خطوط الويب القياسية مثل Arial وTimes New Roman وmonospace."
     },
     {
-      "q": "Is code syntax preserved?",
-      "a": "Monospace formatting is preserved for code blocks."
+      "q": "هل يتم الحفاظ على بناء جملة التعليمات البرمجية؟",
+      "a": "يتم الاحتفاظ بتنسيق Monospace لكتل ​​التعليمات البرمجية."
     },
     {
-      "q": "Can I set page margins?",
-      "a": "Yes, customize top, bottom, left, and right margins."
+      "q": "هل يمكنني ضبط هوامش الصفحة؟",
+      "a": "نعم، قم بتخصيص الهوامش العلوية والسفلية واليسرى واليمنى."
     },
     {
-      "q": "Is this free?",
-      "a": "نعم، مجاناً تماماً."
+      "q": "هل هذا مجاني؟",
+      "a": "نعم، مجاني تماما."
     }
-  ]
+  ],
+  "faqTitle": "الأسئلة المتداولة",
+  "supportCenter": "مركز الدعم"
 }

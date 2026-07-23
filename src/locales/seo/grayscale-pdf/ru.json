@@ -1,67 +1,85 @@
 {
-  "title": "Grayscale PDF — Convert to Black and White Offline",
-  "h1": "Convert Color PDF Pages to Grayscale Instantly",
-  "description": "Turn color PDFs into black-and-white versions to reduce file size or prepare for printing, entirely in your browser. Ideal for users in Moscow.",
+  "title": "PDF в оттенках серого — конвертировать в черно-белый офлайн",
+  "h1": "Мгновенное преобразование цветных PDF-страниц в оттенки серого",
+  "description": "Преобразуйте цветные PDF-файлы в черно-белые версии, чтобы уменьшить размер файла или подготовиться к печати, полностью в браузере. 100% безопасная локальная обработка.",
+  "buttonText": "Convert to Grayscale",
+  "badges": [
+    "Сохранить чернила",
+    "Черно-белое",
+    "Идеально подходит для печати"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Convert to Grayscale Offline?",
-      "content": "Removing color from a PDF is a pre-print or archiving step. Do it locally without exposing confidential document design."
+      "type": "grayscale_hero_features",
+      "title": "Зачем конвертировать в оттенки серого в автономном режиме?",
+      "content": "Удаление цвета из PDF-файла — это этап предварительной печати или архивирования. Делайте это локально, не раскрывая конфиденциальный дизайн документа."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Make PDF Grayscale",
+      "type": "grayscale_how_to_steps",
+      "title": "Как сделать PDF в оттенках серого",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the color PDF to convert."
+          "title": "Открыть PDF",
+          "description": "Выберите цветной PDF-файл для конвертации."
         },
         {
-          "title": "Choose Conversion Mode",
-          "description": "Pick luminance or contrast-adjusted grayscale."
+          "title": "Выберите режим преобразования",
+          "description": "Выберите яркость или оттенки серого с регулировкой контрастности."
         },
         {
-          "title": "Download Grayscale PDF",
-          "description": "Save the black-and-white PDF immediately."
+          "title": "Скачать PDF в оттенках серого",
+          "description": "Немедленно сохраните черно-белый PDF-файл."
         }
-      ]
+      ],
+      "badgeText": "Краткое руководство"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Grayscale PDF for Moscow Printers",
-      "content": "Businesses in Moscow convert color PDFs to grayscale for cost-effective printing without cloud uploads."
+      "type": "grayscale_geo_targeting",
+      "title": "100% безопасная локальная обработка",
+      "content": "Все операции выполняются непосредственно на вашем локальном устройстве. Мы используем передовую технологию WebAssembly для обработки ваших документов, не загружая их на внешние серверы, обеспечивая полную конфиденциальность.",
+      "badgeText": "Локальная обработка"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Design Files Stay Confidential",
-      "content": "Internal design documents and branded materials converted to grayscale without cloud exposure."
+      "type": "grayscale_privacy_security",
+      "title": "Файлы дизайна остаются конфиденциальными",
+      "content": "Внутренняя проектная документация и фирменные материалы преобразуются в оттенки серого без воздействия облаков.",
+      "badgeText": "Безопасность превыше всего"
     },
     {
-      "type": "transform_performance",
-      "title": "Convert Color Instantly",
-      "content": "A 200-page color PDF converted to grayscale in under 2 seconds. Zero upload."
+      "type": "grayscale_performance",
+      "title": "Мгновенное преобразование цвета",
+      "content": "200-страничный цветной PDF-файл преобразуется в оттенки серого менее чем за 2 секунды. Нулевая загрузка.",
+      "badgeText": "Молниеносно"
     }
   ],
   "faqs": [
     {
-      "q": "Does grayscale reduce file size?",
-      "a": "Often yes, especially for image-heavy PDFs."
+      "q": "Уменьшает ли оттенки серого размер файла?",
+      "a": "Часто да, особенно для PDF-файлов с большим количеством изображений."
     },
     {
-      "q": "Are all pages converted?",
-      "a": "Yes by default; you can also select specific pages."
+      "q": "Все страницы конвертированы?",
+      "a": "Да по умолчанию; вы также можете выбрать определенные страницы."
     },
     {
-      "q": "Is the conversion reversible?",
-      "a": "The color information is removed; keep the original for reversal."
+      "q": "Является ли преобразование обратимым?",
+      "a": "Информация о цвете удаляется; сохраните оригинал для отмены."
     },
     {
-      "q": "Does it affect text quality?",
-      "a": "No, text remains crisp and black."
+      "q": "Влияет ли это на качество текста?",
+      "a": "Нет, текст остается четким и черным."
     },
     {
-      "q": "Is this free?",
-      "a": "Да, полностью бесплатно."
+      "q": "Это бесплатно?",
+      "a": "Да, совершенно бесплатно."
     }
-  ]
+  ],
+  "faqTitle": "Часто задаваемые вопросы",
+  "supportCenter": "Центр поддержки"
 }

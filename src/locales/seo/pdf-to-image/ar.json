@@ -1,67 +1,85 @@
 {
-  "title": "PDF to Image Converter — Extract Pages Offline",
-  "h1": "Convert PDF Pages to PNG or JPG Images",
-  "description": "Extract every page from a PDF as high-quality images directly in your browser. Zero upload, total privacy. Best for users in Riyadh.",
+  "title": "محول PDF إلى صور - استخراج الصفحات دون الاتصال بالإنترنت",
+  "h1": "تحويل صفحات PDF إلى صور PNG أو JPG",
+  "description": "قم باستخراج كل صفحة من ملف PDF كصور عالية الجودة مباشرة في متصفحك. لا يوجد تحميل، ومعالجة محلية آمنة بنسبة 100%.",
+  "buttonText": "Extract Images",
+  "badges": [
+    "حافظات التصميم",
+    "العروض",
+    "جودة عالية"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract PDF Pages Offline?",
-      "content": "PDFs often contain confidential diagrams, blueprints, or reports. Extract pages as images without any server access."
+      "type": "pdf_image_hero_features",
+      "title": "لماذا استخراج صفحات PDF دون اتصال؟",
+      "content": "تحتوي ملفات PDF غالبًا على مخططات أو مخططات أو تقارير سرية. استخراج الصفحات كصور دون أي وصول إلى الخادم."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Images",
+      "type": "pdf_image_how_to_steps",
+      "title": "كيفية تحويل PDF إلى صور",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF you want to extract images from."
+          "title": "تحميل PDF",
+          "description": "حدد ملف PDF الذي تريد استخراج الصور منه."
         },
         {
-          "title": "Choose Format",
-          "description": "Pick PNG (lossless) or JPG (compressed) output."
+          "title": "اختر التنسيق",
+          "description": "اختر إخراج PNG (بدون فقدان) أو JPG (مضغوط)."
         },
         {
-          "title": "Download Images",
-          "description": "Get all pages as individual image files in a ZIP."
+          "title": "تحميل الصور",
+          "description": "احصل على جميع الصفحات كملفات صور فردية في ملف ZIP."
         }
-      ]
+      ],
+      "badgeText": "الدليل السريع"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF to Image for Riyadh Designers",
-      "content": "Designers in Riyadh extract PDF pages as images for presentations and social media without cloud uploads."
+      "type": "pdf_image_geo_targeting",
+      "title": "معالجة محلية آمنة بنسبة 100%",
+      "content": "يتم تنفيذ جميع العمليات مباشرة على جهازك المحلي. نحن نستخدم تقنية WebAssembly المتقدمة لمعالجة مستنداتك دون تحميلها على خوادم خارجية، مما يضمن الخصوصية الكاملة.",
+      "badgeText": "المعالجة المحلية"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Confidential Diagrams Stay Private",
-      "content": "Technical blueprints and legal documents extracted as images without any data leaving your device."
+      "type": "pdf_image_privacy_security",
+      "title": "المخططات السرية تبقى خاصة",
+      "content": "يتم استخراج المخططات الفنية والمستندات القانونية كصور دون مغادرة أي بيانات لجهازك.",
+      "badgeText": "الأمن أولا"
     },
     {
-      "type": "split_performance",
-      "title": "Extract All Pages Instantly",
-      "content": "A 500-page PDF converted to images in seconds. No upload, no wait."
+      "type": "pdf_image_performance",
+      "title": "استخراج كافة الصفحات على الفور",
+      "content": "ملف PDF مكون من 500 صفحة تم تحويله إلى صور في ثوانٍ. لا تحميل، لا الانتظار.",
+      "badgeText": "بسرعة البرق"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are available?",
-      "a": "PNG and JPG with adjustable quality settings."
+      "q": "ما هي تنسيقات الصور المتاحة؟",
+      "a": "PNG وJPG مع إعدادات جودة قابلة للتعديل."
     },
     {
-      "q": "Can I extract specific pages?",
-      "a": "Yes, specify page ranges like 1-5 or 3,7,12."
+      "q": "هل يمكنني استخراج صفحات معينة؟",
+      "a": "نعم، حدد نطاقات الصفحات مثل 1-5 أو 3,7,12."
     },
     {
-      "q": "What resolution are the exported images?",
-      "a": "Default 150 DPI, adjustable up to 300 DPI."
+      "q": "ما هي دقة الصور المصدرة؟",
+      "a": "الافتراضي 150 نقطة في البوصة، قابل للتعديل حتى 300 نقطة في البوصة."
     },
     {
-      "q": "Are all pages exported at once?",
-      "a": "Yes, all selected pages are zipped for a single download."
+      "q": "هل يتم تصدير كافة الصفحات مرة واحدة؟",
+      "a": "نعم، جميع الصفحات المحددة مضغوطة لتنزيل واحد."
     },
     {
-      "q": "Is this free?",
-      "a": "نعم، مجاناً تماماً."
+      "q": "هل هذا مجاني؟",
+      "a": "مجاني تمامًا، دائمًا."
     }
-  ]
+  ],
+  "faqTitle": "الأسئلة المتداولة",
+  "supportCenter": "مركز الدعم"
 }

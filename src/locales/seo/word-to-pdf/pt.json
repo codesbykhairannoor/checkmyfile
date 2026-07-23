@@ -1,67 +1,80 @@
 {
-  "title": "Word to PDF Converter — No Upload Required",
-  "h1": "Convert Word Documents to PDF Instantly",
-  "description": "Transform .docx files into perfect PDFs directly in your browser. Zero upload, 100% private. Ideal for users in São Paulo.",
+  "title": "Conversor de Word para PDF — Não é necessário fazer upload",
+  "h1": "Converta documentos do Word em PDF instantaneamente",
+  "description": "Transforme arquivos .docx em PDFs perfeitos diretamente no seu navegador. Upload zero, 100% privado. Ideal para usuários de São Paulo.",
+  "buttonText": "Converter documento",
+  "badges": [
+    "Contratos de Trabalho",
+    "Resumos jurídicos",
+    "Currículos e currículos"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Tempo de espera"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Word to PDF Offline?",
-      "content": "Your Word document contains sensitive data. Our converter runs entirely in WebAssembly — your file never touches a server."
+      "type": "word_hero_features",
+      "title": "Por que usar off-line?",
+      "content": "Seu documento do Word contém dados confidenciais. Nosso conversor é executado inteiramente em WebAssembly — seu arquivo nunca chega a um servidor."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Word to PDF",
+      "type": "word_how_to_steps",
+      "title": "Como usar",
       "steps": [
         {
-          "title": "Select .docx File",
-          "description": "Pick your Word document from your computer."
+          "title": "Selecione o arquivo .docx",
+          "description": "Escolha seu documento do Word em seu computador."
         },
         {
-          "title": "Preview Output",
-          "description": "See the PDF rendering before finalizing."
+          "title": "Visualização da saída",
+          "description": "Veja a renderização do PDF antes de finalizar."
         },
         {
-          "title": "Download PDF",
-          "description": "Save your perfectly converted PDF instantly."
+          "title": "Baixar PDF",
+          "description": "Salve seu PDF perfeitamente convertido instantaneamente."
         }
       ]
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Word to PDF for São Paulo Users",
-      "content": "Used by professionals in São Paulo who need to share documents without losing formatting."
+      "type": "word_geo_targeting",
+      "title": "Word para PDF para usuários de São Paulo",
+      "content": "Utilizado por profissionais de São Paulo que precisam compartilhar documentos sem perder a formatação."
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Your Contracts Stay Private",
-      "content": "Converting employment contracts? Legal briefs? Our WASM processor never phones home."
+      "type": "word_privacy_security",
+      "title": "Seus contratos permanecem privados",
+      "content": "Converter contratos de trabalho? Resumos jurídicos? Nosso processador WASM nunca liga para casa."
     },
     {
-      "type": "combiner_performance",
-      "title": "No More Conversion Queues",
-      "content": "Cloud converters put you in a queue. Ours converts in under 2 seconds, entirely offline."
+      "type": "word_performance",
+      "title": "Chega de filas de conversão",
+      "content": "Os conversores de nuvem colocam você em uma fila. O nosso converte em menos de 2 segundos, totalmente offline."
     }
   ],
   "faqs": [
     {
-      "q": "Does it preserve Word formatting?",
-      "a": "Yes, fonts, tables, and images are preserved using our WASM renderer."
+      "q": "Ele preserva a formatação do Word?",
+      "a": "Sim, fontes, tabelas e imagens são preservadas usando nosso renderizador WASM."
     },
     {
-      "q": "What Word versions are supported?",
-      "a": "All modern .docx files are supported."
+      "q": "Quais versões do Word são suportadas?",
+      "a": "Todos os arquivos .docx modernos são suportados."
     },
     {
-      "q": "Is there a file size limit?",
-      "a": "No server limits! Only your device RAM is the constraint."
+      "q": "Existe um limite de tamanho de arquivo?",
+      "a": "Sem limites de servidor! Apenas a RAM do seu dispositivo é a restrição."
     },
     {
-      "q": "Can I batch convert multiple files?",
-      "a": "Yes, select multiple .docx files at once."
+      "q": "Posso converter vários arquivos em lote?",
+      "a": "Sim, selecione vários arquivos .docx de uma vez."
     },
     {
-      "q": "Is this free?",
-      "a": "Sim, completamente gratuito."
+      "q": "Isso é grátis?",
+      "a": "Sim, totalmente gratuito."
     }
-  ]
+  ],
+  "faqTitle": "Perguntas Frequentes"
 }

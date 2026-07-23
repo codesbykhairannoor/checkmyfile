@@ -1,67 +1,85 @@
 {
-  "title": "Unlock PDF — Remove Password Offline",
-  "h1": "Remove PDF Password Protection Instantly in Your Browser",
-  "description": "Unlock password-protected PDFs locally if you know the password. 100% private. No upload. Perfect for users in Budapest.",
+  "title": "PDF feloldása — Jelszó eltávolítása offline módban",
+  "h1": "A PDF jelszavas védelmet azonnal távolítsa el a böngészőből",
+  "description": "Oldja fel a jelszóval védett PDF-fájlok zárolását helyileg, ha ismeri a jelszót. 100% privát. Nincs feltöltés. 100%-ban biztonságos helyi feldolgozás.",
+  "buttonText": "Unlock PDF",
+  "badges": [
+    "Jelszó eltávolítása",
+    "Azonnali feloldás",
+    "Nincsenek szervernaplók"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "unlock_hero_features",
-      "title": "Why Unlock PDFs Locally?",
-      "content": "You have the password to your own file. Unlocking it should not require uploading sensitive documents to an external service."
+      "title": "Miért oldja fel a PDF-fájlok zárolását helyileg?",
+      "content": "Megvan a saját fájl jelszava. A zárolás feloldásához nem kell bizalmas dokumentumokat feltölteni egy külső szolgáltatásba."
     },
     {
       "type": "unlock_how_to_steps",
-      "title": "How to Unlock a Protected PDF",
+      "title": "Védett PDF feloldása",
       "steps": [
         {
-          "title": "Open Protected PDF",
-          "description": "Select the password-protected PDF."
+          "title": "Védett PDF megnyitása",
+          "description": "Válassza ki a jelszóval védett PDF-fájlt."
         },
         {
-          "title": "Enter Your Password",
-          "description": "Provide the existing password — decryption stays in your browser."
+          "title": "Írja be jelszavát",
+          "description": "Adja meg a meglévő jelszót – a visszafejtés a böngészőben marad."
         },
         {
-          "title": "Download Unlocked PDF",
-          "description": "Get your unlocked, fully accessible PDF instantly."
+          "title": "Feloldott PDF letöltése",
+          "description": "Azonnal szerezze meg feloldott, teljesen hozzáférhető PDF-jét."
         }
-      ]
+      ],
+      "badgeText": "Gyors útmutató"
     },
     {
       "type": "unlock_geo_targeting",
-      "title": "Instant PDF Unlocking for Budapest Users",
-      "content": "Users in Budapest access their own password-protected files without sending decryption keys to any server."
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Minden művelet közvetlenül a helyi eszközön történik. Fejlett WebAssembly technológiát használunk a dokumentumok feldolgozásához anélkül, hogy azokat külső szerverekre feltöltenénk, így biztosítva a teljes adatvédelmet.",
+      "badgeText": "Helyi feldolgozás"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Your Password Never Leaves the Browser",
-      "content": "The decryption key and your document are processed entirely in browser memory — never transmitted to any server or service."
+      "title": "Jelszava soha nem hagyja el a böngészőt",
+      "content": "A visszafejtési kulcsot és a dokumentumot teljes egészében a böngésző memóriájában dolgozzák fel – soha nem továbbítják semmilyen szerverhez vagy szolgáltatáshoz.",
+      "badgeText": "Első a biztonság"
     },
     {
       "type": "unlock_performance",
-      "title": "Instant Browser-Local Decryption",
-      "content": "AES decryption in your browser takes under a second — far faster than any cloud service with no upload wait."
+      "title": "Azonnali böngésző helyi visszafejtése",
+      "content": "Az AES visszafejtése a böngészőben kevesebb mint egy másodpercet vesz igénybe – sokkal gyorsabban, mint bármely felhőszolgáltatás, feltöltés nélkül.",
+      "badgeText": "Villámgyors"
     }
   ],
   "faqs": [
     {
-      "q": "Does it work without the password?",
-      "a": "No, you must know the existing password to unlock."
+      "q": "Jelszó nélkül működik?",
+      "a": "Nem, a feloldáshoz ismernie kell a meglévő jelszót."
     },
     {
-      "q": "Can I unlock permissions-restricted PDFs?",
-      "a": "Yes, permission restrictions are removed after password verification."
+      "q": "Feloldhatom az engedélyekkel korlátozott PDF-fájlok zárolását?",
+      "a": "Igen, az engedélykorlátozások a jelszó ellenőrzése után megszűnnek."
     },
     {
-      "q": "Is the decryption process secure?",
-      "a": "All decryption happens in your browser memory; nothing is transmitted."
+      "q": "Biztonságos a visszafejtési folyamat?",
+      "a": "Minden visszafejtés a böngésző memóriájában történik; semmit nem továbbítanak."
     },
     {
-      "q": "What if the password is wrong?",
-      "a": "You will see an error and can try again with the correct password."
+      "q": "Mi van, ha rossz a jelszó?",
+      "a": "Hibaüzenet jelenik meg, és újra próbálkozhat a megfelelő jelszóval."
     },
     {
-      "q": "Is this free?",
+      "q": "Ez ingyenes?",
       "a": "Igen, teljesen ingyenes."
     }
-  ]
+  ],
+  "faqTitle": "Gyakran Ismételt Kérdések",
+  "supportCenter": "Támogatási Központ"
 }

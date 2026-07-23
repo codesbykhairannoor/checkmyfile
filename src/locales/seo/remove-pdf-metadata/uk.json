@@ -1,67 +1,85 @@
 {
-  "title": "Remove PDF Metadata — Strip Hidden Author Data Offline",
-  "h1": "Strip All Hidden Metadata from PDF Files Instantly",
-  "description": "Remove author names, company info, GPS locations, and revision history from PDFs entirely in your browser. No upload. Perfect for Kyiv users.",
+  "title": "Видалити метадані PDF — видалити приховані авторські дані в автономному режимі",
+  "h1": "Миттєво видаляйте всі приховані метадані з PDF-файлів",
+  "description": "Повністю видаліть імена авторів, інформацію про компанію, розташування GPS та історію редагувань із PDF-файлів у вашому браузері. Без завантаження. 100% безпечна локальна обробка.",
+  "buttonText": "Process Document",
+  "badges": [
+    "Безпечний і приватний",
+    "Offline Engine",
+    "Нульове завантаження"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "metadata_hero_features",
-      "title": "Why Strip PDF Metadata?",
-      "content": "PDFs carry hidden metadata — your name, your company, revision history. Strip it all before sharing publicly, entirely offline."
+      "title": "Навіщо видаляти метадані PDF?",
+      "content": "PDF-файли містять приховані метадані — ваше ім’я, вашу компанію, історію змін. Видаліть це все, перш ніж оприлюднити, повністю офлайн."
     },
     {
       "type": "metadata_how_to_steps",
-      "title": "Before & After — How Metadata Removal Works",
+      "title": "До і після — як працює видалення метаданих",
       "steps": [
         {
-          "title": "Open Your PDF",
-          "description": "Select the PDF with hidden metadata to remove."
+          "title": "Відкрийте свій PDF",
+          "description": "Виберіть PDF-файл із прихованими метаданими, який потрібно видалити."
         },
         {
-          "title": "Preview Hidden Data",
-          "description": "See exactly what metadata — author, GPS, history — is embedded."
+          "title": "Попередній перегляд прихованих даних",
+          "description": "Подивіться, які саме метадані — автор, GPS, історія — вбудовано."
         },
         {
-          "title": "Strip & Download Clean PDF",
-          "description": "Remove all metadata instantly and save a clean, anonymous PDF."
+          "title": "Зніміть і завантажте чистий PDF",
+          "description": "Миттєво видаліть усі метадані та збережіть чистий анонімний PDF-файл."
         }
-      ]
+      ],
+      "badgeText": "Короткий посібник"
     },
     {
       "type": "metadata_geo_targeting",
-      "title": "Metadata Privacy Tool for Kyiv Professionals",
-      "content": "Journalists, legal professionals, and privacy-conscious users in Kyiv strip metadata before publishing or sharing PDFs externally."
+      "title": "100% безпечна локальна обробка",
+      "content": "Усі операції виконуються безпосередньо на локальному пристрої. Ми використовуємо передову технологію WebAssembly для обробки ваших документів, не завантажуючи їх на зовнішні сервери, забезпечуючи повну конфіденційність.",
+      "badgeText": "Локальна обробка"
     },
     {
       "type": "metadata_privacy_security",
-      "title": "All Metadata Types Permanently Erased",
-      "content": "Author name, company, GPS coordinates from embedded images, revision history, software fingerprints — all permanently removed."
+      "title": "Усі типи метаданих остаточно стерто",
+      "content": "Ім’я автора, компанія, GPS-координати із вбудованих зображень, історія версій, відбитки програмного забезпечення — усе видалено назавжди.",
+      "badgeText": "Безпека перш за все"
     },
     {
       "type": "metadata_performance",
-      "title": "Strip Metadata in Milliseconds",
-      "content": "Metadata removal takes milliseconds and often reduces file size by 10–15%. All offline."
+      "title": "Видалення метаданих у мілісекундах",
+      "content": "Видалення метаданих займає мілісекунди та часто зменшує розмір файлу на 10–15%. Все офлайн.",
+      "badgeText": "Блискавичний"
     }
   ],
   "faqs": [
     {
-      "q": "What metadata is removed?",
-      "a": "Author, creator, producer, title, keywords, and all XMP/EXIF data."
+      "q": "Які метадані видаляються?",
+      "a": "Автор, творець, виробник, назва, ключові слова та всі дані XMP/EXIF."
     },
     {
-      "q": "Are document bookmarks affected?",
-      "a": "No, bookmarks and structure are preserved; only metadata is removed."
+      "q": "Чи впливають закладки документа?",
+      "a": "Ні, закладки та структура збережені; видаляються лише метадані."
     },
     {
-      "q": "Can I preview the metadata first?",
-      "a": "Yes, we show a list of all detected metadata before removing."
+      "q": "Чи можу я спочатку переглянути метадані?",
+      "a": "Так, перед видаленням ми показуємо список усіх виявлених метаданих."
     },
     {
-      "q": "Is the document content affected?",
-      "a": "No, the content, images, and structure remain intact."
+      "q": "Чи впливає вміст документа?",
+      "a": "Ні, вміст, зображення та структура залишаються незмінними."
     },
     {
-      "q": "Is this free?",
-      "a": "Так, повністю безкоштовно."
+      "q": "Це безкоштовно?",
+      "a": "Так, завжди безкоштовно."
     }
-  ]
+  ],
+  "faqTitle": "Часті запитання",
+  "supportCenter": "Центр підтримки"
 }

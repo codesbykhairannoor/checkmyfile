@@ -1,67 +1,85 @@
 {
-  "title": "Extract Images from PDF — Offline Extractor",
-  "h1": "Extract All Embedded Images from PDF Files",
-  "description": "Pull out every image from a PDF and download them as PNG or JPG files, all in your browser. No cloud. Ideal for users in Seoul.",
+  "title": "PDF에서 이미지 추출 - 오프라인 추출기",
+  "h1": "PDF 파일에 포함된 모든 이미지 추출",
+  "description": "PDF에서 모든 이미지를 꺼내어 브라우저에서 PNG 또는 JPG 파일로 다운로드하세요. 클라우드가 없습니다. 100% 안전한 로컬 처리.",
+  "buttonText": "Extract All Images",
+  "badges": [
+    "제품 사진",
+    "기밀 다이어그램",
+    "벡터"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract Images Offline?",
-      "content": "PDFs with confidential diagrams or product photos should never be uploaded. Extract images directly in your browser."
+      "type": "extract_images_hero_features",
+      "title": "왜 오프라인으로 이미지를 추출하나요?",
+      "content": "기밀 다이어그램이나 제품 사진이 포함된 PDF는 절대 업로드하면 안 됩니다. 브라우저에서 직접 이미지를 추출하세요."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Extract Images from PDF",
+      "type": "extract_images_how_to_steps",
+      "title": "PDF에서 이미지를 추출하는 방법",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Open the PDF containing embedded images."
+          "title": "PDF 로드",
+          "description": "포함된 이미지가 포함된 PDF를 엽니다."
         },
         {
-          "title": "Scan for Images",
-          "description": "Our engine locates all embedded image objects."
+          "title": "이미지 스캔",
+          "description": "우리 엔진은 포함된 모든 이미지 객체를 찾습니다."
         },
         {
-          "title": "Download ZIP",
-          "description": "Get all extracted images in a single ZIP file."
+          "title": "우편번호 다운로드",
+          "description": "추출된 모든 이미지를 하나의 ZIP 파일로 가져옵니다."
         }
-      ]
+      ],
+      "badgeText": "빠른 가이드"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Image Extraction in Seoul",
-      "content": "Publishers and marketers in Seoul extract product photos and diagrams from PDFs without cloud uploads."
+      "type": "extract_images_geo_targeting",
+      "title": "100% 안전한 로컬 처리",
+      "content": "모든 작업은 로컬 장치에서 직접 수행됩니다. 우리는 고급 WebAssembly 기술을 사용하여 문서를 외부 서버에 업로드하지 않고 처리하여 완벽한 개인 정보 보호를 보장합니다.",
+      "badgeText": "로컬 처리"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Product Images Stay Confidential",
-      "content": "Unreleased product photos embedded in PDFs extracted locally without any server access."
+      "type": "extract_images_privacy_security",
+      "title": "제품 이미지는 기밀로 유지됩니다",
+      "content": "PDF에 포함된 미출시 제품 사진은 서버 액세스 없이 로컬에서 추출됩니다.",
+      "badgeText": "보안 우선"
     },
     {
-      "type": "split_performance",
-      "title": "Extract Hundreds of Images Fast",
-      "content": "Extract 500 images from a PDF in seconds. All native browser processing."
+      "type": "extract_images_performance",
+      "title": "수백 개의 이미지를 빠르게 추출",
+      "content": "단 몇 초 만에 PDF에서 500개의 이미지를 추출할 수 있습니다. 모든 기본 브라우저 처리.",
+      "badgeText": "번개처럼 빠르게"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are extracted?",
-      "a": "Images are saved in their original format (PNG, JPG, etc.)."
+      "q": "어떤 이미지 형식이 추출되나요?",
+      "a": "이미지는 원본 형식(PNG, JPG 등)으로 저장됩니다."
     },
     {
-      "q": "Are images at full resolution?",
-      "a": "Yes, extracted at the original embedded resolution."
+      "q": "이미지가 전체 해상도인가요?",
+      "a": "예, 원래 내장 해상도로 추출되었습니다."
     },
     {
-      "q": "Can I choose specific pages?",
-      "a": "Yes, specify which pages to extract images from."
+      "q": "특정 페이지를 선택할 수 있나요?",
+      "a": "예, 이미지를 추출할 페이지를 지정하세요."
     },
     {
-      "q": "Does it extract vector graphics?",
-      "a": "Vector elements are rasterized to PNG/JPG."
+      "q": "벡터 그래픽을 추출합니까?",
+      "a": "벡터 요소는 PNG/JPG로 래스터화됩니다."
     },
     {
-      "q": "Is this free?",
-      "a": "예, 완전 무료입니다."
+      "q": "이거 무료인가요?",
+      "a": "예, 항상 무료입니다."
     }
-  ]
+  ],
+  "faqTitle": "자주 묻는 질문",
+  "supportCenter": "지원 센터"
 }

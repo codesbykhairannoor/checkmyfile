@@ -1,67 +1,85 @@
 {
-  "title": "Text to PDF Converter — Offline & Instant",
-  "h1": "Convert Plain Text Files to PDF Locally",
-  "description": "Transform .txt files into clean, readable PDFs directly in your browser. No upload required. Ideal for users in Jerusalem.",
+  "title": "ממיר טקסט ל-PDF — לא מקוון ומידי",
+  "h1": "המר קבצי טקסט רגיל ל-PDF באופן מקומי",
+  "description": "הפוך קובצי txt לקובצי PDF נקיים וניתנים לקריאה ישירות בדפדפן שלך. אין צורך בהעלאה. עיבוד מקומי מאובטח של 100%.",
+  "buttonText": "Convert Text",
+  "badges": [
+    "קטעי קוד",
+    "יומני שרת",
+    "כתבי יד"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Text Files Offline?",
-      "content": "Text files often contain code, scripts, or sensitive notes. Our offline converter ensures zero data transmission."
+      "type": "txt_hero_features",
+      "title": "למה להמיר קבצי טקסט במצב לא מקוון?",
+      "content": "קבצי טקסט מכילים לרוב קוד, סקריפטים או הערות רגישות. הממיר הלא מקוון שלנו מבטיח אפס העברת נתונים."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Text to PDF",
+      "type": "txt_how_to_steps",
+      "title": "כיצד להמיר טקסט ל-PDF",
       "steps": [
         {
-          "title": "Open Text File",
-          "description": "Select your .txt file or paste text directly."
+          "title": "פתח קובץ טקסט",
+          "description": "בחר את קובץ ה-.txt שלך או הדבק טקסט ישירות."
         },
         {
-          "title": "Choose Font & Style",
-          "description": "Pick font size and layout preferences."
+          "title": "בחר גופן וסגנון",
+          "description": "בחר העדפות גודל גופן ופריסה."
         },
         {
-          "title": "Download PDF",
-          "description": "Export your text as a beautifully formatted PDF."
+          "title": "הורד PDF",
+          "description": "ייצא את הטקסט שלך כקובץ PDF בפורמט יפה."
         }
-      ]
+      ],
+      "badgeText": "מדריך מהיר"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Text to PDF for Jerusalem Developers",
-      "content": "Developers and writers in Jerusalem use our tool to convert scripts and notes without cloud dependency."
+      "type": "txt_geo_targeting",
+      "title": "100% עיבוד מקומי מאובטח",
+      "content": "כל הפעולות מבוצעות ישירות במכשיר המקומי שלך. אנו משתמשים בטכנולוגיית WebAssembly מתקדמת כדי לעבד את המסמכים שלך מבלי להעלות אותם לשרתים חיצוניים, מה שמבטיח פרטיות מלאה.",
+      "badgeText": "עיבוד מקומי"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Code Stays on Your Machine",
-      "content": "Source code, legal notes, medical records — text files converted with zero server involvement."
+      "type": "txt_privacy_security",
+      "title": "הקוד נשאר במחשב שלך",
+      "content": "קוד מקור, הערות משפטיות, רשומות רפואיות - קבצי טקסט שהומרו ללא מעורבות שרת.",
+      "badgeText": "אבטחה תחילה"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Text Rendering",
-      "content": "Convert any size text file to PDF in milliseconds. No upload, no compression, no delay."
+      "type": "txt_performance",
+      "title": "עיבוד טקסט מיידי",
+      "content": "המר קובץ טקסט בכל גודל ל-PDF באלפיות שניות. ללא העלאה, ללא דחיסה, ללא עיכוב.",
+      "badgeText": "מהיר ברק"
     }
   ],
   "faqs": [
     {
-      "q": "Can I paste text directly?",
-      "a": "Yes, you can type or paste text without uploading a file."
+      "q": "האם אני יכול להדביק טקסט ישירות?",
+      "a": "כן, אתה יכול להקליד או להדביק טקסט מבלי להעלות קובץ."
     },
     {
-      "q": "What fonts are available?",
-      "a": "Standard web fonts like Arial, Times New Roman, and monospace."
+      "q": "אילו גופנים זמינים?",
+      "a": "גופני אינטרנט סטנדרטיים כמו Arial, Times New Roman ומונוספייס."
     },
     {
-      "q": "Is code syntax preserved?",
-      "a": "Monospace formatting is preserved for code blocks."
+      "q": "האם תחביר הקוד נשמר?",
+      "a": "עיצוב מונו-רווח נשמר עבור בלוקי קוד."
     },
     {
-      "q": "Can I set page margins?",
-      "a": "Yes, customize top, bottom, left, and right margins."
+      "q": "האם אני יכול להגדיר שולי עמוד?",
+      "a": "כן, התאם אישית את השוליים העליונים, התחתונים, השמאליים והימניים."
     },
     {
-      "q": "Is this free?",
-      "a": "כן, חינם לחלוטין."
+      "q": "האם זה בחינם?",
+      "a": "כן, לגמרי בחינם."
     }
-  ]
+  ],
+  "faqTitle": "שאלות נפוצות",
+  "supportCenter": "מרכז תמיכה"
 }

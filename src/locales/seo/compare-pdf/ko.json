@@ -1,67 +1,85 @@
 {
-  "title": "Compare PDF Files — Spot Differences Locally",
-  "h1": "Compare Two PDF Documents Side by Side",
-  "description": "Upload two PDFs and highlight differences between them entirely in your browser. No upload to servers. Ideal for users in Seoul.",
+  "title": "PDF 파일 비교 — 로컬에서 차이점 찾기",
+  "h1": "두 개의 PDF 문서를 나란히 비교",
+  "description": "두 개의 PDF를 업로드하고 브라우저에서 두 PDF 간의 차이점을 완전히 강조하세요. 서버에 업로드하지 않습니다. 100% 안전한 로컬 처리.",
+  "buttonText": "Compare PDFs",
+  "badges": [
+    "차이점 찾기",
+    "변경 사항 강조",
+    "시각적 차이"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Compare PDFs Locally?",
-      "content": "Comparing contract versions or document revisions often involves highly sensitive content. Do it entirely offline."
+      "type": "compare_hero_features",
+      "title": "PDF를 로컬에서 비교하는 이유는 무엇입니까?",
+      "content": "계약 버전이나 문서 개정판을 비교하는 데에는 매우 민감한 콘텐츠가 포함되는 경우가 많습니다. 완전히 오프라인으로 수행하세요."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Compare Two PDFs",
+      "type": "compare_how_to_steps",
+      "title": "두 PDF를 비교하는 방법",
       "steps": [
         {
-          "title": "Load Both PDFs",
-          "description": "Select the two PDF versions to compare."
+          "title": "두 PDF 모두 로드",
+          "description": "비교할 두 PDF 버전을 선택하세요."
         },
         {
-          "title": "View Differences",
-          "description": "Highlighted changes appear side by side."
+          "title": "차이점 보기",
+          "description": "강조 표시된 변경 사항이 나란히 표시됩니다."
         },
         {
-          "title": "Export Diff Report",
-          "description": "Download a comparison report with all changes marked."
+          "title": "차이점 보고서 내보내기",
+          "description": "모든 변경 사항이 표시된 비교 보고서를 다운로드하세요."
         }
-      ]
+      ],
+      "badgeText": "빠른 가이드"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Comparison for Seoul Law Firms",
-      "content": "Legal professionals in Seoul compare contract revisions without uploading privileged documents to cloud services."
+      "type": "compare_geo_targeting",
+      "title": "100% 안전한 로컬 처리",
+      "content": "모든 작업은 로컬 장치에서 직접 수행됩니다. 우리는 고급 WebAssembly 기술을 사용하여 문서를 외부 서버에 업로드하지 않고 처리하여 완벽한 개인 정보 보호를 보장합니다.",
+      "badgeText": "로컬 처리"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Privileged Documents Stay Private",
-      "content": "Compare NDAs, contracts, and regulatory filings without any server interaction."
+      "type": "compare_privacy_security",
+      "title": "권한 있는 문서는 비공개로 유지",
+      "content": "서버 상호 작용 없이 NDA, 계약 및 규제 서류를 비교할 수 있습니다.",
+      "badgeText": "보안 우선"
     },
     {
-      "type": "organizer_performance",
-      "title": "Instant Side-by-Side Comparison",
-      "content": "Compare 100-page documents in seconds with highlighted differences rendered in-browser."
+      "type": "compare_performance",
+      "title": "즉각적인 병렬 비교",
+      "content": "브라우저에서 렌더링된 강조된 차이점을 통해 100페이지 문서를 몇 초 만에 비교할 수 있습니다.",
+      "badgeText": "번개처럼 빠르게"
     }
   ],
   "faqs": [
     {
-      "q": "What types of differences are detected?",
-      "a": "Text additions, deletions, and formatting changes are highlighted."
+      "q": "어떤 유형의 차이점이 감지됩니까?",
+      "a": "텍스트 추가, 삭제 및 서식 변경 사항이 강조 표시됩니다."
     },
     {
-      "q": "Can I compare scanned PDFs?",
-      "a": "For scanned PDFs, use OCR first to extract text before comparing."
+      "q": "스캔한 PDF를 비교할 수 있나요?",
+      "a": "스캔한 PDF의 경우 비교하기 전에 먼저 OCR을 사용하여 텍스트를 추출하세요."
     },
     {
-      "q": "Can I export the comparison?",
-      "a": "Yes, download a marked-up PDF showing all differences."
+      "q": "비교 내용을 내보낼 수 있나요?",
+      "a": "예, 모든 차이점을 보여주는 마크업 PDF를 다운로드하세요."
     },
     {
-      "q": "How many versions can I compare?",
-      "a": "Two documents at a time in the side-by-side view."
+      "q": "얼마나 많은 버전을 비교할 수 있나요?",
+      "a": "나란히 보기에서 한 번에 두 개의 문서."
     },
     {
-      "q": "Is this free?",
+      "q": "이거 무료인가요?",
       "a": "예, 완전 무료입니다."
     }
-  ]
+  ],
+  "faqTitle": "자주 묻는 질문",
+  "supportCenter": "지원 센터"
 }

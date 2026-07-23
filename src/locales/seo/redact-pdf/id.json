@@ -1,67 +1,85 @@
 {
-  "title": "Redact PDF — Permanently Remove Sensitive Data",
-  "h1": "Permanently Redact Sensitive Information from PDFs Offline",
-  "description": "Black out sensitive text and images in PDFs entirely in your browser. No cloud risk. Critical for users in Jakarta.",
+  "title": "Sunting PDF — Hapus Data Sensitif Secara Permanen",
+  "h1": "Sunting Informasi Sensitif secara Permanen dari PDF Offline",
+  "description": "Hilangkan seluruh teks dan gambar sensitif dalam PDF di browser Anda. Tidak ada risiko awan. Pemrosesan lokal 100% aman.",
+  "buttonText": "Redact Text",
+  "badges": [
+    "Hapus Permanen",
+    "Info Pemadaman",
+    "Redaksi Aman"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "redact_hero_features",
-      "title": "Why Redact PDFs Locally?",
-      "content": "Redacting means the content is classified. Uploading a document you need to hide defeats the whole purpose. Our tool runs 100% offline."
+      "title": "Mengapa Menyunting PDF Secara Lokal?",
+      "content": "Menyunting berarti kontennya diklasifikasikan. Mengunggah dokumen yang perlu Anda sembunyikan akan menggagalkan seluruh tujuan. Alat kami berjalan 100% offline."
     },
     {
       "type": "redact_how_to_steps",
-      "title": "How to Permanently Redact a PDF",
+      "title": "Cara Menyunting PDF Secara Permanen",
       "steps": [
         {
-          "title": "Open Sensitive Document",
-          "description": "Load the PDF with data that must be hidden."
+          "title": "Buka Dokumen Sensitif",
+          "description": "Muat PDF dengan data yang harus disembunyikan."
         },
         {
-          "title": "Mark Redaction Areas",
-          "description": "Draw boxes over content to permanently erase."
+          "title": "Tandai Area Redaksi",
+          "description": "Gambar kotak di atas konten untuk dihapus secara permanen."
         },
         {
-          "title": "Apply & Download",
-          "description": "Content is permanently deleted from the PDF structure."
+          "title": "Terapkan & Unduh",
+          "description": "Konten dihapus secara permanen dari struktur PDF."
         }
-      ]
+      ],
+      "badgeText": "Panduan Singkat"
     },
     {
       "type": "redact_geo_targeting",
-      "title": "Court-Ready Redaction for Jakarta Law Firms",
-      "content": "Legal professionals in Jakarta prepare court documents with permanent, offline redaction that removes data from the PDF structure itself."
+      "title": "Pemrosesan Lokal 100% Aman",
+      "content": "Semua operasi dilakukan langsung di perangkat lokal Anda. Kami menggunakan teknologi WebAssembly yang canggih untuk memproses dokumen Anda tanpa harus mengunggahnya ke server eksternal, sehingga memastikan privasi sepenuhnya.",
+      "badgeText": "Pemrosesan Lokal"
     },
     {
       "type": "redact_privacy_security",
-      "title": "True Permanent Redaction — Not Just Black Boxes",
-      "content": "Unlike tools that merely cover text with black boxes, our redaction permanently deletes the underlying data from the PDF object structure."
+      "title": "Redaksi Permanen Sejati — Bukan Hanya Kotak Hitam",
+      "content": "Tidak seperti alat yang hanya menutupi teks dengan kotak hitam, redaksi kami menghapus data dasar secara permanen dari struktur objek PDF.",
+      "badgeText": "Keamanan Pertama"
     },
     {
       "type": "redact_performance",
-      "title": "Redact Entire Documents Instantly",
-      "content": "Apply hundreds of permanent redactions to large documents in seconds, completely offline."
+      "title": "Sunting Seluruh Dokumen Secara Instan",
+      "content": "Terapkan ratusan redaksi permanen pada dokumen besar dalam hitungan detik, sepenuhnya offline.",
+      "badgeText": "Secepat Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "Is the redaction truly permanent?",
-      "a": "Yes, the underlying text and image data is permanently deleted from the PDF structure."
+      "q": "Apakah redaksinya benar-benar permanen?",
+      "a": "Ya, data teks dan gambar yang mendasarinya dihapus secara permanen dari struktur PDF."
     },
     {
-      "q": "Can I redact images too?",
-      "a": "Yes, both text regions and image areas can be permanently redacted."
+      "q": "Bisakah saya menyunting gambar juga?",
+      "a": "Ya, area teks dan area gambar dapat disunting secara permanen."
     },
     {
-      "q": "Can I choose black or white cover?",
-      "a": "Yes, pick the redaction style that suits your document."
+      "q": "Bisakah saya memilih sampul hitam atau putih?",
+      "a": "Ya, pilih gaya redaksi yang sesuai dengan dokumen Anda."
     },
     {
-      "q": "Does this meet legal standards?",
-      "a": "Our redaction removes data at the PDF object level, meeting court requirements."
+      "q": "Apakah ini memenuhi standar hukum?",
+      "a": "Redaksi kami menghapus data pada tingkat objek PDF, memenuhi persyaratan pengadilan."
     },
     {
-      "q": "Is this free?",
-      "a": "Ya, sepenuhnya gratis."
+      "q": "Apakah ini gratis?",
+      "a": "Ya, selalu gratis."
     }
-  ]
+  ],
+  "faqTitle": "Pertanyaan yang Sering Diajukan",
+  "supportCenter": "Pusat Dukungan"
 }

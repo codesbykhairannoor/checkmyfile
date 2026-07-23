@@ -1,67 +1,85 @@
 {
-  "title": "Compare PDF Files — Spot Differences Locally",
-  "h1": "Compare Two PDF Documents Side by Side",
-  "description": "Upload two PDFs and highlight differences between them entirely in your browser. No upload to servers. Ideal for users in Istanbul.",
+  "title": "PDF Dosyalarını Karşılaştırın — Farklılıkları Yerel Olarak Belirleyin",
+  "h1": "İki PDF Belgesini Yan Yana Karşılaştırın",
+  "description": "İki PDF yükleyin ve aralarındaki farkları tamamen tarayıcınızda vurgulayın. Sunuculara yükleme yapılmaz. %100 güvenli yerel işleme.",
+  "buttonText": "Compare PDFs",
+  "badges": [
+    "Farkları Bulun",
+    "Değişiklikleri Vurgula",
+    "Görsel Fark"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Compare PDFs Locally?",
-      "content": "Comparing contract versions or document revisions often involves highly sensitive content. Do it entirely offline."
+      "type": "compare_hero_features",
+      "title": "Neden PDF'leri Yerel Olarak Karşılaştırmalısınız?",
+      "content": "Sözleşme versiyonlarının veya belge revizyonlarının karşılaştırılması genellikle oldukça hassas içerik içerir. Bunu tamamen çevrimdışı yapın."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Compare Two PDFs",
+      "type": "compare_how_to_steps",
+      "title": "İki PDF Nasıl Karşılaştırılır",
       "steps": [
         {
-          "title": "Load Both PDFs",
-          "description": "Select the two PDF versions to compare."
+          "title": "Her İki PDF'yi de Yükle",
+          "description": "Karşılaştırılacak iki PDF sürümünü seçin."
         },
         {
-          "title": "View Differences",
-          "description": "Highlighted changes appear side by side."
+          "title": "Farkları Görüntüle",
+          "description": "Vurgulanan değişiklikler yan yana görünür."
         },
         {
-          "title": "Export Diff Report",
-          "description": "Download a comparison report with all changes marked."
+          "title": "Fark Raporunu Dışa Aktar",
+          "description": "İşaretlenen tüm değişiklikleri içeren bir karşılaştırma raporu indirin."
         }
-      ]
+      ],
+      "badgeText": "Hızlı Kılavuz"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Comparison for Istanbul Law Firms",
-      "content": "Legal professionals in Istanbul compare contract revisions without uploading privileged documents to cloud services."
+      "type": "compare_geo_targeting",
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Privileged Documents Stay Private",
-      "content": "Compare NDAs, contracts, and regulatory filings without any server interaction."
+      "type": "compare_privacy_security",
+      "title": "Ayrıcalıklı Belgeler Gizli Kalsın",
+      "content": "Herhangi bir sunucu etkileşimi olmadan gizlilik anlaşmalarını, sözleşmeleri ve düzenleyici başvuruları karşılaştırın.",
+      "badgeText": "Önce Güvenlik"
     },
     {
-      "type": "organizer_performance",
-      "title": "Instant Side-by-Side Comparison",
-      "content": "Compare 100-page documents in seconds with highlighted differences rendered in-browser."
+      "type": "compare_performance",
+      "title": "Anında Yan Yana Karşılaştırma",
+      "content": "100 sayfalık belgeleri, tarayıcıda görüntülenen vurgulanan farklarla saniyeler içinde karşılaştırın.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [
     {
-      "q": "What types of differences are detected?",
-      "a": "Text additions, deletions, and formatting changes are highlighted."
+      "q": "Ne tür farklılıklar tespit ediliyor?",
+      "a": "Metin eklemeler, silmeler ve biçimlendirme değişiklikleri vurgulanır."
     },
     {
-      "q": "Can I compare scanned PDFs?",
-      "a": "For scanned PDFs, use OCR first to extract text before comparing."
+      "q": "Taranan PDF'leri karşılaştırabilir miyim?",
+      "a": "Taranmış PDF'ler için, karşılaştırmadan önce metni çıkarmak için ilk olarak OCR'yi kullanın."
     },
     {
-      "q": "Can I export the comparison?",
-      "a": "Yes, download a marked-up PDF showing all differences."
+      "q": "Karşılaştırmayı dışa aktarabilir miyim?",
+      "a": "Evet, tüm farklılıkları gösteren, işaretlenmiş bir PDF indirin."
     },
     {
-      "q": "How many versions can I compare?",
-      "a": "Two documents at a time in the side-by-side view."
+      "q": "Kaç versiyonu karşılaştırabilirim?",
+      "a": "Yan yana görünümde aynı anda iki belge."
     },
     {
-      "q": "Is this free?",
+      "q": "Bu bedava mı?",
       "a": "Evet, tamamen ücretsiz."
     }
-  ]
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi"
 }

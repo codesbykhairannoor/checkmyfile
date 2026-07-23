@@ -1,67 +1,85 @@
 {
-  "title": "Split PDF - Extract Pages Securely",
-  "h1": "Split and Extract PDF Pages in Seconds",
-  "description": "Extract specific pages or split a large PDF into multiple files locally in your browser. Perfect for legal professionals in Oslo.",
+  "title": "Del PDF - Pakk ut sider sikkert",
+  "h1": "Del og pakk ut PDF-sider på sekunder",
+  "description": "Pakk ut bestemte sider eller del en stor PDF i flere filer lokalt i nettleseren din. Rask og helt sikker.",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Split PDFs Locally?",
-      "content": "When dealing with massive legal or corporate documents, extracting a single page shouldn't require uploading a 1GB file. Do it instantly right on your machine."
+      "title": "Hvorfor dele opp PDF-er lokalt?",
+      "content": "Når du har å gjøre med massive juridiske eller bedriftsdokumenter, bør det ikke kreves opplasting av en 1 GB-fil for å pakke ut en enkelt side. Gjør det umiddelbart rett på maskinen din."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Extract Pages",
+      "title": "Hvordan trekke ut sider",
       "steps": [
         {
-          "title": "Open Document",
-          "description": "Load the multi-page PDF you want to split."
+          "title": "Åpne dokument",
+          "description": "Last inn den flersidige PDF-filen du vil dele."
         },
         {
-          "title": "Select Ranges",
-          "description": "Pick specific page numbers or visually select pages to extract."
+          "title": "Velg områder",
+          "description": "Velg spesifikke sidetall eller visuelt velg sider å trekke ut."
         },
         {
-          "title": "Export Zip",
-          "description": "Download your newly split files organized in a ZIP."
+          "title": "Eksporter zip",
+          "description": "Last ned de nylig delte filene dine organisert i en ZIP-fil."
         }
-      ]
+      ],
+      "badgeText": "Hurtigguide"
     },
     {
       "type": "split_geo_targeting",
-      "title": "The Best Splitter in Oslo, NO-03",
-      "content": "Whether you are studying in Oslo or working on a tight deadline, extracting pages is now instantaneous."
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle operasjoner utføres direkte på din lokale enhet. Vi bruker avansert WebAssembly-teknologi for å behandle dokumentene dine uten å laste dem opp til eksterne servere, noe som sikrer fullstendig personvern.",
+      "badgeText": "Lokal behandling"
     },
     {
       "type": "split_privacy_security",
-      "title": "Total Page Privacy",
-      "content": "Splitting confidential employee records? Rest easy knowing our code executes purely in your local environment."
+      "title": "Total Side Personvern",
+      "content": "Splitte konfidensielle ansattes poster? Vær rolig med å vite at koden vår kjøres utelukkende i ditt lokale miljø.",
+      "badgeText": "Sikkerhet først"
     },
     {
       "type": "split_performance",
       "title": "Zero-Upload Extraction",
-      "content": "Grabbing page 14 from a 2000-page PDF takes milliseconds, skipping the excruciating upload step entirely."
+      "content": "Å hente side 14 fra en 2000-siders PDF-fil tar millisekunder, og hopper over det grusomme opplastingstrinnet helt.",
+      "badgeText": "Lynrask"
     }
   ],
   "faqs": [
     {
-      "q": "How do I extract just one page?",
-      "a": "Simply click on the page thumbnail you want and hit Export."
+      "q": "Hvordan trekker jeg ut bare én side?",
+      "a": "Bare klikk på sideminiatyrbildet du ønsker og trykk Eksporter."
     },
     {
-      "q": "Can I split the PDF in half?",
-      "a": "Yes, you can specify custom page ranges like 1-10 and 11-20."
+      "q": "Kan jeg dele PDF-en i to?",
+      "a": "Ja, du kan spesifisere egendefinerte sideområder som 1-10 og 11-20."
     },
     {
-      "q": "Will the extracted pages lose quality?",
-      "a": "No, the splitting process uses binary extraction, preserving 100% of the original quality."
+      "q": "Vil de utpakkede sidene miste kvalitet?",
+      "a": "Nei, splittingsprosessen bruker binær ekstraksjon, og bevarer 100 % av den opprinnelige kvaliteten."
     },
     {
-      "q": "Is my document uploaded when splitting?",
-      "a": "Never. The entire 2000-page document stays strictly in your browser."
+      "q": "Blir dokumentet mitt lastet opp under deling?",
+      "a": "Aldri. Hele dokumentet på 2000 sider forblir i nettleseren din."
     },
     {
-      "q": "Is there a limit to how many pages I can split?",
-      "a": "No limits! Split as many pages as your computer can handle."
+      "q": "Er det en grense for hvor mange sider jeg kan dele opp?",
+      "a": "Ingen grenser! Del opp så mange sider som datamaskinen din kan håndtere."
     }
-  ]
+  ],
+  "badges": [
+    "Øyeblikkelig splitt",
+    "Nøyaktig rekkevidde",
+    "Ingen grenser"
+  ],
+  "stats": [
+    "Ultra Fast",
+    "No Upload",
+    "Batch Zip",
+    "Secure"
+  ],
+  "buttonText": "Split PDF",
+  "faqTitle": "Ofte stilte spørsmål",
+  "supportCenter": "Støttesenter"
 }

@@ -1,0 +1,79 @@
+{
+  "title": "Edit PDF - Free Offline PDF Editor",
+  "h1": "Edit PDF Documents Directly in Your Browser",
+  "description": "Add text, signatures, and annotations to your PDF files locally. No uploads, maximum privacy. 100% secure local processing.",
+  "sections": [
+    {
+      "type": "edit_hero_features",
+      "title": "Why Edit PDFs Locally?",
+      "content": "Uploading sensitive contracts and forms to a cloud editor is a massive privacy risk. Our WebAssembly editor runs directly on your device, ensuring your documents never leave your computer."
+    },
+    {
+      "type": "edit_how_to_steps",
+      "title": "How to Edit a PDF",
+      "steps": [
+        {
+          "title": "Open Document",
+          "description": "Select the PDF file you want to annotate or sign."
+        },
+        {
+          "title": "Add Text & Elements",
+          "description": "Use our intuitive tools to add text, draw, or place images."
+        },
+        {
+          "title": "Save Changes",
+          "description": "Export the modified PDF instantly without waiting for downloads."
+        }
+      ]
+    },
+    {
+      "type": "edit_geo_targeting",
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy."
+    },
+    {
+      "type": "edit_privacy_security",
+      "title": "Zero Data Transmission",
+      "content": "Unlike traditional PDF editors that upload your files to their servers, our platform processes everything in your browser memory."
+    },
+    {
+      "type": "edit_performance",
+      "title": "Instant Offline Rendering",
+      "content": "Our editor loads huge PDF files in milliseconds. You can add hundreds of annotations without any lag or network delay."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I edit existing text in the PDF?",
+      "a": "Currently, you can add new text, shapes, and images over the existing document."
+    },
+    {
+      "q": "Are my files uploaded anywhere?",
+      "a": "No, all editing happens locally within your browser using WebAssembly."
+    },
+    {
+      "q": "Can I sign documents?",
+      "a": "Yes, you can draw your signature or upload an image of it."
+    },
+    {
+      "q": "Is the editor free to use?",
+      "a": "Yes, it is 100% free with no premium paywalls or hidden fees."
+    },
+    {
+      "q": "Does it work on mobile devices?",
+      "a": "Yes, the editor is fully responsive and supports touch input for drawing."
+    }
+  ],
+  "badges": [
+    "No Watermarks",
+    "100% Free",
+    "Offline Editor"
+  ],
+  "stats": [
+    "100% Private",
+    "0 Server Uploads",
+    "Client-Side Only",
+    "No Accounts"
+  ],
+  "buttonText": "Start Editing"
+}

@@ -1,67 +1,85 @@
 {
-  "title": "Compress PDF Online - Reduce File Size",
-  "h1": "Compress PDF Documents without Losing Quality",
-  "description": "Shrink large PDF files up to 90% using adaptive lossless techniques directly in WebAssembly. Perfect for users in Amsterdam.",
+  "title": "PDF online comprimeren - Bestandsgrootte verkleinen",
+  "h1": "Comprimeer PDF-documenten zonder kwaliteitsverlies",
+  "description": "Verklein grote PDF-bestanden tot 90% met behulp van adaptieve verliesvrije technieken, rechtstreeks in WebAssembly. 100% veilige lokale verwerking.",
   "sections": [
     {
-      "type": "comp_hero_features",
-      "title": "Why Compress PDF Offline?",
-      "content": "Large PDFs are a pain to email. Our compressor reduces file size drastically without blurring images, all from your browser."
+      "type": "compress_hero_features",
+      "title": "Waarom PDF offline comprimeren?",
+      "content": "Grote PDF's zijn lastig om te e-mailen. Onze compressor verkleint de bestandsgrootte drastisch zonder afbeeldingen te vervagen, allemaal vanuit uw browser."
     },
     {
-      "type": "comp_how_to_steps",
-      "title": "How to Shrink PDF Files",
+      "type": "compress_how_to_steps",
+      "title": "PDF-bestanden verkleinen",
       "steps": [
         {
-          "title": "Upload Large File",
-          "description": "Select the hefty PDF you want to shrink."
+          "title": "Groot bestand uploaden",
+          "description": "Selecteer de dikke PDF die u wilt verkleinen."
         },
         {
-          "title": "Select Quality",
-          "description": "Choose between high quality or maximum compression."
+          "title": "Selecteer Kwaliteit",
+          "description": "Kies tussen hoge kwaliteit of maximale compressie."
         },
         {
-          "title": "Download Tiny PDF",
-          "description": "Get your compressed file instantly, ready to share."
+          "title": "Kleine PDF downloaden",
+          "description": "Ontvang uw gecomprimeerde bestand direct, klaar om te delen."
         }
-      ]
+      ],
+      "badgeText": "Beknopte handleiding"
     },
     {
-      "type": "comp_geo_targeting",
-      "title": "Optimized PDF Shrinking in Amsterdam, NL-NH",
-      "content": "Working on a slow connection in Amsterdam? Compress your files locally so you can email them faster."
+      "type": "compress_geo_targeting",
+      "title": "100% veilige lokale verwerking",
+      "content": "Alle bewerkingen worden rechtstreeks op uw lokale apparaat uitgevoerd. We gebruiken geavanceerde WebAssembly-technologie om uw documenten te verwerken zonder ze ooit naar externe servers te uploaden, waardoor volledige privacy wordt gegarandeerd.",
+      "badgeText": "Lokale verwerking"
     },
     {
-      "type": "comp_privacy_security",
-      "title": "Secure Local Compression",
-      "content": "Compressing sensitive financial reports? Our algorithm works completely offline, keeping your data safe."
+      "type": "compress_privacy_security",
+      "title": "Veilige lokale compressie",
+      "content": "Gevoelige financiële rapporten comprimeren? Ons algoritme werkt volledig offline, waardoor uw gegevens veilig blijven.",
+      "badgeText": "Beveiliging eerst"
     },
     {
-      "type": "comp_performance",
-      "title": "Lightning Fast Shrink",
-      "content": "Compressing a 50MB file locally saves you the time of uploading 50MB and downloading 5MB back."
+      "type": "compress_performance",
+      "title": "Bliksemsnel krimpen",
+      "content": "Door een bestand van 50 MB lokaal te comprimeren, bespaart u de tijd van het uploaden van 50 MB en het terug downloaden van 5 MB.",
+      "badgeText": "Bliksemsnel"
     }
   ],
   "faqs": [
     {
-      "q": "Will compressing my PDF make it blurry?",
-      "a": "No, our tool uses adaptive compression to maintain readability while reducing size."
+      "q": "Zal het comprimeren van mijn PDF deze wazig maken?",
+      "a": "Nee, onze tool maakt gebruik van adaptieve compressie om de leesbaarheid te behouden en tegelijkertijd de grootte te verkleinen."
     },
     {
-      "q": "Are my files sent to a server to be compressed?",
-      "a": "No, the compression algorithm runs directly in your browser memory."
+      "q": "Worden mijn bestanden naar een server gestuurd om te worden gecomprimeerd?",
+      "a": "Nee, het compressiealgoritme wordt rechtstreeks in het geheugen van uw browser uitgevoerd."
     },
     {
-      "q": "What is the maximum file size I can compress?",
-      "a": "Your browser memory is the only limit! You can compress massive files easily."
+      "q": "Wat is de maximale bestandsgrootte die ik kan comprimeren?",
+      "a": "Uw browsergeheugen is de enige limiet! U kunt grote bestanden eenvoudig comprimeren."
     },
     {
-      "q": "Is this compression tool free?",
-      "a": "Absolutely free with no usage limits or premium paywalls."
+      "q": "Is deze compressietool gratis?",
+      "a": "Absoluut gratis zonder gebruikslimieten of premium betaalmuren."
     },
     {
-      "q": "Can I compress multiple files at once?",
-      "a": "Batch compression is supported on modern browsers."
+      "q": "Kan ik meerdere bestanden tegelijk comprimeren?",
+      "a": "Batchcompressie wordt ondersteund in moderne browsers."
     }
-  ]
+  ],
+  "badges": [
+    "90% compressie",
+    "Verliesloze optie",
+    "Geen uploads"
+  ],
+  "stats": [
+    "Zero Wait",
+    "High Quality",
+    "WebAssembly",
+    "Private"
+  ],
+  "buttonText": "Compress PDF",
+  "faqTitle": "Veelgestelde vragen",
+  "supportCenter": "Ondersteuningscentrum"
 }

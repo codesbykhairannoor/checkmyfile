@@ -2,15 +2,27 @@
   "title": "PDF to PowerPoint — Recover Editable Slides",
   "h1": "Convert PDF to PowerPoint Presentation Offline",
   "description": "Transform PDF documents back into editable .pptx presentations locally. No cloud needed. Perfect for users in Beijing.",
+  "buttonText": "Convert to PPT",
+  "badges": [
+    "Editable Slides",
+    "Presentation Recovery",
+    "Fast Conversion"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF to PowerPoint Offline?",
+      "title": "为什么要离线使用？",
       "content": "Recovering slide content from a PDF for editing should not require uploading sensitive decks to a cloud service."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to PowerPoint",
+      "title": "如何使用",
       "steps": [
         {
           "title": "Upload PDF",
@@ -63,5 +75,6 @@
       "q": "Is this free?",
       "a": "是的，完全免费。"
     }
-  ]
+  ],
+  "faqTitle": "常见问题"
 }

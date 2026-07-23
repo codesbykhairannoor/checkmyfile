@@ -1,67 +1,85 @@
 {
-  "title": "Redact PDF — Permanently Remove Sensitive Data",
-  "h1": "Permanently Redact Sensitive Information from PDFs Offline",
-  "description": "Black out sensitive text and images in PDFs entirely in your browser. No cloud risk. Critical for users in Istanbul.",
+  "title": "PDF'yi Düzelt — Hassas Verileri Kalıcı Olarak Kaldır",
+  "h1": "Çevrimdışı PDF'lerdeki Hassas Bilgileri Kalıcı Olarak Çıkarın",
+  "description": "PDF'lerdeki hassas metin ve görselleri tarayıcınızda tamamen karartın. Bulut riski yok. %100 güvenli yerel işleme.",
+  "buttonText": "Redact Text",
+  "badges": [
+    "Kalıcı Silme",
+    "Karartma Bilgisi",
+    "Güvenli Redaksiyon"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "redact_hero_features",
-      "title": "Why Redact PDFs Locally?",
-      "content": "Redacting means the content is classified. Uploading a document you need to hide defeats the whole purpose. Our tool runs 100% offline."
+      "title": "Neden PDF'leri Yerel Olarak Düzenleyin?",
+      "content": "Düzenleme, içeriğin sınıflandırıldığı anlamına gelir. Gizlemeniz gereken bir belgeyi yüklemek tüm amacı boşa çıkarır. Aracımız %100 çevrimdışı çalışır."
     },
     {
       "type": "redact_how_to_steps",
-      "title": "How to Permanently Redact a PDF",
+      "title": "PDF'yi Kalıcı Olarak Düzenleme",
       "steps": [
         {
-          "title": "Open Sensitive Document",
-          "description": "Load the PDF with data that must be hidden."
+          "title": "Hassas Belgeyi Aç",
+          "description": "PDF'yi gizlenmesi gereken verilerle yükleyin."
         },
         {
-          "title": "Mark Redaction Areas",
-          "description": "Draw boxes over content to permanently erase."
+          "title": "Redaksiyon Alanlarını İşaretle",
+          "description": "Kalıcı olarak silmek için içeriğin üzerine kutular çizin."
         },
         {
-          "title": "Apply & Download",
-          "description": "Content is permanently deleted from the PDF structure."
+          "title": "Uygula ve İndir",
+          "description": "İçerik PDF yapısından kalıcı olarak silinir."
         }
-      ]
+      ],
+      "badgeText": "Hızlı Kılavuz"
     },
     {
       "type": "redact_geo_targeting",
-      "title": "Court-Ready Redaction for Istanbul Law Firms",
-      "content": "Legal professionals in Istanbul prepare court documents with permanent, offline redaction that removes data from the PDF structure itself."
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
     },
     {
       "type": "redact_privacy_security",
-      "title": "True Permanent Redaction — Not Just Black Boxes",
-      "content": "Unlike tools that merely cover text with black boxes, our redaction permanently deletes the underlying data from the PDF object structure."
+      "title": "Gerçek Kalıcı Redaksiyon — Yalnızca Kara Kutular Değil",
+      "content": "Metni yalnızca kara kutularla kaplayan araçların aksine, redaksiyonumuz temel verileri PDF nesne yapısından kalıcı olarak siler.",
+      "badgeText": "Önce Güvenlik"
     },
     {
       "type": "redact_performance",
-      "title": "Redact Entire Documents Instantly",
-      "content": "Apply hundreds of permanent redactions to large documents in seconds, completely offline."
+      "title": "Tüm Belgeleri Anında Düzenleyin",
+      "content": "Tamamen çevrimdışı olarak büyük belgelere saniyeler içinde yüzlerce kalıcı redaksiyon uygulayın.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [
     {
-      "q": "Is the redaction truly permanent?",
-      "a": "Yes, the underlying text and image data is permanently deleted from the PDF structure."
+      "q": "Redaksiyon gerçekten kalıcı mı?",
+      "a": "Evet, temeldeki metin ve resim verileri PDF yapısından kalıcı olarak silinir."
     },
     {
-      "q": "Can I redact images too?",
-      "a": "Yes, both text regions and image areas can be permanently redacted."
+      "q": "Görüntüleri de düzeltebilir miyim?",
+      "a": "Evet, hem metin bölgeleri hem de resim alanları kalıcı olarak düzenlenebilir."
     },
     {
-      "q": "Can I choose black or white cover?",
-      "a": "Yes, pick the redaction style that suits your document."
+      "q": "Siyah veya beyaz kapak seçebilir miyim?",
+      "a": "Evet, belgenize uygun redaksiyon stilini seçin."
     },
     {
-      "q": "Does this meet legal standards?",
-      "a": "Our redaction removes data at the PDF object level, meeting court requirements."
+      "q": "Bu yasal standartlara uyuyor mu?",
+      "a": "Düzenlememiz, mahkeme gerekliliklerini karşılayarak PDF nesnesi düzeyindeki verileri kaldırır."
     },
     {
-      "q": "Is this free?",
-      "a": "Evet, tamamen ücretsiz."
+      "q": "Bu bedava mı?",
+      "a": "Evet, her zaman ücretsiz."
     }
-  ]
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi"
 }

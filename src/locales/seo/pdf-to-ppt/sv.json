@@ -1,67 +1,80 @@
 {
-  "title": "PDF to PowerPoint — Recover Editable Slides",
-  "h1": "Convert PDF to PowerPoint Presentation Offline",
-  "description": "Transform PDF documents back into editable .pptx presentations locally. No cloud needed. Perfect for users in Stockholm.",
+  "title": "PDF till PowerPoint — Återställ redigerbara bilder",
+  "h1": "Konvertera PDF till PowerPoint-presentation offline",
+  "description": "Förvandla PDF-dokument tillbaka till redigerbara .pptx-presentationer lokalt. Inget moln behövs. Perfekt för användare i Stockholm.",
+  "buttonText": "Konvertera till PPT",
+  "badges": [
+    "Redigerbara bilder",
+    "Presentationsåterställning",
+    "Snabb konvertering"
+  ],
+  "stats": [
+    "100 %",
+    "Lokal",
+    "0s",
+    "Väntetid"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF to PowerPoint Offline?",
-      "content": "Recovering slide content from a PDF for editing should not require uploading sensitive decks to a cloud service."
+      "title": "Varför använda offline?",
+      "content": "Att återställa bildinnehåll från en PDF-fil för redigering bör inte kräva uppladdning av känsliga kortlekar till en molntjänst."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to PowerPoint",
+      "title": "Hur man använder",
       "steps": [
         {
-          "title": "Upload PDF",
-          "description": "Select the PDF containing your slide content."
+          "title": "Ladda upp PDF",
+          "description": "Välj PDF-filen som innehåller ditt bildinnehåll."
         },
         {
-          "title": "Map Pages to Slides",
-          "description": "Each PDF page becomes one editable slide."
+          "title": "Kartlägg sidor till bilder",
+          "description": "Varje PDF-sida blir en redigerbar bild."
         },
         {
-          "title": "Download .pptx",
-          "description": "Get your fully editable PowerPoint presentation."
+          "title": "Ladda ner .pptx",
+          "description": "Få din fullt redigerbara PowerPoint-presentation."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "Slide Recovery in Stockholm",
-      "content": "Presenters in Stockholm use our tool to recover and re-edit presentations from old PDF archives."
+      "title": "Slide Recovery i Stockholm",
+      "content": "Presentatörer i Stockholm använder vårt verktyg för att återställa och redigera presentationer från gamla PDF-arkiv."
     },
     {
       "type": "split_privacy_security",
-      "title": "Your Slides Are Never Exposed",
-      "content": "Confidential slide decks recovered and converted without any server interaction."
+      "title": "Dina diabilder är aldrig exponerade",
+      "content": "Konfidentiella bildspel återställda och konverterade utan någon serverinteraktion."
     },
     {
       "type": "split_performance",
-      "title": "Convert Slides at Lightning Speed",
-      "content": "A 60-slide PDF converted to PowerPoint in under 10 seconds with zero upload time."
+      "title": "Konvertera diabilder blixtsnabbt",
+      "content": "En 60-bilders PDF konverterad till PowerPoint på under 10 sekunder utan uppladdningstid."
     }
   ],
   "faqs": [
     {
-      "q": "Are slide layouts preserved?",
-      "a": "Content is mapped to slides; some layout adjustments may be needed."
+      "q": "Bevaras bildlayouterna?",
+      "a": "Innehåll mappas till bilder; vissa layoutjusteringar kan behövas."
     },
     {
-      "q": "Can I edit the slides after?",
-      "a": "Yes, the .pptx file is fully editable in PowerPoint or Google Slides."
+      "q": "Kan jag redigera bilderna efter?",
+      "a": "Ja, .pptx-filen är helt redigerbar i PowerPoint eller Google Slides."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No, convert as many pages as your RAM allows."
+      "q": "Finns det en sidgräns?",
+      "a": "Nej, konvertera så många sidor som ditt RAM-minne tillåter."
     },
     {
-      "q": "Does it work with image-heavy PDFs?",
-      "a": "Yes, images are embedded in each slide."
+      "q": "Fungerar det med bildtunga PDF-filer?",
+      "a": "Ja, bilder är inbäddade i varje bild."
     },
     {
-      "q": "Is this free?",
+      "q": "Är detta gratis?",
       "a": "Ja, helt gratis."
     }
-  ]
+  ],
+  "faqTitle": "Vanliga Frågor"
 }

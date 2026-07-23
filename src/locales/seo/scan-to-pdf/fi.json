@@ -1,67 +1,85 @@
 {
-  "title": "Scan to PDF — Convert Camera Shots Offline",
-  "h1": "Convert Photos and Scans to PDF Locally",
-  "description": "Turn photos of documents taken with your camera into clean PDFs entirely in your browser. No upload. Best for users in Helsinki.",
+  "title": "Skannaa PDF-muotoon — Muunna kamerakuvat offline-tilassa",
+  "h1": "Muunna valokuvat ja skannaukset PDF-muotoon paikallisesti",
+  "description": "Muuta kameralla otetut valokuvat asiakirjoista puhtaiksi PDF-tiedostoiksi kokonaan selaimessasi. Ei latausta. 100 % turvallinen paikallinen käsittely.",
+  "buttonText": "Scan to PDF",
+  "badges": [
+    "Käytä verkkokameraa",
+    "Mobile Scanner",
+    "Automaattinen rajaus"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Use Scan-to-PDF Offline?",
-      "content": "Photos of documents contain sensitive information. Process them locally without any cloud access."
+      "type": "scan_hero_features",
+      "title": "Miksi käyttää PDF-skannausta offline-tilassa?",
+      "content": "Asiakirjojen valokuvat sisältävät arkaluonteisia tietoja. Käsittele ne paikallisesti ilman pilvikäyttöä."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Scans to PDF",
+      "type": "scan_how_to_steps",
+      "title": "Kuinka muuntaa skannaukset PDF-muotoon",
       "steps": [
         {
-          "title": "Import Photos",
-          "description": "Select photos taken with your phone or camera."
+          "title": "Tuo valokuvat",
+          "description": "Valitse puhelimella tai kameralla otetut kuvat."
         },
         {
-          "title": "Enhance Scan",
-          "description": "Auto-crop, deskew, and enhance contrast."
+          "title": "Paranna skannausta",
+          "description": "Automaattinen rajaus, vinouttaminen ja kontrastin parantaminen."
         },
         {
-          "title": "Export PDF",
-          "description": "Download a clean, professional-looking scanned PDF."
+          "title": "Vie PDF",
+          "description": "Lataa puhdas, ammattimaisen näköinen skannattu PDF."
         }
-      ]
+      ],
+      "badgeText": "Pikaopas"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Scan to PDF for Helsinki Field Workers",
-      "content": "Field workers and freelancers in Helsinki digitize paper documents on-the-go without uploading to cloud services."
+      "type": "scan_geo_targeting",
+      "title": "100 % suojattu paikallinen käsittely",
+      "content": "Kaikki toiminnot suoritetaan suoraan paikallisella laitteellasi. Käytämme edistynyttä WebAssembly-tekniikkaa asiakirjojen käsittelyyn lataamatta niitä koskaan ulkoisille palvelimille, mikä takaa täydellisen yksityisyyden.",
+      "badgeText": "Paikallinen käsittely"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Documents Stay on Device",
-      "content": "Invoices, contracts, and ID scans processed entirely in browser memory without any server access."
+      "type": "scan_privacy_security",
+      "title": "Skannatut asiakirjat pysyvät laitteella",
+      "content": "Laskut, sopimukset ja henkilöllisyystodistukset käsitellään kokonaan selaimen muistissa ilman palvelinkäyttöä.",
+      "badgeText": "Turvallisuus ensin"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Scans in Real Time",
-      "content": "Photo enhancement and PDF generation happens in milliseconds, even for high-resolution camera shots."
+      "type": "scan_performance",
+      "title": "Muunna skannaukset reaaliajassa",
+      "content": "Valokuvien parannus ja PDF-tiedostojen luominen tapahtuu millisekunneissa, jopa korkearesoluutioisissa kamerakuvissa.",
+      "badgeText": "Salamannopeasti"
     }
   ],
   "faqs": [
     {
-      "q": "What photo formats are supported?",
-      "a": "JPG, PNG, WebP, and HEIC from modern cameras."
+      "q": "Mitä valokuvamuotoja tuetaan?",
+      "a": "JPG, PNG, WebP ja HEIC nykyaikaisista kameroista."
     },
     {
-      "q": "Does it fix tilted scans?",
-      "a": "Yes, auto-deskew corrects slight angles automatically."
+      "q": "Korjaako se kallistetut skannaukset?",
+      "a": "Kyllä, automaattinen vinoutuminen korjaa pienet kulmat automaattisesti."
     },
     {
-      "q": "Can I combine multiple scans?",
-      "a": "Yes, add multiple photos to create a multi-page PDF."
+      "q": "Voinko yhdistää useita skannauksia?",
+      "a": "Kyllä, lisää useita valokuvia luodaksesi monisivuisen PDF-tiedoston."
     },
     {
-      "q": "Does it enhance contrast?",
-      "a": "Yes, document enhancement mode sharpens text for clarity."
+      "q": "Lisääkö se kontrastia?",
+      "a": "Kyllä, asiakirjan parannustila terävöittää tekstiä selkeyden vuoksi."
     },
     {
-      "q": "Is this free?",
-      "a": "Kyllä, täysin ilmainen."
+      "q": "Onko tämä ilmainen?",
+      "a": "Kyllä, aina ilmainen."
     }
-  ]
+  ],
+  "faqTitle": "Usein kysytyt kysymykset",
+  "supportCenter": "Tukikeskus"
 }

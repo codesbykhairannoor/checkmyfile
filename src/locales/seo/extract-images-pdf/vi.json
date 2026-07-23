@@ -1,67 +1,85 @@
 {
-  "title": "Extract Images from PDF — Offline Extractor",
-  "h1": "Extract All Embedded Images from PDF Files",
-  "description": "Pull out every image from a PDF and download them as PNG or JPG files, all in your browser. No cloud. Ideal for users in Hanoi.",
+  "title": "Trích xuất hình ảnh từ PDF — Trình trích xuất ngoại tuyến",
+  "h1": "Trích xuất tất cả hình ảnh nhúng từ tệp PDF",
+  "description": "Kéo mọi hình ảnh từ tệp PDF và tải chúng xuống dưới dạng tệp PNG hoặc JPG, tất cả đều có trong trình duyệt của bạn. Không có đám mây. Xử lý cục bộ an toàn 100%.",
+  "buttonText": "Extract All Images",
+  "badges": [
+    "Hình ảnh sản phẩm",
+    "Sơ đồ bí mật",
+    "Vectơ"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract Images Offline?",
-      "content": "PDFs with confidential diagrams or product photos should never be uploaded. Extract images directly in your browser."
+      "type": "extract_images_hero_features",
+      "title": "Tại sao trích xuất hình ảnh ngoại tuyến?",
+      "content": "Không bao giờ được tải lên các tệp PDF có sơ đồ hoặc ảnh sản phẩm bí mật. Trích xuất hình ảnh trực tiếp trong trình duyệt của bạn."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Extract Images from PDF",
+      "type": "extract_images_how_to_steps",
+      "title": "Cách trích xuất hình ảnh từ PDF",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Open the PDF containing embedded images."
+          "title": "Tải PDF",
+          "description": "Mở tệp PDF chứa hình ảnh được nhúng."
         },
         {
-          "title": "Scan for Images",
-          "description": "Our engine locates all embedded image objects."
+          "title": "Quét tìm hình ảnh",
+          "description": "Công cụ của chúng tôi định vị tất cả các đối tượng hình ảnh được nhúng."
         },
         {
-          "title": "Download ZIP",
-          "description": "Get all extracted images in a single ZIP file."
+          "title": "Tải xuống ZIP",
+          "description": "Nhận tất cả hình ảnh được trích xuất trong một tệp ZIP."
         }
-      ]
+      ],
+      "badgeText": "Hướng dẫn nhanh"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Image Extraction in Hanoi",
-      "content": "Publishers and marketers in Hanoi extract product photos and diagrams from PDFs without cloud uploads."
+      "type": "extract_images_geo_targeting",
+      "title": "Xử lý cục bộ an toàn 100%",
+      "content": "Tất cả các hoạt động được thực hiện trực tiếp trên thiết bị cục bộ của bạn. Chúng tôi sử dụng công nghệ WebAssembly tiên tiến để xử lý tài liệu của bạn mà không cần tải chúng lên máy chủ bên ngoài, đảm bảo quyền riêng tư hoàn toàn.",
+      "badgeText": "Xử lý cục bộ"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Product Images Stay Confidential",
-      "content": "Unreleased product photos embedded in PDFs extracted locally without any server access."
+      "type": "extract_images_privacy_security",
+      "title": "Hình ảnh sản phẩm Được bảo mật",
+      "content": "Ảnh sản phẩm chưa phát hành được nhúng trong tệp PDF được trích xuất cục bộ mà không cần bất kỳ quyền truy cập máy chủ nào.",
+      "badgeText": "Bảo mật là trên hết"
     },
     {
-      "type": "split_performance",
-      "title": "Extract Hundreds of Images Fast",
-      "content": "Extract 500 images from a PDF in seconds. All native browser processing."
+      "type": "extract_images_performance",
+      "title": "Trích xuất hàng trăm hình ảnh nhanh chóng",
+      "content": "Trích xuất 500 hình ảnh từ PDF trong vài giây. Tất cả xử lý trình duyệt gốc.",
+      "badgeText": "Nhanh như chớp"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are extracted?",
-      "a": "Images are saved in their original format (PNG, JPG, etc.)."
+      "q": "Những định dạng hình ảnh nào được trích xuất?",
+      "a": "Hình ảnh được lưu ở định dạng ban đầu (PNG, JPG, v.v.)."
     },
     {
-      "q": "Are images at full resolution?",
-      "a": "Yes, extracted at the original embedded resolution."
+      "q": "Hình ảnh có ở độ phân giải đầy đủ không?",
+      "a": "Có, được trích xuất ở độ phân giải nhúng gốc."
     },
     {
-      "q": "Can I choose specific pages?",
-      "a": "Yes, specify which pages to extract images from."
+      "q": "Tôi có thể chọn các trang cụ thể không?",
+      "a": "Có, chỉ định trang nào sẽ trích xuất hình ảnh."
     },
     {
-      "q": "Does it extract vector graphics?",
-      "a": "Vector elements are rasterized to PNG/JPG."
+      "q": "Nó có trích xuất đồ họa vector không?",
+      "a": "Các phần tử vectơ được rasterized thành PNG/JPG."
     },
     {
-      "q": "Is this free?",
-      "a": "Có, hoàn toàn miễn phí."
+      "q": "Cái này có miễn phí không?",
+      "a": "Có, luôn miễn phí."
     }
-  ]
+  ],
+  "faqTitle": "Câu hỏi thường gặp",
+  "supportCenter": "Trung tâm hỗ trợ"
 }

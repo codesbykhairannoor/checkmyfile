@@ -1,67 +1,85 @@
 {
-  "title": "Redact PDF — Permanently Remove Sensitive Data",
-  "h1": "Permanently Redact Sensitive Information from PDFs Offline",
-  "description": "Black out sensitive text and images in PDFs entirely in your browser. No cloud risk. Critical for users in Riyadh.",
+  "title": "تنقيح PDF — إزالة البيانات الحساسة نهائيًا",
+  "h1": "قم بتنقيح المعلومات الحساسة بشكل دائم من ملفات PDF دون اتصال",
+  "description": "قم بحجب النصوص والصور الحساسة في ملفات PDF بالكامل في متصفحك. لا يوجد خطر السحابة. معالجة محلية آمنة بنسبة 100%.",
+  "buttonText": "Redact Text",
+  "badges": [
+    "محو دائم",
+    "معلومات التعتيم",
+    "التنقيح الآمن"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "redact_hero_features",
-      "title": "Why Redact PDFs Locally?",
-      "content": "Redacting means the content is classified. Uploading a document you need to hide defeats the whole purpose. Our tool runs 100% offline."
+      "title": "لماذا تنقيح ملفات PDF محليًا؟",
+      "content": "التنقيح يعني أن المحتوى مصنف. إن تحميل مستند تحتاج إلى إخفاءه يبطل الغرض بأكمله. تعمل أداتنا دون الاتصال بالإنترنت بنسبة 100%."
     },
     {
       "type": "redact_how_to_steps",
-      "title": "How to Permanently Redact a PDF",
+      "title": "كيفية تنقيح ملف PDF بشكل دائم",
       "steps": [
         {
-          "title": "Open Sensitive Document",
-          "description": "Load the PDF with data that must be hidden."
+          "title": "فتح مستند حساس",
+          "description": "قم بتحميل ملف PDF بالبيانات التي يجب إخفاؤها."
         },
         {
-          "title": "Mark Redaction Areas",
-          "description": "Draw boxes over content to permanently erase."
+          "title": "تحديد مناطق التنقيح",
+          "description": "ارسم مربعات فوق المحتوى لمسحه نهائيًا."
         },
         {
-          "title": "Apply & Download",
-          "description": "Content is permanently deleted from the PDF structure."
+          "title": "تطبيق وتحميل",
+          "description": "يتم حذف المحتوى نهائيًا من بنية PDF."
         }
-      ]
+      ],
+      "badgeText": "الدليل السريع"
     },
     {
       "type": "redact_geo_targeting",
-      "title": "Court-Ready Redaction for Riyadh Law Firms",
-      "content": "Legal professionals in Riyadh prepare court documents with permanent, offline redaction that removes data from the PDF structure itself."
+      "title": "معالجة محلية آمنة بنسبة 100%",
+      "content": "يتم تنفيذ جميع العمليات مباشرة على جهازك المحلي. نحن نستخدم تقنية WebAssembly المتقدمة لمعالجة مستنداتك دون تحميلها على خوادم خارجية، مما يضمن الخصوصية الكاملة.",
+      "badgeText": "المعالجة المحلية"
     },
     {
       "type": "redact_privacy_security",
-      "title": "True Permanent Redaction — Not Just Black Boxes",
-      "content": "Unlike tools that merely cover text with black boxes, our redaction permanently deletes the underlying data from the PDF object structure."
+      "title": "تنقيح دائم حقيقي — ليس مجرد صناديق سوداء",
+      "content": "على عكس الأدوات التي تغطي النص بمربعات سوداء فقط، فإن تنقيحنا يحذف بشكل دائم البيانات الأساسية من بنية كائن PDF.",
+      "badgeText": "الأمن أولا"
     },
     {
       "type": "redact_performance",
-      "title": "Redact Entire Documents Instantly",
-      "content": "Apply hundreds of permanent redactions to large documents in seconds, completely offline."
+      "title": "تنقيح المستندات بالكامل على الفور",
+      "content": "قم بتطبيق مئات من عمليات التنقيح الدائمة على المستندات الكبيرة في ثوانٍ، دون الاتصال بالإنترنت تمامًا.",
+      "badgeText": "بسرعة البرق"
     }
   ],
   "faqs": [
     {
-      "q": "Is the redaction truly permanent?",
-      "a": "Yes, the underlying text and image data is permanently deleted from the PDF structure."
+      "q": "هل التنقيح دائم حقًا؟",
+      "a": "نعم، يتم حذف بيانات النص والصورة الأساسية نهائيًا من بنية PDF."
     },
     {
-      "q": "Can I redact images too?",
-      "a": "Yes, both text regions and image areas can be permanently redacted."
+      "q": "هل يمكنني تنقيح الصور أيضا؟",
+      "a": "نعم، يمكن تنقيح مناطق النص ومناطق الصور بشكل دائم."
     },
     {
-      "q": "Can I choose black or white cover?",
-      "a": "Yes, pick the redaction style that suits your document."
+      "q": "هل يمكنني اختيار الغطاء الأسود أو الأبيض؟",
+      "a": "نعم، اختر نمط التنقيح الذي يناسب وثيقتك."
     },
     {
-      "q": "Does this meet legal standards?",
-      "a": "Our redaction removes data at the PDF object level, meeting court requirements."
+      "q": "فهل هذا يتوافق مع المعايير القانونية؟",
+      "a": "يؤدي تنقيحنا إلى إزالة البيانات على مستوى كائن PDF، بما يلبي متطلبات المحكمة."
     },
     {
-      "q": "Is this free?",
-      "a": "نعم، مجاناً تماماً."
+      "q": "هل هذا مجاني؟",
+      "a": "نعم، دائما مجانا."
     }
-  ]
+  ],
+  "faqTitle": "الأسئلة المتداولة",
+  "supportCenter": "مركز الدعم"
 }

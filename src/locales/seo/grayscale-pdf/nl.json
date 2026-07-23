@@ -1,67 +1,85 @@
 {
-  "title": "Grayscale PDF — Convert to Black and White Offline",
-  "h1": "Convert Color PDF Pages to Grayscale Instantly",
-  "description": "Turn color PDFs into black-and-white versions to reduce file size or prepare for printing, entirely in your browser. Ideal for users in Amsterdam.",
+  "title": "PDF in grijswaarden — Offline converteren naar zwart-wit",
+  "h1": "Converteer kleuren-PDF-pagina's direct naar grijswaarden",
+  "description": "Zet kleuren-PDF's om in zwart-witversies om de bestandsgrootte te verkleinen of om ze voor te bereiden op afdrukken, geheel in uw browser. 100% veilige lokale verwerking.",
+  "buttonText": "Convert to Grayscale",
+  "badges": [
+    "Inkt besparen",
+    "Zwart-wit",
+    "Perfect voor afdrukken"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Convert to Grayscale Offline?",
-      "content": "Removing color from a PDF is a pre-print or archiving step. Do it locally without exposing confidential document design."
+      "type": "grayscale_hero_features",
+      "title": "Waarom offline converteren naar grijswaarden?",
+      "content": "Het verwijderen van kleur uit een PDF is een pre-print- of archiveringsstap. Doe het lokaal zonder vertrouwelijk documentontwerp bloot te leggen."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Make PDF Grayscale",
+      "type": "grayscale_how_to_steps",
+      "title": "PDF-grijswaarden maken",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the color PDF to convert."
+          "title": "PDF openen",
+          "description": "Selecteer de kleuren-PDF die u wilt converteren."
         },
         {
-          "title": "Choose Conversion Mode",
-          "description": "Pick luminance or contrast-adjusted grayscale."
+          "title": "Kies Conversiemodus",
+          "description": "Kies luminantie of contrast-aangepaste grijstinten."
         },
         {
-          "title": "Download Grayscale PDF",
-          "description": "Save the black-and-white PDF immediately."
+          "title": "Grijstinten PDF downloaden",
+          "description": "Sla de zwart-wit-pdf onmiddellijk op."
         }
-      ]
+      ],
+      "badgeText": "Beknopte handleiding"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Grayscale PDF for Amsterdam Printers",
-      "content": "Businesses in Amsterdam convert color PDFs to grayscale for cost-effective printing without cloud uploads."
+      "type": "grayscale_geo_targeting",
+      "title": "100% veilige lokale verwerking",
+      "content": "Alle bewerkingen worden rechtstreeks op uw lokale apparaat uitgevoerd. We gebruiken geavanceerde WebAssembly-technologie om uw documenten te verwerken zonder ze ooit naar externe servers te uploaden, waardoor volledige privacy wordt gegarandeerd.",
+      "badgeText": "Lokale verwerking"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Design Files Stay Confidential",
-      "content": "Internal design documents and branded materials converted to grayscale without cloud exposure."
+      "type": "grayscale_privacy_security",
+      "title": "Ontwerpbestanden blijven vertrouwelijk",
+      "content": "Interne ontwerpdocumenten en merkmaterialen omgezet naar grijstinten zonder blootstelling aan wolken.",
+      "badgeText": "Beveiliging eerst"
     },
     {
-      "type": "transform_performance",
-      "title": "Convert Color Instantly",
-      "content": "A 200-page color PDF converted to grayscale in under 2 seconds. Zero upload."
+      "type": "grayscale_performance",
+      "title": "Kleur direct converteren",
+      "content": "Een kleuren-PDF van 200 pagina's die in minder dan 2 seconden naar grijstinten is omgezet. Nul uploaden.",
+      "badgeText": "Bliksemsnel"
     }
   ],
   "faqs": [
     {
-      "q": "Does grayscale reduce file size?",
-      "a": "Often yes, especially for image-heavy PDFs."
+      "q": "Verkleint grijswaarden de bestandsgrootte?",
+      "a": "Vaak wel, vooral voor pdf's met veel afbeeldingen."
     },
     {
-      "q": "Are all pages converted?",
-      "a": "Yes by default; you can also select specific pages."
+      "q": "Zijn alle pagina's geconverteerd?",
+      "a": "Standaard ja; u kunt ook specifieke pagina's selecteren."
     },
     {
-      "q": "Is the conversion reversible?",
-      "a": "The color information is removed; keep the original for reversal."
+      "q": "Is de conversie omkeerbaar?",
+      "a": "De kleurinformatie wordt verwijderd; bewaar het origineel voor omkering."
     },
     {
-      "q": "Does it affect text quality?",
-      "a": "No, text remains crisp and black."
+      "q": "Heeft dit invloed op de tekstkwaliteit?",
+      "a": "Nee, de tekst blijft helder en zwart."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, volledig gratis."
+      "q": "Is dit gratis?",
+      "a": "Ja, helemaal gratis."
     }
-  ]
+  ],
+  "faqTitle": "Veelgestelde vragen",
+  "supportCenter": "Ondersteuningscentrum"
 }

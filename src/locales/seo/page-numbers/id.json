@@ -1,67 +1,85 @@
 {
-  "title": "Add Page Numbers to PDF — Offline Number Stamp",
-  "h1": "Insert Page Numbers into PDF Documents Locally",
-  "description": "Stamp page numbers at the header or footer of your PDF entirely in your browser. No upload. Ideal for users in Jakarta.",
+  "title": "Tambahkan Nomor Halaman ke PDF — Stempel Nomor Offline",
+  "h1": "Masukkan Nomor Halaman ke dalam Dokumen PDF Secara Lokal",
+  "description": "Stempel nomor halaman di header atau footer PDF Anda seluruhnya di browser Anda. Cepat dan sepenuhnya aman.",
+  "buttonText": "Add Page Numbers",
+  "badges": [
+    "Posisi Khusus",
+    "Tajuk & Kaki",
+    "Penomoran Bates"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Add Page Numbers Offline?",
-      "content": "Page numbers are a formatting step, not a reason to upload confidential documents to a cloud service."
+      "type": "pagenum_hero_features",
+      "title": "Mengapa Menambahkan Nomor Halaman Secara Offline?",
+      "content": "Nomor halaman adalah langkah pemformatan, bukan alasan untuk mengunggah dokumen rahasia ke layanan cloud."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Add Page Numbers",
+      "type": "pagenum_how_to_steps",
+      "title": "Cara Menambahkan Nomor Halaman",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to number."
+          "title": "Buka PDF",
+          "description": "Pilih PDF yang akan diberi nomor."
         },
         {
-          "title": "Configure Style",
-          "description": "Choose position, format (1/12, Page 1, i, ii…), and font."
+          "title": "Konfigurasikan Gaya",
+          "description": "Pilih posisi, format (1/12, Halaman 1, i, ii…), dan font."
         },
         {
-          "title": "Apply & Download",
-          "description": "Download your paginated PDF instantly."
+          "title": "Terapkan & Unduh",
+          "description": "Unduh PDF paginasi Anda secara instan."
         }
-      ]
+      ],
+      "badgeText": "Panduan Singkat"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Page Numbering for Jakarta Legal Docs",
-      "content": "Legal professionals in Jakarta number briefs and reports locally without cloud service dependency."
+      "type": "pagenum_geo_targeting",
+      "title": "Pemrosesan Lokal 100% Aman",
+      "content": "Semua operasi dilakukan langsung di perangkat lokal Anda. Kami menggunakan teknologi WebAssembly yang canggih untuk memproses dokumen Anda tanpa harus mengunggahnya ke server eksternal, sehingga memastikan privasi sepenuhnya.",
+      "badgeText": "Pemrosesan Lokal"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Internal Documents Stay Numbered & Private",
-      "content": "Add page numbers to contracts and confidential reports without any server involvement."
+      "type": "pagenum_privacy_security",
+      "title": "Dokumen Internal Tetap Bernomor & Pribadi",
+      "content": "Tambahkan nomor halaman ke kontrak dan laporan rahasia tanpa keterlibatan server apa pun.",
+      "badgeText": "Keamanan Pertama"
     },
     {
-      "type": "organizer_performance",
-      "title": "Number a 1000-Page PDF Instantly",
-      "content": "Stamping page numbers locally takes milliseconds for any size document."
+      "type": "pagenum_performance",
+      "title": "Nomori PDF 1000 Halaman Secara Instan",
+      "content": "Mencap nomor halaman secara lokal membutuhkan waktu milidetik untuk dokumen ukuran apa pun.",
+      "badgeText": "Secepat Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "What number formats are available?",
-      "a": "Arabic (1, 2, 3), Roman (i, ii, iii), and letter (a, b, c) formats."
+      "q": "Format angka apa yang tersedia?",
+      "a": "Format Arab (1, 2, 3), Romawi (i, ii, iii), dan huruf (a, b, c)."
     },
     {
-      "q": "Can I start from a custom number?",
-      "a": "Yes, set any starting page number."
+      "q": "Bisakah saya memulai dari nomor khusus?",
+      "a": "Ya, tetapkan nomor halaman awal mana pun."
     },
     {
-      "q": "Can I skip numbering the first page?",
-      "a": "Yes, set the page offset to skip cover pages."
+      "q": "Bisakah saya melewatkan penomoran halaman pertama?",
+      "a": "Ya, atur offset halaman untuk melewati halaman sampul."
     },
     {
-      "q": "Where can I position numbers?",
-      "a": "Header-left, header-center, header-right, and same for footer."
+      "q": "Di mana saya dapat menempatkan nomor?",
+      "a": "Header-kiri, header-tengah, header-kanan, dan sama untuk footer."
     },
     {
-      "q": "Is this free?",
-      "a": "Ya, sepenuhnya gratis."
+      "q": "Apakah ini gratis?",
+      "a": "Ya, selalu gratis."
     }
-  ]
+  ],
+  "faqTitle": "Pertanyaan yang Sering Diajukan",
+  "supportCenter": "Pusat Dukungan"
 }

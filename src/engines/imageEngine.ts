@@ -93,7 +93,7 @@ export const convertPdfToImagesZip = async (
 
   // Add README inside zip emphasizing client-side privacy
   zipFiles['README_PRIVACY.txt'] = strToU8(
-    `Processed 100% Client-Side inside your browser using BlitzDocs Wasm Platform.\nFile: ${file.name}\nTotal Pages Extracted: ${totalPages}\nFormat: ${imageFormat.toUpperCase()}\nPrivacy: Files were never sent to any server.`
+    `Processed 100% Client-Side inside your browser using HandleMyFile Wasm Platform.\nFile: ${file.name}\nTotal Pages Extracted: ${totalPages}\nFormat: ${imageFormat.toUpperCase()}\nPrivacy: Files were never sent to any server.`
   );
 
   const previewFiles: File[] = [];

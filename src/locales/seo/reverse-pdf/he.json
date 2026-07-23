@@ -1,67 +1,85 @@
 {
-  "title": "Reverse PDF — Flip Page Order Offline",
-  "h1": "Reverse the Page Order of Any PDF Locally",
-  "description": "Flip the page sequence of PDF documents entirely in your browser. No upload, instant result. Great for users in Jerusalem.",
+  "title": "PDF הפוך — סדר עמוד לא מקוון",
+  "h1": "הפוך את סדר הדפים של כל PDF באופן מקומי",
+  "description": "הפוך את רצף הדפים של מסמכי PDF לגמרי בדפדפן שלך. אין העלאה, תוצאה מיידית. עיבוד מקומי מאובטח של 100%.",
+  "buttonText": "Reverse Order",
+  "badges": [
+    "הפוך את כל הדפים",
+    "תקן סריקות",
+    "קליק אחד"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Reverse PDF Page Order Offline?",
-      "content": "When a scanner outputs pages in reverse, you need a quick local fix — not a cloud upload of your entire document."
+      "type": "reverse_hero_features",
+      "title": "למה להפוך סדר דפי PDF במצב לא מקוון?",
+      "content": "כאשר סורק מוציא דפים הפוך, אתה צריך תיקון מקומי מהיר - לא העלאה בענן של כל המסמך שלך."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Reverse PDF Page Order",
+      "type": "reverse_how_to_steps",
+      "title": "כיצד להפוך את סדר דפי PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF with incorrect page order."
+          "title": "פתח PDF",
+          "description": "בחר את ה-PDF עם סדר עמודים שגוי."
         },
         {
-          "title": "Confirm Reversal",
-          "description": "Preview the new first and last page."
+          "title": "אשר היפוך",
+          "description": "תצוגה מקדימה של העמוד הראשון והאחרון החדשים."
         },
         {
-          "title": "Download Reversed PDF",
-          "description": "Get the reordered PDF instantly."
+          "title": "הורד PDF הפוך",
+          "description": "קבל את ה-PDF המיועד מחדש באופן מיידי."
         }
-      ]
+      ],
+      "badgeText": "מדריך מהיר"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Page Order Fix for Jerusalem Users",
-      "content": "Office users in Jerusalem fix scanner reversal issues instantly without cloud uploads."
+      "type": "reverse_geo_targeting",
+      "title": "100% עיבוד מקומי מאובטח",
+      "content": "כל הפעולות מבוצעות ישירות במכשיר המקומי שלך. אנו משתמשים בטכנולוגיית WebAssembly מתקדמת כדי לעבד את המסמכים שלך מבלי להעלות אותם לשרתים חיצוניים, מה שמבטיח פרטיות מלאה.",
+      "badgeText": "עיבוד מקומי"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Documents Never Leave Your Device",
-      "content": "Reversed contracts, reports, and records are processed entirely in browser memory."
+      "type": "reverse_privacy_security",
+      "title": "מסמכים לעולם אל תעזוב את המכשיר שלך",
+      "content": "חוזים הפוכים, דוחות ורשומות מעובדים במלואם בזיכרון הדפדפן.",
+      "badgeText": "אבטחה תחילה"
     },
     {
-      "type": "transform_performance",
-      "title": "Reverse Any PDF in Seconds",
-      "content": "Reversing a 1000-page document takes milliseconds. All in your browser."
+      "type": "reverse_performance",
+      "title": "הפוך כל PDF בשניות",
+      "content": "היפוך של מסמך בן 1000 עמודים לוקח אלפיות שניות. הכל בדפדפן שלך.",
+      "badgeText": "מהיר ברק"
     }
   ],
   "faqs": [
     {
-      "q": "Does this reverse all pages?",
-      "a": "Yes, the full page order is flipped."
+      "q": "האם זה הופך את כל הדפים?",
+      "a": "כן, סדר הדפים המלא מתהפך."
     },
     {
-      "q": "Can I select a range to reverse?",
-      "a": "Yes, specify start and end pages to reverse selectively."
+      "q": "האם אוכל לבחור טווח להיפוך?",
+      "a": "כן, ציין דפי התחלה וסיום כדי להפוך באופן סלקטיבי."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "No, reversal is a structural operation with no quality loss."
+      "q": "האם האיכות מושפעת?",
+      "a": "לא, היפוך הוא פעולה מבנית ללא אובדן איכות."
     },
     {
-      "q": "Can I undo?",
-      "a": "Apply reversal again to undo."
+      "q": "האם אני יכול לבטל?",
+      "a": "החל היפוך שוב כדי לבטל."
     },
     {
-      "q": "Is this free?",
-      "a": "כן, חינם לחלוטין."
+      "q": "האם זה בחינם?",
+      "a": "כן, תמיד בחינם."
     }
-  ]
+  ],
+  "faqTitle": "שאלות נפוצות",
+  "supportCenter": "מרכז תמיכה"
 }

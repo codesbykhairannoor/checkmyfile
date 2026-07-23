@@ -1,67 +1,85 @@
 {
-  "title": "Image to PDF — Combine Photos Offline",
-  "h1": "Convert Images to PDF Without Uploading",
-  "description": "Turn JPG, PNG, and WebP images into a single PDF document in your browser. Your photos stay private. Perfect for users in São Paulo.",
+  "title": "Imagem para PDF — Combine fotos off-line",
+  "h1": "Converta imagens em PDF sem fazer upload",
+  "description": "Transforme imagens JPG, PNG e WebP em um único documento PDF no seu navegador. Suas fotos permanecem privadas. Processamento local 100% seguro.",
+  "buttonText": "Convert Images",
+  "badges": [
+    "Portfólios",
+    "Varreduras de identificação",
+    "Álbuns de fotos"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Images Offline?",
-      "content": "Photos contain location data and personal moments. Convert them to PDF without exposing them to any cloud service."
+      "type": "image_hero_features",
+      "title": "Por que converter imagens offline?",
+      "content": "As fotos contêm dados de localização e momentos pessoais. Converta-os em PDF sem expô-los a nenhum serviço de nuvem."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Turn Images Into PDF",
+      "type": "image_how_to_steps",
+      "title": "Como transformar imagens em PDF",
       "steps": [
         {
-          "title": "Select Images",
-          "description": "Choose JPG, PNG, or WebP files from your device."
+          "title": "Selecione Imagens",
+          "description": "Escolha arquivos JPG, PNG ou WebP do seu dispositivo."
         },
         {
-          "title": "Arrange Order",
-          "description": "Drag to reorder images before generating the PDF."
+          "title": "Organizar pedido",
+          "description": "Arraste para reordenar as imagens antes de gerar o PDF."
         },
         {
-          "title": "Export PDF",
-          "description": "Download your image PDF in one click."
+          "title": "Exportar PDF",
+          "description": "Baixe sua imagem em PDF com um clique."
         }
-      ]
+      ],
+      "badgeText": "Guia rápido"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Image to PDF for São Paulo Users",
-      "content": "Photographers and designers in São Paulo use our tool to package portfolios without cloud uploads."
+      "type": "image_geo_targeting",
+      "title": "Processamento local 100% seguro",
+      "content": "Todas as operações são realizadas diretamente no seu dispositivo local. Utilizamos tecnologia avançada WebAssembly para processar seus documentos sem nunca enviá-los para servidores externos, garantindo total privacidade.",
+      "badgeText": "Processamento Local"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Photos Never Leave Your Device",
-      "content": "Personal photos, ID scans, medical images — all converted 100% locally without any server contact."
+      "type": "image_privacy_security",
+      "title": "Fotos nunca saem do seu dispositivo",
+      "content": "Fotos pessoais, digitalizações de identidade, imagens médicas — tudo convertido 100% localmente, sem qualquer contato com o servidor.",
+      "badgeText": "Segurança em primeiro lugar"
     },
     {
-      "type": "combiner_performance",
-      "title": "Batch Convert Instantly",
-      "content": "Convert 50 images into a single PDF in under 5 seconds. No upload, no wait."
+      "type": "image_performance",
+      "title": "Conversão em lote instantaneamente",
+      "content": "Converta 50 imagens em um único PDF em menos de 5 segundos. Sem upload, sem espera.",
+      "badgeText": "Rápido como um raio"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are supported?",
-      "a": "JPG, JPEG, PNG, and WebP are all supported."
+      "q": "Quais formatos de imagem são suportados?",
+      "a": "JPG, JPEG, PNG e WebP são todos suportados."
     },
     {
-      "q": "Can I combine multiple images?",
-      "a": "Yes, select as many images as you want and reorder them."
+      "q": "Posso combinar várias imagens?",
+      "a": "Sim, selecione quantas imagens desejar e reordene-as."
     },
     {
-      "q": "Is image quality preserved?",
-      "a": "Yes, images are embedded at their original resolution."
+      "q": "A qualidade da imagem é preservada?",
+      "a": "Sim, as imagens são incorporadas na resolução original."
     },
     {
-      "q": "Does it strip EXIF metadata?",
-      "a": "You can optionally strip EXIF data for privacy."
+      "q": "Ele remove metadados EXIF?",
+      "a": "Opcionalmente, você pode retirar os dados EXIF ​​​​para privacidade."
     },
     {
-      "q": "Is there a limit on image count?",
-      "a": "Sim, completamente gratuito."
+      "q": "Existe um limite na contagem de imagens?",
+      "a": "Sem limite! Combine centenas de imagens em um PDF."
     }
-  ]
+  ],
+  "faqTitle": "Perguntas Frequentes",
+  "supportCenter": "Centro de Apoio"
 }

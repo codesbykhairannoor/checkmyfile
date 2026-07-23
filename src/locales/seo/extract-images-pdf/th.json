@@ -1,67 +1,85 @@
 {
-  "title": "Extract Images from PDF — Offline Extractor",
-  "h1": "Extract All Embedded Images from PDF Files",
-  "description": "Pull out every image from a PDF and download them as PNG or JPG files, all in your browser. No cloud. Ideal for users in Bangkok.",
+  "title": "แยกรูปภาพจาก PDF — ตัวแยกแบบออฟไลน์",
+  "h1": "แยกรูปภาพที่ฝังทั้งหมดออกจากไฟล์ PDF",
+  "description": "ดึงภาพทุกภาพจาก PDF และดาวน์โหลดเป็นไฟล์ PNG หรือ JPG ทั้งหมดนี้อยู่ในเบราว์เซอร์ของคุณ ไม่มีเมฆ. การประมวลผลภายในที่ปลอดภัย 100%",
+  "buttonText": "Extract All Images",
+  "badges": [
+    "รูปถ่ายสินค้า",
+    "แผนภาพที่เป็นความลับ",
+    "เวกเตอร์"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract Images Offline?",
-      "content": "PDFs with confidential diagrams or product photos should never be uploaded. Extract images directly in your browser."
+      "type": "extract_images_hero_features",
+      "title": "เหตุใดจึงต้องแยกรูปภาพออฟไลน์",
+      "content": "ไม่ควรอัปโหลด PDF ที่มีไดอะแกรมที่เป็นความลับหรือรูปถ่ายผลิตภัณฑ์ แยกภาพโดยตรงในเบราว์เซอร์ของคุณ"
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Extract Images from PDF",
+      "type": "extract_images_how_to_steps",
+      "title": "วิธีแยกรูปภาพจาก PDF",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Open the PDF containing embedded images."
+          "title": "โหลด PDF",
+          "description": "เปิด PDF ที่มีรูปภาพที่ฝังไว้"
         },
         {
-          "title": "Scan for Images",
-          "description": "Our engine locates all embedded image objects."
+          "title": "สแกนหารูปภาพ",
+          "description": "เครื่องยนต์ของเราค้นหาวัตถุรูปภาพที่ฝังอยู่ทั้งหมด"
         },
         {
-          "title": "Download ZIP",
-          "description": "Get all extracted images in a single ZIP file."
+          "title": "ดาวน์โหลด ZIP",
+          "description": "รับภาพที่แยกออกมาทั้งหมดในไฟล์ ZIP เดียว"
         }
-      ]
+      ],
+      "badgeText": "คู่มือฉบับย่อ"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Image Extraction in Bangkok",
-      "content": "Publishers and marketers in Bangkok extract product photos and diagrams from PDFs without cloud uploads."
+      "type": "extract_images_geo_targeting",
+      "title": "การประมวลผลภายในที่ปลอดภัย 100%",
+      "content": "การดำเนินการทั้งหมดดำเนินการโดยตรงบนอุปกรณ์ท้องถิ่นของคุณ เราใช้เทคโนโลยี WebAssembly ขั้นสูงเพื่อประมวลผลเอกสารของคุณโดยไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ภายนอก เพื่อให้มั่นใจถึงความเป็นส่วนตัวโดยสมบูรณ์",
+      "badgeText": "การประมวลผลในท้องถิ่น"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Product Images Stay Confidential",
-      "content": "Unreleased product photos embedded in PDFs extracted locally without any server access."
+      "type": "extract_images_privacy_security",
+      "title": "รูปภาพผลิตภัณฑ์จะเป็นความลับ",
+      "content": "รูปภาพผลิตภัณฑ์ที่ยังไม่เผยแพร่ที่ฝังอยู่ใน PDF ที่แยกออกมาในเครื่องโดยไม่มีการเข้าถึงเซิร์ฟเวอร์",
+      "badgeText": "ความปลอดภัยต้องมาก่อน"
     },
     {
-      "type": "split_performance",
-      "title": "Extract Hundreds of Images Fast",
-      "content": "Extract 500 images from a PDF in seconds. All native browser processing."
+      "type": "extract_images_performance",
+      "title": "ดึงภาพหลายร้อยภาพอย่างรวดเร็ว",
+      "content": "แยกรูปภาพ 500 ภาพจาก PDF ได้ในไม่กี่วินาที การประมวลผลเบราว์เซอร์ดั้งเดิมทั้งหมด",
+      "badgeText": "เร็วปานสายฟ้า"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are extracted?",
-      "a": "Images are saved in their original format (PNG, JPG, etc.)."
+      "q": "รูปแบบภาพใดบ้างที่ถูกแยกออกมา?",
+      "a": "รูปภาพจะถูกบันทึกในรูปแบบดั้งเดิม (PNG, JPG ฯลฯ)"
     },
     {
-      "q": "Are images at full resolution?",
-      "a": "Yes, extracted at the original embedded resolution."
+      "q": "รูปภาพมีความละเอียดเต็มหรือไม่",
+      "a": "ใช่ แยกออกมาด้วยความละเอียดแบบฝังดั้งเดิม"
     },
     {
-      "q": "Can I choose specific pages?",
-      "a": "Yes, specify which pages to extract images from."
+      "q": "ฉันสามารถเลือกหน้าใดหน้าหนึ่งได้หรือไม่",
+      "a": "ใช่ ระบุหน้าที่จะดึงรูปภาพออกมา"
     },
     {
-      "q": "Does it extract vector graphics?",
-      "a": "Vector elements are rasterized to PNG/JPG."
+      "q": "มันดึงกราฟิกแบบเวกเตอร์ออกมาหรือไม่?",
+      "a": "องค์ประกอบเวกเตอร์จะถูกแรสเตอร์เป็น PNG/JPG"
     },
     {
-      "q": "Is this free?",
-      "a": "ใช่ ฟรีทั้งหมด"
+      "q": "ฟรีหรือเปล่า?",
+      "a": "ใช่ ฟรีเสมอ"
     }
-  ]
+  ],
+  "faqTitle": "คำถามที่พบบ่อย",
+  "supportCenter": "ศูนย์สนับสนุน"
 }

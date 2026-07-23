@@ -1,67 +1,85 @@
 {
-  "title": "Add Watermark to PDF — Offline Watermarking",
-  "h1": "Stamp PDFs with Text or Image Watermarks Locally",
-  "description": "Add \"CONFIDENTIAL\", logos, or custom text watermarks to PDFs entirely in your browser. No upload. Best for users in Istanbul.",
+  "title": "PDF'ye Filigran Ekleme — Çevrimdışı Filigran Ekleme",
+  "h1": "PDF'leri Metin veya Resim Filigranlarıyla Yerel Olarak Damgalama",
+  "description": "Tamamen tarayıcınızdan PDF'lere \"GİZLİ\", logolar veya özel metin filigranları ekleyin. Yükleme yok. %100 güvenli yerel işleme.",
+  "buttonText": "Add Watermark",
+  "badges": [
+    "Özel Metin",
+    "Ayarlanabilir Opaklık",
+    "Marka Koruması"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Watermark PDFs Offline?",
-      "content": "Adding watermarks means your document is sensitive. Never upload draft contracts or confidential reports to a cloud watermarker."
+      "type": "watermark_hero_features",
+      "title": "Neden PDF'lere Çevrimdışı Filigran Eklemelisiniz?",
+      "content": "Filigran eklemek, belgenizin hassas olduğu anlamına gelir. Taslak sözleşmeleri veya gizli raporları asla bir bulut filigranına yüklemeyin."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Watermark a PDF",
+      "type": "watermark_how_to_steps",
+      "title": "PDF'ye Filigran Nasıl Eklenir",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to watermark."
+          "title": "PDF'yi aç",
+          "description": "Filigran eklenecek PDF'yi seçin."
         },
         {
-          "title": "Design Watermark",
-          "description": "Type text or upload a logo image."
+          "title": "Tasarım Filigranı",
+          "description": "Metin yazın veya bir logo resmi yükleyin."
         },
         {
-          "title": "Apply & Download",
-          "description": "Get your watermarked PDF in one click."
+          "title": "Uygula ve İndir",
+          "description": "Filigranlı PDF'nizi tek tıklamayla alın."
         }
-      ]
+      ],
+      "badgeText": "Hızlı Kılavuz"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Document Watermarking in Istanbul",
-      "content": "Legal and creative professionals in Istanbul stamp documents with watermarks without cloud uploads."
+      "type": "watermark_geo_targeting",
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Confidential Drafts Stay Private",
-      "content": "Draft contracts and unreleased designs watermarked locally without any server contact."
+      "type": "watermark_privacy_security",
+      "title": "Gizli Taslaklar Gizli Kalsın",
+      "content": "Taslak sözleşmeler ve yayınlanmamış tasarımlar, herhangi bir sunucu bağlantısı olmadan yerel olarak filigranlanır.",
+      "badgeText": "Önce Güvenlik"
     },
     {
-      "type": "transform_performance",
-      "title": "Stamp Thousands of Pages Instantly",
-      "content": "Apply watermarks to a 1000-page document in under 3 seconds. All in your browser."
+      "type": "watermark_performance",
+      "title": "Binlerce Sayfayı Anında Damgalayın",
+      "content": "1000 sayfalık bir belgeye 3 saniyeden kısa sürede filigran uygulayın. Hepsi tarayıcınızda.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [
     {
-      "q": "Can I use a logo as a watermark?",
-      "a": "Yes, upload a PNG logo and set transparency."
+      "q": "Bir logoyu filigran olarak kullanabilir miyim?",
+      "a": "Evet, bir PNG logosu yükleyin ve şeffaflığı ayarlayın."
     },
     {
-      "q": "Can I adjust watermark opacity?",
-      "a": "Yes, from 10% to 100% opacity."
+      "q": "Filigran opaklığını ayarlayabilir miyim?",
+      "a": "Evet, %10'dan %100'e kadar opaklık."
     },
     {
-      "q": "Can I apply it to specific pages only?",
-      "a": "Yes, choose page ranges."
+      "q": "Bunu yalnızca belirli sayfalara uygulayabilir miyim?",
+      "a": "Evet, sayfa aralıklarını seçin."
     },
     {
-      "q": "Is diagonal placement available?",
-      "a": "Yes, rotate watermarks to any angle."
+      "q": "Çapraz yerleştirme mevcut mu?",
+      "a": "Evet, filigranları istediğiniz açıya döndürün."
     },
     {
-      "q": "Is this free?",
-      "a": "Evet, tamamen ücretsiz."
+      "q": "Bu bedava mı?",
+      "a": "Evet, her zaman ücretsiz."
     }
-  ]
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi"
 }

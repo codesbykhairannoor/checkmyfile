@@ -1,67 +1,85 @@
 {
-  "title": "Split PDF - Extract Pages Securely",
-  "h1": "Split and Extract PDF Pages in Seconds",
-  "description": "Extract specific pages or split a large PDF into multiple files locally in your browser. Perfect for legal professionals in Istanbul.",
+  "title": "PDF'yi Böl - Sayfaları Güvenli Bir Şekilde Çıkarın",
+  "h1": "PDF Sayfalarını Saniyeler İçinde Bölün ve Çıkarın",
+  "description": "Belirli sayfaları çıkarın veya büyük bir PDF'yi tarayıcınızda yerel olarak birden fazla dosyaya bölün. Hızlı ve tamamen güvenli.",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Split PDFs Locally?",
-      "content": "When dealing with massive legal or corporate documents, extracting a single page shouldn't require uploading a 1GB file. Do it instantly right on your machine."
+      "title": "Neden PDF'leri Yerel Olarak Bölmeliyim?",
+      "content": "Çok büyük yasal veya kurumsal belgelerle uğraşırken, tek bir sayfanın çıkarılması 1 GB boyutunda bir dosyanın yüklenmesini gerektirmemelidir. Bunu anında makinenizde yapın."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Extract Pages",
+      "title": "Sayfalar Nasıl Çıkarılır",
       "steps": [
         {
-          "title": "Open Document",
-          "description": "Load the multi-page PDF you want to split."
+          "title": "Belgeyi Aç",
+          "description": "Bölmek istediğiniz çok sayfalı PDF'yi yükleyin."
         },
         {
-          "title": "Select Ranges",
-          "description": "Pick specific page numbers or visually select pages to extract."
+          "title": "Aralıkları Seçin",
+          "description": "Belirli sayfa numaralarını seçin veya çıkarılacak sayfaları görsel olarak seçin."
         },
         {
-          "title": "Export Zip",
-          "description": "Download your newly split files organized in a ZIP."
+          "title": "Zip'i Dışa Aktar",
+          "description": "ZIP biçiminde düzenlenmiş yeni bölünmüş dosyalarınızı indirin."
         }
-      ]
+      ],
+      "badgeText": "Hızlı Kılavuz"
     },
     {
       "type": "split_geo_targeting",
-      "title": "The Best Splitter in Istanbul, TR-34",
-      "content": "Whether you are studying in Istanbul or working on a tight deadline, extracting pages is now instantaneous."
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
     },
     {
       "type": "split_privacy_security",
-      "title": "Total Page Privacy",
-      "content": "Splitting confidential employee records? Rest easy knowing our code executes purely in your local environment."
+      "title": "Toplam Sayfa Gizliliği",
+      "content": "Gizli çalışan kayıtlarını bölmek mi? Kodumuzun yalnızca yerel ortamınızda yürütüldüğünü bilerek içiniz rahat olsun.",
+      "badgeText": "Önce Güvenlik"
     },
     {
       "type": "split_performance",
-      "title": "Zero-Upload Extraction",
-      "content": "Grabbing page 14 from a 2000-page PDF takes milliseconds, skipping the excruciating upload step entirely."
+      "title": "Sıfır Yüklemeli Çıkarma",
+      "content": "2000 sayfalık bir PDF'den 14. sayfayı almak milisaniyeler alır ve dayanılmaz yükleme adımını tamamen atlar.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [
     {
-      "q": "How do I extract just one page?",
-      "a": "Simply click on the page thumbnail you want and hit Export."
+      "q": "Yalnızca bir sayfayı nasıl ayıklayabilirim?",
+      "a": "İstediğiniz sayfa küçük resmine tıklayın ve Dışa Aktar'a basın."
     },
     {
-      "q": "Can I split the PDF in half?",
-      "a": "Yes, you can specify custom page ranges like 1-10 and 11-20."
+      "q": "PDF'yi ikiye bölebilir miyim?",
+      "a": "Evet, 1-10 ve 11-20 gibi özel sayfa aralıkları belirleyebilirsiniz."
     },
     {
-      "q": "Will the extracted pages lose quality?",
-      "a": "No, the splitting process uses binary extraction, preserving 100% of the original quality."
+      "q": "Çıkarılan sayfaların kalitesi düşer mi?",
+      "a": "Hayır, bölme işlemi, orijinal kalitenin %100'ünü koruyan ikili ayıklamayı kullanır."
     },
     {
-      "q": "Is my document uploaded when splitting?",
-      "a": "Never. The entire 2000-page document stays strictly in your browser."
+      "q": "Belgem bölme sırasında yükleniyor mu?",
+      "a": "Asla. 2000 sayfalık belgenin tamamı kesinlikle tarayıcınızda kalır."
     },
     {
-      "q": "Is there a limit to how many pages I can split?",
-      "a": "No limits! Split as many pages as your computer can handle."
+      "q": "Kaç sayfa bölebileceğimin bir sınırı var mı?",
+      "a": "Sınır yok! Bilgisayarınızın işleyebileceği kadar sayfa bölün."
     }
-  ]
+  ],
+  "badges": [
+    "Anında Bölünme",
+    "Hassas Aralık",
+    "Sınır Yok"
+  ],
+  "stats": [
+    "Ultra Fast",
+    "No Upload",
+    "Batch Zip",
+    "Secure"
+  ],
+  "buttonText": "Split PDF",
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi"
 }

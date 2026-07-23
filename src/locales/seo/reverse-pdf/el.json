@@ -1,67 +1,85 @@
 {
-  "title": "Reverse PDF — Flip Page Order Offline",
-  "h1": "Reverse the Page Order of Any PDF Locally",
-  "description": "Flip the page sequence of PDF documents entirely in your browser. No upload, instant result. Great for users in Athens.",
+  "title": "Αντίστροφη PDF — Παραγγελία σελίδας χωρίς σύνδεση",
+  "h1": "Αντιστρέψτε τη σειρά σελίδων οποιουδήποτε PDF τοπικά",
+  "description": "Αναστρέψτε εξ ολοκλήρου τη σειρά σελίδων των εγγράφων PDF στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση, άμεσο αποτέλεσμα. 100% ασφαλής τοπική επεξεργασία.",
+  "buttonText": "Reverse Order",
+  "badges": [
+    "Αντιστροφή όλων των σελίδων",
+    "Διόρθωση σαρώσεων",
+    "Ένα κλικ"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Reverse PDF Page Order Offline?",
-      "content": "When a scanner outputs pages in reverse, you need a quick local fix — not a cloud upload of your entire document."
+      "type": "reverse_hero_features",
+      "title": "Γιατί να αντιστρέψετε την παραγγελία σελίδων PDF εκτός σύνδεσης;",
+      "content": "Όταν ένας σαρωτής εξάγει σελίδες αντίστροφα, χρειάζεστε μια γρήγορη τοπική επιδιόρθωση — όχι μια μεταφόρτωση ολόκληρου του εγγράφου σας στο cloud."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Reverse PDF Page Order",
+      "type": "reverse_how_to_steps",
+      "title": "Πώς να αντιστρέψετε τη σειρά σελίδων PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF with incorrect page order."
+          "title": "Ανοίξτε το PDF",
+          "description": "Επιλέξτε το PDF με εσφαλμένη σειρά σελίδων."
         },
         {
-          "title": "Confirm Reversal",
-          "description": "Preview the new first and last page."
+          "title": "Επιβεβαίωση αντιστροφής",
+          "description": "Προεπισκόπηση της νέας πρώτης και τελευταίας σελίδας."
         },
         {
-          "title": "Download Reversed PDF",
-          "description": "Get the reordered PDF instantly."
+          "title": "Λήψη Reversed PDF",
+          "description": "Αποκτήστε το αναπαραγγελθέν PDF αμέσως."
         }
-      ]
+      ],
+      "badgeText": "Γρήγορος Οδηγός"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Page Order Fix for Athens Users",
-      "content": "Office users in Athens fix scanner reversal issues instantly without cloud uploads."
+      "type": "reverse_geo_targeting",
+      "title": "100% Ασφαλής Τοπική Επεξεργασία",
+      "content": "Όλες οι λειτουργίες εκτελούνται απευθείας στην τοπική συσκευή σας. Χρησιμοποιούμε προηγμένη τεχνολογία WebAssembly για να επεξεργαζόμαστε τα έγγραφά σας χωρίς ποτέ να τα ανεβάσουμε σε εξωτερικούς διακομιστές, διασφαλίζοντας πλήρες απόρρητο.",
+      "badgeText": "Τοπική Επεξεργασία"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Documents Never Leave Your Device",
-      "content": "Reversed contracts, reports, and records are processed entirely in browser memory."
+      "type": "reverse_privacy_security",
+      "title": "Έγγραφα Μην αφήνετε ποτέ τη συσκευή σας",
+      "content": "Οι αντιστρεπτέες συμβάσεις, οι αναφορές και οι εγγραφές επεξεργάζονται εξ ολοκλήρου στη μνήμη του προγράμματος περιήγησης.",
+      "badgeText": "Πρώτα η ασφάλεια"
     },
     {
-      "type": "transform_performance",
-      "title": "Reverse Any PDF in Seconds",
-      "content": "Reversing a 1000-page document takes milliseconds. All in your browser."
+      "type": "reverse_performance",
+      "title": "Αντιστροφή οποιουδήποτε PDF σε δευτερόλεπτα",
+      "content": "Η αντιστροφή ενός εγγράφου 1000 σελίδων διαρκεί χιλιοστά του δευτερολέπτου. Όλα στο πρόγραμμα περιήγησής σας.",
+      "badgeText": "Αστραπιαία"
     }
   ],
   "faqs": [
     {
-      "q": "Does this reverse all pages?",
-      "a": "Yes, the full page order is flipped."
+      "q": "Αυτό αντιστρέφει όλες τις σελίδες;",
+      "a": "Ναι, η σειρά πλήρους σελίδας έχει αναστραφεί."
     },
     {
-      "q": "Can I select a range to reverse?",
-      "a": "Yes, specify start and end pages to reverse selectively."
+      "q": "Μπορώ να επιλέξω ένα εύρος για αντιστροφή;",
+      "a": "Ναι, καθορίστε τις σελίδες έναρξης και τέλους για επιλεκτική αντιστροφή."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "No, reversal is a structural operation with no quality loss."
+      "q": "Επηρεάζεται η ποιότητα;",
+      "a": "Όχι, η αναστροφή είναι μια δομική λειτουργία χωρίς απώλεια ποιότητας."
     },
     {
-      "q": "Can I undo?",
-      "a": "Apply reversal again to undo."
+      "q": "Μπορώ να αναιρέσω;",
+      "a": "Εφαρμόστε ξανά την αντιστροφή για αναίρεση."
     },
     {
-      "q": "Is this free?",
-      "a": "Ναι, εντελώς δωρεάν."
+      "q": "Αυτό είναι δωρεάν;",
+      "a": "Ναι, πάντα δωρεάν."
     }
-  ]
+  ],
+  "faqTitle": "Συχνές Ερωτήσεις",
+  "supportCenter": "Κέντρο Υποστήριξης"
 }

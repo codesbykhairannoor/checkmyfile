@@ -1,67 +1,85 @@
 {
-  "title": "Excel to PDF — Convert Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to PDF Securely",
-  "description": "Turn .xlsx and .csv files into crisp PDFs locally in your browser. Financial data stays on your device. Perfect for users in Madrid.",
+  "title": "Excel a PDF: convertir hojas de cálculo sin conexión",
+  "h1": "Convierta hojas de cálculo de Excel a PDF de forma segura",
+  "description": "Convierta archivos .xlsx y .csv en archivos PDF nítidos localmente en su navegador. Los datos financieros permanecen en su dispositivo. Procesamiento local 100% seguro.",
+  "buttonText": "Convert Spreadsheet",
+  "badges": [
+    "Informes financieros",
+    "Facturas",
+    "Exportaciones de datos"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Excel Offline?",
-      "content": "Spreadsheets often contain sensitive financial data. Our browser-based engine converts without any server involvement."
+      "type": "excel_hero_features",
+      "title": "¿Por qué convertir Excel sin conexión?",
+      "content": "Las hojas de cálculo suelen contener datos financieros confidenciales. Nuestro motor basado en navegador realiza conversiones sin la participación del servidor."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Export Excel as PDF",
+      "type": "excel_how_to_steps",
+      "title": "Cómo exportar Excel como PDF",
       "steps": [
         {
-          "title": "Open Spreadsheet",
-          "description": "Select your .xlsx or .csv file."
+          "title": "Abrir hoja de cálculo",
+          "description": "Seleccione su archivo .xlsx o .csv."
         },
         {
-          "title": "Choose Sheet Range",
-          "description": "Pick which sheets or rows to include."
+          "title": "Elegir rango de hojas",
+          "description": "Elija qué hojas o filas incluir."
         },
         {
-          "title": "Export as PDF",
-          "description": "Download your spreadsheet as a clean PDF."
+          "title": "Exportar como PDF",
+          "description": "Descargue su hoja de cálculo como un PDF limpio."
         }
-      ]
+      ],
+      "badgeText": "Guía rápida"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Excel to PDF for Madrid Businesses",
-      "content": "Businesses in Madrid use our tool to share financial reports without exposing raw spreadsheet data."
+      "type": "excel_geo_targeting",
+      "title": "Procesamiento local 100% seguro",
+      "content": "Todas las operaciones se realizan directamente en su dispositivo local. Utilizamos tecnología avanzada de WebAssembly para procesar sus documentos sin tener que cargarlos en servidores externos, lo que garantiza una privacidad total.",
+      "badgeText": "Procesamiento local"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Protect Financial Spreadsheets",
-      "content": "Balance sheets, payroll data — all processed offline. Zero data sent to any third party."
+      "type": "excel_privacy_security",
+      "title": "Proteger las hojas de cálculo financieras",
+      "content": "Balances y datos de nómina: todo procesado sin conexión. Cero datos enviados a terceros.",
+      "badgeText": "La seguridad es lo primero"
     },
     {
-      "type": "combiner_performance",
-      "title": "Spreadsheet-to-PDF in Seconds",
-      "content": "No upload queue, no compression artifacts. Your spreadsheet renders natively in-browser."
+      "type": "excel_performance",
+      "title": "De hoja de cálculo a PDF en segundos",
+      "content": "Sin cola de carga, sin artefactos de compresión. Su hoja de cálculo se muestra de forma nativa en el navegador.",
+      "badgeText": "A la velocidad del rayo"
     }
   ],
   "faqs": [
     {
-      "q": "Are all Excel formulas preserved?",
-      "a": "Yes, formula results are captured in the PDF snapshot."
+      "q": "¿Se conservan todas las fórmulas de Excel?",
+      "a": "Sí, los resultados de la fórmula se capturan en la instantánea del PDF."
     },
     {
-      "q": "Can I convert multiple sheets?",
-      "a": "Yes, you can include all sheets or specific ones."
+      "q": "¿Puedo convertir varias hojas?",
+      "a": "Sí, puedes incluir todas las hojas o algunas específicas."
     },
     {
-      "q": "What file types are supported?",
-      "a": ".xlsx, .xls, and .csv are all supported."
+      "q": "¿Qué tipos de archivos son compatibles?",
+      "a": "Se admiten .xlsx, .xls y .csv."
     },
     {
-      "q": "Is this secure for financial data?",
-      "a": "Absolutely. The file never leaves your browser."
+      "q": "¿Es esto seguro para los datos financieros?",
+      "a": "Absolutamente. El archivo nunca sale de su navegador."
     },
     {
-      "q": "Does it support graphs?",
-      "a": "Sí, completamente gratis."
+      "q": "¿Admite gráficos?",
+      "a": "Los cuadros y gráficos incrustados se representan en el PDF."
     }
-  ]
+  ],
+  "faqTitle": "Preguntas frecuentes",
+  "supportCenter": "Centro de soporte"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "CSV to Excel Converter — Offline & Instant",
-  "h1": "Convert CSV Files to Excel Spreadsheets Locally",
-  "description": "Transform .csv files into structured .xlsx spreadsheets entirely in your browser. No upload. Perfect for data teams in Budapest.",
+  "title": "CSV-ből Excel konvertáló – offline és azonnali",
+  "h1": "CSV-fájlok konvertálása Excel-táblázatokká helyileg",
+  "description": "A .csv fájlokat teljes egészében strukturált .xlsx táblázatokká alakíthatja át böngészőjében. Nincs feltöltés. 100%-ban biztonságos helyi feldolgozás.",
+  "buttonText": "Convert CSV",
+  "badges": [
+    "UTF-8 támogatás",
+    "Többoszlopos",
+    "Azonnali konvertálás"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Convert CSV Offline?",
-      "content": "CSV files often contain customer or financial data. Convert them to Excel locally without exposing your datasets to any cloud service."
+      "type": "csv_excel_hero_features",
+      "title": "Miért konvertálhat offline CSV-t?",
+      "content": "A CSV-fájlok gyakran tartalmaznak ügyfél- vagy pénzügyi adatokat. Konvertálja őket helyileg Excel-be anélkül, hogy adatkészleteit bármilyen felhőszolgáltatásnak kitenné."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert CSV to Excel",
+      "type": "csv_excel_how_to_steps",
+      "title": "Hogyan lehet a CSV-t Excel-be konvertálni",
       "steps": [
         {
-          "title": "Open CSV File",
-          "description": "Select the CSV file to convert."
+          "title": "Nyissa meg a CSV-fájlt",
+          "description": "Válassza ki a konvertálni kívánt CSV-fájlt."
         },
         {
-          "title": "Preview Data",
-          "description": "See the parsed columns and rows before export."
+          "title": "Előnézeti adatok",
+          "description": "Az exportálás előtt tekintse meg az elemzett oszlopokat és sorokat."
         },
         {
-          "title": "Download .xlsx",
-          "description": "Get your Excel spreadsheet instantly."
+          "title": ".xlsx letöltése",
+          "description": "Azonnal szerezze be Excel-táblázatát."
         }
-      ]
+      ],
+      "badgeText": "Gyors útmutató"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Data Tools for Budapest Analysts",
-      "content": "Data analysts in Budapest convert CSV exports to Excel without uploading sensitive datasets."
+      "type": "csv_excel_geo_targeting",
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Minden művelet közvetlenül a helyi eszközön történik. Fejlett WebAssembly technológiát használunk a dokumentumok feldolgozásához anélkül, hogy azokat külső szerverekre feltöltenénk, így biztosítva a teljes adatvédelmet.",
+      "badgeText": "Helyi feldolgozás"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Customer Data Stays on Your Machine",
-      "content": "CRM exports, transaction logs, and survey data converted locally with zero cloud involvement."
+      "type": "csv_excel_privacy_security",
+      "title": "Az ügyféladatok a gépen maradnak",
+      "content": "CRM-exportok, tranzakciós naplók és felmérési adatok helyben konvertálva, felhőbevonás nélkül.",
+      "badgeText": "Első a biztonság"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Large CSV Files Instantly",
-      "content": "Convert a 100,000-row CSV to Excel in seconds. All browser-native processing."
+      "type": "csv_excel_performance",
+      "title": "Nagy CSV-fájlok azonnali konvertálása",
+      "content": "Konvertálja a 100 000 soros CSV-fájlt Excelbe másodpercek alatt. Minden böngészőben natív feldolgozás.",
+      "badgeText": "Villámgyors"
     }
   ],
   "faqs": [
     {
-      "q": "Is the column structure preserved?",
-      "a": "Yes, all columns are mapped to Excel columns."
+      "q": "Megmaradt az oszlopszerkezet?",
+      "a": "Igen, az összes oszlop Excel oszlopokra van leképezve."
     },
     {
-      "q": "Can I convert multiple CSVs?",
-      "a": "Yes, batch conversion to multiple sheets is supported."
+      "q": "Konvertálhatok több CSV-t?",
+      "a": "Igen, a kötegelt átalakítás több lapra támogatott."
     },
     {
-      "q": "Are special characters handled?",
-      "a": "Yes, UTF-8 and various encodings are supported."
+      "q": "Kezelik a speciális karaktereket?",
+      "a": "Igen, az UTF-8 és a különféle kódolások támogatottak."
     },
     {
-      "q": "Can I set delimiters?",
-      "a": "Yes, comma, semicolon, and tab delimiters are supported."
+      "q": "Beállíthatok határolókat?",
+      "a": "Igen, a vessző, pontosvessző és tabulátor-határolók támogatottak."
     },
     {
-      "q": "Is this free?",
-      "a": "Igen, teljesen ingyenes."
+      "q": "Ez ingyenes?",
+      "a": "Igen, mindig ingyenes."
     }
-  ]
+  ],
+  "faqTitle": "Gyakran Ismételt Kérdések",
+  "supportCenter": "Támogatási Központ"
 }

@@ -1,67 +1,80 @@
 {
-  "title": "PDF to Word Converter — Offline & Editable",
-  "h1": "Convert PDF to Editable Word Documents Locally",
-  "description": "Transform PDFs back into .docx files you can edit, right in your browser. No upload needed. Great for users in Bucharest.",
+  "title": "Convertor PDF în Word - Offline și editabil",
+  "h1": "Convertiți PDF în documente Word editabile local",
+  "description": "Transformați PDF-urile înapoi în fișiere .docx pe care le puteți edita, chiar în browser. Nu este nevoie de încărcare. Excelent pentru utilizatorii din București.",
+  "buttonText": "Convertiți în Word",
+  "badges": [
+    "Documente editabile",
+    "Recuperare text",
+    "Proces offline"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Timp de așteptare"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF Back Offline?",
-      "content": "When you need to edit a PDF, converting it offline keeps your original document confidential."
+      "title": "De ce să folosiți offline?",
+      "content": "Când trebuie să editați un PDF, conversia lui offline păstrează confidențialitatea documentului original."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Word",
+      "title": "Cum se utilizează",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF file you need to convert."
+          "title": "Încărcați PDF",
+          "description": "Selectați fișierul PDF pe care trebuie să îl convertiți."
         },
         {
-          "title": "Detect Text Layers",
-          "description": "Our engine reads text and structure from the PDF."
+          "title": "Detectează straturi de text",
+          "description": "Motorul nostru citește textul și structura din PDF."
         },
         {
-          "title": "Download .docx",
-          "description": "Get your editable Word document ready to modify."
+          "title": "Descărcați .docx",
+          "description": "Pregătește-ți documentul Word editabil pentru modificare."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "PDF to Word for Bucharest Offices",
-      "content": "Office workers in Bucharest use our tool to recover editable text from PDFs without cloud dependency."
+      "title": "PDF to Word pentru birourile din Bucuresti",
+      "content": "Angajații de birou din București folosesc instrumentul nostru pentru a recupera text editabil din PDF-uri fără dependență de cloud."
     },
     {
       "type": "split_privacy_security",
-      "title": "Legal Documents Stay Confidential",
-      "content": "Contracts, NDAs, and reports converted back to Word entirely in your browser memory."
+      "title": "Documentele legale rămân confidențiale",
+      "content": "Contractele, NDA-urile și rapoartele convertite înapoi în Word în întregime în memoria browserului dvs."
     },
     {
       "type": "split_performance",
-      "title": "Recover Editable Text in Seconds",
-      "content": "Extract text from a 50-page PDF in under 3 seconds without uploading a single byte."
+      "title": "Recuperați textul editabil în câteva secunde",
+      "content": "Extrageți text dintr-un PDF de 50 de pagini în mai puțin de 3 secunde fără a încărca un singur octet."
     }
   ],
   "faqs": [
     {
-      "q": "Is all text preserved?",
-      "a": "Yes, text from all layers is extracted and formatted."
+      "q": "Se păstrează tot textul?",
+      "a": "Da, textul din toate straturile este extras și formatat."
     },
     {
-      "q": "Does it work on scanned PDFs?",
-      "a": "For scanned PDFs, use our OCR tool first."
+      "q": "Funcționează pe PDF-uri scanate?",
+      "a": "Pentru PDF-urile scanate, utilizați mai întâi instrumentul nostru OCR."
     },
     {
-      "q": "Are images included in the .docx?",
-      "a": "Yes, embedded images are included in the output."
+      "q": "Imaginile sunt incluse în .docx?",
+      "a": "Da, imaginile încorporate sunt incluse în rezultat."
     },
     {
-      "q": "Can I edit the .docx after?",
-      "a": "Absolutely, the output is a fully editable Word document."
+      "q": "Pot edita .docx după?",
+      "a": "Absolut, rezultatul este un document Word complet editabil."
     },
     {
-      "q": "Is this free?",
+      "q": "Este gratuit?",
       "a": "Da, complet gratuit."
     }
-  ]
+  ],
+  "faqTitle": "Întrebări Frecvente"
 }

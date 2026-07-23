@@ -1,67 +1,85 @@
 {
-  "title": "Grayscale PDF — Convert to Black and White Offline",
-  "h1": "Convert Color PDF Pages to Grayscale Instantly",
-  "description": "Turn color PDFs into black-and-white versions to reduce file size or prepare for printing, entirely in your browser. Ideal for users in Riyadh.",
+  "title": "Grayscale PDF — تحويل إلى أبيض وأسود دون الاتصال بالإنترنت",
+  "h1": "تحويل صفحات PDF الملونة إلى تدرج الرمادي على الفور",
+  "description": "قم بتحويل ملفات PDF الملونة إلى إصدارات بالأبيض والأسود لتقليل حجم الملف أو الاستعداد للطباعة، كل ذلك في متصفحك. معالجة محلية آمنة بنسبة 100%.",
+  "buttonText": "Convert to Grayscale",
+  "badges": [
+    "حفظ الحبر",
+    "أبيض وأسود",
+    "مثالية للطباعة"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Convert to Grayscale Offline?",
-      "content": "Removing color from a PDF is a pre-print or archiving step. Do it locally without exposing confidential document design."
+      "type": "grayscale_hero_features",
+      "title": "لماذا التحويل إلى تدرج الرمادي دون الاتصال بالإنترنت؟",
+      "content": "تعد إزالة اللون من ملف PDF بمثابة خطوة ما قبل الطباعة أو الأرشفة. افعل ذلك محليًا دون الكشف عن تصميم المستندات السرية."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Make PDF Grayscale",
+      "type": "grayscale_how_to_steps",
+      "title": "كيفية عمل PDF بتدرج الرمادي",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the color PDF to convert."
+          "title": "افتح ملف PDF",
+          "description": "حدد ملف PDF الملون لتحويله."
         },
         {
-          "title": "Choose Conversion Mode",
-          "description": "Pick luminance or contrast-adjusted grayscale."
+          "title": "اختر وضع التحويل",
+          "description": "اختر النصوع أو التدرج الرمادي الذي تم ضبطه على النقيض من ذلك."
         },
         {
-          "title": "Download Grayscale PDF",
-          "description": "Save the black-and-white PDF immediately."
+          "title": "تحميل تدرج الرمادي PDF",
+          "description": "احفظ ملف PDF بالأبيض والأسود على الفور."
         }
-      ]
+      ],
+      "badgeText": "الدليل السريع"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Grayscale PDF for Riyadh Printers",
-      "content": "Businesses in Riyadh convert color PDFs to grayscale for cost-effective printing without cloud uploads."
+      "type": "grayscale_geo_targeting",
+      "title": "معالجة محلية آمنة بنسبة 100%",
+      "content": "يتم تنفيذ جميع العمليات مباشرة على جهازك المحلي. نحن نستخدم تقنية WebAssembly المتقدمة لمعالجة مستنداتك دون تحميلها على خوادم خارجية، مما يضمن الخصوصية الكاملة.",
+      "badgeText": "المعالجة المحلية"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Design Files Stay Confidential",
-      "content": "Internal design documents and branded materials converted to grayscale without cloud exposure."
+      "type": "grayscale_privacy_security",
+      "title": "تبقى ملفات التصميم سرية",
+      "content": "يتم تحويل مستندات التصميم الداخلي والمواد ذات العلامات التجارية إلى التدرج الرمادي دون التعرض للسحابة.",
+      "badgeText": "الأمن أولا"
     },
     {
-      "type": "transform_performance",
-      "title": "Convert Color Instantly",
-      "content": "A 200-page color PDF converted to grayscale in under 2 seconds. Zero upload."
+      "type": "grayscale_performance",
+      "title": "تحويل اللون على الفور",
+      "content": "تم تحويل ملف PDF ملون مكون من 200 صفحة إلى تدرج رمادي في أقل من ثانيتين. تحميل صفر.",
+      "badgeText": "بسرعة البرق"
     }
   ],
   "faqs": [
     {
-      "q": "Does grayscale reduce file size?",
-      "a": "Often yes, especially for image-heavy PDFs."
+      "q": "هل يقلل التدرج الرمادي من حجم الملف؟",
+      "a": "في كثير من الأحيان نعم، خاصة بالنسبة لملفات PDF التي تحتوي على صور كثيرة."
     },
     {
-      "q": "Are all pages converted?",
-      "a": "Yes by default; you can also select specific pages."
+      "q": "هل تم تحويل كافة الصفحات؟",
+      "a": "نعم بشكل افتراضي؛ يمكنك أيضًا تحديد صفحات محددة."
     },
     {
-      "q": "Is the conversion reversible?",
-      "a": "The color information is removed; keep the original for reversal."
+      "q": "هل يمكن الرجوع عن التحويل؟",
+      "a": "تتم إزالة معلومات اللون؛ احتفظ بالأصل للرجوع إليه."
     },
     {
-      "q": "Does it affect text quality?",
-      "a": "No, text remains crisp and black."
+      "q": "هل يؤثر على جودة النص؟",
+      "a": "لا، يظل النص واضحًا وأسودًا."
     },
     {
-      "q": "Is this free?",
-      "a": "نعم، مجاناً تماماً."
+      "q": "هل هذا مجاني؟",
+      "a": "نعم، مجاني تماما."
     }
-  ]
+  ],
+  "faqTitle": "الأسئلة المتداولة",
+  "supportCenter": "مركز الدعم"
 }

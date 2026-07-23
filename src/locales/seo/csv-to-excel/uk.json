@@ -1,67 +1,85 @@
 {
-  "title": "CSV to Excel Converter — Offline & Instant",
-  "h1": "Convert CSV Files to Excel Spreadsheets Locally",
-  "description": "Transform .csv files into structured .xlsx spreadsheets entirely in your browser. No upload. Perfect for data teams in Kyiv.",
+  "title": "Конвертер CSV у Excel — офлайн і миттєво",
+  "h1": "Перетворення файлів CSV на електронні таблиці Excel локально",
+  "description": "Перетворюйте файли .csv на структуровані електронні таблиці .xlsx у своєму браузері. Без завантаження. 100% безпечна локальна обробка.",
+  "buttonText": "Convert CSV",
+  "badges": [
+    "Підтримка UTF-8",
+    "Багатостовпцевий",
+    "Миттєве перетворення"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Convert CSV Offline?",
-      "content": "CSV files often contain customer or financial data. Convert them to Excel locally without exposing your datasets to any cloud service."
+      "type": "csv_excel_hero_features",
+      "title": "Навіщо конвертувати CSV офлайн?",
+      "content": "Файли CSV часто містять клієнтські або фінансові дані. Перетворіть їх у Excel локально, не відкриваючи свої набори даних жодній хмарній службі."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert CSV to Excel",
+      "type": "csv_excel_how_to_steps",
+      "title": "Як конвертувати CSV у Excel",
       "steps": [
         {
-          "title": "Open CSV File",
-          "description": "Select the CSV file to convert."
+          "title": "Відкрити файл CSV",
+          "description": "Виберіть файл CSV для конвертації."
         },
         {
-          "title": "Preview Data",
-          "description": "See the parsed columns and rows before export."
+          "title": "Попередній перегляд даних",
+          "description": "Перегляньте проаналізовані стовпці та рядки перед експортом."
         },
         {
-          "title": "Download .xlsx",
-          "description": "Get your Excel spreadsheet instantly."
+          "title": "Завантажте .xlsx",
+          "description": "Миттєво отримайте свою електронну таблицю Excel."
         }
-      ]
+      ],
+      "badgeText": "Короткий посібник"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Data Tools for Kyiv Analysts",
-      "content": "Data analysts in Kyiv convert CSV exports to Excel without uploading sensitive datasets."
+      "type": "csv_excel_geo_targeting",
+      "title": "100% безпечна локальна обробка",
+      "content": "Усі операції виконуються безпосередньо на локальному пристрої. Ми використовуємо передову технологію WebAssembly для обробки ваших документів, не завантажуючи їх на зовнішні сервери, забезпечуючи повну конфіденційність.",
+      "badgeText": "Локальна обробка"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Customer Data Stays on Your Machine",
-      "content": "CRM exports, transaction logs, and survey data converted locally with zero cloud involvement."
+      "type": "csv_excel_privacy_security",
+      "title": "Дані клієнта залишаються на вашій машині",
+      "content": "Експорт CRM, журнали транзакцій і дані опитувань конвертуються локально без участі хмари.",
+      "badgeText": "Безпека перш за все"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Large CSV Files Instantly",
-      "content": "Convert a 100,000-row CSV to Excel in seconds. All browser-native processing."
+      "type": "csv_excel_performance",
+      "title": "Миттєво конвертуйте великі файли CSV",
+      "content": "Перетворіть 100 000 рядків CSV у Excel за лічені секунди. Уся обробка в браузері.",
+      "badgeText": "Блискавичний"
     }
   ],
   "faqs": [
     {
-      "q": "Is the column structure preserved?",
-      "a": "Yes, all columns are mapped to Excel columns."
+      "q": "Чи збережена структура колонки?",
+      "a": "Так, усі стовпці зіставляються зі стовпцями Excel."
     },
     {
-      "q": "Can I convert multiple CSVs?",
-      "a": "Yes, batch conversion to multiple sheets is supported."
+      "q": "Чи можу я конвертувати декілька файлів CSV?",
+      "a": "Так, пакетне перетворення на кілька аркушів підтримується."
     },
     {
-      "q": "Are special characters handled?",
-      "a": "Yes, UTF-8 and various encodings are supported."
+      "q": "Чи обробляються спеціальні символи?",
+      "a": "Так, підтримуються UTF-8 і різні кодування."
     },
     {
-      "q": "Can I set delimiters?",
-      "a": "Yes, comma, semicolon, and tab delimiters are supported."
+      "q": "Чи можу я встановити роздільники?",
+      "a": "Так, кома, крапка з комою та роздільники табуляції підтримуються."
     },
     {
-      "q": "Is this free?",
-      "a": "Так, повністю безкоштовно."
+      "q": "Це безкоштовно?",
+      "a": "Так, завжди безкоштовно."
     }
-  ]
+  ],
+  "faqTitle": "Часті запитання",
+  "supportCenter": "Центр підтримки"
 }

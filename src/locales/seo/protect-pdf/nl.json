@@ -1,67 +1,85 @@
 {
-  "title": "Password Protect PDF — Secure Files Offline",
-  "h1": "Add Password Protection to PDF Files Instantly",
-  "description": "Encrypt PDF files with AES-256 directly in your browser. Your document never leaves your device. Ideal for users in Amsterdam.",
+  "title": "PDF met wachtwoord beveiligen — Bestanden offline beveiligen",
+  "h1": "Voeg direct wachtwoordbeveiliging toe aan PDF-bestanden",
+  "description": "Versleutel PDF-bestanden met AES-256 rechtstreeks in uw browser. Uw document verlaat nooit uw apparaat. 100% veilige lokale verwerking.",
+  "buttonText": "Protect PDF",
+  "badges": [
+    "AES-256-codering",
+    "Veilig wachtwoord",
+    "Alleen aan de clientzijde"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "protect_hero_features",
-      "title": "Why Protect PDFs Locally?",
-      "content": "Adding a password means the file is sensitive. Never upload sensitive files to a cloud encryptor. Ours runs entirely offline with AES-256 encryption."
+      "title": "Waarom PDF's lokaal beveiligen?",
+      "content": "Het toevoegen van een wachtwoord betekent dat het bestand gevoelig is. Upload nooit gevoelige bestanden naar een cloud-encryptor. Die van ons draait volledig offline met AES-256-codering."
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Password Protect a PDF",
+      "title": "Een PDF met een wachtwoord beveiligen",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF you want to lock."
+          "title": "PDF openen",
+          "description": "Selecteer de PDF die u wilt vergrendelen."
         },
         {
-          "title": "Set Password",
-          "description": "Choose a strong password for encryption."
+          "title": "Wachtwoord instellen",
+          "description": "Kies een sterk wachtwoord voor codering."
         },
         {
-          "title": "Download Protected PDF",
-          "description": "Get your AES-256 encrypted PDF immediately."
+          "title": "Beveiligde PDF downloaden",
+          "description": "Ontvang onmiddellijk uw AES-256 gecodeerde PDF."
         }
-      ]
+      ],
+      "badgeText": "Beknopte handleiding"
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Vault-Level PDF Protection for Amsterdam",
-      "content": "Legal and finance professionals in Amsterdam encrypt documents with AES-256 strength without exposing files to any server."
+      "title": "100% veilige lokale verwerking",
+      "content": "Alle bewerkingen worden rechtstreeks op uw lokale apparaat uitgevoerd. We gebruiken geavanceerde WebAssembly-technologie om uw documenten te verwerken zonder ze ooit naar externe servers te uploaden, waardoor volledige privacy wordt gegarandeerd.",
+      "badgeText": "Lokale verwerking"
     },
     {
       "type": "protect_privacy_security",
-      "title": "AES-256 Encryption — Bank-Grade, Offline",
-      "content": "Military-grade AES-256 encryption runs in your browser. No key is ever transmitted to any server."
+      "title": "AES-256-codering — bankkwaliteit, offline",
+      "content": "AES-256-codering op militair niveau wordt in uw browser uitgevoerd. Er wordt nooit een sleutel naar een server verzonden.",
+      "badgeText": "Beveiliging eerst"
     },
     {
       "type": "protect_performance",
-      "title": "Encrypt Any PDF in Under 1 Second",
-      "content": "AES-256 processing locally takes milliseconds — no upload, no queue, no wait."
+      "title": "Versleutel elke PDF in minder dan 1 seconde",
+      "content": "AES-256-verwerking duurt lokaal milliseconden: geen upload, geen wachtrij, geen wachttijd.",
+      "badgeText": "Bliksemsnel"
     }
   ],
   "faqs": [
     {
-      "q": "What encryption standard is used?",
-      "a": "AES-256, the same standard used by banks and governments."
+      "q": "Welke encryptiestandaard wordt gebruikt?",
+      "a": "AES-256, dezelfde standaard die wordt gebruikt door banken en overheden."
     },
     {
-      "q": "Can I set different owner and user passwords?",
-      "a": "Yes, you can set both separately."
+      "q": "Kan ik verschillende eigenaars- en gebruikerswachtwoorden instellen?",
+      "a": "Ja, je kunt beide afzonderlijk instellen."
     },
     {
-      "q": "Is the original file modified?",
-      "a": "No, a new encrypted copy is created."
+      "q": "Is het originele bestand gewijzigd?",
+      "a": "Nee, er wordt een nieuwe gecodeerde kopie gemaakt."
     },
     {
-      "q": "Can I restrict printing or editing?",
-      "a": "Yes, permission restrictions can be set alongside the password."
+      "q": "Kan ik het afdrukken of bewerken beperken?",
+      "a": "Ja, naast het wachtwoord kunnen ook toestemmingsbeperkingen worden ingesteld."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, volledig gratis."
+      "q": "Is dit gratis?",
+      "a": "Ja, helemaal gratis."
     }
-  ]
+  ],
+  "faqTitle": "Veelgestelde vragen",
+  "supportCenter": "Ondersteuningscentrum"
 }

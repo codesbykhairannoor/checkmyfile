@@ -1,67 +1,80 @@
 {
-  "title": "Word to PDF Converter — No Upload Required",
-  "h1": "Convert Word Documents to PDF Instantly",
-  "description": "Transform .docx files into perfect PDFs directly in your browser. Zero upload, 100% private. Ideal for users in Tokyo.",
+  "title": "Word から PDF へのコンバーター - アップロードは不要",
+  "h1": "Word 文書を即座に PDF に変換",
+  "description": "ブラウザで直接 .docx ファイルを完璧な PDF に変換します。 アップロードなし、100% プライベート。 東京のユーザーに最適です。",
+  "buttonText": "ドキュメントの変換",
+  "badges": [
+    "雇用契約",
+    "法的準備書面",
+    "履歴書とCV"
+  ],
+  "stats": [
+    "100%",
+    "地元",
+    "0秒",
+    "待ち時間"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Word to PDF Offline?",
-      "content": "Your Word document contains sensitive data. Our converter runs entirely in WebAssembly — your file never touches a server."
+      "type": "word_hero_features",
+      "title": "オフラインで使う理由",
+      "content": "Word 文書には機密データが含まれています。 私たちのコンバーターは完全に WebAssembly で実行されます。ファイルがサーバーにアクセスすることはありません。"
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Word to PDF",
+      "type": "word_how_to_steps",
+      "title": "使い方",
       "steps": [
         {
-          "title": "Select .docx File",
-          "description": "Pick your Word document from your computer."
+          "title": ".docx ファイルを選択",
+          "description": "コンピューターから Word 文書を選択します。"
         },
         {
-          "title": "Preview Output",
-          "description": "See the PDF rendering before finalizing."
+          "title": "出力のプレビュー",
+          "description": "完成させる前に PDF レンダリングを確認してください。"
         },
         {
-          "title": "Download PDF",
-          "description": "Save your perfectly converted PDF instantly."
+          "title": "PDF をダウンロード",
+          "description": "完璧に変換された PDF をすぐに保存します。"
         }
       ]
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Word to PDF for Tokyo Users",
-      "content": "Used by professionals in Tokyo who need to share documents without losing formatting."
+      "type": "word_geo_targeting",
+      "title": "東京ユーザー向け Word から PDF へ",
+      "content": "書式を失わずにドキュメントを共有する必要がある東京の専門家によって使用されています。"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Your Contracts Stay Private",
-      "content": "Converting employment contracts? Legal briefs? Our WASM processor never phones home."
+      "type": "word_privacy_security",
+      "title": "契約は非公開のまま",
+      "content": "雇用契約を変換しますか? 法定準備書? 当社の WASM プロセッサは自宅に電話をかけることはありません。"
     },
     {
-      "type": "combiner_performance",
-      "title": "No More Conversion Queues",
-      "content": "Cloud converters put you in a queue. Ours converts in under 2 seconds, entirely offline."
+      "type": "word_performance",
+      "title": "変換キューは不要",
+      "content": "クラウドコンバーターはあなたを待ち行列に並べます。 私たちのものは完全にオフラインで 2 秒以内に変換されます。"
     }
   ],
   "faqs": [
     {
-      "q": "Does it preserve Word formatting?",
-      "a": "Yes, fonts, tables, and images are preserved using our WASM renderer."
+      "q": "Word の書式は保持されますか?",
+      "a": "はい、フォント、テーブル、画像は WASM レンダラーを使用して保存されます。"
     },
     {
-      "q": "What Word versions are supported?",
-      "a": "All modern .docx files are supported."
+      "q": "Word のどのバージョンがサポートされていますか?",
+      "a": "最新の .docx ファイルはすべてサポートされています。"
     },
     {
-      "q": "Is there a file size limit?",
-      "a": "No server limits! Only your device RAM is the constraint."
+      "q": "ファイルサイズの制限はありますか?",
+      "a": "サーバー制限なし! デバイスの RAM のみが制約となります。"
     },
     {
-      "q": "Can I batch convert multiple files?",
-      "a": "Yes, select multiple .docx files at once."
+      "q": "複数のファイルを一括変換できますか?",
+      "a": "はい、複数の .docx ファイルを一度に選択できます。"
     },
     {
-      "q": "Is this free?",
+      "q": "これは無料ですか？",
       "a": "はい、完全無料です。"
     }
-  ]
+  ],
+  "faqTitle": "よくある質問"
 }

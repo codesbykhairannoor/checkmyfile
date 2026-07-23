@@ -1,67 +1,85 @@
 {
-  "title": "Excel to PDF — Convert Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to PDF Securely",
-  "description": "Turn .xlsx and .csv files into crisp PDFs locally in your browser. Financial data stays on your device. Perfect for users in Bucharest.",
+  "title": "Excel în PDF — Convertiți offline foi de calcul",
+  "h1": "Convertiți în siguranță foile de calcul Excel în PDF",
+  "description": "Transformați fișierele .xlsx și .csv în fișiere PDF clare la nivel local, în browser. Datele financiare rămân pe dispozitivul dvs. Procesare locală 100% sigură.",
+  "buttonText": "Convert Spreadsheet",
+  "badges": [
+    "Rapoarte financiare",
+    "Facturi",
+    "Exporturi de date"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Excel Offline?",
-      "content": "Spreadsheets often contain sensitive financial data. Our browser-based engine converts without any server involvement."
+      "type": "excel_hero_features",
+      "title": "De ce să convertiți Excel offline?",
+      "content": "Foile de calcul conțin adesea date financiare sensibile. Motorul nostru bazat pe browser face conversie fără nicio implicare a serverului."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Export Excel as PDF",
+      "type": "excel_how_to_steps",
+      "title": "Cum se exportă Excel ca PDF",
       "steps": [
         {
-          "title": "Open Spreadsheet",
-          "description": "Select your .xlsx or .csv file."
+          "title": "Deschideți foaia de calcul",
+          "description": "Selectați fișierul .xlsx sau .csv."
         },
         {
-          "title": "Choose Sheet Range",
-          "description": "Pick which sheets or rows to include."
+          "title": "Alegeți Intervalul de foi",
+          "description": "Alegeți ce foi sau rânduri să includeți."
         },
         {
-          "title": "Export as PDF",
-          "description": "Download your spreadsheet as a clean PDF."
+          "title": "Exportați ca PDF",
+          "description": "Descărcați foaia de calcul ca PDF curat."
         }
-      ]
+      ],
+      "badgeText": "Ghid rapid"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Excel to PDF for Bucharest Businesses",
-      "content": "Businesses in Bucharest use our tool to share financial reports without exposing raw spreadsheet data."
+      "type": "excel_geo_targeting",
+      "title": "Procesare locală 100% sigură",
+      "content": "Toate operațiunile sunt efectuate direct pe dispozitivul local. Folosim tehnologie avansată WebAssembly pentru a vă procesa documentele fără a le încărca vreodată pe servere externe, asigurând confidențialitate completă.",
+      "badgeText": "Prelucrare locală"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Protect Financial Spreadsheets",
-      "content": "Balance sheets, payroll data — all processed offline. Zero data sent to any third party."
+      "type": "excel_privacy_security",
+      "title": "Protejați foile de calcul financiare",
+      "content": "Bilanțuri, date privind salariile — toate procesate offline. Zero date trimise oricărei terțe părți.",
+      "badgeText": "Securitatea în primul rând"
     },
     {
-      "type": "combiner_performance",
-      "title": "Spreadsheet-to-PDF in Seconds",
-      "content": "No upload queue, no compression artifacts. Your spreadsheet renders natively in-browser."
+      "type": "excel_performance",
+      "title": "Foaie de calcul în PDF în câteva secunde",
+      "content": "Fără coadă de încărcare, fără artefacte de compresie. Foaia de calcul este redată nativ în browser.",
+      "badgeText": "Rapid fulger"
     }
   ],
   "faqs": [
     {
-      "q": "Are all Excel formulas preserved?",
-      "a": "Yes, formula results are captured in the PDF snapshot."
+      "q": "Sunt păstrate toate formulele Excel?",
+      "a": "Da, rezultatele formulei sunt capturate în instantaneul PDF."
     },
     {
-      "q": "Can I convert multiple sheets?",
-      "a": "Yes, you can include all sheets or specific ones."
+      "q": "Pot converti mai multe foi?",
+      "a": "Da, puteți include toate foile sau unele specifice."
     },
     {
-      "q": "What file types are supported?",
-      "a": ".xlsx, .xls, and .csv are all supported."
+      "q": "Ce tipuri de fișiere sunt acceptate?",
+      "a": ".xlsx, .xls și .csv sunt toate acceptate."
     },
     {
-      "q": "Is this secure for financial data?",
-      "a": "Absolutely. The file never leaves your browser."
+      "q": "Este acest lucru sigur pentru datele financiare?",
+      "a": "Absolut. Fișierul nu părăsește niciodată browserul dvs."
     },
     {
-      "q": "Does it support graphs?",
-      "a": "Da, complet gratuit."
+      "q": "Suportă grafice?",
+      "a": "Diagramele și graficele încorporate sunt redate în PDF."
     }
-  ]
+  ],
+  "faqTitle": "Întrebări frecvente",
+  "supportCenter": "Centrul de suport"
 }

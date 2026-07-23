@@ -1,67 +1,78 @@
 {
-  "title": "Merge PDF - Combine Documents Offline",
-  "h1": "Merge PDF Files Instantly in Your Browser",
-  "description": "Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, perfect for users in Moscow.",
+  "title": "Объединить PDF — объединить документы в автономном режиме",
+  "h1": "Мгновенное объединение PDF-файлов в браузере",
+  "description": "Объедините несколько файлов PDF в один документ, используя чисто клиентскую WebAssembly. Никакой загрузки файлов, идеально подходит для пользователей в Нью-Йорке.",
   "sections": [
     {
       "type": "merge_hero_features",
-      "title": "Why Merge PDF Offline?",
-      "content": "Instead of uploading sensitive documents to a server, our Merge PDF tool stitches your pages together directly in your browser. Complete privacy."
+      "title": "Зачем объединять PDF-файлы в автономном режиме?",
+      "content": "Вместо загрузки конфиденциальных документов на сервер наш инструмент «Объединить PDF» объединяет ваши страницы прямо в браузере. Полная конфиденциальность."
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Merge PDF Files",
+      "title": "Как объединить PDF-файлы",
       "steps": [
         {
-          "title": "Add Documents",
-          "description": "Select the PDFs you want to merge together."
+          "title": "Добавить документы",
+          "description": "Выберите PDF-файлы, которые хотите объединить."
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop files to get the perfect sequence."
+          "title": "Изменение порядка страниц",
+          "description": "Перетаскивайте файлы, чтобы получить идеальную последовательность."
         },
         {
-          "title": "Merge & Save",
-          "description": "Click merge and download your combined document instantly."
+          "title": "Объединить и сохранить",
+          "description": "Нажмите «Объединить» и мгновенно загрузите объединенный документ."
         }
-      ]
+      ],
+      "badgeText": "Краткое руководство"
     },
     {
       "type": "merge_geo_targeting",
-      "title": "Seamless Merging for users in Moscow, RU-MOW",
-      "content": "No matter if you are in Moscow or traveling, combining documents takes zero milliseconds of upload time."
+      "title": "100% безопасная локальная обработка",
+      "content": "Все операции выполняются непосредственно на вашем локальном устройстве. Мы используем передовую технологию WebAssembly для обработки ваших документов, не загружая их на внешние серверы, обеспечивая полную конфиденциальность.",
+      "badgeText": "Локальная обработка"
     },
     {
       "type": "merge_privacy_security",
-      "title": "Enterprise-Grade Document Combining",
-      "content": "Merging contracts and invoices? Do it securely with our WASM engine. No traces left behind."
+      "title": "Объединение документов корпоративного уровня",
+      "content": "Объединение договоров и счетов-фактур? Сделайте это безопасно с помощью нашего механизма WASM. Никаких следов после себя не осталось.",
+      "badgeText": "Безопасность превыше всего"
     },
     {
       "type": "merge_performance",
-      "title": "Instant Combination",
-      "content": "Stitching PDFs locally means you can merge a 500-page document faster than you can upload it."
+      "title": "Мгновенная комбинация",
+      "content": "Локальное сшивание PDF-файлов означает, что вы можете объединить 500-страничный документ быстрее, чем загрузить его.",
+      "badgeText": "Молниеносно"
     }
   ],
   "faqs": [
     {
-      "q": "Is merging PDFs completely free?",
-      "a": "Yes! Merge as many files as you want without paying a cent."
+      "q": "Является ли объединение PDF-файлов совершенно бесплатным?",
+      "a": "Да! Объединяйте столько файлов, сколько хотите, не платя ни цента."
     },
     {
-      "q": "Are my merged files uploaded?",
-      "a": "No, all merging happens offline in your browser."
+      "q": "Загружены ли мои объединенные файлы?",
+      "a": "Нет, все слияния происходят в автономном режиме в вашем браузере."
     },
     {
-      "q": "Can I reorder the files before merging?",
-      "a": "Yes, just drag and drop the files in the preview window."
+      "q": "Могу ли я изменить порядок файлов перед объединением?",
+      "a": "Да, просто перетащите файлы в окно предварительного просмотра."
     },
     {
-      "q": "Is there a limit on how many files I can merge?",
-      "a": "No artificial limits! Merge 10 or 100 files depending on your RAM."
+      "q": "Есть ли ограничение на количество файлов, которые я могу объединить?",
+      "a": "Никаких искусственных ограничений! Объедините 10 или 100 файлов в зависимости от вашей оперативной памяти."
     },
     {
-      "q": "Does merging ruin the formatting?",
-      "a": "Not at all. The original layers and vector data are perfectly stitched together."
+      "q": "Слияние портит форматирование?",
+      "a": "Нисколько. Исходные слои и векторные данные идеально сшиты вместе."
     }
+  ],
+  "faqTitle": "Часто задаваемые вопросы",
+  "supportCenter": "Центр поддержки",
+  "badges": [
+    "Нулевая задержка сервера",
+    "Нет пропускной способности загрузки",
+    "Мгновенная обработка"
   ]
 }

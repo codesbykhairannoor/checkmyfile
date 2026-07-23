@@ -1,67 +1,85 @@
 {
-  "title": "Reverse PDF — Flip Page Order Offline",
-  "h1": "Reverse the Page Order of Any PDF Locally",
-  "description": "Flip the page sequence of PDF documents entirely in your browser. No upload, instant result. Great for users in Oslo.",
+  "title": "Omvendt PDF — Vend siderekkefølge frakoblet",
+  "h1": "Reversere siderekkefølgen til enhver PDF lokalt",
+  "description": "Vend sidesekvensen til PDF-dokumenter helt i nettleseren din. Ingen opplasting, umiddelbar resultat. 100 % sikker lokal behandling.",
+  "buttonText": "Reverse Order",
+  "badges": [
+    "Omvendt alle sider",
+    "Reparer skanninger",
+    "Ett klikk"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Reverse PDF Page Order Offline?",
-      "content": "When a scanner outputs pages in reverse, you need a quick local fix — not a cloud upload of your entire document."
+      "type": "reverse_hero_features",
+      "title": "Hvorfor reversere PDF-sidebestilling frakoblet?",
+      "content": "Når en skanner sender ut sider i revers, trenger du en rask lokal løsning – ikke en skyopplasting av hele dokumentet."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Reverse PDF Page Order",
+      "type": "reverse_how_to_steps",
+      "title": "Hvordan reversere PDF-siderekkefølge",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF with incorrect page order."
+          "title": "Åpne PDF",
+          "description": "Velg PDF-filen med feil siderekkefølge."
         },
         {
-          "title": "Confirm Reversal",
-          "description": "Preview the new first and last page."
+          "title": "Bekreft reversering",
+          "description": "Forhåndsvis den nye første og siste siden."
         },
         {
-          "title": "Download Reversed PDF",
-          "description": "Get the reordered PDF instantly."
+          "title": "Last ned omvendt PDF",
+          "description": "Få den omorganiserte PDF-en umiddelbart."
         }
-      ]
+      ],
+      "badgeText": "Hurtigguide"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Page Order Fix for Oslo Users",
-      "content": "Office users in Oslo fix scanner reversal issues instantly without cloud uploads."
+      "type": "reverse_geo_targeting",
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle operasjoner utføres direkte på din lokale enhet. Vi bruker avansert WebAssembly-teknologi for å behandle dokumentene dine uten å laste dem opp til eksterne servere, noe som sikrer fullstendig personvern.",
+      "badgeText": "Lokal behandling"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Documents Never Leave Your Device",
-      "content": "Reversed contracts, reports, and records are processed entirely in browser memory."
+      "type": "reverse_privacy_security",
+      "title": "Dokumenter forlater aldri enheten din",
+      "content": "Omvendte kontrakter, rapporter og poster behandles utelukkende i nettleserminnet.",
+      "badgeText": "Sikkerhet først"
     },
     {
-      "type": "transform_performance",
-      "title": "Reverse Any PDF in Seconds",
-      "content": "Reversing a 1000-page document takes milliseconds. All in your browser."
+      "type": "reverse_performance",
+      "title": "Reverser hvilken som helst PDF-fil på sekunder",
+      "content": "Å reversere et 1000-siders dokument tar millisekunder. Alt i nettleseren din.",
+      "badgeText": "Lynrask"
     }
   ],
   "faqs": [
     {
-      "q": "Does this reverse all pages?",
-      "a": "Yes, the full page order is flipped."
+      "q": "Reverserer dette alle sider?",
+      "a": "Ja, helsiderekkefølgen er snudd."
     },
     {
-      "q": "Can I select a range to reverse?",
-      "a": "Yes, specify start and end pages to reverse selectively."
+      "q": "Kan jeg velge et område å reversere?",
+      "a": "Ja, spesifiser start- og sluttsider for å reversere selektivt."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "No, reversal is a structural operation with no quality loss."
+      "q": "Blir kvaliteten påvirket?",
+      "a": "Nei, reversering er en strukturell operasjon uten kvalitetstap."
     },
     {
-      "q": "Can I undo?",
-      "a": "Apply reversal again to undo."
+      "q": "Kan jeg angre?",
+      "a": "Bruk reversering igjen for å angre."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, helt gratis."
+      "q": "Er dette gratis?",
+      "a": "Ja, alltid gratis."
     }
-  ]
+  ],
+  "faqTitle": "Ofte stilte spørsmål",
+  "supportCenter": "Støttesenter"
 }

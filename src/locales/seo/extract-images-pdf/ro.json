@@ -1,67 +1,85 @@
 {
-  "title": "Extract Images from PDF — Offline Extractor",
-  "h1": "Extract All Embedded Images from PDF Files",
-  "description": "Pull out every image from a PDF and download them as PNG or JPG files, all in your browser. No cloud. Ideal for users in Bucharest.",
+  "title": "Extrage imagini din PDF — Extractor offline",
+  "h1": "Extrageți toate imaginile încorporate din fișierele PDF",
+  "description": "Scoateți fiecare imagine dintr-un PDF și descărcați-le ca fișiere PNG sau JPG, toate în browser. Fără nor. Procesare locală 100% sigură.",
+  "buttonText": "Extract All Images",
+  "badges": [
+    "Fotografii produsului",
+    "Diagrame confidențiale",
+    "Vectori"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract Images Offline?",
-      "content": "PDFs with confidential diagrams or product photos should never be uploaded. Extract images directly in your browser."
+      "type": "extract_images_hero_features",
+      "title": "De ce extrageți imagini offline?",
+      "content": "PDF-urile cu diagrame confidențiale sau fotografii ale produselor nu ar trebui să fie încărcate niciodată. Extrageți imagini direct în browser."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Extract Images from PDF",
+      "type": "extract_images_how_to_steps",
+      "title": "Cum se extrage imagini din PDF",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Open the PDF containing embedded images."
+          "title": "Încărcați PDF",
+          "description": "Deschideți PDF-ul care conține imagini încorporate."
         },
         {
-          "title": "Scan for Images",
-          "description": "Our engine locates all embedded image objects."
+          "title": "Scanează pentru imagini",
+          "description": "Motorul nostru localizează toate obiectele imagine încorporate."
         },
         {
-          "title": "Download ZIP",
-          "description": "Get all extracted images in a single ZIP file."
+          "title": "Descărcați ZIP",
+          "description": "Obțineți toate imaginile extrase într-un singur fișier ZIP."
         }
-      ]
+      ],
+      "badgeText": "Ghid rapid"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Image Extraction in Bucharest",
-      "content": "Publishers and marketers in Bucharest extract product photos and diagrams from PDFs without cloud uploads."
+      "type": "extract_images_geo_targeting",
+      "title": "Procesare locală 100% sigură",
+      "content": "Toate operațiunile sunt efectuate direct pe dispozitivul local. Folosim tehnologie avansată WebAssembly pentru a vă procesa documentele fără a le încărca vreodată pe servere externe, asigurând confidențialitate completă.",
+      "badgeText": "Prelucrare locală"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Product Images Stay Confidential",
-      "content": "Unreleased product photos embedded in PDFs extracted locally without any server access."
+      "type": "extract_images_privacy_security",
+      "title": "Imaginile produsului rămân confidențiale",
+      "content": "Fotografii nelansate ale produselor încorporate în PDF-uri extrase local, fără acces la server.",
+      "badgeText": "Securitatea în primul rând"
     },
     {
-      "type": "split_performance",
-      "title": "Extract Hundreds of Images Fast",
-      "content": "Extract 500 images from a PDF in seconds. All native browser processing."
+      "type": "extract_images_performance",
+      "title": "Extrage sute de imagini rapid",
+      "content": "Extrageți 500 de imagini dintr-un PDF în câteva secunde. Toate procesarea browserului nativ.",
+      "badgeText": "Rapid fulger"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are extracted?",
-      "a": "Images are saved in their original format (PNG, JPG, etc.)."
+      "q": "Ce formate de imagine sunt extrase?",
+      "a": "Imaginile sunt salvate în formatul lor original (PNG, JPG etc.)."
     },
     {
-      "q": "Are images at full resolution?",
-      "a": "Yes, extracted at the original embedded resolution."
+      "q": "Imaginile sunt la rezoluție maximă?",
+      "a": "Da, extras la rezoluția încorporată originală."
     },
     {
-      "q": "Can I choose specific pages?",
-      "a": "Yes, specify which pages to extract images from."
+      "q": "Pot alege anumite pagini?",
+      "a": "Da, specificați din ce pagini să extrageți imaginile."
     },
     {
-      "q": "Does it extract vector graphics?",
-      "a": "Vector elements are rasterized to PNG/JPG."
+      "q": "Extrage grafica vectoriala?",
+      "a": "Elementele vectoriale sunt rasterizate în PNG/JPG."
     },
     {
-      "q": "Is this free?",
-      "a": "Da, complet gratuit."
+      "q": "Este gratuit?",
+      "a": "Da, întotdeauna gratuit."
     }
-  ]
+  ],
+  "faqTitle": "Întrebări frecvente",
+  "supportCenter": "Centrul de suport"
 }

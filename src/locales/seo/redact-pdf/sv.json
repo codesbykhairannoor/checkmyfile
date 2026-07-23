@@ -1,67 +1,85 @@
 {
-  "title": "Redact PDF — Permanently Remove Sensitive Data",
-  "h1": "Permanently Redact Sensitive Information from PDFs Offline",
-  "description": "Black out sensitive text and images in PDFs entirely in your browser. No cloud risk. Critical for users in Stockholm.",
+  "title": "Redigera PDF — Ta bort känsliga data permanent",
+  "h1": "Redigera känslig information permanent från PDF-filer offline",
+  "description": "Svarta känslig text och bilder i PDF-filer helt och hållet i din webbläsare. Ingen molnrisk. 100 % säker lokal bearbetning.",
+  "buttonText": "Redact Text",
+  "badges": [
+    "Permanent radering",
+    "Blackout Info",
+    "Säker redaktion"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "redact_hero_features",
-      "title": "Why Redact PDFs Locally?",
-      "content": "Redacting means the content is classified. Uploading a document you need to hide defeats the whole purpose. Our tool runs 100% offline."
+      "title": "Varför redigera PDF-filer lokalt?",
+      "content": "Redigering innebär att innehållet är sekretessbelagt. Att ladda upp ett dokument som du behöver dölja motverkar hela syftet. Vårt verktyg körs 100 % offline."
     },
     {
       "type": "redact_how_to_steps",
-      "title": "How to Permanently Redact a PDF",
+      "title": "Hur man redigerar en PDF permanent",
       "steps": [
         {
-          "title": "Open Sensitive Document",
-          "description": "Load the PDF with data that must be hidden."
+          "title": "Öppna känsligt dokument",
+          "description": "Ladda PDF-filen med data som måste döljas."
         },
         {
-          "title": "Mark Redaction Areas",
-          "description": "Draw boxes over content to permanently erase."
+          "title": "Markera redaktionsområden",
+          "description": "Rita rutor över innehåll för att permanent radera."
         },
         {
-          "title": "Apply & Download",
-          "description": "Content is permanently deleted from the PDF structure."
+          "title": "Ansök och ladda ner",
+          "description": "Innehållet raderas permanent från PDF-strukturen."
         }
-      ]
+      ],
+      "badgeText": "Snabbguide"
     },
     {
       "type": "redact_geo_targeting",
-      "title": "Court-Ready Redaction for Stockholm Law Firms",
-      "content": "Legal professionals in Stockholm prepare court documents with permanent, offline redaction that removes data from the PDF structure itself."
+      "title": "100 % säker lokal bearbetning",
+      "content": "Alla operationer utförs direkt på din lokala enhet. Vi använder avancerad WebAssembly-teknik för att behandla dina dokument utan att någonsin ladda upp dem till externa servrar, vilket säkerställer fullständig integritet.",
+      "badgeText": "Lokal bearbetning"
     },
     {
       "type": "redact_privacy_security",
-      "title": "True Permanent Redaction — Not Just Black Boxes",
-      "content": "Unlike tools that merely cover text with black boxes, our redaction permanently deletes the underlying data from the PDF object structure."
+      "title": "Sann permanent redaktion — inte bara svarta lådor",
+      "content": "Till skillnad från verktyg som bara täcker text med svarta rutor, raderar vår redigering permanent underliggande data från PDF-objektstrukturen.",
+      "badgeText": "Säkerhet först"
     },
     {
       "type": "redact_performance",
-      "title": "Redact Entire Documents Instantly",
-      "content": "Apply hundreds of permanent redactions to large documents in seconds, completely offline."
+      "title": "Redigera hela dokument direkt",
+      "content": "Tillämpa hundratals permanenta redigeringar på stora dokument på några sekunder, helt offline.",
+      "badgeText": "Blixtsnabb"
     }
   ],
   "faqs": [
     {
-      "q": "Is the redaction truly permanent?",
-      "a": "Yes, the underlying text and image data is permanently deleted from the PDF structure."
+      "q": "Är redigeringen verkligen permanent?",
+      "a": "Ja, underliggande text- och bilddata raderas permanent från PDF-strukturen."
     },
     {
-      "q": "Can I redact images too?",
-      "a": "Yes, both text regions and image areas can be permanently redacted."
+      "q": "Kan jag redigera bilder också?",
+      "a": "Ja, både textområden och bildområden kan redigeras permanent."
     },
     {
-      "q": "Can I choose black or white cover?",
-      "a": "Yes, pick the redaction style that suits your document."
+      "q": "Kan jag välja svart eller vitt omslag?",
+      "a": "Ja, välj den redigeringsstil som passar ditt dokument."
     },
     {
-      "q": "Does this meet legal standards?",
-      "a": "Our redaction removes data at the PDF object level, meeting court requirements."
+      "q": "Uppfyller detta juridiska standarder?",
+      "a": "Vår redigering tar bort data på PDF-objektnivå, vilket uppfyller domstolskrav."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, helt gratis."
+      "q": "Är detta gratis?",
+      "a": "Ja, alltid gratis."
     }
-  ]
+  ],
+  "faqTitle": "Vanliga frågor",
+  "supportCenter": "Supportcenter"
 }

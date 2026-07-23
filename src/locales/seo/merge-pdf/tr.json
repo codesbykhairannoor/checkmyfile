@@ -1,67 +1,78 @@
 {
-  "title": "Merge PDF - Combine Documents Offline",
-  "h1": "Merge PDF Files Instantly in Your Browser",
-  "description": "Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, perfect for users in Istanbul.",
+  "title": "PDF'yi Birleştir - Belgeleri Çevrimdışı Birleştir",
+  "h1": "PDF Dosyalarını Tarayıcınızda Anında Birleştirin",
+  "description": "Tamamen istemci tarafı WebAssembly kullanarak birden fazla PDF dosyasını tek bir belgede birleştirin. Dosya yükleme yok; New York'taki kullanıcılar için mükemmel.",
   "sections": [
     {
       "type": "merge_hero_features",
-      "title": "Why Merge PDF Offline?",
-      "content": "Instead of uploading sensitive documents to a server, our Merge PDF tool stitches your pages together directly in your browser. Complete privacy."
+      "title": "Neden PDF Çevrimdışı Birleştirilmelidir?",
+      "content": "PDF Birleştirme aracımız, hassas belgeleri bir sunucuya yüklemek yerine sayfalarınızı doğrudan tarayıcınızda birleştirir. Tam gizlilik."
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Merge PDF Files",
+      "title": "PDF Dosyaları Nasıl Birleştirilir",
       "steps": [
         {
-          "title": "Add Documents",
-          "description": "Select the PDFs you want to merge together."
+          "title": "Belge Ekle",
+          "description": "Birleştirmek istediğiniz PDF'leri seçin."
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop files to get the perfect sequence."
+          "title": "Sayfaları Yeniden Sırala",
+          "description": "Mükemmel sırayı elde etmek için dosyaları sürükleyip bırakın."
         },
         {
-          "title": "Merge & Save",
-          "description": "Click merge and download your combined document instantly."
+          "title": "Birleştir ve Kaydet",
+          "description": "Birleştir'i tıklayın ve birleştirilmiş belgenizi anında indirin."
         }
-      ]
+      ],
+      "badgeText": "Hızlı Kılavuz"
     },
     {
       "type": "merge_geo_targeting",
-      "title": "Seamless Merging for users in Istanbul, TR-34",
-      "content": "No matter if you are in Istanbul or traveling, combining documents takes zero milliseconds of upload time."
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
     },
     {
       "type": "merge_privacy_security",
-      "title": "Enterprise-Grade Document Combining",
-      "content": "Merging contracts and invoices? Do it securely with our WASM engine. No traces left behind."
+      "title": "Kurumsal Düzeyde Belge Birleştirme",
+      "content": "Sözleşmeleri ve faturaları birleştirmek mi istiyorsunuz? WASM motorumuzla bunu güvenli bir şekilde yapın. Geride hiçbir iz kalmadı.",
+      "badgeText": "Önce Güvenlik"
     },
     {
       "type": "merge_performance",
-      "title": "Instant Combination",
-      "content": "Stitching PDFs locally means you can merge a 500-page document faster than you can upload it."
+      "title": "Anında Kombinasyon",
+      "content": "PDF'leri yerel olarak birleştirmek, 500 sayfalık bir belgeyi yüklemeden daha hızlı birleştirebileceğiniz anlamına gelir.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [
     {
-      "q": "Is merging PDFs completely free?",
-      "a": "Yes! Merge as many files as you want without paying a cent."
+      "q": "PDF'leri birleştirmek tamamen ücretsiz mi?",
+      "a": "Evet! Bir kuruş ödemeden istediğiniz kadar dosyayı birleştirin."
     },
     {
-      "q": "Are my merged files uploaded?",
-      "a": "No, all merging happens offline in your browser."
+      "q": "Birleştirilen dosyalarım yüklendi mi?",
+      "a": "Hayır, tüm birleştirme işlemleri tarayıcınızda çevrimdışı olarak gerçekleşir."
     },
     {
-      "q": "Can I reorder the files before merging?",
-      "a": "Yes, just drag and drop the files in the preview window."
+      "q": "Birleştirmeden önce dosyaları yeniden sıralayabilir miyim?",
+      "a": "Evet, dosyaları önizleme penceresine sürükleyip bırakmanız yeterlidir."
     },
     {
-      "q": "Is there a limit on how many files I can merge?",
-      "a": "No artificial limits! Merge 10 or 100 files depending on your RAM."
+      "q": "Kaç dosyayı birleştirebileceğim konusunda bir sınır var mı?",
+      "a": "Yapay sınırlama yok! RAM'inize bağlı olarak 10 veya 100 dosyayı birleştirin."
     },
     {
-      "q": "Does merging ruin the formatting?",
-      "a": "Not at all. The original layers and vector data are perfectly stitched together."
+      "q": "Birleştirme biçimlendirmeyi bozar mı?",
+      "a": "Hiç de bile. Orijinal katmanlar ve vektör verileri mükemmel bir şekilde bir araya getirilmiştir."
     }
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi",
+  "badges": [
+    "Sıfır sunucu gecikmesi",
+    "Yükleme bant genişliği yok",
+    "Anında işlem"
   ]
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Excel to CSV Converter — Export Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to CSV Locally",
-  "description": "Export .xlsx files to clean .csv format entirely in your browser. No upload. Ideal for developers in Berlin.",
+  "title": "Excel-zu-CSV-Konverter – Tabellen offline exportieren",
+  "h1": "Konvertieren Sie Excel-Tabellen lokal in CSV",
+  "description": "Exportieren Sie XLSX-Dateien vollständig in Ihrem Browser in das saubere CSV-Format. Kein Upload. 100 % sichere lokale Verarbeitung.",
+  "buttonText": "Convert to CSV",
+  "badges": [
+    "Rohdaten",
+    "Datenbankimport",
+    "Schneller Export"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Export to CSV Offline?",
-      "content": "Exporting spreadsheets to CSV for data pipelines should not expose your raw data to any external API."
+      "type": "excel_csv_hero_features",
+      "title": "Warum offline in CSV exportieren?",
+      "content": "Beim Exportieren von Tabellen in CSV für Datenpipelines sollten Ihre Rohdaten keiner externen API zugänglich gemacht werden."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Excel to CSV",
+      "type": "excel_csv_how_to_steps",
+      "title": "So konvertieren Sie Excel in CSV",
       "steps": [
         {
-          "title": "Open Excel File",
-          "description": "Select the .xlsx spreadsheet."
+          "title": "Öffnen Sie die Excel-Datei",
+          "description": "Wählen Sie die XLSX-Tabelle aus."
         },
         {
-          "title": "Choose Sheet",
-          "description": "Pick which sheet to export as CSV."
+          "title": "Wählen Sie Blatt",
+          "description": "Wählen Sie aus, welches Blatt als CSV exportiert werden soll."
         },
         {
-          "title": "Download CSV",
-          "description": "Get your clean CSV file instantly."
+          "title": "CSV herunterladen",
+          "description": "Erhalten Sie sofort Ihre saubere CSV-Datei."
         }
-      ]
+      ],
+      "badgeText": "Kurzanleitung"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Developer Tools for Berlin",
-      "content": "Developers and data engineers in Berlin export spreadsheets to CSV for pipelines without cloud intermediaries."
+      "type": "excel_csv_geo_targeting",
+      "title": "100 % sichere lokale Verarbeitung",
+      "content": "Alle Vorgänge werden direkt auf Ihrem lokalen Gerät ausgeführt. Wir verwenden fortschrittliche WebAssembly-Technologie, um Ihre Dokumente zu verarbeiten, ohne sie jemals auf externe Server hochzuladen, und gewährleisten so absolute Privatsphäre.",
+      "badgeText": "Lokale Verarbeitung"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Spreadsheet Data Stays Local",
-      "content": "Financial models and business data exported to CSV without any server-side processing."
+      "type": "excel_csv_privacy_security",
+      "title": "Tabellenkalkulationsdaten bleiben lokal",
+      "content": "Finanzmodelle und Geschäftsdaten werden ohne serverseitige Verarbeitung in CSV exportiert.",
+      "badgeText": "Sicherheit geht vor"
     },
     {
-      "type": "organizer_performance",
-      "title": "Export Any Spreadsheet Instantly",
-      "content": "Export a 50,000-row Excel file to CSV in under 1 second. All in-browser."
+      "type": "excel_csv_performance",
+      "title": "Exportieren Sie jede Tabellenkalkulation sofort",
+      "content": "Exportieren Sie eine Excel-Datei mit 50.000 Zeilen in weniger als 1 Sekunde in CSV. Alles im Browser.",
+      "badgeText": "Blitzschnell"
     }
   ],
   "faqs": [
     {
-      "q": "Can I export multiple sheets?",
-      "a": "Yes, export each sheet as a separate CSV file."
+      "q": "Kann ich mehrere Blätter exportieren?",
+      "a": "Ja, exportieren Sie jedes Blatt als separate CSV-Datei."
     },
     {
-      "q": "Is Excel formatting preserved in CSV?",
-      "a": "CSV is plain text; formatting is removed but all values are preserved."
+      "q": "Bleibt die Excel-Formatierung in CSV erhalten?",
+      "a": "CSV ist reiner Text; Die Formatierung wird entfernt, aber alle Werte bleiben erhalten."
     },
     {
-      "q": "Can I choose the delimiter?",
-      "a": "Yes, choose comma, semicolon, or tab."
+      "q": "Kann ich das Trennzeichen wählen?",
+      "a": "Ja, wählen Sie Komma, Semikolon oder Tabulator."
     },
     {
-      "q": "Are formulas exported as values?",
-      "a": "Yes, formula results (not formulas) are written to the CSV."
+      "q": "Werden Formeln als Werte exportiert?",
+      "a": "Ja, Formelergebnisse (keine Formeln) werden in die CSV geschrieben."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, komplett kostenlos."
+      "q": "Ist das kostenlos?",
+      "a": "Ja, völlig kostenlos."
     }
-  ]
+  ],
+  "faqTitle": "Häufig gestellte Fragen",
+  "supportCenter": "Support-Center"
 }

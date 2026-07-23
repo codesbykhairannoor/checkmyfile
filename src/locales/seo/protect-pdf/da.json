@@ -1,67 +1,85 @@
 {
-  "title": "Password Protect PDF — Secure Files Offline",
-  "h1": "Add Password Protection to PDF Files Instantly",
-  "description": "Encrypt PDF files with AES-256 directly in your browser. Your document never leaves your device. Ideal for users in Copenhagen.",
+  "title": "Adgangskodebeskyt PDF — Sikre filer offline",
+  "h1": "Tilføj adgangskodebeskyttelse til PDF-filer med det samme",
+  "description": "Krypter PDF-filer med AES-256 direkte i din browser. Dit dokument forlader aldrig din enhed. 100 % sikker lokal behandling.",
+  "buttonText": "Protect PDF",
+  "badges": [
+    "AES-256-kryptering",
+    "Sikker adgangskode",
+    "Kun på klientsiden"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "protect_hero_features",
-      "title": "Why Protect PDFs Locally?",
-      "content": "Adding a password means the file is sensitive. Never upload sensitive files to a cloud encryptor. Ours runs entirely offline with AES-256 encryption."
+      "title": "Hvorfor beskytte PDF-filer lokalt?",
+      "content": "Tilføjelse af en adgangskode betyder, at filen er følsom. Upload aldrig følsomme filer til en cloud-kryptering. Vores kører helt offline med AES-256-kryptering."
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Password Protect a PDF",
+      "title": "Sådan beskytter du en PDF med adgangskode",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF you want to lock."
+          "title": "Åbn PDF",
+          "description": "Vælg den PDF, du vil låse."
         },
         {
-          "title": "Set Password",
-          "description": "Choose a strong password for encryption."
+          "title": "Indstil adgangskode",
+          "description": "Vælg en stærk adgangskode til kryptering."
         },
         {
-          "title": "Download Protected PDF",
-          "description": "Get your AES-256 encrypted PDF immediately."
+          "title": "Download beskyttet PDF",
+          "description": "Få din AES-256 krypteret PDF med det samme."
         }
-      ]
+      ],
+      "badgeText": "Hurtig guide"
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Vault-Level PDF Protection for Copenhagen",
-      "content": "Legal and finance professionals in Copenhagen encrypt documents with AES-256 strength without exposing files to any server."
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle handlinger udføres direkte på din lokale enhed. Vi bruger avanceret WebAssembly-teknologi til at behandle dine dokumenter uden nogensinde at uploade dem til eksterne servere, hvilket sikrer fuldstændigt privatliv.",
+      "badgeText": "Lokal behandling"
     },
     {
       "type": "protect_privacy_security",
       "title": "AES-256 Encryption — Bank-Grade, Offline",
-      "content": "Military-grade AES-256 encryption runs in your browser. No key is ever transmitted to any server."
+      "content": "Militærklasse AES-256-kryptering kører i din browser. Ingen nøgle bliver nogensinde overført til nogen server.",
+      "badgeText": "Sikkerhed først"
     },
     {
       "type": "protect_performance",
-      "title": "Encrypt Any PDF in Under 1 Second",
-      "content": "AES-256 processing locally takes milliseconds — no upload, no queue, no wait."
+      "title": "Krypter enhver PDF på under 1 sekund",
+      "content": "AES-256-behandling lokalt tager millisekunder - ingen upload, ingen kø, ingen ventetid.",
+      "badgeText": "Lynhurtigt"
     }
   ],
   "faqs": [
     {
-      "q": "What encryption standard is used?",
-      "a": "AES-256, the same standard used by banks and governments."
+      "q": "Hvilken krypteringsstandard bruges?",
+      "a": "AES-256, den samme standard, der bruges af banker og regeringer."
     },
     {
-      "q": "Can I set different owner and user passwords?",
-      "a": "Yes, you can set both separately."
+      "q": "Kan jeg indstille forskellige ejer- og brugeradgangskoder?",
+      "a": "Ja, du kan indstille begge separat."
     },
     {
-      "q": "Is the original file modified?",
-      "a": "No, a new encrypted copy is created."
+      "q": "Er den originale fil ændret?",
+      "a": "Nej, en ny krypteret kopi oprettes."
     },
     {
-      "q": "Can I restrict printing or editing?",
-      "a": "Yes, permission restrictions can be set alongside the password."
+      "q": "Kan jeg begrænse udskrivning eller redigering?",
+      "a": "Ja, tilladelsesbegrænsninger kan sættes sammen med adgangskoden."
     },
     {
-      "q": "Is this free?",
+      "q": "Er dette gratis?",
       "a": "Ja, helt gratis."
     }
-  ]
+  ],
+  "faqTitle": "Ofte stillede spørgsmål",
+  "supportCenter": "Supportcenter"
 }

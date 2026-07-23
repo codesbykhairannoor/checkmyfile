@@ -1,67 +1,85 @@
 {
-  "title": "Split PDF - Extract Pages Securely",
-  "h1": "Split and Extract PDF Pages in Seconds",
-  "description": "Extract specific pages or split a large PDF into multiple files locally in your browser. Perfect for legal professionals in New Delhi.",
+  "title": "स्प्लिट पीडीएफ - पृष्ठों को सुरक्षित रूप से निकालें",
+  "h1": "सेकंडों में पीडीएफ पेजों को विभाजित करें और निकालें",
+  "description": "विशिष्ट पेज निकालें या अपने ब्राउज़र में स्थानीय रूप से एक बड़ी पीडीएफ को कई फाइलों में विभाजित करें। तेज़ और पूरी तरह से सुरक्षित.",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Split PDFs Locally?",
-      "content": "When dealing with massive legal or corporate documents, extracting a single page shouldn't require uploading a 1GB file. Do it instantly right on your machine."
+      "title": "पीडीएफ़ को स्थानीय रूप से क्यों विभाजित करें?",
+      "content": "बड़े पैमाने पर कानूनी या कॉर्पोरेट दस्तावेज़ों से निपटते समय, एक पृष्ठ निकालने के लिए 1 जीबी फ़ाइल अपलोड करने की आवश्यकता नहीं होनी चाहिए। इसे सीधे अपनी मशीन पर तुरंत करें।"
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Extract Pages",
+      "title": "पेज कैसे निकालें",
       "steps": [
         {
-          "title": "Open Document",
-          "description": "Load the multi-page PDF you want to split."
+          "title": "दस्तावेज़ खोलें",
+          "description": "वह बहु-पृष्ठ पीडीएफ लोड करें जिसे आप विभाजित करना चाहते हैं।"
         },
         {
-          "title": "Select Ranges",
-          "description": "Pick specific page numbers or visually select pages to extract."
+          "title": "श्रेणियां चुनें",
+          "description": "विशिष्ट पृष्ठ संख्याएँ चुनें या निकालने के लिए पृष्ठों का दृश्य रूप से चयन करें।"
         },
         {
-          "title": "Export Zip",
-          "description": "Download your newly split files organized in a ZIP."
+          "title": "निर्यात ज़िप",
+          "description": "ज़िप में व्यवस्थित अपनी नई विभाजित फ़ाइलें डाउनलोड करें।"
         }
-      ]
+      ],
+      "badgeText": "त्वरित मार्गदर्शिका"
     },
     {
       "type": "split_geo_targeting",
-      "title": "The Best Splitter in New Delhi, IN-DL",
-      "content": "Whether you are studying in New Delhi or working on a tight deadline, extracting pages is now instantaneous."
+      "title": "100% सुरक्षित स्थानीय प्रसंस्करण",
+      "content": "सभी ऑपरेशन सीधे आपके स्थानीय डिवाइस पर किए जाते हैं। हम पूर्ण गोपनीयता सुनिश्चित करते हुए, आपके दस्तावेज़ों को बाहरी सर्वर पर अपलोड किए बिना संसाधित करने के लिए उन्नत WebAssembly तकनीक का उपयोग करते हैं।",
+      "badgeText": "स्थानीय प्रसंस्करण"
     },
     {
       "type": "split_privacy_security",
-      "title": "Total Page Privacy",
-      "content": "Splitting confidential employee records? Rest easy knowing our code executes purely in your local environment."
+      "title": "कुल पृष्ठ गोपनीयता",
+      "content": "गोपनीय कर्मचारी रिकॉर्ड विभाजित करना? यह जानकर निश्चिंत रहें कि हमारा कोड पूरी तरह से आपके स्थानीय वातावरण में निष्पादित होता है।",
+      "badgeText": "सुरक्षा पहले"
     },
     {
       "type": "split_performance",
-      "title": "Zero-Upload Extraction",
-      "content": "Grabbing page 14 from a 2000-page PDF takes milliseconds, skipping the excruciating upload step entirely."
+      "title": "शून्य-अपलोड निष्कर्षण",
+      "content": "2000 पेज की पीडीएफ से पेज 14 को पकड़ने में मिलीसेकेंड का समय लगता है, जिससे कष्टदायक अपलोड चरण पूरी तरह से छूट जाता है।",
+      "badgeText": "बिजली की तेजी"
     }
   ],
   "faqs": [
     {
-      "q": "How do I extract just one page?",
-      "a": "Simply click on the page thumbnail you want and hit Export."
+      "q": "मैं केवल एक पेज कैसे निकालूं?",
+      "a": "बस अपने इच्छित पृष्ठ थंबनेल पर क्लिक करें और निर्यात पर क्लिक करें।"
     },
     {
-      "q": "Can I split the PDF in half?",
-      "a": "Yes, you can specify custom page ranges like 1-10 and 11-20."
+      "q": "क्या मैं पीडीएफ को आधे में विभाजित कर सकता हूँ?",
+      "a": "हां, आप 1-10 और 11-20 जैसी कस्टम पेज श्रेणियां निर्दिष्ट कर सकते हैं।"
     },
     {
-      "q": "Will the extracted pages lose quality?",
-      "a": "No, the splitting process uses binary extraction, preserving 100% of the original quality."
+      "q": "क्या निकाले गए पन्ने गुणवत्ता खो देंगे?",
+      "a": "नहीं, विभाजन प्रक्रिया बाइनरी निष्कर्षण का उपयोग करती है, जिससे मूल गुणवत्ता 100% संरक्षित रहती है।"
     },
     {
-      "q": "Is my document uploaded when splitting?",
-      "a": "Never. The entire 2000-page document stays strictly in your browser."
+      "q": "क्या मेरा दस्तावेज़ विभाजित करते समय अपलोड किया गया है?",
+      "a": "कभी नहीं। संपूर्ण 2000 पेज का दस्तावेज़ आपके ब्राउज़र में सख्ती से रहता है।"
     },
     {
-      "q": "Is there a limit to how many pages I can split?",
-      "a": "No limits! Split as many pages as your computer can handle."
+      "q": "क्या इसकी कोई सीमा है कि मैं कितने पेज विभाजित कर सकता हूँ?",
+      "a": "असीम! उतने पेज विभाजित करें जितने आपका कंप्यूटर संभाल सके।"
     }
-  ]
+  ],
+  "badges": [
+    "त्वरित विभाजन",
+    "सटीक रेंज",
+    "असीम"
+  ],
+  "stats": [
+    "Ultra Fast",
+    "No Upload",
+    "Batch Zip",
+    "Secure"
+  ],
+  "buttonText": "Split PDF",
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न",
+  "supportCenter": "सहायता केंद्र"
 }

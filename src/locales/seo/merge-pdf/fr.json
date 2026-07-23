@@ -1,67 +1,78 @@
 {
-  "title": "Merge PDF - Combine Documents Offline",
-  "h1": "Merge PDF Files Instantly in Your Browser",
-  "description": "Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, perfect for users in Paris.",
+  "title": "Fusionner PDF - Combiner des documents hors ligne",
+  "h1": "Fusionnez des fichiers PDF instantanément dans votre navigateur",
+  "description": "Combinez plusieurs fichiers PDF en un seul document à l'aide de WebAssembly purement côté client. Aucun téléchargement de fichiers, parfait pour les utilisateurs de New York.",
   "sections": [
     {
       "type": "merge_hero_features",
-      "title": "Why Merge PDF Offline?",
-      "content": "Instead of uploading sensitive documents to a server, our Merge PDF tool stitches your pages together directly in your browser. Complete privacy."
+      "title": "Pourquoi fusionner des PDF hors ligne ?",
+      "content": "Au lieu de télécharger des documents sensibles sur un serveur, notre outil Fusionner PDF assemble vos pages directement dans votre navigateur. Intimité totale."
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Merge PDF Files",
+      "title": "Comment fusionner des fichiers PDF",
       "steps": [
         {
-          "title": "Add Documents",
-          "description": "Select the PDFs you want to merge together."
+          "title": "Ajouter des documents",
+          "description": "Sélectionnez les PDF que vous souhaitez fusionner."
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop files to get the perfect sequence."
+          "title": "Réorganiser les pages",
+          "description": "Faites glisser et déposez des fichiers pour obtenir la séquence parfaite."
         },
         {
-          "title": "Merge & Save",
-          "description": "Click merge and download your combined document instantly."
+          "title": "Fusionner et enregistrer",
+          "description": "Cliquez sur fusionner et téléchargez instantanément votre document combiné."
         }
-      ]
+      ],
+      "badgeText": "Guide rapide"
     },
     {
       "type": "merge_geo_targeting",
-      "title": "Seamless Merging for users in Paris, FR-IDF",
-      "content": "No matter if you are in Paris or traveling, combining documents takes zero milliseconds of upload time."
+      "title": "Traitement local 100 % sécurisé",
+      "content": "Toutes les opérations sont effectuées directement sur votre appareil local. Nous utilisons la technologie avancée WebAssembly pour traiter vos documents sans jamais les télécharger sur des serveurs externes, garantissant ainsi une confidentialité totale.",
+      "badgeText": "Traitement local"
     },
     {
       "type": "merge_privacy_security",
-      "title": "Enterprise-Grade Document Combining",
-      "content": "Merging contracts and invoices? Do it securely with our WASM engine. No traces left behind."
+      "title": "Combinaison de documents de niveau entreprise",
+      "content": "Fusionner des contrats et des factures ? Faites-le en toute sécurité avec notre moteur WASM. Aucune trace laissée.",
+      "badgeText": "La sécurité d'abord"
     },
     {
       "type": "merge_performance",
-      "title": "Instant Combination",
-      "content": "Stitching PDFs locally means you can merge a 500-page document faster than you can upload it."
+      "title": "Combinaison instantanée",
+      "content": "Assembler des PDF localement signifie que vous pouvez fusionner un document de 500 pages plus rapidement que vous ne pouvez le télécharger.",
+      "badgeText": "Rapide comme l'éclair"
     }
   ],
   "faqs": [
     {
-      "q": "Is merging PDFs completely free?",
-      "a": "Yes! Merge as many files as you want without paying a cent."
+      "q": "La fusion de PDF est-elle totalement gratuite ?",
+      "a": "Oui! Fusionnez autant de fichiers que vous le souhaitez sans payer un centime."
     },
     {
-      "q": "Are my merged files uploaded?",
-      "a": "No, all merging happens offline in your browser."
+      "q": "Mes fichiers fusionnés sont-ils téléchargés ?",
+      "a": "Non, toutes les fusions s'effectuent hors ligne dans votre navigateur."
     },
     {
-      "q": "Can I reorder the files before merging?",
-      "a": "Yes, just drag and drop the files in the preview window."
+      "q": "Puis-je réorganiser les fichiers avant de les fusionner ?",
+      "a": "Oui, faites simplement glisser et déposez les fichiers dans la fenêtre d'aperçu."
     },
     {
-      "q": "Is there a limit on how many files I can merge?",
-      "a": "No artificial limits! Merge 10 or 100 files depending on your RAM."
+      "q": "Y a-t-il une limite au nombre de fichiers que je peux fusionner ?",
+      "a": "Aucune limite artificielle ! Fusionnez 10 ou 100 fichiers en fonction de votre RAM."
     },
     {
-      "q": "Does merging ruin the formatting?",
-      "a": "Not at all. The original layers and vector data are perfectly stitched together."
+      "q": "La fusion ruine-t-elle le formatage ?",
+      "a": "Pas du tout. Les calques originaux et les données vectorielles sont parfaitement assemblés."
     }
+  ],
+  "faqTitle": "Foire aux questions",
+  "supportCenter": "Centre d'assistance",
+  "badges": [
+    "Zéro latence du serveur",
+    "Pas de bande passante de téléchargement",
+    "Traitement instantané"
   ]
 }

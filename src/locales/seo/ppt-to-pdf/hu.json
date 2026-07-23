@@ -1,67 +1,85 @@
 {
-  "title": "PowerPoint to PDF Converter — Offline & Free",
-  "h1": "Convert PowerPoint Presentations to PDF Instantly",
-  "description": "Convert .pptx presentations to high-quality PDFs directly in your browser. No cloud needed. Perfect for presenters in Budapest.",
+  "title": "PowerPoint PDF konvertáló – offline és ingyenes",
+  "h1": "A PowerPoint-prezentációk azonnali konvertálása PDF-formátumba",
+  "description": "Konvertálja a .pptx prezentációkat kiváló minőségű PDF-fájlokká közvetlenül a böngészőben. Nincs szükség felhőre. 100%-ban biztonságos helyi feldolgozás.",
+  "buttonText": "Convert Slides",
+  "badges": [
+    "Igazgatósági ülések",
+    "Pitch Decks",
+    "Kiadatlan termékek"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Presentations Offline?",
-      "content": "Your slides may contain unreleased products or confidential strategies. Convert without risking data exposure."
+      "type": "ppt_hero_features",
+      "title": "Miért konvertálhat offline prezentációkat?",
+      "content": "Diái kiadatlan termékeket vagy bizalmas stratégiákat tartalmazhatnak. Konvertálja anélkül, hogy kockáztatná az adatlehetőséget."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert PowerPoint to PDF",
+      "type": "ppt_how_to_steps",
+      "title": "A PowerPoint konvertálása PDF-be",
       "steps": [
         {
-          "title": "Load Presentation",
-          "description": "Select your .pptx file from your device."
+          "title": "Betöltési bemutató",
+          "description": "Válassza ki a .pptx fájlt az eszközről."
         },
         {
-          "title": "Select Slide Range",
-          "description": "Include all slides or specific ones."
+          "title": "Diatartomány kiválasztása",
+          "description": "Tartalmazza az összes diát vagy bizonyos diákat."
         },
         {
-          "title": "Download PDF",
-          "description": "Get your PDF with all formatting preserved."
+          "title": "PDF letöltése",
+          "description": "Töltse le PDF-jét az összes formázással."
         }
-      ]
+      ],
+      "badgeText": "Gyors útmutató"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Presentation Conversion in Budapest",
-      "content": "Presenters in Budapest trust us to convert slide decks without leaking unreleased content to cloud servers."
+      "type": "ppt_geo_targeting",
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Minden művelet közvetlenül a helyi eszközön történik. Fejlett WebAssembly technológiát használunk a dokumentumok feldolgozásához anélkül, hogy azokat külső szerverekre feltöltenénk, így biztosítva a teljes adatvédelmet.",
+      "badgeText": "Helyi feldolgozás"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Confidential Slides Stay Confidential",
-      "content": "Pre-launch product decks? Board presentations? Converted 100% locally without network access."
+      "type": "ppt_privacy_security",
+      "title": "Bizalmas diák Maradjon bizalmas",
+      "content": "Bevezetés előtti termékcsomagok? Testületi előadások? 100%-ban helyileg konvertálva hálózati hozzáférés nélkül.",
+      "badgeText": "Első a biztonság"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Slide Export",
-      "content": "Convert 100-slide decks in seconds. No queue, no waiting, no upload bandwidth wasted."
+      "type": "ppt_performance",
+      "title": "Azonnali diaexportálás",
+      "content": "Másodpercek alatt konvertálhat 100 diaból álló paklit. Nincs sorban állás, nincs várakozás, nincs pazarolt feltöltési sávszélesség.",
+      "badgeText": "Villámgyors"
     }
   ],
   "faqs": [
     {
-      "q": "Are slide animations preserved?",
-      "a": "Animations are flattened into static PDF frames."
+      "q": "Megőrzik a diaanimációkat?",
+      "a": "Az animációk statikus PDF-keretekre vannak lapítva."
     },
     {
-      "q": "What resolution is the output?",
-      "a": "High-resolution rendering at 150 DPI by default."
+      "q": "Milyen felbontású a kimenet?",
+      "a": "Alapértelmezés szerint nagy felbontású renderelés 150 DPI-vel."
     },
     {
-      "q": "Can I convert selected slides only?",
-      "a": "Yes, specify slide ranges like 1-10 or 5,8,12."
+      "q": "Csak a kiválasztott diákat konvertálhatom?",
+      "a": "Igen, adjon meg diatartományokat, például 1-10 vagy 5,8,12."
     },
     {
-      "q": "Is .ppt (old format) supported?",
-      "a": "Yes, both .ppt and .pptx are supported."
+      "q": "A .ppt (régi formátum) támogatott?",
+      "a": "Igen, a .ppt és a .pptx is támogatott."
     },
     {
-      "q": "Is this free to use?",
-      "a": "Igen, teljesen ingyenes."
+      "q": "Ez ingyenesen használható?",
+      "a": "Igen, teljesen ingyenes, vízjel nélkül."
     }
-  ]
+  ],
+  "faqTitle": "Gyakran Ismételt Kérdések",
+  "supportCenter": "Támogatási Központ"
 }

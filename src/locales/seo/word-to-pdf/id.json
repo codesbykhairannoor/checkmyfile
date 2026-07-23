@@ -1,67 +1,80 @@
 {
-  "title": "Word to PDF Converter — No Upload Required",
-  "h1": "Convert Word Documents to PDF Instantly",
-  "description": "Transform .docx files into perfect PDFs directly in your browser. Zero upload, 100% private. Ideal for users in Jakarta.",
+  "title": "Konverter Word ke PDF — Tidak Perlu Unggah",
+  "h1": "Konversi Dokumen Word ke PDF Secara Instan",
+  "description": "Ubah file .docx menjadi PDF sempurna langsung di browser Anda. Nol unggahan, 100% pribadi. Ideal untuk pengguna di Jakarta.",
+  "buttonText": "Konversi Dokumen",
+  "badges": [
+    "Kontrak Kerja",
+    "Ringkasan Hukum",
+    "Resume & CV"
+  ],
+  "stats": [
+    "100%",
+    "Lokal",
+    "0 detik",
+    "Waktu Tunggu"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Word to PDF Offline?",
-      "content": "Your Word document contains sensitive data. Our converter runs entirely in WebAssembly — your file never touches a server."
+      "type": "word_hero_features",
+      "title": "Mengapa Menggunakan Offline?",
+      "content": "Dokumen Word Anda berisi data sensitif. Konverter kami berjalan sepenuhnya di WebAssembly — file Anda tidak pernah menyentuh server."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Word to PDF",
+      "type": "word_how_to_steps",
+      "title": "Cara Menggunakan",
       "steps": [
         {
-          "title": "Select .docx File",
-          "description": "Pick your Word document from your computer."
+          "title": "Pilih File .docx",
+          "description": "Pilih dokumen Word Anda dari komputer Anda."
         },
         {
-          "title": "Preview Output",
-          "description": "See the PDF rendering before finalizing."
+          "title": "Pratinjau Keluaran",
+          "description": "Lihat rendering PDF sebelum menyelesaikan."
         },
         {
-          "title": "Download PDF",
-          "description": "Save your perfectly converted PDF instantly."
+          "title": "Unduh PDF",
+          "description": "Simpan PDF Anda yang telah dikonversi sempurna secara instan."
         }
       ]
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Word to PDF for Jakarta Users",
-      "content": "Used by professionals in Jakarta who need to share documents without losing formatting."
+      "type": "word_geo_targeting",
+      "title": "Word ke PDF untuk Pengguna Jakarta",
+      "content": "Digunakan oleh para profesional di Jakarta yang perlu berbagi dokumen tanpa kehilangan format."
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Your Contracts Stay Private",
-      "content": "Converting employment contracts? Legal briefs? Our WASM processor never phones home."
+      "type": "word_privacy_security",
+      "title": "Kontrak Anda Tetap Pribadi",
+      "content": "Mengubah kontrak kerja? Laporan hukum? Prosesor WASM kami tidak pernah menelepon ke rumah."
     },
     {
-      "type": "combiner_performance",
-      "title": "No More Conversion Queues",
-      "content": "Cloud converters put you in a queue. Ours converts in under 2 seconds, entirely offline."
+      "type": "word_performance",
+      "title": "Tidak Ada Lagi Antrean Konversi",
+      "content": "Konverter cloud menempatkan Anda dalam antrean. Konversi kami dalam waktu kurang dari 2 detik, sepenuhnya offline."
     }
   ],
   "faqs": [
     {
-      "q": "Does it preserve Word formatting?",
-      "a": "Yes, fonts, tables, and images are preserved using our WASM renderer."
+      "q": "Apakah itu mempertahankan format Word?",
+      "a": "Ya, font, tabel, dan gambar disimpan menggunakan penyaji WASM kami."
     },
     {
-      "q": "What Word versions are supported?",
-      "a": "All modern .docx files are supported."
+      "q": "Versi Word apa yang didukung?",
+      "a": "Semua file .docx modern didukung."
     },
     {
-      "q": "Is there a file size limit?",
-      "a": "No server limits! Only your device RAM is the constraint."
+      "q": "Apakah ada batasan ukuran file?",
+      "a": "Tidak ada batasan server! Hanya RAM perangkat Anda yang menjadi kendala."
     },
     {
-      "q": "Can I batch convert multiple files?",
-      "a": "Yes, select multiple .docx files at once."
+      "q": "Bisakah saya mengonversi banyak file secara batch?",
+      "a": "Ya, pilih beberapa file .docx sekaligus."
     },
     {
-      "q": "Is this free?",
+      "q": "Apakah ini gratis?",
       "a": "Ya, sepenuhnya gratis."
     }
-  ]
+  ],
+  "faqTitle": "Pertanyaan yang Sering Diajukan"
 }

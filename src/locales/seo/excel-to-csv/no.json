@@ -1,67 +1,85 @@
 {
-  "title": "Excel to CSV Converter — Export Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to CSV Locally",
-  "description": "Export .xlsx files to clean .csv format entirely in your browser. No upload. Ideal for developers in Oslo.",
+  "title": "Excel til CSV-konvertering — Eksporter regneark frakoblet",
+  "h1": "Konverter Excel-regneark til CSV lokalt",
+  "description": "Eksporter .xlsx-filer til rent .csv-format helt i nettleseren din. Ingen opplasting. 100 % sikker lokal behandling.",
+  "buttonText": "Convert to CSV",
+  "badges": [
+    "Rådata",
+    "Databaseimport",
+    "Rask eksport"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Export to CSV Offline?",
-      "content": "Exporting spreadsheets to CSV for data pipelines should not expose your raw data to any external API."
+      "type": "excel_csv_hero_features",
+      "title": "Hvorfor eksportere til CSV frakoblet?",
+      "content": "Eksport av regneark til CSV for datapipelines bør ikke eksponere rådataene dine for noen ekstern API."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Excel to CSV",
+      "type": "excel_csv_how_to_steps",
+      "title": "Hvordan konvertere Excel til CSV",
       "steps": [
         {
-          "title": "Open Excel File",
-          "description": "Select the .xlsx spreadsheet."
+          "title": "Åpne Excel-fil",
+          "description": "Velg .xlsx-regnearket."
         },
         {
-          "title": "Choose Sheet",
-          "description": "Pick which sheet to export as CSV."
+          "title": "Velg Ark",
+          "description": "Velg hvilket ark du vil eksportere som CSV."
         },
         {
-          "title": "Download CSV",
-          "description": "Get your clean CSV file instantly."
+          "title": "Last ned CSV",
+          "description": "Få den rene CSV-filen din umiddelbart."
         }
-      ]
+      ],
+      "badgeText": "Hurtigguide"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Developer Tools for Oslo",
-      "content": "Developers and data engineers in Oslo export spreadsheets to CSV for pipelines without cloud intermediaries."
+      "type": "excel_csv_geo_targeting",
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle operasjoner utføres direkte på din lokale enhet. Vi bruker avansert WebAssembly-teknologi for å behandle dokumentene dine uten å laste dem opp til eksterne servere, noe som sikrer fullstendig personvern.",
+      "badgeText": "Lokal behandling"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Spreadsheet Data Stays Local",
-      "content": "Financial models and business data exported to CSV without any server-side processing."
+      "type": "excel_csv_privacy_security",
+      "title": "Regnearkdata forblir lokale",
+      "content": "Økonomiske modeller og forretningsdata eksporteres til CSV uten noen behandling på serversiden.",
+      "badgeText": "Sikkerhet først"
     },
     {
-      "type": "organizer_performance",
-      "title": "Export Any Spreadsheet Instantly",
-      "content": "Export a 50,000-row Excel file to CSV in under 1 second. All in-browser."
+      "type": "excel_csv_performance",
+      "title": "Eksporter et hvilket som helst regneark umiddelbart",
+      "content": "Eksporter en Excel-fil med 50 000 rader til CSV på under 1 sekund. Alt i nettleseren.",
+      "badgeText": "Lynrask"
     }
   ],
   "faqs": [
     {
-      "q": "Can I export multiple sheets?",
-      "a": "Yes, export each sheet as a separate CSV file."
+      "q": "Kan jeg eksportere flere ark?",
+      "a": "Ja, eksporter hvert ark som en separat CSV-fil."
     },
     {
-      "q": "Is Excel formatting preserved in CSV?",
-      "a": "CSV is plain text; formatting is removed but all values are preserved."
+      "q": "Er Excel-formatering bevart i CSV?",
+      "a": "CSV er ren tekst; formatering fjernes, men alle verdier er bevart."
     },
     {
-      "q": "Can I choose the delimiter?",
-      "a": "Yes, choose comma, semicolon, or tab."
+      "q": "Kan jeg velge skilletegn?",
+      "a": "Ja, velg komma, semikolon eller tabulator."
     },
     {
-      "q": "Are formulas exported as values?",
-      "a": "Yes, formula results (not formulas) are written to the CSV."
+      "q": "Blir formler eksportert som verdier?",
+      "a": "Ja, formelresultater (ikke formler) skrives til CSV-en."
     },
     {
-      "q": "Is this free?",
+      "q": "Er dette gratis?",
       "a": "Ja, helt gratis."
     }
-  ]
+  ],
+  "faqTitle": "Ofte stilte spørsmål",
+  "supportCenter": "Støttesenter"
 }

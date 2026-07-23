@@ -1,67 +1,80 @@
 {
-  "title": "PDF to PowerPoint — Recover Editable Slides",
-  "h1": "Convert PDF to PowerPoint Presentation Offline",
-  "description": "Transform PDF documents back into editable .pptx presentations locally. No cloud needed. Perfect for users in Seoul.",
+  "title": "PDF를 PowerPoint로 — 편집 가능한 슬라이드 복구",
+  "h1": "PDF를 PowerPoint 프레젠테이션 오프라인으로 변환",
+  "description": "PDF 문서를 로컬에서 편집 가능한 .pptx 프레젠테이션으로 다시 변환합니다. 클라우드가 필요하지 않습니다. 서울 사용자에게 적합합니다.",
+  "buttonText": "PPT로 변환",
+  "badges": [
+    "편집 가능한 슬라이드",
+    "프레젠테이션 복구",
+    "빠른 변환"
+  ],
+  "stats": [
+    "100%",
+    "현지의",
+    "0초",
+    "대기 시간"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF to PowerPoint Offline?",
-      "content": "Recovering slide content from a PDF for editing should not require uploading sensitive decks to a cloud service."
+      "title": "오프라인 사용의 이유",
+      "content": "편집을 위해 PDF에서 슬라이드 콘텐츠를 복구할 때 민감한 데크를 클라우드 서비스에 업로드할 필요가 없습니다."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to PowerPoint",
+      "title": "사용 방법",
       "steps": [
         {
-          "title": "Upload PDF",
-          "description": "Select the PDF containing your slide content."
+          "title": "PDF 업로드",
+          "description": "슬라이드 콘텐츠가 포함된 PDF를 선택합니다."
         },
         {
-          "title": "Map Pages to Slides",
-          "description": "Each PDF page becomes one editable slide."
+          "title": "페이지를 슬라이드에 매핑",
+          "description": "각 PDF 페이지는 편집 가능한 하나의 슬라이드가 됩니다."
         },
         {
-          "title": "Download .pptx",
-          "description": "Get your fully editable PowerPoint presentation."
+          "title": ".pptx 다운로드",
+          "description": "완전히 편집 가능한 PowerPoint 프레젠테이션을 받으세요."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "Slide Recovery in Seoul",
-      "content": "Presenters in Seoul use our tool to recover and re-edit presentations from old PDF archives."
+      "title": "서울의 슬라이드 복구",
+      "content": "서울의 발표자들은 우리 도구를 사용하여 오래된 PDF 아카이브에서 프레젠테이션을 복구하고 다시 편집합니다."
     },
     {
       "type": "split_privacy_security",
-      "title": "Your Slides Are Never Exposed",
-      "content": "Confidential slide decks recovered and converted without any server interaction."
+      "title": "귀하의 슬라이드는 절대 노출되지 않습니다",
+      "content": "기밀 슬라이드 데크는 서버 상호 작용 없이 복구 및 변환되었습니다."
     },
     {
       "type": "split_performance",
-      "title": "Convert Slides at Lightning Speed",
-      "content": "A 60-slide PDF converted to PowerPoint in under 10 seconds with zero upload time."
+      "title": "번개같은 속도로 슬라이드 변환",
+      "content": "60개 슬라이드 PDF가 업로드 시간 없이 10초 이내에 PowerPoint로 변환됩니다."
     }
   ],
   "faqs": [
     {
-      "q": "Are slide layouts preserved?",
-      "a": "Content is mapped to slides; some layout adjustments may be needed."
+      "q": "슬라이드 레이아웃이 유지되나요?",
+      "a": "콘텐츠가 슬라이드에 매핑됩니다. 일부 레이아웃 조정이 필요할 수 있습니다."
     },
     {
-      "q": "Can I edit the slides after?",
-      "a": "Yes, the .pptx file is fully editable in PowerPoint or Google Slides."
+      "q": "나중에 슬라이드를 편집할 수 있나요?",
+      "a": "예, .pptx 파일은 PowerPoint 또는 Google Slides에서 완전히 편집 가능합니다."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No, convert as many pages as your RAM allows."
+      "q": "페이지 제한이 있나요?",
+      "a": "아니요, RAM이 허용하는 한 많은 페이지를 변환합니다."
     },
     {
-      "q": "Does it work with image-heavy PDFs?",
-      "a": "Yes, images are embedded in each slide."
+      "q": "이미지가 많은 PDF에서도 작동합니까?",
+      "a": "예, 각 슬라이드에는 이미지가 포함되어 있습니다."
     },
     {
-      "q": "Is this free?",
-      "a": "예, 완전 무료입니다."
+      "q": "이거 무료인가요?",
+      "a": "네, 완전 무료입니다."
     }
-  ]
+  ],
+  "faqTitle": "자주 묻는 질문"
 }

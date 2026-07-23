@@ -1,0 +1,85 @@
+{
+  "title": "Upravit PDF – Free Offline PDF Editor",
+  "h1": "Úprava dokumentů PDF přímo ve vašem prohlížeči",
+  "description": "Přidejte text, podpisy a anotace do souborů PDF lokálně. Žádné nahrávání, maximální soukromí. 100% bezpečné místní zpracování.",
+  "sections": [
+    {
+      "type": "edit_hero_features",
+      "title": "Proč upravovat soubory PDF lokálně?",
+      "content": "Nahrávání citlivých smluv a formulářů do cloudového editoru představuje obrovské riziko pro soukromí. Náš editor WebAssembly běží přímo na vašem zařízení a zajišťuje, že vaše dokumenty nikdy neopustí váš počítač."
+    },
+    {
+      "type": "edit_how_to_steps",
+      "title": "Jak upravit PDF",
+      "steps": [
+        {
+          "title": "Otevřít dokument",
+          "description": "Vyberte soubor PDF, který chcete anotovat nebo podepsat."
+        },
+        {
+          "title": "Přidat text a prvky",
+          "description": "Použijte naše intuitivní nástroje k přidání textu, kreslení nebo umístění obrázků."
+        },
+        {
+          "title": "Uložit změny",
+          "description": "Okamžitě exportujte upravené PDF bez čekání na stažení."
+        }
+      ],
+      "badgeText": "Rychlý průvodce"
+    },
+    {
+      "type": "edit_geo_targeting",
+      "title": "100% bezpečné místní zpracování",
+      "content": "Všechny operace se provádějí přímo na vašem místním zařízení. Ke zpracování vašich dokumentů používáme pokročilou technologii WebAssembly, aniž bychom je kdy nahrávali na externí servery, což zajišťuje naprosté soukromí.",
+      "badgeText": "Místní zpracování"
+    },
+    {
+      "type": "edit_privacy_security",
+      "title": "Nulový přenos dat",
+      "content": "Na rozdíl od tradičních editorů PDF, které nahrávají vaše soubory na své servery, naše platforma zpracovává vše v paměti vašeho prohlížeče.",
+      "badgeText": "Bezpečnost především"
+    },
+    {
+      "type": "edit_performance",
+      "title": "Okamžité vykreslování offline",
+      "content": "Náš editor načte obrovské soubory PDF během milisekund. Můžete přidat stovky anotací bez jakéhokoli zpoždění nebo zpoždění sítě.",
+      "badgeText": "Bleskově rychlý"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Mohu upravit stávající text v PDF?",
+      "a": "V současné době můžete do stávajícího dokumentu přidávat nový text, tvary a obrázky."
+    },
+    {
+      "q": "Jsou moje soubory někde nahrané?",
+      "a": "Ne, všechny úpravy probíhají lokálně ve vašem prohlížeči pomocí WebAssembly."
+    },
+    {
+      "q": "Mohu podepsat dokumenty?",
+      "a": "Ano, můžete nakreslit svůj podpis nebo nahrát jeho obrázek."
+    },
+    {
+      "q": "Je editor zdarma k použití?",
+      "a": "Ano, je 100% zdarma bez prémiových paywallů nebo skrytých poplatků."
+    },
+    {
+      "q": "Funguje to na mobilních zařízeních?",
+      "a": "Ano, editor je plně responzivní a podporuje dotykové zadávání pro kreslení."
+    }
+  ],
+  "badges": [
+    "Žádné vodoznaky",
+    "100% zdarma",
+    "Offline editor"
+  ],
+  "stats": [
+    "100% Private",
+    "0 Server Uploads",
+    "Client-Side Only",
+    "No Accounts"
+  ],
+  "buttonText": "Start Editing",
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
+}

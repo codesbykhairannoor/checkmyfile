@@ -1,0 +1,85 @@
+{
+  "title": "Edit PDF - Editor PDF Luar Talian Percuma",
+  "h1": "Edit Dokumen PDF Terus dalam Penyemak Imbas Anda",
+  "description": "Tambahkan teks, tandatangan dan anotasi pada fail PDF anda secara setempat. Tiada muat naik, privasi maksimum. 100% pemprosesan tempatan selamat.",
+  "sections": [
+    {
+      "type": "edit_hero_features",
+      "title": "Mengapa Edit PDF Secara Tempatan?",
+      "content": "Memuat naik kontrak dan borang sensitif kepada editor awan adalah risiko privasi yang besar. Editor WebAssembly kami berjalan terus pada peranti anda, memastikan dokumen anda tidak pernah meninggalkan komputer anda."
+    },
+    {
+      "type": "edit_how_to_steps",
+      "title": "Cara Mengedit PDF",
+      "steps": [
+        {
+          "title": "Buka Dokumen",
+          "description": "Pilih fail PDF yang anda ingin beri anotasi atau tandatangani."
+        },
+        {
+          "title": "Tambah Teks & Unsur",
+          "description": "Gunakan alatan intuitif kami untuk menambah teks, melukis atau meletakkan imej."
+        },
+        {
+          "title": "Simpan Perubahan",
+          "description": "Eksport PDF yang diubah suai serta-merta tanpa menunggu muat turun."
+        }
+      ],
+      "badgeText": "Panduan Pantas"
+    },
+    {
+      "type": "edit_geo_targeting",
+      "title": "100% Pemprosesan Tempatan Selamat",
+      "content": "Semua operasi dilakukan terus pada peranti tempatan anda. Kami menggunakan teknologi WebAssembly termaju untuk memproses dokumen anda tanpa pernah memuat naiknya ke pelayan luaran, memastikan privasi lengkap.",
+      "badgeText": "Pemprosesan Setempat"
+    },
+    {
+      "type": "edit_privacy_security",
+      "title": "Penghantaran Data Sifar",
+      "content": "Tidak seperti editor PDF tradisional yang memuat naik fail anda ke pelayan mereka, platform kami memproses segala-galanya dalam memori penyemak imbas anda.",
+      "badgeText": "Keselamatan Diutamakan"
+    },
+    {
+      "type": "edit_performance",
+      "title": "Rendering Luar Talian Segera",
+      "content": "Editor kami memuatkan fail PDF yang besar dalam milisaat. Anda boleh menambah ratusan anotasi tanpa sebarang kelewatan atau kelewatan rangkaian.",
+      "badgeText": "Sepantas Kilat"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Bolehkah saya mengedit teks sedia ada dalam PDF?",
+      "a": "Pada masa ini, anda boleh menambah teks, bentuk dan imej baharu ke atas dokumen sedia ada."
+    },
+    {
+      "q": "Adakah fail saya dimuat naik di mana-mana sahaja?",
+      "a": "Tidak, semua pengeditan berlaku secara setempat dalam penyemak imbas anda menggunakan WebAssembly."
+    },
+    {
+      "q": "Bolehkah saya menandatangani dokumen?",
+      "a": "Ya, anda boleh melukis tandatangan anda atau memuat naik imejnya."
+    },
+    {
+      "q": "Adakah editor percuma untuk digunakan?",
+      "a": "Ya, ia 100% percuma tanpa paywall premium atau yuran tersembunyi."
+    },
+    {
+      "q": "Adakah ia berfungsi pada peranti mudah alih?",
+      "a": "Ya, editor responsif sepenuhnya dan menyokong input sentuhan untuk lukisan."
+    }
+  ],
+  "badges": [
+    "Tiada Tera Air",
+    "100% Percuma",
+    "Editor Luar Talian"
+  ],
+  "stats": [
+    "100% Private",
+    "0 Server Uploads",
+    "Client-Side Only",
+    "No Accounts"
+  ],
+  "buttonText": "Start Editing",
+  "faqTitle": "Soalan Lazim",
+  "supportCenter": "Pusat Sokongan"
+}

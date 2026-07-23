@@ -1,67 +1,85 @@
 {
-  "title": "Password Protect PDF — Secure Files Offline",
-  "h1": "Add Password Protection to PDF Files Instantly",
-  "description": "Encrypt PDF files with AES-256 directly in your browser. Your document never leaves your device. Ideal for users in Kyiv.",
+  "title": "Захист PDF паролем — захист файлів у режимі офлайн",
+  "h1": "Миттєво додайте захист паролем до PDF-файлів",
+  "description": "Шифруйте файли PDF за допомогою AES-256 безпосередньо у вашому браузері. Ваш документ ніколи не покидає ваш пристрій. 100% безпечна локальна обробка.",
+  "buttonText": "Protect PDF",
+  "badges": [
+    "Шифрування AES-256",
+    "Безпечний пароль",
+    "Лише на стороні клієнта"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "protect_hero_features",
-      "title": "Why Protect PDFs Locally?",
-      "content": "Adding a password means the file is sensitive. Never upload sensitive files to a cloud encryptor. Ours runs entirely offline with AES-256 encryption."
+      "title": "Навіщо захищати PDF-файли локально?",
+      "content": "Додавання пароля означає, що файл конфіденційний. Ніколи не завантажуйте конфіденційні файли в хмарний шифратор. Наш працює повністю в автономному режимі з шифруванням AES-256."
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Password Protect a PDF",
+      "title": "Як захистити PDF паролем",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF you want to lock."
+          "title": "Відкрити PDF",
+          "description": "Виберіть PDF-файл, який потрібно заблокувати."
         },
         {
-          "title": "Set Password",
-          "description": "Choose a strong password for encryption."
+          "title": "Встановити пароль",
+          "description": "Виберіть надійний пароль для шифрування."
         },
         {
-          "title": "Download Protected PDF",
-          "description": "Get your AES-256 encrypted PDF immediately."
+          "title": "Завантажити захищений PDF",
+          "description": "Негайно отримайте PDF-файл із шифруванням AES-256."
         }
-      ]
+      ],
+      "badgeText": "Короткий посібник"
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Vault-Level PDF Protection for Kyiv",
-      "content": "Legal and finance professionals in Kyiv encrypt documents with AES-256 strength without exposing files to any server."
+      "title": "100% безпечна локальна обробка",
+      "content": "Усі операції виконуються безпосередньо на локальному пристрої. Ми використовуємо передову технологію WebAssembly для обробки ваших документів, не завантажуючи їх на зовнішні сервери, забезпечуючи повну конфіденційність.",
+      "badgeText": "Локальна обробка"
     },
     {
       "type": "protect_privacy_security",
-      "title": "AES-256 Encryption — Bank-Grade, Offline",
-      "content": "Military-grade AES-256 encryption runs in your browser. No key is ever transmitted to any server."
+      "title": "Шифрування AES-256 — банківського рівня, офлайн",
+      "content": "У вашому браузері працює шифрування AES-256 військового рівня. Жоден ключ ніколи не передається на будь-який сервер.",
+      "badgeText": "Безпека перш за все"
     },
     {
       "type": "protect_performance",
-      "title": "Encrypt Any PDF in Under 1 Second",
-      "content": "AES-256 processing locally takes milliseconds — no upload, no queue, no wait."
+      "title": "Зашифруйте будь-який PDF менш ніж за 1 секунду",
+      "content": "Локальна обробка AES-256 займає мілісекунди — без завантаження, без черги, без очікування.",
+      "badgeText": "Блискавичний"
     }
   ],
   "faqs": [
     {
-      "q": "What encryption standard is used?",
-      "a": "AES-256, the same standard used by banks and governments."
+      "q": "Який стандарт шифрування використовується?",
+      "a": "AES-256, той самий стандарт, який використовують банки та уряди."
     },
     {
-      "q": "Can I set different owner and user passwords?",
-      "a": "Yes, you can set both separately."
+      "q": "Чи можу я встановити різні паролі власника та користувача?",
+      "a": "Так, ви можете встановити обидва окремо."
     },
     {
-      "q": "Is the original file modified?",
-      "a": "No, a new encrypted copy is created."
+      "q": "Чи змінено вихідний файл?",
+      "a": "Ні, створюється нова зашифрована копія."
     },
     {
-      "q": "Can I restrict printing or editing?",
-      "a": "Yes, permission restrictions can be set alongside the password."
+      "q": "Чи можу я обмежити друк або редагування?",
+      "a": "Так, поруч із паролем можна встановити обмеження дозволу."
     },
     {
-      "q": "Is this free?",
-      "a": "Так, повністю безкоштовно."
+      "q": "Це безкоштовно?",
+      "a": "Так, абсолютно безкоштовно."
     }
-  ]
+  ],
+  "faqTitle": "Часті запитання",
+  "supportCenter": "Центр підтримки"
 }

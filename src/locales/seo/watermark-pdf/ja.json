@@ -1,67 +1,85 @@
 {
-  "title": "Add Watermark to PDF — Offline Watermarking",
-  "h1": "Stamp PDFs with Text or Image Watermarks Locally",
-  "description": "Add \"CONFIDENTIAL\", logos, or custom text watermarks to PDFs entirely in your browser. No upload. Best for users in Tokyo.",
+  "title": "PDF に透かしを追加 — オフライン透かし",
+  "h1": "PDF にテキストまたは画像の透かしをローカルでスタンプする",
+  "description": "「機密」、ロゴ、またはカスタム テキストの透かしをブラウザ内で PDF に完全に追加します。 アップロードはありません。 100% 安全なローカル処理。",
+  "buttonText": "Add Watermark",
+  "badges": [
+    "カスタムテキスト",
+    "調整可能な不透明度",
+    "ブランド保護"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Watermark PDFs Offline?",
-      "content": "Adding watermarks means your document is sensitive. Never upload draft contracts or confidential reports to a cloud watermarker."
+      "type": "watermark_hero_features",
+      "title": "オフラインで PDF に透かしを入れる理由",
+      "content": "透かしを追加するということは、文書が機密であることを意味します。 契約書草案や機密報告書をクラウドウォーターマーカーにアップロードしないでください。"
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Watermark a PDF",
+      "type": "watermark_how_to_steps",
+      "title": "PDF に透かしを入れる方法",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to watermark."
+          "title": "PDF を開く",
+          "description": "透かしを入れる PDF を選択します。"
         },
         {
-          "title": "Design Watermark",
-          "description": "Type text or upload a logo image."
+          "title": "デザイン透かし",
+          "description": "テキストを入力するか、ロゴ画像をアップロードします。"
         },
         {
-          "title": "Apply & Download",
-          "description": "Get your watermarked PDF in one click."
+          "title": "申し込みとダウンロード",
+          "description": "ワンクリックで透かし入りの PDF を入手できます。"
         }
-      ]
+      ],
+      "badgeText": "クイックガイド"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Document Watermarking in Tokyo",
-      "content": "Legal and creative professionals in Tokyo stamp documents with watermarks without cloud uploads."
+      "type": "watermark_geo_targeting",
+      "title": "100% 安全なローカル処理",
+      "content": "すべての操作はローカル デバイス上で直接実行されます。 当社は高度な WebAssembly テクノロジーを使用して、ドキュメントを外部サーバーにアップロードすることなく処理し、完全なプライバシーを確​​保します。",
+      "badgeText": "ローカル処理"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Confidential Drafts Stay Private",
-      "content": "Draft contracts and unreleased designs watermarked locally without any server contact."
+      "type": "watermark_privacy_security",
+      "title": "機密の下書きは非公開のまま",
+      "content": "サーバーに連絡することなく、契約の下書きや未発表のデザインに透かしをローカルで挿入できます。",
+      "badgeText": "セキュリティ第一"
     },
     {
-      "type": "transform_performance",
-      "title": "Stamp Thousands of Pages Instantly",
-      "content": "Apply watermarks to a 1000-page document in under 3 seconds. All in your browser."
+      "type": "watermark_performance",
+      "title": "数千ページに瞬時にスタンプ",
+      "content": "1,000 ページのドキュメントに 3 秒以内に透かしを適用します。 すべてブラウザ内で。",
+      "badgeText": "超高速"
     }
   ],
   "faqs": [
     {
-      "q": "Can I use a logo as a watermark?",
-      "a": "Yes, upload a PNG logo and set transparency."
+      "q": "ロゴを透かしとして使用できますか?",
+      "a": "はい、PNG ロゴをアップロードし、透明度を設定します。"
     },
     {
-      "q": "Can I adjust watermark opacity?",
-      "a": "Yes, from 10% to 100% opacity."
+      "q": "透かしの不透明度を調整できますか?",
+      "a": "はい、不透明度は 10% から 100% です。"
     },
     {
-      "q": "Can I apply it to specific pages only?",
-      "a": "Yes, choose page ranges."
+      "q": "特定のページにのみ適用できますか?",
+      "a": "はい、ページ範囲を選択します。"
     },
     {
-      "q": "Is diagonal placement available?",
-      "a": "Yes, rotate watermarks to any angle."
+      "q": "斜め置きは可能ですか？",
+      "a": "はい、透かしを任意の角度に回転できます。"
     },
     {
-      "q": "Is this free?",
-      "a": "はい、完全無料です。"
+      "q": "これは無料ですか？",
+      "a": "はい、いつでも無料です。"
     }
-  ]
+  ],
+  "faqTitle": "よくある質問",
+  "supportCenter": "サポート センター"
 }

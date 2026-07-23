@@ -1,67 +1,85 @@
 {
-  "title": "PowerPoint to PDF Converter — Offline & Free",
-  "h1": "Convert PowerPoint Presentations to PDF Instantly",
-  "description": "Convert .pptx presentations to high-quality PDFs directly in your browser. No cloud needed. Perfect for presenters in Moscow.",
+  "title": "Конвертер PowerPoint в PDF — офлайн и бесплатно",
+  "h1": "Мгновенное преобразование презентаций PowerPoint в PDF",
+  "description": "Конвертируйте презентации .pptx в высококачественные PDF-файлы прямо в браузере. Никакого облака не нужно. 100% безопасная локальная обработка.",
+  "buttonText": "Convert Slides",
+  "badges": [
+    "Заседания совета директоров",
+    "Питч-деки",
+    "Невыпущенные продукты"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Presentations Offline?",
-      "content": "Your slides may contain unreleased products or confidential strategies. Convert without risking data exposure."
+      "type": "ppt_hero_features",
+      "title": "Зачем конвертировать презентации в автономном режиме?",
+      "content": "Ваши слайды могут содержать неизданные продукты или конфиденциальные стратегии. Преобразование без риска раскрытия данных."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert PowerPoint to PDF",
+      "type": "ppt_how_to_steps",
+      "title": "Как конвертировать PowerPoint в PDF",
       "steps": [
         {
-          "title": "Load Presentation",
-          "description": "Select your .pptx file from your device."
+          "title": "Загрузить презентацию",
+          "description": "Выберите файл .pptx на своем устройстве."
         },
         {
-          "title": "Select Slide Range",
-          "description": "Include all slides or specific ones."
+          "title": "Выберите диапазон слайдов",
+          "description": "Включите все слайды или отдельные слайды."
         },
         {
-          "title": "Download PDF",
-          "description": "Get your PDF with all formatting preserved."
+          "title": "Скачать PDF",
+          "description": "Получите PDF-файл с сохранением всего форматирования."
         }
-      ]
+      ],
+      "badgeText": "Краткое руководство"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Presentation Conversion in Moscow",
-      "content": "Presenters in Moscow trust us to convert slide decks without leaking unreleased content to cloud servers."
+      "type": "ppt_geo_targeting",
+      "title": "100% безопасная локальная обработка",
+      "content": "Все операции выполняются непосредственно на вашем локальном устройстве. Мы используем передовую технологию WebAssembly для обработки ваших документов, не загружая их на внешние серверы, обеспечивая полную конфиденциальность.",
+      "badgeText": "Локальная обработка"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Confidential Slides Stay Confidential",
-      "content": "Pre-launch product decks? Board presentations? Converted 100% locally without network access."
+      "type": "ppt_privacy_security",
+      "title": "Конфиденциальные слайды остаются конфиденциальными",
+      "content": "Колоды продуктов перед запуском? Презентации совета директоров? Преобразовано 100% локально без доступа к сети.",
+      "badgeText": "Безопасность превыше всего"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Slide Export",
-      "content": "Convert 100-slide decks in seconds. No queue, no waiting, no upload bandwidth wasted."
+      "type": "ppt_performance",
+      "title": "Мгновенный экспорт слайдов",
+      "content": "Преобразуйте колоды из 100 слайдов за считанные секунды. Никакой очереди, никакого ожидания, никакой пропускной способности при загрузке.",
+      "badgeText": "Молниеносно"
     }
   ],
   "faqs": [
     {
-      "q": "Are slide animations preserved?",
-      "a": "Animations are flattened into static PDF frames."
+      "q": "Сохраняется ли анимация слайдов?",
+      "a": "Анимации сводятся в статические кадры PDF."
     },
     {
-      "q": "What resolution is the output?",
-      "a": "High-resolution rendering at 150 DPI by default."
+      "q": "Какое разрешение на выходе?",
+      "a": "Рендеринг с высоким разрешением по умолчанию — 150 DPI."
     },
     {
-      "q": "Can I convert selected slides only?",
-      "a": "Yes, specify slide ranges like 1-10 or 5,8,12."
+      "q": "Могу ли я конвертировать только выбранные слайды?",
+      "a": "Да, укажите диапазоны слайдов, например 1–10 или 5,8,12."
     },
     {
-      "q": "Is .ppt (old format) supported?",
-      "a": "Yes, both .ppt and .pptx are supported."
+      "q": "Поддерживается ли .ppt (старый формат)?",
+      "a": "Да, поддерживаются форматы .ppt и .pptx."
     },
     {
-      "q": "Is this free to use?",
-      "a": "Да, полностью бесплатно."
+      "q": "Это бесплатно?",
+      "a": "Да, совершенно бесплатно, без водяных знаков."
     }
-  ]
+  ],
+  "faqTitle": "Часто задаваемые вопросы",
+  "supportCenter": "Центр поддержки"
 }

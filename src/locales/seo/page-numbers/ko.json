@@ -1,67 +1,85 @@
 {
-  "title": "Add Page Numbers to PDF — Offline Number Stamp",
-  "h1": "Insert Page Numbers into PDF Documents Locally",
-  "description": "Stamp page numbers at the header or footer of your PDF entirely in your browser. No upload. Ideal for users in Seoul.",
+  "title": "PDF에 페이지 번호 추가 — 오프라인 번호 스탬프",
+  "h1": "PDF 문서에 로컬로 페이지 번호 삽입",
+  "description": "브라우저 전체에 PDF의 머리글이나 바닥글에 페이지 번호를 표시합니다. 빠르고 완벽하게 안전합니다.",
+  "buttonText": "Add Page Numbers",
+  "badges": [
+    "사용자 정의 위치",
+    "머리글 및 바닥글",
+    "베이츠 번호 매기기"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Add Page Numbers Offline?",
-      "content": "Page numbers are a formatting step, not a reason to upload confidential documents to a cloud service."
+      "type": "pagenum_hero_features",
+      "title": "페이지 번호를 오프라인으로 추가하는 이유는 무엇입니까?",
+      "content": "페이지 번호는 형식 지정 단계이지 기밀 문서를 클라우드 서비스에 업로드하는 이유가 아닙니다."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Add Page Numbers",
+      "type": "pagenum_how_to_steps",
+      "title": "페이지 번호를 추가하는 방법",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to number."
+          "title": "PDF 열기",
+          "description": "번호를 매길 PDF를 선택하세요."
         },
         {
-          "title": "Configure Style",
-          "description": "Choose position, format (1/12, Page 1, i, ii…), and font."
+          "title": "스타일 구성",
+          "description": "위치, 형식(1/12, 페이지 1, i, ii…) 및 글꼴을 선택합니다."
         },
         {
-          "title": "Apply & Download",
-          "description": "Download your paginated PDF instantly."
+          "title": "신청 및 다운로드",
+          "description": "페이지가 매겨진 PDF를 즉시 다운로드하세요."
         }
-      ]
+      ],
+      "badgeText": "빠른 가이드"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Page Numbering for Seoul Legal Docs",
-      "content": "Legal professionals in Seoul number briefs and reports locally without cloud service dependency."
+      "type": "pagenum_geo_targeting",
+      "title": "100% 안전한 로컬 처리",
+      "content": "모든 작업은 로컬 장치에서 직접 수행됩니다. 우리는 고급 WebAssembly 기술을 사용하여 문서를 외부 서버에 업로드하지 않고 처리하여 완벽한 개인 정보 보호를 보장합니다.",
+      "badgeText": "로컬 처리"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Internal Documents Stay Numbered & Private",
-      "content": "Add page numbers to contracts and confidential reports without any server involvement."
+      "type": "pagenum_privacy_security",
+      "title": "내부 문서 번호 및 비공개 유지",
+      "content": "서버 개입 없이 계약서 및 기밀 보고서에 페이지 번호를 추가하세요.",
+      "badgeText": "보안 우선"
     },
     {
-      "type": "organizer_performance",
-      "title": "Number a 1000-Page PDF Instantly",
-      "content": "Stamping page numbers locally takes milliseconds for any size document."
+      "type": "pagenum_performance",
+      "title": "1000페이지 PDF에 즉시 번호 매기기",
+      "content": "페이지 번호를 로컬로 스탬핑하는 데는 모든 크기의 문서에 대해 밀리초가 걸립니다.",
+      "badgeText": "번개처럼 빠르게"
     }
   ],
   "faqs": [
     {
-      "q": "What number formats are available?",
-      "a": "Arabic (1, 2, 3), Roman (i, ii, iii), and letter (a, b, c) formats."
+      "q": "어떤 숫자 형식을 사용할 수 있나요?",
+      "a": "아랍어(1, 2, 3), 로마자(i, ii, iii) 및 문자(a, b, c) 형식."
     },
     {
-      "q": "Can I start from a custom number?",
-      "a": "Yes, set any starting page number."
+      "q": "맞춤 번호로 시작할 수 있나요?",
+      "a": "예, 시작 페이지 번호를 설정하세요."
     },
     {
-      "q": "Can I skip numbering the first page?",
-      "a": "Yes, set the page offset to skip cover pages."
+      "q": "첫 번째 페이지 번호 매기기를 건너뛸 수 있나요?",
+      "a": "예, 표지를 건너뛰려면 페이지 오프셋을 설정하세요."
     },
     {
-      "q": "Where can I position numbers?",
-      "a": "Header-left, header-center, header-right, and same for footer."
+      "q": "번호를 어디에 배치할 수 있나요?",
+      "a": "머리글 왼쪽, 머리글 중앙, 머리글 오른쪽, 바닥글에도 동일합니다."
     },
     {
-      "q": "Is this free?",
-      "a": "예, 완전 무료입니다."
+      "q": "이거 무료인가요?",
+      "a": "예, 항상 무료입니다."
     }
-  ]
+  ],
+  "faqTitle": "자주 묻는 질문",
+  "supportCenter": "지원 센터"
 }

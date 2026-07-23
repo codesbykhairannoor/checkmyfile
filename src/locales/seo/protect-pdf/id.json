@@ -1,67 +1,85 @@
 {
-  "title": "Password Protect PDF — Secure Files Offline",
-  "h1": "Add Password Protection to PDF Files Instantly",
-  "description": "Encrypt PDF files with AES-256 directly in your browser. Your document never leaves your device. Ideal for users in Jakarta.",
+  "title": "Lindungi Kata Sandi PDF — Mengamankan File Offline",
+  "h1": "Tambahkan Perlindungan Kata Sandi ke File PDF Secara Instan",
+  "description": "Enkripsi file PDF dengan AES-256 langsung di browser Anda. Dokumen Anda tidak pernah meninggalkan perangkat Anda. Pemrosesan lokal 100% aman.",
+  "buttonText": "Protect PDF",
+  "badges": [
+    "Enkripsi AES-256",
+    "Kata Sandi Aman",
+    "Hanya Sisi Klien"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "protect_hero_features",
-      "title": "Why Protect PDFs Locally?",
-      "content": "Adding a password means the file is sensitive. Never upload sensitive files to a cloud encryptor. Ours runs entirely offline with AES-256 encryption."
+      "title": "Mengapa Melindungi PDF Secara Lokal?",
+      "content": "Menambahkan kata sandi berarti file tersebut sensitif. Jangan pernah mengunggah file sensitif ke enkripsi cloud. Layanan kami sepenuhnya offline dengan enkripsi AES-256."
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Password Protect a PDF",
+      "title": "Cara Melindungi PDF dengan Kata Sandi",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF you want to lock."
+          "title": "Buka PDF",
+          "description": "Pilih PDF yang ingin Anda kunci."
         },
         {
-          "title": "Set Password",
-          "description": "Choose a strong password for encryption."
+          "title": "Tetapkan Kata Sandi",
+          "description": "Pilih kata sandi yang kuat untuk enkripsi."
         },
         {
-          "title": "Download Protected PDF",
-          "description": "Get your AES-256 encrypted PDF immediately."
+          "title": "Unduh PDF yang Dilindungi",
+          "description": "Dapatkan PDF terenkripsi AES-256 Anda segera."
         }
-      ]
+      ],
+      "badgeText": "Panduan Singkat"
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Vault-Level PDF Protection for Jakarta",
-      "content": "Legal and finance professionals in Jakarta encrypt documents with AES-256 strength without exposing files to any server."
+      "title": "Pemrosesan Lokal 100% Aman",
+      "content": "Semua operasi dilakukan langsung di perangkat lokal Anda. Kami menggunakan teknologi WebAssembly yang canggih untuk memproses dokumen Anda tanpa harus mengunggahnya ke server eksternal, sehingga memastikan privasi sepenuhnya.",
+      "badgeText": "Pemrosesan Lokal"
     },
     {
       "type": "protect_privacy_security",
-      "title": "AES-256 Encryption — Bank-Grade, Offline",
-      "content": "Military-grade AES-256 encryption runs in your browser. No key is ever transmitted to any server."
+      "title": "Enkripsi AES-256 — Tingkat Bank, Offline",
+      "content": "Enkripsi AES-256 tingkat militer berjalan di browser Anda. Tidak ada kunci yang dikirimkan ke server mana pun.",
+      "badgeText": "Keamanan Pertama"
     },
     {
       "type": "protect_performance",
-      "title": "Encrypt Any PDF in Under 1 Second",
-      "content": "AES-256 processing locally takes milliseconds — no upload, no queue, no wait."
+      "title": "Enkripsi PDF Apa Pun dalam Waktu Kurang dari 1 Detik",
+      "content": "Pemrosesan AES-256 secara lokal membutuhkan waktu milidetik — tanpa unggahan, tanpa antrean, tanpa menunggu.",
+      "badgeText": "Secepat Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "What encryption standard is used?",
-      "a": "AES-256, the same standard used by banks and governments."
+      "q": "Standar enkripsi apa yang digunakan?",
+      "a": "AES-256, standar yang sama yang digunakan oleh bank dan pemerintah."
     },
     {
-      "q": "Can I set different owner and user passwords?",
-      "a": "Yes, you can set both separately."
+      "q": "Bisakah saya menetapkan kata sandi pemilik dan pengguna yang berbeda?",
+      "a": "Ya, Anda dapat mengatur keduanya secara terpisah."
     },
     {
-      "q": "Is the original file modified?",
-      "a": "No, a new encrypted copy is created."
+      "q": "Apakah file aslinya diubah?",
+      "a": "Tidak, salinan terenkripsi baru telah dibuat."
     },
     {
-      "q": "Can I restrict printing or editing?",
-      "a": "Yes, permission restrictions can be set alongside the password."
+      "q": "Bisakah saya membatasi pencetakan atau pengeditan?",
+      "a": "Ya, batasan izin dapat diatur bersamaan dengan kata sandi."
     },
     {
-      "q": "Is this free?",
+      "q": "Apakah ini gratis?",
       "a": "Ya, sepenuhnya gratis."
     }
-  ]
+  ],
+  "faqTitle": "Pertanyaan yang Sering Diajukan",
+  "supportCenter": "Pusat Dukungan"
 }

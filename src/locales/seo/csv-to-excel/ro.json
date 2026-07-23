@@ -1,67 +1,85 @@
 {
-  "title": "CSV to Excel Converter — Offline & Instant",
-  "h1": "Convert CSV Files to Excel Spreadsheets Locally",
-  "description": "Transform .csv files into structured .xlsx spreadsheets entirely in your browser. No upload. Perfect for data teams in Bucharest.",
+  "title": "Convertor CSV în Excel — Offline și instantaneu",
+  "h1": "Conversia locală a fișierelor CSV în foi de calcul Excel",
+  "description": "Transformați fișierele .csv în foi de calcul .xlsx structurate în întregime în browser. Fără încărcare. Procesare locală 100% sigură.",
+  "buttonText": "Convert CSV",
+  "badges": [
+    "Suport UTF-8",
+    "Cu mai multe coloane",
+    "Conversie instantanee"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Convert CSV Offline?",
-      "content": "CSV files often contain customer or financial data. Convert them to Excel locally without exposing your datasets to any cloud service."
+      "type": "csv_excel_hero_features",
+      "title": "De ce să convertiți CSV offline?",
+      "content": "Fișierele CSV conțin adesea date financiare sau despre clienți. Convertiți-le în Excel local, fără a vă expune seturile de date la niciun serviciu cloud."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert CSV to Excel",
+      "type": "csv_excel_how_to_steps",
+      "title": "Cum se convertesc CSV în Excel",
       "steps": [
         {
-          "title": "Open CSV File",
-          "description": "Select the CSV file to convert."
+          "title": "Deschideți fișierul CSV",
+          "description": "Selectați fișierul CSV de convertit."
         },
         {
-          "title": "Preview Data",
-          "description": "See the parsed columns and rows before export."
+          "title": "Previzualizarea datelor",
+          "description": "Vedeți coloanele și rândurile analizate înainte de export."
         },
         {
-          "title": "Download .xlsx",
-          "description": "Get your Excel spreadsheet instantly."
+          "title": "Descărcați .xlsx",
+          "description": "Obțineți foaia de calcul Excel instantaneu."
         }
-      ]
+      ],
+      "badgeText": "Ghid rapid"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Data Tools for Bucharest Analysts",
-      "content": "Data analysts in Bucharest convert CSV exports to Excel without uploading sensitive datasets."
+      "type": "csv_excel_geo_targeting",
+      "title": "Procesare locală 100% sigură",
+      "content": "Toate operațiunile sunt efectuate direct pe dispozitivul local. Folosim tehnologie avansată WebAssembly pentru a vă procesa documentele fără a le încărca vreodată pe servere externe, asigurând confidențialitate completă.",
+      "badgeText": "Prelucrare locală"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Customer Data Stays on Your Machine",
-      "content": "CRM exports, transaction logs, and survey data converted locally with zero cloud involvement."
+      "type": "csv_excel_privacy_security",
+      "title": "Datele clienților rămân pe aparatul dvs.",
+      "content": "Exporturile CRM, jurnalele de tranzacții și datele de sondaj sunt convertite local, fără implicare în cloud.",
+      "badgeText": "Securitatea în primul rând"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Large CSV Files Instantly",
-      "content": "Convert a 100,000-row CSV to Excel in seconds. All browser-native processing."
+      "type": "csv_excel_performance",
+      "title": "Convertiți instantaneu fișiere CSV mari",
+      "content": "Convertiți un CSV de 100.000 de rânduri în Excel în câteva secunde. Toate procesările native din browser.",
+      "badgeText": "Rapid fulger"
     }
   ],
   "faqs": [
     {
-      "q": "Is the column structure preserved?",
-      "a": "Yes, all columns are mapped to Excel columns."
+      "q": "Se păstrează structura coloanei?",
+      "a": "Da, toate coloanele sunt mapate la coloane Excel."
     },
     {
-      "q": "Can I convert multiple CSVs?",
-      "a": "Yes, batch conversion to multiple sheets is supported."
+      "q": "Pot converti mai multe fișiere CSV?",
+      "a": "Da, este acceptată conversia lotului în mai multe foi."
     },
     {
-      "q": "Are special characters handled?",
-      "a": "Yes, UTF-8 and various encodings are supported."
+      "q": "Sunt tratate caracterele speciale?",
+      "a": "Da, sunt acceptate UTF-8 și diverse codificări."
     },
     {
-      "q": "Can I set delimiters?",
-      "a": "Yes, comma, semicolon, and tab delimiters are supported."
+      "q": "Pot seta delimitatori?",
+      "a": "Da, sunt acceptate virgulă, punct și virgulă și delimitatorii de tabulatori."
     },
     {
-      "q": "Is this free?",
-      "a": "Da, complet gratuit."
+      "q": "Este gratuit?",
+      "a": "Da, întotdeauna gratuit."
     }
-  ]
+  ],
+  "faqTitle": "Întrebări frecvente",
+  "supportCenter": "Centrul de suport"
 }

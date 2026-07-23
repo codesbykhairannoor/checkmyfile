@@ -1,67 +1,85 @@
 {
-  "title": "Pisahkan PDF - Ekstrak Halaman Secara Lokal",
+  "title": "Pisahkan PDF - Ekstrak Halaman dengan Aman",
   "h1": "Pisahkan dan Ekstrak Halaman PDF dalam Hitungan Detik",
-  "description": "Ambil halaman tertentu atau bagi PDF besar menjadi beberapa file secara lokal. Sangat cocok untuk profesional di Jakarta.",
+  "description": "Ekstrak halaman tertentu atau pisahkan PDF besar menjadi beberapa file secara lokal di browser Anda. Cepat dan sepenuhnya aman.",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Kenapa Memisahkan PDF Secara Lokal?",
-      "content": "Punya dokumen 1GB tapi cuma butuh 1 halaman? Jangan buang kuota untuk upload! Ekstrak langsung secara instan di komputer Anda."
+      "title": "Mengapa Membagi PDF Secara Lokal?",
+      "content": "Saat menangani dokumen hukum atau perusahaan berukuran besar, mengekstraksi satu halaman tidak perlu mengunggah file berukuran 1 GB. Lakukan secara instan langsung di komputer Anda."
     },
     {
       "type": "split_how_to_steps",
-      "title": "Cara Memisahkan PDF",
+      "title": "Cara Mengekstrak Halaman",
       "steps": [
         {
           "title": "Buka Dokumen",
-          "description": "Pilih dokumen PDF multi-halaman yang ingin dipisah."
+          "description": "Muat PDF multi-halaman yang ingin Anda bagi."
         },
         {
-          "title": "Pilih Halaman",
-          "description": "Klik thumbnail halaman yang ingin diekstrak."
+          "title": "Pilih Rentang",
+          "description": "Pilih nomor halaman tertentu atau pilih halaman secara visual untuk diekstraksi."
         },
         {
-          "title": "Simpan Zip",
-          "description": "Unduh halaman yang dipisah dalam bentuk file Zip."
+          "title": "Ekspor Zip",
+          "description": "Unduh file Anda yang baru dipecah yang disusun dalam ZIP."
         }
-      ]
+      ],
+      "badgeText": "Panduan Singkat"
     },
     {
       "type": "split_geo_targeting",
-      "title": "Alat Pemisah Terbaik di Jakarta, ID-JK",
-      "content": "Sedang mengejar deadline di Jakarta? Memisahkan dokumen kini tak perlu loading internet."
+      "title": "Pemrosesan Lokal 100% Aman",
+      "content": "Semua operasi dilakukan langsung di perangkat lokal Anda. Kami menggunakan teknologi WebAssembly yang canggih untuk memproses dokumen Anda tanpa harus mengunggahnya ke server eksternal, sehingga memastikan privasi sepenuhnya.",
+      "badgeText": "Pemrosesan Lokal"
     },
     {
       "type": "split_privacy_security",
-      "title": "Privasi Halaman Terjamin",
-      "content": "Mengekstrak data gaji karyawan? Tenang saja, semua file diproses murni di perangkat Anda."
+      "title": "Privasi Halaman Total",
+      "content": "Memisahkan catatan rahasia karyawan? Tenang saja mengetahui kode kami dijalankan murni di lingkungan lokal Anda.",
+      "badgeText": "Keamanan Pertama"
     },
     {
       "type": "split_performance",
-      "title": "Ekstraksi Tanpa Upload",
-      "content": "Mengambil halaman 15 dari PDF berisi 2000 halaman hanya butuh beberapa milidetik."
+      "title": "Ekstraksi Tanpa Unggahan",
+      "content": "Mengambil halaman 14 dari PDF setebal 2000 halaman membutuhkan waktu milidetik, melewatkan langkah pengunggahan yang menyiksa sepenuhnya.",
+      "badgeText": "Secepat Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "Bagaimana cara ekstrak satu halaman saja?",
-      "a": "Cukup klik thumbnail halaman tersebut lalu tekan tombol Ekstrak."
+      "q": "Bagaimana cara mengekstrak satu halaman saja?",
+      "a": "Cukup klik pada thumbnail halaman yang Anda inginkan dan tekan Ekspor."
     },
     {
-      "q": "Bisakah saya membagi PDF jadi dua?",
-      "a": "Bisa, tentukan rentang halaman khusus seperti 1-10 dan 11-20."
+      "q": "Bisakah saya membagi PDF menjadi dua?",
+      "a": "Ya, Anda dapat menentukan rentang halaman khusus seperti 1-10 dan 11-20."
     },
     {
-      "q": "Apakah kualitas halaman menurun?",
-      "a": "Tidak, proses ini hanya memisahkan struktur biner sehingga 100% resolusi asli terjaga."
+      "q": "Apakah halaman yang diekstraksi akan kehilangan kualitasnya?",
+      "a": "Tidak, proses pemisahan menggunakan ekstraksi biner, sehingga menjaga 100% kualitas aslinya."
     },
     {
-      "q": "Apakah dokumen rahasia saya aman?",
-      "a": "Sangat aman. File tidak pernah meninggalkan komputer Anda."
+      "q": "Apakah dokumen saya diunggah saat pemisahan?",
+      "a": "Tidak pernah. Seluruh dokumen setebal 2000 halaman tetap tersimpan di browser Anda."
     },
     {
-      "q": "Adakah batas jumlah halaman?",
-      "a": "Tidak ada! Pisahkan PDF sebesar apapun tanpa biaya."
+      "q": "Apakah ada batasan berapa halaman yang dapat saya bagi?",
+      "a": "Tidak ada batasan! Pisahkan halaman sebanyak yang dapat ditangani komputer Anda."
     }
-  ]
+  ],
+  "badges": [
+    "Pemisahan Instan",
+    "Rentang Tepat",
+    "Tanpa Batas"
+  ],
+  "stats": [
+    "Ultra Fast",
+    "No Upload",
+    "Batch Zip",
+    "Secure"
+  ],
+  "buttonText": "Split PDF",
+  "faqTitle": "Pertanyaan yang Sering Diajukan",
+  "supportCenter": "Pusat Dukungan"
 }

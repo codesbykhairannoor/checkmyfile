@@ -1,67 +1,85 @@
 {
-  "title": "Text to PDF Converter — Offline & Instant",
-  "h1": "Convert Plain Text Files to PDF Locally",
-  "description": "Transform .txt files into clean, readable PDFs directly in your browser. No upload required. Ideal for users in New Delhi.",
+  "title": "टेक्स्ट से पीडीएफ कन्वर्टर - ऑफ़लाइन और त्वरित",
+  "h1": "सादा पाठ फ़ाइलों को स्थानीय रूप से पीडीएफ में कनवर्ट करें",
+  "description": "सीधे अपने ब्राउज़र में .txt फ़ाइलों को साफ़, पढ़ने योग्य PDF में बदलें। कोई अपलोड आवश्यक नहीं है. 100% सुरक्षित स्थानीय प्रसंस्करण।",
+  "buttonText": "Convert Text",
+  "badges": [
+    "कोड स्निपेट",
+    "सर्वर लॉग्स",
+    "पांडुलिपियों"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Text Files Offline?",
-      "content": "Text files often contain code, scripts, or sensitive notes. Our offline converter ensures zero data transmission."
+      "type": "txt_hero_features",
+      "title": "टेक्स्ट फ़ाइलों को ऑफ़लाइन क्यों बदलें?",
+      "content": "टेक्स्ट फ़ाइलों में अक्सर कोड, स्क्रिप्ट या संवेदनशील नोट्स होते हैं। हमारा ऑफ़लाइन कनवर्टर शून्य डेटा ट्रांसमिशन सुनिश्चित करता है।"
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Text to PDF",
+      "type": "txt_how_to_steps",
+      "title": "टेक्स्ट को पीडीएफ में कैसे बदलें",
       "steps": [
         {
-          "title": "Open Text File",
-          "description": "Select your .txt file or paste text directly."
+          "title": "टेक्स्ट फ़ाइल खोलें",
+          "description": "अपनी .txt फ़ाइल चुनें या सीधे टेक्स्ट पेस्ट करें।"
         },
         {
-          "title": "Choose Font & Style",
-          "description": "Pick font size and layout preferences."
+          "title": "फ़ॉन्ट और शैली चुनें",
+          "description": "फ़ॉन्ट आकार और लेआउट प्राथमिकताएं चुनें."
         },
         {
-          "title": "Download PDF",
-          "description": "Export your text as a beautifully formatted PDF."
+          "title": "पीडीएफ डाउनलोड करें",
+          "description": "अपने टेक्स्ट को एक सुंदर स्वरूपित पीडीएफ के रूप में निर्यात करें।"
         }
-      ]
+      ],
+      "badgeText": "त्वरित मार्गदर्शिका"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Text to PDF for New Delhi Developers",
-      "content": "Developers and writers in New Delhi use our tool to convert scripts and notes without cloud dependency."
+      "type": "txt_geo_targeting",
+      "title": "100% सुरक्षित स्थानीय प्रसंस्करण",
+      "content": "सभी ऑपरेशन सीधे आपके स्थानीय डिवाइस पर किए जाते हैं। हम पूर्ण गोपनीयता सुनिश्चित करते हुए, आपके दस्तावेज़ों को बाहरी सर्वर पर अपलोड किए बिना संसाधित करने के लिए उन्नत WebAssembly तकनीक का उपयोग करते हैं।",
+      "badgeText": "स्थानीय प्रसंस्करण"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Code Stays on Your Machine",
-      "content": "Source code, legal notes, medical records — text files converted with zero server involvement."
+      "type": "txt_privacy_security",
+      "title": "कोड आपकी मशीन पर रहता है",
+      "content": "स्रोत कोड, कानूनी नोट्स, मेडिकल रिकॉर्ड - शून्य सर्वर भागीदारी के साथ परिवर्तित पाठ फ़ाइलें।",
+      "badgeText": "सुरक्षा पहले"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Text Rendering",
-      "content": "Convert any size text file to PDF in milliseconds. No upload, no compression, no delay."
+      "type": "txt_performance",
+      "title": "त्वरित पाठ प्रतिपादन",
+      "content": "किसी भी आकार की टेक्स्ट फ़ाइल को मिलीसेकंड में पीडीएफ में बदलें। कोई अपलोड नहीं, कोई संपीड़न नहीं, कोई विलंब नहीं।",
+      "badgeText": "बिजली की तेजी"
     }
   ],
   "faqs": [
     {
-      "q": "Can I paste text directly?",
-      "a": "Yes, you can type or paste text without uploading a file."
+      "q": "क्या मैं टेक्स्ट को सीधे पेस्ट कर सकता हूँ?",
+      "a": "हां, आप फ़ाइल अपलोड किए बिना टेक्स्ट टाइप या पेस्ट कर सकते हैं।"
     },
     {
-      "q": "What fonts are available?",
-      "a": "Standard web fonts like Arial, Times New Roman, and monospace."
+      "q": "कौन से फ़ॉन्ट उपलब्ध हैं?",
+      "a": "एरियल, टाइम्स न्यू रोमन और मोनोस्पेस जैसे मानक वेब फ़ॉन्ट।"
     },
     {
-      "q": "Is code syntax preserved?",
-      "a": "Monospace formatting is preserved for code blocks."
+      "q": "क्या कोड सिंटैक्स संरक्षित है?",
+      "a": "कोड ब्लॉक के लिए मोनोस्पेस फ़ॉर्मेटिंग संरक्षित है।"
     },
     {
-      "q": "Can I set page margins?",
-      "a": "Yes, customize top, bottom, left, and right margins."
+      "q": "क्या मैं पेज मार्जिन सेट कर सकता हूँ?",
+      "a": "हाँ, ऊपर, नीचे, बाएँ और दाएँ हाशिये को अनुकूलित करें।"
     },
     {
-      "q": "Is this free?",
-      "a": "हाँ, पूरी तरह मुफ्त।"
+      "q": "क्या यह मुफ़्त है?",
+      "a": "हाँ, पूर्णतया निःशुल्क।"
     }
-  ]
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न",
+  "supportCenter": "सहायता केंद्र"
 }

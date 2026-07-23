@@ -1,67 +1,85 @@
 {
-  "title": "Organize PDF Pages — Reorder & Delete Offline",
-  "h1": "Reorder, Delete, or Duplicate PDF Pages Locally",
-  "description": "Drag and drop to rearrange, remove, or duplicate PDF pages entirely in your browser. No upload. Great for users in Helsinki.",
+  "title": "Järjestä PDF-sivuja — Järjestä uudelleen ja poista offline-tilassa",
+  "h1": "Järjestä uudelleen, poista tai monista PDF-sivut paikallisesti",
+  "description": "Järjestä, poista tai monista PDF-sivut kokonaan selaimessasi vetämällä ja pudottamalla. Nopea ja täysin turvallinen.",
+  "buttonText": "Organize Pages",
+  "badges": [
+    "Vedä ja pudota",
+    "Järjestä sivut uudelleen",
+    "Visuaalinen editori"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Organize PDFs Locally?",
-      "content": "Reorganizing page structure is an editing operation. Your internal document should stay internal during editing."
+      "type": "organize_hero_features",
+      "title": "Miksi PDF-tiedostot järjestetään paikallisesti?",
+      "content": "Sivurakenteen uudelleenjärjestely on muokkaustoiminto. Sisäisen asiakirjan tulee pysyä sisäisenä muokkauksen aikana."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Organize PDF Pages",
+      "type": "organize_how_to_steps",
+      "title": "PDF-sivujen järjestäminen",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to reorganize."
+          "title": "Avaa PDF",
+          "description": "Lataa PDF, jonka haluat järjestää uudelleen."
         },
         {
-          "title": "Drag to Reorder",
-          "description": "Drag page thumbnails to the desired position."
+          "title": "Järjestä uudelleen vetämällä",
+          "description": "Vedä sivun pikkukuvat haluamaasi paikkaan."
         },
         {
-          "title": "Save Organized PDF",
-          "description": "Download the restructured PDF immediately."
+          "title": "Tallenna järjestetty PDF",
+          "description": "Lataa uudelleen strukturoitu PDF välittömästi."
         }
-      ]
+      ],
+      "badgeText": "Pikaopas"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Organization for Helsinki Teams",
-      "content": "Teams in Helsinki reorganize proposal and report PDFs without uploading to any cloud service."
+      "type": "organize_geo_targeting",
+      "title": "100 % suojattu paikallinen käsittely",
+      "content": "Kaikki toiminnot suoritetaan suoraan paikallisella laitteellasi. Käytämme edistynyttä WebAssembly-tekniikkaa asiakirjojen käsittelyyn lataamatta niitä koskaan ulkoisille palvelimille, mikä takaa täydellisen yksityisyyden.",
+      "badgeText": "Paikallinen käsittely"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Page Structure Is Private Business",
-      "content": "Reordering internal reports and proposals with zero data leaving your browser."
+      "type": "organize_privacy_security",
+      "title": "Sivun rakenne on yksityinen yritys",
+      "content": "Sisäisten raporttien ja ehdotusten uudelleenjärjestely ilman dataa selaimeltasi.",
+      "badgeText": "Turvallisuus ensin"
     },
     {
-      "type": "organizer_performance",
-      "title": "Reorganize Any PDF in Seconds",
-      "content": "Reorder pages in a 500-page document through a smooth drag-and-drop interface with zero upload."
+      "type": "organize_performance",
+      "title": "Järjestä kaikki PDF-tiedostot uudelleen sekunneissa",
+      "content": "Järjestä sivut uudelleen 500-sivuisessa asiakirjassa sujuvan vedä ja pudota -käyttöliittymän avulla ilman latausta.",
+      "badgeText": "Salamannopeasti"
     }
   ],
   "faqs": [
     {
-      "q": "Can I delete pages?",
-      "a": "Yes, click the delete icon on any page thumbnail."
+      "q": "Voinko poistaa sivuja?",
+      "a": "Kyllä, napsauta minkä tahansa sivun pikkukuvan poistokuvaketta."
     },
     {
-      "q": "Can I duplicate pages?",
-      "a": "Yes, duplicate individual pages with one click."
+      "q": "Voinko kopioida sivuja?",
+      "a": "Kyllä, kopioi yksittäiset sivut yhdellä napsautuksella."
     },
     {
-      "q": "Can I rotate while organizing?",
-      "a": "Yes, per-page rotation is available in the organizer."
+      "q": "Voinko kiertää järjestelyn aikana?",
+      "a": "Kyllä, sivukohtainen kierto on käytettävissä järjestäjässä."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No limit! Organize documents of any size."
+      "q": "Onko sivurajoitusta?",
+      "a": "Ei rajaa! Järjestä kaikenkokoisia asiakirjoja."
     },
     {
-      "q": "Is this free?",
+      "q": "Onko tämä ilmainen?",
       "a": "Kyllä, täysin ilmainen."
     }
-  ]
+  ],
+  "faqTitle": "Usein kysytyt kysymykset",
+  "supportCenter": "Tukikeskus"
 }

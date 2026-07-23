@@ -1,67 +1,85 @@
 {
-  "title": "Image to PDF — Combine Photos Offline",
-  "h1": "Convert Images to PDF Without Uploading",
-  "description": "Turn JPG, PNG, and WebP images into a single PDF document in your browser. Your photos stay private. Perfect for users in Moscow.",
+  "title": "Изображение в PDF — объединение фотографий в автономном режиме",
+  "h1": "Конвертируйте изображения в PDF без загрузки",
+  "description": "Превратите изображения JPG, PNG и WebP в один PDF-документ в своем браузере. Ваши фотографии останутся конфиденциальными. 100% безопасная локальная обработка.",
+  "buttonText": "Convert Images",
+  "badges": [
+    "Портфолио",
+    "Сканирование удостоверений личности",
+    "Фотоальбомы"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Images Offline?",
-      "content": "Photos contain location data and personal moments. Convert them to PDF without exposing them to any cloud service."
+      "type": "image_hero_features",
+      "title": "Зачем конвертировать изображения в автономном режиме?",
+      "content": "Фотографии содержат данные о местоположении и личные моменты. Преобразуйте их в PDF, не подвергая их воздействию каких-либо облачных сервисов."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Turn Images Into PDF",
+      "type": "image_how_to_steps",
+      "title": "Как превратить изображения в PDF",
       "steps": [
         {
-          "title": "Select Images",
-          "description": "Choose JPG, PNG, or WebP files from your device."
+          "title": "Выбрать изображения",
+          "description": "Выберите файлы JPG, PNG или WebP на своем устройстве."
         },
         {
-          "title": "Arrange Order",
-          "description": "Drag to reorder images before generating the PDF."
+          "title": "Оформить заказ",
+          "description": "Перетащите, чтобы изменить порядок изображений перед созданием PDF-файла."
         },
         {
-          "title": "Export PDF",
-          "description": "Download your image PDF in one click."
+          "title": "Экспорт PDF",
+          "description": "Загрузите изображение PDF в один клик."
         }
-      ]
+      ],
+      "badgeText": "Краткое руководство"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Image to PDF for Moscow Users",
-      "content": "Photographers and designers in Moscow use our tool to package portfolios without cloud uploads."
+      "type": "image_geo_targeting",
+      "title": "100% безопасная локальная обработка",
+      "content": "Все операции выполняются непосредственно на вашем локальном устройстве. Мы используем передовую технологию WebAssembly для обработки ваших документов, не загружая их на внешние серверы, обеспечивая полную конфиденциальность.",
+      "badgeText": "Локальная обработка"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Photos Never Leave Your Device",
-      "content": "Personal photos, ID scans, medical images — all converted 100% locally without any server contact."
+      "type": "image_privacy_security",
+      "title": "Фотографии никогда не покидайте свое устройство",
+      "content": "Личные фотографии, сканы удостоверений личности, медицинские изображения — все конвертируется на 100% локально без какого-либо контакта с сервером.",
+      "badgeText": "Безопасность превыше всего"
     },
     {
-      "type": "combiner_performance",
-      "title": "Batch Convert Instantly",
-      "content": "Convert 50 images into a single PDF in under 5 seconds. No upload, no wait."
+      "type": "image_performance",
+      "title": "Пакетное преобразование мгновенно",
+      "content": "Конвертируйте 50 изображений в один PDF-файл менее чем за 5 секунд. Ни загрузки, ни ожидания.",
+      "badgeText": "Молниеносно"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are supported?",
-      "a": "JPG, JPEG, PNG, and WebP are all supported."
+      "q": "Какие форматы изображений поддерживаются?",
+      "a": "Поддерживаются форматы JPG, JPEG, PNG и WebP."
     },
     {
-      "q": "Can I combine multiple images?",
-      "a": "Yes, select as many images as you want and reorder them."
+      "q": "Могу ли я объединить несколько изображений?",
+      "a": "Да, выберите столько изображений, сколько хотите, и измените их порядок."
     },
     {
-      "q": "Is image quality preserved?",
-      "a": "Yes, images are embedded at their original resolution."
+      "q": "Сохраняется ли качество изображения?",
+      "a": "Да, изображения встраиваются в исходном разрешении."
     },
     {
-      "q": "Does it strip EXIF metadata?",
-      "a": "You can optionally strip EXIF data for privacy."
+      "q": "Удаляет ли метаданные EXIF?",
+      "a": "Вы можете дополнительно удалить данные EXIF ​​в целях конфиденциальности."
     },
     {
-      "q": "Is there a limit on image count?",
-      "a": "Да, полностью бесплатно."
+      "q": "Есть ли ограничение на количество изображений?",
+      "a": "Нет предела! Объедините сотни изображений в один PDF-файл."
     }
-  ]
+  ],
+  "faqTitle": "Часто задаваемые вопросы",
+  "supportCenter": "Центр поддержки"
 }

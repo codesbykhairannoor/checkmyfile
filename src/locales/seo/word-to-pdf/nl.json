@@ -1,67 +1,80 @@
 {
-  "title": "Word to PDF Converter — No Upload Required",
-  "h1": "Convert Word Documents to PDF Instantly",
-  "description": "Transform .docx files into perfect PDFs directly in your browser. Zero upload, 100% private. Ideal for users in Amsterdam.",
+  "title": "Word naar PDF-converter — geen upload vereist",
+  "h1": "Converteer Word-documenten direct naar PDF",
+  "description": "Transformeer .docx-bestanden rechtstreeks in uw browser naar perfecte PDF's. Geen upload, 100% privé. Ideaal voor gebruikers in Amsterdam.",
+  "buttonText": "Document converteren",
+  "badges": [
+    "Arbeidsovereenkomsten",
+    "Juridische instructies",
+    "CV's en CV's"
+  ],
+  "stats": [
+    "100%",
+    "Lokaal",
+    "0s",
+    "Wachttijd"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Word to PDF Offline?",
-      "content": "Your Word document contains sensitive data. Our converter runs entirely in WebAssembly — your file never touches a server."
+      "type": "word_hero_features",
+      "title": "Waarom offline gebruiken?",
+      "content": "Uw Word-document bevat gevoelige gegevens. Onze converter draait volledig in WebAssembly – uw bestand raakt nooit een server."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Word to PDF",
+      "type": "word_how_to_steps",
+      "title": "Hoe te gebruiken",
       "steps": [
         {
-          "title": "Select .docx File",
-          "description": "Pick your Word document from your computer."
+          "title": "Selecteer .docx-bestand",
+          "description": "Kies uw Word-document vanaf uw computer."
         },
         {
-          "title": "Preview Output",
-          "description": "See the PDF rendering before finalizing."
+          "title": "Voorbeeld van uitvoer",
+          "description": "Bekijk de PDF-weergave voordat u deze voltooit."
         },
         {
-          "title": "Download PDF",
-          "description": "Save your perfectly converted PDF instantly."
+          "title": "PDF downloaden",
+          "description": "Sla uw perfect geconverteerde PDF direct op."
         }
       ]
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Word to PDF for Amsterdam Users",
-      "content": "Used by professionals in Amsterdam who need to share documents without losing formatting."
+      "type": "word_geo_targeting",
+      "title": "Word naar PDF voor Amsterdamse gebruikers",
+      "content": "Gebruikt door professionals in Amsterdam die documenten willen delen zonder de opmaak te verliezen."
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Your Contracts Stay Private",
-      "content": "Converting employment contracts? Legal briefs? Our WASM processor never phones home."
+      "type": "word_privacy_security",
+      "title": "Uw contracten blijven privé",
+      "content": "Arbeidsovereenkomsten omzetten? Juridische instructies? Onze WASM-processor belt nooit naar huis."
     },
     {
-      "type": "combiner_performance",
-      "title": "No More Conversion Queues",
-      "content": "Cloud converters put you in a queue. Ours converts in under 2 seconds, entirely offline."
+      "type": "word_performance",
+      "title": "Geen conversiewachtrijen meer",
+      "content": "Cloudconverters zetten u in de wachtrij. Die van ons converteert in minder dan 2 seconden, volledig offline."
     }
   ],
   "faqs": [
     {
-      "q": "Does it preserve Word formatting?",
-      "a": "Yes, fonts, tables, and images are preserved using our WASM renderer."
+      "q": "Blijft de Word-opmaak behouden?",
+      "a": "Ja, lettertypen, tabellen en afbeeldingen worden bewaard met behulp van onze WASM-renderer."
     },
     {
-      "q": "What Word versions are supported?",
-      "a": "All modern .docx files are supported."
+      "q": "Welke Word-versies worden ondersteund?",
+      "a": "Alle moderne .docx-bestanden worden ondersteund."
     },
     {
-      "q": "Is there a file size limit?",
-      "a": "No server limits! Only your device RAM is the constraint."
+      "q": "Is er een limiet voor de bestandsgrootte?",
+      "a": "Geen serverlimieten! Alleen het RAM-geheugen van uw apparaat is de beperking."
     },
     {
-      "q": "Can I batch convert multiple files?",
-      "a": "Yes, select multiple .docx files at once."
+      "q": "Kan ik meerdere bestanden batchgewijs converteren?",
+      "a": "Ja, selecteer meerdere .docx-bestanden tegelijk."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, volledig gratis."
+      "q": "Is dit gratis?",
+      "a": "Ja, helemaal gratis."
     }
-  ]
+  ],
+  "faqTitle": "Veelgestelde Vragen"
 }

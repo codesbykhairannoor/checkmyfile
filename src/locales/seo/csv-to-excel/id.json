@@ -1,67 +1,85 @@
 {
-  "title": "CSV to Excel Converter — Offline & Instant",
-  "h1": "Convert CSV Files to Excel Spreadsheets Locally",
-  "description": "Transform .csv files into structured .xlsx spreadsheets entirely in your browser. No upload. Perfect for data teams in Jakarta.",
+  "title": "Konverter CSV ke Excel — Offline & Instan",
+  "h1": "Konversi File CSV ke Spreadsheet Excel Secara Lokal",
+  "description": "Ubah file .csv menjadi spreadsheet .xlsx terstruktur sepenuhnya di browser Anda. Tidak ada unggahan. Pemrosesan lokal 100% aman.",
+  "buttonText": "Convert CSV",
+  "badges": [
+    "Dukungan UTF-8",
+    "Multi-Kolom",
+    "Konversi Instan"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Convert CSV Offline?",
-      "content": "CSV files often contain customer or financial data. Convert them to Excel locally without exposing your datasets to any cloud service."
+      "type": "csv_excel_hero_features",
+      "title": "Mengapa Mengonversi CSV Offline?",
+      "content": "File CSV sering kali berisi data pelanggan atau keuangan. Konversikan ke Excel secara lokal tanpa memaparkan kumpulan data Anda ke layanan cloud apa pun."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert CSV to Excel",
+      "type": "csv_excel_how_to_steps",
+      "title": "Cara Mengonversi CSV ke Excel",
       "steps": [
         {
-          "title": "Open CSV File",
-          "description": "Select the CSV file to convert."
+          "title": "Buka File CSV",
+          "description": "Pilih file CSV yang akan dikonversi."
         },
         {
-          "title": "Preview Data",
-          "description": "See the parsed columns and rows before export."
+          "title": "Pratinjau Data",
+          "description": "Lihat kolom dan baris yang diurai sebelum diekspor."
         },
         {
-          "title": "Download .xlsx",
-          "description": "Get your Excel spreadsheet instantly."
+          "title": "Unduh .xlsx",
+          "description": "Dapatkan spreadsheet Excel Anda secara instan."
         }
-      ]
+      ],
+      "badgeText": "Panduan Singkat"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Data Tools for Jakarta Analysts",
-      "content": "Data analysts in Jakarta convert CSV exports to Excel without uploading sensitive datasets."
+      "type": "csv_excel_geo_targeting",
+      "title": "Pemrosesan Lokal 100% Aman",
+      "content": "Semua operasi dilakukan langsung di perangkat lokal Anda. Kami menggunakan teknologi WebAssembly yang canggih untuk memproses dokumen Anda tanpa harus mengunggahnya ke server eksternal, sehingga memastikan privasi sepenuhnya.",
+      "badgeText": "Pemrosesan Lokal"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Customer Data Stays on Your Machine",
-      "content": "CRM exports, transaction logs, and survey data converted locally with zero cloud involvement."
+      "type": "csv_excel_privacy_security",
+      "title": "Data Pelanggan Tetap di Mesin Anda",
+      "content": "Ekspor CRM, log transaksi, dan data survei dikonversi secara lokal tanpa keterlibatan cloud.",
+      "badgeText": "Keamanan Pertama"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Large CSV Files Instantly",
-      "content": "Convert a 100,000-row CSV to Excel in seconds. All browser-native processing."
+      "type": "csv_excel_performance",
+      "title": "Konversi File CSV Besar Secara Instan",
+      "content": "Konversikan CSV 100.000 baris ke Excel dalam hitungan detik. Semua pemrosesan asli browser.",
+      "badgeText": "Secepat Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "Is the column structure preserved?",
-      "a": "Yes, all columns are mapped to Excel columns."
+      "q": "Apakah struktur kolomnya dipertahankan?",
+      "a": "Ya, semua kolom dipetakan ke kolom Excel."
     },
     {
-      "q": "Can I convert multiple CSVs?",
-      "a": "Yes, batch conversion to multiple sheets is supported."
+      "q": "Bisakah saya mengonversi beberapa CSV?",
+      "a": "Ya, konversi batch ke beberapa lembar didukung."
     },
     {
-      "q": "Are special characters handled?",
-      "a": "Yes, UTF-8 and various encodings are supported."
+      "q": "Apakah karakter khusus ditangani?",
+      "a": "Ya, UTF-8 dan berbagai pengkodean didukung."
     },
     {
-      "q": "Can I set delimiters?",
-      "a": "Yes, comma, semicolon, and tab delimiters are supported."
+      "q": "Bisakah saya menyetel pembatas?",
+      "a": "Ya, pembatas koma, titik koma, dan tab didukung."
     },
     {
-      "q": "Is this free?",
-      "a": "Ya, sepenuhnya gratis."
+      "q": "Apakah ini gratis?",
+      "a": "Ya, selalu gratis."
     }
-  ]
+  ],
+  "faqTitle": "Pertanyaan yang Sering Diajukan",
+  "supportCenter": "Pusat Dukungan"
 }

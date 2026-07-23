@@ -1,67 +1,85 @@
 {
-  "title": "Extract Images from PDF — Offline Extractor",
-  "h1": "Extract All Embedded Images from PDF Files",
-  "description": "Pull out every image from a PDF and download them as PNG or JPG files, all in your browser. No cloud. Ideal for users in Jakarta.",
+  "title": "Ekstrak Gambar dari PDF — Ekstraktor Offline",
+  "h1": "Ekstrak Semua Gambar Tersemat dari File PDF",
+  "description": "Keluarkan setiap gambar dari PDF dan unduh sebagai file PNG atau JPG, semuanya di browser Anda. Tidak ada awan. Pemrosesan lokal 100% aman.",
+  "buttonText": "Extract All Images",
+  "badges": [
+    "Foto Produk",
+    "Diagram Rahasia",
+    "vektor"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract Images Offline?",
-      "content": "PDFs with confidential diagrams or product photos should never be uploaded. Extract images directly in your browser."
+      "type": "extract_images_hero_features",
+      "title": "Mengapa Mengekstrak Gambar Offline?",
+      "content": "PDF dengan diagram rahasia atau foto produk tidak boleh diunggah. Ekstrak gambar langsung di browser Anda."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Extract Images from PDF",
+      "type": "extract_images_how_to_steps",
+      "title": "Cara Mengekstrak Gambar dari PDF",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Open the PDF containing embedded images."
+          "title": "Muat PDF",
+          "description": "Buka PDF yang berisi gambar yang disematkan."
         },
         {
-          "title": "Scan for Images",
-          "description": "Our engine locates all embedded image objects."
+          "title": "Pindai Gambar",
+          "description": "Mesin kami menemukan semua objek gambar yang tertanam."
         },
         {
-          "title": "Download ZIP",
-          "description": "Get all extracted images in a single ZIP file."
+          "title": "Unduh ZIP",
+          "description": "Dapatkan semua gambar yang diekstraksi dalam satu file ZIP."
         }
-      ]
+      ],
+      "badgeText": "Panduan Singkat"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Image Extraction in Jakarta",
-      "content": "Publishers and marketers in Jakarta extract product photos and diagrams from PDFs without cloud uploads."
+      "type": "extract_images_geo_targeting",
+      "title": "Pemrosesan Lokal 100% Aman",
+      "content": "Semua operasi dilakukan langsung di perangkat lokal Anda. Kami menggunakan teknologi WebAssembly yang canggih untuk memproses dokumen Anda tanpa harus mengunggahnya ke server eksternal, sehingga memastikan privasi sepenuhnya.",
+      "badgeText": "Pemrosesan Lokal"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Product Images Stay Confidential",
-      "content": "Unreleased product photos embedded in PDFs extracted locally without any server access."
+      "type": "extract_images_privacy_security",
+      "title": "Gambar Produk Tetap Rahasia",
+      "content": "Foto produk yang belum dirilis yang disematkan dalam PDF diekstraksi secara lokal tanpa akses server apa pun.",
+      "badgeText": "Keamanan Pertama"
     },
     {
-      "type": "split_performance",
-      "title": "Extract Hundreds of Images Fast",
-      "content": "Extract 500 images from a PDF in seconds. All native browser processing."
+      "type": "extract_images_performance",
+      "title": "Ekstrak Ratusan Gambar dengan Cepat",
+      "content": "Ekstrak 500 gambar dari PDF dalam hitungan detik. Semua pemrosesan browser asli.",
+      "badgeText": "Secepat Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are extracted?",
-      "a": "Images are saved in their original format (PNG, JPG, etc.)."
+      "q": "Format gambar apa yang diekstraksi?",
+      "a": "Gambar disimpan dalam format aslinya (PNG, JPG, dll.)."
     },
     {
-      "q": "Are images at full resolution?",
-      "a": "Yes, extracted at the original embedded resolution."
+      "q": "Apakah gambar dalam resolusi penuh?",
+      "a": "Ya, diekstraksi pada resolusi asli yang tertanam."
     },
     {
-      "q": "Can I choose specific pages?",
-      "a": "Yes, specify which pages to extract images from."
+      "q": "Bisakah saya memilih halaman tertentu?",
+      "a": "Ya, tentukan halaman mana yang akan diambil gambarnya."
     },
     {
-      "q": "Does it extract vector graphics?",
-      "a": "Vector elements are rasterized to PNG/JPG."
+      "q": "Apakah itu mengekstrak grafik vektor?",
+      "a": "Elemen vektor diraster menjadi PNG/JPG."
     },
     {
-      "q": "Is this free?",
-      "a": "Ya, sepenuhnya gratis."
+      "q": "Apakah ini gratis?",
+      "a": "Ya, selalu gratis."
     }
-  ]
+  ],
+  "faqTitle": "Pertanyaan yang Sering Diajukan",
+  "supportCenter": "Pusat Dukungan"
 }

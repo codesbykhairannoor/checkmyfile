@@ -1,67 +1,85 @@
 {
-  "title": "CSV to Excel Converter — Offline & Instant",
-  "h1": "Convert CSV Files to Excel Spreadsheets Locally",
-  "description": "Transform .csv files into structured .xlsx spreadsheets entirely in your browser. No upload. Perfect for data teams in Berlin.",
+  "title": "CSV-zu-Excel-Konverter – Offline und sofort",
+  "h1": "Konvertieren Sie CSV-Dateien lokal in Excel-Tabellen",
+  "description": "Wandeln Sie CSV-Dateien vollständig in Ihrem Browser in strukturierte XLSX-Tabellen um. Kein Upload. 100 % sichere lokale Verarbeitung.",
+  "buttonText": "Convert CSV",
+  "badges": [
+    "UTF-8-Unterstützung",
+    "Mehrspaltig",
+    "Sofortige Konvertierung"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Convert CSV Offline?",
-      "content": "CSV files often contain customer or financial data. Convert them to Excel locally without exposing your datasets to any cloud service."
+      "type": "csv_excel_hero_features",
+      "title": "Warum CSV offline konvertieren?",
+      "content": "CSV-Dateien enthalten häufig Kunden- oder Finanzdaten. Konvertieren Sie sie lokal in Excel, ohne Ihre Datensätze einem Cloud-Dienst zur Verfügung zu stellen."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert CSV to Excel",
+      "type": "csv_excel_how_to_steps",
+      "title": "So konvertieren Sie CSV in Excel",
       "steps": [
         {
-          "title": "Open CSV File",
-          "description": "Select the CSV file to convert."
+          "title": "CSV-Datei öffnen",
+          "description": "Wählen Sie die zu konvertierende CSV-Datei aus."
         },
         {
-          "title": "Preview Data",
-          "description": "See the parsed columns and rows before export."
+          "title": "Vorschau der Daten",
+          "description": "Sehen Sie sich die analysierten Spalten und Zeilen vor dem Export an."
         },
         {
-          "title": "Download .xlsx",
-          "description": "Get your Excel spreadsheet instantly."
+          "title": "Laden Sie .xlsx",
+          "description": "herunter Holen Sie sich sofort Ihre Excel-Tabelle."
         }
-      ]
+      ],
+      "badgeText": "Kurzanleitung"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Data Tools for Berlin Analysts",
-      "content": "Data analysts in Berlin convert CSV exports to Excel without uploading sensitive datasets."
+      "type": "csv_excel_geo_targeting",
+      "title": "100 % sichere lokale Verarbeitung",
+      "content": "Alle Vorgänge werden direkt auf Ihrem lokalen Gerät ausgeführt. Wir verwenden fortschrittliche WebAssembly-Technologie, um Ihre Dokumente zu verarbeiten, ohne sie jemals auf externe Server hochzuladen, und gewährleisten so absolute Privatsphäre.",
+      "badgeText": "Lokale Verarbeitung"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Customer Data Stays on Your Machine",
-      "content": "CRM exports, transaction logs, and survey data converted locally with zero cloud involvement."
+      "type": "csv_excel_privacy_security",
+      "title": "Kundendaten bleiben auf Ihrem Computer",
+      "content": "CRM-Exporte, Transaktionsprotokolle und Umfragedaten werden lokal ohne Cloud-Beteiligung konvertiert.",
+      "badgeText": "Sicherheit geht vor"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Large CSV Files Instantly",
-      "content": "Convert a 100,000-row CSV to Excel in seconds. All browser-native processing."
+      "type": "csv_excel_performance",
+      "title": "Große CSV-Dateien sofort konvertieren",
+      "content": "Konvertieren Sie eine CSV-Datei mit 100.000 Zeilen in Sekundenschnelle in Excel. Sämtliche browsernative Verarbeitung.",
+      "badgeText": "Blitzschnell"
     }
   ],
   "faqs": [
     {
-      "q": "Is the column structure preserved?",
-      "a": "Yes, all columns are mapped to Excel columns."
+      "q": "Bleibt die Säulenstruktur erhalten?",
+      "a": "Ja, alle Spalten werden Excel-Spalten zugeordnet."
     },
     {
-      "q": "Can I convert multiple CSVs?",
-      "a": "Yes, batch conversion to multiple sheets is supported."
+      "q": "Kann ich mehrere CSVs konvertieren?",
+      "a": "Ja, die Stapelkonvertierung in mehrere Blätter wird unterstützt."
     },
     {
-      "q": "Are special characters handled?",
-      "a": "Yes, UTF-8 and various encodings are supported."
+      "q": "Werden Sonderzeichen behandelt?",
+      "a": "Ja, UTF-8 und verschiedene Kodierungen werden unterstützt."
     },
     {
-      "q": "Can I set delimiters?",
-      "a": "Yes, comma, semicolon, and tab delimiters are supported."
+      "q": "Kann ich Trennzeichen setzen?",
+      "a": "Ja, Komma-, Semikolon- und Tabulatortrennzeichen werden unterstützt."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, komplett kostenlos."
+      "q": "Ist das kostenlos?",
+      "a": "Ja, immer kostenlos."
     }
-  ]
+  ],
+  "faqTitle": "Häufig gestellte Fragen",
+  "supportCenter": "Support-Center"
 }

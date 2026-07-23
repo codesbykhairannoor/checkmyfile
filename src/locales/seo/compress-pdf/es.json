@@ -1,67 +1,85 @@
 {
-  "title": "Comprimir PDF Online - Reducir Tamaño",
-  "h1": "Comprime Documentos PDF sin Perder Calidad",
-  "description": "Reduce el tamaño de archivos PDF grandes hasta un 90% usando técnicas locales. Perfecto para usuarios en Madrid.",
+  "title": "Comprimir PDF en línea - Reducir el tamaño del archivo",
+  "h1": "Comprime documentos PDF sin perder calidad",
+  "description": "Reduzca archivos PDF de gran tamaño hasta en un 90 % utilizando técnicas adaptativas sin pérdidas directamente en WebAssembly. Procesamiento local 100% seguro.",
   "sections": [
     {
-      "type": "comp_hero_features",
-      "title": "¿Por qué Comprimir Offline?",
-      "content": "Los PDF pesados son difíciles de enviar. Nuestro compresor reduce drásticamente el tamaño sin difuminar, todo en tu navegador."
+      "type": "compress_hero_features",
+      "title": "¿Por qué comprimir PDF sin conexión?",
+      "content": "Es complicado enviar archivos PDF de gran tamaño por correo electrónico. Nuestro compresor reduce drásticamente el tamaño del archivo sin desenfocar las imágenes, todo desde su navegador."
     },
     {
-      "type": "comp_how_to_steps",
-      "title": "Cómo Reducir Archivos PDF",
+      "type": "compress_how_to_steps",
+      "title": "Cómo reducir archivos PDF",
       "steps": [
         {
-          "title": "Sube un Archivo Pesado",
-          "description": "Selecciona el PDF que quieres comprimir."
+          "title": "Cargar archivo grande",
+          "description": "Seleccione el PDF de gran tamaño que desea reducir."
         },
         {
-          "title": "Elige la Calidad",
-          "description": "Selecciona el nivel de compresión deseado."
+          "title": "Seleccionar calidad",
+          "description": "Elija entre alta calidad o máxima compresión."
         },
         {
-          "title": "Descarga al Instante",
-          "description": "Obtén tu PDF ligero listo para enviar."
+          "title": "Descargar Pequeño PDF",
+          "description": "Obtenga su archivo comprimido al instante, listo para compartir."
         }
-      ]
+      ],
+      "badgeText": "Guía rápida"
     },
     {
-      "type": "comp_geo_targeting",
-      "title": "Compresión Optimizada en Madrid, ES-M",
-      "content": "¿Conexión lenta en Madrid? Comprime localmente para enviar tus correos más rápido."
+      "type": "compress_geo_targeting",
+      "title": "Procesamiento local 100% seguro",
+      "content": "Todas las operaciones se realizan directamente en su dispositivo local. Utilizamos tecnología avanzada de WebAssembly para procesar sus documentos sin tener que cargarlos en servidores externos, lo que garantiza una privacidad total.",
+      "badgeText": "Procesamiento local"
     },
     {
-      "type": "comp_privacy_security",
-      "title": "Compresión Segura y Local",
-      "content": "¿Informes financieros? Comprime con total privacidad ya que el archivo nunca sale de tu PC."
+      "type": "compress_privacy_security",
+      "title": "Compresión local segura",
+      "content": "¿Comprimir informes financieros confidenciales? Nuestro algoritmo funciona completamente fuera de línea, manteniendo sus datos seguros.",
+      "badgeText": "La seguridad es lo primero"
     },
     {
-      "type": "comp_performance",
-      "title": "Reducción Ultrarrápida",
-      "content": "Comprimir un archivo grande localmente ahorra todo el tiempo de subida a la red."
+      "type": "compress_performance",
+      "title": "Contracción ultrarrápida",
+      "content": "Comprimir un archivo de 50 MB localmente le ahorra el tiempo de cargar 50 MB y descargar 5 MB.",
+      "badgeText": "A la velocidad del rayo"
     }
   ],
   "faqs": [
     {
-      "q": "¿Se verá borroso mi PDF?",
-      "a": "No, usamos compresión adaptativa para reducir el tamaño sin perder legibilidad."
+      "q": "¿Comprimir mi PDF lo hará borroso?",
+      "a": "No, nuestra herramienta utiliza compresión adaptativa para mantener la legibilidad mientras reduce el tamaño."
     },
     {
-      "q": "¿Los archivos van a un servidor?",
-      "a": "No, todo el proceso de compresión ocurre en tu propio ordenador."
+      "q": "¿Se envían mis archivos a un servidor para comprimirlos?",
+      "a": "No, el algoritmo de compresión se ejecuta directamente en la memoria de su navegador."
     },
     {
-      "q": "¿Cuál es el límite de tamaño?",
-      "a": "No hay límite, puedes comprimir cualquier archivo."
+      "q": "¿Cuál es el tamaño máximo de archivo que puedo comprimir?",
+      "a": "¡La memoria de tu navegador es el único límite! Puedes comprimir archivos masivos fácilmente."
     },
     {
-      "q": "¿Es completamente gratis?",
-      "a": "Totalmente gratis y sin marcas de agua escondidas."
+      "q": "¿Esta herramienta de compresión es gratuita?",
+      "a": "Absolutamente gratis, sin límites de uso ni muros de pago premium."
     },
     {
-      "q": "¿Puedo comprimir varios?",
-      "a": "Sí, puedes seleccionar múltiples archivos a la vez."
+      "q": "¿Puedo comprimir varios archivos a la vez?",
+      "a": "La compresión por lotes es compatible con los navegadores modernos."
     }
-  ]
+  ],
+  "badges": [
+    "90% de compresión",
+    "Opción sin pérdidas",
+    "Sin cargas"
+  ],
+  "stats": [
+    "Zero Wait",
+    "High Quality",
+    "WebAssembly",
+    "Private"
+  ],
+  "buttonText": "Compress PDF",
+  "faqTitle": "Preguntas frecuentes",
+  "supportCenter": "Centro de soporte"
 }

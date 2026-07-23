@@ -1,67 +1,85 @@
 {
-  "title": "OCR PDF — Make Scans Searchable Offline",
-  "h1": "Extract and Recognize Text from Scanned PDFs",
-  "description": "Run OCR on scanned PDFs to make them searchable and copyable, entirely in your browser using Tesseract. No upload. Great for users in New Delhi.",
+  "title": "ओसीआर पीडीएफ - स्कैन को ऑफ़लाइन खोजने योग्य बनाएं",
+  "h1": "स्कैन की गई पीडीएफ़ से टेक्स्ट निकालें और पहचानें",
+  "description": "टेस्सेरैक्ट का उपयोग करके पूरी तरह से अपने ब्राउज़र में स्कैन की गई पीडीएफ को खोजने योग्य और कॉपी करने योग्य बनाने के लिए उन पर ओसीआर चलाएं। कोई अपलोड नहीं. 100% सुरक्षित स्थानीय प्रसंस्करण।",
+  "buttonText": "Run OCR",
+  "badges": [
+    "पाठ निकालें",
+    "खोजने योग्य पीडीएफ",
+    "एआई मान्यता"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Run OCR Locally?",
-      "content": "Scanned PDFs contain sensitive text. Running OCR on a cloud service exposes that text to a third party. Ours runs 100% offline."
+      "type": "ocr_hero_features",
+      "title": "OCR को स्थानीय रूप से क्यों चलाएँ?",
+      "content": "स्कैन की गई पीडीएफ़ में संवेदनशील पाठ होता है। क्लाउड सेवा पर OCR चलाने से वह टेक्स्ट किसी तीसरे पक्ष के सामने आ जाता है। हमारा 100% ऑफ़लाइन चलता है।"
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to OCR a PDF",
+      "type": "ocr_how_to_steps",
+      "title": "पीडीएफ को ओसीआर कैसे करें",
       "steps": [
         {
-          "title": "Load Scanned PDF",
-          "description": "Select the image-based or scanned PDF."
+          "title": "स्कैन की गई पीडीएफ लोड करें",
+          "description": "छवि-आधारित या स्कैन की गई पीडीएफ का चयन करें।"
         },
         {
-          "title": "Select Language",
-          "description": "Choose the document language for better accuracy."
+          "title": "भाषा चुनें",
+          "description": "बेहतर सटीकता के लिए दस्तावेज़ भाषा चुनें।"
         },
         {
-          "title": "Download Searchable PDF",
-          "description": "Get a text-layer PDF ready to search and copy."
+          "title": "खोजने योग्य पीडीएफ डाउनलोड करें",
+          "description": "खोजने और कॉपी करने के लिए टेक्स्ट-लेयर पीडीएफ तैयार रखें।"
         }
-      ]
+      ],
+      "badgeText": "त्वरित मार्गदर्शिका"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "OCR Tool for New Delhi Archives",
-      "content": "Government agencies and businesses in New Delhi digitize paper archives using our offline OCR tool."
+      "type": "ocr_geo_targeting",
+      "title": "100% सुरक्षित स्थानीय प्रसंस्करण",
+      "content": "सभी ऑपरेशन सीधे आपके स्थानीय डिवाइस पर किए जाते हैं। हम पूर्ण गोपनीयता सुनिश्चित करते हुए, आपके दस्तावेज़ों को बाहरी सर्वर पर अपलोड किए बिना संसाधित करने के लिए उन्नत WebAssembly तकनीक का उपयोग करते हैं।",
+      "badgeText": "स्थानीय प्रसंस्करण"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Content Never Exposed",
-      "content": "OCR processing using Tesseract WASM runs entirely in browser memory — no API calls, no data transmission."
+      "type": "ocr_privacy_security",
+      "title": "स्कैन की गई सामग्री कभी उजागर नहीं होती",
+      "content": "Tesseract WASM का उपयोग करके OCR प्रोसेसिंग पूरी तरह से ब्राउज़र मेमोरी में चलती है - कोई API कॉल नहीं, कोई डेटा ट्रांसमिशन नहीं।",
+      "badgeText": "सुरक्षा पहले"
     },
     {
-      "type": "organizer_performance",
-      "title": "OCR Any Document Locally",
-      "content": "Process a 20-page scanned PDF in under 30 seconds. All Tesseract processing happens in-browser."
+      "type": "ocr_performance",
+      "title": "OCR कोई भी दस्तावेज़ स्थानीय रूप से",
+      "content": "20 पेज की स्कैन की गई पीडीएफ को 30 सेकंड से कम समय में प्रोसेस करें। सभी Tesseract प्रोसेसिंग ब्राउज़र में होती है।",
+      "badgeText": "बिजली की तेजी"
     }
   ],
   "faqs": [
     {
-      "q": "What languages does OCR support?",
-      "a": "Over 100 languages via Tesseract engine."
+      "q": "OCR किन भाषाओं का समर्थन करता है?",
+      "a": "Tesseract इंजन के माध्यम से 100 से अधिक भाषाएँ।"
     },
     {
-      "q": "How accurate is the OCR?",
-      "a": "Accuracy depends on scan quality; clear, high-contrast scans yield 95%+ accuracy."
+      "q": "ओसीआर कितना सही है?",
+      "a": "सटीकता स्कैन गुणवत्ता पर निर्भर करती है; स्पष्ट, उच्च-कंट्रास्ट स्कैन से 95%+ सटीकता प्राप्त होती है।"
     },
     {
-      "q": "Does it create a searchable PDF?",
-      "a": "Yes, a text layer is added making the PDF fully searchable."
+      "q": "क्या यह खोजने योग्य पीडीएफ बनाता है?",
+      "a": "हां, पीडीएफ को पूरी तरह से खोजने योग्य बनाने के लिए एक टेक्स्ट परत जोड़ी गई है।"
     },
     {
-      "q": "Can I copy text from the result?",
-      "a": "Yes, the output PDF has selectable, copyable text."
+      "q": "क्या मैं परिणाम से टेक्स्ट कॉपी कर सकता हूँ?",
+      "a": "हां, आउटपुट पीडीएफ में चयन योग्य, कॉपी करने योग्य टेक्स्ट है।"
     },
     {
-      "q": "Is this free?",
-      "a": "हाँ, पूरी तरह मुफ्त।"
+      "q": "क्या यह मुफ़्त है?",
+      "a": "हाँ, हमेशा मुफ़्त."
     }
-  ]
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न",
+  "supportCenter": "सहायता केंद्र"
 }

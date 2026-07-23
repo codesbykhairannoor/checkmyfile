@@ -1,67 +1,85 @@
 {
-  "title": "Scan to PDF — Convert Camera Shots Offline",
-  "h1": "Convert Photos and Scans to PDF Locally",
-  "description": "Turn photos of documents taken with your camera into clean PDFs entirely in your browser. No upload. Best for users in Oslo.",
+  "title": "Skann til PDF — Konverter kamerabilder frakoblet",
+  "h1": "Konverter bilder og skanninger til PDF lokalt",
+  "description": "Gjør bilder av dokumenter tatt med kameraet til rene PDF-filer helt i nettleseren din. Ingen opplasting. 100 % sikker lokal behandling.",
+  "buttonText": "Scan to PDF",
+  "badges": [
+    "Bruk webkamera",
+    "Mobil skanner",
+    "Automatisk beskjæring"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Use Scan-to-PDF Offline?",
-      "content": "Photos of documents contain sensitive information. Process them locally without any cloud access."
+      "type": "scan_hero_features",
+      "title": "Hvorfor bruke Skann-til-PDF frakoblet?",
+      "content": "Bilder av dokumenter inneholder sensitiv informasjon. Behandle dem lokalt uten skytilgang."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Scans to PDF",
+      "type": "scan_how_to_steps",
+      "title": "Hvordan konvertere skanninger til PDF",
       "steps": [
         {
-          "title": "Import Photos",
-          "description": "Select photos taken with your phone or camera."
+          "title": "Importer bilder",
+          "description": "Velg bilder tatt med telefonen eller kameraet."
         },
         {
-          "title": "Enhance Scan",
-          "description": "Auto-crop, deskew, and enhance contrast."
+          "title": "Forbedre skanning",
+          "description": "Auto-beskjær, forskyv og forbedre kontrasten."
         },
         {
-          "title": "Export PDF",
-          "description": "Download a clean, professional-looking scanned PDF."
+          "title": "Eksporter PDF",
+          "description": "Last ned en ren skannet PDF med et profesjonelt utseende."
         }
-      ]
+      ],
+      "badgeText": "Hurtigguide"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Scan to PDF for Oslo Field Workers",
-      "content": "Field workers and freelancers in Oslo digitize paper documents on-the-go without uploading to cloud services."
+      "type": "scan_geo_targeting",
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle operasjoner utføres direkte på din lokale enhet. Vi bruker avansert WebAssembly-teknologi for å behandle dokumentene dine uten å laste dem opp til eksterne servere, noe som sikrer fullstendig personvern.",
+      "badgeText": "Lokal behandling"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Documents Stay on Device",
-      "content": "Invoices, contracts, and ID scans processed entirely in browser memory without any server access."
+      "type": "scan_privacy_security",
+      "title": "Skannede dokumenter forblir på enheten",
+      "content": "Fakturaer, kontrakter og ID-skanninger behandles utelukkende i nettleserminnet uten noen servertilgang.",
+      "badgeText": "Sikkerhet først"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Scans in Real Time",
-      "content": "Photo enhancement and PDF generation happens in milliseconds, even for high-resolution camera shots."
+      "type": "scan_performance",
+      "title": "Konverter skanninger i sanntid",
+      "content": "Fotoforbedring og PDF-generering skjer på millisekunder, selv for høyoppløselige kamerabilder.",
+      "badgeText": "Lynrask"
     }
   ],
   "faqs": [
     {
-      "q": "What photo formats are supported?",
-      "a": "JPG, PNG, WebP, and HEIC from modern cameras."
+      "q": "Hvilke bildeformater støttes?",
+      "a": "JPG, PNG, WebP og HEIC fra moderne kameraer."
     },
     {
-      "q": "Does it fix tilted scans?",
-      "a": "Yes, auto-deskew corrects slight angles automatically."
+      "q": "Løser den skråstilte skanninger?",
+      "a": "Ja, automatisk skråstilling korrigerer små vinkler automatisk."
     },
     {
-      "q": "Can I combine multiple scans?",
-      "a": "Yes, add multiple photos to create a multi-page PDF."
+      "q": "Kan jeg kombinere flere skanninger?",
+      "a": "Ja, legg til flere bilder for å lage en flersidig PDF."
     },
     {
-      "q": "Does it enhance contrast?",
-      "a": "Yes, document enhancement mode sharpens text for clarity."
+      "q": "Forsterker det kontrasten?",
+      "a": "Ja, dokumentforbedringsmodus gjør tekst skarpere for klarhet."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, helt gratis."
+      "q": "Er dette gratis?",
+      "a": "Ja, alltid gratis."
     }
-  ]
+  ],
+  "faqTitle": "Ofte stilte spørsmål",
+  "supportCenter": "Støttesenter"
 }

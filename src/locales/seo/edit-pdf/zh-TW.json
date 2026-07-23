@@ -1,0 +1,85 @@
+{
+  "title": "編輯 PDF - 免費離線 PDF 編輯器",
+  "h1": "直接在瀏覽器中編輯 PDF 文件",
+  "description": "在本地向 PDF 文件添加文字、簽名和註釋。 沒有上傳，最大程度的隱私。 100% 安全的本地處理。",
+  "sections": [
+    {
+      "type": "edit_hero_features",
+      "title": "為什麼要在本地編輯 PDF？",
+      "content": "將敏感合約和表格上傳到雲端編輯器會帶來巨大的隱私風險。 我們的 WebAssembly 編輯器直接在您的裝置上執行，確保您的文件永遠不會離開您的電腦。"
+    },
+    {
+      "type": "edit_how_to_steps",
+      "title": "如何編輯 PDF",
+      "steps": [
+        {
+          "title": "開啟文件",
+          "description": "選擇您要註解或簽署的 PDF 檔案。"
+        },
+        {
+          "title": "添加文字和元素",
+          "description": "使用我們直覺的工具添加文字、繪製或放置圖像。"
+        },
+        {
+          "title": "儲存變更",
+          "description": "立即匯出修改後的 PDF，無需等待下載。"
+        }
+      ],
+      "badgeText": "快速指南"
+    },
+    {
+      "type": "edit_geo_targeting",
+      "title": "100% 安全的本地處理",
+      "content": "所有操作都直接在本地設備上執行。 我們使用先進的 WebAssembly 技術來處理您的文檔，而無需將其上傳到外部伺服器，從而確保完全的隱私。",
+      "badgeText": "本地處理"
+    },
+    {
+      "type": "edit_privacy_security",
+      "title": "零資料傳輸",
+      "content": "與將檔案上傳到伺服器的傳統 PDF 編輯器不同，我們的平台會處理瀏覽器記憶體中的所有內容。",
+      "badgeText": "安全第一"
+    },
+    {
+      "type": "edit_performance",
+      "title": "即時離線渲染",
+      "content": "我們的編輯器可以在幾毫秒內載入巨大的 PDF 檔案。 您可以添加數百個註釋，而不會出現任何延遲或網路延遲。",
+      "badgeText": "快如閃電"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "我可以編輯 PDF 中的現有文字嗎？",
+      "a": "目前，您可以在現有文件上新增文字、形狀和圖像。"
+    },
+    {
+      "q": "我的檔案上傳到任何地方了嗎？",
+      "a": "不會，所有編輯都使用 WebAssembly 在瀏覽器本地進行。"
+    },
+    {
+      "q": "我可以簽署文件嗎？",
+      "a": "是的，您可以繪製簽名或上傳簽名影像。"
+    },
+    {
+      "q": "該編輯器可以免費使用嗎？",
+      "a": "是的，它 100% 免費，沒有高級付費牆或隱藏費用。"
+    },
+    {
+      "q": "它適用於行動裝置嗎？",
+      "a": "是的，編輯器具有完全響應能力，並支援觸控輸入進行繪圖。"
+    }
+  ],
+  "badges": [
+    "無浮水印",
+    "100% 免費",
+    "離線編輯器"
+  ],
+  "stats": [
+    "100% Private",
+    "0 Server Uploads",
+    "Client-Side Only",
+    "No Accounts"
+  ],
+  "buttonText": "Start Editing",
+  "faqTitle": "常見問題",
+  "supportCenter": "支援中心"
+}

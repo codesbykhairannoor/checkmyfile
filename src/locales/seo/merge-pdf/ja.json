@@ -1,67 +1,78 @@
 {
-  "title": "Merge PDF - Combine Documents Offline",
-  "h1": "Merge PDF Files Instantly in Your Browser",
-  "description": "Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, perfect for users in Tokyo.",
+  "title": "PDF の結合 - オフラインでドキュメントを結合",
+  "h1": "ブラウザで PDF ファイルを即座に結合",
+  "description": "純粋なクライアント側 WebAssembly を使用して、複数の PDF ファイルを 1 つのドキュメントに結合します。 ファイルのアップロードがないため、ニューヨークのユーザーに最適です。",
   "sections": [
     {
       "type": "merge_hero_features",
-      "title": "Why Merge PDF Offline?",
-      "content": "Instead of uploading sensitive documents to a server, our Merge PDF tool stitches your pages together directly in your browser. Complete privacy."
+      "title": "PDF をオフラインで結合する理由",
+      "content": "機密文書をサーバーにアップロードする代わりに、PDF 結合ツールはブラウザーで直接ページを結合します。 完全なプライバシー。"
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Merge PDF Files",
+      "title": "PDF ファイルを結合する方法",
       "steps": [
         {
-          "title": "Add Documents",
-          "description": "Select the PDFs you want to merge together."
+          "title": "ドキュメントを追加",
+          "description": "結合したい PDF を選択します。"
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop files to get the perfect sequence."
+          "title": "ページの並べ替え",
+          "description": "ファイルをドラッグ アンド ドロップして、完璧なシーケンスを取得します。"
         },
         {
-          "title": "Merge & Save",
-          "description": "Click merge and download your combined document instantly."
+          "title": "結合して保存",
+          "description": "「結合」をクリックすると、結合されたドキュメントが即座にダウンロードされます。"
         }
-      ]
+      ],
+      "badgeText": "クイックガイド"
     },
     {
       "type": "merge_geo_targeting",
-      "title": "Seamless Merging for users in Tokyo, JP-13",
-      "content": "No matter if you are in Tokyo or traveling, combining documents takes zero milliseconds of upload time."
+      "title": "100% 安全なローカル処理",
+      "content": "すべての操作はローカル デバイス上で直接実行されます。 当社は高度な WebAssembly テクノロジーを使用して、ドキュメントを外部サーバーにアップロードすることなく処理し、完全なプライバシーを確​​保します。",
+      "badgeText": "ローカル処理"
     },
     {
       "type": "merge_privacy_security",
-      "title": "Enterprise-Grade Document Combining",
-      "content": "Merging contracts and invoices? Do it securely with our WASM engine. No traces left behind."
+      "title": "エンタープライズ グレードのドキュメント結合",
+      "content": "契約書と請求書を統合しますか? WASM エンジンを使用して安全に実行します。 痕跡も残らない。",
+      "badgeText": "セキュリティ第一"
     },
     {
       "type": "merge_performance",
-      "title": "Instant Combination",
-      "content": "Stitching PDFs locally means you can merge a 500-page document faster than you can upload it."
+      "title": "インスタントコンビネーション",
+      "content": "PDF をローカルで結合すると、500 ページのドキュメントをアップロードするよりも早く結合できることになります。",
+      "badgeText": "超高速"
     }
   ],
   "faqs": [
     {
-      "q": "Is merging PDFs completely free?",
-      "a": "Yes! Merge as many files as you want without paying a cent."
+      "q": "PDF の結合は完全に無料ですか?",
+      "a": "はい！ 1 円も支払うことなく、好きなだけファイルを結合できます。"
     },
     {
-      "q": "Are my merged files uploaded?",
-      "a": "No, all merging happens offline in your browser."
+      "q": "結合されたファイルはアップロードされていますか?",
+      "a": "いいえ、すべての結合はブラウザーでオフラインで行われます。"
     },
     {
-      "q": "Can I reorder the files before merging?",
-      "a": "Yes, just drag and drop the files in the preview window."
+      "q": "結合する前にファイルの順序を変更できますか?",
+      "a": "はい、プレビュー ウィンドウにファイルをドラッグ アンド ドロップするだけです。"
     },
     {
-      "q": "Is there a limit on how many files I can merge?",
-      "a": "No artificial limits! Merge 10 or 100 files depending on your RAM."
+      "q": "マージできるファイルの数に制限はありますか?",
+      "a": "人為的な制限はありません! RAM に応じて 10 または 100 個のファイルをマージします。"
     },
     {
-      "q": "Does merging ruin the formatting?",
-      "a": "Not at all. The original layers and vector data are perfectly stitched together."
+      "q": "結合すると書式が損なわれますか?",
+      "a": "全くない。 元のレイヤーとベクター データが完全に結合されています。"
     }
+  ],
+  "faqTitle": "よくある質問",
+  "supportCenter": "サポート センター",
+  "badges": [
+    "サーバー遅延ゼロ",
+    "アップロード帯域幅がありません",
+    "即時処理"
   ]
 }

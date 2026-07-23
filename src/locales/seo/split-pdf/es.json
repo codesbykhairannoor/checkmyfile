@@ -1,67 +1,85 @@
 {
-  "title": "Dividir PDF - Extraer Páginas Localmente",
-  "h1": "Divide y Extrae Páginas PDF en Segundos",
-  "description": "Extrae páginas específicas o divide un PDF grande en varios archivos localmente. Ideal para usuarios en Madrid.",
+  "title": "Dividir PDF: extraer páginas de forma segura",
+  "h1": "Divida y extraiga páginas PDF en segundos",
+  "description": "Extraiga páginas específicas o divida un PDF grande en varios archivos localmente en su navegador. Rápido y completamente seguro.",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "¿Por qué Dividir PDF Offline?",
-      "content": "Al tratar con documentos enormes, extraer una sola página no debería requerir subir un archivo de 1GB. Hazlo al instante en tu equipo."
+      "title": "¿Por qué dividir archivos PDF localmente?",
+      "content": "Cuando se trata de documentos legales o corporativos masivos, extraer una sola página no debería requerir cargar un archivo de 1 GB. Hágalo instantáneamente directamente en su máquina."
     },
     {
       "type": "split_how_to_steps",
-      "title": "Cómo Extraer Páginas",
+      "title": "Cómo extraer páginas",
       "steps": [
         {
-          "title": "Abre el Documento",
-          "description": "Carga el PDF de varias páginas que deseas dividir."
+          "title": "Abrir documento",
+          "description": "Cargue el PDF de varias páginas que desea dividir."
         },
         {
-          "title": "Selecciona Rangos",
-          "description": "Elige números de página específicos o selecciónalos visualmente."
+          "title": "Seleccionar rangos",
+          "description": "Elija números de página específicos o seleccione visualmente las páginas para extraer."
         },
         {
-          "title": "Exportar Zip",
-          "description": "Descarga tus archivos recién divididos organizados en un ZIP."
+          "title": "Exportar código postal",
+          "description": "Descargue sus archivos recién divididos organizados en un ZIP."
         }
-      ]
+      ],
+      "badgeText": "Guía rápida"
     },
     {
       "type": "split_geo_targeting",
-      "title": "El Mejor Divisor en Madrid, ES-M",
-      "content": "Ya sea que estudies en Madrid o trabajes, extraer páginas es ahora instantáneo."
+      "title": "Procesamiento local 100% seguro",
+      "content": "Todas las operaciones se realizan directamente en su dispositivo local. Utilizamos tecnología avanzada de WebAssembly para procesar sus documentos sin tener que cargarlos en servidores externos, lo que garantiza una privacidad total.",
+      "badgeText": "Procesamiento local"
     },
     {
       "type": "split_privacy_security",
-      "title": "Privacidad Total de Páginas",
-      "content": "¿Dividiendo registros confidenciales? Nuestro código se ejecuta puramente en tu entorno local."
+      "title": "Privacidad total de la página",
+      "content": "¿Dividir registros confidenciales de empleados? Descanse tranquilo sabiendo que nuestro código se ejecuta exclusivamente en su entorno local.",
+      "badgeText": "La seguridad es lo primero"
     },
     {
       "type": "split_performance",
-      "title": "Extracción sin Subida",
-      "content": "Tomar la página 14 de un PDF de 2000 páginas lleva milisegundos, omitiendo la subida."
+      "title": "Extracción sin carga",
+      "content": "Tomar la página 14 de un PDF de 2000 páginas lleva milisegundos, omitiendo por completo el insoportable paso de carga.",
+      "badgeText": "A la velocidad del rayo"
     }
   ],
   "faqs": [
     {
       "q": "¿Cómo extraigo solo una página?",
-      "a": "Simplemente haz clic en la miniatura de la página y pulsa Exportar."
+      "a": "Simplemente haga clic en la miniatura de la página que desee y presione Exportar."
     },
     {
-      "q": "¿Puedo dividir el PDF a la mitad?",
-      "a": "Sí, especificando rangos personalizados como 1-10 y 11-20."
+      "q": "¿Puedo dividir el PDF por la mitad?",
+      "a": "Sí, puede especificar rangos de páginas personalizados como 1-10 y 11-20."
     },
     {
-      "q": "¿Perderán calidad las páginas?",
-      "a": "No, el proceso conserva el 100% de la calidad original."
+      "q": "¿Las páginas extraídas perderán calidad?",
+      "a": "No, el proceso de división utiliza extracción binaria, preservando el 100% de la calidad original."
     },
     {
-      "q": "¿Se sube mi documento al dividirlo?",
-      "a": "Nunca. El documento entero se queda en tu navegador."
+      "q": "¿Se carga mi documento al dividirlo?",
+      "a": "Nunca. El documento completo de 2000 páginas permanece estrictamente en su navegador."
     },
     {
-      "q": "¿Hay límite de páginas?",
-      "a": "¡Sin límites! Divide tantas páginas como aguante tu computadora."
+      "q": "¿Existe un límite en la cantidad de páginas que puedo dividir?",
+      "a": "¡Sin límites! Divida tantas páginas como su computadora pueda manejar."
     }
-  ]
+  ],
+  "badges": [
+    "División instantánea",
+    "Rango preciso",
+    "Sin límites"
+  ],
+  "stats": [
+    "Ultra Fast",
+    "No Upload",
+    "Batch Zip",
+    "Secure"
+  ],
+  "buttonText": "Split PDF",
+  "faqTitle": "Preguntas frecuentes",
+  "supportCenter": "Centro de soporte"
 }

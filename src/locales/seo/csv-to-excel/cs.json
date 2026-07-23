@@ -1,67 +1,85 @@
 {
-  "title": "CSV to Excel Converter — Offline & Instant",
-  "h1": "Convert CSV Files to Excel Spreadsheets Locally",
-  "description": "Transform .csv files into structured .xlsx spreadsheets entirely in your browser. No upload. Perfect for data teams in Prague.",
+  "title": "Převaděč CSV do Excelu — offline a okamžitě",
+  "h1": "Převést soubory CSV na tabulky aplikace Excel lokálně",
+  "description": "Transformujte soubory .csv na strukturované tabulky .xlsx zcela ve svém prohlížeči. Žádné nahrávání. 100% bezpečné místní zpracování.",
+  "buttonText": "Convert CSV",
+  "badges": [
+    "Podpora UTF-8",
+    "Vícesloupcové",
+    "Okamžitý převod"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Convert CSV Offline?",
-      "content": "CSV files often contain customer or financial data. Convert them to Excel locally without exposing your datasets to any cloud service."
+      "type": "csv_excel_hero_features",
+      "title": "Proč převádět CSV offline?",
+      "content": "Soubory CSV často obsahují zákaznická nebo finanční data. Převeďte je do Excelu lokálně, aniž byste své datové sady vystavovali jakékoli cloudové službě."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert CSV to Excel",
+      "type": "csv_excel_how_to_steps",
+      "title": "Jak převést CSV do Excelu",
       "steps": [
         {
-          "title": "Open CSV File",
-          "description": "Select the CSV file to convert."
+          "title": "Otevřít soubor CSV",
+          "description": "Vyberte soubor CSV, který chcete převést."
         },
         {
-          "title": "Preview Data",
-          "description": "See the parsed columns and rows before export."
+          "title": "Náhled dat",
+          "description": "Před exportem si prohlédněte analyzované sloupce a řádky."
         },
         {
-          "title": "Download .xlsx",
-          "description": "Get your Excel spreadsheet instantly."
+          "title": "Stáhnout .xlsx",
+          "description": "Získejte okamžitě svou tabulku Excel."
         }
-      ]
+      ],
+      "badgeText": "Rychlý průvodce"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Data Tools for Prague Analysts",
-      "content": "Data analysts in Prague convert CSV exports to Excel without uploading sensitive datasets."
+      "type": "csv_excel_geo_targeting",
+      "title": "100% bezpečné místní zpracování",
+      "content": "Všechny operace se provádějí přímo na vašem místním zařízení. Ke zpracování vašich dokumentů používáme pokročilou technologii WebAssembly, aniž bychom je kdy nahrávali na externí servery, což zajišťuje naprosté soukromí.",
+      "badgeText": "Místní zpracování"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Customer Data Stays on Your Machine",
-      "content": "CRM exports, transaction logs, and survey data converted locally with zero cloud involvement."
+      "type": "csv_excel_privacy_security",
+      "title": "Zákaznická data zůstávají na vašem počítači",
+      "content": "Exporty CRM, transakční protokoly a data průzkumů konvertovaná lokálně bez zapojení cloudu.",
+      "badgeText": "Bezpečnost především"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Large CSV Files Instantly",
-      "content": "Convert a 100,000-row CSV to Excel in seconds. All browser-native processing."
+      "type": "csv_excel_performance",
+      "title": "Okamžitý převod velkých souborů CSV",
+      "content": "Převeďte 100 000 řádků CSV do Excelu během několika sekund. Veškeré zpracování nativní pro prohlížeč.",
+      "badgeText": "Bleskově rychlý"
     }
   ],
   "faqs": [
     {
-      "q": "Is the column structure preserved?",
-      "a": "Yes, all columns are mapped to Excel columns."
+      "q": "Je zachována sloupová struktura?",
+      "a": "Ano, všechny sloupce jsou mapovány na sloupce Excelu."
     },
     {
-      "q": "Can I convert multiple CSVs?",
-      "a": "Yes, batch conversion to multiple sheets is supported."
+      "q": "Mohu převést více souborů CSV?",
+      "a": "Ano, je podporována dávková konverze na více listů."
     },
     {
-      "q": "Are special characters handled?",
-      "a": "Yes, UTF-8 and various encodings are supported."
+      "q": "Jsou zpracovávány speciální znaky?",
+      "a": "Ano, je podporováno UTF-8 a různá kódování."
     },
     {
-      "q": "Can I set delimiters?",
-      "a": "Yes, comma, semicolon, and tab delimiters are supported."
+      "q": "Mohu nastavit oddělovače?",
+      "a": "Ano, čárka, středník a tabulátor jsou podporovány."
     },
     {
-      "q": "Is this free?",
-      "a": "Ano, zcela zdarma."
+      "q": "Je to zdarma?",
+      "a": "Ano, vždy zdarma."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
 }

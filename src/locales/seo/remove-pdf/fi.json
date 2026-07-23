@@ -1,0 +1,85 @@
+{
+  "title": "Poista sivut PDF:stä — Poista PDF-sivut offline-tilassa",
+  "h1": "Poista sivut PDF-tiedostosta välittömästi",
+  "description": "Poista ei-toivotut sivut PDF-tiedostostasi turvallisesti selaimessasi. Nopea ja täysin turvallinen.",
+  "buttonText": "Remove Pages",
+  "badges": [
+    "Valitse ja poista",
+    "Visuaalinen editori",
+    "Nolla latenssia"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "remove_hero_features",
+      "title": "Miksi sivut poistetaan paikallisesti?",
+      "content": "Arkaluonteisten tai tarpeettomien sivujen poistaminen asiakirjasta tulee tehdä laitteellasi, ei palvelimella. Takaamme 100 % yksityisyyden."
+    },
+    {
+      "type": "remove_how_to_steps",
+      "title": "PDF-sivujen poistaminen",
+      "steps": [
+        {
+          "title": "Avaa PDF",
+          "description": "Lataa PDF, jonka haluat puhdistaa."
+        },
+        {
+          "title": "Valitse poistettavat sivut",
+          "description": "Vie hiiri sivujen päälle ja napsauta roskakorikuvaketta merkitäksesi ne poistettaviksi."
+        },
+        {
+          "title": "Vie puhdas PDF",
+          "description": "Lataa uusi PDF ilman poistettuja sivuja."
+        }
+      ],
+      "badgeText": "Pikaopas"
+    },
+    {
+      "type": "remove_geo_targeting",
+      "title": "100 % suojattu paikallinen käsittely",
+      "content": "Kaikki toiminnot suoritetaan suoraan paikallisella laitteellasi. Käytämme edistynyttä WebAssembly-tekniikkaa asiakirjojen käsittelyyn lataamatta niitä koskaan ulkoisille palvelimille, mikä takaa täydellisen yksityisyyden.",
+      "badgeText": "Paikallinen käsittely"
+    },
+    {
+      "type": "remove_privacy_security",
+      "title": "Täydellinen poistamisen tietosuoja",
+      "content": "Kun poistat sivun, se poistetaan pysyvästi selaimesi muistissa olevasta asiakirjasta ennen tallentamista.",
+      "badgeText": "Turvallisuus ensin"
+    },
+    {
+      "type": "remove_performance",
+      "title": "Sivun välitön poisto",
+      "content": "Sivujen purkaminen ja poistaminen jopa 1000-sivuisesta asiakirjasta kestää millisekunteja optimoidun WASM-moottorimme avulla.",
+      "badgeText": "Salamannopeasti"
+    }
+  ],
+  "faqTitle": "Usein kysytyt kysymykset",
+  "faqs": [
+    {
+      "q": "Ovatko poistetut sivut palautettavissa?",
+      "a": "Kun olet ladannut uuden PDF-tiedoston, poistetut sivut poistetaan pysyvästi kyseisestä tiedostosta. Alkuperäinen tiedostosi pysyy koskemattomana."
+    },
+    {
+      "q": "Pitääkö minun ladata PDF-tiedosto?",
+      "a": "Ei. Koko sivun poistoprosessi tapahtuu paikallisesti verkkoselaimessasi."
+    },
+    {
+      "q": "Onko rajoitettu kuinka monta sivua voin poistaa?",
+      "a": "Ei, voit poistaa niin monta sivua kuin haluat, täysin ilmaiseksi."
+    },
+    {
+      "q": "Muuttuuko jäljellä olevien sivujen asettelu?",
+      "a": "Ei, muut sivut säilyttävät tarkan alkuperäisen muotoilunsa ja asettelunsa."
+    },
+    {
+      "q": "Voinko valita useita sivuja kerralla?",
+      "a": "Kyllä, voit napsauttaa useita sivuja merkitäksesi ne kaikki poistettavaksi samanaikaisesti."
+    }
+  ],
+  "supportCenter": "Tukikeskus"
+}

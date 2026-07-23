@@ -1,67 +1,80 @@
 {
-  "title": "Word to PDF Converter — No Upload Required",
-  "h1": "Convert Word Documents to PDF Instantly",
-  "description": "Transform .docx files into perfect PDFs directly in your browser. Zero upload, 100% private. Ideal for users in Jerusalem.",
+  "title": "ממיר Word ל-PDF — אין צורך בהעלאה",
+  "h1": "המר מסמכי Word ל-PDF באופן מיידי",
+  "description": "הפוך קובצי docx לקובצי PDF מושלמים ישירות בדפדפן שלך. אפס העלאה, 100% פרטי. אידיאלי למשתמשים בירושלים.",
+  "buttonText": "המר מסמך",
+  "badges": [
+    "חוזי עבודה",
+    "תקצירים משפטיים",
+    "קורות חיים וקורות חיים"
+  ],
+  "stats": [
+    "100%",
+    "מְקוֹמִי",
+    "0s",
+    "זמן המתנה"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Word to PDF Offline?",
-      "content": "Your Word document contains sensitive data. Our converter runs entirely in WebAssembly — your file never touches a server."
+      "type": "word_hero_features",
+      "title": "למה להשתמש במצב לא מקוון?",
+      "content": "מסמך Word שלך מכיל נתונים רגישים. הממיר שלנו פועל כולו ב-WebAssembly - הקובץ שלך לעולם לא נוגע בשרת."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Word to PDF",
+      "type": "word_how_to_steps",
+      "title": "איך להשתמש",
       "steps": [
         {
-          "title": "Select .docx File",
-          "description": "Pick your Word document from your computer."
+          "title": "בחר קובץ .docx",
+          "description": "בחר את מסמך ה-Word מהמחשב שלך."
         },
         {
-          "title": "Preview Output",
-          "description": "See the PDF rendering before finalizing."
+          "title": "פלט תצוגה מקדימה",
+          "description": "ראה את עיבוד ה-PDF לפני סיום."
         },
         {
-          "title": "Download PDF",
-          "description": "Save your perfectly converted PDF instantly."
+          "title": "הורד PDF",
+          "description": "שמור את ה-PDF שהומר בצורה מושלמת באופן מיידי."
         }
       ]
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Word to PDF for Jerusalem Users",
-      "content": "Used by professionals in Jerusalem who need to share documents without losing formatting."
+      "type": "word_geo_targeting",
+      "title": "Word ל-PDF עבור משתמשי ירושלים",
+      "content": "משמש אנשי מקצוע בירושלים שצריכים לשתף מסמכים מבלי לאבד את העיצוב."
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Your Contracts Stay Private",
-      "content": "Converting employment contracts? Legal briefs? Our WASM processor never phones home."
+      "type": "word_privacy_security",
+      "title": "החוזים שלך נשארים פרטיים",
+      "content": "המרת חוזי עבודה? תקצירים משפטיים? מעבד ה-WASM שלנו אף פעם לא מתקשר הביתה."
     },
     {
-      "type": "combiner_performance",
-      "title": "No More Conversion Queues",
-      "content": "Cloud converters put you in a queue. Ours converts in under 2 seconds, entirely offline."
+      "type": "word_performance",
+      "title": "אין עוד תורי המרות",
+      "content": "ממירי ענן מעמידים אותך בתור. שלנו ממיר תוך פחות מ-2 שניות, לגמרי לא מקוון."
     }
   ],
   "faqs": [
     {
-      "q": "Does it preserve Word formatting?",
-      "a": "Yes, fonts, tables, and images are preserved using our WASM renderer."
+      "q": "האם זה שומר על עיצוב וורד?",
+      "a": "כן, גופנים, טבלאות ותמונות נשמרים באמצעות מעבד ה-WASM שלנו."
     },
     {
-      "q": "What Word versions are supported?",
-      "a": "All modern .docx files are supported."
+      "q": "אילו גרסאות Word נתמכות?",
+      "a": "כל קבצי docx המודרניים נתמכים."
     },
     {
-      "q": "Is there a file size limit?",
-      "a": "No server limits! Only your device RAM is the constraint."
+      "q": "האם יש מגבלת גודל קובץ?",
+      "a": "אין מגבלות שרת! רק זיכרון ה-RAM של המכשיר שלך הוא האילוץ."
     },
     {
-      "q": "Can I batch convert multiple files?",
-      "a": "Yes, select multiple .docx files at once."
+      "q": "האם אני יכול להמיר קבצים מרובים?",
+      "a": "כן, בחר מספר קובצי docx בו-זמנית."
     },
     {
-      "q": "Is this free?",
+      "q": "האם זה בחינם?",
       "a": "כן, חינם לחלוטין."
     }
-  ]
+  ],
+  "faqTitle": "שאלות נפוצות"
 }

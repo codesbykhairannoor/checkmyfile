@@ -1,67 +1,85 @@
 {
-  "title": "Excel to PDF — Convert Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to PDF Securely",
-  "description": "Turn .xlsx and .csv files into crisp PDFs locally in your browser. Financial data stays on your device. Perfect for users in Kyiv.",
+  "title": "Excel у PDF — конвертуйте електронні таблиці офлайн",
+  "h1": "Безпечно конвертуйте електронні таблиці Excel у PDF",
+  "description": "Перетворіть файли .xlsx і .csv на чіткі PDF-файли локально у вашому браузері. Фінансові дані залишаються на вашому пристрої. 100% безпечна локальна обробка.",
+  "buttonText": "Convert Spreadsheet",
+  "badges": [
+    "Фінансові звіти",
+    "Рахунки",
+    "Експорт даних"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Excel Offline?",
-      "content": "Spreadsheets often contain sensitive financial data. Our browser-based engine converts without any server involvement."
+      "type": "excel_hero_features",
+      "title": "Навіщо конвертувати Excel Offline?",
+      "content": "Електронні таблиці часто містять конфіденційні фінансові дані. Наш двигун на основі браузера перетворює без участі сервера."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Export Excel as PDF",
+      "type": "excel_how_to_steps",
+      "title": "Як експортувати Excel як PDF",
       "steps": [
         {
-          "title": "Open Spreadsheet",
-          "description": "Select your .xlsx or .csv file."
+          "title": "Відкрити електронну таблицю",
+          "description": "Виберіть файл .xlsx або .csv."
         },
         {
-          "title": "Choose Sheet Range",
-          "description": "Pick which sheets or rows to include."
+          "title": "Виберіть Діапазон аркушів",
+          "description": "Виберіть, які аркуші або рядки включити."
         },
         {
-          "title": "Export as PDF",
-          "description": "Download your spreadsheet as a clean PDF."
+          "title": "Експортувати як PDF",
+          "description": "Завантажте свою електронну таблицю як чистий PDF."
         }
-      ]
+      ],
+      "badgeText": "Короткий посібник"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Excel to PDF for Kyiv Businesses",
-      "content": "Businesses in Kyiv use our tool to share financial reports without exposing raw spreadsheet data."
+      "type": "excel_geo_targeting",
+      "title": "100% безпечна локальна обробка",
+      "content": "Усі операції виконуються безпосередньо на локальному пристрої. Ми використовуємо передову технологію WebAssembly для обробки ваших документів, не завантажуючи їх на зовнішні сервери, забезпечуючи повну конфіденційність.",
+      "badgeText": "Локальна обробка"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Protect Financial Spreadsheets",
-      "content": "Balance sheets, payroll data — all processed offline. Zero data sent to any third party."
+      "type": "excel_privacy_security",
+      "title": "Захист фінансових електронних таблиць",
+      "content": "Баланси, дані про заробітну плату — все обробляється офлайн. Нульові дані, надіслані будь-якій третій стороні.",
+      "badgeText": "Безпека перш за все"
     },
     {
-      "type": "combiner_performance",
-      "title": "Spreadsheet-to-PDF in Seconds",
-      "content": "No upload queue, no compression artifacts. Your spreadsheet renders natively in-browser."
+      "type": "excel_performance",
+      "title": "Перетворення електронної таблиці в PDF за лічені секунди",
+      "content": "Немає черги завантаження, немає артефактів стиснення. Ваша електронна таблиця відображається у веб-переглядачі.",
+      "badgeText": "Блискавичний"
     }
   ],
   "faqs": [
     {
-      "q": "Are all Excel formulas preserved?",
-      "a": "Yes, formula results are captured in the PDF snapshot."
+      "q": "Чи всі формули Excel збережені?",
+      "a": "Так, результати формули фіксуються на знімку PDF."
     },
     {
-      "q": "Can I convert multiple sheets?",
-      "a": "Yes, you can include all sheets or specific ones."
+      "q": "Чи можу я конвертувати кілька аркушів?",
+      "a": "Так, ви можете включити всі аркуші або окремі."
     },
     {
-      "q": "What file types are supported?",
-      "a": ".xlsx, .xls, and .csv are all supported."
+      "q": "Які типи файлів підтримуються?",
+      "a": "Підтримуються .xlsx, .xls і .csv."
     },
     {
-      "q": "Is this secure for financial data?",
-      "a": "Absolutely. The file never leaves your browser."
+      "q": "Це безпечно для фінансових даних?",
+      "a": "Абсолютно. Файл ніколи не залишає ваш браузер."
     },
     {
-      "q": "Does it support graphs?",
-      "a": "Так, повністю безкоштовно."
+      "q": "Чи підтримує він графіки?",
+      "a": "Діаграми та вбудовані графіки відображаються в PDF."
     }
-  ]
+  ],
+  "faqTitle": "Часті запитання",
+  "supportCenter": "Центр підтримки"
 }

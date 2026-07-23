@@ -1,67 +1,85 @@
 {
-  "title": "Excel to PDF — Convert Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to PDF Securely",
-  "description": "Turn .xlsx and .csv files into crisp PDFs locally in your browser. Financial data stays on your device. Perfect for users in Bangkok.",
+  "title": "Excel เป็น PDF — แปลงสเปรดชีตออฟไลน์",
+  "h1": "แปลงสเปรดชีต Excel เป็น PDF อย่างปลอดภัย",
+  "description": "เปลี่ยนไฟล์ .xlsx และ .csv ให้เป็น PDF ที่คมชัดภายในเบราว์เซอร์ของคุณ ข้อมูลทางการเงินจะยังคงอยู่ในอุปกรณ์ของคุณ การประมวลผลภายในที่ปลอดภัย 100%",
+  "buttonText": "Convert Spreadsheet",
+  "badges": [
+    "รายงานทางการเงิน",
+    "ใบแจ้งหนี้",
+    "การส่งออกข้อมูล"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Excel Offline?",
-      "content": "Spreadsheets often contain sensitive financial data. Our browser-based engine converts without any server involvement."
+      "type": "excel_hero_features",
+      "title": "เหตุใดจึงต้องแปลง Excel ออฟไลน์",
+      "content": "สเปรดชีตมักจะมีข้อมูลทางการเงินที่ละเอียดอ่อน เอ็นจิ้นที่ใช้เบราว์เซอร์ของเราจะแปลงโดยไม่ต้องเกี่ยวข้องกับเซิร์ฟเวอร์"
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Export Excel as PDF",
+      "type": "excel_how_to_steps",
+      "title": "วิธีส่งออก Excel เป็น PDF",
       "steps": [
         {
-          "title": "Open Spreadsheet",
-          "description": "Select your .xlsx or .csv file."
+          "title": "เปิดสเปรดชีต",
+          "description": "เลือกไฟล์ .xlsx หรือ .csv ของคุณ"
         },
         {
-          "title": "Choose Sheet Range",
-          "description": "Pick which sheets or rows to include."
+          "title": "เลือกช่วงแผ่นงาน",
+          "description": "เลือกแผ่นงานหรือแถวที่จะรวม"
         },
         {
-          "title": "Export as PDF",
-          "description": "Download your spreadsheet as a clean PDF."
+          "title": "ส่งออกเป็น PDF",
+          "description": "ดาวน์โหลดสเปรดชีตของคุณเป็น PDF ที่สะอาดตา"
         }
-      ]
+      ],
+      "badgeText": "คู่มือฉบับย่อ"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Excel to PDF for Bangkok Businesses",
-      "content": "Businesses in Bangkok use our tool to share financial reports without exposing raw spreadsheet data."
+      "type": "excel_geo_targeting",
+      "title": "การประมวลผลภายในที่ปลอดภัย 100%",
+      "content": "การดำเนินการทั้งหมดดำเนินการโดยตรงบนอุปกรณ์ท้องถิ่นของคุณ เราใช้เทคโนโลยี WebAssembly ขั้นสูงเพื่อประมวลผลเอกสารของคุณโดยไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ภายนอก เพื่อให้มั่นใจถึงความเป็นส่วนตัวโดยสมบูรณ์",
+      "badgeText": "การประมวลผลในท้องถิ่น"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Protect Financial Spreadsheets",
-      "content": "Balance sheets, payroll data — all processed offline. Zero data sent to any third party."
+      "type": "excel_privacy_security",
+      "title": "ปกป้องสเปรดชีตทางการเงิน",
+      "content": "งบดุล ข้อมูลบัญชีเงินเดือน — ประมวลผลแบบออฟไลน์ทั้งหมด ไม่มีข้อมูลที่ส่งไปยังบุคคลที่สาม",
+      "badgeText": "ความปลอดภัยต้องมาก่อน"
     },
     {
-      "type": "combiner_performance",
-      "title": "Spreadsheet-to-PDF in Seconds",
-      "content": "No upload queue, no compression artifacts. Your spreadsheet renders natively in-browser."
+      "type": "excel_performance",
+      "title": "สเปรดชีตเป็น PDF ในไม่กี่วินาที",
+      "content": "ไม่มีคิวการอัปโหลด ไม่มีสิ่งแปลกปลอมในการบีบอัด สเปรดชีตของคุณแสดงผลในเบราว์เซอร์",
+      "badgeText": "เร็วปานสายฟ้า"
     }
   ],
   "faqs": [
     {
-      "q": "Are all Excel formulas preserved?",
-      "a": "Yes, formula results are captured in the PDF snapshot."
+      "q": "สูตร Excel ทั้งหมดจะยังคงอยู่หรือไม่",
+      "a": "ใช่ ผลลัพธ์ของสูตรจะถูกบันทึกไว้ในสแน็ปช็อต PDF"
     },
     {
-      "q": "Can I convert multiple sheets?",
-      "a": "Yes, you can include all sheets or specific ones."
+      "q": "ฉันสามารถแปลงหลายแผ่นได้หรือไม่",
+      "a": "ได้ คุณสามารถรวมแผ่นงานทั้งหมดหรือเฉพาะแผ่นงานก็ได้"
     },
     {
-      "q": "What file types are supported?",
-      "a": ".xlsx, .xls, and .csv are all supported."
+      "q": "รองรับไฟล์ประเภทใดบ้าง?",
+      "a": "รองรับ .xlsx, .xls และ .csv ทั้งหมด"
     },
     {
-      "q": "Is this secure for financial data?",
-      "a": "Absolutely. The file never leaves your browser."
+      "q": "ข้อมูลทางการเงินนี้ปลอดภัยหรือไม่",
+      "a": "อย่างแน่นอน. ไฟล์จะไม่ออกจากเบราว์เซอร์ของคุณ"
     },
     {
-      "q": "Does it support graphs?",
-      "a": "ใช่ ฟรีทั้งหมด"
+      "q": "รองรับกราฟมั้ย?",
+      "a": "แผนภูมิและกราฟแบบฝังจะแสดงผลในรูปแบบ PDF"
     }
-  ]
+  ],
+  "faqTitle": "คำถามที่พบบ่อย",
+  "supportCenter": "ศูนย์สนับสนุน"
 }

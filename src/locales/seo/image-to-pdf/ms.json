@@ -1,67 +1,85 @@
 {
-  "title": "Image to PDF — Combine Photos Offline",
-  "h1": "Convert Images to PDF Without Uploading",
-  "description": "Turn JPG, PNG, and WebP images into a single PDF document in your browser. Your photos stay private. Perfect for users in Kuala Lumpur.",
+  "title": "Imej ke PDF — Gabungkan Foto Luar Talian",
+  "h1": "Tukar Imej kepada PDF Tanpa Memuat Naik",
+  "description": "Tukar imej JPG, PNG dan WebP menjadi satu dokumen PDF dalam penyemak imbas anda. Foto anda kekal peribadi. 100% pemprosesan tempatan selamat.",
+  "buttonText": "Convert Images",
+  "badges": [
+    "Portfolio",
+    "Imbasan ID",
+    "Album Foto"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Images Offline?",
-      "content": "Photos contain location data and personal moments. Convert them to PDF without exposing them to any cloud service."
+      "type": "image_hero_features",
+      "title": "Mengapa Menukar Imej Luar Talian?",
+      "content": "Foto mengandungi data lokasi dan detik peribadi. Tukarkannya kepada PDF tanpa mendedahkannya kepada sebarang perkhidmatan awan."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Turn Images Into PDF",
+      "type": "image_how_to_steps",
+      "title": "Cara Mengubah Imej Menjadi PDF",
       "steps": [
         {
-          "title": "Select Images",
-          "description": "Choose JPG, PNG, or WebP files from your device."
+          "title": "Pilih Imej",
+          "description": "Pilih fail JPG, PNG atau WebP daripada peranti anda."
         },
         {
-          "title": "Arrange Order",
-          "description": "Drag to reorder images before generating the PDF."
+          "title": "Susun Pesanan",
+          "description": "Seret untuk menyusun semula imej sebelum menjana PDF."
         },
         {
-          "title": "Export PDF",
-          "description": "Download your image PDF in one click."
+          "title": "Eksport PDF",
+          "description": "Muat turun imej PDF anda dalam satu klik."
         }
-      ]
+      ],
+      "badgeText": "Panduan Pantas"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Image to PDF for Kuala Lumpur Users",
-      "content": "Photographers and designers in Kuala Lumpur use our tool to package portfolios without cloud uploads."
+      "type": "image_geo_targeting",
+      "title": "100% Pemprosesan Tempatan Selamat",
+      "content": "Semua operasi dilakukan terus pada peranti tempatan anda. Kami menggunakan teknologi WebAssembly termaju untuk memproses dokumen anda tanpa pernah memuat naiknya ke pelayan luaran, memastikan privasi lengkap.",
+      "badgeText": "Pemprosesan Setempat"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Photos Never Leave Your Device",
-      "content": "Personal photos, ID scans, medical images — all converted 100% locally without any server contact."
+      "type": "image_privacy_security",
+      "title": "Foto Tidak Pernah Meninggalkan Peranti Anda",
+      "content": "Foto peribadi, imbasan ID, imej perubatan — semuanya ditukar 100% secara tempatan tanpa sebarang hubungan pelayan.",
+      "badgeText": "Keselamatan Diutamakan"
     },
     {
-      "type": "combiner_performance",
-      "title": "Batch Convert Instantly",
-      "content": "Convert 50 images into a single PDF in under 5 seconds. No upload, no wait."
+      "type": "image_performance",
+      "title": "Penukaran Kelompok Serta-merta",
+      "content": "Tukar 50 imej kepada satu PDF dalam masa kurang daripada 5 saat. Tiada muat naik, jangan tunggu.",
+      "badgeText": "Sepantas Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are supported?",
-      "a": "JPG, JPEG, PNG, and WebP are all supported."
+      "q": "Apakah format imej yang disokong?",
+      "a": "JPG, JPEG, PNG dan WebP semuanya disokong."
     },
     {
-      "q": "Can I combine multiple images?",
-      "a": "Yes, select as many images as you want and reorder them."
+      "q": "Bolehkah saya menggabungkan berbilang imej?",
+      "a": "Ya, pilih seberapa banyak imej yang anda mahu dan susun semula mereka."
     },
     {
-      "q": "Is image quality preserved?",
-      "a": "Yes, images are embedded at their original resolution."
+      "q": "Adakah kualiti imej terpelihara?",
+      "a": "Ya, imej dibenamkan pada resolusi asalnya."
     },
     {
-      "q": "Does it strip EXIF metadata?",
-      "a": "You can optionally strip EXIF data for privacy."
+      "q": "Adakah ia menanggalkan metadata EXIF?",
+      "a": "Anda boleh menanggalkan data EXIF ​​​​untuk privasi secara pilihan."
     },
     {
-      "q": "Is there a limit on image count?",
-      "a": "Ya, percuma sepenuhnya."
+      "q": "Adakah terdapat had pada kiraan imej?",
+      "a": "Tiada had! Gabungkan beratus-ratus imej ke dalam satu PDF."
     }
-  ]
+  ],
+  "faqTitle": "Soalan Lazim",
+  "supportCenter": "Pusat Sokongan"
 }

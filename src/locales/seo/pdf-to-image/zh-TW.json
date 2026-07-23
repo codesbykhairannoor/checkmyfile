@@ -1,0 +1,85 @@
+{
+  "title": "PDF 到圖像轉換器 — 離線提取頁面",
+  "h1": "將 PDF 頁面轉換為 PNG 或 JPG 圖像",
+  "description": "直接在瀏覽器中將 PDF 中的每一頁提取為高品質圖像。 零上傳，100%安全本地處理。",
+  "buttonText": "Extract Images",
+  "badges": [
+    "設計作品集",
+    "演示",
+    "高品質"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "pdf_image_hero_features",
+      "title": "為什麼要離線提取 PDF 頁面？",
+      "content": "PDF 通常包含機密圖表、藍圖或報表。 將頁面提取為圖像，無需任何伺服器存取。"
+    },
+    {
+      "type": "pdf_image_how_to_steps",
+      "title": "如何將 PDF 轉換為圖像",
+      "steps": [
+        {
+          "title": "載入 PDF",
+          "description": "選擇您要從中提取圖像的 PDF。"
+        },
+        {
+          "title": "選擇格式",
+          "description": "選擇 PNG（無損）或 JPG（壓縮）輸出。"
+        },
+        {
+          "title": "下載圖片",
+          "description": "將所有頁面作為 ZIP 中的單獨影像檔案取得。"
+        }
+      ],
+      "badgeText": "快速指南"
+    },
+    {
+      "type": "pdf_image_geo_targeting",
+      "title": "100% 安全的本地處理",
+      "content": "所有操作都直接在本地設備上執行。 我們使用先進的 WebAssembly 技術來處理您的文檔，而無需將其上傳到外部伺服器，從而確保完全的隱私。",
+      "badgeText": "本地處理"
+    },
+    {
+      "type": "pdf_image_privacy_security",
+      "title": "機密圖表保密",
+      "content": "技術藍圖和法律文件以圖像形式提取，無需任何資料離開您的設備。",
+      "badgeText": "安全第一"
+    },
+    {
+      "type": "pdf_image_performance",
+      "title": "立即擷取所有頁面",
+      "content": "500 頁的 PDF 在幾秒鐘內轉換為影像。 無需上傳，無需等待。",
+      "badgeText": "快如閃電"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "有哪些影像格式可用？",
+      "a": "PNG 和 JPG 具有可調整的品質設定。"
+    },
+    {
+      "q": "我可以提取特定頁面嗎？",
+      "a": "是的，指定頁面範圍，例如 1-5 或 3,7,12。"
+    },
+    {
+      "q": "導出的影像解析度是多少？",
+      "a": "預設 150 DPI，可調至 300 DPI。"
+    },
+    {
+      "q": "是否一次導出所有頁面？",
+      "a": "是的，所有選定的頁面都會被壓縮以便一次下載。"
+    },
+    {
+      "q": "這是免費的嗎？",
+      "a": "永遠完全免費。"
+    }
+  ],
+  "faqTitle": "常見問題",
+  "supportCenter": "支援中心"
+}

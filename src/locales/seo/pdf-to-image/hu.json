@@ -1,67 +1,85 @@
 {
-  "title": "PDF to Image Converter — Extract Pages Offline",
-  "h1": "Convert PDF Pages to PNG or JPG Images",
-  "description": "Extract every page from a PDF as high-quality images directly in your browser. Zero upload, total privacy. Best for users in Budapest.",
+  "title": "PDF to Image Converter — Oldalak kibontása offline",
+  "h1": "PDF-oldalak konvertálása PNG- vagy JPG-képekké",
+  "description": "Kivonat minden oldalt a PDF-ből kiváló minőségű képként közvetlenül a böngészőben. Nulla feltöltés, 100%-ban biztonságos helyi feldolgozás.",
+  "buttonText": "Extract Images",
+  "badges": [
+    "Tervezési portfóliók",
+    "Előadások",
+    "Kiváló minőség"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract PDF Pages Offline?",
-      "content": "PDFs often contain confidential diagrams, blueprints, or reports. Extract pages as images without any server access."
+      "type": "pdf_image_hero_features",
+      "title": "Miért érdemes offline PDF-oldalakat kibontani?",
+      "content": "A PDF-fájlok gyakran tartalmaznak bizalmas diagramokat, tervrajzokat vagy jelentéseket. Az oldalak kibontása képekként, szerver hozzáférés nélkül."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Images",
+      "type": "pdf_image_how_to_steps",
+      "title": "PDF konvertálása képekké",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF you want to extract images from."
+          "title": "PDF betöltése",
+          "description": "Válassza ki a PDF-fájlt, amelyből a képeket ki szeretné bontani."
         },
         {
-          "title": "Choose Format",
-          "description": "Pick PNG (lossless) or JPG (compressed) output."
+          "title": "Válassza a Formátum",
+          "description": "Válasszon PNG (veszteségmentes) vagy JPG (tömörített) kimenetet."
         },
         {
-          "title": "Download Images",
-          "description": "Get all pages as individual image files in a ZIP."
+          "title": "Képek letöltése",
+          "description": "Az összes oldalt különálló képfájlként kaphatja meg ZIP-fájlban."
         }
-      ]
+      ],
+      "badgeText": "Gyors útmutató"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF to Image for Budapest Designers",
-      "content": "Designers in Budapest extract PDF pages as images for presentations and social media without cloud uploads."
+      "type": "pdf_image_geo_targeting",
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Minden művelet közvetlenül a helyi eszközön történik. Fejlett WebAssembly technológiát használunk a dokumentumok feldolgozásához anélkül, hogy azokat külső szerverekre feltöltenénk, így biztosítva a teljes adatvédelmet.",
+      "badgeText": "Helyi feldolgozás"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Confidential Diagrams Stay Private",
-      "content": "Technical blueprints and legal documents extracted as images without any data leaving your device."
+      "type": "pdf_image_privacy_security",
+      "title": "A bizalmas diagramok privátak maradnak",
+      "content": "Műszaki tervrajzok és jogi dokumentumok képként kinyerve anélkül, hogy bármilyen adat elhagyná a készüléket.",
+      "badgeText": "Első a biztonság"
     },
     {
-      "type": "split_performance",
-      "title": "Extract All Pages Instantly",
-      "content": "A 500-page PDF converted to images in seconds. No upload, no wait."
+      "type": "pdf_image_performance",
+      "title": "Az összes oldal azonnali kibontása",
+      "content": "Egy 500 oldalas PDF, amely másodpercek alatt képpé konvertálható. Nincs feltöltés, nincs várakozás.",
+      "badgeText": "Villámgyors"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are available?",
-      "a": "PNG and JPG with adjustable quality settings."
+      "q": "Milyen képformátumok érhetők el?",
+      "a": "PNG és JPG állítható minőségi beállításokkal."
     },
     {
-      "q": "Can I extract specific pages?",
-      "a": "Yes, specify page ranges like 1-5 or 3,7,12."
+      "q": "Kibonthatok bizonyos oldalakat?",
+      "a": "Igen, adjon meg oldaltartományokat, például 1-5 vagy 3,7,12."
     },
     {
-      "q": "What resolution are the exported images?",
-      "a": "Default 150 DPI, adjustable up to 300 DPI."
+      "q": "Milyen felbontásúak az exportált képek?",
+      "a": "Alapértelmezett 150 DPI, 300 DPI-ig állítható."
     },
     {
-      "q": "Are all pages exported at once?",
-      "a": "Yes, all selected pages are zipped for a single download."
+      "q": "Az összes oldalt egyszerre exportálják?",
+      "a": "Igen, az összes kiválasztott oldal tömörítve van egyetlen letöltéshez."
     },
     {
-      "q": "Is this free?",
-      "a": "Igen, teljesen ingyenes."
+      "q": "Ez ingyenes?",
+      "a": "Teljesen ingyenes, mindig."
     }
-  ]
+  ],
+  "faqTitle": "Gyakran Ismételt Kérdések",
+  "supportCenter": "Támogatási Központ"
 }

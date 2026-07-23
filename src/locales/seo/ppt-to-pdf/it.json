@@ -1,67 +1,85 @@
 {
-  "title": "PowerPoint to PDF Converter — Offline & Free",
-  "h1": "Convert PowerPoint Presentations to PDF Instantly",
-  "description": "Convert .pptx presentations to high-quality PDFs directly in your browser. No cloud needed. Perfect for presenters in Rome.",
+  "title": "Convertitore da PowerPoint a PDF: offline e gratuito",
+  "h1": "Converti istantaneamente presentazioni PowerPoint in PDF",
+  "description": "Converti presentazioni .pptx in PDF di alta qualità direttamente nel tuo browser. Non è necessaria alcuna nuvola. Elaborazione locale sicura al 100%.",
+  "buttonText": "Convert Slides",
+  "badges": [
+    "Riunioni del consiglio",
+    "Mazzi di presentazione",
+    "Prodotti inediti"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Presentations Offline?",
-      "content": "Your slides may contain unreleased products or confidential strategies. Convert without risking data exposure."
+      "type": "ppt_hero_features",
+      "title": "Perché convertire le presentazioni offline?",
+      "content": "Le tue diapositive potrebbero contenere prodotti inediti o strategie riservate. Converti senza rischiare l'esposizione dei dati."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert PowerPoint to PDF",
+      "type": "ppt_how_to_steps",
+      "title": "Come convertire PowerPoint in PDF",
       "steps": [
         {
-          "title": "Load Presentation",
-          "description": "Select your .pptx file from your device."
+          "title": "Carica presentazione",
+          "description": "Seleziona il tuo file .pptx dal tuo dispositivo."
         },
         {
-          "title": "Select Slide Range",
-          "description": "Include all slides or specific ones."
+          "title": "Selezionare Intervallo diapositive",
+          "description": "Includi tutte le diapositive o quelle specifiche."
         },
         {
-          "title": "Download PDF",
-          "description": "Get your PDF with all formatting preserved."
+          "title": "Scarica PDF",
+          "description": "Ottieni il tuo PDF con tutta la formattazione preservata."
         }
-      ]
+      ],
+      "badgeText": "Guida rapida"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Presentation Conversion in Rome",
-      "content": "Presenters in Rome trust us to convert slide decks without leaking unreleased content to cloud servers."
+      "type": "ppt_geo_targeting",
+      "title": "Elaborazione locale sicura al 100%",
+      "content": "Tutte le operazioni vengono eseguite direttamente sul tuo dispositivo locale. Utilizziamo la tecnologia avanzata WebAssembly per elaborare i tuoi documenti senza mai caricarli su server esterni, garantendo la completa privacy.",
+      "badgeText": "Elaborazione locale"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Confidential Slides Stay Confidential",
-      "content": "Pre-launch product decks? Board presentations? Converted 100% locally without network access."
+      "type": "ppt_privacy_security",
+      "title": "Le diapositive riservate rimangono riservate",
+      "content": "Schede di prodotti pre-lancio? Presentazioni al consiglio? Convertito al 100% localmente senza accesso alla rete.",
+      "badgeText": "La sicurezza prima di tutto"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Slide Export",
-      "content": "Convert 100-slide decks in seconds. No queue, no waiting, no upload bandwidth wasted."
+      "type": "ppt_performance",
+      "title": "Esportazione diapositiva istantanea",
+      "content": "Converti presentazioni da 100 diapositive in pochi secondi. Nessuna coda, nessuna attesa, nessuno spreco di larghezza di banda in upload.",
+      "badgeText": "Velocissimo"
     }
   ],
   "faqs": [
     {
-      "q": "Are slide animations preserved?",
-      "a": "Animations are flattened into static PDF frames."
+      "q": "Le animazioni delle diapositive vengono conservate?",
+      "a": "Le animazioni vengono appiattite in fotogrammi PDF statici."
     },
     {
-      "q": "What resolution is the output?",
-      "a": "High-resolution rendering at 150 DPI by default."
+      "q": "Che risoluzione ha l'output?",
+      "a": "Rendering ad alta risoluzione a 150 DPI per impostazione predefinita."
     },
     {
-      "q": "Can I convert selected slides only?",
-      "a": "Yes, specify slide ranges like 1-10 or 5,8,12."
+      "q": "Posso convertire solo le diapositive selezionate?",
+      "a": "Sì, specifica gli intervalli di diapositive come 1-10 o 5,8,12."
     },
     {
-      "q": "Is .ppt (old format) supported?",
-      "a": "Yes, both .ppt and .pptx are supported."
+      "q": "È supportato il formato .ppt (vecchio formato)?",
+      "a": "Sì, sono supportati sia .ppt che .pptx."
     },
     {
-      "q": "Is this free to use?",
-      "a": "Sì, completamente gratuito."
+      "q": "È gratuito?",
+      "a": "Sì, completamente gratuito senza filigrane."
     }
-  ]
+  ],
+  "faqTitle": "Domande frequenti",
+  "supportCenter": "Centro di supporto"
 }

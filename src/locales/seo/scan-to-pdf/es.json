@@ -1,67 +1,85 @@
 {
-  "title": "Scan to PDF — Convert Camera Shots Offline",
-  "h1": "Convert Photos and Scans to PDF Locally",
-  "description": "Turn photos of documents taken with your camera into clean PDFs entirely in your browser. No upload. Best for users in Madrid.",
+  "title": "Escanear a PDF: convertir tomas de cámara sin conexión",
+  "h1": "Convierte fotos y escaneos a PDF localmente",
+  "description": "Convierta fotografías de documentos tomados con su cámara en archivos PDF limpios completamente en su navegador. Sin carga. Procesamiento local 100% seguro.",
+  "buttonText": "Scan to PDF",
+  "badges": [
+    "Usar cámara web",
+    "Escáner móvil",
+    "Recorte automático"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Use Scan-to-PDF Offline?",
-      "content": "Photos of documents contain sensitive information. Process them locally without any cloud access."
+      "type": "scan_hero_features",
+      "title": "¿Por qué utilizar Escanear a PDF sin conexión?",
+      "content": "Las fotografías de documentos contienen información confidencial. Procéselos localmente sin ningún acceso a la nube."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Scans to PDF",
+      "type": "scan_how_to_steps",
+      "title": "Cómo convertir escaneos a PDF",
       "steps": [
         {
-          "title": "Import Photos",
-          "description": "Select photos taken with your phone or camera."
+          "title": "Importar fotos",
+          "description": "Seleccione fotografías tomadas con su teléfono o cámara."
         },
         {
-          "title": "Enhance Scan",
-          "description": "Auto-crop, deskew, and enhance contrast."
+          "title": "Mejorar escaneo",
+          "description": "Recorte automático, enderece y mejore el contraste."
         },
         {
-          "title": "Export PDF",
-          "description": "Download a clean, professional-looking scanned PDF."
+          "title": "Exportar PDF",
+          "description": "Descargue un PDF escaneado limpio y de aspecto profesional."
         }
-      ]
+      ],
+      "badgeText": "Guía rápida"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Scan to PDF for Madrid Field Workers",
-      "content": "Field workers and freelancers in Madrid digitize paper documents on-the-go without uploading to cloud services."
+      "type": "scan_geo_targeting",
+      "title": "Procesamiento local 100% seguro",
+      "content": "Todas las operaciones se realizan directamente en su dispositivo local. Utilizamos tecnología avanzada de WebAssembly para procesar sus documentos sin tener que cargarlos en servidores externos, lo que garantiza una privacidad total.",
+      "badgeText": "Procesamiento local"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Documents Stay on Device",
-      "content": "Invoices, contracts, and ID scans processed entirely in browser memory without any server access."
+      "type": "scan_privacy_security",
+      "title": "Los documentos escaneados permanecen en el dispositivo",
+      "content": "Facturas, contratos y escaneos de identificación procesados ​​completamente en la memoria del navegador sin ningún acceso al servidor.",
+      "badgeText": "La seguridad es lo primero"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Scans in Real Time",
-      "content": "Photo enhancement and PDF generation happens in milliseconds, even for high-resolution camera shots."
+      "type": "scan_performance",
+      "title": "Convertir escaneos en tiempo real",
+      "content": "La mejora de fotografías y la generación de PDF se realizan en milisegundos, incluso para tomas de cámara de alta resolución.",
+      "badgeText": "A la velocidad del rayo"
     }
   ],
   "faqs": [
     {
-      "q": "What photo formats are supported?",
-      "a": "JPG, PNG, WebP, and HEIC from modern cameras."
+      "q": "¿Qué formatos de fotos son compatibles?",
+      "a": "JPG, PNG, WebP y HEIC de cámaras modernas."
     },
     {
-      "q": "Does it fix tilted scans?",
-      "a": "Yes, auto-deskew corrects slight angles automatically."
+      "q": "¿Repara escaneos inclinados?",
+      "a": "Sí, la alineación automática corrige los ángulos leves automáticamente."
     },
     {
-      "q": "Can I combine multiple scans?",
-      "a": "Yes, add multiple photos to create a multi-page PDF."
+      "q": "¿Puedo combinar varios escaneos?",
+      "a": "Sí, agregue varias fotos para crear un PDF de varias páginas."
     },
     {
-      "q": "Does it enhance contrast?",
-      "a": "Yes, document enhancement mode sharpens text for clarity."
+      "q": "¿Mejora el contraste?",
+      "a": "Sí, el modo de mejora de documentos agudiza el texto para mayor claridad."
     },
     {
-      "q": "Is this free?",
-      "a": "Sí, completamente gratis."
+      "q": "¿Es esto gratis?",
+      "a": "Sí, siempre gratis."
     }
-  ]
+  ],
+  "faqTitle": "Preguntas frecuentes",
+  "supportCenter": "Centro de soporte"
 }

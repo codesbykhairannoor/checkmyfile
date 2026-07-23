@@ -1,0 +1,85 @@
+{
+  "title": "Modifier PDF - Éditeur PDF hors ligne gratuit",
+  "h1": "Modifiez des documents PDF directement dans votre navigateur",
+  "description": "Ajoutez du texte, des signatures et des annotations à vos fichiers PDF localement. Aucun téléchargement, confidentialité maximale. Traitement local 100% sécurisé.",
+  "sections": [
+    {
+      "type": "edit_hero_features",
+      "title": "Pourquoi modifier des PDF localement ?",
+      "content": "Le téléchargement de contrats et de formulaires sensibles vers un éditeur cloud constitue un risque énorme pour la vie privée. Notre éditeur WebAssembly s'exécute directement sur votre appareil, garantissant que vos documents ne quittent jamais votre ordinateur."
+    },
+    {
+      "type": "edit_how_to_steps",
+      "title": "Comment modifier un PDF",
+      "steps": [
+        {
+          "title": "Ouvrir le document",
+          "description": "Sélectionnez le fichier PDF que vous souhaitez annoter ou signer."
+        },
+        {
+          "title": "Ajouter du texte et des éléments",
+          "description": "Utilisez nos outils intuitifs pour ajouter du texte, dessiner ou placer des images."
+        },
+        {
+          "title": "Enregistrer les modifications",
+          "description": "Exportez instantanément le PDF modifié sans attendre les téléchargements."
+        }
+      ],
+      "badgeText": "Guide rapide"
+    },
+    {
+      "type": "edit_geo_targeting",
+      "title": "Traitement local 100 % sécurisé",
+      "content": "Toutes les opérations sont effectuées directement sur votre appareil local. Nous utilisons la technologie avancée WebAssembly pour traiter vos documents sans jamais les télécharger sur des serveurs externes, garantissant ainsi une confidentialité totale.",
+      "badgeText": "Traitement local"
+    },
+    {
+      "type": "edit_privacy_security",
+      "title": "Zéro transmission de données",
+      "content": "Contrairement aux éditeurs PDF traditionnels qui téléchargent vos fichiers sur leurs serveurs, notre plateforme traite tout ce qui se trouve dans la mémoire de votre navigateur.",
+      "badgeText": "La sécurité d'abord"
+    },
+    {
+      "type": "edit_performance",
+      "title": "Rendu hors ligne instantané",
+      "content": "Notre éditeur charge d'énormes fichiers PDF en quelques millisecondes. Vous pouvez ajouter des centaines d'annotations sans aucun décalage ni délai réseau.",
+      "badgeText": "Rapide comme l'éclair"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Puis-je modifier le texte existant dans le PDF ?",
+      "a": "Actuellement, vous pouvez ajouter du nouveau texte, des formes et des images sur le document existant."
+    },
+    {
+      "q": "Mes fichiers sont-ils téléchargés n'importe où ?",
+      "a": "Non, toutes les modifications s'effectuent localement dans votre navigateur à l'aide de WebAssembly."
+    },
+    {
+      "q": "Puis-je signer des documents ?",
+      "a": "Oui, vous pouvez dessiner votre signature ou en télécharger une image."
+    },
+    {
+      "q": "L'utilisation de l'éditeur est-elle gratuite ?",
+      "a": "Oui, c’est 100 % gratuit, sans paywalls premium ni frais cachés."
+    },
+    {
+      "q": "Est-ce que ça marche sur les appareils mobiles ?",
+      "a": "Oui, l'éditeur est entièrement réactif et prend en charge la saisie tactile pour le dessin."
+    }
+  ],
+  "badges": [
+    "Pas de filigrane",
+    "100% gratuit",
+    "Éditeur hors ligne"
+  ],
+  "stats": [
+    "100% Private",
+    "0 Server Uploads",
+    "Client-Side Only",
+    "No Accounts"
+  ],
+  "buttonText": "Start Editing",
+  "faqTitle": "Foire aux questions",
+  "supportCenter": "Centre d'assistance"
+}

@@ -1,67 +1,85 @@
 {
-  "title": "Reverse PDF — Flip Page Order Offline",
-  "h1": "Reverse the Page Order of Any PDF Locally",
-  "description": "Flip the page sequence of PDF documents entirely in your browser. No upload, instant result. Great for users in Rome.",
+  "title": "Inverti PDF: capovolgi l'ordine delle pagine offline",
+  "h1": "Invertire l'ordine delle pagine di qualsiasi PDF localmente",
+  "description": "Capovolgi interamente la sequenza delle pagine dei documenti PDF nel tuo browser. Nessun caricamento, risultato immediato. Elaborazione locale sicura al 100%.",
+  "buttonText": "Reverse Order",
+  "badges": [
+    "Inverti tutte le pagine",
+    "Correggi scansioni",
+    "Un clic"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Reverse PDF Page Order Offline?",
-      "content": "When a scanner outputs pages in reverse, you need a quick local fix — not a cloud upload of your entire document."
+      "type": "reverse_hero_features",
+      "title": "Perché invertire l'ordine delle pagine PDF offline?",
+      "content": "Quando uno scanner stampa le pagine al contrario, hai bisogno di una rapida soluzione locale, non di un caricamento sul cloud dell'intero documento."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Reverse PDF Page Order",
+      "type": "reverse_how_to_steps",
+      "title": "Come invertire l'ordine delle pagine PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF with incorrect page order."
+          "title": "Apri PDF",
+          "description": "Seleziona il PDF con l'ordine delle pagine errato."
         },
         {
-          "title": "Confirm Reversal",
-          "description": "Preview the new first and last page."
+          "title": "Conferma storno",
+          "description": "Anteprima della nuova prima e ultima pagina."
         },
         {
-          "title": "Download Reversed PDF",
-          "description": "Get the reordered PDF instantly."
+          "title": "Scarica il PDF invertito",
+          "description": "Ottieni immediatamente il PDF riordinato."
         }
-      ]
+      ],
+      "badgeText": "Guida rapida"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Page Order Fix for Rome Users",
-      "content": "Office users in Rome fix scanner reversal issues instantly without cloud uploads."
+      "type": "reverse_geo_targeting",
+      "title": "Elaborazione locale sicura al 100%",
+      "content": "Tutte le operazioni vengono eseguite direttamente sul tuo dispositivo locale. Utilizziamo la tecnologia avanzata WebAssembly per elaborare i tuoi documenti senza mai caricarli su server esterni, garantendo la completa privacy.",
+      "badgeText": "Elaborazione locale"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Documents Never Leave Your Device",
-      "content": "Reversed contracts, reports, and records are processed entirely in browser memory."
+      "type": "reverse_privacy_security",
+      "title": "I documenti non lasciano mai il tuo dispositivo",
+      "content": "Contratti, report e record stornati vengono elaborati interamente nella memoria del browser.",
+      "badgeText": "La sicurezza prima di tutto"
     },
     {
-      "type": "transform_performance",
-      "title": "Reverse Any PDF in Seconds",
-      "content": "Reversing a 1000-page document takes milliseconds. All in your browser."
+      "type": "reverse_performance",
+      "title": "Inverti qualsiasi PDF in pochi secondi",
+      "content": "L'inversione di un documento di 1000 pagine richiede millisecondi. Tutto nel tuo browser.",
+      "badgeText": "Velocissimo"
     }
   ],
   "faqs": [
     {
-      "q": "Does this reverse all pages?",
-      "a": "Yes, the full page order is flipped."
+      "q": "Inverte tutte le pagine?",
+      "a": "Sì, l'ordine dell'intera pagina viene invertito."
     },
     {
-      "q": "Can I select a range to reverse?",
-      "a": "Yes, specify start and end pages to reverse selectively."
+      "q": "Posso selezionare un intervallo da invertire?",
+      "a": "Sì, specifica le pagine iniziali e finali da invertire selettivamente."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "No, reversal is a structural operation with no quality loss."
+      "q": "La qualità è influenzata?",
+      "a": "No, l’inversione è un’operazione strutturale senza perdita di qualità."
     },
     {
-      "q": "Can I undo?",
-      "a": "Apply reversal again to undo."
+      "q": "Posso annullare?",
+      "a": "Applicare nuovamente l'inversione per annullare."
     },
     {
-      "q": "Is this free?",
-      "a": "Sì, completamente gratuito."
+      "q": "E' gratis?",
+      "a": "Sì, sempre gratuito."
     }
-  ]
+  ],
+  "faqTitle": "Domande frequenti",
+  "supportCenter": "Centro di supporto"
 }

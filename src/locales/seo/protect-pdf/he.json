@@ -1,67 +1,85 @@
 {
-  "title": "Password Protect PDF — Secure Files Offline",
-  "h1": "Add Password Protection to PDF Files Instantly",
-  "description": "Encrypt PDF files with AES-256 directly in your browser. Your document never leaves your device. Ideal for users in Jerusalem.",
+  "title": "הגנת PDF עם סיסמה — קבצים מאובטחים במצב לא מקוון",
+  "h1": "הוסף הגנת סיסמה לקובצי PDF באופן מיידי",
+  "description": "הצפנת קבצי PDF עם AES-256 ישירות בדפדפן שלך. המסמך שלך לעולם לא יוצא מהמכשיר שלך. עיבוד מקומי מאובטח של 100%.",
+  "buttonText": "Protect PDF",
+  "badges": [
+    "AES-256 הצפנה",
+    "סיסמה מאובטחת",
+    "צד הלקוח בלבד"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "protect_hero_features",
-      "title": "Why Protect PDFs Locally?",
-      "content": "Adding a password means the file is sensitive. Never upload sensitive files to a cloud encryptor. Ours runs entirely offline with AES-256 encryption."
+      "title": "למה להגן על קובצי PDF באופן מקומי?",
+      "content": "הוספת סיסמה פירושה שהקובץ רגיש. לעולם אל תעלה קבצים רגישים למצפין ענן. שלנו פועל באופן לא מקוון לחלוטין עם הצפנת AES-256."
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Password Protect a PDF",
+      "title": "כיצד להגן באמצעות סיסמה על PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF you want to lock."
+          "title": "פתח PDF",
+          "description": "בחר את ה-PDF שברצונך לנעול."
         },
         {
-          "title": "Set Password",
-          "description": "Choose a strong password for encryption."
+          "title": "הגדר סיסמה",
+          "description": "בחר סיסמה חזקה להצפנה."
         },
         {
-          "title": "Download Protected PDF",
-          "description": "Get your AES-256 encrypted PDF immediately."
+          "title": "הורד PDF מוגן",
+          "description": "קבל את ה-PDF המוצפן שלך AES-256 באופן מיידי."
         }
-      ]
+      ],
+      "badgeText": "מדריך מהיר"
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Vault-Level PDF Protection for Jerusalem",
-      "content": "Legal and finance professionals in Jerusalem encrypt documents with AES-256 strength without exposing files to any server."
+      "title": "100% עיבוד מקומי מאובטח",
+      "content": "כל הפעולות מבוצעות ישירות במכשיר המקומי שלך. אנו משתמשים בטכנולוגיית WebAssembly מתקדמת כדי לעבד את המסמכים שלך מבלי להעלות אותם לשרתים חיצוניים, מה שמבטיח פרטיות מלאה.",
+      "badgeText": "עיבוד מקומי"
     },
     {
       "type": "protect_privacy_security",
-      "title": "AES-256 Encryption — Bank-Grade, Offline",
-      "content": "Military-grade AES-256 encryption runs in your browser. No key is ever transmitted to any server."
+      "title": "הצפנה AES-256 — דרגת בנק, לא מקוונת",
+      "content": "הצפנה AES-256 ברמה צבאית פועלת בדפדפן שלך. אף מפתח לא מועבר לעולם לאף שרת.",
+      "badgeText": "אבטחה תחילה"
     },
     {
       "type": "protect_performance",
-      "title": "Encrypt Any PDF in Under 1 Second",
-      "content": "AES-256 processing locally takes milliseconds — no upload, no queue, no wait."
+      "title": "הצפין כל PDF תוך פחות משנייה אחת",
+      "content": "עיבוד AES-256 מקומי לוקח אלפיות שניות - ללא העלאה, ללא תור, ללא המתנה.",
+      "badgeText": "מהיר ברק"
     }
   ],
   "faqs": [
     {
-      "q": "What encryption standard is used?",
-      "a": "AES-256, the same standard used by banks and governments."
+      "q": "באיזה תקן הצפנה משתמשים?",
+      "a": "AES-256, אותו תקן המשמש בנקים וממשלות."
     },
     {
-      "q": "Can I set different owner and user passwords?",
-      "a": "Yes, you can set both separately."
+      "q": "האם אני יכול להגדיר סיסמאות בעלים ומשתמשים שונים?",
+      "a": "כן, אתה יכול להגדיר את שניהם בנפרד."
     },
     {
-      "q": "Is the original file modified?",
-      "a": "No, a new encrypted copy is created."
+      "q": "האם הקובץ המקורי השתנה?",
+      "a": "לא, נוצר עותק מוצפן חדש."
     },
     {
-      "q": "Can I restrict printing or editing?",
-      "a": "Yes, permission restrictions can be set alongside the password."
+      "q": "האם אני יכול להגביל הדפסה או עריכה?",
+      "a": "כן, ניתן להגדיר הגבלות הרשאה לצד הסיסמה."
     },
     {
-      "q": "Is this free?",
-      "a": "כן, חינם לחלוטין."
+      "q": "האם זה בחינם?",
+      "a": "כן, לגמרי בחינם."
     }
-  ]
+  ],
+  "faqTitle": "שאלות נפוצות",
+  "supportCenter": "מרכז תמיכה"
 }

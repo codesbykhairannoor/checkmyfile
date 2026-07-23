@@ -1,0 +1,85 @@
+{
+  "title": "Supprimer des pages d'un PDF — Supprimer des pages PDF hors ligne",
+  "h1": "Supprimer instantanément des pages d'un PDF",
+  "description": "Supprimez les pages indésirables de votre fichier PDF en toute sécurité dans votre navigateur. Rapide et totalement sécurisé.",
+  "buttonText": "Remove Pages",
+  "badges": [
+    "Sélectionner et supprimer",
+    "Éditeur visuel",
+    "Zéro latence"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "remove_hero_features",
+      "title": "Pourquoi supprimer des pages localement ?",
+      "content": "La suppression des pages sensibles ou inutiles de votre document doit être effectuée sur votre appareil, et non sur un serveur. Nous garantissons 100 % de confidentialité."
+    },
+    {
+      "type": "remove_how_to_steps",
+      "title": "Comment supprimer des pages PDF",
+      "steps": [
+        {
+          "title": "Ouvrir le PDF",
+          "description": "Chargez le PDF que vous souhaitez nettoyer."
+        },
+        {
+          "title": "Sélectionnez les pages à supprimer",
+          "description": "Passez la souris sur les pages et cliquez sur l'icône de la corbeille pour les marquer pour suppression."
+        },
+        {
+          "title": "Exporter un PDF propre",
+          "description": "Téléchargez votre nouveau PDF sans les pages supprimées."
+        }
+      ],
+      "badgeText": "Guide rapide"
+    },
+    {
+      "type": "remove_geo_targeting",
+      "title": "Traitement local 100 % sécurisé",
+      "content": "Toutes les opérations sont effectuées directement sur votre appareil local. Nous utilisons la technologie avancée WebAssembly pour traiter vos documents sans jamais les télécharger sur des serveurs externes, garantissant ainsi une confidentialité totale.",
+      "badgeText": "Traitement local"
+    },
+    {
+      "type": "remove_privacy_security",
+      "title": "Confidentialité de suppression totale",
+      "content": "Lorsque vous supprimez une page, elle est définitivement supprimée du document dans la mémoire de votre navigateur avant son enregistrement.",
+      "badgeText": "La sécurité d'abord"
+    },
+    {
+      "type": "remove_performance",
+      "title": "Suppression instantanée de la page",
+      "content": "L'extraction et la suppression de pages, même d'un document de 1 000 pages, ne prennent que quelques millisecondes grâce à notre moteur WASM optimisé.",
+      "badgeText": "Rapide comme l'éclair"
+    }
+  ],
+  "faqTitle": "Foire aux questions",
+  "faqs": [
+    {
+      "q": "Les pages supprimées sont-elles récupérables ?",
+      "a": "Une fois que vous avez téléchargé le nouveau PDF, les pages supprimées sont définitivement supprimées de ce fichier. Votre fichier d'origine reste intact."
+    },
+    {
+      "q": "Dois-je télécharger mon PDF ?",
+      "a": "Non. L’ensemble du processus de suppression de page se déroule localement dans votre navigateur Web."
+    },
+    {
+      "q": "Y a-t-il une limite au nombre de pages que je peux supprimer ?",
+      "a": "Non, vous pouvez supprimer autant de pages que vous le souhaitez, de manière totalement gratuite."
+    },
+    {
+      "q": "La mise en page des pages restantes va-t-elle changer ?",
+      "a": "Non, les pages restantes conserveront exactement leur formatage et leur mise en page d'origine."
+    },
+    {
+      "q": "Puis-je sélectionner plusieurs pages à la fois ?",
+      "a": "Oui, vous pouvez cliquer sur plusieurs pages pour les marquer toutes pour suppression simultanément."
+    }
+  ],
+  "supportCenter": "Centre d'assistance"
+}

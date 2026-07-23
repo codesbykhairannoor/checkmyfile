@@ -1,67 +1,85 @@
 {
-  "title": "Remove PDF Metadata — Strip Hidden Author Data Offline",
-  "h1": "Strip All Hidden Metadata from PDF Files Instantly",
-  "description": "Remove author names, company info, GPS locations, and revision history from PDFs entirely in your browser. No upload. Perfect for Jerusalem users.",
+  "title": "הסר מטא נתונים של PDF — הסר נתוני מחבר מוסתרים במצב לא מקוון",
+  "h1": "הסר את כל המטא-נתונים הנסתרים מקבצי PDF באופן מיידי",
+  "description": "הסר שמות מחברים, פרטי חברה, מיקומי GPS והיסטוריית גרסאות מקובצי PDF לחלוטין בדפדפן שלך. אין העלאה. עיבוד מקומי מאובטח של 100%.",
+  "buttonText": "Process Document",
+  "badges": [
+    "מאובטח ופרטי",
+    "מנוע לא מקוון",
+    "אפס העלאה"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "metadata_hero_features",
-      "title": "Why Strip PDF Metadata?",
-      "content": "PDFs carry hidden metadata — your name, your company, revision history. Strip it all before sharing publicly, entirely offline."
+      "title": "מדוע להסיר מטא נתונים של PDF?",
+      "content": "קובצי PDF נושאים מטא נתונים נסתרים - השם שלך, החברה שלך, היסטוריית גרסאות. הסר הכל לפני שיתוף פומבי, לגמרי במצב לא מקוון."
     },
     {
       "type": "metadata_how_to_steps",
-      "title": "Before & After — How Metadata Removal Works",
+      "title": "לפני ואחרי — איך עובדת הסרת מטא נתונים",
       "steps": [
         {
-          "title": "Open Your PDF",
-          "description": "Select the PDF with hidden metadata to remove."
+          "title": "פתח את ה-PDF שלך",
+          "description": "בחר את ה-PDF עם מטא נתונים מוסתרים להסרה."
         },
         {
-          "title": "Preview Hidden Data",
-          "description": "See exactly what metadata — author, GPS, history — is embedded."
+          "title": "תצוגה מקדימה של נתונים מוסתרים",
+          "description": "ראה בדיוק אילו מטא נתונים - מחבר, GPS, היסטוריה - מוטבעים."
         },
         {
-          "title": "Strip & Download Clean PDF",
-          "description": "Remove all metadata instantly and save a clean, anonymous PDF."
+          "title": "Strip & הורד Clean PDF",
+          "description": "הסר את כל המטא נתונים באופן מיידי ושמור קובץ PDF נקי ואנונימי."
         }
-      ]
+      ],
+      "badgeText": "מדריך מהיר"
     },
     {
       "type": "metadata_geo_targeting",
-      "title": "Metadata Privacy Tool for Jerusalem Professionals",
-      "content": "Journalists, legal professionals, and privacy-conscious users in Jerusalem strip metadata before publishing or sharing PDFs externally."
+      "title": "100% עיבוד מקומי מאובטח",
+      "content": "כל הפעולות מבוצעות ישירות במכשיר המקומי שלך. אנו משתמשים בטכנולוגיית WebAssembly מתקדמת כדי לעבד את המסמכים שלך מבלי להעלות אותם לשרתים חיצוניים, מה שמבטיח פרטיות מלאה.",
+      "badgeText": "עיבוד מקומי"
     },
     {
       "type": "metadata_privacy_security",
-      "title": "All Metadata Types Permanently Erased",
-      "content": "Author name, company, GPS coordinates from embedded images, revision history, software fingerprints — all permanently removed."
+      "title": "כל סוגי המטא נתונים נמחקו לצמיתות",
+      "content": "שם המחבר, חברה, קואורדינטות GPS מתמונות מוטבעות, היסטוריית גרסאות, טביעות אצבע של תוכנה - הכל הוסרו לצמיתות.",
+      "badgeText": "אבטחה תחילה"
     },
     {
       "type": "metadata_performance",
-      "title": "Strip Metadata in Milliseconds",
-      "content": "Metadata removal takes milliseconds and often reduces file size by 10–15%. All offline."
+      "title": "הסר מטא נתונים באלפיות השנייה",
+      "content": "הסרת מטא נתונים אורכת אלפיות שניות ולעתים קרובות מקטינה את גודל הקובץ ב-10-15%. הכל במצב לא מקוון.",
+      "badgeText": "מהיר ברק"
     }
   ],
   "faqs": [
     {
-      "q": "What metadata is removed?",
-      "a": "Author, creator, producer, title, keywords, and all XMP/EXIF data."
+      "q": "אילו מטא נתונים מוסרים?",
+      "a": "מחבר, יוצר, מפיק, כותרת, מילות מפתח וכל נתוני XMP/EXIF."
     },
     {
-      "q": "Are document bookmarks affected?",
-      "a": "No, bookmarks and structure are preserved; only metadata is removed."
+      "q": "האם סימניות מסמכים מושפעות?",
+      "a": "לא, סימניות ומבנה נשמרים; רק מטא נתונים מוסרים."
     },
     {
-      "q": "Can I preview the metadata first?",
-      "a": "Yes, we show a list of all detected metadata before removing."
+      "q": "האם אוכל להציג תחילה את המטא נתונים?",
+      "a": "כן, אנו מציגים רשימה של כל המטא נתונים שזוהו לפני ההסרה."
     },
     {
-      "q": "Is the document content affected?",
-      "a": "No, the content, images, and structure remain intact."
+      "q": "האם תוכן המסמך מושפע?",
+      "a": "לא, התוכן, התמונות והמבנה נשארים שלמים."
     },
     {
-      "q": "Is this free?",
-      "a": "כן, חינם לחלוטין."
+      "q": "האם זה בחינם?",
+      "a": "כן, תמיד בחינם."
     }
-  ]
+  ],
+  "faqTitle": "שאלות נפוצות",
+  "supportCenter": "מרכז תמיכה"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Rotate PDF Pages — Fix Orientation Offline",
-  "h1": "Rotate PDF Pages to the Correct Orientation",
-  "description": "Fix upside-down or sideways PDF pages instantly in your browser. No upload. Perfect for users in Kuala Lumpur.",
+  "title": "Putar Halaman PDF — Betulkan Orientasi Luar Talian",
+  "h1": "Putar Halaman PDF ke Orientasi yang Betul",
+  "description": "Betulkan halaman PDF terbalik atau sisi serta-merta dalam penyemak imbas anda. Cepat dan selamat sepenuhnya.",
+  "buttonText": "Rotate Pages",
+  "badges": [
+    "Putar 90°/180°",
+    "Pemprosesan Kelompok",
+    "Pembetulan Segera"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Rotate PDFs Locally?",
-      "content": "Scanned documents often come out sideways. Fix their orientation instantly without uploading anything to the cloud."
+      "type": "rotate_hero_features",
+      "title": "Mengapa Putar PDF Secara Tempatan?",
+      "content": "Dokumen yang diimbas selalunya keluar mengiring. Betulkan orientasi mereka serta-merta tanpa memuat naik apa-apa ke awan."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Rotate PDF Pages",
+      "type": "rotate_how_to_steps",
+      "title": "Cara Memutar Halaman PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page orientation."
+          "title": "Buka PDF",
+          "description": "Muatkan PDF dengan orientasi halaman yang salah."
         },
         {
-          "title": "Select Pages & Direction",
-          "description": "Choose pages to rotate and direction (90°, 180°, 270°)."
+          "title": "Pilih Halaman & Arah",
+          "description": "Pilih halaman untuk diputar dan arah (90°, 180°, 270°)."
         },
         {
-          "title": "Download Fixed PDF",
-          "description": "Save the correctly oriented PDF immediately."
+          "title": "Muat turun PDF Tetap",
+          "description": "Simpan PDF yang berorientasikan betul dengan segera."
         }
-      ]
+      ],
+      "badgeText": "Panduan Pantas"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Rotation for Kuala Lumpur Offices",
-      "content": "Office workers in Kuala Lumpur fix scanner output orientation without relying on cloud services."
+      "type": "rotate_geo_targeting",
+      "title": "100% Pemprosesan Tempatan Selamat",
+      "content": "Semua operasi dilakukan terus pada peranti tempatan anda. Kami menggunakan teknologi WebAssembly termaju untuk memproses dokumen anda tanpa pernah memuat naiknya ke pelayan luaran, memastikan privasi lengkap.",
+      "badgeText": "Pemprosesan Setempat"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Scanned Documents Stay Private",
-      "content": "Scanned medical or legal documents rotated locally without any server access."
+      "type": "rotate_privacy_security",
+      "title": "Dokumen yang Diimbas Kekal Peribadi",
+      "content": "Dokumen perubatan atau undang-undang yang diimbas diputar secara setempat tanpa sebarang akses pelayan.",
+      "badgeText": "Keselamatan Diutamakan"
     },
     {
-      "type": "transform_performance",
-      "title": "Rotate Any PDF in Milliseconds",
-      "content": "Rotating 500 pages takes less than a second. No upload, no wait."
+      "type": "rotate_performance",
+      "title": "Putar Mana-mana PDF dalam Milisaat",
+      "content": "Memutar 500 halaman mengambil masa kurang daripada satu saat. Tiada muat naik, jangan tunggu.",
+      "badgeText": "Sepantas Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "Can I rotate individual pages?",
-      "a": "Yes, select specific pages or all at once."
+      "q": "Bolehkah saya memutar halaman individu?",
+      "a": "Ya, pilih halaman tertentu atau semua sekali gus."
     },
     {
-      "q": "What rotation angles are available?",
-      "a": "90°, 180°, and 270° clockwise and counter-clockwise."
+      "q": "Apakah sudut putaran yang tersedia?",
+      "a": "90°, 180°, dan 270° mengikut arah jam dan lawan jam."
     },
     {
-      "q": "Does rotation affect image quality?",
-      "a": "No, rotation is lossless — no re-encoding occurs."
+      "q": "Adakah putaran menjejaskan kualiti imej?",
+      "a": "Tidak, putaran adalah tanpa kerugian — tiada pengekodan semula berlaku."
     },
     {
-      "q": "Can I undo a rotation?",
-      "a": "Yes, apply the reverse rotation before downloading."
+      "q": "Bolehkah saya membuat asal putaran?",
+      "a": "Ya, gunakan putaran terbalik sebelum memuat turun."
     },
     {
-      "q": "Is this free?",
+      "q": "Adakah ini percuma?",
       "a": "Ya, percuma sepenuhnya."
     }
-  ]
+  ],
+  "faqTitle": "Soalan Lazim",
+  "supportCenter": "Pusat Sokongan"
 }

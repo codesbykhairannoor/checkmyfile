@@ -1,67 +1,85 @@
 {
-  "title": "Text to PDF Converter — Offline & Instant",
-  "h1": "Convert Plain Text Files to PDF Locally",
-  "description": "Transform .txt files into clean, readable PDFs directly in your browser. No upload required. Ideal for users in Bangkok.",
+  "title": "แปลงข้อความเป็น PDF — ออฟไลน์และทันใจ",
+  "h1": "แปลงไฟล์ข้อความธรรมดาเป็น PDF ในเครื่อง",
+  "description": "แปลงไฟล์ .txt ให้เป็น PDF ที่สะอาดตาและอ่านได้โดยตรงในเบราว์เซอร์ของคุณ ไม่จำเป็นต้องอัปโหลด การประมวลผลภายในที่ปลอดภัย 100%",
+  "buttonText": "Convert Text",
+  "badges": [
+    "ข้อมูลโค้ด",
+    "บันทึกเซิร์ฟเวอร์",
+    "ต้นฉบับ"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Text Files Offline?",
-      "content": "Text files often contain code, scripts, or sensitive notes. Our offline converter ensures zero data transmission."
+      "type": "txt_hero_features",
+      "title": "เหตุใดจึงแปลงไฟล์ข้อความออฟไลน์",
+      "content": "ไฟล์ข้อความมักจะมีโค้ด สคริปต์ หรือบันทึกย่อที่ละเอียดอ่อน ตัวแปลงออฟไลน์ของเรารับประกันว่าการส่งข้อมูลเป็นศูนย์"
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Text to PDF",
+      "type": "txt_how_to_steps",
+      "title": "วิธีแปลงข้อความเป็น PDF",
       "steps": [
         {
-          "title": "Open Text File",
-          "description": "Select your .txt file or paste text directly."
+          "title": "เปิดไฟล์ข้อความ",
+          "description": "เลือกไฟล์ .txt ของคุณหรือวางข้อความโดยตรง"
         },
         {
-          "title": "Choose Font & Style",
-          "description": "Pick font size and layout preferences."
+          "title": "เลือกแบบอักษรและสไตล์",
+          "description": "เลือกขนาดตัวอักษรและเค้าโครงที่ต้องการ"
         },
         {
-          "title": "Download PDF",
-          "description": "Export your text as a beautifully formatted PDF."
+          "title": "ดาวน์โหลดไฟล์ PDF",
+          "description": "ส่งออกข้อความของคุณเป็น PDF ที่มีรูปแบบสวยงาม"
         }
-      ]
+      ],
+      "badgeText": "คู่มือฉบับย่อ"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Text to PDF for Bangkok Developers",
-      "content": "Developers and writers in Bangkok use our tool to convert scripts and notes without cloud dependency."
+      "type": "txt_geo_targeting",
+      "title": "การประมวลผลภายในที่ปลอดภัย 100%",
+      "content": "การดำเนินการทั้งหมดดำเนินการโดยตรงบนอุปกรณ์ท้องถิ่นของคุณ เราใช้เทคโนโลยี WebAssembly ขั้นสูงเพื่อประมวลผลเอกสารของคุณโดยไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ภายนอก เพื่อให้มั่นใจถึงความเป็นส่วนตัวโดยสมบูรณ์",
+      "badgeText": "การประมวลผลในท้องถิ่น"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Code Stays on Your Machine",
-      "content": "Source code, legal notes, medical records — text files converted with zero server involvement."
+      "type": "txt_privacy_security",
+      "title": "รหัสจะคงอยู่บนเครื่องของคุณ",
+      "content": "ซอร์สโค้ด บันทึกทางกฎหมาย เวชระเบียน — ไฟล์ข้อความที่แปลงโดยไม่เกี่ยวข้องกับเซิร์ฟเวอร์",
+      "badgeText": "ความปลอดภัยต้องมาก่อน"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Text Rendering",
-      "content": "Convert any size text file to PDF in milliseconds. No upload, no compression, no delay."
+      "type": "txt_performance",
+      "title": "การแสดงผลข้อความทันที",
+      "content": "แปลงไฟล์ข้อความขนาดใดก็ได้เป็น PDF ในหน่วยมิลลิวินาที ไม่มีการอัปโหลด ไม่มีการบีบอัด ไม่มีความล่าช้า",
+      "badgeText": "เร็วปานสายฟ้า"
     }
   ],
   "faqs": [
     {
-      "q": "Can I paste text directly?",
-      "a": "Yes, you can type or paste text without uploading a file."
+      "q": "ฉันสามารถวางข้อความโดยตรงได้หรือไม่?",
+      "a": "ได้ คุณสามารถพิมพ์หรือวางข้อความโดยไม่ต้องอัปโหลดไฟล์"
     },
     {
-      "q": "What fonts are available?",
-      "a": "Standard web fonts like Arial, Times New Roman, and monospace."
+      "q": "มีแบบอักษรอะไรบ้าง?",
+      "a": "แบบอักษรเว็บมาตรฐาน เช่น Arial, Times New Roman และ monospace"
     },
     {
-      "q": "Is code syntax preserved?",
-      "a": "Monospace formatting is preserved for code blocks."
+      "q": "ไวยากรณ์ของโค้ดยังคงอยู่หรือไม่",
+      "a": "การจัดรูปแบบ Monospace จะถูกสงวนไว้สำหรับบล็อคโค้ด"
     },
     {
-      "q": "Can I set page margins?",
-      "a": "Yes, customize top, bottom, left, and right margins."
+      "q": "ฉันสามารถตั้งค่าระยะขอบของหน้าได้หรือไม่",
+      "a": "ใช่ ปรับแต่งระยะขอบบน ล่าง ซ้าย และขวา"
     },
     {
-      "q": "Is this free?",
-      "a": "ใช่ ฟรีทั้งหมด"
+      "q": "ฟรีหรือเปล่า?",
+      "a": "ใช่ สมบูรณ์ฟรี"
     }
-  ]
+  ],
+  "faqTitle": "คำถามที่พบบ่อย",
+  "supportCenter": "ศูนย์สนับสนุน"
 }

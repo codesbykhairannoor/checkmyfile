@@ -1,67 +1,85 @@
 {
-  "title": "Split PDF - Extract Pages Securely",
-  "h1": "Split and Extract PDF Pages in Seconds",
-  "description": "Extract specific pages or split a large PDF into multiple files locally in your browser. Perfect for legal professionals in Bucharest.",
+  "title": "Split PDF - Extrageți paginile în siguranță",
+  "h1": "Împărțiți și extrageți pagini PDF în câteva secunde",
+  "description": "Extrageți anumite pagini sau împărțiți un PDF mare în mai multe fișiere local în browser. Rapid și complet sigur.",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Split PDFs Locally?",
-      "content": "When dealing with massive legal or corporate documents, extracting a single page shouldn't require uploading a 1GB file. Do it instantly right on your machine."
+      "title": "De ce împărțiți PDF-urile local?",
+      "content": "Când aveți de-a face cu documente juridice sau corporative masive, extragerea unei singure pagini nu ar trebui să necesite încărcarea unui fișier de 1 GB. Fă-o instantaneu chiar pe mașina ta."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Extract Pages",
+      "title": "Cum se extrage pagini",
       "steps": [
         {
-          "title": "Open Document",
-          "description": "Load the multi-page PDF you want to split."
+          "title": "Deschideți documentul",
+          "description": "Încărcați PDF-ul cu mai multe pagini pe care doriți să îl împărțiți."
         },
         {
-          "title": "Select Ranges",
-          "description": "Pick specific page numbers or visually select pages to extract."
+          "title": "Selectați Intervalele",
+          "description": "Alegeți anumite numere de pagină sau selectați vizual paginile de extras."
         },
         {
           "title": "Export Zip",
-          "description": "Download your newly split files organized in a ZIP."
+          "description": "Descărcați fișierele proaspăt împărțite organizate într-un fișier ZIP."
         }
-      ]
+      ],
+      "badgeText": "Ghid rapid"
     },
     {
       "type": "split_geo_targeting",
-      "title": "The Best Splitter in Bucharest, RO-B",
-      "content": "Whether you are studying in Bucharest or working on a tight deadline, extracting pages is now instantaneous."
+      "title": "Procesare locală 100% sigură",
+      "content": "Toate operațiunile sunt efectuate direct pe dispozitivul local. Folosim tehnologie avansată WebAssembly pentru a vă procesa documentele fără a le încărca vreodată pe servere externe, asigurând confidențialitate completă.",
+      "badgeText": "Prelucrare locală"
     },
     {
       "type": "split_privacy_security",
-      "title": "Total Page Privacy",
-      "content": "Splitting confidential employee records? Rest easy knowing our code executes purely in your local environment."
+      "title": "Confidențialitate totală a paginii",
+      "content": "Împărțirea înregistrărilor confidențiale ale angajaților? Stai liniștit știind că codul nostru se execută exclusiv în mediul tău local.",
+      "badgeText": "Securitatea în primul rând"
     },
     {
       "type": "split_performance",
-      "title": "Zero-Upload Extraction",
-      "content": "Grabbing page 14 from a 2000-page PDF takes milliseconds, skipping the excruciating upload step entirely."
+      "title": "Extragere zero-upload",
+      "content": "Preluarea paginii 14 dintr-un PDF de 2000 de pagini durează milisecunde, sărind cu totul pasul chinuitor de încărcare.",
+      "badgeText": "Rapid fulger"
     }
   ],
   "faqs": [
     {
-      "q": "How do I extract just one page?",
-      "a": "Simply click on the page thumbnail you want and hit Export."
+      "q": "Cum extrag doar o pagină?",
+      "a": "Pur și simplu faceți clic pe miniatura paginii dorite și apăsați Export."
     },
     {
-      "q": "Can I split the PDF in half?",
-      "a": "Yes, you can specify custom page ranges like 1-10 and 11-20."
+      "q": "Pot împărți PDF-ul în jumătate?",
+      "a": "Da, puteți specifica intervale de pagini personalizate, cum ar fi 1-10 și 11-20."
     },
     {
-      "q": "Will the extracted pages lose quality?",
-      "a": "No, the splitting process uses binary extraction, preserving 100% of the original quality."
+      "q": "Paginile extrase își vor pierde calitatea?",
+      "a": "Nu, procesul de divizare folosește extracția binară, păstrând 100% din calitatea originală."
     },
     {
-      "q": "Is my document uploaded when splitting?",
-      "a": "Never. The entire 2000-page document stays strictly in your browser."
+      "q": "Este documentul meu încărcat la împărțire?",
+      "a": "Nu. Întregul document de 2000 de pagini rămâne strict în browser."
     },
     {
-      "q": "Is there a limit to how many pages I can split?",
-      "a": "No limits! Split as many pages as your computer can handle."
+      "q": "Există o limită la câte pagini pot împărți?",
+      "a": "Fără limite! Împărțiți câte pagini poate gestiona computerul dvs."
     }
-  ]
+  ],
+  "badges": [
+    "Split instant",
+    "Interval precis",
+    "Fără Limite"
+  ],
+  "stats": [
+    "Ultra Fast",
+    "No Upload",
+    "Batch Zip",
+    "Secure"
+  ],
+  "buttonText": "Split PDF",
+  "faqTitle": "Întrebări frecvente",
+  "supportCenter": "Centrul de suport"
 }

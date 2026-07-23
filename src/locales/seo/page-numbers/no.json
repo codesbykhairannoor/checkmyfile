@@ -1,67 +1,85 @@
 {
-  "title": "Add Page Numbers to PDF — Offline Number Stamp",
-  "h1": "Insert Page Numbers into PDF Documents Locally",
-  "description": "Stamp page numbers at the header or footer of your PDF entirely in your browser. No upload. Ideal for users in Oslo.",
+  "title": "Legg til sidetall til PDF — Offline nummerstempel",
+  "h1": "Sett inn sidetall i PDF-dokumenter lokalt",
+  "description": "Stempel sidetall i topp- eller bunnteksten i PDF-filen din helt i nettleseren din. Rask og helt sikker.",
+  "buttonText": "Add Page Numbers",
+  "badges": [
+    "Egendefinert posisjon",
+    "Topp- og bunntekst",
+    "Bates nummerering"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Add Page Numbers Offline?",
-      "content": "Page numbers are a formatting step, not a reason to upload confidential documents to a cloud service."
+      "type": "pagenum_hero_features",
+      "title": "Hvorfor legge til sidetall frakoblet?",
+      "content": "Sidetall er et formateringstrinn, ikke en grunn til å laste opp konfidensielle dokumenter til en skytjeneste."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Add Page Numbers",
+      "type": "pagenum_how_to_steps",
+      "title": "Hvordan legge til sidetall",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to number."
+          "title": "Åpne PDF",
+          "description": "Velg PDF-filen som skal nummereres."
         },
         {
-          "title": "Configure Style",
-          "description": "Choose position, format (1/12, Page 1, i, ii…), and font."
+          "title": "Konfigurer stil",
+          "description": "Velg posisjon, format (1/12, Side 1, i, ii...) og font."
         },
         {
-          "title": "Apply & Download",
-          "description": "Download your paginated PDF instantly."
+          "title": "Bruk og last ned",
+          "description": "Last ned din paginerte PDF umiddelbart."
         }
-      ]
+      ],
+      "badgeText": "Hurtigguide"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Page Numbering for Oslo Legal Docs",
-      "content": "Legal professionals in Oslo number briefs and reports locally without cloud service dependency."
+      "type": "pagenum_geo_targeting",
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle operasjoner utføres direkte på din lokale enhet. Vi bruker avansert WebAssembly-teknologi for å behandle dokumentene dine uten å laste dem opp til eksterne servere, noe som sikrer fullstendig personvern.",
+      "badgeText": "Lokal behandling"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Internal Documents Stay Numbered & Private",
-      "content": "Add page numbers to contracts and confidential reports without any server involvement."
+      "type": "pagenum_privacy_security",
+      "title": "Interne dokumenter forblir nummererte og private",
+      "content": "Legg til sidetall i kontrakter og konfidensielle rapporter uten serverinvolvering.",
+      "badgeText": "Sikkerhet først"
     },
     {
-      "type": "organizer_performance",
-      "title": "Number a 1000-Page PDF Instantly",
-      "content": "Stamping page numbers locally takes milliseconds for any size document."
+      "type": "pagenum_performance",
+      "title": "Nummer en 1000-siders PDF umiddelbart",
+      "content": "Stempling av sidetall lokalt tar millisekunder for dokumentstørrelser.",
+      "badgeText": "Lynrask"
     }
   ],
   "faqs": [
     {
-      "q": "What number formats are available?",
-      "a": "Arabic (1, 2, 3), Roman (i, ii, iii), and letter (a, b, c) formats."
+      "q": "Hvilke tallformater er tilgjengelige?",
+      "a": "Arabiske (1, 2, 3), romerske (i, ii, iii) og bokstaver (a, b, c) formater."
     },
     {
-      "q": "Can I start from a custom number?",
-      "a": "Yes, set any starting page number."
+      "q": "Kan jeg starte fra et egendefinert nummer?",
+      "a": "Ja, angi hvilket som helst startsidetall."
     },
     {
-      "q": "Can I skip numbering the first page?",
-      "a": "Yes, set the page offset to skip cover pages."
+      "q": "Kan jeg hoppe over å nummerere den første siden?",
+      "a": "Ja, still sideforskyvningen til å hoppe over forsider."
     },
     {
-      "q": "Where can I position numbers?",
-      "a": "Header-left, header-center, header-right, and same for footer."
+      "q": "Hvor kan jeg plassere tall?",
+      "a": "Topptekst-venstre, topptekst-senter, topptekst-høyre, og samme for bunntekst."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, helt gratis."
+      "q": "Er dette gratis?",
+      "a": "Ja, alltid gratis."
     }
-  ]
+  ],
+  "faqTitle": "Ofte stilte spørsmål",
+  "supportCenter": "Støttesenter"
 }

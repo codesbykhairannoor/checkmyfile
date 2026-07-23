@@ -1,67 +1,85 @@
 {
-  "title": "Remove PDF Metadata — Strip Hidden Author Data Offline",
-  "h1": "Strip All Hidden Metadata from PDF Files Instantly",
-  "description": "Remove author names, company info, GPS locations, and revision history from PDFs entirely in your browser. No upload. Perfect for Istanbul users.",
+  "title": "PDF Meta Verilerini Kaldır — Gizli Yazar Verilerini Çevrimdışından Çıkarın",
+  "h1": "PDF Dosyalarından Tüm Gizli Meta Verileri Anında Çıkarın",
+  "description": "Tarayıcınızdaki yazar adlarını, şirket bilgilerini, GPS konumlarını ve düzeltme geçmişini PDF'lerden tamamen kaldırın. Yükleme yok. %100 güvenli yerel işleme.",
+  "buttonText": "Process Document",
+  "badges": [
+    "Güvenli ve Özel",
+    "Çevrimdışı Motor",
+    "Sıfır Yükleme"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "metadata_hero_features",
-      "title": "Why Strip PDF Metadata?",
-      "content": "PDFs carry hidden metadata — your name, your company, revision history. Strip it all before sharing publicly, entirely offline."
+      "title": "PDF Meta Verilerini Neden Soymalı?",
+      "content": "PDF'ler gizli meta veriler taşır; adınız, şirketiniz, revizyon geçmişiniz. Tamamen çevrimdışı olarak herkese açık olarak paylaşmadan önce hepsini soyun."
     },
     {
       "type": "metadata_how_to_steps",
-      "title": "Before & After — How Metadata Removal Works",
+      "title": "Öncesi ve Sonrası — Meta Veri Kaldırma Nasıl Çalışır",
       "steps": [
         {
-          "title": "Open Your PDF",
-          "description": "Select the PDF with hidden metadata to remove."
+          "title": "PDF'nizi açın",
+          "description": "Kaldırılacak gizli meta verileri içeren PDF'yi seçin."
         },
         {
-          "title": "Preview Hidden Data",
-          "description": "See exactly what metadata — author, GPS, history — is embedded."
+          "title": "Gizli Verileri Önizle",
+          "description": "Tam olarak hangi meta verilerin (yazar, GPS, geçmiş) gömülü olduğunu görün."
         },
         {
-          "title": "Strip & Download Clean PDF",
-          "description": "Remove all metadata instantly and save a clean, anonymous PDF."
+          "title": "Temiz PDF'yi Çıkarın ve İndirin",
+          "description": "Tüm meta verileri anında kaldırın ve temiz, anonim bir PDF kaydedin."
         }
-      ]
+      ],
+      "badgeText": "Hızlı Kılavuz"
     },
     {
       "type": "metadata_geo_targeting",
-      "title": "Metadata Privacy Tool for Istanbul Professionals",
-      "content": "Journalists, legal professionals, and privacy-conscious users in Istanbul strip metadata before publishing or sharing PDFs externally."
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
     },
     {
       "type": "metadata_privacy_security",
-      "title": "All Metadata Types Permanently Erased",
-      "content": "Author name, company, GPS coordinates from embedded images, revision history, software fingerprints — all permanently removed."
+      "title": "Tüm Meta Veri Türleri Kalıcı Olarak Silindi",
+      "content": "Yazar adı, şirket, gömülü görüntülerden GPS koordinatları, düzeltme geçmişi, yazılım parmak izleri — hepsi kalıcı olarak kaldırıldı.",
+      "badgeText": "Önce Güvenlik"
     },
     {
       "type": "metadata_performance",
-      "title": "Strip Metadata in Milliseconds",
-      "content": "Metadata removal takes milliseconds and often reduces file size by 10–15%. All offline."
+      "title": "Meta Verileri Milisaniyeler İçinde Çıkarma",
+      "content": "Meta verilerin kaldırılması milisaniyeler alır ve genellikle dosya boyutunu %10-15 oranında azaltır. Hepsi çevrimdışı.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [
     {
-      "q": "What metadata is removed?",
-      "a": "Author, creator, producer, title, keywords, and all XMP/EXIF data."
+      "q": "Hangi meta veriler kaldırıldı?",
+      "a": "Yazar, yaratıcı, yapımcı, başlık, anahtar kelimeler ve tüm XMP/EXIF verileri."
     },
     {
-      "q": "Are document bookmarks affected?",
-      "a": "No, bookmarks and structure are preserved; only metadata is removed."
+      "q": "Belge yer imleri etkilenir mi?",
+      "a": "Hayır, yer imleri ve yapı korunur; yalnızca meta veriler kaldırılır."
     },
     {
-      "q": "Can I preview the metadata first?",
-      "a": "Yes, we show a list of all detected metadata before removing."
+      "q": "Önce meta verileri önizleyebilir miyim?",
+      "a": "Evet, kaldırmadan önce tespit edilen tüm meta verilerin bir listesini gösteririz."
     },
     {
-      "q": "Is the document content affected?",
-      "a": "No, the content, images, and structure remain intact."
+      "q": "Belge içeriği etkilendi mi?",
+      "a": "Hayır, içerik, görseller ve yapı bozulmadan kalır."
     },
     {
-      "q": "Is this free?",
-      "a": "Evet, tamamen ücretsiz."
+      "q": "Bu bedava mı?",
+      "a": "Evet, her zaman ücretsiz."
     }
-  ]
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi"
 }

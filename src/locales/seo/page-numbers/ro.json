@@ -1,67 +1,85 @@
 {
-  "title": "Add Page Numbers to PDF — Offline Number Stamp",
-  "h1": "Insert Page Numbers into PDF Documents Locally",
-  "description": "Stamp page numbers at the header or footer of your PDF entirely in your browser. No upload. Ideal for users in Bucharest.",
+  "title": "Adăugați numere de pagină în PDF — Ștampila numărului offline",
+  "h1": "Inserați numere de pagină în documentele PDF local",
+  "description": "Ștampilați numerele paginii la antetul sau subsolul PDF-ului în întregime în browser. Rapid și complet sigur.",
+  "buttonText": "Add Page Numbers",
+  "badges": [
+    "Poziție personalizată",
+    "Antet și subsol",
+    "Numerotarea Bates"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Add Page Numbers Offline?",
-      "content": "Page numbers are a formatting step, not a reason to upload confidential documents to a cloud service."
+      "type": "pagenum_hero_features",
+      "title": "De ce să adăugați numere de pagină offline?",
+      "content": "Numerele paginilor sunt un pas de formatare, nu un motiv pentru a încărca documente confidențiale într-un serviciu cloud."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Add Page Numbers",
+      "type": "pagenum_how_to_steps",
+      "title": "Cum să adăugați numere de pagină",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to number."
+          "title": "Deschide PDF",
+          "description": "Selectați PDF-ul la număr."
         },
         {
-          "title": "Configure Style",
-          "description": "Choose position, format (1/12, Page 1, i, ii…), and font."
+          "title": "Configurați stilul",
+          "description": "Alegeți poziția, formatul (1/12, Pagina 1, i, ii...) și fontul."
         },
         {
-          "title": "Apply & Download",
-          "description": "Download your paginated PDF instantly."
+          "title": "Aplicați și descărcați",
+          "description": "Descărcați instantaneu PDF-ul dvs. paginat."
         }
-      ]
+      ],
+      "badgeText": "Ghid rapid"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Page Numbering for Bucharest Legal Docs",
-      "content": "Legal professionals in Bucharest number briefs and reports locally without cloud service dependency."
+      "type": "pagenum_geo_targeting",
+      "title": "Procesare locală 100% sigură",
+      "content": "Toate operațiunile sunt efectuate direct pe dispozitivul local. Folosim tehnologie avansată WebAssembly pentru a vă procesa documentele fără a le încărca vreodată pe servere externe, asigurând confidențialitate completă.",
+      "badgeText": "Prelucrare locală"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Internal Documents Stay Numbered & Private",
-      "content": "Add page numbers to contracts and confidential reports without any server involvement."
+      "type": "pagenum_privacy_security",
+      "title": "Documentele interne rămân numerotate și private",
+      "content": "Adăugați numere de pagină la contracte și rapoarte confidențiale fără nicio implicare a serverului.",
+      "badgeText": "Securitatea în primul rând"
     },
     {
-      "type": "organizer_performance",
-      "title": "Number a 1000-Page PDF Instantly",
-      "content": "Stamping page numbers locally takes milliseconds for any size document."
+      "type": "pagenum_performance",
+      "title": "Numărează un PDF de 1000 de pagini instantaneu",
+      "content": "Ștampilarea locală a numerelor de pagină durează milisecunde pentru orice dimensiune a documentului.",
+      "badgeText": "Rapid fulger"
     }
   ],
   "faqs": [
     {
-      "q": "What number formats are available?",
-      "a": "Arabic (1, 2, 3), Roman (i, ii, iii), and letter (a, b, c) formats."
+      "q": "Ce formate de numere sunt disponibile?",
+      "a": "Formate arabe (1, 2, 3), romane (i, ii, iii) și litere (a, b, c)."
     },
     {
-      "q": "Can I start from a custom number?",
-      "a": "Yes, set any starting page number."
+      "q": "Pot începe de la un număr personalizat?",
+      "a": "Da, setați orice număr de pagină de început."
     },
     {
-      "q": "Can I skip numbering the first page?",
-      "a": "Yes, set the page offset to skip cover pages."
+      "q": "Pot sări peste numerotarea primei pagini?",
+      "a": "Da, setați decalarea paginii pentru a omite paginile de copertă."
     },
     {
-      "q": "Where can I position numbers?",
-      "a": "Header-left, header-center, header-right, and same for footer."
+      "q": "Unde pot poziționa numerele?",
+      "a": "Antet-stânga, antet-centru, antet-dreapta și același lucru pentru subsol."
     },
     {
-      "q": "Is this free?",
-      "a": "Da, complet gratuit."
+      "q": "Este gratuit?",
+      "a": "Da, întotdeauna gratuit."
     }
-  ]
+  ],
+  "faqTitle": "Întrebări frecvente",
+  "supportCenter": "Centrul de suport"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Split PDF - Extract Pages Securely",
-  "h1": "Split and Extract PDF Pages in Seconds",
-  "description": "Extract specific pages or split a large PDF into multiple files locally in your browser. Perfect for legal professionals in Moscow.",
+  "title": "Разделение PDF — безопасное извлечение страниц",
+  "h1": "Разделение и извлечение PDF-страниц за считанные секунды",
+  "description": "Извлекайте определенные страницы или разделяйте большой PDF-файл на несколько файлов локально в браузере. Быстро и полностью безопасно.",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Split PDFs Locally?",
-      "content": "When dealing with massive legal or corporate documents, extracting a single page shouldn't require uploading a 1GB file. Do it instantly right on your machine."
+      "title": "Зачем разделять PDF-файлы локально?",
+      "content": "При работе с большими юридическими или корпоративными документами для извлечения одной страницы не требуется загрузка файла размером 1 ГБ. Сделайте это мгновенно прямо на своем компьютере."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Extract Pages",
+      "title": "Как извлечь страницы",
       "steps": [
         {
-          "title": "Open Document",
-          "description": "Load the multi-page PDF you want to split."
+          "title": "Открыть документ",
+          "description": "Загрузите многостраничный PDF-файл, который хотите разделить."
         },
         {
-          "title": "Select Ranges",
-          "description": "Pick specific page numbers or visually select pages to extract."
+          "title": "Выберите диапазоны",
+          "description": "Выберите конкретные номера страниц или визуально выберите страницы для извлечения."
         },
         {
-          "title": "Export Zip",
-          "description": "Download your newly split files organized in a ZIP."
+          "title": "Экспортный почтовый индекс",
+          "description": "Загрузите недавно разделенные файлы, организованные в ZIP-архив."
         }
-      ]
+      ],
+      "badgeText": "Краткое руководство"
     },
     {
       "type": "split_geo_targeting",
-      "title": "The Best Splitter in Moscow, RU-MOW",
-      "content": "Whether you are studying in Moscow or working on a tight deadline, extracting pages is now instantaneous."
+      "title": "100% безопасная локальная обработка",
+      "content": "Все операции выполняются непосредственно на вашем локальном устройстве. Мы используем передовую технологию WebAssembly для обработки ваших документов, не загружая их на внешние серверы, обеспечивая полную конфиденциальность.",
+      "badgeText": "Локальная обработка"
     },
     {
       "type": "split_privacy_security",
-      "title": "Total Page Privacy",
-      "content": "Splitting confidential employee records? Rest easy knowing our code executes purely in your local environment."
+      "title": "Общая конфиденциальность страницы",
+      "content": "Разделение конфиденциальных записей сотрудников? Будьте спокойны, зная, что наш код выполняется исключительно в вашей локальной среде.",
+      "badgeText": "Безопасность превыше всего"
     },
     {
       "type": "split_performance",
-      "title": "Zero-Upload Extraction",
-      "content": "Grabbing page 14 from a 2000-page PDF takes milliseconds, skipping the excruciating upload step entirely."
+      "title": "Извлечение без загрузки",
+      "content": "Получение 14-й страницы из 2000-страничного PDF-файла занимает миллисекунды, при этом мучительный этап загрузки полностью отсутствует.",
+      "badgeText": "Молниеносно"
     }
   ],
   "faqs": [
     {
-      "q": "How do I extract just one page?",
-      "a": "Simply click on the page thumbnail you want and hit Export."
+      "q": "Как извлечь только одну страницу?",
+      "a": "Просто нажмите на миниатюру нужной страницы и нажмите «Экспорт»."
     },
     {
-      "q": "Can I split the PDF in half?",
-      "a": "Yes, you can specify custom page ranges like 1-10 and 11-20."
+      "q": "Могу ли я разделить PDF-файл пополам?",
+      "a": "Да, вы можете указать собственные диапазоны страниц, например 1–10 и 11–20."
     },
     {
-      "q": "Will the extracted pages lose quality?",
-      "a": "No, the splitting process uses binary extraction, preserving 100% of the original quality."
+      "q": "Потеряют ли качество извлеченные страницы?",
+      "a": "Нет, в процессе разделения используется бинарное извлечение, сохраняющее 100 % исходного качества."
     },
     {
-      "q": "Is my document uploaded when splitting?",
-      "a": "Never. The entire 2000-page document stays strictly in your browser."
+      "q": "Загружается ли мой документ при разделении?",
+      "a": "Никогда. Весь 2000-страничный документ остается строго в вашем браузере."
     },
     {
-      "q": "Is there a limit to how many pages I can split?",
-      "a": "No limits! Split as many pages as your computer can handle."
+      "q": "Есть ли ограничение на количество страниц, которые я могу разделить?",
+      "a": "Никаких ограничений! Разделите столько страниц, сколько ваш компьютер может обработать."
     }
-  ]
+  ],
+  "badges": [
+    "Мгновенное разделение",
+    "Точный диапазон",
+    "Без ограничений"
+  ],
+  "stats": [
+    "Ultra Fast",
+    "No Upload",
+    "Batch Zip",
+    "Secure"
+  ],
+  "buttonText": "Split PDF",
+  "faqTitle": "Часто задаваемые вопросы",
+  "supportCenter": "Центр поддержки"
 }

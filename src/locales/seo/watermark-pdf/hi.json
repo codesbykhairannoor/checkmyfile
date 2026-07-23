@@ -1,67 +1,85 @@
 {
-  "title": "Add Watermark to PDF — Offline Watermarking",
-  "h1": "Stamp PDFs with Text or Image Watermarks Locally",
-  "description": "Add \"CONFIDENTIAL\", logos, or custom text watermarks to PDFs entirely in your browser. No upload. Best for users in New Delhi.",
+  "title": "पीडीएफ में वॉटरमार्क जोड़ें - ऑफ़लाइन वॉटरमार्किंग",
+  "h1": "स्थानीय स्तर पर टेक्स्ट या छवि वॉटरमार्क के साथ पीडीएफ पर मुहर लगाएं",
+  "description": "अपने ब्राउज़र में पूरी तरह से पीडीएफ़ में \"गोपनीय\", लोगो, या कस्टम टेक्स्ट वॉटरमार्क जोड़ें। कोई अपलोड नहीं. 100% सुरक्षित स्थानीय प्रसंस्करण।",
+  "buttonText": "Add Watermark",
+  "badges": [
+    "कस्टम टेक्स्ट",
+    "एडजस्टेबल अपारदर्शिता",
+    "ब्रांड संरक्षण"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Watermark PDFs Offline?",
-      "content": "Adding watermarks means your document is sensitive. Never upload draft contracts or confidential reports to a cloud watermarker."
+      "type": "watermark_hero_features",
+      "title": "वॉटरमार्क पीडीएफ ऑफ़लाइन क्यों?",
+      "content": "वॉटरमार्क जोड़ने का मतलब है कि आपका दस्तावेज़ संवेदनशील है। क्लाउड वॉटरमार्कर पर कभी भी ड्राफ्ट अनुबंध या गोपनीय रिपोर्ट अपलोड न करें।"
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Watermark a PDF",
+      "type": "watermark_how_to_steps",
+      "title": "पीडीएफ को वॉटरमार्क कैसे करें",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to watermark."
+          "title": "पीडीएफ खोलें",
+          "description": "वॉटरमार्क के लिए पीडीएफ का चयन करें।"
         },
         {
-          "title": "Design Watermark",
-          "description": "Type text or upload a logo image."
+          "title": "डिज़ाइन वॉटरमार्क",
+          "description": "टेक्स्ट टाइप करें या लोगो छवि अपलोड करें।"
         },
         {
-          "title": "Apply & Download",
-          "description": "Get your watermarked PDF in one click."
+          "title": "आवेदन करें और डाउनलोड करें",
+          "description": "एक क्लिक में अपना वॉटरमार्क पीडीएफ प्राप्त करें।"
         }
-      ]
+      ],
+      "badgeText": "त्वरित मार्गदर्शिका"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Document Watermarking in New Delhi",
-      "content": "Legal and creative professionals in New Delhi stamp documents with watermarks without cloud uploads."
+      "type": "watermark_geo_targeting",
+      "title": "100% सुरक्षित स्थानीय प्रसंस्करण",
+      "content": "सभी ऑपरेशन सीधे आपके स्थानीय डिवाइस पर किए जाते हैं। हम पूर्ण गोपनीयता सुनिश्चित करते हुए, आपके दस्तावेज़ों को बाहरी सर्वर पर अपलोड किए बिना संसाधित करने के लिए उन्नत WebAssembly तकनीक का उपयोग करते हैं।",
+      "badgeText": "स्थानीय प्रसंस्करण"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Confidential Drafts Stay Private",
-      "content": "Draft contracts and unreleased designs watermarked locally without any server contact."
+      "type": "watermark_privacy_security",
+      "title": "गोपनीय ड्राफ्ट निजी रहते हैं",
+      "content": "ड्राफ्ट अनुबंध और अप्रकाशित डिज़ाइन बिना किसी सर्वर संपर्क के स्थानीय रूप से वॉटरमार्क किए गए।",
+      "badgeText": "सुरक्षा पहले"
     },
     {
-      "type": "transform_performance",
-      "title": "Stamp Thousands of Pages Instantly",
-      "content": "Apply watermarks to a 1000-page document in under 3 seconds. All in your browser."
+      "type": "watermark_performance",
+      "title": "हजारों पेजों पर तुरंत मोहर लगाएं",
+      "content": "3 सेकंड से कम समय में 1000 पेज के दस्तावेज़ पर वॉटरमार्क लागू करें। सब कुछ आपके ब्राउज़र में.",
+      "badgeText": "बिजली की तेजी"
     }
   ],
   "faqs": [
     {
-      "q": "Can I use a logo as a watermark?",
-      "a": "Yes, upload a PNG logo and set transparency."
+      "q": "क्या मैं वॉटरमार्क के रूप में लोगो का उपयोग कर सकता हूँ?",
+      "a": "हां, पीएनजी लोगो अपलोड करें और पारदर्शिता सेट करें।"
     },
     {
-      "q": "Can I adjust watermark opacity?",
-      "a": "Yes, from 10% to 100% opacity."
+      "q": "क्या मैं वॉटरमार्क अपारदर्शिता को समायोजित कर सकता हूँ?",
+      "a": "हाँ, 10% से 100% तक अपारदर्शिता।"
     },
     {
-      "q": "Can I apply it to specific pages only?",
-      "a": "Yes, choose page ranges."
+      "q": "क्या मैं इसे केवल विशिष्ट पृष्ठों पर ही लागू कर सकता हूँ?",
+      "a": "हां, पृष्ठ श्रेणियां चुनें."
     },
     {
-      "q": "Is diagonal placement available?",
-      "a": "Yes, rotate watermarks to any angle."
+      "q": "क्या विकर्ण प्लेसमेंट उपलब्ध है?",
+      "a": "हाँ, वॉटरमार्क को किसी भी कोण पर घुमाएँ।"
     },
     {
-      "q": "Is this free?",
-      "a": "हाँ, पूरी तरह मुफ्त।"
+      "q": "क्या यह मुफ़्त है?",
+      "a": "हाँ, हमेशा मुफ़्त."
     }
-  ]
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न",
+  "supportCenter": "सहायता केंद्र"
 }

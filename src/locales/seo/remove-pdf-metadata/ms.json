@@ -1,67 +1,85 @@
 {
-  "title": "Remove PDF Metadata — Strip Hidden Author Data Offline",
-  "h1": "Strip All Hidden Metadata from PDF Files Instantly",
-  "description": "Remove author names, company info, GPS locations, and revision history from PDFs entirely in your browser. No upload. Perfect for Kuala Lumpur users.",
+  "title": "Alih Keluar Metadata PDF — Keluarkan Data Pengarang Tersembunyi Luar Talian",
+  "h1": "Keluarkan Semua Metadata Tersembunyi daripada Fail PDF Serta-merta",
+  "description": "Alih keluar nama pengarang, maklumat syarikat, lokasi GPS dan sejarah semakan daripada PDF sepenuhnya dalam penyemak imbas anda. Tiada muat naik. 100% pemprosesan tempatan selamat.",
+  "buttonText": "Process Document",
+  "badges": [
+    "Selamat & Peribadi",
+    "Enjin Luar Talian",
+    "Muat Naik Sifar"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "metadata_hero_features",
-      "title": "Why Strip PDF Metadata?",
-      "content": "PDFs carry hidden metadata — your name, your company, revision history. Strip it all before sharing publicly, entirely offline."
+      "title": "Mengapa Strip Metadata PDF?",
+      "content": "PDF membawa metadata tersembunyi — nama anda, syarikat anda, sejarah semakan. Tanggalkan semuanya sebelum berkongsi secara terbuka, sepenuhnya di luar talian."
     },
     {
       "type": "metadata_how_to_steps",
-      "title": "Before & After — How Metadata Removal Works",
+      "title": "Sebelum & Selepas — Cara Pembuangan Metadata Berfungsi",
       "steps": [
         {
-          "title": "Open Your PDF",
-          "description": "Select the PDF with hidden metadata to remove."
+          "title": "Buka PDF Anda",
+          "description": "Pilih PDF dengan metadata tersembunyi untuk dialih keluar."
         },
         {
-          "title": "Preview Hidden Data",
-          "description": "See exactly what metadata — author, GPS, history — is embedded."
+          "title": "Pratonton Data Tersembunyi",
+          "description": "Lihat dengan tepat metadata — pengarang, GPS, sejarah — dibenamkan."
         },
         {
-          "title": "Strip & Download Clean PDF",
-          "description": "Remove all metadata instantly and save a clean, anonymous PDF."
+          "title": "Strip & Muat Turun PDF Bersih",
+          "description": "Alih keluar semua metadata serta-merta dan simpan PDF yang bersih dan tanpa nama."
         }
-      ]
+      ],
+      "badgeText": "Panduan Pantas"
     },
     {
       "type": "metadata_geo_targeting",
-      "title": "Metadata Privacy Tool for Kuala Lumpur Professionals",
-      "content": "Journalists, legal professionals, and privacy-conscious users in Kuala Lumpur strip metadata before publishing or sharing PDFs externally."
+      "title": "100% Pemprosesan Tempatan Selamat",
+      "content": "Semua operasi dilakukan terus pada peranti tempatan anda. Kami menggunakan teknologi WebAssembly termaju untuk memproses dokumen anda tanpa pernah memuat naiknya ke pelayan luaran, memastikan privasi lengkap.",
+      "badgeText": "Pemprosesan Setempat"
     },
     {
       "type": "metadata_privacy_security",
-      "title": "All Metadata Types Permanently Erased",
-      "content": "Author name, company, GPS coordinates from embedded images, revision history, software fingerprints — all permanently removed."
+      "title": "Semua Jenis Metadata Dipadamkan Secara Kekal",
+      "content": "Nama pengarang, syarikat, koordinat GPS daripada imej terbenam, sejarah semakan, cap jari perisian — semuanya dialih keluar secara kekal.",
+      "badgeText": "Keselamatan Diutamakan"
     },
     {
       "type": "metadata_performance",
-      "title": "Strip Metadata in Milliseconds",
-      "content": "Metadata removal takes milliseconds and often reduces file size by 10–15%. All offline."
+      "title": "Strip Metadata dalam Milisaat",
+      "content": "Pembuangan metadata mengambil masa milisaat dan selalunya mengurangkan saiz fail sebanyak 10–15%. Semua di luar talian.",
+      "badgeText": "Sepantas Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "What metadata is removed?",
-      "a": "Author, creator, producer, title, keywords, and all XMP/EXIF data."
+      "q": "Apakah metadata yang dialih keluar?",
+      "a": "Pengarang, pencipta, pengeluar, tajuk, kata kunci dan semua data XMP/EXIF."
     },
     {
-      "q": "Are document bookmarks affected?",
-      "a": "No, bookmarks and structure are preserved; only metadata is removed."
+      "q": "Adakah penanda halaman dokumen terjejas?",
+      "a": "Tidak, penanda halaman dan struktur dipelihara; hanya metadata dialih keluar."
     },
     {
-      "q": "Can I preview the metadata first?",
-      "a": "Yes, we show a list of all detected metadata before removing."
+      "q": "Bolehkah saya pratonton metadata dahulu?",
+      "a": "Ya, kami menunjukkan senarai semua metadata yang dikesan sebelum mengalih keluar."
     },
     {
-      "q": "Is the document content affected?",
-      "a": "No, the content, images, and structure remain intact."
+      "q": "Adakah kandungan dokumen terjejas?",
+      "a": "Tidak, kandungan, imej dan struktur kekal utuh."
     },
     {
-      "q": "Is this free?",
-      "a": "Ya, percuma sepenuhnya."
+      "q": "Adakah ini percuma?",
+      "a": "Ya, sentiasa percuma."
     }
-  ]
+  ],
+  "faqTitle": "Soalan Lazim",
+  "supportCenter": "Pusat Sokongan"
 }

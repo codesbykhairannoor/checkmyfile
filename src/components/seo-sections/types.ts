@@ -9,4 +9,7 @@ export interface SectionProps {
   section: SeoSectionData;
   /** flipLayout = true → mirror horizontal arrangement */
   flipLayout: boolean;
+  badges?: string[];
+  stats?: string[];
+  buttonText?: string;
 }

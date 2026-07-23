@@ -1,67 +1,85 @@
 {
-  "title": "CSV to Excel Converter — Offline & Instant",
-  "h1": "Convert CSV Files to Excel Spreadsheets Locally",
-  "description": "Transform .csv files into structured .xlsx spreadsheets entirely in your browser. No upload. Perfect for data teams in Jerusalem.",
+  "title": "ממיר CSV ל-Excel — לא מקוון ומידי",
+  "h1": "המר קבצי CSV לגיליונות אלקטרוניים של Excel באופן מקומי",
+  "description": "הפוך קובצי .csv לגיליונות אלקטרוניים מובנים .xlsx לגמרי בדפדפן שלך. אין העלאה. עיבוד מקומי מאובטח של 100%.",
+  "buttonText": "Convert CSV",
+  "badges": [
+    "תמיכה ב-UTF-8",
+    "רב עמודות",
+    "המר מיידי"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Convert CSV Offline?",
-      "content": "CSV files often contain customer or financial data. Convert them to Excel locally without exposing your datasets to any cloud service."
+      "type": "csv_excel_hero_features",
+      "title": "למה להמיר CSV במצב לא מקוון?",
+      "content": "קובצי CSV מכילים לרוב נתוני לקוחות או נתונים פיננסיים. המר אותם ל-Excel באופן מקומי מבלי לחשוף את מערכי הנתונים שלך לשירות ענן כלשהו."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert CSV to Excel",
+      "type": "csv_excel_how_to_steps",
+      "title": "כיצד להמיר CSV ל-Excel",
       "steps": [
         {
-          "title": "Open CSV File",
-          "description": "Select the CSV file to convert."
+          "title": "פתח קובץ CSV",
+          "description": "בחר את קובץ ה-CSV להמרה."
         },
         {
-          "title": "Preview Data",
-          "description": "See the parsed columns and rows before export."
+          "title": "תצוגה מקדימה נתונים",
+          "description": "ראה את העמודות והשורות המנותחות לפני הייצוא."
         },
         {
-          "title": "Download .xlsx",
-          "description": "Get your Excel spreadsheet instantly."
+          "title": "הורד את .xlsx",
+          "description": "קבל את הגיליון האלקטרוני של Excel באופן מיידי."
         }
-      ]
+      ],
+      "badgeText": "מדריך מהיר"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Data Tools for Jerusalem Analysts",
-      "content": "Data analysts in Jerusalem convert CSV exports to Excel without uploading sensitive datasets."
+      "type": "csv_excel_geo_targeting",
+      "title": "100% עיבוד מקומי מאובטח",
+      "content": "כל הפעולות מבוצעות ישירות במכשיר המקומי שלך. אנו משתמשים בטכנולוגיית WebAssembly מתקדמת כדי לעבד את המסמכים שלך מבלי להעלות אותם לשרתים חיצוניים, מה שמבטיח פרטיות מלאה.",
+      "badgeText": "עיבוד מקומי"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Customer Data Stays on Your Machine",
-      "content": "CRM exports, transaction logs, and survey data converted locally with zero cloud involvement."
+      "type": "csv_excel_privacy_security",
+      "title": "נתוני לקוחות נשארים במחשב שלך",
+      "content": "ייצוא CRM, יומני עסקאות ונתוני סקרים מומרים באופן מקומי ללא מעורבות בענן.",
+      "badgeText": "אבטחה תחילה"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Large CSV Files Instantly",
-      "content": "Convert a 100,000-row CSV to Excel in seconds. All browser-native processing."
+      "type": "csv_excel_performance",
+      "title": "המר קבצי CSV גדולים באופן מיידי",
+      "content": "המר CSV של 100,000 שורות ל-Excel תוך שניות. כל העיבודים המקוריים של הדפדפן.",
+      "badgeText": "מהיר ברק"
     }
   ],
   "faqs": [
     {
-      "q": "Is the column structure preserved?",
-      "a": "Yes, all columns are mapped to Excel columns."
+      "q": "האם מבנה העמודים נשמר?",
+      "a": "כן, כל העמודות ממופות לעמודות Excel."
     },
     {
-      "q": "Can I convert multiple CSVs?",
-      "a": "Yes, batch conversion to multiple sheets is supported."
+      "q": "האם אוכל להמיר מספר קובצי CSV?",
+      "a": "כן, המרת אצווה למספר גיליונות נתמכת."
     },
     {
-      "q": "Are special characters handled?",
-      "a": "Yes, UTF-8 and various encodings are supported."
+      "q": "האם מטפלים בדמויות מיוחדות?",
+      "a": "כן, UTF-8 וקידודים שונים נתמכים."
     },
     {
-      "q": "Can I set delimiters?",
-      "a": "Yes, comma, semicolon, and tab delimiters are supported."
+      "q": "האם אני יכול להגדיר תוחמים?",
+      "a": "כן, תומכים במפרידי פסיק, נקודה-פסיק וטאבים."
     },
     {
-      "q": "Is this free?",
-      "a": "כן, חינם לחלוטין."
+      "q": "האם זה בחינם?",
+      "a": "כן, תמיד בחינם."
     }
-  ]
+  ],
+  "faqTitle": "שאלות נפוצות",
+  "supportCenter": "מרכז תמיכה"
 }

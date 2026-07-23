@@ -1,67 +1,85 @@
 {
-  "title": "Image to PDF — Combine Photos Offline",
-  "h1": "Convert Images to PDF Without Uploading",
-  "description": "Turn JPG, PNG, and WebP images into a single PDF document in your browser. Your photos stay private. Perfect for users in Oslo.",
+  "title": "Bilde til PDF — Kombiner bilder frakoblet",
+  "h1": "Konverter bilder til PDF uten å laste opp",
+  "description": "Gjør JPG-, PNG- og WebP-bilder til ett enkelt PDF-dokument i nettleseren din. Bildene dine forblir private. 100 % sikker lokal behandling.",
+  "buttonText": "Convert Images",
+  "badges": [
+    "Porteføljer",
+    "ID-skanninger",
+    "Fotoalbum"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Images Offline?",
-      "content": "Photos contain location data and personal moments. Convert them to PDF without exposing them to any cloud service."
+      "type": "image_hero_features",
+      "title": "Hvorfor konvertere bilder frakoblet?",
+      "content": "Bilder inneholder posisjonsdata og personlige øyeblikk. Konverter dem til PDF uten å utsette dem for noen skytjeneste."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Turn Images Into PDF",
+      "type": "image_how_to_steps",
+      "title": "Hvordan gjøre bilder om til PDF",
       "steps": [
         {
-          "title": "Select Images",
-          "description": "Choose JPG, PNG, or WebP files from your device."
+          "title": "Velg bilder",
+          "description": "Velg JPG-, PNG- eller WebP-filer fra enheten din."
         },
         {
-          "title": "Arrange Order",
-          "description": "Drag to reorder images before generating the PDF."
+          "title": "Ordne rekkefølge",
+          "description": "Dra for å omorganisere bilder før du genererer PDF-en."
         },
         {
-          "title": "Export PDF",
-          "description": "Download your image PDF in one click."
+          "title": "Eksporter PDF",
+          "description": "Last ned PDF-bildet ditt med ett klikk."
         }
-      ]
+      ],
+      "badgeText": "Hurtigguide"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Image to PDF for Oslo Users",
-      "content": "Photographers and designers in Oslo use our tool to package portfolios without cloud uploads."
+      "type": "image_geo_targeting",
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle operasjoner utføres direkte på din lokale enhet. Vi bruker avansert WebAssembly-teknologi for å behandle dokumentene dine uten å laste dem opp til eksterne servere, noe som sikrer fullstendig personvern.",
+      "badgeText": "Lokal behandling"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Photos Never Leave Your Device",
-      "content": "Personal photos, ID scans, medical images — all converted 100% locally without any server contact."
+      "type": "image_privacy_security",
+      "title": "Bilder Forlat aldri enheten din",
+      "content": "Personlige bilder, ID-skanninger, medisinske bilder – alt konvertert 100 % lokalt uten noen serverkontakt.",
+      "badgeText": "Sikkerhet først"
     },
     {
-      "type": "combiner_performance",
-      "title": "Batch Convert Instantly",
-      "content": "Convert 50 images into a single PDF in under 5 seconds. No upload, no wait."
+      "type": "image_performance",
+      "title": "Batch Konverter øyeblikkelig",
+      "content": "Konverter 50 bilder til én enkelt PDF på under 5 sekunder. Ingen opplasting, ingen vent.",
+      "badgeText": "Lynrask"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are supported?",
-      "a": "JPG, JPEG, PNG, and WebP are all supported."
+      "q": "Hvilke bildeformater støttes?",
+      "a": "JPG, JPEG, PNG og WebP støttes alle."
     },
     {
-      "q": "Can I combine multiple images?",
-      "a": "Yes, select as many images as you want and reorder them."
+      "q": "Kan jeg kombinere flere bilder?",
+      "a": "Ja, velg så mange bilder du vil og omorganiser dem."
     },
     {
-      "q": "Is image quality preserved?",
-      "a": "Yes, images are embedded at their original resolution."
+      "q": "Er bildekvaliteten bevart?",
+      "a": "Ja, bildene er innebygd i den opprinnelige oppløsningen."
     },
     {
-      "q": "Does it strip EXIF metadata?",
-      "a": "You can optionally strip EXIF data for privacy."
+      "q": "Fjerner den EXIF-metadata?",
+      "a": "Du kan eventuelt fjerne EXIF-data for personvern."
     },
     {
-      "q": "Is there a limit on image count?",
-      "a": "Ja, helt gratis."
+      "q": "Er det en grense for antall bilder?",
+      "a": "Ingen grense! Kombiner hundrevis av bilder til én PDF."
     }
-  ]
+  ],
+  "faqTitle": "Ofte stilte spørsmål",
+  "supportCenter": "Støttesenter"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Excel to CSV Converter — Export Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to CSV Locally",
-  "description": "Export .xlsx files to clean .csv format entirely in your browser. No upload. Ideal for developers in Helsinki.",
+  "title": "Excel to CSV Converter — Vie laskentataulukoita offline-tilassa",
+  "h1": "Muunna Excel-laskentataulukot paikallisesti CSV-muotoon",
+  "description": "Vie .xlsx-tiedostot puhtaaksi .csv-muotoon kokonaan selaimessasi. Ei latausta. 100 % turvallinen paikallinen käsittely.",
+  "buttonText": "Convert to CSV",
+  "badges": [
+    "Raakatiedot",
+    "Tietokannan tuonti",
+    "Nopea vienti"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Export to CSV Offline?",
-      "content": "Exporting spreadsheets to CSV for data pipelines should not expose your raw data to any external API."
+      "type": "excel_csv_hero_features",
+      "title": "Miksi viedä CSV-muotoon offline-tilassa?",
+      "content": "Laskentataulukoiden vieminen CSV-muotoon dataputkia varten ei saa altistaa raakadataa millekään ulkoiselle API:lle."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Excel to CSV",
+      "type": "excel_csv_how_to_steps",
+      "title": "Kuinka muuntaa Excel CSV:ksi",
       "steps": [
         {
-          "title": "Open Excel File",
-          "description": "Select the .xlsx spreadsheet."
+          "title": "Avaa Excel-tiedosto",
+          "description": "Valitse .xlsx-laskentataulukko."
         },
         {
-          "title": "Choose Sheet",
-          "description": "Pick which sheet to export as CSV."
+          "title": "Valitse taulukko",
+          "description": "Valitse, mikä taulukko viedään CSV-muodossa."
         },
         {
-          "title": "Download CSV",
-          "description": "Get your clean CSV file instantly."
+          "title": "Lataa CSV",
+          "description": "Hanki puhdas CSV-tiedostosi välittömästi."
         }
-      ]
+      ],
+      "badgeText": "Pikaopas"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Developer Tools for Helsinki",
-      "content": "Developers and data engineers in Helsinki export spreadsheets to CSV for pipelines without cloud intermediaries."
+      "type": "excel_csv_geo_targeting",
+      "title": "100 % suojattu paikallinen käsittely",
+      "content": "Kaikki toiminnot suoritetaan suoraan paikallisella laitteellasi. Käytämme edistynyttä WebAssembly-tekniikkaa asiakirjojen käsittelyyn lataamatta niitä koskaan ulkoisille palvelimille, mikä takaa täydellisen yksityisyyden.",
+      "badgeText": "Paikallinen käsittely"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Spreadsheet Data Stays Local",
-      "content": "Financial models and business data exported to CSV without any server-side processing."
+      "type": "excel_csv_privacy_security",
+      "title": "Laskentataulukon tiedot pysyvät paikallisina",
+      "content": "Talousmallit ja liiketoimintatiedot viedään CSV-muotoon ilman palvelinpuolen käsittelyä.",
+      "badgeText": "Turvallisuus ensin"
     },
     {
-      "type": "organizer_performance",
-      "title": "Export Any Spreadsheet Instantly",
-      "content": "Export a 50,000-row Excel file to CSV in under 1 second. All in-browser."
+      "type": "excel_csv_performance",
+      "title": "Vie kaikki laskentataulukot välittömästi",
+      "content": "Vie 50 000 rivin Excel-tiedosto CSV-muotoon alle 1 sekunnissa. Kaikki selaimen sisällä.",
+      "badgeText": "Salamannopeasti"
     }
   ],
   "faqs": [
     {
-      "q": "Can I export multiple sheets?",
-      "a": "Yes, export each sheet as a separate CSV file."
+      "q": "Voinko viedä useita arkkeja?",
+      "a": "Kyllä, vie jokainen taulukko erillisenä CSV-tiedostona."
     },
     {
-      "q": "Is Excel formatting preserved in CSV?",
-      "a": "CSV is plain text; formatting is removed but all values are preserved."
+      "q": "Säilytetäänkö Excel-muotoilu CSV:ssä?",
+      "a": "CSV on pelkkää tekstiä; muotoilu poistetaan, mutta kaikki arvot säilytetään."
     },
     {
-      "q": "Can I choose the delimiter?",
-      "a": "Yes, choose comma, semicolon, or tab."
+      "q": "Voinko valita erottimen?",
+      "a": "Kyllä, valitse pilkku, puolipiste tai sarkain."
     },
     {
-      "q": "Are formulas exported as values?",
-      "a": "Yes, formula results (not formulas) are written to the CSV."
+      "q": "Viedäänkö kaavat arvoina?",
+      "a": "Kyllä, kaavan tulokset (ei kaavat) kirjoitetaan CSV-tiedostoon."
     },
     {
-      "q": "Is this free?",
+      "q": "Onko tämä ilmainen?",
       "a": "Kyllä, täysin ilmainen."
     }
-  ]
+  ],
+  "faqTitle": "Usein kysytyt kysymykset",
+  "supportCenter": "Tukikeskus"
 }

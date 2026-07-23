@@ -1,67 +1,85 @@
 {
-  "title": "PDF to Image Converter — Extract Pages Offline",
-  "h1": "Convert PDF Pages to PNG or JPG Images",
-  "description": "Extract every page from a PDF as high-quality images directly in your browser. Zero upload, total privacy. Best for users in Helsinki.",
+  "title": "PDF to Image Converter — Pura sivut offline-tilassa",
+  "h1": "Muunna PDF-sivut PNG- tai JPG-kuviksi",
+  "description": "Pura jokainen sivu PDF-tiedostosta korkealaatuisina kuvina suoraan selaimessasi. Nolla latausta, 100 % turvallinen paikallinen käsittely.",
+  "buttonText": "Extract Images",
+  "badges": [
+    "Suunnitteluportfoliot",
+    "Esitykset",
+    "Korkea laatu"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract PDF Pages Offline?",
-      "content": "PDFs often contain confidential diagrams, blueprints, or reports. Extract pages as images without any server access."
+      "type": "pdf_image_hero_features",
+      "title": "Miksi purkaa PDF-sivuja offline-tilassa?",
+      "content": "PDF-tiedostot sisältävät usein luottamuksellisia kaavioita, piirustuksia tai raportteja. Pura sivut kuviksi ilman palvelinkäyttöä."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Images",
+      "type": "pdf_image_how_to_steps",
+      "title": "Kuinka muuntaa PDF kuviksi",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF you want to extract images from."
+          "title": "Lataa PDF",
+          "description": "Valitse PDF, josta haluat poimia kuvia."
         },
         {
-          "title": "Choose Format",
-          "description": "Pick PNG (lossless) or JPG (compressed) output."
+          "title": "Valitse muoto",
+          "description": "Valitse PNG (häviötön) tai JPG (pakattu) lähtö."
         },
         {
-          "title": "Download Images",
-          "description": "Get all pages as individual image files in a ZIP."
+          "title": "Lataa kuvat",
+          "description": "Hanki kaikki sivut yksittäisinä kuvatiedostoina ZIP-tiedostona."
         }
-      ]
+      ],
+      "badgeText": "Pikaopas"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF to Image for Helsinki Designers",
-      "content": "Designers in Helsinki extract PDF pages as images for presentations and social media without cloud uploads."
+      "type": "pdf_image_geo_targeting",
+      "title": "100 % suojattu paikallinen käsittely",
+      "content": "Kaikki toiminnot suoritetaan suoraan paikallisella laitteellasi. Käytämme edistynyttä WebAssembly-tekniikkaa asiakirjojen käsittelyyn lataamatta niitä koskaan ulkoisille palvelimille, mikä takaa täydellisen yksityisyyden.",
+      "badgeText": "Paikallinen käsittely"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Confidential Diagrams Stay Private",
-      "content": "Technical blueprints and legal documents extracted as images without any data leaving your device."
+      "type": "pdf_image_privacy_security",
+      "title": "Luottamukselliset kaaviot Pysy yksityisinä",
+      "content": "Tekniset suunnitelmat ja juridiset asiakirjat poimitaan kuvina ilman, että laitteeltasi poistuu mitään tietoja.",
+      "badgeText": "Turvallisuus ensin"
     },
     {
-      "type": "split_performance",
-      "title": "Extract All Pages Instantly",
-      "content": "A 500-page PDF converted to images in seconds. No upload, no wait."
+      "type": "pdf_image_performance",
+      "title": "Pura kaikki sivut välittömästi",
+      "content": "500-sivuinen PDF muunnetaan kuviksi sekunneissa. Ei latausta, ei odottelua.",
+      "badgeText": "Salamannopeasti"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are available?",
-      "a": "PNG and JPG with adjustable quality settings."
+      "q": "Mitä kuvaformaatteja on saatavilla?",
+      "a": "PNG ja JPG säädettävillä laatuasetuksilla."
     },
     {
-      "q": "Can I extract specific pages?",
-      "a": "Yes, specify page ranges like 1-5 or 3,7,12."
+      "q": "Voinko purkaa tiettyjä sivuja?",
+      "a": "Kyllä, määritä sivualueet, kuten 1-5 tai 3,7,12."
     },
     {
-      "q": "What resolution are the exported images?",
-      "a": "Default 150 DPI, adjustable up to 300 DPI."
+      "q": "Mikä on vietyjen kuvien resoluutio?",
+      "a": "Oletus 150 DPI, säädettävissä 300 DPI asti."
     },
     {
-      "q": "Are all pages exported at once?",
-      "a": "Yes, all selected pages are zipped for a single download."
+      "q": "Viedäänkö kaikki sivut kerralla?",
+      "a": "Kyllä, kaikki valitut sivut pakataan yhtä latausta varten."
     },
     {
-      "q": "Is this free?",
-      "a": "Kyllä, täysin ilmainen."
+      "q": "Onko tämä ilmainen?",
+      "a": "Täysin ilmainen, aina."
     }
-  ]
+  ],
+  "faqTitle": "Usein kysytyt kysymykset",
+  "supportCenter": "Tukikeskus"
 }

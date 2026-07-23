@@ -1,67 +1,85 @@
 {
-  "title": "Organize PDF Pages — Reorder & Delete Offline",
-  "h1": "Reorder, Delete, or Duplicate PDF Pages Locally",
-  "description": "Drag and drop to rearrange, remove, or duplicate PDF pages entirely in your browser. No upload. Great for users in Riyadh.",
+  "title": "تنظيم صفحات PDF - إعادة الترتيب والحذف دون الاتصال بالإنترنت",
+  "h1": "إعادة ترتيب صفحات PDF أو حذفها أو تكرارها محليًا",
+  "description": "قم بالسحب والإفلات لإعادة ترتيب صفحات PDF أو إزالتها أو تكرارها بالكامل في متصفحك. سريع وآمن تماما.",
+  "buttonText": "Organize Pages",
+  "badges": [
+    "السحب والإسقاط",
+    "إعادة ترتيب الصفحات",
+    "محرر مرئي"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Organize PDFs Locally?",
-      "content": "Reorganizing page structure is an editing operation. Your internal document should stay internal during editing."
+      "type": "organize_hero_features",
+      "title": "لماذا تنظيم ملفات PDF محليًا؟",
+      "content": "إعادة تنظيم بنية الصفحة هي عملية تحرير. يجب أن يظل مستندك الداخلي داخليًا أثناء التحرير."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Organize PDF Pages",
+      "type": "organize_how_to_steps",
+      "title": "كيفية تنظيم صفحات PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to reorganize."
+          "title": "افتح ملف PDF",
+          "description": "قم بتحميل ملف PDF الذي تريد إعادة تنظيمه."
         },
         {
-          "title": "Drag to Reorder",
-          "description": "Drag page thumbnails to the desired position."
+          "title": "اسحب لإعادة الترتيب",
+          "description": "اسحب الصور المصغرة للصفحة إلى الموضع المطلوب."
         },
         {
-          "title": "Save Organized PDF",
-          "description": "Download the restructured PDF immediately."
+          "title": "حفظ ملف PDF المنظم",
+          "description": "قم بتنزيل ملف PDF المعاد هيكلته على الفور."
         }
-      ]
+      ],
+      "badgeText": "الدليل السريع"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Organization for Riyadh Teams",
-      "content": "Teams in Riyadh reorganize proposal and report PDFs without uploading to any cloud service."
+      "type": "organize_geo_targeting",
+      "title": "معالجة محلية آمنة بنسبة 100%",
+      "content": "يتم تنفيذ جميع العمليات مباشرة على جهازك المحلي. نحن نستخدم تقنية WebAssembly المتقدمة لمعالجة مستنداتك دون تحميلها على خوادم خارجية، مما يضمن الخصوصية الكاملة.",
+      "badgeText": "المعالجة المحلية"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Page Structure Is Private Business",
-      "content": "Reordering internal reports and proposals with zero data leaving your browser."
+      "type": "organize_privacy_security",
+      "title": "هيكل الصفحة هو عمل خاص",
+      "content": "إعادة ترتيب التقارير والمقترحات الداخلية مع عدم مغادرة متصفحك لأي بيانات.",
+      "badgeText": "الأمن أولا"
     },
     {
-      "type": "organizer_performance",
-      "title": "Reorganize Any PDF in Seconds",
-      "content": "Reorder pages in a 500-page document through a smooth drag-and-drop interface with zero upload."
+      "type": "organize_performance",
+      "title": "إعادة تنظيم أي ملف PDF في ثوانٍ",
+      "content": "أعد ترتيب الصفحات في مستند مكون من 500 صفحة من خلال واجهة سحب وإفلات سلسة بدون تحميل.",
+      "badgeText": "بسرعة البرق"
     }
   ],
   "faqs": [
     {
-      "q": "Can I delete pages?",
-      "a": "Yes, click the delete icon on any page thumbnail."
+      "q": "هل يمكنني حذف الصفحات؟",
+      "a": "نعم، انقر فوق أيقونة الحذف الموجودة في الصورة المصغرة لأي صفحة."
     },
     {
-      "q": "Can I duplicate pages?",
-      "a": "Yes, duplicate individual pages with one click."
+      "q": "هل يمكنني تكرار الصفحات؟",
+      "a": "نعم، قم بتكرار الصفحات الفردية بنقرة واحدة."
     },
     {
-      "q": "Can I rotate while organizing?",
-      "a": "Yes, per-page rotation is available in the organizer."
+      "q": "هل يمكنني التدوير أثناء التنظيم؟",
+      "a": "نعم، يتوفر التدوير لكل صفحة في المنظم."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No limit! Organize documents of any size."
+      "q": "هل هناك حد للصفحة؟",
+      "a": "لا يوجد حد! تنظيم المستندات بأي حجم."
     },
     {
-      "q": "Is this free?",
-      "a": "نعم، مجاناً تماماً."
+      "q": "هل هذا مجاني؟",
+      "a": "نعم، مجاني تماما."
     }
-  ]
+  ],
+  "faqTitle": "الأسئلة المتداولة",
+  "supportCenter": "مركز الدعم"
 }

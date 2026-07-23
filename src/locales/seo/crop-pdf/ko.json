@@ -1,67 +1,85 @@
 {
-  "title": "Crop PDF Margins — Trim Pages Offline",
-  "h1": "Crop and Trim PDF Page Margins Instantly",
-  "description": "Remove unwanted whitespace or crop PDF pages to custom dimensions, all locally. No upload. Ideal for users in Seoul.",
+  "title": "PDF 여백 자르기 - 오프라인으로 페이지 자르기",
+  "h1": "PDF 페이지 여백을 즉시 자르고 다듬기",
+  "description": "원치 않는 공백을 제거하거나 PDF 페이지를 사용자 정의 크기로 모두 로컬에서 자릅니다. 빠르고 완벽하게 안전합니다.",
+  "buttonText": "Crop PDF",
+  "badges": [
+    "시각적 여백 편집기",
+    "균일하게 자르기",
+    "제로 레이턴시"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Crop PDFs Locally?",
-      "content": "Scanned documents often have large margins. Crop them locally without exposing internal document structure to the cloud."
+      "type": "crop_hero_features",
+      "title": "PDF를 로컬에서 자르는 이유는 무엇입니까?",
+      "content": "스캔한 문서에는 여백이 큰 경우가 많습니다. 내부 문서 구조를 클라우드에 노출하지 않고 로컬에서 자릅니다."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Crop PDF Pages",
+      "type": "crop_how_to_steps",
+      "title": "PDF 페이지를 자르는 방법",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to crop."
+          "title": "PDF 열기",
+          "description": "자르려는 PDF를 로드합니다."
         },
         {
-          "title": "Set Margins",
-          "description": "Drag guides or enter exact margin values."
+          "title": "여백 설정",
+          "description": "안내선을 드래그하거나 정확한 여백 값을 입력하세요."
         },
         {
-          "title": "Export Cropped PDF",
-          "description": "Download the trimmed PDF instantly."
+          "title": "자른 PDF 내보내기",
+          "description": "잘린 PDF를 즉시 다운로드하세요."
         }
-      ]
+      ],
+      "badgeText": "빠른 가이드"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Precise Cropping for Seoul Users",
-      "content": "Architects and designers in Seoul use our crop tool to clean up scanned blueprints without cloud uploads."
+      "type": "crop_geo_targeting",
+      "title": "100% 안전한 로컬 처리",
+      "content": "모든 작업은 로컬 장치에서 직접 수행됩니다. 우리는 고급 WebAssembly 기술을 사용하여 문서를 외부 서버에 업로드하지 않고 처리하여 완벽한 개인 정보 보호를 보장합니다.",
+      "badgeText": "로컬 처리"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Technical Documents Stay Local",
-      "content": "Architectural plans and legal PDFs cropped locally without any server round-trip."
+      "type": "crop_privacy_security",
+      "title": "기술 문서 현지 체류",
+      "content": "서버 왕복 없이 건축 계획 및 법률 PDF가 로컬에서 잘립니다.",
+      "badgeText": "보안 우선"
     },
     {
-      "type": "split_performance",
-      "title": "Crop Any Size PDF Instantly",
-      "content": "Crop margins from a 200-page document in under 2 seconds. All in your browser."
+      "type": "crop_performance",
+      "title": "모든 크기의 PDF를 즉시 자르기",
+      "content": "200페이지 문서의 여백을 2초 이내에 자릅니다. 모든 것이 브라우저에 있습니다.",
+      "badgeText": "번개처럼 빠르게"
     }
   ],
   "faqs": [
     {
-      "q": "Can I crop all pages uniformly?",
-      "a": "Yes, apply the same crop to every page at once."
+      "q": "모든 페이지를 균일하게 자를 수 있나요?",
+      "a": "예, 모든 페이지에 동일한 자르기를 한 번에 적용합니다."
     },
     {
-      "q": "Can I crop individual pages?",
-      "a": "Yes, you can set per-page crop values."
+      "q": "개별 페이지를 자를 수 있나요?",
+      "a": "예, 페이지당 자르기 값을 설정할 수 있습니다."
     },
     {
-      "q": "What are the minimum margin values?",
-      "a": "You can crop all the way to 0 margin on any side."
+      "q": "최소 마진 값은 무엇입니까?",
+      "a": "어느 쪽이든 여백이 0이 될 때까지 자를 수 있습니다."
     },
     {
-      "q": "Will content be cut off?",
-      "a": "Only whitespace is removed by default; you control the guides."
+      "q": "내용이 잘리나요?",
+      "a": "기본적으로 공백만 제거됩니다. 당신은 가이드를 제어합니다."
     },
     {
-      "q": "Is this free?",
+      "q": "이거 무료인가요?",
       "a": "예, 완전 무료입니다."
     }
-  ]
+  ],
+  "faqTitle": "자주 묻는 질문",
+  "supportCenter": "지원 센터"
 }

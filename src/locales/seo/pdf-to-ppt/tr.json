@@ -1,67 +1,80 @@
 {
-  "title": "PDF to PowerPoint — Recover Editable Slides",
-  "h1": "Convert PDF to PowerPoint Presentation Offline",
-  "description": "Transform PDF documents back into editable .pptx presentations locally. No cloud needed. Perfect for users in Istanbul.",
+  "title": "PDF'den PowerPoint'e — Düzenlenebilir Slaytları Kurtarın",
+  "h1": "PDF'yi PowerPoint Sunumuna Çevrimdışı Dönüştürün",
+  "description": "PDF belgelerini yerel olarak düzenlenebilir .pptx sunumlarına dönüştürün. Buluta gerek yok. İstanbul'daki kullanıcılar için mükemmel.",
+  "buttonText": "PPT'ye dönüştür",
+  "badges": [
+    "Düzenlenebilir Slaytlar",
+    "Sunum Kurtarma",
+    "Hızlı Dönüşüm"
+  ],
+  "stats": [
+    "%100",
+    "Yerel",
+    "0'lar",
+    "Bekleme Süresi"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF to PowerPoint Offline?",
-      "content": "Recovering slide content from a PDF for editing should not require uploading sensitive decks to a cloud service."
+      "title": "Neden çevrimdışı kullanılmalı?",
+      "content": "Slayt içeriğini PDF'den düzenleme amacıyla kurtarmak, hassas destelerin bir bulut hizmetine yüklenmesini gerektirmemelidir."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to PowerPoint",
+      "title": "Nasıl kullanılır",
       "steps": [
         {
-          "title": "Upload PDF",
-          "description": "Select the PDF containing your slide content."
+          "title": "PDF'yi yükle",
+          "description": "Slayt içeriğinizi içeren PDF'yi seçin."
         },
         {
-          "title": "Map Pages to Slides",
-          "description": "Each PDF page becomes one editable slide."
+          "title": "Sayfaları Slaytlarla Eşleme",
+          "description": "Her PDF sayfası düzenlenebilir bir slayta dönüşür."
         },
         {
-          "title": "Download .pptx",
-          "description": "Get your fully editable PowerPoint presentation."
+          "title": ".pptx'i indirin",
+          "description": "Tamamen düzenlenebilir PowerPoint sunumunuzu alın."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "Slide Recovery in Istanbul",
-      "content": "Presenters in Istanbul use our tool to recover and re-edit presentations from old PDF archives."
+      "title": "İstanbul'da Slayt Kurtarma",
+      "content": "İstanbul'daki sunumcular, eski PDF arşivlerinden sunumları kurtarmak ve yeniden düzenlemek için aracımızı kullanıyor."
     },
     {
       "type": "split_privacy_security",
-      "title": "Your Slides Are Never Exposed",
-      "content": "Confidential slide decks recovered and converted without any server interaction."
+      "title": "Slaytlarınız Hiçbir Zaman Gösterilmiyor",
+      "content": "Gizli slayt desteleri herhangi bir sunucu etkileşimi olmadan kurtarılır ve dönüştürülür."
     },
     {
       "type": "split_performance",
-      "title": "Convert Slides at Lightning Speed",
-      "content": "A 60-slide PDF converted to PowerPoint in under 10 seconds with zero upload time."
+      "title": "Slaytları Işık Hızında Dönüştürün",
+      "content": "Sıfır yükleme süresiyle 10 saniyeden kısa sürede PowerPoint'e dönüştürülen 60 slaytlı PDF."
     }
   ],
   "faqs": [
     {
-      "q": "Are slide layouts preserved?",
-      "a": "Content is mapped to slides; some layout adjustments may be needed."
+      "q": "Slayt düzenleri korunuyor mu?",
+      "a": "İçerik slaytlarla eşlenir; bazı düzen ayarlamaları gerekebilir."
     },
     {
-      "q": "Can I edit the slides after?",
-      "a": "Yes, the .pptx file is fully editable in PowerPoint or Google Slides."
+      "q": "Daha sonra slaytları düzenleyebilir miyim?",
+      "a": "Evet, .pptx dosyası PowerPoint veya Google Slaytlar'da tamamen düzenlenebilir."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No, convert as many pages as your RAM allows."
+      "q": "Sayfa sınırlaması var mı?",
+      "a": "Hayır, RAM'inizin izin verdiği kadar sayfayı dönüştürün."
     },
     {
-      "q": "Does it work with image-heavy PDFs?",
-      "a": "Yes, images are embedded in each slide."
+      "q": "Görüntü ağırlıklı PDF'lerle çalışır mı?",
+      "a": "Evet, resimler her slayda gömülüdür."
     },
     {
-      "q": "Is this free?",
+      "q": "Bu bedava mı?",
       "a": "Evet, tamamen ücretsiz."
     }
-  ]
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular"
 }

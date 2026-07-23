@@ -1,67 +1,85 @@
 {
-  "title": "Scan to PDF — Convert Camera Shots Offline",
-  "h1": "Convert Photos and Scans to PDF Locally",
-  "description": "Turn photos of documents taken with your camera into clean PDFs entirely in your browser. No upload. Best for users in Amsterdam.",
+  "title": "Scannen naar PDF — Camerabeelden offline converteren",
+  "h1": "Foto's en scans lokaal naar PDF converteren",
+  "description": "Zet foto's van documenten die met uw camera zijn gemaakt, volledig in uw browser om in schone PDF's. Geen upload. 100% veilige lokale verwerking.",
+  "buttonText": "Scan to PDF",
+  "badges": [
+    "Gebruik webcam",
+    "Mobiele scanner",
+    "Automatisch bijsnijden"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Use Scan-to-PDF Offline?",
-      "content": "Photos of documents contain sensitive information. Process them locally without any cloud access."
+      "type": "scan_hero_features",
+      "title": "Waarom offline scannen naar PDF gebruiken?",
+      "content": "Foto's van documenten bevatten gevoelige informatie. Verwerk ze lokaal zonder enige toegang tot de cloud."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Scans to PDF",
+      "type": "scan_how_to_steps",
+      "title": "Scans naar PDF converteren",
       "steps": [
         {
-          "title": "Import Photos",
-          "description": "Select photos taken with your phone or camera."
+          "title": "Foto's importeren",
+          "description": "Selecteer foto's die zijn gemaakt met uw telefoon of camera."
         },
         {
-          "title": "Enhance Scan",
-          "description": "Auto-crop, deskew, and enhance contrast."
+          "title": "Verbeter scannen",
+          "description": "Automatisch bijsnijden, rechtzetten en contrast verbeteren."
         },
         {
-          "title": "Export PDF",
-          "description": "Download a clean, professional-looking scanned PDF."
+          "title": "PDF exporteren",
+          "description": "Download een schone, professioneel ogende gescande PDF."
         }
-      ]
+      ],
+      "badgeText": "Beknopte handleiding"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Scan to PDF for Amsterdam Field Workers",
-      "content": "Field workers and freelancers in Amsterdam digitize paper documents on-the-go without uploading to cloud services."
+      "type": "scan_geo_targeting",
+      "title": "100% veilige lokale verwerking",
+      "content": "Alle bewerkingen worden rechtstreeks op uw lokale apparaat uitgevoerd. We gebruiken geavanceerde WebAssembly-technologie om uw documenten te verwerken zonder ze ooit naar externe servers te uploaden, waardoor volledige privacy wordt gegarandeerd.",
+      "badgeText": "Lokale verwerking"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Documents Stay on Device",
-      "content": "Invoices, contracts, and ID scans processed entirely in browser memory without any server access."
+      "type": "scan_privacy_security",
+      "title": "Gescande documenten blijven op apparaat",
+      "content": "Facturen, contracten en ID-scans worden volledig in het browsergeheugen verwerkt, zonder enige servertoegang.",
+      "badgeText": "Beveiliging eerst"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Scans in Real Time",
-      "content": "Photo enhancement and PDF generation happens in milliseconds, even for high-resolution camera shots."
+      "type": "scan_performance",
+      "title": "Scans in realtime converteren",
+      "content": "Fotoverbetering en het genereren van PDF's gebeuren in milliseconden, zelfs voor camerabeelden met een hoge resolutie.",
+      "badgeText": "Bliksemsnel"
     }
   ],
   "faqs": [
     {
-      "q": "What photo formats are supported?",
-      "a": "JPG, PNG, WebP, and HEIC from modern cameras."
+      "q": "Welke fotoformaten worden ondersteund?",
+      "a": "JPG, PNG, WebP en HEIC van moderne camera's."
     },
     {
-      "q": "Does it fix tilted scans?",
-      "a": "Yes, auto-deskew corrects slight angles automatically."
+      "q": "Kan het gekantelde scans repareren?",
+      "a": "Ja, automatisch rechtzetten corrigeert kleine hoeken automatisch."
     },
     {
-      "q": "Can I combine multiple scans?",
-      "a": "Yes, add multiple photos to create a multi-page PDF."
+      "q": "Kan ik meerdere scans combineren?",
+      "a": "Ja, voeg meerdere foto's toe om een ​​PDF van meerdere pagina's te maken."
     },
     {
-      "q": "Does it enhance contrast?",
-      "a": "Yes, document enhancement mode sharpens text for clarity."
+      "q": "Verbetert het het contrast?",
+      "a": "Ja, de documentverbeteringsmodus verscherpt tekst voor duidelijkheid."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, volledig gratis."
+      "q": "Is dit gratis?",
+      "a": "Ja, altijd gratis."
     }
-  ]
+  ],
+  "faqTitle": "Veelgestelde vragen",
+  "supportCenter": "Ondersteuningscentrum"
 }

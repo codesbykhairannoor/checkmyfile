@@ -1,67 +1,85 @@
 {
-  "title": "Image to PDF — Combine Photos Offline",
-  "h1": "Convert Images to PDF Without Uploading",
-  "description": "Turn JPG, PNG, and WebP images into a single PDF document in your browser. Your photos stay private. Perfect for users in Budapest.",
+  "title": "Kép PDF-be — Fényképek offline kombinálása",
+  "h1": "Képek konvertálása PDF-be feltöltés nélkül",
+  "description": "A JPG, PNG és WebP képeket egyetlen PDF dokumentummá alakíthatja böngészőjében. A fényképek privátak maradnak. 100%-ban biztonságos helyi feldolgozás.",
+  "buttonText": "Convert Images",
+  "badges": [
+    "Portfóliók",
+    "Azonosító szkennelések",
+    "Fotóalbumok"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Images Offline?",
-      "content": "Photos contain location data and personal moments. Convert them to PDF without exposing them to any cloud service."
+      "type": "image_hero_features",
+      "title": "Miért konvertálhat offline képeket?",
+      "content": "A fotók helyadatokat és személyes pillanatokat tartalmaznak. Alakítsa át őket PDF-be anélkül, hogy bármilyen felhőszolgáltatásnak tenné ki őket."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Turn Images Into PDF",
+      "type": "image_how_to_steps",
+      "title": "Hogyan alakítsunk át képeket PDF-be",
       "steps": [
         {
-          "title": "Select Images",
-          "description": "Choose JPG, PNG, or WebP files from your device."
+          "title": "Képek kiválasztása",
+          "description": "Válasszon JPG, PNG vagy WebP fájlokat eszközéről."
         },
         {
-          "title": "Arrange Order",
-          "description": "Drag to reorder images before generating the PDF."
+          "title": "Rendelés rendezése",
+          "description": "A PDF létrehozása előtt húzza át a képeket a képek átrendezéséhez."
         },
         {
-          "title": "Export PDF",
-          "description": "Download your image PDF in one click."
+          "title": "PDF exportálása",
+          "description": "Töltse le a PDF-képet egyetlen kattintással."
         }
-      ]
+      ],
+      "badgeText": "Gyors útmutató"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Image to PDF for Budapest Users",
-      "content": "Photographers and designers in Budapest use our tool to package portfolios without cloud uploads."
+      "type": "image_geo_targeting",
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Minden művelet közvetlenül a helyi eszközön történik. Fejlett WebAssembly technológiát használunk a dokumentumok feldolgozásához anélkül, hogy azokat külső szerverekre feltöltenénk, így biztosítva a teljes adatvédelmet.",
+      "badgeText": "Helyi feldolgozás"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Photos Never Leave Your Device",
-      "content": "Personal photos, ID scans, medical images — all converted 100% locally without any server contact."
+      "type": "image_privacy_security",
+      "title": "A fényképek soha nem hagyják el a készüléket",
+      "content": "Személyes fotók, személyi igazolványok, orvosi képek – mindez 100%-ban helyileg konvertálva, szerverkapcsolat nélkül.",
+      "badgeText": "Első a biztonság"
     },
     {
-      "type": "combiner_performance",
-      "title": "Batch Convert Instantly",
-      "content": "Convert 50 images into a single PDF in under 5 seconds. No upload, no wait."
+      "type": "image_performance",
+      "title": "Kötegelt konvertálás azonnal",
+      "content": "Konvertáljon 50 képet egyetlen PDF-be kevesebb mint 5 másodperc alatt. Nincs feltöltés, nincs várakozás.",
+      "badgeText": "Villámgyors"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are supported?",
-      "a": "JPG, JPEG, PNG, and WebP are all supported."
+      "q": "Milyen képformátumok támogatottak?",
+      "a": "JPG, JPEG, PNG és WebP egyaránt támogatott."
     },
     {
-      "q": "Can I combine multiple images?",
-      "a": "Yes, select as many images as you want and reorder them."
+      "q": "Kombinálhatok több képet?",
+      "a": "Igen, válasszon ki annyi képet, amennyit csak szeretne, és rendezze át őket."
     },
     {
-      "q": "Is image quality preserved?",
-      "a": "Yes, images are embedded at their original resolution."
+      "q": "A képminőség megmarad?",
+      "a": "Igen, a képek eredeti felbontásukban vannak beágyazva."
     },
     {
-      "q": "Does it strip EXIF metadata?",
-      "a": "You can optionally strip EXIF data for privacy."
+      "q": "Törli az EXIF ​​metaadatokat?",
+      "a": "Opcionálisan törölheti az EXIF-adatokat az adatvédelem érdekében."
     },
     {
-      "q": "Is there a limit on image count?",
-      "a": "Igen, teljesen ingyenes."
+      "q": "Van-e korlát a képek számának?",
+      "a": "Nincs határ! Több száz kép egyesítése egyetlen PDF-be."
     }
-  ]
+  ],
+  "faqTitle": "Gyakran Ismételt Kérdések",
+  "supportCenter": "Támogatási Központ"
 }

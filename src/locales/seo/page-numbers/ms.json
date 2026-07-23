@@ -1,67 +1,85 @@
 {
-  "title": "Add Page Numbers to PDF — Offline Number Stamp",
-  "h1": "Insert Page Numbers into PDF Documents Locally",
-  "description": "Stamp page numbers at the header or footer of your PDF entirely in your browser. No upload. Ideal for users in Kuala Lumpur.",
+  "title": "Tambah Nombor Halaman pada PDF — Cop Nombor Luar Talian",
+  "h1": "Masukkan Nombor Halaman ke dalam Dokumen PDF Secara Setempat",
+  "description": "Cop nombor halaman pada pengepala atau pengaki PDF anda sepenuhnya dalam penyemak imbas anda. Cepat dan selamat sepenuhnya.",
+  "buttonText": "Add Page Numbers",
+  "badges": [
+    "Kedudukan Tersuai",
+    "Pengepala & Pengaki",
+    "Penomboran Bates"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Add Page Numbers Offline?",
-      "content": "Page numbers are a formatting step, not a reason to upload confidential documents to a cloud service."
+      "type": "pagenum_hero_features",
+      "title": "Mengapa Tambah Nombor Halaman Luar Talian?",
+      "content": "Nombor halaman ialah langkah pemformatan, bukan sebab untuk memuat naik dokumen sulit ke perkhidmatan awan."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Add Page Numbers",
+      "type": "pagenum_how_to_steps",
+      "title": "Cara Menambah Nombor Halaman",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to number."
+          "title": "Buka PDF",
+          "description": "Pilih PDF ke nombor."
         },
         {
-          "title": "Configure Style",
-          "description": "Choose position, format (1/12, Page 1, i, ii…), and font."
+          "title": "Konfigurasi Gaya",
+          "description": "Pilih kedudukan, format (1/12, Halaman 1, i, ii…), dan fon."
         },
         {
-          "title": "Apply & Download",
-          "description": "Download your paginated PDF instantly."
+          "title": "Mohon & Muat Turun",
+          "description": "Muat turun PDF bernombor anda serta-merta."
         }
-      ]
+      ],
+      "badgeText": "Panduan Pantas"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Page Numbering for Kuala Lumpur Legal Docs",
-      "content": "Legal professionals in Kuala Lumpur number briefs and reports locally without cloud service dependency."
+      "type": "pagenum_geo_targeting",
+      "title": "100% Pemprosesan Tempatan Selamat",
+      "content": "Semua operasi dilakukan terus pada peranti tempatan anda. Kami menggunakan teknologi WebAssembly termaju untuk memproses dokumen anda tanpa pernah memuat naiknya ke pelayan luaran, memastikan privasi lengkap.",
+      "badgeText": "Pemprosesan Setempat"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Internal Documents Stay Numbered & Private",
-      "content": "Add page numbers to contracts and confidential reports without any server involvement."
+      "type": "pagenum_privacy_security",
+      "title": "Dokumen Dalaman Kekal Bernombor & Peribadi",
+      "content": "Tambahkan nombor halaman pada kontrak dan laporan sulit tanpa penglibatan pelayan.",
+      "badgeText": "Keselamatan Diutamakan"
     },
     {
-      "type": "organizer_performance",
-      "title": "Number a 1000-Page PDF Instantly",
-      "content": "Stamping page numbers locally takes milliseconds for any size document."
+      "type": "pagenum_performance",
+      "title": "Nomborkan PDF 1000 Halaman Dengan Segera",
+      "content": "Mengecap nombor halaman secara setempat mengambil masa milisaat untuk sebarang dokumen saiz.",
+      "badgeText": "Sepantas Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "What number formats are available?",
-      "a": "Arabic (1, 2, 3), Roman (i, ii, iii), and letter (a, b, c) formats."
+      "q": "Apakah format nombor yang tersedia?",
+      "a": "Format Arab (1, 2, 3), Rom (i, ii, iii), dan huruf (a, b, c)."
     },
     {
-      "q": "Can I start from a custom number?",
-      "a": "Yes, set any starting page number."
+      "q": "Bolehkah saya bermula dari nombor tersuai?",
+      "a": "Ya, tetapkan sebarang nombor halaman permulaan."
     },
     {
-      "q": "Can I skip numbering the first page?",
-      "a": "Yes, set the page offset to skip cover pages."
+      "q": "Bolehkah saya melangkau menomborkan halaman pertama?",
+      "a": "Ya, tetapkan offset halaman untuk melangkau halaman muka depan."
     },
     {
-      "q": "Where can I position numbers?",
-      "a": "Header-left, header-center, header-right, and same for footer."
+      "q": "Di manakah saya boleh meletakkan nombor?",
+      "a": "Pengepala-kiri, pengepala-tengah, pengepala-kanan dan sama untuk pengaki."
     },
     {
-      "q": "Is this free?",
-      "a": "Ya, percuma sepenuhnya."
+      "q": "Adakah ini percuma?",
+      "a": "Ya, sentiasa percuma."
     }
-  ]
+  ],
+  "faqTitle": "Soalan Lazim",
+  "supportCenter": "Pusat Sokongan"
 }

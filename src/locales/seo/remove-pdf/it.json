@@ -1,0 +1,85 @@
+{
+  "title": "Rimuovi pagine da PDF: elimina le pagine PDF offline",
+  "h1": "Rimuovi istantaneamente le pagine dal PDF",
+  "description": "Elimina le pagine indesiderate dal tuo file PDF in modo sicuro nel tuo browser. Veloce e completamente sicuro.",
+  "buttonText": "Remove Pages",
+  "badges": [
+    "Seleziona ed elimina",
+    "Editor visivo",
+    "Latenza zero"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "remove_hero_features",
+      "title": "Perché rimuovere le pagine localmente?",
+      "content": "L'eliminazione delle pagine sensibili o non necessarie dal documento deve essere eseguita sul tuo dispositivo, non su un server. Garantiamo la privacy al 100%."
+    },
+    {
+      "type": "remove_how_to_steps",
+      "title": "Come rimuovere le pagine PDF",
+      "steps": [
+        {
+          "title": "Apri PDF",
+          "description": "Carica il PDF che desideri pulire."
+        },
+        {
+          "title": "Selezionare Pagine da eliminare",
+          "description": "Passa il mouse sopra le pagine e fai clic sull'icona del cestino per contrassegnarle per l'eliminazione."
+        },
+        {
+          "title": "Esporta PDF pulito",
+          "description": "Scarica il tuo nuovo PDF senza le pagine cancellate."
+        }
+      ],
+      "badgeText": "Guida rapida"
+    },
+    {
+      "type": "remove_geo_targeting",
+      "title": "Elaborazione locale sicura al 100%",
+      "content": "Tutte le operazioni vengono eseguite direttamente sul tuo dispositivo locale. Utilizziamo la tecnologia avanzata WebAssembly per elaborare i tuoi documenti senza mai caricarli su server esterni, garantendo la completa privacy.",
+      "badgeText": "Elaborazione locale"
+    },
+    {
+      "type": "remove_privacy_security",
+      "title": "Privacy per la cancellazione totale",
+      "content": "Quando rimuovi una pagina, questa viene eliminata definitivamente dal documento nella memoria del browser prima di essere salvata.",
+      "badgeText": "La sicurezza prima di tutto"
+    },
+    {
+      "type": "remove_performance",
+      "title": "Rimozione istantanea della pagina",
+      "content": "L'estrazione e l'eliminazione di pagine anche da un documento di 1000 pagine richiede millisecondi utilizzando il nostro motore WASM ottimizzato.",
+      "badgeText": "Velocissimo"
+    }
+  ],
+  "faqTitle": "Domande frequenti",
+  "faqs": [
+    {
+      "q": "Le pagine cancellate sono recuperabili?",
+      "a": "Una volta scaricato il nuovo PDF, le pagine eliminate verranno rimosse definitivamente da quel file. Il tuo file originale rimane intatto."
+    },
+    {
+      "q": "Devo caricare il mio PDF?",
+      "a": "No. L'intero processo di rimozione della pagina avviene localmente nel tuo browser web."
+    },
+    {
+      "q": "C'è un limite al numero di pagine che posso eliminare?",
+      "a": "No, puoi eliminare quante pagine vuoi, in modo completamente gratuito."
+    },
+    {
+      "q": "Il layout delle pagine rimanenti cambierà?",
+      "a": "No, le pagine rimanenti manterranno la loro esatta formattazione e layout originali."
+    },
+    {
+      "q": "Posso selezionare più pagine contemporaneamente?",
+      "a": "Sì, puoi fare clic su più pagine per contrassegnarle tutte per l'eliminazione contemporaneamente."
+    }
+  ],
+  "supportCenter": "Centro di supporto"
+}

@@ -1,67 +1,85 @@
 {
-  "title": "Scan to PDF — Convert Camera Shots Offline",
-  "h1": "Convert Photos and Scans to PDF Locally",
-  "description": "Turn photos of documents taken with your camera into clean PDFs entirely in your browser. No upload. Best for users in New Delhi.",
+  "title": "पीडीएफ में स्कैन करें - कैमरा शॉट्स को ऑफ़लाइन रूपांतरित करें",
+  "h1": "फ़ोटो और स्कैन को स्थानीय रूप से पीडीएफ में कनवर्ट करें",
+  "description": "अपने कैमरे से ली गई दस्तावेज़ों की तस्वीरों को अपने ब्राउज़र में पूरी तरह से साफ़ पीडीएफ़ में बदलें। कोई अपलोड नहीं. 100% सुरक्षित स्थानीय प्रसंस्करण।",
+  "buttonText": "Scan to PDF",
+  "badges": [
+    "वेबकैम का प्रयोग करें",
+    "मोबाइल स्कैनर",
+    "ऑटो क्रॉप"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Use Scan-to-PDF Offline?",
-      "content": "Photos of documents contain sensitive information. Process them locally without any cloud access."
+      "type": "scan_hero_features",
+      "title": "स्कैन-टू-पीडीएफ ऑफ़लाइन का उपयोग क्यों करें?",
+      "content": "दस्तावेज़ों की तस्वीरों में संवेदनशील जानकारी होती है। बिना किसी क्लाउड एक्सेस के उन्हें स्थानीय रूप से संसाधित करें।"
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Scans to PDF",
+      "type": "scan_how_to_steps",
+      "title": "स्कैन को पीडीएफ में कैसे बदलें",
       "steps": [
         {
-          "title": "Import Photos",
-          "description": "Select photos taken with your phone or camera."
+          "title": "फ़ोटो आयात करें",
+          "description": "अपने फ़ोन या कैमरे से ली गई फ़ोटो का चयन करें."
         },
         {
-          "title": "Enhance Scan",
-          "description": "Auto-crop, deskew, and enhance contrast."
+          "title": "स्कैन बढ़ाएँ",
+          "description": "ऑटो-क्रॉप, डेस्क्यू और कंट्रास्ट बढ़ाएं।"
         },
         {
-          "title": "Export PDF",
-          "description": "Download a clean, professional-looking scanned PDF."
+          "title": "पीडीएफ निर्यात करें",
+          "description": "एक साफ, पेशेवर दिखने वाली स्कैन की हुई पीडीएफ डाउनलोड करें।"
         }
-      ]
+      ],
+      "badgeText": "त्वरित मार्गदर्शिका"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Scan to PDF for New Delhi Field Workers",
-      "content": "Field workers and freelancers in New Delhi digitize paper documents on-the-go without uploading to cloud services."
+      "type": "scan_geo_targeting",
+      "title": "100% सुरक्षित स्थानीय प्रसंस्करण",
+      "content": "सभी ऑपरेशन सीधे आपके स्थानीय डिवाइस पर किए जाते हैं। हम पूर्ण गोपनीयता सुनिश्चित करते हुए, आपके दस्तावेज़ों को बाहरी सर्वर पर अपलोड किए बिना संसाधित करने के लिए उन्नत WebAssembly तकनीक का उपयोग करते हैं।",
+      "badgeText": "स्थानीय प्रसंस्करण"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Documents Stay on Device",
-      "content": "Invoices, contracts, and ID scans processed entirely in browser memory without any server access."
+      "type": "scan_privacy_security",
+      "title": "स्कैन किए गए दस्तावेज़ डिवाइस पर बने रहें",
+      "content": "चालान, अनुबंध और आईडी स्कैन बिना किसी सर्वर एक्सेस के पूरी तरह से ब्राउज़र मेमोरी में संसाधित होते हैं।",
+      "badgeText": "सुरक्षा पहले"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Scans in Real Time",
-      "content": "Photo enhancement and PDF generation happens in milliseconds, even for high-resolution camera shots."
+      "type": "scan_performance",
+      "title": "स्कैन को वास्तविक समय में परिवर्तित करें",
+      "content": "फोटो एन्हांसमेंट और पीडीएफ जनरेशन मिलीसेकंड में होता है, यहां तक ​​कि उच्च-रिज़ॉल्यूशन वाले कैमरा शॉट्स के लिए भी।",
+      "badgeText": "बिजली की तेजी"
     }
   ],
   "faqs": [
     {
-      "q": "What photo formats are supported?",
-      "a": "JPG, PNG, WebP, and HEIC from modern cameras."
+      "q": "कौन से फ़ोटो प्रारूप समर्थित हैं?",
+      "a": "आधुनिक कैमरों से JPG, PNG, WebP और HEIC।"
     },
     {
-      "q": "Does it fix tilted scans?",
-      "a": "Yes, auto-deskew corrects slight angles automatically."
+      "q": "क्या यह झुके हुए स्कैन को ठीक करता है?",
+      "a": "हां, ऑटो-डेस्क्यू छोटे कोणों को स्वचालित रूप से सही करता है।"
     },
     {
-      "q": "Can I combine multiple scans?",
-      "a": "Yes, add multiple photos to create a multi-page PDF."
+      "q": "क्या मैं एकाधिक स्कैन को जोड़ सकता हूँ?",
+      "a": "हां, बहु-पृष्ठ पीडीएफ बनाने के लिए एकाधिक फ़ोटो जोड़ें।"
     },
     {
-      "q": "Does it enhance contrast?",
-      "a": "Yes, document enhancement mode sharpens text for clarity."
+      "q": "क्या यह कंट्रास्ट बढ़ाता है?",
+      "a": "हाँ, दस्तावेज़ एन्हांसमेंट मोड स्पष्टता के लिए टेक्स्ट को तेज़ करता है।"
     },
     {
-      "q": "Is this free?",
-      "a": "हाँ, पूरी तरह मुफ्त।"
+      "q": "क्या यह मुफ़्त है?",
+      "a": "हाँ, हमेशा मुफ़्त."
     }
-  ]
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न",
+  "supportCenter": "सहायता केंद्र"
 }

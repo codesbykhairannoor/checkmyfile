@@ -1,67 +1,85 @@
 {
-  "title": "Remove PDF Metadata — Strip Hidden Author Data Offline",
-  "h1": "Strip All Hidden Metadata from PDF Files Instantly",
-  "description": "Remove author names, company info, GPS locations, and revision history from PDFs entirely in your browser. No upload. Perfect for New Delhi users.",
+  "title": "पीडीएफ मेटाडेटा हटाएं - स्ट्रिप हिडन ऑथर डेटा ऑफलाइन",
+  "h1": "पीडीएफ फाइलों से सभी छिपे हुए मेटाडेटा को तुरंत हटा दें",
+  "description": "अपने ब्राउज़र में पीडीएफ से लेखक के नाम, कंपनी की जानकारी, जीपीएस स्थान और संशोधन इतिहास को पूरी तरह से हटा दें। कोई अपलोड नहीं. 100% सुरक्षित स्थानीय प्रसंस्करण।",
+  "buttonText": "Process Document",
+  "badges": [
+    "सुरक्षित एवं निजी",
+    "ऑफ़लाइन इंजन",
+    "शून्य अपलोड"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "metadata_hero_features",
-      "title": "Why Strip PDF Metadata?",
-      "content": "PDFs carry hidden metadata — your name, your company, revision history. Strip it all before sharing publicly, entirely offline."
+      "title": "पीडीएफ मेटाडेटा क्यों स्ट्रिप करें?",
+      "content": "पीडीएफ में छिपा हुआ मेटाडेटा होता है - आपका नाम, आपकी कंपनी, संशोधन इतिहास। सार्वजनिक रूप से साझा करने से पहले इसे पूरी तरह से ऑफ़लाइन कर दें।"
     },
     {
       "type": "metadata_how_to_steps",
-      "title": "Before & After — How Metadata Removal Works",
+      "title": "पहले और बाद में - मेटाडेटा निष्कासन कैसे काम करता है",
       "steps": [
         {
-          "title": "Open Your PDF",
-          "description": "Select the PDF with hidden metadata to remove."
+          "title": "अपना पीडीएफ खोलें",
+          "description": "हटाने के लिए छिपे हुए मेटाडेटा वाले पीडीएफ का चयन करें।"
         },
         {
-          "title": "Preview Hidden Data",
-          "description": "See exactly what metadata — author, GPS, history — is embedded."
+          "title": "छिपे हुए डेटा का पूर्वावलोकन करें",
+          "description": "देखें कि वास्तव में क्या मेटाडेटा - लेखक, जीपीएस, इतिहास - अंतर्निहित है।"
         },
         {
-          "title": "Strip & Download Clean PDF",
-          "description": "Remove all metadata instantly and save a clean, anonymous PDF."
+          "title": "क्लीन पीडीएफ को स्ट्रिप और डाउनलोड करें",
+          "description": "सभी मेटाडेटा तुरंत हटाएं और एक साफ़, अनाम पीडीएफ सहेजें।"
         }
-      ]
+      ],
+      "badgeText": "त्वरित मार्गदर्शिका"
     },
     {
       "type": "metadata_geo_targeting",
-      "title": "Metadata Privacy Tool for New Delhi Professionals",
-      "content": "Journalists, legal professionals, and privacy-conscious users in New Delhi strip metadata before publishing or sharing PDFs externally."
+      "title": "100% सुरक्षित स्थानीय प्रसंस्करण",
+      "content": "सभी ऑपरेशन सीधे आपके स्थानीय डिवाइस पर किए जाते हैं। हम पूर्ण गोपनीयता सुनिश्चित करते हुए, आपके दस्तावेज़ों को बाहरी सर्वर पर अपलोड किए बिना संसाधित करने के लिए उन्नत WebAssembly तकनीक का उपयोग करते हैं।",
+      "badgeText": "स्थानीय प्रसंस्करण"
     },
     {
       "type": "metadata_privacy_security",
-      "title": "All Metadata Types Permanently Erased",
-      "content": "Author name, company, GPS coordinates from embedded images, revision history, software fingerprints — all permanently removed."
+      "title": "सभी मेटाडेटा प्रकार स्थायी रूप से मिटाए गए",
+      "content": "लेखक का नाम, कंपनी, एम्बेडेड छवियों से जीपीएस निर्देशांक, पुनरीक्षण इतिहास, सॉफ़्टवेयर फ़िंगरप्रिंट - सभी स्थायी रूप से हटा दिए गए।",
+      "badgeText": "सुरक्षा पहले"
     },
     {
       "type": "metadata_performance",
-      "title": "Strip Metadata in Milliseconds",
-      "content": "Metadata removal takes milliseconds and often reduces file size by 10–15%. All offline."
+      "title": "मिलीसेकेंड में स्ट्रिप मेटाडेटा",
+      "content": "मेटाडेटा हटाने में मिलीसेकंड लगते हैं और अक्सर फ़ाइल का आकार 10-15% कम हो जाता है। सभी ऑफ़लाइन.",
+      "badgeText": "बिजली की तेजी"
     }
   ],
   "faqs": [
     {
-      "q": "What metadata is removed?",
-      "a": "Author, creator, producer, title, keywords, and all XMP/EXIF data."
+      "q": "कौन सा मेटाडेटा हटा दिया गया है?",
+      "a": "लेखक, निर्माता, निर्माता, शीर्षक, कीवर्ड और सभी XMP/EXIF डेटा।"
     },
     {
-      "q": "Are document bookmarks affected?",
-      "a": "No, bookmarks and structure are preserved; only metadata is removed."
+      "q": "क्या दस्तावेज़ बुकमार्क प्रभावित हैं?",
+      "a": "नहीं, बुकमार्क और संरचना संरक्षित हैं; केवल मेटाडेटा हटा दिया गया है."
     },
     {
-      "q": "Can I preview the metadata first?",
-      "a": "Yes, we show a list of all detected metadata before removing."
+      "q": "क्या मैं पहले मेटाडेटा का पूर्वावलोकन कर सकता हूँ?",
+      "a": "हां, हम हटाने से पहले सभी खोजे गए मेटाडेटा की एक सूची दिखाते हैं।"
     },
     {
-      "q": "Is the document content affected?",
-      "a": "No, the content, images, and structure remain intact."
+      "q": "क्या दस्तावेज़ की सामग्री प्रभावित हुई है?",
+      "a": "नहीं, सामग्री, छवियाँ और संरचना बरकरार रहती है।"
     },
     {
-      "q": "Is this free?",
-      "a": "हाँ, पूरी तरह मुफ्त।"
+      "q": "क्या यह मुफ़्त है?",
+      "a": "हाँ, हमेशा मुफ़्त."
     }
-  ]
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न",
+  "supportCenter": "सहायता केंद्र"
 }

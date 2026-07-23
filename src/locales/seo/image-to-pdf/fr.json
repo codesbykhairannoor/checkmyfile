@@ -1,67 +1,85 @@
 {
-  "title": "Image to PDF — Combine Photos Offline",
-  "h1": "Convert Images to PDF Without Uploading",
-  "description": "Turn JPG, PNG, and WebP images into a single PDF document in your browser. Your photos stay private. Perfect for users in Paris.",
+  "title": "Image au format PDF — Combinez des photos hors ligne",
+  "h1": "Convertir des images en PDF sans téléchargement",
+  "description": "Transformez les images JPG, PNG et WebP en un seul document PDF dans votre navigateur. Vos photos restent privées. Traitement local 100% sécurisé.",
+  "buttonText": "Convert Images",
+  "badges": [
+    "Portefeuilles",
+    "Analyses d'identité",
+    "Albums photos"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Images Offline?",
-      "content": "Photos contain location data and personal moments. Convert them to PDF without exposing them to any cloud service."
+      "type": "image_hero_features",
+      "title": "Pourquoi convertir des images hors ligne ?",
+      "content": "Les photos contiennent des données de localisation et des moments personnels. Convertissez-les en PDF sans les exposer à aucun service cloud."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Turn Images Into PDF",
+      "type": "image_how_to_steps",
+      "title": "Comment transformer des images en PDF",
       "steps": [
         {
-          "title": "Select Images",
-          "description": "Choose JPG, PNG, or WebP files from your device."
+          "title": "Sélectionnez des images",
+          "description": "Choisissez les fichiers JPG, PNG ou WebP sur votre appareil."
         },
         {
-          "title": "Arrange Order",
-          "description": "Drag to reorder images before generating the PDF."
+          "title": "Organiser la commande",
+          "description": "Faites glisser pour réorganiser les images avant de générer le PDF."
         },
         {
-          "title": "Export PDF",
-          "description": "Download your image PDF in one click."
+          "title": "Exporter PDF",
+          "description": "Téléchargez votre image PDF en un clic."
         }
-      ]
+      ],
+      "badgeText": "Guide rapide"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Image to PDF for Paris Users",
-      "content": "Photographers and designers in Paris use our tool to package portfolios without cloud uploads."
+      "type": "image_geo_targeting",
+      "title": "Traitement local 100 % sécurisé",
+      "content": "Toutes les opérations sont effectuées directement sur votre appareil local. Nous utilisons la technologie avancée WebAssembly pour traiter vos documents sans jamais les télécharger sur des serveurs externes, garantissant ainsi une confidentialité totale.",
+      "badgeText": "Traitement local"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Photos Never Leave Your Device",
-      "content": "Personal photos, ID scans, medical images — all converted 100% locally without any server contact."
+      "type": "image_privacy_security",
+      "title": "Les photos ne quittent jamais votre appareil",
+      "content": "Photos personnelles, analyses d'identité, images médicales, toutes converties à 100 % localement sans aucun contact avec le serveur.",
+      "badgeText": "La sécurité d'abord"
     },
     {
-      "type": "combiner_performance",
-      "title": "Batch Convert Instantly",
-      "content": "Convert 50 images into a single PDF in under 5 seconds. No upload, no wait."
+      "type": "image_performance",
+      "title": "Convertir par lots instantanément",
+      "content": "Convertissez 50 images en un seul PDF en moins de 5 secondes. Pas de téléchargement, pas d'attente.",
+      "badgeText": "Rapide comme l'éclair"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are supported?",
-      "a": "JPG, JPEG, PNG, and WebP are all supported."
+      "q": "Quels formats d'images sont pris en charge ?",
+      "a": "JPG, JPEG, PNG et WebP sont tous pris en charge."
     },
     {
-      "q": "Can I combine multiple images?",
-      "a": "Yes, select as many images as you want and reorder them."
+      "q": "Puis-je combiner plusieurs images ?",
+      "a": "Oui, sélectionnez autant d'images que vous le souhaitez et réorganisez-les."
     },
     {
-      "q": "Is image quality preserved?",
-      "a": "Yes, images are embedded at their original resolution."
+      "q": "La qualité de l’image est-elle préservée ?",
+      "a": "Oui, les images sont intégrées à leur résolution d'origine."
     },
     {
-      "q": "Does it strip EXIF metadata?",
-      "a": "You can optionally strip EXIF data for privacy."
+      "q": "Est-ce que cela supprime les métadonnées EXIF ?",
+      "a": "Vous pouvez éventuellement supprimer les données EXIF ​​pour des raisons de confidentialité."
     },
     {
-      "q": "Is there a limit on image count?",
-      "a": "Oui, entièrement gratuit."
+      "q": "Y a-t-il une limite au nombre d'images ?",
+      "a": "Aucune limite ! Combinez des centaines d'images en un seul PDF."
     }
-  ]
+  ],
+  "faqTitle": "Foire aux questions",
+  "supportCenter": "Centre d'assistance"
 }

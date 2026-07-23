@@ -1,67 +1,85 @@
 {
-  "title": "Scan to PDF — Convert Camera Shots Offline",
-  "h1": "Convert Photos and Scans to PDF Locally",
-  "description": "Turn photos of documents taken with your camera into clean PDFs entirely in your browser. No upload. Best for users in Paris.",
+  "title": "Numériser vers PDF — Convertir les photos de l'appareil photo hors ligne",
+  "h1": "Convertir des photos et des numérisations en PDF localement",
+  "description": "Transformez les photos de documents prises avec votre appareil photo en PDF épurés entièrement dans votre navigateur. Aucun téléchargement. Traitement local 100% sécurisé.",
+  "buttonText": "Scan to PDF",
+  "badges": [
+    "Utiliser la webcam",
+    "Scanner mobile",
+    "Recadrage automatique"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Use Scan-to-PDF Offline?",
-      "content": "Photos of documents contain sensitive information. Process them locally without any cloud access."
+      "type": "scan_hero_features",
+      "title": "Pourquoi utiliser la numérisation vers PDF hors ligne ?",
+      "content": "Les photos de documents contiennent des informations sensibles. Traitez-les localement sans aucun accès au cloud."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Scans to PDF",
+      "type": "scan_how_to_steps",
+      "title": "Comment convertir des numérisations en PDF",
       "steps": [
         {
-          "title": "Import Photos",
-          "description": "Select photos taken with your phone or camera."
+          "title": "Importer des photos",
+          "description": "Sélectionnez les photos prises avec votre téléphone ou votre appareil photo."
         },
         {
-          "title": "Enhance Scan",
-          "description": "Auto-crop, deskew, and enhance contrast."
+          "title": "Améliorer l'analyse",
+          "description": "Recadrez automatiquement, redressez et améliorez le contraste."
         },
         {
-          "title": "Export PDF",
-          "description": "Download a clean, professional-looking scanned PDF."
+          "title": "Exporter PDF",
+          "description": "Téléchargez un PDF numérisé propre et d’aspect professionnel."
         }
-      ]
+      ],
+      "badgeText": "Guide rapide"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Scan to PDF for Paris Field Workers",
-      "content": "Field workers and freelancers in Paris digitize paper documents on-the-go without uploading to cloud services."
+      "type": "scan_geo_targeting",
+      "title": "Traitement local 100 % sécurisé",
+      "content": "Toutes les opérations sont effectuées directement sur votre appareil local. Nous utilisons la technologie avancée WebAssembly pour traiter vos documents sans jamais les télécharger sur des serveurs externes, garantissant ainsi une confidentialité totale.",
+      "badgeText": "Traitement local"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Documents Stay on Device",
-      "content": "Invoices, contracts, and ID scans processed entirely in browser memory without any server access."
+      "type": "scan_privacy_security",
+      "title": "Les documents numérisés restent sur l'appareil",
+      "content": "Factures, contrats et analyses d'identité traités entièrement dans la mémoire du navigateur sans aucun accès au serveur.",
+      "badgeText": "La sécurité d'abord"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Scans in Real Time",
-      "content": "Photo enhancement and PDF generation happens in milliseconds, even for high-resolution camera shots."
+      "type": "scan_performance",
+      "title": "Convertir les scans en temps réel",
+      "content": "L'amélioration des photos et la génération de PDF s'effectuent en quelques millisecondes, même pour les prises de vue haute résolution.",
+      "badgeText": "Rapide comme l'éclair"
     }
   ],
   "faqs": [
     {
-      "q": "What photo formats are supported?",
-      "a": "JPG, PNG, WebP, and HEIC from modern cameras."
+      "q": "Quels formats de photos sont pris en charge ?",
+      "a": "JPG, PNG, WebP et HEIC à partir d'appareils photo modernes."
     },
     {
-      "q": "Does it fix tilted scans?",
-      "a": "Yes, auto-deskew corrects slight angles automatically."
+      "q": "Est-ce que ça corrige les scans inclinés ?",
+      "a": "Oui, le redressement automatique corrige automatiquement les légers angles."
     },
     {
-      "q": "Can I combine multiple scans?",
-      "a": "Yes, add multiple photos to create a multi-page PDF."
+      "q": "Puis-je combiner plusieurs analyses ?",
+      "a": "Oui, ajoutez plusieurs photos pour créer un PDF de plusieurs pages."
     },
     {
-      "q": "Does it enhance contrast?",
-      "a": "Yes, document enhancement mode sharpens text for clarity."
+      "q": "Est-ce que cela améliore le contraste ?",
+      "a": "Oui, le mode d’amélioration du document affine le texte pour plus de clarté."
     },
     {
-      "q": "Is this free?",
-      "a": "Oui, entièrement gratuit."
+      "q": "Est-ce gratuit ?",
+      "a": "Oui, toujours gratuit."
     }
-  ]
+  ],
+  "faqTitle": "Foire aux questions",
+  "supportCenter": "Centre d'assistance"
 }

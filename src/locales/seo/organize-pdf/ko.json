@@ -1,67 +1,85 @@
 {
-  "title": "Organize PDF Pages — Reorder & Delete Offline",
-  "h1": "Reorder, Delete, or Duplicate PDF Pages Locally",
-  "description": "Drag and drop to rearrange, remove, or duplicate PDF pages entirely in your browser. No upload. Great for users in Seoul.",
+  "title": "PDF 페이지 구성 — 오프라인 재정렬 및 ​​삭제",
+  "h1": "PDF 페이지를 로컬에서 재정렬, 삭제 또는 복제",
+  "description": "브라우저에서 PDF 페이지 전체를 드래그 앤 드롭하여 재정렬, 제거 또는 복제할 수 있습니다. 빠르고 완벽하게 안전합니다.",
+  "buttonText": "Organize Pages",
+  "badges": [
+    "드래그 앤 드롭",
+    "페이지 재정렬",
+    "비주얼 편집기"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Organize PDFs Locally?",
-      "content": "Reorganizing page structure is an editing operation. Your internal document should stay internal during editing."
+      "type": "organize_hero_features",
+      "title": "PDF를 로컬에서 구성하는 이유는 무엇입니까?",
+      "content": "페이지 구조 재구성은 편집 작업입니다. 내부 문서는 편집 중에도 내부에 있어야 합니다."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Organize PDF Pages",
+      "type": "organize_how_to_steps",
+      "title": "PDF 페이지를 구성하는 방법",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to reorganize."
+          "title": "PDF 열기",
+          "description": "재구성하려는 PDF를 로드합니다."
         },
         {
-          "title": "Drag to Reorder",
-          "description": "Drag page thumbnails to the desired position."
+          "title": "드래그하여 재정렬",
+          "description": "페이지 축소판을 원하는 위치로 드래그합니다."
         },
         {
-          "title": "Save Organized PDF",
-          "description": "Download the restructured PDF immediately."
+          "title": "정리된 PDF 저장",
+          "description": "재구성된 PDF를 즉시 다운로드하세요."
         }
-      ]
+      ],
+      "badgeText": "빠른 가이드"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Organization for Seoul Teams",
-      "content": "Teams in Seoul reorganize proposal and report PDFs without uploading to any cloud service."
+      "type": "organize_geo_targeting",
+      "title": "100% 안전한 로컬 처리",
+      "content": "모든 작업은 로컬 장치에서 직접 수행됩니다. 우리는 고급 WebAssembly 기술을 사용하여 문서를 외부 서버에 업로드하지 않고 처리하여 완벽한 개인 정보 보호를 보장합니다.",
+      "badgeText": "로컬 처리"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Page Structure Is Private Business",
-      "content": "Reordering internal reports and proposals with zero data leaving your browser."
+      "type": "organize_privacy_security",
+      "title": "페이지 구조는 개인 사업입니다",
+      "content": "브라우저를 떠나는 데이터가 전혀 없는 내부 보고서 및 제안을 재정렬합니다.",
+      "badgeText": "보안 우선"
     },
     {
-      "type": "organizer_performance",
-      "title": "Reorganize Any PDF in Seconds",
-      "content": "Reorder pages in a 500-page document through a smooth drag-and-drop interface with zero upload."
+      "type": "organize_performance",
+      "title": "몇 초 만에 PDF 재구성",
+      "content": "업로드할 필요 없이 원활한 드래그 앤 드롭 인터페이스를 통해 500페이지 문서의 페이지 순서를 변경하세요.",
+      "badgeText": "번개처럼 빠르게"
     }
   ],
   "faqs": [
     {
-      "q": "Can I delete pages?",
-      "a": "Yes, click the delete icon on any page thumbnail."
+      "q": "페이지를 삭제할 수 있나요?",
+      "a": "예, 페이지 축소판에서 삭제 아이콘을 클릭하세요."
     },
     {
-      "q": "Can I duplicate pages?",
-      "a": "Yes, duplicate individual pages with one click."
+      "q": "페이지를 복제할 수 있나요?",
+      "a": "예, 한 번의 클릭으로 개별 페이지를 복제할 수 있습니다."
     },
     {
-      "q": "Can I rotate while organizing?",
-      "a": "Yes, per-page rotation is available in the organizer."
+      "q": "정리하면서 회전할 수 있나요?",
+      "a": "예, Organizer에서 페이지별 회전이 가능합니다."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No limit! Organize documents of any size."
+      "q": "페이지 제한이 있나요?",
+      "a": "제한 없음! 모든 크기의 문서를 정리하세요."
     },
     {
-      "q": "Is this free?",
+      "q": "이거 무료인가요?",
       "a": "예, 완전 무료입니다."
     }
-  ]
+  ],
+  "faqTitle": "자주 묻는 질문",
+  "supportCenter": "지원 센터"
 }

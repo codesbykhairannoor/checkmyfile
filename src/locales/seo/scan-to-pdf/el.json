@@ -1,67 +1,85 @@
 {
-  "title": "Scan to PDF — Convert Camera Shots Offline",
-  "h1": "Convert Photos and Scans to PDF Locally",
-  "description": "Turn photos of documents taken with your camera into clean PDFs entirely in your browser. No upload. Best for users in Athens.",
+  "title": "Σάρωση σε PDF — Μετατροπή λήψεων κάμερας εκτός σύνδεσης",
+  "h1": "Μετατροπή φωτογραφιών και σαρώσεων σε PDF τοπικά",
+  "description": "Μετατρέψτε τις φωτογραφίες των εγγράφων που τραβήξατε με την κάμερά σας σε καθαρά PDF εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση. 100% ασφαλής τοπική επεξεργασία.",
+  "buttonText": "Scan to PDF",
+  "badges": [
+    "Χρήση κάμερας Web",
+    "Φορητός σαρωτής",
+    "Αυτόματη περικοπή"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Use Scan-to-PDF Offline?",
-      "content": "Photos of documents contain sensitive information. Process them locally without any cloud access."
+      "type": "scan_hero_features",
+      "title": "Γιατί να χρησιμοποιήσετε το Scan-to-PDF Offline;",
+      "content": "Οι φωτογραφίες των εγγράφων περιέχουν ευαίσθητες πληροφορίες. Επεξεργαστείτε τα τοπικά χωρίς πρόσβαση στο cloud."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Scans to PDF",
+      "type": "scan_how_to_steps",
+      "title": "Πώς να μετατρέψετε σαρώσεις σε PDF",
       "steps": [
         {
-          "title": "Import Photos",
-          "description": "Select photos taken with your phone or camera."
+          "title": "Εισαγωγή φωτογραφιών",
+          "description": "Επιλέξτε φωτογραφίες που τραβήξατε με το τηλέφωνο ή την κάμερά σας."
         },
         {
-          "title": "Enhance Scan",
-          "description": "Auto-crop, deskew, and enhance contrast."
+          "title": "Βελτίωση σάρωσης",
+          "description": "Αυτόματη περικοπή, ξεφλούδισμα και ενίσχυση της αντίθεσης."
         },
         {
-          "title": "Export PDF",
-          "description": "Download a clean, professional-looking scanned PDF."
+          "title": "Εξαγωγή PDF",
+          "description": "Κατεβάστε ένα καθαρό σαρωμένο PDF με επαγγελματική εμφάνιση."
         }
-      ]
+      ],
+      "badgeText": "Γρήγορος Οδηγός"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Scan to PDF for Athens Field Workers",
-      "content": "Field workers and freelancers in Athens digitize paper documents on-the-go without uploading to cloud services."
+      "type": "scan_geo_targeting",
+      "title": "100% Ασφαλής Τοπική Επεξεργασία",
+      "content": "Όλες οι λειτουργίες εκτελούνται απευθείας στην τοπική συσκευή σας. Χρησιμοποιούμε προηγμένη τεχνολογία WebAssembly για να επεξεργαζόμαστε τα έγγραφά σας χωρίς ποτέ να τα ανεβάσουμε σε εξωτερικούς διακομιστές, διασφαλίζοντας πλήρες απόρρητο.",
+      "badgeText": "Τοπική Επεξεργασία"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Documents Stay on Device",
-      "content": "Invoices, contracts, and ID scans processed entirely in browser memory without any server access."
+      "type": "scan_privacy_security",
+      "title": "Τα σαρωμένα έγγραφα παραμένουν στη συσκευή",
+      "content": "Τα τιμολόγια, οι συμβάσεις και οι σαρώσεις ταυτότητας επεξεργάζονται εξ ολοκλήρου στη μνήμη του προγράμματος περιήγησης χωρίς πρόσβαση διακομιστή.",
+      "badgeText": "Πρώτα η ασφάλεια"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Scans in Real Time",
-      "content": "Photo enhancement and PDF generation happens in milliseconds, even for high-resolution camera shots."
+      "type": "scan_performance",
+      "title": "Μετατροπή σαρώσεων σε πραγματικό χρόνο",
+      "content": "Η βελτίωση φωτογραφιών και η δημιουργία PDF γίνονται σε χιλιοστά του δευτερολέπτου, ακόμη και για λήψεις κάμερας υψηλής ανάλυσης.",
+      "badgeText": "Αστραπιαία"
     }
   ],
   "faqs": [
     {
-      "q": "What photo formats are supported?",
-      "a": "JPG, PNG, WebP, and HEIC from modern cameras."
+      "q": "Ποιες μορφές φωτογραφιών υποστηρίζονται;",
+      "a": "JPG, PNG, WebP και HEIC από σύγχρονες κάμερες."
     },
     {
-      "q": "Does it fix tilted scans?",
-      "a": "Yes, auto-deskew corrects slight angles automatically."
+      "q": "Διορθώνει τις κεκλιμένες σαρώσεις;",
+      "a": "Ναι, το auto-deskew διορθώνει αυτόματα τις μικρές γωνίες."
     },
     {
-      "q": "Can I combine multiple scans?",
-      "a": "Yes, add multiple photos to create a multi-page PDF."
+      "q": "Μπορώ να συνδυάσω πολλαπλές σαρώσεις;",
+      "a": "Ναι, προσθέστε πολλές φωτογραφίες για να δημιουργήσετε ένα πολυσέλιδο PDF."
     },
     {
-      "q": "Does it enhance contrast?",
-      "a": "Yes, document enhancement mode sharpens text for clarity."
+      "q": "Ενισχύει την αντίθεση;",
+      "a": "Ναι, η λειτουργία βελτίωσης εγγράφου οξύνει το κείμενο για ευκρίνεια."
     },
     {
-      "q": "Is this free?",
-      "a": "Ναι, εντελώς δωρεάν."
+      "q": "Αυτό είναι δωρεάν;",
+      "a": "Ναι, πάντα δωρεάν."
     }
-  ]
+  ],
+  "faqTitle": "Συχνές Ερωτήσεις",
+  "supportCenter": "Κέντρο Υποστήριξης"
 }

@@ -1,15 +1,27 @@
 {
   "title": "Resize PDF Pages — Change Paper Size Offline",
   "h1": "Resize PDF Pages to A4, Letter, or Custom Sizes",
-  "description": "Change the paper size of every PDF page to A4, US Letter, or custom dimensions entirely in your browser. No upload. Ideal for users in New York.",
+  "description": "Change the paper size of every PDF page to A4, US Letter, or custom dimensions entirely in your browser. No upload. 100% secure local processing.",
+  "buttonText": "Resize Pages",
+  "badges": [
+    "A4, Letter, Custom",
+    "Add Margins",
+    "Format Fix"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
+      "type": "resize_hero_features",
       "title": "Why Resize PDFs Locally?",
       "content": "Preparing documents for printing requires proper page sizing. Resize locally without uploading internal documents to the cloud."
     },
     {
-      "type": "transform_how_to_steps",
+      "type": "resize_how_to_steps",
       "title": "How to Resize PDF Pages",
       "steps": [
         {
@@ -27,17 +39,17 @@
       ]
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Resizing for New York Print Shops",
-      "content": "Print shops and offices in New York resize documents to standard sizes without cloud dependency."
+      "type": "resize_geo_targeting",
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy."
     },
     {
-      "type": "transform_privacy_security",
+      "type": "resize_privacy_security",
       "title": "Internal Documents Stay Internal",
       "content": "Resize business reports and proposals without any server-side processing."
     },
     {
-      "type": "transform_performance",
+      "type": "resize_performance",
       "title": "Resize Hundreds of Pages Instantly",
       "content": "Resizing a 500-page PDF takes under 2 seconds. All in your browser."
     }

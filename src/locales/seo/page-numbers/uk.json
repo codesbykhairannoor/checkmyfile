@@ -1,67 +1,85 @@
 {
-  "title": "Add Page Numbers to PDF — Offline Number Stamp",
-  "h1": "Insert Page Numbers into PDF Documents Locally",
-  "description": "Stamp page numbers at the header or footer of your PDF entirely in your browser. No upload. Ideal for users in Kyiv.",
+  "title": "Додайте номери сторінок до PDF — Offline Number Stamp",
+  "h1": "Вставте номери сторінок у PDF-документи локально",
+  "description": "Позначте номери сторінок у верхньому або нижньому колонтитулі вашого PDF-файлу повністю у вашому браузері. Швидко та повністю безпечно.",
+  "buttonText": "Add Page Numbers",
+  "badges": [
+    "Спеціальна позиція",
+    "Верхній та нижній колонтитул",
+    "Нумерація Бейтса"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Add Page Numbers Offline?",
-      "content": "Page numbers are a formatting step, not a reason to upload confidential documents to a cloud service."
+      "type": "pagenum_hero_features",
+      "title": "Навіщо додавати номери сторінок офлайн?",
+      "content": "Номери сторінок – це етап форматування, а не причина для завантаження конфіденційних документів у хмарну службу."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Add Page Numbers",
+      "type": "pagenum_how_to_steps",
+      "title": "Як додати номери сторінок",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to number."
+          "title": "Відкрити PDF",
+          "description": "Виберіть PDF для нумерації."
         },
         {
-          "title": "Configure Style",
-          "description": "Choose position, format (1/12, Page 1, i, ii…), and font."
+          "title": "Налаштувати стиль",
+          "description": "Виберіть положення, формат (1/12, Сторінка 1, i, ii…) і шрифт."
         },
         {
-          "title": "Apply & Download",
-          "description": "Download your paginated PDF instantly."
+          "title": "Застосувати та завантажити",
+          "description": "Миттєво завантажте PDF-файл із розміткою сторінок."
         }
-      ]
+      ],
+      "badgeText": "Короткий посібник"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Page Numbering for Kyiv Legal Docs",
-      "content": "Legal professionals in Kyiv number briefs and reports locally without cloud service dependency."
+      "type": "pagenum_geo_targeting",
+      "title": "100% безпечна локальна обробка",
+      "content": "Усі операції виконуються безпосередньо на локальному пристрої. Ми використовуємо передову технологію WebAssembly для обробки ваших документів, не завантажуючи їх на зовнішні сервери, забезпечуючи повну конфіденційність.",
+      "badgeText": "Локальна обробка"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Internal Documents Stay Numbered & Private",
-      "content": "Add page numbers to contracts and confidential reports without any server involvement."
+      "type": "pagenum_privacy_security",
+      "title": "Внутрішні документи залишаються пронумерованими та конфіденційними",
+      "content": "Додайте номери сторінок до контрактів і конфіденційних звітів без участі сервера.",
+      "badgeText": "Безпека перш за все"
     },
     {
-      "type": "organizer_performance",
-      "title": "Number a 1000-Page PDF Instantly",
-      "content": "Stamping page numbers locally takes milliseconds for any size document."
+      "type": "pagenum_performance",
+      "title": "Миттєво пронумеруйте PDF-файл на 1000 сторінок",
+      "content": "Локальне штампування номерів сторінок займає мілісекунди для документів будь-якого розміру.",
+      "badgeText": "Блискавичний"
     }
   ],
   "faqs": [
     {
-      "q": "What number formats are available?",
-      "a": "Arabic (1, 2, 3), Roman (i, ii, iii), and letter (a, b, c) formats."
+      "q": "Які числові формати доступні?",
+      "a": "Арабський (1, 2, 3), латинський (i, ii, iii) і літерний (a, b, c) формати."
     },
     {
-      "q": "Can I start from a custom number?",
-      "a": "Yes, set any starting page number."
+      "q": "Чи можу я почати з індивідуального номера?",
+      "a": "Так, встановіть будь-який номер початкової сторінки."
     },
     {
-      "q": "Can I skip numbering the first page?",
-      "a": "Yes, set the page offset to skip cover pages."
+      "q": "Чи можна пропустити нумерацію першої сторінки?",
+      "a": "Так, установіть зміщення сторінки, щоб пропускати титульні сторінки."
     },
     {
-      "q": "Where can I position numbers?",
-      "a": "Header-left, header-center, header-right, and same for footer."
+      "q": "Де я можу розмістити номери?",
+      "a": "Верхній колонтитул ліворуч, верхній колонтитул по центру, верхній колонтитул праворуч і те саме для нижнього колонтитула."
     },
     {
-      "q": "Is this free?",
-      "a": "Так, повністю безкоштовно."
+      "q": "Це безкоштовно?",
+      "a": "Так, завжди безкоштовно."
     }
-  ]
+  ],
+  "faqTitle": "Часті запитання",
+  "supportCenter": "Центр підтримки"
 }

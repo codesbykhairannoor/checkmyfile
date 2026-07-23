@@ -1,67 +1,85 @@
 {
-  "title": "Password Protect PDF — Secure Files Offline",
-  "h1": "Add Password Protection to PDF Files Instantly",
-  "description": "Encrypt PDF files with AES-256 directly in your browser. Your document never leaves your device. Ideal for users in Madrid.",
+  "title": "Proteger PDF con contraseña: archivos seguros sin conexión",
+  "h1": "Agregue protección con contraseña a archivos PDF al instante",
+  "description": "Cifre archivos PDF con AES-256 directamente en su navegador. Su documento nunca sale de su dispositivo. Procesamiento local 100% seguro.",
+  "buttonText": "Protect PDF",
+  "badges": [
+    "Cifrado AES-256",
+    "Contraseña segura",
+    "Sólo del lado del cliente"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "protect_hero_features",
-      "title": "Why Protect PDFs Locally?",
-      "content": "Adding a password means the file is sensitive. Never upload sensitive files to a cloud encryptor. Ours runs entirely offline with AES-256 encryption."
+      "title": "¿Por qué proteger archivos PDF localmente?",
+      "content": "Agregar una contraseña significa que el archivo es confidencial. Nunca cargue archivos confidenciales en un cifrador en la nube. El nuestro funciona completamente sin conexión con cifrado AES-256."
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Password Protect a PDF",
+      "title": "Cómo proteger con contraseña un PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF you want to lock."
+          "title": "Abrir PDF",
+          "description": "Seleccione el PDF que desea bloquear."
         },
         {
-          "title": "Set Password",
-          "description": "Choose a strong password for encryption."
+          "title": "Establecer contraseña",
+          "description": "Elija una contraseña segura para el cifrado."
         },
         {
-          "title": "Download Protected PDF",
-          "description": "Get your AES-256 encrypted PDF immediately."
+          "title": "Descargar PDF protegido",
+          "description": "Obtenga su PDF cifrado AES-256 de inmediato."
         }
-      ]
+      ],
+      "badgeText": "Guía rápida"
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Vault-Level PDF Protection for Madrid",
-      "content": "Legal and finance professionals in Madrid encrypt documents with AES-256 strength without exposing files to any server."
+      "title": "Procesamiento local 100% seguro",
+      "content": "Todas las operaciones se realizan directamente en su dispositivo local. Utilizamos tecnología avanzada de WebAssembly para procesar sus documentos sin tener que cargarlos en servidores externos, lo que garantiza una privacidad total.",
+      "badgeText": "Procesamiento local"
     },
     {
       "type": "protect_privacy_security",
-      "title": "AES-256 Encryption — Bank-Grade, Offline",
-      "content": "Military-grade AES-256 encryption runs in your browser. No key is ever transmitted to any server."
+      "title": "Cifrado AES-256: nivel bancario, sin conexión",
+      "content": "El cifrado AES-256 de grado militar se ejecuta en su navegador. Nunca se transmite ninguna clave a ningún servidor.",
+      "badgeText": "La seguridad es lo primero"
     },
     {
       "type": "protect_performance",
-      "title": "Encrypt Any PDF in Under 1 Second",
-      "content": "AES-256 processing locally takes milliseconds — no upload, no queue, no wait."
+      "title": "Cifre cualquier PDF en menos de 1 segundo",
+      "content": "El procesamiento AES-256 localmente tarda milisegundos: sin carga, sin cola, sin espera.",
+      "badgeText": "A la velocidad del rayo"
     }
   ],
   "faqs": [
     {
-      "q": "What encryption standard is used?",
-      "a": "AES-256, the same standard used by banks and governments."
+      "q": "¿Qué estándar de cifrado se utiliza?",
+      "a": "AES-256, el mismo estándar utilizado por bancos y gobiernos."
     },
     {
-      "q": "Can I set different owner and user passwords?",
-      "a": "Yes, you can set both separately."
+      "q": "¿Puedo establecer diferentes contraseñas de propietario y usuario?",
+      "a": "Sí, puedes configurar ambos por separado."
     },
     {
-      "q": "Is the original file modified?",
-      "a": "No, a new encrypted copy is created."
+      "q": "¿Se modifica el archivo original?",
+      "a": "No, se crea una nueva copia cifrada."
     },
     {
-      "q": "Can I restrict printing or editing?",
-      "a": "Yes, permission restrictions can be set alongside the password."
+      "q": "¿Puedo restringir la impresión o edición?",
+      "a": "Sí, se pueden establecer restricciones de permisos junto con la contraseña."
     },
     {
-      "q": "Is this free?",
+      "q": "¿Es esto gratis?",
       "a": "Sí, completamente gratis."
     }
-  ]
+  ],
+  "faqTitle": "Preguntas frecuentes",
+  "supportCenter": "Centro de soporte"
 }

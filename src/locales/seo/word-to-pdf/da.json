@@ -1,67 +1,80 @@
 {
-  "title": "Word to PDF Converter — No Upload Required",
-  "h1": "Convert Word Documents to PDF Instantly",
-  "description": "Transform .docx files into perfect PDFs directly in your browser. Zero upload, 100% private. Ideal for users in Copenhagen.",
+  "title": "Word til PDF-konvertering — Ingen upload påkrævet",
+  "h1": "Konverter Word-dokumenter til PDF øjeblikkeligt",
+  "description": "Transform .docx-filer til perfekte PDF-filer direkte i din browser. Nul upload, 100 % privat. Ideel til brugere i København.",
+  "buttonText": "Konverter dokument",
+  "badges": [
+    "Ansættelseskontrakter",
+    "Juridiske Briefs",
+    "CV'er og CV'er"
+  ],
+  "stats": [
+    "100 %",
+    "Lokal",
+    "0s",
+    "Ventetid"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Word to PDF Offline?",
-      "content": "Your Word document contains sensitive data. Our converter runs entirely in WebAssembly — your file never touches a server."
+      "type": "word_hero_features",
+      "title": "Hvorfor bruge offline?",
+      "content": "Dit Word-dokument indeholder følsomme data. Vores konverter kører udelukkende i WebAssembly - din fil rører aldrig en server."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Word to PDF",
+      "type": "word_how_to_steps",
+      "title": "Sådan bruges",
       "steps": [
         {
-          "title": "Select .docx File",
-          "description": "Pick your Word document from your computer."
+          "title": "Vælg .docx-fil",
+          "description": "Vælg dit Word-dokument fra din computer."
         },
         {
-          "title": "Preview Output",
-          "description": "See the PDF rendering before finalizing."
+          "title": "Forhåndsvisning af output",
+          "description": "Se PDF-gengivelsen før færdiggørelse."
         },
         {
           "title": "Download PDF",
-          "description": "Save your perfectly converted PDF instantly."
+          "description": "Gem din perfekt konverterede PDF med det samme."
         }
       ]
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Word to PDF for Copenhagen Users",
-      "content": "Used by professionals in Copenhagen who need to share documents without losing formatting."
+      "type": "word_geo_targeting",
+      "title": "Word til PDF for københavnske brugere",
+      "content": "Anvendes af professionelle i København, som skal dele dokumenter uden at miste formatering."
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Your Contracts Stay Private",
-      "content": "Converting employment contracts? Legal briefs? Our WASM processor never phones home."
+      "type": "word_privacy_security",
+      "title": "Dine kontrakter forbliver private",
+      "content": "Konvertering af ansættelseskontrakter? Juridiske trusser? Vores WASM-processor ringer aldrig hjem."
     },
     {
-      "type": "combiner_performance",
-      "title": "No More Conversion Queues",
-      "content": "Cloud converters put you in a queue. Ours converts in under 2 seconds, entirely offline."
+      "type": "word_performance",
+      "title": "Ingen flere konverteringskøer",
+      "content": "Cloud-konvertere sætter dig i en kø. Vores konverterer på under 2 sekunder, helt offline."
     }
   ],
   "faqs": [
     {
-      "q": "Does it preserve Word formatting?",
-      "a": "Yes, fonts, tables, and images are preserved using our WASM renderer."
+      "q": "Bevarer det Word-formatering?",
+      "a": "Ja, skrifttyper, tabeller og billeder bevares ved hjælp af vores WASM-renderer."
     },
     {
-      "q": "What Word versions are supported?",
-      "a": "All modern .docx files are supported."
+      "q": "Hvilke Word-versioner understøttes?",
+      "a": "Alle moderne .docx-filer understøttes."
     },
     {
-      "q": "Is there a file size limit?",
-      "a": "No server limits! Only your device RAM is the constraint."
+      "q": "Er der en filstørrelsesgrænse?",
+      "a": "Ingen servergrænser! Kun din enheds RAM er begrænsningen."
     },
     {
-      "q": "Can I batch convert multiple files?",
-      "a": "Yes, select multiple .docx files at once."
+      "q": "Kan jeg batchkonvertere flere filer?",
+      "a": "Ja, vælg flere .docx-filer på én gang."
     },
     {
-      "q": "Is this free?",
+      "q": "Er dette gratis?",
       "a": "Ja, helt gratis."
     }
-  ]
+  ],
+  "faqTitle": "Ofte Stillede Spørgsmål"
 }

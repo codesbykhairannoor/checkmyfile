@@ -1,67 +1,85 @@
 {
-  "title": "Excel to PDF — Convert Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to PDF Securely",
-  "description": "Turn .xlsx and .csv files into crisp PDFs locally in your browser. Financial data stays on your device. Perfect for users in Jerusalem.",
+  "title": "Excel ל-PDF — המר גיליונות אלקטרוניים במצב לא מקוון",
+  "h1": "המר גיליונות אלקטרוניים של Excel ל-PDF בצורה מאובטחת",
+  "description": "הפוך קובצי .xlsx ו-.csv לקובצי PDF חדים באופן מקומי בדפדפן שלך. הנתונים הפיננסיים נשארים במכשיר שלך. עיבוד מקומי מאובטח של 100%.",
+  "buttonText": "Convert Spreadsheet",
+  "badges": [
+    "דוחות כספיים",
+    "חשבוניות",
+    "ייצוא נתונים"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Excel Offline?",
-      "content": "Spreadsheets often contain sensitive financial data. Our browser-based engine converts without any server involvement."
+      "type": "excel_hero_features",
+      "title": "למה להמיר אקסל במצב לא מקוון?",
+      "content": "גיליונות אלקטרוניים מכילים לרוב נתונים פיננסיים רגישים. המנוע מבוסס הדפדפן שלנו ממיר ללא כל מעורבות שרת."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Export Excel as PDF",
+      "type": "excel_how_to_steps",
+      "title": "כיצד לייצא את Excel כ-PDF",
       "steps": [
         {
-          "title": "Open Spreadsheet",
-          "description": "Select your .xlsx or .csv file."
+          "title": "פתח את הגיליון האלקטרוני",
+          "description": "בחר את קובץ ה-.xlsx או ה-csv שלך."
         },
         {
-          "title": "Choose Sheet Range",
-          "description": "Pick which sheets or rows to include."
+          "title": "בחר טווח גיליון",
+          "description": "בחר אילו גיליונות או שורות לכלול."
         },
         {
-          "title": "Export as PDF",
-          "description": "Download your spreadsheet as a clean PDF."
+          "title": "ייצוא כ-PDF",
+          "description": "הורד את הגיליון האלקטרוני שלך כקובץ PDF נקי."
         }
-      ]
+      ],
+      "badgeText": "מדריך מהיר"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Excel to PDF for Jerusalem Businesses",
-      "content": "Businesses in Jerusalem use our tool to share financial reports without exposing raw spreadsheet data."
+      "type": "excel_geo_targeting",
+      "title": "100% עיבוד מקומי מאובטח",
+      "content": "כל הפעולות מבוצעות ישירות במכשיר המקומי שלך. אנו משתמשים בטכנולוגיית WebAssembly מתקדמת כדי לעבד את המסמכים שלך מבלי להעלות אותם לשרתים חיצוניים, מה שמבטיח פרטיות מלאה.",
+      "badgeText": "עיבוד מקומי"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Protect Financial Spreadsheets",
-      "content": "Balance sheets, payroll data — all processed offline. Zero data sent to any third party."
+      "type": "excel_privacy_security",
+      "title": "הגן על גיליונות אלקטרוניים פיננסיים",
+      "content": "מאזנים, נתוני שכר - כולם מעובדים במצב לא מקוון. אפס נתונים שנשלחו לצד שלישי כלשהו.",
+      "badgeText": "אבטחה תחילה"
     },
     {
-      "type": "combiner_performance",
-      "title": "Spreadsheet-to-PDF in Seconds",
-      "content": "No upload queue, no compression artifacts. Your spreadsheet renders natively in-browser."
+      "type": "excel_performance",
+      "title": "גיליון אלקטרוני ל-PDF בשניות",
+      "content": "אין תור העלאה, אין חפצי דחיסה. הגיליון האלקטרוני שלך מוצג באופן מקורי בדפדפן.",
+      "badgeText": "מהיר ברק"
     }
   ],
   "faqs": [
     {
-      "q": "Are all Excel formulas preserved?",
-      "a": "Yes, formula results are captured in the PDF snapshot."
+      "q": "האם כל הנוסחאות של Excel נשמרות?",
+      "a": "כן, תוצאות הנוסחה נלכדות בתמונת PDF."
     },
     {
-      "q": "Can I convert multiple sheets?",
-      "a": "Yes, you can include all sheets or specific ones."
+      "q": "האם אני יכול להמיר גיליונות מרובים?",
+      "a": "כן, אתה יכול לכלול את כל הגיליונות או ספציפיים."
     },
     {
-      "q": "What file types are supported?",
-      "a": ".xlsx, .xls, and .csv are all supported."
+      "q": "אילו סוגי קבצים נתמכים?",
+      "a": "‎.xlsx, ‎.xls ו-‎.csv נתמכים כולם."
     },
     {
-      "q": "Is this secure for financial data?",
-      "a": "Absolutely. The file never leaves your browser."
+      "q": "האם זה בטוח לנתונים פיננסיים?",
+      "a": "בְּהֶחלֵט. הקובץ לא יוצא מהדפדפן שלך."
     },
     {
-      "q": "Does it support graphs?",
-      "a": "כן, חינם לחלוטין."
+      "q": "האם זה תומך בגרפים?",
+      "a": "תרשימים וגרפים מוטבעים מוצגים ב-PDF."
     }
-  ]
+  ],
+  "faqTitle": "שאלות נפוצות",
+  "supportCenter": "מרכז תמיכה"
 }

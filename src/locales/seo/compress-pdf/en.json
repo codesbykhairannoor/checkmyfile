@@ -1,15 +1,15 @@
 {
   "title": "Compress PDF Online - Reduce File Size",
   "h1": "Compress PDF Documents without Losing Quality",
-  "description": "Shrink large PDF files up to 90% using adaptive lossless techniques directly in WebAssembly. Perfect for users in New York.",
+  "description": "Shrink large PDF files up to 90% using adaptive lossless techniques directly in WebAssembly. 100% secure local processing.",
   "sections": [
     {
-      "type": "comp_hero_features",
+      "type": "compress_hero_features",
       "title": "Why Compress PDF Offline?",
       "content": "Large PDFs are a pain to email. Our compressor reduces file size drastically without blurring images, all from your browser."
     },
     {
-      "type": "comp_how_to_steps",
+      "type": "compress_how_to_steps",
       "title": "How to Shrink PDF Files",
       "steps": [
         {
@@ -27,17 +27,17 @@
       ]
     },
     {
-      "type": "comp_geo_targeting",
-      "title": "Optimized PDF Shrinking in New York, US-NY",
-      "content": "Working on a slow connection in New York? Compress your files locally so you can email them faster."
+      "type": "compress_geo_targeting",
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy."
     },
     {
-      "type": "comp_privacy_security",
+      "type": "compress_privacy_security",
       "title": "Secure Local Compression",
       "content": "Compressing sensitive financial reports? Our algorithm works completely offline, keeping your data safe."
     },
     {
-      "type": "comp_performance",
+      "type": "compress_performance",
       "title": "Lightning Fast Shrink",
       "content": "Compressing a 50MB file locally saves you the time of uploading 50MB and downloading 5MB back."
     }
@@ -63,5 +63,17 @@
       "q": "Can I compress multiple files at once?",
       "a": "Batch compression is supported on modern browsers."
     }
-  ]
+  ],
+  "badges": [
+    "90% Compression",
+    "Lossless Option",
+    "No Uploads"
+  ],
+  "stats": [
+    "Zero Wait",
+    "High Quality",
+    "WebAssembly",
+    "Private"
+  ],
+  "buttonText": "Compress PDF"
 }

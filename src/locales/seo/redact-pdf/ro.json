@@ -1,67 +1,85 @@
 {
-  "title": "Redact PDF — Permanently Remove Sensitive Data",
-  "h1": "Permanently Redact Sensitive Information from PDFs Offline",
-  "description": "Black out sensitive text and images in PDFs entirely in your browser. No cloud risk. Critical for users in Bucharest.",
+  "title": "Redact PDF — Eliminați definitiv datele sensibile",
+  "h1": "Redactați permanent informațiile sensibile din PDF-uri offline",
+  "description": "Opriți textul și imaginile sensibile din PDF-uri complet în browser. Fără risc de cloud. Procesare locală 100% sigură.",
+  "buttonText": "Redact Text",
+  "badges": [
+    "Ștergere permanentă",
+    "Informații despre întrerupere",
+    "Redactare sigură"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "redact_hero_features",
-      "title": "Why Redact PDFs Locally?",
-      "content": "Redacting means the content is classified. Uploading a document you need to hide defeats the whole purpose. Our tool runs 100% offline."
+      "title": "De ce să redactați PDF-uri local?",
+      "content": "Redactarea înseamnă că conținutul este clasificat. Încărcarea unui document pe care trebuie să-l ascundeți înfrânge întregul scop. Instrumentul nostru rulează 100% offline."
     },
     {
       "type": "redact_how_to_steps",
-      "title": "How to Permanently Redact a PDF",
+      "title": "Cum să redați permanent un PDF",
       "steps": [
         {
-          "title": "Open Sensitive Document",
-          "description": "Load the PDF with data that must be hidden."
+          "title": "Deschideți documentul sensibil",
+          "description": "Încărcați PDF-ul cu date care trebuie ascunse."
         },
         {
-          "title": "Mark Redaction Areas",
-          "description": "Draw boxes over content to permanently erase."
+          "title": "Marcați zonele de redactare",
+          "description": "Desenați casete peste conținut pentru a le șterge definitiv."
         },
         {
-          "title": "Apply & Download",
-          "description": "Content is permanently deleted from the PDF structure."
+          "title": "Aplicați și descărcați",
+          "description": "Conținutul este șters definitiv din structura PDF."
         }
-      ]
+      ],
+      "badgeText": "Ghid rapid"
     },
     {
       "type": "redact_geo_targeting",
-      "title": "Court-Ready Redaction for Bucharest Law Firms",
-      "content": "Legal professionals in Bucharest prepare court documents with permanent, offline redaction that removes data from the PDF structure itself."
+      "title": "Procesare locală 100% sigură",
+      "content": "Toate operațiunile sunt efectuate direct pe dispozitivul local. Folosim tehnologie avansată WebAssembly pentru a vă procesa documentele fără a le încărca vreodată pe servere externe, asigurând confidențialitate completă.",
+      "badgeText": "Prelucrare locală"
     },
     {
       "type": "redact_privacy_security",
-      "title": "True Permanent Redaction — Not Just Black Boxes",
-      "content": "Unlike tools that merely cover text with black boxes, our redaction permanently deletes the underlying data from the PDF object structure."
+      "title": "Adevărata redare permanentă – nu doar cutii negre",
+      "content": "Spre deosebire de instrumentele care acoperă doar textul cu casete negre, redactarea noastră șterge definitiv datele de bază din structura obiectului PDF.",
+      "badgeText": "Securitatea în primul rând"
     },
     {
       "type": "redact_performance",
-      "title": "Redact Entire Documents Instantly",
-      "content": "Apply hundreds of permanent redactions to large documents in seconds, completely offline."
+      "title": "Redactați documentele întregi instantaneu",
+      "content": "Aplicați sute de redactări permanente pe documente mari în câteva secunde, complet offline.",
+      "badgeText": "Rapid fulger"
     }
   ],
   "faqs": [
     {
-      "q": "Is the redaction truly permanent?",
-      "a": "Yes, the underlying text and image data is permanently deleted from the PDF structure."
+      "q": "Este redactarea cu adevărat permanentă?",
+      "a": "Da, textul de bază și datele de imagine sunt șterse definitiv din structura PDF."
     },
     {
-      "q": "Can I redact images too?",
-      "a": "Yes, both text regions and image areas can be permanently redacted."
+      "q": "Pot redacta și imaginile?",
+      "a": "Da, atât regiunile de text, cât și zonele de imagine pot fi redactate permanent."
     },
     {
-      "q": "Can I choose black or white cover?",
-      "a": "Yes, pick the redaction style that suits your document."
+      "q": "Pot alege coperta alb sau negru?",
+      "a": "Da, alegeți stilul de redactare care se potrivește documentului dvs."
     },
     {
-      "q": "Does this meet legal standards?",
-      "a": "Our redaction removes data at the PDF object level, meeting court requirements."
+      "q": "Îndeplinește acest lucru standardele legale?",
+      "a": "Redactarea noastră elimină datele la nivel de obiect PDF, îndeplinind cerințele instanței."
     },
     {
-      "q": "Is this free?",
-      "a": "Da, complet gratuit."
+      "q": "Este gratuit?",
+      "a": "Da, întotdeauna gratuit."
     }
-  ]
+  ],
+  "faqTitle": "Întrebări frecvente",
+  "supportCenter": "Centrul de suport"
 }

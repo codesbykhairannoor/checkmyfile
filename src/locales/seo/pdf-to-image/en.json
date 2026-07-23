@@ -1,15 +1,27 @@
 {
   "title": "PDF to Image Converter — Extract Pages Offline",
   "h1": "Convert PDF Pages to PNG or JPG Images",
-  "description": "Extract every page from a PDF as high-quality images directly in your browser. Zero upload, total privacy. Best for users in New York.",
+  "description": "Extract every page from a PDF as high-quality images directly in your browser. Zero upload, 100% secure local processing.",
+  "buttonText": "Extract Images",
+  "badges": [
+    "Design Portfolios",
+    "Presentations",
+    "High Quality"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
+      "type": "pdf_image_hero_features",
       "title": "Why Extract PDF Pages Offline?",
       "content": "PDFs often contain confidential diagrams, blueprints, or reports. Extract pages as images without any server access."
     },
     {
-      "type": "split_how_to_steps",
+      "type": "pdf_image_how_to_steps",
       "title": "How to Convert PDF to Images",
       "steps": [
         {
@@ -27,17 +39,17 @@
       ]
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF to Image for New York Designers",
-      "content": "Designers in New York extract PDF pages as images for presentations and social media without cloud uploads."
+      "type": "pdf_image_geo_targeting",
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy."
     },
     {
-      "type": "split_privacy_security",
+      "type": "pdf_image_privacy_security",
       "title": "Confidential Diagrams Stay Private",
       "content": "Technical blueprints and legal documents extracted as images without any data leaving your device."
     },
     {
-      "type": "split_performance",
+      "type": "pdf_image_performance",
       "title": "Extract All Pages Instantly",
       "content": "A 500-page PDF converted to images in seconds. No upload, no wait."
     }

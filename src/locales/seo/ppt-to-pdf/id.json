@@ -1,67 +1,85 @@
 {
-  "title": "PowerPoint to PDF Converter — Offline & Free",
-  "h1": "Convert PowerPoint Presentations to PDF Instantly",
-  "description": "Convert .pptx presentations to high-quality PDFs directly in your browser. No cloud needed. Perfect for presenters in Jakarta.",
+  "title": "Konverter PowerPoint ke PDF — Offline & Gratis",
+  "h1": "Konversi Presentasi PowerPoint ke PDF Secara Instan",
+  "description": "Konversikan presentasi .pptx menjadi PDF berkualitas tinggi langsung di browser Anda. Tidak diperlukan awan. Pemrosesan lokal 100% aman.",
+  "buttonText": "Convert Slides",
+  "badges": [
+    "Rapat Dewan",
+    "Dek Pitch",
+    "Produk yang Belum Dirilis"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Presentations Offline?",
-      "content": "Your slides may contain unreleased products or confidential strategies. Convert without risking data exposure."
+      "type": "ppt_hero_features",
+      "title": "Mengapa Mengonversi Presentasi Offline?",
+      "content": "Slide Anda mungkin berisi produk yang belum dirilis atau strategi rahasia. Konversi tanpa risiko paparan data."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert PowerPoint to PDF",
+      "type": "ppt_how_to_steps",
+      "title": "Cara Mengonversi PowerPoint ke PDF",
       "steps": [
         {
-          "title": "Load Presentation",
-          "description": "Select your .pptx file from your device."
+          "title": "Muat Presentasi",
+          "description": "Pilih file .pptx dari perangkat Anda."
         },
         {
-          "title": "Select Slide Range",
-          "description": "Include all slides or specific ones."
+          "title": "Pilih Rentang Slide",
+          "description": "Sertakan semua slide atau slide tertentu."
         },
         {
-          "title": "Download PDF",
-          "description": "Get your PDF with all formatting preserved."
+          "title": "Unduh PDF",
+          "description": "Dapatkan PDF Anda dengan semua format dipertahankan."
         }
-      ]
+      ],
+      "badgeText": "Panduan Singkat"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Presentation Conversion in Jakarta",
-      "content": "Presenters in Jakarta trust us to convert slide decks without leaking unreleased content to cloud servers."
+      "type": "ppt_geo_targeting",
+      "title": "Pemrosesan Lokal 100% Aman",
+      "content": "Semua operasi dilakukan langsung di perangkat lokal Anda. Kami menggunakan teknologi WebAssembly yang canggih untuk memproses dokumen Anda tanpa harus mengunggahnya ke server eksternal, sehingga memastikan privasi sepenuhnya.",
+      "badgeText": "Pemrosesan Lokal"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Confidential Slides Stay Confidential",
-      "content": "Pre-launch product decks? Board presentations? Converted 100% locally without network access."
+      "type": "ppt_privacy_security",
+      "title": "Slide Rahasia Tetap Rahasia",
+      "content": "Dek produk pra-peluncuran? Presentasi dewan? Dikonversi 100% secara lokal tanpa akses jaringan.",
+      "badgeText": "Keamanan Pertama"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Slide Export",
-      "content": "Convert 100-slide decks in seconds. No queue, no waiting, no upload bandwidth wasted."
+      "type": "ppt_performance",
+      "title": "Ekspor Slide Instan",
+      "content": "Ubah dek 100 slide dalam hitungan detik. Tanpa antrian, tanpa menunggu, tanpa bandwidth upload yang terbuang.",
+      "badgeText": "Secepat Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "Are slide animations preserved?",
-      "a": "Animations are flattened into static PDF frames."
+      "q": "Apakah animasi slide dipertahankan?",
+      "a": "Animasi diratakan menjadi bingkai PDF statis."
     },
     {
-      "q": "What resolution is the output?",
-      "a": "High-resolution rendering at 150 DPI by default."
+      "q": "Berapa resolusi keluarannya?",
+      "a": "Render resolusi tinggi pada 150 DPI secara default."
     },
     {
-      "q": "Can I convert selected slides only?",
-      "a": "Yes, specify slide ranges like 1-10 or 5,8,12."
+      "q": "Bisakah saya mengonversi slide yang dipilih saja?",
+      "a": "Ya, tentukan rentang slide seperti 1-10 atau 5,8,12."
     },
     {
-      "q": "Is .ppt (old format) supported?",
-      "a": "Yes, both .ppt and .pptx are supported."
+      "q": "Apakah .ppt (format lama) didukung?",
+      "a": "Ya, .ppt dan .pptx keduanya didukung."
     },
     {
-      "q": "Is this free to use?",
-      "a": "Ya, sepenuhnya gratis."
+      "q": "Apakah ini gratis untuk digunakan?",
+      "a": "Ya, sepenuhnya gratis tanpa tanda air."
     }
-  ]
+  ],
+  "faqTitle": "Pertanyaan yang Sering Diajukan",
+  "supportCenter": "Pusat Dukungan"
 }

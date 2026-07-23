@@ -1,67 +1,85 @@
 {
-  "title": "Image to PDF — Combine Photos Offline",
-  "h1": "Convert Images to PDF Without Uploading",
-  "description": "Turn JPG, PNG, and WebP images into a single PDF document in your browser. Your photos stay private. Perfect for users in Riyadh.",
+  "title": "صورة إلى PDF — دمج الصور دون الاتصال بالإنترنت",
+  "h1": "تحويل الصور إلى PDF بدون تحميل",
+  "description": "قم بتحويل صور JPG وPNG وWebP إلى مستند PDF واحد في متصفحك. صورك تبقى خاصة. معالجة محلية آمنة بنسبة 100%.",
+  "buttonText": "Convert Images",
+  "badges": [
+    "المحافظ",
+    "مسح الهوية",
+    "ألبومات الصور"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Images Offline?",
-      "content": "Photos contain location data and personal moments. Convert them to PDF without exposing them to any cloud service."
+      "type": "image_hero_features",
+      "title": "لماذا تحويل الصور دون اتصال؟",
+      "content": "تحتوي الصور على بيانات الموقع واللحظات الشخصية. قم بتحويلها إلى PDF دون تعريضها لأي خدمة سحابية."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Turn Images Into PDF",
+      "type": "image_how_to_steps",
+      "title": "كيفية تحويل الصور إلى PDF",
       "steps": [
         {
-          "title": "Select Images",
-          "description": "Choose JPG, PNG, or WebP files from your device."
+          "title": "حدد الصور",
+          "description": "اختر ملفات JPG أو PNG أو WebP من جهازك."
         },
         {
-          "title": "Arrange Order",
-          "description": "Drag to reorder images before generating the PDF."
+          "title": "ترتيب الترتيب",
+          "description": "اسحب لإعادة ترتيب الصور قبل إنشاء ملف PDF."
         },
         {
-          "title": "Export PDF",
-          "description": "Download your image PDF in one click."
+          "title": "تصدير قوات الدفاع الشعبي",
+          "description": "قم بتنزيل صورتك بتنسيق PDF بنقرة واحدة."
         }
-      ]
+      ],
+      "badgeText": "الدليل السريع"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Image to PDF for Riyadh Users",
-      "content": "Photographers and designers in Riyadh use our tool to package portfolios without cloud uploads."
+      "type": "image_geo_targeting",
+      "title": "معالجة محلية آمنة بنسبة 100%",
+      "content": "يتم تنفيذ جميع العمليات مباشرة على جهازك المحلي. نحن نستخدم تقنية WebAssembly المتقدمة لمعالجة مستنداتك دون تحميلها على خوادم خارجية، مما يضمن الخصوصية الكاملة.",
+      "badgeText": "المعالجة المحلية"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Photos Never Leave Your Device",
-      "content": "Personal photos, ID scans, medical images — all converted 100% locally without any server contact."
+      "type": "image_privacy_security",
+      "title": "الصور لا تترك جهازك أبدًا",
+      "content": "الصور الشخصية، ومسح الهوية، والصور الطبية - جميعها تم تحويلها محليًا بنسبة 100% دون أي اتصال بالخادم.",
+      "badgeText": "الأمن أولا"
     },
     {
-      "type": "combiner_performance",
-      "title": "Batch Convert Instantly",
-      "content": "Convert 50 images into a single PDF in under 5 seconds. No upload, no wait."
+      "type": "image_performance",
+      "title": "دفعة تحويل على الفور",
+      "content": "قم بتحويل 50 صورة إلى ملف PDF واحد في أقل من 5 ثوانٍ. لا تحميل، لا الانتظار.",
+      "badgeText": "بسرعة البرق"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are supported?",
-      "a": "JPG, JPEG, PNG, and WebP are all supported."
+      "q": "ما هي تنسيقات الصور المدعومة؟",
+      "a": "يتم دعم كل من JPG، وJPEG، وPNG، وWebP."
     },
     {
-      "q": "Can I combine multiple images?",
-      "a": "Yes, select as many images as you want and reorder them."
+      "q": "هل يمكنني الجمع بين صور متعددة؟",
+      "a": "نعم، حدد العدد الذي تريده من الصور وأعد ترتيبها."
     },
     {
-      "q": "Is image quality preserved?",
-      "a": "Yes, images are embedded at their original resolution."
+      "q": "هل يتم الحفاظ على جودة الصورة؟",
+      "a": "نعم، يتم تضمين الصور بدقتها الأصلية."
     },
     {
-      "q": "Does it strip EXIF metadata?",
-      "a": "You can optionally strip EXIF data for privacy."
+      "q": "هل يقوم بتجريد البيانات التعريفية لـ EXIF؟",
+      "a": "يمكنك اختياريًا تجريد بيانات EXIF ​​من أجل الخصوصية."
     },
     {
-      "q": "Is there a limit on image count?",
-      "a": "نعم، مجاناً تماماً."
+      "q": "هل هناك حد لعدد الصور؟",
+      "a": "لا يوجد حد! اجمع مئات الصور في ملف PDF واحد."
     }
-  ]
+  ],
+  "faqTitle": "الأسئلة المتداولة",
+  "supportCenter": "مركز الدعم"
 }

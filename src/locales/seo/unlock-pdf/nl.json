@@ -1,67 +1,85 @@
 {
-  "title": "Unlock PDF — Remove Password Offline",
-  "h1": "Remove PDF Password Protection Instantly in Your Browser",
-  "description": "Unlock password-protected PDFs locally if you know the password. 100% private. No upload. Perfect for users in Amsterdam.",
+  "title": "PDF ontgrendelen — Wachtwoord offline verwijderen",
+  "h1": "Verwijder PDF-wachtwoordbeveiliging direct in uw browser",
+  "description": "Ontgrendel met een wachtwoord beveiligde PDF's lokaal als u het wachtwoord kent. 100% privé. Geen upload. 100% veilige lokale verwerking.",
+  "buttonText": "Unlock PDF",
+  "badges": [
+    "Wachtwoord verwijderen",
+    "Direct ontgrendelen",
+    "Geen serverlogboeken"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "unlock_hero_features",
-      "title": "Why Unlock PDFs Locally?",
-      "content": "You have the password to your own file. Unlocking it should not require uploading sensitive documents to an external service."
+      "title": "Waarom PDF's lokaal ontgrendelen?",
+      "content": "U heeft het wachtwoord voor uw eigen bestand. Voor het ontgrendelen ervan zouden geen gevoelige documenten naar een externe dienst moeten worden geüpload."
     },
     {
       "type": "unlock_how_to_steps",
-      "title": "How to Unlock a Protected PDF",
+      "title": "Een beveiligde PDF ontgrendelen",
       "steps": [
         {
-          "title": "Open Protected PDF",
-          "description": "Select the password-protected PDF."
+          "title": "Open beveiligde PDF",
+          "description": "Selecteer de met een wachtwoord beveiligde PDF."
         },
         {
-          "title": "Enter Your Password",
-          "description": "Provide the existing password — decryption stays in your browser."
+          "title": "Voer uw wachtwoord in",
+          "description": "Geef het bestaande wachtwoord op; de decodering blijft in uw browser plaatsvinden."
         },
         {
-          "title": "Download Unlocked PDF",
-          "description": "Get your unlocked, fully accessible PDF instantly."
+          "title": "Ontgrendelde PDF downloaden",
+          "description": "Ontvang direct uw ontgrendelde, volledig toegankelijke PDF."
         }
-      ]
+      ],
+      "badgeText": "Beknopte handleiding"
     },
     {
       "type": "unlock_geo_targeting",
-      "title": "Instant PDF Unlocking for Amsterdam Users",
-      "content": "Users in Amsterdam access their own password-protected files without sending decryption keys to any server."
+      "title": "100% veilige lokale verwerking",
+      "content": "Alle bewerkingen worden rechtstreeks op uw lokale apparaat uitgevoerd. We gebruiken geavanceerde WebAssembly-technologie om uw documenten te verwerken zonder ze ooit naar externe servers te uploaden, waardoor volledige privacy wordt gegarandeerd.",
+      "badgeText": "Lokale verwerking"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Your Password Never Leaves the Browser",
-      "content": "The decryption key and your document are processed entirely in browser memory — never transmitted to any server or service."
+      "title": "Uw wachtwoord verlaat nooit de browser",
+      "content": "De decoderingssleutel en uw document worden volledig in het browsergeheugen verwerkt en nooit naar een server of service verzonden.",
+      "badgeText": "Beveiliging eerst"
     },
     {
       "type": "unlock_performance",
-      "title": "Instant Browser-Local Decryption",
-      "content": "AES decryption in your browser takes under a second — far faster than any cloud service with no upload wait."
+      "title": "Directe browser-lokale decodering",
+      "content": "AES-decodering in uw browser duurt minder dan een seconde – veel sneller dan welke cloudservice dan ook zonder wachttijd bij het uploaden.",
+      "badgeText": "Bliksemsnel"
     }
   ],
   "faqs": [
     {
-      "q": "Does it work without the password?",
-      "a": "No, you must know the existing password to unlock."
+      "q": "Werkt het zonder wachtwoord?",
+      "a": "Nee, u moet het bestaande wachtwoord kennen om te ontgrendelen."
     },
     {
-      "q": "Can I unlock permissions-restricted PDFs?",
-      "a": "Yes, permission restrictions are removed after password verification."
+      "q": "Kan ik PDF's met beperkte rechten ontgrendelen?",
+      "a": "Ja, toestemmingsbeperkingen worden verwijderd na wachtwoordverificatie."
     },
     {
-      "q": "Is the decryption process secure?",
-      "a": "All decryption happens in your browser memory; nothing is transmitted."
+      "q": "Is het decoderingsproces veilig?",
+      "a": "Alle decodering gebeurt in het geheugen van uw browser; er wordt niets doorgegeven."
     },
     {
-      "q": "What if the password is wrong?",
-      "a": "You will see an error and can try again with the correct password."
+      "q": "Wat als het wachtwoord verkeerd is?",
+      "a": "U ziet een foutmelding en kunt het opnieuw proberen met het juiste wachtwoord."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, volledig gratis."
+      "q": "Is dit gratis?",
+      "a": "Ja, helemaal gratis."
     }
-  ]
+  ],
+  "faqTitle": "Veelgestelde vragen",
+  "supportCenter": "Ondersteuningscentrum"
 }

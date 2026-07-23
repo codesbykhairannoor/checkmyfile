@@ -1,67 +1,85 @@
 {
-  "title": "CSV to Excel Converter — Offline & Instant",
-  "h1": "Convert CSV Files to Excel Spreadsheets Locally",
-  "description": "Transform .csv files into structured .xlsx spreadsheets entirely in your browser. No upload. Perfect for data teams in Stockholm.",
+  "title": "CSV till Excel Converter — Offline & Direkt",
+  "h1": "Konvertera CSV-filer till Excel-kalkylblad lokalt",
+  "description": "Förvandla .csv-filer till strukturerade .xlsx-kalkylblad helt och hållet i din webbläsare. Ingen uppladdning. 100 % säker lokal bearbetning.",
+  "buttonText": "Convert CSV",
+  "badges": [
+    "UTF-8-stöd",
+    "Flera kolumner",
+    "Omedelbar konvertera"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Convert CSV Offline?",
-      "content": "CSV files often contain customer or financial data. Convert them to Excel locally without exposing your datasets to any cloud service."
+      "type": "csv_excel_hero_features",
+      "title": "Varför konvertera CSV offline?",
+      "content": "CSV-filer innehåller ofta kund- eller finansdata. Konvertera dem till Excel lokalt utan att exponera dina datauppsättningar för någon molntjänst."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert CSV to Excel",
+      "type": "csv_excel_how_to_steps",
+      "title": "Hur man konverterar CSV till Excel",
       "steps": [
         {
-          "title": "Open CSV File",
-          "description": "Select the CSV file to convert."
+          "title": "Öppna CSV-fil",
+          "description": "Välj CSV-filen som ska konverteras."
         },
         {
-          "title": "Preview Data",
-          "description": "See the parsed columns and rows before export."
+          "title": "Förhandsgranska data",
+          "description": "Se de analyserade kolumnerna och raderna före export."
         },
         {
-          "title": "Download .xlsx",
-          "description": "Get your Excel spreadsheet instantly."
+          "title": "Ladda ner .xlsx",
+          "description": "Få ditt Excel-kalkylblad direkt."
         }
-      ]
+      ],
+      "badgeText": "Snabbguide"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Data Tools for Stockholm Analysts",
-      "content": "Data analysts in Stockholm convert CSV exports to Excel without uploading sensitive datasets."
+      "type": "csv_excel_geo_targeting",
+      "title": "100 % säker lokal bearbetning",
+      "content": "Alla operationer utförs direkt på din lokala enhet. Vi använder avancerad WebAssembly-teknik för att behandla dina dokument utan att någonsin ladda upp dem till externa servrar, vilket säkerställer fullständig integritet.",
+      "badgeText": "Lokal bearbetning"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Customer Data Stays on Your Machine",
-      "content": "CRM exports, transaction logs, and survey data converted locally with zero cloud involvement."
+      "type": "csv_excel_privacy_security",
+      "title": "Kunddata finns kvar på din maskin",
+      "content": "CRM-export, transaktionsloggar och undersökningsdata konverterade lokalt utan molninblandning.",
+      "badgeText": "Säkerhet först"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Large CSV Files Instantly",
-      "content": "Convert a 100,000-row CSV to Excel in seconds. All browser-native processing."
+      "type": "csv_excel_performance",
+      "title": "Konvertera stora CSV-filer direkt",
+      "content": "Konvertera en 100 000-rads CSV till Excel på några sekunder. All webbläsarbaserad bearbetning.",
+      "badgeText": "Blixtsnabb"
     }
   ],
   "faqs": [
     {
-      "q": "Is the column structure preserved?",
-      "a": "Yes, all columns are mapped to Excel columns."
+      "q": "Är kolumnstrukturen bevarad?",
+      "a": "Ja, alla kolumner mappas till Excel-kolumner."
     },
     {
-      "q": "Can I convert multiple CSVs?",
-      "a": "Yes, batch conversion to multiple sheets is supported."
+      "q": "Kan jag konvertera flera CSV:er?",
+      "a": "Ja, batchkonvertering till flera ark stöds."
     },
     {
-      "q": "Are special characters handled?",
-      "a": "Yes, UTF-8 and various encodings are supported."
+      "q": "Hanteras specialtecken?",
+      "a": "Ja, UTF-8 och olika kodningar stöds."
     },
     {
-      "q": "Can I set delimiters?",
-      "a": "Yes, comma, semicolon, and tab delimiters are supported."
+      "q": "Kan jag ställa in avgränsare?",
+      "a": "Ja, kommatecken, semikolon och tabbavgränsare stöds."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, helt gratis."
+      "q": "Är detta gratis?",
+      "a": "Ja, alltid gratis."
     }
-  ]
+  ],
+  "faqTitle": "Vanliga frågor",
+  "supportCenter": "Supportcenter"
 }

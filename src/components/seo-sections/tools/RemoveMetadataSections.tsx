@@ -1,140 +1,139 @@
-/**
- * remove-pdf-metadata — "Cleanse" Sections
- * Theme: Slate + Cyan, data cleansing/scrubbing aesthetic
- * Every section is UNIQUE to this tool only.
- */
+// @ts-nocheck
 import React from 'react';
+import { Eraser, FileX, Trash2, MapPin, Shield, Zap, CheckCircle2, UserX, ScanEye, EyeOff } from 'lucide-react';
 import type { SectionProps } from '../types';
-import { Tag, Eraser } from 'lucide-react';
 
-const METADATA_TYPES = ['Author', 'Company', 'Creator Software', 'Last Modified By', 'GPS Location', 'Revision History', 'Custom Properties'];
-
-export const MetadataHeroSection: React.FC<SectionProps> = ({ section, flipLayout }) => (
-  <section className="seo-section metadata-hero" style={{ padding: '80px 24px', margin: '40px 0', borderBottom: '1px solid var(--border-color)' }}>
-    <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', flexDirection: flipLayout ? 'row-reverse' : 'row', flexWrap: 'wrap', gap: 48, alignItems: 'center' }}>
-      <div style={{ flex: '1 1 360px' }}>
-        <div style={{ display: 'inline-flex', padding: '8px 18px', background: 'rgba(6,182,212,0.1)', borderRadius: 100, color: '#06b6d4', fontWeight: 700, fontSize: '0.85rem', marginBottom: 24, gap: 8, alignItems: 'center' }}>
-          <Eraser size={14} /> Deep Metadata Scrubber
-        </div>
-        <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', fontWeight: 900, marginBottom: 20, color: 'var(--text-main)', lineHeight: 1.15 }}>{section.title}</h2>
-        <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>{section.content}</p>
+export const MetadataHeroSection: React.FC<SectionProps> = ({ section, badges, stats, buttonText }) => (
+  <section className="seo-section hero" style={{ padding: '100px 24px', margin: '80px 0 60px', background: 'var(--bg-card)', borderRadius: 40, border: '1px solid var(--border-color)', position: 'relative', overflow: 'hidden' }}>
+    <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', flexWrap: 'wrap-reverse', gap: 64, alignItems: 'center', position: 'relative', zIndex: 1 }}>
+      <div style={{ flex: '1 1 500px', display: 'flex', justifyContent: 'center' }}>
+         <div style={{ position: 'relative', width: 340, height: 400 }}>
+            {/* The Document */}
+            <div style={{ position: 'absolute', top: 40, left: '50%', transform: 'translateX(-50%)', width: 240, height: 320, background: 'var(--bg-app)', border: '1px solid var(--border-color)', borderRadius: 16, boxShadow: '0 20px 50px rgba(0,0,0,0.1)' }}>
+               {/* Metadata Tags */}
+               <div style={{ position: 'absolute', top: 40, right: -40, background: 'var(--bg-card)', padding: '8px 16px', borderRadius: 100, border: '1px solid var(--brand-primary)', color: 'var(--brand-primary)', fontSize: '0.8rem', fontWeight: 700, display: 'flex', gap: 6, alignItems: 'center', animation: 'fallOff 3s infinite', boxShadow: '0 5px 15px rgba(225, 29, 72, 0.2)' }}>
+                  <UserX size={14} /> Author: John Doe
+               </div>
+               <div style={{ position: 'absolute', top: 100, left: -40, background: 'var(--bg-card)', padding: '8px 16px', borderRadius: 100, border: '1px solid var(--brand-primary)', color: 'var(--brand-primary)', fontSize: '0.8rem', fontWeight: 700, display: 'flex', gap: 6, alignItems: 'center', animation: 'fallOff 3s infinite 1s', boxShadow: '0 5px 15px rgba(225, 29, 72, 0.2)' }}>
+                  <MapPin size={14} /> GPS: 40.71, -74.00
+               </div>
+               <div style={{ position: 'absolute', bottom: 80, right: -20, background: 'var(--bg-card)', padding: '8px 16px', borderRadius: 100, border: '1px solid var(--brand-primary)', color: 'var(--brand-primary)', fontSize: '0.8rem', fontWeight: 700, display: 'flex', gap: 6, alignItems: 'center', animation: 'fallOff 3s infinite 2s', boxShadow: '0 5px 15px rgba(225, 29, 72, 0.2)' }}>
+                  <ScanEye size={14} /> Edits: 14
+               </div>
+               
+               {/* Clean Doc Content */}
+               <div style={{ padding: 24, display: 'flex', flexDirection: 'column', gap: 12, height: '100%' }}>
+                  <div style={{ height: 16, background: 'var(--border-color)', width: '80%', borderRadius: 8 }} />
+                  <div style={{ height: 16, background: 'var(--border-color)', width: '100%', borderRadius: 8 }} />
+                  <div style={{ height: 16, background: 'var(--border-color)', width: '90%', borderRadius: 8 }} />
+                  <div style={{ height: 16, background: 'var(--border-color)', width: '70%', borderRadius: 8 }} />
+               </div>
+            </div>
+            
+            {/* The Eraser Scanner */}
+            <div style={{ position: 'absolute', top: 20, left: '10%', right: '10%', height: 8, background: 'var(--brand-gradient)', borderRadius: 4, boxShadow: '0 0 20px var(--brand-primary)', animation: 'eraseScan 3s ease-in-out infinite' }}>
+               <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 48, height: 48, background: 'var(--bg-card)', borderRadius: '50%', border: '2px solid var(--brand-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--brand-primary)' }}>
+                 <Eraser size={24} />
+               </div>
+            </div>
+         </div>
+         <style>{`
+            @keyframes eraseScan { 0% { top: 20px; } 50% { top: 360px; } 100% { top: 20px; } }
+            @keyframes fallOff { 0% { transform: translateY(0) rotate(0deg); opacity: 1; } 50% { transform: translateY(50px) rotate(10deg); opacity: 0; } 100% { transform: translateY(0) rotate(0deg); opacity: 0; } }
+         `}</style>
       </div>
-      {/* Metadata tag strip animation visual */}
-      <div style={{ flex: '1 1 300px', display: 'flex', flexWrap: 'wrap', gap: 8, alignContent: 'flex-start' }}>
-        {METADATA_TYPES.map((tag, i) => (
-          <div key={tag} style={{
-            padding: '6px 12px',
-            background: i < 4 ? 'rgba(6,182,212,0.08)' : 'rgba(239,68,68,0.07)',
-            border: `1px solid ${i < 4 ? 'rgba(6,182,212,0.25)' : 'rgba(239,68,68,0.2)'}`,
-            borderRadius: 100,
-            fontSize: '0.8rem',
-            fontWeight: 600,
-            color: i < 4 ? '#0891b2' : '#dc2626',
-            display: 'flex', alignItems: 'center', gap: 6,
-            textDecoration: i >= 4 ? 'line-through' : 'none',
-            opacity: i >= 4 ? 0.6 : 1,
-          }}>
-            <Tag size={10} /> {tag}
-          </div>
-        ))}
-        <div style={{ padding: '6px 12px', background: 'rgba(16,185,129,0.1)', border: '1px solid rgba(16,185,129,0.3)', borderRadius: 100, fontSize: '0.8rem', fontWeight: 700, color: '#059669', display: 'flex', alignItems: 'center', gap: 6 }}>
-          ✓ All Stripped
+      
+      <div style={{ flex: '1 1 500px' }}>
+        <div style={{ display: 'inline-flex', padding: '10px 20px', background: 'rgba(225, 29, 72, 0.1)', borderRadius: 100, color: 'var(--brand-primary)', fontWeight: 700, fontSize: '0.9rem', marginBottom: 24, gap: 8, alignItems: 'center' }}>
+          <Eraser size={16} /> Privacy Cleanser
         </div>
+        <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, marginBottom: 24, color: 'var(--text-main)', letterSpacing: '-0.03em', lineHeight: 1.05 }}>{section.title}</h2>
+        <p style={{ fontSize: 'clamp(1.05rem, 2vw, 1.25rem)', color: 'var(--text-muted)', lineHeight: 1.8 }}>{section.content}</p>
       </div>
     </div>
   </section>
 );
 
-export const MetadataHowToSection: React.FC<SectionProps> = ({ section }) => (
-  <section className="seo-section metadata-howto" style={{ padding: '80px 24px', margin: '40px 0' }}>
-    <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)', textAlign: 'center' }}>{section.title}</h2>
-    <p style={{ textAlign: 'center', color: 'var(--text-muted)', marginBottom: 60, maxWidth: 600, margin: '0 auto 60px' }}>Before and after — see exactly what hidden metadata gets removed.</p>
-    <div style={{ maxWidth: 900, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 28 }}>
-      {/* Before card */}
-      <div style={{ padding: 28, background: 'rgba(239,68,68,0.04)', border: '2px solid rgba(239,68,68,0.15)', borderRadius: 24 }}>
-        <div style={{ fontWeight: 800, color: '#dc2626', marginBottom: 20, fontSize: '0.9rem', letterSpacing: '0.06em' }}>❌ BEFORE — Metadata Exposed</div>
-        {['Author: John Smith', 'Company: Acme Corp', 'Last Edit: 2024-11-12', 'GPS: 40.7128° N, 74.0060°'].map(item => (
-          <div key={item} style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: 8, display: 'flex', gap: 6 }}>
-            <span style={{ color: '#ef4444' }}>⚠</span> {item}
+export const MetadataHowToSection: React.FC<SectionProps> = ({ section, badges, stats, buttonText }) => (
+  <section className="seo-section how-to" style={{ padding: '120px 24px', background: 'var(--bg-app)', position: 'relative' }}>
+    <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, textAlign: 'center', marginBottom: 80, color: 'var(--text-main)', letterSpacing: '-0.03em' }}>{section.title}</h2>
+    <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 24 }}>
+      {section.steps?.map((step: any, i: number) => (
+        <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 32, padding: 40, background: 'var(--bg-card)', borderRadius: 32, border: '1px solid var(--border-color)', position: 'relative', overflow: 'hidden' }} className="hover-lift">
+          <div style={{ width: 80, height: 80, borderRadius: 24, background: 'var(--brand-gradient)', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2rem', fontWeight: 900, flexShrink: 0, boxShadow: '0 10px 20px rgba(225, 29, 72, 0.3)' }}>
+            0{i + 1}
           </div>
-        ))}
-      </div>
-      {/* How to steps */}
-      {section.steps?.map((step, i) => (
-        <div key={i} style={{ padding: 28, background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: 24 }}>
-          <div style={{ width: 36, height: 36, borderRadius: '50%', background: '#06b6d4', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 900, marginBottom: 16 }}>{i + 1}</div>
-          <h3 style={{ fontSize: '1.05rem', fontWeight: 700, marginBottom: 8, color: 'var(--text-main)' }}>{step.title}</h3>
-          <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>{step.description}</p>
+          <div style={{ flex: 1 }}>
+             <h3 style={{ fontSize: 'clamp(1.25rem, 3vw, 1.5rem)', fontWeight: 800, marginBottom: 12, color: 'var(--text-main)', letterSpacing: '-0.02em' }}>
+               {step.title}
+             </h3>
+             <p style={{ color: 'var(--text-muted)', lineHeight: 1.7, fontSize: 'clamp(1.05rem, 2vw, 1.25rem)' }}>{step.description}</p>
+          </div>
         </div>
       ))}
-      {/* After card */}
-      <div style={{ padding: 28, background: 'rgba(6,182,212,0.05)', border: '2px solid rgba(6,182,212,0.2)', borderRadius: 24 }}>
-        <div style={{ fontWeight: 800, color: '#0891b2', marginBottom: 20, fontSize: '0.9rem', letterSpacing: '0.06em' }}>✅ AFTER — Completely Clean</div>
-        {['Author: (removed)', 'Company: (removed)', 'Last Edit: (removed)', 'GPS: (removed)'].map(item => (
-          <div key={item} style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: 8, display: 'flex', gap: 6 }}>
-            <span style={{ color: '#06b6d4' }}>✓</span> {item}
-          </div>
-        ))}
+    </div>
+  </section>
+);
+
+export const MetadataGeoSection: React.FC<SectionProps> = ({ section, badges, stats, buttonText }) => (
+  <section className="seo-section geo" style={{ padding: '120px 24px', background: 'var(--bg-card)', position: 'relative', overflow: 'hidden' }}>
+    <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: 64, alignItems: 'center', position: 'relative', zIndex: 1 }}>
+      <div style={{ flex: '1 1 500px' }}>
+        <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '6px 16px', background: 'rgba(225, 29, 72, 0.1)', color: 'var(--brand-primary)', borderRadius: 9999, fontWeight: 700, fontSize: '0.75rem', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 32, border: '1px solid rgba(225, 29, 72, 0.2)' }}>
+          <MapPin size={14} /> {section.badgeText || 'Local Processing'}
+        </div>
+        <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, marginBottom: 32, color: 'var(--text-main)', letterSpacing: '-0.03em', lineHeight: 1.05 }}>{section.title}</h2>
+        <p style={{ fontSize: 'clamp(1.05rem, 2vw, 1.25rem)', color: 'var(--text-muted)', fontWeight: 500, lineHeight: 1.7 }}>{section.content}</p>
+      </div>
+      <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}>
+         <div style={{ width: '100%', maxWidth: 400, padding: 48, borderRadius: 32, background: 'var(--bg-app)', border: '1px solid var(--border-color)', position: 'relative' }} className="hover-lift">
+            <EyeOff size={48} color="var(--brand-primary)" style={{ marginBottom: 24 }} />
+            <h3 style={{ fontSize: 'clamp(1.25rem, 3vw, 1.5rem)', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)' }}>Go Anonymous</h3>
+            <p style={{ fontSize: 'clamp(1.05rem, 2vw, 1.25rem)', color: 'var(--text-muted)', lineHeight: 1.7 }}>Make sure nobody can track who created, edited, or saved your PDF file.</p>
+         </div>
       </div>
     </div>
   </section>
 );
 
-export const MetadataGeoSection: React.FC<SectionProps> = ({ section }) => (
-  <section className="seo-section metadata-geo" style={{ padding: '80px 24px', margin: '40px 0', borderLeft: '6px solid #06b6d4', paddingLeft: 40, background: 'linear-gradient(to right, rgba(6,182,212,0.05), transparent)', borderRadius: '0 24px 24px 0' }}>
-    <div style={{ maxWidth: 800 }}>
-      <Eraser size={48} color="#06b6d4" style={{ marginBottom: 20 }} />
-      <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)' }}>{section.title}</h2>
-      <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>{section.content}</p>
-    </div>
-  </section>
-);
-
-export const MetadataPrivacySection: React.FC<SectionProps> = ({ section }) => (
-  <section className="seo-section metadata-privacy" style={{ padding: '80px 24px', margin: '60px 0', background: 'var(--bg-card)', borderRadius: 32 }}>
-    <div style={{ maxWidth: 900, margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: 48, alignItems: 'center' }}>
-      <div style={{ flex: '1 1 360px' }}>
-        <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)' }}>{section.title}</h2>
-        <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>{section.content}</p>
-      </div>
-      <div style={{ flex: '1 1 280px', display: 'flex', flexDirection: 'column', gap: 12 }}>
-        {['No metadata ever leaves your device', 'XMP, EXIF, and IPTC all stripped', 'Author & company names erased', 'GPS coordinates permanently removed', 'Editing history fully deleted'].map(item => (
-          <div key={item} style={{ display: 'flex', alignItems: 'center', gap: 10, fontSize: '0.9rem', color: 'var(--text-main)' }}>
-            <div style={{ width: 8, height: 8, borderRadius: '50%', background: '#06b6d4', flexShrink: 0 }} />
-            {item}
-          </div>
-        ))}
+export const MetadataPrivacySection: React.FC<SectionProps> = ({ section, badges, stats, buttonText }) => (
+  <section className="seo-section privacy" style={{ padding: '120px 24px', background: 'var(--bg-app)', position: 'relative', overflow: 'hidden' }}>
+    <div style={{ maxWidth: 1000, margin: '0 auto', textAlign: 'center', position: 'relative', zIndex: 1 }}>
+      <div style={{ background: 'var(--bg-card)', borderRadius: 40, padding: '80px 48px', border: '1px solid var(--border-color)', boxShadow: '0 20px 40px rgba(0,0,0,0.05)' }}>
+        <div style={{ width: 80, height: 80, margin: '0 auto 32px', borderRadius: 24, background: 'var(--bg-app)', border: '2px solid var(--border-color)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <Shield size={40} color="var(--brand-primary)" />
+        </div>
+        <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, marginBottom: 32, color: 'var(--text-main)', letterSpacing: '-0.03em', lineHeight: 1.05 }}>{section.title}</h2>
+        <p style={{ fontSize: 'clamp(1.05rem, 2vw, 1.25rem)', color: 'var(--text-muted)', fontWeight: 500, lineHeight: 1.7, maxWidth: 800, margin: '0 auto' }}>{section.content}</p>
       </div>
     </div>
   </section>
 );
 
-export const MetadataPerformanceSection: React.FC<SectionProps> = ({ section }) => (
-  <section className="seo-section metadata-performance" style={{ padding: '80px 24px', margin: '40px 0' }}>
-    <div style={{ maxWidth: 900, margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: 48, alignItems: 'center' }}>
-      <div style={{ flex: '1 1 360px' }}>
-        <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)' }}>{section.title}</h2>
-        <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>{section.content}</p>
-      </div>
-      {/* File size comparison */}
-      <div style={{ flex: '1 1 280px', display: 'flex', flexDirection: 'column', gap: 20 }}>
-        <div style={{ fontWeight: 700, fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: -4 }}>TYPICAL RESULTS:</div>
-        {[
-          { label: 'Before stripping', val: '2.4 MB', w: 85, color: '#64748b' },
-          { label: 'After stripping', val: '2.1 MB', w: 70, color: '#06b6d4' },
-        ].map(({ label, val, w, color }) => (
-          <div key={label}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8, fontSize: '0.9rem' }}>
-              <span style={{ color: 'var(--text-main)', fontWeight: 600 }}>{label}</span>
-              <span style={{ color, fontWeight: 800 }}>{val}</span>
+export const MetadataPerformanceSection: React.FC<SectionProps> = ({ section, badges, stats, buttonText }) => (
+  <section className="seo-section performance" style={{ padding: '120px 24px', background: 'var(--bg-card)', position: 'relative', overflow: 'hidden' }}>
+    <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', flexWrap: 'wrap-reverse', gap: 64, alignItems: 'center', position: 'relative', zIndex: 1 }}>
+      <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}>
+         <div style={{ width: 280, height: 280, background: 'var(--bg-app)', border: '1px solid var(--border-color)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', boxShadow: '0 20px 50px rgba(0,0,0,0.05)' }}>
+            <Trash2 size={100} color="var(--text-muted)" opacity={0.2} />
+            <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 80, height: 80, background: 'var(--brand-gradient)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', boxShadow: '0 10px 30px rgba(225, 29, 72, 0.3)' }} className="hover-lift">
+              <Zap size={32} />
             </div>
-            <div style={{ height: 10, background: 'var(--bg-card)', borderRadius: 100, border: '1px solid var(--border-color)', overflow: 'hidden' }}>
-              <div style={{ height: '100%', width: `${w}%`, background: color, borderRadius: 100 }} />
+         </div>
+      </div>
+      <div style={{ flex: '1 1 500px' }}>
+        <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '6px 16px', background: 'var(--brand-gradient)', color: '#fff', borderRadius: 9999, fontWeight: 700, fontSize: '0.75rem', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 24 }}>
+          <Zap size={14} /> {section.badgeText || 'Lightning Fast'}
+        </div>
+        <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, marginBottom: 32, color: 'var(--text-main)', letterSpacing: '-0.03em', lineHeight: 1.05 }}>{section.title}</h2>
+        <p style={{ fontSize: 'clamp(1.05rem, 2vw, 1.25rem)', color: 'var(--text-muted)', fontWeight: 500, lineHeight: 1.7, opacity: 0.8, marginBottom: 40 }}>{section.content}</p>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 16 }}>
+          {(badges || ['Author names erased', 'GPS data stripped', 'Edit history deleted']).map((item, i) => (
+            <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '16px 20px', background: 'var(--bg-app)', borderRadius: 16, border: '1px solid var(--border-color)' }}>
+              <CheckCircle2 color="var(--brand-primary)" size={20} style={{ flexShrink: 0 }} />
+              <span style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--text-main)' }}>{item}</span>
             </div>
-          </div>
-        ))}
-        <div style={{ padding: '12px 16px', background: 'rgba(6,182,212,0.08)', border: '1px solid rgba(6,182,212,0.2)', borderRadius: 12, fontSize: '0.9rem', color: '#0891b2', fontWeight: 700, textAlign: 'center' }}>
-          ~15% smaller, fully anonymous
+          ))}
         </div>
       </div>
     </div>

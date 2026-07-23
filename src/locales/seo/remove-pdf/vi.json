@@ -1,0 +1,85 @@
+{
+  "title": "Xóa trang khỏi PDF — Xóa trang PDF ngoại tuyến",
+  "h1": "Xóa trang khỏi PDF ngay lập tức",
+  "description": "Xóa các trang không mong muốn khỏi tệp PDF một cách an toàn bên trong trình duyệt của bạn. Nhanh chóng và hoàn toàn an toàn.",
+  "buttonText": "Remove Pages",
+  "badges": [
+    "Chọn & Xóa",
+    "Trình chỉnh sửa trực quan",
+    "Độ trễ bằng không"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "remove_hero_features",
+      "title": "Tại sao xóa trang cục bộ?",
+      "content": "Việc xóa các trang nhạy cảm hoặc không cần thiết khỏi tài liệu của bạn phải được thực hiện trên thiết bị của bạn chứ không phải máy chủ. Chúng tôi đảm bảo sự riêng tư 100%."
+    },
+    {
+      "type": "remove_how_to_steps",
+      "title": "Cách xóa trang PDF",
+      "steps": [
+        {
+          "title": "Mở PDF",
+          "description": "Tải tệp PDF bạn muốn dọn dẹp."
+        },
+        {
+          "title": "Chọn trang cần xóa",
+          "description": "Di chuột qua các trang và nhấp vào biểu tượng thùng rác để đánh dấu chúng để xóa."
+        },
+        {
+          "title": "Xuất PDF sạch",
+          "description": "Tải xuống bản PDF mới của bạn mà không có các trang đã bị xóa."
+        }
+      ],
+      "badgeText": "Hướng dẫn nhanh"
+    },
+    {
+      "type": "remove_geo_targeting",
+      "title": "Xử lý cục bộ an toàn 100%",
+      "content": "Tất cả các hoạt động được thực hiện trực tiếp trên thiết bị cục bộ của bạn. Chúng tôi sử dụng công nghệ WebAssembly tiên tiến để xử lý tài liệu của bạn mà không cần tải chúng lên máy chủ bên ngoài, đảm bảo quyền riêng tư hoàn toàn.",
+      "badgeText": "Xử lý cục bộ"
+    },
+    {
+      "type": "remove_privacy_security",
+      "title": "Xóa hoàn toàn quyền riêng tư",
+      "content": "Khi bạn xóa một trang, trang đó sẽ bị xóa vĩnh viễn khỏi tài liệu trong bộ nhớ trình duyệt của bạn trước khi lưu.",
+      "badgeText": "Bảo mật là trên hết"
+    },
+    {
+      "type": "remove_performance",
+      "title": "Xóa trang tức thì",
+      "content": "Việc trích xuất và xóa các trang từ tài liệu 1000 trang chỉ mất một phần nghìn giây bằng công cụ WASM được tối ưu hóa của chúng tôi.",
+      "badgeText": "Nhanh như chớp"
+    }
+  ],
+  "faqTitle": "Câu hỏi thường gặp",
+  "faqs": [
+    {
+      "q": "Các trang đã xóa có thể phục hồi được không?",
+      "a": "Sau khi bạn tải xuống bản PDF mới, các trang đã xóa sẽ bị xóa vĩnh viễn khỏi tệp đó. Tập tin gốc của bạn vẫn còn nguyên."
+    },
+    {
+      "q": "Tôi có cần tải lên bản PDF của mình không?",
+      "a": "Không. Toàn bộ quá trình xóa trang diễn ra cục bộ trong trình duyệt web của bạn."
+    },
+    {
+      "q": "Có giới hạn về số trang tôi có thể xóa không?",
+      "a": "Không, bạn có thể xóa bao nhiêu trang tùy thích, hoàn toàn miễn phí."
+    },
+    {
+      "q": "Bố cục của các trang còn lại có thay đổi không?",
+      "a": "Không, các trang còn lại sẽ giữ nguyên định dạng và bố cục ban đầu."
+    },
+    {
+      "q": "Tôi có thể chọn nhiều trang cùng một lúc không?",
+      "a": "Có, bạn có thể nhấp vào nhiều trang để đánh dấu tất cả để xóa cùng một lúc."
+    }
+  ],
+  "supportCenter": "Trung tâm hỗ trợ"
+}

@@ -1,67 +1,85 @@
 {
-  "title": "Reverse PDF — Flip Page Order Offline",
-  "h1": "Reverse the Page Order of Any PDF Locally",
-  "description": "Flip the page sequence of PDF documents entirely in your browser. No upload, instant result. Great for users in Bratislava.",
+  "title": "Obrátené PDF — Prevrátenie poradia strán offline",
+  "h1": "Obráťte poradie strán ľubovoľného súboru PDF lokálne",
+  "description": "V prehliadači úplne preklopte poradie strán dokumentov PDF. Žiadne nahrávanie, okamžitý výsledok. 100% bezpečné lokálne spracovanie.",
+  "buttonText": "Reverse Order",
+  "badges": [
+    "Obrátiť všetky strany",
+    "Opraviť skeny",
+    "Jedno kliknutie"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Reverse PDF Page Order Offline?",
-      "content": "When a scanner outputs pages in reverse, you need a quick local fix — not a cloud upload of your entire document."
+      "type": "reverse_hero_features",
+      "title": "Prečo obrátiť poradie stránok PDF offline?",
+      "content": "Keď skener vytlačí strany opačne, potrebujete rýchlu lokálnu opravu – nie nahranie celého dokumentu do cloudu."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Reverse PDF Page Order",
+      "type": "reverse_how_to_steps",
+      "title": "Ako zmeniť poradie stránok PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF with incorrect page order."
+          "title": "Otvoriť PDF",
+          "description": "Vyberte súbor PDF s nesprávnym poradím strán."
         },
         {
-          "title": "Confirm Reversal",
-          "description": "Preview the new first and last page."
+          "title": "Potvrdiť zrušenie",
+          "description": "Ukážka novej prvej a poslednej strany."
         },
         {
-          "title": "Download Reversed PDF",
-          "description": "Get the reordered PDF instantly."
+          "title": "Stiahnuť obrátené PDF",
+          "description": "Okamžite získajte upravené PDF."
         }
-      ]
+      ],
+      "badgeText": "Rýchly sprievodca"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Page Order Fix for Bratislava Users",
-      "content": "Office users in Bratislava fix scanner reversal issues instantly without cloud uploads."
+      "type": "reverse_geo_targeting",
+      "title": "100% bezpečné miestne spracovanie",
+      "content": "Všetky operácie sa vykonávajú priamo na vašom lokálnom zariadení. Používame pokročilú technológiu WebAssembly na spracovanie vašich dokumentov bez ich nahrávania na externé servery, čím zaisťujeme úplné súkromie.",
+      "badgeText": "Miestne spracovanie"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Documents Never Leave Your Device",
-      "content": "Reversed contracts, reports, and records are processed entirely in browser memory."
+      "type": "reverse_privacy_security",
+      "title": "Dokumenty nikdy neopúšťajú vaše zariadenie",
+      "content": "Obrátené zmluvy, správy a záznamy sú spracované výlučne v pamäti prehliadača.",
+      "badgeText": "Bezpečnosť na prvom mieste"
     },
     {
-      "type": "transform_performance",
-      "title": "Reverse Any PDF in Seconds",
-      "content": "Reversing a 1000-page document takes milliseconds. All in your browser."
+      "type": "reverse_performance",
+      "title": "Obrátiť akýkoľvek súbor PDF za pár sekúnd",
+      "content": "Obrátenie 1000-stranového dokumentu trvá milisekúnd. Všetko vo vašom prehliadači.",
+      "badgeText": "Rýchlosť blesku"
     }
   ],
   "faqs": [
     {
-      "q": "Does this reverse all pages?",
-      "a": "Yes, the full page order is flipped."
+      "q": "Obráti sa tým všetky strany?",
+      "a": "Áno, celé poradie strán sa prevráti."
     },
     {
-      "q": "Can I select a range to reverse?",
-      "a": "Yes, specify start and end pages to reverse selectively."
+      "q": "Môžem vybrať rozsah, ktorý sa má obrátiť?",
+      "a": "Áno, zadajte úvodné a koncové strany, ktoré sa majú selektívne obrátiť."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "No, reversal is a structural operation with no quality loss."
+      "q": "Je ovplyvnená kvalita?",
+      "a": "Nie, reverzácia je štrukturálna operácia bez straty kvality."
     },
     {
-      "q": "Can I undo?",
-      "a": "Apply reversal again to undo."
+      "q": "Môžem vrátiť späť?",
+      "a": "Ak chcete akciu vrátiť späť, znova použite obrátenie."
     },
     {
-      "q": "Is this free?",
-      "a": "Áno, úplne zadarmo."
+      "q": "Je to zadarmo?",
+      "a": "Áno, vždy zadarmo."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
 }

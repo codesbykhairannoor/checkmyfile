@@ -1,67 +1,85 @@
 {
-  "title": "Extract Images from PDF — Offline Extractor",
-  "h1": "Extract All Embedded Images from PDF Files",
-  "description": "Pull out every image from a PDF and download them as PNG or JPG files, all in your browser. No cloud. Ideal for users in Warsaw.",
+  "title": "Wyodrębnij obrazy z pliku PDF — ekstraktor offline",
+  "h1": "Wyodrębnij wszystkie osadzone obrazy z plików PDF",
+  "description": "Wyciągnij każdy obraz z pliku PDF i pobierz go jako plik PNG lub JPG, a wszystko to w przeglądarce. Brak chmury. 100% bezpieczne przetwarzanie lokalne.",
+  "buttonText": "Extract All Images",
+  "badges": [
+    "Zdjęcia produktów",
+    "Poufne diagramy",
+    "Wektory"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract Images Offline?",
-      "content": "PDFs with confidential diagrams or product photos should never be uploaded. Extract images directly in your browser."
+      "type": "extract_images_hero_features",
+      "title": "Po co wyodrębniać obrazy offline?",
+      "content": "Nigdy nie należy przesyłać plików PDF zawierających poufne diagramy lub zdjęcia produktów. Wyodrębnij obrazy bezpośrednio w przeglądarce."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Extract Images from PDF",
+      "type": "extract_images_how_to_steps",
+      "title": "Jak wyodrębnić obrazy z pliku PDF",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Open the PDF containing embedded images."
+          "title": "Załaduj PDF",
+          "description": "Otwórz plik PDF zawierający osadzone obrazy."
         },
         {
-          "title": "Scan for Images",
-          "description": "Our engine locates all embedded image objects."
+          "title": "Skanuj obrazy",
+          "description": "Nasz silnik lokalizuje wszystkie osadzone obiekty obrazu."
         },
         {
-          "title": "Download ZIP",
-          "description": "Get all extracted images in a single ZIP file."
+          "title": "Pobierz ZIP",
+          "description": "Pobierz wszystkie wyodrębnione obrazy w jednym pliku ZIP."
         }
-      ]
+      ],
+      "badgeText": "Krótki przewodnik"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Image Extraction in Warsaw",
-      "content": "Publishers and marketers in Warsaw extract product photos and diagrams from PDFs without cloud uploads."
+      "type": "extract_images_geo_targeting",
+      "title": "100% bezpieczne przetwarzanie lokalne",
+      "content": "Wszystkie operacje wykonywane są bezpośrednio na Twoim urządzeniu lokalnym. Korzystamy z zaawansowanej technologii WebAssembly, aby przetwarzać Twoje dokumenty bez konieczności przesyłania ich na serwery zewnętrzne, zapewniając całkowitą prywatność.",
+      "badgeText": "Przetwarzanie lokalne"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Product Images Stay Confidential",
-      "content": "Unreleased product photos embedded in PDFs extracted locally without any server access."
+      "type": "extract_images_privacy_security",
+      "title": "Zdjęcia produktów Zachowaj poufność",
+      "content": "Niepublikowane zdjęcia produktów osadzone w plikach PDF wyodrębnionych lokalnie bez dostępu do serwera.",
+      "badgeText": "Bezpieczeństwo przede wszystkim"
     },
     {
-      "type": "split_performance",
-      "title": "Extract Hundreds of Images Fast",
-      "content": "Extract 500 images from a PDF in seconds. All native browser processing."
+      "type": "extract_images_performance",
+      "title": "Szybkie wyodrębnianie setek obrazów",
+      "content": "Wyodrębnij 500 obrazów z pliku PDF w ciągu kilku sekund. Całe natywne przetwarzanie przeglądarki.",
+      "badgeText": "Błyskawicznie"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are extracted?",
-      "a": "Images are saved in their original format (PNG, JPG, etc.)."
+      "q": "Jakie formaty obrazów są wyodrębniane?",
+      "a": "Obrazy są zapisywane w oryginalnym formacie (PNG, JPG itp.)."
     },
     {
-      "q": "Are images at full resolution?",
-      "a": "Yes, extracted at the original embedded resolution."
+      "q": "Czy obrazy są w pełnej rozdzielczości?",
+      "a": "Tak, wyodrębnione w oryginalnej, osadzonej rozdzielczości."
     },
     {
-      "q": "Can I choose specific pages?",
-      "a": "Yes, specify which pages to extract images from."
+      "q": "Czy mogę wybrać konkretne strony?",
+      "a": "Tak, określ, z których stron chcesz wyodrębnić obrazy."
     },
     {
-      "q": "Does it extract vector graphics?",
-      "a": "Vector elements are rasterized to PNG/JPG."
+      "q": "Czy wyodrębnia grafikę wektorową?",
+      "a": "Elementy wektorowe są rastrowane do formatu PNG/JPG."
     },
     {
-      "q": "Is this free?",
-      "a": "Tak, całkowicie bezpłatnie."
+      "q": "Czy to jest bezpłatne?",
+      "a": "Tak, zawsze bezpłatnie."
     }
-  ]
+  ],
+  "faqTitle": "Często zadawane pytania",
+  "supportCenter": "Centrum wsparcia"
 }

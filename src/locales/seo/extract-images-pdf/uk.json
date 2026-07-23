@@ -1,67 +1,85 @@
 {
-  "title": "Extract Images from PDF — Offline Extractor",
-  "h1": "Extract All Embedded Images from PDF Files",
-  "description": "Pull out every image from a PDF and download them as PNG or JPG files, all in your browser. No cloud. Ideal for users in Kyiv.",
+  "title": "Видобуток зображень із PDF — Офлайн-екстрактор",
+  "h1": "Витягніть усі вбудовані зображення з PDF-файлів",
+  "description": "Витягніть усі зображення з PDF-файлу та завантажте їх у форматі PNG або JPG у своєму браузері. Без хмари. 100% безпечна локальна обробка.",
+  "buttonText": "Extract All Images",
+  "badges": [
+    "Фотографії продукту",
+    "Конфіденційні діаграми",
+    "Вектори"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract Images Offline?",
-      "content": "PDFs with confidential diagrams or product photos should never be uploaded. Extract images directly in your browser."
+      "type": "extract_images_hero_features",
+      "title": "Навіщо видобувати зображення офлайн?",
+      "content": "Ніколи не слід завантажувати PDF-файли з конфіденційними діаграмами або фотографіями продуктів. Видобувайте зображення безпосередньо у вашому браузері."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Extract Images from PDF",
+      "type": "extract_images_how_to_steps",
+      "title": "Як витягти зображення з PDF",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Open the PDF containing embedded images."
+          "title": "Завантажити PDF",
+          "description": "Відкрийте PDF-файл із вбудованими зображеннями."
         },
         {
-          "title": "Scan for Images",
-          "description": "Our engine locates all embedded image objects."
+          "title": "Сканувати зображення",
+          "description": "Наш механізм знаходить усі вбудовані об’єкти зображення."
         },
         {
-          "title": "Download ZIP",
-          "description": "Get all extracted images in a single ZIP file."
+          "title": "Завантажити ZIP",
+          "description": "Отримайте всі витягнуті зображення в одному файлі ZIP."
         }
-      ]
+      ],
+      "badgeText": "Короткий посібник"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Image Extraction in Kyiv",
-      "content": "Publishers and marketers in Kyiv extract product photos and diagrams from PDFs without cloud uploads."
+      "type": "extract_images_geo_targeting",
+      "title": "100% безпечна локальна обробка",
+      "content": "Усі операції виконуються безпосередньо на локальному пристрої. Ми використовуємо передову технологію WebAssembly для обробки ваших документів, не завантажуючи їх на зовнішні сервери, забезпечуючи повну конфіденційність.",
+      "badgeText": "Локальна обробка"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Product Images Stay Confidential",
-      "content": "Unreleased product photos embedded in PDFs extracted locally without any server access."
+      "type": "extract_images_privacy_security",
+      "title": "Зображення продуктів залишаються конфіденційними",
+      "content": "Неопубліковані фотографії продуктів, вбудовані в PDF-файли, витягнуті локально без доступу до сервера.",
+      "badgeText": "Безпека перш за все"
     },
     {
-      "type": "split_performance",
-      "title": "Extract Hundreds of Images Fast",
-      "content": "Extract 500 images from a PDF in seconds. All native browser processing."
+      "type": "extract_images_performance",
+      "title": "Швидко витягніть сотні зображень",
+      "content": "Витягніть 500 зображень із PDF-файлу за лічені секунди. Вся обробка рідного браузера.",
+      "badgeText": "Блискавичний"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are extracted?",
-      "a": "Images are saved in their original format (PNG, JPG, etc.)."
+      "q": "Які формати зображень витягуються?",
+      "a": "Зображення зберігаються в оригінальному форматі (PNG, JPG тощо)."
     },
     {
-      "q": "Are images at full resolution?",
-      "a": "Yes, extracted at the original embedded resolution."
+      "q": "Зображення мають повну роздільну здатність?",
+      "a": "Так, вилучено з оригінальною вбудованою роздільною здатністю."
     },
     {
-      "q": "Can I choose specific pages?",
-      "a": "Yes, specify which pages to extract images from."
+      "q": "Чи можу я вибрати конкретні сторінки?",
+      "a": "Так, вказати, з яких сторінок видобувати зображення."
     },
     {
-      "q": "Does it extract vector graphics?",
-      "a": "Vector elements are rasterized to PNG/JPG."
+      "q": "Чи витягує векторну графіку?",
+      "a": "Векторні елементи растеризуються у форматі PNG/JPG."
     },
     {
-      "q": "Is this free?",
-      "a": "Так, повністю безкоштовно."
+      "q": "Це безкоштовно?",
+      "a": "Так, завжди безкоштовно."
     }
-  ]
+  ],
+  "faqTitle": "Часті запитання",
+  "supportCenter": "Центр підтримки"
 }

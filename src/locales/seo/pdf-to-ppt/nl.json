@@ -1,67 +1,80 @@
 {
-  "title": "PDF to PowerPoint — Recover Editable Slides",
-  "h1": "Convert PDF to PowerPoint Presentation Offline",
-  "description": "Transform PDF documents back into editable .pptx presentations locally. No cloud needed. Perfect for users in Amsterdam.",
+  "title": "PDF naar PowerPoint — Herstel bewerkbare dia's",
+  "h1": "Converteer PDF naar PowerPoint-presentatie offline",
+  "description": "Transformeer PDF-documenten lokaal terug naar bewerkbare .pptx-presentaties. Geen wolk nodig. Ideaal voor gebruikers in Amsterdam.",
+  "buttonText": "Converteren naar PPT",
+  "badges": [
+    "Bewerkbare dia's",
+    "Presentatie herstel",
+    "Snelle conversie"
+  ],
+  "stats": [
+    "100%",
+    "Lokaal",
+    "0s",
+    "Wachttijd"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF to PowerPoint Offline?",
-      "content": "Recovering slide content from a PDF for editing should not require uploading sensitive decks to a cloud service."
+      "title": "Waarom offline gebruiken?",
+      "content": "Voor het herstellen van dia-inhoud uit een PDF voor bewerking hoeft u geen gevoelige presentaties naar een cloudservice te uploaden."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to PowerPoint",
+      "title": "Hoe te gebruiken",
       "steps": [
         {
-          "title": "Upload PDF",
-          "description": "Select the PDF containing your slide content."
+          "title": "Upload pdf",
+          "description": "Selecteer de PDF met uw dia-inhoud."
         },
         {
-          "title": "Map Pages to Slides",
-          "description": "Each PDF page becomes one editable slide."
+          "title": "Wijs pagina's toe aan dia's",
+          "description": "Elke PDF-pagina wordt één bewerkbare dia."
         },
         {
           "title": "Download .pptx",
-          "description": "Get your fully editable PowerPoint presentation."
+          "description": "Ontvang uw volledig bewerkbare PowerPoint-presentatie."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "Slide Recovery in Amsterdam",
-      "content": "Presenters in Amsterdam use our tool to recover and re-edit presentations from old PDF archives."
+      "title": "Diaherstel in Amsterdam",
+      "content": "Presentatoren in Amsterdam gebruiken onze tool om presentaties uit oude PDF-archieven te herstellen en opnieuw te bewerken."
     },
     {
       "type": "split_privacy_security",
-      "title": "Your Slides Are Never Exposed",
-      "content": "Confidential slide decks recovered and converted without any server interaction."
+      "title": "Uw dia's worden nooit getoond",
+      "content": "Vertrouwelijke slidedecks hersteld en geconverteerd zonder enige serverinteractie."
     },
     {
       "type": "split_performance",
-      "title": "Convert Slides at Lightning Speed",
-      "content": "A 60-slide PDF converted to PowerPoint in under 10 seconds with zero upload time."
+      "title": "Converteer dia's razendsnel",
+      "content": "Een PDF met 60 dia's die in minder dan 10 seconden naar PowerPoint is geconverteerd, zonder uploadtijd."
     }
   ],
   "faqs": [
     {
-      "q": "Are slide layouts preserved?",
-      "a": "Content is mapped to slides; some layout adjustments may be needed."
+      "q": "Blijven dia-indelingen behouden?",
+      "a": "Inhoud wordt toegewezen aan dia's; Mogelijk zijn er enkele lay-outaanpassingen nodig."
     },
     {
-      "q": "Can I edit the slides after?",
-      "a": "Yes, the .pptx file is fully editable in PowerPoint or Google Slides."
+      "q": "Kan ik de dia's achteraf bewerken?",
+      "a": "Ja, het .pptx-bestand is volledig bewerkbaar in PowerPoint of Google Presentaties."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No, convert as many pages as your RAM allows."
+      "q": "Is er een paginalimiet?",
+      "a": "Nee, converteer zoveel pagina's als uw RAM toelaat."
     },
     {
-      "q": "Does it work with image-heavy PDFs?",
-      "a": "Yes, images are embedded in each slide."
+      "q": "Werkt het met PDF's met veel afbeeldingen?",
+      "a": "Ja, er zijn afbeeldingen in elke dia ingesloten."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, volledig gratis."
+      "q": "Is dit gratis?",
+      "a": "Ja, helemaal gratis."
     }
-  ]
+  ],
+  "faqTitle": "Veelgestelde Vragen"
 }

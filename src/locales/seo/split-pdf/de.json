@@ -1,67 +1,85 @@
 {
-  "title": "Split PDF - Extract Pages Securely",
-  "h1": "Split and Extract PDF Pages in Seconds",
-  "description": "Extract specific pages or split a large PDF into multiple files locally in your browser. Perfect for legal professionals in Berlin.",
+  "title": "PDF teilen – Seiten sicher extrahieren",
+  "h1": "Teilen und extrahieren Sie PDF-Seiten in Sekundenschnelle",
+  "description": "Extrahieren Sie bestimmte Seiten oder teilen Sie eine große PDF-Datei lokal in Ihrem Browser in mehrere Dateien auf. Schnell und absolut sicher.",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Split PDFs Locally?",
-      "content": "When dealing with massive legal or corporate documents, extracting a single page shouldn't require uploading a 1GB file. Do it instantly right on your machine."
+      "title": "Warum PDFs lokal teilen?",
+      "content": "Wenn Sie mit umfangreichen juristischen oder Unternehmensdokumenten arbeiten, sollte das Extrahieren einer einzelnen Seite nicht das Hochladen einer 1-GB-Datei erfordern. Machen Sie es sofort direkt auf Ihrem Computer."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Extract Pages",
+      "title": "So extrahieren Sie Seiten",
       "steps": [
         {
-          "title": "Open Document",
-          "description": "Load the multi-page PDF you want to split."
+          "title": "Dokument öffnen",
+          "description": "Laden Sie das mehrseitige PDF, das Sie teilen möchten."
         },
         {
-          "title": "Select Ranges",
-          "description": "Pick specific page numbers or visually select pages to extract."
+          "title": "Wählen Sie Bereiche",
+          "description": "Wählen Sie bestimmte Seitenzahlen aus oder wählen Sie die zu extrahierenden Seiten visuell aus."
         },
         {
-          "title": "Export Zip",
-          "description": "Download your newly split files organized in a ZIP."
+          "title": "Zip exportieren",
+          "description": "Laden Sie Ihre neu aufgeteilten Dateien in einer ZIP-Datei organisiert herunter."
         }
-      ]
+      ],
+      "badgeText": "Kurzanleitung"
     },
     {
       "type": "split_geo_targeting",
-      "title": "The Best Splitter in Berlin, DE-BE",
-      "content": "Whether you are studying in Berlin or working on a tight deadline, extracting pages is now instantaneous."
+      "title": "100 % sichere lokale Verarbeitung",
+      "content": "Alle Vorgänge werden direkt auf Ihrem lokalen Gerät ausgeführt. Wir verwenden fortschrittliche WebAssembly-Technologie, um Ihre Dokumente zu verarbeiten, ohne sie jemals auf externe Server hochzuladen, und gewährleisten so absolute Privatsphäre.",
+      "badgeText": "Lokale Verarbeitung"
     },
     {
       "type": "split_privacy_security",
-      "title": "Total Page Privacy",
-      "content": "Splitting confidential employee records? Rest easy knowing our code executes purely in your local environment."
+      "title": "Gesamter Seiten-Datenschutz",
+      "content": "Vertrauliche Mitarbeiterdaten aufteilen? Seien Sie beruhigt, da Sie wissen, dass unser Code ausschließlich in Ihrer lokalen Umgebung ausgeführt wird.",
+      "badgeText": "Sicherheit geht vor"
     },
     {
       "type": "split_performance",
-      "title": "Zero-Upload Extraction",
-      "content": "Grabbing page 14 from a 2000-page PDF takes milliseconds, skipping the excruciating upload step entirely."
+      "title": "Zero-Upload-Extraktion",
+      "content": "Das Abrufen von Seite 14 aus einem 2000-seitigen PDF dauert Millisekunden und der qualvolle Schritt des Hochladens entfällt vollständig.",
+      "badgeText": "Blitzschnell"
     }
   ],
   "faqs": [
     {
-      "q": "How do I extract just one page?",
-      "a": "Simply click on the page thumbnail you want and hit Export."
+      "q": "Wie extrahiere ich nur eine Seite?",
+      "a": "Klicken Sie einfach auf die Miniaturansicht der gewünschten Seite und klicken Sie auf „Exportieren“."
     },
     {
-      "q": "Can I split the PDF in half?",
-      "a": "Yes, you can specify custom page ranges like 1-10 and 11-20."
+      "q": "Kann ich das PDF in zwei Hälften teilen?",
+      "a": "Ja, Sie können benutzerdefinierte Seitenbereiche wie 1–10 und 11–20 angeben."
     },
     {
-      "q": "Will the extracted pages lose quality?",
-      "a": "No, the splitting process uses binary extraction, preserving 100% of the original quality."
+      "q": "Werden die extrahierten Seiten an Qualität verlieren?",
+      "a": "Nein, der Aufteilungsprozess nutzt die binäre Extraktion, wodurch 100 % der ursprünglichen Qualität erhalten bleibt."
     },
     {
-      "q": "Is my document uploaded when splitting?",
-      "a": "Never. The entire 2000-page document stays strictly in your browser."
+      "q": "Wird mein Dokument beim Teilen hochgeladen?",
+      "a": "Niemals. Das gesamte 2000-seitige Dokument bleibt ausschließlich in Ihrem Browser."
     },
     {
-      "q": "Is there a limit to how many pages I can split?",
-      "a": "No limits! Split as many pages as your computer can handle."
+      "q": "Gibt es eine Begrenzung, wie viele Seiten ich teilen kann?",
+      "a": "Keine Grenzen! Teilen Sie so viele Seiten auf, wie Ihr Computer verarbeiten kann."
     }
-  ]
+  ],
+  "badges": [
+    "Sofortiger Split",
+    "Präziser Bereich",
+    "Keine Grenzen"
+  ],
+  "stats": [
+    "Ultra Fast",
+    "No Upload",
+    "Batch Zip",
+    "Secure"
+  ],
+  "buttonText": "Split PDF",
+  "faqTitle": "Häufig gestellte Fragen",
+  "supportCenter": "Support-Center"
 }

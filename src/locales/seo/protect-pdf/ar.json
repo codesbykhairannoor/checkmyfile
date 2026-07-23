@@ -1,67 +1,85 @@
 {
-  "title": "Password Protect PDF — Secure Files Offline",
-  "h1": "Add Password Protection to PDF Files Instantly",
-  "description": "Encrypt PDF files with AES-256 directly in your browser. Your document never leaves your device. Ideal for users in Riyadh.",
+  "title": "حماية كلمة المرور لملفات PDF — تأمين الملفات دون الاتصال بالإنترنت",
+  "h1": "إضافة حماية بكلمة مرور إلى ملفات PDF على الفور",
+  "description": "قم بتشفير ملفات PDF باستخدام AES-256 مباشرة في متصفحك. المستند الخاص بك لا يترك جهازك أبدًا. معالجة محلية آمنة بنسبة 100%.",
+  "buttonText": "Protect PDF",
+  "badges": [
+    "تشفير AES-256",
+    "كلمة المرور الآمنة",
+    "جانب العميل فقط"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "protect_hero_features",
-      "title": "Why Protect PDFs Locally?",
-      "content": "Adding a password means the file is sensitive. Never upload sensitive files to a cloud encryptor. Ours runs entirely offline with AES-256 encryption."
+      "title": "لماذا حماية ملفات PDF محليا؟",
+      "content": "إضافة كلمة مرور يعني أن الملف حساس. لا تقم مطلقًا بتحميل الملفات الحساسة إلى برنامج تشفير سحابي. يعمل نظامنا دون اتصال بالإنترنت تمامًا باستخدام تشفير AES-256."
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Password Protect a PDF",
+      "title": "كيفية حماية ملف PDF بكلمة مرور",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF you want to lock."
+          "title": "افتح ملف PDF",
+          "description": "حدد ملف PDF الذي تريد قفله."
         },
         {
-          "title": "Set Password",
-          "description": "Choose a strong password for encryption."
+          "title": "تعيين كلمة المرور",
+          "description": "اختر كلمة مرور قوية للتشفير."
         },
         {
-          "title": "Download Protected PDF",
-          "description": "Get your AES-256 encrypted PDF immediately."
+          "title": "تحميل ملف PDF محمي",
+          "description": "احصل على ملف PDF المشفر AES-256 على الفور."
         }
-      ]
+      ],
+      "badgeText": "الدليل السريع"
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Vault-Level PDF Protection for Riyadh",
-      "content": "Legal and finance professionals in Riyadh encrypt documents with AES-256 strength without exposing files to any server."
+      "title": "معالجة محلية آمنة بنسبة 100%",
+      "content": "يتم تنفيذ جميع العمليات مباشرة على جهازك المحلي. نحن نستخدم تقنية WebAssembly المتقدمة لمعالجة مستنداتك دون تحميلها على خوادم خارجية، مما يضمن الخصوصية الكاملة.",
+      "badgeText": "المعالجة المحلية"
     },
     {
       "type": "protect_privacy_security",
-      "title": "AES-256 Encryption — Bank-Grade, Offline",
-      "content": "Military-grade AES-256 encryption runs in your browser. No key is ever transmitted to any server."
+      "title": "تشفير AES-256 — من الدرجة المصرفية، دون اتصال بالإنترنت",
+      "content": "يعمل تشفير AES-256 من الدرجة العسكرية في متصفحك. لا يتم نقل أي مفتاح على الإطلاق إلى أي خادم.",
+      "badgeText": "الأمن أولا"
     },
     {
       "type": "protect_performance",
-      "title": "Encrypt Any PDF in Under 1 Second",
-      "content": "AES-256 processing locally takes milliseconds — no upload, no queue, no wait."
+      "title": "تشفير أي ملف PDF في أقل من ثانية واحدة",
+      "content": "تستغرق معالجة AES-256 محليًا أجزاء من الثانية - بدون تحميل، أو قائمة انتظار، أو انتظار.",
+      "badgeText": "بسرعة البرق"
     }
   ],
   "faqs": [
     {
-      "q": "What encryption standard is used?",
-      "a": "AES-256, the same standard used by banks and governments."
+      "q": "ما هو معيار التشفير المستخدم؟",
+      "a": "AES-256، وهو نفس المعيار الذي تستخدمه البنوك والحكومات."
     },
     {
-      "q": "Can I set different owner and user passwords?",
-      "a": "Yes, you can set both separately."
+      "q": "هل يمكنني تعيين كلمات مرور مختلفة للمالك والمستخدم؟",
+      "a": "نعم، يمكنك ضبط كليهما بشكل منفصل."
     },
     {
-      "q": "Is the original file modified?",
-      "a": "No, a new encrypted copy is created."
+      "q": "هل تم تعديل الملف الأصلي؟",
+      "a": "لا، يتم إنشاء نسخة مشفرة جديدة."
     },
     {
-      "q": "Can I restrict printing or editing?",
-      "a": "Yes, permission restrictions can be set alongside the password."
+      "q": "هل يمكنني تقييد الطباعة أو التحرير؟",
+      "a": "نعم، يمكن تعيين قيود الأذونات بجانب كلمة المرور."
     },
     {
-      "q": "Is this free?",
-      "a": "نعم، مجاناً تماماً."
+      "q": "هل هذا مجاني؟",
+      "a": "نعم، مجاني تماما."
     }
-  ]
+  ],
+  "faqTitle": "الأسئلة المتداولة",
+  "supportCenter": "مركز الدعم"
 }

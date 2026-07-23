@@ -1,67 +1,85 @@
 {
-  "title": "Redact PDF — Permanently Remove Sensitive Data",
-  "h1": "Permanently Redact Sensitive Information from PDFs Offline",
-  "description": "Black out sensitive text and images in PDFs entirely in your browser. No cloud risk. Critical for users in Athens.",
+  "title": "Redact PDF — Μόνιμη κατάργηση ευαίσθητων δεδομένων",
+  "h1": "Μόνιμη επεξεργασία ευαίσθητων πληροφοριών από αρχεία PDF εκτός σύνδεσης",
+  "description": "Μαυρίστε το ευαίσθητο κείμενο και τις εικόνες σε αρχεία PDF εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Κανένας κίνδυνος σύννεφων. 100% ασφαλής τοπική επεξεργασία.",
+  "buttonText": "Redact Text",
+  "badges": [
+    "Μόνιμη Διαγραφή",
+    "Πληροφορίες Blackout",
+    "Ασφαλής Επεξεργασία"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "redact_hero_features",
-      "title": "Why Redact PDFs Locally?",
-      "content": "Redacting means the content is classified. Uploading a document you need to hide defeats the whole purpose. Our tool runs 100% offline."
+      "title": "Γιατί να διορθώσετε τα PDF τοπικά;",
+      "content": "Η διόρθωση σημαίνει ότι το περιεχόμενο ταξινομείται. Η μεταφόρτωση ενός εγγράφου που πρέπει να κρύψετε ακυρώνει τον σκοπό. Το εργαλείο μας λειτουργεί 100% εκτός σύνδεσης."
     },
     {
       "type": "redact_how_to_steps",
-      "title": "How to Permanently Redact a PDF",
+      "title": "Πώς να επεξεργαστείτε μόνιμα ένα PDF",
       "steps": [
         {
-          "title": "Open Sensitive Document",
-          "description": "Load the PDF with data that must be hidden."
+          "title": "Άνοιγμα ευαίσθητου εγγράφου",
+          "description": "Φορτώστε το PDF με δεδομένα που πρέπει να είναι κρυφά."
         },
         {
-          "title": "Mark Redaction Areas",
-          "description": "Draw boxes over content to permanently erase."
+          "title": "Σημειώστε Περιοχές Επεξεργασίας",
+          "description": "Σχεδιάστε πλαίσια πάνω στο περιεχόμενο για μόνιμη διαγραφή."
         },
         {
-          "title": "Apply & Download",
-          "description": "Content is permanently deleted from the PDF structure."
+          "title": "Εφαρμογή & Λήψη",
+          "description": "Το περιεχόμενο διαγράφεται οριστικά από τη δομή PDF."
         }
-      ]
+      ],
+      "badgeText": "Γρήγορος Οδηγός"
     },
     {
       "type": "redact_geo_targeting",
-      "title": "Court-Ready Redaction for Athens Law Firms",
-      "content": "Legal professionals in Athens prepare court documents with permanent, offline redaction that removes data from the PDF structure itself."
+      "title": "100% Ασφαλής Τοπική Επεξεργασία",
+      "content": "Όλες οι λειτουργίες εκτελούνται απευθείας στην τοπική συσκευή σας. Χρησιμοποιούμε προηγμένη τεχνολογία WebAssembly για να επεξεργαζόμαστε τα έγγραφά σας χωρίς ποτέ να τα ανεβάσουμε σε εξωτερικούς διακομιστές, διασφαλίζοντας πλήρες απόρρητο.",
+      "badgeText": "Τοπική Επεξεργασία"
     },
     {
       "type": "redact_privacy_security",
-      "title": "True Permanent Redaction — Not Just Black Boxes",
-      "content": "Unlike tools that merely cover text with black boxes, our redaction permanently deletes the underlying data from the PDF object structure."
+      "title": "Αληθινή μόνιμη επεξεργασία — Όχι μόνο μαύρα κουτιά",
+      "content": "Σε αντίθεση με τα εργαλεία που καλύπτουν απλώς κείμενο με μαύρα κουτιά, η σύνταξη διαγράφει οριστικά τα υποκείμενα δεδομένα από τη δομή του αντικειμένου PDF.",
+      "badgeText": "Πρώτα η ασφάλεια"
     },
     {
       "type": "redact_performance",
-      "title": "Redact Entire Documents Instantly",
-      "content": "Apply hundreds of permanent redactions to large documents in seconds, completely offline."
+      "title": "Διορθώστε ολόκληρα έγγραφα αμέσως",
+      "content": "Εφαρμόστε εκατοντάδες μόνιμες διορθώσεις σε μεγάλα έγγραφα σε δευτερόλεπτα, εντελώς εκτός σύνδεσης.",
+      "badgeText": "Αστραπιαία"
     }
   ],
   "faqs": [
     {
-      "q": "Is the redaction truly permanent?",
-      "a": "Yes, the underlying text and image data is permanently deleted from the PDF structure."
+      "q": "Είναι πραγματικά μόνιμη η επιμέλεια;",
+      "a": "Ναι, τα υποκείμενα δεδομένα κειμένου και εικόνας διαγράφονται οριστικά από τη δομή PDF."
     },
     {
-      "q": "Can I redact images too?",
-      "a": "Yes, both text regions and image areas can be permanently redacted."
+      "q": "Μπορώ να επεξεργαστώ και εικόνες;",
+      "a": "Ναι, τόσο οι περιοχές κειμένου όσο και οι περιοχές εικόνων μπορούν να τροποποιηθούν μόνιμα."
     },
     {
-      "q": "Can I choose black or white cover?",
-      "a": "Yes, pick the redaction style that suits your document."
+      "q": "Μπορώ να διαλέξω μαύρο ή λευκό εξώφυλλο;",
+      "a": "Ναι, επιλέξτε το στυλ επεξεργασίας που ταιριάζει στο έγγραφό σας."
     },
     {
-      "q": "Does this meet legal standards?",
-      "a": "Our redaction removes data at the PDF object level, meeting court requirements."
+      "q": "Πληροί αυτό τα νομικά πρότυπα;",
+      "a": "Η διατύπωσή μας αφαιρεί δεδομένα σε επίπεδο αντικειμένου PDF, πληρώντας τις απαιτήσεις του δικαστηρίου."
     },
     {
-      "q": "Is this free?",
-      "a": "Ναι, εντελώς δωρεάν."
+      "q": "Αυτό είναι δωρεάν;",
+      "a": "Ναι, πάντα δωρεάν."
     }
-  ]
+  ],
+  "faqTitle": "Συχνές Ερωτήσεις",
+  "supportCenter": "Κέντρο Υποστήριξης"
 }

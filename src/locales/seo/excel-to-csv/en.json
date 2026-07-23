@@ -1,15 +1,27 @@
 {
   "title": "Excel to CSV Converter — Export Spreadsheets Offline",
   "h1": "Convert Excel Spreadsheets to CSV Locally",
-  "description": "Export .xlsx files to clean .csv format entirely in your browser. No upload. Ideal for developers in New York.",
+  "description": "Export .xlsx files to clean .csv format entirely in your browser. No upload. 100% secure local processing.",
+  "buttonText": "Convert to CSV",
+  "badges": [
+    "Raw Data",
+    "Database Import",
+    "Fast Export"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
+      "type": "excel_csv_hero_features",
       "title": "Why Export to CSV Offline?",
       "content": "Exporting spreadsheets to CSV for data pipelines should not expose your raw data to any external API."
     },
     {
-      "type": "organizer_how_to_steps",
+      "type": "excel_csv_how_to_steps",
       "title": "How to Convert Excel to CSV",
       "steps": [
         {
@@ -27,17 +39,17 @@
       ]
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Developer Tools for New York",
-      "content": "Developers and data engineers in New York export spreadsheets to CSV for pipelines without cloud intermediaries."
+      "type": "excel_csv_geo_targeting",
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy."
     },
     {
-      "type": "organizer_privacy_security",
+      "type": "excel_csv_privacy_security",
       "title": "Spreadsheet Data Stays Local",
       "content": "Financial models and business data exported to CSV without any server-side processing."
     },
     {
-      "type": "organizer_performance",
+      "type": "excel_csv_performance",
       "title": "Export Any Spreadsheet Instantly",
       "content": "Export a 50,000-row Excel file to CSV in under 1 second. All in-browser."
     }

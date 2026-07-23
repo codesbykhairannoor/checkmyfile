@@ -1,67 +1,85 @@
 {
-  "title": "Add Page Numbers to PDF — Offline Number Stamp",
-  "h1": "Insert Page Numbers into PDF Documents Locally",
-  "description": "Stamp page numbers at the header or footer of your PDF entirely in your browser. No upload. Ideal for users in Jerusalem.",
+  "title": "הוסף מספרי עמודים ל-PDF — חותמת מספר לא מקוון",
+  "h1": "הוסף מספרי עמודים למסמכי PDF באופן מקומי",
+  "description": "חותמת מספרי עמודים בכותרת העליונה או התחתונה של ה-PDF שלך לגמרי בדפדפן שלך. מהיר ומאובטח לחלוטין.",
+  "buttonText": "Add Page Numbers",
+  "badges": [
+    "מיקום מותאם אישית",
+    "כותרת עליונה ותחתונה",
+    "מספור בייטס"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Add Page Numbers Offline?",
-      "content": "Page numbers are a formatting step, not a reason to upload confidential documents to a cloud service."
+      "type": "pagenum_hero_features",
+      "title": "למה להוסיף מספרי עמודים במצב לא מקוון?",
+      "content": "מספרי עמודים הם שלב עיצוב, לא סיבה להעלות מסמכים סודיים לשירות ענן."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Add Page Numbers",
+      "type": "pagenum_how_to_steps",
+      "title": "כיצד להוסיף מספרי עמודים",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to number."
+          "title": "פתח PDF",
+          "description": "בחר את ה-PDF למספר."
         },
         {
-          "title": "Configure Style",
-          "description": "Choose position, format (1/12, Page 1, i, ii…), and font."
+          "title": "הגדר סגנון",
+          "description": "בחר מיקום, פורמט (1/12, עמוד 1, i, ii...) וגופן."
         },
         {
-          "title": "Apply & Download",
-          "description": "Download your paginated PDF instantly."
+          "title": "החל והורד",
+          "description": "הורד את ה-PDF המעוצב שלך באופן מיידי."
         }
-      ]
+      ],
+      "badgeText": "מדריך מהיר"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Page Numbering for Jerusalem Legal Docs",
-      "content": "Legal professionals in Jerusalem number briefs and reports locally without cloud service dependency."
+      "type": "pagenum_geo_targeting",
+      "title": "100% עיבוד מקומי מאובטח",
+      "content": "כל הפעולות מבוצעות ישירות במכשיר המקומי שלך. אנו משתמשים בטכנולוגיית WebAssembly מתקדמת כדי לעבד את המסמכים שלך מבלי להעלות אותם לשרתים חיצוניים, מה שמבטיח פרטיות מלאה.",
+      "badgeText": "עיבוד מקומי"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Internal Documents Stay Numbered & Private",
-      "content": "Add page numbers to contracts and confidential reports without any server involvement."
+      "type": "pagenum_privacy_security",
+      "title": "מסמכים פנימיים נשארים ממוספרים ופרטיים",
+      "content": "הוסף מספרי עמודים לחוזים ולדוחות חסויים ללא כל מעורבות שרת.",
+      "badgeText": "אבטחה תחילה"
     },
     {
-      "type": "organizer_performance",
-      "title": "Number a 1000-Page PDF Instantly",
-      "content": "Stamping page numbers locally takes milliseconds for any size document."
+      "type": "pagenum_performance",
+      "title": "מספר PDF בן 1000 עמודים באופן מיידי",
+      "content": "החתמת מספרי עמודים מקומית אורכת אלפיות שניות עבור כל גודל מסמך.",
+      "badgeText": "מהיר ברק"
     }
   ],
   "faqs": [
     {
-      "q": "What number formats are available?",
-      "a": "Arabic (1, 2, 3), Roman (i, ii, iii), and letter (a, b, c) formats."
+      "q": "אילו פורמטים של מספרים זמינים?",
+      "a": "ערבית (1, 2, 3), רומית (i, ii, iii) ואותיות (a, b, c)."
     },
     {
-      "q": "Can I start from a custom number?",
-      "a": "Yes, set any starting page number."
+      "q": "האם אני יכול להתחיל ממספר מותאם אישית?",
+      "a": "כן, הגדר כל מספר עמוד התחלה."
     },
     {
-      "q": "Can I skip numbering the first page?",
-      "a": "Yes, set the page offset to skip cover pages."
+      "q": "האם אוכל לדלג על מספור העמוד הראשון?",
+      "a": "כן, הגדר את היסט העמוד כדי לדלג על עמודי שער."
     },
     {
-      "q": "Where can I position numbers?",
-      "a": "Header-left, header-center, header-right, and same for footer."
+      "q": "איפה אני יכול למקם מספרים?",
+      "a": "כותרת עליונה-שמאלה, כותרת עליונה במרכז, כותרת עליונה-ימינה, וזהה עבור כותרת תחתונה."
     },
     {
-      "q": "Is this free?",
-      "a": "כן, חינם לחלוטין."
+      "q": "האם זה בחינם?",
+      "a": "כן, תמיד בחינם."
     }
-  ]
+  ],
+  "faqTitle": "שאלות נפוצות",
+  "supportCenter": "מרכז תמיכה"
 }

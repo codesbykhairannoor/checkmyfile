@@ -1,0 +1,85 @@
+{
+  "title": "Oldalak eltávolítása a PDF-ből — PDF-oldalak offline törlése",
+  "h1": "Oldalak azonnali eltávolítása a PDF-ből",
+  "description": "Törölje biztonságosan a nem kívánt oldalakat PDF-fájljából a böngészőben. Gyors és teljesen biztonságos.",
+  "buttonText": "Remove Pages",
+  "badges": [
+    "Kijelölés és törlés",
+    "Vizuális szerkesztő",
+    "Nulla késleltetés"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "remove_hero_features",
+      "title": "Miért távolítsa el az oldalakat helyileg?",
+      "content": "Az érzékeny vagy szükségtelen oldalak törlését a dokumentumból az eszközén kell végrehajtani, nem egy szerveren. 100%-os adatvédelmet biztosítunk."
+    },
+    {
+      "type": "remove_how_to_steps",
+      "title": "PDF-oldalak eltávolítása",
+      "steps": [
+        {
+          "title": "PDF megnyitása",
+          "description": "Töltse be a tisztítani kívánt PDF-fájlt."
+        },
+        {
+          "title": "Válassza ki a törölni kívánt oldalakat",
+          "description": "Vigye az egérmutatót az oldalak fölé, és kattintson a kuka ikonra, hogy megjelölje azokat törlésre."
+        },
+        {
+          "title": "Tiszta PDF exportálása",
+          "description": "Töltse le az új PDF-fájlt a törölt oldalak nélkül."
+        }
+      ],
+      "badgeText": "Gyors útmutató"
+    },
+    {
+      "type": "remove_geo_targeting",
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Minden művelet közvetlenül a helyi eszközön történik. Fejlett WebAssembly technológiát használunk a dokumentumok feldolgozásához anélkül, hogy azokat külső szerverekre feltöltenénk, így biztosítva a teljes adatvédelmet.",
+      "badgeText": "Helyi feldolgozás"
+    },
+    {
+      "type": "remove_privacy_security",
+      "title": "Teljes törlési adatvédelem",
+      "content": "Amikor eltávolít egy oldalt, az véglegesen törlődik a böngésző memóriájában lévő dokumentumból a mentés előtt.",
+      "badgeText": "Első a biztonság"
+    },
+    {
+      "type": "remove_performance",
+      "title": "Azonnali oldaleltávolítás",
+      "content": "Az oldalak kibontása és törlése akár egy 1000 oldalas dokumentumból is ezredmásodperceket vesz igénybe optimalizált WASM motorunk segítségével.",
+      "badgeText": "Villámgyors"
+    }
+  ],
+  "faqTitle": "Gyakran Ismételt Kérdések",
+  "faqs": [
+    {
+      "q": "A törölt oldalak helyreállíthatók?",
+      "a": "Az új PDF letöltése után a törölt oldalak véglegesen eltávolításra kerülnek a fájlból. Az eredeti fájl érintetlen marad."
+    },
+    {
+      "q": "Fel kell töltenem a PDF-et?",
+      "a": "Nem. A teljes oldaleltávolítási folyamat helyileg, a webböngészőben történik."
+    },
+    {
+      "q": "Van korlátozás arra, hogy hány oldalt törölhetek?",
+      "a": "Nem, annyi oldalt törölhet, amennyit csak akar, teljesen ingyenesen."
+    },
+    {
+      "q": "Változik a fennmaradó oldalak elrendezése?",
+      "a": "Nem, a fennmaradó oldalak pontosan megőrzik eredeti formázásukat és elrendezésüket."
+    },
+    {
+      "q": "Kiválaszthatok több oldalt egyszerre?",
+      "a": "Igen, rákattinthat több oldalra, hogy egyszerre megjelölje azokat törlésre."
+    }
+  ],
+  "supportCenter": "Támogatási Központ"
+}

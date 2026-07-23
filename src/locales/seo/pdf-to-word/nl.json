@@ -1,67 +1,80 @@
 {
-  "title": "PDF to Word Converter — Offline & Editable",
-  "h1": "Convert PDF to Editable Word Documents Locally",
-  "description": "Transform PDFs back into .docx files you can edit, right in your browser. No upload needed. Great for users in Amsterdam.",
+  "title": "PDF naar Word-converter - offline en bewerkbaar",
+  "h1": "Converteer PDF lokaal naar bewerkbare Word-documenten",
+  "description": "Transformeer PDF's terug naar .docx-bestanden die u rechtstreeks in uw browser kunt bewerken. Geen upload nodig. Ideaal voor gebruikers in Amsterdam.",
+  "buttonText": "Converteren naar Word",
+  "badges": [
+    "Bewerkbare documenten",
+    "Tekstherstel",
+    "Offline proces"
+  ],
+  "stats": [
+    "100%",
+    "Lokaal",
+    "0s",
+    "Wachttijd"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF Back Offline?",
-      "content": "When you need to edit a PDF, converting it offline keeps your original document confidential."
+      "title": "Waarom offline gebruiken?",
+      "content": "Wanneer u een PDF moet bewerken, blijft uw originele document vertrouwelijk door deze offline te converteren."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Word",
+      "title": "Hoe te gebruiken",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF file you need to convert."
+          "title": "PDF laden",
+          "description": "Selecteer het PDF-bestand dat u wilt converteren."
         },
         {
-          "title": "Detect Text Layers",
-          "description": "Our engine reads text and structure from the PDF."
+          "title": "Tekstlagen detecteren",
+          "description": "Onze engine leest tekst en structuur uit de PDF."
         },
         {
           "title": "Download .docx",
-          "description": "Get your editable Word document ready to modify."
+          "description": "Maak uw bewerkbare Word-document klaar om te wijzigen."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "PDF to Word for Amsterdam Offices",
-      "content": "Office workers in Amsterdam use our tool to recover editable text from PDFs without cloud dependency."
+      "title": "PDF naar Word voor kantoren in Amsterdam",
+      "content": "Kantoormedewerkers in Amsterdam gebruiken onze tool om bewerkbare tekst uit PDF's te herstellen zonder afhankelijkheid van de cloud."
     },
     {
       "type": "split_privacy_security",
-      "title": "Legal Documents Stay Confidential",
-      "content": "Contracts, NDAs, and reports converted back to Word entirely in your browser memory."
+      "title": "Juridische documenten blijven vertrouwelijk",
+      "content": "Contracten, geheimhoudingsverklaringen en rapporten worden volledig in uw browsergeheugen terug naar Word geconverteerd."
     },
     {
       "type": "split_performance",
-      "title": "Recover Editable Text in Seconds",
-      "content": "Extract text from a 50-page PDF in under 3 seconds without uploading a single byte."
+      "title": "Herstel bewerkbare tekst in enkele seconden",
+      "content": "Extraheer tekst uit een pdf van 50 pagina's in minder dan 3 seconden zonder ook maar één byte te uploaden."
     }
   ],
   "faqs": [
     {
-      "q": "Is all text preserved?",
-      "a": "Yes, text from all layers is extracted and formatted."
+      "q": "Blijft alle tekst behouden?",
+      "a": "Ja, tekst uit alle lagen wordt geëxtraheerd en opgemaakt."
     },
     {
-      "q": "Does it work on scanned PDFs?",
-      "a": "For scanned PDFs, use our OCR tool first."
+      "q": "Werkt het op gescande PDF's?",
+      "a": "Gebruik voor gescande PDF's eerst onze OCR-tool."
     },
     {
-      "q": "Are images included in the .docx?",
-      "a": "Yes, embedded images are included in the output."
+      "q": "Zijn afbeeldingen opgenomen in de .docx?",
+      "a": "Ja, ingesloten afbeeldingen zijn opgenomen in de uitvoer."
     },
     {
-      "q": "Can I edit the .docx after?",
-      "a": "Absolutely, the output is a fully editable Word document."
+      "q": "Kan ik de .docx daarna bewerken?",
+      "a": "Absoluut, de uitvoer is een volledig bewerkbaar Word-document."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, volledig gratis."
+      "q": "Is dit gratis?",
+      "a": "Ja, helemaal gratis."
     }
-  ]
+  ],
+  "faqTitle": "Veelgestelde Vragen"
 }

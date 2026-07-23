@@ -2,15 +2,27 @@
   "title": "PDF to Word Converter — Offline & Editable",
   "h1": "Convert PDF to Editable Word Documents Locally",
   "description": "Transform PDFs back into .docx files you can edit, right in your browser. No upload needed. Great for users in Beijing.",
+  "buttonText": "Convert to Word",
+  "badges": [
+    "Editable Documents",
+    "Text Recovery",
+    "Offline Process"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF Back Offline?",
+      "title": "为什么要离线使用？",
       "content": "When you need to edit a PDF, converting it offline keeps your original document confidential."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Word",
+      "title": "如何使用",
       "steps": [
         {
           "title": "Load PDF",
@@ -63,5 +75,6 @@
       "q": "Is this free?",
       "a": "是的，完全免费。"
     }
-  ]
+  ],
+  "faqTitle": "常见问题"
 }

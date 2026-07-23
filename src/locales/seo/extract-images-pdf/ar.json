@@ -1,67 +1,85 @@
 {
-  "title": "Extract Images from PDF — Offline Extractor",
-  "h1": "Extract All Embedded Images from PDF Files",
-  "description": "Pull out every image from a PDF and download them as PNG or JPG files, all in your browser. No cloud. Ideal for users in Riyadh.",
+  "title": "استخراج الصور من PDF — النازع دون اتصال",
+  "h1": "استخراج كافة الصور المضمنة من ملفات PDF",
+  "description": "اسحب كل صورة من ملف PDF وقم بتنزيلها كملفات PNG أو JPG، كل ذلك في متصفحك. لا سحابة. معالجة محلية آمنة بنسبة 100%.",
+  "buttonText": "Extract All Images",
+  "badges": [
+    "صور المنتج",
+    "مخططات سرية",
+    "المتجهات"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract Images Offline?",
-      "content": "PDFs with confidential diagrams or product photos should never be uploaded. Extract images directly in your browser."
+      "type": "extract_images_hero_features",
+      "title": "لماذا استخراج الصور دون اتصال؟",
+      "content": "لا ينبغي أبدًا تحميل ملفات PDF التي تحتوي على مخططات سرية أو صور المنتج. استخراج الصور مباشرة في متصفحك."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Extract Images from PDF",
+      "type": "extract_images_how_to_steps",
+      "title": "كيفية استخراج الصور من ملف PDF",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Open the PDF containing embedded images."
+          "title": "تحميل PDF",
+          "description": "افتح ملف PDF الذي يحتوي على الصور المضمنة."
         },
         {
-          "title": "Scan for Images",
-          "description": "Our engine locates all embedded image objects."
+          "title": "البحث عن الصور",
+          "description": "يقوم محركنا بتحديد موقع كافة كائنات الصورة المضمنة."
         },
         {
-          "title": "Download ZIP",
-          "description": "Get all extracted images in a single ZIP file."
+          "title": "تحميل مضغوط",
+          "description": "احصل على جميع الصور المستخرجة في ملف ZIP واحد."
         }
-      ]
+      ],
+      "badgeText": "الدليل السريع"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Image Extraction in Riyadh",
-      "content": "Publishers and marketers in Riyadh extract product photos and diagrams from PDFs without cloud uploads."
+      "type": "extract_images_geo_targeting",
+      "title": "معالجة محلية آمنة بنسبة 100%",
+      "content": "يتم تنفيذ جميع العمليات مباشرة على جهازك المحلي. نحن نستخدم تقنية WebAssembly المتقدمة لمعالجة مستنداتك دون تحميلها على خوادم خارجية، مما يضمن الخصوصية الكاملة.",
+      "badgeText": "المعالجة المحلية"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Product Images Stay Confidential",
-      "content": "Unreleased product photos embedded in PDFs extracted locally without any server access."
+      "type": "extract_images_privacy_security",
+      "title": "صور المنتج تبقى سرية",
+      "content": "صور المنتج التي لم يتم إصدارها والمضمنة في ملفات PDF المستخرجة محليًا دون أي وصول إلى الخادم.",
+      "badgeText": "الأمن أولا"
     },
     {
-      "type": "split_performance",
-      "title": "Extract Hundreds of Images Fast",
-      "content": "Extract 500 images from a PDF in seconds. All native browser processing."
+      "type": "extract_images_performance",
+      "title": "استخراج مئات الصور بسرعة",
+      "content": "استخراج 500 صورة من ملف PDF في ثواني. جميع معالجة المتصفح الأصلي.",
+      "badgeText": "بسرعة البرق"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are extracted?",
-      "a": "Images are saved in their original format (PNG, JPG, etc.)."
+      "q": "ما هي صيغ الصور التي يتم استخراجها؟",
+      "a": "يتم حفظ الصور بتنسيقها الأصلي (PNG، JPG، وما إلى ذلك)."
     },
     {
-      "q": "Are images at full resolution?",
-      "a": "Yes, extracted at the original embedded resolution."
+      "q": "هل الصور بالدقة الكاملة؟",
+      "a": "نعم، تم استخراجه بالدقة الأصلية المضمنة."
     },
     {
-      "q": "Can I choose specific pages?",
-      "a": "Yes, specify which pages to extract images from."
+      "q": "هل يمكنني اختيار صفحات معينة؟",
+      "a": "نعم، حدد الصفحات التي سيتم استخراج الصور منها."
     },
     {
-      "q": "Does it extract vector graphics?",
-      "a": "Vector elements are rasterized to PNG/JPG."
+      "q": "هل يستخرج الرسومات المتجهة؟",
+      "a": "يتم تنقيط العناصر المتجهة إلى PNG/JPG."
     },
     {
-      "q": "Is this free?",
-      "a": "نعم، مجاناً تماماً."
+      "q": "هل هذا مجاني؟",
+      "a": "نعم، دائما مجانا."
     }
-  ]
+  ],
+  "faqTitle": "الأسئلة المتداولة",
+  "supportCenter": "مركز الدعم"
 }

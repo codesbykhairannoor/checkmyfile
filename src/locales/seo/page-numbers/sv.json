@@ -1,67 +1,85 @@
 {
-  "title": "Add Page Numbers to PDF — Offline Number Stamp",
-  "h1": "Insert Page Numbers into PDF Documents Locally",
-  "description": "Stamp page numbers at the header or footer of your PDF entirely in your browser. No upload. Ideal for users in Stockholm.",
+  "title": "Lägg till sidnummer till PDF — Offlinenummerstämpel",
+  "h1": "Infoga sidnummer i PDF-dokument lokalt",
+  "description": "Stämpla sidnummer i sidhuvudet eller sidfoten i din PDF helt i din webbläsare. Snabbt och helt säkert.",
+  "buttonText": "Add Page Numbers",
+  "badges": [
+    "Anpassad position",
+    "Sidhuvud och sidfot",
+    "Bates numrering"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Add Page Numbers Offline?",
-      "content": "Page numbers are a formatting step, not a reason to upload confidential documents to a cloud service."
+      "type": "pagenum_hero_features",
+      "title": "Varför lägga till sidnummer offline?",
+      "content": "Sidnummer är ett formateringssteg, inte en anledning att ladda upp konfidentiella dokument till en molntjänst."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Add Page Numbers",
+      "type": "pagenum_how_to_steps",
+      "title": "Hur man lägger till sidnummer",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to number."
+          "title": "Öppna PDF",
+          "description": "Välj PDF-filen att numrera."
         },
         {
-          "title": "Configure Style",
-          "description": "Choose position, format (1/12, Page 1, i, ii…), and font."
+          "title": "Konfigurera stil",
+          "description": "Välj position, format (1/12, sida 1, i, ii...) och teckensnitt."
         },
         {
-          "title": "Apply & Download",
-          "description": "Download your paginated PDF instantly."
+          "title": "Ansök och ladda ner",
+          "description": "Ladda ner din paginerade PDF direkt."
         }
-      ]
+      ],
+      "badgeText": "Snabbguide"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Page Numbering for Stockholm Legal Docs",
-      "content": "Legal professionals in Stockholm number briefs and reports locally without cloud service dependency."
+      "type": "pagenum_geo_targeting",
+      "title": "100 % säker lokal bearbetning",
+      "content": "Alla operationer utförs direkt på din lokala enhet. Vi använder avancerad WebAssembly-teknik för att behandla dina dokument utan att någonsin ladda upp dem till externa servrar, vilket säkerställer fullständig integritet.",
+      "badgeText": "Lokal bearbetning"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Internal Documents Stay Numbered & Private",
-      "content": "Add page numbers to contracts and confidential reports without any server involvement."
+      "type": "pagenum_privacy_security",
+      "title": "Interna dokument förblir numrerade och privata",
+      "content": "Lägg till sidnummer i kontrakt och konfidentiella rapporter utan serverinblandning.",
+      "badgeText": "Säkerhet först"
     },
     {
-      "type": "organizer_performance",
-      "title": "Number a 1000-Page PDF Instantly",
-      "content": "Stamping page numbers locally takes milliseconds for any size document."
+      "type": "pagenum_performance",
+      "title": "Numrera en 1000-sidig PDF direkt",
+      "content": "Att stämpla sidnummer lokalt tar millisekunder för dokument i alla storlekar.",
+      "badgeText": "Blixtsnabb"
     }
   ],
   "faqs": [
     {
-      "q": "What number formats are available?",
-      "a": "Arabic (1, 2, 3), Roman (i, ii, iii), and letter (a, b, c) formats."
+      "q": "Vilka talformat finns tillgängliga?",
+      "a": "Arabiska (1, 2, 3), romerska (i, ii, iii) och bokstavsformat (a, b, c)."
     },
     {
-      "q": "Can I start from a custom number?",
-      "a": "Yes, set any starting page number."
+      "q": "Kan jag börja från ett anpassat nummer?",
+      "a": "Ja, ställ in valfritt startsidenummer."
     },
     {
-      "q": "Can I skip numbering the first page?",
-      "a": "Yes, set the page offset to skip cover pages."
+      "q": "Kan jag hoppa över numreringen av första sidan?",
+      "a": "Ja, ställ in sidförskjutningen för att hoppa över försättsblad."
     },
     {
-      "q": "Where can I position numbers?",
-      "a": "Header-left, header-center, header-right, and same for footer."
+      "q": "Var kan jag placera nummer?",
+      "a": "Sidhuvud-vänster, sidhuvud-mitt, sidhuvud-höger och samma sak för sidfot."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, helt gratis."
+      "q": "Är detta gratis?",
+      "a": "Ja, alltid gratis."
     }
-  ]
+  ],
+  "faqTitle": "Vanliga frågor",
+  "supportCenter": "Supportcenter"
 }

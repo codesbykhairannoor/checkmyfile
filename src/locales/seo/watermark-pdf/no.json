@@ -1,67 +1,85 @@
 {
-  "title": "Add Watermark to PDF — Offline Watermarking",
-  "h1": "Stamp PDFs with Text or Image Watermarks Locally",
-  "description": "Add \"CONFIDENTIAL\", logos, or custom text watermarks to PDFs entirely in your browser. No upload. Best for users in Oslo.",
+  "title": "Legg til vannmerke i PDF — Offline vannmerke",
+  "h1": "Stempel PDF-er med tekst- eller bildevannmerker lokalt",
+  "description": "Legg til «KONFIDENSIELL», logoer eller egendefinerte tekstvannmerker til PDF-filer helt i nettleseren din. Ingen opplasting. 100 % sikker lokal behandling.",
+  "buttonText": "Add Watermark",
+  "badges": [
+    "Egendefinert tekst",
+    "Justerbar opasitet",
+    "Merkebeskyttelse"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Watermark PDFs Offline?",
-      "content": "Adding watermarks means your document is sensitive. Never upload draft contracts or confidential reports to a cloud watermarker."
+      "type": "watermark_hero_features",
+      "title": "Hvorfor vannmerke PDF-filer frakoblet?",
+      "content": "Å legge til vannmerker betyr at dokumentet ditt er sensitivt. Last aldri opp utkast til kontrakter eller konfidensielle rapporter til en skyvannmarkør."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Watermark a PDF",
+      "type": "watermark_how_to_steps",
+      "title": "Hvordan vannmerke en PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to watermark."
+          "title": "Åpne PDF",
+          "description": "Velg PDF til vannmerke."
         },
         {
-          "title": "Design Watermark",
-          "description": "Type text or upload a logo image."
+          "title": "Design vannmerke",
+          "description": "Skriv inn tekst eller last opp et logobilde."
         },
         {
-          "title": "Apply & Download",
-          "description": "Get your watermarked PDF in one click."
+          "title": "Bruk og last ned",
+          "description": "Få din vannmerke PDF med ett klikk."
         }
-      ]
+      ],
+      "badgeText": "Hurtigguide"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Document Watermarking in Oslo",
-      "content": "Legal and creative professionals in Oslo stamp documents with watermarks without cloud uploads."
+      "type": "watermark_geo_targeting",
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle operasjoner utføres direkte på din lokale enhet. Vi bruker avansert WebAssembly-teknologi for å behandle dokumentene dine uten å laste dem opp til eksterne servere, noe som sikrer fullstendig personvern.",
+      "badgeText": "Lokal behandling"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Confidential Drafts Stay Private",
-      "content": "Draft contracts and unreleased designs watermarked locally without any server contact."
+      "type": "watermark_privacy_security",
+      "title": "Konfidensielle utkast Forbli private",
+      "content": "Utkast til kontrakter og uutgitte design vannmerket lokalt uten serverkontakt.",
+      "badgeText": "Sikkerhet først"
     },
     {
-      "type": "transform_performance",
-      "title": "Stamp Thousands of Pages Instantly",
-      "content": "Apply watermarks to a 1000-page document in under 3 seconds. All in your browser."
+      "type": "watermark_performance",
+      "title": "Stempler tusenvis av sider umiddelbart",
+      "content": "Påfør vannmerker på et 1000-siders dokument på under 3 sekunder. Alt i nettleseren din.",
+      "badgeText": "Lynrask"
     }
   ],
   "faqs": [
     {
-      "q": "Can I use a logo as a watermark?",
-      "a": "Yes, upload a PNG logo and set transparency."
+      "q": "Kan jeg bruke en logo som vannmerke?",
+      "a": "Ja, last opp en PNG-logo og angi åpenhet."
     },
     {
-      "q": "Can I adjust watermark opacity?",
-      "a": "Yes, from 10% to 100% opacity."
+      "q": "Kan jeg justere vannmerkets opasitet?",
+      "a": "Ja, fra 10 % til 100 % opasitet."
     },
     {
-      "q": "Can I apply it to specific pages only?",
-      "a": "Yes, choose page ranges."
+      "q": "Kan jeg bruke det bare på bestemte sider?",
+      "a": "Ja, velg sideområder."
     },
     {
-      "q": "Is diagonal placement available?",
-      "a": "Yes, rotate watermarks to any angle."
+      "q": "Er diagonal plassering tilgjengelig?",
+      "a": "Ja, roter vannmerker til hvilken som helst vinkel."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, helt gratis."
+      "q": "Er dette gratis?",
+      "a": "Ja, alltid gratis."
     }
-  ]
+  ],
+  "faqTitle": "Ofte stilte spørsmål",
+  "supportCenter": "Støttesenter"
 }

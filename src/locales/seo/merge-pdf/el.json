@@ -1,67 +1,78 @@
 {
-  "title": "Merge PDF - Combine Documents Offline",
-  "h1": "Merge PDF Files Instantly in Your Browser",
-  "description": "Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, perfect for users in Athens.",
+  "title": "Συγχώνευση PDF - Συνδυασμός εγγράφων εκτός σύνδεσης",
+  "h1": "Συγχώνευση αρχείων PDF άμεσα στο πρόγραμμα περιήγησής σας",
+  "description": "Συνδυάστε πολλά αρχεία PDF σε ένα μόνο έγγραφο χρησιμοποιώντας το καθαρό WebAssembly από την πλευρά του πελάτη. Χωρίς μεταφορτώσεις αρχείων, ιδανικό για χρήστες στη Νέα Υόρκη.",
   "sections": [
     {
       "type": "merge_hero_features",
-      "title": "Why Merge PDF Offline?",
-      "content": "Instead of uploading sensitive documents to a server, our Merge PDF tool stitches your pages together directly in your browser. Complete privacy."
+      "title": "Γιατί να συγχωνεύσετε το PDF εκτός σύνδεσης;",
+      "content": "Αντί να μεταφορτώνετε ευαίσθητα έγγραφα σε έναν διακομιστή, το εργαλείο Συγχώνευσης PDF συρράπτει τις σελίδες σας απευθείας στο πρόγραμμα περιήγησής σας. Πλήρης ιδιωτικότητα."
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Merge PDF Files",
+      "title": "Πώς να συγχωνεύσετε αρχεία PDF",
       "steps": [
         {
-          "title": "Add Documents",
-          "description": "Select the PDFs you want to merge together."
+          "title": "Προσθήκη εγγράφων",
+          "description": "Επιλέξτε τα PDF που θέλετε να συγχωνεύσετε."
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop files to get the perfect sequence."
+          "title": "Αναδιάταξη σελίδων",
+          "description": "Σύρετε και αποθέστε αρχεία για να έχετε την τέλεια σειρά."
         },
         {
-          "title": "Merge & Save",
-          "description": "Click merge and download your combined document instantly."
+          "title": "Συγχώνευση & Αποθήκευση",
+          "description": "Κάντε κλικ στη συγχώνευση και κατεβάστε το συνδυασμένο έγγραφό σας αμέσως."
         }
-      ]
+      ],
+      "badgeText": "Γρήγορος Οδηγός"
     },
     {
       "type": "merge_geo_targeting",
-      "title": "Seamless Merging for users in Athens, GR-I",
-      "content": "No matter if you are in Athens or traveling, combining documents takes zero milliseconds of upload time."
+      "title": "100% Ασφαλής Τοπική Επεξεργασία",
+      "content": "Όλες οι λειτουργίες εκτελούνται απευθείας στην τοπική συσκευή σας. Χρησιμοποιούμε προηγμένη τεχνολογία WebAssembly για να επεξεργαζόμαστε τα έγγραφά σας χωρίς ποτέ να τα ανεβάσουμε σε εξωτερικούς διακομιστές, διασφαλίζοντας πλήρες απόρρητο.",
+      "badgeText": "Τοπική Επεξεργασία"
     },
     {
       "type": "merge_privacy_security",
-      "title": "Enterprise-Grade Document Combining",
-      "content": "Merging contracts and invoices? Do it securely with our WASM engine. No traces left behind."
+      "title": "Συνδυασμός εγγράφων επιχείρησης βαθμού",
+      "content": "Συγχώνευση συμβάσεων και τιμολογίων; Κάντε το με ασφάλεια με τον κινητήρα μας WASM. Δεν άφησαν ίχνη πίσω.",
+      "badgeText": "Πρώτα η ασφάλεια"
     },
     {
       "type": "merge_performance",
-      "title": "Instant Combination",
-      "content": "Stitching PDFs locally means you can merge a 500-page document faster than you can upload it."
+      "title": "Στιγμιαίος συνδυασμός",
+      "content": "Η συρραφή αρχείων PDF τοπικά σημαίνει ότι μπορείτε να συγχωνεύσετε ένα έγγραφο 500 σελίδων πιο γρήγορα από ό,τι μπορείτε να το ανεβάσετε.",
+      "badgeText": "Αστραπιαία"
     }
   ],
   "faqs": [
     {
-      "q": "Is merging PDFs completely free?",
-      "a": "Yes! Merge as many files as you want without paying a cent."
+      "q": "Είναι εντελώς δωρεάν η συγχώνευση αρχείων PDF;",
+      "a": "Ναί! Συγχωνεύστε όσα αρχεία θέλετε χωρίς να πληρώσετε ένα σεντ."
     },
     {
-      "q": "Are my merged files uploaded?",
-      "a": "No, all merging happens offline in your browser."
+      "q": "Έχουν μεταφορτωθεί τα συγχωνευμένα αρχεία μου;",
+      "a": "Όχι, όλες οι συγχωνεύσεις γίνονται εκτός σύνδεσης στο πρόγραμμα περιήγησής σας."
     },
     {
-      "q": "Can I reorder the files before merging?",
-      "a": "Yes, just drag and drop the files in the preview window."
+      "q": "Μπορώ να αναδιατάξω τα αρχεία πριν από τη συγχώνευση;",
+      "a": "Ναι, απλώς σύρετε και αποθέστε τα αρχεία στο παράθυρο προεπισκόπησης."
     },
     {
-      "q": "Is there a limit on how many files I can merge?",
-      "a": "No artificial limits! Merge 10 or 100 files depending on your RAM."
+      "q": "Υπάρχει όριο στο πόσα αρχεία μπορώ να συγχωνεύσω;",
+      "a": "Χωρίς τεχνητά όρια! Συγχωνεύστε 10 ή 100 αρχεία ανάλογα με τη μνήμη RAM σας."
     },
     {
-      "q": "Does merging ruin the formatting?",
-      "a": "Not at all. The original layers and vector data are perfectly stitched together."
+      "q": "Η συγχώνευση καταστρέφει τη μορφοποίηση;",
+      "a": "Καθόλου. Τα αρχικά στρώματα και τα διανυσματικά δεδομένα είναι τέλεια ραμμένα μεταξύ τους."
     }
+  ],
+  "faqTitle": "Συχνές Ερωτήσεις",
+  "supportCenter": "Κέντρο Υποστήριξης",
+  "badges": [
+    "Μηδενική καθυστέρηση διακομιστή",
+    "Χωρίς εύρος ζώνης μεταφόρτωσης",
+    "Άμεση επεξεργασία"
   ]
 }

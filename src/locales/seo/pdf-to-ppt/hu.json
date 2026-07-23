@@ -1,67 +1,80 @@
 {
-  "title": "PDF to PowerPoint — Recover Editable Slides",
-  "h1": "Convert PDF to PowerPoint Presentation Offline",
-  "description": "Transform PDF documents back into editable .pptx presentations locally. No cloud needed. Perfect for users in Budapest.",
+  "title": "PDF a PowerPointba – Szerkeszthető diák visszaállítása",
+  "h1": "PDF konvertálása PowerPoint-bemutatóvá offline módban",
+  "description": "A PDF-dokumentumokat helyben alakíthatja vissza szerkeszthető .pptx prezentációkká. Nincs szükség felhőre. Tökéletes a budapesti felhasználók számára.",
+  "buttonText": "Konvertálás PPT-re",
+  "badges": [
+    "Szerkeszthető diák",
+    "Prezentáció helyreállítása",
+    "Gyors Konverzió"
+  ],
+  "stats": [
+    "100%",
+    "Helyi",
+    "0s",
+    "Várj Idő"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF to PowerPoint Offline?",
-      "content": "Recovering slide content from a PDF for editing should not require uploading sensitive decks to a cloud service."
+      "title": "Miért használja offline?",
+      "content": "A diatartalom PDF-ből való helyreállításához szerkesztés céljából nem kell érzékeny fedélzeteket feltölteni egy felhőszolgáltatásba."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to PowerPoint",
+      "title": "Hogyan kell használni",
       "steps": [
         {
-          "title": "Upload PDF",
-          "description": "Select the PDF containing your slide content."
+          "title": "PDF feltöltése",
+          "description": "Válassza ki a dia tartalmát tartalmazó PDF-fájlt."
         },
         {
-          "title": "Map Pages to Slides",
-          "description": "Each PDF page becomes one editable slide."
+          "title": "Oldalak leképezése Diákhoz",
+          "description": "Minden PDF-oldal egy szerkeszthető diává válik."
         },
         {
-          "title": "Download .pptx",
-          "description": "Get your fully editable PowerPoint presentation."
+          "title": "Töltse le a .pptx fájlt",
+          "description": "Szerezze meg teljesen szerkeszthető PowerPoint-prezentációját."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "Slide Recovery in Budapest",
-      "content": "Presenters in Budapest use our tool to recover and re-edit presentations from old PDF archives."
+      "title": "Slide Recovery Budapesten",
+      "content": "A budapesti előadók eszközünk segítségével állítják helyre és szerkesztik újra a régi PDF archívumokból származó prezentációkat."
     },
     {
       "type": "split_privacy_security",
-      "title": "Your Slides Are Never Exposed",
-      "content": "Confidential slide decks recovered and converted without any server interaction."
+      "title": "A diák soha nem látható",
+      "content": "A bizalmas diacsomagok helyreállítása és átalakítása kiszolgálói beavatkozás nélkül."
     },
     {
       "type": "split_performance",
-      "title": "Convert Slides at Lightning Speed",
-      "content": "A 60-slide PDF converted to PowerPoint in under 10 seconds with zero upload time."
+      "title": "Konvertálja a diákat villámgyorsan",
+      "content": "Egy 60 diát tartalmazó PDF kevesebb, mint 10 másodperc alatt PowerPoint formátumba konvertálva, nulla feltöltési idő nélkül."
     }
   ],
   "faqs": [
     {
-      "q": "Are slide layouts preserved?",
-      "a": "Content is mapped to slides; some layout adjustments may be needed."
+      "q": "Megőrzik a diaelrendezéseket?",
+      "a": "A tartalom diákra van leképezve; bizonyos elrendezési módosításokra lehet szükség."
     },
     {
-      "q": "Can I edit the slides after?",
-      "a": "Yes, the .pptx file is fully editable in PowerPoint or Google Slides."
+      "q": "Szerkeszthetem a diákat ezután?",
+      "a": "Igen, a .pptx fájl teljes mértékben szerkeszthető a PowerPointban vagy a Google Diákban."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No, convert as many pages as your RAM allows."
+      "q": "Van oldalkorlát?",
+      "a": "Nem, konvertáljon annyi oldalt, amennyit a RAM enged."
     },
     {
-      "q": "Does it work with image-heavy PDFs?",
-      "a": "Yes, images are embedded in each slide."
+      "q": "Működik nagy képtartalmú PDF-ekkel?",
+      "a": "Igen, a képek minden diákba be vannak ágyazva."
     },
     {
-      "q": "Is this free?",
+      "q": "Ez ingyenes?",
       "a": "Igen, teljesen ingyenes."
     }
-  ]
+  ],
+  "faqTitle": "Gyakran Ismételt Kérdések"
 }

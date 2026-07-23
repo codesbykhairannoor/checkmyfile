@@ -1,0 +1,85 @@
+{
+  "title": "Muokkaa PDF-tiedostoa - Ilmainen offline-pdf-editori",
+  "h1": "Muokkaa PDF-dokumentteja suoraan selaimessasi",
+  "description": "Lisää tekstiä, allekirjoituksia ja huomautuksia PDF-tiedostoihisi paikallisesti. Ei latauksia, maksimaalinen yksityisyys. 100 % turvallinen paikallinen käsittely.",
+  "sections": [
+    {
+      "type": "edit_hero_features",
+      "title": "Miksi muokata PDF-tiedostoja paikallisesti?",
+      "content": "Arkaluonteisten sopimusten ja lomakkeiden lataaminen pilvieditoriin on valtava tietosuojariski. WebAssembly-editorimme toimii suoraan laitteessasi, mikä varmistaa, että asiakirjasi eivät koskaan poistu tietokoneeltasi."
+    },
+    {
+      "type": "edit_how_to_steps",
+      "title": "PDF-tiedoston muokkaaminen",
+      "steps": [
+        {
+          "title": "Avaa asiakirja",
+          "description": "Valitse PDF-tiedosto, johon haluat merkitä tai allekirjoittaa."
+        },
+        {
+          "title": "Lisää tekstiä ja elementtejä",
+          "description": "Käytä intuitiivisia työkalujamme tekstin lisäämiseen, piirtämiseen tai kuvien sijoittamiseen."
+        },
+        {
+          "title": "Tallenna muutokset",
+          "description": "Vie muokattu PDF välittömästi odottamatta latauksia."
+        }
+      ],
+      "badgeText": "Pikaopas"
+    },
+    {
+      "type": "edit_geo_targeting",
+      "title": "100 % suojattu paikallinen käsittely",
+      "content": "Kaikki toiminnot suoritetaan suoraan paikallisella laitteellasi. Käytämme edistynyttä WebAssembly-tekniikkaa asiakirjojen käsittelyyn lataamatta niitä koskaan ulkoisille palvelimille, mikä takaa täydellisen yksityisyyden.",
+      "badgeText": "Paikallinen käsittely"
+    },
+    {
+      "type": "edit_privacy_security",
+      "title": "Nolla tiedonsiirtoa",
+      "content": "Toisin kuin perinteiset PDF-editorit, jotka lataavat tiedostosi palvelimilleen, alustamme käsittelee kaiken selaimesi muistissa.",
+      "badgeText": "Turvallisuus ensin"
+    },
+    {
+      "type": "edit_performance",
+      "title": "Välitön offline-renderöinti",
+      "content": "Editorimme lataa valtavia PDF-tiedostoja millisekunneissa. Voit lisätä satoja merkintöjä ilman viivettä tai verkkoviivettä.",
+      "badgeText": "Salamannopeasti"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Voinko muokata PDF-tiedostossa olevaa tekstiä?",
+      "a": "Tällä hetkellä voit lisätä uutta tekstiä, muotoja ja kuvia olemassa olevan asiakirjan päälle."
+    },
+    {
+      "q": "Onko tiedostoni ladattu mihinkään?",
+      "a": "Ei, kaikki muokkaus tapahtuu paikallisesti selaimessasi WebAssemblyn avulla."
+    },
+    {
+      "q": "Voinko allekirjoittaa asiakirjoja?",
+      "a": "Kyllä, voit piirtää allekirjoituksesi tai ladata siitä kuvan."
+    },
+    {
+      "q": "Onko editori vapaasti käytettävissä?",
+      "a": "Kyllä, se on 100% ilmainen ilman premium-maksumuureja tai piilomaksuja."
+    },
+    {
+      "q": "Toimiiko se mobiililaitteilla?",
+      "a": "Kyllä, editori on täysin reagoiva ja tukee kosketussyöttöä piirtämiseen."
+    }
+  ],
+  "badges": [
+    "Ei vesileimoja",
+    "100 % ilmainen",
+    "Offline-editori"
+  ],
+  "stats": [
+    "100% Private",
+    "0 Server Uploads",
+    "Client-Side Only",
+    "No Accounts"
+  ],
+  "buttonText": "Start Editing",
+  "faqTitle": "Usein kysytyt kysymykset",
+  "supportCenter": "Tukikeskus"
+}

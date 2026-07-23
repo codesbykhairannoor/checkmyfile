@@ -1,67 +1,85 @@
 {
-  "title": "Organize PDF Pages — Reorder & Delete Offline",
-  "h1": "Reorder, Delete, or Duplicate PDF Pages Locally",
-  "description": "Drag and drop to rearrange, remove, or duplicate PDF pages entirely in your browser. No upload. Great for users in Jerusalem.",
+  "title": "ארגן דפי PDF — סדר מחדש ומחק לא מקוון",
+  "h1": "סדר מחדש, מחק או שכפל דפי PDF באופן מקומי",
+  "description": "גרור ושחרר כדי לסדר מחדש, להסיר או לשכפל דפי PDF לחלוטין בדפדפן שלך. מהיר ומאובטח לחלוטין.",
+  "buttonText": "Organize Pages",
+  "badges": [
+    "גרור ושחרר",
+    "סדר מחדש דפים",
+    "עורך חזותי"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Organize PDFs Locally?",
-      "content": "Reorganizing page structure is an editing operation. Your internal document should stay internal during editing."
+      "type": "organize_hero_features",
+      "title": "למה לארגן קובצי PDF באופן מקומי?",
+      "content": "ארגון מחדש של מבנה העמוד הוא פעולת עריכה. המסמך הפנימי שלך צריך להישאר פנימי במהלך העריכה."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Organize PDF Pages",
+      "type": "organize_how_to_steps",
+      "title": "כיצד לארגן דפי PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to reorganize."
+          "title": "פתח PDF",
+          "description": "טען את ה-PDF שברצונך לארגן מחדש."
         },
         {
-          "title": "Drag to Reorder",
-          "description": "Drag page thumbnails to the desired position."
+          "title": "גרור לסדר מחדש",
+          "description": "גרור תמונות ממוזערות של עמודים למיקום הרצוי."
         },
         {
-          "title": "Save Organized PDF",
-          "description": "Download the restructured PDF immediately."
+          "title": "שמור PDF מאורגן",
+          "description": "הורד את ה-PDF המחודש באופן מיידי."
         }
-      ]
+      ],
+      "badgeText": "מדריך מהיר"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Organization for Jerusalem Teams",
-      "content": "Teams in Jerusalem reorganize proposal and report PDFs without uploading to any cloud service."
+      "type": "organize_geo_targeting",
+      "title": "100% עיבוד מקומי מאובטח",
+      "content": "כל הפעולות מבוצעות ישירות במכשיר המקומי שלך. אנו משתמשים בטכנולוגיית WebAssembly מתקדמת כדי לעבד את המסמכים שלך מבלי להעלות אותם לשרתים חיצוניים, מה שמבטיח פרטיות מלאה.",
+      "badgeText": "עיבוד מקומי"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Page Structure Is Private Business",
-      "content": "Reordering internal reports and proposals with zero data leaving your browser."
+      "type": "organize_privacy_security",
+      "title": "מבנה העמוד הוא עסק פרטי",
+      "content": "סידור מחדש של דוחות והצעות פנימיים עם אפס נתונים שיוצאים מהדפדפן שלך.",
+      "badgeText": "אבטחה תחילה"
     },
     {
-      "type": "organizer_performance",
-      "title": "Reorganize Any PDF in Seconds",
-      "content": "Reorder pages in a 500-page document through a smooth drag-and-drop interface with zero upload."
+      "type": "organize_performance",
+      "title": "ארגן מחדש כל PDF בשניות",
+      "content": "סדר מחדש דפים במסמך בן 500 עמודים באמצעות ממשק גרירה ושחרור חלק עם אפס העלאה.",
+      "badgeText": "מהיר ברק"
     }
   ],
   "faqs": [
     {
-      "q": "Can I delete pages?",
-      "a": "Yes, click the delete icon on any page thumbnail."
+      "q": "האם אני יכול למחוק דפים?",
+      "a": "כן, לחץ על סמל המחיקה בכל תמונה ממוזערת של עמודים."
     },
     {
-      "q": "Can I duplicate pages?",
-      "a": "Yes, duplicate individual pages with one click."
+      "q": "האם אני יכול לשכפל דפים?",
+      "a": "כן, שכפל דפים בודדים בלחיצה אחת."
     },
     {
-      "q": "Can I rotate while organizing?",
-      "a": "Yes, per-page rotation is available in the organizer."
+      "q": "האם אני יכול לסובב תוך כדי ארגון?",
+      "a": "כן, סיבוב לפי עמוד זמין במארגן."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No limit! Organize documents of any size."
+      "q": "האם יש הגבלת עמודים?",
+      "a": "אין גבול! ארגן מסמכים בכל גודל."
     },
     {
-      "q": "Is this free?",
-      "a": "כן, חינם לחלוטין."
+      "q": "האם זה בחינם?",
+      "a": "כן, לגמרי בחינם."
     }
-  ]
+  ],
+  "faqTitle": "שאלות נפוצות",
+  "supportCenter": "מרכז תמיכה"
 }

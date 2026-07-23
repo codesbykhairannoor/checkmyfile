@@ -1,67 +1,85 @@
 {
-  "title": "Grayscale PDF — Convert to Black and White Offline",
-  "h1": "Convert Color PDF Pages to Grayscale Instantly",
-  "description": "Turn color PDFs into black-and-white versions to reduce file size or prepare for printing, entirely in your browser. Ideal for users in Stockholm.",
+  "title": "Gråskala PDF — Konvertera till svartvitt offline",
+  "h1": "Konvertera PDF-färgsidor till gråskala direkt",
+  "description": "Förvandla PDF-filer i färg till svartvita versioner för att minska filstorleken eller förbereda för utskrift, helt i din webbläsare. 100 % säker lokal bearbetning.",
+  "buttonText": "Convert to Grayscale",
+  "badges": [
+    "Spara bläck",
+    "Svart & Vit",
+    "Perfekt för tryck"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Convert to Grayscale Offline?",
-      "content": "Removing color from a PDF is a pre-print or archiving step. Do it locally without exposing confidential document design."
+      "type": "grayscale_hero_features",
+      "title": "Varför konvertera till gråskala offline?",
+      "content": "Att ta bort färg från en PDF är ett förtryck eller arkiveringssteg. Gör det lokalt utan att avslöja konfidentiell dokumentdesign."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Make PDF Grayscale",
+      "type": "grayscale_how_to_steps",
+      "title": "Hur man gör PDF-gråskala",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the color PDF to convert."
+          "title": "Öppna PDF",
+          "description": "Välj den färg-PDF som ska konverteras."
         },
         {
-          "title": "Choose Conversion Mode",
-          "description": "Pick luminance or contrast-adjusted grayscale."
+          "title": "Välj Konverteringsläge",
+          "description": "Välj luminans eller kontrastjusterad gråskala."
         },
         {
-          "title": "Download Grayscale PDF",
-          "description": "Save the black-and-white PDF immediately."
+          "title": "Ladda ner gråskala PDF",
+          "description": "Spara den svart-vita PDF-filen omedelbart."
         }
-      ]
+      ],
+      "badgeText": "Snabbguide"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Grayscale PDF for Stockholm Printers",
-      "content": "Businesses in Stockholm convert color PDFs to grayscale for cost-effective printing without cloud uploads."
+      "type": "grayscale_geo_targeting",
+      "title": "100 % säker lokal bearbetning",
+      "content": "Alla operationer utförs direkt på din lokala enhet. Vi använder avancerad WebAssembly-teknik för att behandla dina dokument utan att någonsin ladda upp dem till externa servrar, vilket säkerställer fullständig integritet.",
+      "badgeText": "Lokal bearbetning"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Design Files Stay Confidential",
-      "content": "Internal design documents and branded materials converted to grayscale without cloud exposure."
+      "type": "grayscale_privacy_security",
+      "title": "Designfiler förblir konfidentiella",
+      "content": "Interna designdokument och märkesmaterial konverterade till gråskala utan molnexponering.",
+      "badgeText": "Säkerhet först"
     },
     {
-      "type": "transform_performance",
-      "title": "Convert Color Instantly",
-      "content": "A 200-page color PDF converted to grayscale in under 2 seconds. Zero upload."
+      "type": "grayscale_performance",
+      "title": "Konvertera färg direkt",
+      "content": "En 200-sidig färg-PDF konverterad till gråskala på under 2 sekunder. Noll uppladdning.",
+      "badgeText": "Blixtsnabb"
     }
   ],
   "faqs": [
     {
-      "q": "Does grayscale reduce file size?",
-      "a": "Often yes, especially for image-heavy PDFs."
+      "q": "Minskar gråskala filstorleken?",
+      "a": "Ofta ja, speciellt för bildtunga PDF-filer."
     },
     {
-      "q": "Are all pages converted?",
-      "a": "Yes by default; you can also select specific pages."
+      "q": "Är alla sidor konverterade?",
+      "a": "Ja som standard; du kan också välja specifika sidor."
     },
     {
-      "q": "Is the conversion reversible?",
-      "a": "The color information is removed; keep the original for reversal."
+      "q": "Är omvandlingen reversibel?",
+      "a": "Färginformationen tas bort; behåll originalet för återföring."
     },
     {
-      "q": "Does it affect text quality?",
-      "a": "No, text remains crisp and black."
+      "q": "Påverkar det textkvaliteten?",
+      "a": "Nej, texten förblir skarp och svart."
     },
     {
-      "q": "Is this free?",
+      "q": "Är detta gratis?",
       "a": "Ja, helt gratis."
     }
-  ]
+  ],
+  "faqTitle": "Vanliga frågor",
+  "supportCenter": "Supportcenter"
 }

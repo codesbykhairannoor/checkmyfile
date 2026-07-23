@@ -1,67 +1,85 @@
 {
-  "title": "Rotate PDF Pages — Fix Orientation Offline",
-  "h1": "Rotate PDF Pages to the Correct Orientation",
-  "description": "Fix upside-down or sideways PDF pages instantly in your browser. No upload. Perfect for users in Budapest.",
+  "title": "PDF-oldalak forgatása — Tájolás offline javítása",
+  "h1": "A PDF-oldalak elforgatása a megfelelő tájolásra",
+  "description": "A fejjel lefelé vagy oldalra fordított PDF-oldalak azonnali javítása a böngészőben. Gyors és teljesen biztonságos.",
+  "buttonText": "Rotate Pages",
+  "badges": [
+    "Forgatás 90°/180°",
+    "Kötegelt feldolgozás",
+    "Azonnali javítás"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Rotate PDFs Locally?",
-      "content": "Scanned documents often come out sideways. Fix their orientation instantly without uploading anything to the cloud."
+      "type": "rotate_hero_features",
+      "title": "Miért érdemes helyileg forgatni a PDF-fájlokat?",
+      "content": "A beolvasott dokumentumok gyakran oldalra kerülnek ki. Azonnal rögzítheti tájolásukat anélkül, hogy bármit is feltöltene a felhőbe."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Rotate PDF Pages",
+      "type": "rotate_how_to_steps",
+      "title": "PDF-oldalak elforgatása",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page orientation."
+          "title": "PDF megnyitása",
+          "description": "Helytelen oldaltájolással töltse be a PDF-fájlt."
         },
         {
-          "title": "Select Pages & Direction",
-          "description": "Choose pages to rotate and direction (90°, 180°, 270°)."
+          "title": "Válassza az Oldalak és irány",
+          "description": "Válassza ki az elforgatandó oldalakat és az irányt (90°, 180°, 270°)."
         },
         {
-          "title": "Download Fixed PDF",
-          "description": "Save the correctly oriented PDF immediately."
+          "title": "Javított PDF letöltése",
+          "description": "Azonnal mentse el a megfelelő tájolású PDF-fájlt."
         }
-      ]
+      ],
+      "badgeText": "Gyors útmutató"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Rotation for Budapest Offices",
-      "content": "Office workers in Budapest fix scanner output orientation without relying on cloud services."
+      "type": "rotate_geo_targeting",
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Minden művelet közvetlenül a helyi eszközön történik. Fejlett WebAssembly technológiát használunk a dokumentumok feldolgozásához anélkül, hogy azokat külső szerverekre feltöltenénk, így biztosítva a teljes adatvédelmet.",
+      "badgeText": "Helyi feldolgozás"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Scanned Documents Stay Private",
-      "content": "Scanned medical or legal documents rotated locally without any server access."
+      "type": "rotate_privacy_security",
+      "title": "A beszkennelt dokumentumok privátak maradnak",
+      "content": "A beszkennelt orvosi vagy jogi dokumentumok helyben, szerver-hozzáférés nélkül forognak.",
+      "badgeText": "Első a biztonság"
     },
     {
-      "type": "transform_performance",
-      "title": "Rotate Any PDF in Milliseconds",
-      "content": "Rotating 500 pages takes less than a second. No upload, no wait."
+      "type": "rotate_performance",
+      "title": "Bármely PDF elforgatása ezredmásodpercben",
+      "content": "Az 500 oldal elforgatása kevesebb mint egy másodpercet vesz igénybe. Nincs feltöltés, nincs várakozás.",
+      "badgeText": "Villámgyors"
     }
   ],
   "faqs": [
     {
-      "q": "Can I rotate individual pages?",
-      "a": "Yes, select specific pages or all at once."
+      "q": "Elforgathatom az egyes oldalakat?",
+      "a": "Igen, válasszon ki bizonyos oldalakat vagy egyszerre."
     },
     {
-      "q": "What rotation angles are available?",
-      "a": "90°, 180°, and 270° clockwise and counter-clockwise."
+      "q": "Milyen elforgatási szögek állnak rendelkezésre?",
+      "a": "90°, 180° és 270° az óramutató járásával megegyezően és azzal ellentétes irányban."
     },
     {
-      "q": "Does rotation affect image quality?",
-      "a": "No, rotation is lossless — no re-encoding occurs."
+      "q": "Befolyásolja a forgatás a képminőséget?",
+      "a": "Nem, a forgatás veszteségmentes – nem történik újrakódolás."
     },
     {
-      "q": "Can I undo a rotation?",
-      "a": "Yes, apply the reverse rotation before downloading."
+      "q": "Visszavonhatok egy forgatást?",
+      "a": "Igen, a letöltés előtt alkalmazza a fordított forgatást."
     },
     {
-      "q": "Is this free?",
+      "q": "Ez ingyenes?",
       "a": "Igen, teljesen ingyenes."
     }
-  ]
+  ],
+  "faqTitle": "Gyakran Ismételt Kérdések",
+  "supportCenter": "Támogatási Központ"
 }

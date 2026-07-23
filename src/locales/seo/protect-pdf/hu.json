@@ -1,67 +1,85 @@
 {
-  "title": "Password Protect PDF — Secure Files Offline",
-  "h1": "Add Password Protection to PDF Files Instantly",
-  "description": "Encrypt PDF files with AES-256 directly in your browser. Your document never leaves your device. Ideal for users in Budapest.",
+  "title": "PDF jelszavas védelme — Biztonságos fájlok offline állapotban",
+  "h1": "Adjon hozzá jelszavas védelmet PDF-fájlokhoz azonnal",
+  "description": "Titkosítsa a PDF fájlokat az AES-256 segítségével közvetlenül a böngészőben. A dokumentum soha nem hagyja el a készüléket. 100%-ban biztonságos helyi feldolgozás.",
+  "buttonText": "Protect PDF",
+  "badges": [
+    "AES-256 titkosítás",
+    "Biztonságos jelszó",
+    "Csak ügyféloldali"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "protect_hero_features",
-      "title": "Why Protect PDFs Locally?",
-      "content": "Adding a password means the file is sensitive. Never upload sensitive files to a cloud encryptor. Ours runs entirely offline with AES-256 encryption."
+      "title": "Miért védi helyileg a PDF-fájlokat?",
+      "content": "Jelszó hozzáadása azt jelenti, hogy a fájl érzékeny. Soha ne töltsön fel érzékeny fájlokat felhőtitkosítóba. A miénk teljesen offline AES-256 titkosítással fut."
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Password Protect a PDF",
+      "title": "PDF jelszavas védelme",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF you want to lock."
+          "title": "PDF megnyitása",
+          "description": "Válassza ki a zárolni kívánt PDF-fájlt."
         },
         {
-          "title": "Set Password",
-          "description": "Choose a strong password for encryption."
+          "title": "Jelszó beállítása",
+          "description": "Válasszon erős jelszót a titkosításhoz."
         },
         {
-          "title": "Download Protected PDF",
-          "description": "Get your AES-256 encrypted PDF immediately."
+          "title": "Védett PDF letöltése",
+          "description": "Azonnal szerezze be AES-256 titkosított PDF-fájlját."
         }
-      ]
+      ],
+      "badgeText": "Gyors útmutató"
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Vault-Level PDF Protection for Budapest",
-      "content": "Legal and finance professionals in Budapest encrypt documents with AES-256 strength without exposing files to any server."
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Minden művelet közvetlenül a helyi eszközön történik. Fejlett WebAssembly technológiát használunk a dokumentumok feldolgozásához anélkül, hogy azokat külső szerverekre feltöltenénk, így biztosítva a teljes adatvédelmet.",
+      "badgeText": "Helyi feldolgozás"
     },
     {
       "type": "protect_privacy_security",
-      "title": "AES-256 Encryption — Bank-Grade, Offline",
-      "content": "Military-grade AES-256 encryption runs in your browser. No key is ever transmitted to any server."
+      "title": "AES-256 titkosítás – banki szintű, offline",
+      "content": "Katonai minőségű AES-256 titkosítás fut a böngészőben. A kulcs soha nem kerül továbbításra egyetlen szerverre sem.",
+      "badgeText": "Első a biztonság"
     },
     {
       "type": "protect_performance",
-      "title": "Encrypt Any PDF in Under 1 Second",
-      "content": "AES-256 processing locally takes milliseconds — no upload, no queue, no wait."
+      "title": "Bármilyen PDF titkosítása 1 másodperc alatt",
+      "content": "Az AES-256 helyi feldolgozása ezredmásodperceket vesz igénybe – nincs feltöltés, nincs sor, nincs várakozás.",
+      "badgeText": "Villámgyors"
     }
   ],
   "faqs": [
     {
-      "q": "What encryption standard is used?",
-      "a": "AES-256, the same standard used by banks and governments."
+      "q": "Milyen titkosítási szabványt használnak?",
+      "a": "AES-256, ugyanaz a szabvány, amelyet a bankok és a kormányok használnak."
     },
     {
-      "q": "Can I set different owner and user passwords?",
-      "a": "Yes, you can set both separately."
+      "q": "Beállíthatok különböző tulajdonosi és felhasználói jelszavakat?",
+      "a": "Igen, mindkettőt külön beállíthatja."
     },
     {
-      "q": "Is the original file modified?",
-      "a": "No, a new encrypted copy is created."
+      "q": "Az eredeti fájl módosult?",
+      "a": "Nem, új titkosított másolat jön létre."
     },
     {
-      "q": "Can I restrict printing or editing?",
-      "a": "Yes, permission restrictions can be set alongside the password."
+      "q": "Korlátozhatom a nyomtatást vagy a szerkesztést?",
+      "a": "Igen, a jelszó mellett engedélykorlátozás is beállítható."
     },
     {
-      "q": "Is this free?",
+      "q": "Ez ingyenes?",
       "a": "Igen, teljesen ingyenes."
     }
-  ]
+  ],
+  "faqTitle": "Gyakran Ismételt Kérdések",
+  "supportCenter": "Támogatási Központ"
 }

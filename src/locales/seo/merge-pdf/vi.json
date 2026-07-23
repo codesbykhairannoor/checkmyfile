@@ -1,67 +1,78 @@
 {
-  "title": "Merge PDF - Combine Documents Offline",
-  "h1": "Merge PDF Files Instantly in Your Browser",
-  "description": "Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, perfect for users in Hanoi.",
+  "title": "Hợp nhất PDF - Kết hợp tài liệu ngoại tuyến",
+  "h1": "Hợp nhất các tệp PDF ngay lập tức trong trình duyệt của bạn",
+  "description": "Kết hợp nhiều tệp PDF thành một tài liệu duy nhất bằng cách sử dụng WebAssembly phía máy khách thuần túy. Không cần tải lên tệp, hoàn hảo cho người dùng ở New York.",
   "sections": [
     {
       "type": "merge_hero_features",
-      "title": "Why Merge PDF Offline?",
-      "content": "Instead of uploading sensitive documents to a server, our Merge PDF tool stitches your pages together directly in your browser. Complete privacy."
+      "title": "Tại sao hợp nhất PDF ngoại tuyến?",
+      "content": "Thay vì tải các tài liệu nhạy cảm lên máy chủ, công cụ Hợp nhất PDF của chúng tôi sẽ ghép các trang của bạn lại với nhau trực tiếp trong trình duyệt. Hoàn toàn riêng tư."
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Merge PDF Files",
+      "title": "Cách hợp nhất các tệp PDF",
       "steps": [
         {
-          "title": "Add Documents",
-          "description": "Select the PDFs you want to merge together."
+          "title": "Thêm tài liệu",
+          "description": "Chọn các tệp PDF bạn muốn hợp nhất với nhau."
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop files to get the perfect sequence."
+          "title": "Sắp xếp lại các trang",
+          "description": "Kéo và thả tập tin để có được trình tự hoàn hảo."
         },
         {
-          "title": "Merge & Save",
-          "description": "Click merge and download your combined document instantly."
+          "title": "Hợp nhất & Lưu",
+          "description": "Nhấp vào hợp nhất và tải xuống tài liệu kết hợp của bạn ngay lập tức."
         }
-      ]
+      ],
+      "badgeText": "Hướng dẫn nhanh"
     },
     {
       "type": "merge_geo_targeting",
-      "title": "Seamless Merging for users in Hanoi, VN-HN",
-      "content": "No matter if you are in Hanoi or traveling, combining documents takes zero milliseconds of upload time."
+      "title": "Xử lý cục bộ an toàn 100%",
+      "content": "Tất cả các hoạt động được thực hiện trực tiếp trên thiết bị cục bộ của bạn. Chúng tôi sử dụng công nghệ WebAssembly tiên tiến để xử lý tài liệu của bạn mà không cần tải chúng lên máy chủ bên ngoài, đảm bảo quyền riêng tư hoàn toàn.",
+      "badgeText": "Xử lý cục bộ"
     },
     {
       "type": "merge_privacy_security",
-      "title": "Enterprise-Grade Document Combining",
-      "content": "Merging contracts and invoices? Do it securely with our WASM engine. No traces left behind."
+      "title": "Kết hợp tài liệu cấp doanh nghiệp",
+      "content": "Hợp nhất hợp đồng và hóa đơn? Làm điều đó một cách an toàn với công cụ WASM của chúng tôi. Không có dấu vết để lại phía sau.",
+      "badgeText": "Bảo mật là trên hết"
     },
     {
       "type": "merge_performance",
-      "title": "Instant Combination",
-      "content": "Stitching PDFs locally means you can merge a 500-page document faster than you can upload it."
+      "title": "Kết hợp tức thì",
+      "content": "Ghép các tệp PDF cục bộ có nghĩa là bạn có thể hợp nhất một tài liệu 500 trang nhanh hơn tốc độ bạn có thể tải nó lên.",
+      "badgeText": "Nhanh như chớp"
     }
   ],
   "faqs": [
     {
-      "q": "Is merging PDFs completely free?",
-      "a": "Yes! Merge as many files as you want without paying a cent."
+      "q": "Việc hợp nhất các tệp PDF có hoàn toàn miễn phí không?",
+      "a": "Đúng! Hợp nhất bao nhiêu tệp tùy thích mà không phải trả một xu."
     },
     {
-      "q": "Are my merged files uploaded?",
-      "a": "No, all merging happens offline in your browser."
+      "q": "Các tập tin đã hợp nhất của tôi có được tải lên không?",
+      "a": "Không, tất cả việc hợp nhất diễn ra ngoại tuyến trong trình duyệt của bạn."
     },
     {
-      "q": "Can I reorder the files before merging?",
-      "a": "Yes, just drag and drop the files in the preview window."
+      "q": "Tôi có thể sắp xếp lại các tập tin trước khi hợp nhất không?",
+      "a": "Có, chỉ cần kéo và thả tệp vào cửa sổ xem trước."
     },
     {
-      "q": "Is there a limit on how many files I can merge?",
-      "a": "No artificial limits! Merge 10 or 100 files depending on your RAM."
+      "q": "Có giới hạn về số lượng tệp tôi có thể hợp nhất không?",
+      "a": "Không có giới hạn nhân tạo! Hợp nhất 10 hoặc 100 tệp tùy thuộc vào RAM của bạn."
     },
     {
-      "q": "Does merging ruin the formatting?",
-      "a": "Not at all. The original layers and vector data are perfectly stitched together."
+      "q": "Việc hợp nhất có làm hỏng định dạng không?",
+      "a": "Không có gì. Các lớp gốc và dữ liệu vectơ được ghép hoàn hảo với nhau."
     }
+  ],
+  "faqTitle": "Câu hỏi thường gặp",
+  "supportCenter": "Trung tâm hỗ trợ",
+  "badges": [
+    "Độ trễ máy chủ bằng không",
+    "Không có băng thông tải lên",
+    "Xử lý ngay lập tức"
   ]
 }

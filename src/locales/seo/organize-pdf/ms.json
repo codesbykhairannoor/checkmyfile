@@ -1,67 +1,85 @@
 {
-  "title": "Organize PDF Pages — Reorder & Delete Offline",
-  "h1": "Reorder, Delete, or Duplicate PDF Pages Locally",
-  "description": "Drag and drop to rearrange, remove, or duplicate PDF pages entirely in your browser. No upload. Great for users in Kuala Lumpur.",
+  "title": "Susun Halaman PDF — Susun Semula & Padam Luar Talian",
+  "h1": "Susun Semula, Padam atau Salin Halaman PDF Secara Setempat",
+  "description": "Seret dan lepas untuk menyusun semula, mengalih keluar atau menduplikasi halaman PDF sepenuhnya dalam penyemak imbas anda. Cepat dan selamat sepenuhnya.",
+  "buttonText": "Organize Pages",
+  "badges": [
+    "Seret & Lepas",
+    "Susun Semula Halaman",
+    "Editor Visual"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Organize PDFs Locally?",
-      "content": "Reorganizing page structure is an editing operation. Your internal document should stay internal during editing."
+      "type": "organize_hero_features",
+      "title": "Mengapa Atur PDF Secara Tempatan?",
+      "content": "Menyusun semula struktur halaman ialah operasi penyuntingan. Dokumen dalaman anda harus kekal dalaman semasa pengeditan."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Organize PDF Pages",
+      "type": "organize_how_to_steps",
+      "title": "Cara Menyusun Halaman PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to reorganize."
+          "title": "Buka PDF",
+          "description": "Muatkan PDF yang ingin anda susun semula."
         },
         {
-          "title": "Drag to Reorder",
-          "description": "Drag page thumbnails to the desired position."
+          "title": "Seret ke Susun Semula",
+          "description": "Seret lakaran kenit halaman ke kedudukan yang diingini."
         },
         {
-          "title": "Save Organized PDF",
-          "description": "Download the restructured PDF immediately."
+          "title": "Simpan PDF Tersusun",
+          "description": "Muat turun PDF yang disusun semula dengan segera."
         }
-      ]
+      ],
+      "badgeText": "Panduan Pantas"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Organization for Kuala Lumpur Teams",
-      "content": "Teams in Kuala Lumpur reorganize proposal and report PDFs without uploading to any cloud service."
+      "type": "organize_geo_targeting",
+      "title": "100% Pemprosesan Tempatan Selamat",
+      "content": "Semua operasi dilakukan terus pada peranti tempatan anda. Kami menggunakan teknologi WebAssembly termaju untuk memproses dokumen anda tanpa pernah memuat naiknya ke pelayan luaran, memastikan privasi lengkap.",
+      "badgeText": "Pemprosesan Setempat"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Page Structure Is Private Business",
-      "content": "Reordering internal reports and proposals with zero data leaving your browser."
+      "type": "organize_privacy_security",
+      "title": "Struktur Halaman Adalah Perniagaan Persendirian",
+      "content": "Menyusun semula laporan dan cadangan dalaman dengan data sifar meninggalkan penyemak imbas anda.",
+      "badgeText": "Keselamatan Diutamakan"
     },
     {
-      "type": "organizer_performance",
-      "title": "Reorganize Any PDF in Seconds",
-      "content": "Reorder pages in a 500-page document through a smooth drag-and-drop interface with zero upload."
+      "type": "organize_performance",
+      "title": "Susun Semula Mana-mana PDF dalam Beberapa Saat",
+      "content": "Susun semula halaman dalam dokumen 500 halaman melalui antara muka seret dan lepas yang lancar dengan muat naik sifar.",
+      "badgeText": "Sepantas Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "Can I delete pages?",
-      "a": "Yes, click the delete icon on any page thumbnail."
+      "q": "Bolehkah saya memadam halaman?",
+      "a": "Ya, klik ikon padam pada mana-mana lakaran kecil halaman."
     },
     {
-      "q": "Can I duplicate pages?",
-      "a": "Yes, duplicate individual pages with one click."
+      "q": "Bolehkah saya menduplikasi halaman?",
+      "a": "Ya, salin halaman individu dengan satu klik."
     },
     {
-      "q": "Can I rotate while organizing?",
-      "a": "Yes, per-page rotation is available in the organizer."
+      "q": "Bolehkah saya berputar semasa mengatur?",
+      "a": "Ya, putaran setiap halaman tersedia dalam penganjur."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No limit! Organize documents of any size."
+      "q": "Adakah terdapat had halaman?",
+      "a": "Tiada had! Susun dokumen dalam sebarang saiz."
     },
     {
-      "q": "Is this free?",
+      "q": "Adakah ini percuma?",
       "a": "Ya, percuma sepenuhnya."
     }
-  ]
+  ],
+  "faqTitle": "Soalan Lazim",
+  "supportCenter": "Pusat Sokongan"
 }

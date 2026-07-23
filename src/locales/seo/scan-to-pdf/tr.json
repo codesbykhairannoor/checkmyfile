@@ -1,67 +1,85 @@
 {
-  "title": "Scan to PDF — Convert Camera Shots Offline",
-  "h1": "Convert Photos and Scans to PDF Locally",
-  "description": "Turn photos of documents taken with your camera into clean PDFs entirely in your browser. No upload. Best for users in Istanbul.",
+  "title": "PDF'ye Tara — Kamera Çekimlerini Çevrimdışına Dönüştür",
+  "h1": "Fotoğrafları ve Taramaları Yerel Olarak PDF'ye Dönüştürün",
+  "description": "Kameranızla çektiğiniz belgelerin fotoğraflarını tamamen tarayıcınızda temiz PDF'lere dönüştürün. Yükleme yok. %100 güvenli yerel işleme.",
+  "buttonText": "Scan to PDF",
+  "badges": [
+    "Web Kamerasını Kullan",
+    "Mobil Tarayıcı",
+    "Otomatik Kırpma"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Use Scan-to-PDF Offline?",
-      "content": "Photos of documents contain sensitive information. Process them locally without any cloud access."
+      "type": "scan_hero_features",
+      "title": "Neden PDF'ye Taramayı Çevrimdışı Kullanmalısınız?",
+      "content": "Belgelerin fotoğrafları hassas bilgiler içerir. Bunları herhangi bir bulut erişimi olmadan yerel olarak işleyin."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Scans to PDF",
+      "type": "scan_how_to_steps",
+      "title": "Taramaları PDF'ye Dönüştürme",
       "steps": [
         {
-          "title": "Import Photos",
-          "description": "Select photos taken with your phone or camera."
+          "title": "Fotoğrafları İçe Aktar",
+          "description": "Telefonunuzla veya kameranızla çekilen fotoğrafları seçin."
         },
         {
-          "title": "Enhance Scan",
-          "description": "Auto-crop, deskew, and enhance contrast."
+          "title": "Taramayı Geliştir",
+          "description": "Otomatik kırpın, eğriliğini düzeltin ve kontrastı iyileştirin."
         },
         {
-          "title": "Export PDF",
-          "description": "Download a clean, professional-looking scanned PDF."
+          "title": "PDF'yi Dışa Aktar",
+          "description": "Temiz, profesyonel görünümlü, taranmış bir PDF indirin."
         }
-      ]
+      ],
+      "badgeText": "Hızlı Kılavuz"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Scan to PDF for Istanbul Field Workers",
-      "content": "Field workers and freelancers in Istanbul digitize paper documents on-the-go without uploading to cloud services."
+      "type": "scan_geo_targeting",
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Documents Stay on Device",
-      "content": "Invoices, contracts, and ID scans processed entirely in browser memory without any server access."
+      "type": "scan_privacy_security",
+      "title": "Taranan Belgeler Cihazda Kalır",
+      "content": "Faturalar, sözleşmeler ve kimlik taramaları, herhangi bir sunucu erişimi olmadan tamamen tarayıcı belleğinde işlenir.",
+      "badgeText": "Önce Güvenlik"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Scans in Real Time",
-      "content": "Photo enhancement and PDF generation happens in milliseconds, even for high-resolution camera shots."
+      "type": "scan_performance",
+      "title": "Taramaları Gerçek Zamanlı Olarak Dönüştürün",
+      "content": "Fotoğraf geliştirme ve PDF oluşturma, yüksek çözünürlüklü kamera çekimlerinde bile milisaniyeler içinde gerçekleşir.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [
     {
-      "q": "What photo formats are supported?",
-      "a": "JPG, PNG, WebP, and HEIC from modern cameras."
+      "q": "Hangi fotoğraf formatları destekleniyor?",
+      "a": "Modern kameralardan JPG, PNG, WebP ve HEIC."
     },
     {
-      "q": "Does it fix tilted scans?",
-      "a": "Yes, auto-deskew corrects slight angles automatically."
+      "q": "Eğik taramaları düzeltiyor mu?",
+      "a": "Evet, otomatik eğrilik düzeltme, hafif açıları otomatik olarak düzeltir."
     },
     {
-      "q": "Can I combine multiple scans?",
-      "a": "Yes, add multiple photos to create a multi-page PDF."
+      "q": "Birden fazla taramayı birleştirebilir miyim?",
+      "a": "Evet, çok sayfalı bir PDF oluşturmak için birden fazla fotoğraf ekleyin."
     },
     {
-      "q": "Does it enhance contrast?",
-      "a": "Yes, document enhancement mode sharpens text for clarity."
+      "q": "Kontrastı artırıyor mu?",
+      "a": "Evet, belge geliştirme modu metni netleştirmek için keskinleştirir."
     },
     {
-      "q": "Is this free?",
-      "a": "Evet, tamamen ücretsiz."
+      "q": "Bu bedava mı?",
+      "a": "Evet, her zaman ücretsiz."
     }
-  ]
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi"
 }

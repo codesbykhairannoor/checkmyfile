@@ -1,67 +1,85 @@
 {
-  "title": "Rotate PDF Pages — Fix Orientation Offline",
-  "h1": "Rotate PDF Pages to the Correct Orientation",
-  "description": "Fix upside-down or sideways PDF pages instantly in your browser. No upload. Perfect for users in Tokyo.",
+  "title": "PDF ページを回転 — オフラインで向きを修正",
+  "h1": "PDF ページを正しい向きに回転する",
+  "description": "ブラウザで PDF ページの上下逆または横向きを即座に修正します。 高速かつ完全に安全です。",
+  "buttonText": "Rotate Pages",
+  "badges": [
+    "90°/180°回転",
+    "バッチ処理",
+    "即時修正"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Rotate PDFs Locally?",
-      "content": "Scanned documents often come out sideways. Fix their orientation instantly without uploading anything to the cloud."
+      "type": "rotate_hero_features",
+      "title": "PDF をローカルで回転する理由",
+      "content": "スキャンした原稿が横向きになってしまうことがよくあります。 クラウドに何もアップロードせずに、向きを即座に修正します。"
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Rotate PDF Pages",
+      "type": "rotate_how_to_steps",
+      "title": "PDF ページを回転する方法",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page orientation."
+          "title": "PDF を開く",
+          "description": "ページの向きが正しくない PDF を読み込みます。"
         },
         {
-          "title": "Select Pages & Direction",
-          "description": "Choose pages to rotate and direction (90°, 180°, 270°)."
+          "title": "ページと方向を選択",
+          "description": "回転するページと方向 (90°、180°、270°) を選択します。"
         },
         {
-          "title": "Download Fixed PDF",
-          "description": "Save the correctly oriented PDF immediately."
+          "title": "修正済み PDF をダウンロード",
+          "description": "正しい方向の PDF をすぐに保存します。"
         }
-      ]
+      ],
+      "badgeText": "クイックガイド"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Rotation for Tokyo Offices",
-      "content": "Office workers in Tokyo fix scanner output orientation without relying on cloud services."
+      "type": "rotate_geo_targeting",
+      "title": "100% 安全なローカル処理",
+      "content": "すべての操作はローカル デバイス上で直接実行されます。 当社は高度な WebAssembly テクノロジーを使用して、ドキュメントを外部サーバーにアップロードすることなく処理し、完全なプライバシーを確​​保します。",
+      "badgeText": "ローカル処理"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Scanned Documents Stay Private",
-      "content": "Scanned medical or legal documents rotated locally without any server access."
+      "type": "rotate_privacy_security",
+      "title": "スキャンされた文書は非公開のまま",
+      "content": "スキャンされた医療文書または法的文書は、サーバーにアクセスせずにローカルでローテーションされます。",
+      "badgeText": "セキュリティ第一"
     },
     {
-      "type": "transform_performance",
-      "title": "Rotate Any PDF in Milliseconds",
-      "content": "Rotating 500 pages takes less than a second. No upload, no wait."
+      "type": "rotate_performance",
+      "title": "PDF をミリ秒単位で回転",
+      "content": "500 ページを回転するのに 1 秒もかかりません。 アップロードも待ち時間もありません。",
+      "badgeText": "超高速"
     }
   ],
   "faqs": [
     {
-      "q": "Can I rotate individual pages?",
-      "a": "Yes, select specific pages or all at once."
+      "q": "個々のページを回転できますか?",
+      "a": "はい、特定のページを選択するか、すべてを一度に選択します。"
     },
     {
-      "q": "What rotation angles are available?",
-      "a": "90°, 180°, and 270° clockwise and counter-clockwise."
+      "q": "どのような回転角度が利用可能ですか?",
+      "a": "時計回りと反時計回りに 90°、180°、270°。"
     },
     {
-      "q": "Does rotation affect image quality?",
-      "a": "No, rotation is lossless — no re-encoding occurs."
+      "q": "回転は画質に影響しますか?",
+      "a": "いいえ、回転はロスレスです。再エンコードは発生しません。"
     },
     {
-      "q": "Can I undo a rotation?",
-      "a": "Yes, apply the reverse rotation before downloading."
+      "q": "回転を元に戻すことはできますか?",
+      "a": "はい、ダウンロードする前に逆回転を適用します。"
     },
     {
-      "q": "Is this free?",
-      "a": "はい、完全無料です。"
+      "q": "これは無料ですか？",
+      "a": "はい、完全に無料です。"
     }
-  ]
+  ],
+  "faqTitle": "よくある質問",
+  "supportCenter": "サポート センター"
 }

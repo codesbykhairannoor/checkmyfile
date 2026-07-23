@@ -1,15 +1,27 @@
 {
   "title": "Image to PDF — Combine Photos Offline",
   "h1": "Convert Images to PDF Without Uploading",
-  "description": "Turn JPG, PNG, and WebP images into a single PDF document in your browser. Your photos stay private. Perfect for users in New York.",
+  "description": "Turn JPG, PNG, and WebP images into a single PDF document in your browser. Your photos stay private. 100% secure local processing.",
+  "buttonText": "Convert Images",
+  "badges": [
+    "Portfolios",
+    "ID Scans",
+    "Photo Albums"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
+      "type": "image_hero_features",
       "title": "Why Convert Images Offline?",
       "content": "Photos contain location data and personal moments. Convert them to PDF without exposing them to any cloud service."
     },
     {
-      "type": "combiner_how_to_steps",
+      "type": "image_how_to_steps",
       "title": "How to Turn Images Into PDF",
       "steps": [
         {
@@ -27,17 +39,17 @@
       ]
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Image to PDF for New York Users",
-      "content": "Photographers and designers in New York use our tool to package portfolios without cloud uploads."
+      "type": "image_geo_targeting",
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy."
     },
     {
-      "type": "combiner_privacy_security",
+      "type": "image_privacy_security",
       "title": "Photos Never Leave Your Device",
       "content": "Personal photos, ID scans, medical images — all converted 100% locally without any server contact."
     },
     {
-      "type": "combiner_performance",
+      "type": "image_performance",
       "title": "Batch Convert Instantly",
       "content": "Convert 50 images into a single PDF in under 5 seconds. No upload, no wait."
     }

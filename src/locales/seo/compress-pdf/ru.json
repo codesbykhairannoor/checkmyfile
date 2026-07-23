@@ -1,67 +1,85 @@
 {
-  "title": "Compress PDF Online - Reduce File Size",
-  "h1": "Compress PDF Documents without Losing Quality",
-  "description": "Shrink large PDF files up to 90% using adaptive lossless techniques directly in WebAssembly. Perfect for users in Moscow.",
+  "title": "Сжатие PDF онлайн — уменьшение размера файла",
+  "h1": "Сжимайте PDF-документы без потери качества",
+  "description": "Сжимайте большие PDF-файлы до 90 % с помощью адаптивных методов без потерь непосредственно в WebAssembly. 100% безопасная локальная обработка.",
   "sections": [
     {
-      "type": "comp_hero_features",
-      "title": "Why Compress PDF Offline?",
-      "content": "Large PDFs are a pain to email. Our compressor reduces file size drastically without blurring images, all from your browser."
+      "type": "compress_hero_features",
+      "title": "Зачем сжимать PDF в автономном режиме?",
+      "content": "Большие PDF-файлы неудобно отправлять по электронной почте. Наш компрессор значительно уменьшает размер файла, не размывая изображения, и все это прямо в вашем браузере."
     },
     {
-      "type": "comp_how_to_steps",
-      "title": "How to Shrink PDF Files",
+      "type": "compress_how_to_steps",
+      "title": "Как сжать PDF-файлы",
       "steps": [
         {
-          "title": "Upload Large File",
-          "description": "Select the hefty PDF you want to shrink."
+          "title": "Загрузить большой файл",
+          "description": "Выберите здоровенный PDF-файл, который хотите уменьшить."
         },
         {
-          "title": "Select Quality",
-          "description": "Choose between high quality or maximum compression."
+          "title": "Выберите качество",
+          "description": "Выбирайте между высоким качеством или максимальным сжатием."
         },
         {
-          "title": "Download Tiny PDF",
-          "description": "Get your compressed file instantly, ready to share."
+          "title": "Скачать крошечный PDF-файл",
+          "description": "Мгновенно получите сжатый файл, готовый к совместному использованию."
         }
-      ]
+      ],
+      "badgeText": "Краткое руководство"
     },
     {
-      "type": "comp_geo_targeting",
-      "title": "Optimized PDF Shrinking in Moscow, RU-MOW",
-      "content": "Working on a slow connection in Moscow? Compress your files locally so you can email them faster."
+      "type": "compress_geo_targeting",
+      "title": "100% безопасная локальная обработка",
+      "content": "Все операции выполняются непосредственно на вашем локальном устройстве. Мы используем передовую технологию WebAssembly для обработки ваших документов, не загружая их на внешние серверы, обеспечивая полную конфиденциальность.",
+      "badgeText": "Локальная обработка"
     },
     {
-      "type": "comp_privacy_security",
-      "title": "Secure Local Compression",
-      "content": "Compressing sensitive financial reports? Our algorithm works completely offline, keeping your data safe."
+      "type": "compress_privacy_security",
+      "title": "Безопасное локальное сжатие",
+      "content": "Сжимаете конфиденциальные финансовые отчеты? Наш алгоритм работает полностью в автономном режиме, сохраняя ваши данные в безопасности.",
+      "badgeText": "Безопасность превыше всего"
     },
     {
-      "type": "comp_performance",
-      "title": "Lightning Fast Shrink",
-      "content": "Compressing a 50MB file locally saves you the time of uploading 50MB and downloading 5MB back."
+      "type": "compress_performance",
+      "title": "Молниеносное сокращение",
+      "content": "Локальное сжатие файла размером 50 МБ экономит время на загрузку 50 МБ и обратную загрузку 5 МБ.",
+      "badgeText": "Молниеносно"
     }
   ],
   "faqs": [
     {
-      "q": "Will compressing my PDF make it blurry?",
-      "a": "No, our tool uses adaptive compression to maintain readability while reducing size."
+      "q": "Не сделает ли сжатие PDF-файла размытым?",
+      "a": "Нет, наш инструмент использует адаптивное сжатие, чтобы сохранить читаемость и уменьшить размер."
     },
     {
-      "q": "Are my files sent to a server to be compressed?",
-      "a": "No, the compression algorithm runs directly in your browser memory."
+      "q": "Мои файлы отправляются на сервер для сжатия?",
+      "a": "Нет, алгоритм сжатия работает непосредственно в памяти вашего браузера."
     },
     {
-      "q": "What is the maximum file size I can compress?",
-      "a": "Your browser memory is the only limit! You can compress massive files easily."
+      "q": "Какой максимальный размер файла я могу сжать?",
+      "a": "Память вашего браузера – единственный предел! Вы можете легко сжимать большие файлы."
     },
     {
-      "q": "Is this compression tool free?",
-      "a": "Absolutely free with no usage limits or premium paywalls."
+      "q": "Этот инструмент сжатия бесплатен?",
+      "a": "Абсолютно бесплатно, без ограничений на использование и платного доступа."
     },
     {
-      "q": "Can I compress multiple files at once?",
-      "a": "Batch compression is supported on modern browsers."
+      "q": "Могу ли я сжать несколько файлов одновременно?",
+      "a": "Пакетное сжатие поддерживается в современных браузерах."
     }
-  ]
+  ],
+  "badges": [
+    "Сжатие 90%",
+    "Вариант без потерь",
+    "Нет загрузок"
+  ],
+  "stats": [
+    "Zero Wait",
+    "High Quality",
+    "WebAssembly",
+    "Private"
+  ],
+  "buttonText": "Compress PDF",
+  "faqTitle": "Часто задаваемые вопросы",
+  "supportCenter": "Центр поддержки"
 }

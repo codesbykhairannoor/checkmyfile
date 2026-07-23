@@ -1,67 +1,85 @@
 {
-  "title": "Compare PDF Files — Spot Differences Locally",
-  "h1": "Compare Two PDF Documents Side by Side",
-  "description": "Upload two PDFs and highlight differences between them entirely in your browser. No upload to servers. Ideal for users in Hanoi.",
+  "title": "So sánh các tệp PDF - Phát hiện sự khác biệt cục bộ",
+  "h1": "So sánh hai tài liệu PDF cạnh nhau",
+  "description": "Tải lên hai tệp PDF và nêu bật sự khác biệt hoàn toàn giữa chúng trong trình duyệt của bạn. Không tải lên máy chủ. Xử lý cục bộ an toàn 100%.",
+  "buttonText": "Compare PDFs",
+  "badges": [
+    "Tìm sự khác biệt",
+    "Đánh dấu các thay đổi",
+    "Khác biệt trực quan"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Compare PDFs Locally?",
-      "content": "Comparing contract versions or document revisions often involves highly sensitive content. Do it entirely offline."
+      "type": "compare_hero_features",
+      "title": "Tại sao so sánh các tệp PDF cục bộ?",
+      "content": "Việc so sánh các phiên bản hợp đồng hoặc sửa đổi tài liệu thường liên quan đến nội dung có tính nhạy cảm cao. Làm điều đó hoàn toàn ngoại tuyến."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Compare Two PDFs",
+      "type": "compare_how_to_steps",
+      "title": "Cách so sánh hai tệp PDF",
       "steps": [
         {
-          "title": "Load Both PDFs",
-          "description": "Select the two PDF versions to compare."
+          "title": "Tải cả hai tệp PDF",
+          "description": "Chọn hai phiên bản PDF để so sánh."
         },
         {
-          "title": "View Differences",
-          "description": "Highlighted changes appear side by side."
+          "title": "Xem sự khác biệt",
+          "description": "Những thay đổi được đánh dấu xuất hiện cạnh nhau."
         },
         {
-          "title": "Export Diff Report",
-          "description": "Download a comparison report with all changes marked."
+          "title": "Xuất báo cáo khác biệt",
+          "description": "Tải xuống báo cáo so sánh với tất cả các thay đổi được đánh dấu."
         }
-      ]
+      ],
+      "badgeText": "Hướng dẫn nhanh"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Comparison for Hanoi Law Firms",
-      "content": "Legal professionals in Hanoi compare contract revisions without uploading privileged documents to cloud services."
+      "type": "compare_geo_targeting",
+      "title": "Xử lý cục bộ an toàn 100%",
+      "content": "Tất cả các hoạt động được thực hiện trực tiếp trên thiết bị cục bộ của bạn. Chúng tôi sử dụng công nghệ WebAssembly tiên tiến để xử lý tài liệu của bạn mà không cần tải chúng lên máy chủ bên ngoài, đảm bảo quyền riêng tư hoàn toàn.",
+      "badgeText": "Xử lý cục bộ"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Privileged Documents Stay Private",
-      "content": "Compare NDAs, contracts, and regulatory filings without any server interaction."
+      "type": "compare_privacy_security",
+      "title": "Tài liệu đặc quyền được giữ kín",
+      "content": "So sánh NDA, hợp đồng và hồ sơ pháp lý mà không có bất kỳ tương tác nào với máy chủ.",
+      "badgeText": "Bảo mật là trên hết"
     },
     {
-      "type": "organizer_performance",
-      "title": "Instant Side-by-Side Comparison",
-      "content": "Compare 100-page documents in seconds with highlighted differences rendered in-browser."
+      "type": "compare_performance",
+      "title": "So sánh song song tức thì",
+      "content": "So sánh các tài liệu 100 trang trong vài giây với những khác biệt được đánh dấu được hiển thị trong trình duyệt.",
+      "badgeText": "Nhanh như chớp"
     }
   ],
   "faqs": [
     {
-      "q": "What types of differences are detected?",
-      "a": "Text additions, deletions, and formatting changes are highlighted."
+      "q": "Những loại khác biệt được phát hiện?",
+      "a": "Việc thêm, xóa và thay đổi định dạng văn bản sẽ được đánh dấu."
     },
     {
-      "q": "Can I compare scanned PDFs?",
-      "a": "For scanned PDFs, use OCR first to extract text before comparing."
+      "q": "Tôi có thể so sánh các bản PDF được quét không?",
+      "a": "Đối với các tệp PDF được quét, trước tiên hãy sử dụng OCR để trích xuất văn bản trước khi so sánh."
     },
     {
-      "q": "Can I export the comparison?",
-      "a": "Yes, download a marked-up PDF showing all differences."
+      "q": "Tôi có thể xuất bản so sánh không?",
+      "a": "Có, hãy tải xuống bản PDF được đánh dấu hiển thị tất cả sự khác biệt."
     },
     {
-      "q": "How many versions can I compare?",
-      "a": "Two documents at a time in the side-by-side view."
+      "q": "Tôi có thể so sánh bao nhiêu phiên bản?",
+      "a": "Hai tài liệu cùng một lúc ở chế độ xem cạnh nhau."
     },
     {
-      "q": "Is this free?",
+      "q": "Cái này có miễn phí không?",
       "a": "Có, hoàn toàn miễn phí."
     }
-  ]
+  ],
+  "faqTitle": "Câu hỏi thường gặp",
+  "supportCenter": "Trung tâm hỗ trợ"
 }

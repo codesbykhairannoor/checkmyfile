@@ -1,67 +1,85 @@
 {
-  "title": "Remove PDF Metadata — Strip Hidden Author Data Offline",
-  "h1": "Strip All Hidden Metadata from PDF Files Instantly",
-  "description": "Remove author names, company info, GPS locations, and revision history from PDFs entirely in your browser. No upload. Perfect for Hanoi users.",
+  "title": "Xóa siêu dữ liệu PDF — Loại bỏ dữ liệu tác giả bị ẩn ngoại tuyến",
+  "h1": "Loại bỏ tất cả siêu dữ liệu ẩn khỏi tệp PDF ngay lập tức",
+  "description": "Xóa tên tác giả, thông tin công ty, vị trí GPS và lịch sử sửa đổi khỏi các tệp PDF hoàn toàn trong trình duyệt của bạn. Không tải lên. Xử lý cục bộ an toàn 100%.",
+  "buttonText": "Process Document",
+  "badges": [
+    "An toàn & Riêng tư",
+    "Công cụ ngoại tuyến",
+    "Không tải lên"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "metadata_hero_features",
-      "title": "Why Strip PDF Metadata?",
-      "content": "PDFs carry hidden metadata — your name, your company, revision history. Strip it all before sharing publicly, entirely offline."
+      "title": "Tại sao loại bỏ siêu dữ liệu PDF?",
+      "content": "Các tệp PDF mang siêu dữ liệu ẩn — tên của bạn, công ty của bạn, lịch sử sửa đổi. Hãy loại bỏ tất cả trước khi chia sẻ công khai, hoàn toàn ngoại tuyến."
     },
     {
       "type": "metadata_how_to_steps",
-      "title": "Before & After — How Metadata Removal Works",
+      "title": "Trước & Sau - Cách hoạt động của việc xóa siêu dữ liệu",
       "steps": [
         {
-          "title": "Open Your PDF",
-          "description": "Select the PDF with hidden metadata to remove."
+          "title": "Mở tệp PDF của bạn",
+          "description": "Chọn tệp PDF có siêu dữ liệu ẩn để xóa."
         },
         {
-          "title": "Preview Hidden Data",
-          "description": "See exactly what metadata — author, GPS, history — is embedded."
+          "title": "Xem trước dữ liệu ẩn",
+          "description": "Xem chính xác siêu dữ liệu nào - tác giả, GPS, lịch sử - được nhúng."
         },
         {
-          "title": "Strip & Download Clean PDF",
-          "description": "Remove all metadata instantly and save a clean, anonymous PDF."
+          "title": "Tách và tải xuống bản PDF sạch",
+          "description": "Xóa tất cả siêu dữ liệu ngay lập tức và lưu một tệp PDF sạch, ẩn danh."
         }
-      ]
+      ],
+      "badgeText": "Hướng dẫn nhanh"
     },
     {
       "type": "metadata_geo_targeting",
-      "title": "Metadata Privacy Tool for Hanoi Professionals",
-      "content": "Journalists, legal professionals, and privacy-conscious users in Hanoi strip metadata before publishing or sharing PDFs externally."
+      "title": "Xử lý cục bộ an toàn 100%",
+      "content": "Tất cả các hoạt động được thực hiện trực tiếp trên thiết bị cục bộ của bạn. Chúng tôi sử dụng công nghệ WebAssembly tiên tiến để xử lý tài liệu của bạn mà không cần tải chúng lên máy chủ bên ngoài, đảm bảo quyền riêng tư hoàn toàn.",
+      "badgeText": "Xử lý cục bộ"
     },
     {
       "type": "metadata_privacy_security",
-      "title": "All Metadata Types Permanently Erased",
-      "content": "Author name, company, GPS coordinates from embedded images, revision history, software fingerprints — all permanently removed."
+      "title": "Tất cả các loại siêu dữ liệu bị xóa vĩnh viễn",
+      "content": "Tên tác giả, công ty, tọa độ GPS từ hình ảnh nhúng, lịch sử sửa đổi, dấu vân tay phần mềm - tất cả đều bị xóa vĩnh viễn.",
+      "badgeText": "Bảo mật là trên hết"
     },
     {
       "type": "metadata_performance",
-      "title": "Strip Metadata in Milliseconds",
-      "content": "Metadata removal takes milliseconds and often reduces file size by 10–15%. All offline."
+      "title": "Tách siêu dữ liệu tính bằng mili giây",
+      "content": "Việc xóa siêu dữ liệu mất một phần nghìn giây và thường giảm kích thước tệp xuống 10–15%. Tất cả đều ngoại tuyến.",
+      "badgeText": "Nhanh như chớp"
     }
   ],
   "faqs": [
     {
-      "q": "What metadata is removed?",
-      "a": "Author, creator, producer, title, keywords, and all XMP/EXIF data."
+      "q": "Siêu dữ liệu nào bị xóa?",
+      "a": "Tác giả, người sáng tạo, nhà sản xuất, tiêu đề, từ khóa và tất cả dữ liệu XMP/EXIF."
     },
     {
-      "q": "Are document bookmarks affected?",
-      "a": "No, bookmarks and structure are preserved; only metadata is removed."
+      "q": "Dấu trang tài liệu có bị ảnh hưởng không?",
+      "a": "Không, dấu trang và cấu trúc được giữ nguyên; chỉ có siêu dữ liệu bị xóa."
     },
     {
-      "q": "Can I preview the metadata first?",
-      "a": "Yes, we show a list of all detected metadata before removing."
+      "q": "Tôi có thể xem trước siêu dữ liệu trước không?",
+      "a": "Có, chúng tôi hiển thị danh sách tất cả siêu dữ liệu được phát hiện trước khi xóa."
     },
     {
-      "q": "Is the document content affected?",
-      "a": "No, the content, images, and structure remain intact."
+      "q": "Nội dung tài liệu có bị ảnh hưởng không?",
+      "a": "Không, nội dung, hình ảnh và cấu trúc vẫn được giữ nguyên."
     },
     {
-      "q": "Is this free?",
-      "a": "Có, hoàn toàn miễn phí."
+      "q": "Cái này có miễn phí không?",
+      "a": "Có, luôn miễn phí."
     }
-  ]
+  ],
+  "faqTitle": "Câu hỏi thường gặp",
+  "supportCenter": "Trung tâm hỗ trợ"
 }

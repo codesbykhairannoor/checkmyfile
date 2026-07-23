@@ -1,0 +1,85 @@
+{
+  "title": "編輯 PDF — 永久刪除敏感資料",
+  "h1": "離線永久編輯 PDF 中的敏感資訊",
+  "description": "在瀏覽器中完全塗黑 PDF 中的敏感文字和圖像。 無雲端風險。 100% 安全的本地處理。",
+  "buttonText": "Redact Text",
+  "badges": [
+    "永久擦除",
+    "停電資訊",
+    "安全編輯"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "redact_hero_features",
+      "title": "為什麼要在本地編輯 PDF？",
+      "content": "編輯意味著內容被分類。 上傳您需要隱藏的文件就達不到目的。 我們的工具 100% 離線運行。"
+    },
+    {
+      "type": "redact_how_to_steps",
+      "title": "如何永久編輯 PDF",
+      "steps": [
+        {
+          "title": "開啟敏感文件",
+          "description": "載入包含必須隱藏的資料的 PDF。"
+        },
+        {
+          "title": "標記密文區域",
+          "description": "在要永久刪除的內容上畫框。"
+        },
+        {
+          "title": "申請並下載",
+          "description": "內容將從 PDF 結構中永久刪除。"
+        }
+      ],
+      "badgeText": "快速指南"
+    },
+    {
+      "type": "redact_geo_targeting",
+      "title": "100% 安全的本地處理",
+      "content": "所有操作都直接在本地設備上執行。 我們使用先進的 WebAssembly 技術來處理您的文檔，而無需將其上傳到外部伺服器，從而確保完全的隱私。",
+      "badgeText": "本地處理"
+    },
+    {
+      "type": "redact_privacy_security",
+      "title": "真正的永久編輯－不只是黑盒子",
+      "content": "與僅用黑框覆蓋文字的工具不同，我們的修訂會從 PDF 物件結構中永久刪除底層資料。",
+      "badgeText": "安全第一"
+    },
+    {
+      "type": "redact_performance",
+      "title": "立即編輯整個文件",
+      "content": "在幾秒鐘內對大型文件套用數百個永久編輯，完全離線。",
+      "badgeText": "快如閃電"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "修訂真的是永久性的嗎？",
+      "a": "是的，底層文字和影像資料將從 PDF 結構中永久刪除。"
+    },
+    {
+      "q": "我也可以編輯影像嗎？",
+      "a": "是的，文字區域和圖像區域都可以永久編輯。"
+    },
+    {
+      "q": "我可以選擇黑色或白色封面嗎？",
+      "a": "是的，選擇適合您文件的密文樣式。"
+    },
+    {
+      "q": "這符合法律標準嗎？",
+      "a": "我們的修訂刪除了 PDF 物件層級的數據，滿足法庭要求。"
+    },
+    {
+      "q": "這是免費的嗎？",
+      "a": "是的，永遠免費。"
+    }
+  ],
+  "faqTitle": "常見問題",
+  "supportCenter": "支援中心"
+}

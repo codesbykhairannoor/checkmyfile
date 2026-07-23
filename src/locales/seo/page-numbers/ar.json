@@ -1,67 +1,85 @@
 {
-  "title": "Add Page Numbers to PDF — Offline Number Stamp",
-  "h1": "Insert Page Numbers into PDF Documents Locally",
-  "description": "Stamp page numbers at the header or footer of your PDF entirely in your browser. No upload. Ideal for users in Riyadh.",
+  "title": "إضافة أرقام الصفحات إلى ملف PDF — ختم الرقم غير المتصل",
+  "h1": "إدراج أرقام الصفحات في مستندات PDF محليًا",
+  "description": "قم بختم أرقام الصفحات في رأس أو تذييل ملف PDF الخاص بك بالكامل في متصفحك. سريع وآمن تماما.",
+  "buttonText": "Add Page Numbers",
+  "badges": [
+    "موضع مخصص",
+    "رأس وتذييل الصفحة",
+    "ترقيم بيتس"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Add Page Numbers Offline?",
-      "content": "Page numbers are a formatting step, not a reason to upload confidential documents to a cloud service."
+      "type": "pagenum_hero_features",
+      "title": "لماذا تضيف أرقام الصفحات دون الاتصال بالإنترنت؟",
+      "content": "تعد أرقام الصفحات بمثابة خطوة تنسيق، وليست سببًا لتحميل المستندات السرية إلى خدمة سحابية."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Add Page Numbers",
+      "type": "pagenum_how_to_steps",
+      "title": "كيفية إضافة أرقام الصفحات",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to number."
+          "title": "افتح ملف PDF",
+          "description": "حدد ملف PDF إلى رقم."
         },
         {
-          "title": "Configure Style",
-          "description": "Choose position, format (1/12, Page 1, i, ii…), and font."
+          "title": "تكوين النمط",
+          "description": "اختر الموضع والتنسيق (1/12، الصفحة 1، i، ii...)، والخط."
         },
         {
-          "title": "Apply & Download",
-          "description": "Download your paginated PDF instantly."
+          "title": "تطبيق وتحميل",
+          "description": "قم بتنزيل ملف PDF المرقّم على الفور."
         }
-      ]
+      ],
+      "badgeText": "الدليل السريع"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Page Numbering for Riyadh Legal Docs",
-      "content": "Legal professionals in Riyadh number briefs and reports locally without cloud service dependency."
+      "type": "pagenum_geo_targeting",
+      "title": "معالجة محلية آمنة بنسبة 100%",
+      "content": "يتم تنفيذ جميع العمليات مباشرة على جهازك المحلي. نحن نستخدم تقنية WebAssembly المتقدمة لمعالجة مستنداتك دون تحميلها على خوادم خارجية، مما يضمن الخصوصية الكاملة.",
+      "badgeText": "المعالجة المحلية"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Internal Documents Stay Numbered & Private",
-      "content": "Add page numbers to contracts and confidential reports without any server involvement."
+      "type": "pagenum_privacy_security",
+      "title": "تظل المستندات الداخلية مرقمة وخاصة",
+      "content": "إضافة أرقام الصفحات إلى العقود والتقارير السرية دون أي تدخل من الخادم.",
+      "badgeText": "الأمن أولا"
     },
     {
-      "type": "organizer_performance",
-      "title": "Number a 1000-Page PDF Instantly",
-      "content": "Stamping page numbers locally takes milliseconds for any size document."
+      "type": "pagenum_performance",
+      "title": "قم بترقيم ملف PDF مكون من 1000 صفحة على الفور",
+      "content": "يستغرق ختم أرقام الصفحات محليًا ميلي ثانية لأي مستند بأي حجم.",
+      "badgeText": "بسرعة البرق"
     }
   ],
   "faqs": [
     {
-      "q": "What number formats are available?",
-      "a": "Arabic (1, 2, 3), Roman (i, ii, iii), and letter (a, b, c) formats."
+      "q": "ما هي تنسيقات الأرقام المتاحة؟",
+      "a": "التنسيقات العربية (1، 2، 3)، والرومانية (i، ii، iii)، والحروف (a، b، c)."
     },
     {
-      "q": "Can I start from a custom number?",
-      "a": "Yes, set any starting page number."
+      "q": "هل يمكنني البدء من رقم مخصص؟",
+      "a": "نعم، قم بتعيين أي رقم لصفحة البداية."
     },
     {
-      "q": "Can I skip numbering the first page?",
-      "a": "Yes, set the page offset to skip cover pages."
+      "q": "هل يمكنني تخطي ترقيم الصفحة الأولى؟",
+      "a": "نعم، قم بتعيين إزاحة الصفحة لتخطي صفحات الغلاف."
     },
     {
-      "q": "Where can I position numbers?",
-      "a": "Header-left, header-center, header-right, and same for footer."
+      "q": "أين يمكنني وضع الأرقام؟",
+      "a": "الرأس الأيسر، الرأس الأوسط، الرأس الأيمن، ونفس الشيء بالنسبة للتذييل."
     },
     {
-      "q": "Is this free?",
-      "a": "نعم، مجاناً تماماً."
+      "q": "هل هذا مجاني؟",
+      "a": "نعم، دائما مجانا."
     }
-  ]
+  ],
+  "faqTitle": "الأسئلة المتداولة",
+  "supportCenter": "مركز الدعم"
 }

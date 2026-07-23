@@ -1,67 +1,85 @@
 {
-  "title": "Password Protect PDF — Secure Files Offline",
-  "h1": "Add Password Protection to PDF Files Instantly",
-  "description": "Encrypt PDF files with AES-256 directly in your browser. Your document never leaves your device. Ideal for users in Hanoi.",
+  "title": "Mật khẩu bảo vệ PDF — Tệp an toàn ngoại tuyến",
+  "h1": "Thêm mật khẩu bảo vệ vào tệp PDF ngay lập tức",
+  "description": "Mã hóa tệp PDF bằng AES-256 trực tiếp trong trình duyệt của bạn. Tài liệu của bạn không bao giờ rời khỏi thiết bị của bạn. Xử lý cục bộ an toàn 100%.",
+  "buttonText": "Protect PDF",
+  "badges": [
+    "Mã hóa AES-256",
+    "Mật khẩu bảo mật",
+    "Chỉ phía khách hàng"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "protect_hero_features",
-      "title": "Why Protect PDFs Locally?",
-      "content": "Adding a password means the file is sensitive. Never upload sensitive files to a cloud encryptor. Ours runs entirely offline with AES-256 encryption."
+      "title": "Tại sao phải bảo vệ tệp PDF cục bộ?",
+      "content": "Thêm mật khẩu có nghĩa là tập tin nhạy cảm. Không bao giờ tải các tệp nhạy cảm lên bộ mã hóa đám mây. Của chúng tôi chạy hoàn toàn ngoại tuyến với mã hóa AES-256."
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Password Protect a PDF",
+      "title": "Cách bảo vệ mật khẩu PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF you want to lock."
+          "title": "Mở PDF",
+          "description": "Chọn tệp PDF bạn muốn khóa."
         },
         {
-          "title": "Set Password",
-          "description": "Choose a strong password for encryption."
+          "title": "Đặt mật khẩu",
+          "description": "Chọn một mật khẩu mạnh để mã hóa."
         },
         {
-          "title": "Download Protected PDF",
-          "description": "Get your AES-256 encrypted PDF immediately."
+          "title": "Tải xuống bản PDF được bảo vệ",
+          "description": "Nhận bản PDF được mã hóa AES-256 của bạn ngay lập tức."
         }
-      ]
+      ],
+      "badgeText": "Hướng dẫn nhanh"
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Vault-Level PDF Protection for Hanoi",
-      "content": "Legal and finance professionals in Hanoi encrypt documents with AES-256 strength without exposing files to any server."
+      "title": "Xử lý cục bộ an toàn 100%",
+      "content": "Tất cả các hoạt động được thực hiện trực tiếp trên thiết bị cục bộ của bạn. Chúng tôi sử dụng công nghệ WebAssembly tiên tiến để xử lý tài liệu của bạn mà không cần tải chúng lên máy chủ bên ngoài, đảm bảo quyền riêng tư hoàn toàn.",
+      "badgeText": "Xử lý cục bộ"
     },
     {
       "type": "protect_privacy_security",
-      "title": "AES-256 Encryption — Bank-Grade, Offline",
-      "content": "Military-grade AES-256 encryption runs in your browser. No key is ever transmitted to any server."
+      "title": "Mã hóa AES-256 — Cấp ngân hàng, ngoại tuyến",
+      "content": "Mã hóa AES-256 cấp quân sự chạy trong trình duyệt của bạn. Không có khóa nào được truyền đến bất kỳ máy chủ nào.",
+      "badgeText": "Bảo mật là trên hết"
     },
     {
       "type": "protect_performance",
-      "title": "Encrypt Any PDF in Under 1 Second",
-      "content": "AES-256 processing locally takes milliseconds — no upload, no queue, no wait."
+      "title": "Mã hóa mọi tệp PDF trong dưới 1 giây",
+      "content": "Quá trình xử lý AES-256 cục bộ mất một phần nghìn giây — không tải lên, không xếp hàng, không chờ đợi.",
+      "badgeText": "Nhanh như chớp"
     }
   ],
   "faqs": [
     {
-      "q": "What encryption standard is used?",
-      "a": "AES-256, the same standard used by banks and governments."
+      "q": "Tiêu chuẩn mã hóa nào được sử dụng?",
+      "a": "AES-256, tiêu chuẩn tương tự được các ngân hàng và chính phủ sử dụng."
     },
     {
-      "q": "Can I set different owner and user passwords?",
-      "a": "Yes, you can set both separately."
+      "q": "Tôi có thể đặt mật khẩu chủ sở hữu và người dùng khác nhau không?",
+      "a": "Có, bạn có thể đặt riêng cả hai."
     },
     {
-      "q": "Is the original file modified?",
-      "a": "No, a new encrypted copy is created."
+      "q": "File gốc có bị sửa đổi không?",
+      "a": "Không, một bản sao mã hóa mới sẽ được tạo."
     },
     {
-      "q": "Can I restrict printing or editing?",
-      "a": "Yes, permission restrictions can be set alongside the password."
+      "q": "Tôi có thể hạn chế in ấn hoặc chỉnh sửa không?",
+      "a": "Có, các hạn chế về quyền có thể được đặt cùng với mật khẩu."
     },
     {
-      "q": "Is this free?",
+      "q": "Cái này có miễn phí không?",
       "a": "Có, hoàn toàn miễn phí."
     }
-  ]
+  ],
+  "faqTitle": "Câu hỏi thường gặp",
+  "supportCenter": "Trung tâm hỗ trợ"
 }

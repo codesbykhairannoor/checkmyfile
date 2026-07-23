@@ -1,67 +1,85 @@
 {
-  "title": "Crop PDF Margins — Trim Pages Offline",
-  "h1": "Crop and Trim PDF Page Margins Instantly",
-  "description": "Remove unwanted whitespace or crop PDF pages to custom dimensions, all locally. No upload. Ideal for users in Budapest.",
+  "title": "PDF-margók körbevágása — Oldalak offline vágása",
+  "h1": "PDF-oldalmargók levágása és levágása azonnal",
+  "description": "Távolítsa el a nem kívánt szóközöket, vagy vágja le a PDF-oldalakat egyéni méretekre, mindezt helyileg. Gyors és teljesen biztonságos.",
+  "buttonText": "Crop PDF",
+  "badges": [
+    "Vizuális margószerkesztő",
+    "Egységes vágás",
+    "Nulla késleltetés"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Crop PDFs Locally?",
-      "content": "Scanned documents often have large margins. Crop them locally without exposing internal document structure to the cloud."
+      "type": "crop_hero_features",
+      "title": "Miért vágja le a PDF-eket helyben?",
+      "content": "A szkennelt dokumentumok gyakran nagy margókkal rendelkeznek. Vágja le őket helyben anélkül, hogy a belső dokumentumszerkezetet a felhőnek tenné ki."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Crop PDF Pages",
+      "type": "crop_how_to_steps",
+      "title": "PDF-oldalak körbevágása",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to crop."
+          "title": "PDF megnyitása",
+          "description": "Töltse be a levágni kívánt PDF-fájlt."
         },
         {
-          "title": "Set Margins",
-          "description": "Drag guides or enter exact margin values."
+          "title": "Margók beállítása",
+          "description": "Húzza a segédvonalakat, vagy adja meg a pontos margóértékeket."
         },
         {
-          "title": "Export Cropped PDF",
-          "description": "Download the trimmed PDF instantly."
+          "title": "Kivágott PDF exportálása",
+          "description": "Azonnal töltse le a vágott PDF-fájlt."
         }
-      ]
+      ],
+      "badgeText": "Gyors útmutató"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Precise Cropping for Budapest Users",
-      "content": "Architects and designers in Budapest use our crop tool to clean up scanned blueprints without cloud uploads."
+      "type": "crop_geo_targeting",
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Minden művelet közvetlenül a helyi eszközön történik. Fejlett WebAssembly technológiát használunk a dokumentumok feldolgozásához anélkül, hogy azokat külső szerverekre feltöltenénk, így biztosítva a teljes adatvédelmet.",
+      "badgeText": "Helyi feldolgozás"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Technical Documents Stay Local",
-      "content": "Architectural plans and legal PDFs cropped locally without any server round-trip."
+      "type": "crop_privacy_security",
+      "title": "A műszaki dokumentumok helyben maradnak",
+      "content": "Az építészeti tervek és a jogi PDF-ek helyben vágva, kiszolgálói oda-vissza út nélkül.",
+      "badgeText": "Első a biztonság"
     },
     {
-      "type": "split_performance",
-      "title": "Crop Any Size PDF Instantly",
-      "content": "Crop margins from a 200-page document in under 2 seconds. All in your browser."
+      "type": "crop_performance",
+      "title": "Bármilyen méretű PDF levágása azonnal",
+      "content": "Vágja le a margókat egy 200 oldalas dokumentumból kevesebb mint 2 másodperc alatt. Mindezt a böngészőjében.",
+      "badgeText": "Villámgyors"
     }
   ],
   "faqs": [
     {
-      "q": "Can I crop all pages uniformly?",
-      "a": "Yes, apply the same crop to every page at once."
+      "q": "Levághatom az összes oldalt egységesen?",
+      "a": "Igen, egyszerre alkalmazza ugyanazt a körbevágást minden oldalra."
     },
     {
-      "q": "Can I crop individual pages?",
-      "a": "Yes, you can set per-page crop values."
+      "q": "Levághatom az egyes oldalakat?",
+      "a": "Igen, beállíthat oldalankénti kivágási értékeket."
     },
     {
-      "q": "What are the minimum margin values?",
-      "a": "You can crop all the way to 0 margin on any side."
+      "q": "Melyek a minimális árrésértékek?",
+      "a": "Bármelyik oldalon levághatja a 0 margót."
     },
     {
-      "q": "Will content be cut off?",
-      "a": "Only whitespace is removed by default; you control the guides."
+      "q": "Le lesz vágva a tartalom?",
+      "a": "Alapértelmezés szerint csak a szóközök törlődnek; te irányítod az útmutatókat."
     },
     {
-      "q": "Is this free?",
+      "q": "Ez ingyenes?",
       "a": "Igen, teljesen ingyenes."
     }
-  ]
+  ],
+  "faqTitle": "Gyakran Ismételt Kérdések",
+  "supportCenter": "Támogatási Központ"
 }

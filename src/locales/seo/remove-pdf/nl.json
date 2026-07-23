@@ -1,0 +1,85 @@
+{
+  "title": "Pagina's uit PDF verwijderen — PDF-pagina's offline verwijderen",
+  "h1": "Pagina's direct uit PDF verwijderen",
+  "description": "Verwijder ongewenste pagina's veilig uit uw PDF-bestand in uw browser. Snel en volledig veilig.",
+  "buttonText": "Remove Pages",
+  "badges": [
+    "Selecteer en verwijder",
+    "Visuele editor",
+    "Geen latentie"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "remove_hero_features",
+      "title": "Waarom pagina's lokaal verwijderen?",
+      "content": "Het verwijderen van gevoelige of onnodige pagina's uit uw document moet op uw apparaat gebeuren, niet op een server. Wij garanderen 100% privacy."
+    },
+    {
+      "type": "remove_how_to_steps",
+      "title": "Hoe PDF-pagina's te verwijderen",
+      "steps": [
+        {
+          "title": "PDF openen",
+          "description": "Laad de PDF die u wilt opschonen."
+        },
+        {
+          "title": "Selecteer Pagina's om te verwijderen",
+          "description": "Beweeg over pagina's en klik op het prullenbakpictogram om ze te markeren voor verwijdering."
+        },
+        {
+          "title": "Schone PDF exporteren",
+          "description": "Download uw nieuwe PDF zonder de verwijderde pagina's."
+        }
+      ],
+      "badgeText": "Beknopte handleiding"
+    },
+    {
+      "type": "remove_geo_targeting",
+      "title": "100% veilige lokale verwerking",
+      "content": "Alle bewerkingen worden rechtstreeks op uw lokale apparaat uitgevoerd. We gebruiken geavanceerde WebAssembly-technologie om uw documenten te verwerken zonder ze ooit naar externe servers te uploaden, waardoor volledige privacy wordt gegarandeerd.",
+      "badgeText": "Lokale verwerking"
+    },
+    {
+      "type": "remove_privacy_security",
+      "title": "Totale verwijderingsprivacy",
+      "content": "Wanneer u een pagina verwijdert, wordt deze definitief verwijderd uit het document in uw browsergeheugen voordat deze wordt opgeslagen.",
+      "badgeText": "Beveiliging eerst"
+    },
+    {
+      "type": "remove_performance",
+      "title": "Directe paginaverwijdering",
+      "content": "Het extraheren en verwijderen van pagina's uit zelfs een document van 1000 pagina's duurt milliseconden met behulp van onze geoptimaliseerde WASM-engine.",
+      "badgeText": "Bliksemsnel"
+    }
+  ],
+  "faqTitle": "Veelgestelde vragen",
+  "faqs": [
+    {
+      "q": "Kunnen de verwijderde pagina's worden hersteld?",
+      "a": "Zodra u de nieuwe PDF downloadt, worden de verwijderde pagina's permanent uit dat bestand verwijderd. Uw originele bestand blijft onaangeroerd."
+    },
+    {
+      "q": "Moet ik mijn PDF uploaden?",
+      "a": "Nee. Het hele proces voor het verwijderen van pagina's gebeurt lokaal in uw webbrowser."
+    },
+    {
+      "q": "Is er een limiet aan het aantal pagina's dat ik kan verwijderen?",
+      "a": "Nee, u kunt zoveel pagina's verwijderen als u wilt, helemaal gratis."
+    },
+    {
+      "q": "Zal de lay-out van de resterende pagina's veranderen?",
+      "a": "Nee, de overige pagina's behouden hun exacte originele opmaak en lay-out."
+    },
+    {
+      "q": "Kan ik meerdere pagina's tegelijk selecteren?",
+      "a": "Ja, u kunt op meerdere pagina's klikken om ze allemaal tegelijk te markeren voor verwijdering."
+    }
+  ],
+  "supportCenter": "Ondersteuningscentrum"
+}

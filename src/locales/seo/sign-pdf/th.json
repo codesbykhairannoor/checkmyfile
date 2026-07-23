@@ -1,67 +1,85 @@
 {
-  "title": "Sign PDF Online — Draw Signature Offline",
-  "h1": "Sign PDF Documents With Your Signature Without Uploading",
-  "description": "Draw, type, or upload your signature and place it on PDFs entirely in your browser. No cloud. Perfect for users in Bangkok.",
+  "title": "ลงนาม PDF ออนไลน์ — วาดลายเซ็นออฟไลน์",
+  "h1": "ลงนามในเอกสาร PDF ด้วยลายเซ็นของคุณโดยไม่ต้องอัปโหลด",
+  "description": "วาด พิมพ์ หรืออัปโหลดลายเซ็นของคุณแล้ววางลงบน PDF ทั้งหมดในเบราว์เซอร์ของคุณ ไม่มีเมฆ. การประมวลผลภายในที่ปลอดภัย 100%",
+  "buttonText": "Sign PDF",
+  "badges": [
+    "ลายเซ็นดิจิทัล",
+    "วาดหรือพิมพ์",
+    "มีผลผูกพันทางกฎหมาย"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "sign_hero_features",
-      "title": "Why Sign PDFs Locally?",
-      "content": "Your signature is your identity. Never upload your drawn signature or a private contract to a third-party cloud signing service."
+      "title": "เหตุใดจึงลงนาม PDF ในเครื่อง?",
+      "content": "ลายเซ็นของคุณคือตัวตนของคุณ อย่าอัปโหลดลายเซ็นที่วาดไว้หรือสัญญาส่วนตัวไปยังบริการลงนามบนคลาวด์ของบุคคลที่สาม"
     },
     {
       "type": "sign_how_to_steps",
-      "title": "How to Sign a PDF in 3 Steps",
+      "title": "วิธีเซ็นชื่อ PDF ใน 3 ขั้นตอน",
       "steps": [
         {
-          "title": "Create Your Signature",
-          "description": "Draw with mouse, type in signature font, or upload an image."
+          "title": "สร้างลายเซ็นของคุณ",
+          "description": "วาดด้วยเมาส์ พิมพ์ฟอนต์ลายเซ็น หรืออัพโหลดรูปภาพ"
         },
         {
-          "title": "Place on Document",
-          "description": "Drag and resize your signature to the correct position."
+          "title": "วางบนเอกสาร",
+          "description": "ลากและปรับขนาดลายเซ็นของคุณไปยังตำแหน่งที่ถูกต้อง"
         },
         {
-          "title": "Download Signed PDF",
-          "description": "Save your signed document immediately, no account needed."
+          "title": "ดาวน์โหลด PDF ที่ลงนามแล้ว",
+          "description": "บันทึกเอกสารที่ลงนามของคุณทันที ไม่จำเป็นต้องใช้บัญชี"
         }
-      ]
+      ],
+      "badgeText": "คู่มือฉบับย่อ"
     },
     {
       "type": "sign_geo_targeting",
-      "title": "Private Digital Signatures for Bangkok",
-      "content": "Freelancers and businesses in Bangkok sign contracts, NDAs, and agreements without exposing their identity or documents to any cloud service."
+      "title": "การประมวลผลภายในที่ปลอดภัย 100%",
+      "content": "การดำเนินการทั้งหมดดำเนินการโดยตรงบนอุปกรณ์ท้องถิ่นของคุณ เราใช้เทคโนโลยี WebAssembly ขั้นสูงเพื่อประมวลผลเอกสารของคุณโดยไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ภายนอก เพื่อให้มั่นใจถึงความเป็นส่วนตัวโดยสมบูรณ์",
+      "badgeText": "การประมวลผลในท้องถิ่น"
     },
     {
       "type": "sign_privacy_security",
-      "title": "Your Signature Identity Stays Private",
-      "content": "Your drawn signature and signed document are processed entirely in browser memory — never stored, never transmitted."
+      "title": "ข้อมูลประจำตัวลายเซ็นของคุณยังคงเป็นส่วนตัว",
+      "content": "ลายเซ็นที่วาดและเอกสารที่เซ็นชื่อของคุณจะถูกประมวลผลในหน่วยความจำเบราว์เซอร์ทั้งหมด — ไม่เคยจัดเก็บ และไม่เคยส่ง",
+      "badgeText": "ความปลอดภัยต้องมาก่อน"
     },
     {
       "type": "sign_performance",
-      "title": "Sign Any Document in Under 30 Seconds",
-      "content": "No account, no upload, no cloud. Draw, place, and download your signed PDF in under 30 seconds."
+      "title": "ลงนามในเอกสารใดๆ ภายใน 30 วินาที",
+      "content": "ไม่มีบัญชี ไม่มีการอัพโหลด ไม่มีคลาวด์ วาด วาง และดาวน์โหลดไฟล์ PDF ที่ลงนามของคุณภายในเวลาไม่ถึง 30 วินาที",
+      "badgeText": "เร็วปานสายฟ้า"
     }
   ],
   "faqs": [
     {
-      "q": "How can I create my signature?",
-      "a": "Draw with your mouse, type your name in a signature font, or upload an image."
+      "q": "ฉันจะสร้างลายเซ็นของฉันได้อย่างไร?",
+      "a": "วาดด้วยเมาส์ พิมพ์ชื่อของคุณในแบบอักษรลายเซ็น หรืออัพโหลดรูปภาพ"
     },
     {
-      "q": "Can I sign multiple pages?",
-      "a": "Yes, place your signature on any or all pages."
+      "q": "ฉันสามารถลงนามหลายหน้าได้หรือไม่?",
+      "a": "ใช่ วางลายเซ็นของคุณในหน้าใด ๆ หรือทั้งหมด"
     },
     {
-      "q": "Is the signature legally binding?",
-      "a": "Our tool applies a visual signature. For legally binding e-signatures, check your jurisdiction."
+      "q": "ลายเซ็นมีผลผูกพันตามกฎหมายหรือไม่?",
+      "a": "เครื่องมือของเราใช้ลายเซ็นที่เป็นภาพ สำหรับลายเซ็นอิเล็กทรอนิกส์ที่มีผลผูกพันตามกฎหมาย โปรดตรวจสอบเขตอำนาจศาลของคุณ"
     },
     {
-      "q": "Can I resize the signature?",
-      "a": "Yes, drag the corners to resize it after placing."
+      "q": "ฉันสามารถปรับขนาดลายเซ็นได้หรือไม่?",
+      "a": "ใช่ ลากมุมเพื่อปรับขนาดหลังจากวาง"
     },
     {
-      "q": "Is this free?",
-      "a": "ใช่ ฟรีทั้งหมด"
+      "q": "ฟรีหรือเปล่า?",
+      "a": "ใช่ สมบูรณ์ฟรี"
     }
-  ]
+  ],
+  "faqTitle": "คำถามที่พบบ่อย",
+  "supportCenter": "ศูนย์สนับสนุน"
 }

@@ -1,0 +1,85 @@
+{
+  "title": "Eliminați paginile din PDF — Ștergeți paginile PDF offline",
+  "h1": "Eliminați paginile din PDF instantaneu",
+  "description": "Ștergeți paginile nedorite din fișierul PDF în siguranță în browser. Rapid și complet sigur.",
+  "buttonText": "Remove Pages",
+  "badges": [
+    "Selectați și ștergeți",
+    "Editor vizual",
+    "Latență zero"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "remove_hero_features",
+      "title": "De ce să eliminați paginile local?",
+      "content": "Ștergerea paginilor sensibile sau inutile din documentul dvs. ar trebui să se facă pe dispozitivul dvs., nu pe un server. Asigurăm 100% confidențialitate."
+    },
+    {
+      "type": "remove_how_to_steps",
+      "title": "Cum să eliminați paginile PDF",
+      "steps": [
+        {
+          "title": "Deschide PDF",
+          "description": "Încărcați PDF-ul pe care doriți să îl curățați."
+        },
+        {
+          "title": "Selectați Pagini de șters",
+          "description": "Treceți cursorul peste pagini și faceți clic pe pictograma coș de gunoi pentru a le marca pentru ștergere."
+        },
+        {
+          "title": "Exportați PDF curat",
+          "description": "Descărcați noul PDF fără paginile șterse."
+        }
+      ],
+      "badgeText": "Ghid rapid"
+    },
+    {
+      "type": "remove_geo_targeting",
+      "title": "Procesare locală 100% sigură",
+      "content": "Toate operațiunile sunt efectuate direct pe dispozitivul local. Folosim tehnologie avansată WebAssembly pentru a vă procesa documentele fără a le încărca vreodată pe servere externe, asigurând confidențialitate completă.",
+      "badgeText": "Prelucrare locală"
+    },
+    {
+      "type": "remove_privacy_security",
+      "title": "Ștergere totală Confidențialitate",
+      "content": "Când eliminați o pagină, aceasta este ștearsă definitiv din documentul din memoria browserului dumneavoastră înainte de salvare.",
+      "badgeText": "Securitatea în primul rând"
+    },
+    {
+      "type": "remove_performance",
+      "title": "Eliminarea instantanee a paginii",
+      "content": "Extragerea și ștergerea paginilor chiar și dintr-un document de 1000 de pagini durează milisecunde folosind motorul nostru optimizat WASM.",
+      "badgeText": "Rapid fulger"
+    }
+  ],
+  "faqTitle": "Întrebări frecvente",
+  "faqs": [
+    {
+      "q": "Sunt paginile șterse recuperabile?",
+      "a": "Odată ce descărcați noul PDF, paginile șterse sunt șterse definitiv din acel fișier. Fișierul original rămâne neatins."
+    },
+    {
+      "q": "Trebuie să-mi încarc PDF-ul?",
+      "a": "Nu. Întregul proces de eliminare a paginii are loc local în browserul dvs. web."
+    },
+    {
+      "q": "Există o limită la câte pagini pot șterge?",
+      "a": "Nu, puteți șterge câte pagini doriți, complet gratuit."
+    },
+    {
+      "q": "Se va schimba aspectul paginilor rămase?",
+      "a": "Nu, paginile rămase își vor păstra formatarea și aspectul original exact."
+    },
+    {
+      "q": "Pot selecta mai multe pagini simultan?",
+      "a": "Da, puteți face clic pe mai multe pagini pentru a le marca pe toate pentru ștergere simultan."
+    }
+  ],
+  "supportCenter": "Centrul de suport"
+}

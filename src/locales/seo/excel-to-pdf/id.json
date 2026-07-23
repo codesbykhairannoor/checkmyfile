@@ -1,67 +1,85 @@
 {
-  "title": "Excel to PDF — Convert Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to PDF Securely",
-  "description": "Turn .xlsx and .csv files into crisp PDFs locally in your browser. Financial data stays on your device. Perfect for users in Jakarta.",
+  "title": "Excel ke PDF — Konversi Spreadsheet Offline",
+  "h1": "Konversikan Excel Spreadsheet ke PDF dengan Aman",
+  "description": "Ubah file .xlsx dan .csv menjadi PDF segar secara lokal di browser Anda. Data keuangan tetap ada di perangkat Anda. Pemrosesan lokal 100% aman.",
+  "buttonText": "Convert Spreadsheet",
+  "badges": [
+    "Laporan Keuangan",
+    "Faktur",
+    "Ekspor Data"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Excel Offline?",
-      "content": "Spreadsheets often contain sensitive financial data. Our browser-based engine converts without any server involvement."
+      "type": "excel_hero_features",
+      "title": "Mengapa Mengonversi Excel Offline?",
+      "content": "Spreadsheet sering kali berisi data keuangan sensitif. Mesin berbasis browser kami melakukan konversi tanpa keterlibatan server apa pun."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Export Excel as PDF",
+      "type": "excel_how_to_steps",
+      "title": "Cara Mengekspor Excel sebagai PDF",
       "steps": [
         {
-          "title": "Open Spreadsheet",
-          "description": "Select your .xlsx or .csv file."
+          "title": "Buka Spreadsheet",
+          "description": "Pilih file .xlsx atau .csv Anda."
         },
         {
-          "title": "Choose Sheet Range",
-          "description": "Pick which sheets or rows to include."
+          "title": "Pilih Rentang Lembar",
+          "description": "Pilih lembar atau baris mana yang akan disertakan."
         },
         {
-          "title": "Export as PDF",
-          "description": "Download your spreadsheet as a clean PDF."
+          "title": "Ekspor sebagai PDF",
+          "description": "Unduh spreadsheet Anda sebagai PDF bersih."
         }
-      ]
+      ],
+      "badgeText": "Panduan Singkat"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Excel to PDF for Jakarta Businesses",
-      "content": "Businesses in Jakarta use our tool to share financial reports without exposing raw spreadsheet data."
+      "type": "excel_geo_targeting",
+      "title": "Pemrosesan Lokal 100% Aman",
+      "content": "Semua operasi dilakukan langsung di perangkat lokal Anda. Kami menggunakan teknologi WebAssembly yang canggih untuk memproses dokumen Anda tanpa harus mengunggahnya ke server eksternal, sehingga memastikan privasi sepenuhnya.",
+      "badgeText": "Pemrosesan Lokal"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Protect Financial Spreadsheets",
-      "content": "Balance sheets, payroll data — all processed offline. Zero data sent to any third party."
+      "type": "excel_privacy_security",
+      "title": "Lindungi Spreadsheet Keuangan",
+      "content": "Neraca, data penggajian — semuanya diproses secara offline. Tidak ada data yang dikirim ke pihak ketiga mana pun.",
+      "badgeText": "Keamanan Pertama"
     },
     {
-      "type": "combiner_performance",
-      "title": "Spreadsheet-to-PDF in Seconds",
-      "content": "No upload queue, no compression artifacts. Your spreadsheet renders natively in-browser."
+      "type": "excel_performance",
+      "title": "Spreadsheet-ke-PDF dalam Hitungan Detik",
+      "content": "Tidak ada antrian unggah, tidak ada artefak kompresi. Spreadsheet Anda ditampilkan secara asli di browser.",
+      "badgeText": "Secepat Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "Are all Excel formulas preserved?",
-      "a": "Yes, formula results are captured in the PDF snapshot."
+      "q": "Apakah semua rumus Excel dipertahankan?",
+      "a": "Ya, hasil rumus diambil dalam cuplikan PDF."
     },
     {
-      "q": "Can I convert multiple sheets?",
-      "a": "Yes, you can include all sheets or specific ones."
+      "q": "Bisakah saya mengonversi beberapa lembar?",
+      "a": "Ya, Anda dapat menyertakan semua sheet atau lembar tertentu."
     },
     {
-      "q": "What file types are supported?",
-      "a": ".xlsx, .xls, and .csv are all supported."
+      "q": "Jenis file apa yang didukung?",
+      "a": ".xlsx, .xls, dan .csv semuanya didukung."
     },
     {
-      "q": "Is this secure for financial data?",
-      "a": "Absolutely. The file never leaves your browser."
+      "q": "Apakah ini aman untuk data keuangan?",
+      "a": "Sangat. File tidak pernah meninggalkan browser Anda."
     },
     {
-      "q": "Does it support graphs?",
-      "a": "Ya, sepenuhnya gratis."
+      "q": "Apakah ini mendukung grafik?",
+      "a": "Bagan dan grafik yang disematkan ditampilkan dalam PDF."
     }
-  ]
+  ],
+  "faqTitle": "Pertanyaan yang Sering Diajukan",
+  "supportCenter": "Pusat Dukungan"
 }

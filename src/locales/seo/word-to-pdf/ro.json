@@ -1,67 +1,80 @@
 {
-  "title": "Word to PDF Converter — No Upload Required",
-  "h1": "Convert Word Documents to PDF Instantly",
-  "description": "Transform .docx files into perfect PDFs directly in your browser. Zero upload, 100% private. Ideal for users in Bucharest.",
+  "title": "Convertor Word în PDF — Nu este necesară încărcarea",
+  "h1": "Convertiți instantaneu documentele Word în PDF",
+  "description": "Transformați fișierele .docx în PDF-uri perfecte direct în browser. Nicio încărcare, 100% privat. Ideal pentru utilizatorii din Bucuresti.",
+  "buttonText": "Convertiți documentul",
+  "badges": [
+    "Contracte de muncă",
+    "Informații juridice",
+    "CV-uri și CV-uri"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Timp de așteptare"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Word to PDF Offline?",
-      "content": "Your Word document contains sensitive data. Our converter runs entirely in WebAssembly — your file never touches a server."
+      "type": "word_hero_features",
+      "title": "De ce să folosiți offline?",
+      "content": "Documentul dvs. Word conține date sensibile. Convertorul nostru rulează în întregime în WebAssembly - fișierul dvs. nu atinge niciodată un server."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Word to PDF",
+      "type": "word_how_to_steps",
+      "title": "Cum se utilizează",
       "steps": [
         {
-          "title": "Select .docx File",
-          "description": "Pick your Word document from your computer."
+          "title": "Selectați fișierul .docx",
+          "description": "Alegeți documentul Word de pe computer."
         },
         {
-          "title": "Preview Output",
-          "description": "See the PDF rendering before finalizing."
+          "title": "Previzualizare ieșire",
+          "description": "Vedeți redarea PDF înainte de finalizare."
         },
         {
-          "title": "Download PDF",
-          "description": "Save your perfectly converted PDF instantly."
+          "title": "Descărcați PDF",
+          "description": "Salvați instantaneu PDF-ul perfect convertit."
         }
       ]
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Word to PDF for Bucharest Users",
-      "content": "Used by professionals in Bucharest who need to share documents without losing formatting."
+      "type": "word_geo_targeting",
+      "title": "Word to PDF pentru utilizatorii din Bucuresti",
+      "content": "Folosit de profesioniști din București care au nevoie să partajeze documente fără a pierde formatarea."
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Your Contracts Stay Private",
-      "content": "Converting employment contracts? Legal briefs? Our WASM processor never phones home."
+      "type": "word_privacy_security",
+      "title": "Contractele dvs. rămân private",
+      "content": "Transformarea contractelor de muncă? Informații juridice? Procesorul nostru WASM nu sună niciodată acasă."
     },
     {
-      "type": "combiner_performance",
-      "title": "No More Conversion Queues",
-      "content": "Cloud converters put you in a queue. Ours converts in under 2 seconds, entirely offline."
+      "type": "word_performance",
+      "title": "Nu mai sunt cozi de conversie",
+      "content": "Convertorii în cloud vă pun într-o coadă. Al nostru se convertește în mai puțin de 2 secunde, complet offline."
     }
   ],
   "faqs": [
     {
-      "q": "Does it preserve Word formatting?",
-      "a": "Yes, fonts, tables, and images are preserved using our WASM renderer."
+      "q": "Păstrează formatarea Word?",
+      "a": "Da, fonturile, tabelele și imaginile sunt păstrate folosind redarea noastră WASM."
     },
     {
-      "q": "What Word versions are supported?",
-      "a": "All modern .docx files are supported."
+      "q": "Ce versiuni Word sunt acceptate?",
+      "a": "Toate fișierele .docx moderne sunt acceptate."
     },
     {
-      "q": "Is there a file size limit?",
-      "a": "No server limits! Only your device RAM is the constraint."
+      "q": "Există o limită de dimensiune a fișierului?",
+      "a": "Fără limite de server! Constrângerea este doar RAM-ul dispozitivului dvs."
     },
     {
-      "q": "Can I batch convert multiple files?",
-      "a": "Yes, select multiple .docx files at once."
+      "q": "Pot converti în loturi mai multe fișiere?",
+      "a": "Da, selectați mai multe fișiere .docx simultan."
     },
     {
-      "q": "Is this free?",
+      "q": "Este gratuit?",
       "a": "Da, complet gratuit."
     }
-  ]
+  ],
+  "faqTitle": "Întrebări Frecvente"
 }

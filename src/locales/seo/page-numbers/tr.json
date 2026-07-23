@@ -1,67 +1,85 @@
 {
-  "title": "Add Page Numbers to PDF — Offline Number Stamp",
-  "h1": "Insert Page Numbers into PDF Documents Locally",
-  "description": "Stamp page numbers at the header or footer of your PDF entirely in your browser. No upload. Ideal for users in Istanbul.",
+  "title": "PDF'ye Sayfa Numaraları Ekle — Çevrimdışı Numara Damgası",
+  "h1": "PDF Belgelerine Yerel Olarak Sayfa Numaraları Ekleme",
+  "description": "Tamamen tarayıcınızda PDF'nizin üstbilgisine veya altbilgisine sayfa numaralarını damgalayın. Hızlı ve tamamen güvenli.",
+  "buttonText": "Add Page Numbers",
+  "badges": [
+    "Özel Konum",
+    "Üstbilgi ve Altbilgi",
+    "Bates Numaralandırma"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Add Page Numbers Offline?",
-      "content": "Page numbers are a formatting step, not a reason to upload confidential documents to a cloud service."
+      "type": "pagenum_hero_features",
+      "title": "Neden Sayfa Numaralarını Çevrimdışı Eklemelisiniz?",
+      "content": "Sayfa numaraları bir biçimlendirme adımıdır, gizli belgeleri bir bulut hizmetine yüklemek için bir neden değildir."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Add Page Numbers",
+      "type": "pagenum_how_to_steps",
+      "title": "Sayfa Numaraları Nasıl Eklenir",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to number."
+          "title": "PDF'yi aç",
+          "description": "Numaralandırılacak PDF'yi seçin."
         },
         {
-          "title": "Configure Style",
-          "description": "Choose position, format (1/12, Page 1, i, ii…), and font."
+          "title": "Stili Yapılandır",
+          "description": "Konumu, formatı (1/12, Sayfa 1, i, ii…) ve yazı tipini seçin."
         },
         {
-          "title": "Apply & Download",
-          "description": "Download your paginated PDF instantly."
+          "title": "Uygula ve İndir",
+          "description": "Sayfalandırılmış PDF'nizi anında indirin."
         }
-      ]
+      ],
+      "badgeText": "Hızlı Kılavuz"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Page Numbering for Istanbul Legal Docs",
-      "content": "Legal professionals in Istanbul number briefs and reports locally without cloud service dependency."
+      "type": "pagenum_geo_targeting",
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Internal Documents Stay Numbered & Private",
-      "content": "Add page numbers to contracts and confidential reports without any server involvement."
+      "type": "pagenum_privacy_security",
+      "title": "Dahili Belgeler Numaralandırılmış ve Gizli Kalsın",
+      "content": "Herhangi bir sunucu müdahalesi olmadan sözleşmelere ve gizli raporlara sayfa numaraları ekleyin.",
+      "badgeText": "Önce Güvenlik"
     },
     {
-      "type": "organizer_performance",
-      "title": "Number a 1000-Page PDF Instantly",
-      "content": "Stamping page numbers locally takes milliseconds for any size document."
+      "type": "pagenum_performance",
+      "title": "1000 Sayfalık PDF'yi Anında Numaralandırın",
+      "content": "Her boyuttaki belge için sayfa numaralarının yerel olarak damgalanması milisaniyeler alır.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [
     {
-      "q": "What number formats are available?",
-      "a": "Arabic (1, 2, 3), Roman (i, ii, iii), and letter (a, b, c) formats."
+      "q": "Hangi sayı biçimleri mevcuttur?",
+      "a": "Arapça (1, 2, 3), Latin (i, ii, iii) ve harf (a, b, c) formatları."
     },
     {
-      "q": "Can I start from a custom number?",
-      "a": "Yes, set any starting page number."
+      "q": "Özel bir numaradan başlayabilir miyim?",
+      "a": "Evet, herhangi bir başlangıç ​​sayfa numarasını ayarlayın."
     },
     {
-      "q": "Can I skip numbering the first page?",
-      "a": "Yes, set the page offset to skip cover pages."
+      "q": "İlk sayfayı numaralandırmayı atlayabilir miyim?",
+      "a": "Evet, kapak sayfalarını atlamak için sayfa ofsetini ayarlayın."
     },
     {
-      "q": "Where can I position numbers?",
-      "a": "Header-left, header-center, header-right, and same for footer."
+      "q": "Numaraları nereye konumlandırabilirim?",
+      "a": "Başlık-sol, başlık-orta, başlık-sağ ve altbilgi için aynı."
     },
     {
-      "q": "Is this free?",
-      "a": "Evet, tamamen ücretsiz."
+      "q": "Bu bedava mı?",
+      "a": "Evet, her zaman ücretsiz."
     }
-  ]
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi"
 }

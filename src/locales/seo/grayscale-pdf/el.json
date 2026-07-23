@@ -1,67 +1,85 @@
 {
-  "title": "Grayscale PDF — Convert to Black and White Offline",
-  "h1": "Convert Color PDF Pages to Grayscale Instantly",
-  "description": "Turn color PDFs into black-and-white versions to reduce file size or prepare for printing, entirely in your browser. Ideal for users in Athens.",
+  "title": "PDF σε κλίμακα του γκρι — Μετατροπή σε ασπρόμαυρο εκτός σύνδεσης",
+  "h1": "Μετατροπή έγχρωμων σελίδων PDF σε κλίμακα του γκρι άμεσα",
+  "description": "Μετατρέψτε τα έγχρωμα PDF σε ασπρόμαυρες εκδόσεις για να μειώσετε το μέγεθος του αρχείου ή να προετοιμαστείτε για εκτύπωση, εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. 100% ασφαλής τοπική επεξεργασία.",
+  "buttonText": "Convert to Grayscale",
+  "badges": [
+    "Αποθήκευση μελάνης",
+    "Ασπρόμαυρο",
+    "Ιδανικό για εκτύπωση"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Convert to Grayscale Offline?",
-      "content": "Removing color from a PDF is a pre-print or archiving step. Do it locally without exposing confidential document design."
+      "type": "grayscale_hero_features",
+      "title": "Γιατί να γίνει μετατροπή σε κλίμακα του γκρι εκτός σύνδεσης;",
+      "content": "Η αφαίρεση χρώματος από ένα PDF είναι ένα βήμα προεκτύπωσης ή αρχειοθέτησης. Κάντε το τοπικά χωρίς να εκθέσετε τον εμπιστευτικό σχεδιασμό εγγράφων."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Make PDF Grayscale",
+      "type": "grayscale_how_to_steps",
+      "title": "Πώς να δημιουργήσετε PDF σε κλίμακα του γκρι",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the color PDF to convert."
+          "title": "Ανοίξτε το PDF",
+          "description": "Επιλέξτε το χρώμα PDF για μετατροπή."
         },
         {
-          "title": "Choose Conversion Mode",
-          "description": "Pick luminance or contrast-adjusted grayscale."
+          "title": "Επιλέξτε Λειτουργία μετατροπής",
+          "description": "Επιλέξτε φωτεινότητα ή ρυθμισμένη στην αντίθεση κλίμακα του γκρι."
         },
         {
-          "title": "Download Grayscale PDF",
-          "description": "Save the black-and-white PDF immediately."
+          "title": "Λήψη PDF κλίμακας του γκρι",
+          "description": "Αποθηκεύστε αμέσως το ασπρόμαυρο PDF."
         }
-      ]
+      ],
+      "badgeText": "Γρήγορος Οδηγός"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Grayscale PDF for Athens Printers",
-      "content": "Businesses in Athens convert color PDFs to grayscale for cost-effective printing without cloud uploads."
+      "type": "grayscale_geo_targeting",
+      "title": "100% Ασφαλής Τοπική Επεξεργασία",
+      "content": "Όλες οι λειτουργίες εκτελούνται απευθείας στην τοπική συσκευή σας. Χρησιμοποιούμε προηγμένη τεχνολογία WebAssembly για να επεξεργαζόμαστε τα έγγραφά σας χωρίς ποτέ να τα ανεβάσουμε σε εξωτερικούς διακομιστές, διασφαλίζοντας πλήρες απόρρητο.",
+      "badgeText": "Τοπική Επεξεργασία"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Design Files Stay Confidential",
-      "content": "Internal design documents and branded materials converted to grayscale without cloud exposure."
+      "type": "grayscale_privacy_security",
+      "title": "Τα αρχεία σχεδίασης παραμένουν εμπιστευτικά",
+      "content": "Εσωτερικά έγγραφα σχεδιασμού και επώνυμα υλικά μετατράπηκαν σε κλίμακα του γκρι χωρίς έκθεση στο σύννεφο.",
+      "badgeText": "Πρώτα η ασφάλεια"
     },
     {
-      "type": "transform_performance",
-      "title": "Convert Color Instantly",
-      "content": "A 200-page color PDF converted to grayscale in under 2 seconds. Zero upload."
+      "type": "grayscale_performance",
+      "title": "Μετατροπή χρώματος άμεσα",
+      "content": "Ένα έγχρωμο PDF 200 σελίδων που μετατράπηκε σε κλίμακα του γκρι σε λιγότερο από 2 δευτερόλεπτα. Μηδενική μεταφόρτωση.",
+      "badgeText": "Αστραπιαία"
     }
   ],
   "faqs": [
     {
-      "q": "Does grayscale reduce file size?",
-      "a": "Often yes, especially for image-heavy PDFs."
+      "q": "Η κλίμακα του γκρι μειώνει το μέγεθος του αρχείου;",
+      "a": "Συχνά ναι, ειδικά για αρχεία PDF με πολλές εικόνες."
     },
     {
-      "q": "Are all pages converted?",
-      "a": "Yes by default; you can also select specific pages."
+      "q": "Έχουν μετατραπεί όλες οι σελίδες;",
+      "a": "Ναι από προεπιλογή? μπορείτε επίσης να επιλέξετε συγκεκριμένες σελίδες."
     },
     {
-      "q": "Is the conversion reversible?",
-      "a": "The color information is removed; keep the original for reversal."
+      "q": "Είναι η μετατροπή αναστρέψιμη;",
+      "a": "Οι πληροφορίες χρώματος αφαιρούνται. κρατήστε το πρωτότυπο για αντιστροφή."
     },
     {
-      "q": "Does it affect text quality?",
-      "a": "No, text remains crisp and black."
+      "q": "Επηρεάζει την ποιότητα του κειμένου;",
+      "a": "Όχι, το κείμενο παραμένει καθαρό και μαύρο."
     },
     {
-      "q": "Is this free?",
+      "q": "Αυτό είναι δωρεάν;",
       "a": "Ναι, εντελώς δωρεάν."
     }
-  ]
+  ],
+  "faqTitle": "Συχνές Ερωτήσεις",
+  "supportCenter": "Κέντρο Υποστήριξης"
 }

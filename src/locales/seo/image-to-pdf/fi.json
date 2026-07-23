@@ -1,67 +1,85 @@
 {
-  "title": "Image to PDF — Combine Photos Offline",
-  "h1": "Convert Images to PDF Without Uploading",
-  "description": "Turn JPG, PNG, and WebP images into a single PDF document in your browser. Your photos stay private. Perfect for users in Helsinki.",
+  "title": "Kuva PDF-muotoon — Yhdistä valokuvat offline-tilassa",
+  "h1": "Muunna kuvat PDF-muotoon lataamatta",
+  "description": "Muuta JPG-, PNG- ja WebP-kuvat yhdeksi PDF-dokumentiksi selaimessasi. Kuvasi pysyvät yksityisinä. 100 % turvallinen paikallinen käsittely.",
+  "buttonText": "Convert Images",
+  "badges": [
+    "Portfoliot",
+    "ID-skannaukset",
+    "Valokuva-albumit"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Images Offline?",
-      "content": "Photos contain location data and personal moments. Convert them to PDF without exposing them to any cloud service."
+      "type": "image_hero_features",
+      "title": "Miksi muuntaa kuvat offline-tilassa?",
+      "content": "Valokuvat sisältävät sijaintitietoja ja henkilökohtaisia ​​hetkiä. Muunna ne PDF-muotoon paljastamatta niitä millekään pilvipalvelulle."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Turn Images Into PDF",
+      "type": "image_how_to_steps",
+      "title": "Kuinka muuttaa kuvat PDF-muotoon",
       "steps": [
         {
-          "title": "Select Images",
-          "description": "Choose JPG, PNG, or WebP files from your device."
+          "title": "Valitse kuvat",
+          "description": "Valitse laitteeltasi JPG-, PNG- tai WebP-tiedostot."
         },
         {
-          "title": "Arrange Order",
-          "description": "Drag to reorder images before generating the PDF."
+          "title": "Järjestä tilaus",
+          "description": "Järjestä kuvat uudelleen vetämällä ennen PDF-tiedoston luomista."
         },
         {
-          "title": "Export PDF",
-          "description": "Download your image PDF in one click."
+          "title": "Vie PDF",
+          "description": "Lataa kuvasi PDF yhdellä napsautuksella."
         }
-      ]
+      ],
+      "badgeText": "Pikaopas"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Image to PDF for Helsinki Users",
-      "content": "Photographers and designers in Helsinki use our tool to package portfolios without cloud uploads."
+      "type": "image_geo_targeting",
+      "title": "100 % suojattu paikallinen käsittely",
+      "content": "Kaikki toiminnot suoritetaan suoraan paikallisella laitteellasi. Käytämme edistynyttä WebAssembly-tekniikkaa asiakirjojen käsittelyyn lataamatta niitä koskaan ulkoisille palvelimille, mikä takaa täydellisen yksityisyyden.",
+      "badgeText": "Paikallinen käsittely"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Photos Never Leave Your Device",
-      "content": "Personal photos, ID scans, medical images — all converted 100% locally without any server contact."
+      "type": "image_privacy_security",
+      "title": "Valokuvat Älä koskaan jätä laitteeltasi",
+      "content": "Henkilökohtaiset valokuvat, henkilöllisyystodistukset, lääketieteelliset kuvat – kaikki muunnetaan 100 % paikallisesti ilman palvelinyhteyttä.",
+      "badgeText": "Turvallisuus ensin"
     },
     {
-      "type": "combiner_performance",
-      "title": "Batch Convert Instantly",
-      "content": "Convert 50 images into a single PDF in under 5 seconds. No upload, no wait."
+      "type": "image_performance",
+      "title": "Erämuunnos välittömästi",
+      "content": "Muunna 50 kuvaa yhdeksi PDF-tiedostoksi alle 5 sekunnissa. Ei latausta, ei odottelua.",
+      "badgeText": "Salamannopeasti"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are supported?",
-      "a": "JPG, JPEG, PNG, and WebP are all supported."
+      "q": "Mitä kuvaformaatteja tuetaan?",
+      "a": "JPG, JPEG, PNG ja WebP ovat kaikki tuettuja."
     },
     {
-      "q": "Can I combine multiple images?",
-      "a": "Yes, select as many images as you want and reorder them."
+      "q": "Voinko yhdistää useita kuvia?",
+      "a": "Kyllä, valitse niin monta kuvaa kuin haluat ja järjestä ne uudelleen."
     },
     {
-      "q": "Is image quality preserved?",
-      "a": "Yes, images are embedded at their original resolution."
+      "q": "Onko kuvanlaatu säilynyt?",
+      "a": "Kyllä, kuvat upotetaan alkuperäisellä resoluutiollaan."
     },
     {
-      "q": "Does it strip EXIF metadata?",
-      "a": "You can optionally strip EXIF data for privacy."
+      "q": "Poistaako se EXIF-metatiedot?",
+      "a": "Voit halutessasi poistaa EXIF-tiedot yksityisyyden vuoksi."
     },
     {
-      "q": "Is there a limit on image count?",
-      "a": "Kyllä, täysin ilmainen."
+      "q": "Onko kuvien määrällä rajaa?",
+      "a": "Ei rajaa! Yhdistä satoja kuvia yhdeksi PDF-tiedostoksi."
     }
-  ]
+  ],
+  "faqTitle": "Usein kysytyt kysymykset",
+  "supportCenter": "Tukikeskus"
 }

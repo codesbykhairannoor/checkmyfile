@@ -1,67 +1,85 @@
 {
-  "title": "Rotate PDF Pages — Fix Orientation Offline",
-  "h1": "Rotate PDF Pages to the Correct Orientation",
-  "description": "Fix upside-down or sideways PDF pages instantly in your browser. No upload. Perfect for users in Kyiv.",
+  "title": "Повертайте сторінки PDF — виправте орієнтацію в автономному режимі",
+  "h1": "Поверніть PDF-сторінки до правильної орієнтації",
+  "description": "Миттєво виправляйте перевернуті або перевернуті сторінки PDF у своєму браузері. Швидко та повністю безпечно.",
+  "buttonText": "Rotate Pages",
+  "badges": [
+    "Поворот на 90°/180°",
+    "Пакетна обробка",
+    "Миттєве виправлення"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Rotate PDFs Locally?",
-      "content": "Scanned documents often come out sideways. Fix their orientation instantly without uploading anything to the cloud."
+      "type": "rotate_hero_features",
+      "title": "Навіщо обертати PDF-файли локально?",
+      "content": "Відскановані документи часто виходять набік. Миттєво виправте їхню орієнтацію, нічого не завантажуючи в хмару."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Rotate PDF Pages",
+      "type": "rotate_how_to_steps",
+      "title": "Як повертати сторінки PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page orientation."
+          "title": "Відкрити PDF",
+          "description": "Завантажте PDF із неправильною орієнтацією сторінки."
         },
         {
-          "title": "Select Pages & Direction",
-          "description": "Choose pages to rotate and direction (90°, 180°, 270°)."
+          "title": "Виберіть Сторінки та напрям",
+          "description": "Виберіть сторінки для обертання та напрямок (90°, 180°, 270°)."
         },
         {
-          "title": "Download Fixed PDF",
-          "description": "Save the correctly oriented PDF immediately."
+          "title": "Завантажити виправлений PDF",
+          "description": "Негайно збережіть правильно орієнтований PDF-файл."
         }
-      ]
+      ],
+      "badgeText": "Короткий посібник"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Rotation for Kyiv Offices",
-      "content": "Office workers in Kyiv fix scanner output orientation without relying on cloud services."
+      "type": "rotate_geo_targeting",
+      "title": "100% безпечна локальна обробка",
+      "content": "Усі операції виконуються безпосередньо на локальному пристрої. Ми використовуємо передову технологію WebAssembly для обробки ваших документів, не завантажуючи їх на зовнішні сервери, забезпечуючи повну конфіденційність.",
+      "badgeText": "Локальна обробка"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Scanned Documents Stay Private",
-      "content": "Scanned medical or legal documents rotated locally without any server access."
+      "type": "rotate_privacy_security",
+      "title": "Відскановані документи залишаються приватними",
+      "content": "Відскановані медичні або юридичні документи ротуються локально без доступу до сервера.",
+      "badgeText": "Безпека перш за все"
     },
     {
-      "type": "transform_performance",
-      "title": "Rotate Any PDF in Milliseconds",
-      "content": "Rotating 500 pages takes less than a second. No upload, no wait."
+      "type": "rotate_performance",
+      "title": "Обертайте будь-який PDF-файл за мілісекунди",
+      "content": "Обертання 500 сторінок займає менше секунди. Ні завантаження, ні очікування.",
+      "badgeText": "Блискавичний"
     }
   ],
   "faqs": [
     {
-      "q": "Can I rotate individual pages?",
-      "a": "Yes, select specific pages or all at once."
+      "q": "Чи можна повертати окремі сторінки?",
+      "a": "Так, вибрати окремі сторінки або всі одразу."
     },
     {
-      "q": "What rotation angles are available?",
-      "a": "90°, 180°, and 270° clockwise and counter-clockwise."
+      "q": "Які можливі кути повороту?",
+      "a": "90°, 180° та 270° за годинниковою стрілкою та проти неї."
     },
     {
-      "q": "Does rotation affect image quality?",
-      "a": "No, rotation is lossless — no re-encoding occurs."
+      "q": "Чи впливає поворот на якість зображення?",
+      "a": "Ні, обертання без втрат — повторне кодування не відбувається."
     },
     {
-      "q": "Can I undo a rotation?",
-      "a": "Yes, apply the reverse rotation before downloading."
+      "q": "Чи можна скасувати поворот?",
+      "a": "Так, застосувати зворотне обертання перед завантаженням."
     },
     {
-      "q": "Is this free?",
-      "a": "Так, повністю безкоштовно."
+      "q": "Це безкоштовно?",
+      "a": "Так, абсолютно безкоштовно."
     }
-  ]
+  ],
+  "faqTitle": "Часті запитання",
+  "supportCenter": "Центр підтримки"
 }

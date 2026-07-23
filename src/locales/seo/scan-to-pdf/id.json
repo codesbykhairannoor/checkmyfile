@@ -1,67 +1,85 @@
 {
-  "title": "Scan to PDF — Convert Camera Shots Offline",
-  "h1": "Convert Photos and Scans to PDF Locally",
-  "description": "Turn photos of documents taken with your camera into clean PDFs entirely in your browser. No upload. Best for users in Jakarta.",
+  "title": "Pindai ke PDF — Konversi Jepretan Kamera Offline",
+  "h1": "Konversi Foto dan Pindaian ke PDF Secara Lokal",
+  "description": "Ubah foto dokumen yang diambil dengan kamera Anda menjadi PDF bersih sepenuhnya di browser Anda. Tidak ada unggahan. Pemrosesan lokal 100% aman.",
+  "buttonText": "Scan to PDF",
+  "badges": [
+    "Gunakan Kamera Web",
+    "Pemindai Seluler",
+    "Pangkas Otomatis"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Use Scan-to-PDF Offline?",
-      "content": "Photos of documents contain sensitive information. Process them locally without any cloud access."
+      "type": "scan_hero_features",
+      "title": "Mengapa Menggunakan Pindai ke PDF Offline?",
+      "content": "Foto dokumen mengandung informasi sensitif. Memprosesnya secara lokal tanpa akses cloud apa pun."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Scans to PDF",
+      "type": "scan_how_to_steps",
+      "title": "Cara Mengonversi Pindaian ke PDF",
       "steps": [
         {
-          "title": "Import Photos",
-          "description": "Select photos taken with your phone or camera."
+          "title": "Impor Foto",
+          "description": "Pilih foto yang diambil dengan ponsel atau kamera Anda."
         },
         {
-          "title": "Enhance Scan",
-          "description": "Auto-crop, deskew, and enhance contrast."
+          "title": "Tingkatkan Pemindaian",
+          "description": "Pangkas otomatis, miringkan, dan tingkatkan kontras."
         },
         {
-          "title": "Export PDF",
-          "description": "Download a clean, professional-looking scanned PDF."
+          "title": "Ekspor PDF",
+          "description": "Unduh PDF pindaian yang bersih dan terlihat profesional."
         }
-      ]
+      ],
+      "badgeText": "Panduan Singkat"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Scan to PDF for Jakarta Field Workers",
-      "content": "Field workers and freelancers in Jakarta digitize paper documents on-the-go without uploading to cloud services."
+      "type": "scan_geo_targeting",
+      "title": "Pemrosesan Lokal 100% Aman",
+      "content": "Semua operasi dilakukan langsung di perangkat lokal Anda. Kami menggunakan teknologi WebAssembly yang canggih untuk memproses dokumen Anda tanpa harus mengunggahnya ke server eksternal, sehingga memastikan privasi sepenuhnya.",
+      "badgeText": "Pemrosesan Lokal"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Documents Stay on Device",
-      "content": "Invoices, contracts, and ID scans processed entirely in browser memory without any server access."
+      "type": "scan_privacy_security",
+      "title": "Dokumen yang Dipindai Tetap di Perangkat",
+      "content": "Faktur, kontrak, dan pemindaian ID diproses seluruhnya di memori browser tanpa akses server apa pun.",
+      "badgeText": "Keamanan Pertama"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Scans in Real Time",
-      "content": "Photo enhancement and PDF generation happens in milliseconds, even for high-resolution camera shots."
+      "type": "scan_performance",
+      "title": "Konversi Pemindaian dalam Waktu Nyata",
+      "content": "Penyempurnaan foto dan pembuatan PDF terjadi dalam hitungan milidetik, bahkan untuk jepretan kamera resolusi tinggi.",
+      "badgeText": "Secepat Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "What photo formats are supported?",
-      "a": "JPG, PNG, WebP, and HEIC from modern cameras."
+      "q": "Format foto apa yang didukung?",
+      "a": "JPG, PNG, WebP, dan HEIC dari kamera modern."
     },
     {
-      "q": "Does it fix tilted scans?",
-      "a": "Yes, auto-deskew corrects slight angles automatically."
+      "q": "Apakah ini memperbaiki pemindaian yang miring?",
+      "a": "Ya, kemiringan otomatis mengoreksi sudut kecil secara otomatis."
     },
     {
-      "q": "Can I combine multiple scans?",
-      "a": "Yes, add multiple photos to create a multi-page PDF."
+      "q": "Bisakah saya menggabungkan beberapa pemindaian?",
+      "a": "Ya, tambahkan beberapa foto untuk membuat PDF multi-halaman."
     },
     {
-      "q": "Does it enhance contrast?",
-      "a": "Yes, document enhancement mode sharpens text for clarity."
+      "q": "Apakah ini meningkatkan kontras?",
+      "a": "Ya, mode penyempurnaan dokumen mempertajam teks agar lebih jelas."
     },
     {
-      "q": "Is this free?",
-      "a": "Ya, sepenuhnya gratis."
+      "q": "Apakah ini gratis?",
+      "a": "Ya, selalu gratis."
     }
-  ]
+  ],
+  "faqTitle": "Pertanyaan yang Sering Diajukan",
+  "supportCenter": "Pusat Dukungan"
 }

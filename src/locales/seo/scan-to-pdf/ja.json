@@ -1,67 +1,85 @@
 {
-  "title": "Scan to PDF — Convert Camera Shots Offline",
-  "h1": "Convert Photos and Scans to PDF Locally",
-  "description": "Turn photos of documents taken with your camera into clean PDFs entirely in your browser. No upload. Best for users in Tokyo.",
+  "title": "PDF にスキャン — カメラショットをオフラインで変換",
+  "h1": "写真とスキャンをローカルで PDF に変換",
+  "description": "カメラで撮影したドキュメントの写真をブラウザ内できれいな PDF に変換します。 アップロードはありません。 100% 安全なローカル処理。",
+  "buttonText": "Scan to PDF",
+  "badges": [
+    "ウェブカメラを使用する",
+    "モバイル スキャナ",
+    "自動トリミング"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Use Scan-to-PDF Offline?",
-      "content": "Photos of documents contain sensitive information. Process them locally without any cloud access."
+      "type": "scan_hero_features",
+      "title": "Scan-to-PDF をオフラインで使用する理由",
+      "content": "書類の写真には機密情報が含まれています。 クラウドにアクセスせずにローカルで処理します。"
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Scans to PDF",
+      "type": "scan_how_to_steps",
+      "title": "スキャンを PDF に変換する方法",
       "steps": [
         {
-          "title": "Import Photos",
-          "description": "Select photos taken with your phone or camera."
+          "title": "写真をインポート",
+          "description": "携帯電話やカメラで撮った写真を選択します。"
         },
         {
-          "title": "Enhance Scan",
-          "description": "Auto-crop, deskew, and enhance contrast."
+          "title": "拡張スキャン",
+          "description": "自動トリミング、傾き補正、コントラストの強化。"
         },
         {
-          "title": "Export PDF",
-          "description": "Download a clean, professional-looking scanned PDF."
+          "title": "PDF をエクスポート",
+          "description": "きれいでプロフェッショナルな外観のスキャンされた PDF をダウンロードします。"
         }
-      ]
+      ],
+      "badgeText": "クイックガイド"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Scan to PDF for Tokyo Field Workers",
-      "content": "Field workers and freelancers in Tokyo digitize paper documents on-the-go without uploading to cloud services."
+      "type": "scan_geo_targeting",
+      "title": "100% 安全なローカル処理",
+      "content": "すべての操作はローカル デバイス上で直接実行されます。 当社は高度な WebAssembly テクノロジーを使用して、ドキュメントを外部サーバーにアップロードすることなく処理し、完全なプライバシーを確​​保します。",
+      "badgeText": "ローカル処理"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Documents Stay on Device",
-      "content": "Invoices, contracts, and ID scans processed entirely in browser memory without any server access."
+      "type": "scan_privacy_security",
+      "title": "スキャンされたドキュメントはデバイス上に残ります",
+      "content": "請求書、契約書、ID スキャンは、サーバーにアクセスせずにブラウザーのメモリ内で完全に処理されます。",
+      "badgeText": "セキュリティ第一"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Scans in Real Time",
-      "content": "Photo enhancement and PDF generation happens in milliseconds, even for high-resolution camera shots."
+      "type": "scan_performance",
+      "title": "スキャンをリアルタイムで変換",
+      "content": "高解像度のカメラショットであっても、写真の補正と PDF の生成はミリ秒単位で行われます。",
+      "badgeText": "超高速"
     }
   ],
   "faqs": [
     {
-      "q": "What photo formats are supported?",
-      "a": "JPG, PNG, WebP, and HEIC from modern cameras."
+      "q": "どのような写真形式がサポートされていますか?",
+      "a": "最新のカメラの JPG、PNG、WebP、および HEIC。"
     },
     {
-      "q": "Does it fix tilted scans?",
-      "a": "Yes, auto-deskew corrects slight angles automatically."
+      "q": "傾いたスキャンは修正されますか?",
+      "a": "はい、自動デスキューにより、わずかな角度が自動的に補正されます。"
     },
     {
-      "q": "Can I combine multiple scans?",
-      "a": "Yes, add multiple photos to create a multi-page PDF."
+      "q": "複数のスキャンを結合できますか?",
+      "a": "はい、複数の写真を追加して複数ページの PDF を作成します。"
     },
     {
-      "q": "Does it enhance contrast?",
-      "a": "Yes, document enhancement mode sharpens text for clarity."
+      "q": "コントラストが強調されるのでしょうか？",
+      "a": "はい、文書強調モードではテキストを鮮明にして明確にします。"
     },
     {
-      "q": "Is this free?",
-      "a": "はい、完全無料です。"
+      "q": "これは無料ですか？",
+      "a": "はい、いつでも無料です。"
     }
-  ]
+  ],
+  "faqTitle": "よくある質問",
+  "supportCenter": "サポート センター"
 }

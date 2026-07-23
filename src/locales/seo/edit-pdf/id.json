@@ -1,0 +1,85 @@
+{
+  "title": "Edit PDF - Editor PDF Offline Gratis",
+  "h1": "Edit Dokumen PDF Langsung di Browser Anda",
+  "description": "Tambahkan teks, tanda tangan, dan anotasi ke file PDF Anda secara lokal. Tidak ada unggahan, privasi maksimal. Pemrosesan lokal 100% aman.",
+  "sections": [
+    {
+      "type": "edit_hero_features",
+      "title": "Mengapa Mengedit PDF Secara Lokal?",
+      "content": "Mengunggah kontrak dan formulir sensitif ke editor cloud merupakan risiko privasi yang sangat besar. Editor WebAssembly kami berjalan langsung di perangkat Anda, memastikan dokumen Anda tidak pernah meninggalkan komputer Anda."
+    },
+    {
+      "type": "edit_how_to_steps",
+      "title": "Cara Mengedit PDF",
+      "steps": [
+        {
+          "title": "Buka Dokumen",
+          "description": "Pilih file PDF yang ingin Anda beri anotasi atau tanda tangan."
+        },
+        {
+          "title": "Tambahkan Teks & Elemen",
+          "description": "Gunakan alat intuitif kami untuk menambahkan teks, menggambar, atau menempatkan gambar."
+        },
+        {
+          "title": "Simpan Perubahan",
+          "description": "Ekspor PDF yang dimodifikasi secara instan tanpa menunggu unduhan."
+        }
+      ],
+      "badgeText": "Panduan Singkat"
+    },
+    {
+      "type": "edit_geo_targeting",
+      "title": "Pemrosesan Lokal 100% Aman",
+      "content": "Semua operasi dilakukan langsung di perangkat lokal Anda. Kami menggunakan teknologi WebAssembly yang canggih untuk memproses dokumen Anda tanpa harus mengunggahnya ke server eksternal, sehingga memastikan privasi sepenuhnya.",
+      "badgeText": "Pemrosesan Lokal"
+    },
+    {
+      "type": "edit_privacy_security",
+      "title": "Transmisi Data Nol",
+      "content": "Tidak seperti editor PDF tradisional yang mengunggah file Anda ke server mereka, platform kami memproses semua yang ada di memori browser Anda.",
+      "badgeText": "Keamanan Pertama"
+    },
+    {
+      "type": "edit_performance",
+      "title": "Render Offline Instan",
+      "content": "Editor kami memuat file PDF berukuran besar dalam hitungan milidetik. Anda dapat menambahkan ratusan anotasi tanpa jeda atau penundaan jaringan.",
+      "badgeText": "Secepat Kilat"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Bisakah saya mengedit teks yang ada di PDF?",
+      "a": "Saat ini, Anda dapat menambahkan teks, bentuk, dan gambar baru pada dokumen yang sudah ada."
+    },
+    {
+      "q": "Apakah file saya diunggah di mana saja?",
+      "a": "Tidak, semua pengeditan dilakukan secara lokal di dalam browser Anda menggunakan WebAssembly."
+    },
+    {
+      "q": "Bisakah saya menandatangani dokumen?",
+      "a": "Ya, Anda dapat menggambar tanda tangan Anda atau mengunggah gambarnya."
+    },
+    {
+      "q": "Apakah editornya gratis untuk digunakan?",
+      "a": "Ya, ini 100% gratis tanpa paywall premium atau biaya tersembunyi."
+    },
+    {
+      "q": "Apakah ini berfungsi di perangkat seluler?",
+      "a": "Ya, editor sepenuhnya responsif dan mendukung input sentuh untuk menggambar."
+    }
+  ],
+  "badges": [
+    "Tanpa Tanda Air",
+    "100% Gratis",
+    "Penyunting Luar Talian"
+  ],
+  "stats": [
+    "100% Private",
+    "0 Server Uploads",
+    "Client-Side Only",
+    "No Accounts"
+  ],
+  "buttonText": "Start Editing",
+  "faqTitle": "Pertanyaan yang Sering Diajukan",
+  "supportCenter": "Pusat Dukungan"
+}

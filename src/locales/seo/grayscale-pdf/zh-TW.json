@@ -1,0 +1,85 @@
+{
+  "title": "灰階 PDF — 離線轉換為黑白",
+  "h1": "立即將彩色 PDF 頁面轉換為灰階",
+  "description": "將彩色 PDF 轉換為黑白版本，以減小檔案大小或準備列印，完全在瀏覽器中完成。 100% 安全的本地處理。",
+  "buttonText": "Convert to Grayscale",
+  "badges": [
+    "節省墨水",
+    "黑與白",
+    "非常適合列印"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "grayscale_hero_features",
+      "title": "為什麼離線轉換為灰階？",
+      "content": "從 PDF 中刪除顏色是預先列印或存檔步驟。 在本地進行，不會暴露機密文檔設計。"
+    },
+    {
+      "type": "grayscale_how_to_steps",
+      "title": "如何讓 PDF 灰階",
+      "steps": [
+        {
+          "title": "開啟 PDF",
+          "description": "選擇要轉換的彩色 PDF。"
+        },
+        {
+          "title": "選擇轉換模式",
+          "description": "選擇亮度或對比度調整的灰階。"
+        },
+        {
+          "title": "下載灰階 PDF",
+          "description": "立即儲存黑白 PDF。"
+        }
+      ],
+      "badgeText": "快速指南"
+    },
+    {
+      "type": "grayscale_geo_targeting",
+      "title": "100% 安全的本地處理",
+      "content": "所有操作都直接在本地設備上執行。 我們使用先進的 WebAssembly 技術來處理您的文檔，而無需將其上傳到外部伺服器，從而確保完全的隱私。",
+      "badgeText": "本地處理"
+    },
+    {
+      "type": "grayscale_privacy_security",
+      "title": "設計文件保密",
+      "content": "內部設計文件和品牌材料轉換為灰度，無需雲端暴露。",
+      "badgeText": "安全第一"
+    },
+    {
+      "type": "grayscale_performance",
+      "title": "立即轉換顏色",
+      "content": "在 2 秒內將 200 頁彩色 PDF 轉換為灰階。 零上傳。",
+      "badgeText": "快如閃電"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "灰度會減少檔案大小嗎？",
+      "a": "通常是的，特別是對於影像較多的 PDF。"
+    },
+    {
+      "q": "所有頁面都轉換了嗎？",
+      "a": "預設是；您也可以選擇特定頁面。"
+    },
+    {
+      "q": "轉換是可逆的嗎？",
+      "a": "顏色資訊被移除；保留原件以反轉。"
+    },
+    {
+      "q": "會影響文字品質嗎？",
+      "a": "不，文字仍然清晰且黑色。"
+    },
+    {
+      "q": "這是免費的嗎？",
+      "a": "是的，完全免費。"
+    }
+  ],
+  "faqTitle": "常見問題",
+  "supportCenter": "支援中心"
+}

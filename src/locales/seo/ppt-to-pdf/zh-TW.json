@@ -1,0 +1,85 @@
+{
+  "title": "PowerPoint 到 PDF 轉換器 — 離線且免費",
+  "h1": "立即將 PowerPoint 簡報轉換為 PDF",
+  "description": "直接在瀏覽器中將 .pptx 簡報轉換為高品質 PDF。 不需要雲。 100% 安全的本地處理。",
+  "buttonText": "Convert Slides",
+  "badges": [
+    "董事會會議",
+    "宣傳資料",
+    "未發布的產品"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "ppt_hero_features",
+      "title": "為什麼要離線轉換簡報？",
+      "content": "您的投影片可能包含未發佈的產品或機密策略。 進行轉換，無需冒數據暴露的風險。"
+    },
+    {
+      "type": "ppt_how_to_steps",
+      "title": "如何將 PowerPoint 轉換為 PDF",
+      "steps": [
+        {
+          "title": "載入簡報",
+          "description": "從您的裝置中選擇您的 .pptx 檔案。"
+        },
+        {
+          "title": "選擇投影片範圍",
+          "description": "包括所有投影片或特定投影片。"
+        },
+        {
+          "title": "下載PDF",
+          "description": "取得保留所有格式的 PDF。"
+        }
+      ],
+      "badgeText": "快速指南"
+    },
+    {
+      "type": "ppt_geo_targeting",
+      "title": "100% 安全的本地處理",
+      "content": "所有操作都直接在本地設備上執行。 我們使用先進的 WebAssembly 技術來處理您的文檔，而無需將其上傳到外部伺服器，從而確保完全的隱私。",
+      "badgeText": "本地處理"
+    },
+    {
+      "type": "ppt_privacy_security",
+      "title": "機密投影片保持機密",
+      "content": "預發布產品群組？ 董事會演示？ 100% 本地轉換，無需網路存取。",
+      "badgeText": "安全第一"
+    },
+    {
+      "type": "ppt_performance",
+      "title": "即時投影片匯出",
+      "content": "在幾秒鐘內轉換 100 張投影片。 無需排隊，無需等待，不會浪費上傳頻寬。",
+      "badgeText": "快如閃電"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "投影片動畫是否保留？",
+      "a": "動畫被扁平化為靜態 PDF 框架。"
+    },
+    {
+      "q": "輸出的解析度是多少？",
+      "a": "預設以 150 DPI 進行高解析度渲染。"
+    },
+    {
+      "q": "我可以只轉換選取的投影片嗎？",
+      "a": "是的，指定投影片範圍，如 1-10 或 5、8、12。"
+    },
+    {
+      "q": "支援 .ppt（舊格式）嗎？",
+      "a": "是的，.ppt 和 .pptx 均受支持。"
+    },
+    {
+      "q": "這是免費使用的嗎？",
+      "a": "是的，完全免費，無浮水印。"
+    }
+  ],
+  "faqTitle": "常見問題",
+  "supportCenter": "支援中心"
+}

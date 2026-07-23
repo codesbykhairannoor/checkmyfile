@@ -1,67 +1,85 @@
 {
-  "title": "Extract Images from PDF — Offline Extractor",
-  "h1": "Extract All Embedded Images from PDF Files",
-  "description": "Pull out every image from a PDF and download them as PNG or JPG files, all in your browser. No cloud. Ideal for users in Jerusalem.",
+  "title": "חלץ תמונות מ-PDF — מחלץ לא מקוון",
+  "h1": "חלץ את כל התמונות המוטבעות מקבצי PDF",
+  "description": "שלף כל תמונה מקובץ PDF והורד אותם כקבצי PNG או JPG, הכל בדפדפן שלך. אין ענן. עיבוד מקומי מאובטח של 100%.",
+  "buttonText": "Extract All Images",
+  "badges": [
+    "תמונות מוצר",
+    "דיאגרמות חסויות",
+    "וקטורים"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract Images Offline?",
-      "content": "PDFs with confidential diagrams or product photos should never be uploaded. Extract images directly in your browser."
+      "type": "extract_images_hero_features",
+      "title": "למה לחלץ תמונות במצב לא מקוון?",
+      "content": "לעולם אין להעלות קובצי PDF עם דיאגרמות סודיות או תמונות מוצר. חלץ תמונות ישירות בדפדפן שלך."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Extract Images from PDF",
+      "type": "extract_images_how_to_steps",
+      "title": "כיצד לחלץ תמונות מ-PDF",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Open the PDF containing embedded images."
+          "title": "טען PDF",
+          "description": "פתח את ה-PDF המכיל תמונות מוטבעות."
         },
         {
-          "title": "Scan for Images",
-          "description": "Our engine locates all embedded image objects."
+          "title": "סרוק תמונות",
+          "description": "המנוע שלנו מאתר את כל אובייקטי התמונה המוטבעים."
         },
         {
-          "title": "Download ZIP",
-          "description": "Get all extracted images in a single ZIP file."
+          "title": "הורד ZIP",
+          "description": "קבל את כל התמונות שחולצו בקובץ ZIP אחד."
         }
-      ]
+      ],
+      "badgeText": "מדריך מהיר"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Image Extraction in Jerusalem",
-      "content": "Publishers and marketers in Jerusalem extract product photos and diagrams from PDFs without cloud uploads."
+      "type": "extract_images_geo_targeting",
+      "title": "100% עיבוד מקומי מאובטח",
+      "content": "כל הפעולות מבוצעות ישירות במכשיר המקומי שלך. אנו משתמשים בטכנולוגיית WebAssembly מתקדמת כדי לעבד את המסמכים שלך מבלי להעלות אותם לשרתים חיצוניים, מה שמבטיח פרטיות מלאה.",
+      "badgeText": "עיבוד מקומי"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Product Images Stay Confidential",
-      "content": "Unreleased product photos embedded in PDFs extracted locally without any server access."
+      "type": "extract_images_privacy_security",
+      "title": "תמונות מוצר נשארו חסויות",
+      "content": "תמונות מוצר שלא פורסמו מוטמעות בקובצי PDF שחולצו באופן מקומי ללא כל גישה לשרת.",
+      "badgeText": "אבטחה תחילה"
     },
     {
-      "type": "split_performance",
-      "title": "Extract Hundreds of Images Fast",
-      "content": "Extract 500 images from a PDF in seconds. All native browser processing."
+      "type": "extract_images_performance",
+      "title": "חלץ מאות תמונות מהר",
+      "content": "חלץ 500 תמונות מקובץ PDF בשניות. כל עיבוד דפדפן מקורי.",
+      "badgeText": "מהיר ברק"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are extracted?",
-      "a": "Images are saved in their original format (PNG, JPG, etc.)."
+      "q": "אילו פורמטים של תמונה נשלפים?",
+      "a": "התמונות נשמרות בפורמט המקורי שלהן (PNG, JPG וכו')."
     },
     {
-      "q": "Are images at full resolution?",
-      "a": "Yes, extracted at the original embedded resolution."
+      "q": "האם תמונות ברזולוציה מלאה?",
+      "a": "כן, חולץ ברזולוציה המוטבעת המקורית."
     },
     {
-      "q": "Can I choose specific pages?",
-      "a": "Yes, specify which pages to extract images from."
+      "q": "האם אני יכול לבחור דפים ספציפיים?",
+      "a": "כן, ציין מאילו דפים לחלץ תמונות."
     },
     {
-      "q": "Does it extract vector graphics?",
-      "a": "Vector elements are rasterized to PNG/JPG."
+      "q": "האם הוא מחלץ גרפיקה וקטורית?",
+      "a": "רכיבי וקטור מסודרים ברסטר ל-PNG/JPG."
     },
     {
-      "q": "Is this free?",
-      "a": "כן, חינם לחלוטין."
+      "q": "האם זה בחינם?",
+      "a": "כן, תמיד בחינם."
     }
-  ]
+  ],
+  "faqTitle": "שאלות נפוצות",
+  "supportCenter": "מרכז תמיכה"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Sign PDF Online — Draw Signature Offline",
-  "h1": "Sign PDF Documents With Your Signature Without Uploading",
-  "description": "Draw, type, or upload your signature and place it on PDFs entirely in your browser. No cloud. Perfect for users in Amsterdam.",
+  "title": "PDF online ondertekenen — handtekening offline tekenen",
+  "h1": "Onderteken PDF-documenten met uw handtekening zonder te uploaden",
+  "description": "Teken, typ of upload uw handtekening en plaats deze volledig in uw browser op PDF's. Geen wolk. 100% veilige lokale verwerking.",
+  "buttonText": "Sign PDF",
+  "badges": [
+    "Digitale handtekening",
+    "Teken of typ",
+    "Juridisch bindend"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "sign_hero_features",
-      "title": "Why Sign PDFs Locally?",
-      "content": "Your signature is your identity. Never upload your drawn signature or a private contract to a third-party cloud signing service."
+      "title": "Waarom PDF's lokaal ondertekenen?",
+      "content": "Uw handtekening is uw identiteit. Upload nooit uw getekende handtekening of een privécontract naar een cloudondertekenservice van derden."
     },
     {
       "type": "sign_how_to_steps",
-      "title": "How to Sign a PDF in 3 Steps",
+      "title": "Een PDF ondertekenen in 3 stappen",
       "steps": [
         {
-          "title": "Create Your Signature",
-          "description": "Draw with mouse, type in signature font, or upload an image."
+          "title": "Creëer uw handtekening",
+          "description": "Teken met de muis, typ het kenmerkende lettertype of upload een afbeelding."
         },
         {
-          "title": "Place on Document",
-          "description": "Drag and resize your signature to the correct position."
+          "title": "Plaats op document",
+          "description": "Sleep uw handtekening en wijzig het formaat ervan naar de juiste positie."
         },
         {
-          "title": "Download Signed PDF",
-          "description": "Save your signed document immediately, no account needed."
+          "title": "Ondertekende PDF downloaden",
+          "description": "Sla uw ondertekende document onmiddellijk op, geen account nodig."
         }
-      ]
+      ],
+      "badgeText": "Beknopte handleiding"
     },
     {
       "type": "sign_geo_targeting",
-      "title": "Private Digital Signatures for Amsterdam",
-      "content": "Freelancers and businesses in Amsterdam sign contracts, NDAs, and agreements without exposing their identity or documents to any cloud service."
+      "title": "100% veilige lokale verwerking",
+      "content": "Alle bewerkingen worden rechtstreeks op uw lokale apparaat uitgevoerd. We gebruiken geavanceerde WebAssembly-technologie om uw documenten te verwerken zonder ze ooit naar externe servers te uploaden, waardoor volledige privacy wordt gegarandeerd.",
+      "badgeText": "Lokale verwerking"
     },
     {
       "type": "sign_privacy_security",
-      "title": "Your Signature Identity Stays Private",
-      "content": "Your drawn signature and signed document are processed entirely in browser memory — never stored, never transmitted."
+      "title": "Uw handtekeningidentiteit blijft privé",
+      "content": "Uw getekende handtekening en ondertekend document worden volledig in het browsergeheugen verwerkt - nooit opgeslagen, nooit verzonden.",
+      "badgeText": "Beveiliging eerst"
     },
     {
       "type": "sign_performance",
-      "title": "Sign Any Document in Under 30 Seconds",
-      "content": "No account, no upload, no cloud. Draw, place, and download your signed PDF in under 30 seconds."
+      "title": "Onderteken elk document in minder dan 30 seconden",
+      "content": "Geen account, geen upload, geen cloud. Teken, plaats en download uw ondertekende PDF in minder dan 30 seconden.",
+      "badgeText": "Bliksemsnel"
     }
   ],
   "faqs": [
     {
-      "q": "How can I create my signature?",
-      "a": "Draw with your mouse, type your name in a signature font, or upload an image."
+      "q": "Hoe kan ik mijn handtekening aanmaken?",
+      "a": "Teken met uw muis, typ uw naam in een kenmerkend lettertype of upload een afbeelding."
     },
     {
-      "q": "Can I sign multiple pages?",
-      "a": "Yes, place your signature on any or all pages."
+      "q": "Kan ik meerdere pagina's ondertekenen?",
+      "a": "Ja, plaats uw handtekening op een of alle pagina's."
     },
     {
-      "q": "Is the signature legally binding?",
-      "a": "Our tool applies a visual signature. For legally binding e-signatures, check your jurisdiction."
+      "q": "Is de handtekening juridisch bindend?",
+      "a": "Onze tool past een visuele handtekening toe. Controleer uw rechtsgebied voor juridisch bindende elektronische handtekeningen."
     },
     {
-      "q": "Can I resize the signature?",
-      "a": "Yes, drag the corners to resize it after placing."
+      "q": "Kan ik het formaat van de handtekening wijzigen?",
+      "a": "Ja, versleep de hoeken om het formaat na plaatsing te wijzigen."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, volledig gratis."
+      "q": "Is dit gratis?",
+      "a": "Ja, helemaal gratis."
     }
-  ]
+  ],
+  "faqTitle": "Veelgestelde vragen",
+  "supportCenter": "Ondersteuningscentrum"
 }

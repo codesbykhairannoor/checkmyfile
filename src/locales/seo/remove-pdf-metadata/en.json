@@ -1,7 +1,19 @@
 {
   "title": "Remove PDF Metadata — Strip Hidden Author Data Offline",
   "h1": "Strip All Hidden Metadata from PDF Files Instantly",
-  "description": "Remove author names, company info, GPS locations, and revision history from PDFs entirely in your browser. No upload. Perfect for New York users.",
+  "description": "Remove author names, company info, GPS locations, and revision history from PDFs entirely in your browser. No upload. 100% secure local processing.",
+  "buttonText": "Process Document",
+  "badges": [
+    "Secure & Private",
+    "Offline Engine",
+    "Zero Upload"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "metadata_hero_features",
@@ -28,8 +40,8 @@
     },
     {
       "type": "metadata_geo_targeting",
-      "title": "Metadata Privacy Tool for New York Professionals",
-      "content": "Journalists, legal professionals, and privacy-conscious users in New York strip metadata before publishing or sharing PDFs externally."
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy."
     },
     {
       "type": "metadata_privacy_security",

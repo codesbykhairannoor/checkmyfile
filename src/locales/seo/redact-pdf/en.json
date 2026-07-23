@@ -1,7 +1,19 @@
 {
   "title": "Redact PDF — Permanently Remove Sensitive Data",
   "h1": "Permanently Redact Sensitive Information from PDFs Offline",
-  "description": "Black out sensitive text and images in PDFs entirely in your browser. No cloud risk. Critical for users in New York.",
+  "description": "Black out sensitive text and images in PDFs entirely in your browser. No cloud risk. 100% secure local processing.",
+  "buttonText": "Redact Text",
+  "badges": [
+    "Permanent Erase",
+    "Blackout Info",
+    "Secure Redaction"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "redact_hero_features",
@@ -28,8 +40,8 @@
     },
     {
       "type": "redact_geo_targeting",
-      "title": "Court-Ready Redaction for New York Law Firms",
-      "content": "Legal professionals in New York prepare court documents with permanent, offline redaction that removes data from the PDF structure itself."
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy."
     },
     {
       "type": "redact_privacy_security",

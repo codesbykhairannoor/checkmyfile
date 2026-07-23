@@ -1,67 +1,85 @@
 {
-  "title": "Add Watermark to PDF — Offline Watermarking",
-  "h1": "Stamp PDFs with Text or Image Watermarks Locally",
-  "description": "Add \"CONFIDENTIAL\", logos, or custom text watermarks to PDFs entirely in your browser. No upload. Best for users in Copenhagen.",
+  "title": "Føj vandmærke til PDF — Offline vandmærke",
+  "h1": "Stempler PDF'er med tekst- eller billedvandmærker lokalt",
+  "description": "Tilføj \"FOTROLIGT\", logoer eller brugerdefinerede tekstvandmærker til PDF-filer helt i din browser. Ingen upload. 100 % sikker lokal behandling.",
+  "buttonText": "Add Watermark",
+  "badges": [
+    "Brugerdefineret tekst",
+    "Justerbar opacitet",
+    "Brand beskyttelse"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Watermark PDFs Offline?",
-      "content": "Adding watermarks means your document is sensitive. Never upload draft contracts or confidential reports to a cloud watermarker."
+      "type": "watermark_hero_features",
+      "title": "Hvorfor vandmærke PDF'er offline?",
+      "content": "Tilføjelse af vandmærker betyder, at dit dokument er følsomt. Upload aldrig udkast til kontrakter eller fortrolige rapporter til et cloud-vandmærke."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Watermark a PDF",
+      "type": "watermark_how_to_steps",
+      "title": "Sådan vandmærker du en PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to watermark."
+          "title": "Åbn PDF",
+          "description": "Vælg PDF til vandmærke."
         },
         {
-          "title": "Design Watermark",
-          "description": "Type text or upload a logo image."
+          "title": "Design vandmærke",
+          "description": "Indtast tekst eller upload et logobillede."
         },
         {
-          "title": "Apply & Download",
-          "description": "Get your watermarked PDF in one click."
+          "title": "Anvend og download",
+          "description": "Få din vandmærkede PDF med et enkelt klik."
         }
-      ]
+      ],
+      "badgeText": "Hurtig guide"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Document Watermarking in Copenhagen",
-      "content": "Legal and creative professionals in Copenhagen stamp documents with watermarks without cloud uploads."
+      "type": "watermark_geo_targeting",
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle handlinger udføres direkte på din lokale enhed. Vi bruger avanceret WebAssembly-teknologi til at behandle dine dokumenter uden nogensinde at uploade dem til eksterne servere, hvilket sikrer fuldstændigt privatliv.",
+      "badgeText": "Lokal behandling"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Confidential Drafts Stay Private",
-      "content": "Draft contracts and unreleased designs watermarked locally without any server contact."
+      "type": "watermark_privacy_security",
+      "title": "Fortrolige udkast Forbliv private",
+      "content": "Udkast til kontrakter og uudgivne designs vandmærket lokalt uden nogen serverkontakt.",
+      "badgeText": "Sikkerhed først"
     },
     {
-      "type": "transform_performance",
-      "title": "Stamp Thousands of Pages Instantly",
-      "content": "Apply watermarks to a 1000-page document in under 3 seconds. All in your browser."
+      "type": "watermark_performance",
+      "title": "Stempler tusindvis af sider øjeblikkeligt",
+      "content": "Anvend vandmærker på et 1000-siders dokument på under 3 sekunder. Alt sammen i din browser.",
+      "badgeText": "Lynhurtigt"
     }
   ],
   "faqs": [
     {
-      "q": "Can I use a logo as a watermark?",
-      "a": "Yes, upload a PNG logo and set transparency."
+      "q": "Kan jeg bruge et logo som vandmærke?",
+      "a": "Ja, upload et PNG-logo og indstil gennemsigtighed."
     },
     {
-      "q": "Can I adjust watermark opacity?",
-      "a": "Yes, from 10% to 100% opacity."
+      "q": "Kan jeg justere vandmærkets opacitet?",
+      "a": "Ja, fra 10 % til 100 % opacitet."
     },
     {
-      "q": "Can I apply it to specific pages only?",
-      "a": "Yes, choose page ranges."
+      "q": "Kan jeg kun anvende det på bestemte sider?",
+      "a": "Ja, vælg sideintervaller."
     },
     {
-      "q": "Is diagonal placement available?",
-      "a": "Yes, rotate watermarks to any angle."
+      "q": "Er diagonal placering tilgængelig?",
+      "a": "Ja, drej vandmærker til enhver vinkel."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, helt gratis."
+      "q": "Er dette gratis?",
+      "a": "Ja, altid gratis."
     }
-  ]
+  ],
+  "faqTitle": "Ofte stillede spørgsmål",
+  "supportCenter": "Supportcenter"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Sign PDF Online — Draw Signature Offline",
-  "h1": "Sign PDF Documents With Your Signature Without Uploading",
-  "description": "Draw, type, or upload your signature and place it on PDFs entirely in your browser. No cloud. Perfect for users in New Delhi.",
+  "title": "साइन पीडीएफ ऑनलाइन - हस्ताक्षर ऑफ़लाइन बनाएं",
+  "h1": "पीडीएफ दस्तावेजों पर बिना अपलोड किए अपने हस्ताक्षर से हस्ताक्षर करें",
+  "description": "अपना हस्ताक्षर बनाएं, टाइप करें या अपलोड करें और इसे पूरी तरह से अपने ब्राउज़र में पीडीएफ़ पर रखें। कोई बादल नहीं. 100% सुरक्षित स्थानीय प्रसंस्करण।",
+  "buttonText": "Sign PDF",
+  "badges": [
+    "डिजिटल हस्ताक्षर",
+    "ड्रा या टाइप करें",
+    "कानूनी रूप से बाध्यकारी"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "sign_hero_features",
-      "title": "Why Sign PDFs Locally?",
-      "content": "Your signature is your identity. Never upload your drawn signature or a private contract to a third-party cloud signing service."
+      "title": "पीडीएफ़ पर स्थानीय रूप से हस्ताक्षर क्यों करें?",
+      "content": "आपका हस्ताक्षर ही आपकी पहचान है. अपने तैयार किए गए हस्ताक्षर या निजी अनुबंध को कभी भी किसी तृतीय-पक्ष क्लाउड साइनिंग सेवा पर अपलोड न करें।"
     },
     {
       "type": "sign_how_to_steps",
-      "title": "How to Sign a PDF in 3 Steps",
+      "title": "3 चरणों में पीडीएफ पर हस्ताक्षर कैसे करें",
       "steps": [
         {
-          "title": "Create Your Signature",
-          "description": "Draw with mouse, type in signature font, or upload an image."
+          "title": "अपना हस्ताक्षर बनाएं",
+          "description": "माउस से चित्र बनाएं, हस्ताक्षर फ़ॉन्ट टाइप करें, या एक छवि अपलोड करें।"
         },
         {
-          "title": "Place on Document",
-          "description": "Drag and resize your signature to the correct position."
+          "title": "दस्तावेज़ पर रखें",
+          "description": "अपने हस्ताक्षर को सही स्थिति में खींचें और उसका आकार बदलें।"
         },
         {
-          "title": "Download Signed PDF",
-          "description": "Save your signed document immediately, no account needed."
+          "title": "हस्ताक्षरित पीडीएफ डाउनलोड करें",
+          "description": "अपना हस्ताक्षरित दस्तावेज़ तुरंत सहेजें, किसी खाते की आवश्यकता नहीं है।"
         }
-      ]
+      ],
+      "badgeText": "त्वरित मार्गदर्शिका"
     },
     {
       "type": "sign_geo_targeting",
-      "title": "Private Digital Signatures for New Delhi",
-      "content": "Freelancers and businesses in New Delhi sign contracts, NDAs, and agreements without exposing their identity or documents to any cloud service."
+      "title": "100% सुरक्षित स्थानीय प्रसंस्करण",
+      "content": "सभी ऑपरेशन सीधे आपके स्थानीय डिवाइस पर किए जाते हैं। हम पूर्ण गोपनीयता सुनिश्चित करते हुए, आपके दस्तावेज़ों को बाहरी सर्वर पर अपलोड किए बिना संसाधित करने के लिए उन्नत WebAssembly तकनीक का उपयोग करते हैं।",
+      "badgeText": "स्थानीय प्रसंस्करण"
     },
     {
       "type": "sign_privacy_security",
-      "title": "Your Signature Identity Stays Private",
-      "content": "Your drawn signature and signed document are processed entirely in browser memory — never stored, never transmitted."
+      "title": "आपकी हस्ताक्षर पहचान निजी रहती है",
+      "content": "आपके खींचे गए हस्ताक्षर और हस्ताक्षरित दस्तावेज़ पूरी तरह से ब्राउज़र मेमोरी में संसाधित होते हैं - कभी संग्रहीत नहीं होते, कभी प्रसारित नहीं होते।",
+      "badgeText": "सुरक्षा पहले"
     },
     {
       "type": "sign_performance",
-      "title": "Sign Any Document in Under 30 Seconds",
-      "content": "No account, no upload, no cloud. Draw, place, and download your signed PDF in under 30 seconds."
+      "title": "किसी भी दस्तावेज़ पर 30 सेकंड से कम समय में हस्ताक्षर करें",
+      "content": "कोई खाता नहीं, कोई अपलोड नहीं, कोई क्लाउड नहीं। 30 सेकंड से कम समय में अपना हस्ताक्षरित पीडीएफ बनाएं, रखें और डाउनलोड करें।",
+      "badgeText": "बिजली की तेजी"
     }
   ],
   "faqs": [
     {
-      "q": "How can I create my signature?",
-      "a": "Draw with your mouse, type your name in a signature font, or upload an image."
+      "q": "मैं अपना हस्ताक्षर कैसे बना सकता हूँ?",
+      "a": "अपने माउस से चित्र बनाएं, हस्ताक्षर फ़ॉन्ट में अपना नाम लिखें, या एक छवि अपलोड करें।"
     },
     {
-      "q": "Can I sign multiple pages?",
-      "a": "Yes, place your signature on any or all pages."
+      "q": "क्या मैं अनेक पृष्ठों पर हस्ताक्षर कर सकता हूँ?",
+      "a": "हाँ, किसी भी या सभी पृष्ठों पर अपना हस्ताक्षर करें।"
     },
     {
-      "q": "Is the signature legally binding?",
-      "a": "Our tool applies a visual signature. For legally binding e-signatures, check your jurisdiction."
+      "q": "क्या हस्ताक्षर कानूनी रूप से बाध्यकारी है?",
+      "a": "हमारा टूल एक दृश्य हस्ताक्षर लागू करता है। कानूनी रूप से बाध्यकारी ई-हस्ताक्षरों के लिए, अपने अधिकार क्षेत्र की जाँच करें।"
     },
     {
-      "q": "Can I resize the signature?",
-      "a": "Yes, drag the corners to resize it after placing."
+      "q": "क्या मैं हस्ताक्षर का आकार बदल सकता हूँ?",
+      "a": "हां, रखने के बाद इसका आकार बदलने के लिए कोनों को खींचें।"
     },
     {
-      "q": "Is this free?",
-      "a": "हाँ, पूरी तरह मुफ्त।"
+      "q": "क्या यह मुफ़्त है?",
+      "a": "हाँ, पूर्णतया निःशुल्क।"
     }
-  ]
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न",
+  "supportCenter": "सहायता केंद्र"
 }

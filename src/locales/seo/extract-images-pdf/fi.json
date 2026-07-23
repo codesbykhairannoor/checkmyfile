@@ -1,67 +1,85 @@
 {
-  "title": "Extract Images from PDF — Offline Extractor",
-  "h1": "Extract All Embedded Images from PDF Files",
-  "description": "Pull out every image from a PDF and download them as PNG or JPG files, all in your browser. No cloud. Ideal for users in Helsinki.",
+  "title": "Pura kuvat PDF-tiedostosta — Offline Extractor",
+  "h1": "Pura kaikki upotetut kuvat PDF-tiedostoista",
+  "description": "Vedä kaikki kuvat PDF-tiedostosta ja lataa ne PNG- tai JPG-tiedostoina, kaikki selaimessasi. Ei pilviä. 100 % turvallinen paikallinen käsittely.",
+  "buttonText": "Extract All Images",
+  "badges": [
+    "Tuotekuvat",
+    "Luottamukselliset kaaviot",
+    "Vektorit"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract Images Offline?",
-      "content": "PDFs with confidential diagrams or product photos should never be uploaded. Extract images directly in your browser."
+      "type": "extract_images_hero_features",
+      "title": "Miksi poimia kuvia offline-tilassa?",
+      "content": "PDF-tiedostoja, joissa on luottamuksellisia kaavioita tai tuotekuvia, ei tule koskaan ladata. Pura kuvat suoraan selaimessasi."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Extract Images from PDF",
+      "type": "extract_images_how_to_steps",
+      "title": "Kuvien purkaminen PDF:stä",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Open the PDF containing embedded images."
+          "title": "Lataa PDF",
+          "description": "Avaa upotettuja kuvia sisältävä PDF."
         },
         {
-          "title": "Scan for Images",
-          "description": "Our engine locates all embedded image objects."
+          "title": "Etsi kuvia",
+          "description": "Koneemme paikantaa kaikki upotetut kuvaobjektit."
         },
         {
-          "title": "Download ZIP",
-          "description": "Get all extracted images in a single ZIP file."
+          "title": "Lataa ZIP",
+          "description": "Hanki kaikki puretut kuvat yhdessä ZIP-tiedostossa."
         }
-      ]
+      ],
+      "badgeText": "Pikaopas"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Image Extraction in Helsinki",
-      "content": "Publishers and marketers in Helsinki extract product photos and diagrams from PDFs without cloud uploads."
+      "type": "extract_images_geo_targeting",
+      "title": "100 % suojattu paikallinen käsittely",
+      "content": "Kaikki toiminnot suoritetaan suoraan paikallisella laitteellasi. Käytämme edistynyttä WebAssembly-tekniikkaa asiakirjojen käsittelyyn lataamatta niitä koskaan ulkoisille palvelimille, mikä takaa täydellisen yksityisyyden.",
+      "badgeText": "Paikallinen käsittely"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Product Images Stay Confidential",
-      "content": "Unreleased product photos embedded in PDFs extracted locally without any server access."
+      "type": "extract_images_privacy_security",
+      "title": "Tuotekuvat Pysy luottamuksellisina",
+      "content": "Julkaisemattomat tuotekuvat upotettuina PDF-tiedostoihin, jotka on purettu paikallisesti ilman palvelinkäyttöä.",
+      "badgeText": "Turvallisuus ensin"
     },
     {
-      "type": "split_performance",
-      "title": "Extract Hundreds of Images Fast",
-      "content": "Extract 500 images from a PDF in seconds. All native browser processing."
+      "type": "extract_images_performance",
+      "title": "Pura satoja kuvia nopeasti",
+      "content": "Pura 500 kuvaa PDF-tiedostosta sekunneissa. Kaikki natiivi selainkäsittely.",
+      "badgeText": "Salamannopeasti"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are extracted?",
-      "a": "Images are saved in their original format (PNG, JPG, etc.)."
+      "q": "Mitä kuvamuotoja puretaan?",
+      "a": "Kuvat tallennetaan alkuperäisessä muodossaan (PNG, JPG jne.)."
     },
     {
-      "q": "Are images at full resolution?",
-      "a": "Yes, extracted at the original embedded resolution."
+      "q": "Ovatko kuvat täydellä resoluutiolla?",
+      "a": "Kyllä, purettu alkuperäisellä upotetulla resoluutiolla."
     },
     {
-      "q": "Can I choose specific pages?",
-      "a": "Yes, specify which pages to extract images from."
+      "q": "Voinko valita tiettyjä sivuja?",
+      "a": "Kyllä, määritä, miltä sivuilta kuvat poimitaan."
     },
     {
-      "q": "Does it extract vector graphics?",
-      "a": "Vector elements are rasterized to PNG/JPG."
+      "q": "Poimiiko se vektorigrafiikkaa?",
+      "a": "Vektorielementit rasteroidaan PNG/JPG-muotoon."
     },
     {
-      "q": "Is this free?",
-      "a": "Kyllä, täysin ilmainen."
+      "q": "Onko tämä ilmainen?",
+      "a": "Kyllä, aina ilmainen."
     }
-  ]
+  ],
+  "faqTitle": "Usein kysytyt kysymykset",
+  "supportCenter": "Tukikeskus"
 }

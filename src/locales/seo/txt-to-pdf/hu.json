@@ -1,67 +1,85 @@
 {
-  "title": "Text to PDF Converter — Offline & Instant",
-  "h1": "Convert Plain Text Files to PDF Locally",
-  "description": "Transform .txt files into clean, readable PDFs directly in your browser. No upload required. Ideal for users in Budapest.",
+  "title": "Szöveg PDF-be konvertáló – offline és azonnali",
+  "h1": "Egyszerű szöveges fájlok konvertálása PDF-be helyileg",
+  "description": "Alakítsa át a .txt fájlokat tiszta, olvasható PDF-fájlokká közvetlenül a böngészőben. Feltöltés nem szükséges. 100%-ban biztonságos helyi feldolgozás.",
+  "buttonText": "Convert Text",
+  "badges": [
+    "Kódrészletek",
+    "Szervernaplók",
+    "Kéziratok"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Text Files Offline?",
-      "content": "Text files often contain code, scripts, or sensitive notes. Our offline converter ensures zero data transmission."
+      "type": "txt_hero_features",
+      "title": "Miért konvertálhat szöveges fájlokat offline módban?",
+      "content": "A szöveges fájlok gyakran tartalmaznak kódot, szkripteket vagy érzékeny megjegyzéseket. Offline konverterünk nulla adatátvitelt biztosít."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Text to PDF",
+      "type": "txt_how_to_steps",
+      "title": "Szöveg konvertálása PDF-be",
       "steps": [
         {
-          "title": "Open Text File",
-          "description": "Select your .txt file or paste text directly."
+          "title": "Szövegfájl megnyitása",
+          "description": "Válassza ki a .txt fájlt, vagy illessze be közvetlenül a szöveget."
         },
         {
-          "title": "Choose Font & Style",
-          "description": "Pick font size and layout preferences."
+          "title": "Válassza ki a betűtípust és -stílust",
+          "description": "Válassza ki a betűméretet és az elrendezési beállításokat."
         },
         {
-          "title": "Download PDF",
-          "description": "Export your text as a beautifully formatted PDF."
+          "title": "PDF letöltése",
+          "description": "Exportálja szövegét gyönyörűen formázott PDF-fájlként."
         }
-      ]
+      ],
+      "badgeText": "Gyors útmutató"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Text to PDF for Budapest Developers",
-      "content": "Developers and writers in Budapest use our tool to convert scripts and notes without cloud dependency."
+      "type": "txt_geo_targeting",
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Minden művelet közvetlenül a helyi eszközön történik. Fejlett WebAssembly technológiát használunk a dokumentumok feldolgozásához anélkül, hogy azokat külső szerverekre feltöltenénk, így biztosítva a teljes adatvédelmet.",
+      "badgeText": "Helyi feldolgozás"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Code Stays on Your Machine",
-      "content": "Source code, legal notes, medical records — text files converted with zero server involvement."
+      "type": "txt_privacy_security",
+      "title": "A kód a gépen marad",
+      "content": "Forráskód, jogi megjegyzések, orvosi feljegyzések – szöveges fájlok konvertálása a szerver nélkül.",
+      "badgeText": "Első a biztonság"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Text Rendering",
-      "content": "Convert any size text file to PDF in milliseconds. No upload, no compression, no delay."
+      "type": "txt_performance",
+      "title": "Azonnali szövegmegjelenítés",
+      "content": "Bármilyen méretű szöveges fájl konvertálása PDF-be ezredmásodperc alatt. Nincs feltöltés, nincs tömörítés, nincs késleltetés.",
+      "badgeText": "Villámgyors"
     }
   ],
   "faqs": [
     {
-      "q": "Can I paste text directly?",
-      "a": "Yes, you can type or paste text without uploading a file."
+      "q": "Beilleszthetek közvetlenül szöveget?",
+      "a": "Igen, beírhat vagy beilleszthet szöveget fájl feltöltése nélkül."
     },
     {
-      "q": "What fonts are available?",
-      "a": "Standard web fonts like Arial, Times New Roman, and monospace."
+      "q": "Milyen betűtípusok érhetők el?",
+      "a": "Szabványos webes betűtípusok, például Arial, Times New Roman és monospace."
     },
     {
-      "q": "Is code syntax preserved?",
-      "a": "Monospace formatting is preserved for code blocks."
+      "q": "A kód szintaxisa megmarad?",
+      "a": "A kódblokkok monospace formázása megmarad."
     },
     {
-      "q": "Can I set page margins?",
-      "a": "Yes, customize top, bottom, left, and right margins."
+      "q": "Beállíthatom az oldalmargókat?",
+      "a": "Igen, testreszabhatja a felső, alsó, bal és jobb margót."
     },
     {
-      "q": "Is this free?",
+      "q": "Ez ingyenes?",
       "a": "Igen, teljesen ingyenes."
     }
-  ]
+  ],
+  "faqTitle": "Gyakran Ismételt Kérdések",
+  "supportCenter": "Támogatási Központ"
 }

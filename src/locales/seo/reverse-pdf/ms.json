@@ -1,67 +1,85 @@
 {
-  "title": "Reverse PDF — Flip Page Order Offline",
-  "h1": "Reverse the Page Order of Any PDF Locally",
-  "description": "Flip the page sequence of PDF documents entirely in your browser. No upload, instant result. Great for users in Kuala Lumpur.",
+  "title": "Songsang PDF — Selak Halaman Tertib Luar Talian",
+  "h1": "Balikkan Susunan Halaman Mana-mana PDF Secara Tempatan",
+  "description": "Balikkan urutan halaman dokumen PDF sepenuhnya dalam penyemak imbas anda. Tiada muat naik, hasil segera. 100% pemprosesan tempatan selamat.",
+  "buttonText": "Reverse Order",
+  "badges": [
+    "Songsang Semua Halaman",
+    "Betulkan Imbasan",
+    "Satu Klik"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Reverse PDF Page Order Offline?",
-      "content": "When a scanner outputs pages in reverse, you need a quick local fix — not a cloud upload of your entire document."
+      "type": "reverse_hero_features",
+      "title": "Mengapa Terbalikkan Pesanan Halaman PDF di Luar Talian?",
+      "content": "Apabila pengimbas mengeluarkan halaman secara terbalik, anda memerlukan pembetulan setempat yang cepat — bukan muat naik awan bagi keseluruhan dokumen anda."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Reverse PDF Page Order",
+      "type": "reverse_how_to_steps",
+      "title": "Cara Membalikkan Susunan Halaman PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF with incorrect page order."
+          "title": "Buka PDF",
+          "description": "Pilih PDF dengan susunan halaman yang salah."
         },
         {
-          "title": "Confirm Reversal",
-          "description": "Preview the new first and last page."
+          "title": "Sahkan Pembalikan",
+          "description": "Pratonton halaman pertama dan terakhir yang baharu."
         },
         {
-          "title": "Download Reversed PDF",
-          "description": "Get the reordered PDF instantly."
+          "title": "Muat Turun PDF Terbalik",
+          "description": "Dapatkan PDF yang disusun semula dengan serta-merta."
         }
-      ]
+      ],
+      "badgeText": "Panduan Pantas"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Page Order Fix for Kuala Lumpur Users",
-      "content": "Office users in Kuala Lumpur fix scanner reversal issues instantly without cloud uploads."
+      "type": "reverse_geo_targeting",
+      "title": "100% Pemprosesan Tempatan Selamat",
+      "content": "Semua operasi dilakukan terus pada peranti tempatan anda. Kami menggunakan teknologi WebAssembly termaju untuk memproses dokumen anda tanpa pernah memuat naiknya ke pelayan luaran, memastikan privasi lengkap.",
+      "badgeText": "Pemprosesan Setempat"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Documents Never Leave Your Device",
-      "content": "Reversed contracts, reports, and records are processed entirely in browser memory."
+      "type": "reverse_privacy_security",
+      "title": "Dokumen Jangan Sekali-kali Meninggalkan Peranti Anda",
+      "content": "Kontrak, laporan dan rekod terbalik diproses sepenuhnya dalam memori penyemak imbas.",
+      "badgeText": "Keselamatan Diutamakan"
     },
     {
-      "type": "transform_performance",
-      "title": "Reverse Any PDF in Seconds",
-      "content": "Reversing a 1000-page document takes milliseconds. All in your browser."
+      "type": "reverse_performance",
+      "title": "Balikkan Mana-mana PDF dalam Beberapa Saat",
+      "content": "Membalikkan dokumen 1000 halaman mengambil masa milisaat. Semua dalam penyemak imbas anda.",
+      "badgeText": "Sepantas Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "Does this reverse all pages?",
-      "a": "Yes, the full page order is flipped."
+      "q": "Adakah ini membalikkan semua halaman?",
+      "a": "Ya, susunan halaman penuh diselak."
     },
     {
-      "q": "Can I select a range to reverse?",
-      "a": "Yes, specify start and end pages to reverse selectively."
+      "q": "Bolehkah saya memilih julat untuk diterbalikkan?",
+      "a": "Ya, tentukan halaman mula dan akhir untuk diterbalikkan secara terpilih."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "No, reversal is a structural operation with no quality loss."
+      "q": "Adakah kualiti terjejas?",
+      "a": "Tidak, pembalikan ialah operasi struktur tanpa kehilangan kualiti."
     },
     {
-      "q": "Can I undo?",
-      "a": "Apply reversal again to undo."
+      "q": "Bolehkah saya membuat asal?",
+      "a": "Gunakan pembalikan sekali lagi untuk membuat asal."
     },
     {
-      "q": "Is this free?",
-      "a": "Ya, percuma sepenuhnya."
+      "q": "Adakah ini percuma?",
+      "a": "Ya, sentiasa percuma."
     }
-  ]
+  ],
+  "faqTitle": "Soalan Lazim",
+  "supportCenter": "Pusat Sokongan"
 }

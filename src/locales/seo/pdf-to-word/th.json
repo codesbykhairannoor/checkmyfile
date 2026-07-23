@@ -1,67 +1,80 @@
 {
-  "title": "PDF to Word Converter — Offline & Editable",
-  "h1": "Convert PDF to Editable Word Documents Locally",
-  "description": "Transform PDFs back into .docx files you can edit, right in your browser. No upload needed. Great for users in Bangkok.",
+  "title": "โปรแกรมแปลง PDF เป็น Word — ออฟไลน์และแก้ไขได้",
+  "h1": "แปลง PDF เป็นเอกสาร Word ที่แก้ไขได้ในเครื่อง",
+  "description": "แปลง PDF กลับเป็นไฟล์ .docx ที่คุณสามารถแก้ไขได้จากเบราว์เซอร์ของคุณ ไม่จำเป็นต้องอัปโหลด เหมาะสำหรับผู้ใช้ในกรุงเทพฯ",
+  "buttonText": "แปลงเป็นเวิร์ด",
+  "badges": [
+    "เอกสารที่แก้ไขได้",
+    "การกู้คืนข้อความ",
+    "กระบวนการออฟไลน์"
+  ],
+  "stats": [
+    "100%",
+    "ท้องถิ่น",
+    "0 วินาที",
+    "รอเวลา"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF Back Offline?",
-      "content": "When you need to edit a PDF, converting it offline keeps your original document confidential."
+      "title": "ทำไมต้องใช้ออฟไลน์?",
+      "content": "เมื่อคุณต้องการแก้ไข PDF การแปลงเป็นออฟไลน์จะเก็บเอกสารต้นฉบับของคุณไว้เป็นความลับ"
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Word",
+      "title": "วิธีใช้",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF file you need to convert."
+          "title": "โหลด PDF",
+          "description": "เลือกไฟล์ PDF ที่คุณต้องการแปลง"
         },
         {
-          "title": "Detect Text Layers",
-          "description": "Our engine reads text and structure from the PDF."
+          "title": "ตรวจจับเลเยอร์ข้อความ",
+          "description": "เครื่องมือของเราอ่านข้อความและโครงสร้างจาก PDF"
         },
         {
-          "title": "Download .docx",
-          "description": "Get your editable Word document ready to modify."
+          "title": "ดาวน์โหลด .docx",
+          "description": "เตรียมเอกสาร Word ที่สามารถแก้ไขได้ของคุณให้พร้อมที่จะแก้ไข"
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "PDF to Word for Bangkok Offices",
-      "content": "Office workers in Bangkok use our tool to recover editable text from PDFs without cloud dependency."
+      "title": "PDF เป็น Word สำหรับสำนักงานในกรุงเทพฯ",
+      "content": "พนักงานออฟฟิศในกรุงเทพใช้เครื่องมือของเราเพื่อกู้คืนข้อความที่แก้ไขได้จาก PDF โดยไม่ต้องพึ่งพาระบบคลาวด์"
     },
     {
       "type": "split_privacy_security",
-      "title": "Legal Documents Stay Confidential",
-      "content": "Contracts, NDAs, and reports converted back to Word entirely in your browser memory."
+      "title": "เอกสารทางกฎหมายจะเป็นความลับ",
+      "content": "สัญญา NDA และรายงานที่แปลงกลับเป็น Word ทั้งหมดในหน่วยความจำเบราว์เซอร์ของคุณ"
     },
     {
       "type": "split_performance",
-      "title": "Recover Editable Text in Seconds",
-      "content": "Extract text from a 50-page PDF in under 3 seconds without uploading a single byte."
+      "title": "กู้คืนข้อความที่แก้ไขได้ภายในไม่กี่วินาที",
+      "content": "แยกข้อความจาก PDF 50 หน้าภายในเวลาไม่ถึง 3 วินาทีโดยไม่ต้องอัปโหลดแม้แต่ไบต์เดียว"
     }
   ],
   "faqs": [
     {
-      "q": "Is all text preserved?",
-      "a": "Yes, text from all layers is extracted and formatted."
+      "q": "ข้อความทั้งหมดถูกเก็บรักษาไว้หรือไม่?",
+      "a": "ใช่ ข้อความจากทุกเลเยอร์จะถูกแยกและจัดรูปแบบ"
     },
     {
-      "q": "Does it work on scanned PDFs?",
-      "a": "For scanned PDFs, use our OCR tool first."
+      "q": "มันใช้งานได้กับ PDF ที่สแกนหรือไม่?",
+      "a": "สำหรับ PDF ที่สแกน ให้ใช้เครื่องมือ OCR ของเราก่อน"
     },
     {
-      "q": "Are images included in the .docx?",
-      "a": "Yes, embedded images are included in the output."
+      "q": "รูปภาพรวมอยู่ใน .docx หรือไม่",
+      "a": "ใช่ รูปภาพที่ฝังไว้จะรวมอยู่ในเอาต์พุตด้วย"
     },
     {
-      "q": "Can I edit the .docx after?",
-      "a": "Absolutely, the output is a fully editable Word document."
+      "q": "ฉันสามารถแก้ไข .docx หลังจากนั้นได้หรือไม่",
+      "a": "แน่นอนว่าผลลัพธ์จะเป็นเอกสาร Word ที่สามารถแก้ไขได้อย่างสมบูรณ์"
     },
     {
-      "q": "Is this free?",
-      "a": "ใช่ ฟรีทั้งหมด"
+      "q": "ฟรีหรือเปล่า?",
+      "a": "ใช่ ฟรีโดยสมบูรณ์."
     }
-  ]
+  ],
+  "faqTitle": "คำถามที่พบบ่อย"
 }

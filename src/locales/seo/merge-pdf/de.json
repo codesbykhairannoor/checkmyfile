@@ -1,67 +1,78 @@
 {
-  "title": "Merge PDF - Combine Documents Offline",
-  "h1": "Merge PDF Files Instantly in Your Browser",
-  "description": "Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, perfect for users in Berlin.",
+  "title": "PDF zusammenführen – Dokumente offline kombinieren",
+  "h1": "PDF-Dateien sofort in Ihrem Browser zusammenführen",
+  "description": "Kombinieren Sie mehrere PDF-Dateien mithilfe reiner clientseitiger WebAssembly zu einem einzigen Dokument. Keine Datei-Uploads, ideal für Benutzer in New York.",
   "sections": [
     {
       "type": "merge_hero_features",
-      "title": "Why Merge PDF Offline?",
-      "content": "Instead of uploading sensitive documents to a server, our Merge PDF tool stitches your pages together directly in your browser. Complete privacy."
+      "title": "Warum PDF offline zusammenführen?",
+      "content": "Anstatt vertrauliche Dokumente auf einen Server hochzuladen, fügt unser Tool „PDF zusammenführen“ Ihre Seiten direkt in Ihrem Browser zusammen. Absolute Privatsphäre."
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Merge PDF Files",
+      "title": "So führen Sie PDF-Dateien zusammen",
       "steps": [
         {
-          "title": "Add Documents",
-          "description": "Select the PDFs you want to merge together."
+          "title": "Dokumente hinzufügen",
+          "description": "Wählen Sie die PDFs aus, die Sie zusammenführen möchten."
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop files to get the perfect sequence."
+          "title": "Seiten neu anordnen",
+          "description": "Ziehen Sie Dateien per Drag-and-Drop, um die perfekte Reihenfolge zu erhalten."
         },
         {
-          "title": "Merge & Save",
-          "description": "Click merge and download your combined document instantly."
+          "title": "Zusammenführen und speichern",
+          "description": "Klicken Sie auf „Zusammenführen“ und laden Sie Ihr kombiniertes Dokument sofort herunter."
         }
-      ]
+      ],
+      "badgeText": "Kurzanleitung"
     },
     {
       "type": "merge_geo_targeting",
-      "title": "Seamless Merging for users in Berlin, DE-BE",
-      "content": "No matter if you are in Berlin or traveling, combining documents takes zero milliseconds of upload time."
+      "title": "100 % sichere lokale Verarbeitung",
+      "content": "Alle Vorgänge werden direkt auf Ihrem lokalen Gerät ausgeführt. Wir verwenden fortschrittliche WebAssembly-Technologie, um Ihre Dokumente zu verarbeiten, ohne sie jemals auf externe Server hochzuladen, und gewährleisten so absolute Privatsphäre.",
+      "badgeText": "Lokale Verarbeitung"
     },
     {
       "type": "merge_privacy_security",
-      "title": "Enterprise-Grade Document Combining",
-      "content": "Merging contracts and invoices? Do it securely with our WASM engine. No traces left behind."
+      "title": "Dokumentenkombination der Enterprise-Klasse",
+      "content": "Verträge und Rechnungen zusammenführen? Machen Sie es sicher mit unserer WASM-Engine. Es bleiben keine Spuren zurück.",
+      "badgeText": "Sicherheit geht vor"
     },
     {
       "type": "merge_performance",
-      "title": "Instant Combination",
-      "content": "Stitching PDFs locally means you can merge a 500-page document faster than you can upload it."
+      "title": "Sofortige Kombination",
+      "content": "Durch das lokale Zusammenfügen von PDFs können Sie ein 500-seitiges Dokument schneller zusammenführen, als Sie es hochladen können.",
+      "badgeText": "Blitzschnell"
     }
   ],
   "faqs": [
     {
-      "q": "Is merging PDFs completely free?",
-      "a": "Yes! Merge as many files as you want without paying a cent."
+      "q": "Ist das Zusammenführen von PDFs völlig kostenlos?",
+      "a": "Ja! Führen Sie so viele Dateien zusammen, wie Sie möchten, ohne einen Cent zu zahlen."
     },
     {
-      "q": "Are my merged files uploaded?",
-      "a": "No, all merging happens offline in your browser."
+      "q": "Werden meine zusammengeführten Dateien hochgeladen?",
+      "a": "Nein, alle Zusammenführungen erfolgen offline in Ihrem Browser."
     },
     {
-      "q": "Can I reorder the files before merging?",
-      "a": "Yes, just drag and drop the files in the preview window."
+      "q": "Kann ich die Dateien vor dem Zusammenführen neu anordnen?",
+      "a": "Ja, ziehen Sie die Dateien einfach per Drag & Drop in das Vorschaufenster."
     },
     {
-      "q": "Is there a limit on how many files I can merge?",
-      "a": "No artificial limits! Merge 10 or 100 files depending on your RAM."
+      "q": "Gibt es eine Begrenzung, wie viele Dateien ich zusammenführen kann?",
+      "a": "Keine künstlichen Grenzen! Führen Sie je nach RAM 10 oder 100 Dateien zusammen."
     },
     {
-      "q": "Does merging ruin the formatting?",
-      "a": "Not at all. The original layers and vector data are perfectly stitched together."
+      "q": "Beeinträchtigt das Zusammenführen die Formatierung?",
+      "a": "Gar nicht. Die ursprünglichen Ebenen und Vektordaten werden perfekt zusammengefügt."
     }
+  ],
+  "faqTitle": "Häufig gestellte Fragen",
+  "supportCenter": "Support-Center",
+  "badges": [
+    "Keine Serverlatenz",
+    "Keine Upload-Bandbreite",
+    "Sofortige Bearbeitung"
   ]
 }

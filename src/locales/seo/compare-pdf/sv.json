@@ -1,67 +1,85 @@
 {
-  "title": "Compare PDF Files — Spot Differences Locally",
-  "h1": "Compare Two PDF Documents Side by Side",
-  "description": "Upload two PDFs and highlight differences between them entirely in your browser. No upload to servers. Ideal for users in Stockholm.",
+  "title": "Jämför PDF-filer — Hitta skillnader lokalt",
+  "h1": "Jämför två PDF-dokument sida vid sida",
+  "description": "Ladda upp två PDF-filer och markera skillnaderna mellan dem helt och hållet i din webbläsare. Ingen uppladdning till servrar. 100 % säker lokal bearbetning.",
+  "buttonText": "Compare PDFs",
+  "badges": [
+    "Hitta skillnader",
+    "Markera ändringar",
+    "Visuell Diff"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Compare PDFs Locally?",
-      "content": "Comparing contract versions or document revisions often involves highly sensitive content. Do it entirely offline."
+      "type": "compare_hero_features",
+      "title": "Varför jämföra PDF-filer lokalt?",
+      "content": "Att jämföra kontraktsversioner eller dokumentrevideringar innebär ofta mycket känsligt innehåll. Gör det helt offline."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Compare Two PDFs",
+      "type": "compare_how_to_steps",
+      "title": "Hur man jämför två PDF-filer",
       "steps": [
         {
-          "title": "Load Both PDFs",
-          "description": "Select the two PDF versions to compare."
+          "title": "Ladda båda PDF-filerna",
+          "description": "Välj de två PDF-versionerna att jämföra."
         },
         {
-          "title": "View Differences",
-          "description": "Highlighted changes appear side by side."
+          "title": "Visa skillnader",
+          "description": "Markerade ändringar visas sida vid sida."
         },
         {
-          "title": "Export Diff Report",
-          "description": "Download a comparison report with all changes marked."
+          "title": "Exportera skillnadsrapport",
+          "description": "Ladda ner en jämförelserapport med alla ändringar markerade."
         }
-      ]
+      ],
+      "badgeText": "Snabbguide"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Comparison for Stockholm Law Firms",
-      "content": "Legal professionals in Stockholm compare contract revisions without uploading privileged documents to cloud services."
+      "type": "compare_geo_targeting",
+      "title": "100 % säker lokal bearbetning",
+      "content": "Alla operationer utförs direkt på din lokala enhet. Vi använder avancerad WebAssembly-teknik för att behandla dina dokument utan att någonsin ladda upp dem till externa servrar, vilket säkerställer fullständig integritet.",
+      "badgeText": "Lokal bearbetning"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Privileged Documents Stay Private",
-      "content": "Compare NDAs, contracts, and regulatory filings without any server interaction."
+      "type": "compare_privacy_security",
+      "title": "Privilegerade dokument förbli privata",
+      "content": "Jämför NDA:er, kontrakt och regulatoriska anmälningar utan serverinteraktion.",
+      "badgeText": "Säkerhet först"
     },
     {
-      "type": "organizer_performance",
-      "title": "Instant Side-by-Side Comparison",
-      "content": "Compare 100-page documents in seconds with highlighted differences rendered in-browser."
+      "type": "compare_performance",
+      "title": "Omedelbar jämförelse sida vid sida",
+      "content": "Jämför 100-sidiga dokument på några sekunder med markerade skillnader som återges i webbläsaren.",
+      "badgeText": "Blixtsnabb"
     }
   ],
   "faqs": [
     {
-      "q": "What types of differences are detected?",
-      "a": "Text additions, deletions, and formatting changes are highlighted."
+      "q": "Vilka typer av skillnader upptäcks?",
+      "a": "Texttillägg, raderingar och formateringsändringar är markerade."
     },
     {
-      "q": "Can I compare scanned PDFs?",
-      "a": "For scanned PDFs, use OCR first to extract text before comparing."
+      "q": "Kan jag jämföra skannade PDF-filer?",
+      "a": "För skannade PDF-filer, använd OCR först för att extrahera text innan du jämför."
     },
     {
-      "q": "Can I export the comparison?",
-      "a": "Yes, download a marked-up PDF showing all differences."
+      "q": "Kan jag exportera jämförelsen?",
+      "a": "Ja, ladda ner en markerad PDF som visar alla skillnader."
     },
     {
-      "q": "How many versions can I compare?",
-      "a": "Two documents at a time in the side-by-side view."
+      "q": "Hur många versioner kan jag jämföra?",
+      "a": "Två dokument åt gången i vyn sida vid sida."
     },
     {
-      "q": "Is this free?",
+      "q": "Är detta gratis?",
       "a": "Ja, helt gratis."
     }
-  ]
+  ],
+  "faqTitle": "Vanliga frågor",
+  "supportCenter": "Supportcenter"
 }

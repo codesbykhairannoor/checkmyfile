@@ -1,67 +1,85 @@
 {
-  "title": "Split PDF - Extract Pages Securely",
-  "h1": "Split and Extract PDF Pages in Seconds",
-  "description": "Extract specific pages or split a large PDF into multiple files locally in your browser. Perfect for legal professionals in Kyiv.",
+  "title": "Розділіть PDF - безпечно витягуйте сторінки",
+  "h1": "Розділіть і витягніть PDF-сторінки за лічені секунди",
+  "description": "Витягніть окремі сторінки або розділіть великий PDF-файл на кілька файлів локально у вашому браузері. Швидко та повністю безпечно.",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Split PDFs Locally?",
-      "content": "When dealing with massive legal or corporate documents, extracting a single page shouldn't require uploading a 1GB file. Do it instantly right on your machine."
+      "title": "Навіщо розділяти PDF-файли локально?",
+      "content": "Коли ви маєте справу з масивними юридичними чи корпоративними документами, для вилучення однієї сторінки не потрібно завантажувати файл розміром 1 ГБ. Зробіть це миттєво прямо на своїй машині."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Extract Pages",
+      "title": "Як витягти сторінки",
       "steps": [
         {
-          "title": "Open Document",
-          "description": "Load the multi-page PDF you want to split."
+          "title": "Відкрити документ",
+          "description": "Завантажте багатосторінковий PDF-файл, який потрібно розділити."
         },
         {
-          "title": "Select Ranges",
-          "description": "Pick specific page numbers or visually select pages to extract."
+          "title": "Виберіть діапазони",
+          "description": "Виберіть конкретні номери сторінок або візуально виберіть сторінки для вилучення."
         },
         {
-          "title": "Export Zip",
-          "description": "Download your newly split files organized in a ZIP."
+          "title": "Експортувати Zip",
+          "description": "Завантажте нещодавно розділені файли, упорядковані в ZIP."
         }
-      ]
+      ],
+      "badgeText": "Короткий посібник"
     },
     {
       "type": "split_geo_targeting",
-      "title": "The Best Splitter in Kyiv, UA-30",
-      "content": "Whether you are studying in Kyiv or working on a tight deadline, extracting pages is now instantaneous."
+      "title": "100% безпечна локальна обробка",
+      "content": "Усі операції виконуються безпосередньо на локальному пристрої. Ми використовуємо передову технологію WebAssembly для обробки ваших документів, не завантажуючи їх на зовнішні сервери, забезпечуючи повну конфіденційність.",
+      "badgeText": "Локальна обробка"
     },
     {
       "type": "split_privacy_security",
-      "title": "Total Page Privacy",
-      "content": "Splitting confidential employee records? Rest easy knowing our code executes purely in your local environment."
+      "title": "Повна конфіденційність сторінки",
+      "content": "Розділ конфіденційних записів співробітників? Будьте спокійні, знаючи, що наш код виконується виключно у вашому локальному середовищі.",
+      "badgeText": "Безпека перш за все"
     },
     {
       "type": "split_performance",
-      "title": "Zero-Upload Extraction",
-      "content": "Grabbing page 14 from a 2000-page PDF takes milliseconds, skipping the excruciating upload step entirely."
+      "title": "Вилучення без завантаження",
+      "content": "Захоплення сторінки 14 із 2000-сторінкового PDF-файлу займає мілісекунди, повністю пропускаючи болісний етап завантаження.",
+      "badgeText": "Блискавичний"
     }
   ],
   "faqs": [
     {
-      "q": "How do I extract just one page?",
-      "a": "Simply click on the page thumbnail you want and hit Export."
+      "q": "Як витягнути лише одну сторінку?",
+      "a": "Просто натисніть мініатюру потрібної сторінки та натисніть «Експортувати»."
     },
     {
-      "q": "Can I split the PDF in half?",
-      "a": "Yes, you can specify custom page ranges like 1-10 and 11-20."
+      "q": "Чи можу я розділити PDF навпіл?",
+      "a": "Так, ви можете вказати спеціальні діапазони сторінок, наприклад 1-10 і 11-20."
     },
     {
-      "q": "Will the extracted pages lose quality?",
-      "a": "No, the splitting process uses binary extraction, preserving 100% of the original quality."
+      "q": "Чи втратять якість витягнуті сторінки?",
+      "a": "Ні, процес розділення використовує двійкове вилучення, зберігаючи 100% вихідної якості."
     },
     {
-      "q": "Is my document uploaded when splitting?",
-      "a": "Never. The entire 2000-page document stays strictly in your browser."
+      "q": "Чи завантажується мій документ під час розділення?",
+      "a": "Ніколи. Весь 2000-сторінковий документ залишається виключно у вашому браузері."
     },
     {
-      "q": "Is there a limit to how many pages I can split?",
-      "a": "No limits! Split as many pages as your computer can handle."
+      "q": "Чи є обмеження на кількість сторінок, які я можу розділити?",
+      "a": "Без обмежень! Розділіть стільки сторінок, скільки ваш комп’ютер може впорати."
     }
-  ]
+  ],
+  "badges": [
+    "Миттєвий розкол",
+    "Точна дальність",
+    "Без обмежень"
+  ],
+  "stats": [
+    "Ultra Fast",
+    "No Upload",
+    "Batch Zip",
+    "Secure"
+  ],
+  "buttonText": "Split PDF",
+  "faqTitle": "Часті запитання",
+  "supportCenter": "Центр підтримки"
 }

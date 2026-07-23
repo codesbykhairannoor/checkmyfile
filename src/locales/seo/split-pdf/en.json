@@ -1,7 +1,7 @@
 {
   "title": "Split PDF - Extract Pages Securely",
   "h1": "Split and Extract PDF Pages in Seconds",
-  "description": "Extract specific pages or split a large PDF into multiple files locally in your browser. Perfect for legal professionals in New York.",
+  "description": "Extract specific pages or split a large PDF into multiple files locally in your browser. Fast and completely secure.",
   "sections": [
     {
       "type": "split_hero_features",
@@ -28,8 +28,8 @@
     },
     {
       "type": "split_geo_targeting",
-      "title": "The Best Splitter in New York, US-NY",
-      "content": "Whether you are studying in New York or working on a tight deadline, extracting pages is now instantaneous."
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy."
     },
     {
       "type": "split_privacy_security",
@@ -63,5 +63,17 @@
       "q": "Is there a limit to how many pages I can split?",
       "a": "No limits! Split as many pages as your computer can handle."
     }
-  ]
+  ],
+  "badges": [
+    "Instant Split",
+    "Precise Range",
+    "No Limits"
+  ],
+  "stats": [
+    "Ultra Fast",
+    "No Upload",
+    "Batch Zip",
+    "Secure"
+  ],
+  "buttonText": "Split PDF"
 }

@@ -1,67 +1,78 @@
 {
-  "title": "Gabung PDF - Satukan Dokumen Offline",
+  "title": "Gabungkan PDF - Gabungkan Dokumen Offline",
   "h1": "Gabungkan File PDF Secara Instan di Browser Anda",
-  "description": "Satukan beberapa file PDF menjadi satu dokumen berurutan dengan teknologi WebAssembly lokal. Sangat cocok untuk pengguna di Jakarta.",
+  "description": "Gabungkan beberapa file PDF menjadi satu dokumen menggunakan WebAssembly sisi klien murni. Tidak ada unggahan file, cocok untuk pengguna di New York.",
   "sections": [
     {
       "type": "merge_hero_features",
       "title": "Mengapa Menggabungkan PDF Offline?",
-      "content": "Daripada mengunggah dokumen penting ke server, alat Gabung PDF kami menyatukan halaman Anda langsung di browser. 100% Privat."
+      "content": "Daripada mengunggah dokumen sensitif ke server, alat Gabung PDF kami menyatukan halaman-halaman Anda langsung di browser Anda. Privasi penuh."
     },
     {
       "type": "merge_how_to_steps",
       "title": "Cara Menggabungkan File PDF",
       "steps": [
         {
-          "title": "Pilih Dokumen",
-          "description": "Pilih file PDF yang ingin Anda gabungkan."
+          "title": "Tambahkan Dokumen",
+          "description": "Pilih PDF yang ingin Anda gabungkan."
         },
         {
-          "title": "Urutkan Halaman",
-          "description": "Seret dan lepas file untuk mendapatkan urutan yang tepat."
+          "title": "Susun Ulang Halaman",
+          "description": "Seret dan lepas file untuk mendapatkan urutan yang sempurna."
         },
         {
-          "title": "Gabung & Unduh",
-          "description": "Klik gabung dan unduh dokumen Anda secara instan."
+          "title": "Gabungkan & Simpan",
+          "description": "Klik gabung dan unduh dokumen gabungan Anda secara instan."
         }
-      ]
+      ],
+      "badgeText": "Panduan Singkat"
     },
     {
       "type": "merge_geo_targeting",
-      "title": "Penggabungan Praktis di Jakarta, ID-JK",
-      "content": "Di mana pun Anda berada di Jakarta, menyatukan dokumen tidak butuh waktu unggah sama sekali."
+      "title": "Pemrosesan Lokal 100% Aman",
+      "content": "Semua operasi dilakukan langsung di perangkat lokal Anda. Kami menggunakan teknologi WebAssembly yang canggih untuk memproses dokumen Anda tanpa harus mengunggahnya ke server eksternal, sehingga memastikan privasi sepenuhnya.",
+      "badgeText": "Pemrosesan Lokal"
     },
     {
       "type": "merge_privacy_security",
       "title": "Penggabungan Dokumen Tingkat Perusahaan",
-      "content": "Menggabungkan kontrak atau faktur? Lakukan dengan aman berkat mesin WASM kami."
+      "content": "Menggabungkan kontrak dan faktur? Lakukan dengan aman dengan mesin WASM kami. Tidak ada jejak yang tertinggal.",
+      "badgeText": "Keamanan Pertama"
     },
     {
       "type": "merge_performance",
-      "title": "Penggabungan Instan",
-      "content": "Menyatukan PDF secara lokal berarti Anda dapat menggabungkan ratusan halaman lebih cepat dari waktu unggah internet."
+      "title": "Kombinasi Instan",
+      "content": "Menggabungkan PDF secara lokal berarti Anda dapat menggabungkan dokumen setebal 500 halaman lebih cepat daripada saat Anda mengunggahnya.",
+      "badgeText": "Secepat Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "Apakah alat ini gratis?",
-      "a": "Ya! Gabungkan sebanyak apa pun file tanpa biaya sepeser pun."
+      "q": "Apakah menggabungkan PDF sepenuhnya gratis?",
+      "a": "Ya! Gabungkan file sebanyak yang Anda inginkan tanpa membayar sepeser pun."
     },
     {
-      "q": "Apakah file saya diunggah?",
-      "a": "Tidak, semua proses terjadi secara offline di browser."
+      "q": "Apakah file gabungan saya sudah diunggah?",
+      "a": "Tidak, semua penggabungan terjadi secara offline di browser Anda."
     },
     {
-      "q": "Bisakah saya mengurutkan ulang file?",
-      "a": "Tentu, Anda cukup menarik dan meletakkan file di jendela pratinjau."
+      "q": "Bisakah saya menyusun ulang file sebelum menggabungkannya?",
+      "a": "Ya, cukup drag dan drop file di jendela pratinjau."
     },
     {
-      "q": "Apakah ada batasan jumlah file?",
-      "a": "Tidak ada batasan buatan! Gabungkan puluhan file selama RAM Anda mencukupi."
+      "q": "Apakah ada batasan berapa banyak file yang dapat saya gabungkan?",
+      "a": "Tidak ada batasan buatan! Gabungkan 10 atau 100 file tergantung pada RAM Anda."
     },
     {
-      "q": "Apakah kualitasnya menurun?",
-      "a": "Sama sekali tidak. Semua lapisan vektor asli tetap utuh."
+      "q": "Apakah penggabungan merusak pemformatan?",
+      "a": "Sama sekali tidak. Lapisan asli dan data vektor digabungkan dengan sempurna."
     }
+  ],
+  "faqTitle": "Pertanyaan yang Sering Diajukan",
+  "supportCenter": "Pusat Dukungan",
+  "badges": [
+    "Latensi server nol",
+    "Tidak ada bandwidth unggahan",
+    "Pemrosesan instan"
   ]
 }

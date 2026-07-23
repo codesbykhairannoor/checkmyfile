@@ -1,67 +1,85 @@
 {
-  "title": "Reverse PDF — Flip Page Order Offline",
-  "h1": "Reverse the Page Order of Any PDF Locally",
-  "description": "Flip the page sequence of PDF documents entirely in your browser. No upload, instant result. Great for users in Bangkok.",
+  "title": "Reverse PDF — พลิกลำดับหน้าแบบออฟไลน์",
+  "h1": "ย้อนกลับลำดับหน้าของ PDF ใด ๆ ในเครื่อง",
+  "description": "พลิกลำดับหน้าของเอกสาร PDF ทั้งหมดในเบราว์เซอร์ของคุณ ไม่ต้องอัพโหลด ทราบผลทันที การประมวลผลภายในที่ปลอดภัย 100%",
+  "buttonText": "Reverse Order",
+  "badges": [
+    "ย้อนกลับทุกหน้า",
+    "แก้ไขการสแกน",
+    "คลิกเดียว"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Reverse PDF Page Order Offline?",
-      "content": "When a scanner outputs pages in reverse, you need a quick local fix — not a cloud upload of your entire document."
+      "type": "reverse_hero_features",
+      "title": "เหตุใดจึงต้อง Reverse PDF Page Order ออฟไลน์",
+      "content": "เมื่อเครื่องสแกนส่งออกหน้าต่างๆ ในแบบย้อนกลับ คุณต้องได้รับการแก้ไขอย่างรวดเร็วในเครื่อง ไม่ใช่การอัปโหลดเอกสารทั้งหมดของคุณบนคลาวด์"
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Reverse PDF Page Order",
+      "type": "reverse_how_to_steps",
+      "title": "วิธีย้อนกลับลำดับหน้า PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF with incorrect page order."
+          "title": "เปิด PDF",
+          "description": "เลือก PDF ที่มีลำดับหน้าไม่ถูกต้อง"
         },
         {
-          "title": "Confirm Reversal",
-          "description": "Preview the new first and last page."
+          "title": "ยืนยันการกลับรายการ",
+          "description": "ดูตัวอย่างหน้าแรกและหน้าสุดท้ายใหม่"
         },
         {
-          "title": "Download Reversed PDF",
-          "description": "Get the reordered PDF instantly."
+          "title": "ดาวน์โหลด PDF ย้อนกลับ",
+          "description": "รับ PDF ที่เรียงลำดับใหม่ทันที"
         }
-      ]
+      ],
+      "badgeText": "คู่มือฉบับย่อ"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Page Order Fix for Bangkok Users",
-      "content": "Office users in Bangkok fix scanner reversal issues instantly without cloud uploads."
+      "type": "reverse_geo_targeting",
+      "title": "การประมวลผลภายในที่ปลอดภัย 100%",
+      "content": "การดำเนินการทั้งหมดดำเนินการโดยตรงบนอุปกรณ์ท้องถิ่นของคุณ เราใช้เทคโนโลยี WebAssembly ขั้นสูงเพื่อประมวลผลเอกสารของคุณโดยไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ภายนอก เพื่อให้มั่นใจถึงความเป็นส่วนตัวโดยสมบูรณ์",
+      "badgeText": "การประมวลผลในท้องถิ่น"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Documents Never Leave Your Device",
-      "content": "Reversed contracts, reports, and records are processed entirely in browser memory."
+      "type": "reverse_privacy_security",
+      "title": "เอกสารไม่เคยออกจากอุปกรณ์ของคุณ",
+      "content": "สัญญา รายงาน และบันทึกที่กลับรายการจะถูกประมวลผลในหน่วยความจำเบราว์เซอร์ทั้งหมด",
+      "badgeText": "ความปลอดภัยต้องมาก่อน"
     },
     {
-      "type": "transform_performance",
-      "title": "Reverse Any PDF in Seconds",
-      "content": "Reversing a 1000-page document takes milliseconds. All in your browser."
+      "type": "reverse_performance",
+      "title": "ย้อนกลับ PDF ใด ๆ ในไม่กี่วินาที",
+      "content": "การกลับเอกสาร 1,000 หน้าใช้เวลาเป็นมิลลิวินาที ทั้งหมดในเบราว์เซอร์ของคุณ",
+      "badgeText": "เร็วปานสายฟ้า"
     }
   ],
   "faqs": [
     {
-      "q": "Does this reverse all pages?",
-      "a": "Yes, the full page order is flipped."
+      "q": "สิ่งนี้จะย้อนกลับทุกหน้าหรือไม่",
+      "a": "ใช่ พลิกลำดับเต็มหน้าแล้ว"
     },
     {
-      "q": "Can I select a range to reverse?",
-      "a": "Yes, specify start and end pages to reverse selectively."
+      "q": "ฉันสามารถเลือกช่วงที่จะย้อนกลับได้หรือไม่?",
+      "a": "ใช่ ระบุหน้าเริ่มต้นและหน้าสิ้นสุดเพื่อเลือกย้อนกลับ"
     },
     {
-      "q": "Is the quality affected?",
-      "a": "No, reversal is a structural operation with no quality loss."
+      "q": "คุณภาพได้รับผลกระทบหรือไม่?",
+      "a": "ไม่ การกลับรายการเป็นการดำเนินการเชิงโครงสร้างโดยไม่มีการสูญเสียคุณภาพ"
     },
     {
-      "q": "Can I undo?",
-      "a": "Apply reversal again to undo."
+      "q": "ฉันสามารถยกเลิกได้หรือไม่?",
+      "a": "ใช้การกลับรายการอีกครั้งเพื่อเลิกทำ"
     },
     {
-      "q": "Is this free?",
-      "a": "ใช่ ฟรีทั้งหมด"
+      "q": "ฟรีหรือเปล่า?",
+      "a": "ใช่ ฟรีเสมอ"
     }
-  ]
+  ],
+  "faqTitle": "คำถามที่พบบ่อย",
+  "supportCenter": "ศูนย์สนับสนุน"
 }

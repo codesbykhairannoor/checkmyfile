@@ -1,67 +1,85 @@
 {
-  "title": "Sign PDF Online — Draw Signature Offline",
-  "h1": "Sign PDF Documents With Your Signature Without Uploading",
-  "description": "Draw, type, or upload your signature and place it on PDFs entirely in your browser. No cloud. Perfect for users in Prague.",
+  "title": "Podepište PDF online — Nakreslete podpis offline",
+  "h1": "Podepisujte dokumenty PDF svým podpisem bez nahrávání",
+  "description": "Nakreslete, napište nebo nahrajte svůj podpis a celý jej umístěte do souborů PDF ve vašem prohlížeči. Žádný mrak. 100% bezpečné místní zpracování.",
+  "buttonText": "Sign PDF",
+  "badges": [
+    "Digitální podpis",
+    "Kreslit nebo psát",
+    "Právně závazné"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "sign_hero_features",
-      "title": "Why Sign PDFs Locally?",
-      "content": "Your signature is your identity. Never upload your drawn signature or a private contract to a third-party cloud signing service."
+      "title": "Proč podepisovat PDF lokálně?",
+      "content": "Váš podpis je vaše identita. Nikdy nenahrávejte svůj nakreslený podpis nebo soukromou smlouvu do cloudové podpisové služby třetí strany."
     },
     {
       "type": "sign_how_to_steps",
-      "title": "How to Sign a PDF in 3 Steps",
+      "title": "Jak podepsat PDF ve 3 krocích",
       "steps": [
         {
-          "title": "Create Your Signature",
-          "description": "Draw with mouse, type in signature font, or upload an image."
+          "title": "Vytvořte svůj podpis",
+          "description": "Kreslete myší, zadejte podpisové písmo nebo nahrajte obrázek."
         },
         {
-          "title": "Place on Document",
-          "description": "Drag and resize your signature to the correct position."
+          "title": "Místo na dokumentu",
+          "description": "Přetáhněte a změňte velikost podpisu do správné polohy."
         },
         {
-          "title": "Download Signed PDF",
-          "description": "Save your signed document immediately, no account needed."
+          "title": "Stáhnout podepsané PDF",
+          "description": "Uložte svůj podepsaný dokument okamžitě, není potřeba žádný účet."
         }
-      ]
+      ],
+      "badgeText": "Rychlý průvodce"
     },
     {
       "type": "sign_geo_targeting",
-      "title": "Private Digital Signatures for Prague",
-      "content": "Freelancers and businesses in Prague sign contracts, NDAs, and agreements without exposing their identity or documents to any cloud service."
+      "title": "100% bezpečné místní zpracování",
+      "content": "Všechny operace se provádějí přímo na vašem místním zařízení. Ke zpracování vašich dokumentů používáme pokročilou technologii WebAssembly, aniž bychom je kdy nahrávali na externí servery, což zajišťuje naprosté soukromí.",
+      "badgeText": "Místní zpracování"
     },
     {
       "type": "sign_privacy_security",
-      "title": "Your Signature Identity Stays Private",
-      "content": "Your drawn signature and signed document are processed entirely in browser memory — never stored, never transmitted."
+      "title": "Vaše podpisová identita zůstává soukromá",
+      "content": "Váš nakreslený podpis a podepsaný dokument jsou zpracovány výhradně v paměti prohlížeče – nikdy se neukládají, nikdy nepřenášejí.",
+      "badgeText": "Bezpečnost především"
     },
     {
       "type": "sign_performance",
-      "title": "Sign Any Document in Under 30 Seconds",
-      "content": "No account, no upload, no cloud. Draw, place, and download your signed PDF in under 30 seconds."
+      "title": "Podepište jakýkoli dokument za méně než 30 sekund",
+      "content": "Žádný účet, žádné nahrávání, žádný cloud. Nakreslete, umístěte a stáhněte si podepsaný soubor PDF za méně než 30 sekund.",
+      "badgeText": "Bleskově rychlý"
     }
   ],
   "faqs": [
     {
-      "q": "How can I create my signature?",
-      "a": "Draw with your mouse, type your name in a signature font, or upload an image."
+      "q": "Jak mohu vytvořit svůj podpis?",
+      "a": "Kreslete myší, napište své jméno podpisovým písmem nebo nahrajte obrázek."
     },
     {
-      "q": "Can I sign multiple pages?",
-      "a": "Yes, place your signature on any or all pages."
+      "q": "Mohu podepsat více stránek?",
+      "a": "Ano, umístěte svůj podpis na kteroukoli nebo všechny stránky."
     },
     {
-      "q": "Is the signature legally binding?",
-      "a": "Our tool applies a visual signature. For legally binding e-signatures, check your jurisdiction."
+      "q": "Je podpis právně závazný?",
+      "a": "Náš nástroj používá vizuální podpis. Pro právně závazné elektronické podpisy zkontrolujte svou jurisdikci."
     },
     {
-      "q": "Can I resize the signature?",
-      "a": "Yes, drag the corners to resize it after placing."
+      "q": "Mohu změnit velikost podpisu?",
+      "a": "Ano, přetažením rohů změníte velikost po umístění."
     },
     {
-      "q": "Is this free?",
+      "q": "Je to zdarma?",
       "a": "Ano, zcela zdarma."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
 }

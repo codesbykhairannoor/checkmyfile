@@ -1,67 +1,85 @@
 {
-  "title": "Organize PDF Pages — Reorder & Delete Offline",
-  "h1": "Reorder, Delete, or Duplicate PDF Pages Locally",
-  "description": "Drag and drop to rearrange, remove, or duplicate PDF pages entirely in your browser. No upload. Great for users in Moscow.",
+  "title": "Организация страниц PDF — изменение порядка и удаление в автономном режиме",
+  "h1": "Изменение порядка, удаление или дублирование страниц PDF локально",
+  "description": "Перетаскивайте, чтобы полностью изменить порядок, удалить или дублировать страницы PDF в браузере. Быстро и полностью безопасно.",
+  "buttonText": "Organize Pages",
+  "badges": [
+    "Перетаскивание",
+    "Изменение порядка страниц",
+    "Визуальный редактор"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Organize PDFs Locally?",
-      "content": "Reorganizing page structure is an editing operation. Your internal document should stay internal during editing."
+      "type": "organize_hero_features",
+      "title": "Зачем организовывать PDF-файлы локально?",
+      "content": "Реорганизация структуры страницы — это операция редактирования. Ваш внутренний документ должен оставаться внутренним во время редактирования."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Organize PDF Pages",
+      "type": "organize_how_to_steps",
+      "title": "Как организовать страницы PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to reorganize."
+          "title": "Открыть PDF",
+          "description": "Загрузите PDF-файл, который хотите реорганизовать."
         },
         {
-          "title": "Drag to Reorder",
-          "description": "Drag page thumbnails to the desired position."
+          "title": "Перетащите, чтобы изменить порядок",
+          "description": "Перетащите миниатюры страниц в нужное положение."
         },
         {
-          "title": "Save Organized PDF",
-          "description": "Download the restructured PDF immediately."
+          "title": "Сохранить организованный PDF",
+          "description": "Загрузите реструктурированный PDF-файл немедленно."
         }
-      ]
+      ],
+      "badgeText": "Краткое руководство"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Organization for Moscow Teams",
-      "content": "Teams in Moscow reorganize proposal and report PDFs without uploading to any cloud service."
+      "type": "organize_geo_targeting",
+      "title": "100% безопасная локальная обработка",
+      "content": "Все операции выполняются непосредственно на вашем локальном устройстве. Мы используем передовую технологию WebAssembly для обработки ваших документов, не загружая их на внешние серверы, обеспечивая полную конфиденциальность.",
+      "badgeText": "Локальная обработка"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Page Structure Is Private Business",
-      "content": "Reordering internal reports and proposals with zero data leaving your browser."
+      "type": "organize_privacy_security",
+      "title": "Структура страницы - частный бизнес",
+      "content": "Изменение порядка внутренних отчетов и предложений без вывода данных из браузера.",
+      "badgeText": "Безопасность превыше всего"
     },
     {
-      "type": "organizer_performance",
-      "title": "Reorganize Any PDF in Seconds",
-      "content": "Reorder pages in a 500-page document through a smooth drag-and-drop interface with zero upload."
+      "type": "organize_performance",
+      "title": "Реорганизуйте любой PDF-файл за считанные секунды",
+      "content": "Изменяйте порядок страниц в 500-страничном документе с помощью плавного интерфейса перетаскивания без необходимости загрузки.",
+      "badgeText": "Молниеносно"
     }
   ],
   "faqs": [
     {
-      "q": "Can I delete pages?",
-      "a": "Yes, click the delete icon on any page thumbnail."
+      "q": "Могу ли я удалить страницы?",
+      "a": "Да, нажмите значок удаления на миниатюре любой страницы."
     },
     {
-      "q": "Can I duplicate pages?",
-      "a": "Yes, duplicate individual pages with one click."
+      "q": "Могу ли я дублировать страницы?",
+      "a": "Да, дублируйте отдельные страницы одним щелчком мыши."
     },
     {
-      "q": "Can I rotate while organizing?",
-      "a": "Yes, per-page rotation is available in the organizer."
+      "q": "Могу ли я вращаться во время организации?",
+      "a": "Да, в органайзере доступна постраничная ротация."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No limit! Organize documents of any size."
+      "q": "Есть ли ограничение на количество страниц?",
+      "a": "Нет предела! Систематизируйте документы любого размера."
     },
     {
-      "q": "Is this free?",
-      "a": "Да, полностью бесплатно."
+      "q": "Это бесплатно?",
+      "a": "Да, совершенно бесплатно."
     }
-  ]
+  ],
+  "faqTitle": "Часто задаваемые вопросы",
+  "supportCenter": "Центр поддержки"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Grayscale PDF — Convert to Black and White Offline",
-  "h1": "Convert Color PDF Pages to Grayscale Instantly",
-  "description": "Turn color PDFs into black-and-white versions to reduce file size or prepare for printing, entirely in your browser. Ideal for users in São Paulo.",
+  "title": "PDF em escala de cinza — Converter para preto e branco off-line",
+  "h1": "Converta páginas PDF coloridas em tons de cinza instantaneamente",
+  "description": "Transforme PDFs coloridos em versões em preto e branco para reduzir o tamanho do arquivo ou prepare-os para impressão, inteiramente no seu navegador. Processamento local 100% seguro.",
+  "buttonText": "Convert to Grayscale",
+  "badges": [
+    "Economize tinta",
+    "Preto e Branco",
+    "Perfeito para impressão"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Convert to Grayscale Offline?",
-      "content": "Removing color from a PDF is a pre-print or archiving step. Do it locally without exposing confidential document design."
+      "type": "grayscale_hero_features",
+      "title": "Por que converter para escala de cinza offline?",
+      "content": "A remoção da cor de um PDF é uma etapa de pré-impressão ou arquivamento. Faça isso localmente, sem expor o design de documentos confidenciais."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Make PDF Grayscale",
+      "type": "grayscale_how_to_steps",
+      "title": "Como fazer um PDF em escala de cinza",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the color PDF to convert."
+          "title": "Abrir PDF",
+          "description": "Selecione o PDF colorido para converter."
         },
         {
-          "title": "Choose Conversion Mode",
-          "description": "Pick luminance or contrast-adjusted grayscale."
+          "title": "Escolha o modo de conversão",
+          "description": "Escolha luminância ou escala de cinza com ajuste de contraste."
         },
         {
-          "title": "Download Grayscale PDF",
-          "description": "Save the black-and-white PDF immediately."
+          "title": "Baixar PDF em tons de cinza",
+          "description": "Salve o PDF em preto e branco imediatamente."
         }
-      ]
+      ],
+      "badgeText": "Guia rápido"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Grayscale PDF for São Paulo Printers",
-      "content": "Businesses in São Paulo convert color PDFs to grayscale for cost-effective printing without cloud uploads."
+      "type": "grayscale_geo_targeting",
+      "title": "Processamento local 100% seguro",
+      "content": "Todas as operações são realizadas diretamente no seu dispositivo local. Utilizamos tecnologia avançada WebAssembly para processar seus documentos sem nunca enviá-los para servidores externos, garantindo total privacidade.",
+      "badgeText": "Processamento Local"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Design Files Stay Confidential",
-      "content": "Internal design documents and branded materials converted to grayscale without cloud exposure."
+      "type": "grayscale_privacy_security",
+      "title": "Arquivos de design permanecem confidenciais",
+      "content": "Documentos de design interno e materiais de marca convertidos em escala de cinza sem exposição à nuvem.",
+      "badgeText": "Segurança em primeiro lugar"
     },
     {
-      "type": "transform_performance",
-      "title": "Convert Color Instantly",
-      "content": "A 200-page color PDF converted to grayscale in under 2 seconds. Zero upload."
+      "type": "grayscale_performance",
+      "title": "Converta cores instantaneamente",
+      "content": "Um PDF colorido de 200 páginas convertido em escala de cinza em menos de 2 segundos. Carregamento zero.",
+      "badgeText": "Rápido como um raio"
     }
   ],
   "faqs": [
     {
-      "q": "Does grayscale reduce file size?",
-      "a": "Often yes, especially for image-heavy PDFs."
+      "q": "A escala de cinza reduz o tamanho do arquivo?",
+      "a": "Muitas vezes sim, especialmente para PDFs com muitas imagens."
     },
     {
-      "q": "Are all pages converted?",
-      "a": "Yes by default; you can also select specific pages."
+      "q": "Todas as páginas são convertidas?",
+      "a": "Sim por padrão; você também pode selecionar páginas específicas."
     },
     {
-      "q": "Is the conversion reversible?",
-      "a": "The color information is removed; keep the original for reversal."
+      "q": "A conversão é reversível?",
+      "a": "As informações de cor são removidas; guarde o original para reversão."
     },
     {
-      "q": "Does it affect text quality?",
-      "a": "No, text remains crisp and black."
+      "q": "Isso afeta a qualidade do texto?",
+      "a": "Não, o texto permanece nítido e preto."
     },
     {
-      "q": "Is this free?",
-      "a": "Sim, completamente gratuito."
+      "q": "Isso é grátis?",
+      "a": "Sim, totalmente gratuito."
     }
-  ]
+  ],
+  "faqTitle": "Perguntas Frequentes",
+  "supportCenter": "Centro de Apoio"
 }

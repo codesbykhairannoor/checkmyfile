@@ -1,67 +1,85 @@
 {
-  "title": "PDF to Image Converter — Extract Pages Offline",
-  "h1": "Convert PDF Pages to PNG or JPG Images",
-  "description": "Extract every page from a PDF as high-quality images directly in your browser. Zero upload, total privacy. Best for users in Seoul.",
+  "title": "PDF를 이미지 변환기로 — 오프라인에서 페이지 추출",
+  "h1": "PDF 페이지를 PNG 또는 JPG 이미지로 변환",
+  "description": "PDF의 모든 페이지를 브라우저에서 직접 고품질 이미지로 추출하세요. 업로드 없음, 100% 안전한 로컬 처리.",
+  "buttonText": "Extract Images",
+  "badges": [
+    "디자인 포트폴리오",
+    "프레젠테이션",
+    "고품질"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract PDF Pages Offline?",
-      "content": "PDFs often contain confidential diagrams, blueprints, or reports. Extract pages as images without any server access."
+      "type": "pdf_image_hero_features",
+      "title": "PDF 페이지를 오프라인으로 추출하는 이유는 무엇입니까?",
+      "content": "PDF에는 기밀 다이어그램, 청사진 또는 보고서가 포함되는 경우가 많습니다. 서버에 액세스하지 않고도 페이지를 이미지로 추출합니다."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Images",
+      "type": "pdf_image_how_to_steps",
+      "title": "PDF를 이미지로 변환하는 방법",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF you want to extract images from."
+          "title": "PDF 로드",
+          "description": "이미지를 추출하려는 PDF를 선택하세요."
         },
         {
-          "title": "Choose Format",
-          "description": "Pick PNG (lossless) or JPG (compressed) output."
+          "title": "형식을 선택하세요",
+          "description": "PNG(무손실) 또는 JPG(압축) 출력을 선택합니다."
         },
         {
-          "title": "Download Images",
-          "description": "Get all pages as individual image files in a ZIP."
+          "title": "이미지 다운로드",
+          "description": "모든 페이지를 개별 이미지 파일로 ZIP으로 가져옵니다."
         }
-      ]
+      ],
+      "badgeText": "빠른 가이드"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF to Image for Seoul Designers",
-      "content": "Designers in Seoul extract PDF pages as images for presentations and social media without cloud uploads."
+      "type": "pdf_image_geo_targeting",
+      "title": "100% 안전한 로컬 처리",
+      "content": "모든 작업은 로컬 장치에서 직접 수행됩니다. 우리는 고급 WebAssembly 기술을 사용하여 문서를 외부 서버에 업로드하지 않고 처리하여 완벽한 개인 정보 보호를 보장합니다.",
+      "badgeText": "로컬 처리"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Confidential Diagrams Stay Private",
-      "content": "Technical blueprints and legal documents extracted as images without any data leaving your device."
+      "type": "pdf_image_privacy_security",
+      "title": "기밀 다이어그램 비공개 유지",
+      "content": "기술 청사진과 법률 문서를 기기 외부로 전송하지 않고 이미지로 추출합니다.",
+      "badgeText": "보안 우선"
     },
     {
-      "type": "split_performance",
-      "title": "Extract All Pages Instantly",
-      "content": "A 500-page PDF converted to images in seconds. No upload, no wait."
+      "type": "pdf_image_performance",
+      "title": "모든 페이지를 즉시 추출",
+      "content": "500페이지 분량의 PDF가 몇 초 만에 이미지로 변환됩니다. 업로드하지 마세요. 기다리지 마세요.",
+      "badgeText": "번개처럼 빠르게"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are available?",
-      "a": "PNG and JPG with adjustable quality settings."
+      "q": "어떤 이미지 형식을 사용할 수 있나요?",
+      "a": "품질 설정을 조정할 수 있는 PNG 및 JPG."
     },
     {
-      "q": "Can I extract specific pages?",
-      "a": "Yes, specify page ranges like 1-5 or 3,7,12."
+      "q": "특정 페이지를 추출할 수 있나요?",
+      "a": "예, 1-5 또는 3,7,12와 같은 페이지 범위를 지정하세요."
     },
     {
-      "q": "What resolution are the exported images?",
-      "a": "Default 150 DPI, adjustable up to 300 DPI."
+      "q": "내보낸 이미지의 해상도는 무엇입니까?",
+      "a": "기본 150DPI, 최대 300DPI까지 조정 가능."
     },
     {
-      "q": "Are all pages exported at once?",
-      "a": "Yes, all selected pages are zipped for a single download."
+      "q": "모든 페이지를 한 번에 내보내나요?",
+      "a": "예, 선택한 모든 페이지는 단일 다운로드를 위해 압축되어 있습니다."
     },
     {
-      "q": "Is this free?",
-      "a": "예, 완전 무료입니다."
+      "q": "이거 무료인가요?",
+      "a": "항상 완전 무료입니다."
     }
-  ]
+  ],
+  "faqTitle": "자주 묻는 질문",
+  "supportCenter": "지원 센터"
 }

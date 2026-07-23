@@ -1,67 +1,85 @@
 {
-  "title": "Sign PDF Online — Draw Signature Offline",
-  "h1": "Sign PDF Documents With Your Signature Without Uploading",
-  "description": "Draw, type, or upload your signature and place it on PDFs entirely in your browser. No cloud. Perfect for users in Bucharest.",
+  "title": "Semnați PDF online — Desenați semnătura offline",
+  "h1": "Semnați documente PDF cu semnătura dvs. fără a încărca",
+  "description": "Desenați, tastați sau încărcați semnătura și plasați-o pe PDF-uri în întregime în browser. Fără nor. Procesare locală 100% sigură.",
+  "buttonText": "Sign PDF",
+  "badges": [
+    "Semnătura digitală",
+    "Desenați sau tipați",
+    "Obligatoriu din punct de vedere juridic"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "sign_hero_features",
-      "title": "Why Sign PDFs Locally?",
-      "content": "Your signature is your identity. Never upload your drawn signature or a private contract to a third-party cloud signing service."
+      "title": "De ce să semnați PDF-uri local?",
+      "content": "Semnătura ta este identitatea ta. Nu încărcați niciodată semnătura dvs. desenată sau un contract privat la un serviciu de semnare în cloud terț."
     },
     {
       "type": "sign_how_to_steps",
-      "title": "How to Sign a PDF in 3 Steps",
+      "title": "Cum să semnezi un PDF în 3 pași",
       "steps": [
         {
-          "title": "Create Your Signature",
-          "description": "Draw with mouse, type in signature font, or upload an image."
+          "title": "Creați-vă semnătura",
+          "description": "Desenați cu mouse-ul, introduceți fontul semnăturii sau încărcați o imagine."
         },
         {
-          "title": "Place on Document",
-          "description": "Drag and resize your signature to the correct position."
+          "title": "Loc pe document",
+          "description": "Trageți și redimensionați semnătura în poziția corectă."
         },
         {
-          "title": "Download Signed PDF",
-          "description": "Save your signed document immediately, no account needed."
+          "title": "Descărcați PDF semnat",
+          "description": "Salvați imediat documentul semnat, nu este nevoie de cont."
         }
-      ]
+      ],
+      "badgeText": "Ghid rapid"
     },
     {
       "type": "sign_geo_targeting",
-      "title": "Private Digital Signatures for Bucharest",
-      "content": "Freelancers and businesses in Bucharest sign contracts, NDAs, and agreements without exposing their identity or documents to any cloud service."
+      "title": "Procesare locală 100% sigură",
+      "content": "Toate operațiunile sunt efectuate direct pe dispozitivul local. Folosim tehnologie avansată WebAssembly pentru a vă procesa documentele fără a le încărca vreodată pe servere externe, asigurând confidențialitate completă.",
+      "badgeText": "Prelucrare locală"
     },
     {
       "type": "sign_privacy_security",
-      "title": "Your Signature Identity Stays Private",
-      "content": "Your drawn signature and signed document are processed entirely in browser memory — never stored, never transmitted."
+      "title": "Semnătura dvs. de identitate rămâne privată",
+      "content": "Semnătura dvs. desenată și documentul semnat sunt procesate în întregime în memoria browserului - niciodată stocate, niciodată transmise.",
+      "badgeText": "Securitatea în primul rând"
     },
     {
       "type": "sign_performance",
-      "title": "Sign Any Document in Under 30 Seconds",
-      "content": "No account, no upload, no cloud. Draw, place, and download your signed PDF in under 30 seconds."
+      "title": "Semnează orice document în mai puțin de 30 de secunde",
+      "content": "Fără cont, fără încărcare, fără cloud. Desenați, plasați și descărcați PDF-ul semnat în mai puțin de 30 de secunde.",
+      "badgeText": "Rapid fulger"
     }
   ],
   "faqs": [
     {
-      "q": "How can I create my signature?",
-      "a": "Draw with your mouse, type your name in a signature font, or upload an image."
+      "q": "Cum îmi pot crea semnătura?",
+      "a": "Desenați cu mouse-ul, introduceți numele într-un font de semnătură sau încărcați o imagine."
     },
     {
-      "q": "Can I sign multiple pages?",
-      "a": "Yes, place your signature on any or all pages."
+      "q": "Pot semna mai multe pagini?",
+      "a": "Da, puneți-vă semnătura pe oricare sau pe toate paginile."
     },
     {
-      "q": "Is the signature legally binding?",
-      "a": "Our tool applies a visual signature. For legally binding e-signatures, check your jurisdiction."
+      "q": "Este semnătura obligatorie din punct de vedere juridic?",
+      "a": "Instrumentul nostru aplică o semnătură vizuală. Pentru semnături electronice obligatorii din punct de vedere juridic, verificați jurisdicția dvs."
     },
     {
-      "q": "Can I resize the signature?",
-      "a": "Yes, drag the corners to resize it after placing."
+      "q": "Pot redimensiona semnătura?",
+      "a": "Da, trageți colțurile pentru a le redimensiona după plasare."
     },
     {
-      "q": "Is this free?",
+      "q": "Este gratuit?",
       "a": "Da, complet gratuit."
     }
-  ]
+  ],
+  "faqTitle": "Întrebări frecvente",
+  "supportCenter": "Centrul de suport"
 }

@@ -1,67 +1,80 @@
 {
-  "title": "Word to PDF Converter — No Upload Required",
-  "h1": "Convert Word Documents to PDF Instantly",
-  "description": "Transform .docx files into perfect PDFs directly in your browser. Zero upload, 100% private. Ideal for users in Kyiv.",
+  "title": "Конвертер Word у PDF — завантаження не потрібне",
+  "h1": "Миттєво конвертуйте документи Word у PDF",
+  "description": "Перетворюйте файли .docx на ідеальні PDF-файли безпосередньо у своєму браузері. Нульове завантаження, 100% приватне. Ідеально підходить для користувачів у Києві.",
+  "buttonText": "Перетворити документ",
+  "badges": [
+    "Трудові договори",
+    "Юридичні довідки",
+    "Резюме та CV"
+  ],
+  "stats": [
+    "100%",
+    "Місцевий",
+    "0 с",
+    "Час очікування"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Word to PDF Offline?",
-      "content": "Your Word document contains sensitive data. Our converter runs entirely in WebAssembly — your file never touches a server."
+      "type": "word_hero_features",
+      "title": "Навіщо використовувати офлайн?",
+      "content": "Ваш документ Word містить конфіденційні дані. Наш конвертер повністю працює в WebAssembly — ваш файл ніколи не торкається сервера."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Word to PDF",
+      "type": "word_how_to_steps",
+      "title": "Як використовувати",
       "steps": [
         {
-          "title": "Select .docx File",
-          "description": "Pick your Word document from your computer."
+          "title": "Виберіть файл .docx",
+          "description": "Виберіть документ Word зі свого комп’ютера."
         },
         {
-          "title": "Preview Output",
-          "description": "See the PDF rendering before finalizing."
+          "title": "Попередній перегляд результату",
+          "description": "Перед завершенням перегляньте візуалізацію PDF."
         },
         {
-          "title": "Download PDF",
-          "description": "Save your perfectly converted PDF instantly."
+          "title": "Завантажити PDF",
+          "description": "Миттєво збережіть ідеально перетворений PDF-файл."
         }
       ]
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Word to PDF for Kyiv Users",
-      "content": "Used by professionals in Kyiv who need to share documents without losing formatting."
+      "type": "word_geo_targeting",
+      "title": "Word to PDF для київських користувачів",
+      "content": "Використовується професіоналами в Києві, яким потрібно обмінюватися документами без втрати форматування."
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Your Contracts Stay Private",
-      "content": "Converting employment contracts? Legal briefs? Our WASM processor never phones home."
+      "type": "word_privacy_security",
+      "title": "Ваші контракти залишаються приватними",
+      "content": "Перетворення трудових договорів? Юридичні довідки? Наш процесор WASM ніколи не телефонує додому."
     },
     {
-      "type": "combiner_performance",
-      "title": "No More Conversion Queues",
-      "content": "Cloud converters put you in a queue. Ours converts in under 2 seconds, entirely offline."
+      "type": "word_performance",
+      "title": "Більше немає черг на перетворення",
+      "content": "Хмарні конвертери ставлять вас у чергу. Наш конвертується менш ніж за 2 секунди, повністю в автономному режимі."
     }
   ],
   "faqs": [
     {
-      "q": "Does it preserve Word formatting?",
-      "a": "Yes, fonts, tables, and images are preserved using our WASM renderer."
+      "q": "Чи зберігається форматування Word?",
+      "a": "Так, шрифти, таблиці та зображення зберігаються за допомогою нашого рендерера WASM."
     },
     {
-      "q": "What Word versions are supported?",
-      "a": "All modern .docx files are supported."
+      "q": "Які версії Word підтримуються?",
+      "a": "Підтримуються всі сучасні файли .docx."
     },
     {
-      "q": "Is there a file size limit?",
-      "a": "No server limits! Only your device RAM is the constraint."
+      "q": "Чи є обмеження на розмір файлу?",
+      "a": "Жодних обмежень щодо сервера! Обмеженням є лише оперативна пам’ять вашого пристрою."
     },
     {
-      "q": "Can I batch convert multiple files?",
-      "a": "Yes, select multiple .docx files at once."
+      "q": "Чи можу я пакетно конвертувати декілька файлів?",
+      "a": "Так, вибрати кілька файлів .docx одночасно."
     },
     {
-      "q": "Is this free?",
+      "q": "Це безкоштовно?",
       "a": "Так, повністю безкоштовно."
     }
-  ]
+  ],
+  "faqTitle": "Часто задавані питання"
 }

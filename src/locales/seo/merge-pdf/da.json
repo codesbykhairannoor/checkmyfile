@@ -1,67 +1,78 @@
 {
-  "title": "Merge PDF - Combine Documents Offline",
-  "h1": "Merge PDF Files Instantly in Your Browser",
-  "description": "Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, perfect for users in Copenhagen.",
+  "title": "Flet PDF - Kombiner dokumenter offline",
+  "h1": "Flet PDF-filer med det samme i din browser",
+  "description": "Kombiner flere PDF-filer til et enkelt dokument ved hjælp af ren klientside WebAssembly. Ingen filupload, perfekt til brugere i New York.",
   "sections": [
     {
       "type": "merge_hero_features",
-      "title": "Why Merge PDF Offline?",
-      "content": "Instead of uploading sensitive documents to a server, our Merge PDF tool stitches your pages together directly in your browser. Complete privacy."
+      "title": "Hvorfor flette PDF offline?",
+      "content": "I stedet for at uploade følsomme dokumenter til en server, syr vores Merge PDF-værktøj dine sider sammen direkte i din browser. Fuldstændig privatliv."
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Merge PDF Files",
+      "title": "Sådan flettes PDF-filer",
       "steps": [
         {
-          "title": "Add Documents",
-          "description": "Select the PDFs you want to merge together."
+          "title": "Tilføj dokumenter",
+          "description": "Vælg de PDF-filer, du vil flette sammen."
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop files to get the perfect sequence."
+          "title": "Omarranger sider",
+          "description": "Træk og slip filer for at få den perfekte sekvens."
         },
         {
-          "title": "Merge & Save",
-          "description": "Click merge and download your combined document instantly."
+          "title": "Flet og gem",
+          "description": "Klik på flet og download dit kombinerede dokument med det samme."
         }
-      ]
+      ],
+      "badgeText": "Hurtig guide"
     },
     {
       "type": "merge_geo_targeting",
-      "title": "Seamless Merging for users in Copenhagen, DK-84",
-      "content": "No matter if you are in Copenhagen or traveling, combining documents takes zero milliseconds of upload time."
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle handlinger udføres direkte på din lokale enhed. Vi bruger avanceret WebAssembly-teknologi til at behandle dine dokumenter uden nogensinde at uploade dem til eksterne servere, hvilket sikrer fuldstændigt privatliv.",
+      "badgeText": "Lokal behandling"
     },
     {
       "type": "merge_privacy_security",
       "title": "Enterprise-Grade Document Combining",
-      "content": "Merging contracts and invoices? Do it securely with our WASM engine. No traces left behind."
+      "content": "Sammenlægning af kontrakter og fakturaer? Gør det sikkert med vores WASM-motor. Ingen spor efterladt.",
+      "badgeText": "Sikkerhed først"
     },
     {
       "type": "merge_performance",
-      "title": "Instant Combination",
-      "content": "Stitching PDFs locally means you can merge a 500-page document faster than you can upload it."
+      "title": "Øjeblikkelig kombination",
+      "content": "At sammenføje PDF'er lokalt betyder, at du kan flette et 500-siders dokument hurtigere, end du kan uploade det.",
+      "badgeText": "Lynhurtigt"
     }
   ],
   "faqs": [
     {
-      "q": "Is merging PDFs completely free?",
-      "a": "Yes! Merge as many files as you want without paying a cent."
+      "q": "Er det helt gratis at flette PDF-filer?",
+      "a": "Ja! Flet så mange filer, du vil, uden at betale en øre."
     },
     {
-      "q": "Are my merged files uploaded?",
-      "a": "No, all merging happens offline in your browser."
+      "q": "Er mine flettede filer uploadet?",
+      "a": "Nej, al fletning sker offline i din browser."
     },
     {
-      "q": "Can I reorder the files before merging?",
-      "a": "Yes, just drag and drop the files in the preview window."
+      "q": "Kan jeg omarrangere filerne før sammenlægning?",
+      "a": "Ja, bare træk og slip filerne i forhåndsvisningsvinduet."
     },
     {
-      "q": "Is there a limit on how many files I can merge?",
-      "a": "No artificial limits! Merge 10 or 100 files depending on your RAM."
+      "q": "Er der en grænse for, hvor mange filer jeg kan flette?",
+      "a": "Ingen kunstige grænser! Flet 10 eller 100 filer afhængigt af din RAM."
     },
     {
-      "q": "Does merging ruin the formatting?",
-      "a": "Not at all. The original layers and vector data are perfectly stitched together."
+      "q": "Ødelægger sammenlægning formateringen?",
+      "a": "Slet ikke. De originale lag og vektordata er perfekt syet sammen."
     }
+  ],
+  "faqTitle": "Ofte stillede spørgsmål",
+  "supportCenter": "Supportcenter",
+  "badges": [
+    "Nul serverforsinkelse",
+    "Ingen uploadbåndbredde",
+    "Øjeblikkelig behandling"
   ]
 }

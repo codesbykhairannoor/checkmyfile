@@ -1,67 +1,85 @@
 {
-  "title": "Unlock PDF — Remove Password Offline",
-  "h1": "Remove PDF Password Protection Instantly in Your Browser",
-  "description": "Unlock password-protected PDFs locally if you know the password. 100% private. No upload. Perfect for users in Warsaw.",
+  "title": "Odblokuj plik PDF — Usuń hasło w trybie offline",
+  "h1": "Natychmiast usuń ochronę hasłem PDF ze swojej przeglądarki",
+  "description": "Odblokuj lokalnie pliki PDF chronione hasłem, jeśli znasz hasło. 100% prywatności. Brak przesyłania. 100% bezpieczne przetwarzanie lokalne.",
+  "buttonText": "Unlock PDF",
+  "badges": [
+    "Usuń hasło",
+    "Natychmiastowe odblokowanie",
+    "Brak logów serwera"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "unlock_hero_features",
-      "title": "Why Unlock PDFs Locally?",
-      "content": "You have the password to your own file. Unlocking it should not require uploading sensitive documents to an external service."
+      "title": "Dlaczego warto odblokowywać pliki PDF lokalnie?",
+      "content": "Masz hasło do własnego pliku. Odblokowanie go nie powinno wymagać przesyłania wrażliwych dokumentów do zewnętrznego serwisu."
     },
     {
       "type": "unlock_how_to_steps",
-      "title": "How to Unlock a Protected PDF",
+      "title": "Jak odblokować chroniony plik PDF",
       "steps": [
         {
-          "title": "Open Protected PDF",
-          "description": "Select the password-protected PDF."
+          "title": "Otwórz chroniony plik PDF",
+          "description": "Wybierz plik PDF chroniony hasłem."
         },
         {
-          "title": "Enter Your Password",
-          "description": "Provide the existing password — decryption stays in your browser."
+          "title": "Wpisz swoje hasło",
+          "description": "Podaj istniejące hasło – odszyfrowanie pozostanie w Twojej przeglądarce."
         },
         {
-          "title": "Download Unlocked PDF",
-          "description": "Get your unlocked, fully accessible PDF instantly."
+          "title": "Pobierz odblokowany plik PDF",
+          "description": "Natychmiast uzyskaj odblokowany, w pełni dostępny plik PDF."
         }
-      ]
+      ],
+      "badgeText": "Krótki przewodnik"
     },
     {
       "type": "unlock_geo_targeting",
-      "title": "Instant PDF Unlocking for Warsaw Users",
-      "content": "Users in Warsaw access their own password-protected files without sending decryption keys to any server."
+      "title": "100% bezpieczne przetwarzanie lokalne",
+      "content": "Wszystkie operacje wykonywane są bezpośrednio na Twoim urządzeniu lokalnym. Korzystamy z zaawansowanej technologii WebAssembly, aby przetwarzać Twoje dokumenty bez konieczności przesyłania ich na serwery zewnętrzne, zapewniając całkowitą prywatność.",
+      "badgeText": "Przetwarzanie lokalne"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Your Password Never Leaves the Browser",
-      "content": "The decryption key and your document are processed entirely in browser memory — never transmitted to any server or service."
+      "title": "Twoje hasło nigdy nie opuszcza przeglądarki",
+      "content": "Klucz deszyfrujący i Twój dokument są przetwarzane w całości w pamięci przeglądarki — nigdy nie są przesyłane do żadnego serwera ani usługi.",
+      "badgeText": "Bezpieczeństwo przede wszystkim"
     },
     {
       "type": "unlock_performance",
-      "title": "Instant Browser-Local Decryption",
-      "content": "AES decryption in your browser takes under a second — far faster than any cloud service with no upload wait."
+      "title": "Natychmiastowe deszyfrowanie lokalne w przeglądarce",
+      "content": "Odszyfrowanie AES w przeglądarce zajmuje mniej niż sekundę — znacznie szybciej niż jakakolwiek usługa w chmurze bez konieczności oczekiwania na przesłanie.",
+      "badgeText": "Błyskawicznie"
     }
   ],
   "faqs": [
     {
-      "q": "Does it work without the password?",
-      "a": "No, you must know the existing password to unlock."
+      "q": "Czy to działa bez hasła?",
+      "a": "Nie, aby odblokować, musisz znać istniejące hasło."
     },
     {
-      "q": "Can I unlock permissions-restricted PDFs?",
-      "a": "Yes, permission restrictions are removed after password verification."
+      "q": "Czy mogę odblokować pliki PDF z ograniczonymi uprawnieniami?",
+      "a": "Tak, ograniczenia uprawnień są usuwane po weryfikacji hasła."
     },
     {
-      "q": "Is the decryption process secure?",
-      "a": "All decryption happens in your browser memory; nothing is transmitted."
+      "q": "Czy proces deszyfrowania jest bezpieczny?",
+      "a": "Całe odszyfrowanie odbywa się w pamięci przeglądarki; nic nie jest przesyłane."
     },
     {
-      "q": "What if the password is wrong?",
-      "a": "You will see an error and can try again with the correct password."
+      "q": "A co jeśli hasło jest błędne?",
+      "a": "Zobaczysz błąd i możesz spróbować ponownie, podając prawidłowe hasło."
     },
     {
-      "q": "Is this free?",
-      "a": "Tak, całkowicie bezpłatnie."
+      "q": "Czy to jest bezpłatne?",
+      "a": "Tak, całkowicie za darmo."
     }
-  ]
+  ],
+  "faqTitle": "Często zadawane pytania",
+  "supportCenter": "Centrum wsparcia"
 }

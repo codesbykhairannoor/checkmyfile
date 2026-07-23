@@ -1,67 +1,85 @@
 {
-  "title": "Scan to PDF — Convert Camera Shots Offline",
-  "h1": "Convert Photos and Scans to PDF Locally",
-  "description": "Turn photos of documents taken with your camera into clean PDFs entirely in your browser. No upload. Best for users in Kuala Lumpur.",
+  "title": "Imbas kepada PDF — Tukar Tangkapan Kamera Luar Talian",
+  "h1": "Tukar Foto dan Imbasan kepada PDF Secara Setempat",
+  "description": "Tukar foto dokumen yang diambil dengan kamera anda menjadi PDF bersih sepenuhnya dalam penyemak imbas anda. Tiada muat naik. 100% pemprosesan tempatan selamat.",
+  "buttonText": "Scan to PDF",
+  "badges": [
+    "Gunakan Webcam",
+    "Pengimbas Mudah Alih",
+    "Pangkas Auto"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Use Scan-to-PDF Offline?",
-      "content": "Photos of documents contain sensitive information. Process them locally without any cloud access."
+      "type": "scan_hero_features",
+      "title": "Mengapa Menggunakan Imbas ke PDF Luar Talian?",
+      "content": "Foto dokumen mengandungi maklumat sensitif. Memprosesnya secara tempatan tanpa sebarang akses awan."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Scans to PDF",
+      "type": "scan_how_to_steps",
+      "title": "Cara Menukar Imbasan kepada PDF",
       "steps": [
         {
-          "title": "Import Photos",
-          "description": "Select photos taken with your phone or camera."
+          "title": "Import Foto",
+          "description": "Pilih foto yang diambil dengan telefon atau kamera anda."
         },
         {
-          "title": "Enhance Scan",
-          "description": "Auto-crop, deskew, and enhance contrast."
+          "title": "Tingkatkan Imbasan",
+          "description": "Pangkas automatik, ubah suai dan tingkatkan kontras."
         },
         {
-          "title": "Export PDF",
-          "description": "Download a clean, professional-looking scanned PDF."
+          "title": "Eksport PDF",
+          "description": "Muat turun PDF imbasan yang bersih dan kelihatan profesional."
         }
-      ]
+      ],
+      "badgeText": "Panduan Pantas"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Scan to PDF for Kuala Lumpur Field Workers",
-      "content": "Field workers and freelancers in Kuala Lumpur digitize paper documents on-the-go without uploading to cloud services."
+      "type": "scan_geo_targeting",
+      "title": "100% Pemprosesan Tempatan Selamat",
+      "content": "Semua operasi dilakukan terus pada peranti tempatan anda. Kami menggunakan teknologi WebAssembly termaju untuk memproses dokumen anda tanpa pernah memuat naiknya ke pelayan luaran, memastikan privasi lengkap.",
+      "badgeText": "Pemprosesan Setempat"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Documents Stay on Device",
-      "content": "Invoices, contracts, and ID scans processed entirely in browser memory without any server access."
+      "type": "scan_privacy_security",
+      "title": "Dokumen yang Diimbas Kekal pada Peranti",
+      "content": "Invois, kontrak dan imbasan ID diproses sepenuhnya dalam memori penyemak imbas tanpa sebarang akses pelayan.",
+      "badgeText": "Keselamatan Diutamakan"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Scans in Real Time",
-      "content": "Photo enhancement and PDF generation happens in milliseconds, even for high-resolution camera shots."
+      "type": "scan_performance",
+      "title": "Tukar Imbasan dalam Masa Nyata",
+      "content": "Peningkatan foto dan penjanaan PDF berlaku dalam milisaat, walaupun untuk tangkapan kamera resolusi tinggi.",
+      "badgeText": "Sepantas Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "What photo formats are supported?",
-      "a": "JPG, PNG, WebP, and HEIC from modern cameras."
+      "q": "Apakah format foto yang disokong?",
+      "a": "JPG, PNG, WebP dan HEIC daripada kamera moden."
     },
     {
-      "q": "Does it fix tilted scans?",
-      "a": "Yes, auto-deskew corrects slight angles automatically."
+      "q": "Adakah ia membetulkan imbasan senget?",
+      "a": "Ya, auto-deskew membetulkan sudut sedikit secara automatik."
     },
     {
-      "q": "Can I combine multiple scans?",
-      "a": "Yes, add multiple photos to create a multi-page PDF."
+      "q": "Bolehkah saya menggabungkan berbilang imbasan?",
+      "a": "Ya, tambahkan berbilang foto untuk membuat PDF berbilang halaman."
     },
     {
-      "q": "Does it enhance contrast?",
-      "a": "Yes, document enhancement mode sharpens text for clarity."
+      "q": "Adakah ia meningkatkan kontras?",
+      "a": "Ya, mod peningkatan dokumen menajamkan teks untuk kejelasan."
     },
     {
-      "q": "Is this free?",
-      "a": "Ya, percuma sepenuhnya."
+      "q": "Adakah ini percuma?",
+      "a": "Ya, sentiasa percuma."
     }
-  ]
+  ],
+  "faqTitle": "Soalan Lazim",
+  "supportCenter": "Pusat Sokongan"
 }

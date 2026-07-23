@@ -1,67 +1,85 @@
 {
-  "title": "OCR PDF — Make Scans Searchable Offline",
-  "h1": "Extract and Recognize Text from Scanned PDFs",
-  "description": "Run OCR on scanned PDFs to make them searchable and copyable, entirely in your browser using Tesseract. No upload. Great for users in Amsterdam.",
+  "title": "OCR PDF — Maak scans offline doorzoekbaar",
+  "h1": "Tekst uit gescande PDF's extraheren en herkennen",
+  "description": "Voer OCR uit op gescande PDF's om ze doorzoekbaar en kopieerbaar te maken, volledig in uw browser met behulp van Tesseract. Geen upload. 100% veilige lokale verwerking.",
+  "buttonText": "Run OCR",
+  "badges": [
+    "Tekst extraheren",
+    "Doorzoekbare PDF",
+    "AI-herkenning"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Run OCR Locally?",
-      "content": "Scanned PDFs contain sensitive text. Running OCR on a cloud service exposes that text to a third party. Ours runs 100% offline."
+      "type": "ocr_hero_features",
+      "title": "Waarom OCR lokaal uitvoeren?",
+      "content": "Gescande PDF's bevatten gevoelige tekst. Als u OCR uitvoert op een cloudservice, wordt die tekst zichtbaar voor een derde partij. Die van ons draait 100% offline."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to OCR a PDF",
+      "type": "ocr_how_to_steps",
+      "title": "Een PDF OCR",
       "steps": [
         {
-          "title": "Load Scanned PDF",
-          "description": "Select the image-based or scanned PDF."
+          "title": "Gescande PDF laden",
+          "description": "Selecteer de op afbeeldingen gebaseerde of gescande PDF."
         },
         {
-          "title": "Select Language",
-          "description": "Choose the document language for better accuracy."
+          "title": "Selecteer Taal",
+          "description": "Kies de documenttaal voor een betere nauwkeurigheid."
         },
         {
-          "title": "Download Searchable PDF",
-          "description": "Get a text-layer PDF ready to search and copy."
+          "title": "Doorzoekbare PDF downloaden",
+          "description": "Maak een tekstlaag-PDF klaar om te zoeken en te kopiëren."
         }
-      ]
+      ],
+      "badgeText": "Beknopte handleiding"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "OCR Tool for Amsterdam Archives",
-      "content": "Government agencies and businesses in Amsterdam digitize paper archives using our offline OCR tool."
+      "type": "ocr_geo_targeting",
+      "title": "100% veilige lokale verwerking",
+      "content": "Alle bewerkingen worden rechtstreeks op uw lokale apparaat uitgevoerd. We gebruiken geavanceerde WebAssembly-technologie om uw documenten te verwerken zonder ze ooit naar externe servers te uploaden, waardoor volledige privacy wordt gegarandeerd.",
+      "badgeText": "Lokale verwerking"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Content Never Exposed",
-      "content": "OCR processing using Tesseract WASM runs entirely in browser memory — no API calls, no data transmission."
+      "type": "ocr_privacy_security",
+      "title": "Gescande inhoud nooit zichtbaar",
+      "content": "OCR-verwerking met Tesseract WASM draait volledig in het browsergeheugen – geen API-oproepen, geen gegevensoverdracht.",
+      "badgeText": "Beveiliging eerst"
     },
     {
-      "type": "organizer_performance",
-      "title": "OCR Any Document Locally",
-      "content": "Process a 20-page scanned PDF in under 30 seconds. All Tesseract processing happens in-browser."
+      "type": "ocr_performance",
+      "title": "OCR Elk document lokaal",
+      "content": "Verwerk een gescande PDF van 20 pagina's in minder dan 30 seconden. Alle Tesseract-verwerking vindt plaats in de browser.",
+      "badgeText": "Bliksemsnel"
     }
   ],
   "faqs": [
     {
-      "q": "What languages does OCR support?",
-      "a": "Over 100 languages via Tesseract engine."
+      "q": "Welke talen ondersteunt OCR?",
+      "a": "Meer dan 100 talen via Tesseract-engine."
     },
     {
-      "q": "How accurate is the OCR?",
-      "a": "Accuracy depends on scan quality; clear, high-contrast scans yield 95%+ accuracy."
+      "q": "Hoe nauwkeurig is de OCR?",
+      "a": "Nauwkeurigheid is afhankelijk van de scankwaliteit; heldere scans met hoog contrast leveren een nauwkeurigheid van meer dan 95% op."
     },
     {
-      "q": "Does it create a searchable PDF?",
-      "a": "Yes, a text layer is added making the PDF fully searchable."
+      "q": "Creëert het een doorzoekbare PDF?",
+      "a": "Ja, er wordt een tekstlaag toegevoegd waardoor de PDF volledig doorzoekbaar is."
     },
     {
-      "q": "Can I copy text from the result?",
-      "a": "Yes, the output PDF has selectable, copyable text."
+      "q": "Kan ik tekst uit het resultaat kopiëren?",
+      "a": "Ja, de uitvoer-PDF heeft selecteerbare, kopieerbare tekst."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, volledig gratis."
+      "q": "Is dit gratis?",
+      "a": "Ja, altijd gratis."
     }
-  ]
+  ],
+  "faqTitle": "Veelgestelde vragen",
+  "supportCenter": "Ondersteuningscentrum"
 }

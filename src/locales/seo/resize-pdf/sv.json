@@ -1,67 +1,85 @@
 {
-  "title": "Resize PDF Pages — Change Paper Size Offline",
-  "h1": "Resize PDF Pages to A4, Letter, or Custom Sizes",
-  "description": "Change the paper size of every PDF page to A4, US Letter, or custom dimensions entirely in your browser. No upload. Ideal for users in Stockholm.",
+  "title": "Ändra storlek på PDF-sidor — Ändra pappersstorlek offline",
+  "h1": "Ändra storlek på PDF-sidor till A4, Letter eller anpassade storlekar",
+  "description": "Ändra pappersstorleken för varje PDF-sida till A4, US Letter eller anpassade mått helt i din webbläsare. Ingen uppladdning. 100 % säker lokal bearbetning.",
+  "buttonText": "Resize Pages",
+  "badges": [
+    "A4, Letter, Custom",
+    "Lägg till marginaler",
+    "Formatfix"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Resize PDFs Locally?",
-      "content": "Preparing documents for printing requires proper page sizing. Resize locally without uploading internal documents to the cloud."
+      "type": "resize_hero_features",
+      "title": "Varför ändra storlek på PDF-filer lokalt?",
+      "content": "Att förbereda dokument för utskrift kräver rätt sidstorlek. Ändra storlek lokalt utan att ladda upp interna dokument till molnet."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Resize PDF Pages",
+      "type": "resize_how_to_steps",
+      "title": "Hur man ändrar storlek på PDF-sidor",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page dimensions."
+          "title": "Öppna PDF",
+          "description": "Ladda PDF-filen med felaktiga sidmått."
         },
         {
-          "title": "Select Target Size",
-          "description": "Choose A4, Letter, A3, or enter custom dimensions."
+          "title": "Välj Målstorlek",
+          "description": "Välj A4, Letter, A3 eller ange anpassade mått."
         },
         {
-          "title": "Download Resized PDF",
-          "description": "Get your properly sized document instantly."
+          "title": "Ladda ner PDF med ändrad storlek",
+          "description": "Få ditt dokument i rätt storlek direkt."
         }
-      ]
+      ],
+      "badgeText": "Snabbguide"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Resizing for Stockholm Print Shops",
-      "content": "Print shops and offices in Stockholm resize documents to standard sizes without cloud dependency."
+      "type": "resize_geo_targeting",
+      "title": "100 % säker lokal bearbetning",
+      "content": "Alla operationer utförs direkt på din lokala enhet. Vi använder avancerad WebAssembly-teknik för att behandla dina dokument utan att någonsin ladda upp dem till externa servrar, vilket säkerställer fullständig integritet.",
+      "badgeText": "Lokal bearbetning"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Internal Documents Stay Internal",
-      "content": "Resize business reports and proposals without any server-side processing."
+      "type": "resize_privacy_security",
+      "title": "Interna dokument förblir interna",
+      "content": "Ändra storlek på affärsrapporter och förslag utan bearbetning på serversidan.",
+      "badgeText": "Säkerhet först"
     },
     {
-      "type": "transform_performance",
-      "title": "Resize Hundreds of Pages Instantly",
-      "content": "Resizing a 500-page PDF takes under 2 seconds. All in your browser."
+      "type": "resize_performance",
+      "title": "Ändra storlek på hundratals sidor direkt",
+      "content": "Att ändra storlek på en PDF-fil på 500 sidor tar under 2 sekunder. Allt i din webbläsare.",
+      "badgeText": "Blixtsnabb"
     }
   ],
   "faqs": [
     {
-      "q": "What sizes are available?",
-      "a": "A4, A3, A5, US Letter, Legal, and custom dimensions."
+      "q": "Vilka storlekar finns tillgängliga?",
+      "a": "A4, A3, A5, US Letter, Legal och anpassade mått."
     },
     {
-      "q": "Does content scale with the page?",
-      "a": "Yes, content is scaled proportionally by default."
+      "q": "Skalas innehållet med sidan?",
+      "a": "Ja, innehåll skalas proportionellt som standard."
     },
     {
-      "q": "Can I resize individual pages?",
-      "a": "Yes, apply different sizes to specific pages."
+      "q": "Kan jag ändra storlek på enskilda sidor?",
+      "a": "Ja, använd olika storlekar på specifika sidor."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "Vector content is re-rendered perfectly; images may scale."
+      "q": "Påverkas kvaliteten?",
+      "a": "Vektorinnehåll återrenderas perfekt; bilder kan skalas."
     },
     {
-      "q": "Is this free?",
+      "q": "Är detta gratis?",
       "a": "Ja, helt gratis."
     }
-  ]
+  ],
+  "faqTitle": "Vanliga frågor",
+  "supportCenter": "Supportcenter"
 }

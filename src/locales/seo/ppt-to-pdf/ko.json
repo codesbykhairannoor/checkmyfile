@@ -1,67 +1,85 @@
 {
-  "title": "PowerPoint to PDF Converter — Offline & Free",
-  "h1": "Convert PowerPoint Presentations to PDF Instantly",
-  "description": "Convert .pptx presentations to high-quality PDFs directly in your browser. No cloud needed. Perfect for presenters in Seoul.",
+  "title": "PowerPoint를 PDF로 변환기 — 오프라인 및 무료",
+  "h1": "PowerPoint 프리젠테이션을 PDF로 즉시 변환",
+  "description": "브라우저에서 직접 .pptx 프레젠테이션을 고품질 PDF로 변환하세요. 클라우드가 필요하지 않습니다. 100% 안전한 로컬 처리.",
+  "buttonText": "Convert Slides",
+  "badges": [
+    "이사회 회의",
+    "피치덱",
+    "미출시 제품"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Presentations Offline?",
-      "content": "Your slides may contain unreleased products or confidential strategies. Convert without risking data exposure."
+      "type": "ppt_hero_features",
+      "title": "프레젠테이션을 오프라인으로 변환하는 이유는 무엇입니까?",
+      "content": "귀하의 슬라이드에는 아직 출시되지 않은 제품이나 기밀 전략이 포함될 수 있습니다. 데이터 노출 위험 없이 변환하세요."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert PowerPoint to PDF",
+      "type": "ppt_how_to_steps",
+      "title": "PowerPoint를 PDF로 변환하는 방법",
       "steps": [
         {
-          "title": "Load Presentation",
-          "description": "Select your .pptx file from your device."
+          "title": "프레젠테이션 로드",
+          "description": "장치에서 .pptx 파일을 선택합니다."
         },
         {
-          "title": "Select Slide Range",
-          "description": "Include all slides or specific ones."
+          "title": "슬라이드 범위 선택",
+          "description": "모든 슬라이드 또는 특정 슬라이드를 포함합니다."
         },
         {
-          "title": "Download PDF",
-          "description": "Get your PDF with all formatting preserved."
+          "title": "PDF 다운로드",
+          "description": "모든 서식이 보존된 PDF를 받으세요."
         }
-      ]
+      ],
+      "badgeText": "빠른 가이드"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Presentation Conversion in Seoul",
-      "content": "Presenters in Seoul trust us to convert slide decks without leaking unreleased content to cloud servers."
+      "type": "ppt_geo_targeting",
+      "title": "100% 안전한 로컬 처리",
+      "content": "모든 작업은 로컬 장치에서 직접 수행됩니다. 우리는 고급 WebAssembly 기술을 사용하여 문서를 외부 서버에 업로드하지 않고 처리하여 완벽한 개인 정보 보호를 보장합니다.",
+      "badgeText": "로컬 처리"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Confidential Slides Stay Confidential",
-      "content": "Pre-launch product decks? Board presentations? Converted 100% locally without network access."
+      "type": "ppt_privacy_security",
+      "title": "기밀 슬라이드 기밀 유지",
+      "content": "출시 전 제품 데크가 있나요? 이사회 프레젠테이션? 네트워크 접속 없이 100% 로컬로 변환되었습니다.",
+      "badgeText": "보안 우선"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Slide Export",
-      "content": "Convert 100-slide decks in seconds. No queue, no waiting, no upload bandwidth wasted."
+      "type": "ppt_performance",
+      "title": "즉시 슬라이드 내보내기",
+      "content": "100개 슬라이드 데크를 몇 초 만에 변환하세요. 대기열도 없고, 대기도 없고, 업로드 대역폭도 낭비되지 않습니다.",
+      "badgeText": "번개처럼 빠르게"
     }
   ],
   "faqs": [
     {
-      "q": "Are slide animations preserved?",
-      "a": "Animations are flattened into static PDF frames."
+      "q": "슬라이드 애니메이션이 보존되나요?",
+      "a": "애니메이션은 정적 PDF 프레임으로 병합됩니다."
     },
     {
-      "q": "What resolution is the output?",
-      "a": "High-resolution rendering at 150 DPI by default."
+      "q": "출력 해상도는 어떻게 되나요?",
+      "a": "기본적으로 150DPI의 고해상도 렌더링."
     },
     {
-      "q": "Can I convert selected slides only?",
-      "a": "Yes, specify slide ranges like 1-10 or 5,8,12."
+      "q": "선택한 슬라이드만 변환할 수 있나요?",
+      "a": "예, 1-10 또는 5,8,12와 같은 슬라이드 범위를 지정하십시오."
     },
     {
-      "q": "Is .ppt (old format) supported?",
-      "a": "Yes, both .ppt and .pptx are supported."
+      "q": ".ppt(이전 형식)가 지원되나요?",
+      "a": "예, .ppt와 .pptx가 모두 지원됩니다."
     },
     {
-      "q": "Is this free to use?",
-      "a": "예, 완전 무료입니다."
+      "q": "무료로 사용할 수 있나요?",
+      "a": "네, 워터마크 없이 완전 무료입니다."
     }
-  ]
+  ],
+  "faqTitle": "자주 묻는 질문",
+  "supportCenter": "지원 센터"
 }

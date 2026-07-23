@@ -1,67 +1,85 @@
 {
-  "title": "Unlock PDF — Remove Password Offline",
-  "h1": "Remove PDF Password Protection Instantly in Your Browser",
-  "description": "Unlock password-protected PDFs locally if you know the password. 100% private. No upload. Perfect for users in Riyadh.",
+  "title": "فتح ملف PDF — إزالة كلمة المرور في وضع عدم الاتصال",
+  "h1": "قم بإزالة حماية كلمة مرور PDF على الفور في متصفحك",
+  "description": "افتح ملفات PDF المحمية بكلمة مرور محليًا إذا كنت تعرف كلمة المرور. خاص 100%. لا يوجد تحميل. معالجة محلية آمنة بنسبة 100%.",
+  "buttonText": "Unlock PDF",
+  "badges": [
+    "إزالة كلمة المرور",
+    "فتح فوري",
+    "لا توجد سجلات الخادم"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "unlock_hero_features",
-      "title": "Why Unlock PDFs Locally?",
-      "content": "You have the password to your own file. Unlocking it should not require uploading sensitive documents to an external service."
+      "title": "لماذا فتح ملفات PDF محليا؟",
+      "content": "لديك كلمة المرور للملف الخاص بك. لا ينبغي أن يتطلب فتحه تحميل مستندات حساسة إلى خدمة خارجية."
     },
     {
       "type": "unlock_how_to_steps",
-      "title": "How to Unlock a Protected PDF",
+      "title": "كيفية فتح ملف PDF محمي",
       "steps": [
         {
-          "title": "Open Protected PDF",
-          "description": "Select the password-protected PDF."
+          "title": "فتح ملف PDF المحمي",
+          "description": "حدد ملف PDF المحمي بكلمة مرور."
         },
         {
-          "title": "Enter Your Password",
-          "description": "Provide the existing password — decryption stays in your browser."
+          "title": "أدخل كلمة المرور",
+          "description": "قم بتوفير كلمة المرور الحالية — يبقى فك التشفير في متصفحك."
         },
         {
-          "title": "Download Unlocked PDF",
-          "description": "Get your unlocked, fully accessible PDF instantly."
+          "title": "تحميل ملف PDF مفتوح",
+          "description": "احصل على ملف PDF مفتوحًا ويمكن الوصول إليه بشكل كامل على الفور."
         }
-      ]
+      ],
+      "badgeText": "الدليل السريع"
     },
     {
       "type": "unlock_geo_targeting",
-      "title": "Instant PDF Unlocking for Riyadh Users",
-      "content": "Users in Riyadh access their own password-protected files without sending decryption keys to any server."
+      "title": "معالجة محلية آمنة بنسبة 100%",
+      "content": "يتم تنفيذ جميع العمليات مباشرة على جهازك المحلي. نحن نستخدم تقنية WebAssembly المتقدمة لمعالجة مستنداتك دون تحميلها على خوادم خارجية، مما يضمن الخصوصية الكاملة.",
+      "badgeText": "المعالجة المحلية"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Your Password Never Leaves the Browser",
-      "content": "The decryption key and your document are processed entirely in browser memory — never transmitted to any server or service."
+      "title": "كلمة المرور الخاصة بك لا تترك المتصفح أبدًا",
+      "content": "تتم معالجة مفتاح فك التشفير والمستند الخاص بك بالكامل في ذاكرة المتصفح - ولا يتم نقلهما مطلقًا إلى أي خادم أو خدمة.",
+      "badgeText": "الأمن أولا"
     },
     {
       "type": "unlock_performance",
-      "title": "Instant Browser-Local Decryption",
-      "content": "AES decryption in your browser takes under a second — far faster than any cloud service with no upload wait."
+      "title": "فك التشفير الفوري للمتصفح المحلي",
+      "content": "يستغرق فك تشفير AES في متصفحك أقل من ثانية، وهو أسرع بكثير من أي خدمة سحابية بدون انتظار تحميل.",
+      "badgeText": "بسرعة البرق"
     }
   ],
   "faqs": [
     {
-      "q": "Does it work without the password?",
-      "a": "No, you must know the existing password to unlock."
+      "q": "هل يعمل بدون كلمة المرور؟",
+      "a": "لا، يجب أن تعرف كلمة المرور الحالية لفتح القفل."
     },
     {
-      "q": "Can I unlock permissions-restricted PDFs?",
-      "a": "Yes, permission restrictions are removed after password verification."
+      "q": "هل يمكنني فتح ملفات PDF المقيدة بالأذونات؟",
+      "a": "نعم، تتم إزالة قيود الأذونات بعد التحقق من كلمة المرور."
     },
     {
-      "q": "Is the decryption process secure?",
-      "a": "All decryption happens in your browser memory; nothing is transmitted."
+      "q": "هل عملية فك التشفير آمنة؟",
+      "a": "تتم جميع عمليات فك التشفير في ذاكرة المتصفح الخاص بك؛ لا شيء ينتقل."
     },
     {
-      "q": "What if the password is wrong?",
-      "a": "You will see an error and can try again with the correct password."
+      "q": "ماذا لو كانت كلمة المرور خاطئة؟",
+      "a": "سترى خطأ ويمكنك المحاولة مرة أخرى باستخدام كلمة المرور الصحيحة."
     },
     {
-      "q": "Is this free?",
-      "a": "نعم، مجاناً تماماً."
+      "q": "هل هذا مجاني؟",
+      "a": "نعم، مجاني تماما."
     }
-  ]
+  ],
+  "faqTitle": "الأسئلة المتداولة",
+  "supportCenter": "مركز الدعم"
 }

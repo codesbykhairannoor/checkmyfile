@@ -1,67 +1,85 @@
 {
-  "title": "Compress PDF Online - Reduce File Size",
-  "h1": "Compress PDF Documents without Losing Quality",
-  "description": "Shrink large PDF files up to 90% using adaptive lossless techniques directly in WebAssembly. Perfect for users in Bangkok.",
+  "title": "บีบอัด PDF ออนไลน์ - ลดขนาดไฟล์",
+  "h1": "บีบอัดเอกสาร PDF โดยไม่สูญเสียคุณภาพ",
+  "description": "ย่อขนาดไฟล์ PDF ขนาดใหญ่ได้ถึง 90% โดยใช้เทคนิค Adaptive Lossless ใน WebAssembly โดยตรง การประมวลผลภายในที่ปลอดภัย 100%",
   "sections": [
     {
-      "type": "comp_hero_features",
-      "title": "Why Compress PDF Offline?",
-      "content": "Large PDFs are a pain to email. Our compressor reduces file size drastically without blurring images, all from your browser."
+      "type": "compress_hero_features",
+      "title": "ทำไมต้องบีบอัด PDF ออฟไลน์",
+      "content": "PDF ขนาดใหญ่เป็นเรื่องที่ยุ่งยากในการส่งอีเมล โปรแกรมบีบอัดของเราลดขนาดไฟล์ลงอย่างมากโดยไม่ทำให้ภาพเบลอ ทั้งหมดนี้ทำได้จากเบราว์เซอร์ของคุณ"
     },
     {
-      "type": "comp_how_to_steps",
-      "title": "How to Shrink PDF Files",
+      "type": "compress_how_to_steps",
+      "title": "วิธีย่อขนาดไฟล์ PDF",
       "steps": [
         {
-          "title": "Upload Large File",
-          "description": "Select the hefty PDF you want to shrink."
+          "title": "อัพโหลดไฟล์ขนาดใหญ่",
+          "description": "เลือก PDF ขนาดใหญ่ที่คุณต้องการย่อขนาด"
         },
         {
-          "title": "Select Quality",
-          "description": "Choose between high quality or maximum compression."
+          "title": "เลือกคุณภาพ",
+          "description": "เลือกระหว่างคุณภาพสูงหรือการบีบอัดสูงสุด"
         },
         {
-          "title": "Download Tiny PDF",
-          "description": "Get your compressed file instantly, ready to share."
+          "title": "ดาวน์โหลด PDF จิ๋ว",
+          "description": "รับไฟล์บีบอัดของคุณทันทีพร้อมแชร์"
         }
-      ]
+      ],
+      "badgeText": "คู่มือฉบับย่อ"
     },
     {
-      "type": "comp_geo_targeting",
-      "title": "Optimized PDF Shrinking in Bangkok, TH-10",
-      "content": "Working on a slow connection in Bangkok? Compress your files locally so you can email them faster."
+      "type": "compress_geo_targeting",
+      "title": "การประมวลผลภายในที่ปลอดภัย 100%",
+      "content": "การดำเนินการทั้งหมดดำเนินการโดยตรงบนอุปกรณ์ท้องถิ่นของคุณ เราใช้เทคโนโลยี WebAssembly ขั้นสูงเพื่อประมวลผลเอกสารของคุณโดยไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ภายนอก เพื่อให้มั่นใจถึงความเป็นส่วนตัวโดยสมบูรณ์",
+      "badgeText": "การประมวลผลในท้องถิ่น"
     },
     {
-      "type": "comp_privacy_security",
-      "title": "Secure Local Compression",
-      "content": "Compressing sensitive financial reports? Our algorithm works completely offline, keeping your data safe."
+      "type": "compress_privacy_security",
+      "title": "การบีบอัดข้อมูลภายในเครื่องอย่างปลอดภัย",
+      "content": "กำลังบีบอัดรายงานทางการเงินที่ละเอียดอ่อนใช่ไหม อัลกอริธึมของเราทำงานแบบออฟไลน์โดยสมบูรณ์ ทำให้ข้อมูลของคุณปลอดภัย",
+      "badgeText": "ความปลอดภัยต้องมาก่อน"
     },
     {
-      "type": "comp_performance",
-      "title": "Lightning Fast Shrink",
-      "content": "Compressing a 50MB file locally saves you the time of uploading 50MB and downloading 5MB back."
+      "type": "compress_performance",
+      "title": "หดตัวเร็วปานสายฟ้า",
+      "content": "การบีบอัดไฟล์ขนาด 50MB ในเครื่องจะช่วยประหยัดเวลาในการอัพโหลด 50MB และการดาวน์โหลดกลับ 5MB",
+      "badgeText": "เร็วปานสายฟ้า"
     }
   ],
   "faqs": [
     {
-      "q": "Will compressing my PDF make it blurry?",
-      "a": "No, our tool uses adaptive compression to maintain readability while reducing size."
+      "q": "การบีบอัด PDF ของฉันจะทำให้ภาพเบลอหรือไม่",
+      "a": "ไม่ เครื่องมือของเราใช้การบีบอัดแบบปรับได้เพื่อรักษาความสามารถในการอ่านในขณะที่ลดขนาดลง"
     },
     {
-      "q": "Are my files sent to a server to be compressed?",
-      "a": "No, the compression algorithm runs directly in your browser memory."
+      "q": "ไฟล์ของฉันถูกส่งไปยังเซิร์ฟเวอร์เพื่อบีบอัดหรือไม่",
+      "a": "ไม่ อัลกอริธึมการบีบอัดจะทำงานโดยตรงในหน่วยความจำเบราว์เซอร์ของคุณ"
     },
     {
-      "q": "What is the maximum file size I can compress?",
-      "a": "Your browser memory is the only limit! You can compress massive files easily."
+      "q": "ขนาดไฟล์สูงสุดที่ฉันสามารถบีบอัดได้คือเท่าใด",
+      "a": "หน่วยความจำเบราว์เซอร์ของคุณมีขีดจำกัดเท่านั้น! คุณสามารถบีบอัดไฟล์ขนาดใหญ่ได้อย่างง่ายดาย"
     },
     {
-      "q": "Is this compression tool free?",
-      "a": "Absolutely free with no usage limits or premium paywalls."
+      "q": "เครื่องมือบีบอัดนี้ฟรีหรือไม่",
+      "a": "ฟรีอย่างแน่นอนโดยไม่มีขีดจำกัดการใช้งานหรือเพย์วอลล์ระดับพรีเมียม"
     },
     {
-      "q": "Can I compress multiple files at once?",
-      "a": "Batch compression is supported on modern browsers."
+      "q": "ฉันสามารถบีบอัดไฟล์หลายไฟล์พร้อมกันได้หรือไม่?",
+      "a": "การบีบอัดแบบแบตช์ได้รับการสนับสนุนบนเบราว์เซอร์สมัยใหม่"
     }
-  ]
+  ],
+  "badges": [
+    "แรงอัด 90%",
+    "ตัวเลือกแบบไม่สูญเสีย",
+    "ไม่มีการอัพโหลด"
+  ],
+  "stats": [
+    "Zero Wait",
+    "High Quality",
+    "WebAssembly",
+    "Private"
+  ],
+  "buttonText": "Compress PDF",
+  "faqTitle": "คำถามที่พบบ่อย",
+  "supportCenter": "ศูนย์สนับสนุน"
 }

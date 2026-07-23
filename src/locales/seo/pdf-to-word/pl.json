@@ -1,67 +1,80 @@
 {
-  "title": "PDF to Word Converter — Offline & Editable",
-  "h1": "Convert PDF to Editable Word Documents Locally",
-  "description": "Transform PDFs back into .docx files you can edit, right in your browser. No upload needed. Great for users in Warsaw.",
+  "title": "Konwerter plików PDF na Word — offline i z możliwością edycji",
+  "h1": "Konwertuj lokalnie pliki PDF na edytowalne dokumenty programu Word",
+  "description": "Przekształcaj pliki PDF z powrotem w pliki .docx, które możesz edytować bezpośrednio w przeglądarce. Nie ma potrzeby przesyłania. Świetne dla użytkowników w Warszawie.",
+  "buttonText": "Konwertuj na Word",
+  "badges": [
+    "Edytowalne dokumenty",
+    "Odzyskiwanie tekstu",
+    "Proces offline"
+  ],
+  "stats": [
+    "100%",
+    "Lokalny",
+    "0s",
+    "Czas oczekiwania"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF Back Offline?",
-      "content": "When you need to edit a PDF, converting it offline keeps your original document confidential."
+      "title": "Dlaczego używać offline?",
+      "content": "Jeśli chcesz edytować plik PDF, konwersja go w trybie offline zapewnia poufność oryginalnego dokumentu."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Word",
+      "title": "Jak używać",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF file you need to convert."
+          "title": "Załaduj PDF",
+          "description": "Wybierz plik PDF, który chcesz przekonwertować."
         },
         {
-          "title": "Detect Text Layers",
-          "description": "Our engine reads text and structure from the PDF."
+          "title": "Wykryj warstwy tekstowe",
+          "description": "Nasz silnik odczytuje tekst i strukturę z pliku PDF."
         },
         {
-          "title": "Download .docx",
-          "description": "Get your editable Word document ready to modify."
+          "title": "Pobierz plik .docx",
+          "description": "Przygotuj edytowalny dokument programu Word do modyfikacji."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "PDF to Word for Warsaw Offices",
-      "content": "Office workers in Warsaw use our tool to recover editable text from PDFs without cloud dependency."
+      "title": "PDF do Worda dla warszawskich biur",
+      "content": "Pracownicy biurowi w Warszawie korzystają z naszego narzędzia do odzyskiwania edytowalnego tekstu z plików PDF bez konieczności korzystania z chmury."
     },
     {
       "type": "split_privacy_security",
-      "title": "Legal Documents Stay Confidential",
-      "content": "Contracts, NDAs, and reports converted back to Word entirely in your browser memory."
+      "title": "Dokumenty prawne pozostają poufne",
+      "content": "Umowy, umowy NDA i raporty całkowicie konwertowane do formatu Word w pamięci przeglądarki."
     },
     {
       "type": "split_performance",
-      "title": "Recover Editable Text in Seconds",
-      "content": "Extract text from a 50-page PDF in under 3 seconds without uploading a single byte."
+      "title": "Odzyskaj edytowalny tekst w kilka sekund",
+      "content": "Wyodrębnij tekst z 50-stronicowego pliku PDF w mniej niż 3 sekundy bez przesyłania ani jednego bajtu."
     }
   ],
   "faqs": [
     {
-      "q": "Is all text preserved?",
-      "a": "Yes, text from all layers is extracted and formatted."
+      "q": "Czy cały tekst został zachowany?",
+      "a": "Tak, tekst ze wszystkich warstw jest wyodrębniany i formatowany."
     },
     {
-      "q": "Does it work on scanned PDFs?",
-      "a": "For scanned PDFs, use our OCR tool first."
+      "q": "Czy to działa na zeskanowanych plikach PDF?",
+      "a": "W przypadku zeskanowanych plików PDF użyj najpierw naszego narzędzia OCR."
     },
     {
-      "q": "Are images included in the .docx?",
-      "a": "Yes, embedded images are included in the output."
+      "q": "Czy obrazy znajdują się w pliku .docx?",
+      "a": "Tak, osadzone obrazy są uwzględniane w wynikach."
     },
     {
-      "q": "Can I edit the .docx after?",
-      "a": "Absolutely, the output is a fully editable Word document."
+      "q": "Czy mogę później edytować plik .docx?",
+      "a": "Absolutnie wynik jest w pełni edytowalnym dokumentem programu Word."
     },
     {
-      "q": "Is this free?",
-      "a": "Tak, całkowicie bezpłatnie."
+      "q": "Czy to jest bezpłatne?",
+      "a": "Tak, całkowicie darmowe."
     }
-  ]
+  ],
+  "faqTitle": "Często zadawane pytania"
 }

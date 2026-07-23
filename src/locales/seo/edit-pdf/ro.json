@@ -1,0 +1,85 @@
+{
+  "title": "Editați PDF - Editor PDF offline gratuit",
+  "h1": "Editați documente PDF direct în browser",
+  "description": "Adaugă text, semnături și adnotări la fișierele PDF la nivel local. Fără încărcări, confidențialitate maximă. Procesare locală 100% sigură.",
+  "sections": [
+    {
+      "type": "edit_hero_features",
+      "title": "De ce editați PDF-uri local?",
+      "content": "Încărcarea contractelor și formularelor sensibile într-un editor cloud reprezintă un risc masiv de confidențialitate. Editorul nostru WebAssembly rulează direct pe dispozitivul dvs., asigurându-vă că documentele dvs. nu părăsesc computerul."
+    },
+    {
+      "type": "edit_how_to_steps",
+      "title": "Cum se editează un PDF",
+      "steps": [
+        {
+          "title": "Deschideți documentul",
+          "description": "Selectați fișierul PDF pe care doriți să îl adnotați sau să semnați."
+        },
+        {
+          "title": "Adăugați text și elemente",
+          "description": "Utilizați instrumentele noastre intuitive pentru a adăuga text, a desena sau a plasa imagini."
+        },
+        {
+          "title": "Salvați modificările",
+          "description": "Exportați PDF-ul modificat instantaneu fără a aștepta descărcări."
+        }
+      ],
+      "badgeText": "Ghid rapid"
+    },
+    {
+      "type": "edit_geo_targeting",
+      "title": "Procesare locală 100% sigură",
+      "content": "Toate operațiunile sunt efectuate direct pe dispozitivul local. Folosim tehnologie avansată WebAssembly pentru a vă procesa documentele fără a le încărca vreodată pe servere externe, asigurând confidențialitate completă.",
+      "badgeText": "Prelucrare locală"
+    },
+    {
+      "type": "edit_privacy_security",
+      "title": "Zero transmitere de date",
+      "content": "Spre deosebire de editorii PDF tradiționali care vă încarcă fișierele pe serverele lor, platforma noastră procesează totul din memoria browserului dumneavoastră.",
+      "badgeText": "Securitatea în primul rând"
+    },
+    {
+      "type": "edit_performance",
+      "title": "Redare instantanee offline",
+      "content": "Editorul nostru încarcă fișiere PDF uriașe în milisecunde. Puteți adăuga sute de adnotări fără întârziere sau întârziere de rețea.",
+      "badgeText": "Rapid fulger"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Pot edita textul existent în PDF?",
+      "a": "În prezent, puteți adăuga text, forme și imagini noi peste documentul existent."
+    },
+    {
+      "q": "Fișierele mele sunt încărcate undeva?",
+      "a": "Nu, toate editările au loc local în browser-ul dvs. folosind WebAssembly."
+    },
+    {
+      "q": "Pot semna documente?",
+      "a": "Da, vă puteți desena semnătura sau puteți încărca o imagine a acesteia."
+    },
+    {
+      "q": "Este editorul liber de utilizat?",
+      "a": "Da, este 100% gratuit, fără plăți premium sau taxe ascunse."
+    },
+    {
+      "q": "Funcționează pe dispozitive mobile?",
+      "a": "Da, editorul este complet receptiv și acceptă introducerea tactilă pentru desen."
+    }
+  ],
+  "badges": [
+    "Fără filigran",
+    "100% gratuit",
+    "Editor offline"
+  ],
+  "stats": [
+    "100% Private",
+    "0 Server Uploads",
+    "Client-Side Only",
+    "No Accounts"
+  ],
+  "buttonText": "Start Editing",
+  "faqTitle": "Întrebări frecvente",
+  "supportCenter": "Centrul de suport"
+}

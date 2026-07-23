@@ -1,67 +1,85 @@
 {
-  "title": "Reverse PDF — Flip Page Order Offline",
-  "h1": "Reverse the Page Order of Any PDF Locally",
-  "description": "Flip the page sequence of PDF documents entirely in your browser. No upload, instant result. Great for users in Tokyo.",
+  "title": "PDF を反転 — ページ順序をオフラインで反転",
+  "h1": "PDF のページ順序をローカルで反転する",
+  "description": "ブラウザ内で PDF ドキュメントのページシーケンス全体を反転します。 アップロード不要、すぐに結果が得られます。 100% 安全なローカル処理。",
+  "buttonText": "Reverse Order",
+  "badges": [
+    "すべてのページを反転",
+    "スキャンを修正",
+    "ワンクリック"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Reverse PDF Page Order Offline?",
-      "content": "When a scanner outputs pages in reverse, you need a quick local fix — not a cloud upload of your entire document."
+      "type": "reverse_hero_features",
+      "title": "PDF ページの順序をオフラインで反転するのはなぜですか?",
+      "content": "スキャナーがページを逆に出力する場合は、ドキュメント全体をクラウドにアップロードするのではなく、ローカルで迅速に修正する必要があります。"
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Reverse PDF Page Order",
+      "type": "reverse_how_to_steps",
+      "title": "PDF ページの順序を逆にする方法",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF with incorrect page order."
+          "title": "PDF を開く",
+          "description": "ページ順序が正しくない PDF を選択します。"
         },
         {
-          "title": "Confirm Reversal",
-          "description": "Preview the new first and last page."
+          "title": "取り消しを確認",
+          "description": "新しい最初と最後のページをプレビューします。"
         },
         {
-          "title": "Download Reversed PDF",
-          "description": "Get the reordered PDF instantly."
+          "title": "逆向きの PDF をダウンロード",
+          "description": "並べ替えられた PDF を即座に取得します。"
         }
-      ]
+      ],
+      "badgeText": "クイックガイド"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Page Order Fix for Tokyo Users",
-      "content": "Office users in Tokyo fix scanner reversal issues instantly without cloud uploads."
+      "type": "reverse_geo_targeting",
+      "title": "100% 安全なローカル処理",
+      "content": "すべての操作はローカル デバイス上で直接実行されます。 当社は高度な WebAssembly テクノロジーを使用して、ドキュメントを外部サーバーにアップロードすることなく処理し、完全なプライバシーを確​​保します。",
+      "badgeText": "ローカル処理"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Documents Never Leave Your Device",
-      "content": "Reversed contracts, reports, and records are processed entirely in browser memory."
+      "type": "reverse_privacy_security",
+      "title": "ドキュメントがデバイスから離れることはありません",
+      "content": "逆仕訳された契約、レポート、記録はすべてブラウザーのメモリ内で処理されます。",
+      "badgeText": "セキュリティ第一"
     },
     {
-      "type": "transform_performance",
-      "title": "Reverse Any PDF in Seconds",
-      "content": "Reversing a 1000-page document takes milliseconds. All in your browser."
+      "type": "reverse_performance",
+      "title": "あらゆる PDF を数秒で反転",
+      "content": "1000 ページの文書を反転するには数ミリ秒かかります。 すべてブラウザ内で。",
+      "badgeText": "超高速"
     }
   ],
   "faqs": [
     {
-      "q": "Does this reverse all pages?",
-      "a": "Yes, the full page order is flipped."
+      "q": "これはすべてのページを反転しますか?",
+      "a": "はい、ページ全体の順序が反転します。"
     },
     {
-      "q": "Can I select a range to reverse?",
-      "a": "Yes, specify start and end pages to reverse selectively."
+      "q": "範囲を選択して反転することはできますか?",
+      "a": "はい、選択的に反転する開始ページと終了ページを指定します。"
     },
     {
-      "q": "Is the quality affected?",
-      "a": "No, reversal is a structural operation with no quality loss."
+      "q": "品質に影響はありますか?",
+      "a": "いいえ、反転は品質を損なうことのない構造的な操作です。"
     },
     {
-      "q": "Can I undo?",
-      "a": "Apply reversal again to undo."
+      "q": "元に戻すことはできますか?",
+      "a": "元に戻すには、もう一度反転を適用します。"
     },
     {
-      "q": "Is this free?",
-      "a": "はい、完全無料です。"
+      "q": "これは無料ですか？",
+      "a": "はい、いつでも無料です。"
     }
-  ]
+  ],
+  "faqTitle": "よくある質問",
+  "supportCenter": "サポート センター"
 }

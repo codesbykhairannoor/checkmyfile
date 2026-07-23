@@ -1,67 +1,85 @@
 {
-  "title": "Excel to PDF — Convert Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to PDF Securely",
-  "description": "Turn .xlsx and .csv files into crisp PDFs locally in your browser. Financial data stays on your device. Perfect for users in Istanbul.",
+  "title": "Excel'den PDF'ye — Elektronik Tabloları Çevrimdışına Dönüştürün",
+  "h1": "Excel Elektronik Tablolarını Güvenli Bir Şekilde PDF'ye Dönüştürün",
+  "description": ".xlsx ve .csv dosyalarını tarayıcınızda yerel olarak net PDF'lere dönüştürün. Finansal veriler cihazınızda kalır. %100 güvenli yerel işleme.",
+  "buttonText": "Convert Spreadsheet",
+  "badges": [
+    "Mali Raporlar",
+    "Faturalar",
+    "Veri Dışa Aktarımları"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Excel Offline?",
-      "content": "Spreadsheets often contain sensitive financial data. Our browser-based engine converts without any server involvement."
+      "type": "excel_hero_features",
+      "title": "Neden Excel'i Çevrimdışına Dönüştürmelisiniz?",
+      "content": "Elektronik tablolar genellikle hassas finansal veriler içerir. Tarayıcı tabanlı motorumuz, herhangi bir sunucu müdahalesi olmadan dönüşür."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Export Excel as PDF",
+      "type": "excel_how_to_steps",
+      "title": "Excel'i PDF Olarak Dışa Aktarma",
       "steps": [
         {
-          "title": "Open Spreadsheet",
-          "description": "Select your .xlsx or .csv file."
+          "title": "Elektronik Tabloyu Aç",
+          "description": ".xlsx veya .csv dosyanızı seçin."
         },
         {
-          "title": "Choose Sheet Range",
-          "description": "Pick which sheets or rows to include."
+          "title": "Sayfa Aralığını Seçin",
+          "description": "Hangi sayfaların veya satırların dahil edileceğini seçin."
         },
         {
-          "title": "Export as PDF",
-          "description": "Download your spreadsheet as a clean PDF."
+          "title": "PDF olarak dışa aktar",
+          "description": "E-tablonuzu temiz bir PDF olarak indirin."
         }
-      ]
+      ],
+      "badgeText": "Hızlı Kılavuz"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Excel to PDF for Istanbul Businesses",
-      "content": "Businesses in Istanbul use our tool to share financial reports without exposing raw spreadsheet data."
+      "type": "excel_geo_targeting",
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Protect Financial Spreadsheets",
-      "content": "Balance sheets, payroll data — all processed offline. Zero data sent to any third party."
+      "type": "excel_privacy_security",
+      "title": "Finansal Tabloları Koruyun",
+      "content": "Bilançolar, bordro verileri; hepsi çevrimdışı işlenir. Herhangi bir üçüncü tarafa gönderilen sıfır veri.",
+      "badgeText": "Önce Güvenlik"
     },
     {
-      "type": "combiner_performance",
-      "title": "Spreadsheet-to-PDF in Seconds",
-      "content": "No upload queue, no compression artifacts. Your spreadsheet renders natively in-browser."
+      "type": "excel_performance",
+      "title": "Saniyeler İçinde Elektronik Tablodan PDF'ye",
+      "content": "Yükleme kuyruğu yok, sıkıştırma eserleri yok. E-tablonuz tarayıcıda yerel olarak oluşturulur.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [
     {
-      "q": "Are all Excel formulas preserved?",
-      "a": "Yes, formula results are captured in the PDF snapshot."
+      "q": "Tüm Excel formülleri korunuyor mu?",
+      "a": "Evet, formül sonuçları PDF anlık görüntüsüne kaydedilir."
     },
     {
-      "q": "Can I convert multiple sheets?",
-      "a": "Yes, you can include all sheets or specific ones."
+      "q": "Birden fazla sayfayı dönüştürebilir miyim?",
+      "a": "Evet, tüm sayfaları veya belirli sayfaları ekleyebilirsiniz."
     },
     {
-      "q": "What file types are supported?",
-      "a": ".xlsx, .xls, and .csv are all supported."
+      "q": "Hangi dosya türleri destekleniyor?",
+      "a": ".xlsx, .xls ve .csv'nin tümü desteklenir."
     },
     {
-      "q": "Is this secure for financial data?",
-      "a": "Absolutely. The file never leaves your browser."
+      "q": "Bu finansal veriler için güvenli mi?",
+      "a": "Kesinlikle. Dosya tarayıcınızdan asla ayrılmaz."
     },
     {
-      "q": "Does it support graphs?",
-      "a": "Evet, tamamen ücretsiz."
+      "q": "Grafikleri destekliyor mu?",
+      "a": "Grafikler ve gömülü grafikler PDF'de oluşturulur."
     }
-  ]
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi"
 }

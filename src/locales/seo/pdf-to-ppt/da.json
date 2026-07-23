@@ -1,67 +1,80 @@
 {
-  "title": "PDF to PowerPoint — Recover Editable Slides",
-  "h1": "Convert PDF to PowerPoint Presentation Offline",
-  "description": "Transform PDF documents back into editable .pptx presentations locally. No cloud needed. Perfect for users in Copenhagen.",
+  "title": "PDF til PowerPoint — Gendan redigerbare dias",
+  "h1": "Konverter PDF til PowerPoint-præsentation offline",
+  "description": "Transform PDF-dokumenter tilbage til redigerbare .pptx-præsentationer lokalt. Ingen sky nødvendig. Perfekt til brugere i København.",
+  "buttonText": "Konverter til PPT",
+  "badges": [
+    "Redigerbare dias",
+    "Præsentationsgendannelse",
+    "Hurtig konvertering"
+  ],
+  "stats": [
+    "100 %",
+    "Lokal",
+    "0s",
+    "Ventetid"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF to PowerPoint Offline?",
-      "content": "Recovering slide content from a PDF for editing should not require uploading sensitive decks to a cloud service."
+      "title": "Hvorfor bruge offline?",
+      "content": "Gendannelse af diasindhold fra en PDF til redigering bør ikke kræve upload af følsomme dæk til en skytjeneste."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to PowerPoint",
+      "title": "Sådan bruges",
       "steps": [
         {
           "title": "Upload PDF",
-          "description": "Select the PDF containing your slide content."
+          "description": "Vælg den PDF, der indeholder dit diasindhold."
         },
         {
-          "title": "Map Pages to Slides",
-          "description": "Each PDF page becomes one editable slide."
+          "title": "Kort sider til dias",
+          "description": "Hver PDF-side bliver til ét redigerbart dias."
         },
         {
           "title": "Download .pptx",
-          "description": "Get your fully editable PowerPoint presentation."
+          "description": "Få din fuldt redigerbare PowerPoint-præsentation."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "Slide Recovery in Copenhagen",
-      "content": "Presenters in Copenhagen use our tool to recover and re-edit presentations from old PDF archives."
+      "title": "Slide Recovery i København",
+      "content": "Oplægsholdere i København bruger vores værktøj til at gendanne og genredigere præsentationer fra gamle PDF-arkiver."
     },
     {
       "type": "split_privacy_security",
-      "title": "Your Slides Are Never Exposed",
-      "content": "Confidential slide decks recovered and converted without any server interaction."
+      "title": "Dine dias bliver aldrig eksponeret",
+      "content": "Fortrolige slide decks gendannet og konverteret uden nogen serverinteraktion."
     },
     {
       "type": "split_performance",
-      "title": "Convert Slides at Lightning Speed",
-      "content": "A 60-slide PDF converted to PowerPoint in under 10 seconds with zero upload time."
+      "title": "Konverter dias med lynets hastighed",
+      "content": "En 60-slids PDF konverteret til PowerPoint på under 10 sekunder med ingen uploadtid."
     }
   ],
   "faqs": [
     {
-      "q": "Are slide layouts preserved?",
-      "a": "Content is mapped to slides; some layout adjustments may be needed."
+      "q": "Er diaslayout bevaret?",
+      "a": "Indhold er kortlagt til dias; nogle layoutjusteringer kan være nødvendige."
     },
     {
-      "q": "Can I edit the slides after?",
-      "a": "Yes, the .pptx file is fully editable in PowerPoint or Google Slides."
+      "q": "Kan jeg redigere slides efter?",
+      "a": "Ja, .pptx-filen er fuldt redigerbar i PowerPoint eller Google Slides."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No, convert as many pages as your RAM allows."
+      "q": "Er der en sidegrænse?",
+      "a": "Nej, konverter så mange sider som din RAM tillader."
     },
     {
-      "q": "Does it work with image-heavy PDFs?",
-      "a": "Yes, images are embedded in each slide."
+      "q": "Virker det med billedtunge PDF'er?",
+      "a": "Ja, billeder er indlejret i hvert dias."
     },
     {
-      "q": "Is this free?",
+      "q": "Er dette gratis?",
       "a": "Ja, helt gratis."
     }
-  ]
+  ],
+  "faqTitle": "Ofte Stillede Spørgsmål"
 }

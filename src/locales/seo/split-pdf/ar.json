@@ -1,67 +1,85 @@
 {
-  "title": "Split PDF - Extract Pages Securely",
-  "h1": "Split and Extract PDF Pages in Seconds",
-  "description": "Extract specific pages or split a large PDF into multiple files locally in your browser. Perfect for legal professionals in Riyadh.",
+  "title": "تقسيم ملف PDF - استخراج الصفحات بشكل آمن",
+  "h1": "تقسيم واستخراج صفحات PDF في ثوان",
+  "description": "قم باستخراج صفحات محددة أو تقسيم ملف PDF كبير إلى ملفات متعددة محليًا في متصفحك. سريع وآمن تماما.",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Split PDFs Locally?",
-      "content": "When dealing with massive legal or corporate documents, extracting a single page shouldn't require uploading a 1GB file. Do it instantly right on your machine."
+      "title": "لماذا تقسيم ملفات PDF محليًا؟",
+      "content": "عند التعامل مع مستندات قانونية أو مستندات خاصة بالشركة ضخمة، لا ينبغي أن يتطلب استخراج صفحة واحدة تحميل ملف بحجم 1 جيجابايت. افعل ذلك على الفور على جهازك."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Extract Pages",
+      "title": "كيفية استخراج الصفحات",
       "steps": [
         {
-          "title": "Open Document",
-          "description": "Load the multi-page PDF you want to split."
+          "title": "فتح المستند",
+          "description": "قم بتحميل ملف PDF متعدد الصفحات الذي تريد تقسيمه."
         },
         {
-          "title": "Select Ranges",
-          "description": "Pick specific page numbers or visually select pages to extract."
+          "title": "حدد النطاقات",
+          "description": "اختر أرقام صفحات محددة أو حدد الصفحات بصريًا لاستخراجها."
         },
         {
-          "title": "Export Zip",
-          "description": "Download your newly split files organized in a ZIP."
+          "title": "تصدير الرمز البريدي",
+          "description": "قم بتنزيل ملفاتك المقسمة حديثًا والمرتبة في ملف ZIP."
         }
-      ]
+      ],
+      "badgeText": "الدليل السريع"
     },
     {
       "type": "split_geo_targeting",
-      "title": "The Best Splitter in Riyadh, SA-01",
-      "content": "Whether you are studying in Riyadh or working on a tight deadline, extracting pages is now instantaneous."
+      "title": "معالجة محلية آمنة بنسبة 100%",
+      "content": "يتم تنفيذ جميع العمليات مباشرة على جهازك المحلي. نحن نستخدم تقنية WebAssembly المتقدمة لمعالجة مستنداتك دون تحميلها على خوادم خارجية، مما يضمن الخصوصية الكاملة.",
+      "badgeText": "المعالجة المحلية"
     },
     {
       "type": "split_privacy_security",
-      "title": "Total Page Privacy",
-      "content": "Splitting confidential employee records? Rest easy knowing our code executes purely in your local environment."
+      "title": "إجمالي خصوصية الصفحة",
+      "content": "تقسيم سجلات الموظفين السرية؟ كن مطمئنًا عندما تعلم أن الكود الخاص بنا يتم تنفيذه في بيئتك المحلية فقط.",
+      "badgeText": "الأمن أولا"
     },
     {
       "type": "split_performance",
-      "title": "Zero-Upload Extraction",
-      "content": "Grabbing page 14 from a 2000-page PDF takes milliseconds, skipping the excruciating upload step entirely."
+      "title": "استخراج التحميل الصفري",
+      "content": "يستغرق الحصول على الصفحة 14 من ملف PDF مكون من 2000 صفحة ميلي ثانية، مما يؤدي إلى تخطي خطوة التحميل المؤلمة تمامًا.",
+      "badgeText": "بسرعة البرق"
     }
   ],
   "faqs": [
     {
-      "q": "How do I extract just one page?",
-      "a": "Simply click on the page thumbnail you want and hit Export."
+      "q": "كيف يمكنني استخراج صفحة واحدة فقط؟",
+      "a": "ما عليك سوى النقر على الصورة المصغرة للصفحة التي تريدها والضغط على \"تصدير\"."
     },
     {
-      "q": "Can I split the PDF in half?",
-      "a": "Yes, you can specify custom page ranges like 1-10 and 11-20."
+      "q": "هل يمكنني تقسيم ملف PDF إلى نصفين؟",
+      "a": "نعم، يمكنك تحديد نطاقات صفحات مخصصة مثل 1-10 و11-20."
     },
     {
-      "q": "Will the extracted pages lose quality?",
-      "a": "No, the splitting process uses binary extraction, preserving 100% of the original quality."
+      "q": "هل ستفقد الصفحات المستخرجة جودتها؟",
+      "a": "لا، تستخدم عملية التقسيم الاستخراج الثنائي، مما يحافظ على الجودة الأصلية بنسبة 100%."
     },
     {
-      "q": "Is my document uploaded when splitting?",
-      "a": "Never. The entire 2000-page document stays strictly in your browser."
+      "q": "هل تم تحميل المستند الخاص بي عند التقسيم؟",
+      "a": "أبداً. يبقى المستند بأكمله المكون من 2000 صفحة في متصفحك بشكل صارم."
     },
     {
-      "q": "Is there a limit to how many pages I can split?",
-      "a": "No limits! Split as many pages as your computer can handle."
+      "q": "هل هناك حد لعدد الصفحات التي يمكنني تقسيمها؟",
+      "a": "لا حدود! قم بتقسيم أكبر عدد ممكن من الصفحات التي يستطيع جهاز الكمبيوتر الخاص بك التعامل معها."
     }
-  ]
+  ],
+  "badges": [
+    "تقسيم فوري",
+    "النطاق الدقيق",
+    "لا حدود"
+  ],
+  "stats": [
+    "Ultra Fast",
+    "No Upload",
+    "Batch Zip",
+    "Secure"
+  ],
+  "buttonText": "Split PDF",
+  "faqTitle": "الأسئلة المتداولة",
+  "supportCenter": "مركز الدعم"
 }

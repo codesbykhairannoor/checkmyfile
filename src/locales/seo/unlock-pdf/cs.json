@@ -1,67 +1,85 @@
 {
-  "title": "Unlock PDF — Remove Password Offline",
-  "h1": "Remove PDF Password Protection Instantly in Your Browser",
-  "description": "Unlock password-protected PDFs locally if you know the password. 100% private. No upload. Perfect for users in Prague.",
+  "title": "Odemknout PDF — Odebrat heslo offline",
+  "h1": "Okamžitě odstraňte ochranu heslem PDF z vašeho prohlížeče",
+  "description": "Pokud znáte heslo, odemkněte soubory PDF chráněné heslem lokálně. 100% soukromé. Žádné nahrávání. 100% bezpečné místní zpracování.",
+  "buttonText": "Unlock PDF",
+  "badges": [
+    "Odebrat heslo",
+    "Okamžité odemknutí",
+    "Žádné protokoly serveru"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "unlock_hero_features",
-      "title": "Why Unlock PDFs Locally?",
-      "content": "You have the password to your own file. Unlocking it should not require uploading sensitive documents to an external service."
+      "title": "Proč odemykat soubory PDF lokálně?",
+      "content": "Máte heslo ke svému vlastnímu souboru. Jeho odemknutí by nemělo vyžadovat nahrávání citlivých dokumentů do externí služby."
     },
     {
       "type": "unlock_how_to_steps",
-      "title": "How to Unlock a Protected PDF",
+      "title": "Jak odemknout chráněné PDF",
       "steps": [
         {
-          "title": "Open Protected PDF",
-          "description": "Select the password-protected PDF."
+          "title": "Otevřít chráněné PDF",
+          "description": "Vyberte soubor PDF chráněný heslem."
         },
         {
-          "title": "Enter Your Password",
-          "description": "Provide the existing password — decryption stays in your browser."
+          "title": "Zadejte své heslo",
+          "description": "Zadejte stávající heslo – dešifrování zůstane ve vašem prohlížeči."
         },
         {
-          "title": "Download Unlocked PDF",
-          "description": "Get your unlocked, fully accessible PDF instantly."
+          "title": "Stáhnout odemčené PDF",
+          "description": "Získejte okamžitě svůj odemčený, plně přístupný soubor PDF."
         }
-      ]
+      ],
+      "badgeText": "Rychlý průvodce"
     },
     {
       "type": "unlock_geo_targeting",
-      "title": "Instant PDF Unlocking for Prague Users",
-      "content": "Users in Prague access their own password-protected files without sending decryption keys to any server."
+      "title": "100% bezpečné místní zpracování",
+      "content": "Všechny operace se provádějí přímo na vašem místním zařízení. Ke zpracování vašich dokumentů používáme pokročilou technologii WebAssembly, aniž bychom je kdy nahrávali na externí servery, což zajišťuje naprosté soukromí.",
+      "badgeText": "Místní zpracování"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Your Password Never Leaves the Browser",
-      "content": "The decryption key and your document are processed entirely in browser memory — never transmitted to any server or service."
+      "title": "Vaše heslo nikdy neopustí prohlížeč",
+      "content": "Dešifrovací klíč a váš dokument jsou zpracovány výhradně v paměti prohlížeče – nikdy nejsou přenášeny na žádný server nebo službu.",
+      "badgeText": "Bezpečnost především"
     },
     {
       "type": "unlock_performance",
-      "title": "Instant Browser-Local Decryption",
-      "content": "AES decryption in your browser takes under a second — far faster than any cloud service with no upload wait."
+      "title": "Okamžité místní dešifrování v prohlížeči",
+      "content": "Dešifrování AES ve vašem prohlížeči trvá méně než sekundu – mnohem rychleji než jakákoli cloudová služba bez čekání na nahrávání.",
+      "badgeText": "Bleskově rychlý"
     }
   ],
   "faqs": [
     {
-      "q": "Does it work without the password?",
-      "a": "No, you must know the existing password to unlock."
+      "q": "Jde to i bez hesla?",
+      "a": "Ne, k odemknutí musíte znát stávající heslo."
     },
     {
-      "q": "Can I unlock permissions-restricted PDFs?",
-      "a": "Yes, permission restrictions are removed after password verification."
+      "q": "Mohu odemknout soubory PDF s omezenými oprávněními?",
+      "a": "Ano, omezení oprávnění jsou odstraněna po ověření hesla."
     },
     {
-      "q": "Is the decryption process secure?",
-      "a": "All decryption happens in your browser memory; nothing is transmitted."
+      "q": "Je proces dešifrování bezpečný?",
+      "a": "Veškeré dešifrování probíhá v paměti vašeho prohlížeče; nic se nepřenáší."
     },
     {
-      "q": "What if the password is wrong?",
-      "a": "You will see an error and can try again with the correct password."
+      "q": "Co když je heslo špatné?",
+      "a": "Zobrazí se chyba a můžete to zkusit znovu se správným heslem."
     },
     {
-      "q": "Is this free?",
+      "q": "Je to zdarma?",
       "a": "Ano, zcela zdarma."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Reverse PDF — Flip Page Order Offline",
-  "h1": "Reverse the Page Order of Any PDF Locally",
-  "description": "Flip the page sequence of PDF documents entirely in your browser. No upload, instant result. Great for users in Amsterdam.",
+  "title": "PDF omkeren — Paginavolgorde offline omdraaien",
+  "h1": "Keer de paginavolgorde van elke PDF lokaal om",
+  "description": "Draai de paginavolgorde van PDF-documenten volledig om in uw browser. Geen upload, direct resultaat. 100% veilige lokale verwerking.",
+  "buttonText": "Reverse Order",
+  "badges": [
+    "Alle pagina's omkeren",
+    "Scans repareren",
+    "Eén klik"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Reverse PDF Page Order Offline?",
-      "content": "When a scanner outputs pages in reverse, you need a quick local fix — not a cloud upload of your entire document."
+      "type": "reverse_hero_features",
+      "title": "Waarom de PDF-paginavolgorde offline omkeren?",
+      "content": "Wanneer een scanner pagina's in omgekeerde volgorde afdrukt, heeft u een snelle lokale oplossing nodig, geen upload naar de cloud van uw hele document."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Reverse PDF Page Order",
+      "type": "reverse_how_to_steps",
+      "title": "PDF-paginavolgorde omkeren",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF with incorrect page order."
+          "title": "PDF openen",
+          "description": "Selecteer de PDF met een onjuiste paginavolgorde."
         },
         {
-          "title": "Confirm Reversal",
-          "description": "Preview the new first and last page."
+          "title": "Bevestig terugboeking",
+          "description": "Bekijk een voorbeeld van de nieuwe eerste en laatste pagina."
         },
         {
-          "title": "Download Reversed PDF",
-          "description": "Get the reordered PDF instantly."
+          "title": "Omgekeerde PDF downloaden",
+          "description": "Ontvang de opnieuw gerangschikte PDF onmiddellijk."
         }
-      ]
+      ],
+      "badgeText": "Beknopte handleiding"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Page Order Fix for Amsterdam Users",
-      "content": "Office users in Amsterdam fix scanner reversal issues instantly without cloud uploads."
+      "type": "reverse_geo_targeting",
+      "title": "100% veilige lokale verwerking",
+      "content": "Alle bewerkingen worden rechtstreeks op uw lokale apparaat uitgevoerd. We gebruiken geavanceerde WebAssembly-technologie om uw documenten te verwerken zonder ze ooit naar externe servers te uploaden, waardoor volledige privacy wordt gegarandeerd.",
+      "badgeText": "Lokale verwerking"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Documents Never Leave Your Device",
-      "content": "Reversed contracts, reports, and records are processed entirely in browser memory."
+      "type": "reverse_privacy_security",
+      "title": "Documenten verlaten uw apparaat nooit",
+      "content": "Omgekeerde contracten, rapporten en records worden volledig in het browsergeheugen verwerkt.",
+      "badgeText": "Beveiliging eerst"
     },
     {
-      "type": "transform_performance",
-      "title": "Reverse Any PDF in Seconds",
-      "content": "Reversing a 1000-page document takes milliseconds. All in your browser."
+      "type": "reverse_performance",
+      "title": "Keer elke PDF binnen enkele seconden om",
+      "content": "Het omkeren van een document van 1000 pagina's duurt milliseconden. Alles in uw browser.",
+      "badgeText": "Bliksemsnel"
     }
   ],
   "faqs": [
     {
-      "q": "Does this reverse all pages?",
-      "a": "Yes, the full page order is flipped."
+      "q": "Draait dit alle pagina's om?",
+      "a": "Ja, de volledige paginavolgorde is omgedraaid."
     },
     {
-      "q": "Can I select a range to reverse?",
-      "a": "Yes, specify start and end pages to reverse selectively."
+      "q": "Kan ik een bereik selecteren dat ik wil omkeren?",
+      "a": "Ja, geef de begin- en eindpagina's op om selectief om te keren."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "No, reversal is a structural operation with no quality loss."
+      "q": "Wordt de kwaliteit aangetast?",
+      "a": "Nee, terugdraaien is een structurele operatie zonder kwaliteitsverlies."
     },
     {
-      "q": "Can I undo?",
-      "a": "Apply reversal again to undo."
+      "q": "Kan ik ongedaan maken?",
+      "a": "Pas de omkering opnieuw toe om het ongedaan te maken."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, volledig gratis."
+      "q": "Is dit gratis?",
+      "a": "Ja, altijd gratis."
     }
-  ]
+  ],
+  "faqTitle": "Veelgestelde vragen",
+  "supportCenter": "Ondersteuningscentrum"
 }

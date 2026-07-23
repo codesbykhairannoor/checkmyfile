@@ -1,67 +1,85 @@
 {
-  "title": "Add Page Numbers to PDF — Offline Number Stamp",
-  "h1": "Insert Page Numbers into PDF Documents Locally",
-  "description": "Stamp page numbers at the header or footer of your PDF entirely in your browser. No upload. Ideal for users in Prague.",
+  "title": "Přidat čísla stránek do PDF — Offline číselné razítko",
+  "h1": "Vložit čísla stránek do dokumentů PDF lokálně",
+  "description": "Označte čísla stránek v záhlaví nebo zápatí vašeho PDF zcela v prohlížeči. Rychlé a zcela bezpečné.",
+  "buttonText": "Add Page Numbers",
+  "badges": [
+    "Vlastní pozice",
+    "Záhlaví a zápatí",
+    "Batesovo číslování"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Add Page Numbers Offline?",
-      "content": "Page numbers are a formatting step, not a reason to upload confidential documents to a cloud service."
+      "type": "pagenum_hero_features",
+      "title": "Proč přidávat čísla stránek offline?",
+      "content": "Čísla stránek jsou krokem formátování, nikoli důvodem k nahrávání důvěrných dokumentů do cloudové služby."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Add Page Numbers",
+      "type": "pagenum_how_to_steps",
+      "title": "Jak přidat čísla stránek",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to number."
+          "title": "Otevřít PDF",
+          "description": "Vyberte PDF, které chcete očíslovat."
         },
         {
-          "title": "Configure Style",
-          "description": "Choose position, format (1/12, Page 1, i, ii…), and font."
+          "title": "Konfigurovat styl",
+          "description": "Vyberte polohu, formát (1/12, Strana 1, i, ii…) a písmo."
         },
         {
-          "title": "Apply & Download",
-          "description": "Download your paginated PDF instantly."
+          "title": "Použít a stáhnout",
+          "description": "Okamžitě si stáhněte stránkované PDF."
         }
-      ]
+      ],
+      "badgeText": "Rychlý průvodce"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Page Numbering for Prague Legal Docs",
-      "content": "Legal professionals in Prague number briefs and reports locally without cloud service dependency."
+      "type": "pagenum_geo_targeting",
+      "title": "100% bezpečné místní zpracování",
+      "content": "Všechny operace se provádějí přímo na vašem místním zařízení. Ke zpracování vašich dokumentů používáme pokročilou technologii WebAssembly, aniž bychom je kdy nahrávali na externí servery, což zajišťuje naprosté soukromí.",
+      "badgeText": "Místní zpracování"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Internal Documents Stay Numbered & Private",
-      "content": "Add page numbers to contracts and confidential reports without any server involvement."
+      "type": "pagenum_privacy_security",
+      "title": "Interní dokumenty zůstávají číslované a soukromé",
+      "content": "Přidejte čísla stránek do smluv a důvěrných zpráv bez jakéhokoli zapojení serveru.",
+      "badgeText": "Bezpečnost především"
     },
     {
-      "type": "organizer_performance",
-      "title": "Number a 1000-Page PDF Instantly",
-      "content": "Stamping page numbers locally takes milliseconds for any size document."
+      "type": "pagenum_performance",
+      "title": "Číslo 1000 stránek PDF okamžitě",
+      "content": "Lokální razítkování čísel stránek trvá u dokumentu jakékoli velikosti milisekundy.",
+      "badgeText": "Bleskově rychlý"
     }
   ],
   "faqs": [
     {
-      "q": "What number formats are available?",
-      "a": "Arabic (1, 2, 3), Roman (i, ii, iii), and letter (a, b, c) formats."
+      "q": "Jaké formáty čísel jsou k dispozici?",
+      "a": "Arabské (1, 2, 3), římské (i, ii, iii) a písmena (a, b, c) formáty."
     },
     {
-      "q": "Can I start from a custom number?",
-      "a": "Yes, set any starting page number."
+      "q": "Mohu začít od vlastního čísla?",
+      "a": "Ano, nastavit libovolné číslo počáteční stránky."
     },
     {
-      "q": "Can I skip numbering the first page?",
-      "a": "Yes, set the page offset to skip cover pages."
+      "q": "Mohu přeskočit číslování první stránky?",
+      "a": "Ano, nastavte odsazení stránky tak, aby přeskakovalo úvodní stránky."
     },
     {
-      "q": "Where can I position numbers?",
-      "a": "Header-left, header-center, header-right, and same for footer."
+      "q": "Kde mohu umístit čísla?",
+      "a": "Záhlaví vlevo, záhlaví uprostřed, záhlaví vpravo a totéž pro zápatí."
     },
     {
-      "q": "Is this free?",
-      "a": "Ano, zcela zdarma."
+      "q": "Je to zdarma?",
+      "a": "Ano, vždy zdarma."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
 }

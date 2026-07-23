@@ -1,67 +1,80 @@
 {
-  "title": "PDF to PowerPoint — Recover Editable Slides",
-  "h1": "Convert PDF to PowerPoint Presentation Offline",
-  "description": "Transform PDF documents back into editable .pptx presentations locally. No cloud needed. Perfect for users in Riyadh.",
+  "title": "PDF إلى PowerPoint - استعادة الشرائح القابلة للتحرير",
+  "h1": "تحويل PDF إلى عرض PowerPoint التقديمي دون اتصال",
+  "description": "قم بتحويل مستندات PDF مرة أخرى إلى عروض تقديمية بتنسيق .pptx قابلة للتحرير محليًا. لا حاجة للسحابة. مثالي للمستخدمين في الرياض.",
+  "buttonText": "تحويل إلى باور بوينت",
+  "badges": [
+    "شرائح قابلة للتحرير",
+    "استعادة العرض التقديمي",
+    "تحويل سريع"
+  ],
+  "stats": [
+    "100%",
+    "محلي",
+    "0 ثانية",
+    "وقت الانتظار"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF to PowerPoint Offline?",
-      "content": "Recovering slide content from a PDF for editing should not require uploading sensitive decks to a cloud service."
+      "title": "لماذا الاستخدام دون اتصال؟",
+      "content": "لا ينبغي أن يتطلب استرداد محتوى الشريحة من ملف PDF لتحريره تحميل مجموعات حساسة إلى خدمة سحابية."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to PowerPoint",
+      "title": "كيفية الاستخدام",
       "steps": [
         {
-          "title": "Upload PDF",
-          "description": "Select the PDF containing your slide content."
+          "title": "تحميل PDF",
+          "description": "حدد ملف PDF الذي يحتوي على محتوى الشريحة الخاصة بك."
         },
         {
-          "title": "Map Pages to Slides",
-          "description": "Each PDF page becomes one editable slide."
+          "title": "ربط الصفحات بالشرائح",
+          "description": "تصبح كل صفحة PDF شريحة واحدة قابلة للتحرير."
         },
         {
-          "title": "Download .pptx",
-          "description": "Get your fully editable PowerPoint presentation."
+          "title": "تحميل .pptx",
+          "description": "احصل على عرض PowerPoint التقديمي القابل للتحرير بالكامل."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "Slide Recovery in Riyadh",
-      "content": "Presenters in Riyadh use our tool to recover and re-edit presentations from old PDF archives."
+      "title": "استعادة الشرائح في الرياض",
+      "content": "يستخدم مقدمو العروض في الرياض أداتنا لاستعادة العروض التقديمية وإعادة تحريرها من أرشيفات PDF القديمة."
     },
     {
       "type": "split_privacy_security",
-      "title": "Your Slides Are Never Exposed",
-      "content": "Confidential slide decks recovered and converted without any server interaction."
+      "title": "الشرائح الخاصة بك لا يتم كشفها أبدًا",
+      "content": "تم استرداد مجموعات الشرائح السرية وتحويلها دون أي تفاعل مع الخادم."
     },
     {
       "type": "split_performance",
-      "title": "Convert Slides at Lightning Speed",
-      "content": "A 60-slide PDF converted to PowerPoint in under 10 seconds with zero upload time."
+      "title": "تحويل الشرائح بسرعة البرق",
+      "content": "تم تحويل ملف PDF مكون من 60 شريحة إلى PowerPoint في أقل من 10 ثوانٍ دون أي وقت تحميل."
     }
   ],
   "faqs": [
     {
-      "q": "Are slide layouts preserved?",
-      "a": "Content is mapped to slides; some layout adjustments may be needed."
+      "q": "هل يتم الحفاظ على تخطيطات الشرائح؟",
+      "a": "يتم تعيين المحتوى إلى الشرائح؛ قد تكون هناك حاجة لبعض تعديلات التخطيط."
     },
     {
-      "q": "Can I edit the slides after?",
-      "a": "Yes, the .pptx file is fully editable in PowerPoint or Google Slides."
+      "q": "هل يمكنني تعديل الشرائح بعد ذلك؟",
+      "a": "نعم، ملف .pptx قابل للتحرير بالكامل في PowerPoint أو Google Slides."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No, convert as many pages as your RAM allows."
+      "q": "هل هناك حد للصفحة؟",
+      "a": "لا، قم بتحويل أكبر عدد ممكن من الصفحات التي تسمح بها ذاكرة الوصول العشوائي الخاصة بك."
     },
     {
-      "q": "Does it work with image-heavy PDFs?",
-      "a": "Yes, images are embedded in each slide."
+      "q": "هل يعمل مع ملفات PDF ذات الصور الثقيلة؟",
+      "a": "نعم، يتم تضمين الصور في كل شريحة."
     },
     {
-      "q": "Is this free?",
-      "a": "نعم، مجاناً تماماً."
+      "q": "هل هذا مجاني؟",
+      "a": "نعم، مجاني بالكامل."
     }
-  ]
+  ],
+  "faqTitle": "أسئلة مكررة"
 }

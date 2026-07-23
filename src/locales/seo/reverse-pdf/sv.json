@@ -1,67 +1,85 @@
 {
-  "title": "Reverse PDF — Flip Page Order Offline",
-  "h1": "Reverse the Page Order of Any PDF Locally",
-  "description": "Flip the page sequence of PDF documents entirely in your browser. No upload, instant result. Great for users in Stockholm.",
+  "title": "Omvänd PDF — Flip Page Order Offline",
+  "h1": "Vänd sidordningen för alla PDF-filer lokalt",
+  "description": "Vänd sidsekvensen av PDF-dokument helt i din webbläsare. Ingen uppladdning, omedelbart resultat. 100 % säker lokal bearbetning.",
+  "buttonText": "Reverse Order",
+  "badges": [
+    "Omvänd alla sidor",
+    "Fixa skanningar",
+    "Ett klick"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Reverse PDF Page Order Offline?",
-      "content": "When a scanner outputs pages in reverse, you need a quick local fix — not a cloud upload of your entire document."
+      "type": "reverse_hero_features",
+      "title": "Varför omvänd PDF-sidordning offline?",
+      "content": "När en skanner matar ut sidor omvänt behöver du en snabb lokal fix – inte en molnuppladdning av hela dokumentet."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Reverse PDF Page Order",
+      "type": "reverse_how_to_steps",
+      "title": "Hur man vänder PDF-sidordning",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF with incorrect page order."
+          "title": "Öppna PDF",
+          "description": "Välj PDF-filen med felaktig sidordning."
         },
         {
-          "title": "Confirm Reversal",
-          "description": "Preview the new first and last page."
+          "title": "Bekräfta återföring",
+          "description": "Förhandsgranska den nya första och sista sidan."
         },
         {
-          "title": "Download Reversed PDF",
-          "description": "Get the reordered PDF instantly."
+          "title": "Ladda ner omvänd PDF",
+          "description": "Få den omordnade PDF-filen direkt."
         }
-      ]
+      ],
+      "badgeText": "Snabbguide"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Page Order Fix for Stockholm Users",
-      "content": "Office users in Stockholm fix scanner reversal issues instantly without cloud uploads."
+      "type": "reverse_geo_targeting",
+      "title": "100 % säker lokal bearbetning",
+      "content": "Alla operationer utförs direkt på din lokala enhet. Vi använder avancerad WebAssembly-teknik för att behandla dina dokument utan att någonsin ladda upp dem till externa servrar, vilket säkerställer fullständig integritet.",
+      "badgeText": "Lokal bearbetning"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Documents Never Leave Your Device",
-      "content": "Reversed contracts, reports, and records are processed entirely in browser memory."
+      "type": "reverse_privacy_security",
+      "title": "Dokument lämnar aldrig din enhet",
+      "content": "Omvända kontrakt, rapporter och poster bearbetas helt i webbläsarens minne.",
+      "badgeText": "Säkerhet först"
     },
     {
-      "type": "transform_performance",
-      "title": "Reverse Any PDF in Seconds",
-      "content": "Reversing a 1000-page document takes milliseconds. All in your browser."
+      "type": "reverse_performance",
+      "title": "Vänd alla PDF-filer på några sekunder",
+      "content": "Att vända ett dokument på 1 000 sidor tar millisekunder. Allt i din webbläsare.",
+      "badgeText": "Blixtsnabb"
     }
   ],
   "faqs": [
     {
-      "q": "Does this reverse all pages?",
-      "a": "Yes, the full page order is flipped."
+      "q": "Omvänder detta alla sidor?",
+      "a": "Ja, hela sidordningen vänds."
     },
     {
-      "q": "Can I select a range to reverse?",
-      "a": "Yes, specify start and end pages to reverse selectively."
+      "q": "Kan jag välja ett intervall att vända?",
+      "a": "Ja, ange start- och slutsidor som ska vändas selektivt."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "No, reversal is a structural operation with no quality loss."
+      "q": "Påverkas kvaliteten?",
+      "a": "Nej, återföring är en strukturell operation utan kvalitetsförlust."
     },
     {
-      "q": "Can I undo?",
-      "a": "Apply reversal again to undo."
+      "q": "Kan jag ångra?",
+      "a": "Använd återföring igen för att ångra."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, helt gratis."
+      "q": "Är detta gratis?",
+      "a": "Ja, alltid gratis."
     }
-  ]
+  ],
+  "faqTitle": "Vanliga frågor",
+  "supportCenter": "Supportcenter"
 }

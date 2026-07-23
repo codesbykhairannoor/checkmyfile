@@ -1,67 +1,80 @@
 {
-  "title": "PDF to PowerPoint — Recover Editable Slides",
-  "h1": "Convert PDF to PowerPoint Presentation Offline",
-  "description": "Transform PDF documents back into editable .pptx presentations locally. No cloud needed. Perfect for users in Hanoi.",
+  "title": "PDF sang PowerPoint - Khôi phục các slide có thể chỉnh sửa",
+  "h1": "Chuyển đổi bản trình bày PDF sang PowerPoint ngoại tuyến",
+  "description": "Chuyển đổi tài liệu PDF trở lại thành bản trình bày .pptx có thể chỉnh sửa cục bộ. Không cần đám mây. Hoàn hảo cho người dùng ở Hà Nội.",
+  "buttonText": "Chuyển đổi sang PPT",
+  "badges": [
+    "Trang trình bày có thể chỉnh sửa",
+    "Phục hồi bản trình bày",
+    "Chuyển đổi nhanh"
+  ],
+  "stats": [
+    "100%",
+    "Địa phương",
+    "0 giây",
+    "Thời gian chờ"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF to PowerPoint Offline?",
-      "content": "Recovering slide content from a PDF for editing should not require uploading sensitive decks to a cloud service."
+      "title": "Tại sao sử dụng ngoại tuyến?",
+      "content": "Việc khôi phục nội dung trang trình bày từ tệp PDF để chỉnh sửa không yêu cầu tải các tài liệu nhạy cảm lên dịch vụ đám mây."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to PowerPoint",
+      "title": "Cách sử dụng",
       "steps": [
         {
-          "title": "Upload PDF",
-          "description": "Select the PDF containing your slide content."
+          "title": "Tải lên bản PDF",
+          "description": "Chọn tệp PDF chứa nội dung trang chiếu của bạn."
         },
         {
-          "title": "Map Pages to Slides",
-          "description": "Each PDF page becomes one editable slide."
+          "title": "Ánh xạ các trang tới các slide",
+          "description": "Mỗi trang PDF trở thành một slide có thể chỉnh sửa."
         },
         {
-          "title": "Download .pptx",
-          "description": "Get your fully editable PowerPoint presentation."
+          "title": "Tải xuống .pptx",
+          "description": "Nhận bản trình bày PowerPoint hoàn toàn có thể chỉnh sửa của bạn."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "Slide Recovery in Hanoi",
-      "content": "Presenters in Hanoi use our tool to recover and re-edit presentations from old PDF archives."
+      "title": "Phục hồi slide tại Hà Nội",
+      "content": "Người thuyết trình tại Hà Nội sử dụng công cụ của chúng tôi để khôi phục và chỉnh sửa lại bài thuyết trình từ kho lưu trữ PDF cũ."
     },
     {
       "type": "split_privacy_security",
-      "title": "Your Slides Are Never Exposed",
-      "content": "Confidential slide decks recovered and converted without any server interaction."
+      "title": "Các slide của bạn không bao giờ được hiển thị",
+      "content": "Các bản trình chiếu bí mật được khôi phục và chuyển đổi mà không cần bất kỳ tương tác nào với máy chủ."
     },
     {
       "type": "split_performance",
-      "title": "Convert Slides at Lightning Speed",
-      "content": "A 60-slide PDF converted to PowerPoint in under 10 seconds with zero upload time."
+      "title": "Chuyển đổi slide với tốc độ cực nhanh",
+      "content": "Một bản PDF 60 trang được chuyển đổi sang PowerPoint trong vòng chưa đầy 10 giây mà không mất thời gian tải lên."
     }
   ],
   "faqs": [
     {
-      "q": "Are slide layouts preserved?",
-      "a": "Content is mapped to slides; some layout adjustments may be needed."
+      "q": "Bố cục trang chiếu có được giữ nguyên không?",
+      "a": "Nội dung được ánh xạ tới các slide; một số điều chỉnh bố cục có thể cần thiết."
     },
     {
-      "q": "Can I edit the slides after?",
-      "a": "Yes, the .pptx file is fully editable in PowerPoint or Google Slides."
+      "q": "Tôi có thể chỉnh sửa các slide sau không?",
+      "a": "Có, tệp .pptx hoàn toàn có thể chỉnh sửa được trong PowerPoint hoặc Google Slides."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No, convert as many pages as your RAM allows."
+      "q": "Có giới hạn trang không?",
+      "a": "Không, chuyển đổi bao nhiêu trang tùy theo RAM của bạn cho phép."
     },
     {
-      "q": "Does it work with image-heavy PDFs?",
-      "a": "Yes, images are embedded in each slide."
+      "q": "Nó có hoạt động với các tệp PDF nặng hình ảnh không?",
+      "a": "Có, hình ảnh được nhúng vào mỗi slide."
     },
     {
-      "q": "Is this free?",
+      "q": "Cái này có miễn phí không?",
       "a": "Có, hoàn toàn miễn phí."
     }
-  ]
+  ],
+  "faqTitle": "Câu hỏi thường gặp"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Unlock PDF — Remove Password Offline",
-  "h1": "Remove PDF Password Protection Instantly in Your Browser",
-  "description": "Unlock password-protected PDFs locally if you know the password. 100% private. No upload. Perfect for users in New Delhi.",
+  "title": "पीडीएफ अनलॉक करें - पासवर्ड ऑफ़लाइन हटाएं",
+  "h1": "अपने ब्राउज़र में तुरंत पीडीएफ पासवर्ड सुरक्षा हटाएं",
+  "description": "यदि आप पासवर्ड जानते हैं तो पासवर्ड से सुरक्षित पीडीएफ को स्थानीय रूप से अनलॉक करें। 100% निजी. कोई अपलोड नहीं. 100% सुरक्षित स्थानीय प्रसंस्करण।",
+  "buttonText": "Unlock PDF",
+  "badges": [
+    "पासवर्ड हटाएँ",
+    "तत्काल अनलॉक",
+    "कोई सर्वर लॉग नहीं"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "unlock_hero_features",
-      "title": "Why Unlock PDFs Locally?",
-      "content": "You have the password to your own file. Unlocking it should not require uploading sensitive documents to an external service."
+      "title": "पीडीएफ़ को स्थानीय रूप से अनलॉक क्यों करें?",
+      "content": "आपके पास अपनी फ़ाइल का पासवर्ड है. इसे अनलॉक करने के लिए संवेदनशील दस्तावेज़ों को किसी बाहरी सेवा पर अपलोड करने की आवश्यकता नहीं होनी चाहिए।"
     },
     {
       "type": "unlock_how_to_steps",
-      "title": "How to Unlock a Protected PDF",
+      "title": "संरक्षित पीडीएफ को कैसे अनलॉक करें",
       "steps": [
         {
-          "title": "Open Protected PDF",
-          "description": "Select the password-protected PDF."
+          "title": "संरक्षित पीडीएफ खोलें",
+          "description": "पासवर्ड से सुरक्षित पीडीएफ का चयन करें."
         },
         {
-          "title": "Enter Your Password",
-          "description": "Provide the existing password — decryption stays in your browser."
+          "title": "अपना पासवर्ड दर्ज करें",
+          "description": "मौजूदा पासवर्ड प्रदान करें - डिक्रिप्शन आपके ब्राउज़र में रहता है।"
         },
         {
-          "title": "Download Unlocked PDF",
-          "description": "Get your unlocked, fully accessible PDF instantly."
+          "title": "अनलॉक पीडीएफ डाउनलोड करें",
+          "description": "अपना अनलॉक, पूरी तरह से पहुंच योग्य पीडीएफ तुरंत प्राप्त करें।"
         }
-      ]
+      ],
+      "badgeText": "त्वरित मार्गदर्शिका"
     },
     {
       "type": "unlock_geo_targeting",
-      "title": "Instant PDF Unlocking for New Delhi Users",
-      "content": "Users in New Delhi access their own password-protected files without sending decryption keys to any server."
+      "title": "100% सुरक्षित स्थानीय प्रसंस्करण",
+      "content": "सभी ऑपरेशन सीधे आपके स्थानीय डिवाइस पर किए जाते हैं। हम पूर्ण गोपनीयता सुनिश्चित करते हुए, आपके दस्तावेज़ों को बाहरी सर्वर पर अपलोड किए बिना संसाधित करने के लिए उन्नत WebAssembly तकनीक का उपयोग करते हैं।",
+      "badgeText": "स्थानीय प्रसंस्करण"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Your Password Never Leaves the Browser",
-      "content": "The decryption key and your document are processed entirely in browser memory — never transmitted to any server or service."
+      "title": "आपका पासवर्ड ब्राउज़र को कभी नहीं छोड़ता",
+      "content": "डिक्रिप्शन कुंजी और आपका दस्तावेज़ पूरी तरह से ब्राउज़र मेमोरी में संसाधित होते हैं - कभी भी किसी सर्वर या सेवा पर प्रसारित नहीं होते हैं।",
+      "badgeText": "सुरक्षा पहले"
     },
     {
       "type": "unlock_performance",
-      "title": "Instant Browser-Local Decryption",
-      "content": "AES decryption in your browser takes under a second — far faster than any cloud service with no upload wait."
+      "title": "त्वरित ब्राउज़र-स्थानीय डिक्रिप्शन",
+      "content": "आपके ब्राउज़र में एईएस डिक्रिप्शन एक सेकंड से भी कम समय में होता है - बिना अपलोड प्रतीक्षा वाली किसी भी क्लाउड सेवा की तुलना में कहीं अधिक तेज़।",
+      "badgeText": "बिजली की तेजी"
     }
   ],
   "faqs": [
     {
-      "q": "Does it work without the password?",
-      "a": "No, you must know the existing password to unlock."
+      "q": "क्या यह पासवर्ड के बिना काम करता है?",
+      "a": "नहीं, अनलॉक करने के लिए आपको मौजूदा पासवर्ड पता होना चाहिए।"
     },
     {
-      "q": "Can I unlock permissions-restricted PDFs?",
-      "a": "Yes, permission restrictions are removed after password verification."
+      "q": "क्या मैं अनुमति-प्रतिबंधित पीडीएफ़ को अनलॉक कर सकता हूँ?",
+      "a": "हां, पासवर्ड सत्यापन के बाद अनुमति प्रतिबंध हटा दिए जाते हैं।"
     },
     {
-      "q": "Is the decryption process secure?",
-      "a": "All decryption happens in your browser memory; nothing is transmitted."
+      "q": "क्या डिक्रिप्शन प्रक्रिया सुरक्षित है?",
+      "a": "सभी डिक्रिप्शन आपकी ब्राउज़र मेमोरी में होता है; कुछ भी प्रसारित नहीं होता."
     },
     {
-      "q": "What if the password is wrong?",
-      "a": "You will see an error and can try again with the correct password."
+      "q": "यदि पासवर्ड गलत है तो क्या होगा?",
+      "a": "आपको एक त्रुटि दिखाई देगी और आप सही पासवर्ड के साथ पुनः प्रयास कर सकते हैं।"
     },
     {
-      "q": "Is this free?",
-      "a": "हाँ, पूरी तरह मुफ्त।"
+      "q": "क्या यह मुफ़्त है?",
+      "a": "हाँ, पूर्णतया निःशुल्क।"
     }
-  ]
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न",
+  "supportCenter": "सहायता केंद्र"
 }

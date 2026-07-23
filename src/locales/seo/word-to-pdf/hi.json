@@ -1,67 +1,80 @@
 {
-  "title": "Word to PDF Converter — No Upload Required",
-  "h1": "Convert Word Documents to PDF Instantly",
-  "description": "Transform .docx files into perfect PDFs directly in your browser. Zero upload, 100% private. Ideal for users in New Delhi.",
+  "title": "वर्ड से पीडीएफ कन्वर्टर - कोई अपलोड आवश्यक नहीं",
+  "h1": "Word दस्तावेज़ों को तुरंत पीडीएफ में बदलें",
+  "description": "सीधे अपने ब्राउज़र में .docx फ़ाइलों को संपूर्ण PDF में रूपांतरित करें। शून्य अपलोड, 100% निजी। नई दिल्ली के उपयोगकर्ताओं के लिए आदर्श।",
+  "buttonText": "दस्तावेज़ परिवर्तित करें",
+  "badges": [
+    "रोजगार अनुबंध",
+    "कानूनी संक्षिप्त विवरण",
+    "बायोडाटा और सीवी"
+  ],
+  "stats": [
+    "100%",
+    "स्थानीय",
+    "0",
+    "प्रतीक्षा समय"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Word to PDF Offline?",
-      "content": "Your Word document contains sensitive data. Our converter runs entirely in WebAssembly — your file never touches a server."
+      "type": "word_hero_features",
+      "title": "ऑफ़लाइन उपयोग क्यों करें?",
+      "content": "आपके Word दस्तावेज़ में संवेदनशील डेटा है. हमारा कनवर्टर पूरी तरह से WebAssembly में चलता है - आपकी फ़ाइल कभी भी सर्वर को नहीं छूती है।"
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Word to PDF",
+      "type": "word_how_to_steps",
+      "title": "कैसे उपयोग करें",
       "steps": [
         {
-          "title": "Select .docx File",
-          "description": "Pick your Word document from your computer."
+          "title": ".docx फ़ाइल",
+          "description": "चुनें अपने कंप्यूटर से अपना Word दस्तावेज़ चुनें."
         },
         {
-          "title": "Preview Output",
-          "description": "See the PDF rendering before finalizing."
+          "title": "पूर्वावलोकन आउटपुट",
+          "description": "अंतिम रूप देने से पहले पीडीएफ रेंडरिंग देखें।"
         },
         {
-          "title": "Download PDF",
-          "description": "Save your perfectly converted PDF instantly."
+          "title": "पीडीएफ डाउनलोड करें",
+          "description": "अपनी पूरी तरह से परिवर्तित पीडीएफ को तुरंत सहेजें।"
         }
       ]
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Word to PDF for New Delhi Users",
-      "content": "Used by professionals in New Delhi who need to share documents without losing formatting."
+      "type": "word_geo_targeting",
+      "title": "नई दिल्ली के उपयोगकर्ताओं के लिए वर्ड टू पीडीएफ",
+      "content": "नई दिल्ली में पेशेवरों द्वारा उपयोग किया जाता है जिन्हें फ़ॉर्मेटिंग खोए बिना दस्तावेज़ साझा करने की आवश्यकता होती है।"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Your Contracts Stay Private",
-      "content": "Converting employment contracts? Legal briefs? Our WASM processor never phones home."
+      "type": "word_privacy_security",
+      "title": "आपके अनुबंध निजी रहते हैं",
+      "content": "रोजगार अनुबंध परिवर्तित करना? कानूनी संक्षिप्त विवरण? हमारा WASM प्रोसेसर कभी भी घर पर फ़ोन नहीं करता।"
     },
     {
-      "type": "combiner_performance",
-      "title": "No More Conversion Queues",
-      "content": "Cloud converters put you in a queue. Ours converts in under 2 seconds, entirely offline."
+      "type": "word_performance",
+      "title": "कोई और रूपांतरण कतार नहीं",
+      "content": "क्लाउड कन्वर्टर्स आपको कतार में खड़ा कर देते हैं। हमारा 2 सेकंड से भी कम समय में रूपांतरित हो जाता है, पूरी तरह से ऑफ़लाइन।"
     }
   ],
   "faqs": [
     {
-      "q": "Does it preserve Word formatting?",
-      "a": "Yes, fonts, tables, and images are preserved using our WASM renderer."
+      "q": "क्या यह वर्ड फ़ॉर्मेटिंग को सुरक्षित रखता है?",
+      "a": "हां, फ़ॉन्ट, टेबल और छवियां हमारे WASM रेंडरर का उपयोग करके संरक्षित की जाती हैं।"
     },
     {
-      "q": "What Word versions are supported?",
-      "a": "All modern .docx files are supported."
+      "q": "कौन से वर्ड संस्करण समर्थित हैं?",
+      "a": "सभी आधुनिक .docx फ़ाइलें समर्थित हैं।"
     },
     {
-      "q": "Is there a file size limit?",
-      "a": "No server limits! Only your device RAM is the constraint."
+      "q": "क्या फ़ाइल आकार की कोई सीमा है?",
+      "a": "कोई सर्वर सीमा नहीं! केवल आपके डिवाइस की रैम ही बाधा है।"
     },
     {
-      "q": "Can I batch convert multiple files?",
-      "a": "Yes, select multiple .docx files at once."
+      "q": "क्या मैं अनेक फ़ाइलों को बैच में परिवर्तित कर सकता हूँ?",
+      "a": "हाँ, एक साथ अनेक .docx फ़ाइलें चुनें।"
     },
     {
-      "q": "Is this free?",
-      "a": "हाँ, पूरी तरह मुफ्त।"
+      "q": "क्या यह मुफ़्त है?",
+      "a": "हां, बिल्कुल मुफ्त।"
     }
-  ]
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न"
 }

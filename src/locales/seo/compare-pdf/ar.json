@@ -1,67 +1,85 @@
 {
-  "title": "Compare PDF Files — Spot Differences Locally",
-  "h1": "Compare Two PDF Documents Side by Side",
-  "description": "Upload two PDFs and highlight differences between them entirely in your browser. No upload to servers. Ideal for users in Riyadh.",
+  "title": "مقارنة ملفات PDF — اكتشاف الاختلافات محليًا",
+  "h1": "قارن بين مستندين PDF جنبًا إلى جنب",
+  "description": "قم بتحميل ملفي PDF وقم بإبراز الاختلافات بينهما بالكامل في متصفحك. لا يوجد تحميل على الخوادم. معالجة محلية آمنة بنسبة 100%.",
+  "buttonText": "Compare PDFs",
+  "badges": [
+    "أوجد الاختلافات",
+    "تسليط الضوء على التغييرات",
+    "الفرق البصري"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Compare PDFs Locally?",
-      "content": "Comparing contract versions or document revisions often involves highly sensitive content. Do it entirely offline."
+      "type": "compare_hero_features",
+      "title": "لماذا مقارنة ملفات PDF محليًا؟",
+      "content": "غالبًا ما تتضمن مقارنة إصدارات العقود أو مراجعات المستندات محتوى حساسًا للغاية. افعل ذلك دون الاتصال بالإنترنت تمامًا."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Compare Two PDFs",
+      "type": "compare_how_to_steps",
+      "title": "كيفية المقارنة بين ملفين PDF",
       "steps": [
         {
-          "title": "Load Both PDFs",
-          "description": "Select the two PDF versions to compare."
+          "title": "قم بتحميل كلا الملفين بصيغة PDF",
+          "description": "حدد نسختي PDF للمقارنة."
         },
         {
-          "title": "View Differences",
-          "description": "Highlighted changes appear side by side."
+          "title": "عرض الاختلافات",
+          "description": "تظهر التغييرات المميزة جنبًا إلى جنب."
         },
         {
-          "title": "Export Diff Report",
-          "description": "Download a comparison report with all changes marked."
+          "title": "تصدير تقرير الفرق",
+          "description": "قم بتنزيل تقرير المقارنة مع وضع علامة على جميع التغييرات."
         }
-      ]
+      ],
+      "badgeText": "الدليل السريع"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Comparison for Riyadh Law Firms",
-      "content": "Legal professionals in Riyadh compare contract revisions without uploading privileged documents to cloud services."
+      "type": "compare_geo_targeting",
+      "title": "معالجة محلية آمنة بنسبة 100%",
+      "content": "يتم تنفيذ جميع العمليات مباشرة على جهازك المحلي. نحن نستخدم تقنية WebAssembly المتقدمة لمعالجة مستنداتك دون تحميلها على خوادم خارجية، مما يضمن الخصوصية الكاملة.",
+      "badgeText": "المعالجة المحلية"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Privileged Documents Stay Private",
-      "content": "Compare NDAs, contracts, and regulatory filings without any server interaction."
+      "type": "compare_privacy_security",
+      "title": "المستندات المميزة تظل خاصة",
+      "content": "قارن اتفاقيات عدم الإفشاء والعقود والملفات التنظيمية دون أي تفاعل مع الخادم.",
+      "badgeText": "الأمن أولا"
     },
     {
-      "type": "organizer_performance",
-      "title": "Instant Side-by-Side Comparison",
-      "content": "Compare 100-page documents in seconds with highlighted differences rendered in-browser."
+      "type": "compare_performance",
+      "title": "مقارنة فورية جنبًا إلى جنب",
+      "content": "قارن المستندات المكونة من 100 صفحة في ثوانٍ مع الاختلافات المميزة المعروضة في المتصفح.",
+      "badgeText": "بسرعة البرق"
     }
   ],
   "faqs": [
     {
-      "q": "What types of differences are detected?",
-      "a": "Text additions, deletions, and formatting changes are highlighted."
+      "q": "ما هي أنواع الاختلافات التي تم اكتشافها؟",
+      "a": "يتم تمييز إضافات النص والحذف وتغييرات التنسيق."
     },
     {
-      "q": "Can I compare scanned PDFs?",
-      "a": "For scanned PDFs, use OCR first to extract text before comparing."
+      "q": "هل يمكنني مقارنة ملفات PDF الممسوحة ضوئيًا؟",
+      "a": "بالنسبة لملفات PDF الممسوحة ضوئيًا، استخدم OCR أولاً لاستخراج النص قبل المقارنة."
     },
     {
-      "q": "Can I export the comparison?",
-      "a": "Yes, download a marked-up PDF showing all differences."
+      "q": "هل يمكنني تصدير المقارنة؟",
+      "a": "نعم، قم بتنزيل ملف PDF مميز يوضح جميع الاختلافات."
     },
     {
-      "q": "How many versions can I compare?",
-      "a": "Two documents at a time in the side-by-side view."
+      "q": "كم عدد الإصدارات التي يمكنني مقارنتها؟",
+      "a": "مستندان في وقت واحد في العرض جنبًا إلى جنب."
     },
     {
-      "q": "Is this free?",
-      "a": "نعم، مجاناً تماماً."
+      "q": "هل هذا مجاني؟",
+      "a": "نعم، مجاني تماما."
     }
-  ]
+  ],
+  "faqTitle": "الأسئلة المتداولة",
+  "supportCenter": "مركز الدعم"
 }

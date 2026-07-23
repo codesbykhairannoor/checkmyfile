@@ -1,67 +1,85 @@
 {
-  "title": "Image to PDF — Combine Photos Offline",
-  "h1": "Convert Images to PDF Without Uploading",
-  "description": "Turn JPG, PNG, and WebP images into a single PDF document in your browser. Your photos stay private. Perfect for users in Jerusalem.",
+  "title": "תמונה ל-PDF — שילוב תמונות במצב לא מקוון",
+  "h1": "המר תמונות ל-PDF מבלי להעלות",
+  "description": "הפוך תמונות JPG, PNG ו-WebP למסמך PDF יחיד בדפדפן שלך. התמונות שלך נשארות פרטיות. עיבוד מקומי מאובטח של 100%.",
+  "buttonText": "Convert Images",
+  "badges": [
+    "תיקים",
+    "סריקות מזהה",
+    "אלבומי תמונות"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Images Offline?",
-      "content": "Photos contain location data and personal moments. Convert them to PDF without exposing them to any cloud service."
+      "type": "image_hero_features",
+      "title": "למה להמיר תמונות במצב לא מקוון?",
+      "content": "תמונות מכילות נתוני מיקום ורגעים אישיים. המר אותם ל-PDF מבלי לחשוף אותם לשום שירות ענן."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Turn Images Into PDF",
+      "type": "image_how_to_steps",
+      "title": "כיצד להפוך תמונות ל-PDF",
       "steps": [
         {
-          "title": "Select Images",
-          "description": "Choose JPG, PNG, or WebP files from your device."
+          "title": "בחר תמונות",
+          "description": "בחר קובצי JPG, PNG או WebP מהמכשיר שלך."
         },
         {
-          "title": "Arrange Order",
-          "description": "Drag to reorder images before generating the PDF."
+          "title": "ארגן סדר",
+          "description": "גרור כדי לסדר מחדש את התמונות לפני יצירת ה-PDF."
         },
         {
-          "title": "Export PDF",
-          "description": "Download your image PDF in one click."
+          "title": "ייצוא PDF",
+          "description": "הורד את תמונת ה-PDF שלך בלחיצה אחת."
         }
-      ]
+      ],
+      "badgeText": "מדריך מהיר"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Image to PDF for Jerusalem Users",
-      "content": "Photographers and designers in Jerusalem use our tool to package portfolios without cloud uploads."
+      "type": "image_geo_targeting",
+      "title": "100% עיבוד מקומי מאובטח",
+      "content": "כל הפעולות מבוצעות ישירות במכשיר המקומי שלך. אנו משתמשים בטכנולוגיית WebAssembly מתקדמת כדי לעבד את המסמכים שלך מבלי להעלות אותם לשרתים חיצוניים, מה שמבטיח פרטיות מלאה.",
+      "badgeText": "עיבוד מקומי"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Photos Never Leave Your Device",
-      "content": "Personal photos, ID scans, medical images — all converted 100% locally without any server contact."
+      "type": "image_privacy_security",
+      "title": "תמונות לעולם אל תעזוב את המכשיר שלך",
+      "content": "תמונות אישיות, סריקות תעודות זהות, תמונות רפואיות - כולם הומרו 100% באופן מקומי ללא כל קשר לשרת.",
+      "badgeText": "אבטחה תחילה"
     },
     {
-      "type": "combiner_performance",
-      "title": "Batch Convert Instantly",
-      "content": "Convert 50 images into a single PDF in under 5 seconds. No upload, no wait."
+      "type": "image_performance",
+      "title": "המר אצווה באופן מיידי",
+      "content": "המר 50 תמונות ל-PDF בודד תוך פחות מ-5 שניות. בלי להעלות, בלי לחכות.",
+      "badgeText": "מהיר ברק"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are supported?",
-      "a": "JPG, JPEG, PNG, and WebP are all supported."
+      "q": "אילו פורמטים של תמונה נתמכים?",
+      "a": "JPG, JPEG, PNG ו-WebP כולם נתמכים."
     },
     {
-      "q": "Can I combine multiple images?",
-      "a": "Yes, select as many images as you want and reorder them."
+      "q": "האם אני יכול לשלב מספר תמונות?",
+      "a": "כן, בחר כמה תמונות שתרצה וסדר אותן מחדש."
     },
     {
-      "q": "Is image quality preserved?",
-      "a": "Yes, images are embedded at their original resolution."
+      "q": "האם איכות התמונה נשמרת?",
+      "a": "כן, תמונות מוטמעות ברזולוציה המקורית שלהן."
     },
     {
-      "q": "Does it strip EXIF metadata?",
-      "a": "You can optionally strip EXIF data for privacy."
+      "q": "האם זה מסיר מטא נתונים של EXIF?",
+      "a": "אתה יכול לחלופין להסיר נתוני EXIF ​​לפרטיות."
     },
     {
-      "q": "Is there a limit on image count?",
-      "a": "כן, חינם לחלוטין."
+      "q": "האם יש הגבלה על ספירת התמונות?",
+      "a": "אין גבול! שלב מאות תמונות ל-PDF אחד."
     }
-  ]
+  ],
+  "faqTitle": "שאלות נפוצות",
+  "supportCenter": "מרכז תמיכה"
 }

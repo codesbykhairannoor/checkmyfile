@@ -1,67 +1,80 @@
 {
-  "title": "PDF to PowerPoint — Recover Editable Slides",
-  "h1": "Convert PDF to PowerPoint Presentation Offline",
-  "description": "Transform PDF documents back into editable .pptx presentations locally. No cloud needed. Perfect for users in Kyiv.",
+  "title": "PDF у PowerPoint — відновлення слайдів, які можна редагувати",
+  "h1": "Перетворення PDF на презентацію PowerPoint в режимі офлайн",
+  "description": "Перетворюйте PDF-документи назад у редаговані презентації .pptx локально. Хмара не потрібна. Ідеально підходить для користувачів у Києві.",
+  "buttonText": "Перетворити в PPT",
+  "badges": [
+    "Редаговані слайди",
+    "Відновлення презентації",
+    "Швидке перетворення"
+  ],
+  "stats": [
+    "100%",
+    "Місцевий",
+    "0 с",
+    "Час очікування"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF to PowerPoint Offline?",
-      "content": "Recovering slide content from a PDF for editing should not require uploading sensitive decks to a cloud service."
+      "title": "Навіщо використовувати офлайн?",
+      "content": "Відновлення вмісту слайда з PDF-файлу для редагування не повинно вимагати завантаження конфіденційних колод у хмарну службу."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to PowerPoint",
+      "title": "Як використовувати",
       "steps": [
         {
-          "title": "Upload PDF",
-          "description": "Select the PDF containing your slide content."
+          "title": "Завантажити PDF",
+          "description": "Виберіть PDF-файл із вмістом вашого слайда."
         },
         {
-          "title": "Map Pages to Slides",
-          "description": "Each PDF page becomes one editable slide."
+          "title": "Зіставте сторінки на слайди",
+          "description": "Кожна сторінка PDF стає одним слайдом, який можна редагувати."
         },
         {
-          "title": "Download .pptx",
-          "description": "Get your fully editable PowerPoint presentation."
+          "title": "Завантажити .pptx",
+          "description": "Отримайте повністю редаговану презентацію PowerPoint."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "Slide Recovery in Kyiv",
-      "content": "Presenters in Kyiv use our tool to recover and re-edit presentations from old PDF archives."
+      "title": "Slide Recovery в Києві",
+      "content": "Доповідачі в Києві використовують наш інструмент для відновлення та редагування презентацій зі старих PDF-архівів."
     },
     {
       "type": "split_privacy_security",
-      "title": "Your Slides Are Never Exposed",
-      "content": "Confidential slide decks recovered and converted without any server interaction."
+      "title": "Ваші слайди ніколи не експонуються",
+      "content": "Конфіденційні слайди відновлено та конвертовано без будь-якої взаємодії з сервером."
     },
     {
       "type": "split_performance",
-      "title": "Convert Slides at Lightning Speed",
-      "content": "A 60-slide PDF converted to PowerPoint in under 10 seconds with zero upload time."
+      "title": "Перетворюйте слайди з блискавичною швидкістю",
+      "content": "PDF-файл із 60 слайдів перетворюється на PowerPoint менш ніж за 10 секунд із нульовим часом завантаження."
     }
   ],
   "faqs": [
     {
-      "q": "Are slide layouts preserved?",
-      "a": "Content is mapped to slides; some layout adjustments may be needed."
+      "q": "Чи збережено макети слайдів?",
+      "a": "Вміст відображається на слайдах; можуть знадобитися деякі коригування макета."
     },
     {
-      "q": "Can I edit the slides after?",
-      "a": "Yes, the .pptx file is fully editable in PowerPoint or Google Slides."
+      "q": "Чи можу я після цього редагувати слайди?",
+      "a": "Так, файл .pptx можна повністю редагувати в PowerPoint або Google Slides."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No, convert as many pages as your RAM allows."
+      "q": "Чи є обмеження на сторінку?",
+      "a": "Ні, конвертуйте стільки сторінок, скільки дозволяє ваша оперативна пам’ять."
     },
     {
-      "q": "Does it work with image-heavy PDFs?",
-      "a": "Yes, images are embedded in each slide."
+      "q": "Чи працює він із файлами PDF із великою кількістю зображень?",
+      "a": "Так, зображення вбудовані в кожен слайд."
     },
     {
-      "q": "Is this free?",
+      "q": "Це безкоштовно?",
       "a": "Так, повністю безкоштовно."
     }
-  ]
+  ],
+  "faqTitle": "Часто задавані питання"
 }

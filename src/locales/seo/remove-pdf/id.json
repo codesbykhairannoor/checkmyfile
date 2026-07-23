@@ -1,0 +1,85 @@
+{
+  "title": "Hapus Halaman dari PDF — Hapus Halaman PDF Offline",
+  "h1": "Hapus Halaman dari PDF Seketika",
+  "description": "Hapus halaman yang tidak diinginkan dari file PDF Anda dengan aman di dalam browser Anda. Cepat dan sepenuhnya aman.",
+  "buttonText": "Remove Pages",
+  "badges": [
+    "Pilih & Hapus",
+    "Penyunting Visual",
+    "Nol latensi"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "remove_hero_features",
+      "title": "Mengapa Menghapus Halaman Secara Lokal?",
+      "content": "Menghapus halaman sensitif atau tidak perlu dari dokumen Anda harus dilakukan di perangkat Anda, bukan di server. Kami menjamin privasi 100%."
+    },
+    {
+      "type": "remove_how_to_steps",
+      "title": "Cara Menghapus Halaman PDF",
+      "steps": [
+        {
+          "title": "Buka PDF",
+          "description": "Muat PDF yang ingin Anda bersihkan."
+        },
+        {
+          "title": "Pilih Halaman yang akan Dihapus",
+          "description": "Arahkan kursor ke halaman dan klik ikon tempat sampah untuk menandainya untuk dihapus."
+        },
+        {
+          "title": "Ekspor PDF Bersih",
+          "description": "Unduh PDF baru Anda tanpa halaman yang dihapus."
+        }
+      ],
+      "badgeText": "Panduan Singkat"
+    },
+    {
+      "type": "remove_geo_targeting",
+      "title": "Pemrosesan Lokal 100% Aman",
+      "content": "Semua operasi dilakukan langsung di perangkat lokal Anda. Kami menggunakan teknologi WebAssembly yang canggih untuk memproses dokumen Anda tanpa harus mengunggahnya ke server eksternal, sehingga memastikan privasi sepenuhnya.",
+      "badgeText": "Pemrosesan Lokal"
+    },
+    {
+      "type": "remove_privacy_security",
+      "title": "Privasi Penghapusan Total",
+      "content": "Saat Anda menghapus sebuah halaman, halaman tersebut akan dihapus secara permanen dari dokumen di memori browser Anda sebelum disimpan.",
+      "badgeText": "Keamanan Pertama"
+    },
+    {
+      "type": "remove_performance",
+      "title": "Penghapusan Halaman Instan",
+      "content": "Mengekstrak dan menghapus halaman bahkan dari dokumen setebal 1000 halaman membutuhkan waktu milidetik menggunakan mesin WASM kami yang dioptimalkan.",
+      "badgeText": "Secepat Kilat"
+    }
+  ],
+  "faqTitle": "Pertanyaan yang Sering Diajukan",
+  "faqs": [
+    {
+      "q": "Apakah halaman yang terhapus dapat dipulihkan?",
+      "a": "Setelah Anda mengunduh PDF baru, halaman yang dihapus akan dihapus secara permanen dari file itu. File asli Anda tetap tidak tersentuh."
+    },
+    {
+      "q": "Apakah saya perlu mengunggah PDF saya?",
+      "a": "Tidak. Seluruh proses penghapusan halaman terjadi secara lokal di browser web Anda."
+    },
+    {
+      "q": "Apakah ada batasan berapa banyak halaman yang dapat saya hapus?",
+      "a": "Tidak, Anda dapat menghapus halaman sebanyak yang Anda inginkan, sepenuhnya gratis."
+    },
+    {
+      "q": "Apakah tata letak halaman lainnya akan berubah?",
+      "a": "Tidak, halaman lainnya akan mempertahankan format dan tata letak aslinya."
+    },
+    {
+      "q": "Bisakah saya memilih beberapa halaman sekaligus?",
+      "a": "Ya, Anda dapat mengklik beberapa halaman untuk menandai semuanya untuk dihapus secara bersamaan."
+    }
+  ],
+  "supportCenter": "Pusat Dukungan"
+}

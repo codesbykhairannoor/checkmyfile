@@ -1,67 +1,85 @@
 {
-  "title": "Image to PDF — Combine Photos Offline",
-  "h1": "Convert Images to PDF Without Uploading",
-  "description": "Turn JPG, PNG, and WebP images into a single PDF document in your browser. Your photos stay private. Perfect for users in Copenhagen.",
+  "title": "Billede til PDF — Kombiner billeder offline",
+  "h1": "Konverter billeder til PDF uden at uploade",
+  "description": "Gør JPG-, PNG- og WebP-billeder til et enkelt PDF-dokument i din browser. Dine billeder forbliver private. 100 % sikker lokal behandling.",
+  "buttonText": "Convert Images",
+  "badges": [
+    "Porteføljer",
+    "ID-scanninger",
+    "Fotoalbum"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Images Offline?",
-      "content": "Photos contain location data and personal moments. Convert them to PDF without exposing them to any cloud service."
+      "type": "image_hero_features",
+      "title": "Hvorfor konvertere billeder offline?",
+      "content": "Billeder indeholder lokationsdata og personlige øjeblikke. Konverter dem til PDF uden at udsætte dem for nogen cloud-tjeneste."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Turn Images Into PDF",
+      "type": "image_how_to_steps",
+      "title": "Sådan gør du billeder til PDF",
       "steps": [
         {
-          "title": "Select Images",
-          "description": "Choose JPG, PNG, or WebP files from your device."
+          "title": "Vælg billeder",
+          "description": "Vælg JPG-, PNG- eller WebP-filer fra din enhed."
         },
         {
-          "title": "Arrange Order",
-          "description": "Drag to reorder images before generating the PDF."
+          "title": "Arranger rækkefølge",
+          "description": "Træk for at omarrangere billeder, før du genererer PDF'en."
         },
         {
-          "title": "Export PDF",
-          "description": "Download your image PDF in one click."
+          "title": "Eksporter PDF",
+          "description": "Download dit billede PDF med et enkelt klik."
         }
-      ]
+      ],
+      "badgeText": "Hurtig guide"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Image to PDF for Copenhagen Users",
-      "content": "Photographers and designers in Copenhagen use our tool to package portfolios without cloud uploads."
+      "type": "image_geo_targeting",
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle handlinger udføres direkte på din lokale enhed. Vi bruger avanceret WebAssembly-teknologi til at behandle dine dokumenter uden nogensinde at uploade dem til eksterne servere, hvilket sikrer fuldstændigt privatliv.",
+      "badgeText": "Lokal behandling"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Photos Never Leave Your Device",
-      "content": "Personal photos, ID scans, medical images — all converted 100% locally without any server contact."
+      "type": "image_privacy_security",
+      "title": "Billeder forlader aldrig din enhed",
+      "content": "Personlige fotos, ID-scanninger, medicinske billeder - alt konverteret 100 % lokalt uden nogen serverkontakt.",
+      "badgeText": "Sikkerhed først"
     },
     {
-      "type": "combiner_performance",
-      "title": "Batch Convert Instantly",
-      "content": "Convert 50 images into a single PDF in under 5 seconds. No upload, no wait."
+      "type": "image_performance",
+      "title": "Batch Konverter øjeblikkeligt",
+      "content": "Konverter 50 billeder til en enkelt PDF på under 5 sekunder. Ingen upload, nej vent.",
+      "badgeText": "Lynhurtigt"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are supported?",
-      "a": "JPG, JPEG, PNG, and WebP are all supported."
+      "q": "Hvilke billedformater understøttes?",
+      "a": "JPG, JPEG, PNG og WebP er alle understøttet."
     },
     {
-      "q": "Can I combine multiple images?",
-      "a": "Yes, select as many images as you want and reorder them."
+      "q": "Kan jeg kombinere flere billeder?",
+      "a": "Ja, vælg så mange billeder du vil, og omarranger dem."
     },
     {
-      "q": "Is image quality preserved?",
-      "a": "Yes, images are embedded at their original resolution."
+      "q": "Er billedkvaliteten bevaret?",
+      "a": "Ja, billeder er indlejret i deres oprindelige opløsning."
     },
     {
-      "q": "Does it strip EXIF metadata?",
-      "a": "You can optionally strip EXIF data for privacy."
+      "q": "Fjerner det EXIF-metadata?",
+      "a": "Du kan valgfrit fjerne EXIF-data for privatlivets fred."
     },
     {
-      "q": "Is there a limit on image count?",
-      "a": "Ja, helt gratis."
+      "q": "Er der en grænse for antallet af billeder?",
+      "a": "Ingen grænse! Kombiner hundredvis af billeder til én PDF."
     }
-  ]
+  ],
+  "faqTitle": "Ofte stillede spørgsmål",
+  "supportCenter": "Supportcenter"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "CSV to Excel Converter — Offline & Instant",
-  "h1": "Convert CSV Files to Excel Spreadsheets Locally",
-  "description": "Transform .csv files into structured .xlsx spreadsheets entirely in your browser. No upload. Perfect for data teams in Oslo.",
+  "title": "CSV til Excel Converter — Frakoblet og øyeblikkelig",
+  "h1": "Konverter CSV-filer til Excel-regneark lokalt",
+  "description": "Gjør om .csv-filer til strukturerte .xlsx-regneark helt i nettleseren din. Ingen opplasting. 100 % sikker lokal behandling.",
+  "buttonText": "Convert CSV",
+  "badges": [
+    "UTF-8-støtte",
+    "Multi-kolonne",
+    "Øyeblikkelig konverter"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Convert CSV Offline?",
-      "content": "CSV files often contain customer or financial data. Convert them to Excel locally without exposing your datasets to any cloud service."
+      "type": "csv_excel_hero_features",
+      "title": "Hvorfor konvertere CSV frakoblet?",
+      "content": "CSV-filer inneholder ofte kunde- eller økonomiske data. Konverter dem til Excel lokalt uten å utsette datasettene dine for noen skytjeneste."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert CSV to Excel",
+      "type": "csv_excel_how_to_steps",
+      "title": "Hvordan konvertere CSV til Excel",
       "steps": [
         {
-          "title": "Open CSV File",
-          "description": "Select the CSV file to convert."
+          "title": "Åpne CSV-fil",
+          "description": "Velg CSV-filen som skal konverteres."
         },
         {
-          "title": "Preview Data",
-          "description": "See the parsed columns and rows before export."
+          "title": "Forhåndsvisningsdata",
+          "description": "Se de analyserte kolonnene og radene før eksport."
         },
         {
-          "title": "Download .xlsx",
-          "description": "Get your Excel spreadsheet instantly."
+          "title": "Last ned .xlsx",
+          "description": "Få Excel-regnearket ditt umiddelbart."
         }
-      ]
+      ],
+      "badgeText": "Hurtigguide"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Data Tools for Oslo Analysts",
-      "content": "Data analysts in Oslo convert CSV exports to Excel without uploading sensitive datasets."
+      "type": "csv_excel_geo_targeting",
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle operasjoner utføres direkte på din lokale enhet. Vi bruker avansert WebAssembly-teknologi for å behandle dokumentene dine uten å laste dem opp til eksterne servere, noe som sikrer fullstendig personvern.",
+      "badgeText": "Lokal behandling"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Customer Data Stays on Your Machine",
-      "content": "CRM exports, transaction logs, and survey data converted locally with zero cloud involvement."
+      "type": "csv_excel_privacy_security",
+      "title": "Kundedata forblir på maskinen din",
+      "content": "CRM-eksporter, transaksjonslogger og undersøkelsesdata konvertert lokalt uten skyinvolvering.",
+      "badgeText": "Sikkerhet først"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Large CSV Files Instantly",
-      "content": "Convert a 100,000-row CSV to Excel in seconds. All browser-native processing."
+      "type": "csv_excel_performance",
+      "title": "Konverter store CSV-filer umiddelbart",
+      "content": "Konverter en 100 000-raders CSV til Excel på sekunder. All nettleserbasert prosessering.",
+      "badgeText": "Lynrask"
     }
   ],
   "faqs": [
     {
-      "q": "Is the column structure preserved?",
-      "a": "Yes, all columns are mapped to Excel columns."
+      "q": "Er søylestrukturen bevart?",
+      "a": "Ja, alle kolonner er tilordnet til Excel-kolonner."
     },
     {
-      "q": "Can I convert multiple CSVs?",
-      "a": "Yes, batch conversion to multiple sheets is supported."
+      "q": "Kan jeg konvertere flere CSV-er?",
+      "a": "Ja, batchkonvertering til flere ark støttes."
     },
     {
-      "q": "Are special characters handled?",
-      "a": "Yes, UTF-8 and various encodings are supported."
+      "q": "Håndteres spesialtegn?",
+      "a": "Ja, UTF-8 og forskjellige kodinger støttes."
     },
     {
-      "q": "Can I set delimiters?",
-      "a": "Yes, comma, semicolon, and tab delimiters are supported."
+      "q": "Kan jeg angi skilletegn?",
+      "a": "Ja, komma-, semikolon- og tabulatorskilletegn støttes."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, helt gratis."
+      "q": "Er dette gratis?",
+      "a": "Ja, alltid gratis."
     }
-  ]
+  ],
+  "faqTitle": "Ofte stilte spørsmål",
+  "supportCenter": "Støttesenter"
 }

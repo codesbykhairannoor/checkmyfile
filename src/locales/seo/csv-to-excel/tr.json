@@ -1,67 +1,85 @@
 {
-  "title": "CSV to Excel Converter — Offline & Instant",
-  "h1": "Convert CSV Files to Excel Spreadsheets Locally",
-  "description": "Transform .csv files into structured .xlsx spreadsheets entirely in your browser. No upload. Perfect for data teams in Istanbul.",
+  "title": "CSV'den Excel'e Dönüştürücü — Çevrimdışı ve Anında",
+  "h1": "CSV Dosyalarını Yerel Olarak Excel Elektronik Tablolarına Dönüştürün",
+  "description": ".csv dosyalarını tamamen tarayıcınızda yapılandırılmış .xlsx e-tablolarına dönüştürün. Yükleme yok. %100 güvenli yerel işleme.",
+  "buttonText": "Convert CSV",
+  "badges": [
+    "UTF-8 Desteği",
+    "Çok Sütunlu",
+    "Anında Dönüştürme"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Convert CSV Offline?",
-      "content": "CSV files often contain customer or financial data. Convert them to Excel locally without exposing your datasets to any cloud service."
+      "type": "csv_excel_hero_features",
+      "title": "Neden CSV'yi Çevrimdışına Dönüştürmelisiniz?",
+      "content": "CSV dosyaları genellikle müşteri veya finansal verileri içerir. Veri kümelerinizi herhangi bir bulut hizmetine maruz bırakmadan bunları yerel olarak Excel'e dönüştürün."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert CSV to Excel",
+      "type": "csv_excel_how_to_steps",
+      "title": "CSV'yi Excel'e Dönüştürme",
       "steps": [
         {
-          "title": "Open CSV File",
-          "description": "Select the CSV file to convert."
+          "title": "CSV Dosyasını Aç",
+          "description": "Dönüştürülecek CSV dosyasını seçin."
         },
         {
-          "title": "Preview Data",
-          "description": "See the parsed columns and rows before export."
+          "title": "Verileri Önizle",
+          "description": "Dışa aktarmadan önce ayrıştırılan sütunları ve satırları görün."
         },
         {
-          "title": "Download .xlsx",
-          "description": "Get your Excel spreadsheet instantly."
+          "title": ".xlsx'i indirin",
+          "description": "Excel e-tablonuzu anında alın."
         }
-      ]
+      ],
+      "badgeText": "Hızlı Kılavuz"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Data Tools for Istanbul Analysts",
-      "content": "Data analysts in Istanbul convert CSV exports to Excel without uploading sensitive datasets."
+      "type": "csv_excel_geo_targeting",
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Customer Data Stays on Your Machine",
-      "content": "CRM exports, transaction logs, and survey data converted locally with zero cloud involvement."
+      "type": "csv_excel_privacy_security",
+      "title": "Müşteri Verileri Makinenizde Kalır",
+      "content": "CRM dışa aktarmaları, işlem günlükleri ve anket verileri, sıfır bulut katılımıyla yerel olarak dönüştürülür.",
+      "badgeText": "Önce Güvenlik"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Large CSV Files Instantly",
-      "content": "Convert a 100,000-row CSV to Excel in seconds. All browser-native processing."
+      "type": "csv_excel_performance",
+      "title": "Büyük CSV Dosyalarını Anında Dönüştürün",
+      "content": "100.000 satırlık bir CSV'yi saniyeler içinde Excel'e dönüştürün. Tümü tarayıcıda yerel işlemler.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [
     {
-      "q": "Is the column structure preserved?",
-      "a": "Yes, all columns are mapped to Excel columns."
+      "q": "Sütun yapısı korunmuş mu?",
+      "a": "Evet, tüm sütunlar Excel sütunlarıyla eşlenir."
     },
     {
-      "q": "Can I convert multiple CSVs?",
-      "a": "Yes, batch conversion to multiple sheets is supported."
+      "q": "Birden fazla CSV'yi dönüştürebilir miyim?",
+      "a": "Evet, birden fazla sayfaya toplu dönüştürme desteklenmektedir."
     },
     {
-      "q": "Are special characters handled?",
-      "a": "Yes, UTF-8 and various encodings are supported."
+      "q": "Özel karakterler işleniyor mu?",
+      "a": "Evet, UTF-8 ve çeşitli kodlamalar desteklenmektedir."
     },
     {
-      "q": "Can I set delimiters?",
-      "a": "Yes, comma, semicolon, and tab delimiters are supported."
+      "q": "Sınırlayıcıları ayarlayabilir miyim?",
+      "a": "Evet, virgül, noktalı virgül ve sekme sınırlayıcıları desteklenir."
     },
     {
-      "q": "Is this free?",
-      "a": "Evet, tamamen ücretsiz."
+      "q": "Bu bedava mı?",
+      "a": "Evet, her zaman ücretsiz."
     }
-  ]
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi"
 }

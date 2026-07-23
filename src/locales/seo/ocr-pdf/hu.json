@@ -1,67 +1,85 @@
 {
-  "title": "OCR PDF — Make Scans Searchable Offline",
-  "h1": "Extract and Recognize Text from Scanned PDFs",
-  "description": "Run OCR on scanned PDFs to make them searchable and copyable, entirely in your browser using Tesseract. No upload. Great for users in Budapest.",
+  "title": "OCR PDF – A beolvasott anyagok offline kereshetővé tétele",
+  "h1": "Szöveg kibontása és felismerése beolvasott PDF-fájlokból",
+  "description": "Futtassa az OCR-t a beolvasott PDF-fájlokon, hogy kereshetővé és másolhatóvá tegye őket, teljes egészében a böngészőjében a Tesseract segítségével. Nincs feltöltés. 100%-ban biztonságos helyi feldolgozás.",
+  "buttonText": "Run OCR",
+  "badges": [
+    "Szöveg kivonat",
+    "Kereshető PDF",
+    "AI felismerés"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Run OCR Locally?",
-      "content": "Scanned PDFs contain sensitive text. Running OCR on a cloud service exposes that text to a third party. Ours runs 100% offline."
+      "type": "ocr_hero_features",
+      "title": "Miért futtasson helyi OCR-t?",
+      "content": "A beolvasott PDF-ek érzékeny szöveget tartalmaznak. Ha felhőszolgáltatáson futtatja az OCR-t, akkor ez a szöveg egy harmadik fél számára elérhetővé válik. A miénk 100%-ban offline módban működik."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to OCR a PDF",
+      "type": "ocr_how_to_steps",
+      "title": "PDF OCR-je",
       "steps": [
         {
-          "title": "Load Scanned PDF",
-          "description": "Select the image-based or scanned PDF."
+          "title": "Beolvasott PDF betöltése",
+          "description": "Válassza ki a képalapú vagy beolvasott PDF-et."
         },
         {
-          "title": "Select Language",
-          "description": "Choose the document language for better accuracy."
+          "title": "Nyelv kiválasztása",
+          "description": "A nagyobb pontosság érdekében válassza ki a dokumentum nyelvét."
         },
         {
-          "title": "Download Searchable PDF",
-          "description": "Get a text-layer PDF ready to search and copy."
+          "title": "Kereshető PDF letöltése",
+          "description": "Készítsen egy szövegrétegű PDF-fájlt keresésre és másolásra."
         }
-      ]
+      ],
+      "badgeText": "Gyors útmutató"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "OCR Tool for Budapest Archives",
-      "content": "Government agencies and businesses in Budapest digitize paper archives using our offline OCR tool."
+      "type": "ocr_geo_targeting",
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Minden művelet közvetlenül a helyi eszközön történik. Fejlett WebAssembly technológiát használunk a dokumentumok feldolgozásához anélkül, hogy azokat külső szerverekre feltöltenénk, így biztosítva a teljes adatvédelmet.",
+      "badgeText": "Helyi feldolgozás"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Content Never Exposed",
-      "content": "OCR processing using Tesseract WASM runs entirely in browser memory — no API calls, no data transmission."
+      "type": "ocr_privacy_security",
+      "title": "Beolvasott tartalom soha nem látható",
+      "content": "A Tesseract WASM használatával végzett OCR-feldolgozás teljes egészében a böngésző memóriájában fut – nincs API-hívás, nincs adatátvitel.",
+      "badgeText": "Első a biztonság"
     },
     {
-      "type": "organizer_performance",
-      "title": "OCR Any Document Locally",
-      "content": "Process a 20-page scanned PDF in under 30 seconds. All Tesseract processing happens in-browser."
+      "type": "ocr_performance",
+      "title": "OCR bármely dokumentum helyileg",
+      "content": "Egy 20 oldalas beolvasott PDF feldolgozása kevesebb, mint 30 másodperc alatt. Minden Tesseract feldolgozás a böngészőben történik.",
+      "badgeText": "Villámgyors"
     }
   ],
   "faqs": [
     {
-      "q": "What languages does OCR support?",
-      "a": "Over 100 languages via Tesseract engine."
+      "q": "Milyen nyelveket támogat az OCR?",
+      "a": "Több mint 100 nyelv a Tesseract motoron keresztül."
     },
     {
-      "q": "How accurate is the OCR?",
-      "a": "Accuracy depends on scan quality; clear, high-contrast scans yield 95%+ accuracy."
+      "q": "Mennyire pontos az OCR?",
+      "a": "A pontosság a szkennelés minőségétől függ; tiszta, nagy kontrasztú szkennelés 95%-os+ pontosságot eredményez."
     },
     {
-      "q": "Does it create a searchable PDF?",
-      "a": "Yes, a text layer is added making the PDF fully searchable."
+      "q": "Kereshető PDF-t hoz létre?",
+      "a": "Igen, a rendszer hozzáad egy szöveges réteget, így a PDF teljes mértékben kereshető."
     },
     {
-      "q": "Can I copy text from the result?",
-      "a": "Yes, the output PDF has selectable, copyable text."
+      "q": "Másolhatok szöveget az eredményből?",
+      "a": "Igen, a kimeneti PDF-ben választható, másolható szöveg található."
     },
     {
-      "q": "Is this free?",
-      "a": "Igen, teljesen ingyenes."
+      "q": "Ez ingyenes?",
+      "a": "Igen, mindig ingyenes."
     }
-  ]
+  ],
+  "faqTitle": "Gyakran Ismételt Kérdések",
+  "supportCenter": "Támogatási Központ"
 }

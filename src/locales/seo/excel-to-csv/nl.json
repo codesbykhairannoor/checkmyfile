@@ -1,67 +1,85 @@
 {
-  "title": "Excel to CSV Converter — Export Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to CSV Locally",
-  "description": "Export .xlsx files to clean .csv format entirely in your browser. No upload. Ideal for developers in Amsterdam.",
+  "title": "Excel naar CSV-converter - Spreadsheets offline exporteren",
+  "h1": "Converteer Excel-spreadsheets lokaal naar CSV",
+  "description": "Exporteer .xlsx-bestanden om het .csv-formaat volledig in uw browser op te schonen. Geen upload. 100% veilige lokale verwerking.",
+  "buttonText": "Convert to CSV",
+  "badges": [
+    "Ruwe gegevens",
+    "Database importeren",
+    "Snelle export"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Export to CSV Offline?",
-      "content": "Exporting spreadsheets to CSV for data pipelines should not expose your raw data to any external API."
+      "type": "excel_csv_hero_features",
+      "title": "Waarom offline exporteren naar CSV?",
+      "content": "Het exporteren van spreadsheets naar CSV voor gegevenspijplijnen mag uw onbewerkte gegevens niet blootstellen aan een externe API."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Excel to CSV",
+      "type": "excel_csv_how_to_steps",
+      "title": "Hoe Excel naar CSV te converteren",
       "steps": [
         {
-          "title": "Open Excel File",
-          "description": "Select the .xlsx spreadsheet."
+          "title": "Open Excel-bestand",
+          "description": "Selecteer het .xlsx-spreadsheet."
         },
         {
-          "title": "Choose Sheet",
-          "description": "Pick which sheet to export as CSV."
+          "title": "Kies Blad",
+          "description": "Kies welk blad u wilt exporteren als CSV."
         },
         {
-          "title": "Download CSV",
-          "description": "Get your clean CSV file instantly."
+          "title": "CSV-bestand downloaden",
+          "description": "Ontvang direct uw schone CSV-bestand."
         }
-      ]
+      ],
+      "badgeText": "Beknopte handleiding"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Developer Tools for Amsterdam",
-      "content": "Developers and data engineers in Amsterdam export spreadsheets to CSV for pipelines without cloud intermediaries."
+      "type": "excel_csv_geo_targeting",
+      "title": "100% veilige lokale verwerking",
+      "content": "Alle bewerkingen worden rechtstreeks op uw lokale apparaat uitgevoerd. We gebruiken geavanceerde WebAssembly-technologie om uw documenten te verwerken zonder ze ooit naar externe servers te uploaden, waardoor volledige privacy wordt gegarandeerd.",
+      "badgeText": "Lokale verwerking"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Spreadsheet Data Stays Local",
-      "content": "Financial models and business data exported to CSV without any server-side processing."
+      "type": "excel_csv_privacy_security",
+      "title": "Spreadsheetgegevens blijven lokaal",
+      "content": "Financiële modellen en bedrijfsgegevens geëxporteerd naar CSV zonder enige verwerking op de server.",
+      "badgeText": "Beveiliging eerst"
     },
     {
-      "type": "organizer_performance",
-      "title": "Export Any Spreadsheet Instantly",
-      "content": "Export a 50,000-row Excel file to CSV in under 1 second. All in-browser."
+      "type": "excel_csv_performance",
+      "title": "Exporteer elk spreadsheet onmiddellijk",
+      "content": "Exporteer een Excel-bestand van 50.000 rijen naar CSV in minder dan 1 seconde. Allemaal in de browser.",
+      "badgeText": "Bliksemsnel"
     }
   ],
   "faqs": [
     {
-      "q": "Can I export multiple sheets?",
-      "a": "Yes, export each sheet as a separate CSV file."
+      "q": "Kan ik meerdere werkbladen exporteren?",
+      "a": "Ja, exporteer elk blad als een afzonderlijk CSV-bestand."
     },
     {
-      "q": "Is Excel formatting preserved in CSV?",
-      "a": "CSV is plain text; formatting is removed but all values are preserved."
+      "q": "Blijft de Excel-opmaak behouden in CSV?",
+      "a": "CSV is platte tekst; de opmaak wordt verwijderd, maar alle waarden blijven behouden."
     },
     {
-      "q": "Can I choose the delimiter?",
-      "a": "Yes, choose comma, semicolon, or tab."
+      "q": "Kan ik het scheidingsteken kiezen?",
+      "a": "Ja, kies een komma, puntkomma of tab."
     },
     {
-      "q": "Are formulas exported as values?",
-      "a": "Yes, formula results (not formulas) are written to the CSV."
+      "q": "Worden formules geëxporteerd als waarden?",
+      "a": "Ja, formuleresultaten (geen formules) worden naar het CSV geschreven."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, volledig gratis."
+      "q": "Is dit gratis?",
+      "a": "Ja, helemaal gratis."
     }
-  ]
+  ],
+  "faqTitle": "Veelgestelde vragen",
+  "supportCenter": "Ondersteuningscentrum"
 }

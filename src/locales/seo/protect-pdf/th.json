@@ -1,67 +1,85 @@
 {
-  "title": "Password Protect PDF — Secure Files Offline",
-  "h1": "Add Password Protection to PDF Files Instantly",
-  "description": "Encrypt PDF files with AES-256 directly in your browser. Your document never leaves your device. Ideal for users in Bangkok.",
+  "title": "รหัสผ่านป้องกัน PDF — รักษาความปลอดภัยไฟล์ออฟไลน์",
+  "h1": "เพิ่มการป้องกันรหัสผ่านให้กับไฟล์ PDF ทันที",
+  "description": "เข้ารหัสไฟล์ PDF ด้วย AES-256 โดยตรงในเบราว์เซอร์ของคุณ เอกสารของคุณจะไม่มีวันออกจากอุปกรณ์ของคุณ การประมวลผลภายในที่ปลอดภัย 100%",
+  "buttonText": "Protect PDF",
+  "badges": [
+    "การเข้ารหัส AES-256",
+    "รหัสผ่านที่ปลอดภัย",
+    "ฝั่งไคลเอ็นต์เท่านั้น"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "protect_hero_features",
-      "title": "Why Protect PDFs Locally?",
-      "content": "Adding a password means the file is sensitive. Never upload sensitive files to a cloud encryptor. Ours runs entirely offline with AES-256 encryption."
+      "title": "เหตุใดจึงต้องปกป้อง PDF ในเครื่อง?",
+      "content": "การเพิ่มรหัสผ่านหมายความว่าไฟล์มีความละเอียดอ่อน อย่าอัปโหลดไฟล์ที่ละเอียดอ่อนไปยังตัวเข้ารหัสบนคลาวด์ ของเราทำงานแบบออฟไลน์ทั้งหมดด้วยการเข้ารหัส AES-256"
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Password Protect a PDF",
+      "title": "วิธีป้องกันรหัสผ่าน PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF you want to lock."
+          "title": "เปิด PDF",
+          "description": "เลือก PDF ที่คุณต้องการล็อค"
         },
         {
-          "title": "Set Password",
-          "description": "Choose a strong password for encryption."
+          "title": "ตั้งรหัสผ่าน",
+          "description": "เลือกรหัสผ่านที่รัดกุมสำหรับการเข้ารหัส"
         },
         {
-          "title": "Download Protected PDF",
-          "description": "Get your AES-256 encrypted PDF immediately."
+          "title": "ดาวน์โหลด PDF ที่ได้รับการป้องกัน",
+          "description": "รับ PDF ที่เข้ารหัส AES-256 ของคุณทันที"
         }
-      ]
+      ],
+      "badgeText": "คู่มือฉบับย่อ"
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Vault-Level PDF Protection for Bangkok",
-      "content": "Legal and finance professionals in Bangkok encrypt documents with AES-256 strength without exposing files to any server."
+      "title": "การประมวลผลภายในที่ปลอดภัย 100%",
+      "content": "การดำเนินการทั้งหมดดำเนินการโดยตรงบนอุปกรณ์ท้องถิ่นของคุณ เราใช้เทคโนโลยี WebAssembly ขั้นสูงเพื่อประมวลผลเอกสารของคุณโดยไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ภายนอก เพื่อให้มั่นใจถึงความเป็นส่วนตัวโดยสมบูรณ์",
+      "badgeText": "การประมวลผลในท้องถิ่น"
     },
     {
       "type": "protect_privacy_security",
-      "title": "AES-256 Encryption — Bank-Grade, Offline",
-      "content": "Military-grade AES-256 encryption runs in your browser. No key is ever transmitted to any server."
+      "title": "การเข้ารหัส AES-256 — ระดับธนาคาร ออฟไลน์",
+      "content": "การเข้ารหัส AES-256 ระดับทหารทำงานในเบราว์เซอร์ของคุณ ไม่มีการส่งรหัสไปยังเซิร์ฟเวอร์ใด ๆ",
+      "badgeText": "ความปลอดภัยต้องมาก่อน"
     },
     {
       "type": "protect_performance",
-      "title": "Encrypt Any PDF in Under 1 Second",
-      "content": "AES-256 processing locally takes milliseconds — no upload, no queue, no wait."
+      "title": "เข้ารหัส PDF ใด ๆ ภายในเวลาไม่ถึง 1 วินาที",
+      "content": "การประมวลผล AES-256 ภายในเครื่องใช้เวลาเป็นมิลลิวินาที ไม่ต้องอัปโหลด ไม่ต้องรอคิว ไม่ต้องรอ",
+      "badgeText": "เร็วปานสายฟ้า"
     }
   ],
   "faqs": [
     {
-      "q": "What encryption standard is used?",
-      "a": "AES-256, the same standard used by banks and governments."
+      "q": "ใช้มาตรฐานการเข้ารหัสแบบใด?",
+      "a": "AES-256 ซึ่งเป็นมาตรฐานเดียวกับที่ธนาคารและรัฐบาลใช้"
     },
     {
-      "q": "Can I set different owner and user passwords?",
-      "a": "Yes, you can set both separately."
+      "q": "ฉันสามารถตั้งรหัสผ่านเจ้าของและผู้ใช้ที่แตกต่างกันได้หรือไม่?",
+      "a": "ใช่ คุณสามารถตั้งค่าทั้งสองแบบแยกกันได้"
     },
     {
-      "q": "Is the original file modified?",
-      "a": "No, a new encrypted copy is created."
+      "q": "ไฟล์ต้นฉบับถูกแก้ไขหรือไม่?",
+      "a": "ไม่ มีการสร้างสำเนาที่เข้ารหัสใหม่"
     },
     {
-      "q": "Can I restrict printing or editing?",
-      "a": "Yes, permission restrictions can be set alongside the password."
+      "q": "ฉันสามารถจำกัดการพิมพ์หรือการแก้ไขได้หรือไม่",
+      "a": "ใช่ คุณสามารถตั้งค่าข้อจำกัดการอนุญาตควบคู่ไปกับรหัสผ่านได้"
     },
     {
-      "q": "Is this free?",
-      "a": "ใช่ ฟรีทั้งหมด"
+      "q": "ฟรีหรือเปล่า?",
+      "a": "ใช่ สมบูรณ์ฟรี"
     }
-  ]
+  ],
+  "faqTitle": "คำถามที่พบบ่อย",
+  "supportCenter": "ศูนย์สนับสนุน"
 }

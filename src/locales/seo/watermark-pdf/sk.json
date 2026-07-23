@@ -1,67 +1,85 @@
 {
-  "title": "Add Watermark to PDF — Offline Watermarking",
-  "h1": "Stamp PDFs with Text or Image Watermarks Locally",
-  "description": "Add \"CONFIDENTIAL\", logos, or custom text watermarks to PDFs entirely in your browser. No upload. Best for users in Bratislava.",
+  "title": "Pridať vodoznak do PDF — Offline vodoznak",
+  "h1": "Lokálne opečiatkovať súbory PDF textovými alebo obrázkovými vodoznakmi",
+  "description": "Pridajte „DÔVERNÉ“, logá alebo vlastné textové vodoznaky do súborov PDF úplne vo svojom prehliadači. Žiadne nahrávanie. 100% bezpečné lokálne spracovanie.",
+  "buttonText": "Add Watermark",
+  "badges": [
+    "Vlastný text",
+    "Nastaviteľná nepriehľadnosť",
+    "Ochrana značky"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Watermark PDFs Offline?",
-      "content": "Adding watermarks means your document is sensitive. Never upload draft contracts or confidential reports to a cloud watermarker."
+      "type": "watermark_hero_features",
+      "title": "Prečo vodoznak PDF offline?",
+      "content": "Pridanie vodotlače znamená, že váš dokument je citlivý. Nikdy neodovzdávajte návrhy zmlúv alebo dôverné správy do cloudového vodoznaku."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Watermark a PDF",
+      "type": "watermark_how_to_steps",
+      "title": "Ako vložiť vodoznak do PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF to watermark."
+          "title": "Otvoriť PDF",
+          "description": "Vyberte PDF na vodotlač."
         },
         {
-          "title": "Design Watermark",
-          "description": "Type text or upload a logo image."
+          "title": "Dizajnový vodoznak",
+          "description": "Zadajte text alebo nahrajte obrázok loga."
         },
         {
-          "title": "Apply & Download",
-          "description": "Get your watermarked PDF in one click."
+          "title": "Použiť a stiahnuť",
+          "description": "Získajte svoje PDF s vodotlačou jedným kliknutím."
         }
-      ]
+      ],
+      "badgeText": "Rýchly sprievodca"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "Document Watermarking in Bratislava",
-      "content": "Legal and creative professionals in Bratislava stamp documents with watermarks without cloud uploads."
+      "type": "watermark_geo_targeting",
+      "title": "100% bezpečné miestne spracovanie",
+      "content": "Všetky operácie sa vykonávajú priamo na vašom lokálnom zariadení. Používame pokročilú technológiu WebAssembly na spracovanie vašich dokumentov bez ich nahrávania na externé servery, čím zaisťujeme úplné súkromie.",
+      "badgeText": "Miestne spracovanie"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Confidential Drafts Stay Private",
-      "content": "Draft contracts and unreleased designs watermarked locally without any server contact."
+      "type": "watermark_privacy_security",
+      "title": "Dôverné koncepty zostanú v súkromí",
+      "content": "Koncepty zmlúv a neuverejnené návrhy s vodotlačou lokálne bez akéhokoľvek kontaktu so serverom.",
+      "badgeText": "Bezpečnosť na prvom mieste"
     },
     {
-      "type": "transform_performance",
-      "title": "Stamp Thousands of Pages Instantly",
-      "content": "Apply watermarks to a 1000-page document in under 3 seconds. All in your browser."
+      "type": "watermark_performance",
+      "title": "Označte tisíce strán okamžite",
+      "content": "Aplikujte vodoznaky na 1000-stranový dokument za menej ako 3 sekundy. Všetko vo vašom prehliadači.",
+      "badgeText": "Rýchlosť blesku"
     }
   ],
   "faqs": [
     {
-      "q": "Can I use a logo as a watermark?",
-      "a": "Yes, upload a PNG logo and set transparency."
+      "q": "Môžem použiť logo ako vodotlač?",
+      "a": "Áno, nahrajte logo PNG a nastavte priehľadnosť."
     },
     {
-      "q": "Can I adjust watermark opacity?",
-      "a": "Yes, from 10% to 100% opacity."
+      "q": "Môžem upraviť nepriehľadnosť vodoznaku?",
+      "a": "Áno, od 10% do 100% nepriehľadnosti."
     },
     {
-      "q": "Can I apply it to specific pages only?",
-      "a": "Yes, choose page ranges."
+      "q": "Môžem ho použiť len na konkrétne stránky?",
+      "a": "Áno, vyberte rozsahy strán."
     },
     {
-      "q": "Is diagonal placement available?",
-      "a": "Yes, rotate watermarks to any angle."
+      "q": "Je k dispozícii diagonálne umiestnenie?",
+      "a": "Áno, otočte vodoznaky do ľubovoľného uhla."
     },
     {
-      "q": "Is this free?",
-      "a": "Áno, úplne zadarmo."
+      "q": "Je to zadarmo?",
+      "a": "Áno, vždy zadarmo."
     }
-  ]
+  ],
+  "faqTitle": "Často kladené otázky",
+  "supportCenter": "Centrum podpory"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Crop PDF Margins — Trim Pages Offline",
-  "h1": "Crop and Trim PDF Page Margins Instantly",
-  "description": "Remove unwanted whitespace or crop PDF pages to custom dimensions, all locally. No upload. Ideal for users in Jakarta.",
+  "title": "Pangkas Margin PDF — Pangkas Halaman Secara Offline",
+  "h1": "Pangkas dan Pangkas Margin Halaman PDF Secara Instan",
+  "description": "Hapus spasi yang tidak diinginkan atau pangkas halaman PDF ke dimensi khusus, semuanya secara lokal. Cepat dan sepenuhnya aman.",
+  "buttonText": "Crop PDF",
+  "badges": [
+    "Editor margin visual",
+    "Pemangkasan seragam",
+    "Nol latensi"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Crop PDFs Locally?",
-      "content": "Scanned documents often have large margins. Crop them locally without exposing internal document structure to the cloud."
+      "type": "crop_hero_features",
+      "title": "Mengapa Memotong PDF Secara Lokal?",
+      "content": "Dokumen yang dipindai seringkali memiliki margin yang besar. Pangkas secara lokal tanpa memaparkan struktur dokumen internal ke cloud."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Crop PDF Pages",
+      "type": "crop_how_to_steps",
+      "title": "Cara Memotong Halaman PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to crop."
+          "title": "Buka PDF",
+          "description": "Muat PDF yang ingin Anda potong."
         },
         {
-          "title": "Set Margins",
-          "description": "Drag guides or enter exact margin values."
+          "title": "Tetapkan Margin",
+          "description": "Tarik panduan atau masukkan nilai margin yang tepat."
         },
         {
-          "title": "Export Cropped PDF",
-          "description": "Download the trimmed PDF instantly."
+          "title": "Ekspor PDF yang Dipotong",
+          "description": "Unduh PDF yang telah dipotong secara instan."
         }
-      ]
+      ],
+      "badgeText": "Panduan Singkat"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Precise Cropping for Jakarta Users",
-      "content": "Architects and designers in Jakarta use our crop tool to clean up scanned blueprints without cloud uploads."
+      "type": "crop_geo_targeting",
+      "title": "Pemrosesan Lokal 100% Aman",
+      "content": "Semua operasi dilakukan langsung di perangkat lokal Anda. Kami menggunakan teknologi WebAssembly yang canggih untuk memproses dokumen Anda tanpa harus mengunggahnya ke server eksternal, sehingga memastikan privasi sepenuhnya.",
+      "badgeText": "Pemrosesan Lokal"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Technical Documents Stay Local",
-      "content": "Architectural plans and legal PDFs cropped locally without any server round-trip."
+      "type": "crop_privacy_security",
+      "title": "Dokumen Teknis Tetap Lokal",
+      "content": "Rencana arsitektur dan PDF legal dipotong secara lokal tanpa server bolak-balik.",
+      "badgeText": "Keamanan Pertama"
     },
     {
-      "type": "split_performance",
-      "title": "Crop Any Size PDF Instantly",
-      "content": "Crop margins from a 200-page document in under 2 seconds. All in your browser."
+      "type": "crop_performance",
+      "title": "Pangkas PDF Ukuran Apa Pun Secara Instan",
+      "content": "Pangkas margin dari dokumen 200 halaman dalam waktu kurang dari 2 detik. Semua ada di browser Anda.",
+      "badgeText": "Secepat Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "Can I crop all pages uniformly?",
-      "a": "Yes, apply the same crop to every page at once."
+      "q": "Bisakah saya memotong semua halaman secara seragam?",
+      "a": "Ya, terapkan pemangkasan yang sama ke setiap halaman sekaligus."
     },
     {
-      "q": "Can I crop individual pages?",
-      "a": "Yes, you can set per-page crop values."
+      "q": "Bisakah saya memotong halaman satu per satu?",
+      "a": "Ya, Anda dapat mengatur nilai pemotongan per halaman."
     },
     {
-      "q": "What are the minimum margin values?",
-      "a": "You can crop all the way to 0 margin on any side."
+      "q": "Berapa nilai margin minimumnya?",
+      "a": "Anda dapat memotong hingga 0 margin di sisi mana pun."
     },
     {
-      "q": "Will content be cut off?",
-      "a": "Only whitespace is removed by default; you control the guides."
+      "q": "Apakah konten akan terpotong?",
+      "a": "Hanya spasi putih yang dihapus secara default; Anda mengontrol panduannya."
     },
     {
-      "q": "Is this free?",
+      "q": "Apakah ini gratis?",
       "a": "Ya, sepenuhnya gratis."
     }
-  ]
+  ],
+  "faqTitle": "Pertanyaan yang Sering Diajukan",
+  "supportCenter": "Pusat Dukungan"
 }

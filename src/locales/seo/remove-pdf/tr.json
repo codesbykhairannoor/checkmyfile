@@ -1,0 +1,85 @@
+{
+  "title": "Sayfaları PDF'den Kaldır — PDF Sayfalarını Çevrimdışı Sil",
+  "h1": "Sayfaları PDF'den Anında Kaldır",
+  "description": "İstenmeyen sayfaları tarayıcınızın içinden PDF dosyanızdan güvenli bir şekilde silin. Hızlı ve tamamen güvenli.",
+  "buttonText": "Remove Pages",
+  "badges": [
+    "Seç ve Sil",
+    "Görsel Düzenleyici",
+    "Sıfır gecikme"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "remove_hero_features",
+      "title": "Sayfaları Neden Yerel Olarak Kaldırmalısınız?",
+      "content": "Belgenizdeki hassas veya gereksiz sayfaların silinmesi bir sunucuda değil cihazınızda yapılmalıdır. %100 gizlilik sağlıyoruz."
+    },
+    {
+      "type": "remove_how_to_steps",
+      "title": "PDF Sayfaları Nasıl Kaldırılır",
+      "steps": [
+        {
+          "title": "PDF'yi aç",
+          "description": "Temizlemek istediğiniz PDF'yi yükleyin."
+        },
+        {
+          "title": "Silinecek Sayfaları Seçin",
+          "description": "Sayfaların üzerine gelin ve bunları silinmek üzere işaretlemek için çöp kutusu simgesini tıklayın."
+        },
+        {
+          "title": "Temiz PDF'yi Dışa Aktar",
+          "description": "Silinen sayfalar olmadan yeni PDF'nizi indirin."
+        }
+      ],
+      "badgeText": "Hızlı Kılavuz"
+    },
+    {
+      "type": "remove_geo_targeting",
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
+    },
+    {
+      "type": "remove_privacy_security",
+      "title": "Tamamen Silme Gizliliği",
+      "content": "Bir sayfayı kaldırdığınızda, kaydetmeden önce tarayıcınızın belleğindeki belgeden kalıcı olarak silinir.",
+      "badgeText": "Önce Güvenlik"
+    },
+    {
+      "type": "remove_performance",
+      "title": "Anında Sayfa Kaldırma",
+      "content": "Optimize edilmiş WASM motorumuzu kullanarak 1000 sayfalık bir belgeden sayfaların çıkarılması ve silinmesi milisaniyeler alır.",
+      "badgeText": "Yıldırım Hızında"
+    }
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "faqs": [
+    {
+      "q": "Silinen sayfalar kurtarılabilir mi?",
+      "a": "Yeni PDF'yi indirdiğinizde silinen sayfalar o dosyadan kalıcı olarak kaldırılır. Orijinal dosyanıza dokunulmadan kalır."
+    },
+    {
+      "q": "PDF'mi yüklemem gerekiyor mu?",
+      "a": "Hayır. Sayfa kaldırma işleminin tamamı yerel olarak web tarayıcınızda gerçekleşir."
+    },
+    {
+      "q": "Kaç sayfa silebileceğimin bir sınırı var mı?",
+      "a": "Hayır, tamamen ücretsiz olarak istediğiniz kadar sayfayı silebilirsiniz."
+    },
+    {
+      "q": "Kalan sayfaların düzeni değişecek mi?",
+      "a": "Hayır, geri kalan sayfalar orijinal formatlarını ve düzenlerini aynen koruyacaktır."
+    },
+    {
+      "q": "Aynı anda birden fazla sayfa seçebilir miyim?",
+      "a": "Evet, birden fazla sayfayı tıklatarak hepsini aynı anda silinmek üzere işaretleyebilirsiniz."
+    }
+  ],
+  "supportCenter": "Destek Merkezi"
+}

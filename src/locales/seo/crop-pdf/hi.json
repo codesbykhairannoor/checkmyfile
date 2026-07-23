@@ -1,67 +1,85 @@
 {
-  "title": "Crop PDF Margins — Trim Pages Offline",
-  "h1": "Crop and Trim PDF Page Margins Instantly",
-  "description": "Remove unwanted whitespace or crop PDF pages to custom dimensions, all locally. No upload. Ideal for users in New Delhi.",
+  "title": "पीडीएफ मार्जिन क्रॉप करें - पेजों को ऑफ़लाइन ट्रिम करें",
+  "h1": "पीडीएफ पेज मार्जिन को तुरंत काटें और ट्रिम करें",
+  "description": "अवांछित रिक्त स्थान हटाएँ या पीडीएफ पृष्ठों को कस्टम आयामों में काटें, सभी स्थानीय रूप से। तेज़ और पूरी तरह से सुरक्षित.",
+  "buttonText": "Crop PDF",
+  "badges": [
+    "विज़ुअल मार्जिन संपादक",
+    "एकसमान फसल",
+    "शून्य विलंबता"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Crop PDFs Locally?",
-      "content": "Scanned documents often have large margins. Crop them locally without exposing internal document structure to the cloud."
+      "type": "crop_hero_features",
+      "title": "पीडीएफ़ को स्थानीय स्तर पर क्यों काटें?",
+      "content": "स्कैन किए गए दस्तावेज़ों में अक्सर बड़े मार्जिन होते हैं। आंतरिक दस्तावेज़ संरचना को क्लाउड पर उजागर किए बिना उन्हें स्थानीय रूप से क्रॉप करें।"
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Crop PDF Pages",
+      "type": "crop_how_to_steps",
+      "title": "पीडीएफ पेजों को कैसे काटें",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to crop."
+          "title": "पीडीएफ खोलें",
+          "description": "वह पीडीएफ लोड करें जिसे आप क्रॉप करना चाहते हैं।"
         },
         {
-          "title": "Set Margins",
-          "description": "Drag guides or enter exact margin values."
+          "title": "मार्जिन सेट करें",
+          "description": "गाइड खींचें या सटीक मार्जिन मान दर्ज करें।"
         },
         {
-          "title": "Export Cropped PDF",
-          "description": "Download the trimmed PDF instantly."
+          "title": "क्रॉप्ड पीडीएफ निर्यात करें",
+          "description": "ट्रिम की गई पीडीएफ को तुरंत डाउनलोड करें।"
         }
-      ]
+      ],
+      "badgeText": "त्वरित मार्गदर्शिका"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Precise Cropping for New Delhi Users",
-      "content": "Architects and designers in New Delhi use our crop tool to clean up scanned blueprints without cloud uploads."
+      "type": "crop_geo_targeting",
+      "title": "100% सुरक्षित स्थानीय प्रसंस्करण",
+      "content": "सभी ऑपरेशन सीधे आपके स्थानीय डिवाइस पर किए जाते हैं। हम पूर्ण गोपनीयता सुनिश्चित करते हुए, आपके दस्तावेज़ों को बाहरी सर्वर पर अपलोड किए बिना संसाधित करने के लिए उन्नत WebAssembly तकनीक का उपयोग करते हैं।",
+      "badgeText": "स्थानीय प्रसंस्करण"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Technical Documents Stay Local",
-      "content": "Architectural plans and legal PDFs cropped locally without any server round-trip."
+      "type": "crop_privacy_security",
+      "title": "तकनीकी दस्तावेज़ स्थानीय रहें",
+      "content": "आर्किटेक्चरल योजनाएं और कानूनी पीडीएफ बिना किसी सर्वर राउंड-ट्रिप के स्थानीय रूप से क्रॉप किए गए।",
+      "badgeText": "सुरक्षा पहले"
     },
     {
-      "type": "split_performance",
-      "title": "Crop Any Size PDF Instantly",
-      "content": "Crop margins from a 200-page document in under 2 seconds. All in your browser."
+      "type": "crop_performance",
+      "title": "किसी भी आकार की पीडीएफ को तुरंत काटें",
+      "content": "2 सेकंड से कम समय में 200 पेज के दस्तावेज़ से मार्जिन काटें। सब कुछ आपके ब्राउज़र में.",
+      "badgeText": "बिजली की तेजी"
     }
   ],
   "faqs": [
     {
-      "q": "Can I crop all pages uniformly?",
-      "a": "Yes, apply the same crop to every page at once."
+      "q": "क्या मैं सभी पृष्ठों को समान रूप से काट सकता हूँ?",
+      "a": "हां, प्रत्येक पृष्ठ पर एक ही फसल को एक बार में लागू करें।"
     },
     {
-      "q": "Can I crop individual pages?",
-      "a": "Yes, you can set per-page crop values."
+      "q": "क्या मैं अलग-अलग पेज काट सकता हूँ?",
+      "a": "हाँ, आप प्रति पृष्ठ फसल मान निर्धारित कर सकते हैं।"
     },
     {
-      "q": "What are the minimum margin values?",
-      "a": "You can crop all the way to 0 margin on any side."
+      "q": "न्यूनतम मार्जिन मान क्या हैं?",
+      "a": "आप किसी भी तरफ से शून्य मार्जिन तक क्रॉप कर सकते हैं।"
     },
     {
-      "q": "Will content be cut off?",
-      "a": "Only whitespace is removed by default; you control the guides."
+      "q": "क्या सामग्री काट दी जाएगी?",
+      "a": "डिफ़ॉल्ट रूप से केवल रिक्त स्थान हटा दिया जाता है; आप गाइडों को नियंत्रित करते हैं."
     },
     {
-      "q": "Is this free?",
-      "a": "हाँ, पूरी तरह मुफ्त।"
+      "q": "क्या यह मुफ़्त है?",
+      "a": "हाँ, पूर्णतया निःशुल्क।"
     }
-  ]
+  ],
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्न",
+  "supportCenter": "सहायता केंद्र"
 }

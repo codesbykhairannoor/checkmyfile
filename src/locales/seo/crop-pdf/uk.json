@@ -1,67 +1,85 @@
 {
-  "title": "Crop PDF Margins — Trim Pages Offline",
-  "h1": "Crop and Trim PDF Page Margins Instantly",
-  "description": "Remove unwanted whitespace or crop PDF pages to custom dimensions, all locally. No upload. Ideal for users in Kyiv.",
+  "title": "Обрізати поля PDF — обрізати сторінки офлайн",
+  "h1": "Миттєво обрізайте та обрізайте поля сторінки PDF",
+  "description": "Видаліть непотрібні пробіли або обріжте сторінки PDF до спеціальних розмірів, усе локально. Швидко та повністю безпечно.",
+  "buttonText": "Crop PDF",
+  "badges": [
+    "Візуальний редактор полів",
+    "Рівномірне обрізання",
+    "Нульова затримка"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Crop PDFs Locally?",
-      "content": "Scanned documents often have large margins. Crop them locally without exposing internal document structure to the cloud."
+      "type": "crop_hero_features",
+      "title": "Навіщо обрізати PDF-файли локально?",
+      "content": "Відскановані документи часто мають великі поля. Обріжте їх локально, не відкриваючи внутрішню структуру документа для хмари."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Crop PDF Pages",
+      "type": "crop_how_to_steps",
+      "title": "Як обрізати сторінки PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to crop."
+          "title": "Відкрити PDF",
+          "description": "Завантажте PDF-файл, який потрібно обрізати."
         },
         {
-          "title": "Set Margins",
-          "description": "Drag guides or enter exact margin values."
+          "title": "Встановити поля",
+          "description": "Перетягніть напрямні або введіть точні значення поля."
         },
         {
-          "title": "Export Cropped PDF",
-          "description": "Download the trimmed PDF instantly."
+          "title": "Експорт обрізаного PDF",
+          "description": "Миттєво завантажте скорочений PDF-файл."
         }
-      ]
+      ],
+      "badgeText": "Короткий посібник"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Precise Cropping for Kyiv Users",
-      "content": "Architects and designers in Kyiv use our crop tool to clean up scanned blueprints without cloud uploads."
+      "type": "crop_geo_targeting",
+      "title": "100% безпечна локальна обробка",
+      "content": "Усі операції виконуються безпосередньо на локальному пристрої. Ми використовуємо передову технологію WebAssembly для обробки ваших документів, не завантажуючи їх на зовнішні сервери, забезпечуючи повну конфіденційність.",
+      "badgeText": "Локальна обробка"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Technical Documents Stay Local",
-      "content": "Architectural plans and legal PDFs cropped locally without any server round-trip."
+      "type": "crop_privacy_security",
+      "title": "Технічні документи залишаються локальними",
+      "content": "Архітектурні плани та юридичні PDF-файли, обрізані локально без будь-якого звернення до сервера.",
+      "badgeText": "Безпека перш за все"
     },
     {
-      "type": "split_performance",
-      "title": "Crop Any Size PDF Instantly",
-      "content": "Crop margins from a 200-page document in under 2 seconds. All in your browser."
+      "type": "crop_performance",
+      "title": "Миттєво обрізайте PDF будь-якого розміру",
+      "content": "Обріжте поля 200-сторінкового документа менш ніж за 2 секунди. Все у вашому браузері.",
+      "badgeText": "Блискавичний"
     }
   ],
   "faqs": [
     {
-      "q": "Can I crop all pages uniformly?",
-      "a": "Yes, apply the same crop to every page at once."
+      "q": "Чи можу я рівномірно обрізати всі сторінки?",
+      "a": "Так, застосувати однакове кадрування до кожної сторінки одночасно."
     },
     {
-      "q": "Can I crop individual pages?",
-      "a": "Yes, you can set per-page crop values."
+      "q": "Чи можна обрізати окремі сторінки?",
+      "a": "Так, ви можете встановити значення кадрування для кожної сторінки."
     },
     {
-      "q": "What are the minimum margin values?",
-      "a": "You can crop all the way to 0 margin on any side."
+      "q": "Які мінімальні значення маржі?",
+      "a": "Ви можете обрізати до поля 0 з будь-якого боку."
     },
     {
-      "q": "Will content be cut off?",
-      "a": "Only whitespace is removed by default; you control the guides."
+      "q": "Вміст буде вирізано?",
+      "a": "За замовчуванням видаляються лише пробіли; ви керуєте напрямними."
     },
     {
-      "q": "Is this free?",
-      "a": "Так, повністю безкоштовно."
+      "q": "Це безкоштовно?",
+      "a": "Так, абсолютно безкоштовно."
     }
-  ]
+  ],
+  "faqTitle": "Часті запитання",
+  "supportCenter": "Центр підтримки"
 }

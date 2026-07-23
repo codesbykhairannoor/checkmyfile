@@ -1,67 +1,85 @@
 {
-  "title": "Password Protect PDF — Secure Files Offline",
-  "h1": "Add Password Protection to PDF Files Instantly",
-  "description": "Encrypt PDF files with AES-256 directly in your browser. Your document never leaves your device. Ideal for users in Istanbul.",
+  "title": "PDF'yi Parolayla Koruyun — Dosyaların Çevrimdışı Güvenliğini Sağlayın",
+  "h1": "PDF Dosyalarına Anında Şifre Koruması Ekleyin",
+  "description": "PDF dosyalarını doğrudan tarayıcınızda AES-256 ile şifreleyin. Belgeniz asla cihazınızdan ayrılmaz. %100 güvenli yerel işleme.",
+  "buttonText": "Protect PDF",
+  "badges": [
+    "AES-256 Şifreleme",
+    "Güvenli Şifre",
+    "Yalnızca İstemci Tarafı"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "protect_hero_features",
-      "title": "Why Protect PDFs Locally?",
-      "content": "Adding a password means the file is sensitive. Never upload sensitive files to a cloud encryptor. Ours runs entirely offline with AES-256 encryption."
+      "title": "PDF'leri Neden Yerel Olarak Korumalısınız?",
+      "content": "Parola eklemek, dosyanın hassas olduğu anlamına gelir. Hassas dosyaları asla bir bulut şifreleyiciye yüklemeyin. Bizimki AES-256 şifrelemeyle tamamen çevrimdışı çalışıyor."
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Password Protect a PDF",
+      "title": "PDF'yi Parolayla Koruma",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF you want to lock."
+          "title": "PDF'yi aç",
+          "description": "Kilitlemek istediğiniz PDF'yi seçin."
         },
         {
-          "title": "Set Password",
-          "description": "Choose a strong password for encryption."
+          "title": "Şifreyi Ayarla",
+          "description": "Şifreleme için güçlü bir şifre seçin."
         },
         {
-          "title": "Download Protected PDF",
-          "description": "Get your AES-256 encrypted PDF immediately."
+          "title": "Korumalı PDF'yi İndir",
+          "description": "AES-256 şifreli PDF'nizi hemen alın."
         }
-      ]
+      ],
+      "badgeText": "Hızlı Kılavuz"
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Vault-Level PDF Protection for Istanbul",
-      "content": "Legal and finance professionals in Istanbul encrypt documents with AES-256 strength without exposing files to any server."
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
     },
     {
       "type": "protect_privacy_security",
-      "title": "AES-256 Encryption — Bank-Grade, Offline",
-      "content": "Military-grade AES-256 encryption runs in your browser. No key is ever transmitted to any server."
+      "title": "AES-256 Şifreleme — Banka Düzeyinde, Çevrimdışı",
+      "content": "Tarayıcınızda askeri düzeyde AES-256 şifreleme çalışır. Hiçbir anahtar hiçbir sunucuya iletilmez.",
+      "badgeText": "Önce Güvenlik"
     },
     {
       "type": "protect_performance",
-      "title": "Encrypt Any PDF in Under 1 Second",
-      "content": "AES-256 processing locally takes milliseconds — no upload, no queue, no wait."
+      "title": "Herhangi Bir PDF'yi 1 Saniyeden Kısa Bir Sürede Şifreleyin",
+      "content": "AES-256'nın yerel olarak işlenmesi milisaniyeler alır; yükleme yok, kuyruk yok, bekleme yok.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [
     {
-      "q": "What encryption standard is used?",
-      "a": "AES-256, the same standard used by banks and governments."
+      "q": "Hangi şifreleme standardı kullanılıyor?",
+      "a": "AES-256, bankalar ve hükümetler tarafından kullanılan standartla aynıdır."
     },
     {
-      "q": "Can I set different owner and user passwords?",
-      "a": "Yes, you can set both separately."
+      "q": "Farklı sahip ve kullanıcı şifreleri belirleyebilir miyim?",
+      "a": "Evet ikisini de ayrı ayrı ayarlayabilirsiniz."
     },
     {
-      "q": "Is the original file modified?",
-      "a": "No, a new encrypted copy is created."
+      "q": "Orijinal dosya değiştirildi mi?",
+      "a": "Hayır, yeni bir şifrelenmiş kopya oluşturulur."
     },
     {
-      "q": "Can I restrict printing or editing?",
-      "a": "Yes, permission restrictions can be set alongside the password."
+      "q": "Yazdırmayı veya düzenlemeyi kısıtlayabilir miyim?",
+      "a": "Evet, şifrenin yanında izin kısıtlamaları da ayarlanabilir."
     },
     {
-      "q": "Is this free?",
+      "q": "Bu bedava mı?",
       "a": "Evet, tamamen ücretsiz."
     }
-  ]
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi"
 }

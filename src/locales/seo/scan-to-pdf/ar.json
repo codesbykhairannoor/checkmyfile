@@ -1,67 +1,85 @@
 {
-  "title": "Scan to PDF — Convert Camera Shots Offline",
-  "h1": "Convert Photos and Scans to PDF Locally",
-  "description": "Turn photos of documents taken with your camera into clean PDFs entirely in your browser. No upload. Best for users in Riyadh.",
+  "title": "المسح الضوئي إلى PDF — تحويل لقطات الكاميرا دون الاتصال بالإنترنت",
+  "h1": "تحويل الصور والمسح الضوئي إلى PDF محليًا",
+  "description": "قم بتحويل صور المستندات الملتقطة بالكاميرا إلى ملفات PDF نظيفة بالكامل في متصفحك. لا يوجد تحميل. معالجة محلية آمنة بنسبة 100%.",
+  "buttonText": "Scan to PDF",
+  "badges": [
+    "استخدم كاميرا الويب",
+    "سكانر متنقل",
+    "الاقتصاص التلقائي"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Use Scan-to-PDF Offline?",
-      "content": "Photos of documents contain sensitive information. Process them locally without any cloud access."
+      "type": "scan_hero_features",
+      "title": "لماذا نستخدم المسح الضوئي إلى PDF في وضع عدم الاتصال؟",
+      "content": "تحتوي صور المستندات على معلومات حساسة. قم بمعالجتها محليًا دون أي وصول إلى السحابة."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Convert Scans to PDF",
+      "type": "scan_how_to_steps",
+      "title": "كيفية تحويل المسح إلى PDF",
       "steps": [
         {
-          "title": "Import Photos",
-          "description": "Select photos taken with your phone or camera."
+          "title": "استيراد الصور",
+          "description": "حدد الصور الملتقطة بهاتفك أو الكاميرا."
         },
         {
-          "title": "Enhance Scan",
-          "description": "Auto-crop, deskew, and enhance contrast."
+          "title": "تعزيز المسح",
+          "description": "القص التلقائي، والانحناء، وتعزيز التباين."
         },
         {
-          "title": "Export PDF",
-          "description": "Download a clean, professional-looking scanned PDF."
+          "title": "تصدير قوات الدفاع الشعبي",
+          "description": "قم بتنزيل ملف PDF ممسوح ضوئيًا بشكل نظيف واحترافي."
         }
-      ]
+      ],
+      "badgeText": "الدليل السريع"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Scan to PDF for Riyadh Field Workers",
-      "content": "Field workers and freelancers in Riyadh digitize paper documents on-the-go without uploading to cloud services."
+      "type": "scan_geo_targeting",
+      "title": "معالجة محلية آمنة بنسبة 100%",
+      "content": "يتم تنفيذ جميع العمليات مباشرة على جهازك المحلي. نحن نستخدم تقنية WebAssembly المتقدمة لمعالجة مستنداتك دون تحميلها على خوادم خارجية، مما يضمن الخصوصية الكاملة.",
+      "badgeText": "المعالجة المحلية"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Documents Stay on Device",
-      "content": "Invoices, contracts, and ID scans processed entirely in browser memory without any server access."
+      "type": "scan_privacy_security",
+      "title": "تبقى المستندات الممسوحة ضوئيًا على الجهاز",
+      "content": "تتم معالجة الفواتير والعقود وعمليات فحص الهوية بالكامل في ذاكرة المتصفح دون أي وصول إلى الخادم.",
+      "badgeText": "الأمن أولا"
     },
     {
-      "type": "organizer_performance",
-      "title": "Convert Scans in Real Time",
-      "content": "Photo enhancement and PDF generation happens in milliseconds, even for high-resolution camera shots."
+      "type": "scan_performance",
+      "title": "تحويل عمليات المسح في الوقت الحقيقي",
+      "content": "يتم تحسين الصور وإنشاء ملفات PDF في أجزاء من الثانية، حتى بالنسبة للقطات الكاميرا عالية الدقة.",
+      "badgeText": "بسرعة البرق"
     }
   ],
   "faqs": [
     {
-      "q": "What photo formats are supported?",
-      "a": "JPG, PNG, WebP, and HEIC from modern cameras."
+      "q": "ما هي تنسيقات الصور المدعومة؟",
+      "a": "JPG، PNG، WebP، وHEIC من الكاميرات الحديثة."
     },
     {
-      "q": "Does it fix tilted scans?",
-      "a": "Yes, auto-deskew corrects slight angles automatically."
+      "q": "هل يصلح عمليات المسح المائلة؟",
+      "a": "نعم، يقوم نظام الانحراف التلقائي بتصحيح الزوايا الطفيفة تلقائيًا."
     },
     {
-      "q": "Can I combine multiple scans?",
-      "a": "Yes, add multiple photos to create a multi-page PDF."
+      "q": "هل يمكنني الجمع بين عمليات المسح المتعددة؟",
+      "a": "نعم، أضف صورًا متعددة لإنشاء ملف PDF متعدد الصفحات."
     },
     {
-      "q": "Does it enhance contrast?",
-      "a": "Yes, document enhancement mode sharpens text for clarity."
+      "q": "هل يعزز التباين؟",
+      "a": "نعم، يعمل وضع تحسين المستند على زيادة حدة النص من أجل الوضوح."
     },
     {
-      "q": "Is this free?",
-      "a": "نعم، مجاناً تماماً."
+      "q": "هل هذا مجاني؟",
+      "a": "نعم، دائما مجانا."
     }
-  ]
+  ],
+  "faqTitle": "الأسئلة المتداولة",
+  "supportCenter": "مركز الدعم"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Image to PDF — Combine Photos Offline",
-  "h1": "Convert Images to PDF Without Uploading",
-  "description": "Turn JPG, PNG, and WebP images into a single PDF document in your browser. Your photos stay private. Perfect for users in Kyiv.",
+  "title": "Зображення в PDF — об’єднайте фотографії офлайн",
+  "h1": "Перетворення зображень у PDF без завантаження",
+  "description": "Перетворіть зображення JPG, PNG і WebP в один документ PDF у своєму браузері. Ваші фотографії залишаються приватними. 100% безпечна локальна обробка.",
+  "buttonText": "Convert Images",
+  "badges": [
+    "Портфоліо",
+    "Сканування ідентифікаторів",
+    "Фотоальбоми"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Images Offline?",
-      "content": "Photos contain location data and personal moments. Convert them to PDF without exposing them to any cloud service."
+      "type": "image_hero_features",
+      "title": "Навіщо конвертувати зображення офлайн?",
+      "content": "Фотографії містять дані про місцезнаходження та особисті моменти. Перетворюйте їх у формат PDF, не піддаючи їх жодному хмарному сервісу."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Turn Images Into PDF",
+      "type": "image_how_to_steps",
+      "title": "Як перетворити зображення на PDF",
       "steps": [
         {
-          "title": "Select Images",
-          "description": "Choose JPG, PNG, or WebP files from your device."
+          "title": "Виберіть Зображення",
+          "description": "Виберіть файли JPG, PNG або WebP зі свого пристрою."
         },
         {
-          "title": "Arrange Order",
-          "description": "Drag to reorder images before generating the PDF."
+          "title": "Оформити замовлення",
+          "description": "Перетягніть, щоб змінити порядок зображень перед створенням PDF."
         },
         {
-          "title": "Export PDF",
-          "description": "Download your image PDF in one click."
+          "title": "Експорт PDF",
+          "description": "Завантажте своє зображення у форматі PDF в один клік."
         }
-      ]
+      ],
+      "badgeText": "Короткий посібник"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Image to PDF for Kyiv Users",
-      "content": "Photographers and designers in Kyiv use our tool to package portfolios without cloud uploads."
+      "type": "image_geo_targeting",
+      "title": "100% безпечна локальна обробка",
+      "content": "Усі операції виконуються безпосередньо на локальному пристрої. Ми використовуємо передову технологію WebAssembly для обробки ваших документів, не завантажуючи їх на зовнішні сервери, забезпечуючи повну конфіденційність.",
+      "badgeText": "Локальна обробка"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Photos Never Leave Your Device",
-      "content": "Personal photos, ID scans, medical images — all converted 100% locally without any server contact."
+      "type": "image_privacy_security",
+      "title": "Фотографії ніколи не залишають ваш пристрій",
+      "content": "Особисті фотографії, скани ідентифікаційних номерів, медичні зображення — усе конвертовано на 100% локально без жодного зв’язку з сервером.",
+      "badgeText": "Безпека перш за все"
     },
     {
-      "type": "combiner_performance",
-      "title": "Batch Convert Instantly",
-      "content": "Convert 50 images into a single PDF in under 5 seconds. No upload, no wait."
+      "type": "image_performance",
+      "title": "Пакетне перетворення миттєво",
+      "content": "Перетворіть 50 зображень в один PDF менш ніж за 5 секунд. Ні завантаження, ні очікування.",
+      "badgeText": "Блискавичний"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are supported?",
-      "a": "JPG, JPEG, PNG, and WebP are all supported."
+      "q": "Які формати зображень підтримуються?",
+      "a": "Підтримуються JPG, JPEG, PNG і WebP."
     },
     {
-      "q": "Can I combine multiple images?",
-      "a": "Yes, select as many images as you want and reorder them."
+      "q": "Чи можна поєднати кілька зображень?",
+      "a": "Так, виберіть скільки завгодно зображень і змініть їх порядок."
     },
     {
-      "q": "Is image quality preserved?",
-      "a": "Yes, images are embedded at their original resolution."
+      "q": "Чи збережено якість зображення?",
+      "a": "Так, зображення вбудовуються з оригінальною роздільною здатністю."
     },
     {
-      "q": "Does it strip EXIF metadata?",
-      "a": "You can optionally strip EXIF data for privacy."
+      "q": "Чи видаляє метадані EXIF?",
+      "a": "Ви можете додатково видалити дані EXIF ​​для конфіденційності."
     },
     {
-      "q": "Is there a limit on image count?",
-      "a": "Так, повністю безкоштовно."
+      "q": "Чи є обмеження на кількість зображень?",
+      "a": "Без обмежень! Об’єднайте сотні зображень в один PDF-файл."
     }
-  ]
+  ],
+  "faqTitle": "Часті запитання",
+  "supportCenter": "Центр підтримки"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "Excel to PDF — Convert Spreadsheets Offline",
-  "h1": "Convert Excel Spreadsheets to PDF Securely",
-  "description": "Turn .xlsx and .csv files into crisp PDFs locally in your browser. Financial data stays on your device. Perfect for users in Oslo.",
+  "title": "Excel til PDF — Konverter regneark frakoblet",
+  "h1": "Konverter Excel-regneark til PDF sikkert",
+  "description": "Gjør .xlsx- og .csv-filer til skarpe PDF-filer lokalt i nettleseren din. Økonomiske data forblir på enheten din. 100 % sikker lokal behandling.",
+  "buttonText": "Convert Spreadsheet",
+  "badges": [
+    "Finansielle rapporter",
+    "Fakturaer",
+    "Dataeksport"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Excel Offline?",
-      "content": "Spreadsheets often contain sensitive financial data. Our browser-based engine converts without any server involvement."
+      "type": "excel_hero_features",
+      "title": "Hvorfor konvertere Excel frakoblet?",
+      "content": "Regneark inneholder ofte sensitive økonomiske data. Vår nettleserbaserte motor konverterer uten noen serverinvolvering."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Export Excel as PDF",
+      "type": "excel_how_to_steps",
+      "title": "Hvordan eksportere Excel som PDF",
       "steps": [
         {
-          "title": "Open Spreadsheet",
-          "description": "Select your .xlsx or .csv file."
+          "title": "Åpne regneark",
+          "description": "Velg .xlsx- eller .csv-filen."
         },
         {
-          "title": "Choose Sheet Range",
-          "description": "Pick which sheets or rows to include."
+          "title": "Velg Arkområde",
+          "description": "Velg hvilke ark eller rader som skal inkluderes."
         },
         {
-          "title": "Export as PDF",
-          "description": "Download your spreadsheet as a clean PDF."
+          "title": "Eksporter som PDF",
+          "description": "Last ned regnearket som en ren PDF."
         }
-      ]
+      ],
+      "badgeText": "Hurtigguide"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Excel to PDF for Oslo Businesses",
-      "content": "Businesses in Oslo use our tool to share financial reports without exposing raw spreadsheet data."
+      "type": "excel_geo_targeting",
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle operasjoner utføres direkte på din lokale enhet. Vi bruker avansert WebAssembly-teknologi for å behandle dokumentene dine uten å laste dem opp til eksterne servere, noe som sikrer fullstendig personvern.",
+      "badgeText": "Lokal behandling"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Protect Financial Spreadsheets",
-      "content": "Balance sheets, payroll data — all processed offline. Zero data sent to any third party."
+      "type": "excel_privacy_security",
+      "title": "Beskytt finansielle regneark",
+      "content": "Balanser, lønnsdata – alt behandlet offline. Null data sendt til tredjepart.",
+      "badgeText": "Sikkerhet først"
     },
     {
-      "type": "combiner_performance",
-      "title": "Spreadsheet-to-PDF in Seconds",
-      "content": "No upload queue, no compression artifacts. Your spreadsheet renders natively in-browser."
+      "type": "excel_performance",
+      "title": "Regneark-til-PDF på sekunder",
+      "content": "Ingen opplastingskø, ingen komprimeringsartefakter. Regnearket ditt gjengis naturlig i nettleseren.",
+      "badgeText": "Lynrask"
     }
   ],
   "faqs": [
     {
-      "q": "Are all Excel formulas preserved?",
-      "a": "Yes, formula results are captured in the PDF snapshot."
+      "q": "Er alle Excel-formler bevart?",
+      "a": "Ja, formelresultater fanges opp i PDF-øyeblikksbildet."
     },
     {
-      "q": "Can I convert multiple sheets?",
-      "a": "Yes, you can include all sheets or specific ones."
+      "q": "Kan jeg konvertere flere ark?",
+      "a": "Ja, du kan inkludere alle ark eller spesifikke."
     },
     {
-      "q": "What file types are supported?",
-      "a": ".xlsx, .xls, and .csv are all supported."
+      "q": "Hvilke filtyper støttes?",
+      "a": ".xlsx, .xls og .csv støttes alle."
     },
     {
-      "q": "Is this secure for financial data?",
-      "a": "Absolutely. The file never leaves your browser."
+      "q": "Er dette sikkert for økonomiske data?",
+      "a": "Absolutt. Filen forlater aldri nettleseren din."
     },
     {
-      "q": "Does it support graphs?",
-      "a": "Ja, helt gratis."
+      "q": "Støtter den grafer?",
+      "a": "Diagrammer og innebygde grafer gjengis i PDF-en."
     }
-  ]
+  ],
+  "faqTitle": "Ofte stilte spørsmål",
+  "supportCenter": "Støttesenter"
 }

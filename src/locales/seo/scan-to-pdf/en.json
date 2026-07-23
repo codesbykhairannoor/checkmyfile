@@ -1,15 +1,27 @@
 {
   "title": "Scan to PDF — Convert Camera Shots Offline",
   "h1": "Convert Photos and Scans to PDF Locally",
-  "description": "Turn photos of documents taken with your camera into clean PDFs entirely in your browser. No upload. Best for users in New York.",
+  "description": "Turn photos of documents taken with your camera into clean PDFs entirely in your browser. No upload. 100% secure local processing.",
+  "buttonText": "Scan to PDF",
+  "badges": [
+    "Use Webcam",
+    "Mobile Scanner",
+    "Auto Crop"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
+      "type": "scan_hero_features",
       "title": "Why Use Scan-to-PDF Offline?",
       "content": "Photos of documents contain sensitive information. Process them locally without any cloud access."
     },
     {
-      "type": "organizer_how_to_steps",
+      "type": "scan_how_to_steps",
       "title": "How to Convert Scans to PDF",
       "steps": [
         {
@@ -27,17 +39,17 @@
       ]
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Scan to PDF for New York Field Workers",
-      "content": "Field workers and freelancers in New York digitize paper documents on-the-go without uploading to cloud services."
+      "type": "scan_geo_targeting",
+      "title": "100% Secure Local Processing",
+      "content": "All operations are performed directly on your local device. We use advanced WebAssembly technology to process your documents without ever uploading them to external servers, ensuring complete privacy."
     },
     {
-      "type": "organizer_privacy_security",
+      "type": "scan_privacy_security",
       "title": "Scanned Documents Stay on Device",
       "content": "Invoices, contracts, and ID scans processed entirely in browser memory without any server access."
     },
     {
-      "type": "organizer_performance",
+      "type": "scan_performance",
       "title": "Convert Scans in Real Time",
       "content": "Photo enhancement and PDF generation happens in milliseconds, even for high-resolution camera shots."
     }

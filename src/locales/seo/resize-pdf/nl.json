@@ -1,67 +1,85 @@
 {
-  "title": "Resize PDF Pages — Change Paper Size Offline",
-  "h1": "Resize PDF Pages to A4, Letter, or Custom Sizes",
-  "description": "Change the paper size of every PDF page to A4, US Letter, or custom dimensions entirely in your browser. No upload. Ideal for users in Amsterdam.",
+  "title": "Formaat van PDF-pagina's wijzigen — Papierformaat offline wijzigen",
+  "h1": "Formaat van PDF-pagina's wijzigen naar A4-, Letter- of aangepaste formaten",
+  "description": "Wijzig het papierformaat van elke PDF-pagina volledig in uw browser naar A4, US Letter of aangepaste afmetingen. Geen upload. 100% veilige lokale verwerking.",
+  "buttonText": "Resize Pages",
+  "badges": [
+    "A4, Letter, aangepast",
+    "Marges toevoegen",
+    "Formaatcorrectie"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Resize PDFs Locally?",
-      "content": "Preparing documents for printing requires proper page sizing. Resize locally without uploading internal documents to the cloud."
+      "type": "resize_hero_features",
+      "title": "Waarom het formaat van PDF's lokaal wijzigen?",
+      "content": "Voor het voorbereiden van documenten voor afdrukken is het juiste paginaformaat vereist. Pas het formaat lokaal aan zonder interne documenten naar de cloud te uploaden."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Resize PDF Pages",
+      "type": "resize_how_to_steps",
+      "title": "Het formaat van PDF-pagina's wijzigen",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page dimensions."
+          "title": "PDF openen",
+          "description": "Laad de PDF met onjuiste paginaafmetingen."
         },
         {
-          "title": "Select Target Size",
-          "description": "Choose A4, Letter, A3, or enter custom dimensions."
+          "title": "Selecteer Doelgrootte",
+          "description": "Kies A4, Letter, A3 of voer aangepaste afmetingen in."
         },
         {
-          "title": "Download Resized PDF",
-          "description": "Get your properly sized document instantly."
+          "title": "Download het formaat van de PDF",
+          "description": "Ontvang onmiddellijk uw document met het juiste formaat."
         }
-      ]
+      ],
+      "badgeText": "Beknopte handleiding"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Resizing for Amsterdam Print Shops",
-      "content": "Print shops and offices in Amsterdam resize documents to standard sizes without cloud dependency."
+      "type": "resize_geo_targeting",
+      "title": "100% veilige lokale verwerking",
+      "content": "Alle bewerkingen worden rechtstreeks op uw lokale apparaat uitgevoerd. We gebruiken geavanceerde WebAssembly-technologie om uw documenten te verwerken zonder ze ooit naar externe servers te uploaden, waardoor volledige privacy wordt gegarandeerd.",
+      "badgeText": "Lokale verwerking"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Internal Documents Stay Internal",
-      "content": "Resize business reports and proposals without any server-side processing."
+      "type": "resize_privacy_security",
+      "title": "Interne documenten blijven intern",
+      "content": "Pas het formaat van bedrijfsrapporten en -voorstellen aan zonder enige verwerking op de server.",
+      "badgeText": "Beveiliging eerst"
     },
     {
-      "type": "transform_performance",
-      "title": "Resize Hundreds of Pages Instantly",
-      "content": "Resizing a 500-page PDF takes under 2 seconds. All in your browser."
+      "type": "resize_performance",
+      "title": "Het formaat van honderden pagina's direct wijzigen",
+      "content": "Het wijzigen van het formaat van een PDF van 500 pagina's duurt minder dan 2 seconden. Alles in uw browser.",
+      "badgeText": "Bliksemsnel"
     }
   ],
   "faqs": [
     {
-      "q": "What sizes are available?",
-      "a": "A4, A3, A5, US Letter, Legal, and custom dimensions."
+      "q": "Welke maten zijn beschikbaar?",
+      "a": "A4, A3, A5, US Letter, Legal en aangepaste afmetingen."
     },
     {
-      "q": "Does content scale with the page?",
-      "a": "Yes, content is scaled proportionally by default."
+      "q": "Schaalt de inhoud mee met de pagina?",
+      "a": "Ja, de inhoud wordt standaard proportioneel geschaald."
     },
     {
-      "q": "Can I resize individual pages?",
-      "a": "Yes, apply different sizes to specific pages."
+      "q": "Kan ik het formaat van afzonderlijke pagina's wijzigen?",
+      "a": "Ja, pas verschillende formaten toe op specifieke pagina's."
     },
     {
-      "q": "Is the quality affected?",
-      "a": "Vector content is re-rendered perfectly; images may scale."
+      "q": "Wordt de kwaliteit aangetast?",
+      "a": "Vectorinhoud wordt perfect opnieuw weergegeven; afbeeldingen kunnen schalen."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, volledig gratis."
+      "q": "Is dit gratis?",
+      "a": "Ja, helemaal gratis."
     }
-  ]
+  ],
+  "faqTitle": "Veelgestelde vragen",
+  "supportCenter": "Ondersteuningscentrum"
 }

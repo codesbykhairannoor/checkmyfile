@@ -1,67 +1,85 @@
 {
-  "title": "Organize PDF Pages — Reorder & Delete Offline",
-  "h1": "Reorder, Delete, or Duplicate PDF Pages Locally",
-  "description": "Drag and drop to rearrange, remove, or duplicate PDF pages entirely in your browser. No upload. Great for users in Copenhagen.",
+  "title": "Organiser PDF-sider — Omarranger og slet offline",
+  "h1": "Omarranger, slet eller dupliker PDF-sider lokalt",
+  "description": "Træk og slip for at omarrangere, fjerne eller duplikere PDF-sider helt i din browser. Hurtigt og helt sikkert.",
+  "buttonText": "Organize Pages",
+  "badges": [
+    "Træk og slip",
+    "Omarranger sider",
+    "Visuel editor"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Organize PDFs Locally?",
-      "content": "Reorganizing page structure is an editing operation. Your internal document should stay internal during editing."
+      "type": "organize_hero_features",
+      "title": "Hvorfor organisere PDF'er lokalt?",
+      "content": "Omorganisering af sidestruktur er en redigeringsoperation. Dit interne dokument bør forblive internt under redigering."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to Organize PDF Pages",
+      "type": "organize_how_to_steps",
+      "title": "Sådan organiseres PDF-sider",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF you want to reorganize."
+          "title": "Åbn PDF",
+          "description": "Indlæs den PDF, du vil omorganisere."
         },
         {
-          "title": "Drag to Reorder",
-          "description": "Drag page thumbnails to the desired position."
+          "title": "Træk for at omarrangere",
+          "description": "Træk sideminiaturer til den ønskede position."
         },
         {
-          "title": "Save Organized PDF",
-          "description": "Download the restructured PDF immediately."
+          "title": "Gem organiseret PDF",
+          "description": "Download den omstrukturerede PDF med det samme."
         }
-      ]
+      ],
+      "badgeText": "Hurtig guide"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "Document Organization for Copenhagen Teams",
-      "content": "Teams in Copenhagen reorganize proposal and report PDFs without uploading to any cloud service."
+      "type": "organize_geo_targeting",
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle handlinger udføres direkte på din lokale enhed. Vi bruger avanceret WebAssembly-teknologi til at behandle dine dokumenter uden nogensinde at uploade dem til eksterne servere, hvilket sikrer fuldstændigt privatliv.",
+      "badgeText": "Lokal behandling"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Page Structure Is Private Business",
-      "content": "Reordering internal reports and proposals with zero data leaving your browser."
+      "type": "organize_privacy_security",
+      "title": "Sidestruktur er privat virksomhed",
+      "content": "Omarrangering af interne rapporter og forslag med nul data, der forlader din browser.",
+      "badgeText": "Sikkerhed først"
     },
     {
-      "type": "organizer_performance",
-      "title": "Reorganize Any PDF in Seconds",
-      "content": "Reorder pages in a 500-page document through a smooth drag-and-drop interface with zero upload."
+      "type": "organize_performance",
+      "title": "Omorganiser enhver PDF på få sekunder",
+      "content": "Omarranger sider i et 500-siders dokument gennem en glat træk-og-slip-grænseflade uden upload.",
+      "badgeText": "Lynhurtigt"
     }
   ],
   "faqs": [
     {
-      "q": "Can I delete pages?",
-      "a": "Yes, click the delete icon on any page thumbnail."
+      "q": "Kan jeg slette sider?",
+      "a": "Ja, klik på sletteikonet på en hvilken som helst sideminiature."
     },
     {
-      "q": "Can I duplicate pages?",
-      "a": "Yes, duplicate individual pages with one click."
+      "q": "Kan jeg duplikere sider?",
+      "a": "Ja, dupliker individuelle sider med et enkelt klik."
     },
     {
-      "q": "Can I rotate while organizing?",
-      "a": "Yes, per-page rotation is available in the organizer."
+      "q": "Kan jeg rotere, mens jeg organiserer?",
+      "a": "Ja, rotation pr. side er tilgængelig i arrangøren."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No limit! Organize documents of any size."
+      "q": "Er der en sidegrænse?",
+      "a": "Ingen grænse! Organiser dokumenter af enhver størrelse."
     },
     {
-      "q": "Is this free?",
+      "q": "Er dette gratis?",
       "a": "Ja, helt gratis."
     }
-  ]
+  ],
+  "faqTitle": "Ofte stillede spørgsmål",
+  "supportCenter": "Supportcenter"
 }

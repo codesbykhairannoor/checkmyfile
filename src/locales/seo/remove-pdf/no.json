@@ -1,0 +1,85 @@
+{
+  "title": "Fjern sider fra PDF — Slett PDF-sider frakoblet",
+  "h1": "Fjern sider fra PDF umiddelbart",
+  "description": "Slett uønskede sider fra PDF-filen din trygt i nettleseren din. Rask og helt sikker.",
+  "buttonText": "Remove Pages",
+  "badges": [
+    "Velg og slett",
+    "Visual Editor",
+    "Null ventetid"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "remove_hero_features",
+      "title": "Hvorfor fjerne sider lokalt?",
+      "content": "Sletting av sensitive eller unødvendige sider fra dokumentet bør gjøres på enheten din, ikke en server. Vi sikrer 100 % personvern."
+    },
+    {
+      "type": "remove_how_to_steps",
+      "title": "Slik fjerner du PDF-sider",
+      "steps": [
+        {
+          "title": "Åpne PDF",
+          "description": "Last inn PDF-en du vil rydde opp i."
+        },
+        {
+          "title": "Velg sider som skal slettes",
+          "description": "Hold markøren over sider og klikk på søppelikonet for å merke dem for sletting."
+        },
+        {
+          "title": "Eksporter ren PDF",
+          "description": "Last ned din nye PDF uten de slettede sidene."
+        }
+      ],
+      "badgeText": "Hurtigguide"
+    },
+    {
+      "type": "remove_geo_targeting",
+      "title": "100 % sikker lokal behandling",
+      "content": "Alle operasjoner utføres direkte på din lokale enhet. Vi bruker avansert WebAssembly-teknologi for å behandle dokumentene dine uten å laste dem opp til eksterne servere, noe som sikrer fullstendig personvern.",
+      "badgeText": "Lokal behandling"
+    },
+    {
+      "type": "remove_privacy_security",
+      "title": "Total sletting Personvern",
+      "content": "Når du fjerner en side, slettes den permanent fra dokumentet i nettleserens minne før den lagres.",
+      "badgeText": "Sikkerhet først"
+    },
+    {
+      "type": "remove_performance",
+      "title": "Øyeblikkelig fjerning av side",
+      "content": "Å trekke ut og slette sider fra til og med et 1000-siders dokument tar millisekunder ved å bruke vår optimaliserte WASM-motor.",
+      "badgeText": "Lynrask"
+    }
+  ],
+  "faqTitle": "Ofte stilte spørsmål",
+  "faqs": [
+    {
+      "q": "Kan de slettede sidene gjenopprettes?",
+      "a": "Når du laster ned den nye PDF-filen, fjernes de slettede sidene permanent fra den filen. Den opprinnelige filen forblir urørt."
+    },
+    {
+      "q": "Må jeg laste opp PDF-en min?",
+      "a": "Nei. Hele prosessen for fjerning av siden skjer lokalt i nettleseren din."
+    },
+    {
+      "q": "Er det en grense for hvor mange sider jeg kan slette?",
+      "a": "Nei, du kan slette så mange sider du vil, helt gratis."
+    },
+    {
+      "q": "Vil oppsettet til de resterende sidene endres?",
+      "a": "Nei, de resterende sidene beholder sin nøyaktige originale formatering og layout."
+    },
+    {
+      "q": "Kan jeg velge flere sider samtidig?",
+      "a": "Ja, du kan klikke på flere sider for å merke dem alle for sletting samtidig."
+    }
+  ],
+  "supportCenter": "Støttesenter"
+}

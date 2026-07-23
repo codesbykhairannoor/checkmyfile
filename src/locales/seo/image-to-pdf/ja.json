@@ -1,67 +1,85 @@
 {
-  "title": "Image to PDF — Combine Photos Offline",
-  "h1": "Convert Images to PDF Without Uploading",
-  "description": "Turn JPG, PNG, and WebP images into a single PDF document in your browser. Your photos stay private. Perfect for users in Tokyo.",
+  "title": "画像を PDF に — オフラインで写真を結合",
+  "h1": "アップロードせずに画像を PDF に変換",
+  "description": "JPG、PNG、および WebP 画像をブラウザーで 1 つの PDF ドキュメントに変換します。 あなたの写真は非公開のままです。 100% 安全なローカル処理。",
+  "buttonText": "Convert Images",
+  "badges": [
+    "ポートフォリオ",
+    "ID スキャン",
+    "フォトアルバム"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Images Offline?",
-      "content": "Photos contain location data and personal moments. Convert them to PDF without exposing them to any cloud service."
+      "type": "image_hero_features",
+      "title": "画像をオフラインで変換する理由",
+      "content": "写真には位置データと個人的な瞬間が含まれています。 クラウド サービスに公開せずに PDF に変換します。"
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Turn Images Into PDF",
+      "type": "image_how_to_steps",
+      "title": "画像を PDF に変換する方法",
       "steps": [
         {
-          "title": "Select Images",
-          "description": "Choose JPG, PNG, or WebP files from your device."
+          "title": "画像を選択",
+          "description": "デバイスから JPG、PNG、または WebP ファイルを選択します。"
         },
         {
-          "title": "Arrange Order",
-          "description": "Drag to reorder images before generating the PDF."
+          "title": "順序を調整",
+          "description": "PDF を生成する前に、ドラッグして画像の順序を変更します。"
         },
         {
-          "title": "Export PDF",
-          "description": "Download your image PDF in one click."
+          "title": "PDF をエクスポート",
+          "description": "ワンクリックで画像 PDF をダウンロードします。"
         }
-      ]
+      ],
+      "badgeText": "クイックガイド"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Image to PDF for Tokyo Users",
-      "content": "Photographers and designers in Tokyo use our tool to package portfolios without cloud uploads."
+      "type": "image_geo_targeting",
+      "title": "100% 安全なローカル処理",
+      "content": "すべての操作はローカル デバイス上で直接実行されます。 当社は高度な WebAssembly テクノロジーを使用して、ドキュメントを外部サーバーにアップロードすることなく処理し、完全なプライバシーを確​​保します。",
+      "badgeText": "ローカル処理"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Photos Never Leave Your Device",
-      "content": "Personal photos, ID scans, medical images — all converted 100% locally without any server contact."
+      "type": "image_privacy_security",
+      "title": "写真はデバイスから離れることはありません",
+      "content": "個人の写真、ID スキャン、医療画像はすべて、サーバーに接続することなく 100% ローカルで変換されます。",
+      "badgeText": "セキュリティ第一"
     },
     {
-      "type": "combiner_performance",
-      "title": "Batch Convert Instantly",
-      "content": "Convert 50 images into a single PDF in under 5 seconds. No upload, no wait."
+      "type": "image_performance",
+      "title": "即座にバッチ変換",
+      "content": "50 枚の画像を 5 秒以内に 1 つの PDF に変換します。 アップロードも待ち時間もありません。",
+      "badgeText": "超高速"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are supported?",
-      "a": "JPG, JPEG, PNG, and WebP are all supported."
+      "q": "どのような画像形式がサポートされていますか?",
+      "a": "JPG、JPEG、PNG、WebP はすべてサポートされています。"
     },
     {
-      "q": "Can I combine multiple images?",
-      "a": "Yes, select as many images as you want and reorder them."
+      "q": "複数の画像を組み合わせることはできますか?",
+      "a": "はい、必要な数の画像を選択し、並べ替えます。"
     },
     {
-      "q": "Is image quality preserved?",
-      "a": "Yes, images are embedded at their original resolution."
+      "q": "画質は保たれますか？",
+      "a": "はい、画像は元の解像度で埋め込まれます。"
     },
     {
-      "q": "Does it strip EXIF metadata?",
-      "a": "You can optionally strip EXIF data for privacy."
+      "q": "EXIFメタデータは削除されますか?",
+      "a": "必要に応じて、プライバシーを確​​保するために EXIF データを削除できます。"
     },
     {
-      "q": "Is there a limit on image count?",
-      "a": "はい、完全無料です。"
+      "q": "画像数に制限はありますか？",
+      "a": "制限なし！ 数百の画像を 1 つの PDF に結合します。"
     }
-  ]
+  ],
+  "faqTitle": "よくある質問",
+  "supportCenter": "サポート センター"
 }

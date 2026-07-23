@@ -1,67 +1,85 @@
 {
-  "title": "Remove PDF Metadata — Strip Hidden Author Data Offline",
-  "h1": "Strip All Hidden Metadata from PDF Files Instantly",
-  "description": "Remove author names, company info, GPS locations, and revision history from PDFs entirely in your browser. No upload. Perfect for Budapest users.",
+  "title": "PDF-metaadatok eltávolítása — Rejtett szerzői adatok eltávolítása offline módban",
+  "h1": "Azonnal távolítsa el az összes rejtett metaadatot a PDF-fájlokból",
+  "description": "A szerzők neveit, a cégadatokat, a GPS-helyeket és a felülvizsgálati előzményeket teljes egészében távolítsa el a PDF-fájlokból a böngészőben. Nincs feltöltés. 100%-ban biztonságos helyi feldolgozás.",
+  "buttonText": "Process Document",
+  "badges": [
+    "Biztonságos és privát",
+    "Offline Engine",
+    "Nulla feltöltés"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "metadata_hero_features",
-      "title": "Why Strip PDF Metadata?",
-      "content": "PDFs carry hidden metadata — your name, your company, revision history. Strip it all before sharing publicly, entirely offline."
+      "title": "Miért távolítsuk el a PDF metaadatokat?",
+      "content": "A PDF-ek rejtett metaadatokat tartalmaznak – az Ön nevét, cégét, felülvizsgálati előzményeit. Távolítsa el az egészet, mielőtt nyilvánosan, teljesen offline megosztaná."
     },
     {
       "type": "metadata_how_to_steps",
-      "title": "Before & After — How Metadata Removal Works",
+      "title": "Előtte és utána — Hogyan működik a metaadat-eltávolítás",
       "steps": [
         {
-          "title": "Open Your PDF",
-          "description": "Select the PDF with hidden metadata to remove."
+          "title": "Nyissa meg a PDF-fájlt",
+          "description": "Válassza ki az eltávolítandó PDF-fájlt rejtett metaadatokkal."
         },
         {
-          "title": "Preview Hidden Data",
-          "description": "See exactly what metadata — author, GPS, history — is embedded."
+          "title": "Rejtett adatok előnézete",
+          "description": "Tekintse meg, hogy pontosan milyen metaadatok – szerző, GPS, előzmények – vannak beágyazva."
         },
         {
           "title": "Strip & Download Clean PDF",
-          "description": "Remove all metadata instantly and save a clean, anonymous PDF."
+          "description": "Azonnal távolítson el minden metaadatot, és mentsen el egy tiszta, névtelen PDF-fájlt."
         }
-      ]
+      ],
+      "badgeText": "Gyors útmutató"
     },
     {
       "type": "metadata_geo_targeting",
-      "title": "Metadata Privacy Tool for Budapest Professionals",
-      "content": "Journalists, legal professionals, and privacy-conscious users in Budapest strip metadata before publishing or sharing PDFs externally."
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Minden művelet közvetlenül a helyi eszközön történik. Fejlett WebAssembly technológiát használunk a dokumentumok feldolgozásához anélkül, hogy azokat külső szerverekre feltöltenénk, így biztosítva a teljes adatvédelmet.",
+      "badgeText": "Helyi feldolgozás"
     },
     {
       "type": "metadata_privacy_security",
-      "title": "All Metadata Types Permanently Erased",
-      "content": "Author name, company, GPS coordinates from embedded images, revision history, software fingerprints — all permanently removed."
+      "title": "Minden metaadattípus véglegesen törölve",
+      "content": "Szerző neve, cég, GPS-koordináták a beágyazott képekből, felülvizsgálati előzmények, szoftver ujjlenyomatok – mindez véglegesen eltávolítva.",
+      "badgeText": "Első a biztonság"
     },
     {
       "type": "metadata_performance",
-      "title": "Strip Metadata in Milliseconds",
-      "content": "Metadata removal takes milliseconds and often reduces file size by 10–15%. All offline."
+      "title": "Metaadatok csíkozása ezredmásodpercben",
+      "content": "A metaadatok eltávolítása ezredmásodperceket vesz igénybe, és gyakran 10–15%-kal csökkenti a fájlméretet. Minden offline.",
+      "badgeText": "Villámgyors"
     }
   ],
   "faqs": [
     {
-      "q": "What metadata is removed?",
-      "a": "Author, creator, producer, title, keywords, and all XMP/EXIF data."
+      "q": "Milyen metaadatokat távolítanak el?",
+      "a": "Szerző, alkotó, producer, cím, kulcsszavak és minden XMP/EXIF adat."
     },
     {
-      "q": "Are document bookmarks affected?",
-      "a": "No, bookmarks and structure are preserved; only metadata is removed."
+      "q": "A dokumentum könyvjelzőit érinti?",
+      "a": "Nem, a könyvjelzők és a szerkezet megmarad; csak a metaadatok kerülnek eltávolításra."
     },
     {
-      "q": "Can I preview the metadata first?",
-      "a": "Yes, we show a list of all detected metadata before removing."
+      "q": "Megtekinthetem először a metaadatok előnézetét?",
+      "a": "Igen, az eltávolítás előtt megjelenítjük az összes észlelt metaadat listáját."
     },
     {
-      "q": "Is the document content affected?",
-      "a": "No, the content, images, and structure remain intact."
+      "q": "A dokumentum tartalmát érinti?",
+      "a": "Nem, a tartalom, a képek és a szerkezet érintetlen marad."
     },
     {
-      "q": "Is this free?",
-      "a": "Igen, teljesen ingyenes."
+      "q": "Ez ingyenes?",
+      "a": "Igen, mindig ingyenes."
     }
-  ]
+  ],
+  "faqTitle": "Gyakran Ismételt Kérdések",
+  "supportCenter": "Támogatási Központ"
 }

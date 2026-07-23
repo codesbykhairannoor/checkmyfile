@@ -1,67 +1,85 @@
 {
-  "title": "Extract Images from PDF — Offline Extractor",
-  "h1": "Extract All Embedded Images from PDF Files",
-  "description": "Pull out every image from a PDF and download them as PNG or JPG files, all in your browser. No cloud. Ideal for users in Amsterdam.",
+  "title": "Afbeeldingen uit PDF extraheren — Offline Extractor",
+  "h1": "Extraheer alle ingesloten afbeeldingen uit PDF-bestanden",
+  "description": "Haal elke afbeelding uit een PDF en download ze als PNG- of JPG-bestanden, allemaal in uw browser. Geen wolk. 100% veilige lokale verwerking.",
+  "buttonText": "Extract All Images",
+  "badges": [
+    "Productfoto's",
+    "Vertrouwelijke diagrammen",
+    "Vectoren"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract Images Offline?",
-      "content": "PDFs with confidential diagrams or product photos should never be uploaded. Extract images directly in your browser."
+      "type": "extract_images_hero_features",
+      "title": "Waarom afbeeldingen offline extraheren?",
+      "content": "PDF's met vertrouwelijke diagrammen of productfoto's mogen nooit worden geüpload. Extraheer afbeeldingen rechtstreeks in uw browser."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Extract Images from PDF",
+      "type": "extract_images_how_to_steps",
+      "title": "Afbeeldingen uit PDF extraheren",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Open the PDF containing embedded images."
+          "title": "PDF laden",
+          "description": "Open de PDF met ingesloten afbeeldingen."
         },
         {
-          "title": "Scan for Images",
-          "description": "Our engine locates all embedded image objects."
+          "title": "Scannen naar afbeeldingen",
+          "description": "Onze engine lokaliseert alle ingebedde afbeeldingsobjecten."
         },
         {
           "title": "Download ZIP",
-          "description": "Get all extracted images in a single ZIP file."
+          "description": "Ontvang alle uitgepakte afbeeldingen in één ZIP-bestand."
         }
-      ]
+      ],
+      "badgeText": "Beknopte handleiding"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Image Extraction in Amsterdam",
-      "content": "Publishers and marketers in Amsterdam extract product photos and diagrams from PDFs without cloud uploads."
+      "type": "extract_images_geo_targeting",
+      "title": "100% veilige lokale verwerking",
+      "content": "Alle bewerkingen worden rechtstreeks op uw lokale apparaat uitgevoerd. We gebruiken geavanceerde WebAssembly-technologie om uw documenten te verwerken zonder ze ooit naar externe servers te uploaden, waardoor volledige privacy wordt gegarandeerd.",
+      "badgeText": "Lokale verwerking"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Product Images Stay Confidential",
-      "content": "Unreleased product photos embedded in PDFs extracted locally without any server access."
+      "type": "extract_images_privacy_security",
+      "title": "Productafbeeldingen blijven vertrouwelijk",
+      "content": "Niet-vrijgegeven productfoto's ingebed in PDF's die lokaal zijn geëxtraheerd zonder enige servertoegang.",
+      "badgeText": "Beveiliging eerst"
     },
     {
-      "type": "split_performance",
-      "title": "Extract Hundreds of Images Fast",
-      "content": "Extract 500 images from a PDF in seconds. All native browser processing."
+      "type": "extract_images_performance",
+      "title": "Extraheer honderden afbeeldingen snel",
+      "content": "Extraheer binnen enkele seconden 500 afbeeldingen uit een PDF. Alle native browserverwerking.",
+      "badgeText": "Bliksemsnel"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are extracted?",
-      "a": "Images are saved in their original format (PNG, JPG, etc.)."
+      "q": "Welke afbeeldingsformaten worden geëxtraheerd?",
+      "a": "Afbeeldingen worden opgeslagen in hun oorspronkelijke formaat (PNG, JPG, enz.)."
     },
     {
-      "q": "Are images at full resolution?",
-      "a": "Yes, extracted at the original embedded resolution."
+      "q": "Zijn afbeeldingen in volledige resolutie?",
+      "a": "Ja, geëxtraheerd met de oorspronkelijke ingebedde resolutie."
     },
     {
-      "q": "Can I choose specific pages?",
-      "a": "Yes, specify which pages to extract images from."
+      "q": "Kan ik specifieke pagina's kiezen?",
+      "a": "Ja, geef op van welke pagina's u afbeeldingen wilt extraheren."
     },
     {
-      "q": "Does it extract vector graphics?",
-      "a": "Vector elements are rasterized to PNG/JPG."
+      "q": "Haalt het vectorafbeeldingen eruit?",
+      "a": "Vectorelementen worden gerasterd naar PNG/JPG."
     },
     {
-      "q": "Is this free?",
-      "a": "Ja, volledig gratis."
+      "q": "Is dit gratis?",
+      "a": "Ja, altijd gratis."
     }
-  ]
+  ],
+  "faqTitle": "Veelgestelde vragen",
+  "supportCenter": "Ondersteuningscentrum"
 }

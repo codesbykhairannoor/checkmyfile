@@ -1,67 +1,85 @@
 {
-  "title": "PDF to Image Converter — Extract Pages Offline",
-  "h1": "Convert PDF Pages to PNG or JPG Images",
-  "description": "Extract every page from a PDF as high-quality images directly in your browser. Zero upload, total privacy. Best for users in Tokyo.",
+  "title": "PDF から画像へのコンバーター - ページをオフラインで抽出",
+  "h1": "PDF ページを PNG または JPG 画像に変換",
+  "description": "PDF からすべてのページを高品質の画像としてブラウザーで直接抽出します。 アップロードゼロ、100% 安全なローカル処理。",
+  "buttonText": "Extract Images",
+  "badges": [
+    "デザインポートフォリオ",
+    "プレゼンテーション",
+    "高品質"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract PDF Pages Offline?",
-      "content": "PDFs often contain confidential diagrams, blueprints, or reports. Extract pages as images without any server access."
+      "type": "pdf_image_hero_features",
+      "title": "PDF ページをオフラインで抽出する理由",
+      "content": "PDF には、機密の図、青写真、またはレポートが含まれることがよくあります。 サーバーにアクセスせずにページを画像として抽出します。"
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Images",
+      "type": "pdf_image_how_to_steps",
+      "title": "PDF を画像に変換する方法",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF you want to extract images from."
+          "title": "PDF をロード",
+          "description": "画像を抽出したい PDF を選択します。"
         },
         {
-          "title": "Choose Format",
-          "description": "Pick PNG (lossless) or JPG (compressed) output."
+          "title": "形式を選択",
+          "description": "PNG (ロスレス) または JPG (圧縮) 出力を選択します。"
         },
         {
-          "title": "Download Images",
-          "description": "Get all pages as individual image files in a ZIP."
+          "title": "画像をダウンロード",
+          "description": "すべてのページを ZIP 内の個別の画像ファイルとして取得します。"
         }
-      ]
+      ],
+      "badgeText": "クイックガイド"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF to Image for Tokyo Designers",
-      "content": "Designers in Tokyo extract PDF pages as images for presentations and social media without cloud uploads."
+      "type": "pdf_image_geo_targeting",
+      "title": "100% 安全なローカル処理",
+      "content": "すべての操作はローカル デバイス上で直接実行されます。 当社は高度な WebAssembly テクノロジーを使用して、ドキュメントを外部サーバーにアップロードすることなく処理し、完全なプライバシーを確​​保します。",
+      "badgeText": "ローカル処理"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Confidential Diagrams Stay Private",
-      "content": "Technical blueprints and legal documents extracted as images without any data leaving your device."
+      "type": "pdf_image_privacy_security",
+      "title": "機密図は非公開にします",
+      "content": "技術的な青写真と法的文書は、デバイスからデータを一切残さずに画像として抽出されます。",
+      "badgeText": "セキュリティ第一"
     },
     {
-      "type": "split_performance",
-      "title": "Extract All Pages Instantly",
-      "content": "A 500-page PDF converted to images in seconds. No upload, no wait."
+      "type": "pdf_image_performance",
+      "title": "すべてのページを即座に抽出",
+      "content": "500 ページの PDF が数秒で画像に変換されました。 アップロードも待ち時間もありません。",
+      "badgeText": "超高速"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are available?",
-      "a": "PNG and JPG with adjustable quality settings."
+      "q": "どのような画像形式が利用可能ですか?",
+      "a": "品質設定を調整できる PNG および JPG。"
     },
     {
-      "q": "Can I extract specific pages?",
-      "a": "Yes, specify page ranges like 1-5 or 3,7,12."
+      "q": "特定のページを抽出することはできますか?",
+      "a": "はい、1 ～ 5 または 3、7、12 などのページ範囲を指定します。"
     },
     {
-      "q": "What resolution are the exported images?",
-      "a": "Default 150 DPI, adjustable up to 300 DPI."
+      "q": "エクスポートされた画像の解像度はどれくらいですか?",
+      "a": "デフォルトは 150 DPI、最大 300 DPI まで調整可能。"
     },
     {
-      "q": "Are all pages exported at once?",
-      "a": "Yes, all selected pages are zipped for a single download."
+      "q": "すべてのページが一度にエクスポートされますか?",
+      "a": "はい、選択したすべてのページが 1 回のダウンロード用に圧縮されます。"
     },
     {
-      "q": "Is this free?",
-      "a": "はい、完全無料です。"
+      "q": "これは無料ですか？",
+      "a": "いつでも完全無料。"
     }
-  ]
+  ],
+  "faqTitle": "よくある質問",
+  "supportCenter": "サポート センター"
 }

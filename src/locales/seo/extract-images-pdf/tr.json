@@ -1,67 +1,85 @@
 {
-  "title": "Extract Images from PDF — Offline Extractor",
-  "h1": "Extract All Embedded Images from PDF Files",
-  "description": "Pull out every image from a PDF and download them as PNG or JPG files, all in your browser. No cloud. Ideal for users in Istanbul.",
+  "title": "PDF'den Görüntü Çıkarma — Çevrimdışı Çıkarıcı",
+  "h1": "Tüm Gömülü Görüntüleri PDF Dosyalarından Çıkarın",
+  "description": "PDF'deki her görseli çıkarın ve PNG veya JPG dosyaları olarak tarayıcınıza indirin. Bulut yok. %100 güvenli yerel işleme.",
+  "buttonText": "Extract All Images",
+  "badges": [
+    "Ürün Fotoğrafları",
+    "Gizli Diyagramlar",
+    "Vektörler"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Extract Images Offline?",
-      "content": "PDFs with confidential diagrams or product photos should never be uploaded. Extract images directly in your browser."
+      "type": "extract_images_hero_features",
+      "title": "Neden Görüntüleri Çevrimdışına Çıkartmalısınız?",
+      "content": "Gizli diyagramlar veya ürün fotoğrafları içeren PDF'ler asla yüklenmemelidir. Görüntüleri doğrudan tarayıcınızdan çıkarın."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Extract Images from PDF",
+      "type": "extract_images_how_to_steps",
+      "title": "PDF'den Görüntüler Nasıl Çıkarılır",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Open the PDF containing embedded images."
+          "title": "PDF'yi yükle",
+          "description": "Gömülü görüntüleri içeren PDF'yi açın."
         },
         {
-          "title": "Scan for Images",
-          "description": "Our engine locates all embedded image objects."
+          "title": "Görüntüleri Tara",
+          "description": "Motorumuz tüm gömülü görüntü nesnelerinin yerini belirler."
         },
         {
-          "title": "Download ZIP",
-          "description": "Get all extracted images in a single ZIP file."
+          "title": "ZIP'i İndir",
+          "description": "Çıkarılan tüm görselleri tek bir ZIP dosyasında alın."
         }
-      ]
+      ],
+      "badgeText": "Hızlı Kılavuz"
     },
     {
-      "type": "split_geo_targeting",
-      "title": "Image Extraction in Istanbul",
-      "content": "Publishers and marketers in Istanbul extract product photos and diagrams from PDFs without cloud uploads."
+      "type": "extract_images_geo_targeting",
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Product Images Stay Confidential",
-      "content": "Unreleased product photos embedded in PDFs extracted locally without any server access."
+      "type": "extract_images_privacy_security",
+      "title": "Ürün Görselleri Gizli Kalsın",
+      "content": "Herhangi bir sunucu erişimi olmadan yerel olarak çıkarılan PDF'lere yerleştirilmiş yayınlanmamış ürün fotoğrafları.",
+      "badgeText": "Önce Güvenlik"
     },
     {
-      "type": "split_performance",
-      "title": "Extract Hundreds of Images Fast",
-      "content": "Extract 500 images from a PDF in seconds. All native browser processing."
+      "type": "extract_images_performance",
+      "title": "Yüzlerce Görüntüyü Hızlı Çıkarın",
+      "content": "Bir PDF'den 500 görüntüyü saniyeler içinde çıkarın. Tüm yerel tarayıcı işlemleri.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [
     {
-      "q": "What image formats are extracted?",
-      "a": "Images are saved in their original format (PNG, JPG, etc.)."
+      "q": "Hangi görüntü formatları çıkartılıyor?",
+      "a": "Görüntüler orijinal formatlarında (PNG, JPG vb.) kaydedilir."
     },
     {
-      "q": "Are images at full resolution?",
-      "a": "Yes, extracted at the original embedded resolution."
+      "q": "Resimler tam çözünürlükte mi?",
+      "a": "Evet, orijinal gömülü çözünürlükte çıkartılmıştır."
     },
     {
-      "q": "Can I choose specific pages?",
-      "a": "Yes, specify which pages to extract images from."
+      "q": "Belirli sayfaları seçebilir miyim?",
+      "a": "Evet, görsellerin hangi sayfalardan çıkarılacağını belirtin."
     },
     {
-      "q": "Does it extract vector graphics?",
-      "a": "Vector elements are rasterized to PNG/JPG."
+      "q": "Vektör grafiklerini çıkarıyor mu?",
+      "a": "Vektör öğeleri PNG/JPG olarak rasterleştirilir."
     },
     {
-      "q": "Is this free?",
-      "a": "Evet, tamamen ücretsiz."
+      "q": "Bu bedava mı?",
+      "a": "Evet, her zaman ücretsiz."
     }
-  ]
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi"
 }

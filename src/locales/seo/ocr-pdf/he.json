@@ -1,67 +1,85 @@
 {
-  "title": "OCR PDF — Make Scans Searchable Offline",
-  "h1": "Extract and Recognize Text from Scanned PDFs",
-  "description": "Run OCR on scanned PDFs to make them searchable and copyable, entirely in your browser using Tesseract. No upload. Great for users in Jerusalem.",
+  "title": "OCR PDF — הפוך סריקות לחיפוש במצב לא מקוון",
+  "h1": "חלץ וזיהוי טקסט מקובצי PDF סרוקים",
+  "description": "הפעל OCR על קובצי PDF סרוקים כדי להפוך אותם לניתנים לחיפוש ולהעתקה, כולו בדפדפן שלך באמצעות Tesseract. אין העלאה. עיבוד מקומי מאובטח של 100%.",
+  "buttonText": "Run OCR",
+  "badges": [
+    "חלץ טקסט",
+    "PDF ניתן לחיפוש",
+    "זיהוי AI"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Run OCR Locally?",
-      "content": "Scanned PDFs contain sensitive text. Running OCR on a cloud service exposes that text to a third party. Ours runs 100% offline."
+      "type": "ocr_hero_features",
+      "title": "למה להפעיל OCR באופן מקומי?",
+      "content": "קובצי PDF סרוקים מכילים טקסט רגיש. הפעלת OCR בשירות ענן חושפת את הטקסט הזה לצד שלישי. שלנו פועל 100% במצב לא מקוון."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to OCR a PDF",
+      "type": "ocr_how_to_steps",
+      "title": "כיצד לבצע OCR PDF",
       "steps": [
         {
-          "title": "Load Scanned PDF",
-          "description": "Select the image-based or scanned PDF."
+          "title": "טען PDF סרוק",
+          "description": "בחר את ה-PDF המבוסס על תמונה או סרוק."
         },
         {
-          "title": "Select Language",
-          "description": "Choose the document language for better accuracy."
+          "title": "בחר שפה",
+          "description": "בחר את שפת המסמך לדיוק טוב יותר."
         },
         {
-          "title": "Download Searchable PDF",
-          "description": "Get a text-layer PDF ready to search and copy."
+          "title": "הורד PDF ניתן לחיפוש",
+          "description": "קבל PDF שכבת טקסט מוכן לחיפוש ולהעתקה."
         }
-      ]
+      ],
+      "badgeText": "מדריך מהיר"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "OCR Tool for Jerusalem Archives",
-      "content": "Government agencies and businesses in Jerusalem digitize paper archives using our offline OCR tool."
+      "type": "ocr_geo_targeting",
+      "title": "100% עיבוד מקומי מאובטח",
+      "content": "כל הפעולות מבוצעות ישירות במכשיר המקומי שלך. אנו משתמשים בטכנולוגיית WebAssembly מתקדמת כדי לעבד את המסמכים שלך מבלי להעלות אותם לשרתים חיצוניים, מה שמבטיח פרטיות מלאה.",
+      "badgeText": "עיבוד מקומי"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Content Never Exposed",
-      "content": "OCR processing using Tesseract WASM runs entirely in browser memory — no API calls, no data transmission."
+      "type": "ocr_privacy_security",
+      "title": "תוכן סרוק שמעולם לא נחשף",
+      "content": "עיבוד OCR באמצעות Tesseract WASM פועל כולו בזיכרון הדפדפן - ללא קריאות API, ללא העברת נתונים.",
+      "badgeText": "אבטחה תחילה"
     },
     {
-      "type": "organizer_performance",
-      "title": "OCR Any Document Locally",
-      "content": "Process a 20-page scanned PDF in under 30 seconds. All Tesseract processing happens in-browser."
+      "type": "ocr_performance",
+      "title": "OCR כל מסמך מקומי",
+      "content": "עבד קובץ PDF סרוק בן 20 עמודים תוך פחות מ-30 שניות. כל עיבוד Tesseract מתרחש בדפדפן.",
+      "badgeText": "מהיר ברק"
     }
   ],
   "faqs": [
     {
-      "q": "What languages does OCR support?",
-      "a": "Over 100 languages via Tesseract engine."
+      "q": "באילו שפות תומך OCR?",
+      "a": "מעל 100 שפות באמצעות מנוע Tesseract."
     },
     {
-      "q": "How accurate is the OCR?",
-      "a": "Accuracy depends on scan quality; clear, high-contrast scans yield 95%+ accuracy."
+      "q": "כמה מדויק ה-OCR?",
+      "a": "הדיוק תלוי באיכות הסריקה; סריקות ברורות עם ניגודיות גבוהה מניבות דיוק של 95%+."
     },
     {
-      "q": "Does it create a searchable PDF?",
-      "a": "Yes, a text layer is added making the PDF fully searchable."
+      "q": "האם זה יוצר PDF שניתן לחיפוש?",
+      "a": "כן, נוספה שכבת טקסט מה שהופך את ה-PDF לאפשרי חיפוש מלא."
     },
     {
-      "q": "Can I copy text from the result?",
-      "a": "Yes, the output PDF has selectable, copyable text."
+      "q": "האם אני יכול להעתיק טקסט מהתוצאה?",
+      "a": "כן, ל-PDF הפלט יש טקסט הניתן לבחירה."
     },
     {
-      "q": "Is this free?",
-      "a": "כן, חינם לחלוטין."
+      "q": "האם זה בחינם?",
+      "a": "כן, תמיד בחינם."
     }
-  ]
+  ],
+  "faqTitle": "שאלות נפוצות",
+  "supportCenter": "מרכז תמיכה"
 }

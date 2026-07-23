@@ -1,67 +1,85 @@
 {
-  "title": "Text to PDF Converter — Offline & Instant",
-  "h1": "Convert Plain Text Files to PDF Locally",
-  "description": "Transform .txt files into clean, readable PDFs directly in your browser. No upload required. Ideal for users in Stockholm.",
+  "title": "Text till PDF-konverterare — Offline & Direkt",
+  "h1": "Konvertera vanliga textfiler till PDF lokalt",
+  "description": "Förvandla .txt-filer till rena, läsbara PDF-filer direkt i din webbläsare. Ingen uppladdning krävs. 100 % säker lokal bearbetning.",
+  "buttonText": "Convert Text",
+  "badges": [
+    "Kodavsnitt",
+    "Serverloggar",
+    "Manuskript"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "combiner_hero_features",
-      "title": "Why Convert Text Files Offline?",
-      "content": "Text files often contain code, scripts, or sensitive notes. Our offline converter ensures zero data transmission."
+      "type": "txt_hero_features",
+      "title": "Varför konvertera textfiler offline?",
+      "content": "Textfiler innehåller ofta kod, skript eller känsliga anteckningar. Vår offlineomvandlare säkerställer noll dataöverföring."
     },
     {
-      "type": "combiner_how_to_steps",
-      "title": "How to Convert Text to PDF",
+      "type": "txt_how_to_steps",
+      "title": "Hur man konverterar text till PDF",
       "steps": [
         {
-          "title": "Open Text File",
-          "description": "Select your .txt file or paste text directly."
+          "title": "Öppna textfil",
+          "description": "Välj din .txt-fil eller klistra in text direkt."
         },
         {
-          "title": "Choose Font & Style",
-          "description": "Pick font size and layout preferences."
+          "title": "Välj teckensnitt och stil",
+          "description": "Välj teckenstorlek och layoutinställningar."
         },
         {
-          "title": "Download PDF",
-          "description": "Export your text as a beautifully formatted PDF."
+          "title": "Ladda ner PDF",
+          "description": "Exportera din text som en vackert formaterad PDF."
         }
-      ]
+      ],
+      "badgeText": "Snabbguide"
     },
     {
-      "type": "combiner_geo_targeting",
-      "title": "Text to PDF for Stockholm Developers",
-      "content": "Developers and writers in Stockholm use our tool to convert scripts and notes without cloud dependency."
+      "type": "txt_geo_targeting",
+      "title": "100 % säker lokal bearbetning",
+      "content": "Alla operationer utförs direkt på din lokala enhet. Vi använder avancerad WebAssembly-teknik för att behandla dina dokument utan att någonsin ladda upp dem till externa servrar, vilket säkerställer fullständig integritet.",
+      "badgeText": "Lokal bearbetning"
     },
     {
-      "type": "combiner_privacy_security",
-      "title": "Code Stays on Your Machine",
-      "content": "Source code, legal notes, medical records — text files converted with zero server involvement."
+      "type": "txt_privacy_security",
+      "title": "Koden stannar på din maskin",
+      "content": "Källkod, juridiska anteckningar, journaler — textfiler konverterade utan serverinblandning.",
+      "badgeText": "Säkerhet först"
     },
     {
-      "type": "combiner_performance",
-      "title": "Instant Text Rendering",
-      "content": "Convert any size text file to PDF in milliseconds. No upload, no compression, no delay."
+      "type": "txt_performance",
+      "title": "Omedelbar textåtergivning",
+      "content": "Konvertera textfiler av valfri storlek till PDF på millisekunder. Ingen uppladdning, ingen komprimering, ingen fördröjning.",
+      "badgeText": "Blixtsnabb"
     }
   ],
   "faqs": [
     {
-      "q": "Can I paste text directly?",
-      "a": "Yes, you can type or paste text without uploading a file."
+      "q": "Kan jag klistra in text direkt?",
+      "a": "Ja, du kan skriva eller klistra in text utan att ladda upp en fil."
     },
     {
-      "q": "What fonts are available?",
-      "a": "Standard web fonts like Arial, Times New Roman, and monospace."
+      "q": "Vilka teckensnitt finns tillgängliga?",
+      "a": "Standardwebbteckensnitt som Arial, Times New Roman och monospace."
     },
     {
-      "q": "Is code syntax preserved?",
-      "a": "Monospace formatting is preserved for code blocks."
+      "q": "Är kodsyntaxen bevarad?",
+      "a": "Monospace-formatering bevaras för kodblock."
     },
     {
-      "q": "Can I set page margins?",
-      "a": "Yes, customize top, bottom, left, and right margins."
+      "q": "Kan jag ställa in sidmarginaler?",
+      "a": "Ja, anpassa topp-, botten-, vänster- och högermarginaler."
     },
     {
-      "q": "Is this free?",
+      "q": "Är detta gratis?",
       "a": "Ja, helt gratis."
     }
-  ]
+  ],
+  "faqTitle": "Vanliga frågor",
+  "supportCenter": "Supportcenter"
 }

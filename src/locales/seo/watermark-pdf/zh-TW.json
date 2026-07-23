@@ -1,0 +1,85 @@
+{
+  "title": "在 PDF 上新增浮水印 — 離線浮水印",
+  "h1": "在本機為 PDF 新增文字或影像浮水印",
+  "description": "完全在瀏覽器中將「機密」、標誌或自訂文字浮水印新增至 PDF。 沒有上傳。 100% 安全的本地處理。",
+  "buttonText": "Add Watermark",
+  "badges": [
+    "自訂文字",
+    "可調不透明度",
+    "品牌保護"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
+  "sections": [
+    {
+      "type": "watermark_hero_features",
+      "title": "為什麼要離線為 PDF 加水印？",
+      "content": "新增浮水印表示您的文件是敏感的。 切勿將合約草稿或機密報告上傳至雲端浮水印。"
+    },
+    {
+      "type": "watermark_how_to_steps",
+      "title": "如何為 PDF 新增浮水印",
+      "steps": [
+        {
+          "title": "開啟 PDF",
+          "description": "選擇要加浮水印的 PDF。"
+        },
+        {
+          "title": "設計浮水印",
+          "description": "輸入文字或上傳標誌圖像。"
+        },
+        {
+          "title": "申請並下載",
+          "description": "一鍵以取得浮水印的 PDF。"
+        }
+      ],
+      "badgeText": "快速指南"
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "100% 安全的本地處理",
+      "content": "所有操作都直接在本地設備上執行。 我們使用先進的 WebAssembly 技術來處理您的文檔，而無需將其上傳到外部伺服器，從而確保完全的隱私。",
+      "badgeText": "本地處理"
+    },
+    {
+      "type": "watermark_privacy_security",
+      "title": "機密草稿保密",
+      "content": "合約草案和未發布的設計在本地加浮水印，無需任何伺服器聯繫。",
+      "badgeText": "安全第一"
+    },
+    {
+      "type": "watermark_performance",
+      "title": "立即蓋印數千頁",
+      "content": "在 3 秒內將浮水印套用到 1000 頁文件。 一切都在您的瀏覽器中。",
+      "badgeText": "快如閃電"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "我可以使用標誌作為浮水印嗎？",
+      "a": "是的，上傳 PNG 徽標並設定透明度。"
+    },
+    {
+      "q": "我可以調整浮水印的不透明度嗎？",
+      "a": "是的，不透明度從 10% 到 100%。"
+    },
+    {
+      "q": "我可以將其僅應用於特定頁面嗎？",
+      "a": "是的，選擇頁面範圍。"
+    },
+    {
+      "q": "對角線放置可用嗎？",
+      "a": "是的，將浮水印旋轉到任意角度。"
+    },
+    {
+      "q": "這是免費的嗎？",
+      "a": "是的，永遠免費。"
+    }
+  ],
+  "faqTitle": "常見問題",
+  "supportCenter": "支援中心"
+}

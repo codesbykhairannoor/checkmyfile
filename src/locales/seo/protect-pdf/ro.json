@@ -1,67 +1,85 @@
 {
-  "title": "Password Protect PDF — Secure Files Offline",
-  "h1": "Add Password Protection to PDF Files Instantly",
-  "description": "Encrypt PDF files with AES-256 directly in your browser. Your document never leaves your device. Ideal for users in Bucharest.",
+  "title": "Protecție cu parolă PDF — Fișiere sigure offline",
+  "h1": "Adăugați instantaneu protecție cu parolă la fișierele PDF",
+  "description": "Criptați fișierele PDF cu AES-256 direct în browser. Documentul nu părăsește niciodată dispozitivul. Procesare locală 100% sigură.",
+  "buttonText": "Protect PDF",
+  "badges": [
+    "Criptare AES-256",
+    "Parolă sigură",
+    "Numai pe partea clientului"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
       "type": "protect_hero_features",
-      "title": "Why Protect PDFs Locally?",
-      "content": "Adding a password means the file is sensitive. Never upload sensitive files to a cloud encryptor. Ours runs entirely offline with AES-256 encryption."
+      "title": "De ce să protejați fișierele PDF la nivel local?",
+      "content": "Adăugarea unei parole înseamnă că fișierul este sensibil. Nu încărcați niciodată fișiere sensibile într-un criptator cloud. Al nostru rulează în întregime offline cu criptare AES-256."
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Password Protect a PDF",
+      "title": "Cum se protejează cu parolă un PDF",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Select the PDF you want to lock."
+          "title": "Deschide PDF",
+          "description": "Selectați PDF-ul pe care doriți să îl blocați."
         },
         {
-          "title": "Set Password",
-          "description": "Choose a strong password for encryption."
+          "title": "Setați parola",
+          "description": "Alegeți o parolă puternică pentru criptare."
         },
         {
-          "title": "Download Protected PDF",
-          "description": "Get your AES-256 encrypted PDF immediately."
+          "title": "Descărcați PDF protejat",
+          "description": "Obțineți imediat PDF-ul dvs. criptat AES-256."
         }
-      ]
+      ],
+      "badgeText": "Ghid rapid"
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Vault-Level PDF Protection for Bucharest",
-      "content": "Legal and finance professionals in Bucharest encrypt documents with AES-256 strength without exposing files to any server."
+      "title": "Procesare locală 100% sigură",
+      "content": "Toate operațiunile sunt efectuate direct pe dispozitivul local. Folosim tehnologie avansată WebAssembly pentru a vă procesa documentele fără a le încărca vreodată pe servere externe, asigurând confidențialitate completă.",
+      "badgeText": "Prelucrare locală"
     },
     {
       "type": "protect_privacy_security",
-      "title": "AES-256 Encryption — Bank-Grade, Offline",
-      "content": "Military-grade AES-256 encryption runs in your browser. No key is ever transmitted to any server."
+      "title": "Criptare AES-256 — Bank-Grade, Offline",
+      "content": "Criptarea AES-256 de calitate militară rulează în browserul dvs. Nicio cheie nu este transmisă vreodată unui server.",
+      "badgeText": "Securitatea în primul rând"
     },
     {
       "type": "protect_performance",
-      "title": "Encrypt Any PDF in Under 1 Second",
-      "content": "AES-256 processing locally takes milliseconds — no upload, no queue, no wait."
+      "title": "Criptați orice PDF în mai puțin de 1 secundă",
+      "content": "Procesarea AES-256 local durează milisecunde — fără încărcare, fără coadă, fără așteptare.",
+      "badgeText": "Rapid fulger"
     }
   ],
   "faqs": [
     {
-      "q": "What encryption standard is used?",
-      "a": "AES-256, the same standard used by banks and governments."
+      "q": "Ce standard de criptare este folosit?",
+      "a": "AES-256, același standard folosit de bănci și guverne."
     },
     {
-      "q": "Can I set different owner and user passwords?",
-      "a": "Yes, you can set both separately."
+      "q": "Pot seta parole diferite de proprietar și utilizator?",
+      "a": "Da, le puteți seta pe ambele separat."
     },
     {
-      "q": "Is the original file modified?",
-      "a": "No, a new encrypted copy is created."
+      "q": "Fișierul original este modificat?",
+      "a": "Nu, este creată o nouă copie criptată."
     },
     {
-      "q": "Can I restrict printing or editing?",
-      "a": "Yes, permission restrictions can be set alongside the password."
+      "q": "Pot restricționa tipărirea sau editarea?",
+      "a": "Da, restricțiile de permisiune pot fi setate alături de parolă."
     },
     {
-      "q": "Is this free?",
+      "q": "Este gratuit?",
       "a": "Da, complet gratuit."
     }
-  ]
+  ],
+  "faqTitle": "Întrebări frecvente",
+  "supportCenter": "Centrul de suport"
 }

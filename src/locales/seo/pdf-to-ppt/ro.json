@@ -1,67 +1,80 @@
 {
-  "title": "PDF to PowerPoint — Recover Editable Slides",
-  "h1": "Convert PDF to PowerPoint Presentation Offline",
-  "description": "Transform PDF documents back into editable .pptx presentations locally. No cloud needed. Perfect for users in Bucharest.",
+  "title": "PDF în PowerPoint — Recuperați diapozitive editabile",
+  "h1": "Convertiți PDF în prezentare PowerPoint offline",
+  "description": "Transformați documentele PDF înapoi în prezentări .pptx editabile la nivel local. Nu este nevoie de cloud. Perfect pentru utilizatorii din Bucuresti.",
+  "buttonText": "Convertiți în PPT",
+  "badges": [
+    "Slide-uri editabile",
+    "Recuperare prezentare",
+    "Conversie rapidă"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Timp de așteptare"
+  ],
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Why Convert PDF to PowerPoint Offline?",
-      "content": "Recovering slide content from a PDF for editing should not require uploading sensitive decks to a cloud service."
+      "title": "De ce să folosiți offline?",
+      "content": "Recuperarea conținutului de diapozitive dintr-un PDF pentru editare nu ar trebui să necesite încărcarea pachetelor sensibile într-un serviciu cloud."
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Convert PDF to PowerPoint",
+      "title": "Cum se utilizează",
       "steps": [
         {
-          "title": "Upload PDF",
-          "description": "Select the PDF containing your slide content."
+          "title": "Încărcați PDF",
+          "description": "Selectați PDF-ul care conține conținutul diapozitivului."
         },
         {
-          "title": "Map Pages to Slides",
-          "description": "Each PDF page becomes one editable slide."
+          "title": "Hartați paginile în diapozitive",
+          "description": "Fiecare pagină PDF devine un diapozitiv editabil."
         },
         {
-          "title": "Download .pptx",
-          "description": "Get your fully editable PowerPoint presentation."
+          "title": "Descărcați .pptx",
+          "description": "Obțineți prezentarea PowerPoint complet editabilă."
         }
       ]
     },
     {
       "type": "split_geo_targeting",
-      "title": "Slide Recovery in Bucharest",
-      "content": "Presenters in Bucharest use our tool to recover and re-edit presentations from old PDF archives."
+      "title": "Recuperare Slide în București",
+      "content": "Prezentatorii din București folosesc instrumentul nostru pentru a recupera și reedita prezentări din arhive PDF vechi."
     },
     {
       "type": "split_privacy_security",
-      "title": "Your Slides Are Never Exposed",
-      "content": "Confidential slide decks recovered and converted without any server interaction."
+      "title": "Diapozitivele tale nu sunt niciodată expuse",
+      "content": "Diapozitive confidențiale recuperate și convertite fără nicio interacțiune cu serverul."
     },
     {
       "type": "split_performance",
-      "title": "Convert Slides at Lightning Speed",
-      "content": "A 60-slide PDF converted to PowerPoint in under 10 seconds with zero upload time."
+      "title": "Convertiți diapozitive la viteza fulgerului",
+      "content": "Un PDF de 60 de diapozitive convertit în PowerPoint în mai puțin de 10 secunde, fără timp de încărcare."
     }
   ],
   "faqs": [
     {
-      "q": "Are slide layouts preserved?",
-      "a": "Content is mapped to slides; some layout adjustments may be needed."
+      "q": "Sunt păstrate diapozitivele?",
+      "a": "Conținutul este mapat în diapozitive; pot fi necesare unele ajustări de aspect."
     },
     {
-      "q": "Can I edit the slides after?",
-      "a": "Yes, the .pptx file is fully editable in PowerPoint or Google Slides."
+      "q": "Pot edita diapozitivele după?",
+      "a": "Da, fișierul .pptx este complet editabil în PowerPoint sau Google Slides."
     },
     {
-      "q": "Is there a page limit?",
-      "a": "No, convert as many pages as your RAM allows."
+      "q": "Există o limită de pagini?",
+      "a": "Nu, convertiți câte pagini vă permite RAM."
     },
     {
-      "q": "Does it work with image-heavy PDFs?",
-      "a": "Yes, images are embedded in each slide."
+      "q": "Funcționează cu PDF-uri cu imagini grele?",
+      "a": "Da, imaginile sunt încorporate în fiecare diapozitiv."
     },
     {
-      "q": "Is this free?",
+      "q": "Este gratuit?",
       "a": "Da, complet gratuit."
     }
-  ]
+  ],
+  "faqTitle": "Întrebări Frecvente"
 }

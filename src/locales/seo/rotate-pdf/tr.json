@@ -1,67 +1,85 @@
 {
-  "title": "Rotate PDF Pages — Fix Orientation Offline",
-  "h1": "Rotate PDF Pages to the Correct Orientation",
-  "description": "Fix upside-down or sideways PDF pages instantly in your browser. No upload. Perfect for users in Istanbul.",
+  "title": "PDF Sayfalarını Döndürün — Yönlendirmeyi Çevrimdışı Düzeltin",
+  "h1": "PDF Sayfalarını Doğru Yöne Döndürün",
+  "description": "Ters veya yan PDF sayfalarını tarayıcınızda anında düzeltin. Hızlı ve tamamen güvenli.",
+  "buttonText": "Rotate Pages",
+  "badges": [
+    "90°/180° döndür",
+    "Toplu İşleme",
+    "Anında Düzeltme"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "transform_hero_features",
-      "title": "Why Rotate PDFs Locally?",
-      "content": "Scanned documents often come out sideways. Fix their orientation instantly without uploading anything to the cloud."
+      "type": "rotate_hero_features",
+      "title": "Neden PDF'leri Yerel Olarak Döndürmelisiniz?",
+      "content": "Taranan belgeler sıklıkla yan taraftan çıkıyor. Buluta hiçbir şey yüklemeden yönlerini anında düzeltin."
     },
     {
-      "type": "transform_how_to_steps",
-      "title": "How to Rotate PDF Pages",
+      "type": "rotate_how_to_steps",
+      "title": "PDF Sayfaları Nasıl Döndürülür",
       "steps": [
         {
-          "title": "Open PDF",
-          "description": "Load the PDF with incorrect page orientation."
+          "title": "PDF'yi aç",
+          "description": "PDF'yi yanlış sayfa yönlendirmesiyle yükleyin."
         },
         {
-          "title": "Select Pages & Direction",
-          "description": "Choose pages to rotate and direction (90°, 180°, 270°)."
+          "title": "Sayfaları ve Yönü Seçin",
+          "description": "Döndürülecek ve yönlendirilecek sayfaları seçin (90°, 180°, 270°)."
         },
         {
-          "title": "Download Fixed PDF",
-          "description": "Save the correctly oriented PDF immediately."
+          "title": "Sabit PDF'yi İndir",
+          "description": "Doğru yönlendirilmiş PDF'yi hemen kaydedin."
         }
-      ]
+      ],
+      "badgeText": "Hızlı Kılavuz"
     },
     {
-      "type": "transform_geo_targeting",
-      "title": "PDF Rotation for Istanbul Offices",
-      "content": "Office workers in Istanbul fix scanner output orientation without relying on cloud services."
+      "type": "rotate_geo_targeting",
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
     },
     {
-      "type": "transform_privacy_security",
-      "title": "Scanned Documents Stay Private",
-      "content": "Scanned medical or legal documents rotated locally without any server access."
+      "type": "rotate_privacy_security",
+      "title": "Taranan Belgeler Gizli Kalır",
+      "content": "Taranan tıbbi veya hukuki belgeler, herhangi bir sunucu erişimi olmadan yerel olarak döndürülür.",
+      "badgeText": "Önce Güvenlik"
     },
     {
-      "type": "transform_performance",
-      "title": "Rotate Any PDF in Milliseconds",
-      "content": "Rotating 500 pages takes less than a second. No upload, no wait."
+      "type": "rotate_performance",
+      "title": "Herhangi Bir PDF'yi Milisaniye İçinde Döndürün",
+      "content": "500 sayfayı döndürmek bir saniyeden az sürer. Yükleme yok, bekleme yok.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [
     {
-      "q": "Can I rotate individual pages?",
-      "a": "Yes, select specific pages or all at once."
+      "q": "Sayfaları tek tek döndürebilir miyim?",
+      "a": "Evet, belirli sayfaları veya tümünü aynı anda seçin."
     },
     {
-      "q": "What rotation angles are available?",
-      "a": "90°, 180°, and 270° clockwise and counter-clockwise."
+      "q": "Hangi dönüş açıları mevcut?",
+      "a": "90°, 180° ve 270° saat yönünde ve saat yönünün tersine."
     },
     {
-      "q": "Does rotation affect image quality?",
-      "a": "No, rotation is lossless — no re-encoding occurs."
+      "q": "Döndürme görüntü kalitesini etkiler mi?",
+      "a": "Hayır, döndürme kayıpsızdır; yeniden kodlama gerçekleşmez."
     },
     {
-      "q": "Can I undo a rotation?",
-      "a": "Yes, apply the reverse rotation before downloading."
+      "q": "Döndürmeyi geri alabilir miyim?",
+      "a": "Evet, indirmeden önce ters döndürmeyi uygulayın."
     },
     {
-      "q": "Is this free?",
+      "q": "Bu bedava mı?",
       "a": "Evet, tamamen ücretsiz."
     }
-  ]
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi"
 }

@@ -1,67 +1,85 @@
 {
-  "title": "OCR PDF — Make Scans Searchable Offline",
-  "h1": "Extract and Recognize Text from Scanned PDFs",
-  "description": "Run OCR on scanned PDFs to make them searchable and copyable, entirely in your browser using Tesseract. No upload. Great for users in Istanbul.",
+  "title": "OCR PDF — Taramaları Çevrimdışı Aranabilir Hale Getirin",
+  "h1": "Taranan PDF'lerden Metin Çıkarma ve Tanıma",
+  "description": "Taranan PDF'leri tamamen tarayıcınızda Tesseract'ı kullanarak aranabilir ve kopyalanabilir hale getirmek için OCR'yi çalıştırın. Yükleme yok. %100 güvenli yerel işleme.",
+  "buttonText": "Run OCR",
+  "badges": [
+    "Metni Çıkart",
+    "Aranabilir PDF",
+    "Yapay Zeka Tanıma"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0s",
+    "Wait Time"
+  ],
   "sections": [
     {
-      "type": "organizer_hero_features",
-      "title": "Why Run OCR Locally?",
-      "content": "Scanned PDFs contain sensitive text. Running OCR on a cloud service exposes that text to a third party. Ours runs 100% offline."
+      "type": "ocr_hero_features",
+      "title": "OCR'yi Neden Yerel Olarak Çalıştırmalısınız?",
+      "content": "Taranan PDF'ler hassas metinler içeriyor. OCR'yi bir bulut hizmetinde çalıştırmak, bu metni üçüncü bir tarafa ifşa eder. Bizimki %100 çevrimdışı çalışıyor."
     },
     {
-      "type": "organizer_how_to_steps",
-      "title": "How to OCR a PDF",
+      "type": "ocr_how_to_steps",
+      "title": "PDF'ye OCR Nasıl Yapılır",
       "steps": [
         {
-          "title": "Load Scanned PDF",
-          "description": "Select the image-based or scanned PDF."
+          "title": "Taranan PDF'yi Yükle",
+          "description": "Görüntü tabanlı veya taranmış PDF'yi seçin."
         },
         {
-          "title": "Select Language",
-          "description": "Choose the document language for better accuracy."
+          "title": "Dil Seçin",
+          "description": "Daha iyi doğruluk için belge dilini seçin."
         },
         {
-          "title": "Download Searchable PDF",
-          "description": "Get a text-layer PDF ready to search and copy."
+          "title": "Aranabilir PDF'yi İndir",
+          "description": "Aramaya ve kopyalamaya hazır bir metin katmanlı PDF edinin."
         }
-      ]
+      ],
+      "badgeText": "Hızlı Kılavuz"
     },
     {
-      "type": "organizer_geo_targeting",
-      "title": "OCR Tool for Istanbul Archives",
-      "content": "Government agencies and businesses in Istanbul digitize paper archives using our offline OCR tool."
+      "type": "ocr_geo_targeting",
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Tüm işlemler doğrudan yerel cihazınızda gerçekleştirilir. Belgelerinizi hiçbir zaman harici sunuculara yüklemeden işlemek için gelişmiş WebAssembly teknolojisini kullanıyoruz ve tam gizlilik sağlıyoruz.",
+      "badgeText": "Yerel İşleme"
     },
     {
-      "type": "organizer_privacy_security",
-      "title": "Scanned Content Never Exposed",
-      "content": "OCR processing using Tesseract WASM runs entirely in browser memory — no API calls, no data transmission."
+      "type": "ocr_privacy_security",
+      "title": "Taranan İçerik Hiçbir Zaman Gösterilmiyor",
+      "content": "Tesseract WASM kullanılarak yapılan OCR işleme, tamamen tarayıcı belleğinde çalışır; API çağrısı veya veri iletimi yoktur.",
+      "badgeText": "Önce Güvenlik"
     },
     {
-      "type": "organizer_performance",
-      "title": "OCR Any Document Locally",
-      "content": "Process a 20-page scanned PDF in under 30 seconds. All Tesseract processing happens in-browser."
+      "type": "ocr_performance",
+      "title": "OCR Herhangi Bir Belge Yerel Olarak",
+      "content": "20 sayfalık taranmış PDF'yi 30 saniyeden kısa sürede işleyin. Tüm Tesseract işlemleri tarayıcıda gerçekleşir.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [
     {
-      "q": "What languages does OCR support?",
-      "a": "Over 100 languages via Tesseract engine."
+      "q": "OCR hangi dilleri destekliyor?",
+      "a": "Tesseract motoru aracılığıyla 100'den fazla dil."
     },
     {
-      "q": "How accurate is the OCR?",
-      "a": "Accuracy depends on scan quality; clear, high-contrast scans yield 95%+ accuracy."
+      "q": "OCR ne kadar doğrudur?",
+      "a": "Doğruluk tarama kalitesine bağlıdır; net, yüksek kontrastlı taramalar %95+ doğruluk sağlar."
     },
     {
-      "q": "Does it create a searchable PDF?",
-      "a": "Yes, a text layer is added making the PDF fully searchable."
+      "q": "Aranabilir bir PDF oluşturuyor mu?",
+      "a": "Evet, PDF'yi tamamen aranabilir hale getiren bir metin katmanı eklenmiştir."
     },
     {
-      "q": "Can I copy text from the result?",
-      "a": "Yes, the output PDF has selectable, copyable text."
+      "q": "Sonuçtan metni kopyalayabilir miyim?",
+      "a": "Evet, çıktı PDF'sinde seçilebilir, kopyalanabilir metin bulunur."
     },
     {
-      "q": "Is this free?",
-      "a": "Evet, tamamen ücretsiz."
+      "q": "Bu bedava mı?",
+      "a": "Evet, her zaman ücretsiz."
     }
-  ]
+  ],
+  "faqTitle": "Sıkça Sorulan Sorular",
+  "supportCenter": "Destek Merkezi"
 }
