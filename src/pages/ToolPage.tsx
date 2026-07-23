@@ -126,7 +126,8 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
     position: 'bottom-center' as const,
     format: '{n} / {p}',
     startPage: 1,
-    startNumber: 1
+    startNumber: 1,
+    numberStyle: 'arabic' as const
   });
   const [watermarkConfig, setWatermarkConfig] = useState({
     type: 'text' as 'text' | 'image',

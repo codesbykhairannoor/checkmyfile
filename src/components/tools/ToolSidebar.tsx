@@ -192,16 +192,61 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
       {tool.id === 'resize-pdf' && resizeConfig && setResizeConfig && (
         <ResizePdfEditor config={resizeConfig} setConfig={setResizeConfig} onApply={handleStartProcessing} isProcessing={isProcessing} />
       )}
-      {tool.id === 'edit-pdf' && editElements && setEditElements && setSelectedEditId && (
-        <EditPdfEditor 
-          elements={editElements} 
-          setElements={setEditElements} 
-          selectedId={selectedEditId || null} 
-          setSelectedId={setSelectedEditId}
-          activePageIndex={0}
-          onApply={handleStartProcessing} 
-          isProcessing={isProcessing} 
-        />
+      {tool.id === 'edit-pdf' && (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+          <details open className="glass-panel" style={{ borderRadius: 16, border: '1px solid var(--border-color)', overflow: 'hidden' }}>
+            <summary style={{ padding: '16px 20px', fontWeight: 800, cursor: 'pointer', outline: 'none', background: 'var(--bg-input)', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: 12 }}>
+              <span style={{ flex: 1 }}>✍️ Text & Markup</span>
+            </summary>
+            <div style={{ padding: '20px 16px', display: 'flex', flexDirection: 'column', gap: 24, background: 'var(--bg-card)' }}>
+              {editElements && setEditElements && setSelectedEditId && (
+                <EditPdfEditor 
+                  elements={editElements} setElements={setEditElements} 
+                  selectedId={selectedEditId || null} setSelectedId={setSelectedEditId}
+                  activePageIndex={activeFileIndex} onApply={() => handleStartProcessing({ toolId: 'edit-pdf' })} isProcessing={isProcessing} 
+                />
+              )}
+              <div style={{ height: 1, background: 'var(--border-color)', margin: '0 -16px' }} />
+              {signatureConfig && setSignatureConfig && (
+                <SignPdfEditor signatureConfig={signatureConfig} setSignatureConfig={setSignatureConfig} onApply={() => handleStartProcessing({ toolId: 'sign-pdf' })} isProcessing={isProcessing} />
+              )}
+            </div>
+          </details>
+
+          <details className="glass-panel" style={{ borderRadius: 16, border: '1px solid var(--border-color)', overflow: 'hidden' }}>
+            <summary style={{ padding: '16px 20px', fontWeight: 800, cursor: 'pointer', outline: 'none', background: 'var(--bg-input)', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: 12 }}>
+              <span style={{ flex: 1 }}>📄 Organize Pages</span>
+            </summary>
+            <div style={{ padding: '20px 16px', display: 'flex', flexDirection: 'column', gap: 24, background: 'var(--bg-card)' }}>
+              <RotatePdfEditor rotation={rotateDegrees} setRotation={setRotateDegrees} onApply={() => handleStartProcessing({ toolId: 'rotate-pdf' })} isProcessing={isProcessing} />
+              <div style={{ height: 1, background: 'var(--border-color)', margin: '0 -16px' }} />
+              <SplitPdfEditor splitRange={splitRange} setSplitRange={setSplitRange} onApply={() => handleStartProcessing({ toolId: 'split-pdf' })} isProcessing={isProcessing} />
+              <div style={{ height: 1, background: 'var(--border-color)', margin: '0 -16px' }} />
+              {cropConfig && setCropConfig && (
+                <CropPdfEditor cropConfig={cropConfig} setCropConfig={setCropConfig} onApply={() => handleStartProcessing({ toolId: 'crop-pdf' })} isProcessing={isProcessing} />
+              )}
+              <div style={{ height: 1, background: 'var(--border-color)', margin: '0 -16px' }} />
+              {removeRange !== undefined && setRemoveRange && (
+                <RemovePdfEditor removeRange={removeRange} setRemoveRange={setRemoveRange} onApply={() => handleStartProcessing({ toolId: 'remove-pdf' })} isProcessing={isProcessing} />
+              )}
+            </div>
+          </details>
+          
+          <details className="glass-panel" style={{ borderRadius: 16, border: '1px solid var(--border-color)', overflow: 'hidden' }}>
+            <summary style={{ padding: '16px 20px', fontWeight: 800, cursor: 'pointer', outline: 'none', background: 'var(--bg-input)', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: 12 }}>
+              <span style={{ flex: 1 }}>🛡️ Security & Extras</span>
+            </summary>
+            <div style={{ padding: '20px 16px', display: 'flex', flexDirection: 'column', gap: 24, background: 'var(--bg-card)' }}>
+              <WatermarkPdfEditor config={watermarkConfig} setConfig={setWatermarkConfig} onApply={() => handleStartProcessing({ toolId: 'watermark-pdf' })} isProcessing={isProcessing} />
+              <div style={{ height: 1, background: 'var(--border-color)', margin: '0 -16px' }} />
+              <PageNumbersPdfEditor config={pageNumberConfig} setConfig={setPageNumberConfig} onApply={() => handleStartProcessing({ toolId: 'page-numbers' })} isProcessing={isProcessing} />
+              <div style={{ height: 1, background: 'var(--border-color)', margin: '0 -16px' }} />
+              {pdfPassword !== undefined && setPdfPassword && (
+                <ProtectPdfEditor pdfPassword={pdfPassword} setPdfPassword={setPdfPassword} onApply={() => handleStartProcessing({ toolId: 'protect-pdf' })} isProcessing={isProcessing} />
+              )}
+            </div>
+          </details>
+        </div>
       )}
       {tool.id === 'extract-images-pdf' && (
         <ExtractImagesEditor onApply={handleStartProcessing} isProcessing={isProcessing} />

@@ -97,6 +97,21 @@ export const PageNumbersPdfEditor: React.FC<PageNumbersPdfEditorProps> = ({
 
       <div>
         <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'block', marginBottom: 12 }}>
+          Gaya Penomoran
+        </label>
+        <select
+          value={config.numberStyle || 'arabic'}
+          onChange={(e) => setConfig({ ...config, numberStyle: e.target.value })}
+          style={{ width: '100%', padding: '12px 14px', borderRadius: 8, border: '1px solid var(--border-color)', background: 'var(--bg-input)', color: 'var(--text-main)', fontSize: '0.9rem', outline: 'none', marginBottom: 16 }}
+        >
+          <option value="arabic">1, 2, 3 (Arabic)</option>
+          <option value="roman_upper">I, II, III (Roman Upper)</option>
+          <option value="roman_lower">i, ii, iii (Roman Lower)</option>
+          <option value="alpha_upper">A, B, C (Alpha Upper)</option>
+          <option value="alpha_lower">a, b, c (Alpha Lower)</option>
+        </select>
+
+        <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'block', marginBottom: 12 }}>
           Format Teks
         </label>
         <select
@@ -104,11 +119,11 @@ export const PageNumbersPdfEditor: React.FC<PageNumbersPdfEditorProps> = ({
           onChange={(e) => setConfig({ ...config, format: e.target.value })}
           style={{ width: '100%', padding: '12px 14px', borderRadius: 8, border: '1px solid var(--border-color)', background: 'var(--bg-input)', color: 'var(--text-main)', fontSize: '0.9rem', outline: 'none' }}
         >
-          <option value="{n}">{`{n} (Contoh: 1)`}</option>
-          <option value="{n} / {p}">{`{n} / {p} (Contoh: 1 / 10)`}</option>
-          <option value="Hal {n}">{`Hal {n} (Contoh: Hal 1)`}</option>
+          <option value="{n}">{`{n}`}</option>
+          <option value="{n} / {p}">{`{n} / {p}`}</option>
+          <option value="Hal {n}">{`Hal {n}`}</option>
           <option value="Halaman {n} dari {p}">{`Halaman {n} dari {p}`}</option>
-          <option value="Page {n} of {p}">{`Page {n} of {p}`}</option>
+          <option value="- {n} -">{`- {n} -`}</option>
         </select>
       </div>
 
