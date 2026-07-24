@@ -110,34 +110,29 @@ export const Navbar: React.FC<NavbarProps> = ({
         fontFamily: 'var(--font-main)',
       }}
     >
-      {/* ── Main bar ── */}
+      {/* 🌟 Main bar 🌟 */}
       <div style={{
         padding: '0 24px',
         maxWidth: 1440, margin: '0 auto',
         display: 'flex', alignItems: 'center',
-        justifyContent: 'space-between', gap: 20, height: 60,
+        justifyContent: 'space-between', height: 60,
+        position: 'relative'
       }}>
 
-        {/* Left: Logo + Quick Nav + Hover Mega */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
+        {/* Left: Logo */}
+        <div style={{ display: 'flex', alignItems: 'center', flex: 1 }}>
 
           {/* Brand */}
-          <div onClick={onNavigateHome} aria-label="Navigate to Home" style={{ display: 'flex', alignItems: 'center', gap: 10, cursor: 'pointer', userSelect: 'none', flexShrink: 0 }}>
-            <div style={{ width: 38, height: 38, borderRadius: 10, background: 'var(--brand-gradient)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', boxShadow: '0 4px 16px var(--brand-glow)', flexShrink: 0 }}>
-              <FileText size={20} />
-            </div>
-            <div>
-              <div style={{ fontSize: '1.2rem', fontWeight: 800, letterSpacing: '-0.03em', lineHeight: 1.1 }}>
-                HandleMyFile <span className="gradient-text">⚡</span>
-              </div>
-              <div style={{ fontSize: '0.68rem', color: 'var(--text-muted)', fontWeight: 600, letterSpacing: '0.04em', textTransform: 'uppercase' }}>
-                100% Client-Side Wasm
-              </div>
+          <div onClick={onNavigateHome} aria-label="Navigate to Home" style={{ display: 'flex', alignItems: 'center', gap: 12, cursor: 'pointer', userSelect: 'none', flexShrink: 0 }}>
+            <img src="/logo.png" alt="CheckMyFile Logo" style={{ height: 38, width: 'auto', objectFit: 'contain' }} />
+            <div style={{ fontSize: '1.35rem', fontWeight: 800, letterSpacing: '-0.02em', lineHeight: 1.1, fontFamily: 'var(--font-heading)' }}>
+              CheckMyFile
             </div>
           </div>
+        </div>
 
-          {/* Desktop Quick Tabs */}
-          <nav aria-label="Desktop Quick Navigation" className="desktop-only" style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+        {/* Center: Desktop Quick Tabs */}
+        <nav aria-label="Desktop Quick Navigation" className="desktop-only" style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)', display: 'flex', alignItems: 'center', gap: 4 }}>
             {[
               { id: 'merge-pdf', label: 'MERGE PDF' },
               { id: 'split-pdf', label: 'SPLIT PDF' },
@@ -248,11 +243,11 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </div>
               )}
             </div>
-          </nav>
-        </div>
+        </nav>
 
-        {/* Right: Theme + Lang (Desktop) */}
-        <div className="desktop-only" style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+        {/* Right: Theme + Lang + Mobile Nav */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12, flex: 1, justifyContent: 'flex-end' }}>
+          <div className="desktop-only" style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
           <button
             onClick={onToggleTheme}
             style={{ width: 36, height: 36, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: isLightMode ? '#fef3c7' : '#1e1b4b', color: isLightMode ? '#d97706' : '#a855f7', border: `1.5px solid ${isLightMode ? '#f59e0b' : '#6366f1'}`, cursor: 'pointer', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', transition: 'all 0.2s' }}
@@ -290,6 +285,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           >
             {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
+        </div>
         </div>
       </div>
 
