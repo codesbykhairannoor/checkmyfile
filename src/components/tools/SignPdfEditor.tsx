@@ -1,9 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { PenTool, Download, Settings2, Image as ImageIcon, RotateCcw } from 'lucide-react';
+import { PenTool, Download, Settings2, Image as ImageIcon, RotateCcw, ShieldCheck, Lock } from 'lucide-react';
+import { generateSelfSignedP12 } from '../../engines/pdf/cryptoUtils';
 
 interface SignPdfEditorProps {
   tUi?: Record<string, string>;
-  signatureConfig: { pageIndex: number; x: number; y: number; width: number; height: number; imageUrl: string; };
+  signatureConfig: any;
   setSignatureConfig: (config: any) => void;
   onApply: () => void;
   isProcessing: boolean;
@@ -16,12 +17,18 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
   onApply,
   isProcessing
 }) => {
-  void tUi;
   const [tab, setTab] = useState<'draw' | 'upload'>('draw');
   const [isDrawing, setIsDrawing] = useState(false);
   const [lineWidth, setLineWidth] = useState(2);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const fileRef = useRef<HTMLInputElement>(null);
+  const certFileRef = useRef<HTMLInputElement>(null);
+
+  // Crypto State
+  const [certMode, setCertMode] = useState<'auto' | 'custom'>('auto');
+  const [certPassword, setCertPassword] = useState('');
+  const [certFile, setCertFile] = useState<File | null>(null);
+  const [isGenerating, setIsGenerating] = useState(false);
 
   // Initialize canvas context and clear on mount
   useEffect(() => {
@@ -108,14 +115,58 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
     }
   };
 
+  const handleCertUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      setCertFile(file);
+    }
+  };
+
+  const handleApply = async () => {
+    setIsGenerating(true);
+    try {
+      if (certMode === 'auto') {
+        const password = 'auto_generated_password';
+        const p12Bytes = await generateSelfSignedP12(password, 'Anonymous User');
+        setSignatureConfig({
+          ...signatureConfig,
+          p12Bytes,
+          password
+        });
+      } else {
+        if (!certFile || !certPassword) {
+          alert('Harap unggah file sertifikat (.p12/.pfx) dan masukkan passwordnya.');
+          setIsGenerating(false);
+          return;
+        }
+        const arrayBuffer = await certFile.arrayBuffer();
+        setSignatureConfig({
+          ...signatureConfig,
+          p12Bytes: arrayBuffer,
+          password: certPassword
+        });
+      }
+      
+      // Delay slightly so state updates before parent processes
+      setTimeout(() => {
+        onApply();
+        setIsGenerating(false);
+      }, 100);
+    } catch (err) {
+      console.error(err);
+      alert('Gagal memproses sertifikat digital.');
+      setIsGenerating(false);
+    }
+  };
+
   return (
     <div className="glass-panel" style={{ padding: 24, display: 'flex', flexDirection: 'column', gap: 24, minWidth: 320 }}>
       <div>
         <h4 style={{ fontWeight: 800, fontSize: '1.1rem', color: 'var(--text-main)', marginBottom: 6, display: 'flex', alignItems: 'center', gap: 8 }}>
           <PenTool size={18} className="text-brand-primary" color="#3b82f6" />
-          <span>{tUi["E-Sign PDF"] || (tUi["E-Sign PDF"] || "E-Sign PDF")}</span>
+          <span>{tUi["E-Sign PDF"] || "E-Sign PDF"}</span>
         </h4>
-        <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>{tUi["Buat tanda tangan Anda dan letakkan di posisi yang tepat pada halaman PDF."] || (tUi["Buat tanda tangan Anda dan letakkan di posisi yang tepat pada halaman PDF."] || "Buat tanda tangan Anda dan letakkan di posisi yang tepat pada halaman PDF.")}</p>
+        <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>{tUi["Buat tanda tangan Anda dan letakkan di posisi yang tepat pada halaman PDF."] || "Buat tanda tangan Anda dan letakkan di posisi yang tepat pada halaman PDF."}</p>
       </div>
 
       {/* Tabs */}
@@ -124,12 +175,12 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
           onClick={() => setTab('draw')}
           style={{ flex: 1, padding: '8px', fontSize: '0.8rem', fontWeight: 600, borderRadius: 6, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, background: tab === 'draw' ? 'var(--bg-card)' : 'transparent', color: tab === 'draw' ? 'var(--brand-primary)' : 'var(--text-muted)', border: 'none', boxShadow: tab === 'draw' ? '0 2px 4px rgba(0,0,0,0.05)' : 'none' }}
         >
-          <PenTool size={14} />{tUi["Gambar"] || (tUi["Gambar"] || "Gambar")}</button>
+          <PenTool size={14} />{tUi["Gambar"] || "Gambar"}</button>
         <button 
           onClick={() => setTab('upload')}
           style={{ flex: 1, padding: '8px', fontSize: '0.8rem', fontWeight: 600, borderRadius: 6, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, background: tab === 'upload' ? 'var(--bg-card)' : 'transparent', color: tab === 'upload' ? 'var(--brand-primary)' : 'var(--text-muted)', border: 'none', boxShadow: tab === 'upload' ? '0 2px 4px rgba(0,0,0,0.05)' : 'none' }}
         >
-          <ImageIcon size={14} />{tUi["Unggah"] || (tUi["Unggah"] || "Unggah")}</button>
+          <ImageIcon size={14} />{tUi["Unggah"] || "Unggah"}</button>
       </div>
 
       {/* Mode Content */}
@@ -159,7 +210,7 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 6, marginTop: 4 }}>
             <label style={{ fontSize: '0.8rem', color: 'var(--text-muted)', display: 'flex', justifyContent: 'space-between' }}>
-              <span>{tUi["Ketebalan Tinta"] || (tUi["Ketebalan Tinta"] || "Ketebalan Tinta")}</span>
+              <span>{tUi["Ketebalan Tinta"] || "Ketebalan Tinta"}</span>
               <span>{lineWidth}px</span>
             </label>
             <input type="range" min="1" max="10" value={lineWidth} onChange={e => setLineWidth(Number(e.target.value))} />
@@ -171,8 +222,8 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
         <div>
           <input type="file" accept="image/png, image/jpeg" style={{ display: 'none' }} ref={fileRef} onChange={handleFileUpload} />
           <button onClick={() => fileRef.current?.click()} className="btn-secondary" style={{ width: '100%', padding: '12px', justifyContent: 'center', background: 'var(--bg-input)' }}>
-            <ImageIcon size={16} />{tUi["Unggah Tanda Tangan (PNG/JPG)"] || (tUi["Unggah Tanda Tangan (PNG/JPG)"] || "Unggah Tanda Tangan (PNG/JPG)")}</button>
-          {signatureConfig.imageUrl && signatureConfig.imageUrl.length > 100 && (
+            <ImageIcon size={16} />{tUi["Unggah Tanda Tangan (PNG/JPG)"] || "Unggah Tanda Tangan (PNG/JPG)"}</button>
+          {signatureConfig?.imageUrl && signatureConfig.imageUrl.length > 100 && (
             <div style={{ marginTop: 12, padding: 16, background: '#fff', border: '1px dashed var(--border-color)', borderRadius: 8, display: 'flex', justifyContent: 'center' }}>
               <img src={signatureConfig.imageUrl} alt="Preview" style={{ maxHeight: 60, objectFit: 'contain' }} />
             </div>
@@ -182,20 +233,55 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
 
       {/* Position Settings */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: 12, borderTop: '1px solid var(--border-color)', paddingTop: 20 }}>
-        <h5 style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)' }}>{tUi["Ukuran Tanda Tangan"] || (tUi["Ukuran Tanda Tangan"] || "Ukuran Tanda Tangan")}</h5>
-        <input type="range" min="5" max="50" value={signatureConfig.width} onChange={e => setSignatureConfig({...signatureConfig, width: Number(e.target.value)})} />
-        <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>{tUi["Klik halaman di Live Preview untuk memindahkan tanda tangan, lalu geser (drag) untuk menyesuaikan posisi."] || (tUi["Klik halaman di Live Preview untuk memindahkan tanda tangan, lalu geser (drag) untuk menyesuaikan posisi."] || "Klik halaman di Live Preview untuk memindahkan tanda tangan, lalu geser (drag) untuk menyesuaikan posisi.")}</p>
+        <h5 style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)' }}>{tUi["Ukuran Tanda Tangan"] || "Ukuran Tanda Tangan"}</h5>
+        <input type="range" min="5" max="50" value={signatureConfig?.width || 30} onChange={e => setSignatureConfig({...signatureConfig, width: Number(e.target.value)})} />
+        <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>{tUi["Klik halaman di Live Preview untuk memindahkan tanda tangan, lalu geser (drag) untuk menyesuaikan posisi."] || "Klik halaman di Live Preview untuk memindahkan tanda tangan, lalu geser (drag) untuk menyesuaikan posisi."}</p>
+      </div>
+
+      {/* Crypto Signature Settings */}
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 12, borderTop: '1px solid var(--border-color)', paddingTop: 20 }}>
+        <h5 style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: 6 }}>
+          <ShieldCheck size={16} className="text-green-500" />
+          {tUi["Sertifikat Kriptografi"] || "Sertifikat Kriptografi (PKCS#7)"}
+        </h5>
+        
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+          <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: '0.8rem', cursor: 'pointer' }}>
+            <input type="radio" name="certMode" value="auto" checked={certMode === 'auto'} onChange={() => setCertMode('auto')} />
+            <span>{tUi["Sertifikat Otomatis (Anonim)"] || "Sertifikat Otomatis (Anonim)"}</span>
+          </label>
+          <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: '0.8rem', cursor: 'pointer' }}>
+            <input type="radio" name="certMode" value="custom" checked={certMode === 'custom'} onChange={() => setCertMode('custom')} />
+            <span>{tUi["Gunakan P12 / PFX Pribadi"] || "Gunakan P12 / PFX Pribadi"}</span>
+          </label>
+        </div>
+
+        {certMode === 'custom' && (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 10, background: 'var(--bg-input)', padding: 12, borderRadius: 8, marginTop: 4 }}>
+            <input type="file" accept=".p12,.pfx" style={{ display: 'none' }} ref={certFileRef} onChange={handleCertUpload} />
+            <button onClick={() => certFileRef.current?.click()} className="btn-secondary" style={{ width: '100%', padding: '8px', fontSize: '0.8rem', justifyContent: 'center' }}>
+              <Lock size={14} /> {certFile ? certFile.name : (tUi["Pilih File .p12 / .pfx"] || "Pilih File .p12 / .pfx")}
+            </button>
+            <input 
+              type="password" 
+              placeholder={tUi["Password Sertifikat"] || "Password Sertifikat"} 
+              value={certPassword}
+              onChange={e => setCertPassword(e.target.value)}
+              style={{ width: '100%', padding: '8px 12px', borderRadius: 6, border: '1px solid var(--border-color)', fontSize: '0.85rem' }}
+            />
+          </div>
+        )}
       </div>
 
       <div style={{ marginTop: 'auto', paddingTop: 24, borderTop: '1px solid var(--border-color)' }}>
         <button
-          onClick={onApply}
-          disabled={isProcessing || !signatureConfig.imageUrl}
+          onClick={handleApply}
+          disabled={isProcessing || isGenerating || !signatureConfig?.imageUrl}
           className="btn-primary"
-          style={{ width: '100%', padding: '14px 20px', fontSize: '0.95rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, background: (tUi["linear-gradient(135deg, #3b82f6 0%, #2dd4bf 100%)"] || "linear-gradient(135deg, #3b82f6 0%, #2dd4bf 100%)") }}
+          style={{ width: '100%', padding: '14px 20px', fontSize: '0.95rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, background: "linear-gradient(135deg, #3b82f6 0%, #2dd4bf 100%)" }}
         >
-          {isProcessing ? <div style={{ animation: 'spin 1s linear infinite' }}><Settings2 size={18} /></div> : <Download size={18} />}
-          <span>{isProcessing ? (tUi["Memproses..."] || "Memproses...") : (tUi["Terapkan Tanda Tangan"] || (tUi["Terapkan Tanda Tangan"] || "Terapkan Tanda Tangan"))}</span>
+          {(isProcessing || isGenerating) ? <div style={{ animation: 'spin 1s linear infinite' }}><Settings2 size={18} /></div> : <Download size={18} />}
+          <span>{(isProcessing || isGenerating) ? (tUi["Memproses..."] || "Memproses...") : (tUi["Terapkan Enkripsi PDF"] || "Terapkan Enkripsi PDF")}</span>
         </button>
       </div>
     </div>
