@@ -1,13 +1,10 @@
 const fs = require('fs');
 const path = './src/i18n/editorTranslations.ts';
-let content = fs.readFileSync(path, 'utf8');
+let lines = fs.readFileSync(path, 'utf8').split('\n');
 
-// Remove the duplicates injected at the top
-content = content.replace('    "Ukuran Tanda Tangan": "Ukuran Tanda Tangan",\n', '');
-content = content.replace('    "Klik halaman di Live Preview untuk memindahkan tanda tangan, lalu geser (drag) untuk menyesuaikan posisi.": "Klik halaman di Live Preview untuk memindahkan tanda tangan, lalu geser (drag) untuk menyesuaikan posisi.",\n', '');
+// 0-indexed, so line 185 is index 184
+lines.splice(452, 1);
+lines.splice(184, 1);
 
-content = content.replace('    "Ukuran Tanda Tangan": "Signature Size",\n', '');
-content = content.replace('    "Klik halaman di Live Preview untuk memindahkan tanda tangan, lalu geser (drag) untuk menyesuaikan posisi.": "Click on the page in Live Preview to place the signature, then drag to adjust.",\n', '');
-
-fs.writeFileSync(path, content);
-console.log('Fixed duplicates');
+fs.writeFileSync(path, lines.join('\n'));
+console.log('Deleted lines 185 and 453');
