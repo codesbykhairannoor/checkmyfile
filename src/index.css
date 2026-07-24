@@ -423,6 +423,7 @@ button, input, select, textarea {
   .tool-workspace-left {
     min-height: 550px !important;
     height: 550px !important;
+    max-height: 550px !important;
     width: 100% !important;
     padding-right: 0 !important;
   }

@@ -3,7 +3,7 @@ import { editorTranslations } from '../../i18n/editorTranslations';
 import React, { useState, useEffect, useRef } from 'react';
 import * as pdfjsLib from 'pdfjs-dist';
 import { renderAsync } from 'docx-preview';
-import { RotateCw, ZoomIn, ZoomOut, Presentation, FileText, FileSpreadsheet, CheckCircle, TableProperties, ChevronLeft, ChevronRight, Lock } from 'lucide-react';
+import { ZoomIn, ZoomOut, Presentation, FileText, FileSpreadsheet, CheckCircle, TableProperties, ChevronLeft, ChevronRight, Lock } from 'lucide-react';
 import LazyPdfPage from '../preview/LazyPdfPage';
 import { PdfPreview } from '../preview/PdfPreview';
 import { OfficePreview } from '../preview/OfficePreview';
@@ -77,7 +77,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
   const [pageNumber, setPageNumber] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>(1);
   const [zoomScale, setZoomScale] = useState<number>(1.0);
-  const [fileRotations, setFileRotations] = useState<Record<string, number>>({});
+  
   const [pdfDoc, setPdfDoc] = useState<any>(null);
   // pageAspectRatio: width / height of the actual document page (A4 portrait = 0.707)
   const [pageAspectRatio, setPageAspectRatio] = useState<number>(A4_PORTRAIT_RATIO);
@@ -107,10 +107,10 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
   const previewWrapperRef = useRef<HTMLDivElement>(null);
 
   const activeFile = files[localActiveIndex] || files[activeFileIndex] || files[0] || null;
-  const fileKey = activeFile ? `${activeFile.name}-${activeFile.size}` : '';
+
   const ext = activeFile?.name.split('.').pop()?.toLowerCase() || '';
   const isPdf = activeFile?.type === 'application/pdf' || ext === 'pdf';
-  const previewRotate = fileRotations[fileKey] || 0;
+  const previewRotate = 0;
 
   const handlePageChange = (newPage: number) => {
     setPageNumber(newPage);
@@ -150,14 +150,6 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
       observer.disconnect();
     };
   }, [isPdf, totalPages, isLoadingPreview]);
-
-  const handleRotate = () => {
-    if (!fileKey) return;
-    setFileRotations(prev => ({
-      ...prev,
-      [fileKey]: ((prev[fileKey] || 0) + 90) % 360
-    }));
-  };
 
   // Reset page number & states on file change
   useEffect(() => {
@@ -361,7 +353,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
         }}
       >
         {/* ===== Toolbar Area ===== */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: isResult ? 16 : 0, flexWrap: 'wrap', justifyContent: 'center' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: isResult ? 16 : 0, flexWrap: 'wrap', justifyContent: 'center' }}>
           {/* PDF Controls */}
           {isPdf && (
             <>
@@ -417,18 +409,6 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
             </>
           )}
 
-          {/* Rotate Button (PDF + Image) */}
-          {(isPdf || isImage) && (
-            <button
-              onClick={handleRotate}
-              className="btn-secondary"
-              style={{ padding: '5px 12px', fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: 5 }}
-              title="Putar 90° orientasi halaman"
-            >
-              <RotateCw size={15} />
-              <span>Putar 90°</span>
-            </button>
-          )}
         </div>
       </div>
 
@@ -518,7 +498,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
               setEditElements={setEditElements}
               selectedEditId={selectedEditId}
               setSelectedEditId={setSelectedEditId}
-              previewRotate={fileRotations[activeFile.name] || 0}
+              previewRotate={0}
               externalRotate={externalRotate}
               pixelWidth={pixelWidth}
               paperShadow={paperShadow}
