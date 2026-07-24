@@ -91,6 +91,7 @@ export const officeTools: ToolDefinition[] = [
     },
   },
 
+  /*
   {
     id: 'pdf-to-word',
     category: 'office',
@@ -121,6 +122,7 @@ export const officeTools: ToolDefinition[] = [
       },
     },
   },
+  */
   {
     id: 'pdf-to-ppt',
     category: 'office',

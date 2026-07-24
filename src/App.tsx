@@ -56,6 +56,13 @@ export const App: React.FC = () => {
           setActiveTool(null);
         } else {
           const tool = getToolBySlugAndLang(slug, detectedLang);
+          if (!tool) {
+            // Clean URL if user attempts to access disabled pdf-to-word tool
+            const disabledSlugs = ['pdf-to-word', 'pdf-ke-word', 'pdf-a-word', 'pdf-to-docx', 'pdf-ke-docx'];
+            if (disabledSlugs.includes(slug.toLowerCase())) {
+              window.history.replaceState({}, '', `/${detectedLang}`);
+            }
+          }
           setActiveTool(tool || null);
           setActivePage(null);
         }
