@@ -132,7 +132,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         </div>
 
         {/* Center: Desktop Quick Tabs */}
-        <nav aria-label="Desktop Quick Navigation" className="desktop-only" style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)', display: 'flex', alignItems: 'center', gap: 4 }}>
+        <nav aria-label="Desktop Quick Navigation" className="desktop-only" style={{ flex: '0 1 auto', display: 'flex', alignItems: 'center', gap: 4 }}>
             {[
               { id: 'merge-pdf', label: 'MERGE PDF' },
               { id: 'split-pdf', label: 'SPLIT PDF' },
