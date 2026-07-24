@@ -3,7 +3,7 @@ import path from 'path';
 import { TOOLS_CATALOG } from '../src/catalog/toolsCatalog';
 import { SUPPORTED_LANGUAGES } from '../src/i18n/languages';
 
-const BASE_URL = 'https://helpmyfile.com';
+const BASE_URL = 'https://www.handlemyfile.com';
 const STATIC_PAGES = ['', 'pricing', 'security', 'use-cases', 'compare', 'languages'];
 
 const generateSitemap = () => {
