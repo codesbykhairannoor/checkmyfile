@@ -1,28 +1,28 @@
 import React from 'react';
-import { RotatePdfEditor } from './RotatePdfEditor';
-import { WatermarkPdfEditor } from './WatermarkPdfEditor';
-import { PageNumbersPdfEditor } from './PageNumbersPdfEditor';
-import { SplitPdfEditor } from './SplitPdfEditor';
-import { MergePdfEditor } from './MergePdfEditor';
-import { CompressPdfEditor } from './CompressPdfEditor';
+const RotatePdfEditor = React.lazy(() => import('./RotatePdfEditor').then(m => ({ default: m.RotatePdfEditor })));
+const WatermarkPdfEditor = React.lazy(() => import('./WatermarkPdfEditor').then(m => ({ default: m.WatermarkPdfEditor })));
+const PageNumbersPdfEditor = React.lazy(() => import('./PageNumbersPdfEditor').then(m => ({ default: m.PageNumbersPdfEditor })));
+const SplitPdfEditor = React.lazy(() => import('./SplitPdfEditor').then(m => ({ default: m.SplitPdfEditor })));
+const MergePdfEditor = React.lazy(() => import('./MergePdfEditor').then(m => ({ default: m.MergePdfEditor })));
+const CompressPdfEditor = React.lazy(() => import('./CompressPdfEditor').then(m => ({ default: m.CompressPdfEditor })));
 
-import { PdfToImageEditor } from './PdfToImageEditor';
-import { GenericConvertEditor } from './GenericConvertEditor';
-import { RemovePdfEditor } from './RemovePdfEditor';
-import { OrganizePdfEditor } from './OrganizePdfEditor';
-import { SignPdfEditor } from './SignPdfEditor';
-import { ProtectPdfEditor } from './ProtectPdfEditor';
-import { UnlockPdfEditor } from './UnlockPdfEditor';
-import { CropPdfEditor } from './CropPdfEditor';
-import { ExtractImagesEditor } from './ExtractImagesEditor';
-import { GrayscalePdfEditor } from './GrayscalePdfEditor';
-import { ScanToPdfEditor } from './ScanToPdfEditor';
-import { RemoveMetadataEditor } from './RemoveMetadataEditor';
-import { ComparePdfEditor } from './ComparePdfEditor';
-import { RedactPdfEditor } from './RedactPdfEditor';
-import { ReversePdfEditor } from './ReversePdfEditor';
-import { ResizePdfEditor } from './ResizePdfEditor';
-import { EditPdfEditor } from './EditPdfEditor';
+const PdfToImageEditor = React.lazy(() => import('./PdfToImageEditor').then(m => ({ default: m.PdfToImageEditor })));
+const GenericConvertEditor = React.lazy(() => import('./GenericConvertEditor').then(m => ({ default: m.GenericConvertEditor })));
+const RemovePdfEditor = React.lazy(() => import('./RemovePdfEditor').then(m => ({ default: m.RemovePdfEditor })));
+const OrganizePdfEditor = React.lazy(() => import('./OrganizePdfEditor').then(m => ({ default: m.OrganizePdfEditor })));
+const SignPdfEditor = React.lazy(() => import('./SignPdfEditor').then(m => ({ default: m.SignPdfEditor })));
+const ProtectPdfEditor = React.lazy(() => import('./ProtectPdfEditor').then(m => ({ default: m.ProtectPdfEditor })));
+const UnlockPdfEditor = React.lazy(() => import('./UnlockPdfEditor').then(m => ({ default: m.UnlockPdfEditor })));
+const CropPdfEditor = React.lazy(() => import('./CropPdfEditor').then(m => ({ default: m.CropPdfEditor })));
+const ExtractImagesEditor = React.lazy(() => import('./ExtractImagesEditor').then(m => ({ default: m.ExtractImagesEditor })));
+const GrayscalePdfEditor = React.lazy(() => import('./GrayscalePdfEditor').then(m => ({ default: m.GrayscalePdfEditor })));
+const ScanToPdfEditor = React.lazy(() => import('./ScanToPdfEditor').then(m => ({ default: m.ScanToPdfEditor })));
+const RemoveMetadataEditor = React.lazy(() => import('./RemoveMetadataEditor').then(m => ({ default: m.RemoveMetadataEditor })));
+const ComparePdfEditor = React.lazy(() => import('./ComparePdfEditor').then(m => ({ default: m.ComparePdfEditor })));
+const RedactPdfEditor = React.lazy(() => import('./RedactPdfEditor').then(m => ({ default: m.RedactPdfEditor })));
+const ReversePdfEditor = React.lazy(() => import('./ReversePdfEditor').then(m => ({ default: m.ReversePdfEditor })));
+const ResizePdfEditor = React.lazy(() => import('./ResizePdfEditor').then(m => ({ default: m.ResizePdfEditor })));
+const EditPdfEditor = React.lazy(() => import('./EditPdfEditor').then(m => ({ default: m.EditPdfEditor })));
 import type { ToolDefinition } from '../../catalog/toolsCatalog';
 import { editorTranslations } from '../../i18n/editorTranslations';
 
@@ -94,6 +94,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
   const tUi = editorTranslations[currentLang] || editorTranslations['en'] || {};
 
   return (
+    <React.Suspense fallback={<div style={{ padding: 24, textAlign: "center", color: "var(--text-muted)" }}>Loading module...</div>}>
     <div className="mobile-full-width" style={{ flexShrink: 0, flex: 1, minWidth: 350, minHeight: 0, paddingRight: 8, paddingBottom: 24, display: 'flex', flexDirection: 'column', gap: 16, marginTop: 0, overflowY: 'auto' }}>
       <input 
         type="file" 
@@ -277,6 +278,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
       {['pdf-to-word', 'word-to-pdf', 'excel-to-pdf', 'image-to-pdf', 'ppt-to-pdf', 'pdf-to-ppt', 'csv-to-pdf', 'txt-to-pdf', 'csv-to-excel', 'excel-to-csv', 'ocr-pdf'].includes(tool.id) && (
         <GenericConvertEditor toolId={tool.id} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
-    </div>
+      </div>
+    </React.Suspense>
   );
 };

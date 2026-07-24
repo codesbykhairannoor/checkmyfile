@@ -1,14 +1,12 @@
 import { getUiTranslations } from '../../i18n/translations';
 import { editorTranslations } from '../../i18n/editorTranslations';
 import React, { useState, useEffect, useRef } from 'react';
-import * as pdfjsLib from 'pdfjs-dist';
-import { renderAsync } from 'docx-preview';
 import { ZoomIn, ZoomOut, Presentation, FileText, FileSpreadsheet, CheckCircle, TableProperties, ChevronLeft, ChevronRight, Lock } from 'lucide-react';
 import LazyPdfPage from '../preview/LazyPdfPage';
-import { PdfPreview } from '../preview/PdfPreview';
-import { OfficePreview } from '../preview/OfficePreview';
-import { PptxPreview } from '../preview/PptxPreview';
-import { SpreadsheetPreview } from '../preview/SpreadsheetPreview';
+const PdfPreview = React.lazy(() => import('../preview/PdfPreview').then(m => ({ default: m.PdfPreview })));
+const OfficePreview = React.lazy(() => import('../preview/OfficePreview').then(m => ({ default: m.OfficePreview })));
+const PptxPreview = React.lazy(() => import('../preview/PptxPreview').then(m => ({ default: m.PptxPreview })));
+const SpreadsheetPreview = React.lazy(() => import('../preview/SpreadsheetPreview').then(m => ({ default: m.SpreadsheetPreview })));
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.mjs`;
 
@@ -172,6 +170,8 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
           if (isCancelled) return;
           
           // Add 10-second timeout to prevent silent worker hangs on massive generated PDFs
+          const pdfjsLib = await import('pdfjs-dist');
+          pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.mjs`;
           const pdfPromise = pdfjsLib.getDocument({ data: new Uint8Array(arrayBuffer) }).promise;
           const timeoutPromise = new Promise((_, reject) => setTimeout(() => reject(new Error('PDF parsing timeout')), 10000));
           const pdf = await Promise.race([pdfPromise, timeoutPromise]) as any;
@@ -262,7 +262,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
             const arrayBuffer = await activeFile.arrayBuffer();
             if (docxContainerRef.current) {
               docxContainerRef.current.innerHTML = '';
-              await renderAsync(arrayBuffer, docxContainerRef.current, undefined, {
+              await (await import('docx-preview')).renderAsync(arrayBuffer, docxContainerRef.current, undefined, {
                 className: 'docx-preview-rendered',
                 inWrapper: true,
                 ignoreWidth: false,

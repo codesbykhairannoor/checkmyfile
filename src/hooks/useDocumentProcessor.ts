@@ -1,24 +1,4 @@
 import { useState, useEffect } from 'react';
-import * as pdfEngine from '../engines/pdfEngine';
-import * as compressEngine from '../engines/compressEngine';
-import * as officeEngine from '../engines/officeEngine';
-import * as imageEngine from '../engines/imageEngine';
-import * as ocrEngine from '../engines/ocrEngine';
-import { removePdfPages } from '../engines/pdf/removePages';
-import { insertPdfPages } from '../engines/pdf/organizePdf';
-import { signPdf } from '../engines/pdf/signPdf';
-import { protectPdf } from '../engines/pdf/protectPdf';
-import { unlockPdf } from '../engines/pdf/unlockPdf';
-import { cropPdf } from '../engines/pdf/cropPdf';
-import { extractImagesPdf } from '../engines/pdf/extractImages';
-import { grayscalePdf } from '../engines/pdf/grayscalePdf';
-import { scanToPdf } from '../engines/pdf/scanToPdf';
-import { removeMetadataPdf } from '../engines/pdf/removeMetadataPdf';
-import { comparePdf } from '../engines/pdf/comparePdf';
-import { redactPdf } from '../engines/pdf/redactPdf';
-import { reversePdf } from '../engines/pdf/reversePdf';
-import { resizePdf } from '../engines/pdf/resizePdf';
-import { editPdf } from '../engines/pdf/editPdf';
 import { getUiTranslations } from '../i18n/translations';
 
 interface ProcessorOptions {
@@ -86,10 +66,10 @@ export function useDocumentProcessor() {
       let outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_processed.pdf`;
 
       if (toolId === 'merge-pdf') {
-        resultBytes = await pdfEngine.mergePdfs(files, (p) => setProgress(p));
+        resultBytes = await (await import('../engines/pdfEngine')).mergePdfs(files, (p) => setProgress(p));
         outName = `merged_${files.length}_files.pdf`;
       } else if (toolId === 'split-pdf') {
-        const results = await pdfEngine.splitPdf(files[0], options.splitRange || '', (p) => setProgress(p));
+        const results = await (await import('../engines/pdfEngine')).splitPdf(files[0], options.splitRange || '', (p) => setProgress(p));
         if (results.length === 1) {
           resultBytes = results[0].data;
           outName = results[0].name;
@@ -101,37 +81,37 @@ export function useDocumentProcessor() {
           outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_split_pages.zip`;
         }
       } else if (toolId === 'rotate-pdf') {
-        resultBytes = await pdfEngine.rotatePdf(files[0], options.rotateDegrees || 0, (p) => setProgress(p));
+        resultBytes = await (await import('../engines/pdfEngine')).rotatePdf(files[0], options.rotateDegrees || 0, (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_rotated.pdf`;
       } else if (toolId === 'protect-pdf') {
-        const resultBlob = await protectPdf(files[0], options.pdfPassword, (p) => setProgress(p));
+        const resultBlob = await (await import('../engines/pdf/protectPdf')).protectPdf(files[0], options.pdfPassword, (p) => setProgress(p));
         resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_protected.pdf`;
       } else if (toolId === 'unlock-pdf') {
-        const resultBlob = await unlockPdf(files[0], options.pdfPassword, (p) => setProgress(p));
+        const resultBlob = await (await import('../engines/pdf/unlockPdf')).unlockPdf(files[0], options.pdfPassword, (p) => setProgress(p));
         resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_unlocked.pdf`;
       } else if (toolId === 'crop-pdf') {
-        const resultBlob = await cropPdf(files[0], options.cropConfig, (p) => setProgress(p));
+        const resultBlob = await (await import('../engines/pdf/cropPdf')).cropPdf(files[0], options.cropConfig, (p) => setProgress(p));
         resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_cropped.pdf`;
       } else if (toolId === 'extract-images-pdf') {
-        const resultBlob = await extractImagesPdf(files[0], (p) => setProgress(p));
+        const resultBlob = await (await import('../engines/pdf/extractImages')).extractImagesPdf(files[0], (p) => setProgress(p));
         resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_images.zip`;
       } else if (toolId === 'grayscale-pdf') {
-        const resultBlob = await grayscalePdf(files[0], (p) => setProgress(p));
+        const resultBlob = await (await import('../engines/pdf/grayscalePdf')).grayscalePdf(files[0], (p) => setProgress(p));
         resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_grayscale.pdf`;
       } else if (toolId === 'scan-to-pdf') {
-        resultBytes = await scanToPdf(files[0], (p) => setProgress(p));
+        resultBytes = await (await import('../engines/pdf/scanToPdf')).scanToPdf(files[0], (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_scanned.pdf`;
       } else if (toolId === 'remove-pdf-metadata') {
-        resultBytes = await removeMetadataPdf(files[0]);
+        resultBytes = await (await import('../engines/pdf/removeMetadataPdf')).removeMetadataPdf(files[0]);
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_sanitized.pdf`;
       } else if (toolId === 'compare-pdf') {
         if (!options.compareFile2) throw new Error("File pembanding tidak ditemukan.");
-        const compareResult = await comparePdf(files[0], options.compareFile2, (p) => setProgress(p));
+        const compareResult = await (await import('../engines/pdf/comparePdf')).comparePdf(files[0], options.compareFile2, (p) => setProgress(p));
         resultBytes = compareResult.bytes;
         setProcessorMetadata({ 
           accuracy: compareResult.accuracy,
@@ -140,10 +120,10 @@ export function useDocumentProcessor() {
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_comparison.pdf`;
       } else if (toolId === 'redact-pdf') {
         if (!options.redactConfig) throw new Error("Konfigurasi sensor tidak ditemukan.");
-        resultBytes = await redactPdf(files[0], options.redactConfig, (p) => setProgress(p));
+        resultBytes = await (await import('../engines/pdf/redactPdf')).redactPdf(files[0], options.redactConfig, (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_redacted.pdf`;
       } else if (toolId === 'reverse-pdf') {
-        resultBytes = await reversePdf(files[0], (p) => setProgress(p));
+        resultBytes = await (await import('../engines/pdf/reversePdf')).reversePdf(files[0], (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_reversed.pdf`;
       } else if (toolId === 'resize-pdf') {
         const resizeOptions = {
@@ -151,17 +131,17 @@ export function useDocumentProcessor() {
           orientation: options.resizeOrientation || 'Auto',
           margin: options.resizeMargin || 0
         };
-        resultBytes = await resizePdf(files[0], resizeOptions, (p) => setProgress(p));
+        resultBytes = await (await import('../engines/pdf/resizePdf')).resizePdf(files[0], resizeOptions, (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_resized.pdf`;
       } else if (toolId === 'edit-pdf') {
         if (!options.editElements) throw new Error("Konfigurasi elemen edit tidak ditemukan.");
-        resultBytes = await editPdf(files[0], options.editElements, (p) => setProgress(p));
+        resultBytes = await (await import('../engines/pdf/editPdf')).editPdf(files[0], options.editElements, (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_edited.pdf`;
       } else if (toolId === 'page-numbers') {
-        resultBytes = await pdfEngine.addPageNumbers(files[0], options.pageNumberConfig, (p) => setProgress(p));
+        resultBytes = await (await import('../engines/pdfEngine')).addPageNumbers(files[0], options.pageNumberConfig, (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_numbered.pdf`;
       } else if (toolId === 'watermark-pdf') {
-        resultBytes = await pdfEngine.addWatermark(files[0], options.watermarkConfig, (p) => setProgress(p));
+        resultBytes = await (await import('../engines/pdfEngine')).addWatermark(files[0], options.watermarkConfig, (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_watermarked.pdf`;
       } else if (toolId === 'remove-pdf') {
         if (options.removeRange) {
@@ -179,48 +159,48 @@ export function useDocumentProcessor() {
               if (!isNaN(n)) pagesToRemove.push(n - 1);
             }
           }
-          const resultBlob = await removePdfPages(files[0], pagesToRemove, (p) => setProgress(p));
+          const resultBlob = await (await import('../engines/pdf/removePages')).removePdfPages(files[0], pagesToRemove, (p) => setProgress(p));
           resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
         }
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_removed.pdf`;
       } else if (toolId === 'organize-pdf') {
         if (options.insertFile && options.insertAtIndex !== undefined) {
-          const resultBlob = await insertPdfPages(files[0], options.insertFile, options.insertAtIndex, (p) => setProgress(p));
+          const resultBlob = await (await import('../engines/pdf/organizePdf')).insertPdfPages(files[0], options.insertFile, options.insertAtIndex, (p) => setProgress(p));
           resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
         }
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_organized.pdf`;
       } else if (toolId === 'sign-pdf') {
         if (options.signatureConfig) {
-          const resultBlob = await signPdf(files[0], options.signatureConfig, (p) => setProgress(p));
+          const resultBlob = await (await import('../engines/pdf/signPdf')).signPdf(files[0], options.signatureConfig, (p) => setProgress(p));
           resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
         }
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_signed.pdf`;
       } else if (toolId === 'compress-pdf') {
-        resultBytes = await compressEngine.compressPdf(files[0], options.compressQuality, (p) => setProgress(p));
+        resultBytes = await (await import('../engines/compressEngine')).compressPdf(files[0], options.compressQuality, (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_compressed.pdf`;
       } else if (toolId === 'pdf-to-word') {
-        resultBytes = await officeEngine.convertPdfToWord(files[0], (p) => setProgress(p));
+        resultBytes = await (await import('../engines/officeEngine')).convertPdfToWord(files[0], (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}.docx`;
         setResultPreviewFiles([files[0]]);
       } else if (toolId === 'pdf-to-ppt') {
-        resultBytes = await pdfEngine.convertPdfToPptx(files[0], (p) => setProgress(p));
+        resultBytes = await (await import('../engines/pdfEngine')).convertPdfToPptx(files[0], (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}.pptx`;
         const generatedPptx = new File([resultBytes as any], outName, { type: 'application/vnd.openxmlformats-officedocument.presentationml.presentation' });
         setResultPreviewFiles([generatedPptx]);
       } else if (toolId === 'csv-to-excel') {
-        resultBytes = await officeEngine.convertCsvToExcel(files[0], (p) => setProgress(p));
+        resultBytes = await (await import('../engines/officeEngine')).convertCsvToExcel(files[0], (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}.xlsx`;
       } else if (toolId === 'excel-to-csv') {
-        resultBytes = await officeEngine.convertExcelToCsv(files[0], (p) => setProgress(p));
+        resultBytes = await (await import('../engines/officeEngine')).convertExcelToCsv(files[0], (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}.csv`;
       } else if (toolCategory === 'office') {
-        resultBytes = await officeEngine.convertOfficeDocumentToPdf(files[0], toolId, (p) => setProgress(p));
+        resultBytes = await (await import('../engines/officeEngine')).convertOfficeDocumentToPdf(files[0], toolId, (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}.pdf`;
       } else if (toolId === 'image-to-pdf') {
-        resultBytes = await imageEngine.convertImagesToPdf(files, (p) => setProgress(p));
+        resultBytes = await (await import('../engines/imageEngine')).convertImagesToPdf(files, (p) => setProgress(p));
         outName = `converted_${files.length}_images.pdf`;
       } else if (toolId === 'pdf-to-image') {
-        const { zipBytes, filename, previewFiles } = await imageEngine.convertPdfToImagesZip(
+        const { zipBytes, filename, previewFiles } = await (await import('../engines/imageEngine')).convertPdfToImagesZip(
           files[0],
           options.extractImageFormat || 'png',
           (p) => setProgress(p)
@@ -231,7 +211,7 @@ export function useDocumentProcessor() {
           setResultPreviewFiles(previewFiles);
         }
       } else if (toolId === 'ocr-pdf') {
-        const ocrRes = await ocrEngine.runOcrOnDocument(files[0], currentLang, (p, status) => {
+        const ocrRes = await (await import('../engines/ocrEngine')).runOcrOnDocument(files[0], currentLang, (p, status) => {
           setProgress(p);
           setStatusText(status);
         });
