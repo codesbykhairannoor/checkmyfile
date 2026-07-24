@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { getLocalizedSeo, type ToolDefinition } from '../catalog/toolsCatalog';
 import { SeoHead } from '../components/seo/SeoHead';
-import { Breadcrumbs } from '../components/common/Breadcrumbs';
 import { RelatedTools } from '../components/seo/RelatedTools';
 import { FileDropzone } from '../components/common/FileDropzone';
 import { ProgressBar } from '../components/common/ProgressBar';
@@ -226,15 +225,6 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
     }}>
       <SeoHead tool={tool} lang={currentLang} />
       
-      {/* ── Breadcrumb Navigation (Semantic AEO & UI UX) ── */}
-      <Breadcrumbs 
-        currentLang={currentLang} 
-        items={[
-          { label: getUiTranslations(currentLang)[`nav${tool.category === 'pdf' ? 'OrganizePdf' : tool.category === 'compress' ? 'OptimizeEnhance' : tool.category === 'office' ? 'SpreadsheetTools' : tool.category === 'image' ? 'ImageTools' : 'OcrTools'}` as keyof ReturnType<typeof getUiTranslations>] || 'Tools', url: `/${currentLang}` },
-          { label: seoData.data ? seoData.data.h1 : seo.h1 }
-        ]} 
-      />
-
       <article style={{ width: '100%', flex: 1, display: 'flex', flexDirection: 'column' }}>
 
 
@@ -282,6 +272,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
             />
           </div>
           <ToolSidebar
+            currentLang={currentLang}
             tool={tool} files={files} setFiles={setFiles} activeFileIndex={activeFileIndex} setActiveFileIndex={setActiveFileIndex}
             isProcessing={isProcessing}
             handleStartProcessing={(options) => handleStartProcessing({

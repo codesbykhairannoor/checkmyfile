@@ -2,6 +2,7 @@ import React from 'react';
 import { EyeOff, PlusCircle, AlertTriangle } from 'lucide-react';
 
 interface RedactPdfEditorProps {
+  tUi?: Record<string, string>;
   onProcess: () => void;
   isProcessing: boolean;
   redactConfig: any;
@@ -9,7 +10,10 @@ interface RedactPdfEditorProps {
   activeFileIndex: number; // We assume activePage is always 1 internally or we add to page 1 by default, but let's just add to the currently visible page if possible, or just page 0 for now.
 }
 
-export const RedactPdfEditor: React.FC<RedactPdfEditorProps> = ({ onProcess, isProcessing, redactConfig, setRedactConfig }) => {
+export const RedactPdfEditor: React.FC<RedactPdfEditorProps> = ({
+  tUi = {},
+ onProcess, isProcessing, redactConfig, setRedactConfig }) => {
+  void tUi;
   const addRedactBox = () => {
     const id = Math.random().toString(36).substr(2, 9);
     setRedactConfig((prev: any) => {
@@ -33,12 +37,8 @@ export const RedactPdfEditor: React.FC<RedactPdfEditorProps> = ({ onProcess, isP
           <EyeOff size={24} />
         </div>
         <div>
-          <h3 style={{ margin: 0, marginBottom: 8, fontSize: '1.25rem', fontWeight: 800, color: 'var(--text-main)', fontFamily: 'var(--font-display)' }}>
-            Sensor Dokumen (Redact)
-          </h3>
-          <p style={{ margin: 0, color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: 1.5 }}>
-            Tutup informasi rahasia dengan blok hitam permanen.
-          </p>
+          <h3 style={{ margin: 0, marginBottom: 8, fontSize: '1.25rem', fontWeight: 800, color: 'var(--text-main)', fontFamily: 'var(--font-display)' }}>{tUi["Sensor Dokumen (Redact)"] || (tUi["Sensor Dokumen (Redact)"] || "Sensor Dokumen (Redact)")}</h3>
+          <p style={{ margin: 0, color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: 1.5 }}>{tUi["Tutup informasi rahasia dengan blok hitam permanen."] || (tUi["Tutup informasi rahasia dengan blok hitam permanen."] || "Tutup informasi rahasia dengan blok hitam permanen.")}</p>
         </div>
       </div>
 
@@ -48,36 +48,27 @@ export const RedactPdfEditor: React.FC<RedactPdfEditorProps> = ({ onProcess, isP
           className="btn-secondary"
           style={{ width: '100%', padding: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, marginBottom: 16 }}
         >
-          <PlusCircle size={18} />
-          Tambah Area Sensor (Halaman 1)
-        </button>
+          <PlusCircle size={18} />{tUi["Tambah Area Sensor (Halaman 1)"] || (tUi["Tambah Area Sensor (Halaman 1)"] || "Tambah Area Sensor (Halaman 1)")}</button>
         
-        <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-muted)', textAlign: 'center' }}>
-          Geser kotak di bagian Pratinjau (Kiri) ke teks yang ingin disensor. Tarik sudut kanan-bawah kotak untuk memperbesar.
-        </p>
+        <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-muted)', textAlign: 'center' }}>{tUi["Geser kotak di bagian Pratinjau (Kiri) ke teks yang ingin disensor. Tarik sudut kanan-bawah kotak untuk memperbesar."] || (tUi["Geser kotak di bagian Pratinjau (Kiri) ke teks yang ingin disensor. Tarik sudut kanan-bawah kotak untuk memperbesar."] || "Geser kotak di bagian Pratinjau (Kiri) ke teks yang ingin disensor. Tarik sudut kanan-bawah kotak untuk memperbesar.")}</p>
 
         {totalBoxes > 0 && (
           <div style={{ marginTop: 16, padding: '12px', background: 'rgba(16, 185, 129, 0.1)', color: '#047857', borderRadius: 8, fontSize: '0.9rem', fontWeight: 600, textAlign: 'center' }}>
-            {totalBoxes} Area Sensor Aktif
-          </div>
+            {totalBoxes} {tUi["Area Sensor Aktif"] || "Area Sensor Aktif"}</div>
         )}
 
         <div style={{ marginTop: 24, display: 'flex', flexDirection: 'column', gap: 16 }}>
           <div>
-            <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: 8 }}>Gaya Sensor</label>
+            <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: 8 }}>{tUi["Gaya Sensor"] || (tUi["Gaya Sensor"] || "Gaya Sensor")}</label>
             <div style={{ display: 'flex', gap: 8 }}>
               <button 
                 onClick={() => setRedactConfig((prev: any) => ({ ...prev, mode: 'black' }))}
                 style={{ flex: 1, padding: '8px', borderRadius: 8, border: `1px solid ${redactConfig.mode === 'black' ? 'var(--brand-primary)' : 'var(--border-color)'}`, background: redactConfig.mode === 'black' ? 'rgba(139, 92, 246, 0.1)' : 'transparent', color: redactConfig.mode === 'black' ? 'var(--brand-primary)' : 'var(--text-muted)', fontSize: '0.85rem', fontWeight: 600, cursor: 'pointer' }}
-              >
-                Blok Hitam
-              </button>
+              >{tUi["Blok Hitam"] || (tUi["Blok Hitam"] || "Blok Hitam")}</button>
               <button 
                 onClick={() => setRedactConfig((prev: any) => ({ ...prev, mode: 'blur' }))}
                 style={{ flex: 1, padding: '8px', borderRadius: 8, border: `1px solid ${redactConfig.mode === 'blur' ? 'var(--brand-primary)' : 'var(--border-color)'}`, background: redactConfig.mode === 'blur' ? 'rgba(139, 92, 246, 0.1)' : 'transparent', color: redactConfig.mode === 'blur' ? 'var(--brand-primary)' : 'var(--text-muted)', fontSize: '0.85rem', fontWeight: 600, cursor: 'pointer' }}
-              >
-                Efek Blur
-              </button>
+              >{tUi["Efek Blur"] || (tUi["Efek Blur"] || "Efek Blur")}</button>
             </div>
           </div>
           
@@ -88,15 +79,14 @@ export const RedactPdfEditor: React.FC<RedactPdfEditorProps> = ({ onProcess, isP
               onChange={(e) => setRedactConfig((prev: any) => ({ ...prev, showLock: e.target.checked }))} 
               style={{ width: 16, height: 16, accentColor: 'var(--brand-primary)' }}
             />
-            <span style={{ fontSize: '0.9rem', color: 'var(--text-main)', fontWeight: 500 }}>Tampilkan Ikon Gembok (Keren)</span>
+            <span style={{ fontSize: '0.9rem', color: 'var(--text-main)', fontWeight: 500 }}>{tUi["Tampilkan Ikon Gembok (Keren)"] || (tUi["Tampilkan Ikon Gembok (Keren)"] || "Tampilkan Ikon Gembok (Keren)")}</span>
           </label>
         </div>
       </div>
 
       <div style={{ background: 'rgba(245, 158, 11, 0.1)', padding: 16, borderRadius: 12, border: '1px solid rgba(245, 158, 11, 0.2)', display: 'flex', gap: 12, alignItems: 'flex-start' }}>
         <AlertTriangle size={20} color="#d97706" style={{ flexShrink: 0, marginTop: 2 }} />
-        <p style={{ margin: 0, fontSize: '0.9rem', color: '#b45309', lineHeight: 1.5 }}>
-          Proses ini menggunakan <strong>Rasterisasi Penuh</strong>. Teks asli yang tertutup akan hancur sepenuhnya dari kode sumber PDF, sehingga mustahil untuk dipulihkan oleh <i>hacker</i>.
+        <p style={{ margin: 0, fontSize: '0.9rem', color: '#b45309', lineHeight: 1.5 }}>{tUi["Proses ini menggunakan"] || (tUi["Proses ini menggunakan"] || "Proses ini menggunakan")}<strong>{tUi["Rasterisasi Penuh"] || (tUi["Rasterisasi Penuh"] || "Rasterisasi Penuh")}</strong>{tUi[". Teks asli yang tertutup akan hancur sepenuhnya dari kode sumber PDF, sehingga mustahil untuk dipulihkan oleh"] || ". Teks asli yang tertutup akan hancur sepenuhnya dari kode sumber PDF, sehingga mustahil untuk dipulihkan oleh"}<i>{tUi["hacker"] || "hacker"}</i>.
         </p>
       </div>
 
@@ -106,7 +96,7 @@ export const RedactPdfEditor: React.FC<RedactPdfEditorProps> = ({ onProcess, isP
         className="btn-primary"
         style={{ width: '100%', padding: '16px', fontSize: '1.1rem', opacity: (totalBoxes === 0 || isProcessing) ? 0.6 : 1 }}
       >
-        {isProcessing ? 'Menyensor & Merasterisasi...' : 'Terapkan Sensor Permanen'}
+        {isProcessing ? (tUi["Menyensor & Merasterisasi..."] || "Menyensor & Merasterisasi...") : (tUi["Terapkan Sensor Permanen"] || "Terapkan Sensor Permanen")}
       </button>
     </div>
   );

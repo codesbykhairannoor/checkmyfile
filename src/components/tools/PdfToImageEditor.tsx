@@ -2,6 +2,7 @@ import React from 'react';
 import { Image as ImageIcon } from 'lucide-react';
 
 interface PdfToImageEditorProps {
+  tUi?: Record<string, string>;
   format: 'png' | 'jpg';
   setFormat: (val: 'png' | 'jpg') => void;
   onApply: () => void;
@@ -9,21 +10,21 @@ interface PdfToImageEditorProps {
 }
 
 export const PdfToImageEditor: React.FC<PdfToImageEditorProps> = ({
+  tUi = {},
   format,
   setFormat,
   onApply,
   isProcessing
 }) => {
+  void tUi;
   return (
     <div className="glass-panel" style={{ padding: 24, display: 'flex', flexDirection: 'column', gap: 20, minWidth: 280 }}>
       <div>
         <h4 style={{ fontWeight: 800, fontSize: '1.1rem', color: 'var(--text-main)', marginBottom: 6, display: 'flex', alignItems: 'center', gap: 8 }}>
           <ImageIcon size={18} className="text-brand-primary" />
-          <span>Ekstrak Gambar</span>
+          <span>{tUi["Ekstrak Gambar"] || (tUi["Ekstrak Gambar"] || "Ekstrak Gambar")}</span>
         </h4>
-        <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
-          Pilih format gambar yang ingin dihasilkan. Setiap halaman PDF akan diubah menjadi gambar berkualitas tinggi.
-        </p>
+        <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>{tUi["Pilih format gambar yang ingin dihasilkan. Setiap halaman PDF akan diubah menjadi gambar berkualitas tinggi."] || (tUi["Pilih format gambar yang ingin dihasilkan. Setiap halaman PDF akan diubah menjadi gambar berkualitas tinggi."] || "Pilih format gambar yang ingin dihasilkan. Setiap halaman PDF akan diubah menjadi gambar berkualitas tinggi.")}</p>
       </div>
 
       <div style={{ display: 'flex', gap: 12, flexDirection: 'column' }}>
@@ -45,7 +46,7 @@ export const PdfToImageEditor: React.FC<PdfToImageEditorProps> = ({
             }}
           >
             <span style={{ fontWeight: 800, fontSize: '1rem' }}>PNG</span>
-            <span style={{ fontWeight: 600, fontSize: '0.75rem', opacity: format === 'png' ? 0.9 : 0.6 }}>Kualitas Terbaik</span>
+            <span style={{ fontWeight: 600, fontSize: '0.75rem', opacity: format === 'png' ? 0.9 : 0.6 }}>{tUi["Kualitas Terbaik"] || (tUi["Kualitas Terbaik"] || "Kualitas Terbaik")}</span>
           </button>
           <button
             onClick={() => setFormat('jpg')}
@@ -64,7 +65,7 @@ export const PdfToImageEditor: React.FC<PdfToImageEditorProps> = ({
             }}
           >
             <span style={{ fontWeight: 800, fontSize: '1rem' }}>JPG</span>
-            <span style={{ fontWeight: 600, fontSize: '0.75rem', opacity: format === 'jpg' ? 0.9 : 0.6 }}>Ukuran Kecil</span>
+            <span style={{ fontWeight: 600, fontSize: '0.75rem', opacity: format === 'jpg' ? 0.9 : 0.6 }}>{tUi["Ukuran Kecil"] || (tUi["Ukuran Kecil"] || "Ukuran Kecil")}</span>
           </button>
         </div>
       </div>
@@ -85,7 +86,7 @@ export const PdfToImageEditor: React.FC<PdfToImageEditorProps> = ({
           cursor: isProcessing ? 'not-allowed' : 'pointer'
         }}
       >
-        {isProcessing ? 'Memproses...' : 'Ekstrak Gambar Sekarang'}
+        {isProcessing ? (tUi["Memproses..."] || "Memproses...") : (tUi["Ekstrak Gambar Sekarang"] || (tUi["Ekstrak Gambar Sekarang"] || "Ekstrak Gambar Sekarang"))}
       </button>
     </div>
   );

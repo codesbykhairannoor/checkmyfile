@@ -2,11 +2,15 @@ import React, { useRef } from 'react';
 import { Scale, UploadCloud, File as FileIcon, X } from 'lucide-react';
 
 interface ComparePdfEditorProps {
+  tUi?: Record<string, string>;
   onProcess: (options: { compareFile2: File }) => void;
   isProcessing: boolean;
 }
 
-export const ComparePdfEditor: React.FC<ComparePdfEditorProps> = ({ onProcess, isProcessing }) => {
+export const ComparePdfEditor: React.FC<ComparePdfEditorProps> = ({
+  tUi = {},
+ onProcess, isProcessing }) => {
+  void tUi;
   const [file2, setFile2] = React.useState<File | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -24,18 +28,15 @@ export const ComparePdfEditor: React.FC<ComparePdfEditorProps> = ({ onProcess, i
         </div>
         <div>
           <h3 style={{ margin: 0, marginBottom: 8, fontSize: '1.25rem', fontWeight: 800, color: 'var(--text-main)', fontFamily: 'var(--font-display)' }}>
-            Bandingkan 2 PDF
-          </h3>
+            {tUi["Bandingkan 2 PDF"] || "Bandingkan 2 PDF"}</h3>
           <p style={{ margin: 0, color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: 1.5 }}>
-            Pilih file kedua (File Pembanding). Sistem akan menyorot setiap perbedaan piksel atau huruf dengan warna merah.
-          </p>
+            {tUi["Pilih file kedua (File Pembanding). Sistem akan menyorot setiap perbedaan piksel atau huruf dengan warna merah."] || "Pilih file kedua (File Pembanding). Sistem akan menyorot setiap perbedaan piksel atau huruf dengan warna merah."}</p>
         </div>
       </div>
 
       <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: 12, padding: 20 }}>
         <label style={{ display: 'block', fontSize: '0.95rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: 12 }}>
-          Pilih File Pembanding (Revisi)
-        </label>
+          {tUi["Pilih File Pembanding (Revisi)"] || "Pilih File Pembanding (Revisi)"}</label>
         
         {!file2 ? (
           <div 
@@ -49,7 +50,7 @@ export const ComparePdfEditor: React.FC<ComparePdfEditorProps> = ({ onProcess, i
             onMouseOut={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}
           >
             <UploadCloud size={32} color="var(--text-muted)" />
-            <span style={{ fontSize: '0.9rem', color: 'var(--text-main)', fontWeight: 600 }}>Klik untuk Unggah PDF Pembanding</span>
+            <span style={{ fontSize: '0.9rem', color: 'var(--text-main)', fontWeight: 600 }}>{tUi["Klik untuk Unggah PDF Pembanding"] || (tUi["Klik untuk Unggah PDF Pembanding"] || "Klik untuk Unggah PDF Pembanding")}</span>
           </div>
         ) : (
           <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: 16, background: 'rgba(225, 29, 72, 0.05)', border: '1px solid rgba(225, 29, 72, 0.2)', borderRadius: 8 }}>
@@ -88,7 +89,7 @@ export const ComparePdfEditor: React.FC<ComparePdfEditorProps> = ({ onProcess, i
         className="btn-primary"
         style={{ width: '100%', padding: '16px', fontSize: '1.1rem', opacity: (!file2 || isProcessing) ? 0.6 : 1 }}
       >
-        {isProcessing ? 'Menganalisis Perbedaan...' : 'Bandingkan PDF Sekarang'}
+        {isProcessing ? (tUi["Menganalisis Perbedaan..."] || "Menganalisis Perbedaan...") : (tUi["Bandingkan PDF Sekarang"] || (tUi["Bandingkan PDF Sekarang"] || "Bandingkan PDF Sekarang"))}
       </button>
     </div>
   );

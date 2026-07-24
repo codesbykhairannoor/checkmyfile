@@ -5,6 +5,7 @@ import { X, Plus } from 'lucide-react';
 interface MergeWorkspaceProps {
   files: File[];
   setFiles: React.Dispatch<React.SetStateAction<File[]>>;
+  tUi?: Record<string, string>;
 }
 
 const PdfThumbnail: React.FC<{ file: File; index: number; moveFile: (dragIndex: number, hoverIndex: number) => void; removeFile: (i: number) => void }> = ({ file, index, moveFile, removeFile }) => {
@@ -106,7 +107,7 @@ const PdfThumbnail: React.FC<{ file: File; index: number; moveFile: (dragIndex: 
   );
 };
 
-export const MergeWorkspace: React.FC<MergeWorkspaceProps> = ({ files, setFiles }) => {
+export const MergeWorkspace: React.FC<MergeWorkspaceProps> = ({ files, setFiles, tUi = {} }) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const moveFile = (dragIndex: number, hoverIndex: number) => {
@@ -159,7 +160,7 @@ export const MergeWorkspace: React.FC<MergeWorkspaceProps> = ({ files, setFiles 
           <div style={{ width: 48, height: 48, borderRadius: '50%', background: '#6366f1', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <Plus size={24} />
           </div>
-          <span style={{ fontWeight: 700, fontSize: '0.95rem' }}>Add More</span>
+          <span style={{ fontWeight: 700, fontSize: '0.95rem' }}>{tUi["Add More"] || "Add More"}</span>
         </button>
         <input type="file" ref={fileInputRef} onChange={handleAddFiles} accept=".pdf" multiple style={{ width: 0, height: 0, opacity: 0, overflow: 'hidden', position: 'absolute' }} />
       </div>

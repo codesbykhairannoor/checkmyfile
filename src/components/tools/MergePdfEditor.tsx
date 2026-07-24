@@ -3,6 +3,7 @@ import { Layers, Download, Settings2 } from 'lucide-react';
 import { MergeWorkspace } from './MergeWorkspace';
 
 interface MergePdfEditorProps {
+  tUi?: Record<string, string>;
   files: File[];
   setFiles: React.Dispatch<React.SetStateAction<File[]>>;
   onApply: () => void;
@@ -10,32 +11,32 @@ interface MergePdfEditorProps {
 }
 
 export const MergePdfEditor: React.FC<MergePdfEditorProps> = ({
+  tUi = {},
   files,
   setFiles,
   onApply,
   isProcessing
 }) => {
+  void tUi;
   return (
     <div className="glass-panel" style={{ padding: 24, display: 'flex', flexDirection: 'column', gap: 24, minWidth: 280, minHeight: 0 }}>
       <div>
         <h4 style={{ fontWeight: 800, fontSize: '1.1rem', color: 'var(--text-main)', marginBottom: 6, display: 'flex', alignItems: 'center', gap: 8 }}>
           <Layers size={18} className="text-brand-primary" />
-          <span>Interactive Merge</span>
+          <span>{tUi['Interactive Merge'] || (tUi["Interactive Merge"] || "Interactive Merge")}</span>
         </h4>
         <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
-          Atur urutan file PDF di bawah dengan menggeser (Drag & Drop) kartu dokumen.
+          {tUi['Atur urutan file PDF di bawah dengan menggeser (Drag & Drop) kartu dokumen.'] || (tUi["Atur urutan file PDF di bawah dengan menggeser (Drag & Drop) kartu dokumen."] || "Atur urutan file PDF di bawah dengan menggeser (Drag & Drop) kartu dokumen.")}
         </p>
       </div>
 
       <div style={{ flex: 1, minHeight: 0, overflowY: 'auto', paddingRight: 4 }}>
-        <MergeWorkspace files={files} setFiles={setFiles} />
+        <MergeWorkspace files={files} setFiles={setFiles} tUi={tUi} />
       </div>
 
       <div style={{ marginTop: 'auto', paddingTop: 24, borderTop: '1px solid var(--border-color)' }}>
         {files.length < 2 && (
-          <div style={{ fontSize: '0.8rem', color: '#ef4444', background: 'rgba(239, 68, 68, 0.1)', padding: 12, borderRadius: 8, textAlign: 'center', marginBottom: 12 }}>
-            Minimal butuh 2 file untuk digabungkan.
-          </div>
+          <div style={{ fontSize: '0.8rem', color: '#ef4444', background: 'rgba(239, 68, 68, 0.1)', padding: 12, borderRadius: 8, textAlign: 'center', marginBottom: 12 }}>{tUi["Minimal butuh 2 file untuk digabungkan."] || (tUi["Minimal butuh 2 file untuk digabungkan."] || "Minimal butuh 2 file untuk digabungkan.")}</div>
         )}
         <button
           onClick={onApply}
@@ -48,7 +49,7 @@ export const MergePdfEditor: React.FC<MergePdfEditorProps> = ({
           ) : (
             <Download size={18} />
           )}
-          <span>{isProcessing ? 'Menggabungkan...' : 'Gabungkan Sekarang'}</span>
+          <span>{isProcessing ? (tUi["Menggabungkan..."] || "Menggabungkan...") : (tUi["Gabungkan Sekarang"] || (tUi["Gabungkan Sekarang"] || "Gabungkan Sekarang"))}</span>
         </button>
       </div>
     </div>

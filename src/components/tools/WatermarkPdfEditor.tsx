@@ -12,6 +12,7 @@ interface WatermarkConfig {
 }
 
 interface WatermarkPdfEditorProps {
+  tUi?: Record<string, string>;
   config: WatermarkConfig;
   setConfig: React.Dispatch<React.SetStateAction<WatermarkConfig>>;
   onApply: () => void;
@@ -19,56 +20,48 @@ interface WatermarkPdfEditorProps {
 }
 
 export const WatermarkPdfEditor: React.FC<WatermarkPdfEditorProps> = ({
+  tUi = {},
   config,
   setConfig,
   onApply,
   isProcessing
 }) => {
+  void tUi;
   return (
     <div className="glass-panel" style={{ padding: 24, display: 'flex', flexDirection: 'column', gap: 24, minWidth: 280 }}>
       <div>
         <h4 style={{ fontWeight: 800, fontSize: '1.1rem', color: 'var(--text-main)', marginBottom: 6, display: 'flex', alignItems: 'center', gap: 8 }}>
           <Type size={18} className="text-brand-primary" />
-          <span>Interactive Watermark</span>
+          <span>{tUi["Interactive Watermark"] || (tUi["Interactive Watermark"] || "Interactive Watermark")}</span>
         </h4>
-        <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
-          Tambahkan teks watermark kustom. Perubahan akan terlihat langsung pada layar pratinjau.
-        </p>
+        <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>{tUi["Tambahkan teks watermark kustom. Perubahan akan terlihat langsung pada layar pratinjau."] || (tUi["Tambahkan teks watermark kustom. Perubahan akan terlihat langsung pada layar pratinjau."] || "Tambahkan teks watermark kustom. Perubahan akan terlihat langsung pada layar pratinjau.")}</p>
       </div>
 
       <div style={{ display: 'flex', gap: 12, background: 'var(--bg-input)', padding: 4, borderRadius: 12 }}>
         <button
           onClick={() => setConfig({ ...config, type: 'text' })}
           style={{ flex: 1, padding: '8px 0', borderRadius: 8, fontSize: '0.85rem', fontWeight: 700, background: config.type === 'text' ? 'var(--brand-gradient)' : 'transparent', color: config.type === 'text' ? '#fff' : 'var(--text-muted)', border: 'none', cursor: 'pointer' }}
-        >
-          Teks
-        </button>
+        >{tUi["Teks"] || (tUi["Teks"] || "Teks")}</button>
         <button
           onClick={() => setConfig({ ...config, type: 'image' })}
           style={{ flex: 1, padding: '8px 0', borderRadius: 8, fontSize: '0.85rem', fontWeight: 700, background: config.type === 'image' ? 'var(--brand-gradient)' : 'transparent', color: config.type === 'image' ? '#fff' : 'var(--text-muted)', border: 'none', cursor: 'pointer' }}
-        >
-          Logo (Gambar)
-        </button>
+        >{tUi["Logo (Gambar)"] || (tUi["Logo (Gambar)"] || "Logo (Gambar)")}</button>
       </div>
 
       {config.type === 'text' ? (
         <div>
-          <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'flex', alignItems: 'center', gap: 6, marginBottom: 8 }}>
-            Teks Watermark
-          </label>
+          <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'flex', alignItems: 'center', gap: 6, marginBottom: 8 }}>{tUi["Teks Watermark"] || (tUi["Teks Watermark"] || "Teks Watermark")}</label>
           <input
             type="text"
             value={config.text}
             onChange={(e) => setConfig({ ...config, text: e.target.value })}
-            placeholder="e.g. CONFIDENTIAL"
+            placeholder={tUi["e.g. CONFIDENTIAL"] || "e.g. CONFIDENTIAL"}
             style={{ width: '100%', padding: '12px 16px', borderRadius: 12, border: '1px solid var(--border-color)', background: 'var(--bg-input)', color: 'var(--text-main)', outline: 'none', fontSize: '0.9rem', fontWeight: 600 }}
           />
         </div>
       ) : (
         <div>
-          <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'flex', alignItems: 'center', gap: 6, marginBottom: 8 }}>
-            Unggah Logo Watermark
-          </label>
+          <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'flex', alignItems: 'center', gap: 6, marginBottom: 8 }}>{tUi["Unggah Logo Watermark"] || (tUi["Unggah Logo Watermark"] || "Unggah Logo Watermark")}</label>
           <input
             type="file"
             accept="image/png, image/jpeg"
@@ -88,7 +81,7 @@ export const WatermarkPdfEditor: React.FC<WatermarkPdfEditorProps> = ({
           />
           {config.imageUrl && (
             <div style={{ marginTop: 12, textAlign: 'center' }}>
-              <img src={config.imageUrl} alt="Watermark Logo" style={{ maxWidth: '100%', maxHeight: 80, objectFit: 'contain', borderRadius: 8, background: 'rgba(0,0,0,0.05)' }} />
+              <img src={config.imageUrl} alt={tUi["Watermark Logo"] || "Watermark Logo"} style={{ maxWidth: '100%', maxHeight: 80, objectFit: 'contain', borderRadius: 8, background: 'rgba(0,0,0,0.05)' }} />
             </div>
           )}
         </div>
@@ -97,8 +90,8 @@ export const WatermarkPdfEditor: React.FC<WatermarkPdfEditorProps> = ({
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16 }}>
         {/* Color (Only for Text) */}
         {config.type === 'text' && (
-          <div style={{ flex: '1 1 calc(50% - 16px)', minWidth: 120 }}>
-            <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'block', marginBottom: 8 }}>Warna</label>
+          <div style={{ flex: (tUi["1 1 calc(50% - 16px)"] || "1 1 calc(50% - 16px)"), minWidth: 120 }}>
+            <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'block', marginBottom: 8 }}>{tUi["Warna"] || (tUi["Warna"] || "Warna")}</label>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, background: 'var(--bg-input)', border: '1px solid var(--border-color)', padding: '6px 12px', borderRadius: 12 }}>
               <input
                 type="color"
@@ -112,9 +105,9 @@ export const WatermarkPdfEditor: React.FC<WatermarkPdfEditorProps> = ({
         )}
 
         {/* Opacity */}
-        <div style={{ flex: '1 1 calc(50% - 16px)', minWidth: 120 }}>
+        <div style={{ flex: (tUi["1 1 calc(50% - 16px)"] || "1 1 calc(50% - 16px)"), minWidth: 120 }}>
           <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'block', marginBottom: 8 }}>
-            Transparansi ({(config.opacity * 100).toFixed(0)}%)
+            {tUi["Transparansi ("] || "Transparansi ("}{(config.opacity * 100).toFixed(0)}%)
           </label>
           <input
             type="range"
@@ -130,9 +123,9 @@ export const WatermarkPdfEditor: React.FC<WatermarkPdfEditorProps> = ({
 
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16 }}>
         {/* Scale */}
-        <div style={{ flex: '1 1 calc(50% - 16px)', minWidth: 120 }}>
+        <div style={{ flex: (tUi["1 1 calc(50% - 16px)"] || "1 1 calc(50% - 16px)"), minWidth: 120 }}>
           <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'block', marginBottom: 8 }}>
-            Ukuran ({(config.scale * 100).toFixed(0)}%)
+            {tUi["Ukuran ("] || "Ukuran ("}{(config.scale * 100).toFixed(0)}%)
           </label>
           <input
             type="range"
@@ -146,9 +139,9 @@ export const WatermarkPdfEditor: React.FC<WatermarkPdfEditorProps> = ({
         </div>
 
         {/* Rotation */}
-        <div style={{ flex: '1 1 calc(50% - 16px)', minWidth: 120 }}>
+        <div style={{ flex: (tUi["1 1 calc(50% - 16px)"] || "1 1 calc(50% - 16px)"), minWidth: 120 }}>
           <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'block', marginBottom: 8 }}>
-            Rotasi ({config.rotation}°)
+            {tUi["Rotasi ("] || "Rotasi ("}{config.rotation}°)
           </label>
           <input
             type="range"
@@ -174,7 +167,7 @@ export const WatermarkPdfEditor: React.FC<WatermarkPdfEditorProps> = ({
           ) : (
             <Download size={18} />
           )}
-          <span>{isProcessing ? 'Menyimpan...' : 'Terapkan Watermark'}</span>
+          <span>{isProcessing ? (tUi["Menyimpan..."] || "Menyimpan...") : (tUi["Terapkan Watermark"] || (tUi["Terapkan Watermark"] || "Terapkan Watermark"))}</span>
         </button>
       </div>
     </div>

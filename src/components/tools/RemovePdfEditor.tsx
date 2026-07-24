@@ -2,6 +2,7 @@ import React from 'react';
 import { Trash2, Download, Settings2, Info } from 'lucide-react';
 
 interface RemovePdfEditorProps {
+  tUi?: Record<string, string>;
   removeRange: string;
   setRemoveRange: (range: string) => void;
   onApply: () => void;
@@ -9,32 +10,34 @@ interface RemovePdfEditorProps {
 }
 
 export const RemovePdfEditor: React.FC<RemovePdfEditorProps> = ({
+  tUi = {},
   removeRange,
   setRemoveRange,
   onApply,
   isProcessing
 }) => {
+  void tUi;
   return (
     <div className="glass-panel" style={{ padding: 24, display: 'flex', flexDirection: 'column', gap: 24, minWidth: 280 }}>
       <div>
         <h4 style={{ fontWeight: 800, fontSize: '1.1rem', color: 'var(--text-main)', marginBottom: 6, display: 'flex', alignItems: 'center', gap: 8 }}>
           <Trash2 size={18} className="text-brand-primary" color="#e11d48" />
-          <span>Hapus Halaman</span>
+          <span>{tUi['Hapus Halaman'] || (tUi["Hapus Halaman"] || "Hapus Halaman")}</span>
         </h4>
         <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
-          Ketik rentang atau nomor halaman yang ingin Anda hapus secara permanen.
+          {tUi['Ketik rentang atau nomor halaman yang ingin Anda hapus secara permanen.'] || (tUi["Ketik rentang atau nomor halaman yang ingin Anda hapus secara permanen."] || "Ketik rentang atau nomor halaman yang ingin Anda hapus secara permanen.")}
         </p>
       </div>
 
       <div>
         <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'block', marginBottom: 8 }}>
-          Halaman yang Dihapus (Contoh: 1, 3-5)
+          {tUi['Halaman yang Dihapus (Contoh: 1, 3-5)'] || (tUi["Halaman yang Dihapus (Contoh: 1, 3-5)"] || "Halaman yang Dihapus (Contoh: 1, 3-5)")}
         </label>
         <input
           type="text"
           value={removeRange}
           onChange={(e) => setRemoveRange(e.target.value)}
-          placeholder="e.g. 1, 3-5, 8"
+          placeholder={tUi["e.g. 1, 3-5, 8"] || "e.g. 1, 3-5, 8"}
           style={{
             width: '100%',
             padding: '12px 16px',
@@ -51,7 +54,7 @@ export const RemovePdfEditor: React.FC<RemovePdfEditorProps> = ({
         <div style={{ marginTop: 12, padding: 12, borderRadius: 8, background: 'rgba(239, 68, 68, 0.1)', border: '1px solid rgba(239, 68, 68, 0.2)', display: 'flex', gap: 10, alignItems: 'flex-start' }}>
           <Info size={16} color="#ef4444" style={{ marginTop: 2, flexShrink: 0 }} />
           <p style={{ fontSize: '0.75rem', color: '#f87171', margin: 0, lineHeight: 1.4 }}>
-            Halaman yang masuk dalam rentang ini akan ditandai dengan label merah "HAPUS" di Live Preview.
+            {tUi['Halaman yang masuk dalam rentang ini akan ditandai dengan label merah "HAPUS" di Live Preview.'] || (tUi["Halaman yang masuk dalam rentang ini akan ditandai dengan label merah \"HAPUS\" di Live Preview."] || "Halaman yang masuk dalam rentang ini akan ditandai dengan label merah \"HAPUS\" di Live Preview.")}
           </p>
         </div>
       </div>
@@ -68,7 +71,7 @@ export const RemovePdfEditor: React.FC<RemovePdfEditorProps> = ({
           ) : (
             <Download size={18} />
           )}
-          <span>{isProcessing ? 'Menghapus...' : 'Hapus Sekarang'}</span>
+          <span>{isProcessing ? (tUi["Menghapus..."] || "Menghapus...") : (tUi["Hapus Sekarang"] || (tUi["Hapus Sekarang"] || "Hapus Sekarang"))}</span>
         </button>
       </div>
     </div>

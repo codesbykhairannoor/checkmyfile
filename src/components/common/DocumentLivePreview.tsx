@@ -1,4 +1,5 @@
 import { getUiTranslations } from '../../i18n/translations';
+import { editorTranslations } from '../../i18n/editorTranslations';
 import React, { useState, useEffect, useRef } from 'react';
 import * as pdfjsLib from 'pdfjs-dist';
 import { renderAsync } from 'docx-preview';
@@ -72,6 +73,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
 }) => {
   const currentLang = _currentLang;
   const t = getUiTranslations(currentLang);
+  const tUi = editorTranslations[currentLang] || editorTranslations['en'] || {};
   const [pageNumber, setPageNumber] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>(1);
   const [zoomScale, setZoomScale] = useState<number>(1.0);
@@ -657,12 +659,12 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
                 </div>
                 <div>
-                  <h3 style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-display)', margin: 0 }}>{t.previewNavDoc || "Navigasi Dokumen"}</h3>
-                  <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: 0, marginTop: 4 }}>Pilih halaman untuk melompat</p>
+                  <h3 style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-display)', margin: 0 }}>{tUi["Document Navigation"] || t.previewNavDoc || "Navigasi Dokumen"}</h3>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: 0, marginTop: 4 }}>{tUi["Pilih halaman untuk melompat"] || "Pilih halaman untuk melompat"}</p>
                 </div>
               </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', gap: 16 }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(120px, 1fr))', gap: 12 }}>
                 {Array.from({ length: totalPages }).map((_, i) => (
                   <div
                     key={`thumb-${i}`}

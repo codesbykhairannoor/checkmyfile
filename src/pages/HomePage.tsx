@@ -52,21 +52,7 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
 
         <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 10 }}>
           
-          {/* Micro-Badge */}
-          <div style={{
-            display: 'inline-flex', alignItems: 'center', gap: 8,
-            padding: '6px 16px', borderRadius: 9999,
-            border: 'none',
-            background: 'var(--brand-gradient)',
-            color: '#fff',
-            fontWeight: 800, fontSize: '0.75rem',
-            letterSpacing: '0.15em', textTransform: 'uppercase',
-            boxShadow: '0 4px 15px var(--brand-glow)',
-            marginBottom: 32
-          }}>
-            <span style={{ display: 'flex', width: 6, height: 6, borderRadius: '50%', background: '#fff', boxShadow: '0 0 10px rgba(255,255,255,0.8)' }}></span>
-            {t.homeHeroBadge || '100% Client-Side Processing'}
-          </div>
+
 
           {/* Monumental Headline */}
           <h1 

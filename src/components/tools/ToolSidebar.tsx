@@ -24,6 +24,7 @@ import { ReversePdfEditor } from './ReversePdfEditor';
 import { ResizePdfEditor } from './ResizePdfEditor';
 import { EditPdfEditor } from './EditPdfEditor';
 import type { ToolDefinition } from '../../catalog/toolsCatalog';
+import { editorTranslations } from '../../i18n/editorTranslations';
 
 interface ToolSidebarProps {
   tool: ToolDefinition;
@@ -63,6 +64,7 @@ interface ToolSidebarProps {
   acceptTypes?: string;
   allowMultiple?: boolean;
   pdfPagesCount?: number;
+  currentLang: string;
 }
 
 export const ToolSidebar: React.FC<ToolSidebarProps> = ({
@@ -73,7 +75,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
   removeRange, setRemoveRange, insertFile, setInsertFile, insertAtIndex, setInsertAtIndex, signatureConfig, setSignatureConfig,
   pdfPassword, setPdfPassword, cropConfig, setCropConfig, redactConfig, setRedactConfig,
   resizeConfig, setResizeConfig, editElements, setEditElements, selectedEditId, setSelectedEditId,
-  formatSize, acceptTypes = '*', allowMultiple = false, pdfPagesCount = 100
+  formatSize, acceptTypes = '*', allowMultiple = false, pdfPagesCount = 100, currentLang
 }) => {
   const fileInputRef = React.useRef<HTMLInputElement>(null);
 
@@ -88,6 +90,8 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
       }
     }
   };
+
+  const tUi = editorTranslations[currentLang] || editorTranslations['en'] || {};
 
   return (
     <div className="mobile-full-width" style={{ flexShrink: 0, flex: 1, minWidth: 350, minHeight: 0, paddingRight: 8, paddingBottom: 24, display: 'flex', flexDirection: 'column', gap: 16, marginTop: 0, overflowY: 'auto' }}>
@@ -105,7 +109,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
           {files.length > 1 && (
             <div style={{ paddingBottom: 12, marginBottom: 12, borderBottom: '1px solid var(--border-color)' }}>
               <label style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)', marginBottom: 6, display: 'block' }}>
-                Pilih Dokumen Pratinjau:
+                {tUi[(tUi["Pilih Dokumen Pratinjau:"] || (tUi["Pilih Dokumen Pratinjau:"] || "Pilih Dokumen Pratinjau:"))] || (tUi["Pilih Dokumen Pratinjau:"] || (tUi["Pilih Dokumen Pratinjau:"] || "Pilih Dokumen Pratinjau:"))}
               </label>
               <select
                 value={activeFileIndex}
@@ -150,128 +154,128 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
               className="btn-secondary"
               style={{ flex: 1, padding: '8px', fontSize: '0.75rem', display: 'flex', justifyContent: 'center', background: 'var(--bg-input)' }}
             >
-              {allowMultiple ? '+ Tambah File Lagi' : 'Ganti Dokumen'}
+              {allowMultiple ? '+ Add More Files' : (tUi["Ganti Dokumen"] || (tUi["Change Document"] || "Change Document"))}
             </button>
           </div>
         </div>
       )}
-      {tool.id === 'rotate-pdf' && <RotatePdfEditor rotation={rotateDegrees} setRotation={setRotateDegrees} onApply={handleStartProcessing} isProcessing={isProcessing} />}
-      {tool.id === 'watermark-pdf' && <WatermarkPdfEditor config={watermarkConfig} setConfig={setWatermarkConfig} onApply={handleStartProcessing} isProcessing={isProcessing} />}
-      {tool.id === 'page-numbers' && <PageNumbersPdfEditor config={pageNumberConfig} setConfig={setPageNumberConfig} onApply={handleStartProcessing} isProcessing={isProcessing} />}
-      {tool.id === 'split-pdf' && <SplitPdfEditor splitRange={splitRange} setSplitRange={setSplitRange} onApply={handleStartProcessing} isProcessing={isProcessing} />}
-      {tool.id === 'merge-pdf' && <MergePdfEditor files={files} setFiles={setFiles} onApply={handleStartProcessing} isProcessing={isProcessing} />}
-      {tool.id === 'compress-pdf' && <CompressPdfEditor quality={compressQuality} setQuality={setCompressQuality} onApply={handleStartProcessing} isProcessing={isProcessing} />}
+      {tool.id === 'rotate-pdf' && <RotatePdfEditor rotation={rotateDegrees} setRotation={setRotateDegrees} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
+      {tool.id === 'watermark-pdf' && <WatermarkPdfEditor config={watermarkConfig} setConfig={setWatermarkConfig} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
+      {tool.id === 'page-numbers' && <PageNumbersPdfEditor config={pageNumberConfig} setConfig={setPageNumberConfig} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
+      {tool.id === 'split-pdf' && <SplitPdfEditor splitRange={splitRange} setSplitRange={setSplitRange} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
+      {tool.id === 'merge-pdf' && <MergePdfEditor files={files} setFiles={setFiles} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
+      {tool.id === 'compress-pdf' && <CompressPdfEditor quality={compressQuality} setQuality={setCompressQuality} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
 
       {tool.id === 'pdf-to-image' && extractImageFormat && setExtractImageFormat && (
-        <PdfToImageEditor format={extractImageFormat} setFormat={setExtractImageFormat} onApply={handleStartProcessing} isProcessing={isProcessing} />
+        <PdfToImageEditor format={extractImageFormat} setFormat={setExtractImageFormat} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
       {tool.id === 'remove-pdf' && removeRange !== undefined && setRemoveRange && (
-        <RemovePdfEditor removeRange={removeRange} setRemoveRange={setRemoveRange} onApply={handleStartProcessing} isProcessing={isProcessing} />
+        <RemovePdfEditor removeRange={removeRange} setRemoveRange={setRemoveRange} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
       {tool.id === 'organize-pdf' && insertAtIndex !== undefined && setInsertAtIndex && setInsertFile && (
-        <OrganizePdfEditor insertFile={insertFile || null} setInsertFile={setInsertFile} insertAtIndex={insertAtIndex} setInsertAtIndex={setInsertAtIndex} onApply={handleStartProcessing} isProcessing={isProcessing} totalPages={pdfPagesCount} />
+        <OrganizePdfEditor insertFile={insertFile || null} setInsertFile={setInsertFile} insertAtIndex={insertAtIndex} setInsertAtIndex={setInsertAtIndex} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} totalPages={pdfPagesCount} />
       )}
       {tool.id === 'sign-pdf' && signatureConfig && setSignatureConfig && (
-        <SignPdfEditor signatureConfig={signatureConfig} setSignatureConfig={setSignatureConfig} onApply={handleStartProcessing} isProcessing={isProcessing} />
+        <SignPdfEditor signatureConfig={signatureConfig} setSignatureConfig={setSignatureConfig} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
       {tool.id === 'protect-pdf' && pdfPassword !== undefined && setPdfPassword && (
-        <ProtectPdfEditor pdfPassword={pdfPassword} setPdfPassword={setPdfPassword} onApply={handleStartProcessing} isProcessing={isProcessing} />
+        <ProtectPdfEditor pdfPassword={pdfPassword} setPdfPassword={setPdfPassword} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
       {tool.id === 'unlock-pdf' && pdfPassword !== undefined && setPdfPassword && (
-        <UnlockPdfEditor pdfPassword={pdfPassword} setPdfPassword={setPdfPassword} onApply={handleStartProcessing} isProcessing={isProcessing} />
+        <UnlockPdfEditor pdfPassword={pdfPassword} setPdfPassword={setPdfPassword} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
       {tool.id === 'crop-pdf' && cropConfig && setCropConfig && (
-        <CropPdfEditor cropConfig={cropConfig} setCropConfig={setCropConfig} onApply={handleStartProcessing} isProcessing={isProcessing} />
+        <CropPdfEditor cropConfig={cropConfig} setCropConfig={setCropConfig} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
       {tool.id === 'redact-pdf' && redactConfig && setRedactConfig && (
-        <RedactPdfEditor redactConfig={redactConfig} setRedactConfig={setRedactConfig} onProcess={handleStartProcessing} isProcessing={isProcessing} activeFileIndex={activeFileIndex} />
+        <RedactPdfEditor redactConfig={redactConfig} setRedactConfig={setRedactConfig} onProcess={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} activeFileIndex={activeFileIndex} />
       )}
       {tool.id === 'reverse-pdf' && (
-        <ReversePdfEditor onApply={handleStartProcessing} isProcessing={isProcessing} />
+        <ReversePdfEditor onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
       {tool.id === 'resize-pdf' && resizeConfig && setResizeConfig && (
-        <ResizePdfEditor config={resizeConfig} setConfig={setResizeConfig} onApply={handleStartProcessing} isProcessing={isProcessing} />
+        <ResizePdfEditor config={resizeConfig} setConfig={setResizeConfig} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
       {tool.id === 'edit-pdf' && (
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
           <details open className="glass-panel" style={{ borderRadius: 16, border: '1px solid var(--border-color)', overflow: 'hidden' }}>
             <summary style={{ padding: '16px 20px', fontWeight: 800, cursor: 'pointer', outline: 'none', background: 'var(--bg-input)', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: 12 }}>
-              <span style={{ flex: 1 }}>✍️ Text & Markup</span>
+              <span style={{ flex: 1 }}>✍️ {tUi['Edit & Sign'] || (tUi["Edit & Sign"] || "Edit & Sign")}</span>
             </summary>
             <div style={{ padding: '20px 16px', display: 'flex', flexDirection: 'column', gap: 24, background: 'var(--bg-card)' }}>
               {editElements && setEditElements && setSelectedEditId && (
                 <EditPdfEditor 
                   elements={editElements} setElements={setEditElements} 
                   selectedId={selectedEditId || null} setSelectedId={setSelectedEditId}
-                  activePageIndex={activeFileIndex} onApply={() => handleStartProcessing({ toolId: 'edit-pdf' })} isProcessing={isProcessing} 
+                  activePageIndex={activeFileIndex} onApply={() => handleStartProcessing({ toolId: 'edit-pdf' })} tUi={tUi} isProcessing={isProcessing} 
                 />
               )}
-              <div style={{ height: 1, background: 'var(--border-color)', margin: '0 -16px' }} />
+              <div style={{ height: 1, background: 'var(--border-color)', margin: (tUi["0 -16px"] || "0 -16px") }} />
               {signatureConfig && setSignatureConfig && (
-                <SignPdfEditor signatureConfig={signatureConfig} setSignatureConfig={setSignatureConfig} onApply={() => handleStartProcessing({ toolId: 'sign-pdf' })} isProcessing={isProcessing} />
+                <SignPdfEditor signatureConfig={signatureConfig} setSignatureConfig={setSignatureConfig} onApply={() => handleStartProcessing({ toolId: 'sign-pdf' })} tUi={tUi} isProcessing={isProcessing} />
               )}
             </div>
           </details>
 
           <details className="glass-panel" style={{ borderRadius: 16, border: '1px solid var(--border-color)', overflow: 'hidden' }}>
             <summary style={{ padding: '16px 20px', fontWeight: 800, cursor: 'pointer', outline: 'none', background: 'var(--bg-input)', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: 12 }}>
-              <span style={{ flex: 1 }}>📄 Organize Pages</span>
+              <span style={{ flex: 1 }}>📄 {tUi['Organize Pages'] || (tUi["Organize Pages"] || "Organize Pages")}</span>
             </summary>
             <div style={{ padding: '20px 16px', display: 'flex', flexDirection: 'column', gap: 24, background: 'var(--bg-card)' }}>
-              <RotatePdfEditor rotation={rotateDegrees} setRotation={setRotateDegrees} onApply={() => handleStartProcessing({ toolId: 'rotate-pdf' })} isProcessing={isProcessing} />
-              <div style={{ height: 1, background: 'var(--border-color)', margin: '0 -16px' }} />
-              <SplitPdfEditor splitRange={splitRange} setSplitRange={setSplitRange} onApply={() => handleStartProcessing({ toolId: 'split-pdf' })} isProcessing={isProcessing} />
-              <div style={{ height: 1, background: 'var(--border-color)', margin: '0 -16px' }} />
+              <RotatePdfEditor rotation={rotateDegrees} setRotation={setRotateDegrees} onApply={() => handleStartProcessing({ toolId: 'rotate-pdf' })} tUi={tUi} isProcessing={isProcessing} />
+              <div style={{ height: 1, background: 'var(--border-color)', margin: (tUi["0 -16px"] || "0 -16px") }} />
+              <SplitPdfEditor splitRange={splitRange} setSplitRange={setSplitRange} onApply={() => handleStartProcessing({ toolId: 'split-pdf' })} tUi={tUi} isProcessing={isProcessing} />
+              <div style={{ height: 1, background: 'var(--border-color)', margin: (tUi["0 -16px"] || "0 -16px") }} />
               {cropConfig && setCropConfig && (
-                <CropPdfEditor cropConfig={cropConfig} setCropConfig={setCropConfig} onApply={() => handleStartProcessing({ toolId: 'crop-pdf' })} isProcessing={isProcessing} />
+                <CropPdfEditor cropConfig={cropConfig} setCropConfig={setCropConfig} onApply={() => handleStartProcessing({ toolId: 'crop-pdf' })} tUi={tUi} isProcessing={isProcessing} />
               )}
-              <div style={{ height: 1, background: 'var(--border-color)', margin: '0 -16px' }} />
+              <div style={{ height: 1, background: 'var(--border-color)', margin: (tUi["0 -16px"] || "0 -16px") }} />
               {removeRange !== undefined && setRemoveRange && (
-                <RemovePdfEditor removeRange={removeRange} setRemoveRange={setRemoveRange} onApply={() => handleStartProcessing({ toolId: 'remove-pdf' })} isProcessing={isProcessing} />
+                <RemovePdfEditor removeRange={removeRange} setRemoveRange={setRemoveRange} onApply={() => handleStartProcessing({ toolId: 'remove-pdf' })} tUi={tUi} isProcessing={isProcessing} />
               )}
             </div>
           </details>
           
           <details className="glass-panel" style={{ borderRadius: 16, border: '1px solid var(--border-color)', overflow: 'hidden' }}>
             <summary style={{ padding: '16px 20px', fontWeight: 800, cursor: 'pointer', outline: 'none', background: 'var(--bg-input)', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: 12 }}>
-              <span style={{ flex: 1 }}>🛡️ Security & Extras</span>
+              <span style={{ flex: 1 }}>🛡️ {tUi['Security & Extras'] || (tUi["Security & Extras"] || "Security & Extras")}</span>
             </summary>
             <div style={{ padding: '20px 16px', display: 'flex', flexDirection: 'column', gap: 24, background: 'var(--bg-card)' }}>
-              <WatermarkPdfEditor config={watermarkConfig} setConfig={setWatermarkConfig} onApply={() => handleStartProcessing({ toolId: 'watermark-pdf' })} isProcessing={isProcessing} />
-              <div style={{ height: 1, background: 'var(--border-color)', margin: '0 -16px' }} />
-              <PageNumbersPdfEditor config={pageNumberConfig} setConfig={setPageNumberConfig} onApply={() => handleStartProcessing({ toolId: 'page-numbers' })} isProcessing={isProcessing} />
-              <div style={{ height: 1, background: 'var(--border-color)', margin: '0 -16px' }} />
+              <WatermarkPdfEditor config={watermarkConfig} setConfig={setWatermarkConfig} onApply={() => handleStartProcessing({ toolId: 'watermark-pdf' })} tUi={tUi} isProcessing={isProcessing} />
+              <div style={{ height: 1, background: 'var(--border-color)', margin: (tUi["0 -16px"] || "0 -16px") }} />
+              <PageNumbersPdfEditor config={pageNumberConfig} setConfig={setPageNumberConfig} onApply={() => handleStartProcessing({ toolId: 'page-numbers' })} tUi={tUi} isProcessing={isProcessing} />
+              <div style={{ height: 1, background: 'var(--border-color)', margin: (tUi["0 -16px"] || "0 -16px") }} />
               {pdfPassword !== undefined && setPdfPassword && (
-                <ProtectPdfEditor pdfPassword={pdfPassword} setPdfPassword={setPdfPassword} onApply={() => handleStartProcessing({ toolId: 'protect-pdf' })} isProcessing={isProcessing} />
+                <ProtectPdfEditor pdfPassword={pdfPassword} setPdfPassword={setPdfPassword} onApply={() => handleStartProcessing({ toolId: 'protect-pdf' })} tUi={tUi} isProcessing={isProcessing} />
               )}
             </div>
           </details>
         </div>
       )}
       {tool.id === 'extract-images-pdf' && (
-        <ExtractImagesEditor onApply={handleStartProcessing} isProcessing={isProcessing} />
+        <ExtractImagesEditor onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
       {tool.id === 'grayscale-pdf' && (
-        <GrayscalePdfEditor onApply={handleStartProcessing} isProcessing={isProcessing} />
+        <GrayscalePdfEditor onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
       {tool.id === 'scan-to-pdf' && (
-        <ScanToPdfEditor onProcess={() => handleStartProcessing()} isProcessing={isProcessing} />
+        <ScanToPdfEditor onProcess={() => handleStartProcessing()} tUi={tUi} isProcessing={isProcessing} />
       )}
       {tool.id === 'remove-pdf-metadata' && (
-        <RemoveMetadataEditor onProcess={() => handleStartProcessing()} isProcessing={isProcessing} />
+        <RemoveMetadataEditor onProcess={() => handleStartProcessing()} tUi={tUi} isProcessing={isProcessing} />
       )}
       {tool.id === 'compare-pdf' && (
-        <ComparePdfEditor onProcess={(options) => handleStartProcessing(options)} isProcessing={isProcessing} />
+        <ComparePdfEditor onProcess={(options) => handleStartProcessing(options)} tUi={tUi} isProcessing={isProcessing} />
       )}
       {tool.id === 'redact-pdf' && redactConfig && setRedactConfig && (
         <RedactPdfEditor 
           redactConfig={redactConfig} setRedactConfig={setRedactConfig} 
           activeFileIndex={activeFileIndex}
-          onProcess={() => handleStartProcessing()} isProcessing={isProcessing} 
+          onProcess={() => handleStartProcessing()} tUi={tUi} isProcessing={isProcessing} 
         />
       )}
       {['pdf-to-word', 'word-to-pdf', 'excel-to-pdf', 'image-to-pdf', 'ppt-to-pdf', 'pdf-to-ppt', 'csv-to-pdf', 'txt-to-pdf', 'csv-to-excel', 'excel-to-csv', 'ocr-pdf'].includes(tool.id) && (
-        <GenericConvertEditor toolId={tool.id} onApply={handleStartProcessing} isProcessing={isProcessing} />
+        <GenericConvertEditor toolId={tool.id} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
     </div>
   );

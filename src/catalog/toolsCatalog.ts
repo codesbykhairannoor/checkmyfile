@@ -25,11 +25,17 @@ export const getToolBySlugAndLang = (slug: string, lang: string): ToolDefinition
   return TOOLS_CATALOG.find((t) => t.slugs[lang] === slug || t.id === slug);
 };
 
+import { catalogTranslations } from '../i18n/catalogTranslations';
+
 export const getLocalizedSeo = (tool: ToolDefinition, lang: string): LocalizedSeoData => {
-  return tool.seo[lang] || tool.seo['en'] || {
+  const translations = catalogTranslations[lang]?.[tool.id] || catalogTranslations['en']?.[tool.id] || {
     title: `${tool.id} - Zero Upload Client-Side Tool`,
     h1: tool.id,
     description: `Use ${tool.id} completely in your browser with 100% privacy.`,
+  };
+
+  return {
+    ...translations,
     faqs: defaultFaqs(tool.id, lang),
   };
 };

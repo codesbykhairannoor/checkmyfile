@@ -4,6 +4,7 @@ import { Minimize2, Download, Settings2, Zap, Shield, Image as ImageIcon } from 
 export type CompressQuality = 'extreme' | 'balanced' | 'high';
 
 interface CompressPdfEditorProps {
+  tUi?: Record<string, string>;
   quality: CompressQuality;
   setQuality: (quality: CompressQuality) => void;
   onApply: () => void;
@@ -12,12 +13,14 @@ interface CompressPdfEditorProps {
 }
 
 export const CompressPdfEditor: React.FC<CompressPdfEditorProps> = ({
+  tUi = {},
   quality,
   setQuality,
   onApply,
   isProcessing,
   originalSizeKB = 0
 }) => {
+  void tUi;
   const getEstimatedSize = () => {
     if (!originalSizeKB) return 'TBD';
     if (quality === 'extreme') return `${Math.max(10, Math.round(originalSizeKB * 0.3))} KB`;
@@ -30,11 +33,9 @@ export const CompressPdfEditor: React.FC<CompressPdfEditorProps> = ({
       <div>
         <h4 style={{ fontWeight: 800, fontSize: '1.1rem', color: 'var(--text-main)', marginBottom: 6, display: 'flex', alignItems: 'center', gap: 8 }}>
           <Minimize2 size={18} className="text-brand-primary" />
-          <span>Interactive Compress</span>
+          <span>{tUi["Interactive Compress"] || (tUi["Interactive Compress"] || "Interactive Compress")}</span>
         </h4>
-        <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
-          Pilih tingkat kompresi. Live Preview akan mensimulasikan penurunan kualitas gambar.
-        </p>
+        <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>{tUi["Pilih tingkat kompresi. Live Preview akan mensimulasikan penurunan kualitas gambar."] || (tUi["Pilih tingkat kompresi. Live Preview akan mensimulasikan penurunan kualitas gambar."] || "Pilih tingkat kompresi. Live Preview akan mensimulasikan penurunan kualitas gambar.")}</p>
       </div>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
@@ -50,8 +51,8 @@ export const CompressPdfEditor: React.FC<CompressPdfEditorProps> = ({
         >
           <Zap size={24} color={quality === 'extreme' ? '#fff' : '#ef4444'} />
           <div>
-            <div style={{ fontSize: '0.95rem', fontWeight: 700 }}>Extreme (Kecil)</div>
-            <div style={{ fontSize: '0.75rem', color: quality === 'extreme' ? 'rgba(255,255,255,0.8)' : 'var(--text-muted)' }}>Kualitas terendah, ukuran terkecil</div>
+            <div style={{ fontSize: '0.95rem', fontWeight: 700 }}>{tUi["Extreme (Kecil)"] || (tUi["Extreme (Kecil)"] || "Extreme (Kecil)")}</div>
+            <div style={{ fontSize: '0.75rem', color: quality === 'extreme' ? 'rgba(255,255,255,0.8)' : 'var(--text-muted)' }}>{tUi["Kualitas terendah, ukuran terkecil"] || (tUi["Kualitas terendah, ukuran terkecil"] || "Kualitas terendah, ukuran terkecil")}</div>
           </div>
         </button>
 
@@ -67,8 +68,8 @@ export const CompressPdfEditor: React.FC<CompressPdfEditorProps> = ({
         >
           <Shield size={24} color={quality === 'balanced' ? '#fff' : '#3b82f6'} />
           <div>
-            <div style={{ fontSize: '0.95rem', fontWeight: 700 }}>Balanced (Rekomendasi)</div>
-            <div style={{ fontSize: '0.75rem', color: quality === 'balanced' ? 'rgba(255,255,255,0.8)' : 'var(--text-muted)' }}>Kualitas bagus, ukuran optimal</div>
+            <div style={{ fontSize: '0.95rem', fontWeight: 700 }}>{tUi["Balanced (Rekomendasi)"] || (tUi["Balanced (Rekomendasi)"] || "Balanced (Rekomendasi)")}</div>
+            <div style={{ fontSize: '0.75rem', color: quality === 'balanced' ? 'rgba(255,255,255,0.8)' : 'var(--text-muted)' }}>{tUi["Kualitas bagus, ukuran optimal"] || (tUi["Kualitas bagus, ukuran optimal"] || "Kualitas bagus, ukuran optimal")}</div>
           </div>
         </button>
 
@@ -84,8 +85,8 @@ export const CompressPdfEditor: React.FC<CompressPdfEditorProps> = ({
         >
           <ImageIcon size={24} color={quality === 'high' ? '#fff' : '#10b981'} />
           <div>
-            <div style={{ fontSize: '0.95rem', fontWeight: 700 }}>High (Terbaik)</div>
-            <div style={{ fontSize: '0.75rem', color: quality === 'high' ? 'rgba(255,255,255,0.8)' : 'var(--text-muted)' }}>Kualitas tinggi, ukuran lumayan besar</div>
+            <div style={{ fontSize: '0.95rem', fontWeight: 700 }}>{tUi["High (Terbaik)"] || (tUi["High (Terbaik)"] || "High (Terbaik)")}</div>
+            <div style={{ fontSize: '0.75rem', color: quality === 'high' ? 'rgba(255,255,255,0.8)' : 'var(--text-muted)' }}>{tUi["Kualitas tinggi, ukuran lumayan besar"] || (tUi["Kualitas tinggi, ukuran lumayan besar"] || "Kualitas tinggi, ukuran lumayan besar")}</div>
           </div>
         </button>
       </div>
@@ -93,11 +94,11 @@ export const CompressPdfEditor: React.FC<CompressPdfEditorProps> = ({
       {originalSizeKB > 0 && (
         <div style={{ background: 'var(--bg-input)', padding: 16, borderRadius: 12, border: '1px solid var(--border-color)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div>
-            <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Ukuran Asli:</div>
+            <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>{tUi["Ukuran Asli:"] || "Ukuran Asli:"}</div>
             <div style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)' }}>{originalSizeKB} KB</div>
           </div>
           <div style={{ textAlign: 'right' }}>
-            <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Estimasi Hasil:</div>
+            <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>{tUi["Estimasi Hasil:"] || "Estimasi Hasil:"}</div>
             <div style={{ fontSize: '1.05rem', fontWeight: 800, color: 'var(--brand-primary)' }}>~{getEstimatedSize()}</div>
           </div>
         </div>
@@ -115,7 +116,7 @@ export const CompressPdfEditor: React.FC<CompressPdfEditorProps> = ({
           ) : (
             <Download size={18} />
           )}
-          <span>{isProcessing ? 'Mengompres...' : 'Kompres Sekarang'}</span>
+          <span>{isProcessing ? (tUi["Mengompres..."] || "Mengompres...") : (tUi["Kompres Sekarang"] || (tUi["Kompres Sekarang"] || "Kompres Sekarang"))}</span>
         </button>
       </div>
     </div>

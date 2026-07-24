@@ -2,14 +2,17 @@ import React from 'react';
 import { Contrast, AlertTriangle } from 'lucide-react';
 
 interface GrayscalePdfEditorProps {
+  tUi?: Record<string, string>;
   onApply: () => void;
   isProcessing: boolean;
 }
 
 export const GrayscalePdfEditor: React.FC<GrayscalePdfEditorProps> = ({
+  tUi = {},
   onApply,
   isProcessing
 }) => {
+  void tUi;
   return (
     <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
       <div style={{ padding: '24px', borderBottom: '1px solid var(--border-color)', background: 'rgba(255,255,255,0.02)' }}>
@@ -17,9 +20,9 @@ export const GrayscalePdfEditor: React.FC<GrayscalePdfEditorProps> = ({
           <div style={{ background: 'var(--brand-primary)', color: 'white', padding: '8px', borderRadius: 8 }}>
             <Contrast size={20} />
           </div>
-          <h2 style={{ fontSize: '1.25rem', fontWeight: 800, margin: 0 }}>Grayscale PDF</h2>
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 800, margin: 0 }}>{tUi["Grayscale PDF"] || (tUi["Grayscale PDF"] || "Grayscale PDF")}</h2>
         </div>
-        <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: 0 }}>Ubah warna dokumen menjadi hitam putih.</p>
+        <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: 0 }}>{tUi["Ubah warna dokumen menjadi hitam putih."] || (tUi["Ubah warna dokumen menjadi hitam putih."] || "Ubah warna dokumen menjadi hitam putih.")}</p>
       </div>
 
       <div style={{ padding: '24px', flex: 1, overflowY: 'auto' }}>
@@ -27,11 +30,8 @@ export const GrayscalePdfEditor: React.FC<GrayscalePdfEditorProps> = ({
           <div style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
             <AlertTriangle size={24} color="#f59e0b" style={{ flexShrink: 0, marginTop: 4 }} />
             <div>
-              <h3 style={{ fontSize: '0.95rem', fontWeight: 700, marginBottom: 8, color: '#f59e0b' }}>Perhatian: Rasterisasi</h3>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: 1.6, margin: 0 }}>
-                Untuk memastikan akurasi konversi warna di peramban, dokumen Anda akan diubah menjadi gambar statis (raster) beresolusi tinggi. 
-                Ini berarti teks dalam file hasil tidak akan bisa di-blok (copy/paste), tetapi sangat cocok untuk kebutuhan cetak (printing) yang hemat tinta.
-              </p>
+              <h3 style={{ fontSize: '0.95rem', fontWeight: 700, marginBottom: 8, color: '#f59e0b' }}>{tUi["Perhatian: Rasterisasi"] || (tUi["Perhatian: Rasterisasi"] || "Perhatian: Rasterisasi")}</h3>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: 1.6, margin: 0 }}>{tUi[`Untuk memastikan akurasi konversi warna di peramban, dokumen Anda akan diubah menjadi gambar statis (raster) beresolusi tinggi. \n                Ini berarti teks dalam file hasil tidak akan bisa di-blok (copy/paste), tetapi sangat cocok untuk kebutuhan cetak (printing) yang hemat tinta.`] || `Untuk memastikan akurasi konversi warna di peramban, dokumen Anda akan diubah menjadi gambar statis (raster) beresolusi tinggi. \n                Ini berarti teks dalam file hasil tidak akan bisa di-blok (copy/paste), tetapi sangat cocok untuk kebutuhan cetak (printing) yang hemat tinta.`}</p>
             </div>
           </div>
         </div>
@@ -42,7 +42,7 @@ export const GrayscalePdfEditor: React.FC<GrayscalePdfEditorProps> = ({
           {isProcessing ? (
             <span className="spinner" style={{ width: 20, height: 20, border: '3px solid rgba(255,255,255,0.3)', borderTopColor: '#fff', borderRadius: '50%', animation: 'spin 1s linear infinite' }} />
           ) : (
-            <><Contrast size={20} /> Ubah Jadi Hitam Putih</>
+            <><Contrast size={20} />{tUi["Ubah Jadi Hitam Putih"] || (tUi["Ubah Jadi Hitam Putih"] || "Ubah Jadi Hitam Putih")}</>
           )}
         </button>
       </div>

@@ -35,3 +35,8 @@
 ## Scroll Lock & Full-Width CTA (The Anchor Strategy)
 - When building a dual-panel workspace that feels constrained or scroll-locked due to `100vh` or flex constraints, **do not** hide the primary Call-to-Action (like the Download Box) inside the Right Sidebar.
 - **Instead**, move the Download Box / Action Bar OUT of the sidebars and make it a full-width bottom section (spanning below the dual-panel flex container). This forces the browser to create a vertical scrollbar, freeing the panels from scroll-lock and allowing both sidebars to use `flex: 1` symmetrically.
+
+## Safe Code Transformation & Extraction
+- **No Regex for Complex Parsing**: Never rely on Regex to extract or bulk-replace strings, props, or logic across multiple React/JSX or TypeScript files (e.g., for i18n extraction). Regex cannot safely handle nesting, multiline strings, or ternary boundaries.
+- **Mandatory AST Usage**: When tasked with sweeping codebase changes, text extraction, or refactoring, ALWAYS use a proper AST parser (e.g., the `typescript` compiler API, which is built into modern JS projects) to traverse `JsxText` and `StringLiteral` nodes.
+- **Deep Research**: Do not take shortcuts on codebase-wide refactors. Write an AST-based script, dump the findings, and verify them thoroughly before applying automated patches.

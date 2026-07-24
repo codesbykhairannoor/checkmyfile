@@ -2,6 +2,7 @@ import React from 'react';
 import { RotateCw, RotateCcw, CheckCircle2, Download } from 'lucide-react';
 
 interface RotatePdfEditorProps {
+  tUi?: Record<string, string>;
   rotation: number;
   setRotation: (r: number) => void;
   onApply: () => void;
@@ -9,56 +10,58 @@ interface RotatePdfEditorProps {
 }
 
 export const RotatePdfEditor: React.FC<RotatePdfEditorProps> = ({
+  tUi = {},
   rotation,
   setRotation,
   onApply,
   isProcessing
 }) => {
+  void tUi;
   return (
     <div className="glass-panel" style={{ padding: 24, display: 'flex', flexDirection: 'column', gap: 24, minWidth: 280 }}>
       <div>
         <h4 style={{ fontWeight: 800, fontSize: '1.1rem', color: 'var(--text-main)', marginBottom: 6, display: 'flex', alignItems: 'center', gap: 8 }}>
           <RotateCw size={18} className="text-brand-primary" />
-          <span>Interactive Rotate</span>
+          <span>{tUi['Interactive Rotate'] || (tUi["Interactive Rotate"] || "Interactive Rotate")}</span>
         </h4>
         <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
-          Putar orientasi dokumen Anda. Perubahan akan terlihat langsung pada layar pratinjau.
+          {tUi['Putar orientasi dokumen Anda. Perubahan akan terlihat langsung pada layar pratinjau.'] || (tUi["Putar orientasi dokumen Anda. Perubahan akan terlihat langsung pada layar pratinjau."] || "Putar orientasi dokumen Anda. Perubahan akan terlihat langsung pada layar pratinjau.")}
         </p>
       </div>
 
       {/* Quick Rotation Buttons */}
       <div>
         <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'block', marginBottom: 12 }}>
-          Rotasi Cepat
+          {tUi['Rotasi Cepat'] || (tUi["Rotasi Cepat"] || "Rotasi Cepat")}
         </label>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: (tUi["1fr 1fr"] || "1fr 1fr"), gap: 10 }}>
           <button
             onClick={() => setRotation((rotation + 270) % 360)}
             style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, padding: '12px 0', background: 'var(--bg-input)', border: '1px solid var(--border-color)', borderRadius: 12, cursor: 'pointer' }}
           >
             <RotateCcw size={20} style={{ color: 'var(--text-main)' }} />
-            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-muted)' }}>-90° (Kiri)</span>
+            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-muted)' }}>{tUi["-90° (Kiri)"] || (tUi["-90° (Kiri)"] || "-90° (Kiri)")}</span>
           </button>
           <button
             onClick={() => setRotation((rotation + 90) % 360)}
             style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, padding: '12px 0', background: 'var(--bg-input)', border: '1px solid var(--border-color)', borderRadius: 12, cursor: 'pointer' }}
           >
             <RotateCw size={20} style={{ color: 'var(--text-main)' }} />
-            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-muted)' }}>+90° (Kanan)</span>
+            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-muted)' }}>{tUi["+90° (Kanan)"] || (tUi["+90° (Kanan)"] || "+90° (Kanan)")}</span>
           </button>
           <button
             onClick={() => setRotation(180)}
             style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, padding: '12px 0', background: 'var(--bg-input)', border: '1px solid var(--border-color)', borderRadius: 12, cursor: 'pointer' }}
           >
             <RotateCw size={20} style={{ color: 'var(--text-main)' }} />
-            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-muted)' }}>180° (Putar Balik)</span>
+            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-muted)' }}>{tUi["180° (Putar Balik)"] || (tUi["180° (Putar Balik)"] || "180° (Putar Balik)")}</span>
           </button>
           <button
             onClick={() => setRotation(0)}
             style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, padding: '12px 0', background: 'var(--bg-input)', border: '1px solid var(--border-color)', borderRadius: 12, cursor: 'pointer' }}
           >
             <CheckCircle2 size={20} style={{ color: 'var(--text-main)' }} />
-            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-muted)' }}>0° (Normal)</span>
+            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-muted)' }}>{tUi["0° (Normal)"] || (tUi["0° (Normal)"] || "0° (Normal)")}</span>
           </button>
         </div>
       </div>
@@ -66,7 +69,7 @@ export const RotatePdfEditor: React.FC<RotatePdfEditorProps> = ({
       {/* Slider */}
       <div>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
-          <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)' }}>Derajat Khusus</label>
+          <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)' }}>{tUi['Derajat Khusus'] || (tUi["Derajat Khusus"] || "Derajat Khusus")}</label>
           <span style={{ fontSize: '0.9rem', fontWeight: 800, color: 'var(--brand-primary)', fontFamily: 'monospace' }}>{rotation}°</span>
         </div>
         <input
@@ -91,7 +94,7 @@ export const RotatePdfEditor: React.FC<RotatePdfEditorProps> = ({
           ) : (
             <Download size={18} />
           )}
-          <span>{isProcessing ? 'Menyimpan...' : 'Terapkan Rotasi'}</span>
+          <span>{isProcessing ? (tUi["Menyimpan..."] || "Menyimpan...") : (tUi['Terapkan Rotasi'] || (tUi["Terapkan Rotasi"] || "Terapkan Rotasi"))}</span>
         </button>
       </div>
     </div>

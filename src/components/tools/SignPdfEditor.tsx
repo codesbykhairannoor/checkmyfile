@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { PenTool, Download, Settings2, Image as ImageIcon, RotateCcw } from 'lucide-react';
 
 interface SignPdfEditorProps {
+  tUi?: Record<string, string>;
   signatureConfig: { pageIndex: number; x: number; y: number; width: number; height: number; imageUrl: string; };
   setSignatureConfig: (config: any) => void;
   onApply: () => void;
@@ -9,11 +10,13 @@ interface SignPdfEditorProps {
 }
 
 export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
+  tUi = {},
   signatureConfig,
   setSignatureConfig,
   onApply,
   isProcessing
 }) => {
+  void tUi;
   const [tab, setTab] = useState<'draw' | 'upload'>('draw');
   const [isDrawing, setIsDrawing] = useState(false);
   const [lineWidth, setLineWidth] = useState(2);
@@ -110,11 +113,9 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
       <div>
         <h4 style={{ fontWeight: 800, fontSize: '1.1rem', color: 'var(--text-main)', marginBottom: 6, display: 'flex', alignItems: 'center', gap: 8 }}>
           <PenTool size={18} className="text-brand-primary" color="#3b82f6" />
-          <span>E-Sign PDF</span>
+          <span>{tUi["E-Sign PDF"] || (tUi["E-Sign PDF"] || "E-Sign PDF")}</span>
         </h4>
-        <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
-          Buat tanda tangan Anda dan letakkan di posisi yang tepat pada halaman PDF.
-        </p>
+        <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>{tUi["Buat tanda tangan Anda dan letakkan di posisi yang tepat pada halaman PDF."] || (tUi["Buat tanda tangan Anda dan letakkan di posisi yang tepat pada halaman PDF."] || "Buat tanda tangan Anda dan letakkan di posisi yang tepat pada halaman PDF.")}</p>
       </div>
 
       {/* Tabs */}
@@ -123,14 +124,12 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
           onClick={() => setTab('draw')}
           style={{ flex: 1, padding: '8px', fontSize: '0.8rem', fontWeight: 600, borderRadius: 6, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, background: tab === 'draw' ? 'var(--bg-card)' : 'transparent', color: tab === 'draw' ? 'var(--brand-primary)' : 'var(--text-muted)', border: 'none', boxShadow: tab === 'draw' ? '0 2px 4px rgba(0,0,0,0.05)' : 'none' }}
         >
-          <PenTool size={14} /> Gambar
-        </button>
+          <PenTool size={14} />{tUi["Gambar"] || (tUi["Gambar"] || "Gambar")}</button>
         <button 
           onClick={() => setTab('upload')}
           style={{ flex: 1, padding: '8px', fontSize: '0.8rem', fontWeight: 600, borderRadius: 6, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, background: tab === 'upload' ? 'var(--bg-card)' : 'transparent', color: tab === 'upload' ? 'var(--brand-primary)' : 'var(--text-muted)', border: 'none', boxShadow: tab === 'upload' ? '0 2px 4px rgba(0,0,0,0.05)' : 'none' }}
         >
-          <ImageIcon size={14} /> Unggah
-        </button>
+          <ImageIcon size={14} />{tUi["Unggah"] || (tUi["Unggah"] || "Unggah")}</button>
       </div>
 
       {/* Mode Content */}
@@ -160,7 +159,7 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 6, marginTop: 4 }}>
             <label style={{ fontSize: '0.8rem', color: 'var(--text-muted)', display: 'flex', justifyContent: 'space-between' }}>
-              <span>Ketebalan Tinta</span>
+              <span>{tUi["Ketebalan Tinta"] || (tUi["Ketebalan Tinta"] || "Ketebalan Tinta")}</span>
               <span>{lineWidth}px</span>
             </label>
             <input type="range" min="1" max="10" value={lineWidth} onChange={e => setLineWidth(Number(e.target.value))} />
@@ -172,8 +171,7 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
         <div>
           <input type="file" accept="image/png, image/jpeg" style={{ display: 'none' }} ref={fileRef} onChange={handleFileUpload} />
           <button onClick={() => fileRef.current?.click()} className="btn-secondary" style={{ width: '100%', padding: '12px', justifyContent: 'center', background: 'var(--bg-input)' }}>
-            <ImageIcon size={16} /> Unggah Tanda Tangan (PNG/JPG)
-          </button>
+            <ImageIcon size={16} />{tUi["Unggah Tanda Tangan (PNG/JPG)"] || (tUi["Unggah Tanda Tangan (PNG/JPG)"] || "Unggah Tanda Tangan (PNG/JPG)")}</button>
           {signatureConfig.imageUrl && signatureConfig.imageUrl.length > 100 && (
             <div style={{ marginTop: 12, padding: 16, background: '#fff', border: '1px dashed var(--border-color)', borderRadius: 8, display: 'flex', justifyContent: 'center' }}>
               <img src={signatureConfig.imageUrl} alt="Preview" style={{ maxHeight: 60, objectFit: 'contain' }} />
@@ -184,9 +182,9 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
 
       {/* Position Settings */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: 12, borderTop: '1px solid var(--border-color)', paddingTop: 20 }}>
-        <h5 style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)' }}>Ukuran Tanda Tangan</h5>
+        <h5 style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)' }}>{tUi["Ukuran Tanda Tangan"] || (tUi["Ukuran Tanda Tangan"] || "Ukuran Tanda Tangan")}</h5>
         <input type="range" min="5" max="50" value={signatureConfig.width} onChange={e => setSignatureConfig({...signatureConfig, width: Number(e.target.value)})} />
-        <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Klik halaman di Live Preview untuk memindahkan tanda tangan, lalu geser (drag) untuk menyesuaikan posisi.</p>
+        <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>{tUi["Klik halaman di Live Preview untuk memindahkan tanda tangan, lalu geser (drag) untuk menyesuaikan posisi."] || (tUi["Klik halaman di Live Preview untuk memindahkan tanda tangan, lalu geser (drag) untuk menyesuaikan posisi."] || "Klik halaman di Live Preview untuk memindahkan tanda tangan, lalu geser (drag) untuk menyesuaikan posisi.")}</p>
       </div>
 
       <div style={{ marginTop: 'auto', paddingTop: 24, borderTop: '1px solid var(--border-color)' }}>
@@ -194,10 +192,10 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
           onClick={onApply}
           disabled={isProcessing || !signatureConfig.imageUrl}
           className="btn-primary"
-          style={{ width: '100%', padding: '14px 20px', fontSize: '0.95rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, background: 'linear-gradient(135deg, #3b82f6 0%, #2dd4bf 100%)' }}
+          style={{ width: '100%', padding: '14px 20px', fontSize: '0.95rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, background: (tUi["linear-gradient(135deg, #3b82f6 0%, #2dd4bf 100%)"] || "linear-gradient(135deg, #3b82f6 0%, #2dd4bf 100%)") }}
         >
           {isProcessing ? <div style={{ animation: 'spin 1s linear infinite' }}><Settings2 size={18} /></div> : <Download size={18} />}
-          <span>{isProcessing ? 'Memproses...' : 'Terapkan Tanda Tangan'}</span>
+          <span>{isProcessing ? (tUi["Memproses..."] || "Memproses...") : (tUi["Terapkan Tanda Tangan"] || (tUi["Terapkan Tanda Tangan"] || "Terapkan Tanda Tangan"))}</span>
         </button>
       </div>
     </div>
