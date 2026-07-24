@@ -28,6 +28,7 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
   const [certMode, setCertMode] = useState<'auto' | 'custom'>('auto');
   const [certPassword, setCertPassword] = useState('');
   const [certFile, setCertFile] = useState<File | null>(null);
+  const [signerName, setSignerName] = useState('');
   const [isGenerating, setIsGenerating] = useState(false);
 
   // Initialize canvas context and clear on mount
@@ -127,7 +128,8 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
     try {
       if (certMode === 'auto') {
         const password = 'auto_generated_password';
-        const p12Bytes = await generateSelfSignedP12(password, 'Anonymous User');
+        const finalSignerName = signerName.trim() || 'CheckMyFile User';
+        const p12Bytes = await generateSelfSignedP12(password, finalSignerName);
         setSignatureConfig({
           ...signatureConfig,
           p12Bytes,
@@ -248,8 +250,20 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
         <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
           <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: '0.8rem', cursor: 'pointer' }}>
             <input type="radio" name="certMode" value="auto" checked={certMode === 'auto'} onChange={() => setCertMode('auto')} />
-            <span>{tUi["Sertifikat Otomatis (Anonim)"] || "Sertifikat Otomatis (Anonim)"}</span>
+            <span>{tUi["Sertifikat Otomatis"] || "Sertifikat Otomatis"}</span>
           </label>
+          {certMode === 'auto' && (
+            <div style={{ paddingLeft: 24, paddingBottom: 8 }}>
+              <input 
+                type="text" 
+                placeholder={tUi["Nama Penandatangan (Opsional)"] || "Nama Penandatangan (Opsional)"} 
+                value={signerName}
+                onChange={e => setSignerName(e.target.value)}
+                style={{ width: '100%', padding: '6px 12px', borderRadius: 6, border: '1px solid var(--border-color)', fontSize: '0.8rem', background: 'var(--bg-input)' }}
+              />
+            </div>
+          )}
+          
           <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: '0.8rem', cursor: 'pointer' }}>
             <input type="radio" name="certMode" value="custom" checked={certMode === 'custom'} onChange={() => setCertMode('custom')} />
             <span>{tUi["Gunakan P12 / PFX Pribadi"] || "Gunakan P12 / PFX Pribadi"}</span>
