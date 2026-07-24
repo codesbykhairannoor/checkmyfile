@@ -1,3 +1,4 @@
+import { PDFDocument } from 'pdf-lib';
 import * as Zga from 'zgapdfsigner';
 
 export interface SignatureConfig {
@@ -38,6 +39,15 @@ export async function signPdf(
     throw new Error('Sertifikat (P12/PFX) dan password diperlukan untuk enkripsi tanda tangan.');
   }
 
+  // Use pdf-lib solely to get page dimensions and image aspect ratio
+  const pdfDoc = await PDFDocument.load(arrayBuffer);
+  const pages = pdfDoc.getPages();
+  const page = pages[config.pageIndex];
+
+  if (!page) {
+    throw new Error('Invalid page index');
+  }
+
   // Parse the base64 image URL to extract raw image data for zgapdfsigner
   const base64Data = config.imageUrl.split(',')[1];
   const mimeMatch = config.imageUrl.match(/data:(.*?);/);
@@ -57,6 +67,30 @@ export async function signPdf(
 
   onProgress?.(50);
 
+  // Calculate coordinates.
+  // Our UI coordinate system originates at top-left, and x/y/width are percentages!
+  const pageWidth = page.getWidth();
+  const pageHeight = page.getHeight();
+
+  const absX = (config.x / 100) * pageWidth;
+  const absY = (config.y / 100) * pageHeight; // top-left absolute Y
+  const absWidth = (config.width / 100) * pageWidth;
+
+  // We need aspect ratio to calculate height
+  // Since we already have base64, we can embed it in pdf-lib to read dimensions
+  let embeddedImage;
+  if (imgType === 'png') {
+    embeddedImage = await pdfDoc.embedPng(config.imageUrl);
+  } else {
+    embeddedImage = await pdfDoc.embedJpg(config.imageUrl);
+  }
+  
+  const imgDims = embeddedImage.scale(1);
+  const aspectRatio = imgDims.height / imgDims.width;
+  const absHeight = absWidth * aspectRatio;
+
+  // zgapdfsigner's area.y expects origin at TOP of the page.
+  // absY is already the distance from the top!
   const sopt: Zga.SignOption = {
     p12cert: config.p12Bytes,
     pwd: config.password,
@@ -64,10 +98,10 @@ export async function signPdf(
     location: config.location || "Internet",
     drawinf: {
       area: {
-        x: config.x,
-        y: config.y,
-        w: config.width,
-        h: config.height
+        x: absX,
+        y: absY,
+        w: absWidth,
+        h: absHeight
       },
       pageidx: config.pageIndex.toString(),
       imgInfo: {
