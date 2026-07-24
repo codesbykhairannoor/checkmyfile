@@ -1,7 +1,7 @@
 import React from 'react';
 import { getUiTranslations } from '../../i18n/translations';
 import { TOOLS_CATALOG, type ToolDefinition } from '../../catalog/toolsCatalog';
-import { ShieldCheck, Heart } from 'lucide-react';
+import { ShieldCheck, Heart, Mail } from 'lucide-react';
 
 interface FooterProps {
   currentLang: string;
@@ -12,186 +12,152 @@ interface FooterProps {
 export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool, onNavigatePage }) => {
   const t = getUiTranslations(currentLang);
 
-  const pdfTools = TOOLS_CATALOG.filter((i) => i.category === 'pdf');
-  const compressTools = TOOLS_CATALOG.filter((i) => i.category === 'compress');
-  const officeTools = TOOLS_CATALOG.filter((i) => i.category === 'office');
-  const imageTools = TOOLS_CATALOG.filter((i) => i.category === 'image' || i.category === 'ocr');
+  // Group 1: Popular Tools
+  const popularIds = ['merge-pdf', 'split-pdf', 'compress-pdf', 'edit-pdf', 'sign-pdf'];
+  const popularTools = popularIds.map(id => TOOLS_CATALOG.find(t => t.id === id)).filter(Boolean) as ToolDefinition[];
 
-  // Helper to cap lists to 5 items
+  // Group 2: Convert Tools
+  const convertIds = ['pdf-to-word', 'word-to-pdf', 'image-to-pdf', 'excel-to-pdf', 'ocr-pdf'];
+  const convertTools = convertIds.map(id => TOOLS_CATALOG.find(t => t.id === id)).filter(Boolean) as ToolDefinition[];
+
   const renderToolList = (tools: ToolDefinition[]) => {
-    const displayTools = tools.slice(0, 5);
-    const hasMore = tools.length > 5;
-
     return (
-      <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 14, padding: 0 }}>
-        {displayTools.map((tool) => (
-          <li key={tool.id}>
-            <button
-              onClick={() => onSelectTool(tool)}
-              style={{
-                background: 'transparent',
-                border: 'none',
-                color: 'var(--text-muted)',
-                cursor: 'pointer',
-                fontSize: '0.9rem',
-                textAlign: 'left',
-                transition: 'all 0.2s',
-                padding: 0,
-                fontWeight: 500,
-              }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.color = 'var(--brand-primary)';
-                e.currentTarget.style.transform = 'translateX(4px)';
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.color = 'var(--text-muted)';
-                e.currentTarget.style.transform = 'translateX(0)';
-              }}
-            >
-              {tool.slugs[currentLang] || tool.id}
-            </button>
-          </li>
-        ))}
-        {hasMore && (
-          <li>
-            <a 
-              href="/" 
-              style={{ 
-                color: 'var(--brand-primary)', 
-                fontSize: '0.85rem', 
-                fontWeight: 800, 
-                textDecoration: 'none',
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: 4,
-                marginTop: 8
-              }}
-            >
-              {t.allTools || 'View All Tools'} &rarr;
-            </a>
-          </li>
-        )}
+      <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 14, padding: 0, margin: 0 }}>
+        {tools.map((tool) => {
+          const displayTitle = tool.seo?.[currentLang]?.title || tool.seo?.['en']?.title || tool.id;
+          return (
+            <li key={tool.id}>
+              <button
+                onClick={() => onSelectTool(tool)}
+                style={{
+                  background: 'transparent',
+                  border: 'none',
+                  color: 'var(--text-muted)',
+                  cursor: 'pointer',
+                  fontSize: '0.95rem',
+                  textAlign: 'left',
+                  transition: 'all 0.2s',
+                  padding: 0,
+                  fontWeight: 500,
+                  display: 'flex',
+                  alignItems: 'center',
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.color = 'var(--brand-primary)';
+                  e.currentTarget.style.transform = 'translateX(6px)';
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.color = 'var(--text-muted)';
+                  e.currentTarget.style.transform = 'translateX(0)';
+                }}
+              >
+                {displayTitle}
+              </button>
+            </li>
+          );
+        })}
       </ul>
     );
   };
 
-  return (
-    <footer
-      aria-label="Main Site Footer"
-      style={{
-        background: 'var(--bg-card)', 
-        borderTop: '1px solid var(--border-color)',
-        padding: '80px 0 0 0',
-        marginTop: 100,
-        width: '100%',
-        position: 'relative',
-        overflow: 'hidden'
-      }}
-    >
-      {/* Background Glow */}
-      <div style={{ position: 'absolute', top: -100, left: '50%', transform: 'translateX(-50%)', width: 600, height: 200, background: 'var(--brand-glow)', filter: 'blur(100px)', opacity: 0.5, pointerEvents: 'none' }} />
+  const renderLinkItem = (label: string, slug: string) => (
+    <li>
+      <button
+        onClick={() => onNavigatePage?.(slug)}
+        style={{
+          background: 'transparent',
+          border: 'none',
+          color: 'var(--text-muted)',
+          cursor: 'pointer',
+          fontSize: '0.95rem',
+          textAlign: 'left',
+          transition: 'all 0.2s',
+          padding: 0,
+          fontWeight: 500,
+          display: 'flex',
+          alignItems: 'center',
+        }}
+        onMouseOver={(e) => {
+          e.currentTarget.style.color = 'var(--brand-primary)';
+          e.currentTarget.style.transform = 'translateX(6px)';
+        }}
+        onMouseOut={(e) => {
+          e.currentTarget.style.color = 'var(--text-muted)';
+          e.currentTarget.style.transform = 'translateX(0)';
+        }}
+      >
+        {label}
+      </button>
+    </li>
+  );
 
-      <div style={{ maxWidth: 1440, margin: '0 auto', padding: '0 32px', position: 'relative', zIndex: 10 }}>
-        
-        {/* Top Section: Brand & Description */}
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', marginBottom: 64 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 20 }}>
-            <div style={{ background: 'var(--brand-gradient)', color: '#fff', width: 48, height: 48, borderRadius: 14, display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 900, fontSize: '1.6rem', boxShadow: '0 8px 20px var(--brand-glow)' }}>
-              B
-            </div>
-            <span style={{ fontSize: '1.8rem', fontWeight: 900, fontFamily: 'var(--font-display)', letterSpacing: '-0.5px' }}>
+  return (
+    <footer style={{ background: 'var(--bg-card)', borderTop: '1px solid var(--border-color)', marginTop: 'auto' }}>
+      <div 
+        className="footer-grid-container"
+        style={{ 
+          maxWidth: 1440, 
+          margin: '0 auto', 
+          padding: '64px 32px',
+          display: 'grid',
+          gridTemplateColumns: '1.5fr 1fr 1fr 1fr',
+          gap: 48
+        }}
+      >
+        {/* Column 1: Brand & Intro */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12, userSelect: 'none' }}>
+            <img src="/logo.png" alt="HandleMyFile Logo" style={{ height: 42, width: 'auto', objectFit: 'contain' }} />
+            <span style={{ fontSize: 26, fontWeight: 800, color: 'var(--text-main)', letterSpacing: '-0.5px' }}>
               HandleMyFile
             </span>
           </div>
-          <p style={{ maxWidth: 500, color: 'var(--text-muted)', fontSize: '1.05rem', lineHeight: 1.6, fontWeight: 500 }}>
-            {t.brandDescription}
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: 1.7, marginTop: 8, paddingRight: 24 }}>
+            The all-in-one platform to handle your documents securely. Edit, convert, and sign PDFs with 100% client-side privacy. Fast, free, and strictly confidential.
           </p>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginTop: 12 }}>
+            <button 
+              style={{
+                display: 'flex', alignItems: 'center', gap: 8, padding: '10px 20px',
+                background: 'var(--brand-primary)', color: 'white', borderRadius: 8,
+                border: 'none', fontWeight: 600, cursor: 'pointer', fontSize: '0.9rem',
+                boxShadow: '0 4px 12px rgba(99, 102, 241, 0.2)'
+              }}
+              onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
+              onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
+            >
+              <Mail size={16} /> Contact Support
+            </button>
+          </div>
         </div>
 
-        {/* Tools Columns */}
-        <div className="footer-tools-grid"
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-            gap: 48,
-            marginBottom: 80,
-          }}
-        >
-          <div>
-            <h5 style={{ fontWeight: 800, marginBottom: 24, color: 'var(--text-main)', fontSize: '0.95rem', letterSpacing: '0.1em', textTransform: 'uppercase' }}>{t.pdfTools}</h5>
-            {renderToolList(pdfTools)}
-          </div>
+        {/* Column 2: Popular Tools */}
+        <div>
+          <h5 style={{ fontWeight: 800, marginBottom: 24, color: 'var(--text-main)', fontSize: '0.95rem', letterSpacing: '0.05em', textTransform: 'uppercase' }}>Popular Tools</h5>
+          {renderToolList(popularTools)}
+        </div>
 
-          <div>
-            <h5 style={{ fontWeight: 800, marginBottom: 24, color: 'var(--text-main)', fontSize: '0.95rem', letterSpacing: '0.1em', textTransform: 'uppercase' }}>{t.compressTools}</h5>
-            {renderToolList(compressTools)}
-          </div>
+        {/* Column 3: Convert Tools */}
+        <div>
+          <h5 style={{ fontWeight: 800, marginBottom: 24, color: 'var(--text-main)', fontSize: '0.95rem', letterSpacing: '0.05em', textTransform: 'uppercase' }}>Convert & OCR</h5>
+          {renderToolList(convertTools)}
+        </div>
 
-          <div>
-            <h5 style={{ fontWeight: 800, marginBottom: 24, color: 'var(--text-main)', fontSize: '0.95rem', letterSpacing: '0.1em', textTransform: 'uppercase' }}>{t.officeTools}</h5>
-            {renderToolList(officeTools)}
-          </div>
-
-          <div>
-            <h5 style={{ fontWeight: 800, marginBottom: 24, color: 'var(--text-main)', fontSize: '0.95rem', letterSpacing: '0.1em', textTransform: 'uppercase' }}>{t.imageTools}</h5>
-            {renderToolList(imageTools)}
-          </div>
-
-          <div>
-            <h5 style={{ fontWeight: 800, marginBottom: 24, color: 'var(--text-main)', fontSize: '0.95rem', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Resources</h5>
-            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 14, padding: 0 }}>
-              <li>
-                <button onClick={() => onNavigatePage?.('pricing')} style={{ background: 'transparent', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', fontSize: '0.9rem', textAlign: 'left', transition: 'all 0.2s', padding: 0, fontWeight: 500 }} onMouseOver={(e) => { e.currentTarget.style.color = 'var(--brand-primary)'; e.currentTarget.style.transform = 'translateX(4px)'; }} onMouseOut={(e) => { e.currentTarget.style.color = 'var(--text-muted)'; e.currentTarget.style.transform = 'translateX(0)'; }}>
-                  {t.footerPricing || 'Pricing'}
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigatePage?.('security')} style={{ background: 'transparent', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', fontSize: '0.9rem', textAlign: 'left', transition: 'all 0.2s', padding: 0, fontWeight: 500 }} onMouseOver={(e) => { e.currentTarget.style.color = 'var(--brand-primary)'; e.currentTarget.style.transform = 'translateX(4px)'; }} onMouseOut={(e) => { e.currentTarget.style.color = 'var(--text-muted)'; e.currentTarget.style.transform = 'translateX(0)'; }}>
-                  {t.footerSecurity || 'Security & Trust'}
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigatePage?.('use-cases')} style={{ background: 'transparent', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', fontSize: '0.9rem', textAlign: 'left', transition: 'all 0.2s', padding: 0, fontWeight: 500 }} onMouseOver={(e) => { e.currentTarget.style.color = 'var(--brand-primary)'; e.currentTarget.style.transform = 'translateX(4px)'; }} onMouseOut={(e) => { e.currentTarget.style.color = 'var(--text-muted)'; e.currentTarget.style.transform = 'translateX(0)'; }}>
-                  {t.footerUseCases || 'Use Cases'}
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigatePage?.('compare')} style={{ background: 'transparent', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', fontSize: '0.9rem', textAlign: 'left', transition: 'all 0.2s', padding: 0, fontWeight: 500 }} onMouseOver={(e) => { e.currentTarget.style.color = 'var(--brand-primary)'; e.currentTarget.style.transform = 'translateX(4px)'; }} onMouseOut={(e) => { e.currentTarget.style.color = 'var(--text-muted)'; e.currentTarget.style.transform = 'translateX(0)'; }}>
-                  {t.footerCompare || 'Compare'}
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigatePage?.('languages')} style={{ background: 'transparent', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', fontSize: '0.9rem', textAlign: 'left', transition: 'all 0.2s', padding: 0, fontWeight: 500 }} onMouseOver={(e) => { e.currentTarget.style.color = 'var(--brand-primary)'; e.currentTarget.style.transform = 'translateX(4px)'; }} onMouseOut={(e) => { e.currentTarget.style.color = 'var(--text-muted)'; e.currentTarget.style.transform = 'translateX(0)'; }}>
-                  {t.footerLanguages || 'Supported Languages'}
-                </button>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h5 style={{ fontWeight: 800, marginBottom: 24, color: 'var(--text-main)', fontSize: '0.95rem', letterSpacing: '0.1em', textTransform: 'uppercase' }}>{t.footerCompany || 'Company'}</h5>
-            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 14, padding: 0 }}>
-              <li>
-                <button onClick={() => onNavigatePage?.('about')} style={{ background: 'transparent', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', fontSize: '0.9rem', textAlign: 'left', transition: 'all 0.2s', padding: 0, fontWeight: 500 }} onMouseOver={(e) => { e.currentTarget.style.color = 'var(--brand-primary)'; e.currentTarget.style.transform = 'translateX(4px)'; }} onMouseOut={(e) => { e.currentTarget.style.color = 'var(--text-muted)'; e.currentTarget.style.transform = 'translateX(0)'; }}>
-                  {t.footerAbout || 'About Us'}
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigatePage?.('privacy')} style={{ background: 'transparent', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', fontSize: '0.9rem', textAlign: 'left', transition: 'all 0.2s', padding: 0, fontWeight: 500 }} onMouseOver={(e) => { e.currentTarget.style.color = 'var(--brand-primary)'; e.currentTarget.style.transform = 'translateX(4px)'; }} onMouseOut={(e) => { e.currentTarget.style.color = 'var(--text-muted)'; e.currentTarget.style.transform = 'translateX(0)'; }}>
-                  {t.footerPrivacy || 'Privacy Policy'}
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigatePage?.('terms')} style={{ background: 'transparent', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', fontSize: '0.9rem', textAlign: 'left', transition: 'all 0.2s', padding: 0, fontWeight: 500 }} onMouseOver={(e) => { e.currentTarget.style.color = 'var(--brand-primary)'; e.currentTarget.style.transform = 'translateX(4px)'; }} onMouseOut={(e) => { e.currentTarget.style.color = 'var(--text-muted)'; e.currentTarget.style.transform = 'translateX(0)'; }}>
-                  {t.footerTos || 'Terms of Service'}
-                </button>
-              </li>
-            </ul>
-          </div>
+        {/* Column 4: Resources & Company */}
+        <div>
+          <h5 style={{ fontWeight: 800, marginBottom: 24, color: 'var(--text-main)', fontSize: '0.95rem', letterSpacing: '0.05em', textTransform: 'uppercase' }}>Company</h5>
+          <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 14, padding: 0, margin: 0 }}>
+            {renderLinkItem(t.footerAbout || 'About Us', 'about')}
+            {renderLinkItem(t.footerPrivacy || 'Privacy Policy', 'privacy')}
+            {renderLinkItem(t.footerTos || 'Terms of Service', 'terms')}
+            {renderLinkItem(t.footerSecurity || 'Security & Trust', 'security')}
+            {renderLinkItem(t.footerPricing || 'Pricing', 'pricing')}
+            {renderLinkItem(t.footerLanguages || 'Languages', 'languages')}
+          </ul>
         </div>
       </div>
 
-      {/* Bottom Copyright Bar Full Width */}
+      {/* Bottom Copyright Bar */}
       <div style={{ background: 'var(--bg-input)', borderTop: '1px solid var(--border-color)', padding: '24px 32px' }}>
         <div className="footer-bottom"
           style={{
@@ -209,16 +175,36 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool, onNav
           <div style={{ display: 'flex', alignItems: 'center', gap: 24, fontWeight: 600 }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, color: 'var(--text-main)' }}>
               <ShieldCheck size={18} style={{ color: 'var(--brand-primary)' }} />
-              {/* Sanitize potential encoding issues in translation string */}
               <span>{t.privacyBadge?.replace(/[^a-zA-Z0-9 %-]/g, '')?.trim() || '100% Client-Side Privacy'}</span>
             </div>
           </div>
           
           <div style={{ fontWeight: 500, display: 'flex', alignItems: 'center', gap: 6 }}>
-            &copy; {new Date().getFullYear()} HandleMyFile Platform. Made with <Heart size={14} style={{ color: 'var(--brand-primary)', fill: 'var(--brand-primary)' }} />
+            &copy; {new Date().getFullYear()} HandleMyFile Platform. Made with <Heart size={14} style={{ color: '#ef4444', fill: '#ef4444' }} />
           </div>
         </div>
       </div>
+      
+      {/* Mobile Styles (Using inline style tag to keep it self-contained) */}
+      <style>{`
+        @media (max-width: 992px) {
+          .footer-grid-container {
+            grid-template-columns: 1fr 1fr !important;
+            gap: 32px !important;
+          }
+        }
+        @media (max-width: 576px) {
+          .footer-grid-container {
+            grid-template-columns: 1fr !important;
+            gap: 40px !important;
+          }
+          .footer-bottom {
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+          }
+        }
+      `}</style>
     </footer>
   );
 };
