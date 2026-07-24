@@ -32,7 +32,7 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
   compressedSize,
 }) => {
   const t = getUiTranslations(currentLang);
-  const [filename, setFilename] = React.useState('Checkmyfile');
+  const [filename, setFilename] = React.useState('HandleMyFile');
 
   React.useEffect(() => {
     if (originalFilename) {
