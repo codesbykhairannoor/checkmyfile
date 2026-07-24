@@ -8,8 +8,6 @@ const OfficePreview = React.lazy(() => import('../preview/OfficePreview').then(m
 const PptxPreview = React.lazy(() => import('../preview/PptxPreview').then(m => ({ default: m.PptxPreview })));
 const SpreadsheetPreview = React.lazy(() => import('../preview/SpreadsheetPreview').then(m => ({ default: m.SpreadsheetPreview })));
 
-pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.mjs`;
-
 // A4 portrait ratio as default: 210mm / 297mm
 const A4_PORTRAIT_RATIO = 210 / 297;
 
