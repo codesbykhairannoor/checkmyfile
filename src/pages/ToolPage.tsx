@@ -188,6 +188,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
   };
 
   const seo = getLocalizedSeo(tool, currentLang);
+  const t = getUiTranslations(currentLang);
 
   const handleStartProcessing = (options?: any) => {
     startProcessing({
@@ -436,14 +437,14 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                     {processorMetadata?.accuracy?.toFixed(1) || '0'}%
                   </div>
                   <div>
-                    <h4 style={{ margin: 0, fontSize: '1.1rem', fontWeight: 800 }}>Akurasi Kemiripan</h4>
-                    <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-muted)' }}>Hasil perbandingan dokumen telah selesai.</p>
+                    <h4 style={{ margin: 0, fontSize: '1.1rem', fontWeight: 800 }}>{t.previewAccuracy || 'Akurasi Kemiripan'}</h4>
+                    <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-muted)' }}>{t.previewComparisonDone || 'Hasil perbandingan dokumen telah selesai.'}</p>
                   </div>
                 </div>
                 <div style={{ display: 'flex', gap: 12 }}>
-                  <button onClick={handleReset} className="btn-secondary" style={{ padding: '12px 24px', fontSize: '1rem', borderRadius: 12 }}>Ulangi</button>
+                  <button onClick={handleReset} className="btn-secondary" style={{ padding: '12px 24px', fontSize: '1rem', borderRadius: 12 }}>{t.resetBtn}</button>
                   <button onClick={() => handleDownload()} className="btn-primary" style={{ padding: '12px 24px', fontSize: '1rem', borderRadius: 12, display: 'flex', alignItems: 'center', gap: 10 }}>
-                    <Download size={18} /> Unduh Hasil
+                    <Download size={18} /> {t.downloadBtn}
                   </button>
                 </div>
               </div>

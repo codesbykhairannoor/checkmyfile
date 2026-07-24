@@ -1,3 +1,4 @@
+import { getUiTranslations } from '../../i18n/translations';
 import React, { useState, useEffect, useRef } from 'react';
 import LazyPdfPage from './LazyPdfPage';
 
@@ -37,7 +38,7 @@ const formatNumber = (num: number, style?: string): string => {
   }
 };
 
-const DraggableSignature = ({ config, onUpdate }: { config: any, onUpdate: (x: number, y: number) => void }) => {
+const DraggableSignature = ({ config, onUpdate, t }: { config: any, onUpdate: (x: number, y: number) => void, t: any }) => {
   const [isDragging, setIsDragging] = useState(false);
   const startPos = useRef({ x: 0, y: 0 });
   const startConfig = useRef({ x: 0, y: 0 });
@@ -90,7 +91,7 @@ const DraggableSignature = ({ config, onUpdate }: { config: any, onUpdate: (x: n
         cursor: isDragging ? 'grabbing' : 'grab'
       }}>
       <img src={config.imageUrl} alt="Signature" style={{ width: '100%', height: '100%', objectFit: 'contain', pointerEvents: 'none' }} />
-      <span style={{ position: 'absolute', top: -24, left: 0, background: '#8b5cf6', color: '#fff', fontSize: '0.7rem', padding: '2px 6px', borderRadius: 4, whiteSpace: 'nowrap' }}>Tanda Tangan (Geser)</span>
+      <span style={{ position: 'absolute', top: -24, left: 0, background: '#8b5cf6', color: '#fff', fontSize: '0.7rem', padding: '2px 6px', borderRadius: 4, whiteSpace: 'nowrap' }}>{t.previewSignatureDrag || "Tanda Tangan (Geser)"}</span>
     </div>
   );
 };
@@ -183,7 +184,7 @@ const DraggableEditElement = ({
   );
 };
 
-const DraggableRedactBox = ({ config, mode, showLock, onUpdate }: { config: any, mode: string, showLock: boolean, onUpdate: (x: number, y: number, w: number, h: number) => void }) => {
+const DraggableRedactBox = ({ config, mode, showLock, onUpdate, t }: { config: any, mode: string, showLock: boolean, onUpdate: (x: number, y: number, w: number, h: number) => void, t: any }) => {
   const [isDragging, setIsDragging] = useState(false);
   const [isResizing, setIsResizing] = useState(false);
   const startPos = useRef({ x: 0, y: 0 });
@@ -245,7 +246,7 @@ const DraggableRedactBox = ({ config, mode, showLock, onUpdate }: { config: any,
         alignItems: 'center',
         justifyContent: 'center'
       }}>
-      <span style={{ position: 'absolute', top: -24, left: 0, background: mode === 'blur' ? '#64748b' : '#ef4444', color: '#fff', fontSize: '0.7rem', padding: '2px 6px', borderRadius: 4, whiteSpace: 'nowrap' }}>Area Sensor (Geser)</span>
+      <span style={{ position: 'absolute', top: -24, left: 0, background: mode === 'blur' ? '#64748b' : '#ef4444', color: '#fff', fontSize: '0.7rem', padding: '2px 6px', borderRadius: 4, whiteSpace: 'nowrap' }}>{t.previewSensorDrag || "Area Sensor (Geser)"}</span>
       
       {showLock && (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={mode === 'blur' ? '#334155' : '#ffffff'} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.8 }}>
@@ -273,6 +274,7 @@ const DraggableRedactBox = ({ config, mode, showLock, onUpdate }: { config: any,
 
 
 interface PdfPreviewProps {
+  currentLang?: string;
   pdfDoc: any;
   isLoadingPreview: boolean;
   watermarkConfig?: { type?: 'text' | 'image'; text: string; imageUrl?: string; opacity: number; color: string; scale: number; rotation: number; };
@@ -301,9 +303,11 @@ interface PdfPreviewProps {
 }
 
 export const PdfPreview: React.FC<PdfPreviewProps> = ({
+  currentLang = 'en',
   pdfDoc, isLoadingPreview, watermarkConfig, pageNumberConfig, cropConfig, totalPages, containerWidth, containerHeight, splitRange, removeRange, signatureConfig, onSignatureUpdate, redactConfig, setRedactConfig, compressQuality,
   previewRotate, externalRotate, pixelWidth, paperShadow, pageAspectRatio, resizeConfig, editElements, setEditElements, selectedEditId, setSelectedEditId
 }) => {
+  const t = getUiTranslations(currentLang);
   if (isLoadingPreview || !pdfDoc) return null;
 
   return (
@@ -495,7 +499,7 @@ export const PdfPreview: React.FC<PdfPreviewProps> = ({
               if (!isSelected) {
                 return (
                   <div style={{ position: 'absolute', inset: 0, background: 'rgba(255,255,255,0.6)', zIndex: 30, display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: 4 }}>
-                    <span style={{ background: '#ef4444', color: '#fff', padding: '8px 16px', borderRadius: 20, fontWeight: 700, fontSize: '0.85rem' }}>DILEWATI</span>
+                    <span style={{ background: '#ef4444', color: '#fff', padding: '8px 16px', borderRadius: 20, fontWeight: 700, fontSize: '0.85rem' }}>{t.previewSkipped || "DILEWATI"}</span>
                   </div>
                 );
               }
@@ -534,12 +538,13 @@ export const PdfPreview: React.FC<PdfPreviewProps> = ({
             })()}
 
             {signatureConfig && signatureConfig.pageIndex === (pageNum - 1) && onSignatureUpdate && (
-              <DraggableSignature config={signatureConfig} onUpdate={onSignatureUpdate} />
+              <DraggableSignature config={signatureConfig} onUpdate={onSignatureUpdate} t={t} />
             )}
 
             {redactConfig && redactConfig.boxes && redactConfig.boxes[pageNum - 1]?.map((box: any) => (
               <DraggableRedactBox 
                 key={box.id} 
+                t={t}
                 config={box} 
                 mode={redactConfig.mode || 'black'}
                 showLock={redactConfig.showLock || false}

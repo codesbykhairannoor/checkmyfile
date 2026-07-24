@@ -125,7 +125,7 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
           />
 
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 4 }}>
-            <button onClick={handleDownloadClick} className="btn-primary" style={{ flex: '1 1 min-content', background: '#10b981', padding: '10px', fontSize: '0.9rem', justifyContent: 'center', whiteSpace: 'nowrap' }}>
+            <button onClick={handleDownloadClick} className="btn-primary" style={{ flex: '1 1 min-content', padding: '10px', fontSize: '0.9rem', justifyContent: 'center', whiteSpace: 'nowrap' }}>
               <Download size={16} />
               <span>{downloadLabel || t.downloadBtn}</span>
             </button>

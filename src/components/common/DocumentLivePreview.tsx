@@ -1,3 +1,4 @@
+import { getUiTranslations } from '../../i18n/translations';
 import React, { useState, useEffect, useRef } from 'react';
 import * as pdfjsLib from 'pdfjs-dist';
 import { renderAsync } from 'docx-preview';
@@ -69,6 +70,8 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
   setSelectedEditId,
   hideSidebar = false,
 }) => {
+  const currentLang = _currentLang;
+  const t = getUiTranslations(currentLang);
   const [pageNumber, setPageNumber] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>(1);
   const [zoomScale, setZoomScale] = useState<number>(1.0);
@@ -492,7 +495,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
 
           {/* ===== PDF INFINITE SCROLL RENDER AREA ===== */}
           {isPdf && !isLoadingPreview && pdfDoc && (
-            <PdfPreview
+            <PdfPreview currentLang={currentLang}
               pdfDoc={pdfDoc}
               isLoadingPreview={isLoadingPreview}
               watermarkConfig={watermarkConfig}
@@ -654,7 +657,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
                 </div>
                 <div>
-                  <h3 style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-display)', margin: 0 }}>Navigasi Dokumen</h3>
+                  <h3 style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-display)', margin: 0 }}>{t.previewNavDoc || "Navigasi Dokumen"}</h3>
                   <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: 0, marginTop: 4 }}>Pilih halaman untuk melompat</p>
                 </div>
               </div>
@@ -706,7 +709,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
                       </div>
                       <div>
-                        <h3 style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-display)', margin: 0 }}>Galeri Gambar</h3>
+                        <h3 style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-display)', margin: 0 }}>{t.previewImgGallery || "Galeri Gambar"}</h3>
                         <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: 0, marginTop: 4 }}>Pratinjau hasil ekstraksi gambar</p>
                       </div>
                     </div>
@@ -753,7 +756,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
                       <Presentation size={20} />
                     </div>
                     <div>
-                      <h3 style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-display)', margin: 0 }}>Rincian Berkas</h3>
+                      <h3 style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-display)', margin: 0 }}>{t.previewFileDetails || "Rincian Berkas"}</h3>
                       <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: 0, marginTop: 4 }}>Informasi presentasi</p>
                     </div>
                   </div>
@@ -788,7 +791,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
                       <TableProperties size={20} />
                     </div>
                     <div>
-                      <h3 style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-display)', margin: 0 }}>Rincian Berkas</h3>
+                      <h3 style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-display)', margin: 0 }}>{t.previewFileDetails || "Rincian Berkas"}</h3>
                       <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: 0, marginTop: 4 }}>Informasi lembar sebar (Spreadsheet)</p>
                     </div>
                   </div>
@@ -823,26 +826,26 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
                       <FileText size={20} />
                     </div>
                     <div>
-                      <h3 style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-display)', margin: 0 }}>Rincian Ekstraksi</h3>
+                      <h3 style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-display)', margin: 0 }}>{t.previewExtractDetails || "Rincian Ekstraksi"}</h3>
                       <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: 0, marginTop: 4 }}>Informasi hasil OCR</p>
                     </div>
                   </div>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 12, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                      <span style={{ fontWeight: 600 }}>Tipe Dokumen:</span>
-                      <span>Plain Text (.txt)</span>
+                      <span style={{ fontWeight: 600 }}>{t.previewDocType || "Tipe Dokumen"}:</span>
+                      <span>{t.previewPlainTxt || "Plain Text (.txt)"}</span>
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                      <span style={{ fontWeight: 600 }}>Encoding:</span>
+                      <span style={{ fontWeight: 600 }}>{t.previewEncoding || "Encoding"}:</span>
                       <span>UTF-8</span>
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                      <span style={{ fontWeight: 600 }}>Ukuran Teks:</span>
+                      <span style={{ fontWeight: 600 }}>{t.previewTextSize || "Ukuran Teks"}:</span>
                       <span>{activeFile?.size > 1024 ? (activeFile.size / 1024).toFixed(2) + ' KB' : (activeFile?.size || 0) + ' Bytes'}</span>
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                      <span style={{ fontWeight: 600 }}>Akurasi Mesin:</span>
-                      <span style={{ color: '#10b981', fontWeight: 700 }}>Tinggi (Lokal)</span>
+                      <span style={{ fontWeight: 600 }}>{t.previewEngineAccuracy || "Akurasi Mesin"}:</span>
+                      <span style={{ color: '#10b981', fontWeight: 700 }}>{t.previewHighLocal || "Tinggi (Lokal)"}</span>
                     </div>
                   </div>
                 </div>
