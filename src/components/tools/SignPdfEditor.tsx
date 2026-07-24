@@ -128,7 +128,7 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
     try {
       if (certMode === 'auto') {
         const password = 'auto_generated_password';
-        const finalSignerName = signerName.trim() || 'CheckMyFile User';
+        const finalSignerName = signerName.trim() || 'HandleMyFile User';
         const p12Bytes = await generateSelfSignedP12(password, finalSignerName);
         setSignatureConfig({
           ...signatureConfig,

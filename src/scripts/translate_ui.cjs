@@ -268,7 +268,8 @@ const baseUI = {
   "1 1 calc(50% - 16px)": "1 1 calc(50% - 16px)",
   "Transparansi (": "Transparansi (",
   "Ukuran (": "Ukuran (",
-  "Rotasi (": "Rotasi ("
+  "Rotasi (": "Rotasi (",
+  "Untuk memastikan akurasi konversi warna di peramban, dokumen Anda akan diubah menjadi gambar statis (raster) beresolusi tinggi.\n                Ini berarti teks dalam file hasil tidak akan bisa di-blok (copy/paste), tetapi sangat cocok untuk kebutuhan cetak (printing) yang hemat tinta.": "Untuk memastikan akurasi konversi warna di peramban, dokumen Anda akan diubah menjadi gambar statis (raster) beresolusi tinggi.\n                Ini berarti teks dalam file hasil tidak akan bisa di-blok (copy/paste), tetapi sangat cocok untuk kebutuhan cetak (printing) yang hemat tinta."
 };
 
 const keys = Object.keys(baseUI);

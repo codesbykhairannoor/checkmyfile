@@ -8,7 +8,7 @@ import forge from 'node-forge';
  * @param commonName The name to appear on the certificate (e.g. "Anonymous User")
  * @returns ArrayBuffer containing the .p12/.pfx data
  */
-export async function generateSelfSignedP12(password: string, commonName: string = 'CheckMyFile User'): Promise<ArrayBuffer> {
+export async function generateSelfSignedP12(password: string, commonName: string = 'HandleMyFile User'): Promise<ArrayBuffer> {
   return new Promise((resolve, reject) => {
     try {
       // 1. Generate RSA Key Pair (2048-bit is standard)

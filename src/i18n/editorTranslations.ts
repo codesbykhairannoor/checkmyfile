@@ -1,6 +1,11 @@
 // Auto-generated Editor Translations
 export const editorTranslations: Record<string, Record<string, string>> = {
   "id": {
+    "Sertifikat Otomatis": "Sertifikat Otomatis",
+    "Nama Penandatangan (Opsional)": "Nama Penandatangan (Opsional)",
+    "Gunakan P12 / PFX Pribadi": "Gunakan P12 / PFX Pribadi",
+    "Ukuran Tanda Tangan": "Ukuran Tanda Tangan",
+    "Klik halaman di Live Preview untuk memindahkan tanda tangan, lalu geser (drag) untuk menyesuaikan posisi.": "Klik halaman di Live Preview untuk memindahkan tanda tangan, lalu geser (drag) untuk menyesuaikan posisi.",
     "Interactive Compress": "Interactive Compress",
     "Pilih tingkat kompresi. Live Preview akan mensimulasikan penurunan kualitas gambar.": "Choose compression level. Live Preview will simulate image quality reduction.",
     "Extreme (Kecil)": "Extreme (Smallest)",
@@ -265,6 +270,11 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "Rotasi (": "Rotasi ("
   },
   "en": {
+    "Sertifikat Otomatis": "Automatic Certificate",
+    "Nama Penandatangan (Opsional)": "Signer Name (Optional)",
+    "Gunakan P12 / PFX Pribadi": "Use Custom P12 / PFX",
+    "Ukuran Tanda Tangan": "Signature Size",
+    "Klik halaman di Live Preview untuk memindahkan tanda tangan, lalu geser (drag) untuk menyesuaikan posisi.": "Click on the page in Live Preview to place the signature, then drag to adjust.",
     "Interactive Compress": "Interactive Compress",
     "Pilih tingkat kompresi. Live Preview akan mensimulasikan penurunan kualitas gambar.": "Pilih tingkat kompresi. Live Preview akan mensimulasikan penurunan kualitas gambar.",
     "Extreme (Kecil)": "Extreme (Kecil)",
