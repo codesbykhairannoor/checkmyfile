@@ -199,7 +199,7 @@ export function useDocumentProcessor() {
         resultBytes = await compressEngine.compressPdf(files[0], options.compressQuality, (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_compressed.pdf`;
       } else if (toolId === 'pdf-to-word') {
-        resultBytes = await pdfEngine.convertPdfToWord(files[0], (p) => setProgress(p));
+        resultBytes = await officeEngine.convertPdfToWord(files[0], (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}.docx`;
         setResultPreviewFiles([files[0]]);
       } else if (toolId === 'pdf-to-ppt') {
