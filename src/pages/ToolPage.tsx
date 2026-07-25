@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { getLocalizedSeo, type ToolDefinition } from '../catalog/toolsCatalog';
+import { trackFileDownloaded } from '../lib/analytics';
 import { SeoHead } from '../components/seo/SeoHead';
 import { RelatedTools } from '../components/seo/RelatedTools';
 import { FileDropzone } from '../components/common/FileDropzone';
@@ -207,6 +208,16 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
+    // Track file download event (key conversion signal for GA4)
+    const finalName = customName || downloadFilename;
+    const ext = finalName.split('.').pop() || 'unknown';
+    trackFileDownloaded({
+      tool_id: tool.id,
+      filename: finalName,
+      file_type: ext,
+      file_size_kb: resultFile ? resultFile.size / 1024 : 0,
+      language: currentLang,
+    });
   };
 
   const handleReset = () => {

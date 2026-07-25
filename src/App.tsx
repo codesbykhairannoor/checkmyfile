@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/layout/Navbar';
+import { trackToolPageViewed, trackPageNavigated, trackLanguageSwitched } from './lib/analytics';
 import { Footer } from './components/layout/Footer';
 import { HomePage } from './pages/HomePage';
 import { ToolPage } from './pages/ToolPage';
@@ -89,6 +90,8 @@ export const App: React.FC = () => {
   }, [isLightMode]);
 
   const handleSelectLang = (code: string) => {
+    // Track language switch (GEO signal)
+    trackLanguageSwitched({ from_language: currentLang, to_language: code });
     setCurrentLang(code);
     let newPath = `/${code}`;
     if (activeTool) {
@@ -105,6 +108,13 @@ export const App: React.FC = () => {
     const toolSlug = tool.slugs[currentLang] || tool.id;
     window.history.pushState({}, '', `/${currentLang}/${toolSlug}`);
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Track tool page view (SEO engagement signal)
+    trackToolPageViewed({
+      tool_id: tool.id,
+      tool_category: tool.category,
+      language: currentLang,
+      slug: toolSlug,
+    });
   };
 
   const handleNavigateHome = () => {
@@ -119,6 +129,8 @@ export const App: React.FC = () => {
     setActivePage(pageSlug);
     window.history.pushState({}, '', `/${currentLang}/${pageSlug}`);
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Track static page navigation (SEO signal)
+    trackPageNavigated({ page_slug: pageSlug, language: currentLang });
   };
 
   return (

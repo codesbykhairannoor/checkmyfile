@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { getUiTranslations } from '../i18n/translations';
+import { trackToolStarted, trackToolCompleted, trackToolFailed, getEngineTypeFromToolId } from '../lib/analytics';
 
 interface ProcessorOptions {
   files: File[];
@@ -60,6 +61,19 @@ export function useDocumentProcessor() {
     setProcessorMetadata(null);
     setOcrTextResult(null);
     setStatusText(t.processingText);
+
+    // Track analytics: tool started
+    const processingStartTime = performance.now();
+    const totalFileSizeKb = files.reduce((acc, f) => acc + f.size / 1024, 0);
+    const engineType = getEngineTypeFromToolId(toolId, toolCategory);
+    trackToolStarted({
+      tool_id: toolId,
+      tool_category: toolCategory,
+      engine_type: engineType,
+      file_count: files.length,
+      file_size_kb: totalFileSizeKb,
+      language: currentLang,
+    });
 
     try {
       let resultBytes: Uint8Array | null = null;
@@ -237,10 +251,30 @@ export function useDocumentProcessor() {
         setDownloadBlobUrl(url);
         setDownloadFilename(outName);
         setIsCompleted(true);
+
+        // Track analytics: tool completed successfully
+        const durationMs = performance.now() - processingStartTime;
+        const outputSizeKb = resultBytes ? resultBytes.byteLength / 1024 : 0;
+        trackToolCompleted({
+          tool_id: toolId,
+          tool_category: toolCategory,
+          engine_type: engineType,
+          duration_ms: durationMs,
+          output_size_kb: outputSizeKb,
+          language: currentLang,
+        });
       }
     } catch (err: any) {
       console.error(err);
-      setErrorMessage(err?.message || 'Error occurred during processing. Please verify file format.');
+      const errMsg = err?.message || 'Error occurred during processing. Please verify file format.';
+      setErrorMessage(errMsg);
+      // Track analytics: tool failed
+      trackToolFailed({
+        tool_id: toolId,
+        tool_category: toolCategory,
+        error_message: errMsg,
+        language: currentLang,
+      });
     } finally {
       setIsProcessing(false);
     }
