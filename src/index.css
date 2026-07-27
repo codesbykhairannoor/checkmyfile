@@ -436,6 +436,11 @@ button, input, select, textarea {
     margin-top: 24px;
     overflow: visible !important;
   }
+  
+  .mobile-scroll-panel {
+    max-height: 50vh !important;
+    overflow-y: auto !important;
+  }
 
   /* Footer adjustments */
   footer {

@@ -626,7 +626,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
           <aside className="tool-workspace-right mobile-full-width" style={{ flex: 1, minWidth: 350, minHeight: 0, display: 'flex', flexDirection: 'column', paddingBottom: 24 }}>
             {isPdf && pdfDoc && (
             <div
-              className="glass-panel"
+              className="glass-panel mobile-scroll-panel"
               style={{
                 width: '100%',
                 flex: 1,
@@ -678,7 +678,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
 
             {isImage && files.length > 0 && (
             <div
-              className="glass-panel"
+              className="glass-panel mobile-scroll-panel"
               style={{
                 width: '100%',
                 flex: 1,
