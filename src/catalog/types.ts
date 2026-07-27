@@ -20,6 +20,8 @@ export interface ToolDefinition {
   seo: Record<string, LocalizedSeoData>;
 }
 
+import { toolSlugs } from '../i18n/slugTranslations';
+
 export const generateSlugsForId = (id: string, overrides: Record<string, string> = {}): Record<string, string> => {
   const codes = [
     'en', 'id', 'es', 'fr', 'de', 'ja', 'pt', 'ru', 'zh', 'ar',
@@ -28,7 +30,7 @@ export const generateSlugsForId = (id: string, overrides: Record<string, string>
   ];
   const result: Record<string, string> = {};
   for (const code of codes) {
-    result[code] = overrides[code] || id;
+    result[code] = overrides[code] || toolSlugs[id]?.[code] || id;
   }
   return result;
 };
