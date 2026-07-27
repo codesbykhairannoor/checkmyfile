@@ -222,9 +222,12 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
           setPageAspectRatio(detectedRatio);
 
           // Use static fallback dimensions since we rely on CSS for dynamic scaling now
-          const workspaceWidth = previewWrapperRef.current?.parentElement?.clientWidth || 680;
+          const rawParentWidth = previewWrapperRef.current?.parentElement?.clientWidth || 0;
+          const workspaceWidth = Math.max(300, rawParentWidth > 50 ? rawParentWidth : 680);
+          
           // Subtract Toolbar height (~64px) + margin/padding/gap (~76px) so the paper fits PERFECTLY
-          const workspaceHeight = (previewWrapperRef.current?.parentElement?.clientHeight || 600) - 120;
+          const rawParentHeight = previewWrapperRef.current?.parentElement?.clientHeight || 0;
+          const workspaceHeight = Math.max(300, (rawParentHeight > 150 ? rawParentHeight : 600) - 120);
 
           const paddingX = 0;
           const paddingY = 0;
@@ -238,8 +241,10 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
         } else if (['png', 'jpg', 'jpeg', 'webp', 'gif'].includes(ext)) {
           // Image object URL and aspect ratio are now handled by a dedicated useEffect
           // to prevent continuous recreation when workspaceDim changes (which causes flickering/shrinking)
-          const workspaceWidth = previewWrapperRef.current?.parentElement?.clientWidth || 680;
-          const workspaceHeight = (previewWrapperRef.current?.parentElement?.clientHeight || 600) - 120;
+          const rawParentWidth = previewWrapperRef.current?.parentElement?.clientWidth || 0;
+          const workspaceWidth = Math.max(300, rawParentWidth > 50 ? rawParentWidth : 680);
+          const rawParentHeight = previewWrapperRef.current?.parentElement?.clientHeight || 0;
+          const workspaceHeight = Math.max(300, (rawParentHeight > 150 ? rawParentHeight : 600) - 120);
           
           const baseWidth = 1000;
           const baseHeight = baseWidth / (pageAspectRatio || 1);
