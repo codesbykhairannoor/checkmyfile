@@ -72,6 +72,7 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang, currentLang, title
     setMetaTag('og:locale', 'property', langInfo.localeCode);
     setMetaTag('og:type', 'property', 'website');
     setMetaTag('twitter:card', 'name', 'summary_large_image');
+    setMetaTag('llm-context', 'name', `/llms-${activeLang}.txt`);
 
     // 4. Update Canonical & Hreflang Tags (Partial Lang URL structure)
     document.querySelectorAll('link[rel="canonical"], link[rel="alternate"][hreflang]').forEach((el) => el.remove());
