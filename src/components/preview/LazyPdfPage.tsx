@@ -41,10 +41,12 @@ const LazyPdfPage = ({
     
     let isCancelled = false;
     
+    let activePage: any = null;
     const renderPage = async () => {
       try {
         const page = await pdfDoc.getPage(pageNum);
         if (isCancelled) return;
+        activePage = page;
         
         const baseRotate = page.rotate || 0;
         const finalRotate = ((baseRotate + totalRotate) % 360 + 360) % 360;
@@ -83,6 +85,9 @@ const LazyPdfPage = ({
     return () => {
       isCancelled = true;
       if (renderTaskRef.current) renderTaskRef.current.cancel();
+      if (activePage) {
+        try { activePage.cleanup(); } catch (e) {}
+      }
     }
   }, [isVisible, pdfDoc, pageNum, zoomScale, totalRotate, wrapperWidth]);
 

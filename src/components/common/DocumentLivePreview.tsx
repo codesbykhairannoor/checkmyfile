@@ -163,19 +163,24 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
     const ext = activeFile.name.split('.').pop()?.toLowerCase() || '';
     if (ext === 'pdf') {
       let isCancelled = false;
+      let currentPdf: any = null;
       const loadPdf = async () => {
         try {
           const arrayBuffer = await activeFile.arrayBuffer();
           if (isCancelled) return;
           
-          // Add 10-second timeout to prevent silent worker hangs on massive generated PDFs
+          // Add 30-second timeout to prevent silent worker hangs on massive generated PDFs
           const pdfjsLib = await import('pdfjs-dist');
           pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorkerUrl;
           const pdfPromise = pdfjsLib.getDocument({ data: new Uint8Array(arrayBuffer) }).promise;
-          const timeoutPromise = new Promise((_, reject) => setTimeout(() => reject(new Error('PDF parsing timeout')), 10000));
+          const timeoutPromise = new Promise((_, reject) => setTimeout(() => reject(new Error('PDF parsing timeout')), 30000));
           const pdf = await Promise.race([pdfPromise, timeoutPromise]) as any;
           
-          if (isCancelled) return;
+          if (isCancelled) {
+            pdf.destroy();
+            return;
+          }
+          currentPdf = pdf;
           setPdfDoc(pdf);
           setTotalPages(pdf.numPages);
         } catch (err: any) {
@@ -190,6 +195,9 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
       loadPdf();
       return () => {
         isCancelled = true;
+        if (currentPdf) {
+          try { currentPdf.destroy(); } catch(e) {}
+        }
       };
     } else {
       setPdfDoc(null);
@@ -236,7 +244,8 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
           const scaleX = Math.max(0.1, (workspaceWidth - paddingX) / baseViewport.width);
           const scaleY = Math.max(0.1, (workspaceHeight - paddingY) / baseViewport.height);
 
-          const fitScale = Math.min(scaleX, scaleY);
+          const isMobile = window.innerWidth <= 768;
+          const fitScale = (isMobile) ? scaleX : Math.min(scaleX, scaleY);
           const renderScale = fitScale * zoomScale;
           setPixelWidth(baseViewport.width * renderScale);
         } else if (['png', 'jpg', 'jpeg', 'webp', 'gif'].includes(ext)) {
