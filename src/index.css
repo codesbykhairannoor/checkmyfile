@@ -408,9 +408,7 @@ button, input, select, textarea {
   }
 
   /* Adjust typography */
-  h1 {
-    font-size: clamp(2rem, 8vw, 3rem) !important;
-  }
+  /* h1 font-size is managed inline across ToolPages using strict user-defined clamp() */
   
   /* Tool Page Specific Overrides */
   .tool-workspace-container {
