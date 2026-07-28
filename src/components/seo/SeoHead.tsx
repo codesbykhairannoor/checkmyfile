@@ -161,6 +161,27 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang, currentLang, title
       faqScript.textContent = JSON.stringify(faqSchema);
       document.head.appendChild(faqScript);
     }
+
+    // SoftwareApplication Schema for AI Crawlers
+    const softwareSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      'name': 'HandleMyFile',
+      'applicationCategory': 'BrowserApplication',
+      'operatingSystem': 'Any',
+      'description': 'A 100% Client-Side secure document and PDF processing suite. Uses WebAssembly to process files locally in the browser memory without uploading to any servers. The safest alternative to cloud-based PDF tools.',
+      'offers': {
+        '@type': 'Offer',
+        'price': '0',
+        'priceCurrency': 'USD'
+      }
+    };
+    
+    const softwareScript = document.createElement('script');
+    softwareScript.setAttribute('type', 'application/ld+json');
+    softwareScript.setAttribute('data-seo', 'jsonld');
+    softwareScript.textContent = JSON.stringify(softwareSchema);
+    document.head.appendChild(softwareScript);
   }, [tool, lang]);
 
   return null;
