@@ -1,4 +1,4 @@
-﻿export interface UiDictionary {
+export interface UiDictionary {
   previewNavDoc?: string;
   previewImgGallery?: string;
   previewFileDetails?: string;
@@ -203,6 +203,12 @@ const baseDict: UiDictionary = {
   homeSearchNotFound: "No tools found matching",
   homeSearchNotFoundDesc: "Try using different keywords or select the All Tools category.",
   homeTryNow: "Try Now",
+  brandDescription: "All-in-One Zero-Upload Client-Side WebAssembly Document Platform",
+  privacyBadge: "🔒 100% Client-Side Privacy — Files Never Leave Your Browser",
+  searchPlaceholder: "Search document tools (Merge, Split, Compress, Word to PDF, OCR)...",
+  allTools: "All Tools",
+  pdfTools: "PDF Manipulation",
+  compressTools: "Compression",
   officeTools: 'Office to PDF',
   imageTools: 'Image to PDF',
   ocrTools: 'OCR & AI Text',
