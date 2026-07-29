@@ -16,8 +16,45 @@ import { getToolBySlugAndLang, type ToolDefinition } from './catalog/toolsCatalo
 import { isValidLanguageCode } from './i18n/languages';
 
 export const App: React.FC = () => {
-  const [currentLang, setCurrentLang] = useState<string>('en');
-  const [activeTool, setActiveTool] = useState<ToolDefinition | null>(null);
+  const parseUrlState = () => {
+    const pathname = typeof window !== 'undefined' ? window.location.pathname.replace(/^\/+/, '') : '';
+    const segments = pathname.split('/').filter(Boolean);
+
+    let detectedLang = 'en';
+    let slug = '';
+
+    if (segments.length > 0 && isValidLanguageCode(segments[0])) {
+      detectedLang = segments[0];
+      slug = segments[1] || '';
+    } else if (segments.length > 0) {
+      slug = segments[0];
+    }
+    
+    let activePageVal: string | null = null;
+    let activeToolVal: ToolDefinition | null = null;
+
+    if (slug) {
+      if (['about', 'privacy', 'terms', 'pricing', 'security', 'use-cases', 'compare', 'languages'].includes(slug)) {
+        activePageVal = slug;
+      } else {
+        const tool = getToolBySlugAndLang(slug, detectedLang);
+        if (!tool) {
+          const disabledSlugs = ['pdf-to-word', 'pdf-ke-word', 'pdf-a-word', 'pdf-to-docx', 'pdf-ke-docx'];
+          if (disabledSlugs.includes(slug.toLowerCase())) {
+             // Handle disabled slug logic in useEffect if needed, or ignore for initial state
+          }
+        }
+        activeToolVal = tool || null;
+      }
+    }
+    return { detectedLang, activePageVal, activeToolVal, slug };
+  };
+
+  const initialState = parseUrlState();
+  const [currentLang, setCurrentLang] = useState<string>(initialState.detectedLang);
+  const [activeTool, setActiveTool] = useState<ToolDefinition | null>(initialState.activeToolVal);
+  const [activePage, setActivePage] = useState<string | null>(initialState.activePageVal);
+
   const [isLightMode, setIsLightMode] = useState<boolean>(() => {
     const saved = localStorage.getItem('blitzdocs-theme');
     if (saved === 'light') return true;
@@ -25,7 +62,6 @@ export const App: React.FC = () => {
     return window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
   });
   const [isEditorActive, setIsEditorActive] = useState(false);
-  const [activePage, setActivePage] = useState<string | null>(null);
 
   // Parse URL on initial mount and hash/pathname changes
   useEffect(() => {

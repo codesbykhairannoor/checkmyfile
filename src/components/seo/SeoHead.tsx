@@ -171,6 +171,10 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang, currentLang, title
       'applicationCategory': 'BrowserApplication',
       'operatingSystem': 'Any',
       'description': 'A 100% Client-Side secure document and PDF processing suite. Uses WebAssembly to process files locally in the browser memory without uploading to any servers. The safest alternative to cloud-based PDF tools.',
+      'sameAs': [
+        'https://en.wikipedia.org/wiki/WebAssembly',
+        'https://en.wikipedia.org/wiki/PDF'
+      ],
       'offers': {
         '@type': 'Offer',
         'price': '0',
