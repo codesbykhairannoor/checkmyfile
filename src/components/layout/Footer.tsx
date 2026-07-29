@@ -1,7 +1,7 @@
 import React from 'react';
 import { getUiTranslations } from '../../i18n/translations';
-import { TOOLS_CATALOG, type ToolDefinition } from '../../catalog/toolsCatalog';
-import { ShieldCheck, Heart, Mail } from 'lucide-react';
+import { TOOLS_CATALOG, getLocalizedSeo, type ToolDefinition } from '../../catalog/toolsCatalog';
+import { ShieldCheck, Mail } from 'lucide-react';
 
 interface FooterProps {
   currentLang: string;
@@ -24,7 +24,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool, onNav
     return (
       <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 14, padding: 0, margin: 0 }}>
         {tools.map((tool) => {
-          const displayTitle = tool.seo?.[currentLang]?.title || tool.seo?.['en']?.title || tool.id;
+          const displayTitle = getLocalizedSeo(tool, currentLang).title || tool.id;
           return (
             <li key={tool.id}>
               <button
@@ -113,7 +113,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool, onNav
             </span>
           </div>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: 1.7, marginTop: 8, paddingRight: 24 }}>
-            The all-in-one platform to handle your documents securely. Edit, convert, and sign PDFs with 100% client-side privacy. Fast, free, and strictly confidential.
+            {t.brandDescription || 'The all-in-one platform to handle your documents securely. Edit, convert, and sign PDFs with 100% client-side privacy. Fast, free, and strictly confidential.'}
           </p>
           <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginTop: 12 }}>
             <button 
@@ -126,26 +126,26 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool, onNav
               onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
               onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
             >
-              <Mail size={16} /> Contact Support
+              <Mail size={16} /> {t.navSupportCenter || 'Contact Support'}
             </button>
           </div>
         </div>
 
         {/* Column 2: Popular Tools */}
         <div>
-          <h5 style={{ fontWeight: 800, marginBottom: 24, color: 'var(--text-main)', fontSize: '0.95rem', letterSpacing: '0.05em', textTransform: 'uppercase' }}>Popular Tools</h5>
+          <h5 style={{ fontWeight: 800, marginBottom: 24, color: 'var(--text-main)', fontSize: '0.95rem', letterSpacing: '0.05em', textTransform: 'uppercase' }}>{t.navAllPdfTools || 'Popular Tools'}</h5>
           {renderToolList(popularTools)}
         </div>
 
         {/* Column 3: Convert Tools */}
         <div>
-          <h5 style={{ fontWeight: 800, marginBottom: 24, color: 'var(--text-main)', fontSize: '0.95rem', letterSpacing: '0.05em', textTransform: 'uppercase' }}>Convert & OCR</h5>
+          <h5 style={{ fontWeight: 800, marginBottom: 24, color: 'var(--text-main)', fontSize: '0.95rem', letterSpacing: '0.05em', textTransform: 'uppercase' }}>{t.ocrTools || 'Convert & OCR'}</h5>
           {renderToolList(convertTools)}
         </div>
 
         {/* Column 4: Resources & Company */}
         <div>
-          <h5 style={{ fontWeight: 800, marginBottom: 24, color: 'var(--text-main)', fontSize: '0.95rem', letterSpacing: '0.05em', textTransform: 'uppercase' }}>Company</h5>
+          <h5 style={{ fontWeight: 800, marginBottom: 24, color: 'var(--text-main)', fontSize: '0.95rem', letterSpacing: '0.05em', textTransform: 'uppercase' }}>{t.footerCompany || 'Company'}</h5>
           <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 14, padding: 0, margin: 0 }}>
             {renderLinkItem(t.footerAbout || 'About Us', 'about')}
             {renderLinkItem(t.footerPrivacy || 'Privacy Policy', 'privacy')}
@@ -176,12 +176,12 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool, onNav
           <div style={{ display: 'flex', alignItems: 'center', gap: 24, fontWeight: 600 }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, color: 'var(--text-main)' }}>
               <ShieldCheck size={18} style={{ color: 'var(--brand-primary)' }} />
-              <span>{t.privacyBadge?.replace(/[^a-zA-Z0-9 %-]/g, '')?.trim() || '100% Client-Side Privacy'}</span>
+              <span>{t.privacyBadge?.replace('🔒 ', '')?.trim() || '100% Client-Side Privacy'}</span>
             </div>
           </div>
           
           <div style={{ fontWeight: 500, display: 'flex', alignItems: 'center', gap: 6 }}>
-            &copy; {new Date().getFullYear()} HandleMyFile Platform. Made with <Heart size={14} style={{ color: '#ef4444', fill: '#ef4444' }} />
+            &copy; {new Date().getFullYear()} HandleMyFile Platform. {t.footerRights || 'All rights reserved.'}
           </div>
         </div>
       </div>
