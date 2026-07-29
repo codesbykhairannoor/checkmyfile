@@ -40,13 +40,7 @@ export const App: React.FC = () => {
         detectedLang = segments[0];
         slug = segments[1] || '';
       } else if (segments.length > 0) {
-        // Fallback to auto detect or default 'en'
-        const browserLang = (navigator.language || 'en').split('-')[0];
-        detectedLang = isValidLanguageCode(browserLang) ? browserLang : 'en';
         slug = segments[0];
-      } else {
-        const browserLang = (navigator.language || 'en').split('-')[0];
-        detectedLang = isValidLanguageCode(browserLang) ? browserLang : 'en';
       }
 
       setCurrentLang(detectedLang);
