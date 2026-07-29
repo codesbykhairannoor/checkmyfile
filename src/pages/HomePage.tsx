@@ -99,7 +99,7 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
           }}>
             <Icons.ShieldCheck size={18} style={{ color: 'var(--success-color)' }} />
             <span>
-              <strong>Security Architecture:</strong> 100% Client-Side Processing • 0 Bytes Uploaded • Powered by WebAssembly (WASM).
+              {t.homeSecurityBadge || 'Security Architecture: 100% Client-Side Processing • 0 Bytes Uploaded • Powered by WebAssembly (WASM).'}
             </span>
           </div>
           {/* Search Bar */}

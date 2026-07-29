@@ -61,6 +61,7 @@ export interface UiDictionary {
   homeHeroBadge?: string;
   homeHeroTitle?: string;
   homeHeroSubtitle?: string;
+  homeSecurityBadge?: string;
   homeSearchNotFound?: string;
   homeSearchNotFoundDesc?: string;
   homeTryNow?: string;
@@ -175,6 +176,7 @@ const baseDict: UiDictionary = {
   homeHeroBadge: "100% Client-Side Processing",
   homeHeroTitle: "All Document Tools in One Place",
   homeHeroSubtitle: "Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly. Free, no size limits, and highly secure.",
+  homeSecurityBadge: "Security Architecture: 100% Client-Side Processing • 0 Bytes Uploaded • Powered by WebAssembly (WASM).",
   homeSearchNotFound: "No tools found matching",
   homeSearchNotFoundDesc: "Try using different keywords or select the All Tools category.",
   homeTryNow: "Try Now",
@@ -296,8 +298,9 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
   en: baseDict,
   id: {
     homeHeroBadge: "100% Pemrosesan Sisi Klien",
-    homeHeroTitle: "Semua Alat Dokumen dalam Satu Tempat",
-    homeHeroSubtitle: "Gabungkan, pisahkan, kompres, konversi file Office, dan OCR langsung di browser Anda. 100% diproses offline melalui WebAssembly. Gratis, tanpa batas ukuran, dan sangat aman.",
+    homeHeroTitle: "Semua Alat Dokumen di Satu Tempat",
+    homeSecurityBadge: "Arsitektur Keamanan: 100% Pemrosesan Sisi Klien • 0 Byte Diunggah • Didukung oleh WebAssembly (WASM).",
+    homeHeroSubtitle: "Gabungkan, pisahkan, kompres, konversikan file Office, dan OCR langsung di browser Anda. 100% diproses offline melalui WebAssembly. Gratis, tanpa batasan ukuran, dan sangat aman.",
     homeSearchNotFound: "Tidak ada alat yang cocok",
     homeSearchNotFoundDesc: "Coba gunakan kata kunci berbeda atau pilih kategori Semua Alat.",
     homeTryNow: "Coba Sekarang",
@@ -456,11 +459,11 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     footerRights: 'Hak Cipta Dilindungi. Digerakkan oleh Arsitektur Klien-Sisi WebAssembly.',
     privacyTitle: 'Keamanan Mutlak Tanpa Unggah',
     privacyText: 'Sesuai standar kepatuhan hukum perusahaan (GDPR/HIPAA). Tanpa penyimpanan server, tanpa pencatatan data, dan tanpa batasan kuota buatan.',
-  },
-  es: {
+  },es: {
     homeHeroBadge: "Procesamiento 100% del lado del cliente",
     homeHeroTitle: "Todas las herramientas de documentos en un solo lugar",
-    homeHeroSubtitle: "Combine, divida, comprima, convierta archivos de Office y OCR directamente en su navegador. Procesado 100% sin conexión a través de WebAssembly. Gratis, sin límites de tamaño y altamente seguro.",
+    homeSecurityBadge: "Arquitectura de seguridad: 100% procesamiento del lado del cliente • 0 bytes cargados • Desarrollado por WebAssembly (WASM).",
+    homeHeroSubtitle: "Fusione, divida, comprima, convierta archivos de Office y OCR directamente en su navegador. 100% procesado fuera de línea a través de WebAssembly. Gratis, sin límites de tamaño y muy seguro.",
     homeSearchNotFound: "No se encontraron herramientas que coincidan",
     homeSearchNotFoundDesc: "Intente usar diferentes palabras clave o seleccione la categoría Todas las herramientas.",
     homeTryNow: "Probar ahora",
@@ -619,11 +622,11 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     footerRights: 'Todos los derechos reservados. Impulsado por WebAssembly en el cliente.',
     privacyTitle: 'Seguridad Absoluta sin Subidas',
     privacyText: 'Cumple con estrictos requisitos de privacidad corporativa. Sin almacenamiento en servidores ni límites artificiales.',
-  },
-  fr: {
+  },fr: {
     homeHeroBadge: "Traitement 100 % côté client",
-    homeHeroTitle: "Tous les outils documentaires en un seul endroit",
-    homeHeroSubtitle: "Fusionnez, divisez, compressez, convertissez des fichiers Office et effectuez une reconnaissance optique de caractères directement dans votre navigateur. Traitement 100 % hors ligne via WebAssembly. Gratuit, sans limite de taille et hautement sécurisé.",
+    homeHeroTitle: "Tous les outils de documentation en un seul endroit",
+    homeSecurityBadge: "Architecture de sécurité : traitement 100 % côté client • 0 octet téléchargé • Propulsé par WebAssembly (WASM).",
+    homeHeroSubtitle: "Fusionnez, divisez, compressez, convertissez des fichiers Office et OCR directement dans votre navigateur. 100 % traité hors ligne via WebAssembly. Gratuit, sans limite de taille et hautement sécurisé.",
     homeSearchNotFound: "Aucun outil correspondant trouvé",
     homeSearchNotFoundDesc: "Essayez d'utiliser des mots-clés différents ou sélectionnez la catégorie Tous les outils.",
     homeTryNow: "Essayer maintenant",
@@ -782,11 +785,11 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     footerRights: 'Tous droits réservés. Propulsé par l\'architecture WebAssembly Côté Client.',
     privacyTitle: 'Sécurité Absolue Sans Upload',
     privacyText: 'Conforme aux normes de confidentialité en entreprise (RGPD). Aucun stockage serveur, aucune collecte de données.',
-  },
-  de: {
+  },de: {
     homeHeroBadge: "100 % clientseitige Verarbeitung",
     homeHeroTitle: "Alle Dokumententools an einem Ort",
-    homeHeroSubtitle: "Fügen Sie Office-Dateien zusammen, teilen, komprimieren, konvertieren Sie sie und führen Sie OCR direkt in Ihrem Browser durch. 100 % Offline-Verarbeitung über WebAssembly. Kostenlos, ohne Größenbeschränkungen und hochgradig sicher.",
+    homeSecurityBadge: "Sicherheitsarchitektur: 100 % clientseitige Verarbeitung • 0 Bytes hochgeladen • Unterstützt durch WebAssembly (WASM).",
+    homeHeroSubtitle: "Zusammenführen, Teilen, Komprimieren, Konvertieren von Office-Dateien und OCR direkt in Ihrem Browser. 100 % offline über WebAssembly verarbeitet. Kostenlos, ohne Größenbeschränkung und äußerst sicher.",
     homeSearchNotFound: "Keine passenden Tools gefunden",
     homeSearchNotFoundDesc: "Versuchen Sie es mit anderen Schlüsselwörtern oder wählen Sie die Kategorie \"Alle Tools\".",
     homeTryNow: "Jetzt ausprobieren",
@@ -945,11 +948,11 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     footerRights: 'Alle Rechte vorbehalten. Unterstützt durch WebAssembly-Client-Architektur.',
     privacyTitle: 'Absolute Sicherheit ohne Server-Upload',
     privacyText: 'Konform mit strengen Datenschutzrichtlinien (DSGVO). Keine Server-Speicherung, keine künstlichen Limits.',
-  },
-  ja: {
+  },ja: {
     homeHeroBadge: "100% クライアントサイド処理",
-    homeHeroTitle: "すべてのドキュメントツールを 1 か所に",
-    homeHeroSubtitle: "ブラウザで直接 Office ファイルの結合、分割、圧縮、変換、OCR を実行します。 WebAssembly 経由で 100% オフライン処理されます。無料でサイズ制限がなく、安全性が非常に高いです。",
+    homeHeroTitle: "すべてのドキュメント ツールを 1 か所に",
+    homeSecurityBadge: "セキュリティ アーキテクチャ: 100% クライアント側処理 • 0 バイトのアップロード • WebAssembly (WASM) を利用。",
+    homeHeroSubtitle: "Office ファイルの結合、分割、圧縮、変換、OCR をブラウザーで直接実行できます。 100% WebAssembly 経由でオフラインで処理されます。 無料、サイズ制限なし、そして安全性が高い。",
     homeSearchNotFound: "一致するツールが見つかりません",
     homeSearchNotFoundDesc: "別のキーワードを使用するか、「すべてのツール」カテゴリを選択してみてください。",
     homeTryNow: "今すぐ試す",
@@ -1108,11 +1111,11 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     footerRights: 'All rights reserved. WebAssemblyクライアントサイド・アーキテクチャ採用。',
     privacyTitle: 'アップロードなしの絶対的な安全性',
     privacyText: '企業のプライバシー要件に完全準拠。サーバー保存なし、データ記録なし、容量制限なし。',
-  },
-  zh: {
+  },zh: {
     homeHeroBadge: "100% 客户端处理",
-    homeHeroTitle: "所有文档工具尽在一个地方",
-    homeHeroSubtitle: "直接在浏览器中合并、拆分、压缩、转换 Office 文件和 OCR。通过 WebAssembly 100% 离线处理。免费、无大小限制且高度安全。",
+    homeHeroTitle: "所有文档工具都集中在一处",
+    homeSecurityBadge: "安全架构：100% 客户端处理 • 上传 0 字节 • 由 WebAssembly (WASM) 提供支持。",
+    homeHeroSubtitle: "直接在浏览器中合并、拆分、压缩、转换 Office 文件和 OCR。 100% 通过 WebAssembly 离线处理。 免费、无大小限制且高度安全。",
     homeSearchNotFound: "未找到匹配的工具",
     homeSearchNotFoundDesc: "尝试使用不同的关键字或选择所有工具类别。",
     homeTryNow: "立即尝试",
@@ -1262,11 +1265,11 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     footerRights: '版权所有。基于先进的 WebAssembly 客户端架构开发。',
     privacyTitle: '零上传的绝对隐私保护',
     privacyText: '符合严格的企业隐私与安全合规标准。无服务器存储、无数据记录、无人工配额限制。',
-  },
-  pt: {
+  },pt: {
     homeHeroBadge: "Processamento 100% do lado do cliente",
     homeHeroTitle: "Todas as ferramentas de documentos em um só lugar",
-    homeHeroSubtitle: "Mescle, divida, comprima, converta arquivos do Office e OCR diretamente no seu navegador. 100% processado offline via WebAssembly. Grátis, sem limites de tamanho e altamente seguro.",
+    homeSecurityBadge: "Arquitetura de segurança: 100% de processamento no lado do cliente • 0 bytes carregados • Desenvolvido por WebAssembly (WASM).",
+    homeHeroSubtitle: "Mesclar, dividir, compactar, converter arquivos do Office e OCR diretamente no seu navegador. 100% processado offline via WebAssembly. Gratuito, sem limites de tamanho e altamente seguro.",
     homeSearchNotFound: "Nenhuma ferramenta correspondente encontrada",
     homeSearchNotFoundDesc: "Tente usar palavras-chave diferentes ou selecione a categoria Todas as ferramentas.",
     homeTryNow: "Experimente agora",
@@ -1408,11 +1411,11 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     pageTosSec3Desc: 'Reservamo-nos o direito de modificar, suspender ou descontinuar qualquer parte do Serviço a qualquer momento sem aviso prévio. Por ser uma plataforma inteiramente do lado do cliente, não podemos garantir compatibilidade com todas as versões de navegadores.',
     pageTosSec4Title: 'Limitação de responsabilidade',
     pageTosSec4Desc: 'Sob nenhuma circunstância o HandleMyFile, seus criadores ou contribuidores serão responsáveis ​​por quaisquer danos diretos, indiretos, incidentais ou consequenciais resultantes do uso ou incapacidade de usar nossas ferramentas.',
-  },
-  ru: {
+  },ru: {
     homeHeroBadge: "100% обработка на стороне клиента",
-    homeHeroTitle: "Все инструменты для документов в одном месте",
-    homeHeroSubtitle: "Объединяйте, разделяйте, сжимайте, конвертируйте файлы Office и распознавайте текст прямо в браузере. 100% автономная обработка через WebAssembly. Бесплатно, без ограничений по размеру и с высокой степенью безопасности.",
+    homeHeroTitle: "Все инструменты для работы с документами в одном месте",
+    homeSecurityBadge: "Архитектура безопасности: 100% обработка на стороне клиента • Загружено 0 байтов • Работает на базе WebAssembly (WASM).",
+    homeHeroSubtitle: "Объединяйте, разделяйте, сжимайте, конвертируйте файлы Office и распознавайте текст прямо в браузере. 100% обработка в автономном режиме через WebAssembly. Бесплатно, без ограничений по размеру и очень безопасно.",
     homeSearchNotFound: "Подходящих инструментов не найдено",
     homeSearchNotFoundDesc: "Попробуйте использовать другие ключевые слова или выберите категорию «Все инструменты».",
     homeTryNow: "Попробовать сейчас",
@@ -1554,11 +1557,11 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     pageTosSec3Desc: 'Мы оставляем за собой право изменять, приостанавливать или прекращать работу любой части Сервиса в любое время без предварительного уведомления. Поскольку мы являемся полностью клиентской платформой, мы не можем гарантировать совместимость со всеми версиями браузера.',
     pageTosSec4Title: 'Ограничение ответственности',
     pageTosSec4Desc: 'Ни при каких обстоятельствах HandleMyFile, его создатели или участники не несут ответственности за любые прямые, косвенные, случайные или косвенные убытки, возникшие в результате использования или невозможности использования наших инструментов.',
-  },
-  ar: {
+  },ar: {
     homeHeroBadge: "100٪ معالجة من جانب العميل",
     homeHeroTitle: "جميع أدوات المستندات في مكان واحد",
-    homeHeroSubtitle: "دمج، تقسيم، ضغط، تحويل ملفات Office و OCR مباشرة في متصفحك. تمت المعالجة بنسبة 100٪ في وضع عدم الاتصال عبر WebAssembly. مجاني، لا حدود للحجم وآمن للغاية.",
+    homeSecurityBadge: "بنية الأمان: معالجة من جانب العميل بنسبة 100% • تم تحميل 0 بايت • مدعوم من WebAssembly (WASM).",
+    homeHeroSubtitle: "يمكنك دمج ملفات Office وتقسيمها وضغطها وتحويلها والتعرف الضوئي على الحروف مباشرة في متصفحك. تتم معالجتها دون الاتصال بالإنترنت بنسبة 100% عبر WebAssembly. مجاني، بلا حدود للحجم، وآمن للغاية.",
     homeSearchNotFound: "لم يتم العثور على أدوات مطابقة",
     homeSearchNotFoundDesc: "حاول استخدام كلمات رئيسية مختلفة أو حدد فئة جميع الأدوات.",
     homeTryNow: "جرب الآن",
@@ -1700,11 +1703,11 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     pageTosSec3Desc: 'نحن نحتفظ بالحق في تعديل أو تعليق أو إيقاف أي جزء من الخدمة في أي وقت دون إشعار مسبق. باعتبارنا نظامًا أساسيًا من جانب العميل تمامًا، لا يمكننا ضمان التوافق مع جميع إصدارات المتصفح.',
     pageTosSec4Title: 'حدود المسؤولية',
     pageTosSec4Desc: 'لن تتحمل HandleMyFile أو منشئوها أو مساهموها تحت أي ظرف من الظروف المسؤولية عن أي أضرار مباشرة أو غير مباشرة أو عرضية أو تبعية ناتجة عن استخدام أدواتنا أو عدم القدرة على استخدامها.',
-  },
-  hi: {
+  },hi: {
     homeHeroBadge: "100% क्लाइंट-साइड प्रोसेसिंग",
-    homeHeroTitle: "सभी दस्तावेज़ टूल एक ही स्थान पर",
-    homeHeroSubtitle: "अपने ब्राउज़र में सीधे Office फ़ाइलों को मर्ज करें, विभाजित करें, संपीड़ित करें, कनवर्ट करें और OCR करें। WebAssembly के माध्यम से 100% ऑफ़लाइन संसाधित। मुफ़्त, कोई आकार सीमा नहीं और अत्यधिक सुरक्षित।",
+    homeHeroTitle: "सभी दस्तावेज़ उपकरण एक ही स्थान पर",
+    homeSecurityBadge: "सुरक्षा वास्तुकला: 100% क्लाइंट-साइड प्रोसेसिंग • 0 बाइट्स अपलोड किए गए • वेबअसेंबली (डब्ल्यूएएसएम) द्वारा संचालित।",
+    homeHeroSubtitle: "सीधे अपने ब्राउज़र में Office फ़ाइलों और OCR को मर्ज करें, विभाजित करें, संपीड़ित करें, रूपांतरित करें। WebAssembly के माध्यम से 100% ऑफ़लाइन संसाधित किया गया। मुफ़्त, कोई आकार सीमा नहीं, और अत्यधिक सुरक्षित।",
     homeSearchNotFound: "कोई मिलान करने वाला टूल नहीं मिला",
     homeSearchNotFoundDesc: "अलग-अलग कीवर्ड का उपयोग करने का प्रयास करें या सभी टूल श्रेणी का चयन करें।",
     homeTryNow: "अभी आज़माएं",
@@ -1846,11 +1849,11 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     pageTosSec3Desc: 'हम बिना किसी पूर्व सूचना के किसी भी समय सेवा के किसी भी हिस्से को संशोधित करने, निलंबित करने या बंद करने का अधिकार सुरक्षित रखते हैं। पूरी तरह से क्लाइंट-साइड प्लेटफ़ॉर्म के रूप में, हम सभी ब्राउज़र संस्करणों के साथ संगतता की गारंटी नहीं दे सकते।',
     pageTosSec4Title: 'दायित्व की सीमा',
     pageTosSec4Desc: 'किसी भी परिस्थिति में HandleMyFile, इसके निर्माता, या योगदानकर्ता हमारे टूल के उपयोग या उपयोग करने में असमर्थता के परिणामस्वरूप होने वाली किसी भी प्रत्यक्ष, अप्रत्यक्ष, आकस्मिक या परिणामी क्षति के लिए उत्तरदायी नहीं होंगे।',
-  },
-  it: {
+  },it: {
     homeHeroBadge: "Elaborazione al 100% lato client",
     homeHeroTitle: "Tutti gli strumenti per i documenti in un unico posto",
-    homeHeroSubtitle: "Unisci, dividi, comprimi, converti file Office e OCR direttamente nel tuo browser. Elaborato al 100% offline tramite WebAssembly. Gratuito, senza limiti di dimensioni e altamente sicuro.",
+    homeSecurityBadge: "Architettura di sicurezza: elaborazione 100% lato client • 0 byte caricati • Alimentato da WebAssembly (WASM).",
+    homeHeroSubtitle: "Unisci, dividi, comprimi, converti file di Office e OCR direttamente nel tuo browser. Elaborato offline al 100% tramite WebAssembly. Gratuito, senza limiti di dimensioni e altamente sicuro.",
     homeSearchNotFound: "Nessuno strumento corrispondente trovato",
     homeSearchNotFoundDesc: "Prova a utilizzare parole chiave diverse o seleziona la categoria Tutti gli strumenti.",
     homeTryNow: "Prova ora",
@@ -1992,11 +1995,11 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     pageTosSec3Desc: 'Ci riserviamo il diritto di modificare, sospendere o interrompere qualsiasi parte del Servizio in qualsiasi momento senza preavviso. Trattandosi di una piattaforma interamente lato client, non possiamo garantire la compatibilità con tutte le versioni del browser.',
     pageTosSec4Title: 'Limitazione di responsabilità',
     pageTosSec4Desc: 'In nessuna circostanza HandleMyFile, i suoi creatori o collaboratori saranno responsabili per eventuali danni diretti, indiretti, incidentali o consequenziali derivanti dall\'uso o dall\'impossibilità di utilizzare i nostri strumenti.',
-  },
-  ko: {
+  },ko: {
     homeHeroBadge: "100% 클라이언트 측 처리",
-    homeHeroTitle: "모든 문서 도구를 한 곳에서",
-    homeHeroSubtitle: "브라우저에서 직접 Office 파일을 병합, 분할, 압축, 변환 및 OCR합니다. WebAssembly를 통해 100% 오프라인으로 처리됩니다. 무료이고 크기 제한이 없으며 매우 안전합니다.",
+    homeHeroTitle: "모든 문서 도구를 한 곳에 모아보세요",
+    homeSecurityBadge: "보안 아키텍처: 100% 클라이언트 측 처리 • 0바이트 업로드 • WebAssembly(WASM)로 구동.",
+    homeHeroSubtitle: "브라우저에서 직접 Office 파일을 병합, 분할, 압축, 변환하고 OCR할 수 있습니다. WebAssembly를 통해 오프라인으로 100% 처리됩니다. 무료이며 크기 제한이 없으며 보안이 매우 뛰어납니다.",
     homeSearchNotFound: "일치하는 도구를 찾을 수 없습니다.",
     homeSearchNotFoundDesc: "다른 키워드를 사용하거나 모든 도구 범주를 선택해 보십시오.",
     homeTryNow: "지금 사용해 보기",
@@ -2138,11 +2141,11 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     pageTosSec3Desc: '당사는 사전 통지 없이 언제든지 서비스의 일부를 수정, 일시 중지 또는 중단할 권리를 보유합니다. 완전한 클라이언트 측 플랫폼으로서 우리는 모든 브라우저 버전과의 호환성을 보장할 수 없습니다.',
     pageTosSec4Title: '책임의 제한',
     pageTosSec4Desc: '어떠한 경우에도 HandleMyFile, 작성자 또는 기여자는 당사 도구의 사용 또는 사용 불가능으로 인해 발생하는 직접적, 간접적, 우발적 또는 결과적 손해에 대해 책임을 지지 않습니다.',
-  },
-  nl: {
+  },nl: {
     homeHeroBadge: "100% Client-Side Processing",
-    homeHeroTitle: "All Document Tools in One Place",
-    homeHeroSubtitle: "Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly. Free, no size limits, and highly secure.",
+    homeHeroTitle: "Alle documenthulpmiddelen op één plek",
+    homeSecurityBadge: "Beveiligingsarchitectuur: 100% client-side verwerking • 0 bytes geüpload • Mogelijk gemaakt door WebAssembly (WASM).",
+    homeHeroSubtitle: "Voeg Office-bestanden samen, splits, comprimeer, converteer ze en OCR rechtstreeks in uw browser. 100% offline verwerkt via WebAssembly. Gratis, geen maximale grootte en zeer veilig.",
     homeSearchNotFound: "No tools found matching",
     homeSearchNotFoundDesc: "Try using different keywords or select the All Tools category.",
     homeTryNow: "Try Now",
@@ -2284,11 +2287,11 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     pageTosSec3Desc: 'Wij behouden ons het recht voor om enig onderdeel van de Service op elk moment zonder voorafgaande kennisgeving te wijzigen, op te schorten of stop te zetten. Omdat het een volledig client-side platform is, kunnen we de compatibiliteit met alle browserversies niet garanderen.',
     pageTosSec4Title: 'Beperking van aansprakelijkheid',
     pageTosSec4Desc: 'In geen geval zijn HandleMyFile, de makers of bijdragers ervan aansprakelijk voor enige directe, indirecte, incidentele of gevolgschade die voortvloeit uit het gebruik of het onvermogen om onze tools te gebruiken.',
-  },
-  tr: {
+  },tr: {
     homeHeroBadge: "100% Client-Side Processing",
-    homeHeroTitle: "All Document Tools in One Place",
-    homeHeroSubtitle: "Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly. Free, no size limits, and highly secure.",
+    homeHeroTitle: "Tüm Belge Araçları Tek Bir Yerde",
+    homeSecurityBadge: "Güvenlik Mimarisi: %100 İstemci Tarafında İşleme • 0 Bayt Yüklendi • WebAssembly (WASM) Tarafından Desteklenmektedir.",
+    homeHeroSubtitle: "Office dosyalarını ve OCR'yi doğrudan tarayıcınızda birleştirin, bölün, sıkıştırın, dönüştürün. WebAssembly aracılığıyla %100 çevrimdışı işlenir. Ücretsizdir, boyut sınırlaması yoktur ve son derece güvenlidir.",
     homeSearchNotFound: "No tools found matching",
     homeSearchNotFoundDesc: "Try using different keywords or select the All Tools category.",
     homeTryNow: "Try Now",
@@ -2430,11 +2433,11 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     pageTosSec3Desc: 'Hizmetin herhangi bir bölümünü önceden bildirimde bulunmaksızın herhangi bir zamanda değiştirme, askıya alma veya durdurma hakkını saklı tutuyoruz. Tamamen istemci taraflı bir platform olduğundan, tüm tarayıcı sürümleriyle uyumluluğu garanti edemeyiz.',
     pageTosSec4Title: 'Sorumluluğun Sınırlandırılması',
     pageTosSec4Desc: 'HandleMyFile, yaratıcıları veya katkıda bulunanları hiçbir koşulda araçlarımızın kullanılmasından veya kullanılamamasından kaynaklanan doğrudan, dolaylı, tesadüfi veya sonuç olarak ortaya çıkan zararlardan sorumlu tutulamaz.',
-  },
-  pl: {
+  },pl: {
     homeHeroBadge: "100% Client-Side Processing",
-    homeHeroTitle: "All Document Tools in One Place",
-    homeHeroSubtitle: "Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly. Free, no size limits, and highly secure.",
+    homeHeroTitle: "Wszystkie narzędzia do obsługi dokumentów w jednym miejscu",
+    homeSecurityBadge: "Architektura zabezpieczeń: przetwarzanie w 100% po stronie klienta • Przesłano 0 bajtów • Obsługiwane przez WebAssembly (WASM).",
+    homeHeroSubtitle: "Łącz, dziel, kompresuj, konwertuj pliki pakietu Office i OCR bezpośrednio w przeglądarce. 100% przetwarzane w trybie offline poprzez WebAssembly. Bezpłatne, bez ograniczeń rozmiaru i bardzo bezpieczne.",
     homeSearchNotFound: "No tools found matching",
     homeSearchNotFoundDesc: "Try using different keywords or select the All Tools category.",
     homeTryNow: "Try Now",
@@ -2576,11 +2579,11 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     pageTosSec3Desc: 'Zastrzegamy sobie prawo do modyfikacji, zawieszenia lub zaprzestania świadczenia dowolnej części Usługi w dowolnym momencie bez wcześniejszego powiadomienia. Jako platforma działająca wyłącznie po stronie klienta, nie możemy zagwarantować kompatybilności ze wszystkimi wersjami przeglądarek.',
     pageTosSec4Title: 'Ograniczenie odpowiedzialności',
     pageTosSec4Desc: 'W żadnym wypadku HandleMyFile, jego twórcy ani współpracownicy nie ponoszą odpowiedzialności za jakiekolwiek bezpośrednie, pośrednie, przypadkowe lub wynikowe szkody wynikające z użycia lub niemożności korzystania z naszych narzędzi.',
-  },
-  vi: {
+  },vi: {
     homeHeroBadge: "100% Client-Side Processing",
-    homeHeroTitle: "All Document Tools in One Place",
-    homeHeroSubtitle: "Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly. Free, no size limits, and highly secure.",
+    homeHeroTitle: "Tất cả các công cụ tài liệu ở một nơi",
+    homeSecurityBadge: "Kiến trúc bảo mật: Xử lý phía máy khách 100% • Tải lên 0 byte • Được cung cấp bởi WebAssembly (WASM).",
+    homeHeroSubtitle: "Hợp nhất, phân tách, nén, chuyển đổi các tệp Office và OCR trực tiếp trong trình duyệt của bạn. 100% được xử lý ngoại tuyến qua WebAssembly. Miễn phí, không giới hạn kích thước và có tính bảo mật cao.",
     homeSearchNotFound: "No tools found matching",
     homeSearchNotFoundDesc: "Try using different keywords or select the All Tools category.",
     homeTryNow: "Try Now",
@@ -2722,11 +2725,11 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     pageTosSec3Desc: 'Chúng tôi có quyền sửa đổi, đình chỉ hoặc ngừng bất kỳ phần nào của Dịch vụ bất cứ lúc nào mà không cần thông báo trước. Là một nền tảng hoàn toàn phía máy khách, chúng tôi không thể đảm bảo khả năng tương thích với tất cả các phiên bản trình duyệt.',
     pageTosSec4Title: 'Giới hạn trách nhiệm pháp lý',
     pageTosSec4Desc: 'Trong mọi trường hợp, HandleMyFile, người tạo hoặc người đóng góp của nó sẽ không chịu trách nhiệm về mọi thiệt hại trực tiếp, gián tiếp, ngẫu nhiên hoặc do hậu quả do việc sử dụng hoặc không thể sử dụng các công cụ của chúng tôi.',
-  },
-  th: {
+  },th: {
     homeHeroBadge: "100% Client-Side Processing",
-    homeHeroTitle: "All Document Tools in One Place",
-    homeHeroSubtitle: "Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly. Free, no size limits, and highly secure.",
+    homeHeroTitle: "เครื่องมือเอกสารทั้งหมดในที่เดียว",
+    homeSecurityBadge: "สถาปัตยกรรมความปลอดภัย: การประมวลผลฝั่งไคลเอ็นต์ 100% • อัปโหลด 0 ไบต์ • ขับเคลื่อนโดย WebAssembly (WASM)",
+    homeHeroSubtitle: "ผสาน แยก บีบอัด แปลงไฟล์ Office และ OCR ได้โดยตรงในเบราว์เซอร์ของคุณ ประมวลผลออฟไลน์ 100% ผ่าน WebAssembly ฟรี ไม่จำกัดขนาดและมีความปลอดภัยสูง",
     homeSearchNotFound: "No tools found matching",
     homeSearchNotFoundDesc: "Try using different keywords or select the All Tools category.",
     homeTryNow: "Try Now",
@@ -2868,11 +2871,11 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     pageTosSec3Desc: 'เราขอสงวนสิทธิ์ในการแก้ไข ระงับ หรือยกเลิกส่วนใดส่วนหนึ่งของบริการได้ตลอดเวลาโดยไม่ต้องแจ้งให้ทราบล่วงหน้า เนื่องจากเป็นแพลตฟอร์มฝั่งไคลเอ็นต์ทั้งหมด เราไม่สามารถรับประกันความเข้ากันได้กับเบราว์เซอร์ทุกเวอร์ชัน',
     pageTosSec4Title: 'ข้อจำกัดความรับผิด',
     pageTosSec4Desc: 'ไม่ว่าในสถานการณ์ใดก็ตาม HandleMyFile ผู้สร้าง หรือผู้มีส่วนร่วมจะไม่รับผิดชอบต่อความเสียหายโดยตรง โดยอ้อม โดยบังเอิญ หรือเป็นผลสืบเนื่องอันเป็นผลจากการใช้หรือการไม่สามารถใช้เครื่องมือของเราได้',
-  },
-  sv: {
+  },sv: {
     homeHeroBadge: "100% Client-Side Processing",
-    homeHeroTitle: "All Document Tools in One Place",
-    homeHeroSubtitle: "Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly. Free, no size limits, and highly secure.",
+    homeHeroTitle: "Alla dokumentverktyg på ett ställe",
+    homeSecurityBadge: "Säkerhetsarkitektur: 100 % bearbetning på klientsidan • 0 uppladda byte • Drivs av WebAssembly (WASM).",
+    homeHeroSubtitle: "Slå samman, dela, komprimera, konvertera Office-filer och OCR direkt i din webbläsare. 100 % bearbetad offline via WebAssembly. Gratis, inga storleksbegränsningar och mycket säker.",
     homeSearchNotFound: "No tools found matching",
     homeSearchNotFoundDesc: "Try using different keywords or select the All Tools category.",
     homeTryNow: "Try Now",
@@ -3014,11 +3017,11 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     pageTosSec3Desc: 'Vi förbehåller oss rätten att när som helst ändra, avbryta eller avbryta någon del av tjänsten utan föregående meddelande. Som en helt klientsida kan vi inte garantera kompatibilitet med alla webbläsarversioner.',
     pageTosSec4Title: 'Ansvarsbegränsning',
     pageTosSec4Desc: 'Under inga omständigheter ska HandleMyFile, dess skapare eller bidragsgivare hållas ansvariga för några direkta, indirekta, oförutsedda skador eller följdskador till följd av användningen eller oförmågan att använda våra verktyg.',
-  },
-  cs: {
+  },cs: {
     homeHeroBadge: "100% Client-Side Processing",
-    homeHeroTitle: "All Document Tools in One Place",
-    homeHeroSubtitle: "Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly. Free, no size limits, and highly secure.",
+    homeHeroTitle: "Všechny nástroje pro dokumenty na jednom místě",
+    homeSecurityBadge: "Architektura zabezpečení: 100% zpracování na straně klienta • Nahráno 0 bajtů • Používá technologii WebAssembly (WASM).",
+    homeHeroSubtitle: "Slučujte, rozdělujte, komprimujte, převádějte soubory Office a OCR přímo ve vašem prohlížeči. 100% zpracováno offline přes WebAssembly. Zdarma, bez omezení velikosti a vysoce bezpečné.",
     homeSearchNotFound: "No tools found matching",
     homeSearchNotFoundDesc: "Try using different keywords or select the All Tools category.",
     homeTryNow: "Try Now",
@@ -3160,11 +3163,11 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     pageTosSec3Desc: 'Vyhrazujeme si právo kdykoli bez předchozího upozornění upravit, pozastavit nebo ukončit jakoukoli část služby. Jako zcela klientská platforma nemůžeme zaručit kompatibilitu se všemi verzemi prohlížečů.',
     pageTosSec4Title: 'Omezení odpovědnosti',
     pageTosSec4Desc: 'Společnost HandleMyFile, její tvůrci nebo přispěvatelé za žádných okolností nenesou odpovědnost za jakékoli přímé, nepřímé, náhodné nebo následné škody vyplývající z použití nebo neschopnosti používat naše nástroje.',
-  },
-  da: {
+  },da: {
     homeHeroBadge: "100% Client-Side Processing",
-    homeHeroTitle: "All Document Tools in One Place",
-    homeHeroSubtitle: "Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly. Free, no size limits, and highly secure.",
+    homeHeroTitle: "Alle dokumentværktøjer på ét sted",
+    homeSecurityBadge: "Sikkerhedsarkitektur: 100 % klientsidebehandling • 0 bytes uploadet • Drevet af WebAssembly (WASM).",
+    homeHeroSubtitle: "Flet, del, komprimer, konverter Office-filer og OCR direkte i din browser. 100 % behandlet offline via WebAssembly. Gratis, ingen størrelsesbegrænsninger og meget sikker.",
     homeSearchNotFound: "No tools found matching",
     homeSearchNotFoundDesc: "Try using different keywords or select the All Tools category.",
     homeTryNow: "Try Now",
@@ -3306,11 +3309,11 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     pageTosSec3Desc: 'Vi forbeholder os retten til at ændre, suspendere eller afbryde enhver del af tjenesten til enhver tid uden forudgående varsel. Som en fuldstændig klientsideplatform kan vi ikke garantere kompatibilitet med alle browserversioner.',
     pageTosSec4Title: 'Ansvarsbegrænsning',
     pageTosSec4Desc: 'Under ingen omstændigheder skal HandleMyFile, dets skabere eller bidragydere være ansvarlige for nogen direkte, indirekte, tilfældige eller følgeskader, der er et resultat af brugen eller manglende evne til at bruge vores værktøjer.',
-  },
-  el: {
+  },el: {
     homeHeroBadge: "100% Client-Side Processing",
-    homeHeroTitle: "All Document Tools in One Place",
-    homeHeroSubtitle: "Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly. Free, no size limits, and highly secure.",
+    homeHeroTitle: "Όλα τα εργαλεία εγγράφων σε ένα μέρος",
+    homeSecurityBadge: "Αρχιτεκτονική ασφαλείας: 100% Επεξεργασία από την πλευρά του πελάτη • Μεταφορτώθηκαν 0 byte • Με την υποστήριξη του WebAssembly (WASM).",
+    homeHeroSubtitle: "Συγχώνευση, διαχωρισμός, συμπίεση, μετατροπή αρχείων Office και OCR απευθείας στο πρόγραμμα περιήγησής σας. 100% επεξεργασία εκτός σύνδεσης μέσω WebAssembly. Δωρεάν, χωρίς όρια μεγέθους και εξαιρετικά ασφαλές.",
     homeSearchNotFound: "No tools found matching",
     homeSearchNotFoundDesc: "Try using different keywords or select the All Tools category.",
     homeTryNow: "Try Now",
@@ -3452,11 +3455,11 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     pageTosSec3Desc: 'Διατηρούμε το δικαίωμα να τροποποιήσουμε, να αναστείλουμε ή να διακόψουμε οποιοδήποτε τμήμα της Υπηρεσίας ανά πάσα στιγμή χωρίς προηγούμενη ειδοποίηση. Ως πλατφόρμα αποκλειστικά από την πλευρά του πελάτη, δεν μπορούμε να εγγυηθούμε τη συμβατότητα με όλες τις εκδόσεις του προγράμματος περιήγησης.',
     pageTosSec4Title: 'Περιορισμός Ευθύνης',
     pageTosSec4Desc: 'Σε καμία περίπτωση το HandleMyFile, οι δημιουργοί ή οι συντελεστές του δεν φέρουν ευθύνη για άμεσες, έμμεσες, τυχαίες ή αποθετικές ζημίες που προκύπτουν από τη χρήση ή την αδυναμία χρήσης των εργαλείων μας.',
-  },
-  fi: {
+  },fi: {
     homeHeroBadge: "100% Client-Side Processing",
-    homeHeroTitle: "All Document Tools in One Place",
-    homeHeroSubtitle: "Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly. Free, no size limits, and highly secure.",
+    homeHeroTitle: "Kaikki asiakirjatyökalut yhdessä paikassa",
+    homeSecurityBadge: "Suojausarkkitehtuuri: 100 % Client Side Processing • 0 tavua ladattu • Powered by WebAssembly (WASM).",
+    homeHeroSubtitle: "Yhdistä, jaa, pakkaa, muunna Office-tiedostoja ja tekstintunnistus suoraan selaimessasi. 100 % käsitelty offline-tilassa WebAssemblyn kautta. Ilmainen, ei kokorajoituksia ja erittäin turvallinen.",
     homeSearchNotFound: "No tools found matching",
     homeSearchNotFoundDesc: "Try using different keywords or select the All Tools category.",
     homeTryNow: "Try Now",
@@ -3598,8 +3601,7 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     pageTosSec3Desc: 'Varaamme oikeuden muuttaa, keskeyttää tai lopettaa mitä tahansa Palvelun osaa milloin tahansa ilman ennakkoilmoitusta. Täysin asiakaspuolen alustana emme voi taata yhteensopivuutta kaikkien selainversioiden kanssa.',
     pageTosSec4Title: 'Vastuun rajoitus',
     pageTosSec4Desc: 'HandleMyFile, sen tekijät tai avustajat eivät ole missään olosuhteissa vastuussa suorista, epäsuorista, satunnaisista tai välillisistä vahingoista, jotka johtuvat työkalujemme käytöstä tai kyvyttömyydestä käyttää.',
-  },
-  iw: {
+  },iw: {
     homeHeroBadge: "100% Client-Side Processing",
     homeHeroTitle: "All Document Tools in One Place",
     homeHeroSubtitle: "Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly. Free, no size limits, and highly secure.",
@@ -3747,8 +3749,9 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
   },
   hu: {
     homeHeroBadge: "100% Client-Side Processing",
-    homeHeroTitle: "All Document Tools in One Place",
-    homeHeroSubtitle: "Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly. Free, no size limits, and highly secure.",
+    homeHeroTitle: "Minden dokumentumeszköz egy helyen",
+    homeSecurityBadge: "Biztonsági architektúra: 100%-os ügyféloldali feldolgozás • 0 bájt feltöltve • WebAssembly (WASM) által üzemeltetett.",
+    homeHeroSubtitle: "Egyesítés, felosztás, tömörítés, Office-fájlok konvertálása és OCR közvetlenül a böngészőben. 100%-ban offline feldolgozva a WebAssembly segítségével. Ingyenes, méretkorlátozás nélkül és rendkívül biztonságos.",
     homeSearchNotFound: "No tools found matching",
     homeSearchNotFoundDesc: "Try using different keywords or select the All Tools category.",
     homeTryNow: "Try Now",
@@ -3890,11 +3893,11 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     pageTosSec3Desc: 'Fenntartjuk a jogot a Szolgáltatás bármely részének módosítására, felfüggesztésére vagy megszüntetésére, előzetes értesítés nélkül. Teljesen kliensoldali platformként nem tudjuk garantálni a kompatibilitást az összes böngészőverzióval.',
     pageTosSec4Title: 'A felelősség korlátozása',
     pageTosSec4Desc: 'A HandleMyFile, alkotói vagy közreműködői semmilyen körülmények között nem felelősek semmilyen közvetlen, közvetett, véletlen vagy következményes kárért, amely eszközeink használatából vagy használatának képtelenségéből ered.',
-  },
-  no: {
+  },no: {
     homeHeroBadge: "100% Client-Side Processing",
-    homeHeroTitle: "All Document Tools in One Place",
-    homeHeroSubtitle: "Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly. Free, no size limits, and highly secure.",
+    homeHeroTitle: "Alle dokumentverktøy på ett sted",
+    homeSecurityBadge: "Sikkerhetsarkitektur: 100 % prosessering på klientsiden • 0 byte lastet opp • Drevet av WebAssembly (WASM).",
+    homeHeroSubtitle: "Slå sammen, del, komprimer, konverter Office-filer og OCR direkte i nettleseren din. 100 % behandlet offline via WebAssembly. Gratis, ingen størrelsesgrenser og svært sikker.",
     homeSearchNotFound: "No tools found matching",
     homeSearchNotFoundDesc: "Try using different keywords or select the All Tools category.",
     homeTryNow: "Try Now",
@@ -4036,11 +4039,11 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     pageTosSec3Desc: 'Vi forbeholder oss retten til å endre, suspendere eller avbryte enhver del av tjenesten når som helst uten forvarsel. Som en helt klientsideplattform kan vi ikke garantere kompatibilitet med alle nettleserversjoner.',
     pageTosSec4Title: 'Ansvarsbegrensning',
     pageTosSec4Desc: 'Under ingen omstendigheter skal HandleMyFile, dets skapere eller bidragsytere være ansvarlige for noen direkte, indirekte, tilfeldige eller følgeskader som følge av bruk eller manglende evne til å bruke verktøyene våre.',
-  },
-  ro: {
+  },ro: {
     homeHeroBadge: "100% Client-Side Processing",
-    homeHeroTitle: "All Document Tools in One Place",
-    homeHeroSubtitle: "Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly. Free, no size limits, and highly secure.",
+    homeHeroTitle: "Toate instrumentele pentru documente într-un singur loc",
+    homeSecurityBadge: "Arhitectură de securitate: Procesare 100% pe partea clientului • 0 octeți încărcați • Produs de WebAssembly (WASM).",
+    homeHeroSubtitle: "Îmbinați, împărțiți, comprimați, convertiți fișierele Office și OCR direct în browser. 100% procesat offline prin WebAssembly. Gratuit, fără limite de dimensiune și foarte sigur.",
     homeSearchNotFound: "No tools found matching",
     homeSearchNotFoundDesc: "Try using different keywords or select the All Tools category.",
     homeTryNow: "Try Now",
@@ -4182,11 +4185,11 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     pageTosSec3Desc: 'Ne rezervăm dreptul de a modifica, suspenda sau întrerupe orice parte a Serviciului în orice moment, fără notificare prealabilă. Fiind o platformă în întregime pe partea clientului, nu putem garanta compatibilitatea cu toate versiunile de browser.',
     pageTosSec4Title: 'Limitarea răspunderii',
     pageTosSec4Desc: 'În nicio circumstanță HandleMyFile, creatorii sau contribuitorii săi nu vor fi răspunzători pentru orice daune directe, indirecte, incidentale sau consecutive rezultate din utilizarea sau incapacitatea de a folosi instrumentele noastre.',
-  },
-  sk: {
+  },sk: {
     homeHeroBadge: "100% Client-Side Processing",
-    homeHeroTitle: "All Document Tools in One Place",
-    homeHeroSubtitle: "Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly. Free, no size limits, and highly secure.",
+    homeHeroTitle: "Všetky nástroje dokumentov na jednom mieste",
+    homeSecurityBadge: "Bezpečnostná architektúra: 100 % spracovanie na strane klienta • Odovzdané 0 bajtov • Používa WebAssembly (WASM).",
+    homeHeroSubtitle: "Zlúčte, rozdeľte, komprimujte, konvertujte súbory balíka Office a OCR priamo vo vašom prehliadači. 100% spracované offline cez WebAssembly. Zadarmo, bez obmedzenia veľkosti a vysoko bezpečné.",
     homeSearchNotFound: "No tools found matching",
     homeSearchNotFoundDesc: "Try using different keywords or select the All Tools category.",
     homeTryNow: "Try Now",
@@ -4328,11 +4331,11 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     pageTosSec3Desc: 'Vyhradzujeme si právo kedykoľvek bez predchádzajúceho upozornenia upraviť, pozastaviť alebo ukončiť akúkoľvek časť Služby. Ako platforma výhradne na strane klienta nemôžeme zaručiť kompatibilitu so všetkými verziami prehliadačov.',
     pageTosSec4Title: 'Obmedzenie zodpovednosti',
     pageTosSec4Desc: 'Spoločnosť HandleMyFile, jej tvorcovia alebo prispievatelia za žiadnych okolností nenesú zodpovednosť za žiadne priame, nepriame, náhodné alebo následné škody vyplývajúce z používania alebo neschopnosti používať naše nástroje.',
-  },
-  uk: {
+  },uk: {
     homeHeroBadge: "100% Client-Side Processing",
-    homeHeroTitle: "All Document Tools in One Place",
-    homeHeroSubtitle: "Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly. Free, no size limits, and highly secure.",
+    homeHeroTitle: "Усі інструменти для роботи з документами в одному місці",
+    homeSecurityBadge: "Архітектура безпеки: 100% обробка на стороні клієнта • Завантажено 0 байтів • Технологія WebAssembly (WASM).",
+    homeHeroSubtitle: "Об’єднуйте, розділяйте, стискайте, конвертуйте файли Office і OCR прямо у вашому браузері. 100% обробка офлайн через WebAssembly. Безкоштовно, без обмежень розміру та дуже безпечно.",
     homeSearchNotFound: "No tools found matching",
     homeSearchNotFoundDesc: "Try using different keywords or select the All Tools category.",
     homeTryNow: "Try Now",
@@ -4474,11 +4477,11 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     pageTosSec3Desc: 'Ми залишаємо за собою право змінювати, призупиняти або припиняти будь-яку частину Сервісу в будь-який час без попереднього повідомлення. Оскільки платформа повністю клієнтська, ми не можемо гарантувати сумісність з усіма версіями браузера.',
     pageTosSec4Title: 'Обмеження відповідальності',
     pageTosSec4Desc: 'За жодних обставин HandleMyFile, його творці чи учасники не несуть відповідальності за будь-які прямі, непрямі, випадкові чи непрямі збитки, спричинені використанням або неможливістю використання наших інструментів.',
-  },
-  ms: {
+  },ms: {
     homeHeroBadge: "100% Client-Side Processing",
-    homeHeroTitle: "All Document Tools in One Place",
-    homeHeroSubtitle: "Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly. Free, no size limits, and highly secure.",
+    homeHeroTitle: "Semua Alat Dokumen di Satu Tempat",
+    homeSecurityBadge: "Seni Bina Keselamatan: 100% Pemprosesan Bahagian Pelanggan • 0 Bait Dimuat Naik • Dikuasakan oleh WebAssembly (WASM).",
+    homeHeroSubtitle: "Cantum, belah, mampatkan, tukar fail Office dan OCR terus dalam penyemak imbas anda. 100% diproses di luar talian melalui WebAssembly. Percuma, tiada had saiz dan sangat selamat.",
     homeSearchNotFound: "No tools found matching",
     homeSearchNotFoundDesc: "Try using different keywords or select the All Tools category.",
     homeTryNow: "Try Now",
@@ -4620,8 +4623,7 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     pageTosSec3Desc: 'Kami berhak untuk mengubah suai, menggantung, atau menghentikan mana-mana bahagian Perkhidmatan pada bila-bila masa tanpa notis terlebih dahulu. Sebagai platform pihak pelanggan sepenuhnya, kami tidak dapat menjamin keserasian dengan semua versi penyemak imbas.',
     pageTosSec4Title: 'Had Liabiliti',
     pageTosSec4Desc: 'Dalam apa jua keadaan, HandleMyFile, pencipta atau penyumbangnya tidak akan bertanggungjawab ke atas sebarang kerosakan langsung, tidak langsung, sampingan atau berbangkit akibat daripada penggunaan atau ketidakupayaan untuk menggunakan alatan kami.',
-  },
-};
+  },};
 
 export const getUiTranslations = (langCode: string): UiDictionary => {
   return UI_TRANSLATIONS[langCode] || baseDict;
