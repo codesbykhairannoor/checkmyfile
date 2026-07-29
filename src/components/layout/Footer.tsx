@@ -152,6 +152,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool, onNav
             {renderLinkItem(t.footerTos || 'Terms of Service', 'terms')}
             {renderLinkItem(t.footerSecurity || 'Security & Trust', 'security')}
             {renderLinkItem(t.footerPricing || 'Pricing', 'pricing')}
+            {renderLinkItem(t.footerCompare || 'Compare', 'compare')}
             {renderLinkItem(t.footerLanguages || 'Languages', 'languages')}
           </ul>
         </div>
