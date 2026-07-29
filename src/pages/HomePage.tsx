@@ -81,6 +81,27 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
             {t.homeHeroSubtitle || 'Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly. Free, no size limits, and highly secure.'}
           </p>
 
+          {/* GEO Fact Density & Security Architecture Badge */}
+          <div style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: 8,
+            padding: '10px 20px',
+            background: 'var(--bg-elevated)',
+            borderRadius: 9999,
+            border: '1px solid var(--border-color)',
+            marginBottom: 48,
+            boxShadow: 'var(--shadow-sm)',
+            color: 'var(--text-main)',
+            fontSize: '0.95rem',
+            fontWeight: 500,
+            textAlign: 'left'
+          }}>
+            <Icons.ShieldCheck size={18} style={{ color: 'var(--success-color)' }} />
+            <span>
+              <strong>Security Architecture:</strong> 100% Client-Side Processing • 0 Bytes Uploaded • Powered by WebAssembly (WASM).
+            </span>
+          </div>
           {/* Search Bar */}
           <div style={{ maxWidth: 640, margin: '0 auto', position: 'relative' }}>
             <Icons.Search
