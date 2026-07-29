@@ -1,4 +1,4 @@
-﻿export interface UiDictionary {
+export interface UiDictionary {
   previewNavDoc?: string;
   previewImgGallery?: string;
   previewFileDetails?: string;
@@ -26,6 +26,7 @@
   footerTos?: string;
   footerCompany?: string;
   footerCompare?: string;
+  footerLanguages?: string;
 
   pageCompareBadge?: string;
   pageCompareHero?: string;
@@ -5387,8 +5388,6 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     footerAbout: 'Tentang Kami',
     footerPrivacy: 'Dasar Privasi',
     footerTos: 'Terma Perkhidmatan',
-    footerSecurity: 'Keselamatan & Kepercayaan',
-    footerPricing: 'Harga',
     footerLanguages: 'Bahasa yang Disokong',
     pageLangHero: 'Tersedia Di Seluruh Dunia',
     pageLangHeroSub: 'Utiliti dokumen harus boleh diakses oleh semua orang, tidak kira apa bahasa yang anda gunakan. Pada masa ini kami menyokong 30 versi setempat HandleMyFile.',
