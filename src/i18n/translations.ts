@@ -1,4 +1,4 @@
-export interface UiDictionary {
+﻿export interface UiDictionary {
   previewNavDoc?: string;
   previewImgGallery?: string;
   previewFileDetails?: string;
@@ -214,21 +214,10 @@ const baseDict: UiDictionary = {
   downloadBtn: 'Download File',
   downloadAllZipBtn: 'Download All (ZIP)',
   resetBtn: 'Start Over',
-  officeTools: 'Office to PDF',
-  imageTools: 'Image to PDF',
-  ocrTools: 'OCR & AI Text',
-  dropzoneTitle: 'Drag & Drop your files here',
-  dropzoneSubtitle: 'or click below to select from your device',
-  selectFilesBtn: 'Select Files',
-  processBtn: 'Start Processing',
-  processingText: 'Processing locally inside WebAssembly memory...',
-  downloadBtn: 'Download File',
-  downloadAllZipBtn: 'Download All (ZIP)',
-  resetBtn: 'Start Over',
   zeroUploadGuarantee: 'Why is this 100% Secure & Private?',
   zeroUploadDetails: 'Unlike traditional cloud converters that upload your private documents to remote servers, our platform executes C/C++ WebAssembly engines directly inside your browser RAM. Your confidential documents never traverse the internet.',
   faqTitle: 'Frequently Asked Questions',
-  backToHome: 'â† Back to All Tools',
+  backToHome: 'â†  Back to All Tools',
   languageSelect: 'Select Language',
   footerRights: 'All rights reserved. Powered by WebAssembly Client-Side Architecture.',
   privacyTitle: 'Absolute Zero-Upload Security',
