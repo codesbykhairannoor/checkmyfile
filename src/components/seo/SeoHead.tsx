@@ -16,7 +16,8 @@ interface SeoHeadProps {
 export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang, currentLang, title: customTitle, description: customDescription, slug }) => {
   useEffect(() => {
     const activeLang = lang || currentLang || 'en';
-    const origin = window.location.origin || 'https://www.helpmyfile.com';
+    // Hardcode the canonical origin to the primary domain to prevent www vs non-www duplicate content issues
+    const origin = 'https://www.handlemyfile.com';
     const langInfo = getLanguageByCode(activeLang);
     const t = getUiTranslations(activeLang);
     
