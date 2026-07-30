@@ -17,7 +17,7 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang, currentLang, title
   useEffect(() => {
     const activeLang = lang || currentLang || 'en';
     // Hardcode the canonical origin to the primary domain to prevent www vs non-www duplicate content issues
-    const origin = 'https://www.handlemyfile.com';
+    const origin = 'https://handlemyfile.com';
     const langInfo = getLanguageByCode(activeLang);
     const t = getUiTranslations(activeLang);
     

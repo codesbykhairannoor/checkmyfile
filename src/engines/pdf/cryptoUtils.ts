@@ -59,7 +59,7 @@ export async function generateSelfSignedP12(password: string, commonName: string
           name: 'subjectAltName',
           altNames: [{
             type: 6, // URI
-            value: 'https://www.handlemyfile.com'
+            value: 'https://handlemyfile.com'
           }]
         }, {
           name: 'subjectKeyIdentifier'

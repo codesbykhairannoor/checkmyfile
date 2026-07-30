@@ -60,7 +60,7 @@ async function checkURL(url) {
 
   // 3. Check Canonical
   const canonical = await page.evaluate(() => document.querySelector('link[rel="canonical"]')?.href);
-  assert(canonical === 'http://localhost:4173/id/gabung-pdf', `Self-referencing canonical is correct: ${canonical}`);
+  assert(canonical === 'https://handlemyfile.com/id/gabung-pdf', `Self-referencing canonical is correct: ${canonical}`);
 
   // 4. Check Favicon
   const favicon = await page.evaluate(() => document.querySelector('link[rel="icon"]')?.href);
