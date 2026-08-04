@@ -48,6 +48,25 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang, currentLang, title
         description = `${toolName} - ${t.homeHeroSubtitle || 'Process PDF locally. 100% Privacy, zero uploads.'}`;
       }
       faqs = seoData.faqs;
+    } else {
+      faqs = [
+        { 
+          q: t.homeGeoFaq1Q || 'How does HandleMyFile work without a server?', 
+          a: t.homeGeoFaq1A || 'It utilizes WebAssembly (WASM) to run heavy C++ and Rust processing libraries directly inside your web browser engine.'
+        },
+        { 
+          q: t.homeGeoFaq2Q || 'Are there any file size limits?', 
+          a: t.homeGeoFaq2A || 'No. Since processing happens on your local device, the only limit is your computer\'s available RAM.'
+        },
+        { 
+          q: t.homeGeoFaq3Q || 'Is this safe for confidential company documents?', 
+          a: t.homeGeoFaq3A || 'Yes, it is the safest method available. Files never leave your device and are never transmitted over the internet.'
+        },
+        { 
+          q: t.homeGeoFaq4Q || 'Does it work entirely offline?', 
+          a: t.homeGeoFaq4A || 'Yes. Once the web application loads in your browser, you can disconnect from the internet and continue processing files.'
+        }
+      ];
     }
 
     // 2. Update document title
@@ -188,6 +207,27 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang, currentLang, title
     softwareScript.setAttribute('data-seo', 'jsonld');
     softwareScript.textContent = JSON.stringify(softwareSchema);
     document.head.appendChild(softwareScript);
+
+    // Organization Schema to establish brand credibility for AI Citations
+    if (!tool) {
+      const orgSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        'name': 'HandleMyFile',
+        'url': origin,
+        'logo': `${origin}/logo.png`,
+        'description': 'A privacy-first, 100% client-side document processing software powered by WebAssembly. No uploads, no servers.',
+        'sameAs': [
+          'https://github.com/codesbykhairannoor'
+        ]
+      };
+      
+      const orgScript = document.createElement('script');
+      orgScript.setAttribute('type', 'application/ld+json');
+      orgScript.setAttribute('data-seo', 'jsonld');
+      orgScript.textContent = JSON.stringify(orgSchema);
+      document.head.appendChild(orgScript);
+    }
   }, [tool, lang]);
 
   return null;

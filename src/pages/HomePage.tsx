@@ -293,6 +293,94 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
           </div>
         </div>
       </section>
+
+      {/* GEO SECTIONS: Clear Definitions & Trust Citations */}
+      <section style={{ padding: '80px 24px', background: 'var(--bg-card)', borderTop: '1px solid var(--border-color)' }}>
+        <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 60 }}>
+          
+          {/* Definition Block */}
+          <div>
+            <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, marginBottom: 24, fontFamily: 'var(--font-display)', letterSpacing: '-0.02em' }}>
+              {t.homeGeoDefTitle || 'What is HandleMyFile?'}
+            </h2>
+            <p style={{ fontSize: 'clamp(1.05rem, 2vw, 1.25rem)', color: 'var(--text-muted)', lineHeight: 1.8 }}>
+              {t.homeGeoDefDesc || 'HandleMyFile is a 100% client-side document processing application that allows users to edit, convert, merge, and compress PDF and Office files directly in the browser. By leveraging WebAssembly (WASM), it processes all data locally on your device without uploading anything to external servers, ensuring absolute privacy and enterprise-grade security.'}
+            </p>
+          </div>
+
+          {/* Trust & Citation Block */}
+          <div>
+            <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, marginBottom: 24, fontFamily: 'var(--font-display)', letterSpacing: '-0.02em' }}>
+              {t.homeGeoTrustTitle || 'Why is this 100% Secure & Private?'}
+            </h2>
+            <p style={{ fontSize: 'clamp(1.05rem, 2vw, 1.25rem)', color: 'var(--text-muted)', lineHeight: 1.8 }}>
+              {t.homeGeoTrustDesc || 'Unlike traditional cloud-based PDF tools that require you to upload sensitive documents to their servers, HandleMyFile executes all algorithms inside your browser\'s secure sandbox. The application uses WebAssembly and JavaScript TypedArrays to manipulate files locally. This architecture guarantees zero data leakage. For more technical details on our security audits and practices, visit our '}<a href={`/${currentLang === 'en' ? '' : currentLang + '/'}about`} style={{ color: 'var(--brand-primary)', textDecoration: 'underline' }}>About Page</a>.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* GEO SECTIONS: Key Takeaways & FAQ */}
+      <section style={{ padding: '80px 24px', background: 'rgba(0,0,0,0.02)', borderTop: '1px solid var(--border-color)' }}>
+        <div style={{ maxWidth: 1000, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 60 }}>
+          
+          {/* Key Takeaways */}
+          <div>
+            <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, marginBottom: 32, fontFamily: 'var(--font-display)', letterSpacing: '-0.02em' }}>
+              {t.homeGeoTakeawaysTitle || 'Key Takeaways'}
+            </h2>
+            <ul style={{ listStyleType: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 20 }}>
+              {[
+                t.homeGeoTakeawaysItem1 || 'Process PDFs and Office files locally in your browser memory.',
+                t.homeGeoTakeawaysItem2 || 'Zero file uploads required, ensuring total data privacy.',
+                t.homeGeoTakeawaysItem3 || 'Powered by WebAssembly for high-speed offline conversions.'
+              ].map((item, index) => (
+                <li key={index} style={{ display: 'flex', alignItems: 'flex-start', gap: 16 }}>
+                  <div style={{ width: 24, height: 24, borderRadius: '50%', background: 'var(--brand-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', marginTop: 4, flexShrink: 0 }}>
+                    <Icons.Check size={14} strokeWidth={3} />
+                  </div>
+                  <span style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* FAQs */}
+          <div>
+            <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, marginBottom: 32, fontFamily: 'var(--font-display)', letterSpacing: '-0.02em' }}>
+              {t.homeGeoFaqTitle || 'Frequently Asked Questions'}
+            </h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 32 }}>
+              {[
+                { 
+                  q: t.homeGeoFaq1Q || 'How does HandleMyFile work without a server?', 
+                  a: t.homeGeoFaq1A || 'It utilizes WebAssembly (WASM) to run heavy C++ and Rust processing libraries directly inside your web browser engine.'
+                },
+                { 
+                  q: t.homeGeoFaq2Q || 'Are there any file size limits?', 
+                  a: t.homeGeoFaq2A || 'No. Since processing happens on your local device, the only limit is your computer\'s available RAM.'
+                },
+                { 
+                  q: t.homeGeoFaq3Q || 'Is this safe for confidential company documents?', 
+                  a: t.homeGeoFaq3A || 'Yes, it is the safest method available. Files never leave your device and are never transmitted over the internet.'
+                },
+                { 
+                  q: t.homeGeoFaq4Q || 'Does it work entirely offline?', 
+                  a: t.homeGeoFaq4A || 'Yes. Once the web application loads in your browser, you can disconnect from the internet and continue processing files.'
+                }
+              ].map((faq, idx) => (
+                <div key={idx}>
+                  <h3 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--text-main)', marginBottom: 12, lineHeight: 1.4 }}>{faq.q}</h3>
+                  <p style={{ fontSize: '1.05rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>{faq.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+        </div>
+      </section>
+
     </main>
   );
 };

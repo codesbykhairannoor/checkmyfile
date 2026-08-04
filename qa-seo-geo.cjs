@@ -89,6 +89,19 @@ async function checkURL(url) {
   const title = await page.title();
   assert(title.includes('PDF'), `Page title is properly localized: ${title}`);
 
+  console.log("\n--- Phase 3: Homepage GEO & Organization Schema ---");
+  await page.goto('http://localhost:4173/', { waitUntil: 'networkidle0' });
+  
+  const homeJsonLds = await page.evaluate(() => {
+    return Array.from(document.querySelectorAll('script[data-seo="jsonld"]')).map(el => JSON.parse(el.textContent));
+  });
+
+  const hasOrgSchema = homeJsonLds.some(schema => schema['@type'] === 'Organization');
+  assert(hasOrgSchema, 'Organization schema is present on the homepage for GEO trust signals');
+
+  const hasHomeFaqSchema = homeJsonLds.some(schema => schema['@type'] === 'FAQPage');
+  assert(hasHomeFaqSchema, 'FAQPage schema is present on the homepage');
+
   await browser.close();
 
   console.log(`\n📊 Final Results: ${passed} Passed, ${failed} Failed.`);

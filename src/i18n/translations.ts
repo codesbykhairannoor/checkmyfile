@@ -66,6 +66,24 @@ export interface UiDictionary {
   homeSearchNotFoundDesc?: string;
   homeTryNow?: string;
 
+  homeGeoDefTitle?: string;
+  homeGeoDefDesc?: string;
+  homeGeoTrustTitle?: string;
+  homeGeoTrustDesc?: string;
+  homeGeoTakeawaysTitle?: string;
+  homeGeoTakeawaysItem1?: string;
+  homeGeoTakeawaysItem2?: string;
+  homeGeoTakeawaysItem3?: string;
+  homeGeoFaqTitle?: string;
+  homeGeoFaq1Q?: string;
+  homeGeoFaq1A?: string;
+  homeGeoFaq2Q?: string;
+  homeGeoFaq2A?: string;
+  homeGeoFaq3Q?: string;
+  homeGeoFaq3A?: string;
+  homeGeoFaq4Q?: string;
+  homeGeoFaq4A?: string;
+
   navAllPdfTools?: string;
   navOrganizePdf?: string;
   navOptimizeEnhance?: string;
