@@ -393,7 +393,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           gap: 4px;
         }
         .mega-menu-title {
-          font-size: 0.74rem;
+          font-size: 0.85rem;
           font-weight: 800;
           color: var(--text-accent);
           letter-spacing: 0.06em;
@@ -418,7 +418,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           transform: translateX(3px);
         }
         .mega-menu-item .item-title {
-          font-size: 0.87rem;
+          font-size: 0.98rem;
           font-weight: 700;
           color: var(--text-main);
           line-height: 1.2;
