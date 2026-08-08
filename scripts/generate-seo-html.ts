@@ -3,7 +3,6 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { SUPPORTED_LANGUAGES } from '../src/i18n/languages';
 import { TOOLS_CATALOG, getLocalizedSeo } from '../src/catalog/toolsCatalog';
-import { UI_TRANSLATIONS } from '../src/i18n/translations';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -58,6 +57,7 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
   const ogTitle = `<meta property="og:title" content="${seoTitle.replace(/"/g, '&quot;')}" />`;
   const ogDesc = `<meta property="og:description" content="${seoDesc.replace(/"/g, '&quot;')}" />`;
 
+  // Dynamic hreflangs
   let dynamicHreflangs = `<!-- SSG Hreflang Tags -->\n`;
   for (const l of LANGS) {
     let targetPath = `/${l}`;
@@ -68,14 +68,18 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
         targetPath = `/${l}/${localSlug}`;
       }
     } else {
+      // It's a static page (about, privacy) or home
       const segments = urlPath.split('/').filter(Boolean);
       if (segments.length > 1) {
+         // e.g. /en/about
          targetPath = `/${l}/${segments[1]}`;
       }
     }
+    // ensure trailing slash is not added if not root, wait, we don't use trailing slash in app
     dynamicHreflangs += `    <link rel="alternate" hreflang="${l}" href="${DOMAIN}${targetPath}" />\n`;
   }
   
+  // x-default
   let xDefaultPath = `/en`;
   if (toolId) {
     const toolDef = TOOLS_CATALOG.find(t => t.id === toolId);
@@ -101,73 +105,6 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
   `;
 
   html = html.replace(/(<\/head>)/i, `${headInjection}$1`);
-
-  // --- WHITE HAT SSG STATIC HTML INJECTION ---
-  const geo = UI_TRANSLATIONS[lang as keyof typeof UI_TRANSLATIONS] || UI_TRANSLATIONS['en'];
-  
-  if (geo && geo.homeGeoDefTitle) {
-    const staticSeoHtml = `
-      <main id="static-seo" role="main" style="padding: 40px; font-family: sans-serif; background: #fff; color: #333;">
-        <article itemscope itemtype="https://schema.org/Article">
-          <header>
-            <h1 itemprop="headline">${seoTitle}</h1>
-            <p itemprop="description">${seoDesc}</p>
-          </header>
-          
-          <section style="margin-top: 40px;">
-            <h2>${geo.homeGeoDefTitle}</h2>
-            <p>${geo.homeGeoDefDesc}</p>
-          </section>
-
-          <section style="margin-top: 40px;">
-            <h2>${geo.homeGeoTrustTitle}</h2>
-            <p>${geo.homeGeoTrustDesc}</p>
-          </section>
-
-          <section style="margin-top: 40px;">
-            <h2>${geo.homeGeoTakeawaysTitle}</h2>
-            <ul>
-              <li>${geo.homeGeoTakeawaysItem1}</li>
-              <li>${geo.homeGeoTakeawaysItem2}</li>
-              <li>${geo.homeGeoTakeawaysItem3}</li>
-            </ul>
-          </section>
-
-          <section style="margin-top: 40px;">
-            <h2>${geo.homeGeoFaqTitle}</h2>
-            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-              <h3 itemprop="name">${geo.homeGeoFaq1Q}</h3>
-              <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                <p itemprop="text">${geo.homeGeoFaq1A}</p>
-              </div>
-            </div>
-            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-              <h3 itemprop="name">${geo.homeGeoFaq2Q}</h3>
-              <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                <p itemprop="text">${geo.homeGeoFaq2A}</p>
-              </div>
-            </div>
-            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-              <h3 itemprop="name">${geo.homeGeoFaq3Q}</h3>
-              <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                <p itemprop="text">${geo.homeGeoFaq3A}</p>
-              </div>
-            </div>
-            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-              <h3 itemprop="name">${geo.homeGeoFaq4Q}</h3>
-              <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                <p itemprop="text">${geo.homeGeoFaq4A}</p>
-              </div>
-            </div>
-          </section>
-        </article>
-      </main>
-    `;
-
-    // Inject directly into <div id="root">
-    html = html.replace(/<div id="root"><\/div>/, `<div id="root">${staticSeoHtml}</div>`);
-  }
-
   return html;
 };
 
