@@ -38,7 +38,7 @@ const writeFileSafe = (filePath: string, content: string) => {
 };
 
 // Generate HTML
-const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: string, toolId?: string) => {
+const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: string, pageType: 'tool' | 'home' | 'static', pageId?: string) => {
   let html = baseHtmlContent;
 
   // Replace lang
@@ -61,10 +61,10 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
 
   // x-default
   let xDefaultPath = `/en`;
-  if (toolId) {
-    const toolDef = TOOLS_CATALOG.find(t => t.id === toolId);
+  if (pageType === 'tool' && pageId) {
+    const toolDef = TOOLS_CATALOG.find(t => t.id === pageId);
     if (toolDef) {
-      const localSlug = toolDef.slugs['en'] || toolId;
+      const localSlug = toolDef.slugs['en'] || pageId;
       xDefaultPath = `/en/${localSlug}`;
     }
   } else {
@@ -103,10 +103,10 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
   
   let staticSeoHtml = '';
 
-  if (toolId) {
+  if (pageType === 'tool' && pageId) {
     // 1. Tool Pages (100% Safe Pre-rendering of SeoRichSections)
-    const exactPath = path.join(__dirname, '..', 'src', 'locales', 'seo', toolId, `${lang}.json`);
-    const fallbackPath = path.join(__dirname, '..', 'src', 'locales', 'seo', toolId, `en.json`);
+    const exactPath = path.join(__dirname, '..', 'src', 'locales', 'seo', pageId, `${lang}.json`);
+    const fallbackPath = path.join(__dirname, '..', 'src', 'locales', 'seo', pageId, `en.json`);
     
     let seoJson = null;
     if (fs.existsSync(exactPath)) {
@@ -225,7 +225,7 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
         </main>
       `;
     }
-  } else if (geo && geo.homeGeoDefTitle) {
+  } else if (pageType === 'home') {
     // 2. Home Page (100% Safe Pre-rendering of HomeSections)
     const schemaGraph: any[] = [
       {
@@ -320,6 +320,95 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
         </article>
       </main>
     `;
+  } else if (pageType === 'static' && pageId) {
+    // 3. Static Pages Content Injection
+    let pageHtml = '';
+    if (pageId === 'about') {
+      pageHtml = `
+        <header><h1 itemprop="headline">${geo.pageAboutHero || seoTitle}</h1><p itemprop="description">${geo.pageAboutSub || seoDesc}</p></header>
+        <section><h2>${geo.pageAboutSec1Title || 'The Origin Story'}</h2><p>${geo.pageAboutSec1Desc}</p></section>
+        <section><h2>${geo.pageAboutSec2Title || 'Technology Stack'}</h2><p>${geo.pageAboutSec2Desc}</p></section>
+        <section><h2>${geo.pageAboutSec3Title || 'Our Guarantee'}</h2><p>${geo.pageAboutSec3Desc}</p></section>
+      `;
+    } else if (pageId === 'privacy') {
+      pageHtml = `
+        <header><h1 itemprop="headline">${geo.pagePrivacyHero || seoTitle}</h1><p itemprop="description">${geo.pagePrivacySub || seoDesc}</p></header>
+        <section><h2>${geo.pagePrivacySec1Title || 'Zero Data Storage'}</h2><p>${geo.pagePrivacySec1Desc}</p></section>
+        <section><h2>${geo.pagePrivacySec2Title || 'Local Browser Processing'}</h2><p>${geo.pagePrivacySec2Desc}</p></section>
+        <section><h2>${geo.pagePrivacySec3Title || 'No Tracking or Telemetry'}</h2><p>${geo.pagePrivacySec3Desc}</p></section>
+        <section><h2>${geo.pagePrivacySec4Title || 'GDPR & CCPA Compliant'}</h2><p>${geo.pagePrivacySec4Desc}</p></section>
+      `;
+    } else if (pageId === 'terms') {
+      pageHtml = `
+        <header><h1 itemprop="headline">${geo.pageTosHero || seoTitle}</h1><p itemprop="description">${geo.pageTosSub || seoDesc}</p></header>
+        <section><h2>${geo.pageTosSec1Title || 'Acceptable Use'}</h2><p>${geo.pageTosSec1Desc}</p></section>
+        <section><h2>${geo.pageTosSec2Title || 'Intellectual Property'}</h2><p>${geo.pageTosSec2Desc}</p></section>
+        <section><h2>${geo.pageTosSec3Title || 'Service Modifications'}</h2><p>${geo.pageTosSec3Desc}</p></section>
+        <section><h2>${geo.pageTosSec4Title || 'Limitation of Liability'}</h2><p>${geo.pageTosSec4Desc}</p></section>
+      `;
+    } else if (pageId === 'security') {
+      pageHtml = `
+        <header><h1 itemprop="headline">${geo.pageSecurityHero || seoTitle}</h1><p itemprop="description">${geo.pageSecurityHeroSub || seoDesc}</p></header>
+        <section><h2>${geo.pageSecuritySec2Title || 'WebAssembly Revolution'}</h2><p>${geo.pageSecuritySec2Desc}</p></section>
+        <section><h2>${geo.pageSecuritySec3Title || 'Your Documents Are Blind To Us'}</h2><p>${geo.pageSecuritySec3Desc}</p></section>
+        <section><h2>${geo.pageSecuritySec4Title || 'Compliance by Default'}</h2><p>${geo.pageSecuritySec4Desc}</p></section>
+        <section><h2>${geo.pageSecuritySec5Title || 'Verify It'}</h2><p>${geo.pageSecuritySec5Desc}</p></section>
+      `;
+    } else if (pageId === 'pricing') {
+      pageHtml = `
+        <header><h1 itemprop="headline">${geo.pagePricingHero || seoTitle}</h1><p itemprop="description">${geo.pagePricingHeroSub || seoDesc}</p></header>
+        <section><h2>${geo.pagePricingSec3Title || 'How is this possible?'}</h2><p>${geo.pagePricingSec3Desc}</p></section>
+        <section><h2>${geo.pagePricingSec4Title || 'Sustainable & Transparent'}</h2><p>${geo.pagePricingSec4Desc}</p></section>
+        <section><h2>${geo.pagePricingSec5Title || 'Free for Business Use'}</h2><p>${geo.pagePricingSec5Desc}</p></section>
+      `;
+    } else if (pageId === 'use-cases') {
+      pageHtml = `
+        <header><h1 itemprop="headline">${geo.pageUseCasesHero || seoTitle}</h1><p itemprop="description">${geo.pageUseCasesHeroSub || seoDesc}</p></header>
+        <section><h2>${geo.pageUseCasesSec2Title || 'Legal Teams'}</h2><p>${geo.pageUseCasesSec2Desc}</p></section>
+        <section><h2>${geo.pageUseCasesSec3Title || 'HR Professionals'}</h2><p>${geo.pageUseCasesSec3Desc}</p></section>
+        <section><h2>${geo.pageUseCasesSec4Title || 'Students'}</h2><p>${geo.pageUseCasesSec4Desc}</p></section>
+        <section><h2>${geo.pageUseCasesSec5Title || 'Real Estate'}</h2><p>${geo.pageUseCasesSec5Desc}</p></section>
+        <section><h2>${geo.pageUseCasesSec6Title || 'Find Your Own'}</h2><p>${geo.pageUseCasesSec6Desc}</p></section>
+      `;
+    } else if (pageId === 'compare') {
+      pageHtml = `
+        <header><h1 itemprop="headline">${geo.pageCompareHero || seoTitle}</h1><p itemprop="description">${geo.pageCompareHeroSub || seoDesc}</p></header>
+        <section><h2>${geo.pageCompareSec3Title || 'Network Speed vs Disk Speed'}</h2><p>${geo.pageCompareSec3Desc}</p></section>
+        <section><h2>${geo.pageCompareSec5Title || 'Upload Limits vs Unlimited Processing'}</h2><p>${geo.pageCompareSec5Desc}</p></section>
+      `;
+    } else if (pageId === 'languages') {
+      pageHtml = `
+        <header><h1 itemprop="headline">${geo.pageLangHero || seoTitle}</h1><p itemprop="description">${geo.pageLangHeroSub || seoDesc}</p></header>
+        <section><h2>${geo.pageLangSec3Title || 'Native Feel'}</h2><p>${geo.pageLangSec3Desc}</p></section>
+        <section><h2>${geo.pageLangSec4Title || 'Global Performance'}</h2><p>${geo.pageLangSec4Desc}</p></section>
+      `;
+    }
+    
+    // Default Schema for Static Pages
+    const schemaGraph = [
+      {
+        "@type": "WebPage",
+        "@id": `${DOMAIN}${urlPath}/#webpage`,
+        "url": `${DOMAIN}${urlPath}`,
+        "name": seoTitle,
+        "description": seoDesc
+      }
+    ];
+
+    const jsonLdScript = `<script type="application/ld+json">\n${JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": schemaGraph
+    }, null, 2)}\n</script>`;
+    
+    html = html.replace('<!-- JSON-LD-INJECTION -->', jsonLdScript);
+
+    staticSeoHtml = `
+      <main id="static-seo" role="main" style="padding: 40px; font-family: sans-serif; background: #fff; color: #333;">
+        <article itemscope itemtype="https://schema.org/Article">
+          ${pageHtml}
+        </article>
+      </main>
+    `;
   }
 
   if (staticSeoHtml) {
@@ -339,7 +428,8 @@ const run = async () => {
       lang,
       `/${lang}`,
       'HandleMyFile - All Document Tools in One Place',
-      'Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly.'
+      'Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly.',
+      'home'
     );
     writeFileSafe(path.join(distDir, lang, 'index.html'), homeHtml);
 
@@ -350,7 +440,9 @@ const run = async () => {
         lang,
         `/${lang}/${page}`,
         `HandleMyFile - ${page.toUpperCase()}`,
-        `Read more about HandleMyFile ${page}.`
+        `Read more about HandleMyFile ${page}.`,
+        'static',
+        page
       );
       writeFileSafe(path.join(distDir, lang, page, 'index.html'), pageHtml);
     }
@@ -365,6 +457,7 @@ const run = async () => {
         `/${lang}/${localSlug}`,
         seoData.title,
         seoData.description,
+        'tool',
         tool.id
       );
       writeFileSafe(path.join(distDir, lang, localSlug, 'index.html'), toolHtml);
@@ -376,7 +469,8 @@ const run = async () => {
     'en',
     `/`,
     'HandleMyFile - All Document Tools in One Place',
-    'Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly.'
+    'Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly.',
+    'home'
   );
   writeFileSafe(path.join(distDir, 'index.html'), rootHtml);
 
