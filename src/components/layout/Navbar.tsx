@@ -33,7 +33,7 @@ const MI: React.FC<{
     className="mega-menu-item"
     style={highlight ? { background: 'rgba(59,130,246,0.04)', borderColor: 'rgba(59,130,246,0.15)' } : {}}
   >
-    <Icon size={15} style={{ flexShrink: 0, color: highlight ? 'var(--brand-primary)' : undefined }} />
+    <Icon size={15} style={{ flexShrink: 0, color: highlight ? 'var(--brand-primary)' : '#e11d48' }} />
     <span className="item-title" style={highlight ? { color: 'var(--brand-primary)' } : {}}>{label}</span>
   </div>
 );
@@ -422,6 +422,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           font-weight: 700;
           color: var(--text-main);
           line-height: 1.2;
+          text-transform: uppercase;
         }
         .mega-menu-item:hover .item-title {
           color: var(--text-accent);
