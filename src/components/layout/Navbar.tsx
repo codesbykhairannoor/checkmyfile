@@ -143,7 +143,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 key={id}
                 onClick={() => handleToolClick(id)}
                 className="nav-tab-btn"
-                style={{ background: 'transparent', border: 'none', color: 'var(--text-main)', padding: '6px 12px', borderRadius: 8, fontSize: '0.84rem', fontWeight: 700, cursor: 'pointer', transition: 'all 0.2s', letterSpacing: '0.02em' }}
+                style={{ background: 'transparent', border: 'none', color: 'var(--text-main)', padding: '6px 12px', borderRadius: 8, fontSize: '0.92rem', fontWeight: 700, cursor: 'pointer', transition: 'all 0.2s', letterSpacing: '0.02em' }}
               >{toolNames[id]?.[currentLang]?.toUpperCase() || label}</button>
             ))}
 
@@ -158,7 +158,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   background: isMegaOpen ? 'var(--brand-gradient)' : 'rgba(225,29,72,0.1)',
                   color: isMegaOpen ? '#fff' : 'var(--text-accent)',
                   border: '1px solid rgba(225,29,72,0.3)',
-                  padding: '6px 14px', borderRadius: 8, fontSize: '0.84rem', fontWeight: 800,
+                  padding: '6px 14px', borderRadius: 8, fontSize: '0.92rem', fontWeight: 800,
                   cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 6,
                   transition: 'all 0.2s', letterSpacing: '0.02em',
                   boxShadow: isMegaOpen ? '0 4px 14px var(--brand-glow)' : 'none',
@@ -418,7 +418,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           transform: translateX(3px);
         }
         .mega-menu-item .item-title {
-          font-size: 0.98rem;
+          font-size: 1.04rem;
           font-weight: 700;
           color: var(--text-main);
           line-height: 1.2;
