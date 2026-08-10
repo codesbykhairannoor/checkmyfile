@@ -109,7 +109,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool, onNav
           <div style={{ display: 'flex', alignItems: 'center', gap: 12, userSelect: 'none' }}>
             <img src="/logo.png" alt="HandleMyFile Logo" style={{ height: 42, width: 'auto', objectFit: 'contain' }} />
             <span style={{ fontSize: 26, fontWeight: 800, color: 'var(--text-main)', letterSpacing: '-0.5px' }}>
-              HandleMy<span style={{ color: 'var(--brand-primary)' }}>File</span>
+              HandleMy<span className="gradient-text">File</span>
             </span>
           </div>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: 1.7, marginTop: 8, paddingRight: 24 }}>
