@@ -30,7 +30,7 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang, currentLang, title
     }
 
     // Determine current title, description, and faqs
-    let title = customTitle || `${t.homeHeroTitle || 'HandleMyFile'} - ${langInfo.nativeName}`;
+    let title = customTitle || `HandleMyFile | ${t.homeHeroTitle || 'All Document Tools in One Place'}`;
     let description = customDescription || t.homeHeroSubtitle || 'Process PDF, Word, Excel, and Images locally inside your browser memory. 100% Privacy, zero uploads required.';
     let faqs: { q: string; a: string }[] = [];
 

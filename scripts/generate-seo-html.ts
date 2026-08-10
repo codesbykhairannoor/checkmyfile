@@ -423,11 +423,12 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
 
 const run = async () => {
   for (const lang of LANGS) {
-    // 1. Home Page (/lang)
+    const homeTrans = UI_TRANSLATIONS[lang] ?? UI_TRANSLATIONS['en'];
+    const homeTitle = `HandleMyFile | ${homeTrans.homeHeroTitle || 'All Document Tools in One Place'}`;
     const homeHtml = generateHtml(
       lang,
       `/${lang}`,
-      'HandleMyFile - All Document Tools in One Place',
+      homeTitle,
       'Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly.',
       'home'
     );
@@ -468,7 +469,7 @@ const run = async () => {
   const rootHtml = generateHtml(
     'en',
     `/`,
-    'HandleMyFile - All Document Tools in One Place',
+    'HandleMyFile | All Document Tools in One Place',
     'Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly.',
     'home'
   );
