@@ -125,7 +125,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           {/* Brand */}
           <div onClick={onNavigateHome} aria-label="Navigate to Home" style={{ display: 'flex', alignItems: 'center', gap: 12, cursor: 'pointer', userSelect: 'none', flexShrink: 0 }}>
-            <img src="/logo.png" alt="HandleMyFile Logo" style={{ height: 38, width: 'auto', objectFit: 'contain', transform: 'scale(1.35)', transformOrigin: 'center' }} />
+            <img src="/logo.png" alt="HandleMyFile Logo" style={{ height: 28, width: 'auto', objectFit: 'contain' }} />
             <div style={{ fontSize: '1.35rem', fontWeight: 800, letterSpacing: '-0.02em', lineHeight: 1.1, fontFamily: 'var(--font-heading)' }}>
               HandleMy<span className="gradient-text">File</span>
             </div>
