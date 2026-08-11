@@ -227,7 +227,7 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang, currentLang, title
       orgScript.textContent = JSON.stringify(orgSchema);
       document.head.appendChild(orgScript);
     }
-  }, [tool, lang]);
+  }, [tool, lang, currentLang, customTitle, customDescription]);
 
   return null;
 };
