@@ -55,7 +55,8 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
 
 
           {/* Monumental Headline */}
-          <h1 
+          <h1
+            className="homepage-hero-title"
             style={{ 
               fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', 
               fontWeight: 900, 
@@ -63,8 +64,7 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
               lineHeight: 1.15,
               color: 'var(--text-main)',
               marginBottom: 24,
-              fontFamily: 'var(--font-display)',
-              textShadow: '0 0 0.5px var(--text-main)'
+              fontFamily: 'var(--font-display)'
             }}
           >
             {smartHighlight(t.homeHeroTitle || 'All Document Tools in One Place')}
