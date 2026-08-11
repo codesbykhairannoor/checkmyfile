@@ -440,7 +440,7 @@ const run = async () => {
       const pageHtml = generateHtml(
         lang,
         `/${lang}/${page}`,
-        `HandleMyFile - ${page.toUpperCase()}`,
+        `${page.toUpperCase()} | HandleMyFile`,
         `Read more about HandleMyFile ${page}.`,
         'static',
         page
@@ -456,7 +456,7 @@ const run = async () => {
       const toolHtml = generateHtml(
         lang,
         `/${lang}/${localSlug}`,
-        seoData.title,
+        `${seoData.title} | HandleMyFile`,
         seoData.description,
         'tool',
         tool.id

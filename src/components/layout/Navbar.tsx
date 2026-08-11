@@ -33,7 +33,7 @@ const MI: React.FC<{
     className="mega-menu-item"
     style={highlight ? { background: 'rgba(59,130,246,0.04)', borderColor: 'rgba(59,130,246,0.15)' } : {}}
   >
-    <Icon size={15} style={{ flexShrink: 0, color: highlight ? 'var(--brand-primary)' : '#e11d48' }} />
+    <Icon size={15} style={{ flexShrink: 0, color: highlight ? 'var(--brand-primary)' : undefined }} />
     <span className="item-title" style={highlight ? { color: 'var(--brand-primary)' } : {}}>{label}</span>
   </div>
 );

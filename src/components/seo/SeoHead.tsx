@@ -37,14 +37,13 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang, currentLang, title
     if (tool) {
       const seoData = getLocalizedSeo(tool, activeLang);
       const hasSpecificSeo = !!tool.seo[activeLang];
-      
       if (hasSpecificSeo) {
-        title = `${seoData.title} | ${langInfo.nativeName}`;
+        title = `${seoData.title} | HandleMyFile`;
         description = seoData.description;
       } else {
         const slug = tool.slugs[activeLang] || tool.id;
         const toolName = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-        title = `${toolName} - ${t.homeHeroTitle || 'HandleMyFile'} | ${langInfo.nativeName}`;
+        title = `${toolName} - ${t.homeHeroTitle || 'All Document Tools in One Place'} | HandleMyFile`;
         description = `${toolName} - ${t.homeHeroSubtitle || 'Process PDF locally. 100% Privacy, zero uploads.'}`;
       }
       faqs = seoData.faqs;
