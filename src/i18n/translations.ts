@@ -371,7 +371,7 @@ const baseDict: UiDictionary = {
     pagePrivacySec1Title: "Data Handling Matrix",
     pagePrivacySec1Desc: "We do not collect IP addresses. We do not store your files. We do not require email registrations. Every single bit of your document data remains exclusively on your physical device at all times.",
     pagePrivacySec2Title: "How Client-Side Works",
-    pagePrivacySec2Desc: "When you select a file on HandleMyFile, it is loaded directly into your browser\",
+    pagePrivacySec2Desc: "When you select a file on HandleMyFile, it is loaded directly into your browser",
     pagePrivacySec3Title: "Third-Party Integrations",
     pagePrivacySec3Desc: "We are fiercely independent. We do not embed hidden analytics trackers, advertising networks, or third-party cookies that could compromise your privacy. What happens on HandleMyFile stays on HandleMyFile.",
     pagePrivacySec4Title: "Global Compliance",
