@@ -437,11 +437,26 @@ const run = async () => {
     // 2. Static Pages
     const staticPages = ['about', 'privacy', 'terms', 'pricing', 'security', 'use-cases', 'compare', 'languages'];
     for (const page of staticPages) {
+      let pageTitle = `${page.toUpperCase()} | HandleMyFile`;
+      let pageDesc = `Read more about HandleMyFile ${page}.`;
+      const t = UI_TRANSLATIONS[lang] || UI_TRANSLATIONS['en'];
+
+      switch(page) {
+        case 'about': pageTitle = `${t.footerAbout || 'About Us'} - HandleMyFile`; pageDesc = t.pageAboutSub || 'Democratizing Document Tools'; break;
+        case 'privacy': pageTitle = `${t.footerPrivacy || 'Privacy Policy'} - HandleMyFile`; pageDesc = t.pagePrivacySub || 'Data Handling Matrix'; break;
+        case 'terms': pageTitle = `${t.footerTos || 'Terms of Service'} - HandleMyFile`; pageDesc = t.pageTosSub || 'The Sleek Ledger'; break;
+        case 'pricing': pageTitle = `${t.footerPricing || 'Pricing'} - HandleMyFile`; pageDesc = t.pagePricingHeroSub || 'Enterprise-grade document tools'; break;
+        case 'security': pageTitle = `${t.footerSecurity || 'Security & Trust'} - HandleMyFile`; pageDesc = t.pageSecurityHeroSub || 'Bank-grade security'; break;
+        case 'use-cases': pageTitle = `${t.footerUseCases || 'Use Cases'} - HandleMyFile`; pageDesc = t.pageUseCasesHeroSub || 'See how professionals use our offline document tools.'; break;
+        case 'compare': pageTitle = `${t.footerCompare || 'Compare'} - HandleMyFile`; pageDesc = t.pageCompareHeroSub || 'Tired of waiting for files to upload?'; break;
+        case 'languages': pageTitle = `${t.footerLanguages || 'Supported Languages'} - HandleMyFile`; pageDesc = t.pageLangHeroSub || 'Document utilities should be accessible'; break;
+      }
+
       const pageHtml = generateHtml(
         lang,
         `/${lang}/${page}`,
-        `${page.toUpperCase()} | HandleMyFile`,
-        `Read more about HandleMyFile ${page}.`,
+        pageTitle,
+        pageDesc,
         'static',
         page
       );
