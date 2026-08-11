@@ -53,11 +53,11 @@ export const UseCasesPage: React.FC<Props> = ({ currentLang }) => {
               </p>
             </div>
             <div style={{ flex: '1 1 400px', padding: 40, background: 'var(--bg-card)', borderRadius: 24, border: '1px solid var(--border-color)', boxShadow: '0 20px 40px rgba(0,0,0,0.05)' }}>
-              <h4 style={{ fontWeight: 800, marginBottom: 16 }}>Popular Tools for Legal:</h4>
+              <h4 style={{ fontWeight: 800, marginBottom: 16 }}>{t.useCasesLegalHeader || 'Popular Tools for Legal:'}</h4>
               <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: 12 }}>
-                <li style={{ padding: '12px 16px', background: 'var(--bg-app)', borderRadius: 8, fontWeight: 500 }}>Combine Exhibits (Merge PDF)</li>
-                <li style={{ padding: '12px 16px', background: 'var(--bg-app)', borderRadius: 8, fontWeight: 500 }}>Blackout Text (Redact PDF)</li>
-                <li style={{ padding: '12px 16px', background: 'var(--bg-app)', borderRadius: 8, fontWeight: 500 }}>Add Passwords (Protect PDF)</li>
+                <li style={{ padding: '12px 16px', background: 'var(--bg-app)', borderRadius: 8, fontWeight: 500 }}>{t.useCasesLegalTool1 || 'Combine Exhibits (Merge PDF)'}</li>
+                <li style={{ padding: '12px 16px', background: 'var(--bg-app)', borderRadius: 8, fontWeight: 500 }}>{t.useCasesLegalTool2 || 'Blackout Text (Redact PDF)'}</li>
+                <li style={{ padding: '12px 16px', background: 'var(--bg-app)', borderRadius: 8, fontWeight: 500 }}>{t.useCasesLegalTool3 || 'Add Passwords (Protect PDF)'}</li>
               </ul>
             </div>
           </div>
@@ -67,11 +67,11 @@ export const UseCasesPage: React.FC<Props> = ({ currentLang }) => {
         <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-card)', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
           <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', gap: 64, alignItems: 'center', flexWrap: 'wrap-reverse' }}>
             <div style={{ flex: '1 1 400px', padding: 40, background: 'var(--bg-app)', borderRadius: 24, border: '1px solid var(--border-color)', boxShadow: '0 20px 40px rgba(0,0,0,0.05)' }}>
-              <h4 style={{ fontWeight: 800, marginBottom: 16 }}>Popular Tools for HR:</h4>
+              <h4 style={{ fontWeight: 800, marginBottom: 16 }}>{t.useCasesHrHeader || 'Popular Tools for HR:'}</h4>
               <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: 12 }}>
-                <li style={{ padding: '12px 16px', background: 'var(--bg-card)', borderRadius: 8, fontWeight: 500 }}>Extract Resume Pages (Split PDF)</li>
-                <li style={{ padding: '12px 16px', background: 'var(--bg-card)', borderRadius: 8, fontWeight: 500 }}>Compress Offer Letters</li>
-                <li style={{ padding: '12px 16px', background: 'var(--bg-card)', borderRadius: 8, fontWeight: 500 }}>Excel to PDF (Salary tables)</li>
+                <li style={{ padding: '12px 16px', background: 'var(--bg-card)', borderRadius: 8, fontWeight: 500 }}>{t.useCasesHrTool1 || 'Extract Resume Pages (Split PDF)'}</li>
+                <li style={{ padding: '12px 16px', background: 'var(--bg-card)', borderRadius: 8, fontWeight: 500 }}>{t.useCasesHrTool2 || 'Compress Offer Letters'}</li>
+                <li style={{ padding: '12px 16px', background: 'var(--bg-card)', borderRadius: 8, fontWeight: 500 }}>{t.useCasesHrTool3 || 'Excel to PDF (Salary tables)'}</li>
               </ul>
             </div>
             <div style={{ flex: '1 1 400px' }}>
@@ -103,11 +103,11 @@ export const UseCasesPage: React.FC<Props> = ({ currentLang }) => {
               </p>
             </div>
             <div style={{ flex: '1 1 400px', padding: 40, background: 'var(--bg-card)', borderRadius: 24, border: '1px solid var(--border-color)', boxShadow: '0 20px 40px rgba(0,0,0,0.05)' }}>
-              <h4 style={{ fontWeight: 800, marginBottom: 16 }}>Popular Tools for Students:</h4>
+              <h4 style={{ fontWeight: 800, marginBottom: 16 }}>{t.useCasesStudentHeader || 'Popular Tools for Students:'}</h4>
               <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: 12 }}>
-                <li style={{ padding: '12px 16px', background: 'var(--bg-app)', borderRadius: 8, fontWeight: 500 }}>Merge Assignments</li>
-                <li style={{ padding: '12px 16px', background: 'var(--bg-app)', borderRadius: 8, fontWeight: 500 }}>Compress Presentations (PPTX to PDF)</li>
-                <li style={{ padding: '12px 16px', background: 'var(--bg-app)', borderRadius: 8, fontWeight: 500 }}>Image to PDF (Scanner apps)</li>
+                <li style={{ padding: '12px 16px', background: 'var(--bg-app)', borderRadius: 8, fontWeight: 500 }}>{t.useCasesStudentTool1 || 'Merge Assignments'}</li>
+                <li style={{ padding: '12px 16px', background: 'var(--bg-app)', borderRadius: 8, fontWeight: 500 }}>{t.useCasesStudentTool2 || 'Compress Presentations (PPTX to PDF)'}</li>
+                <li style={{ padding: '12px 16px', background: 'var(--bg-app)', borderRadius: 8, fontWeight: 500 }}>{t.useCasesStudentTool3 || 'Image to PDF (Scanner apps)'}</li>
               </ul>
             </div>
           </div>
@@ -117,11 +117,11 @@ export const UseCasesPage: React.FC<Props> = ({ currentLang }) => {
         <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-card)', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
           <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', gap: 64, alignItems: 'center', flexWrap: 'wrap-reverse' }}>
             <div style={{ flex: '1 1 400px', padding: 40, background: 'var(--bg-app)', borderRadius: 24, border: '1px solid var(--border-color)', boxShadow: '0 20px 40px rgba(0,0,0,0.05)' }}>
-              <h4 style={{ fontWeight: 800, marginBottom: 16 }}>Popular Tools for Real Estate:</h4>
+              <h4 style={{ fontWeight: 800, marginBottom: 16 }}>{t.useCasesRealEstateHeader || 'Popular Tools for Real Estate:'}</h4>
               <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: 12 }}>
-                <li style={{ padding: '12px 16px', background: 'var(--bg-card)', borderRadius: 8, fontWeight: 500 }}>Sign Leases (Sign PDF)</li>
-                <li style={{ padding: '12px 16px', background: 'var(--bg-card)', borderRadius: 8, fontWeight: 500 }}>Watermark Property Photos</li>
-                <li style={{ padding: '12px 16px', background: 'var(--bg-card)', borderRadius: 8, fontWeight: 500 }}>Compress High-Res Brochures</li>
+                <li style={{ padding: '12px 16px', background: 'var(--bg-card)', borderRadius: 8, fontWeight: 500 }}>{t.useCasesRealEstateTool1 || 'Sign Leases (Sign PDF)'}</li>
+                <li style={{ padding: '12px 16px', background: 'var(--bg-card)', borderRadius: 8, fontWeight: 500 }}>{t.useCasesRealEstateTool2 || 'Watermark Property Photos'}</li>
+                <li style={{ padding: '12px 16px', background: 'var(--bg-card)', borderRadius: 8, fontWeight: 500 }}>{t.useCasesRealEstateTool3 || 'Compress High-Res Brochures'}</li>
               </ul>
             </div>
             <div style={{ flex: '1 1 400px' }}>

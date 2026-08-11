@@ -44,18 +44,18 @@ export const AboutUsPage: React.FC<Props> = ({ currentLang }) => {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 32 }}>
               <div className="hover-lift" style={{ padding: 40, borderRadius: 24, background: 'var(--bg-app)', border: '1px solid var(--border-color)', textAlign: 'center' }}>
                 <ShieldCheck size={48} className="text-brand-primary" style={{ margin: '0 auto 24px' }} />
-                <h3 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: 16 }}>Absolute Privacy</h3>
-                <p style={{ color: 'var(--text-muted)', lineHeight: 1.6 }}>We fundamentally redesigned how document tools work. By processing everything locally in your browser, your files never touch a server.</p>
+                <h3 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: 16 }}>{t.pageAboutCard1Title || 'Absolute Privacy'}</h3>
+                <p style={{ color: 'var(--text-muted)', lineHeight: 1.6 }}>{t.pageAboutCard1Desc || 'We fundamentally redesigned how document tools work. By processing everything locally in your browser, your files never touch a server.'}</p>
               </div>
               <div className="hover-lift" style={{ padding: 40, borderRadius: 24, background: 'var(--bg-app)', border: '1px solid var(--border-color)', textAlign: 'center' }}>
                 <Zap size={48} className="text-brand-primary" style={{ margin: '0 auto 24px' }} />
-                <h3 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: 16 }}>Lightning Fast</h3>
-                <p style={{ color: 'var(--text-muted)', lineHeight: 1.6 }}>WebAssembly allows HandleMyFile to run complex PDF manipulations directly on your device CPU, bypassing upload and download bottlenecks.</p>
+                <h3 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: 16 }}>{t.pageAboutCard2Title || 'Lightning Fast'}</h3>
+                <p style={{ color: 'var(--text-muted)', lineHeight: 1.6 }}>{t.pageAboutCard2Desc || 'WebAssembly allows HandleMyFile to run complex PDF manipulations directly on your device CPU, bypassing upload and download bottlenecks.'}</p>
               </div>
               <div className="hover-lift" style={{ padding: 40, borderRadius: 24, background: 'var(--bg-app)', border: '1px solid var(--border-color)', textAlign: 'center' }}>
                 <Users size={48} className="text-brand-primary" style={{ margin: '0 auto 24px' }} />
-                <h3 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: 16 }}>For Everyone</h3>
-                <p style={{ color: 'var(--text-muted)', lineHeight: 1.6 }}>We translated our entire platform into 30 languages. No subscriptions, no hidden fees, just world-class tools available globally.</p>
+                <h3 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: 16 }}>{t.pageAboutCard3Title || 'For Everyone'}</h3>
+                <p style={{ color: 'var(--text-muted)', lineHeight: 1.6 }}>{t.pageAboutCard3Desc || 'We translated our entire platform into 30 languages. No subscriptions, no hidden fees, just world-class tools available globally.'}</p>
               </div>
             </div>
           </div>
@@ -106,7 +106,7 @@ export const AboutUsPage: React.FC<Props> = ({ currentLang }) => {
               {t.pageAboutSec4Desc || 'We rely on our community to keep this project alive. Share HandleMyFile with your friends, family, and coworkers. Together, we can build a safer, faster, and more accessible web.'}
             </p>
             <button onClick={() => window.scrollTo(0, 0)} className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: 12, padding: '16px 32px', fontSize: '1.1rem', fontWeight: 800, background: 'var(--brand-gradient)', color: '#fff', border: 'none', borderRadius: 100, cursor: 'pointer', boxShadow: '0 10px 30px var(--brand-glow)' }}>
-              <span>Use Tools Now</span>
+              <span>{t.useToolsNow || 'Use Tools Now'}</span>
               <ArrowRight size={20} />
             </button>
           </div>

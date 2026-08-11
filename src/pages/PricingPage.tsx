@@ -47,23 +47,23 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
                 <h3 style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--text-muted)', marginBottom: 16 }}>{t.pagePricingComp || 'Traditional Cloud Tools'}</h3>
                 <div style={{ fontSize: '3rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 32 }}>$20<span style={{ fontSize: '1rem', color: 'var(--text-muted)', fontWeight: 500 }}>/mo</span></div>
                 <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: 16 }}>
-                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-muted)' }}><X size={20} /> Data uploaded to their servers</li>
-                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-muted)' }}><X size={20} /> File size limits on free tier</li>
-                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-muted)' }}><X size={20} /> Requires email registration</li>
-                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-muted)' }}><X size={20} /> Slow network processing</li>
+                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-muted)' }}><X size={20} /> {t.pricingCompItem1 || 'Data uploaded to their servers'}</li>
+                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-muted)' }}><X size={20} /> {t.pricingCompItem2 || 'File size limits on free tier'}</li>
+                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-muted)' }}><X size={20} /> {t.pricingCompItem3 || 'Requires email registration'}</li>
+                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-muted)' }}><X size={20} /> {t.pricingCompItem4 || 'Slow network processing'}</li>
                 </ul>
               </div>
               
               {/* HandleMyFile */}
               <div style={{ background: 'var(--bg-card)', borderRadius: 24, padding: 48, border: '2px solid var(--brand-primary)', position: 'relative', boxShadow: '0 20px 40px var(--brand-glow)' }}>
-                <div style={{ position: 'absolute', top: -14, left: '50%', transform: 'translateX(-50%)', background: 'var(--brand-gradient)', color: '#fff', padding: '4px 16px', borderRadius: 100, fontWeight: 800, fontSize: '0.85rem' }}>RECOMMENDED</div>
+                <div style={{ position: 'absolute', top: -14, left: '50%', transform: 'translateX(-50%)', background: 'var(--brand-gradient)', color: '#fff', padding: '4px 16px', borderRadius: 100, fontWeight: 800, fontSize: '0.85rem' }}>{t.pricingHmfBadge || 'RECOMMENDED'}</div>
                 <h3 style={{ fontSize: '1.5rem', fontWeight: 900, color: 'var(--brand-primary)', marginBottom: 16 }}>HandleMyFile</h3>
                 <div style={{ fontSize: '3.5rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 32, lineHeight: 1 }}>$0<span style={{ fontSize: '1rem', color: 'var(--text-muted)', fontWeight: 500 }}>/forever</span></div>
                 <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: 16 }}>
-                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 500 }}><Check size={20} color="var(--brand-primary)" /> 100% Client-side processing</li>
-                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 500 }}><Check size={20} color="var(--brand-primary)" /> Unlimited file sizes & usage</li>
-                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 500 }}><Check size={20} color="var(--brand-primary)" /> No accounts or logins needed</li>
-                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 500 }}><Check size={20} color="var(--brand-primary)" /> Instant WebAssembly speed</li>
+                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 500 }}><Check size={20} color="var(--brand-primary)" /> {t.pricingHmfItem1 || '100% Client-side processing'}</li>
+                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 500 }}><Check size={20} color="var(--brand-primary)" /> {t.pricingHmfItem2 || 'Unlimited file sizes & usage'}</li>
+                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 500 }}><Check size={20} color="var(--brand-primary)" /> {t.pricingHmfItem3 || 'No accounts or logins needed'}</li>
+                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 500 }}><Check size={20} color="var(--brand-primary)" /> {t.pricingHmfItem4 || 'Instant WebAssembly speed'}</li>
                 </ul>
               </div>
             </div>
@@ -105,15 +105,15 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
               <div style={{ padding: 32, background: 'var(--bg-app)', borderRadius: 24, border: '1px solid var(--border-color)', width: '100%' }}>
                 <div style={{ display: 'flex', gap: 16, alignItems: 'center', marginBottom: 24 }}>
                   <div style={{ width: 12, height: 12, borderRadius: 6, background: 'var(--brand-primary)' }}></div>
-                  <span style={{ fontWeight: 700, color: 'var(--text-main)' }}>Enterprise Compliant</span>
+                  <span style={{ fontWeight: 700, color: 'var(--text-main)' }}>{t.pricingEnterpriseCompliant || 'Enterprise Compliant'}</span>
                 </div>
                 <div style={{ display: 'flex', gap: 16, alignItems: 'center', marginBottom: 24 }}>
                   <div style={{ width: 12, height: 12, borderRadius: 6, background: 'var(--brand-primary)' }}></div>
-                  <span style={{ fontWeight: 700, color: 'var(--text-main)' }}>Zero-Data Retention</span>
+                  <span style={{ fontWeight: 700, color: 'var(--text-main)' }}>{t.pricingZeroDataRetention || 'Zero-Data Retention'}</span>
                 </div>
                 <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
                   <div style={{ width: 12, height: 12, borderRadius: 6, background: 'var(--brand-primary)' }}></div>
-                  <span style={{ fontWeight: 700, color: 'var(--text-main)' }}>GDPR & CCPA Friendly</span>
+                  <span style={{ fontWeight: 700, color: 'var(--text-main)' }}>{t.pricingGdprFriendly || 'GDPR & CCPA Friendly'}</span>
                 </div>
               </div>
             </div>

@@ -44,10 +44,10 @@ export const TosPage: React.FC<Props> = ({ currentLang }) => {
           <div style={{ maxWidth: 800, margin: '0 auto' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 24 }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 48, height: 48, borderRadius: 12, background: 'var(--brand-gradient)', color: '#fff', fontWeight: 900, fontSize: '1.5rem' }}>1</div>
-              <h2 style={{ fontSize: '2rem', fontWeight: 900, color: 'var(--text-main)' }}>Agreement to Terms</h2>
+              <h2 style={{ fontSize: '2rem', fontWeight: 900, color: 'var(--text-main)' }}>{t.pageTosAgreementTitle || 'Agreement to Terms'}</h2>
             </div>
             <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8, paddingLeft: 64 }}>
-              By accessing and using HandleMyFile, you agree to be bound by these Terms of Service. If you disagree with any part of the terms, you do not have permission to access the Service. Our platform is provided completely free of charge for both personal and commercial use.
+              {t.pageTosAgreementDesc || 'By accessing and using HandleMyFile, you agree to be bound by these Terms of Service. If you disagree with any part of the terms, you do not have permission to access the Service. Our platform is provided completely free of charge for both personal and commercial use.'}
             </p>
           </div>
         </section>
@@ -57,20 +57,20 @@ export const TosPage: React.FC<Props> = ({ currentLang }) => {
           <div style={{ maxWidth: 800, margin: '0 auto' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 24 }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 48, height: 48, borderRadius: 12, background: 'var(--brand-gradient)', color: '#fff', fontWeight: 900, fontSize: '1.5rem' }}>2</div>
-              <h2 style={{ fontSize: '2rem', fontWeight: 900, color: 'var(--text-main)' }}>Local Processing Guarantee</h2>
+              <h2 style={{ fontSize: '2rem', fontWeight: 900, color: 'var(--text-main)' }}>{t.pageTosLocalProcessTitle || 'Local Processing Guarantee'}</h2>
             </div>
             <div style={{ paddingLeft: 64 }}>
               <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: 24 }}>
-                HandleMyFile provides document manipulation tools that execute strictly within your local browser environment via WebAssembly. We guarantee that:
+                {t.pageTosLocalProcessDesc || 'HandleMyFile provides document manipulation tools that execute strictly within your local browser environment via WebAssembly. We guarantee that:'}
               </p>
               <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: 16 }}>
                 <li style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
                   <ShieldCheck color="var(--brand-primary)" size={24} style={{ marginTop: 2, flexShrink: 0 }} />
-                  <span style={{ fontSize: '1.1rem', color: 'var(--text-main)', lineHeight: 1.6 }}>Your files are never uploaded to our servers or any third-party infrastructure.</span>
+                  <span style={{ fontSize: '1.1rem', color: 'var(--text-main)', lineHeight: 1.6 }}>{t.pageTosGuarantee1 || 'Your files are never uploaded to our servers or any third-party infrastructure.'}</span>
                 </li>
                 <li style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
                   <ShieldCheck color="var(--brand-primary)" size={24} style={{ marginTop: 2, flexShrink: 0 }} />
-                  <span style={{ fontSize: '1.1rem', color: 'var(--text-main)', lineHeight: 1.6 }}>We do not retain copies of your data, metadata, or processed documents.</span>
+                  <span style={{ fontSize: '1.1rem', color: 'var(--text-main)', lineHeight: 1.6 }}>{t.pageTosGuarantee2 || 'We do not retain copies of your data, metadata, or processed documents.'}</span>
                 </li>
               </ul>
             </div>
@@ -108,7 +108,7 @@ export const TosPage: React.FC<Props> = ({ currentLang }) => {
           <div style={{ maxWidth: 800, margin: '0 auto' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 24 }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 48, height: 48, borderRadius: 12, background: 'var(--brand-gradient)', color: '#fff', fontWeight: 900, fontSize: '1.5rem' }}>5</div>
-              <h2 style={{ fontSize: '2rem', fontWeight: 900, color: 'var(--text-main)' }}>Disclaimers & Liability</h2>
+              <h2 style={{ fontSize: '2rem', fontWeight: 900, color: 'var(--text-main)' }}>{t.pageTosDisclaimersTitle || 'Disclaimers & Liability'}</h2>
             </div>
             <div style={{ paddingLeft: 64, display: 'flex', flexDirection: 'column', gap: 32 }}>
               <div>

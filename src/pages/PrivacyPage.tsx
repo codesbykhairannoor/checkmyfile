@@ -57,18 +57,18 @@ export const PrivacyPage: React.FC<Props> = ({ currentLang }) => {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 32 }}>
               <div className="hover-lift" style={{ padding: 40, background: 'var(--bg-app)', borderRadius: 24, border: '1px solid var(--border-color)', borderTop: '4px solid var(--brand-primary)' }}>
                 <Lock size={32} className="text-brand-primary" style={{ marginBottom: 20 }} />
-                <h3 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: 16 }}>Zero Data Collection</h3>
-                <p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>We do not collect, store, or transmit your documents. HandleMyFile does not even have a database for user files. Processing occurs entirely within your browser's memory.</p>
+                <h3 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: 16 }}>{t.pagePrivacyCard1Title || 'Zero Data Collection'}</h3>
+                <p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>{t.pagePrivacyCard1Desc || "We do not collect, store, or transmit your documents. HandleMyFile does not even have a database for user files. Processing occurs entirely within your browser's memory."}</p>
               </div>
               <div className="hover-lift" style={{ padding: 40, background: 'var(--bg-app)', borderRadius: 24, border: '1px solid var(--border-color)', borderTop: '4px solid var(--brand-primary)' }}>
                 <Database size={32} className="text-brand-primary" style={{ marginBottom: 20 }} />
-                <h3 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: 16 }}>No Cloud Uploads</h3>
-                <p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>Traditional tools force you to upload sensitive PDFs to foreign servers. We utilize WebAssembly to bring the server to you. Your network tab will prove no files are sent.</p>
+                <h3 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: 16 }}>{t.pagePrivacyCard2Title || 'No Cloud Uploads'}</h3>
+                <p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>{t.pagePrivacyCard2Desc || 'Traditional tools force you to upload sensitive PDFs to foreign servers. We utilize WebAssembly to bring the server to you. Your network tab will prove no files are sent.'}</p>
               </div>
               <div className="hover-lift" style={{ padding: 40, background: 'var(--bg-app)', borderRadius: 24, border: '1px solid var(--border-color)', borderTop: '4px solid var(--brand-primary)' }}>
                 <EyeOff size={32} className="text-brand-primary" style={{ marginBottom: 20 }} />
-                <h3 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: 16 }}>Anonymous Usage</h3>
-                <p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>We do not require accounts, logins, or email registrations. You remain completely anonymous while using the HandleMyFile platform.</p>
+                <h3 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: 16 }}>{t.pagePrivacyCard3Title || 'Anonymous Usage'}</h3>
+                <p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>{t.pagePrivacyCard3Desc || 'We do not require accounts, logins, or email registrations. You remain completely anonymous while using the HandleMyFile platform.'}</p>
               </div>
             </div>
           </div>

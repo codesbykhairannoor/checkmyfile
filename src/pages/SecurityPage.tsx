@@ -49,8 +49,8 @@ export const SecurityPage: React.FC<Props> = ({ currentLang }) => {
                 <div style={{ width: 48, height: 48, borderRadius: 24, background: 'var(--brand-glow)', color: 'var(--brand-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 24 }}>
                   <Lock size={24} />
                 </div>
-                <h3 style={{ fontSize: '1.3rem', fontWeight: 800, color: 'var(--text-main)', marginBottom: 12 }}>1. Local Selection</h3>
-                <p style={{ color: 'var(--text-muted)', lineHeight: 1.6 }}>You select a file. The browser locks the file in local memory. No network request is initiated.</p>
+                <h3 style={{ fontSize: '1.3rem', fontWeight: 800, color: 'var(--text-main)', marginBottom: 12 }}>{t.pageSecStep1Title || '1. Local Selection'}</h3>
+                <p style={{ color: 'var(--text-muted)', lineHeight: 1.6 }}>{t.pageSecStep1Desc || 'You select a file. The browser locks the file in local memory. No network request is initiated.'}</p>
               </div>
               
               {/* Step 2 */}
@@ -58,8 +58,8 @@ export const SecurityPage: React.FC<Props> = ({ currentLang }) => {
                 <div style={{ width: 48, height: 48, borderRadius: 24, background: 'var(--brand-gradient)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 24 }}>
                   <Cpu size={24} />
                 </div>
-                <h3 style={{ fontSize: '1.3rem', fontWeight: 800, color: 'var(--text-main)', marginBottom: 12 }}>2. Wasm Engine</h3>
-                <p style={{ color: 'var(--text-muted)', lineHeight: 1.6 }}>Our C/C++ engine runs compiled WebAssembly directly on your CPU to process the document offline.</p>
+                <h3 style={{ fontSize: '1.3rem', fontWeight: 800, color: 'var(--text-main)', marginBottom: 12 }}>{t.pageSecStep2Title || '2. Wasm Engine'}</h3>
+                <p style={{ color: 'var(--text-muted)', lineHeight: 1.6 }}>{t.pageSecStep2Desc || 'Our C/C++ engine runs compiled WebAssembly directly on your CPU to process the document offline.'}</p>
               </div>
 
               {/* Step 3 */}
@@ -67,8 +67,8 @@ export const SecurityPage: React.FC<Props> = ({ currentLang }) => {
                 <div style={{ width: 48, height: 48, borderRadius: 24, background: 'var(--brand-glow)', color: 'var(--brand-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 24 }}>
                   <GlobeLock size={24} />
                 </div>
-                <h3 style={{ fontSize: '1.3rem', fontWeight: 800, color: 'var(--text-main)', marginBottom: 12 }}>3. Direct Save</h3>
-                <p style={{ color: 'var(--text-muted)', lineHeight: 1.6 }}>The processed file is reconstructed in memory and saved directly to your hard drive.</p>
+                <h3 style={{ fontSize: '1.3rem', fontWeight: 800, color: 'var(--text-main)', marginBottom: 12 }}>{t.pageSecStep3Title || '3. Direct Save'}</h3>
+                <p style={{ color: 'var(--text-muted)', lineHeight: 1.6 }}>{t.pageSecStep3Desc || 'The processed file is reconstructed in memory and saved directly to your hard drive.'}</p>
               </div>
             </div>
           </div>
@@ -94,10 +94,10 @@ export const SecurityPage: React.FC<Props> = ({ currentLang }) => {
                 {t.pageSecuritySec4Desc || 'Because HandleMyFile cannot access your files, using our tools automatically complies with the strictest data protection laws worldwide.'}
               </p>
               <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: 12 }}>
-                <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 600 }}><CheckCircle2 size={20} color="var(--brand-primary)" /> HIPAA (Healthcare Data)</li>
-                <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 600 }}><CheckCircle2 size={20} color="var(--brand-primary)" /> GDPR (European Privacy)</li>
-                <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 600 }}><CheckCircle2 size={20} color="var(--brand-primary)" /> CCPA (California Privacy)</li>
-                <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 600 }}><CheckCircle2 size={20} color="var(--brand-primary)" /> NDA Protected Files</li>
+                <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 600 }}><CheckCircle2 size={20} color="var(--brand-primary)" /> {t.pageSecCompliance1 || 'HIPAA (Healthcare Data)'}</li>
+                <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 600 }}><CheckCircle2 size={20} color="var(--brand-primary)" /> {t.pageSecCompliance2 || 'GDPR (European Privacy)'}</li>
+                <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 600 }}><CheckCircle2 size={20} color="var(--brand-primary)" /> {t.pageSecCompliance3 || 'CCPA (California Privacy)'}</li>
+                <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 600 }}><CheckCircle2 size={20} color="var(--brand-primary)" /> {t.pageSecCompliance4 || 'NDA Protected Files'}</li>
               </ul>
             </div>
             <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}>
@@ -115,13 +115,13 @@ export const SecurityPage: React.FC<Props> = ({ currentLang }) => {
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
               <div style={{ padding: 24, background: 'var(--bg-app)', borderRadius: 16, border: '1px solid var(--border-color)' }}>
-                <strong>Step 1:</strong> Load HandleMyFile.com in your browser.
+                <strong>{t.pageSecVerifyStep1Label || 'Step 1:'}</strong> {t.pageSecVerifyStep1Desc || 'Load HandleMyFile.com in your browser.'}
               </div>
               <div style={{ padding: 24, background: 'var(--bg-app)', borderRadius: 16, border: '1px solid var(--border-color)' }}>
-                <strong>Step 2:</strong> Turn off your Wi-Fi or unplug your ethernet cable.
+                <strong>{t.pageSecVerifyStep2Label || 'Step 2:'}</strong> {t.pageSecVerifyStep2Desc || 'Turn off your Wi-Fi or unplug your ethernet cable.'}
               </div>
               <div style={{ padding: 24, background: 'var(--bg-app)', borderRadius: 16, border: '1px solid var(--border-color)' }}>
-                <strong>Step 3:</strong> Process any PDF. It will work perfectly, proving no server upload is required.
+                <strong>{t.pageSecVerifyStep3Label || 'Step 3:'}</strong> {t.pageSecVerifyStep3Desc || 'Process any PDF. It will work perfectly, proving no server upload is required.'}
               </div>
             </div>
           </div>
