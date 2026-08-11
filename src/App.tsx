@@ -14,6 +14,7 @@ import { ComparePage } from './pages/ComparePage';
 import { LanguagesPage } from './pages/LanguagesPage';
 import { getToolBySlugAndLang, type ToolDefinition } from './catalog/toolsCatalog';
 import { isValidLanguageCode } from './i18n/languages';
+import { getStaticPageIdFromSlug, getLocalizedStaticSlug, type StaticPageId } from './i18n/staticSlugs';
 
 export const App: React.FC = () => {
   const parseUrlState = () => {
@@ -34,8 +35,9 @@ export const App: React.FC = () => {
     let activeToolVal: ToolDefinition | null = null;
 
     if (slug) {
-      if (['about', 'privacy', 'terms', 'pricing', 'security', 'use-cases', 'compare', 'languages'].includes(slug)) {
-        activePageVal = slug;
+      const staticPageId = getStaticPageIdFromSlug(slug, detectedLang);
+      if (staticPageId) {
+        activePageVal = staticPageId;
       } else {
         const tool = getToolBySlugAndLang(slug, detectedLang);
         if (!tool) {
@@ -82,8 +84,9 @@ export const App: React.FC = () => {
       setCurrentLang(detectedLang);
 
       if (slug) {
-        if (['about', 'privacy', 'terms', 'pricing', 'security', 'use-cases', 'compare', 'languages'].includes(slug)) {
-          setActivePage(slug);
+        const staticPageId = getStaticPageIdFromSlug(slug, detectedLang);
+        if (staticPageId) {
+          setActivePage(staticPageId);
           setActiveTool(null);
         } else {
           const tool = getToolBySlugAndLang(slug, detectedLang);
@@ -127,7 +130,7 @@ export const App: React.FC = () => {
     if (activeTool) {
       newPath = `/${code}/${activeTool.slugs[code] || activeTool.id}`;
     } else if (activePage) {
-      newPath = `/${code}/${activePage}`;
+      newPath = `/${code}/${getLocalizedStaticSlug(activePage as StaticPageId, code)}`;
     }
     window.history.pushState({}, '', newPath);
   };
@@ -157,7 +160,7 @@ export const App: React.FC = () => {
   const handleNavigatePage = (pageSlug: string) => {
     setActiveTool(null);
     setActivePage(pageSlug);
-    window.history.pushState({}, '', `/${currentLang}/${pageSlug}`);
+    window.history.pushState({}, '', `/${currentLang}/${getLocalizedStaticSlug(pageSlug as StaticPageId, currentLang)}`);
     window.scrollTo({ top: 0, behavior: 'smooth' });
     // Track static page navigation (SEO signal)
     trackPageNavigated({ page_slug: pageSlug, language: currentLang });

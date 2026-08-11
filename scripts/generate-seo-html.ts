@@ -5,6 +5,7 @@ import { SUPPORTED_LANGUAGES } from '../src/i18n/languages';
 import { TOOLS_CATALOG, getLocalizedSeo } from '../src/catalog/toolsCatalog';
 import { UI_TRANSLATIONS } from '../src/i18n/translations';
 import { GEO_CITATIONS } from '../src/i18n/geoTranslations';
+import { STATIC_SLUGS } from '../src/i18n/staticSlugs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -452,15 +453,17 @@ const run = async () => {
         case 'languages': pageTitle = `${t.footerLanguages || 'Supported Languages'} - HandleMyFile`; pageDesc = t.pageLangHeroSub || 'Document utilities should be accessible'; break;
       }
 
+      const localSlug = STATIC_SLUGS[lang]?.[page as keyof typeof STATIC_SLUGS['en']] || STATIC_SLUGS['en'][page as keyof typeof STATIC_SLUGS['en']] || page;
+
       const pageHtml = generateHtml(
         lang,
-        `/${lang}/${page}`,
+        `/${lang}/${localSlug}`,
         pageTitle,
         pageDesc,
         'static',
         page
       );
-      writeFileSafe(path.join(distDir, lang, page, 'index.html'), pageHtml);
+      writeFileSafe(path.join(distDir, lang, localSlug, 'index.html'), pageHtml);
     }
 
     // 3. Tool Pages
