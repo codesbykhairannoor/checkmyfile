@@ -35,7 +35,7 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
       {/* Hero Section (OneForMind Blueprint via Vanilla Inline Styles) */}
       <section style={{ 
         position: 'relative',
-        paddingTop: 'clamp(40px, 8vw, 80px)', 
+        paddingTop: 'clamp(80px, 12vw, 120px)', 
         paddingBottom: '40px',
         textAlign: 'center',
       }}>
