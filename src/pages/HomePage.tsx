@@ -63,7 +63,8 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
               lineHeight: 1.15,
               color: 'var(--text-main)',
               marginBottom: 24,
-              fontFamily: 'var(--font-display)'
+              fontFamily: 'var(--font-display)',
+              textShadow: '0 0 0.5px var(--text-main)'
             }}
           >
             {smartHighlight(t.homeHeroTitle || 'All Document Tools in One Place')}
