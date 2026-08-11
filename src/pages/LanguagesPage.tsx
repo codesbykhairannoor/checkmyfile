@@ -1,7 +1,7 @@
 import React from 'react';
 import { getUiTranslations } from '../i18n/translations';
 import { SeoHead } from '../components/seo/SeoHead';
-import { Breadcrumbs } from '../components/common/Breadcrumbs';
+
 import { Globe, Globe2, Languages, MapPin, CheckCircle2 } from 'lucide-react';
 import { SUPPORTED_LANGUAGES } from '../i18n/languages';
 
@@ -22,7 +22,7 @@ export const LanguagesPage: React.FC<Props> = ({ currentLang }) => {
       />
       
       <main style={{ width: '100%', flex: 1, background: 'var(--bg-app)' }}>
-        <Breadcrumbs currentLang={currentLang} items={[{ label: t.footerLanguages || 'Supported Languages' }]} />
+        
         
         {/* Section 1: Hero */}
         <section style={{ width: '100%', padding: '120px 24px', background: 'var(--bg-card)', borderBottom: '1px solid var(--border-color)', position: 'relative', overflow: 'hidden' }}>

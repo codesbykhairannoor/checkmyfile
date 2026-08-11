@@ -1,7 +1,7 @@
 import React from 'react';
 import { getUiTranslations } from '../i18n/translations';
 import { SeoHead } from '../components/seo/SeoHead';
-import { Breadcrumbs } from '../components/common/Breadcrumbs';
+
 import { ShieldCheck, Lock, Cpu, EyeOff, GlobeLock, CheckCircle2 } from 'lucide-react';
 
 interface Props {
@@ -21,7 +21,7 @@ export const SecurityPage: React.FC<Props> = ({ currentLang }) => {
       />
       
       <main style={{ width: '100%', flex: 1, background: 'var(--bg-app)' }}>
-        <Breadcrumbs currentLang={currentLang} items={[{ label: t.footerSecurity || 'Security' }]} />
+        
         
         {/* Section 1: Hero */}
         <section style={{ width: '100%', padding: '120px 24px', background: 'var(--bg-card)', borderBottom: '1px solid var(--border-color)', position: 'relative', overflow: 'hidden' }}>

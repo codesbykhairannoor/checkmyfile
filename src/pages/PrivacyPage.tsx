@@ -1,7 +1,7 @@
 import React from 'react';
 import { getUiTranslations } from '../i18n/translations';
 import { SeoHead } from '../components/seo/SeoHead';
-import { Breadcrumbs } from '../components/common/Breadcrumbs';
+
 import { ShieldAlert, Lock, Database, EyeOff, Cpu } from 'lucide-react';
 
 interface Props {
@@ -20,7 +20,7 @@ export const PrivacyPage: React.FC<Props> = ({ currentLang }) => {
         slug="privacy"
       />
       <main style={{ width: '100%', flex: 1, background: 'var(--bg-app)' }}>
-        <Breadcrumbs currentLang={currentLang} items={[{ label: t.footerPrivacy || 'Privacy Policy' }]} />
+        
         
         {/* Section 1: Hero Vault */}
         <section style={{ width: '100%', padding: '120px 24px', background: 'var(--bg-card)', borderBottom: '1px solid var(--border-color)', position: 'relative', overflow: 'hidden' }}>

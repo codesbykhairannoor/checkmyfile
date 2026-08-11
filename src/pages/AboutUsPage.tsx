@@ -1,7 +1,7 @@
 import React from 'react';
 import { getUiTranslations } from '../i18n/translations';
 import { SeoHead } from '../components/seo/SeoHead';
-import { Breadcrumbs } from '../components/common/Breadcrumbs';
+
 import { Users, Globe2, ShieldCheck, Zap, ArrowRight, Heart } from 'lucide-react';
 
 interface Props {
@@ -20,7 +20,7 @@ export const AboutUsPage: React.FC<Props> = ({ currentLang }) => {
         slug="about"
       />
       <main style={{ width: '100%', flex: 1 }}>
-        <Breadcrumbs currentLang={currentLang} items={[{ label: t.footerAbout || 'About Us' }]} />
+        
         
         {/* Section 1: Hero */}
         <section style={{ position: 'relative', width: '100%', padding: '120px 24px', background: 'var(--bg-app)', overflow: 'hidden' }}>
