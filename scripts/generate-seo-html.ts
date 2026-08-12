@@ -424,16 +424,20 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
 
 const run = async () => {
   for (const lang of LANGS) {
+    const isEn = lang === 'en';
     const homeTrans = UI_TRANSLATIONS[lang] ?? UI_TRANSLATIONS['en'];
     const homeTitle = `HandleMyFile | ${homeTrans.homeHeroTitle || 'All Document Tools in One Place'}`;
-    const homeHtml = generateHtml(
-      lang,
-      `/${lang}`,
-      homeTitle,
-      'Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly.',
-      'home'
-    );
-    writeFileSafe(path.join(distDir, lang, 'index.html'), homeHtml);
+    // English home → dist/index.html (already generated at bottom), skip here
+    if (!isEn) {
+      const homeHtml = generateHtml(
+        lang,
+        `/${lang}`,
+        homeTitle,
+        'Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly.',
+        'home'
+      );
+      writeFileSafe(path.join(distDir, lang, 'index.html'), homeHtml);
+    }
 
     // 2. Static Pages
     const staticPages = ['about', 'privacy', 'terms', 'pricing', 'security', 'use-cases', 'compare', 'languages'];
@@ -455,31 +459,29 @@ const run = async () => {
 
       const localSlug = STATIC_SLUGS[lang]?.[page as keyof typeof STATIC_SLUGS['en']] || STATIC_SLUGS['en'][page as keyof typeof STATIC_SLUGS['en']] || page;
 
-      const pageHtml = generateHtml(
-        lang,
-        `/${lang}/${localSlug}`,
-        pageTitle,
-        pageDesc,
-        'static',
-        page
-      );
-      writeFileSafe(path.join(distDir, lang, localSlug, 'index.html'), pageHtml);
+      // English: no /en/ prefix — serve at root /about, /pricing, etc.
+      const urlPath = isEn ? `/${localSlug}` : `/${lang}/${localSlug}`;
+      const outPath = isEn
+        ? path.join(distDir, localSlug, 'index.html')
+        : path.join(distDir, lang, localSlug, 'index.html');
+
+      const pageHtml = generateHtml(lang, urlPath, pageTitle, pageDesc, 'static', page);
+      writeFileSafe(outPath, pageHtml);
     }
 
     // 3. Tool Pages
     for (const tool of TOOLS_CATALOG) {
       const localSlug = tool.slugs[lang] || tool.id;
       const seoData = getLocalizedSeo(tool, lang);
-      
-      const toolHtml = generateHtml(
-        lang,
-        `/${lang}/${localSlug}`,
-        `${seoData.title} | HandleMyFile`,
-        seoData.description,
-        'tool',
-        tool.id
-      );
-      writeFileSafe(path.join(distDir, lang, localSlug, 'index.html'), toolHtml);
+
+      // English: no /en/ prefix — serve at root /compress-pdf, /merge-pdf, etc.
+      const urlPath = isEn ? `/${localSlug}` : `/${lang}/${localSlug}`;
+      const outPath = isEn
+        ? path.join(distDir, localSlug, 'index.html')
+        : path.join(distDir, lang, localSlug, 'index.html');
+
+      const toolHtml = generateHtml(lang, urlPath, `${seoData.title} | HandleMyFile`, seoData.description, 'tool', tool.id);
+      writeFileSafe(outPath, toolHtml);
     }
   }
 

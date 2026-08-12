@@ -37,6 +37,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/" />
   </url>
   <url>
+    <loc>https://handlemyfile.com/about/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/about/" />
+  </url>
+  <url>
     <loc>https://handlemyfile.com/ar/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -1139,6 +1145,36 @@
     <xhtml:link rel="alternate" hreflang="uk" href="https://handlemyfile.com/uk/vidaliti-storinki" />
     <xhtml:link rel="alternate" hreflang="ms" href="https://handlemyfile.com/ms/alih-keluar-halaman" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/remove-pages" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/compare-pdf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/compare-pdf/" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/compare/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/compare/" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/compress-pdf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/compress-pdf/" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/convert-pdf-to-grayscale/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/convert-pdf-to-grayscale/" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/crop-pdf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/crop-pdf/" />
   </url>
   <url>
     <loc>https://handlemyfile.com/cs/</loc>
@@ -2267,6 +2303,12 @@
     <xhtml:link rel="alternate" hreflang="uk" href="https://handlemyfile.com/uk/zminiti-rozmir-pdf" />
     <xhtml:link rel="alternate" hreflang="ms" href="https://handlemyfile.com/ms/ubah-saiz-pdf" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/resize-pdf" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/csv-to-excel/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/csv-to-excel/" />
   </url>
   <url>
     <loc>https://handlemyfile.com/da/</loc>
@@ -4291,6 +4333,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/watermark-pdf" />
   </url>
   <url>
+    <loc>https://handlemyfile.com/edit-pdf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/edit-pdf/" />
+  </url>
+  <url>
     <loc>https://handlemyfile.com/el/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -5425,240 +5473,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/el/ypostirizomenes-glosses/" />
   </url>
   <url>
-    <loc>https://handlemyfile.com/en/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/about/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/about/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/compare-pdf/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/compare-pdf/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/compare/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/compare/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/compress-pdf/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/compress-pdf/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/convert-pdf-to-grayscale/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/convert-pdf-to-grayscale/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/crop-pdf/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/crop-pdf/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/csv-to-excel/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/csv-to-excel/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/edit-pdf/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/edit-pdf/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/excel-to-csv/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/excel-to-csv/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/excel-to-pdf/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/excel-to-pdf/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/extract-images-from-pdf/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/extract-images-from-pdf/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/image-to-pdf/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/image-to-pdf/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/languages/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/languages/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/merge-pdf/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/merge-pdf/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/ocr-pdf/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/ocr-pdf/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/organize-pdf/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/organize-pdf/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/page-numbers/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/page-numbers/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/pdf-to-image/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/pdf-to-image/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/pdf-to-ppt/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/pdf-to-ppt/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/ppt-to-pdf/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/ppt-to-pdf/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/pricing/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/pricing/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/privacy/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/privacy/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/protect-pdf/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/protect-pdf/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/redact-pdf/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/redact-pdf/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/remove-pages-pdf/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/remove-pages-pdf/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/remove-pdf-metadata/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/remove-pdf-metadata/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/resize-pdf/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/resize-pdf/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/reverse-pdf/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/reverse-pdf/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/rotate-pdf/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/rotate-pdf/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/scan-to-pdf/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/scan-to-pdf/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/security/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/security/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/sign-pdf/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/sign-pdf/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/split-pdf/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/split-pdf/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/terms/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/terms/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/txt-to-pdf/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/txt-to-pdf/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/unlock-pdf/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/unlock-pdf/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/use-cases/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/use-cases/" />
-  </url>
-  <url>
-    <loc>https://handlemyfile.com/en/watermark-pdf/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/en/watermark-pdf/" />
-  </url>
-  <url>
     <loc>https://handlemyfile.com/es/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -6641,6 +6455,24 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/es/unir-pdf/" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/excel-to-csv/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/excel-to-csv/" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/excel-to-pdf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/excel-to-pdf/" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/extract-images-from-pdf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/extract-images-from-pdf/" />
   </url>
   <url>
     <loc>https://handlemyfile.com/fi/</loc>
@@ -12511,6 +12343,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/resize-pdf" />
   </url>
   <url>
+    <loc>https://handlemyfile.com/image-to-pdf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/image-to-pdf/" />
+  </url>
+  <url>
     <loc>https://handlemyfile.com/it/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -15761,6 +15599,18 @@
     <xhtml:link rel="alternate" hreflang="uk" href="https://handlemyfile.com/uk/zvorotniy-pdf" />
     <xhtml:link rel="alternate" hreflang="ms" href="https://handlemyfile.com/ms/pdf-songsang" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/reverse-pdf" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/languages/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/languages/" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/merge-pdf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/merge-pdf/" />
   </url>
   <url>
     <loc>https://handlemyfile.com/ms/</loc>
@@ -19039,6 +18889,36 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/no/vilkar-for-bruk/" />
   </url>
   <url>
+    <loc>https://handlemyfile.com/ocr-pdf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/ocr-pdf/" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/organize-pdf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/organize-pdf/" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/page-numbers/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/page-numbers/" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/pdf-to-image/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/pdf-to-image/" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/pdf-to-ppt/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/pdf-to-ppt/" />
+  </url>
+  <url>
     <loc>https://handlemyfile.com/pl/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -20173,6 +20053,30 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/watermark-pdf" />
   </url>
   <url>
+    <loc>https://handlemyfile.com/ppt-to-pdf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/ppt-to-pdf/" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/pricing/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/pricing/" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/privacy/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/privacy/" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/protect-pdf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/protect-pdf/" />
+  </url>
+  <url>
     <loc>https://handlemyfile.com/pt/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -21215,6 +21119,36 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/pt/texto-para-pdf/" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/redact-pdf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/redact-pdf/" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/remove-pages-pdf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/remove-pages-pdf/" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/remove-pdf-metadata/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/remove-pdf-metadata/" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/resize-pdf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/resize-pdf/" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/reverse-pdf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/reverse-pdf/" />
   </url>
   <url>
     <loc>https://handlemyfile.com/ro/</loc>
@@ -22321,6 +22255,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/txt-to-pdf" />
   </url>
   <url>
+    <loc>https://handlemyfile.com/rotate-pdf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/rotate-pdf/" />
+  </url>
+  <url>
     <loc>https://handlemyfile.com/ru/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -23417,6 +23357,24 @@
     <xhtml:link rel="alternate" hreflang="uk" href="https://handlemyfile.com/uk/zahist-pdf" />
     <xhtml:link rel="alternate" hreflang="ms" href="https://handlemyfile.com/ms/lindungi-pdf" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/protect-pdf" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/scan-to-pdf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/scan-to-pdf/" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/security/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/security/" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/sign-pdf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/sign-pdf/" />
   </url>
   <url>
     <loc>https://handlemyfile.com/sk/</loc>
@@ -24517,6 +24475,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/resize-pdf" />
   </url>
   <url>
+    <loc>https://handlemyfile.com/split-pdf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/split-pdf/" />
+  </url>
+  <url>
     <loc>https://handlemyfile.com/sv/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -25613,6 +25577,12 @@
     <xhtml:link rel="alternate" hreflang="uk" href="https://handlemyfile.com/uk/vodyaniy-znak-pdf" />
     <xhtml:link rel="alternate" hreflang="ms" href="https://handlemyfile.com/ms/pdf-tera-air" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/watermark-pdf" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/terms/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/terms/" />
   </url>
   <url>
     <loc>https://handlemyfile.com/th/</loc>
@@ -27751,6 +27721,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/txt-to-pdf" />
   </url>
   <url>
+    <loc>https://handlemyfile.com/txt-to-pdf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/txt-to-pdf/" />
+  </url>
+  <url>
     <loc>https://handlemyfile.com/uk/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -28817,6 +28793,18 @@
     <xhtml:link rel="alternate" hreflang="uk" href="https://handlemyfile.com/uk/zvorotniy-pdf" />
     <xhtml:link rel="alternate" hreflang="ms" href="https://handlemyfile.com/ms/pdf-songsang" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/reverse-pdf" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/unlock-pdf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/unlock-pdf/" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/use-cases/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/use-cases/" />
   </url>
   <url>
     <loc>https://handlemyfile.com/vi/</loc>
@@ -29951,6 +29939,12 @@
     <xhtml:link rel="alternate" hreflang="uk" href="https://handlemyfile.com/uk/povernuti-pdf" />
     <xhtml:link rel="alternate" hreflang="ms" href="https://handlemyfile.com/ms/putar-pdf" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/rotate-pdf" />
+  </url>
+  <url>
+    <loc>https://handlemyfile.com/watermark-pdf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://handlemyfile.com/watermark-pdf/" />
   </url>
   <url>
     <loc>https://handlemyfile.com/zh/</loc>
