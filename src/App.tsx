@@ -126,11 +126,14 @@ export const App: React.FC = () => {
     // Track language switch (GEO signal)
     trackLanguageSwitched({ from_language: currentLang, to_language: code });
     setCurrentLang(code);
-    let newPath = `/${code}`;
+    const isEn = code === 'en';
+    let newPath = isEn ? '/' : `/${code}`;
     if (activeTool) {
-      newPath = `/${code}/${activeTool.slugs[code] || activeTool.id}`;
+      const toolSlug = activeTool.slugs[code] || activeTool.id;
+      newPath = isEn ? `/${toolSlug}` : `/${code}/${toolSlug}`;
     } else if (activePage) {
-      newPath = `/${code}/${getLocalizedStaticSlug(activePage as StaticPageId, code)}`;
+      const pageSlug = getLocalizedStaticSlug(activePage as StaticPageId, code);
+      newPath = isEn ? `/${pageSlug}` : `/${code}/${pageSlug}`;
     }
     window.history.pushState({}, '', newPath);
   };
@@ -139,7 +142,8 @@ export const App: React.FC = () => {
     setActiveTool(tool);
     setActivePage(null);
     const toolSlug = tool.slugs[currentLang] || tool.id;
-    window.history.pushState({}, '', `/${currentLang}/${toolSlug}`);
+    const prefix = currentLang === 'en' ? '' : `/${currentLang}`;
+    window.history.pushState({}, '', `${prefix}/${toolSlug}`);
     window.scrollTo({ top: 0, behavior: 'smooth' });
     // Track tool page view (SEO engagement signal)
     trackToolPageViewed({
@@ -153,14 +157,15 @@ export const App: React.FC = () => {
   const handleNavigateHome = () => {
     setActiveTool(null);
     setActivePage(null);
-    window.history.pushState({}, '', `/${currentLang}`);
+    window.history.pushState({}, '', currentLang === 'en' ? '/' : `/${currentLang}`);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleNavigatePage = (pageSlug: string) => {
     setActiveTool(null);
     setActivePage(pageSlug);
-    window.history.pushState({}, '', `/${currentLang}/${getLocalizedStaticSlug(pageSlug as StaticPageId, currentLang)}`);
+    const prefix = currentLang === 'en' ? '' : `/${currentLang}`;
+    window.history.pushState({}, '', `${prefix}/${getLocalizedStaticSlug(pageSlug as StaticPageId, currentLang)}`);
     window.scrollTo({ top: 0, behavior: 'smooth' });
     // Track static page navigation (SEO signal)
     trackPageNavigated({ page_slug: pageSlug, language: currentLang });
