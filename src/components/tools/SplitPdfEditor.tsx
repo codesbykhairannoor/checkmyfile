@@ -60,11 +60,27 @@ export const SplitPdfEditor: React.FC<SplitPdfEditorProps> = ({
       </div>
 
       <div style={{ marginTop: 'auto', paddingTop: 24, borderTop: '1px solid var(--border-color)' }}>
+        {!splitRange.trim() && (
+          <div style={{ fontSize: '0.78rem', color: '#f59e0b', background: 'rgba(245, 158, 11, 0.1)', padding: '8px 12px', borderRadius: 8, textAlign: 'center', marginBottom: 12, border: '1px solid rgba(245, 158, 11, 0.2)' }}>
+            {tUi['Harap masukkan rentang halaman (contoh: 1-3, 5).'] || (tUi["Harap masukkan rentang halaman (contoh: 1-3, 5)."] || "Harap masukkan rentang halaman (contoh: 1-3, 5).")}
+          </div>
+        )}
         <button
           onClick={onApply}
-          disabled={isProcessing}
+          disabled={isProcessing || !splitRange.trim()}
           className="btn-primary"
-          style={{ width: '100%', padding: '14px 20px', fontSize: '0.95rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, boxShadow: '0 8px 20px rgba(16, 185, 129, 0.25)' }}
+          style={{
+            width: '100%',
+            padding: '14px 20px',
+            fontSize: '0.95rem',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: 10,
+            opacity: (!splitRange.trim() || isProcessing) ? 0.5 : 1,
+            cursor: (!splitRange.trim() || isProcessing) ? 'not-allowed' : 'pointer',
+            boxShadow: (!splitRange.trim() || isProcessing) ? 'none' : '0 8px 20px rgba(16, 185, 129, 0.25)'
+          }}
         >
           {isProcessing ? (
             <div style={{ animation: 'spin 1s linear infinite' }}><Settings2 size={18} /></div>

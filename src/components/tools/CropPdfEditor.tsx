@@ -80,7 +80,27 @@ export const CropPdfEditor: React.FC<CropPdfEditorProps> = ({
       </div>
 
       <div style={{ padding: '24px', borderTop: '1px solid var(--border-color)', background: 'var(--bg-card)' }}>
-        <button onClick={onApply} disabled={isProcessing} className="btn-primary" style={{ width: '100%', padding: '14px', fontSize: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8 }}>
+        {(cropConfig.marginTop === 0 && cropConfig.marginBottom === 0 && cropConfig.marginLeft === 0 && cropConfig.marginRight === 0) && (
+          <div style={{ fontSize: '0.78rem', color: '#f59e0b', background: 'rgba(245, 158, 11, 0.1)', padding: '8px 12px', borderRadius: 8, textAlign: 'center', marginBottom: 12, border: '1px solid rgba(245, 158, 11, 0.2)' }}>
+            {tUi['Atur minimal satu margin sebelum memotong PDF.'] || (tUi["Atur minimal satu margin sebelum memotong PDF."] || "Atur minimal satu margin sebelum memotong PDF.")}
+          </div>
+        )}
+        <button
+          onClick={onApply}
+          disabled={isProcessing || (cropConfig.marginTop === 0 && cropConfig.marginBottom === 0 && cropConfig.marginLeft === 0 && cropConfig.marginRight === 0)}
+          className="btn-primary"
+          style={{
+            width: '100%',
+            padding: '14px',
+            fontSize: '1rem',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: 8,
+            opacity: (isProcessing || (cropConfig.marginTop === 0 && cropConfig.marginBottom === 0 && cropConfig.marginLeft === 0 && cropConfig.marginRight === 0)) ? 0.5 : 1,
+            cursor: (isProcessing || (cropConfig.marginTop === 0 && cropConfig.marginBottom === 0 && cropConfig.marginLeft === 0 && cropConfig.marginRight === 0)) ? 'not-allowed' : 'pointer'
+          }}
+        >
           {isProcessing ? (
             <span className="spinner" style={{ width: 20, height: 20, border: '3px solid rgba(255,255,255,0.3)', borderTopColor: '#fff', borderRadius: '50%', animation: 'spin 1s linear infinite' }} />
           ) : (

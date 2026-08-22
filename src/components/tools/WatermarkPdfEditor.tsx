@@ -156,11 +156,30 @@ export const WatermarkPdfEditor: React.FC<WatermarkPdfEditorProps> = ({
       </div>
 
       <div style={{ marginTop: 'auto', paddingTop: 24, borderTop: '1px solid var(--border-color)' }}>
+        {((config.type === 'text' && !config.text.trim()) || (config.type === 'image' && !config.imageUrl)) && (
+          <div style={{ fontSize: '0.78rem', color: '#f59e0b', background: 'rgba(245, 158, 11, 0.1)', padding: '8px 12px', borderRadius: 8, textAlign: 'center', marginBottom: 12, border: '1px solid rgba(245, 158, 11, 0.2)' }}>
+            {config.type === 'text'
+              ? (tUi['Harap masukkan teks watermark.'] || "Harap masukkan teks watermark.")
+              : (tUi['Harap unggah gambar watermark.'] || "Harap unggah gambar watermark.")
+            }
+          </div>
+        )}
         <button
           onClick={onApply}
-          disabled={isProcessing || !config.text.trim()}
+          disabled={isProcessing || (config.type === 'text' ? !config.text.trim() : !config.imageUrl)}
           className="btn-primary"
-          style={{ width: '100%', padding: '14px 20px', fontSize: '0.95rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, boxShadow: '0 8px 20px rgba(16, 185, 129, 0.25)' }}
+          style={{
+            width: '100%',
+            padding: '14px 20px',
+            fontSize: '0.95rem',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: 10,
+            opacity: (isProcessing || (config.type === 'text' ? !config.text.trim() : !config.imageUrl)) ? 0.5 : 1,
+            cursor: (isProcessing || (config.type === 'text' ? !config.text.trim() : !config.imageUrl)) ? 'not-allowed' : 'pointer',
+            boxShadow: (isProcessing || (config.type === 'text' ? !config.text.trim() : !config.imageUrl)) ? 'none' : '0 8px 20px rgba(16, 185, 129, 0.25)'
+          }}
         >
           {isProcessing ? (
             <div style={{ animation: 'spin 1s linear infinite' }}><Settings2 size={18} /></div>
