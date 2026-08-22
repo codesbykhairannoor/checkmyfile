@@ -3,15 +3,16 @@ import { Navbar } from './components/layout/Navbar';
 import { trackToolPageViewed, trackPageNavigated, trackLanguageSwitched } from './lib/analytics';
 import { Footer } from './components/layout/Footer';
 import { HomePage } from './pages/HomePage';
-import { ToolPage } from './pages/ToolPage';
-import { AboutUsPage } from './pages/AboutUsPage';
-import { PrivacyPage } from './pages/PrivacyPage';
-import { TosPage } from './pages/TosPage';
-import { PricingPage } from './pages/PricingPage';
-import { SecurityPage } from './pages/SecurityPage';
-import { UseCasesPage } from './pages/UseCasesPage';
-import { ComparePage } from './pages/ComparePage';
-import { LanguagesPage } from './pages/LanguagesPage';
+
+const ToolPage = React.lazy(() => import('./pages/ToolPage').then(m => ({ default: m.ToolPage })));
+const AboutUsPage = React.lazy(() => import('./pages/AboutUsPage').then(m => ({ default: m.AboutUsPage })));
+const PrivacyPage = React.lazy(() => import('./pages/PrivacyPage').then(m => ({ default: m.PrivacyPage })));
+const TosPage = React.lazy(() => import('./pages/TosPage').then(m => ({ default: m.TosPage })));
+const PricingPage = React.lazy(() => import('./pages/PricingPage').then(m => ({ default: m.PricingPage })));
+const SecurityPage = React.lazy(() => import('./pages/SecurityPage').then(m => ({ default: m.SecurityPage })));
+const UseCasesPage = React.lazy(() => import('./pages/UseCasesPage').then(m => ({ default: m.UseCasesPage })));
+const ComparePage = React.lazy(() => import('./pages/ComparePage').then(m => ({ default: m.ComparePage })));
+const LanguagesPage = React.lazy(() => import('./pages/LanguagesPage').then(m => ({ default: m.LanguagesPage })));
 import { getToolBySlugAndLang, type ToolDefinition } from './catalog/toolsCatalog';
 import { isValidLanguageCode } from './i18n/languages';
 import { getStaticPageIdFromSlug, getLocalizedStaticSlug, type StaticPageId } from './i18n/staticSlugs';
@@ -183,27 +184,29 @@ export const App: React.FC = () => {
       />
 
       <div style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: 'column' }}>
-        {activeTool ? (
-          <ToolPage
-            key={activeTool.id}
-            tool={activeTool}
-            currentLang={currentLang}
-            onBackToHome={handleNavigateHome}
-            onEditorActive={setIsEditorActive}
-          />
-        ) : (() => {
-          switch (activePage) {
-            case 'about': return <AboutUsPage currentLang={currentLang} />;
-            case 'privacy': return <PrivacyPage currentLang={currentLang} />;
-            case 'terms': return <TosPage currentLang={currentLang} />;
-            case 'pricing': return <PricingPage currentLang={currentLang} />;
-            case 'security': return <SecurityPage currentLang={currentLang} />;
-            case 'use-cases': return <UseCasesPage currentLang={currentLang} />;
-            case 'compare': return <ComparePage currentLang={currentLang} />;
-            case 'languages': return <LanguagesPage currentLang={currentLang} />;
-            default: return <HomePage currentLang={currentLang} onSelectTool={handleSelectTool} />;
-          }
-        })()}
+        <React.Suspense fallback={<div style={{ padding: 40, textAlign: 'center', color: 'var(--text-muted)' }}>Loading...</div>}>
+          {activeTool ? (
+            <ToolPage
+              key={activeTool.id}
+              tool={activeTool}
+              currentLang={currentLang}
+              onBackToHome={handleNavigateHome}
+              onEditorActive={setIsEditorActive}
+            />
+          ) : (() => {
+            switch (activePage) {
+              case 'about': return <AboutUsPage currentLang={currentLang} />;
+              case 'privacy': return <PrivacyPage currentLang={currentLang} />;
+              case 'terms': return <TosPage currentLang={currentLang} />;
+              case 'pricing': return <PricingPage currentLang={currentLang} />;
+              case 'security': return <SecurityPage currentLang={currentLang} />;
+              case 'use-cases': return <UseCasesPage currentLang={currentLang} />;
+              case 'compare': return <ComparePage currentLang={currentLang} />;
+              case 'languages': return <LanguagesPage currentLang={currentLang} />;
+              default: return <HomePage currentLang={currentLang} onSelectTool={handleSelectTool} />;
+            }
+          })()}
+        </React.Suspense>
       </div>
 
       {!isEditorActive && <Footer currentLang={currentLang} onSelectTool={handleSelectTool} onNavigatePage={handleNavigatePage} />}
