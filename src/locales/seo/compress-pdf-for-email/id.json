@@ -6,15 +6,17 @@
     {
       "type": "protect_hero_features",
       "title": "Atasi Batas Lampiran Email Secara Instan",
-      "content": "Gagal mengunggah PDF laporan kerja atau kontrak di Gmail/Outlook? Kompresor browser kami mengecilkan PDF di bawah batas email (25MB) dalam hitungan detik tanpa upload."
+      "content": "Gagal mengunggah PDF laporan kerja atau kontrak di Gmail/Outlook? Kompresor browser kami mengecilkan PDF di bawah batas email (25MB) dalam hitungan detik tanpa upload ke server mana pun.",
+      "badgeText": "Kompresi Email"
     },
     {
       "type": "rotate_how_to_steps",
       "title": "Cara Mengecilkan PDF untuk Email dalam 3 Langkah",
+      "badgeText": "Panduan Cepat",
       "steps": [
         {
           "title": "Pilih File PDF Besar",
-          "description": "Tarik & lepas PDF besar Anda ke sandbox browser lokal."
+          "description": "Tarik & lepas PDF besar Anda ke sandbox browser lokal yang aman."
         },
         {
           "title": "Pilih Tingkat Kompresi",
@@ -22,24 +24,26 @@
         },
         {
           "title": "Unduh & Kirim Email",
-          "description": "Unduh PDF ringan Anda dan lampirkan ke pesan email dengan lancar."
+          "description": "Unduh PDF ringan Anda dan lampirkan ke pesan email dalam hitungan detik."
         }
       ]
     },
     {
       "type": "sign_geo_targeting",
       "title": "Pemrosesan Lokal 100% Aman untuk Email Rahasia",
-      "content": "Mengirim kontrak hukum atau keuangan lewat email? Engine WebAssembly kami memproses berkas sepenuhnya di dalam browser Anda."
+      "content": "Mengirim kontrak hukum atau keuangan lewat email? Engine WebAssembly kami memproses berkas sepenuhnya di dalam browser Anda. Tidak ada pihak ketiga yang melihat lampiran Anda.",
+      "subTitle": "Kebijakan Zero Upload",
+      "subContent": "0 bytes keluar dari perangkat Anda. Tanpa cloud. Tanpa risiko GDPR."
     },
     {
       "type": "watermark_privacy_security",
       "title": "Privasi Tingkat Bank untuk Dokumen Kerja",
-      "content": "Jangan pernah mengambil risiko mengunggah dokumen rahasia ke server publik. HandleMyFile beroperasi 100% offline."
+      "content": "Jangan pernah mengambil risiko mengunggah dokumen rahasia ke konverter cloud publik. HandleMyFile beroperasi 100% offline dengan WebAssembly — berkas Anda tidak pernah menyentuh server."
     },
     {
       "type": "compare_performance",
       "title": "Kompresi Tanpa Latensi Upload",
-      "content": "Hemat waktu tanpa perlu menunggu upload file 50MB. Pemrosesan lokal mengecilkan berkas secara instan."
+      "content": "Hemat waktu tanpa perlu menunggu upload file 50MB. Pemrosesan lokal mengecilkan berkas secara instan tanpa pemborosan bandwidth internet."
     }
   ],
   "faqs": [
@@ -49,7 +53,7 @@
     },
     {
       "q": "Apakah mengompres PDF untuk email akan membuat tulisan kabur?",
-      "a": "Tidak. Algoritma kami mempertahankan ketajaman teks dan gambar pada dokumen PDF."
+      "a": "Tidak. Algoritma adaptif kami mempertahankan ketajaman teks dan kejelasan gambar pada dokumen PDF."
     },
     {
       "q": "Apakah aman mengompres dokumen kontrak kerja di sini?",
@@ -57,13 +61,13 @@
     }
   ],
   "badges": [
-    "Under 25MB Preset",
-    "Email Optimized",
-    "100% Private"
+    "Siap Gmail",
+    "Aman Outlook",
+    "Zero Upload"
   ],
   "stats": [
     "Gmail Ready",
-    "Outlook Friendly",
+    "Outlook Safe",
     "WebAssembly",
     "Zero Upload"
   ],

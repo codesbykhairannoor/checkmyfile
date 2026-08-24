@@ -1,45 +1,49 @@
 {
-  "title": "Compress PDF for Email - SV",
-  "h1": "Compress PDF Files for Email (SV)",
+  "title": "Compress PDF for Email - Shrink Large PDF Files under 25MB",
+  "h1": "Compress PDF Files for Email Attachments",
   "description": "Bypass Gmail, Outlook, and Yahoo file attachment size limits. Compress large PDFs under 25MB locally inside browser memory with 0 bytes upload.",
   "sections": [
     {
       "type": "protect_hero_features",
       "title": "Bypass Email Attachment Size Limits Instantly",
-      "content": "Struggling to send a large PDF report or contract over Gmail or Outlook? Our browser compressor shrinks your PDF below email attachment limits (25MB/20MB) in seconds with 0 bytes uploaded to external servers."
+      "content": "Struggling to send a large PDF report or contract over Gmail or Outlook? Our browser compressor shrinks your PDF below email attachment limits (25MB/20MB) in seconds with 0 bytes uploaded to any server.",
+      "badgeText": "Email Compression"
     },
     {
       "type": "rotate_how_to_steps",
-      "title": "How to Shrink PDF for Email in 3 Steps",
+      "title": "How to Compress PDF for Email in 3 Steps",
+      "badgeText": "Quick Guide",
       "steps": [
         {
           "title": "Drop Your PDF File",
-          "description": "Drag & drop your large PDF into the local browser sandbox."
+          "description": "Drag & drop your large PDF into the secure local browser sandbox."
         },
         {
           "title": "Select Compression Preset",
-          "description": "Choose medium or strong compression to fit under 25MB."
+          "description": "Choose medium or strong compression to shrink below 25MB."
         },
         {
           "title": "Attach & Send Email",
-          "description": "Download your lightweight PDF and attach it to your email seamlessly."
+          "description": "Download your lightweight PDF and attach it to your email in seconds."
         }
       ]
     },
     {
       "type": "sign_geo_targeting",
       "title": "100% Private Offline Processing for Confidential Emails",
-      "content": "Sending confidential legal or financial contracts via email? Our WebAssembly engine processes your file entirely inside your browser. No third party ever sees your attachments."
+      "content": "Sending confidential legal or financial contracts via email? Our WebAssembly engine processes your file entirely inside your browser. No third party ever sees your attachments.",
+      "subTitle": "Zero Upload Policy",
+      "subContent": "0 bytes leave your device. No cloud storage. No GDPR risk."
     },
     {
       "type": "watermark_privacy_security",
       "title": "Bank-Grade Privacy for Work Emails",
-      "content": "Never risk uploading confidential corporate documents to public cloud converters. HandleMyFile operates 100% offline."
+      "content": "Never risk uploading confidential corporate documents to public cloud converters. HandleMyFile operates 100% offline with WebAssembly — your files never touch a server."
     },
     {
       "type": "compare_performance",
       "title": "Zero Latency WebAssembly Compression",
-      "content": "Skip waiting for long file uploads. Local browser processing compresses 50MB PDFs in seconds."
+      "content": "Skip waiting for long file uploads. Local browser processing compresses 50MB PDFs in seconds without internet bandwidth waste."
     }
   ],
   "faqs": [
@@ -49,7 +53,7 @@
     },
     {
       "q": "Will compressing the PDF for email reduce document quality?",
-      "a": "No. Our adaptive compression algorithm preserves high-definition text readability and image clarity while optimizing vector data."
+      "a": "No. Our adaptive compression algorithm preserves high-definition text readability and image clarity while optimizing embedded content."
     },
     {
       "q": "Is it safe to compress confidential work contracts here?",
@@ -57,13 +61,13 @@
     }
   ],
   "badges": [
-    "Under 25MB Preset",
-    "Email Optimized",
-    "100% Private"
+    "Gmail Ready",
+    "Outlook Safe",
+    "Zero Upload"
   ],
   "stats": [
     "Gmail Ready",
-    "Outlook Friendly",
+    "Outlook Safe",
     "WebAssembly",
     "Zero Upload"
   ],

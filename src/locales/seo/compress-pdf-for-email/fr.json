@@ -1,71 +1,75 @@
 {
-  "title": "Compress PDF for Email - FR",
-  "h1": "Compress PDF Files for Email (FR)",
-  "description": "Bypass Gmail, Outlook, and Yahoo file attachment size limits. Compress large PDFs under 25MB locally inside browser memory with 0 bytes upload.",
+  "title": "Compresser PDF pour Email - Réduire la Taille sous 25Mo",
+  "h1": "Compresser les Fichiers PDF pour les Pièces Jointes Email",
+  "description": "Contournez les limites de pièces jointes de Gmail et Outlook. Compressez les gros PDFs sous 25Mo localement sans aucun téléchargement serveur.",
   "sections": [
     {
       "type": "protect_hero_features",
-      "title": "Bypass Email Attachment Size Limits Instantly",
-      "content": "Struggling to send a large PDF report or contract over Gmail or Outlook? Our browser compressor shrinks your PDF below email attachment limits (25MB/20MB) in seconds with 0 bytes uploaded to external servers."
+      "title": "Dépassez les Limites de Pièces Jointes Instantanément",
+      "content": "Du mal à envoyer un gros PDF par Gmail ou Outlook ? Notre compresseur réduit votre PDF sous les limites en quelques secondes, sans rien envoyer vers des serveurs.",
+      "badgeText": "Compression Email"
     },
     {
       "type": "rotate_how_to_steps",
-      "title": "How to Shrink PDF for Email in 3 Steps",
+      "title": "Comment Compresser un PDF pour Email en 3 Étapes",
+      "badgeText": "Guide Rapide",
       "steps": [
         {
-          "title": "Drop Your PDF File",
-          "description": "Drag & drop your large PDF into the local browser sandbox."
+          "title": "Déposez votre Fichier PDF",
+          "description": "Glissez-déposez votre grand PDF dans le sandbox local du navigateur."
         },
         {
-          "title": "Select Compression Preset",
-          "description": "Choose medium or strong compression to fit under 25MB."
+          "title": "Choisissez le Niveau de Compression",
+          "description": "Choisissez une compression moyenne ou forte pour rester sous 25Mo."
         },
         {
-          "title": "Attach & Send Email",
-          "description": "Download your lightweight PDF and attach it to your email seamlessly."
+          "title": "Téléchargez et Joignez à l'Email",
+          "description": "Téléchargez votre PDF léger et joignez-le à votre email en quelques secondes."
         }
       ]
     },
     {
       "type": "sign_geo_targeting",
-      "title": "100% Private Offline Processing for Confidential Emails",
-      "content": "Sending confidential legal or financial contracts via email? Our WebAssembly engine processes your file entirely inside your browser. No third party ever sees your attachments."
+      "title": "Traitement Local 100% Privé pour les Emails Confidentiels",
+      "content": "Vous envoyez des contrats légaux par email ? Notre moteur WebAssembly traite votre fichier entièrement dans votre navigateur. Personne d'autre ne voit vos pièces jointes.",
+      "subTitle": "Politique Zéro Upload",
+      "subContent": "0 octet quitte votre appareil. Pas de cloud. Pas de risque RGPD."
     },
     {
       "type": "watermark_privacy_security",
-      "title": "Bank-Grade Privacy for Work Emails",
-      "content": "Never risk uploading confidential corporate documents to public cloud converters. HandleMyFile operates 100% offline."
+      "title": "Confidentialité Bancaire pour les Emails Professionnels",
+      "content": "Ne risquez jamais d'envoyer des documents confidentiels vers des convertisseurs cloud publics. HandleMyFile fonctionne 100% hors ligne."
     },
     {
       "type": "compare_performance",
-      "title": "Zero Latency WebAssembly Compression",
-      "content": "Skip waiting for long file uploads. Local browser processing compresses 50MB PDFs in seconds."
+      "title": "Compression WebAssembly sans Latence d'Upload",
+      "content": "Oubliez les longues attentes d'upload. Le traitement local compresse des PDFs de 50Mo en quelques secondes."
     }
   ],
   "faqs": [
     {
-      "q": "What is the maximum PDF file size limit for Gmail & Outlook?",
-      "a": "Gmail has a 25MB attachment limit, while Outlook and Yahoo cap attachments at 20MB. Our tool shrinks large PDFs below these limits easily."
+      "q": "Quelle est la limite de taille de pièce jointe sur Gmail et Outlook ?",
+      "a": "Gmail limite à 25Mo et Outlook à 20Mo. Notre outil réduit les PDFs en dessous de ces limites facilement."
     },
     {
-      "q": "Will compressing the PDF for email reduce document quality?",
-      "a": "No. Our adaptive compression algorithm preserves high-definition text readability and image clarity while optimizing vector data."
+      "q": "Compresser le PDF pour email réduira-t-il la qualité ?",
+      "a": "Non. Notre algorithme adaptatif préserve la lisibilité du texte et la clarté des images."
     },
     {
-      "q": "Is it safe to compress confidential work contracts here?",
-      "a": "Yes! 100% of processing happens locally in your device's browser memory. 0 bytes are ever sent over the internet."
+      "q": "Est-il sûr de compresser des contrats de travail confidentiels ici ?",
+      "a": "Oui ! 100% du traitement se fait dans la mémoire du navigateur. 0 octet n'est envoyé sur internet."
     }
   ],
   "badges": [
-    "Under 25MB Preset",
-    "Email Optimized",
-    "100% Private"
+    "Prêt pour Gmail",
+    "Sûr pour Outlook",
+    "Zéro Upload"
   ],
   "stats": [
     "Gmail Ready",
-    "Outlook Friendly",
+    "Outlook Safe",
     "WebAssembly",
     "Zero Upload"
   ],
-  "buttonText": "Compress PDF for Email"
+  "buttonText": "Compresser PDF pour Email"
 }

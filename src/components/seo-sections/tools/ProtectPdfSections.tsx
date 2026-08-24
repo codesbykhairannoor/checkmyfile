@@ -33,7 +33,7 @@ export const ProtectHeroSection: React.FC<SectionProps> = ({ section, badges, st
       
       <div style={{ flex: '1 1 500px' }}>
         <div style={{ display: 'inline-flex', padding: '10px 24px', background: 'rgba(0,0,0,0.2)', borderRadius: 100, fontWeight: 800, fontSize: '0.9rem', marginBottom: 24, gap: 8, alignItems: 'center', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.1)' }}>
-          <ShieldAlert size={18} /> AES-256 Encryption
+          <ShieldAlert size={18} /> {section.badgeText || "AES-256"}
         </div>
         <h2 style={{ fontSize: 'clamp(3rem, 6vw, 4.5rem)', fontWeight: 900, marginBottom: 24, letterSpacing: '-0.04em', lineHeight: 1.1 }}>{section.title}</h2>
         <p style={{ fontSize: 'clamp(1.1rem, 2vw, 1.3rem)', opacity: 0.9, lineHeight: 1.8 }}>{section.content}</p>

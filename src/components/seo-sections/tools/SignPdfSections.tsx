@@ -73,8 +73,8 @@ export const SignGeoSection: React.FC<SectionProps> = ({ section, badges, stats,
       <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}>
          <div style={{ padding: 48, borderRadius: 32, background: 'rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.2)' }} className="hover-lift">
             <Briefcase size={64} color="white" style={{ marginBottom: 24 }} />
-            <h3 style={{ fontSize: '1.8rem', fontWeight: 800, marginBottom: 16 }}>B2B Ready</h3>
-            <p style={{ fontSize: '1.1rem', opacity: 0.9, lineHeight: 1.7 }}>Sign NDAs, contracts, and proposals with high-resolution vector strokes.</p>
+            <h3 style={{ fontSize: '1.8rem', fontWeight: 800, marginBottom: 16 }}>{section.subTitle || section.badgeText || "100% Local"}</h3>
+            <p style={{ fontSize: '1.1rem', opacity: 0.9, lineHeight: 1.7 }}>{section.subContent || section.content}</p>
          </div>
       </div>
       <div style={{ flex: '1 1 500px' }}>
