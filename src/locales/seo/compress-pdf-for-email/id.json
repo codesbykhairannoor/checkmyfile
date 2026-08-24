@@ -4,12 +4,12 @@
   "description": "Atasi batas lampiran Gmail dan Outlook (25MB/20MB). Kecilkan PDF besar secara instan di memori browser tanpa mengunggah dokumen pribadi ke server.",
   "sections": [
     {
-      "type": "compress_hero_features",
+      "type": "protect_hero_features",
       "title": "Atasi Batas Lampiran Email Secara Instan",
       "content": "Gagal mengunggah PDF laporan kerja atau kontrak di Gmail/Outlook? Kompresor browser kami mengecilkan PDF di bawah batas email (25MB) dalam hitungan detik tanpa upload."
     },
     {
-      "type": "compress_how_to_steps",
+      "type": "rotate_how_to_steps",
       "title": "Cara Mengecilkan PDF untuk Email dalam 3 Langkah",
       "steps": [
         {
@@ -27,17 +27,17 @@
       ]
     },
     {
-      "type": "compress_geo_targeting",
+      "type": "sign_geo_targeting",
       "title": "Pemrosesan Lokal 100% Aman untuk Email Rahasia",
       "content": "Mengirim kontrak hukum atau keuangan lewat email? Engine WebAssembly kami memproses berkas sepenuhnya di dalam browser Anda."
     },
     {
-      "type": "compress_privacy_security",
+      "type": "watermark_privacy_security",
       "title": "Privasi Tingkat Bank untuk Dokumen Kerja",
       "content": "Jangan pernah mengambil risiko mengunggah dokumen rahasia ke server publik. HandleMyFile beroperasi 100% offline."
     },
     {
-      "type": "compress_performance",
+      "type": "compare_performance",
       "title": "Kompresi Tanpa Latensi Upload",
       "content": "Hemat waktu tanpa perlu menunggu upload file 50MB. Pemrosesan lokal mengecilkan berkas secara instan."
     }
