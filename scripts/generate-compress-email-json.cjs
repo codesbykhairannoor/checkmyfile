@@ -55,7 +55,9 @@ const content = {
     faq3A: "Yes! 100% of processing happens locally in your device's browser memory. 0 bytes are ever sent over the internet.",
     perfBadge: "Lightning Fast",
     badges: ["Gmail Ready", "Outlook Safe", "Zero Upload"],
-    buttonText: "Compress PDF for Email"
+    buttonText: "Compress PDF for Email",
+    supportCenter: "Support Center",
+    faqTitle: "Frequently Asked Questions"
   },
   id: {
     title: "Kompres PDF untuk Email - Kecilkan Berkas di Bawah 25MB",
@@ -88,7 +90,9 @@ const content = {
     faq3A: "Sangat aman! 100% pemrosesan terjadi di dalam browser lokal Anda tanpa unggah data sama sekali.",
     perfBadge: "Kilat Cepat",
     badges: ["Siap Gmail", "Aman Outlook", "Zero Upload"],
-    buttonText: "Kompres PDF untuk Email"
+    buttonText: "Kompres PDF untuk Email",
+    supportCenter: "Pusat Dukungan",
+    faqTitle: "Pertanyaan yang Sering Diajukan"
   },
   es: {
     title: "Comprimir PDF para Correo - Reducir Tamaño bajo 25MB",
@@ -121,7 +125,9 @@ const content = {
     faq3A: "¡Sí! El 100% del procesamiento ocurre en la memoria del navegador de tu dispositivo. 0 bytes se envían por internet.",
     perfBadge: "Ultra Rápido",
     badges: ["Listo para Gmail", "Seguro en Outlook", "Zero Subida"],
-    buttonText: "Comprimir PDF para Correo"
+    buttonText: "Comprimir PDF para Correo",
+    supportCenter: "Centro de Soporte",
+    faqTitle: "Preguntas Frecuentes"
   },
   fr: {
     title: "Compresser PDF pour Email - Réduire la Taille sous 25Mo",
@@ -154,7 +160,9 @@ const content = {
     faq3A: "Oui ! 100% du traitement se fait dans la mémoire du navigateur. 0 octet n'est envoyé sur internet.",
     perfBadge: "Ultra Rapide",
     badges: ["Prêt pour Gmail", "Sûr pour Outlook", "Zéro Upload"],
-    buttonText: "Compresser PDF pour Email"
+    buttonText: "Compresser PDF pour Email",
+    supportCenter: "Centre de Support",
+    faqTitle: "Foire Aux Questions"
   },
   de: {
     title: "PDF für E-Mail komprimieren - Unter 25MB verkleinern",
@@ -187,8 +195,10 @@ const content = {
     faq3A: "Ja! Die gesamte Verarbeitung erfolgt im lokalen Browser-Speicher. 0 Bytes werden über das Internet gesendet.",
     perfBadge: "Blitzschnell",
     badges: ["Gmail-bereit", "Outlook-sicher", "Zero Upload"],
-    buttonText: "PDF für E-Mail komprimieren"
-  }
+    buttonText: "PDF für E-Mail komprimieren",
+    supportCenter: "Hilfe-Center",
+    faqTitle: "Häufig gestellte Fragen"
+  },
 };
 
 // Fallback template for remaining 25 languages using English content structure
@@ -255,7 +265,9 @@ for (const lang of langs) {
     ],
     badges: t.badges || ["Gmail Ready", "Outlook Safe", "Zero Upload"],
     stats: ["Gmail Ready", "Outlook Safe", "WebAssembly", "Zero Upload"],
-    buttonText: t.buttonText
+    buttonText: t.buttonText,
+    supportCenter: t.supportCenter || "Support Center",
+    faqTitle: t.faqTitle || "Frequently Asked Questions"
   };
 
   fs.writeFileSync(path.join(targetDir, `${lang}.json`), JSON.stringify(data, null, 2), 'utf8');
