@@ -189,7 +189,7 @@ export function useDocumentProcessor() {
           resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
         }
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_signed.pdf`;
-      } else if (toolId === 'compress-pdf') {
+      } else if (toolId === 'compress-pdf' || toolId === 'compress-pdf-for-email') {
         resultBytes = await (await import('../engines/compressEngine')).compressPdf(files[0], options.compressQuality, (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_compressed.pdf`;
       } else if (toolId === 'pdf-to-word') {

@@ -156,6 +156,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "h1": "Compress PDF Documents without Losing Quality",
       "description": "Shrink large PDF files up to 90% using adaptive lossless and DPI rasterization techniques directly in WebAssembly."
     },
+    "compress-pdf-for-email": {
+      "title": "Compress PDF for Email - Shrink Large PDF Files under 25MB",
+      "h1": "Compress PDF Files for Email Attachments",
+      "description": "Bypass Gmail, Outlook, and Yahoo file attachment size limits. Compress large PDFs under 25MB locally inside browser memory with 0 bytes upload."
+    },
     "ocr-pdf": {
       "title": "Free Browser OCR - Extract Text from Scanned PDF & Images",
       "h1": "Extract Text from Scanned PDFs & Images with Tesseract OCR",

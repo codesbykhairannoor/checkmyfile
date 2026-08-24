@@ -1,0 +1,71 @@
+{
+  "title": "Kompres PDF untuk Email - Kecilkan Berkas di Bawah 25MB",
+  "h1": "Kompres Berkas PDF untuk Lampiran Email",
+  "description": "Atasi batas lampiran Gmail dan Outlook (25MB/20MB). Kecilkan PDF besar secara instan di memori browser tanpa mengunggah dokumen pribadi ke server.",
+  "sections": [
+    {
+      "type": "compress_hero_features",
+      "title": "Atasi Batas Lampiran Email Secara Instan",
+      "content": "Gagal mengunggah PDF laporan kerja atau kontrak di Gmail/Outlook? Kompresor browser kami mengecilkan PDF di bawah batas email (25MB) dalam hitungan detik tanpa upload."
+    },
+    {
+      "type": "compress_how_to_steps",
+      "title": "Cara Mengecilkan PDF untuk Email dalam 3 Langkah",
+      "steps": [
+        {
+          "title": "Pilih File PDF Besar",
+          "description": "Tarik & lepas PDF besar Anda ke sandbox browser lokal."
+        },
+        {
+          "title": "Pilih Tingkat Kompresi",
+          "description": "Pilih kompresi sedang atau maksimal agar ukuran di bawah 25MB."
+        },
+        {
+          "title": "Unduh & Kirim Email",
+          "description": "Unduh PDF ringan Anda dan lampirkan ke pesan email dengan lancar."
+        }
+      ]
+    },
+    {
+      "type": "compress_geo_targeting",
+      "title": "Pemrosesan Lokal 100% Aman untuk Email Rahasia",
+      "content": "Mengirim kontrak hukum atau keuangan lewat email? Engine WebAssembly kami memproses berkas sepenuhnya di dalam browser Anda."
+    },
+    {
+      "type": "compress_privacy_security",
+      "title": "Privasi Tingkat Bank untuk Dokumen Kerja",
+      "content": "Jangan pernah mengambil risiko mengunggah dokumen rahasia ke server publik. HandleMyFile beroperasi 100% offline."
+    },
+    {
+      "type": "compress_performance",
+      "title": "Kompresi Tanpa Latensi Upload",
+      "content": "Hemat waktu tanpa perlu menunggu upload file 50MB. Pemrosesan lokal mengecilkan berkas secara instan."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Berapa batas ukuran maksimal lampiran PDF di Gmail & Outlook?",
+      "a": "Gmail membatasi lampiran sebesar 25MB, sedangkan Outlook sebesar 20MB. Alat kami mengecilkan PDF agar berada di bawah batas tersebut."
+    },
+    {
+      "q": "Apakah mengompres PDF untuk email akan membuat tulisan kabur?",
+      "a": "Tidak. Algoritma kami mempertahankan ketajaman teks dan gambar pada dokumen PDF."
+    },
+    {
+      "q": "Apakah aman mengompres dokumen kontrak kerja di sini?",
+      "a": "Sangat aman! 100% pemrosesan terjadi di dalam browser lokal Anda tanpa unggah data sama sekali."
+    }
+  ],
+  "badges": [
+    "Under 25MB Preset",
+    "Email Optimized",
+    "100% Private"
+  ],
+  "stats": [
+    "Gmail Ready",
+    "Outlook Friendly",
+    "WebAssembly",
+    "Zero Upload"
+  ],
+  "buttonText": "Kompres PDF untuk Email"
+}

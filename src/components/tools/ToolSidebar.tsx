@@ -165,7 +165,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
       {tool.id === 'page-numbers' && <PageNumbersPdfEditor config={pageNumberConfig} setConfig={setPageNumberConfig} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
       {tool.id === 'split-pdf' && <SplitPdfEditor splitRange={splitRange} setSplitRange={setSplitRange} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
       {tool.id === 'merge-pdf' && <MergePdfEditor files={files} setFiles={setFiles} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
-      {tool.id === 'compress-pdf' && <CompressPdfEditor quality={compressQuality} setQuality={setCompressQuality} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
+      {(tool.id === 'compress-pdf' || tool.id === 'compress-pdf-for-email') && <CompressPdfEditor quality={compressQuality} setQuality={setCompressQuality} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
 
       {tool.id === 'pdf-to-image' && extractImageFormat && setExtractImageFormat && (
         <PdfToImageEditor format={extractImageFormat} setFormat={setExtractImageFormat} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
