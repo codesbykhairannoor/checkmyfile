@@ -1,0 +1,79 @@
+{
+  "title": "Compress PDF to 100KB - Online PDF Shrinker to 100KB - VI",
+  "h1": "Compress PDF Files to 100KB Online (VI)",
+  "description": "Shrink your large PDF documents under 100KB for government portals, job applications, or visa forms completely in your browser.",
+  "sections": [
+    {
+      "type": "resize_hero_features",
+      "title": "Kecilkan PDF ke 100KB secara Instan & Aman",
+      "content": "Struggling with strict 100KB upload limits on government portals, job sites, or visa applications? Our local compressor optimizes your PDF file under 100KB in seconds.",
+      "badgeText": "100KB Target Limit"
+    },
+    {
+      "type": "split_how_to_steps",
+      "title": "How to Compress PDF under 100KB",
+      "badgeText": "Quick Guide",
+      "steps": [
+        {
+          "title": "Add PDF Document",
+          "description": "Drop your PDF file into the client-side compressor."
+        },
+        {
+          "title": "Select 100KB Target",
+          "description": "Choose strong compression to automatically target size under 100KB."
+        },
+        {
+          "title": "Save Optimized PDF",
+          "description": "Download your compressed PDF instantly, ready to upload."
+        }
+      ]
+    },
+    {
+      "type": "protect_geo_targeting",
+      "title": "Perfect for CPNS, Visa, and Scholarship Portals",
+      "content": "No need to worry about server-side limits. All compression takes place in your local browser sandbox, ensuring absolute compliance with security rules.",
+      "subTitle": "100% Client-Side",
+      "subContent": "Files never leave your browser, avoiding public storage risks.",
+      "badgeText": "100% Client-Side"
+    },
+    {
+      "type": "compare_privacy_security",
+      "title": "Upload with Peace of Mind",
+      "content": "We process your sensitive documents (ID card scan, passport, CV) 100% locally. Zero risk of data leak."
+    },
+    {
+      "type": "watermark_performance",
+      "title": "Lossless Density Management",
+      "content": "Optimizes image resolution and DPI scales to hit the 100KB threshold without turning texts into illegible blur.",
+      "badgeText": "Accurate Target"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How can I compress a PDF to exactly under 100KB?",
+      "a": "Select the 'Strong' compression preset. Our tool optimizes vectors and rasterizes complex gradients to fit your file under 100KB."
+    },
+    {
+      "q": "Is there a limit on how many PDFs I can compress?",
+      "a": "No. Since processing runs locally in your browser memory, you can compress as many files as you want."
+    },
+    {
+      "q": "Are my sensitive identity scans safe?",
+      "a": "Yes. They are processed entirely offline via WebAssembly. 0 bytes are uploaded."
+    }
+  ],
+  "badges": [
+    "CPNS Ready",
+    "Visa Approved",
+    "Under 100KB"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Compress PDF to 100KB",
+  "supportCenter": "Support Center",
+  "faqTitle": "Frequently Asked Questions"
+}

@@ -111,8 +111,60 @@ export const compressTools: ToolDefinition[] = [
       es: {
         title: 'Comprimir PDF para Correo - Reducir Tamaño para Archivos Adjuntos',
         h1: 'Comprime Archivos PDF para Enviar por Correo Electrónico sin Límites',
-        description: 'Supera los límites de archivos adjuntos de Gmail y Outlook. Comprime archivos PDF grandes localmente en la memoria del navegador.',
+        description: 'Supera los límites de archivos adjuntos de Gmail and Outlook. Comprime archivos PDF grandes localmente en la memoria del navegador.',
         faqs: defaultFaqs('Comprimir PDF para Correo', 'es'),
+      },
+    },
+  },
+  {
+    id: 'compress-pdf-to-100kb',
+    category: 'compress',
+    iconName: 'Minimize2',
+    slugs: generateSlugsForId('compress-pdf-to-100kb', {
+      en: 'compress-pdf-to-100kb',
+      id: 'kompres-pdf-100kb',
+      es: 'comprimir-pdf-a-100kb',
+      fr: 'compresser-pdf-a-100ko',
+      de: 'pdf-auf-100kb-komprimieren',
+    }),
+    seo: {
+      en: {
+        title: 'Compress PDF to 100KB - Online PDF Shrinker to 100KB',
+        h1: 'Compress PDF Files to 100KB Online (Free & Private)',
+        description: 'Shrink your large PDF documents under 100KB for government portals, job applications, or visa forms completely in your browser.',
+        faqs: defaultFaqs('Compress PDF to 100KB', 'en'),
+      },
+      id: {
+        title: 'Kompres PDF ke 100KB - Perkecil PDF di Bawah 100KB Online',
+        h1: 'Kecilkan File PDF Hingga Di Bawah 100KB Secara Instan',
+        description: 'Sangat cocok untuk pendaftaran CPNS, visa, beasiswa, atau unggahan berkas portal instansi pemerintah. Kompres lokal aman.',
+        faqs: defaultFaqs('Kompres PDF ke 100KB', 'id'),
+      },
+    },
+  },
+  {
+    id: 'compress-pdf-without-losing-quality',
+    category: 'compress',
+    iconName: 'Minimize2',
+    slugs: generateSlugsForId('compress-pdf-without-losing-quality', {
+      en: 'compress-pdf-without-losing-quality',
+      id: 'kompres-pdf-tanpa-mengurangi-kualitas',
+      es: 'comprimir-pdf-sin-perder-calidad',
+      fr: 'compresser-pdf-sans-perte-de-qualite',
+      de: 'pdf-komprimieren-ohne-qualitaetsverlust',
+    }),
+    seo: {
+      en: {
+        title: 'Compress PDF Without Losing Quality - High Definition Lossless',
+        h1: 'Compress PDF Documents Online Without Losing Quality',
+        description: 'Reduce PDF file size while keeping high-resolution vectors and texts perfectly sharp. 100% private client-side processing.',
+        faqs: defaultFaqs('Compress PDF Without Losing Quality', 'en'),
+      },
+      id: {
+        title: 'Kompres PDF Tanpa Mengurangi Kualitas - Lossless High Definition',
+        h1: 'Kecilkan PDF Online Tanpa Merusak Ketajaman Teks & Gambar',
+        description: 'Pertahankan kegunaan profesional dengan kompresi tingkat tinggi yang tetap menjaga kejelasan teks, diagram, dan gambar.',
+        faqs: defaultFaqs('Kompres PDF Tanpa Mengurangi Kualitas', 'id'),
       },
     },
   },

@@ -26,9 +26,13 @@ const getAcceptTypes = (toolId: string): string => {
   switch (toolId) {
     // PDF-only tools
     case 'merge-pdf':
+    case 'combine-multiple-pdf-files':
     case 'split-pdf':
     case 'rotate-pdf':
     case 'compress-pdf':
+    case 'compress-pdf-for-email':
+    case 'compress-pdf-to-100kb':
+    case 'compress-pdf-without-losing-quality':
     case 'watermark-pdf':
     case 'page-numbers':
     case 'ocr-pdf':
@@ -43,6 +47,7 @@ const getAcceptTypes = (toolId: string): string => {
     case 'organize-pdf':
     case 'sisip-halaman-pdf':
     case 'sign-pdf':
+    case 'sign-pdf-without-registration':
     case 'tanda-tangan-pdf':
     case 'protect-pdf':
     case 'kunci-pdf':
@@ -268,9 +273,9 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
               watermarkConfig={tool.id === 'watermark-pdf' ? watermarkConfig : undefined}
               pageNumberConfig={tool.id === 'page-numbers' ? pageNumberConfig : undefined}
               splitRange={tool.id === 'split-pdf' ? splitRange : undefined}
-              compressQuality={tool.id === 'compress-pdf' ? compressQuality : undefined}
+              compressQuality={['compress-pdf', 'compress-pdf-for-email', 'compress-pdf-to-100kb', 'compress-pdf-without-losing-quality'].includes(tool.id) ? compressQuality : undefined}
               removeRange={tool.id === 'remove-pdf' ? removeRange : undefined}
-              signatureConfig={tool.id === 'sign-pdf' ? signatureConfig : undefined}
+              signatureConfig={['sign-pdf', 'sign-pdf-without-registration'].includes(tool.id) ? signatureConfig : undefined}
               cropConfig={tool.id === 'crop-pdf' ? cropConfig : undefined}
               redactConfig={tool.id === 'redact-pdf' ? redactConfig : undefined}
               resizeConfig={tool.id === 'resize-pdf' ? resizeConfig : undefined}
@@ -422,8 +427,8 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                     onDownload={handleDownload}
                     onReset={handleReset}
                     originalFilename={downloadFilename}
-                    originalSize={tool.id === 'compress-pdf' && files.length > 0 ? files[0].size : undefined}
-                    compressedSize={tool.id === 'compress-pdf' && resultFile ? resultFile.size : undefined}
+                    originalSize={['compress-pdf', 'compress-pdf-for-email', 'compress-pdf-to-100kb', 'compress-pdf-without-losing-quality'].includes(tool.id) && files.length > 0 ? files[0].size : undefined}
+                    compressedSize={['compress-pdf', 'compress-pdf-for-email', 'compress-pdf-to-100kb', 'compress-pdf-without-losing-quality'].includes(tool.id) && resultFile ? resultFile.size : undefined}
                   />
                 ) : undefined
               }

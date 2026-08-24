@@ -79,7 +79,7 @@ export function useDocumentProcessor() {
       let resultBytes: Uint8Array | null = null;
       let outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_processed.pdf`;
 
-      if (toolId === 'merge-pdf') {
+      if (toolId === 'merge-pdf' || toolId === 'combine-multiple-pdf-files') {
         resultBytes = await (await import('../engines/pdfEngine')).mergePdfs(files, (p) => setProgress(p));
         outName = `merged_${files.length}_files.pdf`;
       } else if (toolId === 'split-pdf') {
@@ -183,13 +183,13 @@ export function useDocumentProcessor() {
           resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
         }
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_organized.pdf`;
-      } else if (toolId === 'sign-pdf') {
+      } else if (toolId === 'sign-pdf' || toolId === 'sign-pdf-without-registration') {
         if (options.signatureConfig) {
           const resultBlob = await (await import('../engines/pdf/signPdf')).signPdf(files[0], options.signatureConfig, (p) => setProgress(p));
           resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
         }
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_signed.pdf`;
-      } else if (toolId === 'compress-pdf' || toolId === 'compress-pdf-for-email') {
+      } else if (toolId === 'compress-pdf' || toolId === 'compress-pdf-for-email' || toolId === 'compress-pdf-to-100kb' || toolId === 'compress-pdf-without-losing-quality') {
         resultBytes = await (await import('../engines/compressEngine')).compressPdf(files[0], options.compressQuality, (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_compressed.pdf`;
       } else if (toolId === 'pdf-to-word') {

@@ -161,6 +161,26 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "h1": "Compress PDF Files for Email Attachments",
       "description": "Bypass Gmail, Outlook, and Yahoo file attachment size limits. Compress large PDFs under 25MB locally inside browser memory with 0 bytes upload."
     },
+    "compress-pdf-to-100kb": {
+      "title": "Compress PDF to 100KB - Online PDF Shrinker to 100KB",
+      "h1": "Compress PDF Files to 100KB Online",
+      "description": "Shrink your large PDF documents under 100KB for government portals, job applications, or visa forms completely in your browser."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "Compress PDF Without Losing Quality - High Definition Lossless",
+      "h1": "Compress PDF Documents Online Without Losing Quality",
+      "description": "Reduce PDF file size while keeping high-resolution vectors and texts perfectly sharp. 100% private client-side processing."
+    },
+    "combine-multiple-pdf-files": {
+      "title": "Combine Multiple PDF Files - Merge PDFs Online Free",
+      "h1": "Combine Multiple PDF Files Online",
+      "description": "Merge and combine multiple PDF files into one single document. Instant local processing, 100% private, no limit."
+    },
+    "sign-pdf-without-registration": {
+      "title": "Sign PDF Online Without Registration - Free E-Sign",
+      "h1": "E-Sign PDF Documents Online Without Registration",
+      "description": "Place your electronic signature on any PDF file instantly. No account required, no signup, 100% private and free."
+    },
     "ocr-pdf": {
       "title": "Free Browser OCR - Extract Text from Scanned PDF & Images",
       "h1": "Extract Text from Scanned PDFs & Images with Tesseract OCR",
@@ -322,6 +342,26 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "Kompres PDF Online - Kurangi Ukuran File 60-90% Secara Lokal",
       "h1": "Kompres Dokumen PDF tanpa Kehilangan Kualitas",
       "description": "Kecilkan file PDF besar hingga 90% menggunakan teknik rasterisasi adaptif lossless dan DPI langsung di WebAssembly."
+    },
+    "compress-pdf-to-100kb": {
+      "title": "Kompres PDF ke 100KB - Perkecil PDF di Bawah 100KB Online",
+      "h1": "Kecilkan File PDF Hingga Di Bawah 100KB Secara Instan",
+      "description": "Sangat cocok untuk pendaftaran CPNS, visa, beasiswa, atau unggahan berkas portal instansi pemerintah. Kompres lokal aman."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "Kompres PDF Tanpa Mengurangi Kualitas - Lossless High Definition",
+      "h1": "Kecilkan PDF Online Tanpa Merusak Ketajaman Teks & Gambar",
+      "description": "Pertahankan kegunaan profesional dengan kompresi tingkat tinggi yang tetap menjaga kejelasan teks, diagram, dan gambar."
+    },
+    "combine-multiple-pdf-files": {
+      "title": "Gabung Beberapa File PDF - Satukan PDF Online Gratis",
+      "h1": "Gabungkan Beberapa File PDF secara Instan",
+      "description": "Satukan banyak berkas PDF menjadi satu file secara lokal di dalam browser Anda tanpa perlu mengunggah ke server internet."
+    },
+    "sign-pdf-without-registration": {
+      "title": "Tanda Tangan PDF Tanpa Daftar - E-Sign Gratis & Tanpa Akun",
+      "h1": "Tanda Tangani Dokumen PDF Tanpa Registrasi Akun",
+      "description": "Bubuhkan tanda tangan elektronik ke berkas PDF secara instan dan gratis tanpa registrasi akun atau langganan."
     },
     "ocr-pdf": {
       "title": "OCR Browser Gratis - Ekstrak Teks dari PDF & Gambar yang Dipindai",

@@ -164,8 +164,8 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
       {tool.id === 'watermark-pdf' && <WatermarkPdfEditor config={watermarkConfig} setConfig={setWatermarkConfig} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
       {tool.id === 'page-numbers' && <PageNumbersPdfEditor config={pageNumberConfig} setConfig={setPageNumberConfig} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
       {tool.id === 'split-pdf' && <SplitPdfEditor splitRange={splitRange} setSplitRange={setSplitRange} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
-      {tool.id === 'merge-pdf' && <MergePdfEditor files={files} setFiles={setFiles} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
-      {(tool.id === 'compress-pdf' || tool.id === 'compress-pdf-for-email') && <CompressPdfEditor quality={compressQuality} setQuality={setCompressQuality} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
+      {(tool.id === 'merge-pdf' || tool.id === 'combine-multiple-pdf-files') && <MergePdfEditor files={files} setFiles={setFiles} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
+      {(tool.id === 'compress-pdf' || tool.id === 'compress-pdf-for-email' || tool.id === 'compress-pdf-to-100kb' || tool.id === 'compress-pdf-without-losing-quality') && <CompressPdfEditor quality={compressQuality} setQuality={setCompressQuality} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
 
       {tool.id === 'pdf-to-image' && extractImageFormat && setExtractImageFormat && (
         <PdfToImageEditor format={extractImageFormat} setFormat={setExtractImageFormat} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
@@ -176,7 +176,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
       {tool.id === 'organize-pdf' && insertAtIndex !== undefined && setInsertAtIndex && setInsertFile && (
         <OrganizePdfEditor insertFile={insertFile || null} setInsertFile={setInsertFile} insertAtIndex={insertAtIndex} setInsertAtIndex={setInsertAtIndex} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} totalPages={pdfPagesCount} />
       )}
-      {tool.id === 'sign-pdf' && signatureConfig && setSignatureConfig && (
+      {(tool.id === 'sign-pdf' || tool.id === 'sign-pdf-without-registration') && signatureConfig && setSignatureConfig && (
         <SignPdfEditor signatureConfig={signatureConfig} setSignatureConfig={setSignatureConfig} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
       {tool.id === 'protect-pdf' && pdfPassword !== undefined && setPdfPassword && (

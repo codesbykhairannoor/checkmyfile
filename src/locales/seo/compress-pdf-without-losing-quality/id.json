@@ -1,0 +1,79 @@
+{
+  "title": "Kompres PDF Tanpa Mengurangi Kualitas - Lossless High Definition",
+  "h1": "Kecilkan PDF Online Tanpa Merusak Ketajaman Teks & Gambar",
+  "description": "Pertahankan kegunaan profesional dengan kompresi tingkat tinggi yang tetap menjaga kejelasan teks, diagram, dan gambar.",
+  "sections": [
+    {
+      "type": "word_hero_features",
+      "title": "Kecilkan Ukuran PDF dengan Teks yang Tetap Tajam",
+      "content": "Kecewa dengan kompresor lain yang membuat dokumen PDF Anda buram? Engine vektor adaptif kami mengecilkan ukuran PDF hingga 90% tanpa merusak kualitas teks dan gambar.",
+      "badgeText": "Optimasi Lossless"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Cara Kompres PDF Kualitas Lossless",
+      "badgeText": "Langkah-Langkah",
+      "steps": [
+        {
+          "title": "Pilih Berkas PDF",
+          "description": "Tarik berkas PDF Anda ke pembaca browser lokal kami."
+        },
+        {
+          "title": "Pilih Preset Rekomendasi",
+          "description": "Pilih kompresi medium untuk mempertahankan kepadatan DPI gambar asli."
+        },
+        {
+          "title": "Unduh PDF Berkualitas",
+          "description": "Simpan berkas hasil kompresi yang tetap tajam dan mudah dibaca."
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "Dirancang untuk Desainer, Arsitek & Profesional",
+      "content": "Tidak ada lagi denah, diagram, atau portofolio yang buram. Kompresor kami menghapus metadata usang tanpa merusak elemen grafis penting.",
+      "subTitle": "Lossless Vektor",
+      "subContent": "Menjaga outline font dan SVG tetap tajam pada semua tingkat zoom.",
+      "badgeText": "Lossless Vektor"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "Privasi Absolut & Keamanan",
+      "content": "Presentasi bisnis rahasia, audit keuangan, atau berkas penting tetap berada di perangkat lokal Anda, menjamin keamanan privasi korporat."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Pemrosesan Cepat Berbasis WebAssembly",
+      "content": "Kode kompresi berbasis WebAssembly berjalan di memori perangkat secara instan tanpa membebani kuota internet.",
+      "badgeText": "Kecepatan Lossless"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Mengapa teks tidak menjadi kabur saat dikompres di sini?",
+      "a": "Karena alat kami memisahkan data teks (vektor) dari gambar, lalu mengompres struktur internal file tanpa merusak kualitas render font."
+    },
+    {
+      "q": "Apakah pencarian kata (Ctrl+F) di PDF masih berfungsi?",
+      "a": "Ya. Struktur pencarian teks tetap utuh dan aktif seperti sedia kala."
+    },
+    {
+      "q": "Apakah kompresi lossless ini berbayar?",
+      "a": "100% gratis digunakan kapan saja tanpa batas pemakaian harian."
+    }
+  ],
+  "badges": [
+    "Resolusi Tinggi",
+    "Teks Tetap Jelas",
+    "Preset Lossless"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Kompres PDF Lossless",
+  "supportCenter": "Pusat Dukungan",
+  "faqTitle": "Pertanyaan yang Sering Diajukan"
+}
