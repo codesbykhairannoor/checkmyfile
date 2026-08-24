@@ -1,0 +1,79 @@
+{
+  "title": "Muunna skannattu PDF tekstiksi",
+  "h1": "Pura tekstiä skannatuista PDF-tiedostoista OCR:llä",
+  "description": "Muuta ei-hakukelpoiset skannatut PDF-tiedostot ja kuvat muokattavaksi tavalliseksi tekstiksi paikallisesti käyttämällä monikielisiä WebAssembly OCR -työntekijöitä.",
+  "sections": [
+    {
+      "type": "resize_hero_features",
+      "title": "Poimi teksti skannauksista välittömästi",
+      "content": "Käytä edistynyttä optista merkintunnistustekniikkaamme (OCR) muokattavan tekstin poimimiseen skannatuista asiakirjoista ja kuvista.",
+      "badgeText": "Tehokas OCR"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Tekstin purkaminen OCR:llä",
+      "badgeText": "Yksinkertainen opas",
+      "steps": [
+        {
+          "title": "Lataa skannaus",
+          "description": "Valitse skannattu PDF- tai kuvatiedosto."
+        },
+        {
+          "title": "Suorita OCR",
+          "description": "Valitse kieli ja aloita OCR-prosessi."
+        },
+        {
+          "title": "Kopioi tai Lataa",
+          "description": "Hanki purettu teksti välittömästi."
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "Monikielinen tuki",
+      "content": "OCR-moottorimme tunnistaa useita kieliä ja monimutkaisia ​​merkistöjä suurella tarkkuudella.",
+      "subTitle": "Tarkka purku",
+      "subContent": "Powered by Tesseract OCR WebAssembly.",
+      "badgeText": "Tarkka purku"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "Yksityinen OCR-käsittely",
+      "content": "Toisin kuin muut OCR-työkalut, emme lähetä asiakirjojasi pilvisovellusliittymiin. Tekstin purkaminen tapahtuu suoraan laitteellasi."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Korkea tarkkuus",
+      "content": "Erinomainen tunnistusnopeus selkeille skannauksille.",
+      "badgeText": "Tarkkaa"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Tukeeko se käsinkirjoitettua tekstiä?",
+      "a": "OCR on optimoitu painetulle tekstille. Käsinkirjoitetun tekstin tarkkuus voi olla pienempi."
+    },
+    {
+      "q": "Ladataanko tiedostoni?",
+      "a": "Ei, OCR-moottori toimii kokonaan selaimessasi WebAssemblyn avulla."
+    },
+    {
+      "q": "Voinko poimia tekstiä myös kuvista?",
+      "a": "Kyllä, voit ladata PNG-, JPG- tai skannattuja PDF-tiedostoja."
+    }
+  ],
+  "badges": [
+    "OCR",
+    "Turvallinen",
+    "Ilmainen"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Aloita OCR-uutto",
+  "supportCenter": "Tukikeskus",
+  "faqTitle": "Usein kysytyt kysymykset"
+}

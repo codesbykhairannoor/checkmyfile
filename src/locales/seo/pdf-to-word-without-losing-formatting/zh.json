@@ -1,0 +1,79 @@
+{
+  "title": "免费的 PDF 到 Word 转换器 (.docx)，不会丢失格式",
+  "h1": "在浏览器中将 PDF 转换为可编辑的 Word DOCX",
+  "description": "将任何 PDF 中的精确文本、布局运行和段落直接提取到浏览器内存中的干净的 Microsoft Word (.docx) 文件中。",
+  "sections": [
+    {
+      "type": "watermark_hero_features",
+      "title": "完美将 PDF 转换为 Word",
+      "content": "将 PDF 文档转换为可编辑的 Word 文件，同时保持原始布局、字体和图像不变。",
+      "badgeText": "保留格式"
+    },
+    {
+      "type": "protect_how_to_steps",
+      "title": "如何将 PDF 转换为 Word",
+      "badgeText": "轻松转换",
+      "steps": [
+        {
+          "title": "上传 PDF",
+          "description": "选择您要转换的 PDF 文件。"
+        },
+        {
+          "title": "转换为 DOCX",
+          "description": "单击“转换”开始本地处理。"
+        },
+        {
+          "title": "下载Word文件",
+          "description": "保存完全可编辑的 Word 文档。"
+        }
+      ]
+    },
+    {
+      "type": "excel_geo_targeting",
+      "title": "准确的布局保留",
+      "content": "我们的高级解析器可以理解段落、表格和列，确保您的 Word 文档看起来与 PDF 完全相同。",
+      "subTitle": "高保真度",
+      "subContent": "保持样式和结构。",
+      "badgeText": "高保真度"
+    },
+    {
+      "type": "redact_privacy_security",
+      "title": "安全的客户端转换",
+      "content": "安全地转换机密合同和报告。 转换完全发生在您的设备上。"
+    },
+    {
+      "type": "watermark_performance",
+      "title": "快速处理",
+      "content": "在几秒钟内转换多页文档。",
+      "badgeText": "快速输出"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "布局会改变吗？",
+      "a": "我们努力保留精确的布局，包括表格、图像和文本对齐方式。"
+    },
+    {
+      "q": "这是在服务器上处理的吗？",
+      "a": "不会，转换完全在您的浏览器中完成，以最大限度地保护隐私。"
+    },
+    {
+      "q": "转换后可以编辑文本吗？",
+      "a": "是的，生成的 DOCX 文件可以在 Microsoft Word 或 Google Docs 中完全编辑。"
+    }
+  ],
+  "badges": [
+    "可编辑",
+    "准确的",
+    "私人的"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "转换为Word",
+  "supportCenter": "支持中心",
+  "faqTitle": "常见问题解答"
+}

@@ -1,0 +1,79 @@
+{
+  "title": "PDF-oldalak átrendezése Drag and Drop Ingyenesen",
+  "h1": "A PDF-oldalak egyszerű átrendezése a fogd és vidd funkcióval",
+  "description": "Rendezheti és átrendezheti a PDF-dokumentum oldalait vizuálisan a bélyegképek húzásával. 100%-ban ingyenes és helyi.",
+  "sections": [
+    {
+      "type": "word_hero_features",
+      "title": "PDF-oldalak vizuális rendezése",
+      "content": "A bélyegképek húzásával egyszerűen módosíthatja a PDF-oldalak sorrendjét. Nincs szükség bonyolult szoftverre.",
+      "badgeText": "Egyszerű átrendezés"
+    },
+    {
+      "type": "split_how_to_steps",
+      "title": "PDF-oldalak átrendezése",
+      "badgeText": "Lépésről lépésre",
+      "steps": [
+        {
+          "title": "PDF feltöltése",
+          "description": "Válassza ki a rendezni kívánt PDF-fájlt."
+        },
+        {
+          "title": "Drag & Drop",
+          "description": "Kattintson és húzza át az oldal miniatűrjeit az átrendezésükhöz."
+        },
+        {
+          "title": "Módosítások mentése",
+          "description": "Töltse le az újonnan megrendelt PDF dokumentumot."
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "Vizuális Drag & Drop felület",
+      "content": "Intuitív kezelőfelületünk segítségével hihetetlenül egyszerűen megtekintheti oldalait, és pontosan oda helyezheti őket, ahol lenniük kell.",
+      "subTitle": "Interaktív",
+      "subContent": "Valós idejű miniatűr generálás.",
+      "badgeText": "Interaktív"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "100%-os ügyféloldali rendezés",
+      "content": "A dokumentumai helyileg átrendeződnek a böngészőben. Garantáljuk a teljes adatvédelmet."
+    },
+    {
+      "type": "resize_performance",
+      "title": "Sima élmény",
+      "content": "Nagy dokumentumok átrendezése késés nélkül.",
+      "badgeText": "Optimalizált"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Törölhetek oldalakat átrendezés közben?",
+      "a": "Igen, szükség esetén oldalakat is kiválaszthat és eltávolíthat."
+    },
+    {
+      "q": "Mobilon működik?",
+      "a": "Igen, a drag and drop felületünk érintésbarát, és mobileszközökön is működik."
+    },
+    {
+      "q": "Fel vannak töltve a fájljaim egy szerverre?",
+      "a": "Nem, minden átrendezés közvetlenül az eszközén történik."
+    }
+  ],
+  "badges": [
+    "Vizuális",
+    "Magán",
+    "Ingyenes"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Rendezze át az oldalakat most",
+  "supportCenter": "Támogatási Központ",
+  "faqTitle": "Gyakran Ismételt Kérdések"
+}

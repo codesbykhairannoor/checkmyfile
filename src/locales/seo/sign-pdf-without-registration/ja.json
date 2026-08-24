@@ -1,71 +1,71 @@
 {
-  "title": "Sign PDF Online Without Registration - Free E-Sign - JA",
-  "h1": "E-Sign PDF Documents Online Without Registration (JA)",
-  "description": "Place your electronic signature on any PDF file instantly. No account required, no signup, 100% private and free.",
+  "title": "登録なしでオンラインで PDF に署名",
+  "h1": "登録なしでオンラインで PDF ドキュメントに電子署名",
+  "description": "PDF ファイルに電子署名を即座に追加します。 アカウントもサインアップも必要なく、完全にプライベートで無料です。",
   "sections": [
     {
       "type": "watermark_hero_features",
-      "title": "Sign PDF Documents Instantly Without Creating an Account",
-      "content": "Annoyed by online sign tools that force you to register, confirm emails, or pay subscriptions just to sign a single paper? HandleMyFile lets you add signatures to contracts completely free without signup.",
-      "badgeText": "No Registration Required"
+      "title": "アカウントを作成せずに PDF ドキュメントに即座に署名",
+      "content": "たった 1 枚の書類に署名するためだけに、登録、電子メールの確認、または購読料の支払いを強制されるオンライン署名ツールにイライラしていませんか? HandleMyFile を使用すると、サインアップせずに完全に無料で契約書に署名を追加できます。",
+      "badgeText": "登録は不要です"
     },
     {
       "type": "ocr_how_to_steps",
-      "title": "How to Sign PDF Without Signup",
-      "badgeText": "Quick Steps",
+      "title": "サインアップせずに PDF に署名する方法",
+      "badgeText": "クイックステップ",
       "steps": [
         {
-          "title": "Upload Document",
-          "description": "Drop your PDF file into our registration-free workspace."
+          "title": "ドキュメントのアップロード",
+          "description": "PDF ファイルを登録不要のワークスペースにドロップします。"
         },
         {
-          "title": "Draw or Type Signature",
-          "description": "Create your signature with your mouse/touchpad, or upload an image."
+          "title": "署名を描くかタイプする",
+          "description": "マウス/タッチパッドを使用して署名を作成するか、画像をアップロードします。"
         },
         {
-          "title": "Download Signed PDF",
-          "description": "Download your signed document instantly. Zero data is saved."
+          "title": "署名済み PDF をダウンロード",
+          "description": "署名済みの文書をすぐにダウンロードします。 保存されるデータはゼロです。"
         }
       ]
     },
     {
       "type": "excel_geo_targeting",
-      "title": "Your Signature is Secure and Stays in Your Browser",
-      "content": "Biometric and graphical signature drawings are processed entirely in RAM. We do not store your signature or documents on any server, providing maximum fraud prevention.",
-      "subTitle": "Cryptographically Safe",
-      "subContent": "Vectors are flattened directly on the client canvas.",
-      "badgeText": "Cryptographically Safe"
+      "title": "署名は安全でブラウザ内に残ります",
+      "content": "生体認証およびグラフィック署名の描画はすべて RAM で処理されます。 不正行為を最大限に防止するため、当社はお客様の署名や文書をいかなるサーバーにも保存しません。",
+      "subTitle": "暗号的に安全",
+      "subContent": "ベクトルはクライアント キャンバス上で直接フラット化されます。",
+      "badgeText": "暗号的に安全"
     },
     {
       "type": "redact_privacy_security",
-      "title": "Frictionless NDA & Contract Signing",
-      "content": "Perfect for freelancers and business professionals who want to execute agreements, job offers, or NDAs on the spot without any onboarding friction."
+      "title": "スムーズなNDAと契約署名",
+      "content": "オンボーディングでの煩雑な手続きなしに、契約、求人、NDA をその場で締結したいフリーランサーやビジネス プロフェッショナルに最適です。"
     },
     {
       "type": "split_performance",
-      "title": "Sign and Send in 15 Seconds",
-      "content": "With zero registration forms, email verification, or loading screens, you can sign any document and send it back immediately.",
-      "badgeText": "Speedy E-Sign"
+      "title": "15 秒で署名して送信",
+      "content": "登録フォーム、メール認証、読み込み画面が不要なので、あらゆる文書に署名してすぐに返送できます。",
+      "badgeText": "スピーディーな電子サイン"
     }
   ],
   "faqs": [
     {
-      "q": "Do I need to sign up or input my email to download?",
-      "a": "No. You can download your signed PDF immediately with zero onboarding steps."
+      "q": "ダウンロードするにはサインアップやメールアドレスの入力が必要ですか?",
+      "a": "いいえ。署名済みの PDF は、オンボーディング手順なしですぐにダウンロードできます。"
     },
     {
-      "q": "Is the signature legally binding?",
-      "a": "Yes, our e-signature complies with general electronic transaction laws for basic electronic signatures."
+      "q": "署名には法的拘束力がありますか?",
+      "a": "はい、当社の電子署名は、基本的な電子署名に関する一般的な電子取引法に準拠しています。"
     },
     {
-      "q": "Does HandleMyFile store my signature graphic?",
-      "a": "No. The signature graphics are processed strictly in browser memory and wiped clean on page reload."
+      "q": "HandleMyFile には私の署名グラフィックが保存されますか?",
+      "a": "いいえ。署名グラフィックはブラウザのメモリ内で厳密に処理され、ページのリロード時に完全に消去されます。"
     }
   ],
   "badges": [
-    "No Registration",
-    "100% Free",
-    "Zero Footprint"
+    "登録なし",
+    "完全無料",
+    "設置面積ゼロ"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Sign PDF Free",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "PDFに無料で署名",
+  "supportCenter": "サポートセンター",
+  "faqTitle": "よくある質問"
 }

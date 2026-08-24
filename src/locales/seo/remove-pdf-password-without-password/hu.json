@@ -1,0 +1,79 @@
+{
+  "title": "PDF-jelszó eltávolítása jelszó nélkül",
+  "h1": "Jelszó eltávolítása a PDF-ből jelszó nélkül",
+  "description": "Speciális feloldó eszközünk segítségével távolítsa el a jelszavas védelmet PDF-fájljaiból anélkül, hogy az eredeti jelszóra lenne szüksége.",
+  "sections": [
+    {
+      "type": "protect_hero_features",
+      "title": "A PDF jelszavak azonnali eltávolítása",
+      "content": "Elfelejtette a PDF jelszavát? Eszközünk segítségével másodpercek alatt eltávolíthatja dokumentumai jelszavas védelmét, biztonságosan a böngészőben.",
+      "badgeText": "Azonnali feloldás"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "A PDF feloldása",
+      "badgeText": "Gyors útmutató",
+      "steps": [
+        {
+          "title": "Válassza a Zárolt PDF lehetőséget",
+          "description": "Töltse fel a feloldani kívánt PDF-dokumentumot."
+        },
+        {
+          "title": "Jelszó eltávolítása",
+          "description": "Kattintson a Feloldás gombra a jelszó eltávolításához a dokumentumból."
+        },
+        {
+          "title": "Töltse le a feloldott PDF-t",
+          "description": "Mentse el a nem védett PDF-fájlt a készülékére."
+        }
+      ]
+    },
+    {
+      "type": "compare_geo_targeting",
+      "title": "100%-ban biztonságos helyi feldolgozás",
+      "content": "Zárolt dokumentumai bizalmas információkat tartalmaznak. Helyben dolgozzuk fel őket a WebAssembly segítségével, így biztosítva, hogy 0 bájt hagyja el az eszközt.",
+      "subTitle": "Az adatvédelem első",
+      "subContent": "Nincsenek felhőszerverek, nincs adatmegőrzés.",
+      "badgeText": "Az adatvédelem első"
+    },
+    {
+      "type": "watermark_privacy_security",
+      "title": "Banki szintű adatvédelem",
+      "content": "Speciális algoritmusokat használunk a titkosítás eltávolítására anélkül, hogy a dokumentum tartalmát veszélyeztetnénk."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Villámgyors",
+      "content": "Oldja fel a PDF zárolását ezredmásodpercek alatt.",
+      "badgeText": "Ultra gyors"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Biztonságos itt feloldani a PDF-em zárolását?",
+      "a": "Igen. Minden feldolgozás helyileg, a böngészőben történik. Nem töltjük fel fájljait egyetlen szerverre sem."
+    },
+    {
+      "q": "Eltávolíthat minden típusú jelszót?",
+      "a": "Eltávolíthatja a felhasználói és tulajdonosi jelszavakat a szabványos titkosított PDF-fájlokból."
+    },
+    {
+      "q": "Ez az eszköz ingyenes?",
+      "a": "Igen, 100%-ban ingyenes a használata."
+    }
+  ],
+  "badges": [
+    "Nincs feltöltés",
+    "Biztonságos",
+    "Gyors"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Oldja fel a PDF zárolását most",
+  "supportCenter": "Támogatási Központ",
+  "faqTitle": "Gyakran Ismételt Kérdések"
+}

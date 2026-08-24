@@ -1,0 +1,79 @@
+{
+  "title": "Reducir el tamaño del PDF sin conexión: compresor de PDF local",
+  "h1": "Reduzca el tamaño del PDF completamente sin conexión en su navegador",
+  "description": "Reduzca el tamaño de sus documentos PDF sin conexión directamente en su navegador sin necesidad de cargarlos en el servidor. 100% seguro.",
+  "sections": [
+    {
+      "type": "split_hero_features",
+      "title": "Reducir archivos PDF sin conexión",
+      "content": "Comprime archivos PDF de gran tamaño sin conexión a Internet. Nuestro motor WebAssembly se ejecuta completamente sin conexión en su navegador.",
+      "badgeText": "Compresión sin conexión"
+    },
+    {
+      "type": "ocr_how_to_steps",
+      "title": "Cómo reducir el tamaño de un PDF sin conexión",
+      "badgeText": "Pasos rápidos",
+      "steps": [
+        {
+          "title": "Agregar archivo",
+          "description": "Seleccione su documento PDF grande."
+        },
+        {
+          "title": "Comprimir",
+          "description": "Elija el nivel de compresión y haga clic en comprimir."
+        },
+        {
+          "title": "Descargar",
+          "description": "Guarde el archivo PDF más pequeño en su computadora."
+        }
+      ]
+    },
+    {
+      "type": "rotate_geo_targeting",
+      "title": "Funciona sin internet",
+      "content": "Una vez cargada la página, puedes desconectarte de Internet y la herramienta seguirá funcionando perfectamente.",
+      "subTitle": "Verdadero sin conexión",
+      "subContent": "No hay comunicación con el servidor durante la compresión.",
+      "badgeText": "Verdadero sin conexión"
+    },
+    {
+      "type": "sign_privacy_security",
+      "title": "Máxima privacidad garantizada",
+      "content": "Dado que nunca se transmiten datos a través de la red, sus documentos confidenciales están 100% seguros."
+    },
+    {
+      "type": "split_performance",
+      "title": "Motor eficiente",
+      "content": "Alta relación de compresión con procesamiento rápido.",
+      "badgeText": "Alta eficiencia"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "¿Cómo funciona la compresión sin conexión?",
+      "a": "Usamos WebAssembly para ejecutar un potente motor de compresión de PDF directamente dentro de su navegador."
+    },
+    {
+      "q": "¿Se arruinará la calidad?",
+      "a": "No, puedes elegir la compresión sin pérdidas para mantener una alta calidad visual."
+    },
+    {
+      "q": "¿Existe un límite de tamaño de archivo?",
+      "a": "No, dado que se ejecuta localmente, puedes comprimir archivos tan grandes como lo permita la memoria de tu dispositivo."
+    }
+  ],
+  "badges": [
+    "Desconectada",
+    "Segura",
+    "Rápida"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Reducir tamaño ahora",
+  "supportCenter": "Centro de soporte",
+  "faqTitle": "Preguntas frecuentes"
+}

@@ -1,71 +1,71 @@
 {
-  "title": "Combine Multiple PDF Files - Merge PDFs Online Free - SK",
-  "h1": "Combine Multiple PDF Files Online (SK)",
+  "title": "Combine Multiple PDF Files",
+  "h1": "Combine Multiple PDF Files Online (Free & Client-Side)",
   "description": "Merge and combine multiple PDF files into one single document. Instant local processing, 100% private, no limit.",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Combine Multiple PDF Documents into One Instantly",
-      "content": "Need to combine multiple reports, certificates, or scan pages into a single PDF document? Our browser combiner lets you drag, drop, reorder, and merge files locally with zero waiting time.",
-      "badgeText": "PDF Combiner"
+      "title": "Combine Multiple PDF Files into One",
+      "content": "Organize your workflow by merging invoices, reports, or chapters into a single PDF file instantly. No upload required.",
+      "badgeText": "Unlimited Merging"
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Combine Multiple PDFs",
+      "title": "How to Combine PDF Files",
       "badgeText": "Easy Guide",
       "steps": [
         {
-          "title": "Select Documents",
-          "description": "Upload all the PDF files you wish to combine."
+          "title": "Upload Files",
+          "description": "Drag and drop all the PDFs you want to merge."
         },
         {
           "title": "Reorder Pages",
-          "description": "Drag and drop the files to rearrange their sequence."
+          "description": "Drag to rearrange the order of the documents as you see fit."
         },
         {
-          "title": "Combine Files",
-          "description": "Click the merge button to combine them into one file instantly."
+          "title": "Merge & Download",
+          "description": "Click merge and download your combined PDF immediately."
         }
       ]
     },
     {
       "type": "rotate_geo_targeting",
-      "title": "No File Uploads, 100% Safe for Personal Documents",
-      "content": "Unlike other sites that require you to upload your sensitive ijazah, scans, or bank records to their servers, our combiner runs entirely locally in your browser memory.",
-      "subTitle": "Privacy First",
-      "subContent": "No documents are ever transmitted over the network.",
-      "badgeText": "Privacy First"
+      "title": "Combine Dozens of Files Securely",
+      "content": "Because we process everything in your browser, you can merge gigabytes of PDFs without waiting for slow internet uploads.",
+      "subTitle": "Zero Server Uploads",
+      "subContent": "All merging is done using your computer's RAM.",
+      "badgeText": "Zero Server Uploads"
     },
     {
       "type": "sign_privacy_security",
-      "title": "Secure Corporate Data Merging",
-      "content": "Perfect for financial departments and lawyers combining highly sensitive multi-page contracts. HandleMyFile keeps your documents offline."
+      "title": "Keep Your Invoices & Reports Organized",
+      "content": "Whether you are a student submitting assignments or a freelancer sending invoices, merging them into one file makes it much cleaner."
     },
     {
       "type": "resize_performance",
-      "title": "Instantaneous Local Merging",
-      "content": "Combining 10 large PDFs takes less than 1 second because we do not waste time uploading files to remote clouds.",
-      "badgeText": "Instant Merge"
+      "title": "Instant Merging Speed",
+      "content": "Combine 50 files in under 2 seconds.",
+      "badgeText": "Lightning Fast"
     }
   ],
   "faqs": [
     {
-      "q": "Is there a limit to how many PDFs I can combine?",
-      "a": "No, there are no limits on file count or size. Only your browser memory limit applies."
+      "q": "Is there a limit to how many files I can combine?",
+      "a": "No. Since it's processed on your device, the only limit is your computer's memory."
     },
     {
-      "q": "Can I rearrange pages before merging?",
-      "a": "Yes, you can drag and drop files in the workspace list to set their order before combining."
+      "q": "Can I rearrange the order?",
+      "a": "Yes, you can easily drag and drop the files into your desired order before merging."
     },
     {
-      "q": "Can I combine encrypted or password-protected PDFs?",
-      "a": "You need to unlock password-protected PDFs first before combining them."
+      "q": "Do my files go to a server?",
+      "a": "Absolutely not. The merging happens 100% offline within your browser."
     }
   ],
   "badges": [
-    "No Upload Limits",
-    "Drag & Drop Reorder",
-    "100% Client-Side"
+    "No Uploads",
+    "Merge PDFs",
+    "Unlimited"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Combine PDFs",
+  "buttonText": "Combine PDF Files",
   "supportCenter": "Support Center",
   "faqTitle": "Frequently Asked Questions"
 }

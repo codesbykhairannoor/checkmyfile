@@ -1,0 +1,79 @@
+{
+  "title": "Konversi PDF yang Dipindai ke Teks",
+  "h1": "Ekstrak Teks dari PDF yang Dipindai dengan OCR",
+  "description": "Ubah PDF dan gambar pindaian yang tidak dapat dicari menjadi teks biasa yang dapat diedit secara lokal menggunakan pekerja OCR WebAssembly multi-bahasa.",
+  "sections": [
+    {
+      "type": "resize_hero_features",
+      "title": "Ekstrak Teks dari Pemindaian Secara Instan",
+      "content": "Gunakan teknologi Pengenalan Karakter Optik (OCR) kami yang canggih untuk mengekstrak teks yang dapat diedit dari dokumen dan gambar yang dipindai.",
+      "badgeText": "OCR yang kuat"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Cara Mengekstrak Teks dengan OCR",
+      "badgeText": "Panduan Sederhana",
+      "steps": [
+        {
+          "title": "Unggah Pindaian",
+          "description": "Pilih file PDF atau gambar yang dipindai."
+        },
+        {
+          "title": "Jalankan OCR",
+          "description": "Pilih bahasa dan mulai proses OCR."
+        },
+        {
+          "title": "Salin atau Unduh",
+          "description": "Dapatkan teks yang diekstraksi secara instan."
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "Dukungan Multi-Bahasa",
+      "content": "Mesin OCR kami mengenali berbagai bahasa dan rangkaian karakter kompleks dengan akurasi tinggi.",
+      "subTitle": "Ekstraksi Akurat",
+      "subContent": "Didukung oleh Tesseract OCR WebAssembly.",
+      "badgeText": "Ekstraksi Akurat"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "Pemrosesan OCR Pribadi",
+      "content": "Tidak seperti alat OCR lainnya, kami tidak mengirimkan dokumen Anda ke API cloud. Ekstraksi teks terjadi langsung di perangkat Anda."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Akurasi Tinggi",
+      "content": "Tingkat pengenalan luar biasa untuk pemindaian yang jelas.",
+      "badgeText": "Tepat"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Apakah itu mendukung teks tulisan tangan?",
+      "a": "OCR kami dioptimalkan untuk teks cetak. Teks tulisan tangan mungkin memiliki akurasi yang lebih rendah."
+    },
+    {
+      "q": "Apakah file saya diunggah?",
+      "a": "Tidak, mesin OCR berjalan sepenuhnya di browser Anda menggunakan WebAssembly."
+    },
+    {
+      "q": "Bisakah saya mengekstrak teks dari gambar juga?",
+      "a": "Ya, Anda dapat mengunggah file PNG, JPG, atau PDF yang dipindai."
+    }
+  ],
+  "badges": [
+    "OCR",
+    "Aman",
+    "Bebas"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Mulai Ekstraksi OCR",
+  "supportCenter": "Pusat Dukungan",
+  "faqTitle": "Pertanyaan yang Sering Diajukan"
+}

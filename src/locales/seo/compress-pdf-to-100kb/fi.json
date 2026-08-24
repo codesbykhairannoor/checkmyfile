@@ -1,71 +1,71 @@
 {
-  "title": "Compress PDF to 100KB - Online PDF Shrinker to 100KB - FI",
-  "h1": "Compress PDF Files to 100KB Online (FI)",
-  "description": "Shrink your large PDF documents under 100KB for government portals, job applications, or visa forms completely in your browser.",
+  "title": "Pakkaa PDF 100 kilotavuun",
+  "h1": "Pakkaa PDF-tiedostot 100 kilotavuun verkossa",
+  "description": "Pienennä suuret PDF-asiakirjasi alle 100 kt:n hallinnon portaaleja, työhakemuksia tai viisumilomakkeita varten kokonaan selaimessasi.",
   "sections": [
     {
       "type": "resize_hero_features",
-      "title": "Kecilkan PDF ke 100KB secara Instan & Aman",
-      "content": "Struggling with strict 100KB upload limits on government portals, job sites, or visa applications? Our local compressor optimizes your PDF file under 100KB in seconds.",
-      "badgeText": "100KB Target Limit"
+      "title": "Pienennä PDF 100 kilotavuun välittömästi ja turvallisesti",
+      "content": "Kamppailetko tiukkojen 100 kt:n latausrajoitusten kanssa valtion portaaleissa, työpaikoissa tai viisumihakemuksissa? Paikallinen kompressorimme optimoi alle 100 kt:n PDF-tiedostosi sekunneissa.",
+      "badgeText": "100 kt tavoite"
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Compress PDF under 100KB",
-      "badgeText": "Quick Guide",
+      "title": "Kuinka pakata PDF alle 100 kt",
+      "badgeText": "Pikaopas",
       "steps": [
         {
-          "title": "Add PDF Document",
-          "description": "Drop your PDF file into the client-side compressor."
+          "title": "Lisää PDF-dokumentti",
+          "description": "Pudota PDF-tiedosto asiakaspuolen kompressoriin."
         },
         {
-          "title": "Select 100KB Target",
-          "description": "Choose strong compression to automatically target size under 100KB."
+          "title": "Valitse 100 kt:n tavoite",
+          "description": "Valitse vahva pakkaus kohdistaaksesi koon automaattisesti alle 100 kt."
         },
         {
-          "title": "Save Optimized PDF",
-          "description": "Download your compressed PDF instantly, ready to upload."
+          "title": "Tallenna optimoitu PDF",
+          "description": "Lataa pakattu PDF heti, valmiina lähetettäväksi."
         }
       ]
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Perfect for CPNS, Visa, and Scholarship Portals",
-      "content": "No need to worry about server-side limits. All compression takes place in your local browser sandbox, ensuring absolute compliance with security rules.",
-      "subTitle": "100% Client-Side",
-      "subContent": "Files never leave your browser, avoiding public storage risks.",
-      "badgeText": "100% Client-Side"
+      "title": "Täydellinen CPNS-, Visa- ja stipendiportaaleihin",
+      "content": "Palvelinpuolen rajoituksista ei tarvitse huolehtia. Kaikki pakkaus tapahtuu paikallisessa selaimesi hiekkalaatikossa, mikä varmistaa turvallisuussääntöjen täydellisen noudattamisen.",
+      "subTitle": "Lataa mielenrauhalla",
+      "subContent": "Käsittelemme arkaluontoiset asiakirjasi (henkilökortin skannaus, passi, CV) 100 % paikallisesti. Tietovuotojen riski nolla.",
+      "badgeText": "Lataa mielenrauhalla"
     },
     {
       "type": "compare_privacy_security",
-      "title": "Upload with Peace of Mind",
-      "content": "We process your sensitive documents (ID card scan, passport, CV) 100% locally. Zero risk of data leak."
+      "title": "Häviötön tiheyden hallinta",
+      "content": "Optimoi kuvan resoluution ja DPI-asteikon saavuttamaan 100 kt:n kynnyksen ilman, että tekstit muuttuvat lukukelvottomaksi."
     },
     {
       "type": "watermark_performance",
-      "title": "Lossless Density Management",
-      "content": "Optimizes image resolution and DPI scales to hit the 100KB threshold without turning texts into illegible blur.",
-      "badgeText": "Accurate Target"
+      "title": "CPNS valmis",
+      "content": "Visa hyväksytty",
+      "badgeText": "Alle 100 kt"
     }
   ],
   "faqs": [
     {
-      "q": "How can I compress a PDF to exactly under 100KB?",
-      "a": "Select the 'Strong' compression preset. Our tool optimizes vectors and rasterizes complex gradients to fit your file under 100KB."
+      "q": "Kuinka varmistan, että tiedosto on alle 100 kt?",
+      "a": "Valitse \"Vahva\" pakkausasetus. Työkalumme optimoi vektorit ja rasteroi monimutkaiset gradientit sovittamaan tiedostosi alle 100 kt."
     },
     {
-      "q": "Is there a limit on how many PDFs I can compress?",
-      "a": "No. Since processing runs locally in your browser memory, you can compress as many files as you want."
+      "q": "Onko rajoitettu kuinka monta tiedostoa voin pakata?",
+      "a": "Ei. Koska käsittely tapahtuu paikallisesti selaimesi muistissa, voit pakata niin monta tiedostoa kuin haluat."
     },
     {
-      "q": "Are my sensitive identity scans safe?",
-      "a": "Yes. They are processed entirely offline via WebAssembly. 0 bytes are uploaded."
+      "q": "Ovatko asiakirjani turvassa?",
+      "a": "Kyllä. Ne käsitellään kokonaan offline-tilassa WebAssemblyn kautta. 0 tavua ladataan."
     }
   ],
   "badges": [
-    "CPNS Ready",
-    "Visa Approved",
-    "Under 100KB"
+    "100 kt tavoite",
+    "Turvallinen",
+    "Nopeasti"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Compress PDF to 100KB",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Pakkaa 100 kilotavuun",
+  "supportCenter": "Tukikeskus",
+  "faqTitle": "Usein kysytyt kysymykset"
 }

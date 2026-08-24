@@ -1,0 +1,79 @@
+{
+  "title": "Konverter skannet PDF til tekst",
+  "h1": "Trekk ut tekst fra skannede PDF-filer med OCR",
+  "description": "Gjør ikke-søkbare skannede PDF-er og bilder til redigerbar ren tekst lokalt ved hjelp av flerspråklige WebAssembly OCR-arbeidere.",
+  "sections": [
+    {
+      "type": "resize_hero_features",
+      "title": "Trekk ut tekst fra skanninger umiddelbart",
+      "content": "Bruk vår avanserte OCR-teknologi (Optical Character Recognition) for å trekke ut redigerbar tekst fra skannede dokumenter og bilder.",
+      "badgeText": "Kraftig OCR"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Hvordan trekke ut tekst med OCR",
+      "badgeText": "Enkel guide",
+      "steps": [
+        {
+          "title": "Last opp skanning",
+          "description": "Velg din skannede PDF- eller bildefil."
+        },
+        {
+          "title": "Kjør OCR",
+          "description": "Velg språk og start OCR-prosessen."
+        },
+        {
+          "title": "Kopier eller last ned",
+          "description": "Få den utpakkede teksten umiddelbart."
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "Flerspråklig støtte",
+      "content": "OCR-motoren vår gjenkjenner flere språk og komplekse tegnsett med høy nøyaktighet.",
+      "subTitle": "Nøyaktig utvinning",
+      "subContent": "Drevet av Tesseract OCR WebAssembly.",
+      "badgeText": "Nøyaktig utvinning"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "Privat OCR-behandling",
+      "content": "I motsetning til andre OCR-verktøy, sender vi ikke dokumentene dine til sky-APIer. Tekstuttrekkingen skjer rett på enheten din."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Høy nøyaktighet",
+      "content": "Utmerket gjenkjenningshastighet for klare skanninger.",
+      "badgeText": "Nøyaktig"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Støtter den håndskrevet tekst?",
+      "a": "Vår OCR er optimalisert for trykt tekst. Håndskrevet tekst kan ha lavere nøyaktighet."
+    },
+    {
+      "q": "Blir filene mine lastet opp?",
+      "a": "Nei, OCR-motoren kjører helt i nettleseren din ved hjelp av WebAssembly."
+    },
+    {
+      "q": "Kan jeg trekke ut tekst fra bilder også?",
+      "a": "Ja, du kan laste opp PNG-, JPG- eller skannede PDF-filer."
+    }
+  ],
+  "badges": [
+    "OCR",
+    "Sikker",
+    "Gratis"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Start OCR-utvinning",
+  "supportCenter": "Støttesenter",
+  "faqTitle": "Ofte stilte spørsmål"
+}

@@ -1,0 +1,79 @@
+{
+  "title": "Reduce PDF Size Offline",
+  "h1": "Reduce PDF Size Completely Offline in Your Browser",
+  "description": "Reduce the size of your PDF documents offline directly in your browser without any server uploads. 100% secure.",
+  "sections": [
+    {
+      "type": "split_hero_features",
+      "title": "Shrink PDF Files Offline",
+      "content": "Compress large PDFs without an internet connection. Our WebAssembly engine runs entirely offline within your browser.",
+      "badgeText": "Offline Compression"
+    },
+    {
+      "type": "ocr_how_to_steps",
+      "title": "How to Reduce PDF Size Offline",
+      "badgeText": "Quick Steps",
+      "steps": [
+        {
+          "title": "Add File",
+          "description": "Select your large PDF document."
+        },
+        {
+          "title": "Compress",
+          "description": "Choose compression level and click compress."
+        },
+        {
+          "title": "Download",
+          "description": "Save the smaller PDF file to your computer."
+        }
+      ]
+    },
+    {
+      "type": "rotate_geo_targeting",
+      "title": "Works Without Internet",
+      "content": "Once the page is loaded, you can disconnect from the internet and the tool will still work perfectly.",
+      "subTitle": "True Offline",
+      "subContent": "No server communication during compression.",
+      "badgeText": "True Offline"
+    },
+    {
+      "type": "sign_privacy_security",
+      "title": "Maximum Privacy Guaranteed",
+      "content": "Since no data is ever transmitted over the network, your sensitive documents are 100% secure."
+    },
+    {
+      "type": "split_performance",
+      "title": "Efficient Engine",
+      "content": "High compression ratio with fast processing.",
+      "badgeText": "High Efficiency"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How does offline compression work?",
+      "a": "We use WebAssembly to run a powerful PDF compression engine directly inside your browser."
+    },
+    {
+      "q": "Will the quality be ruined?",
+      "a": "No, you can choose lossless compression to maintain high visual quality."
+    },
+    {
+      "q": "Is there a file size limit?",
+      "a": "No, since it runs locally, you can compress files as large as your device's memory allows."
+    }
+  ],
+  "badges": [
+    "Offline",
+    "Secure",
+    "Fast"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Reduce Size Now",
+  "supportCenter": "Support Center",
+  "faqTitle": "Frequently Asked Questions"
+}

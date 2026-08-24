@@ -1,0 +1,79 @@
+{
+  "title": "Reordenar páginas PDF Arrastrar y soltar gratis",
+  "h1": "Reordene páginas PDF fácilmente con arrastrar y soltar",
+  "description": "Organice y reordene las páginas de su documento PDF visualmente arrastrando y soltando miniaturas. 100% gratis y local.",
+  "sections": [
+    {
+      "type": "word_hero_features",
+      "title": "Organizar páginas PDF visualmente",
+      "content": "Cambie el orden de sus páginas PDF simplemente arrastrando y soltando las miniaturas. No se necesita software complejo.",
+      "badgeText": "Reordenamiento fácil"
+    },
+    {
+      "type": "split_how_to_steps",
+      "title": "Cómo reordenar páginas PDF",
+      "badgeText": "Paso a paso",
+      "steps": [
+        {
+          "title": "Subir PDF",
+          "description": "Seleccione el archivo PDF que desea organizar."
+        },
+        {
+          "title": "Arrastrar y soltar",
+          "description": "Haga clic y arrastre las miniaturas de las páginas para reorganizarlas."
+        },
+        {
+          "title": "Guardar cambios",
+          "description": "Descargue el documento PDF recién solicitado."
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "Interfaz visual de arrastrar y soltar",
+      "content": "Nuestra interfaz intuitiva hace que sea increíblemente fácil ver sus páginas y moverlas exactamente donde deben estar.",
+      "subTitle": "Interactiva",
+      "subContent": "Generación de miniaturas en tiempo real.",
+      "badgeText": "Interactiva"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "Clasificación 100% del lado del cliente",
+      "content": "Sus documentos se reorganizan localmente en su navegador. Garantizamos total privacidad."
+    },
+    {
+      "type": "resize_performance",
+      "title": "Experiencia fluida",
+      "content": "Reordene documentos grandes sin demoras.",
+      "badgeText": "Optimizada"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "¿Puedo eliminar páginas mientras reordeno?",
+      "a": "Sí, también puedes seleccionar páginas y eliminarlas si es necesario."
+    },
+    {
+      "q": "¿Funciona en el móvil?",
+      "a": "Sí, nuestra interfaz de arrastrar y soltar es táctil y funciona en dispositivos móviles."
+    },
+    {
+      "q": "¿Mis archivos se cargan en un servidor?",
+      "a": "No, todos los reordenamientos se realizan directamente en su dispositivo."
+    }
+  ],
+  "badges": [
+    "Visual",
+    "Privada",
+    "Gratis"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Reordenar páginas ahora",
+  "supportCenter": "Centro de soporte",
+  "faqTitle": "Preguntas frecuentes"
+}

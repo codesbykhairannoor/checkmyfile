@@ -1,0 +1,79 @@
+{
+  "title": "スキャンした PDF をテキストに変換",
+  "h1": "OCR を使用してスキャンした PDF からテキストを抽出する",
+  "description": "多言語の WebAssembly OCR ワーカーを使用して、検索不可能なスキャンされた PDF と画像をローカルで編集可能なプレーン テキストに変換します。",
+  "sections": [
+    {
+      "type": "resize_hero_features",
+      "title": "スキャンからテキストを即座に抽出",
+      "content": "高度な光学式文字認識 (OCR) テクノロジーを使用して、スキャンした文書や画像から編集可能なテキストを抽出します。",
+      "badgeText": "強力なOCR"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "OCRでテキストを抽出する方法",
+      "badgeText": "簡単ガイド",
+      "steps": [
+        {
+          "title": "スキャンのアップロード",
+          "description": "スキャンした PDF または画像ファイルを選択します。"
+        },
+        {
+          "title": "OCRの実行",
+          "description": "言語を選択し、OCR プロセスを開始します。"
+        },
+        {
+          "title": "コピーまたはダウンロード",
+          "description": "抽出されたテキストを即座に取得します。"
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "多言語サポート",
+      "content": "当社の OCR エンジンは、複数の言語と複雑な文字セットを高精度で認識します。",
+      "subTitle": "正確な抽出",
+      "subContent": "Tesseract OCR WebAssembly を利用しています。",
+      "badgeText": "正確な抽出"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "プライベート OCR 処理",
+      "content": "他の OCR ツールとは異なり、ドキュメントをクラウド API に送信しません。 テキストの抽出はデバイス上で直接行われます。"
+    },
+    {
+      "type": "ocr_performance",
+      "title": "高精度",
+      "content": "優れた認識率で鮮明なスキャンを実現します。",
+      "badgeText": "正確な"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "手書きテキストはサポートされていますか?",
+      "a": "当社の OCR は印刷されたテキスト用に最適化されています。 手書きのテキストは精度が低い場合があります。"
+    },
+    {
+      "q": "私のファイルはアップロードされますか?",
+      "a": "いいえ、OCR エンジンは WebAssembly を使用してブラウザ内で完全に実行されます。"
+    },
+    {
+      "q": "画像からテキストを抽出することもできますか?",
+      "a": "はい、PNG、JPG、またはスキャンした PDF ファイルをアップロードできます。"
+    }
+  ],
+  "badges": [
+    "OCR",
+    "安全な",
+    "無料"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "OCR抽出の開始",
+  "supportCenter": "サポートセンター",
+  "faqTitle": "よくある質問"
+}

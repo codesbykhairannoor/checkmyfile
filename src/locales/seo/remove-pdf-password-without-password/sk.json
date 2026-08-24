@@ -1,0 +1,79 @@
+{
+  "title": "Odstrániť heslo PDF bez hesla",
+  "h1": "Odstrániť heslo z PDF bez hesla",
+  "description": "Odstráňte ochranu heslom zo svojich súborov PDF bez potreby pôvodného hesla pomocou nášho pokročilého nástroja na odomknutie.",
+  "sections": [
+    {
+      "type": "protect_hero_features",
+      "title": "Okamžite odstráňte heslá PDF",
+      "content": "Zabudli ste heslo PDF? Náš nástroj vám môže pomôcť odstrániť ochranu heslom z vašich dokumentov v priebehu niekoľkých sekúnd, bezpečne vo vašom prehliadači.",
+      "badgeText": "Okamžité odomknutie"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Ako odomknúť PDF",
+      "badgeText": "Rýchly sprievodca",
+      "steps": [
+        {
+          "title": "Vyberte možnosť Uzamknuté PDF",
+          "description": "Nahrajte dokument PDF, ktorý chcete odomknúť."
+        },
+        {
+          "title": "Odstrániť heslo",
+          "description": "Kliknutím na odomknúť odstránite heslo z dokumentu."
+        },
+        {
+          "title": "Stiahnite si odomknuté PDF",
+          "description": "Uložte nechránený súbor PDF do svojho zariadenia."
+        }
+      ]
+    },
+    {
+      "type": "compare_geo_targeting",
+      "title": "100% bezpečné miestne spracovanie",
+      "content": "Vaše zamknuté dokumenty obsahujú citlivé informácie. Spracovávame ich lokálne pomocou WebAssembly, čím zaisťujeme, že vaše zariadenie nikdy neopustí 0 bajtov.",
+      "subTitle": "Súkromie na prvom mieste",
+      "subContent": "Žiadne cloudové servery, žiadne uchovávanie údajov.",
+      "badgeText": "Súkromie na prvom mieste"
+    },
+    {
+      "type": "watermark_privacy_security",
+      "title": "Ochrana osobných údajov na úrovni banky",
+      "content": "Na odstránenie šifrovania bez ohrozenia obsahu dokumentu používame pokročilé algoritmy."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Bleskovo rýchle",
+      "content": "Odomknite svoj PDF v priebehu milisekúnd.",
+      "badgeText": "Ultra rýchly"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Je bezpečné odomknúť moje PDF tu?",
+      "a": "áno. Všetko spracovanie sa vykonáva lokálne vo vašom prehliadači. Vaše súbory nenahrávame na žiadny server."
+    },
+    {
+      "q": "Dokáže odstrániť všetky typy hesiel?",
+      "a": "Môže odstrániť heslá používateľov a heslá vlastníkov zo štandardných šifrovaných súborov PDF."
+    },
+    {
+      "q": "Je tento nástroj bezplatný?",
+      "a": "Áno, je to 100% bezplatné použitie."
+    }
+  ],
+  "badges": [
+    "Žiadne nahrávanie",
+    "Zabezpečte",
+    "Rýchlo"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Odomknite PDF teraz",
+  "supportCenter": "Centrum podpory",
+  "faqTitle": "Často kladené otázky"
+}

@@ -1,71 +1,71 @@
 {
-  "title": "Compress PDF Without Losing Quality - High Definition Lossless - FI",
-  "h1": "Compress PDF Documents Online Without Losing Quality (FI)",
-  "description": "Reduce PDF file size while keeping high-resolution vectors and texts perfectly sharp. 100% private client-side processing.",
+  "title": "Pakkaa PDF menettämättä laatua",
+  "h1": "Pakkaa PDF-asiakirjat verkossa menettämättä laatua",
+  "description": "Pienennä PDF-tiedoston kokoa pitäen samalla korkearesoluutioiset vektorit ja tekstit täysin terävinä. 100 % yksityinen asiakaspuolen käsittely.",
   "sections": [
     {
       "type": "word_hero_features",
-      "title": "Shrink PDF File Size While Keeping Text Crystal Clear",
-      "content": "Disappointed with compressors that make your PDF documents blurry? Our adaptive vector engine reduces PDF file sizes up to 90% without losing quality, leaving texts and logos completely sharp.",
-      "badgeText": "Lossless Optimization"
+      "title": "Pienennä tiedostokokoa ja säilytä HD-laatu",
+      "content": "Älä uhraa luettavuutta koon vuoksi. Pienennä portfolioitasi, vektoripiirroksiasi tai esityksiäsi pitäen samalla tekstit ja grafiikat täydellisen terävinä.",
+      "badgeText": "Häviötön laatu"
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Compress PDF in Lossless Quality",
-      "badgeText": "Step-by-Step",
+      "title": "Kuinka pakata PDF häviöttömästi",
+      "badgeText": "Yksinkertaiset vaiheet",
       "steps": [
         {
-          "title": "Select PDF File",
-          "description": "Drop your PDF document into the local browser reader."
+          "title": "Valitse Tiedosto",
+          "description": "Valitse korkealaatuinen PDF, jota haluat pienentää."
         },
         {
-          "title": "Choose Recommended Preset",
-          "description": "Select medium compression to compress fonts and metadata losslessly."
+          "title": "Valitse häviötön tila",
+          "description": "Valitse \"Korkealaatuinen\" pakkausasetus säilyttääksesi yksityiskohdat."
         },
         {
-          "title": "Save High-Res PDF",
-          "description": "Download the compressed PDF with crisp text and high-res vector details."
+          "title": "Lataa tiedosto",
+          "description": "Hanki kevyempi PDF ilman epäselvää tekstiä tai pikselöityjä kuvia."
         }
       ]
     },
     {
       "type": "watermark_geo_targeting",
-      "title": "Designed for Professional Designers & Architects",
-      "content": "No blurry blueprints, diagrams, or portfolios. Our engine compresses unnecessary metadata while locking image quality ratios locally on your device.",
-      "subTitle": "Vector Lossless",
-      "subContent": "Keeps fonts and SVG outlines fully vector-sharp at any zoom level.",
-      "badgeText": "Vector Lossless"
+      "title": "Terävät tekstit ja terävät kuvat",
+      "content": "Käytämme edistyneitä DPI-säilytys- ja vektorin tasoitusalgoritmeja paikallisesti selaimessasi varmistaaksemme, että asiakirjasi näyttävät täsmälleen samalta.",
+      "subTitle": "Asiakaspuolen käsittely",
+      "subContent": "Kaikki toimii WebAssemblyssa.",
+      "badgeText": "Asiakaspuolen käsittely"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Absolute Privacy & Security",
-      "content": "Confidential company presentations, financial audits, or contracts remain offline on your device, ensuring maximum enterprise privacy compliance."
+      "title": "Ihanteellinen portfolioihin ja esityksiin",
+      "content": "Pidä ammattimaiset asiakirjasi ammattimaisina ja vähennä megatavua, jotta ne ovat helposti jaettavissa."
     },
     {
       "type": "ocr_performance",
-      "title": "Lightning-Fast Lossless Engine",
-      "content": "Pure WebAssembly calculations optimize file structure directly in RAM, saving bandwidth and processing files instantly.",
-      "badgeText": "Lossless Speed"
+      "title": "Nolla pikselaustakuu",
+      "content": "Säilytä 100 % terävyys kaikissa tekstisolmuissa.",
+      "badgeText": "HD-lähtö"
     }
   ],
   "faqs": [
     {
-      "q": "How does the lossless PDF compressor work?",
-      "a": "It reorganizes the PDF structure, compresses embedded fonts, and strips metadata without touching raster image ratios unless requested."
+      "q": "Kuinka on mahdollista pakata laatua menettämättä?",
+      "a": "Optimoimme PDF-rakenteet, poistamme käyttämättömät fontit/objektit ja näyttelemme älykkäästi näkymättömiä kuvakerroksia."
     },
     {
-      "q": "Will my text remain searchable?",
-      "a": "Yes. All text vectors are preserved. You can highlight, search, and copy text exactly as before."
+      "q": "Tuleeko teksti epäselväksi?",
+      "a": "Ei. Vektoripolut ja tekstielementit säilyvät täydellisesti, jolloin vältetään litteän kuvan rasteroinnin aiheuttama sumeus."
     },
     {
-      "q": "Can I compress vector drawings and CAD blueprints?",
-      "a": "Yes, our vector-preservation engine keeps CAD details sharp even at maximum zoom scales."
+      "q": "Onko tämä työkalu ilmainen?",
+      "a": "Kyllä, täysin ilmainen ja toimii offline-tilassa."
     }
   ],
   "badges": [
-    "High Resolution",
-    "No Text Blur",
-    "Lossless Presets"
+    "High Definition",
+    "Häviötön",
+    "Nopeasti"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Compress Lossless PDF",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Pakkaa laatua menettämättä",
+  "supportCenter": "Tukikeskus",
+  "faqTitle": "Usein kysytyt kysymykset"
 }

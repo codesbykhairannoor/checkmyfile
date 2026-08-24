@@ -1,71 +1,71 @@
 {
-  "title": "Compress PDF Without Losing Quality - High Definition Lossless - HI",
-  "h1": "Compress PDF Documents Online Without Losing Quality (HI)",
-  "description": "Reduce PDF file size while keeping high-resolution vectors and texts perfectly sharp. 100% private client-side processing.",
+  "title": "गुणवत्ता खोए बिना पीडीएफ को संपीड़ित करें",
+  "h1": "गुणवत्ता खोए बिना पीडीएफ दस्तावेज़ों को ऑनलाइन संपीड़ित करें",
+  "description": "उच्च-रिज़ॉल्यूशन वाले वैक्टर और टेक्स्ट को पूरी तरह से शार्प रखते हुए पीडीएफ फ़ाइल का आकार कम करें। 100% निजी क्लाइंट-साइड प्रोसेसिंग।",
   "sections": [
     {
       "type": "word_hero_features",
-      "title": "Shrink PDF File Size While Keeping Text Crystal Clear",
-      "content": "Disappointed with compressors that make your PDF documents blurry? Our adaptive vector engine reduces PDF file sizes up to 90% without losing quality, leaving texts and logos completely sharp.",
-      "badgeText": "Lossless Optimization"
+      "title": "फ़ाइल का आकार कम करें, एचडी गुणवत्ता बनाए रखें",
+      "content": "आकार के लिए पठनीयता का त्याग न करें। टेक्स्ट और ग्राफ़िक्स को पूरी तरह से चुस्त रखते हुए अपने पोर्टफ़ोलियो, वेक्टर रेखाचित्रों या प्रस्तुतियों को छोटा करें।",
+      "badgeText": "दोषरहित गुणवत्ता"
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Compress PDF in Lossless Quality",
-      "badgeText": "Step-by-Step",
+      "title": "हानि रहित तरीके से पीडीएफ को कैसे कंप्रेस करें",
+      "badgeText": "सरल कदम",
       "steps": [
         {
-          "title": "Select PDF File",
-          "description": "Drop your PDF document into the local browser reader."
+          "title": "फ़ाइल चुनें",
+          "description": "वह उच्च गुणवत्ता वाली पीडीएफ चुनें जिसे आप छोटा करना चाहते हैं।"
         },
         {
-          "title": "Choose Recommended Preset",
-          "description": "Select medium compression to compress fonts and metadata losslessly."
+          "title": "दोषरहित मोड चुनें",
+          "description": "विवरण संरक्षित करने के लिए 'उच्च गुणवत्ता' संपीड़न सेटिंग का चयन करें।"
         },
         {
-          "title": "Save High-Res PDF",
-          "description": "Download the compressed PDF with crisp text and high-res vector details."
+          "title": "डाउनलोड फ़ाइल",
+          "description": "बिना किसी धुंधले टेक्स्ट या पिक्सेलयुक्त छवियों के अपना हल्का पीडीएफ प्राप्त करें।"
         }
       ]
     },
     {
       "type": "watermark_geo_targeting",
-      "title": "Designed for Professional Designers & Architects",
-      "content": "No blurry blueprints, diagrams, or portfolios. Our engine compresses unnecessary metadata while locking image quality ratios locally on your device.",
-      "subTitle": "Vector Lossless",
-      "subContent": "Keeps fonts and SVG outlines fully vector-sharp at any zoom level.",
-      "badgeText": "Vector Lossless"
+      "title": "स्पष्ट पाठ और तीव्र छवियाँ",
+      "content": "यह सुनिश्चित करने के लिए कि आपके दस्तावेज़ बिल्कुल एक जैसे दिखें, हम आपके ब्राउज़र के अंदर स्थानीय रूप से उन्नत डीपीआई प्रतिधारण और वेक्टर स्मूथिंग एल्गोरिदम का उपयोग करते हैं।",
+      "subTitle": "क्लाइंट-साइड प्रोसेसिंग",
+      "subContent": "सब कुछ WebAssembly में चलता है.",
+      "badgeText": "क्लाइंट-साइड प्रोसेसिंग"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Absolute Privacy & Security",
-      "content": "Confidential company presentations, financial audits, or contracts remain offline on your device, ensuring maximum enterprise privacy compliance."
+      "title": "पोर्टफोलियो और प्रस्तुतियों के लिए आदर्श",
+      "content": "अपने पेशेवर दस्तावेज़ों को आसानी से साझा करने योग्य बनाने के लिए मेगाबाइट में कटौती करते हुए उन्हें पेशेवर बनाए रखें।"
     },
     {
       "type": "ocr_performance",
-      "title": "Lightning-Fast Lossless Engine",
-      "content": "Pure WebAssembly calculations optimize file structure directly in RAM, saving bandwidth and processing files instantly.",
-      "badgeText": "Lossless Speed"
+      "title": "शून्य पिक्सेलेशन गारंटी",
+      "content": "सभी टेक्स्ट नोड्स पर 100% तीक्ष्णता बनाए रखें।",
+      "badgeText": "एचडी आउटपुट"
     }
   ],
   "faqs": [
     {
-      "q": "How does the lossless PDF compressor work?",
-      "a": "It reorganizes the PDF structure, compresses embedded fonts, and strips metadata without touching raster image ratios unless requested."
+      "q": "गुणवत्ता खोए बिना संपीड़ित करना कैसे संभव है?",
+      "a": "हम पीडीएफ संरचनाओं को अनुकूलित करते हैं, अप्रयुक्त फ़ॉन्ट/ऑब्जेक्ट को हटाते हैं, और अनदेखी छवि परतों को स्मार्ट तरीके से डाउनसैंपल करते हैं।"
     },
     {
-      "q": "Will my text remain searchable?",
-      "a": "Yes. All text vectors are preserved. You can highlight, search, and copy text exactly as before."
+      "q": "क्या पाठ धुंधला हो जाएगा?",
+      "a": "नहीं, फ्लैट छवि रेखांकन के कारण होने वाले धुंधलेपन से बचते हुए, वेक्टर पथ और पाठ तत्वों को पूरी तरह से बनाए रखा जाता है।"
     },
     {
-      "q": "Can I compress vector drawings and CAD blueprints?",
-      "a": "Yes, our vector-preservation engine keeps CAD details sharp even at maximum zoom scales."
+      "q": "क्या यह टूल मुफ़्त है?",
+      "a": "हां, पूरी तरह से मुफ़्त और ऑफ़लाइन चलता है।"
     }
   ],
   "badges": [
-    "High Resolution",
-    "No Text Blur",
-    "Lossless Presets"
+    "हाई डेफिनेशन",
+    "दोषरहित",
+    "तेज़"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Compress Lossless PDF",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "गुणवत्ता खोए बिना संपीड़ित करें",
+  "supportCenter": "सहायता केंद्र",
+  "faqTitle": "अक्सर पूछे जाने वाले प्रश्नों"
 }

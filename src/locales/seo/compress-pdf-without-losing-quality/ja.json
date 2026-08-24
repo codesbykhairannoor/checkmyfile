@@ -1,71 +1,71 @@
 {
-  "title": "Compress PDF Without Losing Quality - High Definition Lossless - JA",
-  "h1": "Compress PDF Documents Online Without Losing Quality (JA)",
-  "description": "Reduce PDF file size while keeping high-resolution vectors and texts perfectly sharp. 100% private client-side processing.",
+  "title": "品質を落とさずに PDF を圧縮",
+  "h1": "品質を損なうことなく PDF ドキュメントをオンラインで圧縮",
+  "description": "高解像度のベクターとテキストを完璧に鮮明に保ちながら、PDF ファイルのサイズを削減します。 100% プライベートなクライアント側処理。",
   "sections": [
     {
       "type": "word_hero_features",
-      "title": "Shrink PDF File Size While Keeping Text Crystal Clear",
-      "content": "Disappointed with compressors that make your PDF documents blurry? Our adaptive vector engine reduces PDF file sizes up to 90% without losing quality, leaving texts and logos completely sharp.",
-      "badgeText": "Lossless Optimization"
+      "title": "ファイルサイズを削減し、HD 品質を維持",
+      "content": "サイズのために読みやすさを犠牲にしないでください。 テキストやグラフィックを完全に鮮明に保ちながら、ポートフォリオ、ベクター描画、またはプレゼンテーションを縮小します。",
+      "badgeText": "ロスレス品質"
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Compress PDF in Lossless Quality",
-      "badgeText": "Step-by-Step",
+      "title": "PDFをロスレスで圧縮する方法",
+      "badgeText": "簡単な手順",
       "steps": [
         {
-          "title": "Select PDF File",
-          "description": "Drop your PDF document into the local browser reader."
+          "title": "ファイルの選択",
+          "description": "縮小したい高品質の PDF を選択します。"
         },
         {
-          "title": "Choose Recommended Preset",
-          "description": "Select medium compression to compress fonts and metadata losslessly."
+          "title": "ロスレスモードを選択してください",
+          "description": "詳細を保持するには、「高品質」圧縮設定を選択します。"
         },
         {
-          "title": "Save High-Res PDF",
-          "description": "Download the compressed PDF with crisp text and high-res vector details."
+          "title": "ダウンロードファイル",
+          "description": "ぼやけたテキストやピクセル化した画像のない軽量の PDF を入手できます。"
         }
       ]
     },
     {
       "type": "watermark_geo_targeting",
-      "title": "Designed for Professional Designers & Architects",
-      "content": "No blurry blueprints, diagrams, or portfolios. Our engine compresses unnecessary metadata while locking image quality ratios locally on your device.",
-      "subTitle": "Vector Lossless",
-      "subContent": "Keeps fonts and SVG outlines fully vector-sharp at any zoom level.",
-      "badgeText": "Vector Lossless"
+      "title": "鮮明なテキストと鮮明な画像",
+      "content": "高度な DPI 保持アルゴリズムとベクトル スムージング アルゴリズムをブラウザ内でローカルに使用して、ドキュメントがまったく同じに見えるようにします。",
+      "subTitle": "クライアント側の処理",
+      "subContent": "すべてが WebAssembly で実行されます。",
+      "badgeText": "クライアント側の処理"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Absolute Privacy & Security",
-      "content": "Confidential company presentations, financial audits, or contracts remain offline on your device, ensuring maximum enterprise privacy compliance."
+      "title": "ポートフォリオやプレゼンテーションに最適",
+      "content": "プロフェッショナルなドキュメントをプロフェッショナルな見た目を保ちながら、メガバイトを削減して簡単に共有できるようにします。"
     },
     {
       "type": "ocr_performance",
-      "title": "Lightning-Fast Lossless Engine",
-      "content": "Pure WebAssembly calculations optimize file structure directly in RAM, saving bandwidth and processing files instantly.",
-      "badgeText": "Lossless Speed"
+      "title": "ゼロピクセル保証",
+      "content": "すべてのテキスト ノードで 100% の鮮明さを維持します。",
+      "badgeText": "HD出力"
     }
   ],
   "faqs": [
     {
-      "q": "How does the lossless PDF compressor work?",
-      "a": "It reorganizes the PDF structure, compresses embedded fonts, and strips metadata without touching raster image ratios unless requested."
+      "q": "品質を落とさずに圧縮するにはどうすればよいでしょうか?",
+      "a": "PDF 構造を最適化し、未使用のフォント/オブジェクトを削除し、目に見えない画像レイヤーをスマートにダウンサンプリングします。"
     },
     {
-      "q": "Will my text remain searchable?",
-      "a": "Yes. All text vectors are preserved. You can highlight, search, and copy text exactly as before."
+      "q": "文字がぼやけてしまうのでしょうか？",
+      "a": "いいえ。ベクター パスとテキスト要素は完全に保持され、フラット イメージのラスター化によって生じるぼやけを回避します。"
     },
     {
-      "q": "Can I compress vector drawings and CAD blueprints?",
-      "a": "Yes, our vector-preservation engine keeps CAD details sharp even at maximum zoom scales."
+      "q": "このツールは無料ですか?",
+      "a": "はい、完全に無料でオフラインで実行できます。"
     }
   ],
   "badges": [
-    "High Resolution",
-    "No Text Blur",
-    "Lossless Presets"
+    "高精細度",
+    "ロスレス",
+    "速い"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Compress Lossless PDF",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "品質を落とさずに圧縮",
+  "supportCenter": "サポートセンター",
+  "faqTitle": "よくある質問"
 }

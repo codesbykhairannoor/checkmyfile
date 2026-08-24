@@ -1,71 +1,71 @@
 {
-  "title": "Combine Multiple PDF Files - Merge PDFs Online Free - NL",
-  "h1": "Combine Multiple PDF Files Online (NL)",
-  "description": "Merge and combine multiple PDF files into one single document. Instant local processing, 100% private, no limit.",
+  "title": "Combineer meerdere PDF-bestanden",
+  "h1": "Combineer meerdere PDF-bestanden online (gratis en aan de clientzijde)",
+  "description": "Voeg meerdere PDF-bestanden samen en combineer ze tot één enkel document. Directe lokale verwerking, 100% privé, geen limiet.",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Combine Multiple PDF Documents into One Instantly",
-      "content": "Need to combine multiple reports, certificates, or scan pages into a single PDF document? Our browser combiner lets you drag, drop, reorder, and merge files locally with zero waiting time.",
-      "badgeText": "PDF Combiner"
+      "title": "Combineer meerdere PDF-bestanden in één",
+      "content": "Organiseer uw workflow door facturen, rapporten of hoofdstukken direct samen te voegen in één PDF-bestand. Geen upload vereist.",
+      "badgeText": "Onbeperkt samenvoegen"
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Combine Multiple PDFs",
-      "badgeText": "Easy Guide",
+      "title": "Hoe PDF-bestanden te combineren",
+      "badgeText": "Gemakkelijke gids",
       "steps": [
         {
-          "title": "Select Documents",
-          "description": "Upload all the PDF files you wish to combine."
+          "title": "Bestanden uploaden",
+          "description": "Sleep alle PDF's die u wilt samenvoegen en zet ze daar neer."
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop the files to rearrange their sequence."
+          "title": "Pagina's opnieuw rangschikken",
+          "description": "Sleep om de volgorde van de documenten naar eigen inzicht te herschikken."
         },
         {
-          "title": "Combine Files",
-          "description": "Click the merge button to combine them into one file instantly."
+          "title": "Samenvoegen en downloaden",
+          "description": "Klik op samenvoegen en download onmiddellijk uw gecombineerde PDF."
         }
       ]
     },
     {
       "type": "rotate_geo_targeting",
-      "title": "No File Uploads, 100% Safe for Personal Documents",
-      "content": "Unlike other sites that require you to upload your sensitive ijazah, scans, or bank records to their servers, our combiner runs entirely locally in your browser memory.",
-      "subTitle": "Privacy First",
-      "subContent": "No documents are ever transmitted over the network.",
-      "badgeText": "Privacy First"
+      "title": "Combineer tientallen bestanden veilig",
+      "content": "Omdat wij alles in uw browser verwerken, kunt u gigabytes aan PDF's samenvoegen zonder te wachten op trage internetuploads.",
+      "subTitle": "Geen serveruploads",
+      "subContent": "Al het samenvoegen gebeurt met behulp van het RAM-geheugen van uw computer.",
+      "badgeText": "Geen serveruploads"
     },
     {
       "type": "sign_privacy_security",
-      "title": "Secure Corporate Data Merging",
-      "content": "Perfect for financial departments and lawyers combining highly sensitive multi-page contracts. HandleMyFile keeps your documents offline."
+      "title": "Houd uw facturen en rapporten georganiseerd",
+      "content": "Of je nu een student bent die opdrachten inlevert of een freelancer die facturen verstuurt, het samenvoegen ervan in één bestand maakt het veel overzichtelijker."
     },
     {
       "type": "resize_performance",
-      "title": "Instantaneous Local Merging",
-      "content": "Combining 10 large PDFs takes less than 1 second because we do not waste time uploading files to remote clouds.",
-      "badgeText": "Instant Merge"
+      "title": "Onmiddellijke samenvoegsnelheid",
+      "content": "Combineer 50 bestanden in minder dan 2 seconden.",
+      "badgeText": "Bliksemsnel"
     }
   ],
   "faqs": [
     {
-      "q": "Is there a limit to how many PDFs I can combine?",
-      "a": "No, there are no limits on file count or size. Only your browser memory limit applies."
+      "q": "Is er een limiet aan het aantal bestanden dat ik kan combineren?",
+      "a": "Nee. Omdat de gegevens op uw apparaat worden verwerkt, is de enige limiet het geheugen van uw computer."
     },
     {
-      "q": "Can I rearrange pages before merging?",
-      "a": "Yes, you can drag and drop files in the workspace list to set their order before combining."
+      "q": "Kan ik de bestelling herschikken?",
+      "a": "Ja, u kunt de bestanden eenvoudig in de gewenste volgorde slepen en neerzetten voordat u ze samenvoegt."
     },
     {
-      "q": "Can I combine encrypted or password-protected PDFs?",
-      "a": "You need to unlock password-protected PDFs first before combining them."
+      "q": "Gaan mijn bestanden naar een server?",
+      "a": "Absoluut niet. Het samenvoegen gebeurt 100% offline in uw browser."
     }
   ],
   "badges": [
-    "No Upload Limits",
-    "Drag & Drop Reorder",
-    "100% Client-Side"
+    "Geen uploads",
+    "PDF's samenvoegen",
+    "Onbeperkt"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Combine PDFs",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Combineer PDF-bestanden",
+  "supportCenter": "Ondersteuningscentrum",
+  "faqTitle": "Veelgestelde vragen"
 }

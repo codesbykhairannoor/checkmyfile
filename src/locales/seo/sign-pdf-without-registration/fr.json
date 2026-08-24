@@ -1,71 +1,71 @@
 {
-  "title": "Sign PDF Online Without Registration - Free E-Sign - FR",
-  "h1": "E-Sign PDF Documents Online Without Registration (FR)",
-  "description": "Place your electronic signature on any PDF file instantly. No account required, no signup, 100% private and free.",
+  "title": "Signez un PDF en ligne sans inscription",
+  "h1": "Signer électroniquement des documents PDF en ligne sans inscription",
+  "description": "Placez instantanément votre signature électronique sur n’importe quel fichier PDF. Aucun compte requis, aucune inscription, 100% privé et gratuit.",
   "sections": [
     {
       "type": "watermark_hero_features",
-      "title": "Sign PDF Documents Instantly Without Creating an Account",
-      "content": "Annoyed by online sign tools that force you to register, confirm emails, or pay subscriptions just to sign a single paper? HandleMyFile lets you add signatures to contracts completely free without signup.",
-      "badgeText": "No Registration Required"
+      "title": "Signez des documents PDF instantanément sans créer de compte",
+      "content": "Vous en avez assez des outils de signature en ligne qui vous obligent à vous inscrire, à confirmer vos e-mails ou à payer des abonnements juste pour signer un seul papier ? HandleMyFile vous permet d'ajouter des signatures aux contrats entièrement gratuitement et sans inscription.",
+      "badgeText": "Aucune inscription requise"
     },
     {
       "type": "ocr_how_to_steps",
-      "title": "How to Sign PDF Without Signup",
-      "badgeText": "Quick Steps",
+      "title": "Comment signer un PDF sans inscription",
+      "badgeText": "Étapes rapides",
       "steps": [
         {
-          "title": "Upload Document",
-          "description": "Drop your PDF file into our registration-free workspace."
+          "title": "Télécharger un document",
+          "description": "Déposez votre fichier PDF dans notre espace de travail sans inscription."
         },
         {
-          "title": "Draw or Type Signature",
-          "description": "Create your signature with your mouse/touchpad, or upload an image."
+          "title": "Dessiner ou taper une signature",
+          "description": "Créez votre signature avec votre souris/pavé tactile ou téléchargez une image."
         },
         {
-          "title": "Download Signed PDF",
-          "description": "Download your signed document instantly. Zero data is saved."
+          "title": "Télécharger le PDF signé",
+          "description": "Téléchargez instantanément votre document signé. Aucune donnée n'est enregistrée."
         }
       ]
     },
     {
       "type": "excel_geo_targeting",
-      "title": "Your Signature is Secure and Stays in Your Browser",
-      "content": "Biometric and graphical signature drawings are processed entirely in RAM. We do not store your signature or documents on any server, providing maximum fraud prevention.",
-      "subTitle": "Cryptographically Safe",
-      "subContent": "Vectors are flattened directly on the client canvas.",
-      "badgeText": "Cryptographically Safe"
+      "title": "Votre signature est sécurisée et reste dans votre navigateur",
+      "content": "Les dessins de signatures biométriques et graphiques sont entièrement traités en RAM. Nous ne stockons votre signature ou vos documents sur aucun serveur, offrant ainsi une prévention maximale contre la fraude.",
+      "subTitle": "Cryptographiquement sûr",
+      "subContent": "Les vecteurs sont aplatis directement sur le canevas client.",
+      "badgeText": "Cryptographiquement sûr"
     },
     {
       "type": "redact_privacy_security",
-      "title": "Frictionless NDA & Contract Signing",
-      "content": "Perfect for freelancers and business professionals who want to execute agreements, job offers, or NDAs on the spot without any onboarding friction."
+      "title": "NDA et signature de contrat sans friction",
+      "content": "Parfait pour les indépendants et les professionnels qui souhaitent signer des accords, des offres d'emploi ou des NDA sur place sans aucune friction lors de l'intégration."
     },
     {
       "type": "split_performance",
-      "title": "Sign and Send in 15 Seconds",
-      "content": "With zero registration forms, email verification, or loading screens, you can sign any document and send it back immediately.",
-      "badgeText": "Speedy E-Sign"
+      "title": "Signez et envoyez en 15 secondes",
+      "content": "Sans formulaire d'inscription, vérification des e-mails ou écrans de chargement, vous pouvez signer n'importe quel document et le renvoyer immédiatement.",
+      "badgeText": "Signature électronique rapide"
     }
   ],
   "faqs": [
     {
-      "q": "Do I need to sign up or input my email to download?",
-      "a": "No. You can download your signed PDF immediately with zero onboarding steps."
+      "q": "Dois-je m'inscrire ou saisir mon e-mail pour télécharger ?",
+      "a": "Non. Vous pouvez télécharger votre PDF signé immédiatement sans aucune étape d'intégration."
     },
     {
-      "q": "Is the signature legally binding?",
-      "a": "Yes, our e-signature complies with general electronic transaction laws for basic electronic signatures."
+      "q": "La signature est-elle juridiquement contraignante ?",
+      "a": "Oui, notre signature électronique est conforme aux lois générales sur les transactions électroniques pour les signatures électroniques de base."
     },
     {
-      "q": "Does HandleMyFile store my signature graphic?",
-      "a": "No. The signature graphics are processed strictly in browser memory and wiped clean on page reload."
+      "q": "HandleMyFile stocke-t-il mon graphique de signature ?",
+      "a": "Non. Les graphiques de signature sont traités strictement dans la mémoire du navigateur et effacés lors du rechargement de la page."
     }
   ],
   "badges": [
-    "No Registration",
-    "100% Free",
-    "Zero Footprint"
+    "Aucune inscription",
+    "100% Gratuit",
+    "Zéro empreinte"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Sign PDF Free",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Signer le PDF gratuitement",
+  "supportCenter": "Centre d'assistance",
+  "faqTitle": "Foire aux questions"
 }

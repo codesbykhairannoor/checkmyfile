@@ -1,71 +1,71 @@
 {
-  "title": "Compress PDF to 100KB - Online PDF Shrinker to 100KB - KO",
-  "h1": "Compress PDF Files to 100KB Online (KO)",
-  "description": "Shrink your large PDF documents under 100KB for government portals, job applications, or visa forms completely in your browser.",
+  "title": "PDF를 100KB로 압축",
+  "h1": "온라인에서 PDF 파일을 100KB로 압축",
+  "description": "브라우저에서 정부 포털, 입사 지원서 또는 비자 양식을 위한 대용량 PDF 문서를 100KB 미만으로 줄이세요.",
   "sections": [
     {
       "type": "resize_hero_features",
-      "title": "Kecilkan PDF ke 100KB secara Instan & Aman",
-      "content": "Struggling with strict 100KB upload limits on government portals, job sites, or visa applications? Our local compressor optimizes your PDF file under 100KB in seconds.",
-      "badgeText": "100KB Target Limit"
+      "title": "즉각적이고 안전하게 PDF를 100KB로 축소",
+      "content": "정부 포털, 채용 사이트 또는 비자 신청에 대한 엄격한 100KB 업로드 제한으로 인해 어려움을 겪고 계십니까? 당사의 로컬 압축기는 PDF 파일을 100KB 미만으로 몇 초 만에 최적화합니다.",
+      "badgeText": "100KB 대상"
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Compress PDF under 100KB",
-      "badgeText": "Quick Guide",
+      "title": "PDF를 100KB 미만으로 압축하는 방법",
+      "badgeText": "빠른 가이드",
       "steps": [
         {
-          "title": "Add PDF Document",
-          "description": "Drop your PDF file into the client-side compressor."
+          "title": "PDF 문서 추가",
+          "description": "PDF 파일을 클라이언트측 압축기에 놓습니다."
         },
         {
-          "title": "Select 100KB Target",
-          "description": "Choose strong compression to automatically target size under 100KB."
+          "title": "100KB 대상 선택",
+          "description": "100KB 미만의 크기를 자동으로 대상으로 지정하려면 강력한 압축을 선택하세요."
         },
         {
-          "title": "Save Optimized PDF",
-          "description": "Download your compressed PDF instantly, ready to upload."
+          "title": "최적화된 PDF 저장",
+          "description": "압축된 PDF를 즉시 다운로드하여 업로드할 준비를 하세요."
         }
       ]
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Perfect for CPNS, Visa, and Scholarship Portals",
-      "content": "No need to worry about server-side limits. All compression takes place in your local browser sandbox, ensuring absolute compliance with security rules.",
-      "subTitle": "100% Client-Side",
-      "subContent": "Files never leave your browser, avoiding public storage risks.",
-      "badgeText": "100% Client-Side"
+      "title": "CPNS, Visa 및 장학금 포털에 적합",
+      "content": "서버 측 제한에 대해 걱정할 필요가 없습니다. 모든 압축은 로컬 브라우저 샌드박스에서 이루어지므로 보안 규칙을 완벽하게 준수합니다.",
+      "subTitle": "안심하고 업로드하세요",
+      "subContent": "민감한 문서(신분증 스캔, 여권, 이력서)를 100% 현지에서 처리합니다. 데이터 유출 위험이 없습니다.",
+      "badgeText": "안심하고 업로드하세요"
     },
     {
       "type": "compare_privacy_security",
-      "title": "Upload with Peace of Mind",
-      "content": "We process your sensitive documents (ID card scan, passport, CV) 100% locally. Zero risk of data leak."
+      "title": "무손실 밀도 관리",
+      "content": "텍스트를 읽을 수 없게 흐릿하게 만들지 않고 100KB 임계값에 도달하도록 이미지 해상도와 DPI 크기를 최적화합니다."
     },
     {
       "type": "watermark_performance",
-      "title": "Lossless Density Management",
-      "content": "Optimizes image resolution and DPI scales to hit the 100KB threshold without turning texts into illegible blur.",
-      "badgeText": "Accurate Target"
+      "title": "CPNS 준비",
+      "content": "비자 승인",
+      "badgeText": "100KB 미만"
     }
   ],
   "faqs": [
     {
-      "q": "How can I compress a PDF to exactly under 100KB?",
-      "a": "Select the 'Strong' compression preset. Our tool optimizes vectors and rasterizes complex gradients to fit your file under 100KB."
+      "q": "파일이 100KB 미만인지 어떻게 확인하나요?",
+      "a": "'강함' 압축 사전 설정을 선택합니다. 우리의 도구는 벡터를 최적화하고 복잡한 그라데이션을 래스터화하여 100KB 미만의 파일에 맞춥니다."
     },
     {
-      "q": "Is there a limit on how many PDFs I can compress?",
-      "a": "No. Since processing runs locally in your browser memory, you can compress as many files as you want."
+      "q": "압축할 수 있는 파일 수에 제한이 있나요?",
+      "a": "아니요. 처리는 브라우저 메모리에서 로컬로 실행되므로 원하는 만큼 파일을 압축할 수 있습니다."
     },
     {
-      "q": "Are my sensitive identity scans safe?",
-      "a": "Yes. They are processed entirely offline via WebAssembly. 0 bytes are uploaded."
+      "q": "내 문서는 안전한가요?",
+      "a": "예. WebAssembly를 통해 완전히 오프라인으로 처리됩니다. 0바이트가 업로드되었습니다."
     }
   ],
   "badges": [
-    "CPNS Ready",
-    "Visa Approved",
-    "Under 100KB"
+    "100KB 대상",
+    "안전한",
+    "빠른"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Compress PDF to 100KB",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "100KB로 압축",
+  "supportCenter": "지원 센터",
+  "faqTitle": "자주 묻는 질문"
 }

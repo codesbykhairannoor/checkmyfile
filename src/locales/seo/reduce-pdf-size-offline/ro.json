@@ -1,0 +1,79 @@
+{
+  "title": "Reduceți dimensiunea PDF offline",
+  "h1": "Reduceți dimensiunea PDF complet offline în browser",
+  "description": "Reduceți dimensiunea documentelor PDF offline direct în browser, fără încărcări de server. 100% sigur.",
+  "sections": [
+    {
+      "type": "split_hero_features",
+      "title": "Reduceți fișierele PDF offline",
+      "content": "Comprimați PDF-uri mari fără o conexiune la internet. Motorul nostru WebAssembly rulează complet offline în browserul dvs.",
+      "badgeText": "Compresie offline"
+    },
+    {
+      "type": "ocr_how_to_steps",
+      "title": "Cum să reduceți dimensiunea PDF offline",
+      "badgeText": "Pași rapidi",
+      "steps": [
+        {
+          "title": "Adăugați fișier",
+          "description": "Selectați documentul PDF mare."
+        },
+        {
+          "title": "Comprima",
+          "description": "Alegeți nivelul de compresie și faceți clic pe comprimare."
+        },
+        {
+          "title": "Descărcați",
+          "description": "Salvați fișierul PDF mai mic pe computer."
+        }
+      ]
+    },
+    {
+      "type": "rotate_geo_targeting",
+      "title": "Funcționează fără internet",
+      "content": "Odată ce pagina este încărcată, vă puteți deconecta de la internet și instrumentul va funcționa în continuare perfect.",
+      "subTitle": "True Offline",
+      "subContent": "Nicio comunicare cu serverul în timpul compresiei.",
+      "badgeText": "True Offline"
+    },
+    {
+      "type": "sign_privacy_security",
+      "title": "Confidențialitate maximă garantată",
+      "content": "Deoarece nu sunt transmise date prin rețea, documentele dumneavoastră sensibile sunt 100% sigure."
+    },
+    {
+      "type": "split_performance",
+      "title": "Motor eficient",
+      "content": "Raport de compresie ridicat cu procesare rapidă.",
+      "badgeText": "Eficiență ridicată"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Cum funcționează compresia offline?",
+      "a": "Folosim WebAssembly pentru a rula un motor puternic de compresie PDF direct în browser."
+    },
+    {
+      "q": "Se va distruge calitatea?",
+      "a": "Nu, puteți alege compresia fără pierderi pentru a menține calitatea vizuală ridicată."
+    },
+    {
+      "q": "Există o limită de dimensiune a fișierului?",
+      "a": "Nu, deoarece rulează local, puteți comprima fișiere atât de mari cât permite memoria dispozitivului dvs."
+    }
+  ],
+  "badges": [
+    "Offline",
+    "Asigura",
+    "Rapid"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Reduceți dimensiunea acum",
+  "supportCenter": "Centru de suport",
+  "faqTitle": "Întrebări frecvente"
+}

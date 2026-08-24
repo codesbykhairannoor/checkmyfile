@@ -1,0 +1,79 @@
+{
+  "title": "PDF Şifresini Şifre Olmadan Kaldır",
+  "h1": "Şifreyi PDF'den Şifre Olmadan Kaldır",
+  "description": "Gelişmiş kilit açma aracımızı kullanarak orijinal şifreye ihtiyaç duymadan PDF dosyalarınızdan şifre korumasını kaldırın.",
+  "sections": [
+    {
+      "type": "protect_hero_features",
+      "title": "PDF Şifrelerini Anında Kaldırın",
+      "content": "PDF şifrenizi mi unuttunuz? Aracımız, tarayıcınızın içinde güvenli bir şekilde saniyeler içinde belgelerinizdeki şifre korumasını kaldırmanıza yardımcı olabilir.",
+      "badgeText": "Anında Kilit Açma"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "PDF'nin Kilidini Açma",
+      "badgeText": "Hızlı Kılavuz",
+      "steps": [
+        {
+          "title": "Kilitli PDF'yi seçin",
+          "description": "Kilidini açmak istediğiniz PDF belgesini yükleyin."
+        },
+        {
+          "title": "Şifreyi Kaldır",
+          "description": "Parolayı belgeden çıkarmak için kilidi aç'ı tıklayın."
+        },
+        {
+          "title": "Kilitsiz PDF'yi İndir",
+          "description": "Korumasız PDF'yi cihazınıza kaydedin."
+        }
+      ]
+    },
+    {
+      "type": "compare_geo_targeting",
+      "title": "%100 Güvenli Yerel İşleme",
+      "content": "Kilitli belgeleriniz hassas bilgiler içerir. Bunları WebAssembly kullanarak yerel olarak işleyerek cihazınızdan 0 bayt çıkmasını sağlıyoruz.",
+      "subTitle": "Önce Gizlilik",
+      "subContent": "Bulut sunucusu yok, veri saklama yok.",
+      "badgeText": "Önce Gizlilik"
+    },
+    {
+      "type": "watermark_privacy_security",
+      "title": "Banka Düzeyinde Gizlilik",
+      "content": "Belgenizin içeriğinden ödün vermeden şifrelemeyi kaldırmak için gelişmiş algoritmalar kullanıyoruz."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Yıldırım Hızında",
+      "content": "PDF'nizin kilidini milisaniyeler içinde açın.",
+      "badgeText": "Ultra Hızlı"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "PDF'imin kilidini burada açmak güvenli mi?",
+      "a": "Evet. Tüm işlemler tarayıcınızda yerel olarak yapılır. Dosyalarınızı herhangi bir sunucuya yüklemiyoruz."
+    },
+    {
+      "q": "Her türlü şifreyi kaldırabilir mi?",
+      "a": "Standart şifrelenmiş PDF'lerden kullanıcı şifrelerini ve sahip şifrelerini kaldırabilir."
+    },
+    {
+      "q": "Bu araç ücretsiz mi?",
+      "a": "Evet, kullanımı %100 ücretsizdir."
+    }
+  ],
+  "badges": [
+    "Yükleme Yok",
+    "Güvenli",
+    "Hızlı"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Şimdi PDF'nin kilidini açın",
+  "supportCenter": "Destek Merkezi",
+  "faqTitle": "Sıkça Sorulan Sorular"
+}

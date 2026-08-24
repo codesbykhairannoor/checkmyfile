@@ -1,71 +1,71 @@
 {
-  "title": "Sign PDF Online Without Registration - Free E-Sign - DA",
-  "h1": "E-Sign PDF Documents Online Without Registration (DA)",
-  "description": "Place your electronic signature on any PDF file instantly. No account required, no signup, 100% private and free.",
+  "title": "Signer PDF online uden registrering",
+  "h1": "E-Sign PDF-dokumenter online uden registrering",
+  "description": "Placer din elektroniske signatur på enhver PDF-fil med det samme. Ingen konto påkrævet, ingen tilmelding, 100% privat og gratis.",
   "sections": [
     {
       "type": "watermark_hero_features",
-      "title": "Sign PDF Documents Instantly Without Creating an Account",
-      "content": "Annoyed by online sign tools that force you to register, confirm emails, or pay subscriptions just to sign a single paper? HandleMyFile lets you add signatures to contracts completely free without signup.",
-      "badgeText": "No Registration Required"
+      "title": "Signer PDF-dokumenter med det samme uden at oprette en konto",
+      "content": "Irriteret over online skilteværktøjer, der tvinger dig til at registrere, bekræfte e-mails eller betale abonnementer bare for at underskrive et enkelt papir? HandleMyFile lader dig tilføje signaturer til kontrakter helt gratis uden tilmelding.",
+      "badgeText": "Ingen registrering påkrævet"
     },
     {
       "type": "ocr_how_to_steps",
-      "title": "How to Sign PDF Without Signup",
-      "badgeText": "Quick Steps",
+      "title": "Sådan signerer du PDF uden tilmelding",
+      "badgeText": "Hurtige trin",
       "steps": [
         {
-          "title": "Upload Document",
-          "description": "Drop your PDF file into our registration-free workspace."
+          "title": "Upload dokument",
+          "description": "Slip din PDF-fil i vores registreringsfrie arbejdsområde."
         },
         {
-          "title": "Draw or Type Signature",
-          "description": "Create your signature with your mouse/touchpad, or upload an image."
+          "title": "Tegn eller skriv signatur",
+          "description": "Opret din signatur med din mus/touchpad, eller upload et billede."
         },
         {
-          "title": "Download Signed PDF",
-          "description": "Download your signed document instantly. Zero data is saved."
+          "title": "Download underskrevet PDF",
+          "description": "Download dit underskrevne dokument med det samme. Nul data gemmes."
         }
       ]
     },
     {
       "type": "excel_geo_targeting",
-      "title": "Your Signature is Secure and Stays in Your Browser",
-      "content": "Biometric and graphical signature drawings are processed entirely in RAM. We do not store your signature or documents on any server, providing maximum fraud prevention.",
-      "subTitle": "Cryptographically Safe",
-      "subContent": "Vectors are flattened directly on the client canvas.",
-      "badgeText": "Cryptographically Safe"
+      "title": "Din signatur er sikker og forbliver i din browser",
+      "content": "Biometriske og grafiske signaturtegninger behandles udelukkende i RAM. Vi gemmer ikke din signatur eller dine dokumenter på nogen server, hvilket giver maksimal forebyggelse af svindel.",
+      "subTitle": "Kryptografisk sikker",
+      "subContent": "Vektorer udflades direkte på klientlærredet.",
+      "badgeText": "Kryptografisk sikker"
     },
     {
       "type": "redact_privacy_security",
-      "title": "Frictionless NDA & Contract Signing",
-      "content": "Perfect for freelancers and business professionals who want to execute agreements, job offers, or NDAs on the spot without any onboarding friction."
+      "title": "Friktionsfri NDA og kontraktunderskrivelse",
+      "content": "Perfekt til freelancere og forretningsfolk, der ønsker at udføre aftaler, jobtilbud eller NDA'er på stedet uden nogen onboarding-friktion."
     },
     {
       "type": "split_performance",
-      "title": "Sign and Send in 15 Seconds",
-      "content": "With zero registration forms, email verification, or loading screens, you can sign any document and send it back immediately.",
-      "badgeText": "Speedy E-Sign"
+      "title": "Signer og send på 15 sekunder",
+      "content": "Med ingen registreringsformularer, e-mailbekræftelse eller indlæsningsskærme kan du underskrive ethvert dokument og sende det tilbage med det samme.",
+      "badgeText": "Hurtigt E-skilt"
     }
   ],
   "faqs": [
     {
-      "q": "Do I need to sign up or input my email to download?",
-      "a": "No. You can download your signed PDF immediately with zero onboarding steps."
+      "q": "Skal jeg tilmelde mig eller indtaste min e-mail for at downloade?",
+      "a": "Nej. Du kan downloade din signerede PDF med det samme uden onboarding-trin."
     },
     {
-      "q": "Is the signature legally binding?",
-      "a": "Yes, our e-signature complies with general electronic transaction laws for basic electronic signatures."
+      "q": "Er underskriften juridisk bindende?",
+      "a": "Ja, vores e-signatur overholder generelle elektroniske transaktionslove for grundlæggende elektroniske signaturer."
     },
     {
-      "q": "Does HandleMyFile store my signature graphic?",
-      "a": "No. The signature graphics are processed strictly in browser memory and wiped clean on page reload."
+      "q": "Gemmer HandleMyFile min signaturgrafik?",
+      "a": "Nej. Signaturgrafikken behandles strengt i browserhukommelsen og slettes ved genindlæsning af siden."
     }
   ],
   "badges": [
-    "No Registration",
-    "100% Free",
-    "Zero Footprint"
+    "Ingen registrering",
+    "100 % gratis",
+    "Nul fodaftryk"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Sign PDF Free",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Signer PDF gratis",
+  "supportCenter": "Supportcenter",
+  "faqTitle": "Ofte stillede spørgsmål"
 }

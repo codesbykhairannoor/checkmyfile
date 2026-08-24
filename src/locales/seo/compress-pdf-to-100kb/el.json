@@ -1,71 +1,71 @@
 {
-  "title": "Compress PDF to 100KB - Online PDF Shrinker to 100KB - EL",
-  "h1": "Compress PDF Files to 100KB Online (EL)",
-  "description": "Shrink your large PDF documents under 100KB for government portals, job applications, or visa forms completely in your browser.",
+  "title": "Συμπίεση PDF σε 100 KB",
+  "h1": "Συμπίεση αρχείων PDF σε 100 KB Online",
+  "description": "Συρρικνώστε τα μεγάλα έγγραφα PDF κάτω από 100 KB για κυβερνητικές πύλες, αιτήσεις εργασίας ή φόρμες βίζας εντελώς στο πρόγραμμα περιήγησής σας.",
   "sections": [
     {
       "type": "resize_hero_features",
-      "title": "Kecilkan PDF ke 100KB secara Instan & Aman",
-      "content": "Struggling with strict 100KB upload limits on government portals, job sites, or visa applications? Our local compressor optimizes your PDF file under 100KB in seconds.",
-      "badgeText": "100KB Target Limit"
+      "title": "Συρρίκνωση PDF σε 100 KB Άμεσα και με ασφάλεια",
+      "content": "Αντιμετωπίζετε αυστηρά όρια μεταφόρτωσης 100 KB σε κυβερνητικές πύλες, ιστότοπους εργασίας ή αιτήσεις βίζας; Ο τοπικός μας συμπιεστής βελτιστοποιεί το αρχείο PDF κάτω από 100 KB σε δευτερόλεπτα.",
+      "badgeText": "Στόχος 100 KB"
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Compress PDF under 100KB",
-      "badgeText": "Quick Guide",
+      "title": "Πώς να συμπιέσετε PDF κάτω από 100 KB",
+      "badgeText": "Γρήγορος Οδηγός",
       "steps": [
         {
-          "title": "Add PDF Document",
-          "description": "Drop your PDF file into the client-side compressor."
+          "title": "Προσθήκη εγγράφου PDF",
+          "description": "Ρίξτε το αρχείο PDF στον συμπιεστή της πλευράς του πελάτη."
         },
         {
-          "title": "Select 100KB Target",
-          "description": "Choose strong compression to automatically target size under 100KB."
+          "title": "Επιλέξτε Στόχος 100 KB",
+          "description": "Επιλέξτε ισχυρή συμπίεση για αυτόματη στόχευση μεγέθους κάτω των 100 KB."
         },
         {
-          "title": "Save Optimized PDF",
-          "description": "Download your compressed PDF instantly, ready to upload."
+          "title": "Αποθήκευση βελτιστοποιημένου PDF",
+          "description": "Κατεβάστε το συμπιεσμένο PDF σας άμεσα, έτοιμο για μεταφόρτωση."
         }
       ]
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Perfect for CPNS, Visa, and Scholarship Portals",
-      "content": "No need to worry about server-side limits. All compression takes place in your local browser sandbox, ensuring absolute compliance with security rules.",
-      "subTitle": "100% Client-Side",
-      "subContent": "Files never leave your browser, avoiding public storage risks.",
-      "badgeText": "100% Client-Side"
+      "title": "Ιδανικό για πύλες CPNS, Visa και Υποτροφιών",
+      "content": "Δεν χρειάζεται να ανησυχείτε για τα όρια από την πλευρά του διακομιστή. Όλη η συμπίεση πραγματοποιείται στο sandbox του τοπικού προγράμματος περιήγησης, διασφαλίζοντας την απόλυτη συμμόρφωση με τους κανόνες ασφαλείας.",
+      "subTitle": "Ανεβάστε με ηρεμία",
+      "subContent": "Επεξεργαζόμαστε τα ευαίσθητα έγγραφά σας (σάρωση ταυτότητας, διαβατήριο, βιογραφικό) 100% τοπικά. Μηδενικός κίνδυνος διαρροής δεδομένων.",
+      "badgeText": "Ανεβάστε με ηρεμία"
     },
     {
       "type": "compare_privacy_security",
-      "title": "Upload with Peace of Mind",
-      "content": "We process your sensitive documents (ID card scan, passport, CV) 100% locally. Zero risk of data leak."
+      "title": "Διαχείριση πυκνότητας χωρίς απώλειες",
+      "content": "Βελτιστοποιεί την ανάλυση εικόνας και τις κλίμακες DPI για να φτάσει το όριο των 100 KB χωρίς να μετατρέπει τα κείμενα σε δυσανάγνωστο θάμπωμα."
     },
     {
       "type": "watermark_performance",
-      "title": "Lossless Density Management",
-      "content": "Optimizes image resolution and DPI scales to hit the 100KB threshold without turning texts into illegible blur.",
-      "badgeText": "Accurate Target"
+      "title": "Έτοιμο CPNS",
+      "content": "Εγκρίθηκε η Βίζα",
+      "badgeText": "Κάτω από 100 KB"
     }
   ],
   "faqs": [
     {
-      "q": "How can I compress a PDF to exactly under 100KB?",
-      "a": "Select the 'Strong' compression preset. Our tool optimizes vectors and rasterizes complex gradients to fit your file under 100KB."
+      "q": "Πώς μπορώ να βεβαιωθώ ότι το αρχείο είναι κάτω από 100 KB;",
+      "a": "Επιλέξτε την προεπιλογή συμπίεσης «Ισχυρή». Το εργαλείο μας βελτιστοποιεί διανύσματα και ραστεροποιεί πολύπλοκες διαβαθμίσεις ώστε να χωράει το αρχείο σας κάτω από 100 KB."
     },
     {
-      "q": "Is there a limit on how many PDFs I can compress?",
-      "a": "No. Since processing runs locally in your browser memory, you can compress as many files as you want."
+      "q": "Υπάρχει όριο στο πόσα αρχεία μπορώ να συμπιέσω;",
+      "a": "Όχι. Επειδή η επεξεργασία εκτελείται τοπικά στη μνήμη του προγράμματος περιήγησής σας, μπορείτε να συμπιέσετε όσα αρχεία θέλετε."
     },
     {
-      "q": "Are my sensitive identity scans safe?",
-      "a": "Yes. They are processed entirely offline via WebAssembly. 0 bytes are uploaded."
+      "q": "Είναι τα έγγραφά μου ασφαλή;",
+      "a": "Ναί. Η επεξεργασία τους γίνεται εντελώς εκτός σύνδεσης μέσω WebAssembly. Μεταφορτώθηκαν 0 byte."
     }
   ],
   "badges": [
-    "CPNS Ready",
-    "Visa Approved",
-    "Under 100KB"
+    "Στόχος 100 KB",
+    "Ασφαλής",
+    "Γρήγορα"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Compress PDF to 100KB",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Συμπίεση στα 100 KB",
+  "supportCenter": "Κέντρο υποστήριξης",
+  "faqTitle": "Συχνές Ερωτήσεις"
 }

@@ -1,71 +1,71 @@
 {
-  "title": "Sign PDF Online Without Registration - Free E-Sign - SK",
-  "h1": "E-Sign PDF Documents Online Without Registration (SK)",
-  "description": "Place your electronic signature on any PDF file instantly. No account required, no signup, 100% private and free.",
+  "title": "Podpísať PDF online bez registrácie",
+  "h1": "Elektronické podpisovanie PDF dokumentov online bez registrácie",
+  "description": "Okamžite umiestnite svoj elektronický podpis na akýkoľvek súbor PDF. Nevyžaduje sa žiadny účet, žiadna registrácia, 100% súkromné ​​a bezplatné.",
   "sections": [
     {
       "type": "watermark_hero_features",
-      "title": "Sign PDF Documents Instantly Without Creating an Account",
-      "content": "Annoyed by online sign tools that force you to register, confirm emails, or pay subscriptions just to sign a single paper? HandleMyFile lets you add signatures to contracts completely free without signup.",
-      "badgeText": "No Registration Required"
+      "title": "Podpisujte dokumenty PDF okamžite bez vytvorenia účtu",
+      "content": "Otravujú vás online podpisové nástroje, ktoré vás nútia registrovať sa, potvrdzovať e-maily alebo platiť predplatné, len aby ste podpísali jeden papier? HandleMyFile vám umožňuje pridávať podpisy k zmluvám úplne zadarmo bez registrácie.",
+      "badgeText": "Nevyžaduje sa žiadna registrácia"
     },
     {
       "type": "ocr_how_to_steps",
-      "title": "How to Sign PDF Without Signup",
-      "badgeText": "Quick Steps",
+      "title": "Ako podpísať PDF bez registrácie",
+      "badgeText": "Rýchle kroky",
       "steps": [
         {
-          "title": "Upload Document",
-          "description": "Drop your PDF file into our registration-free workspace."
+          "title": "Nahrať dokument",
+          "description": "Vložte svoj súbor PDF do nášho pracovného priestoru bez registrácie."
         },
         {
-          "title": "Draw or Type Signature",
-          "description": "Create your signature with your mouse/touchpad, or upload an image."
+          "title": "Nakreslite alebo napíšte podpis",
+          "description": "Vytvorte si podpis pomocou myši/touchpadu alebo nahrajte obrázok."
         },
         {
-          "title": "Download Signed PDF",
-          "description": "Download your signed document instantly. Zero data is saved."
+          "title": "Stiahnite si podpísané PDF",
+          "description": "Okamžite si stiahnite podpísaný dokument. Uložia sa nulové údaje."
         }
       ]
     },
     {
       "type": "excel_geo_targeting",
-      "title": "Your Signature is Secure and Stays in Your Browser",
-      "content": "Biometric and graphical signature drawings are processed entirely in RAM. We do not store your signature or documents on any server, providing maximum fraud prevention.",
-      "subTitle": "Cryptographically Safe",
-      "subContent": "Vectors are flattened directly on the client canvas.",
-      "badgeText": "Cryptographically Safe"
+      "title": "Váš podpis je bezpečný a zostane vo vašom prehliadači",
+      "content": "Výkresy biometrických a grafických podpisov sú spracované výlučne v pamäti RAM. Neuchovávame váš podpis ani dokumenty na žiadnom serveri, čím poskytujeme maximálnu ochranu pred podvodmi.",
+      "subTitle": "Kryptograficky bezpečné",
+      "subContent": "Vektory sú sploštené priamo na plátne klienta.",
+      "badgeText": "Kryptograficky bezpečné"
     },
     {
       "type": "redact_privacy_security",
-      "title": "Frictionless NDA & Contract Signing",
-      "content": "Perfect for freelancers and business professionals who want to execute agreements, job offers, or NDAs on the spot without any onboarding friction."
+      "title": "Bezchybné NDA a podpisovanie zmlúv",
+      "content": "Ideálne pre nezávislých pracovníkov a obchodných profesionálov, ktorí chcú vykonávať dohody, pracovné ponuky alebo zmluvy o mlčanlivosti na mieste bez akéhokoľvek trenia pri nástupe."
     },
     {
       "type": "split_performance",
-      "title": "Sign and Send in 15 Seconds",
-      "content": "With zero registration forms, email verification, or loading screens, you can sign any document and send it back immediately.",
-      "badgeText": "Speedy E-Sign"
+      "title": "Podpíšte a odošlite za 15 sekúnd",
+      "content": "S nulovými registračnými formulármi, e-mailovým overením alebo načítavacími obrazovkami môžete podpísať akýkoľvek dokument a okamžite ho poslať späť.",
+      "badgeText": "Rýchly E-Sign"
     }
   ],
   "faqs": [
     {
-      "q": "Do I need to sign up or input my email to download?",
-      "a": "No. You can download your signed PDF immediately with zero onboarding steps."
+      "q": "Musím sa zaregistrovať alebo zadať svoj e-mail na stiahnutie?",
+      "a": "Nie. Svoj podpísaný PDF si môžete stiahnuť okamžite bez nutnosti registrácie."
     },
     {
-      "q": "Is the signature legally binding?",
-      "a": "Yes, our e-signature complies with general electronic transaction laws for basic electronic signatures."
+      "q": "Je podpis právne záväzný?",
+      "a": "Áno, náš elektronický podpis je v súlade so všeobecnými zákonmi o elektronických transakciách pre základné elektronické podpisy."
     },
     {
-      "q": "Does HandleMyFile store my signature graphic?",
-      "a": "No. The signature graphics are processed strictly in browser memory and wiped clean on page reload."
+      "q": "Ukladá HandleMyFile moju podpisovú grafiku?",
+      "a": "Nie. Podpisová grafika sa spracováva výlučne v pamäti prehliadača a pri opätovnom načítaní stránky sa vymaže."
     }
   ],
   "badges": [
-    "No Registration",
-    "100% Free",
-    "Zero Footprint"
+    "Žiadna registrácia",
+    "100% zadarmo",
+    "Nulová stopa"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Sign PDF Free",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Podpísať PDF zadarmo",
+  "supportCenter": "Centrum podpory",
+  "faqTitle": "Často kladené otázky"
 }

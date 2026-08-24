@@ -1,0 +1,79 @@
+{
+  "title": "비밀번호 없이 PDF 비밀번호 제거",
+  "h1": "비밀번호 없이 PDF에서 비밀번호 제거",
+  "description": "고급 잠금 해제 도구를 사용하면 원래 비밀번호 없이 PDF 파일에서 비밀번호 보호를 제거할 수 있습니다.",
+  "sections": [
+    {
+      "type": "protect_hero_features",
+      "title": "즉시 PDF 비밀번호 제거",
+      "content": "PDF 비밀번호를 잊으셨나요? 우리의 도구를 사용하면 브라우저 내에서 몇 초 만에 문서의 비밀번호 보호를 안전하게 제거할 수 있습니다.",
+      "badgeText": "즉시 잠금 해제"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "PDF를 잠금 해제하는 방법",
+      "badgeText": "빠른 가이드",
+      "steps": [
+        {
+          "title": "잠긴 PDF 선택",
+          "description": "잠금을 해제하려는 PDF 문서를 업로드하세요."
+        },
+        {
+          "title": "비밀번호 제거",
+          "description": "문서에서 비밀번호를 제거하려면 잠금 해제를 클릭하세요."
+        },
+        {
+          "title": "잠금 해제된 PDF 다운로드",
+          "description": "보호되지 않은 PDF를 장치에 저장하십시오."
+        }
+      ]
+    },
+    {
+      "type": "compare_geo_targeting",
+      "title": "100% 안전한 로컬 처리",
+      "content": "잠긴 문서에는 민감한 정보가 포함되어 있습니다. WebAssembly를 사용하여 로컬로 처리하여 장치에서 0바이트가 남지 않도록 합니다.",
+      "subTitle": "개인 정보 보호 우선",
+      "subContent": "클라우드 서버도 없고 데이터 보존도 없습니다.",
+      "badgeText": "개인 정보 보호 우선"
+    },
+    {
+      "type": "watermark_privacy_security",
+      "title": "은행 수준의 개인정보 보호",
+      "content": "우리는 고급 알고리즘을 사용하여 문서 내용을 손상시키지 않고 암호화를 제거합니다."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "번개처럼 빠른",
+      "content": "밀리초 안에 PDF를 잠금해제하세요.",
+      "badgeText": "초고속"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "여기에서 내 PDF를 잠금 해제해도 안전합니까?",
+      "a": "예. 모든 처리는 브라우저에서 로컬로 수행됩니다. 우리는 귀하의 파일을 어떤 서버에도 업로드하지 않습니다."
+    },
+    {
+      "q": "모든 유형의 비밀번호를 제거할 수 있나요?",
+      "a": "표준 암호화된 PDF에서 사용자 비밀번호와 소유자 비밀번호를 제거할 수 있습니다."
+    },
+    {
+      "q": "이 도구는 무료인가요?",
+      "a": "예, 100% 무료로 사용할 수 있습니다."
+    }
+  ],
+  "badges": [
+    "업로드 불가",
+    "안전한",
+    "빠른"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "지금 PDF 잠금 해제",
+  "supportCenter": "지원 센터",
+  "faqTitle": "자주 묻는 질문"
+}

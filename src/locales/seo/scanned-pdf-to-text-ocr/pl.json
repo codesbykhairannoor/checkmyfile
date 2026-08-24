@@ -1,0 +1,79 @@
+{
+  "title": "Konwertuj zeskanowany plik PDF na tekst — bezpłatna przeglądarka OCR",
+  "h1": "Wyodrębnij tekst ze zeskanowanych plików PDF za pomocą OCR",
+  "description": "Zamień nieprzeszukiwalne, zeskanowane pliki PDF i obrazy na lokalnie edytowalny zwykły tekst, korzystając z wielojęzycznych modułów roboczych OCR WebAssembly.",
+  "sections": [
+    {
+      "type": "resize_hero_features",
+      "title": "Natychmiast wyodrębnij tekst ze skanów",
+      "content": "Skorzystaj z naszej zaawansowanej technologii optycznego rozpoznawania znaków (OCR), aby wyodrębnić edytowalny tekst ze zeskanowanych dokumentów i obrazów.",
+      "badgeText": "Potężny OCR"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Jak wyodrębnić tekst za pomocą OCR",
+      "badgeText": "Prosty przewodnik",
+      "steps": [
+        {
+          "title": "Prześlij skan",
+          "description": "Wybierz zeskanowany plik PDF lub plik obrazu."
+        },
+        {
+          "title": "Uruchom OCR",
+          "description": "Wybierz język i rozpocznij proces OCR."
+        },
+        {
+          "title": "Skopiuj lub pobierz",
+          "description": "Natychmiast uzyskaj wyodrębniony tekst."
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "Obsługa wielu języków",
+      "content": "Nasz silnik OCR rozpoznaje wiele języków i złożone zestawy znaków z dużą dokładnością.",
+      "subTitle": "Dokładna ekstrakcja",
+      "subContent": "Obsługiwane przez Tesseract OCR WebAssembly.",
+      "badgeText": "Dokładna ekstrakcja"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "Prywatne przetwarzanie OCR",
+      "content": "W przeciwieństwie do innych narzędzi OCR, nie wysyłamy Twoich dokumentów do interfejsów API w chmurze. Wyodrębnianie tekstu odbywa się bezpośrednio na Twoim urządzeniu."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Wysoka dokładność",
+      "content": "Doskonały współczynnik rozpoznawania dla wyraźnych skanów.",
+      "badgeText": "Dokładny"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Czy obsługuje tekst pisany odręcznie?",
+      "a": "Nasz OCR jest zoptymalizowany pod kątem drukowanego tekstu. Tekst pisany odręcznie może mieć mniejszą dokładność."
+    },
+    {
+      "q": "Czy moje pliki zostaną przesłane?",
+      "a": "Nie, silnik OCR działa całkowicie w przeglądarce przy użyciu zestawu WebAssembly."
+    },
+    {
+      "q": "Czy mogę wyodrębnić tekst również z obrazów?",
+      "a": "Tak, możesz przesyłać pliki PNG, JPG lub zeskanowane pliki PDF."
+    }
+  ],
+  "badges": [
+    "OCR",
+    "Bezpieczny",
+    "Bezpłatny"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Rozpocznij wyodrębnianie OCR",
+  "supportCenter": "Centrum wsparcia",
+  "faqTitle": "Często zadawane pytania"
+}

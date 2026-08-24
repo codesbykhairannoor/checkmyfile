@@ -1,0 +1,79 @@
+{
+  "title": "Omorganiser PDF-sider Dra og slipp gratis",
+  "h1": "Omorganiser PDF-sider enkelt med dra og slipp",
+  "description": "Organiser og omorganiser sider i PDF-dokumentet ditt visuelt ved å dra og slippe miniatyrbilder. 100 % gratis og lokalt.",
+  "sections": [
+    {
+      "type": "word_hero_features",
+      "title": "Organiser PDF-sider visuelt",
+      "content": "Endre rekkefølgen på PDF-sidene dine ved å dra og slippe miniatyrbildene. Ingen kompleks programvare nødvendig.",
+      "badgeText": "Enkel ombestilling"
+    },
+    {
+      "type": "split_how_to_steps",
+      "title": "Hvordan omorganisere PDF-sider",
+      "badgeText": "Trinn-for-trinn",
+      "steps": [
+        {
+          "title": "Last opp PDF",
+          "description": "Velg PDF-filen du vil organisere."
+        },
+        {
+          "title": "Dra og slipp",
+          "description": "Klikk og dra sideminiatyrbildene for å omorganisere dem."
+        },
+        {
+          "title": "Lagre endringer",
+          "description": "Last ned det nybestilte PDF-dokumentet."
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "Visuelt dra og slipp-grensesnitt",
+      "content": "Vårt intuitive grensesnitt gjør det utrolig enkelt å se sidene dine og flytte dem akkurat dit de skal være.",
+      "subTitle": "Interaktiv",
+      "subContent": "Generering av miniatyrbilder i sanntid.",
+      "badgeText": "Interaktiv"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "100 % sortering på klientsiden",
+      "content": "Dokumentene dine omorganiseres lokalt i nettleseren din. Vi garanterer fullstendig personvern."
+    },
+    {
+      "type": "resize_performance",
+      "title": "Glatt opplevelse",
+      "content": "Omorganiser store dokumenter uten etterslep.",
+      "badgeText": "Optimalisert"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Kan jeg slette sider mens jeg bestiller på nytt?",
+      "a": "Ja, du kan også velge sider og fjerne dem om nødvendig."
+    },
+    {
+      "q": "Fungerer det på mobil?",
+      "a": "Ja, dra-og-slipp-grensesnittet vårt er berøringsvennlig og fungerer på mobile enheter."
+    },
+    {
+      "q": "Er filene mine lastet opp til en server?",
+      "a": "Nei, all ombestilling skjer direkte på enheten din."
+    }
+  ],
+  "badges": [
+    "Visuell",
+    "Privat",
+    "Gratis"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Bestill sidene på nytt nå",
+  "supportCenter": "Støttesenter",
+  "faqTitle": "Ofte stilte spørsmål"
+}

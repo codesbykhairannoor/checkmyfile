@@ -1,71 +1,71 @@
 {
-  "title": "Sign PDF Online Without Registration - Free E-Sign - RO",
-  "h1": "E-Sign PDF Documents Online Without Registration (RO)",
-  "description": "Place your electronic signature on any PDF file instantly. No account required, no signup, 100% private and free.",
+  "title": "Semnați PDF online fără înregistrare",
+  "h1": "E-Sign documente PDF online fără înregistrare",
+  "description": "Puneți semnătura electronică pe orice fișier PDF instantaneu. Nu este nevoie de cont, fără înregistrare, 100% privat și gratuit.",
   "sections": [
     {
       "type": "watermark_hero_features",
-      "title": "Sign PDF Documents Instantly Without Creating an Account",
-      "content": "Annoyed by online sign tools that force you to register, confirm emails, or pay subscriptions just to sign a single paper? HandleMyFile lets you add signatures to contracts completely free without signup.",
-      "badgeText": "No Registration Required"
+      "title": "Semnează documente PDF instantaneu, fără a crea un cont",
+      "content": "Enervat de instrumentele de semnare online care vă obligă să vă înregistrați, să confirmați e-mailurile sau să plătiți abonamente doar pentru a semna o singură hârtie? HandleMyFile vă permite să adăugați semnături la contracte complet gratuit, fără înscriere.",
+      "badgeText": "Nu este necesară înregistrarea"
     },
     {
       "type": "ocr_how_to_steps",
-      "title": "How to Sign PDF Without Signup",
-      "badgeText": "Quick Steps",
+      "title": "Cum să semnezi PDF fără înregistrare",
+      "badgeText": "Pași rapidi",
       "steps": [
         {
-          "title": "Upload Document",
-          "description": "Drop your PDF file into our registration-free workspace."
+          "title": "Încărcați documentul",
+          "description": "Introduceți fișierul PDF în spațiul nostru de lucru fără înregistrare."
         },
         {
-          "title": "Draw or Type Signature",
-          "description": "Create your signature with your mouse/touchpad, or upload an image."
+          "title": "Desenați sau introduceți semnătura",
+          "description": "Creați-vă semnătura cu mouse-ul/touchpad-ul sau încărcați o imagine."
         },
         {
-          "title": "Download Signed PDF",
-          "description": "Download your signed document instantly. Zero data is saved."
+          "title": "Descărcați PDF semnat",
+          "description": "Descărcați instantaneu documentul semnat. Nu sunt salvate date."
         }
       ]
     },
     {
       "type": "excel_geo_targeting",
-      "title": "Your Signature is Secure and Stays in Your Browser",
-      "content": "Biometric and graphical signature drawings are processed entirely in RAM. We do not store your signature or documents on any server, providing maximum fraud prevention.",
-      "subTitle": "Cryptographically Safe",
-      "subContent": "Vectors are flattened directly on the client canvas.",
-      "badgeText": "Cryptographically Safe"
+      "title": "Semnătura dvs. este sigură și rămâne în browser",
+      "content": "Desenele semnăturii biometrice și grafice sunt procesate în întregime în RAM. Nu stocăm semnătura sau documentele dumneavoastră pe niciun server, oferind o prevenire maximă a fraudei.",
+      "subTitle": "Criptografic sigur",
+      "subContent": "Vectorii sunt aplatizați direct pe pânza clientului.",
+      "badgeText": "Criptografic sigur"
     },
     {
       "type": "redact_privacy_security",
-      "title": "Frictionless NDA & Contract Signing",
-      "content": "Perfect for freelancers and business professionals who want to execute agreements, job offers, or NDAs on the spot without any onboarding friction."
+      "title": "NDA fără fricțiuni și semnarea contractului",
+      "content": "Perfect pentru freelanceri și profesioniști în afaceri care doresc să execute acorduri, oferte de locuri de muncă sau NDA-uri la fața locului, fără nicio fricțiune de integrare."
     },
     {
       "type": "split_performance",
-      "title": "Sign and Send in 15 Seconds",
-      "content": "With zero registration forms, email verification, or loading screens, you can sign any document and send it back immediately.",
-      "badgeText": "Speedy E-Sign"
+      "title": "Semnează și trimite în 15 secunde",
+      "content": "Cu zero formulare de înregistrare, verificare prin e-mail sau ecrane de încărcare, puteți semna orice document și îl puteți trimite imediat înapoi.",
+      "badgeText": "Semn electronic rapid"
     }
   ],
   "faqs": [
     {
-      "q": "Do I need to sign up or input my email to download?",
-      "a": "No. You can download your signed PDF immediately with zero onboarding steps."
+      "q": "Trebuie să mă înscriu sau să-mi introduc e-mailul pentru a descărca?",
+      "a": "Nu. Puteți descărca imediat PDF-ul semnat, fără pași de integrare."
     },
     {
-      "q": "Is the signature legally binding?",
-      "a": "Yes, our e-signature complies with general electronic transaction laws for basic electronic signatures."
+      "q": "Este semnătura obligatorie din punct de vedere juridic?",
+      "a": "Da, semnătura noastră electronică respectă legile generale privind tranzacțiile electronice pentru semnăturile electronice de bază."
     },
     {
-      "q": "Does HandleMyFile store my signature graphic?",
-      "a": "No. The signature graphics are processed strictly in browser memory and wiped clean on page reload."
+      "q": "HandleMyFile stochează semnătura mea grafică?",
+      "a": "Nu. Elementele grafice ale semnăturii sunt procesate strict în memoria browserului și șterse la reîncărcarea paginii."
     }
   ],
   "badges": [
-    "No Registration",
-    "100% Free",
-    "Zero Footprint"
+    "Fără înregistrare",
+    "100% gratuit",
+    "Zero Amprentă"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Sign PDF Free",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Semnați PDF gratuit",
+  "supportCenter": "Centru de suport",
+  "faqTitle": "Întrebări frecvente"
 }

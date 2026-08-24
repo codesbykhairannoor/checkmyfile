@@ -1,0 +1,79 @@
+{
+  "title": "Convertir un PDF numérisé en texte",
+  "h1": "Extraire le texte des PDF numérisés avec OCR",
+  "description": "Transformez des PDF et des images numérisés non consultables en texte brut modifiable localement à l'aide des outils OCR WebAssembly multilingues.",
+  "sections": [
+    {
+      "type": "resize_hero_features",
+      "title": "Extraire instantanément le texte des numérisations",
+      "content": "Utilisez notre technologie avancée de reconnaissance optique de caractères (OCR) pour extraire du texte modifiable à partir de documents et d'images numérisés.",
+      "badgeText": "ROC puissante"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Comment extraire du texte avec OCR",
+      "badgeText": "Guide simple",
+      "steps": [
+        {
+          "title": "Télécharger l'analyse",
+          "description": "Sélectionnez votre fichier PDF ou image numérisé."
+        },
+        {
+          "title": "Exécuter la ROC",
+          "description": "Sélectionnez la langue et démarrez le processus OCR."
+        },
+        {
+          "title": "Copier ou télécharger",
+          "description": "Obtenez instantanément le texte extrait."
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "Prise en charge multilingue",
+      "content": "Notre moteur OCR reconnaît plusieurs langues et jeux de caractères complexes avec une grande précision.",
+      "subTitle": "Extraction précise",
+      "subContent": "Propulsé par Tesseract OCR WebAssembly.",
+      "badgeText": "Extraction précise"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "Traitement OCR privé",
+      "content": "Contrairement à d'autres outils OCR, nous n'envoyons pas vos documents vers des API cloud. L'extraction de texte s'effectue directement sur votre appareil."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Haute précision",
+      "content": "Excellent taux de reconnaissance pour des scans clairs.",
+      "badgeText": "Précise"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Est-il compatible avec le texte manuscrit ?",
+      "a": "Notre OCR est optimisé pour le texte imprimé. Le texte manuscrit peut être moins précis."
+    },
+    {
+      "q": "Mes fichiers sont-ils téléchargés ?",
+      "a": "Non, le moteur OCR s'exécute entièrement dans votre navigateur à l'aide de WebAssembly."
+    },
+    {
+      "q": "Puis-je également extraire du texte à partir d’images ?",
+      "a": "Oui, vous pouvez télécharger des fichiers PNG, JPG ou PDF numérisés."
+    }
+  ],
+  "badges": [
+    "ROC",
+    "Sécurisé",
+    "Gratuite"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Démarrer l'extraction OCR",
+  "supportCenter": "Centre d'assistance",
+  "faqTitle": "Foire aux questions"
+}

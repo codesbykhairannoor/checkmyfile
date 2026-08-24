@@ -1,71 +1,71 @@
 {
-  "title": "Compress PDF to 100KB - Online PDF Shrinker to 100KB - JA",
-  "h1": "Compress PDF Files to 100KB Online (JA)",
-  "description": "Shrink your large PDF documents under 100KB for government portals, job applications, or visa forms completely in your browser.",
+  "title": "PDFを100KBに圧縮",
+  "h1": "オンラインで PDF ファイルを 100KB に圧縮",
+  "description": "政府ポータル、求職申請書、ビザ申請書などの大きな PDF ドキュメントをブラウザで完全に 100 KB 未満に縮小します。",
   "sections": [
     {
       "type": "resize_hero_features",
-      "title": "Kecilkan PDF ke 100KB secara Instan & Aman",
-      "content": "Struggling with strict 100KB upload limits on government portals, job sites, or visa applications? Our local compressor optimizes your PDF file under 100KB in seconds.",
-      "badgeText": "100KB Target Limit"
+      "title": "PDFを即時かつ安全に100KBに縮小",
+      "content": "政府ポータル、求人サイト、またはビザ申請における 100KB という厳しいアップロード制限に苦労していますか? 当社のローカル コンプレッサーは、100KB 未満の PDF ファイルを数秒で最適化します。",
+      "badgeText": "100KBターゲット"
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Compress PDF under 100KB",
-      "badgeText": "Quick Guide",
+      "title": "PDFを100KB以下に圧縮する方法",
+      "badgeText": "クイックガイド",
       "steps": [
         {
-          "title": "Add PDF Document",
-          "description": "Drop your PDF file into the client-side compressor."
+          "title": "PDFドキュメントを追加",
+          "description": "PDF ファイルをクライアント側のコンプレッサーにドロップします。"
         },
         {
-          "title": "Select 100KB Target",
-          "description": "Choose strong compression to automatically target size under 100KB."
+          "title": "100KBターゲットを選択",
+          "description": "自動的に 100KB 未満のサイズをターゲットにするには、強力な圧縮を選択します。"
         },
         {
-          "title": "Save Optimized PDF",
-          "description": "Download your compressed PDF instantly, ready to upload."
+          "title": "最適化された PDF を保存",
+          "description": "圧縮 PDF をすぐにダウンロードして、アップロードする準備ができています。"
         }
       ]
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Perfect for CPNS, Visa, and Scholarship Portals",
-      "content": "No need to worry about server-side limits. All compression takes place in your local browser sandbox, ensuring absolute compliance with security rules.",
-      "subTitle": "100% Client-Side",
-      "subContent": "Files never leave your browser, avoiding public storage risks.",
-      "badgeText": "100% Client-Side"
+      "title": "CPNS、ビザ、奨学金ポータルに最適",
+      "content": "サーバー側の制限を心配する必要はありません。 すべての圧縮はローカル ブラウザーのサンドボックスで行われ、セキュリティ ルールへの絶対的な準拠が保証されます。",
+      "subTitle": "安心してアップロード",
+      "subContent": "当社は機密文書 (ID カードのスキャン、パスポート、履歴書) を 100% ローカルで処理します。 データ漏洩のリスクゼロ。",
+      "badgeText": "安心してアップロード"
     },
     {
       "type": "compare_privacy_security",
-      "title": "Upload with Peace of Mind",
-      "content": "We process your sensitive documents (ID card scan, passport, CV) 100% locally. Zero risk of data leak."
+      "title": "ロスレス密度管理",
+      "content": "テキストが判読不能になることなく、100KB のしきい値に達するように画像解像度と DPI スケールを最適化します。"
     },
     {
       "type": "watermark_performance",
-      "title": "Lossless Density Management",
-      "content": "Optimizes image resolution and DPI scales to hit the 100KB threshold without turning texts into illegible blur.",
-      "badgeText": "Accurate Target"
+      "title": "CPNS対応",
+      "content": "ビザ承認済み",
+      "badgeText": "100KB未満"
     }
   ],
   "faqs": [
     {
-      "q": "How can I compress a PDF to exactly under 100KB?",
-      "a": "Select the 'Strong' compression preset. Our tool optimizes vectors and rasterizes complex gradients to fit your file under 100KB."
+      "q": "ファイルが 100KB 未満であることを確認するにはどうすればよいですか?",
+      "a": "「強力」圧縮プリセットを選択します。 私たちのツールはベクターを最適化し、複雑なグラデーションをラスタライズしてファイルを 100 KB 未満に収めます。"
     },
     {
-      "q": "Is there a limit on how many PDFs I can compress?",
-      "a": "No. Since processing runs locally in your browser memory, you can compress as many files as you want."
+      "q": "圧縮できるファイルの数に制限はありますか?",
+      "a": "いいえ。処理はブラウザのメモリ内でローカルに実行されるため、必要なだけファイルを圧縮できます。"
     },
     {
-      "q": "Are my sensitive identity scans safe?",
-      "a": "Yes. They are processed entirely offline via WebAssembly. 0 bytes are uploaded."
+      "q": "私の書類は安全ですか?",
+      "a": "はい。 これらは WebAssembly を介して完全にオフラインで処理されます。 0バイトがアップロードされました。"
     }
   ],
   "badges": [
-    "CPNS Ready",
-    "Visa Approved",
-    "Under 100KB"
+    "100KBターゲット",
+    "安全な",
+    "速い"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Compress PDF to 100KB",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "100KBに圧縮",
+  "supportCenter": "サポートセンター",
+  "faqTitle": "よくある質問"
 }

@@ -1,71 +1,71 @@
 {
-  "title": "Compress PDF to 100KB - Online PDF Shrinker to 100KB - FR",
-  "h1": "Compress PDF Files to 100KB Online (FR)",
-  "description": "Shrink your large PDF documents under 100KB for government portals, job applications, or visa forms completely in your browser.",
+  "title": "Compresser un PDF à 100 Ko",
+  "h1": "Compresser des fichiers PDF à 100 Ko en ligne",
+  "description": "Réduisez vos gros documents PDF à moins de 100 Ko pour les portails gouvernementaux, les demandes d'emploi ou les formulaires de visa entièrement dans votre navigateur.",
   "sections": [
     {
       "type": "resize_hero_features",
-      "title": "Kecilkan PDF ke 100KB secara Instan & Aman",
-      "content": "Struggling with strict 100KB upload limits on government portals, job sites, or visa applications? Our local compressor optimizes your PDF file under 100KB in seconds.",
-      "badgeText": "100KB Target Limit"
+      "title": "Réduisez le PDF à 100 Ko instantanément et en toute sécurité",
+      "content": "Vous avez du mal à respecter des limites strictes de téléchargement de 100 Ko sur les portails gouvernementaux, les sites d'emploi ou les demandes de visa ? Notre compresseur local optimise votre fichier PDF de moins de 100 Ko en quelques secondes.",
+      "badgeText": "Cible de 100 Ko"
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Compress PDF under 100KB",
-      "badgeText": "Quick Guide",
+      "title": "Comment compresser un PDF de moins de 100 Ko",
+      "badgeText": "Guide rapide",
       "steps": [
         {
-          "title": "Add PDF Document",
-          "description": "Drop your PDF file into the client-side compressor."
+          "title": "Ajouter un document PDF",
+          "description": "Déposez votre fichier PDF dans le compresseur côté client."
         },
         {
-          "title": "Select 100KB Target",
-          "description": "Choose strong compression to automatically target size under 100KB."
+          "title": "Sélectionnez la cible de 100 Ko",
+          "description": "Choisissez une compression forte pour cibler automatiquement une taille inférieure à 100 Ko."
         },
         {
-          "title": "Save Optimized PDF",
-          "description": "Download your compressed PDF instantly, ready to upload."
+          "title": "Enregistrer le PDF optimisé",
+          "description": "Téléchargez instantanément votre PDF compressé, prêt à être téléchargé."
         }
       ]
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Perfect for CPNS, Visa, and Scholarship Portals",
-      "content": "No need to worry about server-side limits. All compression takes place in your local browser sandbox, ensuring absolute compliance with security rules.",
-      "subTitle": "100% Client-Side",
-      "subContent": "Files never leave your browser, avoiding public storage risks.",
-      "badgeText": "100% Client-Side"
+      "title": "Parfait pour les portails CPNS, visas et bourses",
+      "content": "Pas besoin de vous soucier des limites côté serveur. Toute compression a lieu dans le bac à sable de votre navigateur local, garantissant un respect absolu des règles de sécurité.",
+      "subTitle": "Téléchargez en toute sérénité",
+      "subContent": "Nous traitons vos documents sensibles (scan carte d'identité, passeport, CV) 100% localement. Zéro risque de fuite de données.",
+      "badgeText": "Téléchargez en toute sérénité"
     },
     {
       "type": "compare_privacy_security",
-      "title": "Upload with Peace of Mind",
-      "content": "We process your sensitive documents (ID card scan, passport, CV) 100% locally. Zero risk of data leak."
+      "title": "Gestion de la densité sans perte",
+      "content": "Optimise la résolution de l'image et les échelles DPI pour atteindre le seuil de 100 Ko sans transformer les textes en flou illisible."
     },
     {
       "type": "watermark_performance",
-      "title": "Lossless Density Management",
-      "content": "Optimizes image resolution and DPI scales to hit the 100KB threshold without turning texts into illegible blur.",
-      "badgeText": "Accurate Target"
+      "title": "Prêt pour le CPNS",
+      "content": "Visa approuvé",
+      "badgeText": "Moins de 100 Ko"
     }
   ],
   "faqs": [
     {
-      "q": "How can I compress a PDF to exactly under 100KB?",
-      "a": "Select the 'Strong' compression preset. Our tool optimizes vectors and rasterizes complex gradients to fit your file under 100KB."
+      "q": "Comment puis-je m'assurer que le fichier fait moins de 100 Ko ?",
+      "a": "Sélectionnez le préréglage de compression « Fort ». Notre outil optimise les vecteurs et rastérise les dégradés complexes pour adapter votre fichier à moins de 100 Ko."
     },
     {
-      "q": "Is there a limit on how many PDFs I can compress?",
-      "a": "No. Since processing runs locally in your browser memory, you can compress as many files as you want."
+      "q": "Y a-t-il une limite au nombre de fichiers que je peux compresser ?",
+      "a": "Non. Puisque le traitement s'exécute localement dans la mémoire de votre navigateur, vous pouvez compresser autant de fichiers que vous le souhaitez."
     },
     {
-      "q": "Are my sensitive identity scans safe?",
-      "a": "Yes. They are processed entirely offline via WebAssembly. 0 bytes are uploaded."
+      "q": "Mes documents sont-ils en sécurité ?",
+      "a": "Oui. Ils sont traités entièrement hors ligne via WebAssembly. 0 octet est téléchargé."
     }
   ],
   "badges": [
-    "CPNS Ready",
-    "Visa Approved",
-    "Under 100KB"
+    "Cible de 100 Ko",
+    "Sécurisé",
+    "Rapide"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Compress PDF to 100KB",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Compresser à 100 Ko",
+  "supportCenter": "Centre d'assistance",
+  "faqTitle": "Foire aux questions"
 }

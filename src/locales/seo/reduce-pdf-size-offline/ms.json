@@ -1,0 +1,79 @@
+{
+  "title": "Kurangkan Saiz PDF Luar Talian",
+  "h1": "Kurangkan Saiz PDF Sepenuhnya Luar Talian dalam Penyemak Imbas Anda",
+  "description": "Kurangkan saiz dokumen PDF anda di luar talian terus dalam penyemak imbas anda tanpa sebarang muat naik pelayan. 100% selamat.",
+  "sections": [
+    {
+      "type": "split_hero_features",
+      "title": "Kecilkan Fail PDF Luar Talian",
+      "content": "Mampatkan PDF yang besar tanpa sambungan internet. Enjin WebAssembly kami berjalan sepenuhnya di luar talian dalam penyemak imbas anda.",
+      "badgeText": "Mampatan Luar Talian"
+    },
+    {
+      "type": "ocr_how_to_steps",
+      "title": "Cara Mengurangkan Saiz PDF Luar Talian",
+      "badgeText": "Langkah Pantas",
+      "steps": [
+        {
+          "title": "Tambah Fail",
+          "description": "Pilih dokumen PDF besar anda."
+        },
+        {
+          "title": "Memampatkan",
+          "description": "Pilih tahap mampatan dan klik mampat."
+        },
+        {
+          "title": "Muat turun",
+          "description": "Simpan fail PDF yang lebih kecil ke komputer anda."
+        }
+      ]
+    },
+    {
+      "type": "rotate_geo_targeting",
+      "title": "Berfungsi Tanpa Internet",
+      "content": "Setelah halaman dimuatkan, anda boleh memutuskan sambungan daripada internet dan alat itu masih akan berfungsi dengan sempurna.",
+      "subTitle": "Benar Luar Talian",
+      "subContent": "Tiada komunikasi pelayan semasa pemampatan.",
+      "badgeText": "Benar Luar Talian"
+    },
+    {
+      "type": "sign_privacy_security",
+      "title": "Privasi Maksimum Dijamin",
+      "content": "Memandangkan tiada data pernah dihantar melalui rangkaian, dokumen sensitif anda adalah 100% selamat."
+    },
+    {
+      "type": "split_performance",
+      "title": "Enjin Cekap",
+      "content": "Nisbah mampatan tinggi dengan pemprosesan pantas.",
+      "badgeText": "Kecekapan Tinggi"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Bagaimanakah pemampatan luar talian berfungsi?",
+      "a": "Kami menggunakan WebAssembly untuk menjalankan enjin pemampatan PDF yang berkuasa terus di dalam penyemak imbas anda."
+    },
+    {
+      "q": "Adakah kualiti akan rosak?",
+      "a": "Tidak, anda boleh memilih pemampatan tanpa kehilangan untuk mengekalkan kualiti visual yang tinggi."
+    },
+    {
+      "q": "Adakah terdapat had saiz fail?",
+      "a": "Tidak, kerana ia berjalan secara setempat, anda boleh memampatkan fail sebesar yang dibenarkan oleh memori peranti anda."
+    }
+  ],
+  "badges": [
+    "Luar talian",
+    "selamat",
+    "Cepat"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Kurangkan Saiz Sekarang",
+  "supportCenter": "Pusat Sokongan",
+  "faqTitle": "Soalan Lazim"
+}

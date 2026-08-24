@@ -1,71 +1,71 @@
 {
-  "title": "Gabung Beberapa File PDF - Satukan PDF Online Gratis",
-  "h1": "Gabungkan Beberapa File PDF secara Instan",
-  "description": "Satukan banyak berkas PDF menjadi satu file secara lokal di dalam browser Anda tanpa perlu mengunggah ke server internet.",
+  "title": "Gabungkan Beberapa File PDF",
+  "h1": "Gabungkan Beberapa File PDF Online (Gratis & Sisi Klien)",
+  "description": "Gabungkan dan gabungkan beberapa file PDF menjadi satu dokumen. Pemrosesan lokal instan, 100% pribadi, tanpa batas.",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Satukan Berbagai Dokumen PDF Menjadi Satu File",
-      "content": "Butuh menggabungkan banyak laporan, sertifikat, atau lembar scan menjadi satu dokumen PDF? Penggabung browser kami memungkinkan Anda menarik, melepaskan, mengurutkan, dan menyatukan berkas tanpa perlu antre upload.",
-      "badgeText": "Penggabung PDF"
+      "title": "Gabungkan Beberapa File PDF menjadi Satu",
+      "content": "Atur alur kerja Anda dengan menggabungkan faktur, laporan, atau bab ke dalam satu file PDF secara instan. Tidak perlu mengunggah.",
+      "badgeText": "Penggabungan Tanpa Batas"
     },
     {
       "type": "protect_how_to_steps",
-      "title": "Cara Menggabungkan Banyak File PDF",
+      "title": "Cara Menggabungkan File PDF",
       "badgeText": "Panduan Mudah",
       "steps": [
         {
-          "title": "Pilih File PDF",
-          "description": "Unggah semua dokumen PDF yang ingin Anda satukan."
+          "title": "Unggah File",
+          "description": "Seret dan lepas semua PDF yang ingin Anda gabungkan."
         },
         {
-          "title": "Atur Urutan",
-          "description": "Geser dan urutkan susunan berkas sesuai urutan halaman yang diinginkan."
+          "title": "Susun Ulang Halaman",
+          "description": "Seret untuk mengatur ulang urutan dokumen sesuai keinginan Anda."
         },
         {
-          "title": "Satukan Berkas",
-          "description": "Klik tombol gabung untuk menyatukan dokumen dalam satu kedipan mata."
+          "title": "Gabungkan & Unduh",
+          "description": "Klik gabung dan segera unduh PDF gabungan Anda."
         }
       ]
     },
     {
       "type": "rotate_geo_targeting",
-      "title": "Tanpa Upload Berkas, Aman untuk Dokumen Pribadi",
-      "content": "Berbeda dengan situs lain yang mengharuskan Anda mengunggah ijazah atau scan rekening bank ke server mereka, penggabung kami berjalan 100% lokal di browser Anda.",
-      "subTitle": "Privasi Utama",
-      "subContent": "Dokumen Anda tidak akan pernah dikirimkan atau bocor ke internet.",
-      "badgeText": "Privasi Utama"
+      "title": "Gabungkan Puluhan File dengan Aman",
+      "content": "Karena kami memproses semuanya di browser Anda, Anda dapat menggabungkan gigabyte PDF tanpa menunggu unggahan internet yang lambat.",
+      "subTitle": "Nol Pengunggahan Server",
+      "subContent": "Semua penggabungan dilakukan menggunakan RAM komputer Anda.",
+      "badgeText": "Nol Pengunggahan Server"
     },
     {
       "type": "sign_privacy_security",
-      "title": "Penggabungan Dokumen Bisnis yang Aman",
-      "content": "Solusi terbaik untuk tim keuangan atau hukum yang ingin menyatukan lembar kontrak sensitif secara rahasia dan aman."
+      "title": "Jaga agar Faktur & Laporan Anda Terorganisir",
+      "content": "Baik Anda seorang pelajar yang mengirimkan tugas atau pekerja lepas yang mengirimkan faktur, menggabungkannya ke dalam satu file akan membuatnya lebih mudah."
     },
     {
       "type": "resize_performance",
-      "title": "Gabung File Instan Tanpa Menunggu",
-      "content": "Proses penggabungan dokumen PDF berukuran besar selesai dalam kurang dari 1 detik karena tidak ada transfer data ke server cloud.",
-      "badgeText": "Gabung Instan"
+      "title": "Kecepatan Penggabungan Instan",
+      "content": "Gabungkan 50 file dalam waktu kurang dari 2 detik.",
+      "badgeText": "Secepat Kilat"
     }
   ],
   "faqs": [
     {
-      "q": "Apakah ada batasan jumlah dokumen yang bisa digabungkan?",
-      "a": "Tidak ada batasan jumlah file. Anda bisa menggabungkan puluhan dokumen sekaligus."
+      "q": "Apakah ada batasan berapa banyak file yang dapat saya gabungkan?",
+      "a": "Tidak. Karena diproses di perangkat Anda, satu-satunya batasan adalah memori komputer Anda."
     },
     {
-      "q": "Apakah urutan halaman bisa diubah sebelum digabung?",
-      "a": "Ya, Anda bisa menggeser posisi file pada daftar editor untuk mengubah susunan halaman sebelum klik gabung."
+      "q": "Bisakah saya mengatur ulang pesanannya?",
+      "a": "Ya, Anda dapat dengan mudah menarik dan melepas file ke dalam urutan yang Anda inginkan sebelum digabungkan."
     },
     {
-      "q": "Apakah aman menggabungkan berkas ijazah atau dokumen resmi di sini?",
-      "a": "Sangat aman, karena dokumen diproses langsung di perangkat Anda tanpa perantara server."
+      "q": "Apakah file saya masuk ke server?",
+      "a": "Sama sekali tidak. Penggabungan terjadi 100% offline di browser Anda."
     }
   ],
   "badges": [
-    "Tanpa Batas File",
-    "Atur Urutan Geser",
-    "100% Sisi Klien"
+    "Tidak Ada Unggahan",
+    "Gabungkan PDF",
+    "Tak terbatas"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Gabungkan PDF",
+  "buttonText": "Gabungkan File PDF",
   "supportCenter": "Pusat Dukungan",
   "faqTitle": "Pertanyaan yang Sering Diajukan"
 }

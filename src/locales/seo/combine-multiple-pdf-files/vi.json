@@ -1,71 +1,71 @@
 {
-  "title": "Combine Multiple PDF Files - Merge PDFs Online Free - VI",
-  "h1": "Combine Multiple PDF Files Online (VI)",
-  "description": "Merge and combine multiple PDF files into one single document. Instant local processing, 100% private, no limit.",
+  "title": "Kết hợp nhiều tệp PDF",
+  "h1": "Kết hợp nhiều tệp PDF trực tuyến (miễn phí & phía máy khách)",
+  "description": "Hợp nhất và kết hợp nhiều tệp PDF thành một tài liệu duy nhất. Xử lý cục bộ ngay lập tức, riêng tư 100%, không giới hạn.",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Combine Multiple PDF Documents into One Instantly",
-      "content": "Need to combine multiple reports, certificates, or scan pages into a single PDF document? Our browser combiner lets you drag, drop, reorder, and merge files locally with zero waiting time.",
-      "badgeText": "PDF Combiner"
+      "title": "Kết hợp nhiều tệp PDF thành một",
+      "content": "Sắp xếp quy trình làm việc của bạn bằng cách hợp nhất các hóa đơn, báo cáo hoặc chương vào một tệp PDF ngay lập tức. Không cần tải lên.",
+      "badgeText": "Hợp nhất không giới hạn"
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Combine Multiple PDFs",
-      "badgeText": "Easy Guide",
+      "title": "Cách kết hợp các tệp PDF",
+      "badgeText": "Hướng dẫn dễ dàng",
       "steps": [
         {
-          "title": "Select Documents",
-          "description": "Upload all the PDF files you wish to combine."
+          "title": "Tải tập tin lên",
+          "description": "Kéo và thả tất cả các tệp PDF bạn muốn hợp nhất."
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop the files to rearrange their sequence."
+          "title": "Sắp xếp lại các trang",
+          "description": "Kéo để sắp xếp lại thứ tự các tài liệu mà bạn thấy phù hợp."
         },
         {
-          "title": "Combine Files",
-          "description": "Click the merge button to combine them into one file instantly."
+          "title": "Hợp nhất và tải xuống",
+          "description": "Nhấp vào hợp nhất và tải xuống bản PDF kết hợp của bạn ngay lập tức."
         }
       ]
     },
     {
       "type": "rotate_geo_targeting",
-      "title": "No File Uploads, 100% Safe for Personal Documents",
-      "content": "Unlike other sites that require you to upload your sensitive ijazah, scans, or bank records to their servers, our combiner runs entirely locally in your browser memory.",
-      "subTitle": "Privacy First",
-      "subContent": "No documents are ever transmitted over the network.",
-      "badgeText": "Privacy First"
+      "title": "Kết hợp hàng chục tệp một cách an toàn",
+      "content": "Vì chúng tôi xử lý mọi thứ trong trình duyệt của bạn nên bạn có thể hợp nhất hàng gigabyte tệp PDF mà không cần chờ tải lên Internet chậm.",
+      "subTitle": "Không tải lên máy chủ",
+      "subContent": "Tất cả việc hợp nhất được thực hiện bằng RAM máy tính của bạn.",
+      "badgeText": "Không tải lên máy chủ"
     },
     {
       "type": "sign_privacy_security",
-      "title": "Secure Corporate Data Merging",
-      "content": "Perfect for financial departments and lawyers combining highly sensitive multi-page contracts. HandleMyFile keeps your documents offline."
+      "title": "Giữ hóa đơn và báo cáo của bạn được tổ chức",
+      "content": "Cho dù bạn là sinh viên nộp bài tập hay người làm việc tự do gửi hóa đơn, việc hợp nhất chúng vào một tệp sẽ giúp công việc gọn gàng hơn nhiều."
     },
     {
       "type": "resize_performance",
-      "title": "Instantaneous Local Merging",
-      "content": "Combining 10 large PDFs takes less than 1 second because we do not waste time uploading files to remote clouds.",
-      "badgeText": "Instant Merge"
+      "title": "Tốc độ hợp nhất tức thì",
+      "content": "Kết hợp 50 tệp trong vòng chưa đầy 2 giây.",
+      "badgeText": "Nhanh như chớp"
     }
   ],
   "faqs": [
     {
-      "q": "Is there a limit to how many PDFs I can combine?",
-      "a": "No, there are no limits on file count or size. Only your browser memory limit applies."
+      "q": "Có giới hạn về số lượng tệp tôi có thể kết hợp không?",
+      "a": "Không. Vì nó được xử lý trên thiết bị của bạn nên giới hạn duy nhất là bộ nhớ máy tính của bạn."
     },
     {
-      "q": "Can I rearrange pages before merging?",
-      "a": "Yes, you can drag and drop files in the workspace list to set their order before combining."
+      "q": "Tôi có thể sắp xếp lại đơn hàng được không?",
+      "a": "Có, bạn có thể dễ dàng kéo và thả các tệp theo thứ tự mong muốn trước khi hợp nhất."
     },
     {
-      "q": "Can I combine encrypted or password-protected PDFs?",
-      "a": "You need to unlock password-protected PDFs first before combining them."
+      "q": "Các tập tin của tôi có được chuyển đến máy chủ không?",
+      "a": "Hoàn toàn không. Việc hợp nhất diễn ra ngoại tuyến 100% trong trình duyệt của bạn."
     }
   ],
   "badges": [
-    "No Upload Limits",
-    "Drag & Drop Reorder",
-    "100% Client-Side"
+    "Không tải lên",
+    "Hợp nhất các tệp PDF",
+    "Không giới hạn"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Combine PDFs",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Kết hợp các tệp PDF",
+  "supportCenter": "Trung tâm hỗ trợ",
+  "faqTitle": "Câu hỏi thường gặp"
 }

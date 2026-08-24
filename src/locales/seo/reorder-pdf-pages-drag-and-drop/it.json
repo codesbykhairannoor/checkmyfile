@@ -1,0 +1,79 @@
+{
+  "title": "Riordina le pagine PDF Trascina e rilascia gratuitamente: ordina le pagine PDF",
+  "h1": "Riordina facilmente le pagine PDF con il trascinamento della selezione",
+  "description": "Organizza e riordina visivamente le pagine del tuo documento PDF trascinando e rilasciando le miniature. 100% gratuito e locale.",
+  "sections": [
+    {
+      "type": "word_hero_features",
+      "title": "Organizza visivamente le pagine PDF",
+      "content": "Cambia l'ordine delle tue pagine PDF semplicemente trascinando e rilasciando le miniature. Non è necessario alcun software complesso.",
+      "badgeText": "Riordino facile"
+    },
+    {
+      "type": "split_how_to_steps",
+      "title": "Come riordinare le pagine PDF",
+      "badgeText": "Passo dopo passo",
+      "steps": [
+        {
+          "title": "Carica PDF",
+          "description": "Seleziona il file PDF che desideri organizzare."
+        },
+        {
+          "title": "Trascina e rilascia",
+          "description": "Fare clic e trascinare le miniature delle pagine per riorganizzarle."
+        },
+        {
+          "title": "Salva modifiche",
+          "description": "Scarica il documento PDF appena ordinato."
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "Interfaccia visiva con trascinamento della selezione",
+      "content": "La nostra interfaccia intuitiva rende incredibilmente facile vedere le tue pagine e spostarle esattamente dove devono essere.",
+      "subTitle": "Interattiva",
+      "subContent": "Generazione di miniature in tempo reale.",
+      "badgeText": "Interattiva"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "Ordinamento lato client al 100%.",
+      "content": "I tuoi documenti vengono riorganizzati localmente nel tuo browser. Garantiamo la completa privacy."
+    },
+    {
+      "type": "resize_performance",
+      "title": "Esperienza fluida",
+      "content": "Riordina documenti di grandi dimensioni senza ritardi.",
+      "badgeText": "Ottimizzata"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Posso eliminare le pagine durante il riordino?",
+      "a": "Sì, puoi anche selezionare le pagine e rimuoverle se necessario."
+    },
+    {
+      "q": "Funziona su cellulare?",
+      "a": "Sì, la nostra interfaccia drag and drop è touch-friendly e funziona su dispositivi mobili."
+    },
+    {
+      "q": "I miei file vengono caricati su un server?",
+      "a": "No, tutto il riordino avviene direttamente sul tuo dispositivo."
+    }
+  ],
+  "badges": [
+    "Visiva",
+    "Privato",
+    "Gratuita"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Riordina le pagine adesso",
+  "supportCenter": "Centro di supporto",
+  "faqTitle": "Domande frequenti"
+}

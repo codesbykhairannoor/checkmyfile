@@ -1,0 +1,79 @@
+{
+  "title": "Pienennä PDF-kokoa offline-tilassa",
+  "h1": "Pienennä PDF-kokoa kokonaan offline-tilassa selaimessasi",
+  "description": "Pienennä PDF-dokumenttien kokoa offline-tilassa suoraan selaimessasi ilman palvelimen latauksia. 100% varma.",
+  "sections": [
+    {
+      "type": "split_hero_features",
+      "title": "Pienennä PDF-tiedostoja offline-tilassa",
+      "content": "Pakkaa suuret PDF-tiedostot ilman Internet-yhteyttä. WebAssembly-moottorimme toimii täysin offline-tilassa selaimessasi.",
+      "badgeText": "Offline-pakkaus"
+    },
+    {
+      "type": "ocr_how_to_steps",
+      "title": "Kuinka pienentää PDF-kokoa offline-tilassa",
+      "badgeText": "Nopeat askeleet",
+      "steps": [
+        {
+          "title": "Lisää tiedosto",
+          "description": "Valitse suuri PDF-dokumenttisi."
+        },
+        {
+          "title": "Pakkaa",
+          "description": "Valitse pakkaustaso ja napsauta Pakkaa."
+        },
+        {
+          "title": "Lataa",
+          "description": "Tallenna pienempi PDF-tiedosto tietokoneellesi."
+        }
+      ]
+    },
+    {
+      "type": "rotate_geo_targeting",
+      "title": "Toimii ilman Internetiä",
+      "content": "Kun sivu on ladattu, voit katkaista yhteyden Internetiin ja työkalu toimii edelleen täydellisesti.",
+      "subTitle": "Todellinen offline-tilassa",
+      "subContent": "Ei palvelinviestintää pakkauksen aikana.",
+      "badgeText": "Todellinen offline-tilassa"
+    },
+    {
+      "type": "sign_privacy_security",
+      "title": "Suurin tietosuoja taattu",
+      "content": "Koska tietoja ei koskaan siirretä verkon kautta, arkaluontoiset asiakirjasi ovat 100 % turvallisia."
+    },
+    {
+      "type": "split_performance",
+      "title": "Tehokas moottori",
+      "content": "Korkea pakkaussuhde nopealla käsittelyllä.",
+      "badgeText": "Korkea tehokkuus"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Miten offline-pakkaus toimii?",
+      "a": "Käytämme WebAssemblya tehokkaan PDF-pakkausmoottorin suorittamiseen suoraan selaimessasi."
+    },
+    {
+      "q": "Meneekö laatu pilalle?",
+      "a": "Ei, voit valita häviöttömän pakkauksen säilyttääksesi korkean visuaalisen laadun."
+    },
+    {
+      "q": "Onko tiedostokokorajoitusta?",
+      "a": "Ei, koska se toimii paikallisesti, voit pakata tiedostoja niin suuria kuin laitteesi muisti sallii."
+    }
+  ],
+  "badges": [
+    "Offline-tilassa",
+    "Turvallinen",
+    "Nopeasti"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Pienennä kokoa nyt",
+  "supportCenter": "Tukikeskus",
+  "faqTitle": "Usein kysytyt kysymykset"
+}

@@ -1,71 +1,71 @@
 {
-  "title": "Combine Multiple PDF Files - Merge PDFs Online Free - CS",
-  "h1": "Combine Multiple PDF Files Online (CS)",
-  "description": "Merge and combine multiple PDF files into one single document. Instant local processing, 100% private, no limit.",
+  "title": "Kombinace více souborů PDF",
+  "h1": "Kombinujte více souborů PDF online (zdarma a na straně klienta)",
+  "description": "Sloučit a kombinovat více souborů PDF do jednoho dokumentu. Okamžité místní zpracování, 100% soukromé, bez omezení.",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Combine Multiple PDF Documents into One Instantly",
-      "content": "Need to combine multiple reports, certificates, or scan pages into a single PDF document? Our browser combiner lets you drag, drop, reorder, and merge files locally with zero waiting time.",
-      "badgeText": "PDF Combiner"
+      "title": "Spojte více souborů PDF do jednoho",
+      "content": "Uspořádejte svůj pracovní postup okamžitým sloučením faktur, sestav nebo kapitol do jednoho souboru PDF. Není vyžadováno nahrávání.",
+      "badgeText": "Neomezené slučování"
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Combine Multiple PDFs",
-      "badgeText": "Easy Guide",
+      "title": "Jak kombinovat soubory PDF",
+      "badgeText": "Snadný průvodce",
       "steps": [
         {
-          "title": "Select Documents",
-          "description": "Upload all the PDF files you wish to combine."
+          "title": "Nahrát soubory",
+          "description": "Přetáhněte všechny soubory PDF, které chcete sloučit."
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop the files to rearrange their sequence."
+          "title": "Změnit pořadí stránek",
+          "description": "Přetažením změňte pořadí dokumentů, jak uznáte za vhodné."
         },
         {
-          "title": "Combine Files",
-          "description": "Click the merge button to combine them into one file instantly."
+          "title": "Sloučit a stáhnout",
+          "description": "Klikněte na sloučit a okamžitě si stáhněte kombinované PDF."
         }
       ]
     },
     {
       "type": "rotate_geo_targeting",
-      "title": "No File Uploads, 100% Safe for Personal Documents",
-      "content": "Unlike other sites that require you to upload your sensitive ijazah, scans, or bank records to their servers, our combiner runs entirely locally in your browser memory.",
-      "subTitle": "Privacy First",
-      "subContent": "No documents are ever transmitted over the network.",
-      "badgeText": "Privacy First"
+      "title": "Bezpečně zkombinujte desítky souborů",
+      "content": "Protože vše zpracováváme ve vašem prohlížeči, můžete sloučit gigabajty PDF bez čekání na pomalé nahrávání z internetu.",
+      "subTitle": "Nulové nahrávání na server",
+      "subContent": "Veškeré slučování se provádí pomocí paměti RAM vašeho počítače.",
+      "badgeText": "Nulové nahrávání na server"
     },
     {
       "type": "sign_privacy_security",
-      "title": "Secure Corporate Data Merging",
-      "content": "Perfect for financial departments and lawyers combining highly sensitive multi-page contracts. HandleMyFile keeps your documents offline."
+      "title": "Udržujte své faktury a přehledy uspořádané",
+      "content": "Ať už jste student odevzdávající úkoly nebo nezávislý pracovník zasílající faktury, jejich sloučením do jednoho souboru bude mnohem čistší."
     },
     {
       "type": "resize_performance",
-      "title": "Instantaneous Local Merging",
-      "content": "Combining 10 large PDFs takes less than 1 second because we do not waste time uploading files to remote clouds.",
-      "badgeText": "Instant Merge"
+      "title": "Rychlost okamžitého sloučení",
+      "content": "Spojte 50 souborů za méně než 2 sekundy.",
+      "badgeText": "Bleskově rychlý"
     }
   ],
   "faqs": [
     {
-      "q": "Is there a limit to how many PDFs I can combine?",
-      "a": "No, there are no limits on file count or size. Only your browser memory limit applies."
+      "q": "Existuje nějaké omezení počtu souborů, které mohu kombinovat?",
+      "a": "Ne. Protože je zpracováván ve vašem zařízení, jediným limitem je paměť vašeho počítače."
     },
     {
-      "q": "Can I rearrange pages before merging?",
-      "a": "Yes, you can drag and drop files in the workspace list to set their order before combining."
+      "q": "Mohu změnit pořadí?",
+      "a": "Ano, před sloučením můžete soubory snadno přetáhnout do požadovaného pořadí."
     },
     {
-      "q": "Can I combine encrypted or password-protected PDFs?",
-      "a": "You need to unlock password-protected PDFs first before combining them."
+      "q": "Jdou moje soubory na server?",
+      "a": "rozhodně ne. Sloučení probíhá 100% offline ve vašem prohlížeči."
     }
   ],
   "badges": [
-    "No Upload Limits",
-    "Drag & Drop Reorder",
-    "100% Client-Side"
+    "Žádné nahrávání",
+    "Sloučit soubory PDF",
+    "Neomezený"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Combine PDFs",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Kombinujte soubory PDF",
+  "supportCenter": "Centrum podpory",
+  "faqTitle": "Často kladené otázky"
 }

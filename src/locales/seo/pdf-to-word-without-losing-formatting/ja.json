@@ -1,0 +1,79 @@
+{
+  "title": "書式設定を失わない無料の PDF から Word コンバーター (.docx)",
+  "h1": "ブラウザで PDF を編集可能な Word DOCX に変換",
+  "description": "PDF から正確なテキスト、レイアウト、段落を抽出して、ブラウザーのメモリ内に直接クリーンな Microsoft Word (.docx) ファイルを作成します。",
+  "sections": [
+    {
+      "type": "watermark_hero_features",
+      "title": "PDFをWordに完璧に変換",
+      "content": "元のレイアウト、フォント、画像をそのまま維持したまま、PDF ドキュメントを編集可能な Word ファイルに変換します。",
+      "badgeText": "書式を保持する"
+    },
+    {
+      "type": "protect_how_to_steps",
+      "title": "PDFをWordに変換する方法",
+      "badgeText": "簡単な変換",
+      "steps": [
+        {
+          "title": "PDFをアップロードする",
+          "description": "変換したい PDF ファイルを選択します。"
+        },
+        {
+          "title": "DOCXに変換",
+          "description": "「変換」をクリックしてローカル処理を開始します。"
+        },
+        {
+          "title": "Wordファイルをダウンロード",
+          "description": "完全に編集可能な Word 文書を保存します。"
+        }
+      ]
+    },
+    {
+      "type": "excel_geo_targeting",
+      "title": "正確なレイアウトの保持",
+      "content": "当社の高度なパーサーは段落、表、列を理解し、Word 文書が PDF とまったく同じように見えるようにします。",
+      "subTitle": "高忠実度",
+      "subContent": "スタイルと構造を維持します。",
+      "badgeText": "高忠実度"
+    },
+    {
+      "type": "redact_privacy_security",
+      "title": "安全なクライアント側変換",
+      "content": "機密の契約書や報告書を安全に変換します。 変換はすべてデバイス上で行われます。"
+    },
+    {
+      "type": "watermark_performance",
+      "title": "高速処理",
+      "content": "複数ページのドキュメントを数秒で変換します。",
+      "badgeText": "クイック出力"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "レイアウトが変わるのでしょうか？",
+      "a": "私たちは、表、画像、テキストの配置など、正確なレイアウトを維持するよう努めています。"
+    },
+    {
+      "q": "これはサーバー上で処理されるのでしょうか？",
+      "a": "いいえ、プライバシーを最大限に高めるため、変換はブラウザ内で完全に行われます。"
+    },
+    {
+      "q": "変換後にテキストを編集することはできますか?",
+      "a": "はい、作成された DOCX ファイルは Microsoft Word または Google ドキュメントで完全に編集できます。"
+    }
+  ],
+  "badges": [
+    "編集可能",
+    "正確な",
+    "プライベート"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Wordに変換",
+  "supportCenter": "サポートセンター",
+  "faqTitle": "よくある質問"
+}

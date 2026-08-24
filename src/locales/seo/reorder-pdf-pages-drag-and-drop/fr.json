@@ -1,0 +1,79 @@
+{
+  "title": "Réorganiser les pages PDF Glisser-déposer gratuitement",
+  "h1": "Réorganisez facilement les pages PDF par glisser-déposer",
+  "description": "Organisez et réorganisez visuellement les pages de votre document PDF en faisant glisser et en déposant des vignettes. 100% gratuit et local.",
+  "sections": [
+    {
+      "type": "word_hero_features",
+      "title": "Organiser visuellement les pages PDF",
+      "content": "Modifiez l'ordre de vos pages PDF simplement en faisant glisser et en déposant les vignettes. Aucun logiciel complexe n'est nécessaire.",
+      "badgeText": "Réorganisation facile"
+    },
+    {
+      "type": "split_how_to_steps",
+      "title": "Comment réorganiser les pages PDF",
+      "badgeText": "Étape par étape",
+      "steps": [
+        {
+          "title": "Télécharger le PDF",
+          "description": "Sélectionnez le fichier PDF que vous souhaitez organiser."
+        },
+        {
+          "title": "Glisser-déposer",
+          "description": "Cliquez et faites glisser les vignettes des pages pour les réorganiser."
+        },
+        {
+          "title": "Enregistrer les modifications",
+          "description": "Téléchargez le document PDF nouvellement commandé."
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "Interface visuelle glisser-déposer",
+      "content": "Notre interface intuitive facilite incroyablement la visualisation de vos pages et leur déplacement exactement là où elles doivent être.",
+      "subTitle": "Interactive",
+      "subContent": "Génération de vignettes en temps réel.",
+      "badgeText": "Interactive"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "Tri 100 % côté client",
+      "content": "Vos documents sont réorganisés localement dans votre navigateur. Nous garantissons une confidentialité totale."
+    },
+    {
+      "type": "resize_performance",
+      "title": "Expérience fluide",
+      "content": "Réorganisez les documents volumineux sans décalage.",
+      "badgeText": "Optimisée"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Puis-je supprimer des pages lors d'une réorganisation ?",
+      "a": "Oui, vous pouvez également sélectionner des pages et les supprimer si nécessaire."
+    },
+    {
+      "q": "Est-ce que ça marche sur mobile ?",
+      "a": "Oui, notre interface glisser-déposer est tactile et fonctionne sur les appareils mobiles."
+    },
+    {
+      "q": "Mes fichiers sont-ils téléchargés sur un serveur ?",
+      "a": "Non, toutes les réorganisations s'effectuent directement sur votre appareil."
+    }
+  ],
+  "badges": [
+    "Visuelle",
+    "Privée",
+    "Gratuite"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Réorganiser les pages maintenant",
+  "supportCenter": "Centre d'assistance",
+  "faqTitle": "Foire aux questions"
+}

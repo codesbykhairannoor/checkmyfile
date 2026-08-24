@@ -1,0 +1,79 @@
+{
+  "title": "Ta bort PDF-lösenord utan lösenord",
+  "h1": "Ta bort lösenord från PDF utan lösenord",
+  "description": "Ta bort lösenordsskyddet från dina PDF-filer utan att behöva det ursprungliga lösenordet med vårt avancerade upplåsningsverktyg.",
+  "sections": [
+    {
+      "type": "protect_hero_features",
+      "title": "Ta bort PDF-lösenord direkt",
+      "content": "Glömt ditt PDF-lösenord? Vårt verktyg kan hjälpa dig ta bort lösenordsskyddet från dina dokument på några sekunder, säkert i din webbläsare.",
+      "badgeText": "Omedelbar upplåsning"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Hur man låser upp PDF",
+      "badgeText": "Snabbguide",
+      "steps": [
+        {
+          "title": "Välj Låst PDF",
+          "description": "Ladda upp PDF-dokumentet du vill låsa upp."
+        },
+        {
+          "title": "Ta bort lösenord",
+          "description": "Klicka på låsa upp för att ta bort lösenordet från dokumentet."
+        },
+        {
+          "title": "Ladda ner olåst PDF",
+          "description": "Spara den oskyddade PDF-filen på din enhet."
+        }
+      ]
+    },
+    {
+      "type": "compare_geo_targeting",
+      "title": "100 % säker lokal bearbetning",
+      "content": "Dina låsta dokument innehåller känslig information. Vi bearbetar dem lokalt med WebAssembly, vilket säkerställer att 0 byte någonsin lämnar din enhet.",
+      "subTitle": "Sekretess först",
+      "subContent": "Inga molnservrar, ingen datalagring.",
+      "badgeText": "Sekretess först"
+    },
+    {
+      "type": "watermark_privacy_security",
+      "title": "Sekretess på banknivå",
+      "content": "Vi använder avancerade algoritmer för att ta bort kryptering utan att kompromissa med ditt dokuments innehåll."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Blixtsnabb",
+      "content": "Lås upp din PDF på millisekunder.",
+      "badgeText": "Ultrasnabb"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Är det säkert att låsa upp min PDF här?",
+      "a": "Ja. All bearbetning sker lokalt i din webbläsare. Vi laddar inte upp dina filer till någon server."
+    },
+    {
+      "q": "Kan det ta bort alla typer av lösenord?",
+      "a": "Det kan ta bort användarlösenord och ägarlösenord från standardkrypterade PDF-filer."
+    },
+    {
+      "q": "Är detta verktyg gratis?",
+      "a": "Ja, det är 100 % gratis att använda."
+    }
+  ],
+  "badges": [
+    "Ingen uppladdning",
+    "Säkra",
+    "Snabb"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Lås upp PDF nu",
+  "supportCenter": "Supportcenter",
+  "faqTitle": "Vanliga frågor"
+}

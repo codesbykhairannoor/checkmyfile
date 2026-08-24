@@ -1,71 +1,71 @@
 {
-  "title": "Compress PDF Without Losing Quality - High Definition Lossless - TR",
-  "h1": "Compress PDF Documents Online Without Losing Quality (TR)",
-  "description": "Reduce PDF file size while keeping high-resolution vectors and texts perfectly sharp. 100% private client-side processing.",
+  "title": "Kaliteyi Kaybetmeden PDF'yi Sıkıştırın",
+  "h1": "PDF Belgelerini Kaliteyi Kaybetmeden Çevrimiçi Sıkıştırın",
+  "description": "Yüksek çözünürlüklü vektörleri ve metinleri mükemmel derecede keskin tutarken PDF dosya boyutunu küçültün. %100 özel istemci tarafı işleme.",
   "sections": [
     {
       "type": "word_hero_features",
-      "title": "Shrink PDF File Size While Keeping Text Crystal Clear",
-      "content": "Disappointed with compressors that make your PDF documents blurry? Our adaptive vector engine reduces PDF file sizes up to 90% without losing quality, leaving texts and logos completely sharp.",
-      "badgeText": "Lossless Optimization"
+      "title": "Dosya Boyutunu Küçültün, HD Kalitesini Koruyun",
+      "content": "Boyut için okunabilirlikten ödün vermeyin. Metinleri ve grafikleri mükemmel şekilde net tutarken portföylerinizi, vektör çizimlerinizi veya sunumlarınızı küçültün.",
+      "badgeText": "Kayıpsız Kalite"
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Compress PDF in Lossless Quality",
-      "badgeText": "Step-by-Step",
+      "title": "PDF Kayıpsız Nasıl Sıkıştırılır",
+      "badgeText": "Basit Adımlar",
       "steps": [
         {
-          "title": "Select PDF File",
-          "description": "Drop your PDF document into the local browser reader."
+          "title": "Dosya Seç",
+          "description": "Küçültmek istediğiniz yüksek kaliteli PDF'yi seçin."
         },
         {
-          "title": "Choose Recommended Preset",
-          "description": "Select medium compression to compress fonts and metadata losslessly."
+          "title": "Kayıpsız Modu Seçin",
+          "description": "Ayrıntıları korumak için 'Yüksek Kalite' sıkıştırma ayarını seçin."
         },
         {
-          "title": "Save High-Res PDF",
-          "description": "Download the compressed PDF with crisp text and high-res vector details."
+          "title": "Dosyayı İndir",
+          "description": "Bulanık metinler veya pikselli görüntüler olmadan daha hafif PDF'nizi elde edin."
         }
       ]
     },
     {
       "type": "watermark_geo_targeting",
-      "title": "Designed for Professional Designers & Architects",
-      "content": "No blurry blueprints, diagrams, or portfolios. Our engine compresses unnecessary metadata while locking image quality ratios locally on your device.",
-      "subTitle": "Vector Lossless",
-      "subContent": "Keeps fonts and SVG outlines fully vector-sharp at any zoom level.",
-      "badgeText": "Vector Lossless"
+      "title": "Net Metinler ve Keskin Görüntüler",
+      "content": "Belgelerinizin tamamen aynı görünmesini sağlamak için tarayıcınızın içinde yerel olarak gelişmiş DPI tutma ve vektör yumuşatma algoritmaları kullanıyoruz.",
+      "subTitle": "İstemci Tarafında İşleme",
+      "subContent": "Her şey WebAssembly'da çalışır.",
+      "badgeText": "İstemci Tarafında İşleme"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Absolute Privacy & Security",
-      "content": "Confidential company presentations, financial audits, or contracts remain offline on your device, ensuring maximum enterprise privacy compliance."
+      "title": "Portfolyolar ve Sunumlar için İdeal",
+      "content": "Kolayca paylaşılabilir hale getirmek için megabayt miktarını azaltırken profesyonel belgelerinizin profesyonel görünmesini sağlayın."
     },
     {
       "type": "ocr_performance",
-      "title": "Lightning-Fast Lossless Engine",
-      "content": "Pure WebAssembly calculations optimize file structure directly in RAM, saving bandwidth and processing files instantly.",
-      "badgeText": "Lossless Speed"
+      "title": "Sıfır Pikselleşme Garantisi",
+      "content": "Tüm metin düğümlerinde %100 keskinliği koruyun.",
+      "badgeText": "HD Çıkışı"
     }
   ],
   "faqs": [
     {
-      "q": "How does the lossless PDF compressor work?",
-      "a": "It reorganizes the PDF structure, compresses embedded fonts, and strips metadata without touching raster image ratios unless requested."
+      "q": "Kaliteyi kaybetmeden sıkıştırmak nasıl mümkün olabilir?",
+      "a": "PDF yapılarını optimize ediyoruz, kullanılmayan yazı tiplerini/nesneleri kaldırıyoruz ve görünmeyen görüntü katmanlarını akıllıca altörnekliyoruz."
     },
     {
-      "q": "Will my text remain searchable?",
-      "a": "Yes. All text vectors are preserved. You can highlight, search, and copy text exactly as before."
+      "q": "Metin bulanıklaşacak mı?",
+      "a": "Hayır. Vektör yolları ve metin öğeleri mükemmel şekilde korunur ve düz görüntü rasterleştirmesinin neden olduğu bulanıklık önlenir."
     },
     {
-      "q": "Can I compress vector drawings and CAD blueprints?",
-      "a": "Yes, our vector-preservation engine keeps CAD details sharp even at maximum zoom scales."
+      "q": "Bu araç ücretsiz mi?",
+      "a": "Evet, tamamen ücretsizdir ve çevrimdışı çalışır."
     }
   ],
   "badges": [
-    "High Resolution",
-    "No Text Blur",
-    "Lossless Presets"
+    "Yüksek Çözünürlük",
+    "Kayıpsız",
+    "Hızlı"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Compress Lossless PDF",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Kaliteyi Kaybetmeden Sıkıştırın",
+  "supportCenter": "Destek Merkezi",
+  "faqTitle": "Sıkça Sorulan Sorular"
 }

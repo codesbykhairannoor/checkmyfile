@@ -1,0 +1,79 @@
+{
+  "title": "Rimuovi password PDF senza password: sblocca PDF",
+  "h1": "Rimuovi la password dal PDF senza password",
+  "description": "Rimuovi la protezione tramite password dai tuoi file PDF senza bisogno della password originale utilizzando il nostro strumento di sblocco avanzato.",
+  "sections": [
+    {
+      "type": "protect_hero_features",
+      "title": "Rimuovi istantaneamente le password dei PDF",
+      "content": "Hai dimenticato la password del PDF? Il nostro strumento può aiutarti a rimuovere la protezione tramite password dai tuoi documenti in pochi secondi, in modo sicuro all'interno del tuo browser.",
+      "badgeText": "Sblocco istantaneo"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Come sbloccare PDF",
+      "badgeText": "Guida rapida",
+      "steps": [
+        {
+          "title": "Seleziona PDF bloccato",
+          "description": "Carica il documento PDF che desideri sbloccare."
+        },
+        {
+          "title": "Rimuovi password",
+          "description": "Fare clic su Sblocca per rimuovere la password dal documento."
+        },
+        {
+          "title": "Scarica PDF sbloccato",
+          "description": "Salva il PDF non protetto sul tuo dispositivo."
+        }
+      ]
+    },
+    {
+      "type": "compare_geo_targeting",
+      "title": "Elaborazione locale sicura al 100%.",
+      "content": "I tuoi documenti bloccati contengono informazioni sensibili. Li elaboriamo localmente utilizzando WebAssembly, garantendo che 0 byte non lascino mai il tuo dispositivo.",
+      "subTitle": "La privacy prima di tutto",
+      "subContent": "Nessun server cloud, nessuna conservazione dei dati.",
+      "badgeText": "La privacy prima di tutto"
+    },
+    {
+      "type": "watermark_privacy_security",
+      "title": "Privacy a livello bancario",
+      "content": "Utilizziamo algoritmi avanzati per rimuovere la crittografia senza compromettere il contenuto del tuo documento."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Fulmineo",
+      "content": "Sblocca il tuo PDF in pochi millisecondi.",
+      "badgeText": "Ultraveloce"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "È sicuro sbloccare il mio PDF qui?",
+      "a": "SÌ. Tutta l'elaborazione viene eseguita localmente nel tuo browser. Non carichiamo i tuoi file su nessun server."
+    },
+    {
+      "q": "Può rimuovere tutti i tipi di password?",
+      "a": "Può rimuovere le password degli utenti e le password del proprietario dai PDF crittografati standard."
+    },
+    {
+      "q": "Questo strumento è gratuito?",
+      "a": "Sì, è gratuito al 100%."
+    }
+  ],
+  "badges": [
+    "Nessun caricamento",
+    "Sicura",
+    "Veloce"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Sblocca PDF adesso",
+  "supportCenter": "Centro di supporto",
+  "faqTitle": "Domande frequenti"
+}

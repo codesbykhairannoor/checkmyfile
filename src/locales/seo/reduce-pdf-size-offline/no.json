@@ -1,0 +1,79 @@
+{
+  "title": "Reduser PDF-størrelse frakoblet",
+  "h1": "Reduser PDF-størrelsen helt frakoblet i nettleseren din",
+  "description": "Reduser størrelsen på PDF-dokumentene dine offline direkte i nettleseren din uten serveropplastinger. 100% sikker.",
+  "sections": [
+    {
+      "type": "split_hero_features",
+      "title": "Krympe PDF-filer frakoblet",
+      "content": "Komprimer store PDF-filer uten internettforbindelse. WebAssembly-motoren vår kjører helt offline i nettleseren din.",
+      "badgeText": "Frakoblet komprimering"
+    },
+    {
+      "type": "ocr_how_to_steps",
+      "title": "Hvordan redusere PDF-størrelse frakoblet",
+      "badgeText": "Raske trinn",
+      "steps": [
+        {
+          "title": "Legg til fil",
+          "description": "Velg ditt store PDF-dokument."
+        },
+        {
+          "title": "Komprimere",
+          "description": "Velg komprimeringsnivå og klikk komprimer."
+        },
+        {
+          "title": "Last ned",
+          "description": "Lagre den mindre PDF-filen på datamaskinen."
+        }
+      ]
+    },
+    {
+      "type": "rotate_geo_targeting",
+      "title": "Fungerer uten internett",
+      "content": "Når siden er lastet inn, kan du koble fra internett og verktøyet vil fortsatt fungere perfekt.",
+      "subTitle": "Ekte frakoblet",
+      "subContent": "Ingen serverkommunikasjon under komprimering.",
+      "badgeText": "Ekte frakoblet"
+    },
+    {
+      "type": "sign_privacy_security",
+      "title": "Maksimalt personvern garantert",
+      "content": "Siden ingen data noen gang overføres over nettverket, er dine sensitive dokumenter 100 % sikre."
+    },
+    {
+      "type": "split_performance",
+      "title": "Effektiv motor",
+      "content": "Høyt kompresjonsforhold med rask prosessering.",
+      "badgeText": "Høy effektivitet"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Hvordan fungerer offline komprimering?",
+      "a": "Vi bruker WebAssembly for å kjøre en kraftig PDF-komprimeringsmotor direkte i nettleseren din."
+    },
+    {
+      "q": "Vil kvaliteten bli ødelagt?",
+      "a": "Nei, du kan velge tapsfri komprimering for å opprettholde høy visuell kvalitet."
+    },
+    {
+      "q": "Er det en filstørrelsesgrense?",
+      "a": "Nei, siden det kjører lokalt, kan du komprimere filer så store som enhetens minne tillater."
+    }
+  ],
+  "badges": [
+    "Frakoblet",
+    "Sikker",
+    "Rask"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Reduser størrelse nå",
+  "supportCenter": "Støttesenter",
+  "faqTitle": "Ofte stilte spørsmål"
+}

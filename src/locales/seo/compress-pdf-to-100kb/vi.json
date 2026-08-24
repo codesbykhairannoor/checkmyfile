@@ -1,71 +1,71 @@
 {
-  "title": "Compress PDF to 100KB - Online PDF Shrinker to 100KB - VI",
-  "h1": "Compress PDF Files to 100KB Online (VI)",
-  "description": "Shrink your large PDF documents under 100KB for government portals, job applications, or visa forms completely in your browser.",
+  "title": "Nén PDF thành 100KB",
+  "h1": "Nén tệp PDF thành 100KB trực tuyến",
+  "description": "Thu nhỏ tài liệu PDF lớn của bạn xuống dưới 100KB cho các cổng thông tin chính phủ, đơn xin việc hoặc biểu mẫu thị thực hoàn toàn trong trình duyệt của bạn.",
   "sections": [
     {
       "type": "resize_hero_features",
-      "title": "Kecilkan PDF ke 100KB secara Instan & Aman",
-      "content": "Struggling with strict 100KB upload limits on government portals, job sites, or visa applications? Our local compressor optimizes your PDF file under 100KB in seconds.",
-      "badgeText": "100KB Target Limit"
+      "title": "Thu nhỏ PDF xuống 100KB ngay lập tức và an toàn",
+      "content": "Bạn đang gặp khó khăn với giới hạn tải lên 100KB nghiêm ngặt trên các cổng thông tin chính phủ, trang web việc làm hoặc đơn xin thị thực? Trình nén cục bộ của chúng tôi tối ưu hóa tệp PDF của bạn dưới 100KB trong vài giây.",
+      "badgeText": "Mục tiêu 100KB"
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Compress PDF under 100KB",
-      "badgeText": "Quick Guide",
+      "title": "Cách nén PDF dưới 100KB",
+      "badgeText": "Hướng dẫn nhanh",
       "steps": [
         {
-          "title": "Add PDF Document",
-          "description": "Drop your PDF file into the client-side compressor."
+          "title": "Thêm tài liệu PDF",
+          "description": "Thả tệp PDF của bạn vào máy nén phía máy khách."
         },
         {
-          "title": "Select 100KB Target",
-          "description": "Choose strong compression to automatically target size under 100KB."
+          "title": "Chọn mục tiêu 100KB",
+          "description": "Chọn nén mạnh để tự động nhắm mục tiêu kích thước dưới 100KB."
         },
         {
-          "title": "Save Optimized PDF",
-          "description": "Download your compressed PDF instantly, ready to upload."
+          "title": "Lưu PDF được tối ưu hóa",
+          "description": "Tải xuống bản PDF nén của bạn ngay lập tức, sẵn sàng tải lên."
         }
       ]
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Perfect for CPNS, Visa, and Scholarship Portals",
-      "content": "No need to worry about server-side limits. All compression takes place in your local browser sandbox, ensuring absolute compliance with security rules.",
-      "subTitle": "100% Client-Side",
-      "subContent": "Files never leave your browser, avoiding public storage risks.",
-      "badgeText": "100% Client-Side"
+      "title": "Hoàn hảo cho Cổng thông tin CPNS, Visa và Học bổng",
+      "content": "Không cần phải lo lắng về giới hạn phía máy chủ. Tất cả quá trình nén diễn ra trong hộp cát trình duyệt cục bộ của bạn, đảm bảo tuân thủ tuyệt đối các quy tắc bảo mật.",
+      "subTitle": "Tải lên với sự an tâm",
+      "subContent": "Chúng tôi xử lý các tài liệu nhạy cảm của bạn (quét CMND, hộ chiếu, CV) 100% tại địa phương. Không có nguy cơ rò rỉ dữ liệu.",
+      "badgeText": "Tải lên với sự an tâm"
     },
     {
       "type": "compare_privacy_security",
-      "title": "Upload with Peace of Mind",
-      "content": "We process your sensitive documents (ID card scan, passport, CV) 100% locally. Zero risk of data leak."
+      "title": "Quản lý mật độ không mất dữ liệu",
+      "content": "Tối ưu hóa độ phân giải hình ảnh và thang đo DPI để đạt ngưỡng 100KB mà không làm văn bản bị mờ đến mức khó đọc."
     },
     {
       "type": "watermark_performance",
-      "title": "Lossless Density Management",
-      "content": "Optimizes image resolution and DPI scales to hit the 100KB threshold without turning texts into illegible blur.",
-      "badgeText": "Accurate Target"
+      "title": "CPNS đã sẵn sàng",
+      "content": "Visa được phê duyệt",
+      "badgeText": "Dưới 100KB"
     }
   ],
   "faqs": [
     {
-      "q": "How can I compress a PDF to exactly under 100KB?",
-      "a": "Select the 'Strong' compression preset. Our tool optimizes vectors and rasterizes complex gradients to fit your file under 100KB."
+      "q": "Làm cách nào để đảm bảo tệp dưới 100KB?",
+      "a": "Chọn cài đặt trước nén 'Mạnh'. Công cụ của chúng tôi tối ưu hóa vectơ và rasterize các gradient phức tạp để vừa với tệp của bạn dưới 100KB."
     },
     {
-      "q": "Is there a limit on how many PDFs I can compress?",
-      "a": "No. Since processing runs locally in your browser memory, you can compress as many files as you want."
+      "q": "Có giới hạn về số lượng tệp tôi có thể nén không?",
+      "a": "Không. Vì quá trình xử lý diễn ra cục bộ trong bộ nhớ trình duyệt của bạn nên bạn có thể nén bao nhiêu tệp tùy thích."
     },
     {
-      "q": "Are my sensitive identity scans safe?",
-      "a": "Yes. They are processed entirely offline via WebAssembly. 0 bytes are uploaded."
+      "q": "Tài liệu của tôi có an toàn không?",
+      "a": "Đúng. Chúng được xử lý hoàn toàn ngoại tuyến thông qua WebAssugging. 0 byte được tải lên."
     }
   ],
   "badges": [
-    "CPNS Ready",
-    "Visa Approved",
-    "Under 100KB"
+    "Mục tiêu 100KB",
+    "Chắc chắn",
+    "Nhanh"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Compress PDF to 100KB",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Nén xuống 100KB",
+  "supportCenter": "Trung tâm hỗ trợ",
+  "faqTitle": "Câu hỏi thường gặp"
 }

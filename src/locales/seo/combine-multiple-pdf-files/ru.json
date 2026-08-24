@@ -1,71 +1,71 @@
 {
-  "title": "Combine Multiple PDF Files - Merge PDFs Online Free - RU",
-  "h1": "Combine Multiple PDF Files Online (RU)",
-  "description": "Merge and combine multiple PDF files into one single document. Instant local processing, 100% private, no limit.",
+  "title": "Объедините несколько файлов PDF — Объедините PDF-файлы онлайн бесплатно",
+  "h1": "Объединение нескольких PDF-файлов онлайн (бесплатно и на стороне клиента)",
+  "description": "Объединяйте и объединяйте несколько файлов PDF в один документ. Мгновенная локальная обработка, 100% конфиденциальность, без ограничений.",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Combine Multiple PDF Documents into One Instantly",
-      "content": "Need to combine multiple reports, certificates, or scan pages into a single PDF document? Our browser combiner lets you drag, drop, reorder, and merge files locally with zero waiting time.",
-      "badgeText": "PDF Combiner"
+      "title": "Объедините несколько PDF-файлов в один",
+      "content": "Организуйте свой рабочий процесс, мгновенно объединяя счета, отчеты или главы в один PDF-файл. Загрузка не требуется.",
+      "badgeText": "Неограниченное слияние"
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Combine Multiple PDFs",
-      "badgeText": "Easy Guide",
+      "title": "Как объединить PDF-файлы",
+      "badgeText": "Простое руководство",
       "steps": [
         {
-          "title": "Select Documents",
-          "description": "Upload all the PDF files you wish to combine."
+          "title": "Загрузить файлы",
+          "description": "Перетащите все PDF-файлы, которые хотите объединить."
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop the files to rearrange their sequence."
+          "title": "Изменение порядка страниц",
+          "description": "Перетащите, чтобы изменить порядок документов по своему усмотрению."
         },
         {
-          "title": "Combine Files",
-          "description": "Click the merge button to combine them into one file instantly."
+          "title": "Объединить и скачать",
+          "description": "Нажмите «Объединить» и немедленно загрузите объединенный PDF-файл."
         }
       ]
     },
     {
       "type": "rotate_geo_targeting",
-      "title": "No File Uploads, 100% Safe for Personal Documents",
-      "content": "Unlike other sites that require you to upload your sensitive ijazah, scans, or bank records to their servers, our combiner runs entirely locally in your browser memory.",
-      "subTitle": "Privacy First",
-      "subContent": "No documents are ever transmitted over the network.",
-      "badgeText": "Privacy First"
+      "title": "Безопасное объединение десятков файлов",
+      "content": "Поскольку мы обрабатываем все в вашем браузере, вы можете объединять гигабайты PDF-файлов, не дожидаясь медленной загрузки в Интернет.",
+      "subTitle": "Нулевая загрузка сервера",
+      "subContent": "Все слияния выполняются с использованием оперативной памяти вашего компьютера.",
+      "badgeText": "Нулевая загрузка сервера"
     },
     {
       "type": "sign_privacy_security",
-      "title": "Secure Corporate Data Merging",
-      "content": "Perfect for financial departments and lawyers combining highly sensitive multi-page contracts. HandleMyFile keeps your documents offline."
+      "title": "Держите свои счета и отчеты в порядке",
+      "content": "Независимо от того, являетесь ли вы студентом, сдающим задания, или фрилансером, отправляющим счета, объединение их в один файл сделает работу намного проще."
     },
     {
       "type": "resize_performance",
-      "title": "Instantaneous Local Merging",
-      "content": "Combining 10 large PDFs takes less than 1 second because we do not waste time uploading files to remote clouds.",
-      "badgeText": "Instant Merge"
+      "title": "Мгновенная скорость слияния",
+      "content": "Объедините 50 файлов менее чем за 2 секунды.",
+      "badgeText": "Молниеносно"
     }
   ],
   "faqs": [
     {
-      "q": "Is there a limit to how many PDFs I can combine?",
-      "a": "No, there are no limits on file count or size. Only your browser memory limit applies."
+      "q": "Есть ли ограничение на количество файлов, которые я могу объединить?",
+      "a": "Нет. Поскольку данные обрабатываются на вашем устройстве, единственным ограничением является объем памяти вашего компьютера."
     },
     {
-      "q": "Can I rearrange pages before merging?",
-      "a": "Yes, you can drag and drop files in the workspace list to set their order before combining."
+      "q": "Могу ли я изменить порядок?",
+      "a": "Да, вы можете легко перетащить файлы в нужном порядке перед объединением."
     },
     {
-      "q": "Can I combine encrypted or password-protected PDFs?",
-      "a": "You need to unlock password-protected PDFs first before combining them."
+      "q": "Мои файлы попадают на сервер?",
+      "a": "Абсолютно нет. Слияние происходит на 100% в автономном режиме в вашем браузере."
     }
   ],
   "badges": [
-    "No Upload Limits",
-    "Drag & Drop Reorder",
-    "100% Client-Side"
+    "Нет загрузок",
+    "Объединить PDF-файлы",
+    "Безлимитный"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Combine PDFs",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Объединение PDF-файлов",
+  "supportCenter": "Центр поддержки",
+  "faqTitle": "Часто задаваемые вопросы"
 }

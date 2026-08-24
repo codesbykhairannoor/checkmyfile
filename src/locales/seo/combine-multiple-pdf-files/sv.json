@@ -1,71 +1,71 @@
 {
-  "title": "Combine Multiple PDF Files - Merge PDFs Online Free - SV",
-  "h1": "Combine Multiple PDF Files Online (SV)",
-  "description": "Merge and combine multiple PDF files into one single document. Instant local processing, 100% private, no limit.",
+  "title": "Kombinera flera PDF-filer",
+  "h1": "Kombinera flera PDF-filer online (gratis och klientsidan)",
+  "description": "Slå samman och kombinera flera PDF-filer till ett enda dokument. Omedelbar lokal bearbetning, 100 % privat, ingen gräns.",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Combine Multiple PDF Documents into One Instantly",
-      "content": "Need to combine multiple reports, certificates, or scan pages into a single PDF document? Our browser combiner lets you drag, drop, reorder, and merge files locally with zero waiting time.",
-      "badgeText": "PDF Combiner"
+      "title": "Kombinera flera PDF-filer till en",
+      "content": "Organisera ditt arbetsflöde genom att slå samman fakturor, rapporter eller kapitel till en enda PDF-fil direkt. Ingen uppladdning krävs.",
+      "badgeText": "Obegränsad sammanslagning"
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Combine Multiple PDFs",
-      "badgeText": "Easy Guide",
+      "title": "Hur man kombinerar PDF-filer",
+      "badgeText": "Enkel guide",
       "steps": [
         {
-          "title": "Select Documents",
-          "description": "Upload all the PDF files you wish to combine."
+          "title": "Ladda upp filer",
+          "description": "Dra och släpp alla PDF-filer du vill slå samman."
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop the files to rearrange their sequence."
+          "title": "Ordna om sidor",
+          "description": "Dra för att ändra ordningen på dokumenten som du vill."
         },
         {
-          "title": "Combine Files",
-          "description": "Click the merge button to combine them into one file instantly."
+          "title": "Slå samman och ladda ner",
+          "description": "Klicka på sammanfoga och ladda ner din kombinerade PDF direkt."
         }
       ]
     },
     {
       "type": "rotate_geo_targeting",
-      "title": "No File Uploads, 100% Safe for Personal Documents",
-      "content": "Unlike other sites that require you to upload your sensitive ijazah, scans, or bank records to their servers, our combiner runs entirely locally in your browser memory.",
-      "subTitle": "Privacy First",
-      "subContent": "No documents are ever transmitted over the network.",
-      "badgeText": "Privacy First"
+      "title": "Kombinera dussintals filer på ett säkert sätt",
+      "content": "Eftersom vi bearbetar allt i din webbläsare kan du slå ihop gigabyte med PDF-filer utan att vänta på långsamma internetuppladdningar.",
+      "subTitle": "Noll serveruppladdningar",
+      "subContent": "All sammanslagning görs med hjälp av din dators RAM.",
+      "badgeText": "Noll serveruppladdningar"
     },
     {
       "type": "sign_privacy_security",
-      "title": "Secure Corporate Data Merging",
-      "content": "Perfect for financial departments and lawyers combining highly sensitive multi-page contracts. HandleMyFile keeps your documents offline."
+      "title": "Håll ordning på dina fakturor och rapporter",
+      "content": "Oavsett om du är en student som skickar in uppgifter eller en frilansare som skickar fakturor, blir det mycket renare om du slår ihop dem till en fil."
     },
     {
       "type": "resize_performance",
-      "title": "Instantaneous Local Merging",
-      "content": "Combining 10 large PDFs takes less than 1 second because we do not waste time uploading files to remote clouds.",
-      "badgeText": "Instant Merge"
+      "title": "Omedelbar sammanfogningshastighet",
+      "content": "Kombinera 50 filer på under 2 sekunder.",
+      "badgeText": "Blixtsnabb"
     }
   ],
   "faqs": [
     {
-      "q": "Is there a limit to how many PDFs I can combine?",
-      "a": "No, there are no limits on file count or size. Only your browser memory limit applies."
+      "q": "Finns det en gräns för hur många filer jag kan kombinera?",
+      "a": "Nej. Eftersom det bearbetas på din enhet är den enda begränsningen din dators minne."
     },
     {
-      "q": "Can I rearrange pages before merging?",
-      "a": "Yes, you can drag and drop files in the workspace list to set their order before combining."
+      "q": "Kan jag ändra beställningen?",
+      "a": "Ja, du kan enkelt dra och släppa filerna i önskad ordning innan du slår ihop dem."
     },
     {
-      "q": "Can I combine encrypted or password-protected PDFs?",
-      "a": "You need to unlock password-protected PDFs first before combining them."
+      "q": "Går mina filer till en server?",
+      "a": "Absolut inte. Sammanslagningen sker 100 % offline i din webbläsare."
     }
   ],
   "badges": [
-    "No Upload Limits",
-    "Drag & Drop Reorder",
-    "100% Client-Side"
+    "Inga uppladdningar",
+    "Slå samman PDF-filer",
+    "Obegränsat"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Combine PDFs",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Kombinera PDF-filer",
+  "supportCenter": "Supportcenter",
+  "faqTitle": "Vanliga frågor"
 }

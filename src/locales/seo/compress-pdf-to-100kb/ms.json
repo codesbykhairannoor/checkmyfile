@@ -1,71 +1,71 @@
 {
-  "title": "Compress PDF to 100KB - Online PDF Shrinker to 100KB - MS",
-  "h1": "Compress PDF Files to 100KB Online (MS)",
-  "description": "Shrink your large PDF documents under 100KB for government portals, job applications, or visa forms completely in your browser.",
+  "title": "Mampatkan PDF kepada 100KB",
+  "h1": "Mampatkan Fail PDF kepada 100KB Dalam Talian",
+  "description": "Kecilkan dokumen PDF besar anda di bawah 100KB untuk portal kerajaan, permohonan kerja atau borang visa sepenuhnya dalam penyemak imbas anda.",
   "sections": [
     {
       "type": "resize_hero_features",
-      "title": "Kecilkan PDF ke 100KB secara Instan & Aman",
-      "content": "Struggling with strict 100KB upload limits on government portals, job sites, or visa applications? Our local compressor optimizes your PDF file under 100KB in seconds.",
-      "badgeText": "100KB Target Limit"
+      "title": "Kecilkan PDF kepada 100KB Serta-merta & Selamat",
+      "content": "Bergelut dengan had muat naik 100KB yang ketat pada portal kerajaan, tapak kerja atau permohonan visa? Pemampat tempatan kami mengoptimumkan fail PDF anda di bawah 100KB dalam beberapa saat.",
+      "badgeText": "Sasaran 100KB"
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Compress PDF under 100KB",
-      "badgeText": "Quick Guide",
+      "title": "Cara Memampatkan PDF di bawah 100KB",
+      "badgeText": "Panduan Pantas",
       "steps": [
         {
-          "title": "Add PDF Document",
-          "description": "Drop your PDF file into the client-side compressor."
+          "title": "Tambah Dokumen PDF",
+          "description": "Letakkan fail PDF anda ke dalam pemampat sisi klien."
         },
         {
-          "title": "Select 100KB Target",
-          "description": "Choose strong compression to automatically target size under 100KB."
+          "title": "Pilih Sasaran 100KB",
+          "description": "Pilih mampatan kuat untuk menyasarkan saiz secara automatik di bawah 100KB."
         },
         {
-          "title": "Save Optimized PDF",
-          "description": "Download your compressed PDF instantly, ready to upload."
+          "title": "Simpan PDF Dioptimumkan",
+          "description": "Muat turun PDF termampat anda serta-merta, sedia untuk dimuat naik."
         }
       ]
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Perfect for CPNS, Visa, and Scholarship Portals",
-      "content": "No need to worry about server-side limits. All compression takes place in your local browser sandbox, ensuring absolute compliance with security rules.",
-      "subTitle": "100% Client-Side",
-      "subContent": "Files never leave your browser, avoiding public storage risks.",
-      "badgeText": "100% Client-Side"
+      "title": "Sesuai untuk CPNS, Visa, dan Portal Biasiswa",
+      "content": "Tidak perlu risau tentang had sebelah pelayan. Semua pemampatan berlaku dalam kotak pasir penyemak imbas tempatan anda, memastikan pematuhan mutlak terhadap peraturan keselamatan.",
+      "subTitle": "Muat naik dengan Ketenangan Fikiran",
+      "subContent": "Kami memproses dokumen sensitif anda (imbasan kad pengenalan, pasport, CV) 100% secara tempatan. Sifar risiko kebocoran data.",
+      "badgeText": "Muat naik dengan Ketenangan Fikiran"
     },
     {
       "type": "compare_privacy_security",
-      "title": "Upload with Peace of Mind",
-      "content": "We process your sensitive documents (ID card scan, passport, CV) 100% locally. Zero risk of data leak."
+      "title": "Pengurusan Kepadatan Tanpa Kehilangan",
+      "content": "Mengoptimumkan peleraian imej dan skala DPI untuk mencapai ambang 100KB tanpa mengubah teks menjadi kabur yang tidak boleh dibaca."
     },
     {
       "type": "watermark_performance",
-      "title": "Lossless Density Management",
-      "content": "Optimizes image resolution and DPI scales to hit the 100KB threshold without turning texts into illegible blur.",
-      "badgeText": "Accurate Target"
+      "title": "CPNS Sedia",
+      "content": "Visa Diluluskan",
+      "badgeText": "Bawah 100KB"
     }
   ],
   "faqs": [
     {
-      "q": "How can I compress a PDF to exactly under 100KB?",
-      "a": "Select the 'Strong' compression preset. Our tool optimizes vectors and rasterizes complex gradients to fit your file under 100KB."
+      "q": "Bagaimanakah cara saya memastikan fail berada di bawah 100KB?",
+      "a": "Pilih pratetap mampatan 'Kuat'. Alat kami mengoptimumkan vektor dan merasterkan kecerunan kompleks agar sesuai dengan fail anda di bawah 100KB."
     },
     {
-      "q": "Is there a limit on how many PDFs I can compress?",
-      "a": "No. Since processing runs locally in your browser memory, you can compress as many files as you want."
+      "q": "Adakah terdapat had pada berapa banyak fail yang boleh saya mampatkan?",
+      "a": "Tidak. Memandangkan pemprosesan berjalan secara setempat dalam memori penyemak imbas anda, anda boleh memampatkan seberapa banyak fail yang anda mahu."
     },
     {
-      "q": "Are my sensitive identity scans safe?",
-      "a": "Yes. They are processed entirely offline via WebAssembly. 0 bytes are uploaded."
+      "q": "Adakah dokumen saya selamat?",
+      "a": "ya. Mereka diproses sepenuhnya di luar talian melalui WebAssembly. 0 bait dimuat naik."
     }
   ],
   "badges": [
-    "CPNS Ready",
-    "Visa Approved",
-    "Under 100KB"
+    "Sasaran 100KB",
+    "selamat",
+    "Cepat"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Compress PDF to 100KB",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Mampatkan kepada 100KB",
+  "supportCenter": "Pusat Sokongan",
+  "faqTitle": "Soalan Lazim"
 }

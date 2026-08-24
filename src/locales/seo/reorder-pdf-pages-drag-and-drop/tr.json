@@ -1,0 +1,79 @@
+{
+  "title": "PDF Sayfalarını Yeniden Sıralayın Ücretsiz Sürükle ve Bırakın",
+  "h1": "Sürükle ve Bırak ile PDF Sayfalarını Kolayca Yeniden Sıralayın",
+  "description": "Küçük resimleri sürükleyip bırakarak PDF belgenizdeki sayfaları görsel olarak düzenleyin ve yeniden sıralayın. %100 ücretsiz ve yerel.",
+  "sections": [
+    {
+      "type": "word_hero_features",
+      "title": "PDF Sayfalarını Görsel Olarak Düzenleyin",
+      "content": "Küçük resimleri sürükleyip bırakarak PDF sayfalarınızın sırasını değiştirin. Karmaşık bir yazılıma gerek yok.",
+      "badgeText": "Kolay Yeniden Sıralama"
+    },
+    {
+      "type": "split_how_to_steps",
+      "title": "PDF Sayfaları Nasıl Yeniden Sıralanır?",
+      "badgeText": "Adım Adım",
+      "steps": [
+        {
+          "title": "PDF'yi yükle",
+          "description": "Düzenlemek istediğiniz PDF dosyasını seçin."
+        },
+        {
+          "title": "Sürükle ve Bırak",
+          "description": "Yeniden düzenlemek için sayfa küçük resimlerine tıklayıp sürükleyin."
+        },
+        {
+          "title": "Değişiklikleri Kaydet",
+          "description": "Yeni sipariş edilen PDF belgesini indirin."
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "Görsel Sürükle ve Bırak Arayüzü",
+      "content": "Sezgisel arayüzümüz, sayfalarınızı görmeyi ve onları tam olarak olması gereken yere taşımayı inanılmaz derecede kolaylaştırır.",
+      "subTitle": "İnteraktif",
+      "subContent": "Gerçek zamanlı küçük resim oluşturma.",
+      "badgeText": "İnteraktif"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "%100 İstemci Tarafında Sıralama",
+      "content": "Belgeleriniz tarayıcınızda yerel olarak yeniden düzenlenir. Tam gizliliği garanti ediyoruz."
+    },
+    {
+      "type": "resize_performance",
+      "title": "Sorunsuz Deneyim",
+      "content": "Büyük belgeleri gecikme olmadan yeniden sıralayın.",
+      "badgeText": "Optimize edilmiş"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Yeniden sıralama sırasında sayfaları silebilir miyim?",
+      "a": "Evet, gerekirse sayfaları seçip kaldırabilirsiniz."
+    },
+    {
+      "q": "Mobilde çalışıyor mu?",
+      "a": "Evet, sürükle bırak arayüzümüz dokunmatiktir ve mobil cihazlarda çalışır."
+    },
+    {
+      "q": "Dosyalarım bir sunucuya mı yükleniyor?",
+      "a": "Hayır, tüm yeniden sıralama işlemleri doğrudan cihazınızda gerçekleşir."
+    }
+  ],
+  "badges": [
+    "Görsel",
+    "Özel",
+    "Özgür"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Sayfaları Şimdi Yeniden Sıralayın",
+  "supportCenter": "Destek Merkezi",
+  "faqTitle": "Sıkça Sorulan Sorular"
+}

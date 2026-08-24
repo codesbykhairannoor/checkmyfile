@@ -1,0 +1,79 @@
+{
+  "title": "PDF-Passwort ohne Passwort entfernen",
+  "h1": "Entfernen Sie das Passwort aus PDF ohne Passwort",
+  "description": "Entfernen Sie den Passwortschutz aus Ihren PDF-Dateien, ohne dass Sie das Originalpasswort benötigen, indem Sie unser erweitertes Entsperrtool verwenden.",
+  "sections": [
+    {
+      "type": "protect_hero_features",
+      "title": "PDF-Passwörter sofort entfernen",
+      "content": "PDF-Passwort vergessen? Mit unserem Tool können Sie den Passwortschutz in Sekundenschnelle und sicher in Ihrem Browser von Ihren Dokumenten entfernen.",
+      "badgeText": "Sofortige Entsperrung"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "So entsperren Sie PDF",
+      "badgeText": "Kurzanleitung",
+      "steps": [
+        {
+          "title": "Wählen Sie „Gesperrtes PDF“.",
+          "description": "Laden Sie das PDF-Dokument hoch, das Sie entsperren möchten."
+        },
+        {
+          "title": "Passwort entfernen",
+          "description": "Klicken Sie auf „Entsperren“, um das Passwort aus dem Dokument zu entfernen."
+        },
+        {
+          "title": "Laden Sie das freigeschaltete PDF herunter",
+          "description": "Speichern Sie die ungeschützte PDF-Datei auf Ihrem Gerät."
+        }
+      ]
+    },
+    {
+      "type": "compare_geo_targeting",
+      "title": "100 % sichere lokale Verarbeitung",
+      "content": "Ihre gesperrten Dokumente enthalten vertrauliche Informationen. Wir verarbeiten sie lokal mit WebAssembly und stellen so sicher, dass nie 0 Bytes Ihr Gerät verlassen.",
+      "subTitle": "Datenschutz zuerst",
+      "subContent": "Keine Cloud-Server, keine Datenspeicherung.",
+      "badgeText": "Datenschutz zuerst"
+    },
+    {
+      "type": "watermark_privacy_security",
+      "title": "Datenschutz auf Bankebene",
+      "content": "Wir verwenden fortschrittliche Algorithmen, um die Verschlüsselung zu entfernen, ohne den Inhalt Ihres Dokuments zu gefährden."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Blitzschnell",
+      "content": "Entsperren Sie Ihr PDF in Millisekunden.",
+      "badgeText": "Ultraschnell"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Ist es sicher, mein PDF hier zu entsperren?",
+      "a": "Ja. Die gesamte Verarbeitung erfolgt lokal in Ihrem Browser. Wir laden Ihre Dateien nicht auf einen Server hoch."
+    },
+    {
+      "q": "Kann es alle Arten von Passwörtern entfernen?",
+      "a": "Es kann Benutzerkennwörter und Besitzerkennwörter aus standardmäßig verschlüsselten PDFs entfernen."
+    },
+    {
+      "q": "Ist dieses Tool kostenlos?",
+      "a": "Ja, die Nutzung ist zu 100 % kostenlos."
+    }
+  ],
+  "badges": [
+    "Kein Upload",
+    "Sicher",
+    "Schnell"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Jetzt PDF freischalten",
+  "supportCenter": "Support-Center",
+  "faqTitle": "Häufig gestellte Fragen"
+}

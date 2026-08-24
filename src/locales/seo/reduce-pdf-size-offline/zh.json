@@ -1,0 +1,79 @@
+{
+  "title": "离线缩小 PDF 大小",
+  "h1": "在浏览器中完全离线减小 PDF 大小",
+  "description": "直接在浏览器中离线减小 PDF 文档的大小，无需任何服务器上传。 100% 安全。",
+  "sections": [
+    {
+      "type": "split_hero_features",
+      "title": "离线缩小 PDF 文件",
+      "content": "无需互联网连接即可压缩大型 PDF。 我们的 WebAssembly 引擎在您的浏览器中完全离线运行。",
+      "badgeText": "离线压缩"
+    },
+    {
+      "type": "ocr_how_to_steps",
+      "title": "如何离线缩小 PDF 大小",
+      "badgeText": "快速步骤",
+      "steps": [
+        {
+          "title": "添加文件",
+          "description": "选择您的大型 PDF 文档。"
+        },
+        {
+          "title": "压缩",
+          "description": "选择压缩级别并单击压缩。"
+        },
+        {
+          "title": "下载",
+          "description": "将较小的 PDF 文件保存到您的计算机。"
+        }
+      ]
+    },
+    {
+      "type": "rotate_geo_targeting",
+      "title": "无需互联网即可工作",
+      "content": "页面加载后，您可以断开与互联网的连接，该工具仍然可以正常工作。",
+      "subTitle": "真正离线",
+      "subContent": "压缩期间没有服务器通信。",
+      "badgeText": "真正离线"
+    },
+    {
+      "type": "sign_privacy_security",
+      "title": "最大程度的隐私保证",
+      "content": "由于没有数据通过网络传输，因此您的敏感文档 100% 安全。"
+    },
+    {
+      "type": "split_performance",
+      "title": "高效的发动机",
+      "content": "高压缩比，快速处理。",
+      "badgeText": "高效率"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "离线压缩如何工作？",
+      "a": "我们使用 WebAssembly 直接在浏览器中运行强大的 PDF 压缩引擎。"
+    },
+    {
+      "q": "品质会不会被破坏？",
+      "a": "不，您可以选择无损压缩来保持高视觉质量。"
+    },
+    {
+      "q": "文件大小有限制吗？",
+      "a": "不需要，因为它在本地运行，所以您可以压缩设备内存允许的大小的文件。"
+    }
+  ],
+  "badges": [
+    "离线",
+    "安全的",
+    "快速地"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "立即缩小尺寸",
+  "supportCenter": "支持中心",
+  "faqTitle": "常见问题解答"
+}

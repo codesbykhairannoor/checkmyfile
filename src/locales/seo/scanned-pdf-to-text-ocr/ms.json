@@ -1,0 +1,79 @@
+{
+  "title": "Tukar PDF Diimbas kepada Teks",
+  "h1": "Ekstrak Teks daripada PDF yang Diimbas dengan OCR",
+  "description": "Tukar PDF dan imej imbasan yang tidak boleh dicari kepada teks biasa yang boleh diedit secara setempat menggunakan pekerja OCR WebAssembly berbilang bahasa.",
+  "sections": [
+    {
+      "type": "resize_hero_features",
+      "title": "Ekstrak Teks daripada Imbasan Serta-merta",
+      "content": "Gunakan teknologi Pengecaman Aksara Optik (OCR) lanjutan kami untuk mengekstrak teks boleh diedit daripada dokumen dan imej yang diimbas.",
+      "badgeText": "OCR yang berkuasa"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Cara Mengekstrak Teks dengan OCR",
+      "badgeText": "Panduan Mudah",
+      "steps": [
+        {
+          "title": "Muat Naik Imbasan",
+          "description": "Pilih fail PDF atau imej anda yang diimbas."
+        },
+        {
+          "title": "Jalankan OCR",
+          "description": "Pilih bahasa dan mulakan proses OCR."
+        },
+        {
+          "title": "Salin atau Muat Turun",
+          "description": "Dapatkan teks yang diekstrak serta-merta."
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "Sokongan Berbilang Bahasa",
+      "content": "Enjin OCR kami mengenali pelbagai bahasa dan set aksara kompleks dengan ketepatan yang tinggi.",
+      "subTitle": "Pengekstrakan Tepat",
+      "subContent": "Dikuasakan oleh Tesseract OCR WebAssembly.",
+      "badgeText": "Pengekstrakan Tepat"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "Pemprosesan OCR Persendirian",
+      "content": "Tidak seperti alat OCR lain, kami tidak menghantar dokumen anda ke API awan. Pengekstrakan teks berlaku terus pada peranti anda."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Ketepatan Tinggi",
+      "content": "Kadar pengecaman yang sangat baik untuk imbasan yang jelas.",
+      "badgeText": "tepat"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Adakah ia menyokong teks tulisan tangan?",
+      "a": "OCR kami dioptimumkan untuk teks bercetak. Teks tulisan tangan mungkin mempunyai ketepatan yang lebih rendah."
+    },
+    {
+      "q": "Adakah fail saya dimuat naik?",
+      "a": "Tidak, enjin OCR berfungsi sepenuhnya dalam penyemak imbas anda menggunakan WebAssembly."
+    },
+    {
+      "q": "Bolehkah saya mengekstrak teks daripada imej juga?",
+      "a": "Ya, anda boleh memuat naik fail PNG, JPG atau PDF yang diimbas."
+    }
+  ],
+  "badges": [
+    "OCR",
+    "selamat",
+    "Percuma"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Mulakan Pengekstrakan OCR",
+  "supportCenter": "Pusat Sokongan",
+  "faqTitle": "Soalan Lazim"
+}

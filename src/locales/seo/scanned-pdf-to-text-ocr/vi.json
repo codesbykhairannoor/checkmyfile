@@ -1,0 +1,79 @@
+{
+  "title": "Chuyển đổi PDF được quét thành văn bản",
+  "h1": "Trích xuất văn bản từ các tệp PDF được quét bằng OCR",
+  "description": "Biến các tệp PDF và hình ảnh được quét không thể tìm kiếm thành văn bản thuần túy có thể chỉnh sửa cục bộ bằng cách sử dụng trình xử lý WebAssugging OCR đa ngôn ngữ.",
+  "sections": [
+    {
+      "type": "resize_hero_features",
+      "title": "Trích xuất văn bản từ bản quét ngay lập tức",
+      "content": "Sử dụng công nghệ Nhận dạng Ký tự Quang học (OCR) tiên tiến của chúng tôi để trích xuất văn bản có thể chỉnh sửa từ các tài liệu và hình ảnh được quét.",
+      "badgeText": "OCR mạnh mẽ"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Cách trích xuất văn bản bằng OCR",
+      "badgeText": "Hướng dẫn đơn giản",
+      "steps": [
+        {
+          "title": "Tải lên bản quét",
+          "description": "Chọn tệp PDF hoặc hình ảnh được quét của bạn."
+        },
+        {
+          "title": "Chạy OCR",
+          "description": "Chọn ngôn ngữ và bắt đầu quá trình OCR."
+        },
+        {
+          "title": "Sao chép hoặc tải xuống",
+          "description": "Nhận văn bản được trích xuất ngay lập tức."
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "Hỗ trợ đa ngôn ngữ",
+      "content": "Công cụ OCR của chúng tôi nhận dạng nhiều ngôn ngữ và bộ ký tự phức tạp với độ chính xác cao.",
+      "subTitle": "Khai thác chính xác",
+      "subContent": "Được cung cấp bởi Tesseract OCR WebAssugging.",
+      "badgeText": "Khai thác chính xác"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "Xử lý OCR riêng",
+      "content": "Không giống như các công cụ OCR khác, chúng tôi không gửi tài liệu của bạn tới API đám mây. Việc trích xuất văn bản diễn ra ngay trên thiết bị của bạn."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Độ chính xác cao",
+      "content": "Tỷ lệ nhận dạng tuyệt vời để quét rõ ràng.",
+      "badgeText": "Chính xác"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Nó có hỗ trợ văn bản viết tay không?",
+      "a": "OCR của chúng tôi được tối ưu hóa cho văn bản in. Văn bản viết tay có thể có độ chính xác thấp hơn."
+    },
+    {
+      "q": "Các tập tin của tôi có được tải lên không?",
+      "a": "Không, công cụ OCR chạy hoàn toàn trong trình duyệt của bạn bằng WebAssembly."
+    },
+    {
+      "q": "Tôi có thể trích xuất văn bản từ hình ảnh không?",
+      "a": "Có, bạn có thể tải lên tệp PNG, JPG hoặc PDF được quét."
+    }
+  ],
+  "badges": [
+    "OCR",
+    "Chắc chắn",
+    "Miễn phí"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Bắt đầu trích xuất OCR",
+  "supportCenter": "Trung tâm hỗ trợ",
+  "faqTitle": "Câu hỏi thường gặp"
+}

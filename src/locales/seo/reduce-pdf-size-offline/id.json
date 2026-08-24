@@ -1,0 +1,79 @@
+{
+  "title": "Kurangi Ukuran PDF Offline",
+  "h1": "Kurangi Ukuran PDF Sepenuhnya Offline di Browser Anda",
+  "description": "Kurangi ukuran dokumen PDF Anda secara offline langsung di browser Anda tanpa unggahan server apa pun. 100% aman.",
+  "sections": [
+    {
+      "type": "split_hero_features",
+      "title": "Kecilkan File PDF Secara Offline",
+      "content": "Kompres PDF besar tanpa koneksi internet. Mesin WebAssembly kami berjalan sepenuhnya offline di browser Anda.",
+      "badgeText": "Kompresi Offline"
+    },
+    {
+      "type": "ocr_how_to_steps",
+      "title": "Cara Mengecilkan Ukuran PDF Secara Offline",
+      "badgeText": "Langkah Cepat",
+      "steps": [
+        {
+          "title": "Tambahkan Berkas",
+          "description": "Pilih dokumen PDF besar Anda."
+        },
+        {
+          "title": "Kompres",
+          "description": "Pilih tingkat kompresi dan klik kompres."
+        },
+        {
+          "title": "Unduh",
+          "description": "Simpan file PDF yang lebih kecil ke komputer Anda."
+        }
+      ]
+    },
+    {
+      "type": "rotate_geo_targeting",
+      "title": "Bekerja Tanpa Internet",
+      "content": "Setelah halaman dimuat, Anda dapat memutuskan sambungan dari internet dan alat tersebut akan tetap berfungsi dengan sempurna.",
+      "subTitle": "Benar Offline",
+      "subContent": "Tidak ada komunikasi server selama kompresi.",
+      "badgeText": "Benar Offline"
+    },
+    {
+      "type": "sign_privacy_security",
+      "title": "Privasi Maksimal Terjamin",
+      "content": "Karena tidak ada data yang dikirimkan melalui jaringan, dokumen sensitif Anda 100% aman."
+    },
+    {
+      "type": "split_performance",
+      "title": "Mesin Efisien",
+      "content": "Rasio kompresi tinggi dengan pemrosesan cepat.",
+      "badgeText": "Efisiensi Tinggi"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Bagaimana cara kerja kompresi offline?",
+      "a": "Kami menggunakan WebAssembly untuk menjalankan mesin kompresi PDF yang kuat langsung di dalam browser Anda."
+    },
+    {
+      "q": "Apakah kualitasnya akan rusak?",
+      "a": "Tidak, Anda dapat memilih kompresi lossless untuk mempertahankan kualitas visual yang tinggi."
+    },
+    {
+      "q": "Apakah ada batasan ukuran file?",
+      "a": "Tidak, karena ini berjalan secara lokal, Anda dapat mengompres file sebesar yang dimungkinkan oleh memori perangkat Anda."
+    }
+  ],
+  "badges": [
+    "Luring",
+    "Aman",
+    "Cepat"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Kurangi Ukuran Sekarang",
+  "supportCenter": "Pusat Dukungan",
+  "faqTitle": "Pertanyaan yang Sering Diajukan"
+}

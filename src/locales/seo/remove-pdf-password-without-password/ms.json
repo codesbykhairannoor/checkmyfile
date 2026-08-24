@@ -1,0 +1,79 @@
+{
+  "title": "Buang Kata Laluan PDF Tanpa Kata Laluan",
+  "h1": "Buang Kata Laluan daripada PDF Tanpa Kata Laluan",
+  "description": "Alih keluar perlindungan kata laluan daripada fail PDF anda tanpa memerlukan kata laluan asal menggunakan alat buka kunci lanjutan kami.",
+  "sections": [
+    {
+      "type": "protect_hero_features",
+      "title": "Alih Keluar Kata Laluan PDF Serta-merta",
+      "content": "Terlupa kata laluan PDF anda? Alat kami boleh membantu anda menanggalkan perlindungan kata laluan daripada dokumen anda dalam beberapa saat, dengan selamat di dalam penyemak imbas anda.",
+      "badgeText": "Buka Kunci Segera"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Bagaimana untuk membuka kunci PDF",
+      "badgeText": "Panduan Pantas",
+      "steps": [
+        {
+          "title": "Pilih PDF Berkunci",
+          "description": "Muat naik dokumen PDF yang ingin anda buka kunci."
+        },
+        {
+          "title": "Buang Kata Laluan",
+          "description": "Klik buka kunci untuk menanggalkan kata laluan daripada dokumen."
+        },
+        {
+          "title": "Muat turun PDF Tidak Berkunci",
+          "description": "Simpan PDF yang tidak dilindungi ke peranti anda."
+        }
+      ]
+    },
+    {
+      "type": "compare_geo_targeting",
+      "title": "100% Pemprosesan Tempatan Selamat",
+      "content": "Dokumen anda yang dikunci mengandungi maklumat sensitif. Kami memprosesnya secara tempatan menggunakan WebAssembly, memastikan 0 bait pernah meninggalkan peranti anda.",
+      "subTitle": "Privasi Diutamakan",
+      "subContent": "Tiada pelayan awan, tiada pengekalan data.",
+      "badgeText": "Privasi Diutamakan"
+    },
+    {
+      "type": "watermark_privacy_security",
+      "title": "Privasi Peringkat Bank",
+      "content": "Kami menggunakan algoritma lanjutan untuk mengalih keluar penyulitan tanpa menjejaskan kandungan dokumen anda."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Sepantas Kilat",
+      "content": "Buka kunci PDF anda dalam milisaat.",
+      "badgeText": "Ultra Cepat"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Adakah selamat untuk membuka kunci PDF saya di sini?",
+      "a": "ya. Semua pemprosesan dilakukan secara setempat dalam penyemak imbas anda. Kami tidak memuat naik fail anda ke mana-mana pelayan."
+    },
+    {
+      "q": "Bolehkah ia mengalih keluar semua jenis kata laluan?",
+      "a": "Ia boleh mengalih keluar kata laluan pengguna dan kata laluan pemilik daripada PDF yang disulitkan standard."
+    },
+    {
+      "q": "Adakah alat ini percuma?",
+      "a": "Ya, ia adalah 100% percuma untuk digunakan."
+    }
+  ],
+  "badges": [
+    "Tiada Muat Naik",
+    "selamat",
+    "Cepat"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Buka kunci PDF Sekarang",
+  "supportCenter": "Pusat Sokongan",
+  "faqTitle": "Soalan Lazim"
+}

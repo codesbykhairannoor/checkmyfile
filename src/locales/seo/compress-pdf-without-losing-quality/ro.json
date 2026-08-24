@@ -1,71 +1,71 @@
 {
-  "title": "Compress PDF Without Losing Quality - High Definition Lossless - RO",
-  "h1": "Compress PDF Documents Online Without Losing Quality (RO)",
-  "description": "Reduce PDF file size while keeping high-resolution vectors and texts perfectly sharp. 100% private client-side processing.",
+  "title": "Comprimați PDF fără a pierde calitatea",
+  "h1": "Comprimați documente PDF online fără a pierde calitatea",
+  "description": "Reduceți dimensiunea fișierului PDF păstrând în același timp vectorii și textele de înaltă rezoluție perfect clare. Procesare 100% privată pe partea clientului.",
   "sections": [
     {
       "type": "word_hero_features",
-      "title": "Shrink PDF File Size While Keeping Text Crystal Clear",
-      "content": "Disappointed with compressors that make your PDF documents blurry? Our adaptive vector engine reduces PDF file sizes up to 90% without losing quality, leaving texts and logos completely sharp.",
-      "badgeText": "Lossless Optimization"
+      "title": "Reduceți dimensiunea fișierului, mențineți calitatea HD",
+      "content": "Nu sacrifica lizibilitatea pentru dimensiune. Reduceți portofoliile, desenele vectoriale sau prezentările, păstrând în același timp textele și graficele perfect clare.",
+      "badgeText": "Calitate fără pierderi"
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Compress PDF in Lossless Quality",
-      "badgeText": "Step-by-Step",
+      "title": "Cum să comprimați PDF fără pierderi",
+      "badgeText": "Pași simpli",
       "steps": [
         {
-          "title": "Select PDF File",
-          "description": "Drop your PDF document into the local browser reader."
+          "title": "Selectați Fișier",
+          "description": "Alegeți PDF-ul de înaltă calitate pe care doriți să îl micșorați."
         },
         {
-          "title": "Choose Recommended Preset",
-          "description": "Select medium compression to compress fonts and metadata losslessly."
+          "title": "Alegeți modul Lossless",
+          "description": "Selectați setarea de compresie „Calitate înaltă” pentru a păstra detaliile."
         },
         {
-          "title": "Save High-Res PDF",
-          "description": "Download the compressed PDF with crisp text and high-res vector details."
+          "title": "Descărcați fișierul",
+          "description": "Obțineți PDF-ul mai ușor, fără text neclar sau imagini pixelate."
         }
       ]
     },
     {
       "type": "watermark_geo_targeting",
-      "title": "Designed for Professional Designers & Architects",
-      "content": "No blurry blueprints, diagrams, or portfolios. Our engine compresses unnecessary metadata while locking image quality ratios locally on your device.",
-      "subTitle": "Vector Lossless",
-      "subContent": "Keeps fonts and SVG outlines fully vector-sharp at any zoom level.",
-      "badgeText": "Vector Lossless"
+      "title": "Texte clare și imagini clare",
+      "content": "Folosim algoritmi avansati de retenție DPI și de netezire a vectorilor la nivel local în interiorul browserului dvs. pentru a ne asigura că documentele dumneavoastră arată exact la fel.",
+      "subTitle": "Procesare pe partea clientului",
+      "subContent": "Totul rulează în WebAssembly.",
+      "badgeText": "Procesare pe partea clientului"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Absolute Privacy & Security",
-      "content": "Confidential company presentations, financial audits, or contracts remain offline on your device, ensuring maximum enterprise privacy compliance."
+      "title": "Ideal pentru portofolii și prezentări",
+      "content": "Păstrați documentele dvs. profesionale un aspect profesional în timp ce reduceți megaocteții pentru a le face ușor de partajat."
     },
     {
       "type": "ocr_performance",
-      "title": "Lightning-Fast Lossless Engine",
-      "content": "Pure WebAssembly calculations optimize file structure directly in RAM, saving bandwidth and processing files instantly.",
-      "badgeText": "Lossless Speed"
+      "title": "Garantie zero pixelare",
+      "content": "Mențineți claritatea 100% pe toate nodurile de text.",
+      "badgeText": "Ieșire HD"
     }
   ],
   "faqs": [
     {
-      "q": "How does the lossless PDF compressor work?",
-      "a": "It reorganizes the PDF structure, compresses embedded fonts, and strips metadata without touching raster image ratios unless requested."
+      "q": "Cum este posibil să comprimați fără a pierde calitatea?",
+      "a": "Optimizăm structurile PDF, eliminăm fonturile/obiectele neutilizate și eșantionăm inteligent straturile de imagini nevăzute."
     },
     {
-      "q": "Will my text remain searchable?",
-      "a": "Yes. All text vectors are preserved. You can highlight, search, and copy text exactly as before."
+      "q": "Va deveni textul neclar?",
+      "a": "Nu. Căile vectoriale și elementele de text sunt păstrate perfect, evitând neclaritatea cauzată de rasterizarea imaginii plate."
     },
     {
-      "q": "Can I compress vector drawings and CAD blueprints?",
-      "a": "Yes, our vector-preservation engine keeps CAD details sharp even at maximum zoom scales."
+      "q": "Acest instrument este gratuit?",
+      "a": "Da, complet gratuit și rulează offline."
     }
   ],
   "badges": [
-    "High Resolution",
-    "No Text Blur",
-    "Lossless Presets"
+    "Înaltă definiție",
+    "Fără pierderi",
+    "Rapid"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Compress Lossless PDF",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Comprimați fără a pierde calitatea",
+  "supportCenter": "Centru de suport",
+  "faqTitle": "Întrebări frecvente"
 }

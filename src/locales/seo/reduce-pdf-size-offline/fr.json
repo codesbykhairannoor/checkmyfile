@@ -1,0 +1,79 @@
+{
+  "title": "Réduire la taille du PDF hors ligne",
+  "h1": "Réduisez la taille du PDF complètement hors ligne dans votre navigateur",
+  "description": "Réduisez la taille de vos documents PDF hors ligne directement dans votre navigateur sans aucun téléchargement sur le serveur. 100% sécurisé.",
+  "sections": [
+    {
+      "type": "split_hero_features",
+      "title": "Réduire les fichiers PDF hors ligne",
+      "content": "Compressez des PDF volumineux sans connexion Internet. Notre moteur WebAssembly fonctionne entièrement hors ligne dans votre navigateur.",
+      "badgeText": "Compression hors ligne"
+    },
+    {
+      "type": "ocr_how_to_steps",
+      "title": "Comment réduire la taille d'un PDF hors ligne",
+      "badgeText": "Étapes rapides",
+      "steps": [
+        {
+          "title": "Ajouter un fichier",
+          "description": "Sélectionnez votre grand document PDF."
+        },
+        {
+          "title": "Compresse",
+          "description": "Choisissez le niveau de compression et cliquez sur compresser."
+        },
+        {
+          "title": "Télécharger",
+          "description": "Enregistrez le plus petit fichier PDF sur votre ordinateur."
+        }
+      ]
+    },
+    {
+      "type": "rotate_geo_targeting",
+      "title": "Fonctionne sans Internet",
+      "content": "Une fois la page chargée, vous pouvez vous déconnecter d’Internet et l’outil fonctionnera toujours parfaitement.",
+      "subTitle": "Vrai hors ligne",
+      "subContent": "Aucune communication avec le serveur pendant la compression.",
+      "badgeText": "Vrai hors ligne"
+    },
+    {
+      "type": "sign_privacy_security",
+      "title": "Confidentialité maximale garantie",
+      "content": "Puisqu’aucune donnée n’est jamais transmise sur le réseau, vos documents sensibles sont 100% sécurisés."
+    },
+    {
+      "type": "split_performance",
+      "title": "Moteur efficace",
+      "content": "Taux de compression élevé avec traitement rapide.",
+      "badgeText": "Haute efficacité"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Comment fonctionne la compression hors ligne ?",
+      "a": "Nous utilisons WebAssembly pour exécuter un puissant moteur de compression PDF directement dans votre navigateur."
+    },
+    {
+      "q": "La qualité sera-t-elle gâchée ?",
+      "a": "Non, vous pouvez choisir une compression sans perte pour conserver une qualité visuelle élevée."
+    },
+    {
+      "q": "Y a-t-il une limite de taille de fichier ?",
+      "a": "Non, puisqu'il s'exécute localement, vous pouvez compresser des fichiers aussi volumineux que la mémoire de votre appareil le permet."
+    }
+  ],
+  "badges": [
+    "Hors ligne",
+    "Sécurisé",
+    "Rapide"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Réduire la taille maintenant",
+  "supportCenter": "Centre d'assistance",
+  "faqTitle": "Foire aux questions"
+}

@@ -1,0 +1,79 @@
+{
+  "title": "删除 PDF 密码 无密码",
+  "h1": "无需密码即可从 PDF 中删除密码",
+  "description": "使用我们的高级解锁工具，无需原始密码即可删除 PDF 文件的密码保护。",
+  "sections": [
+    {
+      "type": "protect_hero_features",
+      "title": "立即删除 PDF 密码",
+      "content": "忘记了 PDF 密码？ 我们的工具可以帮助您在几秒钟内安全地在浏览器中解除文档的密码保护。",
+      "badgeText": "即时解锁"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "如何解锁 PDF",
+      "badgeText": "快速指南",
+      "steps": [
+        {
+          "title": "选择锁定的 PDF",
+          "description": "上传您要解锁的 PDF 文档。"
+        },
+        {
+          "title": "删除密码",
+          "description": "单击“解锁”可从文档中删除密码。"
+        },
+        {
+          "title": "下载解锁 PDF",
+          "description": "将未受保护的 PDF 保存到您的设备。"
+        }
+      ]
+    },
+    {
+      "type": "compare_geo_targeting",
+      "title": "100% 安全的本地处理",
+      "content": "您锁定的文档包含敏感信息。 我们使用 WebAssembly 在本地处理它们，确保 0 字节离开您的设备。",
+      "subTitle": "隐私第一",
+      "subContent": "没有云服务器，没有数据保留。",
+      "badgeText": "隐私第一"
+    },
+    {
+      "type": "watermark_privacy_security",
+      "title": "银行级隐私",
+      "content": "我们使用先进的算法来删除加密，而不会损害您的文档内容。"
+    },
+    {
+      "type": "ocr_performance",
+      "title": "快如闪电",
+      "content": "在几毫秒内解锁您的 PDF。",
+      "badgeText": "超快"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "在这里解锁我的 PDF 安全吗？",
+      "a": "是的。 所有处理均在您的浏览器本地完成。 我们不会将您的文件上传到任何服务器。"
+    },
+    {
+      "q": "它可以删除所有类型的密码吗？",
+      "a": "它可以从标准加密 PDF 中删除用户密码和所有者密码。"
+    },
+    {
+      "q": "这个工具是免费的吗？",
+      "a": "是的，它是 100% 免费使用的。"
+    }
+  ],
+  "badges": [
+    "没有上传",
+    "安全的",
+    "快速地"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "立即解锁 PDF",
+  "supportCenter": "支持中心",
+  "faqTitle": "常见问题解答"
+}

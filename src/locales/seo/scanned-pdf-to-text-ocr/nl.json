@@ -1,0 +1,79 @@
+{
+  "title": "Converteer gescande PDF naar tekst",
+  "h1": "Extraheer tekst uit gescande PDF's met OCR",
+  "description": "Zet niet-doorzoekbare gescande PDF's en afbeeldingen lokaal om in bewerkbare platte tekst met behulp van meertalige WebAssembly OCR-workers.",
+  "sections": [
+    {
+      "type": "resize_hero_features",
+      "title": "Extraheer tekst direct uit scans",
+      "content": "Gebruik onze geavanceerde Optical Character Recognition (OCR)-technologie om bewerkbare tekst uit gescande documenten en afbeeldingen te extraheren.",
+      "badgeText": "Krachtige OCR"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Tekst extraheren met OCR",
+      "badgeText": "Eenvoudige gids",
+      "steps": [
+        {
+          "title": "Uploadscan",
+          "description": "Selecteer uw gescande PDF- of afbeeldingsbestand."
+        },
+        {
+          "title": "Voer OCR uit",
+          "description": "Selecteer de taal en start het OCR-proces."
+        },
+        {
+          "title": "Kopiëren of downloaden",
+          "description": "Ontvang de geëxtraheerde tekst onmiddellijk."
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "Meertalige ondersteuning",
+      "content": "Onze OCR-engine herkent meerdere talen en complexe tekensets met hoge nauwkeurigheid.",
+      "subTitle": "Nauwkeurige extractie",
+      "subContent": "Mogelijk gemaakt door Tesseract OCR WebAssembly.",
+      "badgeText": "Nauwkeurige extractie"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "Privé OCR-verwerking",
+      "content": "In tegenstelling tot andere OCR-tools sturen wij uw documenten niet naar cloud-API's. De tekstextractie gebeurt rechtstreeks op uw apparaat."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Hoge nauwkeurigheid",
+      "content": "Uitstekend herkenningspercentage voor duidelijke scans.",
+      "badgeText": "Nauwkeurig"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Ondersteunt het handgeschreven tekst?",
+      "a": "Onze OCR is geoptimaliseerd voor gedrukte tekst. Handgeschreven tekst heeft mogelijk een lagere nauwkeurigheid."
+    },
+    {
+      "q": "Worden mijn bestanden geüpload?",
+      "a": "Nee, de OCR-engine draait volledig in uw browser met behulp van WebAssembly."
+    },
+    {
+      "q": "Kan ik ook tekst uit afbeeldingen halen?",
+      "a": "Ja, u kunt PNG-, JPG- of gescande PDF-bestanden uploaden."
+    }
+  ],
+  "badges": [
+    "OCR",
+    "Zeker",
+    "Vrij"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Start OCR-extractie",
+  "supportCenter": "Ondersteuningscentrum",
+  "faqTitle": "Veelgestelde vragen"
+}

@@ -1,0 +1,79 @@
+{
+  "title": "Kostenloser PDF-zu-Word-Konverter (.docx) ohne Formatierungsverlust",
+  "h1": "Konvertieren Sie PDF in Ihrem Browser in bearbeitbares Word DOCX",
+  "description": "Extrahieren Sie exakten Text, Layoutläufe und Absätze aus jeder PDF-Datei in eine saubere Microsoft Word-Datei (.docx) direkt im Browserspeicher.",
+  "sections": [
+    {
+      "type": "watermark_hero_features",
+      "title": "Konvertieren Sie PDF perfekt in Word",
+      "content": "Wandeln Sie Ihre PDF-Dokumente in bearbeitbare Word-Dateien um und behalten Sie dabei das ursprüngliche Layout, die Schriftarten und Bilder bei.",
+      "badgeText": "Formatierung beibehalten"
+    },
+    {
+      "type": "protect_how_to_steps",
+      "title": "So konvertieren Sie PDF in Word",
+      "badgeText": "Einfache Konvertierung",
+      "steps": [
+        {
+          "title": "PDF hochladen",
+          "description": "Wählen Sie die PDF-Datei aus, die Sie konvertieren möchten."
+        },
+        {
+          "title": "In DOCX konvertieren",
+          "description": "Klicken Sie auf „Konvertieren“, um die lokale Verarbeitung zu starten."
+        },
+        {
+          "title": "Laden Sie die Word-Datei herunter",
+          "description": "Speichern Sie das vollständig bearbeitbare Word-Dokument."
+        }
+      ]
+    },
+    {
+      "type": "excel_geo_targeting",
+      "title": "Genaue Beibehaltung des Layouts",
+      "content": "Unser fortschrittlicher Parser versteht Absätze, Tabellen und Spalten und stellt sicher, dass Ihr Word-Dokument genauso aussieht wie das PDF.",
+      "subTitle": "Hohe Wiedergabetreue",
+      "subContent": "Behalten Sie Stil und Struktur bei.",
+      "badgeText": "Hohe Wiedergabetreue"
+    },
+    {
+      "type": "redact_privacy_security",
+      "title": "Sichere clientseitige Konvertierung",
+      "content": "Konvertieren Sie vertrauliche Verträge und Berichte sicher. Die Konvertierung erfolgt vollständig auf Ihrem Gerät."
+    },
+    {
+      "type": "watermark_performance",
+      "title": "Schnelle Bearbeitung",
+      "content": "Konvertieren Sie mehrseitige Dokumente in Sekundenschnelle.",
+      "badgeText": "Schnelle Ausgabe"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Wird sich das Layout ändern?",
+      "a": "Wir bemühen uns, das genaue Layout, einschließlich Tabellen, Bilder und Textausrichtung, beizubehalten."
+    },
+    {
+      "q": "Wird dies auf einem Server verarbeitet?",
+      "a": "Nein, die Konvertierung erfolgt für maximalen Datenschutz vollständig in Ihrem Browser."
+    },
+    {
+      "q": "Kann ich den Text nach der Konvertierung bearbeiten?",
+      "a": "Ja, die resultierende DOCX-Datei kann vollständig in Microsoft Word oder Google Docs bearbeitet werden."
+    }
+  ],
+  "badges": [
+    "Bearbeitbar",
+    "Genau",
+    "Privat"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "In Word konvertieren",
+  "supportCenter": "Support-Center",
+  "faqTitle": "Häufig gestellte Fragen"
+}

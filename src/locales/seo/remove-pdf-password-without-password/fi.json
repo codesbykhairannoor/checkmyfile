@@ -1,0 +1,79 @@
+{
+  "title": "Poista PDF-salasana ilman salasanaa",
+  "h1": "Poista salasana PDF-tiedostosta ilman salasanaa",
+  "description": "Poista salasanasuojaus PDF-tiedostoistasi ilman alkuperäistä salasanaa edistyneellä lukituksen avaustyökalullamme.",
+  "sections": [
+    {
+      "type": "protect_hero_features",
+      "title": "Poista PDF-salasanat välittömästi",
+      "content": "Unohditko PDF-salasanasi? Työkalumme voi auttaa poistamaan salasanasuojauksen asiakirjoista sekunneissa turvallisesti selaimessasi.",
+      "badgeText": "Välitön avaus"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Kuinka avata PDF",
+      "badgeText": "Pikaopas",
+      "steps": [
+        {
+          "title": "Valitse Lukittu PDF",
+          "description": "Lataa PDF-dokumentti, jonka lukituksen haluat avata."
+        },
+        {
+          "title": "Poista salasana",
+          "description": "Poista salasana asiakirjasta napsauttamalla avaa lukitus."
+        },
+        {
+          "title": "Lataa lukitsematon PDF",
+          "description": "Tallenna suojaamaton PDF laitteellesi."
+        }
+      ]
+    },
+    {
+      "type": "compare_geo_targeting",
+      "title": "100 % suojattu paikallinen käsittely",
+      "content": "Lukitut asiakirjasi sisältävät arkaluontoisia tietoja. Käsittelemme ne paikallisesti WebAssemblyn avulla varmistaen, että laitteestasi poistuu 0 tavua.",
+      "subTitle": "Yksityisyys ensin",
+      "subContent": "Ei pilvipalvelimia, ei tietojen säilytystä.",
+      "badgeText": "Yksityisyys ensin"
+    },
+    {
+      "type": "watermark_privacy_security",
+      "title": "Pankkitason tietosuoja",
+      "content": "Käytämme edistyneitä algoritmeja salauksen poistamiseen vaarantamatta asiakirjasi sisältöä."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Salamannopeasti",
+      "content": "Avaa PDF-lukitus millisekunneissa.",
+      "badgeText": "Erittäin nopea"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Onko turvallista avata PDF-lukitus tästä?",
+      "a": "Kyllä. Kaikki käsittely tapahtuu paikallisesti selaimessasi. Emme lataa tiedostojasi millekään palvelimelle."
+    },
+    {
+      "q": "Voiko se poistaa kaiken tyyppiset salasanat?",
+      "a": "Se voi poistaa käyttäjien ja omistajan salasanat tavallisista salatuista PDF-tiedostoista."
+    },
+    {
+      "q": "Onko tämä työkalu ilmainen?",
+      "a": "Kyllä, se on 100% ilmainen käyttää."
+    }
+  ],
+  "badges": [
+    "Ei latausta",
+    "Turvallinen",
+    "Nopeasti"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Avaa PDF nyt",
+  "supportCenter": "Tukikeskus",
+  "faqTitle": "Usein kysytyt kysymykset"
+}

@@ -1,71 +1,71 @@
 {
-  "title": "Compress PDF Without Losing Quality - High Definition Lossless - ZH",
-  "h1": "Compress PDF Documents Online Without Losing Quality (ZH)",
-  "description": "Reduce PDF file size while keeping high-resolution vectors and texts perfectly sharp. 100% private client-side processing.",
+  "title": "压缩 PDF 而不损失质量",
+  "h1": "在线压缩 PDF 文档而不损失质量",
+  "description": "减小 PDF 文件大小，同时保持高分辨率矢量和文本的清晰度。 100% 私人客户端处理。",
   "sections": [
     {
       "type": "word_hero_features",
-      "title": "Shrink PDF File Size While Keeping Text Crystal Clear",
-      "content": "Disappointed with compressors that make your PDF documents blurry? Our adaptive vector engine reduces PDF file sizes up to 90% without losing quality, leaving texts and logos completely sharp.",
-      "badgeText": "Lossless Optimization"
+      "title": "减小文件大小，保持高清质量",
+      "content": "不要为了大小而牺牲可读性。 缩小您的作品集、矢量图或演示文稿，同时保持文本和图形完美清晰。",
+      "badgeText": "无损品质"
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Compress PDF in Lossless Quality",
-      "badgeText": "Step-by-Step",
+      "title": "如何无损压缩 PDF",
+      "badgeText": "简单的步骤",
       "steps": [
         {
-          "title": "Select PDF File",
-          "description": "Drop your PDF document into the local browser reader."
+          "title": "选择文件",
+          "description": "选择您想要缩小的高质量 PDF。"
         },
         {
-          "title": "Choose Recommended Preset",
-          "description": "Select medium compression to compress fonts and metadata losslessly."
+          "title": "选择无损模式",
+          "description": "选择“高质量”压缩设置以保留细节。"
         },
         {
-          "title": "Save High-Res PDF",
-          "description": "Download the compressed PDF with crisp text and high-res vector details."
+          "title": "下载文件",
+          "description": "获得更轻的 PDF，没有任何模糊的文本或像素化的图像。"
         }
       ]
     },
     {
       "type": "watermark_geo_targeting",
-      "title": "Designed for Professional Designers & Architects",
-      "content": "No blurry blueprints, diagrams, or portfolios. Our engine compresses unnecessary metadata while locking image quality ratios locally on your device.",
-      "subTitle": "Vector Lossless",
-      "subContent": "Keeps fonts and SVG outlines fully vector-sharp at any zoom level.",
-      "badgeText": "Vector Lossless"
+      "title": "清晰的文本和清晰的图像",
+      "content": "我们在您的浏览器本地使用先进的 DPI 保留和矢量平滑算法，以确保您的文档看起来完全相同。",
+      "subTitle": "客户端处理",
+      "subContent": "一切都在 WebAssembly 中运行。",
+      "badgeText": "客户端处理"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Absolute Privacy & Security",
-      "content": "Confidential company presentations, financial audits, or contracts remain offline on your device, ensuring maximum enterprise privacy compliance."
+      "title": "作品集和演示的理想选择",
+      "content": "让您的专业文档看起来很专业，同时减少兆字节以便轻松共享。"
     },
     {
       "type": "ocr_performance",
-      "title": "Lightning-Fast Lossless Engine",
-      "content": "Pure WebAssembly calculations optimize file structure directly in RAM, saving bandwidth and processing files instantly.",
-      "badgeText": "Lossless Speed"
+      "title": "零像素保证",
+      "content": "在所有文本节点上保持 100% 的清晰度。",
+      "badgeText": "高清输出"
     }
   ],
   "faqs": [
     {
-      "q": "How does the lossless PDF compressor work?",
-      "a": "It reorganizes the PDF structure, compresses embedded fonts, and strips metadata without touching raster image ratios unless requested."
+      "q": "如何在不损失质量的情况下进行压缩？",
+      "a": "我们优化 PDF 结构，删除未使用的字体/对象，并巧妙地对不可见的图像层进行下采样。"
     },
     {
-      "q": "Will my text remain searchable?",
-      "a": "Yes. All text vectors are preserved. You can highlight, search, and copy text exactly as before."
+      "q": "文字会变得模糊吗？",
+      "a": "不会。矢量路径和文本元素被完美保留，避免了平面图像光栅化造成的模糊。"
     },
     {
-      "q": "Can I compress vector drawings and CAD blueprints?",
-      "a": "Yes, our vector-preservation engine keeps CAD details sharp even at maximum zoom scales."
+      "q": "这个工具是免费的吗？",
+      "a": "是的，完全免费并且可以离线运行。"
     }
   ],
   "badges": [
-    "High Resolution",
-    "No Text Blur",
-    "Lossless Presets"
+    "高清",
+    "无损",
+    "快速地"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Compress Lossless PDF",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "压缩而不损失质量",
+  "supportCenter": "支持中心",
+  "faqTitle": "常见问题解答"
 }

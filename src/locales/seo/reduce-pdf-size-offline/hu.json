@@ -1,0 +1,79 @@
+{
+  "title": "PDF méretének csökkentése offline módban",
+  "h1": "Csökkentse a PDF méretét teljesen offline módban a böngészőben",
+  "description": "Csökkentse PDF-dokumentumai méretét offline módban, közvetlenül a böngészőben, szerverre történő feltöltés nélkül. 100%-ban biztonságos.",
+  "sections": [
+    {
+      "type": "split_hero_features",
+      "title": "PDF-fájlok zsugorítása offline módban",
+      "content": "Nagyméretű PDF-fájlok tömörítése internetkapcsolat nélkül. WebAssembly motorunk teljesen offline módban fut a böngészőben.",
+      "badgeText": "Offline tömörítés"
+    },
+    {
+      "type": "ocr_how_to_steps",
+      "title": "A PDF méretének csökkentése offline módban",
+      "badgeText": "Gyors lépések",
+      "steps": [
+        {
+          "title": "Fájl hozzáadása elemre",
+          "description": "Válassza ki a nagyméretű PDF-dokumentumot."
+        },
+        {
+          "title": "Borogatás",
+          "description": "Válassza ki a tömörítési szintet, és kattintson a tömörítés gombra."
+        },
+        {
+          "title": "Letöltés",
+          "description": "Mentse el a kisebb PDF-fájlt a számítógépére."
+        }
+      ]
+    },
+    {
+      "type": "rotate_geo_targeting",
+      "title": "Internet nélkül működik",
+      "content": "Az oldal betöltése után lekapcsolhatja az internetet, és az eszköz továbbra is tökéletesen fog működni.",
+      "subTitle": "Igaz Offline",
+      "subContent": "Nincs szerver kommunikáció a tömörítés során.",
+      "badgeText": "Igaz Offline"
+    },
+    {
+      "type": "sign_privacy_security",
+      "title": "Maximális adatvédelem garantált",
+      "content": "Mivel a hálózaton soha nem továbbítanak adatokat, bizalmas dokumentumai 100%-ban biztonságban vannak."
+    },
+    {
+      "type": "split_performance",
+      "title": "Hatékony motor",
+      "content": "Magas tömörítési arány gyors feldolgozással.",
+      "badgeText": "Magas Hatékonyság"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Hogyan működik az offline tömörítés?",
+      "a": "A WebAssembly segítségével egy hatékony PDF-tömörítő motort futtatunk közvetlenül a böngészőben."
+    },
+    {
+      "q": "A minőség tönkremegy?",
+      "a": "Nem, választhat veszteségmentes tömörítést a kiváló képminőség megőrzése érdekében."
+    },
+    {
+      "q": "Van fájlméret-korlát?",
+      "a": "Nem, mivel helyileg fut, akkora fájlokat tömöríthet, amennyire az eszköz memóriája megengedi."
+    }
+  ],
+  "badges": [
+    "Offline",
+    "Biztonságos",
+    "Gyors"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Csökkentse a méretet most",
+  "supportCenter": "Támogatási Központ",
+  "faqTitle": "Gyakran Ismételt Kérdések"
+}

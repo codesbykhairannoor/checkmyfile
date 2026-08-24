@@ -1,0 +1,79 @@
+{
+  "title": "Remove PDF Password Without Password",
+  "h1": "Remove Password from PDF Without Password",
+  "description": "Remove password protection from your PDF files without needing the original password using our advanced unlock tool.",
+  "sections": [
+    {
+      "type": "protect_hero_features",
+      "title": "Remove PDF Passwords Instantly",
+      "content": "Forgot your PDF password? Our tool can help you strip the password protection from your documents in seconds, securely inside your browser.",
+      "badgeText": "Instant Unlock"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "How to Unlock PDF",
+      "badgeText": "Quick Guide",
+      "steps": [
+        {
+          "title": "Select Locked PDF",
+          "description": "Upload the PDF document you want to unlock."
+        },
+        {
+          "title": "Remove Password",
+          "description": "Click unlock to strip the password from the document."
+        },
+        {
+          "title": "Download Unlocked PDF",
+          "description": "Save the unprotected PDF to your device."
+        }
+      ]
+    },
+    {
+      "type": "compare_geo_targeting",
+      "title": "100% Secure Local Processing",
+      "content": "Your locked documents contain sensitive information. We process them locally using WebAssembly, ensuring 0 bytes ever leave your device.",
+      "subTitle": "Privacy First",
+      "subContent": "No cloud servers, no data retention.",
+      "badgeText": "Privacy First"
+    },
+    {
+      "type": "watermark_privacy_security",
+      "title": "Bank-Level Privacy",
+      "content": "We use advanced algorithms to remove encryption without compromising your document's contents."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Lightning Fast",
+      "content": "Unlock your PDF in milliseconds.",
+      "badgeText": "Ultra Fast"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is it safe to unlock my PDF here?",
+      "a": "Yes. All processing is done locally in your browser. We do not upload your files to any server."
+    },
+    {
+      "q": "Can it remove all types of passwords?",
+      "a": "It can remove user passwords and owner passwords from standard encrypted PDFs."
+    },
+    {
+      "q": "Is this tool free?",
+      "a": "Yes, it is 100% free to use."
+    }
+  ],
+  "badges": [
+    "No Upload",
+    "Secure",
+    "Fast"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Unlock PDF Now",
+  "supportCenter": "Support Center",
+  "faqTitle": "Frequently Asked Questions"
+}

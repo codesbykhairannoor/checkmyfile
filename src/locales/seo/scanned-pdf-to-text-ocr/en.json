@@ -1,0 +1,79 @@
+{
+  "title": "Convert Scanned PDF to Text",
+  "h1": "Extract Text from Scanned PDFs with OCR",
+  "description": "Turn non-searchable scanned PDFs and images into editable plain text locally using multi-language WebAssembly OCR workers.",
+  "sections": [
+    {
+      "type": "resize_hero_features",
+      "title": "Extract Text from Scans Instantly",
+      "content": "Use our advanced Optical Character Recognition (OCR) technology to extract editable text from scanned documents and images.",
+      "badgeText": "Powerful OCR"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "How to Extract Text with OCR",
+      "badgeText": "Simple Guide",
+      "steps": [
+        {
+          "title": "Upload Scan",
+          "description": "Select your scanned PDF or image file."
+        },
+        {
+          "title": "Run OCR",
+          "description": "Select the language and start the OCR process."
+        },
+        {
+          "title": "Copy or Download",
+          "description": "Get the extracted text instantly."
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "Multi-Language Support",
+      "content": "Our OCR engine recognizes multiple languages and complex character sets with high accuracy.",
+      "subTitle": "Accurate Extraction",
+      "subContent": "Powered by Tesseract OCR WebAssembly.",
+      "badgeText": "Accurate Extraction"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "Private OCR Processing",
+      "content": "Unlike other OCR tools, we do not send your documents to cloud APIs. The text extraction happens right on your device."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "High Accuracy",
+      "content": "Excellent recognition rate for clear scans.",
+      "badgeText": "Precise"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does it support handwritten text?",
+      "a": "Our OCR is optimized for printed text. Handwritten text may have lower accuracy."
+    },
+    {
+      "q": "Do my files get uploaded?",
+      "a": "No, the OCR engine runs entirely in your browser using WebAssembly."
+    },
+    {
+      "q": "Can I extract text from images too?",
+      "a": "Yes, you can upload PNG, JPG, or scanned PDF files."
+    }
+  ],
+  "badges": [
+    "OCR",
+    "Secure",
+    "Free"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Start OCR Extraction",
+  "supportCenter": "Support Center",
+  "faqTitle": "Frequently Asked Questions"
+}

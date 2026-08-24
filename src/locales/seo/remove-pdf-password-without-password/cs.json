@@ -1,0 +1,79 @@
+{
+  "title": "Odebrat heslo PDF bez hesla",
+  "h1": "Odebrat heslo z PDF bez hesla",
+  "description": "Odstraňte ochranu heslem ze souborů PDF, aniž byste potřebovali původní heslo pomocí našeho pokročilého nástroje pro odemykání.",
+  "sections": [
+    {
+      "type": "protect_hero_features",
+      "title": "Odstraňte hesla PDF okamžitě",
+      "content": "Zapomněli jste heslo k PDF? Náš nástroj vám může pomoci odstranit ochranu heslem z vašich dokumentů během několika sekund, bezpečně ve vašem prohlížeči.",
+      "badgeText": "Okamžité odemknutí"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Jak odemknout PDF",
+      "badgeText": "Rychlý průvodce",
+      "steps": [
+        {
+          "title": "Vyberte Uzamčené PDF",
+          "description": "Nahrajte dokument PDF, který chcete odemknout."
+        },
+        {
+          "title": "Odebrat heslo",
+          "description": "Klepnutím na odemknout odstraníte heslo z dokumentu."
+        },
+        {
+          "title": "Stáhnout Unlocked PDF",
+          "description": "Uložte nechráněné PDF do svého zařízení."
+        }
+      ]
+    },
+    {
+      "type": "compare_geo_targeting",
+      "title": "100% bezpečné místní zpracování",
+      "content": "Vaše zamčené dokumenty obsahují citlivé informace. Zpracováváme je lokálně pomocí WebAssembly, takže vaše zařízení nikdy neopustí 0 bajtů.",
+      "subTitle": "Soukromí na prvním místě",
+      "subContent": "Žádné cloudové servery, žádné uchovávání dat.",
+      "badgeText": "Soukromí na prvním místě"
+    },
+    {
+      "type": "watermark_privacy_security",
+      "title": "Soukromí na úrovni banky",
+      "content": "K odstranění šifrování bez ohrožení obsahu dokumentu používáme pokročilé algoritmy."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Bleskově rychlý",
+      "content": "Odemkněte svůj PDF během milisekund.",
+      "badgeText": "Ultra rychlý"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Je bezpečné odemknout moje PDF zde?",
+      "a": "Ano. Veškeré zpracování se provádí lokálně ve vašem prohlížeči. Vaše soubory nenahráváme na žádný server."
+    },
+    {
+      "q": "Dokáže odstranit všechny typy hesel?",
+      "a": "Může odstranit uživatelská hesla a hesla vlastníků ze standardních šifrovaných PDF."
+    },
+    {
+      "q": "Je tento nástroj zdarma?",
+      "a": "Ano, použití je 100% zdarma."
+    }
+  ],
+  "badges": [
+    "Žádné nahrávání",
+    "Zajistit",
+    "Rychle"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Odemkněte PDF hned teď",
+  "supportCenter": "Centrum podpory",
+  "faqTitle": "Často kladené otázky"
+}

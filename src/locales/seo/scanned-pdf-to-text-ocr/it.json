@@ -1,0 +1,79 @@
+{
+  "title": "Converti PDF scansionato in testo: OCR del browser gratuito",
+  "h1": "Estrai testo da PDF scansionati con OCR",
+  "description": "Trasforma PDF e immagini scansionati non ricercabili in testo semplice modificabile localmente utilizzando gli operatori OCR WebAssembly multilingue.",
+  "sections": [
+    {
+      "type": "resize_hero_features",
+      "title": "Estrai istantaneamente il testo dalle scansioni",
+      "content": "Utilizza la nostra tecnologia avanzata di riconoscimento ottico dei caratteri (OCR) per estrarre testo modificabile da documenti e immagini scansionati.",
+      "badgeText": "OCR potente"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Come estrarre il testo con l'OCR",
+      "badgeText": "Guida semplice",
+      "steps": [
+        {
+          "title": "Carica scansione",
+          "description": "Seleziona il PDF scansionato o il file immagine."
+        },
+        {
+          "title": "Esegui l'OCR",
+          "description": "Seleziona la lingua e avvia il processo OCR."
+        },
+        {
+          "title": "Copia o scarica",
+          "description": "Ottieni immediatamente il testo estratto."
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "Supporto multilingue",
+      "content": "Il nostro motore OCR riconosce più lingue e set di caratteri complessi con elevata precisione.",
+      "subTitle": "Estrazione accurata",
+      "subContent": "Alimentato da Tesseract OCR WebAssembly.",
+      "badgeText": "Estrazione accurata"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "Elaborazione OCR privata",
+      "content": "A differenza di altri strumenti OCR, non inviamo i tuoi documenti alle API cloud. L'estrazione del testo avviene direttamente sul tuo dispositivo."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Alta precisione",
+      "content": "Eccellente tasso di riconoscimento per scansioni chiare.",
+      "badgeText": "Precisa"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Supporta il testo scritto a mano?",
+      "a": "Il nostro OCR è ottimizzato per il testo stampato. Il testo scritto a mano potrebbe avere una precisione inferiore."
+    },
+    {
+      "q": "I miei file vengono caricati?",
+      "a": "No, il motore OCR viene eseguito interamente nel tuo browser utilizzando WebAssembly."
+    },
+    {
+      "q": "Posso estrarre testo anche dalle immagini?",
+      "a": "Sì, puoi caricare file PNG, JPG o PDF scansionati."
+    }
+  ],
+  "badges": [
+    "OCR",
+    "Sicura",
+    "Gratuita"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Avvia l'estrazione OCR",
+  "supportCenter": "Centro di supporto",
+  "faqTitle": "Domande frequenti"
+}

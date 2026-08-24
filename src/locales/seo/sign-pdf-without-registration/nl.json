@@ -1,71 +1,71 @@
 {
-  "title": "Sign PDF Online Without Registration - Free E-Sign - NL",
-  "h1": "E-Sign PDF Documents Online Without Registration (NL)",
-  "description": "Place your electronic signature on any PDF file instantly. No account required, no signup, 100% private and free.",
+  "title": "Onderteken PDF online zonder registratie",
+  "h1": "PDF-documenten elektronisch online ondertekenen zonder registratie",
+  "description": "Plaats uw elektronische handtekening onmiddellijk op elk PDF-bestand. Geen account vereist, geen aanmelding, 100% privé en gratis.",
   "sections": [
     {
       "type": "watermark_hero_features",
-      "title": "Sign PDF Documents Instantly Without Creating an Account",
-      "content": "Annoyed by online sign tools that force you to register, confirm emails, or pay subscriptions just to sign a single paper? HandleMyFile lets you add signatures to contracts completely free without signup.",
-      "badgeText": "No Registration Required"
+      "title": "Onderteken PDF-documenten direct zonder een account aan te maken",
+      "content": "Geërgerd door online ondertekentools die u dwingen zich te registreren, e-mails te bevestigen of abonnementen te betalen, alleen maar om één enkel document te ondertekenen? Met HandleMyFile kunt u volledig gratis handtekeningen aan contracten toevoegen zonder aanmelding.",
+      "badgeText": "Geen registratie vereist"
     },
     {
       "type": "ocr_how_to_steps",
-      "title": "How to Sign PDF Without Signup",
-      "badgeText": "Quick Steps",
+      "title": "Hoe u een PDF kunt ondertekenen zonder aanmelding",
+      "badgeText": "Snelle stappen",
       "steps": [
         {
-          "title": "Upload Document",
-          "description": "Drop your PDF file into our registration-free workspace."
+          "title": "Document uploaden",
+          "description": "Plaats uw PDF-bestand in onze registratievrije werkruimte."
         },
         {
-          "title": "Draw or Type Signature",
-          "description": "Create your signature with your mouse/touchpad, or upload an image."
+          "title": "Teken of typ handtekening",
+          "description": "Creëer uw handtekening met uw muis/touchpad, of upload een afbeelding."
         },
         {
-          "title": "Download Signed PDF",
-          "description": "Download your signed document instantly. Zero data is saved."
+          "title": "Ondertekende PDF downloaden",
+          "description": "Download uw ondertekende document onmiddellijk. Er worden nul gegevens opgeslagen."
         }
       ]
     },
     {
       "type": "excel_geo_targeting",
-      "title": "Your Signature is Secure and Stays in Your Browser",
-      "content": "Biometric and graphical signature drawings are processed entirely in RAM. We do not store your signature or documents on any server, providing maximum fraud prevention.",
-      "subTitle": "Cryptographically Safe",
-      "subContent": "Vectors are flattened directly on the client canvas.",
-      "badgeText": "Cryptographically Safe"
+      "title": "Uw handtekening is veilig en blijft in uw browser staan",
+      "content": "Biometrische en grafische handtekeningtekeningen worden volledig in RAM verwerkt. We slaan uw handtekening of documenten op geen enkele server op, waardoor maximale fraudepreventie wordt geboden.",
+      "subTitle": "Cryptografisch veilig",
+      "subContent": "Vectoren worden rechtstreeks op het clientcanvas afgevlakt.",
+      "badgeText": "Cryptografisch veilig"
     },
     {
       "type": "redact_privacy_security",
-      "title": "Frictionless NDA & Contract Signing",
-      "content": "Perfect for freelancers and business professionals who want to execute agreements, job offers, or NDAs on the spot without any onboarding friction."
+      "title": "Frictieloze NDA en contractondertekening",
+      "content": "Perfect voor freelancers en zakelijke professionals die ter plekke overeenkomsten, vacatures of geheimhoudingsverklaringen willen uitvoeren zonder enige onboarding-frictie."
     },
     {
       "type": "split_performance",
-      "title": "Sign and Send in 15 Seconds",
-      "content": "With zero registration forms, email verification, or loading screens, you can sign any document and send it back immediately.",
-      "badgeText": "Speedy E-Sign"
+      "title": "Onderteken en verzend binnen 15 seconden",
+      "content": "Zonder registratieformulieren, e-mailverificatie of laadschermen kunt u elk document ondertekenen en onmiddellijk terugsturen.",
+      "badgeText": "Snelle elektronische handtekening"
     }
   ],
   "faqs": [
     {
-      "q": "Do I need to sign up or input my email to download?",
-      "a": "No. You can download your signed PDF immediately with zero onboarding steps."
+      "q": "Moet ik me aanmelden of mijn e-mailadres invoeren om te downloaden?",
+      "a": "Nee. U kunt uw ondertekende PDF onmiddellijk downloaden zonder onboardingstappen."
     },
     {
-      "q": "Is the signature legally binding?",
-      "a": "Yes, our e-signature complies with general electronic transaction laws for basic electronic signatures."
+      "q": "Is de handtekening juridisch bindend?",
+      "a": "Ja, onze e-handtekening voldoet aan de algemene wetten op elektronische transacties voor standaard elektronische handtekeningen."
     },
     {
-      "q": "Does HandleMyFile store my signature graphic?",
-      "a": "No. The signature graphics are processed strictly in browser memory and wiped clean on page reload."
+      "q": "Bewaart HandleMyFile mijn handtekeningafbeelding?",
+      "a": "Nee. De handtekeningafbeeldingen worden strikt in het browsergeheugen verwerkt en bij het opnieuw laden van de pagina gewist."
     }
   ],
   "badges": [
-    "No Registration",
-    "100% Free",
-    "Zero Footprint"
+    "Geen registratie",
+    "100% gratis",
+    "Geen voetafdruk"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Sign PDF Free",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Onderteken PDF gratis",
+  "supportCenter": "Ondersteuningscentrum",
+  "faqTitle": "Veelgestelde vragen"
 }

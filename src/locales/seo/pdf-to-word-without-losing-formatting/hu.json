@@ -1,0 +1,79 @@
+{
+  "title": "Ingyenes PDF-ből Word konvertáló (.docx) a formázás elvesztése nélkül",
+  "h1": "Konvertálja a PDF-et szerkeszthető Word DOCX-be a böngészőben",
+  "description": "A pontos szöveget, az elrendezési futtatásokat és a bekezdéseket bármely PDF-ből egy tiszta Microsoft Word (.docx) fájlba vonhatja ki közvetlenül a böngésző memóriájába.",
+  "sections": [
+    {
+      "type": "watermark_hero_features",
+      "title": "Tökéletesen konvertálja a PDF-et Word-be",
+      "content": "Alakítsa át PDF-dokumentumait szerkeszthető Word-fájlokká, miközben az eredeti elrendezést, betűtípusokat és képeket érintetlenül hagyja.",
+      "badgeText": "Formázás megőrzése"
+    },
+    {
+      "type": "protect_how_to_steps",
+      "title": "Hogyan lehet PDF-et Word-be konvertálni",
+      "badgeText": "Könnyű átalakítás",
+      "steps": [
+        {
+          "title": "PDF feltöltése",
+          "description": "Válassza ki a konvertálni kívánt PDF-fájlt."
+        },
+        {
+          "title": "Konvertálás DOCX-re",
+          "description": "Kattintson a konvertálásra a helyi feldolgozás elindításához."
+        },
+        {
+          "title": "Word fájl letöltése",
+          "description": "Mentse el a teljesen szerkeszthető Word-dokumentumot."
+        }
+      ]
+    },
+    {
+      "type": "excel_geo_targeting",
+      "title": "Pontos elrendezés megtartása",
+      "content": "Fejlett értelmezőnk megérti a bekezdéseket, táblázatokat és oszlopokat, így a Word-dokumentum pontosan úgy néz ki, mint a PDF.",
+      "subTitle": "High Fidelity",
+      "subContent": "Tartsa fenn a stílust és a szerkezetet.",
+      "badgeText": "High Fidelity"
+    },
+    {
+      "type": "redact_privacy_security",
+      "title": "Biztonságos ügyféloldali konverzió",
+      "content": "A bizalmas szerződések és jelentések biztonságos konvertálása. Az átalakítás teljes egészében az Ön eszközén történik."
+    },
+    {
+      "type": "watermark_performance",
+      "title": "Gyors feldolgozás",
+      "content": "Többoldalas dokumentumok konvertálása másodpercek alatt.",
+      "badgeText": "Gyors kimenet"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Változik az elrendezés?",
+      "a": "Arra törekszünk, hogy megőrizzük a pontos elrendezést, beleértve a táblázatokat, képeket és szövegigazítást."
+    },
+    {
+      "q": "Ezt szerveren dolgozzák fel?",
+      "a": "Nem, az átalakítás teljes mértékben a böngészőben történik a maximális adatvédelem érdekében."
+    },
+    {
+      "q": "Az átalakítás után szerkeszthetem a szöveget?",
+      "a": "Igen, az eredményül kapott DOCX-fájl teljes mértékben szerkeszthető a Microsoft Word-ben vagy a Google Docs-ban."
+    }
+  ],
+  "badges": [
+    "Szerkeszthető",
+    "Pontos",
+    "Magán"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Konvertálás Word-be",
+  "supportCenter": "Támogatási Központ",
+  "faqTitle": "Gyakran Ismételt Kérdések"
+}

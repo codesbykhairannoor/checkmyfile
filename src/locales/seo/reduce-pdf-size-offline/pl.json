@@ -1,0 +1,79 @@
+{
+  "title": "Zmniejsz rozmiar pliku PDF w trybie offline — lokalny kompresor plików PDF",
+  "h1": "Zmniejsz rozmiar pliku PDF całkowicie offline w swojej przeglądarce",
+  "description": "Zmniejsz rozmiar dokumentów PDF w trybie offline, bezpośrednio w przeglądarce, bez konieczności przesyłania ich na serwer. 100% bezpieczeństwa.",
+  "sections": [
+    {
+      "type": "split_hero_features",
+      "title": "Zmniejsz pliki PDF w trybie offline",
+      "content": "Kompresuj duże pliki PDF bez połączenia z Internetem. Nasz silnik WebAssembly działa całkowicie offline w Twojej przeglądarce.",
+      "badgeText": "Kompresja offline"
+    },
+    {
+      "type": "ocr_how_to_steps",
+      "title": "Jak zmniejszyć rozmiar pliku PDF w trybie offline",
+      "badgeText": "Szybkie kroki",
+      "steps": [
+        {
+          "title": "Dodaj plik",
+          "description": "Wybierz duży dokument PDF."
+        },
+        {
+          "title": "Kompres",
+          "description": "Wybierz poziom kompresji i kliknij kompresuj."
+        },
+        {
+          "title": "Pobierać",
+          "description": "Zapisz mniejszy plik PDF na swoim komputerze."
+        }
+      ]
+    },
+    {
+      "type": "rotate_geo_targeting",
+      "title": "Działa bez Internetu",
+      "content": "Po załadowaniu strony możesz odłączyć się od Internetu, a narzędzie nadal będzie działać idealnie.",
+      "subTitle": "Prawdziwy offline",
+      "subContent": "Brak komunikacji z serwerem podczas kompresji.",
+      "badgeText": "Prawdziwy offline"
+    },
+    {
+      "type": "sign_privacy_security",
+      "title": "Gwarantowana maksymalna prywatność",
+      "content": "Ponieważ żadne dane nie są przesyłane przez sieć, Twoje poufne dokumenty są w 100% bezpieczne."
+    },
+    {
+      "type": "split_performance",
+      "title": "Wydajny silnik",
+      "content": "Wysoki stopień kompresji przy szybkim przetwarzaniu.",
+      "badgeText": "Wysoka wydajność"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Jak działa kompresja offline?",
+      "a": "Używamy WebAssembly, aby uruchomić potężny silnik kompresji plików PDF bezpośrednio w przeglądarce."
+    },
+    {
+      "q": "Czy jakość zostanie zniszczona?",
+      "a": "Nie, możesz wybrać kompresję bezstratną, aby zachować wysoką jakość obrazu."
+    },
+    {
+      "q": "Czy istnieje limit rozmiaru pliku?",
+      "a": "Nie, ponieważ działa lokalnie, możesz kompresować pliki tak duże, jak pozwala na to pamięć Twojego urządzenia."
+    }
+  ],
+  "badges": [
+    "Nieaktywny",
+    "Bezpieczny",
+    "Szybko"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Zmniejsz rozmiar teraz",
+  "supportCenter": "Centrum wsparcia",
+  "faqTitle": "Często zadawane pytania"
+}

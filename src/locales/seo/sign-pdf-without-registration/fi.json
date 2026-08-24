@@ -1,71 +1,71 @@
 {
-  "title": "Sign PDF Online Without Registration - Free E-Sign - FI",
-  "h1": "E-Sign PDF Documents Online Without Registration (FI)",
-  "description": "Place your electronic signature on any PDF file instantly. No account required, no signup, 100% private and free.",
+  "title": "Allekirjoita PDF verkossa ilman rekisteröintiä",
+  "h1": "E-allekirjoita PDF-asiakirjoja verkossa ilman rekisteröintiä",
+  "description": "Aseta sähköinen allekirjoituksesi mihin tahansa PDF-tiedostoon välittömästi. Ei vaadi tiliä, ei kirjautumista, 100% yksityinen ja ilmainen.",
   "sections": [
     {
       "type": "watermark_hero_features",
-      "title": "Sign PDF Documents Instantly Without Creating an Account",
-      "content": "Annoyed by online sign tools that force you to register, confirm emails, or pay subscriptions just to sign a single paper? HandleMyFile lets you add signatures to contracts completely free without signup.",
-      "badgeText": "No Registration Required"
+      "title": "Allekirjoita PDF-asiakirjat välittömästi ilman tiliä",
+      "content": "Ärsyttääkö online allekirjoitustyökalut, jotka pakottavat sinut rekisteröitymään, vahvistamaan sähköpostit tai maksamaan tilaukset vain allekirjoittaaksesi yhden paperin? HandleMyFilen avulla voit lisätä allekirjoituksia sopimuksiin täysin ilmaiseksi ilman kirjautumista.",
+      "badgeText": "Rekisteröintiä ei vaadita"
     },
     {
       "type": "ocr_how_to_steps",
-      "title": "How to Sign PDF Without Signup",
-      "badgeText": "Quick Steps",
+      "title": "Kuinka allekirjoittaa PDF ilman rekisteröitymistä",
+      "badgeText": "Nopeat askeleet",
       "steps": [
         {
-          "title": "Upload Document",
-          "description": "Drop your PDF file into our registration-free workspace."
+          "title": "Lataa asiakirja",
+          "description": "Pudota PDF-tiedosto rekisteröintittömään työtilaan."
         },
         {
-          "title": "Draw or Type Signature",
-          "description": "Create your signature with your mouse/touchpad, or upload an image."
+          "title": "Piirrä tai kirjoita allekirjoitus",
+          "description": "Luo allekirjoituksesi hiirellä/kosketuslevyllä tai lähetä kuva."
         },
         {
-          "title": "Download Signed PDF",
-          "description": "Download your signed document instantly. Zero data is saved."
+          "title": "Lataa allekirjoitettu PDF",
+          "description": "Lataa allekirjoitettu asiakirjasi välittömästi. Nolla dataa tallennetaan."
         }
       ]
     },
     {
       "type": "excel_geo_targeting",
-      "title": "Your Signature is Secure and Stays in Your Browser",
-      "content": "Biometric and graphical signature drawings are processed entirely in RAM. We do not store your signature or documents on any server, providing maximum fraud prevention.",
-      "subTitle": "Cryptographically Safe",
-      "subContent": "Vectors are flattened directly on the client canvas.",
-      "badgeText": "Cryptographically Safe"
+      "title": "Allekirjoituksesi on suojattu ja pysyy selaimessasi",
+      "content": "Biometriset ja graafiset allekirjoituspiirrokset käsitellään kokonaan RAM-muistissa. Emme tallenna allekirjoituksiasi tai asiakirjojasi millään palvelimella, mikä takaa parhaan mahdollisen petosten ehkäisyn.",
+      "subTitle": "Kryptografisesti turvallinen",
+      "subContent": "Vektorit litistetään suoraan asiakkaan kankaalle.",
+      "badgeText": "Kryptografisesti turvallinen"
     },
     {
       "type": "redact_privacy_security",
-      "title": "Frictionless NDA & Contract Signing",
-      "content": "Perfect for freelancers and business professionals who want to execute agreements, job offers, or NDAs on the spot without any onboarding friction."
+      "title": "Kitkaton NDA ja sopimuksen allekirjoittaminen",
+      "content": "Täydellinen freelancereille ja liike-elämän ammattilaisille, jotka haluavat toteuttaa sopimuksia, työtarjouksia tai ei-sopimuksia paikan päällä ilman hankaluuksia."
     },
     {
       "type": "split_performance",
-      "title": "Sign and Send in 15 Seconds",
-      "content": "With zero registration forms, email verification, or loading screens, you can sign any document and send it back immediately.",
-      "badgeText": "Speedy E-Sign"
+      "title": "Allekirjoita ja lähetä 15 sekunnissa",
+      "content": "Nollarekisteröintilomakkeilla, sähköpostivahvistuksella tai latausnäytöillä voit allekirjoittaa minkä tahansa asiakirjan ja lähettää sen takaisin välittömästi.",
+      "badgeText": "Nopea E-Sign"
     }
   ],
   "faqs": [
     {
-      "q": "Do I need to sign up or input my email to download?",
-      "a": "No. You can download your signed PDF immediately with zero onboarding steps."
+      "q": "Pitääkö minun rekisteröityä tai syöttää sähköpostiosoitteeni ladatakseni?",
+      "a": "Ei. Voit ladata allekirjoitetun PDF-tiedoston välittömästi ilman käyttöönottovaiheita."
     },
     {
-      "q": "Is the signature legally binding?",
-      "a": "Yes, our e-signature complies with general electronic transaction laws for basic electronic signatures."
+      "q": "Onko allekirjoitus laillisesti sitova?",
+      "a": "Kyllä, sähköinen allekirjoituksemme noudattaa yleisiä sähköisiä asiointilakeja perussähköisen allekirjoituksen osalta."
     },
     {
-      "q": "Does HandleMyFile store my signature graphic?",
-      "a": "No. The signature graphics are processed strictly in browser memory and wiped clean on page reload."
+      "q": "Tallentaako HandleMyFile allekirjoituskuvani?",
+      "a": "Ei. Allekirjoitusgrafiikka käsitellään tiukasti selaimen muistissa ja pyyhitään puhtaaksi sivun uudelleenlatauksen yhteydessä."
     }
   ],
   "badges": [
-    "No Registration",
-    "100% Free",
-    "Zero Footprint"
+    "Ei rekisteröintiä",
+    "100% ilmainen",
+    "Nolla jalanjälki"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Sign PDF Free",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Allekirjoita PDF ilmainen",
+  "supportCenter": "Tukikeskus",
+  "faqTitle": "Usein kysytyt kysymykset"
 }

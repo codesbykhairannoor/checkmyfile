@@ -1,71 +1,71 @@
 {
-  "title": "Compress PDF Without Losing Quality - High Definition Lossless - KO",
-  "h1": "Compress PDF Documents Online Without Losing Quality (KO)",
-  "description": "Reduce PDF file size while keeping high-resolution vectors and texts perfectly sharp. 100% private client-side processing.",
+  "title": "품질 저하 없이 PDF 압축",
+  "h1": "품질 저하 없이 PDF 문서를 온라인으로 압축",
+  "description": "고해상도 벡터와 텍스트를 완벽하게 선명하게 유지하면서 PDF 파일 크기를 줄입니다. 100% 개인 클라이언트측 처리.",
   "sections": [
     {
       "type": "word_hero_features",
-      "title": "Shrink PDF File Size While Keeping Text Crystal Clear",
-      "content": "Disappointed with compressors that make your PDF documents blurry? Our adaptive vector engine reduces PDF file sizes up to 90% without losing quality, leaving texts and logos completely sharp.",
-      "badgeText": "Lossless Optimization"
+      "title": "파일 크기 감소, HD 품질 유지",
+      "content": "크기 때문에 가독성을 희생하지 마세요. 텍스트와 그래픽을 완벽하게 선명하게 유지하면서 포트폴리오, 벡터 드로잉 또는 프레젠테이션을 축소하세요.",
+      "badgeText": "무손실 품질"
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Compress PDF in Lossless Quality",
-      "badgeText": "Step-by-Step",
+      "title": "PDF를 무손실로 압축하는 방법",
+      "badgeText": "간단한 단계",
       "steps": [
         {
-          "title": "Select PDF File",
-          "description": "Drop your PDF document into the local browser reader."
+          "title": "파일 선택",
+          "description": "축소하려는 고품질 PDF를 선택하십시오."
         },
         {
-          "title": "Choose Recommended Preset",
-          "description": "Select medium compression to compress fonts and metadata losslessly."
+          "title": "무손실 모드 선택",
+          "description": "세부 사항을 보존하려면 '고품질' 압축 설정을 선택하십시오."
         },
         {
-          "title": "Save High-Res PDF",
-          "description": "Download the compressed PDF with crisp text and high-res vector details."
+          "title": "파일 다운로드",
+          "description": "흐릿한 텍스트나 픽셀화된 이미지 없이 더 가벼운 PDF를 얻으세요."
         }
       ]
     },
     {
       "type": "watermark_geo_targeting",
-      "title": "Designed for Professional Designers & Architects",
-      "content": "No blurry blueprints, diagrams, or portfolios. Our engine compresses unnecessary metadata while locking image quality ratios locally on your device.",
-      "subTitle": "Vector Lossless",
-      "subContent": "Keeps fonts and SVG outlines fully vector-sharp at any zoom level.",
-      "badgeText": "Vector Lossless"
+      "title": "선명한 텍스트와 선명한 이미지",
+      "content": "우리는 귀하의 브라우저 내부에서 로컬로 고급 DPI 보존 및 벡터 평활화 알고리즘을 사용하여 귀하의 문서가 정확히 동일하게 보이도록 보장합니다.",
+      "subTitle": "클라이언트 측 처리",
+      "subContent": "모든 것이 WebAssembly에서 실행됩니다.",
+      "badgeText": "클라이언트 측 처리"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Absolute Privacy & Security",
-      "content": "Confidential company presentations, financial audits, or contracts remain offline on your device, ensuring maximum enterprise privacy compliance."
+      "title": "포트폴리오 및 프리젠테이션에 이상적",
+      "content": "전문적인 문서를 전문적인 느낌으로 유지하면서 쉽게 공유할 수 있도록 메가바이트를 줄이세요."
     },
     {
       "type": "ocr_performance",
-      "title": "Lightning-Fast Lossless Engine",
-      "content": "Pure WebAssembly calculations optimize file structure directly in RAM, saving bandwidth and processing files instantly.",
-      "badgeText": "Lossless Speed"
+      "title": "제로 픽셀화 보장",
+      "content": "모든 텍스트 노드에서 선명도를 100% 유지합니다.",
+      "badgeText": "HD 출력"
     }
   ],
   "faqs": [
     {
-      "q": "How does the lossless PDF compressor work?",
-      "a": "It reorganizes the PDF structure, compresses embedded fonts, and strips metadata without touching raster image ratios unless requested."
+      "q": "품질 저하 없이 압축하는 것이 어떻게 가능합니까?",
+      "a": "PDF 구조를 최적화하고, 사용하지 않는 글꼴/개체를 제거하고, 보이지 않는 이미지 레이어를 스마트하게 다운샘플링합니다."
     },
     {
-      "q": "Will my text remain searchable?",
-      "a": "Yes. All text vectors are preserved. You can highlight, search, and copy text exactly as before."
+      "q": "텍스트가 흐려지나요?",
+      "a": "아니요. 벡터 경로와 텍스트 요소는 완벽하게 유지되어 평면 이미지 래스터화로 인한 흐림을 방지합니다."
     },
     {
-      "q": "Can I compress vector drawings and CAD blueprints?",
-      "a": "Yes, our vector-preservation engine keeps CAD details sharp even at maximum zoom scales."
+      "q": "이 도구는 무료인가요?",
+      "a": "예, 완전히 무료이며 오프라인으로 실행됩니다."
     }
   ],
   "badges": [
-    "High Resolution",
-    "No Text Blur",
-    "Lossless Presets"
+    "고화질",
+    "무손실",
+    "빠른"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Compress Lossless PDF",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "품질 저하 없이 압축",
+  "supportCenter": "지원 센터",
+  "faqTitle": "자주 묻는 질문"
 }

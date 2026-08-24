@@ -1,0 +1,79 @@
+{
+  "title": "Conversor gratuito de PDF para Word (.docx) sem perder a formatação",
+  "h1": "Converta PDF em Word DOCX editável em seu navegador",
+  "description": "Extraia texto exato, execuções de layout e parágrafos de qualquer PDF em um arquivo limpo do Microsoft Word (.docx) diretamente na memória do navegador.",
+  "sections": [
+    {
+      "type": "watermark_hero_features",
+      "title": "Converta PDF em Word perfeitamente",
+      "content": "Transforme seus documentos PDF em arquivos Word editáveis, mantendo intactos o layout, as fontes e as imagens originais.",
+      "badgeText": "Preservar formatação"
+    },
+    {
+      "type": "protect_how_to_steps",
+      "title": "Como Converter PDF para Word",
+      "badgeText": "Conversão Fácil",
+      "steps": [
+        {
+          "title": "Carregar PDF",
+          "description": "Selecione o arquivo PDF que deseja converter."
+        },
+        {
+          "title": "Converter para DOCX",
+          "description": "Clique em converter para iniciar o processamento local."
+        },
+        {
+          "title": "Baixar arquivo do Word",
+          "description": "Salve o documento do Word totalmente editável."
+        }
+      ]
+    },
+    {
+      "type": "excel_geo_targeting",
+      "title": "Retenção precisa de layout",
+      "content": "Nosso analisador avançado entende parágrafos, tabelas e colunas, garantindo que seu documento Word seja exatamente igual ao PDF.",
+      "subTitle": "Alta fidelidade",
+      "subContent": "Mantenha o estilo e a estrutura.",
+      "badgeText": "Alta fidelidade"
+    },
+    {
+      "type": "redact_privacy_security",
+      "title": "Conversão segura do lado do cliente",
+      "content": "Converta contratos e relatórios confidenciais com segurança. A conversão acontece inteiramente no seu dispositivo."
+    },
+    {
+      "type": "watermark_performance",
+      "title": "Processamento rápido",
+      "content": "Converta documentos de várias páginas em segundos.",
+      "badgeText": "Saída rápida"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "O layout mudará?",
+      "a": "Nós nos esforçamos para preservar o layout exato, incluindo tabelas, imagens e alinhamento de texto."
+    },
+    {
+      "q": "Isso é processado em um servidor?",
+      "a": "Não, a conversão é feita totalmente no seu navegador para máxima privacidade."
+    },
+    {
+      "q": "Posso editar o texto após a conversão?",
+      "a": "Sim, o arquivo DOCX resultante é totalmente editável no Microsoft Word ou Google Docs."
+    }
+  ],
+  "badges": [
+    "Editável",
+    "Preciso",
+    "Privada"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Converter para Word",
+  "supportCenter": "Centro de suporte",
+  "faqTitle": "Perguntas frequentes"
+}

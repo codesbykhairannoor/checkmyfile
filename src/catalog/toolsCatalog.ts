@@ -28,7 +28,7 @@ export const getToolBySlugAndLang = (slug: string, lang: string): ToolDefinition
 import { catalogTranslations } from '../i18n/catalogTranslations';
 
 export const getLocalizedSeo = (tool: ToolDefinition, lang: string): LocalizedSeoData => {
-  const translations = catalogTranslations[lang]?.[tool.id] || catalogTranslations['en']?.[tool.id] || {
+  const translations = catalogTranslations[lang]?.[tool.id] || catalogTranslations['en']?.[tool.id] || tool.seo[lang] || tool.seo['en'] || {
     title: `${tool.id} - Zero Upload Client-Side Tool`,
     h1: tool.id,
     description: `Use ${tool.id} completely in your browser with 100% privacy.`,

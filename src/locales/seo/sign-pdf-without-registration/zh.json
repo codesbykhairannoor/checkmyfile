@@ -1,71 +1,71 @@
 {
-  "title": "Sign PDF Online Without Registration - Free E-Sign - ZH",
-  "h1": "E-Sign PDF Documents Online Without Registration (ZH)",
-  "description": "Place your electronic signature on any PDF file instantly. No account required, no signup, 100% private and free.",
+  "title": "无需注册即可在线签署 PDF",
+  "h1": "无需注册即可在线电子签名 PDF 文档",
+  "description": "立即将您的电子签名添加到任何 PDF 文件上。 无需帐户，无需注册，100% 私密且免费。",
   "sections": [
     {
       "type": "watermark_hero_features",
-      "title": "Sign PDF Documents Instantly Without Creating an Account",
-      "content": "Annoyed by online sign tools that force you to register, confirm emails, or pay subscriptions just to sign a single paper? HandleMyFile lets you add signatures to contracts completely free without signup.",
-      "badgeText": "No Registration Required"
+      "title": "无需创建帐户即可立即签署 PDF 文档",
+      "content": "您是否对在线签名工具强迫您注册、确认电子邮件或支付订阅费用只是为了签署一份论文感到恼火？ HandleMyFile 允许您完全免费地向合同添加签名，无需注册。",
+      "badgeText": "无需注册"
     },
     {
       "type": "ocr_how_to_steps",
-      "title": "How to Sign PDF Without Signup",
-      "badgeText": "Quick Steps",
+      "title": "如何在不注册的情况下签署 PDF",
+      "badgeText": "快速步骤",
       "steps": [
         {
-          "title": "Upload Document",
-          "description": "Drop your PDF file into our registration-free workspace."
+          "title": "上传文件",
+          "description": "将您的 PDF 文件放入我们的免注册工作区。"
         },
         {
-          "title": "Draw or Type Signature",
-          "description": "Create your signature with your mouse/touchpad, or upload an image."
+          "title": "绘制或键入签名",
+          "description": "使用鼠标/触摸板创建您的签名，或上传图像。"
         },
         {
-          "title": "Download Signed PDF",
-          "description": "Download your signed document instantly. Zero data is saved."
+          "title": "下载签名 PDF",
+          "description": "立即下载您签署的文档。 保存零数据。"
         }
       ]
     },
     {
       "type": "excel_geo_targeting",
-      "title": "Your Signature is Secure and Stays in Your Browser",
-      "content": "Biometric and graphical signature drawings are processed entirely in RAM. We do not store your signature or documents on any server, providing maximum fraud prevention.",
-      "subTitle": "Cryptographically Safe",
-      "subContent": "Vectors are flattened directly on the client canvas.",
-      "badgeText": "Cryptographically Safe"
+      "title": "您的签名是安全的并保留在您的浏览器中",
+      "content": "生物识别和图形签名图完全在 RAM 中处理。 我们不会将您的签名或文档存储在任何服务器上，从而最大限度地防止欺诈。",
+      "subTitle": "加密安全",
+      "subContent": "矢量直接在客户端画布上展平。",
+      "badgeText": "加密安全"
     },
     {
       "type": "redact_privacy_security",
-      "title": "Frictionless NDA & Contract Signing",
-      "content": "Perfect for freelancers and business professionals who want to execute agreements, job offers, or NDAs on the spot without any onboarding friction."
+      "title": "顺畅的 NDA 和合同签署",
+      "content": "非常适合希望在没有任何入职摩擦的情况下现场执行协议、工作机会或保密协议的自由职业者和商业专业人士。"
     },
     {
       "type": "split_performance",
-      "title": "Sign and Send in 15 Seconds",
-      "content": "With zero registration forms, email verification, or loading screens, you can sign any document and send it back immediately.",
-      "badgeText": "Speedy E-Sign"
+      "title": "15 秒内签名并发送",
+      "content": "通过零注册表、电子邮件验证或加载屏幕，您可以签署任何文档并立即将其发回。",
+      "badgeText": "快速电子签名"
     }
   ],
   "faqs": [
     {
-      "q": "Do I need to sign up or input my email to download?",
-      "a": "No. You can download your signed PDF immediately with zero onboarding steps."
+      "q": "我需要注册或输入电子邮件才能下载吗？",
+      "a": "不需要。您可以立即下载签名的 PDF，零入门步骤。"
     },
     {
-      "q": "Is the signature legally binding?",
-      "a": "Yes, our e-signature complies with general electronic transaction laws for basic electronic signatures."
+      "q": "签名有法律效力吗？",
+      "a": "是的，我们的电子签名符合基本电子签名的一般电子交易法。"
     },
     {
-      "q": "Does HandleMyFile store my signature graphic?",
-      "a": "No. The signature graphics are processed strictly in browser memory and wiped clean on page reload."
+      "q": "HandleMyFile 是否存储我的签名图形？",
+      "a": "不会。签名图形在浏览器内存中严格处理，并在页面重新加载时擦除干净。"
     }
   ],
   "badges": [
-    "No Registration",
-    "100% Free",
-    "Zero Footprint"
+    "无需注册",
+    "100% 免费",
+    "零足迹"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Sign PDF Free",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "免费签署 PDF",
+  "supportCenter": "支持中心",
+  "faqTitle": "常见问题解答"
 }

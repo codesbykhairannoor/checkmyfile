@@ -1,0 +1,79 @@
+{
+  "title": "Järjestä PDF-sivut uudelleen Vedä ja pudota ilmaiseksi",
+  "h1": "Järjestä PDF-sivuja helposti vetämällä ja pudottamalla",
+  "description": "Järjestä ja järjestä PDF-dokumentin sivut visuaalisesti vetämällä ja pudottamalla pikkukuvia. 100% ilmainen ja paikallinen.",
+  "sections": [
+    {
+      "type": "word_hero_features",
+      "title": "Järjestä PDF-sivut visuaalisesti",
+      "content": "Muuta PDF-sivujesi järjestystä yksinkertaisesti vetämällä ja pudottamalla pikkukuvia. Ei vaadi monimutkaista ohjelmistoa.",
+      "badgeText": "Helppo uudelleenjärjestely"
+    },
+    {
+      "type": "split_how_to_steps",
+      "title": "PDF-sivujen uudelleenjärjestäminen",
+      "badgeText": "Askel askeleelta",
+      "steps": [
+        {
+          "title": "Lataa PDF",
+          "description": "Valitse PDF-tiedosto, jonka haluat järjestää."
+        },
+        {
+          "title": "Vedä ja pudota",
+          "description": "Järjestä ne uudelleen napsauttamalla ja vetämällä sivun pikkukuvia."
+        },
+        {
+          "title": "Tallenna muutokset",
+          "description": "Lataa juuri tilattu PDF-dokumentti."
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "Visuaalinen vedä ja pudota -käyttöliittymä",
+      "content": "Intuitiivisen käyttöliittymämme avulla on uskomattoman helppoa nähdä sivusi ja siirtää ne juuri sinne, missä niiden on oltava.",
+      "subTitle": "Interaktiivinen",
+      "subContent": "Reaaliaikainen pikkukuvien luominen.",
+      "badgeText": "Interaktiivinen"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "100 % asiakaspuolen lajittelu",
+      "content": "Asiakirjasi järjestetään uudelleen paikallisesti selaimessasi. Takaamme täydellisen yksityisyyden."
+    },
+    {
+      "type": "resize_performance",
+      "title": "Sujuva kokemus",
+      "content": "Järjestä suuret asiakirjat uudelleen ilman viivettä.",
+      "badgeText": "Optimoitu"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Voinko poistaa sivuja uudelleenjärjestämisen aikana?",
+      "a": "Kyllä, voit myös valita sivuja ja poistaa ne tarvittaessa."
+    },
+    {
+      "q": "Toimiiko mobiilissa?",
+      "a": "Kyllä, vedä ja pudota -käyttöliittymämme on kosketusystävällinen ja toimii mobiililaitteissa."
+    },
+    {
+      "q": "Ladataanko tiedostoni palvelimelle?",
+      "a": "Ei, kaikki uudelleenjärjestelyt tapahtuvat suoraan laitteellasi."
+    }
+  ],
+  "badges": [
+    "Visuaalinen",
+    "Yksityinen",
+    "Ilmainen"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Järjestä sivut uudelleen nyt",
+  "supportCenter": "Tukikeskus",
+  "faqTitle": "Usein kysytyt kysymykset"
+}

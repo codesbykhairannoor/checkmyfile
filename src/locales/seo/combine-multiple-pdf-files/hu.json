@@ -1,71 +1,71 @@
 {
-  "title": "Combine Multiple PDF Files - Merge PDFs Online Free - HU",
-  "h1": "Combine Multiple PDF Files Online (HU)",
-  "description": "Merge and combine multiple PDF files into one single document. Instant local processing, 100% private, no limit.",
+  "title": "Több PDF-fájl egyesítése",
+  "h1": "Több PDF-fájl online kombinálása (ingyenes és ügyféloldali)",
+  "description": "Egyesítsen és egyesítsen több PDF-fájlt egyetlen dokumentumban. Azonnali helyi feldolgozás, 100%-ban privát, korlátozás nélkül.",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Combine Multiple PDF Documents into One Instantly",
-      "content": "Need to combine multiple reports, certificates, or scan pages into a single PDF document? Our browser combiner lets you drag, drop, reorder, and merge files locally with zero waiting time.",
-      "badgeText": "PDF Combiner"
+      "title": "Több PDF-fájl egyesítése",
+      "content": "Szervezze meg munkafolyamatát a számlák, jelentések vagy fejezetek egyetlen PDF-fájlba történő azonnali egyesítésével. Feltöltés nem szükséges.",
+      "badgeText": "Korlátlan összevonás"
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Combine Multiple PDFs",
-      "badgeText": "Easy Guide",
+      "title": "PDF fájlok kombinálása",
+      "badgeText": "Egyszerű útmutató",
       "steps": [
         {
-          "title": "Select Documents",
-          "description": "Upload all the PDF files you wish to combine."
+          "title": "Fájlok feltöltése",
+          "description": "Húzza át az összes összevonni kívánt PDF-fájlt."
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop the files to rearrange their sequence."
+          "title": "Oldalak átrendezése",
+          "description": "Húzással átrendezheti a dokumentumok sorrendjét tetszés szerint."
         },
         {
-          "title": "Combine Files",
-          "description": "Click the merge button to combine them into one file instantly."
+          "title": "Egyesítés és letöltés",
+          "description": "Kattintson az Egyesítés gombra, és azonnal töltse le a kombinált PDF-fájlt."
         }
       ]
     },
     {
       "type": "rotate_geo_targeting",
-      "title": "No File Uploads, 100% Safe for Personal Documents",
-      "content": "Unlike other sites that require you to upload your sensitive ijazah, scans, or bank records to their servers, our combiner runs entirely locally in your browser memory.",
-      "subTitle": "Privacy First",
-      "subContent": "No documents are ever transmitted over the network.",
-      "badgeText": "Privacy First"
+      "title": "Több tucat fájl biztonságos kombinálása",
+      "content": "Mivel mindent az Ön böngészőjében dolgozunk fel, gigabájtnyi PDF-fájlt egyesíthet anélkül, hogy meg kellene várnia a lassú internetes feltöltéseket.",
+      "subTitle": "Nulla szerverfeltöltés",
+      "subContent": "Minden egyesítés a számítógép RAM-jával történik.",
+      "badgeText": "Nulla szerverfeltöltés"
     },
     {
       "type": "sign_privacy_security",
-      "title": "Secure Corporate Data Merging",
-      "content": "Perfect for financial departments and lawyers combining highly sensitive multi-page contracts. HandleMyFile keeps your documents offline."
+      "title": "Tartsa rendszerezett számláit és jelentéseit",
+      "content": "Legyen szó feladatokat beküldő tanulóról vagy számlát küldő szabadúszóról, ha egy fájlba egyesíti őket, sokkal tisztább lesz."
     },
     {
       "type": "resize_performance",
-      "title": "Instantaneous Local Merging",
-      "content": "Combining 10 large PDFs takes less than 1 second because we do not waste time uploading files to remote clouds.",
-      "badgeText": "Instant Merge"
+      "title": "Azonnali egyesülési sebesség",
+      "content": "Keverjen össze 50 fájlt 2 másodperc alatt.",
+      "badgeText": "Villámgyors"
     }
   ],
   "faqs": [
     {
-      "q": "Is there a limit to how many PDFs I can combine?",
-      "a": "No, there are no limits on file count or size. Only your browser memory limit applies."
+      "q": "Van korlátozás arra, hogy hány fájlt kombinálhatok?",
+      "a": "Nem. Mivel az Ön eszközén dolgozzák fel, az egyetlen korlát a számítógép memóriája."
     },
     {
-      "q": "Can I rearrange pages before merging?",
-      "a": "Yes, you can drag and drop files in the workspace list to set their order before combining."
+      "q": "Átrendezhetem a rendelést?",
+      "a": "Igen, az összevonás előtt könnyedén áthúzhatja a fájlokat a kívánt sorrendbe."
     },
     {
-      "q": "Can I combine encrypted or password-protected PDFs?",
-      "a": "You need to unlock password-protected PDFs first before combining them."
+      "q": "A fájljaim eljutnak egy szerverre?",
+      "a": "Egyáltalán nem. Az összevonás 100%-ban offline módban történik a böngészőben."
     }
   ],
   "badges": [
-    "No Upload Limits",
-    "Drag & Drop Reorder",
-    "100% Client-Side"
+    "Nincs feltöltés",
+    "PDF-ek egyesítése",
+    "Korlátlan"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Combine PDFs",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "PDF fájlok kombinálása",
+  "supportCenter": "Támogatási Központ",
+  "faqTitle": "Gyakran Ismételt Kérdések"
 }

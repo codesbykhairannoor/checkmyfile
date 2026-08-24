@@ -1,0 +1,79 @@
+{
+  "title": "Convertor gratuit PDF în Word (.docx) fără a pierde formatarea",
+  "h1": "Convertiți PDF în Word DOCX editabil în browserul dvs",
+  "description": "Extrageți textul exact, execuțiile de aspect și paragrafele din orice PDF într-un fișier curat Microsoft Word (.docx) direct în memoria browserului.",
+  "sections": [
+    {
+      "type": "watermark_hero_features",
+      "title": "Convertiți perfect PDF în Word",
+      "content": "Transformă-ți documentele PDF în fișiere Word editabile, păstrând în același timp aspectul original, fonturile și imaginile intacte.",
+      "badgeText": "Păstrați formatarea"
+    },
+    {
+      "type": "protect_how_to_steps",
+      "title": "Cum se convertesc PDF în Word",
+      "badgeText": "Conversie ușoară",
+      "steps": [
+        {
+          "title": "Încărcați PDF",
+          "description": "Selectați fișierul PDF pe care doriți să îl convertiți."
+        },
+        {
+          "title": "Convertiți în DOCX",
+          "description": "Faceți clic pe conversie pentru a începe procesarea locală."
+        },
+        {
+          "title": "Descărcați fișierul Word",
+          "description": "Salvați documentul Word complet editabil."
+        }
+      ]
+    },
+    {
+      "type": "excel_geo_targeting",
+      "title": "Reținere precisă a aspectului",
+      "content": "Analizorul nostru avansat înțelege paragrafele, tabelele și coloanele, asigurându-se că documentul dvs. Word arată exact ca PDF.",
+      "subTitle": "Înaltă Fidelitate",
+      "subContent": "Menține stilul și structura.",
+      "badgeText": "Înaltă Fidelitate"
+    },
+    {
+      "type": "redact_privacy_security",
+      "title": "Conversie sigură pe partea clientului",
+      "content": "Convertiți în siguranță contractele și rapoartele confidențiale. Conversia are loc în întregime pe dispozitivul dvs."
+    },
+    {
+      "type": "watermark_performance",
+      "title": "Procesare rapidă",
+      "content": "Convertiți documente cu mai multe pagini în câteva secunde.",
+      "badgeText": "Ieșire rapidă"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Se va schimba layout-ul?",
+      "a": "Ne străduim să păstrăm aspectul exact, inclusiv tabelele, imaginile și alinierea textului."
+    },
+    {
+      "q": "Este procesat pe un server?",
+      "a": "Nu, conversia se face complet în browserul dvs. pentru confidențialitate maximă."
+    },
+    {
+      "q": "Pot edita textul după conversie?",
+      "a": "Da, fișierul DOCX rezultat este complet editabil în Microsoft Word sau Google Docs."
+    }
+  ],
+  "badges": [
+    "Editabil",
+    "Acurate",
+    "Privat"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Convertiți în Word",
+  "supportCenter": "Centru de suport",
+  "faqTitle": "Întrebări frecvente"
+}

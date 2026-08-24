@@ -1,0 +1,79 @@
+{
+  "title": "Çevrimdışı PDF Boyutunu Azaltın",
+  "h1": "Tarayıcınızda PDF Boyutunu Tamamen Çevrimdışı Olarak Azaltın",
+  "description": "Herhangi bir sunucuya yükleme yapmadan PDF belgelerinizin boyutunu çevrimdışı olarak doğrudan tarayıcınızda azaltın. %100 güvenli.",
+  "sections": [
+    {
+      "type": "split_hero_features",
+      "title": "PDF Dosyalarını Çevrimdışı Küçült",
+      "content": "Büyük PDF'leri internet bağlantısı olmadan sıkıştırın. WebAssembly motorumuz tarayıcınızda tamamen çevrimdışı çalışır.",
+      "badgeText": "Çevrimdışı Sıkıştırma"
+    },
+    {
+      "type": "ocr_how_to_steps",
+      "title": "Çevrimdışı PDF Boyutu Nasıl Azaltılır",
+      "badgeText": "Hızlı Adımlar",
+      "steps": [
+        {
+          "title": "Dosya Ekle",
+          "description": "Büyük PDF belgenizi seçin."
+        },
+        {
+          "title": "Kompres",
+          "description": "Sıkıştırma düzeyini seçin ve sıkıştır'a tıklayın."
+        },
+        {
+          "title": "İndirmek",
+          "description": "Daha küçük olan PDF dosyasını bilgisayarınıza kaydedin."
+        }
+      ]
+    },
+    {
+      "type": "rotate_geo_targeting",
+      "title": "İnternet Olmadan Çalışır",
+      "content": "Sayfa yüklendikten sonra internet bağlantısını kesebilirsiniz; araç yine de mükemmel şekilde çalışmaya devam edecektir.",
+      "subTitle": "Gerçek Çevrimdışı",
+      "subContent": "Sıkıştırma sırasında sunucu iletişimi yok.",
+      "badgeText": "Gerçek Çevrimdışı"
+    },
+    {
+      "type": "sign_privacy_security",
+      "title": "Maksimum Gizlilik Garantisi",
+      "content": "Ağ üzerinden hiçbir veri iletilmediği için hassas belgeleriniz %100 güvendedir."
+    },
+    {
+      "type": "split_performance",
+      "title": "Verimli Motor",
+      "content": "Hızlı işleme ile yüksek sıkıştırma oranı.",
+      "badgeText": "Yüksek Verimlilik"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Çevrimdışı sıkıştırma nasıl çalışır?",
+      "a": "Güçlü bir PDF sıkıştırma motorunu doğrudan tarayıcınızın içinde çalıştırmak için WebAssembly'ı kullanıyoruz."
+    },
+    {
+      "q": "Kalite bozulur mu?",
+      "a": "Hayır, yüksek görsel kaliteyi korumak için kayıpsız sıkıştırmayı seçebilirsiniz."
+    },
+    {
+      "q": "Dosya boyutu sınırı var mı?",
+      "a": "Hayır, yerel olarak çalıştığı için cihazınızın hafızasının izin verdiği ölçüde dosyaları sıkıştırabilirsiniz."
+    }
+  ],
+  "badges": [
+    "Çevrimdışı",
+    "Güvenli",
+    "Hızlı"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Boyutu Şimdi Küçült",
+  "supportCenter": "Destek Merkezi",
+  "faqTitle": "Sıkça Sorulan Sorular"
+}

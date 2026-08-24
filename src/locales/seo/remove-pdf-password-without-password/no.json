@@ -1,0 +1,79 @@
+{
+  "title": "Fjern PDF-passord uten passord",
+  "h1": "Fjern passord fra PDF uten passord",
+  "description": "Fjern passordbeskyttelsen fra PDF-filene dine uten å trenge det originale passordet ved å bruke vårt avanserte opplåsingsverktøy.",
+  "sections": [
+    {
+      "type": "protect_hero_features",
+      "title": "Fjern PDF-passord umiddelbart",
+      "content": "Glemt PDF-passordet ditt? Verktøyet vårt kan hjelpe deg med å fjerne passordbeskyttelsen fra dokumentene dine på sekunder, trygt i nettleseren din.",
+      "badgeText": "Øyeblikkelig opplåsing"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Hvordan låse opp PDF",
+      "badgeText": "Hurtigguide",
+      "steps": [
+        {
+          "title": "Velg Låst PDF",
+          "description": "Last opp PDF-dokumentet du vil låse opp."
+        },
+        {
+          "title": "Fjern passord",
+          "description": "Klikk lås opp for å fjerne passordet fra dokumentet."
+        },
+        {
+          "title": "Last ned ulåst PDF",
+          "description": "Lagre den ubeskyttede PDF-filen på enheten din."
+        }
+      ]
+    },
+    {
+      "type": "compare_geo_targeting",
+      "title": "100 % sikker lokal behandling",
+      "content": "Dine låste dokumenter inneholder sensitiv informasjon. Vi behandler dem lokalt ved hjelp av WebAssembly, og sikrer at 0 byte noensinne forlater enheten din.",
+      "subTitle": "Personvern først",
+      "subContent": "Ingen skyservere, ingen dataoppbevaring.",
+      "badgeText": "Personvern først"
+    },
+    {
+      "type": "watermark_privacy_security",
+      "title": "Personvern på banknivå",
+      "content": "Vi bruker avanserte algoritmer for å fjerne kryptering uten å kompromittere dokumentets innhold."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Lynrask",
+      "content": "Lås opp PDF-en din på millisekunder.",
+      "badgeText": "Ultra Rask"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Er det trygt å låse opp PDF-en min her?",
+      "a": "Ja. All behandling gjøres lokalt i nettleseren din. Vi laster ikke opp filene dine til noen server."
+    },
+    {
+      "q": "Kan den fjerne alle typer passord?",
+      "a": "Den kan fjerne brukerpassord og eierpassord fra standard krypterte PDF-filer."
+    },
+    {
+      "q": "Er dette verktøyet gratis?",
+      "a": "Ja, det er 100 % gratis å bruke."
+    }
+  ],
+  "badges": [
+    "Ingen opplasting",
+    "Sikker",
+    "Rask"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Lås opp PDF nå",
+  "supportCenter": "Støttesenter",
+  "faqTitle": "Ofte stilte spørsmål"
+}

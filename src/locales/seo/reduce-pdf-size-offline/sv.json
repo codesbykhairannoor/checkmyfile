@@ -1,0 +1,79 @@
+{
+  "title": "Minska PDF-storlek offline",
+  "h1": "Minska PDF-storleken helt offline i din webbläsare",
+  "description": "Minska storleken på dina PDF-dokument offline direkt i din webbläsare utan några serveruppladdningar. 100% säker.",
+  "sections": [
+    {
+      "type": "split_hero_features",
+      "title": "Krympa PDF-filer offline",
+      "content": "Komprimera stora PDF-filer utan internetanslutning. Vår WebAssembly-motor körs helt offline i din webbläsare.",
+      "badgeText": "Offlinekomprimering"
+    },
+    {
+      "type": "ocr_how_to_steps",
+      "title": "Hur man minskar PDF-storlek offline",
+      "badgeText": "Snabba steg",
+      "steps": [
+        {
+          "title": "Lägg till fil",
+          "description": "Välj ditt stora PDF-dokument."
+        },
+        {
+          "title": "Komprimera",
+          "description": "Välj komprimeringsnivå och klicka på komprimera."
+        },
+        {
+          "title": "Ladda ner",
+          "description": "Spara den mindre PDF-filen på din dator."
+        }
+      ]
+    },
+    {
+      "type": "rotate_geo_targeting",
+      "title": "Fungerar utan internet",
+      "content": "När sidan har laddats kan du koppla från internet och verktyget kommer fortfarande att fungera perfekt.",
+      "subTitle": "Sant offline",
+      "subContent": "Ingen serverkommunikation under komprimering.",
+      "badgeText": "Sant offline"
+    },
+    {
+      "type": "sign_privacy_security",
+      "title": "Garanterad maximal sekretess",
+      "content": "Eftersom ingen data någonsin överförs över nätverket är dina känsliga dokument 100 % säkra."
+    },
+    {
+      "type": "split_performance",
+      "title": "Effektiv motor",
+      "content": "Högt kompressionsförhållande med snabb bearbetning.",
+      "badgeText": "Hög effektivitet"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Hur fungerar offlinekomprimering?",
+      "a": "Vi använder WebAssembly för att köra en kraftfull PDF-komprimeringsmotor direkt i din webbläsare."
+    },
+    {
+      "q": "Kommer kvaliteten att förstöras?",
+      "a": "Nej, du kan välja förlustfri komprimering för att bibehålla hög visuell kvalitet."
+    },
+    {
+      "q": "Finns det en filstorleksgräns?",
+      "a": "Nej, eftersom det körs lokalt kan du komprimera filer så stora som enhetens minne tillåter."
+    }
+  ],
+  "badges": [
+    "Off-line",
+    "Säkra",
+    "Snabb"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Minska storleken nu",
+  "supportCenter": "Supportcenter",
+  "faqTitle": "Vanliga frågor"
+}

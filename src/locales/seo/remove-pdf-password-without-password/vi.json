@@ -1,0 +1,79 @@
+{
+  "title": "Xóa mật khẩu PDF không cần mật khẩu",
+  "h1": "Xóa mật khẩu khỏi PDF không cần mật khẩu",
+  "description": "Xóa bảo vệ bằng mật khẩu khỏi tệp PDF của bạn mà không cần mật khẩu ban đầu bằng công cụ mở khóa nâng cao của chúng tôi.",
+  "sections": [
+    {
+      "type": "protect_hero_features",
+      "title": "Xóa mật khẩu PDF ngay lập tức",
+      "content": "Bạn quên mật khẩu PDF của mình? Công cụ của chúng tôi có thể giúp bạn loại bỏ mật khẩu bảo vệ khỏi tài liệu của mình trong vài giây, một cách an toàn bên trong trình duyệt của bạn.",
+      "badgeText": "Mở khóa tức thì"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Cách mở khóa PDF",
+      "badgeText": "Hướng dẫn nhanh",
+      "steps": [
+        {
+          "title": "Chọn PDF bị khóa",
+          "description": "Tải lên tài liệu PDF bạn muốn mở khóa."
+        },
+        {
+          "title": "Xóa mật khẩu",
+          "description": "Nhấp vào mở khóa để loại bỏ mật khẩu khỏi tài liệu."
+        },
+        {
+          "title": "Tải xuống bản PDF đã mở khóa",
+          "description": "Lưu tệp PDF không được bảo vệ vào thiết bị của bạn."
+        }
+      ]
+    },
+    {
+      "type": "compare_geo_targeting",
+      "title": "Xử lý cục bộ an toàn 100%",
+      "content": "Tài liệu bị khóa của bạn chứa thông tin nhạy cảm. Chúng tôi xử lý chúng cục bộ bằng WebAssembly, đảm bảo không còn byte nào trên thiết bị của bạn.",
+      "subTitle": "Quyền riêng tư đầu tiên",
+      "subContent": "Không có máy chủ đám mây, không lưu giữ dữ liệu.",
+      "badgeText": "Quyền riêng tư đầu tiên"
+    },
+    {
+      "type": "watermark_privacy_security",
+      "title": "Quyền riêng tư cấp ngân hàng",
+      "content": "Chúng tôi sử dụng các thuật toán nâng cao để xóa mã hóa mà không ảnh hưởng đến nội dung tài liệu của bạn."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Nhanh như chớp",
+      "content": "Mở khóa tệp PDF của bạn trong một phần nghìn giây.",
+      "badgeText": "Cực nhanh"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Có an toàn để mở khóa PDF của tôi ở đây không?",
+      "a": "Đúng. Tất cả quá trình xử lý được thực hiện cục bộ trong trình duyệt của bạn. Chúng tôi không tải tập tin của bạn lên bất kỳ máy chủ nào."
+    },
+    {
+      "q": "Nó có thể loại bỏ tất cả các loại mật khẩu?",
+      "a": "Nó có thể xóa mật khẩu người dùng và mật khẩu chủ sở hữu khỏi các tệp PDF được mã hóa tiêu chuẩn."
+    },
+    {
+      "q": "Công cụ này có miễn phí không?",
+      "a": "Có, nó miễn phí 100% khi sử dụng."
+    }
+  ],
+  "badges": [
+    "Không tải lên",
+    "Chắc chắn",
+    "Nhanh"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Mở khóa PDF ngay",
+  "supportCenter": "Trung tâm hỗ trợ",
+  "faqTitle": "Câu hỏi thường gặp"
+}

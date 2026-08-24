@@ -1,71 +1,71 @@
 {
-  "title": "Compress PDF Without Losing Quality - High Definition Lossless - EL",
-  "h1": "Compress PDF Documents Online Without Losing Quality (EL)",
-  "description": "Reduce PDF file size while keeping high-resolution vectors and texts perfectly sharp. 100% private client-side processing.",
+  "title": "Συμπίεση PDF χωρίς απώλεια ποιότητας",
+  "h1": "Συμπίεση εγγράφων PDF σε απευθείας σύνδεση χωρίς απώλεια ποιότητας",
+  "description": "Μειώστε το μέγεθος του αρχείου PDF, διατηρώντας παράλληλα τέλεια διανύσματα και κείμενα υψηλής ανάλυσης. 100% ιδιωτική επεξεργασία από την πλευρά του πελάτη.",
   "sections": [
     {
       "type": "word_hero_features",
-      "title": "Shrink PDF File Size While Keeping Text Crystal Clear",
-      "content": "Disappointed with compressors that make your PDF documents blurry? Our adaptive vector engine reduces PDF file sizes up to 90% without losing quality, leaving texts and logos completely sharp.",
-      "badgeText": "Lossless Optimization"
+      "title": "Μειώστε το μέγεθος αρχείου, διατηρήστε την ποιότητα HD",
+      "content": "Μην θυσιάσετε την αναγνωσιμότητα για το μέγεθος. Μειώστε τα χαρτοφυλάκια, τα διανυσματικά σχέδια ή τις παρουσιάσεις σας, διατηρώντας τα κείμενα και τα γραφικά τέλεια καθαρά.",
+      "badgeText": "Ποιότητα χωρίς απώλειες"
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Compress PDF in Lossless Quality",
-      "badgeText": "Step-by-Step",
+      "title": "Πώς να συμπιέσετε το PDF χωρίς απώλειες",
+      "badgeText": "Απλά Βήματα",
       "steps": [
         {
-          "title": "Select PDF File",
-          "description": "Drop your PDF document into the local browser reader."
+          "title": "Επιλέξτε Αρχείο",
+          "description": "Επιλέξτε το PDF υψηλής ποιότητας που θέλετε να συρρικνώσετε."
         },
         {
-          "title": "Choose Recommended Preset",
-          "description": "Select medium compression to compress fonts and metadata losslessly."
+          "title": "Επιλέξτε Λειτουργία χωρίς απώλειες",
+          "description": "Επιλέξτε τη ρύθμιση συμπίεσης «Υψηλή ποιότητα» για να διατηρήσετε τις λεπτομέρειες."
         },
         {
-          "title": "Save High-Res PDF",
-          "description": "Download the compressed PDF with crisp text and high-res vector details."
+          "title": "Λήψη αρχείου",
+          "description": "Αποκτήστε το ελαφρύτερο PDF χωρίς θολό κείμενο ή εικόνες με pixel."
         }
       ]
     },
     {
       "type": "watermark_geo_targeting",
-      "title": "Designed for Professional Designers & Architects",
-      "content": "No blurry blueprints, diagrams, or portfolios. Our engine compresses unnecessary metadata while locking image quality ratios locally on your device.",
-      "subTitle": "Vector Lossless",
-      "subContent": "Keeps fonts and SVG outlines fully vector-sharp at any zoom level.",
-      "badgeText": "Vector Lossless"
+      "title": "Καθαρά κείμενα και ευκρινείς εικόνες",
+      "content": "Χρησιμοποιούμε προηγμένους αλγόριθμους διατήρησης DPI και εξομάλυνσης διανυσμάτων τοπικά μέσα στο πρόγραμμα περιήγησής σας για να διασφαλίσουμε ότι τα έγγραφά σας έχουν ακριβώς την ίδια εμφάνιση.",
+      "subTitle": "Επεξεργασία από την πλευρά του πελάτη",
+      "subContent": "Όλα εκτελούνται στο WebAssembly.",
+      "badgeText": "Επεξεργασία από την πλευρά του πελάτη"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Absolute Privacy & Security",
-      "content": "Confidential company presentations, financial audits, or contracts remain offline on your device, ensuring maximum enterprise privacy compliance."
+      "title": "Ιδανικό για χαρτοφυλάκια & παρουσιάσεις",
+      "content": "Διατηρήστε τα επαγγελματικά σας έγγραφα, ενώ μειώνετε τα megabyte για να τα κάνετε εύκολα κοινοποιήσιμα."
     },
     {
       "type": "ocr_performance",
-      "title": "Lightning-Fast Lossless Engine",
-      "content": "Pure WebAssembly calculations optimize file structure directly in RAM, saving bandwidth and processing files instantly.",
-      "badgeText": "Lossless Speed"
+      "title": "Εγγύηση Zero Pixelation",
+      "content": "Διατηρήστε 100% ευκρίνεια σε όλους τους κόμβους κειμένου.",
+      "badgeText": "Έξοδος HD"
     }
   ],
   "faqs": [
     {
-      "q": "How does the lossless PDF compressor work?",
-      "a": "It reorganizes the PDF structure, compresses embedded fonts, and strips metadata without touching raster image ratios unless requested."
+      "q": "Πώς γίνεται να συμπιεστεί χωρίς να χάσει την ποιότητα;",
+      "a": "Βελτιστοποιούμε τις δομές PDF, αφαιρούμε αχρησιμοποίητες γραμματοσειρές/αντικείμενα και μειώνουμε έξυπνα τη δειγματοληψία επιπέδων εικόνας που δεν έχουν δει."
     },
     {
-      "q": "Will my text remain searchable?",
-      "a": "Yes. All text vectors are preserved. You can highlight, search, and copy text exactly as before."
+      "q": "Θα γίνει θολό το κείμενο;",
+      "a": "Όχι. Οι διανυσματικές διαδρομές και τα στοιχεία κειμένου διατηρούνται τέλεια, αποφεύγοντας το θάμπωμα που προκαλείται από την επίπεδη ραστεροποίηση εικόνας."
     },
     {
-      "q": "Can I compress vector drawings and CAD blueprints?",
-      "a": "Yes, our vector-preservation engine keeps CAD details sharp even at maximum zoom scales."
+      "q": "Αυτό το εργαλείο είναι δωρεάν;",
+      "a": "Ναι, εντελώς δωρεάν και εκτελείται εκτός σύνδεσης."
     }
   ],
   "badges": [
-    "High Resolution",
-    "No Text Blur",
-    "Lossless Presets"
+    "Υψηλής ευκρίνειας",
+    "Χωρίς απώλειες",
+    "Γρήγορα"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Compress Lossless PDF",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Συμπίεση χωρίς απώλεια ποιότητας",
+  "supportCenter": "Κέντρο υποστήριξης",
+  "faqTitle": "Συχνές Ερωτήσεις"
 }

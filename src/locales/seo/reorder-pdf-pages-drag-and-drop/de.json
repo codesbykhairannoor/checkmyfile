@@ -1,0 +1,79 @@
+{
+  "title": "Ordnen Sie PDF-Seiten kostenlos per Drag & Drop neu an",
+  "h1": "Ordnen Sie PDF-Seiten einfach per Drag & Drop neu an",
+  "description": "Organisieren und ordnen Sie Seiten in Ihrem PDF-Dokument visuell neu, indem Sie Miniaturansichten per Drag & Drop verschieben. 100 % kostenlos und lokal.",
+  "sections": [
+    {
+      "type": "word_hero_features",
+      "title": "Organisieren Sie PDF-Seiten visuell",
+      "content": "Ändern Sie die Reihenfolge Ihrer PDF-Seiten einfach durch Ziehen und Ablegen der Miniaturansichten. Keine komplexe Software erforderlich.",
+      "badgeText": "Einfache Nachbestellung"
+    },
+    {
+      "type": "split_how_to_steps",
+      "title": "So ordnen Sie PDF-Seiten neu an",
+      "badgeText": "Schritt für Schritt",
+      "steps": [
+        {
+          "title": "PDF hochladen",
+          "description": "Wählen Sie die PDF-Datei aus, die Sie organisieren möchten."
+        },
+        {
+          "title": "Drag & Drop",
+          "description": "Klicken Sie auf die Miniaturansichten der Seite und ziehen Sie sie, um sie neu anzuordnen."
+        },
+        {
+          "title": "Änderungen speichern",
+          "description": "Laden Sie das neu bestellte PDF-Dokument herunter."
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "Visuelle Drag & Drop-Oberfläche",
+      "content": "Unsere intuitive Benutzeroberfläche macht es unglaublich einfach, Ihre Seiten anzuzeigen und sie genau dorthin zu verschieben, wo sie sein müssen.",
+      "subTitle": "Interaktiv",
+      "subContent": "Miniaturbildgenerierung in Echtzeit.",
+      "badgeText": "Interaktiv"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "100 % clientseitige Sortierung",
+      "content": "Ihre Dokumente werden lokal in Ihrem Browser neu angeordnet. Wir garantieren absolute Privatsphäre."
+    },
+    {
+      "type": "resize_performance",
+      "title": "Reibungslose Erfahrung",
+      "content": "Ordnen Sie große Dokumente ohne Verzögerung neu an.",
+      "badgeText": "Optimiert"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Kann ich beim Neubestellen Seiten löschen?",
+      "a": "Ja, Sie können Seiten auch auswählen und bei Bedarf entfernen."
+    },
+    {
+      "q": "Funktioniert es auf dem Handy?",
+      "a": "Ja, unsere Drag-and-Drop-Oberfläche ist berührungsempfindlich und funktioniert auf Mobilgeräten."
+    },
+    {
+      "q": "Werden meine Dateien auf einen Server hochgeladen?",
+      "a": "Nein, alle Nachbestellungen erfolgen direkt auf Ihrem Gerät."
+    }
+  ],
+  "badges": [
+    "Visuell",
+    "Privat",
+    "Frei"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Jetzt Seiten neu anordnen",
+  "supportCenter": "Support-Center",
+  "faqTitle": "Häufig gestellte Fragen"
+}

@@ -1,71 +1,71 @@
 {
-  "title": "Compress PDF to 100KB - Online PDF Shrinker to 100KB - UK",
-  "h1": "Compress PDF Files to 100KB Online (UK)",
-  "description": "Shrink your large PDF documents under 100KB for government portals, job applications, or visa forms completely in your browser.",
+  "title": "Стисніть PDF-файл до 100 КБ",
+  "h1": "Стискайте PDF-файли до 100 КБ онлайн",
+  "description": "Зменште свої великі PDF-документи до 100 КБ для державних порталів, заяв про роботу чи візових форм повністю у вашому браузері.",
   "sections": [
     {
       "type": "resize_hero_features",
-      "title": "Kecilkan PDF ke 100KB secara Instan & Aman",
-      "content": "Struggling with strict 100KB upload limits on government portals, job sites, or visa applications? Our local compressor optimizes your PDF file under 100KB in seconds.",
-      "badgeText": "100KB Target Limit"
+      "title": "Миттєво та безпечно зменшіть PDF до 100 КБ",
+      "content": "Боретеся із суворими обмеженнями на завантаження в 100 КБ на державних порталах, сайтах з працевлаштуванням або заявках на отримання візи? Наш локальний компресор за лічені секунди оптимізує ваш PDF-файл менше 100 КБ.",
+      "badgeText": "Ціль 100 КБ"
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Compress PDF under 100KB",
-      "badgeText": "Quick Guide",
+      "title": "Як стиснути PDF до 100 Кб",
+      "badgeText": "Короткий посібник",
       "steps": [
         {
-          "title": "Add PDF Document",
-          "description": "Drop your PDF file into the client-side compressor."
+          "title": "Додати PDF-документ",
+          "description": "Перемістіть PDF-файл у клієнтський компресор."
         },
         {
-          "title": "Select 100KB Target",
-          "description": "Choose strong compression to automatically target size under 100KB."
+          "title": "Виберіть Цільовий розмір 100 КБ",
+          "description": "Виберіть сильне стиснення, щоб автоматично націлити розмір до 100 КБ."
         },
         {
-          "title": "Save Optimized PDF",
-          "description": "Download your compressed PDF instantly, ready to upload."
+          "title": "Зберегти оптимізований PDF",
+          "description": "Миттєво завантажте стислий PDF-файл, готовий до завантаження."
         }
       ]
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Perfect for CPNS, Visa, and Scholarship Portals",
-      "content": "No need to worry about server-side limits. All compression takes place in your local browser sandbox, ensuring absolute compliance with security rules.",
-      "subTitle": "100% Client-Side",
-      "subContent": "Files never leave your browser, avoiding public storage risks.",
-      "badgeText": "100% Client-Side"
+      "title": "Ідеально підходить для порталів CPNS, Visa та стипендій",
+      "content": "Не потрібно турбуватися про обмеження на стороні сервера. Усе стиснення відбувається в локальному пісочнику браузера, що забезпечує абсолютну відповідність правилам безпеки.",
+      "subTitle": "Завантажуйте з душевним спокоєм",
+      "subContent": "Ми на 100% обробляємо ваші конфіденційні документи (скановане посвідчення особи, паспорт, резюме) на місці. Нульовий ризик витоку даних.",
+      "badgeText": "Завантажуйте з душевним спокоєм"
     },
     {
       "type": "compare_privacy_security",
-      "title": "Upload with Peace of Mind",
-      "content": "We process your sensitive documents (ID card scan, passport, CV) 100% locally. Zero risk of data leak."
+      "title": "Керування щільністю без втрат",
+      "content": "Оптимізує роздільну здатність зображення та масштаб DPI, щоб досягти порогу в 100 КБ, не перетворюючи текст на нерозбірливе розмиття."
     },
     {
       "type": "watermark_performance",
-      "title": "Lossless Density Management",
-      "content": "Optimizes image resolution and DPI scales to hit the 100KB threshold without turning texts into illegible blur.",
-      "badgeText": "Accurate Target"
+      "title": "CPNS готовий",
+      "content": "Віза затверджена",
+      "badgeText": "Менше 100 КБ"
     }
   ],
   "faqs": [
     {
-      "q": "How can I compress a PDF to exactly under 100KB?",
-      "a": "Select the 'Strong' compression preset. Our tool optimizes vectors and rasterizes complex gradients to fit your file under 100KB."
+      "q": "Як переконатися, що файл менше 100 Кб?",
+      "a": "Виберіть попереднє налаштування стиснення «Сильне». Наш інструмент оптимізує вектори та растеризує складні градієнти, щоб помістити ваш файл розміром до 100 Кб."
     },
     {
-      "q": "Is there a limit on how many PDFs I can compress?",
-      "a": "No. Since processing runs locally in your browser memory, you can compress as many files as you want."
+      "q": "Чи є обмеження щодо кількості файлів, які я можу стиснути?",
+      "a": "Ні. Оскільки обробка виконується локально в пам’яті вашого браузера, ви можете стискати скільки завгодно файлів."
     },
     {
-      "q": "Are my sensitive identity scans safe?",
-      "a": "Yes. They are processed entirely offline via WebAssembly. 0 bytes are uploaded."
+      "q": "Чи мої документи в безпеці?",
+      "a": "так Вони повністю обробляються в автономному режимі через WebAssembly. Завантажено 0 байт."
     }
   ],
   "badges": [
-    "CPNS Ready",
-    "Visa Approved",
-    "Under 100KB"
+    "Ціль 100 КБ",
+    "Безпечний",
+    "швидко"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Compress PDF to 100KB",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Стиснути до 100 Кб",
+  "supportCenter": "Центр підтримки",
+  "faqTitle": "Часті запитання"
 }

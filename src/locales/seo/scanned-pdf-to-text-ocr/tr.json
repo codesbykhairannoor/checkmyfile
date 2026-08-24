@@ -1,0 +1,79 @@
+{
+  "title": "Taranan PDF'yi Metne Dönüştürün",
+  "h1": "OCR ile Taranan PDF'lerden Metin Çıkarma",
+  "description": "Çok dilli WebAssembly OCR çalışanlarını kullanarak, aranamayan taranmış PDF'leri ve görüntüleri yerel olarak düzenlenebilir düz metne dönüştürün.",
+  "sections": [
+    {
+      "type": "resize_hero_features",
+      "title": "Taramalardan Metni Anında Çıkarın",
+      "content": "Taranan belgelerden ve görüntülerden düzenlenebilir metinler çıkarmak için gelişmiş Optik Karakter Tanıma (OCR) teknolojimizi kullanın.",
+      "badgeText": "Güçlü OCR"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "OCR ile Metin Nasıl Çıkarılır",
+      "badgeText": "Basit Kılavuz",
+      "steps": [
+        {
+          "title": "Taramayı Yükle",
+          "description": "Taranmış PDF veya görüntü dosyanızı seçin."
+        },
+        {
+          "title": "OCR'yi çalıştır",
+          "description": "Dili seçin ve OCR işlemini başlatın."
+        },
+        {
+          "title": "Kopyala veya İndir",
+          "description": "Çıkarılan metni anında alın."
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "Çoklu Dil Desteği",
+      "content": "OCR motorumuz birden çok dili ve karmaşık karakter kümelerini yüksek doğrulukla tanır.",
+      "subTitle": "Doğru Ekstraksiyon",
+      "subContent": "Tesseract OCR WebAssembly tarafından desteklenmektedir.",
+      "badgeText": "Doğru Ekstraksiyon"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "Özel OCR İşleme",
+      "content": "Diğer OCR araçlarından farklı olarak belgelerinizi bulut API'lerine göndermiyoruz. Metin çıkarma işlemi doğrudan cihazınızda gerçekleşir."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Yüksek Doğruluk",
+      "content": "Net taramalar için mükemmel tanıma oranı.",
+      "badgeText": "Kesin"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "El yazısı metni destekliyor mu?",
+      "a": "OCR'miz basılı metin için optimize edilmiştir. El yazısı metnin doğruluğu daha düşük olabilir."
+    },
+    {
+      "q": "Dosyalarım yükleniyor mu?",
+      "a": "Hayır, OCR motoru WebAssembly'ı kullanarak tamamen tarayıcınızda çalışır."
+    },
+    {
+      "q": "Resimlerden de metin çıkarabilir miyim?",
+      "a": "Evet, PNG, JPG veya taranmış PDF dosyalarını yükleyebilirsiniz."
+    }
+  ],
+  "badges": [
+    "OCR",
+    "Güvenli",
+    "Özgür"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "OCR Çıkarmayı Başlat",
+  "supportCenter": "Destek Merkezi",
+  "faqTitle": "Sıkça Sorulan Sorular"
+}

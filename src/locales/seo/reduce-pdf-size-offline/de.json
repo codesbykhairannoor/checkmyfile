@@ -1,0 +1,79 @@
+{
+  "title": "PDF-Größe offline reduzieren",
+  "h1": "Reduzieren Sie die PDF-Größe vollständig offline in Ihrem Browser",
+  "description": "Reduzieren Sie die Größe Ihrer PDF-Dokumente offline direkt in Ihrem Browser, ohne Server-Uploads. 100 % sicher.",
+  "sections": [
+    {
+      "type": "split_hero_features",
+      "title": "PDF-Dateien offline verkleinern",
+      "content": "Komprimieren Sie große PDFs ohne Internetverbindung. Unsere WebAssembly-Engine läuft vollständig offline in Ihrem Browser.",
+      "badgeText": "Offline-Komprimierung"
+    },
+    {
+      "type": "ocr_how_to_steps",
+      "title": "So reduzieren Sie die PDF-Größe offline",
+      "badgeText": "Schnelle Schritte",
+      "steps": [
+        {
+          "title": "Datei hinzufügen",
+          "description": "Wählen Sie Ihr großes PDF-Dokument aus."
+        },
+        {
+          "title": "Kompresse",
+          "description": "Wählen Sie die Komprimierungsstufe und klicken Sie auf „Komprimieren“."
+        },
+        {
+          "title": "Herunterladen",
+          "description": "Speichern Sie die kleinere PDF-Datei auf Ihrem Computer."
+        }
+      ]
+    },
+    {
+      "type": "rotate_geo_targeting",
+      "title": "Funktioniert ohne Internet",
+      "content": "Sobald die Seite geladen ist, können Sie die Verbindung zum Internet trennen und das Tool funktioniert weiterhin einwandfrei.",
+      "subTitle": "Echt offline",
+      "subContent": "Keine Serverkommunikation während der Komprimierung.",
+      "badgeText": "Echt offline"
+    },
+    {
+      "type": "sign_privacy_security",
+      "title": "Maximale Privatsphäre garantiert",
+      "content": "Da keine Daten über das Netzwerk übertragen werden, sind Ihre sensiblen Dokumente zu 100 % sicher."
+    },
+    {
+      "type": "split_performance",
+      "title": "Effizienter Motor",
+      "content": "Hohes Komprimierungsverhältnis bei schneller Verarbeitung.",
+      "badgeText": "Hohe Effizienz"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Wie funktioniert die Offline-Komprimierung?",
+      "a": "Wir verwenden WebAssembly, um eine leistungsstarke PDF-Komprimierungs-Engine direkt in Ihrem Browser auszuführen."
+    },
+    {
+      "q": "Wird die Qualität ruiniert?",
+      "a": "Nein, Sie können eine verlustfreie Komprimierung wählen, um eine hohe visuelle Qualität beizubehalten."
+    },
+    {
+      "q": "Gibt es eine Dateigrößenbeschränkung?",
+      "a": "Nein, da es lokal ausgeführt wird, können Sie Dateien so groß komprimieren, wie der Speicher Ihres Geräts zulässt."
+    }
+  ],
+  "badges": [
+    "Offline",
+    "Sicher",
+    "Schnell"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Jetzt verkleinern",
+  "supportCenter": "Support-Center",
+  "faqTitle": "Häufig gestellte Fragen"
+}

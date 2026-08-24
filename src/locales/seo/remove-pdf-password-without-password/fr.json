@@ -1,0 +1,79 @@
+{
+  "title": "Supprimer le mot de passe PDF sans mot de passe",
+  "h1": "Supprimer le mot de passe du PDF sans mot de passe",
+  "description": "Supprimez la protection par mot de passe de vos fichiers PDF sans avoir besoin du mot de passe d'origine à l'aide de notre outil de déverrouillage avancé.",
+  "sections": [
+    {
+      "type": "protect_hero_features",
+      "title": "Supprimer les mots de passe PDF instantanément",
+      "content": "Vous avez oublié votre mot de passe PDF ? Notre outil peut vous aider à supprimer la protection par mot de passe de vos documents en quelques secondes, en toute sécurité dans votre navigateur.",
+      "badgeText": "Déverrouillage instantané"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Comment débloquer un PDF",
+      "badgeText": "Guide rapide",
+      "steps": [
+        {
+          "title": "Sélectionnez PDF verrouillé",
+          "description": "Téléchargez le document PDF que vous souhaitez déverrouiller."
+        },
+        {
+          "title": "Supprimer le mot de passe",
+          "description": "Cliquez sur Déverrouiller pour supprimer le mot de passe du document."
+        },
+        {
+          "title": "Télécharger le PDF débloqué",
+          "description": "Enregistrez le PDF non protégé sur votre appareil."
+        }
+      ]
+    },
+    {
+      "type": "compare_geo_targeting",
+      "title": "Traitement local 100 % sécurisé",
+      "content": "Vos documents verrouillés contiennent des informations sensibles. Nous les traitons localement à l'aide de WebAssembly, garantissant que 0 octet ne quitte jamais votre appareil.",
+      "subTitle": "La confidentialité d'abord",
+      "subContent": "Pas de serveurs cloud, pas de conservation de données.",
+      "badgeText": "La confidentialité d'abord"
+    },
+    {
+      "type": "watermark_privacy_security",
+      "title": "Confidentialité au niveau de la banque",
+      "content": "Nous utilisons des algorithmes avancés pour supprimer le cryptage sans compromettre le contenu de votre document."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Rapide comme l'éclair",
+      "content": "Déverrouillez votre PDF en quelques millisecondes.",
+      "badgeText": "Ultra rapide"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Est-il sécuritaire de déverrouiller mon PDF ici ?",
+      "a": "Oui. Tout le traitement est effectué localement dans votre navigateur. Nous ne téléchargeons vos fichiers sur aucun serveur."
+    },
+    {
+      "q": "Peut-il supprimer tous les types de mots de passe ?",
+      "a": "Il peut supprimer les mots de passe des utilisateurs et les mots de passe du propriétaire des PDF cryptés standard."
+    },
+    {
+      "q": "Cet outil est-il gratuit ?",
+      "a": "Oui, son utilisation est 100 % gratuite."
+    }
+  ],
+  "badges": [
+    "Aucun téléchargement",
+    "Sécurisé",
+    "Rapide"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Débloquez le PDF maintenant",
+  "supportCenter": "Centre d'assistance",
+  "faqTitle": "Foire aux questions"
+}

@@ -1,0 +1,79 @@
+{
+  "title": "Usuń hasło PDF bez hasła",
+  "h1": "Usuń hasło z pliku PDF bez hasła",
+  "description": "Usuń ochronę hasłem z plików PDF bez konieczności podawania oryginalnego hasła, korzystając z naszego zaawansowanego narzędzia odblokowującego.",
+  "sections": [
+    {
+      "type": "protect_hero_features",
+      "title": "Natychmiast usuń hasła z plików PDF",
+      "content": "Nie pamiętasz hasła do pliku PDF? Nasze narzędzie pomoże Ci w ciągu kilku sekund usunąć zabezpieczenie hasłem z dokumentów, bezpiecznie w przeglądarce.",
+      "badgeText": "Natychmiastowe odblokowanie"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Jak odblokować plik PDF",
+      "badgeText": "Szybki przewodnik",
+      "steps": [
+        {
+          "title": "Wybierz opcję Zablokowany plik PDF",
+          "description": "Prześlij dokument PDF, który chcesz odblokować."
+        },
+        {
+          "title": "Usuń hasło",
+          "description": "Kliknij Odblokuj, aby usunąć hasło z dokumentu."
+        },
+        {
+          "title": "Pobierz odblokowany plik PDF",
+          "description": "Zapisz niezabezpieczony plik PDF na swoim urządzeniu."
+        }
+      ]
+    },
+    {
+      "type": "compare_geo_targeting",
+      "title": "100% bezpieczne przetwarzanie lokalne",
+      "content": "Twoje zablokowane dokumenty zawierają poufne informacje. Przetwarzamy je lokalnie za pomocą WebAssembly, zapewniając, że Twoje urządzenie kiedykolwiek opuści 0 bajtów.",
+      "subTitle": "Najpierw prywatność",
+      "subContent": "Żadnych serwerów w chmurze, żadnego przechowywania danych.",
+      "badgeText": "Najpierw prywatność"
+    },
+    {
+      "type": "watermark_privacy_security",
+      "title": "Prywatność na poziomie banku",
+      "content": "Używamy zaawansowanych algorytmów, aby usunąć szyfrowanie bez narażania zawartości dokumentu."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Błyskawicznie szybki",
+      "content": "Odblokuj plik PDF w milisekundach.",
+      "badgeText": "Ultraszybki"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Czy odblokowanie mojego pliku PDF tutaj jest bezpieczne?",
+      "a": "Tak. Całe przetwarzanie odbywa się lokalnie w Twojej przeglądarce. Nie przesyłamy Twoich plików na żaden serwer."
+    },
+    {
+      "q": "Czy może usunąć wszystkie typy haseł?",
+      "a": "Może usuwać hasła użytkowników i hasła właścicieli ze standardowych zaszyfrowanych plików PDF."
+    },
+    {
+      "q": "Czy to narzędzie jest bezpłatne?",
+      "a": "Tak, korzystanie z niego jest w 100% darmowe."
+    }
+  ],
+  "badges": [
+    "Brak przesyłania",
+    "Bezpieczny",
+    "Szybko"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Odblokuj PDF teraz",
+  "supportCenter": "Centrum wsparcia",
+  "faqTitle": "Często zadawane pytania"
+}

@@ -1,0 +1,79 @@
+{
+  "title": "Szkennelt PDF konvertálása szöveggé",
+  "h1": "Szöveg kibontása a beolvasott PDF-ekből az OCR segítségével",
+  "description": "A nem kereshető beolvasott PDF-fájlokat és képeket helyileg szerkeszthető egyszerű szöveggé alakíthatja a többnyelvű WebAssembly OCR-munkások segítségével.",
+  "sections": [
+    {
+      "type": "resize_hero_features",
+      "title": "Azonnal kivonja a szöveget a beolvasásokból",
+      "content": "Fejlett optikai karakterfelismerő (OCR) technológiánk segítségével szerkeszthető szöveget vonhat ki a beolvasott dokumentumokból és képekből.",
+      "badgeText": "Erőteljes OCR"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Szöveg kibontása az OCR segítségével",
+      "badgeText": "Egyszerű útmutató",
+      "steps": [
+        {
+          "title": "Feltöltés Scan",
+          "description": "Válassza ki a beolvasott PDF- vagy képfájlt."
+        },
+        {
+          "title": "Futtassa az OCR-t",
+          "description": "Válassza ki a nyelvet, és indítsa el az OCR folyamatot."
+        },
+        {
+          "title": "Másolás vagy letöltés",
+          "description": "A kivont szöveget azonnal megkapja."
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "Többnyelvű támogatás",
+      "content": "OCR motorunk több nyelvet és összetett karakterkészletet ismer fel nagy pontossággal.",
+      "subTitle": "Pontos kivonás",
+      "subContent": "Üzemeltető: Tesseract OCR WebAssembly.",
+      "badgeText": "Pontos kivonás"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "Privát OCR feldolgozás",
+      "content": "Más OCR-eszközökkel ellentétben nem küldjük el dokumentumait felhő API-kba. A szöveg kinyerése közvetlenül az eszközön történik."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Nagy pontosságú",
+      "content": "Kiváló felismerési arány a tiszta beolvasáshoz.",
+      "badgeText": "Pontos"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Támogatja a kézzel írt szöveget?",
+      "a": "OCR-ünket nyomtatott szövegre optimalizáltuk. A kézzel írt szövegek pontossága kisebb lehet."
+    },
+    {
+      "q": "Feltöltődnek a fájljaim?",
+      "a": "Nem, az OCR motor teljes egészében az Ön böngészőjében fut a WebAssembly használatával."
+    },
+    {
+      "q": "Képből is tudok szöveget kivonni?",
+      "a": "Igen, feltölthet PNG, JPG vagy beolvasott PDF fájlokat."
+    }
+  ],
+  "badges": [
+    "OCR",
+    "Biztonságos",
+    "Ingyenes"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Indítsa el az OCR kivonást",
+  "supportCenter": "Támogatási Központ",
+  "faqTitle": "Gyakran Ismételt Kérdések"
+}

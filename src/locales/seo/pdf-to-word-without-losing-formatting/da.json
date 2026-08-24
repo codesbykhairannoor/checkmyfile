@@ -1,0 +1,79 @@
+{
+  "title": "Gratis PDF til Word Converter (.docx) uden at miste formatering",
+  "h1": "Konverter PDF til redigerbart Word DOCX i din browser",
+  "description": "Udtræk nøjagtig tekst, layoutkørsler og afsnit fra enhver PDF-fil til en ren Microsoft Word-fil (.docx) direkte i browserhukommelsen.",
+  "sections": [
+    {
+      "type": "watermark_hero_features",
+      "title": "Konverter PDF til Word perfekt",
+      "content": "Omdan dine PDF-dokumenter til redigerbare Word-filer, mens du beholder det originale layout, skrifttyper og billeder intakte.",
+      "badgeText": "Bevar formatering"
+    },
+    {
+      "type": "protect_how_to_steps",
+      "title": "Sådan konverteres PDF til Word",
+      "badgeText": "Nem konvertering",
+      "steps": [
+        {
+          "title": "Upload PDF",
+          "description": "Vælg den PDF-fil, du ønsker at konvertere."
+        },
+        {
+          "title": "Konverter til DOCX",
+          "description": "Klik på konverter for at starte den lokale behandling."
+        },
+        {
+          "title": "Download Word-fil",
+          "description": "Gem det fuldt redigerbare Word-dokument."
+        }
+      ]
+    },
+    {
+      "type": "excel_geo_targeting",
+      "title": "Nøjagtig opbevaring af layout",
+      "content": "Vores avancerede parser forstår afsnit, tabeller og kolonner og sikrer, at dit Word-dokument ser nøjagtigt ud som PDF'en.",
+      "subTitle": "High Fidelity",
+      "subContent": "Vedligehold styling og struktur.",
+      "badgeText": "High Fidelity"
+    },
+    {
+      "type": "redact_privacy_security",
+      "title": "Sikker konvertering på klientsiden",
+      "content": "Konverter fortrolige kontrakter og rapporter sikkert. Konverteringen sker udelukkende på din enhed."
+    },
+    {
+      "type": "watermark_performance",
+      "title": "Hurtig behandling",
+      "content": "Konverter flersidede dokumenter på få sekunder.",
+      "badgeText": "Hurtigt output"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Vil layoutet ændre sig?",
+      "a": "Vi bestræber os på at bevare det nøjagtige layout, herunder tabeller, billeder og tekstjustering."
+    },
+    {
+      "q": "Behandles dette på en server?",
+      "a": "Nej, konverteringen udføres fuldstændigt i din browser for maksimalt privatliv."
+    },
+    {
+      "q": "Kan jeg redigere teksten efter konvertering?",
+      "a": "Ja, den resulterende DOCX-fil er fuldt redigerbar i Microsoft Word eller Google Docs."
+    }
+  ],
+  "badges": [
+    "Redigerbar",
+    "Nøjagtig",
+    "Privat"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Konverter til Word",
+  "supportCenter": "Supportcenter",
+  "faqTitle": "Ofte stillede spørgsmål"
+}

@@ -1,71 +1,71 @@
 {
-  "title": "Compress PDF to 100KB - Online PDF Shrinker to 100KB - TH",
-  "h1": "Compress PDF Files to 100KB Online (TH)",
-  "description": "Shrink your large PDF documents under 100KB for government portals, job applications, or visa forms completely in your browser.",
+  "title": "บีบอัด PDF เป็น 100KB",
+  "h1": "บีบอัดไฟล์ PDF เป็น 100KB ออนไลน์",
+  "description": "ย่อขนาดเอกสาร PDF ขนาดใหญ่ของคุณให้เหลือน้อยกว่า 100KB สำหรับพอร์ทัลของรัฐบาล การสมัครงาน หรือแบบฟอร์มวีซ่าในเบราว์เซอร์ของคุณ",
   "sections": [
     {
       "type": "resize_hero_features",
-      "title": "Kecilkan PDF ke 100KB secara Instan & Aman",
-      "content": "Struggling with strict 100KB upload limits on government portals, job sites, or visa applications? Our local compressor optimizes your PDF file under 100KB in seconds.",
-      "badgeText": "100KB Target Limit"
+      "title": "ลดขนาด PDF เป็น 100KB ทันทีและปลอดภัย",
+      "content": "กำลังดิ้นรนกับการจำกัดการอัปโหลดที่เข้มงวดที่ 100KB บนพอร์ทัลของรัฐบาล ไซต์งาน หรือการยื่นขอวีซ่าใช่ไหม โปรแกรมบีบอัดในเครื่องของเราจะปรับไฟล์ PDF ของคุณให้มีขนาดไม่เกิน 100KB ในเวลาไม่กี่วินาที",
+      "badgeText": "เป้าหมาย 100KB"
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Compress PDF under 100KB",
-      "badgeText": "Quick Guide",
+      "title": "วิธีบีบอัด PDF ขนาดไม่เกิน 100KB",
+      "badgeText": "คู่มือฉบับย่อ",
       "steps": [
         {
-          "title": "Add PDF Document",
-          "description": "Drop your PDF file into the client-side compressor."
+          "title": "เพิ่มเอกสาร PDF",
+          "description": "วางไฟล์ PDF ของคุณลงในคอมเพรสเซอร์ฝั่งไคลเอ็นต์"
         },
         {
-          "title": "Select 100KB Target",
-          "description": "Choose strong compression to automatically target size under 100KB."
+          "title": "เลือกเป้าหมาย 100KB",
+          "description": "เลือกการบีบอัดที่แข็งแกร่งเพื่อกำหนดเป้าหมายขนาดที่ต่ำกว่า 100KB โดยอัตโนมัติ"
         },
         {
-          "title": "Save Optimized PDF",
-          "description": "Download your compressed PDF instantly, ready to upload."
+          "title": "บันทึก PDF ที่ปรับให้เหมาะสม",
+          "description": "ดาวน์โหลดไฟล์ PDF ที่บีบอัดของคุณทันที พร้อมอัปโหลด"
         }
       ]
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Perfect for CPNS, Visa, and Scholarship Portals",
-      "content": "No need to worry about server-side limits. All compression takes place in your local browser sandbox, ensuring absolute compliance with security rules.",
-      "subTitle": "100% Client-Side",
-      "subContent": "Files never leave your browser, avoiding public storage risks.",
-      "badgeText": "100% Client-Side"
+      "title": "เหมาะสำหรับ CPNS, Visa และพอร์ทัลทุนการศึกษา",
+      "content": "ไม่จำเป็นต้องกังวลเกี่ยวกับขีดจำกัดฝั่งเซิร์ฟเวอร์ การบีบอัดทั้งหมดเกิดขึ้นในแซนด์บ็อกซ์ของเบราว์เซอร์ในเครื่องของคุณ เพื่อให้มั่นใจว่าปฏิบัติตามกฎความปลอดภัยอย่างสมบูรณ์",
+      "subTitle": "อัปโหลดด้วยความอุ่นใจ",
+      "subContent": "เราประมวลผลเอกสารสำคัญของคุณ (สแกนบัตรประจำตัว หนังสือเดินทาง CV) ในพื้นที่ 100% ความเสี่ยงเป็นศูนย์ของข้อมูลรั่วไหล",
+      "badgeText": "อัปโหลดด้วยความอุ่นใจ"
     },
     {
       "type": "compare_privacy_security",
-      "title": "Upload with Peace of Mind",
-      "content": "We process your sensitive documents (ID card scan, passport, CV) 100% locally. Zero risk of data leak."
+      "title": "การจัดการความหนาแน่นแบบไม่สูญเสีย",
+      "content": "ปรับความละเอียดของภาพและปรับขนาด DPI ให้ถึงเกณฑ์ 100KB โดยไม่เปลี่ยนข้อความให้เป็นภาพเบลอที่อ่านไม่ออก"
     },
     {
       "type": "watermark_performance",
-      "title": "Lossless Density Management",
-      "content": "Optimizes image resolution and DPI scales to hit the 100KB threshold without turning texts into illegible blur.",
-      "badgeText": "Accurate Target"
+      "title": "ซีพีเอ็นเอสพร้อม",
+      "content": "วีซ่าได้รับการอนุมัติ",
+      "badgeText": "ต่ำกว่า 100KB"
     }
   ],
   "faqs": [
     {
-      "q": "How can I compress a PDF to exactly under 100KB?",
-      "a": "Select the 'Strong' compression preset. Our tool optimizes vectors and rasterizes complex gradients to fit your file under 100KB."
+      "q": "ฉันจะแน่ใจได้อย่างไรว่าไฟล์มีขนาดไม่เกิน 100KB",
+      "a": "เลือกค่าที่ตั้งล่วงหน้าการบีบอัด 'แข็งแกร่ง' เครื่องมือของเราจะปรับเวกเตอร์ให้เหมาะสมและแรสเตอร์การไล่ระดับสีที่ซับซ้อนเพื่อให้พอดีกับไฟล์ของคุณที่มีขนาดไม่เกิน 100KB"
     },
     {
-      "q": "Is there a limit on how many PDFs I can compress?",
-      "a": "No. Since processing runs locally in your browser memory, you can compress as many files as you want."
+      "q": "มีการจำกัดจำนวนไฟล์ที่ฉันสามารถบีบอัดได้หรือไม่?",
+      "a": "ไม่ เนื่องจากการประมวลผลทำงานภายในหน่วยความจำเบราว์เซอร์ของคุณ คุณจึงสามารถบีบอัดไฟล์ได้มากเท่าที่คุณต้องการ"
     },
     {
-      "q": "Are my sensitive identity scans safe?",
-      "a": "Yes. They are processed entirely offline via WebAssembly. 0 bytes are uploaded."
+      "q": "เอกสารของฉันปลอดภัยหรือไม่?",
+      "a": "ใช่. มีการประมวลผลแบบออฟไลน์ทั้งหมดผ่าน WebAssembly กำลังอัปโหลด 0 ไบต์"
     }
   ],
   "badges": [
-    "CPNS Ready",
-    "Visa Approved",
-    "Under 100KB"
+    "เป้าหมาย 100KB",
+    "ปลอดภัย",
+    "เร็ว"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Compress PDF to 100KB",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "บีบอัดเป็น 100KB",
+  "supportCenter": "ศูนย์สนับสนุน",
+  "faqTitle": "คำถามที่พบบ่อย"
 }

@@ -1,0 +1,79 @@
+{
+  "title": "Convertisseur gratuit de PDF en Word (.docx) sans perdre le formatage",
+  "h1": "Convertir un PDF en Word DOCX modifiable dans votre navigateur",
+  "description": "Extrayez le texte exact, les mises en page et les paragraphes de n'importe quel PDF dans un fichier Microsoft Word (.docx) propre directement dans la mémoire du navigateur.",
+  "sections": [
+    {
+      "type": "watermark_hero_features",
+      "title": "Convertissez parfaitement un PDF en Word",
+      "content": "Transformez vos documents PDF en fichiers Word modifiables tout en conservant intactes la mise en page, les polices et les images d'origine.",
+      "badgeText": "Conserver le formatage"
+    },
+    {
+      "type": "protect_how_to_steps",
+      "title": "Comment convertir un PDF en Word",
+      "badgeText": "Conversion facile",
+      "steps": [
+        {
+          "title": "Télécharger le PDF",
+          "description": "Sélectionnez le fichier PDF que vous souhaitez convertir."
+        },
+        {
+          "title": "Convertir en DOCX",
+          "description": "Cliquez sur convertir pour démarrer le traitement local."
+        },
+        {
+          "title": "Télécharger le fichier Word",
+          "description": "Enregistrez le document Word entièrement modifiable."
+        }
+      ]
+    },
+    {
+      "type": "excel_geo_targeting",
+      "title": "Conservation précise de la mise en page",
+      "content": "Notre analyseur avancé comprend les paragraphes, les tableaux et les colonnes, garantissant ainsi que votre document Word ressemble exactement au PDF.",
+      "subTitle": "Haute fidélité",
+      "subContent": "Conserver le style et la structure.",
+      "badgeText": "Haute fidélité"
+    },
+    {
+      "type": "redact_privacy_security",
+      "title": "Conversion sécurisée côté client",
+      "content": "Convertissez des contrats et des rapports confidentiels en toute sécurité. La conversion s'effectue entièrement sur votre appareil."
+    },
+    {
+      "type": "watermark_performance",
+      "title": "Traitement rapide",
+      "content": "Convertissez des documents de plusieurs pages en quelques secondes.",
+      "badgeText": "Sortie rapide"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "La mise en page va-t-elle changer ?",
+      "a": "Nous nous efforçons de préserver la mise en page exacte, y compris les tableaux, les images et l'alignement du texte."
+    },
+    {
+      "q": "Est-ce traité sur un serveur ?",
+      "a": "Non, la conversion s'effectue entièrement dans votre navigateur pour une confidentialité maximale."
+    },
+    {
+      "q": "Puis-je modifier le texte après la conversion ?",
+      "a": "Oui, le fichier DOCX résultant est entièrement modifiable dans Microsoft Word ou Google Docs."
+    }
+  ],
+  "badges": [
+    "Modifiable",
+    "Précise",
+    "Privée"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Convertir en Word",
+  "supportCenter": "Centre d'assistance",
+  "faqTitle": "Foire aux questions"
+}

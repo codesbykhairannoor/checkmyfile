@@ -1,71 +1,71 @@
 {
-  "title": "Compress PDF to 100KB - Online PDF Shrinker to 100KB - HU",
-  "h1": "Compress PDF Files to 100KB Online (HU)",
-  "description": "Shrink your large PDF documents under 100KB for government portals, job applications, or visa forms completely in your browser.",
+  "title": "PDF tömörítése 100 KB-ra",
+  "h1": "A PDF-fájlok tömörítése 100 KB-ra online",
+  "description": "Csökkentse nagyméretű PDF-dokumentumait 100 KB alá a kormányzati portálokhoz, álláspályázatokhoz vagy vízuműrlapokhoz a böngészőben.",
   "sections": [
     {
       "type": "resize_hero_features",
-      "title": "Kecilkan PDF ke 100KB secara Instan & Aman",
-      "content": "Struggling with strict 100KB upload limits on government portals, job sites, or visa applications? Our local compressor optimizes your PDF file under 100KB in seconds.",
-      "badgeText": "100KB Target Limit"
+      "title": "Csökkentse a PDF-et 100 KB-ra azonnal és biztonságosan",
+      "content": "Szigorú, 100 KB-os feltöltési korlátokkal küzd a kormányzati portálokon, álláshelyeken vagy vízumkérelmeken? Helyi tömörítőnk másodpercek alatt optimalizálja a 100 KB alatti PDF-fájlt.",
+      "badgeText": "100 KB cél"
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Compress PDF under 100KB",
-      "badgeText": "Quick Guide",
+      "title": "Hogyan lehet 100 KB-nál kisebb PDF-t tömöríteni",
+      "badgeText": "Gyors útmutató",
       "steps": [
         {
-          "title": "Add PDF Document",
-          "description": "Drop your PDF file into the client-side compressor."
+          "title": "PDF dokumentum hozzáadása",
+          "description": "Dobja be a PDF-fájlt az ügyféloldali tömörítőbe."
         },
         {
-          "title": "Select 100KB Target",
-          "description": "Choose strong compression to automatically target size under 100KB."
+          "title": "Válassza ki a 100 KB-os célt",
+          "description": "Válasszon erős tömörítést a 100 KB alatti méret automatikus célzásához."
         },
         {
-          "title": "Save Optimized PDF",
-          "description": "Download your compressed PDF instantly, ready to upload."
+          "title": "Optimalizált PDF mentése",
+          "description": "Azonnal töltse le tömörített PDF-fájlját, és készen áll a feltöltésre."
         }
       ]
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Perfect for CPNS, Visa, and Scholarship Portals",
-      "content": "No need to worry about server-side limits. All compression takes place in your local browser sandbox, ensuring absolute compliance with security rules.",
-      "subTitle": "100% Client-Side",
-      "subContent": "Files never leave your browser, avoiding public storage risks.",
-      "badgeText": "100% Client-Side"
+      "title": "Tökéletes CPNS-, Visa- és ösztöndíj-portálokhoz",
+      "content": "Nem kell aggódnia a szerveroldali korlátok miatt. Minden tömörítés a helyi böngésző homokozójában történik, biztosítva a biztonsági szabályoknak való teljes megfelelést.",
+      "subTitle": "Töltsd fel nyugodt szívvel",
+      "subContent": "Érzékeny dokumentumait (személyi igazolvány szkennelés, útlevél, önéletrajz) 100%-ban helyben dolgozzuk fel. Az adatszivárgás kockázata nulla.",
+      "badgeText": "Töltsd fel nyugodt szívvel"
     },
     {
       "type": "compare_privacy_security",
-      "title": "Upload with Peace of Mind",
-      "content": "We process your sensitive documents (ID card scan, passport, CV) 100% locally. Zero risk of data leak."
+      "title": "Veszteségmentes sűrűségkezelés",
+      "content": "Optimalizálja a képfelbontást és a DPI-skálákat, hogy elérje a 100 KB-os küszöböt anélkül, hogy a szövegeket olvashatatlan elmosódássá változtatná."
     },
     {
       "type": "watermark_performance",
-      "title": "Lossless Density Management",
-      "content": "Optimizes image resolution and DPI scales to hit the 100KB threshold without turning texts into illegible blur.",
-      "badgeText": "Accurate Target"
+      "title": "CPNS kész",
+      "content": "Vízum jóváhagyva",
+      "badgeText": "100 KB alatt"
     }
   ],
   "faqs": [
     {
-      "q": "How can I compress a PDF to exactly under 100KB?",
-      "a": "Select the 'Strong' compression preset. Our tool optimizes vectors and rasterizes complex gradients to fit your file under 100KB."
+      "q": "Hogyan biztosíthatom, hogy a fájl 100 KB alatti legyen?",
+      "a": "Válassza ki az „Erős” tömörítési beállítást. Eszközünk optimalizálja a vektorokat és raszterizálja az összetett színátmeneteket, hogy a fájl 100 KB alá illeszkedjen."
     },
     {
-      "q": "Is there a limit on how many PDFs I can compress?",
-      "a": "No. Since processing runs locally in your browser memory, you can compress as many files as you want."
+      "q": "Van korlátozás arra, hogy hány fájlt tömöríthetek?",
+      "a": "Nem. Mivel a feldolgozás helyileg fut a böngésző memóriájában, annyi fájlt tömöríthet, amennyit csak akar."
     },
     {
-      "q": "Are my sensitive identity scans safe?",
-      "a": "Yes. They are processed entirely offline via WebAssembly. 0 bytes are uploaded."
+      "q": "Biztonságban vannak a dokumentumaim?",
+      "a": "Igen. Feldolgozása teljesen offline módban történik a WebAssembly segítségével. 0 bájt van feltöltve."
     }
   ],
   "badges": [
-    "CPNS Ready",
-    "Visa Approved",
-    "Under 100KB"
+    "100 KB cél",
+    "Biztonságos",
+    "Gyors"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Compress PDF to 100KB",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Tömörítés 100 KB-ra",
+  "supportCenter": "Támogatási Központ",
+  "faqTitle": "Gyakran Ismételt Kérdések"
 }

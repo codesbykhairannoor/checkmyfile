@@ -1,0 +1,79 @@
+{
+  "title": "Hapus Kata Sandi PDF Tanpa Kata Sandi",
+  "h1": "Hapus Kata Sandi dari PDF Tanpa Kata Sandi",
+  "description": "Hapus perlindungan kata sandi dari file PDF Anda tanpa memerlukan kata sandi asli menggunakan alat pembuka kunci canggih kami.",
+  "sections": [
+    {
+      "type": "protect_hero_features",
+      "title": "Hapus Kata Sandi PDF Secara Instan",
+      "content": "Lupa kata sandi PDF Anda? Alat kami dapat membantu Anda menghapus perlindungan kata sandi dari dokumen Anda dalam hitungan detik, dengan aman di dalam browser Anda.",
+      "badgeText": "Buka Kunci Instan"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Cara Membuka Kunci PDF",
+      "badgeText": "Panduan Cepat",
+      "steps": [
+        {
+          "title": "Pilih PDF Terkunci",
+          "description": "Unggah dokumen PDF yang ingin Anda buka kuncinya."
+        },
+        {
+          "title": "Hapus Kata Sandi",
+          "description": "Klik buka kunci untuk menghapus kata sandi dari dokumen."
+        },
+        {
+          "title": "Unduh PDF Tidak Terkunci",
+          "description": "Simpan PDF yang tidak dilindungi ke perangkat Anda."
+        }
+      ]
+    },
+    {
+      "type": "compare_geo_targeting",
+      "title": "Pemrosesan Lokal 100% Aman",
+      "content": "Dokumen Anda yang terkunci berisi informasi sensitif. Kami memprosesnya secara lokal menggunakan WebAssembly, memastikan 0 byte meninggalkan perangkat Anda.",
+      "subTitle": "Privasi Pertama",
+      "subContent": "Tidak ada server cloud, tidak ada penyimpanan data.",
+      "badgeText": "Privasi Pertama"
+    },
+    {
+      "type": "watermark_privacy_security",
+      "title": "Privasi Tingkat Bank",
+      "content": "Kami menggunakan algoritme canggih untuk menghapus enkripsi tanpa membahayakan konten dokumen Anda."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Secepat Kilat",
+      "content": "Buka kunci PDF Anda dalam milidetik.",
+      "badgeText": "Sangat Cepat"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Apakah aman untuk membuka kunci PDF saya di sini?",
+      "a": "Ya. Semua pemrosesan dilakukan secara lokal di browser Anda. Kami tidak mengunggah file Anda ke server mana pun."
+    },
+    {
+      "q": "Bisakah itu menghapus semua jenis kata sandi?",
+      "a": "Itu dapat menghapus kata sandi pengguna dan kata sandi pemilik dari PDF terenkripsi standar."
+    },
+    {
+      "q": "Apakah alat ini gratis?",
+      "a": "Ya, ini 100% gratis untuk digunakan."
+    }
+  ],
+  "badges": [
+    "Tidak Ada Unggahan",
+    "Aman",
+    "Cepat"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Buka kunci PDF Sekarang",
+  "supportCenter": "Pusat Dukungan",
+  "faqTitle": "Pertanyaan yang Sering Diajukan"
+}

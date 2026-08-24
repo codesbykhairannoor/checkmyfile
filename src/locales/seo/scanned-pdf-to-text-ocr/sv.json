@@ -1,0 +1,79 @@
+{
+  "title": "Konvertera skannad PDF till text",
+  "h1": "Extrahera text från skannade PDF-filer med OCR",
+  "description": "Förvandla icke-sökbara skannade PDF-filer och bilder till redigerbar vanlig text lokalt med hjälp av flerspråkiga WebAssembly OCR-arbetare.",
+  "sections": [
+    {
+      "type": "resize_hero_features",
+      "title": "Extrahera text från skanningar direkt",
+      "content": "Använd vår avancerade OCR-teknik (Optical Character Recognition) för att extrahera redigerbar text från skannade dokument och bilder.",
+      "badgeText": "Kraftfull OCR"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Hur man extraherar text med OCR",
+      "badgeText": "Enkel guide",
+      "steps": [
+        {
+          "title": "Ladda upp Scan",
+          "description": "Välj din skannade PDF- eller bildfil."
+        },
+        {
+          "title": "Kör OCR",
+          "description": "Välj språk och starta OCR-processen."
+        },
+        {
+          "title": "Kopiera eller ladda ner",
+          "description": "Få den extraherade texten direkt."
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "Stöd för flera språk",
+      "content": "Vår OCR-motor känner igen flera språk och komplexa teckenuppsättningar med hög noggrannhet.",
+      "subTitle": "Exakt extraktion",
+      "subContent": "Drivs av Tesseract OCR WebAssembly.",
+      "badgeText": "Exakt extraktion"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "Privat OCR-behandling",
+      "content": "Till skillnad från andra OCR-verktyg skickar vi inte dina dokument till moln-API:er. Textextraktionen sker direkt på din enhet."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Hög noggrannhet",
+      "content": "Utmärkt igenkänningshastighet för tydliga skanningar.",
+      "badgeText": "Exakt"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Stöder den handskriven text?",
+      "a": "Vår OCR är optimerad för tryckt text. Handskriven text kan ha lägre noggrannhet."
+    },
+    {
+      "q": "Laddas mina filer upp?",
+      "a": "Nej, OCR-motorn körs helt i din webbläsare med WebAssembly."
+    },
+    {
+      "q": "Kan jag extrahera text från bilder också?",
+      "a": "Ja, du kan ladda upp PNG-, JPG- eller skannade PDF-filer."
+    }
+  ],
+  "badges": [
+    "OCR",
+    "Säkra",
+    "Gratis"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Starta OCR-extraktion",
+  "supportCenter": "Supportcenter",
+  "faqTitle": "Vanliga frågor"
+}

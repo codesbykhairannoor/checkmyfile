@@ -1,71 +1,71 @@
 {
-  "title": "Sign PDF Online Without Registration - Free E-Sign - UK",
-  "h1": "E-Sign PDF Documents Online Without Registration (UK)",
-  "description": "Place your electronic signature on any PDF file instantly. No account required, no signup, 100% private and free.",
+  "title": "Підписуйте PDF онлайн без реєстрації",
+  "h1": "Електронний підпис PDF-документів онлайн без реєстрації",
+  "description": "Миттєво розмістіть свій електронний підпис на будь-якому файлі PDF. Обліковий запис не потрібен, реєстрація не потрібна, 100% приватний і безкоштовний.",
   "sections": [
     {
       "type": "watermark_hero_features",
-      "title": "Sign PDF Documents Instantly Without Creating an Account",
-      "content": "Annoyed by online sign tools that force you to register, confirm emails, or pay subscriptions just to sign a single paper? HandleMyFile lets you add signatures to contracts completely free without signup.",
-      "badgeText": "No Registration Required"
+      "title": "Миттєво підписуйте PDF-документи без створення облікового запису",
+      "content": "Вас дратують онлайн-інструменти підписання, які змушують вас реєструватися, підтверджувати електронну пошту або оплачувати підписку лише для того, щоб підписати один документ? HandleMyFile дозволяє додавати підписи до контрактів абсолютно безкоштовно без реєстрації.",
+      "badgeText": "Реєстрація не потрібна"
     },
     {
       "type": "ocr_how_to_steps",
-      "title": "How to Sign PDF Without Signup",
-      "badgeText": "Quick Steps",
+      "title": "Як підписати PDF без реєстрації",
+      "badgeText": "Швидкі кроки",
       "steps": [
         {
-          "title": "Upload Document",
-          "description": "Drop your PDF file into our registration-free workspace."
+          "title": "Завантажити документ",
+          "description": "Перемістіть свій PDF-файл у нашу робочу область без реєстрації."
         },
         {
-          "title": "Draw or Type Signature",
-          "description": "Create your signature with your mouse/touchpad, or upload an image."
+          "title": "Намалюйте або введіть підпис",
+          "description": "Створіть свій підпис за допомогою миші/сенсорної панелі або завантажте зображення."
         },
         {
-          "title": "Download Signed PDF",
-          "description": "Download your signed document instantly. Zero data is saved."
+          "title": "Завантажити підписаний PDF",
+          "description": "Миттєво завантажте підписаний документ. Нульові дані зберігаються."
         }
       ]
     },
     {
       "type": "excel_geo_targeting",
-      "title": "Your Signature is Secure and Stays in Your Browser",
-      "content": "Biometric and graphical signature drawings are processed entirely in RAM. We do not store your signature or documents on any server, providing maximum fraud prevention.",
-      "subTitle": "Cryptographically Safe",
-      "subContent": "Vectors are flattened directly on the client canvas.",
-      "badgeText": "Cryptographically Safe"
+      "title": "Ваш підпис у безпеці та залишається у вашому браузері",
+      "content": "Біометричні та графічні малюнки підпису повністю обробляються в оперативній пам'яті. Ми не зберігаємо ваш підпис або документи на жодному сервері, забезпечуючи максимальну запобігання шахрайству.",
+      "subTitle": "Криптографічно безпечний",
+      "subContent": "Вектори зводяться безпосередньо на полотно клієнта.",
+      "badgeText": "Криптографічно безпечний"
     },
     {
       "type": "redact_privacy_security",
-      "title": "Frictionless NDA & Contract Signing",
-      "content": "Perfect for freelancers and business professionals who want to execute agreements, job offers, or NDAs on the spot without any onboarding friction."
+      "title": "Угода про нерозповсюдження та підписання контракту",
+      "content": "Ідеально підходить для фрілансерів і бізнес-професіоналів, які хочуть виконувати угоди, пропозиції про роботу або угоди про нерозповсюдження на місці без будь-яких труднощів при вступі на роботу."
     },
     {
       "type": "split_performance",
-      "title": "Sign and Send in 15 Seconds",
-      "content": "With zero registration forms, email verification, or loading screens, you can sign any document and send it back immediately.",
-      "badgeText": "Speedy E-Sign"
+      "title": "Підпишіть і надішліть за 15 секунд",
+      "content": "Без реєстраційних форм, підтвердження електронної пошти чи екранів завантаження ви можете підписати будь-який документ і негайно надіслати його назад.",
+      "badgeText": "Швидкий E-Sign"
     }
   ],
   "faqs": [
     {
-      "q": "Do I need to sign up or input my email to download?",
-      "a": "No. You can download your signed PDF immediately with zero onboarding steps."
+      "q": "Чи потрібно мені зареєструватися чи ввести свою електронну адресу для завантаження?",
+      "a": "Ні. Ви можете завантажити свій підписаний PDF-файл одразу, не потребуючи жодних кроків для ознайомлення."
     },
     {
-      "q": "Is the signature legally binding?",
-      "a": "Yes, our e-signature complies with general electronic transaction laws for basic electronic signatures."
+      "q": "Чи має підпис юридичну силу?",
+      "a": "Так, наш електронний підпис відповідає загальним законам про електронні транзакції для основних електронних підписів."
     },
     {
-      "q": "Does HandleMyFile store my signature graphic?",
-      "a": "No. The signature graphics are processed strictly in browser memory and wiped clean on page reload."
+      "q": "Чи зберігає HandleMyFile мій графічний підпис?",
+      "a": "Ні. Графіка підпису обробляється суто в пам’яті браузера та стирається під час перезавантаження сторінки."
     }
   ],
   "badges": [
-    "No Registration",
-    "100% Free",
-    "Zero Footprint"
+    "Без реєстрації",
+    "100% безкоштовно",
+    "Нульовий слід"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Sign PDF Free",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Підпишіть PDF безкоштовно",
+  "supportCenter": "Центр підтримки",
+  "faqTitle": "Часті запитання"
 }

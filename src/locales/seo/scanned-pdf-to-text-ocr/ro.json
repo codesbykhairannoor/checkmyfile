@@ -1,0 +1,79 @@
+{
+  "title": "Convertiți PDF scanat în text",
+  "h1": "Extrageți text din PDF-urile scanate cu OCR",
+  "description": "Transformați PDF-urile și imaginile scanate care nu pot fi căutate în text simplu editabil la nivel local, folosind lucrătorii OCR WebAssembly în mai multe limbi.",
+  "sections": [
+    {
+      "type": "resize_hero_features",
+      "title": "Extrageți text din scanări instantaneu",
+      "content": "Utilizați tehnologia noastră avansată de recunoaștere optică a caracterelor (OCR) pentru a extrage text editabil din documente și imagini scanate.",
+      "badgeText": "OCR puternic"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Cum se extrage text cu OCR",
+      "badgeText": "Ghid simplu",
+      "steps": [
+        {
+          "title": "Încărcați Scanare",
+          "description": "Selectați fișierul PDF sau imagine scanat."
+        },
+        {
+          "title": "Rulați OCR",
+          "description": "Selectați limba și începeți procesul OCR."
+        },
+        {
+          "title": "Copiați sau descărcați",
+          "description": "Obțineți textul extras instantaneu."
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "Suport în mai multe limbi",
+      "content": "Motorul nostru OCR recunoaște mai multe limbi și seturi complexe de caractere cu o precizie ridicată.",
+      "subTitle": "Extracție precisă",
+      "subContent": "Produs de Tesseract OCR WebAssembly.",
+      "badgeText": "Extracție precisă"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "Procesare OCR privată",
+      "content": "Spre deosebire de alte instrumente OCR, nu trimitem documentele dvs. către API-uri cloud. Extragerea textului are loc chiar pe dispozitivul dvs."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Precizie ridicată",
+      "content": "Rată excelentă de recunoaștere pentru scanări clare.",
+      "badgeText": "Precis"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Acceptă textul scris de mână?",
+      "a": "OCR-ul nostru este optimizat pentru text tipărit. Textul scris de mână poate avea o precizie mai mică."
+    },
+    {
+      "q": "Fișierele mele sunt încărcate?",
+      "a": "Nu, motorul OCR rulează în întregime în browser folosind WebAssembly."
+    },
+    {
+      "q": "Pot extrage și text din imagini?",
+      "a": "Da, puteți încărca fișiere PNG, JPG sau PDF scanate."
+    }
+  ],
+  "badges": [
+    "OCR",
+    "Asigura",
+    "Gratuit"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Porniți extragerea OCR",
+  "supportCenter": "Centru de suport",
+  "faqTitle": "Întrebări frecvente"
+}

@@ -1,0 +1,79 @@
+{
+  "title": "PDF-wachtwoord verwijderen zonder wachtwoord",
+  "h1": "Wachtwoord verwijderen uit PDF zonder wachtwoord",
+  "description": "Verwijder de wachtwoordbeveiliging van uw PDF-bestanden zonder dat u het originele wachtwoord nodig heeft met behulp van onze geavanceerde ontgrendelingstool.",
+  "sections": [
+    {
+      "type": "protect_hero_features",
+      "title": "Verwijder PDF-wachtwoorden onmiddellijk",
+      "content": "Bent u uw PDF-wachtwoord vergeten? Met onze tool kunt u binnen enkele seconden de wachtwoordbeveiliging van uw documenten verwijderen, veilig in uw browser.",
+      "badgeText": "Direct ontgrendelen"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Hoe PDF te ontgrendelen",
+      "badgeText": "Korte handleiding",
+      "steps": [
+        {
+          "title": "Selecteer Vergrendelde PDF",
+          "description": "Upload het PDF-document dat u wilt ontgrendelen."
+        },
+        {
+          "title": "Wachtwoord verwijderen",
+          "description": "Klik op ontgrendelen om het wachtwoord uit het document te verwijderen."
+        },
+        {
+          "title": "Download ontgrendelde pdf",
+          "description": "Sla de onbeveiligde PDF op uw apparaat op."
+        }
+      ]
+    },
+    {
+      "type": "compare_geo_targeting",
+      "title": "100% veilige lokale verwerking",
+      "content": "Uw vergrendelde documenten bevatten gevoelige informatie. We verwerken ze lokaal met behulp van WebAssembly, zodat er nooit 0 bytes uw apparaat verlaten.",
+      "subTitle": "Privacy eerst",
+      "subContent": "Geen cloudservers, geen gegevensretentie.",
+      "badgeText": "Privacy eerst"
+    },
+    {
+      "type": "watermark_privacy_security",
+      "title": "Privacy op bankniveau",
+      "content": "We gebruiken geavanceerde algoritmen om de codering te verwijderen zonder de inhoud van uw document in gevaar te brengen."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Bliksemsnel",
+      "content": "Ontgrendel uw PDF in milliseconden.",
+      "badgeText": "Ultrasnel"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is het veilig om mijn PDF hier te ontgrendelen?",
+      "a": "Ja. Alle verwerking gebeurt lokaal in uw browser. Wij uploaden uw bestanden naar geen enkele server."
+    },
+    {
+      "q": "Kan het alle soorten wachtwoorden verwijderen?",
+      "a": "Het kan gebruikerswachtwoorden en eigenaarswachtwoorden verwijderen uit standaard gecodeerde PDF's."
+    },
+    {
+      "q": "Is dit hulpmiddel gratis?",
+      "a": "Ja, het is 100% gratis te gebruiken."
+    }
+  ],
+  "badges": [
+    "Geen upload",
+    "Zeker",
+    "Snel"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Ontgrendel PDF nu",
+  "supportCenter": "Ondersteuningscentrum",
+  "faqTitle": "Veelgestelde vragen"
+}

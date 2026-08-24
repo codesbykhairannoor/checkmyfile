@@ -1,71 +1,71 @@
 {
-  "title": "Compress PDF Without Losing Quality - High Definition Lossless - PL",
-  "h1": "Compress PDF Documents Online Without Losing Quality (PL)",
-  "description": "Reduce PDF file size while keeping high-resolution vectors and texts perfectly sharp. 100% private client-side processing.",
+  "title": "Kompresuj pliki PDF bez utraty jakości — bezstratna rozdzielczość w wysokiej rozdzielczości",
+  "h1": "Kompresuj dokumenty PDF online bez utraty jakości",
+  "description": "Zmniejsz rozmiar pliku PDF, zachowując doskonałą ostrość wektorów i tekstów o wysokiej rozdzielczości. 100% prywatne przetwarzanie po stronie klienta.",
   "sections": [
     {
       "type": "word_hero_features",
-      "title": "Shrink PDF File Size While Keeping Text Crystal Clear",
-      "content": "Disappointed with compressors that make your PDF documents blurry? Our adaptive vector engine reduces PDF file sizes up to 90% without losing quality, leaving texts and logos completely sharp.",
-      "badgeText": "Lossless Optimization"
+      "title": "Zmniejsz rozmiar pliku, zachowaj jakość HD",
+      "content": "Nie poświęcaj czytelności na rzecz rozmiaru. Zmniejsz swoje portfolio, rysunki wektorowe lub prezentacje, zachowując jednocześnie doskonałą ostrość tekstów i grafiki.",
+      "badgeText": "Jakość bezstratna"
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Compress PDF in Lossless Quality",
-      "badgeText": "Step-by-Step",
+      "title": "Jak bezstratnie kompresować pliki PDF",
+      "badgeText": "Proste kroki",
       "steps": [
         {
-          "title": "Select PDF File",
-          "description": "Drop your PDF document into the local browser reader."
+          "title": "Wybierz opcję Plik",
+          "description": "Wybierz wysokiej jakości plik PDF, który chcesz zmniejszyć."
         },
         {
-          "title": "Choose Recommended Preset",
-          "description": "Select medium compression to compress fonts and metadata losslessly."
+          "title": "Wybierz tryb bezstratny",
+          "description": "Wybierz ustawienie kompresji „Wysoka jakość”, aby zachować szczegóły."
         },
         {
-          "title": "Save High-Res PDF",
-          "description": "Download the compressed PDF with crisp text and high-res vector details."
+          "title": "Pobierz plik",
+          "description": "Uzyskaj jaśniejszy plik PDF bez rozmazanego tekstu i pikselowanych obrazów."
         }
       ]
     },
     {
       "type": "watermark_geo_targeting",
-      "title": "Designed for Professional Designers & Architects",
-      "content": "No blurry blueprints, diagrams, or portfolios. Our engine compresses unnecessary metadata while locking image quality ratios locally on your device.",
-      "subTitle": "Vector Lossless",
-      "subContent": "Keeps fonts and SVG outlines fully vector-sharp at any zoom level.",
-      "badgeText": "Vector Lossless"
+      "title": "Wyraźne teksty i ostre obrazy",
+      "content": "Używamy zaawansowanych algorytmów zachowywania DPI i wygładzania wektorów lokalnie w Twojej przeglądarce, aby mieć pewność, że Twoje dokumenty będą wyglądać dokładnie tak samo.",
+      "subTitle": "Przetwarzanie po stronie klienta",
+      "subContent": "Wszystko działa w WebAssembly.",
+      "badgeText": "Przetwarzanie po stronie klienta"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Absolute Privacy & Security",
-      "content": "Confidential company presentations, financial audits, or contracts remain offline on your device, ensuring maximum enterprise privacy compliance."
+      "title": "Idealny do portfolio i prezentacji",
+      "content": "Spraw, aby Twoje profesjonalne dokumenty wyglądały profesjonalnie, jednocześnie zmniejszając liczbę megabajtów, aby ułatwić ich udostępnianie."
     },
     {
       "type": "ocr_performance",
-      "title": "Lightning-Fast Lossless Engine",
-      "content": "Pure WebAssembly calculations optimize file structure directly in RAM, saving bandwidth and processing files instantly.",
-      "badgeText": "Lossless Speed"
+      "title": "Gwarancja zerowej pikselizacji",
+      "content": "Zachowaj 100% ostrości we wszystkich węzłach tekstowych.",
+      "badgeText": "Wyjście HD"
     }
   ],
   "faqs": [
     {
-      "q": "How does the lossless PDF compressor work?",
-      "a": "It reorganizes the PDF structure, compresses embedded fonts, and strips metadata without touching raster image ratios unless requested."
+      "q": "Jak można kompresować bez utraty jakości?",
+      "a": "Optymalizujemy struktury plików PDF, usuwamy nieużywane czcionki/obiekty i inteligentnie próbkujemy niewidoczne warstwy obrazu."
     },
     {
-      "q": "Will my text remain searchable?",
-      "a": "Yes. All text vectors are preserved. You can highlight, search, and copy text exactly as before."
+      "q": "Czy tekst będzie niewyraźny?",
+      "a": "Nie. Ścieżki wektorowe i elementy tekstowe są zachowywane doskonale, co pozwala uniknąć rozmycia spowodowanego rasteryzacją płaskiego obrazu."
     },
     {
-      "q": "Can I compress vector drawings and CAD blueprints?",
-      "a": "Yes, our vector-preservation engine keeps CAD details sharp even at maximum zoom scales."
+      "q": "Czy to narzędzie jest bezpłatne?",
+      "a": "Tak, całkowicie za darmo i działa w trybie offline."
     }
   ],
   "badges": [
-    "High Resolution",
-    "No Text Blur",
-    "Lossless Presets"
+    "Wysoka rozdzielczość",
+    "Bezstratny",
+    "Szybko"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Compress Lossless PDF",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Kompresuj bez utraty jakości",
+  "supportCenter": "Centrum wsparcia",
+  "faqTitle": "Często zadawane pytania"
 }

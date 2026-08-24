@@ -1,71 +1,71 @@
 {
-  "title": "Compress PDF Without Losing Quality - High Definition Lossless - VI",
-  "h1": "Compress PDF Documents Online Without Losing Quality (VI)",
-  "description": "Reduce PDF file size while keeping high-resolution vectors and texts perfectly sharp. 100% private client-side processing.",
+  "title": "Nén PDF mà không làm giảm chất lượng",
+  "h1": "Nén tài liệu PDF trực tuyến mà không làm giảm chất lượng",
+  "description": "Giảm kích thước tệp PDF trong khi vẫn giữ được các vectơ và văn bản có độ phân giải cao sắc nét hoàn hảo. Xử lý phía khách hàng riêng 100%.",
   "sections": [
     {
       "type": "word_hero_features",
-      "title": "Shrink PDF File Size While Keeping Text Crystal Clear",
-      "content": "Disappointed with compressors that make your PDF documents blurry? Our adaptive vector engine reduces PDF file sizes up to 90% without losing quality, leaving texts and logos completely sharp.",
-      "badgeText": "Lossless Optimization"
+      "title": "Giảm kích thước tệp, duy trì chất lượng HD",
+      "content": "Đừng hy sinh khả năng đọc cho kích thước. Thu nhỏ danh mục đầu tư, bản vẽ vector hoặc bản trình bày của bạn trong khi vẫn giữ cho văn bản và đồ họa hoàn toàn sắc nét.",
+      "badgeText": "Chất lượng không giảm chất lượng"
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Compress PDF in Lossless Quality",
-      "badgeText": "Step-by-Step",
+      "title": "Cách nén PDF không mất dữ liệu",
+      "badgeText": "Các bước đơn giản",
       "steps": [
         {
-          "title": "Select PDF File",
-          "description": "Drop your PDF document into the local browser reader."
+          "title": "Chọn tệp",
+          "description": "Chọn tệp PDF chất lượng cao mà bạn muốn thu nhỏ."
         },
         {
-          "title": "Choose Recommended Preset",
-          "description": "Select medium compression to compress fonts and metadata losslessly."
+          "title": "Chọn chế độ lossless",
+          "description": "Chọn cài đặt nén 'Chất lượng cao' để giữ lại các chi tiết."
         },
         {
-          "title": "Save High-Res PDF",
-          "description": "Download the compressed PDF with crisp text and high-res vector details."
+          "title": "Tải tập tin xuống",
+          "description": "Nhận bản PDF nhẹ hơn của bạn mà không có bất kỳ văn bản hoặc hình ảnh bị mờ nào."
         }
       ]
     },
     {
       "type": "watermark_geo_targeting",
-      "title": "Designed for Professional Designers & Architects",
-      "content": "No blurry blueprints, diagrams, or portfolios. Our engine compresses unnecessary metadata while locking image quality ratios locally on your device.",
-      "subTitle": "Vector Lossless",
-      "subContent": "Keeps fonts and SVG outlines fully vector-sharp at any zoom level.",
-      "badgeText": "Vector Lossless"
+      "title": "Văn bản sắc nét và hình ảnh sắc nét",
+      "content": "Chúng tôi sử dụng thuật toán lưu giữ và làm mịn vectơ nâng cao cục bộ bên trong trình duyệt của bạn để đảm bảo tài liệu của bạn trông giống hệt nhau.",
+      "subTitle": "Xử lý phía khách hàng",
+      "subContent": "Mọi thứ chạy trong WebAssembly.",
+      "badgeText": "Xử lý phía khách hàng"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Absolute Privacy & Security",
-      "content": "Confidential company presentations, financial audits, or contracts remain offline on your device, ensuring maximum enterprise privacy compliance."
+      "title": "Lý tưởng cho danh mục đầu tư và bản trình bày",
+      "content": "Giữ cho các tài liệu chuyên nghiệp của bạn trông chuyên nghiệp trong khi cắt giảm megabyte để chúng có thể được chia sẻ dễ dàng."
     },
     {
       "type": "ocr_performance",
-      "title": "Lightning-Fast Lossless Engine",
-      "content": "Pure WebAssembly calculations optimize file structure directly in RAM, saving bandwidth and processing files instantly.",
-      "badgeText": "Lossless Speed"
+      "title": "Đảm bảo không có pixel",
+      "content": "Duy trì độ sắc nét 100% trên tất cả các nút văn bản.",
+      "badgeText": "Đầu ra HD"
     }
   ],
   "faqs": [
     {
-      "q": "How does the lossless PDF compressor work?",
-      "a": "It reorganizes the PDF structure, compresses embedded fonts, and strips metadata without touching raster image ratios unless requested."
+      "q": "Làm thế nào có thể nén mà không làm giảm chất lượng?",
+      "a": "Chúng tôi tối ưu hóa cấu trúc PDF, loại bỏ các phông chữ/đối tượng không sử dụng và lấy mẫu các lớp hình ảnh không nhìn thấy một cách thông minh."
     },
     {
-      "q": "Will my text remain searchable?",
-      "a": "Yes. All text vectors are preserved. You can highlight, search, and copy text exactly as before."
+      "q": "Văn bản sẽ bị mờ?",
+      "a": "Không. Đường dẫn vectơ và các thành phần văn bản được giữ lại một cách hoàn hảo, tránh bị mờ do quá trình rasterization hình ảnh phẳng."
     },
     {
-      "q": "Can I compress vector drawings and CAD blueprints?",
-      "a": "Yes, our vector-preservation engine keeps CAD details sharp even at maximum zoom scales."
+      "q": "Công cụ này có miễn phí không?",
+      "a": "Có, hoàn toàn miễn phí và chạy ngoại tuyến."
     }
   ],
   "badges": [
-    "High Resolution",
-    "No Text Blur",
-    "Lossless Presets"
+    "Độ nét cao",
+    "không mất dữ liệu",
+    "Nhanh"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Compress Lossless PDF",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Nén mà không làm giảm chất lượng",
+  "supportCenter": "Trung tâm hỗ trợ",
+  "faqTitle": "Câu hỏi thường gặp"
 }

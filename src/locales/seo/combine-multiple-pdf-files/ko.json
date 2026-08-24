@@ -1,71 +1,71 @@
 {
-  "title": "Combine Multiple PDF Files - Merge PDFs Online Free - KO",
-  "h1": "Combine Multiple PDF Files Online (KO)",
-  "description": "Merge and combine multiple PDF files into one single document. Instant local processing, 100% private, no limit.",
+  "title": "여러 PDF 파일 결합",
+  "h1": "여러 PDF 파일을 온라인으로 결합(무료 및 클라이언트측)",
+  "description": "여러 PDF 파일을 하나의 문서로 병합하고 결합합니다. 즉각적인 로컬 처리, 100% 비공개, 제한 없음.",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Combine Multiple PDF Documents into One Instantly",
-      "content": "Need to combine multiple reports, certificates, or scan pages into a single PDF document? Our browser combiner lets you drag, drop, reorder, and merge files locally with zero waiting time.",
-      "badgeText": "PDF Combiner"
+      "title": "여러 PDF 파일을 하나로 결합",
+      "content": "송장, 보고서 또는 장을 단일 PDF 파일로 즉시 병합하여 작업 흐름을 구성하세요. 업로드가 필요하지 않습니다.",
+      "badgeText": "무제한 병합"
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Combine Multiple PDFs",
-      "badgeText": "Easy Guide",
+      "title": "PDF 파일을 결합하는 방법",
+      "badgeText": "쉬운 가이드",
       "steps": [
         {
-          "title": "Select Documents",
-          "description": "Upload all the PDF files you wish to combine."
+          "title": "파일 업로드",
+          "description": "병합하려는 모든 PDF를 끌어서 놓습니다."
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop the files to rearrange their sequence."
+          "title": "페이지 재정렬",
+          "description": "원하는 대로 드래그하여 문서의 순서를 재정렬하세요."
         },
         {
-          "title": "Combine Files",
-          "description": "Click the merge button to combine them into one file instantly."
+          "title": "병합 및 다운로드",
+          "description": "병합을 클릭하고 결합된 PDF를 즉시 다운로드하세요."
         }
       ]
     },
     {
       "type": "rotate_geo_targeting",
-      "title": "No File Uploads, 100% Safe for Personal Documents",
-      "content": "Unlike other sites that require you to upload your sensitive ijazah, scans, or bank records to their servers, our combiner runs entirely locally in your browser memory.",
-      "subTitle": "Privacy First",
-      "subContent": "No documents are ever transmitted over the network.",
-      "badgeText": "Privacy First"
+      "title": "수십 개의 파일을 안전하게 결합",
+      "content": "우리는 브라우저에서 모든 것을 처리하기 때문에 느린 인터넷 업로드를 기다리지 않고 기가바이트의 PDF를 병합할 수 있습니다.",
+      "subTitle": "제로 서버 업로드",
+      "subContent": "모든 병합은 컴퓨터의 RAM을 사용하여 수행됩니다.",
+      "badgeText": "제로 서버 업로드"
     },
     {
       "type": "sign_privacy_security",
-      "title": "Secure Corporate Data Merging",
-      "content": "Perfect for financial departments and lawyers combining highly sensitive multi-page contracts. HandleMyFile keeps your documents offline."
+      "title": "송장 및 보고서를 체계적으로 정리하세요",
+      "content": "과제를 제출하는 학생이든, 송장을 보내는 프리랜서이든, 이를 하나의 파일로 병합하면 훨씬 더 깔끔해집니다."
     },
     {
       "type": "resize_performance",
-      "title": "Instantaneous Local Merging",
-      "content": "Combining 10 large PDFs takes less than 1 second because we do not waste time uploading files to remote clouds.",
-      "badgeText": "Instant Merge"
+      "title": "즉각적인 병합 속도",
+      "content": "2초 안에 50개의 파일을 결합하세요.",
+      "badgeText": "번개처럼 빠른"
     }
   ],
   "faqs": [
     {
-      "q": "Is there a limit to how many PDFs I can combine?",
-      "a": "No, there are no limits on file count or size. Only your browser memory limit applies."
+      "q": "결합할 수 있는 파일 수에 제한이 있나요?",
+      "a": "아니요. 귀하의 장치에서 처리되므로 유일한 제한은 컴퓨터의 메모리입니다."
     },
     {
-      "q": "Can I rearrange pages before merging?",
-      "a": "Yes, you can drag and drop files in the workspace list to set their order before combining."
+      "q": "순서를 다시 정렬할 수 있나요?",
+      "a": "예, 병합하기 전에 파일을 원하는 순서로 쉽게 끌어서 놓을 수 있습니다."
     },
     {
-      "q": "Can I combine encrypted or password-protected PDFs?",
-      "a": "You need to unlock password-protected PDFs first before combining them."
+      "q": "내 파일이 서버로 이동하나요?",
+      "a": "절대 그렇지 않습니다. 병합은 브라우저 내에서 100% 오프라인으로 이루어집니다."
     }
   ],
   "badges": [
-    "No Upload Limits",
-    "Drag & Drop Reorder",
-    "100% Client-Side"
+    "업로드 없음",
+    "PDF 병합",
+    "제한 없는"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Combine PDFs",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "PDF 파일 결합",
+  "supportCenter": "지원 센터",
+  "faqTitle": "자주 묻는 질문"
 }

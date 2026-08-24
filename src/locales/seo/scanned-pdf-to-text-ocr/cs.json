@@ -1,0 +1,79 @@
+{
+  "title": "Převést naskenované PDF na text",
+  "h1": "Extrahujte text z naskenovaných PDF pomocí OCR",
+  "description": "Pomocí vícejazyčných pracovníků WebAssembly OCR přeměňte naskenované soubory PDF a obrázky bez možnosti vyhledávání na upravitelný prostý text lokálně.",
+  "sections": [
+    {
+      "type": "resize_hero_features",
+      "title": "Extrahujte text ze skenování okamžitě",
+      "content": "Použijte naši pokročilou technologii optického rozpoznávání znaků (OCR) k extrahování upravitelného textu z naskenovaných dokumentů a obrázků.",
+      "badgeText": "Výkonné OCR"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Jak extrahovat text pomocí OCR",
+      "badgeText": "Jednoduchý průvodce",
+      "steps": [
+        {
+          "title": "Nahrát sken",
+          "description": "Vyberte naskenovaný soubor PDF nebo obrázek."
+        },
+        {
+          "title": "Spusťte OCR",
+          "description": "Vyberte jazyk a spusťte proces OCR."
+        },
+        {
+          "title": "Kopírovat nebo stáhnout",
+          "description": "Získejte extrahovaný text okamžitě."
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "Vícejazyčná podpora",
+      "content": "Náš OCR engine rozpoznává více jazyků a složité znakové sady s vysokou přesností.",
+      "subTitle": "Přesná extrakce",
+      "subContent": "Používá technologii Tesseract OCR WebAssembly.",
+      "badgeText": "Přesná extrakce"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "Soukromé OCR zpracování",
+      "content": "Na rozdíl od jiných nástrojů OCR neposíláme vaše dokumenty do cloudových API. Extrakce textu probíhá přímo na vašem zařízení."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Vysoká přesnost",
+      "content": "Vynikající rychlost rozpoznávání pro čisté skenování.",
+      "badgeText": "Přesný"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Podporuje ručně psaný text?",
+      "a": "Naše OCR je optimalizováno pro tištěný text. Ručně psaný text může mít nižší přesnost."
+    },
+    {
+      "q": "Nahrají se moje soubory?",
+      "a": "Ne, OCR engine běží výhradně ve vašem prohlížeči pomocí WebAssembly."
+    },
+    {
+      "q": "Mohu extrahovat text i z obrázků?",
+      "a": "Ano, můžete nahrát soubory PNG, JPG nebo naskenované soubory PDF."
+    }
+  ],
+  "badges": [
+    "OCR",
+    "Zajistit",
+    "Uvolnit"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Spusťte extrakci OCR",
+  "supportCenter": "Centrum podpory",
+  "faqTitle": "Často kladené otázky"
+}

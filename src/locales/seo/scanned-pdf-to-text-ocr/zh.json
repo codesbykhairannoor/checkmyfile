@@ -1,0 +1,79 @@
+{
+  "title": "将扫描的 PDF 转换为文本",
+  "h1": "使用 OCR 从扫描的 PDF 中提取文本",
+  "description": "使用多语言 WebAssembly OCR 工作人员将不可搜索的扫描 PDF 和图像在本地转换为可编辑的纯文本。",
+  "sections": [
+    {
+      "type": "resize_hero_features",
+      "title": "立即从扫描中提取文本",
+      "content": "使用我们先进的光学字符识别 (OCR) 技术从扫描的文档和图像中提取可编辑文本。",
+      "badgeText": "强大的OCR功能"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "如何使用 OCR 提取文本",
+      "badgeText": "简单指南",
+      "steps": [
+        {
+          "title": "上传扫描件",
+          "description": "选择您的扫描 PDF 或图像文件。"
+        },
+        {
+          "title": "运行 OCR",
+          "description": "选择语言并启动 OCR 过程。"
+        },
+        {
+          "title": "复制或下载",
+          "description": "立即获取提取的文本。"
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "多语言支持",
+      "content": "我们的 OCR 引擎可以高精度识别多种语言和复杂的字符集。",
+      "subTitle": "准确提取",
+      "subContent": "由 Tesseract OCR WebAssembly 提供支持。",
+      "badgeText": "准确提取"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "私人 OCR 处理",
+      "content": "与其他 OCR 工具不同，我们不会将您的文档发送到云 API。 文本提取就在您的设备上进行。"
+    },
+    {
+      "type": "ocr_performance",
+      "title": "高精度",
+      "content": "清晰扫描的出色识别率。",
+      "badgeText": "精确的"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "支持手写文字吗？",
+      "a": "我们的 OCR 针对打印文本进行了优化。 手写文本的准确性可能较低。"
+    },
+    {
+      "q": "我的文件会上传吗？",
+      "a": "不，OCR 引擎完全使用 WebAssembly 在浏览器中运行。"
+    },
+    {
+      "q": "我也可以从图像中提取文本吗？",
+      "a": "是的，您可以上传 PNG、JPG 或扫描的 PDF 文件。"
+    }
+  ],
+  "badges": [
+    "光学字符识别",
+    "安全的",
+    "自由的"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "开始OCR提取",
+  "supportCenter": "支持中心",
+  "faqTitle": "常见问题解答"
+}

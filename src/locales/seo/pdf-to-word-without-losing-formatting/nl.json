@@ -1,0 +1,79 @@
+{
+  "title": "Gratis PDF naar Word-converter (.docx) zonder de opmaak te verliezen",
+  "h1": "Converteer PDF naar bewerkbare Word DOCX in uw browser",
+  "description": "Extraheer exacte tekst, lay-outruns en alinea's uit elke PDF naar een schoon Microsoft Word-bestand (.docx), rechtstreeks in het browsergeheugen.",
+  "sections": [
+    {
+      "type": "watermark_hero_features",
+      "title": "Converteer PDF perfect naar Word",
+      "content": "Transformeer uw PDF-documenten naar bewerkbare Word-bestanden terwijl de originele lay-out, lettertypen en afbeeldingen intact blijven.",
+      "badgeText": "Behoud de opmaak"
+    },
+    {
+      "type": "protect_how_to_steps",
+      "title": "Hoe PDF naar Word te converteren",
+      "badgeText": "Gemakkelijke conversie",
+      "steps": [
+        {
+          "title": "Upload pdf",
+          "description": "Selecteer het PDF-bestand dat u wilt converteren."
+        },
+        {
+          "title": "Converteren naar DOCX",
+          "description": "Klik op converteren om de lokale verwerking te starten."
+        },
+        {
+          "title": "Word-bestand downloaden",
+          "description": "Sla het volledig bewerkbare Word-document op."
+        }
+      ]
+    },
+    {
+      "type": "excel_geo_targeting",
+      "title": "Nauwkeurig behoud van lay-out",
+      "content": "Onze geavanceerde parser begrijpt alinea's, tabellen en kolommen, zodat uw Word-document er precies zo uitziet als de PDF.",
+      "subTitle": "Hoge betrouwbaarheid",
+      "subContent": "Behoud styling en structuur.",
+      "badgeText": "Hoge betrouwbaarheid"
+    },
+    {
+      "type": "redact_privacy_security",
+      "title": "Veilige conversie aan de clientzijde",
+      "content": "Zet vertrouwelijke contracten en rapporten veilig om. De conversie gebeurt volledig op uw apparaat."
+    },
+    {
+      "type": "watermark_performance",
+      "title": "Snelle verwerking",
+      "content": "Converteer documenten van meerdere pagina's in enkele seconden.",
+      "badgeText": "Snelle uitvoer"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Zal de indeling veranderen?",
+      "a": "We streven ernaar de exacte lay-out te behouden, inclusief tabellen, afbeeldingen en tekstuitlijning."
+    },
+    {
+      "q": "Wordt dit verwerkt op een server?",
+      "a": "Nee, de conversie gebeurt volledig in uw browser voor maximale privacy."
+    },
+    {
+      "q": "Kan ik de tekst na de conversie bewerken?",
+      "a": "Ja, het resulterende DOCX-bestand is volledig bewerkbaar in Microsoft Word of Google Docs."
+    }
+  ],
+  "badges": [
+    "Bewerkbaar",
+    "Nauwkeurig",
+    "Privé"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Converteren naar Word",
+  "supportCenter": "Ondersteuningscentrum",
+  "faqTitle": "Veelgestelde vragen"
+}

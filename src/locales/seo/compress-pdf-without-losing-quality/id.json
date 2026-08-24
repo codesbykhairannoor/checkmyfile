@@ -1,71 +1,71 @@
 {
-  "title": "Kompres PDF Tanpa Mengurangi Kualitas - Lossless High Definition",
-  "h1": "Kecilkan PDF Online Tanpa Merusak Ketajaman Teks & Gambar",
-  "description": "Pertahankan kegunaan profesional dengan kompresi tingkat tinggi yang tetap menjaga kejelasan teks, diagram, dan gambar.",
+  "title": "Kompres PDF Tanpa Kehilangan Kualitas",
+  "h1": "Kompres Dokumen PDF Secara Online Tanpa Kehilangan Kualitas",
+  "description": "Kurangi ukuran file PDF sekaligus menjaga vektor dan teks resolusi tinggi tetap tajam. 100% pemrosesan sisi klien pribadi.",
   "sections": [
     {
       "type": "word_hero_features",
-      "title": "Kecilkan Ukuran PDF dengan Teks yang Tetap Tajam",
-      "content": "Kecewa dengan kompresor lain yang membuat dokumen PDF Anda buram? Engine vektor adaptif kami mengecilkan ukuran PDF hingga 90% tanpa merusak kualitas teks dan gambar.",
-      "badgeText": "Optimasi Lossless"
+      "title": "Kurangi Ukuran File, Pertahankan Kualitas HD",
+      "content": "Jangan korbankan keterbacaan demi ukuran. Kecilkan portofolio, gambar vektor, atau presentasi Anda sambil menjaga teks dan grafik tetap tajam.",
+      "badgeText": "Kualitas Tanpa Rugi"
     },
     {
       "type": "merge_how_to_steps",
-      "title": "Cara Kompres PDF Kualitas Lossless",
-      "badgeText": "Langkah-Langkah",
+      "title": "Cara Mengompresi PDF Tanpa Hilang",
+      "badgeText": "Langkah Sederhana",
       "steps": [
         {
-          "title": "Pilih Berkas PDF",
-          "description": "Tarik berkas PDF Anda ke pembaca browser lokal kami."
+          "title": "Pilih File",
+          "description": "Pilih PDF berkualitas tinggi yang ingin Anda kecilkan."
         },
         {
-          "title": "Pilih Preset Rekomendasi",
-          "description": "Pilih kompresi medium untuk mempertahankan kepadatan DPI gambar asli."
+          "title": "Pilih Mode Tanpa Rugi",
+          "description": "Pilih pengaturan kompresi 'Kualitas Tinggi' untuk menjaga detailnya."
         },
         {
-          "title": "Unduh PDF Berkualitas",
-          "description": "Simpan berkas hasil kompresi yang tetap tajam dan mudah dibaca."
+          "title": "Unduh Berkas",
+          "description": "Dapatkan PDF yang lebih ringan tanpa teks buram atau gambar berpiksel."
         }
       ]
     },
     {
       "type": "watermark_geo_targeting",
-      "title": "Dirancang untuk Desainer, Arsitek & Profesional",
-      "content": "Tidak ada lagi denah, diagram, atau portofolio yang buram. Kompresor kami menghapus metadata usang tanpa merusak elemen grafis penting.",
-      "subTitle": "Lossless Vektor",
-      "subContent": "Menjaga outline font dan SVG tetap tajam pada semua tingkat zoom.",
-      "badgeText": "Lossless Vektor"
+      "title": "Teks Tajam dan Gambar Tajam",
+      "content": "Kami menggunakan algoritma retensi DPI dan penghalusan vektor tingkat lanjut secara lokal di dalam browser Anda untuk memastikan dokumen Anda terlihat persis sama.",
+      "subTitle": "Pemrosesan Sisi Klien",
+      "subContent": "Semuanya berjalan di WebAssembly.",
+      "badgeText": "Pemrosesan Sisi Klien"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Privasi Absolut & Keamanan",
-      "content": "Presentasi bisnis rahasia, audit keuangan, atau berkas penting tetap berada di perangkat lokal Anda, menjamin keamanan privasi korporat."
+      "title": "Ideal untuk Portofolio & Presentasi",
+      "content": "Jaga agar dokumen profesional Anda terlihat profesional sambil mengurangi megabyte agar mudah dibagikan."
     },
     {
       "type": "ocr_performance",
-      "title": "Pemrosesan Cepat Berbasis WebAssembly",
-      "content": "Kode kompresi berbasis WebAssembly berjalan di memori perangkat secara instan tanpa membebani kuota internet.",
-      "badgeText": "Kecepatan Lossless"
+      "title": "Jaminan Nol Pikselasi",
+      "content": "Pertahankan ketajaman 100% pada semua node teks.",
+      "badgeText": "Keluaran HD"
     }
   ],
   "faqs": [
     {
-      "q": "Mengapa teks tidak menjadi kabur saat dikompres di sini?",
-      "a": "Karena alat kami memisahkan data teks (vektor) dari gambar, lalu mengompres struktur internal file tanpa merusak kualitas render font."
+      "q": "Bagaimana cara mengompres tanpa kehilangan kualitas?",
+      "a": "Kami mengoptimalkan struktur PDF, menghapus font/objek yang tidak digunakan, dan dengan cerdas mengurangi sampel lapisan gambar yang tidak terlihat."
     },
     {
-      "q": "Apakah pencarian kata (Ctrl+F) di PDF masih berfungsi?",
-      "a": "Ya. Struktur pencarian teks tetap utuh dan aktif seperti sedia kala."
+      "q": "Apakah teksnya akan buram?",
+      "a": "Tidak. Jalur vektor dan elemen teks dipertahankan dengan sempurna, menghindari keburaman yang disebabkan oleh rasterisasi gambar datar."
     },
     {
-      "q": "Apakah kompresi lossless ini berbayar?",
-      "a": "100% gratis digunakan kapan saja tanpa batas pemakaian harian."
+      "q": "Apakah alat ini gratis?",
+      "a": "Ya, sepenuhnya gratis dan dijalankan secara offline."
     }
   ],
   "badges": [
-    "Resolusi Tinggi",
-    "Teks Tetap Jelas",
-    "Preset Lossless"
+    "Definisi Tinggi",
+    "Tanpa kerugian",
+    "Cepat"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Kompres PDF Lossless",
+  "buttonText": "Kompres Tanpa Kehilangan Kualitas",
   "supportCenter": "Pusat Dukungan",
   "faqTitle": "Pertanyaan yang Sering Diajukan"
 }

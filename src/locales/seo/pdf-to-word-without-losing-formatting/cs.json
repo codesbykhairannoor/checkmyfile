@@ -1,0 +1,79 @@
+{
+  "title": "Zdarma PDF to Word Converter (.docx) bez ztráty formátování",
+  "h1": "Převeďte PDF do upravitelného Word DOCX ve vašem prohlížeči",
+  "description": "Extrahujte přesný text, rozvržení a odstavce z libovolného PDF do čistého souboru Microsoft Word (.docx) přímo v paměti prohlížeče.",
+  "sections": [
+    {
+      "type": "watermark_hero_features",
+      "title": "Převeďte PDF do Wordu dokonale",
+      "content": "Transformujte své dokumenty PDF do upravitelných souborů Word, přičemž původní rozvržení, písma a obrázky zůstanou nedotčené.",
+      "badgeText": "Zachovat formátování"
+    },
+    {
+      "type": "protect_how_to_steps",
+      "title": "Jak převést PDF do Wordu",
+      "badgeText": "Snadná konverze",
+      "steps": [
+        {
+          "title": "Nahrát PDF",
+          "description": "Vyberte soubor PDF, který chcete převést."
+        },
+        {
+          "title": "Převést na DOCX",
+          "description": "Kliknutím na převést spustíte místní zpracování."
+        },
+        {
+          "title": "Stáhněte si soubor Word",
+          "description": "Uložte plně upravitelný dokument aplikace Word."
+        }
+      ]
+    },
+    {
+      "type": "excel_geo_targeting",
+      "title": "Přesné zachování rozložení",
+      "content": "Náš pokročilý analyzátor rozumí odstavcům, tabulkám a sloupcům a zajišťuje, že váš dokument aplikace Word bude vypadat přesně jako PDF.",
+      "subTitle": "Vysoká věrnost",
+      "subContent": "Udržujte styl a strukturu.",
+      "badgeText": "Vysoká věrnost"
+    },
+    {
+      "type": "redact_privacy_security",
+      "title": "Bezpečná konverze na straně klienta",
+      "content": "Bezpečně převádějte důvěrné smlouvy a zprávy. Převod probíhá výhradně na vašem zařízení."
+    },
+    {
+      "type": "watermark_performance",
+      "title": "Rychlé zpracování",
+      "content": "Převeďte vícestránkové dokumenty během několika sekund.",
+      "badgeText": "Rychlý výstup"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Změní se rozvržení?",
+      "a": "Snažíme se zachovat přesné rozložení, včetně tabulek, obrázků a zarovnání textu."
+    },
+    {
+      "q": "Je to zpracováno na serveru?",
+      "a": "Ne, konverze se provádí kompletně ve vašem prohlížeči pro maximální soukromí."
+    },
+    {
+      "q": "Mohu upravit text po převodu?",
+      "a": "Ano, výsledný soubor DOCX je plně upravitelný v Microsoft Word nebo Google Docs."
+    }
+  ],
+  "badges": [
+    "Upravitelné",
+    "Přesný",
+    "Soukromé"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Převést do Wordu",
+  "supportCenter": "Centrum podpory",
+  "faqTitle": "Často kladené otázky"
+}

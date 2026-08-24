@@ -1,0 +1,79 @@
+{
+  "title": "Ordna om PDF-sidor Dra och släpp gratis",
+  "h1": "Ordna om PDF-sidor enkelt med dra och släpp",
+  "description": "Organisera och ändra ordning på sidor i ditt PDF-dokument visuellt genom att dra och släppa miniatyrer. 100 % gratis och lokalt.",
+  "sections": [
+    {
+      "type": "word_hero_features",
+      "title": "Organisera PDF-sidor visuellt",
+      "content": "Ändra ordningen på dina PDF-sidor genom att helt enkelt dra och släppa miniatyrerna. Ingen komplex programvara behövs.",
+      "badgeText": "Enkel ombeställning"
+    },
+    {
+      "type": "split_how_to_steps",
+      "title": "Hur man omordnar PDF-sidor",
+      "badgeText": "Steg-för-steg",
+      "steps": [
+        {
+          "title": "Ladda upp PDF",
+          "description": "Välj den PDF-fil du vill organisera."
+        },
+        {
+          "title": "Dra och släpp",
+          "description": "Klicka och dra sidminiatyrerna för att ordna om dem."
+        },
+        {
+          "title": "Spara ändringar",
+          "description": "Ladda ner det nybeställda PDF-dokumentet."
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "Visuellt dra & släpp-gränssnitt",
+      "content": "Vårt intuitiva gränssnitt gör det otroligt enkelt att se dina sidor och flytta dem precis där de behöver vara.",
+      "subTitle": "Interaktiv",
+      "subContent": "Generering av miniatyrer i realtid.",
+      "badgeText": "Interaktiv"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "100 % sortering på klientsidan",
+      "content": "Dina dokument ordnas om lokalt i din webbläsare. Vi garanterar fullständig integritet."
+    },
+    {
+      "type": "resize_performance",
+      "title": "Smidig upplevelse",
+      "content": "Ordna om stora dokument utan fördröjning.",
+      "badgeText": "Optimerad"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Kan jag ta bort sidor när jag beställer om?",
+      "a": "Ja, du kan också välja sidor och ta bort dem om det behövs."
+    },
+    {
+      "q": "Fungerar det på mobilen?",
+      "a": "Ja, vårt dra och släpp-gränssnitt är beröringsvänligt och fungerar på mobila enheter."
+    },
+    {
+      "q": "Laddas mina filer upp till en server?",
+      "a": "Nej, all omordning sker direkt på din enhet."
+    }
+  ],
+  "badges": [
+    "Visuell",
+    "Privat",
+    "Gratis"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Ordna om sidor nu",
+  "supportCenter": "Supportcenter",
+  "faqTitle": "Vanliga frågor"
+}

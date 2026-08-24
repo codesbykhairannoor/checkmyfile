@@ -1,0 +1,79 @@
+{
+  "title": "Eliminar contraseña de PDF sin contraseña",
+  "h1": "Eliminar contraseña de PDF sin contraseña",
+  "description": "Elimine la protección con contraseña de sus archivos PDF sin necesidad de la contraseña original utilizando nuestra herramienta de desbloqueo avanzada.",
+  "sections": [
+    {
+      "type": "protect_hero_features",
+      "title": "Eliminar contraseñas de PDF al instante",
+      "content": "¿Olvidaste tu contraseña de PDF? Nuestra herramienta puede ayudarle a eliminar la protección con contraseña de sus documentos en segundos, de forma segura dentro de su navegador.",
+      "badgeText": "Desbloqueo instantáneo"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Cómo desbloquear PDF",
+      "badgeText": "Guía rápida",
+      "steps": [
+        {
+          "title": "Seleccionar PDF bloqueado",
+          "description": "Sube el documento PDF que deseas desbloquear."
+        },
+        {
+          "title": "Quitar contraseña",
+          "description": "Haga clic en desbloquear para eliminar la contraseña del documento."
+        },
+        {
+          "title": "Descargar PDF desbloqueado",
+          "description": "Guarde el PDF desprotegido en su dispositivo."
+        }
+      ]
+    },
+    {
+      "type": "compare_geo_targeting",
+      "title": "Procesamiento local 100% seguro",
+      "content": "Sus documentos bloqueados contienen información confidencial. Los procesamos localmente usando WebAssembly, asegurando que nunca salgan 0 bytes de su dispositivo.",
+      "subTitle": "Privacidad primero",
+      "subContent": "Sin servidores en la nube, sin retención de datos.",
+      "badgeText": "Privacidad primero"
+    },
+    {
+      "type": "watermark_privacy_security",
+      "title": "Privacidad a nivel bancario",
+      "content": "Utilizamos algoritmos avanzados para eliminar el cifrado sin comprometer el contenido de su documento."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Rayo rápido",
+      "content": "Desbloquee su PDF en milisegundos.",
+      "badgeText": "Ultrarrápido"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "¿Es seguro desbloquear mi PDF aquí?",
+      "a": "Sí. Todo el procesamiento se realiza localmente en su navegador. No subimos sus archivos a ningún servidor."
+    },
+    {
+      "q": "¿Puede eliminar todo tipo de contraseñas?",
+      "a": "Puede eliminar contraseñas de usuario y contraseñas de propietario de archivos PDF cifrados estándar."
+    },
+    {
+      "q": "¿Esta herramienta es gratuita?",
+      "a": "Sí, su uso es 100% gratuito."
+    }
+  ],
+  "badges": [
+    "Sin carga",
+    "Segura",
+    "Rápida"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Desbloquear PDF ahora",
+  "supportCenter": "Centro de soporte",
+  "faqTitle": "Preguntas frecuentes"
+}

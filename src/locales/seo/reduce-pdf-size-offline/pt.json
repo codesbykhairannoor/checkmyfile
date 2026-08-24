@@ -1,0 +1,79 @@
+{
+  "title": "Reduzir o tamanho do PDF off-line",
+  "h1": "Reduza o tamanho do PDF completamente offline no seu navegador",
+  "description": "Reduza o tamanho dos seus documentos PDF off-line diretamente no seu navegador, sem nenhum upload no servidor. 100% seguro.",
+  "sections": [
+    {
+      "type": "split_hero_features",
+      "title": "Reduza arquivos PDF off-line",
+      "content": "Compacte PDFs grandes sem conexão com a Internet. Nosso mecanismo WebAssembly funciona totalmente offline em seu navegador.",
+      "badgeText": "Compressão off-line"
+    },
+    {
+      "type": "ocr_how_to_steps",
+      "title": "Como reduzir o tamanho do PDF off-line",
+      "badgeText": "Etapas rápidas",
+      "steps": [
+        {
+          "title": "Adicionar arquivo",
+          "description": "Selecione seu documento PDF grande."
+        },
+        {
+          "title": "Compressa",
+          "description": "Escolha o nível de compactação e clique em compactar."
+        },
+        {
+          "title": "Download",
+          "description": "Salve o arquivo PDF menor em seu computador."
+        }
+      ]
+    },
+    {
+      "type": "rotate_geo_targeting",
+      "title": "Funciona sem Internet",
+      "content": "Depois que a página for carregada, você poderá se desconectar da internet e a ferramenta ainda funcionará perfeitamente.",
+      "subTitle": "Verdadeiro off-line",
+      "subContent": "Nenhuma comunicação do servidor durante a compactação.",
+      "badgeText": "Verdadeiro off-line"
+    },
+    {
+      "type": "sign_privacy_security",
+      "title": "Privacidade máxima garantida",
+      "content": "Como nenhum dado é transmitido pela rede, seus documentos confidenciais ficam 100% seguros."
+    },
+    {
+      "type": "split_performance",
+      "title": "Motor Eficiente",
+      "content": "Alta taxa de compressão com processamento rápido.",
+      "badgeText": "Alta eficiência"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Como funciona a compactação offline?",
+      "a": "Usamos o WebAssembly para executar um poderoso mecanismo de compactação de PDF diretamente no seu navegador."
+    },
+    {
+      "q": "A qualidade será arruinada?",
+      "a": "Não, você pode escolher a compactação sem perdas para manter a alta qualidade visual."
+    },
+    {
+      "q": "Existe um limite de tamanho de arquivo?",
+      "a": "Não, como ele é executado localmente, você pode compactar arquivos tão grandes quanto a memória do seu dispositivo permitir."
+    }
+  ],
+  "badges": [
+    "Off-line",
+    "Segura",
+    "Rápida"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Reduza o tamanho agora",
+  "supportCenter": "Centro de suporte",
+  "faqTitle": "Perguntas frequentes"
+}

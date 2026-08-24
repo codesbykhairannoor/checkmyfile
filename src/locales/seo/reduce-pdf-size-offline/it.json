@@ -1,0 +1,79 @@
+{
+  "title": "Riduci le dimensioni del PDF offline",
+  "h1": "Riduci le dimensioni del PDF completamente offline nel tuo browser",
+  "description": "Riduci le dimensioni dei tuoi documenti PDF offline direttamente nel tuo browser senza alcun caricamento sul server. Sicuro al 100%.",
+  "sections": [
+    {
+      "type": "split_hero_features",
+      "title": "Riduci i file PDF offline",
+      "content": "Comprimi PDF di grandi dimensioni senza connessione Internet. Il nostro motore WebAssembly funziona interamente offline nel tuo browser.",
+      "badgeText": "Compressione offline"
+    },
+    {
+      "type": "ocr_how_to_steps",
+      "title": "Come ridurre le dimensioni del PDF offline",
+      "badgeText": "Passaggi rapidi",
+      "steps": [
+        {
+          "title": "Aggiungi file",
+          "description": "Seleziona il tuo documento PDF di grandi dimensioni."
+        },
+        {
+          "title": "Comprimere",
+          "description": "Scegli il livello di compressione e fai clic su Comprimi."
+        },
+        {
+          "title": "Scaricamento",
+          "description": "Salva il file PDF più piccolo sul tuo computer."
+        }
+      ]
+    },
+    {
+      "type": "rotate_geo_targeting",
+      "title": "Funziona senza Internet",
+      "content": "Una volta caricata la pagina, puoi disconnetterti da Internet e lo strumento continuerà a funzionare perfettamente.",
+      "subTitle": "Vero offline",
+      "subContent": "Nessuna comunicazione con il server durante la compressione.",
+      "badgeText": "Vero offline"
+    },
+    {
+      "type": "sign_privacy_security",
+      "title": "Massima Privacy Garantita",
+      "content": "Poiché nessun dato viene mai trasmesso in rete, i tuoi documenti sensibili sono sicuri al 100%."
+    },
+    {
+      "type": "split_performance",
+      "title": "Motore efficiente",
+      "content": "Rapporto di compressione elevato con elaborazione rapida.",
+      "badgeText": "Alta efficienza"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Come funziona la compressione offline?",
+      "a": "Utilizziamo WebAssembly per eseguire un potente motore di compressione PDF direttamente nel tuo browser."
+    },
+    {
+      "q": "La qualità verrà rovinata?",
+      "a": "No, puoi scegliere la compressione senza perdita di dati per mantenere un'elevata qualità visiva."
+    },
+    {
+      "q": "Esiste un limite alla dimensione del file?",
+      "a": "No, poiché viene eseguito localmente, puoi comprimere file grandi quanto consentito dalla memoria del tuo dispositivo."
+    }
+  ],
+  "badges": [
+    "Non in linea",
+    "Sicura",
+    "Veloce"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Riduci le dimensioni adesso",
+  "supportCenter": "Centro di supporto",
+  "faqTitle": "Domande frequenti"
+}

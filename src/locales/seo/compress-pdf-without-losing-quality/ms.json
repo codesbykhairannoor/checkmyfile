@@ -1,71 +1,71 @@
 {
-  "title": "Compress PDF Without Losing Quality - High Definition Lossless - MS",
-  "h1": "Compress PDF Documents Online Without Losing Quality (MS)",
-  "description": "Reduce PDF file size while keeping high-resolution vectors and texts perfectly sharp. 100% private client-side processing.",
+  "title": "Mampat PDF Tanpa Kehilangan Kualiti",
+  "h1": "Mampatkan Dokumen PDF Dalam Talian Tanpa Kehilangan Kualiti",
+  "description": "Kurangkan saiz fail PDF sambil mengekalkan vektor dan teks resolusi tinggi dengan tajam. 100% pemprosesan sisi pelanggan persendirian.",
   "sections": [
     {
       "type": "word_hero_features",
-      "title": "Shrink PDF File Size While Keeping Text Crystal Clear",
-      "content": "Disappointed with compressors that make your PDF documents blurry? Our adaptive vector engine reduces PDF file sizes up to 90% without losing quality, leaving texts and logos completely sharp.",
-      "badgeText": "Lossless Optimization"
+      "title": "Kecilkan Saiz Fail, Kekalkan Kualiti HD",
+      "content": "Jangan korbankan kebolehbacaan untuk saiz. Kecilkan portfolio, lukisan vektor atau pembentangan anda sambil memastikan teks dan grafik sentiasa jelas.",
+      "badgeText": "Kualiti Tanpa Rugi"
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Compress PDF in Lossless Quality",
-      "badgeText": "Step-by-Step",
+      "title": "Cara Memampatkan PDF Tanpa Kehilangan",
+      "badgeText": "Langkah Mudah",
       "steps": [
         {
-          "title": "Select PDF File",
-          "description": "Drop your PDF document into the local browser reader."
+          "title": "Pilih Fail",
+          "description": "Pilih PDF berkualiti tinggi yang ingin anda kecilkan."
         },
         {
-          "title": "Choose Recommended Preset",
-          "description": "Select medium compression to compress fonts and metadata losslessly."
+          "title": "Pilih Mod Lossless",
+          "description": "Pilih tetapan mampatan 'Kualiti Tinggi' untuk mengekalkan butiran."
         },
         {
-          "title": "Save High-Res PDF",
-          "description": "Download the compressed PDF with crisp text and high-res vector details."
+          "title": "Muat turun Fail",
+          "description": "Dapatkan PDF anda yang lebih ringan tanpa sebarang teks kabur atau imej berpiksel."
         }
       ]
     },
     {
       "type": "watermark_geo_targeting",
-      "title": "Designed for Professional Designers & Architects",
-      "content": "No blurry blueprints, diagrams, or portfolios. Our engine compresses unnecessary metadata while locking image quality ratios locally on your device.",
-      "subTitle": "Vector Lossless",
-      "subContent": "Keeps fonts and SVG outlines fully vector-sharp at any zoom level.",
-      "badgeText": "Vector Lossless"
+      "title": "Teks Renyah dan Imej Tajam",
+      "content": "Kami menggunakan pengekalan DPI lanjutan dan algoritma pelicinan vektor secara setempat dalam penyemak imbas anda untuk memastikan dokumen anda kelihatan sama.",
+      "subTitle": "Pemprosesan Sebelah Pelanggan",
+      "subContent": "Semuanya berjalan dalam WebAssembly.",
+      "badgeText": "Pemprosesan Sebelah Pelanggan"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Absolute Privacy & Security",
-      "content": "Confidential company presentations, financial audits, or contracts remain offline on your device, ensuring maximum enterprise privacy compliance."
+      "title": "Sesuai untuk Portfolio & Persembahan",
+      "content": "Pastikan dokumen profesional anda kelihatan profesional sambil mengurangkan megabait untuk menjadikannya mudah dikongsi."
     },
     {
       "type": "ocr_performance",
-      "title": "Lightning-Fast Lossless Engine",
-      "content": "Pure WebAssembly calculations optimize file structure directly in RAM, saving bandwidth and processing files instantly.",
-      "badgeText": "Lossless Speed"
+      "title": "Jaminan Piksel Sifar",
+      "content": "Kekalkan ketajaman 100% pada semua nod teks.",
+      "badgeText": "Keluaran HD"
     }
   ],
   "faqs": [
     {
-      "q": "How does the lossless PDF compressor work?",
-      "a": "It reorganizes the PDF structure, compresses embedded fonts, and strips metadata without touching raster image ratios unless requested."
+      "q": "Bagaimanakah mungkin untuk memampatkan tanpa kehilangan kualiti?",
+      "a": "Kami mengoptimumkan struktur PDF, mengalih keluar fon/objek yang tidak digunakan dan menurunkan sampel lapisan imej yang tidak kelihatan dengan bijak."
     },
     {
-      "q": "Will my text remain searchable?",
-      "a": "Yes. All text vectors are preserved. You can highlight, search, and copy text exactly as before."
+      "q": "Adakah teks akan menjadi kabur?",
+      "a": "Tidak. Laluan vektor dan elemen teks dikekalkan dengan sempurna, mengelakkan kabur yang disebabkan oleh rasterisasi imej rata."
     },
     {
-      "q": "Can I compress vector drawings and CAD blueprints?",
-      "a": "Yes, our vector-preservation engine keeps CAD details sharp even at maximum zoom scales."
+      "q": "Adakah alat ini percuma?",
+      "a": "Ya, percuma sepenuhnya dan berjalan di luar talian."
     }
   ],
   "badges": [
-    "High Resolution",
-    "No Text Blur",
-    "Lossless Presets"
+    "Definisi Tinggi",
+    "Tak rugi",
+    "Cepat"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Compress Lossless PDF",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Mampat Tanpa Kehilangan Kualiti",
+  "supportCenter": "Pusat Sokongan",
+  "faqTitle": "Soalan Lazim"
 }

@@ -1,0 +1,79 @@
+{
+  "title": "Eliminați parola PDF fără parolă",
+  "h1": "Eliminați parola din PDF fără parolă",
+  "description": "Eliminați protecția prin parolă din fișierele PDF fără a avea nevoie de parola originală, folosind instrumentul nostru avansat de deblocare.",
+  "sections": [
+    {
+      "type": "protect_hero_features",
+      "title": "Eliminați parolele PDF instantaneu",
+      "content": "Ai uitat parola PDF? Instrumentul nostru vă poate ajuta să eliminați protecția prin parolă din documentele dvs. în câteva secunde, în siguranță în browser.",
+      "badgeText": "Deblocare instantanee"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "Cum să deblochezi PDF",
+      "badgeText": "Ghid rapid",
+      "steps": [
+        {
+          "title": "Selectați PDF blocat",
+          "description": "Încărcați documentul PDF pe care doriți să îl deblocați."
+        },
+        {
+          "title": "Eliminați parola",
+          "description": "Faceți clic pe deblocare pentru a elimina parola din document."
+        },
+        {
+          "title": "Descărcați PDF deblocat",
+          "description": "Salvați PDF-ul neprotejat pe dispozitiv."
+        }
+      ]
+    },
+    {
+      "type": "compare_geo_targeting",
+      "title": "Procesare locală 100% sigură",
+      "content": "Documentele dvs. blocate conțin informații sensibile. Le procesăm local folosind WebAssembly, asigurându-ne că 0 octeți vor părăsi dispozitivul dvs.",
+      "subTitle": "În primul rând, confidențialitatea",
+      "subContent": "Fără servere cloud, fără reținere a datelor.",
+      "badgeText": "În primul rând, confidențialitatea"
+    },
+    {
+      "type": "watermark_privacy_security",
+      "title": "Confidențialitate la nivel de bancă",
+      "content": "Folosim algoritmi avansați pentru a elimina criptarea fără a compromite conținutul documentului dvs."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "Rapid fulger",
+      "content": "Deblocați PDF-ul în milisecunde.",
+      "badgeText": "Ultra rapid"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Este sigur să îmi deblochez PDF-ul aici?",
+      "a": "Da. Toată prelucrarea se face local în browserul dumneavoastră. Nu încărcăm fișierele dumneavoastră pe niciun server."
+    },
+    {
+      "q": "Poate elimina toate tipurile de parole?",
+      "a": "Poate elimina parolele utilizatorului și parolele proprietarului din PDF-urile standard criptate."
+    },
+    {
+      "q": "Acest instrument este gratuit?",
+      "a": "Da, este 100% gratuit de utilizat."
+    }
+  ],
+  "badges": [
+    "Fără încărcare",
+    "Asigura",
+    "Rapid"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Deblocați PDF acum",
+  "supportCenter": "Centru de suport",
+  "faqTitle": "Întrebări frecvente"
+}

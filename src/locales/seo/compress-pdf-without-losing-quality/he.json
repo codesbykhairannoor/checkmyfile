@@ -1,71 +1,71 @@
 {
-  "title": "Compress PDF Without Losing Quality - High Definition Lossless - HE",
-  "h1": "Compress PDF Documents Online Without Losing Quality (HE)",
-  "description": "Reduce PDF file size while keeping high-resolution vectors and texts perfectly sharp. 100% private client-side processing.",
+  "title": "דחוס PDF מבלי לאבד איכות",
+  "h1": "דחוס מסמכי PDF באופן מקוון מבלי לאבד איכות",
+  "description": "צמצם את גודל קובץ ה-PDF תוך שמירה על וקטורים וטקסטים ברזולוציה גבוהה בצורה מושלמת. 100% עיבוד פרטי בצד הלקוח.",
   "sections": [
     {
       "type": "word_hero_features",
-      "title": "Shrink PDF File Size While Keeping Text Crystal Clear",
-      "content": "Disappointed with compressors that make your PDF documents blurry? Our adaptive vector engine reduces PDF file sizes up to 90% without losing quality, leaving texts and logos completely sharp.",
-      "badgeText": "Lossless Optimization"
+      "title": "הפחת את גודל הקובץ, שמור על איכות HD",
+      "content": "אל תוותרי על קריאות לגודל. כווץ את תיקי העבודות, הציורים הווקטוריים או המצגות שלך תוך שמירה על טקסטים וגרפיקה חדים לחלוטין.",
+      "badgeText": "איכות ללא אובדן"
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Compress PDF in Lossless Quality",
-      "badgeText": "Step-by-Step",
+      "title": "כיצד לדחוס PDF ללא אובדן",
+      "badgeText": "שלבים פשוטים",
       "steps": [
         {
-          "title": "Select PDF File",
-          "description": "Drop your PDF document into the local browser reader."
+          "title": "בחר קובץ",
+          "description": "בחר את ה-PDF האיכותי שברצונך לכווץ."
         },
         {
-          "title": "Choose Recommended Preset",
-          "description": "Select medium compression to compress fonts and metadata losslessly."
+          "title": "בחר מצב ללא אובדן",
+          "description": "בחר את הגדרת הדחיסה 'איכות גבוהה' כדי לשמר פרטים."
         },
         {
-          "title": "Save High-Res PDF",
-          "description": "Download the compressed PDF with crisp text and high-res vector details."
+          "title": "הורד קובץ",
+          "description": "קבל את ה-PDF הקל יותר שלך ללא טקסט מטושטש או תמונות מפוקסלות."
         }
       ]
     },
     {
       "type": "watermark_geo_targeting",
-      "title": "Designed for Professional Designers & Architects",
-      "content": "No blurry blueprints, diagrams, or portfolios. Our engine compresses unnecessary metadata while locking image quality ratios locally on your device.",
-      "subTitle": "Vector Lossless",
-      "subContent": "Keeps fonts and SVG outlines fully vector-sharp at any zoom level.",
-      "badgeText": "Vector Lossless"
+      "title": "טקסטים חדים ותמונות חדות",
+      "content": "אנו משתמשים באלגוריתמים מתקדמים של שימור DPI והחלקת וקטור באופן מקומי בתוך הדפדפן שלך כדי להבטיח שהמסמכים שלך נראים זהים לחלוטין.",
+      "subTitle": "עיבוד צד לקוח",
+      "subContent": "הכל פועל ב-WebAssembly.",
+      "badgeText": "עיבוד צד לקוח"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Absolute Privacy & Security",
-      "content": "Confidential company presentations, financial audits, or contracts remain offline on your device, ensuring maximum enterprise privacy compliance."
+      "title": "אידיאלי עבור תיקים ומצגות",
+      "content": "שמור על המסמכים המקצועיים שלך להיראות מקצועיים תוך צמצום מגה-בייט כדי להפוך אותם לשותפים בקלות."
     },
     {
       "type": "ocr_performance",
-      "title": "Lightning-Fast Lossless Engine",
-      "content": "Pure WebAssembly calculations optimize file structure directly in RAM, saving bandwidth and processing files instantly.",
-      "badgeText": "Lossless Speed"
+      "title": "אפס פיקסלים אחריות",
+      "content": "שמור על 100% חדות בכל צמתי הטקסט.",
+      "badgeText": "פלט HD"
     }
   ],
   "faqs": [
     {
-      "q": "How does the lossless PDF compressor work?",
-      "a": "It reorganizes the PDF structure, compresses embedded fonts, and strips metadata without touching raster image ratios unless requested."
+      "q": "איך אפשר לדחוס בלי לאבד איכות?",
+      "a": "אנו מבצעים אופטימיזציה של מבני PDF, מסירים גופנים/אובייקטים שאינם בשימוש, ומקטינים בצורה חכמה שכבות תמונה שלא נראו."
     },
     {
-      "q": "Will my text remain searchable?",
-      "a": "Yes. All text vectors are preserved. You can highlight, search, and copy text exactly as before."
+      "q": "האם הטקסט יהפוך מטושטש?",
+      "a": "לא. נתיבים וקטוריים ורכיבי טקסט נשמרים בצורה מושלמת, תוך הימנעות מהטשטוש הנגרם על ידי רסטר תמונה שטוחה."
     },
     {
-      "q": "Can I compress vector drawings and CAD blueprints?",
-      "a": "Yes, our vector-preservation engine keeps CAD details sharp even at maximum zoom scales."
+      "q": "האם הכלי הזה בחינם?",
+      "a": "כן, לגמרי בחינם ופועל במצב לא מקוון."
     }
   ],
   "badges": [
-    "High Resolution",
-    "No Text Blur",
-    "Lossless Presets"
+    "High Definition",
+    "ללא אובדן",
+    "מָהִיר"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Compress Lossless PDF",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "דחיסה מבלי לאבד איכות",
+  "supportCenter": "מרכז תמיכה",
+  "faqTitle": "שאלות נפוצות"
 }

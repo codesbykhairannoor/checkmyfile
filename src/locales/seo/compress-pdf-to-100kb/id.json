@@ -1,71 +1,71 @@
 {
-  "title": "Kompres PDF ke 100KB - Perkecil PDF di Bawah 100KB Online",
-  "h1": "Kecilkan File PDF Hingga Di Bawah 100KB Secara Instan",
-  "description": "Sangat cocok untuk pendaftaran CPNS, visa, beasiswa, atau unggahan berkas portal instansi pemerintah. Kompres lokal aman.",
+  "title": "Kompres PDF menjadi 100KB",
+  "h1": "Kompres File PDF menjadi 100KB Online",
+  "description": "Kecilkan dokumen PDF besar Anda di bawah 100KB untuk portal pemerintah, lamaran pekerjaan, atau formulir visa sepenuhnya di browser Anda.",
   "sections": [
     {
       "type": "resize_hero_features",
-      "title": "Kecilkan PDF ke 100KB secara Instan & Aman",
-      "content": "Kesulitan dengan batas unggahan 100KB di portal CPNS, pendaftaran kerja, atau visa? Kompresor lokal kami mengoptimalkan PDF Anda ke bawah 100KB dalam detik.",
-      "badgeText": "Target Batas 100KB"
+      "title": "Kecilkan PDF menjadi 100KB Secara Instan & Aman",
+      "content": "Berjuang dengan batas unggahan 100 KB yang ketat di portal pemerintah, situs kerja, atau permohonan visa? Kompresor lokal kami mengoptimalkan file PDF Anda di bawah 100KB dalam hitungan detik.",
+      "badgeText": "Target 100KB"
     },
     {
       "type": "split_how_to_steps",
-      "title": "Cara Mengecilkan PDF di Bawah 100KB",
+      "title": "Cara Kompres PDF dibawah 100KB",
       "badgeText": "Panduan Cepat",
       "steps": [
         {
-          "title": "Pilih Dokumen PDF",
-          "description": "Tarik berkas PDF Anda ke kompresor sisi klien kami."
+          "title": "Tambahkan Dokumen PDF",
+          "description": "Masukkan file PDF Anda ke kompresor sisi klien."
         },
         {
-          "title": "Pilih Kompresi Kuat",
-          "description": "Pilih preset kompresi kuat untuk otomatis mengecilkan di bawah 100KB."
+          "title": "Pilih Target 100KB",
+          "description": "Pilih kompresi yang kuat untuk secara otomatis menargetkan ukuran di bawah 100KB."
         },
         {
-          "title": "Unduh PDF Hasil",
-          "description": "Simpan berkas PDF ringan Anda, siap diunggah ke portal instansi."
+          "title": "Simpan PDF yang Dioptimalkan",
+          "description": "Unduh PDF terkompresi Anda secara instan, siap untuk diunggah."
         }
       ]
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Sangat Cocok untuk CPNS, Visa, dan Beasiswa",
-      "content": "Kompresi berjalan sepenuhnya di browser lokal Anda menggunakan WebAssembly, menjamin kepatuhan terhadap aturan keamanan data nasional.",
-      "subTitle": "100% Sisi Klien",
-      "subContent": "File tidak pernah meninggalkan browser Anda, menghindari risiko kebocoran data.",
-      "badgeText": "100% Sisi Klien"
+      "title": "Sempurna untuk Portal CPNS, Visa, dan Beasiswa",
+      "content": "Tidak perlu khawatir tentang batasan sisi server. Semua kompresi dilakukan di kotak pasir browser lokal Anda, memastikan kepatuhan mutlak terhadap aturan keamanan.",
+      "subTitle": "Unggah dengan Ketenangan Pikiran",
+      "subContent": "Kami memproses dokumen sensitif Anda (scan KTP, paspor, CV) 100% secara lokal. Tidak ada risiko kebocoran data.",
+      "badgeText": "Unggah dengan Ketenangan Pikiran"
     },
     {
       "type": "compare_privacy_security",
-      "title": "Unggah dengan Rasa Aman",
-      "content": "Kami memproses dokumen sensitif Anda (KTP, paspor, CV) 100% lokal. Tidak ada dokumen Anda yang tersimpan di server luar."
+      "title": "Manajemen Kepadatan Tanpa Rugi",
+      "content": "Mengoptimalkan resolusi gambar dan skala DPI hingga mencapai ambang batas 100 KB tanpa mengubah teks menjadi buram yang tidak terbaca."
     },
     {
       "type": "watermark_performance",
-      "title": "Optimasi Kerapatan Gambar & DPI",
-      "content": "Menata resolusi gambar dan ketajaman teks secara adaptif untuk mencapai ukuran di bawah 100KB tanpa buram.",
-      "badgeText": "Target Akurat"
+      "title": "CPNS Siap",
+      "content": "Visa Disetujui",
+      "badgeText": "Di bawah 100KB"
     }
   ],
   "faqs": [
     {
-      "q": "Bagaimana cara kompres PDF agar pas di bawah 100KB?",
-      "a": "Pilih preset kompresi 'Kuat'. Algoritma kami akan memangkas metadata berlebih dan menurunkan DPI gambar secara otomatis ke tingkat optimal."
+      "q": "Bagaimana cara memastikan ukuran file di bawah 100KB?",
+      "a": "Pilih preset kompresi 'Kuat'. Alat kami mengoptimalkan vektor dan merasterisasi gradien kompleks agar sesuai dengan file Anda di bawah 100KB."
     },
     {
-      "q": "Apakah aman mengompres scan KTP / Ijazah di sini?",
-      "a": "Sangat aman. Pemrosesan berjalan offline di perangkat Anda sendiri. 0 data dikirim ke internet."
+      "q": "Apakah ada batasan berapa banyak file yang dapat saya kompres?",
+      "a": "Tidak. Karena pemrosesan berjalan secara lokal di memori browser, Anda dapat mengompresi file sebanyak yang Anda inginkan."
     },
     {
-      "q": "Berapa biaya untuk mengompres PDF ke 100KB?",
-      "a": "100% gratis tanpa pendaftaran akun atau batasan jumlah file."
+      "q": "Apakah dokumen saya aman?",
+      "a": "Ya. Mereka diproses seluruhnya secara offline melalui WebAssembly. 0 byte diunggah."
     }
   ],
   "badges": [
-    "Siap CPNS",
-    "Lolos Portal Visa",
-    "Di Bawah 100KB"
+    "Target 100KB",
+    "Aman",
+    "Cepat"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Kompres PDF ke 100KB",
+  "buttonText": "Kompres hingga 100KB",
   "supportCenter": "Pusat Dukungan",
   "faqTitle": "Pertanyaan yang Sering Diajukan"
 }

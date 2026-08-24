@@ -1,0 +1,79 @@
+{
+  "title": "스캔한 PDF를 텍스트로 변환",
+  "h1": "OCR을 사용하여 스캔한 PDF에서 텍스트 추출",
+  "description": "다국어 WebAssembly OCR 작업자를 사용하여 검색 불가능한 스캔 PDF 및 이미지를 로컬에서 편집 가능한 일반 텍스트로 변환합니다.",
+  "sections": [
+    {
+      "type": "resize_hero_features",
+      "title": "스캔에서 즉시 텍스트 추출",
+      "content": "고급 OCR(광학 문자 인식) 기술을 사용하여 스캔한 문서와 이미지에서 편집 가능한 텍스트를 추출합니다.",
+      "badgeText": "강력한 OCR"
+    },
+    {
+      "type": "merge_how_to_steps",
+      "title": "OCR로 텍스트를 추출하는 방법",
+      "badgeText": "간단한 가이드",
+      "steps": [
+        {
+          "title": "스캔 업로드",
+          "description": "스캔한 PDF 또는 이미지 파일을 선택하세요."
+        },
+        {
+          "title": "OCR 실행",
+          "description": "언어를 선택하고 OCR 프로세스를 시작하십시오."
+        },
+        {
+          "title": "복사 또는 다운로드",
+          "description": "추출된 텍스트를 즉시 가져옵니다."
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "다국어 지원",
+      "content": "당사의 OCR 엔진은 여러 언어와 복잡한 문자 집합을 매우 정확하게 인식합니다.",
+      "subTitle": "정확한 추출",
+      "subContent": "Tesseract OCR WebAssembly로 구동됩니다.",
+      "badgeText": "정확한 추출"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "개인 OCR 처리",
+      "content": "다른 OCR 도구와 달리 우리는 귀하의 문서를 클라우드 API로 보내지 않습니다. 텍스트 추출은 장치에서 바로 이루어집니다."
+    },
+    {
+      "type": "ocr_performance",
+      "title": "높은 정확도",
+      "content": "선명한 스캔에 대한 인식률이 뛰어납니다.",
+      "badgeText": "정밀한"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "손글씨 텍스트를 지원하나요?",
+      "a": "우리의 OCR은 인쇄된 텍스트에 최적화되어 있습니다. 손으로 쓴 텍스트는 정확도가 낮을 ​​수 있습니다."
+    },
+    {
+      "q": "내 파일이 업로드되나요?",
+      "a": "아니요, OCR 엔진은 WebAssembly를 사용하여 브라우저에서 완전히 실행됩니다."
+    },
+    {
+      "q": "이미지에서도 텍스트를 추출할 수 있나요?",
+      "a": "예, PNG, JPG 또는 스캔한 PDF 파일을 업로드할 수 있습니다."
+    }
+  ],
+  "badges": [
+    "OCR",
+    "안전한",
+    "무료"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "OCR 추출 시작",
+  "supportCenter": "지원 센터",
+  "faqTitle": "자주 묻는 질문"
+}

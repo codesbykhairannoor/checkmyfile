@@ -1,0 +1,79 @@
+{
+  "title": "Giảm kích thước PDF ngoại tuyến",
+  "h1": "Giảm kích thước PDF hoàn toàn ngoại tuyến trong trình duyệt của bạn",
+  "description": "Giảm kích thước tài liệu PDF ngoại tuyến trực tiếp trong trình duyệt của bạn mà không cần tải lên máy chủ. An toàn 100%.",
+  "sections": [
+    {
+      "type": "split_hero_features",
+      "title": "Thu nhỏ tệp PDF ngoại tuyến",
+      "content": "Nén các tệp PDF lớn mà không cần kết nối internet. Công cụ WebAssugging của chúng tôi chạy hoàn toàn ngoại tuyến trong trình duyệt của bạn.",
+      "badgeText": "Nén ngoại tuyến"
+    },
+    {
+      "type": "ocr_how_to_steps",
+      "title": "Cách giảm kích thước PDF ngoại tuyến",
+      "badgeText": "Các bước nhanh",
+      "steps": [
+        {
+          "title": "Thêm tập tin",
+          "description": "Chọn tài liệu PDF lớn của bạn."
+        },
+        {
+          "title": "nén",
+          "description": "Chọn mức độ nén và nhấp vào nén."
+        },
+        {
+          "title": "Tải xuống",
+          "description": "Lưu tệp PDF nhỏ hơn vào máy tính của bạn."
+        }
+      ]
+    },
+    {
+      "type": "rotate_geo_targeting",
+      "title": "Hoạt động không có Internet",
+      "content": "Sau khi tải trang, bạn có thể ngắt kết nối Internet và công cụ vẫn hoạt động hoàn hảo.",
+      "subTitle": "Đúng ngoại tuyến",
+      "subContent": "Không có kết nối máy chủ trong quá trình nén.",
+      "badgeText": "Đúng ngoại tuyến"
+    },
+    {
+      "type": "sign_privacy_security",
+      "title": "Đảm bảo quyền riêng tư tối đa",
+      "content": "Vì không có dữ liệu nào được truyền qua mạng nên tài liệu nhạy cảm của bạn được bảo mật 100%."
+    },
+    {
+      "type": "split_performance",
+      "title": "Động cơ hiệu quả",
+      "content": "Tỷ lệ nén cao với khả năng xử lý nhanh.",
+      "badgeText": "Hiệu quả cao"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Tính năng nén ngoại tuyến hoạt động như thế nào?",
+      "a": "Chúng tôi sử dụng WebAssugging để chạy công cụ nén PDF mạnh mẽ ngay bên trong trình duyệt của bạn."
+    },
+    {
+      "q": "Chất lượng sẽ bị hủy hoại?",
+      "a": "Không, bạn có thể chọn nén không mất dữ liệu để duy trì chất lượng hình ảnh cao."
+    },
+    {
+      "q": "Có giới hạn kích thước tập tin?",
+      "a": "Không, vì nó chạy cục bộ nên bạn có thể nén các tệp có dung lượng lớn nhất mà bộ nhớ thiết bị của bạn cho phép."
+    }
+  ],
+  "badges": [
+    "Ngoại tuyến",
+    "Chắc chắn",
+    "Nhanh"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Giảm kích thước ngay bây giờ",
+  "supportCenter": "Trung tâm hỗ trợ",
+  "faqTitle": "Câu hỏi thường gặp"
+}

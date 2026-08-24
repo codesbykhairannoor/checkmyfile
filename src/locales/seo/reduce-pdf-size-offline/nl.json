@@ -1,0 +1,79 @@
+{
+  "title": "Verklein de PDF-grootte offline",
+  "h1": "Verklein de PDF-grootte volledig offline in uw browser",
+  "description": "Verklein de grootte van uw PDF-documenten offline, rechtstreeks in uw browser, zonder serveruploads. 100% veilig.",
+  "sections": [
+    {
+      "type": "split_hero_features",
+      "title": "Verklein PDF-bestanden offline",
+      "content": "Comprimeer grote PDF's zonder internetverbinding. Onze WebAssembly-engine draait volledig offline in uw browser.",
+      "badgeText": "Offline compressie"
+    },
+    {
+      "type": "ocr_how_to_steps",
+      "title": "Hoe u de PDF-grootte offline kunt verkleinen",
+      "badgeText": "Snelle stappen",
+      "steps": [
+        {
+          "title": "Bestand toevoegen",
+          "description": "Selecteer uw grote PDF-document."
+        },
+        {
+          "title": "Comprimeren",
+          "description": "Kies het compressieniveau en klik op comprimeren."
+        },
+        {
+          "title": "Downloaden",
+          "description": "Sla het kleinere PDF-bestand op uw computer op."
+        }
+      ]
+    },
+    {
+      "type": "rotate_geo_targeting",
+      "title": "Werkt zonder internet",
+      "content": "Zodra de pagina is geladen, kunt u de verbinding met internet verbreken en werkt de tool nog steeds perfect.",
+      "subTitle": "Echt offline",
+      "subContent": "Geen servercommunicatie tijdens compressie.",
+      "badgeText": "Echt offline"
+    },
+    {
+      "type": "sign_privacy_security",
+      "title": "Maximale privacy gegarandeerd",
+      "content": "Omdat er nooit gegevens via het netwerk worden verzonden, zijn uw gevoelige documenten 100% veilig."
+    },
+    {
+      "type": "split_performance",
+      "title": "Efficiënte motor",
+      "content": "Hoge compressieverhouding met snelle verwerking.",
+      "badgeText": "Hoge efficiëntie"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Hoe werkt offline compressie?",
+      "a": "We gebruiken WebAssembly om een ​​krachtige PDF-compressie-engine rechtstreeks in uw browser uit te voeren."
+    },
+    {
+      "q": "Zal de kwaliteit verpest worden?",
+      "a": "Nee, u kunt kiezen voor verliesloze compressie om een ​​hoge visuele kwaliteit te behouden."
+    },
+    {
+      "q": "Is er een limiet voor de bestandsgrootte?",
+      "a": "Nee, omdat het lokaal wordt uitgevoerd, kunt u bestanden comprimeren zo groot als het geheugen van uw apparaat toelaat."
+    }
+  ],
+  "badges": [
+    "Offline",
+    "Zeker",
+    "Snel"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Verklein nu de grootte",
+  "supportCenter": "Ondersteuningscentrum",
+  "faqTitle": "Veelgestelde vragen"
+}

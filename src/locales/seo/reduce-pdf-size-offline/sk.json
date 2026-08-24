@@ -1,0 +1,79 @@
+{
+  "title": "Zmenšiť veľkosť PDF offline",
+  "h1": "Znížte veľkosť PDF úplne offline vo svojom prehliadači",
+  "description": "Znížte veľkosť svojich dokumentov PDF offline priamo vo vašom prehliadači bez akéhokoľvek nahrávania na server. 100% bezpečné.",
+  "sections": [
+    {
+      "type": "split_hero_features",
+      "title": "Zmenšiť súbory PDF offline",
+      "content": "Komprimujte veľké súbory PDF bez pripojenia k internetu. Náš nástroj WebAssembly beží úplne offline vo vašom prehliadači.",
+      "badgeText": "Offline kompresia"
+    },
+    {
+      "type": "ocr_how_to_steps",
+      "title": "Ako zmenšiť veľkosť PDF offline",
+      "badgeText": "Rýchle kroky",
+      "steps": [
+        {
+          "title": "Pridať súbor",
+          "description": "Vyberte svoj veľký dokument PDF."
+        },
+        {
+          "title": "Komprimovať",
+          "description": "Vyberte úroveň kompresie a kliknite na tlačidlo Komprimovať."
+        },
+        {
+          "title": "Stiahnuť",
+          "description": "Uložte si menší súbor PDF do počítača."
+        }
+      ]
+    },
+    {
+      "type": "rotate_geo_targeting",
+      "title": "Funguje bez internetu",
+      "content": "Po načítaní stránky sa môžete odpojiť od internetu a nástroj bude stále perfektne fungovať.",
+      "subTitle": "Skutočne offline",
+      "subContent": "Žiadna komunikácia so serverom počas kompresie.",
+      "badgeText": "Skutočne offline"
+    },
+    {
+      "type": "sign_privacy_security",
+      "title": "Maximálne súkromie zaručené",
+      "content": "Keďže sa po sieti nikdy neprenášajú žiadne dáta, vaše citlivé dokumenty sú 100% zabezpečené."
+    },
+    {
+      "type": "split_performance",
+      "title": "Efektívny motor",
+      "content": "Vysoký kompresný pomer s rýchlym spracovaním.",
+      "badgeText": "Vysoká účinnosť"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Ako funguje offline kompresia?",
+      "a": "WebAssembly používame na spustenie výkonného nástroja na kompresiu PDF priamo vo vašom prehliadači."
+    },
+    {
+      "q": "Zničí sa kvalita?",
+      "a": "Nie, môžete si vybrať bezstratovú kompresiu, aby ste zachovali vysokú vizuálnu kvalitu."
+    },
+    {
+      "q": "Existuje obmedzenie veľkosti súboru?",
+      "a": "Nie, keďže beží lokálne, môžete komprimovať súbory tak veľké, ako to umožňuje pamäť vášho zariadenia."
+    }
+  ],
+  "badges": [
+    "Offline",
+    "Zabezpečte",
+    "Rýchlo"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Zmenšite veľkosť",
+  "supportCenter": "Centrum podpory",
+  "faqTitle": "Často kladené otázky"
+}

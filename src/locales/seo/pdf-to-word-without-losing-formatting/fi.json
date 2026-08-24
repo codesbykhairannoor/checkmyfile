@@ -1,0 +1,79 @@
+{
+  "title": "Ilmainen PDF-muunnin Wordiksi (.docx) muotoilua menettämättä",
+  "h1": "Muunna PDF muokattavaksi Word DOCX:ksi selaimessasi",
+  "description": "Pura tarkka teksti, asettelut ja kappaleet mistä tahansa PDF-tiedostosta puhtaaksi Microsoft Word (.docx) -tiedostoksi suoraan selaimen muistiin.",
+  "sections": [
+    {
+      "type": "watermark_hero_features",
+      "title": "Muunna PDF Wordiksi täydellisesti",
+      "content": "Muunna PDF-asiakirjasi muokattaviksi Word-tiedostoiksi säilyttäen samalla alkuperäisen asettelun, fontit ja kuvat ennallaan.",
+      "badgeText": "Säilytä muotoilu"
+    },
+    {
+      "type": "protect_how_to_steps",
+      "title": "Kuinka muuntaa PDF Wordiksi",
+      "badgeText": "Helppo muuntaminen",
+      "steps": [
+        {
+          "title": "Lataa PDF",
+          "description": "Valitse PDF-tiedosto, jonka haluat muuntaa."
+        },
+        {
+          "title": "Muunna DOCX:ksi",
+          "description": "Aloita paikallinen käsittely napsauttamalla Muunna."
+        },
+        {
+          "title": "Lataa Word-tiedosto",
+          "description": "Tallenna täysin muokattavissa oleva Word-asiakirja."
+        }
+      ]
+    },
+    {
+      "type": "excel_geo_targeting",
+      "title": "Tarkka asettelun säilyttäminen",
+      "content": "Kehittynyt jäsentäjämme ymmärtää kappaleet, taulukot ja sarakkeet, mikä varmistaa, että Word-asiakirjasi näyttää täsmälleen PDF-tiedostolta.",
+      "subTitle": "High Fidelity",
+      "subContent": "Säilytä tyyli ja rakenne.",
+      "badgeText": "High Fidelity"
+    },
+    {
+      "type": "redact_privacy_security",
+      "title": "Suojattu asiakaspuolen muunnos",
+      "content": "Muunna luottamukselliset sopimukset ja raportit turvallisesti. Muunnos tapahtuu kokonaan laitteellasi."
+    },
+    {
+      "type": "watermark_performance",
+      "title": "Nopea käsittely",
+      "content": "Muunna monisivuisia asiakirjoja sekunneissa.",
+      "badgeText": "Nopea lähtö"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Muuttuuko asettelu?",
+      "a": "Pyrimme säilyttämään tarkan asettelun, mukaan lukien taulukot, kuvat ja tekstin tasauksen."
+    },
+    {
+      "q": "Prosessoidaanko tämä palvelimella?",
+      "a": "Ei, muunnos tehdään kokonaan selaimessasi maksimaalisen yksityisyyden takaamiseksi."
+    },
+    {
+      "q": "Voinko muokata tekstiä muuntamisen jälkeen?",
+      "a": "Kyllä, tuloksena oleva DOCX-tiedosto on täysin muokattavissa Microsoft Wordissa tai Google Docsissa."
+    }
+  ],
+  "badges": [
+    "Muokattava",
+    "Tarkka",
+    "Yksityinen"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Muunna Wordiksi",
+  "supportCenter": "Tukikeskus",
+  "faqTitle": "Usein kysytyt kysymykset"
+}

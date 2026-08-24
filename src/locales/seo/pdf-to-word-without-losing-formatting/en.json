@@ -1,0 +1,79 @@
+{
+  "title": "Free PDF to Word Converter (.docx) Without Losing Formatting",
+  "h1": "Convert PDF to Editable Word DOCX in Your Browser",
+  "description": "Extract exact text, layout runs, and paragraphs from any PDF into a clean Microsoft Word (.docx) file directly inside browser memory.",
+  "sections": [
+    {
+      "type": "watermark_hero_features",
+      "title": "Convert PDF to Word Perfectly",
+      "content": "Transform your PDF documents into editable Word files while keeping the original layout, fonts, and images intact.",
+      "badgeText": "Preserve Formatting"
+    },
+    {
+      "type": "protect_how_to_steps",
+      "title": "How to Convert PDF to Word",
+      "badgeText": "Easy Conversion",
+      "steps": [
+        {
+          "title": "Upload PDF",
+          "description": "Select the PDF file you wish to convert."
+        },
+        {
+          "title": "Convert to DOCX",
+          "description": "Click convert to start the local processing."
+        },
+        {
+          "title": "Download Word File",
+          "description": "Save the fully editable Word document."
+        }
+      ]
+    },
+    {
+      "type": "excel_geo_targeting",
+      "title": "Accurate Layout Retention",
+      "content": "Our advanced parser understands paragraphs, tables, and columns, ensuring your Word document looks exactly like the PDF.",
+      "subTitle": "High Fidelity",
+      "subContent": "Maintain styling and structure.",
+      "badgeText": "High Fidelity"
+    },
+    {
+      "type": "redact_privacy_security",
+      "title": "Secure Client-Side Conversion",
+      "content": "Convert confidential contracts and reports securely. The conversion happens entirely on your device."
+    },
+    {
+      "type": "watermark_performance",
+      "title": "Fast Processing",
+      "content": "Convert multi-page documents in seconds.",
+      "badgeText": "Quick Output"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Will the layout change?",
+      "a": "We strive to preserve the exact layout, including tables, images, and text alignment."
+    },
+    {
+      "q": "Is this processed on a server?",
+      "a": "No, the conversion is done completely in your browser for maximum privacy."
+    },
+    {
+      "q": "Can I edit the text after conversion?",
+      "a": "Yes, the resulting DOCX file is fully editable in Microsoft Word or Google Docs."
+    }
+  ],
+  "badges": [
+    "Editable",
+    "Accurate",
+    "Private"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Convert to Word",
+  "supportCenter": "Support Center",
+  "faqTitle": "Frequently Asked Questions"
+}

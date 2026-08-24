@@ -1,71 +1,71 @@
 {
-  "title": "Compress PDF to 100KB - Online PDF Shrinker to 100KB - SK",
-  "h1": "Compress PDF Files to 100KB Online (SK)",
-  "description": "Shrink your large PDF documents under 100KB for government portals, job applications, or visa forms completely in your browser.",
+  "title": "Komprimujte PDF na 100 KB",
+  "h1": "Komprimujte súbory PDF na 100 kB online",
+  "description": "Zmenšite svoje veľké dokumenty PDF pod 100 kB pre vládne portály, žiadosti o zamestnanie alebo vízové ​​formuláre úplne vo svojom prehliadači.",
   "sections": [
     {
       "type": "resize_hero_features",
-      "title": "Kecilkan PDF ke 100KB secara Instan & Aman",
-      "content": "Struggling with strict 100KB upload limits on government portals, job sites, or visa applications? Our local compressor optimizes your PDF file under 100KB in seconds.",
-      "badgeText": "100KB Target Limit"
+      "title": "Zmenšiť PDF na 100 kB okamžite a bezpečne",
+      "content": "Bojujete s prísnymi limitmi nahrávania 100 kB na vládne portály, pracovné stránky alebo žiadosti o víza? Náš lokálny kompresor optimalizuje váš súbor PDF do veľkosti 100 kB v priebehu niekoľkých sekúnd.",
+      "badgeText": "Cieľ 100 kB"
     },
     {
       "type": "split_how_to_steps",
-      "title": "How to Compress PDF under 100KB",
-      "badgeText": "Quick Guide",
+      "title": "Ako komprimovať PDF do 100 kB",
+      "badgeText": "Rýchly sprievodca",
       "steps": [
         {
-          "title": "Add PDF Document",
-          "description": "Drop your PDF file into the client-side compressor."
+          "title": "Pridať dokument PDF",
+          "description": "Presuňte súbor PDF do kompresora na strane klienta."
         },
         {
-          "title": "Select 100KB Target",
-          "description": "Choose strong compression to automatically target size under 100KB."
+          "title": "Vyberte Cieľ 100 kB",
+          "description": "Ak chcete automaticky zacieliť na veľkosť pod 100 kB, vyberte silnú kompresiu."
         },
         {
-          "title": "Save Optimized PDF",
-          "description": "Download your compressed PDF instantly, ready to upload."
+          "title": "Uložiť optimalizované PDF",
+          "description": "Stiahnite si komprimovaný súbor PDF okamžite, pripravený na odovzdanie."
         }
       ]
     },
     {
       "type": "protect_geo_targeting",
-      "title": "Perfect for CPNS, Visa, and Scholarship Portals",
-      "content": "No need to worry about server-side limits. All compression takes place in your local browser sandbox, ensuring absolute compliance with security rules.",
-      "subTitle": "100% Client-Side",
-      "subContent": "Files never leave your browser, avoiding public storage risks.",
-      "badgeText": "100% Client-Side"
+      "title": "Ideálne pre portály CPNS, víza a štipendiá",
+      "content": "Netreba sa obávať obmedzení na strane servera. Celá kompresia prebieha v karanténe vášho lokálneho prehliadača, čím sa zaisťuje absolútny súlad s bezpečnostnými pravidlami.",
+      "subTitle": "Nahrajte s pokojom v duši",
+      "subContent": "Vaše citlivé dokumenty (sken občianskeho preukazu, pasu, životopisu) spracujeme 100% lokálne. Nulové riziko úniku dát.",
+      "badgeText": "Nahrajte s pokojom v duši"
     },
     {
       "type": "compare_privacy_security",
-      "title": "Upload with Peace of Mind",
-      "content": "We process your sensitive documents (ID card scan, passport, CV) 100% locally. Zero risk of data leak."
+      "title": "Bezstratové riadenie hustoty",
+      "content": "Optimalizuje rozlíšenie obrazu a škály DPI tak, aby dosiahli hranicu 100 kB bez toho, aby sa texty zmenili na nečitateľné rozmazanie."
     },
     {
       "type": "watermark_performance",
-      "title": "Lossless Density Management",
-      "content": "Optimizes image resolution and DPI scales to hit the 100KB threshold without turning texts into illegible blur.",
-      "badgeText": "Accurate Target"
+      "title": "CPNS pripravené",
+      "content": "Víza schválené",
+      "badgeText": "Menej ako 100 kB"
     }
   ],
   "faqs": [
     {
-      "q": "How can I compress a PDF to exactly under 100KB?",
-      "a": "Select the 'Strong' compression preset. Our tool optimizes vectors and rasterizes complex gradients to fit your file under 100KB."
+      "q": "Ako sa uistím, že veľkosť súboru je menšia ako 100 kB?",
+      "a": "Vyberte predvoľbu kompresie „Silná“. Náš nástroj optimalizuje vektory a rastruje zložité prechody tak, aby sa zmestili do súboru do 100 kB."
     },
     {
-      "q": "Is there a limit on how many PDFs I can compress?",
-      "a": "No. Since processing runs locally in your browser memory, you can compress as many files as you want."
+      "q": "Existuje obmedzenie počtu súborov, ktoré môžem komprimovať?",
+      "a": "Nie. Keďže spracovanie prebieha lokálne v pamäti prehliadača, môžete komprimovať toľko súborov, koľko chcete."
     },
     {
-      "q": "Are my sensitive identity scans safe?",
-      "a": "Yes. They are processed entirely offline via WebAssembly. 0 bytes are uploaded."
+      "q": "Sú moje dokumenty v bezpečí?",
+      "a": "áno. Spracúvajú sa úplne offline cez WebAssembly. Odovzdáva sa 0 bajtov."
     }
   ],
   "badges": [
-    "CPNS Ready",
-    "Visa Approved",
-    "Under 100KB"
+    "Cieľ 100 kB",
+    "Zabezpečte",
+    "Rýchlo"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Compress PDF to 100KB",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Komprimujte na 100 kB",
+  "supportCenter": "Centrum podpory",
+  "faqTitle": "Často kladené otázky"
 }

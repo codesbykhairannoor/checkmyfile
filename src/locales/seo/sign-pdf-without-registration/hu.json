@@ -1,71 +1,71 @@
 {
-  "title": "Sign PDF Online Without Registration - Free E-Sign - HU",
-  "h1": "E-Sign PDF Documents Online Without Registration (HU)",
-  "description": "Place your electronic signature on any PDF file instantly. No account required, no signup, 100% private and free.",
+  "title": "PDF aláírása online regisztráció nélkül",
+  "h1": "PDF dokumentumok elektronikus aláírása online regisztráció nélkül",
+  "description": "Azonnal helyezze el elektronikus aláírását bármely PDF-fájlba. Nincs szükség fiókra, nincs regisztráció, 100%-ban privát és ingyenes.",
   "sections": [
     {
       "type": "watermark_hero_features",
-      "title": "Sign PDF Documents Instantly Without Creating an Account",
-      "content": "Annoyed by online sign tools that force you to register, confirm emails, or pay subscriptions just to sign a single paper? HandleMyFile lets you add signatures to contracts completely free without signup.",
-      "badgeText": "No Registration Required"
+      "title": "Aláírhat PDF dokumentumokat azonnal fiók létrehozása nélkül",
+      "content": "Bosszantják az online aláíró eszközök, amelyek regisztrációra, e-mailek megerősítésére vagy előfizetések fizetésére kényszerítenek, hogy csak egyetlen papírt írjanak alá? A HandleMyFile segítségével teljesen ingyenesen, regisztráció nélkül adhat aláírásokat a szerződésekhez.",
+      "badgeText": "Regisztráció nem szükséges"
     },
     {
       "type": "ocr_how_to_steps",
-      "title": "How to Sign PDF Without Signup",
-      "badgeText": "Quick Steps",
+      "title": "Hogyan írhat alá PDF-et regisztráció nélkül",
+      "badgeText": "Gyors lépések",
       "steps": [
         {
-          "title": "Upload Document",
-          "description": "Drop your PDF file into our registration-free workspace."
+          "title": "Dokumentum feltöltése",
+          "description": "Dobja be PDF-fájlját regisztráció nélküli munkaterületünkre."
         },
         {
-          "title": "Draw or Type Signature",
-          "description": "Create your signature with your mouse/touchpad, or upload an image."
+          "title": "Rajzolj vagy gépeld be az aláírást",
+          "description": "Hozza létre aláírását az egérrel/érintőpaddal, vagy töltsön fel egy képet."
         },
         {
-          "title": "Download Signed PDF",
-          "description": "Download your signed document instantly. Zero data is saved."
+          "title": "Aláírt PDF letöltése",
+          "description": "Azonnal töltse le aláírt dokumentumát. A rendszer nulla adatot ment el."
         }
       ]
     },
     {
       "type": "excel_geo_targeting",
-      "title": "Your Signature is Secure and Stays in Your Browser",
-      "content": "Biometric and graphical signature drawings are processed entirely in RAM. We do not store your signature or documents on any server, providing maximum fraud prevention.",
-      "subTitle": "Cryptographically Safe",
-      "subContent": "Vectors are flattened directly on the client canvas.",
-      "badgeText": "Cryptographically Safe"
+      "title": "Az aláírása biztonságos, és a böngészőben marad",
+      "content": "A biometrikus és grafikus aláírási rajzok feldolgozása teljes egészében RAM-ban történik. Aláírását vagy dokumentumait egyetlen szerveren sem tároljuk, maximális csalásmegelőzést biztosítva.",
+      "subTitle": "Kriptográfiailag biztonságos",
+      "subContent": "A vektorokat közvetlenül a kliens vásznán lapítják.",
+      "badgeText": "Kriptográfiailag biztonságos"
     },
     {
       "type": "redact_privacy_security",
-      "title": "Frictionless NDA & Contract Signing",
-      "content": "Perfect for freelancers and business professionals who want to execute agreements, job offers, or NDAs on the spot without any onboarding friction."
+      "title": "Súrlódásmentes NDA és szerződés-aláírás",
+      "content": "Tökéletes szabadúszóknak és üzleti szakembereknek, akik szerződéseket, állásajánlatokat vagy NDA-kat szeretnének a helyszínen végrehajtani anélkül, hogy bármilyen belső súrlódás lenne."
     },
     {
       "type": "split_performance",
-      "title": "Sign and Send in 15 Seconds",
-      "content": "With zero registration forms, email verification, or loading screens, you can sign any document and send it back immediately.",
-      "badgeText": "Speedy E-Sign"
+      "title": "Írja alá és küldje el 15 másodpercen belül",
+      "content": "A nulla regisztrációs űrlapok, e-mail-ellenőrzés vagy betöltési képernyők segítségével bármilyen dokumentumot aláírhat, és azonnal visszaküldheti.",
+      "badgeText": "Gyors E-Sign"
     }
   ],
   "faqs": [
     {
-      "q": "Do I need to sign up or input my email to download?",
-      "a": "No. You can download your signed PDF immediately with zero onboarding steps."
+      "q": "Regisztrálnom kell, vagy meg kell adnom az e-mail címemet a letöltéshez?",
+      "a": "Nem. Az aláírt PDF-fájlt azonnal letöltheti, nulla bevezető lépés nélkül."
     },
     {
-      "q": "Is the signature legally binding?",
-      "a": "Yes, our e-signature complies with general electronic transaction laws for basic electronic signatures."
+      "q": "Az aláírás jogilag kötelező érvényű?",
+      "a": "Igen, e-aláírásunk megfelel az alapvető elektronikus aláírásokra vonatkozó általános elektronikus tranzakciós törvényeknek."
     },
     {
-      "q": "Does HandleMyFile store my signature graphic?",
-      "a": "No. The signature graphics are processed strictly in browser memory and wiped clean on page reload."
+      "q": "A HandleMyFile tárolja az aláírási grafikámat?",
+      "a": "Nem. Az aláírási grafikákat szigorúan a böngésző memóriájában dolgozzák fel, és az oldal újratöltésekor törlik."
     }
   ],
   "badges": [
-    "No Registration",
-    "100% Free",
-    "Zero Footprint"
+    "Nincs regisztráció",
+    "100% ingyenes",
+    "Nulla lábnyom"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Sign PDF Free",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "PDF aláírása ingyenes",
+  "supportCenter": "Támogatási Központ",
+  "faqTitle": "Gyakran Ismételt Kérdések"
 }

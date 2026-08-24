@@ -300,6 +300,8 @@ const seoData = {
   }
 };
 
+const translationDict = require('./longtail-translation-dict.cjs');
+
 for (const toolId of Object.keys(seoData)) {
   const targetToolDir = path.join(__dirname, '..', 'src', 'locales', 'seo', toolId);
   if (!fs.existsSync(targetToolDir)) {
@@ -321,11 +323,45 @@ for (const toolId of Object.keys(seoData)) {
   }
 
   for (const lang of langs) {
-    const t = toolTranslations[lang] || {
-      ...toolTranslations.en,
-      title: `${toolTranslations.en.title} - ${lang.toUpperCase()}`,
-      h1: `${toolTranslations.en.h1} (${lang.toUpperCase()})`,
-    };
+    let t = toolTranslations[lang];
+    if (!t) {
+      const prefix = translationDict[lang] || '';
+      const en = toolTranslations.en;
+      
+      const applyPrefix = (str) => typeof str === 'string' ? prefix + str : str;
+      const applyPrefixArray = (arr) => Array.isArray(arr) ? arr.map(applyPrefix) : arr;
+
+      t = {
+        title: applyPrefix(en.title),
+        h1: applyPrefix(en.h1),
+        description: applyPrefix(en.description),
+        heroBadge: applyPrefix(en.heroBadge),
+        heroTitle: applyPrefix(en.heroTitle),
+        heroContent: applyPrefix(en.heroContent),
+        howToBadge: applyPrefix(en.howToBadge),
+        howToTitle: applyPrefix(en.howToTitle),
+        step1Title: applyPrefix(en.step1Title),
+        step1Desc: applyPrefix(en.step1Desc),
+        step2Title: applyPrefix(en.step2Title),
+        step2Desc: applyPrefix(en.step2Desc),
+        step3Title: applyPrefix(en.step3Title),
+        step3Desc: applyPrefix(en.step3Desc),
+        geoTitle: applyPrefix(en.geoTitle),
+        geoContent: applyPrefix(en.geoContent),
+        geoSubTitle: applyPrefix(en.geoSubTitle),
+        geoSubContent: applyPrefix(en.geoSubContent),
+        privacyTitle: applyPrefix(en.privacyTitle),
+        privacyContent: applyPrefix(en.privacyContent),
+        perfTitle: applyPrefix(en.perfTitle),
+        perfContent: applyPrefix(en.perfContent),
+        perfBadge: applyPrefix(en.perfBadge),
+        badges: applyPrefixArray(en.badges),
+        buttonText: applyPrefix(en.buttonText),
+        supportCenter: applyPrefix(en.supportCenter),
+        faqTitle: applyPrefix(en.faqTitle),
+        faqs: en.faqs.map(faq => ({ q: applyPrefix(faq.q), a: applyPrefix(faq.a) }))
+      };
+    }
 
     const data = {
       title: t.title,

@@ -1,71 +1,71 @@
 {
-  "title": "Compress PDF Without Losing Quality - High Definition Lossless - HU",
-  "h1": "Compress PDF Documents Online Without Losing Quality (HU)",
-  "description": "Reduce PDF file size while keeping high-resolution vectors and texts perfectly sharp. 100% private client-side processing.",
+  "title": "PDF tömörítése minőségromlás nélkül",
+  "h1": "PDF dokumentumok online tömörítése minőségromlás nélkül",
+  "description": "Csökkentse a PDF-fájl méretét, miközben a nagy felbontású vektorokat és szövegeket tökéletesen élesen tartja. 100%-ban privát ügyféloldali feldolgozás.",
   "sections": [
     {
       "type": "word_hero_features",
-      "title": "Shrink PDF File Size While Keeping Text Crystal Clear",
-      "content": "Disappointed with compressors that make your PDF documents blurry? Our adaptive vector engine reduces PDF file sizes up to 90% without losing quality, leaving texts and logos completely sharp.",
-      "badgeText": "Lossless Optimization"
+      "title": "Fájlméret csökkentése, HD minőség megőrzése",
+      "content": "Ne áldozza fel az olvashatóságot a méret miatt. Csökkentse portfólióit, vektoros rajzait vagy prezentációit, miközben a szövegek és grafikák tökéletesen élesek maradnak.",
+      "badgeText": "Veszteségmentes minőség"
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Compress PDF in Lossless Quality",
-      "badgeText": "Step-by-Step",
+      "title": "Hogyan lehet veszteségmentesen tömöríteni a PDF-et",
+      "badgeText": "Egyszerű lépések",
       "steps": [
         {
-          "title": "Select PDF File",
-          "description": "Drop your PDF document into the local browser reader."
+          "title": "Válassza a Fájl lehetőséget",
+          "description": "Válassza ki a kicsinyíteni kívánt kiváló minőségű PDF-et."
         },
         {
-          "title": "Choose Recommended Preset",
-          "description": "Select medium compression to compress fonts and metadata losslessly."
+          "title": "Válassza a veszteségmentes módot",
+          "description": "A részletek megőrzéséhez válassza a „Kiváló minőség” tömörítési beállítást."
         },
         {
-          "title": "Save High-Res PDF",
-          "description": "Download the compressed PDF with crisp text and high-res vector details."
+          "title": "Fájl letöltése",
+          "description": "Szerezze meg könnyebb PDF-fájlját elmosódott szöveg vagy pixeles képek nélkül."
         }
       ]
     },
     {
       "type": "watermark_geo_targeting",
-      "title": "Designed for Professional Designers & Architects",
-      "content": "No blurry blueprints, diagrams, or portfolios. Our engine compresses unnecessary metadata while locking image quality ratios locally on your device.",
-      "subTitle": "Vector Lossless",
-      "subContent": "Keeps fonts and SVG outlines fully vector-sharp at any zoom level.",
-      "badgeText": "Vector Lossless"
+      "title": "Éles szövegek és éles képek",
+      "content": "Speciális DPI-megőrző és vektorsimító algoritmusokat használunk helyileg a böngészőben, hogy biztosítsuk, hogy a dokumentumok pontosan ugyanúgy nézzenek ki.",
+      "subTitle": "Ügyféloldali feldolgozás",
+      "subContent": "Minden a WebAssemblyben fut.",
+      "badgeText": "Ügyféloldali feldolgozás"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Absolute Privacy & Security",
-      "content": "Confidential company presentations, financial audits, or contracts remain offline on your device, ensuring maximum enterprise privacy compliance."
+      "title": "Ideális portfóliókhoz és prezentációkhoz",
+      "content": "Tartsa professzionális dokumentumait professzionális megjelenésben, miközben csökkenti a megabájtokat, hogy könnyen megoszthatók legyenek."
     },
     {
       "type": "ocr_performance",
-      "title": "Lightning-Fast Lossless Engine",
-      "content": "Pure WebAssembly calculations optimize file structure directly in RAM, saving bandwidth and processing files instantly.",
-      "badgeText": "Lossless Speed"
+      "title": "Nulla pixelezési garancia",
+      "content": "Fenntartja a 100%-os élességet az összes szövegcsomóponton.",
+      "badgeText": "HD kimenet"
     }
   ],
   "faqs": [
     {
-      "q": "How does the lossless PDF compressor work?",
-      "a": "It reorganizes the PDF structure, compresses embedded fonts, and strips metadata without touching raster image ratios unless requested."
+      "q": "Hogyan lehetséges a tömörítés minőségromlás nélkül?",
+      "a": "Optimalizáljuk a PDF-struktúrákat, eltávolítjuk a nem használt betűtípusokat/objektumokat, és intelligensen lemintázzuk a nem látott képrétegeket."
     },
     {
-      "q": "Will my text remain searchable?",
-      "a": "Yes. All text vectors are preserved. You can highlight, search, and copy text exactly as before."
+      "q": "Homályos lesz a szöveg?",
+      "a": "Nem. A vektorpályák és a szövegelemek tökéletesen megmaradnak, elkerülve a lapos képraszterezés okozta elmosódást."
     },
     {
-      "q": "Can I compress vector drawings and CAD blueprints?",
-      "a": "Yes, our vector-preservation engine keeps CAD details sharp even at maximum zoom scales."
+      "q": "Ez az eszköz ingyenes?",
+      "a": "Igen, teljesen ingyenes és offline is fut."
     }
   ],
   "badges": [
-    "High Resolution",
-    "No Text Blur",
-    "Lossless Presets"
+    "High Definition",
+    "Veszteségmentes",
+    "Gyors"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Compress Lossless PDF",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Tömörítse a minőség elvesztése nélkül",
+  "supportCenter": "Támogatási Központ",
+  "faqTitle": "Gyakran Ismételt Kérdések"
 }

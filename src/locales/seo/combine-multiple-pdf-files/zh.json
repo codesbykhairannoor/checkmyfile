@@ -1,71 +1,71 @@
 {
-  "title": "Combine Multiple PDF Files - Merge PDFs Online Free - ZH",
-  "h1": "Combine Multiple PDF Files Online (ZH)",
-  "description": "Merge and combine multiple PDF files into one single document. Instant local processing, 100% private, no limit.",
+  "title": "合并多个 PDF 文件",
+  "h1": "在线合并多个 PDF 文件（免费和客户端）",
+  "description": "将多个 PDF 文件合并并合并为一个文档。 即时本地处理，100%私密，无限制。",
   "sections": [
     {
       "type": "split_hero_features",
-      "title": "Combine Multiple PDF Documents into One Instantly",
-      "content": "Need to combine multiple reports, certificates, or scan pages into a single PDF document? Our browser combiner lets you drag, drop, reorder, and merge files locally with zero waiting time.",
-      "badgeText": "PDF Combiner"
+      "title": "将多个 PDF 文件合并为一个",
+      "content": "通过立即将发票、报告或章节合并到单个 PDF 文件中来组织您的工作流程。 无需上传。",
+      "badgeText": "无限合并"
     },
     {
       "type": "protect_how_to_steps",
-      "title": "How to Combine Multiple PDFs",
-      "badgeText": "Easy Guide",
+      "title": "如何合并 PDF 文件",
+      "badgeText": "简易指南",
       "steps": [
         {
-          "title": "Select Documents",
-          "description": "Upload all the PDF files you wish to combine."
+          "title": "上传文件",
+          "description": "拖放所有要合并的 PDF。"
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag and drop the files to rearrange their sequence."
+          "title": "重新排序页面",
+          "description": "拖动以按照您认为合适的方式重新排列文档的顺序。"
         },
         {
-          "title": "Combine Files",
-          "description": "Click the merge button to combine them into one file instantly."
+          "title": "合并和下载",
+          "description": "单击“合并”并立即下载合并后的 PDF。"
         }
       ]
     },
     {
       "type": "rotate_geo_targeting",
-      "title": "No File Uploads, 100% Safe for Personal Documents",
-      "content": "Unlike other sites that require you to upload your sensitive ijazah, scans, or bank records to their servers, our combiner runs entirely locally in your browser memory.",
-      "subTitle": "Privacy First",
-      "subContent": "No documents are ever transmitted over the network.",
-      "badgeText": "Privacy First"
+      "title": "安全地合并数十个文件",
+      "content": "由于我们在您的浏览器中处理所有内容，因此您可以合并 GB 的 PDF，而无需等待缓慢的互联网上传。",
+      "subTitle": "零服务器上传",
+      "subContent": "所有合并都是使用计算机的 RAM 完成的。",
+      "badgeText": "零服务器上传"
     },
     {
       "type": "sign_privacy_security",
-      "title": "Secure Corporate Data Merging",
-      "content": "Perfect for financial departments and lawyers combining highly sensitive multi-page contracts. HandleMyFile keeps your documents offline."
+      "title": "让您的发票和报告井井有条",
+      "content": "无论您是提交作业的学生还是发送发票的自由职业者，将它们合并到一个文件中都会使其更加清晰。"
     },
     {
       "type": "resize_performance",
-      "title": "Instantaneous Local Merging",
-      "content": "Combining 10 large PDFs takes less than 1 second because we do not waste time uploading files to remote clouds.",
-      "badgeText": "Instant Merge"
+      "title": "即时合并速度",
+      "content": "在 2 秒内合并 50 个文件。",
+      "badgeText": "快如闪电"
     }
   ],
   "faqs": [
     {
-      "q": "Is there a limit to how many PDFs I can combine?",
-      "a": "No, there are no limits on file count or size. Only your browser memory limit applies."
+      "q": "我可以合并的文件数量有限制吗？",
+      "a": "不会。由于它是在您的设备上处理的，因此唯一的限制是您计算机的内存。"
     },
     {
-      "q": "Can I rearrange pages before merging?",
-      "a": "Yes, you can drag and drop files in the workspace list to set their order before combining."
+      "q": "我可以重新安排订单吗？",
+      "a": "是的，您可以在合并之前轻松地将文件拖放到所需的顺序。"
     },
     {
-      "q": "Can I combine encrypted or password-protected PDFs?",
-      "a": "You need to unlock password-protected PDFs first before combining them."
+      "q": "我的文件会发送到服务器吗？",
+      "a": "绝对不是。 合并在您的浏览器中 100% 离线进行。"
     }
   ],
   "badges": [
-    "No Upload Limits",
-    "Drag & Drop Reorder",
-    "100% Client-Side"
+    "没有上传",
+    "合并 PDF",
+    "无限"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Combine PDFs",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "合并 PDF 文件",
+  "supportCenter": "支持中心",
+  "faqTitle": "常见问题解答"
 }

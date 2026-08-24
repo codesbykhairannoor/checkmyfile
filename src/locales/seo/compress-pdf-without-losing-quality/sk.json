@@ -1,71 +1,71 @@
 {
-  "title": "Compress PDF Without Losing Quality - High Definition Lossless - SK",
-  "h1": "Compress PDF Documents Online Without Losing Quality (SK)",
-  "description": "Reduce PDF file size while keeping high-resolution vectors and texts perfectly sharp. 100% private client-side processing.",
+  "title": "Komprimujte PDF bez straty kvality",
+  "h1": "Komprimujte dokumenty PDF online bez straty kvality",
+  "description": "Zmenšite veľkosť súboru PDF pri zachovaní dokonale ostrých vektorov a textov s vysokým rozlíšením. 100% súkromné ​​spracovanie na strane klienta.",
   "sections": [
     {
       "type": "word_hero_features",
-      "title": "Shrink PDF File Size While Keeping Text Crystal Clear",
-      "content": "Disappointed with compressors that make your PDF documents blurry? Our adaptive vector engine reduces PDF file sizes up to 90% without losing quality, leaving texts and logos completely sharp.",
-      "badgeText": "Lossless Optimization"
+      "title": "Znížte veľkosť súboru, zachovajte kvalitu HD",
+      "content": "Neobetujte čitateľnosť kvôli veľkosti. Zmenšite svoje portfóliá, vektorové kresby alebo prezentácie, pričom texty a grafika budú dokonale ostré.",
+      "badgeText": "Bezstratová kvalita"
     },
     {
       "type": "merge_how_to_steps",
-      "title": "How to Compress PDF in Lossless Quality",
-      "badgeText": "Step-by-Step",
+      "title": "Ako bezstratovo komprimovať PDF",
+      "badgeText": "Jednoduché kroky",
       "steps": [
         {
-          "title": "Select PDF File",
-          "description": "Drop your PDF document into the local browser reader."
+          "title": "Vyberte položku Súbor",
+          "description": "Vyberte si vysokokvalitné PDF, ktoré chcete zmenšiť."
         },
         {
-          "title": "Choose Recommended Preset",
-          "description": "Select medium compression to compress fonts and metadata losslessly."
+          "title": "Vyberte bezstratový režim",
+          "description": "Ak chcete zachovať detaily, vyberte nastavenie kompresie „Vysoká kvalita“."
         },
         {
-          "title": "Save High-Res PDF",
-          "description": "Download the compressed PDF with crisp text and high-res vector details."
+          "title": "Stiahnuť súbor",
+          "description": "Získajte svetlejšie PDF bez akéhokoľvek rozmazaného textu alebo pixelových obrázkov."
         }
       ]
     },
     {
       "type": "watermark_geo_targeting",
-      "title": "Designed for Professional Designers & Architects",
-      "content": "No blurry blueprints, diagrams, or portfolios. Our engine compresses unnecessary metadata while locking image quality ratios locally on your device.",
-      "subTitle": "Vector Lossless",
-      "subContent": "Keeps fonts and SVG outlines fully vector-sharp at any zoom level.",
-      "badgeText": "Vector Lossless"
+      "title": "Ostré texty a ostré obrázky",
+      "content": "Lokálne vo vašom prehliadači používame pokročilé algoritmy zachovania DPI a vektorového vyhladzovania, aby sme zaistili, že vaše dokumenty budú vyzerať úplne rovnako.",
+      "subTitle": "Spracovanie na strane klienta",
+      "subContent": "Všetko beží vo WebAssembly.",
+      "badgeText": "Spracovanie na strane klienta"
     },
     {
       "type": "unlock_privacy_security",
-      "title": "Absolute Privacy & Security",
-      "content": "Confidential company presentations, financial audits, or contracts remain offline on your device, ensuring maximum enterprise privacy compliance."
+      "title": "Ideálne pre portfóliá a prezentácie",
+      "content": "Nechajte svoje profesionálne dokumenty vyzerať profesionálne a zároveň znížte megabajty, aby sa dali ľahko zdieľať."
     },
     {
       "type": "ocr_performance",
-      "title": "Lightning-Fast Lossless Engine",
-      "content": "Pure WebAssembly calculations optimize file structure directly in RAM, saving bandwidth and processing files instantly.",
-      "badgeText": "Lossless Speed"
+      "title": "Záruka nulovej pixelizácie",
+      "content": "Udržujte 100% ostrosť na všetkých textových uzloch.",
+      "badgeText": "HD výstup"
     }
   ],
   "faqs": [
     {
-      "q": "How does the lossless PDF compressor work?",
-      "a": "It reorganizes the PDF structure, compresses embedded fonts, and strips metadata without touching raster image ratios unless requested."
+      "q": "Ako je možné komprimovať bez straty kvality?",
+      "a": "Optimalizujeme štruktúry PDF, odstraňujeme nepoužívané fonty/objekty a inteligentne prevzorkujeme nevidené vrstvy obrázkov."
     },
     {
-      "q": "Will my text remain searchable?",
-      "a": "Yes. All text vectors are preserved. You can highlight, search, and copy text exactly as before."
+      "q": "Bude text rozmazaný?",
+      "a": "Nie. Cesty vektorov a textové prvky sú zachované dokonale, čím sa predchádza rozmazaniu spôsobenému rastrovaním plochého obrázka."
     },
     {
-      "q": "Can I compress vector drawings and CAD blueprints?",
-      "a": "Yes, our vector-preservation engine keeps CAD details sharp even at maximum zoom scales."
+      "q": "Je tento nástroj bezplatný?",
+      "a": "Áno, úplne zadarmo a beží offline."
     }
   ],
   "badges": [
-    "High Resolution",
-    "No Text Blur",
-    "Lossless Presets"
+    "Vysoké rozlíšenie",
+    "Bezstratový",
+    "Rýchlo"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Compress Lossless PDF",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Komprimujte bez straty kvality",
+  "supportCenter": "Centrum podpory",
+  "faqTitle": "Často kladené otázky"
 }

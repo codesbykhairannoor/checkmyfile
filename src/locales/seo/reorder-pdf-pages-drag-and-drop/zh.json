@@ -1,0 +1,79 @@
+{
+  "title": "自由拖放重新排序 PDF 页面",
+  "h1": "通过拖放轻松重新排序 PDF 页面",
+  "description": "通过拖放缩略图，直观地组织和重新排序 PDF 文档中的页面。 100% 免费且本地化。",
+  "sections": [
+    {
+      "type": "word_hero_features",
+      "title": "直观地组织 PDF 页面",
+      "content": "只需拖放缩略图即可更改 PDF 页面的顺序。 不需要复杂的软件。",
+      "badgeText": "轻松重新排序"
+    },
+    {
+      "type": "split_how_to_steps",
+      "title": "如何重新排序 PDF 页面",
+      "badgeText": "一步一步",
+      "steps": [
+        {
+          "title": "上传 PDF",
+          "description": "选择您要组织的 PDF 文件。"
+        },
+        {
+          "title": "拖放",
+          "description": "单击并拖动页面缩略图以重新排列它们。"
+        },
+        {
+          "title": "保存更改",
+          "description": "下载新订购的 PDF 文档。"
+        }
+      ]
+    },
+    {
+      "type": "watermark_geo_targeting",
+      "title": "可视化拖放界面",
+      "content": "我们直观的界面使您可以非常轻松地查看页面并将其准确移动到需要的位置。",
+      "subTitle": "交互的",
+      "subContent": "实时缩略图生成。",
+      "badgeText": "交互的"
+    },
+    {
+      "type": "unlock_privacy_security",
+      "title": "100% 客户端排序",
+      "content": "您的文档将在浏览器中本地重新排列。 我们保证完全的隐私。"
+    },
+    {
+      "type": "resize_performance",
+      "title": "流畅体验",
+      "content": "无延迟地重新排序大型文档。",
+      "badgeText": "优化"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "重新排序时可以删除页面吗？",
+      "a": "是的，您还可以选择页面并根据需要删除它们。"
+    },
+    {
+      "q": "它可以在手机上使用吗？",
+      "a": "是的，我们的拖放界面支持触摸，并且适用于移动设备。"
+    },
+    {
+      "q": "我的文件是否上传到服务器？",
+      "a": "不需要，所有重新排序都直接在您的设备上进行。"
+    }
+  ],
+  "badges": [
+    "视觉的",
+    "私人的",
+    "自由的"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "立即重新排序页面",
+  "supportCenter": "支持中心",
+  "faqTitle": "常见问题解答"
+}

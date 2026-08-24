@@ -1,0 +1,79 @@
+{
+  "title": "Darmowy konwerter plików PDF na Word (.docx) bez utraty formatowania",
+  "h1": "Konwertuj plik PDF na edytowalny plik Word DOCX w swojej przeglądarce",
+  "description": "Wyodrębnij dokładny tekst, układy i akapity z dowolnego pliku PDF do czystego pliku Microsoft Word (.docx) bezpośrednio w pamięci przeglądarki.",
+  "sections": [
+    {
+      "type": "watermark_hero_features",
+      "title": "Idealnie konwertuj pliki PDF na Word",
+      "content": "Przekształcaj dokumenty PDF w edytowalne pliki Word, zachowując nienaruszony oryginalny układ, czcionki i obrazy.",
+      "badgeText": "Zachowaj formatowanie"
+    },
+    {
+      "type": "protect_how_to_steps",
+      "title": "Jak przekonwertować plik PDF na Word",
+      "badgeText": "Łatwa konwersja",
+      "steps": [
+        {
+          "title": "Prześlij plik PDF",
+          "description": "Wybierz plik PDF, który chcesz przekonwertować."
+        },
+        {
+          "title": "Konwertuj na DOCX",
+          "description": "Kliknij przycisk Konwertuj, aby rozpocząć przetwarzanie lokalne."
+        },
+        {
+          "title": "Pobierz plik Worda",
+          "description": "Zapisz w pełni edytowalny dokument programu Word."
+        }
+      ]
+    },
+    {
+      "type": "excel_geo_targeting",
+      "title": "Dokładne zachowanie układu",
+      "content": "Nasz zaawansowany parser rozumie akapity, tabele i kolumny, dzięki czemu Twój dokument Word wygląda dokładnie tak, jak plik PDF.",
+      "subTitle": "Wysoka wierność",
+      "subContent": "Zachowaj styl i strukturę.",
+      "badgeText": "Wysoka wierność"
+    },
+    {
+      "type": "redact_privacy_security",
+      "title": "Bezpieczna konwersja po stronie klienta",
+      "content": "Bezpiecznie konwertuj poufne umowy i raporty. Konwersja odbywa się całkowicie na Twoim urządzeniu."
+    },
+    {
+      "type": "watermark_performance",
+      "title": "Szybkie przetwarzanie",
+      "content": "Konwertuj wielostronicowe dokumenty w ciągu kilku sekund.",
+      "badgeText": "Szybkie wyjście"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Czy układ się zmieni?",
+      "a": "Staramy się zachować dokładny układ, w tym tabele, obrazy i wyrównanie tekstu."
+    },
+    {
+      "q": "Czy jest to przetwarzane na serwerze?",
+      "a": "Nie, konwersja odbywa się całkowicie w przeglądarce, co zapewnia maksymalną prywatność."
+    },
+    {
+      "q": "Czy mogę edytować tekst po konwersji?",
+      "a": "Tak, powstały plik DOCX można w pełni edytować w programach Microsoft Word lub Google Docs."
+    }
+  ],
+  "badges": [
+    "Edytowalne",
+    "Dokładny",
+    "Prywatny"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "Konwertuj na Word",
+  "supportCenter": "Centrum wsparcia",
+  "faqTitle": "Często zadawane pytania"
+}

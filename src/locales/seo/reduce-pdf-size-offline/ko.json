@@ -1,0 +1,79 @@
+{
+  "title": "오프라인에서 PDF 크기 줄이기",
+  "h1": "브라우저에서 PDF 크기를 완전히 오프라인으로 줄이기",
+  "description": "서버를 업로드하지 않고도 브라우저에서 오프라인으로 PDF 문서의 크기를 직접 줄일 수 있습니다. 100% 안전합니다.",
+  "sections": [
+    {
+      "type": "split_hero_features",
+      "title": "PDF 파일을 오프라인으로 축소",
+      "content": "인터넷 연결 없이 대용량 PDF를 압축합니다. 당사의 WebAssembly 엔진은 귀하의 브라우저 내에서 완전히 오프라인으로 실행됩니다.",
+      "badgeText": "오프라인 압축"
+    },
+    {
+      "type": "ocr_how_to_steps",
+      "title": "오프라인에서 PDF 크기를 줄이는 방법",
+      "badgeText": "빠른 단계",
+      "steps": [
+        {
+          "title": "파일 추가",
+          "description": "큰 PDF 문서를 선택하세요."
+        },
+        {
+          "title": "압박 붕대",
+          "description": "압축 수준을 선택하고 압축을 클릭합니다."
+        },
+        {
+          "title": "다운로드",
+          "description": "더 작은 PDF 파일을 컴퓨터에 저장하십시오."
+        }
+      ]
+    },
+    {
+      "type": "rotate_geo_targeting",
+      "title": "인터넷 없이 작동",
+      "content": "페이지가 로드되면 인터넷 연결을 끊을 수 있으며 도구는 여전히 완벽하게 작동합니다.",
+      "subTitle": "진정한 오프라인",
+      "subContent": "압축 중에는 서버 통신이 없습니다.",
+      "badgeText": "진정한 오프라인"
+    },
+    {
+      "type": "sign_privacy_security",
+      "title": "최대의 개인 정보 보호 보장",
+      "content": "네트워크를 통해 데이터가 전송되지 않으므로 민감한 문서는 100% 안전합니다."
+    },
+    {
+      "type": "split_performance",
+      "title": "효율적인 엔진",
+      "content": "빠른 처리로 높은 압축률.",
+      "badgeText": "고효율"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "오프라인 압축은 어떻게 작동하나요?",
+      "a": "우리는 WebAssembly를 사용하여 브라우저 내에서 직접 강력한 PDF 압축 엔진을 실행합니다."
+    },
+    {
+      "q": "품질이 망가질까요?",
+      "a": "아니요. 높은 시각적 품질을 유지하기 위해 무손실 압축을 선택할 수 있습니다."
+    },
+    {
+      "q": "파일 크기 제한이 있나요?",
+      "a": "아니요, 로컬로 실행되므로 장치의 메모리가 허용하는 만큼 파일을 압축할 수 있습니다."
+    }
+  ],
+  "badges": [
+    "오프라인",
+    "안전한",
+    "빠른"
+  ],
+  "stats": [
+    "Client-Side",
+    "Fast",
+    "Secure",
+    "Private"
+  ],
+  "buttonText": "지금 크기를 줄이세요",
+  "supportCenter": "지원 센터",
+  "faqTitle": "자주 묻는 질문"
+}

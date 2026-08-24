@@ -1,71 +1,71 @@
 {
-  "title": "Sign PDF Online Without Registration - Free E-Sign - KO",
-  "h1": "E-Sign PDF Documents Online Without Registration (KO)",
-  "description": "Place your electronic signature on any PDF file instantly. No account required, no signup, 100% private and free.",
+  "title": "등록 없이 온라인으로 PDF에 서명",
+  "h1": "등록 없이 온라인으로 PDF 문서에 전자 서명",
+  "description": "PDF 파일에 전자 서명을 즉시 삽입하세요. 계정이 필요하지 않으며 가입도 필요하지 않으며 100% 비공개이며 무료입니다.",
   "sections": [
     {
       "type": "watermark_hero_features",
-      "title": "Sign PDF Documents Instantly Without Creating an Account",
-      "content": "Annoyed by online sign tools that force you to register, confirm emails, or pay subscriptions just to sign a single paper? HandleMyFile lets you add signatures to contracts completely free without signup.",
-      "badgeText": "No Registration Required"
+      "title": "계정을 만들지 않고도 PDF 문서에 즉시 서명",
+      "content": "서류 한 장에 서명하기 위해 등록, 이메일 확인, 구독료 지불을 강요하는 온라인 서명 도구 때문에 짜증이 나시나요? HandleMyFile을 사용하면 가입 없이 완전 무료로 계약서에 서명을 추가할 수 있습니다.",
+      "badgeText": "등록이 필요하지 않습니다"
     },
     {
       "type": "ocr_how_to_steps",
-      "title": "How to Sign PDF Without Signup",
-      "badgeText": "Quick Steps",
+      "title": "가입하지 않고 PDF에 서명하는 방법",
+      "badgeText": "빠른 단계",
       "steps": [
         {
-          "title": "Upload Document",
-          "description": "Drop your PDF file into our registration-free workspace."
+          "title": "문서 업로드",
+          "description": "등록이 필요 없는 작업 공간에 PDF 파일을 놓습니다."
         },
         {
-          "title": "Draw or Type Signature",
-          "description": "Create your signature with your mouse/touchpad, or upload an image."
+          "title": "서명 그리기 또는 입력",
+          "description": "마우스/터치패드로 서명을 만들거나 이미지를 업로드하세요."
         },
         {
-          "title": "Download Signed PDF",
-          "description": "Download your signed document instantly. Zero data is saved."
+          "title": "서명된 PDF 다운로드",
+          "description": "서명된 문서를 즉시 다운로드하세요. 0개의 데이터가 저장됩니다."
         }
       ]
     },
     {
       "type": "excel_geo_targeting",
-      "title": "Your Signature is Secure and Stays in Your Browser",
-      "content": "Biometric and graphical signature drawings are processed entirely in RAM. We do not store your signature or documents on any server, providing maximum fraud prevention.",
-      "subTitle": "Cryptographically Safe",
-      "subContent": "Vectors are flattened directly on the client canvas.",
-      "badgeText": "Cryptographically Safe"
+      "title": "귀하의 서명은 안전하며 귀하의 브라우저에 유지됩니다",
+      "content": "생체 인식 및 그래픽 서명 도면은 모두 RAM에서 처리됩니다. 우리는 최대한의 사기 방지를 위해 귀하의 서명이나 문서를 어떤 서버에도 저장하지 않습니다.",
+      "subTitle": "암호학적으로 안전함",
+      "subContent": "벡터는 클라이언트 캔버스에서 직접 병합됩니다.",
+      "badgeText": "암호학적으로 안전함"
     },
     {
       "type": "redact_privacy_security",
-      "title": "Frictionless NDA & Contract Signing",
-      "content": "Perfect for freelancers and business professionals who want to execute agreements, job offers, or NDAs on the spot without any onboarding friction."
+      "title": "원활한 NDA 및 계약 서명",
+      "content": "온보딩에 따른 마찰 없이 현장에서 계약, 채용 제안 또는 NDA를 실행하려는 프리랜서 및 비즈니스 전문가에게 적합합니다."
     },
     {
       "type": "split_performance",
-      "title": "Sign and Send in 15 Seconds",
-      "content": "With zero registration forms, email verification, or loading screens, you can sign any document and send it back immediately.",
-      "badgeText": "Speedy E-Sign"
+      "title": "15초 안에 서명하고 전송하세요",
+      "content": "제로 등록 양식, 이메일 확인 또는 로딩 화면을 통해 모든 문서에 서명하고 즉시 다시 보낼 수 있습니다.",
+      "badgeText": "신속한 전자 서명"
     }
   ],
   "faqs": [
     {
-      "q": "Do I need to sign up or input my email to download?",
-      "a": "No. You can download your signed PDF immediately with zero onboarding steps."
+      "q": "다운로드하려면 가입하거나 이메일을 입력해야 합니까?",
+      "a": "아니요. 온보딩 단계 없이 서명된 PDF를 즉시 다운로드할 수 있습니다."
     },
     {
-      "q": "Is the signature legally binding?",
-      "a": "Yes, our e-signature complies with general electronic transaction laws for basic electronic signatures."
+      "q": "서명은 법적 구속력이 있나요?",
+      "a": "네, 당사의 전자서명은 기본 전자서명에 관한 일반 전자거래법을 준수합니다."
     },
     {
-      "q": "Does HandleMyFile store my signature graphic?",
-      "a": "No. The signature graphics are processed strictly in browser memory and wiped clean on page reload."
+      "q": "HandleMyFile은 내 서명 그래픽을 저장합니까?",
+      "a": "아니요. 서명 그래픽은 브라우저 메모리에서 엄격하게 처리되며 페이지를 다시 로드하면 완전히 지워집니다."
     }
   ],
   "badges": [
-    "No Registration",
-    "100% Free",
-    "Zero Footprint"
+    "등록 안함",
+    "100% 무료",
+    "제로 풋프린트"
   ],
   "stats": [
     "Client-Side",
@@ -73,7 +73,7 @@
     "Secure",
     "Private"
   ],
-  "buttonText": "Sign PDF Free",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "PDF에 무료로 서명",
+  "supportCenter": "지원 센터",
+  "faqTitle": "자주 묻는 질문"
 }
