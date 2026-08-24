@@ -43,7 +43,8 @@
     {
       "type": "compare_performance",
       "title": "Zero Latency WebAssembly Compression",
-      "content": "Skip waiting for long file uploads. Local browser processing compresses 50MB PDFs in seconds without internet bandwidth waste."
+      "content": "Skip waiting for long file uploads. Local browser processing compresses 50MB PDFs in seconds without internet bandwidth waste.",
+      "badgeText": "Lightning Fast"
     }
   ],
   "faqs": [

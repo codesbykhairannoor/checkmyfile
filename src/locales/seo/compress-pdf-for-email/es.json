@@ -43,7 +43,8 @@
     {
       "type": "compare_performance",
       "title": "Compresión WebAssembly sin Latencia de Subida",
-      "content": "Olvídate de esperar subidas largas. El procesamiento local comprime PDFs de 50MB en segundos."
+      "content": "Olvídate de esperar subidas largas. El procesamiento local comprime PDFs de 50MB en segundos.",
+      "badgeText": "Ultra Rápido"
     }
   ],
   "faqs": [

@@ -43,7 +43,8 @@
     {
       "type": "compare_performance",
       "title": "Compression WebAssembly sans Latence d'Upload",
-      "content": "Oubliez les longues attentes d'upload. Le traitement local compresse des PDFs de 50Mo en quelques secondes."
+      "content": "Oubliez les longues attentes d'upload. Le traitement local compresse des PDFs de 50Mo en quelques secondes.",
+      "badgeText": "Ultra Rapide"
     }
   ],
   "faqs": [

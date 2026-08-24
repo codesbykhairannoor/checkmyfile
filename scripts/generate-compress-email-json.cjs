@@ -53,6 +53,7 @@ const content = {
     faq2A: "No. Our adaptive compression algorithm preserves high-definition text readability and image clarity while optimizing embedded content.",
     faq3Q: "Is it safe to compress confidential work contracts here?",
     faq3A: "Yes! 100% of processing happens locally in your device's browser memory. 0 bytes are ever sent over the internet.",
+    perfBadge: "Lightning Fast",
     badges: ["Gmail Ready", "Outlook Safe", "Zero Upload"],
     buttonText: "Compress PDF for Email"
   },
@@ -85,6 +86,7 @@ const content = {
     faq2A: "Tidak. Algoritma adaptif kami mempertahankan ketajaman teks dan kejelasan gambar pada dokumen PDF.",
     faq3Q: "Apakah aman mengompres dokumen kontrak kerja di sini?",
     faq3A: "Sangat aman! 100% pemrosesan terjadi di dalam browser lokal Anda tanpa unggah data sama sekali.",
+    perfBadge: "Kilat Cepat",
     badges: ["Siap Gmail", "Aman Outlook", "Zero Upload"],
     buttonText: "Kompres PDF untuk Email"
   },
@@ -117,6 +119,7 @@ const content = {
     faq2A: "No. Nuestro algoritmo adaptativo preserva la claridad del texto y las imágenes.",
     faq3Q: "¿Es seguro comprimir contratos de trabajo aquí?",
     faq3A: "¡Sí! El 100% del procesamiento ocurre en la memoria del navegador de tu dispositivo. 0 bytes se envían por internet.",
+    perfBadge: "Ultra Rápido",
     badges: ["Listo para Gmail", "Seguro en Outlook", "Zero Subida"],
     buttonText: "Comprimir PDF para Correo"
   },
@@ -149,6 +152,7 @@ const content = {
     faq2A: "Non. Notre algorithme adaptatif préserve la lisibilité du texte et la clarté des images.",
     faq3Q: "Est-il sûr de compresser des contrats de travail confidentiels ici ?",
     faq3A: "Oui ! 100% du traitement se fait dans la mémoire du navigateur. 0 octet n'est envoyé sur internet.",
+    perfBadge: "Ultra Rapide",
     badges: ["Prêt pour Gmail", "Sûr pour Outlook", "Zéro Upload"],
     buttonText: "Compresser PDF pour Email"
   },
@@ -181,6 +185,7 @@ const content = {
     faq2A: "Nein. Unser adaptiver Algorithmus erhält die Textlesbarkeit und Bildklarheit.",
     faq3Q: "Ist es sicher, vertrauliche Arbeitsverträge hier zu komprimieren?",
     faq3A: "Ja! Die gesamte Verarbeitung erfolgt im lokalen Browser-Speicher. 0 Bytes werden über das Internet gesendet.",
+    perfBadge: "Blitzschnell",
     badges: ["Gmail-bereit", "Outlook-sicher", "Zero Upload"],
     buttonText: "PDF für E-Mail komprimieren"
   }
@@ -239,7 +244,8 @@ for (const lang of langs) {
         // Layout 5: Compare Performance (Zap circle + badges grid)
         type: "compare_performance",
         title: t.perfTitle,
-        content: t.perfContent
+        content: t.perfContent,
+        badgeText: t.perfBadge
       }
     ],
     faqs: [

@@ -43,7 +43,8 @@
     {
       "type": "compare_performance",
       "title": "WebAssembly-Komprimierung ohne Upload-Latenz",
-      "content": "Vergiss lange Upload-Wartezeiten. Lokale Browser-Verarbeitung komprimiert 50MB-PDFs in Sekunden."
+      "content": "Vergiss lange Upload-Wartezeiten. Lokale Browser-Verarbeitung komprimiert 50MB-PDFs in Sekunden.",
+      "badgeText": "Blitzschnell"
     }
   ],
   "faqs": [
