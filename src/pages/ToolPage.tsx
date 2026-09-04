@@ -75,6 +75,11 @@ const getAcceptTypes = (toolId: string): string => {
     case 'remove-pdf-author-metadata':
     case 'extract-high-res-images-pdf':
     case 'compare-pdf-files-visually':
+    case 'compress-pdf-to-100kb':
+    case 'merge-pdf-files-offline':
+    case 'convert-scanned-pdf-to-text':
+    case 'add-page-numbers-to-pdf-free':
+    case 'remove-pdf-watermark-online':
       return '.pdf,application/pdf';
 
     // Word files only
@@ -259,12 +264,12 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
         <div style={{ textAlign: 'center', padding: '0 24px', maxWidth: 1440, margin: '64px auto 40px auto', width: '100%' }}>
           <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 900, marginBottom: 20, letterSpacing: '-0.03em', lineHeight: 1.15, fontFamily: 'var(--font-display)' }}>
             {(() => {
-              const fullTitle = seoData.data ? seoData.data.h1 : seo.h1;
+              const fullTitle = seoData.data?.h1 || seoData.data?.heroTitle || seo.h1 || '';
               return smartHighlight(fullTitle);
             })()}
           </h1>
           <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem', maxWidth: 800, margin: '0 auto', lineHeight: 1.6 }}>
-            {seoData.data ? seoData.data.description : seo.description}
+            {seoData.data?.description || seoData.data?.heroDescription || seo.description}
           </p>
         </div>
       )}

@@ -18,9 +18,11 @@ import type { SeoSectionData } from '../seo-sections/types';
 
 // ── Types ──────────────────────────────────────────────────
 interface SeoJson {
-  title: string;
-  h1: string;
-  description: string;
+  title?: string;
+  h1?: string;
+  description?: string;
+  heroTitle?: string;
+  heroDescription?: string;
   badges?: string[];
   stats?: string[];
   buttonText?: string;
