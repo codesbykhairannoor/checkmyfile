@@ -505,7 +505,7 @@ export const pdfTools: ToolDefinition[] = [
     iconName: 'Crop',
     slugs: generateSlugsForId('crop-pdf', {
       en: 'crop-pdf',
-      id: 'potong-margin-pdf',
+      id: 'pangkas-pdf',
     }),
     seo: {
       en: {
@@ -572,7 +572,7 @@ export const pdfTools: ToolDefinition[] = [
     id: 'crop-pdf-margins',
     category: 'pdf',
     iconName: 'Crop',
-    slugs: generateSlugsForId('crop-pdf-margins', { en: 'crop-pdf-margins', id: 'potong-margin-pdf', es: 'recortar-m-rgenes-de-pdf', fr: 'recadrer-les-marges-du-pdf', de: 'pdf-r-nder-zuschneiden', ja: 'pdf', pt: 'cortar-margens-do-pdf', ru: 'pdf', zh: 'pdf', ar: 'pdf', hi: '', it: 'ritagliare-i-margini-del-pdf', ko: 'pdf-여백-자르기', nl: 'pdf-marges-bijsnijden', tr: 'pdf-kenar-bo-luklar-n-k-rp', pl: 'przytnij-marginesy-pdf', vi: 'c-t-l-pdf', th: 'pdf', sv: 'besk-r-pdf-marginaler', cs: 'o-znout-okraje-pdf', da: 'besk-r-pdf-margener', el: 'pdf', fi: 'rajaa-pdf-reunukset', he: 'pdf', hu: 'v-gja-le-a-pdf-marg-kat', no: 'beskj-re-pdf-marginer', ro: 'decupa-i-marginile-pdf', sk: 'oreza-okraje-pdf', uk: 'pdf', ms: 'pangkas-pdf-margin',}),
+    slugs: generateSlugsForId('crop-pdf-margins', { en: 'crop-pdf-margins', id: 'potong-margin-pdf', es: 'recortar-m-rgenes-de-pdf', fr: 'recadrer-les-marges-du-pdf', de: 'pdf-r-nder-zuschneiden', ja: 'pdf-yohaku-torimingu', pt: 'cortar-margens-do-pdf', ru: 'obrezat-polya-pdf', zh: 'cai-jian-pdf-bian-ju', ar: 'qas-hawamish-pdf', hi: 'crop-pdf-margins-hi', it: 'ritagliare-i-margini-del-pdf', ko: 'pdf-yeobaek-jareugi', nl: 'pdf-marges-bijsnijden', tr: 'pdf-kenar-bo-luklar-n-k-rp', pl: 'przytnij-marginesy-pdf', vi: 'c-t-l-pdf', th: 'tat-khop-pdf', sv: 'besk-r-pdf-marginaler', cs: 'o-znout-okraje-pdf', da: 'besk-r-pdf-margener', el: 'perikopi-perithorion-pdf', fi: 'rajaa-pdf-reunukset', he: 'hithukh-shulayim-pdf', hu: 'v-gja-le-a-pdf-marg-kat', no: 'beskj-re-pdf-marginer', ro: 'decupa-i-marginile-pdf', sk: 'oreza-okraje-pdf', uk: 'obrizaty-polya-pdf', ms: 'pangkas-pdf-margin',}),
     seo: {
         id: {
           title: 'Pangkas Margin Putih dari Halaman PDF Gratis',
@@ -760,7 +760,7 @@ export const pdfTools: ToolDefinition[] = [
     id: 'grayscale-pdf-for-printing',
     category: 'pdf',
     iconName: 'Contrast',
-    slugs: generateSlugsForId('grayscale-pdf-for-printing', { en: 'grayscale-pdf-for-printing', id: 'pdf-skala-abu-abu-untuk-dicetak', es: 'pdf-en-escala-de-grises-para-imprimir', fr: 'pdf-en-niveaux-de-gris-pour-l-impression', de: 'graustufen-pdf-zum-drucken', ja: 'pdf', pt: 'pdf-em-escala-de-cinza-para-impress-o', ru: 'pdf', zh: 'pdf', ar: 'pdf', hi: '', it: 'pdf-in-scala-di-grigi-per-la-stampa', ko: '인쇄용-그레이스케일-pdf', nl: 'grijswaarden-pdf-voor-afdrukken', tr: 'yazd-rmak-i-in-gri-tonlamal-pdf', pl: 'pdf-w-skali-szaro-ci-do-druku', vi: 'pdf-thang-x-m-in', th: 'pdf', sv: 'gr-skala-pdf-f-r-utskrift', cs: 'pdf-ve-stupn-ch-edi-pro-tisk', da: 'gr-toner-pdf-til-udskrivning', el: 'pdf', fi: 'harmaas-vyinen-pdf-tulostukseen', he: 'pdf', hu: 'sz-rke-rnyalatos-pdf-nyomtat-shoz', no: 'gr-toner-pdf-for-utskrift', ro: 'pdf-n-tonuri-de-gri-pentru-imprimare', sk: 'pdf-v-odtie-och-sivej-na-tla', uk: 'pdf', ms: 'pdf-skala-kelabu-untuk-dicetak',}),
+    slugs: generateSlugsForId('grayscale-pdf-for-printing', { en: 'grayscale-pdf-for-printing', id: 'pdf-skala-abu-abu-untuk-dicetak', es: 'pdf-en-escala-de-grises-para-imprimir', fr: 'pdf-en-niveaux-de-gris-pour-l-impression', de: 'graustufen-pdf-zum-drucken', ja: 'pdf-gureesukeeru-insatsu', pt: 'pdf-em-escala-de-cinza-para-impress-o', ru: 'pechat-serogo-pdf', zh: 'hui-du-pdf-da-yin', ar: 'pdf-tadrij-ramadi-liltibaa', hi: 'grayscale-pdf-for-printing-hi', it: 'pdf-in-scala-di-grigi-per-la-stampa', ko: 'inseoyong-geureiseukeil-pdf', nl: 'grijswaarden-pdf-voor-afdrukken', tr: 'yazd-rmak-i-in-gri-tonlamal-pdf', pl: 'pdf-w-skali-szaro-ci-do-druku', vi: 'pdf-thang-x-m-in', th: 'pdf-khao-dam-phim', sv: 'gr-skala-pdf-f-r-utskrift', cs: 'pdf-ve-stupn-ch-edi-pro-tisk', da: 'gr-toner-pdf-til-udskrivning', el: 'gkri-klimaka-pdf-ektyposi', fi: 'harmaas-vyinen-pdf-tulostukseen', he: 'pdf-gvanei-afor-hadfasa', hu: 'sz-rke-rnyalatos-pdf-nyomtat-shoz', no: 'gr-toner-pdf-for-utskrift', ro: 'pdf-n-tonuri-de-gri-pentru-imprimare', sk: 'pdf-v-odtie-och-sivej-na-tla', uk: 'vidtinky-sirogo-pdf-dlya-druku', ms: 'pdf-skala-kelabu-untuk-dicetak',}),
     seo: {
         id: {
           title: 'Konversi PDF Berwarna ke Skala Abu-abu untuk Pencetakan',
@@ -948,7 +948,7 @@ export const pdfTools: ToolDefinition[] = [
     id: 'remove-pdf-author-metadata',
     category: 'pdf',
     iconName: 'Eraser',
-    slugs: generateSlugsForId('remove-pdf-author-metadata', { en: 'remove-pdf-author-metadata', id: 'hapus-metadata-penulis-pdf', es: 'eliminar-metadatos-del-autor-en-pdf', fr: 'supprimer-les-m-tadonn-es-de-l-auteur-du-pdf', de: 'entfernen-sie-die-metadaten-des-pdf-autors', ja: 'pdf', pt: 'remover-metadados-do-autor-do-pdf', ru: 'pdf', zh: 'pdf', ar: 'pdf', hi: '', it: 'rimuovere-i-metadati-dell-autore-del-pdf', ko: 'pdf-작성자-메타데이터-제거', nl: 'verwijder-de-metadata-van-de-pdf-auteur', tr: 'pdf-yazar-meta-verilerini-kald-r', pl: 'usu-metadane-autora-pliku-pdf', vi: 'x-a-si-u-d-li-u-t-c-gi-pdf', th: 'pdf', sv: 'ta-bort-pdf-f-rfattarens-metadata', cs: 'odstranit-metadata-autora-pdf', da: 'fjerne-pdf-forfatter-metadata', el: 'pdf', fi: 'poista-pdf-kirjoittajan-metatiedot', he: 'pdf', hu: 't-vol-tsa-el-a-pdf-szerz-metaadatait', no: 'fjern-pdf-forfattermetadata', ro: 'elimina-metadatele-autorului-pdf', sk: 'odstr-ni-metad-ta-autora-pdf', uk: 'pdf', ms: 'alih-keluar-metadata-pengarang-pdf',}),
+    slugs: generateSlugsForId('remove-pdf-author-metadata', { en: 'remove-pdf-author-metadata', id: 'hapus-metadata-penulis-pdf', es: 'eliminar-metadatos-del-autor-en-pdf', fr: 'supprimer-les-m-tadonn-es-de-l-auteur-du-pdf', de: 'entfernen-sie-die-metadaten-des-pdf-autors', ja: 'pdf-choshamei-metadeeta-sakujo', pt: 'remover-metadados-do-autor-do-pdf', ru: 'udalit-metadannye-avtora-pdf', zh: 'shan-chu-pdf-zuo-zhe-yuan-shu-ju', ar: 'hazf-bayanat-almuallif-pdf', hi: 'remove-pdf-author-metadata-hi', it: 'rimuovere-i-metadati-dell-autore-del-pdf', ko: 'pdf-jakseongja-metadeiteo-jegeo', nl: 'verwijder-de-metadata-van-de-pdf-auteur', tr: 'pdf-yazar-meta-verilerini-kald-r', pl: 'usu-metadane-autora-pliku-pdf', vi: 'x-a-si-u-d-li-u-t-c-gi-pdf', th: 'lop-khomun-phukhieng-pdf', sv: 'ta-bort-pdf-f-rfattarens-metadata', cs: 'odstranit-metadata-autora-pdf', da: 'fjerne-pdf-forfatter-metadata', el: 'afairesi-metadedomenon-syggrafea-pdf', fi: 'poista-pdf-kirjoittajan-metatiedot', he: 'hasarat-metanethei-mehabber-pdf', hu: 't-vol-tsa-el-a-pdf-szerz-metaadatait', no: 'fjern-pdf-forfattermetadata', ro: 'elimina-metadatele-autorului-pdf', sk: 'odstr-ni-metad-ta-autora-pdf', uk: 'vydalyty-metadani-avtora-pdf', ms: 'alih-keluar-metadata-pengarang-pdf',}),
     seo: {
         id: {
           title: 'Hapus Nama Penulis dan Metadata Tersembunyi dari PDF',
@@ -1136,7 +1136,7 @@ export const pdfTools: ToolDefinition[] = [
     id: 'extract-high-res-images-pdf',
     category: 'pdf',
     iconName: 'Images',
-    slugs: generateSlugsForId('extract-high-res-images-pdf', { en: 'extract-high-res-images-pdf', id: 'ekstrak-gambar-resolusi-tinggi-pdf', es: 'extraer-im-genes-de-alta-resoluci-n-pdf', fr: 'extraire-des-images-haute-r-solution-pdf', de: 'extrahieren-sie-hochaufl-sende-bilder-im-pdf-format', ja: 'pdf', pt: 'extrair-imagens-em-alta-resolu-o-pdf', ru: 'pdf', zh: 'pdf', ar: 'pdf', hi: '', it: 'estrarre-immagini-ad-alta-risoluzione-pdf', ko: '고해상도-이미지-pdf-추출', nl: 'extract-hoge-resolutie-afbeeldingen-pdf', tr: 'y-ksek-z-n-rl-kl-g-r-nt-leri-pdf-olarak-kar-n', pl: 'wyodr-bnij-obrazy-pdf-w-wysokiej-rozdzielczo-ci', vi: 'tr-ch-xu-t-h-nh-nh-ph-n-gi-i-cao-pdf', th: 'pdf', sv: 'extrahera-h-guppl-sta-bilder-pdf', cs: 'extrahovat-obr-zky-ve-vysok-m-rozli-en-pdf', da: 'udtr-k-billeder-i-h-j-opl-sning-pdf', el: 'pdf', fi: 'purkaa-korkearesoluutioisia-kuvia-pdf', he: 'pdf', hu: 'nagy-felbont-s-k-pek-kibont-sa-pdf-ben', no: 'trekke-ut-h-yoppl-selige-bilder-pdf', ro: 'extrage-imagini-de-nalt-rezolu-ie-pdf', sk: 'extrahova-obr-zky-vo-vysokom-rozl-en-pdf', uk: 'pdf', ms: 'ekstrak-imej-resolusi-tinggi-pdf',}),
+    slugs: generateSlugsForId('extract-high-res-images-pdf', { en: 'extract-high-res-images-pdf', id: 'ekstrak-gambar-resolusi-tinggi-pdf', es: 'extraer-im-genes-de-alta-resoluci-n-pdf', fr: 'extraire-des-images-haute-r-solution-pdf', de: 'extrahieren-sie-hochaufl-sende-bilder-im-pdf-format', ja: 'pdf-kogaashitsu-gazo-chushutsu', pt: 'extrair-imagens-em-alta-resolu-o-pdf', ru: 'izvlech-izobrazheniya-vysokogo-razresheniya-pdf', zh: 'ti-qu-pdf-gao-qing-tu-pian', ar: 'istikhraj-suwar-aaliyat-alduqqah-pdf', hi: 'extract-high-res-images-pdf-hi', it: 'estrarre-immagini-ad-alta-risoluzione-pdf', ko: 'pdf-gohaasangdo-imeji-chuchul', nl: 'extract-hoge-resolutie-afbeeldingen-pdf', tr: 'y-ksek-z-n-rl-kl-g-r-nt-leri-pdf-olarak-kar-n', pl: 'wyodr-bnij-obrazy-pdf-w-wysokiej-rozdzielczo-ci', vi: 'tr-ch-xu-t-h-nh-nh-ph-n-gi-i-cao-pdf', th: 'dungk-phap-khwam-la-iat-sung-pdf', sv: 'extrahera-h-guppl-sta-bilder-pdf', cs: 'extrahovat-obr-zky-ve-vysok-m-rozli-en-pdf', da: 'udtr-k-billeder-i-h-j-opl-sning-pdf', el: 'exagogi-eikonon-ypsilis-analysis-pdf', fi: 'purkaa-korkearesoluutioisia-kuvia-pdf', he: 'hiluts-tmunot-beikhut-gvoha-pdf', hu: 'nagy-felbont-s-k-pek-kibont-sa-pdf-ben', no: 'trekke-ut-h-yoppl-selige-bilder-pdf', ro: 'extrage-imagini-de-nalt-rezolu-ie-pdf', sk: 'extrahova-obr-zky-vo-vysokom-rozl-en-pdf', uk: 'vytyagty-zobrazhennya-vysokoyi-yakosti-pdf', ms: 'ekstrak-imej-resolusi-tinggi-pdf',}),
     seo: {
         id: {
           title: 'Ekstrak Gambar Resolusi Tinggi dari PDF Gratis',
@@ -1324,7 +1324,7 @@ export const pdfTools: ToolDefinition[] = [
     id: 'compare-pdf-files-visually',
     category: 'pdf',
     iconName: 'Scale',
-    slugs: generateSlugsForId('compare-pdf-files-visually', { en: 'compare-pdf-files-visually', id: 'bandingkan-file-pdf-secara-visual', es: 'comparar-archivos-pdf-visualmente', fr: 'comparer-visuellement-les-fichiers-pdf', de: 'vergleichen-sie-pdf-dateien-visuell', ja: 'pdf', pt: 'compare-arquivos-pdf-visualmente', ru: 'pdf-', zh: 'pdf', ar: 'pdf', hi: '', it: 'confrontare-visivamente-i-file-pdf', ko: 'pdf-파일을-시각적으로-비교', nl: 'vergelijk-pdf-bestanden-visueel', tr: 'pdf-dosyalar-n-g-rsel-olarak-kar-la-t-r-n', pl: 'wizualnie-por-wnaj-pliki-pdf', vi: 'so-s-nh-file-pdf-m-t-c-ch-tr-c-quan', th: 'pdf', sv: 'j-mf-ra-pdf-filer-visuellt', cs: 'porovnejte-soubory-pdf-vizu-ln', da: 'sammenligne-pdf-filer-visuelt', el: 'pdf', fi: 'vertaa-pdf-tiedostoja-visuaalisesti', he: 'pdf', hu: 'pdf-f-jlok-vizu-lis-sszehasonl-t-sa', no: 'sammenligne-pdf-filer-visuelt', ro: 'compara-i-vizual-fi-ierele-pdf', sk: 'vizu-lne-porovn-va-s-bory-pdf', uk: 'pdf', ms: 'bandingkan-fail-pdf-secara-visual',}),
+    slugs: generateSlugsForId('compare-pdf-files-visually', { en: 'compare-pdf-files-visually', id: 'bandingkan-file-pdf-secara-visual', es: 'comparar-archivos-pdf-visualmente', fr: 'comparer-visuellement-les-fichiers-pdf', de: 'vergleichen-sie-pdf-dateien-visuell', ja: 'pdf-shikakuteki-hikaku', pt: 'compare-arquivos-pdf-visualmente', ru: 'vizualnoe-sravnenie-pdf-failov', zh: 'shi-jue-bi-jiao-pdf-wen-jian', ar: 'muqaranat-malaffat-pdf-basariyan', hi: 'compare-pdf-files-visually-hi', it: 'confrontare-visivamente-i-file-pdf', ko: 'pdf-shigakjeok-bigyo', nl: 'vergelijk-pdf-bestanden-visueel', tr: 'pdf-dosyalar-n-g-rsel-olarak-kar-la-t-r-n', pl: 'wizualnie-por-wnaj-pliki-pdf', vi: 'so-s-nh-file-pdf-m-t-c-ch-tr-c-quan', th: 'priap-thiap-fai-pdf-tam-phap', sv: 'j-mf-ra-pdf-filer-visuellt', cs: 'porovnejte-soubory-pdf-vizu-ln', da: 'sammenligne-pdf-filer-visuelt', el: 'optiki-sygkrisi-arxeion-pdf', fi: 'vertaa-pdf-tiedostoja-visuaalisesti', he: 'hashvaat-kovtsei-pdf-hazutit', hu: 'pdf-f-jlok-vizu-lis-sszehasonl-t-sa', no: 'sammenligne-pdf-filer-visuelt', ro: 'compara-i-vizual-fi-ierele-pdf', sk: 'vizu-lne-porovn-va-s-bory-pdf', uk: 'vizualne-porivnyannya-failiv-pdf', ms: 'bandingkan-fail-pdf-secara-visual',}),
     seo: {
         id: {
           title: 'Bandingkan Dua File PDF untuk Perbedaan Visual',
@@ -1509,255 +1509,36 @@ export const pdfTools: ToolDefinition[] = [
     }
   },
     {
-          id: 'compress-pdf-to-100kb',
-          category: 'pdf',
-          iconName: 'Minimize',
-          slugs: generateSlugsForId('compress-pdf-to-100kb', {
-            en: 'compress-pdf-to-100kb',
-            zh: 'compress-pdf-to-100kb',
-            pt: 'compactar-pdf-para-100kb',
-            ja: 'pdf-100kb',
-            de: 'pdf-auf-100-kb-komprimieren',
-            es: 'comprimir-pdf-a-100kb',
-            ar: 'pdf-100',
-            ru: 'pdf-100',
-            id: 'kompres-pdf-menjadi-100kb',
-            fr: 'compresser-le-pdf-100-ko',
-            hi: '100kb',
-            tr: 'pdf-yi-100kb-ye-s-k-t-r',
-            pl: 'skompresuj-pdf-do-100kb',
-            th: 'pdf-100kb',
-            it: 'comprimere-pdf-a-100kb',
-            sv: 'komprimera-pdf-till-100kb',
-            vi: 'n-n-pdf-xu-ng-100kb',
-            ko: 'pdf-100kb',
-            cs: 'komprimovat-pdf-na-100-kb',
-            nl: 'comprimeer-pdf-naar-100-kb',
-            ro: 'comprima-pdf-la-100-kb',
-            hu: 't-m-r-tse-a-pdf-et-100-kb-ra',
-            sk: 'komprimova-pdf-na-100-kb',
-            fi: 'pakkaa-pdf-100-kb',
-            da: 'komprimere-pdf-til-100kb',
-            no: 'komprimere-pdf-til-100kb',
-            he: 'pdf-100kb',
-            ms: 'mampatkan-pdf-kepada-100kb',
-            el: 'pdf-100-kb',
-            uk: 'pdf-100'
-          }),
-          seo: {
-            en: {
-            title: 'Compress PDF to 100KB Free Online | No Uploads',
-            h1: 'Compress PDF to 100KB Without Losing Quality',
-            description: 'Shrink your PDF files down to 100KB or less directly in your browser. Perfect for email attachments and fast sharing. 100% private.',
-            faqs: defaultFaqs('compress-pdf-to-100kb', 'en')
-          },
-            zh: {
-              title: 'Compress PDF to 100KB Free Online | No Uploads',
-              h1: 'Compress PDF to 100KB Without Losing Quality',
-              description: 'Shrink your PDF files down to 100KB or less directly in your browser. Perfect for email attachments and fast sharing. 100% private.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'zh')
-            },
-            pt: {
-              title: 'Compactar PDF para 100 KB grátis online | Sem envios',
-              h1: 'Compacte PDF em 100 KB sem perder qualidade',
-              description: 'Reduza seus arquivos PDF para 100 KB ou menos diretamente em seu navegador. Perfeito para anexos de e-mail e compartilhamento rápido. 100% privado.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'pt')
-            },
-            ja: {
-              title: 'PDFをオンラインで無料で100KBに圧縮 | アップロードはありません',
-              h1: '品質を損なうことなくPDFを100KBに圧縮',
-              description: 'ブラウザで PDF ファイルを直接 100KB 以下に縮小します。 電子メールの添付や高速共有に最適です。 100%プライベートです。',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'ja')
-            },
-            de: {
-              title: 'PDF kostenlos online auf 100 KB komprimieren | Keine Uploads',
-              h1: 'Komprimieren Sie PDF auf 100 KB, ohne an Qualität zu verlieren',
-              description: 'Verkleinern Sie Ihre PDF-Dateien direkt in Ihrem Browser auf 100 KB oder weniger. Perfekt für E-Mail-Anhänge und schnelles Teilen. 100 % privat.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'de')
-            },
-            es: {
-              title: 'Comprima PDF a 100 KB gratis en línea | Sin cargas',
-              h1: 'Comprime PDF a 100 KB sin perder calidad',
-              description: 'Reduzca sus archivos PDF a 100 KB o menos directamente en su navegador. Perfecto para archivos adjuntos de correo electrónico y para compartir rápidamente. 100% privado.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'es')
-            },
-            ar: {
-              title: 'ضغط ملف PDF إلى 100 كيلو بايت مجانًا عبر الإنترنت | لا تحميلات',
-              h1: 'ضغط ملف PDF إلى 100 كيلو بايت دون فقدان الجودة',
-              description: 'قم بتقليص حجم ملفات PDF الخاصة بك إلى 100 كيلو بايت أو أقل مباشرةً في متصفحك. مثالي لمرفقات البريد الإلكتروني والمشاركة السريعة. خاص 100%.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'ar')
-            },
-            ru: {
-              title: 'Сжать PDF до 100 КБ бесплатно в Интернете | Нет загрузок',
-              h1: 'Сжимайте PDF до 100 КБ без потери качества',
-              description: 'Уменьшите размер PDF-файлов до 100 КБ или меньше прямо в браузере. Идеально подходит для вложений в электронную почту и быстрого обмена. 100% приват.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'ru')
-            },
-            id: {
-              title: 'Kompres PDF ke 100KB Online Gratis | Tidak Ada Unggahan',
-              h1: 'Kompres PDF hingga 100KB Tanpa Kehilangan Kualitas',
-              description: 'Kecilkan file PDF Anda hingga 100KB atau kurang langsung di browser Anda. Sempurna untuk lampiran email dan berbagi cepat. 100% pribadi.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'id')
-            },
-            fr: {
-              title: 'Compresser un PDF à 100 Ko gratuitement en ligne | Aucun téléchargement',
-              h1: 'Compresser le PDF à 100 Ko sans perte de qualité',
-              description: 'Réduisez vos fichiers PDF à 100 Ko ou moins directement dans votre navigateur. Parfait pour les pièces jointes aux e-mails et le partage rapide. 100% privé.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'fr')
-            },
-            hi: {
-              title: 'पीडीएफ को 100KB तक निःशुल्क ऑनलाइन कंप्रेस करें | कोई अपलोड नहीं',
-              h1: 'गुणवत्ता खोए बिना पीडीएफ को 100KB तक संपीड़ित करें',
-              description: 'सीधे अपने ब्राउज़र में अपनी पीडीएफ फाइलों को 100KB या उससे कम करें। ईमेल अनुलग्नकों और तेज़ साझाकरण के लिए बिल्कुल सही। 100% निजी.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'hi')
-            },
-            tr: {
-              title: 'PDF\'yi 100KB\'ye Ücretsiz Çevrimiçi Olarak Sıkıştırın | Yükleme Yok',
-              h1: 'Kaliteyi Kaybetmeden PDF\'yi 100 KB\'ye Sıkıştırın',
-              description: 'PDF dosyalarınızı doğrudan tarayıcınızda 100 KB veya daha azına kadar küçültün. E-posta ekleri ve hızlı paylaşım için mükemmeldir. %100 özel.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'tr')
-            },
-            pl: {
-              title: 'Kompresuj plik PDF do 100 KB bezpłatnie online | Brak przesłanych plików',
-              h1: 'Kompresuj plik PDF do 100 KB bez utraty jakości',
-              description: 'Zmniejsz pliki PDF do 100 KB lub mniej bezpośrednio w przeglądarce. Idealny do załączników do wiadomości e-mail i szybkiego udostępniania. 100% prywatności.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'pl')
-            },
-            th: {
-              title: 'บีบอัด PDF เป็น 100KB ออนไลน์ฟรี | ไม่มีการอัพโหลด',
-              h1: 'บีบอัด PDF เป็น 100KB โดยไม่สูญเสียคุณภาพ',
-              description: 'ย่อขนาดไฟล์ PDF ของคุณลงเหลือ 100KB หรือน้อยกว่านั้นในเบราว์เซอร์ของคุณโดยตรง เหมาะสำหรับแนบไฟล์อีเมลและการแชร์ที่รวดเร็ว ส่วนตัว 100%',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'th')
-            },
-            it: {
-              title: 'Comprimi PDF in 100KB online gratuitamente | Nessun caricamento',
-              h1: 'Comprimi PDF a 100KB senza perdere la qualità',
-              description: 'Riduci i tuoi file PDF fino a 100KB o meno direttamente nel tuo browser. Perfetto per allegati e-mail e condivisione rapida. 100% privato.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'it')
-            },
-            sv: {
-              title: 'Komprimera PDF till 100 KB gratis online | Inga uppladdningar',
-              h1: 'Komprimera PDF till 100KB utan att förlora kvalitet',
-              description: 'Förminska dina PDF-filer till 100 KB eller mindre direkt i din webbläsare. Perfekt för e-postbilagor och snabb delning. 100% privat.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'sv')
-            },
-            vi: {
-              title: 'Nén PDF thành 100KB trực tuyến miễn phí | Không tải lên',
-              h1: 'Nén PDF thành 100KB mà không làm giảm chất lượng',
-              description: 'Thu nhỏ tệp PDF của bạn xuống còn 100KB hoặc ít hơn trực tiếp trong trình duyệt của bạn. Hoàn hảo cho việc đính kèm email và chia sẻ nhanh chóng. 100% riêng tư.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'vi')
-            },
-            ko: {
-              title: '온라인에서 무료로 PDF를 100KB로 압축 | 업로드 없음',
-              h1: '품질 저하 없이 PDF를 100KB로 압축',
-              description: '브라우저에서 PDF 파일을 100KB 이하로 직접 축소하세요. 이메일 첨부 및 빠른 공유에 적합합니다. 100% 비공개입니다.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'ko')
-            },
-            cs: {
-              title: 'Komprimujte PDF na 100 kB online zdarma | Žádné nahrávání',
-              h1: 'Komprimujte PDF na 100 kB bez ztráty kvality',
-              description: 'Zmenšete své soubory PDF na 100 kB nebo méně přímo ve vašem prohlížeči. Ideální pro e-mailové přílohy a rychlé sdílení. 100% soukromé.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'cs')
-            },
-            nl: {
-              title: 'Comprimeer PDF naar 100 KB Gratis online | Geen uploads',
-              h1: 'Comprimeer PDF tot 100 KB zonder kwaliteitsverlies',
-              description: 'Verklein uw PDF-bestanden rechtstreeks in uw browser tot 100 KB of minder. Perfect voor e-mailbijlagen en snel delen. 100% privé.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'nl')
-            },
-            ro: {
-              title: 'Comprimați PDF la 100KB gratuit online | Fără încărcări',
-              h1: 'Comprimați PDF la 100 KB fără a pierde calitatea',
-              description: 'Reduceți fișierele PDF până la 100 KB sau mai puțin direct în browser. Perfect pentru atașamentele de e-mail și partajarea rapidă. 100% privat.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'ro')
-            },
-            hu: {
-              title: 'PDF tömörítése 100 KB-ra, ingyenes online | Nincs feltöltés',
-              h1: 'A PDF tömörítése 100 KB-ra a minőség elvesztése nélkül',
-              description: 'Csökkentse PDF-fájljait 100 KB-ra vagy kevesebbre közvetlenül a böngészőben. Tökéletes e-mail mellékletekhez és gyors megosztáshoz. 100% privát.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'hu')
-            },
-            sk: {
-              title: 'Komprimujte PDF na 100 kB online zadarmo | Žiadne nahrávania',
-              h1: 'Komprimujte PDF na 100 kB bez straty kvality',
-              description: 'Zmenšite svoje PDF súbory na 100 kB alebo menej priamo vo vašom prehliadači. Ideálne pre e-mailové prílohy a rýchle zdieľanie. 100% súkromné.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'sk')
-            },
-            fi: {
-              title: 'Pakkaa PDF 100 kilotavuun ilmaiseksi verkossa | Ei latauksia',
-              h1: 'Pakkaa PDF 100 kilotavuun menettämättä laatua',
-              description: 'Pienennä PDF-tiedostosi 100 kilotavuun tai pienempään suoraan selaimessasi. Täydellinen sähköpostin liitteisiin ja nopeaan jakamiseen. 100% yksityinen.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'fi')
-            },
-            da: {
-              title: 'Komprimer PDF til 100 KB gratis online | Ingen uploads',
-              h1: 'Komprimer PDF til 100KB uden at miste kvalitet',
-              description: 'Formindsk dine PDF-filer til 100KB eller mindre direkte i din browser. Perfekt til vedhæftede filer i e-mail og hurtig deling. 100% privat.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'da')
-            },
-            no: {
-              title: 'Komprimer PDF til 100 KB gratis online | Ingen opplastinger',
-              h1: 'Komprimer PDF til 100KB uten å miste kvalitet',
-              description: 'Krymp PDF-filene dine ned til 100 KB eller mindre direkte i nettleseren din. Perfekt for e-postvedlegg og rask deling. 100% privat.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'no')
-            },
-            he: {
-              title: 'דחוס PDF ל-100KB בחינם באינטרנט | אין העלאות',
-              h1: 'דחוס PDF ל-100KB מבלי לאבד איכות',
-              description: 'כווץ את קובצי ה-PDF שלך עד ל-100KB או פחות ישירות בדפדפן שלך. מושלם עבור קבצים מצורפים לדוא"ל ושיתוף מהיר. 100% פרטי.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'he')
-            },
-            ms: {
-              title: 'Mampatkan PDF kepada 100KB Percuma Dalam Talian | Tiada Muat Naik',
-              h1: 'Mampatkan PDF kepada 100KB Tanpa Kehilangan Kualiti',
-              description: 'Kecilkan fail PDF anda kepada 100KB atau kurang terus dalam penyemak imbas anda. Sesuai untuk lampiran e-mel dan perkongsian pantas. 100% persendirian.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'ms')
-            },
-            el: {
-              title: 'Συμπίεση PDF σε 100 KB Δωρεάν Online | Δεν υπάρχουν μεταφορτώσεις',
-              h1: 'Συμπιέστε το PDF στα 100 KB χωρίς απώλεια ποιότητας',
-              description: 'Μειώστε τα αρχεία PDF σας σε 100 KB ή λιγότερο απευθείας στο πρόγραμμα περιήγησής σας. Ιδανικό για συνημμένα email και γρήγορη κοινή χρήση. 100% ιδιωτικό.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'el')
-            },
-            uk: {
-              title: 'Стисніть PDF до 100 КБ безкоштовно онлайн | Немає завантажень',
-              h1: 'Стисніть PDF до 100 КБ без втрати якості',
-              description: 'Зменште PDF-файли до 100 КБ або менше безпосередньо у браузері. Ідеально підходить для вкладень електронної пошти та швидкого обміну. 100% приватний.',
-              faqs: defaultFaqs('compress-pdf-to-100kb', 'uk')
-            }
-          }
-        },
-    {
           id: 'merge-pdf-files-offline',
           category: 'pdf',
           iconName: 'Combine',
           slugs: generateSlugsForId('merge-pdf-files-offline', {
             en: 'merge-pdf-files-offline',
-            zh: 'merge-pdf-files-offline',
-            ja: 'pdf',
-            ru: 'pdf',
+            zh: 'li-xian-he-bing-pdf-wen-jian',
+            ja: 'pdf-ofurain-ketsugou',
+            ru: 'obedinenie-pdf-failov-offline',
             id: 'menggabungkan-file-pdf-secara-offline',
             fr: 'fusionner-des-fichiers-pdf-hors-ligne',
             pt: 'mesclar-arquivos-pdf-off-line',
             de: 'pdf-dateien-offline-zusammenf-hren',
             es: 'fusionar-archivos-pdf-sin-conexi-n',
-            ar: 'pdf',
+            ar: 'damj-malaffat-pdf-offline',
             vi: 'h-p-nh-t-c-c-t-p-tin-pdf-ngo-i-tuy-n',
             cs: 'slou-it-soubory-pdf-offline',
             hi: 'merge-pdf-files-offline-hi',
             tr: 'pdf-dosyalar-n-evrimd-birle-tirme',
             pl: 'scalaj-pliki-pdf-w-trybie-offline',
-            ko: 'pdf',
+            ko: 'opeurain-pdf-byeonghap',
             sv: 'sl-samman-pdf-filer-offline',
-            th: 'pdf',
+            th: 'ruam-fai-pdf-offline',
             nl: 'pdf-bestanden-offline-samenvoegen',
             it: 'unisci-file-pdf-offline',
             da: 'flette-pdf-filer-offline',
             ro: 'mbina-fi-ierele-pdf-offline',
-            he: 'pdf',
-            el: 'pdf',
+            he: 'mizug-kovtsei-pdf-offline',
+            el: 'synchoneysi-arxeion-pdf-offline',
             no: 'sl-sammen-pdf-filer-offline',
-            uk: 'pdf',
+            uk: 'obyednannya-failiv-pdf-offline',
             hu: 'pdf-f-jlok-egyes-t-se-offline-m-dban',
             fi: 'yhdist-pdf-tiedostoja-offline-tilassa',
             ms: 'gabungkan-fail-pdf-di-luar-talian',
@@ -1952,18 +1733,18 @@ export const pdfTools: ToolDefinition[] = [
           iconName: 'FileText',
           slugs: generateSlugsForId('convert-scanned-pdf-to-text', {
             en: 'convert-scanned-pdf-to-text',
-            zh: 'convert-scanned-pdf-to-text',
-            ja: 'pdf',
-            ru: 'pdf',
+            zh: 'sao-miao-pdf-zhuan-wen-zi',
+            ja: 'pdf-sukyan-tekisuto-henkan',
+            ru: 'konvertirovat-skanirovannyi-pdf-v-tekst',
             pt: 'converter-pdf-digitalizado-em-texto',
             fr: 'convertir-un-pdf-num-ris-en-texte',
             id: 'mengonversi-pindaian-pdf-menjadi-teks',
-            ar: 'convert-scanned-pdf-to-text-ar',
+            ar: 'tahweel-pdf-almasooh-ila-nass',
             es: 'convertir-pdf-escaneado-a-texto',
             de: 'konvertieren-sie-gescannte-pdfs-in-text',
-            ko: 'pdf',
+            ko: 'seukaen-pdf-tekseuteu-byeonhwan',
             nl: 'gescande-pdf-naar-tekst-converteren',
-            th: 'pdf',
+            th: 'plaeng-pdf-scan-pen-khokhwam',
             cs: 'p-ev-st-naskenovan-pdf-na-text',
             vi: 'chuy-n-i-pdf-c-qu-t-th-nh-v-n-b-n',
             hi: 'convert-scanned-pdf-to-text-hi',
@@ -2171,34 +1952,34 @@ export const pdfTools: ToolDefinition[] = [
           iconName: 'ListOrdered',
           slugs: generateSlugsForId('add-page-numbers-to-pdf-free', {
             en: 'add-page-numbers-to-pdf-free',
-            zh: 'add-page-numbers-to-pdf-free',
-            ja: 'pdf',
+            zh: 'mian-fei-tian-jia-pdf-ye-ma',
+            ja: 'pdf-peejibangou-tsuika-muryou',
             fr: 'ajouter-des-num-ros-de-page-au-pdf-gratuitement',
             id: 'tambahkan-nomor-halaman-ke-pdf-gratis',
             pt: 'adicionar-n-meros-de-p-gina-ao-pdf-gratuitamente',
             de: 'seitenzahlen-kostenlos-zum-pdf-hinzuf-gen',
-            ar: 'pdf',
+            ar: 'idaafat-arqam-alsafahat-ila-pdf-majjani',
             es: 'agregar-n-meros-de-p-gina-a-pdf-gratis',
-            ru: 'pdf',
+            ru: 'dobavit-nomera-stranits-v-pdf-besplatno',
             it: 'aggiungi-numeri-di-pagina-al-pdf-gratuitamente',
-            ko: 'pdf',
+            ko: 'pdf-peiji-beonho-chuga-muryo',
             nl: 'paginanummers-toevoegen-aan-pdf-gratis',
             pl: 'dodaj-numery-stron-do-pliku-pdf-za-darmo',
             tr: 'pdf-ye-cretsiz-sayfa-numaralar-ekleme',
             hi: 'add-page-numbers-to-pdf-free-hi',
-            th: 'pdf',
+            th: 'sai-mailek-na-pdf-free',
             vi: 'th-m-s-trang-v-o-pdf-mi-n-ph',
             sv: 'l-gg-till-sidnummer-till-pdf-gratis',
             cs: 'p-idat-sla-str-nek-do-pdf-zdarma',
-            el: 'pdf',
+            el: 'prosthesi-arithmon-selidas-se-pdf-dorean',
             sk: 'prida-sla-str-n-do-pdf-zadarmo',
             hu: 'oldalsz-mok-hozz-ad-sa-a-pdf-hez-ingyenes',
             da: 'tilf-j-sidetal-til-pdf-gratis',
             ro: 'ad-uga-i-numere-de-pagini-la-pdf-gratuit',
             fi: 'lis-sivunumerot-pdf-tiedostoon-ilmaiseksi',
             no: 'legg-til-sidetall-til-pdf-gratis',
-            uk: 'pdf',
-            he: 'pdf',
+            uk: 'dodaty-nomery-storinok-do-pdf-bezkoshtovno',
+            he: 'hosafat-misparim-ledapei-pdf-hinam',
             ms: 'tambah-nombor-halaman-ke-pdf-percuma'
           }),
           seo: {
@@ -2390,33 +2171,33 @@ export const pdfTools: ToolDefinition[] = [
           iconName: 'Eraser',
           slugs: generateSlugsForId('remove-pdf-watermark-online', {
             en: 'remove-pdf-watermark-online',
-            zh: 'remove-pdf-watermark-online',
+            zh: 'zai-xian-shan-chu-pdf-shui-yin',
             fr: 'supprimer-le-filigrane-pdf-en-ligne',
             pt: 'remover-marca-d-gua-de-pdf-on-line',
-            ja: 'pdf',
+            ja: 'pdf-sukashi-sakujo-onrain',
             es: 'eliminar-marca-de-agua-de-pdf-en-l-nea',
             de: 'pdf-wasserzeichen-online-entfernen',
             id: 'hapus-tanda-air-pdf-online',
-            ru: 'pdf',
-            ar: 'pdf',
+            ru: 'udalit-vodyanoi-znak-pdf-onlain',
+            ar: 'izalat-alama-maiyya-pdf-online',
             vi: 'x-a-h-nh-m-pdf-tr-c-tuy-n',
-            ko: 'pdf',
+            ko: 'pdf-woteoma-keu-jegeo-onrain',
             sv: 'ta-bort-pdf-vattenst-mpel-online',
             it: 'rimuovere-la-filigrana-dal-pdf-online',
-            th: 'pdf',
+            th: 'lop-lai-nam-pdf-online',
             cs: 'odstranit-vodoznak-pdf-online',
             tr: 'pdf-filigran-n-evrimi-i-kald-r',
             nl: 'verwijder-pdf-watermerk-online',
             pl: 'usu-znak-wodny-pdf-online',
             hi: 'remove-pdf-watermark-online-hi',
-            el: 'pdf',
+            el: 'afairesi-ydatografimatos-pdf-online',
             sk: 'odstr-ni-vodoznak-pdf-online',
-            he: 'pdf',
+            he: 'hasarat-siman-mayim-pdf-online',
             hu: 'pdf-v-zjel-elt-vol-t-sa-online',
             ms: 'buang-tera-air-pdf-dalam-talian',
             no: 'fjern-pdf-vannmerke-online',
             da: 'fjern-pdf-vandm-rke-online',
-            uk: 'pdf',
+            uk: 'vydalyty-vodyanyi-znak-pdf-onlain',
             ro: 'elimina-i-filigranul-pdf-online',
             fi: 'poista-pdf-vesileima-verkossa'
           }),
