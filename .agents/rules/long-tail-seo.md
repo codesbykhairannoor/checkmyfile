@@ -21,3 +21,8 @@ When translating a new SEO tool page, translating the JSON body content is NOT E
 1. **The URL Slugs**: Users must see localized URLs.
 2. **The Tab Titles & Meta Data**: `<title>` and `<h1>` must be fully localized.
 3. Both of these live in `src/catalog/pdfTools.ts` inside the `seo` object and `slugs` object. Your translation script MUST inject translations directly into `pdfTools.ts` alongside generating the JSON files.
+
+## 4. Google Translate API X (Fast Execution)
+- Whenever writing NodeJS scripts to translate SEO content, you **MUST** use the `google-translate-api-x` package.
+- **NEVER** process translations one-by-one with a long `await sleep()` loop—this is incredibly slow and inefficient.
+- **ALWAYS** process translations concurrently using `Promise.all()` (e.g., chunked in batches of 10-15 to respect rate limits, but still lightning fast compared to sequential loops). This applies to JSON content, URLs, Tab Titles, and anything else that needs translating.
