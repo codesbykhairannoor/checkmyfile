@@ -7,6 +7,7 @@ import { UI_TRANSLATIONS } from '../src/i18n/translations';
 import { GEO_CITATIONS } from '../src/i18n/geoTranslations';
 import { STATIC_SLUGS, type StaticPageId } from '../src/i18n/staticSlugs';
 import { toolSlugs } from '../src/i18n/slugTranslations';
+import { cleanMetaTitle, cleanMetaDescription } from '../src/utils/seoHelpers';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -39,27 +40,7 @@ const writeFileSafe = (filePath: string, content: string) => {
   generatedCount++;
 };
 
-// Title and Description clean helpers to ensure Ahrefs bounds (<60 chars title, <155 chars description)
-const cleanMetaTitle = (title: string): string => {
-  let t = title.trim();
-  if (t.length > 60) {
-    if (t.includes(' | HandleMyFile')) {
-      const stripped = t.replace(' | HandleMyFile', '').trim();
-      if (stripped.length <= 60) return stripped;
-      return stripped.slice(0, 57).trim() + '...';
-    }
-    return t.slice(0, 57).trim() + '...';
-  }
-  return t;
-};
 
-const cleanMetaDescription = (desc: string): string => {
-  let d = desc.trim();
-  if (d.length > 155) {
-    return d.slice(0, 152).trim() + '...';
-  }
-  return d;
-};
 
 // Helper: Semantic footer with crawlable outgoing internal links
 const buildStaticFooter = (lang: string, isEn: boolean): string => {
@@ -129,7 +110,7 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
   
   const fullUrl = `${DOMAIN}${urlPath}`;
   const finalTitle = cleanMetaTitle(seoTitle);
-  const finalDesc = cleanMetaDescription(seoDesc);
+  const finalDesc = cleanMetaDescription(seoDesc, lang);
 
   // Inject accurate tags matching canonical URL exactly (eliminates Open Graph mismatches)
   const titleTag = `<title>${finalTitle}</title>`;
@@ -521,11 +502,12 @@ const run = async () => {
     const homeTitle = `HandleMyFile | ${homeTrans.homeHeroTitle || 'All Document Tools in One Place'}`;
     // English home → dist/index.html (already generated at bottom), skip here
     if (!isEn) {
+      const homeSubtitle = homeTrans.homeHeroSubtitle || 'Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly.';
       const homeHtml = generateHtml(
         lang,
         `/${lang}`,
         homeTitle,
-        'Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly.',
+        homeSubtitle,
         'home'
       );
       writeFileSafe(path.join(distDir, lang, 'index.html'), homeHtml);
@@ -607,7 +589,7 @@ const run = async () => {
 <html lang="${lang}">
 <head>
   <meta charset="UTF-8">
-  <title>Redirecting to ${DOMAIN}${targetUrl}</title>
+  <title>Redirecting...</title>
   <link rel="canonical" href="${DOMAIN}${targetUrl}" />
   <meta http-equiv="refresh" content="0; url=${DOMAIN}${targetUrl}" />
   <script>window.location.replace("${DOMAIN}${targetUrl}");</script>
@@ -639,7 +621,7 @@ const run = async () => {
 <html lang="${lang}">
 <head>
   <meta charset="UTF-8">
-  <title>Redirecting to ${DOMAIN}${targetUrl}</title>
+  <title>Redirecting...</title>
   <link rel="canonical" href="${DOMAIN}${targetUrl}" />
   <meta http-equiv="refresh" content="0; url=${DOMAIN}${targetUrl}" />
   <script>window.location.replace("${DOMAIN}${targetUrl}");</script>

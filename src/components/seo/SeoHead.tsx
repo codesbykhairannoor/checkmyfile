@@ -4,6 +4,7 @@ import { getLocalizedSeo, type ToolDefinition } from '../../catalog/toolsCatalog
 
 import { getUiTranslations } from '../../i18n/translations';
 import { getLocalizedStaticSlug, type StaticPageId } from '../../i18n/staticSlugs';
+import { cleanMetaTitle, cleanMetaDescription } from '../../utils/seoHelpers';
 
 interface SeoHeadProps {
   tool?: ToolDefinition;
@@ -69,7 +70,11 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang, currentLang, title
       ];
     }
 
-    // 2. Update document title
+    // 2. Normalize title and description to strict SEO bounds (<=60 title, 100-155 description)
+    title = cleanMetaTitle(title);
+    description = cleanMetaDescription(description, activeLang);
+
+    // Update document title
     document.title = title;
 
     // Helper to set or update meta tag
@@ -97,8 +102,11 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang, currentLang, title
     // 4. Update Canonical & Hreflang Tags (Partial Lang URL structure)
     document.querySelectorAll('link[rel="canonical"], link[rel="alternate"][hreflang]').forEach((el) => el.remove());
 
+    const isCurrentEn = activeLang === 'en';
     const currentSlug = tool ? (tool.slugs[activeLang] || tool.id) : (slug ? getLocalizedStaticSlug(slug as StaticPageId, activeLang) : '');
-    const currentPath = currentSlug ? `/${activeLang}/${currentSlug}` : `/${activeLang}`;
+    const currentPath = isCurrentEn
+      ? (currentSlug ? `/${currentSlug}` : `/`)
+      : (currentSlug ? `/${activeLang}/${currentSlug}` : `/${activeLang}`);
     const canonicalUrl = `${origin}${currentPath}`;
     setMetaTag('og:url', 'property', canonicalUrl);
 
@@ -110,8 +118,11 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang, currentLang, title
 
     // Add hreflang links for all 30 supported languages
     SUPPORTED_LANGUAGES.forEach((l) => {
+      const isLCodeEn = l.code === 'en';
       const langSlug = tool ? (tool.slugs[l.code] || tool.id) : (slug ? getLocalizedStaticSlug(slug as StaticPageId, l.code) : '');
-      const langPath = langSlug ? `/${l.code}/${langSlug}` : `/${l.code}`;
+      const langPath = isLCodeEn
+        ? (langSlug ? `/${langSlug}` : `/`)
+        : (langSlug ? `/${l.code}/${langSlug}` : `/${l.code}`);
       const hreflangLink = document.createElement('link');
       hreflangLink.setAttribute('rel', 'alternate');
       hreflangLink.setAttribute('hreflang', l.code);
@@ -119,9 +130,9 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang, currentLang, title
       document.head.appendChild(hreflangLink);
     });
 
-    // Add x-default pointing to English version
+    // Add x-default pointing to English root version
     const xDefaultSlug = tool ? (tool.slugs['en'] || tool.id) : (slug ? getLocalizedStaticSlug(slug as StaticPageId, 'en') : '');
-    const xDefaultPath = xDefaultSlug ? `/en/${xDefaultSlug}` : `/en`;
+    const xDefaultPath = xDefaultSlug ? `/${xDefaultSlug}` : `/`;
     const xDefaultLink = document.createElement('link');
     xDefaultLink.setAttribute('rel', 'alternate');
     xDefaultLink.setAttribute('hreflang', 'x-default');
@@ -140,7 +151,7 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang, currentLang, title
           '@type': 'ListItem',
           position: 1,
           name: `Home (${langInfo.nativeName})`,
-          item: `${origin}/${activeLang}`,
+          item: isCurrentEn ? `${origin}/` : `${origin}/${activeLang}`,
         },
         ...(currentSlug
           ? [
