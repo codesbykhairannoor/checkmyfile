@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "word_geo_targeting",
-      "subTitle": "Lokálny kompresný motor",
-      "subContent": "Náš pokročilý WASM engine komprimuje vaše PDF lokálne. Žiadne obmedzenia súborov."
+      "title": "Lokálny kompresný motor",
+      "content": "Náš pokročilý WASM engine komprimuje vaše PDF lokálne. Žiadne obmedzenia súborov."
     },
     {
       "type": "metadata_privacy_security",
-      "subTitle": "Nulové uchovávanie údajov",
-      "subContent": "Keďže súbory nikdy neopustia vaše zariadenie, vaše súkromné ​​údaje zostanú len vaše."
+      "title": "Nulové uchovávanie údajov",
+      "content": "Keďže súbory nikdy neopustia vaše zariadenie, vaše súkromné ​​údaje zostanú len vaše."
     },
     {
       "type": "protect_performance",
-      "subTitle": "Blesková rýchlosť 100 kB",
-      "subContent": "Dosiahnite cieľovú veľkosť 100 kB v milisekúndách bez oneskorenia servera."
+      "title": "Blesková rýchlosť 100 kB",
+      "content": "Dosiahnite cieľovú veľkosť 100 kB v milisekúndách bez oneskorenia servera."
     }
   ],
   "faqs": [

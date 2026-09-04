@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "watermark_geo_targeting",
-      "subTitle": "Pulisci i tuoi PDF",
-      "subContent": "Rimuovi timbri, sfondi e filigrane indesiderati."
+      "title": "Pulisci i tuoi PDF",
+      "content": "Rimuovi timbri, sfondi e filigrane indesiderati."
     },
     {
       "type": "compare_privacy_security",
-      "subTitle": "Redazione locale",
-      "subContent": "Cancella filigrane sensibili senza caricare file sui nostri server."
+      "title": "Redazione locale",
+      "content": "Cancella filigrane sensibili senza caricare file sui nostri server."
     },
     {
       "type": "edit_performance",
-      "subTitle": "Qualità impeccabile",
-      "subContent": "Rimuoviamo l'oggetto filigrana senza compromettere la qualità del documento."
+      "title": "Qualità impeccabile",
+      "content": "Rimuoviamo l'oggetto filigrana senza compromettere la qualità del documento."
     }
   ],
   "faqs": [

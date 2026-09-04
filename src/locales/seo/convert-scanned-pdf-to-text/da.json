@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "image_geo_targeting",
-      "subTitle": "WebAssembly OCR",
-      "subContent": "Tesseract OCR kører direkte i din browser. Ingen cloud API'er involveret."
+      "title": "WebAssembly OCR",
+      "content": "Tesseract OCR kører direkte i din browser. Ingen cloud API'er involveret."
     },
     {
       "type": "redact_privacy_security",
-      "subTitle": "Fortrolig udtrækning",
-      "subContent": "Uddrag tekst fra følsomme ID-kort eller lægejournaler sikkert."
+      "title": "Fortrolig udtrækning",
+      "content": "Uddrag tekst fra følsomme ID-kort eller lægejournaler sikkert."
     },
     {
       "type": "scan_performance",
-      "subTitle": "Høj nøjagtighed",
-      "subContent": "Understøttelse af flere sprog og skæve scanninger."
+      "title": "Høj nøjagtighed",
+      "content": "Understøttelse af flere sprog og skæve scanninger."
     }
   ],
   "faqs": [

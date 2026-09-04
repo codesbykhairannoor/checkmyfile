@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "csv_excel_geo_targeting",
-      "subTitle": "Pagination gratuite",
-      "subContent": "Ajoutez des numéros à un nombre illimité de fichiers sans toucher aux paywalls."
+      "title": "Pagination gratuite",
+      "content": "Ajoutez des numéros à un nombre illimité de fichiers sans toucher aux paywalls."
     },
     {
       "type": "unlock_privacy_security",
-      "subTitle": "Gestion sécurisée des documents",
-      "subContent": "Vos mémoires et rapports sont numérotés en privé sur votre machine."
+      "title": "Gestion sécurisée des documents",
+      "content": "Vos mémoires et rapports sont numérotés en privé sur votre machine."
     },
     {
       "type": "reverse_performance",
-      "subTitle": "Numérotation des lots",
-      "subContent": "Appliquez des numéros de page à des documents volumineux en une fraction de seconde."
+      "title": "Numérotation des lots",
+      "content": "Appliquez des numéros de page à des documents volumineux en une fraction de seconde."
     }
   ],
   "faqs": [

@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "sign_geo_targeting",
-      "subTitle": "Çevrimdışı Birleştirme",
-      "subContent": "Vergi formlarınızı ve yasal belgelerinizi hiçbir yere göndermeden birleştirin."
+      "title": "Çevrimdışı Birleştirme",
+      "content": "Vergi formlarınızı ve yasal belgelerinizi hiçbir yere göndermeden birleştirin."
     },
     {
       "type": "rotate_privacy_security",
-      "subTitle": "Askeri Düzeyde Gizlilik",
-      "subContent": "Dosyalarınızı fiziksel olarak göremediğimiz için mutlak gizliliği garanti ediyoruz."
+      "title": "Askeri Düzeyde Gizlilik",
+      "content": "Dosyalarınızı fiziksel olarak göremediğimiz için mutlak gizliliği garanti ediyoruz."
     },
     {
       "type": "excel_performance",
-      "subTitle": "Anında İşleme",
-      "subContent": "İstemci tarafı işlemeyle 100'lerce sayfayı anında birleştirin."
+      "title": "Anında İşleme",
+      "content": "İstemci tarafı işlemeyle 100'lerce sayfayı anında birleştirin."
     }
   ],
   "faqs": [

@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "word_geo_targeting",
-      "subTitle": "Lokal kompresjonsmotor",
-      "subContent": "Vår avanserte WASM-motor komprimerer PDF-en din lokalt. Ingen filgrenser."
+      "title": "Lokal kompresjonsmotor",
+      "content": "Vår avanserte WASM-motor komprimerer PDF-en din lokalt. Ingen filgrenser."
     },
     {
       "type": "metadata_privacy_security",
-      "subTitle": "Null dataoppbevaring",
-      "subContent": "Siden filer aldri forlater enheten din, forblir de private dataene dine alene."
+      "title": "Null dataoppbevaring",
+      "content": "Siden filer aldri forlater enheten din, forblir de private dataene dine alene."
     },
     {
       "type": "protect_performance",
-      "subTitle": "Lynrask 100KB",
-      "subContent": "Nå målstørrelsen på 100 KB på millisekunder uten serverforsinkelser."
+      "title": "Lynrask 100KB",
+      "content": "Nå målstørrelsen på 100 KB på millisekunder uten serverforsinkelser."
     }
   ],
   "faqs": [

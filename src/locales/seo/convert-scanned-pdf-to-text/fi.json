@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "image_geo_targeting",
-      "subTitle": "WebAssembly OCR",
-      "subContent": "Tesseract OCR toimii suoraan selaimessasi. Ei pilvisovellusliittymiä mukana."
+      "title": "WebAssembly OCR",
+      "content": "Tesseract OCR toimii suoraan selaimessasi. Ei pilvisovellusliittymiä mukana."
     },
     {
       "type": "redact_privacy_security",
-      "subTitle": "Luottamuksellinen purku",
-      "subContent": "Poimi tekstiä arkaluontoisista henkilökorteista tai lääketieteellisistä tiedoista turvallisesti."
+      "title": "Luottamuksellinen purku",
+      "content": "Poimi tekstiä arkaluontoisista henkilökorteista tai lääketieteellisistä tiedoista turvallisesti."
     },
     {
       "type": "scan_performance",
-      "subTitle": "Korkea tarkkuus",
-      "subContent": "Tuki useille kielille ja vinoille skannauksille."
+      "title": "Korkea tarkkuus",
+      "content": "Tuki useille kielille ja vinoille skannauksille."
     }
   ],
   "faqs": [

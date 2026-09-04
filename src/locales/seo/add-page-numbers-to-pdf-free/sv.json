@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "csv_excel_geo_targeting",
-      "subTitle": "Gratis paginering",
-      "subContent": "Lägg till nummer till obegränsade filer utan att träffa betalväggar."
+      "title": "Gratis paginering",
+      "content": "Lägg till nummer till obegränsade filer utan att träffa betalväggar."
     },
     {
       "type": "unlock_privacy_security",
-      "subTitle": "Säker dokumenthantering",
-      "subContent": "Dina avhandlingar och rapporter numreras privat på din maskin."
+      "title": "Säker dokumenthantering",
+      "content": "Dina avhandlingar och rapporter numreras privat på din maskin."
     },
     {
       "type": "reverse_performance",
-      "subTitle": "Batchnumrering",
-      "subContent": "Använd sidnummer på massiva dokument på en bråkdel av en sekund."
+      "title": "Batchnumrering",
+      "content": "Använd sidnummer på massiva dokument på en bråkdel av en sekund."
     }
   ],
   "faqs": [

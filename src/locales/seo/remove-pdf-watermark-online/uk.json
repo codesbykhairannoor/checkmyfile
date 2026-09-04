@@ -1,37 +1,37 @@
 {
   "id": "remove-pdf-watermark-online",
   "supportCenter": true,
-  "heroTitle": "Remove Watermarks from PDF Files Safely",
-  "heroDescription": "Redact or remove intrusive watermarks from your PDF documents. Fully private, browser-based watermark removal tool.",
+  "heroTitle": "Безпечно видаліть водяні знаки з PDF-файлів",
+  "heroDescription": "Відредагуйте або видаліть нав’язливі водяні знаки з документів PDF. Повністю приватний інструмент для видалення водяних знаків у браузері.",
   "sections": [
     {
       "type": "watermark_geo_targeting",
-      "subTitle": "Clean Your PDFs",
-      "subContent": "Remove unwanted stamps, backgrounds, and watermarks."
+      "title": "Очистіть PDF-файли",
+      "content": "Видаліть непотрібні штампи, фони та водяні знаки."
     },
     {
       "type": "compare_privacy_security",
-      "subTitle": "Local Redaction",
-      "subContent": "Erase sensitive watermarks without uploading files to our servers."
+      "title": "Локальна редакція",
+      "content": "Видаліть конфіденційні водяні знаки, не завантажуючи файли на наші сервери."
     },
     {
       "type": "edit_performance",
-      "subTitle": "Flawless Quality",
-      "subContent": "We remove the watermark object without degrading your document quality."
+      "title": "Бездоганна якість",
+      "content": "Ми видаляємо водяний знак без погіршення якості вашого документа."
     }
   ],
   "faqs": [
     {
-      "q": "Does it remove text watermarks or image watermarks?",
-      "a": "Our tool allows you to draw redaction boxes over both text and image watermarks, effectively erasing them permanently."
+      "q": "Чи видаляються водяні знаки тексту чи зображення?",
+      "a": "Наш інструмент дозволяє малювати рамки редагування поверх водяних знаків тексту та зображень, ефективно видаляючи їх назавжди."
     },
     {
-      "q": "Can anyone recover the watermark after removal?",
-      "a": "No. The redacted areas are permanently flattened and rasterized, so the hidden data is completely destroyed and unrecoverable."
+      "q": "Чи може хтось відновити водяний знак після видалення?",
+      "a": "Ні. Відредаговані області остаточно вирівнюються та растеризуються, тому приховані дані повністю знищуються та не підлягають відновленню."
     },
     {
-      "q": "Do I need to pay to remove watermarks?",
-      "a": "Our tool is 100% free with no hidden fees, subscriptions, or intrusive premium pop-ups."
+      "q": "Чи потрібно платити за видалення водяних знаків?",
+      "a": "Наш інструмент на 100% безкоштовний, без прихованих платежів, підписок або нав’язливих спливаючих вікон преміум-класу."
     }
   ]
 }

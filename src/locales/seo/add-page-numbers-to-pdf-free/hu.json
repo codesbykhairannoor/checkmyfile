@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "csv_excel_geo_targeting",
-      "subTitle": "Ingyenes oldalszámozás",
-      "subContent": "Adjon hozzá számokat korlátlan számú fájlhoz anélkül, hogy megütné a fizetőfalakat."
+      "title": "Ingyenes oldalszámozás",
+      "content": "Adjon hozzá számokat korlátlan számú fájlhoz anélkül, hogy megütné a fizetőfalakat."
     },
     {
       "type": "unlock_privacy_security",
-      "subTitle": "Biztonságos dokumentumkezelés",
-      "subContent": "Dolgozatai és jelentései privát számozással vannak ellátva a gépén."
+      "title": "Biztonságos dokumentumkezelés",
+      "content": "Dolgozatai és jelentései privát számozással vannak ellátva a gépén."
     },
     {
       "type": "reverse_performance",
-      "subTitle": "Tételszámozás",
-      "subContent": "A másodperc törtrésze alatt oldalszámozást alkalmazhat a hatalmas dokumentumokon."
+      "title": "Tételszámozás",
+      "content": "A másodperc törtrésze alatt oldalszámozást alkalmazhat a hatalmas dokumentumokon."
     }
   ],
   "faqs": [

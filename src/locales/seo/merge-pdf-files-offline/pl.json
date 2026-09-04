@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "sign_geo_targeting",
-      "subTitle": "Łączenie offline",
-      "subContent": "Połącz formularze podatkowe i dokumenty prawne, nie wysyłając ich nigdzie."
+      "title": "Łączenie offline",
+      "content": "Połącz formularze podatkowe i dokumenty prawne, nie wysyłając ich nigdzie."
     },
     {
       "type": "rotate_privacy_security",
-      "subTitle": "Prywatność na poziomie wojskowym",
-      "subContent": "Gwarantujemy całkowitą prywatność, ponieważ fizycznie nie możemy zobaczyć Twoich plików."
+      "title": "Prywatność na poziomie wojskowym",
+      "content": "Gwarantujemy całkowitą prywatność, ponieważ fizycznie nie możemy zobaczyć Twoich plików."
     },
     {
       "type": "excel_performance",
-      "subTitle": "Natychmiastowe przetwarzanie",
-      "subContent": "Błyskawicznie łącz setki stron dzięki przetwarzaniu po stronie klienta."
+      "title": "Natychmiastowe przetwarzanie",
+      "content": "Błyskawicznie łącz setki stron dzięki przetwarzaniu po stronie klienta."
     }
   ],
   "faqs": [

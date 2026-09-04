@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "sign_geo_targeting",
-      "subTitle": "Offlinesammanslagning",
-      "subContent": "Kombinera dina skatteformulär och juridiska dokument utan att skicka dem någonstans."
+      "title": "Offlinesammanslagning",
+      "content": "Kombinera dina skatteformulär och juridiska dokument utan att skicka dem någonstans."
     },
     {
       "type": "rotate_privacy_security",
-      "subTitle": "Sekretess i militärklass",
-      "subContent": "Vi garanterar absolut integritet eftersom vi fysiskt inte kan se dina filer."
+      "title": "Sekretess i militärklass",
+      "content": "Vi garanterar absolut integritet eftersom vi fysiskt inte kan se dina filer."
     },
     {
       "type": "excel_performance",
-      "subTitle": "Omedelbar bearbetning",
-      "subContent": "Slå samman 100-tals sidor direkt med bearbetning på klientsidan."
+      "title": "Omedelbar bearbetning",
+      "content": "Slå samman 100-tals sidor direkt med bearbetning på klientsidan."
     }
   ],
   "faqs": [

@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "csv_excel_geo_targeting",
-      "subTitle": "Ücretsiz Sayfalandırma",
-      "subContent": "Ödeme duvarlarına çarpmadan sınırsız dosyalara numara ekleyin."
+      "title": "Ücretsiz Sayfalandırma",
+      "content": "Ödeme duvarlarına çarpmadan sınırsız dosyalara numara ekleyin."
     },
     {
       "type": "unlock_privacy_security",
-      "subTitle": "Güvenli Belge İşleme",
-      "subContent": "Tezleriniz ve raporlarınız makinenizde özel olarak numaralandırılır."
+      "title": "Güvenli Belge İşleme",
+      "content": "Tezleriniz ve raporlarınız makinenizde özel olarak numaralandırılır."
     },
     {
       "type": "reverse_performance",
-      "subTitle": "Parti Numaralandırma",
-      "subContent": "Büyük belgelere sayfa numaralarını saniyeden çok daha kısa sürede uygulayın."
+      "title": "Parti Numaralandırma",
+      "content": "Büyük belgelere sayfa numaralarını saniyeden çok daha kısa sürede uygulayın."
     }
   ],
   "faqs": [

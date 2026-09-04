@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "watermark_geo_targeting",
-      "subTitle": "Vyčistěte své soubory PDF",
-      "subContent": "Odstraňte nechtěná razítka, pozadí a vodoznaky."
+      "title": "Vyčistěte své soubory PDF",
+      "content": "Odstraňte nechtěná razítka, pozadí a vodoznaky."
     },
     {
       "type": "compare_privacy_security",
-      "subTitle": "Místní redakce",
-      "subContent": "Vymažte citlivé vodoznaky bez nahrávání souborů na naše servery."
+      "title": "Místní redakce",
+      "content": "Vymažte citlivé vodoznaky bez nahrávání souborů na naše servery."
     },
     {
       "type": "edit_performance",
-      "subTitle": "Bezchybná kvalita",
-      "subContent": "Odstraníme objekt vodoznaku, aniž bychom snížili kvalitu dokumentu."
+      "title": "Bezchybná kvalita",
+      "content": "Odstraníme objekt vodoznaku, aniž bychom snížili kvalitu dokumentu."
     }
   ],
   "faqs": [

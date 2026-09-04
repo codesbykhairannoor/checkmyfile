@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "word_geo_targeting",
-      "subTitle": "Lokalny silnik kompresji",
-      "subContent": "Nasz zaawansowany silnik WASM kompresuje pliki PDF lokalnie. Brak limitów plików."
+      "title": "Lokalny silnik kompresji",
+      "content": "Nasz zaawansowany silnik WASM kompresuje pliki PDF lokalnie. Brak limitów plików."
     },
     {
       "type": "metadata_privacy_security",
-      "subTitle": "Zerowe przechowywanie danych",
-      "subContent": "Ponieważ pliki nigdy nie opuszczają Twojego urządzenia, Twoje prywatne dane pozostają wyłącznie Twoje."
+      "title": "Zerowe przechowywanie danych",
+      "content": "Ponieważ pliki nigdy nie opuszczają Twojego urządzenia, Twoje prywatne dane pozostają wyłącznie Twoje."
     },
     {
       "type": "protect_performance",
-      "subTitle": "Błyskawicznie szybkie 100 KB",
-      "subContent": "Osiągnij docelowy rozmiar 100 KB w milisekundach bez opóźnień serwera."
+      "title": "Błyskawicznie szybkie 100 KB",
+      "content": "Osiągnij docelowy rozmiar 100 KB w milisekundach bez opóźnień serwera."
     }
   ],
   "faqs": [

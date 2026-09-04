@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "image_geo_targeting",
-      "subTitle": "WebAssembly OCR",
-      "subContent": "Tesseract OCR פועל ישירות בדפדפן שלך. לא מעורבים ממשקי API של ענן."
+      "title": "WebAssembly OCR",
+      "content": "Tesseract OCR פועל ישירות בדפדפן שלך. לא מעורבים ממשקי API של ענן."
     },
     {
       "type": "redact_privacy_security",
-      "subTitle": "חילוץ סודי",
-      "subContent": "חלץ טקסט מתעודות זהות רגישות או רשומות רפואיות בצורה בטוחה."
+      "title": "חילוץ סודי",
+      "content": "חלץ טקסט מתעודות זהות רגישות או רשומות רפואיות בצורה בטוחה."
     },
     {
       "type": "scan_performance",
-      "subTitle": "דיוק גבוה",
-      "subContent": "תמיכה במספר שפות וסריקות מוטות."
+      "title": "דיוק גבוה",
+      "content": "תמיכה במספר שפות וסריקות מוטות."
     }
   ],
   "faqs": [

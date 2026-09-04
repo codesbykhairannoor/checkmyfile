@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "csv_excel_geo_targeting",
-      "subTitle": "無料のページネーション",
-      "subContent": "ペイウォールにぶつかることなく、無制限のファイルに番号を追加します。"
+      "title": "無料のページネーション",
+      "content": "ペイウォールにぶつかることなく、無制限のファイルに番号を追加します。"
     },
     {
       "type": "unlock_privacy_security",
-      "subTitle": "安全な文書の取り扱い",
-      "subContent": "あなたの論文とレポートには、あなたのマシン上でプライベートに番号が付けられます。"
+      "title": "安全な文書の取り扱い",
+      "content": "あなたの論文とレポートには、あなたのマシン上でプライベートに番号が付けられます。"
     },
     {
       "type": "reverse_performance",
-      "subTitle": "バッチ番号付け",
-      "subContent": "大量のドキュメントにページ番号を瞬時に適用します。"
+      "title": "バッチ番号付け",
+      "content": "大量のドキュメントにページ番号を瞬時に適用します。"
     }
   ],
   "faqs": [

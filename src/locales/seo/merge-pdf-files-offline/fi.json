@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "sign_geo_targeting",
-      "subTitle": "Offline yhdistäminen",
-      "subContent": "Yhdistä verolomakkeesi ja lakiasiakirjasi lähettämättä niitä minnekään."
+      "title": "Offline yhdistäminen",
+      "content": "Yhdistä verolomakkeesi ja lakiasiakirjasi lähettämättä niitä minnekään."
     },
     {
       "type": "rotate_privacy_security",
-      "subTitle": "Sotilastason yksityisyys",
-      "subContent": "Takaamme täydellisen yksityisyyden, koska emme fyysisesti näe tiedostojasi."
+      "title": "Sotilastason yksityisyys",
+      "content": "Takaamme täydellisen yksityisyyden, koska emme fyysisesti näe tiedostojasi."
     },
     {
       "type": "excel_performance",
-      "subTitle": "Välitön käsittely",
-      "subContent": "Yhdistä 100 sivua välittömästi asiakaspuolen käsittelyllä."
+      "title": "Välitön käsittely",
+      "content": "Yhdistä 100 sivua välittömästi asiakaspuolen käsittelyllä."
     }
   ],
   "faqs": [

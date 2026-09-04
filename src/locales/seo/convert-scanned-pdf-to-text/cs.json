@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "image_geo_targeting",
-      "subTitle": "WebAssembly OCR",
-      "subContent": "Tesseract OCR běží přímo ve vašem prohlížeči. Nejsou zapojena žádná cloudová API."
+      "title": "WebAssembly OCR",
+      "content": "Tesseract OCR běží přímo ve vašem prohlížeči. Nejsou zapojena žádná cloudová API."
     },
     {
       "type": "redact_privacy_security",
-      "subTitle": "Důvěrná extrakce",
-      "subContent": "Bezpečně extrahujte text z citlivých ID karet nebo lékařských záznamů."
+      "title": "Důvěrná extrakce",
+      "content": "Bezpečně extrahujte text z citlivých ID karet nebo lékařských záznamů."
     },
     {
       "type": "scan_performance",
-      "subTitle": "Vysoká přesnost",
-      "subContent": "Podpora více jazyků a zkosené skenování."
+      "title": "Vysoká přesnost",
+      "content": "Podpora více jazyků a zkosené skenování."
     }
   ],
   "faqs": [

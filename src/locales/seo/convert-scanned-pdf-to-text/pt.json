@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "image_geo_targeting",
-      "subTitle": "OCR WebAssembly",
-      "subContent": "O Tesseract OCR é executado diretamente no seu navegador. Nenhuma API de nuvem envolvida."
+      "title": "OCR WebAssembly",
+      "content": "O Tesseract OCR é executado diretamente no seu navegador. Nenhuma API de nuvem envolvida."
     },
     {
       "type": "redact_privacy_security",
-      "subTitle": "Extração Confidencial",
-      "subContent": "Extraia texto de cartões de identificação confidenciais ou registros médicos com segurança."
+      "title": "Extração Confidencial",
+      "content": "Extraia texto de cartões de identificação confidenciais ou registros médicos com segurança."
     },
     {
       "type": "scan_performance",
-      "subTitle": "Alta precisão",
-      "subContent": "Suporte para vários idiomas e varreduras distorcidas."
+      "title": "Alta precisão",
+      "content": "Suporte para vários idiomas e varreduras distorcidas."
     }
   ],
   "faqs": [

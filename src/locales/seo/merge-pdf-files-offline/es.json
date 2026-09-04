@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "sign_geo_targeting",
-      "subTitle": "Fusión sin conexión",
-      "subContent": "Combine sus formularios de impuestos y documentos legales sin enviarlos a ningún lado."
+      "title": "Fusión sin conexión",
+      "content": "Combine sus formularios de impuestos y documentos legales sin enviarlos a ningún lado."
     },
     {
       "type": "rotate_privacy_security",
-      "subTitle": "Privacidad de grado militar",
-      "subContent": "Garantizamos privacidad absoluta porque físicamente no podemos ver sus archivos."
+      "title": "Privacidad de grado militar",
+      "content": "Garantizamos privacidad absoluta porque físicamente no podemos ver sus archivos."
     },
     {
       "type": "excel_performance",
-      "subTitle": "Procesamiento instantáneo",
-      "subContent": "Fusione cientos de páginas al instante con el procesamiento del lado del cliente."
+      "title": "Procesamiento instantáneo",
+      "content": "Fusione cientos de páginas al instante con el procesamiento del lado del cliente."
     }
   ],
   "faqs": [

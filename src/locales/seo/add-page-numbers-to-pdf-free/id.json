@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "csv_excel_geo_targeting",
-      "subTitle": "Paginasi Gratis",
-      "subContent": "Tambahkan nomor ke file tanpa batas tanpa harus membayar mahal."
+      "title": "Paginasi Gratis",
+      "content": "Tambahkan nomor ke file tanpa batas tanpa harus membayar mahal."
     },
     {
       "type": "unlock_privacy_security",
-      "subTitle": "Penanganan Dokumen yang Aman",
-      "subContent": "Disertasi dan laporan Anda diberi nomor secara pribadi di mesin Anda."
+      "title": "Penanganan Dokumen yang Aman",
+      "content": "Disertasi dan laporan Anda diberi nomor secara pribadi di mesin Anda."
     },
     {
       "type": "reverse_performance",
-      "subTitle": "Penomoran Batch",
-      "subContent": "Terapkan nomor halaman ke dokumen berukuran besar dalam sepersekian detik."
+      "title": "Penomoran Batch",
+      "content": "Terapkan nomor halaman ke dokumen berukuran besar dalam sepersekian detik."
     }
   ],
   "faqs": [

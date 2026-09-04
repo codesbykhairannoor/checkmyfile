@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "word_geo_targeting",
-      "subTitle": "Mesin Kompresi Lokal",
-      "subContent": "Mesin WASM canggih kami memampatkan PDF Anda secara lokal. Tidak ada batasan file."
+      "title": "Mesin Kompresi Lokal",
+      "content": "Mesin WASM canggih kami memampatkan PDF Anda secara lokal. Tidak ada batasan file."
     },
     {
       "type": "metadata_privacy_security",
-      "subTitle": "Nol Retensi Data",
-      "subContent": "Karena file tidak pernah keluar dari perangkat Anda, data pribadi Anda tetap menjadi milik Anda."
+      "title": "Nol Retensi Data",
+      "content": "Karena file tidak pernah keluar dari perangkat Anda, data pribadi Anda tetap menjadi milik Anda."
     },
     {
       "type": "protect_performance",
-      "subTitle": "Secepat Kilat 100KB",
-      "subContent": "Capai ukuran target 100KB Anda dalam milidetik tanpa penundaan server."
+      "title": "Secepat Kilat 100KB",
+      "content": "Capai ukuran target 100KB Anda dalam milidetik tanpa penundaan server."
     }
   ],
   "faqs": [

@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "sign_geo_targeting",
-      "subTitle": "Offline Merging",
-      "subContent": "Combine your tax forms and legal documents without sending them anywhere."
+      "title": "Offline Merging",
+      "content": "Combine your tax forms and legal documents without sending them anywhere."
     },
     {
       "type": "rotate_privacy_security",
-      "subTitle": "Military Grade Privacy",
-      "subContent": "We guarantee absolute privacy because we physically cannot see your files."
+      "title": "Military Grade Privacy",
+      "content": "We guarantee absolute privacy because we physically cannot see your files."
     },
     {
       "type": "excel_performance",
-      "subTitle": "Instant Processing",
-      "subContent": "Merge 100s of pages instantly with client-side processing."
+      "title": "Instant Processing",
+      "content": "Merge 100s of pages instantly with client-side processing."
     }
   ],
   "faqs": [

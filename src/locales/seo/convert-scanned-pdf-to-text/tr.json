@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "image_geo_targeting",
-      "subTitle": "WebAssembly OCR'si",
-      "subContent": "Tesseract OCR doğrudan tarayıcınızda çalışır. Hiçbir bulut API'si dahil değildir."
+      "title": "WebAssembly OCR'si",
+      "content": "Tesseract OCR doğrudan tarayıcınızda çalışır. Hiçbir bulut API'si dahil değildir."
     },
     {
       "type": "redact_privacy_security",
-      "subTitle": "Gizli Çıkarma",
-      "subContent": "Hassas kimlik kartlarından veya tıbbi kayıtlardan metni güvenli bir şekilde çıkarın."
+      "title": "Gizli Çıkarma",
+      "content": "Hassas kimlik kartlarından veya tıbbi kayıtlardan metni güvenli bir şekilde çıkarın."
     },
     {
       "type": "scan_performance",
-      "subTitle": "Yüksek Doğruluk",
-      "subContent": "Birden fazla dil ve çarpık tarama desteği."
+      "title": "Yüksek Doğruluk",
+      "content": "Birden fazla dil ve çarpık tarama desteği."
     }
   ],
   "faqs": [

@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "csv_excel_geo_targeting",
-      "subTitle": "Gratis sideinddeling",
-      "subContent": "Tilføj numre til ubegrænsede filer uden at ramme betalingsvægge."
+      "title": "Gratis sideinddeling",
+      "content": "Tilføj numre til ubegrænsede filer uden at ramme betalingsvægge."
     },
     {
       "type": "unlock_privacy_security",
-      "subTitle": "Sikker dokumenthåndtering",
-      "subContent": "Dine afhandlinger og rapporter er nummereret privat på din maskine."
+      "title": "Sikker dokumenthåndtering",
+      "content": "Dine afhandlinger og rapporter er nummereret privat på din maskine."
     },
     {
       "type": "reverse_performance",
-      "subTitle": "Batchnummerering",
-      "subContent": "Anvend sidetal på massive dokumenter på en brøkdel af et sekund."
+      "title": "Batchnummerering",
+      "content": "Anvend sidetal på massive dokumenter på en brøkdel af et sekund."
     }
   ],
   "faqs": [

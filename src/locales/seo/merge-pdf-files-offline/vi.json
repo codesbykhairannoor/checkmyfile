@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "sign_geo_targeting",
-      "subTitle": "Hợp nhất ngoại tuyến",
-      "subContent": "Kết hợp các biểu mẫu thuế và tài liệu pháp lý của bạn mà không cần gửi chúng đi bất cứ đâu."
+      "title": "Hợp nhất ngoại tuyến",
+      "content": "Kết hợp các biểu mẫu thuế và tài liệu pháp lý của bạn mà không cần gửi chúng đi bất cứ đâu."
     },
     {
       "type": "rotate_privacy_security",
-      "subTitle": "Quyền riêng tư cấp quân sự",
-      "subContent": "Chúng tôi đảm bảo quyền riêng tư tuyệt đối vì thực tế chúng tôi không thể nhìn thấy tệp của bạn."
+      "title": "Quyền riêng tư cấp quân sự",
+      "content": "Chúng tôi đảm bảo quyền riêng tư tuyệt đối vì thực tế chúng tôi không thể nhìn thấy tệp của bạn."
     },
     {
       "type": "excel_performance",
-      "subTitle": "Xử lý tức thời",
-      "subContent": "Hợp nhất hàng trăm trang ngay lập tức bằng xử lý phía máy khách."
+      "title": "Xử lý tức thời",
+      "content": "Hợp nhất hàng trăm trang ngay lập tức bằng xử lý phía máy khách."
     }
   ],
   "faqs": [

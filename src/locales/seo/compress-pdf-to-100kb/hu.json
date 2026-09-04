@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "word_geo_targeting",
-      "subTitle": "Helyi kompressziós motor",
-      "subContent": "Fejlett WASM motorunk helyileg tömöríti a PDF-fájlt. Nincs fájlkorlát."
+      "title": "Helyi kompressziós motor",
+      "content": "Fejlett WASM motorunk helyileg tömöríti a PDF-fájlt. Nincs fájlkorlát."
     },
     {
       "type": "metadata_privacy_security",
-      "subTitle": "Nulla adatmegőrzés",
-      "subContent": "Mivel a fájlok soha nem hagyják el az eszközt, a személyes adatai egyedül az Öné maradnak."
+      "title": "Nulla adatmegőrzés",
+      "content": "Mivel a fájlok soha nem hagyják el az eszközt, a személyes adatai egyedül az Öné maradnak."
     },
     {
       "type": "protect_performance",
-      "subTitle": "Villámgyors 100KB",
-      "subContent": "Érje el a 100 KB-os célméretet ezredmásodpercek alatt, szerver késések nélkül."
+      "title": "Villámgyors 100KB",
+      "content": "Érje el a 100 KB-os célméretet ezredmásodpercek alatt, szerver késések nélkül."
     }
   ],
   "faqs": [

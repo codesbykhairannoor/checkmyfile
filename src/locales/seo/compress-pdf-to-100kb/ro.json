@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "word_geo_targeting",
-      "subTitle": "Motor de compresie local",
-      "subContent": "Motorul nostru avansat WASM comprimă PDF-ul local. Fără limite de fișiere."
+      "title": "Motor de compresie local",
+      "content": "Motorul nostru avansat WASM comprimă PDF-ul local. Fără limite de fișiere."
     },
     {
       "type": "metadata_privacy_security",
-      "subTitle": "Reținerea datelor zero",
-      "subContent": "Deoarece fișierele nu părăsesc dispozitivul dvs., datele dvs. private rămân numai ale dvs."
+      "title": "Reținerea datelor zero",
+      "content": "Deoarece fișierele nu părăsesc dispozitivul dvs., datele dvs. private rămân numai ale dvs."
     },
     {
       "type": "protect_performance",
-      "subTitle": "Rapid fulger de 100KB",
-      "subContent": "Atingeți dimensiunea țintă de 100 KB în milisecunde fără întârzieri pe server."
+      "title": "Rapid fulger de 100KB",
+      "content": "Atingeți dimensiunea țintă de 100 KB în milisecunde fără întârzieri pe server."
     }
   ],
   "faqs": [

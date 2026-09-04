@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "image_geo_targeting",
-      "subTitle": "OCR dell'assembly Web",
-      "subContent": "Tesseract OCR funziona direttamente nel tuo browser. Nessuna API cloud coinvolta."
+      "title": "OCR dell'assembly Web",
+      "content": "Tesseract OCR funziona direttamente nel tuo browser. Nessuna API cloud coinvolta."
     },
     {
       "type": "redact_privacy_security",
-      "subTitle": "Estrazione riservata",
-      "subContent": "Estrai testo da carte d'identità sensibili o cartelle cliniche in modo sicuro."
+      "title": "Estrazione riservata",
+      "content": "Estrai testo da carte d'identità sensibili o cartelle cliniche in modo sicuro."
     },
     {
       "type": "scan_performance",
-      "subTitle": "Alta precisione",
-      "subContent": "Supporto per più lingue e scansioni distorte."
+      "title": "Alta precisione",
+      "content": "Supporto per più lingue e scansioni distorte."
     }
   ],
   "faqs": [

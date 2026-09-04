@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "word_geo_targeting",
-      "subTitle": "Motore di compressione locale",
-      "subContent": "Il nostro motore WASM avanzato comprime il tuo PDF localmente. Nessun limite di file."
+      "title": "Motore di compressione locale",
+      "content": "Il nostro motore WASM avanzato comprime il tuo PDF localmente. Nessun limite di file."
     },
     {
       "type": "metadata_privacy_security",
-      "subTitle": "Conservazione dei dati pari a zero",
-      "subContent": "Poiché i file non lasciano mai il tuo dispositivo, i tuoi dati privati ​​rimangono solo tuoi."
+      "title": "Conservazione dei dati pari a zero",
+      "content": "Poiché i file non lasciano mai il tuo dispositivo, i tuoi dati privati ​​rimangono solo tuoi."
     },
     {
       "type": "protect_performance",
-      "subTitle": "Velocissimo 100KB",
-      "subContent": "Raggiungi la dimensione target di 100 KB in millisecondi senza ritardi del server."
+      "title": "Velocissimo 100KB",
+      "content": "Raggiungi la dimensione target di 100 KB in millisecondi senza ritardi del server."
     }
   ],
   "faqs": [

@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "image_geo_targeting",
-      "subTitle": "WebAssembly OCR",
-      "subContent": "A Tesseract OCR közvetlenül a böngészőben fut. Nincsenek felhő API-k érintettek."
+      "title": "WebAssembly OCR",
+      "content": "A Tesseract OCR közvetlenül a böngészőben fut. Nincsenek felhő API-k érintettek."
     },
     {
       "type": "redact_privacy_security",
-      "subTitle": "Bizalmas kivonat",
-      "subContent": "Biztonságosan kivonhatja a szöveget az érzékeny személyi igazolványokból vagy orvosi feljegyzésekből."
+      "title": "Bizalmas kivonat",
+      "content": "Biztonságosan kivonhatja a szöveget az érzékeny személyi igazolványokból vagy orvosi feljegyzésekből."
     },
     {
       "type": "scan_performance",
-      "subTitle": "Nagy pontosságú",
-      "subContent": "Több nyelv és ferde szkennelés támogatása."
+      "title": "Nagy pontosságú",
+      "content": "Több nyelv és ferde szkennelés támogatása."
     }
   ],
   "faqs": [

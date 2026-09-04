@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "word_geo_targeting",
-      "subTitle": "Lokale compressiemotor",
-      "subContent": "Onze geavanceerde WASM-engine comprimeert uw PDF lokaal. Geen bestandslimieten."
+      "title": "Lokale compressiemotor",
+      "content": "Onze geavanceerde WASM-engine comprimeert uw PDF lokaal. Geen bestandslimieten."
     },
     {
       "type": "metadata_privacy_security",
-      "subTitle": "Geen gegevensretentie",
-      "subContent": "Omdat bestanden uw apparaat nooit verlaten, blijven uw privégegevens alleen van u."
+      "title": "Geen gegevensretentie",
+      "content": "Omdat bestanden uw apparaat nooit verlaten, blijven uw privégegevens alleen van u."
     },
     {
       "type": "protect_performance",
-      "subTitle": "Bliksemsnel 100 KB",
-      "subContent": "Bereik uw doelgrootte van 100 KB in milliseconden zonder serververtragingen."
+      "title": "Bliksemsnel 100 KB",
+      "content": "Bereik uw doelgrootte van 100 KB in milliseconden zonder serververtragingen."
     }
   ],
   "faqs": [

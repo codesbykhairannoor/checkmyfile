@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "csv_excel_geo_targeting",
-      "subTitle": "Impaginazione gratuita",
-      "subContent": "Aggiungi numeri a file illimitati senza colpire i paywall."
+      "title": "Impaginazione gratuita",
+      "content": "Aggiungi numeri a file illimitati senza colpire i paywall."
     },
     {
       "type": "unlock_privacy_security",
-      "subTitle": "Gestione sicura dei documenti",
-      "subContent": "Le tue tesi e relazioni sono numerate privatamente sulla tua macchina."
+      "title": "Gestione sicura dei documenti",
+      "content": "Le tue tesi e relazioni sono numerate privatamente sulla tua macchina."
     },
     {
       "type": "reverse_performance",
-      "subTitle": "Numerazione dei lotti",
-      "subContent": "Applica i numeri di pagina a documenti di grandi dimensioni in una frazione di secondo."
+      "title": "Numerazione dei lotti",
+      "content": "Applica i numeri di pagina a documenti di grandi dimensioni in una frazione di secondo."
     }
   ],
   "faqs": [

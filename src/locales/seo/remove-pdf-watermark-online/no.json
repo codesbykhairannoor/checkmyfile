@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "watermark_geo_targeting",
-      "subTitle": "Rengjør PDF-ene dine",
-      "subContent": "Fjern uønskede stempler, bakgrunner og vannmerker."
+      "title": "Rengjør PDF-ene dine",
+      "content": "Fjern uønskede stempler, bakgrunner og vannmerker."
     },
     {
       "type": "compare_privacy_security",
-      "subTitle": "Lokal redaksjon",
-      "subContent": "Slett sensitive vannmerker uten å laste opp filer til serverne våre."
+      "title": "Lokal redaksjon",
+      "content": "Slett sensitive vannmerker uten å laste opp filer til serverne våre."
     },
     {
       "type": "edit_performance",
-      "subTitle": "Feilfri kvalitet",
-      "subContent": "Vi fjerner vannmerkeobjektet uten å forringe dokumentkvaliteten."
+      "title": "Feilfri kvalitet",
+      "content": "Vi fjerner vannmerkeobjektet uten å forringe dokumentkvaliteten."
     }
   ],
   "faqs": [

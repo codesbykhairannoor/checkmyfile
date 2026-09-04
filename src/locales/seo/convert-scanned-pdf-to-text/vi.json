@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "image_geo_targeting",
-      "subTitle": "WebAssembly OCR",
-      "subContent": "Tesseract OCR chạy ngay trong trình duyệt của bạn. Không có API đám mây liên quan."
+      "title": "WebAssembly OCR",
+      "content": "Tesseract OCR chạy ngay trong trình duyệt của bạn. Không có API đám mây liên quan."
     },
     {
       "type": "redact_privacy_security",
-      "subTitle": "Khai thác bí mật",
-      "subContent": "Trích xuất văn bản từ thẻ ID nhạy cảm hoặc hồ sơ y tế một cách an toàn."
+      "title": "Khai thác bí mật",
+      "content": "Trích xuất văn bản từ thẻ ID nhạy cảm hoặc hồ sơ y tế một cách an toàn."
     },
     {
       "type": "scan_performance",
-      "subTitle": "Độ chính xác cao",
-      "subContent": "Hỗ trợ nhiều ngôn ngữ và quét sai lệch."
+      "title": "Độ chính xác cao",
+      "content": "Hỗ trợ nhiều ngôn ngữ và quét sai lệch."
     }
   ],
   "faqs": [

@@ -126,9 +126,9 @@ async function run() {
             heroTitle: tool.en.h1,
             heroDescription: tool.en.description,
             sections: [
-              { type: tool.en.sections[0].type, subTitle: tool.en.sections[0].title, subContent: tool.en.sections[0].content },
-              { type: tool.en.sections[1].type, subTitle: tool.en.sections[1].title, subContent: tool.en.sections[1].content },
-              { type: tool.en.sections[2].type, subTitle: tool.en.sections[2].title, subContent: tool.en.sections[2].content }
+              { type: tool.en.sections[0].type, title: tool.en.sections[0].title, content: tool.en.sections[0].content },
+              { type: tool.en.sections[1].type, title: tool.en.sections[1].title, content: tool.en.sections[1].content },
+              { type: tool.en.sections[2].type, title: tool.en.sections[2].title, content: tool.en.sections[2].content }
             ],
             faqs: tool.en.faqs
           };
@@ -161,9 +161,9 @@ async function run() {
           heroTitle: translated[0],
           heroDescription: translated[1],
           sections: [
-            { type: tool.en.sections[0].type, subTitle: translated[2], subContent: translated[3] },
-            { type: tool.en.sections[1].type, subTitle: translated[4], subContent: translated[5] },
-            { type: tool.en.sections[2].type, subTitle: translated[6], subContent: translated[7] }
+            { type: tool.en.sections[0].type, title: translated[2], content: translated[3] },
+            { type: tool.en.sections[1].type, title: translated[4], content: translated[5] },
+            { type: tool.en.sections[2].type, title: translated[6], content: translated[7] }
           ],
           faqs: [
             { q: translated[8], a: translated[9] },

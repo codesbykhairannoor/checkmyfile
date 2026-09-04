@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "sign_geo_targeting",
-      "subTitle": "Fusion hors ligne",
-      "subContent": "Regroupez vos formulaires fiscaux et documents juridiques sans les envoyer nulle part."
+      "title": "Fusion hors ligne",
+      "content": "Regroupez vos formulaires fiscaux et documents juridiques sans les envoyer nulle part."
     },
     {
       "type": "rotate_privacy_security",
-      "subTitle": "Confidentialité de qualité militaire",
-      "subContent": "Nous garantissons une confidentialité absolue car nous ne pouvons physiquement pas voir vos fichiers."
+      "title": "Confidentialité de qualité militaire",
+      "content": "Nous garantissons une confidentialité absolue car nous ne pouvons physiquement pas voir vos fichiers."
     },
     {
       "type": "excel_performance",
-      "subTitle": "Traitement instantané",
-      "subContent": "Fusionnez instantanément des centaines de pages grâce au traitement côté client."
+      "title": "Traitement instantané",
+      "content": "Fusionnez instantanément des centaines de pages grâce au traitement côté client."
     }
   ],
   "faqs": [

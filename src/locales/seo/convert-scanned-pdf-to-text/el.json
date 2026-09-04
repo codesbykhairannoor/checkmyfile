@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "image_geo_targeting",
-      "subTitle": "WebAssembly OCR",
-      "subContent": "Το Tesseract OCR εκτελείται απευθείας στο πρόγραμμα περιήγησής σας. Δεν εμπλέκονται API cloud."
+      "title": "WebAssembly OCR",
+      "content": "Το Tesseract OCR εκτελείται απευθείας στο πρόγραμμα περιήγησής σας. Δεν εμπλέκονται API cloud."
     },
     {
       "type": "redact_privacy_security",
-      "subTitle": "Εμπιστευτική Εξαγωγή",
-      "subContent": "Εξαγωγή κειμένου από ευαίσθητα δελτία ταυτότητας ή ιατρικά αρχεία με ασφάλεια."
+      "title": "Εμπιστευτική Εξαγωγή",
+      "content": "Εξαγωγή κειμένου από ευαίσθητα δελτία ταυτότητας ή ιατρικά αρχεία με ασφάλεια."
     },
     {
       "type": "scan_performance",
-      "subTitle": "Υψηλή Ακρίβεια",
-      "subContent": "Υποστήριξη για πολλές γλώσσες και λοξές σαρώσεις."
+      "title": "Υψηλή Ακρίβεια",
+      "content": "Υποστήριξη για πολλές γλώσσες και λοξές σαρώσεις."
     }
   ],
   "faqs": [

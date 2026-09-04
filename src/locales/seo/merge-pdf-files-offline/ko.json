@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "sign_geo_targeting",
-      "subTitle": "오프라인 병합",
-      "subContent": "어디로든 보내지 않고도 세금 양식과 법률 문서를 결합할 수 있습니다."
+      "title": "오프라인 병합",
+      "content": "어디로든 보내지 않고도 세금 양식과 법률 문서를 결합할 수 있습니다."
     },
     {
       "type": "rotate_privacy_security",
-      "subTitle": "군사급 개인정보 보호",
-      "subContent": "우리는 귀하의 파일을 물리적으로 볼 수 없기 때문에 절대적인 개인 정보 보호를 보장합니다."
+      "title": "군사급 개인정보 보호",
+      "content": "우리는 귀하의 파일을 물리적으로 볼 수 없기 때문에 절대적인 개인 정보 보호를 보장합니다."
     },
     {
       "type": "excel_performance",
-      "subTitle": "즉각적인 처리",
-      "subContent": "클라이언트측 처리를 통해 수백 개의 페이지를 즉시 병합합니다."
+      "title": "즉각적인 처리",
+      "content": "클라이언트측 처리를 통해 수백 개의 페이지를 즉시 병합합니다."
     }
   ],
   "faqs": [

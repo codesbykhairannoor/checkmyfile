@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "csv_excel_geo_targeting",
-      "subTitle": "Phân trang miễn phí",
-      "subContent": "Thêm số vào tệp không giới hạn mà không cần phải trả phí."
+      "title": "Phân trang miễn phí",
+      "content": "Thêm số vào tệp không giới hạn mà không cần phải trả phí."
     },
     {
       "type": "unlock_privacy_security",
-      "subTitle": "Xử lý tài liệu an toàn",
-      "subContent": "Luận văn và báo cáo của bạn được đánh số riêng trên máy của bạn."
+      "title": "Xử lý tài liệu an toàn",
+      "content": "Luận văn và báo cáo của bạn được đánh số riêng trên máy của bạn."
     },
     {
       "type": "reverse_performance",
-      "subTitle": "Đánh số lô",
-      "subContent": "Áp dụng số trang cho các tài liệu lớn trong một phần giây."
+      "title": "Đánh số lô",
+      "content": "Áp dụng số trang cho các tài liệu lớn trong một phần giây."
     }
   ],
   "faqs": [

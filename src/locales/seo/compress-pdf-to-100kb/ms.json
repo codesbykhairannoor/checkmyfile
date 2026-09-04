@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "word_geo_targeting",
-      "subTitle": "Enjin Mampatan Tempatan",
-      "subContent": "Enjin WASM canggih kami memampatkan PDF anda secara tempatan. Tiada had fail."
+      "title": "Enjin Mampatan Tempatan",
+      "content": "Enjin WASM canggih kami memampatkan PDF anda secara tempatan. Tiada had fail."
     },
     {
       "type": "metadata_privacy_security",
-      "subTitle": "Pengekalan Data Sifar",
-      "subContent": "Memandangkan fail tidak pernah meninggalkan peranti anda, data peribadi anda kekal milik anda sahaja."
+      "title": "Pengekalan Data Sifar",
+      "content": "Memandangkan fail tidak pernah meninggalkan peranti anda, data peribadi anda kekal milik anda sahaja."
     },
     {
       "type": "protect_performance",
-      "subTitle": "Sepantas Kilat 100KB",
-      "subContent": "Capai saiz sasaran 100KB anda dalam milisaat tanpa kelewatan pelayan."
+      "title": "Sepantas Kilat 100KB",
+      "content": "Capai saiz sasaran 100KB anda dalam milisaat tanpa kelewatan pelayan."
     }
   ],
   "faqs": [

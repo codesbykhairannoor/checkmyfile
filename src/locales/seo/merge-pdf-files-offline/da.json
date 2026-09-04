@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "sign_geo_targeting",
-      "subTitle": "Offline fletning",
-      "subContent": "Kombiner dine skatteformularer og juridiske dokumenter uden at sende dem nogen steder."
+      "title": "Offline fletning",
+      "content": "Kombiner dine skatteformularer og juridiske dokumenter uden at sende dem nogen steder."
     },
     {
       "type": "rotate_privacy_security",
-      "subTitle": "Privatliv i militær klasse",
-      "subContent": "Vi garanterer absolut fortrolighed, fordi vi fysisk ikke kan se dine filer."
+      "title": "Privatliv i militær klasse",
+      "content": "Vi garanterer absolut fortrolighed, fordi vi fysisk ikke kan se dine filer."
     },
     {
       "type": "excel_performance",
-      "subTitle": "Øjeblikkelig behandling",
-      "subContent": "Flet 100-vis af sider med det samme med behandling på klientsiden."
+      "title": "Øjeblikkelig behandling",
+      "content": "Flet 100-vis af sider med det samme med behandling på klientsiden."
     }
   ],
   "faqs": [

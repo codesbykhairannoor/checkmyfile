@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "word_geo_targeting",
-      "subTitle": "Paikallinen kompressiomoottori",
-      "subContent": "Edistyksellinen WASM-moottorimme pakkaa PDF-tiedostosi paikallisesti. Ei tiedostorajoituksia."
+      "title": "Paikallinen kompressiomoottori",
+      "content": "Edistyksellinen WASM-moottorimme pakkaa PDF-tiedostosi paikallisesti. Ei tiedostorajoituksia."
     },
     {
       "type": "metadata_privacy_security",
-      "subTitle": "Nolla tietojen säilyttämistä",
-      "subContent": "Koska tiedostot eivät koskaan poistu laitteestasi, yksityiset tietosi pysyvät yksin."
+      "title": "Nolla tietojen säilyttämistä",
+      "content": "Koska tiedostot eivät koskaan poistu laitteestasi, yksityiset tietosi pysyvät yksin."
     },
     {
       "type": "protect_performance",
-      "subTitle": "Salamannopea 100 kt",
-      "subContent": "Saavuta 100 kt:n tavoitekoko millisekunneissa ilman palvelinviiveitä."
+      "title": "Salamannopea 100 kt",
+      "content": "Saavuta 100 kt:n tavoitekoko millisekunneissa ilman palvelinviiveitä."
     }
   ],
   "faqs": [

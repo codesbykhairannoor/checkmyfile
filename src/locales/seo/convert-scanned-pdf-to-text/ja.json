@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "image_geo_targeting",
-      "subTitle": "WebAssembly OCR",
-      "subContent": "Tesseract OCR はブラウザ内で直接実行されます。 クラウド API は関係しません。"
+      "title": "WebAssembly OCR",
+      "content": "Tesseract OCR はブラウザ内で直接実行されます。 クラウド API は関係しません。"
     },
     {
       "type": "redact_privacy_security",
-      "subTitle": "機密の抽出",
-      "subContent": "機密性の高い ID カードや医療記録からテキストを安全に抽出します。"
+      "title": "機密の抽出",
+      "content": "機密性の高い ID カードや医療記録からテキストを安全に抽出します。"
     },
     {
       "type": "scan_performance",
-      "subTitle": "高精度",
-      "subContent": "複数の言語と偏ったスキャンのサポート。"
+      "title": "高精度",
+      "content": "複数の言語と偏ったスキャンのサポート。"
     }
   ],
   "faqs": [

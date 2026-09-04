@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "word_geo_targeting",
-      "subTitle": "Công cụ nén cục bộ",
-      "subContent": "Công cụ WASM tiên tiến của chúng tôi nén tệp PDF của bạn cục bộ. Không có giới hạn tập tin."
+      "title": "Công cụ nén cục bộ",
+      "content": "Công cụ WASM tiên tiến của chúng tôi nén tệp PDF của bạn cục bộ. Không có giới hạn tập tin."
     },
     {
       "type": "metadata_privacy_security",
-      "subTitle": "Không lưu giữ dữ liệu",
-      "subContent": "Vì các tập tin không bao giờ rời khỏi thiết bị của bạn nên dữ liệu riêng tư vẫn là của riêng bạn."
+      "title": "Không lưu giữ dữ liệu",
+      "content": "Vì các tập tin không bao giờ rời khỏi thiết bị của bạn nên dữ liệu riêng tư vẫn là của riêng bạn."
     },
     {
       "type": "protect_performance",
-      "subTitle": "Nhanh như chớp 100KB",
-      "subContent": "Đạt kích thước mục tiêu 100KB của bạn trong một phần nghìn giây mà không bị chậm trễ máy chủ."
+      "title": "Nhanh như chớp 100KB",
+      "content": "Đạt kích thước mục tiêu 100KB của bạn trong một phần nghìn giây mà không bị chậm trễ máy chủ."
     }
   ],
   "faqs": [

@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "csv_excel_geo_targeting",
-      "subTitle": "Ilmainen sivutus",
-      "subContent": "Lisää numeroita rajoittamattomiin tiedostoihin osumatta maksumuureihin."
+      "title": "Ilmainen sivutus",
+      "content": "Lisää numeroita rajoittamattomiin tiedostoihin osumatta maksumuureihin."
     },
     {
       "type": "unlock_privacy_security",
-      "subTitle": "Turvallinen asiakirjojen käsittely",
-      "subContent": "Väitöskirjasi ja raportit on numeroitu yksityisesti koneellesi."
+      "title": "Turvallinen asiakirjojen käsittely",
+      "content": "Väitöskirjasi ja raportit on numeroitu yksityisesti koneellesi."
     },
     {
       "type": "reverse_performance",
-      "subTitle": "Erän numerointi",
-      "subContent": "Lisää sivunumeroita suuriin asiakirjoihin sekunnin murto-osassa."
+      "title": "Erän numerointi",
+      "content": "Lisää sivunumeroita suuriin asiakirjoihin sekunnin murto-osassa."
     }
   ],
   "faqs": [

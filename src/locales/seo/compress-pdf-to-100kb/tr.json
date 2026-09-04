@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "word_geo_targeting",
-      "subTitle": "Yerel Sıkıştırma Motoru",
-      "subContent": "Gelişmiş WASM motorumuz PDF'nizi yerel olarak sıkıştırır. Dosya sınırlaması yok."
+      "title": "Yerel Sıkıştırma Motoru",
+      "content": "Gelişmiş WASM motorumuz PDF'nizi yerel olarak sıkıştırır. Dosya sınırlaması yok."
     },
     {
       "type": "metadata_privacy_security",
-      "subTitle": "Sıfır Veri Saklama",
-      "subContent": "Dosyalar cihazınızdan asla çıkmadığından, özel verileriniz yalnızca size ait kalır."
+      "title": "Sıfır Veri Saklama",
+      "content": "Dosyalar cihazınızdan asla çıkmadığından, özel verileriniz yalnızca size ait kalır."
     },
     {
       "type": "protect_performance",
-      "subTitle": "Yıldırım Hızında 100KB",
-      "subContent": "Sunucu gecikmeleri olmadan 100KB hedef boyutunuza milisaniyeler içinde ulaşın."
+      "title": "Yıldırım Hızında 100KB",
+      "content": "Sunucu gecikmeleri olmadan 100KB hedef boyutunuza milisaniyeler içinde ulaşın."
     }
   ],
   "faqs": [

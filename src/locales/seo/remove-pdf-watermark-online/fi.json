@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "watermark_geo_targeting",
-      "subTitle": "Puhdista PDF-tiedostosi",
-      "subContent": "Poista ei-toivotut leimat, taustat ja vesileimat."
+      "title": "Puhdista PDF-tiedostosi",
+      "content": "Poista ei-toivotut leimat, taustat ja vesileimat."
     },
     {
       "type": "compare_privacy_security",
-      "subTitle": "Paikallinen editointi",
-      "subContent": "Poista arkaluontoiset vesileimat lataamatta tiedostoja palvelimillemme."
+      "title": "Paikallinen editointi",
+      "content": "Poista arkaluontoiset vesileimat lataamatta tiedostoja palvelimillemme."
     },
     {
       "type": "edit_performance",
-      "subTitle": "Virheetön Laatu",
-      "subContent": "Poistamme vesileimaobjektin heikentämättä asiakirjasi laatua."
+      "title": "Virheetön Laatu",
+      "content": "Poistamme vesileimaobjektin heikentämättä asiakirjasi laatua."
     }
   ],
   "faqs": [

@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "word_geo_targeting",
-      "subTitle": "Lokale Komprimierungs-Engine",
-      "subContent": "Unsere fortschrittliche WASM-Engine komprimiert Ihr PDF lokal. Keine Dateibeschränkungen."
+      "title": "Lokale Komprimierungs-Engine",
+      "content": "Unsere fortschrittliche WASM-Engine komprimiert Ihr PDF lokal. Keine Dateibeschränkungen."
     },
     {
       "type": "metadata_privacy_security",
-      "subTitle": "Keine Datenaufbewahrung",
-      "subContent": "Da die Dateien niemals Ihr Gerät verlassen, bleiben Ihre privaten Daten allein Ihr Eigentum."
+      "title": "Keine Datenaufbewahrung",
+      "content": "Da die Dateien niemals Ihr Gerät verlassen, bleiben Ihre privaten Daten allein Ihr Eigentum."
     },
     {
       "type": "protect_performance",
-      "subTitle": "Blitzschnelle 100 KB",
-      "subContent": "Erreichen Sie Ihre Zielgröße von 100 KB in Millisekunden ohne Serververzögerungen."
+      "title": "Blitzschnelle 100 KB",
+      "content": "Erreichen Sie Ihre Zielgröße von 100 KB in Millisekunden ohne Serververzögerungen."
     }
   ],
   "faqs": [

@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "image_geo_targeting",
-      "subTitle": "웹어셈블리 OCR",
-      "subContent": "Tesseract OCR은 브라우저에서 바로 실행됩니다. 클라우드 API가 필요하지 않습니다."
+      "title": "웹어셈블리 OCR",
+      "content": "Tesseract OCR은 브라우저에서 바로 실행됩니다. 클라우드 API가 필요하지 않습니다."
     },
     {
       "type": "redact_privacy_security",
-      "subTitle": "기밀 추출",
-      "subContent": "민감한 신분증이나 의료 기록에서 텍스트를 안전하게 추출하세요."
+      "title": "기밀 추출",
+      "content": "민감한 신분증이나 의료 기록에서 텍스트를 안전하게 추출하세요."
     },
     {
       "type": "scan_performance",
-      "subTitle": "높은 정확도",
-      "subContent": "여러 언어 및 왜곡된 스캔을 지원합니다."
+      "title": "높은 정확도",
+      "content": "여러 언어 및 왜곡된 스캔을 지원합니다."
     }
   ],
   "faqs": [

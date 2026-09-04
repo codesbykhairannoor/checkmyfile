@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "word_geo_targeting",
-      "subTitle": "로컬 압축 엔진",
-      "subContent": "우리의 고급 WASM 엔진은 PDF를 로컬로 압축합니다. 파일 제한이 없습니다."
+      "title": "로컬 압축 엔진",
+      "content": "우리의 고급 WASM 엔진은 PDF를 로컬로 압축합니다. 파일 제한이 없습니다."
     },
     {
       "type": "metadata_privacy_security",
-      "subTitle": "제로 데이터 보존",
-      "subContent": "파일이 장치를 떠나지 않으므로 개인 데이터는 귀하의 것입니다."
+      "title": "제로 데이터 보존",
+      "content": "파일이 장치를 떠나지 않으므로 개인 데이터는 귀하의 것입니다."
     },
     {
       "type": "protect_performance",
-      "subTitle": "번개처럼 빠른 100KB",
-      "subContent": "서버 지연 없이 100KB 목표 크기를 밀리초 안에 달성하세요."
+      "title": "번개처럼 빠른 100KB",
+      "content": "서버 지연 없이 100KB 목표 크기를 밀리초 안에 달성하세요."
     }
   ],
   "faqs": [

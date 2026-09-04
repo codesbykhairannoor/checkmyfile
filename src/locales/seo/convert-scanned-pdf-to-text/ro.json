@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "image_geo_targeting",
-      "subTitle": "WebAssembly OCR",
-      "subContent": "Tesseract OCR rulează chiar în browser. Nu sunt implicate API-uri cloud."
+      "title": "WebAssembly OCR",
+      "content": "Tesseract OCR rulează chiar în browser. Nu sunt implicate API-uri cloud."
     },
     {
       "type": "redact_privacy_security",
-      "subTitle": "Extragere confidențială",
-      "subContent": "Extrageți textul din cărți de identitate sensibile sau din fișele medicale în siguranță."
+      "title": "Extragere confidențială",
+      "content": "Extrageți textul din cărți de identitate sensibile sau din fișele medicale în siguranță."
     },
     {
       "type": "scan_performance",
-      "subTitle": "Precizie ridicată",
-      "subContent": "Suport pentru mai multe limbi și scanări înclinate."
+      "title": "Precizie ridicată",
+      "content": "Suport pentru mai multe limbi și scanări înclinate."
     }
   ],
   "faqs": [

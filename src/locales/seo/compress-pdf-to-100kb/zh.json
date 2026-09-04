@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "word_geo_targeting",
-      "subTitle": "Local Compression Engine",
-      "subContent": "Our advanced WASM engine compresses your PDF locally. No file limits."
+      "title": "Local Compression Engine",
+      "content": "Our advanced WASM engine compresses your PDF locally. No file limits."
     },
     {
       "type": "metadata_privacy_security",
-      "subTitle": "Zero Data Retention",
-      "subContent": "Since files never leave your device, your private data remains yours alone."
+      "title": "Zero Data Retention",
+      "content": "Since files never leave your device, your private data remains yours alone."
     },
     {
       "type": "protect_performance",
-      "subTitle": "Lightning Fast 100KB",
-      "subContent": "Hit your 100KB target size in milliseconds without server delays."
+      "title": "Lightning Fast 100KB",
+      "content": "Hit your 100KB target size in milliseconds without server delays."
     }
   ],
   "faqs": [

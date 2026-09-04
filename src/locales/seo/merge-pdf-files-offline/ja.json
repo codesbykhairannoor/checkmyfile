@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "sign_geo_targeting",
-      "subTitle": "オフライン結合",
-      "subContent": "納税フォームと法的書類をどこにも送信せずに結合します。"
+      "title": "オフライン結合",
+      "content": "納税フォームと法的書類をどこにも送信せずに結合します。"
     },
     {
       "type": "rotate_privacy_security",
-      "subTitle": "軍用レベルのプライバシー",
-      "subContent": "私たちはあなたのファイルを物理的に見ることができないため、絶対的なプライバシーを保証します。"
+      "title": "軍用レベルのプライバシー",
+      "content": "私たちはあなたのファイルを物理的に見ることができないため、絶対的なプライバシーを保証します。"
     },
     {
       "type": "excel_performance",
-      "subTitle": "即時処理",
-      "subContent": "クライアント側の処理で数百のページを即座にマージします。"
+      "title": "即時処理",
+      "content": "クライアント側の処理で数百のページを即座にマージします。"
     }
   ],
   "faqs": [

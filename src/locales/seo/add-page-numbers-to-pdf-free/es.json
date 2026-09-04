@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "csv_excel_geo_targeting",
-      "subTitle": "Paginación gratuita",
-      "subContent": "Agregue números a archivos ilimitados sin tener que acceder a los muros de pago."
+      "title": "Paginación gratuita",
+      "content": "Agregue números a archivos ilimitados sin tener que acceder a los muros de pago."
     },
     {
       "type": "unlock_privacy_security",
-      "subTitle": "Manejo seguro de documentos",
-      "subContent": "Sus disertaciones e informes están numerados de forma privada en su máquina."
+      "title": "Manejo seguro de documentos",
+      "content": "Sus disertaciones e informes están numerados de forma privada en su máquina."
     },
     {
       "type": "reverse_performance",
-      "subTitle": "Numeración de lotes",
-      "subContent": "Aplique números de página a documentos masivos en una fracción de segundo."
+      "title": "Numeración de lotes",
+      "content": "Aplique números de página a documentos masivos en una fracción de segundo."
     }
   ],
   "faqs": [

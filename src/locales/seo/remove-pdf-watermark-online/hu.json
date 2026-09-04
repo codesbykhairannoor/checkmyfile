@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "watermark_geo_targeting",
-      "subTitle": "Tisztítsa meg PDF-eit",
-      "subContent": "Távolítsa el a nem kívánt bélyegeket, háttereket és vízjeleket."
+      "title": "Tisztítsa meg PDF-eit",
+      "content": "Távolítsa el a nem kívánt bélyegeket, háttereket és vízjeleket."
     },
     {
       "type": "compare_privacy_security",
-      "subTitle": "Helyi szerkesztés",
-      "subContent": "Törölje az érzékeny vízjeleket anélkül, hogy fájlokat töltene fel szervereinkre."
+      "title": "Helyi szerkesztés",
+      "content": "Törölje az érzékeny vízjeleket anélkül, hogy fájlokat töltene fel szervereinkre."
     },
     {
       "type": "edit_performance",
-      "subTitle": "Hibátlan minőség",
-      "subContent": "A vízjel objektumot a dokumentum minőségének romlása nélkül távolítjuk el."
+      "title": "Hibátlan minőség",
+      "content": "A vízjel objektumot a dokumentum minőségének romlása nélkül távolítjuk el."
     }
   ],
   "faqs": [

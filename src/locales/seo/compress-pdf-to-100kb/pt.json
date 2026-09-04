@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "word_geo_targeting",
-      "subTitle": "Mecanismo de compressão local",
-      "subContent": "Nosso mecanismo WASM avançado compacta seu PDF localmente. Sem limites de arquivo."
+      "title": "Mecanismo de compressão local",
+      "content": "Nosso mecanismo WASM avançado compacta seu PDF localmente. Sem limites de arquivo."
     },
     {
       "type": "metadata_privacy_security",
-      "subTitle": "Retenção zero de dados",
-      "subContent": "Como os arquivos nunca saem do seu dispositivo, seus dados privados permanecem exclusivamente seus."
+      "title": "Retenção zero de dados",
+      "content": "Como os arquivos nunca saem do seu dispositivo, seus dados privados permanecem exclusivamente seus."
     },
     {
       "type": "protect_performance",
-      "subTitle": "Ultrarrápido 100 KB",
-      "subContent": "Atinja o tamanho desejado de 100 KB em milissegundos sem atrasos no servidor."
+      "title": "Ultrarrápido 100 KB",
+      "content": "Atinja o tamanho desejado de 100 KB em milissegundos sem atrasos no servidor."
     }
   ],
   "faqs": [

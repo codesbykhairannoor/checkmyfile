@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "image_geo_targeting",
-      "subTitle": "WebAssembly OCR",
-      "subContent": "Tesseract OCR berjalan terus dalam penyemak imbas anda. Tiada API awan yang terlibat."
+      "title": "WebAssembly OCR",
+      "content": "Tesseract OCR berjalan terus dalam penyemak imbas anda. Tiada API awan yang terlibat."
     },
     {
       "type": "redact_privacy_security",
-      "subTitle": "Pengekstrakan Sulit",
-      "subContent": "Ekstrak teks daripada kad pengenalan sensitif atau rekod perubatan dengan selamat."
+      "title": "Pengekstrakan Sulit",
+      "content": "Ekstrak teks daripada kad pengenalan sensitif atau rekod perubatan dengan selamat."
     },
     {
       "type": "scan_performance",
-      "subTitle": "Ketepatan Tinggi",
-      "subContent": "Sokongan untuk berbilang bahasa dan imbasan condong."
+      "title": "Ketepatan Tinggi",
+      "content": "Sokongan untuk berbilang bahasa dan imbasan condong."
     }
   ],
   "faqs": [

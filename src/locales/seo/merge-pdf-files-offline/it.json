@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "sign_geo_targeting",
-      "subTitle": "Unione offline",
-      "subContent": "Combina i tuoi moduli fiscali e documenti legali senza inviarli da nessuna parte."
+      "title": "Unione offline",
+      "content": "Combina i tuoi moduli fiscali e documenti legali senza inviarli da nessuna parte."
     },
     {
       "type": "rotate_privacy_security",
-      "subTitle": "Privacy di livello militare",
-      "subContent": "Garantiamo la privacy assoluta perché fisicamente non possiamo vedere i tuoi file."
+      "title": "Privacy di livello militare",
+      "content": "Garantiamo la privacy assoluta perché fisicamente non possiamo vedere i tuoi file."
     },
     {
       "type": "excel_performance",
-      "subTitle": "Elaborazione istantanea",
-      "subContent": "Unisci centinaia di pagine istantaneamente con l'elaborazione lato client."
+      "title": "Elaborazione istantanea",
+      "content": "Unisci centinaia di pagine istantaneamente con l'elaborazione lato client."
     }
   ],
   "faqs": [

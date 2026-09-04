@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "csv_excel_geo_targeting",
-      "subTitle": "Penomboran Percuma",
-      "subContent": "Tambahkan nombor pada fail tanpa had tanpa menekan paywall."
+      "title": "Penomboran Percuma",
+      "content": "Tambahkan nombor pada fail tanpa had tanpa menekan paywall."
     },
     {
       "type": "unlock_privacy_security",
-      "subTitle": "Pengendalian Dokumen Selamat",
-      "subContent": "Disertasi dan laporan anda dinomborkan secara peribadi pada mesin anda."
+      "title": "Pengendalian Dokumen Selamat",
+      "content": "Disertasi dan laporan anda dinomborkan secara peribadi pada mesin anda."
     },
     {
       "type": "reverse_performance",
-      "subTitle": "Penomboran Kelompok",
-      "subContent": "Gunakan nombor halaman pada dokumen besar dalam sepersekian saat."
+      "title": "Penomboran Kelompok",
+      "content": "Gunakan nombor halaman pada dokumen besar dalam sepersekian saat."
     }
   ],
   "faqs": [

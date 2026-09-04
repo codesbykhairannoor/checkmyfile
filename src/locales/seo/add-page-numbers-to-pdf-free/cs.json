@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "csv_excel_geo_targeting",
-      "subTitle": "Stránkování zdarma",
-      "subContent": "Přidejte čísla do neomezeného počtu souborů, aniž byste narazili na paywally."
+      "title": "Stránkování zdarma",
+      "content": "Přidejte čísla do neomezeného počtu souborů, aniž byste narazili na paywally."
     },
     {
       "type": "unlock_privacy_security",
-      "subTitle": "Bezpečná manipulace s dokumenty",
-      "subContent": "Vaše disertační práce a zprávy jsou na vašem počítači soukromě očíslovány."
+      "title": "Bezpečná manipulace s dokumenty",
+      "content": "Vaše disertační práce a zprávy jsou na vašem počítači soukromě očíslovány."
     },
     {
       "type": "reverse_performance",
-      "subTitle": "Číslování šarží",
-      "subContent": "Aplikujte čísla stránek na velké dokumenty ve zlomku sekundy."
+      "title": "Číslování šarží",
+      "content": "Aplikujte čísla stránek na velké dokumenty ve zlomku sekundy."
     }
   ],
   "faqs": [

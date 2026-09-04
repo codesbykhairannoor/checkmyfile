@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "sign_geo_targeting",
-      "subTitle": "Frakoblet sammenslåing",
-      "subContent": "Kombiner skatteskjemaene og juridiske dokumenter uten å sende dem hvor som helst."
+      "title": "Frakoblet sammenslåing",
+      "content": "Kombiner skatteskjemaene og juridiske dokumenter uten å sende dem hvor som helst."
     },
     {
       "type": "rotate_privacy_security",
-      "subTitle": "Personvern i militær klasse",
-      "subContent": "Vi garanterer absolutt personvern fordi vi fysisk ikke kan se filene dine."
+      "title": "Personvern i militær klasse",
+      "content": "Vi garanterer absolutt personvern fordi vi fysisk ikke kan se filene dine."
     },
     {
       "type": "excel_performance",
-      "subTitle": "Øyeblikkelig behandling",
-      "subContent": "Slå sammen 100-vis av sider umiddelbart med behandling på klientsiden."
+      "title": "Øyeblikkelig behandling",
+      "content": "Slå sammen 100-vis av sider umiddelbart med behandling på klientsiden."
     }
   ],
   "faqs": [

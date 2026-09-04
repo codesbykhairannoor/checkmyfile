@@ -1,37 +1,37 @@
 {
   "id": "remove-pdf-watermark-online",
   "supportCenter": true,
-  "heroTitle": "Remove Watermarks from PDF Files Safely",
-  "heroDescription": "Redact or remove intrusive watermarks from your PDF documents. Fully private, browser-based watermark removal tool.",
+  "heroTitle": "Bezpiecznie usuwaj znaki wodne z plików PDF",
+  "heroDescription": "Zredaguj lub usuń uciążliwe znaki wodne z dokumentów PDF. W pełni prywatne narzędzie do usuwania znaków wodnych oparte na przeglądarce.",
   "sections": [
     {
       "type": "watermark_geo_targeting",
-      "subTitle": "Clean Your PDFs",
-      "subContent": "Remove unwanted stamps, backgrounds, and watermarks."
+      "title": "Wyczyść swoje pliki PDF",
+      "content": "Usuń niechciane stemple, tła i znaki wodne."
     },
     {
       "type": "compare_privacy_security",
-      "subTitle": "Local Redaction",
-      "subContent": "Erase sensitive watermarks without uploading files to our servers."
+      "title": "Redakcja lokalna",
+      "content": "Usuń wrażliwe znaki wodne bez przesyłania plików na nasze serwery."
     },
     {
       "type": "edit_performance",
-      "subTitle": "Flawless Quality",
-      "subContent": "We remove the watermark object without degrading your document quality."
+      "title": "Bezbłędna jakość",
+      "content": "Usuwamy obiekt znaku wodnego bez pogorszenia jakości dokumentu."
     }
   ],
   "faqs": [
     {
-      "q": "Does it remove text watermarks or image watermarks?",
-      "a": "Our tool allows you to draw redaction boxes over both text and image watermarks, effectively erasing them permanently."
+      "q": "Czy usuwa tekstowe znaki wodne czy graficzne znaki wodne?",
+      "a": "Nasze narzędzie umożliwia rysowanie pól redakcyjnych zarówno nad tekstowymi, jak i graficznymi znakami wodnymi, skutecznie je usuwając."
     },
     {
-      "q": "Can anyone recover the watermark after removal?",
-      "a": "No. The redacted areas are permanently flattened and rasterized, so the hidden data is completely destroyed and unrecoverable."
+      "q": "Czy ktoś może odzyskać znak wodny po usunięciu?",
+      "a": "Nie. Zredagowane obszary są trwale spłaszczane i rastrowane, więc ukryte dane zostają całkowicie zniszczone i niemożliwe do odzyskania."
     },
     {
-      "q": "Do I need to pay to remove watermarks?",
-      "a": "Our tool is 100% free with no hidden fees, subscriptions, or intrusive premium pop-ups."
+      "q": "Czy muszę płacić za usunięcie znaków wodnych?",
+      "a": "Nasze narzędzie jest w 100% bezpłatne, bez ukrytych opłat, subskrypcji i natrętnych wyskakujących okienek premium."
     }
   ]
 }

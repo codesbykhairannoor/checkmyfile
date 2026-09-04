@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "image_geo_targeting",
-      "subTitle": "WebAssembly-OCR",
-      "subContent": "Tesseract OCR werkt rechtstreeks in uw browser. Er zijn geen cloud-API's bij betrokken."
+      "title": "WebAssembly-OCR",
+      "content": "Tesseract OCR werkt rechtstreeks in uw browser. Er zijn geen cloud-API's bij betrokken."
     },
     {
       "type": "redact_privacy_security",
-      "subTitle": "Vertrouwelijke extractie",
-      "subContent": "Extraheer tekst veilig uit gevoelige identiteitskaarten of medische dossiers."
+      "title": "Vertrouwelijke extractie",
+      "content": "Extraheer tekst veilig uit gevoelige identiteitskaarten of medische dossiers."
     },
     {
       "type": "scan_performance",
-      "subTitle": "Hoge nauwkeurigheid",
-      "subContent": "Ondersteuning voor meerdere talen en scheve scans."
+      "title": "Hoge nauwkeurigheid",
+      "content": "Ondersteuning voor meerdere talen en scheve scans."
     }
   ],
   "faqs": [

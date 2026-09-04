@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "image_geo_targeting",
-      "subTitle": "OCR Majelis Web",
-      "subContent": "Tesseract OCR berjalan langsung di browser Anda. Tidak ada API cloud yang terlibat."
+      "title": "OCR Majelis Web",
+      "content": "Tesseract OCR berjalan langsung di browser Anda. Tidak ada API cloud yang terlibat."
     },
     {
       "type": "redact_privacy_security",
-      "subTitle": "Ekstraksi Rahasia",
-      "subContent": "Ekstrak teks dari kartu ID sensitif atau catatan medis dengan aman."
+      "title": "Ekstraksi Rahasia",
+      "content": "Ekstrak teks dari kartu ID sensitif atau catatan medis dengan aman."
     },
     {
       "type": "scan_performance",
-      "subTitle": "Akurasi Tinggi",
-      "subContent": "Dukungan untuk berbagai bahasa dan pemindaian miring."
+      "title": "Akurasi Tinggi",
+      "content": "Dukungan untuk berbagai bahasa dan pemindaian miring."
     }
   ],
   "faqs": [

@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "csv_excel_geo_targeting",
-      "subTitle": "Gratis paginering",
-      "subContent": "Legg til tall i ubegrensede filer uten å treffe betalingsvegger."
+      "title": "Gratis paginering",
+      "content": "Legg til tall i ubegrensede filer uten å treffe betalingsvegger."
     },
     {
       "type": "unlock_privacy_security",
-      "subTitle": "Sikker dokumenthåndtering",
-      "subContent": "Dine avhandlinger og rapporter er privat nummerert på maskinen din."
+      "title": "Sikker dokumenthåndtering",
+      "content": "Dine avhandlinger og rapporter er privat nummerert på maskinen din."
     },
     {
       "type": "reverse_performance",
-      "subTitle": "Batchnummerering",
-      "subContent": "Bruk sidetall på massive dokumenter på en brøkdel av et sekund."
+      "title": "Batchnummerering",
+      "content": "Bruk sidetall på massive dokumenter på en brøkdel av et sekund."
     }
   ],
   "faqs": [

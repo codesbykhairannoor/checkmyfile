@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "sign_geo_targeting",
-      "subTitle": "Offline zlúčenie",
-      "subContent": "Skombinujte svoje daňové formuláre a právne dokumenty bez toho, aby ste ich kamkoľvek posielali."
+      "title": "Offline zlúčenie",
+      "content": "Skombinujte svoje daňové formuláre a právne dokumenty bez toho, aby ste ich kamkoľvek posielali."
     },
     {
       "type": "rotate_privacy_security",
-      "subTitle": "Súkromie na vojenskej úrovni",
-      "subContent": "Zaručujeme absolútne súkromie, pretože fyzicky nevidíme vaše súbory."
+      "title": "Súkromie na vojenskej úrovni",
+      "content": "Zaručujeme absolútne súkromie, pretože fyzicky nevidíme vaše súbory."
     },
     {
       "type": "excel_performance",
-      "subTitle": "Okamžité spracovanie",
-      "subContent": "Okamžite zlúčte 100 stránok so spracovaním na strane klienta."
+      "title": "Okamžité spracovanie",
+      "content": "Okamžite zlúčte 100 stránok so spracovaním na strane klienta."
     }
   ],
   "faqs": [

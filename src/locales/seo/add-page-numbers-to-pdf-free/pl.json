@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "csv_excel_geo_targeting",
-      "subTitle": "Darmowa paginacja",
-      "subContent": "Dodawaj numery do nieograniczonej liczby plików bez uderzania w paywalle."
+      "title": "Darmowa paginacja",
+      "content": "Dodawaj numery do nieograniczonej liczby plików bez uderzania w paywalle."
     },
     {
       "type": "unlock_privacy_security",
-      "subTitle": "Bezpieczna obsługa dokumentów",
-      "subContent": "Twoje rozprawy i raporty są numerowane prywatnie na Twoim komputerze."
+      "title": "Bezpieczna obsługa dokumentów",
+      "content": "Twoje rozprawy i raporty są numerowane prywatnie na Twoim komputerze."
     },
     {
       "type": "reverse_performance",
-      "subTitle": "Numerowanie partii",
-      "subContent": "Zastosuj numerowanie stron do dużych dokumentów w ułamku sekundy."
+      "title": "Numerowanie partii",
+      "content": "Zastosuj numerowanie stron do dużych dokumentów w ułamku sekundy."
     }
   ],
   "faqs": [

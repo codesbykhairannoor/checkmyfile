@@ -6,18 +6,18 @@
   "sections": [
     {
       "type": "sign_geo_targeting",
-      "subTitle": "Mesclagem offline",
-      "subContent": "Combine seus formulários fiscais e documentos legais sem enviá-los para qualquer lugar."
+      "title": "Mesclagem offline",
+      "content": "Combine seus formulários fiscais e documentos legais sem enviá-los para qualquer lugar."
     },
     {
       "type": "rotate_privacy_security",
-      "subTitle": "Privacidade de nível militar",
-      "subContent": "Garantimos privacidade absoluta porque fisicamente não podemos ver seus arquivos."
+      "title": "Privacidade de nível militar",
+      "content": "Garantimos privacidade absoluta porque fisicamente não podemos ver seus arquivos."
     },
     {
       "type": "excel_performance",
-      "subTitle": "Processamento Instantâneo",
-      "subContent": "Mescle centenas de páginas instantaneamente com processamento do lado do cliente."
+      "title": "Processamento Instantâneo",
+      "content": "Mescle centenas de páginas instantaneamente com processamento do lado do cliente."
     }
   ],
   "faqs": [
