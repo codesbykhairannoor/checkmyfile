@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "ocr_geo_targeting",
       "title": "Protégez votre anonymat",
       "content": "Assurez-vous que les lanceurs d’alerte, les journalistes et les utilisateurs ordinaires peuvent partager des documents sans divulguer leur identité numérique.",
       "subTitle": "Confidentialité totale",
       "subContent": "Aucune empreinte numérique laissée."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "reverse_privacy_security",
       "title": "Désinfection de qualité militaire",
       "content": "Nous réécrivons la structure binaire du PDF localement dans votre navigateur pour garantir la destruction permanente des métadonnées."
     },
     {
-      "type": "lt_performance",
+      "type": "redact_performance",
       "title": "Gomme de métadonnées instantanée",
       "content": "Parcourez des milliers de pages en moins d'une seconde à l'aide de notre noyau WebAssembly hautement optimisé.",
       "badgeText": "Noyau WebAssembly"

@@ -70,8 +70,8 @@ export const UnlockPrivacySection: React.FC<SectionProps> = ({ section, badges, 
       <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}>
          <div style={{ width: '100%', maxWidth: 400, padding: 48, borderRadius: 32, background: 'var(--bg-card)', border: '1px solid var(--border-color)', position: 'relative', boxShadow: '0 20px 50px rgba(0,0,0,0.05)' }} className="hover-lift">
             <ShieldCheck size={64} color="var(--brand-primary)" style={{ marginBottom: 24 }} />
-            <h3 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)' }}>Key Isolation</h3>
-            <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: 1.7 }}>The password you type is only used locally to decrypt the file stream. It is never logged.</p>
+            <h3 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)' }}>{section.subTitle || 'Key Isolation'}</h3>
+            <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: 1.7 }}>{section.subContent || 'The password you type is only used locally to decrypt the file stream. It is never logged.'}</p>
          </div>
       </div>
     </div>

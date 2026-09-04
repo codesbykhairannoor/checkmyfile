@@ -81,8 +81,8 @@ export const GrayscaleGeoSection: React.FC<SectionProps> = ({ section, badges, s
       <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}>
          <div style={{ width: '100%', maxWidth: 400, padding: 48, borderRadius: 32, background: 'var(--bg-app)', border: '1px solid var(--border-color)', position: 'relative' }} className="hover-lift">
             <FileImage size={48} color="#475569" style={{ marginBottom: 24 }} />
-            <h3 style={{ fontSize: 'clamp(1.25rem, 3vw, 1.5rem)', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)' }}>Pre-Print Ready</h3>
-            <p style={{ fontSize: 'clamp(1.05rem, 2vw, 1.25rem)', color: 'var(--text-muted)', lineHeight: 1.7 }}>Remove all color profiles locally before sending to commercial printers.</p>
+            <h3 style={{ fontSize: 'clamp(1.25rem, 3vw, 1.5rem)', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)' }}>{section.subTitle || 'Pre-Print Ready'}</h3>
+            <p style={{ fontSize: 'clamp(1.05rem, 2vw, 1.25rem)', color: 'var(--text-muted)', lineHeight: 1.7 }}>{section.subContent || 'Remove all color profiles locally before sending to commercial printers.'}</p>
          </div>
       </div>
     </div>

@@ -71,8 +71,8 @@ export const ScanGeoSection: React.FC<SectionProps> = ({ section, badges, stats,
       <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}>
          <div style={{ width: '100%', maxWidth: 400, padding: 48, borderRadius: 32, background: 'var(--bg-app)', border: '1px solid var(--border-color)', position: 'relative' }} className="hover-lift">
             <Focus size={48} color="var(--brand-primary)" style={{ marginBottom: 24 }} />
-            <h3 style={{ fontSize: 'clamp(1.25rem, 3vw, 1.5rem)', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)' }}>Auto-Deskew & Crop</h3>
-            <p style={{ fontSize: 'clamp(1.05rem, 2vw, 1.25rem)', color: 'var(--text-muted)', lineHeight: 1.7 }}>Take a photo from any angle. Our browser engine automatically straightens and crops the document.</p>
+            <h3 style={{ fontSize: 'clamp(1.25rem, 3vw, 1.5rem)', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)' }}>{section.subTitle || 'Auto-Deskew & Crop'}</h3>
+            <p style={{ fontSize: 'clamp(1.05rem, 2vw, 1.25rem)', color: 'var(--text-muted)', lineHeight: 1.7 }}>{section.subContent || 'Take a photo from any angle. Our browser engine automatically straightens and crops the document.'}</p>
          </div>
       </div>
       <div style={{ flex: '1 1 500px' }}>

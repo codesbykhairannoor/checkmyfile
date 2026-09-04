@@ -43,7 +43,7 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Nejlepší černobílý převodník PDF",
       "content": "Převeďte barevný text, obrázky a pozadí na odstíny šedé bez ztráty čitelnosti.",
       "subTitle": "Vysoká věrnost",
@@ -51,12 +51,12 @@
       "badgeText": "Perfektní výtisky"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "Soukromá konverze ve stupních šedi",
       "content": "Vaše dokumenty jsou převedeny do paměti vašeho vlastního zařízení. Vaše soubory nikdy nevidíme."
     },
     {
-      "type": "lt_performance",
+      "type": "excel_csv_performance",
       "title": "Bleskově rychlé zpracování",
       "content": "Protože váš soubor nenahráváme na cloudový server, konverze ve stupních šedi proběhne téměř okamžitě.",
       "badgeText": "Nulová latence"

@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "excel_geo_targeting",
       "title": "Sesuai untuk Kontrak & Bukti",
       "content": "Peguam dan pereka bentuk menggunakan alat perbezaan visual kami untuk memastikan tiada perubahan yang tidak dibenarkan diselitkan ke dalam dokumen.",
       "badgeText": "Sedia Undang-undang"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "Perbandingan Dokumen Sulit",
       "content": "Membandingkan kontrak NDA yang sensitif? Alat kami adalah 100% tempatan. Dokumen tidak pernah menyentuh pelayan kami.",
       "badgeText": "Sifar Muat Naik"
     },
     {
-      "type": "lt_performance",
+      "type": "performance",
       "title": "Rendering Perbezaan Masa Nyata",
       "content": "Hasilkan perbezaan visual serta-merta dalam penyemak imbas anda terima kasih kepada pemaparan kanvas dipercepatkan perkakasan.",
       "badgeText": "GPU Dipercepatkan"

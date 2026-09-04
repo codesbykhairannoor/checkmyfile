@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "ocr_geo_targeting",
       "title": "Beskyt din anonymitet",
       "content": "Sørg for, at whistleblowere, journalister og almindelige brugere kan dele dokumenter uden at lække deres digitale identitet.",
       "subTitle": "Total privatliv",
       "subContent": "Nul digitale fodspor efterladt."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "reverse_privacy_security",
       "title": "Militærklasse sanitet",
       "content": "Vi omskriver den binære PDF-struktur lokalt i din browser for at sikre, at metadataene bliver permanent ødelagt."
     },
     {
-      "type": "lt_performance",
+      "type": "redact_performance",
       "title": "Instant Metadata Eraser",
       "content": "Skrub tusindvis af sider på mindre end et sekund ved hjælp af vores meget optimerede WebAssembly-kerne.",
       "badgeText": "WebAssembly Core"

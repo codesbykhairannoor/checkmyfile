@@ -43,20 +43,20 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Penghapusan Margin Aman",
       "content": "Tidak perlu mengunggah PDF sensitif Anda hanya untuk menghapus beberapa spasi. Mesin WebAssembly kami melakukannya di browser Anda.",
       "subTitle": "Kebijakan Nol Unggahan",
       "subContent": "File Anda tidak pernah meninggalkan perangkat Anda."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "100% Pemangkasan Offline",
       "content": "File Anda tidak pernah meninggalkan komputer Anda. Sempurna untuk dokumen hukum atau medis rahasia.",
       "badgeText": "Offline Siap"
     },
     {
-      "type": "lt_performance",
+      "type": "unlock_performance",
       "title": "Pemangkasan PDF Instan",
       "content": "Pangkas buku setebal 500 halaman dalam milidetik tanpa menunggu unggahan atau unduhan server.",
       "badgeText": "Secepat Kilat"

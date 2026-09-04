@@ -43,7 +43,7 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Cel mai bun convertor PDF alb-n",
       "content": "Convertiți textul colorat, imaginile și fundalurile în nuanțe de gri fără a pierde lizibilitatea.",
       "subTitle": "Fidelitate înaltă",
@@ -51,12 +51,12 @@
       "badgeText": "Printuri perfecte"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "Conversie privată în tonuri de gri",
       "content": "Documentele dumneavoastră sunt convertite în memoria propriului dispozitiv. Nu vă vedem niciodată fișierele."
     },
     {
-      "type": "lt_performance",
+      "type": "excel_csv_performance",
       "title": "Procesare rapidă",
       "content": "Deoarece nu vă încărcăm fișierul pe un server cloud, conversia în tonuri de gri are loc aproape instantaneu.",
       "badgeText": "Latență zero"

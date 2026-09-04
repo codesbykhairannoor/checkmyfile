@@ -72,7 +72,6 @@ import { PdfToImageHeroSection, PdfToImageHowToSection, PdfToImageGeoSection, Pd
 import { ExtractImagesHeroSection, ExtractImagesHowToSection, ExtractImagesGeoSection, ExtractImagesPrivacySection, ExtractImagesPerformanceSection } from './tools/ExtractImagesSections';
 import { EditHeroSection, EditHowToSection, EditGeoSection, EditPrivacySection, EditPerformanceSection } from './tools/EditPdfSections';
 import { LtCropMarginsHowToSection, LtGrayscaleHowToSection, LtRemoveMetadataHowToSection, LtExtractImagesHowToSection, LtComparePdfHowToSection } from './LongTailHowToSections';
-import { LtGeoSection, LtPrivacySection, LtPerformanceSection } from './LtGenericSections';
 
 type SectionComponent = React.FC<SectionProps>;
 
@@ -108,11 +107,6 @@ export const SECTION_REGISTRY: Record<string, SectionComponent> = {
   lt_remove_metadata_how_to_steps: LtRemoveMetadataHowToSection,
   lt_extract_images_how_to_steps: LtExtractImagesHowToSection,
   lt_compare_pdf_how_to_steps: LtComparePdfHowToSection,
-  
-  // Generic Long-Tail Sections
-  lt_geo_targeting: LtGeoSection,
-  lt_privacy_security: LtPrivacySection,
-  lt_performance: LtPerformanceSection,
 
   remove_hero_features: RemoveHeroSection,
   remove_how_to_steps: RemoveHowToSection,

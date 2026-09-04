@@ -43,7 +43,7 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Paras B&W PDF-muunnin",
       "content": "Muunna värillinen teksti, kuvat ja taustat harmaan sävyiksi menettämättä luettavuutta.",
       "subTitle": "High Fidelity",
@@ -51,12 +51,12 @@
       "badgeText": "Täydelliset tulosteet"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "Yksityinen harmaasävymuunnos",
       "content": "Asiakirjasi muunnetaan oman laitteesi muistiin. Emme koskaan näe tiedostojasi."
     },
     {
-      "type": "lt_performance",
+      "type": "excel_csv_performance",
       "title": "Salamannopea käsittely",
       "content": "Koska emme lataa tiedostoasi pilvipalvelimelle, harmaasävymuunnos tapahtuu lähes välittömästi.",
       "badgeText": "Nolla latenssi"

@@ -71,8 +71,8 @@ export const ExcelToCsvGeoSection: React.FC<SectionProps> = ({ section, badges, 
       <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}>
          <div style={{ width: '100%', maxWidth: 400, padding: 48, borderRadius: 32, background: 'var(--brand-primary)', color: 'white', position: 'relative', boxShadow: '0 30px 60px rgba(225, 29, 72, 0.3)' }} className="hover-lift">
             <Database size={48} color="white" style={{ marginBottom: 24 }} />
-            <h3 style={{ fontSize: '1.8rem', fontWeight: 800, marginBottom: 16 }}>Pipeline Ready</h3>
-            <p style={{ fontSize: '1.1rem', color: 'rgba(255,255,255,0.9)', lineHeight: 1.7 }}>Clean CSV output is the universal language for databases, ML models, and data pipelines.</p>
+            <h3 style={{ fontSize: '1.8rem', fontWeight: 800, marginBottom: 16 }}>{section.subTitle || 'Pipeline Ready'}</h3>
+            <p style={{ fontSize: '1.1rem', color: 'rgba(255,255,255,0.9)', lineHeight: 1.7 }}>{section.subContent || 'Clean CSV output is the universal language for databases, ML models, and data pipelines.'}</p>
          </div>
       </div>
       <div style={{ flex: '1 1 500px' }}>

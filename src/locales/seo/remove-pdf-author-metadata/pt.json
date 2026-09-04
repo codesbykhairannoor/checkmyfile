@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "ocr_geo_targeting",
       "title": "Proteja seu anonimato",
       "content": "Garanta que denunciantes, jornalistas e usuários comuns possam compartilhar documentos sem vazar sua identidade digital.",
       "subTitle": "Privacidade Total",
       "subContent": "Zero pegadas digitais deixadas para trás."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "reverse_privacy_security",
       "title": "Sanitização de nível militar",
       "content": "Reescrevemos a estrutura binária do PDF localmente no seu navegador para garantir que os metadados sejam destruídos permanentemente."
     },
     {
-      "type": "lt_performance",
+      "type": "redact_performance",
       "title": "Apagador Instantâneo de Metadados",
       "content": "Limpe milhares de páginas em menos de um segundo usando nosso núcleo WebAssembly altamente otimizado.",
       "badgeText": "Núcleo WebAssembly"

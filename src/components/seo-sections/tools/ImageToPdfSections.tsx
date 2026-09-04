@@ -122,12 +122,12 @@ export const ImageToPdfPerformanceSection: React.FC<SectionProps> = ({ section, 
        
        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: 24, maxWidth: 1000, margin: '0 auto' }}>
           <div style={{ padding: 32, background: 'rgba(255,255,255,0.1)', borderRadius: 24, backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.2)' }}>
-             <h3 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: 12 }}>No Quality Loss</h3>
-             <p style={{ opacity: 0.8 }}>Images are embedded directly into the PDF without aggressive recompression.</p>
+             <h3 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: 12 }}>{section.subTitle || 'No Quality Loss'}</h3>
+             <p style={{ opacity: 0.8 }}>{section.subContent || 'Images are embedded directly into the PDF without aggressive recompression.'}</p>
           </div>
           <div style={{ padding: 32, background: 'rgba(255,255,255,0.1)', borderRadius: 24, backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.2)' }}>
-             <h3 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: 12 }}>Instant Merging</h3>
-             <p style={{ opacity: 0.8 }}>Compile 100+ images into a single PDF document in less than 3 seconds.</p>
+             <h3 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: 12 }}>{section.subTitle || 'Instant Merging'}</h3>
+             <p style={{ opacity: 0.8 }}>{section.subContent || 'Compile 100+ images into a single PDF document in less than 3 seconds.'}</p>
           </div>
        </div>
     </div>

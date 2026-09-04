@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "ocr_geo_targeting",
       "title": "Lindungi Tanpa Nama Anda",
       "content": "Pastikan pemberi maklumat, wartawan dan pengguna harian boleh berkongsi dokumen tanpa membocorkan identiti digital mereka.",
       "subTitle": "Jumlah Privasi",
       "subContent": "Sifar jejak kaki digital tertinggal."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "reverse_privacy_security",
       "title": "Pembersihan Gred Tentera",
       "content": "Kami menulis semula struktur binari PDF secara setempat dalam penyemak imbas anda untuk memastikan metadata dimusnahkan secara kekal."
     },
     {
-      "type": "lt_performance",
+      "type": "redact_performance",
       "title": "Pemadam Metadata Segera",
       "content": "Gosok beribu-ribu halaman dalam masa kurang dari satu saat menggunakan teras WebAssembly kami yang sangat dioptimumkan.",
       "badgeText": "Teras WebAssembly"

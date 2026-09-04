@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "excel_geo_targeting",
       "title": "Perfect pentru contracte și dovezi",
       "content": "Avocații și designerii folosesc instrumentul nostru vizual pentru a se asigura că nu au fost introduse modificări neautorizate într-un document.",
       "badgeText": "Legal Ready"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "Compararea documentelor confidențiale",
       "content": "Compararea contractelor sensibile NDA? Instrumentul nostru este 100% local. Documentele nu ating niciodată serverele noastre.",
       "badgeText": "Zero încărcări"
     },
     {
-      "type": "lt_performance",
+      "type": "performance",
       "title": "Redare diferență în timp real",
       "content": "Generați diferențe vizuale instantaneu în browser-ul dvs. datorită redării canvas accelerate de hardware.",
       "badgeText": "GPU accelerat"

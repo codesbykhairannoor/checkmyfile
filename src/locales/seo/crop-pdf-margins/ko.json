@@ -43,20 +43,20 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "안전한 마진 제거",
       "content": "일부 공백을 제거하기 위해 중요한 PDF를 업로드할 필요가 없습니다. 우리의 WebAssembly 엔진은 귀하의 브라우저에서 이를 수행합니다.",
       "subTitle": "제로 업로드 정책",
       "subContent": "귀하의 파일은 절대로 장치를 떠나지 않습니다."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "100% 오프라인 자르기",
       "content": "귀하의 파일은 결코 컴퓨터를 떠나지 않습니다. 기밀 법률 또는 의료 문서에 적합합니다.",
       "badgeText": "오프라인 준비"
     },
     {
-      "type": "lt_performance",
+      "type": "unlock_performance",
       "title": "즉각적인 PDF 트리밍",
       "content": "서버 업로드나 다운로드를 기다리지 않고 500페이지 분량의 책을 밀리초 만에 다듬을 수 있습니다.",
       "badgeText": "번개처럼 빠른"

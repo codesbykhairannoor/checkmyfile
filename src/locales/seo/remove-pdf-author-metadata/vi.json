@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "ocr_geo_targeting",
       "title": "Bảo vệ danh tính của bạn",
       "content": "Đảm bảo người tố cáo, nhà báo và người dùng hàng ngày có thể chia sẻ tài liệu mà không bị rò rỉ danh tính kỹ thuật số của họ.",
       "subTitle": "Tổng quyền riêng tư",
       "subContent": "Không có dấu chân kỹ thuật số nào bị bỏ lại phía sau."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "reverse_privacy_security",
       "title": "Vệ sinh cấp quân sự",
       "content": "Chúng tôi viết lại cấu trúc nhị phân PDF cục bộ trong trình duyệt của bạn để đảm bảo siêu dữ liệu bị hủy vĩnh viễn."
     },
     {
-      "type": "lt_performance",
+      "type": "redact_performance",
       "title": "Công cụ xóa siêu dữ liệu tức thì",
       "content": "Quét hàng nghìn trang trong chưa đầy một giây bằng cách sử dụng lõi WebAssembly được tối ưu hóa cao của chúng tôi.",
       "badgeText": "Lõi WebAssembly"

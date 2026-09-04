@@ -43,20 +43,20 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Biztonságos margó eltávolítása",
       "content": "Nem kell feltölteni érzékeny PDF fájljait pusztán a szóközök eltávolításához. WebAssembly motorunk megteszi ezt az Ön böngészőjében.",
       "subTitle": "Nulla feltöltés házirend",
       "subContent": "A fájlok soha nem hagyják el az eszközt."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "100% offline vágás",
       "content": "A fájlok soha nem hagyják el a számítógépet. Ideális bizalmas jogi vagy egészségügyi dokumentumokhoz.",
       "badgeText": "Offline kész"
     },
     {
-      "type": "lt_performance",
+      "type": "unlock_performance",
       "title": "Azonnali PDF-kivágás",
       "content": "Vágjon ki egy 500 oldalas könyvet ezredmásodpercek alatt anélkül, hogy megvárná a szerver feltöltését vagy letöltését.",
       "badgeText": "Villámgyors"

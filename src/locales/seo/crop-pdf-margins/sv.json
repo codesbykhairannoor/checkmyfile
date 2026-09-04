@@ -43,20 +43,20 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Säker marginalborttagning",
       "content": "Du behöver inte ladda upp dina känsliga PDF-filer bara för att ta bort lite blanksteg. Vår WebAssembly-motor gör det i din webbläsare.",
       "subTitle": "Noll uppladdningspolicy",
       "subContent": "Dina filer lämnar aldrig din enhet."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "100 % offlinebeskärning",
       "content": "Dina filer lämnar aldrig din dator. Perfekt för konfidentiella juridiska eller medicinska dokument.",
       "badgeText": "Offline redo"
     },
     {
-      "type": "lt_performance",
+      "type": "unlock_performance",
       "title": "Omedelbar PDF-klippning",
       "content": "Trimma en 500-sidig bok på millisekunder utan att vänta på serveruppladdningar eller nedladdningar.",
       "badgeText": "Blixtsnabb"

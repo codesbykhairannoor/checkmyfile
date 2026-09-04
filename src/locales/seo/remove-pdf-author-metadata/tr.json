@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "ocr_geo_targeting",
       "title": "Anonimliğinizi Koruyun",
       "content": "İhbarcıların, gazetecilerin ve sıradan kullanıcıların dijital kimliklerini sızdırmadan belgeleri paylaşabilmelerini sağlayın.",
       "subTitle": "Tam Gizlilik",
       "subContent": "Geride sıfır dijital ayak izi kaldı."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "reverse_privacy_security",
       "title": "Askeri Düzeyde Sterilizasyon",
       "content": "Meta verilerin kalıcı olarak yok edilmesini sağlamak için PDF ikili yapısını tarayıcınızda yerel olarak yeniden yazıyoruz."
     },
     {
-      "type": "lt_performance",
+      "type": "redact_performance",
       "title": "Anında Meta Veri Silgisi",
       "content": "Yüksek düzeyde optimize edilmiş WebAssembly çekirdeğimizi kullanarak binlerce sayfayı bir saniyeden daha kısa sürede tarayın.",
       "badgeText": "WebAssembly Çekirdeği"

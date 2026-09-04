@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "ocr_geo_targeting",
       "title": "Chroń swoją anonimowość",
       "content": "Zapewnij sygnalistom, dziennikarzom i zwykłym użytkownikom możliwość udostępniania dokumentów bez ujawniania swojej tożsamości cyfrowej.",
       "subTitle": "Całkowita prywatność",
       "subContent": "Zero cyfrowych śladów pozostawionych po sobie."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "reverse_privacy_security",
       "title": "Sanityzacja na poziomie wojskowym",
       "content": "Przepisujemy binarną strukturę pliku PDF lokalnie w Twojej przeglądarce, aby zapewnić trwałe zniszczenie metadanych."
     },
     {
-      "type": "lt_performance",
+      "type": "redact_performance",
       "title": "Natychmiastowe usuwanie metadanych",
       "content": "Przejrzyj tysiące stron w mniej niż sekundę, korzystając z naszego wysoce zoptymalizowanego rdzenia WebAssembly.",
       "badgeText": "Rdzeń zestawu WebAssembly"

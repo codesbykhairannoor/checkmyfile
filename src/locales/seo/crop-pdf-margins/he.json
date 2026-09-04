@@ -43,20 +43,20 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "הסרת שוליים מאובטחת",
       "content": "אין צורך להעלות את קובצי ה-PDF הרגישים שלך רק כדי להסיר רווח לבן. מנוע ה-WebAssembly שלנו עושה זאת בדפדפן שלך.",
       "subTitle": "מדיניות אפס העלאה",
       "subContent": "הקבצים שלך לעולם לא עוזבים את המכשיר שלך."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "100% חיתוך לא מקוון",
       "content": "הקבצים שלך לעולם לא עוזבים את המחשב שלך. מושלם עבור מסמכים משפטיים או רפואיים חסויים.",
       "badgeText": "לא מקוון מוכן"
     },
     {
-      "type": "lt_performance",
+      "type": "unlock_performance",
       "title": "חיתוך PDF מיידי",
       "content": "חתוך ספר בן 500 עמודים באלפיות שניות מבלי לחכות להעלאות או הורדות של שרתים.",
       "badgeText": "מהיר ברק"

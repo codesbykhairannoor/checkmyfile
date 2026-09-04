@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "excel_geo_targeting",
       "title": "Parfait pour les contrats et les preuves",
       "content": "Les avocats et les concepteurs utilisent notre outil de comparaison visuelle pour garantir qu'aucune modification non autorisée n'a été introduite dans un document.",
       "badgeText": "Prêt pour le droit"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "Comparaison de documents confidentiels",
       "content": "Vous comparez les contrats NDA sensibles ? Notre outil est 100% local. Les documents ne touchent jamais nos serveurs.",
       "badgeText": "Zéro téléchargement"
     },
     {
-      "type": "lt_performance",
+      "type": "performance",
       "title": "Rendu différentiel en temps réel",
       "content": "Générez instantanément des différences visuelles dans votre navigateur grâce au rendu de canevas accéléré par le matériel.",
       "badgeText": "GPU accéléré"

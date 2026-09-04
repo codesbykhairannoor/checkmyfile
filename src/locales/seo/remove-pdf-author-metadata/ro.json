@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "ocr_geo_targeting",
       "title": "Protejați-vă anonimatul",
       "content": "Asigurați-vă că avertizorii, jurnaliștii și utilizatorii obișnuiți pot partaja documente fără a-și pierde identitatea digitală.",
       "subTitle": "Confidențialitate totală",
       "subContent": "Zero amprente digitale lăsate în urmă."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "reverse_privacy_security",
       "title": "Igienizare de grad militar",
       "content": "Rescriem structura binară PDF local în browserul dvs. pentru a ne asigura că metadatele sunt distruse definitiv."
     },
     {
-      "type": "lt_performance",
+      "type": "redact_performance",
       "title": "Eraser de metadate instantanee",
       "content": "Curățați mii de pagini în mai puțin de o secundă folosind nucleul nostru WebAssembly extrem de optimizat.",
       "badgeText": "WebAssembly Core"

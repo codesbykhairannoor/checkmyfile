@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "ocr_geo_targeting",
       "title": "Protect Your Anonymity",
       "content": "Ensure whistleblowers, journalists, and everyday users can share documents without leaking their digital identity.",
       "subTitle": "Total Privacy",
       "subContent": "Zero digital footprints left behind."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "reverse_privacy_security",
       "title": "Military Grade Sanitization",
       "content": "We rewrite the PDF binary structure locally in your browser to ensure the metadata is permanently destroyed."
     },
     {
-      "type": "lt_performance",
+      "type": "redact_performance",
       "title": "Instant Metadata Eraser",
       "content": "Scrub thousands of pages in less than a second using our highly optimized WebAssembly core.",
       "badgeText": "WebAssembly Core"

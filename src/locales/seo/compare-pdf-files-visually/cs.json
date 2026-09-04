@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "excel_geo_targeting",
       "title": "Ideální pro smlouvy a důkazy",
       "content": "Právníci a designéři používají náš nástroj pro vizuální diff, aby zajistili, že do dokumentu nebudou vkradeny žádné neoprávněné změny.",
       "badgeText": "Legální připraveno"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "Porovnání důvěrných dokumentů",
       "content": "Porovnání citlivých smluv NDA? Náš nástroj je 100% lokální. Dokumenty se nikdy nedotknou našich serverů.",
       "badgeText": "Nulové nahrávání"
     },
     {
-      "type": "lt_performance",
+      "type": "performance",
       "title": "Vykreslování rozdílů v reálném čase",
       "content": "Okamžitě generujte vizuální rozdíly ve svém prohlížeči díky hardwarově akcelerovanému vykreslování plátna.",
       "badgeText": "Akcelerace GPU"

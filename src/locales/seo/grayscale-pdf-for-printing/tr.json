@@ -43,7 +43,7 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "En İyi Siyah Beyaz PDF Dönüştürücü",
       "content": "Renkli metinleri, görüntüleri ve arka planları okunabilirliği kaybetmeden gri tonlarına dönüştürün.",
       "subTitle": "Yüksek Sadakat",
@@ -51,12 +51,12 @@
       "badgeText": "Mükemmel Baskılar"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "Özel Gri Tonlamalı Dönüşüm",
       "content": "Belgeleriniz kendi cihazınızın hafızasına dönüştürülür. Dosyalarınızı asla görmeyiz."
     },
     {
-      "type": "lt_performance",
+      "type": "excel_csv_performance",
       "title": "Işık Hızında İşleme",
       "content": "Dosyanızı bir bulut sunucusuna yüklemediğimiz için gri tonlama dönüşümü neredeyse anında gerçekleşir.",
       "badgeText": "Sıfır Gecikme"

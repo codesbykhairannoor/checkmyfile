@@ -43,7 +43,7 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Beste zwart-wit PDF-converter",
       "content": "Converteer gekleurde tekst, afbeeldingen en achtergronden naar grijstinten zonder de leesbaarheid te verliezen.",
       "subTitle": "Hoge betrouwbaarheid",
@@ -51,12 +51,12 @@
       "badgeText": "Perfecte afdrukken"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "Privé grijswaardenconversie",
       "content": "Uw documenten worden geconverteerd in het geheugen van uw eigen apparaat. Wij zien uw bestanden nooit."
     },
     {
-      "type": "lt_performance",
+      "type": "excel_csv_performance",
       "title": "Bliksemsnelle verwerking",
       "content": "Omdat we uw bestand niet naar een cloudserver uploaden, vindt de grijswaardenconversie vrijwel onmiddellijk plaats.",
       "badgeText": "Geen latentie"

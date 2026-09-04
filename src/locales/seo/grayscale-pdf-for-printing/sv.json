@@ -43,7 +43,7 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Bästa svartvita PDF-konverterare",
       "content": "Konvertera färgad text, bilder och bakgrunder till nyanser av grått utan att förlora läsbarheten.",
       "subTitle": "Hi-fi",
@@ -51,12 +51,12 @@
       "badgeText": "Perfekta utskrifter"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "Privat gråskalekonvertering",
       "content": "Dina dokument konverteras till din egen enhets minne. Vi ser aldrig dina filer."
     },
     {
-      "type": "lt_performance",
+      "type": "excel_csv_performance",
       "title": "Blixtsnabb bearbetning",
       "content": "Eftersom vi inte laddar upp din fil till en molnserver, sker gråskalekonverteringen nästan omedelbart.",
       "badgeText": "Noll latens"

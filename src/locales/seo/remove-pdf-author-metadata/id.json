@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "ocr_geo_targeting",
       "title": "Lindungi Anonimitas Anda",
       "content": "Pastikan pelapor, jurnalis, dan pengguna sehari-hari dapat berbagi dokumen tanpa membocorkan identitas digital mereka.",
       "subTitle": "Privasi Total",
       "subContent": "Tidak ada jejak digital yang tertinggal."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "reverse_privacy_security",
       "title": "Sanitasi Tingkat Militer",
       "content": "Kami menulis ulang struktur biner PDF secara lokal di browser Anda untuk memastikan metadata dimusnahkan secara permanen."
     },
     {
-      "type": "lt_performance",
+      "type": "redact_performance",
       "title": "Penghapus Metadata Instan",
       "content": "Gosok ribuan halaman dalam waktu kurang dari satu detik menggunakan inti WebAssembly kami yang sangat optimal.",
       "badgeText": "Inti Majelis Web"

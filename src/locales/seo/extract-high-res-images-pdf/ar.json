@@ -43,18 +43,18 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "metadata_geo_targeting",
       "title": "أفضل أداة لاستخراج الصور",
       "content": "مثالي للمصممين والناشرين والطلاب الذين يحتاجون إلى إعادة استخدام الأصول عالية الجودة المقفلة داخل ملف PDF.",
       "badgeText": "الجودة الاحترافية"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "استخراج الأصول الخاصة",
       "content": "نحن لا نسرق صورك. يحدث الاستخراج بالكامل على جهاز الكمبيوتر الخاص بك."
     },
     {
-      "type": "lt_performance",
+      "type": "reverse_performance",
       "title": "اشتعلت فيه النيران في التصدير السريع",
       "content": "قم باستخراج مئات الصور عالية الدقة في ثوانٍ دون انتظار تحميل ملف ضخم.",
       "badgeText": "استخراج فوري"

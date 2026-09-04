@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "ocr_geo_targeting",
       "title": "保护您的匿名性",
       "content": "确保举报人、记者和日常用户可以在不泄露其数字身份的情况下共享文档。",
       "subTitle": "完全隐私",
       "subContent": "留下零数字足迹。"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "reverse_privacy_security",
       "title": "军用级消毒",
       "content": "我们在您的浏览器中本地重写 PDF 二进制结构，以确保元数据被永久销毁。"
     },
     {
-      "type": "lt_performance",
+      "type": "redact_performance",
       "title": "即时元数据擦除器",
       "content": "使用我们高度优化的 WebAssembly 核心，可以在不到一秒的时间内清理数千个页面。",
       "badgeText": "WebAssembly 核心"

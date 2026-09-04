@@ -43,18 +43,18 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "metadata_geo_targeting",
       "title": "Meilleur outil d'extraction d'images",
       "content": "Idéal pour les concepteurs, les éditeurs et les étudiants qui ont besoin de réutiliser des ressources de haute qualité enfermées dans un PDF.",
       "badgeText": "Qualité professionnelle"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "Extraction d'actifs privés",
       "content": "Nous ne volons pas vos images. L'extraction s'effectue entièrement sur votre propre ordinateur."
     },
     {
-      "type": "lt_performance",
+      "type": "reverse_performance",
       "title": "Exportation ultra-rapide",
       "content": "Extrayez des centaines d'images haute résolution en quelques secondes sans attendre un téléchargement massif de fichiers.",
       "badgeText": "Extraction instantanée"

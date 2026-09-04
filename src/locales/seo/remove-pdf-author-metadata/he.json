@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "ocr_geo_targeting",
       "title": "הגן על האנונימיות שלך",
       "content": "ודא שחושפי שחיתויות, עיתונאים ומשתמשים רגילים יכולים לשתף מסמכים מבלי להדליף את זהותם הדיגיטלית.",
       "subTitle": "פרטיות מוחלטת",
       "subContent": "אפס עקבות דיגיטליות שנותרו מאחור."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "reverse_privacy_security",
       "title": "חיטוי בדרגה צבאית",
       "content": "אנו משכתבים את המבנה הבינארי של PDF באופן מקומי בדפדפן שלך כדי להבטיח שהמטא נתונים יושמדו לצמיתות."
     },
     {
-      "type": "lt_performance",
+      "type": "redact_performance",
       "title": "מחק מטא נתונים מיידי",
       "content": "שפשפו אלפי דפים תוך פחות משנייה באמצעות ליבת ה-WebAssembly המותאמת ביותר שלנו.",
       "badgeText": "WebAssembly Core"

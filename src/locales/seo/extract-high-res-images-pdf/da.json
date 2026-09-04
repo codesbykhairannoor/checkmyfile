@@ -43,18 +43,18 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "metadata_geo_targeting",
       "title": "Bedste billedekstraktionsværktøj",
       "content": "Perfekt til designere, udgivere og studerende, der har brug for at genbruge aktiver af høj kvalitet, der er låst inde i en PDF.",
       "badgeText": "Pro kvalitet"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "Udvinding af private aktiver",
       "content": "Vi stjæler ikke dine billeder. Udtrækningen sker udelukkende på din egen computer."
     },
     {
-      "type": "lt_performance",
+      "type": "reverse_performance",
       "title": "Lynhurtig eksport",
       "content": "Uddrag hundredvis af billeder i høj opløsning på få sekunder uden at vente på en massiv filupload.",
       "badgeText": "Øjeblikkelig udvinding"

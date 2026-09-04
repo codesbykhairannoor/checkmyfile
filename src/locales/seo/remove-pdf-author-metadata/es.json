@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "ocr_geo_targeting",
       "title": "Proteja su anonimato",
       "content": "Asegúrese de que los denunciantes, periodistas y usuarios cotidianos puedan compartir documentos sin filtrar su identidad digital.",
       "subTitle": "Privacidad total",
       "subContent": "Cero huellas digitales dejadas atrás."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "reverse_privacy_security",
       "title": "Desinfección de grado militar",
       "content": "Reescribimos la estructura binaria del PDF localmente en su navegador para garantizar que los metadatos se destruyan permanentemente."
     },
     {
-      "type": "lt_performance",
+      "type": "redact_performance",
       "title": "Borrador instantáneo de metadatos",
       "content": "Explore miles de páginas en menos de un segundo utilizando nuestro núcleo WebAssembly altamente optimizado.",
       "badgeText": "Núcleo de ensamblaje web"

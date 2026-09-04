@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "ocr_geo_targeting",
       "title": "匿名性を守る",
       "content": "内部告発者、ジャーナリスト、一般ユーザーがデジタル ID を漏らすことなく文書を共有できるようにします。",
       "subTitle": "完全なプライバシー",
       "subContent": "デジタル フットプリントはゼロです。"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "reverse_privacy_security",
       "title": "軍事グレードの消毒",
       "content": "PDF バイナリ構造をブラウザ内でローカルに書き換えて、メタデータが完全に破壊されるようにします。"
     },
     {
-      "type": "lt_performance",
+      "type": "redact_performance",
       "title": "インスタントメタデータイレイサー",
       "content": "高度に最適化された WebAssembly コアを使用して、数千のページを 1 秒以内にスクラブします。",
       "badgeText": "WebAssembly コア"

@@ -43,18 +43,18 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "metadata_geo_targeting",
       "title": "最佳图像提取工具",
       "content": "非常适合需要重复使用 PDF 中锁定的高质量资源的设计师、出版商和学生。",
       "badgeText": "专业品质"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "私人资产提取",
       "content": "我们不会窃取您的图像。 提取完全发生在您自己的计算机上。"
     },
     {
-      "type": "lt_performance",
+      "type": "reverse_performance",
       "title": "极速导出",
       "content": "在几秒钟内提取数百张高分辨率图像，无需等待大量文件上传。",
       "badgeText": "即时提取"

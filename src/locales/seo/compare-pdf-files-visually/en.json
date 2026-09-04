@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "excel_geo_targeting",
       "title": "Perfect for Contracts & Proofs",
       "content": "Lawyers and designers use our visual diff tool to ensure no unauthorized changes were snuck into a document.",
       "badgeText": "Legal Ready"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "Confidential Document Comparison",
       "content": "Comparing sensitive NDA contracts? Our tool is 100% local. The documents never touch our servers.",
       "badgeText": "Zero Uploads"
     },
     {
-      "type": "lt_performance",
+      "type": "performance",
       "title": "Real-Time Diff Rendering",
       "content": "Generate visual diffs instantly in your browser thanks to hardware-accelerated canvas rendering.",
       "badgeText": "GPU Accelerated"

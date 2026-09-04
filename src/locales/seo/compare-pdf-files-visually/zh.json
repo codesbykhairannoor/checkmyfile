@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "excel_geo_targeting",
       "title": "非常适合合同和证明",
       "content": "律师和设计师使用我们的视觉差异工具来确保文档中没有未经授权的更改。",
       "badgeText": "法律就绪"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "机密文件比较",
       "content": "比较敏感的 NDA 合同？ 我们的工具 100% 本地化。 这些文档永远不会接触我们的服务器。",
       "badgeText": "零上传"
     },
     {
-      "type": "lt_performance",
+      "type": "performance",
       "title": "实时差异渲染",
       "content": "借助硬件加速的画布渲染，可以在浏览器中立即生成视觉差异。",
       "badgeText": "GPU 加速"

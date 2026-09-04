@@ -86,8 +86,8 @@ export const CsvToExcelPrivacySection: React.FC<SectionProps> = ({ section, badg
          {/* Safe Box graphic */}
          <div style={{ width: '100%', maxWidth: 400, padding: 48, borderRadius: 32, background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', position: 'relative' }} className="hover-lift">
             <ShieldCheck size={64} color="var(--brand-primary)" style={{ marginBottom: 24 }} />
-            <h3 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: 16, color: 'white' }}>Zero Cloud Access</h3>
-            <p style={{ fontSize: '1.1rem', color: '#94a3b8', lineHeight: 1.7 }}>All CSV parsing and Excel generation is isolated in your local memory.</p>
+            <h3 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: 16, color: 'white' }}>{section.subTitle || 'Zero Cloud Access'}</h3>
+            <p style={{ fontSize: '1.1rem', color: '#94a3b8', lineHeight: 1.7 }}>{section.subContent || 'All CSV parsing and Excel generation is isolated in your local memory.'}</p>
          </div>
       </div>
     </div>

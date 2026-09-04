@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "ocr_geo_targeting",
       "title": "귀하의 익명성을 보호하세요",
       "content": "내부 고발자, 언론인 및 일반 사용자가 디지털 신원을 유출하지 않고 문서를 공유할 수 있도록 보장합니다.",
       "subTitle": "완전한 개인정보 보호",
       "subContent": "디지털 발자국이 전혀 남지 않습니다."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "reverse_privacy_security",
       "title": "군용 위생 처리",
       "content": "메타데이터가 영구적으로 삭제되도록 브라우저에서 로컬로 PDF 바이너리 구조를 다시 작성합니다."
     },
     {
-      "type": "lt_performance",
+      "type": "redact_performance",
       "title": "인스턴트 메타데이터 지우개",
       "content": "고도로 최적화된 WebAssembly 코어를 사용하여 1초 이내에 수천 페이지를 스크러빙합니다.",
       "badgeText": "웹어셈블리 코어"

@@ -43,7 +43,7 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Meilleur convertisseur PDF N&B",
       "content": "Convertissez le texte, les images et les arrière-plans colorés en nuances de gris sans perdre en lisibilité.",
       "subTitle": "Haute fidélité",
@@ -51,12 +51,12 @@
       "badgeText": "Impressions parfaites"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "Conversion privée en niveaux de gris",
       "content": "Vos documents sont convertis dans la mémoire de votre propre appareil. Nous ne voyons jamais vos fichiers."
     },
     {
-      "type": "lt_performance",
+      "type": "excel_csv_performance",
       "title": "Traitement ultra-rapide",
       "content": "Comme nous ne téléchargeons pas votre fichier sur un serveur cloud, la conversion des niveaux de gris se produit presque instantanément.",
       "badgeText": "Zéro latence"

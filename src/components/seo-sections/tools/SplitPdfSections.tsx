@@ -93,8 +93,8 @@ export const SplitPrivacySection: React.FC<SectionProps> = ({ section, badges, s
       <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'flex-start' }}>
          <div style={{ width: '100%', maxWidth: 400, padding: 40, borderRadius: 32, background: 'var(--bg-card)', border: '1px solid var(--border-color)', boxShadow: '0 20px 50px rgba(0,0,0,0.03)' }} className="hover-lift">
             <Shield size={64} color="var(--brand-primary)" style={{ marginBottom: 32 }} />
-            <h3 style={{ fontSize: 'clamp(1.25rem, 3vw, 1.5rem)', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)' }}>Offline Splitting</h3>
-            <p style={{ fontSize: 'clamp(1.05rem, 2vw, 1.25rem)', color: 'var(--text-muted)', lineHeight: 1.7 }}>Files never touch external servers. Pages are extracted directly within your browser memory.</p>
+            <h3 style={{ fontSize: 'clamp(1.25rem, 3vw, 1.5rem)', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)' }}>{section.subTitle || 'Offline Splitting'}</h3>
+            <p style={{ fontSize: 'clamp(1.05rem, 2vw, 1.25rem)', color: 'var(--text-muted)', lineHeight: 1.7 }}>{section.subContent || 'Files never touch external servers. Pages are extracted directly within your browser memory.'}</p>
          </div>
       </div>
       <div style={{ flex: '1 1 500px' }}>

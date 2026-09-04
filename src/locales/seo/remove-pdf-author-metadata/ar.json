@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "ocr_geo_targeting",
       "title": "حماية عدم الكشف عن هويتك",
       "content": "تأكد من أن المبلغين عن المخالفات والصحفيين والمستخدمين العاديين يمكنهم مشاركة المستندات دون تسريب هويتهم الرقمية.",
       "subTitle": "الخصوصية الكاملة",
       "subContent": "لم يتم ترك أي آثار رقمية وراءنا."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "reverse_privacy_security",
       "title": "التعقيم من الدرجة العسكرية",
       "content": "نقوم بإعادة كتابة بنية PDF الثنائية محليًا في متصفحك لضمان تدمير البيانات الوصفية بشكل دائم."
     },
     {
-      "type": "lt_performance",
+      "type": "redact_performance",
       "title": "ممحاة البيانات الوصفية الفورية",
       "content": "قم بمسح آلاف الصفحات في أقل من ثانية باستخدام WebAssembly المحسّن للغاية.",
       "badgeText": "WebAssembly الأساسية"

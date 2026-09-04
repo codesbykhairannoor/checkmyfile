@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "ocr_geo_targeting",
       "title": "Bescherm uw anonimiteit",
       "content": "Zorg ervoor dat klokkenluiders, journalisten en gewone gebruikers documenten kunnen delen zonder hun digitale identiteit te lekken.",
       "subTitle": "Totale privacy",
       "subContent": "Geen digitale voetafdrukken achtergelaten."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "reverse_privacy_security",
       "title": "Sanering van militaire kwaliteit",
       "content": "We herschrijven de binaire PDF-structuur lokaal in uw browser om ervoor te zorgen dat de metagegevens permanent worden vernietigd."
     },
     {
-      "type": "lt_performance",
+      "type": "redact_performance",
       "title": "Directe metadata-gum",
       "content": "Scrub duizenden pagina's in minder dan een seconde met behulp van onze sterk geoptimaliseerde WebAssembly-kern.",
       "badgeText": "WebAssembly-kern"

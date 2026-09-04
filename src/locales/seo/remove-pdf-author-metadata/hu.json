@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "ocr_geo_targeting",
       "title": "Védje névtelenségét",
       "content": "Gondoskodjon arról, hogy a visszaélést bejelentő személyek, újságírók és hétköznapi felhasználók megoszthassanak dokumentumokat anélkül, hogy kiszivárogtatnák digitális személyazonosságukat.",
       "subTitle": "Teljes adatvédelem",
       "subContent": "Nulla digitális lábnyom maradt hátra."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "reverse_privacy_security",
       "title": "Katonai fokozatú fertőtlenítés",
       "content": "A PDF bináris szerkezetét helyileg átírjuk a böngészőben, hogy biztosítsuk a metaadatok végleges megsemmisülését."
     },
     {
-      "type": "lt_performance",
+      "type": "redact_performance",
       "title": "Azonnali metaadat-radír",
       "content": "A rendkívül optimalizált WebAssembly mag segítségével kevesebb mint egy másodperc alatt lapozhat át több ezer oldalt.",
       "badgeText": "WebAssembly Core"

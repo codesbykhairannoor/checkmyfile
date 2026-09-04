@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "excel_geo_targeting",
       "title": "Täydellinen sopimuksiin ja todisteisiin",
       "content": "Lakimiehet ja suunnittelijat käyttävät visuaalista erotustyökaluamme varmistaakseen, ettei asiakirjaan ole tehty luvattomia muutoksia.",
       "badgeText": "Lakivalmius"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "Luottamuksellisten asiakirjojen vertailu",
       "content": "Vertailetko arkaluonteisia NDA-sopimuksia? Työkalumme on 100 % paikallinen. Asiakirjat eivät koskaan kosketa palvelimiamme.",
       "badgeText": "Nolla latausta"
     },
     {
-      "type": "lt_performance",
+      "type": "performance",
       "title": "Reaaliaikainen erotusrenderöinti",
       "content": "Luo visuaalisia eroja välittömästi selaimessasi laitteistokiihdytetyn kanvas-renderöinnin ansiosta.",
       "badgeText": "GPU kiihdytetty"

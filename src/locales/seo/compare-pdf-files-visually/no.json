@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "excel_geo_targeting",
       "title": "Perfekt for kontrakter og bevis",
       "content": "Advokater og designere bruker vårt visuelle diff-verktøy for å sikre at ingen uautoriserte endringer ble sneket inn i et dokument.",
       "badgeText": "Juridisk klar"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "Konfidensiell dokumentsammenligning",
       "content": "Sammenligne sensitive NDA-kontrakter? Verktøyet vårt er 100 % lokalt. Dokumentene berører aldri serverne våre.",
       "badgeText": "Null opplastinger"
     },
     {
-      "type": "lt_performance",
+      "type": "performance",
       "title": "Diff-gjengivelse i sanntid",
       "content": "Generer visuelle forskjeller umiddelbart i nettleseren din takket være maskinvareakselerert lerretsgjengivelse.",
       "badgeText": "GPU akselerert"

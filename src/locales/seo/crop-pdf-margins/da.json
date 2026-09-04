@@ -43,20 +43,20 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Sikker fjernelse af margen",
       "content": "Ingen grund til at uploade dine følsomme PDF-filer bare for at fjerne nogle blanktegn. Vores WebAssembly-motor gør det i din browser.",
       "subTitle": "Nul uploadpolitik",
       "subContent": "Dine filer forlader aldrig din enhed."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "100 % offline beskæring",
       "content": "Dine filer forlader aldrig din computer. Perfekt til fortrolige juridiske eller medicinske dokumenter.",
       "badgeText": "Offline klar"
     },
     {
-      "type": "lt_performance",
+      "type": "unlock_performance",
       "title": "Øjeblikkelig PDF-beskæring",
       "content": "Trim en 500-siders bog på millisekunder uden at vente på serveruploads eller downloads.",
       "badgeText": "Lynhurtigt"

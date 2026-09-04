@@ -43,20 +43,20 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Veilige margeverwijdering",
       "content": "U hoeft uw gevoelige PDF's niet te uploaden om wat witruimte te verwijderen. Onze WebAssembly-engine doet het in uw browser.",
       "subTitle": "Geen uploadbeleid",
       "subContent": "Uw bestanden verlaten nooit uw apparaat."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "100% offline bijsnijden",
       "content": "Uw bestanden verlaten nooit uw computer. Ideaal voor vertrouwelijke juridische of medische documenten.",
       "badgeText": "Offline gereed"
     },
     {
-      "type": "lt_performance",
+      "type": "unlock_performance",
       "title": "Direct PDF-bijsnijden",
       "content": "Snijd een boek van 500 pagina's in milliseconden bij, zonder te wachten op serveruploads of -downloads.",
       "badgeText": "Bliksemsnel"

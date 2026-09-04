@@ -88,7 +88,7 @@ export const TxtToPdfGeoSection: React.FC<SectionProps> = ({ section, badges, st
          <p style={{ fontSize: 'clamp(1.1rem, 2vw, 1.4rem)', color: 'var(--text-muted)', lineHeight: 1.7 }}>{section.content}</p>
        </div>
        <div style={{ padding: 48, background: '#0f172a', borderRadius: 32, display: 'flex', flexDirection: 'column', gap: 24, color: 'white' }}>
-          <h3 style={{ fontSize: '1.6rem', fontWeight: 800, color: 'white' }}>Offline Security</h3>
+          <h3 style={{ fontSize: '1.6rem', fontWeight: 800, color: 'white' }}>{section.subTitle || 'Offline Security'}</h3>
           <ul style={{ display: 'flex', flexDirection: 'column', gap: 16, color: '#94a3b8', fontSize: '1.1rem' }}>
              <li style={{ display: 'flex', gap: 12, alignItems: 'center' }}><ShieldAlert color="var(--brand-primary)" /> Prevent code leaks</li>
              <li style={{ display: 'flex', gap: 12, alignItems: 'center' }}><ShieldAlert color="var(--brand-primary)" /> Safe for API keys / Logs</li>

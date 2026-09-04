@@ -43,7 +43,7 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Melhor conversor de PDF em preto e branco",
       "content": "Converta textos, imagens e planos de fundo coloridos em tons de cinza sem perder a legibilidade.",
       "subTitle": "Alta fidelidade",
@@ -51,12 +51,12 @@
       "badgeText": "Impressões perfeitas"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "Conversão privada em escala de cinza",
       "content": "Seus documentos são convertidos na memória do seu próprio dispositivo. Nunca vemos seus arquivos."
     },
     {
-      "type": "lt_performance",
+      "type": "excel_csv_performance",
       "title": "Processamento extremamente rápido",
       "content": "Como não carregamos seu arquivo em um servidor em nuvem, a conversão da escala de cinza acontece quase instantaneamente.",
       "badgeText": "Latência zero"

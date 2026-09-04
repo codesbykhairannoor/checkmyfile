@@ -40,7 +40,7 @@ export const CropHowToSection: React.FC<SectionProps> = ({ section, badges, stat
             <Target size={14} /> {section.badgeText || 'Quick Guide'}
           </div>
           <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, color: 'var(--text-main)', letterSpacing: '-0.03em', lineHeight: 1.05, marginBottom: 24 }}>{section.title}</h2>
-          <p style={{ fontSize: 'clamp(1.05rem, 2vw, 1.25rem)', color: 'var(--text-muted)', lineHeight: 1.8 }}>Master the crop tool in three simple steps. Trim margins, focus content, and export instantly without ever uploading your file.</p>
+          <p style={{ fontSize: 'clamp(1.05rem, 2vw, 1.25rem)', color: 'var(--text-muted)', lineHeight: 1.8 }}>{section.subContent || 'Master the crop tool in three simple steps. Trim margins, focus content, and export instantly without ever uploading your file.'}</p>
         </div>
       </div>
       
@@ -90,8 +90,8 @@ export const CropPrivacySection: React.FC<SectionProps> = ({ section, badges, st
       <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}>
          <div style={{ width: '100%', maxWidth: 400, padding: 48, borderRadius: 32, background: 'var(--bg-card)', border: '1px solid var(--border-color)', boxShadow: '0 30px 60px rgba(0,0,0,0.05)', position: 'relative', overflow: 'hidden' }} className="hover-lift">
             <Shield size={64} color="var(--brand-primary)" style={{ marginBottom: 32 }} />
-            <h3 style={{ fontSize: 'clamp(1.25rem, 3vw, 1.5rem)', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)' }}>Crop Without Uploads</h3>
-            <p style={{ fontSize: 'clamp(1.05rem, 2vw, 1.25rem)', color: 'var(--text-muted)', lineHeight: 1.7 }}>Extract visual data or trim sensitive margins off a document completely within your browser's private memory.</p>
+            <h3 style={{ fontSize: 'clamp(1.25rem, 3vw, 1.5rem)', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)' }}>{section.subTitle || 'Crop Without Uploads'}</h3>
+            <p style={{ fontSize: 'clamp(1.05rem, 2vw, 1.25rem)', color: 'var(--text-muted)', lineHeight: 1.7 }}>{section.subContent || 'Extract visual data or trim sensitive margins off a document completely within your browser\'s private memory.'}</p>
          </div>
       </div>
       <div style={{ flex: '1 1 500px' }}>

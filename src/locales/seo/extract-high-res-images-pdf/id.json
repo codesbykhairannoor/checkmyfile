@@ -43,18 +43,18 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "metadata_geo_targeting",
       "title": "Alat Ekstraksi Gambar Terbaik",
       "content": "Sempurna untuk desainer, penerbit, dan pelajar yang perlu menggunakan kembali aset berkualitas tinggi yang terkunci di dalam PDF.",
       "badgeText": "Kualitas Pro"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "Ekstraksi Aset Swasta",
       "content": "Kami tidak mencuri gambar Anda. Ekstraksi terjadi sepenuhnya di komputer Anda sendiri."
     },
     {
-      "type": "lt_performance",
+      "type": "reverse_performance",
       "title": "Ekspor Sangat Cepat",
       "content": "Ekstrak ratusan gambar beresolusi tinggi dalam hitungan detik tanpa menunggu unggahan file besar.",
       "badgeText": "Ekstraksi Instan"

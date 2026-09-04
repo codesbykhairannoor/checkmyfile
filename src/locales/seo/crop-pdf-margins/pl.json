@@ -43,20 +43,20 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Bezpieczne usuwanie marginesów",
       "content": "Nie musisz przesyłać poufnych plików PDF, aby usunąć trochę białych znaków. Nasz silnik WebAssembly robi to w Twojej przeglądarce.",
       "subTitle": "Polityka zerowego przesyłania",
       "subContent": "Twoje pliki nigdy nie opuszczają Twojego urządzenia."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "Przycinanie w 100% offline",
       "content": "Twoje pliki nigdy nie opuszczają Twojego komputera. Idealny do poufnych dokumentów prawnych lub medycznych.",
       "badgeText": "Gotowy do pracy w trybie offline"
     },
     {
-      "type": "lt_performance",
+      "type": "unlock_performance",
       "title": "Natychmiastowe przycinanie plików PDF",
       "content": "Przytnij 500-stronicową książkę w ciągu milisekund, bez czekania na przesłanie lub pobranie z serwera.",
       "badgeText": "Błyskawicznie szybki"

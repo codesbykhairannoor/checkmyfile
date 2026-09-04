@@ -43,7 +43,7 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "最高の白黒 PDF コンバーター",
       "content": "読みやすさを損なうことなく、色付きのテキスト、画像、背景をグレーの階調に変換します。",
       "subTitle": "高忠実度",
@@ -51,12 +51,12 @@
       "badgeText": "完璧なプリント"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "プライベートグレースケール変換",
       "content": "ドキュメントは自分のデバイスのメモリ内で変換されます。 私たちがあなたのファイルを見ることはありません。"
     },
     {
-      "type": "lt_performance",
+      "type": "excel_csv_performance",
       "title": "超高速処理",
       "content": "ファイルをクラウド サーバーにアップロードしないため、グレースケール変換はほぼ瞬時に行われます。",
       "badgeText": "ゼロレイテンシー"

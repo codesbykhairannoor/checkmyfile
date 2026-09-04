@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "excel_geo_targeting",
       "title": "Perfekt für Verträge und Nachweise",
       "content": "Anwälte und Designer nutzen unser visuelles Diff-Tool, um sicherzustellen, dass keine unbefugten Änderungen in ein Dokument eingeschleust wurden.",
       "badgeText": "Legal bereit"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "Vergleich vertraulicher Dokumente",
       "content": "Vergleichen Sie sensible NDA-Verträge? Unser Tool ist 100 % lokal. Die Dokumente berühren niemals unsere Server.",
       "badgeText": "Keine Uploads"
     },
     {
-      "type": "lt_performance",
+      "type": "performance",
       "title": "Echtzeit-Diff-Rendering",
       "content": "Generieren Sie dank hardwarebeschleunigtem Canvas-Rendering sofort visuelle Unterschiede in Ihrem Browser.",
       "badgeText": "GPU-beschleunigt"

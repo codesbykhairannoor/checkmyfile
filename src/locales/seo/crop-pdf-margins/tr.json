@@ -43,20 +43,20 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Güvenli Marj Kaldırma",
       "content": "Sadece bazı boşlukları kaldırmak için hassas PDF'lerinizi yüklemenize gerek yok. WebAssembly motorumuz bunu tarayıcınızda yapar.",
       "subTitle": "Sıfır Yükleme Politikası",
       "subContent": "Dosyalarınız asla cihazınızdan ayrılmaz."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "%100 Çevrimdışı Kırpma",
       "content": "Dosyalarınız bilgisayarınızdan asla ayrılmaz. Gizli yasal veya tıbbi belgeler için mükemmeldir.",
       "badgeText": "Çevrimdışı Hazır"
     },
     {
-      "type": "lt_performance",
+      "type": "unlock_performance",
       "title": "Anında PDF Kırpma",
       "content": "Sunucuya yükleme veya indirme yapılmasını beklemeden 500 sayfalık bir kitabı milisaniyeler içinde kırpın.",
       "badgeText": "Yıldırım Hızında"

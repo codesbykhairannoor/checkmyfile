@@ -43,18 +43,18 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "metadata_geo_targeting",
       "title": "Il miglior strumento di estrazione delle immagini",
       "content": "Perfetto per designer, editori e studenti che hanno bisogno di riutilizzare risorse di alta qualità bloccate in un PDF.",
       "badgeText": "Qualità professionale"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "Estrazione di beni privati",
       "content": "Non rubiamo le tue immagini. L'estrazione avviene interamente sul tuo computer."
     },
     {
-      "type": "lt_performance",
+      "type": "reverse_performance",
       "title": "Esportazione incredibilmente veloce",
       "content": "Estrai centinaia di immagini ad alta risoluzione in pochi secondi senza attendere un massiccio caricamento di file.",
       "badgeText": "Estrazione istantanea"

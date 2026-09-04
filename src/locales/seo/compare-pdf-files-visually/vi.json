@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "excel_geo_targeting",
       "title": "Hoàn hảo cho hợp đồng và bằng chứng",
       "content": "Các luật sư và nhà thiết kế sử dụng công cụ tìm khác biệt trực quan của chúng tôi để đảm bảo không có thay đổi trái phép nào được đưa vào tài liệu.",
       "badgeText": "Sẵn sàng về mặt pháp lý"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "So sánh tài liệu mật",
       "content": "So sánh các hợp đồng NDA nhạy cảm? Công cụ của chúng tôi là 100% địa phương. Các tài liệu không bao giờ chạm vào máy chủ của chúng tôi.",
       "badgeText": "Không tải lên"
     },
     {
-      "type": "lt_performance",
+      "type": "performance",
       "title": "Kết xuất khác biệt theo thời gian thực",
       "content": "Tạo sự khác biệt trực quan ngay lập tức trong trình duyệt của bạn nhờ kết xuất canvas được tăng tốc phần cứng.",
       "badgeText": "Tăng tốc GPU"

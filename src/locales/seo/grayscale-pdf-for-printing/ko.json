@@ -43,7 +43,7 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "최고의 흑백 PDF 변환기",
       "content": "가독성을 유지하면서 컬러 텍스트, 이미지, 배경을 회색 음영으로 변환합니다.",
       "subTitle": "높은 충실도",
@@ -51,12 +51,12 @@
       "badgeText": "완벽한 인쇄물"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "비공개 그레이스케일 변환",
       "content": "귀하의 문서는 귀하의 장치 메모리에서 변환됩니다. 우리는 귀하의 파일을 결코 볼 수 없습니다."
     },
     {
-      "type": "lt_performance",
+      "type": "excel_csv_performance",
       "title": "번개처럼 빠른 처리",
       "content": "귀하의 파일을 클라우드 서버에 업로드하지 않기 때문에 그레이스케일 변환이 거의 즉시 이루어집니다.",
       "badgeText": "제로 레이턴시"

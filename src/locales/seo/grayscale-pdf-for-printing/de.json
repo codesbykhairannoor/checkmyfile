@@ -43,7 +43,7 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Bester Schwarzweiß-PDF-Konverter",
       "content": "Wandeln Sie farbigen Text, Bilder und Hintergründe in Grautöne um, ohne die Lesbarkeit zu beeinträchtigen.",
       "subTitle": "Hohe Wiedergabetreue",
@@ -51,12 +51,12 @@
       "badgeText": "Perfekte Drucke"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "Private Graustufenkonvertierung",
       "content": "Ihre Dokumente werden im Speicher Ihres eigenen Geräts konvertiert. Wir sehen Ihre Dateien nie."
     },
     {
-      "type": "lt_performance",
+      "type": "excel_csv_performance",
       "title": "Blitzschnelle Verarbeitung",
       "content": "Da wir Ihre Datei nicht auf einen Cloud-Server hochladen, erfolgt die Graustufenkonvertierung fast sofort.",
       "badgeText": "Keine Latenz"

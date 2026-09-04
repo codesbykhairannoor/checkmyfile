@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "excel_geo_targeting",
       "title": "מושלם עבור חוזים והוכחות",
       "content": "עורכי דין ומעצבים משתמשים בכלי ההבדל החזותי שלנו כדי להבטיח שלא הוכנסו שינויים לא מורשים למסמך.",
       "badgeText": "מוכנה משפטית"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "השוואת מסמכים חסויים",
       "content": "השוואה בין חוזי NDA רגישים? הכלי שלנו הוא 100% מקומי. המסמכים אף פעם לא נוגעים בשרתים שלנו.",
       "badgeText": "אפס העלאות"
     },
     {
-      "type": "lt_performance",
+      "type": "performance",
       "title": "עיבוד הבדל בזמן אמת",
       "content": "צור הבדלים ויזואליים באופן מיידי בדפדפן שלך הודות לעיבוד בד מואץ בחומרה.",
       "badgeText": "GPU מואץ"

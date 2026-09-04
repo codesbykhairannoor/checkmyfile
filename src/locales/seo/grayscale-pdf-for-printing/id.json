@@ -43,7 +43,7 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Konverter PDF B&W Terbaik",
       "content": "Ubah teks, gambar, dan latar belakang berwarna menjadi nuansa abu-abu tanpa kehilangan keterbacaan.",
       "subTitle": "Kesetiaan yang Tinggi",
@@ -51,12 +51,12 @@
       "badgeText": "Cetakan Sempurna"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "Konversi Skala Abu-Abu Pribadi",
       "content": "Dokumen Anda dikonversi ke memori perangkat Anda sendiri. Kami tidak pernah melihat file Anda."
     },
     {
-      "type": "lt_performance",
+      "type": "excel_csv_performance",
       "title": "Pemrosesan Secepat Kilat",
       "content": "Karena kami tidak mengunggah file Anda ke server cloud, konversi skala abu-abu terjadi hampir seketika.",
       "badgeText": "Nol Latensi"

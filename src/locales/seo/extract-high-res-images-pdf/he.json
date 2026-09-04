@@ -43,18 +43,18 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "metadata_geo_targeting",
       "title": "כלי חילוץ התמונה הטוב ביותר",
       "content": "מושלם עבור מעצבים, מוציאים לאור וסטודנטים שצריכים לעשות שימוש חוזר בנכסים באיכות גבוהה הנעולים ב-PDF.",
       "badgeText": "איכות מקצועית"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "מיצוי נכסים פרטיים",
       "content": "אנחנו לא גונבים את התמונות שלך. החילוץ מתרחש כולו במחשב שלך."
     },
     {
-      "type": "lt_performance",
+      "type": "reverse_performance",
       "title": "ייצוא מהיר לוהט",
       "content": "חלץ מאות תמונות ברזולוציה גבוהה בשניות מבלי לחכות להעלאת קובץ מאסיבית.",
       "badgeText": "מיצוי מיידי"

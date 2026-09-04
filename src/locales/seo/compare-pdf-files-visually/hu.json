@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "excel_geo_targeting",
       "title": "Tökéletes szerződésekhez és igazolásokhoz",
       "content": "Az ügyvédek és a tervezők vizuális különbségi eszközünket használják annak biztosítására, hogy a dokumentumba ne kerüljön jogosulatlan módosítás.",
       "badgeText": "Jogi kész"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "Bizalmas dokumentumok összehasonlítása",
       "content": "Az érzékeny NDA-szerződések összehasonlítása? Eszközünk 100%-ban helyi. A dokumentumok soha nem érintik a szervereinket.",
       "badgeText": "Nulla feltöltés"
     },
     {
-      "type": "lt_performance",
+      "type": "performance",
       "title": "Valós idejű Diff Rendering",
       "content": "A hardveres gyorsítású vászonmegjelenítésnek köszönhetően azonnal generálhat vizuális eltéréseket a böngészőben.",
       "badgeText": "GPU gyorsított"

@@ -43,20 +43,20 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Suojattu marginaalin poisto",
       "content": "Sinun ei tarvitse ladata arkaluontoisia PDF-tiedostojasi vain välilyönnin poistamiseksi. WebAssembly-moottorimme tekee sen selaimessasi.",
       "subTitle": "Nolla latauskäytäntö",
       "subContent": "Tiedostosi eivät koskaan poistu laitteestasi."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "100 % offline-rajaus",
       "content": "Tiedostosi eivät koskaan poistu tietokoneeltasi. Täydellinen luottamuksellisille juridisille tai lääketieteellisille asiakirjoille.",
       "badgeText": "Offline valmiina"
     },
     {
-      "type": "lt_performance",
+      "type": "unlock_performance",
       "title": "Välitön PDF-leikkaus",
       "content": "Leikkaa 500-sivuinen kirja millisekunneissa odottamatta palvelimen latauksia tai latauksia.",
       "badgeText": "Salaman nopea"

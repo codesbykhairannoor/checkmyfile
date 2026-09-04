@@ -43,20 +43,20 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "安全保证金去除",
       "content": "无需仅仅为了删除一些空白而上传敏感的 PDF。 我们的 WebAssembly 引擎在您的浏览器中完成此操作。",
       "subTitle": "零上传政策",
       "subContent": "您的文件永远不会离开您的设备。"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "100%离线裁剪",
       "content": "您的文件永远不会离开您的计算机。 非常适合机密法律或医疗文件。",
       "badgeText": "离线就绪"
     },
     {
-      "type": "lt_performance",
+      "type": "unlock_performance",
       "title": "即时 PDF 修剪",
       "content": "在几毫秒内修剪一本 500 页的书，无需等待服务器上传或下载。",
       "badgeText": "快如闪电"

@@ -43,18 +43,18 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "metadata_geo_targeting",
       "title": "Najlepší nástroj na extrakciu obrázkov",
       "content": "Ideálne pre dizajnérov, vydavateľov a študentov, ktorí potrebujú opätovne použiť vysokokvalitné prostriedky uzamknuté v PDF.",
       "badgeText": "Profesionálna kvalita"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "Extrakcia súkromných aktív",
       "content": "Vaše obrázky nekradneme. Extrakcia prebieha výlučne na vašom vlastnom počítači."
     },
     {
-      "type": "lt_performance",
+      "type": "reverse_performance",
       "title": "Bleskovo rýchly export",
       "content": "Extrahujte stovky obrázkov vo vysokom rozlíšení za pár sekúnd bez čakania na masívne nahranie súboru.",
       "badgeText": "Okamžitá extrakcia"

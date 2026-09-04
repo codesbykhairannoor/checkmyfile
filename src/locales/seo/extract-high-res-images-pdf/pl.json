@@ -43,18 +43,18 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "metadata_geo_targeting",
       "title": "Najlepsze narzędzie do ekstrakcji obrazu",
       "content": "Idealny dla projektantów, wydawców i studentów, którzy muszą ponownie wykorzystać wysokiej jakości zasoby zamknięte w pliku PDF.",
       "badgeText": "Profesjonalna jakość"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "Wydobywanie majątku prywatnego",
       "content": "Nie kradniemy Twoich zdjęć. Ekstrakcja odbywa się całkowicie na Twoim komputerze."
     },
     {
-      "type": "lt_performance",
+      "type": "reverse_performance",
       "title": "Niesamowicie szybki eksport",
       "content": "Wyodrębnij setki obrazów o wysokiej rozdzielczości w ciągu kilku sekund, bez czekania na przesłanie ogromnego pliku.",
       "badgeText": "Natychmiastowa ekstrakcja"

@@ -43,20 +43,20 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Sikker fjerning av marger",
       "content": "Du trenger ikke å laste opp sensitive PDF-er bare for å fjerne mellomrom. Vår WebAssembly-motor gjør det i nettleseren din.",
       "subTitle": "Null opplastingspolicy",
       "subContent": "Filene dine forlater aldri enheten."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "100 % frakoblet beskjæring",
       "content": "Filene dine forlater aldri datamaskinen. Perfekt for konfidensielle juridiske eller medisinske dokumenter.",
       "badgeText": "Frakoblet klar"
     },
     {
-      "type": "lt_performance",
+      "type": "unlock_performance",
       "title": "Øyeblikkelig PDF-trimming",
       "content": "Trim en 500-siders bok på millisekunder uten å vente på serveropplastinger eller nedlastinger.",
       "badgeText": "Lynrask"

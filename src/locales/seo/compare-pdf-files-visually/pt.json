@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "excel_geo_targeting",
       "title": "Perfeito para contratos e provas",
       "content": "Advogados e designers usam nossa ferramenta de comparação visual para garantir que nenhuma alteração não autorizada seja introduzida em um documento.",
       "badgeText": "Jurídico Pronto"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "Comparação de documentos confidenciais",
       "content": "Comparando contratos NDA sensíveis? Nossa ferramenta é 100% local. Os documentos nunca chegam aos nossos servidores.",
       "badgeText": "Nenhum upload"
     },
     {
-      "type": "lt_performance",
+      "type": "performance",
       "title": "Renderização de diferenças em tempo real",
       "content": "Gere diferenças visuais instantaneamente em seu navegador graças à renderização de tela acelerada por hardware.",
       "badgeText": "GPU acelerado"

@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "excel_geo_targeting",
       "title": "Perfect voor contracten en bewijzen",
       "content": "Advocaten en ontwerpers gebruiken onze visuele diff-tool om ervoor te zorgen dat er geen ongeoorloofde wijzigingen in een document terechtkomen.",
       "badgeText": "Juridisch gereed"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "Vergelijking van vertrouwelijke documenten",
       "content": "Gevoelige NDA-contracten vergelijken? Onze tool is 100% lokaal. De documenten raken nooit onze servers.",
       "badgeText": "Geen uploads"
     },
     {
-      "type": "lt_performance",
+      "type": "performance",
       "title": "Realtime diff-weergave",
       "content": "Genereer direct visuele verschillen in uw browser dankzij hardwareversnelde canvasweergave.",
       "badgeText": "GPU versneld"

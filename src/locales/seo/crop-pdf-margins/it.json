@@ -43,20 +43,20 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Rimozione sicura del margine",
       "content": "Non è necessario caricare i tuoi PDF sensibili solo per rimuovere alcuni spazi bianchi. Il nostro motore WebAssembly lo fa nel tuo browser.",
       "subTitle": "Politica di caricamento zero",
       "subContent": "I tuoi file non lasciano mai il tuo dispositivo."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "Ritaglio offline al 100%.",
       "content": "I tuoi file non lasciano mai il tuo computer. Perfetto per documenti legali o medici riservati.",
       "badgeText": "Pronto offline"
     },
     {
-      "type": "lt_performance",
+      "type": "unlock_performance",
       "title": "Ritaglio PDF istantaneo",
       "content": "Ritaglia un libro di 500 pagine in millisecondi senza attendere caricamenti o download sul server.",
       "badgeText": "Fulmineo"

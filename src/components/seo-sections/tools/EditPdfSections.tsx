@@ -65,8 +65,8 @@ export const EditGeoSection: React.FC<SectionProps> = ({ section, badges, stats,
       <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}>
          <div style={{ width: '100%', maxWidth: 400, padding: 48, borderRadius: 32, background: 'var(--bg-app)', border: '1px solid var(--border-color)', position: 'relative' }} className="hover-lift">
             <TextCursorInput size={48} color="var(--brand-primary)" style={{ marginBottom: 24 }} />
-            <h3 style={{ fontSize: 'clamp(1.25rem, 3vw, 1.5rem)', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)' }}>Annotate Securely</h3>
-            <p style={{ fontSize: 'clamp(1.05rem, 2vw, 1.25rem)', color: 'var(--text-muted)', lineHeight: 1.7 }}>Type, draw, and place images onto your sensitive PDF documents without ever uploading them.</p>
+            <h3 style={{ fontSize: 'clamp(1.25rem, 3vw, 1.5rem)', fontWeight: 800, marginBottom: 16, color: 'var(--text-main)' }}>{section.subTitle || 'Annotate Securely'}</h3>
+            <p style={{ fontSize: 'clamp(1.05rem, 2vw, 1.25rem)', color: 'var(--text-muted)', lineHeight: 1.7 }}>{section.subContent || 'Type, draw, and place images onto your sensitive PDF documents without ever uploading them.'}</p>
          </div>
       </div>
       <div style={{ flex: '1 1 500px' }}>

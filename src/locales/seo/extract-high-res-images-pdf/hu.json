@@ -43,18 +43,18 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "metadata_geo_targeting",
       "title": "A legjobb képkivonó eszköz",
       "content": "Tökéletes azoknak a tervezőknek, kiadóknak és diákoknak, akiknek újra fel kell használniuk a PDF-be zárt kiváló minőségű eszközöket.",
       "badgeText": "Pro minőség"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "Magánvagyon kitermelése",
       "content": "Nem lopjuk el a képeidet. A kivonás teljes egészében a saját számítógépén történik."
     },
     {
-      "type": "lt_performance",
+      "type": "reverse_performance",
       "title": "Lángoló gyors export",
       "content": "Csomagoljon ki több száz nagy felbontású képet másodpercek alatt anélkül, hogy megvárná a hatalmas fájlfeltöltést.",
       "badgeText": "Azonnali kivonás"

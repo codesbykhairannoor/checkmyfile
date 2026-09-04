@@ -43,7 +43,7 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Najlepší čiernobiely prevodník PDF",
       "content": "Preveďte farebný text, obrázky a pozadia na odtiene sivej bez straty čitateľnosti.",
       "subTitle": "Vysoká vernosť",
@@ -51,12 +51,12 @@
       "badgeText": "Perfektné výtlačky"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "Súkromná konverzia odtieňov sivej",
       "content": "Vaše dokumenty sa skonvertujú do pamäte vášho vlastného zariadenia. Nikdy nevidíme vaše súbory."
     },
     {
-      "type": "lt_performance",
+      "type": "excel_csv_performance",
       "title": "Bleskové spracovanie",
       "content": "Keďže váš súbor nenahrávame na cloudový server, konverzia v odtieňoch sivej prebehne takmer okamžite.",
       "badgeText": "Nulová latencia"

@@ -43,20 +43,20 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Remoção segura de margem",
       "content": "Não há necessidade de fazer upload de seus PDFs confidenciais apenas para remover alguns espaços em branco. Nosso mecanismo WebAssembly faz isso no seu navegador.",
       "subTitle": "Política de upload zero",
       "subContent": "Seus arquivos nunca saem do seu dispositivo."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "Corte 100% offline",
       "content": "Seus arquivos nunca saem do seu computador. Perfeito para documentos legais ou médicos confidenciais.",
       "badgeText": "Pronto para uso off-line"
     },
     {
-      "type": "lt_performance",
+      "type": "unlock_performance",
       "title": "Corte instantâneo de PDF",
       "content": "Corte um livro de 500 páginas em milissegundos, sem esperar uploads ou downloads do servidor.",
       "badgeText": "Rápido como um raio"

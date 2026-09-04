@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "excel_geo_targeting",
       "title": "契約書や証明に最適",
       "content": "弁護士やデザイナーは、視覚的な差分ツールを使用して、文書に不正な変更が忍び込まれていないことを確認しています。",
       "badgeText": "法的対応"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "機密文書の比較",
       "content": "機密性の高い NDA 契約を比較しますか? 私たちのツールは100%ローカルです。 文書が当社のサーバーにアクセスされることはありません。",
       "badgeText": "ゼロアップロード"
     },
     {
-      "type": "lt_performance",
+      "type": "performance",
       "title": "リアルタイム差分レンダリング",
       "content": "ハードウェア アクセラレーションによるキャンバス レンダリングにより、ブラウザ内で視覚的な差分が即座に生成されます。",
       "badgeText": "GPUアクセラレーション"

@@ -43,7 +43,7 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Best B&W PDF Converter",
       "content": "Convert colored text, images, and backgrounds to shades of gray without losing readability.",
       "subTitle": "High Fidelity",
@@ -51,12 +51,12 @@
       "badgeText": "Perfect Prints"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "Private Grayscale Conversion",
       "content": "Your documents are converted in your own device's memory. We never see your files."
     },
     {
-      "type": "lt_performance",
+      "type": "excel_csv_performance",
       "title": "Lightning Fast Processing",
       "content": "Because we don't upload your file to a cloud server, the grayscale conversion happens almost instantly.",
       "badgeText": "Zero Latency"

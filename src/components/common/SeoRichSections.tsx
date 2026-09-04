@@ -122,9 +122,10 @@ export const SeoRichSections: React.FC<SeoRichSectionsProps> = ({ data }) => {
   // Neutralize hallucinated geo-targeting claims for older un-translated JSONs
   ordered = ordered.map(s => {
     if (s.type.includes('geo_targeting')) {
-      // If the JSON provides 'supportCenter', it means we have run the translation script
-      // to properly clean up and translate the hallucinated geo strings. So we use the JSON directly!
-      if (data.supportCenter) {
+      // If the JSON provides 'supportCenter' or if it's one of the new long-tail pages,
+      // it means we have properly translated JSONs. So we use the JSON directly!
+      const longTailIds = ['crop-pdf-margins', 'grayscale-pdf-for-printing', 'remove-pdf-author-metadata', 'extract-high-res-images-pdf', 'compare-pdf-files-visually'];
+      if (data.supportCenter || longTailIds.includes((data as any).id) || s.title) {
          return s;
       }
       return {

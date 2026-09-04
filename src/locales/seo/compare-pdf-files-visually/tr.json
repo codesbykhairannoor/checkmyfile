@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "excel_geo_targeting",
       "title": "Sözleşmeler ve Kanıtlar için Mükemmel",
       "content": "Avukatlar ve tasarımcılar, bir belgeye yetkisiz değişiklik yapılmadığından emin olmak için görsel fark aracımızı kullanır.",
       "badgeText": "Yasal Hazır"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "Gizli Belge Karşılaştırması",
       "content": "Hassas NDA sözleşmelerini mi karşılaştırıyorsunuz? Aracımız %100 yerlidir. Belgeler hiçbir zaman sunucularımıza dokunmaz.",
       "badgeText": "Sıfır Yükleme"
     },
     {
-      "type": "lt_performance",
+      "type": "performance",
       "title": "Gerçek Zamanlı Fark Oluşturma",
       "content": "Donanımla hızlandırılmış tuval oluşturma sayesinde tarayıcınızda anında görsel farklılıklar oluşturun.",
       "badgeText": "GPU Hızlandırılmış"

@@ -43,7 +43,7 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "ממיר ה-PDF הטוב ביותר בשחור-לבן",
       "content": "המר טקסט צבעוני, תמונות ורקעים לגוונים של אפור מבלי לאבד קריאות.",
       "subTitle": "אֵיכוּת גבוֹהָה",
@@ -51,12 +51,12 @@
       "badgeText": "הדפסים מושלמים"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "המרת גווני אפור פרטית",
       "content": "המסמכים שלך מומרים בזיכרון של המכשיר שלך. אנחנו אף פעם לא רואים את הקבצים שלך."
     },
     {
-      "type": "lt_performance",
+      "type": "excel_csv_performance",
       "title": "עיבוד מהיר ברק",
       "content": "מכיוון שאנו לא מעלים את הקובץ שלך לשרת ענן, ההמרה בגווני אפור מתרחשת כמעט באופן מיידי.",
       "badgeText": "אפס חביון"

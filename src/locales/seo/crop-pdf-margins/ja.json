@@ -43,20 +43,20 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "安全なマージン除去",
       "content": "空白を削除するためだけに機密性の高い PDF をアップロードする必要はありません。 当社の WebAssembly エンジンはブラウザ内でそれを実行します。",
       "subTitle": "ゼロアップロードポリシー",
       "subContent": "ファイルがデバイスの外に出ることはありません。"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "100%オフラインクロップ",
       "content": "ファイルがコンピュータから離れることはありません。 機密の法律文書や医療文書に最適です。",
       "badgeText": "オフライン対応"
     },
     {
-      "type": "lt_performance",
+      "type": "unlock_performance",
       "title": "インスタントPDFトリミング",
       "content": "サーバーのアップロードやダウンロードを待たずに、500 ページの本を数ミリ秒でトリミングします。",
       "badgeText": "電光石火の速さ"

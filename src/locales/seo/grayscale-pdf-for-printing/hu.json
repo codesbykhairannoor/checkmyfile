@@ -43,7 +43,7 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "A legjobb fekete-fehér PDF konverter",
       "content": "A színes szövegeket, képeket és háttereket a szürke árnyalataivá alakíthatja az olvashatóság elvesztése nélkül.",
       "subTitle": "High Fidelity",
@@ -51,12 +51,12 @@
       "badgeText": "Tökéletes nyomatok"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "Privát szürkeárnyalatos átalakítás",
       "content": "A dokumentumokat a rendszer a saját készülék memóriájába konvertálja. Soha nem látjuk a fájljait."
     },
     {
-      "type": "lt_performance",
+      "type": "excel_csv_performance",
       "title": "Villámgyors feldolgozás",
       "content": "Mivel nem töltjük fel a fájlt felhőkiszolgálóra, a szürkeárnyalatos átalakítás szinte azonnal megtörténik.",
       "badgeText": "Nulla késleltetés"

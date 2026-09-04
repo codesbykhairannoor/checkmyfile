@@ -43,7 +43,7 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Penukar PDF B&W Terbaik",
       "content": "Tukar teks berwarna, imej dan latar belakang kepada warna kelabu tanpa kehilangan kebolehbacaan.",
       "subTitle": "Kesetiaan Tinggi",
@@ -51,12 +51,12 @@
       "badgeText": "Cetakan Sempurna"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "Penukaran Skala Kelabu Persendirian",
       "content": "Dokumen anda ditukar dalam memori peranti anda sendiri. Kami tidak pernah melihat fail anda."
     },
     {
-      "type": "lt_performance",
+      "type": "excel_csv_performance",
       "title": "Pemprosesan Sepantas Kilat",
       "content": "Oleh kerana kami tidak memuat naik fail anda ke pelayan awan, penukaran skala kelabu berlaku hampir serta-merta.",
       "badgeText": "Kependaman Sifar"

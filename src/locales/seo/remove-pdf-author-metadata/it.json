@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "ocr_geo_targeting",
       "title": "Proteggi il tuo anonimato",
       "content": "Garantisci che informatori, giornalisti e utenti comuni possano condividere documenti senza divulgare la propria identità digitale.",
       "subTitle": "Privacy totale",
       "subContent": "Zero impronte digitali lasciate indietro."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "reverse_privacy_security",
       "title": "Sanificazione di livello militare",
       "content": "Riscriviamo la struttura binaria del PDF localmente nel tuo browser per garantire che i metadati vengano distrutti in modo permanente."
     },
     {
-      "type": "lt_performance",
+      "type": "redact_performance",
       "title": "Cancellazione istantanea dei metadati",
       "content": "Pulisci migliaia di pagine in meno di un secondo utilizzando il nostro core WebAssembly altamente ottimizzato.",
       "badgeText": "Nucleo dell'assembly Web"

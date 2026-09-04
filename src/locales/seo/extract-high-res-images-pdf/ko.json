@@ -43,18 +43,18 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "metadata_geo_targeting",
       "title": "최고의 이미지 추출 도구",
       "content": "PDF 내에 잠겨 있는 고품질 자산을 재사용해야 하는 디자이너, 출판사 및 학생에게 적합합니다.",
       "badgeText": "프로 품질"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "개인 자산 추출",
       "content": "우리는 귀하의 이미지를 훔치지 않습니다. 추출은 전적으로 귀하의 컴퓨터에서 이루어집니다."
     },
     {
-      "type": "lt_performance",
+      "type": "reverse_performance",
       "title": "엄청나게 빠른 내보내기",
       "content": "대용량 파일 업로드를 기다리지 않고 몇 초 만에 수백 개의 고해상도 이미지를 추출할 수 있습니다.",
       "badgeText": "즉시 추출"

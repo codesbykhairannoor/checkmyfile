@@ -79,7 +79,7 @@ export const ExcelToPdfGeoSection: React.FC<SectionProps> = ({ section, badges, 
          <p style={{ fontSize: 'clamp(1.1rem, 2vw, 1.4rem)', color: 'var(--text-muted)', lineHeight: 1.7 }}>{section.content}</p>
        </div>
        <div style={{ padding: 48, background: 'var(--bg-card)', borderRadius: 32, border: '2px solid var(--border-color)', display: 'flex', flexDirection: 'column', gap: 24 }}>
-          <h3 style={{ fontSize: '1.6rem', fontWeight: 800, color: 'var(--text-main)' }}>Business Trusted</h3>
+          <h3 style={{ fontSize: '1.6rem', fontWeight: 800, color: 'var(--text-main)' }}>{section.subTitle || 'Business Trusted'}</h3>
           <ul style={{ display: 'flex', flexDirection: 'column', gap: 16, color: 'var(--text-muted)', fontSize: '1.1rem' }}>
              <li style={{ display: 'flex', gap: 12, alignItems: 'center' }}><ShieldCheck color="#10b981" /> No data collection</li>
              <li style={{ display: 'flex', gap: 12, alignItems: 'center' }}><ShieldCheck color="#10b981" /> Runs without internet</li>

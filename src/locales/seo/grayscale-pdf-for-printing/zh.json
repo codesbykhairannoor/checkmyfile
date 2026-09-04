@@ -43,7 +43,7 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "最佳黑白 PDF 转换器",
       "content": "将彩色文本、图像和背景转换为灰色阴影，而不会失去可读性。",
       "subTitle": "高保真度",
@@ -51,12 +51,12 @@
       "badgeText": "完美印花"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "私有灰度转换",
       "content": "您的文档将在您自己的设备内存中进行转换。 我们永远不会看到您的文件。"
     },
     {
-      "type": "lt_performance",
+      "type": "excel_csv_performance",
       "title": "闪电般的快速处理",
       "content": "由于我们不会将您的文件上传到云服务器，因此灰度转换几乎立即发生。",
       "badgeText": "零延迟"

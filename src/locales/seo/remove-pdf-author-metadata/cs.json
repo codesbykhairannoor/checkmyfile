@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "ocr_geo_targeting",
       "title": "Chraňte svou anonymitu",
       "content": "Zajistěte, aby informátoři, novináři a každodenní uživatelé mohli sdílet dokumenty bez úniku své digitální identity.",
       "subTitle": "Úplné soukromí",
       "subContent": "Žádné digitální stopy zanechané."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "reverse_privacy_security",
       "title": "Sanitace na vojenské úrovni",
       "content": "Binární strukturu PDF přepíšeme lokálně ve vašem prohlížeči, abychom zajistili, že metadata budou trvale zničena."
     },
     {
-      "type": "lt_performance",
+      "type": "redact_performance",
       "title": "Okamžitá mazání metadat",
       "content": "Vyčistěte tisíce stránek za méně než sekundu pomocí našeho vysoce optimalizovaného jádra WebAssembly.",
       "badgeText": "WebAssembly Core"

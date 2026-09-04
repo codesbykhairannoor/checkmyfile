@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "ocr_geo_targeting",
       "title": "Schützen Sie Ihre Anonymität",
       "content": "Stellen Sie sicher, dass Whistleblower, Journalisten und alltägliche Benutzer Dokumente teilen können, ohne ihre digitale Identität preiszugeben.",
       "subTitle": "Absolute Privatsphäre",
       "subContent": "Keine digitalen Fußabdrücke hinterlassen."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "reverse_privacy_security",
       "title": "Desinfektion nach Militärstandard",
       "content": "Wir schreiben die PDF-Binärstruktur lokal in Ihrem Browser um, um sicherzustellen, dass die Metadaten dauerhaft zerstört werden."
     },
     {
-      "type": "lt_performance",
+      "type": "redact_performance",
       "title": "Sofortiger Metadaten-Radierer",
       "content": "Bereinigen Sie Tausende von Seiten in weniger als einer Sekunde mit unserem hochoptimierten WebAssembly-Kern.",
       "badgeText": "WebAssembly-Kern"

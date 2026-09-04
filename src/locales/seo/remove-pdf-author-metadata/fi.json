@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "ocr_geo_targeting",
       "title": "Suojaa nimettömyyttäsi",
       "content": "Varmista, että ilmiantajat, toimittajat ja jokapäiväiset käyttäjät voivat jakaa asiakirjoja ilman digitaalista identiteettiään.",
       "subTitle": "Täydellinen yksityisyys",
       "subContent": "Nolla digitaalista jalanjälkeä."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "reverse_privacy_security",
       "title": "Sotilasluokan desinfiointi",
       "content": "Kirjoitamme PDF-binaarirakenteen uudelleen paikallisesti selaimessasi varmistaaksemme, että metatiedot tuhoutuvat pysyvästi."
     },
     {
-      "type": "lt_performance",
+      "type": "redact_performance",
       "title": "Instant Metadata Eraser",
       "content": "Puhdista tuhansia sivuja alle sekunnissa erittäin optimoidun WebAssembly-ytimen avulla.",
       "badgeText": "WebAssembly Core"

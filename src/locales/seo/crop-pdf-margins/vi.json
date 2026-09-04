@@ -43,20 +43,20 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Loại bỏ ký quỹ an toàn",
       "content": "Không cần phải tải lên các tệp PDF nhạy cảm của bạn chỉ để xóa một số khoảng trắng. Công cụ WebAssembly của chúng tôi thực hiện điều đó trong trình duyệt của bạn.",
       "subTitle": "Chính sách tải lên bằng không",
       "subContent": "Các tập tin của bạn không bao giờ rời khỏi thiết bị của bạn."
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "Cắt xén ngoại tuyến 100%",
       "content": "Các tập tin của bạn không bao giờ rời khỏi máy tính của bạn. Hoàn hảo cho các tài liệu pháp lý hoặc y tế bí mật.",
       "badgeText": "Sẵn sàng ngoại tuyến"
     },
     {
-      "type": "lt_performance",
+      "type": "unlock_performance",
       "title": "Cắt PDF tức thì",
       "content": "Cắt bớt một cuốn sách 500 trang trong một phần nghìn giây mà không cần chờ máy chủ tải lên hoặc tải xuống.",
       "badgeText": "Nhanh như chớp"

@@ -43,19 +43,19 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "excel_geo_targeting",
       "title": "Perfecto para contratos y pruebas",
       "content": "Los abogados y diseñadores utilizan nuestra herramienta de diferenciación visual para garantizar que no se introduzcan cambios no autorizados en un documento.",
       "badgeText": "Listo legalmente"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "compare_privacy_security",
       "title": "Comparación de documentos confidenciales",
       "content": "¿Comparando contratos de NDA sensibles? Nuestra herramienta es 100% local. Los documentos nunca tocan nuestros servidores.",
       "badgeText": "Cargas cero"
     },
     {
-      "type": "lt_performance",
+      "type": "performance",
       "title": "Representación diferencial en tiempo real",
       "content": "Genere diferencias visuales instantáneamente en su navegador gracias a la representación del lienzo acelerada por hardware.",
       "badgeText": "GPU acelerada"

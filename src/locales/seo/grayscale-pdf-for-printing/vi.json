@@ -43,7 +43,7 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Trình chuyển đổi PDF đen trắng tốt nhất",
       "content": "Chuyển đổi văn bản, hình ảnh và hình nền có màu thành màu xám mà không làm mất khả năng đọc.",
       "subTitle": "Độ trung thực cao",
@@ -51,12 +51,12 @@
       "badgeText": "Bản in hoàn hảo"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "Chuyển đổi thang độ xám riêng tư",
       "content": "Tài liệu của bạn được chuyển đổi trong bộ nhớ của thiết bị của bạn. Chúng tôi không bao giờ nhìn thấy các tập tin của bạn."
     },
     {
-      "type": "lt_performance",
+      "type": "excel_csv_performance",
       "title": "Xử lý nhanh như chớp",
       "content": "Vì chúng tôi không tải tệp của bạn lên máy chủ đám mây nên quá trình chuyển đổi thang độ xám diễn ra gần như ngay lập tức.",
       "badgeText": "Độ trễ bằng không"

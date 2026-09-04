@@ -76,8 +76,8 @@ export const WatermarkGeoSection: React.FC<SectionProps> = ({ section, badges, s
       <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}>
          <div style={{ width: '100%', maxWidth: 400, padding: 48, borderRadius: 32, background: 'rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.2)', position: 'relative' }} className="hover-lift">
             <ImageIcon size={48} color="white" style={{ marginBottom: 24 }} />
-            <h3 style={{ fontSize: '1.8rem', fontWeight: 800, marginBottom: 16 }}>Logo Support</h3>
-            <p style={{ fontSize: '1.1rem', opacity: 0.9, lineHeight: 1.7 }}>Upload your company PNG and we will stamp it transparently on every page.</p>
+            <h3 style={{ fontSize: '1.8rem', fontWeight: 800, marginBottom: 16 }}>{section.subTitle || 'Logo Support'}</h3>
+            <p style={{ fontSize: '1.1rem', opacity: 0.9, lineHeight: 1.7 }}>{section.subContent || 'Upload your company PNG and we will stamp it transparently on every page.'}</p>
          </div>
       </div>
     </div>

@@ -43,7 +43,7 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Beste B&W PDF Converter",
       "content": "Konverter farget tekst, bilder og bakgrunner til gråtoner uten å miste lesbarheten.",
       "subTitle": "High Fidelity",
@@ -51,12 +51,12 @@
       "badgeText": "Perfekte utskrifter"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "Privat gråtonekonvertering",
       "content": "Dokumentene dine konverteres til din egen enhets minne. Vi ser aldri filene dine."
     },
     {
-      "type": "lt_performance",
+      "type": "excel_csv_performance",
       "title": "Lynrask behandling",
       "content": "Fordi vi ikke laster opp filen din til en skyserver, skjer gråtonekonverteringen nesten umiddelbart.",
       "badgeText": "Null ventetid"

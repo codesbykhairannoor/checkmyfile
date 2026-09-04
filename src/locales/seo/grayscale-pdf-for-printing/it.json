@@ -43,7 +43,7 @@
       ]
     },
     {
-      "type": "lt_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "title": "Il miglior convertitore PDF in bianco e nero",
       "content": "Converti testo, immagini e sfondi colorati in sfumature di grigio senza perdere la leggibilità.",
       "subTitle": "Alta fedeltà",
@@ -51,12 +51,12 @@
       "badgeText": "Stampe perfette"
     },
     {
-      "type": "lt_privacy_security",
+      "type": "txt_privacy_security",
       "title": "Conversione privata in scala di grigi",
       "content": "I tuoi documenti vengono convertiti nella memoria del tuo dispositivo. Non vediamo mai i tuoi file."
     },
     {
-      "type": "lt_performance",
+      "type": "excel_csv_performance",
       "title": "Elaborazione fulminea",
       "content": "Poiché non carichiamo il tuo file su un server cloud, la conversione in scala di grigi avviene quasi istantaneamente.",
       "badgeText": "Latenza zero"
