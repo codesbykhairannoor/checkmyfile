@@ -2,6 +2,8 @@ export interface SeoSectionData {
   type: string;
   title: string;
   content?: string;
+  subTitle?: string;
+  subContent?: string;
   badgeText?: string;
   steps?: { title: string; description: string }[];
 }
