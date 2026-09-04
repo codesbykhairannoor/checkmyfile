@@ -227,7 +227,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
               <div style={{ height: 1, background: 'var(--border-color)', margin: (tUi["0 -16px"] || "0 -16px") }} />
               <SplitPdfEditor splitRange={splitRange} setSplitRange={setSplitRange} onApply={() => handleStartProcessing({ toolId: 'split-pdf' })} tUi={tUi} isProcessing={isProcessing} />
               <div style={{ height: 1, background: 'var(--border-color)', margin: (tUi["0 -16px"] || "0 -16px") }} />
-              {(tool.id === 'crop-pdf' || tool.id === 'crop-pdf-margins') && cropConfig && setCropConfig && (
+              {cropConfig && setCropConfig && (
                 <CropPdfEditor cropConfig={cropConfig} setCropConfig={setCropConfig} onApply={() => handleStartProcessing({ toolId: 'crop-pdf' })} tUi={tUi} isProcessing={isProcessing} />
               )}
               <div style={{ height: 1, background: 'var(--border-color)', margin: (tUi["0 -16px"] || "0 -16px") }} />
