@@ -5,7 +5,8 @@ import { SUPPORTED_LANGUAGES } from '../src/i18n/languages';
 import { TOOLS_CATALOG, getLocalizedSeo } from '../src/catalog/toolsCatalog';
 import { UI_TRANSLATIONS } from '../src/i18n/translations';
 import { GEO_CITATIONS } from '../src/i18n/geoTranslations';
-import { STATIC_SLUGS } from '../src/i18n/staticSlugs';
+import { STATIC_SLUGS, type StaticPageId } from '../src/i18n/staticSlugs';
+import { toolSlugs } from '../src/i18n/slugTranslations';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -38,42 +39,108 @@ const writeFileSafe = (filePath: string, content: string) => {
   generatedCount++;
 };
 
+// Title and Description clean helpers to ensure Ahrefs bounds (<60 chars title, <155 chars description)
+const cleanMetaTitle = (title: string): string => {
+  let t = title.trim();
+  if (t.length > 60) {
+    if (t.includes(' | HandleMyFile')) {
+      const stripped = t.replace(' | HandleMyFile', '').trim();
+      if (stripped.length <= 60) return stripped;
+      return stripped.slice(0, 57).trim() + '...';
+    }
+    return t.slice(0, 57).trim() + '...';
+  }
+  return t;
+};
+
+const cleanMetaDescription = (desc: string): string => {
+  let d = desc.trim();
+  if (d.length > 155) {
+    return d.slice(0, 152).trim() + '...';
+  }
+  return d;
+};
+
+// Helper: Semantic footer with crawlable outgoing internal links
+const buildStaticFooter = (lang: string, isEn: boolean): string => {
+  const homeHref = isEn ? '/' : `/${lang}`;
+  const getStaticHref = (pageKey: StaticPageId) => {
+    const slug = STATIC_SLUGS[lang]?.[pageKey] || STATIC_SLUGS['en']?.[pageKey] || pageKey;
+    return isEn ? `/${slug}` : `/${lang}/${slug}`;
+  };
+
+  return `
+    <footer style="margin-top: 60px; padding-top: 30px; border-top: 1px solid #e2e8f0; font-size: 0.9rem; color: #64748b;">
+      <nav aria-label="Footer Navigation" style="display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;">
+        <a href="${homeHref}" style="color: #2563eb; text-decoration: underline;">Home</a>
+        <a href="${getStaticHref('about')}" style="color: #2563eb; text-decoration: underline;">About</a>
+        <a href="${getStaticHref('privacy')}" style="color: #2563eb; text-decoration: underline;">Privacy Policy</a>
+        <a href="${getStaticHref('terms')}" style="color: #2563eb; text-decoration: underline;">Terms of Service</a>
+        <a href="${getStaticHref('pricing')}" style="color: #2563eb; text-decoration: underline;">Pricing</a>
+        <a href="${getStaticHref('security')}" style="color: #2563eb; text-decoration: underline;">Security</a>
+        <a href="${getStaticHref('use-cases')}" style="color: #2563eb; text-decoration: underline;">Use Cases</a>
+        <a href="${getStaticHref('compare')}" style="color: #2563eb; text-decoration: underline;">Compare</a>
+        <a href="${getStaticHref('languages')}" style="color: #2563eb; text-decoration: underline;">Languages</a>
+      </nav>
+      <p style="margin: 0;">&copy; 2026 HandleMyFile. Private browser-based document processing with WebAssembly.</p>
+    </footer>
+  `;
+};
+
+// Helper: Contextual related tools with crawlable internal links
+const buildRelatedToolsSection = (currentToolId: string, lang: string, isEn: boolean): string => {
+  const otherTools = TOOLS_CATALOG.filter(t => t.id !== currentToolId).slice(0, 6);
+  const toolLinks = otherTools.map(t => {
+    const slug = t.slugs[lang] || t.id;
+    const href = isEn ? `/${slug}` : `/${lang}/${slug}`;
+    const seo = getLocalizedSeo(t, lang);
+    return `<li><a href="${href}" style="color: #2563eb; text-decoration: underline; font-weight: 500;">${seo.h1 || t.id}</a></li>`;
+  }).join('');
+
+  return `
+    <section style="margin-top: 50px; padding-top: 30px; border-top: 1px solid #e2e8f0;">
+      <h2 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 16px;">Related Free Document Tools</h2>
+      <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; list-style: none; padding: 0;">
+        ${toolLinks}
+      </ul>
+    </section>
+  `;
+};
+
 // Generate HTML
 const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: string, pageType: 'tool' | 'home' | 'static', pageId?: string) => {
   let html = baseHtmlContent;
+  const isEn = lang === 'en';
 
-  // Replace lang
+  // Replace lang attribute
   html = html.replace(/<html lang="[^"]*">/i, `<html lang="${lang}">`);
 
-  // Remove existing title/meta to avoid duplicates
+  // Remove existing title/meta/og/twitter tags to avoid duplicates or mismatches
   html = html.replace(/<title>.*?<\/title>/gi, '');
   html = html.replace(/<meta name="description"[^>]*>\n?\s*/gi, '');
   html = html.replace(/<link rel="canonical"[^>]*>\n?\s*/gi, '');
   html = html.replace(/<meta property="og:title"[^>]*>\n?\s*/gi, '');
   html = html.replace(/<meta property="og:description"[^>]*>\n?\s*/gi, '');
+  html = html.replace(/<meta property="og:url"[^>]*>\n?\s*/gi, '');
+  html = html.replace(/<meta property="twitter:title"[^>]*>\n?\s*/gi, '');
+  html = html.replace(/<meta property="twitter:description"[^>]*>\n?\s*/gi, '');
+  html = html.replace(/<meta property="twitter:url"[^>]*>\n?\s*/gi, '');
   html = html.replace(/<link rel="alternate" hreflang="[^"]+" href="[^"]+" \/>\n?\s*/g, '');
   
-  // Inject new tags
-  const titleTag = `<title>${seoTitle}</title>`;
-  const metaDesc = `<meta name="description" content="${seoDesc.replace(/"/g, '&quot;')}" />`;
-  const canonical = `<link rel="canonical" href="${DOMAIN}${urlPath}" />`;
-  const ogTitle = `<meta property="og:title" content="${seoTitle.replace(/"/g, '&quot;')}" />`;
-  const ogDesc = `<meta property="og:description" content="${seoDesc.replace(/"/g, '&quot;')}" />`;
+  const fullUrl = `${DOMAIN}${urlPath}`;
+  const finalTitle = cleanMetaTitle(seoTitle);
+  const finalDesc = cleanMetaDescription(seoDesc);
 
-  // x-default
-  let xDefaultPath = `/en`;
-  if (pageType === 'tool' && pageId) {
-    const toolDef = TOOLS_CATALOG.find(t => t.id === pageId);
-    if (toolDef) {
-      const localSlug = toolDef.slugs['en'] || pageId;
-      xDefaultPath = `/en/${localSlug}`;
-    }
-  } else {
-    const segments = urlPath.split('/').filter(Boolean);
-    if (segments.length > 1) {
-       xDefaultPath = `/en/${segments[1]}`;
-    }
-  }
+  // Inject accurate tags matching canonical URL exactly (eliminates Open Graph mismatches)
+  const titleTag = `<title>${finalTitle}</title>`;
+  const metaDesc = `<meta name="description" content="${finalDesc.replace(/"/g, '&quot;')}" />`;
+  const canonical = `<link rel="canonical" href="${fullUrl}" />`;
+  const ogTitle = `<meta property="og:title" content="${finalTitle.replace(/"/g, '&quot;')}" />`;
+  const ogDesc = `<meta property="og:description" content="${finalDesc.replace(/"/g, '&quot;')}" />`;
+  const ogUrl = `<meta property="og:url" content="${fullUrl}" />`;
+  const twitterTitle = `<meta property="twitter:title" content="${finalTitle.replace(/"/g, '&quot;')}" />`;
+  const twitterDesc = `<meta property="twitter:description" content="${finalDesc.replace(/"/g, '&quot;')}" />`;
+  const twitterUrl = `<meta property="twitter:url" content="${fullUrl}" />`;
 
   const headInjection = `
     ${titleTag}
@@ -81,6 +148,10 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
     ${canonical}
     ${ogTitle}
     ${ogDesc}
+    ${ogUrl}
+    ${twitterTitle}
+    ${twitterDesc}
+    ${twitterUrl}
     <!-- JSON-LD-INJECTION -->
     <style id="anti-fouc">
       #static-seo {
@@ -99,13 +170,12 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
 
   html = html.replace(/(<\/head>)/i, `${headInjection}$1`);
 
-  // --- WHITE HAT SSG STATIC HTML INJECTION ---
+  // --- WHITE HAT SSG STATIC HTML INJECTION WITH RICH CRAWLABLE OUTLINKS ---
   const geo = UI_TRANSLATIONS[lang as keyof typeof UI_TRANSLATIONS] || UI_TRANSLATIONS['en'];
-  
   let staticSeoHtml = '';
 
   if (pageType === 'tool' && pageId) {
-    // 1. Tool Pages (100% Safe Pre-rendering of SeoRichSections)
+    // 1. Tool Pages (100% Safe Pre-rendering of SeoRichSections + Internal Links)
     const exactPath = path.join(__dirname, '..', 'src', 'locales', 'seo', pageId, `${lang}.json`);
     const fallbackPath = path.join(__dirname, '..', 'src', 'locales', 'seo', pageId, `en.json`);
     
@@ -151,8 +221,8 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
           "@type": "WebApplication",
           "@id": `${DOMAIN}${urlPath}/#webapp`,
           "url": `${DOMAIN}${urlPath}`,
-          "name": seoJson.h1 || seoTitle,
-          "description": seoJson.description || seoDesc,
+          "name": seoJson.h1 || finalTitle,
+          "description": seoJson.description || finalDesc,
           "applicationCategory": "UtilitiesApplication",
           "operatingSystem": "All",
           "browserRequirements": "Requires HTML5 and WebAssembly support",
@@ -209,11 +279,15 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
       html = html.replace('<!-- JSON-LD-INJECTION -->', jsonLdScript);
 
       staticSeoHtml = `
-        <main id="static-seo" role="main" style="padding: 40px; font-family: sans-serif; background: #fff; color: #333;">
+        <main id="static-seo" role="main" style="padding: 40px; font-family: sans-serif; background: #fff; color: #333; max-width: 1100px; margin: 0 auto;">
+          <nav aria-label="Breadcrumb" style="margin-bottom: 24px; font-size: 0.95rem;">
+            <a href="${isEn ? '/' : `/${lang}`}" style="color: #2563eb; text-decoration: underline;">Home</a> &gt; 
+            <span>${seoJson.h1 || finalTitle}</span>
+          </nav>
           <article itemscope itemtype="https://schema.org/Article">
             <header>
-              <h1 itemprop="headline">${seoJson.h1 || seoTitle}</h1>
-              <p itemprop="description">${seoJson.description || seoDesc}</p>
+              <h1 itemprop="headline">${seoJson.h1 || finalTitle}</h1>
+              <p itemprop="description">${seoJson.description || finalDesc}</p>
             </header>
             ${sectionsHtml}
             ${faqsHtml ? `
@@ -222,19 +296,21 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
                 ${faqsHtml}
               </section>
             ` : ''}
+            ${buildRelatedToolsSection(pageId, lang, isEn)}
           </article>
+          ${buildStaticFooter(lang, isEn)}
         </main>
       `;
     }
   } else if (pageType === 'home') {
-    // 2. Home Page (100% Safe Pre-rendering of HomeSections)
+    // 2. Home Page (100% Safe Pre-rendering of HomeSections + Links to Featured Tools)
     const schemaGraph: any[] = [
       {
         "@type": "WebApplication",
         "@id": `${DOMAIN}${urlPath}/#webapp`,
         "url": `${DOMAIN}${urlPath}`,
-        "name": seoTitle,
-        "description": seoDesc,
+        "name": finalTitle,
+        "description": finalDesc,
         "applicationCategory": "UtilitiesApplication",
         "operatingSystem": "All",
         "browserRequirements": "Requires HTML5 and WebAssembly support",
@@ -261,16 +337,28 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
     const geoText = GEO_CITATIONS[lang] || GEO_CITATIONS['en'];
 
     staticSeoHtml = `
-      <main id="static-seo" role="main" style="padding: 40px; font-family: sans-serif; background: #fff; color: #333;">
+      <main id="static-seo" role="main" style="padding: 40px; font-family: sans-serif; background: #fff; color: #333; max-width: 1100px; margin: 0 auto;">
         <article itemscope itemtype="https://schema.org/Article">
           <header>
-            <h1 itemprop="headline">${seoTitle}</h1>
-            <p itemprop="description">${seoDesc}</p>
+            <h1 itemprop="headline">${finalTitle}</h1>
+            <p itemprop="description">${finalDesc}</p>
           </header>
           
           <div style="margin-top: 20px; padding: 15px; background: #f0fdf4; border-left: 4px solid #16a34a; font-weight: 500; font-size: 0.95rem; line-height: 1.5;">
             ${geoText}
           </div>
+
+          <section style="margin-top: 48px; padding-top: 30px; border-top: 1px solid #e2e8f0;">
+            <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 16px;">Popular Free Online Document Tools</h2>
+            <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; list-style: none; padding: 0;">
+              ${TOOLS_CATALOG.slice(0, 10).map(t => {
+                const slug = t.slugs[lang] || t.id;
+                const href = isEn ? `/${slug}` : `/${lang}/${slug}`;
+                const seo = getLocalizedSeo(t, lang);
+                return `<li><a href="${href}" style="color: #2563eb; text-decoration: underline; font-weight: 500;">${seo.h1 || t.id}</a></li>`;
+              }).join('')}
+            </ul>
+          </section>
 
           <section style="margin-top: 40px;">
             <h2>${geo.homeGeoDefTitle}</h2>
@@ -319,37 +407,36 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
             </div>
           </section>
         </article>
+        ${buildStaticFooter(lang, isEn)}
       </main>
     `;
   } else if (pageType === 'static' && pageId) {
-    // 3. Static Pages Content Injection
+    // 3. Static Pages Content Injection with Breadcrumb and Footer
     let pageHtml = '';
     if (pageId === 'about') {
       pageHtml = `
-        <header><h1 itemprop="headline">${geo.pageAboutHero || seoTitle}</h1><p itemprop="description">${geo.pageAboutSub || seoDesc}</p></header>
+        <header><h1 itemprop="headline">${geo.pageAboutHero || finalTitle}</h1><p itemprop="description">${geo.pageAboutSub || finalDesc}</p></header>
         <section><h2>${geo.pageAboutSec1Title || 'The Origin Story'}</h2><p>${geo.pageAboutSec1Desc}</p></section>
-        <section><h2>${geo.pageAboutSec2Title || 'Technology Stack'}</h2><p>${geo.pageAboutSec2Desc}</p></section>
-        <section><h2>${geo.pageAboutSec3Title || 'Our Guarantee'}</h2><p>${geo.pageAboutSec3Desc}</p></section>
+        <section><h2>${geo.pageAboutSec2Title || 'Our Philosophy'}</h2><p>${geo.pageAboutSec2Desc}</p></section>
+        <section><h2>${geo.pageAboutSec3Title || 'Zero-Cloud Processing'}</h2><p>${geo.pageAboutSec3Desc}</p></section>
       `;
     } else if (pageId === 'privacy') {
       pageHtml = `
-        <header><h1 itemprop="headline">${geo.pagePrivacyHero || seoTitle}</h1><p itemprop="description">${geo.pagePrivacySub || seoDesc}</p></header>
-        <section><h2>${geo.pagePrivacySec1Title || 'Zero Data Storage'}</h2><p>${geo.pagePrivacySec1Desc}</p></section>
-        <section><h2>${geo.pagePrivacySec2Title || 'Local Browser Processing'}</h2><p>${geo.pagePrivacySec2Desc}</p></section>
-        <section><h2>${geo.pagePrivacySec3Title || 'No Tracking or Telemetry'}</h2><p>${geo.pagePrivacySec3Desc}</p></section>
-        <section><h2>${geo.pagePrivacySec4Title || 'GDPR & CCPA Compliant'}</h2><p>${geo.pagePrivacySec4Desc}</p></section>
+        <header><h1 itemprop="headline">${geo.pagePrivacyHero || finalTitle}</h1><p itemprop="description">${geo.pagePrivacySub || finalDesc}</p></header>
+        <section><h2>${geo.pagePrivacySec1Title || 'Zero Upload Architecture'}</h2><p>${geo.pagePrivacySec1Desc}</p></section>
+        <section><h2>${geo.pagePrivacySec2Title || 'Local Processing Guarantee'}</h2><p>${geo.pagePrivacySec2Desc}</p></section>
+        <section><h2>${geo.pagePrivacySec3Title || 'Analytics & Cookies'}</h2><p>${geo.pagePrivacySec3Desc}</p></section>
       `;
     } else if (pageId === 'terms') {
       pageHtml = `
-        <header><h1 itemprop="headline">${geo.pageTosHero || seoTitle}</h1><p itemprop="description">${geo.pageTosSub || seoDesc}</p></header>
-        <section><h2>${geo.pageTosSec1Title || 'Acceptable Use'}</h2><p>${geo.pageTosSec1Desc}</p></section>
-        <section><h2>${geo.pageTosSec2Title || 'Intellectual Property'}</h2><p>${geo.pageTosSec2Desc}</p></section>
-        <section><h2>${geo.pageTosSec3Title || 'Service Modifications'}</h2><p>${geo.pageTosSec3Desc}</p></section>
-        <section><h2>${geo.pageTosSec4Title || 'Limitation of Liability'}</h2><p>${geo.pageTosSec4Desc}</p></section>
+        <header><h1 itemprop="headline">${geo.pageTosHero || finalTitle}</h1><p itemprop="description">${geo.pageTosSub || finalDesc}</p></header>
+        <section><h2>${geo.pageTosSec1Title || 'Agreement to Terms'}</h2><p>${geo.pageTosSec1Desc}</p></section>
+        <section><h2>${geo.pageTosSec2Title || 'Permitted Use'}</h2><p>${geo.pageTosSec2Desc}</p></section>
+        <section><h2>${geo.pageTosSec3Title || 'Disclaimer of Warranties'}</h2><p>${geo.pageTosSec3Desc}</p></section>
       `;
     } else if (pageId === 'security') {
       pageHtml = `
-        <header><h1 itemprop="headline">${geo.pageSecurityHero || seoTitle}</h1><p itemprop="description">${geo.pageSecurityHeroSub || seoDesc}</p></header>
+        <header><h1 itemprop="headline">${geo.pageSecurityHero || finalTitle}</h1><p itemprop="description">${geo.pageSecurityHeroSub || finalDesc}</p></header>
         <section><h2>${geo.pageSecuritySec2Title || 'WebAssembly Revolution'}</h2><p>${geo.pageSecuritySec2Desc}</p></section>
         <section><h2>${geo.pageSecuritySec3Title || 'Your Documents Are Blind To Us'}</h2><p>${geo.pageSecuritySec3Desc}</p></section>
         <section><h2>${geo.pageSecuritySec4Title || 'Compliance by Default'}</h2><p>${geo.pageSecuritySec4Desc}</p></section>
@@ -357,14 +444,14 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
       `;
     } else if (pageId === 'pricing') {
       pageHtml = `
-        <header><h1 itemprop="headline">${geo.pagePricingHero || seoTitle}</h1><p itemprop="description">${geo.pagePricingHeroSub || seoDesc}</p></header>
+        <header><h1 itemprop="headline">${geo.pagePricingHero || finalTitle}</h1><p itemprop="description">${geo.pagePricingHeroSub || finalDesc}</p></header>
         <section><h2>${geo.pagePricingSec3Title || 'How is this possible?'}</h2><p>${geo.pagePricingSec3Desc}</p></section>
         <section><h2>${geo.pagePricingSec4Title || 'Sustainable & Transparent'}</h2><p>${geo.pagePricingSec4Desc}</p></section>
         <section><h2>${geo.pagePricingSec5Title || 'Free for Business Use'}</h2><p>${geo.pagePricingSec5Desc}</p></section>
       `;
     } else if (pageId === 'use-cases') {
       pageHtml = `
-        <header><h1 itemprop="headline">${geo.pageUseCasesHero || seoTitle}</h1><p itemprop="description">${geo.pageUseCasesHeroSub || seoDesc}</p></header>
+        <header><h1 itemprop="headline">${geo.pageUseCasesHero || finalTitle}</h1><p itemprop="description">${geo.pageUseCasesHeroSub || finalDesc}</p></header>
         <section><h2>${geo.pageUseCasesSec2Title || 'Legal Teams'}</h2><p>${geo.pageUseCasesSec2Desc}</p></section>
         <section><h2>${geo.pageUseCasesSec3Title || 'HR Professionals'}</h2><p>${geo.pageUseCasesSec3Desc}</p></section>
         <section><h2>${geo.pageUseCasesSec4Title || 'Students'}</h2><p>${geo.pageUseCasesSec4Desc}</p></section>
@@ -373,13 +460,13 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
       `;
     } else if (pageId === 'compare') {
       pageHtml = `
-        <header><h1 itemprop="headline">${geo.pageCompareHero || seoTitle}</h1><p itemprop="description">${geo.pageCompareHeroSub || seoDesc}</p></header>
+        <header><h1 itemprop="headline">${geo.pageCompareHero || finalTitle}</h1><p itemprop="description">${geo.pageCompareHeroSub || finalDesc}</p></header>
         <section><h2>${geo.pageCompareSec3Title || 'Network Speed vs Disk Speed'}</h2><p>${geo.pageCompareSec3Desc}</p></section>
         <section><h2>${geo.pageCompareSec5Title || 'Upload Limits vs Unlimited Processing'}</h2><p>${geo.pageCompareSec5Desc}</p></section>
       `;
     } else if (pageId === 'languages') {
       pageHtml = `
-        <header><h1 itemprop="headline">${geo.pageLangHero || seoTitle}</h1><p itemprop="description">${geo.pageLangHeroSub || seoDesc}</p></header>
+        <header><h1 itemprop="headline">${geo.pageLangHero || finalTitle}</h1><p itemprop="description">${geo.pageLangHeroSub || finalDesc}</p></header>
         <section><h2>${geo.pageLangSec3Title || 'Native Feel'}</h2><p>${geo.pageLangSec3Desc}</p></section>
         <section><h2>${geo.pageLangSec4Title || 'Global Performance'}</h2><p>${geo.pageLangSec4Desc}</p></section>
       `;
@@ -391,8 +478,8 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
         "@type": "WebPage",
         "@id": `${DOMAIN}${urlPath}/#webpage`,
         "url": `${DOMAIN}${urlPath}`,
-        "name": seoTitle,
-        "description": seoDesc
+        "name": finalTitle,
+        "description": finalDesc
       }
     ];
 
@@ -404,10 +491,15 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
     html = html.replace('<!-- JSON-LD-INJECTION -->', jsonLdScript);
 
     staticSeoHtml = `
-      <main id="static-seo" role="main" style="padding: 40px; font-family: sans-serif; background: #fff; color: #333;">
+      <main id="static-seo" role="main" style="padding: 40px; font-family: sans-serif; background: #fff; color: #333; max-width: 1100px; margin: 0 auto;">
+        <nav aria-label="Breadcrumb" style="margin-bottom: 24px; font-size: 0.95rem;">
+          <a href="${isEn ? '/' : `/${lang}`}" style="color: #2563eb; text-decoration: underline;">Home</a> &gt; 
+          <span>${finalTitle}</span>
+        </nav>
         <article itemscope itemtype="https://schema.org/Article">
           ${pageHtml}
         </article>
+        ${buildStaticFooter(lang, isEn)}
       </main>
     `;
   }
@@ -440,7 +532,7 @@ const run = async () => {
     }
 
     // 2. Static Pages
-    const staticPages = ['about', 'privacy', 'terms', 'pricing', 'security', 'use-cases', 'compare', 'languages'];
+    const staticPages: StaticPageId[] = ['about', 'privacy', 'terms', 'pricing', 'security', 'use-cases', 'compare', 'languages'];
     for (const page of staticPages) {
       let pageTitle = `${page.toUpperCase()} | HandleMyFile`;
       let pageDesc = `Read more about HandleMyFile ${page}.`;
@@ -457,7 +549,7 @@ const run = async () => {
         case 'languages': pageTitle = `${t.footerLanguages || 'Supported Languages'} - HandleMyFile`; pageDesc = t.pageLangHeroSub || 'Document utilities should be accessible'; break;
       }
 
-      const localSlug = STATIC_SLUGS[lang]?.[page as keyof typeof STATIC_SLUGS['en']] || STATIC_SLUGS['en'][page as keyof typeof STATIC_SLUGS['en']] || page;
+      const localSlug = STATIC_SLUGS[lang]?.[page] || STATIC_SLUGS['en']?.[page] || page;
 
       // English: no /en/ prefix — serve at root /about, /pricing, etc.
       const urlPath = isEn ? `/${localSlug}` : `/${lang}/${localSlug}`;
@@ -485,7 +577,7 @@ const run = async () => {
     }
   }
 
-  // Generate a root index.html that redirects or acts as x-default
+  // Generate a root index.html that acts as English homepage and x-default
   const rootHtml = generateHtml(
     'en',
     `/`,
@@ -495,6 +587,95 @@ const run = async () => {
   );
   writeFileSafe(path.join(distDir, 'index.html'), rootHtml);
 
+  // 4. Generate Legacy Redirect Alias Pages to prevent any 404 from obsolete slugs
+  let redirectCount = 0;
+  for (const [toolKey, slugMap] of Object.entries(toolSlugs)) {
+    const toolDef = TOOLS_CATALOG.find(t => t.id === toolKey || t.id.startsWith(toolKey) || (toolKey === 'remove-pdf' && t.id === 'remove-pages-pdf'));
+    if (!toolDef) {
+      // Deprecated/commented-out tool: redirect legacy URLs to respective language home
+      for (const lang of LANGS) {
+        const isEn = lang === 'en';
+        const legacySlug = slugMap[lang];
+        if (!legacySlug) continue;
+
+        const targetUrl = isEn ? '/' : `/${lang}`;
+        const legacyOutDir = isEn ? path.join(distDir, legacySlug) : path.join(distDir, lang, legacySlug);
+        const legacyOutFile = path.join(legacyOutDir, 'index.html');
+
+        if (!fs.existsSync(legacyOutFile)) {
+          const redirectHtml = `<!DOCTYPE html>
+<html lang="${lang}">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting to ${DOMAIN}${targetUrl}</title>
+  <link rel="canonical" href="${DOMAIN}${targetUrl}" />
+  <meta http-equiv="refresh" content="0; url=${DOMAIN}${targetUrl}" />
+  <script>window.location.replace("${DOMAIN}${targetUrl}");</script>
+</head>
+<body style="font-family: sans-serif; padding: 40px; text-align: center;">
+  <p>Redirecting to <a href="${DOMAIN}${targetUrl}">${DOMAIN}${targetUrl}</a>...</p>
+</body>
+</html>`;
+          writeFileSafe(legacyOutFile, redirectHtml);
+          redirectCount++;
+        }
+      }
+      continue;
+    }
+
+    for (const lang of LANGS) {
+      const isEn = lang === 'en';
+      const legacySlug = slugMap[lang];
+      if (!legacySlug) continue;
+
+      const currentSlug = toolDef.slugs[lang] || toolDef.id;
+      if (legacySlug !== currentSlug) {
+        const targetUrl = isEn ? `/${currentSlug}` : `/${lang}/${currentSlug}`;
+        const legacyOutDir = isEn ? path.join(distDir, legacySlug) : path.join(distDir, lang, legacySlug);
+        const legacyOutFile = path.join(legacyOutDir, 'index.html');
+
+        if (!fs.existsSync(legacyOutFile)) {
+          const redirectHtml = `<!DOCTYPE html>
+<html lang="${lang}">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting to ${DOMAIN}${targetUrl}</title>
+  <link rel="canonical" href="${DOMAIN}${targetUrl}" />
+  <meta http-equiv="refresh" content="0; url=${DOMAIN}${targetUrl}" />
+  <script>window.location.replace("${DOMAIN}${targetUrl}");</script>
+</head>
+<body style="font-family: sans-serif; padding: 40px; text-align: center;">
+  <p>Redirecting to <a href="${DOMAIN}${targetUrl}">${DOMAIN}${targetUrl}</a>...</p>
+</body>
+</html>`;
+          writeFileSafe(legacyOutFile, redirectHtml);
+          redirectCount++;
+        }
+      }
+    }
+  }
+
+  // Explicit alias for /remove-pages
+  const removePagesLegacyFile = path.join(distDir, 'remove-pages', 'index.html');
+  if (!fs.existsSync(removePagesLegacyFile)) {
+    const removeRedirect = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <link rel="canonical" href="${DOMAIN}/remove-pages-pdf" />
+  <meta http-equiv="refresh" content="0; url=${DOMAIN}/remove-pages-pdf" />
+  <script>window.location.replace("${DOMAIN}/remove-pages-pdf");</script>
+</head>
+<body style="font-family: sans-serif; padding: 40px; text-align: center;">
+  <p>Redirecting to <a href="${DOMAIN}/remove-pages-pdf">${DOMAIN}/remove-pages-pdf</a>...</p>
+</body>
+</html>`;
+    writeFileSafe(removePagesLegacyFile, removeRedirect);
+    redirectCount++;
+  }
+
+  console.log(`Generated ${redirectCount} legacy alias redirects to prevent 404s!`);
   console.log(`Successfully generated ${generatedCount} static HTML files!`);
 };
 

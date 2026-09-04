@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && tsx scripts/generate-seo-html.ts",
+    "build": "tsc -b && vite build && tsx scripts/generate-seo-html.ts && tsx scripts/generate-sitemap.ts",
     "lint": "oxlint",
     "preview": "vite preview"
   },
