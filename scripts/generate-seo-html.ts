@@ -397,59 +397,71 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
     if (pageId === 'about') {
       pageHtml = `
         <header><h1 itemprop="headline">${geo.pageAboutHero || finalTitle}</h1><p itemprop="description">${geo.pageAboutSub || finalDesc}</p></header>
-        <section><h2>${geo.pageAboutSec1Title || 'The Origin Story'}</h2><p>${geo.pageAboutSec1Desc}</p></section>
-        <section><h2>${geo.pageAboutSec2Title || 'Our Philosophy'}</h2><p>${geo.pageAboutSec2Desc}</p></section>
-        <section><h2>${geo.pageAboutSec3Title || 'Zero-Cloud Processing'}</h2><p>${geo.pageAboutSec3Desc}</p></section>
+        <section><h2>${geo.pageAboutSec1Title || 'The Origin Story'}</h2><p>${geo.pageAboutSec1Desc || ''}</p></section>
+        <section><h2>${geo.pageAboutSec2Title || 'Our Philosophy'}</h2><p>${geo.pageAboutSec2Desc || ''}</p></section>
+        <section><h2>${geo.pageAboutSec3Title || 'Zero-Cloud Processing'}</h2><p>${geo.pageAboutSec3Desc || ''}</p></section>
+        ${geo.pageAboutSec4Title ? `<section><h2>${geo.pageAboutSec4Title}</h2><p>${geo.pageAboutSec4Desc || ''}</p></section>` : ''}
       `;
     } else if (pageId === 'privacy') {
       pageHtml = `
         <header><h1 itemprop="headline">${geo.pagePrivacyHero || finalTitle}</h1><p itemprop="description">${geo.pagePrivacySub || finalDesc}</p></header>
-        <section><h2>${geo.pagePrivacySec1Title || 'Zero Upload Architecture'}</h2><p>${geo.pagePrivacySec1Desc}</p></section>
-        <section><h2>${geo.pagePrivacySec2Title || 'Local Processing Guarantee'}</h2><p>${geo.pagePrivacySec2Desc}</p></section>
-        <section><h2>${geo.pagePrivacySec3Title || 'Analytics & Cookies'}</h2><p>${geo.pagePrivacySec3Desc}</p></section>
+        <section><h2>${geo.pagePrivacySec1Title || 'Zero Upload Architecture'}</h2><p>${geo.pagePrivacySec1Desc || ''}</p></section>
+        <section><h2>${geo.pagePrivacySec2Title || 'Local Processing Guarantee'}</h2><p>${geo.pagePrivacySec2Desc || ''}</p></section>
+        <section><h2>${geo.pagePrivacySec3Title || 'Analytics & Cookies'}</h2><p>${geo.pagePrivacySec3Desc || ''}</p></section>
+        ${geo.pagePrivacySec4Title ? `<section><h2>${geo.pagePrivacySec4Title}</h2><p>${geo.pagePrivacySec4Desc || ''}</p></section>` : ''}
       `;
     } else if (pageId === 'terms') {
       pageHtml = `
         <header><h1 itemprop="headline">${geo.pageTosHero || finalTitle}</h1><p itemprop="description">${geo.pageTosSub || finalDesc}</p></header>
-        <section><h2>${geo.pageTosSec1Title || 'Agreement to Terms'}</h2><p>${geo.pageTosSec1Desc}</p></section>
-        <section><h2>${geo.pageTosSec2Title || 'Permitted Use'}</h2><p>${geo.pageTosSec2Desc}</p></section>
-        <section><h2>${geo.pageTosSec3Title || 'Disclaimer of Warranties'}</h2><p>${geo.pageTosSec3Desc}</p></section>
+        <section><h2>${geo.pageTosSec1Title || 'Agreement to Terms'}</h2><p>${geo.pageTosSec1Desc || ''}</p></section>
+        <section><h2>${geo.pageTosSec2Title || 'Permitted Use'}</h2><p>${geo.pageTosSec2Desc || ''}</p></section>
+        <section><h2>${geo.pageTosSec3Title || 'Disclaimer of Warranties'}</h2><p>${geo.pageTosSec3Desc || ''}</p></section>
+        ${geo.pageTosSec4Title ? `<section><h2>${geo.pageTosSec4Title}</h2><p>${geo.pageTosSec4Desc || ''}</p></section>` : ''}
       `;
     } else if (pageId === 'security') {
       pageHtml = `
         <header><h1 itemprop="headline">${geo.pageSecurityHero || finalTitle}</h1><p itemprop="description">${geo.pageSecurityHeroSub || finalDesc}</p></header>
-        <section><h2>${geo.pageSecuritySec2Title || 'WebAssembly Revolution'}</h2><p>${geo.pageSecuritySec2Desc}</p></section>
-        <section><h2>${geo.pageSecuritySec3Title || 'Your Documents Are Blind To Us'}</h2><p>${geo.pageSecuritySec3Desc}</p></section>
-        <section><h2>${geo.pageSecuritySec4Title || 'Compliance by Default'}</h2><p>${geo.pageSecuritySec4Desc}</p></section>
-        <section><h2>${geo.pageSecuritySec5Title || 'Verify It'}</h2><p>${geo.pageSecuritySec5Desc}</p></section>
+        <section><h2>${geo.pageSecuritySec2Title || 'WebAssembly Revolution'}</h2><p>${geo.pageSecuritySec2Desc || ''}</p></section>
+        <section><h2>${geo.pageSecuritySec3Title || 'Your Documents Are Blind To Us'}</h2><p>${geo.pageSecuritySec3Desc || ''}</p></section>
+        <section><h2>${geo.pageSecuritySec4Title || 'Compliance by Default'}</h2><p>${geo.pageSecuritySec4Desc || ''}</p></section>
+        <section><h2>${geo.pageSecuritySec5Title || 'Verify It'}</h2><p>${geo.pageSecuritySec5Desc || ''}</p></section>
+        ${geo.pageSecuritySec6Title ? `<section><h2>${geo.pageSecuritySec6Title}</h2><p>${geo.pageSecuritySec6Desc || ''}</p></section>` : ''}
       `;
     } else if (pageId === 'pricing') {
       pageHtml = `
         <header><h1 itemprop="headline">${geo.pagePricingHero || finalTitle}</h1><p itemprop="description">${geo.pagePricingHeroSub || finalDesc}</p></header>
-        <section><h2>${geo.pagePricingSec3Title || 'How is this possible?'}</h2><p>${geo.pagePricingSec3Desc}</p></section>
-        <section><h2>${geo.pagePricingSec4Title || 'Sustainable & Transparent'}</h2><p>${geo.pagePricingSec4Desc}</p></section>
-        <section><h2>${geo.pagePricingSec5Title || 'Free for Business Use'}</h2><p>${geo.pagePricingSec5Desc}</p></section>
+        <section><h2>${geo.pagePricingSec3Title || 'How is this possible?'}</h2><p>${geo.pagePricingSec3Desc || ''}</p></section>
+        <section><h2>${geo.pagePricingSec4Title || 'Sustainable & Transparent'}</h2><p>${geo.pagePricingSec4Desc || ''}</p></section>
+        <section><h2>${geo.pagePricingSec5Title || 'Free for Business Use'}</h2><p>${geo.pagePricingSec5Desc || ''}</p></section>
+        ${geo.pagePricingSec6Title ? `<section><h2>${geo.pagePricingSec6Title}</h2><p>${geo.pagePricingSec6Desc || ''}</p></section>` : ''}
       `;
     } else if (pageId === 'use-cases') {
       pageHtml = `
         <header><h1 itemprop="headline">${geo.pageUseCasesHero || finalTitle}</h1><p itemprop="description">${geo.pageUseCasesHeroSub || finalDesc}</p></header>
-        <section><h2>${geo.pageUseCasesSec2Title || 'Legal Teams'}</h2><p>${geo.pageUseCasesSec2Desc}</p></section>
-        <section><h2>${geo.pageUseCasesSec3Title || 'HR Professionals'}</h2><p>${geo.pageUseCasesSec3Desc}</p></section>
-        <section><h2>${geo.pageUseCasesSec4Title || 'Students'}</h2><p>${geo.pageUseCasesSec4Desc}</p></section>
-        <section><h2>${geo.pageUseCasesSec5Title || 'Real Estate'}</h2><p>${geo.pageUseCasesSec5Desc}</p></section>
-        <section><h2>${geo.pageUseCasesSec6Title || 'Find Your Own'}</h2><p>${geo.pageUseCasesSec6Desc}</p></section>
+        <section><h2>${geo.pageUseCasesSec2Title || 'Legal Teams'}</h2><p>${geo.pageUseCasesSec2Desc || ''}</p></section>
+        <section><h2>${geo.pageUseCasesSec3Title || 'HR Professionals'}</h2><p>${geo.pageUseCasesSec3Desc || ''}</p></section>
+        <section><h2>${geo.pageUseCasesSec4Title || 'Students'}</h2><p>${geo.pageUseCasesSec4Desc || ''}</p></section>
+        <section><h2>${geo.pageUseCasesSec5Title || 'Real Estate'}</h2><p>${geo.pageUseCasesSec5Desc || ''}</p></section>
+        <section><h2>${geo.pageUseCasesSec6Title || 'Find Your Own'}</h2><p>${geo.pageUseCasesSec6Desc || ''}</p></section>
       `;
     } else if (pageId === 'compare') {
       pageHtml = `
         <header><h1 itemprop="headline">${geo.pageCompareHero || finalTitle}</h1><p itemprop="description">${geo.pageCompareHeroSub || finalDesc}</p></header>
-        <section><h2>${geo.pageCompareSec3Title || 'Network Speed vs Disk Speed'}</h2><p>${geo.pageCompareSec3Desc}</p></section>
-        <section><h2>${geo.pageCompareSec5Title || 'Upload Limits vs Unlimited Processing'}</h2><p>${geo.pageCompareSec5Desc}</p></section>
+        <section><h2>${geo.pageCompareSec3Title || 'Network Speed vs Disk Speed'}</h2><p>${geo.pageCompareSec3Desc || ''}</p></section>
+        <section><h2>${geo.pageCompareSec5Title || 'Upload Limits vs Unlimited Processing'}</h2><p>${geo.pageCompareSec5Desc || ''}</p></section>
       `;
     } else if (pageId === 'languages') {
       pageHtml = `
         <header><h1 itemprop="headline">${geo.pageLangHero || finalTitle}</h1><p itemprop="description">${geo.pageLangHeroSub || finalDesc}</p></header>
-        <section><h2>${geo.pageLangSec3Title || 'Native Feel'}</h2><p>${geo.pageLangSec3Desc}</p></section>
-        <section><h2>${geo.pageLangSec4Title || 'Global Performance'}</h2><p>${geo.pageLangSec4Desc}</p></section>
+        <section><h2>${geo.pageLangSec3Title || 'Native Feel'}</h2><p>${geo.pageLangSec3Desc || ''}</p></section>
+        <section><h2>${geo.pageLangSec4Title || 'Global Performance'}</h2><p>${geo.pageLangSec4Desc || ''}</p></section>
+        ${geo.pageLangSec5Title ? `<section><h2>${geo.pageLangSec5Title}</h2><p>${geo.pageLangSec5Desc || ''}</p></section>` : ''}
+        <section style="margin-top: 32px;">
+          <h2>Available Languages & Locales</h2>
+          <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; list-style: none; padding: 0; margin-top: 16px;">
+            ${SUPPORTED_LANGUAGES.map(l => `<li><a href="${l.code === 'en' ? '/' : `/${l.code}`}" style="color: #2563eb; text-decoration: underline; font-weight: 500;">${l.name} (${l.nativeName})</a></li>`).join('')}
+          </ul>
+        </section>
       `;
     }
     
@@ -471,12 +483,17 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
     
     html = html.replace('<!-- JSON-LD-INJECTION -->', jsonLdScript);
 
+    const geoText = GEO_CITATIONS[lang] || GEO_CITATIONS['en'];
+
     staticSeoHtml = `
       <main id="static-seo" role="main" style="padding: 40px; font-family: sans-serif; background: #fff; color: #333; max-width: 1100px; margin: 0 auto;">
         <nav aria-label="Breadcrumb" style="margin-bottom: 24px; font-size: 0.95rem;">
           <a href="${isEn ? '/' : `/${lang}`}" style="color: #2563eb; text-decoration: underline;">Home</a> &gt; 
           <span>${finalTitle}</span>
         </nav>
+        <div style="margin-bottom: 24px; padding: 15px; background: #f0fdf4; border-left: 4px solid #16a34a; font-weight: 500; font-size: 0.95rem; line-height: 1.5;">
+          ${geoText}
+        </div>
         <article itemscope itemtype="https://schema.org/Article">
           ${pageHtml}
         </article>
