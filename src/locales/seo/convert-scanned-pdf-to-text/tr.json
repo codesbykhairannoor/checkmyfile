@@ -1,0 +1,23 @@
+{
+  "id": "convert-scanned-pdf-to-text",
+  "supportCenter": true,
+  "heroTitle": "Taranmış PDF'leri Düzenlenebilir Metne Dönüştürün",
+  "heroDescription": "Taranmış görüntülerden ve aranamayan PDF'lerden metin çıkarmak için gelişmiş tarayıcı tabanlı OCR'yi kullanın. %100 ücretsiz ve özel.",
+  "sections": [
+    {
+      "type": "edit_geo_targeting",
+      "subTitle": "WebAssembly OCR'si",
+      "subContent": "Tesseract OCR doğrudan tarayıcınızda çalışır. Hiçbir bulut API'si dahil değildir."
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "Gizli Çıkarma",
+      "subContent": "Hassas kimlik kartlarından veya tıbbi kayıtlardan metni güvenli bir şekilde çıkarın."
+    },
+    {
+      "type": "watermark_performance",
+      "subTitle": "Yüksek Doğruluk",
+      "subContent": "Birden fazla dil ve çarpık tarama desteği."
+    }
+  ]
+}

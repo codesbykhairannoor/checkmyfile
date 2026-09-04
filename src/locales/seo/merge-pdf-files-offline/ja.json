@@ -1,0 +1,23 @@
+{
+  "id": "merge-pdf-files-offline",
+  "supportCenter": true,
+  "heroTitle": "ブラウザでオフラインで PDF を結合する",
+  "heroDescription": "インターネット接続なしで、複数の機密性の高い PDF ドキュメントを結合します。 ロード後は完全にオフラインで動作します。",
+  "sections": [
+    {
+      "type": "excel_csv_geo_targeting",
+      "subTitle": "オフライン結合",
+      "subContent": "納税フォームと法的書類をどこにも送信せずに結合します。"
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "軍用レベルのプライバシー",
+      "subContent": "私たちはあなたのファイルを物理的に見ることができないため、絶対的なプライバシーを保証します。"
+    },
+    {
+      "type": "metadata_performance",
+      "subTitle": "即時処理",
+      "subContent": "クライアント側の処理で数百のページを即座にマージします。"
+    }
+  ]
+}

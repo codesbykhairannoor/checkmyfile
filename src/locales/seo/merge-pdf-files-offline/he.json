@@ -1,0 +1,23 @@
+{
+  "id": "merge-pdf-files-offline",
+  "supportCenter": true,
+  "heroTitle": "מיזוג קובצי PDF במצב לא מקוון בדפדפן",
+  "heroDescription": "שלב מספר מסמכי PDF רגישים במיוחד ללא חיבור לאינטרנט. עובד במצב לא מקוון לחלוטין לאחר טעינה.",
+  "sections": [
+    {
+      "type": "excel_csv_geo_targeting",
+      "subTitle": "מיזוג לא מקוון",
+      "subContent": "שלב את טפסי המס והמסמכים המשפטיים שלך מבלי לשלוח אותם לשום מקום."
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "פרטיות בדרגה צבאית",
+      "subContent": "אנו מבטיחים פרטיות מוחלטת מכיוון שאיננו יכולים לראות פיזית את הקבצים שלך."
+    },
+    {
+      "type": "metadata_performance",
+      "subTitle": "עיבוד מיידי",
+      "subContent": "מיזוג 100 אלפי דפים באופן מיידי עם עיבוד בצד הלקוח."
+    }
+  ]
+}

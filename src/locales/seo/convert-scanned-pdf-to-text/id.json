@@ -1,0 +1,23 @@
+{
+  "id": "convert-scanned-pdf-to-text",
+  "supportCenter": true,
+  "heroTitle": "Ubah PDF yang Dipindai menjadi Teks yang Dapat Diedit",
+  "heroDescription": "Gunakan OCR berbasis browser tingkat lanjut untuk mengekstrak teks dari gambar yang dipindai dan PDF yang tidak dapat dicari. 100% gratis dan pribadi.",
+  "sections": [
+    {
+      "type": "edit_geo_targeting",
+      "subTitle": "OCR Majelis Web",
+      "subContent": "Tesseract OCR berjalan langsung di browser Anda. Tidak ada API cloud yang terlibat."
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "Ekstraksi Rahasia",
+      "subContent": "Ekstrak teks dari kartu ID sensitif atau catatan medis dengan aman."
+    },
+    {
+      "type": "watermark_performance",
+      "subTitle": "Akurasi Tinggi",
+      "subContent": "Dukungan untuk berbagai bahasa dan pemindaian miring."
+    }
+  ]
+}

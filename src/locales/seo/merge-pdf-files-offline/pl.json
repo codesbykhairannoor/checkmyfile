@@ -1,0 +1,23 @@
+{
+  "id": "merge-pdf-files-offline",
+  "supportCenter": true,
+  "heroTitle": "Scal swoje pliki PDF offline w przeglądarce",
+  "heroDescription": "Łącz wiele bardzo poufnych dokumentów PDF bez połączenia z Internetem. Działa całkowicie offline po załadowaniu.",
+  "sections": [
+    {
+      "type": "excel_csv_geo_targeting",
+      "subTitle": "Łączenie offline",
+      "subContent": "Połącz formularze podatkowe i dokumenty prawne, nie wysyłając ich nigdzie."
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "Prywatność na poziomie wojskowym",
+      "subContent": "Gwarantujemy całkowitą prywatność, ponieważ fizycznie nie możemy zobaczyć Twoich plików."
+    },
+    {
+      "type": "metadata_performance",
+      "subTitle": "Natychmiastowe przetwarzanie",
+      "subContent": "Błyskawicznie łącz setki stron dzięki przetwarzaniu po stronie klienta."
+    }
+  ]
+}

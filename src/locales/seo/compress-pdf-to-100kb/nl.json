@@ -1,79 +1,23 @@
 {
-  "title": "Comprimeer PDF tot 100 KB",
-  "h1": "Comprimeer PDF-bestanden online tot 100 KB",
-  "description": "Verklein uw grote PDF-documenten van minder dan 100 KB voor overheidsportals, sollicitaties of visumformulieren volledig in uw browser.",
+  "id": "compress-pdf-to-100kb",
+  "supportCenter": true,
+  "heroTitle": "Comprimeer PDF tot 100 KB zonder kwaliteitsverlies",
+  "heroDescription": "Verklein uw PDF-bestanden rechtstreeks in uw browser tot 100 KB of minder. Perfect voor e-mailbijlagen en snel delen. 100% privé.",
   "sections": [
     {
-      "type": "resize_hero_features",
-      "title": "Verklein PDF direct en veilig tot 100 KB",
-      "content": "Worstelt u met strikte uploadlimieten van 100 KB op overheidsportals, vacaturesites of visumaanvragen? Onze lokale compressor optimaliseert uw PDF-bestand van minder dan 100 KB binnen enkele seconden.",
-      "badgeText": "Doel van 100 KB"
+      "type": "grayscale_geo_targeting",
+      "subTitle": "Lokale compressiemotor",
+      "subContent": "Onze geavanceerde WASM-engine comprimeert uw PDF lokaal. Geen bestandslimieten."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "Hoe PDF onder 100 KB te comprimeren",
-      "badgeText": "Korte handleiding",
-      "steps": [
-        {
-          "title": "PDF-document toevoegen",
-          "description": "Zet uw PDF-bestand neer in de compressor aan de clientzijde."
-        },
-        {
-          "title": "Selecteer Doel van 100 KB",
-          "description": "Kies sterke compressie om automatisch een grootte onder de 100 KB te targeten."
-        },
-        {
-          "title": "Geoptimaliseerde PDF opslaan",
-          "description": "Download uw gecomprimeerde PDF direct, klaar om te uploaden."
-        }
-      ]
+      "type": "organize_privacy_security",
+      "subTitle": "Geen gegevensretentie",
+      "subContent": "Omdat bestanden uw apparaat nooit verlaten, blijven uw privégegevens alleen van u."
     },
     {
-      "type": "protect_geo_targeting",
-      "title": "Perfect voor CPNS-, Visa- en Scholarship-portals",
-      "content": "U hoeft zich geen zorgen te maken over limieten aan de serverzijde. Alle compressie vindt plaats in uw lokale browsersandbox, waardoor absolute naleving van de beveiligingsregels wordt gegarandeerd.",
-      "subTitle": "Upload met een gerust hart",
-      "subContent": "Wij verwerken uw gevoelige documenten (ID-kaartscan, paspoort, CV) 100% lokaal. Geen risico op datalekken.",
-      "badgeText": "Upload met een gerust hart"
-    },
-    {
-      "type": "compare_privacy_security",
-      "title": "Beheer van verliesloze dichtheid",
-      "content": "Optimaliseert de beeldresolutie en DPI-schalen om de drempel van 100 KB te bereiken zonder dat teksten onleesbaar worden."
-    },
-    {
-      "type": "watermark_performance",
-      "title": "CPNS gereed",
-      "content": "Visum goedgekeurd",
-      "badgeText": "Minder dan 100 KB"
+      "type": "metadata_performance",
+      "subTitle": "Bliksemsnel 100 KB",
+      "subContent": "Bereik uw doelgrootte van 100 KB in milliseconden zonder serververtragingen."
     }
-  ],
-  "faqs": [
-    {
-      "q": "Hoe zorg ik ervoor dat het bestand kleiner is dan 100 KB?",
-      "a": "Selecteer de compressievoorinstelling 'Strong'. Onze tool optimaliseert vectoren en rastert complexe verlopen zodat ze in uw bestand van minder dan 100 KB passen."
-    },
-    {
-      "q": "Is er een limiet voor het aantal bestanden dat ik kan comprimeren?",
-      "a": "Nee. Omdat de verwerking lokaal in het geheugen van uw browser plaatsvindt, kunt u zoveel bestanden comprimeren als u wilt."
-    },
-    {
-      "q": "Zijn mijn documenten veilig?",
-      "a": "Ja. Ze worden volledig offline verwerkt via WebAssembly. Er worden 0 bytes geüpload."
-    }
-  ],
-  "badges": [
-    "Doel van 100 KB",
-    "Zeker",
-    "Snel"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "Comprimeren tot 100 KB",
-  "supportCenter": "Ondersteuningscentrum",
-  "faqTitle": "Veelgestelde vragen"
+  ]
 }

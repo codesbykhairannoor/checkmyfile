@@ -1,0 +1,23 @@
+{
+  "id": "convert-scanned-pdf-to-text",
+  "supportCenter": true,
+  "heroTitle": "Gjør skannede PDF-er til redigerbar tekst",
+  "heroDescription": "Bruk avansert nettleserbasert OCR for å trekke ut tekst fra skannede bilder og usøkbare PDF-filer. 100 % gratis og privat.",
+  "sections": [
+    {
+      "type": "edit_geo_targeting",
+      "subTitle": "WebAssembly OCR",
+      "subContent": "Tesseract OCR kjører rett i nettleseren din. Ingen sky-APIer involvert."
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "Konfidensiell utvinning",
+      "subContent": "Trekk ut tekst fra sensitive ID-kort eller medisinske journaler trygt."
+    },
+    {
+      "type": "watermark_performance",
+      "subTitle": "Høy nøyaktighet",
+      "subContent": "Støtte for flere språk og skjeve skanninger."
+    }
+  ]
+}

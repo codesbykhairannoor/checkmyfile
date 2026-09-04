@@ -1,0 +1,23 @@
+{
+  "id": "merge-pdf-files-offline",
+  "supportCenter": true,
+  "heroTitle": "Slå sammen PDF-filene dine frakoblet i nettleseren",
+  "heroDescription": "Kombiner flere svært sensitive PDF-dokumenter uten internettforbindelse. Fungerer helt offline etter lasting.",
+  "sections": [
+    {
+      "type": "excel_csv_geo_targeting",
+      "subTitle": "Frakoblet sammenslåing",
+      "subContent": "Kombiner skatteskjemaene og juridiske dokumenter uten å sende dem hvor som helst."
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "Personvern i militær klasse",
+      "subContent": "Vi garanterer absolutt personvern fordi vi fysisk ikke kan se filene dine."
+    },
+    {
+      "type": "metadata_performance",
+      "subTitle": "Øyeblikkelig behandling",
+      "subContent": "Slå sammen 100-vis av sider umiddelbart med behandling på klientsiden."
+    }
+  ]
+}

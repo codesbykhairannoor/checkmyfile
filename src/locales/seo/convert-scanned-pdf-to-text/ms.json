@@ -1,0 +1,23 @@
+{
+  "id": "convert-scanned-pdf-to-text",
+  "supportCenter": true,
+  "heroTitle": "Tukar PDF yang Diimbas kepada Teks Boleh Diedit",
+  "heroDescription": "Gunakan OCR berasaskan pelayar lanjutan untuk mengekstrak teks daripada imej yang diimbas dan PDF yang tidak boleh dicari. 100% percuma dan peribadi.",
+  "sections": [
+    {
+      "type": "edit_geo_targeting",
+      "subTitle": "WebAssembly OCR",
+      "subContent": "Tesseract OCR berjalan terus dalam penyemak imbas anda. Tiada API awan yang terlibat."
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "Pengekstrakan Sulit",
+      "subContent": "Ekstrak teks daripada kad pengenalan sensitif atau rekod perubatan dengan selamat."
+    },
+    {
+      "type": "watermark_performance",
+      "subTitle": "Ketepatan Tinggi",
+      "subContent": "Sokongan untuk berbilang bahasa dan imbasan condong."
+    }
+  ]
+}

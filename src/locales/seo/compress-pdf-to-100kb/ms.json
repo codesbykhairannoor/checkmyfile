@@ -1,79 +1,23 @@
 {
-  "title": "Mampatkan PDF kepada 100KB",
-  "h1": "Mampatkan Fail PDF kepada 100KB Dalam Talian",
-  "description": "Kecilkan dokumen PDF besar anda di bawah 100KB untuk portal kerajaan, permohonan kerja atau borang visa sepenuhnya dalam penyemak imbas anda.",
+  "id": "compress-pdf-to-100kb",
+  "supportCenter": true,
+  "heroTitle": "Mampatkan PDF kepada 100KB Tanpa Kehilangan Kualiti",
+  "heroDescription": "Kecilkan fail PDF anda kepada 100KB atau kurang terus dalam penyemak imbas anda. Sesuai untuk lampiran e-mel dan perkongsian pantas. 100% persendirian.",
   "sections": [
     {
-      "type": "resize_hero_features",
-      "title": "Kecilkan PDF kepada 100KB Serta-merta & Selamat",
-      "content": "Bergelut dengan had muat naik 100KB yang ketat pada portal kerajaan, tapak kerja atau permohonan visa? Pemampat tempatan kami mengoptimumkan fail PDF anda di bawah 100KB dalam beberapa saat.",
-      "badgeText": "Sasaran 100KB"
+      "type": "grayscale_geo_targeting",
+      "subTitle": "Enjin Mampatan Tempatan",
+      "subContent": "Enjin WASM canggih kami memampatkan PDF anda secara tempatan. Tiada had fail."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "Cara Memampatkan PDF di bawah 100KB",
-      "badgeText": "Panduan Pantas",
-      "steps": [
-        {
-          "title": "Tambah Dokumen PDF",
-          "description": "Letakkan fail PDF anda ke dalam pemampat sisi klien."
-        },
-        {
-          "title": "Pilih Sasaran 100KB",
-          "description": "Pilih mampatan kuat untuk menyasarkan saiz secara automatik di bawah 100KB."
-        },
-        {
-          "title": "Simpan PDF Dioptimumkan",
-          "description": "Muat turun PDF termampat anda serta-merta, sedia untuk dimuat naik."
-        }
-      ]
+      "type": "organize_privacy_security",
+      "subTitle": "Pengekalan Data Sifar",
+      "subContent": "Memandangkan fail tidak pernah meninggalkan peranti anda, data peribadi anda kekal milik anda sahaja."
     },
     {
-      "type": "protect_geo_targeting",
-      "title": "Sesuai untuk CPNS, Visa, dan Portal Biasiswa",
-      "content": "Tidak perlu risau tentang had sebelah pelayan. Semua pemampatan berlaku dalam kotak pasir penyemak imbas tempatan anda, memastikan pematuhan mutlak terhadap peraturan keselamatan.",
-      "subTitle": "Muat naik dengan Ketenangan Fikiran",
-      "subContent": "Kami memproses dokumen sensitif anda (imbasan kad pengenalan, pasport, CV) 100% secara tempatan. Sifar risiko kebocoran data.",
-      "badgeText": "Muat naik dengan Ketenangan Fikiran"
-    },
-    {
-      "type": "compare_privacy_security",
-      "title": "Pengurusan Kepadatan Tanpa Kehilangan",
-      "content": "Mengoptimumkan peleraian imej dan skala DPI untuk mencapai ambang 100KB tanpa mengubah teks menjadi kabur yang tidak boleh dibaca."
-    },
-    {
-      "type": "watermark_performance",
-      "title": "CPNS Sedia",
-      "content": "Visa Diluluskan",
-      "badgeText": "Bawah 100KB"
+      "type": "metadata_performance",
+      "subTitle": "Sepantas Kilat 100KB",
+      "subContent": "Capai saiz sasaran 100KB anda dalam milisaat tanpa kelewatan pelayan."
     }
-  ],
-  "faqs": [
-    {
-      "q": "Bagaimanakah cara saya memastikan fail berada di bawah 100KB?",
-      "a": "Pilih pratetap mampatan 'Kuat'. Alat kami mengoptimumkan vektor dan merasterkan kecerunan kompleks agar sesuai dengan fail anda di bawah 100KB."
-    },
-    {
-      "q": "Adakah terdapat had pada berapa banyak fail yang boleh saya mampatkan?",
-      "a": "Tidak. Memandangkan pemprosesan berjalan secara setempat dalam memori penyemak imbas anda, anda boleh memampatkan seberapa banyak fail yang anda mahu."
-    },
-    {
-      "q": "Adakah dokumen saya selamat?",
-      "a": "ya. Mereka diproses sepenuhnya di luar talian melalui WebAssembly. 0 bait dimuat naik."
-    }
-  ],
-  "badges": [
-    "Sasaran 100KB",
-    "selamat",
-    "Cepat"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "Mampatkan kepada 100KB",
-  "supportCenter": "Pusat Sokongan",
-  "faqTitle": "Soalan Lazim"
+  ]
 }

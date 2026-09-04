@@ -1,0 +1,23 @@
+{
+  "id": "convert-scanned-pdf-to-text",
+  "supportCenter": true,
+  "heroTitle": "Přeměňte naskenované soubory PDF na upravitelný text",
+  "heroDescription": "Použijte pokročilé OCR založené na prohlížeči k extrahování textu z naskenovaných obrázků a souborů PDF, které nelze prohledávat. 100% zdarma a soukromé.",
+  "sections": [
+    {
+      "type": "edit_geo_targeting",
+      "subTitle": "WebAssembly OCR",
+      "subContent": "Tesseract OCR běží přímo ve vašem prohlížeči. Nejsou zapojena žádná cloudová API."
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "Důvěrná extrakce",
+      "subContent": "Bezpečně extrahujte text z citlivých ID karet nebo lékařských záznamů."
+    },
+    {
+      "type": "watermark_performance",
+      "subTitle": "Vysoká přesnost",
+      "subContent": "Podpora více jazyků a zkosené skenování."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "convert-scanned-pdf-to-text",
+  "supportCenter": true,
+  "heroTitle": "スキャンした PDF を編集可能なテキストに変換する",
+  "heroDescription": "高度なブラウザベースの OCR を使用して、スキャンされた画像や検索不可能な PDF からテキストを抽出します。 完全に無料でプライベートです。",
+  "sections": [
+    {
+      "type": "edit_geo_targeting",
+      "subTitle": "WebAssembly OCR",
+      "subContent": "Tesseract OCR はブラウザ内で直接実行されます。 クラウド API は関係しません。"
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "機密の抽出",
+      "subContent": "機密性の高い ID カードや医療記録からテキストを安全に抽出します。"
+    },
+    {
+      "type": "watermark_performance",
+      "subTitle": "高精度",
+      "subContent": "複数の言語と偏ったスキャンのサポート。"
+    }
+  ]
+}

@@ -1,79 +1,23 @@
 {
-  "title": "Pakkaa PDF 100 kilotavuun",
-  "h1": "Pakkaa PDF-tiedostot 100 kilotavuun verkossa",
-  "description": "Pienennä suuret PDF-asiakirjasi alle 100 kt:n hallinnon portaaleja, työhakemuksia tai viisumilomakkeita varten kokonaan selaimessasi.",
+  "id": "compress-pdf-to-100kb",
+  "supportCenter": true,
+  "heroTitle": "Pakkaa PDF 100 kilotavuun menettämättä laatua",
+  "heroDescription": "Pienennä PDF-tiedostosi 100 kilotavuun tai pienempään suoraan selaimessasi. Täydellinen sähköpostin liitteisiin ja nopeaan jakamiseen. 100% yksityinen.",
   "sections": [
     {
-      "type": "resize_hero_features",
-      "title": "Pienennä PDF 100 kilotavuun välittömästi ja turvallisesti",
-      "content": "Kamppailetko tiukkojen 100 kt:n latausrajoitusten kanssa valtion portaaleissa, työpaikoissa tai viisumihakemuksissa? Paikallinen kompressorimme optimoi alle 100 kt:n PDF-tiedostosi sekunneissa.",
-      "badgeText": "100 kt tavoite"
+      "type": "grayscale_geo_targeting",
+      "subTitle": "Paikallinen kompressiomoottori",
+      "subContent": "Edistyksellinen WASM-moottorimme pakkaa PDF-tiedostosi paikallisesti. Ei tiedostorajoituksia."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "Kuinka pakata PDF alle 100 kt",
-      "badgeText": "Pikaopas",
-      "steps": [
-        {
-          "title": "Lisää PDF-dokumentti",
-          "description": "Pudota PDF-tiedosto asiakaspuolen kompressoriin."
-        },
-        {
-          "title": "Valitse 100 kt:n tavoite",
-          "description": "Valitse vahva pakkaus kohdistaaksesi koon automaattisesti alle 100 kt."
-        },
-        {
-          "title": "Tallenna optimoitu PDF",
-          "description": "Lataa pakattu PDF heti, valmiina lähetettäväksi."
-        }
-      ]
+      "type": "organize_privacy_security",
+      "subTitle": "Nolla tietojen säilyttämistä",
+      "subContent": "Koska tiedostot eivät koskaan poistu laitteestasi, yksityiset tietosi pysyvät yksin."
     },
     {
-      "type": "protect_geo_targeting",
-      "title": "Täydellinen CPNS-, Visa- ja stipendiportaaleihin",
-      "content": "Palvelinpuolen rajoituksista ei tarvitse huolehtia. Kaikki pakkaus tapahtuu paikallisessa selaimesi hiekkalaatikossa, mikä varmistaa turvallisuussääntöjen täydellisen noudattamisen.",
-      "subTitle": "Lataa mielenrauhalla",
-      "subContent": "Käsittelemme arkaluontoiset asiakirjasi (henkilökortin skannaus, passi, CV) 100 % paikallisesti. Tietovuotojen riski nolla.",
-      "badgeText": "Lataa mielenrauhalla"
-    },
-    {
-      "type": "compare_privacy_security",
-      "title": "Häviötön tiheyden hallinta",
-      "content": "Optimoi kuvan resoluution ja DPI-asteikon saavuttamaan 100 kt:n kynnyksen ilman, että tekstit muuttuvat lukukelvottomaksi."
-    },
-    {
-      "type": "watermark_performance",
-      "title": "CPNS valmis",
-      "content": "Visa hyväksytty",
-      "badgeText": "Alle 100 kt"
+      "type": "metadata_performance",
+      "subTitle": "Salamannopea 100 kt",
+      "subContent": "Saavuta 100 kt:n tavoitekoko millisekunneissa ilman palvelinviiveitä."
     }
-  ],
-  "faqs": [
-    {
-      "q": "Kuinka varmistan, että tiedosto on alle 100 kt?",
-      "a": "Valitse \"Vahva\" pakkausasetus. Työkalumme optimoi vektorit ja rasteroi monimutkaiset gradientit sovittamaan tiedostosi alle 100 kt."
-    },
-    {
-      "q": "Onko rajoitettu kuinka monta tiedostoa voin pakata?",
-      "a": "Ei. Koska käsittely tapahtuu paikallisesti selaimesi muistissa, voit pakata niin monta tiedostoa kuin haluat."
-    },
-    {
-      "q": "Ovatko asiakirjani turvassa?",
-      "a": "Kyllä. Ne käsitellään kokonaan offline-tilassa WebAssemblyn kautta. 0 tavua ladataan."
-    }
-  ],
-  "badges": [
-    "100 kt tavoite",
-    "Turvallinen",
-    "Nopeasti"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "Pakkaa 100 kilotavuun",
-  "supportCenter": "Tukikeskus",
-  "faqTitle": "Usein kysytyt kysymykset"
+  ]
 }

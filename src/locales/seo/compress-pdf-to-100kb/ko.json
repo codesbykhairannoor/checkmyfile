@@ -1,79 +1,23 @@
 {
-  "title": "PDF를 100KB로 압축",
-  "h1": "온라인에서 PDF 파일을 100KB로 압축",
-  "description": "브라우저에서 정부 포털, 입사 지원서 또는 비자 양식을 위한 대용량 PDF 문서를 100KB 미만으로 줄이세요.",
+  "id": "compress-pdf-to-100kb",
+  "supportCenter": true,
+  "heroTitle": "품질 저하 없이 PDF를 100KB로 압축",
+  "heroDescription": "브라우저에서 PDF 파일을 100KB 이하로 직접 축소하세요. 이메일 첨부 및 빠른 공유에 적합합니다. 100% 비공개입니다.",
   "sections": [
     {
-      "type": "resize_hero_features",
-      "title": "즉각적이고 안전하게 PDF를 100KB로 축소",
-      "content": "정부 포털, 채용 사이트 또는 비자 신청에 대한 엄격한 100KB 업로드 제한으로 인해 어려움을 겪고 계십니까? 당사의 로컬 압축기는 PDF 파일을 100KB 미만으로 몇 초 만에 최적화합니다.",
-      "badgeText": "100KB 대상"
+      "type": "grayscale_geo_targeting",
+      "subTitle": "로컬 압축 엔진",
+      "subContent": "우리의 고급 WASM 엔진은 PDF를 로컬로 압축합니다. 파일 제한이 없습니다."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "PDF를 100KB 미만으로 압축하는 방법",
-      "badgeText": "빠른 가이드",
-      "steps": [
-        {
-          "title": "PDF 문서 추가",
-          "description": "PDF 파일을 클라이언트측 압축기에 놓습니다."
-        },
-        {
-          "title": "100KB 대상 선택",
-          "description": "100KB 미만의 크기를 자동으로 대상으로 지정하려면 강력한 압축을 선택하세요."
-        },
-        {
-          "title": "최적화된 PDF 저장",
-          "description": "압축된 PDF를 즉시 다운로드하여 업로드할 준비를 하세요."
-        }
-      ]
+      "type": "organize_privacy_security",
+      "subTitle": "제로 데이터 보존",
+      "subContent": "파일이 장치를 떠나지 않으므로 개인 데이터는 귀하의 것입니다."
     },
     {
-      "type": "protect_geo_targeting",
-      "title": "CPNS, Visa 및 장학금 포털에 적합",
-      "content": "서버 측 제한에 대해 걱정할 필요가 없습니다. 모든 압축은 로컬 브라우저 샌드박스에서 이루어지므로 보안 규칙을 완벽하게 준수합니다.",
-      "subTitle": "안심하고 업로드하세요",
-      "subContent": "민감한 문서(신분증 스캔, 여권, 이력서)를 100% 현지에서 처리합니다. 데이터 유출 위험이 없습니다.",
-      "badgeText": "안심하고 업로드하세요"
-    },
-    {
-      "type": "compare_privacy_security",
-      "title": "무손실 밀도 관리",
-      "content": "텍스트를 읽을 수 없게 흐릿하게 만들지 않고 100KB 임계값에 도달하도록 이미지 해상도와 DPI 크기를 최적화합니다."
-    },
-    {
-      "type": "watermark_performance",
-      "title": "CPNS 준비",
-      "content": "비자 승인",
-      "badgeText": "100KB 미만"
+      "type": "metadata_performance",
+      "subTitle": "번개처럼 빠른 100KB",
+      "subContent": "서버 지연 없이 100KB 목표 크기를 밀리초 안에 달성하세요."
     }
-  ],
-  "faqs": [
-    {
-      "q": "파일이 100KB 미만인지 어떻게 확인하나요?",
-      "a": "'강함' 압축 사전 설정을 선택합니다. 우리의 도구는 벡터를 최적화하고 복잡한 그라데이션을 래스터화하여 100KB 미만의 파일에 맞춥니다."
-    },
-    {
-      "q": "압축할 수 있는 파일 수에 제한이 있나요?",
-      "a": "아니요. 처리는 브라우저 메모리에서 로컬로 실행되므로 원하는 만큼 파일을 압축할 수 있습니다."
-    },
-    {
-      "q": "내 문서는 안전한가요?",
-      "a": "예. WebAssembly를 통해 완전히 오프라인으로 처리됩니다. 0바이트가 업로드되었습니다."
-    }
-  ],
-  "badges": [
-    "100KB 대상",
-    "안전한",
-    "빠른"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "100KB로 압축",
-  "supportCenter": "지원 센터",
-  "faqTitle": "자주 묻는 질문"
+  ]
 }

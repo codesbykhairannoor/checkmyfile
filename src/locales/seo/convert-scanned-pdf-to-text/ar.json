@@ -1,0 +1,23 @@
+{
+  "id": "convert-scanned-pdf-to-text",
+  "supportCenter": true,
+  "heroTitle": "تحويل ملفات PDF الممسوحة ضوئيًا إلى نص قابل للتحرير",
+  "heroDescription": "استخدم تقنية التعرف الضوئي على الحروف (OCR) المتقدمة المستندة إلى المستعرض لاستخراج النص من الصور الممسوحة ضوئيًا وملفات PDF غير القابلة للبحث. 100% مجاني وخاص.",
+  "sections": [
+    {
+      "type": "edit_geo_targeting",
+      "subTitle": "WebAssembly التعرف الضوئي على الحروف",
+      "subContent": "يعمل Tesseract OCR مباشرة في متصفحك. لا توجد واجهات برمجة التطبيقات السحابية المعنية."
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "استخراج سري",
+      "subContent": "استخراج النص من بطاقات الهوية الحساسة أو السجلات الطبية بأمان."
+    },
+    {
+      "type": "watermark_performance",
+      "subTitle": "دقة عالية",
+      "subContent": "دعم لغات متعددة وعمليات المسح المنحرفة."
+    }
+  ]
+}

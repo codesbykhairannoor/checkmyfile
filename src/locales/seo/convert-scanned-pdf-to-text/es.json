@@ -1,0 +1,23 @@
+{
+  "id": "convert-scanned-pdf-to-text",
+  "supportCenter": true,
+  "heroTitle": "Convierta archivos PDF escaneados en texto editable",
+  "heroDescription": "Utilice OCR avanzado basado en navegador para extraer texto de imágenes escaneadas y archivos PDF que no se pueden buscar. 100% gratis y privado.",
+  "sections": [
+    {
+      "type": "edit_geo_targeting",
+      "subTitle": "OCR de ensamblaje web",
+      "subContent": "Tesseract OCR se ejecuta directamente en su navegador. No hay API en la nube involucradas."
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "Extracción confidencial",
+      "subContent": "Extraiga texto de tarjetas de identificación o registros médicos confidenciales de forma segura."
+    },
+    {
+      "type": "watermark_performance",
+      "subTitle": "Alta precisión",
+      "subContent": "Soporte para múltiples idiomas y escaneos sesgados."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "merge-pdf-files-offline",
+  "supportCenter": true,
+  "heroTitle": "Egyesítse PDF-fájljait offline módban a böngészőben",
+  "heroDescription": "Kombináljon több rendkívül érzékeny PDF-dokumentumot internetkapcsolat nélkül. Betöltés után teljesen offline módban működik.",
+  "sections": [
+    {
+      "type": "excel_csv_geo_targeting",
+      "subTitle": "Offline összevonás",
+      "subContent": "Kombinálja adózási űrlapjait és jogi dokumentumokat anélkül, hogy bárhová elküldené őket."
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "Katonai fokozatú adatvédelem",
+      "subContent": "Garantáljuk a teljes adatvédelmet, mert fizikailag nem láthatjuk fájljait."
+    },
+    {
+      "type": "metadata_performance",
+      "subTitle": "Azonnali feldolgozás",
+      "subContent": "Egyesítsen azonnal 100 oldalt az ügyféloldali feldolgozással."
+    }
+  ]
+}

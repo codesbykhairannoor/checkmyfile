@@ -1,0 +1,23 @@
+{
+  "id": "convert-scanned-pdf-to-text",
+  "supportCenter": true,
+  "heroTitle": "Trasforma i PDF scansionati in testo modificabile",
+  "heroDescription": "Utilizza l'OCR avanzato basato su browser per estrarre testo da immagini scansionate e PDF non ricercabili. 100% gratuito e privato.",
+  "sections": [
+    {
+      "type": "edit_geo_targeting",
+      "subTitle": "OCR dell'assembly Web",
+      "subContent": "Tesseract OCR funziona direttamente nel tuo browser. Nessuna API cloud coinvolta."
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "Estrazione riservata",
+      "subContent": "Estrai testo da carte d'identità sensibili o cartelle cliniche in modo sicuro."
+    },
+    {
+      "type": "watermark_performance",
+      "subTitle": "Alta precisione",
+      "subContent": "Supporto per più lingue e scansioni distorte."
+    }
+  ]
+}

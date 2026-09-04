@@ -1,79 +1,23 @@
 {
-  "title": "Compactar PDF para 100 KB",
-  "h1": "Compactar arquivos PDF para 100 KB online",
-  "description": "Reduza seus grandes documentos PDF para menos de 100 KB para portais governamentais, solicitações de emprego ou formulários de visto completamente em seu navegador.",
+  "id": "compress-pdf-to-100kb",
+  "supportCenter": true,
+  "heroTitle": "Compacte PDF em 100 KB sem perder qualidade",
+  "heroDescription": "Reduza seus arquivos PDF para 100 KB ou menos diretamente em seu navegador. Perfeito para anexos de e-mail e compartilhamento rápido. 100% privado.",
   "sections": [
     {
-      "type": "resize_hero_features",
-      "title": "Reduza PDF para 100 KB instantaneamente e com segurança",
-      "content": "Lutando com limites rígidos de upload de 100 KB em portais governamentais, sites de empregos ou solicitações de visto? Nosso compressor local otimiza seu arquivo PDF com menos de 100 KB em segundos.",
-      "badgeText": "Alvo de 100 KB"
+      "type": "grayscale_geo_targeting",
+      "subTitle": "Mecanismo de compressão local",
+      "subContent": "Nosso mecanismo WASM avançado compacta seu PDF localmente. Sem limites de arquivo."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "Como compactar PDF abaixo de 100 KB",
-      "badgeText": "Guia rápido",
-      "steps": [
-        {
-          "title": "Adicionar documento PDF",
-          "description": "Solte seu arquivo PDF no compressor do lado do cliente."
-        },
-        {
-          "title": "Selecione o alvo de 100 KB",
-          "description": "Escolha uma compactação forte para direcionar automaticamente o tamanho abaixo de 100 KB."
-        },
-        {
-          "title": "Salvar PDF otimizado",
-          "description": "Baixe seu PDF compactado instantaneamente, pronto para upload."
-        }
-      ]
+      "type": "organize_privacy_security",
+      "subTitle": "Retenção zero de dados",
+      "subContent": "Como os arquivos nunca saem do seu dispositivo, seus dados privados permanecem exclusivamente seus."
     },
     {
-      "type": "protect_geo_targeting",
-      "title": "Perfeito para CPNS, Visa e portais de bolsas de estudo",
-      "content": "Não há necessidade de se preocupar com os limites do servidor. Toda a compactação ocorre na sandbox local do navegador, garantindo conformidade absoluta com as regras de segurança.",
-      "subTitle": "Envie com tranquilidade",
-      "subContent": "Processamos seus documentos confidenciais (digitalização de carteira de identidade, passaporte, currículo) 100% localmente. Risco zero de vazamento de dados.",
-      "badgeText": "Envie com tranquilidade"
-    },
-    {
-      "type": "compare_privacy_security",
-      "title": "Gerenciamento de densidade sem perdas",
-      "content": "Otimiza a resolução da imagem e as escalas de DPI para atingir o limite de 100 KB sem transformar os textos em borrões ilegíveis."
-    },
-    {
-      "type": "watermark_performance",
-      "title": "Pronto para CPNS",
-      "content": "Visto aprovado",
-      "badgeText": "Menos de 100 KB"
+      "type": "metadata_performance",
+      "subTitle": "Ultrarrápido 100 KB",
+      "subContent": "Atinja o tamanho desejado de 100 KB em milissegundos sem atrasos no servidor."
     }
-  ],
-  "faqs": [
-    {
-      "q": "Como posso garantir que o arquivo tenha menos de 100 KB?",
-      "a": "Selecione a predefinição de compactação 'Forte'. Nossa ferramenta otimiza vetores e rasteriza gradientes complexos para caber em seu arquivo com menos de 100 KB."
-    },
-    {
-      "q": "Existe um limite de quantos arquivos posso compactar?",
-      "a": "Não. Como o processamento é executado localmente na memória do seu navegador, você pode compactar quantos arquivos desejar."
-    },
-    {
-      "q": "Meus documentos estão seguros?",
-      "a": "Sim. Eles são processados ​​totalmente offline via WebAssembly. 0 bytes são carregados."
-    }
-  ],
-  "badges": [
-    "Alvo de 100 KB",
-    "Segura",
-    "Rápida"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "Comprimir para 100 KB",
-  "supportCenter": "Centro de suporte",
-  "faqTitle": "Perguntas frequentes"
+  ]
 }

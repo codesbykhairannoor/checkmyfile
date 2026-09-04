@@ -1,79 +1,23 @@
 {
-  "title": "Comprimi PDF a 100KB",
-  "h1": "Comprimi file PDF fino a 100KB online",
-  "description": "Riduci completamente i tuoi documenti PDF di grandi dimensioni sotto i 100 KB per portali governativi, domande di lavoro o moduli per visti nel tuo browser.",
+  "id": "compress-pdf-to-100kb",
+  "supportCenter": true,
+  "heroTitle": "Comprimi PDF a 100KB senza perdere la qualità",
+  "heroDescription": "Riduci i tuoi file PDF fino a 100KB o meno direttamente nel tuo browser. Perfetto per allegati e-mail e condivisione rapida. 100% privato.",
   "sections": [
     {
-      "type": "resize_hero_features",
-      "title": "Riduci il PDF a 100KB in modo istantaneo e sicuro",
-      "content": "Hai difficoltà con i rigidi limiti di caricamento di 100 KB su portali governativi, siti di lavoro o richieste di visto? Il nostro compressore locale ottimizza il tuo file PDF inferiore a 100 KB in pochi secondi.",
-      "badgeText": "Obiettivo 100KB"
+      "type": "grayscale_geo_targeting",
+      "subTitle": "Motore di compressione locale",
+      "subContent": "Il nostro motore WASM avanzato comprime il tuo PDF localmente. Nessun limite di file."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "Come comprimere PDF sotto i 100KB",
-      "badgeText": "Guida rapida",
-      "steps": [
-        {
-          "title": "Aggiungi documento PDF",
-          "description": "Trascina il tuo file PDF nel compressore lato client."
-        },
-        {
-          "title": "Seleziona destinazione 100KB",
-          "description": "Scegli la compressione forte per indirizzare automaticamente le dimensioni inferiori a 100 KB."
-        },
-        {
-          "title": "Salva PDF ottimizzato",
-          "description": "Scarica immediatamente il tuo PDF compresso, pronto per essere caricato."
-        }
-      ]
+      "type": "organize_privacy_security",
+      "subTitle": "Conservazione dei dati pari a zero",
+      "subContent": "Poiché i file non lasciano mai il tuo dispositivo, i tuoi dati privati ​​rimangono solo tuoi."
     },
     {
-      "type": "protect_geo_targeting",
-      "title": "Perfetto per portali CPNS, Visa e borse di studio",
-      "content": "Non devi preoccuparti dei limiti lato server. Tutta la compressione avviene nella sandbox del browser locale, garantendo il rispetto assoluto delle regole di sicurezza.",
-      "subTitle": "Carica in tutta tranquillità",
-      "subContent": "Elaboriamo i tuoi documenti sensibili (scansione della carta d'identità, passaporto, CV) al 100% a livello locale. Zero rischi di perdita di dati.",
-      "badgeText": "Carica in tutta tranquillità"
-    },
-    {
-      "type": "compare_privacy_security",
-      "title": "Gestione della densità senza perdite",
-      "content": "Ottimizza la risoluzione dell'immagine e le scale DPI per raggiungere la soglia di 100 KB senza rendere i testi sfocati illeggibili."
-    },
-    {
-      "type": "watermark_performance",
-      "title": "CPNS pronto",
-      "content": "Visto approvato",
-      "badgeText": "Meno di 100KB"
+      "type": "metadata_performance",
+      "subTitle": "Velocissimo 100KB",
+      "subContent": "Raggiungi la dimensione target di 100 KB in millisecondi senza ritardi del server."
     }
-  ],
-  "faqs": [
-    {
-      "q": "Come posso assicurarmi che il file sia inferiore a 100 KB?",
-      "a": "Seleziona la preimpostazione di compressione \"Forte\". Il nostro strumento ottimizza i vettori e rasterizza gradienti complessi per adattarli al tuo file inferiore a 100 KB."
-    },
-    {
-      "q": "C'è un limite al numero di file che posso comprimere?",
-      "a": "No. Poiché l'elaborazione viene eseguita localmente nella memoria del browser, puoi comprimere tutti i file che desideri."
-    },
-    {
-      "q": "I miei documenti sono al sicuro?",
-      "a": "SÌ. Vengono elaborati interamente offline tramite WebAssembly. Vengono caricati 0 byte."
-    }
-  ],
-  "badges": [
-    "Obiettivo 100KB",
-    "Sicura",
-    "Veloce"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "Comprimi a 100KB",
-  "supportCenter": "Centro di supporto",
-  "faqTitle": "Domande frequenti"
+  ]
 }

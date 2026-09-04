@@ -1,0 +1,23 @@
+{
+  "id": "convert-scanned-pdf-to-text",
+  "supportCenter": true,
+  "heroTitle": "A beolvasott PDF-fájlokat szerkeszthető szöveggé alakíthatja",
+  "heroDescription": "Használjon fejlett böngészőalapú OCR-t a beolvasott képekből és a nem kereshető PDF-fájlokból történő szöveg kivonásához. 100% ingyenes és privát.",
+  "sections": [
+    {
+      "type": "edit_geo_targeting",
+      "subTitle": "WebAssembly OCR",
+      "subContent": "A Tesseract OCR közvetlenül a böngészőben fut. Nincsenek felhő API-k érintettek."
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "Bizalmas kivonat",
+      "subContent": "Biztonságosan kivonhatja a szöveget az érzékeny személyi igazolványokból vagy orvosi feljegyzésekből."
+    },
+    {
+      "type": "watermark_performance",
+      "subTitle": "Nagy pontosságú",
+      "subContent": "Több nyelv és ferde szkennelés támogatása."
+    }
+  ]
+}

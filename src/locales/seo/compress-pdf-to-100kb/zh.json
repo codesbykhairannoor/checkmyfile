@@ -1,79 +1,23 @@
 {
-  "title": "将 PDF 压缩至 100KB",
-  "h1": "在线将 PDF 文件压缩至 100KB",
-  "description": "完全在浏览器中将政府门户网站、工作申请或签证表格的大型 PDF 文档缩小到 100KB 以下。",
+  "id": "compress-pdf-to-100kb",
+  "supportCenter": true,
+  "heroTitle": "Compress PDF to 100KB Without Losing Quality",
+  "heroDescription": "Shrink your PDF files down to 100KB or less directly in your browser. Perfect for email attachments and fast sharing. 100% private.",
   "sections": [
     {
-      "type": "resize_hero_features",
-      "title": "立即安全地将 PDF 缩小至 100KB",
-      "content": "还在为政府门户网站、求职网站或签证申请严格的 100KB 上传限制而烦恼吗？ 我们的本地压缩器可在几秒钟内将您的 PDF 文件优化到 100KB 以下。",
-      "badgeText": "100KB目标"
+      "type": "grayscale_geo_targeting",
+      "subTitle": "Local Compression Engine",
+      "subContent": "Our advanced WASM engine compresses your PDF locally. No file limits."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "如何将 PDF 压缩到 100KB 以下",
-      "badgeText": "快速指南",
-      "steps": [
-        {
-          "title": "添加 PDF 文档",
-          "description": "将 PDF 文件放入客户端压缩器中。"
-        },
-        {
-          "title": "选择 100KB 目标",
-          "description": "选择强压缩以自动将大小目标控制在 100KB 以下。"
-        },
-        {
-          "title": "保存优化的 PDF",
-          "description": "立即下载压缩的 PDF，准备上传。"
-        }
-      ]
+      "type": "organize_privacy_security",
+      "subTitle": "Zero Data Retention",
+      "subContent": "Since files never leave your device, your private data remains yours alone."
     },
     {
-      "type": "protect_geo_targeting",
-      "title": "非常适合 CPNS、签证和奖学金门户",
-      "content": "无需担心服务器端限制。 所有压缩都在本地浏览器沙箱中进行，确保绝对符合安全规则。",
-      "subTitle": "安心上传",
-      "subContent": "我们 100% 在本地处理您的敏感文件（身份证扫描件、护照、简历）。 数据泄露风险为零。",
-      "badgeText": "安心上传"
-    },
-    {
-      "type": "compare_privacy_security",
-      "title": "无损密度管理",
-      "content": "优化图像分辨率和 DPI 缩放以达到 100KB 阈值，而不会将文本变成难以辨认的模糊。"
-    },
-    {
-      "type": "watermark_performance",
-      "title": "CPNS 就绪",
-      "content": "签证获批",
-      "badgeText": "100KB以下"
+      "type": "metadata_performance",
+      "subTitle": "Lightning Fast 100KB",
+      "subContent": "Hit your 100KB target size in milliseconds without server delays."
     }
-  ],
-  "faqs": [
-    {
-      "q": "如何确保文件小于 100KB？",
-      "a": "选择“强”压缩预设。 我们的工具可优化矢量并栅格化复杂的渐变，以适应 100KB 以下的文件。"
-    },
-    {
-      "q": "我可以压缩的文件数量有限制吗？",
-      "a": "不会。由于处理在浏览器内存中本地运行，因此您可以压缩任意数量的文件。"
-    },
-    {
-      "q": "我的文件安全吗？",
-      "a": "是的。 它们通过 WebAssembly 完全离线处理。 已上传 0 字节。"
-    }
-  ],
-  "badges": [
-    "100KB目标",
-    "安全的",
-    "快速地"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "压缩至100KB",
-  "supportCenter": "支持中心",
-  "faqTitle": "常见问题解答"
+  ]
 }

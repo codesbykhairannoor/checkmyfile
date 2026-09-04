@@ -1,79 +1,23 @@
 {
-  "title": "Nén PDF thành 100KB",
-  "h1": "Nén tệp PDF thành 100KB trực tuyến",
-  "description": "Thu nhỏ tài liệu PDF lớn của bạn xuống dưới 100KB cho các cổng thông tin chính phủ, đơn xin việc hoặc biểu mẫu thị thực hoàn toàn trong trình duyệt của bạn.",
+  "id": "compress-pdf-to-100kb",
+  "supportCenter": true,
+  "heroTitle": "Nén PDF thành 100KB mà không làm giảm chất lượng",
+  "heroDescription": "Thu nhỏ tệp PDF của bạn xuống còn 100KB hoặc ít hơn trực tiếp trong trình duyệt của bạn. Hoàn hảo cho việc đính kèm email và chia sẻ nhanh chóng. 100% riêng tư.",
   "sections": [
     {
-      "type": "resize_hero_features",
-      "title": "Thu nhỏ PDF xuống 100KB ngay lập tức và an toàn",
-      "content": "Bạn đang gặp khó khăn với giới hạn tải lên 100KB nghiêm ngặt trên các cổng thông tin chính phủ, trang web việc làm hoặc đơn xin thị thực? Trình nén cục bộ của chúng tôi tối ưu hóa tệp PDF của bạn dưới 100KB trong vài giây.",
-      "badgeText": "Mục tiêu 100KB"
+      "type": "grayscale_geo_targeting",
+      "subTitle": "Công cụ nén cục bộ",
+      "subContent": "Công cụ WASM tiên tiến của chúng tôi nén tệp PDF của bạn cục bộ. Không có giới hạn tập tin."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "Cách nén PDF dưới 100KB",
-      "badgeText": "Hướng dẫn nhanh",
-      "steps": [
-        {
-          "title": "Thêm tài liệu PDF",
-          "description": "Thả tệp PDF của bạn vào máy nén phía máy khách."
-        },
-        {
-          "title": "Chọn mục tiêu 100KB",
-          "description": "Chọn nén mạnh để tự động nhắm mục tiêu kích thước dưới 100KB."
-        },
-        {
-          "title": "Lưu PDF được tối ưu hóa",
-          "description": "Tải xuống bản PDF nén của bạn ngay lập tức, sẵn sàng tải lên."
-        }
-      ]
+      "type": "organize_privacy_security",
+      "subTitle": "Không lưu giữ dữ liệu",
+      "subContent": "Vì các tập tin không bao giờ rời khỏi thiết bị của bạn nên dữ liệu riêng tư vẫn là của riêng bạn."
     },
     {
-      "type": "protect_geo_targeting",
-      "title": "Hoàn hảo cho Cổng thông tin CPNS, Visa và Học bổng",
-      "content": "Không cần phải lo lắng về giới hạn phía máy chủ. Tất cả quá trình nén diễn ra trong hộp cát trình duyệt cục bộ của bạn, đảm bảo tuân thủ tuyệt đối các quy tắc bảo mật.",
-      "subTitle": "Tải lên với sự an tâm",
-      "subContent": "Chúng tôi xử lý các tài liệu nhạy cảm của bạn (quét CMND, hộ chiếu, CV) 100% tại địa phương. Không có nguy cơ rò rỉ dữ liệu.",
-      "badgeText": "Tải lên với sự an tâm"
-    },
-    {
-      "type": "compare_privacy_security",
-      "title": "Quản lý mật độ không mất dữ liệu",
-      "content": "Tối ưu hóa độ phân giải hình ảnh và thang đo DPI để đạt ngưỡng 100KB mà không làm văn bản bị mờ đến mức khó đọc."
-    },
-    {
-      "type": "watermark_performance",
-      "title": "CPNS đã sẵn sàng",
-      "content": "Visa được phê duyệt",
-      "badgeText": "Dưới 100KB"
+      "type": "metadata_performance",
+      "subTitle": "Nhanh như chớp 100KB",
+      "subContent": "Đạt kích thước mục tiêu 100KB của bạn trong một phần nghìn giây mà không bị chậm trễ máy chủ."
     }
-  ],
-  "faqs": [
-    {
-      "q": "Làm cách nào để đảm bảo tệp dưới 100KB?",
-      "a": "Chọn cài đặt trước nén 'Mạnh'. Công cụ của chúng tôi tối ưu hóa vectơ và rasterize các gradient phức tạp để vừa với tệp của bạn dưới 100KB."
-    },
-    {
-      "q": "Có giới hạn về số lượng tệp tôi có thể nén không?",
-      "a": "Không. Vì quá trình xử lý diễn ra cục bộ trong bộ nhớ trình duyệt của bạn nên bạn có thể nén bao nhiêu tệp tùy thích."
-    },
-    {
-      "q": "Tài liệu của tôi có an toàn không?",
-      "a": "Đúng. Chúng được xử lý hoàn toàn ngoại tuyến thông qua WebAssugging. 0 byte được tải lên."
-    }
-  ],
-  "badges": [
-    "Mục tiêu 100KB",
-    "Chắc chắn",
-    "Nhanh"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "Nén xuống 100KB",
-  "supportCenter": "Trung tâm hỗ trợ",
-  "faqTitle": "Câu hỏi thường gặp"
+  ]
 }

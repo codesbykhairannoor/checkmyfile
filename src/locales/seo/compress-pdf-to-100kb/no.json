@@ -1,79 +1,23 @@
 {
-  "title": "Komprimer PDF til 100KB",
-  "h1": "Komprimer PDF-filer til 100 KB online",
-  "description": "Krymp dine store PDF-dokumenter under 100 KB for offentlige portaler, jobbsøknader eller visumskjemaer helt i nettleseren din.",
+  "id": "compress-pdf-to-100kb",
+  "supportCenter": true,
+  "heroTitle": "Komprimer PDF til 100KB uten å miste kvalitet",
+  "heroDescription": "Krymp PDF-filene dine ned til 100 KB eller mindre direkte i nettleseren din. Perfekt for e-postvedlegg og rask deling. 100% privat.",
   "sections": [
     {
-      "type": "resize_hero_features",
-      "title": "Krymp PDF til 100KB øyeblikkelig og sikkert",
-      "content": "Sliter du med strenge 100KB opplastingsgrenser på offentlige portaler, jobbsider eller visumsøknader? Vår lokale kompressor optimerer PDF-filen din under 100KB på sekunder.",
-      "badgeText": "100 KB mål"
+      "type": "grayscale_geo_targeting",
+      "subTitle": "Lokal kompresjonsmotor",
+      "subContent": "Vår avanserte WASM-motor komprimerer PDF-en din lokalt. Ingen filgrenser."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "Hvordan komprimere PDF under 100KB",
-      "badgeText": "Hurtigguide",
-      "steps": [
-        {
-          "title": "Legg til PDF-dokument",
-          "description": "Slipp PDF-filen i kompressoren på klientsiden."
-        },
-        {
-          "title": "Velg 100KB mål",
-          "description": "Velg sterk komprimering for automatisk å målrette størrelse under 100 KB."
-        },
-        {
-          "title": "Lagre optimalisert PDF",
-          "description": "Last ned din komprimerte PDF umiddelbart, klar til å lastes opp."
-        }
-      ]
+      "type": "organize_privacy_security",
+      "subTitle": "Null dataoppbevaring",
+      "subContent": "Siden filer aldri forlater enheten din, forblir de private dataene dine alene."
     },
     {
-      "type": "protect_geo_targeting",
-      "title": "Perfekt for CPNS-, Visa- og stipendportaler",
-      "content": "Du trenger ikke å bekymre deg for grenser på serversiden. All komprimering finner sted i din lokale nettlesersandkasse, noe som sikrer absolutt overholdelse av sikkerhetsreglene.",
-      "subTitle": "Last opp med fred i sinnet",
-      "subContent": "Vi behandler dine sensitive dokumenter (ID-kortskanning, pass, CV) 100 % lokalt. Null fare for datalekkasje.",
-      "badgeText": "Last opp med fred i sinnet"
-    },
-    {
-      "type": "compare_privacy_security",
-      "title": "Lossless Density Management",
-      "content": "Optimaliserer bildeoppløsning og DPI-skalaer for å nå terskelen på 100KB uten å gjøre tekst om til uleselig uskarphet."
-    },
-    {
-      "type": "watermark_performance",
-      "title": "CPNS klar",
-      "content": "Visum godkjent",
-      "badgeText": "Under 100KB"
+      "type": "metadata_performance",
+      "subTitle": "Lynrask 100KB",
+      "subContent": "Nå målstørrelsen på 100 KB på millisekunder uten serverforsinkelser."
     }
-  ],
-  "faqs": [
-    {
-      "q": "Hvordan sikrer jeg at filen er under 100KB?",
-      "a": "Velg forhåndsinnstillingen 'Sterk' komprimering. Verktøyet vårt optimerer vektorer og rasteriserer komplekse gradienter for å passe til filen din under 100KB."
-    },
-    {
-      "q": "Er det en grense for hvor mange filer jeg kan komprimere?",
-      "a": "Nei. Siden behandlingen kjøres lokalt i nettleserens minne, kan du komprimere så mange filer du vil."
-    },
-    {
-      "q": "Er dokumentene mine trygge?",
-      "a": "Ja. De behandles helt offline via WebAssembly. 0 byte er lastet opp."
-    }
-  ],
-  "badges": [
-    "100 KB mål",
-    "Sikker",
-    "Rask"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "Komprimer til 100KB",
-  "supportCenter": "Støttesenter",
-  "faqTitle": "Ofte stilte spørsmål"
+  ]
 }

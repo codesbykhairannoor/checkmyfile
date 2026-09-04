@@ -1,79 +1,23 @@
 {
-  "title": "Compress PDF to 100KB",
-  "h1": "Compress PDF Files to 100KB Online",
-  "description": "Shrink your large PDF documents under 100KB for government portals, job applications, or visa forms completely in your browser.",
+  "id": "compress-pdf-to-100kb",
+  "supportCenter": true,
+  "heroTitle": "Compress PDF to 100KB Without Losing Quality",
+  "heroDescription": "Shrink your PDF files down to 100KB or less directly in your browser. Perfect for email attachments and fast sharing. 100% private.",
   "sections": [
     {
-      "type": "resize_hero_features",
-      "title": "Shrink PDF to 100KB Instantly & Securely",
-      "content": "Struggling with strict 100KB upload limits on government portals, job sites, or visa applications? Our local compressor optimizes your PDF file under 100KB in seconds.",
-      "badgeText": "100KB Target"
+      "type": "grayscale_geo_targeting",
+      "subTitle": "Local Compression Engine",
+      "subContent": "Our advanced WASM engine compresses your PDF locally. No file limits."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Compress PDF under 100KB",
-      "badgeText": "Quick Guide",
-      "steps": [
-        {
-          "title": "Add PDF Document",
-          "description": "Drop your PDF file into the client-side compressor."
-        },
-        {
-          "title": "Select 100KB Target",
-          "description": "Choose strong compression to automatically target size under 100KB."
-        },
-        {
-          "title": "Save Optimized PDF",
-          "description": "Download your compressed PDF instantly, ready to upload."
-        }
-      ]
+      "type": "organize_privacy_security",
+      "subTitle": "Zero Data Retention",
+      "subContent": "Since files never leave your device, your private data remains yours alone."
     },
     {
-      "type": "protect_geo_targeting",
-      "title": "Perfect for CPNS, Visa, and Scholarship Portals",
-      "content": "No need to worry about server-side limits. All compression takes place in your local browser sandbox, ensuring absolute compliance with security rules.",
-      "subTitle": "Upload with Peace of Mind",
-      "subContent": "We process your sensitive documents (ID card scan, passport, CV) 100% locally. Zero risk of data leak.",
-      "badgeText": "Upload with Peace of Mind"
-    },
-    {
-      "type": "compare_privacy_security",
-      "title": "Lossless Density Management",
-      "content": "Optimizes image resolution and DPI scales to hit the 100KB threshold without turning texts into illegible blur."
-    },
-    {
-      "type": "watermark_performance",
-      "title": "CPNS Ready",
-      "content": "Visa Approved",
-      "badgeText": "Under 100KB"
+      "type": "metadata_performance",
+      "subTitle": "Lightning Fast 100KB",
+      "subContent": "Hit your 100KB target size in milliseconds without server delays."
     }
-  ],
-  "faqs": [
-    {
-      "q": "How do I ensure the file is under 100KB?",
-      "a": "Select the 'Strong' compression preset. Our tool optimizes vectors and rasterizes complex gradients to fit your file under 100KB."
-    },
-    {
-      "q": "Is there a limit on how many files I can compress?",
-      "a": "No. Since processing runs locally in your browser memory, you can compress as many files as you want."
-    },
-    {
-      "q": "Are my documents safe?",
-      "a": "Yes. They are processed entirely offline via WebAssembly. 0 bytes are uploaded."
-    }
-  ],
-  "badges": [
-    "100KB Target",
-    "Secure",
-    "Fast"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "Compress to 100KB",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  ]
 }

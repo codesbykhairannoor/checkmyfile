@@ -1,0 +1,23 @@
+{
+  "id": "convert-scanned-pdf-to-text",
+  "supportCenter": true,
+  "heroTitle": "הפוך קובצי PDF סרוקים לטקסט הניתן לעריכה",
+  "heroDescription": "השתמש ב-OCR מתקדם מבוסס דפדפן כדי לחלץ טקסט מתמונות סרוקות ומקובצי PDF בלתי ניתנים לחיפוש. 100% חינם ופרטי.",
+  "sections": [
+    {
+      "type": "edit_geo_targeting",
+      "subTitle": "WebAssembly OCR",
+      "subContent": "Tesseract OCR פועל ישירות בדפדפן שלך. לא מעורבים ממשקי API של ענן."
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "חילוץ סודי",
+      "subContent": "חלץ טקסט מתעודות זהות רגישות או רשומות רפואיות בצורה בטוחה."
+    },
+    {
+      "type": "watermark_performance",
+      "subTitle": "דיוק גבוה",
+      "subContent": "תמיכה במספר שפות וסריקות מוטות."
+    }
+  ]
+}

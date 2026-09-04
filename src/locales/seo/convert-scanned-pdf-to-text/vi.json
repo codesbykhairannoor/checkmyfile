@@ -1,0 +1,23 @@
+{
+  "id": "convert-scanned-pdf-to-text",
+  "supportCenter": true,
+  "heroTitle": "Biến các tệp PDF được quét thành văn bản có thể chỉnh sửa",
+  "heroDescription": "Sử dụng OCR dựa trên trình duyệt nâng cao để trích xuất văn bản từ hình ảnh được quét và các tệp PDF không thể tìm kiếm. 100% miễn phí và riêng tư.",
+  "sections": [
+    {
+      "type": "edit_geo_targeting",
+      "subTitle": "WebAssembly OCR",
+      "subContent": "Tesseract OCR chạy ngay trong trình duyệt của bạn. Không có API đám mây liên quan."
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "Khai thác bí mật",
+      "subContent": "Trích xuất văn bản từ thẻ ID nhạy cảm hoặc hồ sơ y tế một cách an toàn."
+    },
+    {
+      "type": "watermark_performance",
+      "subTitle": "Độ chính xác cao",
+      "subContent": "Hỗ trợ nhiều ngôn ngữ và quét sai lệch."
+    }
+  ]
+}

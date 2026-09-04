@@ -1,0 +1,23 @@
+{
+  "id": "merge-pdf-files-offline",
+  "supportCenter": true,
+  "heroTitle": "Hợp nhất các tệp PDF của bạn ngoại tuyến trong trình duyệt",
+  "heroDescription": "Kết hợp nhiều tài liệu PDF có độ nhạy cao mà không cần kết nối internet. Hoạt động hoàn toàn ngoại tuyến sau khi tải.",
+  "sections": [
+    {
+      "type": "excel_csv_geo_targeting",
+      "subTitle": "Hợp nhất ngoại tuyến",
+      "subContent": "Kết hợp các biểu mẫu thuế và tài liệu pháp lý của bạn mà không cần gửi chúng đi bất cứ đâu."
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "Quyền riêng tư cấp quân sự",
+      "subContent": "Chúng tôi đảm bảo quyền riêng tư tuyệt đối vì thực tế chúng tôi không thể nhìn thấy tệp của bạn."
+    },
+    {
+      "type": "metadata_performance",
+      "subTitle": "Xử lý tức thời",
+      "subContent": "Hợp nhất hàng trăm trang ngay lập tức bằng xử lý phía máy khách."
+    }
+  ]
+}

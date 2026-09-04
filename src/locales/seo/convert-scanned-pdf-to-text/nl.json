@@ -1,0 +1,23 @@
+{
+  "id": "convert-scanned-pdf-to-text",
+  "supportCenter": true,
+  "heroTitle": "Zet gescande PDF's om in bewerkbare tekst",
+  "heroDescription": "Gebruik geavanceerde browsergebaseerde OCR om tekst uit gescande afbeeldingen en ondoorzoekbare PDF's te extraheren. 100% gratis en privé.",
+  "sections": [
+    {
+      "type": "edit_geo_targeting",
+      "subTitle": "WebAssembly-OCR",
+      "subContent": "Tesseract OCR werkt rechtstreeks in uw browser. Er zijn geen cloud-API's bij betrokken."
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "Vertrouwelijke extractie",
+      "subContent": "Extraheer tekst veilig uit gevoelige identiteitskaarten of medische dossiers."
+    },
+    {
+      "type": "watermark_performance",
+      "subTitle": "Hoge nauwkeurigheid",
+      "subContent": "Ondersteuning voor meerdere talen en scheve scans."
+    }
+  ]
+}

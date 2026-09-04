@@ -1,0 +1,23 @@
+{
+  "id": "convert-scanned-pdf-to-text",
+  "supportCenter": true,
+  "heroTitle": "Muuta skannatut PDF-tiedostot muokattavaksi tekstiksi",
+  "heroDescription": "Käytä kehittynyttä selainpohjaista tekstintunnistusta tekstin poimimiseen skannatuista kuvista ja PDF-tiedostoista, joita ei voi hakea. 100% ilmainen ja yksityinen.",
+  "sections": [
+    {
+      "type": "edit_geo_targeting",
+      "subTitle": "WebAssembly OCR",
+      "subContent": "Tesseract OCR toimii suoraan selaimessasi. Ei pilvisovellusliittymiä mukana."
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "Luottamuksellinen purku",
+      "subContent": "Poimi tekstiä arkaluontoisista henkilökorteista tai lääketieteellisistä tiedoista turvallisesti."
+    },
+    {
+      "type": "watermark_performance",
+      "subTitle": "Korkea tarkkuus",
+      "subContent": "Tuki useille kielille ja vinoille skannauksille."
+    }
+  ]
+}

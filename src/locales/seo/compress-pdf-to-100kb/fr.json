@@ -1,79 +1,23 @@
 {
-  "title": "Compresser un PDF à 100 Ko",
-  "h1": "Compresser des fichiers PDF à 100 Ko en ligne",
-  "description": "Réduisez vos gros documents PDF à moins de 100 Ko pour les portails gouvernementaux, les demandes d'emploi ou les formulaires de visa entièrement dans votre navigateur.",
+  "id": "compress-pdf-to-100kb",
+  "supportCenter": true,
+  "heroTitle": "Compresser le PDF à 100 Ko sans perte de qualité",
+  "heroDescription": "Réduisez vos fichiers PDF à 100 Ko ou moins directement dans votre navigateur. Parfait pour les pièces jointes aux e-mails et le partage rapide. 100% privé.",
   "sections": [
     {
-      "type": "resize_hero_features",
-      "title": "Réduisez le PDF à 100 Ko instantanément et en toute sécurité",
-      "content": "Vous avez du mal à respecter des limites strictes de téléchargement de 100 Ko sur les portails gouvernementaux, les sites d'emploi ou les demandes de visa ? Notre compresseur local optimise votre fichier PDF de moins de 100 Ko en quelques secondes.",
-      "badgeText": "Cible de 100 Ko"
+      "type": "grayscale_geo_targeting",
+      "subTitle": "Moteur de compression local",
+      "subContent": "Notre moteur WASM avancé compresse votre PDF localement. Aucune limite de fichiers."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "Comment compresser un PDF de moins de 100 Ko",
-      "badgeText": "Guide rapide",
-      "steps": [
-        {
-          "title": "Ajouter un document PDF",
-          "description": "Déposez votre fichier PDF dans le compresseur côté client."
-        },
-        {
-          "title": "Sélectionnez la cible de 100 Ko",
-          "description": "Choisissez une compression forte pour cibler automatiquement une taille inférieure à 100 Ko."
-        },
-        {
-          "title": "Enregistrer le PDF optimisé",
-          "description": "Téléchargez instantanément votre PDF compressé, prêt à être téléchargé."
-        }
-      ]
+      "type": "organize_privacy_security",
+      "subTitle": "Aucune conservation des données",
+      "subContent": "Puisque les fichiers ne quittent jamais votre appareil, vos données privées restent les vôtres."
     },
     {
-      "type": "protect_geo_targeting",
-      "title": "Parfait pour les portails CPNS, visas et bourses",
-      "content": "Pas besoin de vous soucier des limites côté serveur. Toute compression a lieu dans le bac à sable de votre navigateur local, garantissant un respect absolu des règles de sécurité.",
-      "subTitle": "Téléchargez en toute sérénité",
-      "subContent": "Nous traitons vos documents sensibles (scan carte d'identité, passeport, CV) 100% localement. Zéro risque de fuite de données.",
-      "badgeText": "Téléchargez en toute sérénité"
-    },
-    {
-      "type": "compare_privacy_security",
-      "title": "Gestion de la densité sans perte",
-      "content": "Optimise la résolution de l'image et les échelles DPI pour atteindre le seuil de 100 Ko sans transformer les textes en flou illisible."
-    },
-    {
-      "type": "watermark_performance",
-      "title": "Prêt pour le CPNS",
-      "content": "Visa approuvé",
-      "badgeText": "Moins de 100 Ko"
+      "type": "metadata_performance",
+      "subTitle": "Rapide comme l'éclair 100 Ko",
+      "subContent": "Atteignez votre taille cible de 100 Ko en millisecondes sans retard du serveur."
     }
-  ],
-  "faqs": [
-    {
-      "q": "Comment puis-je m'assurer que le fichier fait moins de 100 Ko ?",
-      "a": "Sélectionnez le préréglage de compression « Fort ». Notre outil optimise les vecteurs et rastérise les dégradés complexes pour adapter votre fichier à moins de 100 Ko."
-    },
-    {
-      "q": "Y a-t-il une limite au nombre de fichiers que je peux compresser ?",
-      "a": "Non. Puisque le traitement s'exécute localement dans la mémoire de votre navigateur, vous pouvez compresser autant de fichiers que vous le souhaitez."
-    },
-    {
-      "q": "Mes documents sont-ils en sécurité ?",
-      "a": "Oui. Ils sont traités entièrement hors ligne via WebAssembly. 0 octet est téléchargé."
-    }
-  ],
-  "badges": [
-    "Cible de 100 Ko",
-    "Sécurisé",
-    "Rapide"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "Compresser à 100 Ko",
-  "supportCenter": "Centre d'assistance",
-  "faqTitle": "Foire aux questions"
+  ]
 }

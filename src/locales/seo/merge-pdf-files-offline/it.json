@@ -1,0 +1,23 @@
+{
+  "id": "merge-pdf-files-offline",
+  "supportCenter": true,
+  "heroTitle": "Unisci i tuoi PDF offline nel browser",
+  "heroDescription": "Combina più documenti PDF altamente sensibili senza una connessione Internet. Funziona completamente offline dopo il caricamento.",
+  "sections": [
+    {
+      "type": "excel_csv_geo_targeting",
+      "subTitle": "Unione offline",
+      "subContent": "Combina i tuoi moduli fiscali e documenti legali senza inviarli da nessuna parte."
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "Privacy di livello militare",
+      "subContent": "Garantiamo la privacy assoluta perché fisicamente non possiamo vedere i tuoi file."
+    },
+    {
+      "type": "metadata_performance",
+      "subTitle": "Elaborazione istantanea",
+      "subContent": "Unisci centinaia di pagine istantaneamente con l'elaborazione lato client."
+    }
+  ]
+}

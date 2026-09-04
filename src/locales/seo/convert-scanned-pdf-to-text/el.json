@@ -1,0 +1,23 @@
+{
+  "id": "convert-scanned-pdf-to-text",
+  "supportCenter": true,
+  "heroTitle": "Μετατρέψτε τα σαρωμένα PDF σε επεξεργάσιμο κείμενο",
+  "heroDescription": "Χρησιμοποιήστε προηγμένο OCR που βασίζεται σε πρόγραμμα περιήγησης για να εξαγάγετε κείμενο από σαρωμένες εικόνες και αρχεία PDF που δεν μπορούν να αναζητηθούν. 100% δωρεάν και ιδιωτικό.",
+  "sections": [
+    {
+      "type": "edit_geo_targeting",
+      "subTitle": "WebAssembly OCR",
+      "subContent": "Το Tesseract OCR εκτελείται απευθείας στο πρόγραμμα περιήγησής σας. Δεν εμπλέκονται API cloud."
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "Εμπιστευτική Εξαγωγή",
+      "subContent": "Εξαγωγή κειμένου από ευαίσθητα δελτία ταυτότητας ή ιατρικά αρχεία με ασφάλεια."
+    },
+    {
+      "type": "watermark_performance",
+      "subTitle": "Υψηλή Ακρίβεια",
+      "subContent": "Υποστήριξη για πολλές γλώσσες και λοξές σαρώσεις."
+    }
+  ]
+}

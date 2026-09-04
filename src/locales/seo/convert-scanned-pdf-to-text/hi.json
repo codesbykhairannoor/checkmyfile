@@ -1,0 +1,23 @@
+{
+  "id": "convert-scanned-pdf-to-text",
+  "supportCenter": true,
+  "heroTitle": "स्कैन की गई पीडीएफ़ को संपादन योग्य टेक्स्ट में बदलें",
+  "heroDescription": "स्कैन की गई छवियों और न खोजी जा सकने वाली पीडीएफ़ से पाठ निकालने के लिए उन्नत ब्राउज़र-आधारित ओसीआर का उपयोग करें। 100% मुफ़्त और निजी।",
+  "sections": [
+    {
+      "type": "edit_geo_targeting",
+      "subTitle": "वेबअसेंबली ओसीआर",
+      "subContent": "Tesseract OCR सीधे आपके ब्राउज़र में चलता है। कोई क्लाउड एपीआई शामिल नहीं है।"
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "गोपनीय निष्कर्षण",
+      "subContent": "संवेदनशील आईडी कार्ड या मेडिकल रिकॉर्ड से टेक्स्ट सुरक्षित रूप से निकालें।"
+    },
+    {
+      "type": "watermark_performance",
+      "subTitle": "उच्च सटीकता",
+      "subContent": "एकाधिक भाषाओं और तिरछे स्कैन के लिए समर्थन।"
+    }
+  ]
+}

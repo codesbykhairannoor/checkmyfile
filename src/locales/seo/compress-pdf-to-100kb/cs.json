@@ -1,79 +1,23 @@
 {
-  "title": "Komprimujte PDF na 100 KB",
-  "h1": "Komprimujte soubory PDF na 100 kB online",
-  "description": "Zmenšete své velké dokumenty PDF pod 100 kB pro vládní portály, žádosti o zaměstnání nebo vízové ​​formuláře zcela ve svém prohlížeči.",
+  "id": "compress-pdf-to-100kb",
+  "supportCenter": true,
+  "heroTitle": "Komprimujte PDF na 100 kB bez ztráty kvality",
+  "heroDescription": "Zmenšete své soubory PDF na 100 kB nebo méně přímo ve vašem prohlížeči. Ideální pro e-mailové přílohy a rychlé sdílení. 100% soukromé.",
   "sections": [
     {
-      "type": "resize_hero_features",
-      "title": "Zmenšete PDF na 100 kB okamžitě a bezpečně",
-      "content": "Potýkáte se s přísnými limity pro nahrávání na 100 kB na vládních portálech, pracovních stránkách nebo žádostech o víza? Náš místní kompresor optimalizuje váš soubor PDF do 100 kB během několika sekund.",
-      "badgeText": "Cíl 100 kB"
+      "type": "grayscale_geo_targeting",
+      "subTitle": "Lokální kompresní motor",
+      "subContent": "Náš pokročilý WASM engine komprimuje vaše PDF lokálně. Žádné limity souborů."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "Jak komprimovat PDF pod 100 kB",
-      "badgeText": "Rychlý průvodce",
-      "steps": [
-        {
-          "title": "Přidat dokument PDF",
-          "description": "Přetáhněte soubor PDF do kompresoru na straně klienta."
-        },
-        {
-          "title": "Vyberte cíl 100 kB",
-          "description": "Chcete-li automaticky cílit na velikost pod 100 kB, zvolte silnou kompresi."
-        },
-        {
-          "title": "Uložit optimalizované PDF",
-          "description": "Okamžitě si stáhněte komprimovaný soubor PDF připravený k nahrání."
-        }
-      ]
+      "type": "organize_privacy_security",
+      "subTitle": "Nulové uchovávání dat",
+      "subContent": "Protože soubory nikdy neopustí vaše zařízení, vaše soukromá data zůstávají pouze vaše."
     },
     {
-      "type": "protect_geo_targeting",
-      "title": "Ideální pro portály CPNS, víza a stipendia",
-      "content": "Není třeba se obávat omezení na straně serveru. Veškerá komprese probíhá v karanténě vašeho místního prohlížeče, což zajišťuje absolutní soulad s bezpečnostními pravidly.",
-      "subTitle": "Nahrajte s klidem v duši",
-      "subContent": "Vaše citlivé dokumenty (sken občanského průkazu, pas, životopis) zpracujeme 100% lokálně. Nulové riziko úniku dat.",
-      "badgeText": "Nahrajte s klidem v duši"
-    },
-    {
-      "type": "compare_privacy_security",
-      "title": "Bezztrátové řízení hustoty",
-      "content": "Optimalizuje rozlišení obrazu a měřítka DPI tak, aby dosáhly prahu 100 kB, aniž by se texty změnily na nečitelné rozmazání."
-    },
-    {
-      "type": "watermark_performance",
-      "title": "CPNS připraveno",
-      "content": "Vízum schváleno",
-      "badgeText": "Méně než 100 kB"
+      "type": "metadata_performance",
+      "subTitle": "Bleskově rychlý 100 kB",
+      "subContent": "Dosáhněte cílové velikosti 100 kB v milisekundách bez zpoždění serveru."
     }
-  ],
-  "faqs": [
-    {
-      "q": "Jak zajistím, že soubor je menší než 100 kB?",
-      "a": "Vyberte předvolbu komprese „Silná“. Náš nástroj optimalizuje vektory a rastruje složité přechody, aby se vešly do souboru do 100 kB."
-    },
-    {
-      "q": "Existuje nějaké omezení počtu souborů, které mohu komprimovat?",
-      "a": "Ne. Protože zpracování probíhá lokálně v paměti vašeho prohlížeče, můžete komprimovat tolik souborů, kolik chcete."
-    },
-    {
-      "q": "Jsou moje dokumenty v bezpečí?",
-      "a": "Ano. Zpracovávají se zcela offline prostřednictvím WebAssembly. Nahráno 0 bajtů."
-    }
-  ],
-  "badges": [
-    "Cíl 100 kB",
-    "Zajistit",
-    "Rychle"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "Komprimujte na 100 kB",
-  "supportCenter": "Centrum podpory",
-  "faqTitle": "Často kladené otázky"
+  ]
 }

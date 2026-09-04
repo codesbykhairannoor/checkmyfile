@@ -1,0 +1,23 @@
+{
+  "id": "convert-scanned-pdf-to-text",
+  "supportCenter": true,
+  "heroTitle": "เปลี่ยน PDF ที่สแกนเป็นข้อความที่แก้ไขได้",
+  "heroDescription": "ใช้ OCR บนเบราว์เซอร์ขั้นสูงเพื่อแยกข้อความจากรูปภาพที่สแกนและ PDF ที่ไม่สามารถค้นหาได้ ฟรี 100% และเป็นส่วนตัว",
+  "sections": [
+    {
+      "type": "edit_geo_targeting",
+      "subTitle": "OCR การประกอบเว็บ",
+      "subContent": "Tesseract OCR ทำงานในเบราว์เซอร์ของคุณ ไม่มี Cloud API ที่เกี่ยวข้อง"
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "การสกัดที่เป็นความลับ",
+      "subContent": "แยกข้อความจากบัตรประจำตัวที่ละเอียดอ่อนหรือเวชระเบียนได้อย่างปลอดภัย"
+    },
+    {
+      "type": "watermark_performance",
+      "subTitle": "มีความแม่นยำสูง",
+      "subContent": "รองรับหลายภาษาและการสแกนแบบเบ้"
+    }
+  ]
+}

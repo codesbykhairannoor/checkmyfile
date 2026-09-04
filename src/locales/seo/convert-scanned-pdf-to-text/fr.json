@@ -1,0 +1,23 @@
+{
+  "id": "convert-scanned-pdf-to-text",
+  "supportCenter": true,
+  "heroTitle": "Transformez les PDF numérisés en texte modifiable",
+  "heroDescription": "Utilisez l'OCR avancé basé sur un navigateur pour extraire le texte des images numérisées et des PDF impossibles à rechercher. 100% gratuit et privé.",
+  "sections": [
+    {
+      "type": "edit_geo_targeting",
+      "subTitle": "OCR de WebAssembly",
+      "subContent": "Tesseract OCR s'exécute directement dans votre navigateur. Aucune API cloud impliquée."
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "Extraction confidentielle",
+      "subContent": "Extrayez le texte de cartes d’identité sensibles ou de dossiers médicaux en toute sécurité."
+    },
+    {
+      "type": "watermark_performance",
+      "subTitle": "Haute précision",
+      "subContent": "Prise en charge de plusieurs langues et analyses asymétriques."
+    }
+  ]
+}

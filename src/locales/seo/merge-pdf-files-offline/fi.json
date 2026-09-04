@@ -1,0 +1,23 @@
+{
+  "id": "merge-pdf-files-offline",
+  "supportCenter": true,
+  "heroTitle": "Yhdistä PDF-tiedostosi offline-tilassa selaimessa",
+  "heroDescription": "Yhdistä useita erittäin arkaluonteisia PDF-dokumentteja ilman Internet-yhteyttä. Toimii täysin offline-tilassa latauksen jälkeen.",
+  "sections": [
+    {
+      "type": "excel_csv_geo_targeting",
+      "subTitle": "Offline yhdistäminen",
+      "subContent": "Yhdistä verolomakkeesi ja lakiasiakirjasi lähettämättä niitä minnekään."
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "Sotilastason yksityisyys",
+      "subContent": "Takaamme täydellisen yksityisyyden, koska emme fyysisesti näe tiedostojasi."
+    },
+    {
+      "type": "metadata_performance",
+      "subTitle": "Välitön käsittely",
+      "subContent": "Yhdistä 100 sivua välittömästi asiakaspuolen käsittelyllä."
+    }
+  ]
+}

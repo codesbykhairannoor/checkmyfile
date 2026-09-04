@@ -1,0 +1,23 @@
+{
+  "id": "convert-scanned-pdf-to-text",
+  "supportCenter": true,
+  "heroTitle": "Zamień zeskanowane pliki PDF w edytowalny tekst",
+  "heroDescription": "Użyj zaawansowanego OCR opartego na przeglądarce, aby wyodrębnić tekst ze zeskanowanych obrazów i nieprzeszukiwalnych plików PDF. 100% darmowy i prywatny.",
+  "sections": [
+    {
+      "type": "edit_geo_targeting",
+      "subTitle": "OCR zestawu WWW",
+      "subContent": "Tesseract OCR działa bezpośrednio w Twojej przeglądarce. Żadne interfejsy API w chmurze nie są zaangażowane."
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "Poufna ekstrakcja",
+      "subContent": "Bezpiecznie wyodrębniaj tekst z wrażliwych dowodów osobistych lub dokumentacji medycznej."
+    },
+    {
+      "type": "watermark_performance",
+      "subTitle": "Wysoka dokładność",
+      "subContent": "Obsługa wielu języków i przekrzywionych skanów."
+    }
+  ]
+}

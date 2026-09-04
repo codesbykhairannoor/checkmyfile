@@ -1,79 +1,23 @@
 {
-  "title": "PDFを100KBに圧縮",
-  "h1": "オンラインで PDF ファイルを 100KB に圧縮",
-  "description": "政府ポータル、求職申請書、ビザ申請書などの大きな PDF ドキュメントをブラウザで完全に 100 KB 未満に縮小します。",
+  "id": "compress-pdf-to-100kb",
+  "supportCenter": true,
+  "heroTitle": "品質を損なうことなくPDFを100KBに圧縮",
+  "heroDescription": "ブラウザで PDF ファイルを直接 100KB 以下に縮小します。 電子メールの添付や高速共有に最適です。 100%プライベートです。",
   "sections": [
     {
-      "type": "resize_hero_features",
-      "title": "PDFを即時かつ安全に100KBに縮小",
-      "content": "政府ポータル、求人サイト、またはビザ申請における 100KB という厳しいアップロード制限に苦労していますか? 当社のローカル コンプレッサーは、100KB 未満の PDF ファイルを数秒で最適化します。",
-      "badgeText": "100KBターゲット"
+      "type": "grayscale_geo_targeting",
+      "subTitle": "ローカル圧縮エンジン",
+      "subContent": "当社の高度な WASM エンジンは、PDF をローカルで圧縮します。 ファイル制限はありません。"
     },
     {
-      "type": "split_how_to_steps",
-      "title": "PDFを100KB以下に圧縮する方法",
-      "badgeText": "クイックガイド",
-      "steps": [
-        {
-          "title": "PDFドキュメントを追加",
-          "description": "PDF ファイルをクライアント側のコンプレッサーにドロップします。"
-        },
-        {
-          "title": "100KBターゲットを選択",
-          "description": "自動的に 100KB 未満のサイズをターゲットにするには、強力な圧縮を選択します。"
-        },
-        {
-          "title": "最適化された PDF を保存",
-          "description": "圧縮 PDF をすぐにダウンロードして、アップロードする準備ができています。"
-        }
-      ]
+      "type": "organize_privacy_security",
+      "subTitle": "データ保持ゼロ",
+      "subContent": "ファイルがデバイスの外に出ることはないため、個人データは自分だけのものになります。"
     },
     {
-      "type": "protect_geo_targeting",
-      "title": "CPNS、ビザ、奨学金ポータルに最適",
-      "content": "サーバー側の制限を心配する必要はありません。 すべての圧縮はローカル ブラウザーのサンドボックスで行われ、セキュリティ ルールへの絶対的な準拠が保証されます。",
-      "subTitle": "安心してアップロード",
-      "subContent": "当社は機密文書 (ID カードのスキャン、パスポート、履歴書) を 100% ローカルで処理します。 データ漏洩のリスクゼロ。",
-      "badgeText": "安心してアップロード"
-    },
-    {
-      "type": "compare_privacy_security",
-      "title": "ロスレス密度管理",
-      "content": "テキストが判読不能になることなく、100KB のしきい値に達するように画像解像度と DPI スケールを最適化します。"
-    },
-    {
-      "type": "watermark_performance",
-      "title": "CPNS対応",
-      "content": "ビザ承認済み",
-      "badgeText": "100KB未満"
+      "type": "metadata_performance",
+      "subTitle": "超高速100KB",
+      "subContent": "サーバーの遅延なしに、ミリ秒単位で 100KB の目標サイズに達します。"
     }
-  ],
-  "faqs": [
-    {
-      "q": "ファイルが 100KB 未満であることを確認するにはどうすればよいですか?",
-      "a": "「強力」圧縮プリセットを選択します。 私たちのツールはベクターを最適化し、複雑なグラデーションをラスタライズしてファイルを 100 KB 未満に収めます。"
-    },
-    {
-      "q": "圧縮できるファイルの数に制限はありますか?",
-      "a": "いいえ。処理はブラウザのメモリ内でローカルに実行されるため、必要なだけファイルを圧縮できます。"
-    },
-    {
-      "q": "私の書類は安全ですか?",
-      "a": "はい。 これらは WebAssembly を介して完全にオフラインで処理されます。 0バイトがアップロードされました。"
-    }
-  ],
-  "badges": [
-    "100KBターゲット",
-    "安全な",
-    "速い"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "100KBに圧縮",
-  "supportCenter": "サポートセンター",
-  "faqTitle": "よくある質問"
+  ]
 }

@@ -1,79 +1,23 @@
 {
-  "title": "Comprimați PDF la 100KB",
-  "h1": "Comprimați fișierele PDF la 100 KB online",
-  "description": "Reduceți documentele PDF mari sub 100 KB pentru portaluri guvernamentale, cereri de angajare sau formulare de viză complet în browser.",
+  "id": "compress-pdf-to-100kb",
+  "supportCenter": true,
+  "heroTitle": "Comprimați PDF la 100 KB fără a pierde calitatea",
+  "heroDescription": "Reduceți fișierele PDF până la 100 KB sau mai puțin direct în browser. Perfect pentru atașamentele de e-mail și partajarea rapidă. 100% privat.",
   "sections": [
     {
-      "type": "resize_hero_features",
-      "title": "Reduceți PDF-ul la 100KB instantaneu și în siguranță",
-      "content": "Te lupți cu limite stricte de încărcare de 100 KB pe portaluri guvernamentale, site-uri de locuri de muncă sau cereri de viză? Compresorul nostru local optimizează fișierul PDF sub 100KB în secunde.",
-      "badgeText": "Țintă de 100 KB"
+      "type": "grayscale_geo_targeting",
+      "subTitle": "Motor de compresie local",
+      "subContent": "Motorul nostru avansat WASM comprimă PDF-ul local. Fără limite de fișiere."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "Cum să comprimați PDF sub 100 KB",
-      "badgeText": "Ghid rapid",
-      "steps": [
-        {
-          "title": "Adăugați document PDF",
-          "description": "Aruncați fișierul PDF în compresorul de pe partea clientului."
-        },
-        {
-          "title": "Selectați țintă de 100 KB",
-          "description": "Alegeți compresie puternică pentru a viza automat dimensiunea sub 100KB."
-        },
-        {
-          "title": "Salvați PDF optimizat",
-          "description": "Descărcați PDF-ul dvs. comprimat instantaneu, gata de încărcat."
-        }
-      ]
+      "type": "organize_privacy_security",
+      "subTitle": "Reținerea datelor zero",
+      "subContent": "Deoarece fișierele nu părăsesc dispozitivul dvs., datele dvs. private rămân numai ale dvs."
     },
     {
-      "type": "protect_geo_targeting",
-      "title": "Perfect pentru portalurile CPNS, Visa și Burse",
-      "content": "Nu trebuie să vă faceți griji cu privire la limitele serverului. Toată compresia are loc în sandbox-ul browser-ului local, asigurând conformitatea absolută cu regulile de securitate.",
-      "subTitle": "Încărcați cu liniște",
-      "subContent": "Prelucrăm documentele dumneavoastră sensibile (scanarea cărții de identitate, pașaport, CV) 100% local. Risc zero de scurgere de date.",
-      "badgeText": "Încărcați cu liniște"
-    },
-    {
-      "type": "compare_privacy_security",
-      "title": "Managementul densității fără pierderi",
-      "content": "Optimizează rezoluția imaginii și scalele DPI pentru a atinge pragul de 100 KB fără a transforma textele în neclarități ilizibile."
-    },
-    {
-      "type": "watermark_performance",
-      "title": "CPNS gata",
-      "content": "Viza Aprobată",
-      "badgeText": "Sub 100 KB"
+      "type": "metadata_performance",
+      "subTitle": "Rapid fulger de 100KB",
+      "subContent": "Atingeți dimensiunea țintă de 100 KB în milisecunde fără întârzieri pe server."
     }
-  ],
-  "faqs": [
-    {
-      "q": "Cum mă asigur că fișierul este sub 100KB?",
-      "a": "Selectați presetarea de compresie „Puternic”. Instrumentul nostru optimizează vectorii și rasterizează gradienții complexe pentru a se potrivi fișierului dvs. sub 100 KB."
-    },
-    {
-      "q": "Există o limită la câte fișiere pot comprima?",
-      "a": "Nu. Deoarece procesarea rulează local în memoria browserului dvs., puteți comprima câte fișiere doriți."
-    },
-    {
-      "q": "Sunt documentele mele în siguranță?",
-      "a": "Da. Acestea sunt procesate în întregime offline prin WebAssembly. Sunt încărcați 0 octeți."
-    }
-  ],
-  "badges": [
-    "Țintă de 100 KB",
-    "Asigura",
-    "Rapid"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "Comprimați până la 100KB",
-  "supportCenter": "Centru de suport",
-  "faqTitle": "Întrebări frecvente"
+  ]
 }

@@ -1,0 +1,23 @@
+{
+  "id": "merge-pdf-files-offline",
+  "supportCenter": true,
+  "heroTitle": "Flet dine PDF'er offline i browseren",
+  "heroDescription": "Kombiner flere meget følsomme PDF-dokumenter uden internetforbindelse. Fungerer fuldt offline efter indlæsning.",
+  "sections": [
+    {
+      "type": "excel_csv_geo_targeting",
+      "subTitle": "Offline fletning",
+      "subContent": "Kombiner dine skatteformularer og juridiske dokumenter uden at sende dem nogen steder."
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "Privatliv i militær klasse",
+      "subContent": "Vi garanterer absolut fortrolighed, fordi vi fysisk ikke kan se dine filer."
+    },
+    {
+      "type": "metadata_performance",
+      "subTitle": "Øjeblikkelig behandling",
+      "subContent": "Flet 100-vis af sider med det samme med behandling på klientsiden."
+    }
+  ]
+}

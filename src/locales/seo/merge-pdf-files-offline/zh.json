@@ -1,0 +1,23 @@
+{
+  "id": "merge-pdf-files-offline",
+  "supportCenter": true,
+  "heroTitle": "Merge Your PDFs Offline in the Browser",
+  "heroDescription": "Combine multiple highly sensitive PDF documents without an internet connection. Works fully offline after loading.",
+  "sections": [
+    {
+      "type": "excel_csv_geo_targeting",
+      "subTitle": "Offline Merging",
+      "subContent": "Combine your tax forms and legal documents without sending them anywhere."
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "Military Grade Privacy",
+      "subContent": "We guarantee absolute privacy because we physically cannot see your files."
+    },
+    {
+      "type": "metadata_performance",
+      "subTitle": "Instant Processing",
+      "subContent": "Merge 100s of pages instantly with client-side processing."
+    }
+  ]
+}

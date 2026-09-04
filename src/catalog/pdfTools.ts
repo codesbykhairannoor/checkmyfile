@@ -1507,7 +1507,1102 @@ export const pdfTools: ToolDefinition[] = [
         faqs: defaultFaqs('Compare PDF', 'en'),
       }
     }
-  }
+  },
+    {
+          id: 'compress-pdf-to-100kb',
+          category: 'pdf',
+          iconName: 'Minimize',
+          slugs: generateSlugsForId('compress-pdf-to-100kb', {
+            en: 'compress-pdf-to-100kb',
+            zh: 'compress-pdf-to-100kb',
+            pt: 'compactar-pdf-para-100kb',
+            ja: 'pdf-100kb',
+            de: 'pdf-auf-100-kb-komprimieren',
+            es: 'comprimir-pdf-a-100kb',
+            ar: 'pdf-100',
+            ru: 'pdf-100',
+            id: 'kompres-pdf-menjadi-100kb',
+            fr: 'compresser-le-pdf-100-ko',
+            hi: '100kb',
+            tr: 'pdf-yi-100kb-ye-s-k-t-r',
+            pl: 'skompresuj-pdf-do-100kb',
+            th: 'pdf-100kb',
+            it: 'comprimere-pdf-a-100kb',
+            sv: 'komprimera-pdf-till-100kb',
+            vi: 'n-n-pdf-xu-ng-100kb',
+            ko: 'pdf-100kb',
+            cs: 'komprimovat-pdf-na-100-kb',
+            nl: 'comprimeer-pdf-naar-100-kb',
+            ro: 'comprima-pdf-la-100-kb',
+            hu: 't-m-r-tse-a-pdf-et-100-kb-ra',
+            sk: 'komprimova-pdf-na-100-kb',
+            fi: 'pakkaa-pdf-100-kb',
+            da: 'komprimere-pdf-til-100kb',
+            no: 'komprimere-pdf-til-100kb',
+            he: 'pdf-100kb',
+            ms: 'mampatkan-pdf-kepada-100kb',
+            el: 'pdf-100-kb',
+            uk: 'pdf-100'
+          }),
+          seo: {
+            en: {
+            title: 'Compress PDF to 100KB Free Online | No Uploads',
+            h1: 'Compress PDF to 100KB Without Losing Quality',
+            description: 'Shrink your PDF files down to 100KB or less directly in your browser. Perfect for email attachments and fast sharing. 100% private.',
+            faqs: defaultFaqs('compress-pdf-to-100kb', 'en')
+          },
+            zh: {
+              title: 'Compress PDF to 100KB Free Online | No Uploads',
+              h1: 'Compress PDF to 100KB Without Losing Quality',
+              description: 'Shrink your PDF files down to 100KB or less directly in your browser. Perfect for email attachments and fast sharing. 100% private.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'zh')
+            },
+            pt: {
+              title: 'Compactar PDF para 100 KB grátis online | Sem envios',
+              h1: 'Compacte PDF em 100 KB sem perder qualidade',
+              description: 'Reduza seus arquivos PDF para 100 KB ou menos diretamente em seu navegador. Perfeito para anexos de e-mail e compartilhamento rápido. 100% privado.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'pt')
+            },
+            ja: {
+              title: 'PDFをオンラインで無料で100KBに圧縮 | アップロードはありません',
+              h1: '品質を損なうことなくPDFを100KBに圧縮',
+              description: 'ブラウザで PDF ファイルを直接 100KB 以下に縮小します。 電子メールの添付や高速共有に最適です。 100%プライベートです。',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'ja')
+            },
+            de: {
+              title: 'PDF kostenlos online auf 100 KB komprimieren | Keine Uploads',
+              h1: 'Komprimieren Sie PDF auf 100 KB, ohne an Qualität zu verlieren',
+              description: 'Verkleinern Sie Ihre PDF-Dateien direkt in Ihrem Browser auf 100 KB oder weniger. Perfekt für E-Mail-Anhänge und schnelles Teilen. 100 % privat.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'de')
+            },
+            es: {
+              title: 'Comprima PDF a 100 KB gratis en línea | Sin cargas',
+              h1: 'Comprime PDF a 100 KB sin perder calidad',
+              description: 'Reduzca sus archivos PDF a 100 KB o menos directamente en su navegador. Perfecto para archivos adjuntos de correo electrónico y para compartir rápidamente. 100% privado.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'es')
+            },
+            ar: {
+              title: 'ضغط ملف PDF إلى 100 كيلو بايت مجانًا عبر الإنترنت | لا تحميلات',
+              h1: 'ضغط ملف PDF إلى 100 كيلو بايت دون فقدان الجودة',
+              description: 'قم بتقليص حجم ملفات PDF الخاصة بك إلى 100 كيلو بايت أو أقل مباشرةً في متصفحك. مثالي لمرفقات البريد الإلكتروني والمشاركة السريعة. خاص 100%.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'ar')
+            },
+            ru: {
+              title: 'Сжать PDF до 100 КБ бесплатно в Интернете | Нет загрузок',
+              h1: 'Сжимайте PDF до 100 КБ без потери качества',
+              description: 'Уменьшите размер PDF-файлов до 100 КБ или меньше прямо в браузере. Идеально подходит для вложений в электронную почту и быстрого обмена. 100% приват.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'ru')
+            },
+            id: {
+              title: 'Kompres PDF ke 100KB Online Gratis | Tidak Ada Unggahan',
+              h1: 'Kompres PDF hingga 100KB Tanpa Kehilangan Kualitas',
+              description: 'Kecilkan file PDF Anda hingga 100KB atau kurang langsung di browser Anda. Sempurna untuk lampiran email dan berbagi cepat. 100% pribadi.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'id')
+            },
+            fr: {
+              title: 'Compresser un PDF à 100 Ko gratuitement en ligne | Aucun téléchargement',
+              h1: 'Compresser le PDF à 100 Ko sans perte de qualité',
+              description: 'Réduisez vos fichiers PDF à 100 Ko ou moins directement dans votre navigateur. Parfait pour les pièces jointes aux e-mails et le partage rapide. 100% privé.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'fr')
+            },
+            hi: {
+              title: 'पीडीएफ को 100KB तक निःशुल्क ऑनलाइन कंप्रेस करें | कोई अपलोड नहीं',
+              h1: 'गुणवत्ता खोए बिना पीडीएफ को 100KB तक संपीड़ित करें',
+              description: 'सीधे अपने ब्राउज़र में अपनी पीडीएफ फाइलों को 100KB या उससे कम करें। ईमेल अनुलग्नकों और तेज़ साझाकरण के लिए बिल्कुल सही। 100% निजी.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'hi')
+            },
+            tr: {
+              title: 'PDF\'yi 100KB\'ye Ücretsiz Çevrimiçi Olarak Sıkıştırın | Yükleme Yok',
+              h1: 'Kaliteyi Kaybetmeden PDF\'yi 100 KB\'ye Sıkıştırın',
+              description: 'PDF dosyalarınızı doğrudan tarayıcınızda 100 KB veya daha azına kadar küçültün. E-posta ekleri ve hızlı paylaşım için mükemmeldir. %100 özel.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'tr')
+            },
+            pl: {
+              title: 'Kompresuj plik PDF do 100 KB bezpłatnie online | Brak przesłanych plików',
+              h1: 'Kompresuj plik PDF do 100 KB bez utraty jakości',
+              description: 'Zmniejsz pliki PDF do 100 KB lub mniej bezpośrednio w przeglądarce. Idealny do załączników do wiadomości e-mail i szybkiego udostępniania. 100% prywatności.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'pl')
+            },
+            th: {
+              title: 'บีบอัด PDF เป็น 100KB ออนไลน์ฟรี | ไม่มีการอัพโหลด',
+              h1: 'บีบอัด PDF เป็น 100KB โดยไม่สูญเสียคุณภาพ',
+              description: 'ย่อขนาดไฟล์ PDF ของคุณลงเหลือ 100KB หรือน้อยกว่านั้นในเบราว์เซอร์ของคุณโดยตรง เหมาะสำหรับแนบไฟล์อีเมลและการแชร์ที่รวดเร็ว ส่วนตัว 100%',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'th')
+            },
+            it: {
+              title: 'Comprimi PDF in 100KB online gratuitamente | Nessun caricamento',
+              h1: 'Comprimi PDF a 100KB senza perdere la qualità',
+              description: 'Riduci i tuoi file PDF fino a 100KB o meno direttamente nel tuo browser. Perfetto per allegati e-mail e condivisione rapida. 100% privato.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'it')
+            },
+            sv: {
+              title: 'Komprimera PDF till 100 KB gratis online | Inga uppladdningar',
+              h1: 'Komprimera PDF till 100KB utan att förlora kvalitet',
+              description: 'Förminska dina PDF-filer till 100 KB eller mindre direkt i din webbläsare. Perfekt för e-postbilagor och snabb delning. 100% privat.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'sv')
+            },
+            vi: {
+              title: 'Nén PDF thành 100KB trực tuyến miễn phí | Không tải lên',
+              h1: 'Nén PDF thành 100KB mà không làm giảm chất lượng',
+              description: 'Thu nhỏ tệp PDF của bạn xuống còn 100KB hoặc ít hơn trực tiếp trong trình duyệt của bạn. Hoàn hảo cho việc đính kèm email và chia sẻ nhanh chóng. 100% riêng tư.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'vi')
+            },
+            ko: {
+              title: '온라인에서 무료로 PDF를 100KB로 압축 | 업로드 없음',
+              h1: '품질 저하 없이 PDF를 100KB로 압축',
+              description: '브라우저에서 PDF 파일을 100KB 이하로 직접 축소하세요. 이메일 첨부 및 빠른 공유에 적합합니다. 100% 비공개입니다.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'ko')
+            },
+            cs: {
+              title: 'Komprimujte PDF na 100 kB online zdarma | Žádné nahrávání',
+              h1: 'Komprimujte PDF na 100 kB bez ztráty kvality',
+              description: 'Zmenšete své soubory PDF na 100 kB nebo méně přímo ve vašem prohlížeči. Ideální pro e-mailové přílohy a rychlé sdílení. 100% soukromé.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'cs')
+            },
+            nl: {
+              title: 'Comprimeer PDF naar 100 KB Gratis online | Geen uploads',
+              h1: 'Comprimeer PDF tot 100 KB zonder kwaliteitsverlies',
+              description: 'Verklein uw PDF-bestanden rechtstreeks in uw browser tot 100 KB of minder. Perfect voor e-mailbijlagen en snel delen. 100% privé.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'nl')
+            },
+            ro: {
+              title: 'Comprimați PDF la 100KB gratuit online | Fără încărcări',
+              h1: 'Comprimați PDF la 100 KB fără a pierde calitatea',
+              description: 'Reduceți fișierele PDF până la 100 KB sau mai puțin direct în browser. Perfect pentru atașamentele de e-mail și partajarea rapidă. 100% privat.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'ro')
+            },
+            hu: {
+              title: 'PDF tömörítése 100 KB-ra, ingyenes online | Nincs feltöltés',
+              h1: 'A PDF tömörítése 100 KB-ra a minőség elvesztése nélkül',
+              description: 'Csökkentse PDF-fájljait 100 KB-ra vagy kevesebbre közvetlenül a böngészőben. Tökéletes e-mail mellékletekhez és gyors megosztáshoz. 100% privát.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'hu')
+            },
+            sk: {
+              title: 'Komprimujte PDF na 100 kB online zadarmo | Žiadne nahrávania',
+              h1: 'Komprimujte PDF na 100 kB bez straty kvality',
+              description: 'Zmenšite svoje PDF súbory na 100 kB alebo menej priamo vo vašom prehliadači. Ideálne pre e-mailové prílohy a rýchle zdieľanie. 100% súkromné.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'sk')
+            },
+            fi: {
+              title: 'Pakkaa PDF 100 kilotavuun ilmaiseksi verkossa | Ei latauksia',
+              h1: 'Pakkaa PDF 100 kilotavuun menettämättä laatua',
+              description: 'Pienennä PDF-tiedostosi 100 kilotavuun tai pienempään suoraan selaimessasi. Täydellinen sähköpostin liitteisiin ja nopeaan jakamiseen. 100% yksityinen.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'fi')
+            },
+            da: {
+              title: 'Komprimer PDF til 100 KB gratis online | Ingen uploads',
+              h1: 'Komprimer PDF til 100KB uden at miste kvalitet',
+              description: 'Formindsk dine PDF-filer til 100KB eller mindre direkte i din browser. Perfekt til vedhæftede filer i e-mail og hurtig deling. 100% privat.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'da')
+            },
+            no: {
+              title: 'Komprimer PDF til 100 KB gratis online | Ingen opplastinger',
+              h1: 'Komprimer PDF til 100KB uten å miste kvalitet',
+              description: 'Krymp PDF-filene dine ned til 100 KB eller mindre direkte i nettleseren din. Perfekt for e-postvedlegg og rask deling. 100% privat.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'no')
+            },
+            he: {
+              title: 'דחוס PDF ל-100KB בחינם באינטרנט | אין העלאות',
+              h1: 'דחוס PDF ל-100KB מבלי לאבד איכות',
+              description: 'כווץ את קובצי ה-PDF שלך עד ל-100KB או פחות ישירות בדפדפן שלך. מושלם עבור קבצים מצורפים לדוא"ל ושיתוף מהיר. 100% פרטי.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'he')
+            },
+            ms: {
+              title: 'Mampatkan PDF kepada 100KB Percuma Dalam Talian | Tiada Muat Naik',
+              h1: 'Mampatkan PDF kepada 100KB Tanpa Kehilangan Kualiti',
+              description: 'Kecilkan fail PDF anda kepada 100KB atau kurang terus dalam penyemak imbas anda. Sesuai untuk lampiran e-mel dan perkongsian pantas. 100% persendirian.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'ms')
+            },
+            el: {
+              title: 'Συμπίεση PDF σε 100 KB Δωρεάν Online | Δεν υπάρχουν μεταφορτώσεις',
+              h1: 'Συμπιέστε το PDF στα 100 KB χωρίς απώλεια ποιότητας',
+              description: 'Μειώστε τα αρχεία PDF σας σε 100 KB ή λιγότερο απευθείας στο πρόγραμμα περιήγησής σας. Ιδανικό για συνημμένα email και γρήγορη κοινή χρήση. 100% ιδιωτικό.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'el')
+            },
+            uk: {
+              title: 'Стисніть PDF до 100 КБ безкоштовно онлайн | Немає завантажень',
+              h1: 'Стисніть PDF до 100 КБ без втрати якості',
+              description: 'Зменште PDF-файли до 100 КБ або менше безпосередньо у браузері. Ідеально підходить для вкладень електронної пошти та швидкого обміну. 100% приватний.',
+              faqs: defaultFaqs('compress-pdf-to-100kb', 'uk')
+            }
+          }
+        },
+    {
+          id: 'merge-pdf-files-offline',
+          category: 'pdf',
+          iconName: 'Combine',
+          slugs: generateSlugsForId('merge-pdf-files-offline', {
+            en: 'merge-pdf-files-offline',
+            zh: 'merge-pdf-files-offline',
+            ja: 'pdf',
+            ru: 'pdf',
+            id: 'menggabungkan-file-pdf-secara-offline',
+            fr: 'fusionner-des-fichiers-pdf-hors-ligne',
+            pt: 'mesclar-arquivos-pdf-off-line',
+            de: 'pdf-dateien-offline-zusammenf-hren',
+            es: 'fusionar-archivos-pdf-sin-conexi-n',
+            ar: 'pdf',
+            vi: 'h-p-nh-t-c-c-t-p-tin-pdf-ngo-i-tuy-n',
+            cs: 'slou-it-soubory-pdf-offline',
+            hi: 'merge-pdf-files-offline-hi',
+            tr: 'pdf-dosyalar-n-evrimd-birle-tirme',
+            pl: 'scalaj-pliki-pdf-w-trybie-offline',
+            ko: 'pdf',
+            sv: 'sl-samman-pdf-filer-offline',
+            th: 'pdf',
+            nl: 'pdf-bestanden-offline-samenvoegen',
+            it: 'unisci-file-pdf-offline',
+            da: 'flette-pdf-filer-offline',
+            ro: 'mbina-fi-ierele-pdf-offline',
+            he: 'pdf',
+            el: 'pdf',
+            no: 'sl-sammen-pdf-filer-offline',
+            uk: 'pdf',
+            hu: 'pdf-f-jlok-egyes-t-se-offline-m-dban',
+            fi: 'yhdist-pdf-tiedostoja-offline-tilassa',
+            ms: 'gabungkan-fail-pdf-di-luar-talian',
+            sk: 'zl-i-s-bory-pdf-offline'
+          }),
+          seo: {
+            en: {
+            title: 'Merge PDF Files Offline Free | 100% Secure',
+            h1: 'Merge Your PDFs Offline in the Browser',
+            description: 'Combine multiple highly sensitive PDF documents without an internet connection. Works fully offline after loading.',
+            faqs: defaultFaqs('merge-pdf-files-offline', 'en')
+          },
+            zh: {
+              title: 'Merge PDF Files Offline Free | 100% Secure',
+              h1: 'Merge Your PDFs Offline in the Browser',
+              description: 'Combine multiple highly sensitive PDF documents without an internet connection. Works fully offline after loading.',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'zh')
+            },
+            ja: {
+              title: 'PDF ファイルをオフラインで無料で結合 | 100%安全',
+              h1: 'ブラウザでオフラインで PDF を結合する',
+              description: 'インターネット接続なしで、複数の機密性の高い PDF ドキュメントを結合します。 ロード後は完全にオフラインで動作します。',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'ja')
+            },
+            ru: {
+              title: 'Объединение PDF-файлов в автономном режиме бесплатно | 100% безопасность',
+              h1: 'Объедините свои PDF-файлы в автономном режиме в браузере',
+              description: 'Объединяйте несколько конфиденциальных PDF-документов без подключения к Интернету. Работает полностью в автономном режиме после загрузки.',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'ru')
+            },
+            id: {
+              title: 'Gabungkan File PDF Offline Gratis | 100% Aman',
+              h1: 'Gabungkan PDF Anda Secara Offline di Browser',
+              description: 'Gabungkan beberapa dokumen PDF yang sangat sensitif tanpa koneksi internet. Bekerja sepenuhnya offline setelah memuat.',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'id')
+            },
+            fr: {
+              title: 'Fusionner des fichiers PDF hors ligne gratuitement | 100% sécurisé',
+              h1: 'Fusionnez vos PDF hors ligne dans le navigateur',
+              description: 'Combinez plusieurs documents PDF hautement sensibles sans connexion Internet. Fonctionne entièrement hors ligne après le chargement.',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'fr')
+            },
+            pt: {
+              title: 'Mesclar arquivos PDF off-line gratuitamente | 100% seguro',
+              h1: 'Mesclar seus PDFs off-line no navegador',
+              description: 'Combine vários documentos PDF altamente confidenciais sem conexão com a Internet. Funciona totalmente offline após o carregamento.',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'pt')
+            },
+            de: {
+              title: 'PDF-Dateien offline kostenlos zusammenführen | 100 % sicher',
+              h1: 'Führen Sie Ihre PDFs offline im Browser zusammen',
+              description: 'Kombinieren Sie mehrere hochsensible PDF-Dokumente ohne Internetverbindung. Funktioniert nach dem Laden vollständig offline.',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'de')
+            },
+            es: {
+              title: 'Fusionar archivos PDF sin conexión gratis | 100% seguro',
+              h1: 'Combine sus archivos PDF sin conexión en el navegador',
+              description: 'Combine varios documentos PDF altamente confidenciales sin conexión a Internet. Funciona completamente sin conexión después de la carga.',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'es')
+            },
+            ar: {
+              title: 'دمج ملفات PDF دون اتصال بالإنترنت مجانًا | آمن بنسبة 100%',
+              h1: 'دمج ملفات PDF الخاصة بك دون اتصال بالإنترنت في المتصفح',
+              description: 'اجمع بين عدة مستندات PDF حساسة للغاية دون الاتصال بالإنترنت. يعمل دون اتصال بالإنترنت بشكل كامل بعد التحميل.',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'ar')
+            },
+            vi: {
+              title: 'Hợp nhất các tệp PDF ngoại tuyến miễn phí | An toàn 100%',
+              h1: 'Hợp nhất các tệp PDF của bạn ngoại tuyến trong trình duyệt',
+              description: 'Kết hợp nhiều tài liệu PDF có độ nhạy cao mà không cần kết nối internet. Hoạt động hoàn toàn ngoại tuyến sau khi tải.',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'vi')
+            },
+            cs: {
+              title: 'Sloučit soubory PDF offline zdarma | 100% bezpečné',
+              h1: 'Sloučení souborů PDF offline v prohlížeči',
+              description: 'Kombinujte více vysoce citlivých dokumentů PDF bez připojení k internetu. Po načtení funguje plně offline.',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'cs')
+            },
+            hi: {
+              title: 'पीडीएफ फाइलों को ऑफलाइन नि:शुल्क मर्ज करें | 100% सुरक्षित',
+              h1: 'अपनी पीडीएफ़ को ब्राउज़र में ऑफ़लाइन मर्ज करें',
+              description: 'बिना इंटरनेट कनेक्शन के अनेक अत्यधिक संवेदनशील पीडीएफ दस्तावेज़ों को संयोजित करें। लोड होने के बाद पूरी तरह ऑफ़लाइन काम करता है।',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'hi')
+            },
+            tr: {
+              title: 'PDF Dosyalarını Çevrimdışı Ücretsiz Birleştir | %100 Güvenli',
+              h1: 'Tarayıcıda PDF\'lerinizi Çevrimdışı Birleştirin',
+              description: 'Çok sayıda son derece hassas PDF belgesini internet bağlantısı olmadan birleştirin. Yüklemeden sonra tamamen çevrimdışı çalışır.',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'tr')
+            },
+            pl: {
+              title: 'Scal pliki PDF w trybie offline za darmo | 100% bezpieczeństwa',
+              h1: 'Scal swoje pliki PDF offline w przeglądarce',
+              description: 'Łącz wiele bardzo poufnych dokumentów PDF bez połączenia z Internetem. Działa całkowicie offline po załadowaniu.',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'pl')
+            },
+            ko: {
+              title: '무료로 PDF 파일을 오프라인으로 병합 | 100% 안전함',
+              h1: '브라우저에서 오프라인으로 PDF를 병합하세요',
+              description: '인터넷 연결 없이 여러 개의 매우 민감한 PDF 문서를 결합합니다. 로드 후 완전히 오프라인으로 작동합니다.',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'ko')
+            },
+            sv: {
+              title: 'Slå samman PDF-filer offline gratis | 100 % säker',
+              h1: 'Slå samman dina PDF-filer offline i webbläsaren',
+              description: 'Kombinera flera mycket känsliga PDF-dokument utan internetanslutning. Fungerar helt offline efter laddning.',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'sv')
+            },
+            th: {
+              title: 'รวมไฟล์ PDF ออฟไลน์ฟรี | ปลอดภัย 100%',
+              h1: 'รวม PDF ของคุณแบบออฟไลน์ในเบราว์เซอร์',
+              description: 'รวมเอกสาร PDF ที่มีความไวสูงหลายชุดโดยไม่ต้องเชื่อมต่ออินเทอร์เน็ต ทำงานแบบออฟไลน์ได้อย่างสมบูรณ์หลังจากโหลด',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'th')
+            },
+            nl: {
+              title: 'Voeg PDF-bestanden offline gratis samen | 100% veilig',
+              h1: 'Voeg uw PDF\'s offline samen in de browser',
+              description: 'Combineer meerdere zeer gevoelige PDF-documenten zonder internetverbinding. Werkt volledig offline na het laden.',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'nl')
+            },
+            it: {
+              title: 'Unisci file PDF offline gratuitamente | Sicuro al 100%.',
+              h1: 'Unisci i tuoi PDF offline nel browser',
+              description: 'Combina più documenti PDF altamente sensibili senza una connessione Internet. Funziona completamente offline dopo il caricamento.',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'it')
+            },
+            da: {
+              title: 'Flet PDF-filer offline gratis | 100 % sikker',
+              h1: 'Flet dine PDF\'er offline i browseren',
+              description: 'Kombiner flere meget følsomme PDF-dokumenter uden internetforbindelse. Fungerer fuldt offline efter indlæsning.',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'da')
+            },
+            ro: {
+              title: 'Îmbinați fișiere PDF offline gratuit | 100% sigur',
+              h1: 'Îmbinați fișierele PDF offline în browser',
+              description: 'Combinați mai multe documente PDF foarte sensibile fără o conexiune la internet. Funcționează complet offline după încărcare.',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'ro')
+            },
+            he: {
+              title: 'מיזוג קבצי PDF לא מקוון חינם | 100% מאובטח',
+              h1: 'מיזוג קובצי PDF במצב לא מקוון בדפדפן',
+              description: 'שלב מספר מסמכי PDF רגישים במיוחד ללא חיבור לאינטרנט. עובד במצב לא מקוון לחלוטין לאחר טעינה.',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'he')
+            },
+            el: {
+              title: 'Συγχώνευση αρχείων PDF χωρίς σύνδεση Δωρεάν | 100% ασφαλής',
+              h1: 'Συγχωνεύστε τα PDF σας εκτός σύνδεσης στο πρόγραμμα περιήγησης',
+              description: 'Συνδυάστε πολλά εξαιρετικά ευαίσθητα έγγραφα PDF χωρίς σύνδεση στο διαδίκτυο. Λειτουργεί πλήρως εκτός σύνδεσης μετά τη φόρτωση.',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'el')
+            },
+            no: {
+              title: 'Slå sammen PDF-filer frakoblet Gratis | 100 % sikker',
+              h1: 'Slå sammen PDF-filene dine frakoblet i nettleseren',
+              description: 'Kombiner flere svært sensitive PDF-dokumenter uten internettforbindelse. Fungerer helt offline etter lasting.',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'no')
+            },
+            uk: {
+              title: 'Об’єднайте PDF-файли офлайн безкоштовно | 100% безпечний',
+              h1: 'Об’єднайте свої PDF-файли офлайн у браузері',
+              description: 'Об’єднайте кілька дуже конфіденційних PDF-документів без підключення до Інтернету. Працює повністю в автономному режимі після завантаження.',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'uk')
+            },
+            hu: {
+              title: 'PDF-fájlok egyesítése offline állapotban ingyenes | 100%-os biztonság',
+              h1: 'Egyesítse PDF-fájljait offline módban a böngészőben',
+              description: 'Kombináljon több rendkívül érzékeny PDF-dokumentumot internetkapcsolat nélkül. Betöltés után teljesen offline módban működik.',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'hu')
+            },
+            fi: {
+              title: 'Yhdistä PDF-tiedostoja offline-tilassa Ilmainen | 100 % turvallinen',
+              h1: 'Yhdistä PDF-tiedostosi offline-tilassa selaimessa',
+              description: 'Yhdistä useita erittäin arkaluonteisia PDF-dokumentteja ilman Internet-yhteyttä. Toimii täysin offline-tilassa latauksen jälkeen.',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'fi')
+            },
+            ms: {
+              title: 'Gabungkan Fail PDF Luar Talian Percuma | 100% Selamat',
+              h1: 'Gabungkan PDF Anda Luar Talian dalam Penyemak Imbas',
+              description: 'Gabungkan berbilang dokumen PDF yang sangat sensitif tanpa sambungan internet. Berfungsi sepenuhnya di luar talian selepas dimuatkan.',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'ms')
+            },
+            sk: {
+              title: 'Zlúčiť súbory PDF offline zadarmo | 100% bezpečné',
+              h1: 'Zlúčte svoje súbory PDF v režime offline v prehliadači',
+              description: 'Kombinujte viacero vysoko citlivých dokumentov PDF bez internetového pripojenia. Po načítaní funguje plne offline.',
+              faqs: defaultFaqs('merge-pdf-files-offline', 'sk')
+            }
+          }
+        },
+    {
+          id: 'convert-scanned-pdf-to-text',
+          category: 'pdf',
+          iconName: 'FileText',
+          slugs: generateSlugsForId('convert-scanned-pdf-to-text', {
+            en: 'convert-scanned-pdf-to-text',
+            zh: 'convert-scanned-pdf-to-text',
+            ja: 'pdf',
+            ru: 'pdf',
+            pt: 'converter-pdf-digitalizado-em-texto',
+            fr: 'convertir-un-pdf-num-ris-en-texte',
+            id: 'mengonversi-pindaian-pdf-menjadi-teks',
+            ar: 'convert-scanned-pdf-to-text-ar',
+            es: 'convertir-pdf-escaneado-a-texto',
+            de: 'konvertieren-sie-gescannte-pdfs-in-text',
+            ko: 'pdf',
+            nl: 'gescande-pdf-naar-tekst-converteren',
+            th: 'pdf',
+            cs: 'p-ev-st-naskenovan-pdf-na-text',
+            vi: 'chuy-n-i-pdf-c-qu-t-th-nh-v-n-b-n',
+            hi: 'convert-scanned-pdf-to-text-hi',
+            it: 'convertire-pdf-scansionati-in-testo',
+            tr: 'taranan-pdf-yi-metne-d-n-t-r',
+            sv: 'konvertera-skannade-pdf-till-text',
+            pl: 'konwertuj-zeskanowany-plik-pdf-na-tekst',
+            fi: 'muunna-skannattu-pdf-tekstiksi',
+            el: 'pdf',
+            no: 'konvertere-skannet-pdf-til-tekst',
+            ms: 'menukar-pdf-yang-diimbas-kepada-teks',
+            uk: 'pdf',
+            da: 'konvertere-scannet-pdf-til-tekst',
+            he: 'pdf',
+            ro: 'converti-pdf-ul-scanat-n-text',
+            hu: 'konvert-lja-a-beolvasott-pdf-et-sz-vegg',
+            sk: 'previes-naskenovan-pdf-na-text'
+          }),
+          seo: {
+            en: {
+            title: 'Convert Scanned PDF to Searchable Text | Free OCR',
+            h1: 'Turn Scanned PDFs into Editable Text',
+            description: 'Use advanced browser-based OCR to extract text from scanned images and unsearchable PDFs. 100% free and private.',
+            faqs: defaultFaqs('convert-scanned-pdf-to-text', 'en')
+          },
+            zh: {
+              title: 'Convert Scanned PDF to Searchable Text | Free OCR',
+              h1: 'Turn Scanned PDFs into Editable Text',
+              description: 'Use advanced browser-based OCR to extract text from scanned images and unsearchable PDFs. 100% free and private.',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'zh')
+            },
+            ja: {
+              title: 'スキャンした PDF を検索可能なテキストに変換 | 無料のOCR',
+              h1: 'スキャンした PDF を編集可能なテキストに変換する',
+              description: '高度なブラウザベースの OCR を使用して、スキャンされた画像や検索不可能な PDF からテキストを抽出します。 完全に無料でプライベートです。',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'ja')
+            },
+            ru: {
+              title: 'Преобразование отсканированного PDF в текст с возможностью поиска | Бесплатное распознавание текста',
+              h1: 'Превратите отсканированные PDF-файлы в редактируемый текст',
+              description: 'Используйте расширенное распознавание текста на базе браузера для извлечения текста из отсканированных изображений и PDF-файлов, недоступных для поиска. 100% бесплатно и конфиденциально.',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'ru')
+            },
+            pt: {
+              title: 'Converter PDF digitalizado em texto pesquisável | OCR grátis',
+              h1: 'Transforme PDFs digitalizados em texto editável',
+              description: 'Use OCR avançado baseado em navegador para extrair texto de imagens digitalizadas e PDFs não pesquisáveis. 100% gratuito e privado.',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'pt')
+            },
+            fr: {
+              title: 'Convertir un PDF numérisé en texte consultable | ROC gratuite',
+              h1: 'Transformez les PDF numérisés en texte modifiable',
+              description: 'Utilisez l\'OCR avancé basé sur un navigateur pour extraire le texte des images numérisées et des PDF impossibles à rechercher. 100% gratuit et privé.',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'fr')
+            },
+            id: {
+              title: 'Konversikan PDF yang Dipindai ke Teks yang Dapat Dicari | OCR gratis',
+              h1: 'Ubah PDF yang Dipindai menjadi Teks yang Dapat Diedit',
+              description: 'Gunakan OCR berbasis browser tingkat lanjut untuk mengekstrak teks dari gambar yang dipindai dan PDF yang tidak dapat dicari. 100% gratis dan pribadi.',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'id')
+            },
+            ar: {
+              title: 'تحويل ملف PDF الممسوح ضوئيًا إلى نص قابل للبحث | التعرف الضوئي على الحروف مجانًا',
+              h1: 'تحويل ملفات PDF الممسوحة ضوئيًا إلى نص قابل للتحرير',
+              description: 'استخدم تقنية التعرف الضوئي على الحروف (OCR) المتقدمة المستندة إلى المستعرض لاستخراج النص من الصور الممسوحة ضوئيًا وملفات PDF غير القابلة للبحث. 100% مجاني وخاص.',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'ar')
+            },
+            es: {
+              title: 'Convierta PDF escaneado en texto con capacidad de búsqueda | OCR gratuito',
+              h1: 'Convierta archivos PDF escaneados en texto editable',
+              description: 'Utilice OCR avanzado basado en navegador para extraer texto de imágenes escaneadas y archivos PDF que no se pueden buscar. 100% gratis y privado.',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'es')
+            },
+            de: {
+              title: 'Konvertieren Sie gescannte PDFs in durchsuchbaren Text | Kostenlose OCR',
+              h1: 'Verwandeln Sie gescannte PDFs in bearbeitbaren Text',
+              description: 'Verwenden Sie erweiterte browserbasierte OCR, um Text aus gescannten Bildern und nicht durchsuchbaren PDFs zu extrahieren. 100 % kostenlos und privat.',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'de')
+            },
+            ko: {
+              title: '스캔한 PDF를 검색 가능한 텍스트로 변환 | 무료 OCR',
+              h1: '스캔한 PDF를 편집 가능한 텍스트로 변환',
+              description: '고급 브라우저 기반 OCR을 사용하여 스캔한 이미지와 검색할 수 없는 PDF에서 텍스트를 추출합니다. 100% 무료이며 비공개입니다.',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'ko')
+            },
+            nl: {
+              title: 'Gescande PDF converteren naar doorzoekbare tekst | Gratis OCR',
+              h1: 'Zet gescande PDF\'s om in bewerkbare tekst',
+              description: 'Gebruik geavanceerde browsergebaseerde OCR om tekst uit gescande afbeeldingen en ondoorzoekbare PDF\'s te extraheren. 100% gratis en privé.',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'nl')
+            },
+            th: {
+              title: 'แปลง PDF ที่สแกนเป็นข้อความที่ค้นหาได้ | โอซีอาร์ฟรี',
+              h1: 'เปลี่ยน PDF ที่สแกนเป็นข้อความที่แก้ไขได้',
+              description: 'ใช้ OCR บนเบราว์เซอร์ขั้นสูงเพื่อแยกข้อความจากรูปภาพที่สแกนและ PDF ที่ไม่สามารถค้นหาได้ ฟรี 100% และเป็นส่วนตัว',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'th')
+            },
+            cs: {
+              title: 'Převést naskenované PDF na prohledávatelný text | OCR zdarma',
+              h1: 'Přeměňte naskenované soubory PDF na upravitelný text',
+              description: 'Použijte pokročilé OCR založené na prohlížeči k extrahování textu z naskenovaných obrázků a souborů PDF, které nelze prohledávat. 100% zdarma a soukromé.',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'cs')
+            },
+            vi: {
+              title: 'Chuyển đổi PDF được quét thành văn bản có thể tìm kiếm | OCR miễn phí',
+              h1: 'Biến các tệp PDF được quét thành văn bản có thể chỉnh sửa',
+              description: 'Sử dụng OCR dựa trên trình duyệt nâng cao để trích xuất văn bản từ hình ảnh được quét và các tệp PDF không thể tìm kiếm. 100% miễn phí và riêng tư.',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'vi')
+            },
+            hi: {
+              title: 'स्कैन किए गए पीडीएफ को खोजने योग्य टेक्स्ट में बदलें | मुफ़्त ओसीआर',
+              h1: 'स्कैन की गई पीडीएफ़ को संपादन योग्य टेक्स्ट में बदलें',
+              description: 'स्कैन की गई छवियों और न खोजी जा सकने वाली पीडीएफ़ से पाठ निकालने के लिए उन्नत ब्राउज़र-आधारित ओसीआर का उपयोग करें। 100% मुफ़्त और निजी।',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'hi')
+            },
+            it: {
+              title: 'Converti PDF scansionato in testo ricercabile | OCR gratuito',
+              h1: 'Trasforma i PDF scansionati in testo modificabile',
+              description: 'Utilizza l\'OCR avanzato basato su browser per estrarre testo da immagini scansionate e PDF non ricercabili. 100% gratuito e privato.',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'it')
+            },
+            tr: {
+              title: 'Taranan PDF\'yi Aranabilir Metne Dönüştürme | Ücretsiz OCR',
+              h1: 'Taranmış PDF\'leri Düzenlenebilir Metne Dönüştürün',
+              description: 'Taranmış görüntülerden ve aranamayan PDF\'lerden metin çıkarmak için gelişmiş tarayıcı tabanlı OCR\'yi kullanın. %100 ücretsiz ve özel.',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'tr')
+            },
+            sv: {
+              title: 'Konvertera skannad PDF till sökbar text | Gratis OCR',
+              h1: 'Förvandla skannade PDF-filer till redigerbar text',
+              description: 'Använd avancerad webbläsarbaserad OCR för att extrahera text från skannade bilder och osökbara PDF-filer. 100 % gratis och privat.',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'sv')
+            },
+            pl: {
+              title: 'Konwertuj zeskanowany plik PDF na tekst z możliwością wyszukiwania | Bezpłatny OCR',
+              h1: 'Zamień zeskanowane pliki PDF w edytowalny tekst',
+              description: 'Użyj zaawansowanego OCR opartego na przeglądarce, aby wyodrębnić tekst ze zeskanowanych obrazów i nieprzeszukiwalnych plików PDF. 100% darmowy i prywatny.',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'pl')
+            },
+            fi: {
+              title: 'Muunna skannattu PDF haettavaksi tekstiksi | Ilmainen OCR',
+              h1: 'Muuta skannatut PDF-tiedostot muokattavaksi tekstiksi',
+              description: 'Käytä kehittynyttä selainpohjaista tekstintunnistusta tekstin poimimiseen skannatuista kuvista ja PDF-tiedostoista, joita ei voi hakea. 100% ilmainen ja yksityinen.',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'fi')
+            },
+            el: {
+              title: 'Μετατροπή σαρωμένου PDF σε κείμενο με δυνατότητα αναζήτησης | Δωρεάν OCR',
+              h1: 'Μετατρέψτε τα σαρωμένα PDF σε επεξεργάσιμο κείμενο',
+              description: 'Χρησιμοποιήστε προηγμένο OCR που βασίζεται σε πρόγραμμα περιήγησης για να εξαγάγετε κείμενο από σαρωμένες εικόνες και αρχεία PDF που δεν μπορούν να αναζητηθούν. 100% δωρεάν και ιδιωτικό.',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'el')
+            },
+            no: {
+              title: 'Konverter skannet PDF til søkbar tekst | Gratis OCR',
+              h1: 'Gjør skannede PDF-er til redigerbar tekst',
+              description: 'Bruk avansert nettleserbasert OCR for å trekke ut tekst fra skannede bilder og usøkbare PDF-filer. 100 % gratis og privat.',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'no')
+            },
+            ms: {
+              title: 'Tukar PDF yang Diimbas kepada Teks Boleh Dicari | OCR percuma',
+              h1: 'Tukar PDF yang Diimbas kepada Teks Boleh Diedit',
+              description: 'Gunakan OCR berasaskan pelayar lanjutan untuk mengekstrak teks daripada imej yang diimbas dan PDF yang tidak boleh dicari. 100% percuma dan peribadi.',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'ms')
+            },
+            uk: {
+              title: 'Перетворення відсканованого PDF-файлу на текст із можливістю пошуку | Безкоштовне OCR',
+              h1: 'Перетворіть відскановані PDF-файли на редагований текст',
+              description: 'Використовуйте вдосконалене оптичне розпізнавання тексту на основі браузера, щоб видобувати текст із відсканованих зображень і PDF-файлів, у яких неможливо шукати. 100% безкоштовно та приватно.',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'uk')
+            },
+            da: {
+              title: 'Konverter scannet PDF til søgbar tekst | Gratis OCR',
+              h1: 'Gør scannede PDF\'er til redigerbar tekst',
+              description: 'Brug avanceret browserbaseret OCR til at udtrække tekst fra scannede billeder og usøgelige PDF-filer. 100 % gratis og privat.',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'da')
+            },
+            he: {
+              title: 'המרת PDF סרוק לטקסט הניתן לחיפוש | OCR בחינם',
+              h1: 'הפוך קובצי PDF סרוקים לטקסט הניתן לעריכה',
+              description: 'השתמש ב-OCR מתקדם מבוסס דפדפן כדי לחלץ טקסט מתמונות סרוקות ומקובצי PDF בלתי ניתנים לחיפוש. 100% חינם ופרטי.',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'he')
+            },
+            ro: {
+              title: 'Convertiți PDF scanat în text care poate fi căutat | OCR gratuit',
+              h1: 'Transformați PDF-urile scanate în text editabil',
+              description: 'Utilizați OCR avansat bazat pe browser pentru a extrage text din imaginile scanate și din PDF-uri care nu pot fi căutate. 100% gratuit și privat.',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'ro')
+            },
+            hu: {
+              title: 'A beolvasott PDF konvertálása kereshető szöveggé | Ingyenes OCR',
+              h1: 'A beolvasott PDF-fájlokat szerkeszthető szöveggé alakíthatja',
+              description: 'Használjon fejlett böngészőalapú OCR-t a beolvasott képekből és a nem kereshető PDF-fájlokból történő szöveg kivonásához. 100% ingyenes és privát.',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'hu')
+            },
+            sk: {
+              title: 'Previesť naskenované PDF na vyhľadávateľný text | OCR zadarmo',
+              h1: 'Premeňte naskenované súbory PDF na upraviteľný text',
+              description: 'Použite pokročilé OCR založené na prehliadači na extrahovanie textu z naskenovaných obrázkov a nevyhľadateľných súborov PDF. 100% zadarmo a súkromne.',
+              faqs: defaultFaqs('convert-scanned-pdf-to-text', 'sk')
+            }
+          }
+        },
+    {
+          id: 'add-page-numbers-to-pdf-free',
+          category: 'pdf',
+          iconName: 'ListOrdered',
+          slugs: generateSlugsForId('add-page-numbers-to-pdf-free', {
+            en: 'add-page-numbers-to-pdf-free',
+            zh: 'add-page-numbers-to-pdf-free',
+            ja: 'pdf',
+            fr: 'ajouter-des-num-ros-de-page-au-pdf-gratuitement',
+            id: 'tambahkan-nomor-halaman-ke-pdf-gratis',
+            pt: 'adicionar-n-meros-de-p-gina-ao-pdf-gratuitamente',
+            de: 'seitenzahlen-kostenlos-zum-pdf-hinzuf-gen',
+            ar: 'pdf',
+            es: 'agregar-n-meros-de-p-gina-a-pdf-gratis',
+            ru: 'pdf',
+            it: 'aggiungi-numeri-di-pagina-al-pdf-gratuitamente',
+            ko: 'pdf',
+            nl: 'paginanummers-toevoegen-aan-pdf-gratis',
+            pl: 'dodaj-numery-stron-do-pliku-pdf-za-darmo',
+            tr: 'pdf-ye-cretsiz-sayfa-numaralar-ekleme',
+            hi: 'add-page-numbers-to-pdf-free-hi',
+            th: 'pdf',
+            vi: 'th-m-s-trang-v-o-pdf-mi-n-ph',
+            sv: 'l-gg-till-sidnummer-till-pdf-gratis',
+            cs: 'p-idat-sla-str-nek-do-pdf-zdarma',
+            el: 'pdf',
+            sk: 'prida-sla-str-n-do-pdf-zadarmo',
+            hu: 'oldalsz-mok-hozz-ad-sa-a-pdf-hez-ingyenes',
+            da: 'tilf-j-sidetal-til-pdf-gratis',
+            ro: 'ad-uga-i-numere-de-pagini-la-pdf-gratuit',
+            fi: 'lis-sivunumerot-pdf-tiedostoon-ilmaiseksi',
+            no: 'legg-til-sidetall-til-pdf-gratis',
+            uk: 'pdf',
+            he: 'pdf',
+            ms: 'tambah-nombor-halaman-ke-pdf-percuma'
+          }),
+          seo: {
+            en: {
+            title: 'Add Page Numbers to PDF Free | No Limits',
+            h1: 'Insert Page Numbers into PDF Documents',
+            description: 'Easily paginate your PDF files. Add customizable page numbers to headers or footers instantly for free.',
+            faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'en')
+          },
+            zh: {
+              title: 'Add Page Numbers to PDF Free | No Limits',
+              h1: 'Insert Page Numbers into PDF Documents',
+              description: 'Easily paginate your PDF files. Add customizable page numbers to headers or footers instantly for free.',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'zh')
+            },
+            ja: {
+              title: 'PDF にページ番号を無料で追加 | 制限なし',
+              h1: 'PDF ドキュメントにページ番号を挿入する',
+              description: 'PDF ファイルのページネーションを簡単に行えます。 カスタマイズ可能なページ番号をヘッダーまたはフッターに無料ですぐに追加できます。',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'ja')
+            },
+            fr: {
+              title: 'Ajouter des numéros de page au PDF gratuitement | Aucune limite',
+              h1: 'Insérer des numéros de page dans des documents PDF',
+              description: 'Paginez facilement vos fichiers PDF. Ajoutez instantanément et gratuitement des numéros de page personnalisables aux en-têtes ou aux pieds de page.',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'fr')
+            },
+            id: {
+              title: 'Tambahkan Nomor Halaman ke PDF Gratis | Tanpa Batas',
+              h1: 'Masukkan Nomor Halaman ke dalam Dokumen PDF',
+              description: 'Buat halaman file PDF Anda dengan mudah. Tambahkan nomor halaman yang dapat disesuaikan ke header atau footer secara instan dan gratis.',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'id')
+            },
+            pt: {
+              title: 'Adicione números de página ao PDF gratuitamente | Sem Limites',
+              h1: 'Insira números de página em documentos PDF',
+              description: 'Pagine facilmente seus arquivos PDF. Adicione números de página personalizáveis ​​a cabeçalhos ou rodapés instantaneamente e gratuitamente.',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'pt')
+            },
+            de: {
+              title: 'Seitenzahlen zu PDF kostenlos hinzufügen | Keine Grenzen',
+              h1: 'Fügen Sie Seitenzahlen in PDF-Dokumente ein',
+              description: 'Paginieren Sie Ihre PDF-Dateien ganz einfach. Fügen Sie sofort und kostenlos anpassbare Seitenzahlen zu Kopf- oder Fußzeilen hinzu.',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'de')
+            },
+            ar: {
+              title: 'إضافة أرقام الصفحات إلى PDF مجانًا | لا حدود',
+              h1: 'إدراج أرقام الصفحات في مستندات PDF',
+              description: 'قم بترقيم ملفات PDF الخاصة بك بسهولة. أضف أرقام صفحات قابلة للتخصيص إلى الرؤوس أو التذييلات على الفور مجانًا.',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'ar')
+            },
+            es: {
+              title: 'Agregue números de página a PDF gratis | Sin límites',
+              h1: 'Insertar números de página en documentos PDF',
+              description: 'Pagina fácilmente tus archivos PDF. Agregue números de página personalizables a encabezados o pies de página al instante y de forma gratuita.',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'es')
+            },
+            ru: {
+              title: 'Добавить номера страниц в PDF бесплатно | Без ограничений',
+              h1: 'Вставка номеров страниц в PDF-документы',
+              description: 'Легко разбивайте PDF-файлы на страницы. Добавляйте настраиваемые номера страниц в верхние или нижние колонтитулы мгновенно и бесплатно.',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'ru')
+            },
+            it: {
+              title: 'Aggiungi numeri di pagina al PDF gratuitamente | Nessun limite',
+              h1: 'Inserisci i numeri di pagina nei documenti PDF',
+              description: 'Impagina facilmente i tuoi file PDF. Aggiungi istantaneamente e gratuitamente numeri di pagina personalizzabili alle intestazioni o ai piè di pagina.',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'it')
+            },
+            ko: {
+              title: '무료로 PDF에 페이지 번호 추가 | 제한 없음',
+              h1: 'PDF 문서에 페이지 번호 삽입',
+              description: 'PDF 파일의 페이지를 쉽게 매깁니다. 머리글이나 바닥글에 사용자 정의 가능한 페이지 번호를 무료로 즉시 추가하세요.',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'ko')
+            },
+            nl: {
+              title: 'Paginanummers toevoegen aan PDF Gratis | Geen grenzen',
+              h1: 'Paginanummers invoegen in PDF-documenten',
+              description: 'Pagineer eenvoudig uw PDF-bestanden. Voeg direct gratis aanpasbare paginanummers toe aan kop- en voetteksten.',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'nl')
+            },
+            pl: {
+              title: 'Dodaj numery stron do pliku PDF za darmo | Bez ograniczeń',
+              h1: 'Wstaw numery stron do dokumentów PDF',
+              description: 'Z łatwością podziel na strony swoje pliki PDF. Natychmiast i bezpłatnie dodawaj konfigurowalne numery stron do nagłówków i stopek.',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'pl')
+            },
+            tr: {
+              title: 'PDF\'ye Ücretsiz Sayfa Numaraları Ekleme | Sınır Yok',
+              h1: 'PDF Belgelerine Sayfa Numaraları Ekleme',
+              description: 'PDF dosyalarınızı kolayca sayfalandırın. Üstbilgilere veya altbilgilere anında ücretsiz olarak özelleştirilebilir sayfa numaraları ekleyin.',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'tr')
+            },
+            hi: {
+              title: 'पीडीएफ में पेज नंबर निःशुल्क जोड़ें | असीम',
+              h1: 'पीडीएफ दस्तावेजों में पेज नंबर डालें',
+              description: 'अपनी पीडीएफ फाइलों को आसानी से पेजिनेट करें। शीर्षलेखों या पादलेखों में तुरंत निःशुल्क अनुकूलन योग्य पृष्ठ संख्याएँ जोड़ें।',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'hi')
+            },
+            th: {
+              title: 'เพิ่มหมายเลขหน้าเป็น PDF ฟรี | ไม่มีขีดจำกัด',
+              h1: 'แทรกหมายเลขหน้าลงในเอกสาร PDF',
+              description: 'แบ่งหน้าไฟล์ PDF ของคุณได้อย่างง่ายดาย เพิ่มหมายเลขหน้าที่ปรับแต่งได้ที่ส่วนหัวหรือส่วนท้ายทันทีฟรี',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'th')
+            },
+            vi: {
+              title: 'Thêm số trang vào PDF miễn phí | Không giới hạn',
+              h1: 'Chèn số trang vào tài liệu PDF',
+              description: 'Dễ dàng phân trang các tập tin PDF của bạn. Thêm số trang có thể tùy chỉnh vào đầu trang hoặc chân trang ngay lập tức miễn phí.',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'vi')
+            },
+            sv: {
+              title: 'Lägg till sidnummer till PDF Gratis | Inga gränser',
+              h1: 'Infoga sidnummer i PDF-dokument',
+              description: 'Sida in dina PDF-filer enkelt. Lägg till anpassningsbara sidnummer i sidhuvuden eller sidfötter direkt gratis.',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'sv')
+            },
+            cs: {
+              title: 'Přidat čísla stránek do PDF zdarma | Žádné limity',
+              h1: 'Vkládání čísel stránek do dokumentů PDF',
+              description: 'Snadno stránkujte své soubory PDF. Přidejte přizpůsobitelná čísla stránek do záhlaví nebo zápatí okamžitě a zdarma.',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'cs')
+            },
+            el: {
+              title: 'Προσθήκη αριθμών σελίδων σε PDF Δωρεάν | Χωρίς Όρια',
+              h1: 'Εισαγάγετε αριθμούς σελίδων σε έγγραφα PDF',
+              description: 'Πραγματοποιήστε σελιδοποίηση των αρχείων PDF σας εύκολα. Προσθέστε προσαρμόσιμους αριθμούς σελίδων σε κεφαλίδες ή υποσέλιδα άμεσα δωρεάν.',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'el')
+            },
+            sk: {
+              title: 'Pridať čísla strán do PDF zadarmo | Žiadne limity',
+              h1: 'Vložte čísla strán do dokumentov PDF',
+              description: 'Jednoducho stránkujte svoje súbory PDF. Pridajte prispôsobiteľné čísla strán do hlavičky alebo päty okamžite zadarmo.',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'sk')
+            },
+            hu: {
+              title: 'Oldalszámok hozzáadása PDF-hez Ingyenes | Nincsenek határok',
+              h1: 'Oldalszámok beszúrása PDF dokumentumokba',
+              description: 'Könnyen lapozhatja PDF fájljait. Adjon testreszabható oldalszámokat a fejlécekhez vagy láblécekhez azonnal, ingyenesen.',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'hu')
+            },
+            da: {
+              title: 'Tilføj sidetal til PDF Gratis | Ingen grænser',
+              h1: 'Indsæt sidetal i PDF-dokumenter',
+              description: 'Paginér nemt dine PDF-filer. Tilføj sidetal, der kan tilpasses, til sidehoveder eller sidefødder med det samme gratis.',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'da')
+            },
+            ro: {
+              title: 'Adăugați numere de pagină în PDF gratuit | Fără Limite',
+              h1: 'Inserați numere de pagină în documentele PDF',
+              description: 'Paginați cu ușurință fișierele PDF. Adăugați gratuit numere de pagină personalizabile la anteturi sau subsoluri.',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'ro')
+            },
+            fi: {
+              title: 'Lisää sivunumeroita PDF-tiedostoon ilmaiseksi | Ei rajoja',
+              h1: 'Lisää sivunumerot PDF-dokumentteihin',
+              description: 'Sivuttele PDF-tiedostosi helposti. Lisää mukautettavat sivunumerot ylä- tai alatunnisteisiin välittömästi ilmaiseksi.',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'fi')
+            },
+            no: {
+              title: 'Legg til sidetall til PDF Gratis | Ingen grenser',
+              h1: 'Sett inn sidetall i PDF-dokumenter',
+              description: 'Paginerer enkelt PDF-filene dine. Legg til sidetall som kan tilpasses til topp- eller bunntekster umiddelbart gratis.',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'no')
+            },
+            uk: {
+              title: 'Безкоштовно додайте номери сторінок до PDF | Без обмежень',
+              h1: 'Вставте номери сторінок у документи PDF',
+              description: 'Легко розбивайте PDF-файли на сторінки. Безкоштовно миттєво додайте настроювані номери сторінок до колонтитулів.',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'uk')
+            },
+            he: {
+              title: 'הוסף מספרי עמודים ל-PDF חינם | אין גבולות',
+              h1: 'הכנס מספרי עמודים למסמכי PDF',
+              description: 'עימוד בקלות את קובצי ה-PDF שלך. הוסף מספרי עמודים הניתנים להתאמה אישית לכותרות עליונות או תחתונות באופן מיידי בחינם.',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'he')
+            },
+            ms: {
+              title: 'Tambah Nombor Halaman ke PDF Percuma | Tiada Had',
+              h1: 'Masukkan Nombor Halaman ke dalam Dokumen PDF',
+              description: 'Buka penomboran fail PDF anda dengan mudah. Tambahkan nombor halaman yang boleh disesuaikan pada pengepala atau pengaki serta-merta secara percuma.',
+              faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'ms')
+            }
+          }
+        },
+    {
+          id: 'remove-pdf-watermark-online',
+          category: 'pdf',
+          iconName: 'Eraser',
+          slugs: generateSlugsForId('remove-pdf-watermark-online', {
+            en: 'remove-pdf-watermark-online',
+            zh: 'remove-pdf-watermark-online',
+            fr: 'supprimer-le-filigrane-pdf-en-ligne',
+            pt: 'remover-marca-d-gua-de-pdf-on-line',
+            ja: 'pdf',
+            es: 'eliminar-marca-de-agua-de-pdf-en-l-nea',
+            de: 'pdf-wasserzeichen-online-entfernen',
+            id: 'hapus-tanda-air-pdf-online',
+            ru: 'pdf',
+            ar: 'pdf',
+            vi: 'x-a-h-nh-m-pdf-tr-c-tuy-n',
+            ko: 'pdf',
+            sv: 'ta-bort-pdf-vattenst-mpel-online',
+            it: 'rimuovere-la-filigrana-dal-pdf-online',
+            th: 'pdf',
+            cs: 'odstranit-vodoznak-pdf-online',
+            tr: 'pdf-filigran-n-evrimi-i-kald-r',
+            nl: 'verwijder-pdf-watermerk-online',
+            pl: 'usu-znak-wodny-pdf-online',
+            hi: 'remove-pdf-watermark-online-hi',
+            el: 'pdf',
+            sk: 'odstr-ni-vodoznak-pdf-online',
+            he: 'pdf',
+            hu: 'pdf-v-zjel-elt-vol-t-sa-online',
+            ms: 'buang-tera-air-pdf-dalam-talian',
+            no: 'fjern-pdf-vannmerke-online',
+            da: 'fjern-pdf-vandm-rke-online',
+            uk: 'pdf',
+            ro: 'elimina-i-filigranul-pdf-online',
+            fi: 'poista-pdf-vesileima-verkossa'
+          }),
+          seo: {
+            en: {
+            title: 'Remove PDF Watermark Online Free | Clean PDFs',
+            h1: 'Remove Watermarks from PDF Files Safely',
+            description: 'Redact or remove intrusive watermarks from your PDF documents. Fully private, browser-based watermark removal tool.',
+            faqs: defaultFaqs('remove-pdf-watermark-online', 'en')
+          },
+            zh: {
+              title: 'Remove PDF Watermark Online Free | Clean PDFs',
+              h1: 'Remove Watermarks from PDF Files Safely',
+              description: 'Redact or remove intrusive watermarks from your PDF documents. Fully private, browser-based watermark removal tool.',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'zh')
+            },
+            fr: {
+              title: 'Supprimer le filigrane PDF en ligne gratuitement | Nettoyer les PDF',
+              h1: 'Supprimez les filigranes des fichiers PDF en toute sécurité',
+              description: 'Rédigez ou supprimez les filigranes intrusifs de vos documents PDF. Outil de suppression de filigrane entièrement privé, basé sur un navigateur.',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'fr')
+            },
+            pt: {
+              title: 'Remover marca d\'água de PDF online gratuitamente | Limpar PDFs',
+              h1: 'Remova marcas d\'água de arquivos PDF com segurança',
+              description: 'Edite ou remova marcas d\'água intrusivas de seus documentos PDF. Ferramenta de remoção de marca d\'água totalmente privada baseada em navegador.',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'pt')
+            },
+            ja: {
+              title: 'PDF透かしをオンラインで無料で削除 | クリーンな PDF',
+              h1: 'PDF ファイルからウォーターマークを安全に削除する',
+              description: 'PDF ドキュメントから邪魔な透かしを編集または削除します。 完全にプライベートなブラウザベースのウォーターマーク除去ツール。',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'ja')
+            },
+            es: {
+              title: 'Eliminar marca de agua de PDF en línea gratis | Limpiar archivos PDF',
+              h1: 'Eliminar marcas de agua de archivos PDF de forma segura',
+              description: 'Redacte o elimine marcas de agua intrusivas de sus documentos PDF. Herramienta de eliminación de marcas de agua totalmente privada y basada en navegador.',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'es')
+            },
+            de: {
+              title: 'PDF-Wasserzeichen online kostenlos entfernen | Saubere PDFs',
+              h1: 'Entfernen Sie Wasserzeichen sicher aus PDF-Dateien',
+              description: 'Schwärzen oder entfernen Sie störende Wasserzeichen aus Ihren PDF-Dokumenten. Vollständig privates, browserbasiertes Tool zum Entfernen von Wasserzeichen.',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'de')
+            },
+            id: {
+              title: 'Hapus Tanda Air PDF Online Gratis | Bersihkan PDF',
+              h1: 'Hapus Tanda Air dari File PDF dengan Aman',
+              description: 'Sunting atau hapus tanda air yang mengganggu dari dokumen PDF Anda. Alat penghapus tanda air berbasis browser yang sepenuhnya pribadi.',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'id')
+            },
+            ru: {
+              title: 'Удалить водяной знак PDF онлайн бесплатно | Очистить PDF-файлы',
+              h1: 'Безопасное удаление водяных знаков из PDF-файлов',
+              description: 'Отредактируйте или удалите навязчивые водяные знаки из ваших PDF-документов. Полностью конфиденциальный инструмент для удаления водяных знаков на основе браузера.',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'ru')
+            },
+            ar: {
+              title: 'إزالة العلامة المائية لملف PDF عبر الإنترنت مجانًا | تنظيف ملفات PDF',
+              h1: 'إزالة العلامات المائية من ملفات PDF بأمان',
+              description: 'قم بتنقيح العلامات المائية المتطفلة أو إزالتها من مستندات PDF الخاصة بك. أداة إزالة العلامات المائية الخاصة بالكامل والمعتمدة على المتصفح.',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'ar')
+            },
+            vi: {
+              title: 'Xóa hình mờ PDF trực tuyến miễn phí | Làm sạch các tệp PDF',
+              h1: 'Xóa hình mờ khỏi tệp PDF một cách an toàn',
+              description: 'Biên tập lại hoặc xóa hình mờ xâm nhập khỏi tài liệu PDF của bạn. Công cụ xóa hình mờ hoàn toàn riêng tư, dựa trên trình duyệt.',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'vi')
+            },
+            ko: {
+              title: 'PDF 워터마크를 온라인으로 무료로 제거하세요 | PDF 정리',
+              h1: 'PDF 파일에서 워터마크를 안전하게 제거하세요',
+              description: 'PDF 문서에서 방해가 되는 워터마크를 수정하거나 제거하세요. 완전 비공개 브라우저 기반 워터마크 제거 도구입니다.',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'ko')
+            },
+            sv: {
+              title: 'Ta bort PDF Watermark Online Gratis | Rengör PDF-filer',
+              h1: 'Ta bort vattenstämplar från PDF-filer på ett säkert sätt',
+              description: 'Redigera eller ta bort påträngande vattenstämplar från dina PDF-dokument. Helt privat, webbläsarbaserat verktyg för borttagning av vattenstämplar.',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'sv')
+            },
+            it: {
+              title: 'Rimuovi filigrana PDF online gratuitamente | PDF puliti',
+              h1: 'Rimuovi filigrane dai file PDF in modo sicuro',
+              description: 'Redisci o rimuovi filigrane invadenti dai tuoi documenti PDF. Strumento di rimozione filigrana completamente privato e basato su browser.',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'it')
+            },
+            th: {
+              title: 'ลบลายน้ำ PDF ออนไลน์ฟรี | ทำความสะอาด PDF',
+              h1: 'ลบลายน้ำออกจากไฟล์ PDF อย่างปลอดภัย',
+              description: 'แก้ไขหรือลบลายน้ำที่ล่วงล้ำออกจากเอกสาร PDF ของคุณ เครื่องมือลบลายน้ำแบบส่วนตัวบนเบราว์เซอร์',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'th')
+            },
+            cs: {
+              title: 'Odebrat PDF vodoznak online zdarma | Čisté PDF',
+              h1: 'Odstraňte vodoznaky ze souborů PDF bezpečně',
+              description: 'Upravte nebo odstraňte rušivé vodoznaky z dokumentů PDF. Plně soukromý nástroj pro odstranění vodoznaku založený na prohlížeči.',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'cs')
+            },
+            tr: {
+              title: 'PDF Filigranını Çevrimiçi Ücretsiz Kaldırma | PDF\'leri temizle',
+              h1: 'Filigranları PDF Dosyalarından Güvenle Kaldırın',
+              description: 'PDF belgelerinizdeki izinsiz filigranları düzenleyin veya kaldırın. Tamamen özel, tarayıcı tabanlı filigran kaldırma aracı.',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'tr')
+            },
+            nl: {
+              title: 'PDF-watermerk online gratis verwijderen | Schone PDF\'s',
+              h1: 'Verwijder watermerken veilig uit PDF-bestanden',
+              description: 'Bewerk of verwijder opdringerige watermerken uit uw PDF-documenten. Volledig privé, browsergebaseerd hulpmiddel voor het verwijderen van watermerken.',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'nl')
+            },
+            pl: {
+              title: 'Usuń znak wodny PDF online za darmo | Wyczyść pliki PDF',
+              h1: 'Bezpiecznie usuwaj znaki wodne z plików PDF',
+              description: 'Zredaguj lub usuń uciążliwe znaki wodne z dokumentów PDF. W pełni prywatne narzędzie do usuwania znaków wodnych oparte na przeglądarce.',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'pl')
+            },
+            hi: {
+              title: 'पीडीएफ वॉटरमार्क ऑनलाइन नि:शुल्क हटाएं | पीडीएफ साफ़ करें',
+              h1: 'पीडीएफ फाइलों से वॉटरमार्क सुरक्षित रूप से हटाएं',
+              description: 'अपने पीडीएफ दस्तावेजों से घुसपैठिए वॉटरमार्क को सुधारें या हटाएं। पूरी तरह से निजी, ब्राउज़र-आधारित वॉटरमार्क हटाने वाला उपकरण।',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'hi')
+            },
+            el: {
+              title: 'Κατάργηση PDF Watermark Online Δωρεάν | Καθαρίστε αρχεία PDF',
+              h1: 'Αφαιρέστε τα υδατογραφήματα από τα αρχεία PDF με ασφάλεια',
+              description: 'Διορθώστε ή αφαιρέστε τα παρεμβατικά υδατογραφήματα από τα έγγραφά σας PDF. Πλήρως ιδιωτικό εργαλείο αφαίρεσης υδατογραφήματος που βασίζεται σε πρόγραμμα περιήγησης.',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'el')
+            },
+            sk: {
+              title: 'Odstrániť PDF vodoznak online zadarmo | Čisté súbory PDF',
+              h1: 'Bezpečne odstráňte vodoznaky zo súborov PDF',
+              description: 'Upravte alebo odstráňte rušivé vodoznaky z dokumentov PDF. Úplne súkromný nástroj na odstránenie vodoznaku založený na prehliadači.',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'sk')
+            },
+            he: {
+              title: 'הסר סימן מים PDF באינטרנט בחינם | קובצי PDF נקיים',
+              h1: 'הסר סימני מים מקבצי PDF בצורה בטוחה',
+              description: 'ערוך או הסר סימני מים פולשניים ממסמכי ה-PDF שלך. כלי להסרת סימני מים פרטי לחלוטין, מבוסס דפדפן.',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'he')
+            },
+            hu: {
+              title: 'PDF vízjel eltávolítása online ingyenes | Tisztítsa meg a PDF-eket',
+              h1: 'Távolítsa el biztonságosan a vízjeleket a PDF-fájlokból',
+              description: 'Változtassa meg vagy távolítsa el a tolakodó vízjeleket PDF-dokumentumaiból. Teljesen privát, böngésző alapú vízjeleltávolító eszköz.',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'hu')
+            },
+            ms: {
+              title: 'Buang Tera Air PDF Percuma Dalam Talian | Bersihkan PDF',
+              h1: 'Alih Keluar Tera Air daripada Fail PDF dengan Selamat',
+              description: 'Sunting atau alih keluar tera air yang mengganggu daripada dokumen PDF anda. Alat penyingkiran tera air berasaskan pelayar peribadi sepenuhnya.',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'ms')
+            },
+            no: {
+              title: 'Fjern PDF Watermark Online Gratis | Rengjør PDF-filer',
+              h1: 'Fjern vannmerker fra PDF-filer trygt',
+              description: 'Rediger eller fjern påtrengende vannmerker fra PDF-dokumentene dine. Helt privat, nettleserbasert verktøy for fjerning av vannmerker.',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'no')
+            },
+            da: {
+              title: 'Fjern PDF Vandmærke Online Gratis | Rens PDF-filer',
+              h1: 'Fjern vandmærker fra PDF-filer sikkert',
+              description: 'Rediger eller fjern påtrængende vandmærker fra dine PDF-dokumenter. Fuldstændig privat, browserbaseret værktøj til fjernelse af vandmærker.',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'da')
+            },
+            uk: {
+              title: 'Видалити водяний знак PDF онлайн безкоштовно | Чисті PDF-файли',
+              h1: 'Безпечно видаліть водяні знаки з PDF-файлів',
+              description: 'Відредагуйте або видаліть нав’язливі водяні знаки з документів PDF. Повністю приватний інструмент для видалення водяних знаків у браузері.',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'uk')
+            },
+            ro: {
+              title: 'Eliminați filigranul PDF online gratuit | Curățați fișierele PDF',
+              h1: 'Eliminați în siguranță filigranele din fișierele PDF',
+              description: 'Redactați sau eliminați filigranele intruzive din documentele PDF. Instrument complet privat, bazat pe browser pentru eliminarea filigranelor.',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'ro')
+            },
+            fi: {
+              title: 'Poista PDF Watermark Online Ilmainen | Puhtaat PDF-tiedostot',
+              h1: 'Poista vesileimat PDF-tiedostoista turvallisesti',
+              description: 'Muokkaa tai poista häiritseviä vesileimoja PDF-dokumenteistasi. Täysin yksityinen selainpohjainen vesileiman poistotyökalu.',
+              faqs: defaultFaqs('remove-pdf-watermark-online', 'fi')
+            }
+          }
+        }
 ];
 
 export const advancedPdfTools: ToolDefinition[] = [

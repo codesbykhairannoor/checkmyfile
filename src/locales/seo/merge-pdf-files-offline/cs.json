@@ -1,0 +1,23 @@
+{
+  "id": "merge-pdf-files-offline",
+  "supportCenter": true,
+  "heroTitle": "Sloučení souborů PDF offline v prohlížeči",
+  "heroDescription": "Kombinujte více vysoce citlivých dokumentů PDF bez připojení k internetu. Po načtení funguje plně offline.",
+  "sections": [
+    {
+      "type": "excel_csv_geo_targeting",
+      "subTitle": "Offline sloučení",
+      "subContent": "Kombinujte své daňové formuláře a právní dokumenty, aniž byste je kamkoli posílali."
+    },
+    {
+      "type": "redact_privacy_security",
+      "subTitle": "Soukromí na vojenské úrovni",
+      "subContent": "Zaručujeme absolutní soukromí, protože fyzicky nevidíme vaše soubory."
+    },
+    {
+      "type": "metadata_performance",
+      "subTitle": "Okamžité zpracování",
+      "subContent": "Okamžité sloučení 100 stránek se zpracováním na straně klienta."
+    }
+  ]
+}

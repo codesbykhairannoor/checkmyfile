@@ -1,79 +1,23 @@
 {
-  "title": "PDF tömörítése 100 KB-ra",
-  "h1": "A PDF-fájlok tömörítése 100 KB-ra online",
-  "description": "Csökkentse nagyméretű PDF-dokumentumait 100 KB alá a kormányzati portálokhoz, álláspályázatokhoz vagy vízuműrlapokhoz a böngészőben.",
+  "id": "compress-pdf-to-100kb",
+  "supportCenter": true,
+  "heroTitle": "A PDF tömörítése 100 KB-ra a minőség elvesztése nélkül",
+  "heroDescription": "Csökkentse PDF-fájljait 100 KB-ra vagy kevesebbre közvetlenül a böngészőben. Tökéletes e-mail mellékletekhez és gyors megosztáshoz. 100% privát.",
   "sections": [
     {
-      "type": "resize_hero_features",
-      "title": "Csökkentse a PDF-et 100 KB-ra azonnal és biztonságosan",
-      "content": "Szigorú, 100 KB-os feltöltési korlátokkal küzd a kormányzati portálokon, álláshelyeken vagy vízumkérelmeken? Helyi tömörítőnk másodpercek alatt optimalizálja a 100 KB alatti PDF-fájlt.",
-      "badgeText": "100 KB cél"
+      "type": "grayscale_geo_targeting",
+      "subTitle": "Helyi kompressziós motor",
+      "subContent": "Fejlett WASM motorunk helyileg tömöríti a PDF-fájlt. Nincs fájlkorlát."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "Hogyan lehet 100 KB-nál kisebb PDF-t tömöríteni",
-      "badgeText": "Gyors útmutató",
-      "steps": [
-        {
-          "title": "PDF dokumentum hozzáadása",
-          "description": "Dobja be a PDF-fájlt az ügyféloldali tömörítőbe."
-        },
-        {
-          "title": "Válassza ki a 100 KB-os célt",
-          "description": "Válasszon erős tömörítést a 100 KB alatti méret automatikus célzásához."
-        },
-        {
-          "title": "Optimalizált PDF mentése",
-          "description": "Azonnal töltse le tömörített PDF-fájlját, és készen áll a feltöltésre."
-        }
-      ]
+      "type": "organize_privacy_security",
+      "subTitle": "Nulla adatmegőrzés",
+      "subContent": "Mivel a fájlok soha nem hagyják el az eszközt, a személyes adatai egyedül az Öné maradnak."
     },
     {
-      "type": "protect_geo_targeting",
-      "title": "Tökéletes CPNS-, Visa- és ösztöndíj-portálokhoz",
-      "content": "Nem kell aggódnia a szerveroldali korlátok miatt. Minden tömörítés a helyi böngésző homokozójában történik, biztosítva a biztonsági szabályoknak való teljes megfelelést.",
-      "subTitle": "Töltsd fel nyugodt szívvel",
-      "subContent": "Érzékeny dokumentumait (személyi igazolvány szkennelés, útlevél, önéletrajz) 100%-ban helyben dolgozzuk fel. Az adatszivárgás kockázata nulla.",
-      "badgeText": "Töltsd fel nyugodt szívvel"
-    },
-    {
-      "type": "compare_privacy_security",
-      "title": "Veszteségmentes sűrűségkezelés",
-      "content": "Optimalizálja a képfelbontást és a DPI-skálákat, hogy elérje a 100 KB-os küszöböt anélkül, hogy a szövegeket olvashatatlan elmosódássá változtatná."
-    },
-    {
-      "type": "watermark_performance",
-      "title": "CPNS kész",
-      "content": "Vízum jóváhagyva",
-      "badgeText": "100 KB alatt"
+      "type": "metadata_performance",
+      "subTitle": "Villámgyors 100KB",
+      "subContent": "Érje el a 100 KB-os célméretet ezredmásodpercek alatt, szerver késések nélkül."
     }
-  ],
-  "faqs": [
-    {
-      "q": "Hogyan biztosíthatom, hogy a fájl 100 KB alatti legyen?",
-      "a": "Válassza ki az „Erős” tömörítési beállítást. Eszközünk optimalizálja a vektorokat és raszterizálja az összetett színátmeneteket, hogy a fájl 100 KB alá illeszkedjen."
-    },
-    {
-      "q": "Van korlátozás arra, hogy hány fájlt tömöríthetek?",
-      "a": "Nem. Mivel a feldolgozás helyileg fut a böngésző memóriájában, annyi fájlt tömöríthet, amennyit csak akar."
-    },
-    {
-      "q": "Biztonságban vannak a dokumentumaim?",
-      "a": "Igen. Feldolgozása teljesen offline módban történik a WebAssembly segítségével. 0 bájt van feltöltve."
-    }
-  ],
-  "badges": [
-    "100 KB cél",
-    "Biztonságos",
-    "Gyors"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "Tömörítés 100 KB-ra",
-  "supportCenter": "Támogatási Központ",
-  "faqTitle": "Gyakran Ismételt Kérdések"
+  ]
 }

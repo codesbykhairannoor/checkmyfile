@@ -1,79 +1,23 @@
 {
-  "title": "PDF'yi 100 KB'ye sıkıştırın",
-  "h1": "PDF Dosyalarını Çevrimiçi 100KB'ye Sıkıştırın",
-  "description": "Devlet portalları, iş başvuruları veya vize formları için büyük PDF belgelerinizi tarayıcınızda tamamen 100 KB'ın altına küçültün.",
+  "id": "compress-pdf-to-100kb",
+  "supportCenter": true,
+  "heroTitle": "Kaliteyi Kaybetmeden PDF'yi 100 KB'ye Sıkıştırın",
+  "heroDescription": "PDF dosyalarınızı doğrudan tarayıcınızda 100 KB veya daha azına kadar küçültün. E-posta ekleri ve hızlı paylaşım için mükemmeldir. %100 özel.",
   "sections": [
     {
-      "type": "resize_hero_features",
-      "title": "PDF'yi Anında ve Güvenli Bir Şekilde 100 KB'a Küçültün",
-      "content": "Devlet portallarında, iş sitelerinde veya vize başvurularında katı 100 KB yükleme sınırıyla mı mücadele ediyorsunuz? Yerel sıkıştırıcımız PDF dosyanızı 100KB'nin altında saniyeler içinde optimize eder.",
-      "badgeText": "100 KB Hedefi"
+      "type": "grayscale_geo_targeting",
+      "subTitle": "Yerel Sıkıştırma Motoru",
+      "subContent": "Gelişmiş WASM motorumuz PDF'nizi yerel olarak sıkıştırır. Dosya sınırlaması yok."
     },
     {
-      "type": "split_how_to_steps",
-      "title": "100 KB'nin altındaki PDF Nasıl Sıkıştırılır",
-      "badgeText": "Hızlı Kılavuz",
-      "steps": [
-        {
-          "title": "PDF Belgesi Ekle",
-          "description": "PDF dosyanızı istemci tarafındaki sıkıştırıcıya bırakın."
-        },
-        {
-          "title": "100 KB Hedefini Seçin",
-          "description": "100 KB'nin altındaki boyutu otomatik olarak hedeflemek için güçlü sıkıştırmayı seçin."
-        },
-        {
-          "title": "Optimize Edilmiş PDF'yi Kaydet",
-          "description": "Sıkıştırılmış PDF'nizi yüklemeye hazır olarak anında indirin."
-        }
-      ]
+      "type": "organize_privacy_security",
+      "subTitle": "Sıfır Veri Saklama",
+      "subContent": "Dosyalar cihazınızdan asla çıkmadığından, özel verileriniz yalnızca size ait kalır."
     },
     {
-      "type": "protect_geo_targeting",
-      "title": "CPNS, Visa ve Burs Portalları için mükemmel",
-      "content": "Sunucu tarafı sınırları konusunda endişelenmenize gerek yok. Tüm sıkıştırma yerel tarayıcınızın sanal alanında gerçekleşir ve güvenlik kurallarına tam uyum sağlanır.",
-      "subTitle": "Gönül rahatlığıyla yükleyin",
-      "subContent": "Hassas belgelerinizi (kimlik kartı taraması, pasaport, CV) %100 yerli olarak işliyoruz. Sıfır veri sızıntısı riski.",
-      "badgeText": "Gönül rahatlığıyla yükleyin"
-    },
-    {
-      "type": "compare_privacy_security",
-      "title": "Kayıpsız Yoğunluk Yönetimi",
-      "content": "Metinleri okunaksız bulanıklığa dönüştürmeden 100KB eşiğine ulaşmak için görüntü çözünürlüğünü ve DPI ölçeklerini optimize eder."
-    },
-    {
-      "type": "watermark_performance",
-      "title": "CPNS'ye Hazır",
-      "content": "Vize Onaylandı",
-      "badgeText": "100 KB'ın altında"
+      "type": "metadata_performance",
+      "subTitle": "Yıldırım Hızında 100KB",
+      "subContent": "Sunucu gecikmeleri olmadan 100KB hedef boyutunuza milisaniyeler içinde ulaşın."
     }
-  ],
-  "faqs": [
-    {
-      "q": "Dosyanın 100 KB'ın altında olduğundan nasıl emin olabilirim?",
-      "a": "'Güçlü' sıkıştırma ön ayarını seçin. Aracımız, dosyanızı 100 KB'nin altına sığdırmak için vektörleri optimize eder ve karmaşık degradeleri rasterleştirir."
-    },
-    {
-      "q": "Kaç dosya sıkıştırabileceğim konusunda bir sınır var mı?",
-      "a": "Hayır. İşleme tarayıcınızın belleğinde yerel olarak yürütüldüğünden, istediğiniz kadar dosyayı sıkıştırabilirsiniz."
-    },
-    {
-      "q": "Belgelerim güvende mi?",
-      "a": "Evet. WebAssembly aracılığıyla tamamen çevrimdışı olarak işlenirler. 0 bayt yüklendi."
-    }
-  ],
-  "badges": [
-    "100 KB Hedefi",
-    "Güvenli",
-    "Hızlı"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "100KB'ye sıkıştır",
-  "supportCenter": "Destek Merkezi",
-  "faqTitle": "Sıkça Sorulan Sorular"
+  ]
 }
