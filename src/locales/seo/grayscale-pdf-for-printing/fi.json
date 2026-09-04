@@ -14,31 +14,52 @@
     "0",
     "Mainokset"
   ],
+  "supportCenter": "Tukikeskus",
+  "faqTitle": "Usein kysytyt kysymykset",
   "sections": [
     {
-      "type": "grayscale_print_hero_features",
+      "type": "compress_hero_features",
       "title": "Säästä kallista tulostimen mustetta",
-      "content": "Värillinen muste on kallista. Muunna PDF-tiedostot harmaasävyiksi ennen tulostusta säästääksesi rahaa ja resursseja."
+      "content": "Värillinen muste on kallista. Muunna PDF-tiedostot harmaasävyiksi ennen tulostusta säästääksesi rahaa ja resursseja.",
+      "badgeText": "Musteensäästö"
     },
     {
-      "type": "grayscale_print_how_to_steps",
+      "type": "lt_grayscale_how_to_steps",
       "title": "Kuinka tehdä PDF mustavalkoiseksi",
-      "content": "Pudota vain tiedostosi laatikkoon. Paikallinen työkalumme poistaa välittömästi kaikki värit ja antaa sinulle täydellisesti tulostettavan harmaasävyisen PDF-tiedoston."
+      "badgeText": "Yksinkertaiset vaiheet",
+      "steps": [
+        {
+          "title": "Pudota tiedosto",
+          "description": "Valitse värillinen PDF, jonka haluat tulostaa."
+        },
+        {
+          "title": "Käytä suodatinta",
+          "description": "Paikallinen työkalumme kuorii välittömästi kaikki värit."
+        },
+        {
+          "title": "Lataa harmaasävyt",
+          "description": "Hanki täydellisesti tulostettava mustavalkoinen PDF."
+        }
+      ]
     },
     {
-      "type": "grayscale_print_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Paras B&W PDF-muunnin",
-      "content": "Muunna värillinen teksti, kuvat ja taustat harmaan sävyiksi menettämättä luettavuutta."
+      "content": "Muunna värillinen teksti, kuvat ja taustat harmaan sävyiksi menettämättä luettavuutta.",
+      "subTitle": "High Fidelity",
+      "subContent": "Säilyttää kuvan terävyyden mustavalkoisena.",
+      "badgeText": "Täydelliset tulosteet"
     },
     {
-      "type": "grayscale_print_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Yksityinen harmaasävymuunnos",
       "content": "Asiakirjasi muunnetaan oman laitteesi muistiin. Emme koskaan näe tiedostojasi."
     },
     {
-      "type": "grayscale_print_performance",
+      "type": "lt_performance",
       "title": "Salamannopea käsittely",
-      "content": "Koska emme lataa tiedostoasi pilvipalvelimelle, harmaasävymuunnos tapahtuu lähes välittömästi."
+      "content": "Koska emme lataa tiedostoasi pilvipalvelimelle, harmaasävymuunnos tapahtuu lähes välittömästi.",
+      "badgeText": "Nolla latenssi"
     }
   ],
   "faqs": [

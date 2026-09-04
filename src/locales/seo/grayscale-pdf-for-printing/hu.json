@@ -14,31 +14,52 @@
     "0",
     "Hirdetések"
   ],
+  "supportCenter": "Támogatási Központ",
+  "faqTitle": "Gyakran Ismételt Kérdések",
   "sections": [
     {
-      "type": "grayscale_print_hero_features",
+      "type": "compress_hero_features",
       "title": "Takarítson meg drága nyomtatótintát",
-      "content": "A színes tinta drága. Nyomtatás előtt konvertálja PDF-fájljait szürkeárnyalatossá, hogy pénzt és erőforrásokat takarítson meg."
+      "content": "A színes tinta drága. Nyomtatás előtt konvertálja PDF-fájljait szürkeárnyalatossá, hogy pénzt és erőforrásokat takarítson meg.",
+      "badgeText": "Ink Saver"
     },
     {
-      "type": "grayscale_print_how_to_steps",
+      "type": "lt_grayscale_how_to_steps",
       "title": "Hogyan készítsünk PDF-et fekete-fehérre",
-      "content": "Csak dobja be a fájlt a dobozba. Helyi eszközünk azonnal eltávolítja az összes színt, és tökéletesen nyomtatható szürkeárnyalatos PDF-et ad."
+      "badgeText": "Egyszerű lépések",
+      "steps": [
+        {
+          "title": "Dobd el a fájlt",
+          "description": "Válassza ki a nyomtatni kívánt színes PDF-et."
+        },
+        {
+          "title": "Szűrő alkalmazása",
+          "description": "Helyi eszközünk azonnal lecsupaszítja az összes színt."
+        },
+        {
+          "title": "Letöltés Szürkeárnyalatos",
+          "description": "Szerezzen be egy tökéletesen nyomtatható fekete-fehér PDF-t."
+        }
+      ]
     },
     {
-      "type": "grayscale_print_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "A legjobb fekete-fehér PDF konverter",
-      "content": "A színes szövegeket, képeket és háttereket a szürke árnyalataivá alakíthatja az olvashatóság elvesztése nélkül."
+      "content": "A színes szövegeket, képeket és háttereket a szürke árnyalataivá alakíthatja az olvashatóság elvesztése nélkül.",
+      "subTitle": "High Fidelity",
+      "subContent": "Fenntartja a kép élességét fekete-fehérben.",
+      "badgeText": "Tökéletes nyomatok"
     },
     {
-      "type": "grayscale_print_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Privát szürkeárnyalatos átalakítás",
       "content": "A dokumentumokat a rendszer a saját készülék memóriájába konvertálja. Soha nem látjuk a fájljait."
     },
     {
-      "type": "grayscale_print_performance",
+      "type": "lt_performance",
       "title": "Villámgyors feldolgozás",
-      "content": "Mivel nem töltjük fel a fájlt felhőkiszolgálóra, a szürkeárnyalatos átalakítás szinte azonnal megtörténik."
+      "content": "Mivel nem töltjük fel a fájlt felhőkiszolgálóra, a szürkeárnyalatos átalakítás szinte azonnal megtörténik.",
+      "badgeText": "Nulla késleltetés"
     }
   ],
   "faqs": [

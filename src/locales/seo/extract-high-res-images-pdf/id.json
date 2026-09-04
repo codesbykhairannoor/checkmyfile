@@ -14,31 +14,50 @@
     "0",
     "Unggahan"
   ],
+  "supportCenter": "Pusat Dukungan",
+  "faqTitle": "Pertanyaan yang Sering Diajukan",
   "sections": [
     {
-      "type": "extract_highres_hero_features",
+      "type": "protect_hero_features",
       "title": "Dapatkan Kualitas Gambar Asli",
-      "content": "Jangan gunakan alat tangkapan layar yang merusak resolusi. Alat kami menggali biner PDF dan mengekstrak file gambar asli dan mentah."
+      "content": "Jangan gunakan alat tangkapan layar yang merusak resolusi. Alat kami menggali biner PDF dan mengekstrak file gambar asli dan mentah.",
+      "badgeText": "Ekspor Tanpa Rugi"
     },
     {
-      "type": "extract_highres_how_to_steps",
+      "type": "lt_extract_images_how_to_steps",
       "title": "Cara Mengekstrak Gambar",
-      "content": "Pilih PDF. Kami memindainya untuk mencari JPEG dan PNG yang tertanam, dan mengemas semuanya ke dalam file ZIP yang rapi untuk Anda."
+      "badgeText": "Ekspor Cepat",
+      "steps": [
+        {
+          "title": "Tambahkan PDF",
+          "description": "Pilih file PDF dengan gambar yang disematkan."
+        },
+        {
+          "title": "Pindai Biner",
+          "description": "Kami memindai file untuk JPEG dan PNG secara offline."
+        },
+        {
+          "title": "Unduh ZIP",
+          "description": "Kemas semua gambar yang diekstraksi ke dalam arsip ZIP yang rapi."
+        }
+      ]
     },
     {
-      "type": "extract_highres_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Alat Ekstraksi Gambar Terbaik",
-      "content": "Sempurna untuk desainer, penerbit, dan pelajar yang perlu menggunakan kembali aset berkualitas tinggi yang terkunci di dalam PDF."
+      "content": "Sempurna untuk desainer, penerbit, dan pelajar yang perlu menggunakan kembali aset berkualitas tinggi yang terkunci di dalam PDF.",
+      "badgeText": "Kualitas Pro"
     },
     {
-      "type": "extract_highres_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Ekstraksi Aset Swasta",
       "content": "Kami tidak mencuri gambar Anda. Ekstraksi terjadi sepenuhnya di komputer Anda sendiri."
     },
     {
-      "type": "extract_highres_performance",
+      "type": "lt_performance",
       "title": "Ekspor Sangat Cepat",
-      "content": "Ekstrak ratusan gambar beresolusi tinggi dalam hitungan detik tanpa menunggu unggahan file besar."
+      "content": "Ekstrak ratusan gambar beresolusi tinggi dalam hitungan detik tanpa menunggu unggahan file besar.",
+      "badgeText": "Ekstraksi Instan"
     }
   ],
   "faqs": [

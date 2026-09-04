@@ -14,31 +14,52 @@
     "0",
     "Utajenie"
   ],
+  "supportCenter": "Centrum wsparcia",
+  "faqTitle": "Często zadawane pytania",
   "sections": [
     {
-      "type": "crop_margins_hero_features",
+      "type": "merge_hero_features",
       "title": "Po co przycinać marginesy PDF?",
-      "content": "Wiele artykułów akademickich i e-booków ma ogromne białe marginesy. Przycięcie powoduje, że tekst jest większy i łatwiejszy do odczytania na mniejszych ekranach."
+      "content": "Wiele artykułów akademickich i e-booków ma ogromne białe marginesy. Przycięcie powoduje, że tekst jest większy i łatwiejszy do odczytania na mniejszych ekranach.",
+      "badgeText": "Precyzyjne przycinanie"
     },
     {
-      "type": "crop_margins_how_to_steps",
+      "type": "lt_crop_margins_how_to_steps",
       "title": "Jak przyciąć marginesy",
-      "content": "Prześlij plik, zdefiniuj obwiednię, przeciągając uchwyty i naciśnij przycisk Przytnij. Proces jest całkowicie prywatny."
+      "badgeText": "Szybki przewodnik",
+      "steps": [
+        {
+          "title": "Prześlij plik",
+          "description": "Upuść plik PDF w piaskownicy przeglądarki."
+        },
+        {
+          "title": "Ustaw marginesy",
+          "description": "Zdefiniuj obwiednię, przeciągając uchwyty."
+        },
+        {
+          "title": "Przytnij plik PDF",
+          "description": "Naciśnij przycisk „Przytnij” i natychmiast pobierz przycięty plik."
+        }
+      ]
     },
     {
-      "type": "crop_margins_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Bezpieczne usuwanie marginesów",
-      "content": "Nie musisz przesyłać poufnych plików PDF, aby usunąć trochę białych znaków. Nasz silnik WebAssembly robi to w Twojej przeglądarce."
+      "content": "Nie musisz przesyłać poufnych plików PDF, aby usunąć trochę białych znaków. Nasz silnik WebAssembly robi to w Twojej przeglądarce.",
+      "subTitle": "Polityka zerowego przesyłania",
+      "subContent": "Twoje pliki nigdy nie opuszczają Twojego urządzenia."
     },
     {
-      "type": "crop_margins_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Przycinanie w 100% offline",
-      "content": "Twoje pliki nigdy nie opuszczają Twojego komputera. Idealny do poufnych dokumentów prawnych lub medycznych."
+      "content": "Twoje pliki nigdy nie opuszczają Twojego komputera. Idealny do poufnych dokumentów prawnych lub medycznych.",
+      "badgeText": "Gotowy do pracy w trybie offline"
     },
     {
-      "type": "crop_margins_performance",
+      "type": "lt_performance",
       "title": "Natychmiastowe przycinanie plików PDF",
-      "content": "Przytnij 500-stronicową książkę w ciągu milisekund, bez czekania na przesłanie lub pobranie z serwera."
+      "content": "Przytnij 500-stronicową książkę w ciągu milisekund, bez czekania na przesłanie lub pobranie z serwera.",
+      "badgeText": "Błyskawicznie szybki"
     }
   ],
   "faqs": [

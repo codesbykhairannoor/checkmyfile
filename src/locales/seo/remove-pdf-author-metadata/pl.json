@@ -14,31 +14,51 @@
     "0",
     "Ślady"
   ],
+  "supportCenter": "Centrum wsparcia",
+  "faqTitle": "Często zadawane pytania",
   "sections": [
     {
-      "type": "remove_author_hero_features",
+      "type": "split_hero_features",
       "title": "Po co czyścić metadane PDF?",
-      "content": "Pliki PDF często w tajemnicy przechowują Twoje imię i nazwisko, nazwę firmy, wersję systemu operacyjnego i daty utworzenia. Wyczyść je przed udostępnieniem online."
+      "content": "Pliki PDF często w tajemnicy przechowują Twoje imię i nazwisko, nazwę firmy, wersję systemu operacyjnego i daty utworzenia. Wyczyść je przed udostępnieniem online.",
+      "badgeText": "Oczyść plik PDF"
     },
     {
-      "type": "remove_author_how_to_steps",
+      "type": "lt_remove_metadata_how_to_steps",
       "title": "Jak odkażać nieruchomości",
-      "content": "Prześlij swój dokument. Nasz silnik przeanalizuje strukturę pliku PDF i bezpiecznie usunie wszystkie pola metadanych słownika."
+      "badgeText": "Przewodnik w 3 krokach",
+      "steps": [
+        {
+          "title": "Prześlij dokument",
+          "description": "Wybierz plik PDF, który chcesz wyczyścić."
+        },
+        {
+          "title": "Usuń metadane",
+          "description": "Nasz silnik analizuje strukturę i usuwa ukryte pola."
+        },
+        {
+          "title": "Zapisz czysty plik PDF",
+          "description": "Natychmiast pobierz anonimowy dokument."
+        }
+      ]
     },
     {
-      "type": "remove_author_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Chroń swoją anonimowość",
-      "content": "Zapewnij sygnalistom, dziennikarzom i zwykłym użytkownikom możliwość udostępniania dokumentów bez ujawniania swojej tożsamości cyfrowej."
+      "content": "Zapewnij sygnalistom, dziennikarzom i zwykłym użytkownikom możliwość udostępniania dokumentów bez ujawniania swojej tożsamości cyfrowej.",
+      "subTitle": "Całkowita prywatność",
+      "subContent": "Zero cyfrowych śladów pozostawionych po sobie."
     },
     {
-      "type": "remove_author_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Sanityzacja na poziomie wojskowym",
       "content": "Przepisujemy binarną strukturę pliku PDF lokalnie w Twojej przeglądarce, aby zapewnić trwałe zniszczenie metadanych."
     },
     {
-      "type": "remove_author_performance",
+      "type": "lt_performance",
       "title": "Natychmiastowe usuwanie metadanych",
-      "content": "Przejrzyj tysiące stron w mniej niż sekundę, korzystając z naszego wysoce zoptymalizowanego rdzenia WebAssembly."
+      "content": "Przejrzyj tysiące stron w mniej niż sekundę, korzystając z naszego wysoce zoptymalizowanego rdzenia WebAssembly.",
+      "badgeText": "Rdzeń zestawu WebAssembly"
     }
   ],
   "faqs": [

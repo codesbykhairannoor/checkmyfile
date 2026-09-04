@@ -14,31 +14,52 @@
     "0",
     "Estado latente"
   ],
+  "supportCenter": "Centro de soporte",
+  "faqTitle": "Preguntas frecuentes",
   "sections": [
     {
-      "type": "crop_margins_hero_features",
+      "type": "merge_hero_features",
       "title": "¿Por qué recortar los márgenes del PDF?",
-      "content": "Muchos artículos académicos y libros electrónicos tienen enormes márgenes blancos. Recortarlos hace que el texto sea más grande y más fácil de leer en pantallas más pequeñas."
+      "content": "Muchos artículos académicos y libros electrónicos tienen enormes márgenes blancos. Recortarlos hace que el texto sea más grande y más fácil de leer en pantallas más pequeñas.",
+      "badgeText": "Recorte de precisión"
     },
     {
-      "type": "crop_margins_how_to_steps",
+      "type": "lt_crop_margins_how_to_steps",
       "title": "Cómo recortar márgenes",
-      "content": "Cargue su archivo, defina el cuadro delimitador arrastrando los controladores y presione recortar. El proceso es completamente privado."
+      "badgeText": "Guía rápida",
+      "steps": [
+        {
+          "title": "Cargar archivo",
+          "description": "Coloque su PDF en la zona de pruebas del navegador."
+        },
+        {
+          "title": "Establecer márgenes",
+          "description": "Defina el cuadro delimitador arrastrando los controladores."
+        },
+        {
+          "title": "Recortar PDF",
+          "description": "Presiona recortar y descarga el archivo recortado al instante."
+        }
+      ]
     },
     {
-      "type": "crop_margins_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Eliminación segura de márgenes",
-      "content": "No es necesario cargar sus archivos PDF confidenciales solo para eliminar algunos espacios en blanco. Nuestro motor WebAssembly lo hace en su navegador."
+      "content": "No es necesario cargar sus archivos PDF confidenciales solo para eliminar algunos espacios en blanco. Nuestro motor WebAssembly lo hace en su navegador.",
+      "subTitle": "Política de carga cero",
+      "subContent": "Tus archivos nunca salen de tu dispositivo."
     },
     {
-      "type": "crop_margins_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Recorte 100% sin conexión",
-      "content": "Tus archivos nunca salen de tu computadora. Perfecto para documentos legales o médicos confidenciales."
+      "content": "Tus archivos nunca salen de tu computadora. Perfecto para documentos legales o médicos confidenciales.",
+      "badgeText": "Listo sin conexión"
     },
     {
-      "type": "crop_margins_rendimiento",
+      "type": "lt_performance",
       "title": "Recorte instantáneo de PDF",
-      "content": "Recorte un libro de 500 páginas en milisegundos sin esperar cargas o descargas del servidor."
+      "content": "Recorte un libro de 500 páginas en milisegundos sin esperar cargas o descargas del servidor.",
+      "badgeText": "Rayo rápido"
     }
   ],
   "faqs": [

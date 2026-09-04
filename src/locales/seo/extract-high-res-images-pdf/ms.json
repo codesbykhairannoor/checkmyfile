@@ -14,31 +14,50 @@
     "0",
     "Muat naik"
   ],
+  "supportCenter": "Pusat Sokongan",
+  "faqTitle": "Soalan Lazim",
   "sections": [
     {
-      "type": "extract_highres_hero_features",
+      "type": "protect_hero_features",
       "title": "Dapatkan Kualiti Imej Asal",
-      "content": "Jangan gunakan alat tangkapan skrin yang merosakkan resolusi. Alat kami menggali ke dalam perduaan PDF dan mengekstrak fail imej asli yang mentah."
+      "content": "Jangan gunakan alat tangkapan skrin yang merosakkan resolusi. Alat kami menggali ke dalam perduaan PDF dan mengekstrak fail imej asli yang mentah.",
+      "badgeText": "Eksport Tanpa Rugi"
     },
     {
-      "type": "extract_highres_how_to_steps",
+      "type": "lt_extract_images_how_to_steps",
       "title": "Cara Mengekstrak Gambar",
-      "content": "Pilih PDF. Kami mengimbasnya untuk JPEG dan PNG terbenam, dan membungkus semuanya ke dalam fail ZIP yang kemas untuk anda."
+      "badgeText": "Eksport Pantas",
+      "steps": [
+        {
+          "title": "Tambah PDF",
+          "description": "Pilih fail PDF dengan imej terbenam."
+        },
+        {
+          "title": "Imbas Binari",
+          "description": "Kami mengimbas fail untuk JPEG dan PNG di luar talian."
+        },
+        {
+          "title": "Muat turun ZIP",
+          "description": "Bungkus semua imej yang diekstrak ke dalam arkib ZIP yang kemas."
+        }
+      ]
     },
     {
-      "type": "extract_highres_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Alat Pengekstrakan Imej Terbaik",
-      "content": "Sesuai untuk pereka bentuk, penerbit dan pelajar yang perlu menggunakan semula aset berkualiti tinggi yang dikunci dalam PDF."
+      "content": "Sesuai untuk pereka bentuk, penerbit dan pelajar yang perlu menggunakan semula aset berkualiti tinggi yang dikunci dalam PDF.",
+      "badgeText": "Kualiti Pro"
     },
     {
-      "type": "extract_highres_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Pengekstrakan Aset Persendirian",
       "content": "Kami tidak mencuri imej anda. Pengekstrakan berlaku sepenuhnya pada komputer anda sendiri."
     },
     {
-      "type": "extract_highres_performance",
+      "type": "lt_performance",
       "title": "Eksport Pantas Membara",
-      "content": "Ekstrak ratusan imej resolusi tinggi dalam beberapa saat tanpa menunggu muat naik fail besar-besaran."
+      "content": "Ekstrak ratusan imej resolusi tinggi dalam beberapa saat tanpa menunggu muat naik fail besar-besaran.",
+      "badgeText": "Pengekstrakan Segera"
     }
   ],
   "faqs": [

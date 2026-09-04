@@ -14,31 +14,51 @@
     "0",
     "Fotspår"
   ],
+  "supportCenter": "Supportcenter",
+  "faqTitle": "Vanliga frågor",
   "sections": [
     {
-      "type": "remove_author_hero_features",
+      "type": "split_hero_features",
       "title": "Varför rensa PDF-metadata?",
-      "content": "PDF-filer lagrar ofta i hemlighet ditt namn, företagsnamn, OS-version och skapandedatum. Rengör dem innan du delar dem online."
+      "content": "PDF-filer lagrar ofta i hemlighet ditt namn, företagsnamn, OS-version och skapandedatum. Rengör dem innan du delar dem online.",
+      "badgeText": "Sanera PDF"
     },
     {
-      "type": "remove_author_how_to_steps",
+      "type": "lt_remove_metadata_how_to_steps",
       "title": "Hur man sanerar fastigheter",
-      "content": "Ladda upp ditt dokument. Vår motor kommer att analysera PDF-strukturen och säkert radera alla ordboksmetadatafält."
+      "badgeText": "3-stegsguide",
+      "steps": [
+        {
+          "title": "Ladda upp dokument",
+          "description": "Välj den PDF-fil du vill rengöra."
+        },
+        {
+          "title": "Radera metadata",
+          "description": "Vår motor analyserar strukturen och raderar dolda fält."
+        },
+        {
+          "title": "Spara ren PDF",
+          "description": "Ladda ner det anonymiserade dokumentet direkt."
+        }
+      ]
     },
     {
-      "type": "remove_author_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Skydda din anonymitet",
-      "content": "Se till att whistleblowers, journalister och vanliga användare kan dela dokument utan att läcka sin digitala identitet."
+      "content": "Se till att whistleblowers, journalister och vanliga användare kan dela dokument utan att läcka sin digitala identitet.",
+      "subTitle": "Total sekretess",
+      "subContent": "Noll digitala fotspår kvar."
     },
     {
-      "type": "remove_author_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Militär sanering",
       "content": "Vi skriver om den binära PDF-strukturen lokalt i din webbläsare för att säkerställa att metadata permanent förstörs."
     },
     {
-      "type": "remove_author_performance",
+      "type": "lt_performance",
       "title": "Omedelbar Metadata Eraser",
-      "content": "Skrubba tusentals sidor på mindre än en sekund med vår mycket optimerade WebAssembly-kärna."
+      "content": "Skrubba tusentals sidor på mindre än en sekund med vår mycket optimerade WebAssembly-kärna.",
+      "badgeText": "WebAssembly Core"
     }
   ],
   "faqs": [

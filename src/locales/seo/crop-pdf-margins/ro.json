@@ -14,31 +14,52 @@
     "0",
     "Latența"
   ],
+  "supportCenter": "Centru de suport",
+  "faqTitle": "Întrebări frecvente",
   "sections": [
     {
-      "type": "crop_margins_hero_features",
+      "type": "merge_hero_features",
       "title": "De ce decupați marjele PDF?",
-      "content": "Multe lucrări academice și cărți electronice au margini albe uriașe. Decuparea acestora face textul mai mare și mai ușor de citit pe ecrane mai mici."
+      "content": "Multe lucrări academice și cărți electronice au margini albe uriașe. Decuparea acestora face textul mai mare și mai ușor de citit pe ecrane mai mici.",
+      "badgeText": "Decupare de precizie"
     },
     {
-      "type": "crop_margins_how_to_steps",
+      "type": "lt_crop_margins_how_to_steps",
       "title": "Cum să tăiați marjele",
-      "content": "Încărcați fișierul, definiți caseta de delimitare trăgând mânerele și apăsați decupați. Procesul este complet privat."
+      "badgeText": "Ghid rapid",
+      "steps": [
+        {
+          "title": "Încărcați fișierul",
+          "description": "Aruncați PDF-ul în caseta de testare a browserului."
+        },
+        {
+          "title": "Setați Margini",
+          "description": "Definiți caseta de delimitare trăgând mânerele."
+        },
+        {
+          "title": "Decupați PDF",
+          "description": "Apăsați decupați și descărcați fișierul tăiat instantaneu."
+        }
+      ]
     },
     {
-      "type": "crop_margins_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Îndepărtarea securizată a marjelor",
-      "content": "Nu este nevoie să încărcați PDF-urile sensibile doar pentru a elimina unele spații albe. Motorul nostru WebAssembly o face în browserul dvs."
+      "content": "Nu este nevoie să încărcați PDF-urile sensibile doar pentru a elimina unele spații albe. Motorul nostru WebAssembly o face în browserul dvs.",
+      "subTitle": "Politica de încărcare zero",
+      "subContent": "Fișierele dvs. nu părăsesc niciodată dispozitivul dvs."
     },
     {
-      "type": "crop_margins_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Decupare 100% offline",
-      "content": "Fișierele tale nu părăsesc niciodată computerul. Perfect pentru documente legale sau medicale confidențiale."
+      "content": "Fișierele tale nu părăsesc niciodată computerul. Perfect pentru documente legale sau medicale confidențiale.",
+      "badgeText": "Pregătit offline"
     },
     {
-      "type": "crop_margins_performance",
+      "type": "lt_performance",
       "title": "Decupare instantanee PDF",
-      "content": "Tăiați o carte de 500 de pagini în milisecunde fără a aștepta încărcările sau descărcările de pe server."
+      "content": "Tăiați o carte de 500 de pagini în milisecunde fără a aștepta încărcările sau descărcările de pe server.",
+      "badgeText": "Rapid fulger"
     }
   ],
   "faqs": [

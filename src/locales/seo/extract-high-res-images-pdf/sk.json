@@ -14,31 +14,50 @@
     "0",
     "Nahrané súbory"
   ],
+  "supportCenter": "Centrum podpory",
+  "faqTitle": "Často kladené otázky",
   "sections": [
     {
-      "type": "extract_highres_hero_features",
+      "type": "protect_hero_features",
       "title": "Získajte originálnu kvalitu obrazu",
-      "content": "Nepoužívajte nástroje na snímanie obrazovky, ktoré ničia rozlíšenie. Náš nástroj sa prehrabáva v binárnom súbore PDF a extrahuje nespracované, pôvodné obrazové súbory."
+      "content": "Nepoužívajte nástroje na snímanie obrazovky, ktoré ničia rozlíšenie. Náš nástroj sa prehrabáva v binárnom súbore PDF a extrahuje nespracované, pôvodné obrazové súbory.",
+      "badgeText": "Bezstratový export"
     },
     {
-      "type": "extract_highres_how_to_steps",
+      "type": "lt_extract_images_how_to_steps",
       "title": "Ako extrahovať obrázky",
-      "content": "Vyberte súbor PDF. Naskenujeme v ňom vložené súbory JPEG a PNG a všetky ich zabalíme do prehľadného súboru ZIP."
+      "badgeText": "Rýchly export",
+      "steps": [
+        {
+          "title": "Pridať PDF",
+          "description": "Vyberte súbor PDF s vloženými obrázkami."
+        },
+        {
+          "title": "Skenovať binárne",
+          "description": "Súbor skenujeme na JPEG a PNG offline."
+        },
+        {
+          "title": "Stiahnite si ZIP",
+          "description": "Zabaľte všetky extrahované obrázky do prehľadného archívu ZIP."
+        }
+      ]
     },
     {
-      "type": "extract_highres_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Najlepší nástroj na extrakciu obrázkov",
-      "content": "Ideálne pre dizajnérov, vydavateľov a študentov, ktorí potrebujú opätovne použiť vysokokvalitné prostriedky uzamknuté v PDF."
+      "content": "Ideálne pre dizajnérov, vydavateľov a študentov, ktorí potrebujú opätovne použiť vysokokvalitné prostriedky uzamknuté v PDF.",
+      "badgeText": "Profesionálna kvalita"
     },
     {
-      "type": "extract_highres_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Extrakcia súkromných aktív",
       "content": "Vaše obrázky nekradneme. Extrakcia prebieha výlučne na vašom vlastnom počítači."
     },
     {
-      "type": "extract_highres_performance",
+      "type": "lt_performance",
       "title": "Bleskovo rýchly export",
-      "content": "Extrahujte stovky obrázkov vo vysokom rozlíšení za pár sekúnd bez čakania na masívne nahranie súboru."
+      "content": "Extrahujte stovky obrázkov vo vysokom rozlíšení za pár sekúnd bez čakania na masívne nahranie súboru.",
+      "badgeText": "Okamžitá extrakcia"
     }
   ],
   "faqs": [

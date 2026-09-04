@@ -14,31 +14,50 @@
     "0",
     "Feltöltések"
   ],
+  "supportCenter": "Támogatási Központ",
+  "faqTitle": "Gyakran Ismételt Kérdések",
   "sections": [
     {
-      "type": "extract_highres_hero_features",
+      "type": "protect_hero_features",
       "title": "Eredeti képminőség",
-      "content": "Ne használjon olyan képernyőképeket, amelyek rontják a felbontást. Eszközünk beleás a PDF binárisba, és kibontja a nyers, eredeti képfájlokat."
+      "content": "Ne használjon olyan képernyőképeket, amelyek rontják a felbontást. Eszközünk beleás a PDF binárisba, és kibontja a nyers, eredeti képfájlokat.",
+      "badgeText": "Veszteségmentes export"
     },
     {
-      "type": "extract_highres_how_to_steps",
+      "type": "lt_extract_images_how_to_steps",
       "title": "Hogyan lehet kivonni a képeket",
-      "content": "Válasszon ki egy PDF-fájlt. Beszkenneljük a beágyazott JPEG- és PNG-fájlokat, és mindegyiket egy szép ZIP-fájlba csomagoljuk."
+      "badgeText": "Gyors export",
+      "steps": [
+        {
+          "title": "PDF hozzáadása",
+          "description": "Válasszon ki egy beágyazott képeket tartalmazó PDF-fájlt."
+        },
+        {
+          "title": "Bináris beolvasás",
+          "description": "JPEG- és PNG-fájlokat keresünk offline állapotban."
+        },
+        {
+          "title": "Töltse le a ZIP-t",
+          "description": "Csomagolja be az összes kibontott képet egy rendezett ZIP archívumba."
+        }
+      ]
     },
     {
-      "type": "extract_highres_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "A legjobb képkivonó eszköz",
-      "content": "Tökéletes azoknak a tervezőknek, kiadóknak és diákoknak, akiknek újra fel kell használniuk a PDF-be zárt kiváló minőségű eszközöket."
+      "content": "Tökéletes azoknak a tervezőknek, kiadóknak és diákoknak, akiknek újra fel kell használniuk a PDF-be zárt kiváló minőségű eszközöket.",
+      "badgeText": "Pro minőség"
     },
     {
-      "type": "extract_highres_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Magánvagyon kitermelése",
       "content": "Nem lopjuk el a képeidet. A kivonás teljes egészében a saját számítógépén történik."
     },
     {
-      "type": "extract_highres_performance",
+      "type": "lt_performance",
       "title": "Lángoló gyors export",
-      "content": "Csomagoljon ki több száz nagy felbontású képet másodpercek alatt anélkül, hogy megvárná a hatalmas fájlfeltöltést."
+      "content": "Csomagoljon ki több száz nagy felbontású képet másodpercek alatt anélkül, hogy megvárná a hatalmas fájlfeltöltést.",
+      "badgeText": "Azonnali kivonás"
     }
   ],
   "faqs": [

@@ -14,31 +14,52 @@
     "0",
     "Annonser"
   ],
+  "supportCenter": "Støttesenter",
+  "faqTitle": "Ofte stilte spørsmål",
   "sections": [
     {
-      "type": "grayscale_print_hero_features",
+      "type": "compress_hero_features",
       "title": "Spar dyrt skriverblekk",
-      "content": "Farget blekk er dyrt. Konverter PDF-filene dine til gråtoner før utskrift for å spare penger og ressurser."
+      "content": "Farget blekk er dyrt. Konverter PDF-filene dine til gråtoner før utskrift for å spare penger og ressurser.",
+      "badgeText": "Blekksparer"
     },
     {
-      "type": "grayscale_print_how_to_steps",
+      "type": "lt_grayscale_how_to_steps",
       "title": "Hvordan lage PDF svart/hvitt",
-      "content": "Bare slipp filen i boksen. Vårt lokale verktøy vil umiddelbart fjerne alle farger og gi deg en perfekt utskrivbar gråtone-PDF."
+      "badgeText": "Enkle trinn",
+      "steps": [
+        {
+          "title": "Slipp fil",
+          "description": "Velg den fargede PDF-filen du vil skrive ut."
+        },
+        {
+          "title": "Bruk filter",
+          "description": "Vårt lokale verktøy fjerner øyeblikkelig alle farger."
+        },
+        {
+          "title": "Last ned gråtoner",
+          "description": "Få en perfekt utskrivbar svart-hvitt PDF."
+        }
+      ]
     },
     {
-      "type": "grayscale_print_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Beste B&W PDF Converter",
-      "content": "Konverter farget tekst, bilder og bakgrunner til gråtoner uten å miste lesbarheten."
+      "content": "Konverter farget tekst, bilder og bakgrunner til gråtoner uten å miste lesbarheten.",
+      "subTitle": "High Fidelity",
+      "subContent": "Opprettholder bildeskarphet i svart-hvitt.",
+      "badgeText": "Perfekte utskrifter"
     },
     {
-      "type": "grayscale_print_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Privat gråtonekonvertering",
       "content": "Dokumentene dine konverteres til din egen enhets minne. Vi ser aldri filene dine."
     },
     {
-      "type": "grayscale_print_performance",
+      "type": "lt_performance",
       "title": "Lynrask behandling",
-      "content": "Fordi vi ikke laster opp filen din til en skyserver, skjer gråtonekonverteringen nesten umiddelbart."
+      "content": "Fordi vi ikke laster opp filen din til en skyserver, skjer gråtonekonverteringen nesten umiddelbart.",
+      "badgeText": "Null ventetid"
     }
   ],
   "faqs": [

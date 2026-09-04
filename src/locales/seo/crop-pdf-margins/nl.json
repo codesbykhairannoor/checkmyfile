@@ -14,31 +14,52 @@
     "0",
     "Latentie"
   ],
+  "supportCenter": "Ondersteuningscentrum",
+  "faqTitle": "Veelgestelde vragen",
   "sections": [
     {
-      "type": "crop_margins_hero_features",
+      "type": "merge_hero_features",
       "title": "Waarom PDF-marges bijsnijden?",
-      "content": "Veel academische artikelen en e-boeken hebben enorme witte marges. Als u ze bijsnijdt, wordt de tekst groter en gemakkelijker leesbaar op kleinere schermen."
+      "content": "Veel academische artikelen en e-boeken hebben enorme witte marges. Als u ze bijsnijdt, wordt de tekst groter en gemakkelijker leesbaar op kleinere schermen.",
+      "badgeText": "Precisie bijsnijden"
     },
     {
-      "type": "crop_margins_how_to_steps",
+      "type": "lt_crop_margins_how_to_steps",
       "title": "Marges bijsnijden",
-      "content": "Upload uw bestand, definieer het selectiekader door de handvatten te slepen en klik op Bijsnijden. Het proces is volledig privé."
+      "badgeText": "Korte handleiding",
+      "steps": [
+        {
+          "title": "Bestand uploaden",
+          "description": "Zet uw PDF neer in de browsersandbox."
+        },
+        {
+          "title": "Marges instellen",
+          "description": "Definieer het selectiekader door de grepen te slepen."
+        },
+        {
+          "title": "PDF bijsnijden",
+          "description": "Druk op Bijsnijden en download het bijgesneden bestand onmiddellijk."
+        }
+      ]
     },
     {
-      "type": "crop_margins_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Veilige margeverwijdering",
-      "content": "U hoeft uw gevoelige PDF's niet te uploaden om wat witruimte te verwijderen. Onze WebAssembly-engine doet het in uw browser."
+      "content": "U hoeft uw gevoelige PDF's niet te uploaden om wat witruimte te verwijderen. Onze WebAssembly-engine doet het in uw browser.",
+      "subTitle": "Geen uploadbeleid",
+      "subContent": "Uw bestanden verlaten nooit uw apparaat."
     },
     {
-      "type": "crop_margins_privacy_security",
+      "type": "lt_privacy_security",
       "title": "100% offline bijsnijden",
-      "content": "Uw bestanden verlaten nooit uw computer. Ideaal voor vertrouwelijke juridische of medische documenten."
+      "content": "Uw bestanden verlaten nooit uw computer. Ideaal voor vertrouwelijke juridische of medische documenten.",
+      "badgeText": "Offline gereed"
     },
     {
-      "type": "crop_marges_prestaties",
+      "type": "lt_performance",
       "title": "Direct PDF-bijsnijden",
-      "content": "Snijd een boek van 500 pagina's in milliseconden bij, zonder te wachten op serveruploads of -downloads."
+      "content": "Snijd een boek van 500 pagina's in milliseconden bij, zonder te wachten op serveruploads of -downloads.",
+      "badgeText": "Bliksemsnel"
     }
   ],
   "faqs": [

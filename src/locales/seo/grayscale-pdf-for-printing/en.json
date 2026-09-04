@@ -14,31 +14,52 @@
     "0",
     "Ads"
   ],
+  "supportCenter": "Support Center",
+  "faqTitle": "Frequently Asked Questions",
   "sections": [
     {
-      "type": "grayscale_print_hero_features",
+      "type": "compress_hero_features",
       "title": "Save Expensive Printer Ink",
-      "content": "Colored ink is expensive. Convert your PDFs to grayscale before printing to save money and resources."
+      "content": "Colored ink is expensive. Convert your PDFs to grayscale before printing to save money and resources.",
+      "badgeText": "Ink Saver"
     },
     {
-      "type": "grayscale_print_how_to_steps",
+      "type": "lt_grayscale_how_to_steps",
       "title": "How to Make PDF Black & White",
-      "content": "Just drop your file in the box. Our local tool will instantly strip all colors and give you a perfectly printable grayscale PDF."
+      "badgeText": "Simple Steps",
+      "steps": [
+        {
+          "title": "Drop File",
+          "description": "Select the colored PDF you want to print."
+        },
+        {
+          "title": "Apply Filter",
+          "description": "Our local tool instantly strips all colors."
+        },
+        {
+          "title": "Download Grayscale",
+          "description": "Get a perfectly printable black and white PDF."
+        }
+      ]
     },
     {
-      "type": "grayscale_print_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Best B&W PDF Converter",
-      "content": "Convert colored text, images, and backgrounds to shades of gray without losing readability."
+      "content": "Convert colored text, images, and backgrounds to shades of gray without losing readability.",
+      "subTitle": "High Fidelity",
+      "subContent": "Maintains image sharpness in B&W.",
+      "badgeText": "Perfect Prints"
     },
     {
-      "type": "grayscale_print_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Private Grayscale Conversion",
       "content": "Your documents are converted in your own device's memory. We never see your files."
     },
     {
-      "type": "grayscale_print_performance",
+      "type": "lt_performance",
       "title": "Lightning Fast Processing",
-      "content": "Because we don't upload your file to a cloud server, the grayscale conversion happens almost instantly."
+      "content": "Because we don't upload your file to a cloud server, the grayscale conversion happens almost instantly.",
+      "badgeText": "Zero Latency"
     }
   ],
   "faqs": [

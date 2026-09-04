@@ -14,31 +14,51 @@
     "0",
     "Sử dụng đám mây"
   ],
+  "supportCenter": "Trung tâm hỗ trợ",
+  "faqTitle": "Câu hỏi thường gặp",
   "sections": [
     {
-      "type": "compare_visual_hero_features",
+      "type": "resize_hero_features",
       "title": "Tự động phát hiện những thay đổi nhỏ",
-      "content": "Đừng dựa vào đôi mắt của bạn để tìm ra sự khác biệt trong các hợp đồng hoặc thiết kế đã sửa đổi. Công cụ của chúng tôi đánh dấu những thay đổi chính xác của pixel bằng màu đỏ."
+      "content": "Đừng dựa vào đôi mắt của bạn để tìm ra sự khác biệt trong các hợp đồng hoặc thiết kế đã sửa đổi. Công cụ của chúng tôi đánh dấu những thay đổi chính xác của pixel bằng màu đỏ.",
+      "badgeText": "Khác biệt trực quan"
     },
     {
-      "type": "compare_visual_how_to_steps",
+      "type": "lt_compare_pdf_how_to_steps",
       "title": "Cách so sánh các tệp PDF",
-      "content": "Tải lên bản PDF gốc và bản PDF đã sửa đổi. Chúng tôi sẽ kết xuất cả hai và chồng chúng lên nhau để hiển thị bất kỳ phần bổ sung hoặc xóa nào."
+      "badgeText": "Hướng dẫn so sánh",
+      "steps": [
+        {
+          "title": "Tải lên bản gốc",
+          "description": "Chọn phiên bản PDF đầu tiên của bạn."
+        },
+        {
+          "title": "Tải lên bản sửa đổi",
+          "description": "Chọn phiên bản thứ hai để so sánh."
+        },
+        {
+          "title": "Xem điểm nổi bật",
+          "description": "Chúng tôi kết xuất cả hai và chồng chúng lên nhau để hiển thị mọi phần bổ sung hoặc xóa bằng màu đỏ."
+        }
+      ]
     },
     {
-      "type": "compare_visual_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Hoàn hảo cho hợp đồng và bằng chứng",
-      "content": "Các luật sư và nhà thiết kế sử dụng công cụ tìm khác biệt trực quan của chúng tôi để đảm bảo không có thay đổi trái phép nào được đưa vào tài liệu."
+      "content": "Các luật sư và nhà thiết kế sử dụng công cụ tìm khác biệt trực quan của chúng tôi để đảm bảo không có thay đổi trái phép nào được đưa vào tài liệu.",
+      "badgeText": "Sẵn sàng về mặt pháp lý"
     },
     {
-      "type": "compare_visual_privacy_security",
+      "type": "lt_privacy_security",
       "title": "So sánh tài liệu mật",
-      "content": "So sánh các hợp đồng NDA nhạy cảm? Công cụ của chúng tôi là 100% địa phương. Các tài liệu không bao giờ chạm vào máy chủ của chúng tôi."
+      "content": "So sánh các hợp đồng NDA nhạy cảm? Công cụ của chúng tôi là 100% địa phương. Các tài liệu không bao giờ chạm vào máy chủ của chúng tôi.",
+      "badgeText": "Không tải lên"
     },
     {
-      "type": "compare_visual_performance",
+      "type": "lt_performance",
       "title": "Kết xuất khác biệt theo thời gian thực",
-      "content": "Tạo sự khác biệt trực quan ngay lập tức trong trình duyệt của bạn nhờ kết xuất canvas được tăng tốc phần cứng."
+      "content": "Tạo sự khác biệt trực quan ngay lập tức trong trình duyệt của bạn nhờ kết xuất canvas được tăng tốc phần cứng.",
+      "badgeText": "Tăng tốc GPU"
     }
   ],
   "faqs": [

@@ -14,31 +14,51 @@
     "0",
     "Jejak kaki"
   ],
+  "supportCenter": "Pusat Dukungan",
+  "faqTitle": "Pertanyaan yang Sering Diajukan",
   "sections": [
     {
-      "type": "remove_author_hero_features",
+      "type": "split_hero_features",
       "title": "Mengapa Membersihkan Metadata PDF?",
-      "content": "PDF sering kali diam-diam menyimpan nama Anda, nama perusahaan, versi OS, dan tanggal pembuatan. Bersihkan sebelum dibagikan secara online."
+      "content": "PDF sering kali diam-diam menyimpan nama Anda, nama perusahaan, versi OS, dan tanggal pembuatan. Bersihkan sebelum dibagikan secara online.",
+      "badgeText": "Sanitasi PDF"
     },
     {
-      "type": "remove_author_how_to_steps",
+      "type": "lt_remove_metadata_how_to_steps",
       "title": "Cara Mensanitasi Properti",
-      "content": "Unggah dokumen Anda. Mesin kami akan menguraikan struktur PDF dan menghapus semua bidang metadata kamus dengan aman."
+      "badgeText": "Panduan 3 Langkah",
+      "steps": [
+        {
+          "title": "Unggah Dokumen",
+          "description": "Pilih file PDF yang ingin Anda bersihkan."
+        },
+        {
+          "title": "Hapus Metadata",
+          "description": "Mesin kami mem-parsing struktur dan menghapus bidang tersembunyi."
+        },
+        {
+          "title": "Simpan PDF Bersih",
+          "description": "Unduh dokumen anonim secara instan."
+        }
+      ]
     },
     {
-      "type": "remove_author_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Lindungi Anonimitas Anda",
-      "content": "Pastikan pelapor, jurnalis, dan pengguna sehari-hari dapat berbagi dokumen tanpa membocorkan identitas digital mereka."
+      "content": "Pastikan pelapor, jurnalis, dan pengguna sehari-hari dapat berbagi dokumen tanpa membocorkan identitas digital mereka.",
+      "subTitle": "Privasi Total",
+      "subContent": "Tidak ada jejak digital yang tertinggal."
     },
     {
-      "type": "remove_author_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Sanitasi Tingkat Militer",
       "content": "Kami menulis ulang struktur biner PDF secara lokal di browser Anda untuk memastikan metadata dimusnahkan secara permanen."
     },
     {
-      "type": "remove_author_performance",
+      "type": "lt_performance",
       "title": "Penghapus Metadata Instan",
-      "content": "Gosok ribuan halaman dalam waktu kurang dari satu detik menggunakan inti WebAssembly kami yang sangat optimal."
+      "content": "Gosok ribuan halaman dalam waktu kurang dari satu detik menggunakan inti WebAssembly kami yang sangat optimal.",
+      "badgeText": "Inti Majelis Web"
     }
   ],
   "faqs": [

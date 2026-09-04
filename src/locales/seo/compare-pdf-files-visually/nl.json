@@ -14,31 +14,51 @@
     "0",
     "Cloud-gebruik"
   ],
+  "supportCenter": "Ondersteuningscentrum",
+  "faqTitle": "Veelgestelde vragen",
   "sections": [
     {
-      "type": "compare_visual_hero_features",
+      "type": "resize_hero_features",
       "title": "Ontdek kleine veranderingen automatisch",
-      "content": "Vertrouw niet op uw ogen om verschillen in herziene contracten of ontwerpen te vinden. Onze tool markeert exacte pixelveranderingen in rood."
+      "content": "Vertrouw niet op uw ogen om verschillen in herziene contracten of ontwerpen te vinden. Onze tool markeert exacte pixelveranderingen in rood.",
+      "badgeText": "Visueel verschil"
     },
     {
-      "type": "compare_visual_how_to_steps",
+      "type": "lt_compare_pdf_how_to_steps",
       "title": "PDF's vergelijken",
-      "content": "Upload de originele PDF en de herziene PDF. We geven beide weer en overlappen ze om eventuele toevoegingen of verwijderingen zichtbaar te maken."
+      "badgeText": "Vergelijk Gids",
+      "steps": [
+        {
+          "title": "Origineel uploaden",
+          "description": "Selecteer de eerste versie van uw PDF."
+        },
+        {
+          "title": "Revisie uploaden",
+          "description": "Selecteer de tweede versie om te vergelijken."
+        },
+        {
+          "title": "Hoogtepunten bekijken",
+          "description": "We geven beide weer en overlappen ze om eventuele toevoegingen of verwijderingen in het rood weer te geven."
+        }
+      ]
     },
     {
-      "type": "compare_visual_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Perfect voor contracten en bewijzen",
-      "content": "Advocaten en ontwerpers gebruiken onze visuele diff-tool om ervoor te zorgen dat er geen ongeoorloofde wijzigingen in een document terechtkomen."
+      "content": "Advocaten en ontwerpers gebruiken onze visuele diff-tool om ervoor te zorgen dat er geen ongeoorloofde wijzigingen in een document terechtkomen.",
+      "badgeText": "Juridisch gereed"
     },
     {
-      "type": "compare_visual_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Vergelijking van vertrouwelijke documenten",
-      "content": "Gevoelige NDA-contracten vergelijken? Onze tool is 100% lokaal. De documenten raken nooit onze servers."
+      "content": "Gevoelige NDA-contracten vergelijken? Onze tool is 100% lokaal. De documenten raken nooit onze servers.",
+      "badgeText": "Geen uploads"
     },
     {
-      "type": "compare_visual_performance",
+      "type": "lt_performance",
       "title": "Realtime diff-weergave",
-      "content": "Genereer direct visuele verschillen in uw browser dankzij hardwareversnelde canvasweergave."
+      "content": "Genereer direct visuele verschillen in uw browser dankzij hardwareversnelde canvasweergave.",
+      "badgeText": "GPU versneld"
     }
   ],
   "faqs": [

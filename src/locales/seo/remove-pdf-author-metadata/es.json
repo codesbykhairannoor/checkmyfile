@@ -14,31 +14,51 @@
     "0",
     "Huellas"
   ],
+  "supportCenter": "Centro de soporte",
+  "faqTitle": "Preguntas frecuentes",
   "sections": [
     {
-      "type": "remove_author_hero_features",
+      "type": "split_hero_features",
       "title": "¿Por qué limpiar metadatos PDF?",
-      "content": "Los archivos PDF suelen almacenar en secreto su nombre, el nombre de la empresa, la versión del sistema operativo y las fechas de creación. Límpielos antes de compartirlos en línea."
+      "content": "Los archivos PDF suelen almacenar en secreto su nombre, el nombre de la empresa, la versión del sistema operativo y las fechas de creación. Límpielos antes de compartirlos en línea.",
+      "badgeText": "Desinfectar PDF"
     },
     {
-      "type": "remove_author_how_to_steps",
+      "type": "lt_remove_metadata_how_to_steps",
       "title": "Cómo desinfectar propiedades",
-      "content": "Sube tu documento. Nuestro motor analizará la estructura del PDF y borrará de forma segura todos los campos de metadatos del diccionario."
+      "badgeText": "Guía de 3 pasos",
+      "steps": [
+        {
+          "title": "Cargar documento",
+          "description": "Seleccione el archivo PDF que desea limpiar."
+        },
+        {
+          "title": "Borrar metadatos",
+          "description": "Nuestro motor analiza la estructura y borra los campos ocultos."
+        },
+        {
+          "title": "Guardar PDF limpio",
+          "description": "Descargue el documento anonimizado al instante."
+        }
+      ]
     },
     {
-      "type": "remove_author_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Proteja su anonimato",
-      "content": "Asegúrese de que los denunciantes, periodistas y usuarios cotidianos puedan compartir documentos sin filtrar su identidad digital."
+      "content": "Asegúrese de que los denunciantes, periodistas y usuarios cotidianos puedan compartir documentos sin filtrar su identidad digital.",
+      "subTitle": "Privacidad total",
+      "subContent": "Cero huellas digitales dejadas atrás."
     },
     {
-      "type": "remove_author_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Desinfección de grado militar",
       "content": "Reescribimos la estructura binaria del PDF localmente en su navegador para garantizar que los metadatos se destruyan permanentemente."
     },
     {
-      "type": "remove_author_performance",
+      "type": "lt_performance",
       "title": "Borrador instantáneo de metadatos",
-      "content": "Explore miles de páginas en menos de un segundo utilizando nuestro núcleo WebAssembly altamente optimizado."
+      "content": "Explore miles de páginas en menos de un segundo utilizando nuestro núcleo WebAssembly altamente optimizado.",
+      "badgeText": "Núcleo de ensamblaje web"
     }
   ],
   "faqs": [

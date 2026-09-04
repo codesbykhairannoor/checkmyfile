@@ -14,31 +14,51 @@
     "0",
     "Cloud-Nutzung"
   ],
+  "supportCenter": "Support-Center",
+  "faqTitle": "Häufig gestellte Fragen",
   "sections": [
     {
-      "type": "compare_visual_hero_features",
+      "type": "resize_hero_features",
       "title": "Erkennen Sie kleinste Änderungen automatisch",
-      "content": "Verlassen Sie sich nicht auf Ihre Augen, um Unterschiede in überarbeiteten Verträgen oder Designs zu erkennen. Unser Tool hebt genaue Pixeländerungen rot hervor."
+      "content": "Verlassen Sie sich nicht auf Ihre Augen, um Unterschiede in überarbeiteten Verträgen oder Designs zu erkennen. Unser Tool hebt genaue Pixeländerungen rot hervor.",
+      "badgeText": "Visueller Diff"
     },
     {
-      "type": "compare_visual_how_to_steps",
+      "type": "lt_compare_pdf_how_to_steps",
       "title": "So vergleichen Sie PDFs",
-      "content": "Laden Sie das Original-PDF und das überarbeitete PDF hoch. Wir rendern beide und überlappen sie, um etwaige Hinzufügungen oder Löschungen sichtbar zu machen."
+      "badgeText": "Leitfaden vergleichen",
+      "steps": [
+        {
+          "title": "Original hochladen",
+          "description": "Wählen Sie die erste Version Ihres PDFs aus."
+        },
+        {
+          "title": "Revision hochladen",
+          "description": "Wählen Sie die zweite Version zum Vergleich aus."
+        },
+        {
+          "title": "Highlights anzeigen",
+          "description": "Wir rendern beide und überlappen sie, um alle Hinzufügungen oder Löschungen in Rot anzuzeigen."
+        }
+      ]
     },
     {
-      "type": "compare_visual_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Perfekt für Verträge und Nachweise",
-      "content": "Anwälte und Designer nutzen unser visuelles Diff-Tool, um sicherzustellen, dass keine unbefugten Änderungen in ein Dokument eingeschleust wurden."
+      "content": "Anwälte und Designer nutzen unser visuelles Diff-Tool, um sicherzustellen, dass keine unbefugten Änderungen in ein Dokument eingeschleust wurden.",
+      "badgeText": "Legal bereit"
     },
     {
-      "type": "compare_visual_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Vergleich vertraulicher Dokumente",
-      "content": "Vergleichen Sie sensible NDA-Verträge? Unser Tool ist 100 % lokal. Die Dokumente berühren niemals unsere Server."
+      "content": "Vergleichen Sie sensible NDA-Verträge? Unser Tool ist 100 % lokal. Die Dokumente berühren niemals unsere Server.",
+      "badgeText": "Keine Uploads"
     },
     {
-      "type": "compare_visual_performance",
+      "type": "lt_performance",
       "title": "Echtzeit-Diff-Rendering",
-      "content": "Generieren Sie dank hardwarebeschleunigtem Canvas-Rendering sofort visuelle Unterschiede in Ihrem Browser."
+      "content": "Generieren Sie dank hardwarebeschleunigtem Canvas-Rendering sofort visuelle Unterschiede in Ihrem Browser.",
+      "badgeText": "GPU-beschleunigt"
     }
   ],
   "faqs": [

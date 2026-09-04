@@ -14,31 +14,51 @@
     "0",
     "Pilven käyttö"
   ],
+  "supportCenter": "Tukikeskus",
+  "faqTitle": "Usein kysytyt kysymykset",
   "sections": [
     {
-      "type": "compare_visual_hero_features",
+      "type": "resize_hero_features",
       "title": "Huomaa pienet muutokset automaattisesti",
-      "content": "Älä luota silmiisi löytääksesi eroja tarkistetuissa sopimuksissa tai suunnitelmissa. Työkalumme korostaa tarkat pikselien muutokset punaisella."
+      "content": "Älä luota silmiisi löytääksesi eroja tarkistetuissa sopimuksissa tai suunnitelmissa. Työkalumme korostaa tarkat pikselien muutokset punaisella.",
+      "badgeText": "Visuaalinen ero"
     },
     {
-      "type": "compare_visual_how_to_steps",
+      "type": "lt_compare_pdf_how_to_steps",
       "title": "Miten vertailla PDF-tiedostoja",
-      "content": "Lataa alkuperäinen PDF ja tarkistettu PDF. Muodostamme molemmat ja peitämme ne lisäysten tai poistojen paljastamiseksi."
+      "badgeText": "Vertaile opas",
+      "steps": [
+        {
+          "title": "Lataa alkuperäinen",
+          "description": "Valitse PDF-tiedostosi ensimmäinen versio."
+        },
+        {
+          "title": "Lataa versio",
+          "description": "Valitse toinen versio vertailua varten."
+        },
+        {
+          "title": "Näytä kohokohdat",
+          "description": "Muodostamme molemmat ja peitämme ne, jotta lisäykset tai poistot näkyvät punaisina."
+        }
+      ]
     },
     {
-      "type": "compare_visual_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Täydellinen sopimuksiin ja todisteisiin",
-      "content": "Lakimiehet ja suunnittelijat käyttävät visuaalista erotustyökaluamme varmistaakseen, ettei asiakirjaan ole tehty luvattomia muutoksia."
+      "content": "Lakimiehet ja suunnittelijat käyttävät visuaalista erotustyökaluamme varmistaakseen, ettei asiakirjaan ole tehty luvattomia muutoksia.",
+      "badgeText": "Lakivalmius"
     },
     {
-      "type": "compare_visual_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Luottamuksellisten asiakirjojen vertailu",
-      "content": "Vertailetko arkaluonteisia NDA-sopimuksia? Työkalumme on 100 % paikallinen. Asiakirjat eivät koskaan kosketa palvelimiamme."
+      "content": "Vertailetko arkaluonteisia NDA-sopimuksia? Työkalumme on 100 % paikallinen. Asiakirjat eivät koskaan kosketa palvelimiamme.",
+      "badgeText": "Nolla latausta"
     },
     {
-      "type": "compare_visual_performance",
+      "type": "lt_performance",
       "title": "Reaaliaikainen erotusrenderöinti",
-      "content": "Luo visuaalisia eroja välittömästi selaimessasi laitteistokiihdytetyn kanvas-renderöinnin ansiosta."
+      "content": "Luo visuaalisia eroja välittömästi selaimessasi laitteistokiihdytetyn kanvas-renderöinnin ansiosta.",
+      "badgeText": "GPU kiihdytetty"
     }
   ],
   "faqs": [

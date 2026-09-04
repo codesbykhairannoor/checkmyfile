@@ -14,31 +14,52 @@
     "0",
     "Latencia"
   ],
+  "supportCenter": "Centrum podpory",
+  "faqTitle": "Často kladené otázky",
   "sections": [
     {
-      "type": "crop_margins_hero_features",
+      "type": "merge_hero_features",
       "title": "Prečo orezávať okraje PDF?",
-      "content": "Mnoho akademických prác a elektronických kníh má veľké biele okraje. Ich orezaním sa text zväčší a bude sa ľahšie čítať na menších obrazovkách."
+      "content": "Mnoho akademických prác a elektronických kníh má veľké biele okraje. Ich orezaním sa text zväčší a bude sa ľahšie čítať na menších obrazovkách.",
+      "badgeText": "Presné orezanie"
     },
     {
-      "type": "crop_margins_how_to_steps",
+      "type": "lt_crop_margins_how_to_steps",
       "title": "Ako orezať okraje",
-      "content": "Nahrajte svoj súbor, definujte ohraničovací rámček pretiahnutím rukovätí a stlačte orezať. Proces je úplne súkromný."
+      "badgeText": "Rýchly sprievodca",
+      "steps": [
+        {
+          "title": "Nahrať súbor",
+          "description": "Presuňte súbor PDF do karantény prehliadača."
+        },
+        {
+          "title": "Nastaviť okraje",
+          "description": "Definujte ohraničovací rámček potiahnutím rukovätí."
+        },
+        {
+          "title": "Orezať PDF",
+          "description": "Stlačte orezať a okamžite si stiahnite orezaný súbor."
+        }
+      ]
     },
     {
-      "type": "crop_margins_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Bezpečné odstránenie okrajov",
-      "content": "Nie je potrebné nahrávať citlivé súbory PDF, len aby ste odstránili medzery. Náš nástroj WebAssembly to robí vo vašom prehliadači."
+      "content": "Nie je potrebné nahrávať citlivé súbory PDF, len aby ste odstránili medzery. Náš nástroj WebAssembly to robí vo vašom prehliadači.",
+      "subTitle": "Zásady nulového nahrávania",
+      "subContent": "Vaše súbory nikdy neopustia vaše zariadenie."
     },
     {
-      "type": "crop_margins_privacy_security",
+      "type": "lt_privacy_security",
       "title": "100% offline orezanie",
-      "content": "Vaše súbory nikdy neopustia váš počítač. Ideálne pre dôverné právne alebo lekárske dokumenty."
+      "content": "Vaše súbory nikdy neopustia váš počítač. Ideálne pre dôverné právne alebo lekárske dokumenty.",
+      "badgeText": "Pripravené pre režim offline"
     },
     {
-      "type": "crop_margins_performance",
+      "type": "lt_performance",
       "title": "Okamžité orezanie PDF",
-      "content": "Orezajte 500-stranovú knihu v priebehu milisekúnd bez čakania na nahranie alebo sťahovanie zo servera."
+      "content": "Orezajte 500-stranovú knihu v priebehu milisekúnd bez čakania na nahranie alebo sťahovanie zo servera.",
+      "badgeText": "Bleskovo rýchle"
     }
   ],
   "faqs": [

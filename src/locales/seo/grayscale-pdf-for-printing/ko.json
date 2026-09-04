@@ -14,31 +14,52 @@
     "0",
     "광고"
   ],
+  "supportCenter": "지원 센터",
+  "faqTitle": "자주 묻는 질문",
   "sections": [
     {
-      "type": "grayscale_print_hero_features",
+      "type": "compress_hero_features",
       "title": "값비싼 프린터 잉크를 절약하세요",
-      "content": "컬러 잉크는 비싸다. 비용과 자원을 절약하려면 인쇄하기 전에 PDF를 회색조로 변환하세요."
+      "content": "컬러 잉크는 비싸다. 비용과 자원을 절약하려면 인쇄하기 전에 PDF를 회색조로 변환하세요.",
+      "badgeText": "잉크 절약"
     },
     {
-      "type": "grayscale_print_how_to_steps",
+      "type": "lt_grayscale_how_to_steps",
       "title": "PDF를 흑백으로 만드는 방법",
-      "content": "파일을 상자에 넣기만 하면 됩니다. 우리의 로컬 도구는 즉시 모든 색상을 제거하고 완벽하게 인쇄 가능한 회색조 PDF를 제공합니다."
+      "badgeText": "간단한 단계",
+      "steps": [
+        {
+          "title": "파일 삭제",
+          "description": "인쇄하려는 컬러 PDF를 선택합니다."
+        },
+        {
+          "title": "필터 적용",
+          "description": "우리의 로컬 도구는 즉시 모든 색상을 제거합니다."
+        },
+        {
+          "title": "그레이스케일 다운로드",
+          "description": "완벽하게 인쇄 가능한 흑백 PDF를 받으세요."
+        }
+      ]
     },
     {
-      "type": "grayscale_print_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "최고의 흑백 PDF 변환기",
-      "content": "가독성을 유지하면서 컬러 텍스트, 이미지, 배경을 회색 음영으로 변환합니다."
+      "content": "가독성을 유지하면서 컬러 텍스트, 이미지, 배경을 회색 음영으로 변환합니다.",
+      "subTitle": "높은 충실도",
+      "subContent": "흑백에서 이미지 선명도를 유지합니다.",
+      "badgeText": "완벽한 인쇄물"
     },
     {
-      "type": "grayscale_print_privacy_security",
+      "type": "lt_privacy_security",
       "title": "비공개 그레이스케일 변환",
       "content": "귀하의 문서는 귀하의 장치 메모리에서 변환됩니다. 우리는 귀하의 파일을 결코 볼 수 없습니다."
     },
     {
-      "type": "grayscale_print_performance",
+      "type": "lt_performance",
       "title": "번개처럼 빠른 처리",
-      "content": "귀하의 파일을 클라우드 서버에 업로드하지 않기 때문에 그레이스케일 변환이 거의 즉시 이루어집니다."
+      "content": "귀하의 파일을 클라우드 서버에 업로드하지 않기 때문에 그레이스케일 변환이 거의 즉시 이루어집니다.",
+      "badgeText": "제로 레이턴시"
     }
   ],
   "faqs": [

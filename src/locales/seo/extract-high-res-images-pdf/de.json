@@ -14,31 +14,50 @@
     "0",
     "Uploads"
   ],
+  "supportCenter": "Support-Center",
+  "faqTitle": "Häufig gestellte Fragen",
   "sections": [
     {
-      "type": "extract_highres_hero_features",
+      "type": "protect_hero_features",
       "title": "Erhalten Sie Originalbildqualität",
-      "content": "Verwenden Sie keine Screenshot-Tools, die die Auflösung beeinträchtigen. Unser Tool greift in die PDF-Binärdatei ein und extrahiert die rohen Originalbilddateien."
+      "content": "Verwenden Sie keine Screenshot-Tools, die die Auflösung beeinträchtigen. Unser Tool greift in die PDF-Binärdatei ein und extrahiert die rohen Originalbilddateien.",
+      "badgeText": "Verlustfreier Export"
     },
     {
-      "type": "extract_highres_how_to_steps",
+      "type": "lt_extract_images_how_to_steps",
       "title": "So extrahieren Sie Bilder",
-      "content": "Wählen Sie ein PDF aus. Wir scannen es nach eingebetteten JPEGs und PNGs und packen sie alle für Sie in eine übersichtliche ZIP-Datei."
+      "badgeText": "Schneller Export",
+      "steps": [
+        {
+          "title": "PDF hinzufügen",
+          "description": "Wählen Sie eine PDF-Datei mit eingebetteten Bildern aus."
+        },
+        {
+          "title": "Binär scannen",
+          "description": "Wir scannen die Datei offline auf JPEGs und PNGs."
+        },
+        {
+          "title": "ZIP herunterladen",
+          "description": "Packen Sie alle extrahierten Bilder in ein übersichtliches ZIP-Archiv."
+        }
+      ]
     },
     {
-      "type": "extract_highres_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Bestes Bildextraktionstool",
-      "content": "Perfekt für Designer, Verleger und Studenten, die hochwertige, in einem PDF eingeschlossene Assets wiederverwenden müssen."
+      "content": "Perfekt für Designer, Verleger und Studenten, die hochwertige, in einem PDF eingeschlossene Assets wiederverwenden müssen.",
+      "badgeText": "Profi-Qualität"
     },
     {
-      "type": "extract_highres_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Private Vermögensgewinnung",
       "content": "Wir stehlen Ihre Bilder nicht. Die Extraktion erfolgt vollständig auf Ihrem eigenen Computer."
     },
     {
-      "type": "extract_highres_performance",
+      "type": "lt_performance",
       "title": "Blitzschneller Export",
-      "content": "Extrahieren Sie Hunderte von hochauflösenden Bildern in Sekundenschnelle, ohne auf einen riesigen Datei-Upload warten zu müssen."
+      "content": "Extrahieren Sie Hunderte von hochauflösenden Bildern in Sekundenschnelle, ohne auf einen riesigen Datei-Upload warten zu müssen.",
+      "badgeText": "Sofortige Extraktion"
     }
   ],
   "faqs": [

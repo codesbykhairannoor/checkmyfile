@@ -14,31 +14,52 @@
     "0",
     "Latens"
   ],
+  "supportCenter": "Støttesenter",
+  "faqTitle": "Ofte stilte spørsmål",
   "sections": [
     {
-      "type": "crop_margins_hero_features",
+      "type": "merge_hero_features",
       "title": "Hvorfor beskjære PDF-marginer?",
-      "content": "Mange akademiske artikler og e-bøker har store hvite marger. Ved å beskjære dem blir teksten større og lettere å lese på mindre skjermer."
+      "content": "Mange akademiske artikler og e-bøker har store hvite marger. Ved å beskjære dem blir teksten større og lettere å lese på mindre skjermer.",
+      "badgeText": "Presisjonsbeskjæring"
     },
     {
-      "type": "crop_margins_how_to_steps",
+      "type": "lt_crop_margins_how_to_steps",
       "title": "Hvordan beskjære marginer",
-      "content": "Last opp filen din, definer avgrensningsboksen ved å dra i håndtakene, og trykk beskjær. Prosessen er helt privat."
+      "badgeText": "Hurtigguide",
+      "steps": [
+        {
+          "title": "Last opp fil",
+          "description": "Slipp PDF-filen din i nettleserens sandkasse."
+        },
+        {
+          "title": "Angi marginer",
+          "description": "Definer avgrensningsrammen ved å dra i håndtakene."
+        },
+        {
+          "title": "Beskjær PDF",
+          "description": "Trykk beskjær og last ned den trimmede filen umiddelbart."
+        }
+      ]
     },
     {
-      "type": "crop_margins_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Sikker fjerning av marger",
-      "content": "Du trenger ikke å laste opp sensitive PDF-er bare for å fjerne mellomrom. Vår WebAssembly-motor gjør det i nettleseren din."
+      "content": "Du trenger ikke å laste opp sensitive PDF-er bare for å fjerne mellomrom. Vår WebAssembly-motor gjør det i nettleseren din.",
+      "subTitle": "Null opplastingspolicy",
+      "subContent": "Filene dine forlater aldri enheten."
     },
     {
-      "type": "crop_margins_privacy_security",
+      "type": "lt_privacy_security",
       "title": "100 % frakoblet beskjæring",
-      "content": "Filene dine forlater aldri datamaskinen. Perfekt for konfidensielle juridiske eller medisinske dokumenter."
+      "content": "Filene dine forlater aldri datamaskinen. Perfekt for konfidensielle juridiske eller medisinske dokumenter.",
+      "badgeText": "Frakoblet klar"
     },
     {
-      "type": "crop_margins_performance",
+      "type": "lt_performance",
       "title": "Øyeblikkelig PDF-trimming",
-      "content": "Trim en 500-siders bok på millisekunder uten å vente på serveropplastinger eller nedlastinger."
+      "content": "Trim en 500-siders bok på millisekunder uten å vente på serveropplastinger eller nedlastinger.",
+      "badgeText": "Lynrask"
     }
   ],
   "faqs": [

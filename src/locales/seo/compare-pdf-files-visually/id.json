@@ -14,31 +14,51 @@
     "0",
     "Penggunaan Awan"
   ],
+  "supportCenter": "Pusat Dukungan",
+  "faqTitle": "Pertanyaan yang Sering Diajukan",
   "sections": [
     {
-      "type": "compare_visual_hero_features",
+      "type": "resize_hero_features",
       "title": "Temukan Perubahan Kecil Secara Otomatis",
-      "content": "Jangan mengandalkan mata Anda untuk menemukan perbedaan dalam kontrak atau desain yang direvisi. Alat kami menyoroti perubahan piksel yang tepat dengan warna merah."
+      "content": "Jangan mengandalkan mata Anda untuk menemukan perbedaan dalam kontrak atau desain yang direvisi. Alat kami menyoroti perubahan piksel yang tepat dengan warna merah.",
+      "badgeText": "Perbedaan Visual"
     },
     {
-      "type": "compare_visual_how_to_steps",
+      "type": "lt_compare_pdf_how_to_steps",
       "title": "Bagaimana Membandingkan PDF",
-      "content": "Unggah PDF asli dan PDF revisi. Kami akan merender keduanya dan menimpanya untuk menampilkan penambahan atau penghapusan apa pun."
+      "badgeText": "Bandingkan Panduan",
+      "steps": [
+        {
+          "title": "Unggah Asli",
+          "description": "Pilih versi pertama PDF Anda."
+        },
+        {
+          "title": "Unggah Revisi",
+          "description": "Pilih versi kedua untuk dibandingkan."
+        },
+        {
+          "title": "Lihat Sorotan",
+          "description": "Kami merender keduanya dan menumpuknya untuk menampilkan penambahan atau penghapusan apa pun dengan warna merah."
+        }
+      ]
     },
     {
-      "type": "compare_visual_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Sempurna untuk Kontrak & Bukti",
-      "content": "Pengacara dan desainer menggunakan alat pembeda visual kami untuk memastikan tidak ada perubahan tidak sah yang dimasukkan ke dalam dokumen."
+      "content": "Pengacara dan desainer menggunakan alat pembeda visual kami untuk memastikan tidak ada perubahan tidak sah yang dimasukkan ke dalam dokumen.",
+      "badgeText": "Siap Hukum"
     },
     {
-      "type": "compare_visual_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Perbandingan Dokumen Rahasia",
-      "content": "Membandingkan kontrak NDA yang sensitif? Alat kami 100% lokal. Dokumen tersebut tidak pernah menyentuh server kami."
+      "content": "Membandingkan kontrak NDA yang sensitif? Alat kami 100% lokal. Dokumen tersebut tidak pernah menyentuh server kami.",
+      "badgeText": "Nol Unggahan"
     },
     {
-      "type": "compare_visual_performance",
+      "type": "lt_performance",
       "title": "Rendering Perbedaan Waktu Nyata",
-      "content": "Hasilkan perbedaan visual secara instan di browser Anda berkat rendering kanvas yang dipercepat perangkat keras."
+      "content": "Hasilkan perbedaan visual secara instan di browser Anda berkat rendering kanvas yang dipercepat perangkat keras.",
+      "badgeText": "GPU Dipercepat"
     }
   ],
   "faqs": [

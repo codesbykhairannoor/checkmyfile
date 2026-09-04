@@ -14,31 +14,50 @@
     "0",
     "Tải lên"
   ],
+  "supportCenter": "Trung tâm hỗ trợ",
+  "faqTitle": "Câu hỏi thường gặp",
   "sections": [
     {
-      "type": "extract_highres_hero_features",
+      "type": "protect_hero_features",
       "title": "Nhận chất lượng hình ảnh gốc",
-      "content": "Đừng sử dụng các công cụ chụp màn hình làm hỏng độ phân giải. Công cụ của chúng tôi đào sâu vào tệp nhị phân PDF và trích xuất các tệp hình ảnh gốc, thô."
+      "content": "Đừng sử dụng các công cụ chụp màn hình làm hỏng độ phân giải. Công cụ của chúng tôi đào sâu vào tệp nhị phân PDF và trích xuất các tệp hình ảnh gốc, thô.",
+      "badgeText": "Xuất khẩu không tổn thất"
     },
     {
-      "type": "extract_highres_how_to_steps",
+      "type": "lt_extract_images_how_to_steps",
       "title": "Cách trích xuất hình ảnh",
-      "content": "Chọn một bản PDF. Chúng tôi quét nó để tìm các tệp JPEG và PNG được nhúng rồi đóng gói tất cả chúng vào một tệp ZIP gọn gàng cho bạn."
+      "badgeText": "Xuất nhanh",
+      "steps": [
+        {
+          "title": "Thêm PDF",
+          "description": "Chọn tệp PDF có hình ảnh được nhúng."
+        },
+        {
+          "title": "Quét nhị phân",
+          "description": "Chúng tôi quét tệp để tìm JPEG và PNG ngoại tuyến."
+        },
+        {
+          "title": "Tải xuống ZIP",
+          "description": "Đóng gói tất cả các hình ảnh được trích xuất vào một kho lưu trữ ZIP gọn gàng."
+        }
+      ]
     },
     {
-      "type": "extract_highres_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Công cụ trích xuất hình ảnh tốt nhất",
-      "content": "Hoàn hảo cho các nhà thiết kế, nhà xuất bản và sinh viên cần sử dụng lại nội dung chất lượng cao được khóa bên trong tệp PDF."
+      "content": "Hoàn hảo cho các nhà thiết kế, nhà xuất bản và sinh viên cần sử dụng lại nội dung chất lượng cao được khóa bên trong tệp PDF.",
+      "badgeText": "Chất lượng chuyên nghiệp"
     },
     {
-      "type": "extract_highres_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Khai thác tài sản tư nhân",
       "content": "Chúng tôi không ăn cắp hình ảnh của bạn. Quá trình trích xuất diễn ra hoàn toàn trên máy tính của bạn."
     },
     {
-      "type": "extract_highres_performance",
+      "type": "lt_performance",
       "title": "Xuất khẩu nhanh chóng",
-      "content": "Trích xuất hàng trăm hình ảnh có độ phân giải cao trong vài giây mà không cần chờ tải lên tệp lớn."
+      "content": "Trích xuất hàng trăm hình ảnh có độ phân giải cao trong vài giây mà không cần chờ tải lên tệp lớn.",
+      "badgeText": "Khai thác ngay lập tức"
     }
   ],
   "faqs": [

@@ -14,31 +14,52 @@
     "0",
     "Anúncios"
   ],
+  "supportCenter": "Centro de suporte",
+  "faqTitle": "Perguntas frequentes",
   "sections": [
     {
-      "type": "grayscale_print_hero_features",
+      "type": "compress_hero_features",
       "title": "Economize tinta de impressora cara",
-      "content": "A tinta colorida é cara. Converta seus PDFs em escala de cinza antes de imprimir para economizar dinheiro e recursos."
+      "content": "A tinta colorida é cara. Converta seus PDFs em escala de cinza antes de imprimir para economizar dinheiro e recursos.",
+      "badgeText": "Economizador de tinta"
     },
     {
-      "type": "grayscale_print_how_to_steps",
+      "type": "lt_grayscale_how_to_steps",
       "title": "Como tornar PDF em preto e branco",
-      "content": "Basta colocar seu arquivo na caixa. Nossa ferramenta local removerá instantaneamente todas as cores e fornecerá um PDF em escala de cinza perfeitamente imprimível."
+      "badgeText": "Passos simples",
+      "steps": [
+        {
+          "title": "Soltar arquivo",
+          "description": "Selecione o PDF colorido que deseja imprimir."
+        },
+        {
+          "title": "Aplicar filtro",
+          "description": "Nossa ferramenta local remove instantaneamente todas as cores."
+        },
+        {
+          "title": "Baixar escala de cinza",
+          "description": "Obtenha um PDF em preto e branco perfeitamente imprimível."
+        }
+      ]
     },
     {
-      "type": "grayscale_print_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Melhor conversor de PDF em preto e branco",
-      "content": "Converta textos, imagens e planos de fundo coloridos em tons de cinza sem perder a legibilidade."
+      "content": "Converta textos, imagens e planos de fundo coloridos em tons de cinza sem perder a legibilidade.",
+      "subTitle": "Alta fidelidade",
+      "subContent": "Mantém a nitidez da imagem em preto e branco.",
+      "badgeText": "Impressões perfeitas"
     },
     {
-      "type": "grayscale_print_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Conversão privada em escala de cinza",
       "content": "Seus documentos são convertidos na memória do seu próprio dispositivo. Nunca vemos seus arquivos."
     },
     {
-      "type": "grayscale_print_performance",
+      "type": "lt_performance",
       "title": "Processamento extremamente rápido",
-      "content": "Como não carregamos seu arquivo em um servidor em nuvem, a conversão da escala de cinza acontece quase instantaneamente."
+      "content": "Como não carregamos seu arquivo em um servidor em nuvem, a conversão da escala de cinza acontece quase instantaneamente.",
+      "badgeText": "Latência zero"
     }
   ],
   "faqs": [

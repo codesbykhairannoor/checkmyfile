@@ -14,31 +14,51 @@
     "0",
     "Utilizzo del cloud"
   ],
+  "supportCenter": "Centro di supporto",
+  "faqTitle": "Domande frequenti",
   "sections": [
     {
-      "type": "compare_visual_hero_features",
+      "type": "resize_hero_features",
       "title": "Individua automaticamente piccole modifiche",
-      "content": "Non fare affidamento sui tuoi occhi per trovare differenze nei contratti o nei progetti modificati. Il nostro strumento evidenzia le modifiche esatte dei pixel in rosso."
+      "content": "Non fare affidamento sui tuoi occhi per trovare differenze nei contratti o nei progetti modificati. Il nostro strumento evidenzia le modifiche esatte dei pixel in rosso.",
+      "badgeText": "Differenza visiva"
     },
     {
-      "type": "compare_visual_how_to_steps",
+      "type": "lt_compare_pdf_how_to_steps",
       "title": "Come confrontare i PDF",
-      "content": "Carica il PDF originale e il PDF revisionato. Renderemo entrambi e li sovrapporremo per esporre eventuali aggiunte o eliminazioni."
+      "badgeText": "Guida al confronto",
+      "steps": [
+        {
+          "title": "Carica originale",
+          "description": "Seleziona la prima versione del tuo PDF."
+        },
+        {
+          "title": "Carica revisione",
+          "description": "Seleziona la seconda versione da confrontare."
+        },
+        {
+          "title": "Visualizza i punti salienti",
+          "description": "Rendiamo entrambi e li sovrapponiamo per esporre eventuali aggiunte o eliminazioni in rosso."
+        }
+      ]
     },
     {
-      "type": "compare_visual_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Perfetto per contratti e prove",
-      "content": "Avvocati e designer utilizzano il nostro strumento di confronto visivo per garantire che non siano state introdotte modifiche non autorizzate in un documento."
+      "content": "Avvocati e designer utilizzano il nostro strumento di confronto visivo per garantire che non siano state introdotte modifiche non autorizzate in un documento.",
+      "badgeText": "Legale pronto"
     },
     {
-      "type": "compare_visual_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Confronto di documenti riservati",
-      "content": "Confronto tra contratti NDA sensibili? Il nostro strumento è locale al 100%. I documenti non toccano mai i nostri server."
+      "content": "Confronto tra contratti NDA sensibili? Il nostro strumento è locale al 100%. I documenti non toccano mai i nostri server.",
+      "badgeText": "Zero caricamenti"
     },
     {
-      "type": "compare_visual_performance",
+      "type": "lt_performance",
       "title": "Rendering delle differenze in tempo reale",
-      "content": "Genera istantaneamente differenze visive nel tuo browser grazie al rendering su tela con accelerazione hardware."
+      "content": "Genera istantaneamente differenze visive nel tuo browser grazie al rendering su tela con accelerazione hardware.",
+      "badgeText": "Accelerato dalla GPU"
     }
   ],
   "faqs": [

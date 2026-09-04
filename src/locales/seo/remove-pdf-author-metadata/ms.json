@@ -14,31 +14,51 @@
     "0",
     "kesan tapak kaki"
   ],
+  "supportCenter": "Pusat Sokongan",
+  "faqTitle": "Soalan Lazim",
   "sections": [
     {
-      "type": "remove_author_hero_features",
+      "type": "split_hero_features",
       "title": "Mengapa Bersihkan Metadata PDF?",
-      "content": "PDF selalunya menyimpan nama, nama syarikat, versi OS dan tarikh penciptaan anda secara rahsia. Bersihkan mereka sebelum berkongsi dalam talian."
+      "content": "PDF selalunya menyimpan nama, nama syarikat, versi OS dan tarikh penciptaan anda secara rahsia. Bersihkan mereka sebelum berkongsi dalam talian.",
+      "badgeText": "Bersihkan PDF"
     },
     {
-      "type": "remove_author_how_to_steps",
+      "type": "lt_remove_metadata_how_to_steps",
       "title": "Cara Membersihkan Harta",
-      "content": "Muat naik dokumen anda. Enjin kami akan menghuraikan struktur PDF dan memadam semua medan metadata kamus dengan selamat."
+      "badgeText": "Panduan 3 Langkah",
+      "steps": [
+        {
+          "title": "Muat Naik Dokumen",
+          "description": "Pilih fail PDF yang ingin anda bersihkan."
+        },
+        {
+          "title": "Padam Metadata",
+          "description": "Enjin kami menghuraikan struktur dan memadamkan medan tersembunyi."
+        },
+        {
+          "title": "Simpan PDF Bersih",
+          "description": "Muat turun dokumen tanpa nama serta-merta."
+        }
+      ]
     },
     {
-      "type": "remove_author_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Lindungi Tanpa Nama Anda",
-      "content": "Pastikan pemberi maklumat, wartawan dan pengguna harian boleh berkongsi dokumen tanpa membocorkan identiti digital mereka."
+      "content": "Pastikan pemberi maklumat, wartawan dan pengguna harian boleh berkongsi dokumen tanpa membocorkan identiti digital mereka.",
+      "subTitle": "Jumlah Privasi",
+      "subContent": "Sifar jejak kaki digital tertinggal."
     },
     {
-      "type": "remove_author_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Pembersihan Gred Tentera",
       "content": "Kami menulis semula struktur binari PDF secara setempat dalam penyemak imbas anda untuk memastikan metadata dimusnahkan secara kekal."
     },
     {
-      "type": "remove_author_performance",
+      "type": "lt_performance",
       "title": "Pemadam Metadata Segera",
-      "content": "Gosok beribu-ribu halaman dalam masa kurang dari satu saat menggunakan teras WebAssembly kami yang sangat dioptimumkan."
+      "content": "Gosok beribu-ribu halaman dalam masa kurang dari satu saat menggunakan teras WebAssembly kami yang sangat dioptimumkan.",
+      "badgeText": "Teras WebAssembly"
     }
   ],
   "faqs": [

@@ -14,31 +14,52 @@
     "0",
     "广告"
   ],
+  "supportCenter": "支持中心",
+  "faqTitle": "常见问题解答",
   "sections": [
     {
-      "type": "grayscale_print_hero_features",
+      "type": "compress_hero_features",
       "title": "节省昂贵的打印机墨水",
-      "content": "彩色墨水很贵。 在打印之前将 PDF 转换为灰度以节省资金和资源。"
+      "content": "彩色墨水很贵。 在打印之前将 PDF 转换为灰度以节省资金和资源。",
+      "badgeText": "省墨器"
     },
     {
-      "type": "grayscale_print_how_to_steps",
+      "type": "lt_grayscale_how_to_steps",
       "title": "如何将 PDF 设为黑白",
-      "content": "只需将您的文件放入框中即可。 我们的本地工具将立即去除所有颜色，并为您提供完美可打印的灰度 PDF。"
+      "badgeText": "简单的步骤",
+      "steps": [
+        {
+          "title": "删除文件",
+          "description": "选择您要打印的彩色 PDF。"
+        },
+        {
+          "title": "应用过滤器",
+          "description": "我们的本地工具会立即去除所有颜色。"
+        },
+        {
+          "title": "下载灰度图",
+          "description": "获得完美可打印的黑白 PDF。"
+        }
+      ]
     },
     {
-      "type": "grayscale_print_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "最佳黑白 PDF 转换器",
-      "content": "将彩色文本、图像和背景转换为灰色阴影，而不会失去可读性。"
+      "content": "将彩色文本、图像和背景转换为灰色阴影，而不会失去可读性。",
+      "subTitle": "高保真度",
+      "subContent": "保持黑白图像清晰度。",
+      "badgeText": "完美印花"
     },
     {
-      "type": "grayscale_print_privacy_security",
+      "type": "lt_privacy_security",
       "title": "私有灰度转换",
       "content": "您的文档将在您自己的设备内存中进行转换。 我们永远不会看到您的文件。"
     },
     {
-      "type": "grayscale_print_performance",
+      "type": "lt_performance",
       "title": "闪电般的快速处理",
-      "content": "由于我们不会将您的文件上传到云服务器，因此灰度转换几乎立即发生。"
+      "content": "由于我们不会将您的文件上传到云服务器，因此灰度转换几乎立即发生。",
+      "badgeText": "零延迟"
     }
   ],
   "faqs": [

@@ -14,31 +14,52 @@
     "0",
     "reklamy"
   ],
+  "supportCenter": "Centrum podpory",
+  "faqTitle": "Často kladené otázky",
   "sections": [
     {
-      "type": "grayscale_print_hero_features",
+      "type": "compress_hero_features",
       "title": "Ušetřete drahý inkoust do tiskárny",
-      "content": "Barevný inkoust je drahý. Před tiskem převeďte soubory PDF do odstínů šedi, abyste ušetřili peníze a zdroje."
+      "content": "Barevný inkoust je drahý. Před tiskem převeďte soubory PDF do odstínů šedi, abyste ušetřili peníze a zdroje.",
+      "badgeText": "Spořič inkoustu"
     },
     {
-      "type": "grayscale_print_how_to_steps",
+      "type": "lt_grayscale_how_to_steps",
       "title": "Jak udělat PDF černobíle",
-      "content": "Jednoduše vložte svůj soubor do krabice. Náš místní nástroj okamžitě odstraní všechny barvy a poskytne vám dokonale tisknutelné PDF ve stupních šedi."
+      "badgeText": "Jednoduché kroky",
+      "steps": [
+        {
+          "title": "Přetáhněte soubor",
+          "description": "Vyberte barevné PDF, které chcete vytisknout."
+        },
+        {
+          "title": "Použít filtr",
+          "description": "Náš místní nástroj okamžitě odstraní všechny barvy."
+        },
+        {
+          "title": "Stáhněte si fotografii ve stupních šedi",
+          "description": "Získejte dokonale tisknutelné černobílé PDF."
+        }
+      ]
     },
     {
-      "type": "grayscale_print_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Nejlepší černobílý převodník PDF",
-      "content": "Převeďte barevný text, obrázky a pozadí na odstíny šedé bez ztráty čitelnosti."
+      "content": "Převeďte barevný text, obrázky a pozadí na odstíny šedé bez ztráty čitelnosti.",
+      "subTitle": "Vysoká věrnost",
+      "subContent": "Udržuje ostrost obrazu v černobílém režimu.",
+      "badgeText": "Perfektní výtisky"
     },
     {
-      "type": "grayscale_print_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Soukromá konverze ve stupních šedi",
       "content": "Vaše dokumenty jsou převedeny do paměti vašeho vlastního zařízení. Vaše soubory nikdy nevidíme."
     },
     {
-      "type": "grayscale_print_performance",
+      "type": "lt_performance",
       "title": "Bleskově rychlé zpracování",
-      "content": "Protože váš soubor nenahráváme na cloudový server, konverze ve stupních šedi proběhne téměř okamžitě."
+      "content": "Protože váš soubor nenahráváme na cloudový server, konverze ve stupních šedi proběhne téměř okamžitě.",
+      "badgeText": "Nulová latence"
     }
   ],
   "faqs": [

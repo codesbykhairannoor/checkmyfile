@@ -14,31 +14,52 @@
     "0",
     "レイテンシ"
   ],
+  "supportCenter": "サポートセンター",
+  "faqTitle": "よくある質問",
   "sections": [
     {
-      "type": "Crop_margins_hero_features",
+      "type": "merge_hero_features",
       "title": "PDF の余白をトリミングする理由",
-      "content": "多くの学術論文や電子書籍には大きな白い余白があります。 トリミングするとテキストが大きくなり、小さな画面でも読みやすくなります。"
+      "content": "多くの学術論文や電子書籍には大きな白い余白があります。 トリミングするとテキストが大きくなり、小さな画面でも読みやすくなります。",
+      "badgeText": "精密なトリミング"
     },
     {
-      "type": "Crop_margins_how_to_steps",
+      "type": "lt_crop_margins_how_to_steps",
       "title": "余白をトリミングする方法",
-      "content": "ファイルをアップロードし、ハンドルをドラッグして境界ボックスを定義し、切り抜きをクリックします。 このプロセスは完全にプライベートです。"
+      "badgeText": "クイックガイド",
+      "steps": [
+        {
+          "title": "ファイルをアップロードする",
+          "description": "PDF をブラウザのサンドボックスにドロップします。"
+        },
+        {
+          "title": "余白を設定する",
+          "description": "ハンドルをドラッグして境界ボックスを定義します。"
+        },
+        {
+          "title": "PDFのトリミング",
+          "description": "Crop をクリックすると、トリミングされたファイルが即座にダウンロードされます。"
+        }
+      ]
     },
     {
-      "type": "Crop_margins_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "安全なマージン除去",
-      "content": "空白を削除するためだけに機密性の高い PDF をアップロードする必要はありません。 当社の WebAssembly エンジンはブラウザ内でそれを実行します。"
+      "content": "空白を削除するためだけに機密性の高い PDF をアップロードする必要はありません。 当社の WebAssembly エンジンはブラウザ内でそれを実行します。",
+      "subTitle": "ゼロアップロードポリシー",
+      "subContent": "ファイルがデバイスの外に出ることはありません。"
     },
     {
-      "type": "Crop_margins_privacy_security",
+      "type": "lt_privacy_security",
       "title": "100%オフラインクロップ",
-      "content": "ファイルがコンピュータから離れることはありません。 機密の法律文書や医療文書に最適です。"
+      "content": "ファイルがコンピュータから離れることはありません。 機密の法律文書や医療文書に最適です。",
+      "badgeText": "オフライン対応"
     },
     {
-      "type": "クロップマージン_パフォーマンス",
+      "type": "lt_performance",
       "title": "インスタントPDFトリミング",
-      "content": "サーバーのアップロードやダウンロードを待たずに、500 ページの本を数ミリ秒でトリミングします。"
+      "content": "サーバーのアップロードやダウンロードを待たずに、500 ページの本を数ミリ秒でトリミングします。",
+      "badgeText": "電光石火の速さ"
     }
   ],
   "faqs": [

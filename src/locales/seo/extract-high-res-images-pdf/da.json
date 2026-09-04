@@ -14,31 +14,50 @@
     "0",
     "Uploads"
   ],
+  "supportCenter": "Supportcenter",
+  "faqTitle": "Ofte stillede spørgsmål",
   "sections": [
     {
-      "type": "extract_highres_hero_features",
+      "type": "protect_hero_features",
       "title": "Få original billedkvalitet",
-      "content": "Brug ikke skærmbilledeværktøjer, der ødelægger opløsningen. Vores værktøj graver i PDF-binæren og udtrækker de rå, originale billedfiler."
+      "content": "Brug ikke skærmbilledeværktøjer, der ødelægger opløsningen. Vores værktøj graver i PDF-binæren og udtrækker de rå, originale billedfiler.",
+      "badgeText": "Tabsfri eksport"
     },
     {
-      "type": "extract_highres_how_to_steps",
+      "type": "lt_extract_images_how_to_steps",
       "title": "Sådan udtrækker du billeder",
-      "content": "Vælg en PDF. Vi scanner den for indlejrede JPEG'er og PNG'er og pakker dem alle sammen i en pæn ZIP-fil til dig."
+      "badgeText": "Hurtig eksport",
+      "steps": [
+        {
+          "title": "Tilføj PDF",
+          "description": "Vælg en PDF-fil med indlejrede billeder."
+        },
+        {
+          "title": "Scan binær",
+          "description": "Vi scanner filen for JPEG'er og PNG'er offline."
+        },
+        {
+          "title": "Download ZIP",
+          "description": "Pak alle udpakkede billeder ind i et pænt ZIP-arkiv."
+        }
+      ]
     },
     {
-      "type": "extract_highres_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Bedste billedekstraktionsværktøj",
-      "content": "Perfekt til designere, udgivere og studerende, der har brug for at genbruge aktiver af høj kvalitet, der er låst inde i en PDF."
+      "content": "Perfekt til designere, udgivere og studerende, der har brug for at genbruge aktiver af høj kvalitet, der er låst inde i en PDF.",
+      "badgeText": "Pro kvalitet"
     },
     {
-      "type": "extract_highres_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Udvinding af private aktiver",
       "content": "Vi stjæler ikke dine billeder. Udtrækningen sker udelukkende på din egen computer."
     },
     {
-      "type": "extract_highres_performance",
+      "type": "lt_performance",
       "title": "Lynhurtig eksport",
-      "content": "Uddrag hundredvis af billeder i høj opløsning på få sekunder uden at vente på en massiv filupload."
+      "content": "Uddrag hundredvis af billeder i høj opløsning på få sekunder uden at vente på en massiv filupload.",
+      "badgeText": "Øjeblikkelig udvinding"
     }
   ],
   "faqs": [

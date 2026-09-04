@@ -14,31 +14,51 @@
     "0",
     "Stopy"
   ],
+  "supportCenter": "Centrum podpory",
+  "faqTitle": "Často kladené otázky",
   "sections": [
     {
-      "type": "remove_author_hero_features",
+      "type": "split_hero_features",
       "title": "Prečo čistiť metadáta PDF?",
-      "content": "Súbory PDF často tajne ukladajú vaše meno, názov spoločnosti, verziu operačného systému a dátumy vytvorenia. Pred zdieľaním online ich vyčistite."
+      "content": "Súbory PDF často tajne ukladajú vaše meno, názov spoločnosti, verziu operačného systému a dátumy vytvorenia. Pred zdieľaním online ich vyčistite.",
+      "badgeText": "Dezinfikovať PDF"
     },
     {
-      "type": "remove_author_how_to_steps",
+      "type": "lt_remove_metadata_how_to_steps",
       "title": "Ako dezinfikovať vlastnosti",
-      "content": "Nahrajte svoj dokument. Náš nástroj analyzuje štruktúru PDF a bezpečne vymaže všetky polia metadát slovníka."
+      "badgeText": "3-kroková príručka",
+      "steps": [
+        {
+          "title": "Nahrať dokument",
+          "description": "Vyberte súbor PDF, ktorý chcete vyčistiť."
+        },
+        {
+          "title": "Vymazať metadáta",
+          "description": "Náš motor analyzuje štruktúru a vymaže skryté polia."
+        },
+        {
+          "title": "Uložiť čisté PDF",
+          "description": "Stiahnite si anonymizovaný dokument okamžite."
+        }
+      ]
     },
     {
-      "type": "remove_author_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Chráňte svoju anonymitu",
-      "content": "Zabezpečte, aby informátori, novinári a každodenní používatelia mohli zdieľať dokumenty bez úniku svojej digitálnej identity."
+      "content": "Zabezpečte, aby informátori, novinári a každodenní používatelia mohli zdieľať dokumenty bez úniku svojej digitálnej identity.",
+      "subTitle": "Úplné súkromie",
+      "subContent": "Zanechané žiadne digitálne stopy."
     },
     {
-      "type": "remove_author_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Sanitácia na vojenskej úrovni",
       "content": "Binárnu štruktúru PDF prepisujeme lokálne vo vašom prehliadači, aby sme zaistili trvalé zničenie metadát."
     },
     {
-      "type": "remove_author_performance",
+      "type": "lt_performance",
       "title": "Okamžitá guma metadát",
-      "content": "Vyčistite tisíce stránok za menej ako sekundu pomocou nášho vysoko optimalizovaného jadra WebAssembly."
+      "content": "Vyčistite tisíce stránok za menej ako sekundu pomocou nášho vysoko optimalizovaného jadra WebAssembly.",
+      "badgeText": "WebAssembly Core"
     }
   ],
   "faqs": [

@@ -14,31 +14,52 @@
     "0",
     "Latens"
   ],
+  "supportCenter": "Supportcenter",
+  "faqTitle": "Vanliga frågor",
   "sections": [
     {
-      "type": "crop_margins_hero_features",
+      "type": "merge_hero_features",
       "title": "Varför beskära PDF-marginaler?",
-      "content": "Många akademiska uppsatser och e-böcker har enorma vita marginaler. Att beskära dem gör texten större och lättare att läsa på mindre skärmar."
+      "content": "Många akademiska uppsatser och e-böcker har enorma vita marginaler. Att beskära dem gör texten större och lättare att läsa på mindre skärmar.",
+      "badgeText": "Precisionsbeskärning"
     },
     {
-      "type": "crop_margins_how_to_steps",
+      "type": "lt_crop_margins_how_to_steps",
       "title": "Hur man beskär marginaler",
-      "content": "Ladda upp din fil, definiera begränsningsrutan genom att dra i handtagen och tryck på beskär. Processen är helt privat."
+      "badgeText": "Snabbguide",
+      "steps": [
+        {
+          "title": "Ladda upp fil",
+          "description": "Släpp din PDF i webbläsarens sandlåda."
+        },
+        {
+          "title": "Ställ in marginaler",
+          "description": "Definiera begränsningsrutan genom att dra i handtagen."
+        },
+        {
+          "title": "Beskär PDF",
+          "description": "Tryck på beskär och ladda ner den trimmade filen direkt."
+        }
+      ]
     },
     {
-      "type": "crop_margins_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Säker marginalborttagning",
-      "content": "Du behöver inte ladda upp dina känsliga PDF-filer bara för att ta bort lite blanksteg. Vår WebAssembly-motor gör det i din webbläsare."
+      "content": "Du behöver inte ladda upp dina känsliga PDF-filer bara för att ta bort lite blanksteg. Vår WebAssembly-motor gör det i din webbläsare.",
+      "subTitle": "Noll uppladdningspolicy",
+      "subContent": "Dina filer lämnar aldrig din enhet."
     },
     {
-      "type": "crop_margins_privacy_security",
+      "type": "lt_privacy_security",
       "title": "100 % offlinebeskärning",
-      "content": "Dina filer lämnar aldrig din dator. Perfekt för konfidentiella juridiska eller medicinska dokument."
+      "content": "Dina filer lämnar aldrig din dator. Perfekt för konfidentiella juridiska eller medicinska dokument.",
+      "badgeText": "Offline redo"
     },
     {
-      "type": "crop_margins_performance",
+      "type": "lt_performance",
       "title": "Omedelbar PDF-klippning",
-      "content": "Trimma en 500-sidig bok på millisekunder utan att vänta på serveruppladdningar eller nedladdningar."
+      "content": "Trimma en 500-sidig bok på millisekunder utan att vänta på serveruppladdningar eller nedladdningar.",
+      "badgeText": "Blixtsnabb"
     }
   ],
   "faqs": [

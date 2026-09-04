@@ -14,31 +14,50 @@
     "0",
     "Opplastinger"
   ],
+  "supportCenter": "Støttesenter",
+  "faqTitle": "Ofte stilte spørsmål",
   "sections": [
     {
-      "type": "extract_highres_hero_features",
+      "type": "protect_hero_features",
       "title": "Få original bildekvalitet",
-      "content": "Ikke bruk skjermbildeverktøy som ødelegger oppløsningen. Verktøyet vårt graver inn i PDF-binæren og trekker ut de rå, originale bildefilene."
+      "content": "Ikke bruk skjermbildeverktøy som ødelegger oppløsningen. Verktøyet vårt graver inn i PDF-binæren og trekker ut de rå, originale bildefilene.",
+      "badgeText": "Tapsfri eksport"
     },
     {
-      "type": "extract_highres_how_to_steps",
+      "type": "lt_extract_images_how_to_steps",
       "title": "Hvordan trekke ut bilder",
-      "content": "Velg en PDF. Vi skanner den for innebygde JPEG-er og PNG-er, og pakker dem alle inn i en pen ZIP-fil for deg."
+      "badgeText": "Rask eksport",
+      "steps": [
+        {
+          "title": "Legg til PDF",
+          "description": "Velg en PDF-fil med innebygde bilder."
+        },
+        {
+          "title": "Skann binær",
+          "description": "Vi skanner filen for JPEG og PNG offline."
+        },
+        {
+          "title": "Last ned ZIP",
+          "description": "Pakk alle utpakkede bilder i et pent ZIP-arkiv."
+        }
+      ]
     },
     {
-      "type": "extract_highres_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Beste bildeekstraksjonsverktøy",
-      "content": "Perfekt for designere, utgivere og studenter som trenger å gjenbruke ressurser av høy kvalitet som er låst inne i en PDF."
+      "content": "Perfekt for designere, utgivere og studenter som trenger å gjenbruke ressurser av høy kvalitet som er låst inne i en PDF.",
+      "badgeText": "Pro kvalitet"
     },
     {
-      "type": "extract_highres_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Utvinning av private eiendeler",
       "content": "Vi stjeler ikke bildene dine. Utvinningen skjer helt på din egen datamaskin."
     },
     {
-      "type": "extract_highres_performance",
+      "type": "lt_performance",
       "title": "Lynrask eksport",
-      "content": "Trekk ut hundrevis av høyoppløselige bilder på sekunder uten å vente på en massiv filopplasting."
+      "content": "Trekk ut hundrevis av høyoppløselige bilder på sekunder uten å vente på en massiv filopplasting.",
+      "badgeText": "Øyeblikkelig utvinning"
     }
   ],
   "faqs": [

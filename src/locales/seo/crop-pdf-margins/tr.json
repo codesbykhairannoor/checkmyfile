@@ -14,31 +14,52 @@
     "0",
     "Gecikme"
   ],
+  "supportCenter": "Destek Merkezi",
+  "faqTitle": "Sıkça Sorulan Sorular",
   "sections": [
     {
-      "type": "crop_margins_hero_features",
+      "type": "merge_hero_features",
       "title": "PDF Kenar Boşluklarını Neden Kırpmalısınız?",
-      "content": "Pek çok akademik makale ve e-kitapta büyük beyaz kenar boşlukları vardır. Bunları kırpmak metni daha büyük hale getirir ve daha küçük ekranlarda okunmasını kolaylaştırır."
+      "content": "Pek çok akademik makale ve e-kitapta büyük beyaz kenar boşlukları vardır. Bunları kırpmak metni daha büyük hale getirir ve daha küçük ekranlarda okunmasını kolaylaştırır.",
+      "badgeText": "Hassas Kırpma"
     },
     {
-      "type": "crop_margins_how_to_steps",
+      "type": "lt_crop_margins_how_to_steps",
       "title": "Kenar Boşlukları Nasıl Kırpılır",
-      "content": "Dosyanızı yükleyin, tutamaçları sürükleyerek sınırlayıcı kutuyu tanımlayın ve kırp tuşuna basın. Süreç tamamen özeldir."
+      "badgeText": "Hızlı Kılavuz",
+      "steps": [
+        {
+          "title": "Dosya Yükle",
+          "description": "PDF'nizi tarayıcı sanal alanına bırakın."
+        },
+        {
+          "title": "Kenar Boşluklarını Ayarla",
+          "description": "Tutamaçları sürükleyerek sınırlayıcı kutuyu tanımlayın."
+        },
+        {
+          "title": "PDF'yi kırp",
+          "description": "Kırp'a basın ve kırpılan dosyayı anında indirin."
+        }
+      ]
     },
     {
-      "type": "crop_margins_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Güvenli Marj Kaldırma",
-      "content": "Sadece bazı boşlukları kaldırmak için hassas PDF'lerinizi yüklemenize gerek yok. WebAssembly motorumuz bunu tarayıcınızda yapar."
+      "content": "Sadece bazı boşlukları kaldırmak için hassas PDF'lerinizi yüklemenize gerek yok. WebAssembly motorumuz bunu tarayıcınızda yapar.",
+      "subTitle": "Sıfır Yükleme Politikası",
+      "subContent": "Dosyalarınız asla cihazınızdan ayrılmaz."
     },
     {
-      "type": "crop_margins_privacy_security",
+      "type": "lt_privacy_security",
       "title": "%100 Çevrimdışı Kırpma",
-      "content": "Dosyalarınız bilgisayarınızdan asla ayrılmaz. Gizli yasal veya tıbbi belgeler için mükemmeldir."
+      "content": "Dosyalarınız bilgisayarınızdan asla ayrılmaz. Gizli yasal veya tıbbi belgeler için mükemmeldir.",
+      "badgeText": "Çevrimdışı Hazır"
     },
     {
-      "type": "crop_margins_performance",
+      "type": "lt_performance",
       "title": "Anında PDF Kırpma",
-      "content": "Sunucuya yükleme veya indirme yapılmasını beklemeden 500 sayfalık bir kitabı milisaniyeler içinde kırpın."
+      "content": "Sunucuya yükleme veya indirme yapılmasını beklemeden 500 sayfalık bir kitabı milisaniyeler içinde kırpın.",
+      "badgeText": "Yıldırım Hızında"
     }
   ],
   "faqs": [

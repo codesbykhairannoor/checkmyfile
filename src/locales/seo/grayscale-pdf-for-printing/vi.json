@@ -14,31 +14,52 @@
     "0",
     "Quảng cáo"
   ],
+  "supportCenter": "Trung tâm hỗ trợ",
+  "faqTitle": "Câu hỏi thường gặp",
   "sections": [
     {
-      "type": "grayscale_print_hero_features",
+      "type": "compress_hero_features",
       "title": "Tiết kiệm mực máy in đắt tiền",
-      "content": "Mực màu đắt tiền. Chuyển đổi tệp PDF của bạn sang thang độ xám trước khi in để tiết kiệm tiền và tài nguyên."
+      "content": "Mực màu đắt tiền. Chuyển đổi tệp PDF của bạn sang thang độ xám trước khi in để tiết kiệm tiền và tài nguyên.",
+      "badgeText": "Tiết kiệm mực"
     },
     {
-      "type": "grayscale_print_how_to_steps",
+      "type": "lt_grayscale_how_to_steps",
       "title": "Cách tạo PDF đen trắng",
-      "content": "Chỉ cần thả tập tin của bạn vào hộp. Công cụ cục bộ của chúng tôi sẽ ngay lập tức loại bỏ tất cả các màu và cung cấp cho bạn bản PDF thang độ xám có thể in hoàn hảo."
+      "badgeText": "Các bước đơn giản",
+      "steps": [
+        {
+          "title": "Thả tập tin",
+          "description": "Chọn tệp PDF màu bạn muốn in."
+        },
+        {
+          "title": "Áp dụng bộ lọc",
+          "description": "Công cụ cục bộ của chúng tôi ngay lập tức loại bỏ tất cả các màu."
+        },
+        {
+          "title": "Tải xuống thang độ xám",
+          "description": "Nhận bản PDF đen trắng có thể in hoàn hảo."
+        }
+      ]
     },
     {
-      "type": "grayscale_print_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Trình chuyển đổi PDF đen trắng tốt nhất",
-      "content": "Chuyển đổi văn bản, hình ảnh và hình nền có màu thành màu xám mà không làm mất khả năng đọc."
+      "content": "Chuyển đổi văn bản, hình ảnh và hình nền có màu thành màu xám mà không làm mất khả năng đọc.",
+      "subTitle": "Độ trung thực cao",
+      "subContent": "Duy trì độ sắc nét của hình ảnh ở chế độ đen trắng.",
+      "badgeText": "Bản in hoàn hảo"
     },
     {
-      "type": "grayscale_print_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Chuyển đổi thang độ xám riêng tư",
       "content": "Tài liệu của bạn được chuyển đổi trong bộ nhớ của thiết bị của bạn. Chúng tôi không bao giờ nhìn thấy các tập tin của bạn."
     },
     {
-      "type": "grayscale_print_performance",
+      "type": "lt_performance",
       "title": "Xử lý nhanh như chớp",
-      "content": "Vì chúng tôi không tải tệp của bạn lên máy chủ đám mây nên quá trình chuyển đổi thang độ xám diễn ra gần như ngay lập tức."
+      "content": "Vì chúng tôi không tải tệp của bạn lên máy chủ đám mây nên quá trình chuyển đổi thang độ xám diễn ra gần như ngay lập tức.",
+      "badgeText": "Độ trễ bằng không"
     }
   ],
   "faqs": [

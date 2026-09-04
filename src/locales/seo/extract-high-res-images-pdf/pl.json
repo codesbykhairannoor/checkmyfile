@@ -14,31 +14,50 @@
     "0",
     "Przesłane"
   ],
+  "supportCenter": "Centrum wsparcia",
+  "faqTitle": "Często zadawane pytania",
   "sections": [
     {
-      "type": "extract_highres_hero_features",
+      "type": "protect_hero_features",
       "title": "Uzyskaj oryginalną jakość obrazu",
-      "content": "Nie używaj narzędzi do zrzutów ekranu, które psują rozdzielczość. Nasze narzędzie przegląda plik binarny PDF i wyodrębnia surowe, oryginalne pliki obrazów."
+      "content": "Nie używaj narzędzi do zrzutów ekranu, które psują rozdzielczość. Nasze narzędzie przegląda plik binarny PDF i wyodrębnia surowe, oryginalne pliki obrazów.",
+      "badgeText": "Bezstratny eksport"
     },
     {
-      "type": "extract_highres_how_to_steps",
+      "type": "lt_extract_images_how_to_steps",
       "title": "Jak wyodrębnić zdjęcia",
-      "content": "Wybierz plik PDF. Skanujemy go w poszukiwaniu osadzonych plików JPEG i PNG i pakujemy je wszystkie do zgrabnego pliku ZIP."
+      "badgeText": "Szybki eksport",
+      "steps": [
+        {
+          "title": "Dodaj PDF",
+          "description": "Wybierz plik PDF z osadzonymi obrazami."
+        },
+        {
+          "title": "Skanuj plik binarny",
+          "description": "Skanujemy plik w poszukiwaniu plików JPEG i PNG w trybie offline."
+        },
+        {
+          "title": "Pobierz ZIP-a",
+          "description": "Spakuj wszystkie wyodrębnione obrazy do schludnego archiwum ZIP."
+        }
+      ]
     },
     {
-      "type": "extract_highres_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Najlepsze narzędzie do ekstrakcji obrazu",
-      "content": "Idealny dla projektantów, wydawców i studentów, którzy muszą ponownie wykorzystać wysokiej jakości zasoby zamknięte w pliku PDF."
+      "content": "Idealny dla projektantów, wydawców i studentów, którzy muszą ponownie wykorzystać wysokiej jakości zasoby zamknięte w pliku PDF.",
+      "badgeText": "Profesjonalna jakość"
     },
     {
-      "type": "extract_highres_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Wydobywanie majątku prywatnego",
       "content": "Nie kradniemy Twoich zdjęć. Ekstrakcja odbywa się całkowicie na Twoim komputerze."
     },
     {
-      "type": "extract_highres_performance",
+      "type": "lt_performance",
       "title": "Niesamowicie szybki eksport",
-      "content": "Wyodrębnij setki obrazów o wysokiej rozdzielczości w ciągu kilku sekund, bez czekania na przesłanie ogromnego pliku."
+      "content": "Wyodrębnij setki obrazów o wysokiej rozdzielczości w ciągu kilku sekund, bez czekania na przesłanie ogromnego pliku.",
+      "badgeText": "Natychmiastowa ekstrakcja"
     }
   ],
   "faqs": [

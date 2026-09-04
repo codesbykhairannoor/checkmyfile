@@ -14,31 +14,52 @@
     "0",
     "Latence"
   ],
+  "supportCenter": "Centre d'assistance",
+  "faqTitle": "Foire aux questions",
   "sections": [
     {
-      "type": "crop_margins_hero_features",
+      "type": "merge_hero_features",
       "title": "Pourquoi recadrer les marges d'un PDF ?",
-      "content": "De nombreux articles universitaires et livres électroniques comportent d’énormes marges blanches. Les recadrer rend le texte plus grand et plus facile à lire sur des écrans plus petits."
+      "content": "De nombreux articles universitaires et livres électroniques comportent d’énormes marges blanches. Les recadrer rend le texte plus grand et plus facile à lire sur des écrans plus petits.",
+      "badgeText": "Recadrage de précision"
     },
     {
-      "type": "crop_margins_how_to_steps",
+      "type": "lt_crop_margins_how_to_steps",
       "title": "Comment recadrer les marges",
-      "content": "Téléchargez votre fichier, définissez le cadre de délimitation en faisant glisser les poignées et cliquez sur Recadrer. Le processus est complètement privé."
+      "badgeText": "Guide rapide",
+      "steps": [
+        {
+          "title": "Télécharger le fichier",
+          "description": "Déposez votre PDF dans le bac à sable du navigateur."
+        },
+        {
+          "title": "Définir les marges",
+          "description": "Définissez le cadre de délimitation en faisant glisser les poignées."
+        },
+        {
+          "title": "Recadrer le PDF",
+          "description": "Appuyez sur Recadrer et téléchargez instantanément le fichier découpé."
+        }
+      ]
     },
     {
-      "type": "crop_margins_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Suppression des marges sécurisées",
-      "content": "Pas besoin de télécharger vos PDF sensibles simplement pour supprimer des espaces. Notre moteur WebAssembly le fait dans votre navigateur."
+      "content": "Pas besoin de télécharger vos PDF sensibles simplement pour supprimer des espaces. Notre moteur WebAssembly le fait dans votre navigateur.",
+      "subTitle": "Politique de téléchargement zéro",
+      "subContent": "Vos fichiers ne quittent jamais votre appareil."
     },
     {
-      "type": "crop_margins_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Recadrage 100 % hors ligne",
-      "content": "Vos fichiers ne quittent jamais votre ordinateur. Parfait pour les documents juridiques ou médicaux confidentiels."
+      "content": "Vos fichiers ne quittent jamais votre ordinateur. Parfait pour les documents juridiques ou médicaux confidentiels.",
+      "badgeText": "Prêt hors ligne"
     },
     {
-      "type": "crop_margins_performance",
+      "type": "lt_performance",
       "title": "Découpage instantané de PDF",
-      "content": "Découpez un livre de 500 pages en quelques millisecondes sans attendre les chargements ou téléchargements sur le serveur."
+      "content": "Découpez un livre de 500 pages en quelques millisecondes sans attendre les chargements ou téléchargements sur le serveur.",
+      "badgeText": "Rapide comme l'éclair"
     }
   ],
   "faqs": [

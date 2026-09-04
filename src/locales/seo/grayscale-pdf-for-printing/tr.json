@@ -14,31 +14,52 @@
     "0",
     "Reklamlar"
   ],
+  "supportCenter": "Destek Merkezi",
+  "faqTitle": "Sıkça Sorulan Sorular",
   "sections": [
     {
-      "type": "grayscale_print_hero_features",
+      "type": "compress_hero_features",
       "title": "Pahalı Yazıcı Mürekkebinden Tasarruf Edin",
-      "content": "Renkli mürekkep pahalıdır. Paradan ve kaynaklardan tasarruf etmek için PDF'lerinizi yazdırmadan önce gri tonlamaya dönüştürün."
+      "content": "Renkli mürekkep pahalıdır. Paradan ve kaynaklardan tasarruf etmek için PDF'lerinizi yazdırmadan önce gri tonlamaya dönüştürün.",
+      "badgeText": "Mürekkep Tasarrufu"
     },
     {
-      "type": "grayscale_print_how_to_steps",
+      "type": "lt_grayscale_how_to_steps",
       "title": "PDF Siyah Beyaz Nasıl Yapılır",
-      "content": "Dosyanızı kutuya bırakmanız yeterli. Yerel aracımız anında tüm renkleri çıkaracak ve size mükemmel şekilde yazdırılabilir gri tonlamalı bir PDF verecektir."
+      "badgeText": "Basit Adımlar",
+      "steps": [
+        {
+          "title": "Dosyayı Bırak",
+          "description": "Yazdırmak istediğiniz renkli PDF'yi seçin."
+        },
+        {
+          "title": "Filtre Uygula",
+          "description": "Yerel aracımız anında tüm renkleri çıkarır."
+        },
+        {
+          "title": "Gri Tonlamayı İndir",
+          "description": "Mükemmel şekilde yazdırılabilir siyah beyaz bir PDF elde edin."
+        }
+      ]
     },
     {
-      "type": "grayscale_print_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "En İyi Siyah Beyaz PDF Dönüştürücü",
-      "content": "Renkli metinleri, görüntüleri ve arka planları okunabilirliği kaybetmeden gri tonlarına dönüştürün."
+      "content": "Renkli metinleri, görüntüleri ve arka planları okunabilirliği kaybetmeden gri tonlarına dönüştürün.",
+      "subTitle": "Yüksek Sadakat",
+      "subContent": "Siyah-beyaz görüntü keskinliğini korur.",
+      "badgeText": "Mükemmel Baskılar"
     },
     {
-      "type": "grayscale_print_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Özel Gri Tonlamalı Dönüşüm",
       "content": "Belgeleriniz kendi cihazınızın hafızasına dönüştürülür. Dosyalarınızı asla görmeyiz."
     },
     {
-      "type": "grayscale_print_performance",
+      "type": "lt_performance",
       "title": "Işık Hızında İşleme",
-      "content": "Dosyanızı bir bulut sunucusuna yüklemediğimiz için gri tonlama dönüşümü neredeyse anında gerçekleşir."
+      "content": "Dosyanızı bir bulut sunucusuna yüklemediğimiz için gri tonlama dönüşümü neredeyse anında gerçekleşir.",
+      "badgeText": "Sıfır Gecikme"
     }
   ],
   "faqs": [

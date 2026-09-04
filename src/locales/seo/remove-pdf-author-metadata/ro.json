@@ -14,31 +14,51 @@
     "0",
     "Urme de pași"
   ],
+  "supportCenter": "Centru de suport",
+  "faqTitle": "Întrebări frecvente",
   "sections": [
     {
-      "type": "remove_author_hero_features",
+      "type": "split_hero_features",
       "title": "De ce curățați metadatele PDF?",
-      "content": "PDF-urile stochează adesea în secret numele dvs., numele companiei, versiunea sistemului de operare și datele de creare. Curățați-le înainte de a le partaja online."
+      "content": "PDF-urile stochează adesea în secret numele dvs., numele companiei, versiunea sistemului de operare și datele de creare. Curățați-le înainte de a le partaja online.",
+      "badgeText": "Dezinfectează PDF"
     },
     {
-      "type": "remove_author_how_to_steps",
+      "type": "lt_remove_metadata_how_to_steps",
       "title": "Cum să igienizezi proprietățile",
-      "content": "Încărcați documentul dvs. Motorul nostru va analiza structura PDF și va șterge în siguranță toate câmpurile de metadate ale dicționarului."
+      "badgeText": "Ghid în 3 pași",
+      "steps": [
+        {
+          "title": "Încărcați documentul",
+          "description": "Selectați fișierul PDF pe care doriți să îl curățați."
+        },
+        {
+          "title": "Ștergeți metadatele",
+          "description": "Motorul nostru analizează structura și șterge câmpurile ascunse."
+        },
+        {
+          "title": "Salvați PDF curat",
+          "description": "Descărcați instantaneu documentul anonim."
+        }
+      ]
     },
     {
-      "type": "remove_author_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Protejați-vă anonimatul",
-      "content": "Asigurați-vă că avertizorii, jurnaliștii și utilizatorii obișnuiți pot partaja documente fără a-și pierde identitatea digitală."
+      "content": "Asigurați-vă că avertizorii, jurnaliștii și utilizatorii obișnuiți pot partaja documente fără a-și pierde identitatea digitală.",
+      "subTitle": "Confidențialitate totală",
+      "subContent": "Zero amprente digitale lăsate în urmă."
     },
     {
-      "type": "remove_author_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Igienizare de grad militar",
       "content": "Rescriem structura binară PDF local în browserul dvs. pentru a ne asigura că metadatele sunt distruse definitiv."
     },
     {
-      "type": "remove_author_performance",
+      "type": "lt_performance",
       "title": "Eraser de metadate instantanee",
-      "content": "Curățați mii de pagini în mai puțin de o secundă folosind nucleul nostru WebAssembly extrem de optimizat."
+      "content": "Curățați mii de pagini în mai puțin de o secundă folosind nucleul nostru WebAssembly extrem de optimizat.",
+      "badgeText": "WebAssembly Core"
     }
   ],
   "faqs": [

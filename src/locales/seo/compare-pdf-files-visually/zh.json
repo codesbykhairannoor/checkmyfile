@@ -14,31 +14,51 @@
     "0",
     "云使用"
   ],
+  "supportCenter": "支持中心",
+  "faqTitle": "常见问题解答",
   "sections": [
     {
-      "type": "compare_visual_hero_features",
+      "type": "resize_hero_features",
       "title": "自动发现微小变化",
-      "content": "不要依靠您的眼睛来发现修改后的合同或设计中的差异。 我们的工具以红色突出显示精确的像素变化。"
+      "content": "不要依靠您的眼睛来发现修改后的合同或设计中的差异。 我们的工具以红色突出显示精确的像素变化。",
+      "badgeText": "视觉差异"
     },
     {
-      "type": "compare_visual_how_to_steps",
+      "type": "lt_compare_pdf_how_to_steps",
       "title": "如何比较 PDF",
-      "content": "上传原始 PDF 和修改后的 PDF。 我们将渲染两者并重叠它们以公开任何添加或删除。"
+      "badgeText": "比较指南",
+      "steps": [
+        {
+          "title": "上传原件",
+          "description": "选择 PDF 的第一个版本。"
+        },
+        {
+          "title": "上传修订版本",
+          "description": "选择要比较的第二个版本。"
+        },
+        {
+          "title": "查看亮点",
+          "description": "我们渲染两者并重叠它们以将任何添加或删除显示为红色。"
+        }
+      ]
     },
     {
-      "type": "compare_visual_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "非常适合合同和证明",
-      "content": "律师和设计师使用我们的视觉差异工具来确保文档中没有未经授权的更改。"
+      "content": "律师和设计师使用我们的视觉差异工具来确保文档中没有未经授权的更改。",
+      "badgeText": "法律就绪"
     },
     {
-      "type": "compare_visual_privacy_security",
+      "type": "lt_privacy_security",
       "title": "机密文件比较",
-      "content": "比较敏感的 NDA 合同？ 我们的工具 100% 本地化。 这些文档永远不会接触我们的服务器。"
+      "content": "比较敏感的 NDA 合同？ 我们的工具 100% 本地化。 这些文档永远不会接触我们的服务器。",
+      "badgeText": "零上传"
     },
     {
-      "type": "compare_visual_performance",
+      "type": "lt_performance",
       "title": "实时差异渲染",
-      "content": "借助硬件加速的画布渲染，可以在浏览器中立即生成视觉差异。"
+      "content": "借助硬件加速的画布渲染，可以在浏览器中立即生成视觉差异。",
+      "badgeText": "GPU 加速"
     }
   ],
   "faqs": [

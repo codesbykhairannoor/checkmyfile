@@ -18,12 +18,14 @@ const baseData = {
     buttonText: "Select PDF",
     badges: ["Precision Cropping", "No Server Upload", "Fast"],
     stats: ["100%", "Local", "0", "Latency"],
+    supportCenter: "Support Center",
+    faqTitle: "Frequently Asked Questions",
     sections: [
-      { type: "crop_margins_hero_features", title: "Why Crop PDF Margins?", content: "Many academic papers and ebooks have huge white margins. Cropping them makes text larger and easier to read on smaller screens." },
-      { type: "crop_margins_how_to_steps", title: "How to Crop Margins", content: "Upload your file, define the bounding box by dragging the handles, and hit crop. The process is completely private." },
-      { type: "crop_margins_geo_targeting", title: "Secure Margin Removal", content: "No need to upload your sensitive PDFs just to remove some whitespace. Our WebAssembly engine does it in your browser." },
-      { type: "crop_margins_privacy_security", title: "100% Offline Cropping", content: "Your files never leave your computer. Perfect for confidential legal or medical documents." },
-      { type: "crop_margins_performance", title: "Instant PDF Trimming", content: "Trim a 500-page book in milliseconds without waiting for server uploads or downloads." }
+      { type: "merge_hero_features", title: "Why Crop PDF Margins?", content: "Many academic papers and ebooks have huge white margins. Cropping them makes text larger and easier to read on smaller screens.", badgeText: "Precision Cropping" },
+      { type: "split_how_to_steps", title: "How to Crop Margins", badgeText: "Quick Guide", steps: [{title: "Upload File", description: "Drop your PDF into the browser sandbox."}, {title: "Set Margins", description: "Define the bounding box by dragging the handles."}, {title: "Crop PDF", description: "Hit crop and download the trimmed file instantly."}] },
+      { type: "sign_geo_targeting", title: "Secure Margin Removal", content: "No need to upload your sensitive PDFs just to remove some whitespace. Our WebAssembly engine does it in your browser.", subTitle: "Zero Upload Policy", subContent: "Your files never leave your device." },
+      { type: "protect_privacy_security", title: "100% Offline Cropping", content: "Your files never leave your computer. Perfect for confidential legal or medical documents.", badgeText: "Offline Ready" },
+      { type: "watermark_performance", title: "Instant PDF Trimming", content: "Trim a 500-page book in milliseconds without waiting for server uploads or downloads.", badgeText: "Lightning Fast" }
     ],
     faqs: [
       { q: "Is this free?", a: "Yes, 100% free with no limits." },
@@ -38,12 +40,14 @@ const baseData = {
     buttonText: "Select PDF",
     badges: ["Ink Saver", "Instant Conversion", "Secure"],
     stats: ["100%", "Free", "0", "Ads"],
+    supportCenter: "Support Center",
+    faqTitle: "Frequently Asked Questions",
     sections: [
-      { type: "grayscale_print_hero_features", title: "Save Expensive Printer Ink", content: "Colored ink is expensive. Convert your PDFs to grayscale before printing to save money and resources." },
-      { type: "grayscale_print_how_to_steps", title: "How to Make PDF Black & White", content: "Just drop your file in the box. Our local tool will instantly strip all colors and give you a perfectly printable grayscale PDF." },
-      { type: "grayscale_print_geo_targeting", title: "Best B&W PDF Converter", content: "Convert colored text, images, and backgrounds to shades of gray without losing readability." },
-      { type: "grayscale_print_privacy_security", title: "Private Grayscale Conversion", content: "Your documents are converted in your own device's memory. We never see your files." },
-      { type: "grayscale_print_performance", title: "Lightning Fast Processing", content: "Because we don't upload your file to a cloud server, the grayscale conversion happens almost instantly." }
+      { type: "compress_hero_features", title: "Save Expensive Printer Ink", content: "Colored ink is expensive. Convert your PDFs to grayscale before printing to save money and resources.", badgeText: "Ink Saver" },
+      { type: "crop_how_to_steps", title: "How to Make PDF Black & White", badgeText: "Simple Steps", steps: [{title: "Drop File", description: "Select the colored PDF you want to print."}, {title: "Apply Filter", description: "Our local tool instantly strips all colors."}, {title: "Download Grayscale", description: "Get a perfectly printable black and white PDF."}] },
+      { type: "protect_geo_targeting", title: "Best B&W PDF Converter", content: "Convert colored text, images, and backgrounds to shades of gray without losing readability.", subTitle: "High Fidelity", subContent: "Maintains image sharpness in B&W.", badgeText: "Perfect Prints" },
+      { type: "compare_privacy_security", title: "Private Grayscale Conversion", content: "Your documents are converted in your own device's memory. We never see your files." },
+      { type: "metadata_performance", title: "Lightning Fast Processing", content: "Because we don't upload your file to a cloud server, the grayscale conversion happens almost instantly.", badgeText: "Zero Latency" }
     ],
     faqs: [
       { q: "Will images be grayscaled too?", a: "Yes, all images, text, and vector graphics will be converted to grayscale." },
@@ -58,12 +62,14 @@ const baseData = {
     buttonText: "Select PDF",
     badges: ["Metadata Cleaner", "Privacy First", "Offline Tool"],
     stats: ["100%", "Secure", "0", "Footprints"],
+    supportCenter: "Support Center",
+    faqTitle: "Frequently Asked Questions",
     sections: [
-      { type: "remove_author_hero_features", title: "Why Clean PDF Metadata?", content: "PDFs often secretly store your name, company name, OS version, and creation dates. Clean them before sharing online." },
-      { type: "remove_author_how_to_steps", title: "How to Sanitize Properties", content: "Upload your document. Our engine will parse the PDF structure and securely erase all dictionary metadata fields." },
-      { type: "remove_author_geo_targeting", title: "Protect Your Anonymity", content: "Ensure whistleblowers, journalists, and everyday users can share documents without leaking their digital identity." },
-      { type: "remove_author_privacy_security", title: "Military Grade Sanitization", content: "We rewrite the PDF binary structure locally in your browser to ensure the metadata is permanently destroyed." },
-      { type: "remove_author_performance", title: "Instant Metadata Eraser", content: "Scrub thousands of pages in less than a second using our highly optimized WebAssembly core." }
+      { type: "split_hero_features", title: "Why Clean PDF Metadata?", content: "PDFs often secretly store your name, company name, OS version, and creation dates. Clean them before sharing online.", badgeText: "Sanitize PDF" },
+      { type: "merge_how_to_steps", title: "How to Sanitize Properties", badgeText: "3-Step Guide", steps: [{title: "Upload Document", description: "Select the PDF file you want to clean."}, {title: "Erase Metadata", description: "Our engine parses the structure and erases hidden fields."}, {title: "Save Clean PDF", description: "Download the anonymized document instantly."}] },
+      { type: "watermark_geo_targeting", title: "Protect Your Anonymity", content: "Ensure whistleblowers, journalists, and everyday users can share documents without leaking their digital identity.", subTitle: "Total Privacy", subContent: "Zero digital footprints left behind." },
+      { type: "sign_privacy_security", title: "Military Grade Sanitization", content: "We rewrite the PDF binary structure locally in your browser to ensure the metadata is permanently destroyed." },
+      { type: "rotate_performance", title: "Instant Metadata Eraser", content: "Scrub thousands of pages in less than a second using our highly optimized WebAssembly core.", badgeText: "WebAssembly Core" }
     ],
     faqs: [
       { q: "What metadata is removed?", a: "Author, Title, Subject, Keywords, Creator, Producer, CreationDate, and ModDate." },
@@ -78,12 +84,14 @@ const baseData = {
     buttonText: "Select PDF",
     badges: ["Lossless Extraction", "Batch Export", "ZIP Archive"],
     stats: ["100%", "Original Quality", "0", "Uploads"],
+    supportCenter: "Support Center",
+    faqTitle: "Frequently Asked Questions",
     sections: [
-      { type: "extract_highres_hero_features", title: "Get Original Image Quality", content: "Don't use screenshot tools that ruin resolution. Our tool digs into the PDF binary and extracts the raw, original image files." },
-      { type: "extract_highres_how_to_steps", title: "How to Extract Pictures", content: "Select a PDF. We scan it for embedded JPEGs and PNGs, and package them all into a neat ZIP file for you." },
-      { type: "extract_highres_geo_targeting", title: "Best Image Extraction Tool", content: "Perfect for designers, publishers, and students who need to reuse high-quality assets locked inside a PDF." },
-      { type: "extract_highres_privacy_security", title: "Private Asset Extraction", content: "We don't steal your images. The extraction happens entirely on your own computer." },
-      { type: "extract_highres_performance", title: "Blazing Fast Export", content: "Extract hundreds of high-res images in seconds without waiting for a massive file upload." }
+      { type: "protect_hero_features", title: "Get Original Image Quality", content: "Don't use screenshot tools that ruin resolution. Our tool digs into the PDF binary and extracts the raw, original image files.", badgeText: "Lossless Export" },
+      { type: "compress_how_to_steps", title: "How to Extract Pictures", badgeText: "Fast Export", steps: [{title: "Add PDF", description: "Select a PDF file with embedded images."}, {title: "Scan Binary", description: "We scan the file for JPEGs and PNGs offline."}, {title: "Download ZIP", description: "Package all extracted images into a neat ZIP archive."}] },
+      { type: "rotate_geo_targeting", title: "Best Image Extraction Tool", content: "Perfect for designers, publishers, and students who need to reuse high-quality assets locked inside a PDF.", badgeText: "Pro Quality" },
+      { type: "watermark_privacy_security", title: "Private Asset Extraction", content: "We don't steal your images. The extraction happens entirely on your own computer." },
+      { type: "compare_performance", title: "Blazing Fast Export", content: "Extract hundreds of high-res images in seconds without waiting for a massive file upload.", badgeText: "Instant Extraction" }
     ],
     faqs: [
       { q: "What formats are extracted?", a: "Mostly JPG and PNG, depending on how they were embedded." },
@@ -98,12 +106,14 @@ const baseData = {
     buttonText: "Select PDFs",
     badges: ["Pixel Perfect Diff", "Side-by-Side", "Local Diffing"],
     stats: ["100%", "Accurate", "0", "Cloud Usage"],
+    supportCenter: "Support Center",
+    faqTitle: "Frequently Asked Questions",
     sections: [
-      { type: "compare_visual_hero_features", title: "Spot Tiny Changes Automatically", content: "Don't rely on your eyes to find differences in revised contracts or designs. Our tool highlights exact pixel changes in red." },
-      { type: "compare_visual_how_to_steps", title: "How to Compare PDFs", content: "Upload the original PDF and the revised PDF. We'll render both and overlap them to expose any additions or deletions." },
-      { type: "compare_visual_geo_targeting", title: "Perfect for Contracts & Proofs", content: "Lawyers and designers use our visual diff tool to ensure no unauthorized changes were snuck into a document." },
-      { type: "compare_visual_privacy_security", title: "Confidential Document Comparison", content: "Comparing sensitive NDA contracts? Our tool is 100% local. The documents never touch our servers." },
-      { type: "compare_visual_performance", title: "Real-Time Diff Rendering", content: "Generate visual diffs instantly in your browser thanks to hardware-accelerated canvas rendering." }
+      { type: "resize_hero_features", title: "Spot Tiny Changes Automatically", content: "Don't rely on your eyes to find differences in revised contracts or designs. Our tool highlights exact pixel changes in red.", badgeText: "Visual Diff" },
+      { type: "watermark_how_to_steps", title: "How to Compare PDFs", badgeText: "Compare Guide", steps: [{title: "Upload Original", description: "Select the first version of your PDF."}, {title: "Upload Revision", description: "Select the second version to compare."}, {title: "View Highlights", description: "We render both and overlap them to expose any additions or deletions in red."}] },
+      { type: "split_geo_targeting", title: "Perfect for Contracts & Proofs", content: "Lawyers and designers use our visual diff tool to ensure no unauthorized changes were snuck into a document.", badgeText: "Legal Ready" },
+      { type: "metadata_privacy_security", title: "Confidential Document Comparison", content: "Comparing sensitive NDA contracts? Our tool is 100% local. The documents never touch our servers.", badgeText: "Zero Uploads" },
+      { type: "sign_performance", title: "Real-Time Diff Rendering", content: "Generate visual diffs instantly in your browser thanks to hardware-accelerated canvas rendering.", badgeText: "GPU Accelerated" }
     ],
     faqs: [
       { q: "Does it find text or pixel differences?", a: "It renders the PDF and finds visual pixel differences, which includes text, fonts, and images." },
@@ -191,12 +201,7 @@ async function main() {
     console.log(`Processing batch for language: ${lang}...`);
     
     // Check which tools actually need this language
-    const missingTools = [];
-    for (const toolId of Object.keys(baseData)) {
-      if (!fs.existsSync(path.join(seoDir, toolId, `${lang}.json`))) {
-        missingTools.push(toolId);
-      }
-    }
+    const missingTools = Object.keys(baseData);
     
     if (missingTools.length === 0) {
       console.log(`Skipping ${lang}, all tools already have it.`);

@@ -14,31 +14,50 @@
     "0",
     "Uppladdningar"
   ],
+  "supportCenter": "Supportcenter",
+  "faqTitle": "Vanliga frågor",
   "sections": [
     {
-      "type": "extract_highres_hero_features",
+      "type": "protect_hero_features",
       "title": "Få original bildkvalitet",
-      "content": "Använd inte skärmdumpsverktyg som förstör upplösningen. Vårt verktyg gräver i PDF-binären och extraherar de råa, ursprungliga bildfilerna."
+      "content": "Använd inte skärmdumpsverktyg som förstör upplösningen. Vårt verktyg gräver i PDF-binären och extraherar de råa, ursprungliga bildfilerna.",
+      "badgeText": "Förlustfri export"
     },
     {
-      "type": "extract_highres_how_to_steps",
+      "type": "lt_extract_images_how_to_steps",
       "title": "Hur man extraherar bilder",
-      "content": "Välj en PDF. Vi skannar den efter inbäddade JPEG- och PNG-filer och paketerar dem alla i en snygg ZIP-fil åt dig."
+      "badgeText": "Snabb export",
+      "steps": [
+        {
+          "title": "Lägg till PDF",
+          "description": "Välj en PDF-fil med inbäddade bilder."
+        },
+        {
+          "title": "Skanna binär",
+          "description": "Vi skannar filen efter JPEG och PNG offline."
+        },
+        {
+          "title": "Ladda ner ZIP",
+          "description": "Paketera alla extraherade bilder i ett snyggt ZIP-arkiv."
+        }
+      ]
     },
     {
-      "type": "extract_highres_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Bästa bildextraktionsverktyget",
-      "content": "Perfekt för designers, utgivare och studenter som behöver återanvända tillgångar av hög kvalitet som är låsta i en PDF."
+      "content": "Perfekt för designers, utgivare och studenter som behöver återanvända tillgångar av hög kvalitet som är låsta i en PDF.",
+      "badgeText": "Pro kvalitet"
     },
     {
-      "type": "extract_highres_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Utvinning av privata tillgångar",
       "content": "Vi stjäl inte dina bilder. Extraheringen sker helt på din egen dator."
     },
     {
-      "type": "extract_highres_performance",
+      "type": "lt_performance",
       "title": "Blixtsnabb export",
-      "content": "Extrahera hundratals högupplösta bilder på några sekunder utan att vänta på en massiv filuppladdning."
+      "content": "Extrahera hundratals högupplösta bilder på några sekunder utan att vänta på en massiv filuppladdning.",
+      "badgeText": "Omedelbar extraktion"
     }
   ],
   "faqs": [

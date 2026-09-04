@@ -14,31 +14,51 @@
     "0",
     "Penggunaan Awan"
   ],
+  "supportCenter": "Pusat Sokongan",
+  "faqTitle": "Soalan Lazim",
   "sections": [
     {
-      "type": "compare_visual_hero_features",
+      "type": "resize_hero_features",
       "title": "Lihat Perubahan Kecil Secara Automatik",
-      "content": "Jangan bergantung pada mata anda untuk mencari perbezaan dalam kontrak atau reka bentuk yang disemak semula. Alat kami menyerlahkan perubahan piksel tepat dalam warna merah."
+      "content": "Jangan bergantung pada mata anda untuk mencari perbezaan dalam kontrak atau reka bentuk yang disemak semula. Alat kami menyerlahkan perubahan piksel tepat dalam warna merah.",
+      "badgeText": "Perbezaan Visual"
     },
     {
-      "type": "compare_visual_how_to_steps",
+      "type": "lt_compare_pdf_how_to_steps",
       "title": "Bagaimana untuk Membandingkan PDF",
-      "content": "Muat naik PDF asal dan PDF yang disemak. Kami akan memberikan kedua-duanya dan bertindih untuk mendedahkan sebarang penambahan atau pemadaman."
+      "badgeText": "Panduan Bandingkan",
+      "steps": [
+        {
+          "title": "Muat naik Asal",
+          "description": "Pilih versi pertama PDF anda."
+        },
+        {
+          "title": "Muat Naik Semakan",
+          "description": "Pilih versi kedua untuk dibandingkan."
+        },
+        {
+          "title": "Lihat Sorotan",
+          "description": "Kami memberikan kedua-duanya dan menindihnya untuk mendedahkan sebarang penambahan atau pemadaman dalam warna merah."
+        }
+      ]
     },
     {
-      "type": "compare_visual_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Sesuai untuk Kontrak & Bukti",
-      "content": "Peguam dan pereka bentuk menggunakan alat perbezaan visual kami untuk memastikan tiada perubahan yang tidak dibenarkan diselitkan ke dalam dokumen."
+      "content": "Peguam dan pereka bentuk menggunakan alat perbezaan visual kami untuk memastikan tiada perubahan yang tidak dibenarkan diselitkan ke dalam dokumen.",
+      "badgeText": "Sedia Undang-undang"
     },
     {
-      "type": "compare_visual_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Perbandingan Dokumen Sulit",
-      "content": "Membandingkan kontrak NDA yang sensitif? Alat kami adalah 100% tempatan. Dokumen tidak pernah menyentuh pelayan kami."
+      "content": "Membandingkan kontrak NDA yang sensitif? Alat kami adalah 100% tempatan. Dokumen tidak pernah menyentuh pelayan kami.",
+      "badgeText": "Sifar Muat Naik"
     },
     {
-      "type": "compare_visual_performance",
+      "type": "lt_performance",
       "title": "Rendering Perbezaan Masa Nyata",
-      "content": "Hasilkan perbezaan visual serta-merta dalam penyemak imbas anda terima kasih kepada pemaparan kanvas dipercepatkan perkakasan."
+      "content": "Hasilkan perbezaan visual serta-merta dalam penyemak imbas anda terima kasih kepada pemaparan kanvas dipercepatkan perkakasan.",
+      "badgeText": "GPU Dipercepatkan"
     }
   ],
   "faqs": [

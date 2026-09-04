@@ -14,31 +14,51 @@
     "0",
     "Jalanjäljet"
   ],
+  "supportCenter": "Tukikeskus",
+  "faqTitle": "Usein kysytyt kysymykset",
   "sections": [
     {
-      "type": "remove_author_hero_features",
+      "type": "split_hero_features",
       "title": "Miksi puhdistaa PDF-metadata?",
-      "content": "PDF-tiedostot tallentavat usein salaa nimesi, yrityksen nimesi, käyttöjärjestelmäversiosi ja luontipäivämääräsi. Puhdista ne ennen jakamista verkossa."
+      "content": "PDF-tiedostot tallentavat usein salaa nimesi, yrityksen nimesi, käyttöjärjestelmäversiosi ja luontipäivämääräsi. Puhdista ne ennen jakamista verkossa.",
+      "badgeText": "Puhdista PDF"
     },
     {
-      "type": "remove_author_how_to_steps",
+      "type": "lt_remove_metadata_how_to_steps",
       "title": "Kiinteistöjen puhdistaminen",
-      "content": "Lataa asiakirjasi. Moottorimme jäsentää PDF-rakenteen ja poistaa turvallisesti kaikki sanakirjan metatietokentät."
+      "badgeText": "3-vaiheinen opas",
+      "steps": [
+        {
+          "title": "Lataa asiakirja",
+          "description": "Valitse PDF-tiedosto, jonka haluat puhdistaa."
+        },
+        {
+          "title": "Poista metatiedot",
+          "description": "Moottorimme jäsentää rakenteen ja poistaa piilotetut kentät."
+        },
+        {
+          "title": "Tallenna puhdas PDF",
+          "description": "Lataa anonymisoitu asiakirja välittömästi."
+        }
+      ]
     },
     {
-      "type": "remove_author_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Suojaa nimettömyyttäsi",
-      "content": "Varmista, että ilmiantajat, toimittajat ja jokapäiväiset käyttäjät voivat jakaa asiakirjoja ilman digitaalista identiteettiään."
+      "content": "Varmista, että ilmiantajat, toimittajat ja jokapäiväiset käyttäjät voivat jakaa asiakirjoja ilman digitaalista identiteettiään.",
+      "subTitle": "Täydellinen yksityisyys",
+      "subContent": "Nolla digitaalista jalanjälkeä."
     },
     {
-      "type": "remove_author_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Sotilasluokan desinfiointi",
       "content": "Kirjoitamme PDF-binaarirakenteen uudelleen paikallisesti selaimessasi varmistaaksemme, että metatiedot tuhoutuvat pysyvästi."
     },
     {
-      "type": "remove_author_performance",
+      "type": "lt_performance",
       "title": "Instant Metadata Eraser",
-      "content": "Puhdista tuhansia sivuja alle sekunnissa erittäin optimoidun WebAssembly-ytimen avulla."
+      "content": "Puhdista tuhansia sivuja alle sekunnissa erittäin optimoidun WebAssembly-ytimen avulla.",
+      "badgeText": "WebAssembly Core"
     }
   ],
   "faqs": [

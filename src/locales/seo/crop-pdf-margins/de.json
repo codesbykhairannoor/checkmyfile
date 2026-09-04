@@ -14,31 +14,52 @@
     "0",
     "Latenz"
   ],
+  "supportCenter": "Support-Center",
+  "faqTitle": "Häufig gestellte Fragen",
   "sections": [
     {
-      "type": "Crop_margins_hero_features",
+      "type": "merge_hero_features",
       "title": "Warum PDF-Ränder beschneiden?",
-      "content": "Viele wissenschaftliche Arbeiten und E-Books haben riesige weiße Ränder. Durch das Zuschneiden wird der Text größer und auf kleineren Bildschirmen besser lesbar."
+      "content": "Viele wissenschaftliche Arbeiten und E-Books haben riesige weiße Ränder. Durch das Zuschneiden wird der Text größer und auf kleineren Bildschirmen besser lesbar.",
+      "badgeText": "Präzises Zuschneiden"
     },
     {
-      "type": "Crop_margins_how_to_steps",
+      "type": "lt_crop_margins_how_to_steps",
       "title": "So beschneiden Sie Ränder",
-      "content": "Laden Sie Ihre Datei hoch, definieren Sie den Begrenzungsrahmen durch Ziehen der Ziehpunkte und klicken Sie auf „Zuschneiden“. Der Prozess ist völlig privat."
+      "badgeText": "Kurzanleitung",
+      "steps": [
+        {
+          "title": "Datei hochladen",
+          "description": "Legen Sie Ihr PDF in der Browser-Sandbox ab."
+        },
+        {
+          "title": "Ränder festlegen",
+          "description": "Definieren Sie den Begrenzungsrahmen, indem Sie die Griffe ziehen."
+        },
+        {
+          "title": "PDF zuschneiden",
+          "description": "Klicken Sie auf „Zuschneiden“ und laden Sie die zugeschnittene Datei sofort herunter."
+        }
+      ]
     },
     {
-      "type": "Crop_margins_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Sichere Randentfernung",
-      "content": "Sie müssen Ihre sensiblen PDFs nicht hochladen, nur um Leerzeichen zu entfernen. Unsere WebAssembly-Engine erledigt dies in Ihrem Browser."
+      "content": "Sie müssen Ihre sensiblen PDFs nicht hochladen, nur um Leerzeichen zu entfernen. Unsere WebAssembly-Engine erledigt dies in Ihrem Browser.",
+      "subTitle": "Null-Upload-Richtlinie",
+      "subContent": "Ihre Dateien verlassen niemals Ihr Gerät."
     },
     {
-      "type": "Crop_margins_privacy_security",
+      "type": "lt_privacy_security",
       "title": "100 % Offline-Zuschneiden",
-      "content": "Ihre Dateien verlassen niemals Ihren Computer. Perfekt für vertrauliche juristische oder medizinische Dokumente."
+      "content": "Ihre Dateien verlassen niemals Ihren Computer. Perfekt für vertrauliche juristische oder medizinische Dokumente.",
+      "badgeText": "Offline-fähig"
     },
     {
-      "type": "Crop_margins_performance",
+      "type": "lt_performance",
       "title": "Sofortiges Zuschneiden von PDFs",
-      "content": "Schneiden Sie ein 500-seitiges Buch in Millisekunden zu, ohne auf Server-Uploads oder -Downloads warten zu müssen."
+      "content": "Schneiden Sie ein 500-seitiges Buch in Millisekunden zu, ohne auf Server-Uploads oder -Downloads warten zu müssen.",
+      "badgeText": "Blitzschnell"
     }
   ],
   "faqs": [

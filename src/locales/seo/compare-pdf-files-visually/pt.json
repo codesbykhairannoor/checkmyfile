@@ -14,31 +14,51 @@
     "0",
     "Uso da nuvem"
   ],
+  "supportCenter": "Centro de suporte",
+  "faqTitle": "Perguntas frequentes",
   "sections": [
     {
-      "type": "compare_visual_hero_features",
+      "type": "resize_hero_features",
       "title": "Identifique pequenas alterações automaticamente",
-      "content": "Não confie nos seus olhos para encontrar diferenças em contratos ou projetos revisados. Nossa ferramenta destaca as alterações exatas dos pixels em vermelho."
+      "content": "Não confie nos seus olhos para encontrar diferenças em contratos ou projetos revisados. Nossa ferramenta destaca as alterações exatas dos pixels em vermelho.",
+      "badgeText": "Diferença visual"
     },
     {
-      "type": "compare_visual_how_to_steps",
+      "type": "lt_compare_pdf_how_to_steps",
       "title": "Como comparar PDFs",
-      "content": "Carregue o PDF original e o PDF revisado. Iremos renderizar ambos e sobrepô-los para expor quaisquer adições ou exclusões."
+      "badgeText": "Guia de comparação",
+      "steps": [
+        {
+          "title": "Carregar Original",
+          "description": "Selecione a primeira versão do seu PDF."
+        },
+        {
+          "title": "Carregar revisão",
+          "description": "Selecione a segunda versão para comparar."
+        },
+        {
+          "title": "Ver destaques",
+          "description": "Nós renderizamos ambos e os sobrepomos para expor quaisquer adições ou exclusões em vermelho."
+        }
+      ]
     },
     {
-      "type": "compare_visual_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Perfeito para contratos e provas",
-      "content": "Advogados e designers usam nossa ferramenta de comparação visual para garantir que nenhuma alteração não autorizada seja introduzida em um documento."
+      "content": "Advogados e designers usam nossa ferramenta de comparação visual para garantir que nenhuma alteração não autorizada seja introduzida em um documento.",
+      "badgeText": "Jurídico Pronto"
     },
     {
-      "type": "compare_visual_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Comparação de documentos confidenciais",
-      "content": "Comparando contratos NDA sensíveis? Nossa ferramenta é 100% local. Os documentos nunca chegam aos nossos servidores."
+      "content": "Comparando contratos NDA sensíveis? Nossa ferramenta é 100% local. Os documentos nunca chegam aos nossos servidores.",
+      "badgeText": "Nenhum upload"
     },
     {
-      "type": "compare_visual_performance",
+      "type": "lt_performance",
       "title": "Renderização de diferenças em tempo real",
-      "content": "Gere diferenças visuais instantaneamente em seu navegador graças à renderização de tela acelerada por hardware."
+      "content": "Gere diferenças visuais instantaneamente em seu navegador graças à renderização de tela acelerada por hardware.",
+      "badgeText": "GPU acelerado"
     }
   ],
   "faqs": [

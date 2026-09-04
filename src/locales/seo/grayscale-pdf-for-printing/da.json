@@ -14,31 +14,52 @@
     "0",
     "Annoncer"
   ],
+  "supportCenter": "Supportcenter",
+  "faqTitle": "Ofte stillede spørgsmål",
   "sections": [
     {
-      "type": "grayscale_print_hero_features",
+      "type": "compress_hero_features",
       "title": "Spar dyrt printerblæk",
-      "content": "Farvet blæk er dyrt. Konverter dine PDF'er til gråtoner før udskrivning for at spare penge og ressourcer."
+      "content": "Farvet blæk er dyrt. Konverter dine PDF'er til gråtoner før udskrivning for at spare penge og ressourcer.",
+      "badgeText": "Blæksparer"
     },
     {
-      "type": "grayscale_print_how_to_steps",
+      "type": "lt_grayscale_how_to_steps",
       "title": "Sådan laver du PDF i sort/hvid",
-      "content": "Bare smid din fil i kassen. Vores lokale værktøj vil øjeblikkeligt fjerne alle farver og give dig en perfekt printbar gråtone-PDF."
+      "badgeText": "Simple trin",
+      "steps": [
+        {
+          "title": "Drop fil",
+          "description": "Vælg den farvede PDF, du vil udskrive."
+        },
+        {
+          "title": "Anvend filter",
+          "description": "Vores lokale værktøj fjerner øjeblikkeligt alle farver."
+        },
+        {
+          "title": "Hent gråtoner",
+          "description": "Få en perfekt printbar sort/hvid PDF."
+        }
+      ]
     },
     {
-      "type": "grayscale_print_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Bedste B&W PDF Converter",
-      "content": "Konverter farvet tekst, billeder og baggrunde til gråtoner uden at miste læsbarheden."
+      "content": "Konverter farvet tekst, billeder og baggrunde til gråtoner uden at miste læsbarheden.",
+      "subTitle": "High Fidelity",
+      "subContent": "Bevarer billedskarpheden i sort/hvid.",
+      "badgeText": "Perfekte udskrifter"
     },
     {
-      "type": "grayscale_print_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Privat gråtonekonvertering",
       "content": "Dine dokumenter konverteres i din egen enheds hukommelse. Vi ser aldrig dine filer."
     },
     {
-      "type": "grayscale_print_performance",
+      "type": "lt_performance",
       "title": "Lynhurtig behandling",
-      "content": "Fordi vi ikke uploader din fil til en cloud-server, sker gråtonekonverteringen næsten øjeblikkeligt."
+      "content": "Fordi vi ikke uploader din fil til en cloud-server, sker gråtonekonverteringen næsten øjeblikkeligt.",
+      "badgeText": "Nul forsinkelse"
     }
   ],
   "faqs": [

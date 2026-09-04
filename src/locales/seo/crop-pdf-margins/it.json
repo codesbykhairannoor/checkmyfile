@@ -14,31 +14,52 @@
     "0",
     "Latenza"
   ],
+  "supportCenter": "Centro di supporto",
+  "faqTitle": "Domande frequenti",
   "sections": [
     {
-      "type": "crop_margins_hero_features",
+      "type": "merge_hero_features",
       "title": "Perché ritagliare i margini del PDF?",
-      "content": "Molti documenti accademici ed ebook hanno enormi margini bianchi. Ritagliarli rende il testo più grande e più facile da leggere su schermi più piccoli."
+      "content": "Molti documenti accademici ed ebook hanno enormi margini bianchi. Ritagliarli rende il testo più grande e più facile da leggere su schermi più piccoli.",
+      "badgeText": "Ritaglio di precisione"
     },
     {
-      "type": "crop_margins_how_to_steps",
+      "type": "lt_crop_margins_how_to_steps",
       "title": "Come ritagliare i margini",
-      "content": "Carica il tuo file, definisci il riquadro di delimitazione trascinando le maniglie e premi Ritaglia. Il processo è completamente privato."
+      "badgeText": "Guida rapida",
+      "steps": [
+        {
+          "title": "Carica file",
+          "description": "Trascina il tuo PDF nella sandbox del browser."
+        },
+        {
+          "title": "Imposta margini",
+          "description": "Definire il riquadro di delimitazione trascinando le maniglie."
+        },
+        {
+          "title": "Ritaglia PDF",
+          "description": "Premi Ritaglia e scarica immediatamente il file ritagliato."
+        }
+      ]
     },
     {
-      "type": "crop_margins_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Rimozione sicura del margine",
-      "content": "Non è necessario caricare i tuoi PDF sensibili solo per rimuovere alcuni spazi bianchi. Il nostro motore WebAssembly lo fa nel tuo browser."
+      "content": "Non è necessario caricare i tuoi PDF sensibili solo per rimuovere alcuni spazi bianchi. Il nostro motore WebAssembly lo fa nel tuo browser.",
+      "subTitle": "Politica di caricamento zero",
+      "subContent": "I tuoi file non lasciano mai il tuo dispositivo."
     },
     {
-      "type": "crop_margins_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Ritaglio offline al 100%.",
-      "content": "I tuoi file non lasciano mai il tuo computer. Perfetto per documenti legali o medici riservati."
+      "content": "I tuoi file non lasciano mai il tuo computer. Perfetto per documenti legali o medici riservati.",
+      "badgeText": "Pronto offline"
     },
     {
-      "type": "crop_margins_performance",
+      "type": "lt_performance",
       "title": "Ritaglio PDF istantaneo",
-      "content": "Ritaglia un libro di 500 pagine in millisecondi senza attendere caricamenti o download sul server."
+      "content": "Ritaglia un libro di 500 pagine in millisecondi senza attendere caricamenti o download sul server.",
+      "badgeText": "Fulmineo"
     }
   ],
   "faqs": [

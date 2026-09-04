@@ -14,31 +14,52 @@
     "0",
     "Annonces"
   ],
+  "supportCenter": "Centre d'assistance",
+  "faqTitle": "Foire aux questions",
   "sections": [
     {
-      "type": "grayscale_print_hero_features",
+      "type": "compress_hero_features",
       "title": "Économisez de l'encre d'imprimante coûteuse",
-      "content": "L'encre colorée coûte cher. Convertissez vos PDF en niveaux de gris avant de les imprimer pour économiser de l'argent et des ressources."
+      "content": "L'encre colorée coûte cher. Convertissez vos PDF en niveaux de gris avant de les imprimer pour économiser de l'argent et des ressources.",
+      "badgeText": "Économiseur d'encre"
     },
     {
-      "type": "grayscale_print_how_to_steps",
+      "type": "lt_grayscale_how_to_steps",
       "title": "Comment créer un PDF en noir et blanc",
-      "content": "Déposez simplement votre fichier dans la boîte. Notre outil local supprimera instantanément toutes les couleurs et vous donnera un PDF en niveaux de gris parfaitement imprimable."
+      "badgeText": "Étapes simples",
+      "steps": [
+        {
+          "title": "Supprimer le fichier",
+          "description": "Sélectionnez le PDF couleur que vous souhaitez imprimer."
+        },
+        {
+          "title": "Appliquer le filtre",
+          "description": "Notre outil local supprime instantanément toutes les couleurs."
+        },
+        {
+          "title": "Télécharger les niveaux de gris",
+          "description": "Obtenez un PDF noir et blanc parfaitement imprimable."
+        }
+      ]
     },
     {
-      "type": "grayscale_print_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Meilleur convertisseur PDF N&B",
-      "content": "Convertissez le texte, les images et les arrière-plans colorés en nuances de gris sans perdre en lisibilité."
+      "content": "Convertissez le texte, les images et les arrière-plans colorés en nuances de gris sans perdre en lisibilité.",
+      "subTitle": "Haute fidélité",
+      "subContent": "Maintient la netteté de l’image en N&B.",
+      "badgeText": "Impressions parfaites"
     },
     {
-      "type": "grayscale_print_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Conversion privée en niveaux de gris",
       "content": "Vos documents sont convertis dans la mémoire de votre propre appareil. Nous ne voyons jamais vos fichiers."
     },
     {
-      "type": "grayscale_print_performance",
+      "type": "lt_performance",
       "title": "Traitement ultra-rapide",
-      "content": "Comme nous ne téléchargeons pas votre fichier sur un serveur cloud, la conversion des niveaux de gris se produit presque instantanément."
+      "content": "Comme nous ne téléchargeons pas votre fichier sur un serveur cloud, la conversion des niveaux de gris se produit presque instantanément.",
+      "badgeText": "Zéro latence"
     }
   ],
   "faqs": [

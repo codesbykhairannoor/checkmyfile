@@ -2,6 +2,7 @@ export interface SeoSectionData {
   type: string;
   title: string;
   content?: string;
+  badgeText?: string;
   steps?: { title: string; description: string }[];
 }
 

@@ -14,31 +14,52 @@
     "0",
     "Latensi"
   ],
+  "supportCenter": "Pusat Sokongan",
+  "faqTitle": "Soalan Lazim",
   "sections": [
     {
-      "type": "crop_margins_hero_features",
+      "type": "merge_hero_features",
       "title": "Mengapa Pangkas Margin PDF?",
-      "content": "Banyak kertas akademik dan e-buku mempunyai margin putih yang besar. Memangkasnya menjadikan teks lebih besar dan lebih mudah dibaca pada skrin yang lebih kecil."
+      "content": "Banyak kertas akademik dan e-buku mempunyai margin putih yang besar. Memangkasnya menjadikan teks lebih besar dan lebih mudah dibaca pada skrin yang lebih kecil.",
+      "badgeText": "Pemotongan Ketepatan"
     },
     {
-      "type": "crop_margins_how_to_steps",
+      "type": "lt_crop_margins_how_to_steps",
       "title": "Cara Memangkas Margin",
-      "content": "Muat naik fail anda, tentukan kotak sempadan dengan menyeret pemegangnya dan tekan pangkas. Proses ini adalah peribadi sepenuhnya."
+      "badgeText": "Panduan Pantas",
+      "steps": [
+        {
+          "title": "Muat Naik Fail",
+          "description": "Letakkan PDF anda ke dalam kotak pasir penyemak imbas."
+        },
+        {
+          "title": "Tetapkan Margin",
+          "description": "Tentukan kotak pembatas dengan menyeret pemegangnya."
+        },
+        {
+          "title": "Pangkas PDF",
+          "description": "Tekan pangkas dan muat turun fail yang dipangkas serta-merta."
+        }
+      ]
     },
     {
-      "type": "crop_margins_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Pembuangan Margin Selamat",
-      "content": "Tidak perlu memuat naik PDF sensitif anda hanya untuk mengalih keluar beberapa ruang kosong. Enjin WebAssembly kami melakukannya dalam penyemak imbas anda."
+      "content": "Tidak perlu memuat naik PDF sensitif anda hanya untuk mengalih keluar beberapa ruang kosong. Enjin WebAssembly kami melakukannya dalam penyemak imbas anda.",
+      "subTitle": "Dasar Muat Naik Sifar",
+      "subContent": "Fail anda tidak pernah meninggalkan peranti anda."
     },
     {
-      "type": "crop_margins_privacy_security",
+      "type": "lt_privacy_security",
       "title": "100% Pemotongan Luar Talian",
-      "content": "Fail anda tidak pernah meninggalkan komputer anda. Sesuai untuk dokumen undang-undang atau perubatan sulit."
+      "content": "Fail anda tidak pernah meninggalkan komputer anda. Sesuai untuk dokumen undang-undang atau perubatan sulit.",
+      "badgeText": "Sedia Luar Talian"
     },
     {
-      "type": "crop_margins_performance",
+      "type": "lt_performance",
       "title": "Pemangkasan PDF Segera",
-      "content": "Potong buku 500 halaman dalam milisaat tanpa menunggu muat naik atau muat turun pelayan."
+      "content": "Potong buku 500 halaman dalam milisaat tanpa menunggu muat naik atau muat turun pelayan.",
+      "badgeText": "Sepantas Kilat"
     }
   ],
   "faqs": [

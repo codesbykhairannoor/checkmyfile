@@ -14,31 +14,52 @@
     "0",
     "延迟"
   ],
+  "supportCenter": "支持中心",
+  "faqTitle": "常见问题解答",
   "sections": [
     {
-      "type": "crop_margins_hero_features",
+      "type": "merge_hero_features",
       "title": "为什么要裁剪 PDF 边距？",
-      "content": "许多学术论文和电子书都有巨大的白边距。 裁剪它们可以使文本更大并且更容易在较小的屏幕上阅读。"
+      "content": "许多学术论文和电子书都有巨大的白边距。 裁剪它们可以使文本更大并且更容易在较小的屏幕上阅读。",
+      "badgeText": "精准裁剪"
     },
     {
-      "type": "crop_margins_how_to_steps",
+      "type": "lt_crop_margins_how_to_steps",
       "title": "如何裁剪边距",
-      "content": "上传文件，通过拖动手柄定义边界框，然后点击裁剪。 该过程是完全私人的。"
+      "badgeText": "快速指南",
+      "steps": [
+        {
+          "title": "上传文件",
+          "description": "将 PDF 放入浏览器沙箱中。"
+        },
+        {
+          "title": "设置边距",
+          "description": "通过拖动手柄来定义边界框。"
+        },
+        {
+          "title": "裁剪 PDF",
+          "description": "点击裁剪并立即下载修剪后的文件。"
+        }
+      ]
     },
     {
-      "type": "crop_margins_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "安全保证金去除",
-      "content": "无需仅仅为了删除一些空白而上传敏感的 PDF。 我们的 WebAssembly 引擎在您的浏览器中完成此操作。"
+      "content": "无需仅仅为了删除一些空白而上传敏感的 PDF。 我们的 WebAssembly 引擎在您的浏览器中完成此操作。",
+      "subTitle": "零上传政策",
+      "subContent": "您的文件永远不会离开您的设备。"
     },
     {
-      "type": "crop_margins_privacy_security",
+      "type": "lt_privacy_security",
       "title": "100%离线裁剪",
-      "content": "您的文件永远不会离开您的计算机。 非常适合机密法律或医疗文件。"
+      "content": "您的文件永远不会离开您的计算机。 非常适合机密法律或医疗文件。",
+      "badgeText": "离线就绪"
     },
     {
-      "type": "crop_margins_performance",
+      "type": "lt_performance",
       "title": "即时 PDF 修剪",
-      "content": "在几毫秒内修剪一本 500 页的书，无需等待服务器上传或下载。"
+      "content": "在几毫秒内修剪一本 500 页的书，无需等待服务器上传或下载。",
+      "badgeText": "快如闪电"
     }
   ],
   "faqs": [

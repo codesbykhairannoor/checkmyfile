@@ -14,31 +14,51 @@
     "0",
     "Fotspor"
   ],
+  "supportCenter": "Støttesenter",
+  "faqTitle": "Ofte stilte spørsmål",
   "sections": [
     {
-      "type": "remove_author_hero_features",
+      "type": "split_hero_features",
       "title": "Hvorfor rense PDF-metadata?",
-      "content": "PDF-filer lagrer ofte ditt navn, firmanavn, OS-versjon og opprettelsesdatoer i hemmelighet. Rengjør dem før du deler dem på nettet."
+      "content": "PDF-filer lagrer ofte ditt navn, firmanavn, OS-versjon og opprettelsesdatoer i hemmelighet. Rengjør dem før du deler dem på nettet.",
+      "badgeText": "Desinfiser PDF"
     },
     {
-      "type": "remove_author_how_to_steps",
+      "type": "lt_remove_metadata_how_to_steps",
       "title": "Slik renser du eiendommer",
-      "content": "Last opp dokumentet ditt. Motoren vår vil analysere PDF-strukturen og slette alle metadatafelt i ordboken på en sikker måte."
+      "badgeText": "3-trinns veiledning",
+      "steps": [
+        {
+          "title": "Last opp dokument",
+          "description": "Velg PDF-filen du vil rense."
+        },
+        {
+          "title": "Slett metadata",
+          "description": "Motoren vår analyserer strukturen og sletter skjulte felt."
+        },
+        {
+          "title": "Lagre ren PDF",
+          "description": "Last ned det anonymiserte dokumentet umiddelbart."
+        }
+      ]
     },
     {
-      "type": "remove_author_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Beskytt din anonymitet",
-      "content": "Sørg for at varslere, journalister og vanlige brukere kan dele dokumenter uten å lekke deres digitale identitet."
+      "content": "Sørg for at varslere, journalister og vanlige brukere kan dele dokumenter uten å lekke deres digitale identitet.",
+      "subTitle": "Totalt personvern",
+      "subContent": "Null digitale fotavtrykk etterlatt seg."
     },
     {
-      "type": "remove_author_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Sanitisering av militær klasse",
       "content": "Vi omskriver PDF-binærstrukturen lokalt i nettleseren din for å sikre at metadataene blir permanent ødelagt."
     },
     {
-      "type": "remove_author_performance",
+      "type": "lt_performance",
       "title": "Instant Metadata Eraser",
-      "content": "Skrubb tusenvis av sider på mindre enn ett sekund ved å bruke vår svært optimaliserte WebAssembly-kjerne."
+      "content": "Skrubb tusenvis av sider på mindre enn ett sekund ved å bruke vår svært optimaliserte WebAssembly-kjerne.",
+      "badgeText": "WebAssembly kjerne"
     }
   ],
   "faqs": [

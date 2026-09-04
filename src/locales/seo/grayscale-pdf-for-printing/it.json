@@ -14,31 +14,52 @@
     "0",
     "Annunci"
   ],
+  "supportCenter": "Centro di supporto",
+  "faqTitle": "Domande frequenti",
   "sections": [
     {
-      "type": "grayscale_print_hero_features",
+      "type": "compress_hero_features",
       "title": "Risparmia sul costoso inchiostro della stampante",
-      "content": "L'inchiostro colorato è costoso. Converti i tuoi PDF in scala di grigi prima della stampa per risparmiare denaro e risorse."
+      "content": "L'inchiostro colorato è costoso. Converti i tuoi PDF in scala di grigi prima della stampa per risparmiare denaro e risorse.",
+      "badgeText": "Risparmio inchiostro"
     },
     {
-      "type": "grayscale_print_how_to_steps",
+      "type": "lt_grayscale_how_to_steps",
       "title": "Come creare PDF in bianco e nero",
-      "content": "Rilascia semplicemente il file nella casella. Il nostro strumento locale rimuoverà immediatamente tutti i colori e ti fornirà un PDF in scala di grigi perfettamente stampabile."
+      "badgeText": "Semplici passaggi",
+      "steps": [
+        {
+          "title": "Rilascia file",
+          "description": "Seleziona il PDF colorato che desideri stampare."
+        },
+        {
+          "title": "Applica filtro",
+          "description": "Il nostro strumento locale rimuove istantaneamente tutti i colori."
+        },
+        {
+          "title": "Scarica Scala di grigi",
+          "description": "Ottieni un PDF in bianco e nero perfettamente stampabile."
+        }
+      ]
     },
     {
-      "type": "grayscale_print_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Il miglior convertitore PDF in bianco e nero",
-      "content": "Converti testo, immagini e sfondi colorati in sfumature di grigio senza perdere la leggibilità."
+      "content": "Converti testo, immagini e sfondi colorati in sfumature di grigio senza perdere la leggibilità.",
+      "subTitle": "Alta fedeltà",
+      "subContent": "Mantiene la nitidezza dell'immagine in bianco e nero.",
+      "badgeText": "Stampe perfette"
     },
     {
-      "type": "grayscale_print_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Conversione privata in scala di grigi",
       "content": "I tuoi documenti vengono convertiti nella memoria del tuo dispositivo. Non vediamo mai i tuoi file."
     },
     {
-      "type": "grayscale_print_performance",
+      "type": "lt_performance",
       "title": "Elaborazione fulminea",
-      "content": "Poiché non carichiamo il tuo file su un server cloud, la conversione in scala di grigi avviene quasi istantaneamente."
+      "content": "Poiché non carichiamo il tuo file su un server cloud, la conversione in scala di grigi avviene quasi istantaneamente.",
+      "badgeText": "Latenza zero"
     }
   ],
   "faqs": [

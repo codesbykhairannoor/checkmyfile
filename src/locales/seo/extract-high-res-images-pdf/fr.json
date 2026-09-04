@@ -14,31 +14,50 @@
     "0",
     "Téléchargements"
   ],
+  "supportCenter": "Centre d'assistance",
+  "faqTitle": "Foire aux questions",
   "sections": [
     {
-      "type": "extract_highres_hero_features",
+      "type": "protect_hero_features",
       "title": "Obtenez une qualité d'image originale",
-      "content": "N'utilisez pas d'outils de capture d'écran qui ruinent la résolution. Notre outil fouille dans le binaire PDF et extrait les fichiers image bruts et originaux."
+      "content": "N'utilisez pas d'outils de capture d'écran qui ruinent la résolution. Notre outil fouille dans le binaire PDF et extrait les fichiers image bruts et originaux.",
+      "badgeText": "Exportation sans perte"
     },
     {
-      "type": "extract_highres_how_to_steps",
+      "type": "lt_extract_images_how_to_steps",
       "title": "Comment extraire des images",
-      "content": "Sélectionnez un PDF. Nous le numérisons à la recherche de fichiers JPEG et PNG intégrés, et les regroupons tous dans un fichier ZIP soigné pour vous."
+      "badgeText": "Exportation rapide",
+      "steps": [
+        {
+          "title": "Ajouter un PDF",
+          "description": "Sélectionnez un fichier PDF avec des images intégrées."
+        },
+        {
+          "title": "Scanner le binaire",
+          "description": "Nous analysons le fichier à la recherche de fichiers JPEG et PNG hors ligne."
+        },
+        {
+          "title": "Télécharger le fichier ZIP",
+          "description": "Regroupez toutes les images extraites dans une archive ZIP soignée."
+        }
+      ]
     },
     {
-      "type": "extract_highres_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Meilleur outil d'extraction d'images",
-      "content": "Idéal pour les concepteurs, les éditeurs et les étudiants qui ont besoin de réutiliser des ressources de haute qualité enfermées dans un PDF."
+      "content": "Idéal pour les concepteurs, les éditeurs et les étudiants qui ont besoin de réutiliser des ressources de haute qualité enfermées dans un PDF.",
+      "badgeText": "Qualité professionnelle"
     },
     {
-      "type": "extract_highres_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Extraction d'actifs privés",
       "content": "Nous ne volons pas vos images. L'extraction s'effectue entièrement sur votre propre ordinateur."
     },
     {
-      "type": "extract_highres_performance",
+      "type": "lt_performance",
       "title": "Exportation ultra-rapide",
-      "content": "Extrayez des centaines d'images haute résolution en quelques secondes sans attendre un téléchargement massif de fichiers."
+      "content": "Extrayez des centaines d'images haute résolution en quelques secondes sans attendre un téléchargement massif de fichiers.",
+      "badgeText": "Extraction instantanée"
     }
   ],
   "faqs": [

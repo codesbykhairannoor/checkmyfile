@@ -14,31 +14,51 @@
     "0",
     "Wykorzystanie chmury"
   ],
+  "supportCenter": "Centrum wsparcia",
+  "faqTitle": "Często zadawane pytania",
   "sections": [
     {
-      "type": "compare_visual_hero_features",
+      "type": "resize_hero_features",
       "title": "Automatycznie dostrzegaj drobne zmiany",
-      "content": "Nie polegaj na wzroku, aby znaleźć różnice w poprawionych umowach lub projektach. Nasze narzędzie podkreśla dokładne zmiany pikseli na czerwono."
+      "content": "Nie polegaj na wzroku, aby znaleźć różnice w poprawionych umowach lub projektach. Nasze narzędzie podkreśla dokładne zmiany pikseli na czerwono.",
+      "badgeText": "Różnica wizualna"
     },
     {
-      "type": "compare_visual_how_to_steps",
+      "type": "lt_compare_pdf_how_to_steps",
       "title": "Jak porównywać pliki PDF",
-      "content": "Prześlij oryginalny plik PDF i poprawiony plik PDF. Wyrenderujemy oba i nałożymy je, aby odsłonić wszelkie dodatki lub usunięcia."
+      "badgeText": "Porównaj przewodnik",
+      "steps": [
+        {
+          "title": "Prześlij oryginał",
+          "description": "Wybierz pierwszą wersję pliku PDF."
+        },
+        {
+          "title": "Prześlij wersję",
+          "description": "Wybierz drugą wersję do porównania."
+        },
+        {
+          "title": "Zobacz najważniejsze wydarzenia",
+          "description": "Renderujemy oba i nakładamy je, aby odsłonić wszelkie dodatki lub usunięcia na czerwono."
+        }
+      ]
     },
     {
-      "type": "compare_visual_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Idealny do umów i dowodów",
-      "content": "Prawnicy i projektanci korzystają z naszego narzędzia do porównywania wizualnego, aby mieć pewność, że do dokumentu nie przedostały się nieautoryzowane zmiany."
+      "content": "Prawnicy i projektanci korzystają z naszego narzędzia do porównywania wizualnego, aby mieć pewność, że do dokumentu nie przedostały się nieautoryzowane zmiany.",
+      "badgeText": "Legalne gotowe"
     },
     {
-      "type": "compare_visual_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Porównanie dokumentów poufnych",
-      "content": "Porównywanie wrażliwych umów NDA? Nasze narzędzie jest w 100% lokalne. Dokumenty nigdy nie trafiają na nasze serwery."
+      "content": "Porównywanie wrażliwych umów NDA? Nasze narzędzie jest w 100% lokalne. Dokumenty nigdy nie trafiają na nasze serwery.",
+      "badgeText": "Zero przesyłania"
     },
     {
-      "type": "compare_visual_performance",
+      "type": "lt_performance",
       "title": "Renderowanie różnicowe w czasie rzeczywistym",
-      "content": "Natychmiast generuj różnice wizualne w przeglądarce dzięki przyspieszanemu sprzętowo renderowaniu płótna."
+      "content": "Natychmiast generuj różnice wizualne w przeglądarce dzięki przyspieszanemu sprzętowo renderowaniu płótna.",
+      "badgeText": "Przyspieszenie GPU"
     }
   ],
   "faqs": [

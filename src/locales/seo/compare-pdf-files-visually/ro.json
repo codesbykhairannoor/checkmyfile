@@ -14,31 +14,51 @@
     "0",
     "Utilizarea cloudului"
   ],
+  "supportCenter": "Centru de suport",
+  "faqTitle": "Întrebări frecvente",
   "sections": [
     {
-      "type": "compare_visual_hero_features",
+      "type": "resize_hero_features",
       "title": "Identificați automat modificări minuscule",
-      "content": "Nu vă bazați pe ochii tăi pentru a găsi diferențe în contractele sau modelele revizuite. Instrumentul nostru evidențiază modificările exacte ale pixelilor în roșu."
+      "content": "Nu vă bazați pe ochii tăi pentru a găsi diferențe în contractele sau modelele revizuite. Instrumentul nostru evidențiază modificările exacte ale pixelilor în roșu.",
+      "badgeText": "Diferența vizuală"
     },
     {
-      "type": "compare_visual_how_to_steps",
+      "type": "lt_compare_pdf_how_to_steps",
       "title": "Cum se compară fișierele PDF",
-      "content": "Încărcați PDF-ul original și PDF-ul revizuit. Le vom randa pe ambele și le vom suprapune pentru a expune orice adăugiri sau ștergeri."
+      "badgeText": "Ghid de comparare",
+      "steps": [
+        {
+          "title": "Încărcați originalul",
+          "description": "Selectați prima versiune a PDF-ului dvs."
+        },
+        {
+          "title": "Încărcați revizuirea",
+          "description": "Selectați a doua versiune pentru a compara."
+        },
+        {
+          "title": "Vedeți Repere",
+          "description": "Redăm pe ambele și le suprapunem pentru a expune orice adăugiri sau ștergeri în roșu."
+        }
+      ]
     },
     {
-      "type": "compare_visual_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Perfect pentru contracte și dovezi",
-      "content": "Avocații și designerii folosesc instrumentul nostru vizual pentru a se asigura că nu au fost introduse modificări neautorizate într-un document."
+      "content": "Avocații și designerii folosesc instrumentul nostru vizual pentru a se asigura că nu au fost introduse modificări neautorizate într-un document.",
+      "badgeText": "Legal Ready"
     },
     {
-      "type": "compare_visual_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Compararea documentelor confidențiale",
-      "content": "Compararea contractelor sensibile NDA? Instrumentul nostru este 100% local. Documentele nu ating niciodată serverele noastre."
+      "content": "Compararea contractelor sensibile NDA? Instrumentul nostru este 100% local. Documentele nu ating niciodată serverele noastre.",
+      "badgeText": "Zero încărcări"
     },
     {
-      "type": "compare_visual_performance",
+      "type": "lt_performance",
       "title": "Redare diferență în timp real",
-      "content": "Generați diferențe vizuale instantaneu în browser-ul dvs. datorită redării canvas accelerate de hardware."
+      "content": "Generați diferențe vizuale instantaneu în browser-ul dvs. datorită redării canvas accelerate de hardware.",
+      "badgeText": "GPU accelerat"
     }
   ],
   "faqs": [

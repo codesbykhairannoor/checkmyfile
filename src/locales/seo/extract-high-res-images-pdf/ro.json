@@ -14,31 +14,50 @@
     "0",
     "Încărcări"
   ],
+  "supportCenter": "Centru de suport",
+  "faqTitle": "Întrebări frecvente",
   "sections": [
     {
-      "type": "extract_highres_hero_features",
+      "type": "protect_hero_features",
       "title": "Obțineți calitatea imaginii originale",
-      "content": "Nu utilizați instrumente de captură de ecran care strica rezoluția. Instrumentul nostru caută în binarul PDF și extrage fișierele imagine brute, originale."
+      "content": "Nu utilizați instrumente de captură de ecran care strica rezoluția. Instrumentul nostru caută în binarul PDF și extrage fișierele imagine brute, originale.",
+      "badgeText": "Export fără pierderi"
     },
     {
-      "type": "extract_highres_how_to_steps",
+      "type": "lt_extract_images_how_to_steps",
       "title": "Cum se extrage imagini",
-      "content": "Selectați un PDF. Îl scanăm pentru JPEG și PNG-uri încorporate și le ambalăm pe toate într-un fișier ZIP ordonat pentru tine."
+      "badgeText": "Export rapid",
+      "steps": [
+        {
+          "title": "Adăugați PDF",
+          "description": "Selectați un fișier PDF cu imagini încorporate."
+        },
+        {
+          "title": "Scanează binar",
+          "description": "Scanăm fișierul pentru JPEG și PNG offline."
+        },
+        {
+          "title": "Descărcați ZIP",
+          "description": "Împachetați toate imaginile extrase într-o arhivă ZIP îngrijită."
+        }
+      ]
     },
     {
-      "type": "extract_highres_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Cel mai bun instrument de extragere a imaginilor",
-      "content": "Perfect pentru designeri, editori și studenți care trebuie să refolosească materiale de înaltă calitate blocate într-un PDF."
+      "content": "Perfect pentru designeri, editori și studenți care trebuie să refolosească materiale de înaltă calitate blocate într-un PDF.",
+      "badgeText": "Calitate Pro"
     },
     {
-      "type": "extract_highres_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Extragerea activelor private",
       "content": "Nu vă furăm imaginile. Extragerea are loc în întregime pe propriul computer."
     },
     {
-      "type": "extract_highres_performance",
+      "type": "lt_performance",
       "title": "Export fulgerător",
-      "content": "Extrageți sute de imagini de înaltă rezoluție în câteva secunde fără a aștepta încărcarea masivă a fișierului."
+      "content": "Extrageți sute de imagini de înaltă rezoluție în câteva secunde fără a aștepta încărcarea masivă a fișierului.",
+      "badgeText": "Extracție instantanee"
     }
   ],
   "faqs": [

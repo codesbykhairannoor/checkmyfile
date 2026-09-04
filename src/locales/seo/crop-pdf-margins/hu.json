@@ -14,31 +14,52 @@
     "0",
     "Látencia"
   ],
+  "supportCenter": "Támogatási Központ",
+  "faqTitle": "Gyakran Ismételt Kérdések",
   "sections": [
     {
-      "type": "crop_margins_hero_features",
+      "type": "merge_hero_features",
       "title": "Miért vágja le a PDF-margókat?",
-      "content": "Sok tudományos dolgozat és e-könyv hatalmas fehér margókkal rendelkezik. Levágásuk nagyobb és könnyebben olvashatóvá teszi a szöveget a kisebb képernyőkön."
+      "content": "Sok tudományos dolgozat és e-könyv hatalmas fehér margókkal rendelkezik. Levágásuk nagyobb és könnyebben olvashatóvá teszi a szöveget a kisebb képernyőkön.",
+      "badgeText": "Precíziós vágás"
     },
     {
-      "type": "crop_margins_how_to_steps",
+      "type": "lt_crop_margins_how_to_steps",
       "title": "Hogyan vágjunk margót",
-      "content": "Töltse fel a fájlt, határozza meg a határolókeretet a fogantyúk húzásával, és nyomja meg a Kivágás gombot. A folyamat teljesen privát."
+      "badgeText": "Gyors útmutató",
+      "steps": [
+        {
+          "title": "Fájl feltöltése",
+          "description": "Dobja a PDF-fájlt a böngésző homokozójába."
+        },
+        {
+          "title": "Állítsa be a margókat",
+          "description": "Határozza meg a határolókeretet a fogantyúk húzásával."
+        },
+        {
+          "title": "PDF vágása",
+          "description": "Nyomja meg a Vágás gombot, és azonnal töltse le a vágott fájlt."
+        }
+      ]
     },
     {
-      "type": "crop_margins_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Biztonságos margó eltávolítása",
-      "content": "Nem kell feltölteni érzékeny PDF fájljait pusztán a szóközök eltávolításához. WebAssembly motorunk megteszi ezt az Ön böngészőjében."
+      "content": "Nem kell feltölteni érzékeny PDF fájljait pusztán a szóközök eltávolításához. WebAssembly motorunk megteszi ezt az Ön böngészőjében.",
+      "subTitle": "Nulla feltöltés házirend",
+      "subContent": "A fájlok soha nem hagyják el az eszközt."
     },
     {
-      "type": "crop_margins_privacy_security",
+      "type": "lt_privacy_security",
       "title": "100% offline vágás",
-      "content": "A fájlok soha nem hagyják el a számítógépet. Ideális bizalmas jogi vagy egészségügyi dokumentumokhoz."
+      "content": "A fájlok soha nem hagyják el a számítógépet. Ideális bizalmas jogi vagy egészségügyi dokumentumokhoz.",
+      "badgeText": "Offline kész"
     },
     {
-      "type": "crop_margins_performance",
+      "type": "lt_performance",
       "title": "Azonnali PDF-kivágás",
-      "content": "Vágjon ki egy 500 oldalas könyvet ezredmásodpercek alatt anélkül, hogy megvárná a szerver feltöltését vagy letöltését."
+      "content": "Vágjon ki egy 500 oldalas könyvet ezredmásodpercek alatt anélkül, hogy megvárná a szerver feltöltését vagy letöltését.",
+      "badgeText": "Villámgyors"
     }
   ],
   "faqs": [

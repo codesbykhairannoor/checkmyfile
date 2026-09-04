@@ -14,31 +14,52 @@
     "0",
     "Latensi"
   ],
+  "supportCenter": "Pusat Dukungan",
+  "faqTitle": "Pertanyaan yang Sering Diajukan",
   "sections": [
     {
-      "type": "crop_margins_hero_features",
+      "type": "merge_hero_features",
       "title": "Mengapa Memotong Margin PDF?",
-      "content": "Banyak makalah akademis dan eBook memiliki margin putih yang besar. Memotongnya akan membuat teks lebih besar dan lebih mudah dibaca di layar yang lebih kecil."
+      "content": "Banyak makalah akademis dan eBook memiliki margin putih yang besar. Memotongnya akan membuat teks lebih besar dan lebih mudah dibaca di layar yang lebih kecil.",
+      "badgeText": "Pemangkasan Presisi"
     },
     {
-      "type": "crop_margins_how_to_steps",
+      "type": "lt_crop_margins_how_to_steps",
       "title": "Cara Memangkas Margin",
-      "content": "Unggah file Anda, tentukan kotak pembatas dengan menyeret pegangannya, dan tekan potong. Prosesnya sepenuhnya bersifat pribadi."
+      "badgeText": "Panduan Cepat",
+      "steps": [
+        {
+          "title": "Unggah Berkas",
+          "description": "Letakkan PDF Anda ke kotak pasir browser."
+        },
+        {
+          "title": "Tetapkan Margin",
+          "description": "Tentukan kotak pembatas dengan menyeret pegangannya."
+        },
+        {
+          "title": "Pangkas PDF",
+          "description": "Tekan potong dan unduh file yang telah dipotong secara instan."
+        }
+      ]
     },
     {
-      "type": "crop_margins_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Penghapusan Margin Aman",
-      "content": "Tidak perlu mengunggah PDF sensitif Anda hanya untuk menghapus beberapa spasi. Mesin WebAssembly kami melakukannya di browser Anda."
+      "content": "Tidak perlu mengunggah PDF sensitif Anda hanya untuk menghapus beberapa spasi. Mesin WebAssembly kami melakukannya di browser Anda.",
+      "subTitle": "Kebijakan Nol Unggahan",
+      "subContent": "File Anda tidak pernah meninggalkan perangkat Anda."
     },
     {
-      "type": "crop_margins_privacy_security",
+      "type": "lt_privacy_security",
       "title": "100% Pemangkasan Offline",
-      "content": "File Anda tidak pernah meninggalkan komputer Anda. Sempurna untuk dokumen hukum atau medis rahasia."
+      "content": "File Anda tidak pernah meninggalkan komputer Anda. Sempurna untuk dokumen hukum atau medis rahasia.",
+      "badgeText": "Offline Siap"
     },
     {
-      "type": "crop_margins_kinerja",
+      "type": "lt_performance",
       "title": "Pemangkasan PDF Instan",
-      "content": "Pangkas buku setebal 500 halaman dalam milidetik tanpa menunggu unggahan atau unduhan server."
+      "content": "Pangkas buku setebal 500 halaman dalam milidetik tanpa menunggu unggahan atau unduhan server.",
+      "badgeText": "Secepat Kilat"
     }
   ],
   "faqs": [

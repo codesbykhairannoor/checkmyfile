@@ -14,31 +14,52 @@
     "0",
     "Advertenties"
   ],
+  "supportCenter": "Ondersteuningscentrum",
+  "faqTitle": "Veelgestelde vragen",
   "sections": [
     {
-      "type": "grayscale_print_hero_features",
+      "type": "compress_hero_features",
       "title": "Bespaar dure printerinkt",
-      "content": "Gekleurde inkt is duur. Converteer uw PDF's naar grijswaarden voordat u ze afdrukt, zodat u geld en middelen kunt besparen."
+      "content": "Gekleurde inkt is duur. Converteer uw PDF's naar grijswaarden voordat u ze afdrukt, zodat u geld en middelen kunt besparen.",
+      "badgeText": "Inktbesparing"
     },
     {
-      "type": "grayscale_print_how_to_steps",
+      "type": "lt_grayscale_how_to_steps",
       "title": "Hoe u een PDF zwart-wit maakt",
-      "content": "Plaats uw bestand gewoon in de doos. Onze lokale tool verwijdert onmiddellijk alle kleuren en geeft u een perfect afdrukbare grijswaarden-PDF."
+      "badgeText": "Eenvoudige stappen",
+      "steps": [
+        {
+          "title": "Bestand neerzetten",
+          "description": "Selecteer de gekleurde PDF die u wilt afdrukken."
+        },
+        {
+          "title": "Filter toepassen",
+          "description": "Onze lokale tool verwijdert onmiddellijk alle kleuren."
+        },
+        {
+          "title": "Grijswaarden downloaden",
+          "description": "Ontvang een perfect afdrukbare zwart-wit PDF."
+        }
+      ]
     },
     {
-      "type": "grayscale_print_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Beste zwart-wit PDF-converter",
-      "content": "Converteer gekleurde tekst, afbeeldingen en achtergronden naar grijstinten zonder de leesbaarheid te verliezen."
+      "content": "Converteer gekleurde tekst, afbeeldingen en achtergronden naar grijstinten zonder de leesbaarheid te verliezen.",
+      "subTitle": "Hoge betrouwbaarheid",
+      "subContent": "Behoudt de beeldscherpte in zwart-wit.",
+      "badgeText": "Perfecte afdrukken"
     },
     {
-      "type": "grayscale_print_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Privé grijswaardenconversie",
       "content": "Uw documenten worden geconverteerd in het geheugen van uw eigen apparaat. Wij zien uw bestanden nooit."
     },
     {
-      "type": "grayscale_print_performance",
+      "type": "lt_performance",
       "title": "Bliksemsnelle verwerking",
-      "content": "Omdat we uw bestand niet naar een cloudserver uploaden, vindt de grijswaardenconversie vrijwel onmiddellijk plaats."
+      "content": "Omdat we uw bestand niet naar een cloudserver uploaden, vindt de grijswaardenconversie vrijwel onmiddellijk plaats.",
+      "badgeText": "Geen latentie"
     }
   ],
   "faqs": [

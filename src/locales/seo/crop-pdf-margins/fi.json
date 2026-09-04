@@ -1,58 +1,79 @@
 {
-  "title": "Crop PDF Margins — Trim White Spaces Online",
-  "h1": "Crop White Margins from PDF Pages",
-  "description": "Remove annoying white margins from your PDF documents for a better reading experience on mobile devices and e-readers. 100% free and local.",
-  "buttonText": "Select PDF",
+  "title": "Rajaa PDF-marginaalit — leikkaa valkoisia välilyöntejä verkossa",
+  "h1": "Rajaa valkoisia marginaaleja PDF-sivuilta",
+  "description": "Poista ärsyttävät valkoiset marginaalit PDF-dokumenteistasi parantaaksesi lukukokemusta mobiililaitteissa ja e-lukijoissa. 100% ilmainen ja paikallinen.",
+  "buttonText": "Valitse PDF",
   "badges": [
-    "Precision Cropping",
-    "No Server Upload",
-    "Fast"
+    "Tarkkuusrajaus",
+    "Ei palvelimen latausta",
+    "Nopeasti"
   ],
   "stats": [
-    "100%",
-    "Local",
+    "100 %",
+    "Paikallinen",
     "0",
-    "Latency"
+    "Latenssi"
   ],
+  "supportCenter": "Tukikeskus",
+  "faqTitle": "Usein kysytyt kysymykset",
   "sections": [
     {
-      "type": "crop_margins_hero_features",
-      "title": "Why Crop PDF Margins?",
-      "content": "Many academic papers and ebooks have huge white margins. Cropping them makes text larger and easier to read on smaller screens."
+      "type": "merge_hero_features",
+      "title": "Miksi rajata PDF-reunuksia?",
+      "content": "Monissa akateemisissa papereissa ja e-kirjoissa on valtavat valkoiset marginaalit. Niiden rajaaminen tekee tekstistä suuremman ja helpommin luettavan pienemmillä näytöillä.",
+      "badgeText": "Tarkkuusrajaus"
     },
     {
-      "type": "crop_margins_how_to_steps",
-      "title": "How to Crop Margins",
-      "content": "Upload your file, define the bounding box by dragging the handles, and hit crop. The process is completely private."
+      "type": "lt_crop_margins_how_to_steps",
+      "title": "Marginaalien rajaaminen",
+      "badgeText": "Pikaopas",
+      "steps": [
+        {
+          "title": "Lataa tiedosto",
+          "description": "Pudota PDF-tiedosto selaimen hiekkalaatikkoon."
+        },
+        {
+          "title": "Aseta marginaalit",
+          "description": "Määritä rajoitusruutu vetämällä kahvoista."
+        },
+        {
+          "title": "Rajaa PDF",
+          "description": "Napsauta rajaa ja lataa leikattu tiedosto välittömästi."
+        }
+      ]
     },
     {
-      "type": "crop_margins_geo_targeting",
-      "title": "Secure Margin Removal",
-      "content": "No need to upload your sensitive PDFs just to remove some whitespace. Our WebAssembly engine does it in your browser."
+      "type": "lt_geo_targeting",
+      "title": "Suojattu marginaalin poisto",
+      "content": "Sinun ei tarvitse ladata arkaluontoisia PDF-tiedostojasi vain välilyönnin poistamiseksi. WebAssembly-moottorimme tekee sen selaimessasi.",
+      "subTitle": "Nolla latauskäytäntö",
+      "subContent": "Tiedostosi eivät koskaan poistu laitteestasi."
     },
     {
-      "type": "crop_margins_privacy_security",
-      "title": "100% Offline Cropping",
-      "content": "Your files never leave your computer. Perfect for confidential legal or medical documents."
+      "type": "lt_privacy_security",
+      "title": "100 % offline-rajaus",
+      "content": "Tiedostosi eivät koskaan poistu tietokoneeltasi. Täydellinen luottamuksellisille juridisille tai lääketieteellisille asiakirjoille.",
+      "badgeText": "Offline valmiina"
     },
     {
-      "type": "crop_margins_performance",
-      "title": "Instant PDF Trimming",
-      "content": "Trim a 500-page book in milliseconds without waiting for server uploads or downloads."
+      "type": "lt_performance",
+      "title": "Välitön PDF-leikkaus",
+      "content": "Leikkaa 500-sivuinen kirja millisekunneissa odottamatta palvelimen latauksia tai latauksia.",
+      "badgeText": "Salaman nopea"
     }
   ],
   "faqs": [
     {
-      "q": "Is this free?",
-      "a": "Yes, 100% free with no limits."
+      "q": "Onko tämä ilmainen?",
+      "a": "Kyllä, 100% ilmainen ilman rajoituksia."
     },
     {
-      "q": "Does it upload my file?",
-      "a": "No, everything is processed locally."
+      "q": "Lataako se tiedostoni?",
+      "a": "Ei, kaikki käsitellään paikallisesti."
     },
     {
-      "q": "Can I crop uneven margins?",
-      "a": "Yes, you can specify different values for top, bottom, left, and right."
+      "q": "Voinko rajata epätasaisia ​​marginaaleja?",
+      "a": "Kyllä, voit määrittää eri arvot ylä-, ala-, vasemmalle ja oikealle."
     }
   ]
 }

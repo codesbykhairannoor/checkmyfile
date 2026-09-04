@@ -14,31 +14,52 @@
     "0",
     "Iklan"
   ],
+  "supportCenter": "Pusat Sokongan",
+  "faqTitle": "Soalan Lazim",
   "sections": [
     {
-      "type": "grayscale_print_hero_features",
+      "type": "compress_hero_features",
       "title": "Jimat Dakwat Pencetak Mahal",
-      "content": "Dakwat berwarna mahal. Tukar PDF anda kepada skala kelabu sebelum mencetak untuk menjimatkan wang dan sumber."
+      "content": "Dakwat berwarna mahal. Tukar PDF anda kepada skala kelabu sebelum mencetak untuk menjimatkan wang dan sumber.",
+      "badgeText": "Penjimat Dakwat"
     },
     {
-      "type": "grayscale_print_how_to_steps",
+      "type": "lt_grayscale_how_to_steps",
       "title": "Cara Membuat PDF Hitam & Putih",
-      "content": "Hanya letakkan fail anda dalam kotak. Alat tempatan kami akan menanggalkan semua warna serta-merta dan memberi anda PDF skala kelabu yang boleh dicetak dengan sempurna."
+      "badgeText": "Langkah Mudah",
+      "steps": [
+        {
+          "title": "Jatuhkan Fail",
+          "description": "Pilih PDF berwarna yang anda ingin cetak."
+        },
+        {
+          "title": "Guna Penapis",
+          "description": "Alat tempatan kami menanggalkan semua warna dengan serta-merta."
+        },
+        {
+          "title": "Muat turun Skala Kelabu",
+          "description": "Dapatkan PDF hitam putih yang boleh dicetak dengan sempurna."
+        }
+      ]
     },
     {
-      "type": "grayscale_print_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Penukar PDF B&W Terbaik",
-      "content": "Tukar teks berwarna, imej dan latar belakang kepada warna kelabu tanpa kehilangan kebolehbacaan."
+      "content": "Tukar teks berwarna, imej dan latar belakang kepada warna kelabu tanpa kehilangan kebolehbacaan.",
+      "subTitle": "Kesetiaan Tinggi",
+      "subContent": "Mengekalkan ketajaman imej dalam B&W.",
+      "badgeText": "Cetakan Sempurna"
     },
     {
-      "type": "grayscale_print_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Penukaran Skala Kelabu Persendirian",
       "content": "Dokumen anda ditukar dalam memori peranti anda sendiri. Kami tidak pernah melihat fail anda."
     },
     {
-      "type": "grayscale_print_performance",
+      "type": "lt_performance",
       "title": "Pemprosesan Sepantas Kilat",
-      "content": "Oleh kerana kami tidak memuat naik fail anda ke pelayan awan, penukaran skala kelabu berlaku hampir serta-merta."
+      "content": "Oleh kerana kami tidak memuat naik fail anda ke pelayan awan, penukaran skala kelabu berlaku hampir serta-merta.",
+      "badgeText": "Kependaman Sifar"
     }
   ],
   "faqs": [

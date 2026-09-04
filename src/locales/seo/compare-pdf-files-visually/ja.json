@@ -14,31 +14,51 @@
     "0",
     "クラウドの利用状況"
   ],
+  "supportCenter": "サポートセンター",
+  "faqTitle": "よくある質問",
   "sections": [
     {
-      "type": "compare_visual_hero_features",
+      "type": "resize_hero_features",
       "title": "小さな変化を自動的に発見",
-      "content": "改訂された契約書や設計書の相違点を目に頼らないでください。 私たちのツールは、正確なピクセルの変化を赤色で強調表示します。"
+      "content": "改訂された契約書や設計書の相違点を目に頼らないでください。 私たちのツールは、正確なピクセルの変化を赤色で強調表示します。",
+      "badgeText": "視覚的な差分"
     },
     {
-      "type": "compare_visual_how_to_steps",
+      "type": "lt_compare_pdf_how_to_steps",
       "title": "PDF を比較する方法",
-      "content": "元の PDF と修正された PDF をアップロードします。 両方をレンダリングしてオーバーラップして、追加または削除を明らかにします。"
+      "badgeText": "比較ガイド",
+      "steps": [
+        {
+          "title": "オリジナルのアップロード",
+          "description": "PDF の最初のバージョンを選択します。"
+        },
+        {
+          "title": "リビジョンのアップロード",
+          "description": "比較する 2 番目のバージョンを選択します。"
+        },
+        {
+          "title": "ハイライトを見る",
+          "description": "両方をレンダリングして重ね合わせ、追加または削除を赤色で表示します。"
+        }
+      ]
     },
     {
-      "type": "compare_visual_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "契約書や証明に最適",
-      "content": "弁護士やデザイナーは、視覚的な差分ツールを使用して、文書に不正な変更が忍び込まれていないことを確認しています。"
+      "content": "弁護士やデザイナーは、視覚的な差分ツールを使用して、文書に不正な変更が忍び込まれていないことを確認しています。",
+      "badgeText": "法的対応"
     },
     {
-      "type": "compare_visual_privacy_security",
+      "type": "lt_privacy_security",
       "title": "機密文書の比較",
-      "content": "機密性の高い NDA 契約を比較しますか? 私たちのツールは100%ローカルです。 文書が当社のサーバーにアクセスされることはありません。"
+      "content": "機密性の高い NDA 契約を比較しますか? 私たちのツールは100%ローカルです。 文書が当社のサーバーにアクセスされることはありません。",
+      "badgeText": "ゼロアップロード"
     },
     {
-      "type": "compare_visual_performance",
+      "type": "lt_performance",
       "title": "リアルタイム差分レンダリング",
-      "content": "ハードウェア アクセラレーションによるキャンバス レンダリングにより、ブラウザ内で視覚的な差分が即座に生成されます。"
+      "content": "ハードウェア アクセラレーションによるキャンバス レンダリングにより、ブラウザ内で視覚的な差分が即座に生成されます。",
+      "badgeText": "GPUアクセラレーション"
     }
   ],
   "faqs": [

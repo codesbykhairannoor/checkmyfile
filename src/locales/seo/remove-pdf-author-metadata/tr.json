@@ -14,31 +14,51 @@
     "0",
     "Ayak izleri"
   ],
+  "supportCenter": "Destek Merkezi",
+  "faqTitle": "Sıkça Sorulan Sorular",
   "sections": [
     {
-      "type": "remove_author_hero_features",
+      "type": "split_hero_features",
       "title": "Neden PDF Meta Verilerini Temizlemelisiniz?",
-      "content": "PDF'ler genellikle adınızı, şirket adınızı, işletim sistemi sürümünüzü ve oluşturulma tarihlerinizi gizlice saklar. Çevrimiçi paylaşmadan önce bunları temizleyin."
+      "content": "PDF'ler genellikle adınızı, şirket adınızı, işletim sistemi sürümünüzü ve oluşturulma tarihlerinizi gizlice saklar. Çevrimiçi paylaşmadan önce bunları temizleyin.",
+      "badgeText": "PDF'yi sterilize edin"
     },
     {
-      "type": "remove_author_how_to_steps",
+      "type": "lt_remove_metadata_how_to_steps",
       "title": "Mülkler Nasıl Sterilize Edilir",
-      "content": "Belgenizi yükleyin. Motorumuz PDF yapısını ayrıştıracak ve tüm sözlük meta veri alanlarını güvenli bir şekilde silecektir."
+      "badgeText": "3 Adımlı Kılavuz",
+      "steps": [
+        {
+          "title": "Belgeyi Yükle",
+          "description": "Temizlemek istediğiniz PDF dosyasını seçin."
+        },
+        {
+          "title": "Meta Verileri Sil",
+          "description": "Motorumuz yapıyı ayrıştırır ve gizli alanları siler."
+        },
+        {
+          "title": "Temiz PDF'yi Kaydet",
+          "description": "Anonimleştirilmiş belgeyi anında indirin."
+        }
+      ]
     },
     {
-      "type": "remove_author_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Anonimliğinizi Koruyun",
-      "content": "İhbarcıların, gazetecilerin ve sıradan kullanıcıların dijital kimliklerini sızdırmadan belgeleri paylaşabilmelerini sağlayın."
+      "content": "İhbarcıların, gazetecilerin ve sıradan kullanıcıların dijital kimliklerini sızdırmadan belgeleri paylaşabilmelerini sağlayın.",
+      "subTitle": "Tam Gizlilik",
+      "subContent": "Geride sıfır dijital ayak izi kaldı."
     },
     {
-      "type": "remove_author_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Askeri Düzeyde Sterilizasyon",
       "content": "Meta verilerin kalıcı olarak yok edilmesini sağlamak için PDF ikili yapısını tarayıcınızda yerel olarak yeniden yazıyoruz."
     },
     {
-      "type": "remove_author_performance",
+      "type": "lt_performance",
       "title": "Anında Meta Veri Silgisi",
-      "content": "Yüksek düzeyde optimize edilmiş WebAssembly çekirdeğimizi kullanarak binlerce sayfayı bir saniyeden daha kısa sürede tarayın."
+      "content": "Yüksek düzeyde optimize edilmiş WebAssembly çekirdeğimizi kullanarak binlerce sayfayı bir saniyeden daha kısa sürede tarayın.",
+      "badgeText": "WebAssembly Çekirdeği"
     }
   ],
   "faqs": [

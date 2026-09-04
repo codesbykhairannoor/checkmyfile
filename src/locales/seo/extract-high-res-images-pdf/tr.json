@@ -14,31 +14,50 @@
     "0",
     "Yüklemeler"
   ],
+  "supportCenter": "Destek Merkezi",
+  "faqTitle": "Sıkça Sorulan Sorular",
   "sections": [
     {
-      "type": "extract_highres_hero_features",
+      "type": "protect_hero_features",
       "title": "Orijinal Görüntü Kalitesini Alın",
-      "content": "Çözünürlüğü bozan ekran görüntüsü araçlarını kullanmayın. Aracımız PDF ikili dosyasını inceler ve ham, orijinal görüntü dosyalarını çıkarır."
+      "content": "Çözünürlüğü bozan ekran görüntüsü araçlarını kullanmayın. Aracımız PDF ikili dosyasını inceler ve ham, orijinal görüntü dosyalarını çıkarır.",
+      "badgeText": "Kayıpsız İhracat"
     },
     {
-      "type": "extract_highres_how_to_steps",
+      "type": "lt_extract_images_how_to_steps",
       "title": "Resimler Nasıl Çıkarılır",
-      "content": "Bir PDF seçin. Gömülü JPEG'ler ve PNG'ler için tararız ve hepsini sizin için düzgün bir ZIP dosyasında paketliyoruz."
+      "badgeText": "Hızlı İhracat",
+      "steps": [
+        {
+          "title": "PDF ekle",
+          "description": "Gömülü görseller içeren bir PDF dosyası seçin."
+        },
+        {
+          "title": "İkili Tarama",
+          "description": "Dosyayı çevrimdışı olarak JPEG ve PNG'ler için tarıyoruz."
+        },
+        {
+          "title": "ZIP'i indirin",
+          "description": "Çıkarılan tüm görüntüleri düzgün bir ZIP arşivinde paketleyin."
+        }
+      ]
     },
     {
-      "type": "extract_highres_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "En İyi Görüntü Çıkarma Aracı",
-      "content": "PDF'nin içinde kilitli olan yüksek kaliteli varlıkları yeniden kullanması gereken tasarımcılar, yayıncılar ve öğrenciler için mükemmeldir."
+      "content": "PDF'nin içinde kilitli olan yüksek kaliteli varlıkları yeniden kullanması gereken tasarımcılar, yayıncılar ve öğrenciler için mükemmeldir.",
+      "badgeText": "Profesyonel Kalite"
     },
     {
-      "type": "extract_highres_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Özel Varlık Çıkarımı",
       "content": "Resimlerinizi çalmıyoruz. Çıkarma tamamen kendi bilgisayarınızda gerçekleşir."
     },
     {
-      "type": "extract_highres_performance",
+      "type": "lt_performance",
       "title": "Çarpıcı Hızlı İhracat",
-      "content": "Yüzlerce yüksek çözünürlüklü görüntüyü devasa bir dosya yüklemesini beklemeden saniyeler içinde çıkarın."
+      "content": "Yüzlerce yüksek çözünürlüklü görüntüyü devasa bir dosya yüklemesini beklemeden saniyeler içinde çıkarın.",
+      "badgeText": "Anında Ekstraksiyon"
     }
   ],
   "faqs": [

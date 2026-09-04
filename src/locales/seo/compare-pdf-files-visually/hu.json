@@ -14,31 +14,51 @@
     "0",
     "Felhőhasználat"
   ],
+  "supportCenter": "Támogatási Központ",
+  "faqTitle": "Gyakran Ismételt Kérdések",
   "sections": [
     {
-      "type": "compare_visual_hero_features",
+      "type": "resize_hero_features",
       "title": "Automatikusan észreveszi az apró változásokat",
-      "content": "Ne hagyatkozzon a szemére, hogy különbségeket találjon a felülvizsgált szerződésekben vagy tervekben. Eszközünk a pontos pixelváltozásokat pirossal kiemeli."
+      "content": "Ne hagyatkozzon a szemére, hogy különbségeket találjon a felülvizsgált szerződésekben vagy tervekben. Eszközünk a pontos pixelváltozásokat pirossal kiemeli.",
+      "badgeText": "Vizuális Diff"
     },
     {
-      "type": "compare_visual_how_to_steps",
+      "type": "lt_compare_pdf_how_to_steps",
       "title": "PDF-ek összehasonlítása",
-      "content": "Töltse fel az eredeti PDF-et és a javított PDF-et. Mindkettőt megjelenítjük, és átfedjük őket, hogy megjelenjen az esetleges kiegészítések vagy törlések."
+      "badgeText": "Útmutató összehasonlítása",
+      "steps": [
+        {
+          "title": "Eredeti feltöltése",
+          "description": "Válassza ki a PDF első verzióját."
+        },
+        {
+          "title": "Verzió feltöltése",
+          "description": "Válassza ki a második verziót az összehasonlításhoz."
+        },
+        {
+          "title": "Kiemelt elemek megtekintése",
+          "description": "Mindkettőt megjelenítjük, és átfedjük őket, hogy az esetleges kiegészítések vagy törlések piros színnel jelenjenek meg."
+        }
+      ]
     },
     {
-      "type": "compare_visual_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Tökéletes szerződésekhez és igazolásokhoz",
-      "content": "Az ügyvédek és a tervezők vizuális különbségi eszközünket használják annak biztosítására, hogy a dokumentumba ne kerüljön jogosulatlan módosítás."
+      "content": "Az ügyvédek és a tervezők vizuális különbségi eszközünket használják annak biztosítására, hogy a dokumentumba ne kerüljön jogosulatlan módosítás.",
+      "badgeText": "Jogi kész"
     },
     {
-      "type": "compare_visual_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Bizalmas dokumentumok összehasonlítása",
-      "content": "Az érzékeny NDA-szerződések összehasonlítása? Eszközünk 100%-ban helyi. A dokumentumok soha nem érintik a szervereinket."
+      "content": "Az érzékeny NDA-szerződések összehasonlítása? Eszközünk 100%-ban helyi. A dokumentumok soha nem érintik a szervereinket.",
+      "badgeText": "Nulla feltöltés"
     },
     {
-      "type": "compare_visual_performance",
+      "type": "lt_performance",
       "title": "Valós idejű Diff Rendering",
-      "content": "A hardveres gyorsítású vászonmegjelenítésnek köszönhetően azonnal generálhat vizuális eltéréseket a böngészőben."
+      "content": "A hardveres gyorsítású vászonmegjelenítésnek köszönhetően azonnal generálhat vizuális eltéréseket a böngészőben.",
+      "badgeText": "GPU gyorsított"
     }
   ],
   "faqs": [

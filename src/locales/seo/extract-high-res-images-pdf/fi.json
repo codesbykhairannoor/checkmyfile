@@ -14,31 +14,50 @@
     "0",
     "Lataukset"
   ],
+  "supportCenter": "Tukikeskus",
+  "faqTitle": "Usein kysytyt kysymykset",
   "sections": [
     {
-      "type": "extract_highres_hero_features",
+      "type": "protect_hero_features",
       "title": "Hanki alkuperäinen kuvanlaatu",
-      "content": "Älä käytä kuvakaappaustyökaluja, jotka pilaavat resoluution. Työkalumme kaivautuu PDF-binaariin ja purkaa alkuperäiset raakakuvatiedostot."
+      "content": "Älä käytä kuvakaappaustyökaluja, jotka pilaavat resoluution. Työkalumme kaivautuu PDF-binaariin ja purkaa alkuperäiset raakakuvatiedostot.",
+      "badgeText": "Häviötön vienti"
     },
     {
-      "type": "extract_highres_how_to_steps",
+      "type": "lt_extract_images_how_to_steps",
       "title": "Kuinka purkaa kuvia",
-      "content": "Valitse PDF. Etsimme siitä upotettuja JPEG- ja PNG-tiedostoja ja pakkaamme ne kaikki siistiin ZIP-tiedostoon."
+      "badgeText": "Nopea vienti",
+      "steps": [
+        {
+          "title": "Lisää PDF",
+          "description": "Valitse PDF-tiedosto, jossa on upotettuja kuvia."
+        },
+        {
+          "title": "Skannaa binaari",
+          "description": "Skannaamme tiedostosta JPEG- ja PNG-tiedostoja offline-tilassa."
+        },
+        {
+          "title": "Lataa ZIP",
+          "description": "Pakkaa kaikki poimitut kuvat siistiin ZIP-arkistoon."
+        }
+      ]
     },
     {
-      "type": "extract_highres_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Paras kuvanpoistotyökalu",
-      "content": "Täydellinen suunnittelijoille, julkaisijoille ja opiskelijoille, jotka tarvitsevat uudelleen PDF-tiedostoon lukittua korkealaatuista materiaalia."
+      "content": "Täydellinen suunnittelijoille, julkaisijoille ja opiskelijoille, jotka tarvitsevat uudelleen PDF-tiedostoon lukittua korkealaatuista materiaalia.",
+      "badgeText": "Pro Laatu"
     },
     {
-      "type": "extract_highres_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Yksityisen omaisuuden louhinta",
       "content": "Emme varasta kuviasi. Poiminta tapahtuu kokonaan omalla tietokoneellasi."
     },
     {
-      "type": "extract_highres_performance",
+      "type": "lt_performance",
       "title": "Loistavan nopea vienti",
-      "content": "Pura satoja korkearesoluutioisia kuvia sekunneissa odottamatta massiivista tiedostojen latausta."
+      "content": "Pura satoja korkearesoluutioisia kuvia sekunneissa odottamatta massiivista tiedostojen latausta.",
+      "badgeText": "Välitön poisto"
     }
   ],
   "faqs": [

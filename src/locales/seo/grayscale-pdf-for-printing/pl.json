@@ -14,31 +14,52 @@
     "0",
     "Reklamy"
   ],
+  "supportCenter": "Centrum wsparcia",
+  "faqTitle": "Często zadawane pytania",
   "sections": [
     {
-      "type": "grayscale_print_hero_features",
+      "type": "compress_hero_features",
       "title": "Oszczędzaj drogi atrament do drukarki",
-      "content": "Atrament kolorowy jest drogi. Konwertuj pliki PDF na skalę szarości przed drukowaniem, aby zaoszczędzić pieniądze i zasoby."
+      "content": "Atrament kolorowy jest drogi. Konwertuj pliki PDF na skalę szarości przed drukowaniem, aby zaoszczędzić pieniądze i zasoby.",
+      "badgeText": "Oszczędzanie atramentu"
     },
     {
-      "type": "grayscale_print_how_to_steps",
+      "type": "lt_grayscale_how_to_steps",
       "title": "Jak zrobić czarno-biały plik PDF",
-      "content": "Po prostu upuść plik w skrzynce. Nasze lokalne narzędzie natychmiast usunie wszystkie kolory i wyświetli idealnie nadający się do wydrukowania plik PDF w skali szarości."
+      "badgeText": "Proste kroki",
+      "steps": [
+        {
+          "title": "Upuść plik",
+          "description": "Wybierz kolorowy plik PDF, który chcesz wydrukować."
+        },
+        {
+          "title": "Zastosuj filtr",
+          "description": "Nasze lokalne narzędzie natychmiast usuwa wszystkie kolory."
+        },
+        {
+          "title": "Pobierz Skala szarości",
+          "description": "Uzyskaj doskonale nadający się do wydruku czarno-biały plik PDF."
+        }
+      ]
     },
     {
-      "type": "grayscale_print_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Najlepszy konwerter czarno-białych plików PDF",
-      "content": "Konwertuj kolorowy tekst, obrazy i tła na odcienie szarości bez utraty czytelności."
+      "content": "Konwertuj kolorowy tekst, obrazy i tła na odcienie szarości bez utraty czytelności.",
+      "subTitle": "Wysoka wierność",
+      "subContent": "Zachowuje ostrość obrazu w trybie czarno-białym.",
+      "badgeText": "Doskonałe wydruki"
     },
     {
-      "type": "grayscale_print_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Prywatna konwersja skali szarości",
       "content": "Twoje dokumenty są konwertowane w pamięci Twojego urządzenia. Nigdy nie widzimy Twoich plików."
     },
     {
-      "type": "grayscale_print_performance",
+      "type": "lt_performance",
       "title": "Błyskawiczne przetwarzanie",
-      "content": "Ponieważ nie przesyłamy Twojego pliku na serwer w chmurze, konwersja skali szarości następuje niemal natychmiast."
+      "content": "Ponieważ nie przesyłamy Twojego pliku na serwer w chmurze, konwersja skali szarości następuje niemal natychmiast.",
+      "badgeText": "Zerowe opóźnienie"
     }
   ],
   "faqs": [

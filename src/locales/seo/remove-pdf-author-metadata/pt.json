@@ -14,31 +14,51 @@
     "0",
     "Pegadas"
   ],
+  "supportCenter": "Centro de suporte",
+  "faqTitle": "Perguntas frequentes",
   "sections": [
     {
-      "type": "remove_author_hero_features",
+      "type": "split_hero_features",
       "title": "Por que limpar metadados de PDF?",
-      "content": "Os PDFs geralmente armazenam secretamente seu nome, nome da empresa, versão do sistema operacional e datas de criação. Limpe-os antes de compartilhar online."
+      "content": "Os PDFs geralmente armazenam secretamente seu nome, nome da empresa, versão do sistema operacional e datas de criação. Limpe-os antes de compartilhar online.",
+      "badgeText": "Higienizar PDF"
     },
     {
-      "type": "remove_author_how_to_steps",
+      "type": "lt_remove_metadata_how_to_steps",
       "title": "Como higienizar propriedades",
-      "content": "Carregue seu documento. Nosso mecanismo analisará a estrutura do PDF e apagará com segurança todos os campos de metadados do dicionário."
+      "badgeText": "Guia de 3 etapas",
+      "steps": [
+        {
+          "title": "Carregar documento",
+          "description": "Selecione o arquivo PDF que deseja limpar."
+        },
+        {
+          "title": "Apagar metadados",
+          "description": "Nosso mecanismo analisa a estrutura e apaga campos ocultos."
+        },
+        {
+          "title": "Salvar PDF limpo",
+          "description": "Baixe o documento anonimizado instantaneamente."
+        }
+      ]
     },
     {
-      "type": "remove_author_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Proteja seu anonimato",
-      "content": "Garanta que denunciantes, jornalistas e usuários comuns possam compartilhar documentos sem vazar sua identidade digital."
+      "content": "Garanta que denunciantes, jornalistas e usuários comuns possam compartilhar documentos sem vazar sua identidade digital.",
+      "subTitle": "Privacidade Total",
+      "subContent": "Zero pegadas digitais deixadas para trás."
     },
     {
-      "type": "remove_author_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Sanitização de nível militar",
       "content": "Reescrevemos a estrutura binária do PDF localmente no seu navegador para garantir que os metadados sejam destruídos permanentemente."
     },
     {
-      "type": "remove_author_performance",
+      "type": "lt_performance",
       "title": "Apagador Instantâneo de Metadados",
-      "content": "Limpe milhares de páginas em menos de um segundo usando nosso núcleo WebAssembly altamente otimizado."
+      "content": "Limpe milhares de páginas em menos de um segundo usando nosso núcleo WebAssembly altamente otimizado.",
+      "badgeText": "Núcleo WebAssembly"
     }
   ],
   "faqs": [

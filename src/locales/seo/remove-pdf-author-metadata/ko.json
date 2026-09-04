@@ -14,31 +14,51 @@
     "0",
     "발자취"
   ],
+  "supportCenter": "지원 센터",
+  "faqTitle": "자주 묻는 질문",
   "sections": [
     {
-      "type": "remove_author_hero_features",
+      "type": "split_hero_features",
       "title": "PDF 메타데이터를 정리하는 이유는 무엇입니까?",
-      "content": "PDF에는 이름, 회사 이름, OS 버전 및 생성 날짜가 비밀리에 저장되는 경우가 많습니다. 온라인으로 공유하기 전에 청소하십시오."
+      "content": "PDF에는 이름, 회사 이름, OS 버전 및 생성 날짜가 비밀리에 저장되는 경우가 많습니다. 온라인으로 공유하기 전에 청소하십시오.",
+      "badgeText": "PDF를 삭제하세요"
     },
     {
-      "type": "remove_author_how_to_steps",
+      "type": "lt_remove_metadata_how_to_steps",
       "title": "속성을 정리하는 방법",
-      "content": "문서를 업로드하세요. 우리 엔진은 PDF 구조를 구문 분석하고 모든 사전 메타데이터 필드를 안전하게 지웁니다."
+      "badgeText": "3단계 가이드",
+      "steps": [
+        {
+          "title": "문서 업로드",
+          "description": "정리하려는 PDF 파일을 선택하십시오."
+        },
+        {
+          "title": "메타데이터 삭제",
+          "description": "우리 엔진은 구조를 분석하고 숨겨진 필드를 지웁니다."
+        },
+        {
+          "title": "깨끗한 PDF 저장",
+          "description": "익명화된 문서를 즉시 다운로드하세요."
+        }
+      ]
     },
     {
-      "type": "remove_author_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "귀하의 익명성을 보호하세요",
-      "content": "내부 고발자, 언론인 및 일반 사용자가 디지털 신원을 유출하지 않고 문서를 공유할 수 있도록 보장합니다."
+      "content": "내부 고발자, 언론인 및 일반 사용자가 디지털 신원을 유출하지 않고 문서를 공유할 수 있도록 보장합니다.",
+      "subTitle": "완전한 개인정보 보호",
+      "subContent": "디지털 발자국이 전혀 남지 않습니다."
     },
     {
-      "type": "remove_author_privacy_security",
+      "type": "lt_privacy_security",
       "title": "군용 위생 처리",
       "content": "메타데이터가 영구적으로 삭제되도록 브라우저에서 로컬로 PDF 바이너리 구조를 다시 작성합니다."
     },
     {
-      "type": "remove_author_performance",
+      "type": "lt_performance",
       "title": "인스턴트 메타데이터 지우개",
-      "content": "고도로 최적화된 WebAssembly 코어를 사용하여 1초 이내에 수천 페이지를 스크러빙합니다."
+      "content": "고도로 최적화된 WebAssembly 코어를 사용하여 1초 이내에 수천 페이지를 스크러빙합니다.",
+      "badgeText": "웹어셈블리 코어"
     }
   ],
   "faqs": [

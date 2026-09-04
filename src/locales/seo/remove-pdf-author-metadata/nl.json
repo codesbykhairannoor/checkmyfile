@@ -14,31 +14,51 @@
     "0",
     "Voetafdrukken"
   ],
+  "supportCenter": "Ondersteuningscentrum",
+  "faqTitle": "Veelgestelde vragen",
   "sections": [
     {
-      "type": "remove_author_hero_features",
+      "type": "split_hero_features",
       "title": "Waarom PDF-metagegevens opschonen?",
-      "content": "PDF's slaan vaak in het geheim uw naam, bedrijfsnaam, besturingssysteemversie en aanmaakdatums op. Maak ze schoon voordat u ze online deelt."
+      "content": "PDF's slaan vaak in het geheim uw naam, bedrijfsnaam, besturingssysteemversie en aanmaakdatums op. Maak ze schoon voordat u ze online deelt.",
+      "badgeText": "PDF opschonen"
     },
     {
-      "type": "remove_author_how_to_steps",
+      "type": "lt_remove_metadata_how_to_steps",
       "title": "Hoe eigendommen te ontsmetten",
-      "content": "Upload uw document. Onze engine parseert de PDF-structuur en wist op veilige wijze alle metagegevensvelden van het woordenboek."
+      "badgeText": "Handleiding in 3 stappen",
+      "steps": [
+        {
+          "title": "Document uploaden",
+          "description": "Selecteer het PDF-bestand dat u wilt opschonen."
+        },
+        {
+          "title": "Metagegevens wissen",
+          "description": "Onze engine ontleedt de structuur en wist verborgen velden."
+        },
+        {
+          "title": "Sla schone PDF op",
+          "description": "Download het geanonimiseerde document onmiddellijk."
+        }
+      ]
     },
     {
-      "type": "remove_author_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Bescherm uw anonimiteit",
-      "content": "Zorg ervoor dat klokkenluiders, journalisten en gewone gebruikers documenten kunnen delen zonder hun digitale identiteit te lekken."
+      "content": "Zorg ervoor dat klokkenluiders, journalisten en gewone gebruikers documenten kunnen delen zonder hun digitale identiteit te lekken.",
+      "subTitle": "Totale privacy",
+      "subContent": "Geen digitale voetafdrukken achtergelaten."
     },
     {
-      "type": "remove_author_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Sanering van militaire kwaliteit",
       "content": "We herschrijven de binaire PDF-structuur lokaal in uw browser om ervoor te zorgen dat de metagegevens permanent worden vernietigd."
     },
     {
-      "type": "remove_author_performance",
+      "type": "lt_performance",
       "title": "Directe metadata-gum",
-      "content": "Scrub duizenden pagina's in minder dan een seconde met behulp van onze sterk geoptimaliseerde WebAssembly-kern."
+      "content": "Scrub duizenden pagina's in minder dan een seconde met behulp van onze sterk geoptimaliseerde WebAssembly-kern.",
+      "badgeText": "WebAssembly-kern"
     }
   ],
   "faqs": [

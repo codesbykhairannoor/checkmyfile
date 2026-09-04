@@ -14,31 +14,50 @@
     "0",
     "Caricamenti"
   ],
+  "supportCenter": "Centro di supporto",
+  "faqTitle": "Domande frequenti",
   "sections": [
     {
-      "type": "extract_highres_hero_features",
+      "type": "protect_hero_features",
       "title": "Ottieni la qualità dell'immagine originale",
-      "content": "Non utilizzare strumenti di screenshot che rovinano la risoluzione. Il nostro strumento analizza il binario PDF ed estrae i file di immagine originali e grezzi."
+      "content": "Non utilizzare strumenti di screenshot che rovinano la risoluzione. Il nostro strumento analizza il binario PDF ed estrae i file di immagine originali e grezzi.",
+      "badgeText": "Esportazione senza perdite"
     },
     {
-      "type": "extract_highres_how_to_steps",
+      "type": "lt_extract_images_how_to_steps",
       "title": "Come estrarre le immagini",
-      "content": "Seleziona un PDF. Lo scansioniamo per cercare JPEG e PNG incorporati e li confezioniamo tutti in un file ZIP ordinato per te."
+      "badgeText": "Esportazione veloce",
+      "steps": [
+        {
+          "title": "Aggiungi PDF",
+          "description": "Seleziona un file PDF con immagini incorporate."
+        },
+        {
+          "title": "Scansione binaria",
+          "description": "Eseguiamo la scansione del file per JPEG e PNG offline."
+        },
+        {
+          "title": "Scarica ZIP",
+          "description": "Raccogli tutte le immagini estratte in un archivio ZIP ordinato."
+        }
+      ]
     },
     {
-      "type": "extract_highres_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Il miglior strumento di estrazione delle immagini",
-      "content": "Perfetto per designer, editori e studenti che hanno bisogno di riutilizzare risorse di alta qualità bloccate in un PDF."
+      "content": "Perfetto per designer, editori e studenti che hanno bisogno di riutilizzare risorse di alta qualità bloccate in un PDF.",
+      "badgeText": "Qualità professionale"
     },
     {
-      "type": "extract_highres_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Estrazione di beni privati",
       "content": "Non rubiamo le tue immagini. L'estrazione avviene interamente sul tuo computer."
     },
     {
-      "type": "extract_highres_performance",
+      "type": "lt_performance",
       "title": "Esportazione incredibilmente veloce",
-      "content": "Estrai centinaia di immagini ad alta risoluzione in pochi secondi senza attendere un massiccio caricamento di file."
+      "content": "Estrai centinaia di immagini ad alta risoluzione in pochi secondi senza attendere un massiccio caricamento di file.",
+      "badgeText": "Estrazione istantanea"
     }
   ],
   "faqs": [

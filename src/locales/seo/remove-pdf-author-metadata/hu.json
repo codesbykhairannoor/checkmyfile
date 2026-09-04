@@ -14,31 +14,51 @@
     "0",
     "Lábnyomok"
   ],
+  "supportCenter": "Támogatási Központ",
+  "faqTitle": "Gyakran Ismételt Kérdések",
   "sections": [
     {
-      "type": "remove_author_hero_features",
+      "type": "split_hero_features",
       "title": "Miért kell tisztítani a PDF metaadatokat?",
-      "content": "A PDF-fájlok gyakran titokban tárolják az Ön nevét, cégnevét, operációs rendszer verzióját és létrehozásának dátumát. Az online megosztás előtt tisztítsa meg őket."
+      "content": "A PDF-fájlok gyakran titokban tárolják az Ön nevét, cégnevét, operációs rendszer verzióját és létrehozásának dátumát. Az online megosztás előtt tisztítsa meg őket.",
+      "badgeText": "PDF fertőtlenítése"
     },
     {
-      "type": "remove_author_how_to_steps",
+      "type": "lt_remove_metadata_how_to_steps",
       "title": "Az ingatlanok fertőtlenítése",
-      "content": "Töltse fel dokumentumát. Motorunk elemzi a PDF szerkezetét, és biztonságosan törli a szótár összes metaadatmezőjét."
+      "badgeText": "3 lépéses útmutató",
+      "steps": [
+        {
+          "title": "Dokumentum feltöltése",
+          "description": "Válassza ki a tisztítani kívánt PDF-fájlt."
+        },
+        {
+          "title": "Metaadatok törlése",
+          "description": "Motorunk elemzi a szerkezetet és törli a rejtett mezőket."
+        },
+        {
+          "title": "Tiszta PDF mentése",
+          "description": "Azonnal töltse le az anonimizált dokumentumot."
+        }
+      ]
     },
     {
-      "type": "remove_author_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Védje névtelenségét",
-      "content": "Gondoskodjon arról, hogy a visszaélést bejelentő személyek, újságírók és hétköznapi felhasználók megoszthassanak dokumentumokat anélkül, hogy kiszivárogtatnák digitális személyazonosságukat."
+      "content": "Gondoskodjon arról, hogy a visszaélést bejelentő személyek, újságírók és hétköznapi felhasználók megoszthassanak dokumentumokat anélkül, hogy kiszivárogtatnák digitális személyazonosságukat.",
+      "subTitle": "Teljes adatvédelem",
+      "subContent": "Nulla digitális lábnyom maradt hátra."
     },
     {
-      "type": "remove_author_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Katonai fokozatú fertőtlenítés",
       "content": "A PDF bináris szerkezetét helyileg átírjuk a böngészőben, hogy biztosítsuk a metaadatok végleges megsemmisülését."
     },
     {
-      "type": "remove_author_performance",
+      "type": "lt_performance",
       "title": "Azonnali metaadat-radír",
-      "content": "A rendkívül optimalizált WebAssembly mag segítségével kevesebb mint egy másodperc alatt lapozhat át több ezer oldalt."
+      "content": "A rendkívül optimalizált WebAssembly mag segítségével kevesebb mint egy másodperc alatt lapozhat át több ezer oldalt.",
+      "badgeText": "WebAssembly Core"
     }
   ],
   "faqs": [

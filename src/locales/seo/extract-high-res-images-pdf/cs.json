@@ -14,31 +14,50 @@
     "0",
     "Nahrávání"
   ],
+  "supportCenter": "Centrum podpory",
+  "faqTitle": "Často kladené otázky",
   "sections": [
     {
-      "type": "extract_highres_hero_features",
+      "type": "protect_hero_features",
       "title": "Získejte původní kvalitu obrazu",
-      "content": "Nepoužívejte nástroje pro snímání obrazovky, které ničí rozlišení. Náš nástroj se ponoří do binárního souboru PDF a extrahuje nezpracované, původní obrazové soubory."
+      "content": "Nepoužívejte nástroje pro snímání obrazovky, které ničí rozlišení. Náš nástroj se ponoří do binárního souboru PDF a extrahuje nezpracované, původní obrazové soubory.",
+      "badgeText": "Bezztrátový export"
     },
     {
-      "type": "extract_highres_how_to_steps",
+      "type": "lt_extract_images_how_to_steps",
       "title": "Jak extrahovat obrázky",
-      "content": "Vyberte soubor PDF. Naskenujeme v něm vložené soubory JPEG a PNG a všechny je zabalíme do úhledného souboru ZIP."
+      "badgeText": "Rychlý export",
+      "steps": [
+        {
+          "title": "Přidat PDF",
+          "description": "Vyberte soubor PDF s vloženými obrázky."
+        },
+        {
+          "title": "Skenování binárně",
+          "description": "Soubor skenujeme na JPEG a PNG offline."
+        },
+        {
+          "title": "Stáhnout ZIP",
+          "description": "Zabalte všechny extrahované obrázky do úhledného archivu ZIP."
+        }
+      ]
     },
     {
-      "type": "extract_highres_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Nejlepší nástroj pro extrakci obrázků",
-      "content": "Ideální pro návrháře, vydavatele a studenty, kteří potřebují znovu použít vysoce kvalitní podklady uzamčené v PDF."
+      "content": "Ideální pro návrháře, vydavatele a studenty, kteří potřebují znovu použít vysoce kvalitní podklady uzamčené v PDF.",
+      "badgeText": "Profesionální kvalita"
     },
     {
-      "type": "extract_highres_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Extrakce soukromého majetku",
       "content": "Vaše obrázky nekrademe. Extrakce probíhá výhradně na vašem vlastním počítači."
     },
     {
-      "type": "extract_highres_performance",
+      "type": "lt_performance",
       "title": "Bleskově rychlý export",
-      "content": "Extrahujte stovky obrázků ve vysokém rozlišení během několika sekund bez čekání na masivní nahrání souboru."
+      "content": "Extrahujte stovky obrázků ve vysokém rozlišení během několika sekund bez čekání na masivní nahrání souboru.",
+      "badgeText": "Okamžitá extrakce"
     }
   ],
   "faqs": [

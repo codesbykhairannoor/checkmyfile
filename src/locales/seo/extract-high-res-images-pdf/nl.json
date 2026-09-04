@@ -14,31 +14,50 @@
     "0",
     "Uploads"
   ],
+  "supportCenter": "Ondersteuningscentrum",
+  "faqTitle": "Veelgestelde vragen",
   "sections": [
     {
-      "type": "extract_highres_hero_features",
+      "type": "protect_hero_features",
       "title": "Krijg originele beeldkwaliteit",
-      "content": "Gebruik geen screenshot-tools die de resolutie verpesten. Onze tool graaft in het binaire PDF-bestand en extraheert de onbewerkte, originele afbeeldingsbestanden."
+      "content": "Gebruik geen screenshot-tools die de resolutie verpesten. Onze tool graaft in het binaire PDF-bestand en extraheert de onbewerkte, originele afbeeldingsbestanden.",
+      "badgeText": "Verliesloos exporteren"
     },
     {
-      "type": "extract_highres_how_to_steps",
+      "type": "lt_extract_images_how_to_steps",
       "title": "Hoe u afbeeldingen kunt extraheren",
-      "content": "Selecteer een PDF. We scannen het op ingesloten JPEG's en PNG's en verpakken ze allemaal in een netjes ZIP-bestand voor u."
+      "badgeText": "Snelle export",
+      "steps": [
+        {
+          "title": "PDF toevoegen",
+          "description": "Selecteer een PDF-bestand met ingesloten afbeeldingen."
+        },
+        {
+          "title": "Binair scannen",
+          "description": "We scannen het bestand offline op JPEG's en PNG's."
+        },
+        {
+          "title": "ZIP downloaden",
+          "description": "Verpak alle geëxtraheerde afbeeldingen in een netjes ZIP-archief."
+        }
+      ]
     },
     {
-      "type": "extract_highres_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Beste hulpmiddel voor het extraheren van afbeeldingen",
-      "content": "Ideaal voor ontwerpers, uitgevers en studenten die hoogwaardige materialen die in een PDF zijn opgeslagen, moeten hergebruiken."
+      "content": "Ideaal voor ontwerpers, uitgevers en studenten die hoogwaardige materialen die in een PDF zijn opgeslagen, moeten hergebruiken.",
+      "badgeText": "Professionele kwaliteit"
     },
     {
-      "type": "extract_highres_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Extractie van particuliere activa",
       "content": "Wij stelen uw afbeeldingen niet. Het uitpakken gebeurt volledig op uw eigen computer."
     },
     {
-      "type": "extract_highres_performance",
+      "type": "lt_performance",
       "title": "Razendsnelle export",
-      "content": "Extraheer binnen enkele seconden honderden afbeeldingen met hoge resolutie zonder te wachten op een enorme bestandsupload."
+      "content": "Extraheer binnen enkele seconden honderden afbeeldingen met hoge resolutie zonder te wachten op een enorme bestandsupload.",
+      "badgeText": "Onmiddellijke extractie"
     }
   ],
   "faqs": [

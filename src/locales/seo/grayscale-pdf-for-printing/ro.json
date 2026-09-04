@@ -14,31 +14,52 @@
     "0",
     "Reclame"
   ],
+  "supportCenter": "Centru de suport",
+  "faqTitle": "Întrebări frecvente",
   "sections": [
     {
-      "type": "grayscale_print_hero_features",
+      "type": "compress_hero_features",
       "title": "Economisiți cerneală scumpă pentru imprimantă",
-      "content": "Cerneala colorată este scumpă. Transformați fișierele PDF în tonuri de gri înainte de a le imprima pentru a economisi bani și resurse."
+      "content": "Cerneala colorată este scumpă. Transformați fișierele PDF în tonuri de gri înainte de a le imprima pentru a economisi bani și resurse.",
+      "badgeText": "Economizor de cerneală"
     },
     {
-      "type": "grayscale_print_how_to_steps",
+      "type": "lt_grayscale_how_to_steps",
       "title": "Cum să faci PDF alb-negru",
-      "content": "Doar aruncați fișierul în cutie. Instrumentul nostru local va elimina instantaneu toate culorile și vă va oferi un PDF în tonuri de gri perfect imprimabil."
+      "badgeText": "Pași simpli",
+      "steps": [
+        {
+          "title": "Aruncă fișierul",
+          "description": "Selectați PDF-ul colorat pe care doriți să-l imprimați."
+        },
+        {
+          "title": "Aplicați filtrul",
+          "description": "Instrumentul nostru local elimină instantaneu toate culorile."
+        },
+        {
+          "title": "Descărcați Grayscale",
+          "description": "Obțineți un PDF alb-negru perfect imprimabil."
+        }
+      ]
     },
     {
-      "type": "grayscale_print_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Cel mai bun convertor PDF alb-n",
-      "content": "Convertiți textul colorat, imaginile și fundalurile în nuanțe de gri fără a pierde lizibilitatea."
+      "content": "Convertiți textul colorat, imaginile și fundalurile în nuanțe de gri fără a pierde lizibilitatea.",
+      "subTitle": "Fidelitate înaltă",
+      "subContent": "Menține claritatea imaginii în alb și negru.",
+      "badgeText": "Printuri perfecte"
     },
     {
-      "type": "grayscale_print_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Conversie privată în tonuri de gri",
       "content": "Documentele dumneavoastră sunt convertite în memoria propriului dispozitiv. Nu vă vedem niciodată fișierele."
     },
     {
-      "type": "grayscale_print_performance",
+      "type": "lt_performance",
       "title": "Procesare rapidă",
-      "content": "Deoarece nu vă încărcăm fișierul pe un server cloud, conversia în tonuri de gri are loc aproape instantaneu."
+      "content": "Deoarece nu vă încărcăm fișierul pe un server cloud, conversia în tonuri de gri are loc aproape instantaneu.",
+      "badgeText": "Latență zero"
     }
   ],
   "faqs": [

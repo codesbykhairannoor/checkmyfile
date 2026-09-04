@@ -14,31 +14,52 @@
     "0",
     "Latency"
   ],
+  "supportCenter": "Support Center",
+  "faqTitle": "Frequently Asked Questions",
   "sections": [
     {
-      "type": "crop_margins_hero_features",
+      "type": "merge_hero_features",
       "title": "Why Crop PDF Margins?",
-      "content": "Many academic papers and ebooks have huge white margins. Cropping them makes text larger and easier to read on smaller screens."
+      "content": "Many academic papers and ebooks have huge white margins. Cropping them makes text larger and easier to read on smaller screens.",
+      "badgeText": "Precision Cropping"
     },
     {
-      "type": "crop_margins_how_to_steps",
+      "type": "lt_crop_margins_how_to_steps",
       "title": "How to Crop Margins",
-      "content": "Upload your file, define the bounding box by dragging the handles, and hit crop. The process is completely private."
+      "badgeText": "Quick Guide",
+      "steps": [
+        {
+          "title": "Upload File",
+          "description": "Drop your PDF into the browser sandbox."
+        },
+        {
+          "title": "Set Margins",
+          "description": "Define the bounding box by dragging the handles."
+        },
+        {
+          "title": "Crop PDF",
+          "description": "Hit crop and download the trimmed file instantly."
+        }
+      ]
     },
     {
-      "type": "crop_margins_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Secure Margin Removal",
-      "content": "No need to upload your sensitive PDFs just to remove some whitespace. Our WebAssembly engine does it in your browser."
+      "content": "No need to upload your sensitive PDFs just to remove some whitespace. Our WebAssembly engine does it in your browser.",
+      "subTitle": "Zero Upload Policy",
+      "subContent": "Your files never leave your device."
     },
     {
-      "type": "crop_margins_privacy_security",
+      "type": "lt_privacy_security",
       "title": "100% Offline Cropping",
-      "content": "Your files never leave your computer. Perfect for confidential legal or medical documents."
+      "content": "Your files never leave your computer. Perfect for confidential legal or medical documents.",
+      "badgeText": "Offline Ready"
     },
     {
-      "type": "crop_margins_performance",
+      "type": "lt_performance",
       "title": "Instant PDF Trimming",
-      "content": "Trim a 500-page book in milliseconds without waiting for server uploads or downloads."
+      "content": "Trim a 500-page book in milliseconds without waiting for server uploads or downloads.",
+      "badgeText": "Lightning Fast"
     }
   ],
   "faqs": [

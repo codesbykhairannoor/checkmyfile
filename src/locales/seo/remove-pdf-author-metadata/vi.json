@@ -14,31 +14,51 @@
     "0",
     "Dấu chân"
   ],
+  "supportCenter": "Trung tâm hỗ trợ",
+  "faqTitle": "Câu hỏi thường gặp",
   "sections": [
     {
-      "type": "remove_author_hero_features",
+      "type": "split_hero_features",
       "title": "Tại sao phải làm sạch siêu dữ liệu PDF?",
-      "content": "Các tệp PDF thường lưu trữ bí mật tên, tên công ty, phiên bản hệ điều hành và ngày tạo của bạn. Làm sạch chúng trước khi chia sẻ trực tuyến."
+      "content": "Các tệp PDF thường lưu trữ bí mật tên, tên công ty, phiên bản hệ điều hành và ngày tạo của bạn. Làm sạch chúng trước khi chia sẻ trực tuyến.",
+      "badgeText": "Vệ sinh PDF"
     },
     {
-      "type": "remove_author_how_to_steps",
+      "type": "lt_remove_metadata_how_to_steps",
       "title": "Cách vệ sinh tài sản",
-      "content": "Tải lên tài liệu của bạn. Công cụ của chúng tôi sẽ phân tích cú pháp cấu trúc PDF và xóa tất cả các trường siêu dữ liệu của từ điển một cách an toàn."
+      "badgeText": "Hướng dẫn 3 bước",
+      "steps": [
+        {
+          "title": "Tải tài liệu lên",
+          "description": "Chọn tệp PDF bạn muốn làm sạch."
+        },
+        {
+          "title": "Xóa siêu dữ liệu",
+          "description": "Công cụ của chúng tôi phân tích cú pháp cấu trúc và xóa các trường ẩn."
+        },
+        {
+          "title": "Lưu PDF sạch",
+          "description": "Tải xuống tài liệu ẩn danh ngay lập tức."
+        }
+      ]
     },
     {
-      "type": "remove_author_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Bảo vệ danh tính của bạn",
-      "content": "Đảm bảo người tố cáo, nhà báo và người dùng hàng ngày có thể chia sẻ tài liệu mà không bị rò rỉ danh tính kỹ thuật số của họ."
+      "content": "Đảm bảo người tố cáo, nhà báo và người dùng hàng ngày có thể chia sẻ tài liệu mà không bị rò rỉ danh tính kỹ thuật số của họ.",
+      "subTitle": "Tổng quyền riêng tư",
+      "subContent": "Không có dấu chân kỹ thuật số nào bị bỏ lại phía sau."
     },
     {
-      "type": "remove_author_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Vệ sinh cấp quân sự",
       "content": "Chúng tôi viết lại cấu trúc nhị phân PDF cục bộ trong trình duyệt của bạn để đảm bảo siêu dữ liệu bị hủy vĩnh viễn."
     },
     {
-      "type": "remove_author_performance",
+      "type": "lt_performance",
       "title": "Công cụ xóa siêu dữ liệu tức thì",
-      "content": "Quét hàng nghìn trang trong chưa đầy một giây bằng cách sử dụng lõi WebAssembly được tối ưu hóa cao của chúng tôi."
+      "content": "Quét hàng nghìn trang trong chưa đầy một giây bằng cách sử dụng lõi WebAssembly được tối ưu hóa cao của chúng tôi.",
+      "badgeText": "Lõi WebAssembly"
     }
   ],
   "faqs": [

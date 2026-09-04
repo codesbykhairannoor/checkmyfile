@@ -14,31 +14,51 @@
     "0",
     "Footprints"
   ],
+  "supportCenter": "Support Center",
+  "faqTitle": "Frequently Asked Questions",
   "sections": [
     {
-      "type": "remove_author_hero_features",
+      "type": "split_hero_features",
       "title": "Why Clean PDF Metadata?",
-      "content": "PDFs often secretly store your name, company name, OS version, and creation dates. Clean them before sharing online."
+      "content": "PDFs often secretly store your name, company name, OS version, and creation dates. Clean them before sharing online.",
+      "badgeText": "Sanitize PDF"
     },
     {
-      "type": "remove_author_how_to_steps",
+      "type": "lt_remove_metadata_how_to_steps",
       "title": "How to Sanitize Properties",
-      "content": "Upload your document. Our engine will parse the PDF structure and securely erase all dictionary metadata fields."
+      "badgeText": "3-Step Guide",
+      "steps": [
+        {
+          "title": "Upload Document",
+          "description": "Select the PDF file you want to clean."
+        },
+        {
+          "title": "Erase Metadata",
+          "description": "Our engine parses the structure and erases hidden fields."
+        },
+        {
+          "title": "Save Clean PDF",
+          "description": "Download the anonymized document instantly."
+        }
+      ]
     },
     {
-      "type": "remove_author_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Protect Your Anonymity",
-      "content": "Ensure whistleblowers, journalists, and everyday users can share documents without leaking their digital identity."
+      "content": "Ensure whistleblowers, journalists, and everyday users can share documents without leaking their digital identity.",
+      "subTitle": "Total Privacy",
+      "subContent": "Zero digital footprints left behind."
     },
     {
-      "type": "remove_author_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Military Grade Sanitization",
       "content": "We rewrite the PDF binary structure locally in your browser to ensure the metadata is permanently destroyed."
     },
     {
-      "type": "remove_author_performance",
+      "type": "lt_performance",
       "title": "Instant Metadata Eraser",
-      "content": "Scrub thousands of pages in less than a second using our highly optimized WebAssembly core."
+      "content": "Scrub thousands of pages in less than a second using our highly optimized WebAssembly core.",
+      "badgeText": "WebAssembly Core"
     }
   ],
   "faqs": [

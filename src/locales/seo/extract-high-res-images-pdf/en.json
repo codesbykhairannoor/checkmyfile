@@ -14,31 +14,50 @@
     "0",
     "Uploads"
   ],
+  "supportCenter": "Support Center",
+  "faqTitle": "Frequently Asked Questions",
   "sections": [
     {
-      "type": "extract_highres_hero_features",
+      "type": "protect_hero_features",
       "title": "Get Original Image Quality",
-      "content": "Don't use screenshot tools that ruin resolution. Our tool digs into the PDF binary and extracts the raw, original image files."
+      "content": "Don't use screenshot tools that ruin resolution. Our tool digs into the PDF binary and extracts the raw, original image files.",
+      "badgeText": "Lossless Export"
     },
     {
-      "type": "extract_highres_how_to_steps",
+      "type": "lt_extract_images_how_to_steps",
       "title": "How to Extract Pictures",
-      "content": "Select a PDF. We scan it for embedded JPEGs and PNGs, and package them all into a neat ZIP file for you."
+      "badgeText": "Fast Export",
+      "steps": [
+        {
+          "title": "Add PDF",
+          "description": "Select a PDF file with embedded images."
+        },
+        {
+          "title": "Scan Binary",
+          "description": "We scan the file for JPEGs and PNGs offline."
+        },
+        {
+          "title": "Download ZIP",
+          "description": "Package all extracted images into a neat ZIP archive."
+        }
+      ]
     },
     {
-      "type": "extract_highres_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Best Image Extraction Tool",
-      "content": "Perfect for designers, publishers, and students who need to reuse high-quality assets locked inside a PDF."
+      "content": "Perfect for designers, publishers, and students who need to reuse high-quality assets locked inside a PDF.",
+      "badgeText": "Pro Quality"
     },
     {
-      "type": "extract_highres_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Private Asset Extraction",
       "content": "We don't steal your images. The extraction happens entirely on your own computer."
     },
     {
-      "type": "extract_highres_performance",
+      "type": "lt_performance",
       "title": "Blazing Fast Export",
-      "content": "Extract hundreds of high-res images in seconds without waiting for a massive file upload."
+      "content": "Extract hundreds of high-res images in seconds without waiting for a massive file upload.",
+      "badgeText": "Instant Extraction"
     }
   ],
   "faqs": [

@@ -14,31 +14,51 @@
     "0",
     "Používanie cloudu"
   ],
+  "supportCenter": "Centrum podpory",
+  "faqTitle": "Často kladené otázky",
   "sections": [
     {
-      "type": "compare_visual_hero_features",
+      "type": "resize_hero_features",
       "title": "Spoznávajte drobné zmeny automaticky",
-      "content": "Nespoliehajte sa na svoje oči, že nájdete rozdiely v revidovaných zmluvách alebo dizajnoch. Náš nástroj zvýrazňuje presné zmeny pixelov červenou farbou."
+      "content": "Nespoliehajte sa na svoje oči, že nájdete rozdiely v revidovaných zmluvách alebo dizajnoch. Náš nástroj zvýrazňuje presné zmeny pixelov červenou farbou.",
+      "badgeText": "Vizuálny rozdiel"
     },
     {
-      "type": "compare_visual_how_to_steps",
+      "type": "lt_compare_pdf_how_to_steps",
       "title": "Ako porovnávať súbory PDF",
-      "content": "Nahrajte pôvodný súbor PDF a upravený súbor PDF. Vykreslíme obe a prekryjeme ich, aby sme odhalili akékoľvek pridania alebo vymazania."
+      "badgeText": "Sprievodca porovnaním",
+      "steps": [
+        {
+          "title": "Nahrať originál",
+          "description": "Vyberte prvú verziu vášho PDF."
+        },
+        {
+          "title": "Nahrať revíziu",
+          "description": "Vyberte druhú verziu na porovnanie."
+        },
+        {
+          "title": "Zobraziť výber",
+          "description": "Obe vykreslíme a prekryjeme, aby sa všetky pridania alebo vymazania zobrazili červenou farbou."
+        }
+      ]
     },
     {
-      "type": "compare_visual_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Ideálne pre zmluvy a dôkazy",
-      "content": "Právnici a dizajnéri používajú náš vizuálny diff nástroj, aby zabezpečili, že do dokumentu nebudú vkradnuté žiadne neoprávnené zmeny."
+      "content": "Právnici a dizajnéri používajú náš vizuálny diff nástroj, aby zabezpečili, že do dokumentu nebudú vkradnuté žiadne neoprávnené zmeny.",
+      "badgeText": "Právne pripravené"
     },
     {
-      "type": "compare_visual_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Porovnanie dôverných dokumentov",
-      "content": "Porovnanie citlivých zmlúv o NDA? Náš nástroj je 100% lokálny. Dokumenty sa nikdy nedotknú našich serverov."
+      "content": "Porovnanie citlivých zmlúv o NDA? Náš nástroj je 100% lokálny. Dokumenty sa nikdy nedotknú našich serverov.",
+      "badgeText": "Nulové nahrávanie"
     },
     {
-      "type": "compare_visual_performance",
+      "type": "lt_performance",
       "title": "Vykresľovanie rozdielov v reálnom čase",
-      "content": "Okamžite generujte vizuálne rozdiely vo svojom prehliadači vďaka hardvérovo akcelerovanému vykresľovaniu plátna."
+      "content": "Okamžite generujte vizuálne rozdiely vo svojom prehliadači vďaka hardvérovo akcelerovanému vykresľovaniu plátna.",
+      "badgeText": "Akcelerované GPU"
     }
   ],
   "faqs": [

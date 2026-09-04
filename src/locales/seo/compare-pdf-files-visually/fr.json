@@ -14,31 +14,51 @@
     "0",
     "Utilisation du cloud"
   ],
+  "supportCenter": "Centre d'assistance",
+  "faqTitle": "Foire aux questions",
   "sections": [
     {
-      "type": "compare_visual_hero_features",
+      "type": "resize_hero_features",
       "title": "Repérez automatiquement les petits changements",
-      "content": "Ne comptez pas sur vos yeux pour trouver des différences dans les contrats ou les conceptions révisés. Notre outil met en évidence les changements exacts de pixels en rouge."
+      "content": "Ne comptez pas sur vos yeux pour trouver des différences dans les contrats ou les conceptions révisés. Notre outil met en évidence les changements exacts de pixels en rouge.",
+      "badgeText": "Différence visuelle"
     },
     {
-      "type": "compare_visual_how_to_steps",
+      "type": "lt_compare_pdf_how_to_steps",
       "title": "Comment comparer des PDF",
-      "content": "Téléchargez le PDF original et le PDF révisé. Nous allons rendre les deux et les superposer pour exposer les ajouts ou suppressions."
+      "badgeText": "Comparer le guide",
+      "steps": [
+        {
+          "title": "Télécharger l'original",
+          "description": "Sélectionnez la première version de votre PDF."
+        },
+        {
+          "title": "Télécharger la révision",
+          "description": "Sélectionnez la deuxième version à comparer."
+        },
+        {
+          "title": "Voir les faits saillants",
+          "description": "Nous rendons les deux et les superposons pour exposer les ajouts ou suppressions en rouge."
+        }
+      ]
     },
     {
-      "type": "compare_visual_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Parfait pour les contrats et les preuves",
-      "content": "Les avocats et les concepteurs utilisent notre outil de comparaison visuelle pour garantir qu'aucune modification non autorisée n'a été introduite dans un document."
+      "content": "Les avocats et les concepteurs utilisent notre outil de comparaison visuelle pour garantir qu'aucune modification non autorisée n'a été introduite dans un document.",
+      "badgeText": "Prêt pour le droit"
     },
     {
-      "type": "compare_visual_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Comparaison de documents confidentiels",
-      "content": "Vous comparez les contrats NDA sensibles ? Notre outil est 100% local. Les documents ne touchent jamais nos serveurs."
+      "content": "Vous comparez les contrats NDA sensibles ? Notre outil est 100% local. Les documents ne touchent jamais nos serveurs.",
+      "badgeText": "Zéro téléchargement"
     },
     {
-      "type": "compare_visual_performance",
+      "type": "lt_performance",
       "title": "Rendu différentiel en temps réel",
-      "content": "Générez instantanément des différences visuelles dans votre navigateur grâce au rendu de canevas accéléré par le matériel."
+      "content": "Générez instantanément des différences visuelles dans votre navigateur grâce au rendu de canevas accéléré par le matériel.",
+      "badgeText": "GPU accéléré"
     }
   ],
   "faqs": [

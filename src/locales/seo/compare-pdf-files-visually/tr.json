@@ -14,31 +14,51 @@
     "0",
     "Bulut Kullanımı"
   ],
+  "supportCenter": "Destek Merkezi",
+  "faqTitle": "Sıkça Sorulan Sorular",
   "sections": [
     {
-      "type": "compare_visual_hero_features",
+      "type": "resize_hero_features",
       "title": "Küçük Değişiklikleri Otomatik Olarak Tespit Edin",
-      "content": "Revize edilen sözleşmeler veya tasarımlardaki farklılıkları bulmak için gözlerinize güvenmeyin. Aracımız tam piksel değişikliklerini kırmızı renkte vurgular."
+      "content": "Revize edilen sözleşmeler veya tasarımlardaki farklılıkları bulmak için gözlerinize güvenmeyin. Aracımız tam piksel değişikliklerini kırmızı renkte vurgular.",
+      "badgeText": "Görsel Fark"
     },
     {
-      "type": "compare_visual_how_to_steps",
+      "type": "lt_compare_pdf_how_to_steps",
       "title": "PDF'ler Nasıl Karşılaştırılır",
-      "content": "Orijinal PDF'yi ve revize edilmiş PDF'yi yükleyin. Her ikisini de oluşturacağız ve herhangi bir ekleme veya silme işlemini ortaya çıkarmak için bunları üst üste getireceğiz."
+      "badgeText": "Karşılaştırma Kılavuzu",
+      "steps": [
+        {
+          "title": "Orijinali Yükle",
+          "description": "PDF'nizin ilk sürümünü seçin."
+        },
+        {
+          "title": "Revizyonu Yükle",
+          "description": "Karşılaştırılacak ikinci sürümü seçin."
+        },
+        {
+          "title": "Öne Çıkanları Görüntüle",
+          "description": "Eklemeleri veya silmeleri kırmızı renkte göstermek için her ikisini de oluşturuyoruz ve üst üste getiriyoruz."
+        }
+      ]
     },
     {
-      "type": "compare_visual_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Sözleşmeler ve Kanıtlar için Mükemmel",
-      "content": "Avukatlar ve tasarımcılar, bir belgeye yetkisiz değişiklik yapılmadığından emin olmak için görsel fark aracımızı kullanır."
+      "content": "Avukatlar ve tasarımcılar, bir belgeye yetkisiz değişiklik yapılmadığından emin olmak için görsel fark aracımızı kullanır.",
+      "badgeText": "Yasal Hazır"
     },
     {
-      "type": "compare_visual_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Gizli Belge Karşılaştırması",
-      "content": "Hassas NDA sözleşmelerini mi karşılaştırıyorsunuz? Aracımız %100 yerlidir. Belgeler hiçbir zaman sunucularımıza dokunmaz."
+      "content": "Hassas NDA sözleşmelerini mi karşılaştırıyorsunuz? Aracımız %100 yerlidir. Belgeler hiçbir zaman sunucularımıza dokunmaz.",
+      "badgeText": "Sıfır Yükleme"
     },
     {
-      "type": "compare_visual_performance",
+      "type": "lt_performance",
       "title": "Gerçek Zamanlı Fark Oluşturma",
-      "content": "Donanımla hızlandırılmış tuval oluşturma sayesinde tarayıcınızda anında görsel farklılıklar oluşturun."
+      "content": "Donanımla hızlandırılmış tuval oluşturma sayesinde tarayıcınızda anında görsel farklılıklar oluşturun.",
+      "badgeText": "GPU Hızlandırılmış"
     }
   ],
   "faqs": [

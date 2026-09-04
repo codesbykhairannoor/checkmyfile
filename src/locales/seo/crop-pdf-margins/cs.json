@@ -14,31 +14,52 @@
     "0",
     "Latence"
   ],
+  "supportCenter": "Centrum podpory",
+  "faqTitle": "Často kladené otázky",
   "sections": [
     {
-      "type": "crop_margins_hero_features",
+      "type": "merge_hero_features",
       "title": "Proč oříznout okraje PDF?",
-      "content": "Mnoho akademických prací a elektronických knih má obrovské bílé okraje. Jejich oříznutím se text zvětší a bude snáze čitelný na menších obrazovkách."
+      "content": "Mnoho akademických prací a elektronických knih má obrovské bílé okraje. Jejich oříznutím se text zvětší a bude snáze čitelný na menších obrazovkách.",
+      "badgeText": "Přesné oříznutí"
     },
     {
-      "type": "crop_margins_how_to_steps",
+      "type": "lt_crop_margins_how_to_steps",
       "title": "Jak oříznout okraje",
-      "content": "Nahrajte soubor, definujte ohraničovací rámeček přetažením úchytů a stiskněte oříznout. Proces je zcela soukromý."
+      "badgeText": "Rychlý průvodce",
+      "steps": [
+        {
+          "title": "Nahrát soubor",
+          "description": "Přetáhněte PDF do karantény prohlížeče."
+        },
+        {
+          "title": "Nastavit okraje",
+          "description": "Definujte ohraničovací rámeček přetažením úchytů."
+        },
+        {
+          "title": "Oříznout PDF",
+          "description": "Klepněte na oříznutí a okamžitě stáhněte oříznutý soubor."
+        }
+      ]
     },
     {
-      "type": "crop_margins_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Bezpečné odstranění okrajů",
-      "content": "Není třeba nahrávat citlivé soubory PDF, abyste odstranili některé mezery. Náš modul WebAssembly to dělá ve vašem prohlížeči."
+      "content": "Není třeba nahrávat citlivé soubory PDF, abyste odstranili některé mezery. Náš modul WebAssembly to dělá ve vašem prohlížeči.",
+      "subTitle": "Zásady nulového nahrávání",
+      "subContent": "Vaše soubory nikdy neopustí vaše zařízení."
     },
     {
-      "type": "crop_margins_privacy_security",
+      "type": "lt_privacy_security",
       "title": "100% offline oříznutí",
-      "content": "Vaše soubory nikdy neopustí váš počítač. Ideální pro důvěrné právní nebo lékařské dokumenty."
+      "content": "Vaše soubory nikdy neopustí váš počítač. Ideální pro důvěrné právní nebo lékařské dokumenty.",
+      "badgeText": "Připraveno pro režim offline"
     },
     {
-      "type": "crop_margins_performance",
+      "type": "lt_performance",
       "title": "Okamžité oříznutí PDF",
-      "content": "Ořízněte 500stránkovou knihu během milisekund, aniž byste museli čekat na nahrání nebo stahování ze serveru."
+      "content": "Ořízněte 500stránkovou knihu během milisekund, aniž byste museli čekat na nahrání nebo stahování ze serveru.",
+      "badgeText": "Bleskově rychlý"
     }
   ],
   "faqs": [

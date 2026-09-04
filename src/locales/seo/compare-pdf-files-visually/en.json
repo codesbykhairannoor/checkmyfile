@@ -14,31 +14,51 @@
     "0",
     "Cloud Usage"
   ],
+  "supportCenter": "Support Center",
+  "faqTitle": "Frequently Asked Questions",
   "sections": [
     {
-      "type": "compare_visual_hero_features",
+      "type": "resize_hero_features",
       "title": "Spot Tiny Changes Automatically",
-      "content": "Don't rely on your eyes to find differences in revised contracts or designs. Our tool highlights exact pixel changes in red."
+      "content": "Don't rely on your eyes to find differences in revised contracts or designs. Our tool highlights exact pixel changes in red.",
+      "badgeText": "Visual Diff"
     },
     {
-      "type": "compare_visual_how_to_steps",
+      "type": "lt_compare_pdf_how_to_steps",
       "title": "How to Compare PDFs",
-      "content": "Upload the original PDF and the revised PDF. We'll render both and overlap them to expose any additions or deletions."
+      "badgeText": "Compare Guide",
+      "steps": [
+        {
+          "title": "Upload Original",
+          "description": "Select the first version of your PDF."
+        },
+        {
+          "title": "Upload Revision",
+          "description": "Select the second version to compare."
+        },
+        {
+          "title": "View Highlights",
+          "description": "We render both and overlap them to expose any additions or deletions in red."
+        }
+      ]
     },
     {
-      "type": "compare_visual_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Perfect for Contracts & Proofs",
-      "content": "Lawyers and designers use our visual diff tool to ensure no unauthorized changes were snuck into a document."
+      "content": "Lawyers and designers use our visual diff tool to ensure no unauthorized changes were snuck into a document.",
+      "badgeText": "Legal Ready"
     },
     {
-      "type": "compare_visual_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Confidential Document Comparison",
-      "content": "Comparing sensitive NDA contracts? Our tool is 100% local. The documents never touch our servers."
+      "content": "Comparing sensitive NDA contracts? Our tool is 100% local. The documents never touch our servers.",
+      "badgeText": "Zero Uploads"
     },
     {
-      "type": "compare_visual_performance",
+      "type": "lt_performance",
       "title": "Real-Time Diff Rendering",
-      "content": "Generate visual diffs instantly in your browser thanks to hardware-accelerated canvas rendering."
+      "content": "Generate visual diffs instantly in your browser thanks to hardware-accelerated canvas rendering.",
+      "badgeText": "GPU Accelerated"
     }
   ],
   "faqs": [

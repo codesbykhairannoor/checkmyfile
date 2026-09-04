@@ -14,31 +14,51 @@
     "0",
     "Stopy"
   ],
+  "supportCenter": "Centrum podpory",
+  "faqTitle": "Často kladené otázky",
   "sections": [
     {
-      "type": "remove_author_hero_features",
+      "type": "split_hero_features",
       "title": "Proč vyčistit metadata PDF?",
-      "content": "Soubory PDF často tajně ukládají vaše jméno, název společnosti, verzi operačního systému a data vytvoření. Před sdílením online je vyčistěte."
+      "content": "Soubory PDF často tajně ukládají vaše jméno, název společnosti, verzi operačního systému a data vytvoření. Před sdílením online je vyčistěte.",
+      "badgeText": "Dezinfikovat PDF"
     },
     {
-      "type": "remove_author_how_to_steps",
+      "type": "lt_remove_metadata_how_to_steps",
       "title": "Jak dezinfikovat vlastnosti",
-      "content": "Nahrajte dokument. Náš engine analyzuje strukturu PDF a bezpečně vymaže všechna pole metadat slovníku."
+      "badgeText": "Průvodce ve 3 krocích",
+      "steps": [
+        {
+          "title": "Nahrát dokument",
+          "description": "Vyberte soubor PDF, který chcete vyčistit."
+        },
+        {
+          "title": "Vymazat metadata",
+          "description": "Náš motor analyzuje strukturu a vymaže skrytá pole."
+        },
+        {
+          "title": "Uložit Čisté PDF",
+          "description": "Stáhněte si anonymizovaný dokument okamžitě."
+        }
+      ]
     },
     {
-      "type": "remove_author_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Chraňte svou anonymitu",
-      "content": "Zajistěte, aby informátoři, novináři a každodenní uživatelé mohli sdílet dokumenty bez úniku své digitální identity."
+      "content": "Zajistěte, aby informátoři, novináři a každodenní uživatelé mohli sdílet dokumenty bez úniku své digitální identity.",
+      "subTitle": "Úplné soukromí",
+      "subContent": "Žádné digitální stopy zanechané."
     },
     {
-      "type": "remove_author_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Sanitace na vojenské úrovni",
       "content": "Binární strukturu PDF přepíšeme lokálně ve vašem prohlížeči, abychom zajistili, že metadata budou trvale zničena."
     },
     {
-      "type": "remove_author_performance",
+      "type": "lt_performance",
       "title": "Okamžitá mazání metadat",
-      "content": "Vyčistěte tisíce stránek za méně než sekundu pomocí našeho vysoce optimalizovaného jádra WebAssembly."
+      "content": "Vyčistěte tisíce stránek za méně než sekundu pomocí našeho vysoce optimalizovaného jádra WebAssembly.",
+      "badgeText": "WebAssembly Core"
     }
   ],
   "faqs": [

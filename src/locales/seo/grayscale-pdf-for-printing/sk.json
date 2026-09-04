@@ -14,31 +14,52 @@
     "0",
     "reklamy"
   ],
+  "supportCenter": "Centrum podpory",
+  "faqTitle": "Často kladené otázky",
   "sections": [
     {
-      "type": "grayscale_print_hero_features",
+      "type": "compress_hero_features",
       "title": "Ušetrite drahý atrament do tlačiarne",
-      "content": "Farebný atrament je drahý. Pred tlačou skonvertujte súbory PDF do odtieňov sivej, aby ste ušetrili peniaze a zdroje."
+      "content": "Farebný atrament je drahý. Pred tlačou skonvertujte súbory PDF do odtieňov sivej, aby ste ušetrili peniaze a zdroje.",
+      "badgeText": "Šetrič atramentu"
     },
     {
-      "type": "grayscale_print_how_to_steps",
+      "type": "lt_grayscale_how_to_steps",
       "title": "Ako urobiť PDF čiernobiele",
-      "content": "Stačí vložiť súbor do poľa. Náš lokálny nástroj okamžite odstráni všetky farby a poskytne vám dokonale vytlačiteľné PDF v odtieňoch sivej."
+      "badgeText": "Jednoduché kroky",
+      "steps": [
+        {
+          "title": "Drop File",
+          "description": "Vyberte farebný súbor PDF, ktorý chcete vytlačiť."
+        },
+        {
+          "title": "Použiť filter",
+          "description": "Náš lokálny nástroj okamžite odstráni všetky farby."
+        },
+        {
+          "title": "Stiahnite si odtiene sivej",
+          "description": "Získajte dokonale vytlačiteľné čiernobiele PDF."
+        }
+      ]
     },
     {
-      "type": "grayscale_print_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Najlepší čiernobiely prevodník PDF",
-      "content": "Preveďte farebný text, obrázky a pozadia na odtiene sivej bez straty čitateľnosti."
+      "content": "Preveďte farebný text, obrázky a pozadia na odtiene sivej bez straty čitateľnosti.",
+      "subTitle": "Vysoká vernosť",
+      "subContent": "Zachováva ostrosť obrazu v ČB.",
+      "badgeText": "Perfektné výtlačky"
     },
     {
-      "type": "grayscale_print_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Súkromná konverzia odtieňov sivej",
       "content": "Vaše dokumenty sa skonvertujú do pamäte vášho vlastného zariadenia. Nikdy nevidíme vaše súbory."
     },
     {
-      "type": "grayscale_print_performance",
+      "type": "lt_performance",
       "title": "Bleskové spracovanie",
-      "content": "Keďže váš súbor nenahrávame na cloudový server, konverzia v odtieňoch sivej prebehne takmer okamžite."
+      "content": "Keďže váš súbor nenahrávame na cloudový server, konverzia v odtieňoch sivej prebehne takmer okamžite.",
+      "badgeText": "Nulová latencia"
     }
   ],
   "faqs": [

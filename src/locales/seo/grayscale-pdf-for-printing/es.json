@@ -14,31 +14,52 @@
     "0",
     "Anuncios"
   ],
+  "supportCenter": "Centro de soporte",
+  "faqTitle": "Preguntas frecuentes",
   "sections": [
     {
-      "type": "grayscale_print_hero_features",
+      "type": "compress_hero_features",
       "title": "Ahorre tinta costosa para la impresora",
-      "content": "La tinta de color es cara. Convierta sus archivos PDF a escala de grises antes de imprimirlos para ahorrar dinero y recursos."
+      "content": "La tinta de color es cara. Convierta sus archivos PDF a escala de grises antes de imprimirlos para ahorrar dinero y recursos.",
+      "badgeText": "Ahorro de tinta"
     },
     {
-      "type": "grayscale_print_how_to_steps",
+      "type": "lt_grayscale_how_to_steps",
       "title": "Cómo hacer PDF en blanco y negro",
-      "content": "Simplemente coloque su archivo en el cuadro. Nuestra herramienta local eliminará instantáneamente todos los colores y le brindará un PDF en escala de grises perfectamente imprimible."
+      "badgeText": "Pasos simples",
+      "steps": [
+        {
+          "title": "Soltar archivo",
+          "description": "Seleccione el PDF en color que desea imprimir."
+        },
+        {
+          "title": "Aplicar filtro",
+          "description": "Nuestra herramienta local elimina instantáneamente todos los colores."
+        },
+        {
+          "title": "Descargar escala de grises",
+          "description": "Obtenga un PDF en blanco y negro perfectamente imprimible."
+        }
+      ]
     },
     {
-      "type": "grayscale_print_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "El mejor conversor de PDF en blanco y negro",
-      "content": "Convierta texto, imágenes y fondos en color a tonos de gris sin perder legibilidad."
+      "content": "Convierta texto, imágenes y fondos en color a tonos de gris sin perder legibilidad.",
+      "subTitle": "Alta fidelidad",
+      "subContent": "Mantiene la nitidez de la imagen en blanco y negro.",
+      "badgeText": "Impresiones perfectas"
     },
     {
-      "type": "grayscale_print_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Conversión privada en escala de grises",
       "content": "Sus documentos se convierten en la memoria de su propio dispositivo. Nunca vemos sus archivos."
     },
     {
-      "type": "grayscale_print_performance",
+      "type": "lt_performance",
       "title": "Procesamiento ultrarrápido",
-      "content": "Debido a que no cargamos su archivo a un servidor en la nube, la conversión a escala de grises ocurre casi instantáneamente."
+      "content": "Debido a que no cargamos su archivo a un servidor en la nube, la conversión a escala de grises ocurre casi instantáneamente.",
+      "badgeText": "Latencia cero"
     }
   ],
   "faqs": [

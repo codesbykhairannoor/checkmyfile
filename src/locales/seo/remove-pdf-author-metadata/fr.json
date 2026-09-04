@@ -14,31 +14,51 @@
     "0",
     "Empreintes"
   ],
+  "supportCenter": "Centre d'assistance",
+  "faqTitle": "Foire aux questions",
   "sections": [
     {
-      "type": "remove_author_hero_features",
+      "type": "split_hero_features",
       "title": "Pourquoi nettoyer les métadonnées PDF ?",
-      "content": "Les PDF stockent souvent secrètement votre nom, le nom de votre entreprise, la version du système d'exploitation et les dates de création. Nettoyez-les avant de les partager en ligne."
+      "content": "Les PDF stockent souvent secrètement votre nom, le nom de votre entreprise, la version du système d'exploitation et les dates de création. Nettoyez-les avant de les partager en ligne.",
+      "badgeText": "Désinfecter le PDF"
     },
     {
-      "type": "remove_author_how_to_steps",
+      "type": "lt_remove_metadata_how_to_steps",
       "title": "Comment désinfecter les propriétés",
-      "content": "Téléchargez votre document. Notre moteur analysera la structure PDF et effacera en toute sécurité tous les champs de métadonnées du dictionnaire."
+      "badgeText": "Guide en 3 étapes",
+      "steps": [
+        {
+          "title": "Télécharger un document",
+          "description": "Sélectionnez le fichier PDF que vous souhaitez nettoyer."
+        },
+        {
+          "title": "Effacer les métadonnées",
+          "description": "Notre moteur analyse la structure et efface les champs cachés."
+        },
+        {
+          "title": "Enregistrer un PDF propre",
+          "description": "Téléchargez instantanément le document anonymisé."
+        }
+      ]
     },
     {
-      "type": "remove_author_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Protégez votre anonymat",
-      "content": "Assurez-vous que les lanceurs d’alerte, les journalistes et les utilisateurs ordinaires peuvent partager des documents sans divulguer leur identité numérique."
+      "content": "Assurez-vous que les lanceurs d’alerte, les journalistes et les utilisateurs ordinaires peuvent partager des documents sans divulguer leur identité numérique.",
+      "subTitle": "Confidentialité totale",
+      "subContent": "Aucune empreinte numérique laissée."
     },
     {
-      "type": "remove_author_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Désinfection de qualité militaire",
       "content": "Nous réécrivons la structure binaire du PDF localement dans votre navigateur pour garantir la destruction permanente des métadonnées."
     },
     {
-      "type": "remove_author_performance",
+      "type": "lt_performance",
       "title": "Gomme de métadonnées instantanée",
-      "content": "Parcourez des milliers de pages en moins d'une seconde à l'aide de notre noyau WebAssembly hautement optimisé."
+      "content": "Parcourez des milliers de pages en moins d'une seconde à l'aide de notre noyau WebAssembly hautement optimisé.",
+      "badgeText": "Noyau WebAssembly"
     }
   ],
   "faqs": [

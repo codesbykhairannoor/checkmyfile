@@ -14,31 +14,51 @@
     "0",
     "Impronte"
   ],
+  "supportCenter": "Centro di supporto",
+  "faqTitle": "Domande frequenti",
   "sections": [
     {
-      "type": "remove_author_hero_features",
+      "type": "split_hero_features",
       "title": "Perché pulire i metadati dei PDF?",
-      "content": "I PDF spesso memorizzano segretamente il tuo nome, il nome dell'azienda, la versione del sistema operativo e le date di creazione. Puliscili prima di condividerli online."
+      "content": "I PDF spesso memorizzano segretamente il tuo nome, il nome dell'azienda, la versione del sistema operativo e le date di creazione. Puliscili prima di condividerli online.",
+      "badgeText": "Disinfetta PDF"
     },
     {
-      "type": "remove_author_how_to_steps",
+      "type": "lt_remove_metadata_how_to_steps",
       "title": "Come disinfettare le proprietà",
-      "content": "Carica il tuo documento. Il nostro motore analizzerà la struttura del PDF e cancellerà in modo sicuro tutti i campi dei metadati del dizionario."
+      "badgeText": "Guida in 3 passaggi",
+      "steps": [
+        {
+          "title": "Carica documento",
+          "description": "Seleziona il file PDF che desideri pulire."
+        },
+        {
+          "title": "Cancella metadati",
+          "description": "Il nostro motore analizza la struttura e cancella i campi nascosti."
+        },
+        {
+          "title": "Salva PDF pulito",
+          "description": "Scarica immediatamente il documento anonimo."
+        }
+      ]
     },
     {
-      "type": "remove_author_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Proteggi il tuo anonimato",
-      "content": "Garantisci che informatori, giornalisti e utenti comuni possano condividere documenti senza divulgare la propria identità digitale."
+      "content": "Garantisci che informatori, giornalisti e utenti comuni possano condividere documenti senza divulgare la propria identità digitale.",
+      "subTitle": "Privacy totale",
+      "subContent": "Zero impronte digitali lasciate indietro."
     },
     {
-      "type": "remove_author_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Sanificazione di livello militare",
       "content": "Riscriviamo la struttura binaria del PDF localmente nel tuo browser per garantire che i metadati vengano distrutti in modo permanente."
     },
     {
-      "type": "remove_author_performance",
+      "type": "lt_performance",
       "title": "Cancellazione istantanea dei metadati",
-      "content": "Pulisci migliaia di pagine in meno di un secondo utilizzando il nostro core WebAssembly altamente ottimizzato."
+      "content": "Pulisci migliaia di pagine in meno di un secondo utilizzando il nostro core WebAssembly altamente ottimizzato.",
+      "badgeText": "Nucleo dell'assembly Web"
     }
   ],
   "faqs": [

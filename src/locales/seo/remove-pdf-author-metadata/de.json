@@ -14,31 +14,51 @@
     "0",
     "Fußabdrücke"
   ],
+  "supportCenter": "Support-Center",
+  "faqTitle": "Häufig gestellte Fragen",
   "sections": [
     {
-      "type": "remove_author_hero_features",
+      "type": "split_hero_features",
       "title": "Warum PDF-Metadaten bereinigen?",
-      "content": "In PDFs werden häufig heimlich Ihr Name, Ihr Firmenname, Ihre Betriebssystemversion und Ihr Erstellungsdatum gespeichert. Reinigen Sie sie, bevor Sie sie online teilen."
+      "content": "In PDFs werden häufig heimlich Ihr Name, Ihr Firmenname, Ihre Betriebssystemversion und Ihr Erstellungsdatum gespeichert. Reinigen Sie sie, bevor Sie sie online teilen.",
+      "badgeText": "PDF bereinigen"
     },
     {
-      "type": "remove_author_how_to_steps",
+      "type": "lt_remove_metadata_how_to_steps",
       "title": "So desinfizieren Sie Immobilien",
-      "content": "Laden Sie Ihr Dokument hoch. Unsere Engine analysiert die PDF-Struktur und löscht sicher alle Metadatenfelder des Wörterbuchs."
+      "badgeText": "3-Schritte-Anleitung",
+      "steps": [
+        {
+          "title": "Dokument hochladen",
+          "description": "Wählen Sie die PDF-Datei aus, die Sie bereinigen möchten."
+        },
+        {
+          "title": "Metadaten löschen",
+          "description": "Unsere Engine analysiert die Struktur und löscht verborgene Felder."
+        },
+        {
+          "title": "Sauberes PDF speichern",
+          "description": "Laden Sie das anonymisierte Dokument sofort herunter."
+        }
+      ]
     },
     {
-      "type": "remove_author_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Schützen Sie Ihre Anonymität",
-      "content": "Stellen Sie sicher, dass Whistleblower, Journalisten und alltägliche Benutzer Dokumente teilen können, ohne ihre digitale Identität preiszugeben."
+      "content": "Stellen Sie sicher, dass Whistleblower, Journalisten und alltägliche Benutzer Dokumente teilen können, ohne ihre digitale Identität preiszugeben.",
+      "subTitle": "Absolute Privatsphäre",
+      "subContent": "Keine digitalen Fußabdrücke hinterlassen."
     },
     {
-      "type": "remove_author_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Desinfektion nach Militärstandard",
       "content": "Wir schreiben die PDF-Binärstruktur lokal in Ihrem Browser um, um sicherzustellen, dass die Metadaten dauerhaft zerstört werden."
     },
     {
-      "type": "remove_author_performance",
+      "type": "lt_performance",
       "title": "Sofortiger Metadaten-Radierer",
-      "content": "Bereinigen Sie Tausende von Seiten in weniger als einer Sekunde mit unserem hochoptimierten WebAssembly-Kern."
+      "content": "Bereinigen Sie Tausende von Seiten in weniger als einer Sekunde mit unserem hochoptimierten WebAssembly-Kern.",
+      "badgeText": "WebAssembly-Kern"
     }
   ],
   "faqs": [

@@ -14,31 +14,52 @@
     "0",
     "Iklan"
   ],
+  "supportCenter": "Pusat Dukungan",
+  "faqTitle": "Pertanyaan yang Sering Diajukan",
   "sections": [
     {
-      "type": "grayscale_print_hero_features",
+      "type": "compress_hero_features",
       "title": "Menghemat Tinta Printer Mahal",
-      "content": "Tinta berwarna itu mahal. Konversikan PDF Anda ke skala abu-abu sebelum dicetak untuk menghemat uang dan sumber daya."
+      "content": "Tinta berwarna itu mahal. Konversikan PDF Anda ke skala abu-abu sebelum dicetak untuk menghemat uang dan sumber daya.",
+      "badgeText": "Penghemat Tinta"
     },
     {
-      "type": "grayscale_print_how_to_steps",
+      "type": "lt_grayscale_how_to_steps",
       "title": "Cara Membuat PDF Hitam Putih",
-      "content": "Masukkan saja file Anda ke dalam kotak. Alat lokal kami akan langsung menghapus semua warna dan memberi Anda PDF skala abu-abu yang dapat dicetak dengan sempurna."
+      "badgeText": "Langkah Sederhana",
+      "steps": [
+        {
+          "title": "Jatuhkan Berkas",
+          "description": "Pilih PDF berwarna yang ingin Anda cetak."
+        },
+        {
+          "title": "Terapkan Filter",
+          "description": "Alat lokal kami langsung menghilangkan semua warna."
+        },
+        {
+          "title": "Unduh Grayscale",
+          "description": "Dapatkan PDF hitam putih yang dapat dicetak dengan sempurna."
+        }
+      ]
     },
     {
-      "type": "grayscale_print_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "Konverter PDF B&W Terbaik",
-      "content": "Ubah teks, gambar, dan latar belakang berwarna menjadi nuansa abu-abu tanpa kehilangan keterbacaan."
+      "content": "Ubah teks, gambar, dan latar belakang berwarna menjadi nuansa abu-abu tanpa kehilangan keterbacaan.",
+      "subTitle": "Kesetiaan yang Tinggi",
+      "subContent": "Mempertahankan ketajaman gambar dalam B&W.",
+      "badgeText": "Cetakan Sempurna"
     },
     {
-      "type": "grayscale_print_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Konversi Skala Abu-Abu Pribadi",
       "content": "Dokumen Anda dikonversi ke memori perangkat Anda sendiri. Kami tidak pernah melihat file Anda."
     },
     {
-      "type": "grayscale_print_performance",
+      "type": "lt_performance",
       "title": "Pemrosesan Secepat Kilat",
-      "content": "Karena kami tidak mengunggah file Anda ke server cloud, konversi skala abu-abu terjadi hampir seketika."
+      "content": "Karena kami tidak mengunggah file Anda ke server cloud, konversi skala abu-abu terjadi hampir seketika.",
+      "badgeText": "Nol Latensi"
     }
   ],
   "faqs": [

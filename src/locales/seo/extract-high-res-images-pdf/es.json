@@ -14,31 +14,50 @@
     "0",
     "Subidas"
   ],
+  "supportCenter": "Centro de soporte",
+  "faqTitle": "Preguntas frecuentes",
   "sections": [
     {
-      "type": "extract_highres_hero_features",
+      "type": "protect_hero_features",
       "title": "Obtenga calidad de imagen original",
-      "content": "No utilices herramientas de captura de pantalla que arruinen la resolución. Nuestra herramienta profundiza en el binario PDF y extrae los archivos de imagen originales sin procesar."
+      "content": "No utilices herramientas de captura de pantalla que arruinen la resolución. Nuestra herramienta profundiza en el binario PDF y extrae los archivos de imagen originales sin procesar.",
+      "badgeText": "Exportación sin pérdidas"
     },
     {
-      "type": "extract_highres_how_to_steps",
+      "type": "lt_extract_images_how_to_steps",
       "title": "Cómo extraer imágenes",
-      "content": "Seleccione un PDF. Lo escaneamos en busca de archivos JPEG y PNG incrustados y los empaquetamos todos en un archivo ZIP ordenado para usted."
+      "badgeText": "Exportación rápida",
+      "steps": [
+        {
+          "title": "Agregar PDF",
+          "description": "Seleccione un archivo PDF con imágenes incrustadas."
+        },
+        {
+          "title": "Escanear binario",
+          "description": "Escaneamos el archivo en busca de archivos JPEG y PNG sin conexión."
+        },
+        {
+          "title": "Descargar ZIP",
+          "description": "Empaquete todas las imágenes extraídas en un archivo ZIP ordenado."
+        }
+      ]
     },
     {
-      "type": "extract_highres_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "La mejor herramienta de extracción de imágenes",
-      "content": "Perfecto para diseñadores, editores y estudiantes que necesitan reutilizar recursos de alta calidad encerrados en un PDF."
+      "content": "Perfecto para diseñadores, editores y estudiantes que necesitan reutilizar recursos de alta calidad encerrados en un PDF.",
+      "badgeText": "Calidad profesional"
     },
     {
-      "type": "extract_highres_privacy_security",
+      "type": "lt_privacy_security",
       "title": "Extracción de activos privados",
       "content": "No robamos tus imágenes. La extracción se realiza íntegramente en su propia computadora."
     },
     {
-      "type": "extract_highres_performance",
+      "type": "lt_performance",
       "title": "Exportación increíblemente rápida",
-      "content": "Extraiga cientos de imágenes de alta resolución en segundos sin esperar a que se cargue un archivo masivo."
+      "content": "Extraiga cientos de imágenes de alta resolución en segundos sin esperar a que se cargue un archivo masivo.",
+      "badgeText": "Extracción instantánea"
     }
   ],
   "faqs": [

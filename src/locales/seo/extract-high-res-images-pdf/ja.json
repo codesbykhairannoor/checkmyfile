@@ -14,31 +14,50 @@
     "0",
     "アップロード"
   ],
+  "supportCenter": "サポートセンター",
+  "faqTitle": "よくある質問",
   "sections": [
     {
-      "type": "extract_highres_hero_features",
+      "type": "protect_hero_features",
       "title": "元の画質を取得する",
-      "content": "解像度を損なうスクリーンショット ツールは使用しないでください。 私たちのツールは PDF バイナリを掘り下げて、生のオリジナル画像ファイルを抽出します。"
+      "content": "解像度を損なうスクリーンショット ツールは使用しないでください。 私たちのツールは PDF バイナリを掘り下げて、生のオリジナル画像ファイルを抽出します。",
+      "badgeText": "ロスレスエクスポート"
     },
     {
-      "type": "extract_highres_how_to_steps",
+      "type": "lt_extract_images_how_to_steps",
       "title": "写真を抽出する方法",
-      "content": "PDFを選択します。 埋め込まれた JPEG と PNG をスキャンし、それらをすべてきちんとした ZIP ファイルにパッケージ化します。"
+      "badgeText": "高速エクスポート",
+      "steps": [
+        {
+          "title": "PDFを追加",
+          "description": "画像が埋め込まれた PDF ファイルを選択します。"
+        },
+        {
+          "title": "スキャンバイナリ",
+          "description": "ファイルの JPEG と PNG をオフラインでスキャンします。"
+        },
+        {
+          "title": "ZIPをダウンロード",
+          "description": "抽出したすべてのイメージをきちんとした ZIP アーカイブにパッケージ化します。"
+        }
+      ]
     },
     {
-      "type": "extract_highres_geo_targeting",
+      "type": "lt_geo_targeting",
       "title": "最高の画像抽出ツール",
-      "content": "PDF 内にロックされている高品質のアセットを再利用する必要があるデザイナー、出版社、学生に最適です。"
+      "content": "PDF 内にロックされている高品質のアセットを再利用する必要があるデザイナー、出版社、学生に最適です。",
+      "badgeText": "プロ品質"
     },
     {
-      "type": "extract_highres_privacy_security",
+      "type": "lt_privacy_security",
       "title": "プライベートアセットの抽出",
       "content": "私たちはあなたの画像を盗むことはありません。 抽出はすべて自分のコンピュータ上で行われます。"
     },
     {
-      "type": "extract_highres_performance",
+      "type": "lt_performance",
       "title": "非常に高速なエクスポート",
-      "content": "大量のファイルのアップロードを待つことなく、数百枚の高解像度画像を数秒で抽出します。"
+      "content": "大量のファイルのアップロードを待つことなく、数百枚の高解像度画像を数秒で抽出します。",
+      "badgeText": "即時抽出"
     }
   ],
   "faqs": [
