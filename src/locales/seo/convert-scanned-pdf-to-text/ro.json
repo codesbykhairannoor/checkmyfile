@@ -5,7 +5,7 @@
   "heroDescription": "Utilizați OCR avansat bazat pe browser pentru a extrage text din imaginile scanate și din PDF-uri care nu pot fi căutate. 100% gratuit și privat.",
   "sections": [
     {
-      "type": "edit_geo_targeting",
+      "type": "image_geo_targeting",
       "subTitle": "WebAssembly OCR",
       "subContent": "Tesseract OCR rulează chiar în browser. Nu sunt implicate API-uri cloud."
     },
@@ -15,9 +15,23 @@
       "subContent": "Extrageți textul din cărți de identitate sensibile sau din fișele medicale în siguranță."
     },
     {
-      "type": "watermark_performance",
+      "type": "scan_performance",
       "subTitle": "Precizie ridicată",
       "subContent": "Suport pentru mai multe limbi și scanări înclinate."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Acest OCR acceptă mai multe limbi?",
+      "a": "Da, motorul nostru WebAssembly bazat pe Tesseract acceptă peste 100 de limbi. Asigurați-vă că scanarea este clară."
+    },
+    {
+      "q": "Este sigur să extrag text din pașaportul sau actul meu de identitate?",
+      "a": "Absolut. Nu încărcăm documentele dumneavoastră pe serverele noastre. Întregul proces OCR are loc în propriul browser."
+    },
+    {
+      "q": "De ce textul este uneori inexact?",
+      "a": "Precizia OCR depinde în mare măsură de calitatea imaginii. Pentru cele mai bune rezultate, asigurați-vă că scanările au un contrast ridicat și nu sunt neclare."
     }
   ]
 }

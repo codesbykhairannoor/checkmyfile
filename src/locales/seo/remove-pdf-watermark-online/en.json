@@ -5,19 +5,33 @@
   "heroDescription": "Redact or remove intrusive watermarks from your PDF documents. Fully private, browser-based watermark removal tool.",
   "sections": [
     {
-      "type": "unlock_geo_targeting",
+      "type": "watermark_geo_targeting",
       "subTitle": "Clean Your PDFs",
       "subContent": "Remove unwanted stamps, backgrounds, and watermarks."
     },
     {
-      "type": "pagenum_privacy_security",
+      "type": "compare_privacy_security",
       "subTitle": "Local Redaction",
       "subContent": "Erase sensitive watermarks without uploading files to our servers."
     },
     {
-      "type": "protect_performance",
+      "type": "edit_performance",
       "subTitle": "Flawless Quality",
       "subContent": "We remove the watermark object without degrading your document quality."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does it remove text watermarks or image watermarks?",
+      "a": "Our tool allows you to draw redaction boxes over both text and image watermarks, effectively erasing them permanently."
+    },
+    {
+      "q": "Can anyone recover the watermark after removal?",
+      "a": "No. The redacted areas are permanently flattened and rasterized, so the hidden data is completely destroyed and unrecoverable."
+    },
+    {
+      "q": "Do I need to pay to remove watermarks?",
+      "a": "Our tool is 100% free with no hidden fees, subscriptions, or intrusive premium pop-ups."
     }
   ]
 }

@@ -5,19 +5,33 @@
   "heroDescription": "Sunting atau hapus tanda air yang mengganggu dari dokumen PDF Anda. Alat penghapus tanda air berbasis browser yang sepenuhnya pribadi.",
   "sections": [
     {
-      "type": "unlock_geo_targeting",
+      "type": "watermark_geo_targeting",
       "subTitle": "Bersihkan PDF Anda",
       "subContent": "Hapus stempel, latar belakang, dan tanda air yang tidak diinginkan."
     },
     {
-      "type": "pagenum_privacy_security",
+      "type": "compare_privacy_security",
       "subTitle": "Redaksi Lokal",
       "subContent": "Hapus tanda air sensitif tanpa mengunggah file ke server kami."
     },
     {
-      "type": "protect_performance",
+      "type": "edit_performance",
       "subTitle": "Kualitas Sempurna",
       "subContent": "Kami menghapus objek watermark tanpa menurunkan kualitas dokumen Anda."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Apakah ini menghilangkan tanda air teks atau tanda air gambar?",
+      "a": "Alat kami memungkinkan Anda menggambar kotak redaksi di atas tanda air teks dan gambar, sehingga secara efektif menghapusnya secara permanen."
+    },
+    {
+      "q": "Adakah yang bisa memulihkan tanda air setelah dihapus?",
+      "a": "Tidak. Area yang disunting akan diratakan dan diraster secara permanen, sehingga data yang tersembunyi benar-benar hancur dan tidak dapat dipulihkan."
+    },
+    {
+      "q": "Apakah saya perlu membayar untuk menghapus tanda air?",
+      "a": "Alat kami 100% gratis tanpa biaya tersembunyi, langganan, atau pop-up premium yang mengganggu."
     }
   ]
 }

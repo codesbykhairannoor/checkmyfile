@@ -5,7 +5,7 @@
   "heroDescription": "Gunakan OCR berbasis browser tingkat lanjut untuk mengekstrak teks dari gambar yang dipindai dan PDF yang tidak dapat dicari. 100% gratis dan pribadi.",
   "sections": [
     {
-      "type": "edit_geo_targeting",
+      "type": "image_geo_targeting",
       "subTitle": "OCR Majelis Web",
       "subContent": "Tesseract OCR berjalan langsung di browser Anda. Tidak ada API cloud yang terlibat."
     },
@@ -15,9 +15,23 @@
       "subContent": "Ekstrak teks dari kartu ID sensitif atau catatan medis dengan aman."
     },
     {
-      "type": "watermark_performance",
+      "type": "scan_performance",
       "subTitle": "Akurasi Tinggi",
       "subContent": "Dukungan untuk berbagai bahasa dan pemindaian miring."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Apakah OCR ini mendukung banyak bahasa?",
+      "a": "Ya, mesin WebAssembly berbasis Tesseract kami mendukung lebih dari 100 bahasa. Pastikan saja pemindaiannya jelas."
+    },
+    {
+      "q": "Apakah aman untuk mengambil teks dari paspor atau ID saya?",
+      "a": "Sangat. Kami tidak mengunggah dokumen Anda ke server kami. Seluruh proses OCR terjadi di dalam browser Anda sendiri."
+    },
+    {
+      "q": "Mengapa teksnya terkadang tidak akurat?",
+      "a": "Akurasi OCR sangat bergantung pada kualitas gambar. Untuk hasil terbaik, pastikan pindaian Anda memiliki kontras tinggi dan tidak buram."
     }
   ]
 }

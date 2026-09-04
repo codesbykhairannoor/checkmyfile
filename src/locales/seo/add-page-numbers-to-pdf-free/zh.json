@@ -5,19 +5,33 @@
   "heroDescription": "Easily paginate your PDF files. Add customizable page numbers to headers or footers instantly for free.",
   "sections": [
     {
-      "type": "watermark_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "subTitle": "Free Pagination",
       "subContent": "Add numbers to unlimited files without hitting paywalls."
     },
     {
-      "type": "scan_privacy_security",
+      "type": "unlock_privacy_security",
       "subTitle": "Secure Document Handling",
       "subContent": "Your dissertations and reports are numbered privately on your machine."
     },
     {
-      "type": "csv_excel_performance",
+      "type": "reverse_performance",
       "subTitle": "Batch Numbering",
       "subContent": "Apply page numbers to massive documents in a fraction of a second."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I choose where the page numbers appear?",
+      "a": "Yes, you can customize the position (e.g., bottom-right, top-center) and the margin size for perfect alignment."
+    },
+    {
+      "q": "Is it free for very large PDFs like textbooks?",
+      "a": "Yes! Our tool can paginate a 1000-page textbook in milliseconds, completely free and without file size restrictions."
+    },
+    {
+      "q": "Will it alter my original document formatting?",
+      "a": "No, the page numbers are cleanly overlaid onto the existing PDF structure without altering your original text or margins."
     }
   ]
 }

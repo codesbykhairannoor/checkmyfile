@@ -5,19 +5,33 @@
   "heroDescription": "PDF dosyalarınızı kolayca sayfalandırın. Üstbilgilere veya altbilgilere anında ücretsiz olarak özelleştirilebilir sayfa numaraları ekleyin.",
   "sections": [
     {
-      "type": "watermark_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "subTitle": "Ücretsiz Sayfalandırma",
       "subContent": "Ödeme duvarlarına çarpmadan sınırsız dosyalara numara ekleyin."
     },
     {
-      "type": "scan_privacy_security",
+      "type": "unlock_privacy_security",
       "subTitle": "Güvenli Belge İşleme",
       "subContent": "Tezleriniz ve raporlarınız makinenizde özel olarak numaralandırılır."
     },
     {
-      "type": "csv_excel_performance",
+      "type": "reverse_performance",
       "subTitle": "Parti Numaralandırma",
       "subContent": "Büyük belgelere sayfa numaralarını saniyeden çok daha kısa sürede uygulayın."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Sayfa numaralarının nerede görüneceğini seçebilir miyim?",
+      "a": "Evet, mükemmel hizalama için konumu (ör. sağ alt, üst orta) ve kenar boşluğu boyutunu özelleştirebilirsiniz."
+    },
+    {
+      "q": "Ders kitapları gibi çok büyük PDF'ler için ücretsiz mi?",
+      "a": "Evet! Aracımız 1000 sayfalık bir ders kitabını milisaniyeler içinde tamamen ücretsiz olarak ve dosya boyutu sınırlaması olmadan sayfalandırabilir."
+    },
+    {
+      "q": "Orijinal belgemin formatını değiştirecek mi?",
+      "a": "Hayır, sayfa numaraları orijinal metninizi veya kenar boşluklarını değiştirmeden mevcut PDF yapısının üzerine temiz bir şekilde yerleştirilir."
     }
   ]
 }

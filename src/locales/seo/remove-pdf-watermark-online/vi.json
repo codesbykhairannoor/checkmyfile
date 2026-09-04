@@ -5,19 +5,33 @@
   "heroDescription": "Biên tập lại hoặc xóa hình mờ xâm nhập khỏi tài liệu PDF của bạn. Công cụ xóa hình mờ hoàn toàn riêng tư, dựa trên trình duyệt.",
   "sections": [
     {
-      "type": "unlock_geo_targeting",
+      "type": "watermark_geo_targeting",
       "subTitle": "Làm sạch các tệp PDF của bạn",
       "subContent": "Loại bỏ tem, hình nền và hình mờ không mong muốn."
     },
     {
-      "type": "pagenum_privacy_security",
+      "type": "compare_privacy_security",
       "subTitle": "Biên tập cục bộ",
       "subContent": "Xóa hình mờ nhạy cảm mà không cần tải tệp lên máy chủ của chúng tôi."
     },
     {
-      "type": "protect_performance",
+      "type": "edit_performance",
       "subTitle": "Chất lượng hoàn hảo",
       "subContent": "Chúng tôi loại bỏ đối tượng hình mờ mà không làm giảm chất lượng tài liệu của bạn."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Nó có loại bỏ hình mờ văn bản hoặc hình mờ hình ảnh không?",
+      "a": "Công cụ của chúng tôi cho phép bạn vẽ các hộp chỉnh sửa trên cả hình mờ văn bản và hình ảnh, xóa chúng vĩnh viễn một cách hiệu quả."
+    },
+    {
+      "q": "Có ai có thể khôi phục hình mờ sau khi xóa không?",
+      "a": "Không. Các khu vực được xử lý lại sẽ được làm phẳng và raster hóa vĩnh viễn, do đó dữ liệu ẩn sẽ bị phá hủy hoàn toàn và không thể phục hồi được."
+    },
+    {
+      "q": "Tôi có cần trả tiền để xóa hình mờ không?",
+      "a": "Công cụ của chúng tôi miễn phí 100%, không có phí ẩn, không có đăng ký hoặc cửa sổ bật lên cao cấp xâm nhập."
     }
   ]
 }

@@ -5,19 +5,33 @@
   "heroDescription": "Zmenšite svoje PDF súbory na 100 kB alebo menej priamo vo vašom prehliadači. Ideálne pre e-mailové prílohy a rýchle zdieľanie. 100% súkromné.",
   "sections": [
     {
-      "type": "grayscale_geo_targeting",
+      "type": "word_geo_targeting",
       "subTitle": "Lokálny kompresný motor",
       "subContent": "Náš pokročilý WASM engine komprimuje vaše PDF lokálne. Žiadne obmedzenia súborov."
     },
     {
-      "type": "organize_privacy_security",
+      "type": "metadata_privacy_security",
       "subTitle": "Nulové uchovávanie údajov",
       "subContent": "Keďže súbory nikdy neopustia vaše zariadenie, vaše súkromné ​​údaje zostanú len vaše."
     },
     {
-      "type": "metadata_performance",
+      "type": "protect_performance",
       "subTitle": "Blesková rýchlosť 100 kB",
       "subContent": "Dosiahnite cieľovú veľkosť 100 kB v milisekúndách bez oneskorenia servera."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Môžem komprimovať 50 MB PDF na 100 KB?",
+      "a": "V závislosti od obsahu obrázka náš WASM engine výrazne komprimuje vizuálne údaje a odstraňuje skryté metadáta, aby sa fyzicky priblížil k 100 kB."
+    },
+    {
+      "q": "Je to naozaj 100% súkromné?",
+      "a": "áno. Celá kompresia prebieha priamo vo vašom prehliadači. Váš PDF sa nikdy neodovzdá na žiadny server."
+    },
+    {
+      "q": "Bude text rozmazaný?",
+      "a": "Nie, vektorový text a písma zostávajú ostré ako britva. Komprimujú sa iba vložené obrázky, aby dosiahli cieľovú veľkosť 100 kB."
     }
   ]
 }

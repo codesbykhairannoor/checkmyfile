@@ -5,19 +5,33 @@
   "heroDescription": "Łącz wiele bardzo poufnych dokumentów PDF bez połączenia z Internetem. Działa całkowicie offline po załadowaniu.",
   "sections": [
     {
-      "type": "excel_csv_geo_targeting",
+      "type": "sign_geo_targeting",
       "subTitle": "Łączenie offline",
       "subContent": "Połącz formularze podatkowe i dokumenty prawne, nie wysyłając ich nigdzie."
     },
     {
-      "type": "redact_privacy_security",
+      "type": "rotate_privacy_security",
       "subTitle": "Prywatność na poziomie wojskowym",
       "subContent": "Gwarantujemy całkowitą prywatność, ponieważ fizycznie nie możemy zobaczyć Twoich plików."
     },
     {
-      "type": "metadata_performance",
+      "type": "excel_performance",
       "subTitle": "Natychmiastowe przetwarzanie",
       "subContent": "Błyskawicznie łącz setki stron dzięki przetwarzaniu po stronie klienta."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Jak to działa całkowicie offline?",
+      "a": "Po załadowaniu strony nasz silnik WebAssembly działa lokalnie. Możesz odłączyć internet i kontynuować scalanie plików PDF."
+    },
+    {
+      "q": "Czy mogę zmienić kolejność stron przed połączeniem?",
+      "a": "Tak! Po prostu przeciągnij i upuść pliki na osi czasu, zanim klikniesz przycisk scalania, aby je idealnie uporządkować."
+    },
+    {
+      "q": "Czy istnieje ograniczenie liczby plików PDF, które mogę scalić?",
+      "a": "Nie ma sztucznych limitów. Ogranicza Cię tylko pamięć RAM dostępna na Twoim komputerze lokalnym."
     }
   ]
 }

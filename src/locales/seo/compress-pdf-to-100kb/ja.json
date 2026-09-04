@@ -5,19 +5,33 @@
   "heroDescription": "ブラウザで PDF ファイルを直接 100KB 以下に縮小します。 電子メールの添付や高速共有に最適です。 100%プライベートです。",
   "sections": [
     {
-      "type": "grayscale_geo_targeting",
+      "type": "word_geo_targeting",
       "subTitle": "ローカル圧縮エンジン",
       "subContent": "当社の高度な WASM エンジンは、PDF をローカルで圧縮します。 ファイル制限はありません。"
     },
     {
-      "type": "organize_privacy_security",
+      "type": "metadata_privacy_security",
       "subTitle": "データ保持ゼロ",
       "subContent": "ファイルがデバイスの外に出ることはないため、個人データは自分だけのものになります。"
     },
     {
-      "type": "metadata_performance",
+      "type": "protect_performance",
       "subTitle": "超高速100KB",
       "subContent": "サーバーの遅延なしに、ミリ秒単位で 100KB の目標サイズに達します。"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "50MB の PDF を 100KB まで圧縮できますか?",
+      "a": "画像コンテンツに応じて、WASM エンジンは物理的に可能な限り 100KB 近くになるように視覚データを大幅に圧縮し、隠されたメタデータを削除します。"
+    },
+    {
+      "q": "本当に100％プライベートなのでしょうか？",
+      "a": "はい。 すべての圧縮はブラウザ内で直接行われます。 PDF がサーバーにアップロードされることはありません。"
+    },
+    {
+      "q": "文字がぼやけてしまうのでしょうか？",
+      "a": "いいえ、ベクター テキストとフォントは非常に鮮明なままです。 100KB の目標に達するために、埋め込み画像のみが圧縮されます。"
     }
   ]
 }

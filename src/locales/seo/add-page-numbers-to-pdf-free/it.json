@@ -5,19 +5,33 @@
   "heroDescription": "Impagina facilmente i tuoi file PDF. Aggiungi istantaneamente e gratuitamente numeri di pagina personalizzabili alle intestazioni o ai piè di pagina.",
   "sections": [
     {
-      "type": "watermark_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "subTitle": "Impaginazione gratuita",
       "subContent": "Aggiungi numeri a file illimitati senza colpire i paywall."
     },
     {
-      "type": "scan_privacy_security",
+      "type": "unlock_privacy_security",
       "subTitle": "Gestione sicura dei documenti",
       "subContent": "Le tue tesi e relazioni sono numerate privatamente sulla tua macchina."
     },
     {
-      "type": "csv_excel_performance",
+      "type": "reverse_performance",
       "subTitle": "Numerazione dei lotti",
       "subContent": "Applica i numeri di pagina a documenti di grandi dimensioni in una frazione di secondo."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Posso scegliere dove visualizzare i numeri di pagina?",
+      "a": "Sì, puoi personalizzare la posizione (ad esempio, in basso a destra, in alto al centro) e la dimensione del margine per un allineamento perfetto."
+    },
+    {
+      "q": "È gratuito per PDF molto grandi come i libri di testo?",
+      "a": "SÌ! Il nostro strumento può impaginare un libro di testo di 1000 pagine in millisecondi, in modo completamente gratuito e senza limiti di dimensione del file."
+    },
+    {
+      "q": "Alterà la formattazione del mio documento originale?",
+      "a": "No, i numeri di pagina vengono sovrapposti in modo pulito alla struttura PDF esistente senza alterare il testo o i margini originali."
     }
   ]
 }

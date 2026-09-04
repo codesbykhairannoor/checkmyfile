@@ -5,19 +5,33 @@
   "heroDescription": "Combine vários documentos PDF altamente confidenciais sem conexão com a Internet. Funciona totalmente offline após o carregamento.",
   "sections": [
     {
-      "type": "excel_csv_geo_targeting",
+      "type": "sign_geo_targeting",
       "subTitle": "Mesclagem offline",
       "subContent": "Combine seus formulários fiscais e documentos legais sem enviá-los para qualquer lugar."
     },
     {
-      "type": "redact_privacy_security",
+      "type": "rotate_privacy_security",
       "subTitle": "Privacidade de nível militar",
       "subContent": "Garantimos privacidade absoluta porque fisicamente não podemos ver seus arquivos."
     },
     {
-      "type": "metadata_performance",
+      "type": "excel_performance",
       "subTitle": "Processamento Instantâneo",
       "subContent": "Mescle centenas de páginas instantaneamente com processamento do lado do cliente."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Como funciona totalmente offline?",
+      "a": "Assim que a página for carregada, nosso mecanismo WebAssembly será executado localmente. Você pode desconectar sua internet e continuar mesclando PDFs."
+    },
+    {
+      "q": "Posso reorganizar as páginas antes de mesclar?",
+      "a": "Sim! Basta arrastar e soltar os arquivos na linha do tempo antes de clicar em mesclar para ordená-los perfeitamente."
+    },
+    {
+      "q": "Existe um limite de quantos PDFs posso mesclar?",
+      "a": "Não existem limites artificiais. Você está limitado apenas pela RAM disponível no seu computador local."
     }
   ]
 }

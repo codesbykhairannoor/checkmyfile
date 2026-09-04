@@ -5,19 +5,33 @@
   "heroDescription": "Paginerer enkelt PDF-filene dine. Legg til sidetall som kan tilpasses til topp- eller bunntekster umiddelbart gratis.",
   "sections": [
     {
-      "type": "watermark_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "subTitle": "Gratis paginering",
       "subContent": "Legg til tall i ubegrensede filer uten å treffe betalingsvegger."
     },
     {
-      "type": "scan_privacy_security",
+      "type": "unlock_privacy_security",
       "subTitle": "Sikker dokumenthåndtering",
       "subContent": "Dine avhandlinger og rapporter er privat nummerert på maskinen din."
     },
     {
-      "type": "csv_excel_performance",
+      "type": "reverse_performance",
       "subTitle": "Batchnummerering",
       "subContent": "Bruk sidetall på massive dokumenter på en brøkdel av et sekund."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Kan jeg velge hvor sidetallene skal vises?",
+      "a": "Ja, du kan tilpasse posisjonen (f.eks. nederst til høyre, øverst i midten) og margstørrelsen for perfekt justering."
+    },
+    {
+      "q": "Er det gratis for veldig store PDF-filer som lærebøker?",
+      "a": "Ja! Verktøyet vårt kan paginere en 1000-siders lærebok på millisekunder, helt gratis og uten filstørrelsesbegrensninger."
+    },
+    {
+      "q": "Vil det endre min originale dokumentformatering?",
+      "a": "Nei, sidetallene legges rent over den eksisterende PDF-strukturen uten å endre originalteksten eller margene."
     }
   ]
 }

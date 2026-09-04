@@ -5,19 +5,33 @@
   "heroDescription": "Jednoducho stránkujte svoje súbory PDF. Pridajte prispôsobiteľné čísla strán do hlavičky alebo päty okamžite zadarmo.",
   "sections": [
     {
-      "type": "watermark_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "subTitle": "Stránkovanie zadarmo",
       "subContent": "Pridajte čísla do neobmedzených súborov bez toho, aby ste zasiahli paywally."
     },
     {
-      "type": "scan_privacy_security",
+      "type": "unlock_privacy_security",
       "subTitle": "Bezpečná manipulácia s dokumentmi",
       "subContent": "Vaše dizertačné práce a správy sú na vašom počítači súkromne očíslované."
     },
     {
-      "type": "csv_excel_performance",
+      "type": "reverse_performance",
       "subTitle": "Číslovanie šarží",
       "subContent": "Aplikujte čísla strán na veľké dokumenty v zlomku sekundy."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Môžem si vybrať, kde sa zobrazia čísla strán?",
+      "a": "Áno, môžete prispôsobiť pozíciu (napr. vpravo dole, v strede hore) a veľkosť okraja pre dokonalé zarovnanie."
+    },
+    {
+      "q": "Je to zadarmo pre veľmi veľké súbory PDF, ako sú učebnice?",
+      "a": "Áno! Náš nástroj dokáže ostránkovať 1000-stranovú učebnicu za milisekúnd, úplne zadarmo a bez obmedzenia veľkosti súboru."
+    },
+    {
+      "q": "Zmení to moje pôvodné formátovanie dokumentu?",
+      "a": "Nie, čísla strán sa čisto prekryjú do existujúcej štruktúry PDF bez toho, aby sa zmenil pôvodný text alebo okraje."
     }
   ]
 }

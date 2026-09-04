@@ -5,19 +5,33 @@
   "heroDescription": "Paginieren Sie Ihre PDF-Dateien ganz einfach. Fügen Sie sofort und kostenlos anpassbare Seitenzahlen zu Kopf- oder Fußzeilen hinzu.",
   "sections": [
     {
-      "type": "watermark_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "subTitle": "Kostenlose Paginierung",
       "subContent": "Fügen Sie Nummern zu unbegrenzten Dateien hinzu, ohne auf Paywalls zu stoßen."
     },
     {
-      "type": "scan_privacy_security",
+      "type": "unlock_privacy_security",
       "subTitle": "Sichere Dokumentenhandhabung",
       "subContent": "Ihre Dissertationen und Berichte werden privat auf Ihrem Computer nummeriert."
     },
     {
-      "type": "csv_excel_performance",
+      "type": "reverse_performance",
       "subTitle": "Chargennummerierung",
       "subContent": "Wenden Sie Seitenzahlen in Sekundenbruchteilen auf umfangreiche Dokumente an."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Kann ich wählen, wo die Seitenzahlen erscheinen sollen?",
+      "a": "Ja, Sie können die Position (z. B. unten rechts, oben in der Mitte) und die Randgröße für eine perfekte Ausrichtung anpassen."
+    },
+    {
+      "q": "Ist es für sehr große PDFs wie Lehrbücher kostenlos?",
+      "a": "Ja! Unser Tool kann ein 1000-seitiges Lehrbuch in Millisekunden paginieren, völlig kostenlos und ohne Dateigrößenbeschränkungen."
+    },
+    {
+      "q": "Wird dadurch die Formatierung meines ursprünglichen Dokuments geändert?",
+      "a": "Nein, die Seitenzahlen werden sauber in die bestehende PDF-Struktur eingeblendet, ohne dass Ihr Originaltext oder Ihre Ränder verändert werden."
     }
   ]
 }

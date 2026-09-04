@@ -5,7 +5,7 @@
   "heroDescription": "Käytä kehittynyttä selainpohjaista tekstintunnistusta tekstin poimimiseen skannatuista kuvista ja PDF-tiedostoista, joita ei voi hakea. 100% ilmainen ja yksityinen.",
   "sections": [
     {
-      "type": "edit_geo_targeting",
+      "type": "image_geo_targeting",
       "subTitle": "WebAssembly OCR",
       "subContent": "Tesseract OCR toimii suoraan selaimessasi. Ei pilvisovellusliittymiä mukana."
     },
@@ -15,9 +15,23 @@
       "subContent": "Poimi tekstiä arkaluontoisista henkilökorteista tai lääketieteellisistä tiedoista turvallisesti."
     },
     {
-      "type": "watermark_performance",
+      "type": "scan_performance",
       "subTitle": "Korkea tarkkuus",
       "subContent": "Tuki useille kielille ja vinoille skannauksille."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Tukeeko tämä tekstintunnistus useita kieliä?",
+      "a": "Kyllä, Tesseract-pohjainen WebAssembly-moottorimme tukee yli 100 kieltä. Varmista vain, että skannaus on selkeä."
+    },
+    {
+      "q": "Onko turvallista poimia teksti passistani tai henkilöllisyystodistuksestani?",
+      "a": "Täysin. Emme lataa asiakirjojasi palvelimillemme. Koko OCR-prosessi tapahtuu omassa selaimessasi."
+    },
+    {
+      "q": "Miksi teksti on joskus epätarkka?",
+      "a": "OCR-tarkkuus riippuu suuresti kuvanlaadusta. Parhaan tuloksen saat varmistamalla, että skannauksissasi on korkea kontrasti eivätkä ne ole epäselviä."
     }
   ]
 }

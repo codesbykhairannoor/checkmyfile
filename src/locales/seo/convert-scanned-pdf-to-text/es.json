@@ -5,7 +5,7 @@
   "heroDescription": "Utilice OCR avanzado basado en navegador para extraer texto de imágenes escaneadas y archivos PDF que no se pueden buscar. 100% gratis y privado.",
   "sections": [
     {
-      "type": "edit_geo_targeting",
+      "type": "image_geo_targeting",
       "subTitle": "OCR de ensamblaje web",
       "subContent": "Tesseract OCR se ejecuta directamente en su navegador. No hay API en la nube involucradas."
     },
@@ -15,9 +15,23 @@
       "subContent": "Extraiga texto de tarjetas de identificación o registros médicos confidenciales de forma segura."
     },
     {
-      "type": "watermark_performance",
+      "type": "scan_performance",
       "subTitle": "Alta precisión",
       "subContent": "Soporte para múltiples idiomas y escaneos sesgados."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "¿Este OCR admite varios idiomas?",
+      "a": "Sí, nuestro motor WebAssembly basado en Tesseract admite más de 100 idiomas. Solo asegúrese de que el escaneo sea claro."
+    },
+    {
+      "q": "¿Es seguro extraer texto de mi pasaporte o documento de identidad?",
+      "a": "Absolutamente. No subimos sus documentos a nuestros servidores. Todo el proceso de OCR ocurre dentro de su propio navegador."
+    },
+    {
+      "q": "¿Por qué el texto a veces es inexacto?",
+      "a": "La precisión del OCR depende en gran medida de la calidad de la imagen. Para obtener mejores resultados, asegúrese de que sus escaneos tengan un alto contraste y no estén borrosos."
     }
   ]
 }

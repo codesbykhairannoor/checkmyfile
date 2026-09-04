@@ -5,7 +5,7 @@
   "heroDescription": "Taranmış görüntülerden ve aranamayan PDF'lerden metin çıkarmak için gelişmiş tarayıcı tabanlı OCR'yi kullanın. %100 ücretsiz ve özel.",
   "sections": [
     {
-      "type": "edit_geo_targeting",
+      "type": "image_geo_targeting",
       "subTitle": "WebAssembly OCR'si",
       "subContent": "Tesseract OCR doğrudan tarayıcınızda çalışır. Hiçbir bulut API'si dahil değildir."
     },
@@ -15,9 +15,23 @@
       "subContent": "Hassas kimlik kartlarından veya tıbbi kayıtlardan metni güvenli bir şekilde çıkarın."
     },
     {
-      "type": "watermark_performance",
+      "type": "scan_performance",
       "subTitle": "Yüksek Doğruluk",
       "subContent": "Birden fazla dil ve çarpık tarama desteği."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Bu OCR birden fazla dili destekliyor mu?",
+      "a": "Evet, Tesseract tabanlı WebAssembly motorumuz 100'den fazla dili desteklemektedir. Sadece taramanın net olduğundan emin olun."
+    },
+    {
+      "q": "Pasaportumdan veya kimliğimden metin çıkarmak güvenli midir?",
+      "a": "Kesinlikle. Belgelerinizi sunucularımıza yüklemiyoruz. OCR işleminin tamamı kendi tarayıcınızda gerçekleşir."
+    },
+    {
+      "q": "Metin neden bazen hatalı?",
+      "a": "OCR doğruluğu büyük ölçüde görüntü kalitesine bağlıdır. En iyi sonuçları elde etmek için taramalarınızın yüksek kontrasta sahip olduğundan ve bulanık olmadığından emin olun."
     }
   ]
 }

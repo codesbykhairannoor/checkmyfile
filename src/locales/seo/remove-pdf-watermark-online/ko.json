@@ -5,19 +5,33 @@
   "heroDescription": "PDF 문서에서 방해가 되는 워터마크를 수정하거나 제거하세요. 완전 비공개 브라우저 기반 워터마크 제거 도구입니다.",
   "sections": [
     {
-      "type": "unlock_geo_targeting",
+      "type": "watermark_geo_targeting",
       "subTitle": "PDF 정리",
       "subContent": "원하지 않는 스탬프, 배경, 워터마크를 제거하세요."
     },
     {
-      "type": "pagenum_privacy_security",
+      "type": "compare_privacy_security",
       "subTitle": "로컬 편집",
       "subContent": "서버에 파일을 업로드하지 않고도 민감한 워터마크를 지울 수 있습니다."
     },
     {
-      "type": "protect_performance",
+      "type": "edit_performance",
       "subTitle": "완벽한 품질",
       "subContent": "문서 품질을 저하시키지 않고 워터마크 개체를 제거합니다."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "텍스트 워터마크나 이미지 워터마크를 제거합니까?",
+      "a": "우리의 도구를 사용하면 텍스트와 이미지 워터마크 위에 교정 상자를 그려 효과적으로 영구적으로 지울 수 있습니다."
+    },
+    {
+      "q": "워터마크 제거 후 복구할 수 있는 사람 있나요?",
+      "a": "아니요. 수정된 영역은 영구적으로 병합되고 래스터화되므로 숨겨진 데이터는 완전히 파괴되어 복구할 수 없습니다."
+    },
+    {
+      "q": "워터마크를 제거하려면 비용을 지불해야 합니까?",
+      "a": "우리의 도구는 숨겨진 수수료, 구독 또는 방해가 되는 프리미엄 팝업이 없는 100% 무료입니다."
     }
   ]
 }

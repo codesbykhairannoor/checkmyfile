@@ -5,19 +5,33 @@
   "heroDescription": "Formindsk dine PDF-filer til 100KB eller mindre direkte i din browser. Perfekt til vedhæftede filer i e-mail og hurtig deling. 100% privat.",
   "sections": [
     {
-      "type": "grayscale_geo_targeting",
+      "type": "word_geo_targeting",
       "subTitle": "Lokal kompressionsmotor",
       "subContent": "Vores avancerede WASM-motor komprimerer din PDF lokalt. Ingen filgrænser."
     },
     {
-      "type": "organize_privacy_security",
+      "type": "metadata_privacy_security",
       "subTitle": "Nul dataopbevaring",
       "subContent": "Da filer aldrig forlader din enhed, forbliver dine private data alene dine."
     },
     {
-      "type": "metadata_performance",
+      "type": "protect_performance",
       "subTitle": "Lynhurtig 100KB",
       "subContent": "Ram din 100KB målstørrelse på millisekunder uden serverforsinkelser."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Kan jeg komprimere en 50MB PDF ned til 100KB?",
+      "a": "Afhængigt af billedindholdet vil vores WASM-motor kraftigt komprimere visuelle data og fjerne skjulte metadata for at komme så tæt på 100KB som fysisk muligt."
+    },
+    {
+      "q": "Er det virkelig 100% privat?",
+      "a": "Ja. Al komprimering sker direkte inde i din browser. Din PDF uploades aldrig til nogen server."
+    },
+    {
+      "q": "Bliver teksten sløret?",
+      "a": "Nej, vektortekst og skrifttyper forbliver knivskarpe. Kun indlejrede billeder komprimeres for at ramme målet på 100 KB."
     }
   ]
 }

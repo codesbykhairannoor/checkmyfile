@@ -5,19 +5,33 @@
   "heroDescription": "Pienennä PDF-tiedostosi 100 kilotavuun tai pienempään suoraan selaimessasi. Täydellinen sähköpostin liitteisiin ja nopeaan jakamiseen. 100% yksityinen.",
   "sections": [
     {
-      "type": "grayscale_geo_targeting",
+      "type": "word_geo_targeting",
       "subTitle": "Paikallinen kompressiomoottori",
       "subContent": "Edistyksellinen WASM-moottorimme pakkaa PDF-tiedostosi paikallisesti. Ei tiedostorajoituksia."
     },
     {
-      "type": "organize_privacy_security",
+      "type": "metadata_privacy_security",
       "subTitle": "Nolla tietojen säilyttämistä",
       "subContent": "Koska tiedostot eivät koskaan poistu laitteestasi, yksityiset tietosi pysyvät yksin."
     },
     {
-      "type": "metadata_performance",
+      "type": "protect_performance",
       "subTitle": "Salamannopea 100 kt",
       "subContent": "Saavuta 100 kt:n tavoitekoko millisekunneissa ilman palvelinviiveitä."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Voinko pakata 50 Mt:n PDF-tiedoston 100 kilotavuun?",
+      "a": "Kuvasisällöstä riippuen WASM-moottorimme pakkaa visuaalista dataa voimakkaasti ja poistaa piilotetut metatiedot päästäkseen niin lähelle 100 kt:a kuin fyysisesti mahdollista."
+    },
+    {
+      "q": "Onko se todella 100% yksityinen?",
+      "a": "Kyllä. Kaikki pakkaus tapahtuu suoraan selaimessasi. PDF-tiedostoa ei koskaan ladata millekään palvelimelle."
+    },
+    {
+      "q": "Tuleeko teksti epäselväksi?",
+      "a": "Ei, vektoriteksti ja fontit pysyvät veitsenterävinä. Vain upotetut kuvat pakataan 100 kt:n tavoitteen saavuttamiseksi."
     }
   ]
 }

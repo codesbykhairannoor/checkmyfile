@@ -5,19 +5,33 @@
   "heroDescription": "Gabungkan berbilang dokumen PDF yang sangat sensitif tanpa sambungan internet. Berfungsi sepenuhnya di luar talian selepas dimuatkan.",
   "sections": [
     {
-      "type": "excel_csv_geo_targeting",
+      "type": "sign_geo_targeting",
       "subTitle": "Penggabungan Luar Talian",
       "subContent": "Gabungkan borang cukai dan dokumen undang-undang anda tanpa menghantarnya ke mana-mana."
     },
     {
-      "type": "redact_privacy_security",
+      "type": "rotate_privacy_security",
       "subTitle": "Privasi Gred Tentera",
       "subContent": "Kami menjamin privasi mutlak kerana kami secara fizikal tidak dapat melihat fail anda."
     },
     {
-      "type": "metadata_performance",
+      "type": "excel_performance",
       "subTitle": "Pemprosesan Segera",
       "subContent": "Gabungkan 100 halaman dengan serta-merta dengan pemprosesan sebelah pelanggan."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Bagaimanakah ia berfungsi sepenuhnya di luar talian?",
+      "a": "Setelah halaman dimuatkan, enjin WebAssembly kami berfungsi secara setempat. Anda boleh memutuskan sambungan internet anda dan terus menggabungkan PDF."
+    },
+    {
+      "q": "Bolehkah saya menyusun semula halaman sebelum bergabung?",
+      "a": "Ya! Hanya seret dan lepaskan fail dalam garis masa sebelum anda mengklik cantum untuk memesannya dengan sempurna."
+    },
+    {
+      "q": "Adakah terdapat had pada berapa banyak PDF yang boleh saya gabungkan?",
+      "a": "Tiada had buatan. Anda hanya dihadkan oleh RAM yang tersedia pada komputer tempatan anda."
     }
   ]
 }

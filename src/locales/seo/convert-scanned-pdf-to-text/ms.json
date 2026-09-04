@@ -5,7 +5,7 @@
   "heroDescription": "Gunakan OCR berasaskan pelayar lanjutan untuk mengekstrak teks daripada imej yang diimbas dan PDF yang tidak boleh dicari. 100% percuma dan peribadi.",
   "sections": [
     {
-      "type": "edit_geo_targeting",
+      "type": "image_geo_targeting",
       "subTitle": "WebAssembly OCR",
       "subContent": "Tesseract OCR berjalan terus dalam penyemak imbas anda. Tiada API awan yang terlibat."
     },
@@ -15,9 +15,23 @@
       "subContent": "Ekstrak teks daripada kad pengenalan sensitif atau rekod perubatan dengan selamat."
     },
     {
-      "type": "watermark_performance",
+      "type": "scan_performance",
       "subTitle": "Ketepatan Tinggi",
       "subContent": "Sokongan untuk berbilang bahasa dan imbasan condong."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Adakah OCR ini menyokong berbilang bahasa?",
+      "a": "Ya, enjin WebAssembly berasaskan Tesseract kami menyokong lebih 100 bahasa. Hanya pastikan imbasan adalah jelas."
+    },
+    {
+      "q": "Adakah selamat untuk mengeluarkan teks daripada pasport atau ID saya?",
+      "a": "betul-betul. Kami tidak memuat naik dokumen anda ke pelayan kami. Keseluruhan proses OCR berlaku dalam penyemak imbas anda sendiri."
+    },
+    {
+      "q": "Mengapakah teks kadangkala tidak tepat?",
+      "a": "Ketepatan OCR sangat bergantung pada kualiti imej. Untuk hasil terbaik, pastikan imbasan anda mempunyai kontras yang tinggi dan tidak kabur."
     }
   ]
 }

@@ -5,7 +5,7 @@
   "heroDescription": "Sử dụng OCR dựa trên trình duyệt nâng cao để trích xuất văn bản từ hình ảnh được quét và các tệp PDF không thể tìm kiếm. 100% miễn phí và riêng tư.",
   "sections": [
     {
-      "type": "edit_geo_targeting",
+      "type": "image_geo_targeting",
       "subTitle": "WebAssembly OCR",
       "subContent": "Tesseract OCR chạy ngay trong trình duyệt của bạn. Không có API đám mây liên quan."
     },
@@ -15,9 +15,23 @@
       "subContent": "Trích xuất văn bản từ thẻ ID nhạy cảm hoặc hồ sơ y tế một cách an toàn."
     },
     {
-      "type": "watermark_performance",
+      "type": "scan_performance",
       "subTitle": "Độ chính xác cao",
       "subContent": "Hỗ trợ nhiều ngôn ngữ và quét sai lệch."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "OCR này có hỗ trợ nhiều ngôn ngữ không?",
+      "a": "Có, công cụ WebAssembly dựa trên Tesseract của chúng tôi hỗ trợ hơn 100 ngôn ngữ. Chỉ cần đảm bảo quá trình quét rõ ràng."
+    },
+    {
+      "q": "Có an toàn để trích xuất văn bản từ hộ chiếu hoặc ID của tôi không?",
+      "a": "Tuyệt đối. Chúng tôi không tải tài liệu của bạn lên máy chủ của chúng tôi. Toàn bộ quá trình OCR diễn ra trong trình duyệt của riêng bạn."
+    },
+    {
+      "q": "Tại sao văn bản đôi khi không chính xác?",
+      "a": "Độ chính xác của OCR phụ thuộc rất nhiều vào chất lượng hình ảnh. Để có kết quả tốt nhất, hãy đảm bảo bản quét của bạn có độ tương phản cao và không bị mờ."
     }
   ]
 }

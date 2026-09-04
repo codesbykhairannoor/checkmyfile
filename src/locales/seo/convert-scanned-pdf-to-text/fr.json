@@ -5,7 +5,7 @@
   "heroDescription": "Utilisez l'OCR avancé basé sur un navigateur pour extraire le texte des images numérisées et des PDF impossibles à rechercher. 100% gratuit et privé.",
   "sections": [
     {
-      "type": "edit_geo_targeting",
+      "type": "image_geo_targeting",
       "subTitle": "OCR de WebAssembly",
       "subContent": "Tesseract OCR s'exécute directement dans votre navigateur. Aucune API cloud impliquée."
     },
@@ -15,9 +15,23 @@
       "subContent": "Extrayez le texte de cartes d’identité sensibles ou de dossiers médicaux en toute sécurité."
     },
     {
-      "type": "watermark_performance",
+      "type": "scan_performance",
       "subTitle": "Haute précision",
       "subContent": "Prise en charge de plusieurs langues et analyses asymétriques."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Cet OCR prend-il en charge plusieurs langues ?",
+      "a": "Oui, notre moteur WebAssembly basé sur Tesseract prend en charge plus de 100 langues. Assurez-vous simplement que l’analyse est claire."
+    },
+    {
+      "q": "Est-il sécuritaire d'extraire du texte de mon passeport ou de ma carte d'identité ?",
+      "a": "Absolument. Nous ne téléchargeons pas vos documents sur nos serveurs. L'ensemble du processus OCR se déroule dans votre propre navigateur."
+    },
+    {
+      "q": "Pourquoi le texte est-il parfois inexact ?",
+      "a": "La précision de l'OCR dépend fortement de la qualité de l'image. Pour de meilleurs résultats, assurez-vous que vos numérisations ont un contraste élevé et ne sont pas floues."
     }
   ]
 }

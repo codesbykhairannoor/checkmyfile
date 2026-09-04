@@ -5,19 +5,33 @@
   "heroDescription": "PDF 파일의 페이지를 쉽게 매깁니다. 머리글이나 바닥글에 사용자 정의 가능한 페이지 번호를 무료로 즉시 추가하세요.",
   "sections": [
     {
-      "type": "watermark_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "subTitle": "무료 페이지 매김",
       "subContent": "페이월에 도달하지 않고도 무제한 파일에 숫자를 추가할 수 있습니다."
     },
     {
-      "type": "scan_privacy_security",
+      "type": "unlock_privacy_security",
       "subTitle": "안전한 문서 처리",
       "subContent": "귀하의 논문과 보고서의 번호는 귀하의 컴퓨터에 비공개로 지정됩니다."
     },
     {
-      "type": "csv_excel_performance",
+      "type": "reverse_performance",
       "subTitle": "배치 번호 매기기",
       "subContent": "단 몇 초 만에 대용량 문서에 페이지 번호를 적용할 수 있습니다."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "페이지 번호가 표시되는 위치를 선택할 수 있나요?",
+      "a": "예, 완벽한 정렬을 위해 위치(예: 오른쪽 하단, 중앙 상단)와 여백 크기를 사용자 정의할 수 있습니다."
+    },
+    {
+      "q": "교과서와 같이 매우 큰 PDF는 무료인가요?",
+      "a": "예! 우리 도구는 파일 크기 제한 없이 완전 무료로 1000페이지 분량의 교과서를 밀리초 안에 페이지 매김할 수 있습니다."
+    },
+    {
+      "q": "원본 문서 형식이 변경되나요?",
+      "a": "아니요, 원본 텍스트나 여백을 변경하지 않고 페이지 번호가 기존 PDF 구조에 깔끔하게 겹쳐집니다."
     }
   ]
 }

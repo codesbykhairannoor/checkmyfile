@@ -5,19 +5,33 @@
   "heroDescription": "Upravte alebo odstráňte rušivé vodoznaky z dokumentov PDF. Úplne súkromný nástroj na odstránenie vodoznaku založený na prehliadači.",
   "sections": [
     {
-      "type": "unlock_geo_targeting",
+      "type": "watermark_geo_targeting",
       "subTitle": "Vyčistite svoje súbory PDF",
       "subContent": "Odstráňte nechcené pečiatky, pozadia a vodoznaky."
     },
     {
-      "type": "pagenum_privacy_security",
+      "type": "compare_privacy_security",
       "subTitle": "Miestna redakcia",
       "subContent": "Vymažte citlivé vodoznaky bez nahrávania súborov na naše servery."
     },
     {
-      "type": "protect_performance",
+      "type": "edit_performance",
       "subTitle": "Bezchybná kvalita",
       "subContent": "Objekt vodoznaku odstránime bez zníženia kvality dokumentu."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Odstraňuje textové vodoznaky alebo obrázkové vodoznaky?",
+      "a": "Náš nástroj vám umožňuje kresliť textové aj obrázkové vodoznaky, čím ich natrvalo vymažete."
+    },
+    {
+      "q": "Môže niekto obnoviť vodoznak po odstránení?",
+      "a": "Nie. Redigované oblasti sú trvalo sploštené a rastrované, takže skryté údaje sú úplne zničené a neobnoviteľné."
+    },
+    {
+      "q": "Musím za odstránenie vodoznakov platiť?",
+      "a": "Náš nástroj je 100% bezplatný bez skrytých poplatkov, predplatného alebo rušivých prémiových vyskakovacích okien."
     }
   ]
 }

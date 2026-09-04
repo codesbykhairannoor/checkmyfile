@@ -5,19 +5,33 @@
   "heroDescription": "Rédigez ou supprimez les filigranes intrusifs de vos documents PDF. Outil de suppression de filigrane entièrement privé, basé sur un navigateur.",
   "sections": [
     {
-      "type": "unlock_geo_targeting",
+      "type": "watermark_geo_targeting",
       "subTitle": "Nettoyez vos PDF",
       "subContent": "Supprimez les tampons, arrière-plans et filigranes indésirables."
     },
     {
-      "type": "pagenum_privacy_security",
+      "type": "compare_privacy_security",
       "subTitle": "Rédaction locale",
       "subContent": "Effacez les filigranes sensibles sans télécharger de fichiers sur nos serveurs."
     },
     {
-      "type": "protect_performance",
+      "type": "edit_performance",
       "subTitle": "Qualité irréprochable",
       "subContent": "Nous supprimons l’objet filigrane sans dégrader la qualité de votre document."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Supprime-t-il les filigranes de texte ou les filigranes d’images ?",
+      "a": "Notre outil vous permet de dessiner des zones de rédaction sur les filigranes de texte et d'image, les effaçant ainsi de manière permanente."
+    },
+    {
+      "q": "Quelqu'un peut-il récupérer le filigrane après sa suppression ?",
+      "a": "Non. Les zones expurgées sont aplaties et tramées de manière permanente, de sorte que les données cachées sont complètement détruites et irrécupérables."
+    },
+    {
+      "q": "Dois-je payer pour supprimer les filigranes ?",
+      "a": "Notre outil est 100 % gratuit, sans frais cachés, sans abonnement ni fenêtres contextuelles premium intrusives."
     }
   ]
 }

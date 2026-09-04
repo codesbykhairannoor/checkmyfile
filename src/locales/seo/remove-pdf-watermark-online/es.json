@@ -5,19 +5,33 @@
   "heroDescription": "Redacte o elimine marcas de agua intrusivas de sus documentos PDF. Herramienta de eliminación de marcas de agua totalmente privada y basada en navegador.",
   "sections": [
     {
-      "type": "unlock_geo_targeting",
+      "type": "watermark_geo_targeting",
       "subTitle": "Limpia tus archivos PDF",
       "subContent": "Elimine sellos, fondos y marcas de agua no deseados."
     },
     {
-      "type": "pagenum_privacy_security",
+      "type": "compare_privacy_security",
       "subTitle": "Redacción local",
       "subContent": "Borre marcas de agua confidenciales sin cargar archivos en nuestros servidores."
     },
     {
-      "type": "protect_performance",
+      "type": "edit_performance",
       "subTitle": "Calidad impecable",
       "subContent": "Eliminamos el objeto de marca de agua sin degradar la calidad de su documento."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "¿Elimina marcas de agua de texto o marcas de agua de imágenes?",
+      "a": "Nuestra herramienta le permite dibujar cuadros de redacción sobre marcas de agua de texto e imagen, borrándolos efectivamente de forma permanente."
+    },
+    {
+      "q": "¿Alguien puede recuperar la marca de agua después de eliminarla?",
+      "a": "No. Las áreas redactadas se aplanan y rasterizan permanentemente, por lo que los datos ocultos quedan completamente destruidos y son irrecuperables."
+    },
+    {
+      "q": "¿Tengo que pagar para eliminar las marcas de agua?",
+      "a": "Nuestra herramienta es 100% gratuita, sin tarifas ocultas, suscripciones ni ventanas emergentes premium intrusivas."
     }
   ]
 }

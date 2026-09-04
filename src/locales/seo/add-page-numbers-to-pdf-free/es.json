@@ -5,19 +5,33 @@
   "heroDescription": "Pagina fácilmente tus archivos PDF. Agregue números de página personalizables a encabezados o pies de página al instante y de forma gratuita.",
   "sections": [
     {
-      "type": "watermark_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "subTitle": "Paginación gratuita",
       "subContent": "Agregue números a archivos ilimitados sin tener que acceder a los muros de pago."
     },
     {
-      "type": "scan_privacy_security",
+      "type": "unlock_privacy_security",
       "subTitle": "Manejo seguro de documentos",
       "subContent": "Sus disertaciones e informes están numerados de forma privada en su máquina."
     },
     {
-      "type": "csv_excel_performance",
+      "type": "reverse_performance",
       "subTitle": "Numeración de lotes",
       "subContent": "Aplique números de página a documentos masivos en una fracción de segundo."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "¿Puedo elegir dónde aparecen los números de página?",
+      "a": "Sí, puede personalizar la posición (por ejemplo, abajo a la derecha, arriba al centro) y el tamaño del margen para una alineación perfecta."
+    },
+    {
+      "q": "¿Es gratuito para archivos PDF muy grandes, como libros de texto?",
+      "a": "¡Sí! Nuestra herramienta puede paginar un libro de texto de 1000 páginas en milisegundos, completamente gratis y sin restricciones de tamaño de archivo."
+    },
+    {
+      "q": "¿Alterará el formato de mi documento original?",
+      "a": "No, los números de página se superponen limpiamente en la estructura del PDF existente sin alterar el texto ni los márgenes originales."
     }
   ]
 }

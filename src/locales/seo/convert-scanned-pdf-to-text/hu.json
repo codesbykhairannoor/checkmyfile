@@ -5,7 +5,7 @@
   "heroDescription": "Használjon fejlett böngészőalapú OCR-t a beolvasott képekből és a nem kereshető PDF-fájlokból történő szöveg kivonásához. 100% ingyenes és privát.",
   "sections": [
     {
-      "type": "edit_geo_targeting",
+      "type": "image_geo_targeting",
       "subTitle": "WebAssembly OCR",
       "subContent": "A Tesseract OCR közvetlenül a böngészőben fut. Nincsenek felhő API-k érintettek."
     },
@@ -15,9 +15,23 @@
       "subContent": "Biztonságosan kivonhatja a szöveget az érzékeny személyi igazolványokból vagy orvosi feljegyzésekből."
     },
     {
-      "type": "watermark_performance",
+      "type": "scan_performance",
       "subTitle": "Nagy pontosságú",
       "subContent": "Több nyelv és ferde szkennelés támogatása."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Ez az OCR több nyelvet támogat?",
+      "a": "Igen, a Tesseract-alapú WebAssembly motorunk több mint 100 nyelvet támogat. Csak győződjön meg arról, hogy a beolvasás tiszta."
+    },
+    {
+      "q": "Biztonságos-e szöveget kivonni az útlevelemből vagy személyi igazolványomból?",
+      "a": "Teljesen. Dokumentumait nem töltjük fel szervereinkre. A teljes OCR folyamat a saját böngészőjében történik."
+    },
+    {
+      "q": "Miért pontatlan néha a szöveg?",
+      "a": "Az OCR pontossága nagymértékben függ a képminőségtől. A legjobb eredmény érdekében győződjön meg róla, hogy a beolvasott képek kontrasztja nagy, és nem elmosódottak."
     }
   ]
 }

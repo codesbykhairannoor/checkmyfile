@@ -1,23 +1,37 @@
 {
   "id": "remove-pdf-watermark-online",
   "supportCenter": true,
-  "heroTitle": "Bezpiecznie usuwaj znaki wodne z plików PDF",
-  "heroDescription": "Zredaguj lub usuń uciążliwe znaki wodne z dokumentów PDF. W pełni prywatne narzędzie do usuwania znaków wodnych oparte na przeglądarce.",
+  "heroTitle": "Remove Watermarks from PDF Files Safely",
+  "heroDescription": "Redact or remove intrusive watermarks from your PDF documents. Fully private, browser-based watermark removal tool.",
   "sections": [
     {
-      "type": "unlock_geo_targeting",
-      "subTitle": "Wyczyść swoje pliki PDF",
-      "subContent": "Usuń niechciane stemple, tła i znaki wodne."
+      "type": "watermark_geo_targeting",
+      "subTitle": "Clean Your PDFs",
+      "subContent": "Remove unwanted stamps, backgrounds, and watermarks."
     },
     {
-      "type": "pagenum_privacy_security",
-      "subTitle": "Redakcja lokalna",
-      "subContent": "Usuń wrażliwe znaki wodne bez przesyłania plików na nasze serwery."
+      "type": "compare_privacy_security",
+      "subTitle": "Local Redaction",
+      "subContent": "Erase sensitive watermarks without uploading files to our servers."
     },
     {
-      "type": "protect_performance",
-      "subTitle": "Bezbłędna jakość",
-      "subContent": "Usuwamy obiekt znaku wodnego bez pogorszenia jakości dokumentu."
+      "type": "edit_performance",
+      "subTitle": "Flawless Quality",
+      "subContent": "We remove the watermark object without degrading your document quality."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does it remove text watermarks or image watermarks?",
+      "a": "Our tool allows you to draw redaction boxes over both text and image watermarks, effectively erasing them permanently."
+    },
+    {
+      "q": "Can anyone recover the watermark after removal?",
+      "a": "No. The redacted areas are permanently flattened and rasterized, so the hidden data is completely destroyed and unrecoverable."
+    },
+    {
+      "q": "Do I need to pay to remove watermarks?",
+      "a": "Our tool is 100% free with no hidden fees, subscriptions, or intrusive premium pop-ups."
     }
   ]
 }

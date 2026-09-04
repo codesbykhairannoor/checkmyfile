@@ -5,19 +5,33 @@
   "heroDescription": "Buka penomboran fail PDF anda dengan mudah. Tambahkan nombor halaman yang boleh disesuaikan pada pengepala atau pengaki serta-merta secara percuma.",
   "sections": [
     {
-      "type": "watermark_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "subTitle": "Penomboran Percuma",
       "subContent": "Tambahkan nombor pada fail tanpa had tanpa menekan paywall."
     },
     {
-      "type": "scan_privacy_security",
+      "type": "unlock_privacy_security",
       "subTitle": "Pengendalian Dokumen Selamat",
       "subContent": "Disertasi dan laporan anda dinomborkan secara peribadi pada mesin anda."
     },
     {
-      "type": "csv_excel_performance",
+      "type": "reverse_performance",
       "subTitle": "Penomboran Kelompok",
       "subContent": "Gunakan nombor halaman pada dokumen besar dalam sepersekian saat."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Bolehkah saya memilih tempat nombor halaman muncul?",
+      "a": "Ya, anda boleh menyesuaikan kedudukan (cth., bawah-kanan, atas-tengah) dan saiz jidar untuk penjajaran sempurna."
+    },
+    {
+      "q": "Adakah ia percuma untuk PDF yang sangat besar seperti buku teks?",
+      "a": "Ya! Alat kami boleh menomborkan buku teks 1000 halaman dalam milisaat, percuma sepenuhnya dan tanpa sekatan saiz fail."
+    },
+    {
+      "q": "Adakah ia akan mengubah pemformatan dokumen asal saya?",
+      "a": "Tidak, nombor halaman ditindih dengan bersih pada struktur PDF sedia ada tanpa mengubah teks atau jidar asal anda."
     }
   ]
 }

@@ -5,19 +5,33 @@
   "heroDescription": "Verkleinern Sie Ihre PDF-Dateien direkt in Ihrem Browser auf 100 KB oder weniger. Perfekt für E-Mail-Anhänge und schnelles Teilen. 100 % privat.",
   "sections": [
     {
-      "type": "grayscale_geo_targeting",
+      "type": "word_geo_targeting",
       "subTitle": "Lokale Komprimierungs-Engine",
       "subContent": "Unsere fortschrittliche WASM-Engine komprimiert Ihr PDF lokal. Keine Dateibeschränkungen."
     },
     {
-      "type": "organize_privacy_security",
+      "type": "metadata_privacy_security",
       "subTitle": "Keine Datenaufbewahrung",
       "subContent": "Da die Dateien niemals Ihr Gerät verlassen, bleiben Ihre privaten Daten allein Ihr Eigentum."
     },
     {
-      "type": "metadata_performance",
+      "type": "protect_performance",
       "subTitle": "Blitzschnelle 100 KB",
       "subContent": "Erreichen Sie Ihre Zielgröße von 100 KB in Millisekunden ohne Serververzögerungen."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Kann ich ein 50 MB großes PDF auf 100 KB komprimieren?",
+      "a": "Abhängig vom Bildinhalt komprimiert unsere WASM-Engine die visuellen Daten stark und entfernt versteckte Metadaten, um so nah wie möglich an 100 KB heranzukommen."
+    },
+    {
+      "q": "Ist es wirklich 100 % privat?",
+      "a": "Ja. Die gesamte Komprimierung erfolgt direkt in Ihrem Browser. Ihr PDF wird niemals auf einen Server hochgeladen."
+    },
+    {
+      "q": "Wird der Text verschwommen?",
+      "a": "Nein, Vektortexte und Schriftarten bleiben gestochen scharf. Nur eingebettete Bilder werden komprimiert, um das 100-KB-Ziel zu erreichen."
     }
   ]
 }

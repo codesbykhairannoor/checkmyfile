@@ -5,19 +5,33 @@
   "heroDescription": "Kecilkan fail PDF anda kepada 100KB atau kurang terus dalam penyemak imbas anda. Sesuai untuk lampiran e-mel dan perkongsian pantas. 100% persendirian.",
   "sections": [
     {
-      "type": "grayscale_geo_targeting",
+      "type": "word_geo_targeting",
       "subTitle": "Enjin Mampatan Tempatan",
       "subContent": "Enjin WASM canggih kami memampatkan PDF anda secara tempatan. Tiada had fail."
     },
     {
-      "type": "organize_privacy_security",
+      "type": "metadata_privacy_security",
       "subTitle": "Pengekalan Data Sifar",
       "subContent": "Memandangkan fail tidak pernah meninggalkan peranti anda, data peribadi anda kekal milik anda sahaja."
     },
     {
-      "type": "metadata_performance",
+      "type": "protect_performance",
       "subTitle": "Sepantas Kilat 100KB",
       "subContent": "Capai saiz sasaran 100KB anda dalam milisaat tanpa kelewatan pelayan."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Bolehkah saya memampatkan PDF 50MB ke 100KB?",
+      "a": "Bergantung pada kandungan imej, enjin WASM kami akan memampatkan data visual dengan banyak dan mengalih keluar metadata tersembunyi untuk mendapatkan hampir 100KB secara fizikal yang mungkin."
+    },
+    {
+      "q": "Adakah ia benar-benar 100% peribadi?",
+      "a": "ya. Semua pemampatan berlaku terus di dalam penyemak imbas anda. PDF anda tidak pernah dimuat naik ke mana-mana pelayan."
+    },
+    {
+      "q": "Adakah teks akan menjadi kabur?",
+      "a": "Tidak, teks vektor dan fon kekal tajam. Hanya imej terbenam dimampatkan untuk mencapai sasaran 100KB."
     }
   ]
 }

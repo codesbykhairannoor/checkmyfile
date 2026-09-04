@@ -5,7 +5,7 @@
   "heroDescription": "Use advanced browser-based OCR to extract text from scanned images and unsearchable PDFs. 100% free and private.",
   "sections": [
     {
-      "type": "edit_geo_targeting",
+      "type": "image_geo_targeting",
       "subTitle": "WebAssembly OCR",
       "subContent": "Tesseract OCR runs right in your browser. No cloud APIs involved."
     },
@@ -15,9 +15,23 @@
       "subContent": "Extract text from sensitive ID cards or medical records safely."
     },
     {
-      "type": "watermark_performance",
+      "type": "scan_performance",
       "subTitle": "High Accuracy",
       "subContent": "Support for multiple languages and skewed scans."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does this OCR support multiple languages?",
+      "a": "Yes, our Tesseract-based WebAssembly engine supports over 100 languages. Just ensure the scan is clear."
+    },
+    {
+      "q": "Is it safe to extract text from my passport or ID?",
+      "a": "Absolutely. We do not upload your documents to our servers. The entire OCR process happens within your own browser."
+    },
+    {
+      "q": "Why is the text sometimes inaccurate?",
+      "a": "OCR accuracy depends heavily on the image quality. For best results, ensure your scans have high contrast and are not blurry."
     }
   ]
 }

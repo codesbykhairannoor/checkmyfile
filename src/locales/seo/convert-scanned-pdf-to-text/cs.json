@@ -5,7 +5,7 @@
   "heroDescription": "Použijte pokročilé OCR založené na prohlížeči k extrahování textu z naskenovaných obrázků a souborů PDF, které nelze prohledávat. 100% zdarma a soukromé.",
   "sections": [
     {
-      "type": "edit_geo_targeting",
+      "type": "image_geo_targeting",
       "subTitle": "WebAssembly OCR",
       "subContent": "Tesseract OCR běží přímo ve vašem prohlížeči. Nejsou zapojena žádná cloudová API."
     },
@@ -15,9 +15,23 @@
       "subContent": "Bezpečně extrahujte text z citlivých ID karet nebo lékařských záznamů."
     },
     {
-      "type": "watermark_performance",
+      "type": "scan_performance",
       "subTitle": "Vysoká přesnost",
       "subContent": "Podpora více jazyků a zkosené skenování."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Podporuje tento OCR více jazyků?",
+      "a": "Ano, náš modul WebAssembly založený na Tesseract podporuje více než 100 jazyků. Jen se ujistěte, že skenování je čisté."
+    },
+    {
+      "q": "Je bezpečné extrahovat text z mého pasu nebo občanského průkazu?",
+      "a": "Absolutně. Vaše dokumenty nenahráváme na naše servery. Celý proces OCR probíhá ve vašem vlastním prohlížeči."
+    },
+    {
+      "q": "Proč je text někdy nepřesný?",
+      "a": "Přesnost OCR silně závisí na kvalitě obrazu. Pro dosažení nejlepších výsledků zajistěte, aby vaše skeny měly vysoký kontrast a nebyly rozmazané."
     }
   ]
 }

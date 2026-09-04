@@ -5,19 +5,33 @@
   "heroDescription": "Kombinieren Sie mehrere hochsensible PDF-Dokumente ohne Internetverbindung. Funktioniert nach dem Laden vollständig offline.",
   "sections": [
     {
-      "type": "excel_csv_geo_targeting",
+      "type": "sign_geo_targeting",
       "subTitle": "Offline-Zusammenführung",
       "subContent": "Kombinieren Sie Ihre Steuerformulare und Rechtsdokumente, ohne sie irgendwohin zu senden."
     },
     {
-      "type": "redact_privacy_security",
+      "type": "rotate_privacy_security",
       "subTitle": "Datenschutz in Militärqualität",
       "subContent": "Wir garantieren absolute Privatsphäre, da wir Ihre Dateien physisch nicht sehen können."
     },
     {
-      "type": "metadata_performance",
+      "type": "excel_performance",
       "subTitle": "Sofortige Verarbeitung",
       "subContent": "Führen Sie Hunderte von Seiten sofort mit der clientseitigen Verarbeitung zusammen."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Wie funktioniert es komplett offline?",
+      "a": "Sobald die Seite geladen ist, wird unsere WebAssembly-Engine lokal ausgeführt. Sie können Ihre Internetverbindung trennen und mit dem Zusammenführen von PDFs fortfahren."
+    },
+    {
+      "q": "Kann ich Seiten vor dem Zusammenführen neu anordnen?",
+      "a": "Ja! Ziehen Sie die Dateien einfach per Drag & Drop in die Timeline, bevor Sie auf „Zusammenführen“ klicken, um sie perfekt anzuordnen."
+    },
+    {
+      "q": "Gibt es eine Begrenzung, wie viele PDFs ich zusammenführen kann?",
+      "a": "Es gibt keine künstlichen Grenzen. Sie sind nur durch den auf Ihrem lokalen Computer verfügbaren RAM begrenzt."
     }
   ]
 }

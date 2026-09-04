@@ -5,19 +5,33 @@
   "heroDescription": "PDF dosyalarınızı doğrudan tarayıcınızda 100 KB veya daha azına kadar küçültün. E-posta ekleri ve hızlı paylaşım için mükemmeldir. %100 özel.",
   "sections": [
     {
-      "type": "grayscale_geo_targeting",
+      "type": "word_geo_targeting",
       "subTitle": "Yerel Sıkıştırma Motoru",
       "subContent": "Gelişmiş WASM motorumuz PDF'nizi yerel olarak sıkıştırır. Dosya sınırlaması yok."
     },
     {
-      "type": "organize_privacy_security",
+      "type": "metadata_privacy_security",
       "subTitle": "Sıfır Veri Saklama",
       "subContent": "Dosyalar cihazınızdan asla çıkmadığından, özel verileriniz yalnızca size ait kalır."
     },
     {
-      "type": "metadata_performance",
+      "type": "protect_performance",
       "subTitle": "Yıldırım Hızında 100KB",
       "subContent": "Sunucu gecikmeleri olmadan 100KB hedef boyutunuza milisaniyeler içinde ulaşın."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "50MB PDF'yi 100KB'a kadar sıkıştırabilir miyim?",
+      "a": "Görüntü içeriğine bağlı olarak WASM motorumuz, fiziksel olarak mümkün olduğu kadar 100 KB'ye yaklaşmak için görsel verileri yoğun bir şekilde sıkıştıracak ve gizli meta verileri kaldıracaktır."
+    },
+    {
+      "q": "Gerçekten %100 özel mi?",
+      "a": "Evet. Tüm sıkıştırma doğrudan tarayıcınızın içinde gerçekleşir. PDF'niz hiçbir zaman herhangi bir sunucuya yüklenmez."
+    },
+    {
+      "q": "Metin bulanıklaşacak mı?",
+      "a": "Hayır, vektör metni ve yazı tipleri son derece keskin kalır. Yalnızca gömülü görüntüler 100 KB hedefine ulaşacak şekilde sıkıştırılır."
     }
   ]
 }

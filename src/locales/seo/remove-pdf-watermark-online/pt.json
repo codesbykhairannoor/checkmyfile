@@ -5,19 +5,33 @@
   "heroDescription": "Edite ou remova marcas d'água intrusivas de seus documentos PDF. Ferramenta de remoção de marca d'água totalmente privada baseada em navegador.",
   "sections": [
     {
-      "type": "unlock_geo_targeting",
+      "type": "watermark_geo_targeting",
       "subTitle": "Limpe seus PDFs",
       "subContent": "Remova carimbos, planos de fundo e marcas d'água indesejados."
     },
     {
-      "type": "pagenum_privacy_security",
+      "type": "compare_privacy_security",
       "subTitle": "Redação Local",
       "subContent": "Apague marcas d'água confidenciais sem enviar arquivos para nossos servidores."
     },
     {
-      "type": "protect_performance",
+      "type": "edit_performance",
       "subTitle": "Qualidade impecável",
       "subContent": "Removemos o objeto da marca d'água sem degradar a qualidade do documento."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Remove marcas d'água de texto ou marcas d'água de imagem?",
+      "a": "Nossa ferramenta permite que você desenhe caixas de redação sobre marcas d'água de texto e imagem, apagando-as permanentemente."
+    },
+    {
+      "q": "Alguém pode recuperar a marca d’água após a remoção?",
+      "a": "Não. As áreas editadas são permanentemente achatadas e rasterizadas, portanto os dados ocultos são completamente destruídos e irrecuperáveis."
+    },
+    {
+      "q": "Preciso pagar para remover marcas d'água?",
+      "a": "Nossa ferramenta é 100% gratuita, sem taxas ocultas, assinaturas ou pop-ups premium intrusivos."
     }
   ]
 }

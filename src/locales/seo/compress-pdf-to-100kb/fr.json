@@ -5,19 +5,33 @@
   "heroDescription": "Réduisez vos fichiers PDF à 100 Ko ou moins directement dans votre navigateur. Parfait pour les pièces jointes aux e-mails et le partage rapide. 100% privé.",
   "sections": [
     {
-      "type": "grayscale_geo_targeting",
+      "type": "word_geo_targeting",
       "subTitle": "Moteur de compression local",
       "subContent": "Notre moteur WASM avancé compresse votre PDF localement. Aucune limite de fichiers."
     },
     {
-      "type": "organize_privacy_security",
+      "type": "metadata_privacy_security",
       "subTitle": "Aucune conservation des données",
       "subContent": "Puisque les fichiers ne quittent jamais votre appareil, vos données privées restent les vôtres."
     },
     {
-      "type": "metadata_performance",
+      "type": "protect_performance",
       "subTitle": "Rapide comme l'éclair 100 Ko",
       "subContent": "Atteignez votre taille cible de 100 Ko en millisecondes sans retard du serveur."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Puis-je compresser un PDF de 50 Mo à 100 Ko ?",
+      "a": "En fonction du contenu de l'image, notre moteur WASM compressera fortement les données visuelles et supprimera les métadonnées cachées pour se rapprocher le plus possible de 100 Ko physiquement."
+    },
+    {
+      "q": "Est-ce vraiment 100% privé ?",
+      "a": "Oui. Toute compression s'effectue directement dans votre navigateur. Votre PDF n'est jamais téléchargé sur aucun serveur."
+    },
+    {
+      "q": "Le texte deviendra-t-il flou ?",
+      "a": "Non, le texte vectoriel et les polices restent parfaitement nets. Seules les images intégrées sont compressées pour atteindre la cible de 100 Ko."
     }
   ]
 }

@@ -5,19 +5,33 @@
   "heroDescription": "Sida in dina PDF-filer enkelt. Lägg till anpassningsbara sidnummer i sidhuvuden eller sidfötter direkt gratis.",
   "sections": [
     {
-      "type": "watermark_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "subTitle": "Gratis paginering",
       "subContent": "Lägg till nummer till obegränsade filer utan att träffa betalväggar."
     },
     {
-      "type": "scan_privacy_security",
+      "type": "unlock_privacy_security",
       "subTitle": "Säker dokumenthantering",
       "subContent": "Dina avhandlingar och rapporter numreras privat på din maskin."
     },
     {
-      "type": "csv_excel_performance",
+      "type": "reverse_performance",
       "subTitle": "Batchnumrering",
       "subContent": "Använd sidnummer på massiva dokument på en bråkdel av en sekund."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Kan jag välja var sidnumren ska visas?",
+      "a": "Ja, du kan anpassa positionen (t.ex. längst ner till höger, upptill i mitten) och marginalstorleken för perfekt justering."
+    },
+    {
+      "q": "Är det gratis för mycket stora PDF-filer som läroböcker?",
+      "a": "Ja! Vårt verktyg kan paginera en 1000-sidig lärobok på millisekunder, helt gratis och utan filstorleksbegränsningar."
+    },
+    {
+      "q": "Kommer det att ändra min originaldokumentformatering?",
+      "a": "Nej, sidnumren är överlagrade på den befintliga PDF-strukturen utan att ändra din ursprungliga text eller marginaler."
     }
   ]
 }

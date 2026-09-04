@@ -5,7 +5,7 @@
   "heroDescription": "Använd avancerad webbläsarbaserad OCR för att extrahera text från skannade bilder och osökbara PDF-filer. 100 % gratis och privat.",
   "sections": [
     {
-      "type": "edit_geo_targeting",
+      "type": "image_geo_targeting",
       "subTitle": "WebAssembly OCR",
       "subContent": "Tesseract OCR körs direkt i din webbläsare. Inga moln-API:er inblandade."
     },
@@ -15,9 +15,23 @@
       "subContent": "Extrahera text från känsliga ID-kort eller journaler på ett säkert sätt."
     },
     {
-      "type": "watermark_performance",
+      "type": "scan_performance",
       "subTitle": "Hög noggrannhet",
       "subContent": "Stöd för flera språk och skeva skanningar."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Stöder denna OCR flera språk?",
+      "a": "Ja, vår Tesseract-baserade WebAssembly-motor stöder över 100 språk. Se bara till att skanningen är tydlig."
+    },
+    {
+      "q": "Är det säkert att extrahera text från mitt pass eller ID?",
+      "a": "Absolut. Vi laddar inte upp dina dokument till våra servrar. Hela OCR-processen sker i din egen webbläsare."
+    },
+    {
+      "q": "Varför är texten ibland felaktig?",
+      "a": "OCR-noggrannheten beror mycket på bildkvaliteten. För bästa resultat, se till att dina skanningar har hög kontrast och inte är suddiga."
     }
   ]
 }

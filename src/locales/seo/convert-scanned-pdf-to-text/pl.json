@@ -5,7 +5,7 @@
   "heroDescription": "Użyj zaawansowanego OCR opartego na przeglądarce, aby wyodrębnić tekst ze zeskanowanych obrazów i nieprzeszukiwalnych plików PDF. 100% darmowy i prywatny.",
   "sections": [
     {
-      "type": "edit_geo_targeting",
+      "type": "image_geo_targeting",
       "subTitle": "OCR zestawu WWW",
       "subContent": "Tesseract OCR działa bezpośrednio w Twojej przeglądarce. Żadne interfejsy API w chmurze nie są zaangażowane."
     },
@@ -15,9 +15,23 @@
       "subContent": "Bezpiecznie wyodrębniaj tekst z wrażliwych dowodów osobistych lub dokumentacji medycznej."
     },
     {
-      "type": "watermark_performance",
+      "type": "scan_performance",
       "subTitle": "Wysoka dokładność",
       "subContent": "Obsługa wielu języków i przekrzywionych skanów."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Czy ten OCR obsługuje wiele języków?",
+      "a": "Tak, nasz silnik WebAssembly oparty na Tesseract obsługuje ponad 100 języków. Upewnij się tylko, że skan jest wyraźny."
+    },
+    {
+      "q": "Czy wyodrębnienie tekstu z paszportu lub dowodu osobistego jest bezpieczne?",
+      "a": "Absolutnie. Nie przesyłamy Twoich dokumentów na nasze serwery. Cały proces OCR odbywa się w Twojej przeglądarce."
+    },
+    {
+      "q": "Dlaczego tekst czasami jest niedokładny?",
+      "a": "Dokładność rozpoznawania OCR zależy w dużej mierze od jakości obrazu. Aby uzyskać najlepsze rezultaty, upewnij się, że skany mają wysoki kontrast i nie są rozmyte."
     }
   ]
 }

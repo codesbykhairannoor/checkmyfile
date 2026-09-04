@@ -5,19 +5,33 @@
   "heroDescription": "Zmniejsz pliki PDF do 100 KB lub mniej bezpośrednio w przeglądarce. Idealny do załączników do wiadomości e-mail i szybkiego udostępniania. 100% prywatności.",
   "sections": [
     {
-      "type": "grayscale_geo_targeting",
+      "type": "word_geo_targeting",
       "subTitle": "Lokalny silnik kompresji",
       "subContent": "Nasz zaawansowany silnik WASM kompresuje pliki PDF lokalnie. Brak limitów plików."
     },
     {
-      "type": "organize_privacy_security",
+      "type": "metadata_privacy_security",
       "subTitle": "Zerowe przechowywanie danych",
       "subContent": "Ponieważ pliki nigdy nie opuszczają Twojego urządzenia, Twoje prywatne dane pozostają wyłącznie Twoje."
     },
     {
-      "type": "metadata_performance",
+      "type": "protect_performance",
       "subTitle": "Błyskawicznie szybkie 100 KB",
       "subContent": "Osiągnij docelowy rozmiar 100 KB w milisekundach bez opóźnień serwera."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Czy mogę skompresować plik PDF o rozmiarze 50 MB do 100 KB?",
+      "a": "W zależności od zawartości obrazu nasz silnik WASM mocno kompresuje dane wizualne i usuwa ukryte metadane, aby uzyskać rozmiar możliwie najbliższy 100 KB."
+    },
+    {
+      "q": "Czy to naprawdę jest w 100% prywatne?",
+      "a": "Tak. Cała kompresja odbywa się bezpośrednio w przeglądarce. Twój plik PDF nigdy nie jest przesyłany na żaden serwer."
+    },
+    {
+      "q": "Czy tekst będzie niewyraźny?",
+      "a": "Nie, tekst wektorowy i czcionki pozostają ostre jak brzytwa. Tylko osadzone obrazy są kompresowane tak, aby osiągnąć docelowy rozmiar 100 KB."
     }
   ]
 }

@@ -5,19 +5,33 @@
   "heroDescription": "Változtassa meg vagy távolítsa el a tolakodó vízjeleket PDF-dokumentumaiból. Teljesen privát, böngésző alapú vízjeleltávolító eszköz.",
   "sections": [
     {
-      "type": "unlock_geo_targeting",
+      "type": "watermark_geo_targeting",
       "subTitle": "Tisztítsa meg PDF-eit",
       "subContent": "Távolítsa el a nem kívánt bélyegeket, háttereket és vízjeleket."
     },
     {
-      "type": "pagenum_privacy_security",
+      "type": "compare_privacy_security",
       "subTitle": "Helyi szerkesztés",
       "subContent": "Törölje az érzékeny vízjeleket anélkül, hogy fájlokat töltene fel szervereinkre."
     },
     {
-      "type": "protect_performance",
+      "type": "edit_performance",
       "subTitle": "Hibátlan minőség",
       "subContent": "A vízjel objektumot a dokumentum minőségének romlása nélkül távolítjuk el."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Eltávolítja a szöveges vízjeleket vagy a képi vízjeleket?",
+      "a": "Eszközünk lehetővé teszi, hogy szöveges és képi vízjelekre szöveges és képi vízjelekre szövegszerkesztő dobozokat rajzoljon, amelyek hatékonyan véglegesen törölhetők."
+    },
+    {
+      "q": "Valaki vissza tudja állítani a vízjelet eltávolítás után?",
+      "a": "Nem. A szerkesztett területek véglegesen kisimulnak és rasztereződnek, így a rejtett adatok teljesen megsemmisülnek és nem állíthatók helyre."
+    },
+    {
+      "q": "Fizetnem kell a vízjelek eltávolításáért?",
+      "a": "Eszközünk 100%-ban ingyenes, nincsenek rejtett díjak, előfizetések vagy tolakodó prémium előugró ablakok."
     }
   ]
 }

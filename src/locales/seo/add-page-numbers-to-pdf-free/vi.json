@@ -5,19 +5,33 @@
   "heroDescription": "Dễ dàng phân trang các tập tin PDF của bạn. Thêm số trang có thể tùy chỉnh vào đầu trang hoặc chân trang ngay lập tức miễn phí.",
   "sections": [
     {
-      "type": "watermark_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "subTitle": "Phân trang miễn phí",
       "subContent": "Thêm số vào tệp không giới hạn mà không cần phải trả phí."
     },
     {
-      "type": "scan_privacy_security",
+      "type": "unlock_privacy_security",
       "subTitle": "Xử lý tài liệu an toàn",
       "subContent": "Luận văn và báo cáo của bạn được đánh số riêng trên máy của bạn."
     },
     {
-      "type": "csv_excel_performance",
+      "type": "reverse_performance",
       "subTitle": "Đánh số lô",
       "subContent": "Áp dụng số trang cho các tài liệu lớn trong một phần giây."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Tôi có thể chọn nơi xuất hiện số trang không?",
+      "a": "Có, bạn có thể tùy chỉnh vị trí (ví dụ: dưới cùng bên phải, trên cùng ở giữa) và kích thước lề để căn chỉnh hoàn hảo."
+    },
+    {
+      "q": "Có miễn phí cho các tệp PDF rất lớn như sách giáo khoa không?",
+      "a": "Đúng! Công cụ của chúng tôi có thể phân trang một cuốn sách giáo khoa 1000 trang trong một phần nghìn giây, hoàn toàn miễn phí và không bị giới hạn kích thước tệp."
+    },
+    {
+      "q": "Nó có làm thay đổi định dạng tài liệu gốc của tôi không?",
+      "a": "Không, số trang được phủ rõ ràng lên cấu trúc PDF hiện có mà không làm thay đổi văn bản hoặc lề ban đầu của bạn."
     }
   ]
 }

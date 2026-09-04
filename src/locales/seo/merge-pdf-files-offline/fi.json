@@ -5,19 +5,33 @@
   "heroDescription": "Yhdistä useita erittäin arkaluonteisia PDF-dokumentteja ilman Internet-yhteyttä. Toimii täysin offline-tilassa latauksen jälkeen.",
   "sections": [
     {
-      "type": "excel_csv_geo_targeting",
+      "type": "sign_geo_targeting",
       "subTitle": "Offline yhdistäminen",
       "subContent": "Yhdistä verolomakkeesi ja lakiasiakirjasi lähettämättä niitä minnekään."
     },
     {
-      "type": "redact_privacy_security",
+      "type": "rotate_privacy_security",
       "subTitle": "Sotilastason yksityisyys",
       "subContent": "Takaamme täydellisen yksityisyyden, koska emme fyysisesti näe tiedostojasi."
     },
     {
-      "type": "metadata_performance",
+      "type": "excel_performance",
       "subTitle": "Välitön käsittely",
       "subContent": "Yhdistä 100 sivua välittömästi asiakaspuolen käsittelyllä."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Miten se toimii täysin offline-tilassa?",
+      "a": "Kun sivu latautuu, WebAssembly-moottorimme toimii paikallisesti. Voit katkaista Internet-yhteyden ja jatkaa PDF-tiedostojen yhdistämistä."
+    },
+    {
+      "q": "Voinko järjestää sivut uudelleen ennen yhdistämistä?",
+      "a": "Kyllä! Vedä ja pudota tiedostot aikajanalle ennen kuin napsautat Yhdistä, jotta ne järjestyvät täydellisesti."
+    },
+    {
+      "q": "Onko rajoitettu kuinka monta PDF-tiedostoa voin yhdistää?",
+      "a": "Keinotekoisia rajoja ei ole. Vain paikallisella tietokoneellasi käytettävissä oleva RAM-muisti rajoittaa sinua."
     }
   ]
 }

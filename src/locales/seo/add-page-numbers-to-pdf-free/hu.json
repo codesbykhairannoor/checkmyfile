@@ -5,19 +5,33 @@
   "heroDescription": "Könnyen lapozhatja PDF fájljait. Adjon testreszabható oldalszámokat a fejlécekhez vagy láblécekhez azonnal, ingyenesen.",
   "sections": [
     {
-      "type": "watermark_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "subTitle": "Ingyenes oldalszámozás",
       "subContent": "Adjon hozzá számokat korlátlan számú fájlhoz anélkül, hogy megütné a fizetőfalakat."
     },
     {
-      "type": "scan_privacy_security",
+      "type": "unlock_privacy_security",
       "subTitle": "Biztonságos dokumentumkezelés",
       "subContent": "Dolgozatai és jelentései privát számozással vannak ellátva a gépén."
     },
     {
-      "type": "csv_excel_performance",
+      "type": "reverse_performance",
       "subTitle": "Tételszámozás",
       "subContent": "A másodperc törtrésze alatt oldalszámozást alkalmazhat a hatalmas dokumentumokon."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Kiválaszthatom, hogy hol jelenjenek meg az oldalszámok?",
+      "a": "Igen, testreszabhatja a pozíciót (pl. jobb alsó, középen felül) és a margó méretét a tökéletes igazítás érdekében."
+    },
+    {
+      "q": "Nagyon nagy PDF-ekhez, például tankönyvekhez ingyenes?",
+      "a": "Igen! Eszközünk egy 1000 oldalas tankönyv oldalszámozására képes ezredmásodpercek alatt, teljesen ingyenesen és fájlméret-korlátozás nélkül."
+    },
+    {
+      "q": "Megváltoztatja az eredeti dokumentum formázását?",
+      "a": "Nem, az oldalszámok tisztán rá vannak fedve a meglévő PDF-struktúrára anélkül, hogy megváltoztatnák az eredeti szöveget vagy a margókat."
     }
   ]
 }

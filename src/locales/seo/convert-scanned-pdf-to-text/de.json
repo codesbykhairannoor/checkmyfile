@@ -5,7 +5,7 @@
   "heroDescription": "Verwenden Sie erweiterte browserbasierte OCR, um Text aus gescannten Bildern und nicht durchsuchbaren PDFs zu extrahieren. 100 % kostenlos und privat.",
   "sections": [
     {
-      "type": "edit_geo_targeting",
+      "type": "image_geo_targeting",
       "subTitle": "WebAssembly-OCR",
       "subContent": "Tesseract OCR läuft direkt in Ihrem Browser. Keine Cloud-APIs beteiligt."
     },
@@ -15,9 +15,23 @@
       "subContent": "Extrahieren Sie sicher Text aus sensiblen Ausweisen oder Krankenakten."
     },
     {
-      "type": "watermark_performance",
+      "type": "scan_performance",
       "subTitle": "Hohe Genauigkeit",
       "subContent": "Unterstützung für mehrere Sprachen und verzerrte Scans."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Unterstützt diese OCR mehrere Sprachen?",
+      "a": "Ja, unsere Tesseract-basierte WebAssembly-Engine unterstützt über 100 Sprachen. Stellen Sie einfach sicher, dass der Scan klar ist."
+    },
+    {
+      "q": "Ist es sicher, Text aus meinem Reisepass oder Personalausweis zu extrahieren?",
+      "a": "Absolut. Wir laden Ihre Dokumente nicht auf unsere Server hoch. Der gesamte OCR-Prozess findet in Ihrem eigenen Browser statt."
+    },
+    {
+      "q": "Warum ist der Text manchmal ungenau?",
+      "a": "Die OCR-Genauigkeit hängt stark von der Bildqualität ab. Um optimale Ergebnisse zu erzielen, stellen Sie sicher, dass Ihre Scans einen hohen Kontrast aufweisen und nicht verschwommen sind."
     }
   ]
 }

@@ -5,19 +5,33 @@
   "heroDescription": "PDF belgelerinizdeki izinsiz filigranları düzenleyin veya kaldırın. Tamamen özel, tarayıcı tabanlı filigran kaldırma aracı.",
   "sections": [
     {
-      "type": "unlock_geo_targeting",
+      "type": "watermark_geo_targeting",
       "subTitle": "PDF'lerinizi temizleyin",
       "subContent": "İstenmeyen damgaları, arka planları ve filigranları kaldırın."
     },
     {
-      "type": "pagenum_privacy_security",
+      "type": "compare_privacy_security",
       "subTitle": "Yerel Redaksiyon",
       "subContent": "Sunucularımıza dosya yüklemeden hassas filigranları silin."
     },
     {
-      "type": "protect_performance",
+      "type": "edit_performance",
       "subTitle": "Kusursuz Kalite",
       "subContent": "Belge kalitenizi bozmadan filigran nesnesini kaldırıyoruz."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Metin filigranlarını veya resim filigranlarını kaldırıyor mu?",
+      "a": "Aracımız, hem metin hem de resim filigranlarının üzerine redaksiyon kutuları çizmenize ve bunları etkili bir şekilde kalıcı olarak silmenize olanak tanır."
+    },
+    {
+      "q": "Kaldırıldıktan sonra filigranı kurtarabilen var mı?",
+      "a": "Hayır. Düzenlenen alanlar kalıcı olarak düzleştirilir ve rasterleştirilir, böylece gizli veriler tamamen yok edilir ve kurtarılamaz."
+    },
+    {
+      "q": "Filigranları kaldırmak için ödeme yapmam gerekiyor mu?",
+      "a": "Aracımız hiçbir gizli ücret, abonelik veya müdahaleci premium açılır pencere olmadan %100 ücretsizdir."
     }
   ]
 }

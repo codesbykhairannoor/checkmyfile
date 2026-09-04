@@ -5,19 +5,33 @@
   "heroDescription": "브라우저에서 PDF 파일을 100KB 이하로 직접 축소하세요. 이메일 첨부 및 빠른 공유에 적합합니다. 100% 비공개입니다.",
   "sections": [
     {
-      "type": "grayscale_geo_targeting",
+      "type": "word_geo_targeting",
       "subTitle": "로컬 압축 엔진",
       "subContent": "우리의 고급 WASM 엔진은 PDF를 로컬로 압축합니다. 파일 제한이 없습니다."
     },
     {
-      "type": "organize_privacy_security",
+      "type": "metadata_privacy_security",
       "subTitle": "제로 데이터 보존",
       "subContent": "파일이 장치를 떠나지 않으므로 개인 데이터는 귀하의 것입니다."
     },
     {
-      "type": "metadata_performance",
+      "type": "protect_performance",
       "subTitle": "번개처럼 빠른 100KB",
       "subContent": "서버 지연 없이 100KB 목표 크기를 밀리초 안에 달성하세요."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "50MB PDF를 100KB로 압축할 수 있나요?",
+      "a": "이미지 콘텐츠에 따라 WASM 엔진은 시각적 데이터를 크게 압축하고 숨겨진 메타데이터를 제거하여 물리적으로 가능한 한 100KB에 가깝게 만듭니다."
+    },
+    {
+      "q": "정말 100% 비공개인가요?",
+      "a": "예. 모든 압축은 브라우저 내에서 직접 발생합니다. 귀하의 PDF는 어떤 서버에도 업로드되지 않습니다."
+    },
+    {
+      "q": "텍스트가 흐려지나요?",
+      "a": "아니요, 벡터 텍스트와 글꼴은 매우 선명하게 유지됩니다. 포함된 이미지만 100KB 목표에 맞춰 압축됩니다."
     }
   ]
 }

@@ -5,19 +5,33 @@
   "heroDescription": "Snadno stránkujte své soubory PDF. Přidejte přizpůsobitelná čísla stránek do záhlaví nebo zápatí okamžitě a zdarma.",
   "sections": [
     {
-      "type": "watermark_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "subTitle": "Stránkování zdarma",
       "subContent": "Přidejte čísla do neomezeného počtu souborů, aniž byste narazili na paywally."
     },
     {
-      "type": "scan_privacy_security",
+      "type": "unlock_privacy_security",
       "subTitle": "Bezpečná manipulace s dokumenty",
       "subContent": "Vaše disertační práce a zprávy jsou na vašem počítači soukromě očíslovány."
     },
     {
-      "type": "csv_excel_performance",
+      "type": "reverse_performance",
       "subTitle": "Číslování šarží",
       "subContent": "Aplikujte čísla stránek na velké dokumenty ve zlomku sekundy."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Mohu si vybrat, kde se budou čísla stránek zobrazovat?",
+      "a": "Ano, můžete upravit pozici (např. vpravo dole, uprostřed nahoře) a velikost okraje pro dokonalé zarovnání."
+    },
+    {
+      "q": "Je to zdarma pro velmi velké soubory PDF, jako jsou učebnice?",
+      "a": "Ano! Náš nástroj dokáže stránkovat 1000stránkovou učebnici během milisekund, zcela zdarma a bez omezení velikosti souboru."
+    },
+    {
+      "q": "Změní to moje původní formátování dokumentu?",
+      "a": "Ne, čísla stránek jsou čistě překryta stávající strukturou PDF beze změny původního textu nebo okrajů."
     }
   ]
 }

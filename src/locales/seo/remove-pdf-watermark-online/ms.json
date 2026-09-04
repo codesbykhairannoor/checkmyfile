@@ -5,19 +5,33 @@
   "heroDescription": "Sunting atau alih keluar tera air yang mengganggu daripada dokumen PDF anda. Alat penyingkiran tera air berasaskan pelayar peribadi sepenuhnya.",
   "sections": [
     {
-      "type": "unlock_geo_targeting",
+      "type": "watermark_geo_targeting",
       "subTitle": "Bersihkan PDF Anda",
       "subContent": "Alih keluar setem, latar belakang dan tera air yang tidak diingini."
     },
     {
-      "type": "pagenum_privacy_security",
+      "type": "compare_privacy_security",
       "subTitle": "Redaksi Tempatan",
       "subContent": "Padamkan tera air sensitif tanpa memuat naik fail ke pelayan kami."
     },
     {
-      "type": "protect_performance",
+      "type": "edit_performance",
       "subTitle": "Kualiti Tanpa Cacat",
       "subContent": "Kami mengalih keluar objek tera air tanpa merendahkan kualiti dokumen anda."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Adakah ia mengalih keluar tera air teks atau tera air imej?",
+      "a": "Alat kami membolehkan anda melukis kotak redaksi pada kedua-dua teks dan tera air imej, dengan berkesan memadamkannya secara kekal."
+    },
+    {
+      "q": "Bolehkah sesiapa memulihkan tera air selepas dialih keluar?",
+      "a": "Tidak. Kawasan yang disunting diratakan dan diraster secara kekal, jadi data yang tersembunyi dimusnahkan sepenuhnya dan tidak dapat dipulihkan."
+    },
+    {
+      "q": "Adakah saya perlu membayar untuk membuang tera air?",
+      "a": "Alat kami adalah 100% percuma tanpa yuran tersembunyi, langganan atau pop timbul premium yang mengganggu."
     }
   ]
 }

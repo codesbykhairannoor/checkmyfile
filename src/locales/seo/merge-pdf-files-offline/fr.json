@@ -5,19 +5,33 @@
   "heroDescription": "Combinez plusieurs documents PDF hautement sensibles sans connexion Internet. Fonctionne entièrement hors ligne après le chargement.",
   "sections": [
     {
-      "type": "excel_csv_geo_targeting",
+      "type": "sign_geo_targeting",
       "subTitle": "Fusion hors ligne",
       "subContent": "Regroupez vos formulaires fiscaux et documents juridiques sans les envoyer nulle part."
     },
     {
-      "type": "redact_privacy_security",
+      "type": "rotate_privacy_security",
       "subTitle": "Confidentialité de qualité militaire",
       "subContent": "Nous garantissons une confidentialité absolue car nous ne pouvons physiquement pas voir vos fichiers."
     },
     {
-      "type": "metadata_performance",
+      "type": "excel_performance",
       "subTitle": "Traitement instantané",
       "subContent": "Fusionnez instantanément des centaines de pages grâce au traitement côté client."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Comment ça marche complètement hors ligne ?",
+      "a": "Une fois la page chargée, notre moteur WebAssembly s'exécute localement. Vous pouvez déconnecter votre connexion Internet et continuer à fusionner des PDF."
+    },
+    {
+      "q": "Puis-je réorganiser les pages avant de les fusionner ?",
+      "a": "Oui! Faites simplement glisser et déposez les fichiers dans la chronologie avant de cliquer sur Fusionner pour les ordonner parfaitement."
+    },
+    {
+      "q": "Y a-t-il une limite au nombre de PDF que je peux fusionner ?",
+      "a": "Il n’y a pas de limites artificielles. Vous n'êtes limité que par la RAM disponible sur votre ordinateur local."
     }
   ]
 }

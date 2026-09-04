@@ -5,7 +5,7 @@
   "heroDescription": "Utilizza l'OCR avanzato basato su browser per estrarre testo da immagini scansionate e PDF non ricercabili. 100% gratuito e privato.",
   "sections": [
     {
-      "type": "edit_geo_targeting",
+      "type": "image_geo_targeting",
       "subTitle": "OCR dell'assembly Web",
       "subContent": "Tesseract OCR funziona direttamente nel tuo browser. Nessuna API cloud coinvolta."
     },
@@ -15,9 +15,23 @@
       "subContent": "Estrai testo da carte d'identità sensibili o cartelle cliniche in modo sicuro."
     },
     {
-      "type": "watermark_performance",
+      "type": "scan_performance",
       "subTitle": "Alta precisione",
       "subContent": "Supporto per più lingue e scansioni distorte."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Questo OCR supporta più lingue?",
+      "a": "Sì, il nostro motore WebAssembly basato su Tesseract supporta oltre 100 lingue. Assicurati solo che la scansione sia chiara."
+    },
+    {
+      "q": "È sicuro estrarre testo dal mio passaporto o carta d'identità?",
+      "a": "Assolutamente. Non carichiamo i tuoi documenti sui nostri server. L'intero processo OCR avviene all'interno del tuo browser."
+    },
+    {
+      "q": "Perché il testo a volte è impreciso?",
+      "a": "La precisione dell'OCR dipende fortemente dalla qualità dell'immagine. Per ottenere i migliori risultati, assicurati che le scansioni abbiano un contrasto elevato e non siano sfocate."
     }
   ]
 }

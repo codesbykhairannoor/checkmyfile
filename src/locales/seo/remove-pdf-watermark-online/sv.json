@@ -5,19 +5,33 @@
   "heroDescription": "Redigera eller ta bort påträngande vattenstämplar från dina PDF-dokument. Helt privat, webbläsarbaserat verktyg för borttagning av vattenstämplar.",
   "sections": [
     {
-      "type": "unlock_geo_targeting",
+      "type": "watermark_geo_targeting",
       "subTitle": "Rengör dina PDF-filer",
       "subContent": "Ta bort oönskade stämplar, bakgrunder och vattenstämplar."
     },
     {
-      "type": "pagenum_privacy_security",
+      "type": "compare_privacy_security",
       "subTitle": "Lokal redaktion",
       "subContent": "Radera känsliga vattenstämplar utan att ladda upp filer till våra servrar."
     },
     {
-      "type": "protect_performance",
+      "type": "edit_performance",
       "subTitle": "Felfri kvalitet",
       "subContent": "Vi tar bort vattenstämpelobjektet utan att försämra din dokumentkvalitet."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Tar den bort textvattenstämplar eller bildvattenstämplar?",
+      "a": "Vårt verktyg låter dig rita redigeringsrutor över både text- och bildvattenstämplar, vilket effektivt raderar dem permanent."
+    },
+    {
+      "q": "Kan någon återställa vattenstämpeln efter borttagning?",
+      "a": "Nej. De redigerade områdena är permanent tillplattade och rastrerade, så dolda data är helt förstörda och går inte att återställa."
+    },
+    {
+      "q": "Behöver jag betala för att ta bort vattenstämplar?",
+      "a": "Vårt verktyg är 100 % gratis utan dolda avgifter, prenumerationer eller påträngande premium popup-fönster."
     }
   ]
 }

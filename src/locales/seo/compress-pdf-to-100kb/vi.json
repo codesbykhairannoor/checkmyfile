@@ -5,19 +5,33 @@
   "heroDescription": "Thu nhỏ tệp PDF của bạn xuống còn 100KB hoặc ít hơn trực tiếp trong trình duyệt của bạn. Hoàn hảo cho việc đính kèm email và chia sẻ nhanh chóng. 100% riêng tư.",
   "sections": [
     {
-      "type": "grayscale_geo_targeting",
+      "type": "word_geo_targeting",
       "subTitle": "Công cụ nén cục bộ",
       "subContent": "Công cụ WASM tiên tiến của chúng tôi nén tệp PDF của bạn cục bộ. Không có giới hạn tập tin."
     },
     {
-      "type": "organize_privacy_security",
+      "type": "metadata_privacy_security",
       "subTitle": "Không lưu giữ dữ liệu",
       "subContent": "Vì các tập tin không bao giờ rời khỏi thiết bị của bạn nên dữ liệu riêng tư vẫn là của riêng bạn."
     },
     {
-      "type": "metadata_performance",
+      "type": "protect_performance",
       "subTitle": "Nhanh như chớp 100KB",
       "subContent": "Đạt kích thước mục tiêu 100KB của bạn trong một phần nghìn giây mà không bị chậm trễ máy chủ."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Tôi có thể nén tệp PDF 50 MB xuống 100KB không?",
+      "a": "Tùy thuộc vào nội dung hình ảnh, công cụ WASM của chúng tôi sẽ nén mạnh mẽ dữ liệu hình ảnh và xóa siêu dữ liệu ẩn để có kích thước vật lý gần 100KB nhất có thể."
+    },
+    {
+      "q": "Có thực sự là riêng tư 100%?",
+      "a": "Đúng. Tất cả quá trình nén diễn ra trực tiếp bên trong trình duyệt của bạn. PDF của bạn không bao giờ được tải lên bất kỳ máy chủ nào."
+    },
+    {
+      "q": "Văn bản sẽ bị mờ?",
+      "a": "Không, văn bản và phông chữ vector vẫn sắc nét như dao cạo. Chỉ những hình ảnh nhúng mới được nén để đạt mục tiêu 100KB."
     }
   ]
 }

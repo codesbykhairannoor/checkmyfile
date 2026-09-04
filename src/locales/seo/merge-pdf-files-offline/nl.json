@@ -5,19 +5,33 @@
   "heroDescription": "Combineer meerdere zeer gevoelige PDF-documenten zonder internetverbinding. Werkt volledig offline na het laden.",
   "sections": [
     {
-      "type": "excel_csv_geo_targeting",
+      "type": "sign_geo_targeting",
       "subTitle": "Offline samenvoegen",
       "subContent": "Combineer uw belastingformulieren en juridische documenten zonder ze ergens heen te sturen."
     },
     {
-      "type": "redact_privacy_security",
+      "type": "rotate_privacy_security",
       "subTitle": "Privacy van militair niveau",
       "subContent": "Wij garanderen absolute privacy omdat wij uw bestanden fysiek niet kunnen zien."
     },
     {
-      "type": "metadata_performance",
+      "type": "excel_performance",
       "subTitle": "Onmiddellijke verwerking",
       "subContent": "Voeg direct honderden pagina's samen met verwerking aan de clientzijde."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Hoe werkt het volledig offline?",
+      "a": "Zodra de pagina is geladen, draait onze WebAssembly-engine lokaal. U kunt de internetverbinding verbreken en doorgaan met het samenvoegen van PDF's."
+    },
+    {
+      "q": "Kan ik pagina's herschikken voordat ik ze samenvoeg?",
+      "a": "Ja! Sleep de bestanden eenvoudigweg naar de tijdlijn voordat u op Samenvoegen klikt om ze perfect te ordenen."
+    },
+    {
+      "q": "Is er een limiet voor het aantal PDF's dat ik kan samenvoegen?",
+      "a": "Er zijn geen kunstmatige grenzen. U wordt alleen beperkt door het RAM-geheugen dat beschikbaar is op uw lokale computer."
     }
   ]
 }

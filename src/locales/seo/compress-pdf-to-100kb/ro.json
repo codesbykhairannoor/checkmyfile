@@ -5,19 +5,33 @@
   "heroDescription": "Reduceți fișierele PDF până la 100 KB sau mai puțin direct în browser. Perfect pentru atașamentele de e-mail și partajarea rapidă. 100% privat.",
   "sections": [
     {
-      "type": "grayscale_geo_targeting",
+      "type": "word_geo_targeting",
       "subTitle": "Motor de compresie local",
       "subContent": "Motorul nostru avansat WASM comprimă PDF-ul local. Fără limite de fișiere."
     },
     {
-      "type": "organize_privacy_security",
+      "type": "metadata_privacy_security",
       "subTitle": "Reținerea datelor zero",
       "subContent": "Deoarece fișierele nu părăsesc dispozitivul dvs., datele dvs. private rămân numai ale dvs."
     },
     {
-      "type": "metadata_performance",
+      "type": "protect_performance",
       "subTitle": "Rapid fulger de 100KB",
       "subContent": "Atingeți dimensiunea țintă de 100 KB în milisecunde fără întârzieri pe server."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Pot comprima un PDF de 50 MB până la 100 KB?",
+      "a": "În funcție de conținutul imaginii, motorul nostru WASM va comprima puternic datele vizuale și va elimina metadatele ascunse pentru a ajunge cât mai aproape de 100KB posibil din punct de vedere fizic."
+    },
+    {
+      "q": "Este într-adevăr 100% privat?",
+      "a": "Da. Toată compresia are loc direct în browser. PDF-ul dvs. nu este încărcat niciodată pe niciun server."
+    },
+    {
+      "q": "Va deveni textul neclar?",
+      "a": "Nu, textul vectorial și fonturile rămân clare. Numai imaginile încorporate sunt comprimate pentru a atinge ținta de 100 KB."
     }
   ]
 }

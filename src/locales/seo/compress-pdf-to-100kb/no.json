@@ -5,19 +5,33 @@
   "heroDescription": "Krymp PDF-filene dine ned til 100 KB eller mindre direkte i nettleseren din. Perfekt for e-postvedlegg og rask deling. 100% privat.",
   "sections": [
     {
-      "type": "grayscale_geo_targeting",
+      "type": "word_geo_targeting",
       "subTitle": "Lokal kompresjonsmotor",
       "subContent": "Vår avanserte WASM-motor komprimerer PDF-en din lokalt. Ingen filgrenser."
     },
     {
-      "type": "organize_privacy_security",
+      "type": "metadata_privacy_security",
       "subTitle": "Null dataoppbevaring",
       "subContent": "Siden filer aldri forlater enheten din, forblir de private dataene dine alene."
     },
     {
-      "type": "metadata_performance",
+      "type": "protect_performance",
       "subTitle": "Lynrask 100KB",
       "subContent": "Nå målstørrelsen på 100 KB på millisekunder uten serverforsinkelser."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Kan jeg komprimere en 50MB PDF ned til 100KB?",
+      "a": "Avhengig av bildeinnholdet, vil WASM-motoren vår kraftig komprimere visuelle data og fjerne skjulte metadata for å komme så nær 100KB som fysisk mulig."
+    },
+    {
+      "q": "Er det virkelig 100% privat?",
+      "a": "Ja. All komprimering skjer direkte i nettleseren din. PDF-en din blir aldri lastet opp til noen server."
+    },
+    {
+      "q": "Blir teksten uskarp?",
+      "a": "Nei, vektortekst og fonter forblir knivskarpe. Bare innebygde bilder komprimeres for å treffe målet på 100 kB."
     }
   ]
 }

@@ -5,19 +5,33 @@
   "heroDescription": "Rediger eller fjern påtrengende vannmerker fra PDF-dokumentene dine. Helt privat, nettleserbasert verktøy for fjerning av vannmerker.",
   "sections": [
     {
-      "type": "unlock_geo_targeting",
+      "type": "watermark_geo_targeting",
       "subTitle": "Rengjør PDF-ene dine",
       "subContent": "Fjern uønskede stempler, bakgrunner og vannmerker."
     },
     {
-      "type": "pagenum_privacy_security",
+      "type": "compare_privacy_security",
       "subTitle": "Lokal redaksjon",
       "subContent": "Slett sensitive vannmerker uten å laste opp filer til serverne våre."
     },
     {
-      "type": "protect_performance",
+      "type": "edit_performance",
       "subTitle": "Feilfri kvalitet",
       "subContent": "Vi fjerner vannmerkeobjektet uten å forringe dokumentkvaliteten."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Fjerner den tekstvannmerker eller bildevannmerker?",
+      "a": "Verktøyet vårt lar deg tegne redaksjonsbokser over både tekst- og bildevannmerker, og sletter dem effektivt permanent."
+    },
+    {
+      "q": "Kan noen gjenopprette vannmerket etter fjerning?",
+      "a": "Nei. De redigerte områdene blir permanent flatet ut og rasterisert, så de skjulte dataene blir fullstendig ødelagt og kan ikke gjenopprettes."
+    },
+    {
+      "q": "Må jeg betale for å fjerne vannmerker?",
+      "a": "Verktøyet vårt er 100 % gratis uten skjulte avgifter, abonnementer eller påtrengende premium popup-vinduer."
     }
   ]
 }

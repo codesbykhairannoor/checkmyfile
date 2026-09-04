@@ -5,19 +5,33 @@
   "heroDescription": "Kombinera flera mycket känsliga PDF-dokument utan internetanslutning. Fungerar helt offline efter laddning.",
   "sections": [
     {
-      "type": "excel_csv_geo_targeting",
+      "type": "sign_geo_targeting",
       "subTitle": "Offlinesammanslagning",
       "subContent": "Kombinera dina skatteformulär och juridiska dokument utan att skicka dem någonstans."
     },
     {
-      "type": "redact_privacy_security",
+      "type": "rotate_privacy_security",
       "subTitle": "Sekretess i militärklass",
       "subContent": "Vi garanterar absolut integritet eftersom vi fysiskt inte kan se dina filer."
     },
     {
-      "type": "metadata_performance",
+      "type": "excel_performance",
       "subTitle": "Omedelbar bearbetning",
       "subContent": "Slå samman 100-tals sidor direkt med bearbetning på klientsidan."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Hur fungerar det helt offline?",
+      "a": "När sidan väl har laddats körs vår WebAssembly-motor lokalt. Du kan koppla från ditt internet och fortsätta slå samman PDF-filer."
+    },
+    {
+      "q": "Kan jag ordna om sidor innan jag sammanfogar?",
+      "a": "Ja! Dra och släpp filerna i tidslinjen innan du klickar på sammanfoga för att ordna dem perfekt."
+    },
+    {
+      "q": "Finns det en gräns för hur många PDF-filer jag kan slå samman?",
+      "a": "Det finns inga konstgjorda gränser. Du är bara begränsad av RAM-minnet som finns på din lokala dator."
     }
   ]
 }

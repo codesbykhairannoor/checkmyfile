@@ -5,19 +5,33 @@
   "heroDescription": "Buat halaman file PDF Anda dengan mudah. Tambahkan nomor halaman yang dapat disesuaikan ke header atau footer secara instan dan gratis.",
   "sections": [
     {
-      "type": "watermark_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "subTitle": "Paginasi Gratis",
       "subContent": "Tambahkan nomor ke file tanpa batas tanpa harus membayar mahal."
     },
     {
-      "type": "scan_privacy_security",
+      "type": "unlock_privacy_security",
       "subTitle": "Penanganan Dokumen yang Aman",
       "subContent": "Disertasi dan laporan Anda diberi nomor secara pribadi di mesin Anda."
     },
     {
-      "type": "csv_excel_performance",
+      "type": "reverse_performance",
       "subTitle": "Penomoran Batch",
       "subContent": "Terapkan nomor halaman ke dokumen berukuran besar dalam sepersekian detik."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Bisakah saya memilih di mana nomor halaman akan muncul?",
+      "a": "Ya, Anda dapat menyesuaikan posisi (misalnya, kanan bawah, tengah atas) dan ukuran margin untuk penyelarasan sempurna."
+    },
+    {
+      "q": "Apakah gratis untuk PDF berukuran besar seperti buku teks?",
+      "a": "Ya! Alat kami dapat membuat halaman buku teks setebal 1000 halaman dalam milidetik, sepenuhnya gratis dan tanpa batasan ukuran file."
+    },
+    {
+      "q": "Apakah ini akan mengubah format dokumen asli saya?",
+      "a": "Tidak, nomor halaman dilapiskan dengan rapi ke dalam struktur PDF yang ada tanpa mengubah teks atau margin asli Anda."
     }
   ]
 }

@@ -5,19 +5,33 @@
   "heroDescription": "Reduza seus arquivos PDF para 100 KB ou menos diretamente em seu navegador. Perfeito para anexos de e-mail e compartilhamento rápido. 100% privado.",
   "sections": [
     {
-      "type": "grayscale_geo_targeting",
+      "type": "word_geo_targeting",
       "subTitle": "Mecanismo de compressão local",
       "subContent": "Nosso mecanismo WASM avançado compacta seu PDF localmente. Sem limites de arquivo."
     },
     {
-      "type": "organize_privacy_security",
+      "type": "metadata_privacy_security",
       "subTitle": "Retenção zero de dados",
       "subContent": "Como os arquivos nunca saem do seu dispositivo, seus dados privados permanecem exclusivamente seus."
     },
     {
-      "type": "metadata_performance",
+      "type": "protect_performance",
       "subTitle": "Ultrarrápido 100 KB",
       "subContent": "Atinja o tamanho desejado de 100 KB em milissegundos sem atrasos no servidor."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Posso compactar um PDF de 50 MB para 100 KB?",
+      "a": "Dependendo do conteúdo da imagem, nosso mecanismo WASM compactará fortemente os dados visuais e removerá metadados ocultos para chegar o mais próximo possível de 100 KB fisicamente."
+    },
+    {
+      "q": "É realmente 100% privado?",
+      "a": "Sim. Toda a compactação acontece diretamente no seu navegador. Seu PDF nunca é carregado em nenhum servidor."
+    },
+    {
+      "q": "O texto ficará embaçado?",
+      "a": "Não, o texto vetorial e as fontes permanecem nítidos. Apenas imagens incorporadas são compactadas para atingir a meta de 100 KB."
     }
   ]
 }

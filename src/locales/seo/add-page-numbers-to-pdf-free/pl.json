@@ -5,19 +5,33 @@
   "heroDescription": "Z łatwością podziel na strony swoje pliki PDF. Natychmiast i bezpłatnie dodawaj konfigurowalne numery stron do nagłówków i stopek.",
   "sections": [
     {
-      "type": "watermark_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "subTitle": "Darmowa paginacja",
       "subContent": "Dodawaj numery do nieograniczonej liczby plików bez uderzania w paywalle."
     },
     {
-      "type": "scan_privacy_security",
+      "type": "unlock_privacy_security",
       "subTitle": "Bezpieczna obsługa dokumentów",
       "subContent": "Twoje rozprawy i raporty są numerowane prywatnie na Twoim komputerze."
     },
     {
-      "type": "csv_excel_performance",
+      "type": "reverse_performance",
       "subTitle": "Numerowanie partii",
       "subContent": "Zastosuj numerowanie stron do dużych dokumentów w ułamku sekundy."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Czy mogę wybrać, gdzie mają się pojawiać numery stron?",
+      "a": "Tak, możesz dostosować położenie (np. prawy dolny, środkowy górny róg) i rozmiar marginesu, aby uzyskać idealne wyrównanie."
+    },
+    {
+      "q": "Czy jest ona bezpłatna w przypadku bardzo dużych plików PDF, takich jak podręczniki?",
+      "a": "Tak! Nasze narzędzie może paginować 1000-stronicowy podręcznik w ciągu milisekund, całkowicie bezpłatnie i bez ograniczeń rozmiaru pliku."
+    },
+    {
+      "q": "Czy zmieni to oryginalne formatowanie mojego dokumentu?",
+      "a": "Nie, numery stron są nakładane na istniejącą strukturę pliku PDF bez zmiany oryginalnego tekstu i marginesów."
     }
   ]
 }

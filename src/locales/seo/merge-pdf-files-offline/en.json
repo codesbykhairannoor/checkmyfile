@@ -5,19 +5,33 @@
   "heroDescription": "Combine multiple highly sensitive PDF documents without an internet connection. Works fully offline after loading.",
   "sections": [
     {
-      "type": "excel_csv_geo_targeting",
+      "type": "sign_geo_targeting",
       "subTitle": "Offline Merging",
       "subContent": "Combine your tax forms and legal documents without sending them anywhere."
     },
     {
-      "type": "redact_privacy_security",
+      "type": "rotate_privacy_security",
       "subTitle": "Military Grade Privacy",
       "subContent": "We guarantee absolute privacy because we physically cannot see your files."
     },
     {
-      "type": "metadata_performance",
+      "type": "excel_performance",
       "subTitle": "Instant Processing",
       "subContent": "Merge 100s of pages instantly with client-side processing."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How does it work completely offline?",
+      "a": "Once the page loads, our WebAssembly engine runs locally. You can disconnect your internet and continue merging PDFs."
+    },
+    {
+      "q": "Can I rearrange pages before merging?",
+      "a": "Yes! Simply drag and drop the files in the timeline before you click merge to order them perfectly."
+    },
+    {
+      "q": "Is there a limit on how many PDFs I can merge?",
+      "a": "There are no artificial limits. You are only limited by the RAM available on your local computer."
     }
   ]
 }

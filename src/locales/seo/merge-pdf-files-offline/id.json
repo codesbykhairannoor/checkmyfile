@@ -5,19 +5,33 @@
   "heroDescription": "Gabungkan beberapa dokumen PDF yang sangat sensitif tanpa koneksi internet. Bekerja sepenuhnya offline setelah memuat.",
   "sections": [
     {
-      "type": "excel_csv_geo_targeting",
+      "type": "sign_geo_targeting",
       "subTitle": "Penggabungan Offline",
       "subContent": "Gabungkan formulir pajak dan dokumen hukum Anda tanpa mengirimkannya ke mana pun."
     },
     {
-      "type": "redact_privacy_security",
+      "type": "rotate_privacy_security",
       "subTitle": "Privasi Tingkat Militer",
       "subContent": "Kami menjamin privasi mutlak karena kami secara fisik tidak dapat melihat file Anda."
     },
     {
-      "type": "metadata_performance",
+      "type": "excel_performance",
       "subTitle": "Pemrosesan Instan",
       "subContent": "Gabungkan 100 halaman secara instan dengan pemrosesan sisi klien."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Bagaimana cara kerjanya sepenuhnya offline?",
+      "a": "Setelah halaman dimuat, mesin WebAssembly kami berjalan secara lokal. Anda dapat memutuskan sambungan internet dan terus menggabungkan PDF."
+    },
+    {
+      "q": "Bisakah saya mengatur ulang halaman sebelum menggabungkannya?",
+      "a": "Ya! Cukup drag dan drop file di timeline sebelum Anda mengklik gabung untuk mengurutkannya dengan sempurna."
+    },
+    {
+      "q": "Apakah ada batasan berapa banyak PDF yang dapat saya gabungkan?",
+      "a": "Tidak ada batasan buatan. Anda hanya dibatasi oleh RAM yang tersedia di komputer lokal Anda."
     }
   ]
 }

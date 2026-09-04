@@ -5,19 +5,33 @@
   "heroDescription": "Sivuttele PDF-tiedostosi helposti. Lisää mukautettavat sivunumerot ylä- tai alatunnisteisiin välittömästi ilmaiseksi.",
   "sections": [
     {
-      "type": "watermark_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "subTitle": "Ilmainen sivutus",
       "subContent": "Lisää numeroita rajoittamattomiin tiedostoihin osumatta maksumuureihin."
     },
     {
-      "type": "scan_privacy_security",
+      "type": "unlock_privacy_security",
       "subTitle": "Turvallinen asiakirjojen käsittely",
       "subContent": "Väitöskirjasi ja raportit on numeroitu yksityisesti koneellesi."
     },
     {
-      "type": "csv_excel_performance",
+      "type": "reverse_performance",
       "subTitle": "Erän numerointi",
       "subContent": "Lisää sivunumeroita suuriin asiakirjoihin sekunnin murto-osassa."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Voinko valita, missä sivunumerot näkyvät?",
+      "a": "Kyllä, voit mukauttaa sijaintia (esim. alhaalla oikealla, ylhäällä keskellä) ja marginaalin kokoa täydellisen kohdistuksen saavuttamiseksi."
+    },
+    {
+      "q": "Onko se ilmainen erittäin suurille PDF-tiedostoille, kuten oppikirjoille?",
+      "a": "Kyllä! Työkalumme voi sivuuttaa 1000-sivuisen oppikirjan millisekunneissa täysin ilmaiseksi ja ilman tiedostokokorajoituksia."
+    },
+    {
+      "q": "Muuttaako se alkuperäisen asiakirjani muotoilua?",
+      "a": "Ei, sivunumerot on peitetty selkeästi olemassa olevan PDF-rakenteen päälle muuttamatta alkuperäistä tekstiä tai marginaaleja."
     }
   ]
 }

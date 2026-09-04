@@ -5,19 +5,33 @@
   "heroDescription": "Redactați sau eliminați filigranele intruzive din documentele PDF. Instrument complet privat, bazat pe browser pentru eliminarea filigranelor.",
   "sections": [
     {
-      "type": "unlock_geo_targeting",
+      "type": "watermark_geo_targeting",
       "subTitle": "Curățați fișierele PDF",
       "subContent": "Eliminați ștampilele, fundalurile și filigranele nedorite."
     },
     {
-      "type": "pagenum_privacy_security",
+      "type": "compare_privacy_security",
       "subTitle": "Redactare locală",
       "subContent": "Ștergeți filigranele sensibile fără a încărca fișiere pe serverele noastre."
     },
     {
-      "type": "protect_performance",
+      "type": "edit_performance",
       "subTitle": "Calitate impecabila",
       "subContent": "Îndepărtăm obiectul filigran fără a degrada calitatea documentului."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Îndepărtează filigranele de text sau filigranele de imagine?",
+      "a": "Instrumentul nostru vă permite să desenați casete de redactare atât peste filigrane de text, cât și de imagini, ștergându-le definitiv definitiv."
+    },
+    {
+      "q": "Poate cineva să recupereze filigranul după îndepărtare?",
+      "a": "Nu. Zonele redactate sunt permanent aplatizate și rasterizate, astfel încât datele ascunse sunt complet distruse și nu pot fi recuperate."
+    },
+    {
+      "q": "Trebuie să plătesc pentru a elimina filigranele?",
+      "a": "Instrumentul nostru este 100% gratuit, fără taxe ascunse, abonamente sau ferestre pop-up intruzive premium."
     }
   ]
 }

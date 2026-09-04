@@ -5,19 +5,33 @@
   "heroDescription": "Kombináljon több rendkívül érzékeny PDF-dokumentumot internetkapcsolat nélkül. Betöltés után teljesen offline módban működik.",
   "sections": [
     {
-      "type": "excel_csv_geo_targeting",
+      "type": "sign_geo_targeting",
       "subTitle": "Offline összevonás",
       "subContent": "Kombinálja adózási űrlapjait és jogi dokumentumokat anélkül, hogy bárhová elküldené őket."
     },
     {
-      "type": "redact_privacy_security",
+      "type": "rotate_privacy_security",
       "subTitle": "Katonai fokozatú adatvédelem",
       "subContent": "Garantáljuk a teljes adatvédelmet, mert fizikailag nem láthatjuk fájljait."
     },
     {
-      "type": "metadata_performance",
+      "type": "excel_performance",
       "subTitle": "Azonnali feldolgozás",
       "subContent": "Egyesítsen azonnal 100 oldalt az ügyféloldali feldolgozással."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Hogyan működik teljesen offline?",
+      "a": "Az oldal betöltése után a WebAssembly motorunk helyileg fut. Lekapcsolhatja az internetet, és folytathatja a PDF-fájlok egyesítését."
+    },
+    {
+      "q": "Átrendezhetem az oldalakat egyesítés előtt?",
+      "a": "Igen! Egyszerűen húzza át a fájlokat az idővonalon, mielőtt az Egyesítés gombra kattintana a tökéletes sorrendbe állításuk érdekében."
+    },
+    {
+      "q": "Van korlátozás arra, hogy hány PDF-et egyesíthetek?",
+      "a": "Nincsenek mesterséges korlátok. Csak a helyi számítógépen elérhető RAM korlátozza."
     }
   ]
 }

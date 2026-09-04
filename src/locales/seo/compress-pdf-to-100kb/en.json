@@ -5,19 +5,33 @@
   "heroDescription": "Shrink your PDF files down to 100KB or less directly in your browser. Perfect for email attachments and fast sharing. 100% private.",
   "sections": [
     {
-      "type": "grayscale_geo_targeting",
+      "type": "word_geo_targeting",
       "subTitle": "Local Compression Engine",
       "subContent": "Our advanced WASM engine compresses your PDF locally. No file limits."
     },
     {
-      "type": "organize_privacy_security",
+      "type": "metadata_privacy_security",
       "subTitle": "Zero Data Retention",
       "subContent": "Since files never leave your device, your private data remains yours alone."
     },
     {
-      "type": "metadata_performance",
+      "type": "protect_performance",
       "subTitle": "Lightning Fast 100KB",
       "subContent": "Hit your 100KB target size in milliseconds without server delays."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I compress a 50MB PDF down to 100KB?",
+      "a": "Depending on the image content, our WASM engine will heavily compress visual data and remove hidden metadata to get as close to 100KB as physically possible."
+    },
+    {
+      "q": "Is it really 100% private?",
+      "a": "Yes. All compression happens directly inside your browser. Your PDF is never uploaded to any server."
+    },
+    {
+      "q": "Will the text become blurry?",
+      "a": "No, vector text and fonts remain razor-sharp. Only embedded images are compressed to hit the 100KB target."
     }
   ]
 }

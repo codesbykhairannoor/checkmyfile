@@ -5,19 +5,33 @@
   "heroDescription": "Paginez facilement vos fichiers PDF. Ajoutez instantanément et gratuitement des numéros de page personnalisables aux en-têtes ou aux pieds de page.",
   "sections": [
     {
-      "type": "watermark_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "subTitle": "Pagination gratuite",
       "subContent": "Ajoutez des numéros à un nombre illimité de fichiers sans toucher aux paywalls."
     },
     {
-      "type": "scan_privacy_security",
+      "type": "unlock_privacy_security",
       "subTitle": "Gestion sécurisée des documents",
       "subContent": "Vos mémoires et rapports sont numérotés en privé sur votre machine."
     },
     {
-      "type": "csv_excel_performance",
+      "type": "reverse_performance",
       "subTitle": "Numérotation des lots",
       "subContent": "Appliquez des numéros de page à des documents volumineux en une fraction de seconde."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Puis-je choisir où apparaissent les numéros de page ?",
+      "a": "Oui, vous pouvez personnaliser la position (par exemple, en bas à droite, en haut au centre) et la taille de la marge pour un alignement parfait."
+    },
+    {
+      "q": "Est-ce gratuit pour les très gros PDF comme les manuels scolaires ?",
+      "a": "Oui! Notre outil peut paginer un manuel de 1 000 pages en quelques millisecondes, de manière totalement gratuite et sans restriction de taille de fichier."
+    },
+    {
+      "q": "Cela modifiera-t-il le formatage de mon document original ?",
+      "a": "Non, les numéros de page sont superposés proprement sur la structure PDF existante sans altérer votre texte ou vos marges d'origine."
     }
   ]
 }

@@ -5,19 +5,33 @@
   "heroDescription": "Combina più documenti PDF altamente sensibili senza una connessione Internet. Funziona completamente offline dopo il caricamento.",
   "sections": [
     {
-      "type": "excel_csv_geo_targeting",
+      "type": "sign_geo_targeting",
       "subTitle": "Unione offline",
       "subContent": "Combina i tuoi moduli fiscali e documenti legali senza inviarli da nessuna parte."
     },
     {
-      "type": "redact_privacy_security",
+      "type": "rotate_privacy_security",
       "subTitle": "Privacy di livello militare",
       "subContent": "Garantiamo la privacy assoluta perché fisicamente non possiamo vedere i tuoi file."
     },
     {
-      "type": "metadata_performance",
+      "type": "excel_performance",
       "subTitle": "Elaborazione istantanea",
       "subContent": "Unisci centinaia di pagine istantaneamente con l'elaborazione lato client."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Come funziona completamente offline?",
+      "a": "Una volta caricata la pagina, il nostro motore WebAssembly viene eseguito localmente. Puoi disconnettere Internet e continuare a unire PDF."
+    },
+    {
+      "q": "Posso riorganizzare le pagine prima di unirle?",
+      "a": "SÌ! Basta trascinare e rilasciare i file nella timeline prima di fare clic su Unisci per ordinarli perfettamente."
+    },
+    {
+      "q": "Esiste un limite al numero di PDF che posso unire?",
+      "a": "Non ci sono limiti artificiali. Sei limitato solo dalla RAM disponibile sul tuo computer locale."
     }
   ]
 }

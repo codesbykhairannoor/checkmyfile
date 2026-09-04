@@ -5,7 +5,7 @@
   "heroDescription": "Bruk avansert nettleserbasert OCR for å trekke ut tekst fra skannede bilder og usøkbare PDF-filer. 100 % gratis og privat.",
   "sections": [
     {
-      "type": "edit_geo_targeting",
+      "type": "image_geo_targeting",
       "subTitle": "WebAssembly OCR",
       "subContent": "Tesseract OCR kjører rett i nettleseren din. Ingen sky-APIer involvert."
     },
@@ -15,9 +15,23 @@
       "subContent": "Trekk ut tekst fra sensitive ID-kort eller medisinske journaler trygt."
     },
     {
-      "type": "watermark_performance",
+      "type": "scan_performance",
       "subTitle": "Høy nøyaktighet",
       "subContent": "Støtte for flere språk og skjeve skanninger."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Støtter denne OCR-en flere språk?",
+      "a": "Ja, vår Tesseract-baserte WebAssembly-motor støtter over 100 språk. Bare sørg for at skanningen er klar."
+    },
+    {
+      "q": "Er det trygt å trekke ut tekst fra passet eller ID-en min?",
+      "a": "Absolutt. Vi laster ikke opp dokumentene dine til våre servere. Hele OCR-prosessen skjer i din egen nettleser."
+    },
+    {
+      "q": "Hvorfor er teksten noen ganger unøyaktig?",
+      "a": "OCR-nøyaktighet avhenger sterkt av bildekvaliteten. For best resultat, sørg for at skanningene har høy kontrast og ikke er uskarpe."
     }
   ]
 }

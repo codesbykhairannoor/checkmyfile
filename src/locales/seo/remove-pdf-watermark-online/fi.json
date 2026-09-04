@@ -5,19 +5,33 @@
   "heroDescription": "Muokkaa tai poista häiritseviä vesileimoja PDF-dokumenteistasi. Täysin yksityinen selainpohjainen vesileiman poistotyökalu.",
   "sections": [
     {
-      "type": "unlock_geo_targeting",
+      "type": "watermark_geo_targeting",
       "subTitle": "Puhdista PDF-tiedostosi",
       "subContent": "Poista ei-toivotut leimat, taustat ja vesileimat."
     },
     {
-      "type": "pagenum_privacy_security",
+      "type": "compare_privacy_security",
       "subTitle": "Paikallinen editointi",
       "subContent": "Poista arkaluontoiset vesileimat lataamatta tiedostoja palvelimillemme."
     },
     {
-      "type": "protect_performance",
+      "type": "edit_performance",
       "subTitle": "Virheetön Laatu",
       "subContent": "Poistamme vesileimaobjektin heikentämättä asiakirjasi laatua."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Poistaako se tekstin tai kuvien vesileimat?",
+      "a": "Työkalumme avulla voit piirtää muokkauslaatikoita sekä tekstin että kuvan vesileimojen päälle ja poistaa ne tehokkaasti pysyvästi."
+    },
+    {
+      "q": "Voiko kukaan palauttaa vesileiman poiston jälkeen?",
+      "a": "Ei. Muokatut alueet tasoitetaan ja rasteroidaan pysyvästi, joten piilotetut tiedot tuhoutuvat kokonaan ja niitä ei voida palauttaa."
+    },
+    {
+      "q": "Pitääkö minun maksaa vesileimojen poistamisesta?",
+      "a": "Työkalumme on 100 % ilmainen ilman piilomaksuja, tilauksia tai häiritseviä premium-ponnahdusikkunoita."
     }
   ]
 }

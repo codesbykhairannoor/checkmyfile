@@ -5,19 +5,33 @@
   "heroDescription": "Çok sayıda son derece hassas PDF belgesini internet bağlantısı olmadan birleştirin. Yüklemeden sonra tamamen çevrimdışı çalışır.",
   "sections": [
     {
-      "type": "excel_csv_geo_targeting",
+      "type": "sign_geo_targeting",
       "subTitle": "Çevrimdışı Birleştirme",
       "subContent": "Vergi formlarınızı ve yasal belgelerinizi hiçbir yere göndermeden birleştirin."
     },
     {
-      "type": "redact_privacy_security",
+      "type": "rotate_privacy_security",
       "subTitle": "Askeri Düzeyde Gizlilik",
       "subContent": "Dosyalarınızı fiziksel olarak göremediğimiz için mutlak gizliliği garanti ediyoruz."
     },
     {
-      "type": "metadata_performance",
+      "type": "excel_performance",
       "subTitle": "Anında İşleme",
       "subContent": "İstemci tarafı işlemeyle 100'lerce sayfayı anında birleştirin."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Tamamen çevrimdışı nasıl çalışır?",
+      "a": "Sayfa yüklendikten sonra WebAssembly motorumuz yerel olarak çalışır. İnternetinizin bağlantısını kesebilir ve PDF'leri birleştirmeye devam edebilirsiniz."
+    },
+    {
+      "q": "Birleştirmeden önce sayfaları yeniden düzenleyebilir miyim?",
+      "a": "Evet! Dosyaları mükemmel bir şekilde sıralamak için birleştirmeye tıklamadan önce dosyaları zaman çizelgesine sürükleyip bırakmanız yeterlidir."
+    },
+    {
+      "q": "Kaç PDF'yi birleştirebileceğim konusunda bir sınır var mı?",
+      "a": "Yapay sınırlar yoktur. Yalnızca yerel bilgisayarınızda bulunan RAM ile sınırlıdır."
     }
   ]
 }

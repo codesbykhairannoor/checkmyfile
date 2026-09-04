@@ -5,19 +5,33 @@
   "heroDescription": "인터넷 연결 없이 여러 개의 매우 민감한 PDF 문서를 결합합니다. 로드 후 완전히 오프라인으로 작동합니다.",
   "sections": [
     {
-      "type": "excel_csv_geo_targeting",
+      "type": "sign_geo_targeting",
       "subTitle": "오프라인 병합",
       "subContent": "어디로든 보내지 않고도 세금 양식과 법률 문서를 결합할 수 있습니다."
     },
     {
-      "type": "redact_privacy_security",
+      "type": "rotate_privacy_security",
       "subTitle": "군사급 개인정보 보호",
       "subContent": "우리는 귀하의 파일을 물리적으로 볼 수 없기 때문에 절대적인 개인 정보 보호를 보장합니다."
     },
     {
-      "type": "metadata_performance",
+      "type": "excel_performance",
       "subTitle": "즉각적인 처리",
       "subContent": "클라이언트측 처리를 통해 수백 개의 페이지를 즉시 병합합니다."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "완전히 오프라인으로 어떻게 작동하나요?",
+      "a": "페이지가 로드되면 WebAssembly 엔진이 로컬로 실행됩니다. 인터넷 연결을 끊고 계속해서 PDF를 병합할 수 있습니다."
+    },
+    {
+      "q": "병합하기 전에 페이지를 다시 정렬할 수 있나요?",
+      "a": "예! 병합을 클릭하기 전에 타임라인에 파일을 끌어서 놓기만 하면 파일을 완벽하게 정렬할 수 있습니다."
+    },
+    {
+      "q": "병합할 수 있는 PDF 수에 제한이 있나요?",
+      "a": "인위적인 한계는 없습니다. 로컬 컴퓨터에서 사용 가능한 RAM에 의해서만 제한됩니다."
     }
   ]
 }

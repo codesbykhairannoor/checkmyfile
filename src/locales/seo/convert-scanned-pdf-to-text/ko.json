@@ -5,7 +5,7 @@
   "heroDescription": "고급 브라우저 기반 OCR을 사용하여 스캔한 이미지와 검색할 수 없는 PDF에서 텍스트를 추출합니다. 100% 무료이며 비공개입니다.",
   "sections": [
     {
-      "type": "edit_geo_targeting",
+      "type": "image_geo_targeting",
       "subTitle": "웹어셈블리 OCR",
       "subContent": "Tesseract OCR은 브라우저에서 바로 실행됩니다. 클라우드 API가 필요하지 않습니다."
     },
@@ -15,9 +15,23 @@
       "subContent": "민감한 신분증이나 의료 기록에서 텍스트를 안전하게 추출하세요."
     },
     {
-      "type": "watermark_performance",
+      "type": "scan_performance",
       "subTitle": "높은 정확도",
       "subContent": "여러 언어 및 왜곡된 스캔을 지원합니다."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "이 OCR은 여러 언어를 지원합니까?",
+      "a": "예, Tesseract 기반 WebAssembly 엔진은 100개 이상의 언어를 지원합니다. 스캔이 깨끗한지 확인하세요."
+    },
+    {
+      "q": "여권이나 신분증에서 텍스트를 추출해도 안전한가요?",
+      "a": "전적으로. 우리는 귀하의 문서를 우리 서버에 업로드하지 않습니다. 전체 OCR 프로세스는 귀하의 브라우저 내에서 이루어집니다."
+    },
+    {
+      "q": "텍스트가 때때로 부정확한 이유는 무엇입니까?",
+      "a": "OCR 정확도는 이미지 품질에 따라 크게 달라집니다. 최상의 결과를 얻으려면 스캔의 대비가 높고 흐릿하지 않은지 확인하십시오."
     }
   ]
 }

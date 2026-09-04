@@ -5,19 +5,33 @@
   "heroDescription": "Schwärzen oder entfernen Sie störende Wasserzeichen aus Ihren PDF-Dokumenten. Vollständig privates, browserbasiertes Tool zum Entfernen von Wasserzeichen.",
   "sections": [
     {
-      "type": "unlock_geo_targeting",
+      "type": "watermark_geo_targeting",
       "subTitle": "Bereinigen Sie Ihre PDFs",
       "subContent": "Entfernen Sie unerwünschte Stempel, Hintergründe und Wasserzeichen."
     },
     {
-      "type": "pagenum_privacy_security",
+      "type": "compare_privacy_security",
       "subTitle": "Lokale Redaktion",
       "subContent": "Löschen Sie sensible Wasserzeichen, ohne Dateien auf unsere Server hochzuladen."
     },
     {
-      "type": "protect_performance",
+      "type": "edit_performance",
       "subTitle": "Einwandfreie Qualität",
       "subContent": "Wir entfernen das Wasserzeichenobjekt, ohne die Qualität Ihres Dokuments zu beeinträchtigen."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Entfernt es Textwasserzeichen oder Bildwasserzeichen?",
+      "a": "Mit unserem Tool können Sie Schwärzungsfelder über Text- und Bildwasserzeichen zeichnen und diese so dauerhaft löschen."
+    },
+    {
+      "q": "Kann jemand das Wasserzeichen nach dem Entfernen wiederherstellen?",
+      "a": "Nein. Die geschwärzten Bereiche werden dauerhaft abgeflacht und gerastert, sodass die verborgenen Daten vollständig zerstört und nicht wiederherstellbar sind."
+    },
+    {
+      "q": "Muss ich für die Entfernung von Wasserzeichen bezahlen?",
+      "a": "Unser Tool ist 100 % kostenlos, ohne versteckte Gebühren, Abonnements oder aufdringliche Premium-Popups."
     }
   ]
 }

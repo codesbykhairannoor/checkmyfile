@@ -5,19 +5,33 @@
   "heroDescription": "Paginați cu ușurință fișierele PDF. Adăugați gratuit numere de pagină personalizabile la anteturi sau subsoluri.",
   "sections": [
     {
-      "type": "watermark_geo_targeting",
+      "type": "csv_excel_geo_targeting",
       "subTitle": "Paginare gratuită",
       "subContent": "Adăugați numere la un număr nelimitat de fișiere fără a lovi paywall-urile."
     },
     {
-      "type": "scan_privacy_security",
+      "type": "unlock_privacy_security",
       "subTitle": "Manipularea securizată a documentelor",
       "subContent": "Disertațiile și rapoartele dvs. sunt numerotate în mod privat pe aparatul dvs."
     },
     {
-      "type": "csv_excel_performance",
+      "type": "reverse_performance",
       "subTitle": "Numerotarea lotului",
       "subContent": "Aplicați numere de pagină documentelor masive într-o fracțiune de secundă."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Pot alege unde apar numerele paginilor?",
+      "a": "Da, puteți personaliza poziția (de exemplu, dreapta jos, centru sus) și dimensiunea marginii pentru o aliniere perfectă."
+    },
+    {
+      "q": "Este gratuit pentru PDF-uri foarte mari, cum ar fi manualele?",
+      "a": "Da! Instrumentul nostru poate pagina un manual de 1000 de pagini în milisecunde, complet gratuit și fără restricții de dimensiune a fișierului."
+    },
+    {
+      "q": "Va modifica formatarea documentului meu original?",
+      "a": "Nu, numerele paginilor sunt suprapuse curat pe structura PDF existentă, fără a modifica textul sau marginile originale."
     }
   ]
 }

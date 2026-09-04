@@ -5,19 +5,33 @@
   "heroDescription": "Csökkentse PDF-fájljait 100 KB-ra vagy kevesebbre közvetlenül a böngészőben. Tökéletes e-mail mellékletekhez és gyors megosztáshoz. 100% privát.",
   "sections": [
     {
-      "type": "grayscale_geo_targeting",
+      "type": "word_geo_targeting",
       "subTitle": "Helyi kompressziós motor",
       "subContent": "Fejlett WASM motorunk helyileg tömöríti a PDF-fájlt. Nincs fájlkorlát."
     },
     {
-      "type": "organize_privacy_security",
+      "type": "metadata_privacy_security",
       "subTitle": "Nulla adatmegőrzés",
       "subContent": "Mivel a fájlok soha nem hagyják el az eszközt, a személyes adatai egyedül az Öné maradnak."
     },
     {
-      "type": "metadata_performance",
+      "type": "protect_performance",
       "subTitle": "Villámgyors 100KB",
       "subContent": "Érje el a 100 KB-os célméretet ezredmásodpercek alatt, szerver késések nélkül."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Tömöríthetek egy 50 MB-os PDF-et 100 KB-ra?",
+      "a": "A képtartalomtól függően WASM-motorunk erősen tömöríti a vizuális adatokat, és eltávolítja a rejtett metaadatokat, hogy a lehető legközelebb kerüljön a 100 KB-hoz."
+    },
+    {
+      "q": "Tényleg 100%-ban privát?",
+      "a": "Igen. Minden tömörítés közvetlenül a böngészőben történik. A PDF-fájl soha nem kerül feltöltésre egyetlen szerverre sem."
+    },
+    {
+      "q": "Homályos lesz a szöveg?",
+      "a": "Nem, a vektoros szöveg és a betűtípusok borotvaélesek maradnak. Csak a beágyazott képeket tömöríti a rendszer a 100 KB-os cél eléréséhez."
     }
   ]
 }

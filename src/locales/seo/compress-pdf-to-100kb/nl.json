@@ -5,19 +5,33 @@
   "heroDescription": "Verklein uw PDF-bestanden rechtstreeks in uw browser tot 100 KB of minder. Perfect voor e-mailbijlagen en snel delen. 100% privé.",
   "sections": [
     {
-      "type": "grayscale_geo_targeting",
+      "type": "word_geo_targeting",
       "subTitle": "Lokale compressiemotor",
       "subContent": "Onze geavanceerde WASM-engine comprimeert uw PDF lokaal. Geen bestandslimieten."
     },
     {
-      "type": "organize_privacy_security",
+      "type": "metadata_privacy_security",
       "subTitle": "Geen gegevensretentie",
       "subContent": "Omdat bestanden uw apparaat nooit verlaten, blijven uw privégegevens alleen van u."
     },
     {
-      "type": "metadata_performance",
+      "type": "protect_performance",
       "subTitle": "Bliksemsnel 100 KB",
       "subContent": "Bereik uw doelgrootte van 100 KB in milliseconden zonder serververtragingen."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Kan ik een PDF van 50 MB comprimeren tot 100 KB?",
+      "a": "Afhankelijk van de beeldinhoud zal onze WASM-engine de visuele gegevens zwaar comprimeren en verborgen metagegevens verwijderen om zo dicht mogelijk bij de 100 KB te komen als fysiek mogelijk is."
+    },
+    {
+      "q": "Is het echt 100% privé?",
+      "a": "Ja. Alle compressie gebeurt rechtstreeks in uw browser. Uw PDF wordt nooit naar een server geüpload."
+    },
+    {
+      "q": "Wordt de tekst wazig?",
+      "a": "Nee, vectortekst en lettertypen blijven haarscherp. Alleen ingesloten afbeeldingen worden gecomprimeerd om het doel van 100 KB te bereiken."
     }
   ]
 }

@@ -5,7 +5,7 @@
   "heroDescription": "Gebruik geavanceerde browsergebaseerde OCR om tekst uit gescande afbeeldingen en ondoorzoekbare PDF's te extraheren. 100% gratis en privé.",
   "sections": [
     {
-      "type": "edit_geo_targeting",
+      "type": "image_geo_targeting",
       "subTitle": "WebAssembly-OCR",
       "subContent": "Tesseract OCR werkt rechtstreeks in uw browser. Er zijn geen cloud-API's bij betrokken."
     },
@@ -15,9 +15,23 @@
       "subContent": "Extraheer tekst veilig uit gevoelige identiteitskaarten of medische dossiers."
     },
     {
-      "type": "watermark_performance",
+      "type": "scan_performance",
       "subTitle": "Hoge nauwkeurigheid",
       "subContent": "Ondersteuning voor meerdere talen en scheve scans."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Ondersteunt deze OCR meerdere talen?",
+      "a": "Ja, onze op Tesseract gebaseerde WebAssembly-engine ondersteunt meer dan 100 talen. Zorg ervoor dat de scan duidelijk is."
+    },
+    {
+      "q": "Is het veilig om tekst uit mijn paspoort of identiteitsbewijs te halen?",
+      "a": "Absoluut. Wij uploaden uw documenten niet naar onze servers. Het gehele OCR-proces gebeurt in uw eigen browser."
+    },
+    {
+      "q": "Waarom is de tekst soms onnauwkeurig?",
+      "a": "De nauwkeurigheid van de OCR is sterk afhankelijk van de beeldkwaliteit. Voor de beste resultaten moet u ervoor zorgen dat uw scans een hoog contrast hebben en niet wazig zijn."
     }
   ]
 }

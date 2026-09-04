@@ -5,19 +5,33 @@
   "heroDescription": "Combinați mai multe documente PDF foarte sensibile fără o conexiune la internet. Funcționează complet offline după încărcare.",
   "sections": [
     {
-      "type": "excel_csv_geo_targeting",
+      "type": "sign_geo_targeting",
       "subTitle": "Fuziune offline",
       "subContent": "Combinați formularele fiscale și documentele legale fără a le trimite nicăieri."
     },
     {
-      "type": "redact_privacy_security",
+      "type": "rotate_privacy_security",
       "subTitle": "Confidențialitate de grad militar",
       "subContent": "Vă garantăm confidențialitate absolută, deoarece fizic nu vă putem vedea fișierele."
     },
     {
-      "type": "metadata_performance",
+      "type": "excel_performance",
       "subTitle": "Procesare instantanee",
       "subContent": "Îmbinați 100 de pagini instantaneu cu procesarea clientului."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Cum funcționează complet offline?",
+      "a": "Odată ce pagina se încarcă, motorul nostru WebAssembly rulează local. Puteți să vă deconectați de la internet și să continuați îmbinarea PDF-urilor."
+    },
+    {
+      "q": "Pot rearanja paginile înainte de îmbinare?",
+      "a": "Da! Pur și simplu trageți și plasați fișierele în cronologia înainte de a face clic pe îmbinare pentru a le ordona perfect."
+    },
+    {
+      "q": "Există o limită la câte PDF-uri pot îmbina?",
+      "a": "Nu există limite artificiale. Sunteți limitat doar de memoria RAM disponibilă pe computerul local."
     }
   ]
 }

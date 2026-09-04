@@ -5,19 +5,33 @@
   "heroDescription": "Kombinujte viacero vysoko citlivých dokumentov PDF bez internetového pripojenia. Po načítaní funguje plne offline.",
   "sections": [
     {
-      "type": "excel_csv_geo_targeting",
+      "type": "sign_geo_targeting",
       "subTitle": "Offline zlúčenie",
       "subContent": "Skombinujte svoje daňové formuláre a právne dokumenty bez toho, aby ste ich kamkoľvek posielali."
     },
     {
-      "type": "redact_privacy_security",
+      "type": "rotate_privacy_security",
       "subTitle": "Súkromie na vojenskej úrovni",
       "subContent": "Zaručujeme absolútne súkromie, pretože fyzicky nevidíme vaše súbory."
     },
     {
-      "type": "metadata_performance",
+      "type": "excel_performance",
       "subTitle": "Okamžité spracovanie",
       "subContent": "Okamžite zlúčte 100 stránok so spracovaním na strane klienta."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Ako to funguje úplne offline?",
+      "a": "Po načítaní stránky sa náš nástroj WebAssembly spustí lokálne. Môžete odpojiť internet a pokračovať v zlučovaní súborov PDF."
+    },
+    {
+      "q": "Môžem zmeniť usporiadanie stránok pred zlúčením?",
+      "a": "Áno! Jednoducho presuňte súbory na časovú os predtým, ako kliknete na zlúčenie, aby ste ich dokonale usporiadali."
+    },
+    {
+      "q": "Existuje obmedzenie počtu súborov PDF, ktoré môžem zlúčiť?",
+      "a": "Neexistujú žiadne umelé limity. Ste obmedzení iba pamäťou RAM, ktorá je k dispozícii na vašom lokálnom počítači."
     }
   ]
 }
