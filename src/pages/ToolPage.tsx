@@ -33,11 +33,14 @@ const getAcceptTypes = (toolId: string): string => {
     case 'compress-pdf-for-email':
     case 'compress-pdf-to-100kb':
     case 'compress-pdf-without-losing-quality':
+    case 'reduce-pdf-size-offline':
     case 'watermark-pdf':
     case 'page-numbers':
     case 'ocr-pdf':
+    case 'scanned-pdf-to-text-ocr':
     case 'pdf-to-word':
     case 'pdf-ke-word':
+    case 'pdf-to-word-without-losing-formatting':
     case 'pdf-to-ppt':
     case 'pdf-ke-ppt':
     case 'pdf-to-image':
@@ -45,6 +48,7 @@ const getAcceptTypes = (toolId: string): string => {
     case 'remove-pdf':
     case 'hapus-halaman-pdf':
     case 'organize-pdf':
+    case 'reorder-pdf-pages-drag-and-drop':
     case 'sisip-halaman-pdf':
     case 'sign-pdf':
     case 'sign-pdf-without-registration':
@@ -52,6 +56,7 @@ const getAcceptTypes = (toolId: string): string => {
     case 'protect-pdf':
     case 'kunci-pdf':
     case 'unlock-pdf':
+    case 'remove-pdf-password-without-password':
     case 'buka-kunci-pdf':
     case 'crop-pdf':
     case 'potong-margin-pdf':

@@ -165,7 +165,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
       {tool.id === 'page-numbers' && <PageNumbersPdfEditor config={pageNumberConfig} setConfig={setPageNumberConfig} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
       {tool.id === 'split-pdf' && <SplitPdfEditor splitRange={splitRange} setSplitRange={setSplitRange} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
       {(tool.id === 'merge-pdf' || tool.id === 'combine-multiple-pdf-files') && <MergePdfEditor files={files} setFiles={setFiles} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
-      {(tool.id === 'compress-pdf' || tool.id === 'compress-pdf-for-email' || tool.id === 'compress-pdf-to-100kb' || tool.id === 'compress-pdf-without-losing-quality') && <CompressPdfEditor quality={compressQuality} setQuality={setCompressQuality} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
+      {(tool.id === 'compress-pdf' || tool.id === 'compress-pdf-for-email' || tool.id === 'compress-pdf-to-100kb' || tool.id === 'compress-pdf-without-losing-quality' || tool.id === 'reduce-pdf-size-offline') && <CompressPdfEditor quality={compressQuality} setQuality={setCompressQuality} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
 
       {tool.id === 'pdf-to-image' && extractImageFormat && setExtractImageFormat && (
         <PdfToImageEditor format={extractImageFormat} setFormat={setExtractImageFormat} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
@@ -173,7 +173,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
       {tool.id === 'remove-pdf' && removeRange !== undefined && setRemoveRange && (
         <RemovePdfEditor removeRange={removeRange} setRemoveRange={setRemoveRange} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
-      {tool.id === 'organize-pdf' && insertAtIndex !== undefined && setInsertAtIndex && setInsertFile && (
+      {(tool.id === 'organize-pdf' || tool.id === 'reorder-pdf-pages-drag-and-drop') && insertAtIndex !== undefined && setInsertAtIndex && setInsertFile && (
         <OrganizePdfEditor insertFile={insertFile || null} setInsertFile={setInsertFile} insertAtIndex={insertAtIndex} setInsertAtIndex={setInsertAtIndex} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} totalPages={pdfPagesCount} />
       )}
       {(tool.id === 'sign-pdf' || tool.id === 'sign-pdf-without-registration') && signatureConfig && setSignatureConfig && (
@@ -182,7 +182,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
       {tool.id === 'protect-pdf' && pdfPassword !== undefined && setPdfPassword && (
         <ProtectPdfEditor pdfPassword={pdfPassword} setPdfPassword={setPdfPassword} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
-      {tool.id === 'unlock-pdf' && pdfPassword !== undefined && setPdfPassword && (
+      {(tool.id === 'unlock-pdf' || tool.id === 'remove-pdf-password-without-password') && pdfPassword !== undefined && setPdfPassword && (
         <UnlockPdfEditor pdfPassword={pdfPassword} setPdfPassword={setPdfPassword} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
       {tool.id === 'crop-pdf' && cropConfig && setCropConfig && (
@@ -275,7 +275,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
           onProcess={() => handleStartProcessing()} tUi={tUi} isProcessing={isProcessing} 
         />
       )}
-      {['pdf-to-word', 'word-to-pdf', 'excel-to-pdf', 'image-to-pdf', 'ppt-to-pdf', 'pdf-to-ppt', 'csv-to-pdf', 'txt-to-pdf', 'csv-to-excel', 'excel-to-csv', 'ocr-pdf'].includes(tool.id) && (
+      {['pdf-to-word', 'pdf-to-word-without-losing-formatting', 'word-to-pdf', 'excel-to-pdf', 'image-to-pdf', 'ppt-to-pdf', 'pdf-to-ppt', 'csv-to-pdf', 'txt-to-pdf', 'csv-to-excel', 'excel-to-csv', 'ocr-pdf', 'scanned-pdf-to-text-ocr'].includes(tool.id) && (
         <GenericConvertEditor toolId={tool.id} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
       </div>
