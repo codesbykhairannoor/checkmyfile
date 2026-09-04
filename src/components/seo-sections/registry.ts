@@ -61,13 +61,7 @@ import { CompareHeroSection, CompareHowToSection, CompareGeoSection, ComparePriv
 import { CsvToExcelHeroSection, CsvToExcelHowToSection, CsvToExcelGeoSection, CsvToExcelPrivacySection, CsvToExcelPerformanceSection } from './tools/CsvToExcelSections';
 import { ExcelToCsvHeroSection, ExcelToCsvHowToSection, ExcelToCsvGeoSection, ExcelToCsvPrivacySection, ExcelToCsvPerformanceSection } from './tools/ExcelToCsvSections';
 
-// ── Long-Tail SEO Pages ──
-import { CropMarginsHeroSection, CropMarginsHowToSection, CropMarginsGeoSection, CropMarginsPrivacySection, CropMarginsPerformanceSection } from './tools/CropMarginsSections';
-import { GrayscalePrintHeroSection, GrayscalePrintHowToSection, GrayscalePrintGeoSection, GrayscalePrintPrivacySection, GrayscalePrintPerformanceSection } from './tools/GrayscalePrintSections';
-import { RemoveAuthorHeroSection, RemoveAuthorHowToSection, RemoveAuthorGeoSection, RemoveAuthorPrivacySection, RemoveAuthorPerformanceSection } from './tools/RemoveAuthorSections';
-import { ExtractHighResHeroSection, ExtractHighResHowToSection, ExtractHighResGeoSection, ExtractHighResPrivacySection, ExtractHighResPerformanceSection } from './tools/ExtractHighResSections';
-import { CompareVisualHeroSection, CompareVisualHowToSection, CompareVisualGeoSection, CompareVisualPrivacySection, CompareVisualPerformanceSection } from './tools/CompareVisualSections';
-
+// ── Long-Tail SEO Pages (Mix-and-Match via existing components) ──
 // ── Legacy Decoupled (Merge, Compress, Split, Crop, dll.) ──
 import { MergeHeroSection, MergeHowToSection, MergeGeoSection, MergePrivacySection, MergePerformanceSection } from './tools/MergePdfSections';
 import { CompressHeroSection, CompressHowToSection, CompressGeoSection, CompressPrivacySection, CompressPerformanceSection } from './tools/CompressPdfSections';
@@ -278,35 +272,35 @@ export const SECTION_REGISTRY: Record<string, SectionComponent> = {
   excel_csv_performance: ExcelToCsvPerformanceSection,
 
   // ── Long-Tail SEO Pages ──
-  crop_margins_hero_features: CropMarginsHeroSection,
-  crop_margins_how_to_steps: CropMarginsHowToSection,
-  crop_margins_geo_targeting: CropMarginsGeoSection,
-  crop_margins_privacy_security: CropMarginsPrivacySection,
-  crop_margins_performance: CropMarginsPerformanceSection,
+  crop_margins_hero_features: UnlockHeroSection,
+  crop_margins_how_to_steps: SplitHowToSection,
+  crop_margins_geo_targeting: ImageToPdfGeoSection,
+  crop_margins_privacy_security: SignPrivacySection,
+  crop_margins_performance: WatermarkPerformanceSection,
 
-  grayscale_print_hero_features: GrayscalePrintHeroSection,
-  grayscale_print_how_to_steps: GrayscalePrintHowToSection,
-  grayscale_print_geo_targeting: GrayscalePrintGeoSection,
-  grayscale_print_privacy_security: GrayscalePrintPrivacySection,
-  grayscale_print_performance: GrayscalePrintPerformanceSection,
+  grayscale_print_hero_features: MergeHeroSection,
+  grayscale_print_how_to_steps: RedactHowToSection,
+  grayscale_print_geo_targeting: ExcelToCsvGeoSection,
+  grayscale_print_privacy_security: CompressPrivacySection,
+  grayscale_print_performance: ProtectPerformanceSection,
 
-  remove_author_hero_features: RemoveAuthorHeroSection,
-  remove_author_how_to_steps: RemoveAuthorHowToSection,
-  remove_author_geo_targeting: RemoveAuthorGeoSection,
-  remove_author_privacy_security: RemoveAuthorPrivacySection,
-  remove_author_performance: RemoveAuthorPerformanceSection,
+  remove_author_hero_features: ScanHeroSection,
+  remove_author_how_to_steps: WordToPdfHowToSection,
+  remove_author_geo_targeting: ResizeGeoSection,
+  remove_author_privacy_security: RotatePrivacySection,
+  remove_author_performance: OcrPerformanceSection,
 
-  extract_highres_hero_features: ExtractHighResHeroSection,
-  extract_highres_how_to_steps: ExtractHighResHowToSection,
-  extract_highres_geo_targeting: ExtractHighResGeoSection,
-  extract_highres_privacy_security: ExtractHighResPrivacySection,
-  extract_highres_performance: ExtractHighResPerformanceSection,
+  extract_highres_hero_features: CsvToExcelHeroSection,
+  extract_highres_how_to_steps: ExtractImagesHowToSection,
+  extract_highres_geo_targeting: ProtectGeoSection,
+  extract_highres_privacy_security: EditPrivacySection,
+  extract_highres_performance: ReversePerformanceSection,
 
-  compare_visual_hero_features: CompareVisualHeroSection,
-  compare_visual_how_to_steps: CompareVisualHowToSection,
-  compare_visual_geo_targeting: CompareVisualGeoSection,
-  compare_visual_privacy_security: CompareVisualPrivacySection,
-  compare_visual_performance: CompareVisualPerformanceSection,
+  compare_visual_hero_features: MetadataHeroSection,
+  compare_visual_how_to_steps: OrganizeHowToSection,
+  compare_visual_geo_targeting: PptToPdfGeoSection,
+  compare_visual_privacy_security: RemovePrivacySection,
+  compare_visual_performance: PageNumbersPerformanceSection,
 };
 
 /** No prefix stripping needed since every tool has a unique prefix mapping */
