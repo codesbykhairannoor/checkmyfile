@@ -1,0 +1,58 @@
+{
+  "title": "PDF Dosyalarını Görsel Olarak Karşılaştırın — Piksel Farklarını Bulun",
+  "h1": "İki PDF Dosyasını Görsel Olarak Karşılaştırın",
+  "description": "İki PDF belgesi yükleyin ve aralarındaki tam piksel farklarını tarayıcınızda yerel olarak anında vurgulayın.",
+  "buttonText": "PDF'leri seçin",
+  "badges": [
+    "Piksel Mükemmel Farkı",
+    "Yan Yana",
+    "Yerel Fark"
+  ],
+  "stats": [
+    "%100",
+    "Kesin",
+    "0",
+    "Bulut Kullanımı"
+  ],
+  "sections": [
+    {
+      "type": "compare_visual_hero_features",
+      "title": "Küçük Değişiklikleri Otomatik Olarak Tespit Edin",
+      "content": "Revize edilen sözleşmeler veya tasarımlardaki farklılıkları bulmak için gözlerinize güvenmeyin. Aracımız tam piksel değişikliklerini kırmızı renkte vurgular."
+    },
+    {
+      "type": "compare_visual_how_to_steps",
+      "title": "PDF'ler Nasıl Karşılaştırılır",
+      "content": "Orijinal PDF'yi ve revize edilmiş PDF'yi yükleyin. Her ikisini de oluşturacağız ve herhangi bir ekleme veya silme işlemini ortaya çıkarmak için bunları üst üste getireceğiz."
+    },
+    {
+      "type": "compare_visual_geo_targeting",
+      "title": "Sözleşmeler ve Kanıtlar için Mükemmel",
+      "content": "Avukatlar ve tasarımcılar, bir belgeye yetkisiz değişiklik yapılmadığından emin olmak için görsel fark aracımızı kullanır."
+    },
+    {
+      "type": "compare_visual_privacy_security",
+      "title": "Gizli Belge Karşılaştırması",
+      "content": "Hassas NDA sözleşmelerini mi karşılaştırıyorsunuz? Aracımız %100 yerlidir. Belgeler hiçbir zaman sunucularımıza dokunmaz."
+    },
+    {
+      "type": "compare_visual_performance",
+      "title": "Gerçek Zamanlı Fark Oluşturma",
+      "content": "Donanımla hızlandırılmış tuval oluşturma sayesinde tarayıcınızda anında görsel farklılıklar oluşturun."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Metin veya piksel farklılıklarını buluyor mu?",
+      "a": "PDF'yi işler ve metin, yazı tipleri ve görselleri içeren görsel piksel farklılıklarını bulur."
+    },
+    {
+      "q": "Kırmızı işaretler ne anlama geliyor?",
+      "a": "Kırmızı vurgular, iki PDF'nin görsel olarak farklı olduğu alanları belirtir."
+    },
+    {
+      "q": "Yasal belgeler için güvenli mi?",
+      "a": "Evet, tüm işlemler kesinlikle yerel ve özeldir."
+    }
+  ]
+}

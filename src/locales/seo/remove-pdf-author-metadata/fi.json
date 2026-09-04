@@ -1,0 +1,58 @@
+{
+  "title": "Poista PDF-tekijän metatiedot — Puhdista PDF-ominaisuudet",
+  "h1": "Puhdista PDF-tekijän metatiedot",
+  "description": "Suojaa yksityisyyttäsi poistamalla turvallisesti tekijöiden nimet, luontipäivämäärät, ohjelmistojalanjäljet ​​ja piilotetut metatiedot PDF-tiedostoistasi.",
+  "buttonText": "Valitse PDF",
+  "badges": [
+    "Metatietojen puhdistaja",
+    "Yksityisyys ensin",
+    "Offline-työkalu"
+  ],
+  "stats": [
+    "100 %",
+    "Turvallinen",
+    "0",
+    "Jalanjäljet"
+  ],
+  "sections": [
+    {
+      "type": "remove_author_hero_features",
+      "title": "Miksi puhdistaa PDF-metadata?",
+      "content": "PDF-tiedostot tallentavat usein salaa nimesi, yrityksen nimesi, käyttöjärjestelmäversiosi ja luontipäivämääräsi. Puhdista ne ennen jakamista verkossa."
+    },
+    {
+      "type": "remove_author_how_to_steps",
+      "title": "Kiinteistöjen puhdistaminen",
+      "content": "Lataa asiakirjasi. Moottorimme jäsentää PDF-rakenteen ja poistaa turvallisesti kaikki sanakirjan metatietokentät."
+    },
+    {
+      "type": "remove_author_geo_targeting",
+      "title": "Suojaa nimettömyyttäsi",
+      "content": "Varmista, että ilmiantajat, toimittajat ja jokapäiväiset käyttäjät voivat jakaa asiakirjoja ilman digitaalista identiteettiään."
+    },
+    {
+      "type": "remove_author_privacy_security",
+      "title": "Sotilasluokan desinfiointi",
+      "content": "Kirjoitamme PDF-binaarirakenteen uudelleen paikallisesti selaimessasi varmistaaksemme, että metatiedot tuhoutuvat pysyvästi."
+    },
+    {
+      "type": "remove_author_performance",
+      "title": "Instant Metadata Eraser",
+      "content": "Puhdista tuhansia sivuja alle sekunnissa erittäin optimoidun WebAssembly-ytimen avulla."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Mitä metatietoja poistetaan?",
+      "a": "Tekijä, otsikko, aihe, avainsanat, luoja, tuottaja, luomispäivämäärä ja muokkauspäivämäärä."
+    },
+    {
+      "q": "Muuttaako se visuaalista asettelua?",
+      "a": "Ei, vain piilotettujen metatietojen ominaisuuksia muokataan."
+    },
+    {
+      "q": "Onko prosessi turvallinen?",
+      "a": "Kyllä, se tapahtuu 100 % paikallisesti koneellasi."
+    }
+  ]
+}

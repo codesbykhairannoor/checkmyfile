@@ -1,0 +1,58 @@
+{
+  "title": "Compare arquivos PDF visualmente – Encontre diferenças de pixels",
+  "h1": "Compare visualmente dois arquivos PDF",
+  "description": "Carregue dois documentos PDF e destaque instantaneamente as diferenças exatas de pixels entre eles localmente no seu navegador.",
+  "buttonText": "Selecione PDFs",
+  "badges": [
+    "Diferença perfeita de pixel",
+    "Lado a lado",
+    "Diferença local"
+  ],
+  "stats": [
+    "100%",
+    "Preciso",
+    "0",
+    "Uso da nuvem"
+  ],
+  "sections": [
+    {
+      "type": "compare_visual_hero_features",
+      "title": "Identifique pequenas alterações automaticamente",
+      "content": "Não confie nos seus olhos para encontrar diferenças em contratos ou projetos revisados. Nossa ferramenta destaca as alterações exatas dos pixels em vermelho."
+    },
+    {
+      "type": "compare_visual_how_to_steps",
+      "title": "Como comparar PDFs",
+      "content": "Carregue o PDF original e o PDF revisado. Iremos renderizar ambos e sobrepô-los para expor quaisquer adições ou exclusões."
+    },
+    {
+      "type": "compare_visual_geo_targeting",
+      "title": "Perfeito para contratos e provas",
+      "content": "Advogados e designers usam nossa ferramenta de comparação visual para garantir que nenhuma alteração não autorizada seja introduzida em um documento."
+    },
+    {
+      "type": "compare_visual_privacy_security",
+      "title": "Comparação de documentos confidenciais",
+      "content": "Comparando contratos NDA sensíveis? Nossa ferramenta é 100% local. Os documentos nunca chegam aos nossos servidores."
+    },
+    {
+      "type": "compare_visual_performance",
+      "title": "Renderização de diferenças em tempo real",
+      "content": "Gere diferenças visuais instantaneamente em seu navegador graças à renderização de tela acelerada por hardware."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Ele encontra diferenças de texto ou pixel?",
+      "a": "Ele renderiza o PDF e encontra diferenças visuais de pixels, que incluem texto, fontes e imagens."
+    },
+    {
+      "q": "O que significam as marcas vermelhas?",
+      "a": "Os destaques vermelhos indicam áreas onde os dois PDFs diferem visualmente."
+    },
+    {
+      "q": "É seguro para documentos legais?",
+      "a": "Sim, todo o processamento é estritamente local e privado."
+    }
+  ]
+}

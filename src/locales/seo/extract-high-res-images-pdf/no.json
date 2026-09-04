@@ -1,0 +1,58 @@
+{
+  "title": "Trekk ut høyoppløselige bilder fra PDF – Få originale bilder",
+  "h1": "Trekk ut høyoppløselige bilder fra PDF",
+  "description": "Last ned innebygde bilder og grafikk fra PDF-en din i original, ukomprimert høy oppløsning. Ingen serveropplastinger.",
+  "buttonText": "Velg PDF",
+  "badges": [
+    "Tapsfri utvinning",
+    "Batch eksport",
+    "ZIP-arkiv"
+  ],
+  "stats": [
+    "100 %",
+    "Original kvalitet",
+    "0",
+    "Opplastinger"
+  ],
+  "sections": [
+    {
+      "type": "extract_highres_hero_features",
+      "title": "Få original bildekvalitet",
+      "content": "Ikke bruk skjermbildeverktøy som ødelegger oppløsningen. Verktøyet vårt graver inn i PDF-binæren og trekker ut de rå, originale bildefilene."
+    },
+    {
+      "type": "extract_highres_how_to_steps",
+      "title": "Hvordan trekke ut bilder",
+      "content": "Velg en PDF. Vi skanner den for innebygde JPEG-er og PNG-er, og pakker dem alle inn i en pen ZIP-fil for deg."
+    },
+    {
+      "type": "extract_highres_geo_targeting",
+      "title": "Beste bildeekstraksjonsverktøy",
+      "content": "Perfekt for designere, utgivere og studenter som trenger å gjenbruke ressurser av høy kvalitet som er låst inne i en PDF."
+    },
+    {
+      "type": "extract_highres_privacy_security",
+      "title": "Utvinning av private eiendeler",
+      "content": "Vi stjeler ikke bildene dine. Utvinningen skjer helt på din egen datamaskin."
+    },
+    {
+      "type": "extract_highres_performance",
+      "title": "Lynrask eksport",
+      "content": "Trekk ut hundrevis av høyoppløselige bilder på sekunder uten å vente på en massiv filopplasting."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Hvilke formater trekkes ut?",
+      "a": "For det meste JPG og PNG, avhengig av hvordan de ble innebygd."
+    },
+    {
+      "q": "Er de komprimert?",
+      "a": "Nei, vi trekker ut de nøyaktige rå binære dataene som er lagret i PDF-en."
+    },
+    {
+      "q": "Kan jeg laste ned alle på en gang?",
+      "a": "Ja, vi samler alle bildene i én enkelt ZIP-fil."
+    }
+  ]
+}

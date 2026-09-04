@@ -1,0 +1,58 @@
+{
+  "title": "Hasonlítsa össze a PDF-fájlokat vizuálisan – keresse meg a pixelkülönbségeket",
+  "h1": "Hasonlítsa össze vizuálisan két PDF-fájlt",
+  "description": "Töltsön fel két PDF dokumentumot, és azonnal jelölje ki a köztük lévő pontos képpont-különbségeket helyileg a böngészőjében.",
+  "buttonText": "Válassza ki a PDF-eket",
+  "badges": [
+    "Pixel Perfect Diff",
+    "Egymás mellett",
+    "Helyi differenciálás"
+  ],
+  "stats": [
+    "100%",
+    "Pontos",
+    "0",
+    "Felhőhasználat"
+  ],
+  "sections": [
+    {
+      "type": "compare_visual_hero_features",
+      "title": "Automatikusan észreveszi az apró változásokat",
+      "content": "Ne hagyatkozzon a szemére, hogy különbségeket találjon a felülvizsgált szerződésekben vagy tervekben. Eszközünk a pontos pixelváltozásokat pirossal kiemeli."
+    },
+    {
+      "type": "compare_visual_how_to_steps",
+      "title": "PDF-ek összehasonlítása",
+      "content": "Töltse fel az eredeti PDF-et és a javított PDF-et. Mindkettőt megjelenítjük, és átfedjük őket, hogy megjelenjen az esetleges kiegészítések vagy törlések."
+    },
+    {
+      "type": "compare_visual_geo_targeting",
+      "title": "Tökéletes szerződésekhez és igazolásokhoz",
+      "content": "Az ügyvédek és a tervezők vizuális különbségi eszközünket használják annak biztosítására, hogy a dokumentumba ne kerüljön jogosulatlan módosítás."
+    },
+    {
+      "type": "compare_visual_privacy_security",
+      "title": "Bizalmas dokumentumok összehasonlítása",
+      "content": "Az érzékeny NDA-szerződések összehasonlítása? Eszközünk 100%-ban helyi. A dokumentumok soha nem érintik a szervereinket."
+    },
+    {
+      "type": "compare_visual_performance",
+      "title": "Valós idejű Diff Rendering",
+      "content": "A hardveres gyorsítású vászonmegjelenítésnek köszönhetően azonnal generálhat vizuális eltéréseket a böngészőben."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Szöveg vagy pixel eltéréseket talál?",
+      "a": "Rendereli a PDF-et, és megkeresi a vizuális pixelkülönbségeket, beleértve a szöveget, a betűtípusokat és a képeket."
+    },
+    {
+      "q": "Mit jelentenek a piros jelek?",
+      "a": "Piros kiemelések jelzik azokat a területeket, ahol a két PDF vizuálisan különbözik."
+    },
+    {
+      "q": "Biztonságos a jogi dokumentumok számára?",
+      "a": "Igen, minden feldolgozás szigorúan helyi és privát."
+    }
+  ]
+}

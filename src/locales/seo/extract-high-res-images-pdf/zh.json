@@ -1,0 +1,58 @@
+{
+  "title": "从 PDF 中提取高分辨率图像 — 获取原始照片",
+  "h1": "从 PDF 中提取高分辨率图像",
+  "description": "以原始、未压缩的高分辨率从 PDF 下载嵌入的照片和图形。 没有服务器上传。",
+  "buttonText": "选择PDF",
+  "badges": [
+    "无损提取",
+    "批量导出",
+    "邮政编码存档"
+  ],
+  "stats": [
+    "100%",
+    "原装品质",
+    "0",
+    "上传"
+  ],
+  "sections": [
+    {
+      "type": "extract_highres_hero_features",
+      "title": "获得原始图像质量",
+      "content": "不要使用会破坏分辨率的屏幕截图工具。 我们的工具深入研究 PDF 二进制文件并提取原始的原始图像文件。"
+    },
+    {
+      "type": "extract_highres_how_to_steps",
+      "title": "如何提取图片",
+      "content": "选择一个 PDF。 我们扫描它以查找嵌入的 JPEG 和 PNG，并将它们全部打包到一个整洁的 ZIP 文件中。"
+    },
+    {
+      "type": "extract_highres_geo_targeting",
+      "title": "最佳图像提取工具",
+      "content": "非常适合需要重复使用 PDF 中锁定的高质量资源的设计师、出版商和学生。"
+    },
+    {
+      "type": "extract_highres_privacy_security",
+      "title": "私人资产提取",
+      "content": "我们不会窃取您的图像。 提取完全发生在您自己的计算机上。"
+    },
+    {
+      "type": "extract_highres_performance",
+      "title": "极速导出",
+      "content": "在几秒钟内提取数百张高分辨率图像，无需等待大量文件上传。"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "提取什么格式？",
+      "a": "主要是 JPG 和 PNG，具体取决于它们的嵌入方式。"
+    },
+    {
+      "q": "它们被压缩了吗？",
+      "a": "不，我们提取 PDF 中存储的精确原始二进制数据。"
+    },
+    {
+      "q": "我可以一次性下载全部吗？",
+      "a": "是的，我们将所有图像捆绑到一个 ZIP 文件中。"
+    }
+  ]
+}

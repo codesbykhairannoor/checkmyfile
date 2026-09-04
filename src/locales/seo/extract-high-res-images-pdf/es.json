@@ -1,0 +1,58 @@
+{
+  "title": "Extraiga imágenes de alta resolución de PDF: obtenga fotografías originales",
+  "h1": "Extraiga imágenes de alta resolución de PDF",
+  "description": "Descargue fotografías y gráficos incrustados desde su PDF en su alta resolución original sin comprimir. No hay cargas del servidor.",
+  "buttonText": "Seleccione PDF",
+  "badges": [
+    "Extracción sin pérdidas",
+    "Exportación por lotes",
+    "Archivo ZIP"
+  ],
+  "stats": [
+    "100%",
+    "Calidad Original",
+    "0",
+    "Subidas"
+  ],
+  "sections": [
+    {
+      "type": "extract_highres_hero_features",
+      "title": "Obtenga calidad de imagen original",
+      "content": "No utilices herramientas de captura de pantalla que arruinen la resolución. Nuestra herramienta profundiza en el binario PDF y extrae los archivos de imagen originales sin procesar."
+    },
+    {
+      "type": "extract_highres_how_to_steps",
+      "title": "Cómo extraer imágenes",
+      "content": "Seleccione un PDF. Lo escaneamos en busca de archivos JPEG y PNG incrustados y los empaquetamos todos en un archivo ZIP ordenado para usted."
+    },
+    {
+      "type": "extract_highres_geo_targeting",
+      "title": "La mejor herramienta de extracción de imágenes",
+      "content": "Perfecto para diseñadores, editores y estudiantes que necesitan reutilizar recursos de alta calidad encerrados en un PDF."
+    },
+    {
+      "type": "extract_highres_privacy_security",
+      "title": "Extracción de activos privados",
+      "content": "No robamos tus imágenes. La extracción se realiza íntegramente en su propia computadora."
+    },
+    {
+      "type": "extract_highres_performance",
+      "title": "Exportación increíblemente rápida",
+      "content": "Extraiga cientos de imágenes de alta resolución en segundos sin esperar a que se cargue un archivo masivo."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "¿Qué formatos se extraen?",
+      "a": "Principalmente JPG y PNG, dependiendo de cómo se incrustaron."
+    },
+    {
+      "q": "¿Están ellas comprimidas?",
+      "a": "No, extraemos los datos binarios sin procesar exactos almacenados en el PDF."
+    },
+    {
+      "q": "¿Puedo descargarlas todas a la vez?",
+      "a": "Sí, agrupamos todas las imágenes en un único archivo ZIP."
+    }
+  ]
+}

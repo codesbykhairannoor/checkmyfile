@@ -1,0 +1,58 @@
+{
+  "title": "Gråskala PDF för utskrift — Konvertera färg till svartvitt",
+  "h1": "Konvertera färg PDF till gråskala",
+  "description": "Spara skrivarbläck genom att omedelbart konvertera färgade PDF-dokument till svartvitt eller gråskala direkt i din webbläsare.",
+  "buttonText": "Välj PDF",
+  "badges": [
+    "Bläcksparare",
+    "Omedelbar konvertering",
+    "Säkra"
+  ],
+  "stats": [
+    "100 %",
+    "Gratis",
+    "0",
+    "Annonser"
+  ],
+  "sections": [
+    {
+      "type": "grayscale_print_hero_features",
+      "title": "Spara dyrt skrivarbläck",
+      "content": "Färgat bläck är dyrt. Konvertera dina PDF-filer till gråskala före utskrift för att spara pengar och resurser."
+    },
+    {
+      "type": "grayscale_print_how_to_steps",
+      "title": "Hur man gör PDF svartvitt",
+      "content": "Släpp bara din fil i rutan. Vårt lokala verktyg tar omedelbart bort alla färger och ger dig en perfekt utskrivbar gråskala PDF."
+    },
+    {
+      "type": "grayscale_print_geo_targeting",
+      "title": "Bästa svartvita PDF-konverterare",
+      "content": "Konvertera färgad text, bilder och bakgrunder till nyanser av grått utan att förlora läsbarheten."
+    },
+    {
+      "type": "grayscale_print_privacy_security",
+      "title": "Privat gråskalekonvertering",
+      "content": "Dina dokument konverteras till din egen enhets minne. Vi ser aldrig dina filer."
+    },
+    {
+      "type": "grayscale_print_performance",
+      "title": "Blixtsnabb bearbetning",
+      "content": "Eftersom vi inte laddar upp din fil till en molnserver, sker gråskalekonverteringen nästan omedelbart."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Kommer bilderna att gråskalas också?",
+      "a": "Ja, alla bilder, text och vektorgrafik kommer att konverteras till gråskala."
+    },
+    {
+      "q": "Är filstorleken reducerad?",
+      "a": "Ibland, beroende på färgbilderna inuti PDF:en."
+    },
+    {
+      "q": "Är det säkert för privata filer?",
+      "a": "Absolut. Ingen data skickas över internet."
+    }
+  ]
+}

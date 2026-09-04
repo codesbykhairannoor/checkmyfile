@@ -1,0 +1,58 @@
+{
+  "title": "Plik PDF w skali szarości do druku — Konwertuj kolor na czarno-biały",
+  "h1": "Konwertuj kolorowy plik PDF na skalę szarości",
+  "description": "Oszczędzaj tusz do drukarki, natychmiastowo konwertując kolorowe dokumenty PDF na czarno-białe lub w skali szarości bezpośrednio w przeglądarce.",
+  "buttonText": "Wybierz PDF",
+  "badges": [
+    "Oszczędzanie atramentu",
+    "Natychmiastowa konwersja",
+    "Bezpieczny"
+  ],
+  "stats": [
+    "100%",
+    "Bezpłatny",
+    "0",
+    "Reklamy"
+  ],
+  "sections": [
+    {
+      "type": "grayscale_print_hero_features",
+      "title": "Oszczędzaj drogi atrament do drukarki",
+      "content": "Atrament kolorowy jest drogi. Konwertuj pliki PDF na skalę szarości przed drukowaniem, aby zaoszczędzić pieniądze i zasoby."
+    },
+    {
+      "type": "grayscale_print_how_to_steps",
+      "title": "Jak zrobić czarno-biały plik PDF",
+      "content": "Po prostu upuść plik w skrzynce. Nasze lokalne narzędzie natychmiast usunie wszystkie kolory i wyświetli idealnie nadający się do wydrukowania plik PDF w skali szarości."
+    },
+    {
+      "type": "grayscale_print_geo_targeting",
+      "title": "Najlepszy konwerter czarno-białych plików PDF",
+      "content": "Konwertuj kolorowy tekst, obrazy i tła na odcienie szarości bez utraty czytelności."
+    },
+    {
+      "type": "grayscale_print_privacy_security",
+      "title": "Prywatna konwersja skali szarości",
+      "content": "Twoje dokumenty są konwertowane w pamięci Twojego urządzenia. Nigdy nie widzimy Twoich plików."
+    },
+    {
+      "type": "grayscale_print_performance",
+      "title": "Błyskawiczne przetwarzanie",
+      "content": "Ponieważ nie przesyłamy Twojego pliku na serwer w chmurze, konwersja skali szarości następuje niemal natychmiast."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Czy obrazy również będą w skali szarości?",
+      "a": "Tak, wszystkie obrazy, tekst i grafika wektorowa zostaną przekonwertowane na skalę szarości."
+    },
+    {
+      "q": "Czy rozmiar pliku został zmniejszony?",
+      "a": "Czasami, w zależności od kolorowych obrazów w pliku PDF."
+    },
+    {
+      "q": "Czy jest to bezpieczne dla prywatnych plików?",
+      "a": "Absolutnie. Żadne dane nie są przesyłane przez Internet."
+    }
+  ]
+}

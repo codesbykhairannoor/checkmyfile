@@ -567,6 +567,76 @@ export const pdfTools: ToolDefinition[] = [
         faqs: defaultFaqs('Grayscale PDF', 'id'),
       },
     },
+  },
+  {
+    id: 'crop-pdf-margins',
+    category: 'pdf',
+    iconName: 'Crop',
+    slugs: generateSlugsForId('crop-pdf-margins', { en: 'crop-pdf-margins' }),
+    seo: {
+      en: {
+        title: 'Crop White Margins from PDF Pages Free',
+        h1: 'Crop PDF Margins Easily',
+        description: 'Remove annoying white margins from your PDF documents for a better reading experience.',
+        faqs: defaultFaqs('Crop Margins', 'en'),
+      }
+    }
+  },
+  {
+    id: 'grayscale-pdf-for-printing',
+    category: 'pdf',
+    iconName: 'Contrast',
+    slugs: generateSlugsForId('grayscale-pdf-for-printing', { en: 'grayscale-pdf-for-printing' }),
+    seo: {
+      en: {
+        title: 'Convert Color PDF to Grayscale for Printing',
+        h1: 'Grayscale PDF for Printing',
+        description: 'Convert colored PDF documents to black and white instantly to save printing ink.',
+        faqs: defaultFaqs('Grayscale PDF', 'en'),
+      }
+    }
+  },
+  {
+    id: 'remove-pdf-author-metadata',
+    category: 'pdf',
+    iconName: 'Eraser',
+    slugs: generateSlugsForId('remove-pdf-author-metadata', { en: 'remove-pdf-author-metadata' }),
+    seo: {
+      en: {
+        title: 'Remove Author Name and Hidden Metadata from PDF',
+        h1: 'Sanitize PDF Metadata',
+        description: 'Securely remove author names, creation dates, and hidden software footprints from your PDFs.',
+        faqs: defaultFaqs('Remove Metadata', 'en'),
+      }
+    }
+  },
+  {
+    id: 'extract-high-res-images-pdf',
+    category: 'pdf',
+    iconName: 'Images',
+    slugs: generateSlugsForId('extract-high-res-images-pdf', { en: 'extract-high-res-images-pdf' }),
+    seo: {
+      en: {
+        title: 'Extract High Resolution Images from PDF Free',
+        h1: 'Extract PDF Images in High Quality',
+        description: 'Download and save embedded photos and graphics from your PDF in original high resolution.',
+        faqs: defaultFaqs('Extract Images', 'en'),
+      }
+    }
+  },
+  {
+    id: 'compare-pdf-files-visually',
+    category: 'pdf',
+    iconName: 'Scale',
+    slugs: generateSlugsForId('compare-pdf-files-visually', { en: 'compare-pdf-files-visually' }),
+    seo: {
+      en: {
+        title: 'Compare Two PDF Files for Visual Differences',
+        h1: 'Visually Compare PDFs',
+        description: 'Upload two PDF documents and highlight the exact pixel differences between them locally.',
+        faqs: defaultFaqs('Compare PDF', 'en'),
+      }
+    }
   }
 ];
 

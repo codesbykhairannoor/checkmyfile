@@ -1,0 +1,58 @@
+{
+  "title": "Ritaglia i margini del PDF: ritaglia gli spazi bianchi online",
+  "h1": "Ritaglia i margini bianchi dalle pagine PDF",
+  "description": "Rimuovi i fastidiosi margini bianchi dai tuoi documenti PDF per una migliore esperienza di lettura su dispositivi mobili ed e-reader. 100% gratuito e locale.",
+  "buttonText": "Seleziona PDF",
+  "badges": [
+    "Ritaglio di precisione",
+    "Nessun caricamento sul server",
+    "Veloce"
+  ],
+  "stats": [
+    "100%",
+    "Locale",
+    "0",
+    "Latenza"
+  ],
+  "sections": [
+    {
+      "type": "crop_margins_hero_features",
+      "title": "Perché ritagliare i margini del PDF?",
+      "content": "Molti documenti accademici ed ebook hanno enormi margini bianchi. Ritagliarli rende il testo più grande e più facile da leggere su schermi più piccoli."
+    },
+    {
+      "type": "crop_margins_how_to_steps",
+      "title": "Come ritagliare i margini",
+      "content": "Carica il tuo file, definisci il riquadro di delimitazione trascinando le maniglie e premi Ritaglia. Il processo è completamente privato."
+    },
+    {
+      "type": "crop_margins_geo_targeting",
+      "title": "Rimozione sicura del margine",
+      "content": "Non è necessario caricare i tuoi PDF sensibili solo per rimuovere alcuni spazi bianchi. Il nostro motore WebAssembly lo fa nel tuo browser."
+    },
+    {
+      "type": "crop_margins_privacy_security",
+      "title": "Ritaglio offline al 100%.",
+      "content": "I tuoi file non lasciano mai il tuo computer. Perfetto per documenti legali o medici riservati."
+    },
+    {
+      "type": "crop_margins_performance",
+      "title": "Ritaglio PDF istantaneo",
+      "content": "Ritaglia un libro di 500 pagine in millisecondi senza attendere caricamenti o download sul server."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "E' gratis?",
+      "a": "Sì, gratuito al 100% senza limiti."
+    },
+    {
+      "q": "Carica il mio file?",
+      "a": "No, tutto viene elaborato localmente."
+    },
+    {
+      "q": "Posso ritagliare margini irregolari?",
+      "a": "Sì, puoi specificare valori diversi per superiore, inferiore, sinistra e destra."
+    }
+  ]
+}

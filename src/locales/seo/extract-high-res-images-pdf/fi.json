@@ -1,0 +1,58 @@
+{
+  "title": "Pura korkearesoluutioisia kuvia PDF-tiedostosta – hanki alkuperäisiä valokuvia",
+  "h1": "Pura korkearesoluutioisia kuvia PDF-tiedostosta",
+  "description": "Lataa upotetut valokuvat ja grafiikat PDF-tiedostosta alkuperäisessä, pakkaamattomassa korkeassa resoluutiossa. Ei palvelinlatauksia.",
+  "buttonText": "Valitse PDF",
+  "badges": [
+    "Häviötön poisto",
+    "Erävienti",
+    "ZIP-arkisto"
+  ],
+  "stats": [
+    "100 %",
+    "Alkuperäinen Laatu",
+    "0",
+    "Lataukset"
+  ],
+  "sections": [
+    {
+      "type": "extract_highres_hero_features",
+      "title": "Hanki alkuperäinen kuvanlaatu",
+      "content": "Älä käytä kuvakaappaustyökaluja, jotka pilaavat resoluution. Työkalumme kaivautuu PDF-binaariin ja purkaa alkuperäiset raakakuvatiedostot."
+    },
+    {
+      "type": "extract_highres_how_to_steps",
+      "title": "Kuinka purkaa kuvia",
+      "content": "Valitse PDF. Etsimme siitä upotettuja JPEG- ja PNG-tiedostoja ja pakkaamme ne kaikki siistiin ZIP-tiedostoon."
+    },
+    {
+      "type": "extract_highres_geo_targeting",
+      "title": "Paras kuvanpoistotyökalu",
+      "content": "Täydellinen suunnittelijoille, julkaisijoille ja opiskelijoille, jotka tarvitsevat uudelleen PDF-tiedostoon lukittua korkealaatuista materiaalia."
+    },
+    {
+      "type": "extract_highres_privacy_security",
+      "title": "Yksityisen omaisuuden louhinta",
+      "content": "Emme varasta kuviasi. Poiminta tapahtuu kokonaan omalla tietokoneellasi."
+    },
+    {
+      "type": "extract_highres_performance",
+      "title": "Loistavan nopea vienti",
+      "content": "Pura satoja korkearesoluutioisia kuvia sekunneissa odottamatta massiivista tiedostojen latausta."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Mitä muotoja puretaan?",
+      "a": "Enimmäkseen JPG ja PNG, riippuen siitä, miten ne on upotettu."
+    },
+    {
+      "q": "Onko ne puristettu?",
+      "a": "Ei, poimimme tarkat binaaritiedot, jotka on tallennettu PDF-tiedostoon."
+    },
+    {
+      "q": "Voinko ladata ne kaikki kerralla?",
+      "a": "Kyllä, niputamme kaikki kuvat yhdeksi ZIP-tiedostoksi."
+    }
+  ]
+}

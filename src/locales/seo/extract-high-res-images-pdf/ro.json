@@ -1,0 +1,58 @@
+{
+  "title": "Extrageți imagini de înaltă rezoluție din PDF — Obțineți fotografii originale",
+  "h1": "Extrageți imagini de înaltă rezoluție din PDF",
+  "description": "Descărcați fotografii și grafice încorporate din PDF-ul dvs. la rezoluția lor originală, necomprimată. Fără încărcări de server.",
+  "buttonText": "Selectați PDF",
+  "badges": [
+    "Extracție fără pierderi",
+    "Export lot",
+    "Arhiva ZIP"
+  ],
+  "stats": [
+    "100%",
+    "Calitate Originală",
+    "0",
+    "Încărcări"
+  ],
+  "sections": [
+    {
+      "type": "extract_highres_hero_features",
+      "title": "Obțineți calitatea imaginii originale",
+      "content": "Nu utilizați instrumente de captură de ecran care strica rezoluția. Instrumentul nostru caută în binarul PDF și extrage fișierele imagine brute, originale."
+    },
+    {
+      "type": "extract_highres_how_to_steps",
+      "title": "Cum se extrage imagini",
+      "content": "Selectați un PDF. Îl scanăm pentru JPEG și PNG-uri încorporate și le ambalăm pe toate într-un fișier ZIP ordonat pentru tine."
+    },
+    {
+      "type": "extract_highres_geo_targeting",
+      "title": "Cel mai bun instrument de extragere a imaginilor",
+      "content": "Perfect pentru designeri, editori și studenți care trebuie să refolosească materiale de înaltă calitate blocate într-un PDF."
+    },
+    {
+      "type": "extract_highres_privacy_security",
+      "title": "Extragerea activelor private",
+      "content": "Nu vă furăm imaginile. Extragerea are loc în întregime pe propriul computer."
+    },
+    {
+      "type": "extract_highres_performance",
+      "title": "Export fulgerător",
+      "content": "Extrageți sute de imagini de înaltă rezoluție în câteva secunde fără a aștepta încărcarea masivă a fișierului."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Ce formate sunt extrase?",
+      "a": "Mai ales JPG și PNG, în funcție de modul în care au fost încorporate."
+    },
+    {
+      "q": "Sunt comprimate?",
+      "a": "Nu, extragem exact datele binare brute stocate în PDF."
+    },
+    {
+      "q": "Le pot descărca pe toate deodată?",
+      "a": "Da, grupăm toate imaginile într-un singur fișier ZIP."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "title": "Extrahera högupplösta bilder från PDF — Få originalfoton",
+  "h1": "Extrahera högupplösta bilder från PDF",
+  "description": "Ladda ner inbäddade foton och grafik från din PDF i deras ursprungliga, okomprimerade högupplösning. Inga serveruppladdningar.",
+  "buttonText": "Välj PDF",
+  "badges": [
+    "Förlustfri extraktion",
+    "Batchexport",
+    "ZIP-arkiv"
+  ],
+  "stats": [
+    "100 %",
+    "Originalkvalitet",
+    "0",
+    "Uppladdningar"
+  ],
+  "sections": [
+    {
+      "type": "extract_highres_hero_features",
+      "title": "Få original bildkvalitet",
+      "content": "Använd inte skärmdumpsverktyg som förstör upplösningen. Vårt verktyg gräver i PDF-binären och extraherar de råa, ursprungliga bildfilerna."
+    },
+    {
+      "type": "extract_highres_how_to_steps",
+      "title": "Hur man extraherar bilder",
+      "content": "Välj en PDF. Vi skannar den efter inbäddade JPEG- och PNG-filer och paketerar dem alla i en snygg ZIP-fil åt dig."
+    },
+    {
+      "type": "extract_highres_geo_targeting",
+      "title": "Bästa bildextraktionsverktyget",
+      "content": "Perfekt för designers, utgivare och studenter som behöver återanvända tillgångar av hög kvalitet som är låsta i en PDF."
+    },
+    {
+      "type": "extract_highres_privacy_security",
+      "title": "Utvinning av privata tillgångar",
+      "content": "Vi stjäl inte dina bilder. Extraheringen sker helt på din egen dator."
+    },
+    {
+      "type": "extract_highres_performance",
+      "title": "Blixtsnabb export",
+      "content": "Extrahera hundratals högupplösta bilder på några sekunder utan att vänta på en massiv filuppladdning."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Vilka format extraheras?",
+      "a": "Mest JPG och PNG, beroende på hur de var inbäddade."
+    },
+    {
+      "q": "Är de komprimerade?",
+      "a": "Nej, vi extraherar den exakta råa binära data som lagras i PDF:en."
+    },
+    {
+      "q": "Kan jag ladda ner alla på en gång?",
+      "a": "Ja, vi samlar alla bilder i en enda ZIP-fil."
+    }
+  ]
+}

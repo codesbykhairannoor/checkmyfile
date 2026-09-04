@@ -1,0 +1,58 @@
+{
+  "title": "Ta bort PDF-författarens metadata — Rensa PDF-egenskaper",
+  "h1": "Sanitize PDF Author Metadata",
+  "description": "Skydda din integritet genom att på ett säkert sätt ta bort författarnamn, skapandedatum, programvaruavtryck och dolda metadata från dina PDF-filer.",
+  "buttonText": "Välj PDF",
+  "badges": [
+    "Metadata Cleaner",
+    "Sekretess först",
+    "Offlineverktyg"
+  ],
+  "stats": [
+    "100 %",
+    "Säkra",
+    "0",
+    "Fotspår"
+  ],
+  "sections": [
+    {
+      "type": "remove_author_hero_features",
+      "title": "Varför rensa PDF-metadata?",
+      "content": "PDF-filer lagrar ofta i hemlighet ditt namn, företagsnamn, OS-version och skapandedatum. Rengör dem innan du delar dem online."
+    },
+    {
+      "type": "remove_author_how_to_steps",
+      "title": "Hur man sanerar fastigheter",
+      "content": "Ladda upp ditt dokument. Vår motor kommer att analysera PDF-strukturen och säkert radera alla ordboksmetadatafält."
+    },
+    {
+      "type": "remove_author_geo_targeting",
+      "title": "Skydda din anonymitet",
+      "content": "Se till att whistleblowers, journalister och vanliga användare kan dela dokument utan att läcka sin digitala identitet."
+    },
+    {
+      "type": "remove_author_privacy_security",
+      "title": "Militär sanering",
+      "content": "Vi skriver om den binära PDF-strukturen lokalt i din webbläsare för att säkerställa att metadata permanent förstörs."
+    },
+    {
+      "type": "remove_author_performance",
+      "title": "Omedelbar Metadata Eraser",
+      "content": "Skrubba tusentals sidor på mindre än en sekund med vår mycket optimerade WebAssembly-kärna."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Vilken metadata tas bort?",
+      "a": "Författare, Titel, Ämne, Nyckelord, Skapare, Producent, CreationDate och ModDate."
+    },
+    {
+      "q": "Ändrar det den visuella layouten?",
+      "a": "Nej, endast de dolda metadataegenskaperna ändras."
+    },
+    {
+      "q": "Är processen säker?",
+      "a": "Ja, det händer 100 % lokalt på din maskin."
+    }
+  ]
+}

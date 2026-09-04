@@ -1,0 +1,58 @@
+{
+  "title": "Vizuálne porovnajte súbory PDF – nájdite rozdiely v pixeloch",
+  "h1": "Vizuálne porovnajte dva súbory PDF",
+  "description": "Nahrajte dva dokumenty PDF a okamžite zvýraznite presné pixelové rozdiely medzi nimi lokálne vo vašom prehliadači.",
+  "buttonText": "Vyberte súbory PDF",
+  "badges": [
+    "Pixel Perfect Diff",
+    "Side-by-Side",
+    "Miestny rozdiel"
+  ],
+  "stats": [
+    "100%",
+    "Presné",
+    "0",
+    "Používanie cloudu"
+  ],
+  "sections": [
+    {
+      "type": "compare_visual_hero_features",
+      "title": "Spoznávajte drobné zmeny automaticky",
+      "content": "Nespoliehajte sa na svoje oči, že nájdete rozdiely v revidovaných zmluvách alebo dizajnoch. Náš nástroj zvýrazňuje presné zmeny pixelov červenou farbou."
+    },
+    {
+      "type": "compare_visual_how_to_steps",
+      "title": "Ako porovnávať súbory PDF",
+      "content": "Nahrajte pôvodný súbor PDF a upravený súbor PDF. Vykreslíme obe a prekryjeme ich, aby sme odhalili akékoľvek pridania alebo vymazania."
+    },
+    {
+      "type": "compare_visual_geo_targeting",
+      "title": "Ideálne pre zmluvy a dôkazy",
+      "content": "Právnici a dizajnéri používajú náš vizuálny diff nástroj, aby zabezpečili, že do dokumentu nebudú vkradnuté žiadne neoprávnené zmeny."
+    },
+    {
+      "type": "compare_visual_privacy_security",
+      "title": "Porovnanie dôverných dokumentov",
+      "content": "Porovnanie citlivých zmlúv o NDA? Náš nástroj je 100% lokálny. Dokumenty sa nikdy nedotknú našich serverov."
+    },
+    {
+      "type": "compare_visual_performance",
+      "title": "Vykresľovanie rozdielov v reálnom čase",
+      "content": "Okamžite generujte vizuálne rozdiely vo svojom prehliadači vďaka hardvérovo akcelerovanému vykresľovaniu plátna."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Nájde rozdiely v texte alebo pixeloch?",
+      "a": "Vykreslí PDF a nájde rozdiely vo vizuálnych pixeloch, ktoré zahŕňajú text, písma a obrázky."
+    },
+    {
+      "q": "Čo znamenajú červené značky?",
+      "a": "Červené zvýraznenia označujú oblasti, v ktorých sa tieto dva súbory PDF vizuálne líšia."
+    },
+    {
+      "q": "Je to bezpečné pre právne dokumenty?",
+      "a": "Áno, všetko spracovanie je výlučne lokálne a súkromné."
+    }
+  ]
+}

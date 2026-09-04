@@ -1,0 +1,58 @@
+{
+  "title": "Vertaa PDF-tiedostoja visuaalisesti – Etsi pikselieroja",
+  "h1": "Vertaa visuaalisesti kahta PDF-tiedostoa",
+  "description": "Lataa kaksi PDF-dokumenttia ja korosta välittömästi niiden väliset tarkat pikselierot paikallisesti selaimessasi.",
+  "buttonText": "Valitse PDF-tiedostot",
+  "badges": [
+    "Pixel Perfect Diff",
+    "Vierekkäin",
+    "Paikallinen erotus"
+  ],
+  "stats": [
+    "100 %",
+    "Tarkka",
+    "0",
+    "Pilven käyttö"
+  ],
+  "sections": [
+    {
+      "type": "compare_visual_hero_features",
+      "title": "Huomaa pienet muutokset automaattisesti",
+      "content": "Älä luota silmiisi löytääksesi eroja tarkistetuissa sopimuksissa tai suunnitelmissa. Työkalumme korostaa tarkat pikselien muutokset punaisella."
+    },
+    {
+      "type": "compare_visual_how_to_steps",
+      "title": "Miten vertailla PDF-tiedostoja",
+      "content": "Lataa alkuperäinen PDF ja tarkistettu PDF. Muodostamme molemmat ja peitämme ne lisäysten tai poistojen paljastamiseksi."
+    },
+    {
+      "type": "compare_visual_geo_targeting",
+      "title": "Täydellinen sopimuksiin ja todisteisiin",
+      "content": "Lakimiehet ja suunnittelijat käyttävät visuaalista erotustyökaluamme varmistaakseen, ettei asiakirjaan ole tehty luvattomia muutoksia."
+    },
+    {
+      "type": "compare_visual_privacy_security",
+      "title": "Luottamuksellisten asiakirjojen vertailu",
+      "content": "Vertailetko arkaluonteisia NDA-sopimuksia? Työkalumme on 100 % paikallinen. Asiakirjat eivät koskaan kosketa palvelimiamme."
+    },
+    {
+      "type": "compare_visual_performance",
+      "title": "Reaaliaikainen erotusrenderöinti",
+      "content": "Luo visuaalisia eroja välittömästi selaimessasi laitteistokiihdytetyn kanvas-renderöinnin ansiosta."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Löytääkö se teksti- tai pikselieroja?",
+      "a": "Se hahmontaa PDF-tiedoston ja löytää visuaaliset pikselierot, jotka sisältävät tekstiä, fontteja ja kuvia."
+    },
+    {
+      "q": "Mitä punaiset merkit tarkoittavat?",
+      "a": "Punaiset korostukset osoittavat alueita, joilla kaksi PDF-tiedostoa eroavat visuaalisesti."
+    },
+    {
+      "q": "Onko se turvallista juridisille asiakirjoille?",
+      "a": "Kyllä, kaikki käsittely on ehdottomasti paikallista ja yksityistä."
+    }
+  ]
+}

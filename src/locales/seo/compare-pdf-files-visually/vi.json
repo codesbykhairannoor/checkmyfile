@@ -1,0 +1,58 @@
+{
+  "title": "So sánh các tệp PDF một cách trực quan - Tìm sự khác biệt về pixel",
+  "h1": "So sánh trực quan hai tệp PDF",
+  "description": "Tải lên hai tài liệu PDF và ngay lập tức đánh dấu sự khác biệt chính xác về pixel giữa chúng trong trình duyệt của bạn.",
+  "buttonText": "Chọn tệp PDF",
+  "badges": [
+    "Pixel hoàn hảo khác biệt",
+    "Bên cạnh nhau",
+    "Sự khác biệt cục bộ"
+  ],
+  "stats": [
+    "100%",
+    "Chính xác",
+    "0",
+    "Sử dụng đám mây"
+  ],
+  "sections": [
+    {
+      "type": "compare_visual_hero_features",
+      "title": "Tự động phát hiện những thay đổi nhỏ",
+      "content": "Đừng dựa vào đôi mắt của bạn để tìm ra sự khác biệt trong các hợp đồng hoặc thiết kế đã sửa đổi. Công cụ của chúng tôi đánh dấu những thay đổi chính xác của pixel bằng màu đỏ."
+    },
+    {
+      "type": "compare_visual_how_to_steps",
+      "title": "Cách so sánh các tệp PDF",
+      "content": "Tải lên bản PDF gốc và bản PDF đã sửa đổi. Chúng tôi sẽ kết xuất cả hai và chồng chúng lên nhau để hiển thị bất kỳ phần bổ sung hoặc xóa nào."
+    },
+    {
+      "type": "compare_visual_geo_targeting",
+      "title": "Hoàn hảo cho hợp đồng và bằng chứng",
+      "content": "Các luật sư và nhà thiết kế sử dụng công cụ tìm khác biệt trực quan của chúng tôi để đảm bảo không có thay đổi trái phép nào được đưa vào tài liệu."
+    },
+    {
+      "type": "compare_visual_privacy_security",
+      "title": "So sánh tài liệu mật",
+      "content": "So sánh các hợp đồng NDA nhạy cảm? Công cụ của chúng tôi là 100% địa phương. Các tài liệu không bao giờ chạm vào máy chủ của chúng tôi."
+    },
+    {
+      "type": "compare_visual_performance",
+      "title": "Kết xuất khác biệt theo thời gian thực",
+      "content": "Tạo sự khác biệt trực quan ngay lập tức trong trình duyệt của bạn nhờ kết xuất canvas được tăng tốc phần cứng."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Nó có tìm thấy sự khác biệt về văn bản hoặc pixel không?",
+      "a": "Nó hiển thị tệp PDF và tìm thấy sự khác biệt về pixel trực quan, bao gồm văn bản, phông chữ và hình ảnh."
+    },
+    {
+      "q": "Các dấu đỏ có ý nghĩa gì?",
+      "a": "Điểm nổi bật màu đỏ biểu thị các khu vực mà hai tệp PDF khác nhau về mặt hình ảnh."
+    },
+    {
+      "q": "Có an toàn cho các tài liệu pháp lý?",
+      "a": "Có, tất cả quá trình xử lý đều mang tính cục bộ và riêng tư."
+    }
+  ]
+}

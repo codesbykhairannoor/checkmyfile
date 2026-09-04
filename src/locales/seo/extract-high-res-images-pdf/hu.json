@@ -1,0 +1,58 @@
+{
+  "title": "Nagy felbontású képek kibontása PDF-ből – Eredeti fényképek beszerzése",
+  "h1": "Nagy felbontású képek kibontása PDF-ből",
+  "description": "Töltse le a beágyazott fényképeket és grafikákat a PDF-ből az eredeti, tömörítetlen nagy felbontásban. Nincs szerver feltöltés.",
+  "buttonText": "Válassza a PDF lehetőséget",
+  "badges": [
+    "Veszteségmentes extrakció",
+    "Kötegelt exportálás",
+    "ZIP archívum"
+  ],
+  "stats": [
+    "100%",
+    "Eredeti Minőség",
+    "0",
+    "Feltöltések"
+  ],
+  "sections": [
+    {
+      "type": "extract_highres_hero_features",
+      "title": "Eredeti képminőség",
+      "content": "Ne használjon olyan képernyőképeket, amelyek rontják a felbontást. Eszközünk beleás a PDF binárisba, és kibontja a nyers, eredeti képfájlokat."
+    },
+    {
+      "type": "extract_highres_how_to_steps",
+      "title": "Hogyan lehet kivonni a képeket",
+      "content": "Válasszon ki egy PDF-fájlt. Beszkenneljük a beágyazott JPEG- és PNG-fájlokat, és mindegyiket egy szép ZIP-fájlba csomagoljuk."
+    },
+    {
+      "type": "extract_highres_geo_targeting",
+      "title": "A legjobb képkivonó eszköz",
+      "content": "Tökéletes azoknak a tervezőknek, kiadóknak és diákoknak, akiknek újra fel kell használniuk a PDF-be zárt kiváló minőségű eszközöket."
+    },
+    {
+      "type": "extract_highres_privacy_security",
+      "title": "Magánvagyon kitermelése",
+      "content": "Nem lopjuk el a képeidet. A kivonás teljes egészében a saját számítógépén történik."
+    },
+    {
+      "type": "extract_highres_performance",
+      "title": "Lángoló gyors export",
+      "content": "Csomagoljon ki több száz nagy felbontású képet másodpercek alatt anélkül, hogy megvárná a hatalmas fájlfeltöltést."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Milyen formátumok kerülnek kibontásra?",
+      "a": "Leginkább JPG és PNG, a beágyazás módjától függően."
+    },
+    {
+      "q": "Össze vannak nyomva?",
+      "a": "Nem, pontosan a PDF-ben tárolt nyers bináris adatokat nyerjük ki."
+    },
+    {
+      "q": "Letölthetem őket egyszerre?",
+      "a": "Igen, az összes képet egyetlen ZIP-fájlba csomagoljuk."
+    }
+  ]
+}

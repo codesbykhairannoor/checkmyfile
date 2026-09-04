@@ -1,0 +1,58 @@
+{
+  "title": "Beskär PDF-marginaler — Trimma vita utrymmen online",
+  "h1": "Beskär vita marginaler från PDF-sidor",
+  "description": "Ta bort irriterande vita marginaler från dina PDF-dokument för en bättre läsupplevelse på mobila enheter och e-läsare. 100 % gratis och lokalt.",
+  "buttonText": "Välj PDF",
+  "badges": [
+    "Precisionsbeskärning",
+    "Ingen serveruppladdning",
+    "Snabb"
+  ],
+  "stats": [
+    "100 %",
+    "Lokal",
+    "0",
+    "Latens"
+  ],
+  "sections": [
+    {
+      "type": "crop_margins_hero_features",
+      "title": "Varför beskära PDF-marginaler?",
+      "content": "Många akademiska uppsatser och e-böcker har enorma vita marginaler. Att beskära dem gör texten större och lättare att läsa på mindre skärmar."
+    },
+    {
+      "type": "crop_margins_how_to_steps",
+      "title": "Hur man beskär marginaler",
+      "content": "Ladda upp din fil, definiera begränsningsrutan genom att dra i handtagen och tryck på beskär. Processen är helt privat."
+    },
+    {
+      "type": "crop_margins_geo_targeting",
+      "title": "Säker marginalborttagning",
+      "content": "Du behöver inte ladda upp dina känsliga PDF-filer bara för att ta bort lite blanksteg. Vår WebAssembly-motor gör det i din webbläsare."
+    },
+    {
+      "type": "crop_margins_privacy_security",
+      "title": "100 % offlinebeskärning",
+      "content": "Dina filer lämnar aldrig din dator. Perfekt för konfidentiella juridiska eller medicinska dokument."
+    },
+    {
+      "type": "crop_margins_performance",
+      "title": "Omedelbar PDF-klippning",
+      "content": "Trimma en 500-sidig bok på millisekunder utan att vänta på serveruppladdningar eller nedladdningar."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Är detta gratis?",
+      "a": "Ja, 100 % gratis utan gränser."
+    },
+    {
+      "q": "Laddar den upp min fil?",
+      "a": "Nej, allt bearbetas lokalt."
+    },
+    {
+      "q": "Kan jag beskära ojämna marginaler?",
+      "a": "Ja, du kan ange olika värden för topp, botten, vänster och höger."
+    }
+  ]
+}

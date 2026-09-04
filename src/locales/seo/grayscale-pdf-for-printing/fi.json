@@ -1,0 +1,58 @@
+{
+  "title": "Harmaasävy PDF tulostettaviksi — Muunna värit mustavalkoiseksi",
+  "h1": "Muunna värillinen PDF harmaasävyiksi",
+  "description": "Säästä tulostimen mustetta muuntamalla värilliset PDF-asiakirjat mustavalkoisiksi tai harmaasävyiksi suoraan selaimessasi.",
+  "buttonText": "Valitse PDF",
+  "badges": [
+    "Musteensäästö",
+    "Välitön muunnos",
+    "Turvallinen"
+  ],
+  "stats": [
+    "100 %",
+    "Ilmainen",
+    "0",
+    "Mainokset"
+  ],
+  "sections": [
+    {
+      "type": "grayscale_print_hero_features",
+      "title": "Säästä kallista tulostimen mustetta",
+      "content": "Värillinen muste on kallista. Muunna PDF-tiedostot harmaasävyiksi ennen tulostusta säästääksesi rahaa ja resursseja."
+    },
+    {
+      "type": "grayscale_print_how_to_steps",
+      "title": "Kuinka tehdä PDF mustavalkoiseksi",
+      "content": "Pudota vain tiedostosi laatikkoon. Paikallinen työkalumme poistaa välittömästi kaikki värit ja antaa sinulle täydellisesti tulostettavan harmaasävyisen PDF-tiedoston."
+    },
+    {
+      "type": "grayscale_print_geo_targeting",
+      "title": "Paras B&W PDF-muunnin",
+      "content": "Muunna värillinen teksti, kuvat ja taustat harmaan sävyiksi menettämättä luettavuutta."
+    },
+    {
+      "type": "grayscale_print_privacy_security",
+      "title": "Yksityinen harmaasävymuunnos",
+      "content": "Asiakirjasi muunnetaan oman laitteesi muistiin. Emme koskaan näe tiedostojasi."
+    },
+    {
+      "type": "grayscale_print_performance",
+      "title": "Salamannopea käsittely",
+      "content": "Koska emme lataa tiedostoasi pilvipalvelimelle, harmaasävymuunnos tapahtuu lähes välittömästi."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Onko kuvat myös harmaasävyisiä?",
+      "a": "Kyllä, kaikki kuvat, teksti ja vektorigrafiikka muunnetaan harmaasävyiksi."
+    },
+    {
+      "q": "Onko tiedoston kokoa pienennetty?",
+      "a": "Joskus, riippuen PDF-tiedoston sisällä olevista värillisistä kuvista."
+    },
+    {
+      "q": "Onko se turvallista yksityisille tiedostoille?",
+      "a": "Täysin. Tietoja ei lähetetä Internetin kautta."
+    }
+  ]
+}

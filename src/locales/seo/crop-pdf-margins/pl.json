@@ -1,0 +1,58 @@
+{
+  "title": "Przytnij marginesy PDF — Przytnij białe przestrzenie online",
+  "h1": "Przytnij białe marginesy ze stron PDF",
+  "description": "Usuń irytujące białe marginesy z dokumentów PDF, aby zapewnić lepszą jakość czytania na urządzeniach mobilnych i e-czytnikach. 100% bezpłatne i lokalne.",
+  "buttonText": "Wybierz PDF",
+  "badges": [
+    "Precyzyjne przycinanie",
+    "Brak przesyłania na serwer",
+    "Szybko"
+  ],
+  "stats": [
+    "100%",
+    "Lokalny",
+    "0",
+    "Utajenie"
+  ],
+  "sections": [
+    {
+      "type": "crop_margins_hero_features",
+      "title": "Po co przycinać marginesy PDF?",
+      "content": "Wiele artykułów akademickich i e-booków ma ogromne białe marginesy. Przycięcie powoduje, że tekst jest większy i łatwiejszy do odczytania na mniejszych ekranach."
+    },
+    {
+      "type": "crop_margins_how_to_steps",
+      "title": "Jak przyciąć marginesy",
+      "content": "Prześlij plik, zdefiniuj obwiednię, przeciągając uchwyty i naciśnij przycisk Przytnij. Proces jest całkowicie prywatny."
+    },
+    {
+      "type": "crop_margins_geo_targeting",
+      "title": "Bezpieczne usuwanie marginesów",
+      "content": "Nie musisz przesyłać poufnych plików PDF, aby usunąć trochę białych znaków. Nasz silnik WebAssembly robi to w Twojej przeglądarce."
+    },
+    {
+      "type": "crop_margins_privacy_security",
+      "title": "Przycinanie w 100% offline",
+      "content": "Twoje pliki nigdy nie opuszczają Twojego komputera. Idealny do poufnych dokumentów prawnych lub medycznych."
+    },
+    {
+      "type": "crop_margins_performance",
+      "title": "Natychmiastowe przycinanie plików PDF",
+      "content": "Przytnij 500-stronicową książkę w ciągu milisekund, bez czekania na przesłanie lub pobranie z serwera."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Czy to jest bezpłatne?",
+      "a": "Tak, w 100% za darmo, bez ograniczeń."
+    },
+    {
+      "q": "Czy przesyła mój plik?",
+      "a": "Nie, wszystko jest przetwarzane lokalnie."
+    },
+    {
+      "q": "Czy mogę przyciąć nierówne marginesy?",
+      "a": "Tak, możesz określić różne wartości dla góry, dołu, lewej i prawej strony."
+    }
+  ]
+}

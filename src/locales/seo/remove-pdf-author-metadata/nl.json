@@ -1,0 +1,58 @@
+{
+  "title": "Metagegevens van PDF-auteur verwijderen — PDF-eigenschappen opschonen",
+  "h1": "Metagegevens van PDF-auteurs opschonen",
+  "description": "Bescherm uw privacy door auteursnamen, aanmaakdatums, softwarefootprints en verborgen metagegevens veilig uit uw PDF-bestanden te verwijderen.",
+  "buttonText": "Selecteer PDF",
+  "badges": [
+    "Metagegevens schoner",
+    "Privacy eerst",
+    "Offline hulpmiddel"
+  ],
+  "stats": [
+    "100%",
+    "Zeker",
+    "0",
+    "Voetafdrukken"
+  ],
+  "sections": [
+    {
+      "type": "remove_author_hero_features",
+      "title": "Waarom PDF-metagegevens opschonen?",
+      "content": "PDF's slaan vaak in het geheim uw naam, bedrijfsnaam, besturingssysteemversie en aanmaakdatums op. Maak ze schoon voordat u ze online deelt."
+    },
+    {
+      "type": "remove_author_how_to_steps",
+      "title": "Hoe eigendommen te ontsmetten",
+      "content": "Upload uw document. Onze engine parseert de PDF-structuur en wist op veilige wijze alle metagegevensvelden van het woordenboek."
+    },
+    {
+      "type": "remove_author_geo_targeting",
+      "title": "Bescherm uw anonimiteit",
+      "content": "Zorg ervoor dat klokkenluiders, journalisten en gewone gebruikers documenten kunnen delen zonder hun digitale identiteit te lekken."
+    },
+    {
+      "type": "remove_author_privacy_security",
+      "title": "Sanering van militaire kwaliteit",
+      "content": "We herschrijven de binaire PDF-structuur lokaal in uw browser om ervoor te zorgen dat de metagegevens permanent worden vernietigd."
+    },
+    {
+      "type": "remove_author_performance",
+      "title": "Directe metadata-gum",
+      "content": "Scrub duizenden pagina's in minder dan een seconde met behulp van onze sterk geoptimaliseerde WebAssembly-kern."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Welke metadata worden verwijderd?",
+      "a": "Auteur, Titel, Onderwerp, Trefwoorden, Maker, Producent, Aanmaakdatum en Moddatum."
+    },
+    {
+      "q": "Verandert het de visuele lay-out?",
+      "a": "Nee, alleen de verborgen metadata-eigenschappen worden gewijzigd."
+    },
+    {
+      "q": "Is het proces veilig?",
+      "a": "Ja, het gebeurt 100% lokaal op uw machine."
+    }
+  ]
+}

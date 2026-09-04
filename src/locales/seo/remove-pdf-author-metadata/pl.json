@@ -1,0 +1,58 @@
+{
+  "title": "Usuń metadane autora pliku PDF — Oczyść właściwości pliku PDF",
+  "h1": "Oczyść metadane autora pliku PDF",
+  "description": "Chroń swoją prywatność, bezpiecznie usuwając nazwiska autorów, daty utworzenia, ślady oprogramowania i ukryte metadane z plików PDF.",
+  "buttonText": "Wybierz PDF",
+  "badges": [
+    "Czyszczenie metadanych",
+    "Najpierw prywatność",
+    "Narzędzie offline"
+  ],
+  "stats": [
+    "100%",
+    "Bezpieczny",
+    "0",
+    "Ślady"
+  ],
+  "sections": [
+    {
+      "type": "remove_author_hero_features",
+      "title": "Po co czyścić metadane PDF?",
+      "content": "Pliki PDF często w tajemnicy przechowują Twoje imię i nazwisko, nazwę firmy, wersję systemu operacyjnego i daty utworzenia. Wyczyść je przed udostępnieniem online."
+    },
+    {
+      "type": "remove_author_how_to_steps",
+      "title": "Jak odkażać nieruchomości",
+      "content": "Prześlij swój dokument. Nasz silnik przeanalizuje strukturę pliku PDF i bezpiecznie usunie wszystkie pola metadanych słownika."
+    },
+    {
+      "type": "remove_author_geo_targeting",
+      "title": "Chroń swoją anonimowość",
+      "content": "Zapewnij sygnalistom, dziennikarzom i zwykłym użytkownikom możliwość udostępniania dokumentów bez ujawniania swojej tożsamości cyfrowej."
+    },
+    {
+      "type": "remove_author_privacy_security",
+      "title": "Sanityzacja na poziomie wojskowym",
+      "content": "Przepisujemy binarną strukturę pliku PDF lokalnie w Twojej przeglądarce, aby zapewnić trwałe zniszczenie metadanych."
+    },
+    {
+      "type": "remove_author_performance",
+      "title": "Natychmiastowe usuwanie metadanych",
+      "content": "Przejrzyj tysiące stron w mniej niż sekundę, korzystając z naszego wysoce zoptymalizowanego rdzenia WebAssembly."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Jakie metadane są usuwane?",
+      "a": "Autor, tytuł, temat, słowa kluczowe, twórca, producent, CreationDate i ModDate."
+    },
+    {
+      "q": "Czy zmienia to układ wizualny?",
+      "a": "Nie, modyfikowane są tylko ukryte właściwości metadanych."
+    },
+    {
+      "q": "Czy proces jest bezpieczny?",
+      "a": "Tak, dzieje się to w 100% lokalnie na Twoim komputerze."
+    }
+  ]
+}

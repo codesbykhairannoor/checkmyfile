@@ -1,0 +1,58 @@
+{
+  "title": "Extraia imagens de alta resolução de PDF – Obtenha fotos originais",
+  "h1": "Extraia imagens de alta resolução de PDF",
+  "description": "Baixe fotos e gráficos incorporados do seu PDF em sua alta resolução original e não compactada. Nenhum upload de servidor.",
+  "buttonText": "Selecione PDF",
+  "badges": [
+    "Extração sem perdas",
+    "Exportação em lote",
+    "Arquivo ZIP"
+  ],
+  "stats": [
+    "100%",
+    "Qualidade original",
+    "0",
+    "Envios"
+  ],
+  "sections": [
+    {
+      "type": "extract_highres_hero_features",
+      "title": "Obtenha qualidade de imagem original",
+      "content": "Não use ferramentas de captura de tela que estraguem a resolução. Nossa ferramenta analisa o binário do PDF e extrai os arquivos de imagem originais brutos."
+    },
+    {
+      "type": "extract_highres_how_to_steps",
+      "title": "Como extrair imagens",
+      "content": "Selecione um PDF. Nós o verificamos em busca de JPEGs e PNGs incorporados e os empacotamos em um arquivo ZIP organizado para você."
+    },
+    {
+      "type": "extract_highres_geo_targeting",
+      "title": "Melhor ferramenta de extração de imagens",
+      "content": "Perfeito para designers, editores e estudantes que precisam reutilizar ativos de alta qualidade bloqueados em um PDF."
+    },
+    {
+      "type": "extract_highres_privacy_security",
+      "title": "Extração de ativos privados",
+      "content": "Não roubamos suas imagens. A extração acontece inteiramente no seu próprio computador."
+    },
+    {
+      "type": "extract_highres_performance",
+      "title": "Exportação extremamente rápida",
+      "content": "Extraia centenas de imagens de alta resolução em segundos, sem esperar pelo upload massivo de arquivos."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Quais formatos são extraídos?",
+      "a": "Principalmente JPG e PNG, dependendo de como foram incorporados."
+    },
+    {
+      "q": "Eles estão comprimidos?",
+      "a": "Não, extraímos os dados binários brutos exatos armazenados no PDF."
+    },
+    {
+      "q": "Posso baixá-los todos de uma vez?",
+      "a": "Sim, agrupamos todas as imagens em um único arquivo ZIP."
+    }
+  ]
+}

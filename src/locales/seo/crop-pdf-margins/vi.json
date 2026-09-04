@@ -1,0 +1,58 @@
+{
+  "title": "Cắt lề PDF — Cắt các khoảng trắng trực tuyến",
+  "h1": "Cắt lề trắng từ trang PDF",
+  "description": "Loại bỏ các lề trắng khó chịu khỏi tài liệu PDF của bạn để có trải nghiệm đọc tốt hơn trên thiết bị di động và thiết bị đọc sách điện tử. 100% miễn phí và địa phương.",
+  "buttonText": "Chọn PDF",
+  "badges": [
+    "Cắt xén chính xác",
+    "Không tải lên máy chủ",
+    "Nhanh"
+  ],
+  "stats": [
+    "100%",
+    "Địa phương",
+    "0",
+    "Độ trễ"
+  ],
+  "sections": [
+    {
+      "type": "crop_margins_hero_features",
+      "title": "Tại sao cắt lề PDF?",
+      "content": "Nhiều tài liệu học thuật và sách điện tử có lề trắng rất lớn. Việc cắt chúng làm cho văn bản lớn hơn và dễ đọc hơn trên màn hình nhỏ hơn."
+    },
+    {
+      "type": "crop_margins_how_to_steps",
+      "title": "Cách cắt lề",
+      "content": "Tải tệp của bạn lên, xác định hộp giới hạn bằng cách kéo tay cầm và nhấn cắt. Quá trình này hoàn toàn riêng tư."
+    },
+    {
+      "type": "crop_margins_geo_targeting",
+      "title": "Loại bỏ ký quỹ an toàn",
+      "content": "Không cần phải tải lên các tệp PDF nhạy cảm của bạn chỉ để xóa một số khoảng trắng. Công cụ WebAssembly của chúng tôi thực hiện điều đó trong trình duyệt của bạn."
+    },
+    {
+      "type": "crop_margins_privacy_security",
+      "title": "Cắt xén ngoại tuyến 100%",
+      "content": "Các tập tin của bạn không bao giờ rời khỏi máy tính của bạn. Hoàn hảo cho các tài liệu pháp lý hoặc y tế bí mật."
+    },
+    {
+      "type": "crop_margins_performance",
+      "title": "Cắt PDF tức thì",
+      "content": "Cắt bớt một cuốn sách 500 trang trong một phần nghìn giây mà không cần chờ máy chủ tải lên hoặc tải xuống."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Cái này có miễn phí không?",
+      "a": "Có, miễn phí 100% không có giới hạn."
+    },
+    {
+      "q": "Nó có tải lên tập tin của tôi không?",
+      "a": "Không, mọi thứ đều được xử lý cục bộ."
+    },
+    {
+      "q": "Tôi có thể cắt các lề không đều nhau không?",
+      "a": "Có, bạn có thể chỉ định các giá trị khác nhau cho trên, dưới, trái và phải."
+    }
+  ]
+}

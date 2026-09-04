@@ -1,0 +1,58 @@
+{
+  "title": "Decupați marginile PDF - Decupați spațiile albe online",
+  "h1": "Decupați marjele albe din paginile PDF",
+  "description": "Eliminați marginile albe enervante din documentele PDF pentru o experiență de citire mai bună pe dispozitive mobile și cititoare electronice. 100% gratuit și local.",
+  "buttonText": "Selectați PDF",
+  "badges": [
+    "Decupare de precizie",
+    "Fără încărcare pe server",
+    "Rapid"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0",
+    "Latența"
+  ],
+  "sections": [
+    {
+      "type": "crop_margins_hero_features",
+      "title": "De ce decupați marjele PDF?",
+      "content": "Multe lucrări academice și cărți electronice au margini albe uriașe. Decuparea acestora face textul mai mare și mai ușor de citit pe ecrane mai mici."
+    },
+    {
+      "type": "crop_margins_how_to_steps",
+      "title": "Cum să tăiați marjele",
+      "content": "Încărcați fișierul, definiți caseta de delimitare trăgând mânerele și apăsați decupați. Procesul este complet privat."
+    },
+    {
+      "type": "crop_margins_geo_targeting",
+      "title": "Îndepărtarea securizată a marjelor",
+      "content": "Nu este nevoie să încărcați PDF-urile sensibile doar pentru a elimina unele spații albe. Motorul nostru WebAssembly o face în browserul dvs."
+    },
+    {
+      "type": "crop_margins_privacy_security",
+      "title": "Decupare 100% offline",
+      "content": "Fișierele tale nu părăsesc niciodată computerul. Perfect pentru documente legale sau medicale confidențiale."
+    },
+    {
+      "type": "crop_margins_performance",
+      "title": "Decupare instantanee PDF",
+      "content": "Tăiați o carte de 500 de pagini în milisecunde fără a aștepta încărcările sau descărcările de pe server."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Este gratuit?",
+      "a": "Da, 100% gratuit, fără limite."
+    },
+    {
+      "q": "Îmi încarcă fișierul?",
+      "a": "Nu, totul este procesat local."
+    },
+    {
+      "q": "Pot tăia marginile neuniforme?",
+      "a": "Da, puteți specifica valori diferite pentru sus, jos, stânga și dreapta."
+    }
+  ]
+}

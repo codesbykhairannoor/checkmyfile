@@ -1,0 +1,58 @@
+{
+  "title": "Cortar margens do PDF — Aparar espaços em branco online",
+  "h1": "Cortar margens brancas de páginas PDF",
+  "description": "Remova as irritantes margens brancas dos seus documentos PDF para uma melhor experiência de leitura em dispositivos móveis e leitores eletrônicos. 100% gratuito e local.",
+  "buttonText": "Selecione PDF",
+  "badges": [
+    "Corte de precisão",
+    "Sem upload de servidor",
+    "Rápida"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0",
+    "Latência"
+  ],
+  "sections": [
+    {
+      "type": "crop_margins_hero_features",
+      "title": "Por que cortar margens de PDF?",
+      "content": "Muitos artigos acadêmicos e e-books têm enormes margens brancas. Cortá-los torna o texto maior e mais fácil de ler em telas menores."
+    },
+    {
+      "type": "crop_margins_how_to_steps",
+      "title": "Como cortar margens",
+      "content": "Carregue seu arquivo, defina a caixa delimitadora arrastando as alças e clique em cortar. O processo é totalmente privado."
+    },
+    {
+      "type": "crop_margins_geo_targeting",
+      "title": "Remoção segura de margem",
+      "content": "Não há necessidade de fazer upload de seus PDFs confidenciais apenas para remover alguns espaços em branco. Nosso mecanismo WebAssembly faz isso no seu navegador."
+    },
+    {
+      "type": "crop_margins_privacy_security",
+      "title": "Corte 100% offline",
+      "content": "Seus arquivos nunca saem do seu computador. Perfeito para documentos legais ou médicos confidenciais."
+    },
+    {
+      "type": "crop_margins_desempenho",
+      "title": "Corte instantâneo de PDF",
+      "content": "Corte um livro de 500 páginas em milissegundos, sem esperar uploads ou downloads do servidor."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Isso é grátis?",
+      "a": "Sim, 100% gratuito e sem limites."
+    },
+    {
+      "q": "Ele carrega meu arquivo?",
+      "a": "Não, tudo é processado localmente."
+    },
+    {
+      "q": "Posso cortar margens irregulares?",
+      "a": "Sim, você pode especificar valores diferentes para superior, inferior, esquerda e direita."
+    }
+  ]
+}

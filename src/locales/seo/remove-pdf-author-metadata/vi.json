@@ -1,0 +1,58 @@
+{
+  "title": "Xóa siêu dữ liệu tác giả PDF - Vệ sinh thuộc tính PDF",
+  "h1": "Vệ sinh siêu dữ liệu tác giả PDF",
+  "description": "Bảo vệ quyền riêng tư của bạn bằng cách xóa an toàn tên tác giả, ngày tạo, dấu chân phần mềm và siêu dữ liệu ẩn khỏi tệp PDF của bạn.",
+  "buttonText": "Chọn PDF",
+  "badges": [
+    "Trình dọn dẹp siêu dữ liệu",
+    "Quyền riêng tư đầu tiên",
+    "Công cụ ngoại tuyến"
+  ],
+  "stats": [
+    "100%",
+    "Chắc chắn",
+    "0",
+    "Dấu chân"
+  ],
+  "sections": [
+    {
+      "type": "remove_author_hero_features",
+      "title": "Tại sao phải làm sạch siêu dữ liệu PDF?",
+      "content": "Các tệp PDF thường lưu trữ bí mật tên, tên công ty, phiên bản hệ điều hành và ngày tạo của bạn. Làm sạch chúng trước khi chia sẻ trực tuyến."
+    },
+    {
+      "type": "remove_author_how_to_steps",
+      "title": "Cách vệ sinh tài sản",
+      "content": "Tải lên tài liệu của bạn. Công cụ của chúng tôi sẽ phân tích cú pháp cấu trúc PDF và xóa tất cả các trường siêu dữ liệu của từ điển một cách an toàn."
+    },
+    {
+      "type": "remove_author_geo_targeting",
+      "title": "Bảo vệ danh tính của bạn",
+      "content": "Đảm bảo người tố cáo, nhà báo và người dùng hàng ngày có thể chia sẻ tài liệu mà không bị rò rỉ danh tính kỹ thuật số của họ."
+    },
+    {
+      "type": "remove_author_privacy_security",
+      "title": "Vệ sinh cấp quân sự",
+      "content": "Chúng tôi viết lại cấu trúc nhị phân PDF cục bộ trong trình duyệt của bạn để đảm bảo siêu dữ liệu bị hủy vĩnh viễn."
+    },
+    {
+      "type": "remove_author_performance",
+      "title": "Công cụ xóa siêu dữ liệu tức thì",
+      "content": "Quét hàng nghìn trang trong chưa đầy một giây bằng cách sử dụng lõi WebAssembly được tối ưu hóa cao của chúng tôi."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Siêu dữ liệu nào bị xóa?",
+      "a": "Tác giả, Tiêu đề, Chủ đề, Từ khóa, Người tạo, Nhà sản xuất, Ngày tạo và Ngày sửa đổi."
+    },
+    {
+      "q": "Nó có thay đổi bố cục trực quan không?",
+      "a": "Không, chỉ các thuộc tính siêu dữ liệu ẩn mới được sửa đổi."
+    },
+    {
+      "q": "Quá trình này có an toàn không?",
+      "a": "Có, điều này xảy ra cục bộ 100% trên máy của bạn."
+    }
+  ]
+}

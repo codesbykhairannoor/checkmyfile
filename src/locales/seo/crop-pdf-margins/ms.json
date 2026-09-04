@@ -1,0 +1,58 @@
+{
+  "title": "Potong Jidar PDF — Potong Ruang Putih Dalam Talian",
+  "h1": "Pangkas Margin Putih daripada Halaman PDF",
+  "description": "Alih keluar jidar putih yang menjengkelkan daripada dokumen PDF anda untuk pengalaman membaca yang lebih baik pada peranti mudah alih dan e-pembaca. 100% percuma dan tempatan.",
+  "buttonText": "Pilih PDF",
+  "badges": [
+    "Pemotongan Ketepatan",
+    "Tiada Muat Naik Pelayan",
+    "Cepat"
+  ],
+  "stats": [
+    "100%",
+    "Tempatan",
+    "0",
+    "Latensi"
+  ],
+  "sections": [
+    {
+      "type": "crop_margins_hero_features",
+      "title": "Mengapa Pangkas Margin PDF?",
+      "content": "Banyak kertas akademik dan e-buku mempunyai margin putih yang besar. Memangkasnya menjadikan teks lebih besar dan lebih mudah dibaca pada skrin yang lebih kecil."
+    },
+    {
+      "type": "crop_margins_how_to_steps",
+      "title": "Cara Memangkas Margin",
+      "content": "Muat naik fail anda, tentukan kotak sempadan dengan menyeret pemegangnya dan tekan pangkas. Proses ini adalah peribadi sepenuhnya."
+    },
+    {
+      "type": "crop_margins_geo_targeting",
+      "title": "Pembuangan Margin Selamat",
+      "content": "Tidak perlu memuat naik PDF sensitif anda hanya untuk mengalih keluar beberapa ruang kosong. Enjin WebAssembly kami melakukannya dalam penyemak imbas anda."
+    },
+    {
+      "type": "crop_margins_privacy_security",
+      "title": "100% Pemotongan Luar Talian",
+      "content": "Fail anda tidak pernah meninggalkan komputer anda. Sesuai untuk dokumen undang-undang atau perubatan sulit."
+    },
+    {
+      "type": "crop_margins_performance",
+      "title": "Pemangkasan PDF Segera",
+      "content": "Potong buku 500 halaman dalam milisaat tanpa menunggu muat naik atau muat turun pelayan."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Adakah ini percuma?",
+      "a": "Ya, 100% percuma tanpa had."
+    },
+    {
+      "q": "Adakah ia memuat naik fail saya?",
+      "a": "Tidak, semuanya diproses secara tempatan."
+    },
+    {
+      "q": "Bolehkah saya memangkas margin yang tidak rata?",
+      "a": "Ya, anda boleh menentukan nilai yang berbeza untuk atas, bawah, kiri dan kanan."
+    }
+  ]
+}

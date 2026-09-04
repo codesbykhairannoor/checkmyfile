@@ -70,6 +70,11 @@ const getAcceptTypes = (toolId: string): string => {
     case 'redact-pdf':
     case 'reverse-pdf':
     case 'resize-pdf':
+    case 'crop-pdf-margins':
+    case 'grayscale-pdf-for-printing':
+    case 'remove-pdf-author-metadata':
+    case 'extract-high-res-images-pdf':
+    case 'compare-pdf-files-visually':
       return '.pdf,application/pdf';
 
     // Word files only

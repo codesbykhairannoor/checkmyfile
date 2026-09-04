@@ -1,0 +1,58 @@
+{
+  "title": "Vágja le a PDF-margókat — vágja le a fehér mezőket online",
+  "h1": "Fehér margók levágása PDF-oldalakról",
+  "description": "Távolítsa el a bosszantó fehér margókat PDF-dokumentumairól a jobb olvasási élmény érdekében mobileszközökön és e-olvasókon. 100%-ban ingyenes és helyi.",
+  "buttonText": "Válassza a PDF lehetőséget",
+  "badges": [
+    "Precíziós vágás",
+    "Nincs szerver feltöltés",
+    "Gyors"
+  ],
+  "stats": [
+    "100%",
+    "Helyi",
+    "0",
+    "Látencia"
+  ],
+  "sections": [
+    {
+      "type": "crop_margins_hero_features",
+      "title": "Miért vágja le a PDF-margókat?",
+      "content": "Sok tudományos dolgozat és e-könyv hatalmas fehér margókkal rendelkezik. Levágásuk nagyobb és könnyebben olvashatóvá teszi a szöveget a kisebb képernyőkön."
+    },
+    {
+      "type": "crop_margins_how_to_steps",
+      "title": "Hogyan vágjunk margót",
+      "content": "Töltse fel a fájlt, határozza meg a határolókeretet a fogantyúk húzásával, és nyomja meg a Kivágás gombot. A folyamat teljesen privát."
+    },
+    {
+      "type": "crop_margins_geo_targeting",
+      "title": "Biztonságos margó eltávolítása",
+      "content": "Nem kell feltölteni érzékeny PDF fájljait pusztán a szóközök eltávolításához. WebAssembly motorunk megteszi ezt az Ön böngészőjében."
+    },
+    {
+      "type": "crop_margins_privacy_security",
+      "title": "100% offline vágás",
+      "content": "A fájlok soha nem hagyják el a számítógépet. Ideális bizalmas jogi vagy egészségügyi dokumentumokhoz."
+    },
+    {
+      "type": "crop_margins_performance",
+      "title": "Azonnali PDF-kivágás",
+      "content": "Vágjon ki egy 500 oldalas könyvet ezredmásodpercek alatt anélkül, hogy megvárná a szerver feltöltését vagy letöltését."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Ez ingyenes?",
+      "a": "Igen, 100%-ban ingyenes, korlátozások nélkül."
+    },
+    {
+      "q": "Feltölti a fájlomat?",
+      "a": "Nem, mindent helyben dolgoznak fel."
+    },
+    {
+      "q": "Vághatok egyenetlen margókat?",
+      "a": "Igen, különböző értékeket adhat meg felül, lent, balra és jobbra."
+    }
+  ]
+}

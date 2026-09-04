@@ -1,0 +1,58 @@
+{
+  "title": "Recadrer les marges du PDF – Couper les espaces blancs en ligne",
+  "h1": "Recadrer les marges blanches des pages PDF",
+  "description": "Supprimez les marges blanches gênantes de vos documents PDF pour une meilleure expérience de lecture sur les appareils mobiles et les liseuses. 100% gratuit et local.",
+  "buttonText": "Sélectionnez PDF",
+  "badges": [
+    "Recadrage de précision",
+    "Aucun téléchargement sur le serveur",
+    "Rapide"
+  ],
+  "stats": [
+    "100%",
+    "Locale",
+    "0",
+    "Latence"
+  ],
+  "sections": [
+    {
+      "type": "crop_margins_hero_features",
+      "title": "Pourquoi recadrer les marges d'un PDF ?",
+      "content": "De nombreux articles universitaires et livres électroniques comportent d’énormes marges blanches. Les recadrer rend le texte plus grand et plus facile à lire sur des écrans plus petits."
+    },
+    {
+      "type": "crop_margins_how_to_steps",
+      "title": "Comment recadrer les marges",
+      "content": "Téléchargez votre fichier, définissez le cadre de délimitation en faisant glisser les poignées et cliquez sur Recadrer. Le processus est complètement privé."
+    },
+    {
+      "type": "crop_margins_geo_targeting",
+      "title": "Suppression des marges sécurisées",
+      "content": "Pas besoin de télécharger vos PDF sensibles simplement pour supprimer des espaces. Notre moteur WebAssembly le fait dans votre navigateur."
+    },
+    {
+      "type": "crop_margins_privacy_security",
+      "title": "Recadrage 100 % hors ligne",
+      "content": "Vos fichiers ne quittent jamais votre ordinateur. Parfait pour les documents juridiques ou médicaux confidentiels."
+    },
+    {
+      "type": "crop_margins_performance",
+      "title": "Découpage instantané de PDF",
+      "content": "Découpez un livre de 500 pages en quelques millisecondes sans attendre les chargements ou téléchargements sur le serveur."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Est-ce gratuit ?",
+      "a": "Oui, 100 % gratuit et sans limites."
+    },
+    {
+      "q": "Est-ce qu'il télécharge mon fichier ?",
+      "a": "Non, tout est traité localement."
+    },
+    {
+      "q": "Puis-je recadrer des marges inégales ?",
+      "a": "Oui, vous pouvez spécifier différentes valeurs pour le haut, le bas, la gauche et la droite."
+    }
+  ]
+}

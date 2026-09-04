@@ -185,7 +185,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
       {(tool.id === 'unlock-pdf' || tool.id === 'remove-pdf-password-without-password') && pdfPassword !== undefined && setPdfPassword && (
         <UnlockPdfEditor pdfPassword={pdfPassword} setPdfPassword={setPdfPassword} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
-      {tool.id === 'crop-pdf' && cropConfig && setCropConfig && (
+      {(tool.id === 'crop-pdf' || tool.id === 'crop-pdf-margins') && cropConfig && setCropConfig && (
         <CropPdfEditor cropConfig={cropConfig} setCropConfig={setCropConfig} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
       {tool.id === 'redact-pdf' && redactConfig && setRedactConfig && (
@@ -227,7 +227,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
               <div style={{ height: 1, background: 'var(--border-color)', margin: (tUi["0 -16px"] || "0 -16px") }} />
               <SplitPdfEditor splitRange={splitRange} setSplitRange={setSplitRange} onApply={() => handleStartProcessing({ toolId: 'split-pdf' })} tUi={tUi} isProcessing={isProcessing} />
               <div style={{ height: 1, background: 'var(--border-color)', margin: (tUi["0 -16px"] || "0 -16px") }} />
-              {cropConfig && setCropConfig && (
+              {(tool.id === 'crop-pdf' || tool.id === 'crop-pdf-margins') && cropConfig && setCropConfig && (
                 <CropPdfEditor cropConfig={cropConfig} setCropConfig={setCropConfig} onApply={() => handleStartProcessing({ toolId: 'crop-pdf' })} tUi={tUi} isProcessing={isProcessing} />
               )}
               <div style={{ height: 1, background: 'var(--border-color)', margin: (tUi["0 -16px"] || "0 -16px") }} />
@@ -253,19 +253,19 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
           </details>
         </div>
       )}
-      {tool.id === 'extract-images-pdf' && (
+      {(tool.id === 'extract-images-pdf' || tool.id === 'extract-high-res-images-pdf') && (
         <ExtractImagesEditor onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
-      {tool.id === 'grayscale-pdf' && (
+      {(tool.id === 'grayscale-pdf' || tool.id === 'grayscale-pdf-for-printing') && (
         <GrayscalePdfEditor onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
       {tool.id === 'scan-to-pdf' && (
         <ScanToPdfEditor onProcess={() => handleStartProcessing()} tUi={tUi} isProcessing={isProcessing} />
       )}
-      {tool.id === 'remove-pdf-metadata' && (
+      {(tool.id === 'remove-pdf-metadata' || tool.id === 'remove-pdf-author-metadata') && (
         <RemoveMetadataEditor onProcess={() => handleStartProcessing()} tUi={tUi} isProcessing={isProcessing} />
       )}
-      {tool.id === 'compare-pdf' && (
+      {(tool.id === 'compare-pdf' || tool.id === 'compare-pdf-files-visually') && (
         <ComparePdfEditor onProcess={(options) => handleStartProcessing(options)} tUi={tUi} isProcessing={isProcessing} />
       )}
       {tool.id === 'redact-pdf' && redactConfig && setRedactConfig && (

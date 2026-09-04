@@ -1,0 +1,58 @@
+{
+  "title": "PDF em escala de cinza para impressão — Converta cores em preto e branco",
+  "h1": "Converter PDF colorido em escala de cinza",
+  "description": "Economize tinta da impressora convertendo instantaneamente documentos PDF coloridos em preto e branco ou em escala de cinza diretamente no seu navegador.",
+  "buttonText": "Selecione PDF",
+  "badges": [
+    "Economizador de tinta",
+    "Conversão instantânea",
+    "Segura"
+  ],
+  "stats": [
+    "100%",
+    "Livre",
+    "0",
+    "Anúncios"
+  ],
+  "sections": [
+    {
+      "type": "grayscale_print_hero_features",
+      "title": "Economize tinta de impressora cara",
+      "content": "A tinta colorida é cara. Converta seus PDFs em escala de cinza antes de imprimir para economizar dinheiro e recursos."
+    },
+    {
+      "type": "grayscale_print_how_to_steps",
+      "title": "Como tornar PDF em preto e branco",
+      "content": "Basta colocar seu arquivo na caixa. Nossa ferramenta local removerá instantaneamente todas as cores e fornecerá um PDF em escala de cinza perfeitamente imprimível."
+    },
+    {
+      "type": "grayscale_print_geo_targeting",
+      "title": "Melhor conversor de PDF em preto e branco",
+      "content": "Converta textos, imagens e planos de fundo coloridos em tons de cinza sem perder a legibilidade."
+    },
+    {
+      "type": "grayscale_print_privacy_security",
+      "title": "Conversão privada em escala de cinza",
+      "content": "Seus documentos são convertidos na memória do seu próprio dispositivo. Nunca vemos seus arquivos."
+    },
+    {
+      "type": "grayscale_print_performance",
+      "title": "Processamento extremamente rápido",
+      "content": "Como não carregamos seu arquivo em um servidor em nuvem, a conversão da escala de cinza acontece quase instantaneamente."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "As imagens também terão tons de cinza?",
+      "a": "Sim, todas as imagens, textos e gráficos vetoriais serão convertidos em tons de cinza."
+    },
+    {
+      "q": "O tamanho do arquivo foi reduzido?",
+      "a": "Às vezes, dependendo das imagens coloridas dentro do PDF."
+    },
+    {
+      "q": "É seguro para arquivos privados?",
+      "a": "Absolutamente. Nenhum dado é enviado pela internet."
+    }
+  ]
+}

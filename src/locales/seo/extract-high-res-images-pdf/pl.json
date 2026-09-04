@@ -1,0 +1,58 @@
+{
+  "title": "Wyodrębnij obrazy w wysokiej rozdzielczości z pliku PDF — uzyskaj oryginalne zdjęcia",
+  "h1": "Wyodrębnij obrazy w wysokiej rozdzielczości z pliku PDF",
+  "description": "Pobierz osadzone zdjęcia i grafikę z pliku PDF w ich oryginalnej, nieskompresowanej wysokiej rozdzielczości. Brak przesyłania plików na serwer.",
+  "buttonText": "Wybierz PDF",
+  "badges": [
+    "Ekstrakcja bezstratna",
+    "Eksport wsadowy",
+    "Archiwum ZIP"
+  ],
+  "stats": [
+    "100%",
+    "Oryginalna jakość",
+    "0",
+    "Przesłane"
+  ],
+  "sections": [
+    {
+      "type": "extract_highres_hero_features",
+      "title": "Uzyskaj oryginalną jakość obrazu",
+      "content": "Nie używaj narzędzi do zrzutów ekranu, które psują rozdzielczość. Nasze narzędzie przegląda plik binarny PDF i wyodrębnia surowe, oryginalne pliki obrazów."
+    },
+    {
+      "type": "extract_highres_how_to_steps",
+      "title": "Jak wyodrębnić zdjęcia",
+      "content": "Wybierz plik PDF. Skanujemy go w poszukiwaniu osadzonych plików JPEG i PNG i pakujemy je wszystkie do zgrabnego pliku ZIP."
+    },
+    {
+      "type": "extract_highres_geo_targeting",
+      "title": "Najlepsze narzędzie do ekstrakcji obrazu",
+      "content": "Idealny dla projektantów, wydawców i studentów, którzy muszą ponownie wykorzystać wysokiej jakości zasoby zamknięte w pliku PDF."
+    },
+    {
+      "type": "extract_highres_privacy_security",
+      "title": "Wydobywanie majątku prywatnego",
+      "content": "Nie kradniemy Twoich zdjęć. Ekstrakcja odbywa się całkowicie na Twoim komputerze."
+    },
+    {
+      "type": "extract_highres_performance",
+      "title": "Niesamowicie szybki eksport",
+      "content": "Wyodrębnij setki obrazów o wysokiej rozdzielczości w ciągu kilku sekund, bez czekania na przesłanie ogromnego pliku."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Jakie formaty są wyodrębniane?",
+      "a": "Głównie JPG i PNG, w zależności od sposobu osadzenia."
+    },
+    {
+      "q": "Czy są skompresowane?",
+      "a": "Nie, wyodrębniamy dokładnie surowe dane binarne zapisane w pliku PDF."
+    },
+    {
+      "q": "Czy mogę pobrać je wszystkie na raz?",
+      "a": "Tak, łączymy wszystkie obrazy w jeden plik ZIP."
+    }
+  ]
+}

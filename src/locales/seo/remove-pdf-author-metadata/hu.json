@@ -1,0 +1,58 @@
+{
+  "title": "A PDF szerzői metaadatainak eltávolítása — A PDF tulajdonságainak megtisztítása",
+  "h1": "A PDF szerzői metaadatainak megtisztítása",
+  "description": "Védje magánéletét a szerzők neveinek, a létrehozási dátumoknak, a szoftver lábnyomainak és a rejtett metaadatoknak a PDF-fájljaiból való biztonságos eltávolításával.",
+  "buttonText": "Válassza a PDF lehetőséget",
+  "badges": [
+    "Metaadat-tisztító",
+    "Első az adatvédelem",
+    "Offline eszköz"
+  ],
+  "stats": [
+    "100%",
+    "Biztonságos",
+    "0",
+    "Lábnyomok"
+  ],
+  "sections": [
+    {
+      "type": "remove_author_hero_features",
+      "title": "Miért kell tisztítani a PDF metaadatokat?",
+      "content": "A PDF-fájlok gyakran titokban tárolják az Ön nevét, cégnevét, operációs rendszer verzióját és létrehozásának dátumát. Az online megosztás előtt tisztítsa meg őket."
+    },
+    {
+      "type": "remove_author_how_to_steps",
+      "title": "Az ingatlanok fertőtlenítése",
+      "content": "Töltse fel dokumentumát. Motorunk elemzi a PDF szerkezetét, és biztonságosan törli a szótár összes metaadatmezőjét."
+    },
+    {
+      "type": "remove_author_geo_targeting",
+      "title": "Védje névtelenségét",
+      "content": "Gondoskodjon arról, hogy a visszaélést bejelentő személyek, újságírók és hétköznapi felhasználók megoszthassanak dokumentumokat anélkül, hogy kiszivárogtatnák digitális személyazonosságukat."
+    },
+    {
+      "type": "remove_author_privacy_security",
+      "title": "Katonai fokozatú fertőtlenítés",
+      "content": "A PDF bináris szerkezetét helyileg átírjuk a böngészőben, hogy biztosítsuk a metaadatok végleges megsemmisülését."
+    },
+    {
+      "type": "remove_author_performance",
+      "title": "Azonnali metaadat-radír",
+      "content": "A rendkívül optimalizált WebAssembly mag segítségével kevesebb mint egy másodperc alatt lapozhat át több ezer oldalt."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Milyen metaadatokat távolítanak el?",
+      "a": "Szerző, Cím, Tárgy, Kulcsszavak, Alkotó, Producer, CreationDate és ModDate."
+    },
+    {
+      "q": "Megváltoztatja a vizuális elrendezést?",
+      "a": "Nem, csak a rejtett metaadatok tulajdonságai módosulnak."
+    },
+    {
+      "q": "Biztonságos a folyamat?",
+      "a": "Igen, ez 100%-ban helyben történik a gépeden."
+    }
+  ]
+}

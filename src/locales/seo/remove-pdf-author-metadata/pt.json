@@ -1,0 +1,58 @@
+{
+  "title": "Remover metadados do autor do PDF — Sanitizar propriedades do PDF",
+  "h1": "Limpe os metadados do autor do PDF",
+  "description": "Proteja sua privacidade removendo com segurança nomes de autores, datas de criação, pegadas de software e metadados ocultos de seus arquivos PDF.",
+  "buttonText": "Selecione PDF",
+  "badges": [
+    "Limpador de metadados",
+    "Privacidade em primeiro lugar",
+    "Ferramenta off-line"
+  ],
+  "stats": [
+    "100%",
+    "Segura",
+    "0",
+    "Pegadas"
+  ],
+  "sections": [
+    {
+      "type": "remove_author_hero_features",
+      "title": "Por que limpar metadados de PDF?",
+      "content": "Os PDFs geralmente armazenam secretamente seu nome, nome da empresa, versão do sistema operacional e datas de criação. Limpe-os antes de compartilhar online."
+    },
+    {
+      "type": "remove_author_how_to_steps",
+      "title": "Como higienizar propriedades",
+      "content": "Carregue seu documento. Nosso mecanismo analisará a estrutura do PDF e apagará com segurança todos os campos de metadados do dicionário."
+    },
+    {
+      "type": "remove_author_geo_targeting",
+      "title": "Proteja seu anonimato",
+      "content": "Garanta que denunciantes, jornalistas e usuários comuns possam compartilhar documentos sem vazar sua identidade digital."
+    },
+    {
+      "type": "remove_author_privacy_security",
+      "title": "Sanitização de nível militar",
+      "content": "Reescrevemos a estrutura binária do PDF localmente no seu navegador para garantir que os metadados sejam destruídos permanentemente."
+    },
+    {
+      "type": "remove_author_performance",
+      "title": "Apagador Instantâneo de Metadados",
+      "content": "Limpe milhares de páginas em menos de um segundo usando nosso núcleo WebAssembly altamente otimizado."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Quais metadados são removidos?",
+      "a": "Autor, Título, Assunto, Palavras-chave, Criador, Produtor, CreationDate e ModDate."
+    },
+    {
+      "q": "Isso altera o layout visual?",
+      "a": "Não, apenas as propriedades ocultas dos metadados são modificadas."
+    },
+    {
+      "q": "O processo é seguro?",
+      "a": "Sim, isso acontece 100% localmente na sua máquina."
+    }
+  ]
+}

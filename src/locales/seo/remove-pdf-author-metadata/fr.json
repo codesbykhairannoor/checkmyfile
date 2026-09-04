@@ -1,0 +1,58 @@
+{
+  "title": "Supprimer les métadonnées de l'auteur PDF - Nettoyer les propriétés PDF",
+  "h1": "Désinfecter les métadonnées de l'auteur PDF",
+  "description": "Protégez votre confidentialité en supprimant en toute sécurité les noms d'auteurs, les dates de création, les empreintes logicielles et les métadonnées cachées de vos fichiers PDF.",
+  "buttonText": "Sélectionnez PDF",
+  "badges": [
+    "Nettoyeur de métadonnées",
+    "La confidentialité d'abord",
+    "Outil hors ligne"
+  ],
+  "stats": [
+    "100%",
+    "Sécurisé",
+    "0",
+    "Empreintes"
+  ],
+  "sections": [
+    {
+      "type": "remove_author_hero_features",
+      "title": "Pourquoi nettoyer les métadonnées PDF ?",
+      "content": "Les PDF stockent souvent secrètement votre nom, le nom de votre entreprise, la version du système d'exploitation et les dates de création. Nettoyez-les avant de les partager en ligne."
+    },
+    {
+      "type": "remove_author_how_to_steps",
+      "title": "Comment désinfecter les propriétés",
+      "content": "Téléchargez votre document. Notre moteur analysera la structure PDF et effacera en toute sécurité tous les champs de métadonnées du dictionnaire."
+    },
+    {
+      "type": "remove_author_geo_targeting",
+      "title": "Protégez votre anonymat",
+      "content": "Assurez-vous que les lanceurs d’alerte, les journalistes et les utilisateurs ordinaires peuvent partager des documents sans divulguer leur identité numérique."
+    },
+    {
+      "type": "remove_author_privacy_security",
+      "title": "Désinfection de qualité militaire",
+      "content": "Nous réécrivons la structure binaire du PDF localement dans votre navigateur pour garantir la destruction permanente des métadonnées."
+    },
+    {
+      "type": "remove_author_performance",
+      "title": "Gomme de métadonnées instantanée",
+      "content": "Parcourez des milliers de pages en moins d'une seconde à l'aide de notre noyau WebAssembly hautement optimisé."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Quelles métadonnées sont supprimées ?",
+      "a": "Auteur, titre, sujet, mots-clés, créateur, producteur, CreationDate et ModDate."
+    },
+    {
+      "q": "Est-ce que cela change la présentation visuelle ?",
+      "a": "Non, seules les propriétés masquées des métadonnées sont modifiées."
+    },
+    {
+      "q": "Le processus est-il sécurisé ?",
+      "a": "Oui, cela se produit à 100 % localement sur votre machine."
+    }
+  ]
+}

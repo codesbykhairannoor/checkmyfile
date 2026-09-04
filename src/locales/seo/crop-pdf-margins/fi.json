@@ -1,0 +1,58 @@
+{
+  "title": "Crop PDF Margins — Trim White Spaces Online",
+  "h1": "Crop White Margins from PDF Pages",
+  "description": "Remove annoying white margins from your PDF documents for a better reading experience on mobile devices and e-readers. 100% free and local.",
+  "buttonText": "Select PDF",
+  "badges": [
+    "Precision Cropping",
+    "No Server Upload",
+    "Fast"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0",
+    "Latency"
+  ],
+  "sections": [
+    {
+      "type": "crop_margins_hero_features",
+      "title": "Why Crop PDF Margins?",
+      "content": "Many academic papers and ebooks have huge white margins. Cropping them makes text larger and easier to read on smaller screens."
+    },
+    {
+      "type": "crop_margins_how_to_steps",
+      "title": "How to Crop Margins",
+      "content": "Upload your file, define the bounding box by dragging the handles, and hit crop. The process is completely private."
+    },
+    {
+      "type": "crop_margins_geo_targeting",
+      "title": "Secure Margin Removal",
+      "content": "No need to upload your sensitive PDFs just to remove some whitespace. Our WebAssembly engine does it in your browser."
+    },
+    {
+      "type": "crop_margins_privacy_security",
+      "title": "100% Offline Cropping",
+      "content": "Your files never leave your computer. Perfect for confidential legal or medical documents."
+    },
+    {
+      "type": "crop_margins_performance",
+      "title": "Instant PDF Trimming",
+      "content": "Trim a 500-page book in milliseconds without waiting for server uploads or downloads."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is this free?",
+      "a": "Yes, 100% free with no limits."
+    },
+    {
+      "q": "Does it upload my file?",
+      "a": "No, everything is processed locally."
+    },
+    {
+      "q": "Can I crop uneven margins?",
+      "a": "Yes, you can specify different values for top, bottom, left, and right."
+    }
+  ]
+}

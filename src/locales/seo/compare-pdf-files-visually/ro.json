@@ -1,0 +1,58 @@
+{
+  "title": "Comparați vizual fișierele PDF — Găsiți diferențe de pixeli",
+  "h1": "Comparați vizual două fișiere PDF",
+  "description": "Încărcați două documente PDF și evidențiați instantaneu diferențele exacte de pixeli dintre ele local în browser.",
+  "buttonText": "Selectați PDF-uri",
+  "badges": [
+    "Pixel Perfect Diff",
+    "Alăturat",
+    "Diferența locală"
+  ],
+  "stats": [
+    "100%",
+    "Acurate",
+    "0",
+    "Utilizarea cloudului"
+  ],
+  "sections": [
+    {
+      "type": "compare_visual_hero_features",
+      "title": "Identificați automat modificări minuscule",
+      "content": "Nu vă bazați pe ochii tăi pentru a găsi diferențe în contractele sau modelele revizuite. Instrumentul nostru evidențiază modificările exacte ale pixelilor în roșu."
+    },
+    {
+      "type": "compare_visual_how_to_steps",
+      "title": "Cum se compară fișierele PDF",
+      "content": "Încărcați PDF-ul original și PDF-ul revizuit. Le vom randa pe ambele și le vom suprapune pentru a expune orice adăugiri sau ștergeri."
+    },
+    {
+      "type": "compare_visual_geo_targeting",
+      "title": "Perfect pentru contracte și dovezi",
+      "content": "Avocații și designerii folosesc instrumentul nostru vizual pentru a se asigura că nu au fost introduse modificări neautorizate într-un document."
+    },
+    {
+      "type": "compare_visual_privacy_security",
+      "title": "Compararea documentelor confidențiale",
+      "content": "Compararea contractelor sensibile NDA? Instrumentul nostru este 100% local. Documentele nu ating niciodată serverele noastre."
+    },
+    {
+      "type": "compare_visual_performance",
+      "title": "Redare diferență în timp real",
+      "content": "Generați diferențe vizuale instantaneu în browser-ul dvs. datorită redării canvas accelerate de hardware."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Găsește diferențe de text sau pixeli?",
+      "a": "Redă PDF-ul și găsește diferențe vizuale de pixeli, care includ text, fonturi și imagini."
+    },
+    {
+      "q": "Ce înseamnă semnele roșii?",
+      "a": "Evidențierile roșii indică zonele în care cele două PDF-uri diferă vizual."
+    },
+    {
+      "q": "Este sigur pentru documentele legale?",
+      "a": "Da, toată prelucrarea este strict locală și privată."
+    }
+  ]
+}

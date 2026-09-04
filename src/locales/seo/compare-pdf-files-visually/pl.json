@@ -1,0 +1,58 @@
+{
+  "title": "Porównaj wizualnie pliki PDF — znajdź różnice w pikselach",
+  "h1": "Porównaj wizualnie dwa pliki PDF",
+  "description": "Prześlij dwa dokumenty PDF i natychmiast zaznacz w przeglądarce dokładne różnice w pikselach między nimi.",
+  "buttonText": "Wybierz pliki PDF",
+  "badges": [
+    "Doskonała różnica pikseli",
+    "Obok siebie",
+    "Lokalne różnicowanie"
+  ],
+  "stats": [
+    "100%",
+    "Dokładny",
+    "0",
+    "Wykorzystanie chmury"
+  ],
+  "sections": [
+    {
+      "type": "compare_visual_hero_features",
+      "title": "Automatycznie dostrzegaj drobne zmiany",
+      "content": "Nie polegaj na wzroku, aby znaleźć różnice w poprawionych umowach lub projektach. Nasze narzędzie podkreśla dokładne zmiany pikseli na czerwono."
+    },
+    {
+      "type": "compare_visual_how_to_steps",
+      "title": "Jak porównywać pliki PDF",
+      "content": "Prześlij oryginalny plik PDF i poprawiony plik PDF. Wyrenderujemy oba i nałożymy je, aby odsłonić wszelkie dodatki lub usunięcia."
+    },
+    {
+      "type": "compare_visual_geo_targeting",
+      "title": "Idealny do umów i dowodów",
+      "content": "Prawnicy i projektanci korzystają z naszego narzędzia do porównywania wizualnego, aby mieć pewność, że do dokumentu nie przedostały się nieautoryzowane zmiany."
+    },
+    {
+      "type": "compare_visual_privacy_security",
+      "title": "Porównanie dokumentów poufnych",
+      "content": "Porównywanie wrażliwych umów NDA? Nasze narzędzie jest w 100% lokalne. Dokumenty nigdy nie trafiają na nasze serwery."
+    },
+    {
+      "type": "compare_visual_performance",
+      "title": "Renderowanie różnicowe w czasie rzeczywistym",
+      "content": "Natychmiast generuj różnice wizualne w przeglądarce dzięki przyspieszanemu sprzętowo renderowaniu płótna."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Czy wykrywa różnice w tekście lub pikselach?",
+      "a": "Renderuje plik PDF i znajduje wizualne różnice w pikselach, w tym tekst, czcionki i obrazy."
+    },
+    {
+      "q": "Co oznaczają czerwone znaki?",
+      "a": "Czerwone podkreślenia wskazują obszary, w których oba pliki PDF różnią się wizualnie."
+    },
+    {
+      "q": "Czy jest to bezpieczne dla dokumentów prawnych?",
+      "a": "Tak, całe przetwarzanie ma charakter ściśle lokalny i prywatny."
+    }
+  ]
+}

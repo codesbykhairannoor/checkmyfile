@@ -1,0 +1,58 @@
+{
+  "title": "Orezať okraje PDF — orezať biele miesta online",
+  "h1": "Orezať biele okraje zo stránok PDF",
+  "description": "Odstráňte nepríjemné biele okraje z dokumentov PDF, aby ste získali lepší zážitok z čítania na mobilných zariadeniach a elektronických čítačkách. 100% zadarmo a miestne.",
+  "buttonText": "Vyberte PDF",
+  "badges": [
+    "Presné orezanie",
+    "Žiadne nahrávanie na server",
+    "Rýchlo"
+  ],
+  "stats": [
+    "100%",
+    "Miestne",
+    "0",
+    "Latencia"
+  ],
+  "sections": [
+    {
+      "type": "crop_margins_hero_features",
+      "title": "Prečo orezávať okraje PDF?",
+      "content": "Mnoho akademických prác a elektronických kníh má veľké biele okraje. Ich orezaním sa text zväčší a bude sa ľahšie čítať na menších obrazovkách."
+    },
+    {
+      "type": "crop_margins_how_to_steps",
+      "title": "Ako orezať okraje",
+      "content": "Nahrajte svoj súbor, definujte ohraničovací rámček pretiahnutím rukovätí a stlačte orezať. Proces je úplne súkromný."
+    },
+    {
+      "type": "crop_margins_geo_targeting",
+      "title": "Bezpečné odstránenie okrajov",
+      "content": "Nie je potrebné nahrávať citlivé súbory PDF, len aby ste odstránili medzery. Náš nástroj WebAssembly to robí vo vašom prehliadači."
+    },
+    {
+      "type": "crop_margins_privacy_security",
+      "title": "100% offline orezanie",
+      "content": "Vaše súbory nikdy neopustia váš počítač. Ideálne pre dôverné právne alebo lekárske dokumenty."
+    },
+    {
+      "type": "crop_margins_performance",
+      "title": "Okamžité orezanie PDF",
+      "content": "Orezajte 500-stranovú knihu v priebehu milisekúnd bez čakania na nahranie alebo sťahovanie zo servera."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Je to zadarmo?",
+      "a": "Áno, 100% zadarmo bez obmedzení."
+    },
+    {
+      "q": "Nahráva môj súbor?",
+      "a": "Nie, všetko sa spracováva lokálne."
+    },
+    {
+      "q": "Môžem orezať nerovnomerné okraje?",
+      "a": "Áno, môžete zadať rôzne hodnoty pre hornú, spodnú, ľavú a pravú stranu."
+    }
+  ]
+}

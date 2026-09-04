@@ -1,0 +1,58 @@
+{
+  "title": "Remove PDF Author Metadata — Sanitize PDF Properties",
+  "h1": "Sanitize PDF Author Metadata",
+  "description": "Protect your privacy by securely removing author names, creation dates, software footprints, and hidden metadata from your PDF files.",
+  "buttonText": "Select PDF",
+  "badges": [
+    "Metadata Cleaner",
+    "Privacy First",
+    "Offline Tool"
+  ],
+  "stats": [
+    "100%",
+    "Secure",
+    "0",
+    "Footprints"
+  ],
+  "sections": [
+    {
+      "type": "remove_author_hero_features",
+      "title": "Why Clean PDF Metadata?",
+      "content": "PDFs often secretly store your name, company name, OS version, and creation dates. Clean them before sharing online."
+    },
+    {
+      "type": "remove_author_how_to_steps",
+      "title": "How to Sanitize Properties",
+      "content": "Upload your document. Our engine will parse the PDF structure and securely erase all dictionary metadata fields."
+    },
+    {
+      "type": "remove_author_geo_targeting",
+      "title": "Protect Your Anonymity",
+      "content": "Ensure whistleblowers, journalists, and everyday users can share documents without leaking their digital identity."
+    },
+    {
+      "type": "remove_author_privacy_security",
+      "title": "Military Grade Sanitization",
+      "content": "We rewrite the PDF binary structure locally in your browser to ensure the metadata is permanently destroyed."
+    },
+    {
+      "type": "remove_author_performance",
+      "title": "Instant Metadata Eraser",
+      "content": "Scrub thousands of pages in less than a second using our highly optimized WebAssembly core."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What metadata is removed?",
+      "a": "Author, Title, Subject, Keywords, Creator, Producer, CreationDate, and ModDate."
+    },
+    {
+      "q": "Does it change the visual layout?",
+      "a": "No, only the hidden metadata properties are modified."
+    },
+    {
+      "q": "Is the process secure?",
+      "a": "Yes, it happens 100% locally on your machine."
+    }
+  ]
+}

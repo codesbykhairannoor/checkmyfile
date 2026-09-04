@@ -1,0 +1,58 @@
+{
+  "title": "Confronta visivamente i file PDF: trova le differenze di pixel",
+  "h1": "Confronta visivamente due file PDF",
+  "description": "Carica due documenti PDF ed evidenzia immediatamente le esatte differenze di pixel tra loro localmente nel tuo browser.",
+  "buttonText": "Seleziona PDF",
+  "badges": [
+    "Differenza pixel perfetta",
+    "Fianco a fianco",
+    "Differenza locale"
+  ],
+  "stats": [
+    "100%",
+    "Preciso",
+    "0",
+    "Utilizzo del cloud"
+  ],
+  "sections": [
+    {
+      "type": "compare_visual_hero_features",
+      "title": "Individua automaticamente piccole modifiche",
+      "content": "Non fare affidamento sui tuoi occhi per trovare differenze nei contratti o nei progetti modificati. Il nostro strumento evidenzia le modifiche esatte dei pixel in rosso."
+    },
+    {
+      "type": "compare_visual_how_to_steps",
+      "title": "Come confrontare i PDF",
+      "content": "Carica il PDF originale e il PDF revisionato. Renderemo entrambi e li sovrapporremo per esporre eventuali aggiunte o eliminazioni."
+    },
+    {
+      "type": "compare_visual_geo_targeting",
+      "title": "Perfetto per contratti e prove",
+      "content": "Avvocati e designer utilizzano il nostro strumento di confronto visivo per garantire che non siano state introdotte modifiche non autorizzate in un documento."
+    },
+    {
+      "type": "compare_visual_privacy_security",
+      "title": "Confronto di documenti riservati",
+      "content": "Confronto tra contratti NDA sensibili? Il nostro strumento è locale al 100%. I documenti non toccano mai i nostri server."
+    },
+    {
+      "type": "compare_visual_performance",
+      "title": "Rendering delle differenze in tempo reale",
+      "content": "Genera istantaneamente differenze visive nel tuo browser grazie al rendering su tela con accelerazione hardware."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Trova differenze di testo o pixel?",
+      "a": "Esegue il rendering del PDF e rileva le differenze visive dei pixel, che includono testo, caratteri e immagini."
+    },
+    {
+      "q": "Cosa significano i segni rossi?",
+      "a": "Le evidenziazioni rosse indicano le aree in cui i due PDF differiscono visivamente."
+    },
+    {
+      "q": "È sicuro per i documenti legali?",
+      "a": "Sì, tutta l'elaborazione è strettamente locale e privata."
+    }
+  ]
+}

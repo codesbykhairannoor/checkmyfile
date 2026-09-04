@@ -1,0 +1,58 @@
+{
+  "title": "Yazdırma için Gri Tonlamalı PDF — Renkliyi Siyah Beyaza Dönüştürün",
+  "h1": "Renkli PDF'yi Gri Tonlamaya Dönüştür",
+  "description": "Renkli PDF belgelerini doğrudan tarayıcınızda anında siyah beyaza veya gri tonlamaya dönüştürerek yazıcı mürekkebinden tasarruf edin.",
+  "buttonText": "PDF'yi seçin",
+  "badges": [
+    "Mürekkep Tasarrufu",
+    "Anında Dönüşüm",
+    "Güvenli"
+  ],
+  "stats": [
+    "%100",
+    "Özgür",
+    "0",
+    "Reklamlar"
+  ],
+  "sections": [
+    {
+      "type": "grayscale_print_hero_features",
+      "title": "Pahalı Yazıcı Mürekkebinden Tasarruf Edin",
+      "content": "Renkli mürekkep pahalıdır. Paradan ve kaynaklardan tasarruf etmek için PDF'lerinizi yazdırmadan önce gri tonlamaya dönüştürün."
+    },
+    {
+      "type": "grayscale_print_how_to_steps",
+      "title": "PDF Siyah Beyaz Nasıl Yapılır",
+      "content": "Dosyanızı kutuya bırakmanız yeterli. Yerel aracımız anında tüm renkleri çıkaracak ve size mükemmel şekilde yazdırılabilir gri tonlamalı bir PDF verecektir."
+    },
+    {
+      "type": "grayscale_print_geo_targeting",
+      "title": "En İyi Siyah Beyaz PDF Dönüştürücü",
+      "content": "Renkli metinleri, görüntüleri ve arka planları okunabilirliği kaybetmeden gri tonlarına dönüştürün."
+    },
+    {
+      "type": "grayscale_print_privacy_security",
+      "title": "Özel Gri Tonlamalı Dönüşüm",
+      "content": "Belgeleriniz kendi cihazınızın hafızasına dönüştürülür. Dosyalarınızı asla görmeyiz."
+    },
+    {
+      "type": "grayscale_print_performance",
+      "title": "Işık Hızında İşleme",
+      "content": "Dosyanızı bir bulut sunucusuna yüklemediğimiz için gri tonlama dönüşümü neredeyse anında gerçekleşir."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Resimler de gri tonlamalı mı olacak?",
+      "a": "Evet, tüm resimler, metinler ve vektör grafikleri gri tonlamaya dönüştürülecektir."
+    },
+    {
+      "q": "Dosya boyutu küçültülmüş mü?",
+      "a": "Bazen PDF'nin içindeki renkli resimlere bağlı olarak."
+    },
+    {
+      "q": "Özel dosyalar için güvenli mi?",
+      "a": "Kesinlikle. İnternet üzerinden hiçbir veri gönderilmez."
+    }
+  ]
+}

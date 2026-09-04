@@ -1,0 +1,58 @@
+{
+  "title": "Grayscale PDF for Printing — Convert Color to B&W",
+  "h1": "Convert Color PDF to Grayscale",
+  "description": "Save printer ink by instantly converting colored PDF documents to black and white or grayscale directly in your browser.",
+  "buttonText": "Select PDF",
+  "badges": [
+    "Ink Saver",
+    "Instant Conversion",
+    "Secure"
+  ],
+  "stats": [
+    "100%",
+    "Free",
+    "0",
+    "Ads"
+  ],
+  "sections": [
+    {
+      "type": "grayscale_print_hero_features",
+      "title": "Save Expensive Printer Ink",
+      "content": "Colored ink is expensive. Convert your PDFs to grayscale before printing to save money and resources."
+    },
+    {
+      "type": "grayscale_print_how_to_steps",
+      "title": "How to Make PDF Black & White",
+      "content": "Just drop your file in the box. Our local tool will instantly strip all colors and give you a perfectly printable grayscale PDF."
+    },
+    {
+      "type": "grayscale_print_geo_targeting",
+      "title": "Best B&W PDF Converter",
+      "content": "Convert colored text, images, and backgrounds to shades of gray without losing readability."
+    },
+    {
+      "type": "grayscale_print_privacy_security",
+      "title": "Private Grayscale Conversion",
+      "content": "Your documents are converted in your own device's memory. We never see your files."
+    },
+    {
+      "type": "grayscale_print_performance",
+      "title": "Lightning Fast Processing",
+      "content": "Because we don't upload your file to a cloud server, the grayscale conversion happens almost instantly."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Will images be grayscaled too?",
+      "a": "Yes, all images, text, and vector graphics will be converted to grayscale."
+    },
+    {
+      "q": "Is the file size reduced?",
+      "a": "Sometimes, depending on the colored images inside the PDF."
+    },
+    {
+      "q": "Is it safe for private files?",
+      "a": "Absolutely. No data is sent over the internet."
+    }
+  ]
+}

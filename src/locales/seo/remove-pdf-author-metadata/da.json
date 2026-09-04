@@ -1,0 +1,58 @@
+{
+  "title": "Fjern PDF-forfattermetadata — Rengør PDF-egenskaber",
+  "h1": "Sanitize PDF Author Metadata",
+  "description": "Beskyt dit privatliv ved sikkert at fjerne forfatternavne, oprettelsesdatoer, softwarefodspor og skjulte metadata fra dine PDF-filer.",
+  "buttonText": "Vælg PDF",
+  "badges": [
+    "Metadata Cleaner",
+    "Privatliv først",
+    "Offline værktøj"
+  ],
+  "stats": [
+    "100 %",
+    "Sikker",
+    "0",
+    "Fodspor"
+  ],
+  "sections": [
+    {
+      "type": "remove_author_hero_features",
+      "title": "Hvorfor rense PDF-metadata?",
+      "content": "PDF-filer gemmer ofte dit navn, firmanavn, OS-version og oprettelsesdatoer i hemmelighed. Rengør dem, før du deler dem online."
+    },
+    {
+      "type": "remove_author_how_to_steps",
+      "title": "Sådan renser du ejendomme",
+      "content": "Upload dit dokument. Vores motor vil analysere PDF-strukturen og sikkert slette alle ordbogs metadatafelter."
+    },
+    {
+      "type": "remove_author_geo_targeting",
+      "title": "Beskyt din anonymitet",
+      "content": "Sørg for, at whistleblowere, journalister og almindelige brugere kan dele dokumenter uden at lække deres digitale identitet."
+    },
+    {
+      "type": "remove_author_privacy_security",
+      "title": "Militærklasse sanitet",
+      "content": "Vi omskriver den binære PDF-struktur lokalt i din browser for at sikre, at metadataene bliver permanent ødelagt."
+    },
+    {
+      "type": "remove_author_performance",
+      "title": "Instant Metadata Eraser",
+      "content": "Skrub tusindvis af sider på mindre end et sekund ved hjælp af vores meget optimerede WebAssembly-kerne."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Hvilke metadata fjernes?",
+      "a": "Forfatter, titel, emne, søgeord, skaber, producent, oprettelsesdato og moddato."
+    },
+    {
+      "q": "Ændrer det det visuelle layout?",
+      "a": "Nej, kun de skjulte metadataegenskaber ændres."
+    },
+    {
+      "q": "Er processen sikker?",
+      "a": "Ja, det sker 100 % lokalt på din maskine."
+    }
+  ]
+}

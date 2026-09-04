@@ -1,0 +1,58 @@
+{
+  "title": "Bandingkan Fail PDF Secara Visual — Cari Perbezaan Piksel",
+  "h1": "Bandingkan Dua Fail PDF secara Visual",
+  "description": "Muat naik dua dokumen PDF dan serta-merta serlahkan perbezaan piksel yang tepat antara mereka secara setempat dalam penyemak imbas anda.",
+  "buttonText": "Pilih PDF",
+  "badges": [
+    "Pixel Perfect Diff",
+    "Bersebelahan",
+    "Perbezaan Tempatan"
+  ],
+  "stats": [
+    "100%",
+    "tepat",
+    "0",
+    "Penggunaan Awan"
+  ],
+  "sections": [
+    {
+      "type": "compare_visual_hero_features",
+      "title": "Lihat Perubahan Kecil Secara Automatik",
+      "content": "Jangan bergantung pada mata anda untuk mencari perbezaan dalam kontrak atau reka bentuk yang disemak semula. Alat kami menyerlahkan perubahan piksel tepat dalam warna merah."
+    },
+    {
+      "type": "compare_visual_how_to_steps",
+      "title": "Bagaimana untuk Membandingkan PDF",
+      "content": "Muat naik PDF asal dan PDF yang disemak. Kami akan memberikan kedua-duanya dan bertindih untuk mendedahkan sebarang penambahan atau pemadaman."
+    },
+    {
+      "type": "compare_visual_geo_targeting",
+      "title": "Sesuai untuk Kontrak & Bukti",
+      "content": "Peguam dan pereka bentuk menggunakan alat perbezaan visual kami untuk memastikan tiada perubahan yang tidak dibenarkan diselitkan ke dalam dokumen."
+    },
+    {
+      "type": "compare_visual_privacy_security",
+      "title": "Perbandingan Dokumen Sulit",
+      "content": "Membandingkan kontrak NDA yang sensitif? Alat kami adalah 100% tempatan. Dokumen tidak pernah menyentuh pelayan kami."
+    },
+    {
+      "type": "compare_visual_performance",
+      "title": "Rendering Perbezaan Masa Nyata",
+      "content": "Hasilkan perbezaan visual serta-merta dalam penyemak imbas anda terima kasih kepada pemaparan kanvas dipercepatkan perkakasan."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Adakah ia menemui perbezaan teks atau piksel?",
+      "a": "Ia menjadikan PDF dan mencari perbezaan piksel visual, yang termasuk teks, fon dan imej."
+    },
+    {
+      "q": "Apakah yang dimaksudkan dengan tanda merah?",
+      "a": "Sorotan merah menunjukkan kawasan di mana kedua-dua PDF berbeza secara visual."
+    },
+    {
+      "q": "Adakah selamat untuk dokumen sah?",
+      "a": "Ya, semua pemprosesan adalah tempatan dan peribadi."
+    }
+  ]
+}

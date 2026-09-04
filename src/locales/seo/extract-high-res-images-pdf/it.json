@@ -1,0 +1,58 @@
+{
+  "title": "Estrai immagini ad alta risoluzione da PDF: ottieni foto originali",
+  "h1": "Estrai immagini ad alta risoluzione da PDF",
+  "description": "Scarica foto e grafica incorporati dal tuo PDF nella loro alta risoluzione originale, non compressa. Nessun caricamento sul server.",
+  "buttonText": "Seleziona PDF",
+  "badges": [
+    "Estrazione senza perdite",
+    "Esportazione in batch",
+    "Archivio ZIP"
+  ],
+  "stats": [
+    "100%",
+    "Qualità originale",
+    "0",
+    "Caricamenti"
+  ],
+  "sections": [
+    {
+      "type": "extract_highres_hero_features",
+      "title": "Ottieni la qualità dell'immagine originale",
+      "content": "Non utilizzare strumenti di screenshot che rovinano la risoluzione. Il nostro strumento analizza il binario PDF ed estrae i file di immagine originali e grezzi."
+    },
+    {
+      "type": "extract_highres_how_to_steps",
+      "title": "Come estrarre le immagini",
+      "content": "Seleziona un PDF. Lo scansioniamo per cercare JPEG e PNG incorporati e li confezioniamo tutti in un file ZIP ordinato per te."
+    },
+    {
+      "type": "extract_highres_geo_targeting",
+      "title": "Il miglior strumento di estrazione delle immagini",
+      "content": "Perfetto per designer, editori e studenti che hanno bisogno di riutilizzare risorse di alta qualità bloccate in un PDF."
+    },
+    {
+      "type": "extract_highres_privacy_security",
+      "title": "Estrazione di beni privati",
+      "content": "Non rubiamo le tue immagini. L'estrazione avviene interamente sul tuo computer."
+    },
+    {
+      "type": "extract_highres_performance",
+      "title": "Esportazione incredibilmente veloce",
+      "content": "Estrai centinaia di immagini ad alta risoluzione in pochi secondi senza attendere un massiccio caricamento di file."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Quali formati vengono estratti?",
+      "a": "Principalmente JPG e PNG, a seconda di come sono stati incorporati."
+    },
+    {
+      "q": "Sono compressi?",
+      "a": "No, estraiamo gli esatti dati binari grezzi memorizzati nel PDF."
+    },
+    {
+      "q": "Posso scaricarli tutti in una volta?",
+      "a": "Sì, raggruppiamo tutte le immagini in un unico file ZIP."
+    }
+  ]
+}

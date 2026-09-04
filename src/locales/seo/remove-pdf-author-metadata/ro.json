@@ -1,0 +1,58 @@
+{
+  "title": "Eliminați metadatele autorului PDF - Dezinfectați proprietățile PDF",
+  "h1": "Dezinfectează metadatele autorului PDF",
+  "description": "Protejați-vă confidențialitatea prin eliminarea în siguranță a numelor de autori, a datelor de creație, a urmelor software și a metadatelor ascunse din fișierele dvs. PDF.",
+  "buttonText": "Selectați PDF",
+  "badges": [
+    "Metadate Cleaner",
+    "În primul rând, confidențialitatea",
+    "Instrument offline"
+  ],
+  "stats": [
+    "100%",
+    "Asigura",
+    "0",
+    "Urme de pași"
+  ],
+  "sections": [
+    {
+      "type": "remove_author_hero_features",
+      "title": "De ce curățați metadatele PDF?",
+      "content": "PDF-urile stochează adesea în secret numele dvs., numele companiei, versiunea sistemului de operare și datele de creare. Curățați-le înainte de a le partaja online."
+    },
+    {
+      "type": "remove_author_how_to_steps",
+      "title": "Cum să igienizezi proprietățile",
+      "content": "Încărcați documentul dvs. Motorul nostru va analiza structura PDF și va șterge în siguranță toate câmpurile de metadate ale dicționarului."
+    },
+    {
+      "type": "remove_author_geo_targeting",
+      "title": "Protejați-vă anonimatul",
+      "content": "Asigurați-vă că avertizorii, jurnaliștii și utilizatorii obișnuiți pot partaja documente fără a-și pierde identitatea digitală."
+    },
+    {
+      "type": "remove_author_privacy_security",
+      "title": "Igienizare de grad militar",
+      "content": "Rescriem structura binară PDF local în browserul dvs. pentru a ne asigura că metadatele sunt distruse definitiv."
+    },
+    {
+      "type": "remove_author_performance",
+      "title": "Eraser de metadate instantanee",
+      "content": "Curățați mii de pagini în mai puțin de o secundă folosind nucleul nostru WebAssembly extrem de optimizat."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Ce metadate sunt eliminate?",
+      "a": "Autor, Titlu, Subiect, Cuvinte cheie, Creator, Producer, CreationDate și ModDate."
+    },
+    {
+      "q": "Schimbă aspectul vizual?",
+      "a": "Nu, numai proprietățile metadatelor ascunse sunt modificate."
+    },
+    {
+      "q": "Este procesul sigur?",
+      "a": "Da, se întâmplă 100% local pe mașina dvs."
+    }
+  ]
+}

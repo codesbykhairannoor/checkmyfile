@@ -1,0 +1,58 @@
+{
+  "title": "PDF Yazar Meta Verilerini Kaldır — PDF Özelliklerini Temizleyin",
+  "h1": "PDF Yazar Meta Verilerini Temizleme",
+  "description": "Yazar adlarını, oluşturulma tarihlerini, yazılım ayak izlerini ve gizli meta verileri PDF dosyalarınızdan güvenli bir şekilde kaldırarak gizliliğinizi koruyun.",
+  "buttonText": "PDF'yi seçin",
+  "badges": [
+    "Meta Veri Temizleyici",
+    "Önce Gizlilik",
+    "Çevrimdışı Araç"
+  ],
+  "stats": [
+    "%100",
+    "Güvenli",
+    "0",
+    "Ayak izleri"
+  ],
+  "sections": [
+    {
+      "type": "remove_author_hero_features",
+      "title": "Neden PDF Meta Verilerini Temizlemelisiniz?",
+      "content": "PDF'ler genellikle adınızı, şirket adınızı, işletim sistemi sürümünüzü ve oluşturulma tarihlerinizi gizlice saklar. Çevrimiçi paylaşmadan önce bunları temizleyin."
+    },
+    {
+      "type": "remove_author_how_to_steps",
+      "title": "Mülkler Nasıl Sterilize Edilir",
+      "content": "Belgenizi yükleyin. Motorumuz PDF yapısını ayrıştıracak ve tüm sözlük meta veri alanlarını güvenli bir şekilde silecektir."
+    },
+    {
+      "type": "remove_author_geo_targeting",
+      "title": "Anonimliğinizi Koruyun",
+      "content": "İhbarcıların, gazetecilerin ve sıradan kullanıcıların dijital kimliklerini sızdırmadan belgeleri paylaşabilmelerini sağlayın."
+    },
+    {
+      "type": "remove_author_privacy_security",
+      "title": "Askeri Düzeyde Sterilizasyon",
+      "content": "Meta verilerin kalıcı olarak yok edilmesini sağlamak için PDF ikili yapısını tarayıcınızda yerel olarak yeniden yazıyoruz."
+    },
+    {
+      "type": "remove_author_performance",
+      "title": "Anında Meta Veri Silgisi",
+      "content": "Yüksek düzeyde optimize edilmiş WebAssembly çekirdeğimizi kullanarak binlerce sayfayı bir saniyeden daha kısa sürede tarayın."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Hangi meta veriler kaldırıldı?",
+      "a": "Yazar, Başlık, Konu, Anahtar Kelimeler, Oluşturan, Yapımcı, CreationDate ve ModDate."
+    },
+    {
+      "q": "Görsel düzeni değiştiriyor mu?",
+      "a": "Hayır, yalnızca gizli meta veri özellikleri değiştirilir."
+    },
+    {
+      "q": "Süreç güvenli mi?",
+      "a": "Evet, makinenizde %100 yerel olarak gerçekleşir."
+    }
+  ]
+}

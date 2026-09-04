@@ -1,0 +1,58 @@
+{
+  "title": "Alih Keluar Metadata Pengarang PDF — Bersihkan Hartanah PDF",
+  "h1": "Bersihkan Metadata Pengarang PDF",
+  "description": "Lindungi privasi anda dengan mengalih keluar nama pengarang, tarikh penciptaan, jejak perisian dan metadata tersembunyi dengan selamat daripada fail PDF anda.",
+  "buttonText": "Pilih PDF",
+  "badges": [
+    "Pembersih Metadata",
+    "Privasi Diutamakan",
+    "Alat Luar Talian"
+  ],
+  "stats": [
+    "100%",
+    "selamat",
+    "0",
+    "kesan tapak kaki"
+  ],
+  "sections": [
+    {
+      "type": "remove_author_hero_features",
+      "title": "Mengapa Bersihkan Metadata PDF?",
+      "content": "PDF selalunya menyimpan nama, nama syarikat, versi OS dan tarikh penciptaan anda secara rahsia. Bersihkan mereka sebelum berkongsi dalam talian."
+    },
+    {
+      "type": "remove_author_how_to_steps",
+      "title": "Cara Membersihkan Harta",
+      "content": "Muat naik dokumen anda. Enjin kami akan menghuraikan struktur PDF dan memadam semua medan metadata kamus dengan selamat."
+    },
+    {
+      "type": "remove_author_geo_targeting",
+      "title": "Lindungi Tanpa Nama Anda",
+      "content": "Pastikan pemberi maklumat, wartawan dan pengguna harian boleh berkongsi dokumen tanpa membocorkan identiti digital mereka."
+    },
+    {
+      "type": "remove_author_privacy_security",
+      "title": "Pembersihan Gred Tentera",
+      "content": "Kami menulis semula struktur binari PDF secara setempat dalam penyemak imbas anda untuk memastikan metadata dimusnahkan secara kekal."
+    },
+    {
+      "type": "remove_author_performance",
+      "title": "Pemadam Metadata Segera",
+      "content": "Gosok beribu-ribu halaman dalam masa kurang dari satu saat menggunakan teras WebAssembly kami yang sangat dioptimumkan."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Apakah metadata yang dialih keluar?",
+      "a": "Pengarang, Tajuk, Subjek, Kata Kunci, Pencipta, Pengeluar, CreationDate dan ModDate."
+    },
+    {
+      "q": "Adakah ia mengubah susun atur visual?",
+      "a": "Tidak, hanya sifat metadata tersembunyi diubah suai."
+    },
+    {
+      "q": "Adakah proses itu selamat?",
+      "a": "Ya, ia berlaku 100% secara tempatan pada mesin anda."
+    }
+  ]
+}

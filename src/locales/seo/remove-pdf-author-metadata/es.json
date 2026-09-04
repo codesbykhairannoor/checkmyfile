@@ -1,0 +1,58 @@
+{
+  "title": "Eliminar metadatos de autor de PDF: desinfectar las propiedades de PDF",
+  "h1": "Desinfectar metadatos de la autora PDF",
+  "description": "Proteja su privacidad eliminando de forma segura los nombres de los autores, las fechas de creación, las huellas del software y los metadatos ocultos de sus archivos PDF.",
+  "buttonText": "Seleccione PDF",
+  "badges": [
+    "Limpiadora de metadatos",
+    "Privacidad primero",
+    "Herramienta sin conexión"
+  ],
+  "stats": [
+    "100%",
+    "Segura",
+    "0",
+    "Huellas"
+  ],
+  "sections": [
+    {
+      "type": "remove_author_hero_features",
+      "title": "¿Por qué limpiar metadatos PDF?",
+      "content": "Los archivos PDF suelen almacenar en secreto su nombre, el nombre de la empresa, la versión del sistema operativo y las fechas de creación. Límpielos antes de compartirlos en línea."
+    },
+    {
+      "type": "remove_author_how_to_steps",
+      "title": "Cómo desinfectar propiedades",
+      "content": "Sube tu documento. Nuestro motor analizará la estructura del PDF y borrará de forma segura todos los campos de metadatos del diccionario."
+    },
+    {
+      "type": "remove_author_geo_targeting",
+      "title": "Proteja su anonimato",
+      "content": "Asegúrese de que los denunciantes, periodistas y usuarios cotidianos puedan compartir documentos sin filtrar su identidad digital."
+    },
+    {
+      "type": "remove_author_privacy_security",
+      "title": "Desinfección de grado militar",
+      "content": "Reescribimos la estructura binaria del PDF localmente en su navegador para garantizar que los metadatos se destruyan permanentemente."
+    },
+    {
+      "type": "remove_author_performance",
+      "title": "Borrador instantáneo de metadatos",
+      "content": "Explore miles de páginas en menos de un segundo utilizando nuestro núcleo WebAssembly altamente optimizado."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "¿Qué metadatos se eliminan?",
+      "a": "Autor, Título, Asunto, Palabras clave, Creador, Productor, Fecha de creación y Fecha de modificación."
+    },
+    {
+      "q": "¿Cambia el diseño visual?",
+      "a": "No, sólo se modifican las propiedades de los metadatos ocultos."
+    },
+    {
+      "q": "¿Es seguro el proceso?",
+      "a": "Sí, sucede 100% localmente en su máquina."
+    }
+  ]
+}

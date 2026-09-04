@@ -1,0 +1,58 @@
+{
+  "title": "Fjern PDF-forfattermetadata — Rengjør PDF-egenskaper",
+  "h1": "Sanitize PDF Author Metadata",
+  "description": "Beskytt personvernet ditt ved å fjerne forfatternavn, opprettelsesdatoer, programvarefotavtrykk og skjulte metadata fra PDF-filene på en sikker måte.",
+  "buttonText": "Velg PDF",
+  "badges": [
+    "Metadata renser",
+    "Personvern først",
+    "Frakoblet verktøy"
+  ],
+  "stats": [
+    "100 %",
+    "Sikker",
+    "0",
+    "Fotspor"
+  ],
+  "sections": [
+    {
+      "type": "remove_author_hero_features",
+      "title": "Hvorfor rense PDF-metadata?",
+      "content": "PDF-filer lagrer ofte ditt navn, firmanavn, OS-versjon og opprettelsesdatoer i hemmelighet. Rengjør dem før du deler dem på nettet."
+    },
+    {
+      "type": "remove_author_how_to_steps",
+      "title": "Slik renser du eiendommer",
+      "content": "Last opp dokumentet ditt. Motoren vår vil analysere PDF-strukturen og slette alle metadatafelt i ordboken på en sikker måte."
+    },
+    {
+      "type": "remove_author_geo_targeting",
+      "title": "Beskytt din anonymitet",
+      "content": "Sørg for at varslere, journalister og vanlige brukere kan dele dokumenter uten å lekke deres digitale identitet."
+    },
+    {
+      "type": "remove_author_privacy_security",
+      "title": "Sanitisering av militær klasse",
+      "content": "Vi omskriver PDF-binærstrukturen lokalt i nettleseren din for å sikre at metadataene blir permanent ødelagt."
+    },
+    {
+      "type": "remove_author_performance",
+      "title": "Instant Metadata Eraser",
+      "content": "Skrubb tusenvis av sider på mindre enn ett sekund ved å bruke vår svært optimaliserte WebAssembly-kjerne."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Hvilke metadata fjernes?",
+      "a": "Forfatter, tittel, emne, nøkkelord, skaper, produsent, opprettelsesdato og moddato."
+    },
+    {
+      "q": "Endrer det den visuelle layouten?",
+      "a": "Nei, bare de skjulte metadataegenskapene blir endret."
+    },
+    {
+      "q": "Er prosessen sikker?",
+      "a": "Ja, det skjer 100 % lokalt på maskinen din."
+    }
+  ]
+}

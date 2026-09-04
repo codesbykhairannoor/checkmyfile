@@ -1,0 +1,58 @@
+{
+  "title": "Rimuovi i metadati dell'autore del PDF: disinfetta le proprietà del PDF",
+  "h1": "Disinfetta i metadati dell'autore del PDF",
+  "description": "Proteggi la tua privacy rimuovendo in modo sicuro nomi di autori, date di creazione, impronte di software e metadati nascosti dai tuoi file PDF.",
+  "buttonText": "Seleziona PDF",
+  "badges": [
+    "Pulitore di metadati",
+    "La privacy prima di tutto",
+    "Strumento offline"
+  ],
+  "stats": [
+    "100%",
+    "Sicura",
+    "0",
+    "Impronte"
+  ],
+  "sections": [
+    {
+      "type": "remove_author_hero_features",
+      "title": "Perché pulire i metadati dei PDF?",
+      "content": "I PDF spesso memorizzano segretamente il tuo nome, il nome dell'azienda, la versione del sistema operativo e le date di creazione. Puliscili prima di condividerli online."
+    },
+    {
+      "type": "remove_author_how_to_steps",
+      "title": "Come disinfettare le proprietà",
+      "content": "Carica il tuo documento. Il nostro motore analizzerà la struttura del PDF e cancellerà in modo sicuro tutti i campi dei metadati del dizionario."
+    },
+    {
+      "type": "remove_author_geo_targeting",
+      "title": "Proteggi il tuo anonimato",
+      "content": "Garantisci che informatori, giornalisti e utenti comuni possano condividere documenti senza divulgare la propria identità digitale."
+    },
+    {
+      "type": "remove_author_privacy_security",
+      "title": "Sanificazione di livello militare",
+      "content": "Riscriviamo la struttura binaria del PDF localmente nel tuo browser per garantire che i metadati vengano distrutti in modo permanente."
+    },
+    {
+      "type": "remove_author_performance",
+      "title": "Cancellazione istantanea dei metadati",
+      "content": "Pulisci migliaia di pagine in meno di un secondo utilizzando il nostro core WebAssembly altamente ottimizzato."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Quali metadati vengono rimossi?",
+      "a": "Autore, Titolo, Oggetto, Parole chiave, Creatore, Produttore, Data di creazione e Data Mod."
+    },
+    {
+      "q": "Cambia il layout visivo?",
+      "a": "No, vengono modificate solo le proprietà dei metadati nascosti."
+    },
+    {
+      "q": "Il processo è sicuro?",
+      "a": "Sì, avviene al 100% localmente sul tuo computer."
+    }
+  ]
+}

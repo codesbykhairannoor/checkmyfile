@@ -1,0 +1,58 @@
+{
+  "title": "Trích xuất hình ảnh có độ phân giải cao từ PDF — Nhận ảnh gốc",
+  "h1": "Trích xuất hình ảnh độ phân giải cao từ PDF",
+  "description": "Tải xuống ảnh và đồ họa được nhúng từ tệp PDF của bạn ở độ phân giải cao gốc, không nén. Không có tải lên máy chủ.",
+  "buttonText": "Chọn PDF",
+  "badges": [
+    "Khai thác không mất dữ liệu",
+    "Xuất hàng loạt",
+    "Lưu trữ ZIP"
+  ],
+  "stats": [
+    "100%",
+    "Chất lượng ban đầu",
+    "0",
+    "Tải lên"
+  ],
+  "sections": [
+    {
+      "type": "extract_highres_hero_features",
+      "title": "Nhận chất lượng hình ảnh gốc",
+      "content": "Đừng sử dụng các công cụ chụp màn hình làm hỏng độ phân giải. Công cụ của chúng tôi đào sâu vào tệp nhị phân PDF và trích xuất các tệp hình ảnh gốc, thô."
+    },
+    {
+      "type": "extract_highres_how_to_steps",
+      "title": "Cách trích xuất hình ảnh",
+      "content": "Chọn một bản PDF. Chúng tôi quét nó để tìm các tệp JPEG và PNG được nhúng rồi đóng gói tất cả chúng vào một tệp ZIP gọn gàng cho bạn."
+    },
+    {
+      "type": "extract_highres_geo_targeting",
+      "title": "Công cụ trích xuất hình ảnh tốt nhất",
+      "content": "Hoàn hảo cho các nhà thiết kế, nhà xuất bản và sinh viên cần sử dụng lại nội dung chất lượng cao được khóa bên trong tệp PDF."
+    },
+    {
+      "type": "extract_highres_privacy_security",
+      "title": "Khai thác tài sản tư nhân",
+      "content": "Chúng tôi không ăn cắp hình ảnh của bạn. Quá trình trích xuất diễn ra hoàn toàn trên máy tính của bạn."
+    },
+    {
+      "type": "extract_highres_performance",
+      "title": "Xuất khẩu nhanh chóng",
+      "content": "Trích xuất hàng trăm hình ảnh có độ phân giải cao trong vài giây mà không cần chờ tải lên tệp lớn."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Những định dạng nào được trích xuất?",
+      "a": "Chủ yếu là JPG và PNG, tùy thuộc vào cách chúng được nhúng."
+    },
+    {
+      "q": "Chúng có bị nén không?",
+      "a": "Không, chúng tôi trích xuất dữ liệu nhị phân thô chính xác được lưu trữ trong tệp PDF."
+    },
+    {
+      "q": "Tôi có thể tải xuống tất cả chúng cùng một lúc không?",
+      "a": "Có, chúng tôi gộp tất cả hình ảnh vào một tệp ZIP duy nhất."
+    }
+  ]
+}

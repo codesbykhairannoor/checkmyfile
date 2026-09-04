@@ -1,0 +1,58 @@
+{
+  "title": "PDF-Ränder zuschneiden – Leerräume online kürzen",
+  "h1": "Weiße Ränder von PDF-Seiten zuschneiden",
+  "description": "Entfernen Sie störende weiße Ränder aus Ihren PDF-Dokumenten für ein besseres Leseerlebnis auf Mobilgeräten und E-Readern. 100 % kostenlos und lokal.",
+  "buttonText": "Wählen Sie PDF aus",
+  "badges": [
+    "Präzises Zuschneiden",
+    "Kein Server-Upload",
+    "Schnell"
+  ],
+  "stats": [
+    "100 %",
+    "Lokal",
+    "0",
+    "Latenz"
+  ],
+  "sections": [
+    {
+      "type": "Crop_margins_hero_features",
+      "title": "Warum PDF-Ränder beschneiden?",
+      "content": "Viele wissenschaftliche Arbeiten und E-Books haben riesige weiße Ränder. Durch das Zuschneiden wird der Text größer und auf kleineren Bildschirmen besser lesbar."
+    },
+    {
+      "type": "Crop_margins_how_to_steps",
+      "title": "So beschneiden Sie Ränder",
+      "content": "Laden Sie Ihre Datei hoch, definieren Sie den Begrenzungsrahmen durch Ziehen der Ziehpunkte und klicken Sie auf „Zuschneiden“. Der Prozess ist völlig privat."
+    },
+    {
+      "type": "Crop_margins_geo_targeting",
+      "title": "Sichere Randentfernung",
+      "content": "Sie müssen Ihre sensiblen PDFs nicht hochladen, nur um Leerzeichen zu entfernen. Unsere WebAssembly-Engine erledigt dies in Ihrem Browser."
+    },
+    {
+      "type": "Crop_margins_privacy_security",
+      "title": "100 % Offline-Zuschneiden",
+      "content": "Ihre Dateien verlassen niemals Ihren Computer. Perfekt für vertrauliche juristische oder medizinische Dokumente."
+    },
+    {
+      "type": "Crop_margins_performance",
+      "title": "Sofortiges Zuschneiden von PDFs",
+      "content": "Schneiden Sie ein 500-seitiges Buch in Millisekunden zu, ohne auf Server-Uploads oder -Downloads warten zu müssen."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Ist das kostenlos?",
+      "a": "Ja, 100 % kostenlos und ohne Einschränkungen."
+    },
+    {
+      "q": "Lädt es meine Datei hoch?",
+      "a": "Nein, alles wird lokal verarbeitet."
+    },
+    {
+      "q": "Kann ich ungleichmäßige Ränder zuschneiden?",
+      "a": "Ja, Sie können unterschiedliche Werte für oben, unten, links und rechts angeben."
+    }
+  ]
+}

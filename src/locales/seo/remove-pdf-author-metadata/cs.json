@@ -1,0 +1,58 @@
+{
+  "title": "Odebrat metadata autora PDF — Vyčistěte vlastnosti PDF",
+  "h1": "Vyčistěte metadata autora PDF",
+  "description": "Chraňte své soukromí bezpečným odstraněním jmen autorů, dat vytvoření, softwarových stop a skrytých metadat ze souborů PDF.",
+  "buttonText": "Vyberte PDF",
+  "badges": [
+    "Čistič metadat",
+    "Soukromí na prvním místě",
+    "Nástroj offline"
+  ],
+  "stats": [
+    "100 %",
+    "Zajistit",
+    "0",
+    "Stopy"
+  ],
+  "sections": [
+    {
+      "type": "remove_author_hero_features",
+      "title": "Proč vyčistit metadata PDF?",
+      "content": "Soubory PDF často tajně ukládají vaše jméno, název společnosti, verzi operačního systému a data vytvoření. Před sdílením online je vyčistěte."
+    },
+    {
+      "type": "remove_author_how_to_steps",
+      "title": "Jak dezinfikovat vlastnosti",
+      "content": "Nahrajte dokument. Náš engine analyzuje strukturu PDF a bezpečně vymaže všechna pole metadat slovníku."
+    },
+    {
+      "type": "remove_author_geo_targeting",
+      "title": "Chraňte svou anonymitu",
+      "content": "Zajistěte, aby informátoři, novináři a každodenní uživatelé mohli sdílet dokumenty bez úniku své digitální identity."
+    },
+    {
+      "type": "remove_author_privacy_security",
+      "title": "Sanitace na vojenské úrovni",
+      "content": "Binární strukturu PDF přepíšeme lokálně ve vašem prohlížeči, abychom zajistili, že metadata budou trvale zničena."
+    },
+    {
+      "type": "remove_author_performance",
+      "title": "Okamžitá mazání metadat",
+      "content": "Vyčistěte tisíce stránek za méně než sekundu pomocí našeho vysoce optimalizovaného jádra WebAssembly."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Jaká metadata jsou odstraněna?",
+      "a": "Autor, název, předmět, klíčová slova, tvůrce, producent, datum vytvoření a datum změny."
+    },
+    {
+      "q": "Změní to vizuální uspořádání?",
+      "a": "Ne, upravují se pouze skryté vlastnosti metadat."
+    },
+    {
+      "q": "Je proces bezpečný?",
+      "a": "Ano, děje se to 100% lokálně na vašem počítači."
+    }
+  ]
+}

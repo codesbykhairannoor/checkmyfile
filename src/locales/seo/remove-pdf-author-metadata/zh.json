@@ -1,0 +1,58 @@
+{
+  "title": "删除 PDF 作者元数据 — 清理 PDF 属性",
+  "h1": "清理 PDF 作者元数据",
+  "description": "通过安全地从 PDF 文件中删除作者姓名、创建日期、软件足迹和隐藏元数据来保护您的隐私。",
+  "buttonText": "选择PDF",
+  "badges": [
+    "元数据清理器",
+    "隐私第一",
+    "离线工具"
+  ],
+  "stats": [
+    "100%",
+    "安全的",
+    "0",
+    "足迹"
+  ],
+  "sections": [
+    {
+      "type": "remove_author_hero_features",
+      "title": "为什么要清理 PDF 元数据？",
+      "content": "PDF 通常会秘密存储您的姓名、公司名称、操作系统版本和创建日期。 在网上分享之前先清洁它们。"
+    },
+    {
+      "type": "remove_author_how_to_steps",
+      "title": "如何对房产进行消毒",
+      "content": "上传您的文件。 我们的引擎将解析 PDF 结构并安全地删除所有字典元数据字段。"
+    },
+    {
+      "type": "remove_author_geo_targeting",
+      "title": "保护您的匿名性",
+      "content": "确保举报人、记者和日常用户可以在不泄露其数字身份的情况下共享文档。"
+    },
+    {
+      "type": "remove_author_privacy_security",
+      "title": "军用级消毒",
+      "content": "我们在您的浏览器中本地重写 PDF 二进制结构，以确保元数据被永久销毁。"
+    },
+    {
+      "type": "remove_author_performance",
+      "title": "即时元数据擦除器",
+      "content": "使用我们高度优化的 WebAssembly 核心，可以在不到一秒的时间内清理数千个页面。"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "删除了哪些元数据？",
+      "a": "作者、标题、主题、关键字、创建者、制作者、创建日期和修改日期。"
+    },
+    {
+      "q": "它会改变视觉布局吗？",
+      "a": "否，仅修改隐藏的元数据属性。"
+    },
+    {
+      "q": "过程安全吗？",
+      "a": "是的，它 100% 发生在您的本地计算机上。"
+    }
+  ]
+}

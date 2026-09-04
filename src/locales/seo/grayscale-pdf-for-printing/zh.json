@@ -1,0 +1,58 @@
+{
+  "title": "用于打印的灰度 PDF — 将彩色转换为黑白",
+  "h1": "将彩色 PDF 转换为灰度",
+  "description": "直接在浏览器中立即将彩色 PDF 文档转换为黑白或灰度，节省打印机墨水。",
+  "buttonText": "选择PDF",
+  "badges": [
+    "省墨器",
+    "即时转换",
+    "安全的"
+  ],
+  "stats": [
+    "100%",
+    "自由的",
+    "0",
+    "广告"
+  ],
+  "sections": [
+    {
+      "type": "grayscale_print_hero_features",
+      "title": "节省昂贵的打印机墨水",
+      "content": "彩色墨水很贵。 在打印之前将 PDF 转换为灰度以节省资金和资源。"
+    },
+    {
+      "type": "grayscale_print_how_to_steps",
+      "title": "如何将 PDF 设为黑白",
+      "content": "只需将您的文件放入框中即可。 我们的本地工具将立即去除所有颜色，并为您提供完美可打印的灰度 PDF。"
+    },
+    {
+      "type": "grayscale_print_geo_targeting",
+      "title": "最佳黑白 PDF 转换器",
+      "content": "将彩色文本、图像和背景转换为灰色阴影，而不会失去可读性。"
+    },
+    {
+      "type": "grayscale_print_privacy_security",
+      "title": "私有灰度转换",
+      "content": "您的文档将在您自己的设备内存中进行转换。 我们永远不会看到您的文件。"
+    },
+    {
+      "type": "grayscale_print_performance",
+      "title": "闪电般的快速处理",
+      "content": "由于我们不会将您的文件上传到云服务器，因此灰度转换几乎立即发生。"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "图像也会灰度化吗？",
+      "a": "是的，所有图像、文本和矢量图形都将转换为灰度。"
+    },
+    {
+      "q": "文件大小是否减小了？",
+      "a": "有时，取决于 PDF 中的彩色图像。"
+    },
+    {
+      "q": "私人文件安全吗？",
+      "a": "绝对地。 没有数据通过互联网发送。"
+    }
+  ]
+}

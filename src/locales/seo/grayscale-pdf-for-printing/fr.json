@@ -1,0 +1,58 @@
+{
+  "title": "PDF en niveaux de gris pour l'impression - Convertir la couleur en noir et blanc",
+  "h1": "Convertir un PDF couleur en niveaux de gris",
+  "description": "Économisez l'encre de l'imprimante en convertissant instantanément les documents PDF couleur en noir et blanc ou en niveaux de gris directement dans votre navigateur.",
+  "buttonText": "Sélectionnez PDF",
+  "badges": [
+    "Économiseur d'encre",
+    "Conversion instantanée",
+    "Sécurisé"
+  ],
+  "stats": [
+    "100%",
+    "Gratuite",
+    "0",
+    "Annonces"
+  ],
+  "sections": [
+    {
+      "type": "grayscale_print_hero_features",
+      "title": "Économisez de l'encre d'imprimante coûteuse",
+      "content": "L'encre colorée coûte cher. Convertissez vos PDF en niveaux de gris avant de les imprimer pour économiser de l'argent et des ressources."
+    },
+    {
+      "type": "grayscale_print_how_to_steps",
+      "title": "Comment créer un PDF en noir et blanc",
+      "content": "Déposez simplement votre fichier dans la boîte. Notre outil local supprimera instantanément toutes les couleurs et vous donnera un PDF en niveaux de gris parfaitement imprimable."
+    },
+    {
+      "type": "grayscale_print_geo_targeting",
+      "title": "Meilleur convertisseur PDF N&B",
+      "content": "Convertissez le texte, les images et les arrière-plans colorés en nuances de gris sans perdre en lisibilité."
+    },
+    {
+      "type": "grayscale_print_privacy_security",
+      "title": "Conversion privée en niveaux de gris",
+      "content": "Vos documents sont convertis dans la mémoire de votre propre appareil. Nous ne voyons jamais vos fichiers."
+    },
+    {
+      "type": "grayscale_print_performance",
+      "title": "Traitement ultra-rapide",
+      "content": "Comme nous ne téléchargeons pas votre fichier sur un serveur cloud, la conversion des niveaux de gris se produit presque instantanément."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Les images seront-elles également en niveaux de gris ?",
+      "a": "Oui, toutes les images, textes et graphiques vectoriels seront convertis en niveaux de gris."
+    },
+    {
+      "q": "La taille du fichier est-elle réduite ?",
+      "a": "Parfois, en fonction des images colorées à l'intérieur du PDF."
+    },
+    {
+      "q": "Est-ce sûr pour les fichiers privés ?",
+      "a": "Absolument. Aucune donnée n'est envoyée sur Internet."
+    }
+  ]
+}

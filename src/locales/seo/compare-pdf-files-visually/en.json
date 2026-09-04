@@ -1,0 +1,58 @@
+{
+  "title": "Compare PDF Files Visually — Find Pixel Differences",
+  "h1": "Visually Compare Two PDF Files",
+  "description": "Upload two PDF documents and instantly highlight the exact pixel differences between them locally in your browser.",
+  "buttonText": "Select PDFs",
+  "badges": [
+    "Pixel Perfect Diff",
+    "Side-by-Side",
+    "Local Diffing"
+  ],
+  "stats": [
+    "100%",
+    "Accurate",
+    "0",
+    "Cloud Usage"
+  ],
+  "sections": [
+    {
+      "type": "compare_visual_hero_features",
+      "title": "Spot Tiny Changes Automatically",
+      "content": "Don't rely on your eyes to find differences in revised contracts or designs. Our tool highlights exact pixel changes in red."
+    },
+    {
+      "type": "compare_visual_how_to_steps",
+      "title": "How to Compare PDFs",
+      "content": "Upload the original PDF and the revised PDF. We'll render both and overlap them to expose any additions or deletions."
+    },
+    {
+      "type": "compare_visual_geo_targeting",
+      "title": "Perfect for Contracts & Proofs",
+      "content": "Lawyers and designers use our visual diff tool to ensure no unauthorized changes were snuck into a document."
+    },
+    {
+      "type": "compare_visual_privacy_security",
+      "title": "Confidential Document Comparison",
+      "content": "Comparing sensitive NDA contracts? Our tool is 100% local. The documents never touch our servers."
+    },
+    {
+      "type": "compare_visual_performance",
+      "title": "Real-Time Diff Rendering",
+      "content": "Generate visual diffs instantly in your browser thanks to hardware-accelerated canvas rendering."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does it find text or pixel differences?",
+      "a": "It renders the PDF and finds visual pixel differences, which includes text, fonts, and images."
+    },
+    {
+      "q": "What do the red marks mean?",
+      "a": "Red highlights indicate areas where the two PDFs differ visually."
+    },
+    {
+      "q": "Is it safe for legal documents?",
+      "a": "Yes, all processing is strictly local and private."
+    }
+  ]
+}

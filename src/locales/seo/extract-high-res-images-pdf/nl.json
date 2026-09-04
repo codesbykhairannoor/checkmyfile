@@ -1,0 +1,58 @@
+{
+  "title": "Extraheer afbeeldingen met hoge resolutie uit PDF: ontvang originele foto's",
+  "h1": "Extraheer afbeeldingen met hoge resolutie uit PDF",
+  "description": "Download ingesloten foto's en afbeeldingen uit uw PDF in hun originele, ongecomprimeerde hoge resolutie. Geen serveruploads.",
+  "buttonText": "Selecteer PDF",
+  "badges": [
+    "Verliesloze extractie",
+    "Batch-export",
+    "ZIP-archief"
+  ],
+  "stats": [
+    "100%",
+    "Originele kwaliteit",
+    "0",
+    "Uploads"
+  ],
+  "sections": [
+    {
+      "type": "extract_highres_hero_features",
+      "title": "Krijg originele beeldkwaliteit",
+      "content": "Gebruik geen screenshot-tools die de resolutie verpesten. Onze tool graaft in het binaire PDF-bestand en extraheert de onbewerkte, originele afbeeldingsbestanden."
+    },
+    {
+      "type": "extract_highres_how_to_steps",
+      "title": "Hoe u afbeeldingen kunt extraheren",
+      "content": "Selecteer een PDF. We scannen het op ingesloten JPEG's en PNG's en verpakken ze allemaal in een netjes ZIP-bestand voor u."
+    },
+    {
+      "type": "extract_highres_geo_targeting",
+      "title": "Beste hulpmiddel voor het extraheren van afbeeldingen",
+      "content": "Ideaal voor ontwerpers, uitgevers en studenten die hoogwaardige materialen die in een PDF zijn opgeslagen, moeten hergebruiken."
+    },
+    {
+      "type": "extract_highres_privacy_security",
+      "title": "Extractie van particuliere activa",
+      "content": "Wij stelen uw afbeeldingen niet. Het uitpakken gebeurt volledig op uw eigen computer."
+    },
+    {
+      "type": "extract_highres_performance",
+      "title": "Razendsnelle export",
+      "content": "Extraheer binnen enkele seconden honderden afbeeldingen met hoge resolutie zonder te wachten op een enorme bestandsupload."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Welke formaten worden geëxtraheerd?",
+      "a": "Meestal JPG en PNG, afhankelijk van hoe ze zijn ingesloten."
+    },
+    {
+      "q": "Zijn ze gecomprimeerd?",
+      "a": "Nee, we extraheren de exacte onbewerkte binaire gegevens die in de PDF zijn opgeslagen."
+    },
+    {
+      "q": "Kan ik ze allemaal tegelijk downloaden?",
+      "a": "Ja, wij bundelen alle afbeeldingen in één ZIP-bestand."
+    }
+  ]
+}

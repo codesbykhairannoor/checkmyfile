@@ -1,0 +1,58 @@
+{
+  "title": "Odstrániť metadáta autora PDF — Vyčistite vlastnosti PDF",
+  "h1": "Vyčistite metadáta autora PDF",
+  "description": "Chráňte svoje súkromie bezpečným odstránením mien autorov, dátumov vytvorenia, softvérových odtlačkov a skrytých metadát zo súborov PDF.",
+  "buttonText": "Vyberte PDF",
+  "badges": [
+    "Čistič metadát",
+    "Súkromie na prvom mieste",
+    "Nástroj offline"
+  ],
+  "stats": [
+    "100%",
+    "Zabezpečte",
+    "0",
+    "Stopy"
+  ],
+  "sections": [
+    {
+      "type": "remove_author_hero_features",
+      "title": "Prečo čistiť metadáta PDF?",
+      "content": "Súbory PDF často tajne ukladajú vaše meno, názov spoločnosti, verziu operačného systému a dátumy vytvorenia. Pred zdieľaním online ich vyčistite."
+    },
+    {
+      "type": "remove_author_how_to_steps",
+      "title": "Ako dezinfikovať vlastnosti",
+      "content": "Nahrajte svoj dokument. Náš nástroj analyzuje štruktúru PDF a bezpečne vymaže všetky polia metadát slovníka."
+    },
+    {
+      "type": "remove_author_geo_targeting",
+      "title": "Chráňte svoju anonymitu",
+      "content": "Zabezpečte, aby informátori, novinári a každodenní používatelia mohli zdieľať dokumenty bez úniku svojej digitálnej identity."
+    },
+    {
+      "type": "remove_author_privacy_security",
+      "title": "Sanitácia na vojenskej úrovni",
+      "content": "Binárnu štruktúru PDF prepisujeme lokálne vo vašom prehliadači, aby sme zaistili trvalé zničenie metadát."
+    },
+    {
+      "type": "remove_author_performance",
+      "title": "Okamžitá guma metadát",
+      "content": "Vyčistite tisíce stránok za menej ako sekundu pomocou nášho vysoko optimalizovaného jadra WebAssembly."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Aké metadáta sa odstránia?",
+      "a": "Autor, Názov, Predmet, Kľúčové slová, Tvorca, Výrobca, Dátum vytvorenia a Dátum úpravy."
+    },
+    {
+      "q": "Mení to vizuálne rozloženie?",
+      "a": "Nie, upravia sa iba skryté vlastnosti metadát."
+    },
+    {
+      "q": "Je proces bezpečný?",
+      "a": "Áno, deje sa to 100% lokálne na vašom počítači."
+    }
+  ]
+}

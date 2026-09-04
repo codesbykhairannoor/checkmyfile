@@ -1,0 +1,58 @@
+{
+  "title": "Oříznout okraje PDF — oříznout bílá místa online",
+  "h1": "Oříznout bílé okraje ze stránek PDF",
+  "description": "Odstraňte nepříjemné bílé okraje z dokumentů PDF, abyste si mohli lépe číst na mobilních zařízeních a elektronických čtečkách. 100% zdarma a místní.",
+  "buttonText": "Vyberte PDF",
+  "badges": [
+    "Přesné oříznutí",
+    "Žádné nahrávání na server",
+    "Rychle"
+  ],
+  "stats": [
+    "100 %",
+    "Místní",
+    "0",
+    "Latence"
+  ],
+  "sections": [
+    {
+      "type": "crop_margins_hero_features",
+      "title": "Proč oříznout okraje PDF?",
+      "content": "Mnoho akademických prací a elektronických knih má obrovské bílé okraje. Jejich oříznutím se text zvětší a bude snáze čitelný na menších obrazovkách."
+    },
+    {
+      "type": "crop_margins_how_to_steps",
+      "title": "Jak oříznout okraje",
+      "content": "Nahrajte soubor, definujte ohraničovací rámeček přetažením úchytů a stiskněte oříznout. Proces je zcela soukromý."
+    },
+    {
+      "type": "crop_margins_geo_targeting",
+      "title": "Bezpečné odstranění okrajů",
+      "content": "Není třeba nahrávat citlivé soubory PDF, abyste odstranili některé mezery. Náš modul WebAssembly to dělá ve vašem prohlížeči."
+    },
+    {
+      "type": "crop_margins_privacy_security",
+      "title": "100% offline oříznutí",
+      "content": "Vaše soubory nikdy neopustí váš počítač. Ideální pro důvěrné právní nebo lékařské dokumenty."
+    },
+    {
+      "type": "crop_margins_performance",
+      "title": "Okamžité oříznutí PDF",
+      "content": "Ořízněte 500stránkovou knihu během milisekund, aniž byste museli čekat na nahrání nebo stahování ze serveru."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Je to zdarma?",
+      "a": "Ano, 100% zdarma bez omezení."
+    },
+    {
+      "q": "Nahraje můj soubor?",
+      "a": "Ne, vše se zpracovává lokálně."
+    },
+    {
+      "q": "Mohu oříznout nerovnoměrné okraje?",
+      "a": "Ano, můžete zadat různé hodnoty pro horní, dolní, levou a pravou stranu."
+    }
+  ]
+}

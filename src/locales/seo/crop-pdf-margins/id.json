@@ -1,0 +1,58 @@
+{
+  "title": "Pangkas Margin PDF — Pangkas Spasi Putih Secara Online",
+  "h1": "Pangkas Margin Putih dari Halaman PDF",
+  "description": "Hapus margin putih yang mengganggu dari dokumen PDF Anda untuk pengalaman membaca yang lebih baik di perangkat seluler dan e-reader. 100% gratis dan lokal.",
+  "buttonText": "Pilih PDF",
+  "badges": [
+    "Pemangkasan Presisi",
+    "Tidak Ada Pengunggahan Server",
+    "Cepat"
+  ],
+  "stats": [
+    "100%",
+    "Lokal",
+    "0",
+    "Latensi"
+  ],
+  "sections": [
+    {
+      "type": "crop_margins_hero_features",
+      "title": "Mengapa Memotong Margin PDF?",
+      "content": "Banyak makalah akademis dan eBook memiliki margin putih yang besar. Memotongnya akan membuat teks lebih besar dan lebih mudah dibaca di layar yang lebih kecil."
+    },
+    {
+      "type": "crop_margins_how_to_steps",
+      "title": "Cara Memangkas Margin",
+      "content": "Unggah file Anda, tentukan kotak pembatas dengan menyeret pegangannya, dan tekan potong. Prosesnya sepenuhnya bersifat pribadi."
+    },
+    {
+      "type": "crop_margins_geo_targeting",
+      "title": "Penghapusan Margin Aman",
+      "content": "Tidak perlu mengunggah PDF sensitif Anda hanya untuk menghapus beberapa spasi. Mesin WebAssembly kami melakukannya di browser Anda."
+    },
+    {
+      "type": "crop_margins_privacy_security",
+      "title": "100% Pemangkasan Offline",
+      "content": "File Anda tidak pernah meninggalkan komputer Anda. Sempurna untuk dokumen hukum atau medis rahasia."
+    },
+    {
+      "type": "crop_margins_kinerja",
+      "title": "Pemangkasan PDF Instan",
+      "content": "Pangkas buku setebal 500 halaman dalam milidetik tanpa menunggu unggahan atau unduhan server."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Apakah ini gratis?",
+      "a": "Ya, 100% gratis tanpa batas."
+    },
+    {
+      "q": "Apakah itu mengunggah file saya?",
+      "a": "Tidak, semuanya diproses secara lokal."
+    },
+    {
+      "q": "Bisakah saya memangkas margin yang tidak rata?",
+      "a": "Ya, Anda dapat menentukan nilai berbeda untuk atas, bawah, kiri, dan kanan."
+    }
+  ]
+}

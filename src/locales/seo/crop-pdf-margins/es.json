@@ -1,0 +1,58 @@
+{
+  "title": "Recortar márgenes de PDF: recortar espacios en blanco en línea",
+  "h1": "Recortar márgenes blancos de páginas PDF",
+  "description": "Elimine los molestos márgenes blancos de sus documentos PDF para disfrutar de una mejor experiencia de lectura en dispositivos móviles y lectores electrónicos. 100% gratis y local.",
+  "buttonText": "Seleccione PDF",
+  "badges": [
+    "Recorte de precisión",
+    "Sin carga del servidor",
+    "Rápida"
+  ],
+  "stats": [
+    "100%",
+    "Local",
+    "0",
+    "Estado latente"
+  ],
+  "sections": [
+    {
+      "type": "crop_margins_hero_features",
+      "title": "¿Por qué recortar los márgenes del PDF?",
+      "content": "Muchos artículos académicos y libros electrónicos tienen enormes márgenes blancos. Recortarlos hace que el texto sea más grande y más fácil de leer en pantallas más pequeñas."
+    },
+    {
+      "type": "crop_margins_how_to_steps",
+      "title": "Cómo recortar márgenes",
+      "content": "Cargue su archivo, defina el cuadro delimitador arrastrando los controladores y presione recortar. El proceso es completamente privado."
+    },
+    {
+      "type": "crop_margins_geo_targeting",
+      "title": "Eliminación segura de márgenes",
+      "content": "No es necesario cargar sus archivos PDF confidenciales solo para eliminar algunos espacios en blanco. Nuestro motor WebAssembly lo hace en su navegador."
+    },
+    {
+      "type": "crop_margins_privacy_security",
+      "title": "Recorte 100% sin conexión",
+      "content": "Tus archivos nunca salen de tu computadora. Perfecto para documentos legales o médicos confidenciales."
+    },
+    {
+      "type": "crop_margins_rendimiento",
+      "title": "Recorte instantáneo de PDF",
+      "content": "Recorte un libro de 500 páginas en milisegundos sin esperar cargas o descargas del servidor."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "¿Es esto gratis?",
+      "a": "Sí, 100% gratis y sin límites."
+    },
+    {
+      "q": "¿Sube mi archivo?",
+      "a": "No, todo se procesa localmente."
+    },
+    {
+      "q": "¿Puedo recortar márgenes desiguales?",
+      "a": "Sí, puede especificar diferentes valores para arriba, abajo, izquierda y derecha."
+    }
+  ]
+}

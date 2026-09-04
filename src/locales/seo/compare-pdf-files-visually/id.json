@@ -1,0 +1,58 @@
+{
+  "title": "Bandingkan File PDF Secara Visual — Temukan Perbedaan Piksel",
+  "h1": "Bandingkan Dua File PDF secara Visual",
+  "description": "Unggah dua dokumen PDF dan langsung sorot perbedaan piksel yang tepat di antara keduanya secara lokal di browser Anda.",
+  "buttonText": "Pilih PDF",
+  "badges": [
+    "Perbedaan Piksel Sempurna",
+    "Berdampingan",
+    "Perbedaan Lokal"
+  ],
+  "stats": [
+    "100%",
+    "Tepat",
+    "0",
+    "Penggunaan Awan"
+  ],
+  "sections": [
+    {
+      "type": "compare_visual_hero_features",
+      "title": "Temukan Perubahan Kecil Secara Otomatis",
+      "content": "Jangan mengandalkan mata Anda untuk menemukan perbedaan dalam kontrak atau desain yang direvisi. Alat kami menyoroti perubahan piksel yang tepat dengan warna merah."
+    },
+    {
+      "type": "compare_visual_how_to_steps",
+      "title": "Bagaimana Membandingkan PDF",
+      "content": "Unggah PDF asli dan PDF revisi. Kami akan merender keduanya dan menimpanya untuk menampilkan penambahan atau penghapusan apa pun."
+    },
+    {
+      "type": "compare_visual_geo_targeting",
+      "title": "Sempurna untuk Kontrak & Bukti",
+      "content": "Pengacara dan desainer menggunakan alat pembeda visual kami untuk memastikan tidak ada perubahan tidak sah yang dimasukkan ke dalam dokumen."
+    },
+    {
+      "type": "compare_visual_privacy_security",
+      "title": "Perbandingan Dokumen Rahasia",
+      "content": "Membandingkan kontrak NDA yang sensitif? Alat kami 100% lokal. Dokumen tersebut tidak pernah menyentuh server kami."
+    },
+    {
+      "type": "compare_visual_performance",
+      "title": "Rendering Perbedaan Waktu Nyata",
+      "content": "Hasilkan perbedaan visual secara instan di browser Anda berkat rendering kanvas yang dipercepat perangkat keras."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Apakah ia menemukan perbedaan teks atau piksel?",
+      "a": "Ini merender PDF dan menemukan perbedaan piksel visual, yang mencakup teks, font, dan gambar."
+    },
+    {
+      "q": "Apa maksudnya tanda merah itu?",
+      "a": "Sorotan merah menunjukkan area di mana kedua PDF berbeda secara visual."
+    },
+    {
+      "q": "Apakah aman untuk dokumen legal?",
+      "a": "Ya, semua pemrosesan dilakukan secara lokal dan pribadi."
+    }
+  ]
+}

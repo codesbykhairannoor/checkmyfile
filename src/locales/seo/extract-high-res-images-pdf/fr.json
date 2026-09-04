@@ -1,0 +1,58 @@
+{
+  "title": "Extrayez des images haute résolution à partir d'un PDF - Obtenez des photos originales",
+  "h1": "Extraire des images haute résolution à partir d'un PDF",
+  "description": "Téléchargez des photos et des graphiques intégrés à partir de votre PDF dans leur haute résolution originale non compressée. Aucun téléchargement sur le serveur.",
+  "buttonText": "Sélectionnez PDF",
+  "badges": [
+    "Extraction sans perte",
+    "Exportation par lots",
+    "Archives ZIP"
+  ],
+  "stats": [
+    "100%",
+    "Qualité originale",
+    "0",
+    "Téléchargements"
+  ],
+  "sections": [
+    {
+      "type": "extract_highres_hero_features",
+      "title": "Obtenez une qualité d'image originale",
+      "content": "N'utilisez pas d'outils de capture d'écran qui ruinent la résolution. Notre outil fouille dans le binaire PDF et extrait les fichiers image bruts et originaux."
+    },
+    {
+      "type": "extract_highres_how_to_steps",
+      "title": "Comment extraire des images",
+      "content": "Sélectionnez un PDF. Nous le numérisons à la recherche de fichiers JPEG et PNG intégrés, et les regroupons tous dans un fichier ZIP soigné pour vous."
+    },
+    {
+      "type": "extract_highres_geo_targeting",
+      "title": "Meilleur outil d'extraction d'images",
+      "content": "Idéal pour les concepteurs, les éditeurs et les étudiants qui ont besoin de réutiliser des ressources de haute qualité enfermées dans un PDF."
+    },
+    {
+      "type": "extract_highres_privacy_security",
+      "title": "Extraction d'actifs privés",
+      "content": "Nous ne volons pas vos images. L'extraction s'effectue entièrement sur votre propre ordinateur."
+    },
+    {
+      "type": "extract_highres_performance",
+      "title": "Exportation ultra-rapide",
+      "content": "Extrayez des centaines d'images haute résolution en quelques secondes sans attendre un téléchargement massif de fichiers."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Quels formats sont extraits ?",
+      "a": "Principalement JPG et PNG, selon la manière dont ils ont été intégrés."
+    },
+    {
+      "q": "Sont-ils compressés ?",
+      "a": "Non, nous extrayons les données binaires brutes exactes stockées dans le PDF."
+    },
+    {
+      "q": "Puis-je les télécharger tous en même temps ?",
+      "a": "Oui, nous regroupons toutes les images dans un seul fichier ZIP."
+    }
+  ]
+}

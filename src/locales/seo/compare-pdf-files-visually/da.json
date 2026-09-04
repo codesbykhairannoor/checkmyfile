@@ -1,0 +1,58 @@
+{
+  "title": "Sammenlign PDF-filer visuelt - Find pixelforskelle",
+  "h1": "Sammenlign to PDF-filer visuelt",
+  "description": "Upload to PDF-dokumenter, og fremhæv øjeblikkeligt de nøjagtige pixelforskelle mellem dem lokalt i din browser.",
+  "buttonText": "Vælg PDF'er",
+  "badges": [
+    "Pixel Perfect Diff",
+    "Side-om-Side",
+    "Lokal afvigelse"
+  ],
+  "stats": [
+    "100 %",
+    "Nøjagtig",
+    "0",
+    "Cloud brug"
+  ],
+  "sections": [
+    {
+      "type": "compare_visual_hero_features",
+      "title": "Find små ændringer automatisk",
+      "content": "Stol ikke på dine øjne for at finde forskelle i reviderede kontrakter eller design. Vores værktøj fremhæver nøjagtige pixelændringer med rødt."
+    },
+    {
+      "type": "compare_visual_how_to_steps",
+      "title": "Sådan sammenlignes PDF-filer",
+      "content": "Upload den originale PDF og den reviderede PDF. Vi gengiver begge og overlapper dem for at afsløre eventuelle tilføjelser eller sletninger."
+    },
+    {
+      "type": "compare_visual_geo_targeting",
+      "title": "Perfekt til kontrakter og beviser",
+      "content": "Advokater og designere bruger vores visuelle diff-værktøj til at sikre, at der ikke er sneget uautoriserede ændringer ind i et dokument."
+    },
+    {
+      "type": "compare_visual_privacy_security",
+      "title": "Sammenligning af fortrolige dokumenter",
+      "content": "Sammenligner du følsomme NDA-kontrakter? Vores værktøj er 100 % lokalt. Dokumenterne rører aldrig vores servere."
+    },
+    {
+      "type": "compare_visual_performance",
+      "title": "Real-Time Diff Rendering",
+      "content": "Generer visuelle forskelle øjeblikkeligt i din browser takket være hardware-accelereret lærredsgengivelse."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Finder den tekst- eller pixelforskelle?",
+      "a": "Den gengiver PDF'en og finder visuelle pixelforskelle, som inkluderer tekst, skrifttyper og billeder."
+    },
+    {
+      "q": "Hvad betyder de røde mærker?",
+      "a": "Røde fremhæver angiver områder, hvor de to PDF-filer adskiller sig visuelt."
+    },
+    {
+      "q": "Er det sikkert for juridiske dokumenter?",
+      "a": "Ja, al behandling er udelukkende lokal og privat."
+    }
+  ]
+}

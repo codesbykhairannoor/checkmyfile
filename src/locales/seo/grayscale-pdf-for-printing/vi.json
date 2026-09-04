@@ -1,0 +1,58 @@
+{
+  "title": "PDF thang độ xám để in - Chuyển đổi màu sang đen trắng",
+  "h1": "Chuyển đổi PDF màu sang thang độ xám",
+  "description": "Tiết kiệm mực máy in bằng cách chuyển đổi ngay các tài liệu PDF màu sang đen trắng hoặc thang độ xám trực tiếp trong trình duyệt của bạn.",
+  "buttonText": "Chọn PDF",
+  "badges": [
+    "Tiết kiệm mực",
+    "Chuyển đổi tức thì",
+    "Chắc chắn"
+  ],
+  "stats": [
+    "100%",
+    "Miễn phí",
+    "0",
+    "Quảng cáo"
+  ],
+  "sections": [
+    {
+      "type": "grayscale_print_hero_features",
+      "title": "Tiết kiệm mực máy in đắt tiền",
+      "content": "Mực màu đắt tiền. Chuyển đổi tệp PDF của bạn sang thang độ xám trước khi in để tiết kiệm tiền và tài nguyên."
+    },
+    {
+      "type": "grayscale_print_how_to_steps",
+      "title": "Cách tạo PDF đen trắng",
+      "content": "Chỉ cần thả tập tin của bạn vào hộp. Công cụ cục bộ của chúng tôi sẽ ngay lập tức loại bỏ tất cả các màu và cung cấp cho bạn bản PDF thang độ xám có thể in hoàn hảo."
+    },
+    {
+      "type": "grayscale_print_geo_targeting",
+      "title": "Trình chuyển đổi PDF đen trắng tốt nhất",
+      "content": "Chuyển đổi văn bản, hình ảnh và hình nền có màu thành màu xám mà không làm mất khả năng đọc."
+    },
+    {
+      "type": "grayscale_print_privacy_security",
+      "title": "Chuyển đổi thang độ xám riêng tư",
+      "content": "Tài liệu của bạn được chuyển đổi trong bộ nhớ của thiết bị của bạn. Chúng tôi không bao giờ nhìn thấy các tập tin của bạn."
+    },
+    {
+      "type": "grayscale_print_performance",
+      "title": "Xử lý nhanh như chớp",
+      "content": "Vì chúng tôi không tải tệp của bạn lên máy chủ đám mây nên quá trình chuyển đổi thang độ xám diễn ra gần như ngay lập tức."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Hình ảnh cũng sẽ được chuyển sang màu xám phải không?",
+      "a": "Có, tất cả hình ảnh, văn bản và đồ họa vector sẽ được chuyển đổi sang thang độ xám."
+    },
+    {
+      "q": "Kích thước tập tin có bị giảm không?",
+      "a": "Đôi khi, tùy thuộc vào màu sắc của hình ảnh bên trong PDF."
+    },
+    {
+      "q": "Có an toàn cho các tập tin riêng tư?",
+      "a": "Tuyệt đối. Không có dữ liệu được gửi qua internet."
+    }
+  ]
+}

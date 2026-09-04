@@ -1,0 +1,58 @@
+{
+  "title": "Beskjær PDF-marginer — Trim hvite mellomrom online",
+  "h1": "Beskjær hvite marger fra PDF-sider",
+  "description": "Fjern irriterende hvite marger fra PDF-dokumentene dine for en bedre leseopplevelse på mobile enheter og e-lesere. 100 % gratis og lokalt.",
+  "buttonText": "Velg PDF",
+  "badges": [
+    "Presisjonsbeskjæring",
+    "Ingen serveropplasting",
+    "Rask"
+  ],
+  "stats": [
+    "100 %",
+    "Lokalt",
+    "0",
+    "Latens"
+  ],
+  "sections": [
+    {
+      "type": "crop_margins_hero_features",
+      "title": "Hvorfor beskjære PDF-marginer?",
+      "content": "Mange akademiske artikler og e-bøker har store hvite marger. Ved å beskjære dem blir teksten større og lettere å lese på mindre skjermer."
+    },
+    {
+      "type": "crop_margins_how_to_steps",
+      "title": "Hvordan beskjære marginer",
+      "content": "Last opp filen din, definer avgrensningsboksen ved å dra i håndtakene, og trykk beskjær. Prosessen er helt privat."
+    },
+    {
+      "type": "crop_margins_geo_targeting",
+      "title": "Sikker fjerning av marger",
+      "content": "Du trenger ikke å laste opp sensitive PDF-er bare for å fjerne mellomrom. Vår WebAssembly-motor gjør det i nettleseren din."
+    },
+    {
+      "type": "crop_margins_privacy_security",
+      "title": "100 % frakoblet beskjæring",
+      "content": "Filene dine forlater aldri datamaskinen. Perfekt for konfidensielle juridiske eller medisinske dokumenter."
+    },
+    {
+      "type": "crop_margins_performance",
+      "title": "Øyeblikkelig PDF-trimming",
+      "content": "Trim en 500-siders bok på millisekunder uten å vente på serveropplastinger eller nedlastinger."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Er dette gratis?",
+      "a": "Ja, 100 % gratis uten grenser."
+    },
+    {
+      "q": "Laster den opp filen min?",
+      "a": "Nei, alt behandles lokalt."
+    },
+    {
+      "q": "Kan jeg beskjære ujevne marger?",
+      "a": "Ja, du kan angi forskjellige verdier for topp, bunn, venstre og høyre."
+    }
+  ]
+}

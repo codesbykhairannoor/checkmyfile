@@ -1,0 +1,58 @@
+{
+  "title": "PDF i gråtoner til udskrivning — Konverter farve til sort/hvid",
+  "h1": "Konverter farve PDF til gråtoner",
+  "description": "Spar printerblæk ved øjeblikkeligt at konvertere farvede PDF-dokumenter til sort/hvid eller gråtoner direkte i din browser.",
+  "buttonText": "Vælg PDF",
+  "badges": [
+    "Blæksparer",
+    "Øjeblikkelig konvertering",
+    "Sikker"
+  ],
+  "stats": [
+    "100 %",
+    "Gratis",
+    "0",
+    "Annoncer"
+  ],
+  "sections": [
+    {
+      "type": "grayscale_print_hero_features",
+      "title": "Spar dyrt printerblæk",
+      "content": "Farvet blæk er dyrt. Konverter dine PDF'er til gråtoner før udskrivning for at spare penge og ressourcer."
+    },
+    {
+      "type": "grayscale_print_how_to_steps",
+      "title": "Sådan laver du PDF i sort/hvid",
+      "content": "Bare smid din fil i kassen. Vores lokale værktøj vil øjeblikkeligt fjerne alle farver og give dig en perfekt printbar gråtone-PDF."
+    },
+    {
+      "type": "grayscale_print_geo_targeting",
+      "title": "Bedste B&W PDF Converter",
+      "content": "Konverter farvet tekst, billeder og baggrunde til gråtoner uden at miste læsbarheden."
+    },
+    {
+      "type": "grayscale_print_privacy_security",
+      "title": "Privat gråtonekonvertering",
+      "content": "Dine dokumenter konverteres i din egen enheds hukommelse. Vi ser aldrig dine filer."
+    },
+    {
+      "type": "grayscale_print_performance",
+      "title": "Lynhurtig behandling",
+      "content": "Fordi vi ikke uploader din fil til en cloud-server, sker gråtonekonverteringen næsten øjeblikkeligt."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Bliver billeder også gråtonet?",
+      "a": "Ja, alle billeder, tekst og vektorgrafik vil blive konverteret til gråtoner."
+    },
+    {
+      "q": "Er filstørrelsen reduceret?",
+      "a": "Nogle gange, afhængigt af de farvede billeder inde i PDF'en."
+    },
+    {
+      "q": "Er det sikkert for private filer?",
+      "a": "Absolut. Der sendes ingen data over internettet."
+    }
+  ]
+}

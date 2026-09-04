@@ -1,0 +1,58 @@
+{
+  "title": "PDF Kenar Boşluklarını Kırp — Beyaz Boşlukları Çevrimiçi Kırpın",
+  "h1": "PDF Sayfalarından Beyaz Kenar Boşluklarını Kırp",
+  "description": "Mobil cihazlarda ve e-okuyucularda daha iyi bir okuma deneyimi için PDF belgelerinizdeki can sıkıcı beyaz kenar boşluklarını kaldırın. %100 ücretsiz ve yerel.",
+  "buttonText": "PDF'yi seçin",
+  "badges": [
+    "Hassas Kırpma",
+    "Sunucu Yüklemesi Yok",
+    "Hızlı"
+  ],
+  "stats": [
+    "%100",
+    "Yerel",
+    "0",
+    "Gecikme"
+  ],
+  "sections": [
+    {
+      "type": "crop_margins_hero_features",
+      "title": "PDF Kenar Boşluklarını Neden Kırpmalısınız?",
+      "content": "Pek çok akademik makale ve e-kitapta büyük beyaz kenar boşlukları vardır. Bunları kırpmak metni daha büyük hale getirir ve daha küçük ekranlarda okunmasını kolaylaştırır."
+    },
+    {
+      "type": "crop_margins_how_to_steps",
+      "title": "Kenar Boşlukları Nasıl Kırpılır",
+      "content": "Dosyanızı yükleyin, tutamaçları sürükleyerek sınırlayıcı kutuyu tanımlayın ve kırp tuşuna basın. Süreç tamamen özeldir."
+    },
+    {
+      "type": "crop_margins_geo_targeting",
+      "title": "Güvenli Marj Kaldırma",
+      "content": "Sadece bazı boşlukları kaldırmak için hassas PDF'lerinizi yüklemenize gerek yok. WebAssembly motorumuz bunu tarayıcınızda yapar."
+    },
+    {
+      "type": "crop_margins_privacy_security",
+      "title": "%100 Çevrimdışı Kırpma",
+      "content": "Dosyalarınız bilgisayarınızdan asla ayrılmaz. Gizli yasal veya tıbbi belgeler için mükemmeldir."
+    },
+    {
+      "type": "crop_margins_performance",
+      "title": "Anında PDF Kırpma",
+      "content": "Sunucuya yükleme veya indirme yapılmasını beklemeden 500 sayfalık bir kitabı milisaniyeler içinde kırpın."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Bu bedava mı?",
+      "a": "Evet, %100 ücretsiz, sınırsız."
+    },
+    {
+      "q": "Dosyamı yüklüyor mu?",
+      "a": "Hayır, her şey yerel olarak işlenir."
+    },
+    {
+      "q": "Düzensiz kenar boşluklarını kırpabilir miyim?",
+      "a": "Evet, üst, alt, sol ve sağ için farklı değerler belirleyebilirsiniz."
+    }
+  ]
+}

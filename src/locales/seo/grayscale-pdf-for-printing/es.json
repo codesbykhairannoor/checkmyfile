@@ -1,0 +1,58 @@
+{
+  "title": "PDF en escala de grises para imprimir: convierta color a blanco y negro",
+  "h1": "Convertir PDF en color a escala de grises",
+  "description": "Ahorre tinta de la impresora al convertir instantáneamente documentos PDF en color a blanco y negro o escala de grises directamente en su navegador.",
+  "buttonText": "Seleccione PDF",
+  "badges": [
+    "Ahorro de tinta",
+    "Conversión instantánea",
+    "Segura"
+  ],
+  "stats": [
+    "100%",
+    "Gratis",
+    "0",
+    "Anuncios"
+  ],
+  "sections": [
+    {
+      "type": "grayscale_print_hero_features",
+      "title": "Ahorre tinta costosa para la impresora",
+      "content": "La tinta de color es cara. Convierta sus archivos PDF a escala de grises antes de imprimirlos para ahorrar dinero y recursos."
+    },
+    {
+      "type": "grayscale_print_how_to_steps",
+      "title": "Cómo hacer PDF en blanco y negro",
+      "content": "Simplemente coloque su archivo en el cuadro. Nuestra herramienta local eliminará instantáneamente todos los colores y le brindará un PDF en escala de grises perfectamente imprimible."
+    },
+    {
+      "type": "grayscale_print_geo_targeting",
+      "title": "El mejor conversor de PDF en blanco y negro",
+      "content": "Convierta texto, imágenes y fondos en color a tonos de gris sin perder legibilidad."
+    },
+    {
+      "type": "grayscale_print_privacy_security",
+      "title": "Conversión privada en escala de grises",
+      "content": "Sus documentos se convierten en la memoria de su propio dispositivo. Nunca vemos sus archivos."
+    },
+    {
+      "type": "grayscale_print_performance",
+      "title": "Procesamiento ultrarrápido",
+      "content": "Debido a que no cargamos su archivo a un servidor en la nube, la conversión a escala de grises ocurre casi instantáneamente."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "¿Las imágenes también estarán en escala de grises?",
+      "a": "Sí, todas las imágenes, texto y gráficos vectoriales se convertirán a escala de grises."
+    },
+    {
+      "q": "¿Se reduce el tamaño del archivo?",
+      "a": "A veces, dependiendo de las imágenes en color dentro del PDF."
+    },
+    {
+      "q": "¿Es seguro para archivos privados?",
+      "a": "Absolutamente. No se envían datos a través de Internet."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "title": "Comparez visuellement les fichiers PDF – Trouvez les différences de pixels",
+  "h1": "Comparez visuellement deux fichiers PDF",
+  "description": "Téléchargez deux documents PDF et mettez instantanément en évidence les différences exactes en pixels entre eux localement dans votre navigateur.",
+  "buttonText": "Sélectionnez des PDF",
+  "badges": [
+    "Différence parfaite au pixel près",
+    "Côte à côte",
+    "Différence locale"
+  ],
+  "stats": [
+    "100%",
+    "Précise",
+    "0",
+    "Utilisation du cloud"
+  ],
+  "sections": [
+    {
+      "type": "compare_visual_hero_features",
+      "title": "Repérez automatiquement les petits changements",
+      "content": "Ne comptez pas sur vos yeux pour trouver des différences dans les contrats ou les conceptions révisés. Notre outil met en évidence les changements exacts de pixels en rouge."
+    },
+    {
+      "type": "compare_visual_how_to_steps",
+      "title": "Comment comparer des PDF",
+      "content": "Téléchargez le PDF original et le PDF révisé. Nous allons rendre les deux et les superposer pour exposer les ajouts ou suppressions."
+    },
+    {
+      "type": "compare_visual_geo_targeting",
+      "title": "Parfait pour les contrats et les preuves",
+      "content": "Les avocats et les concepteurs utilisent notre outil de comparaison visuelle pour garantir qu'aucune modification non autorisée n'a été introduite dans un document."
+    },
+    {
+      "type": "compare_visual_privacy_security",
+      "title": "Comparaison de documents confidentiels",
+      "content": "Vous comparez les contrats NDA sensibles ? Notre outil est 100% local. Les documents ne touchent jamais nos serveurs."
+    },
+    {
+      "type": "compare_visual_performance",
+      "title": "Rendu différentiel en temps réel",
+      "content": "Générez instantanément des différences visuelles dans votre navigateur grâce au rendu de canevas accéléré par le matériel."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Trouve-t-il des différences de texte ou de pixels ?",
+      "a": "Il restitue le PDF et détecte les différences visuelles entre les pixels, notamment le texte, les polices et les images."
+    },
+    {
+      "q": "Que signifient les marques rouges ?",
+      "a": "Les surlignages rouges indiquent les zones dans lesquelles les deux PDF diffèrent visuellement."
+    },
+    {
+      "q": "Est-ce sécuritaire pour les documents juridiques ?",
+      "a": "Oui, tout traitement est strictement local et privé."
+    }
+  ]
+}

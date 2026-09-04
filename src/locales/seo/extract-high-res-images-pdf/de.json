@@ -1,0 +1,58 @@
+{
+  "title": "Extrahieren Sie hochauflösende Bilder aus PDF – erhalten Sie Originalfotos",
+  "h1": "Extrahieren Sie hochauflösende Bilder aus PDF",
+  "description": "Laden Sie eingebettete Fotos und Grafiken aus Ihrem PDF in ihrer ursprünglichen, unkomprimierten hohen Auflösung herunter. Keine Server-Uploads.",
+  "buttonText": "Wählen Sie PDF aus",
+  "badges": [
+    "Verlustfreie Extraktion",
+    "Batch-Export",
+    "ZIP-Archiv"
+  ],
+  "stats": [
+    "100 %",
+    "Originalqualität",
+    "0",
+    "Uploads"
+  ],
+  "sections": [
+    {
+      "type": "extract_highres_hero_features",
+      "title": "Erhalten Sie Originalbildqualität",
+      "content": "Verwenden Sie keine Screenshot-Tools, die die Auflösung beeinträchtigen. Unser Tool greift in die PDF-Binärdatei ein und extrahiert die rohen Originalbilddateien."
+    },
+    {
+      "type": "extract_highres_how_to_steps",
+      "title": "So extrahieren Sie Bilder",
+      "content": "Wählen Sie ein PDF aus. Wir scannen es nach eingebetteten JPEGs und PNGs und packen sie alle für Sie in eine übersichtliche ZIP-Datei."
+    },
+    {
+      "type": "extract_highres_geo_targeting",
+      "title": "Bestes Bildextraktionstool",
+      "content": "Perfekt für Designer, Verleger und Studenten, die hochwertige, in einem PDF eingeschlossene Assets wiederverwenden müssen."
+    },
+    {
+      "type": "extract_highres_privacy_security",
+      "title": "Private Vermögensgewinnung",
+      "content": "Wir stehlen Ihre Bilder nicht. Die Extraktion erfolgt vollständig auf Ihrem eigenen Computer."
+    },
+    {
+      "type": "extract_highres_performance",
+      "title": "Blitzschneller Export",
+      "content": "Extrahieren Sie Hunderte von hochauflösenden Bildern in Sekundenschnelle, ohne auf einen riesigen Datei-Upload warten zu müssen."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Welche Formate werden extrahiert?",
+      "a": "Hauptsächlich JPG und PNG, je nachdem, wie sie eingebettet wurden."
+    },
+    {
+      "q": "Sind sie komprimiert?",
+      "a": "Nein, wir extrahieren die exakten binären Rohdaten, die im PDF gespeichert sind."
+    },
+    {
+      "q": "Kann ich sie alle auf einmal herunterladen?",
+      "a": "Ja, wir bündeln alle Bilder in einer einzigen ZIP-Datei."
+    }
+  ]
+}

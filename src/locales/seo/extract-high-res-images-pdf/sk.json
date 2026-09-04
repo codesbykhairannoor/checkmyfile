@@ -1,0 +1,58 @@
+{
+  "title": "Extrahujte obrázky vo vysokom rozlíšení z PDF — získajte originálne fotografie",
+  "h1": "Extrahujte obrázky vo vysokom rozlíšení z PDF",
+  "description": "Stiahnite si vložené fotografie a grafiku z vášho PDF v ich pôvodnom, nekomprimovanom vysokom rozlíšení. Žiadne nahrávanie na server.",
+  "buttonText": "Vyberte PDF",
+  "badges": [
+    "Bezstratová extrakcia",
+    "Dávkový export",
+    "ZIP archív"
+  ],
+  "stats": [
+    "100%",
+    "Pôvodná kvalita",
+    "0",
+    "Nahrané súbory"
+  ],
+  "sections": [
+    {
+      "type": "extract_highres_hero_features",
+      "title": "Získajte originálnu kvalitu obrazu",
+      "content": "Nepoužívajte nástroje na snímanie obrazovky, ktoré ničia rozlíšenie. Náš nástroj sa prehrabáva v binárnom súbore PDF a extrahuje nespracované, pôvodné obrazové súbory."
+    },
+    {
+      "type": "extract_highres_how_to_steps",
+      "title": "Ako extrahovať obrázky",
+      "content": "Vyberte súbor PDF. Naskenujeme v ňom vložené súbory JPEG a PNG a všetky ich zabalíme do prehľadného súboru ZIP."
+    },
+    {
+      "type": "extract_highres_geo_targeting",
+      "title": "Najlepší nástroj na extrakciu obrázkov",
+      "content": "Ideálne pre dizajnérov, vydavateľov a študentov, ktorí potrebujú opätovne použiť vysokokvalitné prostriedky uzamknuté v PDF."
+    },
+    {
+      "type": "extract_highres_privacy_security",
+      "title": "Extrakcia súkromných aktív",
+      "content": "Vaše obrázky nekradneme. Extrakcia prebieha výlučne na vašom vlastnom počítači."
+    },
+    {
+      "type": "extract_highres_performance",
+      "title": "Bleskovo rýchly export",
+      "content": "Extrahujte stovky obrázkov vo vysokom rozlíšení za pár sekúnd bez čakania na masívne nahranie súboru."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Aké formáty sa extrahujú?",
+      "a": "Väčšinou JPG a PNG, podľa toho, ako boli vložené."
+    },
+    {
+      "q": "Sú stlačené?",
+      "a": "Nie, extrahujeme presné nespracované binárne dáta uložené v PDF."
+    },
+    {
+      "q": "Môžem si ich stiahnuť všetky naraz?",
+      "a": "Áno, všetky obrázky spájame do jedného súboru ZIP."
+    }
+  ]
+}

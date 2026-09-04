@@ -1,0 +1,58 @@
+{
+  "title": "Compare archivos PDF visualmente: encuentre diferencias de píxeles",
+  "h1": "Comparar visualmente dos archivos PDF",
+  "description": "Cargue dos documentos PDF y resalte instantáneamente las diferencias exactas de píxeles entre ellos localmente en su navegador.",
+  "buttonText": "Seleccionar archivos PDF",
+  "badges": [
+    "Diferencia perfecta de píxeles",
+    "Lado a lado",
+    "Diferencias locales"
+  ],
+  "stats": [
+    "100%",
+    "Precisa",
+    "0",
+    "Uso de la nube"
+  ],
+  "sections": [
+    {
+      "type": "compare_visual_hero_features",
+      "title": "Detecta pequeños cambios automáticamente",
+      "content": "No confíe en sus ojos para encontrar diferencias en contratos o diseños revisados. Nuestra herramienta resalta los cambios exactos de píxeles en rojo."
+    },
+    {
+      "type": "compare_visual_how_to_steps",
+      "title": "Cómo comparar archivos PDF",
+      "content": "Cargue el PDF original y el PDF revisado. Representaremos ambos y los superpondremos para exponer cualquier adición o eliminación."
+    },
+    {
+      "type": "compare_visual_geo_targeting",
+      "title": "Perfecto para contratos y pruebas",
+      "content": "Los abogados y diseñadores utilizan nuestra herramienta de diferenciación visual para garantizar que no se introduzcan cambios no autorizados en un documento."
+    },
+    {
+      "type": "compare_visual_privacy_security",
+      "title": "Comparación de documentos confidenciales",
+      "content": "¿Comparando contratos de NDA sensibles? Nuestra herramienta es 100% local. Los documentos nunca tocan nuestros servidores."
+    },
+    {
+      "type": "compare_visual_performance",
+      "title": "Representación diferencial en tiempo real",
+      "content": "Genere diferencias visuales instantáneamente en su navegador gracias a la representación del lienzo acelerada por hardware."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "¿Encuentra diferencias de texto o píxeles?",
+      "a": "Representa el PDF y encuentra diferencias visuales de píxeles, que incluyen texto, fuentes e imágenes."
+    },
+    {
+      "q": "¿Qué significan las marcas rojas?",
+      "a": "Las luces rojas indican áreas donde los dos archivos PDF difieren visualmente."
+    },
+    {
+      "q": "¿Es seguro para documentos legales?",
+      "a": "Sí, todo el procesamiento es estrictamente local y privado."
+    }
+  ]
+}

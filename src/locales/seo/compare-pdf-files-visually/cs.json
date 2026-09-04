@@ -1,0 +1,58 @@
+{
+  "title": "Vizuálně porovnejte soubory PDF — Najděte rozdíly v pixelech",
+  "h1": "Vizuálně porovnejte dva soubory PDF",
+  "description": "Nahrajte dva dokumenty PDF a okamžitě zvýrazněte přesné rozdíly v pixelech mezi nimi lokálně ve vašem prohlížeči.",
+  "buttonText": "Vyberte soubory PDF",
+  "badges": [
+    "Pixel Perfect Diff",
+    "Side-by-Side",
+    "Místní rozdíl"
+  ],
+  "stats": [
+    "100 %",
+    "Přesný",
+    "0",
+    "Využití cloudu"
+  ],
+  "sections": [
+    {
+      "type": "compare_visual_hero_features",
+      "title": "Automaticky rozpoznávejte drobné změny",
+      "content": "Nespoléhejte na své oči, že najdete rozdíly v revidovaných smlouvách nebo návrzích. Náš nástroj zvýrazní přesné změny pixelů červeně."
+    },
+    {
+      "type": "compare_visual_how_to_steps",
+      "title": "Jak porovnávat soubory PDF",
+      "content": "Nahrajte původní PDF a revidované PDF. Obě vykreslíme a překryjeme, abychom odhalili případné přidání nebo odstranění."
+    },
+    {
+      "type": "compare_visual_geo_targeting",
+      "title": "Ideální pro smlouvy a důkazy",
+      "content": "Právníci a designéři používají náš nástroj pro vizuální diff, aby zajistili, že do dokumentu nebudou vkradeny žádné neoprávněné změny."
+    },
+    {
+      "type": "compare_visual_privacy_security",
+      "title": "Porovnání důvěrných dokumentů",
+      "content": "Porovnání citlivých smluv NDA? Náš nástroj je 100% lokální. Dokumenty se nikdy nedotknou našich serverů."
+    },
+    {
+      "type": "compare_visual_performance",
+      "title": "Vykreslování rozdílů v reálném čase",
+      "content": "Okamžitě generujte vizuální rozdíly ve svém prohlížeči díky hardwarově akcelerovanému vykreslování plátna."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Najde rozdíly v textu nebo pixelech?",
+      "a": "Vykreslí PDF a najde rozdíly ve vizuálních pixelech, které zahrnují text, písma a obrázky."
+    },
+    {
+      "q": "Co znamenají červené značky?",
+      "a": "Červené zvýraznění označuje oblasti, kde se tyto dva soubory PDF vizuálně liší."
+    },
+    {
+      "q": "Je to bezpečné pro právní dokumenty?",
+      "a": "Ano, veškeré zpracování je výhradně místní a soukromé."
+    }
+  ]
+}

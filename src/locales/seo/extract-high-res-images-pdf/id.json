@@ -1,0 +1,58 @@
+{
+  "title": "Ekstrak Gambar Resolusi Tinggi dari PDF — Dapatkan Foto Asli",
+  "h1": "Ekstrak Gambar Resolusi Tinggi dari PDF",
+  "description": "Unduh foto dan grafik yang disematkan dari PDF Anda dalam resolusi tinggi aslinya yang tidak terkompresi. Tidak ada unggahan server.",
+  "buttonText": "Pilih PDF",
+  "badges": [
+    "Ekstraksi Tanpa Rugi",
+    "Ekspor Batch",
+    "Arsip ZIP"
+  ],
+  "stats": [
+    "100%",
+    "Kualitas Asli",
+    "0",
+    "Unggahan"
+  ],
+  "sections": [
+    {
+      "type": "extract_highres_hero_features",
+      "title": "Dapatkan Kualitas Gambar Asli",
+      "content": "Jangan gunakan alat tangkapan layar yang merusak resolusi. Alat kami menggali biner PDF dan mengekstrak file gambar asli dan mentah."
+    },
+    {
+      "type": "extract_highres_how_to_steps",
+      "title": "Cara Mengekstrak Gambar",
+      "content": "Pilih PDF. Kami memindainya untuk mencari JPEG dan PNG yang tertanam, dan mengemas semuanya ke dalam file ZIP yang rapi untuk Anda."
+    },
+    {
+      "type": "extract_highres_geo_targeting",
+      "title": "Alat Ekstraksi Gambar Terbaik",
+      "content": "Sempurna untuk desainer, penerbit, dan pelajar yang perlu menggunakan kembali aset berkualitas tinggi yang terkunci di dalam PDF."
+    },
+    {
+      "type": "extract_highres_privacy_security",
+      "title": "Ekstraksi Aset Swasta",
+      "content": "Kami tidak mencuri gambar Anda. Ekstraksi terjadi sepenuhnya di komputer Anda sendiri."
+    },
+    {
+      "type": "extract_highres_performance",
+      "title": "Ekspor Sangat Cepat",
+      "content": "Ekstrak ratusan gambar beresolusi tinggi dalam hitungan detik tanpa menunggu unggahan file besar."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Format apa yang diekstraksi?",
+      "a": "Sebagian besar JPG dan PNG, bergantung pada cara penyematannya."
+    },
+    {
+      "q": "Apakah mereka dikompresi?",
+      "a": "Tidak, kami mengekstrak data biner mentah persis yang disimpan dalam PDF."
+    },
+    {
+      "q": "Bisakah saya mendownload semuanya sekaligus?",
+      "a": "Ya, kami menggabungkan semua gambar ke dalam satu file ZIP."
+    }
+  ]
+}
