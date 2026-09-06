@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && tsx scripts/generate-seo-html.ts && tsx scripts/generate-sitemap.ts",
+    "build": "tsc -b && vite build && tsx scripts/generate-seo-html.ts && tsx scripts/generate-sitemap.ts && node scripts/ping-indexnow.cjs",
     "lint": "oxlint",
     "preview": "vite preview"
   },

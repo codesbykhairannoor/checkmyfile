@@ -40,40 +40,50 @@ const payload = JSON.stringify({
   urlList: urlList
 });
 
-const options = {
-  hostname: 'api.indexnow.org',
-  port: 443,
-  path: '/indexnow',
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-    'Content-Length': Buffer.byteLength(payload)
-  }
-};
+// Helper to ping an IndexNow endpoint
+function pingEndpoint(hostname) {
+  return new Promise((resolve) => {
+    const options = {
+      hostname: hostname,
+      port: 443,
+      path: '/indexnow',
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json; charset=utf-8',
+        'Content-Length': Buffer.byteLength(payload)
+      }
+    };
 
-console.log('Pinging IndexNow API...');
+    console.log(`Pinging ${hostname}...`);
 
-const req = https.request(options, (res) => {
-  let data = '';
+    const req = https.request(options, (res) => {
+      let data = '';
+      res.on('data', (chunk) => { data += chunk; });
+      res.on('end', () => {
+        if (res.statusCode === 200 || res.statusCode === 202) {
+          console.log(`✅ [${hostname}] Success! Status: ${res.statusCode}`);
+          resolve({ success: true, host: hostname, status: res.statusCode });
+        } else {
+          console.warn(`⚠️ [${hostname}] Responded with status ${res.statusCode}: ${data}`);
+          resolve({ success: false, host: hostname, status: res.statusCode });
+        }
+      });
+    });
 
-  res.on('data', (chunk) => {
-    data += chunk;
+    req.on('error', (e) => {
+      console.error(`❌ [${hostname}] Error: ${e.message}`);
+      resolve({ success: false, host: hostname, error: e.message });
+    });
+
+    req.write(payload);
+    req.end();
   });
+}
 
-  res.on('end', () => {
-    if (res.statusCode === 200 || res.statusCode === 202) {
-      console.log(`✅ Success! Pinged IndexNow API. Status: ${res.statusCode}`);
-      console.log(`All ${urlList.length} URLs have been submitted for immediate indexing by Bing/Yandex.`);
-    } else {
-      console.error(`❌ Failed to ping IndexNow API. Status: ${res.statusCode}`);
-      console.error(data);
-    }
-  });
-});
+async function run() {
+  console.log(`Submitting ${urlList.length} URLs to Bing & IndexNow engines...`);
+  await pingEndpoint('www.bing.com');
+  await pingEndpoint('api.indexnow.org');
+}
 
-req.on('error', (e) => {
-  console.error(`❌ Error pinging IndexNow API: ${e.message}`);
-});
-
-req.write(payload);
-req.end();
+run();
