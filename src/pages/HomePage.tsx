@@ -3,6 +3,7 @@ import { getUiTranslations } from '../i18n/translations';
 import { TOOLS_CATALOG, getLocalizedSeo, type ToolDefinition } from '../catalog/toolsCatalog';
 import { SeoHead } from '../components/seo/SeoHead';
 import { smartHighlight } from '../utils/textFormatting';
+import { ResearchGroundingSection } from '../components/seo-sections/ResearchGroundingSection';
 import * as Icons from 'lucide-react';
 
 interface HomePageProps {
@@ -32,24 +33,13 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
     <main style={{ width: '100%', position: 'relative', overflowX: 'hidden' }}>
       <SeoHead lang={currentLang} />
 
-      {/* Hero Section (OneForMind Blueprint via Vanilla Inline Styles) */}
+      {/* Hero Section */}
       <section style={{ 
         position: 'relative',
         paddingTop: 'clamp(56px, 10vw, 96px)', 
         paddingBottom: '40px',
         textAlign: 'center',
       }}>
-        {/* Ambient Glow */}
-        <div style={{
-          position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)',
-          width: '100%', maxWidth: 1200, height: '100%',
-          background: 'rgba(99, 102, 241, 0.05)',
-          borderRadius: '50%',
-          filter: 'blur(100px)',
-          zIndex: -1,
-          pointerEvents: 'none'
-        }} />
-
         <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 10 }}>
           
 
@@ -301,6 +291,9 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
 
         </div>
       </section>
+
+      {/* Research & Scientific Grounding Section */}
+      <ResearchGroundingSection lang={currentLang} />
 
       {/* GEO SECTIONS: Key Takeaways & FAQ */}
       <section style={{ padding: '80px 24px', background: 'rgba(0,0,0,0.02)', borderTop: '1px solid var(--border-color)' }}>

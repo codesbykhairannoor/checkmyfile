@@ -7,6 +7,7 @@ import { FileDropzone } from '../components/common/FileDropzone';
 import { ProgressBar } from '../components/common/ProgressBar';
 import { DocumentLivePreview } from '../components/common/DocumentLivePreview';
 import { SeoRichSections, useSeoData } from '../components/common/SeoRichSections';
+import { ToolResearchSection } from '../components/seo-sections/ToolResearchSection';
 import { Download } from 'lucide-react';
 import { useWorkspaceFiles } from '../hooks/useWorkspaceFiles';
 import { useDocumentProcessor } from '../hooks/useDocumentProcessor';
@@ -386,7 +387,13 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
           {seoData.loading ? (
             <div style={{ minHeight: 400, display: 'flex', justifyContent: 'center', alignItems: 'center' }}><div className="spinner" style={{ width: 40, height: 40, border: '4px solid var(--border-color)', borderTopColor: 'var(--text-accent)', borderRadius: '50%', animation: 'spin 1s linear infinite' }}></div></div>
           ) : (
-            <SeoRichSections data={seoData.data} />
+            <>
+              <SeoRichSections data={seoData.data} />
+              {tool.id.includes('redact') && <ToolResearchSection toolType="redact" lang={currentLang} />}
+              {(tool.id.includes('ocr') || tool.id.includes('scanned')) && <ToolResearchSection toolType="ocr" lang={currentLang} />}
+              {tool.id.includes('compress') && <ToolResearchSection toolType="compress" lang={currentLang} />}
+              {tool.id.includes('sign') && <ToolResearchSection toolType="sign" lang={currentLang} />}
+            </>
           )}
         </>
       )}

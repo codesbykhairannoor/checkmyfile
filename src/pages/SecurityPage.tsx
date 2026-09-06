@@ -1,8 +1,9 @@
 import React from 'react';
 import { getUiTranslations } from '../i18n/translations';
+import { RESEARCH_TRANSLATIONS } from '../i18n/researchTranslations';
 import { SeoHead } from '../components/seo/SeoHead';
 
-import { ShieldCheck, Lock, Cpu, EyeOff, GlobeLock, CheckCircle2 } from 'lucide-react';
+import { ShieldCheck, Lock, Cpu, EyeOff, GlobeLock, CheckCircle2, BookOpen } from 'lucide-react';
 
 interface Props {
   currentLang: string;
@@ -10,6 +11,7 @@ interface Props {
 
 export const SecurityPage: React.FC<Props> = ({ currentLang }) => {
   const t = getUiTranslations(currentLang);
+  const rt = RESEARCH_TRANSLATIONS[currentLang] || RESEARCH_TRANSLATIONS['en'];
 
   return (
     <>
@@ -22,11 +24,10 @@ export const SecurityPage: React.FC<Props> = ({ currentLang }) => {
       
       <main style={{ width: '100%', flex: 1, background: 'var(--bg-app)' }}>
         
-        
         {/* Section 1: Hero */}
         <section style={{ width: '100%', padding: '120px 24px', background: 'var(--bg-card)', borderBottom: '1px solid var(--border-color)', position: 'relative', overflow: 'hidden' }}>
           <div style={{ maxWidth: 800, margin: '0 auto', textAlign: 'center', position: 'relative', zIndex: 10 }}>
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '8px 16px', background: 'var(--brand-glow)', color: 'var(--brand-primary)', borderRadius: 100, fontWeight: 700, fontSize: '0.9rem', marginBottom: 24 }}>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '8px 16px', background: '#eff6ff', color: 'var(--brand-primary)', borderRadius: 100, fontWeight: 700, fontSize: '0.9rem', marginBottom: 24, border: '1px solid #bfdbfe' }}>
               <ShieldCheck size={16} /> {t.pageSecurityBadge || 'Trust Center'}
             </div>
             <h1 style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', fontWeight: 900, fontFamily: 'var(--font-display)', marginBottom: 24, letterSpacing: '-0.03em', color: 'var(--text-main)', lineHeight: 1.1 }}>
@@ -38,15 +39,15 @@ export const SecurityPage: React.FC<Props> = ({ currentLang }) => {
           </div>
         </section>
 
-        {/* Section 2: Architecture Diagram (Visual) */}
+        {/* Section 2: Architecture Diagram */}
         <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-app)' }}>
           <div style={{ maxWidth: 1000, margin: '0 auto' }}>
-            <h2 style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 48, textAlign: 'center' }}>{t.pageSecuritySec2Title || 'The WebAssembly Revolution'}</h2>
+            <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, color: 'var(--text-main)', marginBottom: 48, textAlign: 'center' }}>{t.pageSecuritySec2Title || 'The WebAssembly Revolution'}</h2>
             
             <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap', justifyContent: 'center' }}>
               {/* Step 1 */}
               <div style={{ flex: '1 1 300px', background: 'var(--bg-card)', padding: 32, borderRadius: 24, border: '1px solid var(--border-color)', position: 'relative' }}>
-                <div style={{ width: 48, height: 48, borderRadius: 24, background: 'var(--brand-glow)', color: 'var(--brand-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 24 }}>
+                <div style={{ width: 48, height: 48, borderRadius: 24, background: '#eff6ff', color: 'var(--brand-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 24, border: '1px solid #bfdbfe' }}>
                   <Lock size={24} />
                 </div>
                 <h3 style={{ fontSize: '1.3rem', fontWeight: 800, color: 'var(--text-main)', marginBottom: 12 }}>{t.pageSecStep1Title || '1. Local Selection'}</h3>
@@ -54,7 +55,7 @@ export const SecurityPage: React.FC<Props> = ({ currentLang }) => {
               </div>
               
               {/* Step 2 */}
-              <div style={{ flex: '1 1 300px', background: 'var(--bg-card)', padding: 32, borderRadius: 24, border: '2px solid var(--brand-primary)', position: 'relative', boxShadow: '0 10px 30px var(--brand-glow)' }}>
+              <div style={{ flex: '1 1 300px', background: 'var(--bg-card)', padding: 32, borderRadius: 24, border: '2px solid var(--brand-primary)', position: 'relative' }}>
                 <div style={{ width: 48, height: 48, borderRadius: 24, background: 'var(--brand-gradient)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 24 }}>
                   <Cpu size={24} />
                 </div>
@@ -64,7 +65,7 @@ export const SecurityPage: React.FC<Props> = ({ currentLang }) => {
 
               {/* Step 3 */}
               <div style={{ flex: '1 1 300px', background: 'var(--bg-card)', padding: 32, borderRadius: 24, border: '1px solid var(--border-color)', position: 'relative' }}>
-                <div style={{ width: 48, height: 48, borderRadius: 24, background: 'var(--brand-glow)', color: 'var(--brand-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 24 }}>
+                <div style={{ width: 48, height: 48, borderRadius: 24, background: '#eff6ff', color: 'var(--brand-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 24, border: '1px solid #bfdbfe' }}>
                   <GlobeLock size={24} />
                 </div>
                 <h3 style={{ fontSize: '1.3rem', fontWeight: 800, color: 'var(--text-main)', marginBottom: 12 }}>{t.pageSecStep3Title || '3. Direct Save'}</h3>
@@ -74,22 +75,80 @@ export const SecurityPage: React.FC<Props> = ({ currentLang }) => {
           </div>
         </section>
 
-        {/* Section 3: Safe Analytics */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-card)', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
+        {/* Section 3: Academic Standards & Cryptographic Rigor */}
+        <section style={{ width: '100%', padding: '100px 24px', background: '#f8fafc', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
+          <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+            <div style={{ textAlign: 'center', marginBottom: 48 }}>
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '6px 16px', background: '#eff6ff', color: 'var(--brand-primary)', borderRadius: 100, fontWeight: 700, fontSize: '0.9rem', marginBottom: 16, border: '1px solid #bfdbfe' }}>
+                <BookOpen size={16} /> {rt.researchBadge}
+              </div>
+              <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, color: 'var(--text-main)', margin: '0 0 16px 0', lineHeight: 1.2 }}>
+                {rt.securityResearchTitle}
+              </h2>
+              <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', maxWidth: 800, margin: '0 auto', lineHeight: 1.7 }}>
+                {rt.securityResearchSub}
+              </p>
+            </div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 24 }}>
+              <div style={{ background: '#ffffff', border: '1px solid #e2e8f0', borderRadius: 20, padding: 32, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                <div>
+                  <h3 style={{ fontSize: '1.3rem', fontWeight: 800, color: '#0f172a', marginBottom: 12 }}>{rt.securityCard1Title}</h3>
+                  <p style={{ fontSize: '0.98rem', color: '#334155', lineHeight: 1.65, marginBottom: 20 }}>{rt.securityCard1Desc}</p>
+                </div>
+                <footer style={{ borderTop: '1px solid #f1f5f9', paddingTop: 12 }}>
+                  <p style={{ fontSize: '0.82rem', color: '#64748b', fontStyle: 'italic', margin: 0 }}>
+                    <strong>Research Grounding:</strong><br />
+                    <cite>{rt.securityCard1Cite}</cite>
+                  </p>
+                </footer>
+              </div>
+
+              <div style={{ background: '#ffffff', border: '1px solid #e2e8f0', borderRadius: 20, padding: 32, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                <div>
+                  <h3 style={{ fontSize: '1.3rem', fontWeight: 800, color: '#0f172a', marginBottom: 12 }}>{rt.securityCard2Title}</h3>
+                  <p style={{ fontSize: '0.98rem', color: '#334155', lineHeight: 1.65, marginBottom: 20 }}>{rt.securityCard2Desc}</p>
+                </div>
+                <footer style={{ borderTop: '1px solid #f1f5f9', paddingTop: 12 }}>
+                  <p style={{ fontSize: '0.82rem', color: '#64748b', fontStyle: 'italic', margin: 0 }}>
+                    <strong>Intelligence Standard:</strong><br />
+                    <cite>{rt.securityCard2Cite}</cite>
+                  </p>
+                </footer>
+              </div>
+
+              <div style={{ background: '#ffffff', border: '1px solid #e2e8f0', borderRadius: 20, padding: 32, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                <div>
+                  <h3 style={{ fontSize: '1.3rem', fontWeight: 800, color: '#0f172a', marginBottom: 12 }}>{rt.securityCard3Title}</h3>
+                  <p style={{ fontSize: '0.98rem', color: '#334155', lineHeight: 1.65, marginBottom: 20 }}>{rt.securityCard3Desc}</p>
+                </div>
+                <footer style={{ borderTop: '1px solid #f1f5f9', paddingTop: 12 }}>
+                  <p style={{ fontSize: '0.82rem', color: '#64748b', fontStyle: 'italic', margin: 0 }}>
+                    <strong>W3C / RFC Standard:</strong><br />
+                    <cite>{rt.securityCard3Cite}</cite>
+                  </p>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 4: Safe Analytics */}
+        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-card)', borderBottom: '1px solid var(--border-color)' }}>
           <div style={{ maxWidth: 800, margin: '0 auto', textAlign: 'center' }}>
             <EyeOff size={48} className="text-brand-primary" style={{ margin: '0 auto 24px' }} />
-            <h2 style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 24 }}>{t.pageSecuritySec3Title || 'Your Documents Are Blind To Us'}</h2>
+            <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, color: 'var(--text-main)', marginBottom: 24 }}>{t.pageSecuritySec3Title || 'Your Documents Are Blind To Us'}</h2>
             <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>
               {t.pageSecuritySec3Desc || 'While we use standard analytics to improve our website experience, our scripts never touch your documents. We do not extract metadata, text contents, or images. The document processing sandbox is entirely self-contained within your browser tab.'}
             </p>
           </div>
         </section>
 
-        {/* Section 4: Compliance List */}
+        {/* Section 5: Compliance List */}
         <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-app)' }}>
           <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', gap: 48, alignItems: 'center', flexWrap: 'wrap' }}>
             <div style={{ flex: '1 1 400px' }}>
-              <h2 style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 24 }}>{t.pageSecuritySec4Title || 'Compliance by Default'}</h2>
+              <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, color: 'var(--text-main)', marginBottom: 24 }}>{t.pageSecuritySec4Title || 'Compliance by Default'}</h2>
               <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: 24 }}>
                 {t.pageSecuritySec4Desc || 'Because HandleMyFile cannot access your files, using our tools automatically complies with the strictest data protection laws worldwide.'}
               </p>
@@ -106,10 +165,10 @@ export const SecurityPage: React.FC<Props> = ({ currentLang }) => {
           </div>
         </section>
 
-        {/* Section 5: Verify Yourself */}
+        {/* Section 6: Verify Yourself */}
         <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-card)', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
           <div style={{ maxWidth: 800, margin: '0 auto' }}>
-            <h2 style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 24, textAlign: 'center' }}>{t.pageSecuritySec5Title || 'Don\'t Trust Us. Verify It.'}</h2>
+            <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, color: 'var(--text-main)', marginBottom: 24, textAlign: 'center' }}>{t.pageSecuritySec5Title || 'Don\'t Trust Us. Verify It.'}</h2>
             <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', lineHeight: 1.8, textAlign: 'center', marginBottom: 48 }}>
               {t.pageSecuritySec5Desc || 'You don\'t have to take our word for it. You can prove our offline guarantee yourself in 3 simple steps:'}
             </p>
@@ -127,11 +186,11 @@ export const SecurityPage: React.FC<Props> = ({ currentLang }) => {
           </div>
         </section>
 
-        {/* Section 6: Mission */}
+        {/* Section 7: Mission */}
         <section style={{ width: '100%', padding: '100px 24px', background: 'var(--brand-gradient)', color: '#fff', textAlign: 'center' }}>
           <div style={{ maxWidth: 800, margin: '0 auto' }}>
             <Lock size={48} style={{ margin: '0 auto 24px', opacity: 0.9 }} />
-            <h2 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: 24 }}>{t.pageSecuritySec6Title || 'The Future is Local'}</h2>
+            <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, marginBottom: 24 }}>{t.pageSecuritySec6Title || 'The Future is Local'}</h2>
             <p style={{ fontSize: '1.25rem', opacity: 0.9, lineHeight: 1.8 }}>
               {t.pageSecuritySec6Desc || 'We envision a web where utility apps respect your hardware and your privacy. Welcome to the new era of client-side computing.'}
             </p>

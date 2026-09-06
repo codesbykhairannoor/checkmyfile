@@ -1,8 +1,9 @@
 import React from 'react';
 import { getUiTranslations } from '../i18n/translations';
+import { RESEARCH_TRANSLATIONS } from '../i18n/researchTranslations';
 import { SeoHead } from '../components/seo/SeoHead';
 
-import { Users, Globe2, ShieldCheck, Zap, ArrowRight, Heart } from 'lucide-react';
+import { Users, Globe2, ShieldCheck, Zap, ArrowRight, Heart, BookOpen } from 'lucide-react';
 
 interface Props {
   currentLang: string;
@@ -10,6 +11,7 @@ interface Props {
 
 export const AboutUsPage: React.FC<Props> = ({ currentLang }) => {
   const t = getUiTranslations(currentLang);
+  const rt = RESEARCH_TRANSLATIONS[currentLang] || RESEARCH_TRANSLATIONS['en'];
 
   return (
     <>
@@ -21,12 +23,10 @@ export const AboutUsPage: React.FC<Props> = ({ currentLang }) => {
       />
       <main style={{ width: '100%', flex: 1 }}>
         
-        
         {/* Section 1: Hero */}
         <section style={{ position: 'relative', width: '100%', padding: '120px 24px', background: 'var(--bg-app)', overflow: 'hidden' }}>
-          <div style={{ position: 'absolute', top: -100, left: '50%', transform: 'translateX(-50%)', width: 800, height: 400, background: 'var(--brand-glow)', filter: 'blur(150px)', opacity: 0.3, pointerEvents: 'none' }} />
           <div style={{ maxWidth: 1000, margin: '0 auto', textAlign: 'center', position: 'relative', zIndex: 10 }}>
-            <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 80, height: 80, borderRadius: 24, background: 'var(--brand-glow)', color: 'var(--brand-primary)', marginBottom: 32, boxShadow: '0 10px 30px var(--brand-glow)' }}>
+            <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 80, height: 80, borderRadius: 24, background: '#eff6ff', color: 'var(--brand-primary)', marginBottom: 32, border: '1px solid #bfdbfe' }}>
               <Globe2 size={40} />
             </div>
             <h1 style={{ fontSize: 'clamp(3rem, 6vw, 5rem)', fontWeight: 900, fontFamily: 'var(--font-display)', marginBottom: 24, letterSpacing: '-0.03em', color: 'var(--text-main)', lineHeight: 1.1 }}>
@@ -64,8 +64,8 @@ export const AboutUsPage: React.FC<Props> = ({ currentLang }) => {
         {/* Section 3: The Origin Story */}
         <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-app)' }}>
           <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
-            <div style={{ display: 'inline-flex', padding: '8px 16px', background: 'var(--brand-glow)', color: 'var(--brand-primary)', borderRadius: 100, fontWeight: 800, fontSize: '0.9rem', marginBottom: 24 }}>01 &mdash; THE ORIGIN</div>
-            <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 900, marginBottom: 32, color: 'var(--text-main)', lineHeight: 1.2 }}>{t.pageAboutSec1Title || 'The Origin Story'}</h2>
+            <div style={{ display: 'inline-flex', padding: '8px 16px', background: '#eff6ff', color: 'var(--brand-primary)', borderRadius: 100, fontWeight: 800, fontSize: '0.9rem', marginBottom: 24, border: '1px solid #bfdbfe' }}>01 &mdash; THE ORIGIN</div>
+            <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, marginBottom: 32, color: 'var(--text-main)', lineHeight: 1.2 }}>{t.pageAboutSec1Title || 'The Origin Story'}</h2>
             <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', lineHeight: 1.8, borderLeft: '4px solid var(--brand-primary)', paddingLeft: 32, fontStyle: 'italic' }}>
               {t.pageAboutSec1Desc || 'We were frustrated by the constant paywalls and privacy leaks of traditional online document tools. Uploading sensitive files to random servers felt inherently wrong. We built HandleMyFile to prove that enterprise-grade tools could be free, fast, and fully secure.'}
             </p>
@@ -74,10 +74,9 @@ export const AboutUsPage: React.FC<Props> = ({ currentLang }) => {
 
         {/* Section 4: Technology Stack */}
         <section style={{ width: '100%', padding: '100px 24px', background: '#0f172a', color: '#fff', position: 'relative', overflow: 'hidden' }}>
-          <div style={{ position: 'absolute', bottom: -200, right: -200, width: 600, height: 600, background: 'var(--brand-primary)', filter: 'blur(200px)', opacity: 0.15, borderRadius: '50%' }} />
           <div style={{ maxWidth: 1000, margin: '0 auto', position: 'relative', zIndex: 10 }}>
             <div style={{ display: 'inline-flex', padding: '8px 16px', background: 'rgba(255,255,255,0.1)', color: '#fff', borderRadius: 100, fontWeight: 800, fontSize: '0.9rem', marginBottom: 24 }}>02 &mdash; ARCHITECTURE</div>
-            <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 900, marginBottom: 32, lineHeight: 1.2 }}>{t.pageAboutSec2Title || 'Technology Stack'}</h2>
+            <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, marginBottom: 32, lineHeight: 1.2 }}>{t.pageAboutSec2Title || 'Technology Stack'}</h2>
             <div style={{ background: 'rgba(255,255,255,0.05)', padding: 48, borderRadius: 32, border: '1px solid rgba(255,255,255,0.1)' }}>
               <p style={{ fontSize: '1.15rem', color: '#cbd5e1', lineHeight: 1.8 }}>
                 {t.pageAboutSec2Desc || 'By leveraging the power of WebAssembly (Wasm), we took complex server-side C++ and Rust libraries and ported them to run directly inside your web browser. This means the server is brought to your device, entirely eliminating the need for network uploads.'}
@@ -86,26 +85,46 @@ export const AboutUsPage: React.FC<Props> = ({ currentLang }) => {
           </div>
         </section>
 
-        {/* Section 5: Our Guarantee */}
+        {/* Section 5: Academic Foundations & Open Science */}
+        <section style={{ width: '100%', padding: '100px 24px', background: '#f8fafc', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
+          <div style={{ maxWidth: 1000, margin: '0 auto' }}>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '8px 16px', background: '#eff6ff', color: 'var(--brand-primary)', borderRadius: 100, fontWeight: 800, fontSize: '0.9rem', marginBottom: 24, border: '1px solid #bfdbfe' }}>
+              <BookOpen size={16} /> 03 &mdash; SCIENTIFIC FOUNDATIONS
+            </div>
+            <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, marginBottom: 24, color: 'var(--text-main)', lineHeight: 1.2 }}>
+              {rt.aboutResearchTitle}
+            </h2>
+            <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', lineHeight: 1.7, marginBottom: 32 }}>
+              {rt.aboutResearchSub}
+            </p>
+            <div style={{ background: '#ffffff', padding: '36px 32px', borderRadius: 24, border: '1px solid #e2e8f0', borderLeft: '5px solid var(--brand-primary)' }}>
+              <p style={{ fontSize: '1.1rem', color: '#334155', lineHeight: 1.8, margin: 0 }}>
+                {rt.aboutResearchText}
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 6: Our Guarantee */}
         <section style={{ width: '100%', padding: '100px 24px', background: 'var(--brand-gradient)', color: '#fff', textAlign: 'center' }}>
           <div style={{ maxWidth: 900, margin: '0 auto' }}>
             <ShieldCheck size={64} style={{ margin: '0 auto 32px', opacity: 0.9 }} />
-            <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)', fontWeight: 900, marginBottom: 32, lineHeight: 1.1 }}>{t.pageAboutSec3Title || 'Our Guarantee'}</h2>
+            <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, marginBottom: 32, lineHeight: 1.1 }}>{t.pageAboutSec3Title || 'Our Guarantee'}</h2>
             <p style={{ fontSize: '1.3rem', opacity: 0.9, lineHeight: 1.7, fontWeight: 500 }}>
               {t.pageAboutSec3Desc || 'HandleMyFile is built to remain completely free. Our mission is to democratize document utilities for everyone, everywhere.'}
             </p>
           </div>
         </section>
 
-        {/* Section 6: Join the Movement */}
+        {/* Section 7: Join the Movement */}
         <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-app)', textAlign: 'center' }}>
           <div style={{ maxWidth: 800, margin: '0 auto' }}>
             <Heart size={48} className="text-brand-primary" style={{ margin: '0 auto 24px' }} />
-            <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 900, marginBottom: 24, color: 'var(--text-main)', lineHeight: 1.2 }}>{t.pageAboutSec4Title || 'Join the Movement'}</h2>
+            <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, marginBottom: 24, color: 'var(--text-main)', lineHeight: 1.2 }}>{t.pageAboutSec4Title || 'Join the Movement'}</h2>
             <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: 40 }}>
               {t.pageAboutSec4Desc || 'We rely on our community to keep this project alive. Share HandleMyFile with your friends, family, and coworkers. Together, we can build a safer, faster, and more accessible web.'}
             </p>
-            <button onClick={() => window.scrollTo(0, 0)} className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: 12, padding: '16px 32px', fontSize: '1.1rem', fontWeight: 800, background: 'var(--brand-gradient)', color: '#fff', border: 'none', borderRadius: 100, cursor: 'pointer', boxShadow: '0 10px 30px var(--brand-glow)' }}>
+            <button onClick={() => window.scrollTo(0, 0)} className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: 12, padding: '16px 32px', fontSize: '1.1rem', fontWeight: 800, background: 'var(--brand-gradient)', color: '#fff', border: 'none', borderRadius: 100, cursor: 'pointer' }}>
               <span>{t.useToolsNow || 'Use Tools Now'}</span>
               <ArrowRight size={20} />
             </button>

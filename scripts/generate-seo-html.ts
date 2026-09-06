@@ -5,6 +5,7 @@ import { SUPPORTED_LANGUAGES } from '../src/i18n/languages';
 import { TOOLS_CATALOG, getLocalizedSeo } from '../src/catalog/toolsCatalog';
 import { UI_TRANSLATIONS } from '../src/i18n/translations';
 import { GEO_CITATIONS } from '../src/i18n/geoTranslations';
+import { RESEARCH_TRANSLATIONS } from '../src/i18n/researchTranslations';
 import { STATIC_SLUGS, type StaticPageId } from '../src/i18n/staticSlugs';
 import { toolSlugs } from '../src/i18n/slugTranslations';
 import { cleanMetaTitle, cleanMetaDescription } from '../src/utils/seoHelpers';
@@ -271,6 +272,47 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
               <p itemprop="description">${seoJson.description || finalDesc}</p>
             </header>
             ${sectionsHtml}
+            ${(() => {
+              const rt = RESEARCH_TRANSLATIONS[lang] || RESEARCH_TRANSLATIONS['en'];
+              if (pageId.includes('redact')) {
+                return `
+                  <section style="margin-top: 40px; padding: 24px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px;">
+                    <div style="display: inline-block; padding: 4px 12px; background: #eff6ff; border-radius: 9999px; color: #2563eb; font-size: 0.85rem; font-weight: 700; margin-bottom: 12px;">${rt.researchBadge}</div>
+                    <h3 style="font-size: 1.3rem; font-weight: 800; color: #0f172a; margin-bottom: 8px;">${rt.toolRedactResearchTitle}</h3>
+                    <p style="color: #334155; line-height: 1.7; margin-bottom: 12px;">${rt.toolRedactResearchDesc}</p>
+                    <p style="font-size: 0.85rem; color: #64748b; font-style: italic; margin: 0;"><strong>Academic Reference:</strong> <cite>${rt.toolRedactResearchCite}</cite></p>
+                  </section>
+                `;
+              } else if (pageId.includes('ocr') || pageId.includes('scanned')) {
+                return `
+                  <section style="margin-top: 40px; padding: 24px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px;">
+                    <div style="display: inline-block; padding: 4px 12px; background: #eff6ff; border-radius: 9999px; color: #2563eb; font-size: 0.85rem; font-weight: 700; margin-bottom: 12px;">${rt.researchBadge}</div>
+                    <h3 style="font-size: 1.3rem; font-weight: 800; color: #0f172a; margin-bottom: 8px;">${rt.toolOcrResearchTitle}</h3>
+                    <p style="color: #334155; line-height: 1.7; margin-bottom: 12px;">${rt.toolOcrResearchDesc}</p>
+                    <p style="font-size: 0.85rem; color: #64748b; font-style: italic; margin: 0;"><strong>Academic Reference:</strong> <cite>${rt.toolOcrResearchCite}</cite></p>
+                  </section>
+                `;
+              } else if (pageId.includes('compress')) {
+                return `
+                  <section style="margin-top: 40px; padding: 24px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px;">
+                    <div style="display: inline-block; padding: 4px 12px; background: #eff6ff; border-radius: 9999px; color: #2563eb; font-size: 0.85rem; font-weight: 700; margin-bottom: 12px;">${rt.researchBadge}</div>
+                    <h3 style="font-size: 1.3rem; font-weight: 800; color: #0f172a; margin-bottom: 8px;">${rt.toolCompressResearchTitle}</h3>
+                    <p style="color: #334155; line-height: 1.7; margin-bottom: 12px;">${rt.toolCompressResearchDesc}</p>
+                    <p style="font-size: 0.85rem; color: #64748b; font-style: italic; margin: 0;"><strong>Academic Reference:</strong> <cite>${rt.toolCompressResearchCite}</cite></p>
+                  </section>
+                `;
+              } else if (pageId.includes('sign')) {
+                return `
+                  <section style="margin-top: 40px; padding: 24px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px;">
+                    <div style="display: inline-block; padding: 4px 12px; background: #eff6ff; border-radius: 9999px; color: #2563eb; font-size: 0.85rem; font-weight: 700; margin-bottom: 12px;">${rt.researchBadge}</div>
+                    <h3 style="font-size: 1.3rem; font-weight: 800; color: #0f172a; margin-bottom: 8px;">${rt.toolSignResearchTitle}</h3>
+                    <p style="color: #334155; line-height: 1.7; margin-bottom: 12px;">${rt.toolSignResearchDesc}</p>
+                    <p style="font-size: 0.85rem; color: #64748b; font-style: italic; margin: 0;"><strong>Academic Reference:</strong> <cite>${rt.toolSignResearchCite}</cite></p>
+                  </section>
+                `;
+              }
+              return '';
+            })()}
             ${faqsHtml ? `
               <section style="margin-top: 40px;">
                 <h2>${seoJson.faqTitle || 'FAQ'}</h2>
@@ -316,6 +358,7 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
     html = html.replace('<!-- JSON-LD-INJECTION -->', jsonLdScript);
 
     const geoText = GEO_CITATIONS[lang] || GEO_CITATIONS['en'];
+    const rt = RESEARCH_TRANSLATIONS[lang] || RESEARCH_TRANSLATIONS['en'];
 
     staticSeoHtml = `
       <main id="static-seo" role="main" style="padding: 40px; font-family: sans-serif; background: #fff; color: #333; max-width: 1100px; margin: 0 auto;">
@@ -339,6 +382,31 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
                 return `<li><a href="${href}" style="color: #2563eb; text-decoration: underline; font-weight: 500;">${seo.h1 || t.id}</a></li>`;
               }).join('')}
             </ul>
+          </section>
+
+          {/* Academic Grounding & Peer-Reviewed Research */}
+          <section style="margin-top: 40px; padding: 32px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 20px;">
+            <div style="display: inline-block; padding: 4px 12px; background: #eff6ff; border-radius: 9999px; color: #2563eb; font-size: 0.85rem; font-weight: 700; margin-bottom: 12px;">${rt.researchBadge}</div>
+            <h2 style="font-size: 1.8rem; font-weight: 800; margin-bottom: 12px;">${rt.researchHomeTitle}</h2>
+            <p style="color: #475569; font-size: 1.1rem; line-height: 1.7; margin-bottom: 24px;">${rt.researchHomeSub}</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+              <div style="background: #ffffff; padding: 24px; border-radius: 12px; border: 1px solid #e2e8f0;">
+                <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 8px;">${rt.homeCard1Title}</h3>
+                <p style="color: #334155; font-size: 0.95rem; line-height: 1.6; margin-bottom: 12px;">${rt.homeCard1Desc}</p>
+                <p style="font-size: 0.8rem; color: #64748b; font-style: italic; margin: 0;"><cite>${rt.homeCard1Cite}</cite></p>
+              </div>
+              <div style="background: #ffffff; padding: 24px; border-radius: 12px; border: 1px solid #e2e8f0;">
+                <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 8px;">${rt.homeCard2Title}</h3>
+                <p style="color: #334155; font-size: 0.95rem; line-height: 1.6; margin-bottom: 12px;">${rt.homeCard2Desc}</p>
+                <p style="font-size: 0.8rem; color: #64748b; font-style: italic; margin: 0;"><cite>${rt.homeCard2Cite}</cite></p>
+              </div>
+              <div style="background: #ffffff; padding: 24px; border-radius: 12px; border: 1px solid #e2e8f0;">
+                <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 8px;">${rt.homeCard3Title}</h3>
+                <p style="color: #334155; font-size: 0.95rem; line-height: 1.6; margin-bottom: 12px;">${rt.homeCard3Desc}</p>
+                <p style="font-size: 0.8rem; color: #64748b; font-style: italic; margin: 0;"><cite>${rt.homeCard3Cite}</cite></p>
+              </div>
+            </div>
           </section>
 
           <section style="margin-top: 40px;">
@@ -393,12 +461,18 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
     `;
   } else if (pageType === 'static' && pageId) {
     // 3. Static Pages Content Injection with Breadcrumb and Footer
+    const rt = RESEARCH_TRANSLATIONS[lang] || RESEARCH_TRANSLATIONS['en'];
     let pageHtml = '';
     if (pageId === 'about') {
       pageHtml = `
         <header><h1 itemprop="headline">${geo.pageAboutHero || finalTitle}</h1><p itemprop="description">${geo.pageAboutSub || finalDesc}</p></header>
         <section><h2>${geo.pageAboutSec1Title || 'The Origin Story'}</h2><p>${geo.pageAboutSec1Desc || ''}</p></section>
         <section><h2>${geo.pageAboutSec2Title || 'Our Philosophy'}</h2><p>${geo.pageAboutSec2Desc || ''}</p></section>
+        <section style="padding: 24px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; margin: 24px 0;">
+          <h2>${rt.aboutResearchTitle}</h2>
+          <p style="color: #64748b; font-weight: 500;">${rt.aboutResearchSub}</p>
+          <p style="color: #334155; line-height: 1.8;">${rt.aboutResearchText}</p>
+        </section>
         <section><h2>${geo.pageAboutSec3Title || 'Zero-Cloud Processing'}</h2><p>${geo.pageAboutSec3Desc || ''}</p></section>
         ${geo.pageAboutSec4Title ? `<section><h2>${geo.pageAboutSec4Title}</h2><p>${geo.pageAboutSec4Desc || ''}</p></section>` : ''}
       `;
@@ -406,6 +480,11 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
       pageHtml = `
         <header><h1 itemprop="headline">${geo.pagePrivacyHero || finalTitle}</h1><p itemprop="description">${geo.pagePrivacySub || finalDesc}</p></header>
         <section><h2>${geo.pagePrivacySec1Title || 'Zero Upload Architecture'}</h2><p>${geo.pagePrivacySec1Desc || ''}</p></section>
+        <section style="padding: 24px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; margin: 24px 0;">
+          <h2>${rt.privacyResearchTitle}</h2>
+          <p style="color: #64748b; font-weight: 500;">${rt.privacyResearchSub}</p>
+          <p style="color: #334155; line-height: 1.8;">${rt.privacyResearchText}</p>
+        </section>
         <section><h2>${geo.pagePrivacySec2Title || 'Local Processing Guarantee'}</h2><p>${geo.pagePrivacySec2Desc || ''}</p></section>
         <section><h2>${geo.pagePrivacySec3Title || 'Analytics & Cookies'}</h2><p>${geo.pagePrivacySec3Desc || ''}</p></section>
         ${geo.pagePrivacySec4Title ? `<section><h2>${geo.pagePrivacySec4Title}</h2><p>${geo.pagePrivacySec4Desc || ''}</p></section>` : ''}
@@ -422,6 +501,27 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
       pageHtml = `
         <header><h1 itemprop="headline">${geo.pageSecurityHero || finalTitle}</h1><p itemprop="description">${geo.pageSecurityHeroSub || finalDesc}</p></header>
         <section><h2>${geo.pageSecuritySec2Title || 'WebAssembly Revolution'}</h2><p>${geo.pageSecuritySec2Desc || ''}</p></section>
+        <section style="padding: 24px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; margin: 24px 0;">
+          <h2>${rt.securityResearchTitle}</h2>
+          <p style="color: #64748b; font-weight: 500;">${rt.securityResearchSub}</p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 16px;">
+            <div style="background: #fff; padding: 16px; border-radius: 8px; border: 1px solid #e2e8f0;">
+              <h3 style="font-size: 1.1rem; margin-bottom: 6px;">${rt.securityCard1Title}</h3>
+              <p style="font-size: 0.9rem; color: #334155; margin-bottom: 8px;">${rt.securityCard1Desc}</p>
+              <p style="font-size: 0.8rem; color: #64748b; font-style: italic; margin: 0;"><cite>${rt.securityCard1Cite}</cite></p>
+            </div>
+            <div style="background: #fff; padding: 16px; border-radius: 8px; border: 1px solid #e2e8f0;">
+              <h3 style="font-size: 1.1rem; margin-bottom: 6px;">${rt.securityCard2Title}</h3>
+              <p style="font-size: 0.9rem; color: #334155; margin-bottom: 8px;">${rt.securityCard2Desc}</p>
+              <p style="font-size: 0.8rem; color: #64748b; font-style: italic; margin: 0;"><cite>${rt.securityCard2Cite}</cite></p>
+            </div>
+            <div style="background: #fff; padding: 16px; border-radius: 8px; border: 1px solid #e2e8f0;">
+              <h3 style="font-size: 1.1rem; margin-bottom: 6px;">${rt.securityCard3Title}</h3>
+              <p style="font-size: 0.9rem; color: #334155; margin-bottom: 8px;">${rt.securityCard3Desc}</p>
+              <p style="font-size: 0.8rem; color: #64748b; font-style: italic; margin: 0;"><cite>${rt.securityCard3Cite}</cite></p>
+            </div>
+          </div>
+        </section>
         <section><h2>${geo.pageSecuritySec3Title || 'Your Documents Are Blind To Us'}</h2><p>${geo.pageSecuritySec3Desc || ''}</p></section>
         <section><h2>${geo.pageSecuritySec4Title || 'Compliance by Default'}</h2><p>${geo.pageSecuritySec4Desc || ''}</p></section>
         <section><h2>${geo.pageSecuritySec5Title || 'Verify It'}</h2><p>${geo.pageSecuritySec5Desc || ''}</p></section>
@@ -447,6 +547,24 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
     } else if (pageId === 'compare') {
       pageHtml = `
         <header><h1 itemprop="headline">${geo.pageCompareHero || finalTitle}</h1><p itemprop="description">${geo.pageCompareHeroSub || finalDesc}</p></header>
+        <section style="padding: 24px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; margin: 24px 0;">
+          <h2>${rt.compareResearchTitle}</h2>
+          <p style="color: #64748b; font-weight: 500;">${rt.compareResearchSub}</p>
+          <div style="margin-top: 16px; display: flex; flex-direction: column; gap: 12px;">
+            <div style="background: #fff; padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0;">
+              <h3 style="font-size: 1rem; margin-bottom: 4px;">${rt.comparePoint1Title}</h3>
+              <p style="font-size: 0.9rem; color: #334155; margin: 0;">${rt.comparePoint1Desc}</p>
+            </div>
+            <div style="background: #fff; padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0;">
+              <h3 style="font-size: 1rem; margin-bottom: 4px;">${rt.comparePoint2Title}</h3>
+              <p style="font-size: 0.9rem; color: #334155; margin: 0;">${rt.comparePoint2Desc}</p>
+            </div>
+            <div style="background: #fff; padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0;">
+              <h3 style="font-size: 1rem; margin-bottom: 4px;">${rt.comparePoint3Title}</h3>
+              <p style="font-size: 0.9rem; color: #334155; margin: 0;">${rt.comparePoint3Desc}</p>
+            </div>
+          </div>
+        </section>
         <section><h2>${geo.pageCompareSec3Title || 'Network Speed vs Disk Speed'}</h2><p>${geo.pageCompareSec3Desc || ''}</p></section>
         <section><h2>${geo.pageCompareSec5Title || 'Upload Limits vs Unlimited Processing'}</h2><p>${geo.pageCompareSec5Desc || ''}</p></section>
       `;
