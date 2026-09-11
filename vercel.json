@@ -1,6 +1,19 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.handlemyfile.com"
+        }
+      ],
+      "destination": "https://handlemyfile.com/:path*",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
@@ -24,11 +37,15 @@
         {
           "key": "Strict-Transport-Security",
           "value": "max-age=31536000; includeSubDomains; preload"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400"
         }
       ]
     },
     {
-      "source": "/(favicon\\\\.png|favicon\\\\.svg|logo\\\\.png|robots\\\\.txt|llms\\\\.txt|llms-full\\\\.txt)",
+      "source": "/(favicon\\.png|favicon\\.svg|logo\\.png|robots\\.txt|sitemap\\.xml|llms\\.txt|llms-full\\.txt)",
       "headers": [
         {
           "key": "Cache-Control",

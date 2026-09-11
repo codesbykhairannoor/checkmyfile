@@ -41,7 +41,69 @@ const writeFileSafe = (filePath: string, content: string) => {
   generatedCount++;
 };
 
+// Helper: 100% Reciprocal Hreflang Tags for all 30 languages + x-default
+const buildHreflangTags = (pageType: 'tool' | 'home' | 'static', pageId?: string): string => {
+  const tags: string[] = [];
 
+  if (pageType === 'tool' && pageId) {
+    const toolDef = TOOLS_CATALOG.find(t => t.id === pageId);
+    if (toolDef) {
+      for (const l of SUPPORTED_LANGUAGES) {
+        const isLEn = l.code === 'en';
+        const slug = toolDef.slugs[l.code] || toolDef.id;
+        const targetUrl = isLEn ? `${DOMAIN}/${slug}` : `${DOMAIN}/${l.code}/${slug}`;
+        tags.push(`<link rel="alternate" hreflang="${l.code}" href="${targetUrl}" />`);
+      }
+      const enSlug = toolDef.slugs['en'] || toolDef.id;
+      tags.push(`<link rel="alternate" hreflang="x-default" href="${DOMAIN}/${enSlug}" />`);
+    }
+  } else if (pageType === 'static' && pageId) {
+    for (const l of SUPPORTED_LANGUAGES) {
+      const isLEn = l.code === 'en';
+      const slug = STATIC_SLUGS[l.code]?.[pageId as StaticPageId] || STATIC_SLUGS['en']?.[pageId as StaticPageId] || pageId;
+      const targetUrl = isLEn ? `${DOMAIN}/${slug}` : `${DOMAIN}/${l.code}/${slug}`;
+      tags.push(`<link rel="alternate" hreflang="${l.code}" href="${targetUrl}" />`);
+    }
+    const enSlug = STATIC_SLUGS['en']?.[pageId as StaticPageId] || pageId;
+    tags.push(`<link rel="alternate" hreflang="x-default" href="${DOMAIN}/${enSlug}" />`);
+  } else {
+    // Home page
+    for (const l of SUPPORTED_LANGUAGES) {
+      const isLEn = l.code === 'en';
+      const targetUrl = isLEn ? `${DOMAIN}/` : `${DOMAIN}/${l.code}`;
+      tags.push(`<link rel="alternate" hreflang="${l.code}" href="${targetUrl}" />`);
+    }
+    tags.push(`<link rel="alternate" hreflang="x-default" href="${DOMAIN}/" />`);
+  }
+
+  return tags.join('\n    ');
+};
+
+// Helper: Semantic Header Navigation with crawlable outgoing internal links
+const buildHeaderNavigation = (lang: string, isEn: boolean): string => {
+  const homeHref = isEn ? '/' : `/${lang}`;
+  const getStaticHref = (pageKey: StaticPageId) => {
+    const slug = STATIC_SLUGS[lang]?.[pageKey] || STATIC_SLUGS['en']?.[pageKey] || pageKey;
+    return isEn ? `/${slug}` : `/${lang}/${slug}`;
+  };
+
+  return `
+    <header style="padding: 16px 0; border-bottom: 1px solid #e2e8f0; margin-bottom: 30px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px;">
+      <a href="${homeHref}" style="font-size: 1.3rem; font-weight: 800; color: #0f172a; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+        <span style="display: inline-block; width: 12px; height: 12px; background: #2563eb; border-radius: 3px;"></span>
+        HandleMyFile
+      </a>
+      <nav aria-label="Main Navigation" style="display: flex; flex-wrap: wrap; gap: 16px; font-size: 0.95rem;">
+        <a href="${homeHref}" style="color: #2563eb; text-decoration: none; font-weight: 600;">Home</a>
+        <a href="${getStaticHref('about')}" style="color: #475569; text-decoration: none;">About</a>
+        <a href="${getStaticHref('security')}" style="color: #475569; text-decoration: none;">Security</a>
+        <a href="${getStaticHref('pricing')}" style="color: #475569; text-decoration: none;">Pricing</a>
+        <a href="${getStaticHref('compare')}" style="color: #475569; text-decoration: none;">Compare</a>
+        <a href="${getStaticHref('languages')}" style="color: #475569; text-decoration: none;">Languages (30)</a>
+      </nav>
+    </header>
+  `;
+};
 
 // Helper: Semantic footer with crawlable outgoing internal links
 const buildStaticFooter = (lang: string, isEn: boolean): string => {
@@ -69,23 +131,137 @@ const buildStaticFooter = (lang: string, isEn: boolean): string => {
   `;
 };
 
-// Helper: Contextual related tools with crawlable internal links
-const buildRelatedToolsSection = (currentToolId: string, lang: string, isEn: boolean): string => {
-  const otherTools = TOOLS_CATALOG.filter(t => t.id !== currentToolId).slice(0, 6);
-  const toolLinks = otherTools.map(t => {
-    const slug = t.slugs[lang] || t.id;
-    const href = isEn ? `/${slug}` : `/${lang}/${slug}`;
-    const seo = getLocalizedSeo(t, lang);
-    return `<li><a href="${href}" style="color: #2563eb; text-decoration: underline; font-weight: 500;">${seo.h1 || t.id}</a></li>`;
+// Helper: Complete Categorized Tools Directory (Eliminates ALL Orphan Pages)
+const buildAllToolsDirectory = (lang: string, isEn: boolean, currentToolId?: string): string => {
+  const categories = [
+    {
+      name: 'PDF Organize & Edit',
+      ids: [
+        'merge-pdf', 'split-pdf', 'edit-pdf', 'sign-pdf', 'rotate-pdf', 'crop-pdf',
+        'page-numbers-pdf', 'watermark-pdf', 'grayscale-pdf', 'reverse-pdf',
+        'remove-pages-pdf', 'resize-pdf', 'organize-pdf', 'redact-pdf',
+        'protect-pdf', 'unlock-pdf', 'remove-metadata-pdf', 'scan-to-pdf',
+        'compare-pdf', 'crop-pdf-white-margins'
+      ]
+    },
+    {
+      name: 'PDF Compression & Optimization',
+      ids: [
+        'compress-pdf', 'compress-pdf-100kb', 'compress-pdf-email',
+        'compress-pdf-without-losing-quality', 'reduce-pdf-size-offline',
+        'grayscale-pdf-print', 'remove-pdf-watermark-online'
+      ]
+    },
+    {
+      name: 'Convert Office & Data to/from PDF',
+      ids: [
+        'word-to-pdf', 'excel-to-pdf', 'ppt-to-pdf', 'txt-to-pdf', 'csv-to-pdf',
+        'pdf-to-word', 'pdf-to-excel', 'pdf-to-ppt', 'pdf-to-txt', 'pdf-to-csv',
+        'csv-to-excel', 'excel-to-csv', 'pdf-to-word-no-formatting-loss',
+        'docx-to-pdf-converter'
+      ]
+    },
+    {
+      name: 'Convert Images to/from PDF',
+      ids: [
+        'jpg-to-pdf', 'png-to-pdf', 'image-to-pdf', 'pdf-to-jpg', 'pdf-to-png',
+        'pdf-to-image', 'extract-images-pdf', 'extract-high-res-images-pdf'
+      ]
+    },
+    {
+      name: 'OCR & Text Extraction',
+      ids: [
+        'ocr-pdf', 'scanned-pdf-to-text', 'searchable-pdf-ocr'
+      ]
+    }
+  ];
+
+  const listedIds = new Set(categories.flatMap(c => c.ids));
+  const otherTools = TOOLS_CATALOG.filter(t => !listedIds.has(t.id));
+  if (otherTools.length > 0) {
+    categories.push({
+      name: 'More Document Tools',
+      ids: otherTools.map(t => t.id)
+    });
+  }
+
+  const categoryBlocks = categories.map(cat => {
+    const toolsInCat = cat.ids
+      .map(id => TOOLS_CATALOG.find(t => t.id === id))
+      .filter((t): t is typeof TOOLS_CATALOG[0] => Boolean(t));
+
+    if (toolsInCat.length === 0) return '';
+
+    const toolLinks = toolsInCat.map(t => {
+      const slug = t.slugs[lang] || t.id;
+      const href = isEn ? `/${slug}` : `/${lang}/${slug}`;
+      const seo = getLocalizedSeo(t, lang);
+      const isCurrent = t.id === currentToolId;
+      return `
+        <li style="margin-bottom: 8px;">
+          <a href="${href}" style="color: ${isCurrent ? '#0f172a' : '#2563eb'}; font-weight: ${isCurrent ? '700' : '500'}; text-decoration: underline;">
+            ${seo.h1 || t.id}
+          </a>
+        </li>
+      `;
+    }).join('');
+
+    return `
+      <div style="background: #ffffff; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0;">
+        <h3 style="font-size: 1.1rem; font-weight: 700; color: #0f172a; margin-top: 0; margin-bottom: 12px; border-bottom: 2px solid #eff6ff; padding-bottom: 8px;">
+          ${cat.name}
+        </h3>
+        <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem;">
+          ${toolLinks}
+        </ul>
+      </div>
+    `;
   }).join('');
 
   return `
-    <section style="margin-top: 50px; padding-top: 30px; border-top: 1px solid #e2e8f0;">
-      <h2 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 16px;">Related Free Document Tools</h2>
-      <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; list-style: none; padding: 0;">
-        ${toolLinks}
-      </ul>
+    <section style="margin-top: 48px; padding-top: 32px; border-top: 1px solid #e2e8f0;">
+      <h2 style="font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 20px;">
+        Complete Document Tools Directory
+      </h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
+        ${categoryBlocks}
+      </div>
     </section>
+  `;
+};
+
+// Helper: Global Localized Editions Switcher (30 Languages Hub)
+const buildLanguageSwitcher = (lang: string, pageType: 'tool' | 'home' | 'static', pageId?: string): string => {
+  const links = SUPPORTED_LANGUAGES.map(l => {
+    const isLEn = l.code === 'en';
+    let href = isLEn ? '/' : `/${l.code}`;
+
+    if (pageType === 'tool' && pageId) {
+      const toolDef = TOOLS_CATALOG.find(t => t.id === pageId);
+      if (toolDef) {
+        const slug = toolDef.slugs[l.code] || toolDef.id;
+        href = isLEn ? `/${slug}` : `/${l.code}/${slug}`;
+      }
+    } else if (pageType === 'static' && pageId) {
+      const slug = STATIC_SLUGS[l.code]?.[pageId as StaticPageId] || STATIC_SLUGS['en']?.[pageId as StaticPageId] || pageId;
+      href = isLEn ? `/${slug}` : `/${l.code}/${slug}`;
+    }
+
+    const isCurrent = l.code === lang;
+    return `
+      <a href="${href}" style="padding: 4px 8px; border-radius: 6px; background: ${isCurrent ? '#2563eb' : '#f1f5f9'}; color: ${isCurrent ? '#ffffff' : '#334155'}; text-decoration: none; font-size: 0.8rem; font-weight: 500;">
+        ${l.name} (${l.nativeName})
+      </a>
+    `;
+  }).join('');
+
+  return `
+    <nav aria-label="International Language Hubs" style="margin-top: 36px; padding: 20px; background: #f8fafc; border-radius: 12px; border: 1px solid #e2e8f0;">
+      <h3 style="font-size: 1rem; font-weight: 700; color: #475569; margin-top: 0; margin-bottom: 12px;">Global Localized Editions (30 Languages)</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+        ${links}
+      </div>
+    </nav>
   `;
 };
 
@@ -123,6 +299,7 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
   const twitterTitle = `<meta property="twitter:title" content="${finalTitle.replace(/"/g, '&quot;')}" />`;
   const twitterDesc = `<meta property="twitter:description" content="${finalDesc.replace(/"/g, '&quot;')}" />`;
   const twitterUrl = `<meta property="twitter:url" content="${fullUrl}" />`;
+  const hreflangTags = buildHreflangTags(pageType, pageId);
 
   const headInjection = `
     ${titleTag}
@@ -134,6 +311,7 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
     ${twitterTitle}
     ${twitterDesc}
     ${twitterUrl}
+    ${hreflangTags}
     <!-- JSON-LD-INJECTION -->
     <style id="anti-fouc">
       #static-seo {
@@ -262,6 +440,7 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
 
       staticSeoHtml = `
         <main id="static-seo" role="main" style="padding: 40px; font-family: sans-serif; background: #fff; color: #333; max-width: 1100px; margin: 0 auto;">
+          ${buildHeaderNavigation(lang, isEn)}
           <nav aria-label="Breadcrumb" style="margin-bottom: 24px; font-size: 0.95rem;">
             <a href="${isEn ? '/' : `/${lang}`}" style="color: #2563eb; text-decoration: underline;">Home</a> &gt; 
             <span>${seoJson.h1 || finalTitle}</span>
@@ -319,14 +498,15 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
                 ${faqsHtml}
               </section>
             ` : ''}
-            ${buildRelatedToolsSection(pageId, lang, isEn)}
+            ${buildAllToolsDirectory(lang, isEn, pageId)}
+            ${buildLanguageSwitcher(lang, 'tool', pageId)}
           </article>
           ${buildStaticFooter(lang, isEn)}
         </main>
       `;
     }
   } else if (pageType === 'home') {
-    // 2. Home Page (100% Safe Pre-rendering of HomeSections + Links to Featured Tools)
+    // 2. Home Page (100% Safe Pre-rendering of HomeSections + Links to All Tools)
     const schemaGraph: any[] = [
       {
         "@type": "WebApplication",
@@ -362,6 +542,7 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
 
     staticSeoHtml = `
       <main id="static-seo" role="main" style="padding: 40px; font-family: sans-serif; background: #fff; color: #333; max-width: 1100px; margin: 0 auto;">
+        ${buildHeaderNavigation(lang, isEn)}
         <article itemscope itemtype="https://schema.org/Article">
           <header>
             <h1 itemprop="headline">${finalTitle}</h1>
@@ -372,19 +553,9 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
             ${geoText}
           </div>
 
-          <section style="margin-top: 48px; padding-top: 30px; border-top: 1px solid #e2e8f0;">
-            <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 16px;">Popular Free Online Document Tools</h2>
-            <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; list-style: none; padding: 0;">
-              ${TOOLS_CATALOG.slice(0, 10).map(t => {
-                const slug = t.slugs[lang] || t.id;
-                const href = isEn ? `/${slug}` : `/${lang}/${slug}`;
-                const seo = getLocalizedSeo(t, lang);
-                return `<li><a href="${href}" style="color: #2563eb; text-decoration: underline; font-weight: 500;">${seo.h1 || t.id}</a></li>`;
-              }).join('')}
-            </ul>
-          </section>
+          ${buildAllToolsDirectory(lang, isEn)}
 
-          {/* Academic Grounding & Peer-Reviewed Research */}
+          <!-- Academic Grounding & Peer-Reviewed Research -->
           <section style="margin-top: 40px; padding: 32px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 20px;">
             <div style="display: inline-block; padding: 4px 12px; background: #eff6ff; border-radius: 9999px; color: #2563eb; font-size: 0.85rem; font-weight: 700; margin-bottom: 12px;">${rt.researchBadge}</div>
             <h2 style="font-size: 1.8rem; font-weight: 800; margin-bottom: 12px;">${rt.researchHomeTitle}</h2>
@@ -455,6 +626,7 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
               </div>
             </div>
           </section>
+          ${buildLanguageSwitcher(lang, 'home')}
         </article>
         ${buildStaticFooter(lang, isEn)}
       </main>
@@ -605,6 +777,7 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
 
     staticSeoHtml = `
       <main id="static-seo" role="main" style="padding: 40px; font-family: sans-serif; background: #fff; color: #333; max-width: 1100px; margin: 0 auto;">
+        ${buildHeaderNavigation(lang, isEn)}
         <nav aria-label="Breadcrumb" style="margin-bottom: 24px; font-size: 0.95rem;">
           <a href="${isEn ? '/' : `/${lang}`}" style="color: #2563eb; text-decoration: underline;">Home</a> &gt; 
           <span>${finalTitle}</span>
@@ -615,6 +788,8 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
         <article itemscope itemtype="https://schema.org/Article">
           ${pageHtml}
         </article>
+        ${buildAllToolsDirectory(lang, isEn)}
+        ${buildLanguageSwitcher(lang, 'static', pageId)}
         ${buildStaticFooter(lang, isEn)}
       </main>
     `;

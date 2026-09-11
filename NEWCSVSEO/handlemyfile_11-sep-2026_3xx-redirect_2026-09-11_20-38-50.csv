@@ -1,0 +1,6 @@
+PR,URL,Title,Content type,Is rendered page,HTTP status code,Organic traffic,Redirect URL,Redirect URL code,Redirect URL patch,Redirect URL patch status,Redirect chain URLs,Redirect chain URLs codes,Is redirect loop,No. of all inlinks,No. of redirect inlinks,First found at
+0,http://www.handlemyfile.com/,,text/plain,false,308,0,https://www.handlemyfile.com/,308,,,"https://www.handlemyfile.com/
+https://handlemyfile.com/","308
+200",false,0,0,
+0,https://www.handlemyfile.com/,,text/plain,false,308,0,https://handlemyfile.com/,200,,,https://handlemyfile.com/,200,false,1,1,
+0,http://handlemyfile.com/,,text/plain,false,308,0,https://handlemyfile.com/,200,,,https://handlemyfile.com/,200,false,0,0,

@@ -22,6 +22,7 @@ interface CrawlReport {
   h1Count: number;
   h1Text: string;
   outlinksCount: number;
+  inlinksCount: number;
   hreflangsCount: number;
   hasXDefault: boolean;
   hasJsonLd: boolean;
@@ -114,6 +115,7 @@ while (crawlQueue.length > 0) {
       h1Count: 0,
       h1Text: '',
       outlinksCount: 0,
+      inlinksCount: 0,
       hreflangsCount: 0,
       hasXDefault: false,
       hasJsonLd: false,
@@ -137,6 +139,7 @@ while (crawlQueue.length > 0) {
       h1Count: 0,
       h1Text: '',
       outlinksCount: 1,
+      inlinksCount: 0,
       hreflangsCount: 0,
       hasXDefault: false,
       hasJsonLd: false,
@@ -201,13 +204,18 @@ while (crawlQueue.length > 0) {
     allDiscoveredLinks.add(cleanLink);
   }
 
-  // Hreflang Audit
+  // Hreflang Audit (Must have 30 languages + x-default)
   const hreflangs = [...html.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"/gi)];
   const hreflangsCount = hreflangs.length;
   const hasXDefault = html.includes('hreflang="x-default"');
+  if (hreflangsCount < 30) {
+    issues.push(`Missing Hreflang Tags (${hreflangsCount}/30)`);
+  }
+  if (!hasXDefault) {
+    issues.push('Missing x-default hreflang');
+  }
 
   // Word Count Audit (stripping HTML tags)
-  // For unsegmented languages (zh, ja, th), count characters/tokens as words
   const bodyMatch = html.match(/<body[^>]*>([\s\S]*?)<\/body>/i);
   const bodyText = bodyMatch ? bodyMatch[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim() : '';
   const urlPath = currentUrl.replace(DOMAIN, '');
@@ -236,12 +244,25 @@ while (crawlQueue.length > 0) {
     h1Count,
     h1Text,
     outlinksCount,
+    inlinksCount: 0, // will be updated in second pass
     hreflangsCount,
     hasXDefault,
     hasJsonLd: jsonLdMatch,
     wordCount,
     issues
   });
+}
+
+// Second pass: Update Inlink Counts & Audit for Orphan Pages
+for (const report of crawlResults) {
+  if (report.statusCode === 200) {
+    const inlinks = inlinkMap[report.url] || 0;
+    report.inlinksCount = inlinks;
+    // The seed root homepage does not need internal inlinks to be discovered, but all other pages must have >= 1 inlinks
+    if (inlinks === 0 && report.url !== DOMAIN && report.url !== `${DOMAIN}/`) {
+      report.issues.push('Orphan Page (0 internal incoming links)');
+    }
+  }
 }
 
 console.log(`✅ Crawled ${crawlResults.length} pages total.\n`);
@@ -264,7 +285,8 @@ const titleIssues = crawlResults.filter(r => r.issues.some(i => i.includes('Titl
 const descIssues = crawlResults.filter(r => r.issues.some(i => i.includes('Description')));
 const canonicalIssues = crawlResults.filter(r => r.issues.some(i => i.includes('Canonical')));
 const ogIssues = crawlResults.filter(r => r.issues.some(i => i.includes('og:url')));
-const outlinkIssues = crawlResults.filter(r => r.issues.some(i => i.includes('Outgoing')));
+const orphanIssues = crawlResults.filter(r => r.issues.some(i => i.includes('Orphan')));
+const hreflangIssues = crawlResults.filter(r => r.issues.some(i => i.includes('Hreflang') || i.includes('x-default')));
 const thinContentIssues = crawlResults.filter(r => r.issues.some(i => i.includes('Word Count')));
 
 console.log(`Total URLs Audited:            ${totalCrawled}`);
@@ -280,12 +302,21 @@ console.log(`  - Title Issues (>60 chars):  ${titleIssues.length} (Target: 0)`);
 console.log(`  - Meta Desc Issues:          ${descIssues.length} (Target: 0)`);
 console.log(`  - Canonical Mismatches:      ${canonicalIssues.length} (Target: 0)`);
 console.log(`  - Open Graph URL Mismatches: ${ogIssues.length} (Target: 0)`);
-console.log(`  - Orphan / 0 Outlink Pages:  ${outlinkIssues.length} (Target: 0)`);
+console.log(`  - Orphan Pages (0 Inlinks):  ${orphanIssues.length} (Target: 0)`);
+console.log(`  - Hreflang Issues:           ${hreflangIssues.length} (Target: 0)`);
 console.log(`  - Low Word Count Pages:      ${thinContentIssues.length} (Target: 0)\n`);
 
 // Health Score
 const healthScore = Math.max(0, Math.round(((totalCrawled - pagesWithIssues.length) / totalCrawled) * 100));
 console.log(`🏆 AHREFS SITE HEALTH SCORE: ${healthScore} / 100 🏆\n`);
+
+if (pagesWithIssues.length > 0) {
+  console.log('⚠️ Sample Pages with Issues:');
+  for (const p of pagesWithIssues.slice(0, 10)) {
+    console.log(`- ${p.url}: ${p.issues.join(', ')}`);
+  }
+  console.log('');
+}
 
 // Sample multilingual audit display
 console.log('🌐 ==================================================================');
@@ -301,24 +332,25 @@ const sampleLocales = [
 ];
 
 for (const sampleUrl of sampleLocales) {
-  const result = crawlResults.find(r => r.url === sampleUrl);
-  if (!result) continue;
-  console.log(`\n📍 URL: ${result.url}`);
-  console.log(`   Status:         ${result.statusCode} OK`);
-  console.log(`   Title (${result.titleLength} chars):  "${result.title}"`);
-  console.log(`   Desc (${result.metaDescLength} chars):   "${result.metaDesc.slice(0, 75)}..."`);
-  console.log(`   Canonical:      ${result.canonical}`);
-  console.log(`   H1:             "${result.h1Text}"`);
-  console.log(`   Internal Links: ${result.outlinksCount} outlinks`);
-  console.log(`   Hreflangs:      ${result.hreflangsCount} entries (x-default: ${result.hasXDefault})`);
-  console.log(`   Structured:     JSON-LD Schema ${result.hasJsonLd ? '✅ Valid' : '❌ Missing'}`);
-  console.log(`   Word Count:     ${result.wordCount} words`);
-  console.log(`   Issues Found:   ${result.issues.length === 0 ? 'None (100% Perfect)' : result.issues.join(', ')}`);
+  const sample = crawlResults.find(r => r.url === sampleUrl);
+  if (sample) {
+    console.log(`\n📍 URL: ${sample.url}`);
+    console.log(`   Status:         ${sample.statusCode} ${sample.statusCode === 200 ? 'OK' : ''}`);
+    console.log(`   Title (${sample.titleLength} chars):  "${sample.title.slice(0, 60)}"`);
+    console.log(`   Desc (${sample.metaDescLength} chars):   "${sample.metaDesc.slice(0, 75)}..."`);
+    console.log(`   Canonical:      ${sample.canonical}`);
+    console.log(`   H1:             "${sample.h1Text}"`);
+    console.log(`   Internal Links: ${sample.outlinksCount} outlinks | ${sample.inlinksCount} inlinks`);
+    console.log(`   Hreflangs:      ${sample.hreflangsCount} entries (x-default: ${sample.hasXDefault})`);
+    console.log(`   Structured:     JSON-LD Schema ${sample.hasJsonLd ? '✅ Valid' : '❌ Missing'}`);
+    console.log(`   Word Count:     ${sample.wordCount} words`);
+    console.log(`   Issues Found:   ${sample.issues.length === 0 ? 'None (100% Perfect)' : sample.issues.join(', ')}`);
+  }
 }
 
 console.log('\n==================================================================');
-if (healthScore >= 98 && status4xx === 0) {
+if (healthScore === 100) {
   console.log('✅ BOT CRAWL COMPLETE: SITE IS FULLY OPTIMIZED FOR SEARCH ENGINES!');
 } else {
-  console.log('⚠️ BOT CRAWL FINISHED WITH WARNINGS TO ADDRESS.');
+  console.log(`⚠️ BOT CRAWL FINISHED WITH HEALTH SCORE ${healthScore}/100 - PLEASE FIX REMAINING ISSUES.`);
 }
