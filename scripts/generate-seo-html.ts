@@ -879,24 +879,17 @@ const run = async () => {
   );
   writeFileSafe(path.join(distDir, 'index.html'), rootHtml);
 
-  // 4. Generate Legacy Redirect Alias Pages to prevent any 404 from obsolete slugs
+  // 4. Generate Legacy Redirect Alias Pages to prevent any 404 from obsolete slugs & GSC historical URLs
   let redirectCount = 0;
-  for (const [toolKey, slugMap] of Object.entries(toolSlugs)) {
-    const toolDef = TOOLS_CATALOG.find(t => t.id === toolKey || t.id.startsWith(toolKey) || (toolKey === 'remove-pdf' && t.id === 'remove-pages-pdf'));
-    if (!toolDef) {
-      // Deprecated/commented-out tool: redirect legacy URLs to respective language home
-      for (const lang of LANGS) {
-        const isEn = lang === 'en';
-        const legacySlug = slugMap[lang];
-        if (!legacySlug) continue;
 
-        const targetUrl = isEn ? '/' : `/${lang}`;
-        const legacyOutDir = isEn ? path.join(distDir, legacySlug) : path.join(distDir, lang, legacySlug);
-        const legacyOutFile = path.join(legacyOutDir, 'index.html');
-
-        if (!fs.existsSync(legacyOutFile)) {
-          const redirectHtml = `<!DOCTYPE html>
-<html lang="${lang}">
+  // Helper to safely write a redirect file
+  const createRedirectFile = (urlPath: string, targetUrl: string, langCode: string = 'en') => {
+    const cleanPath = urlPath.replace(/^\//, '').replace(/\/$/, '');
+    if (!cleanPath) return;
+    const targetFile = path.join(distDir, cleanPath, 'index.html');
+    if (!fs.existsSync(targetFile)) {
+      const redirectHtml = `<!DOCTYPE html>
+<html lang="${langCode}">
 <head>
   <meta charset="UTF-8">
   <title>Redirecting...</title>
@@ -908,64 +901,78 @@ const run = async () => {
   <p>Redirecting to <a href="${DOMAIN}${targetUrl}">${DOMAIN}${targetUrl}</a>...</p>
 </body>
 </html>`;
-          writeFileSafe(legacyOutFile, redirectHtml);
-          redirectCount++;
-        }
-      }
-      continue;
+      writeFileSafe(targetFile, redirectHtml);
+      redirectCount++;
     }
+  };
 
+  // A. Generate redirects for all 168 404 URLs identified from Google Search Console
+  const gscMapPath = path.join(__dirname, '404-redirect-map.json');
+  if (fs.existsSync(gscMapPath)) {
+    const gscMap: Record<string, string> = JSON.parse(fs.readFileSync(gscMapPath, 'utf8'));
+    for (const [sourceUrl, targetUrl] of Object.entries(gscMap)) {
+      const langMatch = sourceUrl.match(/^\/([a-z]{2})\//);
+      const lang = langMatch ? langMatch[1] : 'en';
+      createRedirectFile(sourceUrl, targetUrl, lang);
+    }
+  }
+
+  // B. Generate English static slugs redirects under foreign language prefixes (e.g. /id/security -> /id/keamanan)
+  const staticPageKeys: StaticPageId[] = ['about', 'privacy', 'terms', 'pricing', 'security', 'use-cases', 'compare', 'languages'];
+  for (const lang of LANGS) {
+    if (lang === 'en') continue;
+    for (const pageKey of staticPageKeys) {
+      const localSlug = STATIC_SLUGS[lang]?.[pageKey] || STATIC_SLUGS['en']?.[pageKey] || pageKey;
+      const targetUrl = `/${lang}/${localSlug}`;
+      createRedirectFile(`/${lang}/${pageKey}`, targetUrl, lang);
+    }
+  }
+
+  // C. Generate English tool IDs redirects under foreign language prefixes (e.g. /id/merge-pdf -> /id/gabungkan-pdf)
+  for (const lang of LANGS) {
+    if (lang === 'en') continue;
+    for (const tool of TOOLS_CATALOG) {
+      const localSlug = tool.slugs[lang] || tool.id;
+      const targetUrl = `/${lang}/${localSlug}`;
+      createRedirectFile(`/${lang}/${tool.id}`, targetUrl, lang);
+    }
+  }
+
+  // D. Generate /en/* redirects to root /* (e.g. /en/edit-pdf -> /edit-pdf)
+  for (const tool of TOOLS_CATALOG) {
+    const enSlug = tool.slugs['en'] || tool.id;
+    createRedirectFile(`/en/${enSlug}`, `/${enSlug}`, 'en');
+    createRedirectFile(`/en/${tool.id}`, `/${enSlug}`, 'en');
+  }
+  for (const pageKey of staticPageKeys) {
+    const enSlug = STATIC_SLUGS['en']?.[pageKey] || pageKey;
+    createRedirectFile(`/en/${enSlug}`, `/${enSlug}`, 'en');
+    createRedirectFile(`/en/${pageKey}`, `/${enSlug}`, 'en');
+  }
+
+  // E. Obsolete toolSlugs mapping from history
+  for (const [toolKey, slugMap] of Object.entries(toolSlugs)) {
+    const toolDef = TOOLS_CATALOG.find(t => t.id === toolKey || t.id.startsWith(toolKey) || (toolKey === 'remove-pdf' && t.id === 'remove-pages-pdf'));
     for (const lang of LANGS) {
       const isEn = lang === 'en';
       const legacySlug = slugMap[lang];
       if (!legacySlug) continue;
 
-      const currentSlug = toolDef.slugs[lang] || toolDef.id;
-      if (legacySlug !== currentSlug) {
-        const targetUrl = isEn ? `/${currentSlug}` : `/${lang}/${currentSlug}`;
-        const legacyOutDir = isEn ? path.join(distDir, legacySlug) : path.join(distDir, lang, legacySlug);
-        const legacyOutFile = path.join(legacyOutDir, 'index.html');
-
-        if (!fs.existsSync(legacyOutFile)) {
-          const redirectHtml = `<!DOCTYPE html>
-<html lang="${lang}">
-<head>
-  <meta charset="UTF-8">
-  <title>Redirecting...</title>
-  <link rel="canonical" href="${DOMAIN}${targetUrl}" />
-  <meta http-equiv="refresh" content="0; url=${DOMAIN}${targetUrl}" />
-  <script>window.location.replace("${DOMAIN}${targetUrl}");</script>
-</head>
-<body style="font-family: sans-serif; padding: 40px; text-align: center;">
-  <p>Redirecting to <a href="${DOMAIN}${targetUrl}">${DOMAIN}${targetUrl}</a>...</p>
-</body>
-</html>`;
-          writeFileSafe(legacyOutFile, redirectHtml);
-          redirectCount++;
+      if (!toolDef) {
+        const targetUrl = isEn ? '/' : `/${lang}`;
+        createRedirectFile(isEn ? `/${legacySlug}` : `/${lang}/${legacySlug}`, targetUrl, lang);
+      } else {
+        const currentSlug = toolDef.slugs[lang] || toolDef.id;
+        if (legacySlug !== currentSlug) {
+          const targetUrl = isEn ? `/${currentSlug}` : `/${lang}/${currentSlug}`;
+          createRedirectFile(isEn ? `/${legacySlug}` : `/${lang}/${legacySlug}`, targetUrl, lang);
         }
       }
     }
   }
 
   // Explicit alias for /remove-pages
-  const removePagesLegacyFile = path.join(distDir, 'remove-pages', 'index.html');
-  if (!fs.existsSync(removePagesLegacyFile)) {
-    const removeRedirect = `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Redirecting...</title>
-  <link rel="canonical" href="${DOMAIN}/remove-pages-pdf" />
-  <meta http-equiv="refresh" content="0; url=${DOMAIN}/remove-pages-pdf" />
-  <script>window.location.replace("${DOMAIN}/remove-pages-pdf");</script>
-</head>
-<body style="font-family: sans-serif; padding: 40px; text-align: center;">
-  <p>Redirecting to <a href="${DOMAIN}/remove-pages-pdf">${DOMAIN}/remove-pages-pdf</a>...</p>
-</body>
-</html>`;
-    writeFileSafe(removePagesLegacyFile, removeRedirect);
-    redirectCount++;
-  }
+  createRedirectFile('/remove-pages', '/remove-pages-pdf', 'en');
 
   console.log(`Generated ${redirectCount} legacy alias redirects to prevent 404s!`);
   console.log(`Successfully generated ${generatedCount} static HTML files!`);
