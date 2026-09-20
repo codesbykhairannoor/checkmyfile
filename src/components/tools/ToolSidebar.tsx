@@ -41,8 +41,10 @@ interface ToolSidebarProps {
   setWatermarkConfig: (v: any) => void;
   pageNumberConfig: any;
   setPageNumberConfig: (v: any) => void;
-  compressQuality: 'extreme' | 'balanced' | 'high';
-  setCompressQuality: (v: 'extreme' | 'balanced' | 'high') => void;
+  compressQuality: 'extreme' | 'balanced' | 'high' | 'custom';
+  setCompressQuality: (v: 'extreme' | 'balanced' | 'high' | 'custom') => void;
+  compressPercent?: number;
+  setCompressPercent?: (v: number) => void;
 
   extractImageFormat?: 'png' | 'jpg';
   setExtractImageFormat?: (v: 'png' | 'jpg') => void;
@@ -71,6 +73,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
   tool, files, setFiles, activeFileIndex, setActiveFileIndex, isProcessing, handleStartProcessing,
   splitRange, setSplitRange, rotateDegrees, setRotateDegrees,
   pageNumberConfig, setPageNumberConfig, watermarkConfig, setWatermarkConfig, compressQuality, setCompressQuality,
+  compressPercent, setCompressPercent,
   extractImageFormat, setExtractImageFormat,
   removeRange, setRemoveRange, insertFile, setInsertFile, insertAtIndex, setInsertAtIndex, signatureConfig, setSignatureConfig,
   pdfPassword, setPdfPassword, cropConfig, setCropConfig, redactConfig, setRedactConfig,
@@ -110,7 +113,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
           {files.length > 1 && (
             <div style={{ paddingBottom: 12, marginBottom: 12, borderBottom: '1px solid var(--border-color)' }}>
               <label style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)', marginBottom: 6, display: 'block' }}>
-                {tUi[(tUi["Pilih Dokumen Pratinjau:"] || (tUi["Pilih Dokumen Pratinjau:"] || "Pilih Dokumen Pratinjau:"))] || (tUi["Pilih Dokumen Pratinjau:"] || (tUi["Pilih Dokumen Pratinjau:"] || "Pilih Dokumen Pratinjau:"))}
+                {tUi.select_preview_document || tUi["Pilih Dokumen Pratinjau:"] || "Select Preview Document:"}
               </label>
               <select
                 value={activeFileIndex}
@@ -155,7 +158,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
               className="btn-secondary"
               style={{ flex: 1, padding: '8px', fontSize: '0.75rem', display: 'flex', justifyContent: 'center', background: 'var(--bg-input)' }}
             >
-              {allowMultiple ? '+ Add More Files' : (tUi["Ganti Dokumen"] || (tUi["Change Document"] || "Change Document"))}
+              {allowMultiple ? (tUi.add_more_files || '+ Add More Files') : (tUi.change_document || tUi["Ganti Dokumen"] || "Change Document")}
             </button>
           </div>
         </div>
@@ -165,7 +168,18 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
       {tool.id === 'page-numbers' && <PageNumbersPdfEditor config={pageNumberConfig} setConfig={setPageNumberConfig} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
       {tool.id === 'split-pdf' && <SplitPdfEditor splitRange={splitRange} setSplitRange={setSplitRange} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
       {(tool.id === 'merge-pdf' || tool.id === 'combine-multiple-pdf-files') && <MergePdfEditor files={files} setFiles={setFiles} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
-      {(tool.id === 'compress-pdf' || tool.id === 'compress-pdf-for-email' || tool.id === 'compress-pdf-to-100kb' || tool.id === 'compress-pdf-without-losing-quality' || tool.id === 'reduce-pdf-size-offline') && <CompressPdfEditor quality={compressQuality} setQuality={setCompressQuality} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
+      {(tool.id === 'compress-pdf' || tool.id === 'compress-pdf-for-email' || tool.id === 'compress-pdf-to-100kb' || tool.id === 'compress-pdf-without-losing-quality' || tool.id === 'reduce-pdf-size-offline') && (
+        <CompressPdfEditor
+          quality={compressQuality}
+          setQuality={setCompressQuality}
+          percent={compressPercent ?? 50}
+          setPercent={setCompressPercent}
+          onApply={handleStartProcessing}
+          tUi={tUi}
+          isProcessing={isProcessing}
+          originalSizeKB={files[activeFileIndex] ? Math.round(files[activeFileIndex].size / 1024) : 0}
+        />
+      )}
 
       {tool.id === 'pdf-to-image' && extractImageFormat && setExtractImageFormat && (
         <PdfToImageEditor format={extractImageFormat} setFormat={setExtractImageFormat} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
@@ -211,7 +225,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
                   activePageIndex={activeFileIndex} onApply={() => handleStartProcessing({ toolId: 'edit-pdf' })} tUi={tUi} isProcessing={isProcessing} 
                 />
               )}
-              <div style={{ height: 1, background: 'var(--border-color)', margin: (tUi["0 -16px"] || "0 -16px") }} />
+              <div style={{ height: 1, background: 'var(--border-color)', margin: '0 -16px' }} />
               {signatureConfig && setSignatureConfig && (
                 <SignPdfEditor signatureConfig={signatureConfig} setSignatureConfig={setSignatureConfig} onApply={() => handleStartProcessing({ toolId: 'sign-pdf' })} tUi={tUi} isProcessing={isProcessing} />
               )}
@@ -224,13 +238,13 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
             </summary>
             <div style={{ padding: '20px 16px', display: 'flex', flexDirection: 'column', gap: 24, background: 'var(--bg-card)' }}>
               <RotatePdfEditor rotation={rotateDegrees} setRotation={setRotateDegrees} onApply={() => handleStartProcessing({ toolId: 'rotate-pdf' })} tUi={tUi} isProcessing={isProcessing} />
-              <div style={{ height: 1, background: 'var(--border-color)', margin: (tUi["0 -16px"] || "0 -16px") }} />
+              <div style={{ height: 1, background: 'var(--border-color)', margin: '0 -16px' }} />
               <SplitPdfEditor splitRange={splitRange} setSplitRange={setSplitRange} onApply={() => handleStartProcessing({ toolId: 'split-pdf' })} tUi={tUi} isProcessing={isProcessing} />
-              <div style={{ height: 1, background: 'var(--border-color)', margin: (tUi["0 -16px"] || "0 -16px") }} />
+              <div style={{ height: 1, background: 'var(--border-color)', margin: '0 -16px' }} />
               {cropConfig && setCropConfig && (
                 <CropPdfEditor cropConfig={cropConfig} setCropConfig={setCropConfig} onApply={() => handleStartProcessing({ toolId: 'crop-pdf' })} tUi={tUi} isProcessing={isProcessing} />
               )}
-              <div style={{ height: 1, background: 'var(--border-color)', margin: (tUi["0 -16px"] || "0 -16px") }} />
+              <div style={{ height: 1, background: 'var(--border-color)', margin: '0 -16px' }} />
               {removeRange !== undefined && setRemoveRange && (
                 <RemovePdfEditor removeRange={removeRange} setRemoveRange={setRemoveRange} onApply={() => handleStartProcessing({ toolId: 'remove-pdf' })} tUi={tUi} isProcessing={isProcessing} />
               )}
@@ -243,9 +257,9 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
             </summary>
             <div style={{ padding: '20px 16px', display: 'flex', flexDirection: 'column', gap: 24, background: 'var(--bg-card)' }}>
               <WatermarkPdfEditor config={watermarkConfig} setConfig={setWatermarkConfig} onApply={() => handleStartProcessing({ toolId: 'watermark-pdf' })} tUi={tUi} isProcessing={isProcessing} />
-              <div style={{ height: 1, background: 'var(--border-color)', margin: (tUi["0 -16px"] || "0 -16px") }} />
+              <div style={{ height: 1, background: 'var(--border-color)', margin: '0 -16px' }} />
               <PageNumbersPdfEditor config={pageNumberConfig} setConfig={setPageNumberConfig} onApply={() => handleStartProcessing({ toolId: 'page-numbers' })} tUi={tUi} isProcessing={isProcessing} />
-              <div style={{ height: 1, background: 'var(--border-color)', margin: (tUi["0 -16px"] || "0 -16px") }} />
+              <div style={{ height: 1, background: 'var(--border-color)', margin: '0 -16px' }} />
               {pdfPassword !== undefined && setPdfPassword && (
                 <ProtectPdfEditor pdfPassword={pdfPassword} setPdfPassword={setPdfPassword} onApply={() => handleStartProcessing({ toolId: 'protect-pdf' })} tUi={tUi} isProcessing={isProcessing} />
               )}

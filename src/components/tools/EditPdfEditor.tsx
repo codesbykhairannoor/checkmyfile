@@ -15,10 +15,16 @@ interface EditPdfEditorProps {
 
 export const EditPdfEditor: React.FC<EditPdfEditorProps> = ({
   tUi = {},
-  elements, setElements, selectedId, setSelectedId, activePageIndex, onApply, isProcessing
+  elements,
+  setElements,
+  selectedId,
+  setSelectedId,
+  activePageIndex,
+  onApply,
+  isProcessing
 }) => {
-  void tUi;
-  
+  const t = (key: string, fallback: string) => tUi[key] || tUi[fallback] || fallback;
+
   const handleAddText = () => {
     const newId = `text-${Date.now()}`;
     setElements(prev => [...prev, {
@@ -27,7 +33,7 @@ export const EditPdfEditor: React.FC<EditPdfEditorProps> = ({
       pageIndex: activePageIndex,
       x: 50,
       y: 50,
-      text: (tUi["Double click to edit"] || "Double click to edit"),
+      text: t('double_click_to_edit', 'Double click to edit'),
       fontSize: 24,
       color: '#ef4444',
       fontFamily: 'bold'
@@ -81,19 +87,21 @@ export const EditPdfEditor: React.FC<EditPdfEditorProps> = ({
       <div>
         <h4 style={{ fontWeight: 800, fontSize: '1.1rem', color: 'var(--text-main)', marginBottom: 6, display: 'flex', alignItems: 'center', gap: 8 }}>
           <PenTool size={18} className="text-brand-primary" />
-          <span>{tUi["Edit PDF"] || (tUi["Edit PDF"] || "Edit PDF")}</span>
+          <span>{t('edit_pdf', 'Edit PDF')}</span>
         </h4>
-        <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>{tUi["Tambahkan teks dan gambar ke dalam dokumen Anda. Geser elemen di layar pratinjau."] || (tUi["Tambahkan teks dan gambar ke dalam dokumen Anda. Geser elemen di layar pratinjau."] || "Tambahkan teks dan gambar ke dalam dokumen Anda. Geser elemen di layar pratinjau.")}</p>
+        <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
+          {t('edit_pdf_desc', 'Add text and images into your document. Move elements freely on preview.')}
+        </p>
       </div>
 
       <div style={{ display: 'flex', gap: 12 }}>
         <button onClick={handleAddText} className="btn-secondary" style={{ flex: 1, padding: '10px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, fontSize: '0.8rem' }}>
           <Type size={18} />
-          <span>{tUi["Teks"] || (tUi["Teks"] || "Teks")}</span>
+          <span>{t('text', 'Text')}</span>
         </button>
         <button onClick={handleAddImage} className="btn-secondary" style={{ flex: 1, padding: '10px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, fontSize: '0.8rem' }}>
           <ImageIcon size={18} />
-          <span>{tUi["Gambar"] || (tUi["Gambar"] || "Gambar")}</span>
+          <span>{t('image', 'Image')}</span>
         </button>
       </div>
 
@@ -101,16 +109,19 @@ export const EditPdfEditor: React.FC<EditPdfEditorProps> = ({
         <div style={{ padding: 16, background: 'var(--bg-input)', borderRadius: 12, border: '1px solid var(--border-color)', display: 'flex', flexDirection: 'column', gap: 16 }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <span style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)' }}>
-              Properti {selectedEl.type === 'text' ? (tUi["Teks"] || "Teks") : (tUi["Gambar"] || (tUi["Gambar"] || "Gambar"))}
+              {selectedEl.type === 'text' ? t('text_properties', 'Text Properties') : t('image_properties', 'Image Properties')}
             </span>
             <button onClick={deleteSelected} style={{ background: 'none', border: 'none', color: '#ef4444', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 4, fontSize: '0.75rem', fontWeight: 700 }}>
-              <Trash2 size={14} />{tUi["Hapus"] || (tUi["Hapus"] || "Hapus")}</button>
+              <Trash2 size={14} />{t('delete', 'Delete')}
+            </button>
           </div>
           
           {selectedEl.type === 'text' && (
             <>
               <div>
-                <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)', marginBottom: 6 }}>{tUi["Konten Teks"] || (tUi["Konten Teks"] || "Konten Teks")}</label>
+                <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)', marginBottom: 6 }}>
+                  {t('text_content', 'Text Content')}
+                </label>
                 <textarea 
                   value={selectedEl.text || ''} 
                   onChange={e => updateSelected({ text: e.target.value })} 
@@ -119,7 +130,9 @@ export const EditPdfEditor: React.FC<EditPdfEditorProps> = ({
               </div>
               <div style={{ display: 'flex', gap: 12 }}>
                 <div style={{ flex: 1 }}>
-                  <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)', marginBottom: 6 }}>{tUi["Warna"] || (tUi["Warna"] || "Warna")}</label>
+                  <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)', marginBottom: 6 }}>
+                    {t('color', 'Color')}
+                  </label>
                   <input 
                     type="color" 
                     value={selectedEl.color || '#000000'} 
@@ -128,7 +141,9 @@ export const EditPdfEditor: React.FC<EditPdfEditorProps> = ({
                   />
                 </div>
                 <div style={{ flex: 1 }}>
-                  <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)', marginBottom: 6 }}>{tUi["Ukuran"] || (tUi["Ukuran"] || "Ukuran")}</label>
+                  <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)', marginBottom: 6 }}>
+                    {t('size', 'Size')}
+                  </label>
                   <input 
                     type="number" 
                     value={selectedEl.fontSize || 16} 
@@ -138,14 +153,16 @@ export const EditPdfEditor: React.FC<EditPdfEditorProps> = ({
                 </div>
               </div>
               <div>
-                <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)', marginBottom: 6 }}>{tUi["Gaya Font"] || (tUi["Gaya Font"] || "Gaya Font")}</label>
+                <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)', marginBottom: 6 }}>
+                  {t('font_style', 'Font Style')}
+                </label>
                 <select 
                   value={selectedEl.fontFamily || 'normal'} 
                   onChange={e => updateSelected({ fontFamily: e.target.value })}
                   style={{ width: '100%', padding: '8px', borderRadius: 6, border: '1px solid var(--border-color)', background: 'var(--bg-app)', fontSize: '0.85rem' }}
                 >
-                  <option value="normal">{tUi["Helvetica Normal"] || "Helvetica Normal"}</option>
-                  <option value="bold">{tUi["Helvetica Bold"] || "Helvetica Bold"}</option>
+                  <option value="normal">{t('helvetica_normal', 'Helvetica Normal')}</option>
+                  <option value="bold">{t('helvetica_bold', 'Helvetica Bold')}</option>
                 </select>
               </div>
             </>
@@ -154,7 +171,9 @@ export const EditPdfEditor: React.FC<EditPdfEditorProps> = ({
           {selectedEl.type === 'image' && (
             <div style={{ display: 'flex', gap: 12 }}>
               <div style={{ flex: 1 }}>
-                <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)', marginBottom: 6 }}>{tUi["Lebar (%)"] || "Lebar (%)"}</label>
+                <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)', marginBottom: 6 }}>
+                  {t('width_percent', 'Width (%)')}
+                </label>
                 <input 
                   type="number" 
                   value={selectedEl.width || 30} 
@@ -163,7 +182,9 @@ export const EditPdfEditor: React.FC<EditPdfEditorProps> = ({
                 />
               </div>
               <div style={{ flex: 1 }}>
-                <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)', marginBottom: 6 }}>{tUi["Tinggi (%)"] || "Tinggi (%)"}</label>
+                <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)', marginBottom: 6 }}>
+                  {t('height_percent', 'Height (%)')}
+                </label>
                 <input 
                   type="number" 
                   value={selectedEl.height || 30} 
@@ -188,7 +209,7 @@ export const EditPdfEditor: React.FC<EditPdfEditorProps> = ({
           ) : (
             <Download size={18} />
           )}
-          <span>{isProcessing ? (tUi["Memproses..."] || "Memproses...") : (tUi["Terapkan Editan"] || (tUi["Terapkan Editan"] || "Terapkan Editan"))}</span>
+          <span>{isProcessing ? t('processing_wait', 'Processing...') : t('apply_edits', 'Apply Edits Now')}</span>
         </button>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Eraser, ShieldCheck } from 'lucide-react';
+import { Eraser, ShieldCheck, Download, Settings2 } from 'lucide-react';
 
 interface RemoveMetadataEditorProps {
   tUi?: Record<string, string>;
@@ -9,38 +9,23 @@ interface RemoveMetadataEditorProps {
 
 export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
   tUi = {},
- onProcess, isProcessing }) => {
-  void tUi;
+  onProcess, isProcessing
+}) => {
+  const t = (key: string, fallback: string) => tUi[key] || tUi[fallback] || fallback;
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
-      <div style={{ display: 'flex', alignItems: 'flex-start', gap: 16, background: 'var(--bg-card)', padding: 24, borderRadius: 16, border: '1px solid var(--border-color)', boxShadow: '0 4px 12px rgba(0,0,0,0.02)' }}>
+      <div style={{ display: 'flex', alignItems: 'flex-start', gap: 16, background: 'var(--bg-card)', padding: 24, borderRadius: 16, border: '1px solid var(--border-color)' }}>
         <div style={{ padding: 12, background: 'rgba(225, 29, 72, 0.1)', color: 'var(--brand-primary)', borderRadius: 12 }}>
           <Eraser size={24} />
         </div>
         <div>
-          <h3 style={{ margin: 0, marginBottom: 8, fontSize: '1.25rem', fontWeight: 800, color: 'var(--text-main)', fontFamily: 'var(--font-display)' }}>{tUi["Bersihkan Jejak Digital (Metadata)"] || (tUi["Bersihkan Jejak Digital (Metadata)"] || "Bersihkan Jejak Digital (Metadata)")}</h3>
-          <p style={{ margin: 0, color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: 1.5 }}>{tUi["Alat ini akan menghapus semua properti tersembunyi dari PDF Anda secara permanen."] || (tUi["Alat ini akan menghapus semua properti tersembunyi dari PDF Anda secara permanen."] || "Alat ini akan menghapus semua properti tersembunyi dari PDF Anda secara permanen.")}</p>
-        </div>
-      </div>
-
-      <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: 12, overflow: 'hidden' }}>
-        <div style={{ padding: 16, borderBottom: '1px solid var(--border-color)', background: 'rgba(0,0,0,0.02)' }}>
-          <h4 style={{ margin: 0, fontSize: '0.95rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: 8, color: 'var(--text-main)' }}>
-            <ShieldCheck size={18} className="text-accent" />{tUi["Data yang akan dihapus:"] || (tUi["Data yang akan dihapus:"] || "Data yang akan dihapus:")}</h4>
-        </div>
-        <div style={{ padding: 16, display: 'flex', flexDirection: 'column', gap: 12 }}>
-          {[
-            (tUi["Nama Pembuat Dokumen (Author)"] || (tUi["Nama Pembuat Dokumen (Author)"] || "Nama Pembuat Dokumen (Author)")),
-            (tUi["Aplikasi Pembuat (Creator/Producer)"] || (tUi["Aplikasi Pembuat (Creator/Producer)"] || "Aplikasi Pembuat (Creator/Producer)")),
-            (tUi["Tanggal Pembuatan & Modifikasi"] || (tUi["Tanggal Pembuatan & Modifikasi"] || "Tanggal Pembuatan & Modifikasi")),
-            (tUi["Judul dan Subjek Dokumen"] || (tUi["Judul dan Subjek Dokumen"] || "Judul dan Subjek Dokumen")),
-            (tUi["Kata Kunci Tersembunyi (Keywords)"] || (tUi["Kata Kunci Tersembunyi (Keywords)"] || "Kata Kunci Tersembunyi (Keywords)"))
-          ].map((item, i) => (
-            <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-              <div style={{ width: 6, height: 6, borderRadius: '50%', background: 'var(--brand-primary)' }} />
-              <span style={{ fontSize: '0.9rem', color: 'var(--text-main)' }}>{item}</span>
-            </div>
-          ))}
+          <h3 style={{ margin: 0, marginBottom: 8, fontSize: '1.25rem', fontWeight: 800, color: 'var(--text-main)', fontFamily: 'var(--font-display)' }}>
+            {t("remove_metadata", "Remove Metadata")}
+          </h3>
+          <p style={{ margin: 0, color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: 1.5 }}>
+            {t("remove_metadata_desc", "Sanitize author, creator, GPS, and creation timestamps permanently.")}
+          </p>
         </div>
       </div>
 
@@ -48,9 +33,14 @@ export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
         onClick={onProcess}
         disabled={isProcessing}
         className="btn-primary"
-        style={{ width: '100%', padding: '16px', fontSize: '1.1rem' }}
+        style={{ width: '100%', padding: '16px', fontSize: '1.05rem', borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10 }}
       >
-        {isProcessing ? (tUi["Membersihkan Metadata..."] || "Membersihkan Metadata...") : (tUi["Hapus Metadata Sekarang"] || (tUi["Hapus Metadata Sekarang"] || "Hapus Metadata Sekarang"))}
+        {isProcessing ? (
+          <div style={{ animation: 'spin 1s linear infinite' }}><Settings2 size={18} /></div>
+        ) : (
+          <Download size={18} />
+        )}
+        <span>{isProcessing ? t("sanitizing_btn", "Sanitizing...") : t("apply_remove_metadata", "Sanitize Metadata Now")}</span>
       </button>
     </div>
   );

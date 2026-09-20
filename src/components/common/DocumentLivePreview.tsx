@@ -652,8 +652,8 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
                 </div>
                 <div>
-                  <h3 style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-display)', margin: 0 }}>{tUi["Document Navigation"] || t.previewNavDoc || "Navigasi Dokumen"}</h3>
-                  <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: 0, marginTop: 4 }}>{tUi["Pilih halaman untuk melompat"] || "Pilih halaman untuk melompat"}</p>
+                  <h3 style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-display)', margin: 0 }}>{tUi.document_navigation || tUi["Document Navigation"] || t.previewNavDoc || "Document Navigation"}</h3>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: 0, marginTop: 4 }}>{tUi.select_page_to_jump || tUi["Select page to jump"] || tUi["Pilih halaman untuk melompat"] || "Select page to jump"}</p>
                 </div>
               </div>
 
@@ -677,7 +677,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
                         defaultRatio={pageAspectRatio}
                       />
                     </div>
-                    <span style={{ fontSize: '0.8rem', fontWeight: 700, color: pageNumber === i + 1 ? 'var(--brand-primary)' : 'var(--text-muted)' }}>Hal {i + 1}</span>
+                    <span style={{ fontSize: '0.8rem', fontWeight: 700, color: pageNumber === i + 1 ? 'var(--brand-primary)' : 'var(--text-muted)' }}>{tUi.page_count_label || "Page"} {i + 1}</span>
                   </div>
                 ))}
               </div>
@@ -751,17 +751,17 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
                       <Presentation size={20} />
                     </div>
                     <div>
-                      <h3 style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-display)', margin: 0 }}>{t.previewFileDetails || "Rincian Berkas"}</h3>
-                      <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: 0, marginTop: 4 }}>Informasi presentasi</p>
+                      <h3 style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-display)', margin: 0 }}>{tUi.file_details || t.previewFileDetails || "File Details"}</h3>
+                      <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: 0, marginTop: 4 }}>{tUi.presentation_info || "Presentation Information"}</p>
                     </div>
                   </div>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 12, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                      <span style={{ fontWeight: 600 }}>Nama Berkas:</span>
+                      <span style={{ fontWeight: 600 }}>{tUi.file_name || "File Name"}:</span>
                       <span style={{ wordBreak: 'break-all', textAlign: 'right', maxWidth: '60%' }}>{activeFile.name}</span>
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                      <span style={{ fontWeight: 600 }}>Ukuran:</span>
+                      <span style={{ fontWeight: 600 }}>{tUi.file_size || "Size"}:</span>
                       <span>{(activeFile.size / 1024 / 1024).toFixed(2)} MB</span>
                     </div>
                   </div>
@@ -786,17 +786,17 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
                       <TableProperties size={20} />
                     </div>
                     <div>
-                      <h3 style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-display)', margin: 0 }}>{t.previewFileDetails || "Rincian Berkas"}</h3>
-                      <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: 0, marginTop: 4 }}>Informasi lembar sebar (Spreadsheet)</p>
+                      <h3 style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-display)', margin: 0 }}>{tUi.file_details || t.previewFileDetails || "File Details"}</h3>
+                      <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: 0, marginTop: 4 }}>{tUi.spreadsheet_info || "Spreadsheet Information"}</p>
                     </div>
                   </div>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 12, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                      <span style={{ fontWeight: 600 }}>Nama Berkas:</span>
+                      <span style={{ fontWeight: 600 }}>{tUi.file_name || "File Name"}:</span>
                       <span style={{ wordBreak: 'break-all', textAlign: 'right', maxWidth: '60%' }}>{activeFile.name}</span>
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                      <span style={{ fontWeight: 600 }}>Ukuran:</span>
+                      <span style={{ fontWeight: 600 }}>{tUi.file_size || "Size"}:</span>
                       <span>{(activeFile.size / 1024 / 1024).toFixed(2)} MB</span>
                     </div>
                   </div>

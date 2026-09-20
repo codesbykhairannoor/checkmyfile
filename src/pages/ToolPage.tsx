@@ -160,7 +160,8 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
     scale: 1,
     rotation: 45
   });
-  const [compressQuality, setCompressQuality] = useState<'extreme' | 'balanced' | 'high'>('balanced');
+  const [compressQuality, setCompressQuality] = useState<'extreme' | 'balanced' | 'high' | 'custom'>('balanced');
+  const [compressPercent, setCompressPercent] = useState<number>(50);
   const [extractImageFormat, setExtractImageFormat] = useState<'png' | 'jpg'>('png');
 
   // New Tools States
@@ -215,7 +216,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
   const handleStartProcessing = (options?: any) => {
     startProcessing({
       files, toolId: tool.id, toolCategory: tool.category, currentLang,
-      splitRange, rotateDegrees, pageNumberConfig, watermarkConfig, compressQuality, extractImageFormat,
+      splitRange, rotateDegrees, pageNumberConfig, watermarkConfig, compressQuality, compressPercent, extractImageFormat,
       removeRange, insertFile, insertAtIndex, signatureConfig, pdfPassword, cropConfig, redactConfig,
       resizePageSize: resizeConfig.pageSize, resizeOrientation: resizeConfig.orientation, resizeMargin: resizeConfig.margin,
       ...options
@@ -332,6 +333,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                 pageNumberConfig={pageNumberConfig} setPageNumberConfig={setPageNumberConfig}
                 watermarkConfig={watermarkConfig} setWatermarkConfig={setWatermarkConfig}
                 compressQuality={compressQuality} setCompressQuality={setCompressQuality}
+                compressPercent={compressPercent} setCompressPercent={setCompressPercent}
                 extractImageFormat={extractImageFormat} setExtractImageFormat={setExtractImageFormat}
                 removeRange={removeRange} setRemoveRange={setRemoveRange}
                 insertFile={insertFile} setInsertFile={setInsertFile}

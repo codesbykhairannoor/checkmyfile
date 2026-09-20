@@ -3,101 +3,123 @@ import { EyeOff, PlusCircle, AlertTriangle } from 'lucide-react';
 
 interface RedactPdfEditorProps {
   tUi?: Record<string, string>;
+  redactConfig: {
+    mode: 'black' | 'blur';
+    showLock: boolean;
+    boxes: Record<number, Array<{ id: string; x: number; y: number; width: number; height: number }>>;
+  };
+  setRedactConfig: React.Dispatch<React.SetStateAction<any>>;
   onProcess: () => void;
   isProcessing: boolean;
-  redactConfig: any;
-  setRedactConfig: React.Dispatch<React.SetStateAction<any>>;
-  activeFileIndex: number; // We assume activePage is always 1 internally or we add to page 1 by default, but let's just add to the currently visible page if possible, or just page 0 for now.
+  activeFileIndex?: number;
 }
 
 export const RedactPdfEditor: React.FC<RedactPdfEditorProps> = ({
   tUi = {},
- onProcess, isProcessing, redactConfig, setRedactConfig }) => {
-  void tUi;
-  const addRedactBox = () => {
-    const id = Math.random().toString(36).substr(2, 9);
+  redactConfig,
+  setRedactConfig,
+  onProcess,
+  isProcessing
+}) => {
+  const t = (key: string, fallback: string) => tUi[key] || tUi[fallback] || fallback;
+
+  const addBox = (pageIndex: number) => {
+    const newBox = {
+      id: Math.random().toString(36).substring(7),
+      x: 100,
+      y: 100,
+      width: 200,
+      height: 40
+    };
     setRedactConfig((prev: any) => {
-      const page0Boxes = prev.boxes[0] || [];
+      const pageBoxes = prev.boxes[pageIndex] || [];
       return {
         ...prev,
         boxes: {
           ...prev.boxes,
-          [0]: [...page0Boxes, { id, x: 35, y: 45, width: 25, height: 5 }]
+          [pageIndex]: [...pageBoxes, newBox]
         }
       };
     });
   };
 
-  const totalBoxes: number = Object.values(redactConfig.boxes || {}).reduce((sum: number, boxes: any) => sum + boxes.length, 0) as number;
+  const totalBoxes = Object.values(redactConfig.boxes || {}).reduce((sum, list) => sum + list.length, 0);
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
-      <div style={{ display: 'flex', alignItems: 'flex-start', gap: 16, background: 'var(--bg-card)', padding: 24, borderRadius: 16, border: '1px solid var(--border-color)', boxShadow: '0 4px 12px rgba(0,0,0,0.02)' }}>
-        <div style={{ padding: 12, background: 'rgba(225, 29, 72, 0.1)', color: 'var(--brand-primary)', borderRadius: 12 }}>
-          <EyeOff size={24} />
-        </div>
-        <div>
-          <h3 style={{ margin: 0, marginBottom: 8, fontSize: '1.25rem', fontWeight: 800, color: 'var(--text-main)', fontFamily: 'var(--font-display)' }}>{tUi["Sensor Dokumen (Redact)"] || (tUi["Sensor Dokumen (Redact)"] || "Sensor Dokumen (Redact)")}</h3>
-          <p style={{ margin: 0, color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: 1.5 }}>{tUi["Tutup informasi rahasia dengan blok hitam permanen."] || (tUi["Tutup informasi rahasia dengan blok hitam permanen."] || "Tutup informasi rahasia dengan blok hitam permanen.")}</p>
-        </div>
-      </div>
-
-      <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: 12, padding: 20 }}>
-        <button
-          onClick={addRedactBox}
-          className="btn-secondary"
-          style={{ width: '100%', padding: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, marginBottom: 16 }}
-        >
-          <PlusCircle size={18} />{tUi["Tambah Area Sensor (Halaman 1)"] || (tUi["Tambah Area Sensor (Halaman 1)"] || "Tambah Area Sensor (Halaman 1)")}</button>
-        
-        <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-muted)', textAlign: 'center' }}>{tUi["Geser kotak di bagian Pratinjau (Kiri) ke teks yang ingin disensor. Tarik sudut kanan-bawah kotak untuk memperbesar."] || (tUi["Geser kotak di bagian Pratinjau (Kiri) ke teks yang ingin disensor. Tarik sudut kanan-bawah kotak untuk memperbesar."] || "Geser kotak di bagian Pratinjau (Kiri) ke teks yang ingin disensor. Tarik sudut kanan-bawah kotak untuk memperbesar.")}</p>
-
-        {totalBoxes > 0 && (
-          <div style={{ marginTop: 16, padding: '12px', background: 'rgba(16, 185, 129, 0.1)', color: '#047857', borderRadius: 8, fontSize: '0.9rem', fontWeight: 600, textAlign: 'center' }}>
-            {totalBoxes} {tUi["Area Sensor Aktif"] || "Area Sensor Aktif"}</div>
-        )}
-
-        <div style={{ marginTop: 24, display: 'flex', flexDirection: 'column', gap: 16 }}>
-          <div>
-            <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: 8 }}>{tUi["Gaya Sensor"] || (tUi["Gaya Sensor"] || "Gaya Sensor")}</label>
-            <div style={{ display: 'flex', gap: 8 }}>
-              <button 
-                onClick={() => setRedactConfig((prev: any) => ({ ...prev, mode: 'black' }))}
-                style={{ flex: 1, padding: '8px', borderRadius: 8, border: `1px solid ${redactConfig.mode === 'black' ? 'var(--brand-primary)' : 'var(--border-color)'}`, background: redactConfig.mode === 'black' ? 'rgba(139, 92, 246, 0.1)' : 'transparent', color: redactConfig.mode === 'black' ? 'var(--brand-primary)' : 'var(--text-muted)', fontSize: '0.85rem', fontWeight: 600, cursor: 'pointer' }}
-              >{tUi["Blok Hitam"] || (tUi["Blok Hitam"] || "Blok Hitam")}</button>
-              <button 
-                onClick={() => setRedactConfig((prev: any) => ({ ...prev, mode: 'blur' }))}
-                style={{ flex: 1, padding: '8px', borderRadius: 8, border: `1px solid ${redactConfig.mode === 'blur' ? 'var(--brand-primary)' : 'var(--border-color)'}`, background: redactConfig.mode === 'blur' ? 'rgba(139, 92, 246, 0.1)' : 'transparent', color: redactConfig.mode === 'blur' ? 'var(--brand-primary)' : 'var(--text-muted)', fontSize: '0.85rem', fontWeight: 600, cursor: 'pointer' }}
-              >{tUi["Efek Blur"] || (tUi["Efek Blur"] || "Efek Blur")}</button>
-            </div>
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+      <div style={{ padding: '24px', borderBottom: '1px solid var(--border-color)', background: 'rgba(255,255,255,0.02)' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 8 }}>
+          <div style={{ background: '#ef4444', color: 'white', padding: '8px', borderRadius: 8 }}>
+            <EyeOff size={20} />
           </div>
-          
-          <label style={{ display: 'flex', alignItems: 'center', gap: 12, cursor: 'pointer' }}>
-            <input 
-              type="checkbox" 
-              checked={redactConfig.showLock} 
-              onChange={(e) => setRedactConfig((prev: any) => ({ ...prev, showLock: e.target.checked }))} 
-              style={{ width: 16, height: 16, accentColor: 'var(--brand-primary)' }}
-            />
-            <span style={{ fontSize: '0.9rem', color: 'var(--text-main)', fontWeight: 500 }}>{tUi["Tampilkan Ikon Gembok (Keren)"] || (tUi["Tampilkan Ikon Gembok (Keren)"] || "Tampilkan Ikon Gembok (Keren)")}</span>
-          </label>
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 800, margin: 0 }}>{t("redact_pdf", "Redact PDF")}</h2>
         </div>
-      </div>
-
-      <div style={{ background: 'rgba(245, 158, 11, 0.1)', padding: 16, borderRadius: 12, border: '1px solid rgba(245, 158, 11, 0.2)', display: 'flex', gap: 12, alignItems: 'flex-start' }}>
-        <AlertTriangle size={20} color="#d97706" style={{ flexShrink: 0, marginTop: 2 }} />
-        <p style={{ margin: 0, fontSize: '0.9rem', color: '#b45309', lineHeight: 1.5 }}>{tUi["Proses ini menggunakan"] || (tUi["Proses ini menggunakan"] || "Proses ini menggunakan")}<strong>{tUi["Rasterisasi Penuh"] || (tUi["Rasterisasi Penuh"] || "Rasterisasi Penuh")}</strong>{tUi[". Teks asli yang tertutup akan hancur sepenuhnya dari kode sumber PDF, sehingga mustahil untuk dipulihkan oleh"] || ". Teks asli yang tertutup akan hancur sepenuhnya dari kode sumber PDF, sehingga mustahil untuk dipulihkan oleh"}<i>{tUi["hacker"] || "hacker"}</i>.
+        <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', margin: 0 }}>
+          {t("redact_desc", "Permanently black out sensitive information and rasterize to prevent copying.")}
         </p>
       </div>
 
-      <button
-        onClick={onProcess}
-        disabled={isProcessing || totalBoxes === 0}
-        className="btn-primary"
-        style={{ width: '100%', padding: '16px', fontSize: '1.1rem', opacity: (totalBoxes === 0 || isProcessing) ? 0.6 : 1 }}
-      >
-        {isProcessing ? (tUi["Menyensor & Merasterisasi..."] || "Menyensor & Merasterisasi...") : (tUi["Terapkan Sensor Permanen"] || "Terapkan Sensor Permanen")}
-      </button>
+      <div style={{ padding: '24px', flex: 1, overflowY: 'auto' }}>
+        <div className="glass-panel" style={{ padding: '20px', marginBottom: 20 }}>
+          <label style={{ fontSize: '0.85rem', fontWeight: 700, display: 'block', marginBottom: 12 }}>
+            {t("black_box_mode", "Black Box Mode")}
+          </label>
+          <div style={{ display: 'flex', gap: 12, marginBottom: 16 }}>
+            <button
+              onClick={() => setRedactConfig((prev: any) => ({ ...prev, mode: 'black' }))}
+              style={{
+                flex: 1, padding: '10px', borderRadius: 8,
+                background: redactConfig.mode === 'black' ? '#ef4444' : 'var(--bg-input)',
+                color: redactConfig.mode === 'black' ? '#fff' : 'var(--text-main)',
+                border: '1px solid var(--border-color)', fontWeight: 600, cursor: 'pointer'
+              }}
+            >
+              {t("black_box_mode", "Black Box Mode")}
+            </button>
+            <button
+              onClick={() => setRedactConfig((prev: any) => ({ ...prev, mode: 'blur' }))}
+              style={{
+                flex: 1, padding: '10px', borderRadius: 8,
+                background: redactConfig.mode === 'blur' ? '#3b82f6' : 'var(--bg-input)',
+                color: redactConfig.mode === 'blur' ? '#fff' : 'var(--text-main)',
+                border: '1px solid var(--border-color)', fontWeight: 600, cursor: 'pointer'
+              }}
+            >
+              {t("blur_mode", "Blur Mode")}
+            </button>
+          </div>
+
+          <button
+            onClick={() => addBox(0)}
+            className="btn-secondary"
+            style={{ width: '100%', padding: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, borderRadius: 8 }}
+          >
+            <PlusCircle size={18} /> {t("add_redact_box", "+ Add Redact Area (Page 1)")}
+          </button>
+        </div>
+
+        <div style={{ padding: 16, background: 'rgba(239, 68, 68, 0.05)', border: '1px solid rgba(239, 68, 68, 0.2)', borderRadius: 12, display: 'flex', gap: 12 }}>
+          <AlertTriangle color="#ef4444" size={24} style={{ flexShrink: 0, marginTop: 2 }} />
+          <p style={{ margin: 0, fontSize: '0.8rem', color: '#f87171', lineHeight: 1.5 }}>
+            {t("redact_desc", "Redacted areas are permanently burned into static pixels using pure WebAssembly.")}
+          </p>
+        </div>
+      </div>
+
+      <div style={{ padding: '24px', borderTop: '1px solid var(--border-color)', background: 'var(--bg-card)' }}>
+        <button
+          onClick={onProcess}
+          disabled={isProcessing || totalBoxes === 0}
+          className="btn-primary"
+          style={{ width: '100%', padding: '14px', fontSize: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, background: '#ef4444', borderRadius: 12 }}
+        >
+          {isProcessing ? (
+            <span className="spinner" style={{ width: 20, height: 20, border: '3px solid rgba(255,255,255,0.3)', borderTopColor: '#fff', borderRadius: '50%', animation: 'spin 1s linear infinite' }} />
+          ) : (
+            <><EyeOff size={20} />{t("apply_redaction", "Apply Permanent Redaction")}</>
+          )}
+        </button>
+      </div>
     </div>
   );
 };

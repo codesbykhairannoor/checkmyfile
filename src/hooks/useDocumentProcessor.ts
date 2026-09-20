@@ -13,6 +13,7 @@ interface ProcessorOptions {
   pageNumberConfig?: any;
   watermarkConfig?: any;
   compressQuality?: any;
+  compressPercent?: number;
   extractImageFormat?: 'png' | 'jpg';
   removeRange?: string;
   insertFile?: File | null;
@@ -190,7 +191,7 @@ export function useDocumentProcessor() {
         }
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_signed.pdf`;
       } else if (toolId === 'compress-pdf' || toolId === 'compress-pdf-for-email' || toolId === 'compress-pdf-to-100kb' || toolId === 'compress-pdf-without-losing-quality') {
-        resultBytes = await (await import('../engines/compressEngine')).compressPdf(files[0], options.compressQuality, (p) => setProgress(p));
+        resultBytes = await (await import('../engines/compressEngine')).compressPdf(files[0], options.compressQuality, (p) => setProgress(p), options.compressPercent);
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_compressed.pdf`;
       } else if (toolId === 'pdf-to-word') {
         resultBytes = await (await import('../engines/officeEngine')).convertPdfToWord(files[0], (p) => setProgress(p));

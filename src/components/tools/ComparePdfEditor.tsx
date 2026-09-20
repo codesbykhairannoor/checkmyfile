@@ -1,96 +1,93 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Scale, UploadCloud, File as FileIcon, X } from 'lucide-react';
 
 interface ComparePdfEditorProps {
   tUi?: Record<string, string>;
-  onProcess: (options: { compareFile2: File }) => void;
+  compareFile2?: File | null;
+  setCompareFile2?: (file: File | null) => void;
+  onApply: () => void;
   isProcessing: boolean;
 }
 
 export const ComparePdfEditor: React.FC<ComparePdfEditorProps> = ({
   tUi = {},
- onProcess, isProcessing }) => {
-  void tUi;
-  const [file2, setFile2] = React.useState<File | null>(null);
-  const fileInputRef = useRef<HTMLInputElement>(null);
+  compareFile2,
+  setCompareFile2,
+  onApply,
+  isProcessing
+}) => {
+  const t = (key: string, fallback: string) => tUi[key] || tUi[fallback] || fallback;
+  const fileInputRef = React.useRef<HTMLInputElement>(null);
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files && e.target.files.length > 0) {
-      setFile2(e.target.files[0]);
+    if (e.target.files && e.target.files[0] && setCompareFile2) {
+      setCompareFile2(e.target.files[0]);
     }
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
-      <div style={{ display: 'flex', alignItems: 'flex-start', gap: 16, background: 'var(--bg-card)', padding: 24, borderRadius: 16, border: '1px solid var(--border-color)', boxShadow: '0 4px 12px rgba(0,0,0,0.02)' }}>
-        <div style={{ padding: 12, background: 'rgba(225, 29, 72, 0.1)', color: 'var(--brand-primary)', borderRadius: 12 }}>
-          <Scale size={24} />
-        </div>
-        <div>
-          <h3 style={{ margin: 0, marginBottom: 8, fontSize: '1.25rem', fontWeight: 800, color: 'var(--text-main)', fontFamily: 'var(--font-display)' }}>
-            {tUi["Bandingkan 2 PDF"] || "Bandingkan 2 PDF"}</h3>
-          <p style={{ margin: 0, color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: 1.5 }}>
-            {tUi["Pilih file kedua (File Pembanding). Sistem akan menyorot setiap perbedaan piksel atau huruf dengan warna merah."] || "Pilih file kedua (File Pembanding). Sistem akan menyorot setiap perbedaan piksel atau huruf dengan warna merah."}</p>
-        </div>
+    <div className="glass-panel" style={{ padding: 24, display: 'flex', flexDirection: 'column', gap: 24, minWidth: 320, height: '100%' }}>
+      <div>
+        <h4 style={{ fontWeight: 800, fontSize: '1.1rem', color: 'var(--text-main)', marginBottom: 6, display: 'flex', alignItems: 'center', gap: 8 }}>
+          <Scale size={18} className="text-brand-primary" color="#10b981" />
+          <span>{t("compare_pdf", "Compare PDF")}</span>
+        </h4>
+        <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
+          {t("compare_desc", "Visually compare two PDF documents side-by-side with highlight diffs.")}
+        </p>
       </div>
 
-      <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: 12, padding: 20 }}>
-        <label style={{ display: 'block', fontSize: '0.95rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: 12 }}>
-          {tUi["Pilih File Pembanding (Revisi)"] || "Pilih File Pembanding (Revisi)"}</label>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+        <label style={{ fontSize: '0.8rem', fontWeight: 600, color: 'var(--text-main)' }}>
+          {t("select_second_pdf", "Select Comparison PDF (Revised)")}
+        </label>
         
-        {!file2 ? (
-          <div 
-            onClick={() => fileInputRef.current?.click()}
-            style={{ 
-              border: '2px dashed var(--border-color)', borderRadius: 8, padding: '32px 24px', 
-              display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, cursor: 'pointer',
-              background: 'rgba(0,0,0,0.01)', transition: 'all 0.2s ease'
-            }}
-            onMouseOver={(e) => e.currentTarget.style.borderColor = 'var(--brand-primary)'}
-            onMouseOut={(e) => e.currentTarget.style.borderColor = 'var(--border-color)'}
-          >
-            <UploadCloud size={32} color="var(--text-muted)" />
-            <span style={{ fontSize: '0.9rem', color: 'var(--text-main)', fontWeight: 600 }}>{tUi["Klik untuk Unggah PDF Pembanding"] || (tUi["Klik untuk Unggah PDF Pembanding"] || "Klik untuk Unggah PDF Pembanding")}</span>
-          </div>
-        ) : (
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: 16, background: 'rgba(225, 29, 72, 0.05)', border: '1px solid rgba(225, 29, 72, 0.2)', borderRadius: 8 }}>
-            <FileIcon size={24} className="text-accent" />
-            <div style={{ flex: 1, overflow: 'hidden' }}>
-              <div style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--text-main)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                {file2.name}
-              </div>
-              <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-                {(file2.size / (1024 * 1024)).toFixed(2)} MB
+        <input
+          type="file"
+          ref={fileInputRef}
+          onChange={handleFileChange}
+          accept=".pdf,application/pdf"
+          style={{ display: 'none' }}
+        />
+
+        {compareFile2 ? (
+          <div style={{ background: 'var(--bg-input)', padding: 14, borderRadius: 12, border: '1px solid var(--border-color)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10, overflow: 'hidden' }}>
+              <FileIcon size={20} className="text-brand-primary" />
+              <div style={{ overflow: 'hidden' }}>
+                <div style={{ fontSize: '0.85rem', fontWeight: 700, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{compareFile2.name}</div>
+                <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>{(compareFile2.size / 1024).toFixed(1)} KB</div>
               </div>
             </div>
-            <button 
-              onClick={() => setFile2(null)}
-              style={{ background: 'transparent', border: 'none', cursor: 'pointer', padding: 4, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-            >
-              <X size={18} color="var(--text-muted)" />
-            </button>
+            {setCompareFile2 && (
+              <button onClick={() => setCompareFile2(null)} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--text-muted)' }}>
+                <X size={16} />
+              </button>
+            )}
           </div>
+        ) : (
+          <button
+            onClick={() => fileInputRef.current?.click()}
+            className="btn-secondary"
+            style={{ padding: '24px 16px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, border: '2px dashed var(--border-color)', background: 'var(--bg-input)', borderRadius: 12, cursor: 'pointer' }}
+          >
+            <UploadCloud size={28} className="text-brand-primary" />
+            <span style={{ fontSize: '0.85rem', fontWeight: 700 }}>{t("choose_second_pdf_btn", "Click to Upload Second PDF")}</span>
+          </button>
         )}
-        
-        <input 
-          type="file" 
-          ref={fileInputRef} 
-          onChange={handleFileChange} 
-          accept="application/pdf" 
-          style={{ display: 'none' }} 
-        />
       </div>
 
-      <button
-        onClick={() => {
-          if (file2) onProcess({ compareFile2: file2 });
-        }}
-        disabled={isProcessing || !file2}
-        className="btn-primary"
-        style={{ width: '100%', padding: '16px', fontSize: '1.1rem', opacity: (!file2 || isProcessing) ? 0.6 : 1 }}
-      >
-        {isProcessing ? (tUi["Menganalisis Perbedaan..."] || "Menganalisis Perbedaan...") : (tUi["Bandingkan PDF Sekarang"] || (tUi["Bandingkan PDF Sekarang"] || "Bandingkan PDF Sekarang"))}
-      </button>
+      <div style={{ marginTop: 'auto', paddingTop: 24, borderTop: '1px solid var(--border-color)' }}>
+        <button
+          onClick={onApply}
+          disabled={isProcessing || !compareFile2}
+          className="btn-primary"
+          style={{ width: '100%', padding: '14px 20px', fontSize: '0.95rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, borderRadius: 12 }}
+        >
+          {isProcessing ? <div style={{ animation: 'spin 1s linear infinite' }}><Scale size={18} /></div> : <Scale size={18} />}
+          <span>{isProcessing ? t("comparing_btn", "Analyzing Differences...") : t("apply_compare", "Compare Documents Now")}</span>
+        </button>
+      </div>
     </div>
   );
 };

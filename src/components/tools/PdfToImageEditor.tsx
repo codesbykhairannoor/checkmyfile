@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image as ImageIcon } from 'lucide-react';
+import { Image as ImageIcon, Download, Settings2 } from 'lucide-react';
 
 interface PdfToImageEditorProps {
   tUi?: Record<string, string>;
@@ -16,15 +16,18 @@ export const PdfToImageEditor: React.FC<PdfToImageEditorProps> = ({
   onApply,
   isProcessing
 }) => {
-  void tUi;
+  const t = (key: string, fallback: string) => tUi[key] || tUi[fallback] || fallback;
+
   return (
     <div className="glass-panel" style={{ padding: 24, display: 'flex', flexDirection: 'column', gap: 20, minWidth: 280 }}>
       <div>
         <h4 style={{ fontWeight: 800, fontSize: '1.1rem', color: 'var(--text-main)', marginBottom: 6, display: 'flex', alignItems: 'center', gap: 8 }}>
           <ImageIcon size={18} className="text-brand-primary" />
-          <span>{tUi["Ekstrak Gambar"] || (tUi["Ekstrak Gambar"] || "Ekstrak Gambar")}</span>
+          <span>{t("convert_to_image", "Convert PDF to Images")}</span>
         </h4>
-        <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>{tUi["Pilih format gambar yang ingin dihasilkan. Setiap halaman PDF akan diubah menjadi gambar berkualitas tinggi."] || (tUi["Pilih format gambar yang ingin dihasilkan. Setiap halaman PDF akan diubah menjadi gambar berkualitas tinggi."] || "Pilih format gambar yang ingin dihasilkan. Setiap halaman PDF akan diubah menjadi gambar berkualitas tinggi.")}</p>
+        <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
+          {t("convert_to_image_desc", "Extract high-resolution image files from every page of your PDF.")}
+        </p>
       </div>
 
       <div style={{ display: 'flex', gap: 12, flexDirection: 'column' }}>
@@ -43,10 +46,11 @@ export const PdfToImageEditor: React.FC<PdfToImageEditorProps> = ({
               background: format === 'png' ? 'var(--brand-gradient)' : 'var(--bg-input)',
               color: format === 'png' ? '#fff' : 'var(--text-main)',
               border: format === 'png' ? '1px solid transparent' : '1px solid var(--border-color)',
+              borderRadius: 12
             }}
           >
             <span style={{ fontWeight: 800, fontSize: '1rem' }}>PNG</span>
-            <span style={{ fontWeight: 600, fontSize: '0.75rem', opacity: format === 'png' ? 0.9 : 0.6 }}>{tUi["Kualitas Terbaik"] || (tUi["Kualitas Terbaik"] || "Kualitas Terbaik")}</span>
+            <span style={{ fontWeight: 600, fontSize: '0.75rem', opacity: format === 'png' ? 0.9 : 0.6 }}>High Quality</span>
           </button>
           <button
             onClick={() => setFormat('jpg')}
@@ -62,10 +66,11 @@ export const PdfToImageEditor: React.FC<PdfToImageEditorProps> = ({
               background: format === 'jpg' ? 'var(--brand-gradient)' : 'var(--bg-input)',
               color: format === 'jpg' ? '#fff' : 'var(--text-main)',
               border: format === 'jpg' ? '1px solid transparent' : '1px solid var(--border-color)',
+              borderRadius: 12
             }}
           >
             <span style={{ fontWeight: 800, fontSize: '1rem' }}>JPG</span>
-            <span style={{ fontWeight: 600, fontSize: '0.75rem', opacity: format === 'jpg' ? 0.9 : 0.6 }}>{tUi["Ukuran Kecil"] || (tUi["Ukuran Kecil"] || "Ukuran Kecil")}</span>
+            <span style={{ fontWeight: 600, fontSize: '0.75rem', opacity: format === 'jpg' ? 0.9 : 0.6 }}>Compact Size</span>
           </button>
         </div>
       </div>
@@ -74,19 +79,14 @@ export const PdfToImageEditor: React.FC<PdfToImageEditorProps> = ({
         onClick={onApply}
         disabled={isProcessing}
         className="btn-primary"
-        style={{
-          width: '100%',
-          padding: '14px 24px',
-          fontSize: '1rem',
-          fontWeight: 700,
-          background: 'var(--brand-gradient)',
-          color: '#fff',
-          border: 'none',
-          opacity: isProcessing ? 0.7 : 1,
-          cursor: isProcessing ? 'not-allowed' : 'pointer'
-        }}
+        style={{ width: '100%', padding: '14px 24px', fontSize: '1rem', fontWeight: 700, borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10 }}
       >
-        {isProcessing ? (tUi["Memproses..."] || "Memproses...") : (tUi["Ekstrak Gambar Sekarang"] || (tUi["Ekstrak Gambar Sekarang"] || "Ekstrak Gambar Sekarang"))}
+        {isProcessing ? (
+          <div style={{ animation: 'spin 1s linear infinite' }}><Settings2 size={18} /></div>
+        ) : (
+          <Download size={18} />
+        )}
+        <span>{isProcessing ? t("extracting_btn", "Extracting Images...") : t("apply_image_convert", "Extract Images Now")}</span>
       </button>
     </div>
   );

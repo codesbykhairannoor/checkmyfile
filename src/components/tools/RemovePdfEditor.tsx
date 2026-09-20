@@ -4,7 +4,7 @@ import { Trash2, Download, Settings2, Info } from 'lucide-react';
 interface RemovePdfEditorProps {
   tUi?: Record<string, string>;
   removeRange: string;
-  setRemoveRange: (range: string) => void;
+  setRemoveRange: (val: string) => void;
   onApply: () => void;
   isProcessing: boolean;
 }
@@ -16,78 +16,48 @@ export const RemovePdfEditor: React.FC<RemovePdfEditorProps> = ({
   onApply,
   isProcessing
 }) => {
-  void tUi;
+  const t = (key: string, fallback: string) => tUi[key] || tUi[fallback] || fallback;
+
   return (
-    <div className="glass-panel" style={{ padding: 24, display: 'flex', flexDirection: 'column', gap: 24, minWidth: 280 }}>
+    <div className="glass-panel" style={{ padding: 24, display: 'flex', flexDirection: 'column', gap: 24, minWidth: 280, height: '100%' }}>
       <div>
         <h4 style={{ fontWeight: 800, fontSize: '1.1rem', color: 'var(--text-main)', marginBottom: 6, display: 'flex', alignItems: 'center', gap: 8 }}>
-          <Trash2 size={18} className="text-brand-primary" color="#e11d48" />
-          <span>{tUi['Hapus Halaman'] || (tUi["Hapus Halaman"] || "Hapus Halaman")}</span>
+          <Trash2 size={18} className="text-brand-primary" color="#ef4444" />
+          <span>{t("remove_pdf", "Remove Pages")}</span>
         </h4>
         <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
-          {tUi['Ketik rentang atau nomor halaman yang ingin Anda hapus secara permanen.'] || (tUi["Ketik rentang atau nomor halaman yang ingin Anda hapus secara permanen."] || "Ketik rentang atau nomor halaman yang ingin Anda hapus secara permanen.")}
+          {t("remove_desc", "Permanently delete unwanted pages from your document.")}
         </p>
       </div>
 
       <div>
         <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'block', marginBottom: 8 }}>
-          {tUi['Halaman yang Dihapus (Contoh: 1, 3-5)'] || (tUi["Halaman yang Dihapus (Contoh: 1, 3-5)"] || "Halaman yang Dihapus (Contoh: 1, 3-5)")}
+          {t("pages_to_remove_label", "Pages to Delete (e.g. 1, 3-5)")}
         </label>
         <input
           type="text"
           value={removeRange}
           onChange={(e) => setRemoveRange(e.target.value)}
-          placeholder={tUi["e.g. 1, 3-5, 8"] || "e.g. 1, 3-5, 8"}
-          style={{
-            width: '100%',
-            padding: '12px 16px',
-            borderRadius: 12,
-            border: '1px solid var(--border-color)',
-            background: 'var(--bg-input)',
-            color: 'var(--text-main)',
-            outline: 'none',
-            fontSize: '0.9rem',
-            fontWeight: 600
-          }}
+          placeholder="e.g. 1, 3-5, 8"
+          style={{ width: '100%', padding: '12px 16px', borderRadius: 12, border: '1px solid var(--border-color)', background: 'var(--bg-input)', color: 'var(--text-main)', outline: 'none', fontSize: '0.9rem', fontWeight: 600 }}
         />
-        
         <div style={{ marginTop: 12, padding: 12, borderRadius: 8, background: 'rgba(239, 68, 68, 0.1)', border: '1px solid rgba(239, 68, 68, 0.2)', display: 'flex', gap: 10, alignItems: 'flex-start' }}>
           <Info size={16} color="#ef4444" style={{ marginTop: 2, flexShrink: 0 }} />
           <p style={{ fontSize: '0.75rem', color: '#f87171', margin: 0, lineHeight: 1.4 }}>
-            {tUi['Halaman yang masuk dalam rentang ini akan ditandai dengan label merah "HAPUS" di Live Preview.'] || (tUi["Halaman yang masuk dalam rentang ini akan ditandai dengan label merah \"HAPUS\" di Live Preview."] || "Halaman yang masuk dalam rentang ini akan ditandai dengan label merah \"HAPUS\" di Live Preview.")}
+            {t("remove_hint", 'Pages in this range will be marked with a red "REMOVE" label in the Live Preview.')}
           </p>
         </div>
       </div>
 
       <div style={{ marginTop: 'auto', paddingTop: 24, borderTop: '1px solid var(--border-color)' }}>
-        {!removeRange.trim() && (
-          <div style={{ fontSize: '0.78rem', color: '#f59e0b', background: 'rgba(245, 158, 11, 0.1)', padding: '8px 12px', borderRadius: 8, textAlign: 'center', marginBottom: 12, border: '1px solid rgba(245, 158, 11, 0.2)' }}>
-            {tUi['Harap masukkan halaman yang ingin dihapus (contoh: 1, 3-5).'] || (tUi["Harap masukkan halaman yang ingin dihapus (contoh: 1, 3-5)."] || "Harap masukkan halaman yang ingin dihapus (contoh: 1, 3-5).")}
-          </div>
-        )}
         <button
           onClick={onApply}
           disabled={isProcessing || !removeRange.trim()}
           className="btn-primary"
-          style={{
-            width: '100%',
-            padding: '14px 20px',
-            fontSize: '0.95rem',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: 10,
-            opacity: (!removeRange.trim() || isProcessing) ? 0.5 : 1,
-            cursor: (!removeRange.trim() || isProcessing) ? 'not-allowed' : 'pointer',
-            boxShadow: (!removeRange.trim() || isProcessing) ? 'none' : '0 8px 20px rgba(225, 29, 72, 0.25)'
-          }}
+          style={{ width: '100%', padding: '14px 20px', fontSize: '0.95rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, background: '#ef4444', borderRadius: 12 }}
         >
-          {isProcessing ? (
-            <div style={{ animation: 'spin 1s linear infinite' }}><Settings2 size={18} /></div>
-          ) : (
-            <Download size={18} />
-          )}
-          <span>{isProcessing ? (tUi["Menghapus..."] || "Menghapus...") : (tUi["Hapus Sekarang"] || (tUi["Hapus Sekarang"] || "Hapus Sekarang"))}</span>
+          {isProcessing ? <div style={{ animation: 'spin 1s linear infinite' }}><Settings2 size={18} /></div> : <Download size={18} />}
+          <span>{isProcessing ? t("removing_btn", "Deleting...") : t("apply_remove", "Delete Pages Now")}</span>
         </button>
       </div>
     </div>

@@ -5,7 +5,7 @@ import * as pdfjsLib from 'pdfjs-dist';
 // Initialize PDF.js worker using public CDNs or built-in worker
 pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorkerUrl;
 
-export type CompressionQuality = 'extreme' | 'balanced' | 'high';
+export type CompressionQuality = 'extreme' | 'balanced' | 'high' | 'custom';
 
 /**
  * Advanced Hybrid Client-Side PDF Compression Engine.
@@ -15,11 +15,13 @@ export type CompressionQuality = 'extreme' | 'balanced' | 'high';
  * - 'extreme' (or if balanced yields low savings): Deep hybrid compression using Wasm/Canvas
  *   re-sampling of heavy pages at optimized DPI (e.g. 110 DPI with JPEG 0.68 quality)
  *   to guarantee dramatic KB/MB reduction (often -60% to -90%) right inside RAM.
+ * - 'custom': Continuous slider percentage (10% - 95%) allowing fine-grained user control.
  */
 export const compressPdf = async (
   file: File,
-  quality: CompressionQuality,
-  onProgress: (progress: number) => void
+  quality: CompressionQuality = 'balanced',
+  onProgress: (progress: number) => void,
+  customPercent?: number
 ): Promise<Uint8Array> => {
   onProgress(10);
   const arrayBuffer = await file.arrayBuffer();
@@ -37,7 +39,10 @@ export const compressPdf = async (
   pdfDoc.setCreator('HandleMyFile Optimizer');
   onProgress(40);
 
-  if (quality === 'balanced' || quality === 'extreme') {
+  const isAggressive = quality === 'extreme' || (quality === 'custom' && (customPercent ?? 50) >= 60);
+  const isModerate = quality === 'balanced' || (quality === 'custom' && (customPercent ?? 50) >= 30);
+
+  if (isModerate || isAggressive) {
     try {
       const pages = pdfDoc.getPages();
       for (const page of pages) {
@@ -45,7 +50,7 @@ export const compressPdf = async (
         if (dict.has('Thumb' as any)) dict.delete('Thumb' as any);
         if (dict.has('PieceInfo' as any)) dict.delete('PieceInfo' as any);
         if (dict.has('Metadata' as any)) dict.delete('Metadata' as any);
-        if (quality === 'extreme' && dict.has('Annots' as any)) {
+        if (isAggressive && dict.has('Annots' as any)) {
           try { dict.delete('Annots' as any); } catch (_) {}
         }
       }
@@ -53,7 +58,7 @@ export const compressPdf = async (
   }
   onProgress(55);
 
-  if (quality === 'extreme') {
+  if (isAggressive) {
     try {
       const catalog = pdfDoc.catalog;
       if (catalog.has('Metadata' as any)) catalog.delete('Metadata' as any);
@@ -67,12 +72,12 @@ export const compressPdf = async (
 
   // If user selected 'high', or if structural optimization already reduced file significantly (> 25% reduction)
   const structuralRatio = structuralBytes.byteLength / originalSize;
-  if (quality === 'high' || (quality === 'balanced' && structuralRatio <= 0.75)) {
+  if (quality === 'high' || (quality === 'balanced' && structuralRatio <= 0.75 && customPercent === undefined)) {
     onProgress(100);
     return structuralBytes;
   }
 
-  // ── Step 2: Extreme / Deep Hybrid Compression if structural savings are insufficient (< 25% saved or 'extreme')
+  // ── Step 2: Extreme / Deep Hybrid Compression if structural savings are insufficient (< 25% saved or 'extreme'/'custom')
   // We use pdf.js to render pages at optimized scale and re-pack into ultra-compressed PDFDocument.
   try {
     const pdfjs = pdfjsLib;
@@ -81,12 +86,24 @@ export const compressPdf = async (
 
     const newPdfDoc = await PDFDocument.create();
 
-    // Determine scale & JPEG quality based on user option
-    // scale 1.0 is ~72 DPI.
-    // Extreme: 0.8 scale (~57 DPI), 0.5 quality -> Massive reduction (sometimes blurry but very small)
-    // Balanced: 1.0 scale (~72 DPI), 0.65 quality -> Good balance
-    const scale = quality === 'extreme' ? 0.8 : (quality === 'balanced' ? 1.0 : 1.25);
-    const jpegQuality = quality === 'extreme' ? 0.5 : (quality === 'balanced' ? 0.65 : 0.75);
+    // Determine scale & JPEG quality based on user option or custom slider percentage
+    let scale = 1.0;
+    let jpegQuality = 0.65;
+
+    if (customPercent !== undefined) {
+      const compRatio = Math.max(0.1, Math.min(0.95, customPercent / 100));
+      scale = Math.max(0.55, Math.min(1.4, 1.45 - compRatio * 0.85));
+      jpegQuality = Math.max(0.25, Math.min(0.95, 0.95 - compRatio * 0.65));
+    } else if (quality === 'extreme') {
+      scale = 0.8;
+      jpegQuality = 0.5;
+    } else if (quality === 'balanced') {
+      scale = 1.0;
+      jpegQuality = 0.65;
+    } else {
+      scale = 1.25;
+      jpegQuality = 0.75;
+    }
 
     for (let pNum = 1; pNum <= numPages; pNum++) {
       const page = await pdf.getPage(pNum);
