@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import * as Icons from 'lucide-react';
 import { getUiTranslations } from '../i18n/translations';
 import { TOOLS_CATALOG, getLocalizedSeo, type ToolDefinition } from '../catalog/toolsCatalog';
 import { SeoHead } from '../components/seo/SeoHead';
