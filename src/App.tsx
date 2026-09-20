@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/layout/Navbar';
 import { trackToolPageViewed, trackPageNavigated, trackLanguageSwitched } from './lib/analytics';
 import { Footer } from './components/layout/Footer';
-const HomePage = React.lazy(() => import('./pages/HomePage').then(m => ({ default: m.HomePage })));
-const ToolPage = React.lazy(() => import('./pages/ToolPage').then(m => ({ default: m.ToolPage })));
+import { HomePage } from './pages/HomePage';
+import { ToolPage } from './pages/ToolPage';
 const AboutUsPage = React.lazy(() => import('./pages/AboutUsPage').then(m => ({ default: m.AboutUsPage })));
 const PrivacyPage = React.lazy(() => import('./pages/PrivacyPage').then(m => ({ default: m.PrivacyPage })));
 const TosPage = React.lazy(() => import('./pages/TosPage').then(m => ({ default: m.TosPage })));
@@ -183,7 +183,7 @@ export const App: React.FC = () => {
       />
 
       <div style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: 'column' }}>
-        <React.Suspense fallback={<div style={{ padding: 40, textAlign: 'center', color: 'var(--text-muted)' }}>Loading...</div>}>
+        <React.Suspense fallback={<div style={{ minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><div className="spinner" style={{ width: 36, height: 36, border: '3px solid var(--border-color)', borderTopColor: 'var(--brand-primary)', borderRadius: '50%', animation: 'spin 0.8s linear infinite' }} /></div>}>
           {activeTool ? (
             <ToolPage
               key={activeTool.id}

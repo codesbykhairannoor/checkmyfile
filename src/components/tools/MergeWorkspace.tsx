@@ -8,7 +8,7 @@ interface MergeWorkspaceProps {
   tUi?: Record<string, string>;
 }
 
-const PdfThumbnail: React.FC<{ file: File; index: number; moveFile: (dragIndex: number, hoverIndex: number) => void; removeFile: (i: number) => void }> = ({ file, index, moveFile, removeFile }) => {
+const PdfThumbnail: React.FC<{ file: File; index: number; moveFile: (dragIndex: number, hoverIndex: number) => void; removeFile: (i: number) => void; tUi?: Record<string, string> }> = ({ file, index, moveFile, removeFile, tUi = {} }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [loading, setLoading] = useState(true);
 
@@ -85,7 +85,11 @@ const PdfThumbnail: React.FC<{ file: File; index: number; moveFile: (dragIndex: 
       onDragEnd={(e) => (e.currentTarget.style.opacity = '1')}
     >
       <div style={{ position: 'relative', width: '100%', minWidth: 0, height: 100, display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#f8fafc', borderRadius: 6, border: '1px solid #e2e8f0', overflow: 'hidden' }}>
-        {loading && <div style={{ color: '#94a3b8', fontSize: '0.75rem' }}>Loading...</div>}
+        {loading && (
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div className="spinner" style={{ width: 18, height: 18, border: '2px solid var(--border-color)', borderTopColor: 'var(--brand-primary)', borderRadius: '50%', animation: 'spin 0.8s linear infinite' }} />
+          </div>
+        )}
         <canvas ref={canvasRef} style={{ maxWidth: '100%', maxHeight: '100%', display: loading ? 'none' : 'block', pointerEvents: 'none' }} />
         
         <button
@@ -133,7 +137,7 @@ export const MergeWorkspace: React.FC<MergeWorkspaceProps> = ({ files, setFiles,
     <div style={{ width: '100%' }}>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(110px, 1fr))', gap: 12, alignItems: 'stretch' }}>
         {files.map((file, idx) => (
-          <PdfThumbnail key={`${file.name}-${idx}`} file={file} index={idx} moveFile={moveFile} removeFile={removeFile} />
+          <PdfThumbnail key={`${file.name}-${idx}`} file={file} index={idx} moveFile={moveFile} removeFile={removeFile} tUi={tUi} />
         ))}
 
         <button
