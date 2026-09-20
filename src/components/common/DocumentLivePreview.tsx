@@ -4,10 +4,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import { ZoomIn, ZoomOut, Presentation, FileText, FileSpreadsheet, CheckCircle, TableProperties, ChevronLeft, ChevronRight, Lock } from 'lucide-react';
 import LazyPdfPage from '../preview/LazyPdfPage';
 import pdfWorkerUrl from 'pdfjs-dist/build/pdf.worker.min.mjs?url';
-const PdfPreview = React.lazy(() => import('../preview/PdfPreview').then(m => ({ default: m.PdfPreview })));
-const OfficePreview = React.lazy(() => import('../preview/OfficePreview').then(m => ({ default: m.OfficePreview })));
-const PptxPreview = React.lazy(() => import('../preview/PptxPreview').then(m => ({ default: m.PptxPreview })));
-const SpreadsheetPreview = React.lazy(() => import('../preview/SpreadsheetPreview').then(m => ({ default: m.SpreadsheetPreview })));
+import { PdfPreview } from '../preview/PdfPreview';
+import { OfficePreview } from '../preview/OfficePreview';
+import { PptxPreview } from '../preview/PptxPreview';
+import { SpreadsheetPreview } from '../preview/SpreadsheetPreview';
 
 // A4 portrait ratio as default: 210mm / 297mm
 const A4_PORTRAIT_RATIO = 210 / 297;

@@ -13,8 +13,8 @@ import { useDocumentProcessor } from '../hooks/useDocumentProcessor';
 import { smartHighlight } from '../utils/textFormatting';
 import { getUiTranslations } from '../i18n/translations';
 
-const DocumentLivePreview = React.lazy(() => import('../components/common/DocumentLivePreview').then(m => ({ default: m.DocumentLivePreview })));
-const ToolSidebar = React.lazy(() => import('../components/tools/ToolSidebar').then(m => ({ default: m.ToolSidebar })));
+import { DocumentLivePreview } from '../components/common/DocumentLivePreview';
+import { ToolSidebar } from '../components/tools/ToolSidebar';
 
 interface ToolPageProps {
   tool: ToolDefinition;
