@@ -29,3 +29,12 @@ for (const chunk of langChunks) {
   // Process results...
 }
 ```
+
+## Language Codes & Fallbacks
+- **Hebrew ISO Code**: Always use `'he'` for Hebrew. Do NOT use `'iw'` as it causes batch RPC rejections in `google-translate-api-x`.
+- **Bidirectional Editor Translations**: When translating UI editors, write dictionary mappings to `src/i18n/editorTranslations.ts` with semantic keys (`select_preview_document`) as well as string fallbacks (`Pilih Dokumen Pratinjau:`) so UI components never render empty strings.
+
+## UI Editors & Compression Standard
+- All tool sidebars in `src/components/tools/` must look up labels from `editorTranslations[currentLang]`.
+- Compression tools must support both preset levels (Extreme, Balanced, High) and continuous percentage sliders (10% to 95%) with live KB estimates.
+
