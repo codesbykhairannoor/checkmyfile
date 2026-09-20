@@ -435,8 +435,9 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
         "@context": "https://schema.org",
         "@graph": schemaGraph
       }, null, 2)}\n</script>`;
+      const seoDataScript = `<script id="__SEO_DATA__" type="application/json">${JSON.stringify(seoJson).replace(/</g, '\\u003c')}</script>`;
 
-      html = html.replace('<!-- JSON-LD-INJECTION -->', jsonLdScript);
+      html = html.replace('<!-- JSON-LD-INJECTION -->', `${jsonLdScript}\n    ${seoDataScript}`);
 
       staticSeoHtml = `
         <main id="static-seo" role="main" style="padding: 40px; font-family: sans-serif; background: #fff; color: #333; max-width: 1100px; margin: 0 auto;">

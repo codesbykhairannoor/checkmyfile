@@ -37,14 +37,26 @@ const seoModules = import.meta.glob(
   '../../locales/seo/**/*.json'
 ) as Record<string, () => Promise<{ default: SeoJson }>>;
 
+const getInitialSeoData = (): SeoJson | null => {
+  if (typeof document !== 'undefined') {
+    const el = document.getElementById('__SEO_DATA__');
+    if (el && el.textContent) {
+      try {
+        const parsed = JSON.parse(el.textContent);
+        if (parsed && typeof parsed === 'object') return parsed;
+      } catch (e) {}
+    }
+  }
+  return null;
+};
+
 export const useSeoData = (toolId: string, lang: string) => {
-  const [data, setData] = useState<SeoJson | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState<SeoJson | null>(() => getInitialSeoData());
+  const [loading, setLoading] = useState<boolean>(() => !getInitialSeoData());
 
   React.useEffect(() => {
     let isMounted = true;
     const loadData = async () => {
-      setLoading(true);
       const exactPath = `../../locales/seo/${toolId}/${lang}.json`;
       const fallbackPath = `../../locales/seo/${toolId}/en.json`;
       const loader = seoModules[exactPath] || seoModules[fallbackPath];

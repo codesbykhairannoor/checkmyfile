@@ -1,10 +1,23 @@
 import React, { useState } from 'react';
-import * as Icons from 'lucide-react';
+import {
+  Search, X, SearchX, ArrowRight, ShieldCheck, Check,
+  Combine, PenTool, Scissors, RotateCw, Hash, Stamp, Trash2,
+  LayoutList, Lock, Unlock, Crop, Images, Contrast, Eraser, Scale,
+  ScanLine, EyeOff, ArrowDownUp, Maximize, FileText, ListOrdered,
+  FileSpreadsheet, Presentation, AlignLeft, Table, ScanText, Image, Minimize2
+} from 'lucide-react';
 import { getUiTranslations } from '../i18n/translations';
 import { TOOLS_CATALOG, getLocalizedSeo, type ToolDefinition } from '../catalog/toolsCatalog';
 import { SeoHead } from '../components/seo/SeoHead';
 import { smartHighlight } from '../utils/textFormatting';
 import { ResearchGroundingSection } from '../components/seo-sections/ResearchGroundingSection';
+
+const ICON_MAP: Record<string, React.ComponentType<{ size?: number; style?: React.CSSProperties; className?: string; strokeWidth?: number }>> = {
+  Combine, PenTool, Scissors, RotateCw, Hash, Stamp, Trash2,
+  LayoutList, Lock, Unlock, Crop, Images, Contrast, Eraser, Scale,
+  ScanLine, EyeOff, ArrowDownUp, Maximize, FileText, ListOrdered,
+  FileSpreadsheet, Presentation, AlignLeft, Table, ScanText, Image, Minimize2
+};
 
 interface HomePageProps {
   currentLang: string;
@@ -75,7 +88,7 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
 
           {/* Search Bar */}
           <div style={{ maxWidth: 640, margin: '0 auto', position: 'relative' }}>
-            <Icons.Search
+            <Search
               size={22}
               style={{ position: 'absolute', left: 24, top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)', zIndex: 2 }}
             />
@@ -111,7 +124,7 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
                   color: 'var(--text-muted)', cursor: 'pointer', zIndex: 2
                 }}
               >
-                <Icons.X size={16} />
+                <X size={16} />
               </button>
             )}
           </div>
@@ -164,7 +177,7 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
           {filteredTools.length === 0 ? (
             <div style={{ background: 'var(--bg-card)', padding: '60px 24px', borderRadius: 40, border: '1px solid var(--border-color)', textAlign: 'center', boxShadow: 'var(--shadow-lg)' }}>
               <div style={{ width: 80, height: 80, background: 'var(--bg-input)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 24px' }}>
-                <Icons.SearchX size={36} style={{ color: 'var(--text-muted)' }} />
+                <SearchX size={36} style={{ color: 'var(--text-muted)' }} />
               </div>
               <h3 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: 12 }}>{t.homeSearchNotFound || 'No tools found matching'} "{searchQuery}"</h3>
               <p style={{ color: 'var(--text-muted)', fontSize: '1.05rem' }}>{t.homeSearchNotFoundDesc || 'Try using different keywords or select the All Tools category.'}</p>
@@ -173,7 +186,7 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
             <div className="tools-grid">
               {filteredTools.map((tool: ToolDefinition) => {
                 const seo = getLocalizedSeo(tool, currentLang);
-                const IconComponent = (Icons as any)[tool.iconName] || Icons.FileText;
+                const IconComponent = ICON_MAP[tool.iconName] || FileText;
 
                 return (
                   <div
@@ -219,7 +232,7 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
 
                     <div style={{ marginTop: 32, paddingTop: 20, borderTop: '1px solid var(--border-color)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.9rem', fontWeight: 800, color: 'var(--brand-primary)' }}>
                       <span>{t.homeTryNow || 'Try Now Offline'}</span>
-                      <Icons.ArrowRight size={18} />
+                      <ArrowRight size={18} />
                     </div>
                   </div>
                 );
@@ -245,7 +258,7 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
             
             <div style={{ position: 'relative', zIndex: 10, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 32 }}>
               <div style={{ width: 80, height: 80, background: 'var(--bg-input)', border: '1px solid var(--border-color)', borderRadius: 24, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: 'var(--shadow-lg)' }}>
-                <Icons.ShieldCheck size={40} style={{ color: 'var(--brand-primary)' }} />
+                <ShieldCheck size={40} style={{ color: 'var(--brand-primary)' }} />
               </div>
               
               <div>
@@ -312,7 +325,7 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
               ].map((item, index) => (
                 <li key={index} style={{ display: 'flex', alignItems: 'flex-start', gap: 16 }}>
                   <div style={{ width: 24, height: 24, borderRadius: '50%', background: 'var(--brand-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', marginTop: 4, flexShrink: 0 }}>
-                    <Icons.Check size={14} strokeWidth={3} />
+                    <Check size={14} strokeWidth={3} />
                   </div>
                   <span style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>{item}</span>
                 </li>
