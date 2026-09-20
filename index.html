@@ -10,8 +10,22 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-MQEME9ME2B');
+
+      // Auto-heal stale deployment chunks & MIME load errors
+      window.addEventListener('error', function(e) {
+        var msg = (e && e.message) ? e.message : '';
+        var target = e && e.target;
+        var isScriptError = target && target.tagName === 'SCRIPT';
+        if (isScriptError || msg.indexOf('MIME') !== -1 || msg.indexOf('dynamically imported module') !== -1 || msg.indexOf('Loading module') !== -1) {
+          var lastReload = sessionStorage.getItem('__chunk_auto_reload');
+          var now = Date.now();
+          if (!lastReload || now - parseInt(lastReload, 10) > 8000) {
+            sessionStorage.setItem('__chunk_auto_reload', now.toString());
+            window.location.reload();
+          }
+        }
+      }, true);
     </script>
 
     <!-- Primary Meta Tags -->
