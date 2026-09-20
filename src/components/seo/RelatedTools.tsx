@@ -1,7 +1,18 @@
 import React from 'react';
 import { TOOLS_CATALOG, getLocalizedSeo } from '../../catalog/toolsCatalog';
-import { getUiTranslations } from '../../i18n/translations';
-import * as Icons from 'lucide-react';
+import {
+  FileText, Combine, PenTool, Scissors, RotateCw, Hash, Stamp, Trash2,
+  LayoutList, Lock, Unlock, Crop, Images, Contrast, Eraser, Scale,
+  ScanLine, EyeOff, ArrowDownUp, Maximize, FileSpreadsheet, Presentation,
+  AlignLeft, Table, ScanText, Image, Minimize2, ListOrdered
+} from 'lucide-react';
+
+const ICON_MAP: Record<string, React.ComponentType<{ size?: number; style?: React.CSSProperties; className?: string }>> = {
+  Combine, PenTool, Scissors, RotateCw, Hash, Stamp, Trash2,
+  LayoutList, Lock, Unlock, Crop, Images, Contrast, Eraser, Scale,
+  ScanLine, EyeOff, ArrowDownUp, Maximize, FileSpreadsheet, Presentation,
+  AlignLeft, Table, ScanText, Image, Minimize2, ListOrdered, FileText
+};
 
 interface RelatedToolsProps {
   currentToolId: string;
@@ -60,7 +71,7 @@ export const RelatedTools: React.FC<RelatedToolsProps> = ({ currentToolId, categ
               displayTitle = slugStr.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
             }
             
-            const IconComponent = (Icons as any)[tool.iconName] || Icons.FileText;
+            const IconComponent = ICON_MAP[tool.iconName] || FileText;
 
             return (
               <a

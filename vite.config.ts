@@ -9,6 +9,11 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks(id) {
+          const normId = id.replace(/\\/g, '/');
+          if (normId.includes('src/i18n/translations.ts')) return 'i18n-translations';
+          if (normId.includes('src/i18n/catalogTranslations.ts')) return 'i18n-catalog';
+          if (normId.includes('src/i18n/researchTranslations.ts')) return 'i18n-research';
+          if (normId.includes('src/i18n/editorTranslations.ts')) return 'i18n-editor';
           if (id.includes('node_modules')) {
             if (id.includes('pdfjs-dist')) return 'vendor-pdfjs';
             if (id.includes('pdf-lib')) return 'vendor-pdflib';

@@ -32,17 +32,42 @@ interface SeoJson {
   supportCenter?: string;
 }
 
-// ── Eager loader — all JSON bundled at build time ──────────
+// ── Dynamic on-demand loader — only loads the current tool & language JSON ──
 const seoModules = import.meta.glob(
-  '../../locales/seo/**/*.json',
-  { eager: true }
-) as Record<string, any>;
+  '../../locales/seo/**/*.json'
+) as Record<string, () => Promise<{ default: SeoJson }>>;
 
 export const useSeoData = (toolId: string, lang: string) => {
-  const exactPath    = `../../locales/seo/${toolId}/${lang}.json`;
-  const fallbackPath = `../../locales/seo/${toolId}/en.json`;
-  const module       = seoModules[exactPath] ?? seoModules[fallbackPath];
-  return { data: module ? (module.default ?? module) as SeoJson : null, loading: false };
+  const [data, setData] = useState<SeoJson | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  React.useEffect(() => {
+    let isMounted = true;
+    const loadData = async () => {
+      setLoading(true);
+      const exactPath = `../../locales/seo/${toolId}/${lang}.json`;
+      const fallbackPath = `../../locales/seo/${toolId}/en.json`;
+      const loader = seoModules[exactPath] || seoModules[fallbackPath];
+      if (loader) {
+        try {
+          const mod = await loader();
+          if (isMounted) {
+            setData(mod.default || (mod as any));
+            setLoading(false);
+          }
+        } catch (err) {
+          console.error('Failed to load SEO JSON:', err);
+          if (isMounted) setLoading(false);
+        }
+      } else {
+        if (isMounted) setLoading(false);
+      }
+    };
+    loadData();
+    return () => { isMounted = false; };
+  }, [toolId, lang]);
+
+  return { data, loading };
 };
 
 // ── Helpers ────────────────────────────────────────────────

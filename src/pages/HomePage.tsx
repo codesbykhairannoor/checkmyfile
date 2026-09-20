@@ -4,7 +4,6 @@ import { TOOLS_CATALOG, getLocalizedSeo, type ToolDefinition } from '../catalog/
 import { SeoHead } from '../components/seo/SeoHead';
 import { smartHighlight } from '../utils/textFormatting';
 import { ResearchGroundingSection } from '../components/seo-sections/ResearchGroundingSection';
-import * as Icons from 'lucide-react';
 
 interface HomePageProps {
   currentLang: string;

@@ -1,314 +1,299 @@
 /**
- * SECTION COMPONENT REGISTRY
+ * SECTION COMPONENT REGISTRY (Lazy Loaded)
  * ─────────────────────────────────────────────────────────
- * ARCHITECTURE: Per-tool unique sections (NO shared group templates)
- *
- * Each tool has its own unique prefix + 5 section components:
- *   hero_features | how_to_steps | geo_targeting | privacy_security | performance
- *
- * To add a new tool:
- *   1. Create src/components/seo-sections/tools/MyToolSections.tsx
- *   2. Add 5 entries here with your_tool_* prefix
- *   3. Use your_tool_* in the JSON section type field
- *   4. Done — SeoRichSections.tsx needs ZERO changes.
- *
- * SHARED (legacy merge/compress only — strip prefix before lookup):
- *   hero_features | how_to_steps | geo_targeting | privacy_security | performance
- *
- * PER-TOOL (each totally unique):
- *   protect_*   unlock_*   redact_*   sign_*   metadata_*
- *   split_*     combiner_* transform_* organizer_*
+ * ARCHITECTURE: Per-tool unique sections dynamically loaded on-demand.
+ * Zero bundle bloat for the initial page load.
  * ─────────────────────────────────────────────────────────
  */
 import React from 'react';
 import type { SectionProps } from './types';
 
-// ── Existing shared sections (merge/compress use these via prefix strip) ──
-import { HeroFeaturesSection } from './HeroFeaturesSection';
-import { HowToStepsSection } from './HowToStepsSection';
-import { GeoTargetingSection } from './GeoTargetingSection';
-import { PrivacySecuritySection } from './PrivacySecuritySection';
-import { PerformanceSection } from './PerformanceSection';
+type SectionComponent = React.ComponentType<SectionProps>;
 
+const lazy = (importer: () => Promise<any>, exportName: string): SectionComponent => {
+  return React.lazy(() => importer().then(mod => ({ default: mod[exportName] })));
+};
 
+// ── Shared Decoupled Legacy Sections ──
+const importShared = () => import('./HeroFeaturesSection');
+const importHowTo = () => import('./HowToStepsSection');
+const importGeo = () => import('./GeoTargetingSection');
+const importPrivacy = () => import('./PrivacySecuritySection');
+const importPerf = () => import('./PerformanceSection');
 
-// ── Group A — Combiner (Blue/Indigo -> Rose/Purple) ──
-import { WordToPdfHeroSection, WordToPdfHowToSection, WordToPdfGeoSection, WordToPdfPrivacySection, WordToPdfPerformanceSection } from './tools/WordToPdfSections';
-import { ExcelToPdfHeroSection, ExcelToPdfHowToSection, ExcelToPdfGeoSection, ExcelToPdfPrivacySection, ExcelToPdfPerformanceSection } from './tools/ExcelToPdfSections';
-import { PptToPdfHeroSection, PptToPdfHowToSection, PptToPdfGeoSection, PptToPdfPrivacySection, PptToPdfPerformanceSection } from './tools/PptToPdfSections';
-import { ImageToPdfHeroSection, ImageToPdfHowToSection, ImageToPdfGeoSection, ImageToPdfPrivacySection, ImageToPdfPerformanceSection } from './tools/ImageToPdfSections';
-import { TxtToPdfHeroSection, TxtToPdfHowToSection, TxtToPdfGeoSection, TxtToPdfPrivacySection, TxtToPdfPerformanceSection } from './tools/TxtToPdfSections';
+const HeroFeaturesSection = lazy(importShared, 'HeroFeaturesSection');
+const HowToStepsSection = lazy(importHowTo, 'HowToStepsSection');
+const GeoTargetingSection = lazy(importGeo, 'GeoTargetingSection');
+const PrivacySecuritySection = lazy(importPrivacy, 'PrivacySecuritySection');
+const PerformanceSection = lazy(importPerf, 'PerformanceSection');
 
-// ── Security — PER-TOOL unique (each totally different design) ──
-import { ProtectHeroSection, ProtectHowToSection, ProtectGeoSection, ProtectPrivacySection, ProtectPerformanceSection } from './tools/ProtectPdfSections';
-import { UnlockHeroSection, UnlockHowToSection, UnlockGeoSection, UnlockPrivacySection, UnlockPerformanceSection } from './tools/UnlockPdfSections';
-import { RedactHeroSection, RedactHowToSection, RedactGeoSection, RedactPrivacySection, RedactPerformanceSection } from './tools/RedactPdfSections';
-import { SignHeroSection, SignHowToSection, SignGeoSection, SignPrivacySection, SignPerformanceSection } from './tools/SignPdfSections';
-import { MetadataHeroSection, MetadataHowToSection, MetadataGeoSection, MetadataPrivacySection, MetadataPerformanceSection } from './tools/RemoveMetadataSections';
+// ── Per-Tool Section Importers ──
+const importWord = () => import('./tools/WordToPdfSections');
+const importExcel = () => import('./tools/ExcelToPdfSections');
+const importPpt = () => import('./tools/PptToPdfSections');
+const importImage = () => import('./tools/ImageToPdfSections');
+const importTxt = () => import('./tools/TxtToPdfSections');
 
-// ── Group D — Transformer (Unique Designs) ──
-import { RotateHeroSection, RotateHowToSection, RotateGeoSection, RotatePrivacySection, RotatePerformanceSection } from './tools/RotatePdfSections';
-import { WatermarkHeroSection, WatermarkHowToSection, WatermarkGeoSection, WatermarkPrivacySection, WatermarkPerformanceSection } from './tools/WatermarkPdfSections';
-import { GrayscaleHeroSection, GrayscaleHowToSection, GrayscaleGeoSection, GrayscalePrivacySection, GrayscalePerformanceSection } from './tools/GrayscalePdfSections';
-import { ReverseHeroSection, ReverseHowToSection, ReverseGeoSection, ReversePrivacySection, ReversePerformanceSection } from './tools/ReversePdfSections';
-import { ResizeHeroSection, ResizeHowToSection, ResizeGeoSection, ResizePrivacySection, ResizePerformanceSection } from './tools/ResizePdfSections';
-// ── Group E — Organizer (Unique Designs) ──
-import { PageNumbersHeroSection, PageNumbersHowToSection, PageNumbersGeoSection, PageNumbersPrivacySection, PageNumbersPerformanceSection } from './tools/PageNumbersSections';
-import { OrganizeHeroSection, OrganizeHowToSection, OrganizeGeoSection, OrganizePrivacySection, OrganizePerformanceSection } from './tools/OrganizePdfSections';
-import { ScanHeroSection, ScanHowToSection, ScanGeoSection, ScanPrivacySection, ScanPerformanceSection } from './tools/ScanToPdfSections';
-import { OcrHeroSection, OcrHowToSection, OcrGeoSection, OcrPrivacySection, OcrPerformanceSection } from './tools/OcrPdfSections';
-import { CompareHeroSection, CompareHowToSection, CompareGeoSection, ComparePrivacySection, ComparePerformanceSection } from './tools/ComparePdfSections';
-import { CsvToExcelHeroSection, CsvToExcelHowToSection, CsvToExcelGeoSection, CsvToExcelPrivacySection, CsvToExcelPerformanceSection } from './tools/CsvToExcelSections';
-import { ExcelToCsvHeroSection, ExcelToCsvHowToSection, ExcelToCsvGeoSection, ExcelToCsvPrivacySection, ExcelToCsvPerformanceSection } from './tools/ExcelToCsvSections';
+const importProtect = () => import('./tools/ProtectPdfSections');
+const importUnlock = () => import('./tools/UnlockPdfSections');
+const importRedact = () => import('./tools/RedactPdfSections');
+const importSign = () => import('./tools/SignPdfSections');
+const importMetadata = () => import('./tools/RemoveMetadataSections');
 
-// ── Long-Tail SEO Pages (Mix-and-Match via existing components) ──
-// ── Legacy Decoupled (Merge, Compress, Split, Crop, dll.) ──
-import { MergeHeroSection, MergeHowToSection, MergeGeoSection, MergePrivacySection, MergePerformanceSection } from './tools/MergePdfSections';
-import { CompressHeroSection, CompressHowToSection, CompressGeoSection, CompressPrivacySection, CompressPerformanceSection } from './tools/CompressPdfSections';
-import { SplitHeroSection, SplitHowToSection, SplitGeoSection, SplitPrivacySection, SplitPerformanceSection } from './tools/SplitPdfSections';
-import { CropHeroSection, CropHowToSection, CropGeoSection, CropPrivacySection, CropPerformanceSection } from './tools/CropPdfSections';
-import { RemoveHeroSection, RemoveHowToSection, RemoveGeoSection, RemovePrivacySection, RemovePerformanceSection } from './tools/RemovePdfSections';
-import { PdfToImageHeroSection, PdfToImageHowToSection, PdfToImageGeoSection, PdfToImagePrivacySection, PdfToImagePerformanceSection } from './tools/PdfToImageSections';
-import { ExtractImagesHeroSection, ExtractImagesHowToSection, ExtractImagesGeoSection, ExtractImagesPrivacySection, ExtractImagesPerformanceSection } from './tools/ExtractImagesSections';
-import { EditHeroSection, EditHowToSection, EditGeoSection, EditPrivacySection, EditPerformanceSection } from './tools/EditPdfSections';
-import { LtCropMarginsHowToSection, LtGrayscaleHowToSection, LtRemoveMetadataHowToSection, LtExtractImagesHowToSection, LtComparePdfHowToSection } from './LongTailHowToSections';
+const importRotate = () => import('./tools/RotatePdfSections');
+const importWatermark = () => import('./tools/WatermarkPdfSections');
+const importGrayscale = () => import('./tools/GrayscalePdfSections');
+const importReverse = () => import('./tools/ReversePdfSections');
+const importResize = () => import('./tools/ResizePdfSections');
 
-type SectionComponent = React.FC<SectionProps>;
+const importPageNumbers = () => import('./tools/PageNumbersSections');
+const importOrganize = () => import('./tools/OrganizePdfSections');
+const importScan = () => import('./tools/ScanToPdfSections');
+const importOcr = () => import('./tools/OcrPdfSections');
+const importCompare = () => import('./tools/ComparePdfSections');
+const importCsvToExcel = () => import('./tools/CsvToExcelSections');
+const importExcelToCsv = () => import('./tools/ExcelToCsvSections');
+
+const importMerge = () => import('./tools/MergePdfSections');
+const importCompress = () => import('./tools/CompressPdfSections');
+const importSplit = () => import('./tools/SplitPdfSections');
+const importCrop = () => import('./tools/CropPdfSections');
+const importRemove = () => import('./tools/RemovePdfSections');
+const importPdfToImage = () => import('./tools/PdfToImageSections');
+const importExtractImages = () => import('./tools/ExtractImagesSections');
+const importEdit = () => import('./tools/EditPdfSections');
+const importLongTail = () => import('./LongTailHowToSections');
 
 export const SECTION_REGISTRY: Record<string, SectionComponent> = {
   // ── Decoupled Legacy Tools ──
-  merge_hero_features: MergeHeroSection,
-  merge_how_to_steps: MergeHowToSection,
-  merge_geo_targeting: MergeGeoSection,
-  merge_privacy_security: MergePrivacySection,
-  merge_performance: MergePerformanceSection,
+  merge_hero_features: lazy(importMerge, 'MergeHeroSection'),
+  merge_how_to_steps: lazy(importMerge, 'MergeHowToSection'),
+  merge_geo_targeting: lazy(importMerge, 'MergeGeoSection'),
+  merge_privacy_security: lazy(importMerge, 'MergePrivacySection'),
+  merge_performance: lazy(importMerge, 'MergePerformanceSection'),
 
-  compress_hero_features: CompressHeroSection,
-  compress_how_to_steps: CompressHowToSection,
-  compress_geo_targeting: CompressGeoSection,
-  compress_privacy_security: CompressPrivacySection,
-  compress_performance: CompressPerformanceSection,
+  compress_hero_features: lazy(importCompress, 'CompressHeroSection'),
+  compress_how_to_steps: lazy(importCompress, 'CompressHowToSection'),
+  compress_geo_targeting: lazy(importCompress, 'CompressGeoSection'),
+  compress_privacy_security: lazy(importCompress, 'CompressPrivacySection'),
+  compress_performance: lazy(importCompress, 'CompressPerformanceSection'),
 
-  split_hero_features: SplitHeroSection,
-  split_how_to_steps: SplitHowToSection,
-  split_geo_targeting: SplitGeoSection,
-  split_privacy_security: SplitPrivacySection,
-  split_performance: SplitPerformanceSection,
+  split_hero_features: lazy(importSplit, 'SplitHeroSection'),
+  split_how_to_steps: lazy(importSplit, 'SplitHowToSection'),
+  split_geo_targeting: lazy(importSplit, 'SplitGeoSection'),
+  split_privacy_security: lazy(importSplit, 'SplitPrivacySection'),
+  split_performance: lazy(importSplit, 'SplitPerformanceSection'),
   
-  crop_hero_features: CropHeroSection,
-  crop_how_to_steps: CropHowToSection,
-  crop_geo_targeting: CropGeoSection,
-  crop_privacy_security: CropPrivacySection,
-  crop_performance: CropPerformanceSection,
+  crop_hero_features: lazy(importCrop, 'CropHeroSection'),
+  crop_how_to_steps: lazy(importCrop, 'CropHowToSection'),
+  crop_geo_targeting: lazy(importCrop, 'CropGeoSection'),
+  crop_privacy_security: lazy(importCrop, 'CropPrivacySection'),
+  crop_performance: lazy(importCrop, 'CropPerformanceSection'),
 
   // ── Long-Tail SEO Tools ──
-  lt_crop_margins_how_to_steps: LtCropMarginsHowToSection,
-  lt_grayscale_how_to_steps: LtGrayscaleHowToSection,
-  lt_remove_metadata_how_to_steps: LtRemoveMetadataHowToSection,
-  lt_extract_images_how_to_steps: LtExtractImagesHowToSection,
-  lt_compare_pdf_how_to_steps: LtComparePdfHowToSection,
+  lt_crop_margins_how_to_steps: lazy(importLongTail, 'LtCropMarginsHowToSection'),
+  lt_grayscale_how_to_steps: lazy(importLongTail, 'LtGrayscaleHowToSection'),
+  lt_remove_metadata_how_to_steps: lazy(importLongTail, 'LtRemoveMetadataHowToSection'),
+  lt_extract_images_how_to_steps: lazy(importLongTail, 'LtExtractImagesHowToSection'),
+  lt_compare_pdf_how_to_steps: lazy(importLongTail, 'LtComparePdfHowToSection'),
 
-  remove_hero_features: RemoveHeroSection,
-  remove_how_to_steps: RemoveHowToSection,
-  remove_geo_targeting: RemoveGeoSection,
-  remove_privacy_security: RemovePrivacySection,
-  remove_performance: RemovePerformanceSection,
+  remove_hero_features: lazy(importRemove, 'RemoveHeroSection'),
+  remove_how_to_steps: lazy(importRemove, 'RemoveHowToSection'),
+  remove_geo_targeting: lazy(importRemove, 'RemoveGeoSection'),
+  remove_privacy_security: lazy(importRemove, 'RemovePrivacySection'),
+  remove_performance: lazy(importRemove, 'RemovePerformanceSection'),
 
-  pdf_image_hero_features: PdfToImageHeroSection,
-  pdf_image_how_to_steps: PdfToImageHowToSection,
-  pdf_image_geo_targeting: PdfToImageGeoSection,
-  pdf_image_privacy_security: PdfToImagePrivacySection,
-  pdf_image_performance: PdfToImagePerformanceSection,
+  pdf_image_hero_features: lazy(importPdfToImage, 'PdfToImageHeroSection'),
+  pdf_image_how_to_steps: lazy(importPdfToImage, 'PdfToImageHowToSection'),
+  pdf_image_geo_targeting: lazy(importPdfToImage, 'PdfToImageGeoSection'),
+  pdf_image_privacy_security: lazy(importPdfToImage, 'PdfToImagePrivacySection'),
+  pdf_image_performance: lazy(importPdfToImage, 'PdfToImagePerformanceSection'),
 
-  extract_images_hero_features: ExtractImagesHeroSection,
-  extract_images_how_to_steps: ExtractImagesHowToSection,
-  extract_images_geo_targeting: ExtractImagesGeoSection,
-  extract_images_privacy_security: ExtractImagesPrivacySection,
-  extract_images_performance: ExtractImagesPerformanceSection,
+  extract_images_hero_features: lazy(importExtractImages, 'ExtractImagesHeroSection'),
+  extract_images_how_to_steps: lazy(importExtractImages, 'ExtractImagesHowToSection'),
+  extract_images_geo_targeting: lazy(importExtractImages, 'ExtractImagesGeoSection'),
+  extract_images_privacy_security: lazy(importExtractImages, 'ExtractImagesPrivacySection'),
+  extract_images_performance: lazy(importExtractImages, 'ExtractImagesPerformanceSection'),
 
-  // ── Generic Fallback (Just in case) ──
+  // ── Generic Fallback ──
   hero_features: HeroFeaturesSection,
   how_to_steps: HowToStepsSection,
   geo_targeting: GeoTargetingSection,
   privacy_security: PrivacySecuritySection,
   performance: PerformanceSection,
 
-  // ── Group A — Combiner: word-to-pdf, excel-to-pdf, image-to-pdf, txt-to-pdf ──
-  word_hero_features: WordToPdfHeroSection,
-  word_how_to_steps: WordToPdfHowToSection,
-  word_geo_targeting: WordToPdfGeoSection,
-  word_privacy_security: WordToPdfPrivacySection,
-  word_performance: WordToPdfPerformanceSection,
+  // ── Group A — Combiner ──
+  word_hero_features: lazy(importWord, 'WordToPdfHeroSection'),
+  word_how_to_steps: lazy(importWord, 'WordToPdfHowToSection'),
+  word_geo_targeting: lazy(importWord, 'WordToPdfGeoSection'),
+  word_privacy_security: lazy(importWord, 'WordToPdfPrivacySection'),
+  word_performance: lazy(importWord, 'WordToPdfPerformanceSection'),
 
-  excel_hero_features: ExcelToPdfHeroSection,
-  excel_how_to_steps: ExcelToPdfHowToSection,
-  excel_geo_targeting: ExcelToPdfGeoSection,
-  excel_privacy_security: ExcelToPdfPrivacySection,
-  excel_performance: ExcelToPdfPerformanceSection,
+  excel_hero_features: lazy(importExcel, 'ExcelToPdfHeroSection'),
+  excel_how_to_steps: lazy(importExcel, 'ExcelToPdfHowToSection'),
+  excel_geo_targeting: lazy(importExcel, 'ExcelToPdfGeoSection'),
+  excel_privacy_security: lazy(importExcel, 'ExcelToPdfPrivacySection'),
+  excel_performance: lazy(importExcel, 'ExcelToPdfPerformanceSection'),
 
-  ppt_hero_features: PptToPdfHeroSection,
-  ppt_how_to_steps: PptToPdfHowToSection,
-  ppt_geo_targeting: PptToPdfGeoSection,
-  ppt_privacy_security: PptToPdfPrivacySection,
-  ppt_performance: PptToPdfPerformanceSection,
+  ppt_hero_features: lazy(importPpt, 'PptToPdfHeroSection'),
+  ppt_how_to_steps: lazy(importPpt, 'PptToPdfHowToSection'),
+  ppt_geo_targeting: lazy(importPpt, 'PptToPdfGeoSection'),
+  ppt_privacy_security: lazy(importPpt, 'PptToPdfPrivacySection'),
+  ppt_performance: lazy(importPpt, 'PptToPdfPerformanceSection'),
 
-  image_hero_features: ImageToPdfHeroSection,
-  image_how_to_steps: ImageToPdfHowToSection,
-  image_geo_targeting: ImageToPdfGeoSection,
-  image_privacy_security: ImageToPdfPrivacySection,
-  image_performance: ImageToPdfPerformanceSection,
+  image_hero_features: lazy(importImage, 'ImageToPdfHeroSection'),
+  image_how_to_steps: lazy(importImage, 'ImageToPdfHowToSection'),
+  image_geo_targeting: lazy(importImage, 'ImageToPdfGeoSection'),
+  image_privacy_security: lazy(importImage, 'ImageToPdfPrivacySection'),
+  image_performance: lazy(importImage, 'ImageToPdfPerformanceSection'),
 
-  txt_hero_features: TxtToPdfHeroSection,
-  txt_how_to_steps: TxtToPdfHowToSection,
-  txt_geo_targeting: TxtToPdfGeoSection,
-  txt_privacy_security: TxtToPdfPrivacySection,
-  txt_performance: TxtToPdfPerformanceSection,
+  txt_hero_features: lazy(importTxt, 'TxtToPdfHeroSection'),
+  txt_how_to_steps: lazy(importTxt, 'TxtToPdfHowToSection'),
+  txt_geo_targeting: lazy(importTxt, 'TxtToPdfGeoSection'),
+  txt_privacy_security: lazy(importTxt, 'TxtToPdfPrivacySection'),
+  txt_performance: lazy(importTxt, 'TxtToPdfPerformanceSection'),
 
-  // ── Security — protect-pdf (Dark Green + Gold, Vault) ──
-  protect_hero_features: ProtectHeroSection,
-  protect_how_to_steps: ProtectHowToSection,
-  protect_geo_targeting: ProtectGeoSection,
-  protect_privacy_security: ProtectPrivacySection,
-  protect_performance: ProtectPerformanceSection,
+  // ── Security ──
+  protect_hero_features: lazy(importProtect, 'ProtectHeroSection'),
+  protect_how_to_steps: lazy(importProtect, 'ProtectHowToSection'),
+  protect_geo_targeting: lazy(importProtect, 'ProtectGeoSection'),
+  protect_privacy_security: lazy(importProtect, 'ProtectPrivacySection'),
+  protect_performance: lazy(importProtect, 'ProtectPerformanceSection'),
 
-  // ── Security — unlock-pdf (Amber, Key/Open) ──
-  unlock_hero_features: UnlockHeroSection,
-  unlock_how_to_steps: UnlockHowToSection,
-  unlock_geo_targeting: UnlockGeoSection,
-  unlock_privacy_security: UnlockPrivacySection,
-  unlock_performance: UnlockPerformanceSection,
+  unlock_hero_features: lazy(importUnlock, 'UnlockHeroSection'),
+  unlock_how_to_steps: lazy(importUnlock, 'UnlockHowToSection'),
+  unlock_geo_targeting: lazy(importUnlock, 'UnlockGeoSection'),
+  unlock_privacy_security: lazy(importUnlock, 'UnlockPrivacySection'),
+  unlock_performance: lazy(importUnlock, 'UnlockPerformanceSection'),
 
-  // ── Security — redact-pdf (Noir Black + Red, Classified) ──
-  redact_hero_features: RedactHeroSection,
-  redact_how_to_steps: RedactHowToSection,
-  redact_geo_targeting: RedactGeoSection,
-  redact_privacy_security: RedactPrivacySection,
-  redact_performance: RedactPerformanceSection,
+  redact_hero_features: lazy(importRedact, 'RedactHeroSection'),
+  redact_how_to_steps: lazy(importRedact, 'RedactHowToSection'),
+  redact_geo_targeting: lazy(importRedact, 'RedactGeoSection'),
+  redact_privacy_security: lazy(importRedact, 'RedactPrivacySection'),
+  redact_performance: lazy(importRedact, 'RedactPerformanceSection'),
 
-  // ── Security — sign-pdf (Deep Blue + Purple, Signature) ──
-  sign_hero_features: SignHeroSection,
-  sign_how_to_steps: SignHowToSection,
-  sign_geo_targeting: SignGeoSection,
-  sign_privacy_security: SignPrivacySection,
-  sign_performance: SignPerformanceSection,
+  sign_hero_features: lazy(importSign, 'SignHeroSection'),
+  sign_how_to_steps: lazy(importSign, 'SignHowToSection'),
+  sign_geo_targeting: lazy(importSign, 'SignGeoSection'),
+  sign_privacy_security: lazy(importSign, 'SignPrivacySection'),
+  sign_performance: lazy(importSign, 'SignPerformanceSection'),
 
-  // ── Security — remove-pdf-metadata (Slate + Cyan, Cleanse) ──
-  metadata_hero_features: MetadataHeroSection,
-  metadata_how_to_steps: MetadataHowToSection,
-  metadata_geo_targeting: MetadataGeoSection,
-  metadata_privacy_security: MetadataPrivacySection,
-  metadata_performance: MetadataPerformanceSection,
+  metadata_hero_features: lazy(importMetadata, 'MetadataHeroSection'),
+  metadata_how_to_steps: lazy(importMetadata, 'MetadataHowToSection'),
+  metadata_geo_targeting: lazy(importMetadata, 'MetadataGeoSection'),
+  metadata_privacy_security: lazy(importMetadata, 'MetadataPrivacySection'),
+  metadata_performance: lazy(importMetadata, 'MetadataPerformanceSection'),
 
-  // ── Group D — Transformer: Unique Prefixes ──
-  rotate_hero_features: RotateHeroSection,
-  rotate_how_to_steps: RotateHowToSection,
-  rotate_geo_targeting: RotateGeoSection,
-  rotate_privacy_security: RotatePrivacySection,
-  rotate_performance: RotatePerformanceSection,
+  // ── Group D — Transformer ──
+  rotate_hero_features: lazy(importRotate, 'RotateHeroSection'),
+  rotate_how_to_steps: lazy(importRotate, 'RotateHowToSection'),
+  rotate_geo_targeting: lazy(importRotate, 'RotateGeoSection'),
+  rotate_privacy_security: lazy(importRotate, 'RotatePrivacySection'),
+  rotate_performance: lazy(importRotate, 'RotatePerformanceSection'),
 
-  watermark_hero_features: WatermarkHeroSection,
-  watermark_how_to_steps: WatermarkHowToSection,
-  watermark_geo_targeting: WatermarkGeoSection,
-  watermark_privacy_security: WatermarkPrivacySection,
-  watermark_performance: WatermarkPerformanceSection,
+  watermark_hero_features: lazy(importWatermark, 'WatermarkHeroSection'),
+  watermark_how_to_steps: lazy(importWatermark, 'WatermarkHowToSection'),
+  watermark_geo_targeting: lazy(importWatermark, 'WatermarkGeoSection'),
+  watermark_privacy_security: lazy(importWatermark, 'WatermarkPrivacySection'),
+  watermark_performance: lazy(importWatermark, 'WatermarkPerformanceSection'),
 
-  grayscale_hero_features: GrayscaleHeroSection,
-  grayscale_how_to_steps: GrayscaleHowToSection,
-  grayscale_geo_targeting: GrayscaleGeoSection,
-  grayscale_privacy_security: GrayscalePrivacySection,
-  grayscale_performance: GrayscalePerformanceSection,
+  grayscale_hero_features: lazy(importGrayscale, 'GrayscaleHeroSection'),
+  grayscale_how_to_steps: lazy(importGrayscale, 'GrayscaleHowToSection'),
+  grayscale_geo_targeting: lazy(importGrayscale, 'GrayscaleGeoSection'),
+  grayscale_privacy_security: lazy(importGrayscale, 'GrayscalePrivacySection'),
+  grayscale_performance: lazy(importGrayscale, 'GrayscalePerformanceSection'),
 
-  reverse_hero_features: ReverseHeroSection,
-  reverse_how_to_steps: ReverseHowToSection,
-  reverse_geo_targeting: ReverseGeoSection,
-  reverse_privacy_security: ReversePrivacySection,
-  reverse_performance: ReversePerformanceSection,
+  reverse_hero_features: lazy(importReverse, 'ReverseHeroSection'),
+  reverse_how_to_steps: lazy(importReverse, 'ReverseHowToSection'),
+  reverse_geo_targeting: lazy(importReverse, 'ReverseGeoSection'),
+  reverse_privacy_security: lazy(importReverse, 'ReversePrivacySection'),
+  reverse_performance: lazy(importReverse, 'ReversePerformanceSection'),
 
-  resize_hero_features: ResizeHeroSection,
-  resize_how_to_steps: ResizeHowToSection,
-  resize_geo_targeting: ResizeGeoSection,
-  resize_privacy_security: ResizePrivacySection,
-  resize_performance: ResizePerformanceSection,
+  resize_hero_features: lazy(importResize, 'ResizeHeroSection'),
+  resize_how_to_steps: lazy(importResize, 'ResizeHowToSection'),
+  resize_geo_targeting: lazy(importResize, 'ResizeGeoSection'),
+  resize_privacy_security: lazy(importResize, 'ResizePrivacySection'),
+  resize_performance: lazy(importResize, 'ResizePerformanceSection'),
 
-  // ── Group E — Organizer: Unique Prefixes ──
-  pagenum_hero_features: PageNumbersHeroSection,
-  pagenum_how_to_steps: PageNumbersHowToSection,
-  pagenum_geo_targeting: PageNumbersGeoSection,
-  pagenum_privacy_security: PageNumbersPrivacySection,
-  pagenum_performance: PageNumbersPerformanceSection,
+  // ── Group E — Organizer ──
+  pagenum_hero_features: lazy(importPageNumbers, 'PageNumbersHeroSection'),
+  pagenum_how_to_steps: lazy(importPageNumbers, 'PageNumbersHowToSection'),
+  pagenum_geo_targeting: lazy(importPageNumbers, 'PageNumbersGeoSection'),
+  pagenum_privacy_security: lazy(importPageNumbers, 'PageNumbersPrivacySection'),
+  pagenum_performance: lazy(importPageNumbers, 'PageNumbersPerformanceSection'),
 
-  organize_hero_features: OrganizeHeroSection,
-  organize_how_to_steps: OrganizeHowToSection,
-  organize_geo_targeting: OrganizeGeoSection,
-  organize_privacy_security: OrganizePrivacySection,
-  organize_performance: OrganizePerformanceSection,
+  organize_hero_features: lazy(importOrganize, 'OrganizeHeroSection'),
+  organize_how_to_steps: lazy(importOrganize, 'OrganizeHowToSection'),
+  organize_geo_targeting: lazy(importOrganize, 'OrganizeGeoSection'),
+  organize_privacy_security: lazy(importOrganize, 'OrganizePrivacySection'),
+  organize_performance: lazy(importOrganize, 'OrganizePerformanceSection'),
 
-  scan_hero_features: ScanHeroSection,
-  scan_how_to_steps: ScanHowToSection,
-  scan_geo_targeting: ScanGeoSection,
-  scan_privacy_security: ScanPrivacySection,
-  scan_performance: ScanPerformanceSection,
+  scan_hero_features: lazy(importScan, 'ScanHeroSection'),
+  scan_how_to_steps: lazy(importScan, 'ScanHowToSection'),
+  scan_geo_targeting: lazy(importScan, 'ScanGeoSection'),
+  scan_privacy_security: lazy(importScan, 'ScanPrivacySection'),
+  scan_performance: lazy(importScan, 'ScanPerformanceSection'),
 
-  ocr_hero_features: OcrHeroSection,
-  ocr_how_to_steps: OcrHowToSection,
-  ocr_geo_targeting: OcrGeoSection,
-  ocr_privacy_security: OcrPrivacySection,
-  ocr_performance: OcrPerformanceSection,
+  ocr_hero_features: lazy(importOcr, 'OcrHeroSection'),
+  ocr_how_to_steps: lazy(importOcr, 'OcrHowToSection'),
+  ocr_geo_targeting: lazy(importOcr, 'OcrGeoSection'),
+  ocr_privacy_security: lazy(importOcr, 'OcrPrivacySection'),
+  ocr_performance: lazy(importOcr, 'OcrPerformanceSection'),
 
-  compare_hero_features: CompareHeroSection,
-  compare_how_to_steps: CompareHowToSection,
-  compare_geo_targeting: CompareGeoSection,
-  compare_privacy_security: ComparePrivacySection,
-  compare_performance: ComparePerformanceSection,
+  compare_hero_features: lazy(importCompare, 'CompareHeroSection'),
+  compare_how_to_steps: lazy(importCompare, 'CompareHowToSection'),
+  compare_geo_targeting: lazy(importCompare, 'CompareGeoSection'),
+  compare_privacy_security: lazy(importCompare, 'ComparePrivacySection'),
+  compare_performance: lazy(importCompare, 'ComparePerformanceSection'),
 
-  edit_hero_features: EditHeroSection,
-  edit_how_to_steps: EditHowToSection,
-  edit_geo_targeting: EditGeoSection,
-  edit_privacy_security: EditPrivacySection,
-  edit_performance: EditPerformanceSection,
+  edit_hero_features: lazy(importEdit, 'EditHeroSection'),
+  edit_how_to_steps: lazy(importEdit, 'EditHowToSection'),
+  edit_geo_targeting: lazy(importEdit, 'EditGeoSection'),
+  edit_privacy_security: lazy(importEdit, 'EditPrivacySection'),
+  edit_performance: lazy(importEdit, 'EditPerformanceSection'),
 
-  csv_excel_hero_features: CsvToExcelHeroSection,
-  csv_excel_how_to_steps: CsvToExcelHowToSection,
-  csv_excel_geo_targeting: CsvToExcelGeoSection,
-  csv_excel_privacy_security: CsvToExcelPrivacySection,
-  csv_excel_performance: CsvToExcelPerformanceSection,
+  csv_excel_hero_features: lazy(importCsvToExcel, 'CsvToExcelHeroSection'),
+  csv_excel_how_to_steps: lazy(importCsvToExcel, 'CsvToExcelHowToSection'),
+  csv_excel_geo_targeting: lazy(importCsvToExcel, 'CsvToExcelGeoSection'),
+  csv_excel_privacy_security: lazy(importCsvToExcel, 'CsvToExcelPrivacySection'),
+  csv_excel_performance: lazy(importCsvToExcel, 'CsvToExcelPerformanceSection'),
 
-  excel_csv_hero_features: ExcelToCsvHeroSection,
-  excel_csv_how_to_steps: ExcelToCsvHowToSection,
-  excel_csv_geo_targeting: ExcelToCsvGeoSection,
-  excel_csv_privacy_security: ExcelToCsvPrivacySection,
-  excel_csv_performance: ExcelToCsvPerformanceSection,
+  excel_csv_hero_features: lazy(importExcelToCsv, 'ExcelToCsvHeroSection'),
+  excel_csv_how_to_steps: lazy(importExcelToCsv, 'ExcelToCsvHowToSection'),
+  excel_csv_geo_targeting: lazy(importExcelToCsv, 'ExcelToCsvGeoSection'),
+  excel_csv_privacy_security: lazy(importExcelToCsv, 'ExcelToCsvPrivacySection'),
+  excel_csv_performance: lazy(importExcelToCsv, 'ExcelToCsvPerformanceSection'),
 
   // ── Long-Tail SEO Pages ──
-  crop_margins_hero_features: UnlockHeroSection,
-  crop_margins_how_to_steps: SplitHowToSection,
-  crop_margins_geo_targeting: ImageToPdfGeoSection,
-  crop_margins_privacy_security: SignPrivacySection,
-  crop_margins_performance: WatermarkPerformanceSection,
+  crop_margins_hero_features: lazy(importUnlock, 'UnlockHeroSection'),
+  crop_margins_how_to_steps: lazy(importSplit, 'SplitHowToSection'),
+  crop_margins_geo_targeting: lazy(importImage, 'ImageToPdfGeoSection'),
+  crop_margins_privacy_security: lazy(importSign, 'SignPrivacySection'),
+  crop_margins_performance: lazy(importWatermark, 'WatermarkPerformanceSection'),
 
-  grayscale_print_hero_features: MergeHeroSection,
-  grayscale_print_how_to_steps: RedactHowToSection,
-  grayscale_print_geo_targeting: ExcelToCsvGeoSection,
-  grayscale_print_privacy_security: CompressPrivacySection,
-  grayscale_print_performance: ProtectPerformanceSection,
+  grayscale_print_hero_features: lazy(importMerge, 'MergeHeroSection'),
+  grayscale_print_how_to_steps: lazy(importRedact, 'RedactHowToSection'),
+  grayscale_print_geo_targeting: lazy(importExcelToCsv, 'ExcelToCsvGeoSection'),
+  grayscale_print_privacy_security: lazy(importCompress, 'CompressPrivacySection'),
+  grayscale_print_performance: lazy(importProtect, 'ProtectPerformanceSection'),
 
-  remove_author_hero_features: ScanHeroSection,
-  remove_author_how_to_steps: WordToPdfHowToSection,
-  remove_author_geo_targeting: ResizeGeoSection,
-  remove_author_privacy_security: RotatePrivacySection,
-  remove_author_performance: OcrPerformanceSection,
+  remove_author_hero_features: lazy(importScan, 'ScanHeroSection'),
+  remove_author_how_to_steps: lazy(importWord, 'WordToPdfHowToSection'),
+  remove_author_geo_targeting: lazy(importResize, 'ResizeGeoSection'),
+  remove_author_privacy_security: lazy(importRotate, 'RotatePrivacySection'),
+  remove_author_performance: lazy(importOcr, 'OcrPerformanceSection'),
 
-  extract_highres_hero_features: CsvToExcelHeroSection,
-  extract_highres_how_to_steps: ExtractImagesHowToSection,
-  extract_highres_geo_targeting: ProtectGeoSection,
-  extract_highres_privacy_security: EditPrivacySection,
-  extract_highres_performance: ReversePerformanceSection,
+  extract_highres_hero_features: lazy(importCsvToExcel, 'CsvToExcelHeroSection'),
+  extract_highres_how_to_steps: lazy(importExtractImages, 'ExtractImagesHowToSection'),
+  extract_highres_geo_targeting: lazy(importProtect, 'ProtectGeoSection'),
+  extract_highres_privacy_security: lazy(importEdit, 'EditPrivacySection'),
+  extract_highres_performance: lazy(importReverse, 'ReversePerformanceSection'),
 
-  compare_visual_hero_features: MetadataHeroSection,
-  compare_visual_how_to_steps: OrganizeHowToSection,
-  compare_visual_geo_targeting: PptToPdfGeoSection,
-  compare_visual_privacy_security: RemovePrivacySection,
-  compare_visual_performance: PageNumbersPerformanceSection,
+  compare_visual_hero_features: lazy(importMetadata, 'MetadataHeroSection'),
+  compare_visual_how_to_steps: lazy(importOrganize, 'OrganizeHowToSection'),
+  compare_visual_geo_targeting: lazy(importPpt, 'PptToPdfGeoSection'),
+  compare_visual_privacy_security: lazy(importRemove, 'RemovePrivacySection'),
+  compare_visual_performance: lazy(importPageNumbers, 'PageNumbersPerformanceSection'),
 };
 
 /** No prefix stripping needed since every tool has a unique prefix mapping */
