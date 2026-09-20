@@ -1,4 +1,5 @@
 import React from 'react';
+import { getUiTranslations } from '../../i18n/translations';
 import { TOOLS_CATALOG, getLocalizedSeo } from '../../catalog/toolsCatalog';
 import {
   FileText, Combine, PenTool, Scissors, RotateCw, Hash, Stamp, Trash2,
