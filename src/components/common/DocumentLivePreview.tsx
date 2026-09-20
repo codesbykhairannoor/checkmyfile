@@ -111,9 +111,15 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
 
   const handlePageChange = (newPage: number) => {
     setPageNumber(newPage);
-    if (isPdf) {
+    if (isPdf && previewWrapperRef.current) {
       const el = document.getElementById(`pdf-page-${newPage}`);
-      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      if (el) {
+        const container = previewWrapperRef.current;
+        const containerRect = container.getBoundingClientRect();
+        const elRect = el.getBoundingClientRect();
+        const targetScrollTop = container.scrollTop + (elRect.top - containerRect.top) - (container.clientHeight / 2) + (el.clientHeight / 2);
+        container.scrollTo({ top: Math.max(0, targetScrollTop), behavior: 'smooth' });
+      }
     }
   };
 
@@ -146,7 +152,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
       clearTimeout(timeout);
       observer.disconnect();
     };
-  }, [isPdf, totalPages, isLoadingPreview]);
+  }, [isPdf, totalPages, isLoadingPreview, activeFile]);
 
   // Reset page number & states on file change
   useEffect(() => {
@@ -155,7 +161,10 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
     setPageAspectRatio(A4_PORTRAIT_RATIO);
     setErrorText(null);
     setTextPreviewContent(null);
-  }, [activeFileIndex, files, isResult]);
+    if (previewWrapperRef.current) {
+      previewWrapperRef.current.scrollTop = 0;
+    }
+  }, [activeFileIndex, localActiveIndex, files, isResult]);
 
   // Dedicated effect to load PDF Document once to prevent thumbnail flashing
   useEffect(() => {
