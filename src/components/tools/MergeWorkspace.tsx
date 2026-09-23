@@ -164,7 +164,7 @@ export const MergeWorkspace: React.FC<MergeWorkspaceProps> = ({ files, setFiles,
           <div style={{ width: 48, height: 48, borderRadius: '50%', background: '#6366f1', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <Plus size={24} />
           </div>
-          <span style={{ fontWeight: 700, fontSize: '0.95rem' }}>{tUi["Add More"] || "Add More"}</span>
+          <span style={{ fontWeight: 700, fontSize: '0.95rem' }}>{tUi["add_more"] || tUi["Add More"] || "+ Add More"}</span>
         </button>
         <input type="file" ref={fileInputRef} onChange={handleAddFiles} accept=".pdf" multiple style={{ width: 0, height: 0, opacity: 0, overflow: 'hidden', position: 'absolute' }} />
       </div>

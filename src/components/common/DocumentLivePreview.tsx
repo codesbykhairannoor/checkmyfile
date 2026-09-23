@@ -18,13 +18,7 @@ interface DocumentLivePreviewProps {
   currentLang?: string;
   isResult?: boolean;
   externalRotate?: number;
-  watermarkConfig?: {
-    text: string;
-    opacity: number;
-    color: string;
-    scale: number;
-    rotation: number;
-  };
+  watermarkConfig?: any;
   pageNumberConfig?: any;
   splitRange?: string;
   removeRange?: string;

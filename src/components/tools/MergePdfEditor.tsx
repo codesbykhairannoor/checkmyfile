@@ -17,16 +17,15 @@ export const MergePdfEditor: React.FC<MergePdfEditorProps> = ({
   onApply,
   isProcessing
 }) => {
-  void tUi;
   return (
     <div className="glass-panel" style={{ padding: 24, display: 'flex', flexDirection: 'column', gap: 24, minWidth: 280, minHeight: 0 }}>
       <div>
         <h4 style={{ fontWeight: 800, fontSize: '1.1rem', color: 'var(--text-main)', marginBottom: 6, display: 'flex', alignItems: 'center', gap: 8 }}>
           <Layers size={18} className="text-brand-primary" />
-          <span>{tUi['Interactive Merge'] || (tUi["Interactive Merge"] || "Interactive Merge")}</span>
+          <span>{tUi['interactive_merge'] || tUi['Interactive Merge'] || 'Interactive Merge'}</span>
         </h4>
         <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
-          {tUi['Atur urutan file PDF di bawah dengan menggeser (Drag & Drop) kartu dokumen.'] || (tUi["Atur urutan file PDF di bawah dengan menggeser (Drag & Drop) kartu dokumen."] || "Atur urutan file PDF di bawah dengan menggeser (Drag & Drop) kartu dokumen.")}
+          {tUi['merge_desc'] || tUi['Atur urutan file PDF di bawah dengan menggeser (Drag & Drop) kartu dokumen.'] || 'Arrange the PDF file order below by Drag & Drop the document cards.'}
         </p>
       </div>
 
@@ -36,7 +35,9 @@ export const MergePdfEditor: React.FC<MergePdfEditorProps> = ({
 
       <div style={{ marginTop: 'auto', paddingTop: 24, borderTop: '1px solid var(--border-color)' }}>
         {files.length < 2 && (
-          <div style={{ fontSize: '0.8rem', color: '#ef4444', background: 'rgba(239, 68, 68, 0.1)', padding: 12, borderRadius: 8, textAlign: 'center', marginBottom: 12 }}>{tUi["Minimal butuh 2 file untuk digabungkan."] || (tUi["Minimal butuh 2 file untuk digabungkan."] || "Minimal butuh 2 file untuk digabungkan.")}</div>
+          <div style={{ fontSize: '0.8rem', color: '#ef4444', background: 'rgba(239, 68, 68, 0.1)', padding: 12, borderRadius: 8, textAlign: 'center', marginBottom: 12 }}>
+            {tUi['merge_min_warning'] || tUi['Minimal butuh 2 file untuk digabungkan.'] || 'At least 2 files required to merge.'}
+          </div>
         )}
         <button
           onClick={onApply}
@@ -49,7 +50,7 @@ export const MergePdfEditor: React.FC<MergePdfEditorProps> = ({
           ) : (
             <Download size={18} />
           )}
-          <span>{isProcessing ? (tUi["Menggabungkan..."] || "Menggabungkan...") : (tUi["Gabungkan Sekarang"] || (tUi["Gabungkan Sekarang"] || "Gabungkan Sekarang"))}</span>
+          <span>{isProcessing ? (tUi['merging_btn'] || tUi['Menggabungkan...'] || 'Merging...') : (tUi['merge_now'] || tUi['Gabungkan Sekarang'] || 'Merge Now')}</span>
         </button>
       </div>
     </div>

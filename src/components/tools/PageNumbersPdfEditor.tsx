@@ -18,28 +18,27 @@ export const PageNumbersPdfEditor: React.FC<PageNumbersPdfEditorProps> = ({
   onApply,
   isProcessing
 }) => {
-  void tUi;
   return (
     <div className="glass-panel" style={{ padding: 24, display: 'flex', flexDirection: 'column', gap: 24, minWidth: 280 }}>
       <div>
         <h4 style={{ fontWeight: 800, fontSize: '1.1rem', color: 'var(--text-main)', marginBottom: 6, display: 'flex', alignItems: 'center', gap: 8 }}>
           <Hash size={18} className="text-brand-primary" />
-          <span>{tUi['Interactive Page Numbers'] || (tUi["Interactive Page Numbers"] || "Interactive Page Numbers")}</span>
+          <span>{tUi['interactive_page_numbers'] || tUi['Interactive Page Numbers'] || 'Interactive Page Numbers'}</span>
         </h4>
         <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
-          {tUi['Atur posisi penomoran halaman. Angka akan muncul secara *real-time* di kanvas.'] || (tUi["Atur posisi penomoran halaman. Angka akan muncul secara *real-time* di kanvas."] || "Atur posisi penomoran halaman. Angka akan muncul secara *real-time* di kanvas.")}
+          {tUi['page_numbers_desc'] || tUi['Atur posisi penomoran halaman. Angka akan muncul secara *real-time* di kanvas.'] || 'Set page numbering position and style. Numbers will appear in real-time on the canvas.'}
         </p>
       </div>
 
       <div>
         <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'block', marginBottom: 12 }}>
-          {tUi['Pilih Posisi Angka'] || (tUi["Pilih Posisi Angka"] || "Pilih Posisi Angka")}
+          {tUi['select_number_position'] || tUi['Pilih Posisi Angka'] || 'Select Number Position'}
         </label>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
           <button
+            type="button"
             onClick={() => setConfig({ ...config, position: 'top-center' })}
             style={{ 
-              flex: (tUi["1 1 calc(50% - 10px)"] || "1 1 calc(50% - 10px)"),
               display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, padding: '12px 0', 
               background: config.position === 'top-center' ? 'var(--brand-gradient)' : 'var(--bg-input)', 
               border: config.position === 'top-center' ? 'none' : '1px solid var(--border-color)', 
@@ -48,13 +47,15 @@ export const PageNumbersPdfEditor: React.FC<PageNumbersPdfEditorProps> = ({
             }}
           >
             <AlignCenter size={20} />
-            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: config.position === 'top-center' ? 'rgba(255,255,255,0.9)' : 'var(--text-muted)' }}>{tUi["Top Center"] || (tUi["Top Center"] || "Top Center")}</span>
+            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: config.position === 'top-center' ? 'rgba(255,255,255,0.9)' : 'var(--text-muted)' }}>
+              {tUi['top_center'] || 'Top Center'}
+            </span>
           </button>
 
           <button
+            type="button"
             onClick={() => setConfig({ ...config, position: 'top-right' })}
             style={{ 
-              flex: (tUi["1 1 calc(50% - 10px)"] || "1 1 calc(50% - 10px)"),
               display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, padding: '12px 0', 
               background: config.position === 'top-right' ? 'var(--brand-gradient)' : 'var(--bg-input)', 
               border: config.position === 'top-right' ? 'none' : '1px solid var(--border-color)', 
@@ -63,13 +64,15 @@ export const PageNumbersPdfEditor: React.FC<PageNumbersPdfEditorProps> = ({
             }}
           >
             <AlignRight size={20} />
-            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: config.position === 'top-right' ? 'rgba(255,255,255,0.9)' : 'var(--text-muted)' }}>{tUi["Top Right"] || (tUi["Top Right"] || "Top Right")}</span>
+            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: config.position === 'top-right' ? 'rgba(255,255,255,0.9)' : 'var(--text-muted)' }}>
+              {tUi['top_right'] || 'Top Right'}
+            </span>
           </button>
 
           <button
+            type="button"
             onClick={() => setConfig({ ...config, position: 'bottom-center' })}
             style={{ 
-              flex: (tUi["1 1 calc(50% - 10px)"] || "1 1 calc(50% - 10px)"),
               display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, padding: '12px 0', 
               background: config.position === 'bottom-center' ? 'var(--brand-gradient)' : 'var(--bg-input)', 
               border: config.position === 'bottom-center' ? 'none' : '1px solid var(--border-color)', 
@@ -78,13 +81,15 @@ export const PageNumbersPdfEditor: React.FC<PageNumbersPdfEditorProps> = ({
             }}
           >
             <AlignCenter size={20} />
-            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: config.position === 'bottom-center' ? 'rgba(255,255,255,0.9)' : 'var(--text-muted)' }}>{tUi["Bottom Center"] || (tUi["Bottom Center"] || "Bottom Center")}</span>
+            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: config.position === 'bottom-center' ? 'rgba(255,255,255,0.9)' : 'var(--text-muted)' }}>
+              {tUi['bottom_center'] || 'Bottom Center'}
+            </span>
           </button>
 
           <button
+            type="button"
             onClick={() => setConfig({ ...config, position: 'bottom-right' })}
             style={{ 
-              flex: (tUi["1 1 calc(50% - 10px)"] || "1 1 calc(50% - 10px)"),
               display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, padding: '12px 0', 
               background: config.position === 'bottom-right' ? 'var(--brand-gradient)' : 'var(--bg-input)', 
               border: config.position === 'bottom-right' ? 'none' : '1px solid var(--border-color)', 
@@ -93,29 +98,31 @@ export const PageNumbersPdfEditor: React.FC<PageNumbersPdfEditorProps> = ({
             }}
           >
             <AlignRight size={20} />
-            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: config.position === 'bottom-right' ? 'rgba(255,255,255,0.9)' : 'var(--text-muted)' }}>{tUi["Bottom Right"] || (tUi["Bottom Right"] || "Bottom Right")}</span>
+            <span style={{ fontSize: '0.75rem', fontWeight: 700, color: config.position === 'bottom-right' ? 'rgba(255,255,255,0.9)' : 'var(--text-muted)' }}>
+              {tUi['bottom_right'] || 'Bottom Right'}
+            </span>
           </button>
         </div>
       </div>
 
       <div>
         <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'block', marginBottom: 12 }}>
-          {tUi['Gaya Penomoran'] || (tUi["Gaya Penomoran"] || "Gaya Penomoran")}
+          {tUi['numbering_style'] || tUi['Gaya Penomoran'] || 'Numbering Style'}
         </label>
         <select
           value={config.numberStyle || 'arabic'}
           onChange={(e) => setConfig({ ...config, numberStyle: e.target.value })}
           style={{ width: '100%', padding: '12px 14px', borderRadius: 8, border: '1px solid var(--border-color)', background: 'var(--bg-input)', color: 'var(--text-main)', fontSize: '0.9rem', outline: 'none', marginBottom: 16 }}
         >
-          <option value="arabic">{tUi["1, 2, 3 (Arabic)"] || "1, 2, 3 (Arabic)"}</option>
-          <option value="roman_upper">{tUi["I, II, III (Roman Upper)"] || "I, II, III (Roman Upper)"}</option>
-          <option value="roman_lower">{tUi["i, ii, iii (Roman Lower)"] || "i, ii, iii (Roman Lower)"}</option>
-          <option value="alpha_upper">{tUi["A, B, C (Alpha Upper)"] || "A, B, C (Alpha Upper)"}</option>
-          <option value="alpha_lower">{tUi["a, b, c (Alpha Lower)"] || "a, b, c (Alpha Lower)"}</option>
+          <option value="arabic">1, 2, 3 (Arabic)</option>
+          <option value="roman_upper">I, II, III (Roman Upper)</option>
+          <option value="roman_lower">i, ii, iii (Roman Lower)</option>
+          <option value="alpha_upper">A, B, C (Alpha Upper)</option>
+          <option value="alpha_lower">a, b, c (Alpha Lower)</option>
         </select>
 
         <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'block', marginBottom: 12 }}>
-          {tUi['Format Teks'] || (tUi["Format Teks"] || "Format Teks")}
+          {tUi['text_format'] || tUi['Format Teks'] || 'Text Format'}
         </label>
         <select
           value={config.format}
@@ -123,17 +130,17 @@ export const PageNumbersPdfEditor: React.FC<PageNumbersPdfEditorProps> = ({
           style={{ width: '100%', padding: '12px 14px', borderRadius: 8, border: '1px solid var(--border-color)', background: 'var(--bg-input)', color: 'var(--text-main)', fontSize: '0.9rem', outline: 'none' }}
         >
           <option value="{n}">{`{n}`}</option>
-          <option value={tUi["{n} / {p}"] || "{n} / {p}"}>{`{n} / {p}`}</option>
-          <option value={tUi["Hal {n}"] || "Hal {n}"}>{`Hal {n}`}</option>
-          <option value={tUi["Halaman {n} dari {p}"] || "Halaman {n} dari {p}"}>{`Halaman {n} dari {p}`}</option>
-          <option value={tUi["- {n} -"] || "- {n} -"}>{`- {n} -`}</option>
+          <option value="{n} / {p}">{`{n} / {p}`}</option>
+          <option value="Page {n}">{`Page {n}`}</option>
+          <option value="Page {n} of {p}">{`Page {n} of {p}`}</option>
+          <option value="- {n} -">{`- {n} -`}</option>
         </select>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: (tUi["1fr 1fr"] || "1fr 1fr"), gap: 12 }}>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
         <div>
           <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'block', marginBottom: 12 }}>
-            {tUi['Mulai di Halaman'] || (tUi["Mulai di Halaman"] || "Mulai di Halaman")}
+            {tUi['start_at_page'] || tUi['Mulai di Halaman'] || 'Start at Page'}
           </label>
           <input
             type="number"
@@ -145,7 +152,7 @@ export const PageNumbersPdfEditor: React.FC<PageNumbersPdfEditorProps> = ({
         </div>
         <div>
           <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'block', marginBottom: 12 }}>
-            {tUi['Angka Awal'] || (tUi["Angka Awal"] || "Angka Awal")}
+            {tUi['starting_number'] || tUi['Angka Awal'] || 'Starting Number'}
           </label>
           <input
             type="number"
@@ -169,7 +176,7 @@ export const PageNumbersPdfEditor: React.FC<PageNumbersPdfEditorProps> = ({
           ) : (
             <Download size={18} />
           )}
-          <span>{isProcessing ? (tUi["Menyimpan..."] || "Menyimpan...") : (tUi[(tUi["Terapkan Penomoran"] || (tUi["Terapkan Penomoran"] || "Terapkan Penomoran"))] || (tUi["Terapkan Penomoran"] || (tUi["Terapkan Penomoran"] || "Terapkan Penomoran")))}</span>
+          <span>{isProcessing ? (tUi['numbering_btn'] || tUi['saving_btn'] || 'Applying Numbers...') : (tUi['apply_page_numbers'] || tUi['Terapkan Penomoran'] || 'Apply Page Numbers')}</span>
         </button>
       </div>
     </div>

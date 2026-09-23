@@ -4,9 +4,26 @@ import { zipSync, strToU8 } from 'fflate';
 import * as pdfjsLib from 'pdfjs-dist';
 import PptxGenJS from 'pptxgenjs';
 
+export type WatermarkPosition =
+  | 'top-left' | 'top-center' | 'top-right'
+  | 'center-left' | 'center' | 'center-right'
+  | 'bottom-left' | 'bottom-center' | 'bottom-right';
+
+export interface AddWatermarkConfig {
+  type?: 'text' | 'image';
+  text: string;
+  imageUrl?: string;
+  opacity: number;
+  color: string;
+  scale: number;
+  rotation: number;
+  position?: WatermarkPosition;
+  isRepeating?: boolean;
+}
+
 export const addWatermark = async (
   file: File,
-  config: { type?: 'text' | 'image'; text: string; imageUrl?: string; opacity: number; color: string; scale: number; rotation: number },
+  config: AddWatermarkConfig,
   onProgress: (progress: number) => void
 ): Promise<Uint8Array> => {
   onProgress(30);
@@ -41,10 +58,70 @@ export const addWatermark = async (
     }
   }
 
+  const getTargetPoints = (width: number, height: number, pos?: WatermarkPosition, isRepeating?: boolean): { x: number; y: number }[] => {
+    if (isRepeating) {
+      const points: { x: number; y: number }[] = [];
+      const xs = [width * 0.2, width * 0.5, width * 0.8];
+      const ys = [height * 0.8, height * 0.5, height * 0.2];
+      for (const y of ys) {
+        for (const x of xs) {
+          points.push({ x, y });
+        }
+      }
+      return points;
+    }
+
+    const effectivePos = pos || 'center';
+    let targetX = width * 0.5;
+    let targetY = height * 0.5;
+
+    switch (effectivePos) {
+      case 'top-left':
+        targetX = width * 0.22;
+        targetY = height * 0.82;
+        break;
+      case 'top-center':
+        targetX = width * 0.5;
+        targetY = height * 0.82;
+        break;
+      case 'top-right':
+        targetX = width * 0.78;
+        targetY = height * 0.82;
+        break;
+      case 'center-left':
+        targetX = width * 0.22;
+        targetY = height * 0.5;
+        break;
+      case 'center':
+        targetX = width * 0.5;
+        targetY = height * 0.5;
+        break;
+      case 'center-right':
+        targetX = width * 0.78;
+        targetY = height * 0.5;
+        break;
+      case 'bottom-left':
+        targetX = width * 0.22;
+        targetY = height * 0.18;
+        break;
+      case 'bottom-center':
+        targetX = width * 0.5;
+        targetY = height * 0.18;
+        break;
+      case 'bottom-right':
+        targetX = width * 0.78;
+        targetY = height * 0.18;
+        break;
+    }
+
+    return [{ x: targetX, y: targetY }];
+  };
+
   for (let i = 0; i < totalPages; i++) {
     const page = pages[i];
     const { width, height } = page.getSize();
-    const baseTextSize = Math.min(width, height) / 9;
+    const isRep = !!config.isRepeating;
+    const baseTextSize = Math.min(width, height) / (isRep ? 13 : 9);
     const textSize = baseTextSize * config.scale;
     const text = config.text || 'CONFIDENTIAL';
     const textWidth = font.widthOfTextAtSize(text, textSize);
@@ -53,38 +130,43 @@ export const addWatermark = async (
     const cos = Math.cos(angle);
     const sin = Math.sin(angle);
 
-    if (embeddedImage) {
-      const imgWidth = width * 0.5 * config.scale; // Matches CSS width: 50% + transform: scale()
-      const imgHeight = (embeddedImage.height / embeddedImage.width) * imgWidth;
-      
-      const cx_img = imgWidth / 2;
-      const cy_img = imgHeight / 2;
-      const dx_img = cx_img * cos - cy_img * sin;
-      const dy_img = cx_img * sin + cy_img * cos;
+    const points = getTargetPoints(width, height, config.position, config.isRepeating);
 
-      page.drawImage(embeddedImage, {
-        x: width / 2 - dx_img,
-        y: height / 2 - dy_img,
-        width: imgWidth,
-        height: imgHeight,
-        opacity: config.opacity,
-        rotate: degrees(-config.rotation),
-      });
-    } else {
-      const cx_text = textWidth / 2;
-      const cy_text = textSize / 3;
-      const dx_text = cx_text * cos - cy_text * sin;
-      const dy_text = cx_text * sin + cy_text * cos;
+    for (const pt of points) {
+      if (embeddedImage) {
+        const imgScaleFactor = isRep ? 0.28 : 0.5;
+        const imgWidth = width * imgScaleFactor * config.scale;
+        const imgHeight = (embeddedImage.height / embeddedImage.width) * imgWidth;
+        
+        const cx_img = imgWidth / 2;
+        const cy_img = imgHeight / 2;
+        const dx_img = cx_img * cos - cy_img * sin;
+        const dy_img = cx_img * sin + cy_img * cos;
 
-      page.drawText(text, {
-        x: width / 2 - dx_text,
-        y: height / 2 - dy_text,
-        size: textSize,
-        font,
-        color: rgb(rgbColor.r, rgbColor.g, rgbColor.b),
-        opacity: config.opacity,
-        rotate: degrees(-config.rotation),
-      });
+        page.drawImage(embeddedImage, {
+          x: pt.x - dx_img,
+          y: pt.y - dy_img,
+          width: imgWidth,
+          height: imgHeight,
+          opacity: config.opacity,
+          rotate: degrees(-config.rotation),
+        });
+      } else {
+        const cx_text = textWidth / 2;
+        const cy_text = textSize / 3;
+        const dx_text = cx_text * cos - cy_text * sin;
+        const dy_text = cx_text * sin + cy_text * cos;
+
+        page.drawText(text, {
+          x: pt.x - dx_text,
+          y: pt.y - dy_text,
+          size: textSize,
+          font,
+          color: rgb(rgbColor.r, rgbColor.g, rgbColor.b),
+          opacity: config.opacity,
+          rotate: degrees(-config.rotation),
+        });
+      }
     }
     onProgress(30 + Math.round(((i + 1) / totalPages) * 60));
   }

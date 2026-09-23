@@ -280,13 +280,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
       {(tool.id === 'compare-pdf' || tool.id === 'compare-pdf-files-visually') && (
         <ComparePdfEditor onProcess={(options) => handleStartProcessing(options)} tUi={tUi} isProcessing={isProcessing} />
       )}
-      {tool.id === 'redact-pdf' && redactConfig && setRedactConfig && (
-        <RedactPdfEditor 
-          redactConfig={redactConfig} setRedactConfig={setRedactConfig} 
-          activeFileIndex={activeFileIndex}
-          onProcess={() => handleStartProcessing()} tUi={tUi} isProcessing={isProcessing} 
-        />
-      )}
+
       {['pdf-to-word', 'pdf-to-word-without-losing-formatting', 'word-to-pdf', 'excel-to-pdf', 'image-to-pdf', 'ppt-to-pdf', 'pdf-to-ppt', 'csv-to-pdf', 'txt-to-pdf', 'csv-to-excel', 'excel-to-csv', 'ocr-pdf', 'scanned-pdf-to-text-ocr'].includes(tool.id) && (
         <GenericConvertEditor toolId={tool.id} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}

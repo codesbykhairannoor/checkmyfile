@@ -196,9 +196,9 @@ export const CompressPdfEditor: React.FC<CompressPdfEditorProps> = ({
           />
 
           <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.72rem', color: 'var(--text-muted)' }}>
-            <span>10% (High Quality)</span>
-            <span>50% (Balanced)</span>
-            <span>95% (Smallest)</span>
+            <span>10% ({t("compress_high_title", "High Quality")})</span>
+            <span>50% ({t("compress_balanced_title", "Balanced")})</span>
+            <span>95% ({t("compress_extreme_title", "Smallest")})</span>
           </div>
         </div>
       )}
