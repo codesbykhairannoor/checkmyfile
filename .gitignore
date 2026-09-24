@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Service Account Keys & Caches
+handlemyfile-*.json
+scripts/google-indexed-cache.json

@@ -25,10 +25,19 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool, onNav
       <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 14, padding: 0, margin: 0 }}>
         {tools.map((tool) => {
           const displayTitle = getLocalizedSeo(tool, currentLang).title || tool.id;
+          const slug = tool.slugs[currentLang] || tool.id;
+          const href = currentLang === 'en' ? `/${slug}` : `/${currentLang}/${slug}`;
           return (
             <li key={tool.id}>
-              <button
-                onClick={() => onSelectTool(tool)}
+              <a
+                href={href}
+                onClick={(e) => {
+                  if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+                    e.preventDefault();
+                    window.history.pushState({}, '', href);
+                    onSelectTool(tool);
+                  }
+                }}
                 style={{
                   background: 'transparent',
                   border: 'none',
@@ -36,6 +45,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool, onNav
                   cursor: 'pointer',
                   fontSize: '0.95rem',
                   textAlign: 'left',
+                  textDecoration: 'none',
                   transition: 'all 0.2s',
                   padding: 0,
                   fontWeight: 500,
@@ -52,7 +62,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool, onNav
                 }}
               >
                 {displayTitle}
-              </button>
+              </a>
             </li>
           );
         })}
@@ -60,36 +70,47 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool, onNav
     );
   };
 
-  const renderLinkItem = (label: string, slug: string) => (
-    <li>
-      <button
-        onClick={() => onNavigatePage?.(slug)}
-        style={{
-          background: 'transparent',
-          border: 'none',
-          color: 'var(--text-muted)',
-          cursor: 'pointer',
-          fontSize: '0.95rem',
-          textAlign: 'left',
-          transition: 'all 0.2s',
-          padding: 0,
-          fontWeight: 500,
-          display: 'flex',
-          alignItems: 'center',
-        }}
-        onMouseOver={(e) => {
-          e.currentTarget.style.color = 'var(--brand-primary)';
-          e.currentTarget.style.transform = 'translateX(6px)';
-        }}
-        onMouseOut={(e) => {
-          e.currentTarget.style.color = 'var(--text-muted)';
-          e.currentTarget.style.transform = 'translateX(0)';
-        }}
-      >
-        {label}
-      </button>
-    </li>
-  );
+  const renderLinkItem = (label: string, slug: string) => {
+    const href = currentLang === 'en' ? `/${slug}` : `/${currentLang}/${slug}`;
+    return (
+      <li>
+        <a
+          href={href}
+          onClick={(e) => {
+            if (!e.ctrlKey && !e.metaKey && !e.shiftKey) {
+              e.preventDefault();
+              window.history.pushState({}, '', href);
+              onNavigatePage?.(slug);
+            }
+          }}
+          style={{
+            background: 'transparent',
+            border: 'none',
+            color: 'var(--text-muted)',
+            cursor: 'pointer',
+            fontSize: '0.95rem',
+            textAlign: 'left',
+            textDecoration: 'none',
+            transition: 'all 0.2s',
+            padding: 0,
+            fontWeight: 500,
+            display: 'flex',
+            alignItems: 'center',
+          }}
+          onMouseOver={(e) => {
+            e.currentTarget.style.color = 'var(--brand-primary)';
+            e.currentTarget.style.transform = 'translateX(6px)';
+          }}
+          onMouseOut={(e) => {
+            e.currentTarget.style.color = 'var(--text-muted)';
+            e.currentTarget.style.transform = 'translateX(0)';
+          }}
+        >
+          {label}
+        </a>
+      </li>
+    );
+  };
 
   return (
     <footer style={{ background: 'var(--bg-card)', borderTop: '1px solid var(--border-color)', marginTop: 'auto' }}>
