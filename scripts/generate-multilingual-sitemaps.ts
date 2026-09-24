@@ -273,38 +273,135 @@ export const generateMultilingualSitemaps = () => {
   }
 
   // ==========================================
-  // 6. GENERATE OPTIMIZED robots.txt
+  // 6. GENERATE OPTIMIZED robots.txt (Enterprise SaaS Masterpiece Standard)
   // ==========================================
-  const robotsTxt = `User-agent: *
+  const robotsTxt = `#   _   _                 _ _      __  __       _____ _ _      
+#  | | | |               | | |    |  \\/  |     |  ___(_) |     
+#  | |_| | __ _ _ __   __| | | ___| \\  / |_   _| |_   _| | ___ 
+#  |  _  |/ _\` | '_ \\ / _\` | |/ _ \\ |\\/| | | | |  _| | | |/ _ \\
+#  | | | | (_| | | | | (_| | |  __/ |  | | |_| | |   | | |  __/
+#  \\_| |_/\\__,_|_| |_|\\__,_|_|\\___|_|  |_|\\__, \\_|   |_|_|\\___|
+#                                          __/ |               
+#                                         |___/                
+#  HandleMyFile - 100% Client-Side WebAssembly Document Platform
+#  Zero Server Uploads | Zero Data Retention | Unhackable In-RAM Processing
+#  Security Disclosure: ${BASE_URL}/.well-known/security.txt
+#  Autonomous Agents:   ${BASE_URL}/.well-known/agents.json
+#  LLM Knowledge Base:  ${BASE_URL}/llms.txt
+#  Hiring & Careers:    ${BASE_URL}/about
+
+# ==============================================================================
+# SECTION 1: GLOBAL ENGINE & CRAWL BUDGET GOVERNANCE (RFC 9309 Compliant)
+# ==============================================================================
+User-agent: *
 Allow: /
 
-# Fast discovery sitemaps
+# Ensure search engines can access all client assets required for visual rendering
+Allow: /assets/
+Allow: /locales/
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.wasm$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.svg$
+Allow: /*.webp$
+Allow: /*.ico$
+Allow: /.well-known/
+
+# Prevent crawl budget dilution & duplicate content from tracking parameters
+Disallow: /*?*utm_*
+Disallow: /*?*gclid=*
+Disallow: /*?*fbclid=*
+Disallow: /*?*ref=*
+Disallow: /*?*source=*
+Disallow: /*?*session*
+Disallow: /*?*token=*
+Disallow: /*?*preview=*
+Disallow: /*?*sort=*
+
+# Protect internal paths, build manifests, debug maps, and sensitive endpoints
+Disallow: /api/
+Disallow: /_vercel/
+Disallow: /_next/
+Disallow: /_nuxt/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cdn-cgi/
+Disallow: /*.map$
+Disallow: /*.log$
+Disallow: /*.env$
+
+# ==============================================================================
+# SECTION 2: AI SEARCH, ANSWER ENGINES & GEO/AEO OPTIMIZATION
+# ==============================================================================
+# Welcoming real-time search & citation bots for ChatGPT, Perplexity, Claude, Apple, Gemini
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Claude-Web
+User-agent: anthropic-ai
+User-agent: PerplexityBot
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: Google-Extended
+User-agent: Cohere-ai
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# ==============================================================================
+# SECTION 3: SOCIAL MEDIA LINK EXPANDERS & RICH PREVIEWS
+# ==============================================================================
+# Ensure instant OpenGraph cards and link unfurling across communication platforms
+User-agent: Twitterbot
+User-agent: facebookexternalhit
+User-agent: LinkedInBot
+User-agent: Slackbot-LinkExpanding
+User-agent: TelegramBot
+User-agent: WhatsApp
+User-agent: Discordbot
+User-agent: Pinterestbot
+Allow: /
+
+# ==============================================================================
+# SECTION 4: AGGRESSIVE BANDWIDTH VAMPIRES & UNCOOPERATIVE SCRAPERS
+# ==============================================================================
+# Prevent server degradation from hyper-aggressive scrapers that ignore backoff
+User-agent: Bytespider
+User-agent: MJ12bot
+User-agent: DotBot
+User-agent: BLEXBot
+User-agent: PetalBot
+User-agent: MegaIndex
+User-agent: Scrapy
+User-agent: ZoominfoBot
+User-agent: DataForSeoBot
+User-agent: Amazonbot
+Disallow: /
+
+# Throttle high-frequency commercial SEO audit bots to preserve edge capacity
+User-agent: AhrefsBot
+User-agent: SemrushBot
+Crawl-delay: 5
+
+# ==============================================================================
+# SECTION 5: MACHINE-READABLE PROTOCOLS & AI DISCOVERY SIGNALS
+# ==============================================================================
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+LLMS: ${BASE_URL}/llms.txt
+LLMS-Full: ${BASE_URL}/llms-full.txt
+
+# ==============================================================================
+# SECTION 6: SITEMAP & REAL-TIME CRAWL DISCOVERY CLUSTER
+# ==============================================================================
 Sitemap: ${BASE_URL}/sitemap-index.xml
 Sitemap: ${BASE_URL}/sitemap.xml
-Sitemap: ${BASE_URL}/sitemap-all.xml
 Sitemap: ${BASE_URL}/sitemap-main.xml
+Sitemap: ${BASE_URL}/sitemap-all.xml
 Sitemap: ${BASE_URL}/feed.xml
 Sitemap: ${BASE_URL}/atom.xml
-
-# Explicitly welcome AI Answer Engines for Generative Engine Optimization (GEO/AEO)
-User-agent: PerplexityBot
-Allow: /
-User-agent: ClaudeBot
-Allow: /
-User-agent: GPTBot
-Allow: /
-User-agent: OAI-SearchBot
-Allow: /
-User-agent: Google-Extended
-Allow: /
-User-agent: Applebot
-Allow: /
-User-agent: Bingbot
-Allow: /
-User-agent: YandexBot
-Allow: /
-
-LLMS: ${BASE_URL}/llms.txt
 `;
 
   fs.writeFileSync(path.join(publicDir, 'robots.txt'), robotsTxt, 'utf8');

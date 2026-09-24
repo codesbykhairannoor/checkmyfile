@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "HandleMyFile",
+  "description": "Enterprise-grade 100% Client-Side WebAssembly Document Utility Suite for PDF, Word, Excel, Images, and OCR. Zero server uploads, zero cloud persistence, 100% private in-browser execution.",
+  "url": "https://handlemyfile.com",
+  "capabilities": {
+    "pdf": [
+      "merge", "split", "compress", "edit", "ocr", "rotate", "watermark",
+      "remove-pages", "organize", "crop", "sign", "protect", "unlock",
+      "extract-images", "grayscale", "scan", "remove-metadata", "compare",
+      "redact", "reverse", "resize", "page-numbers"
+    ],
+    "converters": [
+      "pdf-to-word", "pdf-to-ppt", "pdf-to-image",
+      "word-to-pdf", "excel-to-pdf", "ppt-to-pdf", "txt-to-pdf",
+      "image-to-pdf", "csv-to-excel", "excel-to-csv"
+    ],
+    "privacy": {
+      "serverUploads": false,
+      "inMemoryOnly": true,
+      "offlineCapable": true,
+      "gdprCompliant": true,
+      "hipaaCompatible": true
+    }
+  },
+  "documentation": {
+    "llms": "https://handlemyfile.com/llms.txt",
+    "llmsFull": "https://handlemyfile.com/llms-full.txt",
+    "sitemap": "https://handlemyfile.com/sitemap-index.xml"
+  },
+  "supportedLanguages": 30
+}
