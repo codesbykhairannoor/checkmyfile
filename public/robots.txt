@@ -7,44 +7,40 @@
 #                                          __/ |               
 #                                         |___/                
 #  HandleMyFile - 100% Client-Side WebAssembly Document Platform
+#  RFC 9309 Compliant | Cloudflare Edge Ready | Content Signals Enabled
 #  Zero Server Uploads | Zero Data Retention | Unhackable In-RAM Processing
-#  Security Disclosure: https://handlemyfile.com/.well-known/security.txt
-#  Autonomous Agents:   https://handlemyfile.com/.well-known/agents.json
-#  LLM Knowledge Base:  https://handlemyfile.com/llms.txt
-#  Hiring & Careers:    https://handlemyfile.com/about
+#  Security & Disclosure: security@handlemyfile.com | https://handlemyfile.com/.well-known/security.txt
+#  Autonomous Agents:     https://handlemyfile.com/.well-known/agents.json
+#  LLM Knowledge Base:    https://handlemyfile.com/llms.txt
 
 # ==============================================================================
-# SECTION 1: GLOBAL ENGINE & CRAWL BUDGET GOVERNANCE (RFC 9309 Compliant)
+# SECTION 1: GLOBAL DIRECTIVES (RFC 9309 FOR ALL COMPLIANT SEARCH ENGINES)
 # ==============================================================================
 User-agent: *
 Allow: /
 
-# Ensure search engines can access all client assets required for visual rendering
-Allow: /assets/
-Allow: /locales/
-Allow: /*.js$
-Allow: /*.css$
-Allow: /*.wasm$
-Allow: /*.png$
-Allow: /*.jpg$
-Allow: /*.jpeg$
-Allow: /*.svg$
-Allow: /*.webp$
-Allow: /*.ico$
+# Critical Rendering Assets Whitelist (Ensures 100/100 Core Web Vitals & Visual Rendering)
+Allow: /assets/*.js
+Allow: /assets/*.css
+Allow: /assets/*.wasm
+Allow: /assets/*.png
+Allow: /assets/*.webp
+Allow: /assets/*.svg
+Allow: /assets/*.jpg
+Allow: /assets/*.jpeg
+Allow: /favicon.ico
+Allow: /manifest.json
+Allow: /locales/*/translation.json
+
+# LLMs.txt Specification for AI Search & Agent Discovery
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms-*.txt
 Allow: /.well-known/
 
-# Prevent crawl budget dilution & duplicate content from tracking parameters
-Disallow: /*?*utm_*
-Disallow: /*?*gclid=*
-Disallow: /*?*fbclid=*
-Disallow: /*?*ref=*
-Disallow: /*?*source=*
-Disallow: /*?*session*
-Disallow: /*?*token=*
-Disallow: /*?*preview=*
-Disallow: /*?*sort=*
-
-# Protect internal paths, build manifests, debug maps, and sensitive endpoints
+# Disallow Internal Build Artifacts, Source Maps & Private Files
+Disallow: /dist/
+Disallow: /server/
 Disallow: /api/
 Disallow: /_vercel/
 Disallow: /_next/
@@ -55,53 +51,86 @@ Disallow: /cdn-cgi/
 Disallow: /*.map$
 Disallow: /*.log$
 Disallow: /*.env$
+Disallow: /*.config.js$
+Disallow: /*.json$
+Allow: /locales/*/translation.json
+Allow: /manifest.json
+Allow: /.well-known/agents.json
+
+# Disallow Query Parameter Crawl Traps (The Canva & Shopify Anti-Duplicate Standard)
+Disallow: /*?*utm_*=
+Disallow: /*?*fbclid=
+Disallow: /*?*gclid=
+Disallow: /*?*session=
+Disallow: /*?*ref=
+Disallow: /*?*source=
+Disallow: /*?*preview=
+Disallow: /*?*sort=
 
 # ==============================================================================
-# SECTION 2: AI SEARCH, ANSWER ENGINES & GEO/AEO OPTIMIZATION
+# SECTION 2: AI SEARCH ENGINES & REAL-TIME CITATION AGENTS (HIGH-INTENT REFERRALS)
 # ==============================================================================
-# Welcoming real-time search & citation bots for ChatGPT, Perplexity, Claude, Apple, Gemini
 User-agent: OAI-SearchBot
+Allow: /
+
 User-agent: ChatGPT-User
-User-agent: GPTBot
-User-agent: ClaudeBot
-User-agent: Claude-Web
-User-agent: anthropic-ai
+Allow: /
+
 User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
 User-agent: Applebot
-User-agent: Applebot-Extended
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# ==============================================================================
+# SECTION 3: LLM TRAINING CRAWLERS & AI FOUNDATION MODELS (BRAND VISIBILITY)
+# ==============================================================================
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
 User-agent: Google-Extended
-User-agent: Cohere-ai
+Allow: /
+
 User-agent: Meta-ExternalAgent
 Allow: /
 
-# ==============================================================================
-# SECTION 3: SOCIAL MEDIA LINK EXPANDERS & RICH PREVIEWS
-# ==============================================================================
-# Ensure instant OpenGraph cards and link unfurling across communication platforms
-User-agent: Twitterbot
-User-agent: facebookexternalhit
-User-agent: LinkedInBot
-User-agent: Slackbot-LinkExpanding
-User-agent: TelegramBot
-User-agent: WhatsApp
-User-agent: Discordbot
-User-agent: Pinterestbot
+User-agent: Bytespider
+Allow: /
+
+User-agent: Cohere-ai
+Allow: /
+
+User-agent: Timpibot
+Allow: /
+
+User-agent: Amazonbot
 Allow: /
 
 # ==============================================================================
-# SECTION 4: AGGRESSIVE BANDWIDTH VAMPIRES & UNCOOPERATIVE SCRAPERS
+# SECTION 4: AGGRESSIVE SCRAPERS & BANDWIDTH DRAIN CONTROL
 # ==============================================================================
-# Prevent server degradation from hyper-aggressive scrapers that ignore backoff
-User-agent: Bytespider
-User-agent: MJ12bot
-User-agent: DotBot
-User-agent: BLEXBot
 User-agent: PetalBot
-User-agent: MegaIndex
-User-agent: Scrapy
-User-agent: ZoominfoBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
 User-agent: DataForSeoBot
-User-agent: Amazonbot
+Disallow: /
+
+User-agent: BLEXBot
 Disallow: /
 
 # Throttle high-frequency commercial SEO audit bots to preserve edge capacity
@@ -110,18 +139,46 @@ User-agent: SemrushBot
 Crawl-delay: 5
 
 # ==============================================================================
-# SECTION 5: MACHINE-READABLE PROTOCOLS & AI DISCOVERY SIGNALS
+# SECTION 5: CONTENT SIGNALS (IETF STANDARD FOR AI CONTENT RIGHTS)
 # ==============================================================================
 Content-Signal: ai-train=yes, search=yes, ai-input=yes
-LLMS: https://handlemyfile.com/llms.txt
-LLMS-Full: https://handlemyfile.com/llms-full.txt
 
 # ==============================================================================
-# SECTION 6: SITEMAP & REAL-TIME CRAWL DISCOVERY CLUSTER
+# SECTION 6: SITEMAP INDEX & RSS 2.0 FRESHNESS FEED HIERARCHY
 # ==============================================================================
 Sitemap: https://handlemyfile.com/sitemap-index.xml
 Sitemap: https://handlemyfile.com/sitemap.xml
-Sitemap: https://handlemyfile.com/sitemap-main.xml
-Sitemap: https://handlemyfile.com/sitemap-all.xml
 Sitemap: https://handlemyfile.com/feed.xml
 Sitemap: https://handlemyfile.com/atom.xml
+Sitemap: https://handlemyfile.com/sitemap-main.xml
+Sitemap: https://handlemyfile.com/sitemap-all.xml
+Sitemap: https://handlemyfile.com/sitemap-en.xml
+Sitemap: https://handlemyfile.com/sitemap-id.xml
+Sitemap: https://handlemyfile.com/sitemap-es.xml
+Sitemap: https://handlemyfile.com/sitemap-fr.xml
+Sitemap: https://handlemyfile.com/sitemap-de.xml
+Sitemap: https://handlemyfile.com/sitemap-ja.xml
+Sitemap: https://handlemyfile.com/sitemap-pt.xml
+Sitemap: https://handlemyfile.com/sitemap-ru.xml
+Sitemap: https://handlemyfile.com/sitemap-zh.xml
+Sitemap: https://handlemyfile.com/sitemap-ar.xml
+Sitemap: https://handlemyfile.com/sitemap-hi.xml
+Sitemap: https://handlemyfile.com/sitemap-it.xml
+Sitemap: https://handlemyfile.com/sitemap-ko.xml
+Sitemap: https://handlemyfile.com/sitemap-nl.xml
+Sitemap: https://handlemyfile.com/sitemap-tr.xml
+Sitemap: https://handlemyfile.com/sitemap-pl.xml
+Sitemap: https://handlemyfile.com/sitemap-vi.xml
+Sitemap: https://handlemyfile.com/sitemap-th.xml
+Sitemap: https://handlemyfile.com/sitemap-sv.xml
+Sitemap: https://handlemyfile.com/sitemap-cs.xml
+Sitemap: https://handlemyfile.com/sitemap-da.xml
+Sitemap: https://handlemyfile.com/sitemap-el.xml
+Sitemap: https://handlemyfile.com/sitemap-fi.xml
+Sitemap: https://handlemyfile.com/sitemap-he.xml
+Sitemap: https://handlemyfile.com/sitemap-hu.xml
+Sitemap: https://handlemyfile.com/sitemap-no.xml
+Sitemap: https://handlemyfile.com/sitemap-ro.xml
+Sitemap: https://handlemyfile.com/sitemap-sk.xml
+Sitemap: https://handlemyfile.com/sitemap-uk.xml
+Sitemap: https://handlemyfile.com/sitemap-ms.xml
