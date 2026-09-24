@@ -10,6 +10,7 @@
     "index:daemon": "npx tsx scripts/google-indexing-daemon.ts",
     "index:ping": "node scripts/ping-indexnow.cjs",
     "sitemaps": "npx tsx scripts/generate-multilingual-sitemaps.ts",
+    "audit": "node scripts/audit-seo.cjs",
     "lint": "oxlint",
     "preview": "vite preview"
   },
