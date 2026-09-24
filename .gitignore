@@ -23,6 +23,14 @@ dist-ssr
 *.sln
 *.sw?
 
-# Service Account Keys & Caches
+# Service Account Keys & Secrets (CRITICAL SECURITY - NEVER COMMIT)
 handlemyfile-*.json
-scripts/google-indexed-cache.json
+*gserviceaccount*.json
+*service-account*.json
+google-key*.json
+client_secret*.json
+*.pem
+*.key
+*.env
+*.env.*
+!*.env.example

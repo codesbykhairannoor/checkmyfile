@@ -1,0 +1,41 @@
+name: Daily Google Indexing Automation (200 URLs/day)
+
+on:
+  schedule:
+    # Runs daily at 00:00 UTC (07:00 WIB)
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Allows manual trigger via GitHub Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  google-index:
+    name: Submit Next 200 URLs to Googlebot
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install --prefer-offline --no-audit
+
+      - name: Run Google Indexing API
+        env:
+          GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}
+          DAILY_LIMIT: 200
+          CI: 'true'
+        run: npx tsx scripts/submit-google-indexing.ts
+
+      - name: Commit and push updated progress cache
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add scripts/google-indexed-cache.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(seo): update google indexing cache [skip ci]" && git push)

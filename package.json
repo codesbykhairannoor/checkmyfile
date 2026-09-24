@@ -7,6 +7,7 @@
     "dev": "npx vite",
     "build": "npx vite build && npx tsx scripts/generate-seo-html.ts && npx tsx scripts/generate-multilingual-sitemaps.ts && node scripts/ping-indexnow.cjs",
     "index:google": "npx tsx scripts/submit-google-indexing.ts",
+    "index:daemon": "npx tsx scripts/google-indexing-daemon.ts",
     "index:ping": "node scripts/ping-indexnow.cjs",
     "sitemaps": "npx tsx scripts/generate-multilingual-sitemaps.ts",
     "lint": "oxlint",

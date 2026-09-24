@@ -7,20 +7,26 @@ const KEY_FILE_PATH = path.join(process.cwd(), 'handlemyfile-7fa1ac58810e.json')
 const CACHE_FILE_PATH = path.join(process.cwd(), 'scripts', 'google-indexed-cache.json');
 const SITEMAP_PATH = path.join(process.cwd(), 'public', 'sitemap-all.xml');
 
-// Max URLs per daily run (Google Indexing API default quota is 200 per day)
-const DAILY_LIMIT = 180;
+// Max URLs per daily run (Google Indexing API quota is 200 per day)
+const DAILY_LIMIT = parseInt(process.env.DAILY_LIMIT || '200', 10);
 
 let keyFile: any = null;
 if (process.env.GOOGLE_SERVICE_ACCOUNT_KEY) {
   try {
-    keyFile = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_KEY);
+    const raw = process.env.GOOGLE_SERVICE_ACCOUNT_KEY.trim();
+    if (raw.startsWith('{')) {
+      keyFile = JSON.parse(raw);
+    } else {
+      const decoded = Buffer.from(raw, 'base64').toString('utf8');
+      keyFile = JSON.parse(decoded);
+    }
   } catch (e) {
     console.error('Failed to parse GOOGLE_SERVICE_ACCOUNT_KEY env var:', e);
   }
 } else if (fs.existsSync(KEY_FILE_PATH)) {
   keyFile = JSON.parse(fs.readFileSync(KEY_FILE_PATH, 'utf8'));
 } else {
-  const match = fs.readdirSync(process.cwd()).find(f => f.startsWith('handlemyfile-') && f.endsWith('.json'));
+  const match = fs.readdirSync(process.cwd()).find(f => (f.startsWith('handlemyfile-') || f.includes('gserviceaccount')) && f.endsWith('.json'));
   if (match) {
     keyFile = JSON.parse(fs.readFileSync(path.join(process.cwd(), match), 'utf8'));
   }
@@ -28,6 +34,7 @@ if (process.env.GOOGLE_SERVICE_ACCOUNT_KEY) {
 
 if (!keyFile) {
   console.log('ℹ️ No Google Service Account key found (skipping Google Indexing API).');
+  console.log('   Ensure handlemyfile-*.json exists locally or GOOGLE_SERVICE_ACCOUNT_KEY secret is configured.');
   process.exit(0);
 }
 
@@ -199,7 +206,11 @@ export async function runGoogleIndexing() {
     if (res.success) {
       successCount++;
       cache[url] = { submittedAt: new Date().toISOString(), status: 200 };
-      process.stdout.write(`\r  [${i + 1}/${batch.length}] ✅ Indexed: ${url.replace('https://handlemyfile.com', '')}`);
+      if (process.env.CI) {
+        console.log(`  [${i + 1}/${batch.length}] ✅ Indexed: ${url.replace('https://handlemyfile.com', '')}`);
+      } else {
+        process.stdout.write(`\r  [${i + 1}/${batch.length}] ✅ Indexed: ${url.replace('https://handlemyfile.com', '')}`);
+      }
     } else {
       failCount++;
       console.warn(`\n  [${i + 1}/${batch.length}] ⚠️ Failed (${res.status}): ${url} -> ${res.body}`);
