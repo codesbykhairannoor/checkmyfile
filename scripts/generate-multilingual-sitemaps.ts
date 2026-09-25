@@ -66,17 +66,35 @@ export const generateMultilingualSitemaps = () => {
   const sitemapFiles: { filename: string; urlCount: number }[] = [];
   const allUrlsForMaster: SitemapUrlEntry[] = [];
 
-  // ==========================================
-  // 1. GENERATE sitemap-main.xml (Home + Static)
-  // ==========================================
-  const mainEntries: SitemapUrlEntry[] = [];
-
   // Homepages
   const homeLinks = SUPPORTED_LANGUAGES.map((l) => ({
     lang: l.code,
     url: l.code === 'en' ? `${BASE_URL}/` : `${BASE_URL}/${l.code}`,
   }));
   const defaultHomeUrl = `${BASE_URL}/`;
+
+  // Static Page Link Definitions Map
+  const staticPageLinksMap: Record<StaticPageId, { links: { lang: string; url: string }[]; defaultUrl: string }> = {} as any;
+  for (const pageKey of STATIC_PAGE_KEYS) {
+    const enSlug = STATIC_SLUGS['en']?.[pageKey] || pageKey;
+    const defaultStaticUrl = `${BASE_URL}/${enSlug}`;
+    const staticLinks = SUPPORTED_LANGUAGES.map((l) => {
+      const localSlug = STATIC_SLUGS[l.code]?.[pageKey] || STATIC_SLUGS['en']?.[pageKey] || pageKey;
+      return {
+        lang: l.code,
+        url: l.code === 'en' ? `${BASE_URL}/${localSlug}` : `${BASE_URL}/${l.code}/${localSlug}`,
+      };
+    });
+    staticPageLinksMap[pageKey] = {
+      links: staticLinks,
+      defaultUrl: defaultStaticUrl,
+    };
+  }
+
+  // ==========================================
+  // 1. GENERATE sitemap-main.xml (Home + Static Across All Languages)
+  // ==========================================
+  const mainEntries: SitemapUrlEntry[] = [];
 
   for (const lang of SUPPORTED_LANGUAGES) {
     const loc = lang.code === 'en' ? `${BASE_URL}/` : `${BASE_URL}/${lang.code}`;
@@ -89,22 +107,9 @@ export const generateMultilingualSitemaps = () => {
       defaultUrl: defaultHomeUrl,
     };
     mainEntries.push(entry);
-    allUrlsForMaster.push(entry);
   }
 
-  // Static Pages
   for (const pageKey of STATIC_PAGE_KEYS) {
-    const enSlug = STATIC_SLUGS['en']?.[pageKey] || pageKey;
-    const defaultStaticUrl = `${BASE_URL}/${enSlug}`;
-
-    const staticLinks = SUPPORTED_LANGUAGES.map((l) => {
-      const localSlug = STATIC_SLUGS[l.code]?.[pageKey] || STATIC_SLUGS['en']?.[pageKey] || pageKey;
-      return {
-        lang: l.code,
-        url: l.code === 'en' ? `${BASE_URL}/${localSlug}` : `${BASE_URL}/${l.code}/${localSlug}`,
-      };
-    });
-
     for (const lang of SUPPORTED_LANGUAGES) {
       const localSlug = STATIC_SLUGS[lang.code]?.[pageKey] || STATIC_SLUGS['en']?.[pageKey] || pageKey;
       const loc = lang.code === 'en' ? `${BASE_URL}/${localSlug}` : `${BASE_URL}/${lang.code}/${localSlug}`;
@@ -114,11 +119,10 @@ export const generateMultilingualSitemaps = () => {
         lastmod: todayIso,
         changefreq: 'monthly',
         priority: '0.8',
-        links: staticLinks,
-        defaultUrl: defaultStaticUrl,
+        links: staticPageLinksMap[pageKey].links,
+        defaultUrl: staticPageLinksMap[pageKey].defaultUrl,
       };
       mainEntries.push(entry);
-      allUrlsForMaster.push(entry);
     }
   }
 
@@ -131,10 +135,45 @@ export const generateMultilingualSitemaps = () => {
 
   // ==========================================
   // 2. GENERATE sitemap-[lang].xml FOR EACH OF THE 30 LANGUAGES
+  // Each language sitemap now contains:
+  // - 1 Homepage
+  // - 8 Static Pages (about, compare, privacy, security, terms, pricing, use-cases, languages)
+  // - 49 Tools
+  // Total = 58 URLs per language (30 * 58 = 1,740 total URLs)
   // ==========================================
   for (const lang of SUPPORTED_LANGUAGES) {
     const langEntries: SitemapUrlEntry[] = [];
 
+    // 2.1 Language Homepage
+    const homeLoc = lang.code === 'en' ? `${BASE_URL}/` : `${BASE_URL}/${lang.code}`;
+    const homeEntry: SitemapUrlEntry = {
+      url: homeLoc,
+      lastmod: todayIso,
+      changefreq: 'daily',
+      priority: '1.0',
+      links: homeLinks,
+      defaultUrl: defaultHomeUrl,
+    };
+    langEntries.push(homeEntry);
+    allUrlsForMaster.push(homeEntry);
+
+    // 2.2 Language 8 Static Pages (about, compare, privacy, security, terms, pricing, etc.)
+    for (const pageKey of STATIC_PAGE_KEYS) {
+      const localSlug = STATIC_SLUGS[lang.code]?.[pageKey] || STATIC_SLUGS['en']?.[pageKey] || pageKey;
+      const staticLoc = lang.code === 'en' ? `${BASE_URL}/${localSlug}` : `${BASE_URL}/${lang.code}/${localSlug}`;
+      const staticEntry: SitemapUrlEntry = {
+        url: staticLoc,
+        lastmod: todayIso,
+        changefreq: 'monthly',
+        priority: '0.8',
+        links: staticPageLinksMap[pageKey].links,
+        defaultUrl: staticPageLinksMap[pageKey].defaultUrl,
+      };
+      langEntries.push(staticEntry);
+      allUrlsForMaster.push(staticEntry);
+    }
+
+    // 2.3 Language 49 Tools
     for (const tool of TOOLS_CATALOG) {
       const enSlug = tool.slugs['en'] || tool.id;
       const defaultToolUrl = `${BASE_URL}/${enSlug}`;
