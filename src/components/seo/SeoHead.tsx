@@ -96,7 +96,18 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang, currentLang, title
     setMetaTag('og:description', 'property', description);
     setMetaTag('og:locale', 'property', langInfo.localeCode);
     setMetaTag('og:type', 'property', 'website');
+    const ogImageUrl = `${origin}/og-image.png`;
+    setMetaTag('og:image', 'property', ogImageUrl);
+    setMetaTag('og:image:secure_url', 'property', ogImageUrl);
+    setMetaTag('og:image:type', 'property', 'image/png');
+    setMetaTag('og:image:width', 'property', '1200');
+    setMetaTag('og:image:height', 'property', '630');
+    setMetaTag('og:image:alt', 'property', title);
     setMetaTag('twitter:card', 'name', 'summary_large_image');
+    setMetaTag('twitter:title', 'name', title);
+    setMetaTag('twitter:description', 'name', description);
+    setMetaTag('twitter:image', 'name', ogImageUrl);
+    setMetaTag('twitter:image:alt', 'name', title);
     setMetaTag('llm-context', 'name', `/llms-${activeLang}.txt`);
 
     // 4. Update Canonical & Hreflang Tags (Partial Lang URL structure)

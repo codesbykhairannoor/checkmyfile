@@ -280,9 +280,11 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
   html = html.replace(/<meta property="og:title"[^>]*>\n?\s*/gi, '');
   html = html.replace(/<meta property="og:description"[^>]*>\n?\s*/gi, '');
   html = html.replace(/<meta property="og:url"[^>]*>\n?\s*/gi, '');
+  html = html.replace(/<meta property="og:image[^"]*"[^>]*>\n?\s*/gi, '');
   html = html.replace(/<meta property="twitter:title"[^>]*>\n?\s*/gi, '');
   html = html.replace(/<meta property="twitter:description"[^>]*>\n?\s*/gi, '');
   html = html.replace(/<meta property="twitter:url"[^>]*>\n?\s*/gi, '');
+  html = html.replace(/<meta (property|name)="twitter:[^"]*"[^>]*>\n?\s*/gi, '');
   html = html.replace(/<link rel="alternate" hreflang="[^"]+" href="[^"]+" \/>\n?\s*/g, '');
   
   const fullUrl = `${DOMAIN}${urlPath}`;
@@ -296,9 +298,12 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
   const ogTitle = `<meta property="og:title" content="${finalTitle.replace(/"/g, '&quot;')}" />`;
   const ogDesc = `<meta property="og:description" content="${finalDesc.replace(/"/g, '&quot;')}" />`;
   const ogUrl = `<meta property="og:url" content="${fullUrl}" />`;
-  const twitterTitle = `<meta property="twitter:title" content="${finalTitle.replace(/"/g, '&quot;')}" />`;
-  const twitterDesc = `<meta property="twitter:description" content="${finalDesc.replace(/"/g, '&quot;')}" />`;
-  const twitterUrl = `<meta property="twitter:url" content="${fullUrl}" />`;
+  const ogImages = `<meta property="og:image" content="${DOMAIN}/og-image.png" />\n    <meta property="og:image:secure_url" content="${DOMAIN}/og-image.png" />\n    <meta property="og:image:type" content="image/png" />\n    <meta property="og:image:width" content="1200" />\n    <meta property="og:image:height" content="630" />\n    <meta property="og:image:alt" content="${finalTitle.replace(/"/g, '&quot;')}" />`;
+  const twitterCard = `<meta name="twitter:card" content="summary_large_image" />`;
+  const twitterTitle = `<meta name="twitter:title" content="${finalTitle.replace(/"/g, '&quot;')}" />`;
+  const twitterDesc = `<meta name="twitter:description" content="${finalDesc.replace(/"/g, '&quot;')}" />`;
+  const twitterUrl = `<meta name="twitter:url" content="${fullUrl}" />`;
+  const twitterImage = `<meta name="twitter:image" content="${DOMAIN}/og-image.png" />\n    <meta name="twitter:image:alt" content="${finalTitle.replace(/"/g, '&quot;')}" />`;
   const hreflangTags = buildHreflangTags(pageType, pageId);
 
   const headInjection = `
@@ -308,9 +313,12 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
     ${ogTitle}
     ${ogDesc}
     ${ogUrl}
+    ${ogImages}
+    ${twitterCard}
     ${twitterTitle}
     ${twitterDesc}
     ${twitterUrl}
+    ${twitterImage}
     ${hreflangTags}
     <!-- JSON-LD-INJECTION -->
     <style id="anti-fouc">

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "npx vite",
-    "build": "npx vite build && npx tsx scripts/generate-seo-html.ts && npx tsx scripts/generate-multilingual-sitemaps.ts && node scripts/ping-indexnow.cjs",
+    "build": "node scripts/create-og-image.cjs && npx vite build && npx tsx scripts/generate-seo-html.ts && npx tsx scripts/generate-multilingual-sitemaps.ts && node scripts/ping-indexnow.cjs",
     "index:google": "npx tsx scripts/submit-google-indexing.ts",
     "index:daemon": "npx tsx scripts/google-indexing-daemon.ts",
     "index:ping": "node scripts/ping-indexnow.cjs",
