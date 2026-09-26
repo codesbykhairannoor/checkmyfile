@@ -822,5 +822,805 @@
   "https://handlemyfile.com/es/pdf-a-imagen": {
     "submittedAt": "2026-09-25T04:15:23.841Z",
     "status": 200
+  },
+  "https://handlemyfile.com/es/ocr-pdf-a-texto": {
+    "submittedAt": "2026-09-26T04:20:06.457Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/es/pdf-escaneado-a-texto-ocr": {
+    "submittedAt": "2026-09-26T04:20:06.706Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/fusionner-pdf": {
+    "submittedAt": "2026-09-26T04:20:06.958Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/fusionner-plusieurs-fichiers-pdf": {
+    "submittedAt": "2026-09-26T04:20:07.231Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/modifier-pdf": {
+    "submittedAt": "2026-09-26T04:20:07.514Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/diviser-pdf": {
+    "submittedAt": "2026-09-26T04:20:07.786Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/pivoter-pdf": {
+    "submittedAt": "2026-09-26T04:20:08.057Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/numeros-de-pages": {
+    "submittedAt": "2026-09-26T04:20:08.330Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/filigrane-pdf": {
+    "submittedAt": "2026-09-26T04:20:08.587Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/supprimer-des-pages": {
+    "submittedAt": "2026-09-26T04:20:08.845Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/organiser-le-pdf": {
+    "submittedAt": "2026-09-26T04:20:09.122Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/r-organiser-les-pages-pdf-par-glisser-d-poser": {
+    "submittedAt": "2026-09-26T04:20:09.365Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/signer-pdf": {
+    "submittedAt": "2026-09-26T04:20:09.612Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/signer-pdf-sans-inscription": {
+    "submittedAt": "2026-09-26T04:20:09.852Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/proteger-pdf": {
+    "submittedAt": "2026-09-26T04:20:10.094Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/deverrouiller-pdf": {
+    "submittedAt": "2026-09-26T04:20:10.341Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/supprimer-le-mot-de-passe-pdf-sans-mot-de-passe": {
+    "submittedAt": "2026-09-26T04:20:10.576Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/recadrer-le-pdf": {
+    "submittedAt": "2026-09-26T04:20:10.820Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/extraire-des-images": {
+    "submittedAt": "2026-09-26T04:20:11.057Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/pdf-en-niveaux-de-gris": {
+    "submittedAt": "2026-09-26T04:20:11.304Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/recadrer-les-marges-du-pdf": {
+    "submittedAt": "2026-09-26T04:20:11.541Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/pdf-en-niveaux-de-gris-pour-l-impression": {
+    "submittedAt": "2026-09-26T04:20:11.776Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/supprimer-les-m-tadonn-es-de-l-auteur-du-pdf": {
+    "submittedAt": "2026-09-26T04:20:12.048Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/extraire-des-images-haute-r-solution-pdf": {
+    "submittedAt": "2026-09-26T04:20:12.279Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/comparer-visuellement-les-fichiers-pdf": {
+    "submittedAt": "2026-09-26T04:20:12.534Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/fusionner-des-fichiers-pdf-hors-ligne": {
+    "submittedAt": "2026-09-26T04:20:12.787Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/convertir-un-pdf-num-ris-en-texte": {
+    "submittedAt": "2026-09-26T04:20:12.982Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/ajouter-des-num-ros-de-page-au-pdf-gratuitement": {
+    "submittedAt": "2026-09-26T04:20:13.217Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/supprimer-le-filigrane-pdf-en-ligne": {
+    "submittedAt": "2026-09-26T04:20:13.475Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/numeriser-vers-pdf": {
+    "submittedAt": "2026-09-26T04:20:13.725Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/supprimer-metadonnees-pdf": {
+    "submittedAt": "2026-09-26T04:20:13.908Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/comparer-pdf": {
+    "submittedAt": "2026-09-26T04:20:14.152Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/masquer-pdf": {
+    "submittedAt": "2026-09-26T04:20:14.393Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/pdf-inverse": {
+    "submittedAt": "2026-09-26T04:20:14.641Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/redimensionner-le-pdf": {
+    "submittedAt": "2026-09-26T04:20:14.886Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/compresser-pdf": {
+    "submittedAt": "2026-09-26T04:20:15.130Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/compresser-pdf-pour-email": {
+    "submittedAt": "2026-09-26T04:20:15.372Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/compresser-pdf-a-100ko": {
+    "submittedAt": "2026-09-26T04:20:15.640Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/compresser-pdf-sans-perte-de-qualite": {
+    "submittedAt": "2026-09-26T04:20:15.859Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/r-duire-la-taille-du-pdf-hors-ligne": {
+    "submittedAt": "2026-09-26T04:20:16.114Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/excel-en-pdf": {
+    "submittedAt": "2026-09-26T04:20:16.368Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/ppt-en-pdf": {
+    "submittedAt": "2026-09-26T04:20:16.620Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/texte-en-pdf": {
+    "submittedAt": "2026-09-26T04:20:16.871Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/pdf-en-word-sans-perdre-le-formatage": {
+    "submittedAt": "2026-09-26T04:20:17.135Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/pdf-en-ppt": {
+    "submittedAt": "2026-09-26T04:20:17.368Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/csv-vers-excel": {
+    "submittedAt": "2026-09-26T04:20:17.607Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/excel-vers-csv": {
+    "submittedAt": "2026-09-26T04:20:17.848Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/image-en-pdf": {
+    "submittedAt": "2026-09-26T04:20:18.127Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/pdf-en-image": {
+    "submittedAt": "2026-09-26T04:20:18.362Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/pdf-roc": {
+    "submittedAt": "2026-09-26T04:20:18.611Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/fr/pdf-num-ris-en-texte-ocr": {
+    "submittedAt": "2026-09-26T04:20:18.854Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-zusammenfuehren": {
+    "submittedAt": "2026-09-26T04:20:19.110Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/mehrere-pdf-dateien-zusammenfuehren": {
+    "submittedAt": "2026-09-26T04:20:19.282Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-bearbeiten": {
+    "submittedAt": "2026-09-26T04:20:19.531Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-teilen": {
+    "submittedAt": "2026-09-26T04:20:19.813Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-drehen": {
+    "submittedAt": "2026-09-26T04:20:20.082Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/seitenzahlen": {
+    "submittedAt": "2026-09-26T04:20:20.317Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/wasserzeichen-pdf": {
+    "submittedAt": "2026-09-26T04:20:20.552Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/seiten-entfernen": {
+    "submittedAt": "2026-09-26T04:20:20.782Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-organisieren": {
+    "submittedAt": "2026-09-26T04:20:21.027Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/ordnen-sie-pdf-seiten-per-drag-drop-neu-an": {
+    "submittedAt": "2026-09-26T04:20:21.244Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-unterschreiben": {
+    "submittedAt": "2026-09-26T04:20:21.483Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-unterschreiben-ohne-registrierung": {
+    "submittedAt": "2026-09-26T04:20:21.721Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-schuetzen": {
+    "submittedAt": "2026-09-26T04:20:21.962Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-entsperren": {
+    "submittedAt": "2026-09-26T04:20:22.179Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-passwort-ohne-passwort-entfernen": {
+    "submittedAt": "2026-09-26T04:20:22.418Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-zuschneiden": {
+    "submittedAt": "2026-09-26T04:20:22.655Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/bilder-extrahieren": {
+    "submittedAt": "2026-09-26T04:20:22.883Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/graustufen-pdf": {
+    "submittedAt": "2026-09-26T04:20:23.123Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-r-nder-zuschneiden": {
+    "submittedAt": "2026-09-26T04:20:23.356Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/graustufen-pdf-zum-drucken": {
+    "submittedAt": "2026-09-26T04:20:23.589Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/entfernen-sie-die-metadaten-des-pdf-autors": {
+    "submittedAt": "2026-09-26T04:20:23.774Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/extrahieren-sie-hochaufl-sende-bilder-im-pdf-format": {
+    "submittedAt": "2026-09-26T04:20:24.008Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/vergleichen-sie-pdf-dateien-visuell": {
+    "submittedAt": "2026-09-26T04:20:24.245Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-dateien-offline-zusammenf-hren": {
+    "submittedAt": "2026-09-26T04:20:24.487Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/konvertieren-sie-gescannte-pdfs-in-text": {
+    "submittedAt": "2026-09-26T04:20:24.725Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/seitenzahlen-kostenlos-zum-pdf-hinzuf-gen": {
+    "submittedAt": "2026-09-26T04:20:24.964Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-wasserzeichen-online-entfernen": {
+    "submittedAt": "2026-09-26T04:20:25.203Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/als-pdf-scannen": {
+    "submittedAt": "2026-09-26T04:20:25.436Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-metadaten-entfernen": {
+    "submittedAt": "2026-09-26T04:20:25.678Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-vergleichen": {
+    "submittedAt": "2026-09-26T04:20:25.917Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-schwaerzen": {
+    "submittedAt": "2026-09-26T04:20:26.155Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-umkehren": {
+    "submittedAt": "2026-09-26T04:20:26.390Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-grosse-andern": {
+    "submittedAt": "2026-09-26T04:20:26.630Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-komprimieren": {
+    "submittedAt": "2026-09-26T04:20:26.868Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-komprimieren-fuer-email": {
+    "submittedAt": "2026-09-26T04:20:27.100Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-auf-100kb-komprimieren": {
+    "submittedAt": "2026-09-26T04:20:27.272Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-komprimieren-ohne-qualitaetsverlust": {
+    "submittedAt": "2026-09-26T04:20:27.503Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-gr-e-offline-reduzieren": {
+    "submittedAt": "2026-09-26T04:20:27.733Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/excel-in-pdf": {
+    "submittedAt": "2026-09-26T04:20:27.970Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/ppt-in-pdf": {
+    "submittedAt": "2026-09-26T04:20:28.185Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/text-in-pdf": {
+    "submittedAt": "2026-09-26T04:20:28.425Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-in-word-umwandeln-ohne-dass-die-formatierung-verloren-geht": {
+    "submittedAt": "2026-09-26T04:20:28.638Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-zu-ppt": {
+    "submittedAt": "2026-09-26T04:20:28.873Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/csv-zu-excel": {
+    "submittedAt": "2026-09-26T04:20:29.121Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/excel-zu-csv": {
+    "submittedAt": "2026-09-26T04:20:29.375Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/bild-in-pdf": {
+    "submittedAt": "2026-09-26T04:20:29.579Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/pdf-zu-bild": {
+    "submittedAt": "2026-09-26T04:20:29.823Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/ocr-pdf": {
+    "submittedAt": "2026-09-26T04:20:30.066Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/de/gescanntes-pdf-in-text-ocr": {
+    "submittedAt": "2026-09-26T04:20:30.310Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-ketsugou": {
+    "submittedAt": "2026-09-26T04:20:30.548Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-ketsugou-multi": {
+    "submittedAt": "2026-09-26T04:20:30.769Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-henshu": {
+    "submittedAt": "2026-09-26T04:20:31.006Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-bunkatsu": {
+    "submittedAt": "2026-09-26T04:20:31.257Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-kaiten": {
+    "submittedAt": "2026-09-26T04:20:31.509Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/peji-bango": {
+    "submittedAt": "2026-09-26T04:20:31.754Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-sukashi": {
+    "submittedAt": "2026-09-26T04:20:31.987Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/peji-sakujo": {
+    "submittedAt": "2026-09-26T04:20:32.231Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-seiri": {
+    "submittedAt": "2026-09-26T04:20:32.479Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/reorder-pdf-pages-drag-and-drop": {
+    "submittedAt": "2026-09-26T04:20:32.729Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-shomei": {
+    "submittedAt": "2026-09-26T04:20:32.971Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/touroku-nashi-de-pdf-ni-shomei": {
+    "submittedAt": "2026-09-26T04:20:33.213Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-hogo": {
+    "submittedAt": "2026-09-26T04:20:33.462Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-kaijo": {
+    "submittedAt": "2026-09-26T04:20:33.711Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/remove-pdf-password-without-password": {
+    "submittedAt": "2026-09-26T04:20:33.957Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-torimingu": {
+    "submittedAt": "2026-09-26T04:20:34.204Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/gazo-chushutsu": {
+    "submittedAt": "2026-09-26T04:20:34.389Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/guresukeru-pdf": {
+    "submittedAt": "2026-09-26T04:20:34.633Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-yohaku-torimingu": {
+    "submittedAt": "2026-09-26T04:20:34.881Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-gureesukeeru-insatsu": {
+    "submittedAt": "2026-09-26T04:20:35.122Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-choshamei-metadeeta-sakujo": {
+    "submittedAt": "2026-09-26T04:20:35.362Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-kogaashitsu-gazo-chushutsu": {
+    "submittedAt": "2026-09-26T04:20:35.530Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-shikakuteki-hikaku": {
+    "submittedAt": "2026-09-26T04:20:35.777Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-ofurain-ketsugou": {
+    "submittedAt": "2026-09-26T04:20:36.012Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-sukyan-tekisuto-henkan": {
+    "submittedAt": "2026-09-26T04:20:36.261Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-peejibangou-tsuika-muryou": {
+    "submittedAt": "2026-09-26T04:20:36.514Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-sukashi-sakujo-onrain": {
+    "submittedAt": "2026-09-26T04:20:36.750Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/sukyan-to-pdf": {
+    "submittedAt": "2026-09-26T04:20:36.993Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/metadeta-sakujo": {
+    "submittedAt": "2026-09-26T04:20:37.239Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-hikaku": {
+    "submittedAt": "2026-09-26T04:20:37.496Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-suminuri": {
+    "submittedAt": "2026-09-26T04:20:37.745Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-hanten": {
+    "submittedAt": "2026-09-26T04:20:37.987Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-risaizu": {
+    "submittedAt": "2026-09-26T04:20:38.231Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-asshuku": {
+    "submittedAt": "2026-09-26T04:20:38.473Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/email-yow-pdf-asshuku": {
+    "submittedAt": "2026-09-26T04:20:38.652Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-wo-100kb-ni-asshuku": {
+    "submittedAt": "2026-09-26T04:20:38.902Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/hinshitsu-wo-otosazu-ni-pdf-wo-asshuku": {
+    "submittedAt": "2026-09-26T04:20:39.156Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/reduce-pdf-size-offline": {
+    "submittedAt": "2026-09-26T04:20:39.411Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/excel-kara-pdf": {
+    "submittedAt": "2026-09-26T04:20:39.615Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/ppt-kara-pdf": {
+    "submittedAt": "2026-09-26T04:20:39.812Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/txt-kara-pdf": {
+    "submittedAt": "2026-09-26T04:20:40.053Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-word": {
+    "submittedAt": "2026-09-26T04:20:40.232Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-kara-ppt": {
+    "submittedAt": "2026-09-26T04:20:40.473Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/csv-kara-excel": {
+    "submittedAt": "2026-09-26T04:20:40.716Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/excel-kara-csv": {
+    "submittedAt": "2026-09-26T04:20:40.941Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/gazo-kara-pdf": {
+    "submittedAt": "2026-09-26T04:20:41.175Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/pdf-kara-gazo": {
+    "submittedAt": "2026-09-26T04:20:41.408Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/ocr-pdf": {
+    "submittedAt": "2026-09-26T04:20:41.649Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ja/scanned-pdf-to-text-ocr": {
+    "submittedAt": "2026-09-26T04:20:41.827Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/juntar-pdf": {
+    "submittedAt": "2026-09-26T04:20:42.067Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/juntar-multiplos-pdfs": {
+    "submittedAt": "2026-09-26T04:20:42.307Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/editar-pdf": {
+    "submittedAt": "2026-09-26T04:20:42.537Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/dividir-pdf": {
+    "submittedAt": "2026-09-26T04:20:42.772Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/girar-pdf": {
+    "submittedAt": "2026-09-26T04:20:43.018Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/numeros-de-pagina": {
+    "submittedAt": "2026-09-26T04:20:43.259Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/pdf-de-marca-d-agua": {
+    "submittedAt": "2026-09-26T04:20:43.493Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/remover-paginas": {
+    "submittedAt": "2026-09-26T04:20:43.729Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/organizar-pdf": {
+    "submittedAt": "2026-09-26T04:20:43.968Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/reordenar-p-ginas-pdf-arrastar-e-soltar": {
+    "submittedAt": "2026-09-26T04:20:44.133Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/assinar-pdf": {
+    "submittedAt": "2026-09-26T04:20:44.367Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/assinar-pdf-sem-registro": {
+    "submittedAt": "2026-09-26T04:20:44.609Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/proteger-pdf": {
+    "submittedAt": "2026-09-26T04:20:44.845Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/desbloquear-pdf": {
+    "submittedAt": "2026-09-26T04:20:45.081Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/remover-senha-do-pdf-sem-senha": {
+    "submittedAt": "2026-09-26T04:20:45.318Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/cortar-pdf": {
+    "submittedAt": "2026-09-26T04:20:45.550Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/extrair-imagens": {
+    "submittedAt": "2026-09-26T04:20:45.782Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/pdf-em-tons-de-cinza": {
+    "submittedAt": "2026-09-26T04:20:46.011Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/cortar-margens-do-pdf": {
+    "submittedAt": "2026-09-26T04:20:46.243Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/pdf-em-escala-de-cinza-para-impress-o": {
+    "submittedAt": "2026-09-26T04:20:46.470Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/remover-metadados-do-autor-do-pdf": {
+    "submittedAt": "2026-09-26T04:20:46.703Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/extrair-imagens-em-alta-resolu-o-pdf": {
+    "submittedAt": "2026-09-26T04:20:46.941Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/compare-arquivos-pdf-visualmente": {
+    "submittedAt": "2026-09-26T04:20:47.163Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/mesclar-arquivos-pdf-off-line": {
+    "submittedAt": "2026-09-26T04:20:47.402Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/converter-pdf-digitalizado-em-texto": {
+    "submittedAt": "2026-09-26T04:20:47.640Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/adicionar-n-meros-de-p-gina-ao-pdf-gratuitamente": {
+    "submittedAt": "2026-09-26T04:20:47.877Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/remover-marca-d-gua-de-pdf-on-line": {
+    "submittedAt": "2026-09-26T04:20:48.117Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/digitalizar-para-pdf": {
+    "submittedAt": "2026-09-26T04:20:48.351Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/remover-metadados-pdf": {
+    "submittedAt": "2026-09-26T04:20:48.536Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/comparar-pdf": {
+    "submittedAt": "2026-09-26T04:20:48.771Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/redigir-pdf": {
+    "submittedAt": "2026-09-26T04:20:49.015Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/pdf-reverso": {
+    "submittedAt": "2026-09-26T04:20:49.262Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/redimensionar-pdf": {
+    "submittedAt": "2026-09-26T04:20:49.506Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/comprimir-pdf": {
+    "submittedAt": "2026-09-26T04:20:49.746Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/comprimir-pdf-para-email": {
+    "submittedAt": "2026-09-26T04:20:49.982Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/comprimir-pdf-para-100kb": {
+    "submittedAt": "2026-09-26T04:20:50.233Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/comprimir-pdf-sem-perder-qualidade": {
+    "submittedAt": "2026-09-26T04:20:50.479Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/reduzir-o-tamanho-do-pdf-off-line": {
+    "submittedAt": "2026-09-26T04:20:50.725Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/excel-para-pdf": {
+    "submittedAt": "2026-09-26T04:20:50.965Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/ppt-para-pdf": {
+    "submittedAt": "2026-09-26T04:20:51.210Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/texto-para-pdf": {
+    "submittedAt": "2026-09-26T04:20:51.461Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/pdf-para-word-sem-perder-formata-o": {
+    "submittedAt": "2026-09-26T04:20:51.695Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/pdf-para-ppt": {
+    "submittedAt": "2026-09-26T04:20:51.932Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/csv-para-excel": {
+    "submittedAt": "2026-09-26T04:20:52.166Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/excel-para-csv": {
+    "submittedAt": "2026-09-26T04:20:52.404Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/imagem-para-pdf": {
+    "submittedAt": "2026-09-26T04:20:52.636Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/pdf-para-imagem": {
+    "submittedAt": "2026-09-26T04:20:52.866Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/ocr-pdf": {
+    "submittedAt": "2026-09-26T04:20:53.106Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pt/pdf-digitalizado-para-texto-ocr": {
+    "submittedAt": "2026-09-26T04:20:53.346Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ru/obedenit-pdf": {
+    "submittedAt": "2026-09-26T04:20:53.585Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ru/obedinit-neskolko-pdf": {
+    "submittedAt": "2026-09-26T04:20:53.819Z",
+    "status": 200
   }
 }
