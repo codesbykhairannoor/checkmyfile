@@ -2422,5 +2422,805 @@
   "https://handlemyfile.com/use-cases": {
     "submittedAt": "2026-09-27T04:37:55.360Z",
     "status": 200
+  },
+  "https://handlemyfile.com/compare": {
+    "submittedAt": "2026-09-28T04:38:04.351Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/languages": {
+    "submittedAt": "2026-09-28T04:38:04.643Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/merge-pdf": {
+    "submittedAt": "2026-09-28T04:38:04.933Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/combine-multiple-pdf-files": {
+    "submittedAt": "2026-09-28T04:38:05.186Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/edit-pdf": {
+    "submittedAt": "2026-09-28T04:38:05.466Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/split-pdf": {
+    "submittedAt": "2026-09-28T04:38:05.755Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/rotate-pdf": {
+    "submittedAt": "2026-09-28T04:38:06.031Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/page-numbers": {
+    "submittedAt": "2026-09-28T04:38:06.317Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/watermark-pdf": {
+    "submittedAt": "2026-09-28T04:38:06.600Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/remove-pages-pdf": {
+    "submittedAt": "2026-09-28T04:38:06.882Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/organize-pdf": {
+    "submittedAt": "2026-09-28T04:38:07.127Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/reorder-pdf-pages-drag-and-drop": {
+    "submittedAt": "2026-09-28T04:38:07.383Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/sign-pdf": {
+    "submittedAt": "2026-09-28T04:38:07.677Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/sign-pdf-without-registration": {
+    "submittedAt": "2026-09-28T04:38:07.958Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/protect-pdf": {
+    "submittedAt": "2026-09-28T04:38:08.165Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/unlock-pdf": {
+    "submittedAt": "2026-09-28T04:38:08.417Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/remove-pdf-password-without-password": {
+    "submittedAt": "2026-09-28T04:38:08.654Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/crop-pdf": {
+    "submittedAt": "2026-09-28T04:38:08.835Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/extract-images-from-pdf": {
+    "submittedAt": "2026-09-28T04:38:09.072Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/convert-pdf-to-grayscale": {
+    "submittedAt": "2026-09-28T04:38:09.347Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/crop-pdf-margins": {
+    "submittedAt": "2026-09-28T04:38:09.588Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/grayscale-pdf-for-printing": {
+    "submittedAt": "2026-09-28T04:38:09.820Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/remove-pdf-author-metadata": {
+    "submittedAt": "2026-09-28T04:38:10.092Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/extract-high-res-images-pdf": {
+    "submittedAt": "2026-09-28T04:38:10.301Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/compare-pdf-files-visually": {
+    "submittedAt": "2026-09-28T04:38:10.539Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/merge-pdf-files-offline": {
+    "submittedAt": "2026-09-28T04:38:10.752Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/convert-scanned-pdf-to-text": {
+    "submittedAt": "2026-09-28T04:38:10.991Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/add-page-numbers-to-pdf-free": {
+    "submittedAt": "2026-09-28T04:38:11.218Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/remove-pdf-watermark-online": {
+    "submittedAt": "2026-09-28T04:38:11.476Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/scan-to-pdf": {
+    "submittedAt": "2026-09-28T04:38:11.714Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/remove-pdf-metadata": {
+    "submittedAt": "2026-09-28T04:38:11.951Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/compare-pdf": {
+    "submittedAt": "2026-09-28T04:38:12.190Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/redact-pdf": {
+    "submittedAt": "2026-09-28T04:38:12.433Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/reverse-pdf": {
+    "submittedAt": "2026-09-28T04:38:12.680Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/resize-pdf": {
+    "submittedAt": "2026-09-28T04:38:12.926Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/compress-pdf": {
+    "submittedAt": "2026-09-28T04:38:13.163Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/compress-pdf-for-email": {
+    "submittedAt": "2026-09-28T04:38:13.399Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/compress-pdf-to-100kb": {
+    "submittedAt": "2026-09-28T04:38:13.642Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/compress-pdf-without-losing-quality": {
+    "submittedAt": "2026-09-28T04:38:13.831Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/reduce-pdf-size-offline": {
+    "submittedAt": "2026-09-28T04:38:14.079Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/excel-to-pdf": {
+    "submittedAt": "2026-09-28T04:38:14.321Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ppt-to-pdf": {
+    "submittedAt": "2026-09-28T04:38:14.513Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/txt-to-pdf": {
+    "submittedAt": "2026-09-28T04:38:14.755Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pdf-to-word-without-losing-formatting": {
+    "submittedAt": "2026-09-28T04:38:15.009Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pdf-to-ppt": {
+    "submittedAt": "2026-09-28T04:38:15.253Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/csv-to-excel": {
+    "submittedAt": "2026-09-28T04:38:15.493Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/excel-to-csv": {
+    "submittedAt": "2026-09-28T04:38:15.736Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/image-to-pdf": {
+    "submittedAt": "2026-09-28T04:38:15.935Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/pdf-to-image": {
+    "submittedAt": "2026-09-28T04:38:16.176Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ocr-pdf": {
+    "submittedAt": "2026-09-28T04:38:16.427Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/scanned-pdf-to-text-ocr": {
+    "submittedAt": "2026-09-28T04:38:16.664Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/chi-siamo": {
+    "submittedAt": "2026-09-28T04:38:16.905Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/informativa-sulla-privacy": {
+    "submittedAt": "2026-09-28T04:38:17.137Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/termini-di-servizio": {
+    "submittedAt": "2026-09-28T04:38:17.381Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/prezzi": {
+    "submittedAt": "2026-09-28T04:38:17.633Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/sicurezza-e-fiducia": {
+    "submittedAt": "2026-09-28T04:38:17.866Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/casi-d-uso": {
+    "submittedAt": "2026-09-28T04:38:18.116Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/confronta": {
+    "submittedAt": "2026-09-28T04:38:18.347Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/lingue-supportate": {
+    "submittedAt": "2026-09-28T04:38:18.594Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/unisci-pdf": {
+    "submittedAt": "2026-09-28T04:38:18.840Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/unisci-piu-pdf": {
+    "submittedAt": "2026-09-28T04:38:19.082Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/modifica-pdf": {
+    "submittedAt": "2026-09-28T04:38:19.323Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/pdf-diviso": {
+    "submittedAt": "2026-09-28T04:38:19.560Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/ruota-pdf": {
+    "submittedAt": "2026-09-28T04:38:19.806Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/numeri-di-pagina": {
+    "submittedAt": "2026-09-28T04:38:20.047Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/pdf-filigrana": {
+    "submittedAt": "2026-09-28T04:38:20.284Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/rimuovi-pagine": {
+    "submittedAt": "2026-09-28T04:38:20.516Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/organizza-pdf": {
+    "submittedAt": "2026-09-28T04:38:20.760Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/riordinare-le-pagine-pdf-trascinandole": {
+    "submittedAt": "2026-09-28T04:38:20.995Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/firma-pdf": {
+    "submittedAt": "2026-09-28T04:38:21.233Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/firma-pdf-senza-registrazione": {
+    "submittedAt": "2026-09-28T04:38:21.453Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/proteggi-pdf": {
+    "submittedAt": "2026-09-28T04:38:21.697Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/sblocca-pdf": {
+    "submittedAt": "2026-09-28T04:38:21.909Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/rimuovere-la-password-pdf-senza-password": {
+    "submittedAt": "2026-09-28T04:38:22.107Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/ritaglia-pdf": {
+    "submittedAt": "2026-09-28T04:38:22.345Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/estrai-immagini": {
+    "submittedAt": "2026-09-28T04:38:22.531Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/pdf-in-scala-di-grigi": {
+    "submittedAt": "2026-09-28T04:38:22.763Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/ritagliare-i-margini-del-pdf": {
+    "submittedAt": "2026-09-28T04:38:22.950Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/pdf-in-scala-di-grigi-per-la-stampa": {
+    "submittedAt": "2026-09-28T04:38:23.129Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/rimuovere-i-metadati-dell-autore-del-pdf": {
+    "submittedAt": "2026-09-28T04:38:23.365Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/estrarre-immagini-ad-alta-risoluzione-pdf": {
+    "submittedAt": "2026-09-28T04:38:23.603Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/confrontare-visivamente-i-file-pdf": {
+    "submittedAt": "2026-09-28T04:38:23.849Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/unisci-file-pdf-offline": {
+    "submittedAt": "2026-09-28T04:38:24.055Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/convertire-pdf-scansionati-in-testo": {
+    "submittedAt": "2026-09-28T04:38:24.289Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/aggiungi-numeri-di-pagina-al-pdf-gratuitamente": {
+    "submittedAt": "2026-09-28T04:38:24.521Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/rimuovere-la-filigrana-dal-pdf-online": {
+    "submittedAt": "2026-09-28T04:38:24.707Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/scansione-in-pdf": {
+    "submittedAt": "2026-09-28T04:38:24.948Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/rimuovi-metadati-pdf": {
+    "submittedAt": "2026-09-28T04:38:25.138Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/confronta-pdf": {
+    "submittedAt": "2026-09-28T04:38:25.367Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/oscura-pdf": {
+    "submittedAt": "2026-09-28T04:38:25.550Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/pdf-inverso": {
+    "submittedAt": "2026-09-28T04:38:25.790Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/ridimensiona-pdf": {
+    "submittedAt": "2026-09-28T04:38:25.989Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/comprimi-pdf": {
+    "submittedAt": "2026-09-28T04:38:26.230Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/comprimi-pdf-per-email": {
+    "submittedAt": "2026-09-28T04:38:26.463Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/comprimi-pdf-a-100kb": {
+    "submittedAt": "2026-09-28T04:38:26.695Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/comprimi-pdf-senza-perdere-qualita": {
+    "submittedAt": "2026-09-28T04:38:26.870Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/riduci-le-dimensioni-del-pdf-offline": {
+    "submittedAt": "2026-09-28T04:38:27.117Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/excel-in-pdf": {
+    "submittedAt": "2026-09-28T04:38:27.361Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/ppt-in-pdf": {
+    "submittedAt": "2026-09-28T04:38:27.603Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/testo-in-pdf": {
+    "submittedAt": "2026-09-28T04:38:27.818Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/pdf-in-word-senza-perdere-la-formattazione": {
+    "submittedAt": "2026-09-28T04:38:28.065Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/da-pdf-a-ppt": {
+    "submittedAt": "2026-09-28T04:38:28.272Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/csv-in-excel": {
+    "submittedAt": "2026-09-28T04:38:28.514Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/excel-in-csv": {
+    "submittedAt": "2026-09-28T04:38:28.733Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/immagine-in-pdf": {
+    "submittedAt": "2026-09-28T04:38:28.973Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/pdf-in-immagine": {
+    "submittedAt": "2026-09-28T04:38:29.207Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/pdf-ocr": {
+    "submittedAt": "2026-09-28T04:38:29.446Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/it/pdf-scansionato-in-testo-ocr": {
+    "submittedAt": "2026-09-28T04:38:29.684Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/hoesa-sogae": {
+    "submittedAt": "2026-09-28T04:38:29.921Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/gaein-jeongbo-boho-jeongcaeg": {
+    "submittedAt": "2026-09-28T04:38:30.171Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/seobiseu-yaggwan": {
+    "submittedAt": "2026-09-28T04:38:30.416Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/gagyeog": {
+    "submittedAt": "2026-09-28T04:38:30.665Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/boan-mic-sinroe": {
+    "submittedAt": "2026-09-28T04:38:30.904Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/sayong-sarye": {
+    "submittedAt": "2026-09-28T04:38:31.148Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/bigyo": {
+    "submittedAt": "2026-09-28T04:38:31.393Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/jiweondoeneun-eoneo": {
+    "submittedAt": "2026-09-28T04:38:31.629Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pdf-byeonghap": {
+    "submittedAt": "2026-09-28T04:38:31.874Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pdf-byeonghap-multi": {
+    "submittedAt": "2026-09-28T04:38:32.116Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pdf-pyeonjib": {
+    "submittedAt": "2026-09-28T04:38:32.360Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pdf-bunhal": {
+    "submittedAt": "2026-09-28T04:38:32.596Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pdf-hoejeon": {
+    "submittedAt": "2026-09-28T04:38:32.841Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/peiji-beonho": {
+    "submittedAt": "2026-09-28T04:38:33.083Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/weoteomakeu-pdf": {
+    "submittedAt": "2026-09-28T04:38:33.318Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/peiji-jegeo": {
+    "submittedAt": "2026-09-28T04:38:33.556Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pdf-jeongri": {
+    "submittedAt": "2026-09-28T04:38:33.800Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/reorder-pdf-pages-drag-and-drop": {
+    "submittedAt": "2026-09-28T04:38:34.034Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pdfe-seomyeong": {
+    "submittedAt": "2026-09-28T04:38:34.260Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/gaipeopsi-pdf-seomyeong": {
+    "submittedAt": "2026-09-28T04:38:34.497Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pdfreul-boho": {
+    "submittedAt": "2026-09-28T04:38:34.731Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pdf-jamgeum-haeje": {
+    "submittedAt": "2026-09-28T04:38:34.971Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/remove-pdf-password-without-password": {
+    "submittedAt": "2026-09-28T04:38:35.216Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pdf-jareugi": {
+    "submittedAt": "2026-09-28T04:38:35.453Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/imiji-cucul": {
+    "submittedAt": "2026-09-28T04:38:35.691Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/geureiseukeil-pdf": {
+    "submittedAt": "2026-09-28T04:38:35.933Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pdf-yeobaek-jareugi": {
+    "submittedAt": "2026-09-28T04:38:36.174Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/inseoyong-geureiseukeil-pdf": {
+    "submittedAt": "2026-09-28T04:38:36.415Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pdf-jakseongja-metadeiteo-jegeo": {
+    "submittedAt": "2026-09-28T04:38:36.657Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pdf-gohaasangdo-imeji-chuchul": {
+    "submittedAt": "2026-09-28T04:38:36.889Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pdf-shigakjeok-bigyo": {
+    "submittedAt": "2026-09-28T04:38:37.122Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/opeurain-pdf-byeonghap": {
+    "submittedAt": "2026-09-28T04:38:37.366Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/seukaen-pdf-tekseuteu-byeonhwan": {
+    "submittedAt": "2026-09-28T04:38:37.613Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pdf-peiji-beonho-chuga-muryo": {
+    "submittedAt": "2026-09-28T04:38:37.849Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pdf-woteoma-keu-jegeo-onrain": {
+    "submittedAt": "2026-09-28T04:38:38.098Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pdfro-seukaen": {
+    "submittedAt": "2026-09-28T04:38:38.342Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/metadeiteo-jegeo": {
+    "submittedAt": "2026-09-28T04:38:38.584Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pdf-bigyo": {
+    "submittedAt": "2026-09-28T04:38:38.821Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pdf-sujeong": {
+    "submittedAt": "2026-09-28T04:38:39.064Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/yeogbanghyang-pdf": {
+    "submittedAt": "2026-09-28T04:38:39.248Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pdf-keugi-jojeong": {
+    "submittedAt": "2026-09-28T04:38:39.492Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pdf-apchuk": {
+    "submittedAt": "2026-09-28T04:38:39.739Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/email-yong-pdf-apchuk": {
+    "submittedAt": "2026-09-28T04:38:39.983Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pdf-reul-100kb-ro-apchuk": {
+    "submittedAt": "2026-09-28T04:38:40.182Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pumjil-sonsil-eopsi-pdf-apchuk": {
+    "submittedAt": "2026-09-28T04:38:40.435Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/reduce-pdf-size-offline": {
+    "submittedAt": "2026-09-28T04:38:40.683Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/egseleul-pdfro": {
+    "submittedAt": "2026-09-28T04:38:40.931Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pptreul-pdfro": {
+    "submittedAt": "2026-09-28T04:38:41.172Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/txtreul-pdfro": {
+    "submittedAt": "2026-09-28T04:38:41.420Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pdf-to-word-without-losing-formatting": {
+    "submittedAt": "2026-09-28T04:38:41.606Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pdfreul-pptro": {
+    "submittedAt": "2026-09-28T04:38:41.842Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/csvreul-egselro": {
+    "submittedAt": "2026-09-28T04:38:42.052Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/egseleul-csvro": {
+    "submittedAt": "2026-09-28T04:38:42.269Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/imijireul-pdfro": {
+    "submittedAt": "2026-09-28T04:38:42.494Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/pdfreul-imijiro": {
+    "submittedAt": "2026-09-28T04:38:42.732Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/ocr-pdf": {
+    "submittedAt": "2026-09-28T04:38:42.941Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/ko/scanned-pdf-to-text-ocr": {
+    "submittedAt": "2026-09-28T04:38:43.176Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/over-ons": {
+    "submittedAt": "2026-09-28T04:38:43.431Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/privacybeleid": {
+    "submittedAt": "2026-09-28T04:38:43.661Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/servicevoorwaarden": {
+    "submittedAt": "2026-09-28T04:38:43.903Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/prijzen": {
+    "submittedAt": "2026-09-28T04:38:44.146Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/veiligheid-en-vertrouwen": {
+    "submittedAt": "2026-09-28T04:38:44.391Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/gebruiksscenario-s": {
+    "submittedAt": "2026-09-28T04:38:44.642Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/vergelijk": {
+    "submittedAt": "2026-09-28T04:38:44.858Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/ondersteunde-talen": {
+    "submittedAt": "2026-09-28T04:38:45.091Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/pdf-samenvoegen": {
+    "submittedAt": "2026-09-28T04:38:45.334Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/pdf-samenvoegen-multi": {
+    "submittedAt": "2026-09-28T04:38:45.575Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/pdf-bewerken": {
+    "submittedAt": "2026-09-28T04:38:45.815Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/pdf-splitsen": {
+    "submittedAt": "2026-09-28T04:38:46.047Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/pdf-roteren": {
+    "submittedAt": "2026-09-28T04:38:46.282Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/paginanummers": {
+    "submittedAt": "2026-09-28T04:38:46.519Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/watermerk-pdf": {
+    "submittedAt": "2026-09-28T04:38:46.733Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/pagina-s-verwijderen": {
+    "submittedAt": "2026-09-28T04:38:46.973Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/pdf-organiseren": {
+    "submittedAt": "2026-09-28T04:38:47.206Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/pdf-pagina-s-opnieuw-ordenen-slepen-en-neerzetten": {
+    "submittedAt": "2026-09-28T04:38:47.457Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/pdf-ondertekenen": {
+    "submittedAt": "2026-09-28T04:38:47.707Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/pdf-ondertekenen-zonder-registratie": {
+    "submittedAt": "2026-09-28T04:38:47.890Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/pdf-beveiligen": {
+    "submittedAt": "2026-09-28T04:38:48.136Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/pdf-ontgrendelen": {
+    "submittedAt": "2026-09-28T04:38:48.315Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/verwijder-pdf-wachtwoord-zonder-wachtwoord": {
+    "submittedAt": "2026-09-28T04:38:48.555Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/pdf-bijsnijden": {
+    "submittedAt": "2026-09-28T04:38:48.795Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/afbeeldingen-extraheren": {
+    "submittedAt": "2026-09-28T04:38:49.044Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/grijswaarden-pdf": {
+    "submittedAt": "2026-09-28T04:38:49.265Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/pdf-marges-bijsnijden": {
+    "submittedAt": "2026-09-28T04:38:49.515Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/grijswaarden-pdf-voor-afdrukken": {
+    "submittedAt": "2026-09-28T04:38:49.748Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/verwijder-de-metadata-van-de-pdf-auteur": {
+    "submittedAt": "2026-09-28T04:38:49.992Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/extract-hoge-resolutie-afbeeldingen-pdf": {
+    "submittedAt": "2026-09-28T04:38:50.229Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/vergelijk-pdf-bestanden-visueel": {
+    "submittedAt": "2026-09-28T04:38:50.467Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/pdf-bestanden-offline-samenvoegen": {
+    "submittedAt": "2026-09-28T04:38:50.681Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/gescande-pdf-naar-tekst-converteren": {
+    "submittedAt": "2026-09-28T04:38:50.913Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/paginanummers-toevoegen-aan-pdf-gratis": {
+    "submittedAt": "2026-09-28T04:38:51.133Z",
+    "status": 200
+  },
+  "https://handlemyfile.com/nl/verwijder-pdf-watermerk-online": {
+    "submittedAt": "2026-09-28T04:38:51.374Z",
+    "status": 200
   }
 }
