@@ -2,8 +2,8 @@ name: Daily Google Indexing Automation (200 URLs/day)
 
 on:
   schedule:
-    # Runs daily at 00:00 UTC (07:00 WIB)
-    - cron: '0 0 * * *'
+    # Runs daily at 02:25 UTC (09:25 WIB) - off-peak to prevent GitHub cron drops
+    - cron: '25 2 * * *'
   workflow_dispatch: # Allows manual trigger via GitHub Actions tab
   push:
     paths:
@@ -19,6 +19,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -43,6 +45,7 @@ jobs:
           git add scripts/google-indexed-cache.json
           if ! git diff --quiet || ! git diff --staged --quiet; then
             git commit -m "chore(seo): update google indexing cache [skip ci]" || true
+            git pull --rebase origin main
             git push origin main || echo "⚠️ Push back skipped (check GitHub Actions write permissions in Settings > Actions > General)"
           else
             echo "ℹ️ No cache changes to commit."
