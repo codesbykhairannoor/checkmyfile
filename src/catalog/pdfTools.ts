@@ -2411,6 +2411,35 @@ export const advancedPdfTools: ToolDefinition[] = [
     },
   },
   {
+    id: 'edit-pdf-metadata',
+    category: 'pdf',
+    iconName: 'SlidersHorizontal',
+    slugs: generateSlugsForId('edit-pdf-metadata', {
+      en: 'edit-pdf-metadata',
+      id: 'edit-metadata-pdf',
+      es: 'editar-metadatos-pdf',
+      fr: 'modifier-metadonnees-pdf',
+      de: 'pdf-metadaten-bearbeiten',
+      pt: 'editar-metadados-pdf',
+      it: 'modifica-metadati-pdf',
+      nl: 'pdf-metadata-bewerken',
+    }),
+    seo: {
+      en: {
+        title: 'Edit PDF Metadata - Change PDF Author & Properties Online',
+        h1: 'Edit PDF Metadata & Document Properties',
+        description: 'Change author name, document title, keywords, software creator, and creation dates directly in your browser with zero file upload.',
+        faqs: defaultFaqs('Edit PDF Metadata', 'en'),
+      },
+      id: {
+        title: 'Edit Metadata PDF - Ubah Penulis & Properti Dokumen Online',
+        h1: 'Edit Properti dan Metadata Dokumen PDF',
+        description: 'Ubah nama penulis hak cipta, judul dokumen, kata kunci, tanggal pengerjaan, dan software pembuat PDF secara privat di peramban.',
+        faqs: defaultFaqs('Edit Metadata PDF', 'id'),
+      },
+    },
+  },
+  {
     id: 'remove-pdf-metadata',
     category: 'pdf',
     iconName: 'Eraser',

@@ -17,6 +17,7 @@ import { ExtractImagesEditor } from './ExtractImagesEditor';
 import { GrayscalePdfEditor } from './GrayscalePdfEditor';
 import { ScanToPdfEditor } from './ScanToPdfEditor';
 import { RemoveMetadataEditor } from './RemoveMetadataEditor';
+import { EditMetadataEditor } from './EditMetadataEditor';
 import { ComparePdfEditor } from './ComparePdfEditor';
 import { RedactPdfEditor } from './RedactPdfEditor';
 import { ReversePdfEditor } from './ReversePdfEditor';
@@ -275,7 +276,16 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
         <ScanToPdfEditor onProcess={() => handleStartProcessing()} tUi={tUi} isProcessing={isProcessing} />
       )}
       {(tool.id === 'remove-pdf-metadata' || tool.id === 'remove-pdf-author-metadata') && (
-        <RemoveMetadataEditor onProcess={() => handleStartProcessing()} tUi={tUi} isProcessing={isProcessing} />
+        <RemoveMetadataEditor onProcess={() => handleStartProcessing()} tUi={tUi} currentLang={currentLang} isProcessing={isProcessing} />
+      )}
+      {tool.id === 'edit-pdf-metadata' && (
+        <EditMetadataEditor
+          file={files[activeFileIndex] || files[0]}
+          onApply={(metadataConfig) => handleStartProcessing({ metadataConfig })}
+          tUi={tUi}
+          currentLang={currentLang}
+          isProcessing={isProcessing}
+        />
       )}
       {(tool.id === 'compare-pdf' || tool.id === 'compare-pdf-files-visually') && (
         <ComparePdfEditor onProcess={(options) => handleStartProcessing(options)} tUi={tUi} isProcessing={isProcessing} />

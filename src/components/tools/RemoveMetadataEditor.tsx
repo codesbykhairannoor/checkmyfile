@@ -1,20 +1,23 @@
 import React from 'react';
-import { Eraser, ShieldCheck, Download, Settings2 } from 'lucide-react';
+import { Eraser, Download, Settings2, ArrowRight } from 'lucide-react';
 
 interface RemoveMetadataEditorProps {
   tUi?: Record<string, string>;
   onProcess: () => void;
   isProcessing: boolean;
+  currentLang?: string;
 }
 
 export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
   tUi = {},
-  onProcess, isProcessing
+  onProcess,
+  isProcessing,
+  currentLang = 'id',
 }) => {
   const t = (key: string, fallback: string) => tUi[key] || tUi[fallback] || fallback;
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
       <div style={{ display: 'flex', alignItems: 'flex-start', gap: 16, background: 'var(--bg-card)', padding: 24, borderRadius: 16, border: '1px solid var(--border-color)' }}>
         <div style={{ padding: 12, background: 'rgba(225, 29, 72, 0.1)', color: 'var(--brand-primary)', borderRadius: 12 }}>
           <Eraser size={24} />
@@ -42,6 +45,21 @@ export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
         )}
         <span>{isProcessing ? t("sanitizing_btn", "Sanitizing...") : t("apply_remove_metadata", "Sanitize Metadata Now")}</span>
       </button>
+
+      {/* Cross-link to Edit Metadata */}
+      <div style={{ paddingTop: 10, borderTop: '1px solid var(--border-color)', textAlign: 'center' }}>
+        <a
+          href={currentLang === 'id' ? '/id/edit-metadata-pdf' : '/edit-pdf-metadata'}
+          style={{ fontSize: '0.8rem', color: 'var(--text-muted)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 4, transition: 'color 0.2s' }}
+          onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--brand-primary)')}
+          onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--text-muted)')}
+        >
+          <span>{currentLang === 'id' ? 'Ingin mengubah nama penulis atau judul?' : 'Want to customize author or title instead?'}</span>
+          <strong style={{ color: 'var(--brand-primary)', display: 'inline-flex', alignItems: 'center', gap: 2 }}>
+            {currentLang === 'id' ? 'Edit Metadata' : 'Edit Metadata'} <ArrowRight size={12} />
+          </strong>
+        </a>
+      </div>
     </div>
   );
 };

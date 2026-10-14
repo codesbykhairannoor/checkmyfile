@@ -2,13 +2,14 @@ import React from 'react';
 import { getUiTranslations } from '../../i18n/translations';
 import { TOOLS_CATALOG, getLocalizedSeo } from '../../catalog/toolsCatalog';
 import {
-  FileText, Combine, PenTool, Scissors, RotateCw, Hash, Stamp, Trash2,
+  SlidersHorizontal, FileText, Combine, PenTool, Scissors, RotateCw, Hash, Stamp, Trash2,
   LayoutList, Lock, Unlock, Crop, Images, Contrast, Eraser, Scale,
   ScanLine, EyeOff, ArrowDownUp, Maximize, FileSpreadsheet, Presentation,
   AlignLeft, Table, ScanText, Image, Minimize2, ListOrdered
 } from 'lucide-react';
 
 const ICON_MAP: Record<string, React.ComponentType<{ size?: number; style?: React.CSSProperties; className?: string }>> = {
+  SlidersHorizontal,
   Combine, PenTool, Scissors, RotateCw, Hash, Stamp, Trash2,
   LayoutList, Lock, Unlock, Crop, Images, Contrast, Eraser, Scale,
   ScanLine, EyeOff, ArrowDownUp, Maximize, FileSpreadsheet, Presentation,

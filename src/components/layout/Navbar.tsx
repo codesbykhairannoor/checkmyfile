@@ -5,7 +5,7 @@ import {
   Combine, Scissors, Minimize2, FileSpreadsheet, LayoutList, Crop,
   ScanText, ScanLine, Eraser, Scale, EyeOff, RotateCw, Hash, Stamp,
   Presentation, AlignLeft, TableProperties, Image, Images, Trash2,
-  PenTool, Lock, Unlock, Contrast, Maximize, ArrowDownUp, Edit3,
+  PenTool, Lock, Unlock, Contrast, Maximize, ArrowDownUp, Edit3, SlidersHorizontal,
   Menu, X,
 } from 'lucide-react';
 import { getToolById, type ToolDefinition } from '../../catalog/toolsCatalog';
@@ -207,6 +207,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                       <MI icon={Contrast} label={toolNames['grayscale-pdf']?.[currentLang] || "Grayscale PDF"} onClick={() => handleToolClick('grayscale-pdf')} />
                       <MI icon={ScanLine} label={toolNames['scan-to-pdf']?.[currentLang] || "Scan to PDF"} onClick={() => handleToolClick('scan-to-pdf')} />
                       <MI icon={Eraser} label={toolNames['remove-pdf-metadata']?.[currentLang] || "Remove Metadata"} onClick={() => handleToolClick('remove-pdf-metadata')} />
+                      <MI icon={SlidersHorizontal} label={toolNames['edit-pdf-metadata']?.[currentLang] || "Edit Metadata"} onClick={() => handleToolClick('edit-pdf-metadata')} />
                       <div className="mega-menu-title" style={{ marginTop: 12 }}>{NAV.spreadsheet}</div>
                       <MI icon={TableProperties} label={toolNames['csv-to-excel']?.[currentLang] || "CSV to Excel (.xlsx)"} onClick={() => handleToolClick('csv-to-excel')} />
                       <MI icon={FileText} label={toolNames['excel-to-csv']?.[currentLang] || "Excel to CSV"} onClick={() => handleToolClick('excel-to-csv')} />
@@ -336,6 +337,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   { id: 'grayscale-pdf', label: 'Grayscale PDF', Icon: Contrast },
                   { id: 'scan-to-pdf', label: 'Scan to PDF', Icon: ScanLine },
                   { id: 'remove-pdf-metadata', label: 'Remove Metadata', Icon: Eraser },
+                  { id: 'edit-pdf-metadata', label: 'Edit Metadata', Icon: SlidersHorizontal },
                 ]},
                 { section: NAV.spreadsheet, tools: [
                   { id: 'csv-to-excel', label: 'CSV to Excel', Icon: TableProperties },

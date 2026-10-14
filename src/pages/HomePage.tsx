@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {
+import { SlidersHorizontal,
   Search, X, SearchX, ArrowRight, ShieldCheck, Check,
   Combine, PenTool, Scissors, RotateCw, Hash, Stamp, Trash2,
   LayoutList, Lock, Unlock, Crop, Images, Contrast, Eraser, Scale,

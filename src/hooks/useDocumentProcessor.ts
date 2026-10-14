@@ -124,6 +124,9 @@ export function useDocumentProcessor() {
       } else if (toolId === 'remove-pdf-metadata') {
         resultBytes = await (await import('../engines/pdf/removeMetadataPdf')).removeMetadataPdf(files[0]);
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_sanitized.pdf`;
+      } else if (toolId === 'edit-pdf-metadata') {
+        resultBytes = await (await import('../engines/pdf/editMetadataPdf')).editMetadataPdf(files[0], options.metadataConfig);
+        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_properties_updated.pdf`;
       } else if (toolId === 'compare-pdf') {
         if (!options.compareFile2) throw new Error("File pembanding tidak ditemukan.");
         const compareResult = await (await import('../engines/pdf/comparePdf')).comparePdf(files[0], options.compareFile2, (p) => setProgress(p));

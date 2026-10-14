@@ -68,6 +68,8 @@ const getAcceptTypes = (toolId: string): string => {
     case 'ubah-pdf-jadi-hitam-putih':
     case 'scan-to-pdf':
     case 'remove-pdf-metadata':
+    case 'edit-pdf-metadata':
+    case 'edit-metadata-pdf':
     case 'compare-pdf':
     case 'redact-pdf':
     case 'reverse-pdf':
