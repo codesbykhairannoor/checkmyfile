@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { normalizeImageDataUrl } from '../../utils/imageOrientation';
 import { PenTool, Download, Settings2, Image as ImageIcon, RotateCcw, ShieldCheck, Lock } from 'lucide-react';
 
 interface SignPdfEditorProps {
@@ -92,14 +93,20 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
     }
   };
 
-  const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) {
-      const reader = new FileReader();
-      reader.onload = (loadEvt) => {
-        setSignatureConfig((prev: any) => ({ ...prev, imageUrl: loadEvt.target?.result as string }));
-      };
-      reader.readAsDataURL(file);
+      try {
+        const dataUrl = await normalizeImageDataUrl(file);
+        setSignatureConfig((prev: any) => ({ ...prev, imageUrl: dataUrl }));
+      } catch (err) {
+        console.warn('Failed to normalize signature image:', err);
+        const reader = new FileReader();
+        reader.onload = (loadEvt) => {
+          setSignatureConfig((prev: any) => ({ ...prev, imageUrl: loadEvt.target?.result as string }));
+        };
+        reader.readAsDataURL(file);
+      }
     }
   };
 

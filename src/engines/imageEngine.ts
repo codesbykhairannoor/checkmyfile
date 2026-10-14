@@ -2,6 +2,7 @@ import pdfWorkerUrl from 'pdfjs-dist/build/pdf.worker.min.mjs?url';
 import { PDFDocument } from 'pdf-lib';
 import * as pdfjsLib from 'pdfjs-dist';
 import { zipSync, strToU8 } from 'fflate';
+import { normalizeImage } from '../utils/imageOrientation';
 
 // Initialize PDF.js worker using public CDNs or built-in worker
 pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorkerUrl;
@@ -21,28 +22,12 @@ export const convertImagesToPdf = async (
     
     let pdfImage;
     try {
-      const arrayBuffer = await file.arrayBuffer();
-      if (file.type.includes('png')) {
-        pdfImage = await pdfDoc.embedPng(arrayBuffer);
-      } else if (file.type.includes('jpeg') || file.type.includes('jpg')) {
-        pdfImage = await pdfDoc.embedJpg(arrayBuffer);
+      // Auto-orient image resolving EXIF tags (e.g. portrait photos taken on smartphone)
+      const normalized = await normalizeImage(file);
+      if (normalized.isPng) {
+        pdfImage = await pdfDoc.embedPng(normalized.buffer);
       } else {
-        // Fallback for webp/gif, convert to PNG via canvas
-        const imgUrl = URL.createObjectURL(file);
-        const img = await loadImage(imgUrl);
-        URL.revokeObjectURL(imgUrl);
-        
-        const canvas = document.createElement('canvas');
-        canvas.width = img.width;
-        canvas.height = img.height;
-        const ctx = canvas.getContext('2d');
-        if (ctx) {
-          ctx.drawImage(img, 0, 0);
-          const dataUrl = canvas.toDataURL('image/png');
-          pdfImage = await pdfDoc.embedPng(dataUrl);
-        } else {
-          throw new Error('Canvas 2D context not available');
-        }
+        pdfImage = await pdfDoc.embedJpg(normalized.buffer);
       }
     } catch (err) {
       console.warn(`Failed to embed image ${file.name}:`, err);
@@ -67,16 +52,6 @@ export const convertImagesToPdf = async (
   const pdfBytes = await pdfDoc.save();
   onProgress(100);
   return pdfBytes;
-};
-
-const loadImage = (url: string): Promise<HTMLImageElement> => {
-  return new Promise((resolve, reject) => {
-    const img = new Image();
-    img.crossOrigin = 'anonymous';
-    img.onload = () => resolve(img);
-    img.onerror = (e) => reject(e);
-    img.src = url;
-  });
 };
 
 export const convertPdfToImagesZip = async (

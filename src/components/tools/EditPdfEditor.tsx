@@ -1,4 +1,5 @@
 import React from 'react';
+import { normalizeImageDataUrl } from '../../utils/imageOrientation';
 import { PenTool, Type, Image as ImageIcon, Trash2, Download, RotateCw } from 'lucide-react';
 import type { PdfEditElement } from '../../engines/pdf/editPdf';
 
@@ -45,11 +46,20 @@ export const EditPdfEditor: React.FC<EditPdfEditorProps> = ({
     const input = document.createElement('input');
     input.type = 'file';
     input.accept = 'image/png, image/jpeg, image/jpg';
-    input.onchange = (e: any) => {
+    input.onchange = async (e: any) => {
       const file = e.target.files?.[0];
       if (file) {
-        const reader = new FileReader();
-        reader.onload = (ev) => {
+        let imageUrl = '';
+        try {
+          imageUrl = await normalizeImageDataUrl(file);
+        } catch {
+          const reader = new FileReader();
+          imageUrl = await new Promise((res) => {
+            reader.onload = (ev) => res((ev.target?.result as string) || '');
+            reader.readAsDataURL(file);
+          });
+        }
+        if (imageUrl) {
           const newId = `img-${Date.now()}`;
           setElements(prev => [...prev, {
             id: newId,
@@ -59,11 +69,10 @@ export const EditPdfEditor: React.FC<EditPdfEditorProps> = ({
             y: 50,
             width: 30,
             height: 30,
-            imageUrl: ev.target?.result as string
+            imageUrl
           }]);
           setSelectedId(newId);
-        };
-        reader.readAsDataURL(file);
+        }
       }
     };
     input.click();

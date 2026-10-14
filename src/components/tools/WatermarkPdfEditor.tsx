@@ -1,4 +1,5 @@
 import React from 'react';
+import { normalizeImageDataUrl } from '../../utils/imageOrientation';
 import { Type, Download, Settings2, Grid, Repeat } from 'lucide-react';
 
 export type WatermarkPosition =
@@ -109,16 +110,21 @@ export const WatermarkPdfEditor: React.FC<WatermarkPdfEditorProps> = ({
           <input
             type="file"
             accept="image/png, image/jpeg"
-            onChange={(e) => {
+            onChange={async (e) => {
               const file = e.target.files?.[0];
               if (file) {
-                const reader = new FileReader();
-                reader.onload = (ev) => {
-                  if (ev.target?.result) {
-                    setConfig({ ...config, imageUrl: ev.target.result as string });
-                  }
-                };
-                reader.readAsDataURL(file);
+                try {
+                  const dataUrl = await normalizeImageDataUrl(file);
+                  setConfig({ ...config, imageUrl: dataUrl });
+                } catch (err) {
+                  const reader = new FileReader();
+                  reader.onload = (ev) => {
+                    if (ev.target?.result) {
+                      setConfig({ ...config, imageUrl: ev.target.result as string });
+                    }
+                  };
+                  reader.readAsDataURL(file);
+                }
               }
             }}
             style={{ width: '100%', padding: '10px 14px', borderRadius: 12, border: '1px solid var(--border-color)', background: 'var(--bg-input)', color: 'var(--text-main)', fontSize: '0.85rem' }}
