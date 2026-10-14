@@ -1,0 +1,87 @@
+{
+  "title": "PDF-metaadatok online szerkesztése ingyenes – módosíthatja a szerzőt, a címet és a tulajdonságokat",
+  "h1": "A PDF-dokumentum tulajdonságainak és metaadatainak helyi szerkesztése",
+  "description": "Módosítsa a szerzők nevét, a dokumentumok címét, a szerzői jogi címkéket, a szoftverkészítőket és az időbélyegeket a PDF-fájlokban a böngészőjében, anélkül, hogy fájlokat kellene feltöltenie.",
+  "sections": [
+    {
+      "type": "edit_hero_features",
+      "title": "Vegye át a teljes irányítást PDF-metaadatai felett",
+      "content": "Függetlenül attól, hogy portfólióját saját szerzői nevével kell ellátnia, szabványosítania kell a hivatalos dokumentumok címeit az archiváláshoz, vagy frissítenie kell a létrehozási időbélyegeket, böngészőalapú metaadat-szerkesztőnk teljes irányítást biztosít anélkül, hogy fájlokat küldene külső szerverekre.",
+      "badgeText": "Dokumentum tulajdonságai szerkesztő"
+    },
+    {
+      "type": "organize_how_to_steps",
+      "title": "A PDF-dokumentum tulajdonságainak szerkesztése",
+      "badgeText": "Egyszerű 3 lépéses folyamat",
+      "steps": [
+        {
+          "title": "Válassza ki vagy dobja el a PDF-t",
+          "description": "Töltse fel PDF-fájlját, hogy azonnal megtekinthesse aktuális metaadat-tulajdonságait."
+        },
+        {
+          "title": "Személyre szabhatja a részleteket vagy használja az előre beállított értékeket",
+          "description": "Szerkessze a címet, a szerzőt, a témát, a kulcsszavakat, a szoftverkészítőt, vagy kattintson egy koppintással az előre beállított értékekre, mint például az MS Word vagy az Adobe Acrobat."
+        },
+        {
+          "title": "Frissített PDF mentése és letöltése",
+          "description": "Kattintson a Mentés gombra egy tiszta, hivatalosan frissített PDF létrehozásához ezredmásodperc alatt."
+        }
+      ]
+    },
+    {
+      "type": "metadata_geo_targeting",
+      "title": "100%-os privát ügyféloldali módosítás",
+      "content": "Szerződései, kéziratai és bizalmas dokumentumai soha nem érintik a felhőkiszolgálókat. Minden metaadat-módosítás közvetlenül a helyi eszköz memóriájában kerül kiszámításra a WebAssembly technológia segítségével.",
+      "subTitle": "A titoktartás garantált",
+      "subContent": "Nincsenek cookie-k, nincs adatmegőrzés, 100%-os offline biztonság.",
+      "badgeText": "A titoktartás garantált"
+    },
+    {
+      "type": "protect_privacy_security",
+      "title": "Tisztítsa meg a mesterséges intelligencia eredetét és a C2PA követést",
+      "content": "Automatikusan súrolja a rejtett XMP XML nyomkövetési adatfolyamokat, az automatizált AI-generátor ujjlenyomatait és a privát alkalmazások címkéit, miközben megőrzi tiszta, testreszabott dokumentumtulajdonságait."
+    },
+    {
+      "type": "crop_performance",
+      "title": "Villámgyors másodperc alatti feldolgozás",
+      "content": "Frissítse a dokumentum tulajdonságait, és sorosítsa újra a PDF-katalógust 200 ezredmásodperc alatt, teljesen offline módban a böngészőben.",
+      "badgeText": "Sub-Second Engine"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Miért érdemes szerkeszteni a PDF metaadatokat?",
+      "a": "A PDF metaadatok szerkesztése biztosítja, hogy az Ön neve és szerzői joga megfelelően szerepeljen a szerzőként, szakmai címeket ad a dokumentumoknak az ügyfeleknek vagy a tudományos beadványoknak, és eltávolítja a nem kívánt szoftvernyomokat."
+    },
+    {
+      "q": "Ez az eszköz feltölti a dokumentumaimat bármely szerverre?",
+      "a": "Nem. Minden 100%-ban helyileg fut a webböngészőben, kliensoldali JavaScript használatával. Bizalmas fájljai soha nem hagyják el a készüléket."
+    },
+    {
+      "q": "Eltávolíthatom az AI-generátor metaadatait ezzel az eszközzel?",
+      "a": "Igen. A szerkesztő tartalmaz egy automatikus lehetőséget a rejtett C2PA-jegyzékek és az automatizált AI-eszközök által generált XMP származási adatfolyamok törlésére."
+    },
+    {
+      "q": "Milyen előre beállított szoftverek állnak rendelkezésre?",
+      "a": "Egy kattintással alkalmazhat hivatalos szoftverprofilokat, beleértve a Microsoft Word 365-öt, az Adobe Acrobat Reader DC-t, az Apple Pages-t és a Google Dokumentumokat."
+    },
+    {
+      "q": "Ez a PDF metaadat-szerkesztő ingyenes?",
+      "a": "Igen, 100%-ban ingyenes, korlátlan használattal, nulla vízjellel és regisztráció nélkül."
+    }
+  ],
+  "badges": [
+    "100% ügyféloldali",
+    "AI eredettisztítás",
+    "Nulla feltöltés szükséges"
+  ],
+  "stats": [
+    "0ms",
+    "Local",
+    "100%",
+    "Private"
+  ],
+  "buttonText": "Frissítse a PDF metaadatokat",
+  "supportCenter": "Adatvédelem és Tulajdonságok Súgó",
+  "faqTitle": "Gyakran Ismételt Kérdések a PDF-metaadatokkal kapcsolatban"
+}

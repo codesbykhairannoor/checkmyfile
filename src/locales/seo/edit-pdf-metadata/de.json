@@ -1,0 +1,87 @@
+{
+  "title": "PDF-Metadaten kostenlos online bearbeiten – Autor, Titel und Eigenschaften ändern",
+  "h1": "Bearbeiten Sie die Eigenschaften und Metadaten von PDF-Dokumenten lokal",
+  "description": "Ändern Sie Autorennamen, Dokumenttitel, Copyright-Tags, Software-Ersteller und Zeitstempel in PDF-Dateien vollständig in Ihrem Browser, ohne dass eine Datei hochgeladen werden muss.",
+  "sections": [
+    {
+      "type": "edit_hero_features",
+      "title": "Übernehmen Sie die volle Kontrolle über Ihre PDF-Metadaten",
+      "content": "Ganz gleich, ob Sie Ihr Portfolio mit dem Namen Ihres eigenen Autors versehen, offizielle Dokumenttitel für die Archivierung standardisieren oder Zeitstempel für die Erstellung aktualisieren müssen: Mit unserem browserbasierten Metadaten-Editor haben Sie die vollständige Kontrolle, ohne Dateien an externe Server senden zu müssen.",
+      "badgeText": "Dokumenteigenschaften-Editor"
+    },
+    {
+      "type": "organize_how_to_steps",
+      "title": "So bearbeiten Sie die Eigenschaften von PDF-Dokumenten",
+      "badgeText": "Einfacher 3-Schritte-Prozess",
+      "steps": [
+        {
+          "title": "PDF auswählen oder ablegen",
+          "description": "Laden Sie Ihr PDF hoch, um die aktuellen Metadateneigenschaften sofort zu überprüfen."
+        },
+        {
+          "title": "Passen Sie Details an oder verwenden Sie Voreinstellungen",
+          "description": "Bearbeiten Sie Titel, Autor, Betreff, Schlüsselwörter, Software-Ersteller oder klicken Sie auf 1-Tap-Voreinstellungen wie MS Word oder Adobe Acrobat."
+        },
+        {
+          "title": "Aktualisiertes PDF speichern und herunterladen",
+          "description": "Klicken Sie auf „Speichern“, um in Millisekunden ein sauberes, offiziell aktualisiertes PDF zu generieren."
+        }
+      ]
+    },
+    {
+      "type": "metadata_geo_targeting",
+      "title": "100 % private, clientseitige Modifikation",
+      "content": "Ihre Verträge, Manuskripte und sensiblen Dokumente berühren niemals Cloud-Server. Alle Metadatenänderungen werden mithilfe der WebAssembly-Technologie direkt in Ihrem lokalen Gerätespeicher berechnet.",
+      "subTitle": "Vertraulichkeit garantiert",
+      "subContent": "Keine Cookies, keine Datenspeicherung, 100 % Offline-Sicherheit.",
+      "badgeText": "Vertraulichkeit garantiert"
+    },
+    {
+      "type": "protect_privacy_security",
+      "title": "Bereinigen Sie die KI-Provenienz und das C2PA-Tracking",
+      "content": "Bereinigen Sie automatisch versteckte XMP-XML-Tracking-Streams, automatisierte AI-Generator-Fingerabdrücke und private Anwendungs-Tags und behalten Sie dabei Ihre sauberen, benutzerdefinierten Dokumenteigenschaften bei."
+    },
+    {
+      "type": "crop_performance",
+      "title": "Blitzschnelle Verarbeitung in Sekundenbruchteilen",
+      "content": "Aktualisieren Sie Dokumenteigenschaften und serialisieren Sie den PDF-Katalog in weniger als 200 Millisekunden komplett offline in Ihrem Browser.",
+      "badgeText": "Sub-Sekunden-Motor"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Warum sollte ich PDF-Metadaten bearbeiten?",
+      "a": "Durch die Bearbeitung von PDF-Metadaten wird sichergestellt, dass Ihr Name und Ihr Urheberrecht ordnungsgemäß als Autor genannt werden, Dokumente mit professionellen Titeln für Kunden oder akademische Einreichungen versehen werden und unerwünschte Softwarespuren entfernt werden."
+    },
+    {
+      "q": "Lädt dieses Tool meine Dokumente auf einen beliebigen Server hoch?",
+      "a": "Nein. Alles läuft zu 100 % lokal in Ihrem Webbrowser mit clientseitigem JavaScript. Ihre vertraulichen Dateien verlassen niemals Ihr Gerät."
+    },
+    {
+      "q": "Kann ich mit diesem Tool AI-Generator-Metadaten entfernen?",
+      "a": "Ja. Der Editor enthält eine automatische Option zum Löschen versteckter C2PA-Manifeste und XMP-Herkunftsströme, die von automatisierten KI-Tools generiert wurden."
+    },
+    {
+      "q": "Welche Software-Voreinstellungen sind verfügbar?",
+      "a": "Sie können mit einem Klick offizielle Softwareprofile anwenden, darunter Microsoft Word 365, Adobe Acrobat Reader DC, Apple Pages und Google Docs."
+    },
+    {
+      "q": "Ist dieser PDF-Metadaten-Editor kostenlos?",
+      "a": "Ja, es ist 100 % kostenlos mit unbegrenzter Nutzung, ohne Wasserzeichen und ohne Registrierung."
+    }
+  ],
+  "badges": [
+    "100 % kundenseitig",
+    "KI-Provenienzbereinigung",
+    "Kein Upload erforderlich"
+  ],
+  "stats": [
+    "0ms",
+    "Local",
+    "100%",
+    "Private"
+  ],
+  "buttonText": "PDF-Metadaten aktualisieren",
+  "supportCenter": "Hilfe zu Datenschutz und Eigenschaften",
+  "faqTitle": "Häufig gestellte Fragen zu PDF-Metadaten"
+}

@@ -1,0 +1,87 @@
+{
+  "title": "Rediger PDF-metadata online gratis — Skift forfatter, titel og egenskaber",
+  "h1": "Rediger PDF-dokumentegenskaber og metadata lokalt",
+  "description": "Skift forfatternavne, dokumenttitler, copyright-tags, softwareskabere og tidsstempler i PDF-filer helt i din browser uden filupload.",
+  "sections": [
+    {
+      "type": "edit_hero_features",
+      "title": "Tag fuld kontrol over dine PDF-metadata",
+      "content": "Uanset om du skal brande din portefølje med dit eget forfatternavn, standardisere officielle dokumenttitler til arkivering eller opdatere oprettelsestidsstempler, giver vores browserbaserede metadataeditor dig fuld kontrol uden at sende filer til eksterne servere.",
+      "badgeText": "Editor for dokumentegenskaber"
+    },
+    {
+      "type": "organize_how_to_steps",
+      "title": "Sådan redigeres PDF-dokumentegenskaber",
+      "badgeText": "Nem 3-trins proces",
+      "steps": [
+        {
+          "title": "Vælg eller slip PDF",
+          "description": "Upload din PDF for at inspicere dens aktuelle metadataegenskaber med det samme."
+        },
+        {
+          "title": "Tilpas detaljer eller brug forudindstillinger",
+          "description": "Rediger titlen, forfatteren, emnet, nøgleordene, softwareskaberen, eller klik med 1 tryk på forudindstillinger som MS Word eller Adobe Acrobat."
+        },
+        {
+          "title": "Gem og download opdateret PDF",
+          "description": "Klik på Gem for at generere en ren, officielt opdateret PDF på millisekunder."
+        }
+      ]
+    },
+    {
+      "type": "metadata_geo_targeting",
+      "title": "100 % modifikation på privat klientside",
+      "content": "Dine kontrakter, manuskripter og følsomme dokumenter rører aldrig nogen cloud-servere. Alle metadataændringer beregnes direkte i din lokale enhedshukommelse ved hjælp af WebAssembly-teknologi.",
+      "subTitle": "Fortrolighed garanteret",
+      "subContent": "Ingen cookies, ingen dataopbevaring, 100 % offline sikkerhed.",
+      "badgeText": "Fortrolighed garanteret"
+    },
+    {
+      "type": "protect_privacy_security",
+      "title": "Rens AI Herkomst og C2PA-sporing",
+      "content": "Skrub automatisk skjulte XMP XML-sporingsstrømme, automatiserede AI-generator-fingeraftryk og private applikationsmærker, mens du bevarer dine rene, tilpassede dokumentegenskaber."
+    },
+    {
+      "type": "crop_performance",
+      "title": "Lynhurtig sub-sekund behandling",
+      "content": "Opdater dokumentegenskaber og gen-serialiser PDF-kataloget på under 200 millisekunder, helt offline i din browser.",
+      "badgeText": "Sub-Second Engine"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Hvorfor skal jeg redigere PDF-metadata?",
+      "a": "Redigering af PDF-metadata sikrer, at dit navn og ophavsret er korrekt krediteret som forfatter, giver dokumenter professionelle titler til klienter eller akademiske indsendelser og fjerner uønskede softwarespor."
+    },
+    {
+      "q": "Uploader dette værktøj mine dokumenter til en hvilken som helst server?",
+      "a": "Nej. Alt kører 100 % lokalt i din webbrowser ved hjælp af JavaScript på klientsiden. Dine fortrolige filer forlader aldrig din enhed."
+    },
+    {
+      "q": "Kan jeg fjerne AI-generatorens metadata med dette værktøj?",
+      "a": "Ja. Redaktøren inkluderer en automatisk mulighed for at rense skjulte C2PA-manifester og XMP-herkomststrømme genereret af automatiserede AI-værktøjer."
+    },
+    {
+      "q": "Hvilke softwareforudindstillinger er tilgængelige?",
+      "a": "Du kan anvende 1-kliks officielle softwareprofiler, herunder Microsoft Word 365, Adobe Acrobat Reader DC, Apple Pages og Google Docs."
+    },
+    {
+      "q": "Er denne PDF-metadataeditor gratis?",
+      "a": "Ja, det er 100 % gratis med ubegrænset brug, nul vandmærker og ingen registrering påkrævet."
+    }
+  ],
+  "badges": [
+    "100 % klient-side",
+    "AI Herkomstrensning",
+    "Nul upload påkrævet"
+  ],
+  "stats": [
+    "0ms",
+    "Local",
+    "100%",
+    "Private"
+  ],
+  "buttonText": "Opdater PDF-metadata",
+  "supportCenter": "Hjælp til beskyttelse af personlige oplysninger og egenskaber",
+  "faqTitle": "Ofte stillede spørgsmål om PDF-metadata"
+}

@@ -1,0 +1,87 @@
+{
+  "title": "PDF Meta Verilerini Çevrimiçi Ücretsiz Düzenleyin — Yazarı, Başlığı ve Özellikleri Değiştirin",
+  "h1": "PDF Belgesi Özelliklerini ve Meta Verilerini Yerel Olarak Düzenleme",
+  "description": "Sıfır dosya yüklemeyle PDF dosyalarındaki yazar adlarını, belge başlıklarını, telif hakkı etiketlerini, yazılım oluşturucularını ve zaman damgalarını tamamen tarayıcınızda değiştirin.",
+  "sections": [
+    {
+      "type": "edit_hero_features",
+      "title": "PDF Meta Verilerinizin Tam Kontrolünü Elinize Alın",
+      "content": "Portföyünüzü kendi yazar adınızla markalamanız, arşivleme için resmi belge başlıklarını standartlaştırmanız veya oluşturma zaman damgalarını güncellemeniz gerekiyorsa, tarayıcı tabanlı meta veri düzenleyicimiz, dosyaları harici sunuculara göndermeden size tam kontrol sağlar.",
+      "badgeText": "Belge Özellikleri Düzenleyicisi"
+    },
+    {
+      "type": "organize_how_to_steps",
+      "title": "PDF Belgesi Özellikleri Nasıl Düzenlenir",
+      "badgeText": "Kolay 3 Adımlı Süreç",
+      "steps": [
+        {
+          "title": "PDF'yi Seçin veya Bırakın",
+          "description": "Mevcut meta veri özelliklerini anında incelemek için PDF'nizi yükleyin."
+        },
+        {
+          "title": "Ayrıntıları Özelleştirin veya Ön Ayarları Kullanın",
+          "description": "Başlığı, yazarı, konuyu, anahtar kelimeleri, yazılım oluşturucuyu düzenleyin veya MS Word ya da Adobe Acrobat gibi tek dokunuşla hazır ayarları tıklayın."
+        },
+        {
+          "title": "Güncellenmiş PDF'yi Kaydet ve İndir",
+          "description": "Milisaniyeler içinde temiz, resmi olarak güncellenmiş bir PDF oluşturmak için Kaydet'e tıklayın."
+        }
+      ]
+    },
+    {
+      "type": "metadata_geo_targeting",
+      "title": "%100 Özel İstemci Tarafında Modifikasyon",
+      "content": "Sözleşmeleriniz, taslaklarınız ve hassas belgeleriniz hiçbir zaman hiçbir bulut sunucusuna dokunmaz. Tüm meta veri değişiklikleri, WebAssembly teknolojisi kullanılarak doğrudan yerel cihazınızın belleğinde hesaplanır.",
+      "subTitle": "Gizlilik Garantili",
+      "subContent": "Çerez yok, veri saklama yok, %100 çevrimdışı güvenlik.",
+      "badgeText": "Gizlilik Garantili"
+    },
+    {
+      "type": "protect_privacy_security",
+      "title": "Yapay Zeka Kaynaklarını ve C2PA Takibini Temizleme",
+      "content": "Temiz, özelleştirilmiş belge özelliklerinizi korurken gizli XMP XML izleme akışlarını, otomatik yapay zeka oluşturucu parmak izlerini ve özel uygulama etiketlerini otomatik olarak temizleyin."
+    },
+    {
+      "type": "crop_performance",
+      "title": "Işık Hızında Saniyenin Altında İşleme",
+      "content": "Tarayıcınızda tamamen çevrimdışı olarak belge özelliklerini güncelleyin ve PDF kataloğunu 200 milisaniyeden kısa bir sürede yeniden seri hale getirin.",
+      "badgeText": "Alt İkinci Motor"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "PDF meta verilerini neden düzenlemeliyim?",
+      "a": "PDF meta verilerini düzenlemek, adınızın ve telif hakkınızın yazar olarak uygun şekilde belirtilmesini sağlar, belgelere müşteriler veya akademik gönderimler için profesyonel unvanlar verir ve istenmeyen yazılım izlerini kaldırır."
+    },
+    {
+      "q": "Bu araç belgelerimi herhangi bir sunucuya yüklüyor mu?",
+      "a": "Hayır. İstemci tarafı JavaScript kullanılarak web tarayıcınızda her şey %100 yerel olarak çalışır. Gizli dosyalarınız asla cihazınızdan ayrılmaz."
+    },
+    {
+      "q": "Bu araçla AI oluşturucu meta verilerini kaldırabilir miyim?",
+      "a": "Evet. Düzenleyici, otomatik yapay zeka araçları tarafından oluşturulan gizli C2PA bildirimlerini ve XMP kaynak akışlarını temizlemek için otomatik bir seçenek içerir."
+    },
+    {
+      "q": "Hangi yazılım ön ayarları mevcut?",
+      "a": "Microsoft Word 365, Adobe Acrobat Reader DC, Apple Pages ve Google Dokümanlar dahil olmak üzere resmi yazılım profillerini tek tıklamayla uygulayabilirsiniz."
+    },
+    {
+      "q": "Bu PDF meta veri düzenleyicisi ücretsiz mi?",
+      "a": "Evet, sınırsız kullanım, sıfır filigran ile %100 ücretsizdir ve kayıt gerektirmez."
+    }
+  ],
+  "badges": [
+    "%100 İstemci Tarafı",
+    "Yapay Zeka Kaynak Tasfiyesi",
+    "Sıfır Yükleme Gerekli"
+  ],
+  "stats": [
+    "0ms",
+    "Local",
+    "100%",
+    "Private"
+  ],
+  "buttonText": "PDF Meta Verilerini Güncelle",
+  "supportCenter": "Gizlilik ve Özellikler Yardımı",
+  "faqTitle": "PDF Meta Verileri Hakkında Sıkça Sorulan Sorular"
+}

@@ -1,0 +1,87 @@
+{
+  "title": "Modifica metadati PDF online gratuitamente: modifica autore, titolo e proprietà",
+  "h1": "Modifica le proprietà e i metadati del documento PDF localmente",
+  "description": "Modifica i nomi degli autori, i titoli dei documenti, i tag di copyright, i creatori del software e i timestamp nei file PDF interamente nel tuo browser senza caricare file.",
+  "sections": [
+    {
+      "type": "edit_hero_features",
+      "title": "Assumi il pieno controllo dei metadati del tuo PDF",
+      "content": "Che tu abbia bisogno di marchiare il tuo portfolio con il nome del tuo autore, standardizzare i titoli dei documenti ufficiali per l'archiviazione o aggiornare i timestamp di creazione, il nostro editor di metadati basato su browser ti offre il controllo completo senza inviare file a server esterni.",
+      "badgeText": "Editor delle proprietà del documento"
+    },
+    {
+      "type": "organize_how_to_steps",
+      "title": "Come modificare le proprietà del documento PDF",
+      "badgeText": "Processo semplice in 3 passaggi",
+      "steps": [
+        {
+          "title": "Seleziona o rilascia PDF",
+          "description": "Carica il tuo PDF per controllare immediatamente le sue attuali proprietà dei metadati."
+        },
+        {
+          "title": "Personalizza i dettagli o usa le preimpostazioni",
+          "description": "Modifica il titolo, l'autore, l'oggetto, le parole chiave, l'autore del software oppure fai clic sulle preimpostazioni con un tocco come MS Word o Adobe Acrobat."
+        },
+        {
+          "title": "Salva e scarica il PDF aggiornato",
+          "description": "Fai clic su Salva per generare un PDF pulito e ufficialmente aggiornato in millisecondi."
+        }
+      ]
+    },
+    {
+      "type": "metadata_geo_targeting",
+      "title": "Modifica privata lato client al 100%.",
+      "content": "I tuoi contratti, manoscritti e documenti sensibili non toccano mai alcun server cloud. Tutte le modifiche ai metadati vengono calcolate direttamente nella memoria del dispositivo locale utilizzando la tecnologia WebAssembly.",
+      "subTitle": "Riservatezza garantita",
+      "subContent": "Nessun cookie, nessuna conservazione dei dati, sicurezza offline al 100%.",
+      "badgeText": "Riservatezza garantita"
+    },
+    {
+      "type": "protect_privacy_security",
+      "title": "Elimina provenienza AI e monitoraggio C2PA",
+      "content": "Elimina automaticamente i flussi di tracciamento XMP XML nascosti, le impronte digitali del generatore AI automatizzato e i tag delle applicazioni private mantenendo le proprietà dei documenti pulite e personalizzate."
+    },
+    {
+      "type": "crop_performance",
+      "title": "Elaborazione velocissima in meno di un secondo",
+      "content": "Aggiorna le proprietà del documento e riserializza il catalogo PDF in meno di 200 millisecondi, completamente offline nel tuo browser.",
+      "badgeText": "Sotto-secondo motore"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Perché dovrei modificare i metadati del PDF?",
+      "a": "La modifica dei metadati PDF garantisce che il tuo nome e il tuo copyright siano adeguatamente accreditati come autore, assegna ai documenti titoli professionali per clienti o contributi accademici e rimuove le tracce di software indesiderate."
+    },
+    {
+      "q": "Questo strumento carica i miei documenti su qualsiasi server?",
+      "a": "No. Tutto viene eseguito al 100% localmente nel tuo browser web utilizzando JavaScript lato client. I tuoi file riservati non lasciano mai il tuo dispositivo."
+    },
+    {
+      "q": "Posso rimuovere i metadati del generatore AI con questo strumento?",
+      "a": "SÌ. L'editor include un'opzione automatica per eliminare i manifest C2PA nascosti e i flussi di provenienza XMP generati da strumenti di intelligenza artificiale automatizzati."
+    },
+    {
+      "q": "Quali preimpostazioni software sono disponibili?",
+      "a": "Puoi applicare profili software ufficiali con 1 clic tra cui Microsoft Word 365, Adobe Acrobat Reader DC, Apple Pages e Google Docs."
+    },
+    {
+      "q": "Questo editor di metadati PDF è gratuito?",
+      "a": "Sì, è gratuito al 100% con utilizzo illimitato, zero filigrane e nessuna registrazione richiesta."
+    }
+  ],
+  "badges": [
+    "100% lato client",
+    "Eliminazione della provenienza dell'IA",
+    "Nessun caricamento richiesto"
+  ],
+  "stats": [
+    "0ms",
+    "Local",
+    "100%",
+    "Private"
+  ],
+  "buttonText": "Aggiorna metadati PDF",
+  "supportCenter": "Guida sulla privacy e sulle proprietà",
+  "faqTitle": "Domande frequenti sui metadati PDF"
+}
