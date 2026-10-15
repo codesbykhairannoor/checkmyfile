@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { SlidersHorizontal, Download, Settings2, Sparkles, Calendar, ShieldCheck, ArrowRight, RefreshCw } from 'lucide-react';
+import { SlidersHorizontal, Download, Settings2, Sparkles, Calendar, ShieldCheck, ArrowRight, RefreshCw, RotateCcw } from 'lucide-react';
 import type { ExistingPdfMetadata } from '../../engines/pdf/editMetadataPdf';
 
 interface EditMetadataEditorProps {
@@ -29,6 +29,8 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
   const [modDate, setModDate] = useState('');
   const [purgeAiManifests, setPurgeAiManifests] = useState(true);
   const [isLoadingMeta, setIsLoadingMeta] = useState(false);
+  const [originalMeta, setOriginalMeta] = useState<ExistingPdfMetadata | null>(null);
+  const [showOriginalMeta, setShowOriginalMeta] = useState(false);
 
   // Read existing metadata when file changes
   useEffect(() => {
@@ -38,8 +40,9 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
       setIsLoadingMeta(true);
       try {
         const { readPdfMetadata } = await import('../../engines/pdf/editMetadataPdf');
-        const meta = await readPdfMetadata(file);
+        const meta = await readPdfMetadata(file, currentLang);
         if (!isCancelled) {
+          setOriginalMeta(meta);
           setTitle(meta.title);
           setAuthor(meta.author);
           setSubject(meta.subject);
@@ -59,7 +62,19 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
     return () => {
       isCancelled = true;
     };
-  }, [file]);
+  }, [file, currentLang]);
+
+  const resetToOriginal = () => {
+    if (!originalMeta) return;
+    setTitle(originalMeta.title);
+    setAuthor(originalMeta.author);
+    setSubject(originalMeta.subject);
+    setKeywords(originalMeta.keywords);
+    setCreator(originalMeta.creator);
+    setProducer(originalMeta.producer);
+    setCreationDate(originalMeta.creationDate);
+    setModDate(originalMeta.modDate || getNowDatetimeLocal());
+  };
 
   const getNowDatetimeLocal = (): string => {
     const now = new Date();
@@ -137,6 +152,118 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
         <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: '0.8rem', color: 'var(--text-muted)' }}>
           <div className="spinner" style={{ width: 14, height: 14, border: '2px solid var(--border-color)', borderTopColor: 'var(--brand-primary)', borderRadius: '50%', animation: 'spin 1s linear infinite' }} />
           <span>{currentLang === 'id' ? 'Membaca metadata dokumen...' : 'Reading document properties...'}</span>
+        </div>
+      )}
+
+      {/* Original Metadata Inspector Card */}
+      {originalMeta && (
+        <div style={{ background: 'var(--bg-input)', border: '1px solid var(--border-color)', borderRadius: 12, overflow: 'hidden' }}>
+          <button
+            type="button"
+            onClick={() => setShowOriginalMeta(prev => !prev)}
+            style={{
+              width: '100%',
+              padding: '10px 14px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              background: 'transparent',
+              border: 'none',
+              color: 'var(--text-main)',
+              fontSize: '0.82rem',
+              fontWeight: 700,
+              cursor: 'pointer',
+            }}
+          >
+            <span style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+              <span>🔍</span>
+              <span>{currentLang === 'id' ? 'Metadata Asli Dokumen' : 'Original Document Metadata'}</span>
+              <span
+                style={{
+                  fontSize: '0.72rem',
+                  padding: '2px 8px',
+                  borderRadius: 12,
+                  background: originalMeta.foundCount > 0 ? 'rgba(245, 158, 11, 0.15)' : 'rgba(16, 185, 129, 0.15)',
+                  color: originalMeta.foundCount > 0 ? '#f59e0b' : '#10b981',
+                  fontWeight: 700,
+                }}
+              >
+                {originalMeta.foundCount} {currentLang === 'id' ? 'Terdeteksi' : 'Found'}
+              </span>
+            </span>
+            <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+              {showOriginalMeta ? (currentLang === 'id' ? 'Tutup ▲' : 'Lihat Detail ▼') : (currentLang === 'id' ? 'Lihat Detail ▼' : 'View Details ▼')}
+            </span>
+          </button>
+
+          {showOriginalMeta && (
+            <div style={{ padding: '12px 14px', borderTop: '1px solid var(--border-color)', background: 'var(--bg-card)', fontSize: '0.78rem', display: 'flex', flexDirection: 'column', gap: 8 }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 2 }}>
+                <span style={{ fontWeight: 700, color: 'var(--text-main)' }}>
+                  {currentLang === 'id' ? 'Nilai Asli Sebelum Diedit:' : 'Original Values Before Edit:'}
+                </span>
+                <button
+                  type="button"
+                  onClick={resetToOriginal}
+                  style={{
+                    background: 'transparent',
+                    border: '1px solid var(--border-color)',
+                    borderRadius: 6,
+                    padding: '3px 8px',
+                    fontSize: '0.72rem',
+                    color: 'var(--brand-primary)',
+                    cursor: 'pointer',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: 4,
+                    fontWeight: 600,
+                  }}
+                >
+                  <RotateCcw size={11} />
+                  <span>{currentLang === 'id' ? 'Reset ke Asli' : 'Reset Inputs'}</span>
+                </button>
+              </div>
+
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 5, background: 'var(--bg-input)', padding: 10, borderRadius: 8 }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', gap: 8 }}>
+                  <span style={{ color: 'var(--text-muted)' }}>{currentLang === 'id' ? 'Penulis:' : 'Author:'}</span>
+                  <span style={{ fontWeight: 600, color: originalMeta.author ? 'var(--text-main)' : 'var(--text-muted)', textAlign: 'right' }}>
+                    {originalMeta.author || '—'}
+                  </span>
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', gap: 8 }}>
+                  <span style={{ color: 'var(--text-muted)' }}>{currentLang === 'id' ? 'Judul:' : 'Title:'}</span>
+                  <span style={{ fontWeight: 600, color: originalMeta.title ? 'var(--text-main)' : 'var(--text-muted)', textAlign: 'right' }}>
+                    {originalMeta.title || '—'}
+                  </span>
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', gap: 8 }}>
+                  <span style={{ color: 'var(--text-muted)' }}>{currentLang === 'id' ? 'Aplikasi:' : 'Creator:'}</span>
+                  <span style={{ fontWeight: 600, color: originalMeta.creator ? 'var(--text-main)' : 'var(--text-muted)', textAlign: 'right' }}>
+                    {originalMeta.creator || '—'}
+                  </span>
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', gap: 8 }}>
+                  <span style={{ color: 'var(--text-muted)' }}>{currentLang === 'id' ? 'Mesin PDF:' : 'Producer:'}</span>
+                  <span style={{ fontWeight: 600, color: originalMeta.producer ? 'var(--text-main)' : 'var(--text-muted)', textAlign: 'right' }}>
+                    {originalMeta.producer || '—'}
+                  </span>
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', gap: 8 }}>
+                  <span style={{ color: 'var(--text-muted)' }}>{currentLang === 'id' ? 'Dibuat Pada:' : 'Created At:'}</span>
+                  <span style={{ fontWeight: 600, color: originalMeta.creationDateHuman ? 'var(--text-main)' : 'var(--text-muted)', textAlign: 'right' }}>
+                    {originalMeta.creationDateHuman || '—'}
+                  </span>
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', gap: 8 }}>
+                  <span style={{ color: 'var(--text-muted)' }}>{currentLang === 'id' ? 'Jejak AI/XMP:' : 'AI/XMP Stream:'}</span>
+                  <span style={{ fontWeight: 600, color: originalMeta.hasXmp ? '#f59e0b' : '#10b981' }}>
+                    {originalMeta.hasXmp ? (currentLang === 'id' ? '⚠️ Ada Paket XMP' : '⚠️ Has XMP') : (currentLang === 'id' ? '✅ Bersih' : '✅ Clean')}
+                  </span>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       )}
 

@@ -21,12 +21,17 @@ export interface ExistingPdfMetadata {
   producer: string;
   creationDate: string;
   modDate: string;
+  creationDateHuman: string;
+  modDateHuman: string;
+  hasXmp: boolean;
+  hasPieceInfo: boolean;
+  foundCount: number;
 }
 
 /**
  * Reads existing metadata from a PDF file client-side without altering contents.
  */
-export const readPdfMetadata = async (file: File): Promise<ExistingPdfMetadata> => {
+export const readPdfMetadata = async (file: File, locale: string = 'id'): Promise<ExistingPdfMetadata> => {
   const arrayBuffer = await file.arrayBuffer();
   const pdfDoc = await PDFDocument.load(arrayBuffer, {
     ignoreEncryption: true,
@@ -47,15 +52,57 @@ export const readPdfMetadata = async (file: File): Promise<ExistingPdfMetadata> 
     }
   };
 
+  const formatHumanDate = (d?: Date): string => {
+    if (!d || isNaN(d.getTime())) return '';
+    if (d.getTime() === 0) return locale === 'id' ? '1 Jan 1970 (Epoch 0 / Direset)' : 'Jan 1, 1970 (Epoch 0 / Reset)';
+    try {
+      const loc = locale === 'id' ? 'id-ID' : (locale === 'en' ? 'en-US' : locale);
+      return d.toLocaleString(loc, {
+        dateStyle: 'medium',
+        timeStyle: 'medium'
+      });
+    } catch {
+      return d.toISOString();
+    }
+  };
+
+  const hasXmp = !!pdfDoc.catalog.get(PDFName.of('Metadata'));
+  const hasPieceInfo = !!pdfDoc.catalog.get(PDFName.of('PieceInfo'));
+
+  const title = pdfDoc.getTitle() || '';
+  const author = pdfDoc.getAuthor() || '';
+  const subject = pdfDoc.getSubject() || '';
+  const keywords = (pdfDoc.getKeywords() || '').trim();
+  const creator = pdfDoc.getCreator() || '';
+  const producer = pdfDoc.getProducer() || '';
+
+  const foundCount = [
+    title,
+    author,
+    subject,
+    keywords,
+    creator,
+    producer,
+    creationDateObj,
+    modDateObj,
+    hasXmp ? 'xmp' : '',
+    hasPieceInfo ? 'pieceInfo' : '',
+  ].filter(Boolean).length;
+
   return {
-    title: pdfDoc.getTitle() || '',
-    author: pdfDoc.getAuthor() || '',
-    subject: pdfDoc.getSubject() || '',
-    keywords: (pdfDoc.getKeywords() || '').trim(),
-    creator: pdfDoc.getCreator() || '',
-    producer: pdfDoc.getProducer() || '',
+    title,
+    author,
+    subject,
+    keywords,
+    creator,
+    producer,
     creationDate: formatDateForInput(creationDateObj),
     modDate: formatDateForInput(modDateObj),
+    creationDateHuman: formatHumanDate(creationDateObj),
+    modDateHuman: formatHumanDate(modDateObj),
+    hasXmp,
+    hasPieceInfo,
+    foundCount,
   };
 };
 

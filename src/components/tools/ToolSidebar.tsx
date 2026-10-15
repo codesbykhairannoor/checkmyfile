@@ -276,7 +276,13 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
         <ScanToPdfEditor onProcess={() => handleStartProcessing()} tUi={tUi} isProcessing={isProcessing} />
       )}
       {(tool.id === 'remove-pdf-metadata' || tool.id === 'remove-pdf-author-metadata') && (
-        <RemoveMetadataEditor onProcess={() => handleStartProcessing()} tUi={tUi} currentLang={currentLang} isProcessing={isProcessing} />
+        <RemoveMetadataEditor
+          file={files[activeFileIndex] || files[0]}
+          onProcess={() => handleStartProcessing()}
+          tUi={tUi}
+          currentLang={currentLang}
+          isProcessing={isProcessing}
+        />
       )}
       {tool.id === 'edit-pdf-metadata' && (
         <EditMetadataEditor
