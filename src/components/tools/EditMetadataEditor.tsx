@@ -84,14 +84,6 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
     return `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}T${pad(now.getHours())}:${pad(now.getMinutes())}`;
   };
 
-  const getPastDate = (daysAgo: number = 0, monthsAgo: number = 0, yearsAgo: number = 0): string => {
-    const d = new Date();
-    if (yearsAgo) d.setFullYear(d.getFullYear() - yearsAgo);
-    if (monthsAgo) d.setMonth(d.getMonth() - monthsAgo);
-    if (daysAgo) d.setDate(d.getDate() - daysAgo);
-    return getDatetimeLocal(d);
-  };
-
 
 
   const handleSubmit = () => {
@@ -346,7 +338,6 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
             onChange={setCreationDate}
             currentLang={currentLang}
             tUi={tUi}
-            isCreationDate={true}
           />
 
           <div style={{ height: 1, background: 'var(--border-color)', opacity: 0.6 }} />
@@ -359,8 +350,6 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
             onChange={setModDate}
             currentLang={currentLang}
             tUi={tUi}
-            isCreationDate={false}
-            onSyncWithCreationDate={() => setModDate(creationDate || getDatetimeLocal())}
           />
         </div>
 

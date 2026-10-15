@@ -8,8 +8,6 @@ interface CustomDateTimeControlProps {
   onChange: (val: string) => void;
   currentLang?: string;
   tUi?: Record<string, string>;
-  isCreationDate?: boolean;
-  onSyncWithCreationDate?: () => void;
 }
 
 export const CustomDateTimeControl: React.FC<CustomDateTimeControlProps> = ({
@@ -19,8 +17,6 @@ export const CustomDateTimeControl: React.FC<CustomDateTimeControlProps> = ({
   onChange,
   currentLang = 'en',
   tUi = {},
-  isCreationDate = true,
-  onSyncWithCreationDate,
 }) => {
   const t = (key: string, fallback: string) => tUi[key] || fallback;
 
@@ -73,7 +69,7 @@ export const CustomDateTimeControl: React.FC<CustomDateTimeControlProps> = ({
   const [viewYear, setViewYear] = useState<number>(parsedDate.year);
   const [viewMonth, setViewMonth] = useState<number>(parsedDate.month);
 
-  // Sync view when parsedDate changes if user selects a preset
+  // Sync view when parsedDate changes
   const syncViewToDate = (y: number, m: number) => {
     setViewYear(y);
     setViewMonth(m);
@@ -83,19 +79,6 @@ export const CustomDateTimeControl: React.FC<CustomDateTimeControlProps> = ({
 
   const buildDateTimeString = (y: number, m: number, d: number, h: number, min: number): string => {
     return `${y}-${pad(m + 1)}-${pad(d)}T${pad(h)}:${pad(min)}`;
-  };
-
-  const getDatetimeLocal = (d?: Date): string => {
-    const now = d || new Date();
-    return `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}T${pad(now.getHours())}:${pad(now.getMinutes())}`;
-  };
-
-  const getPastDate = (daysAgo: number = 0, monthsAgo: number = 0, yearsAgo: number = 0): string => {
-    const d = new Date();
-    if (yearsAgo) d.setFullYear(d.getFullYear() - yearsAgo);
-    if (monthsAgo) d.setMonth(d.getMonth() - monthsAgo);
-    if (daysAgo) d.setDate(d.getDate() - daysAgo);
-    return getDatetimeLocal(d);
   };
 
   // Human-readable formatted string for header badge
@@ -298,7 +281,7 @@ export const CustomDateTimeControl: React.FC<CustomDateTimeControlProps> = ({
         )}
       </div>
 
-      {/* Modern Interactive Display Button (Replaces ugly browser input) */}
+      {/* Modern Interactive Display Button */}
       <div
         role="button"
         tabIndex={0}
@@ -366,140 +349,6 @@ export const CustomDateTimeControl: React.FC<CustomDateTimeControlProps> = ({
             <ChevronDown size={14} style={{ color: 'var(--text-muted)' }} />
           )}
         </div>
-      </div>
-
-      {/* Quick 1-Click Preset Badges (Always Accessible) */}
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
-        <button
-          type="button"
-          onClick={() => {
-            const nowStr = getDatetimeLocal();
-            onChange(nowStr);
-            const now = new Date();
-            syncViewToDate(now.getFullYear(), now.getMonth());
-          }}
-          style={{
-            padding: '3px 8px',
-            fontSize: '0.7rem',
-            borderRadius: 6,
-            border: '1px solid var(--border-color)',
-            background: 'var(--bg-card)',
-            color: 'var(--text-main)',
-            cursor: 'pointer',
-            fontWeight: 600,
-            transition: 'background 0.15s ease',
-          }}
-        >
-          ⚡ {t('quick_date_now', 'Now')}
-        </button>
-
-        {isCreationDate ? (
-          <>
-            <button
-              type="button"
-              onClick={() => {
-                const past = getPastDate(1);
-                onChange(past);
-                const d = new Date(past);
-                syncViewToDate(d.getFullYear(), d.getMonth());
-              }}
-              style={{
-                padding: '3px 8px',
-                fontSize: '0.7rem',
-                borderRadius: 6,
-                border: '1px solid var(--border-color)',
-                background: 'var(--bg-card)',
-                color: 'var(--text-main)',
-                cursor: 'pointer',
-                fontWeight: 500,
-              }}
-            >
-              📅 {t('quick_date_yesterday', 'Yesterday')}
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                const past = getPastDate(7);
-                onChange(past);
-                const d = new Date(past);
-                syncViewToDate(d.getFullYear(), d.getMonth());
-              }}
-              style={{
-                padding: '3px 8px',
-                fontSize: '0.7rem',
-                borderRadius: 6,
-                border: '1px solid var(--border-color)',
-                background: 'var(--bg-card)',
-                color: 'var(--text-main)',
-                cursor: 'pointer',
-                fontWeight: 500,
-              }}
-            >
-              🗓️ {t('quick_date_1week', '1 Week Ago')}
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                const past = getPastDate(0, 1);
-                onChange(past);
-                const d = new Date(past);
-                syncViewToDate(d.getFullYear(), d.getMonth());
-              }}
-              style={{
-                padding: '3px 8px',
-                fontSize: '0.7rem',
-                borderRadius: 6,
-                border: '1px solid var(--border-color)',
-                background: 'var(--bg-card)',
-                color: 'var(--text-main)',
-                cursor: 'pointer',
-                fontWeight: 500,
-              }}
-            >
-              🗓️ {t('quick_date_1month', '1 Month Ago')}
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                const past = getPastDate(0, 0, 1);
-                onChange(past);
-                const d = new Date(past);
-                syncViewToDate(d.getFullYear(), d.getMonth());
-              }}
-              style={{
-                padding: '3px 8px',
-                fontSize: '0.7rem',
-                borderRadius: 6,
-                border: '1px solid var(--border-color)',
-                background: 'var(--bg-card)',
-                color: 'var(--text-main)',
-                cursor: 'pointer',
-                fontWeight: 500,
-              }}
-            >
-              🗓️ {t('quick_date_1year', '1 Year Ago')}
-            </button>
-          </>
-        ) : (
-          onSyncWithCreationDate && (
-            <button
-              type="button"
-              onClick={onSyncWithCreationDate}
-              style={{
-                padding: '3px 8px',
-                fontSize: '0.7rem',
-                borderRadius: 6,
-                border: '1px solid var(--border-color)',
-                background: 'var(--bg-card)',
-                color: 'var(--text-main)',
-                cursor: 'pointer',
-                fontWeight: 500,
-              }}
-            >
-              🔄 {t('quick_date_sync', 'Match Creation Date')}
-            </button>
-          )
-        )}
       </div>
 
       {/* Sleek Custom Calendar & Time Picker Panel (Expanded) */}
