@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
 import https from 'https';
+import { toolSlugs } from '../src/i18n/slugTranslations';
 
 const KEY_FILE_PATH = path.join(process.cwd(), 'handlemyfile-7fa1ac58810e.json');
 const CACHE_FILE_PATH = path.join(process.cwd(), 'scripts', 'google-indexed-cache.json');
@@ -172,14 +173,26 @@ export async function runGoogleIndexing() {
   // - Other languages NEXT
   const priorityLangs = ['en', 'id', 'es', 'fr', 'de', 'ja', 'pt', 'ru', 'zh', 'ar', 'hi'];
 
+  const targetMetadataSlugs = new Set([
+    ...Object.values(toolSlugs['edit-pdf-metadata'] || {}),
+    ...Object.values(toolSlugs['remove-pdf-metadata'] || {})
+  ]);
+
   const unindexedUrls = allUrls.filter(u => {
     if (!cache[u]) return true;
-    // Refresh URLs older than 21 days
+    // Always resubmit new tools if needed, or refresh URLs older than 21 days
+    const isNewTool = Array.from(targetMetadataSlugs).some(s => u.endsWith(`/${s}`));
+    if (isNewTool) return true;
     const daysOld = (Date.now() - new Date(cache[u].submittedAt).getTime()) / (1000 * 3600 * 24);
     return daysOld > 21;
   });
 
   unindexedUrls.sort((a, b) => {
+    const isNewToolA = Array.from(targetMetadataSlugs).some(s => a.endsWith(`/${s}`));
+    const isNewToolB = Array.from(targetMetadataSlugs).some(s => b.endsWith(`/${s}`));
+    if (isNewToolA && !isNewToolB) return -1;
+    if (!isNewToolA && isNewToolB) return 1;
+
     const isAHome = a === 'https://handlemyfile.com/' || /https:\/\/handlemyfile\.com\/[a-z]{2}$/.test(a);
     const isBHome = b === 'https://handlemyfile.com/' || /https:\/\/handlemyfile\.com\/[a-z]{2}$/.test(b);
     if (isAHome && !isBHome) return -1;

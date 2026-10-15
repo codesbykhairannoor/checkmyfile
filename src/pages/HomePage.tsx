@@ -53,7 +53,7 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
         paddingBottom: '40px',
         textAlign: 'center',
       }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 10 }}>
+        <div style={{ maxWidth: 1440, margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 10 }}>
           
 
 
@@ -61,13 +61,15 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
           <h1
             className="homepage-hero-title"
             style={{ 
-              fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', 
+              fontSize: 'clamp(2rem, 3.8vw, 3.85rem)', 
               fontWeight: 900, 
               letterSpacing: '-0.03em', 
               lineHeight: 1.15,
               color: 'var(--text-main)',
               marginBottom: 24,
-              fontFamily: 'var(--font-display)'
+              fontFamily: 'var(--font-display)',
+              maxWidth: 1440,
+              margin: '0 auto 24px'
             }}
           >
             {smartHighlight(t.homeHeroTitle || 'Every Document Tool. 100% Private.')}

@@ -81,6 +81,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "h1": "Clean and Sanitize PDF Metadata",
       "description": "Remove author, creator, and other hidden digital footprint properties from your PDF files offline for better privacy."
     },
+    "edit-pdf-metadata": {
+      "title": "Edit PDF Metadata Online Free — Change Author, Title & Properties",
+      "h1": "Edit PDF Document Properties & Metadata Locally",
+      "description": "Change author names, document titles, copyright tags, software creators, and timestamps in PDF files entirely in your browser with zero file upload."
+    },
     "compare-pdf": {
       "title": "Compare PDF - Find Differences Between Two PDFs",
       "h1": "Compare Two PDF Documents Visually",
@@ -268,6 +273,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "h1": "Bersihkan dan Sanitasi Metadata PDF",
       "description": "Hapus penulis, pencipta, dan properti jejak digital tersembunyi lainnya dari file PDF Anda secara offline untuk privasi yang lebih baik."
     },
+    "edit-pdf-metadata": {
+      "title": "Edit Metadata PDF Online Gratis — Ubah Penulis, Judul & Properti",
+      "h1": "Edit Properti Dokumen PDF & Metadata Secara Lokal",
+      "description": "Ubah nama penulis, judul dokumen, tag hak cipta, pembuat perangkat lunak, dan stempel waktu dalam file PDF sepenuhnya di browser Anda tanpa perlu mengunggah file."
+    },
     "compare-pdf": {
       "title": "Bandingkan PDF - Temukan Perbedaan Antara Dua PDF",
       "h1": "Bandingkan Dua Dokumen PDF Secara Visual",
@@ -450,6 +460,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "h1": "Limpiar y desinfectar metadatos PDF",
       "description": "Elimine el autor, el creador y otras propiedades ocultas de la huella digital de sus archivos PDF sin conexión para una mayor privacidad."
     },
+    "edit-pdf-metadata": {
+      "title": "Edite metadatos de PDF en línea gratis: cambie el autor, el título y las propiedades",
+      "h1": "Edite las propiedades y los metadatos del documento PDF localmente",
+      "description": "Cambie los nombres de los autores, los títulos de los documentos, las etiquetas de derechos de autor, los creadores de software y las marcas de tiempo en archivos PDF completamente en su navegador sin necesidad de cargar archivos."
+    },
     "compare-pdf": {
       "title": "Comparar PDF: encuentre diferencias entre dos archivos PDF",
       "h1": "Compara dos documentos PDF visualmente",
@@ -611,6 +626,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "Supprimer les métadonnées PDF - Désinfecter les propriétés en ligne",
       "h1": "Nettoyer et désinfecter les métadonnées PDF",
       "description": "Supprimez l'auteur, le créateur et les autres propriétés d'empreinte numérique cachées de vos fichiers PDF hors ligne pour une meilleure confidentialité."
+    },
+    "edit-pdf-metadata": {
+      "title": "Modifier les métadonnées PDF en ligne gratuitement - Modifier l'auteur, le titre et les propriétés",
+      "h1": "Modifier les propriétés et les métadonnées du document PDF localement",
+      "description": "Modifiez les noms d'auteur, les titres de documents, les balises de droit d'auteur, les créateurs de logiciels et les horodatages des fichiers PDF entièrement dans votre navigateur sans aucun téléchargement de fichier."
     },
     "compare-pdf": {
       "title": "Comparer des PDF - Trouver les différences entre deux PDF",
@@ -774,6 +794,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "h1": "PDF-Metadaten bereinigen und bereinigen",
       "description": "Entfernen Sie Autoren-, Ersteller- und andere versteckte Eigenschaften des digitalen Fußabdrucks offline aus Ihren PDF-Dateien, um den Datenschutz zu verbessern."
     },
+    "edit-pdf-metadata": {
+      "title": "PDF-Metadaten kostenlos online bearbeiten – Autor, Titel und Eigenschaften ändern",
+      "h1": "Bearbeiten Sie die Eigenschaften und Metadaten von PDF-Dokumenten lokal",
+      "description": "Ändern Sie Autorennamen, Dokumenttitel, Copyright-Tags, Software-Ersteller und Zeitstempel in PDF-Dateien vollständig in Ihrem Browser, ohne dass eine Datei hochgeladen werden muss."
+    },
     "compare-pdf": {
       "title": "PDF vergleichen - Unterschiede zwischen zwei PDFs finden",
       "h1": "Vergleichen Sie zwei PDF-Dokumente visuell",
@@ -935,6 +960,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "PDF メタデータを削除 - オンラインでプロパティをサニタイズ",
       "h1": "PDF メタデータのクリーンアップとサニタイズ",
       "description": "プライバシーを向上させるために、作成者、作成者、その他の非表示のデジタル フットプリント プロパティを PDF ファイルからオフラインで削除します。"
+    },
+    "edit-pdf-metadata": {
+      "title": "PDF メタデータをオンラインで無料で編集 — 著者、タイトル、プロパティを変更",
+      "h1": "PDF ドキュメントのプロパティとメタデータをローカルで編集",
+      "description": "ファイルをアップロードすることなく、PDF ファイルの作成者名、文書タイトル、著作権タグ、ソフトウェア作成者、タイムスタンプをブラウザ上で完全に変更できます。"
     },
     "compare-pdf": {
       "title": "PDF を比較 - 2 つの PDF 間の相違点を見つける",
@@ -1098,6 +1128,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "h1": "Limpe e higienize metadados de PDF",
       "description": "Remova o autor, o criador e outras propriedades ocultas da pegada digital dos seus arquivos PDF off-line para melhor privacidade."
     },
+    "edit-pdf-metadata": {
+      "title": "Edite metadados de PDF online gratuitamente – altere autor, título e propriedades",
+      "h1": "Edite propriedades e metadados de documentos PDF localmente",
+      "description": "Altere nomes de autores, títulos de documentos, tags de direitos autorais, criadores de software e carimbos de data/hora em arquivos PDF inteiramente em seu navegador, sem upload de arquivos."
+    },
     "compare-pdf": {
       "title": "Compare PDF - Encontre diferenças entre dois PDFs",
       "h1": "Compare dois documentos PDF visualmente",
@@ -1259,6 +1294,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "Удаление метаданных PDF — очистка свойств онлайн",
       "h1": "Очистка и дезинфекция метаданных PDF",
       "description": "Удалите автора, создателя и другие скрытые свойства цифрового следа из ваших PDF-файлов в автономном режиме, чтобы повысить конфиденциальность."
+    },
+    "edit-pdf-metadata": {
+      "title": "Редактируйте метаданные PDF онлайн бесплатно — меняйте автора, название и свойства",
+      "h1": "Редактировать свойства и метаданные PDF-документа локально",
+      "description": "Меняйте имена авторов, названия документов, теги авторских прав, создателей программного обеспечения и временные метки в файлах PDF полностью в своем браузере без необходимости загрузки файлов."
     },
     "compare-pdf": {
       "title": "Сравнить PDF – найти различия между двумя PDF-файлами",
@@ -1422,6 +1462,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "h1": "清理和净化 PDF 元数据",
       "description": "离线从 PDF 文件中删除作者、创建者和其他隐藏的数字足迹属性，以获得更好的隐私。"
     },
+    "edit-pdf-metadata": {
+      "title": "免费在线编辑 PDF 元数据 — 更改作者、标题和属性",
+      "h1": "本地编辑 PDF 文档属性和元数据",
+      "description": "完全在浏览器中更改 PDF 文件中的作者姓名、文档标题、版权标签、软件创建者和时间戳，零文件上传。"
+    },
     "compare-pdf": {
       "title": "比较 PDF - 查找两个 PDF 之间的差异",
       "h1": "直观地比较两个 PDF 文档",
@@ -1583,6 +1628,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "إزالة البيانات التعريفية لملف PDF - تعقيم الخصائص عبر الإنترنت",
       "h1": "تنظيف وتعقيم البيانات الوصفية لملف PDF",
       "description": "قم بإزالة المؤلف والمنشئ وخصائص البصمة الرقمية المخفية الأخرى من ملفات PDF الخاصة بك في وضع عدم الاتصال للحصول على خصوصية أفضل."
+    },
+    "edit-pdf-metadata": {
+      "title": "تحرير البيانات الوصفية لملف PDF عبر الإنترنت مجانًا - تغيير المؤلف والعنوان والخصائص",
+      "h1": "تحرير خصائص مستند PDF والبيانات التعريفية محليًا",
+      "description": "قم بتغيير أسماء المؤلفين وعناوين المستندات وعلامات حقوق الطبع والنشر ومنشئي البرامج والطوابع الزمنية في ملفات PDF بالكامل في متصفحك دون تحميل أي ملف."
     },
     "compare-pdf": {
       "title": "قارن PDF - ابحث عن الاختلافات بين ملفي PDF",
@@ -1746,6 +1796,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "h1": "पीडीएफ मेटाडेटा को साफ़ और स्वच्छ करें",
       "description": "बेहतर गोपनीयता के लिए अपनी पीडीएफ फाइलों से लेखक, निर्माता और अन्य छिपे हुए डिजिटल फ़ुटप्रिंट गुणों को ऑफ़लाइन हटा दें।"
     },
+    "edit-pdf-metadata": {
+      "title": "पीडीएफ मेटाडेटा को ऑनलाइन नि:शुल्क संपादित करें - लेखक, शीर्षक और गुण बदलें",
+      "h1": "पीडीएफ दस्तावेज़ गुण और मेटाडेटा को स्थानीय रूप से संपादित करें",
+      "description": "शून्य फ़ाइल अपलोड के साथ पूरी तरह से अपने ब्राउज़र में पीडीएफ फाइलों में लेखक के नाम, दस्तावेज़ शीर्षक, कॉपीराइट टैग, सॉफ़्टवेयर निर्माता और टाइमस्टैम्प बदलें।"
+    },
     "compare-pdf": {
       "title": "पीडीएफ की तुलना करें - दो पीडीएफ के बीच अंतर खोजें",
       "h1": "दो पीडीएफ दस्तावेज़ों की दृश्य रूप से तुलना करें",
@@ -1907,6 +1962,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "Rimuovi metadati PDF - Sanifica proprietà online",
       "h1": "Pulisci e disinfetta i metadati del PDF",
       "description": "Rimuovi autore, creatore e altre proprietà di impronta digitale nascoste dai tuoi file PDF offline per una migliore privacy."
+    },
+    "edit-pdf-metadata": {
+      "title": "Modifica metadati PDF online gratuitamente: modifica autore, titolo e proprietà",
+      "h1": "Modifica le proprietà e i metadati del documento PDF localmente",
+      "description": "Modifica i nomi degli autori, i titoli dei documenti, i tag di copyright, i creatori del software e i timestamp nei file PDF interamente nel tuo browser senza caricare file."
     },
     "compare-pdf": {
       "title": "Confronta PDF: trova le differenze tra due PDF",
@@ -2070,6 +2130,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "h1": "PDF 메타데이터 정리 및 삭제",
       "description": "더 나은 개인정보 보호를 위해 오프라인에서 PDF 파일의 작성자, 작성자 및 기타 숨겨진 디지털 발자국 속성을 제거하세요."
     },
+    "edit-pdf-metadata": {
+      "title": "PDF 메타데이터를 온라인으로 무료로 편집하세요 - 작성자, 제목 및 속성 변경",
+      "h1": "PDF 문서 속성 및 메타데이터를 로컬에서 편집",
+      "description": "파일을 업로드할 필요 없이 브라우저에서 PDF 파일의 작성자 이름, 문서 제목, 저작권 태그, 소프트웨어 작성자 및 타임스탬프를 완전히 변경할 수 있습니다."
+    },
     "compare-pdf": {
       "title": "PDF 비교 - 두 PDF 간의 차이점 찾기",
       "h1": "두 개의 PDF 문서를 시각적으로 비교",
@@ -2231,6 +2296,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "PDF-metagegevens verwijderen - Eigenschappen online opschonen",
       "h1": "PDF-metagegevens opschonen en opschonen",
       "description": "Verwijder auteur, maker en andere verborgen digitale voetafdrukeigenschappen offline uit uw PDF-bestanden voor betere privacy."
+    },
+    "edit-pdf-metadata": {
+      "title": "Bewerk PDF-metagegevens gratis online - Wijzig auteur, titel en eigenschappen",
+      "h1": "Bewerk PDF-documenteigenschappen en metagegevens lokaal",
+      "description": "Wijzig auteursnamen, documenttitels, copyrighttags, softwaremakers en tijdstempels in PDF-bestanden volledig in uw browser, zonder dat u bestanden hoeft te uploaden."
     },
     "compare-pdf": {
       "title": "Vergelijk PDF - Vind verschillen tussen twee PDF's",
@@ -2394,6 +2464,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "h1": "PDF Meta Verilerini Temizleyin ve Sterilize Edin",
       "description": "Daha iyi gizlilik için çevrimdışı olarak PDF dosyalarınızdan yazar, yaratıcı ve diğer gizli dijital ayak izi özelliklerini kaldırın."
     },
+    "edit-pdf-metadata": {
+      "title": "PDF Meta Verilerini Çevrimiçi Ücretsiz Düzenleyin — Yazarı, Başlığı ve Özellikleri Değiştirin",
+      "h1": "PDF Belgesi Özelliklerini ve Meta Verilerini Yerel Olarak Düzenleme",
+      "description": "Sıfır dosya yüklemeyle PDF dosyalarındaki yazar adlarını, belge başlıklarını, telif hakkı etiketlerini, yazılım oluşturucularını ve zaman damgalarını tamamen tarayıcınızda değiştirin."
+    },
     "compare-pdf": {
       "title": "PDF'yi Karşılaştır - İki PDF Arasındaki Farkları Bulun",
       "h1": "İki PDF Belgesini Görsel Olarak Karşılaştırın",
@@ -2555,6 +2630,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "Usuń metadane PDF — oczyść właściwości online",
       "h1": "Wyczyść i oczyść metadane PDF",
       "description": "Usuń autora, twórcę i inne ukryte właściwości śladu cyfrowego z plików PDF w trybie offline, aby zapewnić lepszą prywatność."
+    },
+    "edit-pdf-metadata": {
+      "title": "Edytuj metadane PDF online za darmo — zmień autora, tytuł i właściwości",
+      "h1": "Edytuj lokalnie właściwości i metadane dokumentu PDF",
+      "description": "Zmieniaj nazwiska autorów, tytuły dokumentów, znaczniki praw autorskich, twórców oprogramowania i znaczniki czasu w plikach PDF całkowicie w przeglądarce, bez konieczności przesyłania plików."
     },
     "compare-pdf": {
       "title": "Porównaj PDF — znajdź różnice między dwoma plikami PDF",
@@ -2718,6 +2798,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "h1": "Làm sạch và vệ sinh siêu dữ liệu PDF",
       "description": "Xóa tác giả, người sáng tạo và các thuộc tính dấu chân kỹ thuật số ẩn khác khỏi tệp PDF của bạn ngoại tuyến để bảo mật tốt hơn."
     },
+    "edit-pdf-metadata": {
+      "title": "Chỉnh sửa siêu dữ liệu PDF trực tuyến miễn phí — Thay đổi tác giả, tiêu đề và thuộc tính",
+      "h1": "Chỉnh sửa thuộc tính và siêu dữ liệu tài liệu PDF cục bộ",
+      "description": "Thay đổi tên tác giả, tiêu đề tài liệu, thẻ bản quyền, người tạo phần mềm và dấu thời gian trong tệp PDF hoàn toàn trong trình duyệt của bạn mà không cần tải lên tệp."
+    },
     "compare-pdf": {
       "title": "So sánh PDF - Tìm sự khác biệt giữa hai tệp PDF",
       "h1": "So sánh trực quan hai tài liệu PDF",
@@ -2879,6 +2964,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "ลบข้อมูลเมตา PDF - ฆ่าเชื้อคุณสมบัติออนไลน์",
       "h1": "ทำความสะอาดและฆ่าเชื้อข้อมูลเมตา PDF",
       "description": "ลบผู้เขียน ผู้สร้าง และคุณสมบัติรอยเท้าดิจิทัลที่ซ่อนอยู่ออกจากไฟล์ PDF ของคุณแบบออฟไลน์เพื่อความเป็นส่วนตัวที่ดีขึ้น"
+    },
+    "edit-pdf-metadata": {
+      "title": "แก้ไขข้อมูลเมตา PDF ออนไลน์ฟรี — เปลี่ยนผู้แต่ง ชื่อเรื่อง และคุณสมบัติ",
+      "h1": "แก้ไขคุณสมบัติเอกสาร PDF และข้อมูลเมตาในเครื่อง",
+      "description": "เปลี่ยนชื่อผู้เขียน ชื่อเอกสาร แท็กลิขสิทธิ์ ผู้สร้างซอฟต์แวร์ และการประทับเวลาในไฟล์ PDF ทั้งหมดในเบราว์เซอร์ของคุณโดยไม่ต้องอัปโหลดไฟล์"
     },
     "compare-pdf": {
       "title": "เปรียบเทียบ PDF - ค้นหาความแตกต่างระหว่างสอง PDF",
@@ -3042,6 +3132,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "h1": "Rensa och sanera PDF-metadata",
       "description": "Ta bort författare, skapare och andra dolda digitala fotavtrycksegenskaper från dina PDF-filer offline för bättre integritet."
     },
+    "edit-pdf-metadata": {
+      "title": "Redigera PDF-metadata online gratis — Ändra författare, titel och egenskaper",
+      "h1": "Redigera PDF-dokumentegenskaper och metadata lokalt",
+      "description": "Ändra författarnamn, dokumenttitlar, upphovsrättstaggar, programvaruskapare och tidsstämplar i PDF-filer helt och hållet i din webbläsare utan filuppladdning."
+    },
     "compare-pdf": {
       "title": "Jämför PDF - Hitta skillnader mellan två PDF-filer",
       "h1": "Jämför två PDF-dokument visuellt",
@@ -3203,6 +3298,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "Odebrat metadata PDF - Sanitize Properties online",
       "h1": "Vyčistit a dezinfikovat metadata PDF",
       "description": "Odeberte autora, tvůrce a další skryté vlastnosti digitální stopy ze souborů PDF offline pro lepší soukromí."
+    },
+    "edit-pdf-metadata": {
+      "title": "Upravujte metadata PDF online zdarma — Změňte autora, název a vlastnosti",
+      "h1": "Upravte vlastnosti a metadata dokumentu PDF lokálně",
+      "description": "Změňte jména autorů, názvy dokumentů, značky autorských práv, tvůrce softwaru a časová razítka v souborech PDF zcela ve vašem prohlížeči bez nutnosti nahrávání souborů."
     },
     "compare-pdf": {
       "title": "Porovnat PDF – najít rozdíly mezi dvěma PDF",
@@ -3366,6 +3466,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "h1": "Rens og rense PDF-metadata",
       "description": "Fjern forfatter, skaber og andre skjulte digitale fodaftryksegenskaber fra dine PDF-filer offline for bedre privatliv."
     },
+    "edit-pdf-metadata": {
+      "title": "Rediger PDF-metadata online gratis — Skift forfatter, titel og egenskaber",
+      "h1": "Rediger PDF-dokumentegenskaber og metadata lokalt",
+      "description": "Skift forfatternavne, dokumenttitler, copyright-tags, softwareskabere og tidsstempler i PDF-filer helt i din browser uden filupload."
+    },
     "compare-pdf": {
       "title": "Sammenlign PDF - Find forskelle mellem to PDF'er",
       "h1": "Sammenlign to PDF-dokumenter visuelt",
@@ -3527,6 +3632,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "Κατάργηση μεταδεδομένων PDF - Sanitize Properties Online",
       "h1": "Καθαρίστε και απολυμάνετε τα μεταδεδομένα PDF",
       "description": "Καταργήστε τον συγγραφέα, τον δημιουργό και άλλες κρυφές ιδιότητες ψηφιακού αποτυπώματος από τα αρχεία PDF σας εκτός σύνδεσης για καλύτερο απόρρητο."
+    },
+    "edit-pdf-metadata": {
+      "title": "Επεξεργασία Μεταδεδομένων PDF Online Δωρεάν — Αλλαγή συγγραφέα, τίτλου και ιδιοτήτων",
+      "h1": "Επεξεργαστείτε τοπικά τις ιδιότητες και τα μεταδεδομένα εγγράφου PDF",
+      "description": "Αλλάξτε τα ονόματα συντακτών, τους τίτλους εγγράφων, τις ετικέτες πνευματικών δικαιωμάτων, τους δημιουργούς λογισμικού και τις χρονικές σημάνσεις σε αρχεία PDF εξ ολοκλήρου στο πρόγραμμα περιήγησής σας με μηδενική μεταφόρτωση αρχείων."
     },
     "compare-pdf": {
       "title": "Συγκρίνετε PDF - Βρείτε τις διαφορές μεταξύ δύο αρχείων PDF",
@@ -3690,6 +3800,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "h1": "Puhdista ja puhdista PDF-metatiedot",
       "description": "Poista tekijä, luoja ja muut piilotetut digitaalisen jalanjäljen ominaisuudet PDF-tiedostoistasi offline-tilassa parantaaksesi yksityisyyttä."
     },
+    "edit-pdf-metadata": {
+      "title": "Muokkaa PDF-metatietoja verkossa ilmaiseksi – muuta tekijää, otsikkoa ja ominaisuuksia",
+      "h1": "Muokkaa PDF-dokumentin ominaisuuksia ja metatietoja paikallisesti",
+      "description": "Muuta PDF-tiedostojen tekijöiden nimiä, asiakirjojen otsikoita, tekijänoikeustunnisteita, ohjelmistojen luojia ja aikaleimoja kokonaan selaimessasi ilman tiedostojen latausta."
+    },
     "compare-pdf": {
       "title": "Vertaa PDF - Etsi eroja kahden PDF-tiedoston välillä",
       "h1": "Vertaa kahta PDF-asiakirjaa visuaalisesti",
@@ -3851,6 +3966,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "הסר מטא נתונים של PDF - חיטוי מאפיינים באינטרנט",
       "h1": "נקה וניקוי מטא נתונים של PDF",
       "description": "הסר מחבר, יוצר ומאפייני טביעת רגל דיגיטלית נסתרים אחרים מקובצי ה-PDF שלך במצב לא מקוון לפרטיות טובה יותר."
+    },
+    "edit-pdf-metadata": {
+      "title": "ערוך מטא נתונים של PDF באינטרנט בחינם - שנה מחבר, כותרת ומאפיינים",
+      "h1": "ערוך מאפיינים ומטא נתונים של מסמך PDF באופן מקומי",
+      "description": "שנה שמות מחברים, כותרות מסמכים, תגיות זכויות יוצרים, יוצרי תוכנה וחותמות זמן בקובצי PDF לגמרי בדפדפן שלך עם אפס העלאת קבצים."
     },
     "compare-pdf": {
       "title": "השווה PDF - מצא הבדלים בין שני קובצי PDF",
@@ -4014,6 +4134,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "h1": "A PDF-metaadatok tisztítása és fertőtlenítése",
       "description": "A jobb adatvédelem érdekében távolítsa el a szerzőt, alkotót és más rejtett digitális lábnyom-tulajdonságokat PDF-fájljaiból offline módban."
     },
+    "edit-pdf-metadata": {
+      "title": "PDF-metaadatok online szerkesztése ingyenes – módosíthatja a szerzőt, a címet és a tulajdonságokat",
+      "h1": "A PDF-dokumentum tulajdonságainak és metaadatainak helyi szerkesztése",
+      "description": "Módosítsa a szerzők nevét, a dokumentumok címét, a szerzői jogi címkéket, a szoftverkészítőket és az időbélyegeket a PDF-fájlokban a böngészőjében, anélkül, hogy fájlokat kellene feltöltenie."
+    },
     "compare-pdf": {
       "title": "PDF összehasonlítása – Keressen különbségeket két PDF között",
       "h1": "Két PDF-dokumentum vizuális összehasonlítása",
@@ -4175,6 +4300,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "Fjern PDF-metadata - Sanitize Properties Online",
       "h1": "Rens og rense PDF-metadata",
       "description": "Fjern forfatter, skaper og andre skjulte digitale fotavtrykksegenskaper fra PDF-filene dine offline for bedre personvern."
+    },
+    "edit-pdf-metadata": {
+      "title": "Rediger PDF-metadata online gratis — Endre forfatter, tittel og egenskaper",
+      "h1": "Rediger PDF-dokumentegenskaper og metadata lokalt",
+      "description": "Endre forfatternavn, dokumenttitler, opphavsrettsmerker, programvareskapere og tidsstempler i PDF-filer helt i nettleseren din uten filopplasting."
     },
     "compare-pdf": {
       "title": "Sammenlign PDF - Finn forskjeller mellom to PDF-er",
@@ -4338,6 +4468,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "h1": "Curățați și dezinfectați metadatele PDF",
       "description": "Eliminați autorul, creatorul și alte proprietăți ascunse ale amprentei digitale din fișierele PDF offline pentru o confidențialitate mai bună."
     },
+    "edit-pdf-metadata": {
+      "title": "Editați metadatele PDF online gratuit — Schimbați autorul, titlul și proprietățile",
+      "h1": "Editați proprietățile documentului PDF și metadatele local",
+      "description": "Schimbați numele autorilor, titlurile documentelor, etichetele de drepturi de autor, creatorii de software și marcajele de timp în fișierele PDF în întregime în browser, fără încărcare de fișiere."
+    },
     "compare-pdf": {
       "title": "Comparați PDF - Găsiți diferențe între două fișiere PDF",
       "h1": "Comparați vizual două documente PDF",
@@ -4499,6 +4634,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "Odstrániť metadáta PDF - Sanitize Properties online",
       "h1": "Vyčistiť a vyčistiť metadáta PDF",
       "description": "Odstráňte autora, tvorcu a ďalšie skryté vlastnosti digitálnej stopy zo súborov PDF offline, aby ste získali lepšie súkromie."
+    },
+    "edit-pdf-metadata": {
+      "title": "Upravte metadáta PDF online zadarmo — Zmeňte autora, názov a vlastnosti",
+      "h1": "Upravte vlastnosti a metadáta dokumentu PDF lokálne",
+      "description": "Zmeňte mená autorov, názvy dokumentov, značky autorských práv, tvorcov softvéru a časové pečiatky v súboroch PDF úplne vo svojom prehliadači bez nahrávania súborov."
     },
     "compare-pdf": {
       "title": "Porovnanie PDF – nájdite rozdiely medzi dvoma PDF",
@@ -4662,6 +4802,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "h1": "Очистіть і очистіть метадані PDF",
       "description": "Для кращої конфіденційності видаліть автора, творця та інші приховані властивості цифрового відбитка зі своїх PDF-файлів у режимі офлайн."
     },
+    "edit-pdf-metadata": {
+      "title": "Безкоштовно редагуйте метадані PDF онлайн — змінюйте автора, назву та властивості",
+      "h1": "Редагуйте властивості та метадані PDF-документа локально",
+      "description": "Змінюйте імена авторів, назви документів, теги авторського права, творців програмного забезпечення та часові мітки у файлах PDF повністю у вашому браузері без завантаження файлів."
+    },
     "compare-pdf": {
       "title": "Порівняти PDF - знайти відмінності між двома PDF-файлами",
       "h1": "Візуально порівняйте два PDF-документи",
@@ -4823,6 +4968,11 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "Alih Keluar Metadata PDF - Bersihkan Hartanah Dalam Talian",
       "h1": "Bersihkan dan Bersihkan Metadata PDF",
       "description": "Alih keluar pengarang, pencipta dan sifat jejak digital tersembunyi lain daripada fail PDF anda di luar talian untuk privasi yang lebih baik."
+    },
+    "edit-pdf-metadata": {
+      "title": "Edit PDF Metadata Dalam Talian Percuma — Tukar Pengarang, Tajuk & Sifat",
+      "h1": "Edit Sifat Dokumen PDF & Metadata Secara Setempat",
+      "description": "Tukar nama pengarang, tajuk dokumen, teg hak cipta, pencipta perisian dan cap masa dalam fail PDF sepenuhnya dalam penyemak imbas anda tanpa muat naik fail."
     },
     "compare-pdf": {
       "title": "Bandingkan PDF - Cari Perbezaan Antara Dua PDF",

@@ -882,7 +882,7 @@ const run = async () => {
   const rootHtml = generateHtml(
     'en',
     `/`,
-    'HandleMyFile | All Document Tools in One Place',
+    'HandleMyFile | Every Document Tool. 100% Private.',
     'Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly.',
     'home'
   );

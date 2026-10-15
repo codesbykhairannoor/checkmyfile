@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { SUPPORTED_LANGUAGES, getLanguageByCode } from '../../i18n/languages';
 import { getLocalizedSeo, type ToolDefinition } from '../../catalog/toolsCatalog';
+import { catalogTranslations } from '../../i18n/catalogTranslations';
 
 import { getUiTranslations } from '../../i18n/translations';
 import { getLocalizedStaticSlug, type StaticPageId } from '../../i18n/staticSlugs';
@@ -38,7 +39,7 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang, currentLang, title
 
     if (tool) {
       const seoData = getLocalizedSeo(tool, activeLang);
-      const hasSpecificSeo = !!tool.seo[activeLang];
+      const hasSpecificSeo = !!(tool.seo[activeLang] || catalogTranslations[activeLang]?.[tool.id]);
       if (hasSpecificSeo) {
         title = `${seoData.title} | HandleMyFile`;
         description = seoData.description;
