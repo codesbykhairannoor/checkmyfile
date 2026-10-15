@@ -232,13 +232,34 @@ export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
               }}
             >
               {/* Row 1: Penulis (Author) */}
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, padding: '4px 0', borderBottom: '1px solid var(--border-color)' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 8, padding: '4px 0', borderBottom: '1px solid var(--border-color)' }}>
                 <span style={{ color: 'var(--text-muted)', display: 'inline-flex', alignItems: 'center', gap: 6, flexShrink: 0 }}>
                   <User size={13} /> {isId ? 'Penulis (Author):' : 'Author:'}
                 </span>
-                <span style={{ fontWeight: metadata.author ? 700 : 400, color: metadata.author ? 'var(--text-main)' : 'var(--text-muted)', textAlign: 'right', wordBreak: 'break-word' }}>
-                  {metadata.author || (isId ? '— (Kosong)' : '— (Empty)')}
-                </span>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8, textAlign: 'right' }}>
+                  <span style={{ fontWeight: metadata.author ? 700 : 400, color: metadata.author ? 'var(--text-main)' : 'var(--text-muted)', wordBreak: 'break-word' }}>
+                    {metadata.author || (isId ? '— (Kosong)' : '— (Empty)')}
+                  </span>
+                  <a
+                    href={isId ? '/id/edit-metadata-pdf' : '/edit-pdf-metadata'}
+                    style={{
+                      fontSize: '0.7rem',
+                      color: 'var(--brand-primary)',
+                      textDecoration: 'none',
+                      padding: '2px 6px',
+                      background: 'rgba(225, 29, 72, 0.08)',
+                      borderRadius: 4,
+                      fontWeight: 600,
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 2,
+                      whiteSpace: 'nowrap',
+                    }}
+                    title={isId ? 'Ganti nama penulis di halaman Edit Metadata' : 'Change author in Edit Metadata'}
+                  >
+                    ✏️ {isId ? 'Ganti' : 'Edit'}
+                  </a>
+                </div>
               </div>
 
               {/* Row 2: Judul (Title) */}
