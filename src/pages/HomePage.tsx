@@ -61,7 +61,7 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
           <h1
             className="homepage-hero-title"
             style={{ 
-              fontSize: 'clamp(2rem, 3.8vw, 3.85rem)', 
+              fontSize: 'clamp(2.5rem, 5.2vw, 4.5rem)', 
               fontWeight: 900, 
               letterSpacing: '-0.03em', 
               lineHeight: 1.15,
