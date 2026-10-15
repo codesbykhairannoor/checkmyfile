@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Eraser, Download, Settings2, ArrowRight, ShieldCheck, AlertTriangle, FileText, RefreshCw, User, Tag, Laptop, Cpu, Calendar, Clock, Sparkles } from 'lucide-react';
+import { Eraser, Download, Settings2, ArrowRight, ShieldCheck, AlertTriangle, FileText, RefreshCw, User, Tag, Laptop, Cpu, Calendar, Clock, Sparkles, Scale } from 'lucide-react';
 import type { ExistingPdfMetadata } from '../../engines/pdf/editMetadataPdf';
 import { toolSlugs } from '../../i18n/slugTranslations';
 
@@ -402,6 +402,30 @@ export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
         <span>
           {t('local_ram_guarantee', 'Processed 100% locally in browser RAM. Never sent to any server.')}
         </span>
+      </div>
+
+      {/* Ethical Notice & Responsible Use Policy */}
+      <div
+        style={{
+          background: 'var(--bg-input)',
+          border: '1px solid var(--border-color)',
+          borderRadius: 8,
+          padding: '10px 12px',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 4,
+        }}
+      >
+        <div style={{ display: 'flex', alignItems: 'center', gap: 6, color: 'var(--text-main)', fontSize: '0.74rem', fontWeight: 700 }}>
+          <Scale size={13} style={{ color: 'var(--text-muted)' }} />
+          <span>{t('ethical_notice_title', 'Responsible Use & Ethics:')}</span>
+        </div>
+        <p style={{ margin: 0, fontSize: '0.7rem', color: 'var(--text-muted)', lineHeight: 1.45 }}>
+          {t(
+            'ethical_notice_desc',
+            'This tool is provided for privacy protection, legitimate copyright updates, and archiving. Users bear full responsibility for the ownership and legal authenticity of their files. Forgery and fraud are strictly prohibited.'
+          )}
+        </p>
       </div>
 
       {/* Cross-link to Edit Metadata */}

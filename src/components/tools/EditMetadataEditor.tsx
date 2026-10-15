@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { SlidersHorizontal, Download, Settings2, Sparkles, ShieldCheck, ArrowRight, RotateCcw } from 'lucide-react';
+import { SlidersHorizontal, Download, Settings2, ShieldCheck, ArrowRight, RotateCcw, Scale } from 'lucide-react';
 import type { ExistingPdfMetadata } from '../../engines/pdf/editMetadataPdf';
 import { toolSlugs } from '../../i18n/slugTranslations';
 
@@ -83,37 +83,7 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
     return `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}T${pad(now.getHours())}:${pad(now.getMinutes())}`;
   };
 
-  const applyPreset = (presetKey: string) => {
-    const now = getNowDatetimeLocal();
-    switch (presetKey) {
-      case 'word':
-        setCreator('Microsoft® Word for Microsoft 365');
-        setProducer('Microsoft® Word for Microsoft 365');
-        if (!creationDate) setCreationDate(now);
-        setModDate(now);
-        break;
-      case 'adobe':
-        setCreator('Adobe Acrobat Reader (64-bit) 24.1.20604.0');
-        setProducer('Adobe PDF Library 24.1.20604');
-        if (!creationDate) setCreationDate(now);
-        setModDate(now);
-        break;
-      case 'apple':
-        setCreator('Pages');
-        setProducer('macOS Version 14.5 (Build 23F79) Quartz PDFContext');
-        if (!creationDate) setCreationDate(now);
-        setModDate(now);
-        break;
-      case 'gdocs':
-        setCreator('Google Docs');
-        setProducer('Skia/PDF m124 Google Docs Renderer');
-        if (!creationDate) setCreationDate(now);
-        setModDate(now);
-        break;
-      default:
-        break;
-    }
-  };
+
 
   const handleSubmit = () => {
     const kwArray = keywords
@@ -269,43 +239,7 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
         </div>
       )}
 
-      {/* Preset Quick Bar */}
-      <div style={{ background: 'var(--bg-input)', padding: '12px 14px', borderRadius: 12, border: '1px solid var(--border-color)' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 8, fontSize: '0.8rem', fontWeight: 700, color: 'var(--text-main)' }}>
-          <Sparkles size={14} className="text-brand-primary" />
-          <span>{t('quick_presets', 'Quick Software Presets:')}</span>
-        </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 6 }}>
-          <button
-            type="button"
-            onClick={() => applyPreset('word')}
-            style={{ padding: '6px 10px', fontSize: '0.75rem', fontWeight: 600, background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: 6, color: 'var(--text-main)', cursor: 'pointer', textAlign: 'left' }}
-          >
-            🪟 MS Word 365
-          </button>
-          <button
-            type="button"
-            onClick={() => applyPreset('adobe')}
-            style={{ padding: '6px 10px', fontSize: '0.75rem', fontWeight: 600, background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: 6, color: 'var(--text-main)', cursor: 'pointer', textAlign: 'left' }}
-          >
-            📕 Adobe Acrobat
-          </button>
-          <button
-            type="button"
-            onClick={() => applyPreset('apple')}
-            style={{ padding: '6px 10px', fontSize: '0.75rem', fontWeight: 600, background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: 6, color: 'var(--text-main)', cursor: 'pointer', textAlign: 'left' }}
-          >
-            🍏 Apple Pages
-          </button>
-          <button
-            type="button"
-            onClick={() => applyPreset('gdocs')}
-            style={{ padding: '6px 10px', fontSize: '0.75rem', fontWeight: 600, background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: 6, color: 'var(--text-main)', cursor: 'pointer', textAlign: 'left' }}
-          >
-            🌐 Google Docs
-          </button>
-        </div>
-      </div>
+
 
       {/* Input Fields */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
@@ -453,6 +387,30 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
             : t('save_apply_metadata', 'Save & Update Metadata')}
         </span>
       </button>
+
+      {/* Ethical Notice & Responsible Use Policy */}
+      <div
+        style={{
+          background: 'var(--bg-input)',
+          border: '1px solid var(--border-color)',
+          borderRadius: 8,
+          padding: '10px 12px',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 4,
+        }}
+      >
+        <div style={{ display: 'flex', alignItems: 'center', gap: 6, color: 'var(--text-main)', fontSize: '0.74rem', fontWeight: 700 }}>
+          <Scale size={13} style={{ color: 'var(--text-muted)' }} />
+          <span>{t('ethical_notice_title', 'Responsible Use & Ethics:')}</span>
+        </div>
+        <p style={{ margin: 0, fontSize: '0.7rem', color: 'var(--text-muted)', lineHeight: 1.45 }}>
+          {t(
+            'ethical_notice_desc',
+            'This tool is provided for privacy protection, legitimate copyright updates, and archiving. Users bear full responsibility for the ownership and legal authenticity of their files. Forgery and fraud are strictly prohibited.'
+          )}
+        </p>
+      </div>
 
       {/* Cross-link to Remove Metadata */}
       <div style={{ paddingTop: 10, borderTop: '1px solid var(--border-color)', textAlign: 'center' }}>

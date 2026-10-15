@@ -19,8 +19,8 @@
           "description": "Unggah PDF Anda untuk memeriksa properti metadatanya saat ini secara instan."
         },
         {
-          "title": "Sesuaikan Detail atau Gunakan Preset",
-          "description": "Edit judul, penulis, subjek, kata kunci, pembuat perangkat lunak, atau klik preset 1-ketuk seperti MS Word atau Adobe Acrobat."
+          "title": "Sesuaikan Properti Dokumen",
+          "description": "Perbarui judul, nama penulis hak cipta, subjek, kata kunci, dan stempel waktu sesuai kebutuhan kearsipan Anda."
         },
         {
           "title": "Simpan & Unduh PDF yang Diperbarui",
@@ -38,8 +38,8 @@
     },
     {
       "type": "protect_privacy_security",
-      "title": "Bersihkan Asal AI & Pelacakan C2PA",
-      "content": "Secara otomatis menghapus aliran pelacakan XML XMP yang tersembunyi, sidik jari generator AI otomatis, dan tag aplikasi pribadi sambil mempertahankan properti dokumen Anda yang bersih dan disesuaikan."
+      "title": "Pembersihan Metadata Teknis & Overhead XMP",
+      "content": "Secara otomatis membersihkan paket XML XMP tersembunyi, aliran pelacakan pihak ketiga, dan tag metadata berlebih untuk merampingkan ukuran file serta menjaga kerahasiaan teknis dokumen Anda."
     },
     {
       "type": "crop_performance",
@@ -58,12 +58,12 @@
       "a": "Tidak. Semuanya berjalan 100% secara lokal di browser web Anda menggunakan JavaScript sisi klien. File rahasia Anda tidak pernah meninggalkan perangkat Anda."
     },
     {
-      "q": "Bisakah saya menghapus metadata generator AI dengan alat ini?",
-      "a": "Ya. Editor menyertakan opsi otomatis untuk membersihkan manifes C2PA tersembunyi dan aliran asal XMP yang dihasilkan oleh alat AI otomatis."
+      "q": "Apakah alat ini dapat membersihkan aliran metadata tersembunyi (XMP)?",
+      "a": "Ya. Editor menyertakan fitur pembersihan otomatis untuk menghapus paket XML XMP tersembunyi dan aliran pelacakan pihak ketiga demi privasi maksimal."
     },
     {
-      "q": "Preset perangkat lunak apa yang tersedia?",
-      "a": "Anda dapat menerapkan profil perangkat lunak resmi 1-klik termasuk Microsoft Word 365, Adobe Acrobat Reader DC, Apple Pages, dan Google Docs."
+      "q": "Apakah file PDF yang dihasilkan mematuhi standar kearsipan resmi?",
+      "a": "Ya, seluruh pembaruan metadata diproses sesuai standar spesifikasi ISO 32000, sehingga file dapat dibuka dan diarsipkan secara sempurna di semua aplikasi PDF."
     },
     {
       "q": "Apakah editor metadata PDF ini gratis?",
@@ -72,7 +72,7 @@
   ],
   "badges": [
     "100% Sisi Klien",
-    "Pembersihan Asal AI",
+    "Pembersihan Metadata XMP",
     "Tidak Perlu Unggahan"
   ],
   "stats": [

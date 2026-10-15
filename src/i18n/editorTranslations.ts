@@ -1,6 +1,13 @@
 // Auto-generated 30-Language Editor Translations
 export const editorTranslations: Record<string, Record<string, string>> = {
   "en": {
+    "quick_presets": "Standard Compatibility Profiles:",
+    "purge_c2pa_ai": "Clean Technical Metadata & XMP Overhead",
+    "purge_c2pa_ai_desc": "Remove hidden XML packages and third-party tracking streams to reduce file size and protect technical privacy.",
+    "remove_metadata_desc": "Sanitize author identity, software signatures, timestamps, and embedded data for maximum privacy.",
+    "ethical_notice_title": "Responsible Use & Ethics:",
+    "ethical_notice_desc": "This tool is provided for privacy protection, legitimate copyright updates, and archiving. Users bear full responsibility for the ownership and legal authenticity of their files. Forgery and fraud are strictly prohibited.",
+
     "edit_metadata_title": "Edit PDF Metadata",
     "edit_metadata_desc": "Customize author, document title, keywords, creator software, and timestamps seamlessly.",
     "reading_metadata": "Reading document properties...",
@@ -369,6 +376,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "Saving..."
   },
   "id": {
+    "quick_presets": "Profil Kompatibilitas Standar:",
+    "purge_c2pa_ai": "Bersihkan Metadata Teknis & Overhead XMP",
+    "purge_c2pa_ai_desc": "Hapus paket XML dan aliran data pihak ketiga untuk merampingkan ukuran file serta melindungi privasi teknis.",
+    "remove_metadata_desc": "Sanitasi nama penulis, tanda tangan software, stempel waktu, dan jejak teknis secara permanen demi privasi.",
+    "ethical_notice_title": "Penggunaan Bertanggung Jawab:",
+    "ethical_notice_desc": "Alat ini disediakan demi privasi pribadi, pembaruan hak cipta yang sah, dan kearsipan. Pengguna bertanggung jawab penuh atas kepemilikan dan keabsahan dokumen miliknya. Pemalsuan dan penipuan dilarang keras.",
+
     "edit_metadata_title": "Edit Metadata & Properti PDF",
     "edit_metadata_desc": "Atur judul, penulis hak cipta, tanggal pengerjaan, dan software pembuat dokumen secara resmi.",
     "reading_metadata": "Membaca metadata dokumen...",
@@ -909,6 +923,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "Menyimpan..."
   },
   "es": {
+    "quick_presets": "Perfiles de compatibilidad estándar:",
+    "purge_c2pa_ai": "Metadatos técnicos limpios y sobrecarga XMP",
+    "purge_c2pa_ai_desc": "Elimine los paquetes XML ocultos y los flujos de seguimiento de terceros para reducir el tamaño del archivo y proteger la privacidad técnica.",
+    "remove_metadata_desc": "Desinfecte la identidad del autor, las firmas de software, las marcas de tiempo y los datos integrados para lograr la máxima privacidad.",
+    "ethical_notice_title": "Uso responsable y ética:",
+    "ethical_notice_desc": "Esta herramienta se proporciona para protección de la privacidad, actualizaciones legítimas de derechos de autor y archivo. El usuario asume la plena responsabilidad de la titularidad y autenticidad jurídica de sus ficheros. La falsificación y el fraude están estrictamente prohibidos.",
+
     "edit_metadata_title": "Editar metadatos PDF",
     "edit_metadata_desc": "Personalice el autor, el título del documento, las palabras clave, el software creador y las marcas de tiempo sin problemas.",
     "reading_metadata": "Leyendo propiedades del documento...",
@@ -1449,6 +1470,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "Guardando..."
   },
   "fr": {
+    "quick_presets": "Profils de compatibilité standard :",
+    "purge_c2pa_ai": "Nettoyer les métadonnées techniques et les frais généraux XMP",
+    "purge_c2pa_ai_desc": "Supprimez les packages XML masqués et les flux de suivi tiers pour réduire la taille des fichiers et protéger la confidentialité technique.",
+    "remove_metadata_desc": "Désinfectez l’identité de l’auteur, les signatures logicielles, les horodatages et les données intégrées pour une confidentialité maximale.",
+    "ethical_notice_title": "Utilisation responsable et éthique :",
+    "ethical_notice_desc": "Cet outil est fourni pour la protection de la vie privée, les mises à jour légitimes des droits d'auteur et l'archivage. Les utilisateurs assument l'entière responsabilité de la propriété et de l'authenticité juridique de leurs fichiers. La contrefaçon et la fraude sont strictement interdites.",
+
     "edit_metadata_title": "Modifier les métadonnées PDF",
     "edit_metadata_desc": "Personnalisez de manière transparente l'auteur, le titre du document, les mots-clés, le logiciel de création et les horodatages.",
     "reading_metadata": "Lecture des propriétés du document...",
@@ -1989,6 +2017,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "Enregistrement..."
   },
   "de": {
+    "quick_presets": "Standardkompatibilitätsprofile:",
+    "purge_c2pa_ai": "Bereinigen Sie technische Metadaten und XMP-Overhead",
+    "purge_c2pa_ai_desc": "Entfernen Sie versteckte XML-Pakete und Tracking-Streams von Drittanbietern, um die Dateigröße zu reduzieren und die technische Privatsphäre zu schützen.",
+    "remove_metadata_desc": "Bereinigen Sie die Identität des Autors, Softwaresignaturen, Zeitstempel und eingebettete Daten für maximalen Datenschutz.",
+    "ethical_notice_title": "Verantwortungsvoller Umgang und Ethik:",
+    "ethical_notice_desc": "Dieses Tool dient zum Schutz der Privatsphäre, zur Aktualisierung legitimer Urheberrechte und zur Archivierung. Benutzer tragen die volle Verantwortung für das Eigentum und die rechtliche Authentizität ihrer Dateien. Fälschungen und Betrug sind strengstens untersagt.",
+
     "edit_metadata_title": "Bearbeiten Sie PDF-Metadaten",
     "edit_metadata_desc": "Passen Sie Autor, Dokumenttitel, Schlüsselwörter, Erstellersoftware und Zeitstempel nahtlos an.",
     "reading_metadata": "Dokumenteigenschaften werden gelesen...",
@@ -2529,6 +2564,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "Speichern..."
   },
   "ja": {
+    "quick_presets": "標準互換性プロファイル:",
+    "purge_c2pa_ai": "クリーンな技術メタデータと XMP オーバーヘッド",
+    "purge_c2pa_ai_desc": "非表示の XML パッケージとサードパーティの追跡ストリームを削除して、ファイル サイズを削減し、技術的なプライバシーを保護します。",
+    "remove_metadata_desc": "プライバシーを最大限に高めるために、作成者 ID、ソフトウェア署名、タイムスタンプ、埋め込みデータをサニタイズします。",
+    "ethical_notice_title": "責任ある使用と倫理:",
+    "ethical_notice_desc": "このツールは、プライバシー保護、正当な著作権更新、およびアーカイブのために提供されています。 ユーザーは、自分のファイルの所有権と法的信頼性について全責任を負います。 偽造や詐欺は固く禁止されています。",
+
     "edit_metadata_title": "PDF メタデータの編集",
     "edit_metadata_desc": "著者、文書タイトル、キーワード、作成ソフトウェア、タイムスタンプをシームレスにカスタマイズします。",
     "reading_metadata": "ドキュメントのプロパティを読み取り中...",
@@ -3069,6 +3111,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "保存中..."
   },
   "pt": {
+    "quick_presets": "Perfis de compatibilidade padrão:",
+    "purge_c2pa_ai": "Limpe metadados técnicos e sobrecarga de XMP",
+    "purge_c2pa_ai_desc": "Remova pacotes XML ocultos e fluxos de rastreamento de terceiros para reduzir o tamanho do arquivo e proteger a privacidade técnica.",
+    "remove_metadata_desc": "Limpe a identidade do autor, assinaturas de software, carimbos de data/hora e dados incorporados para máxima privacidade.",
+    "ethical_notice_title": "Uso Responsável e Ética:",
+    "ethical_notice_desc": "Esta ferramenta é fornecida para proteção de privacidade, atualizações legítimas de direitos autorais e arquivamento. Os usuários assumem total responsabilidade pela propriedade e autenticidade legal de seus arquivos. Falsificação e fraude são estritamente proibidas.",
+
     "edit_metadata_title": "Editar metadados PDF",
     "edit_metadata_desc": "Personalize o autor, o título do documento, as palavras-chave, o software criador e os carimbos de data e hora perfeitamente.",
     "reading_metadata": "Lendo propriedades do documento...",
@@ -3609,6 +3658,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "Salvando..."
   },
   "ru": {
+    "quick_presets": "Стандартные профили совместимости:",
+    "purge_c2pa_ai": "Очистка технических метаданных и накладных расходов XMP",
+    "purge_c2pa_ai_desc": "Удалите скрытые пакеты XML и сторонние потоки отслеживания, чтобы уменьшить размер файла и защитить техническую конфиденциальность.",
+    "remove_metadata_desc": "Очистите личность автора, подписи программного обеспечения, временные метки и встроенные данные для обеспечения максимальной конфиденциальности.",
+    "ethical_notice_title": "Ответственное использование и этика:",
+    "ethical_notice_desc": "Этот инструмент предназначен для защиты конфиденциальности, законного обновления авторских прав и архивирования. Пользователи несут полную ответственность за право собственности и юридическую подлинность своих файлов. Подлог и мошенничество строго запрещены.",
+
     "edit_metadata_title": "Редактировать метаданные PDF",
     "edit_metadata_desc": "Легко настройте автора, название документа, ключевые слова, программное обеспечение для создания и временные метки.",
     "reading_metadata": "Чтение свойств документа...",
@@ -4149,6 +4205,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "Сохранение..."
   },
   "zh": {
+    "quick_presets": "标准兼容性配置文件：",
+    "purge_c2pa_ai": "清理技术元数据与 XMP 冗余数据流",
+    "purge_c2pa_ai_desc": "删除隐藏的 XML 数据包和第三方追踪流，以缩减文件体积并保护技术隐私。",
+    "remove_metadata_desc": "永久清理作者身份、软件签名、时间戳和嵌入数据，最大程度保障隐私。",
+    "ethical_notice_title": "负责任使用与合规声明：",
+    "ethical_notice_desc": "本工具仅用于保护个人隐私、合法版权更新和档案标准化。用户对其文件的所有权和法律真实性承担全部责任。严禁用于伪造、造假或欺诈行为。",
+
     "edit_metadata_title": "编辑 PDF 元数据",
     "edit_metadata_desc": "无缝自定义作者、文档标题、关键词、创建软件和时间戳。",
     "reading_metadata": "正在读取文档属性...",
@@ -4752,6 +4815,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "正在保存..."
   },
   "ar": {
+    "quick_presets": "ملفات تعريف التوافق القياسية:",
+    "purge_c2pa_ai": "تنظيف بيانات التعريف الفنية وحمولات XMP",
+    "purge_c2pa_ai_desc": "قم بإزالة حزم XML المخفية وتدفقات التتبع التابعة لجهات خارجية لتقليل حجم الملف وحماية الخصوصية التقنية.",
+    "remove_metadata_desc": "قم بتطهير هوية المؤلف وتوقيعات البرامج والطوابع الزمنية والبيانات المضمنة لتحقيق أقصى قدر من الخصوصية.",
+    "ethical_notice_title": "الاستخدام المسؤول والأخلاقيات:",
+    "ethical_notice_desc": "يتم توفير هذه الأداة لحماية الخصوصية، وتحديثات حقوق النشر المشروعة، والأرشفة. يتحمل المستخدمون المسؤولية الكاملة عن ملكية ملفاتهم وصحتها القانونية. التزوير والاحتيال ممنوع منعا باتا.",
+
     "edit_metadata_title": "تحرير البيانات الوصفية لملف PDF",
     "edit_metadata_desc": "قم بتخصيص المؤلف وعنوان المستند والكلمات الرئيسية وبرنامج المنشئ والطوابع الزمنية بسلاسة.",
     "reading_metadata": "قراءة خصائص الوثيقة...",
@@ -5292,6 +5362,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "جارٍ الحفظ..."
   },
   "hi": {
+    "quick_presets": "मानक संगतता प्रोफ़ाइल:",
+    "purge_c2pa_ai": "स्वच्छ तकनीकी मेटाडेटा और एक्सएमपी ओवरहेड",
+    "purge_c2pa_ai_desc": "फ़ाइल का आकार कम करने और तकनीकी गोपनीयता की सुरक्षा के लिए छिपे हुए XML पैकेज और तृतीय-पक्ष ट्रैकिंग स्ट्रीम हटाएँ।",
+    "remove_metadata_desc": "अधिकतम गोपनीयता के लिए लेखक की पहचान, सॉफ़्टवेयर हस्ताक्षर, टाइमस्टैम्प और एम्बेडेड डेटा को साफ़ करें।",
+    "ethical_notice_title": "जिम्मेदार उपयोग और नैतिकता:",
+    "ethical_notice_desc": "यह टूल गोपनीयता सुरक्षा, वैध कॉपीराइट अपडेट और संग्रह के लिए प्रदान किया गया है। उपयोगकर्ता अपनी फ़ाइलों के स्वामित्व और कानूनी प्रामाणिकता के लिए पूरी ज़िम्मेदारी रखते हैं। जालसाजी और धोखाधड़ी सख्त वर्जित है।",
+
     "edit_metadata_title": "पीडीएफ मेटाडेटा संपादित करें",
     "edit_metadata_desc": "लेखक, दस्तावेज़ शीर्षक, कीवर्ड, निर्माता सॉफ़्टवेयर और टाइमस्टैम्प को सहजता से अनुकूलित करें।",
     "reading_metadata": "दस्तावेज़ गुण पढ़ रहा है...",
@@ -5832,6 +5909,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "सहेज रहा है..."
   },
   "it": {
+    "quick_presets": "Profili di compatibilità standard:",
+    "purge_c2pa_ai": "Pulisci i metadati tecnici e il sovraccarico XMP",
+    "purge_c2pa_ai_desc": "Rimuovi pacchetti XML nascosti e flussi di tracciamento di terze parti per ridurre le dimensioni dei file e proteggere la privacy tecnica.",
+    "remove_metadata_desc": "Sanifica l'identità dell'autore, le firme del software, i timestamp e i dati incorporati per la massima privacy.",
+    "ethical_notice_title": "Uso responsabile ed etica:",
+    "ethical_notice_desc": "Questo strumento viene fornito per la protezione della privacy, gli aggiornamenti legittimi del copyright e l'archiviazione. Gli utenti si assumono la piena responsabilità della proprietà e dell'autenticità legale dei propri file. La contraffazione e la frode sono severamente vietate.",
+
     "edit_metadata_title": "Modifica metadati PDF",
     "edit_metadata_desc": "Personalizza perfettamente autore, titolo del documento, parole chiave, software di creazione e timestamp.",
     "reading_metadata": "Lettura delle proprietà del documento...",
@@ -6372,6 +6456,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "Salvataggio in corso..."
   },
   "ko": {
+    "quick_presets": "표준 호환성 프로필:",
+    "purge_c2pa_ai": "기술 메타데이터 정리 및 XMP 오버헤드",
+    "purge_c2pa_ai_desc": "숨겨진 XML 패키지와 타사 추적 스트림을 제거하여 파일 크기를 줄이고 기술적 개인정보를 보호하세요.",
+    "remove_metadata_desc": "개인 정보 보호를 극대화하기 위해 작성자 신원, 소프트웨어 서명, 타임스탬프 및 내장된 데이터를 삭제합니다.",
+    "ethical_notice_title": "책임 있는 사용 및 윤리:",
+    "ethical_notice_desc": "이 도구는 개인 정보 보호, 합법적인 저작권 업데이트 및 보관을 위해 제공됩니다. 사용자는 자신의 파일의 소유권과 법적 신뢰성에 대해 전적인 책임을 집니다. 위조 및 사기는 엄격히 금지됩니다.",
+
     "edit_metadata_title": "PDF 메타데이터 편집",
     "edit_metadata_desc": "작성자, 문서 제목, 키워드, 작성자 소프트웨어 및 타임스탬프를 원활하게 사용자 정의하세요.",
     "reading_metadata": "문서 속성을 읽는 중...",
@@ -6912,6 +7003,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "저장 중..."
   },
   "nl": {
+    "quick_presets": "Standaard compatibiliteitsprofielen:",
+    "purge_c2pa_ai": "Schone technische metadata en XMP-overhead",
+    "purge_c2pa_ai_desc": "Verwijder verborgen XML-pakketten en trackingstreams van derden om de bestandsgrootte te verkleinen en de technische privacy te beschermen.",
+    "remove_metadata_desc": "Reinig de identiteit van de auteur, softwarehandtekeningen, tijdstempels en ingesloten gegevens voor maximale privacy.",
+    "ethical_notice_title": "Verantwoord gebruik en ethiek:",
+    "ethical_notice_desc": "Deze tool is bedoeld voor privacybescherming, legitieme copyrightupdates en archivering. Gebruikers dragen de volledige verantwoordelijkheid voor het eigendom en de juridische authenticiteit van hun bestanden. Vervalsing en fraude zijn ten strengste verboden.",
+
     "edit_metadata_title": "Bewerk PDF-metagegevens",
     "edit_metadata_desc": "Pas de auteur, documenttitel, trefwoorden, software voor het maken van programma's en tijdstempels naadloos aan.",
     "reading_metadata": "Documenteigenschappen lezen...",
@@ -7452,6 +7550,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "Opslaan..."
   },
   "tr": {
+    "quick_presets": "Standart Uyumluluk Profilleri:",
+    "purge_c2pa_ai": "Teknik Meta Verileri ve XMP Ek Yükünü Temizleme",
+    "purge_c2pa_ai_desc": "Dosya boyutunu azaltmak ve teknik gizliliği korumak için gizli XML paketlerini ve üçüncü taraf izleme akışlarını kaldırın.",
+    "remove_metadata_desc": "Maksimum gizlilik için yazar kimliğini, yazılım imzalarını, zaman damgalarını ve gömülü verileri temizleyin.",
+    "ethical_notice_title": "Sorumlu Kullanım ve Etik:",
+    "ethical_notice_desc": "Bu araç, gizliliğin korunması, meşru telif hakkı güncellemeleri ve arşivleme amacıyla sağlanmıştır. Kullanıcılar, dosyalarının mülkiyeti ve yasal gerçekliği konusunda tüm sorumluluğu üstlenirler. Sahtecilik ve dolandırıcılık kesinlikle yasaktır.",
+
     "edit_metadata_title": "PDF Meta Verilerini Düzenle",
     "edit_metadata_desc": "Yazarı, belge başlığını, anahtar kelimeleri, yaratıcı yazılımı ve zaman damgalarını sorunsuz bir şekilde özelleştirin.",
     "reading_metadata": "Belge özellikleri okunuyor...",
@@ -7992,6 +8097,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "Kaydediliyor..."
   },
   "pl": {
+    "quick_presets": "Standardowe profile zgodności:",
+    "purge_c2pa_ai": "Czyste metadane techniczne i koszty ogólne XMP",
+    "purge_c2pa_ai_desc": "Usuń ukryte pakiety XML i strumienie śledzące innych firm, aby zmniejszyć rozmiar pliku i chronić prywatność techniczną.",
+    "remove_metadata_desc": "Oczyść tożsamość autora, podpisy oprogramowania, znaczniki czasu i osadzone dane, aby zapewnić maksymalną prywatność.",
+    "ethical_notice_title": "Odpowiedzialne użytkowanie i etyka:",
+    "ethical_notice_desc": "To narzędzie służy do ochrony prywatności, legalnych aktualizacji praw autorskich i archiwizacji. Użytkownicy ponoszą pełną odpowiedzialność za własność i autentyczność prawną swoich plików. Fałszerstwo i oszustwo są surowo zabronione.",
+
     "edit_metadata_title": "Edytuj metadane PDF",
     "edit_metadata_desc": "Bezproblemowo dostosuj autora, tytuł dokumentu, słowa kluczowe, oprogramowanie twórcy i znaczniki czasu.",
     "reading_metadata": "Czytanie właściwości dokumentu...",
@@ -8532,6 +8644,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "Zapisywanie..."
   },
   "vi": {
+    "quick_presets": "Cấu hình tương thích tiêu chuẩn:",
+    "purge_c2pa_ai": "Siêu dữ liệu kỹ thuật sạch và chi phí XMP",
+    "purge_c2pa_ai_desc": "Xóa các gói XML ẩn và luồng theo dõi của bên thứ ba để giảm kích thước tệp và bảo vệ quyền riêng tư về mặt kỹ thuật.",
+    "remove_metadata_desc": "Làm sạch danh tính tác giả, chữ ký phần mềm, dấu thời gian và dữ liệu nhúng để có được sự riêng tư tối đa.",
+    "ethical_notice_title": "Sử dụng có trách nhiệm và đạo đức:",
+    "ethical_notice_desc": "Công cụ này được cung cấp để bảo vệ quyền riêng tư, cập nhật bản quyền hợp pháp và lưu trữ. Người dùng chịu hoàn toàn trách nhiệm về quyền sở hữu và tính xác thực hợp pháp của các tập tin của họ. Nghiêm cấm việc giả mạo và gian lận.",
+
     "edit_metadata_title": "Chỉnh sửa siêu dữ liệu PDF",
     "edit_metadata_desc": "Tùy chỉnh tác giả, tiêu đề tài liệu, từ khóa, phần mềm tạo và dấu thời gian một cách liền mạch.",
     "reading_metadata": "Đọc thuộc tính tài liệu...",
@@ -9072,6 +9191,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "Đang lưu..."
   },
   "th": {
+    "quick_presets": "โปรไฟล์ความเข้ากันได้มาตรฐาน:",
+    "purge_c2pa_ai": "ล้างข้อมูลเมตาทางเทคนิคและค่าใช้จ่าย XMP",
+    "purge_c2pa_ai_desc": "ลบแพ็คเกจ XML ที่ซ่อนอยู่และสตรีมการติดตามของบุคคลที่สาม เพื่อลดขนาดไฟล์และปกป้องความเป็นส่วนตัวทางเทคนิค",
+    "remove_metadata_desc": "ฆ่าเชื้อข้อมูลประจำตัวของผู้เขียน ลายเซ็นซอฟต์แวร์ การประทับเวลา และข้อมูลที่ฝังไว้เพื่อความเป็นส่วนตัวสูงสุด",
+    "ethical_notice_title": "การใช้อย่างมีความรับผิดชอบและจริยธรรม:",
+    "ethical_notice_desc": "เครื่องมือนี้มีไว้เพื่อปกป้องความเป็นส่วนตัว การอัปเดตลิขสิทธิ์ที่ถูกต้องตามกฎหมาย และการเก็บถาวร ผู้ใช้ต้องรับผิดชอบอย่างเต็มที่ต่อความเป็นเจ้าของและความถูกต้องตามกฎหมายของไฟล์ของตน ห้ามปลอมแปลงและการฉ้อโกงโดยเด็ดขาด",
+
     "edit_metadata_title": "แก้ไขข้อมูลเมตา PDF",
     "edit_metadata_desc": "ปรับแต่งผู้เขียน ชื่อเอกสาร คำสำคัญ ซอฟต์แวร์ผู้สร้าง และการประทับเวลาได้อย่างราบรื่น",
     "reading_metadata": "กำลังอ่านคุณสมบัติเอกสาร...",
@@ -9612,6 +9738,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "กำลังบันทึก..."
   },
   "sv": {
+    "quick_presets": "Standardkompatibilitetsprofiler:",
+    "purge_c2pa_ai": "Rengör teknisk metadata och XMP-overhead",
+    "purge_c2pa_ai_desc": "Ta bort dolda XML-paket och spårningsströmmar från tredje part för att minska filstorleken och skydda teknisk integritet.",
+    "remove_metadata_desc": "Rensa författarens identitet, mjukvarusignaturer, tidsstämplar och inbäddade data för maximal sekretess.",
+    "ethical_notice_title": "Ansvarsfull användning och etik:",
+    "ethical_notice_desc": "Det här verktyget tillhandahålls för integritetsskydd, legitima upphovsrättsuppdateringar och arkivering. Användare bär det fulla ansvaret för äganderätten och den juridiska äktheten av deras filer. Förfalskning och bedrägeri är strängt förbjudet.",
+
     "edit_metadata_title": "Redigera PDF-metadata",
     "edit_metadata_desc": "Anpassa författare, dokumenttitel, nyckelord, skaparprogram och tidsstämplar sömlöst.",
     "reading_metadata": "Läser dokumentegenskaper...",
@@ -10152,6 +10285,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "Sparar..."
   },
   "cs": {
+    "quick_presets": "Standardní profily kompatibility:",
+    "purge_c2pa_ai": "Čistá technická metadata a režie XMP",
+    "purge_c2pa_ai_desc": "Odstraňte skryté balíčky XML a sledovací streamy třetích stran, abyste snížili velikost souboru a chránili technické soukromí.",
+    "remove_metadata_desc": "Dezinfikujte identitu autora, softwarové podpisy, časová razítka a vložená data pro maximální soukromí.",
+    "ethical_notice_title": "Odpovědné používání a etika:",
+    "ethical_notice_desc": "Tento nástroj je poskytován pro ochranu soukromí, legitimní aktualizace autorských práv a archivaci. Uživatelé nesou plnou odpovědnost za vlastnictví a právní pravost svých souborů. Padělání a podvody jsou přísně zakázány.",
+
     "edit_metadata_title": "Upravit metadata PDF",
     "edit_metadata_desc": "Bezproblémově přizpůsobte autora, název dokumentu, klíčová slova, software pro tvůrce a časová razítka.",
     "reading_metadata": "Čtení vlastností dokumentu...",
@@ -10692,6 +10832,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "Ukládání..."
   },
   "da": {
+    "quick_presets": "Standard kompatibilitetsprofiler:",
+    "purge_c2pa_ai": "Rens tekniske metadata og XMP-overhead",
+    "purge_c2pa_ai_desc": "Fjern skjulte XML-pakker og tredjeparts sporingsstrømme for at reducere filstørrelsen og beskytte teknisk privatliv.",
+    "remove_metadata_desc": "Rengør forfatteridentitet, softwaresignaturer, tidsstempler og indlejrede data for maksimalt privatliv.",
+    "ethical_notice_title": "Ansvarlig brug og etik:",
+    "ethical_notice_desc": "Dette værktøj leveres til beskyttelse af privatlivets fred, legitime copyright-opdateringer og arkivering. Brugere bærer det fulde ansvar for ejerskabet og den juridiske ægthed af deres filer. Forfalskning og bedrageri er strengt forbudt.",
+
     "edit_metadata_title": "Rediger PDF-metadata",
     "edit_metadata_desc": "Tilpas forfatter, dokumenttitel, nøgleord, skabersoftware og tidsstempler problemfrit.",
     "reading_metadata": "Læser dokumentegenskaber...",
@@ -11232,6 +11379,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "Gemmer..."
   },
   "el": {
+    "quick_presets": "Τυπικά προφίλ συμβατότητας:",
+    "purge_c2pa_ai": "Καθαρίστε τεχνικά μεταδεδομένα & γενικά έξοδα XMP",
+    "purge_c2pa_ai_desc": "Καταργήστε τα κρυφά πακέτα XML και τις ροές παρακολούθησης τρίτων για να μειώσετε το μέγεθος του αρχείου και να προστατεύσετε το τεχνικό απόρρητο.",
+    "remove_metadata_desc": "Απολυμάνετε την ταυτότητα του συγγραφέα, τις υπογραφές λογισμικού, τις χρονικές σημάνσεις και τα ενσωματωμένα δεδομένα για μέγιστη προστασία της ιδιωτικής ζωής.",
+    "ethical_notice_title": "Υπεύθυνη χρήση και ηθική:",
+    "ethical_notice_desc": "Αυτό το εργαλείο παρέχεται για προστασία απορρήτου, νόμιμες ενημερώσεις πνευματικών δικαιωμάτων και αρχειοθέτηση. Οι χρήστες φέρουν την πλήρη ευθύνη για την ιδιοκτησία και τη νομική γνησιότητα των αρχείων τους. Η πλαστογραφία και η απάτη απαγορεύονται αυστηρά.",
+
     "edit_metadata_title": "Επεξεργασία μεταδεδομένων PDF",
     "edit_metadata_desc": "Προσαρμόστε τον συγγραφέα, τον τίτλο του εγγράφου, τις λέξεις-κλειδιά, το λογισμικό δημιουργού και τις χρονικές σημάνσεις απρόσκοπτα.",
     "reading_metadata": "Ανάγνωση ιδιοτήτων εγγράφου...",
@@ -11772,6 +11926,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "Αποθήκευση..."
   },
   "fi": {
+    "quick_presets": "Vakioyhteensopivuusprofiilit:",
+    "purge_c2pa_ai": "Puhdista tekniset metatiedot ja XMP Overhead",
+    "purge_c2pa_ai_desc": "Poista piilotetut XML-paketit ja kolmannen osapuolen seurantavirrat tiedostokoon pienentämiseksi ja teknisen yksityisyyden suojaamiseksi.",
+    "remove_metadata_desc": "Puhdista tekijän identiteetti, ohjelmistojen allekirjoitukset, aikaleimat ja upotetut tiedot maksimaalisen yksityisyyden takaamiseksi.",
+    "ethical_notice_title": "Vastuullinen käyttö ja etiikka:",
+    "ethical_notice_desc": "Tämä työkalu on tarkoitettu yksityisyyden suojaamiseen, laillisiin tekijänoikeuspäivityksiin ja arkistointiin. Käyttäjät ovat täysin vastuussa tiedostojensa omistajuudesta ja laillisesta aitoudesta. Väärentäminen ja petokset ovat ehdottomasti kiellettyjä.",
+
     "edit_metadata_title": "Muokkaa PDF-metatietoja",
     "edit_metadata_desc": "Mukauta tekijää, asiakirjan otsikkoa, avainsanoja, luojaohjelmistoja ja aikaleimoja saumattomasti.",
     "reading_metadata": "Luetaan asiakirjan ominaisuuksia...",
@@ -12312,6 +12473,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "Tallennetaan..."
   },
   "he": {
+    "quick_presets": "פרופילי תאימות סטנדרטיים:",
+    "purge_c2pa_ai": "מטא נתונים טכניים נקיים ותקורה של XMP",
+    "purge_c2pa_ai_desc": "הסר חבילות XML נסתרות וזרמי מעקב של צד שלישי כדי להקטין את גודל הקובץ ולהגן על הפרטיות הטכנית.",
+    "remove_metadata_desc": "נקה את זהות המחבר, חתימות תוכנה, חותמות זמן ונתונים משובצים לפרטיות מירבית.",
+    "ethical_notice_title": "שימוש אחראי ואתיקה:",
+    "ethical_notice_desc": "כלי זה מסופק להגנת פרטיות, עדכוני זכויות יוצרים לגיטימיים ואחסון בארכיון. המשתמשים נושאים באחריות המלאה לבעלות ולאותנטיות המשפטית של הקבצים שלהם. זיוף והונאה אסורים בתכלית האיסור.",
+
     "edit_metadata_title": "ערוך מטא נתונים של PDF",
     "edit_metadata_desc": "התאם אישית מחבר, כותרת מסמך, מילות מפתח, תוכנת יוצר וחותמות זמן בצורה חלקה.",
     "reading_metadata": "קורא מאפייני מסמך...",
@@ -12852,6 +13020,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "שומר..."
   },
   "hu": {
+    "quick_presets": "Szabványos kompatibilitási profilok:",
+    "purge_c2pa_ai": "Tiszta műszaki metaadatok és XMP overhead",
+    "purge_c2pa_ai_desc": "Távolítsa el a rejtett XML-csomagokat és a harmadik féltől származó nyomkövetési adatfolyamokat a fájlméret csökkentése és a műszaki adatok védelme érdekében.",
+    "remove_metadata_desc": "Tisztítsa meg a szerző személyazonosságát, a szoftveraláírásokat, az időbélyegeket és a beágyazott adatokat a maximális adatvédelem érdekében.",
+    "ethical_notice_title": "Felelősségteljes használat és etika:",
+    "ethical_notice_desc": "Ez az eszköz a magánélet védelméhez, a jogszerű szerzői jogi frissítésekhez és az archiváláshoz használható. A felhasználók teljes felelősséget vállalnak fájljaik tulajdonjogáért és jogi hitelességéért. A hamisítás és csalás szigorúan tilos.",
+
     "edit_metadata_title": "PDF-metaadatok szerkesztése",
     "edit_metadata_desc": "Zökkenőmentesen testreszabhatja a szerzőt, a dokumentum címét, a kulcsszavakat, az alkotói szoftvert és az időbélyegeket.",
     "reading_metadata": "Dokumentumtulajdonságok olvasása...",
@@ -13392,6 +13567,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "Mentés..."
   },
   "no": {
+    "quick_presets": "Standard kompatibilitetsprofiler:",
+    "purge_c2pa_ai": "Rengjør tekniske metadata og XMP-overhead",
+    "purge_c2pa_ai_desc": "Fjern skjulte XML-pakker og tredjeparts sporingsstrømmer for å redusere filstørrelsen og beskytte teknisk personvern.",
+    "remove_metadata_desc": "Rengjør forfatteridentitet, programvaresignaturer, tidsstempler og innebygde data for maksimalt personvern.",
+    "ethical_notice_title": "Ansvarlig bruk og etikk:",
+    "ethical_notice_desc": "Dette verktøyet er gitt for personvern, legitime opphavsrettsoppdateringer og arkivering. Brukere har det fulle ansvar for eierskapet og den juridiske autentisiteten til filene deres. Forfalskning og svindel er strengt forbudt.",
+
     "edit_metadata_title": "Rediger PDF-metadata",
     "edit_metadata_desc": "Tilpass forfatter, dokumenttittel, nøkkelord, skaperprogramvare og tidsstempler sømløst.",
     "reading_metadata": "Leser dokumentegenskaper...",
@@ -13932,6 +14114,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "Lagrer..."
   },
   "ro": {
+    "quick_presets": "Profiluri de compatibilitate standard:",
+    "purge_c2pa_ai": "Curățați metadate tehnice și XMP Overhead",
+    "purge_c2pa_ai_desc": "Eliminați pachetele XML ascunse și fluxurile de urmărire terță parte pentru a reduce dimensiunea fișierului și pentru a proteja confidențialitatea tehnică.",
+    "remove_metadata_desc": "Dezinfectați identitatea autorului, semnăturile software, marcajele de timp și datele încorporate pentru confidențialitate maximă.",
+    "ethical_notice_title": "Utilizare responsabilă și etică:",
+    "ethical_notice_desc": "Acest instrument este furnizat pentru protecția vieții private, actualizări legitime ale drepturilor de autor și arhivare. Utilizatorii poartă întreaga responsabilitate pentru proprietatea și autenticitatea legală a fișierelor lor. Falsificarea și frauda sunt strict interzise.",
+
     "edit_metadata_title": "Editați metadatele PDF",
     "edit_metadata_desc": "Personalizați fără probleme autorul, titlul documentului, cuvintele cheie, software-ul de creație și marcajele de timp.",
     "reading_metadata": "Se citesc proprietățile documentului...",
@@ -14472,6 +14661,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "Se salvează..."
   },
   "sk": {
+    "quick_presets": "Štandardné profily kompatibility:",
+    "purge_c2pa_ai": "Čisté technické metadáta a réžia XMP",
+    "purge_c2pa_ai_desc": "Odstráňte skryté balíky XML a sledovacie streamy tretích strán, aby ste znížili veľkosť súboru a chránili technické súkromie.",
+    "remove_metadata_desc": "Dezinfikujte identitu autora, softvérové ​​podpisy, časové pečiatky a vložené údaje pre maximálne súkromie.",
+    "ethical_notice_title": "Zodpovedné používanie a etika:",
+    "ethical_notice_desc": "Tento nástroj slúži na ochranu súkromia, legitímne aktualizácie autorských práv a archiváciu. Používatelia nesú plnú zodpovednosť za vlastníctvo a právnu pravosť svojich súborov. Falšovanie a podvody sú prísne zakázané.",
+
     "edit_metadata_title": "Upravte metadáta PDF",
     "edit_metadata_desc": "Bezproblémovo si prispôsobte autora, názov dokumentu, kľúčové slová, softvér pre tvorcov a časové pečiatky.",
     "reading_metadata": "Čítajú sa vlastnosti dokumentu...",
@@ -15012,6 +15208,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "Ukladá sa..."
   },
   "uk": {
+    "quick_presets": "Стандартні профілі сумісності:",
+    "purge_c2pa_ai": "Чисті технічні метадані та додаткові витрати XMP",
+    "purge_c2pa_ai_desc": "Видаліть приховані XML-пакети та сторонні потоки відстеження, щоб зменшити розмір файлу та захистити технічну конфіденційність.",
+    "remove_metadata_desc": "Очистіть особу автора, підписи програмного забезпечення, мітки часу та вбудовані дані для максимальної конфіденційності.",
+    "ethical_notice_title": "Відповідальне використання та етика:",
+    "ethical_notice_desc": "Цей інструмент призначений для захисту конфіденційності, законного оновлення авторських прав і архівування. Користувачі несуть повну відповідальність за право власності та юридичну достовірність своїх файлів. Підробка та шахрайство суворо заборонені.",
+
     "edit_metadata_title": "Редагувати метадані PDF",
     "edit_metadata_desc": "Легко налаштовуйте автора, назву документа, ключові слова, програмне забезпечення творця та позначки часу.",
     "reading_metadata": "Читання властивостей документа...",
@@ -15552,6 +15755,13 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "saving_btn": "Збереження..."
   },
   "ms": {
+    "quick_presets": "Profil Keserasian Standard:",
+    "purge_c2pa_ai": "Metadata Teknikal Bersih & Overhed XMP",
+    "purge_c2pa_ai_desc": "Alih keluar pakej XML tersembunyi dan aliran penjejakan pihak ketiga untuk mengurangkan saiz fail dan melindungi privasi teknikal.",
+    "remove_metadata_desc": "Bersihkan identiti pengarang, tandatangan perisian, cap masa dan data terbenam untuk privasi maksimum.",
+    "ethical_notice_title": "Penggunaan & Etika Bertanggungjawab:",
+    "ethical_notice_desc": "Alat ini disediakan untuk perlindungan privasi, kemas kini hak cipta yang sah dan pengarkiban. Pengguna memikul tanggungjawab penuh untuk pemilikan dan kesahihan undang-undang fail mereka. Pemalsuan dan penipuan adalah dilarang sama sekali.",
+
     "edit_metadata_title": "Edit Metadata PDF",
     "edit_metadata_desc": "Sesuaikan pengarang, tajuk dokumen, kata kunci, perisian pencipta dan cap masa dengan lancar.",
     "reading_metadata": "Membaca sifat dokumen...",
