@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { SlidersHorizontal, Download, Settings2, ShieldCheck, ArrowRight, RotateCcw, Scale } from 'lucide-react';
+import { SlidersHorizontal, Download, Settings2, ShieldCheck, ArrowRight, RotateCcw, Scale, Calendar, Clock } from 'lucide-react';
 import type { ExistingPdfMetadata } from '../../engines/pdf/editMetadataPdf';
 import { toolSlugs } from '../../i18n/slugTranslations';
 
@@ -77,10 +77,18 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
     setModDate(originalMeta.modDate || getNowDatetimeLocal());
   };
 
-  const getNowDatetimeLocal = (): string => {
-    const now = new Date();
+  const getDatetimeLocal = (d?: Date): string => {
+    const now = d || new Date();
     const pad = (n: number) => String(n).padStart(2, '0');
     return `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}T${pad(now.getHours())}:${pad(now.getMinutes())}`;
+  };
+
+  const getPastDate = (daysAgo: number = 0, monthsAgo: number = 0, yearsAgo: number = 0): string => {
+    const d = new Date();
+    if (yearsAgo) d.setFullYear(d.getFullYear() - yearsAgo);
+    if (monthsAgo) d.setMonth(d.getMonth() - monthsAgo);
+    if (daysAgo) d.setDate(d.getDate() - daysAgo);
+    return getDatetimeLocal(d);
   };
 
 
@@ -327,26 +335,114 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
           </div>
         </div>
 
-        {/* Creation Date & Mod Date */}
-        <div>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 }}>
-            <label style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--text-main)' }}>
-              {t('creation_date_label', 'Creation Date')}
-            </label>
-            <button
-              type="button"
-              onClick={() => setCreationDate(getNowDatetimeLocal())}
-              style={{ background: 'none', border: 'none', color: 'var(--brand-primary)', fontSize: '0.72rem', cursor: 'pointer', padding: 0, fontWeight: 600 }}
-            >
-              {t('set_to_now', 'Set to Now')}
-            </button>
+        {/* Date Section (Creation & Modification) */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 14, background: 'var(--bg-input)', padding: 12, borderRadius: 10, border: '1px solid var(--border-color)' }}>
+          {/* Creation Date */}
+          <div>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+              <label style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: 6 }}>
+                <Calendar size={13} className="text-brand-primary" />
+                <span>{t('creation_date_label', 'Creation Date')}</span>
+              </label>
+              {creationDate && (
+                <button
+                  type="button"
+                  onClick={() => setCreationDate('')}
+                  style={{ background: 'none', border: 'none', color: '#ef4444', fontSize: '0.7rem', cursor: 'pointer', padding: 0, fontWeight: 600 }}
+                >
+                  {t('quick_date_clear', 'Clear')}
+                </button>
+              )}
+            </div>
+            <input
+              type="datetime-local"
+              value={creationDate}
+              onChange={(e) => setCreationDate(e.target.value)}
+              style={{ width: '100%', padding: '8px 10px', fontSize: '0.82rem', borderRadius: 8, border: '1px solid var(--border-color)', background: 'var(--bg-card)', color: 'var(--text-main)', marginBottom: 8 }}
+            />
+            {/* Quick Presets for Creation Date */}
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
+              <button
+                type="button"
+                onClick={() => setCreationDate(getDatetimeLocal())}
+                style={{ padding: '3px 8px', fontSize: '0.7rem', borderRadius: 6, border: '1px solid var(--border-color)', background: 'var(--bg-card)', color: 'var(--text-main)', cursor: 'pointer', fontWeight: 600 }}
+              >
+                ⚡ {t('quick_date_now', 'Now')}
+              </button>
+              <button
+                type="button"
+                onClick={() => setCreationDate(getPastDate(1))}
+                style={{ padding: '3px 8px', fontSize: '0.7rem', borderRadius: 6, border: '1px solid var(--border-color)', background: 'var(--bg-card)', color: 'var(--text-main)', cursor: 'pointer', fontWeight: 500 }}
+              >
+                📅 {t('quick_date_yesterday', 'Yesterday')}
+              </button>
+              <button
+                type="button"
+                onClick={() => setCreationDate(getPastDate(7))}
+                style={{ padding: '3px 8px', fontSize: '0.7rem', borderRadius: 6, border: '1px solid var(--border-color)', background: 'var(--bg-card)', color: 'var(--text-main)', cursor: 'pointer', fontWeight: 500 }}
+              >
+                🗓️ {t('quick_date_1week', '1 Week Ago')}
+              </button>
+              <button
+                type="button"
+                onClick={() => setCreationDate(getPastDate(0, 1))}
+                style={{ padding: '3px 8px', fontSize: '0.7rem', borderRadius: 6, border: '1px solid var(--border-color)', background: 'var(--bg-card)', color: 'var(--text-main)', cursor: 'pointer', fontWeight: 500 }}
+              >
+                🗓️ {t('quick_date_1month', '1 Month Ago')}
+              </button>
+              <button
+                type="button"
+                onClick={() => setCreationDate(getPastDate(0, 0, 1))}
+                style={{ padding: '3px 8px', fontSize: '0.7rem', borderRadius: 6, border: '1px solid var(--border-color)', background: 'var(--bg-card)', color: 'var(--text-main)', cursor: 'pointer', fontWeight: 500 }}
+              >
+                🗓️ {t('quick_date_1year', '1 Year Ago')}
+              </button>
+            </div>
           </div>
-          <input
-            type="datetime-local"
-            value={creationDate}
-            onChange={(e) => setCreationDate(e.target.value)}
-            style={{ width: '100%', padding: '8px 10px', fontSize: '0.82rem', borderRadius: 8, border: '1px solid var(--border-color)', background: 'var(--bg-input)', color: 'var(--text-main)' }}
-          />
+
+          <div style={{ height: 1, background: 'var(--border-color)', opacity: 0.6 }} />
+
+          {/* Modification Date */}
+          <div>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+              <label style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: 6 }}>
+                <Clock size={13} className="text-brand-primary" />
+                <span>{t('mod_date_label', 'Modification Date')}</span>
+              </label>
+              {modDate && (
+                <button
+                  type="button"
+                  onClick={() => setModDate('')}
+                  style={{ background: 'none', border: 'none', color: '#ef4444', fontSize: '0.7rem', cursor: 'pointer', padding: 0, fontWeight: 600 }}
+                >
+                  {t('quick_date_clear', 'Clear')}
+                </button>
+              )}
+            </div>
+            <input
+              type="datetime-local"
+              value={modDate}
+              onChange={(e) => setModDate(e.target.value)}
+              style={{ width: '100%', padding: '8px 10px', fontSize: '0.82rem', borderRadius: 8, border: '1px solid var(--border-color)', background: 'var(--bg-card)', color: 'var(--text-main)', marginBottom: 8 }}
+            />
+            {/* Quick Presets for Modification Date */}
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
+              <button
+                type="button"
+                onClick={() => setModDate(getDatetimeLocal())}
+                style={{ padding: '3px 8px', fontSize: '0.7rem', borderRadius: 6, border: '1px solid var(--border-color)', background: 'var(--bg-card)', color: 'var(--text-main)', cursor: 'pointer', fontWeight: 600 }}
+              >
+                ⚡ {t('quick_date_now', 'Now')}
+              </button>
+              <button
+                type="button"
+                onClick={() => setModDate(creationDate || getDatetimeLocal())}
+                style={{ padding: '3px 8px', fontSize: '0.7rem', borderRadius: 6, border: '1px solid var(--border-color)', background: 'var(--bg-card)', color: 'var(--text-main)', cursor: 'pointer', fontWeight: 500 }}
+              >
+                🔄 {t('quick_date_sync', 'Match Creation Date')}
+              </button>
+            </div>
+          </div>
         </div>
 
         {/* C2PA / AI Purge Checkbox */}

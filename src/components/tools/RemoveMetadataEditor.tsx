@@ -311,23 +311,65 @@ export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
               </div>
 
               {/* Row 7: Tanggal Dibuat (Creation Date) */}
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, padding: '4px 0', borderBottom: '1px solid var(--border-color)' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 8, padding: '4px 0', borderBottom: '1px solid var(--border-color)' }}>
                 <span style={{ color: 'var(--text-muted)', display: 'inline-flex', alignItems: 'center', gap: 6, flexShrink: 0 }}>
                   <Calendar size={13} /> {t('created_at_inspector_label', 'Created At:')}
                 </span>
-                <span style={{ fontWeight: metadata.creationDateHuman ? 700 : 400, color: metadata.creationDateHuman ? 'var(--text-main)' : 'var(--text-muted)', textAlign: 'right' }}>
-                  {metadata.creationDateHuman || t('empty_val', '— (Empty)')}
-                </span>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8, textAlign: 'right' }}>
+                  <span style={{ fontWeight: metadata.creationDateHuman ? 700 : 400, color: metadata.creationDateHuman ? 'var(--text-main)' : 'var(--text-muted)' }}>
+                    {metadata.creationDateHuman || t('empty_val', '— (Empty)')}
+                  </span>
+                  <a
+                    href={editMetadataUrl}
+                    style={{
+                      fontSize: '0.7rem',
+                      color: 'var(--brand-primary)',
+                      textDecoration: 'none',
+                      padding: '2px 6px',
+                      background: 'rgba(225, 29, 72, 0.08)',
+                      borderRadius: 4,
+                      fontWeight: 600,
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 2,
+                      whiteSpace: 'nowrap',
+                    }}
+                    title={t('cross_customize_date_ask', 'Want to customize dates instead?')}
+                  >
+                    ✏️ {t('edit_date_btn', 'Edit')}
+                  </a>
+                </div>
               </div>
 
               {/* Row 8: Terakhir Diubah (Mod Date) */}
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, padding: '4px 0', borderBottom: '1px solid var(--border-color)' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 8, padding: '4px 0', borderBottom: '1px solid var(--border-color)' }}>
                 <span style={{ color: 'var(--text-muted)', display: 'inline-flex', alignItems: 'center', gap: 6, flexShrink: 0 }}>
                   <Clock size={13} /> {t('modified_at_inspector_label', 'Modified At:')}
                 </span>
-                <span style={{ fontWeight: metadata.modDateHuman ? 700 : 400, color: metadata.modDateHuman ? 'var(--text-main)' : 'var(--text-muted)', textAlign: 'right' }}>
-                  {metadata.modDateHuman || t('empty_val', '— (Empty)')}
-                </span>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8, textAlign: 'right' }}>
+                  <span style={{ fontWeight: metadata.modDateHuman ? 700 : 400, color: metadata.modDateHuman ? 'var(--text-main)' : 'var(--text-muted)' }}>
+                    {metadata.modDateHuman || t('empty_val', '— (Empty)')}
+                  </span>
+                  <a
+                    href={editMetadataUrl}
+                    style={{
+                      fontSize: '0.7rem',
+                      color: 'var(--brand-primary)',
+                      textDecoration: 'none',
+                      padding: '2px 6px',
+                      background: 'rgba(225, 29, 72, 0.08)',
+                      borderRadius: 4,
+                      fontWeight: 600,
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 2,
+                      whiteSpace: 'nowrap',
+                    }}
+                    title={t('cross_customize_date_ask', 'Want to customize dates instead?')}
+                  >
+                    ✏️ {t('edit_date_btn', 'Edit')}
+                  </a>
+                </div>
               </div>
 
               {/* Row 9: Jejak AI & Manifest XMP */}
