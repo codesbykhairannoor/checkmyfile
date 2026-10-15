@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { SlidersHorizontal, Download, Settings2, Sparkles, Calendar, ShieldCheck, ArrowRight, RefreshCw, RotateCcw } from 'lucide-react';
+import { SlidersHorizontal, Download, Settings2, Sparkles, ShieldCheck, ArrowRight, RotateCcw } from 'lucide-react';
 import type { ExistingPdfMetadata } from '../../engines/pdf/editMetadataPdf';
+import { toolSlugs } from '../../i18n/slugTranslations';
 
 interface EditMetadataEditorProps {
   file: File;
@@ -14,10 +15,10 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
   file,
   onApply,
   tUi = {},
-  currentLang = 'id',
+  currentLang = 'en',
   isProcessing
 }) => {
-  const t = (key: string, fallback: string) => tUi[key] || tUi[fallback] || fallback;
+  const t = (key: string, fallback: string) => tUi[key] || fallback;
 
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
@@ -133,25 +134,26 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
     });
   };
 
+  const removeMetadataSlug = toolSlugs['remove-pdf-metadata']?.[currentLang] || 'remove-pdf-metadata';
+  const removeMetadataUrl = currentLang === 'en' ? `/${removeMetadataSlug}` : `/${currentLang}/${removeMetadataSlug}`;
+
   return (
     <div className="glass-panel" style={{ padding: 24, display: 'flex', flexDirection: 'column', gap: 20, minWidth: 320 }}>
       {/* Header */}
       <div>
         <h4 style={{ fontWeight: 800, fontSize: '1.15rem', color: 'var(--text-main)', marginBottom: 6, display: 'flex', alignItems: 'center', gap: 8 }}>
           <SlidersHorizontal size={20} className="text-brand-primary" />
-          <span>{currentLang === 'id' ? 'Edit Metadata & Properti PDF' : 'Edit PDF Metadata'}</span>
+          <span>{t('edit_metadata_title', 'Edit PDF Metadata')}</span>
         </h4>
         <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>
-          {currentLang === 'id'
-            ? 'Atur judul, penulis hak cipta, tanggal pengerjaan, dan software pembuat dokumen secara resmi.'
-            : 'Customize author, document title, keywords, creator software, and timestamps seamlessly.'}
+          {t('edit_metadata_desc', 'Customize author, document title, keywords, creator software, and timestamps seamlessly.')}
         </p>
       </div>
 
       {isLoadingMeta && (
         <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: '0.8rem', color: 'var(--text-muted)' }}>
           <div className="spinner" style={{ width: 14, height: 14, border: '2px solid var(--border-color)', borderTopColor: 'var(--brand-primary)', borderRadius: '50%', animation: 'spin 1s linear infinite' }} />
-          <span>{currentLang === 'id' ? 'Membaca metadata dokumen...' : 'Reading document properties...'}</span>
+          <span>{t('reading_metadata', 'Reading document properties...')}</span>
         </div>
       )}
 
@@ -177,7 +179,7 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
           >
             <span style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
               <span>🔍</span>
-              <span>{currentLang === 'id' ? 'Metadata Asli Dokumen' : 'Original Document Metadata'}</span>
+              <span>{t('original_doc_metadata', 'Original Document Metadata')}</span>
               <span
                 style={{
                   fontSize: '0.72rem',
@@ -188,11 +190,11 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
                   fontWeight: 700,
                 }}
               >
-                {originalMeta.foundCount} {currentLang === 'id' ? 'Terdeteksi' : 'Found'}
+                {originalMeta.foundCount} {t('meta_found', 'Found')}
               </span>
             </span>
             <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-              {showOriginalMeta ? (currentLang === 'id' ? 'Tutup ▲' : 'Lihat Detail ▼') : (currentLang === 'id' ? 'Lihat Detail ▼' : 'View Details ▼')}
+              {showOriginalMeta ? t('hide_details', 'Hide ▲') : t('view_details', 'View Details ▼')}
             </span>
           </button>
 
@@ -200,7 +202,7 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
             <div style={{ padding: '12px 14px', borderTop: '1px solid var(--border-color)', background: 'var(--bg-card)', fontSize: '0.78rem', display: 'flex', flexDirection: 'column', gap: 8 }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 2 }}>
                 <span style={{ fontWeight: 700, color: 'var(--text-main)' }}>
-                  {currentLang === 'id' ? 'Nilai Asli Sebelum Diedit:' : 'Original Values Before Edit:'}
+                  {t('original_values_before_edit', 'Original Values Before Edit:')}
                 </span>
                 <button
                   type="button"
@@ -220,45 +222,45 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
                   }}
                 >
                   <RotateCcw size={11} />
-                  <span>{currentLang === 'id' ? 'Reset ke Asli' : 'Reset Inputs'}</span>
+                  <span>{t('reset_inputs', 'Reset Inputs')}</span>
                 </button>
               </div>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: 5, background: 'var(--bg-input)', padding: 10, borderRadius: 8 }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', gap: 8 }}>
-                  <span style={{ color: 'var(--text-muted)' }}>{currentLang === 'id' ? 'Penulis:' : 'Author:'}</span>
+                  <span style={{ color: 'var(--text-muted)' }}>{t('author_meta_label', 'Author:')}</span>
                   <span style={{ fontWeight: 600, color: originalMeta.author ? 'var(--text-main)' : 'var(--text-muted)', textAlign: 'right' }}>
                     {originalMeta.author || '—'}
                   </span>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', gap: 8 }}>
-                  <span style={{ color: 'var(--text-muted)' }}>{currentLang === 'id' ? 'Judul:' : 'Title:'}</span>
+                  <span style={{ color: 'var(--text-muted)' }}>{t('title_meta_label', 'Title:')}</span>
                   <span style={{ fontWeight: 600, color: originalMeta.title ? 'var(--text-main)' : 'var(--text-muted)', textAlign: 'right' }}>
                     {originalMeta.title || '—'}
                   </span>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', gap: 8 }}>
-                  <span style={{ color: 'var(--text-muted)' }}>{currentLang === 'id' ? 'Aplikasi:' : 'Creator:'}</span>
+                  <span style={{ color: 'var(--text-muted)' }}>{t('creator_meta_label', 'Creator:')}</span>
                   <span style={{ fontWeight: 600, color: originalMeta.creator ? 'var(--text-main)' : 'var(--text-muted)', textAlign: 'right' }}>
                     {originalMeta.creator || '—'}
                   </span>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', gap: 8 }}>
-                  <span style={{ color: 'var(--text-muted)' }}>{currentLang === 'id' ? 'Mesin PDF:' : 'Producer:'}</span>
+                  <span style={{ color: 'var(--text-muted)' }}>{t('producer_meta_label', 'Producer:')}</span>
                   <span style={{ fontWeight: 600, color: originalMeta.producer ? 'var(--text-main)' : 'var(--text-muted)', textAlign: 'right' }}>
                     {originalMeta.producer || '—'}
                   </span>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', gap: 8 }}>
-                  <span style={{ color: 'var(--text-muted)' }}>{currentLang === 'id' ? 'Dibuat Pada:' : 'Created At:'}</span>
+                  <span style={{ color: 'var(--text-muted)' }}>{t('created_at_meta_label', 'Created At:')}</span>
                   <span style={{ fontWeight: 600, color: originalMeta.creationDateHuman ? 'var(--text-main)' : 'var(--text-muted)', textAlign: 'right' }}>
                     {originalMeta.creationDateHuman || '—'}
                   </span>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', gap: 8 }}>
-                  <span style={{ color: 'var(--text-muted)' }}>{currentLang === 'id' ? 'Jejak AI/XMP:' : 'AI/XMP Stream:'}</span>
+                  <span style={{ color: 'var(--text-muted)' }}>{t('ai_xmp_stream_label', 'AI / XMP Stream:')}</span>
                   <span style={{ fontWeight: 600, color: originalMeta.hasXmp ? '#f59e0b' : '#10b981' }}>
-                    {originalMeta.hasXmp ? (currentLang === 'id' ? '⚠️ Ada Paket XMP' : '⚠️ Has XMP') : (currentLang === 'id' ? '✅ Bersih' : '✅ Clean')}
+                    {originalMeta.hasXmp ? t('has_xmp_badge', '⚠️ Has XMP') : t('clean_xmp_badge', '✅ Clean')}
                   </span>
                 </div>
               </div>
@@ -271,7 +273,7 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
       <div style={{ background: 'var(--bg-input)', padding: '12px 14px', borderRadius: 12, border: '1px solid var(--border-color)' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 8, fontSize: '0.8rem', fontWeight: 700, color: 'var(--text-main)' }}>
           <Sparkles size={14} className="text-brand-primary" />
-          <span>{currentLang === 'id' ? 'Preset Aplikasi Populer:' : 'Quick Software Presets:'}</span>
+          <span>{t('quick_presets', 'Quick Software Presets:')}</span>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 6 }}>
           <button
@@ -310,13 +312,13 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
         {/* Title */}
         <div>
           <label style={{ display: 'block', fontSize: '0.8rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: 4 }}>
-            {currentLang === 'id' ? 'Judul Dokumen (Title)' : 'Document Title'}
+            {t('doc_title', 'Document Title')}
           </label>
           <input
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            placeholder={currentLang === 'id' ? 'cth: Laporan Kerja Praktek 2026' : 'e.g. Official Project Proposal'}
+            placeholder={t('doc_title_placeholder', 'e.g. Official Project Proposal')}
             style={{ width: '100%', padding: '9px 12px', fontSize: '0.85rem', borderRadius: 8, border: '1px solid var(--border-color)', background: 'var(--bg-input)', color: 'var(--text-main)' }}
           />
         </div>
@@ -324,13 +326,13 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
         {/* Author */}
         <div>
           <label style={{ display: 'block', fontSize: '0.8rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: 4 }}>
-            {currentLang === 'id' ? 'Penulis / Pemilik Hak Cipta (Author)' : 'Author / Copyright Owner'}
+            {t('author_copyright', 'Author / Copyright Owner')}
           </label>
           <input
             type="text"
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
-            placeholder={currentLang === 'id' ? 'cth: Khairan Noor' : 'e.g. John Doe'}
+            placeholder={t('author_placeholder', 'e.g. John Doe')}
             style={{ width: '100%', padding: '9px 12px', fontSize: '0.85rem', borderRadius: 8, border: '1px solid var(--border-color)', background: 'var(--bg-input)', color: 'var(--text-main)' }}
           />
         </div>
@@ -338,13 +340,13 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
         {/* Subject */}
         <div>
           <label style={{ display: 'block', fontSize: '0.8rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: 4 }}>
-            {currentLang === 'id' ? 'Subjek / Deskripsi (Subject)' : 'Subject / Topic'}
+            {t('subject_topic', 'Subject / Topic')}
           </label>
           <input
             type="text"
             value={subject}
             onChange={(e) => setSubject(e.target.value)}
-            placeholder={currentLang === 'id' ? 'cth: Perjanjian Kerjasama Bisnis' : 'e.g. Business Agreement'}
+            placeholder={t('subject_placeholder', 'e.g. Business Agreement')}
             style={{ width: '100%', padding: '9px 12px', fontSize: '0.85rem', borderRadius: 8, border: '1px solid var(--border-color)', background: 'var(--bg-input)', color: 'var(--text-main)' }}
           />
         </div>
@@ -352,7 +354,7 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
         {/* Keywords */}
         <div>
           <label style={{ display: 'block', fontSize: '0.8rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: 4 }}>
-            {currentLang === 'id' ? 'Kata Kunci (Keywords, pisahkan koma)' : 'Keywords (Comma separated)'}
+            {t('keywords_label', 'Keywords (Comma separated)')}
           </label>
           <input
             type="text"
@@ -367,7 +369,7 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
           <div>
             <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: 4 }}>
-              {currentLang === 'id' ? 'Aplikasi (Creator)' : 'Application (Creator)'}
+              {t('app_creator', 'Application (Creator)')}
             </label>
             <input
               type="text"
@@ -379,7 +381,7 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
           </div>
           <div>
             <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: 4 }}>
-              {currentLang === 'id' ? 'Mesin PDF (Producer)' : 'PDF Engine (Producer)'}
+              {t('pdf_engine_producer', 'PDF Engine (Producer)')}
             </label>
             <input
               type="text"
@@ -395,14 +397,14 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
         <div>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 }}>
             <label style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--text-main)' }}>
-              {currentLang === 'id' ? 'Tanggal Pembuatan Dokumen' : 'Creation Date'}
+              {t('creation_date_label', 'Creation Date')}
             </label>
             <button
               type="button"
               onClick={() => setCreationDate(getNowDatetimeLocal())}
               style={{ background: 'none', border: 'none', color: 'var(--brand-primary)', fontSize: '0.72rem', cursor: 'pointer', padding: 0, fontWeight: 600 }}
             >
-              {currentLang === 'id' ? 'Set Sekarang' : 'Set to Now'}
+              {t('set_to_now', 'Set to Now')}
             </button>
           </div>
           <input
@@ -424,12 +426,10 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
           <div style={{ fontSize: '0.78rem', lineHeight: 1.4 }}>
             <strong style={{ color: 'var(--text-main)', display: 'block' }}>
               <ShieldCheck size={14} style={{ display: 'inline', verticalAlign: '-2px', marginRight: 4, color: '#10b981' }} />
-              {currentLang === 'id' ? 'Bersihkan Jejak Manifest AI & C2PA' : 'Purge AI & C2PA Provenance Manifests'}
+              {t('purge_c2pa_ai', 'Purge AI & C2PA Provenance Manifests')}
             </strong>
             <span style={{ color: 'var(--text-muted)' }}>
-              {currentLang === 'id'
-                ? 'Hapus paket XML XMP tersembunyi yang disisipkan oleh generator otomatis.'
-                : 'Delete hidden XML XMP tracking streams generated by automated AI tools.'}
+              {t('purge_c2pa_ai_desc', 'Delete hidden XML XMP tracking streams generated by automated AI tools.')}
             </span>
           </div>
         </label>
@@ -449,22 +449,22 @@ export const EditMetadataEditor: React.FC<EditMetadataEditorProps> = ({
         )}
         <span>
           {isProcessing
-            ? (currentLang === 'id' ? 'Menerapkan Properti...' : 'Saving Properties...')
-            : (currentLang === 'id' ? 'Simpan & Terapkan Metadata' : 'Save & Update Metadata')}
+            ? t('saving_metadata', 'Saving Properties...')
+            : t('save_apply_metadata', 'Save & Update Metadata')}
         </span>
       </button>
 
       {/* Cross-link to Remove Metadata */}
       <div style={{ paddingTop: 10, borderTop: '1px solid var(--border-color)', textAlign: 'center' }}>
         <a
-          href={currentLang === 'id' ? '/id/hapus-metadata-pdf' : '/remove-pdf-metadata'}
+          href={removeMetadataUrl}
           style={{ fontSize: '0.78rem', color: 'var(--text-muted)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 4, transition: 'color 0.2s' }}
           onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--brand-primary)')}
           onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--text-muted)')}
         >
-          <span>{currentLang === 'id' ? 'Ingin mengosongkan seluruh data tanpa jejak?' : 'Want to completely strip all metadata?'}</span>
+          <span>{t('cross_strip_metadata_ask', 'Want to completely strip all metadata?')}</span>
           <strong style={{ color: 'var(--brand-primary)', display: 'inline-flex', alignItems: 'center', gap: 2 }}>
-            {currentLang === 'id' ? 'Hapus Metadata' : 'Remove Metadata'} <ArrowRight size={12} />
+            {t('cross_strip_metadata_btn', 'Remove Metadata')} <ArrowRight size={12} />
           </strong>
         </a>
       </div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Eraser, Download, Settings2, ArrowRight, ShieldCheck, AlertTriangle, FileText, RefreshCw, User, Tag, Laptop, Cpu, Calendar, Clock, Sparkles } from 'lucide-react';
 import type { ExistingPdfMetadata } from '../../engines/pdf/editMetadataPdf';
+import { toolSlugs } from '../../i18n/slugTranslations';
 
 interface RemoveMetadataEditorProps {
   file?: File;
@@ -15,14 +16,12 @@ export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
   tUi = {},
   onProcess,
   isProcessing,
-  currentLang = 'id',
+  currentLang = 'en',
 }) => {
-  const t = (key: string, fallback: string) => tUi[key] || tUi[fallback] || fallback;
-  const isId = currentLang === 'id';
+  const t = (key: string, fallback: string) => tUi[key] || fallback;
 
   const [metadata, setMetadata] = useState<ExistingPdfMetadata | null>(null);
   const [isLoadingMeta, setIsLoadingMeta] = useState(false);
-  const [showDetails, setShowDetails] = useState(true);
 
   const loadMetadata = async () => {
     if (!file) return;
@@ -41,6 +40,9 @@ export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
   useEffect(() => {
     loadMetadata();
   }, [file, currentLang]);
+
+  const editMetadataSlug = toolSlugs['edit-pdf-metadata']?.[currentLang] || 'edit-pdf-metadata';
+  const editMetadataUrl = currentLang === 'en' ? `/${editMetadataSlug}` : `/${currentLang}/${editMetadataSlug}`;
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
@@ -78,14 +80,12 @@ export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
               fontFamily: 'var(--font-display)',
             }}
           >
-            {t("remove_metadata", isId ? "Hapus Metadata PDF" : "Remove PDF Metadata")}
+            {t("remove_metadata_title", t("remove_metadata", "Remove PDF Metadata"))}
           </h3>
           <p style={{ margin: 0, color: 'var(--text-muted)', fontSize: '0.85rem', lineHeight: 1.5 }}>
             {t(
               "remove_metadata_desc",
-              isId
-                ? "Sanitasi nama penulis, software, stempel waktu, dan jejak AI secara permanen."
-                : "Sanitize author, creator, GPS, and creation timestamps permanently."
+              "Sanitize author, creator, GPS, and creation timestamps permanently."
             )}
           </p>
         </div>
@@ -107,14 +107,14 @@ export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
             <span style={{ fontSize: '0.9rem', fontWeight: 800, color: 'var(--text-main)' }}>
-              🔍 {isId ? 'Hasil Pemeriksaan Metadata' : 'Document Metadata Inspector'}
+              🔍 {t('meta_inspector_title', 'Document Metadata Inspector')}
             </span>
           </div>
           <button
             type="button"
             onClick={loadMetadata}
             disabled={isLoadingMeta || !file}
-            title={isId ? 'Pindai ulang metadata file' : 'Rescan metadata'}
+            title={t('rescan_btn', 'Rescan')}
             style={{
               background: 'transparent',
               border: 'none',
@@ -129,7 +129,7 @@ export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
             }}
           >
             <RefreshCw size={13} style={{ animation: isLoadingMeta ? 'spin 1s linear infinite' : 'none' }} />
-            <span>{isId ? 'Pindai Ulang' : 'Rescan'}</span>
+            <span>{t('rescan_btn', 'Rescan')}</span>
           </button>
         </div>
 
@@ -158,7 +158,7 @@ export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
                 animation: 'spin 1s linear infinite',
               }}
             />
-            <span>{isId ? 'Memindai jejak & metadata dokumen...' : 'Scanning document metadata...'}</span>
+            <span>{t('scanning_metadata', 'Scanning document metadata...')}</span>
           </div>
         )}
 
@@ -181,14 +181,10 @@ export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
                 <AlertTriangle size={18} style={{ color: '#f59e0b', flexShrink: 0, marginTop: 2 }} />
                 <div style={{ fontSize: '0.8rem', lineHeight: 1.45 }}>
                   <strong style={{ color: '#f59e0b', display: 'block', marginBottom: 2 }}>
-                    {isId
-                      ? `Ditemukan ${metadata.foundCount} Jejak Metadata di File Ini`
-                      : `Found ${metadata.foundCount} Metadata Properties in File`}
+                    {metadata.foundCount} {t('found_meta_title', 'Metadata Properties Found in File')}
                   </strong>
                   <span style={{ color: 'var(--text-muted)' }}>
-                    {isId
-                      ? 'Dokumen menyimpan informasi identitas & perangkat berikut yang dapat dilihat pihak lain:'
-                      : 'This document contains tracking details that may expose author or software info:'}
+                    {t('found_meta_desc', 'This document contains tracking details that may expose author or software info:')}
                   </span>
                 </div>
               </div>
@@ -207,12 +203,10 @@ export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
                 <ShieldCheck size={18} style={{ color: '#10b981', flexShrink: 0, marginTop: 2 }} />
                 <div style={{ fontSize: '0.8rem', lineHeight: 1.45 }}>
                   <strong style={{ color: '#10b981', display: 'block', marginBottom: 2 }}>
-                    {isId ? 'Dokumen Bersih (0 Jejak Metadata)' : 'Clean Document (0 Metadata Found)'}
+                    {t('clean_meta_title', 'Clean Document (0 Metadata Found)')}
                   </strong>
                   <span style={{ color: 'var(--text-muted)' }}>
-                    {isId
-                      ? 'Tidak ditemukan nama penulis, judul, stempel waktu, atau jejak XMP. Anda tetap dapat melakukan sanitasi untuk memastikan stream biner 100% steril.'
-                      : 'No author, creator software, timestamps, or XMP streams found. You may still sanitize to ensure 100% binary-level sterilization.'}
+                    {t('clean_meta_desc', 'No author, creator software, timestamps, or XMP streams found. You may still sanitize to ensure 100% binary-level sterilization.')}
                   </span>
                 </div>
               </div>
@@ -234,14 +228,14 @@ export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
               {/* Row 1: Penulis (Author) */}
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 8, padding: '4px 0', borderBottom: '1px solid var(--border-color)' }}>
                 <span style={{ color: 'var(--text-muted)', display: 'inline-flex', alignItems: 'center', gap: 6, flexShrink: 0 }}>
-                  <User size={13} /> {isId ? 'Penulis (Author):' : 'Author:'}
+                  <User size={13} /> {t('author_inspector_label', 'Author:')}
                 </span>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 8, textAlign: 'right' }}>
                   <span style={{ fontWeight: metadata.author ? 700 : 400, color: metadata.author ? 'var(--text-main)' : 'var(--text-muted)', wordBreak: 'break-word' }}>
-                    {metadata.author || (isId ? '— (Kosong)' : '— (Empty)')}
+                    {metadata.author || t('empty_val', '— (Empty)')}
                   </span>
                   <a
-                    href={isId ? '/id/edit-metadata-pdf' : '/edit-pdf-metadata'}
+                    href={editMetadataUrl}
                     style={{
                       fontSize: '0.7rem',
                       color: 'var(--brand-primary)',
@@ -255,9 +249,9 @@ export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
                       gap: 2,
                       whiteSpace: 'nowrap',
                     }}
-                    title={isId ? 'Ganti nama penulis di halaman Edit Metadata' : 'Change author in Edit Metadata'}
+                    title={t('cross_customize_ask', 'Want to customize author or title instead?')}
                   >
-                    ✏️ {isId ? 'Ganti' : 'Edit'}
+                    ✏️ {t('edit_author_btn', 'Edit')}
                   </a>
                 </div>
               </div>
@@ -265,10 +259,10 @@ export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
               {/* Row 2: Judul (Title) */}
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, padding: '4px 0', borderBottom: '1px solid var(--border-color)' }}>
                 <span style={{ color: 'var(--text-muted)', display: 'inline-flex', alignItems: 'center', gap: 6, flexShrink: 0 }}>
-                  <FileText size={13} /> {isId ? 'Judul (Title):' : 'Title:'}
+                  <FileText size={13} /> {t('title_inspector_label', 'Title:')}
                 </span>
                 <span style={{ fontWeight: metadata.title ? 700 : 400, color: metadata.title ? 'var(--text-main)' : 'var(--text-muted)', textAlign: 'right', wordBreak: 'break-word' }}>
-                  {metadata.title || (isId ? '— (Kosong)' : '— (Empty)')}
+                  {metadata.title || t('empty_val', '— (Empty)')}
                 </span>
               </div>
 
@@ -276,7 +270,7 @@ export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
               {metadata.subject && (
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, padding: '4px 0', borderBottom: '1px solid var(--border-color)' }}>
                   <span style={{ color: 'var(--text-muted)', display: 'inline-flex', alignItems: 'center', gap: 6, flexShrink: 0 }}>
-                    <Tag size={13} /> {isId ? 'Subjek:' : 'Subject:'}
+                    <Tag size={13} /> {t('subject_inspector_label', 'Subject:')}
                   </span>
                   <span style={{ fontWeight: 700, color: 'var(--text-main)', textAlign: 'right', wordBreak: 'break-word' }}>
                     {metadata.subject}
@@ -288,7 +282,7 @@ export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
               {metadata.keywords && (
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, padding: '4px 0', borderBottom: '1px solid var(--border-color)' }}>
                   <span style={{ color: 'var(--text-muted)', display: 'inline-flex', alignItems: 'center', gap: 6, flexShrink: 0 }}>
-                    <Tag size={13} /> {isId ? 'Kata Kunci:' : 'Keywords:'}
+                    <Tag size={13} /> {t('keywords_inspector_label', 'Keywords:')}
                   </span>
                   <span style={{ fontWeight: 600, color: 'var(--text-main)', textAlign: 'right', wordBreak: 'break-word' }}>
                     {metadata.keywords}
@@ -299,55 +293,55 @@ export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
               {/* Row 5: Software Pembuat (Creator) */}
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, padding: '4px 0', borderBottom: '1px solid var(--border-color)' }}>
                 <span style={{ color: 'var(--text-muted)', display: 'inline-flex', alignItems: 'center', gap: 6, flexShrink: 0 }}>
-                  <Laptop size={13} /> {isId ? 'Aplikasi (Creator):' : 'Creator App:'}
+                  <Laptop size={13} /> {t('creator_app_inspector_label', 'Creator App:')}
                 </span>
                 <span style={{ fontWeight: metadata.creator ? 700 : 400, color: metadata.creator ? 'var(--text-main)' : 'var(--text-muted)', textAlign: 'right', wordBreak: 'break-word' }}>
-                  {metadata.creator || (isId ? '— (Kosong)' : '— (Empty)')}
+                  {metadata.creator || t('empty_val', '— (Empty)')}
                 </span>
               </div>
 
               {/* Row 6: Mesin PDF (Producer) */}
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, padding: '4px 0', borderBottom: '1px solid var(--border-color)' }}>
                 <span style={{ color: 'var(--text-muted)', display: 'inline-flex', alignItems: 'center', gap: 6, flexShrink: 0 }}>
-                  <Cpu size={13} /> {isId ? 'Mesin (Producer):' : 'PDF Engine:'}
+                  <Cpu size={13} /> {t('pdf_engine_inspector_label', 'PDF Engine:')}
                 </span>
                 <span style={{ fontWeight: metadata.producer ? 700 : 400, color: metadata.producer ? 'var(--text-main)' : 'var(--text-muted)', textAlign: 'right', wordBreak: 'break-word' }}>
-                  {metadata.producer || (isId ? '— (Kosong)' : '— (Empty)')}
+                  {metadata.producer || t('empty_val', '— (Empty)')}
                 </span>
               </div>
 
               {/* Row 7: Tanggal Dibuat (Creation Date) */}
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, padding: '4px 0', borderBottom: '1px solid var(--border-color)' }}>
                 <span style={{ color: 'var(--text-muted)', display: 'inline-flex', alignItems: 'center', gap: 6, flexShrink: 0 }}>
-                  <Calendar size={13} /> {isId ? 'Dibuat Pada:' : 'Created At:'}
+                  <Calendar size={13} /> {t('created_at_inspector_label', 'Created At:')}
                 </span>
                 <span style={{ fontWeight: metadata.creationDateHuman ? 700 : 400, color: metadata.creationDateHuman ? 'var(--text-main)' : 'var(--text-muted)', textAlign: 'right' }}>
-                  {metadata.creationDateHuman || (isId ? '— (Kosong)' : '— (Empty)')}
+                  {metadata.creationDateHuman || t('empty_val', '— (Empty)')}
                 </span>
               </div>
 
               {/* Row 8: Terakhir Diubah (Mod Date) */}
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, padding: '4px 0', borderBottom: '1px solid var(--border-color)' }}>
                 <span style={{ color: 'var(--text-muted)', display: 'inline-flex', alignItems: 'center', gap: 6, flexShrink: 0 }}>
-                  <Clock size={13} /> {isId ? 'Terakhir Diubah:' : 'Modified At:'}
+                  <Clock size={13} /> {t('modified_at_inspector_label', 'Modified At:')}
                 </span>
                 <span style={{ fontWeight: metadata.modDateHuman ? 700 : 400, color: metadata.modDateHuman ? 'var(--text-main)' : 'var(--text-muted)', textAlign: 'right' }}>
-                  {metadata.modDateHuman || (isId ? '— (Kosong)' : '— (Empty)')}
+                  {metadata.modDateHuman || t('empty_val', '— (Empty)')}
                 </span>
               </div>
 
               {/* Row 9: Jejak AI & Manifest XMP */}
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 8, padding: '4px 0' }}>
                 <span style={{ color: 'var(--text-muted)', display: 'inline-flex', alignItems: 'center', gap: 6, flexShrink: 0 }}>
-                  <Sparkles size={13} /> {isId ? 'Paket XMP / AI:' : 'XMP / AI Stream:'}
+                  <Sparkles size={13} /> {t('xmp_ai_inspector_label', 'XMP / AI Stream:')}
                 </span>
                 {metadata.hasXmp ? (
                   <span style={{ color: '#f59e0b', fontWeight: 700, fontSize: '0.75rem', background: 'rgba(245, 158, 11, 0.1)', padding: '2px 6px', borderRadius: 4 }}>
-                    {isId ? '⚠️ Terdeteksi (XML Metadata)' : '⚠️ Detected'}
+                    {t('xmp_detected_inspector_badge', '⚠️ Detected (XML Metadata)')}
                   </span>
                 ) : (
                   <span style={{ color: '#10b981', fontWeight: 600, fontSize: '0.75rem' }}>
-                    {isId ? '✅ Bersih' : '✅ Clean'}
+                    {t('clean_xmp_badge', '✅ Clean')}
                   </span>
                 )}
               </div>
@@ -355,9 +349,7 @@ export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
 
             {/* Clear Explanation Note */}
             <p style={{ margin: 0, fontSize: '0.76rem', color: 'var(--text-muted)', lineHeight: 1.45 }}>
-              {isId
-                ? 'Seluruh properti di atas akan dikosongkan dan dibersihkan secara total saat Anda menekan tombol di bawah. Isi teks dan visual dokumen Anda dijamin tetap utuh 100%.'
-                : 'All detected metadata properties above will be permanently wiped clean without altering your document pages, text, or images.'}
+              {t('all_wiped_guarantee', 'All detected metadata properties above will be permanently wiped clean without altering your document pages, text, or images.')}
             </p>
           </div>
         )}
@@ -389,8 +381,8 @@ export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
         )}
         <span>
           {isProcessing
-            ? t("sanitizing_btn", isId ? "Membersihkan Metadata..." : "Sanitizing...")
-            : t("apply_remove_metadata", isId ? "Hapus Bersih Semua Metadata Sekarang" : "Sanitize Metadata Now")}
+            ? t("sanitizing_btn", "Sanitizing...")
+            : t("apply_remove_metadata", "Sanitize Metadata Now")}
         </span>
       </button>
 
@@ -408,9 +400,7 @@ export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
       >
         <ShieldCheck size={14} style={{ color: '#10b981' }} />
         <span>
-          {isId
-            ? 'Diproses 100% di browser Anda (RAM lokal). Dokumen tidak diunggah ke server.'
-            : 'Processed 100% locally in browser RAM. Never sent to any server.'}
+          {t('local_ram_guarantee', 'Processed 100% locally in browser RAM. Never sent to any server.')}
         </span>
       </div>
 
@@ -423,7 +413,7 @@ export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
         }}
       >
         <a
-          href={isId ? '/id/edit-metadata-pdf' : '/edit-pdf-metadata'}
+          href={editMetadataUrl}
           style={{
             fontSize: '0.8rem',
             color: 'var(--text-muted)',
@@ -437,9 +427,7 @@ export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
           onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--text-muted)')}
         >
           <span>
-            {isId
-              ? 'Ingin mengubah nama penulis atau judul?'
-              : 'Want to customize author or title instead?'}
+            {t('cross_customize_ask', 'Want to customize author or title instead?')}
           </span>
           <strong
             style={{
@@ -449,7 +437,7 @@ export const RemoveMetadataEditor: React.FC<RemoveMetadataEditorProps> = ({
               gap: 2,
             }}
           >
-            {isId ? 'Edit Metadata' : 'Edit Metadata'} <ArrowRight size={12} />
+            {t('cross_customize_btn', 'Edit Metadata')} <ArrowRight size={12} />
           </strong>
         </a>
       </div>
