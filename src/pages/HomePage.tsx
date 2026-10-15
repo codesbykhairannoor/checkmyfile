@@ -70,7 +70,7 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
               fontFamily: 'var(--font-display)'
             }}
           >
-            {smartHighlight(t.homeHeroTitle || 'All Document Tools in One Place')}
+            {smartHighlight(t.homeHeroTitle || 'Every Document Tool. 100% Private.')}
           </h1>
 
           {/* Semantic Sub-headline */}
