@@ -113,7 +113,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       }}
     >
       {/* 🌟 Main bar 🌟 */}
-      <div style={{
+      <div className="navbar-main-inner" style={{
         padding: '0 24px',
         maxWidth: 1440, margin: '0 auto',
         display: 'flex', alignItems: 'center',
@@ -127,7 +127,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Brand */}
           <div onClick={onNavigateHome} aria-label="Navigate to Home" style={{ display: 'flex', alignItems: 'center', gap: 12, cursor: 'pointer', userSelect: 'none', flexShrink: 0 }}>
             <img src="/logo.png" alt="HandleMyFile Logo" style={{ height: 38, width: 'auto', objectFit: 'contain' }} />
-            <div style={{ fontSize: '1.35rem', fontWeight: 800, letterSpacing: '-0.02em', lineHeight: 1.1, fontFamily: 'var(--font-heading)' }}>
+            <div className="brand-title" style={{ fontSize: '1.35rem', fontWeight: 800, letterSpacing: '-0.02em', lineHeight: 1.1, fontFamily: 'var(--font-heading)' }}>
               HandleMy<span className="gradient-text">File</span>
             </div>
           </div>
@@ -265,26 +265,43 @@ export const Navbar: React.FC<NavbarProps> = ({
           />
         </div>
 
-        {/* Mobile top-right controls */}
+        {/* Mobile top-right controls: Compact Language Selector + Thumb-Friendly Hamburger */}
         <div className="mobile-only" style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <button
-            onClick={onToggleTheme}
-            style={{ width: 34, height: 34, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: isLightMode ? '#fef3c7' : '#1e1b4b', color: isLightMode ? '#d97706' : '#a855f7', border: `1.5px solid ${isLightMode ? '#f59e0b' : '#6366f1'}`, cursor: 'pointer' }}
-          >
-            {isLightMode ? <Moon size={14} /> : <Sun size={14} />}
-          </button>
           <LocaleSwitcher
             currentLang={currentLang}
-            onSelectLang={onSelectLang}
+            onSelectLang={(code) => {
+              onSelectLang(code);
+              setIsMobileMenuOpen(false);
+            }}
             isOpen={isMobileLangOpen}
             onClose={() => setIsMobileLangOpen(false)}
-            onOpen={() => setIsMobileLangOpen(true)}
+            onOpen={() => {
+              setIsMobileMenuOpen(false);
+              setIsMobileLangOpen(true);
+            }}
+            compact={true}
           />
           <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            style={{ background: isMobileMenuOpen ? 'var(--brand-primary)' : 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: 8, color: isMobileMenuOpen ? 'white' : 'var(--text-main)', cursor: 'pointer', display: 'flex', padding: 7 }}
+            onClick={() => {
+              setIsMobileLangOpen(false);
+              setIsMobileMenuOpen(!isMobileMenuOpen);
+            }}
+            aria-label="Toggle Navigation Menu"
+            style={{
+              width: 38,
+              height: 38,
+              background: isMobileMenuOpen ? 'var(--brand-primary)' : 'var(--bg-card)',
+              border: '1px solid var(--border-color)',
+              borderRadius: 8,
+              color: isMobileMenuOpen ? 'white' : 'var(--text-main)',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              boxShadow: '0 2px 6px rgba(0,0,0,0.06)',
+            }}
           >
-            {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+            {isMobileMenuOpen ? <X size={21} /> : <Menu size={21} />}
           </button>
         </div>
         </div>
@@ -296,6 +313,49 @@ export const Navbar: React.FC<NavbarProps> = ({
           className="mobile-menu-container"
           style={{ position: 'absolute', top: 60, left: 0, right: 0, background: 'var(--bg-app)', borderBottom: '1px solid var(--border-color)', padding: '16px 16px 28px', maxHeight: 'calc(100vh - 60px)', overflowY: 'auto', zIndex: 40, boxShadow: '0 12px 30px rgba(0,0,0,0.15)' }}
         >
+          {/* Mobile Theme Preference Bar */}
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              padding: '10px 14px',
+              background: 'var(--bg-card)',
+              border: '1px solid var(--border-color)',
+              borderRadius: 10,
+              marginBottom: 14,
+            }}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              {isLightMode ? <Sun size={17} color="#d97706" /> : <Moon size={17} color="#a855f7" />}
+              <span style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)' }}>
+                {currentLang === 'id' ? (isLightMode ? 'Mode Terang' : 'Mode Gelap') : (isLightMode ? 'Light Mode' : 'Dark Mode')}
+              </span>
+            </div>
+            <button
+              onClick={onToggleTheme}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 6,
+                background: isLightMode ? '#fef3c7' : '#1e1b4b',
+                color: isLightMode ? '#d97706' : '#c084fc',
+                border: `1.5px solid ${isLightMode ? '#f59e0b' : '#6366f1'}`,
+                padding: '6px 14px',
+                borderRadius: 9999,
+                fontWeight: 700,
+                fontSize: '0.78rem',
+                cursor: 'pointer',
+                transition: 'all 0.2s',
+              }}
+            >
+              {isLightMode ? <Moon size={13} /> : <Sun size={13} />}
+              <span>
+                {currentLang === 'id' ? (isLightMode ? 'Ganti ke Gelap' : 'Ganti ke Terang') : (isLightMode ? 'Switch to Dark' : 'Switch to Light')}
+              </span>
+            </button>
+          </div>
+
           {/* Quick 3 buttons */}
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 8, marginBottom: 16 }}>
             {[
@@ -434,6 +494,8 @@ export const Navbar: React.FC<NavbarProps> = ({
           .desktop-only { display: none !important; }
           .mobile-only  { display: flex !important; }
           .mobile-menu-container { display: block !important; }
+          .navbar-main-inner { padding: 0 14px !important; }
+          .brand-title { font-size: 1.2rem !important; }
         }
         @media (min-width: 769px) {
           .mobile-only, .mobile-menu-container { display: none !important; }

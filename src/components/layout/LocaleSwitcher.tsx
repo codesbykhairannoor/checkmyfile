@@ -9,6 +9,7 @@ interface LocaleSwitcherProps {
   isOpen: boolean;
   onClose: () => void;
   onOpen: () => void;
+  compact?: boolean;
 }
 
 export const LocaleSwitcher: React.FC<LocaleSwitcherProps> = ({
@@ -17,6 +18,7 @@ export const LocaleSwitcher: React.FC<LocaleSwitcherProps> = ({
   isOpen,
   onClose,
   onOpen,
+  compact = false,
 }) => {
   const [filterQuery, setFilterQuery] = useState('');
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -57,22 +59,28 @@ export const LocaleSwitcher: React.FC<LocaleSwitcherProps> = ({
         style={{
           display: 'inline-flex',
           alignItems: 'center',
-          gap: 8,
+          gap: compact ? 5 : 8,
           background: isOpen ? 'rgba(225, 29, 72, 0.12)' : 'var(--bg-input)',
           border: isOpen ? '1px solid var(--brand-primary)' : '1px solid var(--border-color)',
           color: isOpen ? 'var(--text-accent)' : 'var(--text-main)',
-          padding: '8px 14px',
-          borderRadius: 9999,
+          padding: compact ? '6px 10px' : '8px 14px',
+          height: compact ? 38 : undefined,
+          borderRadius: compact ? 8 : 9999,
           cursor: 'pointer',
           fontWeight: 600,
-          fontSize: '0.88rem',
+          fontSize: compact ? '0.82rem' : '0.88rem',
           transition: 'all 0.2s ease',
+          userSelect: 'none',
         }}
         title="Pilih dari 30 Bahasa Partial URL & Wilayah GEO"
       >
-        <Globe size={16} />
-        <span>{currentLangInfo.flag} {currentLangInfo.code.toUpperCase()}</span>
-        <span style={{ fontSize: '0.7rem', opacity: 0.7 }}>▼</span>
+        <Globe size={compact ? 15 : 16} />
+        {compact ? (
+          <span>{currentLangInfo.code.toUpperCase()}</span>
+        ) : (
+          <span>{currentLangInfo.flag} {currentLangInfo.code.toUpperCase()}</span>
+        )}
+        <span style={{ fontSize: '0.65rem', opacity: 0.7 }}>▼</span>
       </button>
 
       {/* Fast Dropdown Panel underneath language button */}
@@ -83,7 +91,7 @@ export const LocaleSwitcher: React.FC<LocaleSwitcherProps> = ({
             position: 'absolute',
             top: 'calc(100% + 10px)',
             right: 0,
-            width: 320,
+            width: compact ? 'min(310px, calc(100vw - 28px))' : 320,
             maxHeight: 440,
             padding: 16,
             display: 'flex',
