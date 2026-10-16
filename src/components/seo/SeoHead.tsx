@@ -33,7 +33,7 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang, currentLang, title
     }
 
     // Determine current title, description, and faqs
-    let title = customTitle || `HandleMyFile | ${t.homeHeroTitle || 'Every Document Tool. 100% Private.'}`;
+    let title = customTitle || `HandleMyFile | ${t.homeHeroTitle || 'All Your Document Tools. 100% Private.'}`;
     let description = customDescription || t.homeHeroSubtitle || 'Process PDF, Word, Excel, and Images locally inside your browser memory. 100% Privacy, zero uploads required.';
     let faqs: { q: string; a: string }[] = [];
 
@@ -46,7 +46,7 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang, currentLang, title
       } else {
         const slug = tool.slugs[activeLang] || tool.id;
         const toolName = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-        title = `${toolName} - ${t.homeHeroTitle || 'Every Document Tool. 100% Private.'} | HandleMyFile`;
+        title = `${toolName} - ${t.homeHeroTitle || 'All Your Document Tools. 100% Private.'} | HandleMyFile`;
         description = `${toolName} - ${t.homeHeroSubtitle || 'Process PDF locally. 100% Privacy, zero uploads.'}`;
       }
       faqs = seoData.faqs;

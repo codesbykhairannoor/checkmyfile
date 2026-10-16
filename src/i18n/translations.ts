@@ -280,7 +280,7 @@ export interface UiDictionary {
 
 const baseDict: UiDictionary = {
   homeHeroBadge: "100% Client-Side Processing",
-  homeHeroTitle: "Every Document Tool. 100% Private.",
+  homeHeroTitle: "All Your Document Tools. 100% Private.",
   homeHeroSubtitle: "Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly. Free, no size limits, and highly secure.",
   homeSecurityBadge: "Security Architecture: 100% Client-Side Processing • 0 Bytes Uploaded • Powered by WebAssembly (WASM).",
   homeSearchNotFound: "No tools found matching",
@@ -527,7 +527,7 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
   id: {
     navMoreTools: '🔧 ALAT PDF LEBIH BANYAK',
     homeHeroBadge: "100% Pemrosesan Sisi Klien",
-    homeHeroTitle: "Semua Alat Dokumen. 100% Privat.",
+    homeHeroTitle: "Semua Alat Dokumen Anda. 100% Privat.",
     homeSecurityBadge: "Arsitektur Keamanan: 100% Pemrosesan Sisi Klien • 0 Byte Diunggah • Didukung oleh WebAssembly (WASM).",
     homeHeroSubtitle: "Gabungkan, pisahkan, kompres, konversikan file Office, dan OCR langsung di browser Anda. 100% diproses offline melalui WebAssembly. Gratis, tanpa batasan ukuran, dan sangat aman.",
     homeSearchNotFound: "Tidak ada alat yang cocok",

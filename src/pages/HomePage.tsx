@@ -72,7 +72,7 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
               margin: '0 auto 24px'
             }}
           >
-            {smartHighlight(t.homeHeroTitle || 'Every Document Tool. 100% Private.')}
+            {smartHighlight(t.homeHeroTitle || 'All Your Document Tools. 100% Private.')}
           </h1>
 
           {/* Semantic Sub-headline */}
