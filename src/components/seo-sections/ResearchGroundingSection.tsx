@@ -66,7 +66,7 @@ export const ResearchGroundingSection: React.FC<ResearchGroundingSectionProps> =
         {/* 3 Citation / Architecture Cards */}
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
           gap: '28px'
         }}>
           {/* Card 1: Local-First Computing */}

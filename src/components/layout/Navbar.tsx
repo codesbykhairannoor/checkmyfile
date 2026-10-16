@@ -101,6 +101,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   return (
     <header
       ref={navRef}
+      className="main-site-header"
       aria-label="Main Site Header"
       style={{
         position: 'sticky', top: 0, zIndex: 50,

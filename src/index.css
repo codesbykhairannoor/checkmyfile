@@ -116,11 +116,7 @@ button, input, select, textarea {
   }
 }
 
-@media (max-width: 640px) {
-  .homepage-hero-title {
-    font-size: clamp(2rem, 8vw, 2.6rem) !important;
-  }
-}
+
 
 /* Animations */
 @keyframes pulseGlow {
@@ -386,10 +382,13 @@ button, input, select, textarea {
    MOBILE OPTIMIZATION RESPONSIVE MEDIA QUERIES
    ========================================================================== */
 
-/* Prevent page from shrinking on mobile/tablet */
+/* Prevent page from shrinking on mobile/tablet, scale navbar to 85% */
 @media (max-width: 1024px) {
   body {
     zoom: 1 !important;
+  }
+  .main-site-header {
+    zoom: 0.85 !important;
   }
 }
 
@@ -397,6 +396,14 @@ button, input, select, textarea {
 @media (max-width: 768px) {
   body {
     zoom: 1 !important;
+  }
+  .main-site-header {
+    zoom: 0.85 !important;
+  }
+  /* Tool Card mobile padding */
+  .tool-card {
+    padding: 24px 20px !important;
+    border-radius: 24px !important;
   }
   /* Override main layouts to block/column */
   .mobile-col {

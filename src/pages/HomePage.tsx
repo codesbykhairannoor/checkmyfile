@@ -170,7 +170,7 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 40 }}>
-            <h2 style={{ fontSize: 'clamp(1.8rem, 3vw, 2.2rem)', fontWeight: 900, fontFamily: 'var(--font-display)', letterSpacing: '-0.02em' }}>
+            <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, fontFamily: 'var(--font-display)', letterSpacing: '-0.02em' }}>
               {selectedCategory === 'all' ? t.allTools : selectedCategory.toUpperCase()} 
               <span style={{ marginLeft: 12, color: 'var(--text-muted)', fontWeight: 600, fontSize: '1.4rem' }}>({filteredTools.length})</span>
             </h2>
@@ -224,10 +224,10 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
                     </div>
 
                     <div style={{ flexGrow: 1 }}>
-                      <h3 style={{ fontSize: '1.3rem', fontWeight: 800, marginBottom: 12, fontFamily: 'var(--font-display)', lineHeight: 1.3 }}>
+                      <h3 style={{ fontSize: 'clamp(1.25rem, 2.5vw, 1.4rem)', fontWeight: 800, marginBottom: 12, fontFamily: 'var(--font-display)', lineHeight: 1.3 }}>
                         {seo.h1}
                       </h3>
-                      <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', lineHeight: 1.6, fontWeight: 500 }}>
+                      <p style={{ fontSize: 'clamp(0.95rem, 1.8vw, 1.05rem)', color: 'var(--text-muted)', lineHeight: 1.6, fontWeight: 500 }}>
                         {seo.description}
                       </p>
                     </div>
@@ -255,9 +255,6 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
             border: '1px solid var(--border-color)',
             background: 'var(--bg-card)'
           }}>
-            {/* Glowing Orb */}
-            <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 600, height: 600, background: 'var(--brand-glow)', borderRadius: '50%', filter: 'blur(120px)', pointerEvents: 'none' }}></div>
-            
             <div style={{ position: 'relative', zIndex: 10, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 32 }}>
               <div style={{ width: 80, height: 80, background: 'var(--bg-input)', border: '1px solid var(--border-color)', borderRadius: 24, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: 'var(--shadow-lg)' }}>
                 <ShieldCheck size={40} style={{ color: 'var(--brand-primary)' }} />
@@ -268,7 +265,7 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
                   <span style={{ display: 'flex', width: 6, height: 6, borderRadius: '50%', background: 'var(--brand-primary)', boxShadow: '0 0 10px var(--brand-primary)' }}></span>
                   100% PRIVATE
                 </div>
-                <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)', fontWeight: 900, letterSpacing: '-0.02em', marginBottom: 24, fontFamily: 'var(--font-display)', lineHeight: 1.2 }}>
+                <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, letterSpacing: '-0.02em', marginBottom: 24, fontFamily: 'var(--font-display)', lineHeight: 1.2 }}>
                   {t.zeroUploadGuarantee}
                 </h2>
                 <p style={{ fontSize: 'clamp(1.05rem, 2vw, 1.2rem)', color: 'var(--text-muted)', lineHeight: 1.7, maxWidth: 800, fontWeight: 500 }}>
@@ -312,7 +309,7 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
 
       {/* GEO SECTIONS: Key Takeaways & FAQ */}
       <section style={{ padding: '80px 24px', background: 'rgba(0,0,0,0.02)', borderTop: '1px solid var(--border-color)' }}>
-        <div style={{ maxWidth: 1000, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 60 }}>
+        <div style={{ maxWidth: 1000, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: 60 }}>
           
           {/* Key Takeaways */}
           <div>
