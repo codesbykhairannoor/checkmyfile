@@ -386,8 +386,18 @@ button, input, select, textarea {
    MOBILE OPTIMIZATION RESPONSIVE MEDIA QUERIES
    ========================================================================== */
 
+/* Prevent page from shrinking on mobile/tablet */
+@media (max-width: 1024px) {
+  body {
+    zoom: 1 !important;
+  }
+}
+
 /* Mobile Layout Helpers */
 @media (max-width: 768px) {
+  body {
+    zoom: 1 !important;
+  }
   /* Override main layouts to block/column */
   .mobile-col {
     flex-direction: column !important;

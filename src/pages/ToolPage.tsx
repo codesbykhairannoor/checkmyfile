@@ -285,7 +285,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
           <React.Suspense fallback={<div style={{ minHeight: 400, display: 'flex', justifyContent: 'center', alignItems: 'center' }}><div className="spinner" style={{ width: 40, height: 40, border: '4px solid var(--border-color)', borderTopColor: 'var(--text-accent)', borderRadius: '50%', animation: 'spin 1s linear infinite' }}></div></div>}>
             <div className="tool-workspace-container" style={{ display: 'flex', width: '100%', height: '100%', maxHeight: 800, flex: 1, gap: 24, minHeight: 0, justifyContent: 'center' }}>
               {/* Left Workspace */}
-              <div className="tool-workspace-left" style={{ flex: 1, minWidth: 0, minHeight: 650, display: 'flex', flexDirection: 'column', gap: 24, overflow: 'hidden', paddingRight: 8, paddingBottom: 24 }}>
+              <div className="tool-workspace-left" style={{ flex: 1, minWidth: 0, minHeight: 0, display: 'flex', flexDirection: 'column', gap: 24, overflow: 'hidden', paddingRight: 8, paddingBottom: 24 }}>
                 <DocumentLivePreview
                   files={files}
                   currentLang={currentLang}
@@ -408,10 +408,10 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
       {/* Live Preview of the Converted / Processed Result */}
       {isCompleted && resultFile && (
         <React.Suspense fallback={<div style={{ minHeight: 400, display: 'flex', justifyContent: 'center', alignItems: 'center' }}><div className="spinner" style={{ width: 40, height: 40, border: '4px solid var(--border-color)', borderTopColor: 'var(--text-accent)', borderRadius: '50%', animation: 'spin 1s linear infinite' }}></div></div>}>
-          <div style={{ flex: 1, minHeight: 650, display: 'flex', flexDirection: 'column', overflow: 'hidden', maxWidth: 1440, margin: '0 auto', width: '100%', padding: '32px 24px 0' }}>
+          <div style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: 'column', overflow: 'hidden', maxWidth: 1440, margin: '0 auto', width: '100%', padding: '32px 24px 0' }}>
             {tool.id === 'compare-pdf' ? (
-              <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 650, gap: 24, alignItems: 'center' }}>
-                <div className="tool-workspace-container" style={{ display: 'flex', flex: 1, width: '100%', minHeight: 650, maxHeight: 800, gap: 24, overflow: 'hidden', justifyContent: 'center' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0, gap: 24, alignItems: 'center' }}>
+                <div className="tool-workspace-container" style={{ display: 'flex', flex: 1, width: '100%', minHeight: 0, maxHeight: 800, gap: 24, overflow: 'hidden', justifyContent: 'center' }}>
 
                   {/* DOKUMEN ASLI PANEL */}
                   <div className="tool-workspace-left" style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden', position: 'relative', maxWidth: 800 }}>
