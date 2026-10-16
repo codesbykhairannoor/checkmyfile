@@ -382,23 +382,23 @@ button, input, select, textarea {
    MOBILE OPTIMIZATION RESPONSIVE MEDIA QUERIES
    ========================================================================== */
 
-/* Prevent page from shrinking on mobile/tablet, scale navbar to 85% */
+/* Mobile/Tablet: Zoom 90% for page, scale navbar to 85% */
 @media (max-width: 1024px) {
   body {
-    zoom: 1 !important;
+    zoom: 0.9 !important;
   }
   .main-site-header {
-    zoom: 0.85 !important;
+    zoom: 0.944 !important; /* 0.9 * 0.944 ≈ 0.85 effective scale */
   }
 }
 
 /* Mobile Layout Helpers */
 @media (max-width: 768px) {
   body {
-    zoom: 1 !important;
+    zoom: 0.9 !important;
   }
   .main-site-header {
-    zoom: 0.85 !important;
+    zoom: 0.944 !important; /* 0.9 * 0.944 ≈ 0.85 effective scale */
   }
   /* Tool Card mobile padding */
   .tool-card {
