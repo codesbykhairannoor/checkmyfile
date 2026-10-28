@@ -1,79 +1,88 @@
 {
-  "title": "PDF to Word Converter Percuma (.docx) Tanpa Kehilangan Pemformatan",
-  "h1": "Tukar PDF kepada Word boleh diedit DOCX dalam Penyemak Imbas Anda",
-  "description": "Ekstrak teks tepat, larian reka letak dan perenggan daripada mana-mana PDF ke dalam fail Microsoft Word (.docx) yang bersih terus di dalam memori penyemak imbas.",
+  "title": "Tukar PDF kepada Word Tanpa Kehilangan Pemformatan — Penukar DOCX Percuma",
+  "h1": "Tukar PDF kepada Word Sambil Memelihara Reka Letak & Tipografi Tepat",
+  "description": "Ekstrak teks, fon, jadual dan perenggan daripada fail PDF ke dalam format Microsoft Word (.docx) tanpa berebut reka letak atau kehilangan pemformatan. 100% peribadi dalam penyemak imbas anda.",
+  "buttonText": "Tukar Tanpa Kehilangan Pemformatan",
+  "badges": [
+    "Kekalkan Reka Letak",
+    "Ketepatan Vektor",
+    "Muat Naik Sifar"
+  ],
+  "stats": [
+    "100%",
+    "Kesetiaan",
+    "0",
+    "Kebocoran Data"
+  ],
+  "supportCenter": "Pemulihan Dokumen Kesetiaan Tinggi",
+  "faqTitle": "Soalan Lazim Pemformatan & Pemeliharaan Reka Letak",
   "sections": [
     {
-      "type": "watermark_hero_features",
-      "title": "Tukar PDF kepada Word Dengan Sempurna",
-      "content": "Ubah dokumen PDF anda kepada fail Word yang boleh diedit sambil mengekalkan reka letak asal, fon dan imej utuh.",
-      "badgeText": "Kekalkan Pemformatan"
+      "type": "compress_hero_features",
+      "title": "Hapuskan Teks Scrambled & Patah Garisan",
+      "content": "Kebanyakan penukar PDF generik memecahkan teks kepada beribu-ribu kotak teks terapung yang terputus. Enjin reka letak kami menganalisis aliran bacaan spatial untuk membina semula perenggan, tajuk dan margin yang berterusan supaya dokumen Word anda benar-benar boleh diedit.",
+      "badgeText": "Reka Letak Boleh Alir Semula Benar"
     },
     {
-      "type": "protect_how_to_steps",
-      "title": "Bagaimana untuk menukar PDF kepada Word",
-      "badgeText": "Penukaran Mudah",
+      "type": "organize_how_to_steps",
+      "title": "Cara Mengekalkan Pemformatan PDF Apabila Menukar kepada Word",
+      "badgeText": "Aliran Kerja Ketepatan",
       "steps": [
         {
-          "title": "Muat naik PDF",
-          "description": "Pilih fail PDF yang ingin anda tukar."
+          "title": "Muat Naik Dokumen Anda",
+          "description": "Letakkan PDF anda ke dalam ruang kerja setempat. Setiap halaman dipaparkan secara visual dalam masa nyata."
         },
         {
-          "title": "Tukar kepada DOCX",
-          "description": "Klik tukar untuk memulakan pemprosesan tempatan."
+          "title": "Pembinaan Semula Struktur Ruang",
+          "description": "Penganalisis susun atur dwi-enjin kami menghimpunkan perkataan ke dalam garisan semula jadi dan blok perenggan."
         },
         {
-          "title": "Muat turun Fail Word",
-          "description": "Simpan dokumen Word yang boleh diedit sepenuhnya."
+          "title": "Eksport Bersih .docx",
+          "description": "Muat turun dokumen Word yang bersih dengan jarak perenggan, lekukan dan hierarki fon yang betul."
         }
       ]
     },
     {
-      "type": "excel_geo_targeting",
-      "title": "Pengekalan Reka Letak Tepat",
-      "content": "Penghurai lanjutan kami memahami perenggan, jadual dan lajur, memastikan dokumen Word anda kelihatan sama seperti PDF.",
-      "subTitle": "Kesetiaan Tinggi",
-      "subContent": "Mengekalkan gaya dan struktur.",
-      "badgeText": "Kesetiaan Tinggi"
+      "type": "protect_geo_targeting",
+      "title": "Pemulihan Reka Letak Ketepatan Tinggi untuk Dokumen Kompleks",
+      "content": "Ditala khas untuk tesis akademik, taklimat undang-undang, kertas putih teknikal dan invois yang ralat pemformatan, tiada titik tumpu atau lilitan garisan patah tidak boleh diterima.",
+      "subTitle": "Pematuhan OpenXML ISO/IEC 29500",
+      "subContent": "Menghasilkan pakej dokumen Word yang mematuhi piawaian dengan teg XML yang bersih dan sifar bloat.",
+      "badgeText": "Patuh Standard"
     },
     {
       "type": "redact_privacy_security",
-      "title": "Penukaran Sebelah Pelanggan Selamat",
-      "content": "Tukar kontrak dan laporan sulit dengan selamat. Penukaran berlaku sepenuhnya pada peranti anda."
+      "title": "Jaminan Pengekalan Data Sifar Tegas",
+      "content": "Oleh kerana pemprosesan berlaku terus dalam masa jalan penyemak imbas anda, HandleMyFile atau mana-mana pihak ketiga tidak pernah mempunyai akses kepada harta intelek proprietari anda.",
+      "badgeText": "Kerahsiaan Dijamin"
     },
     {
       "type": "watermark_performance",
-      "title": "Pemprosesan Cepat",
-      "content": "Tukar dokumen berbilang halaman dalam beberapa saat.",
-      "badgeText": "Keluaran Pantas"
+      "title": "Enjin Reka Letak WebAssembly Deterministik",
+      "content": "Memanfaatkan SIMD WebAssembly moden dan Pekerja Web untuk memproses reka letak dokumen yang kompleks dengan pembekuan UI sifar dan pelaksanaan sepantas kilat.",
+      "badgeText": "Kelajuan Hampir Asli"
     }
   ],
   "faqs": [
     {
-      "q": "Adakah susun atur akan berubah?",
-      "a": "Kami berusaha untuk mengekalkan reka letak yang tepat, termasuk jadual, imej dan penjajaran teks."
+      "q": "Bagaimanakah alat ini menghalang kehilangan pemformatan berbanding penukar lain?",
+      "a": "Daripada mencipta kotak teks berpecah-belah untuk setiap perkataan, enjin kami mengira kotak sempadan ruang dan ketinggian baris untuk mengumpulkan teks ke dalam perenggan Word semula jadi dengan jidar yang konsisten."
     },
     {
-      "q": "Adakah ini diproses pada pelayan?",
-      "a": "Tidak, penukaran dilakukan sepenuhnya dalam penyemak imbas anda untuk privasi maksimum."
+      "q": "Bolehkah saya mengedit fail Word yang ditukar sebagai teks boleh alir semula biasa?",
+      "a": "ya. Dokumen .docx yang dihasilkan menggunakan perenggan standard dan teg tajuk, membolehkan anda mengedit, menambah atau memadam teks tanpa memecahkan perenggan bersebelahan."
     },
     {
-      "q": "Bolehkah saya mengedit teks selepas penukaran?",
-      "a": "Ya, fail DOCX yang terhasil boleh diedit sepenuhnya dalam Microsoft Word atau Google Docs."
+      "q": "Adakah jadual dan dokumen berbilang halaman disokong?",
+      "a": "ya. Dokumen berbilang halaman secara automatik termasuk pemisah halaman yang bersih, dan garisan jadual disusun secara berurutan."
+    },
+    {
+      "q": "Apakah fon yang digunakan dalam dokumen Word yang ditukar?",
+      "a": "Enjin memetakan keluarga fon PDF standard (seperti Helvetica, Times, Courier dan Arial) kepada definisi fon OpenXML yang disokong secara universal seperti Calibri, Arial dan Times New Roman."
+    },
+    {
+      "q": "Adakah terdapat sebarang kos, langganan atau tera air yang ditambahkan?",
+      "a": "tiada. HandleMyFile adalah percuma untuk digunakan dengan sifar tera air, sifar iklan dan sifar langganan."
     }
-  ],
-  "badges": [
-    "Boleh diedit",
-    "tepat",
-    "Persendirian"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "Tukar kepada Word",
-  "supportCenter": "Pusat Sokongan",
-  "faqTitle": "Soalan Lazim"
+  ]
 }

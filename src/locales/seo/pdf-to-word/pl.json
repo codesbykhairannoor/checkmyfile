@@ -1,80 +1,88 @@
 {
-  "title": "Konwerter plików PDF na Word — offline i z możliwością edycji",
-  "h1": "Konwertuj lokalnie pliki PDF na edytowalne dokumenty programu Word",
-  "description": "Przekształcaj pliki PDF z powrotem w pliki .docx, które możesz edytować bezpośrednio w przeglądarce. Nie ma potrzeby przesyłania. Świetne dla użytkowników w Warszawie.",
-  "buttonText": "Konwertuj na Word",
+  "title": "Konwertuj pliki PDF na Word online za darmo — w 100% prywatne (.docx)",
+  "h1": "Konwertuj plik PDF na edytowalny plik Word (.docx) bezpośrednio w przeglądarce",
+  "description": "Przekształcaj dokumenty PDF w edytowalne pliki Microsoft Word (.docx) całkowicie w przeglądarce. Zero przesyłania plików, brak śledzenia serwera, 100% prywatne przetwarzanie w pamięci RAM.",
+  "buttonText": "Konwertuj na Word (.docx)",
   "badges": [
-    "Edytowalne dokumenty",
-    "Odzyskiwanie tekstu",
-    "Proces offline"
+    "100% w przeglądarce",
+    "Zero przesyłania plików na serwer",
+    "Natychmiastowe pobieranie"
   ],
   "stats": [
     "100%",
-    "Lokalny",
+    "Prywatny",
     "0s",
-    "Czas oczekiwania"
+    "Serwer Czekaj"
   ],
+  "supportCenter": "Prywatność i integralność dokumentów",
+  "faqTitle": "Często zadawane pytania dotyczące pliku PDF do programu Word",
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Dlaczego używać offline?",
-      "content": "Jeśli chcesz edytować plik PDF, konwersja go w trybie offline zapewnia poufność oryginalnego dokumentu."
+      "type": "word_hero_features",
+      "title": "Dlaczego warto lokalnie konwertować pliki PDF na Word?",
+      "content": "Tradycyjne konwertery online przesyłają poufne pliki na zdalne serwery w chmurze. HandleMyFile wykonuje całą konwersję lokalnie w pamięci przeglądarki za pomocą WebAssembly, zapewniając, że Twoje umowy, sprawozdania finansowe i prywatne dokumenty nigdy nie opuszczą Twojego urządzenia.",
+      "badgeText": "Architektura zerowego wyjścia"
     },
     {
-      "type": "split_how_to_steps",
-      "title": "Jak używać",
+      "type": "word_how_to_steps",
+      "title": "Jak przekonwertować plik PDF na Word w 3 krokach",
+      "badgeText": "Szybko i bez tarcia",
       "steps": [
         {
-          "title": "Załaduj PDF",
-          "description": "Wybierz plik PDF, który chcesz przekonwertować."
+          "title": "Wybierz lub upuść plik PDF",
+          "description": "Wybierz dokument PDF. Plik jest wczytywany bezpośrednio do pamięci RAM urządzenia bez przesyłania."
         },
         {
-          "title": "Wykryj warstwy tekstowe",
-          "description": "Nasz silnik odczytuje tekst i strukturę z pliku PDF."
+          "title": "Inteligentna ekstrakcja układu",
+          "description": "Nasz silnik po stronie klienta rekonstruuje akapity, czcionki i hierarchię tekstu do standardowego OpenXML."
         },
         {
-          "title": "Pobierz plik .docx",
-          "description": "Przygotuj edytowalny dokument programu Word do modyfikacji."
+          "title": "Pobierz edytowalny DOCX",
+          "description": "Natychmiast zapisuj przekonwertowany plik programu Word, gotowy do otwarcia w programie Microsoft Word, Dokumentach Google lub LibreOffice."
         }
       ]
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF do Worda dla warszawskich biur",
-      "content": "Pracownicy biurowi w Warszawie korzystają z naszego narzędzia do odzyskiwania edytowalnego tekstu z plików PDF bez konieczności korzystania z chmury."
+      "type": "word_geo_targeting",
+      "title": "Poufność dokumentów na poziomie korporacyjnym",
+      "content": "Zaprojektowany dla radców prawnych, księgowych, badaczy i przedsiębiorstw, które nie mogą ryzykować przesyłania zastrzeżonych dokumentów na serwery SaaS stron trzecich. Zgodny z artykułem 25 RODO (prywatność w fazie projektowania) i wytycznymi dotyczącymi izolacji danych HIPAA.",
+      "subTitle": "Wykonanie w pamięci RAM niemożliwe do złamania",
+      "subContent": "Po zamknięciu karty przeglądarki wszystkie bufory dokumentów są automatycznie usuwane z pamięci systemowej.",
+      "badgeText": "Prywatność na poziomie bankowym"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Dokumenty prawne pozostają poufne",
-      "content": "Umowy, umowy NDA i raporty całkowicie konwertowane do formatu Word w pamięci przeglądarki."
+      "type": "word_privacy_security",
+      "title": "Czysta izolacja sieci o zerowym wyjściu",
+      "content": "Możesz nawet odłączyć Wi-Fi lub włączyć tryb samolotowy po załadowaniu strony: konwerter plików PDF na Word nadal działa ze 100% funkcjonalnością całkowicie offline.",
+      "badgeText": "Gotowy do pracy w trybie offline"
     },
     {
-      "type": "split_performance",
-      "title": "Odzyskaj edytowalny tekst w kilka sekund",
-      "content": "Wyodrębnij tekst z 50-stronicowego pliku PDF w mniej niż 3 sekundy bez przesyłania ani jednego bajtu."
+      "type": "word_performance",
+      "title": "Natychmiastowe generowanie OpenXML w pamięci",
+      "content": "Pożegnaj czekanie w kolejkach na serwerze lub pobieranie ogromnych załączników. Konwertuj wielostronicowe pliki PDF na czyste, edytowalne dokumenty programu Word w ciągu milisekund bezpośrednio na swoim sprzęcie.",
+      "badgeText": "Szybka konwersja"
     }
   ],
   "faqs": [
     {
-      "q": "Czy cały tekst został zachowany?",
-      "a": "Tak, tekst ze wszystkich warstw jest wyodrębniany i formatowany."
+      "q": "Czy mogę edytować przekonwertowany dokument w programach Microsoft Word i Dokumentach Google?",
+      "a": "Tak. Dane wyjściowe to standardowy plik OpenXML (.docx), w pełni zgodny z programami Microsoft Word 2007–365, Dokumentami Google, LibreOffice Writer i Apple Pages."
     },
     {
-      "q": "Czy to działa na zeskanowanych plikach PDF?",
-      "a": "W przypadku zeskanowanych plików PDF użyj najpierw naszego narzędzia OCR."
+      "q": "Czy moje dokumenty są przesyłane na jakiś zdalny serwer?",
+      "a": "Nie. HandleMyFile działa zgodnie ze ścisłą polityką zerowego ruchu wychodzącego. Całe analizowanie, grupowanie tekstu i generowanie DOCX odbywa się w 100% w piaskownicy przeglądarki internetowej."
     },
     {
-      "q": "Czy obrazy znajdują się w pliku .docx?",
-      "a": "Tak, osadzone obrazy są uwzględniane w wynikach."
+      "q": "Czy to narzędzie działa całkowicie offline, bez Internetu?",
+      "a": "Tak. Po zapisaniu zasobów aplikacji w przeglądarce możesz konwertować pliki PDF na dokumenty programu Word bez aktywnego połączenia internetowego."
     },
     {
-      "q": "Czy mogę później edytować plik .docx?",
-      "a": "Absolutnie wynik jest w pełni edytowalnym dokumentem programu Word."
+      "q": "Czy istnieje jakiś limit rozmiaru pliku, limitu stron lub obowiązkowa rejestracja?",
+      "a": "Nie są wymagane żadne sztuczne ściany płatne, znaki wodne ani rejestracje użytkowników. Jedynym ograniczeniem jest dostępna pamięć RAM urządzenia."
     },
     {
-      "q": "Czy to jest bezpłatne?",
-      "a": "Tak, całkowicie darmowe."
+      "q": "Czy pogrubienie, kursywa i nagłówki czcionek zostaną zachowane?",
+      "a": "Tak. Nasz analizator przestrzenny wykrywa grubość, styl i rozmiar czcionki, aby zachować nagłówki, pogrubienie i kursywę w przekonwertowanym dokumencie programu Word."
     }
-  ],
-  "faqTitle": "Często zadawane pytania"
+  ]
 }

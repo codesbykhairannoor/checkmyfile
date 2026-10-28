@@ -1,80 +1,88 @@
 {
-  "title": "PDF till Word Converter — Offline & redigerbar",
-  "h1": "Konvertera PDF till redigerbara Word-dokument lokalt",
-  "description": "Förvandla tillbaka PDF-filer till .docx-filer som du kan redigera direkt i din webbläsare. Ingen uppladdning behövs. Perfekt för användare i Stockholm.",
-  "buttonText": "Konvertera till Word",
+  "title": "Konvertera PDF till Word Online gratis — 100 % privat (.docx)",
+  "h1": "Konvertera PDF till redigerbart Word (.docx) direkt i webbläsaren",
+  "description": "Förvandla PDF-dokument till redigerbara Microsoft Word-filer (.docx) helt i din webbläsare. Noll filuppladdningar, ingen serverspårning, 100 % privat bearbetning i RAM.",
+  "buttonText": "Konvertera till Word (.docx)",
   "badges": [
-    "Redigerbara dokument",
-    "Textåterställning",
-    "Offlineprocess"
+    "100 % In-Browser",
+    "Noll serveruppladdningar",
+    "Omedelbar nedladdning"
   ],
   "stats": [
     "100 %",
-    "Lokal",
+    "Privat",
     "0s",
-    "Väntetid"
+    "Server Vänta"
   ],
+  "supportCenter": "Integritet och dokumentintegritet",
+  "faqTitle": "Vanliga frågor om PDF till Word",
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Varför använda offline?",
-      "content": "När du behöver redigera en PDF håller konvertering av den offline ditt originaldokument konfidentiellt."
+      "type": "word_hero_features",
+      "title": "Varför konvertera PDF till Word lokalt?",
+      "content": "Traditionella onlinekonverterare laddar upp dina konfidentiella filer till fjärranslutna molnservrar. HandleMyFile utför hela konverteringen lokalt i webbläsarens minne med hjälp av WebAssembly, vilket säkerställer att dina kontrakt, bokslut och privata register aldrig lämnar din enhet.",
+      "badgeText": "Zero-Egress-arkitektur"
     },
     {
-      "type": "split_how_to_steps",
-      "title": "Hur man använder",
+      "type": "word_how_to_steps",
+      "title": "Hur man konverterar PDF till Word i 3 steg",
+      "badgeText": "Snabb & friktionsfri",
       "steps": [
         {
-          "title": "Ladda PDF",
-          "description": "Välj den PDF-fil du behöver konvertera."
+          "title": "Välj eller släpp PDF",
+          "description": "Välj ditt PDF-dokument. Filen läses direkt in i enhetens RAM-minne utan att laddas upp."
         },
         {
-          "title": "Upptäck textlager",
-          "description": "Vår motor läser text och struktur från PDF:en."
+          "title": "Intelligent layoutextraktion",
+          "description": "Vår motor på klientsidan rekonstruerar stycken, teckensnitt och texthierarki till standard OpenXML."
         },
         {
-          "title": "Ladda ner .docx",
-          "description": "Gör ditt redigerbara Word-dokument redo att ändras."
+          "title": "Ladda ner redigerbar DOCX",
+          "description": "Spara din konverterade Word-fil direkt, redo att öppnas i Microsoft Word, Google Docs eller LibreOffice."
         }
       ]
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF till Word för Stockholmskontor",
-      "content": "Kontorsarbetare i Stockholm använder vårt verktyg för att återställa redigerbar text från PDF-filer utan molnberoende."
+      "type": "word_geo_targeting",
+      "title": "Dokumentkonfidentialitet i företagsklass",
+      "content": "Konstruerad för juridiska rådgivare, revisorer, forskare och företag som inte kan riskera att ladda upp proprietära dokument till tredje parts SaaS-servrar. Uppfyller GDPR Artikel 25 (Privacy by Design) och HIPAA:s riktlinjer för dataisolering.",
+      "subTitle": "Unhackable In-RAM Execution",
+      "subContent": "När du stänger webbläsarfliken rensas alla dokumentbuffertar automatiskt från systemminnet.",
+      "badgeText": "Sekretess i bankklass"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Juridiska dokument förblir konfidentiella",
-      "content": "Kontrakt, NDA och rapporter konverteras tillbaka till Word helt och hållet i webbläsarens minne."
+      "type": "word_privacy_security",
+      "title": "Ren nollutgående nätverksisolering",
+      "content": "Du kan till och med koppla från ditt Wi-Fi eller aktivera flygplansläget efter att sidan har laddats: PDF till Word-konverteraren fortsätter att fungera med 100 % funktionalitet helt offline.",
+      "badgeText": "Offline redo"
     },
     {
-      "type": "split_performance",
-      "title": "Återställ redigerbar text på några sekunder",
-      "content": "Extrahera text från en 50-sidig PDF på under 3 sekunder utan att ladda upp en enda byte."
+      "type": "word_performance",
+      "title": "Instant In-Memory OpenXML Generation",
+      "content": "Säg adjö till att vänta i serverköer eller ladda ner enorma bilagor. Konvertera flersidiga PDF-filer till rena, redigerbara Word-dokument på millisekunder direkt på din hårdvara.",
+      "badgeText": "Höghastighetskonvertering"
     }
   ],
   "faqs": [
     {
-      "q": "Är all text bevarad?",
-      "a": "Ja, text från alla lager extraheras och formateras."
+      "q": "Kan jag redigera det konverterade dokumentet i Microsoft Word och Google Docs?",
+      "a": "Ja. Utdata är en standard OpenXML (.docx)-fil som är helt kompatibel med Microsoft Word 2007 till 365, Google Docs, LibreOffice Writer och Apple Pages."
     },
     {
-      "q": "Fungerar det på skannade PDF-filer?",
-      "a": "För skannade PDF-filer, använd först vårt OCR-verktyg."
+      "q": "Laddas mina dokument upp till någon fjärrserver?",
+      "a": "Nej. HandleMyFile arbetar under en strikt Noll-Egress-policy. All analys, textkluster och DOCX-generering sker till 100 % i din webbläsares sandlåda."
     },
     {
-      "q": "Ingår bilder i .docx?",
-      "a": "Ja, inbäddade bilder ingår i utdata."
+      "q": "Fungerar detta verktyg helt offline utan internet?",
+      "a": "Ja. När applikationstillgångarna är cachade i din webbläsare kan du konvertera PDF-filer till Word-dokument utan en aktiv internetanslutning."
     },
     {
-      "q": "Kan jag redigera .docx efter?",
-      "a": "Absolut, resultatet är ett helt redigerbart Word-dokument."
+      "q": "Finns det någon filstorleksgräns, sidgräns eller obligatorisk registrering?",
+      "a": "Det krävs inga konstgjorda betalväggar, vattenstämplar eller användarregistreringar. Den enda gränsen är enhetens tillgängliga RAM."
     },
     {
-      "q": "Är detta gratis?",
-      "a": "Ja, helt gratis."
+      "q": "Kommer rubriker i fetstil, kursiv stil och teckensnitt att bevaras?",
+      "a": "Ja. Vår rumsliga analysator upptäcker teckensnittsvikter, stilar och teckenstorlekar för att behålla dina rubriker, fet betoning och kursiv stil i det konverterade Word-dokumentet."
     }
-  ],
-  "faqTitle": "Vanliga Frågor"
+  ]
 }

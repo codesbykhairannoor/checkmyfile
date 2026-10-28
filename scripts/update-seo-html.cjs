@@ -30,11 +30,6 @@ const toolJsonLdLogic = `
             "@type": "Offer",
             "price": "0",
             "priceCurrency": "USD"
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "ratingCount": Math.floor(Math.random() * 5000) + 1000
           }
         }
       ];
@@ -99,11 +94,6 @@ const homeJsonLdLogic = `
           "@type": "Offer",
           "price": "0",
           "priceCurrency": "USD"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "ratingCount": 12850
         }
       }
     ];

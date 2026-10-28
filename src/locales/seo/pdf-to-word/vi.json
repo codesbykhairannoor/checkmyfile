@@ -1,80 +1,88 @@
 {
-  "title": "Chuyển đổi PDF sang Word - Ngoại tuyến & có thể chỉnh sửa",
-  "h1": "Chuyển đổi PDF sang tài liệu Word có thể chỉnh sửa cục bộ",
-  "description": "Chuyển đổi các tệp PDF trở lại thành tệp .docx mà bạn có thể chỉnh sửa ngay trong trình duyệt của mình. Không cần tải lên. Tuyệt vời cho người dùng ở Hà Nội.",
-  "buttonText": "Chuyển đổi sang Word",
+  "title": "Chuyển đổi PDF sang Word trực tuyến miễn phí — 100% riêng tư (.docx)",
+  "h1": "Chuyển đổi PDF sang Word có thể chỉnh sửa (.docx) trực tiếp trong trình duyệt",
+  "description": "Chuyển đổi tài liệu PDF thành tệp Microsoft Word (.docx) có thể chỉnh sửa hoàn toàn bên trong trình duyệt của bạn. Không tải lên tệp, không theo dõi máy chủ, xử lý trong RAM riêng tư 100%.",
+  "buttonText": "Chuyển đổi sang Word (.docx)",
   "badges": [
-    "Tài liệu có thể chỉnh sửa",
-    "Phục hồi văn bản",
-    "Quy trình ngoại tuyến"
+    "100% trong trình duyệt",
+    "Không tải lên máy chủ",
+    "Tải xuống tức thì"
   ],
   "stats": [
     "100%",
-    "Địa phương",
+    "Riêng tư",
     "0 giây",
-    "Thời gian chờ"
+    "Máy chủ chờ"
   ],
+  "supportCenter": "Quyền riêng tư và tính toàn vẹn của tài liệu",
+  "faqTitle": "Câu hỏi thường gặp về PDF sang Word",
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Tại sao sử dụng ngoại tuyến?",
-      "content": "Khi bạn cần chỉnh sửa một tệp PDF, việc chuyển đổi ngoại tuyến sẽ giữ bí mật tài liệu gốc của bạn."
+      "type": "word_hero_features",
+      "title": "Tại sao chuyển đổi PDF sang Word cục bộ?",
+      "content": "Trình chuyển đổi trực tuyến truyền thống tải các tệp bí mật của bạn lên máy chủ đám mây từ xa. HandleMyFile thực hiện toàn bộ chuyển đổi cục bộ trong bộ nhớ trình duyệt bằng WebAssembly, đảm bảo hợp đồng, báo cáo tài chính và hồ sơ riêng tư của bạn không bao giờ rời khỏi thiết bị của bạn.",
+      "badgeText": "Kiến trúc không lối thoát"
     },
     {
-      "type": "split_how_to_steps",
-      "title": "Cách sử dụng",
+      "type": "word_how_to_steps",
+      "title": "Cách chuyển đổi PDF sang Word trong 3 bước",
+      "badgeText": "Nhanh chóng và không ma sát",
       "steps": [
         {
-          "title": "Tải PDF",
-          "description": "Chọn tệp PDF bạn cần chuyển đổi."
+          "title": "Chọn hoặc thả PDF",
+          "description": "Chọn tài liệu PDF của bạn. Tệp được đọc trực tiếp vào RAM thiết bị của bạn mà không cần tải lên."
         },
         {
-          "title": "Phát hiện lớp văn bản",
-          "description": "Công cụ của chúng tôi đọc văn bản và cấu trúc từ PDF."
+          "title": "Khai thác bố cục thông minh",
+          "description": "Công cụ phía máy khách của chúng tôi tái cấu trúc các đoạn văn, phông chữ và phân cấp văn bản thành OpenXML tiêu chuẩn."
         },
         {
-          "title": "Tải xuống .docx",
-          "description": "Chuẩn bị sẵn sàng tài liệu Word có thể chỉnh sửa của bạn để sửa đổi."
+          "title": "Tải xuống DOCX có thể chỉnh sửa",
+          "description": "Lưu ngay tệp Word đã chuyển đổi của bạn, sẵn sàng mở trong Microsoft Word, Google Docs hoặc LibreOffice."
         }
       ]
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF sang Word cho văn phòng Hà Nội",
-      "content": "Nhân viên văn phòng tại Hà Nội sử dụng công cụ của chúng tôi để khôi phục văn bản có thể chỉnh sửa từ tệp PDF mà không cần phụ thuộc vào đám mây."
+      "type": "word_geo_targeting",
+      "title": "Bảo mật tài liệu cấp doanh nghiệp",
+      "content": "Được thiết kế dành cho cố vấn pháp lý, kế toán, nhà nghiên cứu và doanh nghiệp không thể mạo hiểm tải tài liệu độc quyền lên máy chủ SaaS của bên thứ ba. Tuân thủ Điều 25 của GDPR (Quyền riêng tư theo thiết kế) và nguyên tắc cách ly dữ liệu của HIPAA.",
+      "subTitle": "Thực thi trong RAM không thể hack được",
+      "subContent": "Sau khi bạn đóng tab trình duyệt, tất cả bộ đệm tài liệu sẽ tự động bị xóa khỏi bộ nhớ hệ thống.",
+      "badgeText": "Quyền riêng tư cấp ngân hàng"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Văn bản pháp luật được giữ bí mật",
-      "content": "Hợp đồng, NDA và báo cáo được chuyển đổi hoàn toàn về Word trong bộ nhớ trình duyệt của bạn."
+      "type": "word_privacy_security",
+      "title": "Cách ly mạng không lối ra thuần túy",
+      "content": "Bạn thậm chí có thể ngắt kết nối Wi-Fi hoặc bật Chế độ trên máy bay sau khi tải trang: trình chuyển đổi PDF sang Word tiếp tục hoạt động với 100% chức năng hoàn toàn ngoại tuyến.",
+      "badgeText": "Sẵn sàng ngoại tuyến"
     },
     {
-      "type": "split_performance",
-      "title": "Khôi phục văn bản có thể chỉnh sửa trong vài giây",
-      "content": "Trích xuất văn bản từ tệp PDF 50 trang trong vòng chưa đầy 3 giây mà không cần tải lên một byte nào."
+      "type": "word_performance",
+      "title": "Tạo OpenXML trong bộ nhớ tức thì",
+      "content": "Nói lời tạm biệt với việc phải xếp hàng chờ đợi trên máy chủ hoặc tải xuống các tệp đính kèm khổng lồ. Chuyển đổi các tệp PDF nhiều trang thành các tài liệu Word sạch, có thể chỉnh sửa trong một phần nghìn giây trực tiếp trên phần cứng của bạn.",
+      "badgeText": "Chuyển đổi tốc độ cao"
     }
   ],
   "faqs": [
     {
-      "q": "Tất cả văn bản có được bảo tồn không?",
-      "a": "Có, văn bản từ tất cả các lớp được trích xuất và định dạng."
+      "q": "Tôi có thể chỉnh sửa tài liệu đã chuyển đổi trong Microsoft Word và Google Docs không?",
+      "a": "Đúng. Đầu ra là tệp OpenXML (.docx) tiêu chuẩn hoàn toàn tương thích với Microsoft Word 2007 đến 365, Google Docs, LibreOffice Writer và Apple Pages."
     },
     {
-      "q": "Nó có hoạt động trên các bản PDF được quét không?",
-      "a": "Đối với các tệp PDF được quét, trước tiên hãy sử dụng công cụ OCR của chúng tôi."
+      "q": "Tài liệu của tôi có được tải lên bất kỳ máy chủ từ xa nào không?",
+      "a": "Không. HandleMyFile hoạt động theo chính sách Zero-Egress nghiêm ngặt. Tất cả quá trình phân tích cú pháp, phân cụm văn bản và tạo DOCX diễn ra 100% bên trong hộp cát trình duyệt web của bạn."
     },
     {
-      "q": "Hình ảnh có được đưa vào .docx không?",
-      "a": "Có, hình ảnh nhúng được đưa vào đầu ra."
+      "q": "Công cụ này có hoạt động hoàn toàn offline mà không cần internet không?",
+      "a": "Đúng. Sau khi nội dung ứng dụng được lưu vào bộ nhớ đệm trong trình duyệt của bạn, bạn có thể chuyển đổi tệp PDF thành tài liệu Word mà không cần kết nối Internet đang hoạt động."
     },
     {
-      "q": "Tôi có thể chỉnh sửa .docx sau không?",
-      "a": "Hoàn toàn có thể, đầu ra là một tài liệu Word hoàn toàn có thể chỉnh sửa được."
+      "q": "Có giới hạn kích thước tệp, giới hạn trang hoặc đăng ký bắt buộc không?",
+      "a": "Không có tường phí nhân tạo, hình mờ hoặc đăng ký người dùng. Giới hạn duy nhất là RAM có sẵn trên thiết bị của bạn."
     },
     {
-      "q": "Cái này có miễn phí không?",
-      "a": "Có, hoàn toàn miễn phí."
+      "q": "Các tiêu đề in đậm, in nghiêng và phông chữ có được giữ nguyên không?",
+      "a": "Đúng. Bộ phân tích không gian của chúng tôi phát hiện trọng lượng phông chữ, kiểu và kích thước phông chữ để duy trì tiêu đề, điểm nhấn đậm và kiểu chữ nghiêng trong tài liệu Word đã chuyển đổi."
     }
-  ],
-  "faqTitle": "Câu hỏi thường gặp"
+  ]
 }

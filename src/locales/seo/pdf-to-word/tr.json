@@ -1,80 +1,88 @@
 {
-  "title": "PDF'den Word'e Dönüştürücü - Çevrimdışı ve Düzenlenebilir",
-  "h1": "PDF'yi Yerel Olarak Düzenlenebilir Word Belgelerine Dönüştürme",
-  "description": "PDF'leri doğrudan tarayıcınızda düzenleyebileceğiniz .docx dosyalarına dönüştürün. Yüklemeye gerek yok. İstanbul'daki kullanıcılar için harika.",
-  "buttonText": "Word'e Dönüştür",
+  "title": "PDF'yi Çevrimiçi Word'e Ücretsiz Dönüştürün — %100 Özel (.docx)",
+  "h1": "PDF'yi Doğrudan Tarayıcıda Düzenlenebilir Word'e (.docx) Dönüştürün",
+  "description": "PDF belgelerini tamamen tarayıcınızın içinde düzenlenebilir Microsoft Word (.docx) dosyalarına dönüştürün. Sıfır dosya yükleme, sunucu takibi yok, %100 özel RAM içi işleme.",
+  "buttonText": "Word'e Dönüştür (.docx)",
   "badges": [
-    "Düzenlenebilir Belgeler",
-    "Metin Kurtarma",
-    "Çevrimdışı Süreç"
+    "%100 Tarayıcı İçi",
+    "Sıfır Sunucu Yüklemesi",
+    "Anında İndirme"
   ],
   "stats": [
     "%100",
-    "Yerel",
+    "Özel",
     "0'lar",
-    "Bekleme Süresi"
+    "Sunucu Bekleme"
   ],
+  "supportCenter": "Gizlilik ve Belge Bütünlüğü",
+  "faqTitle": "PDF'den Word'e Dönüştürme Hakkında Sıkça Sorulan Sorular",
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Neden çevrimdışı kullanılmalı?",
-      "content": "Bir PDF'yi düzenlemeniz gerektiğinde onu çevrimdışına dönüştürmek, orijinal belgenizin gizli kalmasını sağlar."
+      "type": "word_hero_features",
+      "title": "Neden PDF'yi Yerel Olarak Word'e Dönüştürmelisiniz?",
+      "content": "Geleneksel çevrimiçi dönüştürücüler, gizli dosyalarınızı uzak bulut sunucularına yükler. HandleMyFile, WebAssembly'yi kullanarak tüm dönüşümü yerel olarak tarayıcı belleğinde yürüterek sözleşmelerinizin, mali tablolarınızın ve özel kayıtlarınızın cihazınızdan asla ayrılmamasını sağlar.",
+      "badgeText": "Sıfır Çıkış Mimarisi"
     },
     {
-      "type": "split_how_to_steps",
-      "title": "Nasıl kullanılır",
+      "type": "word_how_to_steps",
+      "title": "PDF'yi 3 Adımda Word'e Dönüştürme",
+      "badgeText": "Hızlı ve Sürtünmesiz",
       "steps": [
         {
-          "title": "PDF'yi yükle",
-          "description": "Dönüştürmeniz gereken PDF dosyasını seçin."
+          "title": "PDF'yi Seçin veya Bırakın",
+          "description": "PDF belgenizi seçin. Dosya, yüklenmeden doğrudan cihazınızın RAM'ına okunur."
         },
         {
-          "title": "Metin Katmanlarını Algıla",
-          "description": "Motorumuz PDF'deki metni ve yapıyı okur."
+          "title": "Akıllı Düzen Çıkarma",
+          "description": "İstemci tarafı motorumuz paragrafları, yazı tiplerini ve metin hiyerarşisini standart OpenXML'de yeniden yapılandırır."
         },
         {
-          "title": ".docx dosyasını indirin",
-          "description": "Düzenlenebilir Word belgenizi değiştirmeye hazır hale getirin."
+          "title": "Düzenlenebilir DOCX'i İndirin",
+          "description": "Dönüştürülen Word dosyanızı Microsoft Word, Google Dokümanlar veya LibreOffice'de açılmaya hazır şekilde anında kaydedin."
         }
       ]
     },
     {
-      "type": "split_geo_targeting",
-      "title": "İstanbul Ofisleri için PDF'i Word'e Dönüştürme",
-      "content": "İstanbul'daki ofis çalışanları, bulut bağımlılığı olmadan PDF'lerden düzenlenebilir metinleri kurtarmak için aracımızı kullanıyor."
+      "type": "word_geo_targeting",
+      "title": "Kurumsal Düzeyde Belge Gizliliği",
+      "content": "Özel belgeleri üçüncü taraf SaaS sunucularına yükleme riskini göze alamayacak hukuk danışmanları, muhasebeciler, araştırmacılar ve işletmeler için tasarlanmıştır. GDPR Madde 25 (Tasarımdan Dolayı Gizlilik) ve HIPAA veri izolasyonu yönergelerine uygundur.",
+      "subTitle": "Saldırıya Uğramayan RAM İçi Yürütme",
+      "subContent": "Tarayıcı sekmesini kapattığınızda tüm belge arabellekleri sistem belleğinden otomatik olarak temizlenir.",
+      "badgeText": "Banka Düzeyinde Gizlilik"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Yasal Belgeler Gizli Kalır",
-      "content": "Sözleşmeler, Gizlilik Sözleşmeleri ve raporlar tamamen tarayıcınızın belleğinde Word'e dönüştürülür."
+      "type": "word_privacy_security",
+      "title": "Saf Sıfır Çıkışlı Ağ Yalıtımı",
+      "content": "Hatta sayfayı yükledikten sonra Wi-Fi bağlantınızı kesebilir veya Uçak Modunu açabilirsiniz: PDF'den Word'e dönüştürücü tamamen çevrimdışıyken %100 işlevsellikle çalışmaya devam eder.",
+      "badgeText": "Çevrimdışı Hazır"
     },
     {
-      "type": "split_performance",
-      "title": "Düzenlenebilir Metni Saniyeler İçinde Kurtarın",
-      "content": "Tek bir bayt yüklemeden 50 sayfalık PDF'den metni 3 saniyeden kısa sürede çıkarın."
+      "type": "word_performance",
+      "title": "Anında Bellek İçi OpenXML Oluşturma",
+      "content": "Sunucu kuyruklarında beklemeye veya devasa ekleri indirmeye elveda deyin. Çok sayfalı PDF'leri doğrudan donanımınızda milisaniyeler içinde temiz, düzenlenebilir Word belgelerine dönüştürün.",
+      "badgeText": "Yüksek Hızlı Dönüşüm"
     }
   ],
   "faqs": [
     {
-      "q": "Metnin tamamı korunuyor mu?",
-      "a": "Evet, tüm katmanlardaki metinler çıkarılır ve biçimlendirilir."
+      "q": "Dönüştürülen belgeyi Microsoft Word ve Google Dokümanlar'da düzenleyebilir miyim?",
+      "a": "Evet. Çıktı, Microsoft Word 2007'den 365'e kadar, Google Dokümanlar, LibreOffice Writer ve Apple Pages ile tam uyumlu standart bir OpenXML (.docx) dosyasıdır."
     },
     {
-      "q": "Taranmış PDF'lerde çalışır mı?",
-      "a": "Taranmış PDF'ler için öncelikle OCR aracımızı kullanın."
+      "q": "Belgelerim herhangi bir uzak sunucuya yüklendi mi?",
+      "a": "Hayır. HandleMyFile katı bir Sıfır Çıkış politikası kapsamında çalışır. Tüm ayrıştırma, metin kümeleme ve DOCX oluşturma işlemleri %100 web tarayıcınızın sanal alanında gerçekleşir."
     },
     {
-      "q": "Resimler .docx dosyasına dahil mi?",
-      "a": "Evet, gömülü görüntüler çıktıya dahil edilir."
+      "q": "Bu araç internet olmadan tamamen çevrimdışı çalışıyor mu?",
+      "a": "Evet. Uygulama varlıkları tarayıcınızda önbelleğe alındıktan sonra, PDF'leri etkin bir internet bağlantısı olmadan Word belgelerine dönüştürebilirsiniz."
     },
     {
-      "q": "Daha sonra .docx dosyasını düzenleyebilir miyim?",
-      "a": "Kesinlikle çıktı tamamen düzenlenebilir bir Word belgesidir."
+      "q": "Herhangi bir dosya boyutu sınırı, sayfa sınırı veya zorunlu kayıt var mı?",
+      "a": "Yapay ödeme duvarları, filigranlar veya kullanıcı kayıtları gerekmez. Tek sınır, cihazınızın kullanılabilir RAM'idir."
     },
     {
-      "q": "Bu bedava mı?",
-      "a": "Evet, tamamen ücretsiz."
+      "q": "Kalın, italik ve yazı tipi başlıkları korunacak mı?",
+      "a": "Evet. Uzamsal analizörümüz, dönüştürülen Word belgesindeki başlıklarınızı, kalın vurgunuzu ve italik stilinizi korumak için yazı tipi ağırlıklarını, stillerini ve yazı tipi boyutlarını algılar."
     }
-  ],
-  "faqTitle": "Sıkça Sorulan Sorular"
+  ]
 }

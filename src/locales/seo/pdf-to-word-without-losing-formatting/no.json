@@ -1,79 +1,88 @@
 {
-  "title": "Gratis PDF til Word Converter (.docx) uten å miste formatering",
-  "h1": "Konverter PDF til redigerbart Word DOCX i nettleseren din",
-  "description": "Trekk ut nøyaktig tekst, layoutkjøringer og avsnitt fra en hvilken som helst PDF-fil til en ren Microsoft Word-fil (.docx) direkte i nettleserminnet.",
+  "title": "Konverter PDF til Word uten å miste formatering - Gratis DOCX Converter",
+  "h1": "Konverter PDF til Word mens du beholder nøyaktig layout og typografi",
+  "description": "Trekk ut tekst, skrifter, tabeller og avsnitt fra PDF-filer til Microsoft Word (.docx)-format uten å forvrenge layout eller miste formatering. 100 % privat i nettleseren din.",
+  "buttonText": "Konverter uten å miste formatering",
+  "badges": [
+    "Bevar layout",
+    "Vektorpresisjon",
+    "Null opplasting"
+  ],
+  "stats": [
+    "100 %",
+    "Trofasthet",
+    "0",
+    "Datalekkasjer"
+  ],
+  "supportCenter": "High-Fidelity dokumentgjenoppretting",
+  "faqTitle": "Vanlige spørsmål om formatering og oppsettbevaring",
   "sections": [
     {
-      "type": "watermark_hero_features",
-      "title": "Konverter PDF til Word perfekt",
-      "content": "Forvandle PDF-dokumentene dine til redigerbare Word-filer mens du beholder den originale layouten, fontene og bildene intakte.",
-      "badgeText": "Behold formatering"
+      "type": "compress_hero_features",
+      "title": "Eliminer kryptert tekst og brutte linjeskift",
+      "content": "De fleste generiske PDF-konverterere deler tekst i tusenvis av frakoblede flytende tekstbokser. Layoutmotoren vår analyserer romlig leseflyt for å rekonstruere kontinuerlige avsnitt, overskrifter og marger slik at Word-dokumentet ditt virkelig er redigerbart.",
+      "badgeText": "Ekte reflytbar layout"
     },
     {
-      "type": "protect_how_to_steps",
-      "title": "Hvordan konvertere PDF til Word",
-      "badgeText": "Enkel konvertering",
+      "type": "organize_how_to_steps",
+      "title": "Hvordan beholde PDF-formatering når du konverterer til Word",
+      "badgeText": "Presisjonsarbeidsflyt",
       "steps": [
         {
-          "title": "Last opp PDF",
-          "description": "Velg PDF-filen du ønsker å konvertere."
+          "title": "Last opp dokumentet ditt",
+          "description": "Slipp PDF-filen din i det lokale arbeidsområdet. Hver side gjengis visuelt i sanntid."
         },
         {
-          "title": "Konverter til DOCX",
-          "description": "Klikk konverter for å starte den lokale behandlingen."
+          "title": "Romlig strukturrekonstruksjon",
+          "description": "Vår layoutanalysator med to motorer grupperer ordløp i naturlige linjer og avsnittsblokker."
         },
         {
-          "title": "Last ned Word-fil",
-          "description": "Lagre det fullt redigerbare Word-dokumentet."
+          "title": "Eksporter Clean .docx",
+          "description": "Last ned et rent Word-dokument med riktig avsnittsavstand, innrykk og skrifthierarkier."
         }
       ]
     },
     {
-      "type": "excel_geo_targeting",
-      "title": "Nøyaktig oppbevaring av oppsett",
-      "content": "Vår avanserte parser forstår avsnitt, tabeller og kolonner, og sikrer at Word-dokumentet ditt ser nøyaktig ut som PDF-filen.",
-      "subTitle": "High Fidelity",
-      "subContent": "Opprettholde styling og struktur.",
-      "badgeText": "High Fidelity"
+      "type": "protect_geo_targeting",
+      "title": "Gjenoppretting av høypresisjonsoppsett for komplekse dokumenter",
+      "content": "Spesielt tilpasset for akademiske avhandlinger, juridiske briefs, tekniske whitepapers og fakturaer der formateringsfeil, manglende kulepunkter eller brutte linjer ikke kan tolereres.",
+      "subTitle": "ISO/IEC 29500 OpenXML-samsvar",
+      "subContent": "Produserer standardkompatible Word-dokumentpakker med rene XML-koder og null oppblåsthet.",
+      "badgeText": "Standard kompatibel"
     },
     {
       "type": "redact_privacy_security",
-      "title": "Sikker konvertering på klientsiden",
-      "content": "Konverter konfidensielle kontrakter og rapporter sikkert. Konverteringen skjer utelukkende på enheten din."
+      "title": "Strenge null dataoppbevaringsgaranti",
+      "content": "Fordi behandlingen skjer direkte innenfor nettleserens kjøretid, har verken HandleMyFile eller noen tredjepart noen gang tilgang til din proprietære åndsverk.",
+      "badgeText": "Konfidensialitet sikret"
     },
     {
       "type": "watermark_performance",
-      "title": "Rask behandling",
-      "content": "Konverter flersidige dokumenter på sekunder.",
-      "badgeText": "Rask utgang"
+      "title": "Deterministisk WebAssembly Layout Engine",
+      "content": "Utnytter moderne WebAssembly SIMD og Web Workers for å behandle komplekse dokumentoppsett med null UI-frysing og lynrask utførelse.",
+      "badgeText": "Nesten innfødt hastighet"
     }
   ],
   "faqs": [
     {
-      "q": "Vil oppsettet endres?",
-      "a": "Vi streber etter å bevare den nøyaktige layouten, inkludert tabeller, bilder og tekstjustering."
+      "q": "Hvordan forhindrer dette verktøyet tap av formatering sammenlignet med andre konvertere?",
+      "a": "I stedet for å lage fragmenterte tekstbokser for hvert ord, beregner motoren vår romlige grensebokser og linjehøyder for å gruppere tekst i naturlige Word-avsnitt med konsekvente marger."
     },
     {
-      "q": "Behandles dette på en server?",
-      "a": "Nei, konverteringen gjøres fullstendig i nettleseren din for maksimalt personvern."
+      "q": "Kan jeg redigere den konverterte Word-filen som vanlig omflytbar tekst?",
+      "a": "Ja. Det genererte .docx-dokumentet bruker standard avsnitts- og overskriftskoder, slik at du kan redigere, legge til eller slette tekst uten å bryte tilstøtende avsnitt."
     },
     {
-      "q": "Kan jeg redigere teksten etter konvertering?",
-      "a": "Ja, den resulterende DOCX-filen er fullt redigerbar i Microsoft Word eller Google Docs."
+      "q": "Støttes tabeller og flersidige dokumenter?",
+      "a": "Ja. Dokumenter på flere sider inkluderer automatisk rene sideskift, og tabelllinjer er organisert sekvensielt."
+    },
+    {
+      "q": "Hvilke fonter brukes i det konverterte Word-dokumentet?",
+      "a": "Motoren kartlegger standard PDF-fontfamilier (som Helvetica, Times, Courier og Arial) til universelt støttede OpenXML-fontdefinisjoner som Calibri, Arial og Times New Roman."
+    },
+    {
+      "q": "Er det lagt til noen kostnad, abonnement eller vannmerke?",
+      "a": "Ingen. HandleMyFile er helt gratis å bruke med null vannmerker, null annonser og null abonnementer."
     }
-  ],
-  "badges": [
-    "Redigerbar",
-    "Korrekt",
-    "Privat"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "Konverter til Word",
-  "supportCenter": "Støttesenter",
-  "faqTitle": "Ofte stilte spørsmål"
+  ]
 }

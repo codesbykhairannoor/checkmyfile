@@ -139,6 +139,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               { id: 'merge-pdf', label: 'MERGE PDF' },
               { id: 'split-pdf', label: 'SPLIT PDF' },
               { id: 'compress-pdf', label: 'COMPRESS PDF' },
+              { id: 'pdf-to-word', label: 'PDF TO WORD' },
             ].map(({ id, label }) => (
               <button
                 key={id}
@@ -223,6 +224,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                       <MI icon={Unlock} label={toolNames['unlock-pdf']?.[currentLang] || "Unlock PDF"} onClick={() => handleToolClick('unlock-pdf')} />
                       <MI icon={EyeOff} label={toolNames['redact-pdf']?.[currentLang] || "Redact PDF"} onClick={() => handleToolClick('redact-pdf')} />
                       <div className="mega-menu-title" style={{ marginTop: 12 }}>{NAV.fromPdf}</div>
+                      <MI icon={FileText} label={toolNames['pdf-to-word']?.[currentLang] || "PDF to Word"} onClick={() => handleToolClick('pdf-to-word')} highlight={true} />
                       <MI icon={Presentation} label={toolNames['pdf-to-ppt']?.[currentLang] || "PDF to POWERPOINT"} onClick={() => handleToolClick('pdf-to-ppt')} />
                       <MI icon={Images} label={toolNames['pdf-to-image']?.[currentLang] || "PDF to JPG / PNG"} onClick={() => handleToolClick('pdf-to-image')} />
                       <MI icon={Image} label={toolNames['extract-images-pdf']?.[currentLang] || "Extract Images"} onClick={() => handleToolClick('extract-images-pdf')} />
@@ -356,14 +358,15 @@ export const Navbar: React.FC<NavbarProps> = ({
             </button>
           </div>
 
-          {/* Quick 3 buttons */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 8, marginBottom: 16 }}>
+          {/* Quick 4 buttons */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 6, marginBottom: 16 }}>
             {[
               { id: 'merge-pdf', label: 'Merge' },
               { id: 'split-pdf', label: 'Split' },
               { id: 'compress-pdf', label: 'Compress' },
+              { id: 'pdf-to-word', label: 'Word' },
             ].map(({ id, label }) => (
-              <button key={id} onClick={() => handleToolClick(id)} style={{ background: 'var(--bg-card)', border: '1px solid var(--border-color)', padding: '10px', borderRadius: 8, fontWeight: 700, color: 'var(--text-main)', fontSize: '0.82rem', cursor: 'pointer' }}>{toolNames[id]?.[currentLang]?.toUpperCase() || label}</button>
+              <button key={id} onClick={() => handleToolClick(id)} style={{ background: 'var(--bg-card)', border: '1px solid var(--border-color)', padding: '10px 4px', borderRadius: 8, fontWeight: 700, color: 'var(--text-main)', fontSize: '0.78rem', cursor: 'pointer', textAlign: 'center' }}>{toolNames[id]?.[currentLang]?.toUpperCase() || label}</button>
             ))}
           </div>
 
@@ -412,6 +415,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   { id: 'redact-pdf', label: 'Redact PDF', Icon: EyeOff },
                 ]},
                 { section: NAV.fromPdf, tools: [
+                  { id: 'pdf-to-word', label: 'PDF to Word', Icon: FileText },
                   { id: 'pdf-to-ppt', label: 'PDF to PPTX', Icon: Presentation },
                   { id: 'pdf-to-image', label: 'PDF to JPG/PNG', Icon: Images },
                   { id: 'extract-images-pdf', label: 'Extract Images', Icon: Image },

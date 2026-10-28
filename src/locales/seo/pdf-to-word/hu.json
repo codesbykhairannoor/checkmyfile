@@ -1,80 +1,88 @@
 {
-  "title": "PDF-ből Word konvertáló – offline és szerkeszthető",
-  "h1": "Konvertálja a PDF-t szerkeszthető Word-dokumentummá helyileg",
-  "description": "Alakítsa vissza a PDF-fájlokat .docx fájlokká, amelyeket közvetlenül a böngészőjében szerkeszthet. Nincs szükség feltöltésre. Kiváló a budapesti felhasználók számára.",
-  "buttonText": "Konvertálás Word-be",
+  "title": "PDF konvertálása Word Online formátumba ingyen – 100%-ban privát (.docx)",
+  "h1": "A PDF konvertálása szerkeszthető Word-vé (.docx) közvetlenül a böngészőben",
+  "description": "A PDF dokumentumokat szerkeszthető Microsoft Word (.docx) fájlokká alakíthatja át a böngészőben. Nulla fájlfeltöltés, nincs szerverkövetés, 100%-ban privát RAM-feldolgozás.",
+  "buttonText": "Konvertálás Word-be (.docx)",
   "badges": [
-    "Szerkeszthető dokumentumok",
-    "Szöveg helyreállítása",
-    "Offline folyamat"
+    "100%-ban böngészőben",
+    "Nulla szerverfeltöltés",
+    "Azonnali letöltés"
   ],
   "stats": [
     "100%",
-    "Helyi",
+    "Magán",
     "0s",
-    "Várj Idő"
+    "Szerver Várjon"
   ],
+  "supportCenter": "Adatvédelem és dokumentumok integritása",
+  "faqTitle": "Gyakran ismételt kérdések a PDF-ről Word-be",
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Miért használja offline?",
-      "content": "Ha szerkesztenie kell egy PDF-fájlt, offline konvertálásával az eredeti dokumentum bizalmas marad."
+      "type": "word_hero_features",
+      "title": "Miért konvertálhat helyileg PDF-et Word-be?",
+      "content": "A hagyományos online konverterek feltöltik bizalmas fájljait távoli felhőszerverekre. A HandleMyFile a teljes konverziót helyileg, a böngésző memóriájában hajtja végre a WebAssembly segítségével, biztosítva ezzel, hogy szerződései, pénzügyi kimutatásai és személyes nyilvántartásai soha ne hagyják el az eszközt.",
+      "badgeText": "Zero-Egress építészet"
     },
     {
-      "type": "split_how_to_steps",
-      "title": "Hogyan kell használni",
+      "type": "word_how_to_steps",
+      "title": "PDF konvertálása Word-be 3 lépésben",
+      "badgeText": "Gyors és súrlódásmentes",
       "steps": [
         {
-          "title": "PDF betöltése",
-          "description": "Válassza ki a konvertálni kívánt PDF-fájlt."
+          "title": "Válassza ki vagy dobja el a PDF-t",
+          "description": "Válassza ki a PDF dokumentumot. A fájl feltöltés nélkül közvetlenül az eszköz RAM-jába kerül beolvasásra."
         },
         {
-          "title": "Szövegrétegek észlelése",
-          "description": "Motorunk szöveget és szerkezetet olvas be a PDF-ből."
+          "title": "Intelligens elrendezés kivonás",
+          "description": "Kliensoldali motorunk a bekezdéseket, a betűtípusokat és a szöveghierarchiát szabványos OpenXML-be rekonstruálja."
         },
         {
-          "title": "Töltse le a .docx fájlt",
-          "description": "Készítse elő szerkeszthető Word-dokumentumát a módosításra."
+          "title": "Szerkeszthető DOCX letöltése",
+          "description": "Azonnal mentse az átalakított Word-fájlt, és készen áll a megnyitásra a Microsoft Word, a Google Docs vagy a LibreOffice alkalmazásban."
         }
       ]
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF-ből Word-be budapesti irodáknak",
-      "content": "A budapesti irodai dolgozók eszközünk segítségével szerkeszthető szöveget állítanak helyre PDF-ekből felhőfüggőség nélkül."
+      "type": "word_geo_targeting",
+      "title": "Vállalati szintű dokumentumok bizalmas kezelése",
+      "content": "Jogi tanácsadók, könyvelők, kutatók és vállalatok számára készült, akik nem kockáztathatják meg, hogy saját dokumentumokat töltsenek fel harmadik fél SaaS-kiszolgálóira. Megfelel a GDPR 25. cikkének (Beépített adatvédelem) és a HIPAA adatelszigetelési irányelveinek.",
+      "subTitle": "Feltörhetetlen RAM-on belüli végrehajtás",
+      "subContent": "A böngésző lap bezárása után az összes dokumentumpuffer automatikusan törlődik a rendszermemóriából.",
+      "badgeText": "Banki szintű adatvédelem"
     },
     {
-      "type": "split_privacy_security",
-      "title": "A jogi dokumentumok maradjanak bizalmasak",
-      "content": "A szerződések, NDA-k és jelentések teljes egészében vissza lettek konvertálva Word-be a böngésző memóriájában."
+      "type": "word_privacy_security",
+      "title": "Pure Zero-Egress Network Isolation",
+      "content": "Még az oldal betöltése után is leválaszthatja a Wi-Fi-t, vagy bekapcsolhatja a Repülőgép módot: a PDF–Word konvertáló továbbra is 100%-os funkcionalitással működik, teljesen offline állapotban.",
+      "badgeText": "Offline kész"
     },
     {
-      "type": "split_performance",
-      "title": "Szerkeszthető szöveg helyreállítása másodpercek alatt",
-      "content": "Szöveg kibontása 50 oldalas PDF-ből kevesebb mint 3 másodperc alatt, egyetlen bájt feltöltése nélkül."
+      "type": "word_performance",
+      "title": "Azonnali in-Memory OpenXML generálás",
+      "content": "Mondjon búcsút a szerversorban való várakozásnak vagy a hatalmas mellékletek letöltésének. A többoldalas PDF-fájlokat ezredmásodpercek alatt tiszta, szerkeszthető Word-dokumentummá alakíthatja közvetlenül a hardveren.",
+      "badgeText": "Nagy sebességű átalakítás"
     }
   ],
   "faqs": [
     {
-      "q": "Minden szöveg megmarad?",
-      "a": "Igen, a rendszer az összes rétegből kivonja és formázza a szöveget."
+      "q": "Szerkeszthetem a konvertált dokumentumot a Microsoft Word és a Google Docs programban?",
+      "a": "Igen. A kimenet egy szabványos OpenXML (.docx) fájl, amely teljes mértékben kompatibilis a Microsoft Word 2007–365, a Google Docs, a LibreOffice Writer és az Apple Pages programokkal."
     },
     {
-      "q": "Beolvasott PDF-eken működik?",
-      "a": "A beszkennelt PDF-ekhez először használja az OCR-eszközt."
+      "q": "Fel vannak töltve a dokumentumaim bármely távoli szerverre?",
+      "a": "Nem. A HandleMyFile szigorú Zero-Egress szabályzat szerint működik. Minden elemzés, szövegfürtözés és DOCX-generálás 100%-ban a webböngésző homokozójában történik."
     },
     {
-      "q": "Tartalmaznak képeket a .docx fájlban?",
-      "a": "Igen, a beágyazott képek szerepelnek a kimenetben."
+      "q": "Ez az eszköz teljesen offline módban működik internet nélkül?",
+      "a": "Igen. Miután az alkalmazáselemek gyorsítótárban vannak a böngészőben, aktív internetkapcsolat nélkül konvertálhatja a PDF-eket Word-dokumentummá."
     },
     {
-      "q": "Ezt követően szerkeszthetem a .docx fájlt?",
-      "a": "Természetesen a kimenet egy teljesen szerkeszthető Word-dokumentum."
+      "q": "Van-e fájlméret-korlát, oldalkorlát vagy kötelező regisztráció?",
+      "a": "Nincs szükség mesterséges fizetőfalakra, vízjelekre vagy felhasználói regisztrációra. Az egyetlen korlát az eszközben elérhető RAM."
     },
     {
-      "q": "Ez ingyenes?",
-      "a": "Igen, teljesen ingyenes."
+      "q": "Megőrzik a félkövér, dőlt és betűtípusú fejléceket?",
+      "a": "Igen. Térbeli elemzőnk észleli a betűk súlyát, stílusát és betűméretét, hogy megőrizze a címsorokat, a félkövér hangsúlyt és a dőlt stílust a konvertált Word-dokumentumban."
     }
-  ],
-  "faqTitle": "Gyakran Ismételt Kérdések"
+  ]
 }

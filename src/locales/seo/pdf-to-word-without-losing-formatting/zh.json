@@ -1,79 +1,88 @@
 {
-  "title": "免费的 PDF 到 Word 转换器 (.docx)，不会丢失格式",
-  "h1": "在浏览器中将 PDF 转换为可编辑的 Word DOCX",
-  "description": "将任何 PDF 中的精确文本、布局运行和段落直接提取到浏览器内存中的干净的 Microsoft Word (.docx) 文件中。",
+  "title": "将 PDF 转换为 Word，而不丢失格式 — 免费 DOCX 转换器",
+  "h1": "将 PDF 转换为 Word，同时保留精确的布局和版式",
+  "description": "将 PDF 文件中的文本、字体、表格和段落提取为 Microsoft Word (.docx) 格式，而不会扰乱布局或丢失格式。 在您的浏览器中 100% 私密。",
+  "buttonText": "转换而不丢失格式",
+  "badges": [
+    "保留布局",
+    "矢量精度",
+    "零上传"
+  ],
+  "stats": [
+    "100%",
+    "富达",
+    "0",
+    "数据泄露"
+  ],
+  "supportCenter": "高保真文档恢复",
+  "faqTitle": "格式和布局保留常见问题解答",
   "sections": [
     {
-      "type": "watermark_hero_features",
-      "title": "完美将 PDF 转换为 Word",
-      "content": "将 PDF 文档转换为可编辑的 Word 文件，同时保持原始布局、字体和图像不变。",
-      "badgeText": "保留格式"
+      "type": "compress_hero_features",
+      "title": "消除乱序文本和断行符",
+      "content": "大多数通用 PDF 转换器将文本分解为数千个互不相连的浮动文本框。 我们的布局引擎分析空间阅读流以重建连续的段落、标题和页边距，以便您的 Word 文档真正可编辑。",
+      "badgeText": "真正的可回流焊布局"
     },
     {
-      "type": "protect_how_to_steps",
-      "title": "如何将 PDF 转换为 Word",
-      "badgeText": "轻松转换",
+      "type": "organize_how_to_steps",
+      "title": "转换为Word时如何保留PDF格式",
+      "badgeText": "精确的工作流程",
       "steps": [
         {
-          "title": "上传 PDF",
-          "description": "选择您要转换的 PDF 文件。"
+          "title": "上传您的文件",
+          "description": "将 PDF 放入本地工作区。 每个页面都是实时视觉呈现的。"
         },
         {
-          "title": "转换为 DOCX",
-          "description": "单击“转换”开始本地处理。"
+          "title": "空间结构重建",
+          "description": "我们的双引擎布局分析器将单词组合成自然行和段落块。"
         },
         {
-          "title": "下载Word文件",
-          "description": "保存完全可编辑的 Word 文档。"
+          "title": "导出干净的.docx",
+          "description": "下载具有适当段落间距、缩进和字体层次结构的干净 Word 文档。"
         }
       ]
     },
     {
-      "type": "excel_geo_targeting",
-      "title": "准确的布局保留",
-      "content": "我们的高级解析器可以理解段落、表格和列，确保您的 Word 文档看起来与 PDF 完全相同。",
-      "subTitle": "高保真度",
-      "subContent": "保持样式和结构。",
-      "badgeText": "高保真度"
+      "type": "protect_geo_targeting",
+      "title": "复杂文档的高精度布局恢复",
+      "content": "特别针对学术论文、法律摘要、技术白皮书和发票进行调整，其中不能容忍格式错误、缺少要点或断线换行。",
+      "subTitle": "ISO/IEC 29500 OpenXML 合规性",
+      "subContent": "生成符合标准的 Word 文档包，具有干净的 XML 标签和零膨胀。",
+      "badgeText": "符合标准"
     },
     {
       "type": "redact_privacy_security",
-      "title": "安全的客户端转换",
-      "content": "安全地转换机密合同和报告。 转换完全发生在您的设备上。"
+      "title": "严格的零数据保留保证",
+      "content": "由于处理直接在您的浏览器运行时内进行，因此 HandleMyFile 和任何第三方都无法访问您的专有知识产权。",
+      "badgeText": "保密性有保证"
     },
     {
       "type": "watermark_performance",
-      "title": "快速处理",
-      "content": "在几秒钟内转换多页文档。",
-      "badgeText": "快速输出"
+      "title": "确定性 WebAssembly 布局引擎",
+      "content": "利用现代 WebAssembly SIMD 和 Web Workers 处理复杂的文档布局，实现零 UI 冻结和闪电般的执行速度。",
+      "badgeText": "接近原生速度"
     }
   ],
   "faqs": [
     {
-      "q": "布局会改变吗？",
-      "a": "我们努力保留精确的布局，包括表格、图像和文本对齐方式。"
+      "q": "与其他转换器相比，该工具如何防止格式丢失？",
+      "a": "我们的引擎不是为每个单词创建碎片文本框，而是计算空间边界框和行高，将文本分组为具有一致边距的自然 Word 段落。"
     },
     {
-      "q": "这是在服务器上处理的吗？",
-      "a": "不会，转换完全在您的浏览器中完成，以最大限度地保护隐私。"
+      "q": "我可以将转换后的 Word 文件作为正常的可重排文本进行编辑吗？",
+      "a": "是的。 生成的 .docx 文档使用标准段落和标题标签，允许您编辑、添加或删除文本，而不会破坏相邻段落。"
     },
     {
-      "q": "转换后可以编辑文本吗？",
-      "a": "是的，生成的 DOCX 文件可以在 Microsoft Word 或 Google Docs 中完全编辑。"
+      "q": "是否支持表格和多页文档？",
+      "a": "是的。 多页文档自动包含干净的分页符，并且表格行按顺序组织。"
+    },
+    {
+      "q": "转换后的Word文档使用什么字体？",
+      "a": "该引擎将标准 PDF 字体系列（例如 Helvetica、Times、Courier 和 Arial）映射到普遍支持的 OpenXML 字体定义，例如 Calibri、Arial 和 Times New Roman。"
+    },
+    {
+      "q": "是否需要付费、订阅或添加水印？",
+      "a": "没有任何。 HandleMyFile 完全免费使用，零水印、零广告、零订阅。"
     }
-  ],
-  "badges": [
-    "可编辑",
-    "准确的",
-    "私人的"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "转换为Word",
-  "supportCenter": "支持中心",
-  "faqTitle": "常见问题解答"
+  ]
 }

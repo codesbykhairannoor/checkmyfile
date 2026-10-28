@@ -1,79 +1,88 @@
 {
-  "title": "Conversor gratuito de PDF para Word (.docx) sem perder a formatação",
-  "h1": "Converta PDF em Word DOCX editável em seu navegador",
-  "description": "Extraia texto exato, execuções de layout e parágrafos de qualquer PDF em um arquivo limpo do Microsoft Word (.docx) diretamente na memória do navegador.",
+  "title": "Converta PDF para Word sem perder a formatação — Conversor DOCX gratuito",
+  "h1": "Converta PDF em Word preservando o layout e a tipografia exatos",
+  "description": "Extraia texto, fontes, tabelas e parágrafos de arquivos PDF para o formato Microsoft Word (.docx) sem embaralhar o layout ou perder a formatação. 100% privado no seu navegador.",
+  "buttonText": "Converta sem perder a formatação",
+  "badges": [
+    "Preservar layout",
+    "Precisão vetorial",
+    "Carregamento zero"
+  ],
+  "stats": [
+    "100%",
+    "Fidelidade",
+    "0",
+    "Vazamentos de dados"
+  ],
+  "supportCenter": "Recuperação de documentos de alta fidelidade",
+  "faqTitle": "Perguntas frequentes sobre formatação e preservação de layout",
   "sections": [
     {
-      "type": "watermark_hero_features",
-      "title": "Converta PDF em Word perfeitamente",
-      "content": "Transforme seus documentos PDF em arquivos Word editáveis, mantendo intactos o layout, as fontes e as imagens originais.",
-      "badgeText": "Preservar formatação"
+      "type": "compress_hero_features",
+      "title": "Elimine texto embaralhado e quebras de linha quebrada",
+      "content": "A maioria dos conversores de PDF genéricos dividem o texto em milhares de caixas de texto flutuantes desconectadas. Nosso mecanismo de layout analisa o fluxo de leitura espacial para reconstruir parágrafos, títulos e margens contínuos para que seu documento Word seja verdadeiramente editável.",
+      "badgeText": "Layout verdadeiramente refluível"
     },
     {
-      "type": "protect_how_to_steps",
-      "title": "Como Converter PDF para Word",
-      "badgeText": "Conversão Fácil",
+      "type": "organize_how_to_steps",
+      "title": "Como manter a formatação de PDF ao converter para Word",
+      "badgeText": "Fluxo de trabalho de precisão",
       "steps": [
         {
-          "title": "Carregar PDF",
-          "description": "Selecione o arquivo PDF que deseja converter."
+          "title": "Envie seu documento",
+          "description": "Solte seu PDF na área de trabalho local. Cada página é renderizada visualmente em tempo real."
         },
         {
-          "title": "Converter para DOCX",
-          "description": "Clique em converter para iniciar o processamento local."
+          "title": "Reconstrução da Estrutura Espacial",
+          "description": "Nosso analisador de layout de mecanismo duplo agrupa execuções de palavras em linhas naturais e blocos de parágrafos."
         },
         {
-          "title": "Baixar arquivo do Word",
-          "description": "Salve o documento do Word totalmente editável."
+          "title": "Exportar limpo .docx",
+          "description": "Baixe um documento do Word limpo com espaçamento de parágrafo, recuos e hierarquias de fontes adequados."
         }
       ]
     },
     {
-      "type": "excel_geo_targeting",
-      "title": "Retenção precisa de layout",
-      "content": "Nosso analisador avançado entende parágrafos, tabelas e colunas, garantindo que seu documento Word seja exatamente igual ao PDF.",
-      "subTitle": "Alta fidelidade",
-      "subContent": "Mantenha o estilo e a estrutura.",
-      "badgeText": "Alta fidelidade"
+      "type": "protect_geo_targeting",
+      "title": "Recuperação de layout de alta precisão para documentos complexos",
+      "content": "Especialmente ajustado para teses acadêmicas, resumos jurídicos, documentos técnicos e faturas onde erros de formatação, marcadores faltantes ou linhas quebradas não podem ser tolerados.",
+      "subTitle": "Conformidade com ISO/IEC 29500 OpenXML",
+      "subContent": "Produz pacotes de documentos do Word em conformidade com os padrões, com tags XML limpas e zero inchaço.",
+      "badgeText": "Compatível com padrão"
     },
     {
       "type": "redact_privacy_security",
-      "title": "Conversão segura do lado do cliente",
-      "content": "Converta contratos e relatórios confidenciais com segurança. A conversão acontece inteiramente no seu dispositivo."
+      "title": "Garantia estrita de retenção zero de dados",
+      "content": "Como o processamento ocorre diretamente no tempo de execução do seu navegador, nem o HandleMyFile nem terceiros têm acesso à sua propriedade intelectual proprietária.",
+      "badgeText": "Confidencialidade garantida"
     },
     {
       "type": "watermark_performance",
-      "title": "Processamento rápido",
-      "content": "Converta documentos de várias páginas em segundos.",
-      "badgeText": "Saída rápida"
+      "title": "Mecanismo determinístico de layout WebAssembly",
+      "content": "Aproveita WebAssembly SIMD e Web Workers modernos para processar layouts de documentos complexos sem congelamento da interface do usuário e execução extremamente rápida.",
+      "badgeText": "Velocidade quase nativa"
     }
   ],
   "faqs": [
     {
-      "q": "O layout mudará?",
-      "a": "Nós nos esforçamos para preservar o layout exato, incluindo tabelas, imagens e alinhamento de texto."
+      "q": "Como esta ferramenta evita a perda de formatação em comparação com outros conversores?",
+      "a": "Em vez de criar caixas de texto fragmentadas para cada palavra, nosso mecanismo calcula caixas delimitadoras espaciais e alturas de linha para agrupar o texto em parágrafos naturais do Word com margens consistentes."
     },
     {
-      "q": "Isso é processado em um servidor?",
-      "a": "Não, a conversão é feita totalmente no seu navegador para máxima privacidade."
+      "q": "Posso editar o arquivo Word convertido como texto refluível normal?",
+      "a": "Sim. O documento .docx gerado usa tags de parágrafo e título padrão, permitindo editar, adicionar ou excluir texto sem quebrar parágrafos adjacentes."
     },
     {
-      "q": "Posso editar o texto após a conversão?",
-      "a": "Sim, o arquivo DOCX resultante é totalmente editável no Microsoft Word ou Google Docs."
+      "q": "São suportadas tabelas e documentos de várias páginas?",
+      "a": "Sim. Documentos de várias páginas incluem automaticamente quebras de página limpas e as linhas tabulares são organizadas sequencialmente."
+    },
+    {
+      "q": "Quais fontes são usadas no documento Word convertido?",
+      "a": "O mecanismo mapeia famílias de fontes PDF padrão (como Helvetica, Times, Courier e Arial) para definições de fontes OpenXML com suporte universal, como Calibri, Arial e Times New Roman."
+    },
+    {
+      "q": "Há algum custo, assinatura ou marca d’água adicionada?",
+      "a": "Nenhum. HandleMyFile é totalmente gratuito para uso, sem marcas d’água, zero anúncios e zero assinaturas."
     }
-  ],
-  "badges": [
-    "Editável",
-    "Preciso",
-    "Privada"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "Converter para Word",
-  "supportCenter": "Centro de suporte",
-  "faqTitle": "Perguntas frequentes"
+  ]
 }

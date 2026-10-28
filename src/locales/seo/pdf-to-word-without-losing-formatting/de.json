@@ -1,79 +1,88 @@
 {
-  "title": "Kostenloser PDF-zu-Word-Konverter (.docx) ohne Formatierungsverlust",
-  "h1": "Konvertieren Sie PDF in Ihrem Browser in bearbeitbares Word DOCX",
-  "description": "Extrahieren Sie exakten Text, Layoutläufe und Absätze aus jeder PDF-Datei in eine saubere Microsoft Word-Datei (.docx) direkt im Browserspeicher.",
+  "title": "Konvertieren Sie PDF in Word, ohne die Formatierung zu verlieren – kostenloser DOCX-Konverter",
+  "h1": "Konvertieren Sie PDF in Word und behalten Sie dabei das exakte Layout und die Typografie bei",
+  "description": "Extrahieren Sie Text, Schriftarten, Tabellen und Absätze aus PDF-Dateien in das Microsoft Word-Format (.docx), ohne das Layout zu verfälschen oder Formatierungen zu verlieren. 100 % privat in Ihrem Browser.",
+  "buttonText": "Konvertieren ohne Formatierungsverlust",
+  "badges": [
+    "Layout beibehalten",
+    "Vektorpräzision",
+    "Kein Upload"
+  ],
+  "stats": [
+    "100 %",
+    "Treue",
+    "0",
+    "Datenlecks"
+  ],
+  "supportCenter": "High-Fidelity-Dokumentenwiederherstellung",
+  "faqTitle": "Häufig gestellte Fragen zur Formatierung und Layouterhaltung",
   "sections": [
     {
-      "type": "watermark_hero_features",
-      "title": "Konvertieren Sie PDF perfekt in Word",
-      "content": "Wandeln Sie Ihre PDF-Dokumente in bearbeitbare Word-Dateien um und behalten Sie dabei das ursprüngliche Layout, die Schriftarten und Bilder bei.",
-      "badgeText": "Formatierung beibehalten"
+      "type": "compress_hero_features",
+      "title": "Beseitigen Sie verschlüsselten Text und unterbrochene Zeilenumbrüche",
+      "content": "Die meisten generischen PDF-Konverter unterteilen den Text in Tausende getrennter schwebender Textfelder. Unsere Layout-Engine analysiert den räumlichen Lesefluss, um fortlaufende Absätze, Überschriften und Ränder zu rekonstruieren, sodass Ihr Word-Dokument wirklich bearbeitet werden kann.",
+      "badgeText": "Echtes umfließendes Layout"
     },
     {
-      "type": "protect_how_to_steps",
-      "title": "So konvertieren Sie PDF in Word",
-      "badgeText": "Einfache Konvertierung",
+      "type": "organize_how_to_steps",
+      "title": "So behalten Sie die PDF-Formatierung beim Konvertieren in Word bei",
+      "badgeText": "Präziser Workflow",
       "steps": [
         {
-          "title": "PDF hochladen",
-          "description": "Wählen Sie die PDF-Datei aus, die Sie konvertieren möchten."
+          "title": "Laden Sie Ihr Dokument hoch",
+          "description": "Legen Sie Ihre PDF-Datei im lokalen Arbeitsbereich ab. Jede Seite wird in Echtzeit visuell gerendert."
         },
         {
-          "title": "In DOCX konvertieren",
-          "description": "Klicken Sie auf „Konvertieren“, um die lokale Verarbeitung zu starten."
+          "title": "Rekonstruktion der Raumstruktur",
+          "description": "Unser Dual-Engine-Layoutanalysator gruppiert Wortläufe in natürliche Zeilen und Absatzblöcke."
         },
         {
-          "title": "Laden Sie die Word-Datei herunter",
-          "description": "Speichern Sie das vollständig bearbeitbare Word-Dokument."
+          "title": "Exportieren Sie eine saubere .docx-Datei",
+          "description": "Laden Sie ein sauberes Word-Dokument mit den richtigen Absatzabständen, Einzügen und Schriftarthierarchien herunter."
         }
       ]
     },
     {
-      "type": "excel_geo_targeting",
-      "title": "Genaue Beibehaltung des Layouts",
-      "content": "Unser fortschrittlicher Parser versteht Absätze, Tabellen und Spalten und stellt sicher, dass Ihr Word-Dokument genauso aussieht wie das PDF.",
-      "subTitle": "Hohe Wiedergabetreue",
-      "subContent": "Behalten Sie Stil und Struktur bei.",
-      "badgeText": "Hohe Wiedergabetreue"
+      "type": "protect_geo_targeting",
+      "title": "Hochpräzise Layoutwiederherstellung für komplexe Dokumente",
+      "content": "Speziell abgestimmt auf akademische Abschlussarbeiten, juristische Schriftsätze, technische Whitepapers und Rechnungen, bei denen Formatierungsfehler, fehlende Aufzählungspunkte oder unterbrochene Zeilenumbrüche nicht toleriert werden können.",
+      "subTitle": "ISO/IEC 29500 OpenXML-Konformität",
+      "subContent": "Erstellt standardkonforme Word-Dokumentpakete mit sauberen XML-Tags und ohne Aufblähung.",
+      "badgeText": "Standardkonform"
     },
     {
       "type": "redact_privacy_security",
-      "title": "Sichere clientseitige Konvertierung",
-      "content": "Konvertieren Sie vertrauliche Verträge und Berichte sicher. Die Konvertierung erfolgt vollständig auf Ihrem Gerät."
+      "title": "Strenge Garantie ohne Datenaufbewahrung",
+      "content": "Da die Verarbeitung direkt in der Laufzeit Ihres Browsers erfolgt, haben weder HandleMyFile noch Dritte jemals Zugriff auf Ihr geistiges Eigentum.",
+      "badgeText": "Vertraulichkeit gewährleistet"
     },
     {
       "type": "watermark_performance",
-      "title": "Schnelle Bearbeitung",
-      "content": "Konvertieren Sie mehrseitige Dokumente in Sekundenschnelle.",
-      "badgeText": "Schnelle Ausgabe"
+      "title": "Deterministische WebAssembly-Layout-Engine",
+      "content": "Nutzt moderne WebAssembly SIMD- und Web Worker, um komplexe Dokumentlayouts ohne Einfrieren der Benutzeroberfläche und blitzschneller Ausführung zu verarbeiten.",
+      "badgeText": "Nahezu native Geschwindigkeit"
     }
   ],
   "faqs": [
     {
-      "q": "Wird sich das Layout ändern?",
-      "a": "Wir bemühen uns, das genaue Layout, einschließlich Tabellen, Bilder und Textausrichtung, beizubehalten."
+      "q": "Wie verhindert dieses Tool im Vergleich zu anderen Konvertern Formatierungsverluste?",
+      "a": "Anstatt fragmentierte Textfelder für jedes Wort zu erstellen, berechnet unsere Engine räumliche Begrenzungsrahmen und Zeilenhöhen, um Text in natürliche Word-Absätze mit einheitlichen Rändern zu gruppieren."
     },
     {
-      "q": "Wird dies auf einem Server verarbeitet?",
-      "a": "Nein, die Konvertierung erfolgt für maximalen Datenschutz vollständig in Ihrem Browser."
+      "q": "Kann ich die konvertierte Word-Datei als normalen umfließenden Text bearbeiten?",
+      "a": "Ja. Das generierte .docx-Dokument verwendet standardmäßige Absatz- und Überschriften-Tags, sodass Sie Text bearbeiten, hinzufügen oder löschen können, ohne angrenzende Absätze umzubrechen."
     },
     {
-      "q": "Kann ich den Text nach der Konvertierung bearbeiten?",
-      "a": "Ja, die resultierende DOCX-Datei kann vollständig in Microsoft Word oder Google Docs bearbeitet werden."
+      "q": "Werden Tabellen und mehrseitige Dokumente unterstützt?",
+      "a": "Ja. Mehrseitige Dokumente enthalten automatisch saubere Seitenumbrüche und Tabellenzeilen werden sequentiell organisiert."
+    },
+    {
+      "q": "Welche Schriftarten werden im konvertierten Word-Dokument verwendet?",
+      "a": "Die Engine ordnet Standard-PDF-Schriftfamilien (wie Helvetica, Times, Courier und Arial) universell unterstützten OpenXML-Schriftdefinitionen wie Calibri, Arial und Times New Roman zu."
+    },
+    {
+      "q": "Fallen Kosten, Abonnements oder Wasserzeichen an?",
+      "a": "Keiner. Die Nutzung von HandleMyFile ist völlig kostenlos, ohne Wasserzeichen, ohne Werbung und ohne Abonnements."
     }
-  ],
-  "badges": [
-    "Bearbeitbar",
-    "Genau",
-    "Privat"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "In Word konvertieren",
-  "supportCenter": "Support-Center",
-  "faqTitle": "Häufig gestellte Fragen"
+  ]
 }

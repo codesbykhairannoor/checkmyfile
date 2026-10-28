@@ -1,80 +1,88 @@
 {
-  "title": "PDF til Word-konvertering – Frakoblet og redigerbar",
-  "h1": "Konverter PDF til redigerbare Word-dokumenter lokalt",
-  "description": "Gjør PDF-filer tilbake til .docx-filer du kan redigere direkte i nettleseren din. Ingen opplasting nødvendig. Flott for brukere i Oslo.",
-  "buttonText": "Konverter til Word",
+  "title": "Konverter PDF til Word Online Gratis — 100 % privat (.docx)",
+  "h1": "Konverter PDF til redigerbart Word (.docx) direkte i nettleseren",
+  "description": "Transformer PDF-dokumenter til redigerbare Microsoft Word-filer (.docx) helt i nettleseren din. Null filopplastinger, ingen serversporing, 100 % privat prosessering i RAM.",
+  "buttonText": "Konverter til Word (.docx)",
   "badges": [
-    "Redigerbare dokumenter",
-    "Tekstgjenoppretting",
-    "Offline prosess"
+    "100 % nettleser",
+    "Null serveropplastinger",
+    "Øyeblikkelig nedlasting"
   ],
   "stats": [
     "100 %",
-    "Lokalt",
+    "Privat",
     "0s",
-    "Ventetid"
+    "Server Vent"
   ],
+  "supportCenter": "Personvern og dokumentintegritet",
+  "faqTitle": "Ofte stilte spørsmål om PDF til Word",
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Hvorfor bruke offline?",
-      "content": "Når du trenger å redigere en PDF, holder konvertering av den frakoblet det originale dokumentet ditt konfidensielt."
+      "type": "word_hero_features",
+      "title": "Hvorfor konvertere PDF til Word lokalt?",
+      "content": "Tradisjonelle online-konverterere laster opp de konfidensielle filene dine til eksterne skyservere. HandleMyFile utfører hele konverteringen lokalt i nettleserminnet ved hjelp av WebAssembly, og sikrer at kontrakter, regnskaper og private poster aldri forlater enheten din.",
+      "badgeText": "Zero-Egress-arkitektur"
     },
     {
-      "type": "split_how_to_steps",
-      "title": "Hvordan bruke",
+      "type": "word_how_to_steps",
+      "title": "Hvordan konvertere PDF til Word i 3 trinn",
+      "badgeText": "Rask og friksjonsfri",
       "steps": [
         {
-          "title": "Last ned PDF",
-          "description": "Velg PDF-filen du trenger å konvertere."
+          "title": "Velg eller slipp PDF",
+          "description": "Velg PDF-dokumentet ditt. Filen leses direkte inn i enhetens RAM uten å lastes opp."
         },
         {
-          "title": "Oppdag tekstlag",
-          "description": "Motoren vår leser tekst og struktur fra PDF-en."
+          "title": "Intelligent layoututvinning",
+          "description": "Vår klientsidemotor rekonstruerer avsnitt, fonter og teksthierarki til standard OpenXML."
         },
         {
-          "title": "Last ned .docx",
-          "description": "Gjør det redigerbare Word-dokumentet ditt klart til endring."
+          "title": "Last ned redigerbar DOCX",
+          "description": "Lagre den konverterte Word-filen din umiddelbart, klar til å åpne i Microsoft Word, Google Docs eller LibreOffice."
         }
       ]
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF til Word for Oslo-kontorer",
-      "content": "Kontorarbeidere i Oslo bruker verktøyet vårt til å gjenopprette redigerbar tekst fra PDF-filer uten skyavhengighet."
+      "type": "word_geo_targeting",
+      "title": "Dokumentkonfidensialitet i bedriftsklasse",
+      "content": "Utviklet for juridiske rådgivere, regnskapsførere, forskere og bedrifter som ikke kan risikere å laste opp proprietære dokumenter til tredjeparts SaaS-servere. Overholder GDPR artikkel 25 (Privacy by Design) og HIPAA retningslinjer for dataisolering.",
+      "subTitle": "Unhackable In-RAM Execution",
+      "subContent": "Når du lukker nettleserfanen, slettes alle dokumentbuffere automatisk fra systemminnet.",
+      "badgeText": "Personvern i bankklasse"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Juridiske dokumenter forblir konfidensielle",
-      "content": "Kontrakter, NDAer og rapporter konvertert tilbake til Word helt i nettleserens minne."
+      "type": "word_privacy_security",
+      "title": "Ren Zero-Egress-nettverksisolasjon",
+      "content": "Du kan til og med koble fra Wi-Fi eller slå på flymodus etter å ha lastet inn siden: PDF til Word-konverteringen fortsetter å fungere med 100 % funksjonalitet helt offline.",
+      "badgeText": "Klar fra nett"
     },
     {
-      "type": "split_performance",
-      "title": "Gjenopprett redigerbar tekst på sekunder",
-      "content": "Trekk ut tekst fra en 50-siders PDF på under 3 sekunder uten å laste opp en eneste byte."
+      "type": "word_performance",
+      "title": "Instant In-Memory OpenXML Generation",
+      "content": "Si farvel til å vente i serverkøer eller laste ned enorme vedlegg. Konverter flersidige PDF-er til rene, redigerbare Word-dokumenter på millisekunder direkte på maskinvaren din.",
+      "badgeText": "Høyhastighets konvertering"
     }
   ],
   "faqs": [
     {
-      "q": "Er all tekst bevart?",
-      "a": "Ja, tekst fra alle lag trekkes ut og formateres."
+      "q": "Kan jeg redigere det konverterte dokumentet i Microsoft Word og Google Docs?",
+      "a": "Ja. Utdataene er en standard OpenXML (.docx)-fil som er fullt kompatibel med Microsoft Word 2007 til 365, Google Docs, LibreOffice Writer og Apple Pages."
     },
     {
-      "q": "Fungerer det på skannede PDF-filer?",
-      "a": "For skannede PDF-er, bruk først OCR-verktøyet vårt."
+      "q": "Er dokumentene mine lastet opp til en ekstern server?",
+      "a": "Nei. HandleMyFile opererer under en streng Zero-Egress policy. All parsing, tekstklyngning og DOCX-generering skjer 100 % i nettleserens sandkasse."
     },
     {
-      "q": "Er bilder inkludert i .docx?",
-      "a": "Ja, innebygde bilder er inkludert i utdataene."
+      "q": "Fungerer dette verktøyet helt offline uten internett?",
+      "a": "Ja. Når applikasjonsmidlene er bufret i nettleseren din, kan du konvertere PDF-filer til Word-dokumenter uten en aktiv internettforbindelse."
     },
     {
-      "q": "Kan jeg redigere .docx etterpå?",
-      "a": "Absolutt, utdataene er et fullt redigerbart Word-dokument."
+      "q": "Er det noen filstørrelsesgrense, sidegrense eller obligatorisk registrering?",
+      "a": "Det kreves ingen kunstige betalingsmurer, vannmerker eller brukerregistreringer. Den eneste grensen er enhetens tilgjengelige RAM."
     },
     {
-      "q": "Er dette gratis?",
-      "a": "Ja, helt gratis."
+      "q": "Vil fet, kursiv og skriftoverskrifter beholdes?",
+      "a": "Ja. Vår romlige analysator oppdager skriftvekter, stiler og skriftstørrelser for å opprettholde overskriftene dine, fet fremheving og kursiv stil i det konverterte Word-dokumentet."
     }
-  ],
-  "faqTitle": "Ofte Stilte Spørsmål"
+  ]
 }

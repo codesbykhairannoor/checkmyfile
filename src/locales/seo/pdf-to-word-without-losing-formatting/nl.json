@@ -1,79 +1,88 @@
 {
-  "title": "Gratis PDF naar Word-converter (.docx) zonder de opmaak te verliezen",
-  "h1": "Converteer PDF naar bewerkbare Word DOCX in uw browser",
-  "description": "Extraheer exacte tekst, lay-outruns en alinea's uit elke PDF naar een schoon Microsoft Word-bestand (.docx), rechtstreeks in het browsergeheugen.",
+  "title": "Converteer PDF naar Word zonder de opmaak te verliezen - Gratis DOCX-converter",
+  "h1": "Converteer PDF naar Word met behoud van de exacte lay-out en typografie",
+  "description": "Extraheer tekst, lettertypen, tabellen en alinea's uit PDF-bestanden naar Microsoft Word-indeling (.docx) zonder de lay-out te vervormen of de opmaak te verliezen. 100% privé in uw browser.",
+  "buttonText": "Converteren zonder de opmaak te verliezen",
+  "badges": [
+    "Behoud de lay-out",
+    "Vectorprecisie",
+    "Nul uploaden"
+  ],
+  "stats": [
+    "100%",
+    "Trouw",
+    "0",
+    "Gegevenslekken"
+  ],
+  "supportCenter": "Herstel van documenten met hoge betrouwbaarheid",
+  "faqTitle": "Veelgestelde vragen over opmaak en behoud van lay-out",
   "sections": [
     {
-      "type": "watermark_hero_features",
-      "title": "Converteer PDF perfect naar Word",
-      "content": "Transformeer uw PDF-documenten naar bewerkbare Word-bestanden terwijl de originele lay-out, lettertypen en afbeeldingen intact blijven.",
-      "badgeText": "Behoud de opmaak"
+      "type": "compress_hero_features",
+      "title": "Elimineer gecodeerde tekst en onderbroken regeleinden",
+      "content": "De meeste generieke PDF-converters splitsen tekst op in duizenden losgekoppelde zwevende tekstvakken. Onze lay-outengine analyseert de ruimtelijke leesstroom om doorlopende alinea's, koppen en marges te reconstrueren, zodat uw Word-document echt bewerkbaar is.",
+      "badgeText": "Echte, aanpasbare lay-out"
     },
     {
-      "type": "protect_how_to_steps",
-      "title": "Hoe PDF naar Word te converteren",
-      "badgeText": "Gemakkelijke conversie",
+      "type": "organize_how_to_steps",
+      "title": "Hoe u de PDF-opmaak kunt behouden bij het converteren naar Word",
+      "badgeText": "Precisieworkflow",
       "steps": [
         {
-          "title": "Upload pdf",
-          "description": "Selecteer het PDF-bestand dat u wilt converteren."
+          "title": "Upload uw document",
+          "description": "Zet uw PDF neer in de lokale werkruimte. Elke pagina wordt in realtime visueel weergegeven."
         },
         {
-          "title": "Converteren naar DOCX",
-          "description": "Klik op converteren om de lokale verwerking te starten."
+          "title": "Reconstructie van de ruimtelijke structuur",
+          "description": "Onze lay-outanalysator met twee motoren groepeert woordreeksen in natuurlijke lijnen en alineablokken."
         },
         {
-          "title": "Word-bestand downloaden",
-          "description": "Sla het volledig bewerkbare Word-document op."
+          "title": "Exporteer schone .docx",
+          "description": "Download een schoon Word-document met de juiste alinea-afstand, inspringingen en lettertypehiërarchieën."
         }
       ]
     },
     {
-      "type": "excel_geo_targeting",
-      "title": "Nauwkeurig behoud van lay-out",
-      "content": "Onze geavanceerde parser begrijpt alinea's, tabellen en kolommen, zodat uw Word-document er precies zo uitziet als de PDF.",
-      "subTitle": "Hoge betrouwbaarheid",
-      "subContent": "Behoud styling en structuur.",
-      "badgeText": "Hoge betrouwbaarheid"
+      "type": "protect_geo_targeting",
+      "title": "Uiterst nauwkeurig lay-outherstel voor complexe documenten",
+      "content": "Speciaal afgestemd voor academische scripties, juridische instructies, technische whitepapers en facturen waarbij opmaakfouten, ontbrekende opsommingstekens of afgebroken regels niet kunnen worden getolereerd.",
+      "subTitle": "ISO/IEC 29500 OpenXML-compatibiliteit",
+      "subContent": "Produceert standaard-conforme Word-documentpakketten met schone XML-tags en zonder bloat.",
+      "badgeText": "Standaard compatibel"
     },
     {
       "type": "redact_privacy_security",
-      "title": "Veilige conversie aan de clientzijde",
-      "content": "Zet vertrouwelijke contracten en rapporten veilig om. De conversie gebeurt volledig op uw apparaat."
+      "title": "Strikte garantie voor het bewaren van gegevens zonder gegevens",
+      "content": "Omdat de verwerking rechtstreeks binnen de runtime van uw browser plaatsvindt, heeft noch HandleMyFile, noch enige derde partij ooit toegang tot uw intellectuele eigendom.",
+      "badgeText": "Vertrouwelijkheid verzekerd"
     },
     {
       "type": "watermark_performance",
-      "title": "Snelle verwerking",
-      "content": "Converteer documenten van meerdere pagina's in enkele seconden.",
-      "badgeText": "Snelle uitvoer"
+      "title": "Deterministische WebAssembly-lay-outengine",
+      "content": "Maakt gebruik van moderne WebAssembly SIMD en Web Workers om complexe documentlay-outs te verwerken zonder bevriezing van de gebruikersinterface en bliksemsnelle uitvoering.",
+      "badgeText": "Bijna-native snelheid"
     }
   ],
   "faqs": [
     {
-      "q": "Zal de indeling veranderen?",
-      "a": "We streven ernaar de exacte lay-out te behouden, inclusief tabellen, afbeeldingen en tekstuitlijning."
+      "q": "Hoe voorkomt deze tool formatteringsverlies in vergelijking met andere converters?",
+      "a": "In plaats van voor elk woord gefragmenteerde tekstvakken te maken, berekent onze engine ruimtelijke begrenzingsvakken en lijnhoogten om tekst te groeperen in natuurlijke Word-paragrafen met consistente marges."
     },
     {
-      "q": "Wordt dit verwerkt op een server?",
-      "a": "Nee, de conversie gebeurt volledig in uw browser voor maximale privacy."
+      "q": "Kan ik het geconverteerde Word-bestand bewerken als normale tekst met herplaatsbare tekst?",
+      "a": "Ja. Het gegenereerde .docx-document maakt gebruik van standaard alinea- en koptags, zodat u tekst kunt bewerken, toevoegen of verwijderen zonder aangrenzende alinea's af te breken."
     },
     {
-      "q": "Kan ik de tekst na de conversie bewerken?",
-      "a": "Ja, het resulterende DOCX-bestand is volledig bewerkbaar in Microsoft Word of Google Docs."
+      "q": "Worden tabellen en documenten met meerdere pagina's ondersteund?",
+      "a": "Ja. Documenten die uit meerdere pagina's bestaan, bevatten automatisch schone pagina-einden en de tabelregels worden opeenvolgend geordend."
+    },
+    {
+      "q": "Welke lettertypen worden gebruikt in het geconverteerde Word-document?",
+      "a": "De engine koppelt standaard PDF-lettertypefamilies (zoals Helvetica, Times, Courier en Arial) aan universeel ondersteunde OpenXML-lettertypedefinities zoals Calibri, Arial en Times New Roman."
+    },
+    {
+      "q": "Zijn er kosten, abonnementen of watermerken toegevoegd?",
+      "a": "Geen. HandleMyFile is volledig gratis te gebruiken zonder watermerken, zonder advertenties en zonder abonnementen."
     }
-  ],
-  "badges": [
-    "Bewerkbaar",
-    "Nauwkeurig",
-    "Privé"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "Converteren naar Word",
-  "supportCenter": "Ondersteuningscentrum",
-  "faqTitle": "Veelgestelde vragen"
+  ]
 }

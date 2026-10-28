@@ -10,6 +10,14 @@ function getMillisecondsUntilNextRun(): number {
 }
 
 async function startDaemon() {
+  if (process.env.FORCE_GOOGLE_INDEXING !== 'true') {
+    console.log('🛑 [SAFETY GUARD] Google Indexing Daily Daemon is DISABLED.');
+    console.log('   Reason: Google Indexing API is strictly reserved for JobPosting and BroadcastEvent schemas.');
+    console.log('   Pinging 200 regular web URLs daily triggers spam/crawl penalties from Google WRS.');
+    console.log('   Set FORCE_GOOGLE_INDEXING=true if you explicitly wish to override.');
+    process.exit(0);
+  }
+
   console.log('🤖 Google Indexing Daily Daemon Started.');
   console.log('⚡ Running initial cycle immediately...');
 

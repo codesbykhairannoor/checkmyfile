@@ -1,79 +1,88 @@
 {
-  "title": "Ilmainen PDF-muunnin Wordiksi (.docx) muotoilua menettämättä",
-  "h1": "Muunna PDF muokattavaksi Word DOCX:ksi selaimessasi",
-  "description": "Pura tarkka teksti, asettelut ja kappaleet mistä tahansa PDF-tiedostosta puhtaaksi Microsoft Word (.docx) -tiedostoksi suoraan selaimen muistiin.",
+  "title": "Muunna PDF Wordiksi menettämättä muotoilua — ilmainen DOCX-muunnin",
+  "h1": "Muunna PDF Wordiksi säilyttäen samalla tarkan asettelun ja typografian",
+  "description": "Pura tekstiä, fontteja, taulukoita ja kappaleita PDF-tiedostoista Microsoft Word (.docx) -muotoon sekoittamatta asettelua tai menettämättä muotoilua. 100 % yksityinen selaimessasi.",
+  "buttonText": "Muunna menettämättä muotoilua",
+  "badges": [
+    "Säilytä asettelu",
+    "Vektorin tarkkuus",
+    "Nolla latausta"
+  ],
+  "stats": [
+    "100 %",
+    "Uskollisuus",
+    "0",
+    "Tietovuotoja"
+  ],
+  "supportCenter": "Korkealaatuinen asiakirjojen palautus",
+  "faqTitle": "Muotoilun ja asettelun säilyttämisen UKK",
   "sections": [
     {
-      "type": "watermark_hero_features",
-      "title": "Muunna PDF Wordiksi täydellisesti",
-      "content": "Muunna PDF-asiakirjasi muokattaviksi Word-tiedostoiksi säilyttäen samalla alkuperäisen asettelun, fontit ja kuvat ennallaan.",
-      "badgeText": "Säilytä muotoilu"
+      "type": "compress_hero_features",
+      "title": "Poista sekoitettu teksti ja katkenneet rivikatkot",
+      "content": "Useimmat yleiset PDF-muuntimet jakavat tekstin tuhansiin irrotettuihin kelluviin tekstiruutuihin. Asettelukoneemme analysoi spatiaalisen lukuvirran rekonstruoidakseen jatkuvia kappaleita, otsikoita ja marginaaleja, jotta Word-asiakirjasi on todella muokattavissa.",
+      "badgeText": "Todellinen uudelleenjuovattava asettelu"
     },
     {
-      "type": "protect_how_to_steps",
-      "title": "Kuinka muuntaa PDF Wordiksi",
-      "badgeText": "Helppo muuntaminen",
+      "type": "organize_how_to_steps",
+      "title": "Kuinka säilyttää PDF-muotoilu, kun muunnat Wordiksi",
+      "badgeText": "Tarkka työnkulku",
       "steps": [
         {
-          "title": "Lataa PDF",
-          "description": "Valitse PDF-tiedosto, jonka haluat muuntaa."
+          "title": "Lataa asiakirjasi",
+          "description": "Pudota PDF paikalliseen työtilaan. Jokainen sivu renderöidään visuaalisesti reaaliajassa."
         },
         {
-          "title": "Muunna DOCX:ksi",
-          "description": "Aloita paikallinen käsittely napsauttamalla Muunna."
+          "title": "Tilarakenteen jälleenrakennus",
+          "description": "Kaksimoottorinen asetteluanalysaattorimme ryhmittelee sanat luonnollisiksi riveiksi ja kappalelohkoiksi."
         },
         {
-          "title": "Lataa Word-tiedosto",
-          "description": "Tallenna täysin muokattavissa oleva Word-asiakirja."
+          "title": "Vie puhdas .docx",
+          "description": "Lataa puhdas Word-asiakirja oikealla kappalevälillä, sisennyksillä ja fonttihierarkioilla."
         }
       ]
     },
     {
-      "type": "excel_geo_targeting",
-      "title": "Tarkka asettelun säilyttäminen",
-      "content": "Kehittynyt jäsentäjämme ymmärtää kappaleet, taulukot ja sarakkeet, mikä varmistaa, että Word-asiakirjasi näyttää täsmälleen PDF-tiedostolta.",
-      "subTitle": "High Fidelity",
-      "subContent": "Säilytä tyyli ja rakenne.",
-      "badgeText": "High Fidelity"
+      "type": "protect_geo_targeting",
+      "title": "Erittäin tarkka asettelun palautus monimutkaisille asiakirjoille",
+      "content": "Erityisesti viritetty akateemisille opinnäytetöille, juridisille tiivistelmille, teknisille kirjoituksille ja laskuille, joissa muotoiluvirheitä, puuttuvia luettelomerkkejä tai katkenneita viivoja ei voida hyväksyä.",
+      "subTitle": "ISO/IEC 29500 OpenXML-yhteensopivuus",
+      "subContent": "Tuottaa standardien mukaisia ​​Word-asiakirjapaketteja puhtailla XML-tunnisteilla ja nollalla.",
+      "badgeText": "Standardin mukainen"
     },
     {
       "type": "redact_privacy_security",
-      "title": "Suojattu asiakaspuolen muunnos",
-      "content": "Muunna luottamukselliset sopimukset ja raportit turvallisesti. Muunnos tapahtuu kokonaan laitteellasi."
+      "title": "Tiukka nollatietojen säilytystakuu",
+      "content": "Koska käsittely tapahtuu suoraan selaimesi ajon aikana, HandleMyFile tai millään kolmannella osapuolella ei ole koskaan pääsyä immateriaalioikeuksiisi.",
+      "badgeText": "Luottamuksellisuus taattu"
     },
     {
       "type": "watermark_performance",
-      "title": "Nopea käsittely",
-      "content": "Muunna monisivuisia asiakirjoja sekunneissa.",
-      "badgeText": "Nopea lähtö"
+      "title": "Deterministinen WebAssembly Layout Engine",
+      "content": "Hyödynnä nykyaikaisia ​​WebAssembly SIMD- ja Web Workers -laitteita monimutkaisten asiakirja-asettelujen käsittelyyn ilman käyttöliittymän jäätymistä ja salamannopeaa suoritusta.",
+      "badgeText": "Lähes alkuperäistä nopeutta"
     }
   ],
   "faqs": [
     {
-      "q": "Muuttuuko asettelu?",
-      "a": "Pyrimme säilyttämään tarkan asettelun, mukaan lukien taulukot, kuvat ja tekstin tasauksen."
+      "q": "Kuinka tämä työkalu estää muotoilun häviämisen muihin muuntimiin verrattuna?",
+      "a": "Sen sijaan, että luomme hajanaisia ​​tekstiruutuja jokaiselle sanalle, koneemme laskee tilakohtaiset rajauslaatikot ja rivien korkeudet ryhmitelläkseen tekstin luonnollisiksi Wordin kappaleiksi tasaisin marginaalein."
     },
     {
-      "q": "Prosessoidaanko tämä palvelimella?",
-      "a": "Ei, muunnos tehdään kokonaan selaimessasi maksimaalisen yksityisyyden takaamiseksi."
+      "q": "Voinko muokata muunnettua Word-tiedostoa tavallisena uudelleenjuovautuvana tekstinä?",
+      "a": "Kyllä. Luodussa .docx-dokumentissa käytetään tavallisia kappale- ja otsikkotunnisteita, joiden avulla voit muokata, lisätä tai poistaa tekstiä rikkomatta vierekkäisiä kappaleita."
     },
     {
-      "q": "Voinko muokata tekstiä muuntamisen jälkeen?",
-      "a": "Kyllä, tuloksena oleva DOCX-tiedosto on täysin muokattavissa Microsoft Wordissa tai Google Docsissa."
+      "q": "Tuetaanko taulukoita ja monisivuisia asiakirjoja?",
+      "a": "Kyllä. Monisivuiset asiakirjat sisältävät automaattisesti puhtaat sivunvaihdot, ja taulukkorivit järjestetään peräkkäin."
+    },
+    {
+      "q": "Mitä fontteja muunnetussa Word-asiakirjassa käytetään?",
+      "a": "Kone kartoittaa tavalliset PDF-kirjasinperheet (kuten Helvetica, Times, Courier ja Arial) yleisesti tuettuihin OpenXML-kirjasinmääritelmiin, kuten Calibri, Arial ja Times New Roman."
+    },
+    {
+      "q": "Onko siihen lisätty kuluja, tilauksia tai vesileimoja?",
+      "a": "Ei mitään. HandleMyFile on täysin ilmainen käyttää ilman vesileimoja, nolla mainoksia ja nolla tilausta."
     }
-  ],
-  "badges": [
-    "Muokattava",
-    "Tarkka",
-    "Yksityinen"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "Muunna Wordiksi",
-  "supportCenter": "Tukikeskus",
-  "faqTitle": "Usein kysytyt kysymykset"
+  ]
 }

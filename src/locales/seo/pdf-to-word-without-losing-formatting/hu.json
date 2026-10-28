@@ -1,79 +1,88 @@
 {
-  "title": "Ingyenes PDF-ből Word konvertáló (.docx) a formázás elvesztése nélkül",
-  "h1": "Konvertálja a PDF-et szerkeszthető Word DOCX-be a böngészőben",
-  "description": "A pontos szöveget, az elrendezési futtatásokat és a bekezdéseket bármely PDF-ből egy tiszta Microsoft Word (.docx) fájlba vonhatja ki közvetlenül a böngésző memóriájába.",
+  "title": "PDF konvertálása Word-be a formázás elvesztése nélkül – Ingyenes DOCX konverter",
+  "h1": "Konvertálja a PDF-et Word-be, miközben megőrzi a pontos elrendezést és tipográfiát",
+  "description": "Szövegeket, betűtípusokat, táblázatokat és bekezdéseket bontsa ki PDF-fájlokból Microsoft Word (.docx) formátumba az elrendezés vagy a formázás elvesztése nélkül. 100%-ban privát a böngészőjében.",
+  "buttonText": "Konvertálás a formázás elvesztése nélkül",
+  "badges": [
+    "Elrendezés megőrzése",
+    "vektoros pontosság",
+    "Nulla feltöltés"
+  ],
+  "stats": [
+    "100%",
+    "Hűség",
+    "0",
+    "Adatszivárgás"
+  ],
+  "supportCenter": "Nagy pontosságú dokumentum-helyreállítás",
+  "faqTitle": "Formázás és elrendezés megőrzése GYIK",
   "sections": [
     {
-      "type": "watermark_hero_features",
-      "title": "Tökéletesen konvertálja a PDF-et Word-be",
-      "content": "Alakítsa át PDF-dokumentumait szerkeszthető Word-fájlokká, miközben az eredeti elrendezést, betűtípusokat és képeket érintetlenül hagyja.",
-      "badgeText": "Formázás megőrzése"
+      "type": "compress_hero_features",
+      "title": "Távolítsa el a kódolt szöveget és a törött vonaltöréseket",
+      "content": "A legtöbb általános PDF-konvertáló a szöveget szétválasztott lebegő szövegmezők ezreire bontja. Elrendezési motorunk elemzi a térbeli olvasási folyamatot a folyamatos bekezdések, címsorok és margók rekonstruálásához, így Word-dokumentuma valóban szerkeszthetővé válik.",
+      "badgeText": "Valódi újratördelhető elrendezés"
     },
     {
-      "type": "protect_how_to_steps",
-      "title": "Hogyan lehet PDF-et Word-be konvertálni",
-      "badgeText": "Könnyű átalakítás",
+      "type": "organize_how_to_steps",
+      "title": "Hogyan lehet megőrizni a PDF formázását Word-be konvertáláskor",
+      "badgeText": "Precíziós munkafolyamat",
       "steps": [
         {
-          "title": "PDF feltöltése",
-          "description": "Válassza ki a konvertálni kívánt PDF-fájlt."
+          "title": "Töltse fel dokumentumát",
+          "description": "Dobja be a PDF-fájlt a helyi munkaterületre. Minden oldal vizuálisan, valós időben jelenik meg."
         },
         {
-          "title": "Konvertálás DOCX-re",
-          "description": "Kattintson a konvertálásra a helyi feldolgozás elindításához."
+          "title": "Térszerkezeti rekonstrukció",
+          "description": "Kétmotoros elrendezéselemzőnk a szavakat természetes sorokba és bekezdésblokkokba csoportosítja."
         },
         {
-          "title": "Word fájl letöltése",
-          "description": "Mentse el a teljesen szerkeszthető Word-dokumentumot."
+          "title": "Export Clean .docx",
+          "description": "Töltsön le egy tiszta Word-dokumentumot megfelelő bekezdésközzel, behúzással és betűtípus-hierarchiával."
         }
       ]
     },
     {
-      "type": "excel_geo_targeting",
-      "title": "Pontos elrendezés megtartása",
-      "content": "Fejlett értelmezőnk megérti a bekezdéseket, táblázatokat és oszlopokat, így a Word-dokumentum pontosan úgy néz ki, mint a PDF.",
-      "subTitle": "High Fidelity",
-      "subContent": "Tartsa fenn a stílust és a szerkezetet.",
-      "badgeText": "High Fidelity"
+      "type": "protect_geo_targeting",
+      "title": "Nagy pontosságú elrendezés helyreállítása összetett dokumentumokhoz",
+      "content": "Kifejezetten az akadémiai tézisekhez, jogi tájékoztatókhoz, műszaki tájékoztatókhoz és számlákhoz hangolva, ahol a formázási hibák, a hiányzó felsoroláspontok vagy a törött vonal tördelése nem tolerálható.",
+      "subTitle": "ISO/IEC 29500 OpenXML megfelelőség",
+      "subContent": "Szabványoknak megfelelő Word dokumentumcsomagokat állít elő tiszta XML-címkékkel és nulla felfújással.",
+      "badgeText": "Szabványnak megfelelő"
     },
     {
       "type": "redact_privacy_security",
-      "title": "Biztonságos ügyféloldali konverzió",
-      "content": "A bizalmas szerződések és jelentések biztonságos konvertálása. Az átalakítás teljes egészében az Ön eszközén történik."
+      "title": "Szigorú nulla adatmegőrzési garancia",
+      "content": "Mivel a feldolgozás közvetlenül a böngésző futási idejében történik, sem a HandleMyFile, sem harmadik fél soha nem fér hozzá az Ön szellemi tulajdonához.",
+      "badgeText": "A bizalmasság garantált"
     },
     {
       "type": "watermark_performance",
-      "title": "Gyors feldolgozás",
-      "content": "Többoldalas dokumentumok konvertálása másodpercek alatt.",
-      "badgeText": "Gyors kimenet"
+      "title": "Determinisztikus WebAssembly Layout Engine",
+      "content": "Használja ki a modern WebAssembly SIMD-t és a Web Workers-t az összetett dokumentumelrendezések feldolgozásához anélkül, hogy a felhasználói felület lefagyása és villámgyors végrehajtása lenne.",
+      "badgeText": "Közel natív sebesség"
     }
   ],
   "faqs": [
     {
-      "q": "Változik az elrendezés?",
-      "a": "Arra törekszünk, hogy megőrizzük a pontos elrendezést, beleértve a táblázatokat, képeket és szövegigazítást."
+      "q": "Hogyan akadályozza meg ez az eszköz a formázási veszteséget más konverterekhez képest?",
+      "a": "Ahelyett, hogy minden szóhoz töredezett szövegdobozokat hozna létre, motorunk térbeli határolókereteket és sormagasságokat számít ki, hogy a szöveget természetes Word-bekezdésekbe csoportosítsa konzisztens margókkal."
     },
     {
-      "q": "Ezt szerveren dolgozzák fel?",
-      "a": "Nem, az átalakítás teljes mértékben a böngészőben történik a maximális adatvédelem érdekében."
+      "q": "Szerkeszthetem a konvertált Word-fájlt normál újrafolyató szövegként?",
+      "a": "Igen. Az előállított .docx dokumentum szabványos bekezdés- és fejléccímkéket használ, lehetővé téve a szöveg szerkesztését, hozzáadását vagy törlését a szomszédos bekezdések feltörése nélkül."
     },
     {
-      "q": "Az átalakítás után szerkeszthetem a szöveget?",
-      "a": "Igen, az eredményül kapott DOCX-fájl teljes mértékben szerkeszthető a Microsoft Word-ben vagy a Google Docs-ban."
+      "q": "Támogatott-e a táblázatok és a többoldalas dokumentumok?",
+      "a": "Igen. A többoldalas dokumentumok automatikusan tiszta oldaltöréseket tartalmaznak, és a táblázatos sorok egymás után vannak rendezve."
+    },
+    {
+      "q": "Milyen betűtípusokat használ a konvertált Word dokumentum?",
+      "a": "A motor a szabványos PDF-betűtípus-családokat (például a Helvetica, a Times, a Courier és az Arial) olyan univerzálisan támogatott OpenXML-betűkészlet-definíciókra képezi le, mint a Calibri, Arial és Times New Roman."
+    },
+    {
+      "q": "Van-e hozzáadva költség, előfizetés vagy vízjel?",
+      "a": "Egyik sem. A HandleMyFile teljesen ingyenesen használható nulla vízjellel, nulla hirdetéssel és nulla előfizetéssel."
     }
-  ],
-  "badges": [
-    "Szerkeszthető",
-    "Pontos",
-    "Magán"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "Konvertálás Word-be",
-  "supportCenter": "Támogatási Központ",
-  "faqTitle": "Gyakran Ismételt Kérdések"
+  ]
 }

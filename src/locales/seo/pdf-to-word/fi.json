@@ -1,80 +1,88 @@
 {
-  "title": "PDF to Word Converter – offline-tilassa ja muokattavissa",
-  "h1": "Muunna PDF muokattaviksi Word-asiakirjoiksi paikallisesti",
-  "description": "Muunna PDF-tiedostot takaisin .docx-tiedostoiksi, joita voit muokata suoraan selaimessasi. Ei latausta tarvita. Sopii helsinkiläisille käyttäjille.",
-  "buttonText": "Muunna Wordiksi",
+  "title": "Muunna PDF Wordiksi Online ilmaiseksi – 100 % yksityinen (.docx)",
+  "h1": "Muunna PDF muokattavaksi Wordiksi (.docx) suoraan selaimessa",
+  "description": "Muunna PDF-dokumentit muokattaviksi Microsoft Word (.docx) -tiedostoiksi kokonaan selaimen sisällä. Ei tiedostolatauksia, ei palvelimen seurantaa, 100 % yksityinen RAM-käsittely.",
+  "buttonText": "Muunna Wordiksi (.docx)",
   "badges": [
-    "Muokattavat asiakirjat",
-    "Tekstin palautus",
-    "Offline-prosessi"
+    "100 % selaimessa",
+    "Nolla palvelinlatausta",
+    "Välitön lataus"
   ],
   "stats": [
     "100 %",
-    "Paikallinen",
+    "Yksityinen",
     "0s",
-    "Odota Aika"
+    "Palvelin Odota"
   ],
+  "supportCenter": "Yksityisyys ja asiakirjojen eheys",
+  "faqTitle": "Usein kysyttyjä kysymyksiä PDF:stä Wordiin",
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Miksi käyttää offline-tilassa?",
-      "content": "Kun PDF-tiedostoa on muokattava, sen offline-tilassa muuntaminen pitää alkuperäisen asiakirjan luottamuksellisina."
+      "type": "word_hero_features",
+      "title": "Miksi muuntaa PDF Wordiksi paikallisesti?",
+      "content": "Perinteiset online-muuntimet lataavat luottamukselliset tiedostosi etäpilvipalvelimille. HandleMyFile suorittaa koko muunnoksen paikallisesti selaimen muistissa WebAssemblyn avulla varmistaen, että sopimukset, tilinpäätökset ja yksityiset tietueet eivät koskaan poistu laitteestasi.",
+      "badgeText": "Zero-Egress-arkkitehtuuri"
     },
     {
-      "type": "split_how_to_steps",
-      "title": "Kuinka käyttää",
+      "type": "word_how_to_steps",
+      "title": "Kuinka muuntaa PDF Wordiksi kolmessa vaiheessa",
+      "badgeText": "Nopea & Kitkaton",
       "steps": [
         {
-          "title": "Lataa PDF",
-          "description": "Valitse muunnettava PDF-tiedosto."
+          "title": "Valitse tai pudota PDF",
+          "description": "Valitse PDF-dokumenttisi. Tiedosto luetaan suoraan laitteesi RAM-muistiin ilman lataamista."
         },
         {
-          "title": "Tunnista tekstitasot",
-          "description": "Moottorimme lukee tekstiä ja rakennetta PDF-tiedostosta."
+          "title": "Älykäs ulkoasun purku",
+          "description": "Asiakaspuolen moottorimme rekonstruoi kappaleet, kirjasimet ja tekstihierarkian vakiomuotoiseksi OpenXML:ksi."
         },
         {
-          "title": "Lataa .docx",
-          "description": "Valmista muokattava Word-asiakirjasi muokattavaksi."
+          "title": "Lataa muokattava DOCX",
+          "description": "Tallenna muunnemasi Word-tiedosto heti, ja se on valmis avattavaksi Microsoft Wordissa, Google Docsissa tai LibreOfficessa."
         }
       ]
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF Wordiksi Helsingin toimistoille",
-      "content": "Helsingin toimistotyöntekijät käyttävät työkalumme palauttamaan muokattavaa tekstiä PDF-tiedostoista ilman pilviriippuvuutta."
+      "type": "word_geo_targeting",
+      "title": "Yritystason asiakirjojen luottamuksellisuus",
+      "content": "Suunniteltu lakimiehille, kirjanpitäjille, tutkijoille ja yrityksille, jotka eivät voi ottaa riskiä omistusoikeudellisten asiakirjojen lataamisesta kolmannen osapuolen SaaS-palvelimille. Täyttää GDPR-artiklan 25 (Privacy by Design) ja HIPAA-tietojen eristämistä koskevia ohjeita.",
+      "subTitle": "Hakkeroitumaton RAM-suoritus",
+      "subContent": "Kun suljet selaimen välilehden, kaikki asiakirjapuskurit tyhjennetään automaattisesti järjestelmämuistista.",
+      "badgeText": "Pankkitason tietosuoja"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Oikeudelliset asiakirjat pysyvät luottamuksellisina",
-      "content": "Sopimukset, NDA:t ja raportit muunnetaan takaisin Wordiksi kokonaan selaimesi muistissa."
+      "type": "word_privacy_security",
+      "title": "Pure Zero-Egress Network Isolation",
+      "content": "Voit jopa katkaista Wi-Fi-yhteyden tai ottaa lentokonetilan käyttöön sivun lataamisen jälkeen: PDF-Word-muunnin jatkaa toimintaansa 100-prosenttisesti offline-tilassa.",
+      "badgeText": "Offline valmiina"
     },
     {
-      "type": "split_performance",
-      "title": "Palauta muokattava teksti sekunneissa",
-      "content": "Pura tekstiä 50-sivuisesta PDF-tiedostosta alle 3 sekunnissa lataamatta yhtään tavua."
+      "type": "word_performance",
+      "title": "Välitön muistissa oleva OpenXML-sukupolvi",
+      "content": "Sano hyvästit palvelinjonoissa odottamiselle tai valtavien liitteiden lataamiselle. Muunna monisivuiset PDF-tiedostot puhtaiksi, muokattaviksi Word-asiakirjoiksi millisekunneissa suoraan laitteistollasi.",
+      "badgeText": "Nopea muunnos"
     }
   ],
   "faqs": [
     {
-      "q": "Onko kaikki teksti säilytetty?",
-      "a": "Kyllä, teksti kaikista tasoista puretaan ja muotoillaan."
+      "q": "Voinko muokata muunnettua asiakirjaa Microsoft Wordissa ja Google Docsissa?",
+      "a": "Kyllä. Tulos on standardi OpenXML (.docx) -tiedosto, joka on täysin yhteensopiva Microsoft Word 2007 - 365, Google Docsin, LibreOffice Writerin ja Apple Pagesin kanssa."
     },
     {
-      "q": "Toimiiko se skannatuissa PDF-tiedostoissa?",
-      "a": "Käytä skannatuissa PDF-tiedostoissa ensin OCR-työkaluamme."
+      "q": "Ladataanko asiakirjani millekään etäpalvelimelle?",
+      "a": "Ei. HandleMyFile toimii tiukan Zero-Egress-käytännön mukaisesti. Kaikki jäsennys, tekstiklusterointi ja DOCX-luonti tapahtuvat 100-prosenttisesti verkkoselaimen hiekkalaatikossa."
     },
     {
-      "q": "Sisältyvätkö kuvat .docx-tiedostoon?",
-      "a": "Kyllä, upotetut kuvat sisältyvät tulosteeseen."
+      "q": "Toimiiko tämä työkalu täysin offline-tilassa ilman Internetiä?",
+      "a": "Kyllä. Kun sovellusvarat on tallennettu selaimesi välimuistiin, voit muuntaa PDF-tiedostoja Word-asiakirjoiksi ilman aktiivista Internet-yhteyttä."
     },
     {
-      "q": "Voinko muokata .docx-tiedostoa sen jälkeen?",
-      "a": "Ehdottomasti tulos on täysin muokattavissa oleva Word-asiakirja."
+      "q": "Onko olemassa tiedostokokorajoituksia, sivurajoituksia tai pakollista rekisteröintiä?",
+      "a": "Keinotekoisia maksumuureja, vesileimoja tai käyttäjien rekisteröintejä ei vaadita. Ainoa raja on laitteesi käytettävissä oleva RAM."
     },
     {
-      "q": "Onko tämä ilmainen?",
-      "a": "Kyllä, täysin ilmainen."
+      "q": "Säilytetäänkö lihavoitu, kursivoitu ja fonttiotsikot?",
+      "a": "Kyllä. Tila-analysaattorimme havaitsee kirjasinten painot, tyylit ja kirjasinkoot säilyttääkseen otsikot, lihavoidut korostukset ja kursivointityylit muunnetussa Word-asiakirjassa."
     }
-  ],
-  "faqTitle": "Usein Kysytyt Kysymykset"
+  ]
 }

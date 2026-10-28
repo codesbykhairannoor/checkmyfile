@@ -1,79 +1,88 @@
 {
-  "title": "PDF to Word Converter — Offline & Editable",
-  "h1": "Convert PDF to Editable Word Documents Locally",
-  "description": "Transform PDFs back into .docx files you can edit, right in your browser. No upload needed. Great for users in New York.",
-  "buttonText": "Convert to Word",
+  "title": "Convert PDF to Word Online Free — 100% Private (.docx)",
+  "h1": "Convert PDF to Editable Word (.docx) Directly in Browser",
+  "description": "Transform PDF documents into editable Microsoft Word (.docx) files entirely inside your browser. Zero file uploads, no server tracking, 100% private in-RAM processing.",
+  "buttonText": "Convert to Word (.docx)",
   "badges": [
-    "Editable Documents",
-    "Text Recovery",
-    "Offline Process"
+    "100% In-Browser",
+    "Zero Server Uploads",
+    "Instant Download"
   ],
   "stats": [
     "100%",
-    "Local",
+    "Private",
     "0s",
-    "Wait Time"
+    "Server Wait"
   ],
+  "supportCenter": "Privacy & Document Integrity",
+  "faqTitle": "Frequently Asked Questions About PDF to Word",
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Why Convert PDF Back Offline?",
-      "content": "When you need to edit a PDF, converting it offline keeps your original document confidential."
+      "type": "word_hero_features",
+      "title": "Why Convert PDF to Word Locally?",
+      "content": "Traditional online converters upload your confidential files to remote cloud servers. HandleMyFile executes the entire conversion locally in browser memory using WebAssembly, ensuring your contracts, financial statements, and private records never leave your device.",
+      "badgeText": "Zero-Egress Architecture"
     },
     {
-      "type": "split_how_to_steps",
-      "title": "How to Convert PDF to Word",
+      "type": "word_how_to_steps",
+      "title": "How to Convert PDF to Word in 3 Steps",
+      "badgeText": "Fast & Frictionless",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF file you need to convert."
+          "title": "Select or Drop PDF",
+          "description": "Choose your PDF document. The file is read directly into your device RAM without uploading."
         },
         {
-          "title": "Detect Text Layers",
-          "description": "Our engine reads text and structure from the PDF."
+          "title": "Intelligent Layout Extraction",
+          "description": "Our client-side engine reconstructs paragraphs, fonts, and text hierarchy into standard OpenXML."
         },
         {
-          "title": "Download .docx",
-          "description": "Get your editable Word document ready to modify."
+          "title": "Download Editable DOCX",
+          "description": "Instantly save your converted Word file, ready to open in Microsoft Word, Google Docs, or LibreOffice."
         }
       ]
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF to Word for New York Offices",
-      "content": "Office workers in New York use our tool to recover editable text from PDFs without cloud dependency."
+      "type": "word_geo_targeting",
+      "title": "Enterprise-Grade Document Confidentiality",
+      "content": "Engineered for legal counsel, accountants, researchers, and enterprises who cannot risk uploading proprietary documents to third-party SaaS servers. Complies with GDPR Article 25 (Privacy by Design) and HIPAA data isolation guidelines.",
+      "subTitle": "Unhackable In-RAM Execution",
+      "subContent": "Once you close the browser tab, all document buffers are automatically purged from system memory.",
+      "badgeText": "Bank-Grade Privacy"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Legal Documents Stay Confidential",
-      "content": "Contracts, NDAs, and reports converted back to Word entirely in your browser memory."
+      "type": "word_privacy_security",
+      "title": "Pure Zero-Egress Network Isolation",
+      "content": "You can even disconnect your Wi-Fi or turn on Airplane Mode after loading the page: the PDF to Word converter continues to operate with 100% functionality completely offline.",
+      "badgeText": "Offline Ready"
     },
     {
-      "type": "split_performance",
-      "title": "Recover Editable Text in Seconds",
-      "content": "Extract text from a 50-page PDF in under 3 seconds without uploading a single byte."
+      "type": "word_performance",
+      "title": "Instant In-Memory OpenXML Generation",
+      "content": "Say goodbye to waiting in server queues or downloading huge attachments. Convert multi-page PDFs to clean, editable Word documents in milliseconds directly on your hardware.",
+      "badgeText": "High-Speed Conversion"
     }
   ],
   "faqs": [
     {
-      "q": "Is all text preserved?",
-      "a": "Yes, text from all layers is extracted and formatted."
+      "q": "Can I edit the converted document in Microsoft Word and Google Docs?",
+      "a": "Yes. The output is a standard OpenXML (.docx) file fully compatible with Microsoft Word 2007 through 365, Google Docs, LibreOffice Writer, and Apple Pages."
     },
     {
-      "q": "Does it work on scanned PDFs?",
-      "a": "For scanned PDFs, use our OCR tool first."
+      "q": "Are my documents uploaded to any remote server?",
+      "a": "No. HandleMyFile operates under a strict Zero-Egress policy. All parsing, text clustering, and DOCX generation happen 100% inside your web browser sandbox."
     },
     {
-      "q": "Are images included in the .docx?",
-      "a": "Yes, embedded images are included in the output."
+      "q": "Does this tool work completely offline without internet?",
+      "a": "Yes. Once the application assets are cached in your browser, you can convert PDFs to Word documents without an active internet connection."
     },
     {
-      "q": "Can I edit the .docx after?",
-      "a": "Absolutely, the output is a fully editable Word document."
+      "q": "Is there any file size limit, page limit, or mandatory registration?",
+      "a": "There are no artificial paywalls, watermarks, or user registrations required. The only limit is your device available RAM."
     },
     {
-      "q": "Is this free?",
-      "a": "Yes, completely free."
+      "q": "Will bold, italic, and font headings be preserved?",
+      "a": "Yes. Our spatial analyzer detects font weights, styles, and font sizes to maintain your headings, bold emphasis, and italic styling in the converted Word document."
     }
   ]
 }

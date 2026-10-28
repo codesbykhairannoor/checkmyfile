@@ -1,79 +1,88 @@
 {
-  "title": "Zdarma PDF to Word Converter (.docx) bez ztráty formátování",
-  "h1": "Převeďte PDF do upravitelného Word DOCX ve vašem prohlížeči",
-  "description": "Extrahujte přesný text, rozvržení a odstavce z libovolného PDF do čistého souboru Microsoft Word (.docx) přímo v paměti prohlížeče.",
+  "title": "Převeďte PDF do Wordu bez ztráty formátování – bezplatný převodník DOCX",
+  "h1": "Převeďte PDF do Wordu při zachování přesného rozvržení a typografie",
+  "description": "Extrahujte text, písma, tabulky a odstavce ze souborů PDF do formátu Microsoft Word (.docx), aniž byste museli zakódovat rozvržení nebo ztratit formátování. 100% soukromé ve vašem prohlížeči.",
+  "buttonText": "Převést bez ztráty formátování",
+  "badges": [
+    "Zachovat rozložení",
+    "Vektorová přesnost",
+    "Nulové nahrávání"
+  ],
+  "stats": [
+    "100 %",
+    "Věrnost",
+    "0",
+    "Úniky dat"
+  ],
+  "supportCenter": "Obnova dokumentů s vysokou věrností",
+  "faqTitle": "Časté dotazy týkající se formátování a zachování rozvržení",
   "sections": [
     {
-      "type": "watermark_hero_features",
-      "title": "Převeďte PDF do Wordu dokonale",
-      "content": "Transformujte své dokumenty PDF do upravitelných souborů Word, přičemž původní rozvržení, písma a obrázky zůstanou nedotčené.",
-      "badgeText": "Zachovat formátování"
+      "type": "compress_hero_features",
+      "title": "Eliminujte zakódovaný text a přerušované řádky",
+      "content": "Většina obecných PDF konvertorů rozděluje text na tisíce odpojených plovoucích textových polí. Náš modul rozvržení analyzuje tok prostorového čtení a rekonstruuje souvislé odstavce, nadpisy a okraje, takže váš dokument Word je skutečně upravitelný.",
+      "badgeText": "Skutečné rozvržení s možností přeformátování"
     },
     {
-      "type": "protect_how_to_steps",
-      "title": "Jak převést PDF do Wordu",
-      "badgeText": "Snadná konverze",
+      "type": "organize_how_to_steps",
+      "title": "Jak zachovat formátování PDF při převodu do Wordu",
+      "badgeText": "Přesný pracovní postup",
       "steps": [
         {
-          "title": "Nahrát PDF",
-          "description": "Vyberte soubor PDF, který chcete převést."
+          "title": "Nahrajte svůj dokument",
+          "description": "Přetáhněte PDF do místního pracovního prostoru. Každá stránka je vykreslena vizuálně v reálném čase."
         },
         {
-          "title": "Převést na DOCX",
-          "description": "Kliknutím na převést spustíte místní zpracování."
+          "title": "Rekonstrukce prostorové struktury",
+          "description": "Náš dvoumotorový analyzátor rozvržení seskupuje běhy slov do přirozených řádků a bloků odstavců."
         },
         {
-          "title": "Stáhněte si soubor Word",
-          "description": "Uložte plně upravitelný dokument aplikace Word."
+          "title": "Export Clean .docx",
+          "description": "Stáhněte si čistý dokument aplikace Word se správnými mezerami mezi odstavci, odsazením a hierarchií písem."
         }
       ]
     },
     {
-      "type": "excel_geo_targeting",
-      "title": "Přesné zachování rozložení",
-      "content": "Náš pokročilý analyzátor rozumí odstavcům, tabulkám a sloupcům a zajišťuje, že váš dokument aplikace Word bude vypadat přesně jako PDF.",
-      "subTitle": "Vysoká věrnost",
-      "subContent": "Udržujte styl a strukturu.",
-      "badgeText": "Vysoká věrnost"
+      "type": "protect_geo_targeting",
+      "title": "Vysoce přesná obnova rozvržení pro složité dokumenty",
+      "content": "Speciálně vyladěno pro akademické práce, právní informace, technické dokumenty a faktury, kde nelze tolerovat chyby ve formátování, chybějící odrážky nebo přerušované čáry.",
+      "subTitle": "Shoda s ISO/IEC 29500 OpenXML",
+      "subContent": "Vytváří balíky dokumentů Word vyhovující standardům s čistými značkami XML a nulovým nadýmáním.",
+      "badgeText": "Vyhovující standardu"
     },
     {
       "type": "redact_privacy_security",
-      "title": "Bezpečná konverze na straně klienta",
-      "content": "Bezpečně převádějte důvěrné smlouvy a zprávy. Převod probíhá výhradně na vašem zařízení."
+      "title": "Přísná záruka nulového uchování dat",
+      "content": "Protože zpracování probíhá přímo v běhu vašeho prohlížeče, HandleMyFile ani žádná třetí strana nikdy nemá přístup k vašemu duševnímu vlastnictví.",
+      "badgeText": "Důvěrnost zaručena"
     },
     {
       "type": "watermark_performance",
-      "title": "Rychlé zpracování",
-      "content": "Převeďte vícestránkové dokumenty během několika sekund.",
-      "badgeText": "Rychlý výstup"
+      "title": "Deterministický WebAssembly Layout Engine",
+      "content": "Využívá moderní WebAssembly SIMD a Web Workers ke zpracování složitých rozvržení dokumentů s nulovým zamrzáním uživatelského rozhraní a bleskově rychlým prováděním.",
+      "badgeText": "Téměř přirozená rychlost"
     }
   ],
   "faqs": [
     {
-      "q": "Změní se rozvržení?",
-      "a": "Snažíme se zachovat přesné rozložení, včetně tabulek, obrázků a zarovnání textu."
+      "q": "Jak tento nástroj zabraňuje ztrátě formátování ve srovnání s jinými převodníky?",
+      "a": "Namísto vytváření fragmentovaných textových polí pro každé slovo náš modul vypočítává prostorová ohraničující políčka a výšky řádků, aby seskupil text do přirozených odstavců Wordu s konzistentními okraji."
     },
     {
-      "q": "Je to zpracováno na serveru?",
-      "a": "Ne, konverze se provádí kompletně ve vašem prohlížeči pro maximální soukromí."
+      "q": "Mohu upravit převedený soubor aplikace Word jako normální přeformátovatelný text?",
+      "a": "Ano. Vygenerovaný dokument .docx používá standardní značky odstavců a nadpisů, což vám umožňuje upravovat, přidávat nebo odstraňovat text bez přerušení sousedních odstavců."
     },
     {
-      "q": "Mohu upravit text po převodu?",
-      "a": "Ano, výsledný soubor DOCX je plně upravitelný v Microsoft Word nebo Google Docs."
+      "q": "Jsou podporovány tabulky a vícestránkové dokumenty?",
+      "a": "Ano. Vícestránkové dokumenty automaticky obsahují čisté konce stránek a tabulkové řádky jsou organizovány postupně."
+    },
+    {
+      "q": "Jaká písma jsou použita v převedeném dokumentu aplikace Word?",
+      "a": "Modul mapuje standardní rodiny písem PDF (jako jsou Helvetica, Times, Courier a Arial) na univerzálně podporované definice písem OpenXML, jako jsou Calibri, Arial a Times New Roman."
+    },
+    {
+      "q": "Jsou přidány nějaké náklady, předplatné nebo vodoznak?",
+      "a": "Žádný. HandleMyFile je zcela zdarma k použití s ​​nulovými vodoznaky, nulovými reklamami a nulovými odběry."
     }
-  ],
-  "badges": [
-    "Upravitelné",
-    "Přesný",
-    "Soukromé"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "Převést do Wordu",
-  "supportCenter": "Centrum podpory",
-  "faqTitle": "Často kladené otázky"
+  ]
 }

@@ -1,79 +1,88 @@
 {
-  "title": "Convertisseur gratuit de PDF en Word (.docx) sans perdre le formatage",
-  "h1": "Convertir un PDF en Word DOCX modifiable dans votre navigateur",
-  "description": "Extrayez le texte exact, les mises en page et les paragraphes de n'importe quel PDF dans un fichier Microsoft Word (.docx) propre directement dans la mémoire du navigateur.",
+  "title": "Convertissez un PDF en Word sans perdre le formatage - Convertisseur DOCX gratuit",
+  "h1": "Convertissez un PDF en Word tout en préservant la mise en page et la typographie exactes",
+  "description": "Extrayez le texte, les polices, les tableaux et les paragraphes des fichiers PDF au format Microsoft Word (.docx) sans brouiller la mise en page ni perdre le formatage. 100% privé dans votre navigateur.",
+  "buttonText": "Convertir sans perdre le formatage",
+  "badges": [
+    "Conserver la mise en page",
+    "Précision vectorielle",
+    "Zéro téléchargement"
+  ],
+  "stats": [
+    "100%",
+    "Fidélité",
+    "0",
+    "Fuites de données"
+  ],
+  "supportCenter": "Récupération de documents haute fidélité",
+  "faqTitle": "FAQ sur le formatage et la préservation de la mise en page",
   "sections": [
     {
-      "type": "watermark_hero_features",
-      "title": "Convertissez parfaitement un PDF en Word",
-      "content": "Transformez vos documents PDF en fichiers Word modifiables tout en conservant intactes la mise en page, les polices et les images d'origine.",
-      "badgeText": "Conserver le formatage"
+      "type": "compress_hero_features",
+      "title": "Éliminez le texte brouillé et les sauts de ligne brisés",
+      "content": "La plupart des convertisseurs PDF génériques divisent le texte en milliers de zones de texte flottantes déconnectées. Notre moteur de mise en page analyse le flux de lecture spatiale pour reconstruire des paragraphes, des titres et des marges continus afin que votre document Word soit véritablement modifiable.",
+      "badgeText": "Véritable mise en page redistribuable"
     },
     {
-      "type": "protect_how_to_steps",
-      "title": "Comment convertir un PDF en Word",
-      "badgeText": "Conversion facile",
+      "type": "organize_how_to_steps",
+      "title": "Comment conserver le formatage PDF lors de la conversion en Word",
+      "badgeText": "Flux de travail de précision",
       "steps": [
         {
-          "title": "Télécharger le PDF",
-          "description": "Sélectionnez le fichier PDF que vous souhaitez convertir."
+          "title": "Téléchargez votre document",
+          "description": "Déposez votre PDF dans l'espace de travail local. Chaque page est rendue visuellement en temps réel."
         },
         {
-          "title": "Convertir en DOCX",
-          "description": "Cliquez sur convertir pour démarrer le traitement local."
+          "title": "Reconstruction de la structure spatiale",
+          "description": "Notre analyseur de mise en page à double moteur regroupe les mots en lignes naturelles et en blocs de paragraphe."
         },
         {
-          "title": "Télécharger le fichier Word",
-          "description": "Enregistrez le document Word entièrement modifiable."
+          "title": "Exporter un fichier .docx propre",
+          "description": "Téléchargez un document Word épuré avec un espacement des paragraphes, des indentations et des hiérarchies de polices appropriés."
         }
       ]
     },
     {
-      "type": "excel_geo_targeting",
-      "title": "Conservation précise de la mise en page",
-      "content": "Notre analyseur avancé comprend les paragraphes, les tableaux et les colonnes, garantissant ainsi que votre document Word ressemble exactement au PDF.",
-      "subTitle": "Haute fidélité",
-      "subContent": "Conserver le style et la structure.",
-      "badgeText": "Haute fidélité"
+      "type": "protect_geo_targeting",
+      "title": "Récupération de mise en page de haute précision pour les documents complexes",
+      "content": "Spécialement conçu pour les thèses universitaires, les mémoires juridiques, les livres blancs techniques et les factures pour lesquels les erreurs de formatage, les puces manquantes ou les retours à la ligne brisés ne peuvent être tolérés.",
+      "subTitle": "Conformité ISO/IEC 29500 OpenXML",
+      "subContent": "Produit des packages de documents Word conformes aux normes avec des balises XML propres et sans surcharge.",
+      "badgeText": "Conforme aux normes"
     },
     {
       "type": "redact_privacy_security",
-      "title": "Conversion sécurisée côté client",
-      "content": "Convertissez des contrats et des rapports confidentiels en toute sécurité. La conversion s'effectue entièrement sur votre appareil."
+      "title": "Garantie stricte de conservation des données zéro",
+      "content": "Étant donné que le traitement s'effectue directement dans l'environnement d'exécution de votre navigateur, ni HandleMyFile ni aucun tiers n'a jamais accès à votre propriété intellectuelle exclusive.",
+      "badgeText": "Confidentialité assurée"
     },
     {
       "type": "watermark_performance",
-      "title": "Traitement rapide",
-      "content": "Convertissez des documents de plusieurs pages en quelques secondes.",
-      "badgeText": "Sortie rapide"
+      "title": "Moteur de mise en page déterministe WebAssembly",
+      "content": "Tire parti des WebAssembly SIMD et Web Workers modernes pour traiter des mises en page de documents complexes sans gel de l'interface utilisateur et une exécution ultra-rapide.",
+      "badgeText": "Vitesse quasi native"
     }
   ],
   "faqs": [
     {
-      "q": "La mise en page va-t-elle changer ?",
-      "a": "Nous nous efforçons de préserver la mise en page exacte, y compris les tableaux, les images et l'alignement du texte."
+      "q": "Comment cet outil évite-t-il la perte de formatage par rapport aux autres convertisseurs ?",
+      "a": "Au lieu de créer des zones de texte fragmentées pour chaque mot, notre moteur calcule des cadres de délimitation spatiale et des hauteurs de ligne pour regrouper le texte en paragraphes Word naturels avec des marges cohérentes."
     },
     {
-      "q": "Est-ce traité sur un serveur ?",
-      "a": "Non, la conversion s'effectue entièrement dans votre navigateur pour une confidentialité maximale."
+      "q": "Puis-je modifier le fichier Word converti sous forme de texte redistribuable normal ?",
+      "a": "Oui. Le document .docx généré utilise des balises de paragraphe et de titre standard, vous permettant de modifier, d'ajouter ou de supprimer du texte sans rompre les paragraphes adjacents."
     },
     {
-      "q": "Puis-je modifier le texte après la conversion ?",
-      "a": "Oui, le fichier DOCX résultant est entièrement modifiable dans Microsoft Word ou Google Docs."
+      "q": "Les tableaux et les documents de plusieurs pages sont-ils pris en charge ?",
+      "a": "Oui. Les documents de plusieurs pages incluent automatiquement des sauts de page propres et les lignes tabulaires sont organisées de manière séquentielle."
+    },
+    {
+      "q": "Quelles polices sont utilisées dans le document Word converti ?",
+      "a": "Le moteur mappe les familles de polices PDF standard (telles que Helvetica, Times, Courier et Arial) aux définitions de polices OpenXML universellement prises en charge telles que Calibri, Arial et Times New Roman."
+    },
+    {
+      "q": "Y a-t-il un coût, un abonnement ou un filigrane ajouté ?",
+      "a": "Aucun. HandleMyFile est entièrement gratuit, sans filigrane, sans publicité et sans abonnement."
     }
-  ],
-  "badges": [
-    "Modifiable",
-    "Précise",
-    "Privée"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "Convertir en Word",
-  "supportCenter": "Centre d'assistance",
-  "faqTitle": "Foire aux questions"
+  ]
 }

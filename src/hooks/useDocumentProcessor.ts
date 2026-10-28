@@ -196,7 +196,7 @@ export function useDocumentProcessor() {
       } else if (toolId === 'compress-pdf' || toolId === 'compress-pdf-for-email' || toolId === 'compress-pdf-to-100kb' || toolId === 'compress-pdf-without-losing-quality') {
         resultBytes = await (await import('../engines/compressEngine')).compressPdf(files[0], options.compressQuality, (p) => setProgress(p), options.compressPercent);
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_compressed.pdf`;
-      } else if (toolId === 'pdf-to-word') {
+      } else if (toolId === 'pdf-to-word' || toolId === 'pdf-to-word-without-losing-formatting') {
         resultBytes = await (await import('../engines/officeEngine')).convertPdfToWord(files[0], (p) => setProgress(p));
         outName = `${files[0].name.replace(/\.[^/.]+$/, '')}.docx`;
         setResultPreviewFiles([files[0]]);

@@ -34,3 +34,17 @@ client_secret*.json
 *.env
 *.env.*
 !*.env.example
+
+# Research Benchmark Datasets & Profiling Results
+benchmark-dataset/
+benchmark-results/
+*.zip
+*.pdf
+latex/
+
+# Temporary AI Audits and scratch scripts
+audit_*.md
+masterplan_*.md
+run_*.cjs
+ask_*.cjs
+

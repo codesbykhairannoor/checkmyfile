@@ -1,80 +1,88 @@
 {
-  "title": "Konverter PDF ke Word — Offline & Dapat Diedit",
-  "h1": "Konversi PDF ke Dokumen Word yang Dapat Diedit Secara Lokal",
-  "description": "Ubah PDF kembali menjadi file .docx yang dapat Anda edit, langsung di browser Anda. Tidak perlu mengunggah. Cocok untuk pengguna di Jakarta.",
-  "buttonText": "Konversikan ke Kata",
+  "title": "Konversi PDF ke Word Online Gratis — 100% Pribadi (.docx)",
+  "h1": "Konversi PDF ke Word yang Dapat Diedit (.docx) Langsung di Browser",
+  "description": "Ubah dokumen PDF menjadi file Microsoft Word (.docx) yang dapat diedit seluruhnya di dalam browser Anda. Tidak ada unggahan file, tidak ada pelacakan server, 100% pemrosesan dalam RAM pribadi.",
+  "buttonText": "Konversikan ke Word (.docx)",
   "badges": [
-    "Dokumen yang Dapat Diedit",
-    "Pemulihan Teks",
-    "Proses Offline"
+    "100% Dalam Peramban",
+    "Nol Pengunggahan Server",
+    "Unduh Instan"
   ],
   "stats": [
     "100%",
-    "Lokal",
+    "Pribadi",
     "0 detik",
-    "Waktu Tunggu"
+    "Server Tunggu"
   ],
+  "supportCenter": "Privasi & Integritas Dokumen",
+  "faqTitle": "Pertanyaan Umum Tentang PDF ke Word",
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Mengapa Menggunakan Offline?",
-      "content": "Saat Anda perlu mengedit PDF, mengonversinya secara offline akan menjaga kerahasiaan dokumen asli Anda."
+      "type": "word_hero_features",
+      "title": "Mengapa Mengonversi PDF ke Word Secara Lokal?",
+      "content": "Konverter online tradisional mengunggah file rahasia Anda ke server cloud jarak jauh. HandleMyFile mengeksekusi seluruh konversi secara lokal di memori browser menggunakan WebAssembly, memastikan kontrak, laporan keuangan, dan catatan pribadi Anda tidak pernah meninggalkan perangkat Anda.",
+      "badgeText": "Arsitektur Zero-Egress"
     },
     {
-      "type": "split_how_to_steps",
-      "title": "Cara Menggunakan",
+      "type": "word_how_to_steps",
+      "title": "Cara Mengonversi PDF ke Word dalam 3 Langkah",
+      "badgeText": "Cepat & Tanpa Gesekan",
       "steps": [
         {
-          "title": "Muat PDF",
-          "description": "Pilih file PDF yang perlu Anda konversi."
+          "title": "Pilih atau Jatuhkan PDF",
+          "description": "Pilih dokumen PDF Anda. File dibaca langsung ke RAM perangkat Anda tanpa diunggah."
         },
         {
-          "title": "Deteksi Lapisan Teks",
-          "description": "Mesin kami membaca teks dan struktur dari PDF."
+          "title": "Ekstraksi Tata Letak Cerdas",
+          "description": "Mesin sisi klien kami merekonstruksi paragraf, font, dan hierarki teks ke dalam OpenXML standar."
         },
         {
-          "title": "Unduh .docx",
-          "description": "Siapkan dokumen Word Anda yang dapat diedit untuk dimodifikasi."
+          "title": "Unduh DOCX yang Dapat Diedit",
+          "description": "Simpan file Word Anda yang telah dikonversi secara instan, siap dibuka di Microsoft Word, Google Docs, atau LibreOffice."
         }
       ]
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF ke Word untuk Kantor Jakarta",
-      "content": "Pekerja kantor di Jakarta menggunakan alat kami untuk memulihkan teks yang dapat diedit dari PDF tanpa ketergantungan cloud."
+      "type": "word_geo_targeting",
+      "title": "Kerahasiaan Dokumen Tingkat Perusahaan",
+      "content": "Dirancang untuk penasihat hukum, akuntan, peneliti, dan perusahaan yang tidak dapat mengambil risiko mengunggah dokumen kepemilikan ke server SaaS pihak ketiga. Mematuhi Pasal 25 GDPR (Privasi Sesuai Desain) dan pedoman isolasi data HIPAA.",
+      "subTitle": "Eksekusi In-RAM yang Tidak Dapat Diretas",
+      "subContent": "Setelah Anda menutup tab browser, semua buffer dokumen secara otomatis dihapus dari memori sistem.",
+      "badgeText": "Privasi Tingkat Bank"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Dokumen Hukum Tetap Rahasia",
-      "content": "Kontrak, NDA, dan laporan dikonversi kembali ke Word sepenuhnya di memori browser Anda."
+      "type": "word_privacy_security",
+      "title": "Isolasi Jaringan Zero-Egress Murni",
+      "content": "Anda bahkan dapat memutuskan koneksi Wi-Fi atau mengaktifkan Mode Pesawat setelah memuat halaman: konverter PDF ke Word terus beroperasi dengan fungsionalitas 100% sepenuhnya offline.",
+      "badgeText": "Offline Siap"
     },
     {
-      "type": "split_performance",
-      "title": "Pulihkan Teks yang Dapat Diedit dalam Hitungan Detik",
-      "content": "Ekstrak teks dari PDF 50 halaman dalam waktu kurang dari 3 detik tanpa mengunggah satu byte pun."
+      "type": "word_performance",
+      "title": "Generasi OpenXML Dalam Memori Instan",
+      "content": "Ucapkan selamat tinggal pada menunggu dalam antrian server atau mengunduh lampiran berukuran besar. Konversikan PDF multi-halaman menjadi dokumen Word yang bersih dan dapat diedit dalam hitungan milidetik langsung di perangkat keras Anda.",
+      "badgeText": "Konversi Berkecepatan Tinggi"
     }
   ],
   "faqs": [
     {
-      "q": "Apakah semua teks dipertahankan?",
-      "a": "Ya, teks dari semua lapisan diekstraksi dan diformat."
+      "q": "Bisakah saya mengedit dokumen yang dikonversi di Microsoft Word dan Google Docs?",
+      "a": "Ya. Outputnya adalah file OpenXML (.docx) standar yang sepenuhnya kompatibel dengan Microsoft Word 2007 hingga 365, Google Docs, LibreOffice Writer, dan Apple Pages."
     },
     {
-      "q": "Apakah ini berfungsi pada PDF yang dipindai?",
-      "a": "Untuk PDF yang dipindai, gunakan alat OCR kami terlebih dahulu."
+      "q": "Apakah dokumen saya diunggah ke server jarak jauh?",
+      "a": "Tidak. HandleMyFile beroperasi berdasarkan kebijakan Zero-Egress yang ketat. Semua penguraian, pengelompokan teks, dan pembuatan DOCX terjadi 100% di dalam kotak pasir browser web Anda."
     },
     {
-      "q": "Apakah gambar disertakan dalam .docx?",
-      "a": "Ya, gambar yang disematkan disertakan dalam output."
+      "q": "Apakah alat ini berfungsi sepenuhnya offline tanpa internet?",
+      "a": "Ya. Setelah aset aplikasi di-cache di browser Anda, Anda dapat mengonversi PDF ke dokumen Word tanpa koneksi internet aktif."
     },
     {
-      "q": "Bisakah saya mengedit .docx setelahnya?",
-      "a": "Tentu saja, keluarannya adalah dokumen Word yang dapat diedit sepenuhnya."
+      "q": "Apakah ada batasan ukuran file, batasan halaman, atau registrasi wajib?",
+      "a": "Tidak diperlukan paywall buatan, tanda air, atau registrasi pengguna. Satu-satunya batasan adalah RAM yang tersedia pada perangkat Anda."
     },
     {
-      "q": "Apakah ini gratis?",
-      "a": "Ya, sepenuhnya gratis."
+      "q": "Apakah judul huruf tebal, miring, dan font akan dipertahankan?",
+      "a": "Ya. Penganalisis spasial kami mendeteksi bobot font, gaya, dan ukuran font untuk mempertahankan judul, penekanan tebal, dan gaya miring dalam dokumen Word yang dikonversi."
     }
-  ],
-  "faqTitle": "Pertanyaan yang Sering Diajukan"
+  ]
 }

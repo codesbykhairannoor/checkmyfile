@@ -1,79 +1,88 @@
 {
-  "title": "Biçimlendirmeyi Kaybetmeden Ücretsiz PDF'den Word'e Dönüştürücü (.docx)",
-  "h1": "PDF'yi Tarayıcınızda Düzenlenebilir Word DOCX'e Dönüştürün",
-  "description": "Herhangi bir PDF'deki tam metni, düzen çalıştırmalarını ve paragrafları doğrudan tarayıcı belleğinin içine temiz bir Microsoft Word (.docx) dosyasına çıkarın.",
+  "title": "Biçimlendirmeyi Kaybetmeden PDF'yi Word'e Dönüştürün - Ücretsiz DOCX Dönüştürücü",
+  "h1": "Tam Düzeni ve Tipografiyi Korurken PDF'yi Word'e Dönüştürün",
+  "description": "Düzeni bozmadan veya biçimlendirmeyi kaybetmeden PDF dosyalarından metinleri, yazı tiplerini, tabloları ve paragrafları Microsoft Word (.docx) biçimine çıkarın. Tarayıcınızda %100 gizli.",
+  "buttonText": "Biçimlendirmeyi Kaybetmeden Dönüştürün",
+  "badges": [
+    "Düzeni Koru",
+    "Vektör Hassasiyeti",
+    "Sıfır Yükleme"
+  ],
+  "stats": [
+    "%100",
+    "Sadakat",
+    "0",
+    "Veri Sızıntıları"
+  ],
+  "supportCenter": "Yüksek Kaliteli Belge Kurtarma",
+  "faqTitle": "Biçimlendirme ve Mizanpaj Koruma SSS",
   "sections": [
     {
-      "type": "watermark_hero_features",
-      "title": "PDF'yi Mükemmel Bir Şekilde Word'e Dönüştürün",
-      "content": "Orijinal düzeni, yazı tiplerini ve görselleri olduğu gibi korurken PDF belgelerinizi düzenlenebilir Word dosyalarına dönüştürün.",
-      "badgeText": "Biçimlendirmeyi Koru"
+      "type": "compress_hero_features",
+      "title": "Karışık Metinleri ve Kırık Satır Sonlarını Ortadan Kaldırın",
+      "content": "Çoğu genel PDF dönüştürücü, metni binlerce bağlantısız kayan metin kutusuna böler. Düzen motorumuz, sürekli paragrafları, başlıkları ve kenar boşluklarını yeniden oluşturmak için uzamsal okuma akışını analiz eder, böylece Word belgeniz gerçekten düzenlenebilir olur.",
+      "badgeText": "Gerçek Yeniden Akıtılabilir Düzen"
     },
     {
-      "type": "protect_how_to_steps",
-      "title": "PDF'yi Word'e Dönüştürme",
-      "badgeText": "Kolay Dönüşüm",
+      "type": "organize_how_to_steps",
+      "title": "Word'e Dönüştürürken PDF Formatı Nasıl Korunur?",
+      "badgeText": "Hassas İş Akışı",
       "steps": [
         {
-          "title": "PDF'yi yükle",
-          "description": "Dönüştürmek istediğiniz PDF dosyasını seçin."
+          "title": "Belgenizi Yükleyin",
+          "description": "PDF'nizi yerel çalışma alanına bırakın. Her sayfa görsel olarak gerçek zamanlı olarak işlenir."
         },
         {
-          "title": "DOCX'e dönüştür",
-          "description": "Yerel işlemeyi başlatmak için dönüştür'e tıklayın."
+          "title": "Mekansal Yapının Yeniden İnşası",
+          "description": "Çift motorlu düzen çözümleyicimiz, sözcükleri doğal çizgiler ve paragraf blokları halinde gruplandırır."
         },
         {
-          "title": "Word Dosyasını İndir",
-          "description": "Tamamen düzenlenebilir Word belgesini kaydedin."
+          "title": "Temiz .docx dosyasını dışa aktar",
+          "description": "Uygun paragraf aralığına, girintilere ve yazı tipi hiyerarşilerine sahip temiz bir Word belgesi indirin."
         }
       ]
     },
     {
-      "type": "excel_geo_targeting",
-      "title": "Doğru Düzen Saklama",
-      "content": "Gelişmiş ayrıştırıcımız paragrafları, tabloları ve sütunları anlayarak Word belgenizin tam olarak PDF'ye benzemesini sağlar.",
-      "subTitle": "Yüksek Sadakat",
-      "subContent": "Stili ve yapıyı koruyun.",
-      "badgeText": "Yüksek Sadakat"
+      "type": "protect_geo_targeting",
+      "title": "Karmaşık Belgeler için Yüksek Hassasiyette Düzen Kurtarma",
+      "content": "Biçimlendirme hatalarının, eksik madde işaretlerinin veya kesikli satırların tolere edilemeyeceği akademik tezler, hukuki özetler, teknik incelemeler ve faturalar için özel olarak ayarlanmıştır.",
+      "subTitle": "ISO/IEC 29500 OpenXML Uyumluluğu",
+      "subContent": "Temiz XML etiketleri ve sıfır şişkinlik ile standartlara uygun Word belge paketleri üretir.",
+      "badgeText": "Standartlarla Uyumlu"
     },
     {
       "type": "redact_privacy_security",
-      "title": "Güvenli İstemci Tarafı Dönüşümü",
-      "content": "Gizli sözleşmeleri ve raporları güvenli bir şekilde dönüştürün. Dönüşüm tamamen cihazınızda gerçekleşir."
+      "title": "Sıkı Sıfır Veri Saklama Garantisi",
+      "content": "İşleme doğrudan tarayıcınızın çalışma zamanında gerçekleştiğinden, ne HandleMyFile ne de herhangi bir üçüncü taraf sizin özel fikri mülkiyetinize erişemez.",
+      "badgeText": "Gizlilik Güvencesi"
     },
     {
       "type": "watermark_performance",
-      "title": "Hızlı İşleme",
-      "content": "Çok sayfalı belgeleri saniyeler içinde dönüştürün.",
-      "badgeText": "Hızlı Çıkış"
+      "title": "Deterministik WebAssembly Düzen Motoru",
+      "content": "Sıfır kullanıcı arayüzü donması ve ışık hızında yürütme ile karmaşık belge düzenlerini işlemek için modern WebAssembly SIMD ve Web Çalışanlarından yararlanır.",
+      "badgeText": "Yerel Hıza Yakın Hız"
     }
   ],
   "faqs": [
     {
-      "q": "Düzen değişecek mi?",
-      "a": "Tablolar, resimler ve metin hizalaması da dahil olmak üzere tam düzeni korumaya çalışıyoruz."
+      "q": "Bu araç diğer dönüştürücülerle karşılaştırıldığında biçimlendirme kaybını nasıl önlüyor?",
+      "a": "Motorumuz, her kelime için parçalanmış metin kutuları oluşturmak yerine, metni tutarlı kenar boşluklarına sahip doğal Word paragrafları halinde gruplandırmak için uzamsal sınırlama kutularını ve satır yüksekliklerini hesaplar."
     },
     {
-      "q": "Bu bir sunucuda mı işleniyor?",
-      "a": "Hayır, maksimum gizlilik için dönüşüm tamamen tarayıcınızda yapılır."
+      "q": "Dönüştürülen Word dosyasını normal yeniden akıtılabilir metin olarak düzenleyebilir miyim?",
+      "a": "Evet. Oluşturulan .docx belgesi standart paragraf ve başlık etiketlerini kullanarak bitişik paragrafları bozmadan metni düzenlemenize, eklemenize veya silmenize olanak tanır."
     },
     {
-      "q": "Dönüştürmeden sonra metni düzenleyebilir miyim?",
-      "a": "Evet, ortaya çıkan DOCX dosyası Microsoft Word veya Google Dokümanlar'da tamamen düzenlenebilir."
+      "q": "Tablolar ve çok sayfalı belgeler destekleniyor mu?",
+      "a": "Evet. Çok sayfalı belgeler otomatik olarak temiz sayfa sonları içerir ve tablo satırları sırayla düzenlenir."
+    },
+    {
+      "q": "Dönüştürülen Word belgesinde hangi yazı tipleri kullanılıyor?",
+      "a": "Motor, standart PDF yazı tipi ailelerini (Helvetica, Times, Courier ve Arial gibi) Calibri, Arial ve Times New Roman gibi evrensel olarak desteklenen OpenXML yazı tipi tanımlarıyla eşleştirir."
+    },
+    {
+      "q": "Eklenen herhangi bir maliyet, abonelik veya filigran var mı?",
+      "a": "Hiçbiri. HandleMyFile'ın sıfır filigran, sıfır reklam ve sıfır abonelikle kullanımı tamamen ücretsizdir."
     }
-  ],
-  "badges": [
-    "Düzenlenebilir",
-    "Kesin",
-    "Özel"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "Word'e Dönüştür",
-  "supportCenter": "Destek Merkezi",
-  "faqTitle": "Sıkça Sorulan Sorular"
+  ]
 }

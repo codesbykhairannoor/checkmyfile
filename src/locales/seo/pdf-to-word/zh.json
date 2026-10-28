@@ -1,80 +1,88 @@
 {
-  "title": "PDF to Word Converter — Offline & Editable",
-  "h1": "Convert PDF to Editable Word Documents Locally",
-  "description": "Transform PDFs back into .docx files you can edit, right in your browser. No upload needed. Great for users in Beijing.",
-  "buttonText": "Convert to Word",
+  "title": "在线免费将 PDF 转换为 Word — 100% 私密 (.docx)",
+  "h1": "直接在浏览器中将 PDF 转换为可编辑的 Word (.docx)",
+  "description": "完全在浏览器内将 PDF 文档转换为可编辑的 Microsoft Word (.docx) 文件。 零文件上传、无服务器跟踪、100% 私有 RAM 处理。",
+  "buttonText": "转换为 Word (.docx)",
   "badges": [
-    "Editable Documents",
-    "Text Recovery",
-    "Offline Process"
+    "100% 浏览器内",
+    "零服务器上传",
+    "即时下载"
   ],
   "stats": [
     "100%",
-    "Local",
-    "0s",
-    "Wait Time"
+    "私人的",
+    "0秒",
+    "服务器等待"
   ],
+  "supportCenter": "隐私和文档完整性",
+  "faqTitle": "关于 PDF 到 Word 的常见问题",
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "为什么要离线使用？",
-      "content": "When you need to edit a PDF, converting it offline keeps your original document confidential."
+      "type": "word_hero_features",
+      "title": "为什么要在本地将 PDF 转换为 Word？",
+      "content": "传统的在线转换器将您的机密文件上传到远程云服务器。 HandleMyFile 使用 WebAssembly 在浏览器内存中本地执行整个转换，确保您的合同、财务报表和私人记录永远不会离开您的设备。",
+      "badgeText": "零出口架构"
     },
     {
-      "type": "split_how_to_steps",
-      "title": "如何使用",
+      "type": "word_how_to_steps",
+      "title": "如何通过 3 步将 PDF 转换为 Word",
+      "badgeText": "快速无摩擦",
       "steps": [
         {
-          "title": "Load PDF",
-          "description": "Select the PDF file you need to convert."
+          "title": "选择或删除 PDF",
+          "description": "选择您的 PDF 文档。 该文件将直接读入您的设备 RAM，无需上传。"
         },
         {
-          "title": "Detect Text Layers",
-          "description": "Our engine reads text and structure from the PDF."
+          "title": "智能布局提取",
+          "description": "我们的客户端引擎将段落、字体和文本层次结构重建为标准 OpenXML。"
         },
         {
-          "title": "Download .docx",
-          "description": "Get your editable Word document ready to modify."
+          "title": "下载可编辑的 DOCX",
+          "description": "立即保存转换后的 Word 文件，准备在 Microsoft Word、Google Docs 或 LibreOffice 中打开。"
         }
       ]
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF to Word for Beijing Offices",
-      "content": "Office workers in Beijing use our tool to recover editable text from PDFs without cloud dependency."
+      "type": "word_geo_targeting",
+      "title": "企业级文档保密性",
+      "content": "专为无法冒险将专有文档上传到第三方 SaaS 服务器的法律顾问、会计师、研究人员和企业而设计。 符合 GDPR 第 25 条（隐私设计）和 HIPAA 数据隔离指南。",
+      "subTitle": "不可破解的 RAM 内执行",
+      "subContent": "关闭浏览器选项卡后，所有文档缓冲区都会自动从系统内存中清除。",
+      "badgeText": "银行级隐私"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Legal Documents Stay Confidential",
-      "content": "Contracts, NDAs, and reports converted back to Word entirely in your browser memory."
+      "type": "word_privacy_security",
+      "title": "纯粹的零出口网络隔离",
+      "content": "您甚至可以在加载页面后断开 Wi-Fi 或打开飞行模式：PDF 到 Word 转换器在完全离线的情况下继续以 100% 功能运行。",
+      "badgeText": "离线就绪"
     },
     {
-      "type": "split_performance",
-      "title": "Recover Editable Text in Seconds",
-      "content": "Extract text from a 50-page PDF in under 3 seconds without uploading a single byte."
+      "type": "word_performance",
+      "title": "即时内存中 OpenXML 生成",
+      "content": "告别在服务器队列中等待或下载巨大附件。 直接在硬件上在几毫秒内将多页 PDF 转换为干净、可编辑的 Word 文档。",
+      "badgeText": "高速转换"
     }
   ],
   "faqs": [
     {
-      "q": "Is all text preserved?",
-      "a": "Yes, text from all layers is extracted and formatted."
+      "q": "我可以在 Microsoft Word 和 Google Docs 中编辑转换后的文档吗？",
+      "a": "是的。 输出是标准 OpenXML (.docx) 文件，与 Microsoft Word 2007 至 365、Google Docs、LibreOffice Writer 和 Apple Pages 完全兼容。"
     },
     {
-      "q": "Does it work on scanned PDFs?",
-      "a": "For scanned PDFs, use our OCR tool first."
+      "q": "我的文档是否上传到任何远程服务器？",
+      "a": "不会。HandleMyFile 在严格的零出口政策下运行。 所有解析、文本聚类和 DOCX 生成 100% 发生在 Web 浏览器沙箱内。"
     },
     {
-      "q": "Are images included in the .docx?",
-      "a": "Yes, embedded images are included in the output."
+      "q": "这个工具可以在没有互联网的情况下完全离线工作吗？",
+      "a": "是的。 一旦应用程序资源缓存在浏览器中，您就可以在没有有效互联网连接的情况下将 PDF 转换为 Word 文档。"
     },
     {
-      "q": "Can I edit the .docx after?",
-      "a": "Absolutely, the output is a fully editable Word document."
+      "q": "是否有文件大小限制、页数限制或强制注册？",
+      "a": "无需人工付费墙、水印或用户注册。 唯一的限制是您设备的可用 RAM。"
     },
     {
-      "q": "Is this free?",
-      "a": "是的，完全免费。"
+      "q": "粗体、斜体和字体标题会被保留吗？",
+      "a": "是的。 我们的空间分析器会检测字体粗细、样式和字体大小，以在转换后的 Word 文档中保留标题、粗体强调和斜体样式。"
     }
-  ],
-  "faqTitle": "常见问题"
+  ]
 }

@@ -52,10 +52,12 @@ Disallow: /*.map$
 Disallow: /*.log$
 Disallow: /*.env$
 Disallow: /*.config.js$
-Disallow: /*.json$
+Disallow: /*tsconfig*.json$
+Disallow: /package*.json$
 Allow: /locales/*/translation.json
 Allow: /manifest.json
 Allow: /.well-known/agents.json
+Allow: /.well-known/security.txt
 
 # Disallow Query Parameter Crawl Traps (The Canva & Shopify Anti-Duplicate Standard)
 Disallow: /*?*utm_*=
@@ -85,7 +87,19 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
 User-agent: YouBot
+Allow: /
+
+User-agent: Diffbot
 Allow: /
 
 # ==============================================================================
@@ -97,16 +111,40 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: anthropic-ai
+Allow: /
+
 User-agent: Google-Extended
 Allow: /
 
+User-agent: GoogleOther
+Allow: /
+
+User-agent: GoogleOther-Image
+Allow: /
+
+User-agent: GoogleOther-Video
+Allow: /
+
 User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
 Allow: /
 
 User-agent: Bytespider
 Allow: /
 
 User-agent: Cohere-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: MistralAI-Crawler
+Allow: /
+
+User-agent: Scrapy
 Allow: /
 
 User-agent: Timpibot

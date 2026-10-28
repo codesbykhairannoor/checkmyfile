@@ -1,80 +1,88 @@
 {
-  "title": "PDF naar Word-converter - offline en bewerkbaar",
-  "h1": "Converteer PDF lokaal naar bewerkbare Word-documenten",
-  "description": "Transformeer PDF's terug naar .docx-bestanden die u rechtstreeks in uw browser kunt bewerken. Geen upload nodig. Ideaal voor gebruikers in Amsterdam.",
-  "buttonText": "Converteren naar Word",
+  "title": "Converteer PDF gratis naar Word online – 100% privé (.docx)",
+  "h1": "Converteer PDF naar bewerkbaar Word (.docx) rechtstreeks in de browser",
+  "description": "Transformeer PDF-documenten volledig in uw browser naar bewerkbare Microsoft Word-bestanden (.docx). Geen bestandsuploads, geen servertracking, 100% privé-in-RAM-verwerking.",
+  "buttonText": "Converteren naar Word (.docx)",
   "badges": [
-    "Bewerkbare documenten",
-    "Tekstherstel",
-    "Offline proces"
+    "100% in-browser",
+    "Geen serveruploads",
+    "Direct downloaden"
   ],
   "stats": [
     "100%",
-    "Lokaal",
+    "Privé",
     "0s",
-    "Wachttijd"
+    "Server Wacht"
   ],
+  "supportCenter": "Privacy en documentintegriteit",
+  "faqTitle": "Veelgestelde vragen over PDF naar Word",
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Waarom offline gebruiken?",
-      "content": "Wanneer u een PDF moet bewerken, blijft uw originele document vertrouwelijk door deze offline te converteren."
+      "type": "word_hero_features",
+      "title": "Waarom PDF lokaal naar Word converteren?",
+      "content": "Traditionele online converters uploaden uw vertrouwelijke bestanden naar externe cloudservers. HandleMyFile voert de volledige conversie lokaal uit in het browsergeheugen met behulp van WebAssembly, zodat uw contracten, financiële overzichten en privégegevens uw apparaat nooit verlaten.",
+      "badgeText": "Zero-Egress-architectuur"
     },
     {
-      "type": "split_how_to_steps",
-      "title": "Hoe te gebruiken",
+      "type": "word_how_to_steps",
+      "title": "Hoe u PDF naar Word converteert in 3 stappen",
+      "badgeText": "Snel en wrijvingsloos",
       "steps": [
         {
-          "title": "PDF laden",
-          "description": "Selecteer het PDF-bestand dat u wilt converteren."
+          "title": "Selecteer of zet PDF neer",
+          "description": "Kies uw PDF-document. Het bestand wordt rechtstreeks in het RAM-geheugen van uw apparaat gelezen zonder te uploaden."
         },
         {
-          "title": "Tekstlagen detecteren",
-          "description": "Onze engine leest tekst en structuur uit de PDF."
+          "title": "Intelligente lay-outextractie",
+          "description": "Onze client-side engine reconstrueert alinea's, lettertypen en teksthiërarchie in standaard OpenXML."
         },
         {
-          "title": "Download .docx",
-          "description": "Maak uw bewerkbare Word-document klaar om te wijzigen."
+          "title": "Bewerkbare DOCX downloaden",
+          "description": "Sla uw geconverteerde Word-bestand onmiddellijk op, klaar om te openen in Microsoft Word, Google Docs of LibreOffice."
         }
       ]
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF naar Word voor kantoren in Amsterdam",
-      "content": "Kantoormedewerkers in Amsterdam gebruiken onze tool om bewerkbare tekst uit PDF's te herstellen zonder afhankelijkheid van de cloud."
+      "type": "word_geo_targeting",
+      "title": "Documentvertrouwelijkheid op bedrijfsniveau",
+      "content": "Ontworpen voor juridisch adviseurs, accountants, onderzoekers en ondernemingen die het risico niet kunnen nemen bedrijfseigen documenten te uploaden naar SaaS-servers van derden. Voldoet aan AVG-artikel 25 (Privacy by Design) en HIPAA-richtlijnen voor gegevensisolatie.",
+      "subTitle": "Onhackbare uitvoering in RAM",
+      "subContent": "Zodra u het browsertabblad sluit, worden alle documentbuffers automatisch uit het systeemgeheugen verwijderd.",
+      "badgeText": "Privacy op bankniveau"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Juridische documenten blijven vertrouwelijk",
-      "content": "Contracten, geheimhoudingsverklaringen en rapporten worden volledig in uw browsergeheugen terug naar Word geconverteerd."
+      "type": "word_privacy_security",
+      "title": "Pure Zero-Egress-netwerkisolatie",
+      "content": "U kunt zelfs uw wifi-verbinding verbreken of de vliegtuigmodus inschakelen nadat u de pagina hebt geladen: de PDF naar Word-converter blijft volledig offline met 100% functionaliteit werken.",
+      "badgeText": "Offline gereed"
     },
     {
-      "type": "split_performance",
-      "title": "Herstel bewerkbare tekst in enkele seconden",
-      "content": "Extraheer tekst uit een pdf van 50 pagina's in minder dan 3 seconden zonder ook maar één byte te uploaden."
+      "type": "word_performance",
+      "title": "Directe in-memory OpenXML-generatie",
+      "content": "Zeg vaarwel tegen het wachten in serverwachtrijen of het downloaden van grote bijlagen. Converteer PDF's van meerdere pagina's in milliseconden naar schone, bewerkbare Word-documenten, rechtstreeks op uw hardware.",
+      "badgeText": "Snelle conversie"
     }
   ],
   "faqs": [
     {
-      "q": "Blijft alle tekst behouden?",
-      "a": "Ja, tekst uit alle lagen wordt geëxtraheerd en opgemaakt."
+      "q": "Kan ik het geconverteerde document bewerken in Microsoft Word en Google Docs?",
+      "a": "Ja. De uitvoer is een standaard OpenXML-bestand (.docx) dat volledig compatibel is met Microsoft Word 2007 tot en met 365, Google Docs, LibreOffice Writer en Apple Pages."
     },
     {
-      "q": "Werkt het op gescande PDF's?",
-      "a": "Gebruik voor gescande PDF's eerst onze OCR-tool."
+      "q": "Worden mijn documenten geüpload naar een externe server?",
+      "a": "Nee. HandleMyFile hanteert een strikt Zero-Egress-beleid. Alle parsering, tekstclustering en DOCX-generatie gebeuren 100% in de sandbox van uw webbrowser."
     },
     {
-      "q": "Zijn afbeeldingen opgenomen in de .docx?",
-      "a": "Ja, ingesloten afbeeldingen zijn opgenomen in de uitvoer."
+      "q": "Werkt deze tool volledig offline zonder internet?",
+      "a": "Ja. Zodra de applicatiemiddelen in uw browser in de cache zijn opgeslagen, kunt u PDF's naar Word-documenten converteren zonder een actieve internetverbinding."
     },
     {
-      "q": "Kan ik de .docx daarna bewerken?",
-      "a": "Absoluut, de uitvoer is een volledig bewerkbaar Word-document."
+      "q": "Is er een bestandsgroottelimiet, paginalimiet of verplichte registratie?",
+      "a": "Er zijn geen kunstmatige betaalmuren, watermerken of gebruikersregistraties vereist. De enige limiet is het beschikbare RAM-geheugen van uw apparaat."
     },
     {
-      "q": "Is dit gratis?",
-      "a": "Ja, helemaal gratis."
+      "q": "Blijven vetgedrukte, cursieve en lettertypekoppen behouden?",
+      "a": "Ja. Onze ruimtelijke analyser detecteert lettertypegewichten, -stijlen en -groottes om uw koppen, vetgedrukte nadruk en cursieve stijl in het geconverteerde Word-document te behouden."
     }
-  ],
-  "faqTitle": "Veelgestelde Vragen"
+  ]
 }

@@ -1,79 +1,88 @@
 {
-  "title": "Darmowy konwerter plików PDF na Word (.docx) bez utraty formatowania",
-  "h1": "Konwertuj plik PDF na edytowalny plik Word DOCX w swojej przeglądarce",
-  "description": "Wyodrębnij dokładny tekst, układy i akapity z dowolnego pliku PDF do czystego pliku Microsoft Word (.docx) bezpośrednio w pamięci przeglądarki.",
+  "title": "Konwertuj pliki PDF na Word bez utraty formatowania — darmowy konwerter DOCX",
+  "h1": "Konwertuj pliki PDF na Word, zachowując dokładny układ i typografię",
+  "description": "Wyodrębnij tekst, czcionki, tabele i akapity z plików PDF do formatu Microsoft Word (.docx) bez zmiany układu i utraty formatowania. 100% prywatności w Twojej przeglądarce.",
+  "buttonText": "Konwertuj bez utraty formatowania",
+  "badges": [
+    "Zachowaj układ",
+    "Precyzja wektorowa",
+    "Przesyłanie zerowe"
+  ],
+  "stats": [
+    "100%",
+    "Wierność",
+    "0",
+    "Wycieki danych"
+  ],
+  "supportCenter": "Odzyskiwanie dokumentów o wysokiej jakości",
+  "faqTitle": "Często zadawane pytania dotyczące formatowania i zachowywania układu",
   "sections": [
     {
-      "type": "watermark_hero_features",
-      "title": "Idealnie konwertuj pliki PDF na Word",
-      "content": "Przekształcaj dokumenty PDF w edytowalne pliki Word, zachowując nienaruszony oryginalny układ, czcionki i obrazy.",
-      "badgeText": "Zachowaj formatowanie"
+      "type": "compress_hero_features",
+      "title": "Wyeliminuj zaszyfrowany tekst i łamane linie",
+      "content": "Większość ogólnych konwerterów plików PDF dzieli tekst na tysiące odłączonych, pływających pól tekstowych. Nasz silnik układu analizuje przestrzenny przepływ czytania, aby zrekonstruować ciągłe akapity, nagłówki i marginesy, dzięki czemu dokument programu Word będzie naprawdę edytowalny.",
+      "badgeText": "Prawdziwy układ wielokrotnego przepływu"
     },
     {
-      "type": "protect_how_to_steps",
-      "title": "Jak przekonwertować plik PDF na Word",
-      "badgeText": "Łatwa konwersja",
+      "type": "organize_how_to_steps",
+      "title": "Jak zachować formatowanie pliku PDF podczas konwersji do programu Word",
+      "badgeText": "Precyzyjny przepływ pracy",
       "steps": [
         {
-          "title": "Prześlij plik PDF",
-          "description": "Wybierz plik PDF, który chcesz przekonwertować."
+          "title": "Prześlij swój dokument",
+          "description": "Upuść plik PDF w lokalnym obszarze roboczym. Każda strona jest renderowana wizualnie w czasie rzeczywistym."
         },
         {
-          "title": "Konwertuj na DOCX",
-          "description": "Kliknij przycisk Konwertuj, aby rozpocząć przetwarzanie lokalne."
+          "title": "Rekonstrukcja struktury przestrzennej",
+          "description": "Nasz dwusilnikowy analizator układu grupuje słowa w naturalne linie i bloki akapitów."
         },
         {
-          "title": "Pobierz plik Worda",
-          "description": "Zapisz w pełni edytowalny dokument programu Word."
+          "title": "Eksportuj czysty plik .docx",
+          "description": "Pobierz czysty dokument programu Word z odpowiednimi odstępami między akapitami, wcięciami i hierarchią czcionek."
         }
       ]
     },
     {
-      "type": "excel_geo_targeting",
-      "title": "Dokładne zachowanie układu",
-      "content": "Nasz zaawansowany parser rozumie akapity, tabele i kolumny, dzięki czemu Twój dokument Word wygląda dokładnie tak, jak plik PDF.",
-      "subTitle": "Wysoka wierność",
-      "subContent": "Zachowaj styl i strukturę.",
-      "badgeText": "Wysoka wierność"
+      "type": "protect_geo_targeting",
+      "title": "Precyzyjne odzyskiwanie układu złożonych dokumentów",
+      "content": "Specjalnie dostosowany do prac akademickich, dokumentów prawnych, oficjalnych dokumentów technicznych i faktur, gdzie nie można tolerować błędów formatowania, brakujących wypunktowań lub przerywanych linii.",
+      "subTitle": "Zgodność z OpenXML ISO/IEC 29500",
+      "subContent": "Tworzy zgodne ze standardami pakiety dokumentów programu Word z przejrzystymi znacznikami XML i zerowym wzdęciem.",
+      "badgeText": "Zgodny ze standardem"
     },
     {
       "type": "redact_privacy_security",
-      "title": "Bezpieczna konwersja po stronie klienta",
-      "content": "Bezpiecznie konwertuj poufne umowy i raporty. Konwersja odbywa się całkowicie na Twoim urządzeniu."
+      "title": "Ścisła gwarancja zerowego przechowywania danych",
+      "content": "Ponieważ przetwarzanie odbywa się bezpośrednio w środowisku wykonawczym przeglądarki, ani HandleMyFile, ani żadna strona trzecia nie ma nigdy dostępu do Twojej własności intelektualnej.",
+      "badgeText": "Zapewniona poufność"
     },
     {
       "type": "watermark_performance",
-      "title": "Szybkie przetwarzanie",
-      "content": "Konwertuj wielostronicowe dokumenty w ciągu kilku sekund.",
-      "badgeText": "Szybkie wyjście"
+      "title": "Deterministyczny silnik układu zestawu WebAssembly",
+      "content": "Wykorzystuje nowoczesne rozwiązania WebAssembly SIMD i Web Workers do przetwarzania złożonych układów dokumentów przy zerowym zawieszaniu interfejsu użytkownika i błyskawicznym wykonywaniu.",
+      "badgeText": "Prędkość bliska natywnej"
     }
   ],
   "faqs": [
     {
-      "q": "Czy układ się zmieni?",
-      "a": "Staramy się zachować dokładny układ, w tym tabele, obrazy i wyrównanie tekstu."
+      "q": "W jaki sposób to narzędzie zapobiega utracie formatowania w porównaniu z innymi konwerterami?",
+      "a": "Zamiast tworzyć pofragmentowane pola tekstowe dla każdego słowa, nasz silnik oblicza przestrzenne ramki ograniczające i wysokości linii, aby pogrupować tekst w naturalne akapity programu Word ze spójnymi marginesami."
     },
     {
-      "q": "Czy jest to przetwarzane na serwerze?",
-      "a": "Nie, konwersja odbywa się całkowicie w przeglądarce, co zapewnia maksymalną prywatność."
+      "q": "Czy mogę edytować przekonwertowany plik programu Word jako zwykły tekst wlewany?",
+      "a": "Tak. Wygenerowany dokument .docx wykorzystuje standardowe znaczniki akapitów i nagłówków, co pozwala na edycję, dodawanie i usuwanie tekstu bez przerywania sąsiednich akapitów."
     },
     {
-      "q": "Czy mogę edytować tekst po konwersji?",
-      "a": "Tak, powstały plik DOCX można w pełni edytować w programach Microsoft Word lub Google Docs."
+      "q": "Czy obsługiwane są tabele i dokumenty wielostronicowe?",
+      "a": "Tak. Dokumenty wielostronicowe automatycznie zawierają czyste podziały stron, a wiersze tabelaryczne są uporządkowane sekwencyjnie."
+    },
+    {
+      "q": "Jakie czcionki są używane w przekonwertowanym dokumencie programu Word?",
+      "a": "Silnik mapuje standardowe rodziny czcionek PDF (takie jak Helvetica, Times, Courier i Arial) na powszechnie obsługiwane definicje czcionek OpenXML, takie jak Calibri, Arial i Times New Roman."
+    },
+    {
+      "q": "Czy dodano jakieś koszty, subskrypcję lub znak wodny?",
+      "a": "Nic. HandleMyFile jest całkowicie darmowy, bez znaków wodnych, bez reklam i bez subskrypcji."
     }
-  ],
-  "badges": [
-    "Edytowalne",
-    "Dokładny",
-    "Prywatny"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "Konwertuj na Word",
-  "supportCenter": "Centrum wsparcia",
-  "faqTitle": "Często zadawane pytania"
+  ]
 }

@@ -1,80 +1,88 @@
 {
-  "title": "PDF to Word Converter — Luar Talian & Boleh Disunting",
-  "h1": "Tukar PDF kepada Dokumen Word Boleh Disunting Secara Setempat",
-  "description": "Ubah PDF kembali kepada fail .docx yang boleh anda edit, terus dalam penyemak imbas anda. Tiada muat naik diperlukan. Bagus untuk pengguna di Kuala Lumpur.",
-  "buttonText": "Tukar kepada Word",
+  "title": "Tukar PDF kepada Word Online Percuma — 100% Peribadi (.docx)",
+  "h1": "Tukar PDF kepada Perkataan Boleh Diedit (.docx) Terus dalam Penyemak Imbas",
+  "description": "Ubah dokumen PDF kepada fail Microsoft Word (.docx) yang boleh diedit sepenuhnya di dalam penyemak imbas anda. Sifar muat naik fail, tiada penjejakan pelayan, pemprosesan dalam RAM peribadi 100%.",
+  "buttonText": "Tukar kepada Word (.docx)",
   "badges": [
-    "Dokumen Boleh Diedit",
-    "Pemulihan Teks",
-    "Proses Luar Talian"
+    "100% Dalam Pelayar",
+    "Sifar Muat Naik Pelayan",
+    "Muat Turun Segera"
   ],
   "stats": [
     "100%",
-    "Tempatan",
+    "Persendirian",
     "0s",
-    "Masa Tunggu"
+    "Pelayan Tunggu"
   ],
+  "supportCenter": "Privasi & Integriti Dokumen",
+  "faqTitle": "Soalan Lazim Mengenai PDF ke Word",
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Mengapa Guna Luar Talian?",
-      "content": "Apabila anda perlu mengedit PDF, menukarnya di luar talian memastikan dokumen asal anda sulit."
+      "type": "word_hero_features",
+      "title": "Mengapa Menukar PDF kepada Word Secara Tempatan?",
+      "content": "Penukar dalam talian tradisional memuat naik fail sulit anda ke pelayan awan jauh. HandleMyFile melaksanakan keseluruhan penukaran secara setempat dalam memori penyemak imbas menggunakan WebAssembly, memastikan kontrak, penyata kewangan dan rekod peribadi anda tidak pernah meninggalkan peranti anda.",
+      "badgeText": "Senibina Zero-Egress"
     },
     {
-      "type": "split_how_to_steps",
-      "title": "Cara Mengguna",
+      "type": "word_how_to_steps",
+      "title": "Cara Menukar PDF kepada Word dalam 3 Langkah",
+      "badgeText": "Cepat & Tanpa Geseran",
       "steps": [
         {
-          "title": "Muatkan PDF",
-          "description": "Pilih fail PDF yang anda perlu tukar."
+          "title": "Pilih atau Lepaskan PDF",
+          "description": "Pilih dokumen PDF anda. Fail dibaca terus ke dalam RAM peranti anda tanpa memuat naik."
         },
         {
-          "title": "Kesan Lapisan Teks",
-          "description": "Enjin kami membaca teks dan struktur daripada PDF."
+          "title": "Pengekstrakan Reka Letak Pintar",
+          "description": "Enjin pihak pelanggan kami membina semula perenggan, fon dan hierarki teks ke dalam OpenXML standard."
         },
         {
-          "title": "Muat turun .docx",
-          "description": "Sediakan dokumen Word anda yang boleh diedit untuk diubah suai."
+          "title": "Muat turun DOCX Boleh Diedit",
+          "description": "Simpan fail Word anda yang telah ditukar dengan serta-merta, sedia untuk dibuka dalam Microsoft Word, Google Docs atau LibreOffice."
         }
       ]
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF to Word untuk Pejabat Kuala Lumpur",
-      "content": "Pekerja pejabat di Kuala Lumpur menggunakan alat kami untuk memulihkan teks boleh diedit daripada PDF tanpa pergantungan awan."
+      "type": "word_geo_targeting",
+      "title": "Kerahsiaan Dokumen Gred Perusahaan",
+      "content": "Direkayasa untuk penasihat undang-undang, akauntan, penyelidik dan perusahaan yang tidak boleh mengambil risiko memuat naik dokumen proprietari ke pelayan SaaS pihak ketiga. Mematuhi Perkara 25 GDPR (Privasi oleh Reka Bentuk) dan garis panduan pengasingan data HIPAA.",
+      "subTitle": "Perlaksanaan Dalam RAM yang tidak boleh digodam",
+      "subContent": "Sebaik sahaja anda menutup tab penyemak imbas, semua penimbal dokumen secara automatik dibersihkan daripada memori sistem.",
+      "badgeText": "Privasi Gred Bank"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Dokumen Undang-undang Kekal Rahsia",
-      "content": "Kontrak, NDA dan laporan ditukar kembali kepada Word sepenuhnya dalam memori penyemak imbas anda."
+      "type": "word_privacy_security",
+      "title": "Pengasingan Rangkaian Keluar-Sifar Tulen",
+      "content": "Anda juga boleh memutuskan sambungan Wi-Fi anda atau menghidupkan Mod Pesawat selepas memuatkan halaman: penukar PDF ke Word terus beroperasi dengan kefungsian 100% di luar talian sepenuhnya.",
+      "badgeText": "Sedia Luar Talian"
     },
     {
-      "type": "split_performance",
-      "title": "Pulihkan Teks Boleh Disunting dalam Beberapa Saat",
-      "content": "Ekstrak teks daripada PDF 50 halaman dalam masa kurang daripada 3 saat tanpa memuat naik satu bait."
+      "type": "word_performance",
+      "title": "Penjanaan OpenXML Dalam Memori Segera",
+      "content": "Ucapkan selamat tinggal kepada menunggu dalam baris gilir pelayan atau memuat turun lampiran yang besar. Tukar PDF berbilang halaman kepada membersihkan, dokumen Word boleh diedit dalam milisaat terus pada perkakasan anda.",
+      "badgeText": "Penukaran Berkelajuan Tinggi"
     }
   ],
   "faqs": [
     {
-      "q": "Adakah semua teks disimpan?",
-      "a": "Ya, teks daripada semua lapisan diekstrak dan diformat."
+      "q": "Bolehkah saya mengedit dokumen yang ditukar dalam Microsoft Word dan Google Docs?",
+      "a": "ya. Outputnya ialah fail OpenXML (.docx) standard yang serasi sepenuhnya dengan Microsoft Word 2007 hingga 365, Google Docs, LibreOffice Writer dan Apple Pages."
     },
     {
-      "q": "Adakah ia berfungsi pada PDF yang diimbas?",
-      "a": "Untuk PDF yang diimbas, gunakan alat OCR kami dahulu."
+      "q": "Adakah dokumen saya dimuat naik ke mana-mana pelayan jauh?",
+      "a": "Tidak. HandleMyFile beroperasi di bawah dasar Zero-Egress yang ketat. Semua penghuraian, pengelompokan teks dan penjanaan DOCX berlaku 100% di dalam kotak pasir pelayar web anda."
     },
     {
-      "q": "Adakah imej disertakan dalam .docx?",
-      "a": "Ya, imej terbenam disertakan dalam output."
+      "q": "Adakah alat ini berfungsi sepenuhnya di luar talian tanpa internet?",
+      "a": "ya. Setelah aset aplikasi dicache dalam penyemak imbas anda, anda boleh menukar PDF kepada dokumen Word tanpa sambungan internet yang aktif."
     },
     {
-      "q": "Bolehkah saya mengedit .docx selepas itu?",
-      "a": "Sudah tentu, output adalah dokumen Word yang boleh diedit sepenuhnya."
+      "q": "Adakah terdapat had saiz fail, had halaman atau pendaftaran wajib?",
+      "a": "Tiada paywall tiruan, tera air atau pendaftaran pengguna diperlukan. Satu-satunya had ialah RAM peranti anda yang tersedia."
     },
     {
-      "q": "Adakah ini percuma?",
-      "a": "Ya, percuma sepenuhnya."
+      "q": "Adakah tajuk tebal, condong dan fon akan dikekalkan?",
+      "a": "ya. Penganalisis spatial kami mengesan berat fon, gaya dan saiz fon untuk mengekalkan tajuk anda, penekanan tebal dan penggayaan condong dalam dokumen Word yang ditukar."
     }
-  ],
-  "faqTitle": "Soalan Lazim"
+  ]
 }

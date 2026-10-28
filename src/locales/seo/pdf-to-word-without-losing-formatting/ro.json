@@ -1,79 +1,88 @@
 {
-  "title": "Convertor gratuit PDF în Word (.docx) fără a pierde formatarea",
-  "h1": "Convertiți PDF în Word DOCX editabil în browserul dvs",
-  "description": "Extrageți textul exact, execuțiile de aspect și paragrafele din orice PDF într-un fișier curat Microsoft Word (.docx) direct în memoria browserului.",
+  "title": "Convertiți PDF în Word fără a pierde formatarea - Convertor DOCX gratuit",
+  "h1": "Convertiți PDF în Word, păstrând aspectul și tipografia exacte",
+  "description": "Extrageți text, fonturi, tabele și paragrafe din fișierele PDF în format Microsoft Word (.docx) fără a amesteca aspectul sau a pierde formatarea. 100% privat în browserul dvs.",
+  "buttonText": "Convertiți fără a pierde formatarea",
+  "badges": [
+    "Păstrați aspectul",
+    "Precizie vectorială",
+    "Încărcare zero"
+  ],
+  "stats": [
+    "100%",
+    "Fidelitate",
+    "0",
+    "Scurgeri de date"
+  ],
+  "supportCenter": "Recuperarea documentelor de înaltă fidelitate",
+  "faqTitle": "Întrebări frecvente privind formatarea și conservarea aspectului",
   "sections": [
     {
-      "type": "watermark_hero_features",
-      "title": "Convertiți perfect PDF în Word",
-      "content": "Transformă-ți documentele PDF în fișiere Word editabile, păstrând în același timp aspectul original, fonturile și imaginile intacte.",
-      "badgeText": "Păstrați formatarea"
+      "type": "compress_hero_features",
+      "title": "Eliminați textul amestecat și întreruperile de linie întreruptă",
+      "content": "Majoritatea convertoarelor PDF generice despart textul în mii de casete de text plutitoare deconectate. Motorul nostru de aspect analizează fluxul de citire spațială pentru a reconstrui paragrafe, titluri și margini continue, astfel încât documentul dvs. Word să fie cu adevărat editabil.",
+      "badgeText": "Aspect adevărat reflowable"
     },
     {
-      "type": "protect_how_to_steps",
-      "title": "Cum se convertesc PDF în Word",
-      "badgeText": "Conversie ușoară",
+      "type": "organize_how_to_steps",
+      "title": "Cum să păstrați formatarea PDF la conversia în Word",
+      "badgeText": "Flux de lucru de precizie",
       "steps": [
         {
-          "title": "Încărcați PDF",
-          "description": "Selectați fișierul PDF pe care doriți să îl convertiți."
+          "title": "Încărcați documentul dvs",
+          "description": "Aruncați PDF-ul în spațiul de lucru local. Fiecare pagină este redată vizual în timp real."
         },
         {
-          "title": "Convertiți în DOCX",
-          "description": "Faceți clic pe conversie pentru a începe procesarea locală."
+          "title": "Reconstrucția structurii spațiale",
+          "description": "Analizatorul nostru de aspect cu două motoare grupează cuvintele în linii naturale și blocuri de paragraf."
         },
         {
-          "title": "Descărcați fișierul Word",
-          "description": "Salvați documentul Word complet editabil."
+          "title": "Export Clean .docx",
+          "description": "Descărcați un document Word curat, cu spațierea dintre paragrafe, indentări și ierarhii de fonturi adecvate."
         }
       ]
     },
     {
-      "type": "excel_geo_targeting",
-      "title": "Reținere precisă a aspectului",
-      "content": "Analizorul nostru avansat înțelege paragrafele, tabelele și coloanele, asigurându-se că documentul dvs. Word arată exact ca PDF.",
-      "subTitle": "Înaltă Fidelitate",
-      "subContent": "Menține stilul și structura.",
-      "badgeText": "Înaltă Fidelitate"
+      "type": "protect_geo_targeting",
+      "title": "Recuperare de înaltă precizie a aspectului pentru documente complexe",
+      "content": "Ajustat special pentru teze academice, documente juridice, documente tehnice și facturi în care erorile de formatare, punctele de marcatori lipsă sau linia întreruptă nu pot fi tolerate.",
+      "subTitle": "Conformitate ISO/IEC 29500 OpenXML",
+      "subContent": "Produce pachete de documente Word conforme cu standardele, cu etichete XML curate și zero balonare.",
+      "badgeText": "Conform cu standardele"
     },
     {
       "type": "redact_privacy_security",
-      "title": "Conversie sigură pe partea clientului",
-      "content": "Convertiți în siguranță contractele și rapoartele confidențiale. Conversia are loc în întregime pe dispozitivul dvs."
+      "title": "Garanție strictă de păstrare a datelor zero",
+      "content": "Deoarece procesarea are loc direct în timpul de execuție al browserului dvs., nici HandleMyFile și nicio terță parte nu are vreodată acces la proprietatea dvs. intelectuală.",
+      "badgeText": "Confidențialitate asigurată"
     },
     {
       "type": "watermark_performance",
-      "title": "Procesare rapidă",
-      "content": "Convertiți documente cu mai multe pagini în câteva secunde.",
-      "badgeText": "Ieșire rapidă"
+      "title": "Motorul de aranjare WebAssembly determinist",
+      "content": "Utilizează SIMD WebAssembly modern și Web Workers pentru a procesa machete complexe de documente cu zero înghețare a interfeței de utilizare și execuție rapidă.",
+      "badgeText": "Viteză aproape nativă"
     }
   ],
   "faqs": [
     {
-      "q": "Se va schimba layout-ul?",
-      "a": "Ne străduim să păstrăm aspectul exact, inclusiv tabelele, imaginile și alinierea textului."
+      "q": "Cum previne acest instrument pierderea formatării în comparație cu alte convertoare?",
+      "a": "În loc să creeze casete de text fragmentate pentru fiecare cuvânt, motorul nostru calculează casete de delimitare spațiale și înălțimi ale liniilor pentru a grupa textul în paragrafe naturale de Word, cu margini consistente."
     },
     {
-      "q": "Este procesat pe un server?",
-      "a": "Nu, conversia se face complet în browserul dvs. pentru confidențialitate maximă."
+      "q": "Pot edita fișierul Word convertit ca text normal reflowabil?",
+      "a": "Da. Documentul .docx generat utilizează etichete standard de paragraf și titlu, permițându-vă să editați, să adăugați sau să ștergeți text fără a întrerupe paragrafele adiacente."
     },
     {
-      "q": "Pot edita textul după conversie?",
-      "a": "Da, fișierul DOCX rezultat este complet editabil în Microsoft Word sau Google Docs."
+      "q": "Sunt acceptate tabelele și documentele cu mai multe pagini?",
+      "a": "Da. Documentele cu mai multe pagini includ automat pauze de pagină curate, iar liniile tabulare sunt organizate secvenţial."
+    },
+    {
+      "q": "Ce fonturi sunt folosite în documentul Word convertit?",
+      "a": "Motorul mapează familiile standard de fonturi PDF (cum ar fi Helvetica, Times, Courier și Arial) la definițiile de fonturi OpenXML acceptate universal, cum ar fi Calibri, Arial și Times New Roman."
+    },
+    {
+      "q": "Există vreun cost, abonament sau filigran adăugat?",
+      "a": "Nici unul. HandleMyFile este complet gratuit de utilizat cu zero filigrane, zero reclame și zero abonamente."
     }
-  ],
-  "badges": [
-    "Editabil",
-    "Acurate",
-    "Privat"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "Convertiți în Word",
-  "supportCenter": "Centru de suport",
-  "faqTitle": "Întrebări frecvente"
+  ]
 }

@@ -1,80 +1,88 @@
 {
-  "title": "Převaděč PDF do Wordu – offline a upravitelný",
-  "h1": "Převeďte PDF na upravitelné dokumenty Word lokálně",
-  "description": "Transformujte soubory PDF zpět na soubory .docx, které můžete upravovat přímo ve svém prohlížeči. Není potřeba nahrávání. Skvělé pro uživatele v Praze.",
-  "buttonText": "Převést do Wordu",
+  "title": "Převod PDF do Wordu online zdarma – 100% soukromý (.docx)",
+  "h1": "Převeďte PDF do upravitelného Wordu (.docx) přímo v prohlížeči",
+  "description": "Transformujte dokumenty PDF na upravitelné soubory Microsoft Word (.docx) zcela ve vašem prohlížeči. Nulové nahrávání souborů, žádné sledování serveru, 100% soukromé zpracování v paměti RAM.",
+  "buttonText": "Převést do Wordu (.docx)",
   "badges": [
-    "Editovatelné dokumenty",
-    "Obnova textu",
-    "Offline proces"
+    "100% v prohlížeči",
+    "Nulové nahrávání na server",
+    "Okamžité stažení"
   ],
   "stats": [
     "100 %",
-    "Místní",
+    "Soukromé",
     "0 s",
-    "Doba čekání"
+    "Server Počkejte"
   ],
+  "supportCenter": "Ochrana soukromí a integrita dokumentů",
+  "faqTitle": "Často kladené otázky o PDF do Wordu",
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Proč používat offline?",
-      "content": "Když potřebujete upravit PDF, jeho převod offline zachová váš původní dokument v tajnosti."
+      "type": "word_hero_features",
+      "title": "Proč převádět PDF do Wordu lokálně?",
+      "content": "Tradiční online převodníky nahrávají vaše důvěrné soubory na vzdálené cloudové servery. HandleMyFile provádí celý převod lokálně v paměti prohlížeče pomocí WebAssembly, což zajišťuje, že vaše smlouvy, finanční výkazy a soukromé záznamy nikdy neopustí vaše zařízení.",
+      "badgeText": "Architektura Zero-Egress"
     },
     {
-      "type": "split_how_to_steps",
-      "title": "Jak používat",
+      "type": "word_how_to_steps",
+      "title": "Jak převést PDF do Wordu ve 3 krocích",
+      "badgeText": "Rychlý a bez tření",
       "steps": [
         {
-          "title": "Načíst PDF",
-          "description": "Vyberte soubor PDF, který potřebujete převést."
+          "title": "Vyberte nebo přetáhněte PDF",
+          "description": "Vyberte si dokument PDF. Soubor je načten přímo do paměti RAM vašeho zařízení bez nahrávání."
         },
         {
-          "title": "Detekce textových vrstev",
-          "description": "Náš engine čte text a strukturu z PDF."
+          "title": "Inteligentní extrakce rozložení",
+          "description": "Náš modul na straně klienta rekonstruuje odstavce, písma a hierarchii textu do standardního OpenXML."
         },
         {
-          "title": "Stáhnout .docx",
-          "description": "Připravte si upravitelný dokument Word k úpravám."
+          "title": "Stáhněte si upravitelný DOCX",
+          "description": "Okamžitě uložte svůj převedený soubor aplikace Word, připravený k otevření v aplikacích Microsoft Word, Dokumenty Google nebo LibreOffice."
         }
       ]
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF do Wordu pro pražské kanceláře",
-      "content": "Pracovníci kanceláře v Praze používají náš nástroj k obnově upravitelného textu z PDF bez závislosti na cloudu."
+      "type": "word_geo_targeting",
+      "title": "Důvěrnost dokumentů podnikové úrovně",
+      "content": "Navrženo pro právní poradce, účetní, výzkumníky a podniky, které nemohou riskovat nahrávání proprietárních dokumentů na servery SaaS třetích stran. Splňuje článek 25 GDPR (Privacy by Design) a pokyny pro izolaci dat HIPAA.",
+      "subTitle": "Nehacknutelné spuštění v paměti RAM",
+      "subContent": "Jakmile zavřete kartu prohlížeče, všechny vyrovnávací paměti dokumentů se automaticky vyčistí ze systémové paměti.",
+      "badgeText": "Ochrana osobních údajů na bankovní úrovni"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Právní dokumenty zůstávají důvěrné",
-      "content": "Smlouvy, smlouvy NDA a sestavy převedené zpět do Wordu zcela v paměti vašeho prohlížeče."
+      "type": "word_privacy_security",
+      "title": "Čistá izolace sítě s nulovým výstupem",
+      "content": "Po načtení stránky můžete dokonce odpojit Wi-Fi nebo zapnout režim Letadlo: Převaděč PDF do Wordu nadále funguje se 100% funkčností zcela offline.",
+      "badgeText": "Připraveno pro režim offline"
     },
     {
-      "type": "split_performance",
-      "title": "Obnovte upravitelný text během několika sekund",
-      "content": "Extrahujte text z 50stránkového PDF za méně než 3 sekundy bez nahrání jediného bajtu."
+      "type": "word_performance",
+      "title": "Okamžité generování OpenXML v paměti",
+      "content": "Rozlučte se s čekáním ve frontách na serveru nebo stahováním velkých příloh. Převeďte vícestránkové soubory PDF na čisté a upravitelné dokumenty Word během milisekund přímo na vašem hardwaru.",
+      "badgeText": "Vysokorychlostní konverze"
     }
   ],
   "faqs": [
     {
-      "q": "Je veškerý text zachován?",
-      "a": "Ano, text ze všech vrstev je extrahován a formátován."
+      "q": "Mohu upravit převedený dokument v aplikacích Microsoft Word a Dokumenty Google?",
+      "a": "Ano. Výstupem je standardní soubor OpenXML (.docx) plně kompatibilní s Microsoft Word 2007 až 365, Dokumenty Google, LibreOffice Writer a Apple Pages."
     },
     {
-      "q": "Funguje to na naskenovaných PDF?",
-      "a": "Pro naskenované PDF použijte nejprve náš nástroj OCR."
+      "q": "Jsou mé dokumenty nahrány na nějaký vzdálený server?",
+      "a": "Ne. HandleMyFile funguje podle přísných zásad Zero-Egress. Veškerá analýza, shlukování textu a generování DOCX se 100% odehrává v karanténě vašeho webového prohlížeče."
     },
     {
-      "q": "Jsou obrázky součástí .docx?",
-      "a": "Ano, ve výstupu jsou zahrnuty vložené obrázky."
+      "q": "Funguje tento nástroj zcela offline bez internetu?",
+      "a": "Ano. Jakmile jsou prostředky aplikace uloženy do mezipaměti ve vašem prohlížeči, můžete převádět soubory PDF na dokumenty aplikace Word bez aktivního připojení k internetu."
     },
     {
-      "q": "Mohu upravit .docx poté?",
-      "a": "Výstupem je samozřejmě plně upravitelný dokument aplikace Word."
+      "q": "Existuje nějaké omezení velikosti souboru, omezení stránek nebo povinná registrace?",
+      "a": "Nejsou vyžadovány žádné umělé paywally, vodoznaky ani registrace uživatelů. Jediným limitem je dostupná RAM vašeho zařízení."
     },
     {
-      "q": "Je to zdarma?",
-      "a": "Ano, zcela zdarma."
+      "q": "Budou zachovány nadpisy tučné, kurzíva a písmo?",
+      "a": "Ano. Náš prostorový analyzátor zjišťuje tloušťky, styly a velikosti písem, aby zachoval vaše nadpisy, tučné zvýraznění a kurzívu v převedeném dokumentu aplikace Word."
     }
-  ],
-  "faqTitle": "Často kladené otázky"
+  ]
 }

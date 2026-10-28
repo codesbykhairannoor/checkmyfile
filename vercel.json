@@ -20,7 +20,15 @@
       "headers": [
         {
           "key": "Link",
-          "value": "</llms.txt>; rel=\"llms-txt\""
+          "value": "</llms.txt>; rel=\"alternate\"; type=\"text/markdown\", </.well-known/agents.json>; rel=\"service-doc\""
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "all, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        },
+        {
+          "key": "Content-Signal",
+          "value": "ai-train=yes, search=yes, ai-input=yes"
         },
         {
           "key": "X-Content-Type-Options",
@@ -45,7 +53,7 @@
       ]
     },
     {
-      "source": "/(favicon\\.png|favicon\\.svg|logo\\.png|robots\\.txt|sitemap\\.xml|llms\\.txt|llms-full\\.txt)",
+      "source": "/(favicon\\.png|favicon\\.svg|logo\\.png|robots\\.txt|sitemap.*\\.xml|feed\\.xml|atom\\.xml|llms.*\\.txt|agents\\.json)",
       "headers": [
         {
           "key": "Cache-Control",

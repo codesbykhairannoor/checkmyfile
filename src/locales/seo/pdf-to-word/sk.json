@@ -1,80 +1,88 @@
 {
-  "title": "Konvertor PDF do Wordu – offline a upraviteľný",
-  "h1": "Konvertujte PDF na upraviteľné dokumenty Word lokálne",
-  "description": "Transformujte súbory PDF späť na súbory .docx, ktoré môžete upravovať priamo vo svojom prehliadači. Nie je potrebné žiadne nahrávanie. Skvelé pre užívateľov v Bratislave.",
-  "buttonText": "Previesť na Word",
+  "title": "Prevod PDF do Wordu online zadarmo — 100 % súkromné ​​(.docx)",
+  "h1": "Prevod PDF do editovateľného Wordu (.docx) priamo v prehliadači",
+  "description": "Transformujte dokumenty PDF na upraviteľné súbory Microsoft Word (.docx) úplne vo svojom prehliadači. Nulové nahrávanie súborov, žiadne sledovanie servera, 100% súkromné ​​spracovanie v pamäti RAM.",
+  "buttonText": "Konvertovať na Word (.docx)",
   "badges": [
-    "Upraviteľné dokumenty",
-    "Obnova textu",
-    "Offline proces"
+    "100% v prehliadači",
+    "Nulové nahrávanie na server",
+    "Okamžité stiahnutie"
   ],
   "stats": [
     "100%",
-    "Miestne",
+    "Súkromné",
     "0 s",
-    "Čas čakania"
+    "Server Počkajte"
   ],
+  "supportCenter": "Ochrana osobných údajov a integrita dokumentov",
+  "faqTitle": "Často kladené otázky o PDF do Wordu",
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Prečo používať offline?",
-      "content": "Keď potrebujete upraviť PDF, konvertovaním offline zostane váš pôvodný dokument dôverný."
+      "type": "word_hero_features",
+      "title": "Prečo prevádzať PDF do Wordu lokálne?",
+      "content": "Tradičné online konvertory nahrávajú vaše dôverné súbory na vzdialené cloudové servery. HandleMyFile vykoná celú konverziu lokálne v pamäti prehliadača pomocou WebAssembly, čím zaistí, že vaše zmluvy, finančné výkazy a súkromné ​​záznamy nikdy neopustia vaše zariadenie.",
+      "badgeText": "Architektúra Zero-Egress"
     },
     {
-      "type": "split_how_to_steps",
-      "title": "Ako používať",
+      "type": "word_how_to_steps",
+      "title": "Ako previesť PDF do Wordu v 3 krokoch",
+      "badgeText": "Rýchle a bez trenia",
       "steps": [
         {
-          "title": "Načítať PDF",
-          "description": "Vyberte súbor PDF, ktorý potrebujete previesť."
+          "title": "Vyberte alebo pustite PDF",
+          "description": "Vyberte si dokument PDF. Súbor sa načíta priamo do pamäte RAM vášho zariadenia bez nahrávania."
         },
         {
-          "title": "Rozpoznať textové vrstvy",
-          "description": "Náš nástroj číta text a štruktúru z PDF."
+          "title": "Inteligentná extrakcia rozloženia",
+          "description": "Náš nástroj na strane klienta rekonštruuje odseky, fonty a textovú hierarchiu do štandardného OpenXML."
         },
         {
-          "title": "Stiahnite si .docx",
-          "description": "Pripravte si upraviteľný dokument programu Word na úpravu."
+          "title": "Stiahnite si upraviteľný DOCX",
+          "description": "Okamžite uložte prevedený súbor programu Word pripravený na otvorenie v programe Microsoft Word, Dokumenty Google alebo LibreOffice."
         }
       ]
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF do Wordu pre bratislavské kancelárie",
-      "content": "Pracovníci kancelárie v Bratislave používajú náš nástroj na obnovenie upraviteľného textu z PDF bez závislosti na cloude."
+      "type": "word_geo_targeting",
+      "title": "Dôvernosť dokumentov na úrovni podniku",
+      "content": "Navrhnuté pre právnych poradcov, účtovníkov, výskumníkov a podniky, ktoré nemôžu riskovať nahrávanie vlastných dokumentov na servery SaaS tretích strán. Vyhovuje článku 25 GDPR (Privacy by Design) a pokynom na izoláciu údajov HIPAA.",
+      "subTitle": "Nehacknuteľné spustenie v pamäti RAM",
+      "subContent": "Po zatvorení karty prehliadača sa všetky vyrovnávacie pamäte dokumentov automaticky vymažú zo systémovej pamäte.",
+      "badgeText": "Súkromie na bankovej úrovni"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Právne dokumenty zostanú dôverné",
-      "content": "Zmluvy, zmluvy o mlčanlivosti a zostavy konvertované späť do programu Word úplne v pamäti prehliadača."
+      "type": "word_privacy_security",
+      "title": "Čistá izolácia siete s nulovým výstupom",
+      "content": "Po načítaní stránky môžete dokonca odpojiť Wi-Fi alebo zapnúť režim Lietadlo: konvertor PDF do Wordu naďalej funguje so 100 % funkčnosťou úplne offline.",
+      "badgeText": "Pripravené pre režim offline"
     },
     {
-      "type": "split_performance",
-      "title": "Obnovte upraviteľný text za pár sekúnd",
-      "content": "Extrahujte text z 50-stranového PDF za menej ako 3 sekundy bez odovzdania jediného bajtu."
+      "type": "word_performance",
+      "title": "Okamžité generovanie OpenXML v pamäti",
+      "content": "Rozlúčte sa s čakaním v radoch na serveri alebo sťahovaním veľkých príloh. Konvertujte viacstranové súbory PDF na čisté, upraviteľné dokumenty Word v priebehu milisekúnd priamo na vašom hardvéri.",
+      "badgeText": "Vysokorýchlostná konverzia"
     }
   ],
   "faqs": [
     {
-      "q": "Je celý text zachovaný?",
-      "a": "Áno, text zo všetkých vrstiev sa extrahuje a naformátuje."
+      "q": "Môžem upraviť prevedený dokument v programe Microsoft Word a Dokumenty Google?",
+      "a": "áno. Výstupom je štandardný súbor OpenXML (.docx) plne kompatibilný s Microsoft Word 2007 až 365, Google Docs, LibreOffice Writer a Apple Pages."
     },
     {
-      "q": "Funguje to na naskenovaných PDF?",
-      "a": "V prípade naskenovaných súborov PDF najskôr použite náš nástroj OCR."
+      "q": "Sú moje dokumenty nahrané na nejaký vzdialený server?",
+      "a": "Nie. HandleMyFile funguje podľa prísnej zásady Zero-Egress. Všetky analýzy, klastrovanie textu a generovanie DOCX prebieha 100 % v karanténe vášho webového prehliadača."
     },
     {
-      "q": "Sú obrázky zahrnuté v .docx?",
-      "a": "Áno, vo výstupe sú zahrnuté vložené obrázky."
+      "q": "Funguje tento nástroj úplne offline bez internetu?",
+      "a": "áno. Po uložení prostriedkov aplikácie do vyrovnávacej pamäte vo vašom prehliadači môžete previesť súbory PDF na dokumenty programu Word bez aktívneho internetového pripojenia."
     },
     {
-      "q": "Môžem upraviť .docx po?",
-      "a": "Výstupom je plne upraviteľný dokument programu Word."
+      "q": "Existuje nejaké obmedzenie veľkosti súboru, obmedzenie počtu strán alebo povinná registrácia?",
+      "a": "Nevyžadujú sa žiadne umelé paywally, vodoznaky ani registrácie používateľov. Jediným limitom je dostupná RAM vášho zariadenia."
     },
     {
-      "q": "Je to zadarmo?",
-      "a": "Áno, úplne zadarmo."
+      "q": "Zachovajú sa nadpisy tučné, kurzíva a písmo?",
+      "a": "áno. Náš priestorový analyzátor zisťuje váhy, štýly a veľkosti písma, aby zachoval nadpisy, tučné zvýraznenie a kurzívu v konvertovanom dokumente programu Word."
     }
-  ],
-  "faqTitle": "Často kladené otázky"
+  ]
 }

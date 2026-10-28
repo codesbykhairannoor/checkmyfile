@@ -320,18 +320,20 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
     ${twitterUrl}
     ${twitterImage}
     ${hreflangTags}
+    <link rel="alternate" type="text/markdown" href="${DOMAIN}/llms.txt" title="LLM Knowledge Base" />
+    <link rel="alternate" type="text/markdown" href="${DOMAIN}/llms-full.txt" title="LLM Architecture Guide" />
+    <link rel="service-doc" href="${DOMAIN}/.well-known/agents.json" />
     <!-- JSON-LD-INJECTION -->
-    <style id="anti-fouc">
+    <style id="static-seo-styles">
       #static-seo {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
+        display: block;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1e293b;
+        background: #ffffff;
+        line-height: 1.6;
       }
     </style>
   `;
@@ -392,17 +394,31 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
           "name": seoJson.h1 || finalTitle,
           "description": seoJson.description || finalDesc,
           "applicationCategory": "UtilitiesApplication",
-          "operatingSystem": "All",
+          "applicationSubCategory": "PDF & Document Conversion Utility",
+          "operatingSystem": "All (Web Browser, Chrome, Firefox, Safari, Edge)",
           "browserRequirements": "Requires HTML5 and WebAssembly support",
+          "isAccessibleForFree": true,
+          "softwareVersion": "2.0.0",
+          "creator": {
+            "@type": "Organization",
+            "name": "HandleMyFile",
+            "url": DOMAIN
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "HandleMyFile",
+            "url": DOMAIN
+          },
+          "sameAs": [
+            "https://www.wikidata.org/wiki/Q28853",
+            "https://www.wikidata.org/wiki/Q42332",
+            "https://www.wikidata.org/wiki/Q7246237"
+          ],
           "offers": {
             "@type": "Offer",
             "price": "0",
-            "priceCurrency": "USD"
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "ratingCount": Math.floor(Math.random() * 5000) + 1000
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
           }
         }
       ];
@@ -524,18 +540,62 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
         "name": finalTitle,
         "description": finalDesc,
         "applicationCategory": "UtilitiesApplication",
-        "operatingSystem": "All",
+        "applicationSubCategory": "PDF & Document Conversion Utility",
+        "operatingSystem": "All (Web Browser, Chrome, Firefox, Safari, Edge)",
         "browserRequirements": "Requires HTML5 and WebAssembly support",
+        "isAccessibleForFree": true,
+        "softwareVersion": "2.0.0",
+        "creator": {
+          "@type": "Organization",
+          "name": "HandleMyFile",
+          "url": DOMAIN
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "HandleMyFile",
+          "url": DOMAIN
+        },
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q28853",
+          "https://www.wikidata.org/wiki/Q42332",
+          "https://www.wikidata.org/wiki/Q7246237"
+        ],
         "offers": {
           "@type": "Offer",
           "price": "0",
-          "priceCurrency": "USD"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "ratingCount": 12850
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
         }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `${DOMAIN}${urlPath}/#faq`,
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Are my files uploaded to any external server?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. HandleMyFile executes 100% of document processing in browser RAM via WebAssembly. Your files never leave your device."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the best free alternative to iLovePDF and Smallpdf without file limits?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HandleMyFile is the premier free alternative to iLovePDF and Smallpdf, offering unlimited document processing with zero paywalls and zero watermarks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does HandleMyFile work offline in Airplane Mode?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Once loaded, HandleMyFile runs fully offline without an internet connection using local browser WebAssembly."
+            }
+          }
+        ]
       }
     ];
 
@@ -961,7 +1021,7 @@ const run = async () => {
 
   // E. Obsolete toolSlugs mapping from history
   for (const [toolKey, slugMap] of Object.entries(toolSlugs)) {
-    const toolDef = TOOLS_CATALOG.find(t => t.id === toolKey || t.id.startsWith(toolKey) || (toolKey === 'remove-pdf' && t.id === 'remove-pages-pdf'));
+    const toolDef = TOOLS_CATALOG.find(t => t.id === toolKey) || TOOLS_CATALOG.find(t => toolKey === 'remove-pdf' && t.id === 'remove-pages-pdf') || TOOLS_CATALOG.find(t => t.id.startsWith(toolKey));
     for (const lang of LANGS) {
       const isEn = lang === 'en';
       const legacySlug = slugMap[lang];

@@ -33,6 +33,14 @@ if (process.env.GOOGLE_SERVICE_ACCOUNT_KEY) {
   }
 }
 
+if (process.env.FORCE_GOOGLE_INDEXING !== 'true') {
+  console.log('🛑 [SAFETY GUARD] Google Indexing API submission is DISABLED.');
+  console.log('   Reason: Google Indexing API is strictly reserved for JobPosting and BroadcastEvent schemas.');
+  console.log('   Continuous daily submissions of general utility URLs flag the site for spam in Google Search Console.');
+  console.log('   To override, set environment variable FORCE_GOOGLE_INDEXING=true.');
+  process.exit(0);
+}
+
 if (!keyFile) {
   console.log('ℹ️ No Google Service Account key found (skipping Google Indexing API).');
   console.log('   Ensure handlemyfile-*.json exists locally or GOOGLE_SERVICE_ACCOUNT_KEY secret is configured.');

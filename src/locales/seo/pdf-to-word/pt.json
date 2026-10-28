@@ -1,80 +1,88 @@
 {
-  "title": "Conversor de PDF para Word — Offline e Editável",
-  "h1": "Converta PDF em documentos editáveis ​​do Word localmente",
-  "description": "Transforme PDFs novamente em arquivos .docx que você pode editar diretamente no seu navegador. Não é necessário fazer upload. Ótimo para usuários em São Paulo.",
-  "buttonText": "Converter para Word",
+  "title": "Converta PDF para Word Online Grátis – 100% Privado (.docx)",
+  "h1": "Converta PDF em Word Editável (.docx) diretamente no navegador",
+  "description": "Transforme documentos PDF em arquivos editáveis ​​do Microsoft Word (.docx) inteiramente dentro do seu navegador. Nenhum upload de arquivo, nenhum rastreamento de servidor, processamento 100% privado na RAM.",
+  "buttonText": "Converter para Word (.docx)",
   "badges": [
-    "Documentos editáveis",
-    "Recuperação de texto",
-    "Processo off-line"
+    "100% no navegador",
+    "Nenhum upload de servidor",
+    "Download instantâneo"
   ],
   "stats": [
     "100%",
-    "Local",
+    "Privada",
     "0s",
-    "Tempo de espera"
+    "Espera do servidor"
   ],
+  "supportCenter": "Privacidade e integridade de documentos",
+  "faqTitle": "Perguntas frequentes sobre PDF para Word",
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Por que usar off-line?",
-      "content": "Quando você precisa editar um PDF, convertê-lo off-line mantém a confidencialidade do documento original."
+      "type": "word_hero_features",
+      "title": "Por que converter PDF para Word localmente?",
+      "content": "Os conversores online tradicionais carregam seus arquivos confidenciais para servidores remotos em nuvem. HandleMyFile executa toda a conversão localmente na memória do navegador usando WebAssembly, garantindo que seus contratos, demonstrações financeiras e registros privados nunca saiam do seu dispositivo.",
+      "badgeText": "Arquitetura de saída zero"
     },
     {
-      "type": "split_how_to_steps",
-      "title": "Como usar",
+      "type": "word_how_to_steps",
+      "title": "Como Converter PDF para Word em 3 Passos",
+      "badgeText": "Rápido e sem atrito",
       "steps": [
         {
-          "title": "Carregar PDF",
-          "description": "Selecione o arquivo PDF que você precisa converter."
+          "title": "Selecione ou solte PDF",
+          "description": "Escolha o seu documento PDF. O arquivo é lido diretamente na RAM do seu dispositivo, sem upload."
         },
         {
-          "title": "Detectar camadas de texto",
-          "description": "Nosso mecanismo lê o texto e a estrutura do PDF."
+          "title": "Extração de layout inteligente",
+          "description": "Nosso mecanismo do lado do cliente reconstrói parágrafos, fontes e hierarquia de texto em OpenXML padrão."
         },
         {
-          "title": "Baixar .docx",
-          "description": "Prepare seu documento Word editável para modificação."
+          "title": "Baixar DOCX editável",
+          "description": "Salve instantaneamente seu arquivo Word convertido, pronto para abrir no Microsoft Word, Google Docs ou LibreOffice."
         }
       ]
     },
     {
-      "type": "split_geo_targeting",
-      "title": "PDF to Word for São Paulo Offices",
-      "content": "Funcionários de escritórios em São Paulo usam nossa ferramenta para recuperar textos editáveis ​​de PDFs sem dependência de nuvem."
+      "type": "word_geo_targeting",
+      "title": "Confidencialidade de documentos de nível empresarial",
+      "content": "Projetado para consultores jurídicos, contadores, pesquisadores e empresas que não podem correr o risco de enviar documentos proprietários para servidores SaaS de terceiros. Está em conformidade com o Artigo 25 do GDPR (Privacidade desde a concepção) e com as diretrizes de isolamento de dados da HIPAA.",
+      "subTitle": "Execução In-RAM inquebrável",
+      "subContent": "Depois de fechar a guia do navegador, todos os buffers de documentos são automaticamente eliminados da memória do sistema.",
+      "badgeText": "Privacidade de nível bancário"
     },
     {
-      "type": "split_privacy_security",
-      "title": "Documentos legais permanecem confidenciais",
-      "content": "Contratos, NDAs e relatórios convertidos de volta para Word inteiramente na memória do seu navegador."
+      "type": "word_privacy_security",
+      "title": "Isolamento de rede puro com saída zero",
+      "content": "Você pode até desconectar o Wi-Fi ou ativar o Modo Avião após carregar a página: o conversor de PDF para Word continua operando com funcionalidade 100% totalmente offline.",
+      "badgeText": "Pronto para uso off-line"
     },
     {
-      "type": "split_performance",
-      "title": "Recupere texto editável em segundos",
-      "content": "Extraia texto de um PDF de 50 páginas em menos de 3 segundos sem carregar um único byte."
+      "type": "word_performance",
+      "title": "Geração instantânea de OpenXML na memória",
+      "content": "Diga adeus à espera nas filas do servidor ou ao download de anexos enormes. Converta PDFs de várias páginas em documentos Word limpos e editáveis ​​em milissegundos, diretamente no seu hardware.",
+      "badgeText": "Conversão de alta velocidade"
     }
   ],
   "faqs": [
     {
-      "q": "Todo o texto é preservado?",
-      "a": "Sim, o texto de todas as camadas é extraído e formatado."
+      "q": "Posso editar o documento convertido no Microsoft Word e no Google Docs?",
+      "a": "Sim. A saída é um arquivo OpenXML padrão (.docx) totalmente compatível com Microsoft Word 2007 a 365, Google Docs, LibreOffice Writer e Apple Pages."
     },
     {
-      "q": "Funciona em PDFs digitalizados?",
-      "a": "Para PDFs digitalizados, use primeiro nossa ferramenta OCR."
+      "q": "Meus documentos são carregados em algum servidor remoto?",
+      "a": "Não. HandleMyFile opera sob uma política estrita de Zero-Egress. Toda a análise, agrupamento de texto e geração de DOCX acontecem 100% dentro da sandbox do seu navegador."
     },
     {
-      "q": "As imagens estão incluídas no .docx?",
-      "a": "Sim, as imagens incorporadas estão incluídas na saída."
+      "q": "Esta ferramenta funciona totalmente offline sem internet?",
+      "a": "Sim. Depois que os ativos do aplicativo estiverem armazenados em cache no seu navegador, você poderá converter PDFs em documentos do Word sem uma conexão ativa com a Internet."
     },
     {
-      "q": "Posso editar o .docx depois?",
-      "a": "Com certeza, a saída é um documento Word totalmente editável."
+      "q": "Existe algum limite de tamanho de arquivo, limite de páginas ou registro obrigatório?",
+      "a": "Não são necessários paywalls artificiais, marcas d'água ou registros de usuários. O único limite é a RAM disponível do seu dispositivo."
     },
     {
-      "q": "Isso é grátis?",
-      "a": "Sim, totalmente gratuito."
+      "q": "Os títulos em negrito, itálico e fonte serão preservados?",
+      "a": "Sim. Nosso analisador espacial detecta espessuras, estilos e tamanhos de fonte para manter seus títulos, ênfase em negrito e estilo em itálico no documento Word convertido."
     }
-  ],
-  "faqTitle": "Perguntas Frequentes"
+  ]
 }

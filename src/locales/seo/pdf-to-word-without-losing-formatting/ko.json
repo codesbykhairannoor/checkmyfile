@@ -1,79 +1,88 @@
 {
-  "title": "형식 손실 없이 무료 PDF-Word 변환기(.docx)",
-  "h1": "브라우저에서 PDF를 편집 가능한 Word DOCX로 변환",
-  "description": "PDF의 정확한 텍스트, 레이아웃 실행 및 단락을 브라우저 메모리 내에서 직접 깨끗한 Microsoft Word(.docx) 파일로 추출합니다.",
+  "title": "서식 손실 없이 PDF를 Word로 변환 — 무료 DOCX 변환기",
+  "h1": "정확한 레이아웃과 타이포그래피를 유지하면서 PDF를 Word로 변환",
+  "description": "레이아웃을 뒤섞거나 서식을 잃지 않고 PDF 파일의 텍스트, 글꼴, 표 및 단락을 Microsoft Word(.docx) 형식으로 추출합니다. 귀하의 브라우저에서는 100% 비공개입니다.",
+  "buttonText": "서식을 잃지 않고 변환",
+  "badges": [
+    "레이아웃 유지",
+    "벡터 정밀도",
+    "제로 업로드"
+  ],
+  "stats": [
+    "100%",
+    "충실도",
+    "0",
+    "데이터 유출"
+  ],
+  "supportCenter": "고품질 문서 복구",
+  "faqTitle": "서식 및 레이아웃 보존 FAQ",
   "sections": [
     {
-      "type": "watermark_hero_features",
-      "title": "PDF를 Word로 완벽하게 변환",
-      "content": "원본 레이아웃, 글꼴, 이미지를 그대로 유지하면서 PDF 문서를 편집 가능한 Word 파일로 변환하세요.",
-      "badgeText": "서식 유지"
+      "type": "compress_hero_features",
+      "title": "뒤섞인 텍스트 및 끊어진 줄바꿈 제거",
+      "content": "대부분의 일반 PDF 변환기는 텍스트를 수천 개의 연결되지 않은 부동 텍스트 상자로 나눕니다. 당사의 레이아웃 엔진은 공간 읽기 흐름을 분석하여 연속적인 단락, 제목 및 여백을 재구성하므로 Word 문서를 실제로 편집할 수 있습니다.",
+      "badgeText": "진정한 리플로우 레이아웃"
     },
     {
-      "type": "protect_how_to_steps",
-      "title": "PDF를 Word로 변환하는 방법",
-      "badgeText": "쉬운 변환",
+      "type": "organize_how_to_steps",
+      "title": "Word로 변환할 때 PDF 형식을 유지하는 방법",
+      "badgeText": "정밀한 작업흐름",
       "steps": [
         {
-          "title": "PDF 업로드",
-          "description": "변환하려는 PDF 파일을 선택하세요."
+          "title": "문서 업로드",
+          "description": "PDF를 로컬 작업 공간에 놓습니다. 모든 페이지는 실시간으로 시각적으로 렌더링됩니다."
         },
         {
-          "title": "DOCX로 변환",
-          "description": "변환을 클릭하여 로컬 처리를 시작하세요."
+          "title": "공간 구조 재구성",
+          "description": "우리의 이중 엔진 레이아웃 분석기는 단어가 자연스러운 줄과 단락 블록으로 실행되도록 그룹화합니다."
         },
         {
-          "title": "워드 파일 다운로드",
-          "description": "완전히 편집 가능한 Word 문서를 저장하십시오."
+          "title": "Clean .docx 내보내기",
+          "description": "적절한 단락 간격, 들여쓰기 및 글꼴 계층 구조를 갖춘 깨끗한 Word 문서를 다운로드하세요."
         }
       ]
     },
     {
-      "type": "excel_geo_targeting",
-      "title": "정확한 레이아웃 유지",
-      "content": "당사의 고급 파서는 단락, 표 및 열을 이해하여 Word 문서가 PDF와 정확하게 일치하는지 확인합니다.",
-      "subTitle": "높은 충실도",
-      "subContent": "스타일과 구조를 유지합니다.",
-      "badgeText": "높은 충실도"
+      "type": "protect_geo_targeting",
+      "title": "복잡한 문서의 고정밀 레이아웃 복구",
+      "content": "서식 오류, 누락된 글머리 기호 또는 줄 바꿈이 허용될 수 없는 학술 논문, 법률 요약서, 기술 백서 및 송장에 맞게 특별히 조정되었습니다.",
+      "subTitle": "ISO/IEC 29500 OpenXML 준수",
+      "subContent": "깔끔한 XML 태그와 부풀림 현상이 없는 표준 호환 Word 문서 패키지를 생성합니다.",
+      "badgeText": "표준 준수"
     },
     {
       "type": "redact_privacy_security",
-      "title": "안전한 클라이언트측 변환",
-      "content": "기밀 계약 및 보고서를 안전하게 변환하세요. 전환은 전적으로 귀하의 장치에서 이루어집니다."
+      "title": "엄격한 제로 데이터 보존 보장",
+      "content": "처리는 브라우저 런타임 내에서 직접 이루어지기 때문에 HandleMyFile이나 제3자는 귀하의 독점 지적 재산에 접근할 수 없습니다.",
+      "badgeText": "기밀성 보장"
     },
     {
       "type": "watermark_performance",
-      "title": "빠른 처리",
-      "content": "여러 페이지로 구성된 문서를 몇 초 만에 변환하세요.",
-      "badgeText": "빠른 출력"
+      "title": "결정적 웹어셈블리 레이아웃 엔진",
+      "content": "최신 WebAssembly SIMD 및 Web Workers를 활용하여 UI 정지 현상이 없고 매우 빠른 실행으로 복잡한 문서 레이아웃을 처리합니다.",
+      "badgeText": "거의 기본 속도"
     }
   ],
   "faqs": [
     {
-      "q": "레이아웃이 바뀌나요?",
-      "a": "우리는 표, 이미지, 텍스트 정렬을 포함한 정확한 레이아웃을 유지하기 위해 노력합니다."
+      "q": "이 도구는 다른 변환기와 비교하여 어떻게 서식 손실을 방지합니까?",
+      "a": "모든 단어에 대해 조각난 텍스트 상자를 만드는 대신, 우리 엔진은 공간 경계 상자와 줄 높이를 계산하여 텍스트를 일관된 여백이 있는 자연스러운 Word 단락으로 그룹화합니다."
     },
     {
-      "q": "서버에서 처리되나요?",
-      "a": "아니요, 개인정보 보호를 극대화하기 위해 변환은 전적으로 브라우저에서 수행됩니다."
+      "q": "변환된 Word 파일을 일반 리플로우 가능 텍스트로 편집할 수 있나요?",
+      "a": "예. 생성된 .docx 문서는 표준 단락 및 제목 태그를 사용하므로 인접한 단락을 분리하지 않고도 텍스트를 편집, 추가 또는 삭제할 수 있습니다."
     },
     {
-      "q": "변환 후 텍스트를 편집할 수 있나요?",
-      "a": "예, 결과 DOCX 파일은 Microsoft Word 또는 Google Docs에서 완전히 편집 가능합니다."
+      "q": "표와 여러 페이지로 구성된 문서가 지원되나요?",
+      "a": "예. 여러 페이지로 구성된 문서에는 자동으로 깨끗한 페이지 나누기가 포함되며 표 형식의 줄이 순차적으로 구성됩니다."
+    },
+    {
+      "q": "변환된 Word 문서에는 어떤 글꼴이 사용됩니까?",
+      "a": "엔진은 표준 PDF 글꼴 모음(예: Helvetica, Times, Courier 및 Arial)을 Calibri, Arial 및 Times New Roman과 같이 보편적으로 지원되는 OpenXML 글꼴 정의에 매핑합니다."
+    },
+    {
+      "q": "추가된 비용, 구독 또는 워터마크가 있나요?",
+      "a": "없음. HandleMyFile은 워터마크 없음, 광고 없음, 구독 없음으로 완전히 무료로 사용할 수 있습니다."
     }
-  ],
-  "badges": [
-    "편집 가능",
-    "정확한",
-    "사적인"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "워드로 변환",
-  "supportCenter": "지원 센터",
-  "faqTitle": "자주 묻는 질문"
+  ]
 }

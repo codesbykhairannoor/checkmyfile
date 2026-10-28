@@ -1,79 +1,88 @@
 {
-  "title": "Convertidor gratuito de PDF a Word (.docx) sin perder formato",
-  "h1": "Convierta PDF a Word editable DOCX en su navegador",
-  "description": "Extraiga texto exacto, diseños y párrafos de cualquier PDF en un archivo limpio de Microsoft Word (.docx) directamente dentro de la memoria del navegador.",
+  "title": "Convierta PDF a Word sin perder formato: convertidor DOCX gratuito",
+  "h1": "Convierta PDF a Word manteniendo el diseño y la tipografía exactos",
+  "description": "Extraiga texto, fuentes, tablas y párrafos de archivos PDF al formato de Microsoft Word (.docx) sin alterar el diseño ni perder el formato. 100% privado en tu navegador.",
+  "buttonText": "Convertir sin perder formato",
+  "badges": [
+    "Conservar diseño",
+    "Precisión vectorial",
+    "Carga cero"
+  ],
+  "stats": [
+    "100%",
+    "Fidelidad",
+    "0",
+    "Fugas de datos"
+  ],
+  "supportCenter": "Recuperación de documentos de alta fidelidad",
+  "faqTitle": "Preguntas frecuentes sobre conservación de formato y diseño",
   "sections": [
     {
-      "type": "watermark_hero_features",
-      "title": "Convierta PDF a Word perfectamente",
-      "content": "Transforme sus documentos PDF en archivos de Word editables manteniendo intactos el diseño, las fuentes y las imágenes originales.",
-      "badgeText": "Conservar formato"
+      "type": "compress_hero_features",
+      "title": "Elimine el texto codificado y los saltos de línea discontinuos",
+      "content": "La mayoría de los convertidores de PDF genéricos dividen el texto en miles de cuadros de texto flotantes desconectados. Nuestro motor de diseño analiza el flujo de lectura espacial para reconstruir párrafos, encabezados y márgenes continuos para que su documento de Word sea verdaderamente editable.",
+      "badgeText": "Verdadero diseño ajustable"
     },
     {
-      "type": "protect_how_to_steps",
-      "title": "Cómo convertir PDF a Word",
-      "badgeText": "Fácil conversión",
+      "type": "organize_how_to_steps",
+      "title": "Cómo mantener el formato PDF al convertir a Word",
+      "badgeText": "Flujo de trabajo de precisión",
       "steps": [
         {
-          "title": "Subir PDF",
-          "description": "Seleccione el archivo PDF que desea convertir."
+          "title": "Sube tu documento",
+          "description": "Suelte su PDF en el espacio de trabajo local. Cada página se representa visualmente en tiempo real."
         },
         {
-          "title": "Convertir a DOCX",
-          "description": "Haga clic en convertir para iniciar el procesamiento local."
+          "title": "Reconstrucción de estructura espacial",
+          "description": "Nuestro analizador de diseño de doble motor agrupa las palabras en líneas naturales y bloques de párrafos."
         },
         {
-          "title": "Descargar archivo de Word",
-          "description": "Guarde el documento de Word totalmente editable."
+          "title": "Exportar .docx limpio",
+          "description": "Descargue un documento de Word limpio con espacio entre párrafos, sangrías y jerarquías de fuentes adecuadas."
         }
       ]
     },
     {
-      "type": "excel_geo_targeting",
-      "title": "Retención precisa del diseño",
-      "content": "Nuestro analizador avanzado comprende párrafos, tablas y columnas, lo que garantiza que su documento de Word se vea exactamente como el PDF.",
-      "subTitle": "Alta fidelidad",
-      "subContent": "Mantener el estilo y la estructura.",
-      "badgeText": "Alta fidelidad"
+      "type": "protect_geo_targeting",
+      "title": "Recuperación de diseños de alta precisión para documentos complejos",
+      "content": "Especialmente diseñado para tesis académicas, resúmenes legales, documentos técnicos y facturas donde no se pueden tolerar errores de formato, falta de viñetas o saltos de línea discontinuos.",
+      "subTitle": "Cumplimiento de ISO/IEC 29500 OpenXML",
+      "subContent": "Produce paquetes de documentos de Word que cumplen con los estándares con etiquetas XML limpias y sin sobrecarga.",
+      "badgeText": "Cumple con el estándar"
     },
     {
       "type": "redact_privacy_security",
-      "title": "Conversión segura del lado del cliente",
-      "content": "Convierta contratos e informes confidenciales de forma segura. La conversión ocurre completamente en su dispositivo."
+      "title": "Estricta garantía de cero retención de datos",
+      "content": "Debido a que el procesamiento ocurre directamente dentro del tiempo de ejecución de su navegador, ni HandleMyFile ni ningún tercero tiene acceso a su propiedad intelectual patentada.",
+      "badgeText": "Confidencialidad asegurada"
     },
     {
       "type": "watermark_performance",
-      "title": "Procesamiento rápido",
-      "content": "Convierta documentos de varias páginas en segundos.",
-      "badgeText": "Salida rápida"
+      "title": "Motor de diseño determinista WebAssembly",
+      "content": "Aprovecha los modernos WebAssembly SIMD y Web Workers para procesar diseños de documentos complejos sin congelación de la interfaz de usuario y una ejecución ultrarrápida.",
+      "badgeText": "Velocidad casi nativa"
     }
   ],
   "faqs": [
     {
-      "q": "¿Cambiará el diseño?",
-      "a": "Nos esforzamos por preservar el diseño exacto, incluidas tablas, imágenes y alineación del texto."
+      "q": "¿Cómo previene esta herramienta la pérdida de formato en comparación con otros convertidores?",
+      "a": "En lugar de crear cuadros de texto fragmentados para cada palabra, nuestro motor calcula cuadros delimitadores espaciales y alturas de línea para agrupar el texto en párrafos naturales de Word con márgenes consistentes."
     },
     {
-      "q": "¿Esto se procesa en un servidor?",
-      "a": "No, la conversión se realiza completamente en su navegador para máxima privacidad."
+      "q": "¿Puedo editar el archivo de Word convertido como texto ajustable normal?",
+      "a": "Sí. El documento .docx generado utiliza etiquetas de encabezado y párrafo estándar, lo que le permite editar, agregar o eliminar texto sin dividir los párrafos adyacentes."
     },
     {
-      "q": "¿Puedo editar el texto después de la conversión?",
-      "a": "Sí, el archivo DOCX resultante es completamente editable en Microsoft Word o Google Docs."
+      "q": "¿Se admiten tablas y documentos de varias páginas?",
+      "a": "Sí. Los documentos de varias páginas incluyen automáticamente saltos de página limpios y las líneas tabulares se organizan secuencialmente."
+    },
+    {
+      "q": "¿Qué fuentes se utilizan en el documento de Word convertido?",
+      "a": "El motor asigna familias de fuentes PDF estándar (como Helvetica, Times, Courier y Arial) a definiciones de fuentes OpenXML universalmente compatibles, como Calibri, Arial y Times New Roman."
+    },
+    {
+      "q": "¿Se agrega algún costo, suscripción o marca de agua?",
+      "a": "Ninguno. HandleMyFile es de uso completamente gratuito, sin marcas de agua, sin anuncios y sin suscripciones."
     }
-  ],
-  "badges": [
-    "Editable",
-    "Precisa",
-    "Privada"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "Convertir a Word",
-  "supportCenter": "Centro de soporte",
-  "faqTitle": "Preguntas frecuentes"
+  ]
 }

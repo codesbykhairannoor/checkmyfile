@@ -39,11 +39,11 @@ export const App: React.FC = () => {
       if (staticPageId) {
         activePageVal = staticPageId;
       } else {
-        const tool = getToolBySlugAndLang(slug, detectedLang);
+        let tool = getToolBySlugAndLang(slug, detectedLang);
         if (!tool) {
-          const disabledSlugs = ['pdf-to-word', 'pdf-ke-word', 'pdf-a-word', 'pdf-to-docx', 'pdf-ke-docx'];
-          if (disabledSlugs.includes(slug.toLowerCase())) {
-             // Handle disabled slug logic in useEffect if needed, or ignore for initial state
+          const pdfToWordSlugs = ['pdf-to-word', 'pdf-ke-word', 'pdf-a-word', 'pdf-to-docx', 'pdf-ke-docx', 'pdf-in-word'];
+          if (pdfToWordSlugs.includes(slug.toLowerCase())) {
+            tool = getToolById('pdf-to-word-without-losing-formatting');
           }
         }
         activeToolVal = tool || null;
@@ -89,12 +89,11 @@ export const App: React.FC = () => {
           setActivePage(staticPageId);
           setActiveTool(null);
         } else {
-          const tool = getToolBySlugAndLang(slug, detectedLang);
+          let tool = getToolBySlugAndLang(slug, detectedLang);
           if (!tool) {
-            // Clean URL if user attempts to access disabled pdf-to-word tool
-            const disabledSlugs = ['pdf-to-word', 'pdf-ke-word', 'pdf-a-word', 'pdf-to-docx', 'pdf-ke-docx'];
-            if (disabledSlugs.includes(slug.toLowerCase())) {
-              window.history.replaceState({}, '', `/${detectedLang}`);
+            const pdfToWordSlugs = ['pdf-to-word', 'pdf-ke-word', 'pdf-a-word', 'pdf-to-docx', 'pdf-ke-docx', 'pdf-in-word'];
+            if (pdfToWordSlugs.includes(slug.toLowerCase())) {
+              tool = getToolById('pdf-to-word-without-losing-formatting');
             }
           }
           setActiveTool(tool || null);
