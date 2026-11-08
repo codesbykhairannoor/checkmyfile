@@ -137,7 +137,6 @@ export const Navbar: React.FC<NavbarProps> = ({
         <nav aria-label="Desktop Quick Navigation" className="desktop-only" style={{ flex: '0 1 auto', display: 'flex', alignItems: 'center', gap: 4 }}>
             {[
               { id: 'merge-pdf', label: 'MERGE PDF' },
-              { id: 'split-pdf', label: 'SPLIT PDF' },
               { id: 'compress-pdf', label: 'COMPRESS PDF' },
               { id: 'pdf-to-word', label: 'PDF TO WORD' },
             ].map(({ id, label }) => (
@@ -358,11 +357,10 @@ export const Navbar: React.FC<NavbarProps> = ({
             </button>
           </div>
 
-          {/* Quick 4 buttons */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 6, marginBottom: 16 }}>
+          {/* Quick buttons */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 6, marginBottom: 16 }}>
             {[
               { id: 'merge-pdf', label: 'Merge' },
-              { id: 'split-pdf', label: 'Split' },
               { id: 'compress-pdf', label: 'Compress' },
               { id: 'pdf-to-word', label: 'Word' },
             ].map(({ id, label }) => (
