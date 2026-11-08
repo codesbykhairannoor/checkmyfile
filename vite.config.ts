@@ -15,6 +15,7 @@ export default defineConfig({
           if (normId.includes('src/i18n/researchTranslations.ts')) return 'i18n-research';
           if (normId.includes('src/i18n/editorTranslations.ts')) return 'i18n-editor';
           if (id.includes('node_modules')) {
+            if (id.includes('handlemyfile')) return 'vendor-handlemyfile-wasm';
             if (id.includes('jspdf')) return 'vendor-jspdf';
             if (id.includes('fflate')) return 'vendor-fflate';
             if (id.includes('pdfjs-dist')) return 'vendor-pdfjs';

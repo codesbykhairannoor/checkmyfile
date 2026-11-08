@@ -40,3 +40,12 @@
 - **No Regex for Complex Parsing**: Never rely on Regex to extract or bulk-replace strings, props, or logic across multiple React/JSX or TypeScript files (e.g., for i18n extraction). Regex cannot safely handle nesting, multiline strings, or ternary boundaries.
 - **Mandatory AST Usage**: When tasked with sweeping codebase changes, text extraction, or refactoring, ALWAYS use a proper AST parser (e.g., the `typescript` compiler API, which is built into modern JS projects) to traverse `JsxText` and `StringLiteral` nodes.
 - **Deep Research**: Do not take shortcuts on codebase-wide refactors. Write an AST-based script, dump the findings, and verify them thoroughly before applying automated patches.
+
+## Strict Academic Paper Formatting Standards (Zero Ad-Hoc Scripts)
+- **No Custom Script Generation**: Never use `python-docx` or ad-hoc scripts to generate academic papers based on personal assumptions. Ad-hoc scripts inject broken equations, interactive table handles, and web-styling bugs.
+- **Official Templates Only**: All academic papers intended for Scopus Q1, IEEE, ACM, or USENIX must strictly use official templates (`IEEEtran` LaTeX or official IEEE/Elsevier `.doc` templates).
+- **Zero Plaintext Math**: Math formulas must NEVER use raw underscores (`_`) or inline wrapping slash divisions. Use true equation objects (LaTeX Math or Word OMML) with true subscripts and vertical fraction bars.
+- **Strict Booktabs Rule**: Tables must strictly follow the academic Booktabs standard: exactly 3 horizontal rules (1.5 pt top, 0.75 pt mid, 1.5 pt bottom), 0 vertical borders, 0 background fill/color, and 0 zebra striping.
+- **Standard Pseudocode**: Algorithms must use the 3-line format with bold keywords, triangle comments ($\triangleright$), no table wrappers (no `[+]` handle), and no ASCII dashed lines.
+- **Authoritative Reference Grounding**: All typesetting must strictly reference established external standards (e.g. `dspinellis/latex-advice`, IEEE Author Center, ACM TAPS).
+
