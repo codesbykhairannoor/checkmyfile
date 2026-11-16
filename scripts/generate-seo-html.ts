@@ -109,6 +109,9 @@ const buildHeaderNavigation = (lang: string, isEn: boolean): string => {
         <a href="${getStaticHref('security')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none;">Security</a>
         <a href="${getStaticHref('pricing')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none;">Pricing</a>
         <a href="${getStaticHref('languages')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none;">Languages</a>
+        <a href="${homeHref}" onclick="if(window.__openAuthModal){window.__openAuthModal();return false;}" style="background: #e11d48; color: #ffffff; padding: 6px 14px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+          <span>${lang === 'id' ? 'Masuk / Login' : 'Sign In'}</span>
+        </a>
       </div>
     </header>
   `;

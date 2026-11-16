@@ -128,7 +128,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       }}>
 
         {/* Left: Logo */}
-        <div style={{ display: 'flex', alignItems: 'center', flex: 1 }}>
+        <div style={{ display: 'flex', alignItems: 'center', flexShrink: 0 }}>
 
           {/* Brand */}
           <div onClick={onNavigateHome} aria-label="Navigate to Home" style={{ display: 'flex', alignItems: 'center', gap: 12, cursor: 'pointer', userSelect: 'none', flexShrink: 0 }}>
@@ -140,7 +140,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         </div>
 
         {/* Center: Desktop Quick Tabs */}
-        <nav aria-label="Desktop Quick Navigation" className="desktop-only" style={{ flex: '0 1 auto', display: 'flex', alignItems: 'center', gap: 4 }}>
+        <nav aria-label="Desktop Quick Navigation" className="desktop-only" style={{ flex: '1 1 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4, minWidth: 0 }}>
             {[
               { id: 'merge-pdf', label: 'MERGE PDF' },
               { id: 'compress-pdf', label: 'COMPRESS PDF' },
@@ -255,11 +255,11 @@ export const Navbar: React.FC<NavbarProps> = ({
         </nav>
 
         {/* Right: Theme + Lang + Mobile Nav */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12, flex: 1, justifyContent: 'flex-end' }}>
-          <div className="desktop-only" style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexShrink: 0, justifyContent: 'flex-end' }}>
+          <div className="desktop-only" style={{ display: 'flex', alignItems: 'center', gap: 12, flexShrink: 0 }}>
           <button
             onClick={onToggleTheme}
-            style={{ width: 36, height: 36, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: isLightMode ? '#fef3c7' : '#1e1b4b', color: isLightMode ? '#d97706' : '#a855f7', border: `1.5px solid ${isLightMode ? '#f59e0b' : '#6366f1'}`, cursor: 'pointer', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', transition: 'all 0.2s' }}
+            style={{ width: 36, height: 36, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: isLightMode ? '#fef3c7' : '#1e1b4b', color: isLightMode ? '#d97706' : '#a855f7', border: `1.5px solid ${isLightMode ? '#f59e0b' : '#6366f1'}`, cursor: 'pointer', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', transition: 'all 0.2s', flexShrink: 0 }}
             title={isLightMode ? 'Dark Mode' : 'Light Mode'}
           >
             {isLightMode ? <Moon size={16} /> : <Sun size={16} />}
@@ -277,7 +277,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <button
               onClick={openAuthModal}
               style={{
-                padding: '7px 16px',
+                padding: '7px 18px',
                 borderRadius: 8,
                 background: 'var(--brand-primary)',
                 color: '#ffffff',
@@ -288,11 +288,13 @@ export const Navbar: React.FC<NavbarProps> = ({
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: 6,
-                transition: 'opacity 0.15s ease',
+                flexShrink: 0,
+                transition: 'all 0.15s ease',
+                boxShadow: '0 2px 8px rgba(225,29,72,0.25)',
               }}
             >
               <LogIn size={15} />
-              <span>{authT.nav_signin || 'Sign In'}</span>
+              <span>{currentLang === 'id' ? 'Masuk / Login' : (authT.nav_signin || 'Sign In')}</span>
             </button>
           ) : (
             <div style={{ position: 'relative' }}>
@@ -453,8 +455,64 @@ export const Navbar: React.FC<NavbarProps> = ({
           )}
         </div>
 
-        {/* Mobile top-right controls: Compact Language Selector + Thumb-Friendly Hamburger */}
+        {/* Mobile top-right controls: Auth + Compact Language Selector + Thumb-Friendly Hamburger */}
         <div className="mobile-only" style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          {!user ? (
+            <button
+              onClick={openAuthModal}
+              aria-label={currentLang === 'id' ? 'Masuk / Login' : (authT.nav_signin || 'Sign In')}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 5,
+                padding: '6px 12px',
+                borderRadius: 8,
+                background: 'var(--brand-primary)',
+                color: '#ffffff',
+                border: 'none',
+                fontSize: '0.82rem',
+                fontWeight: 700,
+                cursor: 'pointer',
+                whiteSpace: 'nowrap',
+                flexShrink: 0,
+                boxShadow: '0 2px 8px rgba(225,29,72,0.25)',
+              }}
+            >
+              <LogIn size={14} />
+              <span>{currentLang === 'id' ? 'Login' : (authT.nav_signin || 'Sign In')}</span>
+            </button>
+          ) : (
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="User Account Profile"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 5,
+                padding: '3px 8px 3px 3px',
+                background: 'var(--bg-card)',
+                border: '1px solid var(--border-color)',
+                borderRadius: 9999,
+                cursor: 'pointer',
+                color: 'var(--text-main)',
+                flexShrink: 0,
+              }}
+            >
+              {user.photoURL ? (
+                <img src={user.photoURL} alt={user.displayName || 'User'} style={{ width: 26, height: 26, borderRadius: '50%', objectFit: 'cover' }} />
+              ) : (
+                <div style={{ width: 26, height: 26, borderRadius: '50%', background: 'var(--brand-primary)', color: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.72rem', fontWeight: 700 }}>
+                  {(user.displayName || user.email || 'U')[0].toUpperCase()}
+                </div>
+              )}
+              {isPro && (
+                <span style={{ background: '#f59e0b', color: '#000000', fontSize: '0.62rem', fontWeight: 900, padding: '1px 5px', borderRadius: 4 }}>
+                  PRO
+                </span>
+              )}
+            </button>
+          )}
+
           <LocaleSwitcher
             currentLang={currentLang}
             onSelectLang={(code) => {
@@ -569,7 +627,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               }}
             >
               <LogIn size={16} />
-              <span>{authT.nav_signin || 'Sign In'}</span>
+              <span>{currentLang === 'id' ? 'Masuk / Login Akun' : (authT.nav_signin || 'Sign In')}</span>
             </button>
           ) : (
             <div

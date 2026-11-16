@@ -223,6 +223,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const openAuthModal = () => setIsAuthModalOpen(true);
   const closeAuthModal = () => setIsAuthModalOpen(false);
 
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      (window as unknown as { __openAuthModal?: () => void }).__openAuthModal = openAuthModal;
+    }
+  }, []);
+
   const isPro = Boolean(
     profile?.plan === 'pro' &&
     profile?.subscriptionStatus === 'active' &&
