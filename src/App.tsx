@@ -12,6 +12,7 @@ import { SecurityPage } from './pages/SecurityPage';
 import { UseCasesPage } from './pages/UseCasesPage';
 import { ComparePage } from './pages/ComparePage';
 import { LanguagesPage } from './pages/LanguagesPage';
+import { AuthModal } from './components/auth/AuthModal';
 import { getToolBySlugAndLang, type ToolDefinition } from './catalog/toolsCatalog';
 import { isValidLanguageCode } from './i18n/languages';
 import { getStaticPageIdFromSlug, getLocalizedStaticSlug, type StaticPageId } from './i18n/staticSlugs';
@@ -208,6 +209,7 @@ export const App: React.FC = () => {
       </div>
 
       {!isEditorActive && <Footer currentLang={currentLang} onSelectTool={handleSelectTool} onNavigatePage={handleNavigatePage} />}
+      <AuthModal currentLang={currentLang} />
     </div>
   );
 };

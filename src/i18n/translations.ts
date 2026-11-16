@@ -1,4 +1,14 @@
 export interface UiDictionary {
+  pricingEnterpriseTitle?: string;
+  pricingEnterprisePrice?: string;
+  pricingEnterpriseSub?: string;
+  pricingEnterpriseItem1?: string;
+  pricingEnterpriseItem2?: string;
+  pricingEnterpriseItem3?: string;
+  pricingEnterpriseItem4?: string;
+  pricingEnterpriseBtn?: string;
+  copiedShareLink?: string;
+
   previewNavDoc?: string;
   previewImgGallery?: string;
   previewFileDetails?: string;
@@ -525,6 +535,16 @@ const baseDict: UiDictionary = {
 export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
   en: baseDict,
   id: {
+    pricingEnterpriseTitle: "Lokal / Docker",
+    pricingEnterprisePrice: "Dihosting Sendiri",
+    pricingEnterpriseSub: "Untuk perusahaan, bank, dan lingkungan intranet dengan celah udara.",
+    pricingEnterpriseItem1: "100% Air-Gapped (Berjalan offline tanpa internet)",
+    pricingEnterpriseItem2: "Penerapan Docker & Kubernetes siap",
+    pricingEnterpriseItem3: "Kursi karyawan internal tanpa batas",
+    pricingEnterpriseItem4: "Tanpa biaya server, tanpa keluar data",
+    pricingEnterpriseBtn: "Lihat Panduan Docker",
+    copiedShareLink: "Tautan disalin ke papan klip!",
+
     navMoreTools: '🔧 ALAT PDF LEBIH BANYAK',
     homeHeroBadge: "100% Pemrosesan Sisi Klien",
     homeHeroTitle: "Semua Alat Dokumen Anda. 100% Privat.",
@@ -6716,6 +6736,16 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
     navSupportCenter: "צור קשר עם התמיכה"
 },
   hu: {
+    pricingEnterpriseTitle: "Helyszíni / Docker",
+    pricingEnterprisePrice: "Self-Hosted",
+    pricingEnterpriseSub: "Vállalkozások, bankok és légrés intranetes környezetek számára.",
+    pricingEnterpriseItem1: "100% légrés (internet nélkül is működik)",
+    pricingEnterpriseItem2: "A Docker és Kubernetes telepítés készen áll",
+    pricingEnterpriseItem3: "Korlátlan számú belső alkalmazotti férőhely",
+    pricingEnterpriseItem4: "Nulla szerverköltség, nulla adatkilépés",
+    pricingEnterpriseBtn: "Tekintse meg a Docker útmutatót",
+    copiedShareLink: "Link a vágólapra másolva!",
+
     navMoreTools: '🔧 TOVÁBBI PDF ESZKÖZÖK',
     navConvertToPdf: '🔄 KONVERTÁLÁS PDF-BE',
     navConvertFromPdf: '📑 KONVERTÁLÁS PDF-BŐL',

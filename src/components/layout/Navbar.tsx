@@ -6,11 +6,13 @@ import {
   ScanText, ScanLine, Eraser, Scale, EyeOff, RotateCw, Hash, Stamp,
   Presentation, AlignLeft, TableProperties, Image, Images, Trash2,
   PenTool, Lock, Unlock, Contrast, Maximize, ArrowDownUp, Edit3, SlidersHorizontal,
-  Menu, X,
+  Menu, X, FolderArchive, LogIn, LogOut, Crown,
 } from 'lucide-react';
 import { getToolById, type ToolDefinition } from '../../catalog/toolsCatalog';
 import { toolNames } from '../../i18n/slugTranslations';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
+import { authTranslations } from '../../i18n/authTranslations';
+import { useAuth } from '../../context/AuthContext';
 
 interface NavbarProps {
   currentLang: string;
@@ -51,11 +53,14 @@ export const Navbar: React.FC<NavbarProps> = ({
   const [isMegaOpen, setIsMegaOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMobileAllOpen, setIsMobileAllOpen] = useState(false);
+  const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
+  const { user, isPro, openAuthModal, signOut } = useAuth();
   const navRef = useRef<HTMLDivElement>(null);
   const megaTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const t = UI_TRANSLATIONS[currentLang] ?? UI_TRANSLATIONS['en'];
   const en = UI_TRANSLATIONS['en'];
+  const authT = authTranslations[currentLang] ?? authTranslations['en'] ?? {};
 
   // Nav category labels using partial translations with English fallbacks
   const NAV = {
@@ -92,6 +97,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       if (navRef.current && !navRef.current.contains(e.target as Node)) {
         setIsMegaOpen(false);
         setIsMobileMenuOpen(false);
+        setIsUserMenuOpen(false);
       }
     };
     document.addEventListener('mousedown', fn);
@@ -187,9 +193,10 @@ export const Navbar: React.FC<NavbarProps> = ({
                   }}
                 >
                   <div style={{ maxWidth: 1400, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 24 }}>
-                    {/* Col 1: Organize PDF — 7 items */}
+                    {/* Col 1: Organize PDF — 8 items */}
                     <div className="mega-menu-col">
                       <div className="mega-menu-title">{NAV.organize}</div>
+                      <MI icon={FolderArchive} label={toolNames['batch-pdf']?.[currentLang] || "Batch PDF (Folder)"} onClick={() => handleToolClick('batch-pdf')} highlight={true} />
                       <MI icon={Combine} label={toolNames['merge-pdf']?.[currentLang] || "Merge PDF"} onClick={() => handleToolClick('merge-pdf')} />
                       <MI icon={Scissors} label={toolNames['split-pdf']?.[currentLang] || "Split PDF"} onClick={() => handleToolClick('split-pdf')} />
                       <MI icon={RotateCw} label={toolNames['rotate-pdf']?.[currentLang] || "Rotate PDF"} onClick={() => handleToolClick('rotate-pdf')} />
@@ -264,6 +271,186 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClose={() => setIsDesktopLangOpen(false)}
             onOpen={() => setIsDesktopLangOpen(true)}
           />
+
+          {/* Desktop Auth Button / User Dropdown */}
+          {!user ? (
+            <button
+              onClick={openAuthModal}
+              style={{
+                padding: '7px 16px',
+                borderRadius: 8,
+                background: 'var(--brand-primary)',
+                color: '#ffffff',
+                border: 'none',
+                fontSize: '0.85rem',
+                fontWeight: 700,
+                cursor: 'pointer',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 6,
+                transition: 'opacity 0.15s ease',
+              }}
+            >
+              <LogIn size={15} />
+              <span>{authT.nav_signin || 'Sign In'}</span>
+            </button>
+          ) : (
+            <div style={{ position: 'relative' }}>
+              <button
+                onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: 8,
+                  padding: '3px 10px 3px 3px',
+                  background: 'var(--bg-card)',
+                  border: '1px solid var(--border-color)',
+                  borderRadius: 9999,
+                  cursor: 'pointer',
+                  color: 'var(--text-main)',
+                }}
+              >
+                {user.photoURL ? (
+                  <img
+                    src={user.photoURL}
+                    alt={user.displayName || 'User'}
+                    style={{ width: 28, height: 28, borderRadius: '50%', objectFit: 'cover' }}
+                  />
+                ) : (
+                  <div
+                    style={{
+                      width: 28,
+                      height: 28,
+                      borderRadius: '50%',
+                      background: 'var(--brand-primary)',
+                      color: '#ffffff',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontSize: '0.78rem',
+                      fontWeight: 700,
+                    }}
+                  >
+                    {(user.displayName || user.email || 'U')[0].toUpperCase()}
+                  </div>
+                )}
+                <span
+                  style={{
+                    fontSize: '0.82rem',
+                    fontWeight: 700,
+                    maxWidth: 100,
+                    overflow: 'hidden',
+                    textOverflow: 'ellipsis',
+                    whiteSpace: 'nowrap',
+                  }}
+                >
+                  {user.displayName || user.email?.split('@')[0] || authT.nav_account || 'Account'}
+                </span>
+                {isPro && (
+                  <span
+                    style={{
+                      background: '#f59e0b',
+                      color: '#000000',
+                      fontSize: '0.68rem',
+                      fontWeight: 900,
+                      padding: '1px 6px',
+                      borderRadius: 6,
+                      letterSpacing: '0.05em',
+                    }}
+                  >
+                    PRO
+                  </span>
+                )}
+                <ChevronDown size={14} />
+              </button>
+
+              {isUserMenuOpen && (
+                <div
+                  style={{
+                    position: 'absolute',
+                    top: 'calc(100% + 8px)',
+                    right: 0,
+                    width: 230,
+                    background: 'var(--bg-card)',
+                    border: '1px solid var(--border-color)',
+                    borderRadius: 12,
+                    boxShadow: '0 10px 25px rgba(0,0,0,0.18)',
+                    padding: '12px',
+                    zIndex: 200,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: 8,
+                  }}
+                >
+                  <div style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: 8 }}>
+                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                      {user.displayName || authT.nav_account || 'User'}
+                    </div>
+                    <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                      {user.email}
+                    </div>
+                  </div>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.8rem', padding: '4px 0' }}>
+                    <span style={{ color: 'var(--text-muted)' }}>Status:</span>
+                    <span style={{ fontWeight: 700, color: isPro ? '#f59e0b' : 'var(--text-main)' }}>
+                      {isPro ? (authT.nav_pro_active || 'PRO Lifetime') : (authT.nav_free_tier || 'Free Starter')}
+                    </span>
+                  </div>
+                  {!isPro && (
+                    <a
+                      href={currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setIsUserMenuOpen(false);
+                        window.history.pushState({}, '', currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`);
+                        window.dispatchEvent(new PopStateEvent('popstate'));
+                      }}
+                      style={{
+                        padding: '8px 10px',
+                        background: 'rgba(59,130,246,0.1)',
+                        color: 'var(--brand-primary)',
+                        borderRadius: 8,
+                        fontSize: '0.8rem',
+                        fontWeight: 700,
+                        textDecoration: 'none',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: 6,
+                      }}
+                    >
+                      <Crown size={14} />
+                      {authT.nav_upgrade_pro || 'Upgrade to PRO'}
+                    </a>
+                  )}
+                  <button
+                    onClick={() => {
+                      setIsUserMenuOpen(false);
+                      signOut();
+                    }}
+                    style={{
+                      width: '100%',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: 8,
+                      padding: '8px 10px',
+                      background: 'none',
+                      border: 'none',
+                      color: '#ef4444',
+                      fontSize: '0.8rem',
+                      fontWeight: 600,
+                      cursor: 'pointer',
+                      borderRadius: 6,
+                      textAlign: 'left',
+                    }}
+                  >
+                    <LogOut size={14} />
+                    {authT.nav_signout || 'Sign Out'}
+                  </button>
+                </div>
+              )}
+            </div>
+          )}
         </div>
 
         {/* Mobile top-right controls: Compact Language Selector + Thumb-Friendly Hamburger */}
@@ -356,6 +543,91 @@ export const Navbar: React.FC<NavbarProps> = ({
               </span>
             </button>
           </div>
+
+          {/* Mobile User Profile or Sign In Card */}
+          {!user ? (
+            <button
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                openAuthModal();
+              }}
+              style={{
+                width: '100%',
+                padding: '12px',
+                borderRadius: 10,
+                background: 'var(--brand-primary)',
+                color: '#ffffff',
+                border: 'none',
+                fontSize: '0.9rem',
+                fontWeight: 700,
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: 8,
+                marginBottom: 14,
+              }}
+            >
+              <LogIn size={16} />
+              <span>{authT.nav_signin || 'Sign In'}</span>
+            </button>
+          ) : (
+            <div
+              style={{
+                padding: '12px',
+                borderRadius: 10,
+                background: 'var(--bg-card)',
+                border: '1px solid var(--border-color)',
+                marginBottom: 14,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10, minWidth: 0 }}>
+                {user.photoURL ? (
+                  <img src={user.photoURL} alt={user.displayName || 'User'} style={{ width: 34, height: 34, borderRadius: '50%', objectFit: 'cover' }} />
+                ) : (
+                  <div style={{ width: 34, height: 34, borderRadius: '50%', background: 'var(--brand-primary)', color: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontSize: '0.85rem' }}>
+                    {(user.displayName || user.email || 'U')[0].toUpperCase()}
+                  </div>
+                )}
+                <div style={{ minWidth: 0 }}>
+                  <div style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                    {user.displayName || authT.nav_account || 'User'}
+                  </div>
+                  <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                    {user.email}
+                  </div>
+                </div>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexShrink: 0 }}>
+                {isPro && (
+                  <span style={{ background: '#f59e0b', color: '#000000', fontSize: '0.7rem', fontWeight: 900, padding: '2px 8px', borderRadius: 6 }}>
+                    PRO
+                  </span>
+                )}
+                <button
+                  onClick={() => {
+                    setIsMobileMenuOpen(false);
+                    signOut();
+                  }}
+                  style={{
+                    padding: '6px 10px',
+                    background: 'rgba(239,68,68,0.1)',
+                    border: '1px solid rgba(239,68,68,0.3)',
+                    color: '#ef4444',
+                    borderRadius: 6,
+                    fontSize: '0.75rem',
+                    fontWeight: 700,
+                    cursor: 'pointer',
+                  }}
+                >
+                  {authT.nav_signout || 'Sign Out'}
+                </button>
+              </div>
+            </div>
+          )}
 
           {/* Quick buttons */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 6, marginBottom: 16 }}>

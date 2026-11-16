@@ -15,6 +15,7 @@ import { getUiTranslations } from '../i18n/translations';
 
 import { DocumentLivePreview } from '../components/common/DocumentLivePreview';
 import { ToolSidebar } from '../components/tools/ToolSidebar';
+import { BatchPdfEditor } from '../components/tools/BatchPdfEditor';
 
 interface ToolPageProps {
   tool: ToolDefinition;
@@ -27,6 +28,7 @@ interface ToolPageProps {
 const getAcceptTypes = (toolId: string): string => {
   switch (toolId) {
     // PDF-only tools
+    case 'batch-pdf':
     case 'merge-pdf':
     case 'combine-multiple-pdf-files':
     case 'split-pdf':
@@ -79,7 +81,6 @@ const getAcceptTypes = (toolId: string): string => {
     case 'remove-pdf-author-metadata':
     case 'extract-high-res-images-pdf':
     case 'compare-pdf-files-visually':
-    case 'compress-pdf-to-100kb':
     case 'merge-pdf-files-offline':
     case 'convert-scanned-pdf-to-text':
     case 'add-page-numbers-to-pdf-free':
@@ -263,7 +264,23 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
       
       <article style={{ width: '100%', flex: 1, display: 'flex', flexDirection: 'column' }}>
 
-
+      {tool.id === 'batch-pdf' ? (
+        <div style={{ maxWidth: 1440, margin: '40px auto', width: '100%', padding: '0 24px', flex: 1, display: 'flex', flexDirection: 'column' }}>
+          <BatchPdfEditor
+            currentLang={currentLang}
+            files={files}
+            setFiles={setFiles}
+            formatSize={formatSize}
+          />
+          {seoData.data && (
+            <div style={{ marginTop: 48 }}>
+              <SeoRichSections data={seoData.data} />
+            </div>
+          )}
+          <RelatedTools currentToolId={tool.id} category={tool.category} currentLang={currentLang} />
+        </div>
+      ) : (
+        <>
       {/* Dynamic Header - Hidden in Workspace Mode and Result Mode to maximize preview space */}
       {files.length === 0 && !isCompleted && (
         <div style={{ textAlign: 'center', padding: '0 24px', maxWidth: 1440, margin: '64px auto 40px auto', width: '100%' }}>
@@ -494,6 +511,8 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
       {/* Internal Linking Silo (White Hat AEO) - Only show when idle */}
       {files.length === 0 && !isCompleted && (
         <RelatedTools currentToolId={tool.id} category={tool.category} currentLang={currentLang} />
+      )}
+        </>
       )}
 
       </article>

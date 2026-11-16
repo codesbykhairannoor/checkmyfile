@@ -1,0 +1,14 @@
+node_modules
+dist
+.git
+.github
+.agents
+benchmark-dataset
+benchmark-results
+ahrefsseo
+NEWCSVSEO
+latex
+*.log
+*.zip
+*.pdf
+.env*
