@@ -67,7 +67,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "Pay once, lifetime updates & zero monthly subscriptions",
     "pro_plan_best_value": "BEST VALUE",
     "pro_subscribe_monthly_btn": "Subscribe Monthly ($4.99/mo)",
-    "pro_signin_subscribe_monthly_btn": "Sign In & Subscribe Monthly"
+    "pro_signin_subscribe_monthly_btn": "Sign In & Subscribe Monthly",
+    "pricing_free_sub": "Free starter tier for everyone",
+    "pricing_free_forever": "/forever",
+    "pricing_free_btn": "Use Free Tools",
+    "pro_badge_flexible": "FLEXIBLE • CANCEL ANYTIME",
+    "pro_suite_sub": "PRO access across 4 Privacy Suite apps",
+    "pro_benefit_suite_apps": "PRO on HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR",
+    "pro_benefit_wasm_accel": "Priority WebAssembly CPU & local memory acceleration",
+    "pro_benefit_commercial": "Lossless export & Commercial Licensing included",
+    "pro_active_btn": "PRO Membership Active"
   },
   "id": {
     "auth_signin_title": "Masuk ke HandleMyFile",
@@ -136,7 +145,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "Sekali bayar, akses selamanya tanpa langganan bulanan",
     "pro_plan_best_value": "PALING HEMAT",
     "pro_subscribe_monthly_btn": "Langganan PRO Bulanan (Rp 49.000/bln)",
-    "pro_signin_subscribe_monthly_btn": "Masuk & Langganan Bulanan"
+    "pro_signin_subscribe_monthly_btn": "Masuk & Langganan Bulanan",
+    "pricing_free_sub": "Paket gratis untuk semua pengguna",
+    "pricing_free_forever": "/selamanya",
+    "pricing_free_btn": "Gunakan Alat Gratis",
+    "pro_badge_flexible": "FLEKSIBEL • BATALKAN KAPAN SAJA",
+    "pro_suite_sub": "Akses PRO di 4 Web Privacy Suite",
+    "pro_benefit_suite_apps": "Akses PRO di HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR",
+    "pro_benefit_wasm_accel": "Akselerasi WebAssembly CPU & memori lokal prioritas",
+    "pro_benefit_commercial": "Ekspor lossless & Lisensi Komersial resmi",
+    "pro_active_btn": "Keanggotaan PRO Aktif"
   },
   "es": {
     "auth_signin_title": "Iniciar sesión en HandleMyFile",
@@ -205,7 +223,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "Paga una vez, actualizaciones de por vida y cero suscripciones mensuales",
     "pro_plan_best_value": "MEJOR VALOR",
     "pro_subscribe_monthly_btn": "Suscríbete mensualmente ($4,99/mes)",
-    "pro_signin_subscribe_monthly_btn": "Inicia sesión y suscríbete mensualmente"
+    "pro_signin_subscribe_monthly_btn": "Inicia sesión y suscríbete mensualmente",
+    "pricing_free_sub": "Nivel inicial gratuito para todos",
+    "pricing_free_forever": "/para siempre",
+    "pricing_free_btn": "Usar herramientas gratuitas",
+    "pro_badge_flexible": "FLEXIBLE • CANCELA EN CUALQUIER MOMENTO",
+    "pro_suite_sub": "Acceso PRO en 4 aplicaciones de Privacy Suite",
+    "pro_benefit_suite_apps": "PRO en HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR",
+    "pro_benefit_wasm_accel": "Aceleración prioritaria de CPU WebAssembly y memoria local",
+    "pro_benefit_commercial": "Exportación sin pérdidas y licencia comercial incluida",
+    "pro_active_btn": "Membresía PRO activa"
   },
   "fr": {
     "auth_signin_title": "Connectez-vous à HandleMyFile",
@@ -274,7 +301,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "Payez une fois, mises à jour à vie et aucun abonnement mensuel",
     "pro_plan_best_value": "MEILLEURE VALEUR",
     "pro_subscribe_monthly_btn": "Abonnez-vous mensuellement (4,99 $/mois)",
-    "pro_signin_subscribe_monthly_btn": "Connectez-vous et abonnez-vous mensuellement"
+    "pro_signin_subscribe_monthly_btn": "Connectez-vous et abonnez-vous mensuellement",
+    "pricing_free_sub": "Formule de départ gratuite pour tous",
+    "pricing_free_forever": "/pour toujours",
+    "pricing_free_btn": "Utiliser les outils gratuits",
+    "pro_badge_flexible": "FLEXIBLE • ANNULABLE À TOUT MOMENT",
+    "pro_suite_sub": "Accès PRO sur les 4 applications de la Privacy Suite",
+    "pro_benefit_suite_apps": "PRO sur HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR",
+    "pro_benefit_wasm_accel": "Accélération processeur WebAssembly et mémoire locale prioritaire",
+    "pro_benefit_commercial": "Export sans perte et licence commerciale inclus",
+    "pro_active_btn": "Abonnement PRO actif"
   },
   "de": {
     "auth_signin_title": "Melden Sie sich bei HandleMyFile an",
@@ -343,7 +379,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "Einmal zahlen, lebenslange Updates und keine monatlichen Abonnements",
     "pro_plan_best_value": "Das beste Preis-Leistungs-Verhältnis",
     "pro_subscribe_monthly_btn": "Monatliches Abonnement (4,99 $/Monat)",
-    "pro_signin_subscribe_monthly_btn": "Melden Sie sich an und abonnieren Sie jeden Monat"
+    "pro_signin_subscribe_monthly_btn": "Melden Sie sich an und abonnieren Sie jeden Monat",
+    "pricing_free_sub": "Kostenlose Starter-Stufe für alle",
+    "pricing_free_forever": "/dauerhaft",
+    "pricing_free_btn": "Kostenlose Tools nutzen",
+    "pro_badge_flexible": "FLEXIBEL • JEDERZEIT KÜNDBAR",
+    "pro_suite_sub": "PRO-Zugriff auf 4 Privacy Suite-Apps",
+    "pro_benefit_suite_apps": "PRO auf HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR",
+    "pro_benefit_wasm_accel": "Prioritäre WebAssembly-CPU- & lokale Speicherbeschleunigung",
+    "pro_benefit_commercial": "Verlustfreier Export & kommerzielle Lizenz enthalten",
+    "pro_active_btn": "PRO-Mitgliedschaft aktiv"
   },
   "ja": {
     "auth_signin_title": "HandleMyFile にサインインする",
@@ -412,7 +457,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "1 回限りの支払い、永久更新、月々のサブスクリプションは不要",
     "pro_plan_best_value": "ベストバリュー",
     "pro_subscribe_monthly_btn": "毎月購読 ($4.99/月)",
-    "pro_signin_subscribe_monthly_btn": "サインインして毎月購読する"
+    "pro_signin_subscribe_monthly_btn": "サインインして毎月購読する",
+    "pricing_free_sub": "すべてのユーザーが無料で使えるスタータープラン",
+    "pricing_free_forever": "/永久無料",
+    "pricing_free_btn": "無料ツールを使う",
+    "pro_badge_flexible": "柔軟 • いつでも解約可能",
+    "pro_suite_sub": "4つのプライバシースイートアプリすべてでPROアクセス可能",
+    "pro_benefit_suite_apps": "HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR でPRO利用可能",
+    "pro_benefit_wasm_accel": "優先的なWebAssembly CPUおよびローカルメモリアクセラレーション",
+    "pro_benefit_commercial": "ロスレスエクスポート＆商用ライセンス付き",
+    "pro_active_btn": "PROメンバーシップ有効"
   },
   "pt": {
     "auth_signin_title": "Faça login no HandleMyFile",
@@ -481,7 +535,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "Pague uma vez, atualizações vitalícias e nenhuma assinatura mensal",
     "pro_plan_best_value": "MELHOR VALOR",
     "pro_subscribe_monthly_btn": "Assine mensalmente (US$ 4,99/mês)",
-    "pro_signin_subscribe_monthly_btn": "Faça login e assine mensalmente"
+    "pro_signin_subscribe_monthly_btn": "Faça login e assine mensalmente",
+    "pricing_free_sub": "Plano inicial gratuito para todos",
+    "pricing_free_forever": "/para sempre",
+    "pricing_free_btn": "Usar ferramentas gratuitas",
+    "pro_badge_flexible": "FLEXÍVEL • CANCELE A QUALQUER MOMENTO",
+    "pro_suite_sub": "Acesso PRO em 4 aplicativos da Privacy Suite",
+    "pro_benefit_suite_apps": "PRO no HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR",
+    "pro_benefit_wasm_accel": "Aceleração prioritária de CPU WebAssembly e memória local",
+    "pro_benefit_commercial": "Exportação sem perdas e licença comercial incluídas",
+    "pro_active_btn": "Assinatura PRO ativa"
   },
   "zh": {
     "auth_signin_title": "登录 HandleMyFile",
@@ -550,7 +613,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "一次付费、终身更新和零月订阅",
     "pro_plan_best_value": "最超值",
     "pro_subscribe_monthly_btn": "每月订阅（$4.99/月）",
-    "pro_signin_subscribe_monthly_btn": "登录并每月订阅"
+    "pro_signin_subscribe_monthly_btn": "登录并每月订阅",
+    "pricing_free_sub": "适合所有人的免费入门版",
+    "pricing_free_forever": "/永久免费",
+    "pricing_free_btn": "使用免费工具",
+    "pro_badge_flexible": "灵活订阅 • 随时取消",
+    "pro_suite_sub": "在4个隐私套件应用中尊享PRO权限",
+    "pro_benefit_suite_apps": "HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR 跨站PRO特权",
+    "pro_benefit_wasm_accel": "优先享受WebAssembly CPU及本地内存硬件加速",
+    "pro_benefit_commercial": "无损导出与正式商业授权",
+    "pro_active_btn": "PRO会员有效"
   },
   "ru": {
     "auth_signin_title": "Войдите в HandleMyFile",
@@ -619,7 +691,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "Платите один раз, пожизненные обновления и отсутствие ежемесячных подписок.",
     "pro_plan_best_value": "ЛУЧШАЯ ЦЕНА",
     "pro_subscribe_monthly_btn": "Подписка ежемесячно (4,99 доллара США в месяц)",
-    "pro_signin_subscribe_monthly_btn": "Войдите и подпишитесь ежемесячно"
+    "pro_signin_subscribe_monthly_btn": "Войдите и подпишитесь ежемесячно",
+    "pricing_free_sub": "Бесплатный стартовый тариф для всех",
+    "pricing_free_forever": "/навсегда",
+    "pricing_free_btn": "Использовать бесплатно",
+    "pro_badge_flexible": "ГИБКОСТЬ • ОТМЕНА В ЛЮБОЙ МОМЕНТ",
+    "pro_suite_sub": "Доступ PRO ко всем 4 приложениям Privacy Suite",
+    "pro_benefit_suite_apps": "PRO в HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR",
+    "pro_benefit_wasm_accel": "Приоритетное ускорение WebAssembly ЦП и локальной памяти",
+    "pro_benefit_commercial": "Экспорт без потерь и коммерческая лицензия включены",
+    "pro_active_btn": "Подписка PRO активна"
   },
   "hi": {
     "auth_signin_title": "HandleMyFile में साइन इन करें",
@@ -688,7 +769,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "एक बार भुगतान करें, आजीवन अपडेट और शून्य मासिक सदस्यता",
     "pro_plan_best_value": "सबसे अच्छा मूल्य",
     "pro_subscribe_monthly_btn": "मासिक सदस्यता लें ($4.99/महीना)",
-    "pro_signin_subscribe_monthly_btn": "साइन इन करें और मासिक सदस्यता लें"
+    "pro_signin_subscribe_monthly_btn": "साइन इन करें और मासिक सदस्यता लें",
+    "pricing_free_sub": "सभी के लिए निःशुल्क स्टार्टर टियर",
+    "pricing_free_forever": "/हमेशा के लिए",
+    "pricing_free_btn": "निःशुल्क टूल्स का उपयोग करें",
+    "pro_badge_flexible": "लचीला • कभी भी रद्द करें",
+    "pro_suite_sub": "4 प्राइवेसी सुइट ऐप्स में प्रो एक्सेस",
+    "pro_benefit_suite_apps": "HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR पर प्रो एक्सेस",
+    "pro_benefit_wasm_accel": "प्राथमिकता WebAssembly CPU और स्थानीय मेमोरी त्वरण",
+    "pro_benefit_commercial": "हानिरहित निर्यात और वाणिज्यिक लाइसेंस शामिल",
+    "pro_active_btn": "प्रो सदस्यता सक्रिय"
   },
   "it": {
     "auth_signin_title": "Accedi a HandleMyFile",
@@ -757,7 +847,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "Paga una volta, aggiornamenti a vita e zero abbonamenti mensili",
     "pro_plan_best_value": "MIGLIOR VALORE",
     "pro_subscribe_monthly_btn": "Abbonamento mensile ($ 4,99/mese)",
-    "pro_signin_subscribe_monthly_btn": "Accedi e iscriviti mensilmente"
+    "pro_signin_subscribe_monthly_btn": "Accedi e iscriviti mensilmente",
+    "pricing_free_sub": "Piano iniziale gratuito per tutti",
+    "pricing_free_forever": "/per sempre",
+    "pricing_free_btn": "Usa strumenti gratuiti",
+    "pro_badge_flexible": "FLESSIBILE • CANCELLA IN QUALSIASI MOMENTO",
+    "pro_suite_sub": "Accesso PRO a tutte e 4 le app della Privacy Suite",
+    "pro_benefit_suite_apps": "PRO su HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR",
+    "pro_benefit_wasm_accel": "Accelerazione prioritaria WebAssembly CPU e memoria locale",
+    "pro_benefit_commercial": "Esportazione senza perdita e licenza commerciale inclusa",
+    "pro_active_btn": "Abbonamento PRO attivo"
   },
   "ar": {
     "auth_signin_title": "قم بتسجيل الدخول إلى HandleMyFile",
@@ -826,7 +925,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "ادفع مرة واحدة، وتحديثات مدى الحياة، وبدون اشتراكات شهرية",
     "pro_plan_best_value": "أفضل قيمة",
     "pro_subscribe_monthly_btn": "الاشتراك شهريًا (4.99 دولارًا شهريًا)",
-    "pro_signin_subscribe_monthly_btn": "تسجيل الدخول والاشتراك الشهري"
+    "pro_signin_subscribe_monthly_btn": "تسجيل الدخول والاشتراك الشهري",
+    "pricing_free_sub": "المستوى المبتدئ مجاني للجميع",
+    "pricing_free_forever": "/للأبد",
+    "pricing_free_btn": "استخدم الأدوات المجانية",
+    "pro_badge_flexible": "مرن • إلغاء في أي وقت",
+    "pro_suite_sub": "وصول احترافي عبر 4 تطبيقات في مجموعة الخصوصية",
+    "pro_benefit_suite_apps": "وصول PRO عبر HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR",
+    "pro_benefit_wasm_accel": "تسريع أولوية معالج WebAssembly والذاكرة المحلية",
+    "pro_benefit_commercial": "تصدير بدون فقدان وترخيص تجاري مشمول",
+    "pro_active_btn": "عضوية PRO مفعلة"
   },
   "ko": {
     "auth_signin_title": "HandleMyFile에 로그인",
@@ -895,7 +1003,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "한 번만 지불하고 평생 업데이트하며 월간 구독이 필요하지 않습니다.",
     "pro_plan_best_value": "최고의 가치",
     "pro_subscribe_monthly_btn": "월간 구독($4.99/월)",
-    "pro_signin_subscribe_monthly_btn": "로그인 및 월간 구독"
+    "pro_signin_subscribe_monthly_btn": "로그인 및 월간 구독",
+    "pricing_free_sub": "모두를 위한 무료 스타터 플랜",
+    "pricing_free_forever": "/평생 무료",
+    "pricing_free_btn": "무료 도구 사용하기",
+    "pro_badge_flexible": "유연한 구독 • 언제든지 취소 가능",
+    "pro_suite_sub": "4개 프라이버시 스위트 앱 전체에서 PRO 이용 가능",
+    "pro_benefit_suite_apps": "HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR 전반 PRO 특권",
+    "pro_benefit_wasm_accel": "우선 WebAssembly CPU 및 로컬 메모리 하드웨어 가속",
+    "pro_benefit_commercial": "무손실 내보내기 및 상업용 라이선스 포함",
+    "pro_active_btn": "PRO 멤버십 활성"
   },
   "pl": {
     "auth_signin_title": "Zaloguj się do HandleMyFile",
@@ -964,7 +1081,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "Zapłać raz, dożywotnie aktualizacje i zerowe miesięczne subskrypcje",
     "pro_plan_best_value": "NAJLEPSZA WARTOŚĆ",
     "pro_subscribe_monthly_btn": "Subskrybuj co miesiąc (4,99 USD / mies.)",
-    "pro_signin_subscribe_monthly_btn": "Zaloguj się i subskrybuj co miesiąc"
+    "pro_signin_subscribe_monthly_btn": "Zaloguj się i subskrybuj co miesiąc",
+    "pricing_free_sub": "Bezpłatny plan startowy dla każdego",
+    "pricing_free_forever": "/na zawsze",
+    "pricing_free_btn": "Użyj bezpłatnych narzędzi",
+    "pro_badge_flexible": "ELASTYCZNOŚĆ • ANULUJ W DOWOLNYM MOMENCIE",
+    "pro_suite_sub": "Dostęp PRO do 4 aplikacji Privacy Suite",
+    "pro_benefit_suite_apps": "PRO w HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR",
+    "pro_benefit_wasm_accel": "Priorytetowe przyspieszenie procesora WebAssembly i pamięci lokalnej",
+    "pro_benefit_commercial": "Bezstratny eksport i licencja komercyjna w zestawie",
+    "pro_active_btn": "Subskrypcja PRO aktywna"
   },
   "vi": {
     "auth_signin_title": "Đăng nhập vào HandleMyFile",
@@ -1033,7 +1159,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "Thanh toán một lần, cập nhật trọn đời và không đăng ký hàng tháng",
     "pro_plan_best_value": "GIÁ TRỊ TỐT NHẤT",
     "pro_subscribe_monthly_btn": "Đăng ký hàng tháng ($4,99/tháng)",
-    "pro_signin_subscribe_monthly_btn": "Đăng nhập và đăng ký hàng tháng"
+    "pro_signin_subscribe_monthly_btn": "Đăng nhập và đăng ký hàng tháng",
+    "pricing_free_sub": "Gói khởi đầu miễn phí cho mọi người",
+    "pricing_free_forever": "/mãi mãi",
+    "pricing_free_btn": "Sử dụng công cụ miễn phí",
+    "pro_badge_flexible": "LINH HOẠT • HỦY BẤT CỨ LÚC NÀO",
+    "pro_suite_sub": "Quyền truy cập PRO trên cả 4 ứng dụng Privacy Suite",
+    "pro_benefit_suite_apps": "PRO trên HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR",
+    "pro_benefit_wasm_accel": "Tăng tốc WebAssembly CPU và bộ nhớ cục bộ ưu tiên",
+    "pro_benefit_commercial": "Xuất không mất dữ liệu và bao gồm giấy phép thương mại",
+    "pro_active_btn": "Gói thành viên PRO đang hoạt động"
   },
   "nl": {
     "auth_signin_title": "Meld u aan bij HandleMyFile",
@@ -1102,7 +1237,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "Betaal één keer, levenslange updates en nul maandelijkse abonnementen",
     "pro_plan_best_value": "BESTE WAARDE",
     "pro_subscribe_monthly_btn": "Maandelijks abonneren ($ 4,99/maand)",
-    "pro_signin_subscribe_monthly_btn": "Aanmelden en maandelijks abonneren"
+    "pro_signin_subscribe_monthly_btn": "Aanmelden en maandelijks abonneren",
+    "pricing_free_sub": "Gratis starterplan voor iedereen",
+    "pricing_free_forever": "/voor altijd",
+    "pricing_free_btn": "Gebruik gratis tools",
+    "pro_badge_flexible": "FLEXIBEL • ALTIJD OPZEGBAAR",
+    "pro_suite_sub": "PRO-toegang tot 4 Privacy Suite-apps",
+    "pro_benefit_suite_apps": "PRO op HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR",
+    "pro_benefit_wasm_accel": "Prioriteit WebAssembly CPU & lokale geheugenversnelling",
+    "pro_benefit_commercial": "Verliesvrije export & commerciële licentie inbegrepen",
+    "pro_active_btn": "PRO-lidmaatschap actief"
   },
   "tr": {
     "auth_signin_title": "HandleMyFile'da oturum açın",
@@ -1171,7 +1315,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "Bir kez öde, ömür boyu güncelleme ve sıfır aylık abonelik",
     "pro_plan_best_value": "EN İYİ DEĞER",
     "pro_subscribe_monthly_btn": "Aylık Abone Ol (4,99$/ay)",
-    "pro_signin_subscribe_monthly_btn": "Oturum Açın ve Aylık Abone Olun"
+    "pro_signin_subscribe_monthly_btn": "Oturum Açın ve Aylık Abone Olun",
+    "pricing_free_sub": "Herkes için ücretsiz başlangıç planı",
+    "pricing_free_forever": "/sonsuza dek",
+    "pricing_free_btn": "Ücretsiz Araçları Kullan",
+    "pro_badge_flexible": "ESNEK • İSTEDİĞİNİZ ZAMAN İPTAL EDİN",
+    "pro_suite_sub": "4 Gizlilik Paketi uygulamasında PRO erişim",
+    "pro_benefit_suite_apps": "HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR genelinde PRO",
+    "pro_benefit_wasm_accel": "Öncelikli WebAssembly CPU ve yerel bellek hızlandırması",
+    "pro_benefit_commercial": "Kayıpsız dışa aktarma ve Ticari Lisans dahil",
+    "pro_active_btn": "PRO Üyeliği Aktif"
   },
   "el": {
     "auth_signin_title": "Συνδεθείτε στο HandleMyFile",
@@ -1240,7 +1393,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "Πληρώστε μία φορά, ενημερώσεις εφ' όρου ζωής και μηδενικές μηνιαίες συνδρομές",
     "pro_plan_best_value": "ΚΑΛΥΤΕΡΗ ΑΞΙΑ",
     "pro_subscribe_monthly_btn": "Μηνιαία εγγραφή (4,99 $/μήνα)",
-    "pro_signin_subscribe_monthly_btn": "Είσοδος & Εγγραφή Μηνιαία"
+    "pro_signin_subscribe_monthly_btn": "Είσοδος & Εγγραφή Μηνιαία",
+    "pricing_free_sub": "Δωρεάν αρχικό πακέτο για όλους",
+    "pricing_free_forever": "/για πάντα",
+    "pricing_free_btn": "Χρήση δωρεάν εργαλείων",
+    "pro_badge_flexible": "ΕΥΕΛΙΚΤΟ • ΑΚΥΡΩΣΗ ΑΝΑ ΠΑΣΑ ΣΤΙΓΜΗ",
+    "pro_suite_sub": "Πρόσβαση PRO σε 4 εφαρμογές Privacy Suite",
+    "pro_benefit_suite_apps": "PRO σε HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR",
+    "pro_benefit_wasm_accel": "Επιτάχυνση WebAssembly CPU και τοπικής μνήμης προτεραιότητας",
+    "pro_benefit_commercial": "Εξαγωγή χωρίς απώλειες & εμπορική άδεια χρήσης",
+    "pro_active_btn": "Συνδρομή PRO ενεργή"
   },
   "sv": {
     "auth_signin_title": "Logga in på HandleMyFile",
@@ -1309,7 +1471,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "Betala en gång, livstidsuppdateringar och noll månadsabonnemang",
     "pro_plan_best_value": "BÄSTA VÄRDE",
     "pro_subscribe_monthly_btn": "Prenumerera varje månad ($4,99/månad)",
-    "pro_signin_subscribe_monthly_btn": "Logga in och prenumerera varje månad"
+    "pro_signin_subscribe_monthly_btn": "Logga in och prenumerera varje månad",
+    "pricing_free_sub": "Gratis startnivå för alla",
+    "pricing_free_forever": "/för alltid",
+    "pricing_free_btn": "Använd gratisverktyg",
+    "pro_badge_flexible": "FLEXIBELT • AVSLUTA NÄR SOM HELST",
+    "pro_suite_sub": "PRO-åtkomst över alla 4 Privacy Suite-appar",
+    "pro_benefit_suite_apps": "PRO på HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR",
+    "pro_benefit_wasm_accel": "Prioriterad WebAssembly CPU & lokal minnesacceleration",
+    "pro_benefit_commercial": "Förlustfri export och kommersiell licens ingår",
+    "pro_active_btn": "PRO-medlemskap aktivt"
   },
   "th": {
     "auth_signin_title": "ลงชื่อเข้าใช้ HandleMyFile",
@@ -1378,7 +1549,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "จ่ายครั้งเดียว อัปเดตตลอดชีพ และสมัครสมาชิกรายเดือนเป็นศูนย์",
     "pro_plan_best_value": "คุ้มค่าที่สุด",
     "pro_subscribe_monthly_btn": "สมัครสมาชิกรายเดือน ($4.99/เดือน)",
-    "pro_signin_subscribe_monthly_btn": "ลงชื่อเข้าใช้และสมัครสมาชิกรายเดือน"
+    "pro_signin_subscribe_monthly_btn": "ลงชื่อเข้าใช้และสมัครสมาชิกรายเดือน",
+    "pricing_free_sub": "แพ็กเกจเริ่มต้นฟรีสำหรับทุกคน",
+    "pricing_free_forever": "/ตลอดไป",
+    "pricing_free_btn": "ใช้เครื่องมือฟรี",
+    "pro_badge_flexible": "ยืดหยุ่น • ยกเลิกได้ตลอดเวลา",
+    "pro_suite_sub": "เข้าถึงระดับ PRO ในแอป Privacy Suite ทั้ง 4 ตัว",
+    "pro_benefit_suite_apps": "PRO บน HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR",
+    "pro_benefit_wasm_accel": "การเร่งความเร็ว CPU WebAssembly และหน่วยความจำภายในเครื่องแบบพิเศษ",
+    "pro_benefit_commercial": "ส่งออกไฟล์แบบ Lossless และรวมใบอนุญาตเชิงพาณิชย์",
+    "pro_active_btn": "สถานะสมาชิก PRO ใช้งานอยู่"
   },
   "da": {
     "auth_signin_title": "Log ind på HandleMyFile",
@@ -1447,7 +1627,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "Betal én gang, livstidsopdateringer og nul månedlige abonnementer",
     "pro_plan_best_value": "BEDSTE VÆRDI",
     "pro_subscribe_monthly_btn": "Abonner månedligt ($4,99/md)",
-    "pro_signin_subscribe_monthly_btn": "Log ind og abonner månedligt"
+    "pro_signin_subscribe_monthly_btn": "Log ind og abonner månedligt",
+    "pricing_free_sub": "Gratis startniveau for alle",
+    "pricing_free_forever": "/for altid",
+    "pricing_free_btn": "Brug gratis værktøjer",
+    "pro_badge_flexible": "FLEKSIBEL • OPSIG NÅR SOM HELST",
+    "pro_suite_sub": "PRO-adgang på tværs af 4 Privacy Suite-apps",
+    "pro_benefit_suite_apps": "PRO på HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR",
+    "pro_benefit_wasm_accel": "Prioriteret WebAssembly CPU & lokal hukommelsesacceleration",
+    "pro_benefit_commercial": "Tabsfrit eksport & kommerciel licens inkluderet",
+    "pro_active_btn": "PRO-medlemskab aktivt"
   },
   "cs": {
     "auth_signin_title": "Přihlaste se do HandleMyFile",
@@ -1516,7 +1705,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "Platba jednou, doživotní aktualizace a nulové měsíční předplatné",
     "pro_plan_best_value": "NEJLEPŠÍ HODNOTA",
     "pro_subscribe_monthly_btn": "Měsíční odběr (4,99 $ měsíčně)",
-    "pro_signin_subscribe_monthly_btn": "Přihlaste se a odebírejte měsíčně"
+    "pro_signin_subscribe_monthly_btn": "Přihlaste se a odebírejte měsíčně",
+    "pricing_free_sub": "Bezplatná startovací úroveň pro každého",
+    "pricing_free_forever": "/navždy",
+    "pricing_free_btn": "Použít bezplatné nástroje",
+    "pro_badge_flexible": "FLEXIBILNÍ • KDYKOLIV ZRUŠITELNÉ",
+    "pro_suite_sub": "Přístup PRO ve 4 aplikacích Privacy Suite",
+    "pro_benefit_suite_apps": "PRO na HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR",
+    "pro_benefit_wasm_accel": "Prioritní akcelerace procesoru WebAssembly a místní paměti",
+    "pro_benefit_commercial": "Bezeztrátový export a komerční licence v ceně",
+    "pro_active_btn": "Členství PRO aktivní"
   },
   "fi": {
     "auth_signin_title": "Kirjaudu sisään HandleMyFileen",
@@ -1585,7 +1783,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "Maksa kerran, elinikäiset päivitykset ja nolla kuukausitilausta",
     "pro_plan_best_value": "PARAS ARVO",
     "pro_subscribe_monthly_btn": "Tilaa kuukausittain (4,99 dollaria/kk)",
-    "pro_signin_subscribe_monthly_btn": "Kirjaudu sisään ja tilaa kuukausittain"
+    "pro_signin_subscribe_monthly_btn": "Kirjaudu sisään ja tilaa kuukausittain",
+    "pricing_free_sub": "Ilmainen aloitustaso kaikille",
+    "pricing_free_forever": "/ikuisesti",
+    "pricing_free_btn": "Käytä ilmaisia työkaluja",
+    "pro_badge_flexible": "JOUSTAVA • PERUUTA MILLOIN TAHANSA",
+    "pro_suite_sub": "PRO-käyttöoikeus 4 Privacy Suite -sovelluksessa",
+    "pro_benefit_suite_apps": "PRO HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR -sovelluksissa",
+    "pro_benefit_wasm_accel": "Ensisijainen WebAssembly CPU- ja paikallisen muistin kiihdytys",
+    "pro_benefit_commercial": "Häviötön vienti ja kaupallinen lisenssi sisältyvät",
+    "pro_active_btn": "PRO-jäsenyys aktiivinen"
   },
   "he": {
     "auth_signin_title": "היכנס אל HandleMyFile",
@@ -1654,7 +1861,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "שלם פעם אחת, עדכונים לכל החיים ואפס מנויים חודשיים",
     "pro_plan_best_value": "הערך הטוב ביותר",
     "pro_subscribe_monthly_btn": "הירשם חודשי ($4.99 לחודש)",
-    "pro_signin_subscribe_monthly_btn": "היכנס והירשם מדי חודש"
+    "pro_signin_subscribe_monthly_btn": "היכנס והירשם מדי חודש",
+    "pricing_free_sub": "חבילת פתיחה חינמית לכולם",
+    "pricing_free_forever": "/לתמיד",
+    "pricing_free_btn": "השתמש בכלים בחינם",
+    "pro_badge_flexible": "גמיש • ביטול בכל עת",
+    "pro_suite_sub": "גישת PRO בכל 4 יישומי ה-Privacy Suite",
+    "pro_benefit_suite_apps": "PRO ב-HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR",
+    "pro_benefit_wasm_accel": "האצת מעבד WebAssembly וזיכרון מקומי בעדיפות",
+    "pro_benefit_commercial": "ייצוא ללא אובדן איכות ורישיון מסחרי כלול",
+    "pro_active_btn": "מנוי PRO פעיל"
   },
   "ro": {
     "auth_signin_title": "Conectați-vă la HandleMyFile",
@@ -1723,7 +1939,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "Plătiți o singură dată, actualizări pe viață și zero abonamente lunare",
     "pro_plan_best_value": "CEL MAI BUN VALOARE",
     "pro_subscribe_monthly_btn": "Abonați-vă lunar (4,99 USD/lună)",
-    "pro_signin_subscribe_monthly_btn": "Conectați-vă și abonați-vă lunar"
+    "pro_signin_subscribe_monthly_btn": "Conectați-vă și abonați-vă lunar",
+    "pricing_free_sub": "Pachet gratuit de pornire pentru toată lumea",
+    "pricing_free_forever": "/pentru totdeauna",
+    "pricing_free_btn": "Folosește instrumente gratuite",
+    "pro_badge_flexible": "FLEXIBIL • ANULARE ORICÂND",
+    "pro_suite_sub": "Acces PRO în 4 aplicații din Privacy Suite",
+    "pro_benefit_suite_apps": "PRO pe HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR",
+    "pro_benefit_wasm_accel": "Accelerare prioritară a procesorului WebAssembly și memoriei locale",
+    "pro_benefit_commercial": "Export fără pierderi și licență comercială inclusă",
+    "pro_active_btn": "Abonament PRO activ"
   },
   "hu": {
     "auth_signin_title": "Jelentkezzen be a HandleMyFile-ba",
@@ -1792,7 +2017,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "Fizessen egyszer, élethosszig tartó frissítések és nulla havi előfizetés",
     "pro_plan_best_value": "LEGJOBB ÉRTÉK",
     "pro_subscribe_monthly_btn": "Havi előfizetés (4,99 USD/hó)",
-    "pro_signin_subscribe_monthly_btn": "Bejelentkezés és előfizetés havonta"
+    "pro_signin_subscribe_monthly_btn": "Bejelentkezés és előfizetés havonta",
+    "pricing_free_sub": "Ingyenes kezdőcsomag mindenkinek",
+    "pricing_free_forever": "/örökre",
+    "pricing_free_btn": "Ingyenes eszközök használata",
+    "pro_badge_flexible": "RUGALMAS • BÁRMIKOR LEMONDHATÓ",
+    "pro_suite_sub": "PRO hozzáférés 4 Privacy Suite alkalmazásban",
+    "pro_benefit_suite_apps": "PRO a HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR csomagban",
+    "pro_benefit_wasm_accel": "Kiemelt WebAssembly CPU és helyi memória gyorsítás",
+    "pro_benefit_commercial": "Veszteségmentes export és kereskedelmi licenc mellékelve",
+    "pro_active_btn": "PRO tagság aktív"
   },
   "no": {
     "auth_signin_title": "Logg på HandleMyFile",
@@ -1861,7 +2095,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "Betal én gang, livstidsoppdateringer og null månedlige abonnementer",
     "pro_plan_best_value": "BESTE VERDI",
     "pro_subscribe_monthly_btn": "Abonner månedlig ($4,99/md)",
-    "pro_signin_subscribe_monthly_btn": "Logg på og abonner månedlig"
+    "pro_signin_subscribe_monthly_btn": "Logg på og abonner månedlig",
+    "pricing_free_sub": "Gratis startpakke for alle",
+    "pricing_free_forever": "/for alltid",
+    "pricing_free_btn": "Bruk gratis verktøy",
+    "pro_badge_flexible": "FLEKSIBELT • AVSLUTT NÅR SOM HELST",
+    "pro_suite_sub": "PRO-tilgang over 4 Privacy Suite-apper",
+    "pro_benefit_suite_apps": "PRO på HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR",
+    "pro_benefit_wasm_accel": "Prioritert WebAssembly CPU & lokal minneakselerasjon",
+    "pro_benefit_commercial": "Tapsfri eksport og kommersiell lisens inkludert",
+    "pro_active_btn": "PRO-medlemskap aktivt"
   },
   "sk": {
     "auth_signin_title": "Prihláste sa do HandleMyFile",
@@ -1930,7 +2173,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "Platba raz, doživotné aktualizácie a nulové mesačné predplatné",
     "pro_plan_best_value": "NAJLEPŠIA HODNOTA",
     "pro_subscribe_monthly_btn": "Predplatné mesačne (4,99 USD/mes.)",
-    "pro_signin_subscribe_monthly_btn": "Prihláste sa a odoberajte mesačne"
+    "pro_signin_subscribe_monthly_btn": "Prihláste sa a odoberajte mesačne",
+    "pricing_free_sub": "Bezplatná štartovacia úroveň pre každého",
+    "pricing_free_forever": "/navždy",
+    "pricing_free_btn": "Použiť bezplatné nástroje",
+    "pro_badge_flexible": "FLEXIBILNÉ • KEDYKOĽVEK ZRUŠITEĽNÉ",
+    "pro_suite_sub": "Prístup PRO v 4 aplikáciách Privacy Suite",
+    "pro_benefit_suite_apps": "PRO na HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR",
+    "pro_benefit_wasm_accel": "Prioritná akcelerácia procesora WebAssembly a lokálnej pamäte",
+    "pro_benefit_commercial": "Bezstratový export a komerčná licencia v cene",
+    "pro_active_btn": "Členstvo PRO aktívne"
   },
   "uk": {
     "auth_signin_title": "Увійдіть у HandleMyFile",
@@ -1999,7 +2251,16 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "Оплата один раз, оновлення протягом усього періоду та нульова щомісячна підписка",
     "pro_plan_best_value": "НАЙКРАЩА ЦІННІСТЬ",
     "pro_subscribe_monthly_btn": "Щомісячна підписка ($4,99/місяць)",
-    "pro_signin_subscribe_monthly_btn": "Увійдіть і підпишіться щомісяця"
+    "pro_signin_subscribe_monthly_btn": "Увійдіть і підпишіться щомісяця",
+    "pricing_free_sub": "Безкоштовний стартовий рівень для всіх",
+    "pricing_free_forever": "/назавжди",
+    "pricing_free_btn": "Використовувати безкоштовні інструменти",
+    "pro_badge_flexible": "ГНУЧКО • СКАСУВАННЯ В БУДЬ-ЯКИЙ ЧАС",
+    "pro_suite_sub": "Доступ PRO до 4 додатків Privacy Suite",
+    "pro_benefit_suite_apps": "PRO в HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR",
+    "pro_benefit_wasm_accel": "Пріоритетне прискорення процесора WebAssembly та локальної пам'яті",
+    "pro_benefit_commercial": "Безвтратний експорт і комерційна ліцензія включені",
+    "pro_active_btn": "Членство PRO активне"
   },
   "ms": {
     "auth_signin_title": "Log masuk ke HandleMyFile",
@@ -2068,6 +2329,15 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "pro_plan_lifetime_desc": "Bayar sekali, kemas kini seumur hidup & sifar langganan bulanan",
     "pro_plan_best_value": "NILAI TERBAIK",
     "pro_subscribe_monthly_btn": "Langgan Bulanan ($4.99/bln)",
-    "pro_signin_subscribe_monthly_btn": "Log Masuk & Langgan Bulanan"
+    "pro_signin_subscribe_monthly_btn": "Log Masuk & Langgan Bulanan",
+    "pricing_free_sub": "Peringkat permulaan percuma untuk semua",
+    "pricing_free_forever": "/selamanya",
+    "pricing_free_btn": "Gunakan Alat Percuma",
+    "pro_badge_flexible": "FLEKSIBEL • BATAL BILA-BILA MASA",
+    "pro_suite_sub": "Akses PRO merentas 4 aplikasi Privacy Suite",
+    "pro_benefit_suite_apps": "PRO di HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR",
+    "pro_benefit_wasm_accel": "Pecutan WebAssembly CPU & memori tempatan keutamaan",
+    "pro_benefit_commercial": "Eksport tanpa kehilangan & Lesen Komersial disertakan",
+    "pro_active_btn": "Keahlian PRO Aktif"
   }
 };
