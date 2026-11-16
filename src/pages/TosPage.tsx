@@ -47,7 +47,7 @@ export const TosPage: React.FC<Props> = ({ currentLang }) => {
               <h2 style={{ fontSize: '2rem', fontWeight: 900, color: 'var(--text-main)' }}>{t.pageTosAgreementTitle || 'Agreement to Terms'}</h2>
             </div>
             <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8, paddingLeft: 64 }}>
-              {t.pageTosAgreementDesc || 'By accessing and using HandleMyFile, you agree to be bound by these Terms of Service. If you disagree with any part of the terms, you do not have permission to access the Service. Our platform is provided completely free of charge for both personal and commercial use.'}
+              {t.pageTosAgreementDesc || 'By accessing and using HandleMyFile, you agree to be bound by these Terms of Service. If you disagree with any part of the terms, you do not have permission to access the Service. Our platform provides a generous free tier alongside an optional PRO Lifetime Pass for personal and commercial use.'}
             </p>
           </div>
         </section>

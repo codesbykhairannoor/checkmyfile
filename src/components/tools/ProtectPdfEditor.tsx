@@ -23,7 +23,7 @@ export const ProtectPdfEditor: React.FC<ProtectPdfEditorProps> = ({
     <div className="glass-panel" style={{ padding: 24, display: 'flex', flexDirection: 'column', gap: 24, minWidth: 320, height: '100%' }}>
       <div>
         <h4 style={{ fontWeight: 800, fontSize: '1.1rem', color: 'var(--text-main)', marginBottom: 6, display: 'flex', alignItems: 'center', gap: 8 }}>
-          <Lock size={18} className="text-brand-primary" color="#3b82f6" />
+          <Lock size={18} className="text-brand-primary" color="var(--brand-primary, #e11d48)" />
           <span>{t("protect_pdf", "Protect PDF")}</span>
         </h4>
         <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>

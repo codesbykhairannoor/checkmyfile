@@ -12,8 +12,10 @@ import {
   type BatchProcessResult,
 } from '../../engines/pdf/batchEngine';
 import { editorTranslations } from '../../i18n/editorTranslations';
+import { authTranslations } from '../../i18n/authTranslations';
 import { useAuth } from '../../context/AuthContext';
 import { redirectToLemonSqueezy } from '../../utils/lemonSqueezy';
+import { ProGateModal } from '../common/ProGateModal';
 
 interface BatchPdfEditorProps {
   currentLang: string;
@@ -29,6 +31,7 @@ export const BatchPdfEditor: React.FC<BatchPdfEditorProps> = ({
   formatSize,
 }) => {
   const t = editorTranslations[currentLang] || editorTranslations['en'] || {};
+  const tAuth = authTranslations[currentLang] || authTranslations['en'] || {};
   const { user, isPro, openAuthModal } = useAuth();
   const FREE_BATCH_LIMIT = 10;
   const [showProGateModal, setShowProGateModal] = useState<boolean>(false);
@@ -135,15 +138,6 @@ export const BatchPdfEditor: React.FC<BatchPdfEditorProps> = ({
     handleStartBatch(sliced);
   };
 
-  const handleUpgradeFromBatch = () => {
-    setShowProGateModal(false);
-    if (!user) {
-      openAuthModal();
-    } else {
-      redirectToLemonSqueezy(user);
-    }
-  };
-
   const handleDownloadZip = () => {
     if (!finalResult) return;
     const url = URL.createObjectURL(finalResult.zipBlob);
@@ -208,17 +202,17 @@ export const BatchPdfEditor: React.FC<BatchPdfEditorProps> = ({
               {isPro ? (
                 <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, padding: '4px 12px', background: 'rgba(34, 197, 94, 0.1)', color: '#22c55e', border: '1px solid rgba(34, 197, 94, 0.3)', borderRadius: 100, fontSize: '0.78rem', fontWeight: 800 }}>
                   <Sparkles size={14} />
-                  <span>{t.batch_pro_badge || 'PRO: Unlimited Batch Active'}</span>
+                  <span>{tAuth.batch_pro_badge || t.batch_pro_badge || 'PRO: Unlimited Batch Active'}</span>
                 </div>
               ) : (
                 <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, padding: '4px 12px', background: 'rgba(234, 179, 8, 0.1)', color: '#eab308', border: '1px solid rgba(234, 179, 8, 0.3)', borderRadius: 100, fontSize: '0.78rem', fontWeight: 800 }}>
-                  <span>{t.batch_free_badge || 'Free: Max 10 Files / Batch'}</span>
+                  <span>{tAuth.batch_free_badge || t.batch_free_badge || 'Free: Max 10 Files / Batch'}</span>
                   <span>•</span>
                   <button
                     onClick={() => !user ? openAuthModal() : redirectToLemonSqueezy(user)}
                     style={{ background: 'none', border: 'none', color: 'var(--brand-primary)', textDecoration: 'underline', cursor: 'pointer', fontWeight: 800, padding: 0, fontSize: '0.78rem' }}
                   >
-                    {t.batch_upgrade_btn || 'Upgrade to PRO'}
+                    {tAuth.batch_upgrade_btn || t.batch_upgrade_btn || 'Upgrade to PRO'}
                   </button>
                 </div>
               )}
@@ -713,147 +707,14 @@ export const BatchPdfEditor: React.FC<BatchPdfEditorProps> = ({
       </div>
 
       {/* Free vs PRO Limit Gatekeeper Modal */}
-      {showProGateModal && (
-        <div
-          style={{
-            position: 'fixed',
-            inset: 0,
-            zIndex: 99999,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            padding: '16px',
-            backgroundColor: 'rgba(0, 0, 0, 0.75)',
-            backdropFilter: 'blur(4px)',
-          }}
-          onClick={(e) => {
-            if (e.target === e.currentTarget) setShowProGateModal(false);
-          }}
-        >
-          <div
-            style={{
-              width: '100%',
-              maxWidth: '480px',
-              backgroundColor: 'var(--bg-card, #1e293b)',
-              color: 'var(--text-main, #f8fafc)',
-              borderRadius: '20px',
-              border: '2px solid var(--brand-primary, #3b82f6)',
-              boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)',
-              padding: '28px',
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '20px',
-              position: 'relative',
-              animation: 'fadeIn 0.2s ease-out',
-            }}
-          >
-            <button
-              onClick={() => setShowProGateModal(false)}
-              style={{
-                position: 'absolute',
-                top: 18,
-                right: 18,
-                background: 'none',
-                border: 'none',
-                color: 'var(--text-muted, #94a3b8)',
-                cursor: 'pointer',
-                padding: 4,
-              }}
-            >
-              <X size={20} />
-            </button>
-
-            <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-              <div
-                style={{
-                  width: 44,
-                  height: 44,
-                  borderRadius: 12,
-                  backgroundColor: 'rgba(234, 179, 8, 0.15)',
-                  color: '#eab308',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  flexShrink: 0,
-                }}
-              >
-                <Crown size={24} />
-              </div>
-              <div>
-                <h3 style={{ margin: 0, fontSize: '1.25rem', fontWeight: 900, color: 'var(--text-main)' }}>
-                  {t.batch_free_limit_title || 'Free Batch Limit (10 Files)'}
-                </h3>
-                <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                  {files.length} PDF files queued
-                </span>
-              </div>
-            </div>
-
-            <p style={{ margin: 0, fontSize: '0.95rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>
-              {t.batch_free_limit_desc || 'The Free Starter plan processes up to 10 files per batch. Upgrade to Founder Lifetime Pass to process unlimited files (100+) simultaneously.'}
-            </p>
-
-            <div
-              style={{
-                padding: '12px 16px',
-                borderRadius: '12px',
-                backgroundColor: 'rgba(59, 130, 246, 0.08)',
-                border: '1px solid rgba(59, 130, 246, 0.2)',
-                fontSize: '0.85rem',
-                lineHeight: 1.5,
-                color: 'var(--text-main)',
-              }}
-            >
-              <strong>✨ All-in-One Suite Lifetime:</strong> Single purchase unlocks PRO on HandleMyFile + HelpMyIMG. Unlimited batch, priority WASM acceleration, zero subscriptions forever.
-            </div>
-
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginTop: 4 }}>
-              <button
-                type="button"
-                onClick={handleUpgradeFromBatch}
-                style={{
-                  width: '100%',
-                  padding: '14px',
-                  borderRadius: 12,
-                  backgroundColor: 'var(--brand-primary, #3b82f6)',
-                  color: '#ffffff',
-                  border: 'none',
-                  fontWeight: 800,
-                  fontSize: '0.95rem',
-                  cursor: 'pointer',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  gap: 8,
-                  boxShadow: '0 4px 14px rgba(59, 130, 246, 0.35)',
-                }}
-              >
-                <Crown size={18} />
-                <span>{t.batch_unlock_pro_btn || 'Get Lifetime PRO Pass ($39 / Rp 249.000)'}</span>
-              </button>
-
-              <button
-                type="button"
-                onClick={handleContinueFreeFirst10}
-                style={{
-                  width: '100%',
-                  padding: '12px',
-                  borderRadius: 12,
-                  backgroundColor: 'transparent',
-                  color: 'var(--text-muted, #94a3b8)',
-                  border: '1px solid var(--border-color, #334155)',
-                  fontWeight: 600,
-                  fontSize: '0.88rem',
-                  cursor: 'pointer',
-                  textAlign: 'center',
-                }}
-              >
-                {t.batch_continue_free_btn || 'Process First 10 Files (Free)'}
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      <ProGateModal
+        isOpen={showProGateModal}
+        onClose={() => setShowProGateModal(false)}
+        currentLang={currentLang}
+        filesCount={files.length}
+        onContinueFree={handleContinueFreeFirst10}
+        continueFreeLabel={tAuth.batch_continue_free_btn || t.batch_continue_free_btn}
+      />
 
     </div>
   );

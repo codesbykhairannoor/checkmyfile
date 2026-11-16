@@ -69,7 +69,6 @@ export const FileDropzone: React.FC<FileDropzoneProps> = ({
           textAlign: 'center'
         }}
       >
-        <div className="dropzone-glow"></div>
         <input
           type="file"
           accept={accept}
@@ -91,7 +90,6 @@ export const FileDropzone: React.FC<FileDropzoneProps> = ({
           </p>
           
           <div style={{ display: 'inline-block', position: 'relative' }}>
-            <div className="dropzone-glow" style={{ animation: 'pulse-glow 3s infinite', borderRadius: 9999, opacity: 1, zIndex: -1 }}></div>
             <span className="btn-primary" style={{ padding: '16px 40px', fontSize: '1.1rem', pointerEvents: 'none', position: 'relative', zIndex: 2 }}>
               {t.selectFilesBtn}
             </span>

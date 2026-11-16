@@ -7,11 +7,14 @@ import { FileDropzone } from '../components/common/FileDropzone';
 import { ProgressBar } from '../components/common/ProgressBar';
 import { SeoRichSections, useSeoData } from '../components/common/SeoRichSections';
 import { ToolResearchSection } from '../components/seo-sections/ToolResearchSection';
-import { Download } from 'lucide-react';
+import { Download, Crown, AlertCircle } from 'lucide-react';
+import { useAuth } from '../context/AuthContext';
+import { ProGateModal } from '../components/common/ProGateModal';
 import { useWorkspaceFiles } from '../hooks/useWorkspaceFiles';
 import { useDocumentProcessor } from '../hooks/useDocumentProcessor';
 import { smartHighlight } from '../utils/textFormatting';
 import { getUiTranslations } from '../i18n/translations';
+import { authTranslations } from '../i18n/authTranslations';
 
 import { DocumentLivePreview } from '../components/common/DocumentLivePreview';
 import { ToolSidebar } from '../components/tools/ToolSidebar';
@@ -128,6 +131,10 @@ const getAcceptTypes = (toolId: string): string => {
 };
 
 export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorActive }) => {
+  const { user, isPro, openAuthModal } = useAuth();
+  const [showProGateModal, setShowProGateModal] = useState<boolean>(false);
+  const [proGateReason, setProGateReason] = useState<{ title?: string; desc?: string; featureName?: string; filesCount?: number }>({});
+
   const { files, setFiles } = useWorkspaceFiles(tool.id);
   const {
     isProcessing, progress, statusText, isCompleted, downloadBlobUrl, downloadFilename, resultFile, resultPreviewFiles, errorMessage,
@@ -215,8 +222,20 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
 
   const seo = getLocalizedSeo(tool, currentLang);
   const t = getUiTranslations(currentLang);
+  const tAuth = authTranslations[currentLang] || authTranslations['en'] || {};
 
   const handleStartProcessing = (options?: any) => {
+    // 10-document batch limit for Free users across all tools
+    if (!isPro && files.length > 10) {
+      setProGateReason({
+        title: tAuth.batch_free_limit_title || 'Batch Limit Exceeded (10 Documents)',
+        desc: tAuth.batch_free_limit_desc || `The Free Starter plan processes up to 10 files simultaneously (${files.length} files selected). Upgrade to PRO Lifetime for unlimited batch processing in browser RAM.`,
+        filesCount: files.length,
+      });
+      setShowProGateModal(true);
+      return;
+    }
+
     startProcessing({
       files, toolId: tool.id, toolCategory: tool.category, currentLang,
       splitRange, rotateDegrees, pageNumberConfig, watermarkConfig, compressQuality, compressPercent, extractImageFormat,
@@ -299,6 +318,59 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
       {/* Interactive Document Live Preview & Editor */}
       {files.length > 0 && !isCompleted && (
         <div style={{ maxWidth: 1440, margin: '0 auto', width: '100%', padding: '24px 24px 0', flex: 1, display: 'flex', flexDirection: 'column' }}>
+          {!isPro && files.length > 10 && (
+            <div
+              style={{
+                width: '100%',
+                padding: '12px 20px',
+                backgroundColor: 'rgba(234, 179, 8, 0.1)',
+                border: '1px solid rgba(234, 179, 8, 0.3)',
+                borderRadius: 12,
+                marginBottom: 16,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                gap: 12,
+                flexWrap: 'wrap',
+                color: '#ca8a04',
+                fontSize: '0.86rem',
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                <AlertCircle size={18} style={{ flexShrink: 0 }} />
+                <span>
+                  {tAuth.batch_limit_warning || `Free plan allows max 10 files. First 10 will be processed. Upgrade to PRO to process all files.`}
+                </span>
+              </div>
+              <button
+                type="button"
+                onClick={() => {
+                  setProGateReason({
+                    title: tAuth.batch_free_limit_title || 'Batch Limit Exceeded (10 Documents)',
+                    filesCount: files.length,
+                  });
+                  setShowProGateModal(true);
+                }}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: 6,
+                  padding: '6px 14px',
+                  borderRadius: 8,
+                  background: '#eab308',
+                  color: '#000000',
+                  border: 'none',
+                  fontWeight: 800,
+                  fontSize: '0.8rem',
+                  cursor: 'pointer',
+                  flexShrink: 0,
+                }}
+              >
+                <Crown size={14} />
+                <span>{tAuth.batch_upgrade_btn || 'Upgrade to PRO'}</span>
+              </button>
+            </div>
+          )}
           <React.Suspense fallback={<div style={{ minHeight: 400, display: 'flex', justifyContent: 'center', alignItems: 'center' }}><div className="spinner" style={{ width: 40, height: 40, border: '4px solid var(--border-color)', borderTopColor: 'var(--text-accent)', borderRadius: '50%', animation: 'spin 1s linear infinite' }}></div></div>}>
             <div className="tool-workspace-container" style={{ display: 'flex', width: '100%', height: '100%', maxHeight: 800, flex: 1, gap: 24, minHeight: 0, justifyContent: 'center' }}>
               {/* Left Workspace */}
@@ -476,6 +548,16 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                       originalFilename={downloadFilename}
                       originalSize={['compress-pdf', 'compress-pdf-for-email', 'compress-pdf-to-100kb', 'compress-pdf-without-losing-quality'].includes(tool.id) && files.length > 0 ? files[0].size : undefined}
                       compressedSize={['compress-pdf', 'compress-pdf-for-email', 'compress-pdf-to-100kb', 'compress-pdf-without-losing-quality'].includes(tool.id) && resultFile ? resultFile.size : undefined}
+                      isPro={isPro}
+                      onOpenProModal={() => {
+                        setProGateReason({
+                          featureName: currentLang === 'id' ? 'Kustomisasi Nama File' : 'Custom File Name',
+                          desc: currentLang === 'id'
+                            ? 'Fitur kustomisasi nama file unduhan khusus untuk anggota PRO Lifetime. Upgrade sekali bayar untuk akses selamanya.'
+                            : 'Renaming and customizing output download file names is an exclusive PRO Lifetime feature.',
+                        });
+                        setShowProGateModal(true);
+                      }}
                     />
                   ) : undefined
                 }
@@ -516,6 +598,21 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
       )}
 
       </article>
+
+      <ProGateModal
+        isOpen={showProGateModal}
+        onClose={() => setShowProGateModal(false)}
+        currentLang={currentLang}
+        title={proGateReason.title}
+        description={proGateReason.desc}
+        featureName={proGateReason.featureName}
+        filesCount={proGateReason.filesCount || files.length}
+        onContinueFree={files.length > 10 ? () => {
+          setFiles(files.slice(0, 10));
+          setShowProGateModal(false);
+        } : undefined}
+        continueFreeLabel={tAuth.batch_continue_free_btn || 'Process First 10 Files (Free)'}
+      />
     </main>
   );
 };

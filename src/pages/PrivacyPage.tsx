@@ -45,7 +45,7 @@ export const PrivacyPage: React.FC<Props> = ({ currentLang }) => {
             <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, marginBottom: 32, color: 'var(--text-main)', lineHeight: 1.2 }}>{t.pagePrivacySec1Title || 'Data Handling Matrix'}</h2>
             <div style={{ background: 'var(--bg-card)', padding: 48, borderRadius: 32, border: '1px solid var(--border-color)', borderLeft: '4px solid var(--brand-primary)' }}>
               <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>
-                {t.pagePrivacySec1Desc || 'We do not collect IP addresses. We do not store your files. We do not require email registrations. Every single bit of your document data remains exclusively on your physical device at all times.'}
+                {t.pagePrivacySec1Desc || 'We do not store your documents. We do not require email registrations to use our free tools. Every single bit of your document data remains exclusively on your physical device in browser RAM.'}
               </p>
             </div>
           </div>
@@ -88,7 +88,7 @@ export const PrivacyPage: React.FC<Props> = ({ currentLang }) => {
               <div className="hover-lift" style={{ padding: 40, background: 'var(--bg-app)', borderRadius: 24, border: '1px solid var(--border-color)', borderTop: '4px solid var(--brand-primary)' }}>
                 <EyeOff size={32} className="text-brand-primary" style={{ marginBottom: 20 }} />
                 <h3 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: 16 }}>{t.pagePrivacyCard3Title || 'Anonymous Usage'}</h3>
-                <p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>{t.pagePrivacyCard3Desc || 'We do not require accounts, logins, or email registrations. You remain completely anonymous while using the HandleMyFile platform.'}</p>
+                <p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>{t.pagePrivacyCard3Desc || 'No account or email registration required to use our free document tools. You remain completely anonymous with zero server uploads.'}</p>
               </div>
             </div>
           </div>

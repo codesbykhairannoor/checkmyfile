@@ -196,7 +196,13 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       );
     }
 
-    await sendPasswordResetEmail(auth, email.trim());
+    const currentOrigin = typeof window !== 'undefined' ? window.location.origin : 'https://handlemyfile.com';
+    const actionCodeSettings = {
+      url: `${currentOrigin}/?mode=resetPassword`,
+      handleCodeInApp: true,
+    };
+
+    await sendPasswordResetEmail(auth, email.trim(), actionCodeSettings);
   };
 
   const confirmNewPassword = async (oobCode: string, newPassword: string) => {

@@ -4,7 +4,7 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
     "merge-pdf": {
       "title": "Free Online PDF Merger - Combine PDF Files Locally | Zero Upload",
       "h1": "Merge PDF Files Instantly in Your Browser",
-      "description": "Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, 100% privacy guaranteed, zero limits."
+      "description": "Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, 100% privacy guaranteed, fast and secure."
     },
     "edit-pdf": {
       "title": "Free Online PDF Editor - Add Text & Images Locally | Zero Upload",
@@ -179,7 +179,7 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
     "combine-multiple-pdf-files": {
       "title": "Combine Multiple PDF Files - Merge PDFs Online Free",
       "h1": "Combine Multiple PDF Files Online",
-      "description": "Merge and combine multiple PDF files into one single document. Instant local processing, 100% private, no limit."
+      "description": "Merge and combine multiple PDF files into one single document. Instant local processing, 100% private in browser memory."
     },
     "sign-pdf-without-registration": {
       "title": "Sign PDF Online Without Registration - Free E-Sign",
@@ -196,7 +196,7 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
     "merge-pdf": {
       "title": "Penggabungan PDF Online Gratis - Gabungkan File PDF Secara Lokal | Nol Unggah",
       "h1": "Gabungkan File PDF Secara Instan di Browser Anda",
-      "description": "Gabungkan beberapa file PDF menjadi satu dokumen menggunakan WebAssembly sisi klien murni. Tidak ada unggahan file, privasi terjamin 100%, tanpa batas."
+      "description": "Gabungkan beberapa file PDF menjadi satu dokumen menggunakan WebAssembly sisi klien murni. Tidak ada unggahan file, privasi terjamin 100%, cepat dan aman."
     },
     "edit-pdf": {
       "title": "Editor PDF Online Gratis - Tambahkan Teks & Gambar Secara Lokal | Nol Unggah",

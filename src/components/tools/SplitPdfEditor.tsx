@@ -50,9 +50,9 @@ export const SplitPdfEditor: React.FC<SplitPdfEditorProps> = ({
           }}
         />
         
-        <div style={{ marginTop: 12, padding: 12, borderRadius: 8, background: 'rgba(59, 130, 246, 0.1)', border: '1px solid rgba(59, 130, 246, 0.2)', display: 'flex', gap: 10, alignItems: 'flex-start' }}>
-          <Info size={16} color="#3b82f6" style={{ marginTop: 2, flexShrink: 0 }} />
-          <p style={{ fontSize: '0.75rem', color: '#60a5fa', margin: 0, lineHeight: 1.4 }}>
+        <div style={{ marginTop: 12, padding: 12, borderRadius: 8, background: 'rgba(225, 29, 72, 0.08)', border: '1px solid rgba(225, 29, 72, 0.25)', display: 'flex', gap: 10, alignItems: 'flex-start' }}>
+          <Info size={16} color="var(--brand-primary, #e11d48)" style={{ marginTop: 2, flexShrink: 0 }} />
+          <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', margin: 0, lineHeight: 1.4 }}>
             {tUi['split_range_hint'] || tUi['Halaman yang masuk dalam rentang ini akan ditandai dengan label "EXTRACT" berwarna hijau pada Live Preview di sebelah kiri.'] || 'Pages in this range will be marked with a green "EXTRACT" label in the Live Preview on the left.'}
           </p>
         </div>

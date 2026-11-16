@@ -22,7 +22,7 @@ export const UnlockPdfEditor: React.FC<UnlockPdfEditorProps> = ({
     <div className="glass-panel" style={{ padding: 24, display: 'flex', flexDirection: 'column', gap: 24, minWidth: 320, height: '100%' }}>
       <div>
         <h4 style={{ fontWeight: 800, fontSize: '1.1rem', color: 'var(--text-main)', marginBottom: 6, display: 'flex', alignItems: 'center', gap: 8 }}>
-          <Unlock size={18} className="text-brand-primary" color="#3b82f6" />
+          <Unlock size={18} className="text-brand-primary" color="var(--brand-primary, #e11d48)" />
           <span>{t("unlock_pdf", "Unlock PDF")}</span>
         </h4>
         <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>

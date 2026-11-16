@@ -3,7 +3,8 @@ import { getUiTranslations } from '../i18n/translations';
 import { SeoHead } from '../components/seo/SeoHead';
 import { Check, X, ShieldCheck, Zap, ServerOff, Coffee, Container, Copy, CheckCircle2, Crown, Sparkles } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
-import { redirectToLemonSqueezy } from '../utils/lemonSqueezy';
+import { redirectToLemonSqueezy, type PlanType } from '../utils/lemonSqueezy';
+import { authTranslations } from '../i18n/authTranslations';
 
 interface Props {
   currentLang: string;
@@ -11,10 +12,12 @@ interface Props {
 
 export const PricingPage: React.FC<Props> = ({ currentLang }) => {
   const t = getUiTranslations(currentLang);
+  const tAuth = authTranslations[currentLang] || authTranslations['en'] || {};
   const { user, isPro, openAuthModal } = useAuth();
   const [copied, setCopied] = useState(false);
+  const [proPlanInterval, setProPlanInterval] = useState<PlanType>('lifetime');
 
-  const handleBuyLifetime = () => {
+  const handleBuyPlan = (plan: PlanType) => {
     if (!user) {
       openAuthModal();
       return;
@@ -22,7 +25,7 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
     if (isPro) {
       return;
     }
-    redirectToLemonSqueezy(user);
+    redirectToLemonSqueezy(user, plan);
   };
 
   const handleShare = async () => {
@@ -50,7 +53,7 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
     <>
       <SeoHead
         title={`${t.footerPricing || 'Pricing'} - HandleMyFile`}
-        description={t.pagePricingHeroSub || '100% Free Forever. No subscriptions, no hidden fees.'}
+        description={t.pagePricingHeroSub || 'Zero monthly subscriptions. Generous free starter tier and lifetime pass.'}
         currentLang={currentLang}
         slug="pricing"
       />
@@ -61,13 +64,13 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
         <section style={{ width: '100%', padding: '120px 24px', background: 'var(--bg-card)', borderBottom: '1px solid var(--border-color)', position: 'relative', overflow: 'hidden' }}>
           <div style={{ maxWidth: 800, margin: '0 auto', textAlign: 'center', position: 'relative', zIndex: 10 }}>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '8px 18px', background: '#eff6ff', color: 'var(--brand-primary)', borderRadius: 100, fontWeight: 700, fontSize: '0.9rem', marginBottom: 24, border: '1px solid #bfdbfe' }}>
-              <Zap size={16} /> {t.pagePricingBadge || 'Radically Free & Open'}
+              <Zap size={16} /> {t.pagePricingBadge || 'Fair & Transparent Pricing'}
             </div>
             <h1 style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', fontWeight: 900, fontFamily: 'var(--font-display)', marginBottom: 24, letterSpacing: '-0.03em', color: 'var(--text-main)', lineHeight: 1.1 }}>
-              {t.pagePricingHero || 'Zero Subscriptions. Zero Limits.'}
+              {t.pagePricingHero || 'Zero Subscriptions. Fair & Private.'}
             </h1>
             <p style={{ fontSize: 'clamp(1.05rem, 2vw, 1.25rem)', color: 'var(--text-muted)', lineHeight: 1.7, maxWidth: 700, margin: '0 auto' }}>
-              {t.pagePricingHeroSub || 'Enterprise-grade document tools usually cost $20/month. We believe privacy and utility should be a fundamental human right. HandleMyFile is completely free.'}
+              {t.pagePricingHeroSub || 'Enterprise-grade document tools usually cost $20/month. We believe privacy and utility should be accessible to everyone. HandleMyFile offers a generous free tier and an affordable lifetime pass.'}
             </p>
           </div>
         </section>
@@ -94,7 +97,7 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
                 </ul>
               </div>
               
-              {/* Card 2: HandleMyFile Web (100% Free Forever) */}
+              {/* Card 2: HandleMyFile Web (Free Starter Plan) */}
               <div style={{ background: 'var(--bg-card)', borderRadius: 24, padding: 32, border: '1.5px solid var(--border-color)', position: 'relative', display: 'flex', flexDirection: 'column' }}>
                 <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 8 }}>
                   HandleMyFile Web
@@ -132,25 +135,73 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
                 </div>
               </div>
 
-              {/* Card 3: Founder Lifetime Pass (PRO All-in-One Suite) */}
+              {/* Card 3: PRO Plans (Monthly & Founder Lifetime Pass) */}
               <div style={{ background: 'var(--bg-card)', borderRadius: 24, padding: 32, border: '2px solid var(--brand-primary)', position: 'relative', display: 'flex', flexDirection: 'column', boxShadow: '0 8px 30px rgba(0,0,0,0.06)' }}>
                 <div style={{ position: 'absolute', top: -14, left: '50%', transform: 'translateX(-50%)', background: 'var(--brand-primary)', color: '#fff', padding: '4px 18px', borderRadius: 100, fontWeight: 800, fontSize: '0.75rem', letterSpacing: '0.05em', whiteSpace: 'nowrap' }}>
-                  POPULAR • ALL-IN-ONE SUITE
+                  {proPlanInterval === 'lifetime' ? (tAuth.pro_plan_best_value || 'POPULAR • ALL-IN-ONE SUITE') : 'FLEXIBLE • CANCEL ANYTIME'}
                 </div>
+
+                {/* Plan interval toggle switcher */}
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 6, padding: 4, background: 'var(--bg-app)', borderRadius: 12, border: '1px solid var(--border-color)', marginBottom: 20 }}>
+                  <button
+                    type="button"
+                    onClick={() => setProPlanInterval('monthly')}
+                    style={{
+                      padding: '8px 12px',
+                      borderRadius: 8,
+                      border: 'none',
+                      background: proPlanInterval === 'monthly' ? 'var(--brand-primary)' : 'transparent',
+                      color: proPlanInterval === 'monthly' ? '#ffffff' : 'var(--text-muted)',
+                      fontWeight: 700,
+                      fontSize: '0.82rem',
+                      cursor: 'pointer',
+                      transition: 'all 0.15s ease',
+                    }}
+                  >
+                    {tAuth.pro_plan_monthly_name || 'Monthly'}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setProPlanInterval('lifetime')}
+                    style={{
+                      padding: '8px 12px',
+                      borderRadius: 8,
+                      border: 'none',
+                      background: proPlanInterval === 'lifetime' ? 'var(--brand-primary)' : 'transparent',
+                      color: proPlanInterval === 'lifetime' ? '#ffffff' : 'var(--text-muted)',
+                      fontWeight: 700,
+                      fontSize: '0.82rem',
+                      cursor: 'pointer',
+                      transition: 'all 0.15s ease',
+                    }}
+                  >
+                    {tAuth.pro_plan_lifetime_name || 'Lifetime Pass'}
+                  </button>
+                </div>
+
                 <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
                   <Crown size={20} color="var(--brand-primary)" />
                   <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: 'var(--brand-primary)', margin: 0 }}>
-                    Founder Lifetime Pass
+                    {proPlanInterval === 'monthly'
+                      ? (tAuth.pro_plan_monthly_name || 'PRO Monthly')
+                      : (tAuth.pro_plan_lifetime_name || 'Founder Lifetime Pass')}
                   </h3>
                 </div>
                 <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: 20 }}>
                   {currentLang === 'id' ? 'Akses PRO di 4 Web Privacy Suite' : 'PRO access across 4 Privacy Suite apps'}
                 </p>
                 <div style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 8, lineHeight: 1 }}>
-                  {currentLang === 'id' ? 'Rp 249.000' : '$39'}
+                  {proPlanInterval === 'monthly'
+                    ? (currentLang === 'id' ? 'Rp 49.000' : '$4.99')
+                    : (currentLang === 'id' ? 'Rp 249.000' : '$39')}
+                  <span style={{ fontSize: '0.95rem', color: 'var(--text-muted)', fontWeight: 500 }}>
+                    {proPlanInterval === 'monthly' ? '/mo' : ' (once)'}
+                  </span>
                 </div>
                 <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)', fontWeight: 600, marginBottom: 20 }}>
-                  {currentLang === 'id' ? 'Sekali bayar, akses selamanya' : 'One-time payment, lifetime access'}
+                  {proPlanInterval === 'monthly'
+                    ? (tAuth.pro_plan_monthly_desc || 'Flexible monthly billing, cancel anytime in 1 click')
+                    : (tAuth.pro_plan_lifetime_desc || 'One-time payment, lifetime updates & zero monthly subscriptions')}
                 </div>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 12, flex: 1 }}>
                   <li style={{ display: 'flex', gap: 10, alignItems: 'flex-start', color: 'var(--text-main)', fontWeight: 600, fontSize: '0.86rem' }}>
@@ -163,15 +214,15 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
                   </li>
                   <li style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.86rem' }}>
                     <Check size={16} color="var(--brand-primary)" style={{ flexShrink: 0 }} />
-                    <span>Priority WebAssembly CPU & local AI acceleration</span>
+                    <span>Custom output file renaming without restrictions</span>
                   </li>
                   <li style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.86rem' }}>
                     <Check size={16} color="var(--brand-primary)" style={{ flexShrink: 0 }} />
-                    <span>Lossless 4K render & 1-Click ZIP bulk export</span>
+                    <span>Priority WebAssembly CPU & local memory acceleration</span>
                   </li>
                   <li style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.86rem' }}>
                     <Check size={16} color="var(--brand-primary)" style={{ flexShrink: 0 }} />
-                    <span>Commercial Licensing & Lifetime Updates included</span>
+                    <span>Lossless export & Commercial Licensing included</span>
                   </li>
                 </ul>
                 <div style={{ marginTop: 24 }}>
@@ -201,7 +252,7 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
                   ) : (
                     <button
                       type="button"
-                      onClick={handleBuyLifetime}
+                      onClick={() => handleBuyPlan(proPlanInterval)}
                       style={{
                         width: '100%',
                         padding: '12px 16px',
@@ -216,11 +267,17 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
                         alignItems: 'center',
                         justifyContent: 'center',
                         gap: 8,
-                        boxShadow: '0 4px 14px rgba(59, 130, 246, 0.35)',
+                        boxShadow: '0 4px 14px rgba(225, 29, 72, 0.35)',
                       }}
                     >
                       <Crown size={18} />
-                      {!user ? 'Sign In & Get Lifetime Pass' : `Get Lifetime Pass (${currentLang === 'id' ? 'Rp 249.000' : '$39'})`}
+                      {!user
+                        ? (proPlanInterval === 'monthly'
+                            ? (tAuth.pro_signin_subscribe_monthly_btn || 'Sign In & Subscribe Monthly')
+                            : (tAuth.pro_signin_get_pass || 'Sign In & Get Lifetime Pass'))
+                        : (proPlanInterval === 'monthly'
+                            ? (tAuth.pro_subscribe_monthly_btn || `Subscribe Monthly (${currentLang === 'id' ? 'Rp 49.000/bln' : '$4.99/mo'})`)
+                            : (tAuth.pro_get_lifetime_pass || `Get Lifetime Pass (${currentLang === 'id' ? 'Rp 249.000' : '$39'})`))}
                     </button>
                   )}
                 </div>
@@ -293,7 +350,7 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
                 {t.pagePricingSec4Title || 'Sustainable & Transparent'}
               </h2>
               <p style={{ fontSize: 'clamp(1.05rem, 2vw, 1.25rem)', color: 'var(--text-muted)', lineHeight: 1.8 }}>
-                {t.pagePricingSec4Desc || 'To keep HandleMyFile 100% free forever, we rely on non-intrusive advertisements and standard web analytics. However, your privacy is our top priority. We never scan, extract, or sell the contents of your files. What happens in the editor, stays in the editor.'}
+                {t.pagePricingSec4Desc || 'To keep HandleMyFile sustainable, we offer a generous Free Starter plan alongside an optional Founder Lifetime Pass. Your privacy is our top priority: all files are processed locally on your device in browser RAM with zero server uploads.'}
               </p>
             </div>
             <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}>

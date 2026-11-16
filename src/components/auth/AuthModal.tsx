@@ -231,10 +231,11 @@ export const AuthModal: React.FC<AuthModalProps> = ({ currentLang = 'en' }) => {
         style={{
           width: '100%',
           maxWidth: '440px',
-          backgroundColor: 'var(--bg-card, #1e293b)',
+          fontFamily: 'var(--font-main)',
+          backgroundColor: 'var(--bg-card, #111520)',
           color: 'var(--text-main, #f8fafc)',
           borderRadius: '16px',
-          border: '1px solid var(--border-color, #334155)',
+          border: '1px solid var(--border-color, rgba(255, 255, 255, 0.08))',
           boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3)',
           overflow: 'hidden',
           display: 'flex',
@@ -249,7 +250,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ currentLang = 'en' }) => {
             alignItems: 'center',
             justifyContent: 'space-between',
             padding: '18px 24px',
-            borderBottom: '1px solid var(--border-color, #334155)',
+            borderBottom: '1px solid var(--border-color, rgba(255, 255, 255, 0.08))',
           }}
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -272,7 +273,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ currentLang = 'en' }) => {
                 <ArrowLeft size={18} />
               </button>
             )}
-            <h3 style={{ margin: 0, fontSize: '18px', fontWeight: 700, color: 'var(--text-main, #ffffff)' }}>
+            <h3 style={{ margin: 0, fontSize: '18px', fontWeight: 800, fontFamily: 'var(--font-display)', color: 'var(--text-main, #ffffff)' }}>
               {mode === 'signin' && (t.auth_signin_title || 'Sign in to HandleMyFile')}
               {mode === 'signup' && (t.auth_signup_title || 'Create your account')}
               {mode === 'forgot' && (t.auth_forgot_title || 'Reset Password')}
@@ -306,8 +307,8 @@ export const AuthModal: React.FC<AuthModalProps> = ({ currentLang = 'en' }) => {
             style={{
               padding: '10px 14px',
               borderRadius: '8px',
-              backgroundColor: 'rgba(59, 130, 246, 0.08)',
-              border: '1px solid rgba(59, 130, 246, 0.2)',
+              backgroundColor: 'rgba(225, 29, 72, 0.08)',
+              border: '1px solid rgba(225, 29, 72, 0.25)',
               marginBottom: '20px',
               display: 'flex',
               alignItems: 'flex-start',
@@ -317,7 +318,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ currentLang = 'en' }) => {
               color: 'var(--text-muted, #94a3b8)',
             }}
           >
-            <ShieldCheck size={16} style={{ color: 'var(--brand-primary, #3b82f6)', flexShrink: 0, marginTop: '2px' }} />
+            <ShieldCheck size={16} style={{ color: 'var(--brand-primary, #e11d48)', flexShrink: 0, marginTop: '2px' }} />
             <span>
               {t.auth_suite_notice || 'All-in-One Privacy Suite: One account unlocks PRO across HandleMyFile & HelpMyIMG.'}
             </span>
@@ -495,7 +496,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ currentLang = 'en' }) => {
                       style={{
                         background: 'none',
                         border: 'none',
-                        color: 'var(--brand-primary, #3b82f6)',
+                        color: 'var(--brand-primary, #e11d48)',
                         fontSize: '12px',
                         cursor: 'pointer',
                         padding: 0,
@@ -527,7 +528,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ currentLang = 'en' }) => {
                       boxSizing: 'border-box',
                       padding: '10px 14px 10px 38px',
                       backgroundColor: 'rgba(0, 0, 0, 0.2)',
-                      border: '1px solid var(--border-color, #334155)',
+                      border: '1px solid var(--border-color, rgba(255, 255, 255, 0.1))',
                       borderRadius: '8px',
                       color: 'var(--text-main, #ffffff)',
                       fontSize: '14px',
@@ -545,18 +546,19 @@ export const AuthModal: React.FC<AuthModalProps> = ({ currentLang = 'en' }) => {
                 marginTop: '4px',
                 width: '100%',
                 padding: '12px',
-                backgroundColor: 'var(--brand-primary, #3b82f6)',
+                backgroundColor: 'var(--brand-primary, #e11d48)',
                 color: '#ffffff',
                 border: 'none',
                 borderRadius: '8px',
                 fontSize: '14px',
-                fontWeight: 600,
+                fontWeight: 700,
                 cursor: loading ? 'not-allowed' : 'pointer',
                 opacity: loading ? 0.7 : 1,
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 gap: '8px',
+                boxShadow: '0 4px 14px rgba(225, 29, 72, 0.35)',
               }}
             >
               {loading && <Loader2 size={16} className="animate-spin" />}
@@ -588,7 +590,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ currentLang = 'en' }) => {
                     style={{
                       background: 'none',
                       border: 'none',
-                      color: 'var(--brand-primary, #3b82f6)',
+                      color: 'var(--brand-primary, #e11d48)',
                       fontWeight: 600,
                       cursor: 'pointer',
                       padding: 0,
@@ -607,7 +609,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ currentLang = 'en' }) => {
                     style={{
                       background: 'none',
                       border: 'none',
-                      color: 'var(--brand-primary, #3b82f6)',
+                      color: 'var(--brand-primary, #e11d48)',
                       fontWeight: 600,
                       cursor: 'pointer',
                       padding: 0,
@@ -624,7 +626,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ currentLang = 'en' }) => {
                   style={{
                     background: 'none',
                     border: 'none',
-                    color: 'var(--brand-primary, #3b82f6)',
+                    color: 'var(--brand-primary, #e11d48)',
                     fontWeight: 600,
                     cursor: 'pointer',
                     padding: 0,

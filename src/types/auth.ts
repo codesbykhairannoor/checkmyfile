@@ -3,6 +3,7 @@
 
 export type SubscriptionPlan = 'free' | 'pro';
 export type SubscriptionStatus = 'active' | 'inactive' | 'trial' | 'past_due' | 'cancelled';
+export type BillingInterval = 'lifetime' | 'monthly';
 
 export interface UserProfile {
   uid: string;
@@ -11,6 +12,7 @@ export interface UserProfile {
   photoURL: string | null;
   plan: SubscriptionPlan;
   subscriptionStatus: SubscriptionStatus;
+  billingInterval?: BillingInterval | null;
   subscriptionId?: string | null;
   customerId?: string | null;
   suiteAccess?: string | null; // e.g. 'all_access'

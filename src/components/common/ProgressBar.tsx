@@ -1,6 +1,7 @@
 import React from 'react';
 import { getUiTranslations } from '../../i18n/translations';
-import { Download, RefreshCw, Loader2 } from 'lucide-react';
+import { authTranslations } from '../../i18n/authTranslations';
+import { Download, RefreshCw, Loader2, Crown, Lock } from 'lucide-react';
 
 interface ProgressBarProps {
   currentLang: string;
@@ -15,6 +16,8 @@ interface ProgressBarProps {
   originalFilename?: string;
   originalSize?: number;
   compressedSize?: number;
+  isPro?: boolean;
+  onOpenProModal?: () => void;
 }
 
 export const ProgressBar: React.FC<ProgressBarProps> = ({
@@ -30,8 +33,11 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
   originalFilename,
   originalSize,
   compressedSize,
+  isPro = false,
+  onOpenProModal,
 }) => {
   const t = getUiTranslations(currentLang);
+  const tAuth = authTranslations[currentLang] || authTranslations['en'] || {};
   const [filename, setFilename] = React.useState('HandleMyFile');
 
   React.useEffect(() => {
@@ -77,25 +83,26 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
     <div
       className="glass-panel"
       style={{
-        padding: isCompleted ? '12px 24px' : 28,
+        padding: isCompleted ? '16px 24px' : 28,
         margin: '28px 0',
         textAlign: isCompleted ? 'left' : 'center',
-        background: isCompleted ? 'rgba(16, 185, 129, 0.06)' : 'rgba(99, 102, 241, 0.05)',
-        border: isCompleted ? '1px solid rgba(16, 185, 129, 0.3)' : '1px solid rgba(99, 102, 241, 0.3)',
+        background: isCompleted ? 'rgba(16, 185, 129, 0.06)' : 'rgba(225, 29, 72, 0.05)',
+        border: isCompleted ? '1px solid rgba(16, 185, 129, 0.3)' : '1px solid rgba(225, 29, 72, 0.25)',
+        fontFamily: 'var(--font-main)',
         ...style,
       }}
     >
       {isProcessing && !isCompleted && (
         <div>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, marginBottom: 14 }}>
-            <Loader2 size={24} className="text-indigo-400 animate-spin" />
-            <h4 style={{ fontSize: '1.1rem', fontWeight: 700 }}>
+            <Loader2 size={24} style={{ color: 'var(--brand-primary, #e11d48)' }} className="animate-spin" />
+            <h4 style={{ fontSize: '1.1rem', fontWeight: 800, fontFamily: 'var(--font-display)' }}>
               {statusText || t.processingText}
             </h4>
           </div>
 
           <div className="progress-container">
-            <div className="progress-bar" style={{ width: `${Math.min(100, Math.max(5, progress))}%` }} />
+            <div className="progress-bar" style={{ width: `${Math.min(100, Math.max(5, progress))}%`, background: 'var(--brand-primary, #e11d48)' }} />
           </div>
 
           <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: 8 }}>
@@ -106,26 +113,96 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
 
       {isCompleted && (
         <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-          <input
-            type="text"
-            value={filename}
-            onChange={(e) => setFilename(e.target.value)}
-            placeholder="Masukkan nama file..."
-            style={{
-              width: '100%',
-              padding: '10px 14px',
-              borderRadius: 8,
-              border: '1px solid var(--border-color)',
-              background: 'var(--bg-input)',
-              color: 'var(--text-main)',
-              fontSize: '0.95rem',
-              outline: 'none',
-              boxShadow: 'inset 0 1px 3px rgba(0,0,0,0.1)'
-            }}
-          />
+          {/* File Name Header with PRO Indicator */}
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 6 }}>
+            <span style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--text-muted)' }}>
+              {tAuth.pro_download_filename_label || 'Download File Name:'}
+            </span>
+            {isPro ? (
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4, color: '#10b981', fontSize: '0.74rem', fontWeight: 800 }}>
+                <Crown size={12} color="#f59e0b" />
+                <span>{tAuth.pro_active_badge || 'PRO Active'}</span>
+              </span>
+            ) : (
+              <button
+                type="button"
+                onClick={onOpenProModal}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: 4,
+                  padding: '2px 8px',
+                  borderRadius: 6,
+                  background: 'rgba(245, 158, 11, 0.12)',
+                  color: '#f59e0b',
+                  border: '1px solid rgba(245, 158, 11, 0.3)',
+                  fontSize: '0.72rem',
+                  fontWeight: 800,
+                  cursor: 'pointer',
+                }}
+                title={tAuth.pro_custom_filename_desc || 'Upgrade to PRO to customize file name'}
+              >
+                <Crown size={12} />
+                <span>{tAuth.pro_custom_filename_badge || 'PRO: Custom File Name'}</span>
+              </button>
+            )}
+          </div>
+
+          {/* File Name Input Box */}
+          <div style={{ position: 'relative' }}>
+            <input
+              type="text"
+              value={filename}
+              onChange={(e) => {
+                if (isPro) {
+                  setFilename(e.target.value);
+                } else if (onOpenProModal) {
+                  onOpenProModal();
+                }
+              }}
+              onClick={() => {
+                if (!isPro && onOpenProModal) {
+                  onOpenProModal();
+                }
+              }}
+              readOnly={!isPro}
+              placeholder={tAuth.pro_custom_filename_title || 'Enter file name...'}
+              style={{
+                width: '100%',
+                padding: '10px 14px',
+                paddingRight: !isPro ? '36px' : '14px',
+                borderRadius: 8,
+                border: !isPro ? '1px dashed var(--border-color)' : '1px solid var(--border-color)',
+                background: 'var(--bg-input)',
+                color: 'var(--text-main)',
+                fontSize: '0.95rem',
+                outline: 'none',
+                cursor: !isPro ? 'pointer' : 'text',
+                boxShadow: 'inset 0 1px 3px rgba(0,0,0,0.1)',
+              }}
+            />
+            {!isPro && (
+              <div
+                onClick={onOpenProModal}
+                style={{
+                  position: 'absolute',
+                  right: 12,
+                  top: '50%',
+                  transform: 'translateY(-50%)',
+                  color: '#f59e0b',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                }}
+                title={tAuth.pro_custom_filename_title || 'PRO Feature'}
+              >
+                <Lock size={15} />
+              </div>
+            )}
+          </div>
 
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 4 }}>
-            <button onClick={handleDownloadClick} className="btn-primary" style={{ flex: '1 1 min-content', padding: '10px', fontSize: '0.9rem', justifyContent: 'center', whiteSpace: 'nowrap' }}>
+            <button onClick={handleDownloadClick} className="btn-primary" style={{ flex: '1 1 min-content', padding: '10px', fontSize: '0.9rem', justifyContent: 'center', whiteSpace: 'nowrap', background: 'var(--brand-primary, #e11d48)' }}>
               <Download size={16} />
               <span>{downloadLabel || t.downloadBtn}</span>
             </button>

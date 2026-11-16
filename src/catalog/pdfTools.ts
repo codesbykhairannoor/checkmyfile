@@ -42,19 +42,19 @@ export const pdfTools: ToolDefinition[] = [
       en: {
         title: 'Free Online PDF Merger - Combine PDF Files Locally | Zero Upload',
         h1: 'Merge PDF Files Instantly in Your Browser',
-        description: 'Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, 100% privacy guaranteed, zero limits.',
+        description: 'Combine multiple PDF files into a single document using pure client-side WebAssembly. No file uploads, 100% privacy guaranteed, fast and secure.',
         faqs: defaultFaqs('Merge PDF', 'en'),
       },
       id: {
         title: 'Gabung PDF Online Gratis - Satukan File PDF Tanpa Unggah Server',
         h1: 'Gabungkan Berkas PDF Instan di Dalam Peramban',
-        description: 'Satukan beberapa file PDF menjadi satu dokumen berurutan dengan teknologi WebAssembly lokal. Tanpa batasan kuota, 100% privat dan aman.',
+        description: 'Satukan beberapa file PDF menjadi satu dokumen berurutan dengan teknologi WebAssembly lokal. 100% privat, aman, dan tanpa unggahan server.',
         faqs: defaultFaqs('Gabung PDF', 'id'),
       },
       es: {
         title: 'Unir PDF Gratis Online - Combinar Archivos sin Subir al Servidor',
         h1: 'Combina Archivos PDF al Instante en tu Navegador',
-        description: 'Une varios archivos PDF en un solo documento usando WebAssembly en el cliente. Sin subidas, 100% privado y sin límites.',
+        description: 'Une varios archivos PDF en un solo documento usando WebAssembly en el cliente. Sin subidas, 100% privado y seguro.',
         faqs: defaultFaqs('Unir PDF', 'es'),
       },
     },
@@ -99,7 +99,7 @@ export const pdfTools: ToolDefinition[] = [
       en: {
         title: 'Combine Multiple PDF Files',
         h1: 'Combine Multiple PDF Files Online (Free & Client-Side)',
-        description: 'Merge and combine multiple PDF files into one single document. Instant local processing, 100% private, no limit.',
+        description: 'Merge and combine multiple PDF files into one single document. Instant local processing, 100% private in browser memory.',
         faqs: defaultFaqs('Combine Multiple PDF Files', 'en'),
       },
       id: {
@@ -283,7 +283,7 @@ export const pdfTools: ToolDefinition[] = [
       id: {
         title: 'Sisipkan Halaman PDF Online - Extract & Insert Page PDF',
         h1: 'Sisipkan Halaman PDF di Posisi Spesifik',
-        description: 'Sisipkan dokumen PDF tambahan ke halaman tertentu pada PDF utama Anda tanpa batasan.',
+        description: 'Sisipkan dokumen PDF tambahan ke halaman tertentu pada PDF utama Anda secara cepat dan privat.',
         faqs: defaultFaqs('Sisip Halaman PDF', 'id'),
       },
     },
@@ -1984,127 +1984,127 @@ export const pdfTools: ToolDefinition[] = [
           }),
           seo: {
             en: {
-            title: 'Add Page Numbers to PDF Free | No Limits',
+            title: 'Add Page Numbers to PDF Free',
             h1: 'Insert Page Numbers into PDF Documents',
             description: 'Easily paginate your PDF files. Add customizable page numbers to headers or footers instantly for free.',
             faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'en')
           },
             zh: {
-              title: 'Add Page Numbers to PDF Free | No Limits',
+              title: 'Add Page Numbers to PDF Free',
               h1: 'Insert Page Numbers into PDF Documents',
               description: 'Easily paginate your PDF files. Add customizable page numbers to headers or footers instantly for free.',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'zh')
             },
             ja: {
-              title: 'PDF にページ番号を無料で追加 | 制限なし',
+              title: 'PDF にページ番号を無料で追加',
               h1: 'PDF ドキュメントにページ番号を挿入する',
               description: 'PDF ファイルのページネーションを簡単に行えます。 カスタマイズ可能なページ番号をヘッダーまたはフッターに無料ですぐに追加できます。',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'ja')
             },
             fr: {
-              title: 'Ajouter des numéros de page au PDF gratuitement | Aucune limite',
+              title: 'Ajouter des numéros de page au PDF gratuitement',
               h1: 'Insérer des numéros de page dans des documents PDF',
               description: 'Paginez facilement vos fichiers PDF. Ajoutez instantanément et gratuitement des numéros de page personnalisables aux en-têtes ou aux pieds de page.',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'fr')
             },
             id: {
-              title: 'Tambahkan Nomor Halaman ke PDF Gratis | Tanpa Batas',
+              title: 'Tambahkan Nomor Halaman ke PDF Gratis',
               h1: 'Masukkan Nomor Halaman ke dalam Dokumen PDF',
               description: 'Buat halaman file PDF Anda dengan mudah. Tambahkan nomor halaman yang dapat disesuaikan ke header atau footer secara instan dan gratis.',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'id')
             },
             pt: {
-              title: 'Adicione números de página ao PDF gratuitamente | Sem Limites',
+              title: 'Adicione números de página ao PDF gratuitamente',
               h1: 'Insira números de página em documentos PDF',
               description: 'Pagine facilmente seus arquivos PDF. Adicione números de página personalizáveis ​​a cabeçalhos ou rodapés instantaneamente e gratuitamente.',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'pt')
             },
             de: {
-              title: 'Seitenzahlen zu PDF kostenlos hinzufügen | Keine Grenzen',
+              title: 'Seitenzahlen zu PDF kostenlos hinzufügen',
               h1: 'Fügen Sie Seitenzahlen in PDF-Dokumente ein',
               description: 'Paginieren Sie Ihre PDF-Dateien ganz einfach. Fügen Sie sofort und kostenlos anpassbare Seitenzahlen zu Kopf- oder Fußzeilen hinzu.',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'de')
             },
             ar: {
-              title: 'إضافة أرقام الصفحات إلى PDF مجانًا | لا حدود',
+              title: 'إضافة أرقام الصفحات إلى PDF مجانًا',
               h1: 'إدراج أرقام الصفحات في مستندات PDF',
               description: 'قم بترقيم ملفات PDF الخاصة بك بسهولة. أضف أرقام صفحات قابلة للتخصيص إلى الرؤوس أو التذييلات على الفور مجانًا.',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'ar')
             },
             es: {
-              title: 'Agregue números de página a PDF gratis | Sin límites',
+              title: 'Agregue números de página a PDF gratis',
               h1: 'Insertar números de página en documentos PDF',
               description: 'Pagina fácilmente tus archivos PDF. Agregue números de página personalizables a encabezados o pies de página al instante y de forma gratuita.',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'es')
             },
             ru: {
-              title: 'Добавить номера страниц в PDF бесплатно | Без ограничений',
+              title: 'Добавить номера страниц в PDF бесплатно',
               h1: 'Вставка номеров страниц в PDF-документы',
               description: 'Легко разбивайте PDF-файлы на страницы. Добавляйте настраиваемые номера страниц в верхние или нижние колонтитулы мгновенно и бесплатно.',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'ru')
             },
             it: {
-              title: 'Aggiungi numeri di pagina al PDF gratuitamente | Nessun limite',
+              title: 'Aggiungi numeri di pagina al PDF gratuitamente',
               h1: 'Inserisci i numeri di pagina nei documenti PDF',
               description: 'Impagina facilmente i tuoi file PDF. Aggiungi istantaneamente e gratuitamente numeri di pagina personalizzabili alle intestazioni o ai piè di pagina.',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'it')
             },
             ko: {
-              title: '무료로 PDF에 페이지 번호 추가 | 제한 없음',
+              title: '무료로 PDF에 페이지 번호 추가',
               h1: 'PDF 문서에 페이지 번호 삽입',
               description: 'PDF 파일의 페이지를 쉽게 매깁니다. 머리글이나 바닥글에 사용자 정의 가능한 페이지 번호를 무료로 즉시 추가하세요.',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'ko')
             },
             nl: {
-              title: 'Paginanummers toevoegen aan PDF Gratis | Geen grenzen',
+              title: 'Paginanummers toevoegen aan PDF Gratis',
               h1: 'Paginanummers invoegen in PDF-documenten',
               description: 'Pagineer eenvoudig uw PDF-bestanden. Voeg direct gratis aanpasbare paginanummers toe aan kop- en voetteksten.',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'nl')
             },
             pl: {
-              title: 'Dodaj numery stron do pliku PDF za darmo | Bez ograniczeń',
+              title: 'Dodaj numery stron do pliku PDF za darmo',
               h1: 'Wstaw numery stron do dokumentów PDF',
               description: 'Z łatwością podziel na strony swoje pliki PDF. Natychmiast i bezpłatnie dodawaj konfigurowalne numery stron do nagłówków i stopek.',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'pl')
             },
             tr: {
-              title: 'PDF\'ye Ücretsiz Sayfa Numaraları Ekleme | Sınır Yok',
+              title: 'PDF\'ye Ücretsiz Sayfa Numaraları Ekleme',
               h1: 'PDF Belgelerine Sayfa Numaraları Ekleme',
               description: 'PDF dosyalarınızı kolayca sayfalandırın. Üstbilgilere veya altbilgilere anında ücretsiz olarak özelleştirilebilir sayfa numaraları ekleyin.',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'tr')
             },
             hi: {
-              title: 'पीडीएफ में पेज नंबर निःशुल्क जोड़ें | असीम',
+              title: 'पीडीएफ में पेज नंबर निःशुल्क जोड़ें',
               h1: 'पीडीएफ दस्तावेजों में पेज नंबर डालें',
               description: 'अपनी पीडीएफ फाइलों को आसानी से पेजिनेट करें। शीर्षलेखों या पादलेखों में तुरंत निःशुल्क अनुकूलन योग्य पृष्ठ संख्याएँ जोड़ें।',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'hi')
             },
             th: {
-              title: 'เพิ่มหมายเลขหน้าเป็น PDF ฟรี | ไม่มีขีดจำกัด',
+              title: 'เพิ่มหมายเลขหน้าเป็น PDF ฟรี',
               h1: 'แทรกหมายเลขหน้าลงในเอกสาร PDF',
               description: 'แบ่งหน้าไฟล์ PDF ของคุณได้อย่างง่ายดาย เพิ่มหมายเลขหน้าที่ปรับแต่งได้ที่ส่วนหัวหรือส่วนท้ายทันทีฟรี',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'th')
             },
             vi: {
-              title: 'Thêm số trang vào PDF miễn phí | Không giới hạn',
+              title: 'Thêm số trang vào PDF miễn phí',
               h1: 'Chèn số trang vào tài liệu PDF',
               description: 'Dễ dàng phân trang các tập tin PDF của bạn. Thêm số trang có thể tùy chỉnh vào đầu trang hoặc chân trang ngay lập tức miễn phí.',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'vi')
             },
             sv: {
-              title: 'Lägg till sidnummer till PDF Gratis | Inga gränser',
+              title: 'Lägg till sidnummer till PDF Gratis',
               h1: 'Infoga sidnummer i PDF-dokument',
               description: 'Sida in dina PDF-filer enkelt. Lägg till anpassningsbara sidnummer i sidhuvuden eller sidfötter direkt gratis.',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'sv')
             },
             cs: {
-              title: 'Přidat čísla stránek do PDF zdarma | Žádné limity',
+              title: 'Přidat čísla stránek do PDF zdarma',
               h1: 'Vkládání čísel stránek do dokumentů PDF',
               description: 'Snadno stránkujte své soubory PDF. Přidejte přizpůsobitelná čísla stránek do záhlaví nebo zápatí okamžitě a zdarma.',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'cs')
             },
             el: {
-              title: 'Προσθήκη αριθμών σελίδων σε PDF Δωρεάν | Χωρίς Όρια',
+              title: 'Προσθήκη αριθμών σελίδων σε PDF Δωρεάν',
               h1: 'Εισαγάγετε αριθμούς σελίδων σε έγγραφα PDF',
               description: 'Πραγματοποιήστε σελιδοποίηση των αρχείων PDF σας εύκολα. Προσθέστε προσαρμόσιμους αριθμούς σελίδων σε κεφαλίδες ή υποσέλιδα άμεσα δωρεάν.',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'el')
@@ -2116,49 +2116,49 @@ export const pdfTools: ToolDefinition[] = [
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'sk')
             },
             hu: {
-              title: 'Oldalszámok hozzáadása PDF-hez Ingyenes | Nincsenek határok',
+              title: 'Oldalszámok hozzáadása PDF-hez Ingyenes',
               h1: 'Oldalszámok beszúrása PDF dokumentumokba',
               description: 'Könnyen lapozhatja PDF fájljait. Adjon testreszabható oldalszámokat a fejlécekhez vagy láblécekhez azonnal, ingyenesen.',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'hu')
             },
             da: {
-              title: 'Tilføj sidetal til PDF Gratis | Ingen grænser',
+              title: 'Tilføj sidetal til PDF Gratis',
               h1: 'Indsæt sidetal i PDF-dokumenter',
               description: 'Paginér nemt dine PDF-filer. Tilføj sidetal, der kan tilpasses, til sidehoveder eller sidefødder med det samme gratis.',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'da')
             },
             ro: {
-              title: 'Adăugați numere de pagină în PDF gratuit | Fără Limite',
+              title: 'Adăugați numere de pagină în PDF gratuit',
               h1: 'Inserați numere de pagină în documentele PDF',
               description: 'Paginați cu ușurință fișierele PDF. Adăugați gratuit numere de pagină personalizabile la anteturi sau subsoluri.',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'ro')
             },
             fi: {
-              title: 'Lisää sivunumeroita PDF-tiedostoon ilmaiseksi | Ei rajoja',
+              title: 'Lisää sivunumeroita PDF-tiedostoon ilmaiseksi',
               h1: 'Lisää sivunumerot PDF-dokumentteihin',
               description: 'Sivuttele PDF-tiedostosi helposti. Lisää mukautettavat sivunumerot ylä- tai alatunnisteisiin välittömästi ilmaiseksi.',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'fi')
             },
             no: {
-              title: 'Legg til sidetall til PDF Gratis | Ingen grenser',
+              title: 'Legg til sidetall til PDF Gratis',
               h1: 'Sett inn sidetall i PDF-dokumenter',
               description: 'Paginerer enkelt PDF-filene dine. Legg til sidetall som kan tilpasses til topp- eller bunntekster umiddelbart gratis.',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'no')
             },
             uk: {
-              title: 'Безкоштовно додайте номери сторінок до PDF | Без обмежень',
+              title: 'Безкоштовно додайте номери сторінок до PDF',
               h1: 'Вставте номери сторінок у документи PDF',
               description: 'Легко розбивайте PDF-файли на сторінки. Безкоштовно миттєво додайте настроювані номери сторінок до колонтитулів.',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'uk')
             },
             he: {
-              title: 'הוסף מספרי עמודים ל-PDF חינם | אין גבולות',
+              title: 'הוסף מספרי עמודים ל-PDF חינם',
               h1: 'הכנס מספרי עמודים למסמכי PDF',
               description: 'עימוד בקלות את קובצי ה-PDF שלך. הוסף מספרי עמודים הניתנים להתאמה אישית לכותרות עליונות או תחתונות באופן מיידי בחינם.',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'he')
             },
             ms: {
-              title: 'Tambah Nombor Halaman ke PDF Percuma | Tiada Had',
+              title: 'Tambah Nombor Halaman ke PDF Percuma',
               h1: 'Masukkan Nombor Halaman ke dalam Dokumen PDF',
               description: 'Buka penomboran fail PDF anda dengan mudah. Tambahkan nombor halaman yang boleh disesuaikan pada pengepala atau pengaki serta-merta secara percuma.',
               faqs: defaultFaqs('add-page-numbers-to-pdf-free', 'ms')

@@ -33,7 +33,7 @@ export const AboutUsPage: React.FC<Props> = ({ currentLang }) => {
               {t.pageAboutHero || 'Democratizing Document Tools'}
             </h1>
             <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', lineHeight: 1.6, maxWidth: 800, margin: '0 auto' }}>
-              {t.pageAboutSub || 'We believe premium PDF and document utilities should be completely free, private, and accessible to everyone. HandleMyFile is powered entirely by client-side WebAssembly.'}
+              {t.pageAboutSub || 'We believe private document tools should be accessible to everyone. HandleMyFile provides free client-side processing alongside an optional Lifetime Pass.'}
             </p>
           </div>
         </section>
@@ -111,7 +111,7 @@ export const AboutUsPage: React.FC<Props> = ({ currentLang }) => {
             <ShieldCheck size={64} style={{ margin: '0 auto 32px', opacity: 0.9 }} />
             <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, marginBottom: 32, lineHeight: 1.1 }}>{t.pageAboutSec3Title || 'Our Guarantee'}</h2>
             <p style={{ fontSize: '1.3rem', opacity: 0.9, lineHeight: 1.7, fontWeight: 500 }}>
-              {t.pageAboutSec3Desc || 'HandleMyFile is built to remain completely free. Our mission is to democratize document utilities for everyone, everywhere.'}
+              {t.pageAboutSec3Desc || 'HandleMyFile provides a permanent free tier with zero server uploads, and an optional Lifetime Pass for unlimited batch needs.'}
             </p>
           </div>
         </section>

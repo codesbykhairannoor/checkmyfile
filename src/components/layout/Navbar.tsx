@@ -33,7 +33,7 @@ const MI: React.FC<{
   <div
     onClick={onClick}
     className="mega-menu-item"
-    style={highlight ? { background: 'rgba(59,130,246,0.04)', borderColor: 'rgba(59,130,246,0.15)' } : {}}
+    style={highlight ? { background: 'rgba(225,29,72,0.06)', borderColor: 'rgba(225,29,72,0.2)' } : {}}
   >
     <Icon size={15} style={{ flexShrink: 0, color: highlight ? 'var(--brand-primary)' : undefined }} />
     <span className="item-title" style={highlight ? { color: 'var(--brand-primary)' } : {}}>{label}</span>
@@ -409,7 +409,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                       }}
                       style={{
                         padding: '8px 10px',
-                        background: 'rgba(59,130,246,0.1)',
+                        background: 'rgba(225, 29, 72, 0.1)',
                         color: 'var(--brand-primary)',
                         borderRadius: 8,
                         fontSize: '0.8rem',

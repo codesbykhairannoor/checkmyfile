@@ -99,7 +99,7 @@ export const UseCasesPage: React.FC<Props> = ({ currentLang }) => {
                 <h2 style={{ fontSize: '2rem', fontWeight: 900, color: 'var(--text-main)' }}>{t.pageUseCasesSec4Title || 'Students & Education'}</h2>
               </div>
               <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>
-                {t.pageUseCasesSec4Desc || 'Students shouldn\'t have to pay $20/month just to merge their group project assignments or compress a presentation to fit the university portal\'s 5MB upload limit. HandleMyFile provides unlimited access to premium tools for free, with zero file size limits.'}
+                {t.pageUseCasesSec4Desc || 'Students shouldn\'t have to pay $20/month just to merge their group project assignments or compress a presentation to fit the university portal\'s 5MB upload limit. HandleMyFile provides free, private document tools with zero server uploads, making it easy to finish schoolwork safely.'}
               </p>
             </div>
             <div style={{ flex: '1 1 400px', padding: 40, background: 'var(--bg-card)', borderRadius: 24, border: '1px solid var(--border-color)', boxShadow: '0 20px 40px rgba(0,0,0,0.05)' }}>

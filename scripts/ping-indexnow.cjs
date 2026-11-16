@@ -128,6 +128,10 @@ async function run() {
   await pingSitemapUrl(`https://www.bing.com/ping?sitemap=https://${HOST}/sitemap-index.xml`);
 
   console.log(`\n✨ All search engine discovery pings completed!`);
+  process.exit(0);
 }
 
-run();
+run().catch((err) => {
+  console.error(err);
+  process.exit(1);
+});

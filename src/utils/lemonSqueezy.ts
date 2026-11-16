@@ -1,15 +1,24 @@
 // src/utils/lemonSqueezy.ts
 // Helper untuk mengarahkan pengguna ke Lemon Squeezy Checkout dengan metadata user
 
+export type PlanType = 'lifetime' | 'monthly';
+
 export interface CheckoutUser {
   uid: string;
   email?: string | null;
   displayName?: string | null;
 }
 
-export const getLemonSqueezyCheckoutUrl = (user?: CheckoutUser | null): string => {
-  const defaultBuyUrl = 'https://thismyown.lemonsqueezy.com/checkout/buy/bd84d992-e4ed-4d88-a5ff-f1ab944f5815';
-  const buyUrl = import.meta.env.VITE_LEMONSQUEEZY_LIFETIME_BUY_URL || defaultBuyUrl;
+export const getLemonSqueezyCheckoutUrl = (
+  user?: CheckoutUser | null,
+  plan: PlanType = 'lifetime'
+): string => {
+  const defaultLifetimeBuyUrl = 'https://thismyown.lemonsqueezy.com/checkout/buy/bd84d992-e4ed-4d88-a5ff-f1ab944f5815';
+  const defaultMonthlyBuyUrl = 'https://thismyown.lemonsqueezy.com/checkout/buy/monthly';
+  
+  const buyUrl = plan === 'monthly'
+    ? (import.meta.env.VITE_LEMONSQUEEZY_MONTHLY_BUY_URL || defaultMonthlyBuyUrl)
+    : (import.meta.env.VITE_LEMONSQUEEZY_LIFETIME_BUY_URL || defaultLifetimeBuyUrl);
 
   try {
     const url = new URL(buyUrl);
@@ -22,6 +31,7 @@ export const getLemonSqueezyCheckoutUrl = (user?: CheckoutUser | null): string =
     if (user?.uid) {
       url.searchParams.set('checkout[custom][user_id]', user.uid);
     }
+    url.searchParams.set('checkout[custom][plan_type]', plan);
     return url.toString();
   } catch (err) {
     console.error('Error generating checkout URL:', err);
@@ -29,8 +39,11 @@ export const getLemonSqueezyCheckoutUrl = (user?: CheckoutUser | null): string =
   }
 };
 
-export const redirectToLemonSqueezy = (user?: CheckoutUser | null): void => {
-  const targetUrl = getLemonSqueezyCheckoutUrl(user);
+export const redirectToLemonSqueezy = (
+  user?: CheckoutUser | null,
+  plan: PlanType = 'lifetime'
+): void => {
+  const targetUrl = getLemonSqueezyCheckoutUrl(user, plan);
   if (typeof window !== 'undefined') {
     window.location.href = targetUrl;
   }

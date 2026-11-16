@@ -151,17 +151,17 @@ export const MergeWorkspace: React.FC<MergeWorkspaceProps> = ({ files, setFiles,
             alignItems: 'center',
             justifyContent: 'center',
             gap: 12,
-            background: 'rgba(99, 102, 241, 0.05)',
-            border: '2px dashed rgba(99, 102, 241, 0.3)',
+            background: 'rgba(225, 29, 72, 0.05)',
+            border: '2px dashed rgba(225, 29, 72, 0.3)',
             borderRadius: 12,
             cursor: 'pointer',
-            color: '#6366f1',
+            color: 'var(--brand-primary, #e11d48)',
             transition: 'all 0.2s'
           }}
-          onMouseOver={(e) => e.currentTarget.style.background = 'rgba(99, 102, 241, 0.1)'}
-          onMouseOut={(e) => e.currentTarget.style.background = 'rgba(99, 102, 241, 0.05)'}
+          onMouseOver={(e) => e.currentTarget.style.background = 'rgba(225, 29, 72, 0.1)'}
+          onMouseOut={(e) => e.currentTarget.style.background = 'rgba(225, 29, 72, 0.05)'}
         >
-          <div style={{ width: 48, height: 48, borderRadius: '50%', background: '#6366f1', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <div style={{ width: 48, height: 48, borderRadius: '50%', background: 'var(--brand-primary, #e11d48)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <Plus size={24} />
           </div>
           <span style={{ fontWeight: 700, fontSize: '0.95rem' }}>{tUi["add_more"] || tUi["Add More"] || "+ Add More"}</span>
