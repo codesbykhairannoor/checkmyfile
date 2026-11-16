@@ -257,20 +257,54 @@ export const Navbar: React.FC<NavbarProps> = ({
         {/* Right: Theme + Lang + Mobile Nav */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexShrink: 0, justifyContent: 'flex-end' }}>
           <div className="desktop-only" style={{ display: 'flex', alignItems: 'center', gap: 12, flexShrink: 0 }}>
-          <button
-            onClick={onToggleTheme}
-            style={{ width: 36, height: 36, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: isLightMode ? '#fef3c7' : '#1e1b4b', color: isLightMode ? '#d97706' : '#a855f7', border: `1.5px solid ${isLightMode ? '#f59e0b' : '#6366f1'}`, cursor: 'pointer', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', transition: 'all 0.2s', flexShrink: 0 }}
-            title={isLightMode ? 'Dark Mode' : 'Light Mode'}
-          >
-            {isLightMode ? <Moon size={16} /> : <Sun size={16} />}
-          </button>
-          <LocaleSwitcher
-            currentLang={currentLang}
-            onSelectLang={onSelectLang}
-            isOpen={isDesktopLangOpen}
-            onClose={() => setIsDesktopLangOpen(false)}
-            onOpen={() => setIsDesktopLangOpen(true)}
-          />
+            {/* Desktop Pricing Link */}
+            <a
+              href={currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`}
+              onClick={(e) => {
+                e.preventDefault();
+                window.history.pushState({}, '', currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`);
+                window.dispatchEvent(new PopStateEvent('popstate'));
+              }}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 6,
+                padding: '6px 12px',
+                borderRadius: 8,
+                fontSize: '0.88rem',
+                fontWeight: 700,
+                color: 'var(--text-main)',
+                textDecoration: 'none',
+                cursor: 'pointer',
+                transition: 'all 0.15s ease',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = 'var(--brand-primary)';
+                e.currentTarget.style.background = 'rgba(225, 29, 72, 0.06)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = 'var(--text-main)';
+                e.currentTarget.style.background = 'transparent';
+              }}
+            >
+              <Crown size={15} color="#f59e0b" style={{ flexShrink: 0 }} />
+              <span>{t.footerPricing || 'Pricing'}</span>
+            </a>
+
+            <button
+              onClick={onToggleTheme}
+              style={{ width: 36, height: 36, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: isLightMode ? '#fef3c7' : '#1e1b4b', color: isLightMode ? '#d97706' : '#a855f7', border: `1.5px solid ${isLightMode ? '#f59e0b' : '#6366f1'}`, cursor: 'pointer', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', transition: 'all 0.2s', flexShrink: 0 }}
+              title={isLightMode ? 'Dark Mode' : 'Light Mode'}
+            >
+              {isLightMode ? <Moon size={16} /> : <Sun size={16} />}
+            </button>
+            <LocaleSwitcher
+              currentLang={currentLang}
+              onSelectLang={onSelectLang}
+              isOpen={isDesktopLangOpen}
+              onClose={() => setIsDesktopLangOpen(false)}
+              onOpen={() => setIsDesktopLangOpen(true)}
+            />
 
           {/* Desktop Auth Button / User Dropdown */}
           {!user ? (
@@ -686,6 +720,39 @@ export const Navbar: React.FC<NavbarProps> = ({
               </div>
             </div>
           )}
+
+          {/* Mobile Pricing / PRO Link Banner */}
+          <a
+            href={currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`}
+            onClick={(e) => {
+              e.preventDefault();
+              setIsMobileMenuOpen(false);
+              window.history.pushState({}, '', currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`);
+              window.dispatchEvent(new PopStateEvent('popstate'));
+            }}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              padding: '11px 14px',
+              borderRadius: 10,
+              background: 'rgba(245, 158, 11, 0.1)',
+              border: '1px solid rgba(245, 158, 11, 0.35)',
+              color: 'var(--text-main)',
+              textDecoration: 'none',
+              marginBottom: 14,
+              fontSize: '0.88rem',
+              fontWeight: 700,
+            }}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <Crown size={16} color="#f59e0b" />
+              <span>{t.footerPricing || 'Pricing'} &amp; PRO Suite</span>
+            </div>
+            <span style={{ fontSize: '0.78rem', color: '#f59e0b', fontWeight: 800 }}>
+              $4.99 / $39 &rarr;
+            </span>
+          </a>
 
           {/* Quick buttons */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 6, marginBottom: 16 }}>
