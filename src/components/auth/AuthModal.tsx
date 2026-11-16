@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { X, Loader2, AlertCircle, CheckCircle2, ShieldCheck, Mail, Lock, ArrowLeft } from 'lucide-react';
+import { X, Loader2, AlertCircle, CheckCircle2, Mail, Lock, ArrowLeft } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import { isFirebaseConfigured } from '../../config/firebase';
 import { authTranslations } from '../../i18n/authTranslations';
@@ -302,28 +302,6 @@ export const AuthModal: React.FC<AuthModalProps> = ({ currentLang = 'en' }) => {
 
         {/* Content Body */}
         <div style={{ padding: '24px' }}>
-          {/* Ecosystem Note */}
-          <div
-            style={{
-              padding: '10px 14px',
-              borderRadius: '8px',
-              backgroundColor: 'rgba(225, 29, 72, 0.08)',
-              border: '1px solid rgba(225, 29, 72, 0.25)',
-              marginBottom: '20px',
-              display: 'flex',
-              alignItems: 'flex-start',
-              gap: '10px',
-              fontSize: '12px',
-              lineHeight: 1.5,
-              color: 'var(--text-muted, #94a3b8)',
-            }}
-          >
-            <ShieldCheck size={16} style={{ color: 'var(--brand-primary, #e11d48)', flexShrink: 0, marginTop: '2px' }} />
-            <span>
-              {t.auth_suite_notice || 'All-in-One Privacy Suite: One account unlocks PRO across HandleMyFile & HelpMyIMG.'}
-            </span>
-          </div>
-
           {/* Alert Messages */}
           {errorMsg && (
             <div

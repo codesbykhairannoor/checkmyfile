@@ -24,6 +24,8 @@ dist-ssr
 *.sw?
 
 # Service Account Keys & Secrets (CRITICAL SECURITY - NEVER COMMIT)
+*firebase-adminsdk*.json
+thismyown-*.json
 handlemyfile-*.json
 *gserviceaccount*.json
 *service-account*.json
