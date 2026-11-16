@@ -13,7 +13,7 @@ interface Props {
 export const PricingPage: React.FC<Props> = ({ currentLang }) => {
   const t = getUiTranslations(currentLang);
   const tAuth = authTranslations[currentLang] || authTranslations['en'] || {};
-  const { user, isPro, openAuthModal } = useAuth();
+  const { user, profile, isPro, openAuthModal } = useAuth();
   const [copied, setCopied] = useState(false);
   const [proPlanInterval, setProPlanInterval] = useState<PlanType>('lifetime');
 
@@ -22,7 +22,7 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
       openAuthModal();
       return;
     }
-    if (isPro) {
+    if (isPro && profile?.billingInterval !== 'monthly') {
       return;
     }
     redirectToLemonSqueezy(user, plan);
@@ -220,28 +220,51 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
                 </ul>
                 <div style={{ marginTop: 24 }}>
                   {isPro ? (
-                    <button
-                      type="button"
-                      disabled
-                      style={{
-                        width: '100%',
-                        padding: '12px 16px',
-                        borderRadius: 12,
-                        background: '#22c55e',
-                        border: 'none',
-                        color: '#ffffff',
-                        fontWeight: 700,
-                        fontSize: '0.88rem',
-                        cursor: 'default',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        gap: 8,
-                      }}
-                    >
-                      <CheckCircle2 size={18} />
-                      {tAuth.pro_active_btn || 'PRO Membership Active'}
-                    </button>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                      <button
+                        type="button"
+                        disabled
+                        style={{
+                          width: '100%',
+                          padding: '12px 16px',
+                          borderRadius: 12,
+                          background: '#22c55e',
+                          border: 'none',
+                          color: '#ffffff',
+                          fontWeight: 700,
+                          fontSize: '0.88rem',
+                          cursor: 'default',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          gap: 8,
+                        }}
+                      >
+                        <CheckCircle2 size={18} />
+                        {profile?.billingInterval === 'monthly'
+                          ? `${tAuth.pro_active_btn || 'PRO Membership Active'} (${tAuth.pro_plan_monthly_name || 'Monthly'})`
+                          : `${tAuth.pro_active_btn || 'PRO Membership Active'} (${tAuth.pro_plan_lifetime_name || 'Lifetime Pass'})`}
+                      </button>
+                      {profile?.billingInterval === 'monthly' && proPlanInterval === 'lifetime' && (
+                        <button
+                          type="button"
+                          onClick={() => handleBuyPlan('lifetime')}
+                          style={{
+                            width: '100%',
+                            padding: '10px 14px',
+                            borderRadius: 10,
+                            background: 'transparent',
+                            border: '1.5px solid var(--brand-primary)',
+                            color: 'var(--brand-primary)',
+                            fontWeight: 700,
+                            fontSize: '0.82rem',
+                            cursor: 'pointer',
+                          }}
+                        >
+                          ⚡ Upgrade to Lifetime Pass ({currentLang === 'id' ? 'Rp 249.000' : '$39'})
+                        </button>
+                      )}
+                    </div>
                   ) : (
                     <button
                       type="button"

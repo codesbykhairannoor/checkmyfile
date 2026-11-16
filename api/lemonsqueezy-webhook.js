@@ -142,16 +142,22 @@ export default async function handler(req, res) {
     const customData = payload.meta?.custom_data || {};
     const attributes = payload.data?.attributes || {};
     const userId = customData.user_id;
+    const planType = customData.plan_type || (eventName?.startsWith('subscription_') ? 'monthly' : 'lifetime');
     const customerEmail = attributes.user_email || attributes.customer_email;
     const orderStatus = attributes.status;
 
-    console.log(`[LemonSqueezy Webhook] Event: ${eventName}, User: ${userId || customerEmail}, Status: ${orderStatus}`);
+    console.log(`[LemonSqueezy Webhook] Event: ${eventName}, User: ${userId || customerEmail}, Plan: ${planType}, Status: ${orderStatus}`);
 
     // Check if event signifies a successful payment or subscription activation
     const isSuccess =
       eventName === 'order_created' ||
       eventName === 'subscription_created' ||
       eventName === 'subscription_payment_success';
+
+    const isCancellation =
+      eventName === 'subscription_cancelled' ||
+      eventName === 'subscription_expired' ||
+      eventName === 'subscription_payment_failed';
 
     if (isSuccess && (orderStatus === 'paid' || orderStatus === 'active' || !orderStatus)) {
       const serviceAccount = getServiceAccount();
@@ -160,8 +166,48 @@ export default async function handler(req, res) {
         const accessToken = await getGoogleAccessToken(serviceAccount);
         const projectId = serviceAccount.project_id || 'thismyown';
 
-        // Update Firestore users/{userId} document
-        const updateUrl = `https://firestore.googleapis.com/v1/projects/${projectId}/databases/(default)/documents/users/${userId}?updateMask.fieldPaths=plan&updateMask.fieldPaths=subscriptionStatus&updateMask.fieldPaths=suiteAccess`;
+        const isMonthly = planType === 'monthly' || (eventName && eventName.startsWith('subscription_'));
+        const renewsAt = attributes.renews_at || attributes.ends_at;
+        const expiresAtMs = isMonthly
+          ? (renewsAt ? new Date(renewsAt).getTime() : Date.now() + 32 * 24 * 60 * 60 * 1000)
+          : null;
+
+        // Build Firestore update payload
+        const fields = {
+          plan: { stringValue: 'pro' },
+          subscriptionStatus: { stringValue: 'active' },
+          suiteAccess: { stringValue: 'all_access' },
+          billingInterval: { stringValue: isMonthly ? 'monthly' : 'lifetime' },
+        };
+
+        let updateMask = 'updateMask.fieldPaths=plan&updateMask.fieldPaths=subscriptionStatus&updateMask.fieldPaths=suiteAccess&updateMask.fieldPaths=billingInterval';
+
+        if (expiresAtMs) {
+          fields.expiresAt = { integerValue: String(expiresAtMs) };
+          updateMask += '&updateMask.fieldPaths=expiresAt';
+        }
+
+        const updateUrl = `https://firestore.googleapis.com/v1/projects/${projectId}/databases/(default)/documents/users/${userId}?${updateMask}`;
+
+        await fetch(updateUrl, {
+          method: 'PATCH',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${accessToken}`,
+          },
+          body: JSON.stringify({ fields }),
+        });
+
+        console.log(`[LemonSqueezy Webhook] Successfully activated ${isMonthly ? 'Monthly' : 'Lifetime'} PRO for user ${userId}`);
+      }
+    } else if (isCancellation) {
+      const serviceAccount = getServiceAccount();
+
+      if (serviceAccount && userId) {
+        const accessToken = await getGoogleAccessToken(serviceAccount);
+        const projectId = serviceAccount.project_id || 'thismyown';
+
+        const updateUrl = `https://firestore.googleapis.com/v1/projects/${projectId}/databases/(default)/documents/users/${userId}?updateMask.fieldPaths=plan&updateMask.fieldPaths=subscriptionStatus`;
 
         await fetch(updateUrl, {
           method: 'PATCH',
@@ -171,14 +217,13 @@ export default async function handler(req, res) {
           },
           body: JSON.stringify({
             fields: {
-              plan: { stringValue: 'pro' },
-              subscriptionStatus: { stringValue: 'active' },
-              suiteAccess: { stringValue: 'all_access' },
+              plan: { stringValue: 'free' },
+              subscriptionStatus: { stringValue: 'inactive' },
             },
           }),
         });
 
-        console.log(`[LemonSqueezy Webhook] Successfully activated PRO status for user ${userId}`);
+        console.log(`[LemonSqueezy Webhook] Downgraded cancelled/expired user ${userId} to free`);
       }
     }
 

@@ -54,7 +54,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMobileAllOpen, setIsMobileAllOpen] = useState(false);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
-  const { user, isPro, openAuthModal, signOut } = useAuth();
+  const { user, profile, isPro, openAuthModal, signOut } = useAuth();
   const navRef = useRef<HTMLDivElement>(null);
   const megaTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -64,14 +64,14 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   // Nav category labels using partial translations with English fallbacks
   const NAV = {
-    allPdfTools:  t.navAllPdfTools ?? en.navAllPdfTools ?? 'ALL PDF TOOLS',
-    organize:     t.navOrganizePdf ?? en.navOrganizePdf ?? '📁 ORGANIZE PDF',
-    optimize:     t.navOptimizeEnhance ?? en.navOptimizeEnhance ?? '⚡ OPTIMIZE & ENHANCE',
-    spreadsheet:  t.navSpreadsheetTools ?? en.navSpreadsheetTools ?? '📊 SPREADSHEET TOOLS',
-    security:     t.navSecuritySign ?? en.navSecuritySign ?? '🔐 SECURITY & SIGN',
-    fromPdf:      t.navConvertFromPdf ?? en.navConvertFromPdf ?? '📑 CONVERT FROM PDF',
-    toPdf:        t.navConvertToPdf ?? en.navConvertToPdf ?? '🔄 CONVERT TO PDF',
-    moreTools:    t.navMoreTools ?? en.navMoreTools ?? '🔧 MORE PDF TOOLS',
+    allPdfTools: t.navAllPdfTools ?? en.navAllPdfTools ?? 'ALL PDF TOOLS',
+    organize: t.navOrganizePdf ?? en.navOrganizePdf ?? '📁 ORGANIZE PDF',
+    optimize: t.navOptimizeEnhance ?? en.navOptimizeEnhance ?? '⚡ OPTIMIZE & ENHANCE',
+    spreadsheet: t.navSpreadsheetTools ?? en.navSpreadsheetTools ?? '📊 SPREADSHEET TOOLS',
+    security: t.navSecuritySign ?? en.navSecuritySign ?? '🔐 SECURITY & SIGN',
+    fromPdf: t.navConvertFromPdf ?? en.navConvertFromPdf ?? '📑 CONVERT FROM PDF',
+    toPdf: t.navConvertToPdf ?? en.navConvertToPdf ?? '🔄 CONVERT TO PDF',
+    moreTools: t.navMoreTools ?? en.navMoreTools ?? '🔧 MORE PDF TOOLS',
   };
 
   const handleToolClick = (toolId: string) => {
@@ -141,117 +141,117 @@ export const Navbar: React.FC<NavbarProps> = ({
 
         {/* Center: Desktop Quick Tabs */}
         <nav aria-label="Desktop Quick Navigation" className="desktop-only" style={{ flex: '1 1 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4, minWidth: 0 }}>
-            {[
-              { id: 'merge-pdf', label: 'MERGE PDF' },
-              { id: 'compress-pdf', label: 'COMPRESS PDF' },
-              { id: 'pdf-to-word', label: 'PDF TO WORD' },
-            ].map(({ id, label }) => (
-              <button
-                key={id}
-                onClick={() => handleToolClick(id)}
-                className="nav-tab-btn"
-                style={{ background: 'transparent', border: 'none', color: 'var(--text-main)', padding: '6px 12px', borderRadius: 8, fontSize: '0.92rem', fontWeight: 700, cursor: 'pointer', transition: 'all 0.2s', letterSpacing: '0.02em' }}
-              >{toolNames[id]?.[currentLang]?.toUpperCase() || label}</button>
-            ))}
+          {[
+            { id: 'merge-pdf', label: 'MERGE PDF' },
+            { id: 'compress-pdf', label: 'COMPRESS PDF' },
+            { id: 'pdf-to-word', label: 'PDF TO WORD' },
+          ].map(({ id, label }) => (
+            <button
+              key={id}
+              onClick={() => handleToolClick(id)}
+              className="nav-tab-btn"
+              style={{ background: 'transparent', border: 'none', color: 'var(--text-main)', padding: '6px 12px', borderRadius: 8, fontSize: '0.92rem', fontWeight: 700, cursor: 'pointer', transition: 'all 0.2s', letterSpacing: '0.02em' }}
+            >{toolNames[id]?.[currentLang]?.toUpperCase() || label}</button>
+          ))}
 
-            {/* ALL PDF TOOLS — hover dropdown trigger */}
-            <div
-              style={{ position: 'relative' }}
-              onMouseEnter={handleMegaEnter}
-              onMouseLeave={handleMegaLeave}
+          {/* ALL PDF TOOLS — hover dropdown trigger */}
+          <div
+            style={{ position: 'relative' }}
+            onMouseEnter={handleMegaEnter}
+            onMouseLeave={handleMegaLeave}
+          >
+            <button
+              style={{
+                background: isMegaOpen ? 'var(--brand-gradient)' : 'rgba(225,29,72,0.1)',
+                color: isMegaOpen ? '#fff' : 'var(--text-accent)',
+                border: '1px solid rgba(225,29,72,0.3)',
+                padding: '6px 14px', borderRadius: 8, fontSize: '0.92rem', fontWeight: 800,
+                cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 6,
+                transition: 'all 0.2s', letterSpacing: '0.02em',
+                boxShadow: isMegaOpen ? '0 4px 14px var(--brand-glow)' : 'none',
+              }}
             >
-              <button
+              <Grid size={15} />
+              {NAV.allPdfTools}
+              {isMegaOpen ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+            </button>
+
+            {/* Mega Menu Dropdown */}
+            {isMegaOpen && (
+              <div
+                onMouseEnter={handleMegaEnter}
+                onMouseLeave={handleMegaLeave}
                 style={{
-                  background: isMegaOpen ? 'var(--brand-gradient)' : 'rgba(225,29,72,0.1)',
-                  color: isMegaOpen ? '#fff' : 'var(--text-accent)',
-                  border: '1px solid rgba(225,29,72,0.3)',
-                  padding: '6px 14px', borderRadius: 8, fontSize: '0.92rem', fontWeight: 800,
-                  cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 6,
-                  transition: 'all 0.2s', letterSpacing: '0.02em',
-                  boxShadow: isMegaOpen ? '0 4px 14px var(--brand-glow)' : 'none',
+                  position: 'fixed',
+                  top: 60, left: 0, right: 0,
+                  background: 'var(--bg-card)',
+                  borderBottom: '2px solid var(--brand-primary)',
+                  boxShadow: '0 24px 60px rgba(0,0,0,0.35)',
+                  padding: '24px',
+                  zIndex: 200,
+                  animation: 'fadeInDown 0.15s ease',
                 }}
               >
-                <Grid size={15} />
-                {NAV.allPdfTools}
-                {isMegaOpen ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
-              </button>
+                <div style={{ maxWidth: 1400, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 24 }}>
+                  {/* Col 1: Organize PDF — 8 items */}
+                  <div className="mega-menu-col">
+                    <div className="mega-menu-title">{NAV.organize}</div>
+                    <MI icon={FolderArchive} label={toolNames['batch-pdf']?.[currentLang] || "Batch PDF (Folder)"} onClick={() => handleToolClick('batch-pdf')} highlight={true} />
+                    <MI icon={Combine} label={toolNames['merge-pdf']?.[currentLang] || "Merge PDF"} onClick={() => handleToolClick('merge-pdf')} />
+                    <MI icon={Scissors} label={toolNames['split-pdf']?.[currentLang] || "Split PDF"} onClick={() => handleToolClick('split-pdf')} />
+                    <MI icon={RotateCw} label={toolNames['rotate-pdf']?.[currentLang] || "Rotate PDF"} onClick={() => handleToolClick('rotate-pdf')} />
+                    <MI icon={Hash} label={toolNames['page-numbers']?.[currentLang] || "Page Numbers"} onClick={() => handleToolClick('page-numbers')} />
+                    <MI icon={Trash2} label={toolNames['remove-pdf']?.[currentLang] || "Remove Pages"} onClick={() => handleToolClick('remove-pdf')} />
+                    <MI icon={LayoutList} label={toolNames['organize-pdf']?.[currentLang] || "Organize PDF"} onClick={() => handleToolClick('organize-pdf')} />
+                    <MI icon={Crop} label={toolNames['crop-pdf']?.[currentLang] || "Crop PDF"} onClick={() => handleToolClick('crop-pdf')} />
+                  </div>
 
-              {/* Mega Menu Dropdown */}
-              {isMegaOpen && (
-                <div
-                  onMouseEnter={handleMegaEnter}
-                  onMouseLeave={handleMegaLeave}
-                  style={{
-                    position: 'fixed',
-                    top: 60, left: 0, right: 0,
-                    background: 'var(--bg-card)',
-                    borderBottom: '2px solid var(--brand-primary)',
-                    boxShadow: '0 24px 60px rgba(0,0,0,0.35)',
-                    padding: '24px',
-                    zIndex: 200,
-                    animation: 'fadeInDown 0.15s ease',
-                  }}
-                >
-                  <div style={{ maxWidth: 1400, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 24 }}>
-                    {/* Col 1: Organize PDF — 8 items */}
-                    <div className="mega-menu-col">
-                      <div className="mega-menu-title">{NAV.organize}</div>
-                      <MI icon={FolderArchive} label={toolNames['batch-pdf']?.[currentLang] || "Batch PDF (Folder)"} onClick={() => handleToolClick('batch-pdf')} highlight={true} />
-                      <MI icon={Combine} label={toolNames['merge-pdf']?.[currentLang] || "Merge PDF"} onClick={() => handleToolClick('merge-pdf')} />
-                      <MI icon={Scissors} label={toolNames['split-pdf']?.[currentLang] || "Split PDF"} onClick={() => handleToolClick('split-pdf')} />
-                      <MI icon={RotateCw} label={toolNames['rotate-pdf']?.[currentLang] || "Rotate PDF"} onClick={() => handleToolClick('rotate-pdf')} />
-                      <MI icon={Hash} label={toolNames['page-numbers']?.[currentLang] || "Page Numbers"} onClick={() => handleToolClick('page-numbers')} />
-                      <MI icon={Trash2} label={toolNames['remove-pdf']?.[currentLang] || "Remove Pages"} onClick={() => handleToolClick('remove-pdf')} />
-                      <MI icon={LayoutList} label={toolNames['organize-pdf']?.[currentLang] || "Organize PDF"} onClick={() => handleToolClick('organize-pdf')} />
-                      <MI icon={Crop} label={toolNames['crop-pdf']?.[currentLang] || "Crop PDF"} onClick={() => handleToolClick('crop-pdf')} />
-                    </div>
+                  {/* Col 2: Optimize & Spreadsheet — 8 items */}
+                  <div className="mega-menu-col">
+                    <div className="mega-menu-title">{NAV.optimize}</div>
+                    <MI icon={Edit3} label={toolNames['edit-pdf']?.[currentLang] || "Edit PDF"} onClick={() => handleToolClick('edit-pdf')} />
+                    <MI icon={Minimize2} label={toolNames['compress-pdf']?.[currentLang] || "Compress PDF"} onClick={() => handleToolClick('compress-pdf')} />
+                    <MI icon={ScanText} label={toolNames['ocr-pdf']?.[currentLang] || "OCR PDF to Text"} onClick={() => handleToolClick('ocr-pdf')} />
+                    <MI icon={Contrast} label={toolNames['grayscale-pdf']?.[currentLang] || "Grayscale PDF"} onClick={() => handleToolClick('grayscale-pdf')} />
+                    <MI icon={ScanLine} label={toolNames['scan-to-pdf']?.[currentLang] || "Scan to PDF"} onClick={() => handleToolClick('scan-to-pdf')} />
+                    <MI icon={Eraser} label={toolNames['remove-pdf-metadata']?.[currentLang] || "Remove Metadata"} onClick={() => handleToolClick('remove-pdf-metadata')} />
+                    <MI icon={SlidersHorizontal} label={toolNames['edit-pdf-metadata']?.[currentLang] || "Edit Metadata"} onClick={() => handleToolClick('edit-pdf-metadata')} />
+                    <div className="mega-menu-title" style={{ marginTop: 12 }}>{NAV.spreadsheet}</div>
+                    <MI icon={TableProperties} label={toolNames['csv-to-excel']?.[currentLang] || "CSV to Excel (.xlsx)"} onClick={() => handleToolClick('csv-to-excel')} />
+                    <MI icon={FileText} label={toolNames['excel-to-csv']?.[currentLang] || "Excel to CSV"} onClick={() => handleToolClick('excel-to-csv')} />
+                  </div>
 
-                    {/* Col 2: Optimize & Spreadsheet — 8 items */}
-                    <div className="mega-menu-col">
-                      <div className="mega-menu-title">{NAV.optimize}</div>
-                      <MI icon={Edit3} label={toolNames['edit-pdf']?.[currentLang] || "Edit PDF"} onClick={() => handleToolClick('edit-pdf')} />
-                      <MI icon={Minimize2} label={toolNames['compress-pdf']?.[currentLang] || "Compress PDF"} onClick={() => handleToolClick('compress-pdf')} />
-                      <MI icon={ScanText} label={toolNames['ocr-pdf']?.[currentLang] || "OCR PDF to Text"} onClick={() => handleToolClick('ocr-pdf')} />
-                      <MI icon={Contrast} label={toolNames['grayscale-pdf']?.[currentLang] || "Grayscale PDF"} onClick={() => handleToolClick('grayscale-pdf')} />
-                      <MI icon={ScanLine} label={toolNames['scan-to-pdf']?.[currentLang] || "Scan to PDF"} onClick={() => handleToolClick('scan-to-pdf')} />
-                      <MI icon={Eraser} label={toolNames['remove-pdf-metadata']?.[currentLang] || "Remove Metadata"} onClick={() => handleToolClick('remove-pdf-metadata')} />
-                      <MI icon={SlidersHorizontal} label={toolNames['edit-pdf-metadata']?.[currentLang] || "Edit Metadata"} onClick={() => handleToolClick('edit-pdf-metadata')} />
-                      <div className="mega-menu-title" style={{ marginTop: 12 }}>{NAV.spreadsheet}</div>
-                      <MI icon={TableProperties} label={toolNames['csv-to-excel']?.[currentLang] || "CSV to Excel (.xlsx)"} onClick={() => handleToolClick('csv-to-excel')} />
-                      <MI icon={FileText} label={toolNames['excel-to-csv']?.[currentLang] || "Excel to CSV"} onClick={() => handleToolClick('excel-to-csv')} />
-                    </div>
+                  {/* Col 3: Security & Convert From — 8 items */}
+                  <div className="mega-menu-col">
+                    <div className="mega-menu-title">{NAV.security}</div>
+                    <MI icon={Stamp} label={toolNames['watermark-pdf']?.[currentLang] || "Watermark PDF"} onClick={() => handleToolClick('watermark-pdf')} />
+                    <MI icon={PenTool} label={toolNames['sign-pdf']?.[currentLang] || "Sign PDF"} onClick={() => handleToolClick('sign-pdf')} />
+                    <MI icon={Lock} label={toolNames['protect-pdf']?.[currentLang] || "Protect PDF"} onClick={() => handleToolClick('protect-pdf')} />
+                    <MI icon={Unlock} label={toolNames['unlock-pdf']?.[currentLang] || "Unlock PDF"} onClick={() => handleToolClick('unlock-pdf')} />
+                    <MI icon={EyeOff} label={toolNames['redact-pdf']?.[currentLang] || "Redact PDF"} onClick={() => handleToolClick('redact-pdf')} />
+                    <div className="mega-menu-title" style={{ marginTop: 12 }}>{NAV.fromPdf}</div>
+                    <MI icon={FileText} label={toolNames['pdf-to-word']?.[currentLang] || "PDF to Word"} onClick={() => handleToolClick('pdf-to-word')} highlight={true} />
+                    <MI icon={Presentation} label={toolNames['pdf-to-ppt']?.[currentLang] || "PDF to POWERPOINT"} onClick={() => handleToolClick('pdf-to-ppt')} />
+                    <MI icon={Images} label={toolNames['pdf-to-image']?.[currentLang] || "PDF to JPG / PNG"} onClick={() => handleToolClick('pdf-to-image')} />
+                    <MI icon={Image} label={toolNames['extract-images-pdf']?.[currentLang] || "Extract Images"} onClick={() => handleToolClick('extract-images-pdf')} />
+                  </div>
 
-                    {/* Col 3: Security & Convert From — 8 items */}
-                    <div className="mega-menu-col">
-                      <div className="mega-menu-title">{NAV.security}</div>
-                      <MI icon={Stamp} label={toolNames['watermark-pdf']?.[currentLang] || "Watermark PDF"} onClick={() => handleToolClick('watermark-pdf')} />
-                      <MI icon={PenTool} label={toolNames['sign-pdf']?.[currentLang] || "Sign PDF"} onClick={() => handleToolClick('sign-pdf')} />
-                      <MI icon={Lock} label={toolNames['protect-pdf']?.[currentLang] || "Protect PDF"} onClick={() => handleToolClick('protect-pdf')} />
-                      <MI icon={Unlock} label={toolNames['unlock-pdf']?.[currentLang] || "Unlock PDF"} onClick={() => handleToolClick('unlock-pdf')} />
-                      <MI icon={EyeOff} label={toolNames['redact-pdf']?.[currentLang] || "Redact PDF"} onClick={() => handleToolClick('redact-pdf')} />
-                      <div className="mega-menu-title" style={{ marginTop: 12 }}>{NAV.fromPdf}</div>
-                      <MI icon={FileText} label={toolNames['pdf-to-word']?.[currentLang] || "PDF to Word"} onClick={() => handleToolClick('pdf-to-word')} highlight={true} />
-                      <MI icon={Presentation} label={toolNames['pdf-to-ppt']?.[currentLang] || "PDF to POWERPOINT"} onClick={() => handleToolClick('pdf-to-ppt')} />
-                      <MI icon={Images} label={toolNames['pdf-to-image']?.[currentLang] || "PDF to JPG / PNG"} onClick={() => handleToolClick('pdf-to-image')} />
-                      <MI icon={Image} label={toolNames['extract-images-pdf']?.[currentLang] || "Extract Images"} onClick={() => handleToolClick('extract-images-pdf')} />
-                    </div>
-
-                    {/* Col 4: Convert To PDF + More Tools — 7 items */}
-                    <div className="mega-menu-col">
-                      <div className="mega-menu-title">{NAV.toPdf}</div>
-                      <MI icon={FileSpreadsheet} label={toolNames['excel-to-pdf']?.[currentLang] || "EXCEL to PDF"} onClick={() => handleToolClick('excel-to-pdf')} />
-                      <MI icon={Presentation} label={toolNames['ppt-to-pdf']?.[currentLang] || "POWERPOINT to PDF"} onClick={() => handleToolClick('ppt-to-pdf')} />
-                      <MI icon={Image} label={toolNames['image-to-pdf']?.[currentLang] || "JPG / PNG to PDF"} onClick={() => handleToolClick('image-to-pdf')} />
-                      <MI icon={AlignLeft} label={toolNames['txt-to-pdf']?.[currentLang] || "TXT to PDF"} onClick={() => handleToolClick('txt-to-pdf')} />
-                      <div className="mega-menu-title" style={{ marginTop: 12 }}>{NAV.moreTools}</div>
-                      <MI icon={Scale} label={toolNames['compare-pdf']?.[currentLang] || "Compare PDF"} onClick={() => handleToolClick('compare-pdf')} />
-                      <MI icon={Maximize} label={toolNames['resize-pdf']?.[currentLang] || "Resize PDF"} onClick={() => handleToolClick('resize-pdf')} />
-                      <MI icon={ArrowDownUp} label={toolNames['reverse-pdf']?.[currentLang] || "Reverse PDF"} onClick={() => handleToolClick('reverse-pdf')} />
-                    </div>
+                  {/* Col 4: Convert To PDF + More Tools — 7 items */}
+                  <div className="mega-menu-col">
+                    <div className="mega-menu-title">{NAV.toPdf}</div>
+                    <MI icon={FileSpreadsheet} label={toolNames['excel-to-pdf']?.[currentLang] || "EXCEL to PDF"} onClick={() => handleToolClick('excel-to-pdf')} />
+                    <MI icon={Presentation} label={toolNames['ppt-to-pdf']?.[currentLang] || "POWERPOINT to PDF"} onClick={() => handleToolClick('ppt-to-pdf')} />
+                    <MI icon={Image} label={toolNames['image-to-pdf']?.[currentLang] || "JPG / PNG to PDF"} onClick={() => handleToolClick('image-to-pdf')} />
+                    <MI icon={AlignLeft} label={toolNames['txt-to-pdf']?.[currentLang] || "TXT to PDF"} onClick={() => handleToolClick('txt-to-pdf')} />
+                    <div className="mega-menu-title" style={{ marginTop: 12 }}>{NAV.moreTools}</div>
+                    <MI icon={Scale} label={toolNames['compare-pdf']?.[currentLang] || "Compare PDF"} onClick={() => handleToolClick('compare-pdf')} />
+                    <MI icon={Maximize} label={toolNames['resize-pdf']?.[currentLang] || "Resize PDF"} onClick={() => handleToolClick('resize-pdf')} />
+                    <MI icon={ArrowDownUp} label={toolNames['reverse-pdf']?.[currentLang] || "Reverse PDF"} onClick={() => handleToolClick('reverse-pdf')} />
                   </div>
                 </div>
-              )}
-            </div>
+              </div>
+            )}
+          </div>
         </nav>
 
         {/* Right: Theme + Lang + Mobile Nav */}
@@ -306,284 +306,288 @@ export const Navbar: React.FC<NavbarProps> = ({
               onOpen={() => setIsDesktopLangOpen(true)}
             />
 
-          {/* Desktop Auth Button / User Dropdown */}
-          {!user ? (
-            <button
-              onClick={openAuthModal}
-              style={{
-                padding: '7px 18px',
-                borderRadius: 8,
-                background: 'var(--brand-primary)',
-                color: '#ffffff',
-                border: 'none',
-                fontSize: '0.85rem',
-                fontWeight: 700,
-                cursor: 'pointer',
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: 6,
-                flexShrink: 0,
-                transition: 'all 0.15s ease',
-                boxShadow: '0 2px 8px rgba(225,29,72,0.25)',
-              }}
-            >
-              <LogIn size={15} />
-              <span>{currentLang === 'id' ? 'Masuk / Login' : (authT.nav_signin || 'Sign In')}</span>
-            </button>
-          ) : (
-            <div style={{ position: 'relative' }}>
+            {/* Desktop Auth Button / User Dropdown */}
+            {!user ? (
               <button
-                onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
+                onClick={openAuthModal}
                 style={{
-                  display: 'flex',
+                  padding: '7px 18px',
+                  borderRadius: 8,
+                  background: 'var(--brand-primary)',
+                  color: '#ffffff',
+                  border: 'none',
+                  fontSize: '0.85rem',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                  display: 'inline-flex',
                   alignItems: 'center',
-                  gap: 8,
-                  padding: '3px 10px 3px 3px',
+                  gap: 6,
+                  flexShrink: 0,
+                  transition: 'all 0.15s ease',
+                  boxShadow: '0 2px 8px rgba(225,29,72,0.25)',
+                }}
+              >
+                <LogIn size={15} />
+                <span>{currentLang === 'id' ? 'Masuk / Login' : (authT.nav_signin || 'Sign In')}</span>
+              </button>
+            ) : (
+              <div style={{ position: 'relative' }}>
+                <button
+                  onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 8,
+                    padding: '3px 10px 3px 3px',
+                    background: 'var(--bg-card)',
+                    border: '1px solid var(--border-color)',
+                    borderRadius: 9999,
+                    cursor: 'pointer',
+                    color: 'var(--text-main)',
+                  }}
+                >
+                  {user.photoURL ? (
+                    <img
+                      src={user.photoURL}
+                      alt={user.displayName || 'User'}
+                      style={{ width: 28, height: 28, borderRadius: '50%', objectFit: 'cover' }}
+                    />
+                  ) : (
+                    <div
+                      style={{
+                        width: 28,
+                        height: 28,
+                        borderRadius: '50%',
+                        background: 'var(--brand-primary)',
+                        color: '#ffffff',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        fontSize: '0.78rem',
+                        fontWeight: 700,
+                      }}
+                    >
+                      {(user.displayName || user.email || 'U')[0].toUpperCase()}
+                    </div>
+                  )}
+                  <span
+                    style={{
+                      fontSize: '0.82rem',
+                      fontWeight: 700,
+                      maxWidth: 100,
+                      overflow: 'hidden',
+                      textOverflow: 'ellipsis',
+                      whiteSpace: 'nowrap',
+                    }}
+                  >
+                    {user.displayName || user.email?.split('@')[0] || authT.nav_account || 'Account'}
+                  </span>
+                  {isPro && (
+                    <span
+                      style={{
+                        background: '#f59e0b',
+                        color: '#000000',
+                        fontSize: '0.68rem',
+                        fontWeight: 900,
+                        padding: '1px 6px',
+                        borderRadius: 6,
+                        letterSpacing: '0.05em',
+                      }}
+                    >
+                      PRO
+                    </span>
+                  )}
+                  <ChevronDown size={14} />
+                </button>
+
+                {isUserMenuOpen && (
+                  <div
+                    style={{
+                      position: 'absolute',
+                      top: 'calc(100% + 8px)',
+                      right: 0,
+                      width: 230,
+                      background: 'var(--bg-card)',
+                      border: '1px solid var(--border-color)',
+                      borderRadius: 12,
+                      boxShadow: '0 10px 25px rgba(0,0,0,0.18)',
+                      padding: '12px',
+                      zIndex: 200,
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: 8,
+                    }}
+                  >
+                    <div style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: 8 }}>
+                      <div style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                        {user.displayName || authT.nav_account || 'User'}
+                      </div>
+                      <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                        {user.email}
+                      </div>
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.8rem', padding: '4px 0' }}>
+                      <span style={{ color: 'var(--text-muted)' }}>Status:</span>
+                      <span style={{ fontWeight: 700, color: isPro ? '#f59e0b' : 'var(--text-main)' }}>
+                        {isPro
+                          ? (profile?.billingInterval === 'monthly'
+                              ? (authT.pro_plan_monthly_name || 'PRO Monthly')
+                              : (authT.nav_pro_active || 'PRO Lifetime'))
+                          : (authT.nav_free_tier || 'Free Starter')}
+                      </span>
+                    </div>
+                    {!isPro && (
+                      <a
+                        href={currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsUserMenuOpen(false);
+                          window.history.pushState({}, '', currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`);
+                          window.dispatchEvent(new PopStateEvent('popstate'));
+                        }}
+                        style={{
+                          padding: '8px 10px',
+                          background: 'rgba(225, 29, 72, 0.1)',
+                          color: 'var(--brand-primary)',
+                          borderRadius: 8,
+                          fontSize: '0.8rem',
+                          fontWeight: 700,
+                          textDecoration: 'none',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          gap: 6,
+                        }}
+                      >
+                        <Crown size={14} />
+                        {authT.nav_upgrade_pro || 'Upgrade to PRO'}
+                      </a>
+                    )}
+                    <button
+                      onClick={() => {
+                        setIsUserMenuOpen(false);
+                        signOut();
+                      }}
+                      style={{
+                        width: '100%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: 8,
+                        padding: '8px 10px',
+                        background: 'none',
+                        border: 'none',
+                        color: '#ef4444',
+                        fontSize: '0.8rem',
+                        fontWeight: 600,
+                        cursor: 'pointer',
+                        borderRadius: 6,
+                        textAlign: 'left',
+                      }}
+                    >
+                      <LogOut size={14} />
+                      {authT.nav_signout || 'Sign Out'}
+                    </button>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+
+          {/* Mobile top-right controls: Auth + Compact Language Selector + Thumb-Friendly Hamburger */}
+          <div className="mobile-only" style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            {!user ? (
+              <button
+                onClick={openAuthModal}
+                aria-label={currentLang === 'id' ? 'Masuk / Login' : (authT.nav_signin || 'Sign In')}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: 5,
+                  padding: '6px 12px',
+                  borderRadius: 8,
+                  background: 'var(--brand-primary)',
+                  color: '#ffffff',
+                  border: 'none',
+                  fontSize: '0.82rem',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                  whiteSpace: 'nowrap',
+                  flexShrink: 0,
+                  boxShadow: '0 2px 8px rgba(225,29,72,0.25)',
+                }}
+              >
+                <LogIn size={14} />
+                <span>{currentLang === 'id' ? 'Login' : (authT.nav_signin || 'Sign In')}</span>
+              </button>
+            ) : (
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                aria-label="User Account Profile"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: 5,
+                  padding: '3px 8px 3px 3px',
                   background: 'var(--bg-card)',
                   border: '1px solid var(--border-color)',
                   borderRadius: 9999,
                   cursor: 'pointer',
                   color: 'var(--text-main)',
+                  flexShrink: 0,
                 }}
               >
                 {user.photoURL ? (
-                  <img
-                    src={user.photoURL}
-                    alt={user.displayName || 'User'}
-                    style={{ width: 28, height: 28, borderRadius: '50%', objectFit: 'cover' }}
-                  />
+                  <img src={user.photoURL} alt={user.displayName || 'User'} style={{ width: 26, height: 26, borderRadius: '50%', objectFit: 'cover' }} />
                 ) : (
-                  <div
-                    style={{
-                      width: 28,
-                      height: 28,
-                      borderRadius: '50%',
-                      background: 'var(--brand-primary)',
-                      color: '#ffffff',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      fontSize: '0.78rem',
-                      fontWeight: 700,
-                    }}
-                  >
+                  <div style={{ width: 26, height: 26, borderRadius: '50%', background: 'var(--brand-primary)', color: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.72rem', fontWeight: 700 }}>
                     {(user.displayName || user.email || 'U')[0].toUpperCase()}
                   </div>
                 )}
-                <span
-                  style={{
-                    fontSize: '0.82rem',
-                    fontWeight: 700,
-                    maxWidth: 100,
-                    overflow: 'hidden',
-                    textOverflow: 'ellipsis',
-                    whiteSpace: 'nowrap',
-                  }}
-                >
-                  {user.displayName || user.email?.split('@')[0] || authT.nav_account || 'Account'}
-                </span>
                 {isPro && (
-                  <span
-                    style={{
-                      background: '#f59e0b',
-                      color: '#000000',
-                      fontSize: '0.68rem',
-                      fontWeight: 900,
-                      padding: '1px 6px',
-                      borderRadius: 6,
-                      letterSpacing: '0.05em',
-                    }}
-                  >
+                  <span style={{ background: '#f59e0b', color: '#000000', fontSize: '0.62rem', fontWeight: 900, padding: '1px 5px', borderRadius: 4 }}>
                     PRO
                   </span>
                 )}
-                <ChevronDown size={14} />
               </button>
+            )}
 
-              {isUserMenuOpen && (
-                <div
-                  style={{
-                    position: 'absolute',
-                    top: 'calc(100% + 8px)',
-                    right: 0,
-                    width: 230,
-                    background: 'var(--bg-card)',
-                    border: '1px solid var(--border-color)',
-                    borderRadius: 12,
-                    boxShadow: '0 10px 25px rgba(0,0,0,0.18)',
-                    padding: '12px',
-                    zIndex: 200,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: 8,
-                  }}
-                >
-                  <div style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: 8 }}>
-                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                      {user.displayName || authT.nav_account || 'User'}
-                    </div>
-                    <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                      {user.email}
-                    </div>
-                  </div>
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.8rem', padding: '4px 0' }}>
-                    <span style={{ color: 'var(--text-muted)' }}>Status:</span>
-                    <span style={{ fontWeight: 700, color: isPro ? '#f59e0b' : 'var(--text-main)' }}>
-                      {isPro ? (authT.nav_pro_active || 'PRO Lifetime') : (authT.nav_free_tier || 'Free Starter')}
-                    </span>
-                  </div>
-                  {!isPro && (
-                    <a
-                      href={currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setIsUserMenuOpen(false);
-                        window.history.pushState({}, '', currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`);
-                        window.dispatchEvent(new PopStateEvent('popstate'));
-                      }}
-                      style={{
-                        padding: '8px 10px',
-                        background: 'rgba(225, 29, 72, 0.1)',
-                        color: 'var(--brand-primary)',
-                        borderRadius: 8,
-                        fontSize: '0.8rem',
-                        fontWeight: 700,
-                        textDecoration: 'none',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        gap: 6,
-                      }}
-                    >
-                      <Crown size={14} />
-                      {authT.nav_upgrade_pro || 'Upgrade to PRO'}
-                    </a>
-                  )}
-                  <button
-                    onClick={() => {
-                      setIsUserMenuOpen(false);
-                      signOut();
-                    }}
-                    style={{
-                      width: '100%',
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: 8,
-                      padding: '8px 10px',
-                      background: 'none',
-                      border: 'none',
-                      color: '#ef4444',
-                      fontSize: '0.8rem',
-                      fontWeight: 600,
-                      cursor: 'pointer',
-                      borderRadius: 6,
-                      textAlign: 'left',
-                    }}
-                  >
-                    <LogOut size={14} />
-                    {authT.nav_signout || 'Sign Out'}
-                  </button>
-                </div>
-              )}
-            </div>
-          )}
-        </div>
-
-        {/* Mobile top-right controls: Auth + Compact Language Selector + Thumb-Friendly Hamburger */}
-        <div className="mobile-only" style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          {!user ? (
-            <button
-              onClick={openAuthModal}
-              aria-label={currentLang === 'id' ? 'Masuk / Login' : (authT.nav_signin || 'Sign In')}
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: 5,
-                padding: '6px 12px',
-                borderRadius: 8,
-                background: 'var(--brand-primary)',
-                color: '#ffffff',
-                border: 'none',
-                fontSize: '0.82rem',
-                fontWeight: 700,
-                cursor: 'pointer',
-                whiteSpace: 'nowrap',
-                flexShrink: 0,
-                boxShadow: '0 2px 8px rgba(225,29,72,0.25)',
+            <LocaleSwitcher
+              currentLang={currentLang}
+              onSelectLang={(code) => {
+                onSelectLang(code);
+                setIsMobileMenuOpen(false);
               }}
-            >
-              <LogIn size={14} />
-              <span>{currentLang === 'id' ? 'Login' : (authT.nav_signin || 'Sign In')}</span>
-            </button>
-          ) : (
+              isOpen={isMobileLangOpen}
+              onClose={() => setIsMobileLangOpen(false)}
+              onOpen={() => {
+                setIsMobileMenuOpen(false);
+                setIsMobileLangOpen(true);
+              }}
+              compact={true}
+            />
             <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              aria-label="User Account Profile"
+              onClick={() => {
+                setIsMobileLangOpen(false);
+                setIsMobileMenuOpen(!isMobileMenuOpen);
+              }}
+              aria-label="Toggle Navigation Menu"
               style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: 5,
-                padding: '3px 8px 3px 3px',
-                background: 'var(--bg-card)',
+                width: 38,
+                height: 38,
+                background: isMobileMenuOpen ? 'var(--brand-primary)' : 'var(--bg-card)',
                 border: '1px solid var(--border-color)',
-                borderRadius: 9999,
+                borderRadius: 8,
+                color: isMobileMenuOpen ? 'white' : 'var(--text-main)',
                 cursor: 'pointer',
-                color: 'var(--text-main)',
-                flexShrink: 0,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                boxShadow: '0 2px 6px rgba(0,0,0,0.06)',
               }}
             >
-              {user.photoURL ? (
-                <img src={user.photoURL} alt={user.displayName || 'User'} style={{ width: 26, height: 26, borderRadius: '50%', objectFit: 'cover' }} />
-              ) : (
-                <div style={{ width: 26, height: 26, borderRadius: '50%', background: 'var(--brand-primary)', color: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.72rem', fontWeight: 700 }}>
-                  {(user.displayName || user.email || 'U')[0].toUpperCase()}
-                </div>
-              )}
-              {isPro && (
-                <span style={{ background: '#f59e0b', color: '#000000', fontSize: '0.62rem', fontWeight: 900, padding: '1px 5px', borderRadius: 4 }}>
-                  PRO
-                </span>
-              )}
+              {isMobileMenuOpen ? <X size={21} /> : <Menu size={21} />}
             </button>
-          )}
-
-          <LocaleSwitcher
-            currentLang={currentLang}
-            onSelectLang={(code) => {
-              onSelectLang(code);
-              setIsMobileMenuOpen(false);
-            }}
-            isOpen={isMobileLangOpen}
-            onClose={() => setIsMobileLangOpen(false)}
-            onOpen={() => {
-              setIsMobileMenuOpen(false);
-              setIsMobileLangOpen(true);
-            }}
-            compact={true}
-          />
-          <button
-            onClick={() => {
-              setIsMobileLangOpen(false);
-              setIsMobileMenuOpen(!isMobileMenuOpen);
-            }}
-            aria-label="Toggle Navigation Menu"
-            style={{
-              width: 38,
-              height: 38,
-              background: isMobileMenuOpen ? 'var(--brand-primary)' : 'var(--bg-card)',
-              border: '1px solid var(--border-color)',
-              borderRadius: 8,
-              color: isMobileMenuOpen ? 'white' : 'var(--text-main)',
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              boxShadow: '0 2px 6px rgba(0,0,0,0.06)',
-            }}
-          >
-            {isMobileMenuOpen ? <X size={21} /> : <Menu size={21} />}
-          </button>
-        </div>
+          </div>
         </div>
       </div>
 
@@ -777,50 +781,62 @@ export const Navbar: React.FC<NavbarProps> = ({
           {isMobileAllOpen && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
               {[
-                { section: NAV.organize, tools: [
-                  { id: 'merge-pdf', label: 'Merge PDF', Icon: Combine },
-                  { id: 'split-pdf', label: 'Split PDF', Icon: Scissors },
-                  { id: 'rotate-pdf', label: 'Rotate PDF', Icon: RotateCw },
-                  { id: 'page-numbers', label: 'Page Numbers', Icon: Hash },
-                  { id: 'remove-pdf', label: 'Remove Pages', Icon: Trash2 },
-                  { id: 'organize-pdf', label: 'Organize PDF', Icon: LayoutList },
-                  { id: 'crop-pdf', label: 'Crop PDF', Icon: Crop },
-                  { id: 'compare-pdf', label: 'Compare PDF', Icon: Scale },
-                  { id: 'resize-pdf', label: 'Resize PDF', Icon: Maximize },
-                  { id: 'reverse-pdf', label: 'Reverse PDF', Icon: ArrowDownUp },
-                ]},
-                { section: NAV.optimize, tools: [
-                  { id: 'edit-pdf', label: 'Edit PDF', Icon: Edit3 },
-                  { id: 'compress-pdf', label: 'Compress PDF', Icon: Minimize2 },
-                  { id: 'ocr-pdf', label: 'OCR to Text', Icon: ScanText },
-                  { id: 'grayscale-pdf', label: 'Grayscale PDF', Icon: Contrast },
-                  { id: 'scan-to-pdf', label: 'Scan to PDF', Icon: ScanLine },
-                  { id: 'remove-pdf-metadata', label: 'Remove Metadata', Icon: Eraser },
-                  { id: 'edit-pdf-metadata', label: 'Edit Metadata', Icon: SlidersHorizontal },
-                ]},
-                { section: NAV.spreadsheet, tools: [
-                  { id: 'csv-to-excel', label: 'CSV to Excel', Icon: TableProperties },
-                  { id: 'excel-to-csv', label: 'Excel to CSV', Icon: FileText },
-                ]},
-                { section: NAV.security, tools: [
-                  { id: 'watermark-pdf', label: 'Watermark PDF', Icon: Stamp },
-                  { id: 'sign-pdf', label: 'Sign PDF', Icon: PenTool },
-                  { id: 'protect-pdf', label: 'Protect PDF', Icon: Lock },
-                  { id: 'unlock-pdf', label: 'Unlock PDF', Icon: Unlock },
-                  { id: 'redact-pdf', label: 'Redact PDF', Icon: EyeOff },
-                ]},
-                { section: NAV.fromPdf, tools: [
-                  { id: 'pdf-to-word', label: 'PDF to Word', Icon: FileText },
-                  { id: 'pdf-to-ppt', label: 'PDF to PPTX', Icon: Presentation },
-                  { id: 'pdf-to-image', label: 'PDF to JPG/PNG', Icon: Images },
-                  { id: 'extract-images-pdf', label: 'Extract Images', Icon: Image },
-                ]},
-                { section: NAV.toPdf, tools: [
-                  { id: 'excel-to-pdf', label: 'Excel to PDF', Icon: FileSpreadsheet },
-                  { id: 'ppt-to-pdf', label: 'PPTX to PDF', Icon: Presentation },
-                  { id: 'image-to-pdf', label: 'JPG/PNG to PDF', Icon: Image },
-                  { id: 'txt-to-pdf', label: 'TXT to PDF', Icon: AlignLeft },
-                ]},
+                {
+                  section: NAV.organize, tools: [
+                    { id: 'merge-pdf', label: 'Merge PDF', Icon: Combine },
+                    { id: 'split-pdf', label: 'Split PDF', Icon: Scissors },
+                    { id: 'rotate-pdf', label: 'Rotate PDF', Icon: RotateCw },
+                    { id: 'page-numbers', label: 'Page Numbers', Icon: Hash },
+                    { id: 'remove-pdf', label: 'Remove Pages', Icon: Trash2 },
+                    { id: 'organize-pdf', label: 'Organize PDF', Icon: LayoutList },
+                    { id: 'crop-pdf', label: 'Crop PDF', Icon: Crop },
+                    { id: 'compare-pdf', label: 'Compare PDF', Icon: Scale },
+                    { id: 'resize-pdf', label: 'Resize PDF', Icon: Maximize },
+                    { id: 'reverse-pdf', label: 'Reverse PDF', Icon: ArrowDownUp },
+                  ]
+                },
+                {
+                  section: NAV.optimize, tools: [
+                    { id: 'edit-pdf', label: 'Edit PDF', Icon: Edit3 },
+                    { id: 'compress-pdf', label: 'Compress PDF', Icon: Minimize2 },
+                    { id: 'ocr-pdf', label: 'OCR to Text', Icon: ScanText },
+                    { id: 'grayscale-pdf', label: 'Grayscale PDF', Icon: Contrast },
+                    { id: 'scan-to-pdf', label: 'Scan to PDF', Icon: ScanLine },
+                    { id: 'remove-pdf-metadata', label: 'Remove Metadata', Icon: Eraser },
+                    { id: 'edit-pdf-metadata', label: 'Edit Metadata', Icon: SlidersHorizontal },
+                  ]
+                },
+                {
+                  section: NAV.spreadsheet, tools: [
+                    { id: 'csv-to-excel', label: 'CSV to Excel', Icon: TableProperties },
+                    { id: 'excel-to-csv', label: 'Excel to CSV', Icon: FileText },
+                  ]
+                },
+                {
+                  section: NAV.security, tools: [
+                    { id: 'watermark-pdf', label: 'Watermark PDF', Icon: Stamp },
+                    { id: 'sign-pdf', label: 'Sign PDF', Icon: PenTool },
+                    { id: 'protect-pdf', label: 'Protect PDF', Icon: Lock },
+                    { id: 'unlock-pdf', label: 'Unlock PDF', Icon: Unlock },
+                    { id: 'redact-pdf', label: 'Redact PDF', Icon: EyeOff },
+                  ]
+                },
+                {
+                  section: NAV.fromPdf, tools: [
+                    { id: 'pdf-to-word', label: 'PDF to Word', Icon: FileText },
+                    { id: 'pdf-to-ppt', label: 'PDF to PPTX', Icon: Presentation },
+                    { id: 'pdf-to-image', label: 'PDF to JPG/PNG', Icon: Images },
+                    { id: 'extract-images-pdf', label: 'Extract Images', Icon: Image },
+                  ]
+                },
+                {
+                  section: NAV.toPdf, tools: [
+                    { id: 'excel-to-pdf', label: 'Excel to PDF', Icon: FileSpreadsheet },
+                    { id: 'ppt-to-pdf', label: 'PPTX to PDF', Icon: Presentation },
+                    { id: 'image-to-pdf', label: 'JPG/PNG to PDF', Icon: Image },
+                    { id: 'txt-to-pdf', label: 'TXT to PDF', Icon: AlignLeft },
+                  ]
+                },
               ].map(group => (
                 <div key={group.section}>
                   <div style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--text-accent)', letterSpacing: '0.06em', marginTop: 8, marginBottom: 8, paddingBottom: 6, borderBottom: '1px dashed var(--border-color)' }}>

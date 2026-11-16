@@ -14,10 +14,9 @@ export const getLemonSqueezyCheckoutUrl = (
   plan: PlanType = 'lifetime'
 ): string => {
   const defaultLifetimeBuyUrl = 'https://thismyown.lemonsqueezy.com/checkout/buy/bd84d992-e4ed-4d88-a5ff-f1ab944f5815';
-  const defaultMonthlyBuyUrl = 'https://thismyown.lemonsqueezy.com/checkout/buy/monthly';
   
   const buyUrl = plan === 'monthly'
-    ? (import.meta.env.VITE_LEMONSQUEEZY_MONTHLY_BUY_URL || defaultMonthlyBuyUrl)
+    ? (import.meta.env.VITE_LEMONSQUEEZY_MONTHLY_BUY_URL || defaultLifetimeBuyUrl)
     : (import.meta.env.VITE_LEMONSQUEEZY_LIFETIME_BUY_URL || defaultLifetimeBuyUrl);
 
   try {
