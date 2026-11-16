@@ -197,12 +197,48 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
 
     const currentOrigin = typeof window !== 'undefined' ? window.location.origin : 'https://handlemyfile.com';
-    const actionCodeSettings = {
-      url: `${currentOrigin}/?mode=resetPassword`,
-      handleCodeInApp: true,
-    };
 
-    await sendPasswordResetEmail(auth, email.trim(), actionCodeSettings);
+    try {
+      const response = await fetch('/api/reset-password/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email.trim(), origin: currentOrigin }),
+      });
+
+      const data = await response.json().catch(() => ({}));
+
+      if (!response.ok) {
+        const err = new Error(data.error || 'Failed to send password reset email');
+        if (response.status === 404 && data.error?.includes('No account')) {
+          (err as any).code = 'auth/user-not-found';
+          throw err;
+        } else if (response.status === 429) {
+          (err as any).code = 'auth/too-many-requests';
+          throw err;
+        }
+
+        // If serverless endpoint is not available (e.g., local vite dev without vercel api), fall back to client SDK
+        if (response.status === 404 || response.status === 500) {
+          console.warn('Custom branded reset API unavailable, falling back to Firebase client SDK...');
+          const actionCodeSettings = {
+            url: `${currentOrigin}/?mode=resetPassword`,
+            handleCodeInApp: true,
+          };
+          await sendPasswordResetEmail(auth, email.trim(), actionCodeSettings);
+          return;
+        }
+
+        throw err;
+      }
+    } catch (apiError: any) {
+      if (apiError?.code) throw apiError;
+      console.warn('API reset password call failed, attempting fallback to client SDK:', apiError);
+      const actionCodeSettings = {
+        url: `${currentOrigin}/?mode=resetPassword`,
+        handleCodeInApp: true,
+      };
+      await sendPasswordResetEmail(auth, email.trim(), actionCodeSettings);
+    }
   };
 
   const confirmNewPassword = async (oobCode: string, newPassword: string) => {
