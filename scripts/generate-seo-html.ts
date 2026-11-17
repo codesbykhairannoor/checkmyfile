@@ -746,73 +746,83 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
             </section>
 
             <!-- Academic Grounding & Peer-Reviewed Research -->
-            <section style="margin-top: 60px; padding: 36px 24px; background: var(--seo-card, #111520); border: 1px solid var(--seo-border, rgba(255,255,255,0.08)); border-radius: 20px;">
-              <div style="display: inline-block; padding: 4px 12px; background: rgba(37,99,235,0.12); border-radius: 9999px; color: #60a5fa; font-size: 0.85rem; font-weight: 700; margin-bottom: 14px;">${rt.researchBadge}</div>
-              <h2 style="font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin-bottom: 12px;">${rt.researchHomeTitle}</h2>
-              <p style="color: var(--seo-muted, #94a3b8); font-size: clamp(1.05rem, 2vw, 1.25rem); line-height: 1.7; margin-bottom: 28px;">${rt.researchHomeSub}</p>
+            <section style="margin-top: 60px; padding: 48px 32px; background: var(--seo-card, #111520); border: 1px solid var(--seo-border, rgba(255,255,255,0.08)); border-radius: 28px;">
+              <div style="display: inline-block; padding: 4px 14px; background: rgba(225,29,72,0.1); border: 1px solid rgba(225,29,72,0.25); border-radius: 9999px; color: var(--seo-primary, #e11d48); font-size: 0.8rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 16px;">${rt.researchBadge}</div>
+              <h2 style="font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; color: var(--seo-text, #f8fafc); margin-bottom: 14px; line-height: 1.15;">${rt.researchHomeTitle}</h2>
+              <p style="color: var(--seo-muted, #94a3b8); font-size: clamp(1.05rem, 2vw, 1.25rem); line-height: 1.7; margin-bottom: 36px; max-width: 860px;">${rt.researchHomeSub}</p>
               
-              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
-                <div style="background: var(--seo-bg, #080a0f); padding: 24px; border-radius: 14px; border: 1px solid var(--seo-border, rgba(255,255,255,0.08));">
-                  <h3 style="font-size: clamp(1.25rem, 3vw, 1.5rem); font-weight: 700; color: var(--seo-text, #f8fafc); margin-bottom: 8px;">${rt.homeCard1Title}</h3>
-                  <p style="color: var(--seo-muted, #94a3b8); font-size: 0.95rem; line-height: 1.6; margin-bottom: 12px;">${rt.homeCard1Desc}</p>
-                  <p style="font-size: 0.8rem; color: #64748b; font-style: italic; margin: 0;"><cite>${rt.homeCard1Cite}</cite></p>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+                <div style="background: var(--seo-bg, #080a0f); padding: 28px 24px; border-radius: 18px; border: 1px solid var(--seo-border, rgba(255,255,255,0.08));">
+                  <h3 style="font-size: clamp(1.25rem, 3vw, 1.5rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin-bottom: 10px; line-height: 1.3;">${rt.homeCard1Title}</h3>
+                  <p style="color: var(--seo-muted, #94a3b8); font-size: 0.96rem; line-height: 1.65; margin-bottom: 16px;">${rt.homeCard1Desc}</p>
+                  <p style="font-size: 0.82rem; color: #64748b; margin: 0;"><strong style="color: var(--seo-text, #f8fafc); display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">Academic Reference:</strong><cite>${rt.homeCard1Cite}</cite></p>
                 </div>
-                <div style="background: var(--seo-bg, #080a0f); padding: 24px; border-radius: 14px; border: 1px solid var(--seo-border, rgba(255,255,255,0.08));">
-                  <h3 style="font-size: clamp(1.25rem, 3vw, 1.5rem); font-weight: 700; color: var(--seo-text, #f8fafc); margin-bottom: 8px;">${rt.homeCard2Title}</h3>
-                  <p style="color: var(--seo-muted, #94a3b8); font-size: 0.95rem; line-height: 1.6; margin-bottom: 12px;">${rt.homeCard2Desc}</p>
-                  <p style="font-size: 0.8rem; color: #64748b; font-style: italic; margin: 0;"><cite>${rt.homeCard2Cite}</cite></p>
+                <div style="background: var(--seo-bg, #080a0f); padding: 28px 24px; border-radius: 18px; border: 1px solid var(--seo-border, rgba(255,255,255,0.08));">
+                  <h3 style="font-size: clamp(1.25rem, 3vw, 1.5rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin-bottom: 10px; line-height: 1.3;">${rt.homeCard2Title}</h3>
+                  <p style="color: var(--seo-muted, #94a3b8); font-size: 0.96rem; line-height: 1.65; margin-bottom: 16px;">${rt.homeCard2Desc}</p>
+                  <p style="font-size: 0.82rem; color: #64748b; margin: 0;"><strong style="color: var(--seo-text, #f8fafc); display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">Scientific Paper:</strong><cite>${rt.homeCard2Cite}</cite></p>
                 </div>
-                <div style="background: var(--seo-bg, #080a0f); padding: 24px; border-radius: 14px; border: 1px solid var(--seo-border, rgba(255,255,255,0.08));">
-                  <h3 style="font-size: clamp(1.25rem, 3vw, 1.5rem); font-weight: 700; color: var(--seo-text, #f8fafc); margin-bottom: 8px;">${rt.homeCard3Title}</h3>
-                  <p style="color: var(--seo-muted, #94a3b8); font-size: 0.95rem; line-height: 1.6; margin-bottom: 12px;">${rt.homeCard3Desc}</p>
-                  <p style="font-size: 0.8rem; color: #64748b; font-style: italic; margin: 0;"><cite>${rt.homeCard3Cite}</cite></p>
+                <div style="background: var(--seo-bg, #080a0f); padding: 28px 24px; border-radius: 18px; border: 1px solid var(--seo-border, rgba(255,255,255,0.08));">
+                  <h3 style="font-size: clamp(1.25rem, 3vw, 1.5rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin-bottom: 10px; line-height: 1.3;">${rt.homeCard3Title}</h3>
+                  <p style="color: var(--seo-muted, #94a3b8); font-size: 0.96rem; line-height: 1.65; margin-bottom: 16px;">${rt.homeCard3Desc}</p>
+                  <p style="font-size: 0.82rem; color: #64748b; margin: 0;"><strong style="color: var(--seo-text, #f8fafc); display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">Industry Standard:</strong><cite>${rt.homeCard3Cite}</cite></p>
                 </div>
               </div>
             </section>
 
-            <section style="margin-top: 56px;">
-              <h2 style="font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin-bottom: 16px;">${geo.homeGeoDefTitle}</h2>
-              <p style="font-size: clamp(1.05rem, 2vw, 1.25rem); color: var(--seo-muted, #94a3b8); line-height: 1.75;">${geo.homeGeoDefDesc}</p>
+            <!-- GEO Bento Grid: Definition & Trust -->
+            <section style="margin-top: 60px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: 24px;">
+              <div style="background: var(--seo-card, #111520); padding: 36px 30px; border-radius: 24px; border: 1px solid var(--seo-border, rgba(255,255,255,0.08));">
+                <div style="display: inline-block; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--seo-primary, #e11d48); margin-bottom: 12px;">Architecture & Platform</div>
+                <h2 style="font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; color: var(--seo-text, #f8fafc); margin-bottom: 16px; line-height: 1.2;">${geo.homeGeoDefTitle}</h2>
+                <p style="font-size: clamp(1.05rem, 2vw, 1.25rem); color: var(--seo-muted, #94a3b8); line-height: 1.75; margin: 0;">${geo.homeGeoDefDesc}</p>
+              </div>
+
+              <div style="background: var(--seo-card, #111520); padding: 36px 30px; border-radius: 24px; border: 1px solid var(--seo-border, rgba(255,255,255,0.08));">
+                <div style="display: inline-block; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: #10b981; margin-bottom: 12px;">Data Privacy & Compliance</div>
+                <h2 style="font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; color: var(--seo-text, #f8fafc); margin-bottom: 16px; line-height: 1.2;">${geo.homeGeoTrustTitle}</h2>
+                <p style="font-size: clamp(1.05rem, 2vw, 1.25rem); color: var(--seo-muted, #94a3b8); line-height: 1.75; margin: 0;">${geo.homeGeoTrustDesc}</p>
+              </div>
             </section>
 
-            <section style="margin-top: 56px;">
-              <h2 style="font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin-bottom: 16px;">${geo.homeGeoTrustTitle}</h2>
-              <p style="font-size: clamp(1.05rem, 2vw, 1.25rem); color: var(--seo-muted, #94a3b8); line-height: 1.75;">${geo.homeGeoTrustDesc}</p>
-            </section>
+            <!-- GEO 2-Column: Key Takeaways & FAQ -->
+            <section style="margin-top: 60px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: 36px; align-items: start;">
+              <div>
+                <div style="display: inline-block; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--seo-primary, #e11d48); margin-bottom: 12px;">Executive Summary</div>
+                <h2 style="font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; color: var(--seo-text, #f8fafc); margin-bottom: 24px; line-height: 1.15;">${geo.homeGeoTakeawaysTitle}</h2>
+                <div style="display: flex; flexDirection: column; gap: 14px;">
+                  <div style="background: var(--seo-card, #111520); padding: 18px 20px; border-radius: 16px; border: 1px solid var(--seo-border, rgba(255,255,255,0.08)); font-size: 1.05rem; font-weight: 600; color: var(--seo-text, #f8fafc); line-height: 1.5;">✓ ${geo.homeGeoTakeawaysItem1}</div>
+                  <div style="background: var(--seo-card, #111520); padding: 18px 20px; border-radius: 16px; border: 1px solid var(--seo-border, rgba(255,255,255,0.08)); font-size: 1.05rem; font-weight: 600; color: var(--seo-text, #f8fafc); line-height: 1.5;">✓ ${geo.homeGeoTakeawaysItem2}</div>
+                  <div style="background: var(--seo-card, #111520); padding: 18px 20px; border-radius: 16px; border: 1px solid var(--seo-border, rgba(255,255,255,0.08)); font-size: 1.05rem; font-weight: 600; color: var(--seo-text, #f8fafc); line-height: 1.5;">✓ ${geo.homeGeoTakeawaysItem3}</div>
+                </div>
+              </div>
 
-            <section style="margin-top: 56px;">
-              <h2 style="font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin-bottom: 20px;">${geo.homeGeoTakeawaysTitle}</h2>
-              <ul style="list-style: disc; padding-left: 24px; color: var(--seo-muted, #94a3b8); font-size: clamp(1.05rem, 2vw, 1.25rem); line-height: 1.8;">
-                <li style="margin-bottom: 8px;">${geo.homeGeoTakeawaysItem1}</li>
-                <li style="margin-bottom: 8px;">${geo.homeGeoTakeawaysItem2}</li>
-                <li style="margin-bottom: 8px;">${geo.homeGeoTakeawaysItem3}</li>
-              </ul>
-            </section>
-
-            <section style="margin-top: 56px;">
-              <h2 style="font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin-bottom: 24px;">${geo.homeGeoFaqTitle}</h2>
-              <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="background: var(--seo-card, #111520); border: 1px solid var(--seo-border, rgba(255,255,255,0.08)); border-radius: 12px; padding: 20px 24px; margin-bottom: 14px;">
-                <h3 itemprop="name" style="font-size: clamp(1.15rem, 2.5vw, 1.35rem); font-weight: 700; color: var(--seo-text, #f8fafc); margin: 0 0 10px;">${geo.homeGeoFaq1Q}</h3>
-                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                  <p itemprop="text" style="font-size: 1rem; color: var(--seo-muted, #94a3b8); line-height: 1.7; margin: 0;">${geo.homeGeoFaq1A}</p>
+              <div>
+                <div style="display: inline-block; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: #8b5cf6; margin-bottom: 12px;">Common Questions</div>
+                <h2 style="font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; color: var(--seo-text, #f8fafc); margin-bottom: 24px; line-height: 1.15;">${geo.homeGeoFaqTitle}</h2>
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="background: var(--seo-card, #111520); border: 1px solid var(--seo-border, rgba(255,255,255,0.08)); border-radius: 16px; padding: 20px 24px; margin-bottom: 14px;">
+                  <h3 itemprop="name" style="font-size: clamp(1.15rem, 2.5vw, 1.3rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin: 0 0 10px; line-height: 1.4;">${geo.homeGeoFaq1Q}</h3>
+                  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <p itemprop="text" style="font-size: 1rem; color: var(--seo-muted, #94a3b8); line-height: 1.7; margin: 0;">${geo.homeGeoFaq1A}</p>
+                  </div>
                 </div>
-              </div>
-              <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="background: var(--seo-card, #111520); border: 1px solid var(--seo-border, rgba(255,255,255,0.08)); border-radius: 12px; padding: 20px 24px; margin-bottom: 14px;">
-                <h3 itemprop="name" style="font-size: clamp(1.15rem, 2.5vw, 1.35rem); font-weight: 700; color: var(--seo-text, #f8fafc); margin: 0 0 10px;">${geo.homeGeoFaq2Q}</h3>
-                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                  <p itemprop="text" style="font-size: 1rem; color: var(--seo-muted, #94a3b8); line-height: 1.7; margin: 0;">${geo.homeGeoFaq2A}</p>
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="background: var(--seo-card, #111520); border: 1px solid var(--seo-border, rgba(255,255,255,0.08)); border-radius: 16px; padding: 20px 24px; margin-bottom: 14px;">
+                  <h3 itemprop="name" style="font-size: clamp(1.15rem, 2.5vw, 1.3rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin: 0 0 10px; line-height: 1.4;">${geo.homeGeoFaq2Q}</h3>
+                  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <p itemprop="text" style="font-size: 1rem; color: var(--seo-muted, #94a3b8); line-height: 1.7; margin: 0;">${geo.homeGeoFaq2A}</p>
+                  </div>
                 </div>
-              </div>
-              <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="background: var(--seo-card, #111520); border: 1px solid var(--seo-border, rgba(255,255,255,0.08)); border-radius: 12px; padding: 20px 24px; margin-bottom: 14px;">
-                <h3 itemprop="name" style="font-size: clamp(1.15rem, 2.5vw, 1.35rem); font-weight: 700; color: var(--seo-text, #f8fafc); margin: 0 0 10px;">${geo.homeGeoFaq3Q}</h3>
-                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                  <p itemprop="text" style="font-size: 1rem; color: var(--seo-muted, #94a3b8); line-height: 1.7; margin: 0;">${geo.homeGeoFaq3A}</p>
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="background: var(--seo-card, #111520); border: 1px solid var(--seo-border, rgba(255,255,255,0.08)); border-radius: 16px; padding: 20px 24px; margin-bottom: 14px;">
+                  <h3 itemprop="name" style="font-size: clamp(1.15rem, 2.5vw, 1.3rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin: 0 0 10px; line-height: 1.4;">${geo.homeGeoFaq3Q}</h3>
+                  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <p itemprop="text" style="font-size: 1rem; color: var(--seo-muted, #94a3b8); line-height: 1.7; margin: 0;">${geo.homeGeoFaq3A}</p>
+                  </div>
                 </div>
-              </div>
-              <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="background: var(--seo-card, #111520); border: 1px solid var(--seo-border, rgba(255,255,255,0.08)); border-radius: 12px; padding: 20px 24px; margin-bottom: 14px;">
-                <h3 itemprop="name" style="font-size: clamp(1.15rem, 2.5vw, 1.35rem); font-weight: 700; color: var(--seo-text, #f8fafc); margin: 0 0 10px;">${geo.homeGeoFaq4Q}</h3>
-                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                  <p itemprop="text" style="font-size: 1rem; color: var(--seo-muted, #94a3b8); line-height: 1.7; margin: 0;">${geo.homeGeoFaq4A}</p>
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="background: var(--seo-card, #111520); border: 1px solid var(--seo-border, rgba(255,255,255,0.08)); border-radius: 16px; padding: 20px 24px; margin-bottom: 14px;">
+                  <h3 itemprop="name" style="font-size: clamp(1.15rem, 2.5vw, 1.3rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin: 0 0 10px; line-height: 1.4;">${geo.homeGeoFaq4Q}</h3>
+                  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <p itemprop="text" style="font-size: 1rem; color: var(--seo-muted, #94a3b8); line-height: 1.7; margin: 0;">${geo.homeGeoFaq4A}</p>
+                  </div>
                 </div>
               </div>
             </section>

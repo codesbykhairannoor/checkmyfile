@@ -379,13 +379,13 @@ export const ProGateModal: React.FC<ProGateModalProps> = ({
             <span>
               {!user
                 ? (selectedPlan === 'monthly'
-                    ? (t.pro_signin_subscribe_monthly_btn || 'Sign In & Subscribe Monthly')
-                    : selectedPlan === 'yearly'
+                  ? (t.pro_signin_subscribe_monthly_btn || 'Sign In & Subscribe Monthly')
+                  : selectedPlan === 'yearly'
                     ? (t.pro_signin_subscribe_yearly_btn || 'Sign In & Subscribe Yearly')
                     : (t.pro_signin_get_pass || 'Sign In & Get Lifetime Pass'))
                 : (selectedPlan === 'monthly'
-                    ? (t.pro_subscribe_monthly_btn || 'Subscribe Monthly ($9.99/mo)')
-                    : selectedPlan === 'yearly'
+                  ? (t.pro_subscribe_monthly_btn || 'Subscribe Monthly ($9.99/mo)')
+                  : selectedPlan === 'yearly'
                     ? (t.pro_subscribe_yearly_btn || 'Subscribe Yearly ($79/yr)')
                     : (t.pro_get_lifetime_pass || 'Get Lifetime Pass ($129)'))}
             </span>
