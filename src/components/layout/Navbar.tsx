@@ -316,7 +316,6 @@ export const Navbar: React.FC<NavbarProps> = ({
                   {/* Col 1: Organize PDF — 8 items */}
                   <div className="mega-menu-col">
                     <div className="mega-menu-title">{NAV.organize}</div>
-                    <MI icon={FolderArchive} label={toolNames['batch-pdf']?.[currentLang] || "Batch PDF (Folder)"} onClick={() => handleToolClick('batch-pdf')} highlight={true} />
                     <MI icon={Combine} label={toolNames['merge-pdf']?.[currentLang] || "Merge PDF"} onClick={() => handleToolClick('merge-pdf')} />
                     <MI icon={Scissors} label={toolNames['split-pdf']?.[currentLang] || "Split PDF"} onClick={() => handleToolClick('split-pdf')} />
                     <MI icon={RotateCw} label={toolNames['rotate-pdf']?.[currentLang] || "Rotate PDF"} onClick={() => handleToolClick('rotate-pdf')} />

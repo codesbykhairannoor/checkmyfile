@@ -23,7 +23,7 @@ import { RedactPdfEditor } from './RedactPdfEditor';
 import { ReversePdfEditor } from './ReversePdfEditor';
 import { ResizePdfEditor } from './ResizePdfEditor';
 import { EditPdfEditor } from './EditPdfEditor';
-import type { ToolDefinition } from '../../catalog/toolsCatalog';
+import { getCanonicalToolId, type ToolDefinition } from '../../catalog/toolsCatalog';
 import { editorTranslations } from '../../i18n/editorTranslations';
 
 interface ToolSidebarProps {
@@ -95,6 +95,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
   };
 
   const tUi = editorTranslations[currentLang] || editorTranslations['en'] || {};
+  const canonicalId = getCanonicalToolId(tool.id);
 
   return (
     <div className="mobile-full-width" style={{ flexShrink: 0, flex: 1, minWidth: 350, minHeight: 0, paddingRight: 8, paddingBottom: 24, display: 'flex', flexDirection: 'column', gap: 16, marginTop: 0, overflowY: 'auto' }}>
@@ -109,6 +110,22 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
 
       {files.length > 0 && (
         <div style={{ background: 'var(--bg-card)', padding: 16, borderRadius: 12, border: '1px solid var(--border-color)', boxShadow: 'var(--shadow-sm)' }}>
+          {files.length > 1 && (
+            <div style={{ paddingBottom: 10, marginBottom: 12, borderBottom: '1px solid var(--border-color)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                <span style={{ fontSize: '0.72rem', fontWeight: 800, background: 'rgba(225, 29, 72, 0.1)', color: 'var(--brand-primary)', padding: '2px 8px', borderRadius: 6 }}>
+                  BATCH MODE
+                </span>
+                <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--text-main)' }}>
+                  {files.length} {tUi.files || 'Files Selected'}
+                </span>
+              </div>
+              <span style={{ fontSize: '0.74rem', color: 'var(--text-muted)' }}>
+                {formatSize(files.reduce((acc, f) => acc + f.size, 0))}
+              </span>
+            </div>
+          )}
+
           {files.length > 1 && (
             <div style={{ paddingBottom: 12, marginBottom: 12, borderBottom: '1px solid var(--border-color)' }}>
               <label style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)', marginBottom: 6, display: 'block' }}>
@@ -132,7 +149,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
               >
                 {files.map((f, idx) => (
                   <option key={idx} value={idx}>
-                    #{idx + 1}: {f.name}
+                    #{idx + 1}: {f.name} ({formatSize(f.size)})
                   </option>
                 ))}
               </select>
@@ -162,12 +179,13 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
           </div>
         </div>
       )}
-      {tool.id === 'rotate-pdf' && <RotatePdfEditor rotation={rotateDegrees} setRotation={setRotateDegrees} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
-      {tool.id === 'watermark-pdf' && <WatermarkPdfEditor config={watermarkConfig} setConfig={setWatermarkConfig} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
-      {tool.id === 'page-numbers' && <PageNumbersPdfEditor config={pageNumberConfig} setConfig={setPageNumberConfig} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
-      {tool.id === 'split-pdf' && <SplitPdfEditor splitRange={splitRange} setSplitRange={setSplitRange} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
-      {(tool.id === 'merge-pdf' || tool.id === 'combine-multiple-pdf-files') && <MergePdfEditor files={files} setFiles={setFiles} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
-      {(tool.id === 'compress-pdf' || tool.id === 'compress-pdf-for-email' || tool.id === 'compress-pdf-to-100kb' || tool.id === 'compress-pdf-without-losing-quality' || tool.id === 'reduce-pdf-size-offline') && (
+
+      {canonicalId === 'rotate-pdf' && <RotatePdfEditor rotation={rotateDegrees} setRotation={setRotateDegrees} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
+      {canonicalId === 'watermark-pdf' && <WatermarkPdfEditor config={watermarkConfig} setConfig={setWatermarkConfig} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
+      {canonicalId === 'page-numbers' && <PageNumbersPdfEditor config={pageNumberConfig} setConfig={setPageNumberConfig} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
+      {canonicalId === 'split-pdf' && <SplitPdfEditor splitRange={splitRange} setSplitRange={setSplitRange} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
+      {canonicalId === 'merge-pdf' && <MergePdfEditor files={files} setFiles={setFiles} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />}
+      {canonicalId === 'compress-pdf' && (
         <CompressPdfEditor
           quality={compressQuality}
           setQuality={setCompressQuality}
@@ -180,37 +198,37 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
         />
       )}
 
-      {tool.id === 'pdf-to-image' && extractImageFormat && setExtractImageFormat && (
+      {canonicalId === 'pdf-to-image' && extractImageFormat && setExtractImageFormat && (
         <PdfToImageEditor format={extractImageFormat} setFormat={setExtractImageFormat} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
-      {tool.id === 'remove-pdf' && removeRange !== undefined && setRemoveRange && (
+      {canonicalId === 'remove-pdf' && removeRange !== undefined && setRemoveRange && (
         <RemovePdfEditor removeRange={removeRange} setRemoveRange={setRemoveRange} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
-      {(tool.id === 'organize-pdf' || tool.id === 'reorder-pdf-pages-drag-and-drop') && insertAtIndex !== undefined && setInsertAtIndex && setInsertFile && (
+      {canonicalId === 'organize-pdf' && insertAtIndex !== undefined && setInsertAtIndex && setInsertFile && (
         <OrganizePdfEditor insertFile={insertFile || null} setInsertFile={setInsertFile} insertAtIndex={insertAtIndex} setInsertAtIndex={setInsertAtIndex} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} totalPages={pdfPagesCount} />
       )}
-      {(tool.id === 'sign-pdf' || tool.id === 'sign-pdf-without-registration') && signatureConfig && setSignatureConfig && (
+      {canonicalId === 'sign-pdf' && signatureConfig && setSignatureConfig && (
         <SignPdfEditor signatureConfig={signatureConfig} setSignatureConfig={setSignatureConfig} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
-      {tool.id === 'protect-pdf' && pdfPassword !== undefined && setPdfPassword && (
+      {canonicalId === 'protect-pdf' && pdfPassword !== undefined && setPdfPassword && (
         <ProtectPdfEditor pdfPassword={pdfPassword} setPdfPassword={setPdfPassword} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
-      {(tool.id === 'unlock-pdf' || tool.id === 'remove-pdf-password-without-password') && pdfPassword !== undefined && setPdfPassword && (
+      {canonicalId === 'unlock-pdf' && pdfPassword !== undefined && setPdfPassword && (
         <UnlockPdfEditor pdfPassword={pdfPassword} setPdfPassword={setPdfPassword} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
-      {(tool.id === 'crop-pdf' || tool.id === 'crop-pdf-margins') && cropConfig && setCropConfig && (
+      {canonicalId === 'crop-pdf' && cropConfig && setCropConfig && (
         <CropPdfEditor cropConfig={cropConfig} setCropConfig={setCropConfig} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
-      {tool.id === 'redact-pdf' && redactConfig && setRedactConfig && (
+      {canonicalId === 'redact-pdf' && redactConfig && setRedactConfig && (
         <RedactPdfEditor redactConfig={redactConfig} setRedactConfig={setRedactConfig} onProcess={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} activeFileIndex={activeFileIndex} />
       )}
-      {tool.id === 'reverse-pdf' && (
+      {canonicalId === 'reverse-pdf' && (
         <ReversePdfEditor onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
-      {tool.id === 'resize-pdf' && resizeConfig && setResizeConfig && (
+      {canonicalId === 'resize-pdf' && resizeConfig && setResizeConfig && (
         <ResizePdfEditor config={resizeConfig} setConfig={setResizeConfig} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
-      {tool.id === 'edit-pdf' && (
+      {canonicalId === 'edit-pdf' && (
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
           <details open className="glass-panel" style={{ borderRadius: 16, border: '1px solid var(--border-color)', overflow: 'hidden' }}>
             <summary style={{ padding: '16px 20px', fontWeight: 800, cursor: 'pointer', outline: 'none', background: 'var(--bg-input)', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: 12 }}>
@@ -266,16 +284,16 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
           </details>
         </div>
       )}
-      {(tool.id === 'extract-images-pdf' || tool.id === 'extract-high-res-images-pdf') && (
+      {canonicalId === 'extract-images-pdf' && (
         <ExtractImagesEditor onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
-      {(tool.id === 'grayscale-pdf' || tool.id === 'grayscale-pdf-for-printing') && (
+      {canonicalId === 'grayscale-pdf' && (
         <GrayscalePdfEditor onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
-      {tool.id === 'scan-to-pdf' && (
+      {canonicalId === 'scan-to-pdf' && (
         <ScanToPdfEditor onProcess={() => handleStartProcessing()} tUi={tUi} isProcessing={isProcessing} />
       )}
-      {(tool.id === 'remove-pdf-metadata' || tool.id === 'remove-pdf-author-metadata') && (
+      {canonicalId === 'remove-pdf-metadata' && (
         <RemoveMetadataEditor
           file={files[activeFileIndex] || files[0]}
           onProcess={() => handleStartProcessing()}
@@ -284,7 +302,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
           isProcessing={isProcessing}
         />
       )}
-      {tool.id === 'edit-pdf-metadata' && (
+      {canonicalId === 'edit-pdf-metadata' && (
         <EditMetadataEditor
           file={files[activeFileIndex] || files[0]}
           onApply={(metadataConfig) => handleStartProcessing({ metadataConfig })}
@@ -293,12 +311,12 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
           isProcessing={isProcessing}
         />
       )}
-      {(tool.id === 'compare-pdf' || tool.id === 'compare-pdf-files-visually') && (
+      {canonicalId === 'compare-pdf' && (
         <ComparePdfEditor onProcess={(options) => handleStartProcessing(options)} tUi={tUi} isProcessing={isProcessing} />
       )}
 
-      {['pdf-to-word', 'pdf-to-word-without-losing-formatting', 'word-to-pdf', 'excel-to-pdf', 'image-to-pdf', 'ppt-to-pdf', 'pdf-to-ppt', 'csv-to-pdf', 'txt-to-pdf', 'csv-to-excel', 'excel-to-csv', 'ocr-pdf', 'scanned-pdf-to-text-ocr'].includes(tool.id) && (
-        <GenericConvertEditor toolId={tool.id} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
+      {['pdf-to-word', 'word-to-pdf', 'excel-to-pdf', 'image-to-pdf', 'ppt-to-pdf', 'pdf-to-ppt', 'csv-to-pdf', 'txt-to-pdf', 'csv-to-excel', 'excel-to-csv', 'ocr-pdf'].includes(canonicalId) && (
+        <GenericConvertEditor toolId={canonicalId} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
     </div>
   );

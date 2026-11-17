@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { getLocalizedSeo, type ToolDefinition } from '../catalog/toolsCatalog';
+import { getLocalizedSeo, supportsMultipleFiles, type ToolDefinition } from '../catalog/toolsCatalog';
 import { trackFileDownloaded } from '../lib/analytics';
 import { SeoHead } from '../components/seo/SeoHead';
 import { RelatedTools } from '../components/seo/RelatedTools';
@@ -18,7 +18,6 @@ import { authTranslations } from '../i18n/authTranslations';
 
 import { DocumentLivePreview } from '../components/common/DocumentLivePreview';
 import { ToolSidebar } from '../components/tools/ToolSidebar';
-import { BatchPdfEditor } from '../components/tools/BatchPdfEditor';
 
 interface ToolPageProps {
   tool: ToolDefinition;
@@ -27,106 +26,25 @@ interface ToolPageProps {
   onEditorActive?: (active: boolean) => void;
 }
 
-// Map each tool to the file types it should accept
+// Map each tool to the file types it should accept using canonical tool resolution
 const getAcceptTypes = (toolId: string): string => {
-  switch (toolId) {
-    // PDF-only tools
-    case 'batch-pdf':
-    case 'merge-pdf':
-    case 'combine-multiple-pdf-files':
-    case 'split-pdf':
-    case 'rotate-pdf':
-    case 'compress-pdf':
-    case 'compress-pdf-for-email':
-    case 'compress-pdf-to-100kb':
-    case 'compress-pdf-without-losing-quality':
-    case 'reduce-pdf-size-offline':
-    case 'watermark-pdf':
-    case 'page-numbers':
-    case 'ocr-pdf':
-    case 'scanned-pdf-to-text-ocr':
-    case 'pdf-to-word':
-    case 'pdf-ke-word':
-    case 'pdf-to-word-without-losing-formatting':
-    case 'pdf-to-ppt':
-    case 'pdf-ke-ppt':
-    case 'pdf-to-image':
-    case 'pdf-ke-gambar':
-    case 'remove-pdf':
-    case 'hapus-halaman-pdf':
-    case 'organize-pdf':
-    case 'reorder-pdf-pages-drag-and-drop':
-    case 'sisip-halaman-pdf':
-    case 'sign-pdf':
-    case 'sign-pdf-without-registration':
-    case 'tanda-tangan-pdf':
-    case 'protect-pdf':
-    case 'kunci-pdf':
-    case 'unlock-pdf':
-    case 'remove-pdf-password-without-password':
-    case 'buka-kunci-pdf':
-    case 'crop-pdf':
-    case 'potong-margin-pdf':
-    case 'extract-images-pdf':
-    case 'ambil-gambar-dari-pdf':
-    case 'grayscale-pdf':
-    case 'ubah-pdf-jadi-hitam-putih':
-    case 'scan-to-pdf':
-    case 'remove-pdf-metadata':
-    case 'edit-pdf-metadata':
-    case 'edit-metadata-pdf':
-    case 'compare-pdf':
-    case 'redact-pdf':
-    case 'reverse-pdf':
-    case 'resize-pdf':
-    case 'crop-pdf-margins':
-    case 'grayscale-pdf-for-printing':
-    case 'remove-pdf-author-metadata':
-    case 'extract-high-res-images-pdf':
-    case 'compare-pdf-files-visually':
-    case 'merge-pdf-files-offline':
-    case 'convert-scanned-pdf-to-text':
-    case 'add-page-numbers-to-pdf-free':
-    case 'remove-pdf-watermark-online':
-      return '.pdf,application/pdf';
-
-    // Word files only
+  const canonicalId = getCanonicalToolId(toolId);
+  switch (canonicalId) {
     case 'word-to-pdf':
-    case 'word-ke-pdf':
       return '.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document';
-
-    // Excel files only
     case 'excel-to-pdf':
-    case 'excel-ke-pdf':
     case 'excel-to-csv':
-    case 'excel-ke-csv':
       return '.xls,.xlsx,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
-
-    // PowerPoint files only
     case 'ppt-to-pdf':
-    case 'ppt-ke-pdf':
       return '.ppt,.pptx,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation';
-
-    // Text files only
     case 'txt-to-pdf':
-    case 'teks-ke-pdf':
       return '.txt,text/plain';
-
-    // CSV files only
-    case 'csv-to-pdf':
-    case 'csv-ke-pdf':
     case 'csv-to-excel':
-    case 'csv-ke-excel':
       return '.csv,text/csv';
-
-    // Image files only
     case 'image-to-pdf':
-    case 'gambar-ke-pdf':
       return '.png,.jpg,.jpeg,.webp,.gif,image/png,image/jpeg,image/webp,image/gif';
-
-    // Default: everything
     default:
-      return '.pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.png,.jpg,.jpeg,.txt,.csv';
+      return '.pdf,application/pdf';
   }
 };
 
@@ -237,7 +155,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
     }
 
     startProcessing({
-      files, toolId: tool.id, toolCategory: tool.category, currentLang,
+      files, toolId: tool.id, toolCategory: tool.category, currentLang, isPro,
       splitRange, rotateDegrees, pageNumberConfig, watermarkConfig, compressQuality, compressPercent, extractImageFormat,
       removeRange, insertFile, insertAtIndex, signatureConfig, pdfPassword, cropConfig, redactConfig,
       resizePageSize: resizeConfig.pageSize, resizeOrientation: resizeConfig.orientation, resizeMargin: resizeConfig.margin,
@@ -283,23 +201,6 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
       
       <article style={{ width: '100%', flex: 1, display: 'flex', flexDirection: 'column' }}>
 
-      {tool.id === 'batch-pdf' ? (
-        <div style={{ maxWidth: 1440, margin: '40px auto', width: '100%', padding: '0 24px', flex: 1, display: 'flex', flexDirection: 'column' }}>
-          <BatchPdfEditor
-            currentLang={currentLang}
-            files={files}
-            setFiles={setFiles}
-            formatSize={formatSize}
-          />
-          {seoData.data && (
-            <div style={{ marginTop: 48 }}>
-              <SeoRichSections data={seoData.data} />
-            </div>
-          )}
-          <RelatedTools currentToolId={tool.id} category={tool.category} currentLang={currentLang} />
-        </div>
-      ) : (
-        <>
       {/* Dynamic Header - Hidden in Workspace Mode and Result Mode to maximize preview space */}
       {files.length === 0 && !isCompleted && (
         <div style={{ textAlign: 'center', padding: '0 24px', maxWidth: 1440, margin: '64px auto 40px auto', width: '100%' }}>
@@ -438,7 +339,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                 selectedEditId={selectedEditId} setSelectedEditId={setSelectedEditId}
                 formatSize={formatSize}
                 acceptTypes={getAcceptTypes(tool.id)}
-                allowMultiple={tool.id === 'merge-pdf' || tool.id === 'gabung-pdf' || tool.id === 'image-to-pdf' || tool.id === 'gambar-ke-pdf'}
+                allowMultiple={supportsMultipleFiles(tool.id)}
               />
             </div>
           </React.Suspense>
@@ -477,7 +378,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                 resetProcessor();
               }}
               accept={getAcceptTypes(tool.id)}
-              multiple={tool.id === 'merge-pdf' || tool.id === 'gabung-pdf' || tool.id === 'image-to-pdf' || tool.id === 'gambar-ke-pdf'}
+              multiple={supportsMultipleFiles(tool.id)}
             />
           </div>
           {seoData.loading ? (
@@ -593,8 +494,6 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
       {/* Internal Linking Silo (White Hat AEO) - Only show when idle */}
       {files.length === 0 && !isCompleted && (
         <RelatedTools currentToolId={tool.id} category={tool.category} currentLang={currentLang} />
-      )}
-        </>
       )}
 
       </article>

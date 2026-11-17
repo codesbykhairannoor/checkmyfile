@@ -218,15 +218,9 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
                       <div style={{ width: 56, height: 56, background: 'var(--bg-input)', borderRadius: 18, display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid var(--border-color)' }}>
                         <IconComponent size={24} style={{ color: 'var(--brand-primary)' }} />
                       </div>
-                      {tool.id === 'batch-pdf' ? (
-                        <span style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', padding: '6px 14px', borderRadius: 9999, background: 'var(--brand-primary)', color: '#fff' }}>
-                          PRO BATCH
-                        </span>
-                      ) : (
-                        <span style={{ fontSize: '0.65rem', fontWeight: 900, letterSpacing: '0.15em', textTransform: 'uppercase', padding: '6px 14px', borderRadius: 9999, background: 'var(--bg-input)', color: 'var(--text-muted)' }}>
-                          {tool.category}
-                        </span>
-                      )}
+                      <span style={{ fontSize: '0.65rem', fontWeight: 900, letterSpacing: '0.15em', textTransform: 'uppercase', padding: '6px 14px', borderRadius: 9999, background: 'var(--bg-input)', color: 'var(--text-muted)' }}>
+                        {tool.category}
+                      </span>
                     </div>
 
                     <div style={{ flexGrow: 1 }}>

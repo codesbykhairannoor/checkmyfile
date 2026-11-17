@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react';
 import { getUiTranslations } from '../i18n/translations';
 import { trackToolStarted, trackToolCompleted, trackToolFailed, getEngineTypeFromToolId } from '../lib/analytics';
+import { getCanonicalToolId } from '../catalog/toolsCatalog';
 
 interface ProcessorOptions {
   files: File[];
   toolId: string;
   toolCategory: string;
   currentLang: string;
+  isPro?: boolean;
   splitRange?: string;
   rotateDegrees?: number;
   password?: string;
@@ -27,6 +29,220 @@ interface ProcessorOptions {
   resizeOrientation?: string;
   resizeMargin?: number;
   editElements?: any[];
+  metadataConfig?: any;
+}
+
+interface SingleFileResult {
+  bytes: Uint8Array;
+  name: string;
+  metadata?: any;
+  previewFiles?: File[];
+  ocrText?: string;
+}
+
+async function processSingleFile(
+  canonicalId: string,
+  file: File,
+  options: ProcessorOptions,
+  onProgress: (p: number) => void
+): Promise<SingleFileResult> {
+  const baseName = file.name.replace(/\.[^/.]+$/, '');
+
+  switch (canonicalId) {
+    case 'split-pdf': {
+      const results = await (await import('../engines/pdfEngine')).splitPdf(file, options.splitRange || '', onProgress);
+      if (results.length === 1) {
+        return { bytes: results[0].data, name: results[0].name };
+      } else {
+        const zipFiles: Record<string, Uint8Array> = {};
+        results.forEach((r) => { zipFiles[r.name] = r.data; });
+        const { zipSync } = await import('fflate');
+        return { bytes: zipSync(zipFiles, { level: 6 }), name: `${baseName}_split_pages.zip` };
+      }
+    }
+
+    case 'rotate-pdf': {
+      const bytes = await (await import('../engines/pdfEngine')).rotatePdf(file, options.rotateDegrees || 0, onProgress);
+      return { bytes, name: `${baseName}_rotated.pdf` };
+    }
+
+    case 'protect-pdf': {
+      const resultBlob = await (await import('../engines/pdf/protectPdf')).protectPdf(file, options.pdfPassword, onProgress);
+      return { bytes: new Uint8Array(await resultBlob.arrayBuffer()), name: `${baseName}_protected.pdf` };
+    }
+
+    case 'unlock-pdf': {
+      const resultBlob = await (await import('../engines/pdf/unlockPdf')).unlockPdf(file, options.pdfPassword, onProgress);
+      return { bytes: new Uint8Array(await resultBlob.arrayBuffer()), name: `${baseName}_unlocked.pdf` };
+    }
+
+    case 'crop-pdf': {
+      const resultBlob = await (await import('../engines/pdf/cropPdf')).cropPdf(file, options.cropConfig, onProgress);
+      return { bytes: new Uint8Array(await resultBlob.arrayBuffer()), name: `${baseName}_cropped.pdf` };
+    }
+
+    case 'extract-images-pdf': {
+      const resultBlob = await (await import('../engines/pdf/extractImages')).extractImagesPdf(file, onProgress);
+      return { bytes: new Uint8Array(await resultBlob.arrayBuffer()), name: `${baseName}_images.zip` };
+    }
+
+    case 'grayscale-pdf': {
+      const resultBlob = await (await import('../engines/pdf/grayscalePdf')).grayscalePdf(file, onProgress);
+      return { bytes: new Uint8Array(await resultBlob.arrayBuffer()), name: `${baseName}_grayscale.pdf` };
+    }
+
+    case 'scan-to-pdf': {
+      const bytes = await (await import('../engines/pdf/scanToPdf')).scanToPdf(file, onProgress);
+      return { bytes, name: `${baseName}_scanned.pdf` };
+    }
+
+    case 'remove-pdf-metadata': {
+      const bytes = await (await import('../engines/pdf/removeMetadataPdf')).removeMetadataPdf(file);
+      return { bytes, name: `${baseName}_sanitized.pdf` };
+    }
+
+    case 'edit-pdf-metadata': {
+      const bytes = await (await import('../engines/pdf/editMetadataPdf')).editMetadataPdf(file, options.metadataConfig);
+      return { bytes, name: `${baseName}_properties_updated.pdf` };
+    }
+
+    case 'redact-pdf': {
+      if (!options.redactConfig) throw new Error("Konfigurasi sensor tidak ditemukan.");
+      const bytes = await (await import('../engines/pdf/redactPdf')).redactPdf(file, options.redactConfig, onProgress);
+      return { bytes, name: `${baseName}_redacted.pdf` };
+    }
+
+    case 'reverse-pdf': {
+      const bytes = await (await import('../engines/pdf/reversePdf')).reversePdf(file, onProgress);
+      return { bytes, name: `${baseName}_reversed.pdf` };
+    }
+
+    case 'resize-pdf': {
+      const resizeOptions = {
+        pageSize: options.resizePageSize || 'A4',
+        orientation: options.resizeOrientation || 'Auto',
+        margin: options.resizeMargin || 0
+      };
+      const bytes = await (await import('../engines/pdf/resizePdf')).resizePdf(file, resizeOptions, onProgress);
+      return { bytes, name: `${baseName}_resized.pdf` };
+    }
+
+    case 'edit-pdf': {
+      if (!options.editElements) throw new Error("Konfigurasi elemen edit tidak ditemukan.");
+      const bytes = await (await import('../engines/pdf/editPdf')).editPdf(file, options.editElements, onProgress);
+      return { bytes, name: `${baseName}_edited.pdf` };
+    }
+
+    case 'page-numbers': {
+      const bytes = await (await import('../engines/pdfEngine')).addPageNumbers(file, options.pageNumberConfig, onProgress);
+      return { bytes, name: `${baseName}_numbered.pdf` };
+    }
+
+    case 'watermark-pdf': {
+      const bytes = await (await import('../engines/pdfEngine')).addWatermark(file, options.watermarkConfig, onProgress);
+      return { bytes, name: `${baseName}_watermarked.pdf` };
+    }
+
+    case 'remove-pdf': {
+      const pagesToRemove: number[] = [];
+      if (options.removeRange) {
+        const parts = options.removeRange.split(',');
+        for (const part of parts) {
+          const trimmed = part.trim();
+          if (trimmed.includes('-')) {
+            const [s, e] = trimmed.split('-').map(Number);
+            if (!isNaN(s) && !isNaN(e)) {
+              for (let i = s; i <= e; i++) pagesToRemove.push(i - 1);
+            }
+          } else {
+            const n = parseInt(trimmed);
+            if (!isNaN(n)) pagesToRemove.push(n - 1);
+          }
+        }
+      }
+      const resultBlob = await (await import('../engines/pdf/removePages')).removePdfPages(file, pagesToRemove, onProgress);
+      return { bytes: new Uint8Array(await resultBlob.arrayBuffer()), name: `${baseName}_removed.pdf` };
+    }
+
+    case 'organize-pdf': {
+      if (options.insertFile && options.insertAtIndex !== undefined) {
+        const resultBlob = await (await import('../engines/pdf/organizePdf')).insertPdfPages(file, options.insertFile, options.insertAtIndex, onProgress);
+        return { bytes: new Uint8Array(await resultBlob.arrayBuffer()), name: `${baseName}_organized.pdf` };
+      }
+      const bytes = new Uint8Array(await file.arrayBuffer());
+      return { bytes, name: `${baseName}_organized.pdf` };
+    }
+
+    case 'sign-pdf': {
+      if (options.signatureConfig) {
+        const resultBlob = await (await import('../engines/pdf/signPdf')).signPdf(file, options.signatureConfig, onProgress);
+        return { bytes: new Uint8Array(await resultBlob.arrayBuffer()), name: `${baseName}_signed.pdf` };
+      }
+      const bytes = new Uint8Array(await file.arrayBuffer());
+      return { bytes, name: `${baseName}_signed.pdf` };
+    }
+
+    case 'compress-pdf': {
+      const bytes = await (await import('../engines/compressEngine')).compressPdf(file, options.compressQuality, onProgress, options.compressPercent);
+      return { bytes, name: `${baseName}_compressed.pdf` };
+    }
+
+    case 'pdf-to-word': {
+      const bytes = await (await import('../engines/officeEngine')).convertPdfToWord(file, onProgress);
+      return { bytes, name: `${baseName}.docx`, previewFiles: [file] };
+    }
+
+    case 'pdf-to-ppt': {
+      const bytes = await (await import('../engines/pdfEngine')).convertPdfToPptx(file, onProgress);
+      const outName = `${baseName}.pptx`;
+      const pptxFile = new File([bytes as any], outName, { type: 'application/vnd.openxmlformats-officedocument.presentationml.presentation' });
+      return { bytes, name: outName, previewFiles: [pptxFile] };
+    }
+
+    case 'csv-to-excel': {
+      const bytes = await (await import('../engines/officeEngine')).convertCsvToExcel(file, onProgress);
+      return { bytes, name: `${baseName}.xlsx` };
+    }
+
+    case 'excel-to-csv': {
+      const bytes = await (await import('../engines/officeEngine')).convertExcelToCsv(file, onProgress);
+      return { bytes, name: `${baseName}.csv` };
+    }
+
+    case 'excel-to-pdf':
+    case 'ppt-to-pdf':
+    case 'txt-to-pdf':
+    case 'word-to-pdf': {
+      const bytes = await (await import('../engines/officeEngine')).convertOfficeDocumentToPdf(file, canonicalId, onProgress);
+      return { bytes, name: `${baseName}.pdf` };
+    }
+
+    case 'pdf-to-image': {
+      const { zipBytes, filename, previewFiles } = await (await import('../engines/imageEngine')).convertPdfToImagesZip(
+        file,
+        options.extractImageFormat || 'png',
+        onProgress
+      );
+      return { bytes: zipBytes, name: filename, previewFiles: previewFiles || [] };
+    }
+
+    case 'ocr-pdf': {
+      const ocrRes = await (await import('../engines/ocrEngine')).runOcrOnDocument(file, options.currentLang, (p) => {
+        onProgress(p);
+      });
+      const encoder = new TextEncoder();
+      return { bytes: encoder.encode(ocrRes.text), name: `${baseName}_ocr_extracted.txt`, ocrText: ocrRes.text };
+    }
+
+    default: {
+      if (options.toolCategory === 'office') {
+        const bytes = await (await import('../engines/officeEngine')).convertOfficeDocumentToPdf(file, canonicalId, onProgress);
+        return { bytes, name: `${baseName}.pdf` };
+      }
+      const bytes = new Uint8Array(await file.arrayBuffer());
+      return { bytes, name: `${baseName}_processed.pdf` };
+    }
+  }
 }
 
 export function useDocumentProcessor() {
@@ -61,182 +277,97 @@ export function useDocumentProcessor() {
     setErrorMessage(null);
     setProcessorMetadata(null);
     setOcrTextResult(null);
-    setStatusText(t.processingText);
+    setStatusText(t.processingText || 'Processing documents...');
+
+    // Resolve Canonical Tool ID (guarantees all SEO aliases execute their true engine)
+    const canonicalId = getCanonicalToolId(toolId);
+
+    // Free users: cap at 10 files per batch
+    const filesToProcess = (!options.isPro && files.length > 10) ? files.slice(0, 10) : files;
 
     // Track analytics: tool started
     const processingStartTime = performance.now();
-    const totalFileSizeKb = files.reduce((acc, f) => acc + f.size / 1024, 0);
-    const engineType = getEngineTypeFromToolId(toolId, toolCategory);
+    const totalFileSizeKb = filesToProcess.reduce((acc, f) => acc + f.size / 1024, 0);
+    const engineType = getEngineTypeFromToolId(canonicalId, toolCategory);
     trackToolStarted({
-      tool_id: toolId,
+      tool_id: canonicalId,
       tool_category: toolCategory,
       engine_type: engineType,
-      file_count: files.length,
+      file_count: filesToProcess.length,
       file_size_kb: totalFileSizeKb,
       language: currentLang,
     });
 
     try {
       let resultBytes: Uint8Array | null = null;
-      let outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_processed.pdf`;
+      let outName = `${filesToProcess[0].name.replace(/\.[^/.]+$/, '')}_processed.pdf`;
 
-      if (toolId === 'merge-pdf' || toolId === 'combine-multiple-pdf-files') {
-        resultBytes = await (await import('../engines/pdfEngine')).mergePdfs(files, (p) => setProgress(p));
-        outName = `merged_${files.length}_files.pdf`;
-      } else if (toolId === 'split-pdf') {
-        const results = await (await import('../engines/pdfEngine')).splitPdf(files[0], options.splitRange || '', (p) => setProgress(p));
-        if (results.length === 1) {
-          resultBytes = results[0].data;
-          outName = results[0].name;
-        } else {
-          const zipFiles: Record<string, Uint8Array> = {};
-          results.forEach((r) => { zipFiles[r.name] = r.data; });
-          const { zipSync } = await import('fflate');
-          resultBytes = zipSync(zipFiles, { level: 6 });
-          outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_split_pages.zip`;
-        }
-      } else if (toolId === 'rotate-pdf') {
-        resultBytes = await (await import('../engines/pdfEngine')).rotatePdf(files[0], options.rotateDegrees || 0, (p) => setProgress(p));
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_rotated.pdf`;
-      } else if (toolId === 'protect-pdf') {
-        const resultBlob = await (await import('../engines/pdf/protectPdf')).protectPdf(files[0], options.pdfPassword, (p) => setProgress(p));
-        resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_protected.pdf`;
-      } else if (toolId === 'unlock-pdf') {
-        const resultBlob = await (await import('../engines/pdf/unlockPdf')).unlockPdf(files[0], options.pdfPassword, (p) => setProgress(p));
-        resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_unlocked.pdf`;
-      } else if (toolId === 'crop-pdf') {
-        const resultBlob = await (await import('../engines/pdf/cropPdf')).cropPdf(files[0], options.cropConfig, (p) => setProgress(p));
-        resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_cropped.pdf`;
-      } else if (toolId === 'extract-images-pdf') {
-        const resultBlob = await (await import('../engines/pdf/extractImages')).extractImagesPdf(files[0], (p) => setProgress(p));
-        resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_images.zip`;
-      } else if (toolId === 'grayscale-pdf') {
-        const resultBlob = await (await import('../engines/pdf/grayscalePdf')).grayscalePdf(files[0], (p) => setProgress(p));
-        resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_grayscale.pdf`;
-      } else if (toolId === 'scan-to-pdf') {
-        resultBytes = await (await import('../engines/pdf/scanToPdf')).scanToPdf(files[0], (p) => setProgress(p));
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_scanned.pdf`;
-      } else if (toolId === 'remove-pdf-metadata') {
-        resultBytes = await (await import('../engines/pdf/removeMetadataPdf')).removeMetadataPdf(files[0]);
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_sanitized.pdf`;
-      } else if (toolId === 'edit-pdf-metadata') {
-        resultBytes = await (await import('../engines/pdf/editMetadataPdf')).editMetadataPdf(files[0], options.metadataConfig);
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_properties_updated.pdf`;
-      } else if (toolId === 'compare-pdf') {
-        if (!options.compareFile2) throw new Error("File pembanding tidak ditemukan.");
-        const compareResult = await (await import('../engines/pdf/comparePdf')).comparePdf(files[0], options.compareFile2, (p) => setProgress(p));
+      // 1. Native Multi-File Combiners
+      if (canonicalId === 'merge-pdf') {
+        resultBytes = await (await import('../engines/pdfEngine')).mergePdfs(filesToProcess, (p) => setProgress(p));
+        outName = `merged_${filesToProcess.length}_files.pdf`;
+      } else if (canonicalId === 'image-to-pdf') {
+        resultBytes = await (await import('../engines/imageEngine')).convertImagesToPdf(filesToProcess, (p) => setProgress(p));
+        outName = `converted_${filesToProcess.length}_images.pdf`;
+      } else if (canonicalId === 'compare-pdf') {
+        const file1 = filesToProcess[0];
+        const file2 = options.compareFile2 || filesToProcess[1];
+        if (!file2) throw new Error("File pembanding tidak ditemukan.");
+        const compareResult = await (await import('../engines/pdf/comparePdf')).comparePdf(file1, file2, (p) => setProgress(p));
         resultBytes = compareResult.bytes;
-        setProcessorMetadata({ 
+        outName = `${file1.name.replace(/\.[^/.]+$/, '')}_comparison.pdf`;
+        setProcessorMetadata({
           accuracy: compareResult.accuracy,
-          originalAnnotatedBytes: compareResult.originalBytes 
+          originalAnnotatedBytes: compareResult.originalBytes
         });
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_comparison.pdf`;
-      } else if (toolId === 'redact-pdf') {
-        if (!options.redactConfig) throw new Error("Konfigurasi sensor tidak ditemukan.");
-        resultBytes = await (await import('../engines/pdf/redactPdf')).redactPdf(files[0], options.redactConfig, (p) => setProgress(p));
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_redacted.pdf`;
-      } else if (toolId === 'reverse-pdf') {
-        resultBytes = await (await import('../engines/pdf/reversePdf')).reversePdf(files[0], (p) => setProgress(p));
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_reversed.pdf`;
-      } else if (toolId === 'resize-pdf') {
-        const resizeOptions = {
-          pageSize: options.resizePageSize || 'A4',
-          orientation: options.resizeOrientation || 'Auto',
-          margin: options.resizeMargin || 0
-        };
-        resultBytes = await (await import('../engines/pdf/resizePdf')).resizePdf(files[0], resizeOptions, (p) => setProgress(p));
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_resized.pdf`;
-      } else if (toolId === 'edit-pdf') {
-        if (!options.editElements) throw new Error("Konfigurasi elemen edit tidak ditemukan.");
-        resultBytes = await (await import('../engines/pdf/editPdf')).editPdf(files[0], options.editElements, (p) => setProgress(p));
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_edited.pdf`;
-      } else if (toolId === 'page-numbers') {
-        resultBytes = await (await import('../engines/pdfEngine')).addPageNumbers(files[0], options.pageNumberConfig, (p) => setProgress(p));
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_numbered.pdf`;
-      } else if (toolId === 'watermark-pdf') {
-        resultBytes = await (await import('../engines/pdfEngine')).addWatermark(files[0], options.watermarkConfig, (p) => setProgress(p));
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_watermarked.pdf`;
-      } else if (toolId === 'remove-pdf') {
-        if (options.removeRange) {
-          const pagesToRemove: number[] = [];
-          const parts = options.removeRange.split(',');
-          for (const part of parts) {
-            const trimmed = part.trim();
-            if (trimmed.includes('-')) {
-              const [s, e] = trimmed.split('-').map(Number);
-              if (!isNaN(s) && !isNaN(e)) {
-                for (let i = s; i <= e; i++) pagesToRemove.push(i - 1);
-              }
-            } else {
-              const n = parseInt(trimmed);
-              if (!isNaN(n)) pagesToRemove.push(n - 1);
-            }
+      } else if (filesToProcess.length === 1) {
+        // 2. Single Document Processing
+        const single = await processSingleFile(canonicalId, filesToProcess[0], options, (p) => setProgress(p));
+        resultBytes = single.bytes;
+        outName = single.name;
+        if (single.metadata) setProcessorMetadata(single.metadata);
+        if (single.previewFiles) setResultPreviewFiles(single.previewFiles);
+        if (single.ocrText) setOcrTextResult(single.ocrText);
+      } else {
+        // 3. Batch Multi-File Processing (Every single tool now natively processes batches!)
+        const { zipSync } = await import('fflate');
+        const zipMap: Record<string, Uint8Array> = {};
+        const allPreviewFiles: File[] = [];
+        const total = filesToProcess.length;
+
+        for (let i = 0; i < total; i++) {
+          const file = filesToProcess[i];
+          const basePercent = Math.round((i / total) * 100);
+          const spanPercent = 100 / total;
+          setStatusText(`Batch processing ${i + 1}/${total}: ${file.name}...`);
+
+          const single = await processSingleFile(canonicalId, file, options, (subP) => {
+            setProgress(Math.round(basePercent + (subP / 100) * spanPercent));
+          });
+
+          if (single.previewFiles) {
+            allPreviewFiles.push(...single.previewFiles);
           }
-          const resultBlob = await (await import('../engines/pdf/removePages')).removePdfPages(files[0], pagesToRemove, (p) => setProgress(p));
-          resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
+
+          // Prevent filename collisions inside ZIP
+          let uniqueName = single.name;
+          let counter = 1;
+          while (zipMap[uniqueName]) {
+            const dot = uniqueName.lastIndexOf('.');
+            const base = dot !== -1 ? uniqueName.slice(0, dot) : uniqueName;
+            const ext = dot !== -1 ? uniqueName.slice(dot) : '';
+            uniqueName = `${base}_(${counter})${ext}`;
+            counter++;
+          }
+          zipMap[uniqueName] = single.bytes;
         }
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_removed.pdf`;
-      } else if (toolId === 'organize-pdf') {
-        if (options.insertFile && options.insertAtIndex !== undefined) {
-          const resultBlob = await (await import('../engines/pdf/organizePdf')).insertPdfPages(files[0], options.insertFile, options.insertAtIndex, (p) => setProgress(p));
-          resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
+
+        resultBytes = zipSync(zipMap, { level: 6 });
+        outName = `${canonicalId}_batch_${total}_files.zip`;
+        if (allPreviewFiles.length > 0) {
+          setResultPreviewFiles(allPreviewFiles);
         }
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_organized.pdf`;
-      } else if (toolId === 'sign-pdf' || toolId === 'sign-pdf-without-registration') {
-        if (options.signatureConfig) {
-          const resultBlob = await (await import('../engines/pdf/signPdf')).signPdf(files[0], options.signatureConfig, (p) => setProgress(p));
-          resultBytes = new Uint8Array(await resultBlob.arrayBuffer());
-        }
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_signed.pdf`;
-      } else if (toolId === 'compress-pdf' || toolId === 'compress-pdf-for-email' || toolId === 'compress-pdf-to-100kb' || toolId === 'compress-pdf-without-losing-quality') {
-        resultBytes = await (await import('../engines/compressEngine')).compressPdf(files[0], options.compressQuality, (p) => setProgress(p), options.compressPercent);
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_compressed.pdf`;
-      } else if (toolId === 'pdf-to-word' || toolId === 'pdf-to-word-without-losing-formatting') {
-        resultBytes = await (await import('../engines/officeEngine')).convertPdfToWord(files[0], (p) => setProgress(p));
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}.docx`;
-        setResultPreviewFiles([files[0]]);
-      } else if (toolId === 'pdf-to-ppt') {
-        resultBytes = await (await import('../engines/pdfEngine')).convertPdfToPptx(files[0], (p) => setProgress(p));
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}.pptx`;
-        const generatedPptx = new File([resultBytes as any], outName, { type: 'application/vnd.openxmlformats-officedocument.presentationml.presentation' });
-        setResultPreviewFiles([generatedPptx]);
-      } else if (toolId === 'csv-to-excel') {
-        resultBytes = await (await import('../engines/officeEngine')).convertCsvToExcel(files[0], (p) => setProgress(p));
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}.xlsx`;
-      } else if (toolId === 'excel-to-csv') {
-        resultBytes = await (await import('../engines/officeEngine')).convertExcelToCsv(files[0], (p) => setProgress(p));
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}.csv`;
-      } else if (toolCategory === 'office') {
-        resultBytes = await (await import('../engines/officeEngine')).convertOfficeDocumentToPdf(files[0], toolId, (p) => setProgress(p));
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}.pdf`;
-      } else if (toolId === 'image-to-pdf') {
-        resultBytes = await (await import('../engines/imageEngine')).convertImagesToPdf(files, (p) => setProgress(p));
-        outName = `converted_${files.length}_images.pdf`;
-      } else if (toolId === 'pdf-to-image') {
-        const { zipBytes, filename, previewFiles } = await (await import('../engines/imageEngine')).convertPdfToImagesZip(
-          files[0],
-          options.extractImageFormat || 'png',
-          (p) => setProgress(p)
-        );
-        resultBytes = zipBytes;
-        outName = filename;
-        if (previewFiles && previewFiles.length > 0) {
-          setResultPreviewFiles(previewFiles);
-        }
-      } else if (toolId === 'ocr-pdf') {
-        const ocrRes = await (await import('../engines/ocrEngine')).runOcrOnDocument(files[0], currentLang, (p, status) => {
-          setProgress(p);
-          setStatusText(status);
-        });
-        setOcrTextResult(ocrRes.text);
-        const encoder = new TextEncoder();
-        resultBytes = encoder.encode(ocrRes.text);
-        outName = `${files[0].name.replace(/\.[^/.]+$/, '')}_ocr_extracted.txt`;
+        setStatusText(`Complete! ${total} files processed in batch.`);
       }
 
       if (resultBytes) {
@@ -260,7 +391,7 @@ export function useDocumentProcessor() {
         const durationMs = performance.now() - processingStartTime;
         const outputSizeKb = resultBytes ? resultBytes.byteLength / 1024 : 0;
         trackToolCompleted({
-          tool_id: toolId,
+          tool_id: canonicalId,
           tool_category: toolCategory,
           engine_type: engineType,
           duration_ms: durationMs,
@@ -274,7 +405,7 @@ export function useDocumentProcessor() {
       setErrorMessage(errMsg);
       // Track analytics: tool failed
       trackToolFailed({
-        tool_id: toolId,
+        tool_id: canonicalId,
         tool_category: toolCategory,
         error_message: errMsg,
         language: currentLang,
