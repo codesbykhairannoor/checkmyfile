@@ -84,7 +84,6 @@ export const Navbar: React.FC<NavbarProps> = ({
   const [isMobileLangOpen, setIsMobileLangOpen] = useState(false);
   const [isMegaOpen, setIsMegaOpen] = useState(false);
   const [isSuiteOpen, setIsSuiteOpen] = useState(false);
-  const [suiteView, setSuiteView] = useState<'main' | 'language'>('main');
   const [langSearch, setLangSearch] = useState('');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [mobileSearch, setMobileSearch] = useState('');
@@ -249,7 +248,6 @@ export const Navbar: React.FC<NavbarProps> = ({
       if (navRef.current && !navRef.current.contains(e.target as Node)) {
         setIsMegaOpen(false);
         setIsSuiteOpen(false);
-        setSuiteView('main');
         setLangSearch('');
         setIsMobileMenuOpen(false);
         setMobileSearch('');
@@ -725,9 +723,8 @@ export const Navbar: React.FC<NavbarProps> = ({
                     fontFamily: 'var(--font-main)',
                   }}
                 >
-                  {suiteView === 'main' ? (
-                    <div>
-                      {/* 2-Pane Split Content */}
+                  <div>
+                    {/* 2-Pane Split Content */}
                       <div style={{ display: 'grid', gridTemplateColumns: '1.45fr 1fr', minHeight: 320 }}>
                         {/* LEFT PANE: ECOSYSTEM APPS & PLATFORMS */}
                         <div style={{ padding: '20px 22px', borderRight: '1px solid var(--border-color)' }}>
@@ -1169,166 +1166,53 @@ export const Navbar: React.FC<NavbarProps> = ({
                           </span>
                         </button>
 
-                        {/* Language Selector Drilldown Button (Sliding Navigation) */}
-                        <button
-                          onClick={() => setSuiteView('language')}
+                        {/* Claim PRO Offer Button (Directed to Pricing, exact same compact size) */}
+                        <a
+                          href={currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            setIsSuiteOpen(false);
+                            window.history.pushState({}, '', currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`);
+                            window.dispatchEvent(new PopStateEvent('popstate'));
+                          }}
                           style={{
                             display: 'inline-flex',
                             alignItems: 'center',
-                            gap: 8,
+                            gap: 7,
                             padding: '6px 14px',
                             borderRadius: 8,
-                            background: 'var(--bg-card)',
-                            border: '1px solid var(--border-color)',
+                            background: 'rgba(245, 158, 11, 0.08)',
+                            border: '1px solid rgba(245, 158, 11, 0.35)',
                             color: 'var(--text-main)',
                             fontSize: '0.78rem',
                             fontWeight: 700,
                             cursor: 'pointer',
+                            textDecoration: 'none',
                             transition: 'all 0.15s ease',
                           }}
+                          title={currentLang === 'id' ? 'Klaim Penawaran PRO (Diskon 34%)' : 'Claim PRO Offer (Save 34%)'}
                         >
-                          <span style={{ fontSize: '1rem', lineHeight: 1 }}>
-                            {getLanguageByCode(currentLang).flag}
-                          </span>
+                          <Crown size={14} color="#f59e0b" style={{ flexShrink: 0 }} />
                           <span>
-                            {getLanguageByCode(currentLang).nativeName}
+                            {currentLang === 'id' ? 'Klaim Promo PRO' : 'Claim PRO Offer'}
                           </span>
-                          <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
-                            ({currentLang === 'id' ? '30 Bahasa' : '30 Languages'})
-                          </span>
-                          <ArrowRight size={13} color="var(--text-muted)" />
-                        </button>
-                      </div>
-                    </div>
-                  ) : (
-                    /* ── Sliding Language Selector Sub-Panel ── */
-                    <div style={{ animation: 'fadeInDown 0.15s ease' }}>
-                      {/* Sub-Header with Back Button */}
-                      <div
-                        style={{
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'space-between',
-                          padding: '14px 22px',
-                          borderBottom: '1px solid var(--border-color)',
-                          background: 'var(--bg-app)',
-                        }}
-                      >
-                        <button
-                          onClick={() => setSuiteView('main')}
-                          style={{
-                            display: 'inline-flex',
-                            alignItems: 'center',
-                            gap: 6,
-                            background: 'none',
-                            border: 'none',
-                            color: 'var(--brand-primary)',
-                            fontWeight: 800,
-                            fontSize: '0.84rem',
-                            cursor: 'pointer',
-                            padding: '4px 8px',
-                            borderRadius: 6,
-                          }}
-                        >
-                          <ArrowLeft size={16} />
-                          <span>{currentLang === 'id' ? 'Kembali ke Menu Suite' : 'Back to Ecosystem'}</span>
-                        </button>
-                        <div style={{ fontSize: '0.84rem', fontWeight: 800, color: 'var(--text-main)' }}>
-                          {currentLang === 'id' ? 'Pilih Bahasa (30 Bahasa)' : 'Select Language (30 Available)'}
-                        </div>
-                      </div>
-
-                      {/* Language Search Input */}
-                      <div style={{ padding: '12px 22px 8px', borderBottom: '1px solid var(--border-color)' }}>
-                        <div
-                          style={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: 8,
-                            background: 'var(--bg-app)',
-                            border: '1px solid var(--border-color)',
-                            borderRadius: 8,
-                            padding: '7px 12px',
-                          }}
-                        >
-                          <Search size={15} color="var(--text-muted)" />
-                          <input
-                            type="text"
-                            value={langSearch}
-                            onChange={(e) => setLangSearch(e.target.value)}
-                            placeholder={currentLang === 'id' ? 'Cari bahasa (contoh: English, Español, Indonesia)...' : 'Search language (e.g. English, Español, Deutsch)...'}
+                          <span
                             style={{
-                              border: 'none',
-                              background: 'transparent',
-                              outline: 'none',
-                              width: '100%',
-                              fontSize: '0.82rem',
-                              color: 'var(--text-main)',
+                              fontSize: '0.68rem',
+                              fontWeight: 900,
+                              background: '#f59e0b',
+                              color: '#000000',
+                              padding: '1px 5px',
+                              borderRadius: 4,
+                              letterSpacing: '0.02em',
                             }}
-                          />
-                          {langSearch && (
-                            <button
-                              onClick={() => setLangSearch('')}
-                              style={{ background: 'none', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', padding: 0 }}
-                            >
-                              <X size={14} />
-                            </button>
-                          )}
-                        </div>
-                      </div>
-
-                      {/* 3-Column Grid of 30 Languages with fixed height */}
-                      <div
-                        style={{
-                          display: 'grid',
-                          gridTemplateColumns: 'repeat(3, 1fr)',
-                          gap: 6,
-                          padding: '14px 22px 18px',
-                          maxHeight: 290,
-                          overflowY: 'auto',
-                        }}
-                      >
-                        {SUPPORTED_LANGUAGES.filter(
-                          (l) =>
-                            l.name.toLowerCase().includes(langSearch.toLowerCase()) ||
-                            l.nativeName.toLowerCase().includes(langSearch.toLowerCase()) ||
-                            l.code.toLowerCase().includes(langSearch.toLowerCase())
-                        ).map((l) => {
-                          const isSelected = currentLang === l.code;
-                          return (
-                            <button
-                              key={l.code}
-                              onClick={() => {
-                                onSelectLang(l.code);
-                                setSuiteView('main');
-                              }}
-                              style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'space-between',
-                                padding: '8px 10px',
-                                borderRadius: 8,
-                                border: isSelected ? '1px solid var(--brand-primary)' : '1px solid var(--border-color)',
-                                background: isSelected ? 'rgba(225,29,72,0.08)' : 'var(--bg-app)',
-                                color: isSelected ? 'var(--brand-primary)' : 'var(--text-main)',
-                                fontSize: '0.78rem',
-                                fontWeight: isSelected ? 800 : 500,
-                                cursor: 'pointer',
-                                textAlign: 'left',
-                                transition: 'all 0.12s ease',
-                              }}
-                            >
-                              <span style={{ display: 'flex', alignItems: 'center', gap: 6, minWidth: 0, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                                <span style={{ fontSize: '1rem' }}>{l.flag}</span>
-                                <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{l.nativeName}</span>
-                              </span>
-                              {isSelected && <Check size={14} color="var(--brand-primary)" style={{ flexShrink: 0 }} />}
-                            </button>
-                          );
-                        })}
+                          >
+                            -34%
+                          </span>
+                          <ArrowRight size={13} color="#f59e0b" style={{ flexShrink: 0 }} />
+                        </a>
                       </div>
                     </div>
-                  )}
                 </div>
               )}
             </div>
