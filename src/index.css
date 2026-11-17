@@ -382,13 +382,13 @@ button, input, select, textarea {
    MOBILE OPTIMIZATION RESPONSIVE MEDIA QUERIES
    ========================================================================== */
 
-/* Mobile/Tablet: Zoom 90% for page, scale navbar to 85% */
+/* Mobile/Tablet: Zoom 90% for page */
 @media (max-width: 1024px) {
   body {
     zoom: 0.9 !important;
   }
   .main-site-header {
-    zoom: 0.944 !important; /* 0.9 * 0.944 ≈ 0.85 effective scale */
+    zoom: 1 !important;
   }
 }
 
@@ -398,7 +398,7 @@ button, input, select, textarea {
     zoom: 0.9 !important;
   }
   .main-site-header {
-    zoom: 0.944 !important; /* 0.9 * 0.944 ≈ 0.85 effective scale */
+    zoom: 1 !important;
   }
   /* Tool Card mobile padding */
   .tool-card {

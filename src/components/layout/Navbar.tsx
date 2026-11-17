@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { LocaleSwitcher } from './LocaleSwitcher';
 import {
   Sun, Moon, FileText, ChevronDown, ChevronUp, Grid,
@@ -1294,9 +1295,30 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
           </div>
 
-          {/* Mobile top-right controls: Avatar (if logged in) + Hamburger */}
+          {/* Mobile top-right controls: Compact Sign In / Avatar + Hamburger */}
           <div className="mobile-only" style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-            {user && (
+            {!user ? (
+              <button
+                onClick={openAuthModal}
+                style={{
+                  height: 36,
+                  padding: '0 12px',
+                  borderRadius: 8,
+                  background: 'rgba(225, 29, 72, 0.08)',
+                  border: '1px solid rgba(225, 29, 72, 0.25)',
+                  color: 'var(--brand-primary)',
+                  fontSize: '0.8rem',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: 6,
+                }}
+              >
+                <LogIn size={14} />
+                <span>{authT.nav_signin || (currentLang === 'id' ? 'Masuk' : 'Sign In')}</span>
+              </button>
+            ) : (
               <div
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}
@@ -1338,7 +1360,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       </div>
 
       {/* ── Clean Mobile Full-Height Drawer Menu ── */}
-      {isMobileMenuOpen && (
+      {isMobileMenuOpen && typeof document !== 'undefined' && createPortal(
         <div
           className="mobile-menu-container"
           style={{
@@ -1347,47 +1369,21 @@ export const Navbar: React.FC<NavbarProps> = ({
             left: 0,
             right: 0,
             bottom: 0,
-            height: 'calc(100dvh - 60px)',
+            width: '100vw',
             background: 'var(--bg-app)',
             borderTop: '1px solid var(--border-color)',
-            padding: '16px 16px calc(36px + env(safe-area-inset-bottom, 24px))',
+            padding: '16px 16px calc(60px + env(safe-area-inset-bottom, 32px))',
             overflowY: 'auto',
             WebkitOverflowScrolling: 'touch',
-            zIndex: 99999,
+            zIndex: 999999,
             display: 'flex',
             flexDirection: 'column',
             gap: 14,
             boxSizing: 'border-box',
           }}
         >
-          {/* 1. Mobile Sign In Button / User Profile */}
-          {!user ? (
-            <button
-              onClick={() => {
-                setIsMobileMenuOpen(false);
-                openAuthModal();
-              }}
-              style={{
-                width: '100%',
-                height: 44,
-                borderRadius: 10,
-                background: 'rgba(225, 29, 72, 0.08)',
-                border: '1px solid rgba(225, 29, 72, 0.3)',
-                color: 'var(--brand-primary)',
-                fontSize: '0.88rem',
-                fontWeight: 700,
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: 8,
-                transition: 'all 0.15s ease',
-              }}
-            >
-              <LogIn size={16} />
-              <span>{currentLang === 'id' ? 'Masuk ke Akun' : (authT.nav_signin || 'Sign In')}</span>
-            </button>
-          ) : (
+          {/* User Profile & Sign Out (only if logged in) */}
+          {user && (
             <div
               style={{
                 padding: '10px 14px',
@@ -1873,7 +1869,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             <ShieldCheck size={14} color="#10b981" />
             <span>{currentLang === 'id' ? '100% Olah di Browser · Privasi Bebas Server' : '100% Client-Side WASM · Zero Server Upload'}</span>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
 
       {/* Styles */}
@@ -1934,14 +1931,14 @@ export const Navbar: React.FC<NavbarProps> = ({
             right: 0 !important;
             bottom: 0 !important;
             width: 100vw !important;
-            height: calc(100dvh - 60px) !important;
-            min-height: calc(100vh - 60px) !important;
+            height: auto !important;
+            min-height: calc(100% - 60px) !important;
             max-height: none !important;
             background: var(--bg-app) !important;
-            z-index: 99999 !important;
+            z-index: 999999 !important;
             overflow-y: auto !important;
             -webkit-overflow-scrolling: touch !important;
-            padding: 16px 16px calc(36px + env(safe-area-inset-bottom, 24px)) !important;
+            padding: 16px 16px calc(60px + env(safe-area-inset-bottom, 32px)) !important;
             box-sizing: border-box !important;
             margin: 0 !important;
             border-radius: 0 !important;
