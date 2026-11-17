@@ -60,6 +60,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
   const { user, profile, isPro, openAuthModal, signOut } = useAuth();
   const navRef = useRef<HTMLDivElement>(null);
+  const suiteRef = useRef<HTMLDivElement>(null);
   const megaTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const suiteTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
