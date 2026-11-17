@@ -360,7 +360,7 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
         padding: 0;
         background-color: var(--seo-bg, #080a0f);
         color: var(--seo-text, #f8fafc);
-        font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
       }
       #static-seo {
