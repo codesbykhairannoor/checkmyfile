@@ -43,6 +43,25 @@ const MI: React.FC<{
   </div>
 );
 
+// Helper to convert ALL-CAPS or raw text to clean Title Case for mobile navigation
+const toTitleCase = (str: string): string => {
+  if (!str) return '';
+  const clean = str.replace(/^[\p{Emoji}\s]+/u, '').trim();
+  return clean
+    .toLowerCase()
+    .split(' ')
+    .map((word) => {
+      if (['pdf', 'wasm', 'ocr', 'ppt', 'pptx', 'doc', 'docx', 'xls', 'xlsx', 'csv', 'txt', 'jpg', 'png'].includes(word)) {
+        return word.toUpperCase();
+      }
+      if (['&', 'and', 'or', 'to', 'from', 'ke', 'dari', 'dan'].includes(word)) {
+        return word;
+      }
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    })
+    .join(' ');
+};
+
 export const Navbar: React.FC<NavbarProps> = ({
   currentLang,
   onSelectLang,
@@ -225,6 +244,18 @@ export const Navbar: React.FC<NavbarProps> = ({
     document.addEventListener('mousedown', fn);
     return () => document.removeEventListener('mousedown', fn);
   }, []);
+
+  // Lock background scroll when mobile menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isMobileMenuOpen]);
 
   return (
     <header
@@ -1264,8 +1295,43 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
           </div>
 
-          {/* Mobile top-right controls: Thumb-Friendly Hamburger ONLY */}
-          <div className="mobile-only" style={{ display: 'flex', alignItems: 'center' }}>
+          {/* Mobile top-right controls: Compact Sign In / Avatar + Hamburger */}
+          <div className="mobile-only" style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            {!user ? (
+              <button
+                onClick={openAuthModal}
+                style={{
+                  height: 36,
+                  padding: '0 12px',
+                  borderRadius: 8,
+                  background: 'rgba(225, 29, 72, 0.08)',
+                  border: '1px solid rgba(225, 29, 72, 0.25)',
+                  color: 'var(--brand-primary)',
+                  fontSize: '0.8rem',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: 6,
+                }}
+              >
+                <LogIn size={14} />
+                <span>{authT.nav_signin || (currentLang === 'id' ? 'Masuk' : 'Sign In')}</span>
+              </button>
+            ) : (
+              <div
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}
+              >
+                {user.photoURL ? (
+                  <img src={user.photoURL} alt="User" style={{ width: 32, height: 32, borderRadius: '50%', objectFit: 'cover', border: '1px solid var(--border-color)' }} />
+                ) : (
+                  <div style={{ width: 32, height: 32, borderRadius: '50%', background: 'var(--brand-primary)', color: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontSize: '0.78rem' }}>
+                    {(user.displayName || user.email || 'U')[0].toUpperCase()}
+                  </div>
+                )}
+              </div>
+            )}
             <button
               onClick={() => {
                 setIsMobileLangOpen(false);
@@ -1274,11 +1340,11 @@ export const Navbar: React.FC<NavbarProps> = ({
               }}
               aria-label="Toggle Navigation Menu"
               style={{
-                width: 40,
-                height: 40,
+                width: 38,
+                height: 38,
                 background: isMobileMenuOpen ? 'rgba(225, 29, 72, 0.12)' : 'var(--bg-card)',
                 border: isMobileMenuOpen ? '1px solid rgba(225, 29, 72, 0.4)' : '1px solid var(--border-color)',
-                borderRadius: 10,
+                borderRadius: 8,
                 color: isMobileMenuOpen ? 'var(--brand-primary)' : 'var(--text-main)',
                 cursor: 'pointer',
                 display: 'flex',
@@ -1287,60 +1353,70 @@ export const Navbar: React.FC<NavbarProps> = ({
                 transition: 'all 0.15s ease',
               }}
             >
-              {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+              {isMobileMenuOpen ? <X size={18} /> : <Menu size={18} />}
             </button>
           </div>
         </div>
       </div>
 
-      {/* ── Clean Mobile Dropdown Menu ── */}
+      {/* ── Clean Mobile Full-Height Drawer Menu ── */}
       {isMobileMenuOpen && (
         <div
           className="mobile-menu-container"
           style={{
-            position: 'absolute',
-            top: '100%',
+            position: 'fixed',
+            top: 60,
             left: 0,
             right: 0,
+            bottom: 0,
+            height: 'calc(100dvh - 60px)',
             background: 'var(--bg-app)',
-            borderBottom: '1px solid var(--border-color)',
-            padding: '16px 16px 28px',
-            maxHeight: 'calc(100vh - 60px)',
+            borderTop: '1px solid var(--border-color)',
+            padding: '16px 16px calc(32px + env(safe-area-inset-bottom, 20px))',
             overflowY: 'auto',
-            zIndex: 40,
-            boxShadow: '0 20px 40px rgba(0,0,0,0.22)',
+            WebkitOverflowScrolling: 'touch',
+            zIndex: 9999,
             display: 'flex',
             flexDirection: 'column',
-            gap: 12,
+            gap: 14,
+            boxSizing: 'border-box',
           }}
         >
-          {/* 1. Mobile User Profile or Sign In Card */}
+          {/* 1. Mobile User Profile or Sleek Sign In Card */}
           {!user ? (
-            <button
+            <div
               onClick={() => {
                 setIsMobileMenuOpen(false);
                 openAuthModal();
               }}
               style={{
-                width: '100%',
-                height: 44,
-                borderRadius: 10,
-                background: 'var(--brand-primary)',
-                color: '#ffffff',
-                border: 'none',
-                fontSize: '0.9rem',
-                fontWeight: 700,
-                cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'center',
-                gap: 8,
-                transition: 'opacity 0.15s ease',
+                justifyContent: 'space-between',
+                padding: '10px 14px',
+                borderRadius: 10,
+                background: 'var(--bg-card)',
+                border: '1px solid var(--border-color)',
+                cursor: 'pointer',
               }}
             >
-              <LogIn size={17} />
-              <span>{currentLang === 'id' ? 'Masuk ke Akun' : (authT.nav_signin || 'Sign In')}</span>
-            </button>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                <div style={{ width: 34, height: 34, borderRadius: 8, background: 'rgba(225, 29, 72, 0.1)', color: 'var(--brand-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                  <LogIn size={16} />
+                </div>
+                <div>
+                  <div style={{ fontSize: '0.86rem', fontWeight: 700, color: 'var(--text-main)' }}>
+                    {authT.nav_signin || (currentLang === 'id' ? 'Masuk' : 'Sign In')}
+                  </div>
+                  <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
+                    {currentLang === 'id' ? 'Simpan riwayat & sinkron Pro' : 'Sync history & access Pro'}
+                  </div>
+                </div>
+              </div>
+              <span style={{ fontSize: '0.76rem', fontWeight: 700, color: '#ffffff', background: 'var(--brand-primary)', padding: '5px 12px', borderRadius: 6, flexShrink: 0 }}>
+                {authT.nav_signin || (currentLang === 'id' ? 'Masuk' : 'Sign In')}
+              </span>
+            </div>
           ) : (
             <div
               style={{
@@ -1398,48 +1474,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
           )}
 
-          {/* 2. Mobile Pricing / PRO Link Banner */}
-          <a
-            href={currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`}
-            onClick={(e) => {
-              e.preventDefault();
-              setIsMobileMenuOpen(false);
-              window.history.pushState({}, '', currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`);
-              window.dispatchEvent(new PopStateEvent('popstate'));
-            }}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              padding: '10px 14px',
-              borderRadius: 10,
-              background: 'rgba(245, 158, 11, 0.08)',
-              border: '1px solid rgba(245, 158, 11, 0.3)',
-              color: 'var(--text-main)',
-              textDecoration: 'none',
-              transition: 'all 0.15s ease',
-            }}
-          >
-            <div style={{ display: 'flex', alignItems: 'center', gap: 10, minWidth: 0 }}>
-              <div style={{ width: 32, height: 32, borderRadius: 8, background: 'rgba(245, 158, 11, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#f59e0b', flexShrink: 0 }}>
-                <Crown size={17} />
-              </div>
-              <div style={{ minWidth: 0 }}>
-                <div style={{ fontSize: '0.86rem', fontWeight: 800, color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: 6 }}>
-                  <span>{t.footerPricing || 'Pricing'} &amp; PRO</span>
-                  <span style={{ fontSize: '0.66rem', fontWeight: 800, background: '#f59e0b', color: '#000', padding: '1px 5px', borderRadius: 4 }}>
-                    -34%
-                  </span>
-                </div>
-                <div style={{ fontSize: '0.73rem', color: 'var(--text-muted)' }}>
-                  $9.99/mo &middot; $79/yr &middot; $129 Pass
-                </div>
-              </div>
-            </div>
-            <ArrowRight size={15} color="#f59e0b" style={{ flexShrink: 0 }} />
-          </a>
-
-          {/* 3. Live Tool Search Input */}
+          {/* 2. Live Tool Search Input */}
           <div style={{ position: 'relative' }}>
             <Search size={16} color="var(--text-muted)" style={{ position: 'absolute', left: 13, top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }} />
             <input
@@ -1485,7 +1520,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             )}
           </div>
 
-          {/* 4. Tools Navigation Area */}
+          {/* 3. Tools Navigation Area */}
           {mobileSearch.trim() ? (
             /* Live Filtered Search Results */
             <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
@@ -1519,7 +1554,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                           {toolNames[tool.id]?.[currentLang] || tool.label}
                         </div>
                         <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
-                          {tool.categoryName.replace(/^[\p{Emoji}\s]+/u, '')}
+                          {toTitleCase(tool.categoryName)}
                         </div>
                       </div>
                     </div>
@@ -1543,7 +1578,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <>
               {/* Popular Tools Section */}
               <div>
-                <div style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--text-accent)', letterSpacing: '0.06em', marginBottom: 8, textTransform: 'uppercase' }}>
+                <div style={{ fontSize: '0.76rem', fontWeight: 700, color: 'var(--text-muted)', letterSpacing: '0.02em', marginBottom: 8, textTransform: 'none' }}>
                   {currentLang === 'id' ? 'Alat Populer' : 'Popular Tools'}
                 </div>
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
@@ -1592,8 +1627,8 @@ export const Navbar: React.FC<NavbarProps> = ({
 
               {/* All Categories Accordion */}
               <div>
-                <div style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--text-accent)', letterSpacing: '0.06em', marginBottom: 8, textTransform: 'uppercase' }}>
-                  {NAV.allPdfTools}
+                <div style={{ fontSize: '0.76rem', fontWeight: 700, color: 'var(--text-muted)', letterSpacing: '0.02em', marginBottom: 8, textTransform: 'none' }}>
+                  {currentLang === 'id' ? 'Semua Alat PDF' : 'All PDF Tools'}
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
                   {mobileToolCategories.map((group) => {
@@ -1627,7 +1662,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                         >
                           <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
                             <group.icon size={16} color="var(--brand-primary)" />
-                            <span>{group.title.replace(/^[\p{Emoji}\s]+/u, '')}</span>
+                            <span>{toTitleCase(group.title)}</span>
                           </div>
                           <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                             <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 600, background: 'var(--bg-app)', padding: '2px 7px', borderRadius: 6, border: '1px solid var(--border-color)' }}>
@@ -1675,26 +1710,35 @@ export const Navbar: React.FC<NavbarProps> = ({
             </>
           )}
 
-          {/* Bottom Divider */}
+          {/* Divider */}
           <div style={{ height: 1, background: 'var(--border-color)', margin: '4px 0 2px' }} />
 
-          {/* 5. Mobile Utility Controls: Language Selector & Theme Toggle */}
+          {/* 4. Mobile Utility Controls: Language & Theme Toggle */}
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
-            <LocaleSwitcher
-              currentLang={currentLang}
-              onSelectLang={(code) => {
-                onSelectLang(code);
-                setIsMobileMenuOpen(false);
-                setIsMobileLangOpen(false);
+            <button
+              onClick={() => setIsMobileLangOpen(!isMobileLangOpen)}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: 8,
+                padding: '10px 12px',
+                background: isMobileLangOpen ? 'rgba(225, 29, 72, 0.1)' : 'var(--bg-card)',
+                border: isMobileLangOpen ? '1px solid var(--brand-primary)' : '1px solid var(--border-color)',
+                borderRadius: 10,
+                color: isMobileLangOpen ? 'var(--brand-primary)' : 'var(--text-main)',
+                fontWeight: 600,
+                fontSize: '0.84rem',
+                cursor: 'pointer',
+                minHeight: 42,
               }}
-              isOpen={isMobileLangOpen}
-              onClose={() => setIsMobileLangOpen(false)}
-              onOpen={() => {
-                setIsMobileLangOpen(true);
-              }}
-              compact={false}
-              fullWidth={true}
-            />
+            >
+              <Globe size={16} />
+              <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                {getLanguageByCode(currentLang).flag} {getLanguageByCode(currentLang).nativeName}
+              </span>
+              <ChevronDown size={14} style={{ transform: isMobileLangOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s ease', flexShrink: 0 }} />
+            </button>
 
             <button
               onClick={onToggleTheme}
@@ -1703,7 +1747,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 alignItems: 'center',
                 justifyContent: 'center',
                 gap: 8,
-                padding: '8px 12px',
+                padding: '10px 12px',
                 background: 'var(--bg-card)',
                 border: '1px solid var(--border-color)',
                 borderRadius: 10,
@@ -1711,13 +1755,148 @@ export const Navbar: React.FC<NavbarProps> = ({
                 fontWeight: 600,
                 fontSize: '0.84rem',
                 cursor: 'pointer',
-                minHeight: 40,
+                minHeight: 42,
               }}
             >
               {isLightMode ? <Moon size={16} color="#8b5cf6" /> : <Sun size={16} color="#f59e0b" />}
               <span>{currentLang === 'id' ? (isLightMode ? 'Mode Gelap' : 'Mode Terang') : (isLightMode ? 'Dark Mode' : 'Light Mode')}</span>
             </button>
           </div>
+
+          {/* Inline Language Selector Panel (100% in-flow, zero clipping) */}
+          {isMobileLangOpen && (
+            <div
+              style={{
+                borderRadius: 12,
+                border: '1px solid var(--border-color)',
+                background: 'var(--bg-card)',
+                padding: '12px 14px',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: 10,
+                boxShadow: 'var(--shadow-sm)',
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                <span style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--text-main)' }}>
+                  {t.languageSelect || 'Select Language'} ({SUPPORTED_LANGUAGES.length})
+                </span>
+                <button
+                  onClick={() => setIsMobileLangOpen(false)}
+                  style={{ background: 'none', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', padding: 4 }}
+                >
+                  <X size={16} />
+                </button>
+              </div>
+
+              {/* Search Filter for Language */}
+              <div style={{ position: 'relative' }}>
+                <Search size={14} color="var(--text-muted)" style={{ position: 'absolute', left: 10, top: '50%', transform: 'translateY(-50%)' }} />
+                <input
+                  type="text"
+                  value={langSearch}
+                  onChange={(e) => setLangSearch(e.target.value)}
+                  placeholder={currentLang === 'id' ? 'Cari bahasa (id, en, es, ja)...' : 'Search language (en, es, fr, de)...'}
+                  style={{
+                    width: '100%',
+                    height: 36,
+                    padding: '0 10px 0 32px',
+                    borderRadius: 8,
+                    background: 'var(--bg-input)',
+                    border: '1px solid var(--border-color)',
+                    color: 'var(--text-main)',
+                    fontSize: '0.82rem',
+                    outline: 'none',
+                    boxSizing: 'border-box',
+                  }}
+                />
+              </div>
+
+              {/* Scrollable Language Grid */}
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 6, maxHeight: 200, overflowY: 'auto' }}>
+                {SUPPORTED_LANGUAGES.filter(
+                  (l) =>
+                    l.name.toLowerCase().includes(langSearch.toLowerCase()) ||
+                    l.nativeName.toLowerCase().includes(langSearch.toLowerCase()) ||
+                    l.code.toLowerCase().includes(langSearch.toLowerCase())
+                ).map((l) => {
+                  const isSelected = currentLang === l.code;
+                  return (
+                    <button
+                      key={l.code}
+                      onClick={() => {
+                        onSelectLang(l.code);
+                        setIsMobileLangOpen(false);
+                        setIsMobileMenuOpen(false);
+                      }}
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                        padding: '8px 10px',
+                        borderRadius: 8,
+                        border: isSelected ? '1px solid var(--brand-primary)' : '1px solid var(--border-color)',
+                        background: isSelected ? 'rgba(225, 29, 72, 0.08)' : 'var(--bg-app)',
+                        color: isSelected ? 'var(--brand-primary)' : 'var(--text-main)',
+                        fontSize: '0.78rem',
+                        fontWeight: isSelected ? 800 : 500,
+                        cursor: 'pointer',
+                        textAlign: 'left',
+                        minWidth: 0,
+                      }}
+                    >
+                      <span style={{ display: 'flex', alignItems: 'center', gap: 6, minWidth: 0, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                        <span style={{ fontSize: '0.95rem' }}>{l.flag}</span>
+                        <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{l.nativeName}</span>
+                      </span>
+                      {isSelected && <Check size={13} color="var(--brand-primary)" style={{ flexShrink: 0 }} />}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {/* 5. Mobile Pricing / PRO Link Banner (Placed at the bottom!) */}
+          <a
+            href={currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`}
+            onClick={(e) => {
+              e.preventDefault();
+              setIsMobileMenuOpen(false);
+              window.history.pushState({}, '', currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`);
+              window.dispatchEvent(new PopStateEvent('popstate'));
+            }}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              padding: '11px 14px',
+              borderRadius: 10,
+              background: 'rgba(245, 158, 11, 0.08)',
+              border: '1px solid rgba(245, 158, 11, 0.3)',
+              color: 'var(--text-main)',
+              textDecoration: 'none',
+              transition: 'all 0.15s ease',
+            }}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10, minWidth: 0 }}>
+              <div style={{ width: 34, height: 34, borderRadius: 8, background: 'rgba(245, 158, 11, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#f59e0b', flexShrink: 0 }}>
+                <Crown size={17} />
+              </div>
+              <div style={{ minWidth: 0 }}>
+                <div style={{ fontSize: '0.86rem', fontWeight: 700, color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: 6 }}>
+                  <span>{currentLang === 'id' ? 'Paket PRO & Langganan' : (t.footerPricing || 'Pricing & PRO')}</span>
+                  <span style={{ fontSize: '0.66rem', fontWeight: 800, background: '#f59e0b', color: '#000', padding: '1px 5px', borderRadius: 4 }}>
+                    -34%
+                  </span>
+                </div>
+                <div style={{ fontSize: '0.73rem', color: 'var(--text-muted)' }}>
+                  $9.99/bln · $79/thn · $129 Founder Lifetime
+                </div>
+              </div>
+            </div>
+            <ArrowRight size={15} color="#f59e0b" style={{ flexShrink: 0 }} />
+          </a>
 
           {/* 6. Client-Side Privacy Guarantee */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, marginTop: 2, fontSize: '0.74rem', color: 'var(--text-muted)' }}>
