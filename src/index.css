@@ -32,7 +32,8 @@
   --radius-full: 9999px;
 }
 
-html.light-theme, body.light-theme {
+html.light-theme,
+body.light-theme {
   --bg-app: #f4f6fb;
   --bg-card: #ffffff;
   --bg-card-hover: #f8fafc;
