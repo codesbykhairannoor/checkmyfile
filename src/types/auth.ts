@@ -3,7 +3,7 @@
 
 export type SubscriptionPlan = 'free' | 'pro';
 export type SubscriptionStatus = 'active' | 'inactive' | 'trial' | 'past_due' | 'cancelled';
-export type BillingInterval = 'lifetime' | 'monthly';
+export type BillingInterval = 'lifetime' | 'monthly' | 'yearly';
 
 export interface UserProfile {
   uid: string;

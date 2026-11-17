@@ -166,10 +166,11 @@ export default async function handler(req, res) {
         const accessToken = await getGoogleAccessToken(serviceAccount);
         const projectId = serviceAccount.project_id || 'thismyown';
 
-        const isMonthly = planType === 'monthly' || (eventName && eventName.startsWith('subscription_'));
+        const isSubscription = planType === 'monthly' || planType === 'yearly' || (eventName && eventName.startsWith('subscription_'));
         const renewsAt = attributes.renews_at || attributes.ends_at;
-        const expiresAtMs = isMonthly
-          ? (renewsAt ? new Date(renewsAt).getTime() : Date.now() + 32 * 24 * 60 * 60 * 1000)
+        const defaultDuration = planType === 'yearly' ? 366 * 24 * 60 * 60 * 1000 : 32 * 24 * 60 * 60 * 1000;
+        const expiresAtMs = isSubscription
+          ? (renewsAt ? new Date(renewsAt).getTime() : Date.now() + defaultDuration)
           : null;
 
         // Build Firestore update payload
@@ -177,7 +178,7 @@ export default async function handler(req, res) {
           plan: { stringValue: 'pro' },
           subscriptionStatus: { stringValue: 'active' },
           suiteAccess: { stringValue: 'all_access' },
-          billingInterval: { stringValue: isMonthly ? 'monthly' : 'lifetime' },
+          billingInterval: { stringValue: planType === 'yearly' ? 'yearly' : (isSubscription ? 'monthly' : 'lifetime') },
         };
 
         let updateMask = 'updateMask.fieldPaths=plan&updateMask.fieldPaths=subscriptionStatus&updateMask.fieldPaths=suiteAccess&updateMask.fieldPaths=billingInterval';

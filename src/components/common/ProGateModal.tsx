@@ -150,11 +150,15 @@ export const ProGateModal: React.FC<ProGateModalProps> = ({
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontWeight: 700, color: 'var(--brand-primary, #e11d48)' }}>
             <Sparkles size={15} />
-            <span>{t.pro_benefits_heading || 'PRO Lifetime All-Access Benefits:'}</span>
+            <span>{t.pro_benefits_heading || 'PRO All-Access Benefits (4 Web Apps Included):'}</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: '0.82rem' }}>
             <Check size={14} color="#10b981" />
-            <span>{t.pro_benefit_unlimited_batch || 'Unlimited batch processing (100+ files across all tools)'}</span>
+            <span>{t.pro_benefit_suite || 'Connected access to 4 Web Apps: HandleMyFile, HelpMyIMG, SolveMyMedia, & CreateMy-QR'}</span>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: '0.82rem' }}>
+            <Check size={14} color="#10b981" />
+            <span>{t.pro_benefit_unlimited_batch || 'Unlimited ultra-batch processing (100+ files across all tools)'}</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: '0.82rem' }}>
             <Check size={14} color="#10b981" />
@@ -162,21 +166,21 @@ export const ProGateModal: React.FC<ProGateModalProps> = ({
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: '0.82rem' }}>
             <Check size={14} color="#10b981" />
-            <span>{t.pro_benefit_lifetime || 'One-time payment, lifetime updates, zero subscriptions'}</span>
+            <span>{t.pro_benefit_lifetime || 'Founder Pass includes Lifetime 4 Web Apps + Windows App + Mobile APK'}</span>
           </div>
         </div>
 
-        {/* Plan Switcher: Monthly vs Lifetime */}
+        {/* Plan Switcher: Monthly vs Yearly vs Lifetime */}
         <div>
           <div style={{ fontSize: '0.8rem', fontWeight: 800, color: 'var(--text-muted)', marginBottom: 8, textTransform: 'uppercase', letterSpacing: '0.04em' }}>
             {t.pro_choose_plan || 'Choose Your PRO Plan:'}
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))', gap: 8 }}>
             {/* Monthly Card */}
             <div
               onClick={() => setSelectedPlan('monthly')}
               style={{
-                padding: '12px 14px',
+                padding: '10px 12px',
                 borderRadius: 14,
                 border: selectedPlan === 'monthly'
                   ? '2px solid var(--brand-primary, #e11d48)'
@@ -187,19 +191,67 @@ export const ProGateModal: React.FC<ProGateModalProps> = ({
                 cursor: 'pointer',
                 display: 'flex',
                 flexDirection: 'column',
-                gap: 4,
+                gap: 3,
                 position: 'relative',
                 transition: 'all 0.15s ease',
               }}
             >
-              <div style={{ fontSize: '0.82rem', fontWeight: 800, color: selectedPlan === 'monthly' ? 'var(--brand-primary, #e11d48)' : 'var(--text-main)' }}>
-                {t.pro_plan_monthly_name || 'PRO Monthly'}
+              <div style={{ fontSize: '0.78rem', fontWeight: 800, color: selectedPlan === 'monthly' ? 'var(--brand-primary, #e11d48)' : 'var(--text-main)' }}>
+                {t.pro_plan_monthly_name || 'Monthly'}
               </div>
-              <div style={{ fontSize: '1.05rem', fontWeight: 900, color: 'var(--text-main)' }}>
-                {t.pro_plan_monthly_price || '$4.99 / mo'}
+              <div style={{ fontSize: '1.05rem', fontWeight: 900, color: 'var(--text-main)', lineHeight: 1.1 }}>
+                $9.99<span style={{ fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 500 }}>/mo</span>
               </div>
-              <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', lineHeight: 1.3 }}>
-                {t.pro_plan_monthly_desc || 'Cancel anytime in 1 click'}
+              <div style={{ fontSize: '0.68rem', color: 'var(--text-muted)', lineHeight: 1.2 }}>
+                {t.pro_plan_monthly_desc || 'Cancel anytime'}
+              </div>
+            </div>
+
+            {/* Yearly Card */}
+            <div
+              onClick={() => setSelectedPlan('yearly')}
+              style={{
+                padding: '10px 12px',
+                borderRadius: 14,
+                border: selectedPlan === 'yearly'
+                  ? '2px solid var(--brand-primary, #e11d48)'
+                  : '1px solid var(--border-color, rgba(255, 255, 255, 0.12))',
+                backgroundColor: selectedPlan === 'yearly'
+                  ? 'rgba(225, 29, 72, 0.08)'
+                  : 'var(--bg-app, #0b0f19)',
+                cursor: 'pointer',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: 3,
+                position: 'relative',
+                transition: 'all 0.15s ease',
+              }}
+            >
+              <div
+                style={{
+                  position: 'absolute',
+                  top: -8,
+                  right: 6,
+                  padding: '2px 6px',
+                  borderRadius: 100,
+                  backgroundColor: '#10b981',
+                  color: '#ffffff',
+                  fontSize: '0.58rem',
+                  fontWeight: 900,
+                  letterSpacing: '0.03em',
+                }}
+              >
+                {t.pro_plan_yearly_save || 'SAVE 34%'}
+              </div>
+              <div style={{ fontSize: '0.78rem', fontWeight: 800, color: selectedPlan === 'yearly' ? 'var(--brand-primary, #e11d48)' : 'var(--text-main)' }}>
+                {t.pro_plan_yearly_name || 'Yearly'}
+              </div>
+              <div style={{ fontSize: '1.05rem', fontWeight: 900, color: 'var(--text-main)', lineHeight: 1.1 }}>
+                $79<span style={{ fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 500 }}>/yr</span>
+              </div>
+              <div style={{ fontSize: '0.68rem', color: 'var(--text-muted)', lineHeight: 1.2 }}>
+                <span style={{ textDecoration: 'line-through', marginRight: 4 }}>$119.88</span>
+                ~$6.58/mo
               </div>
             </div>
 
@@ -207,7 +259,7 @@ export const ProGateModal: React.FC<ProGateModalProps> = ({
             <div
               onClick={() => setSelectedPlan('lifetime')}
               style={{
-                padding: '12px 14px',
+                padding: '10px 12px',
                 borderRadius: 14,
                 border: selectedPlan === 'lifetime'
                   ? '2px solid var(--brand-primary, #e11d48)'
@@ -218,7 +270,7 @@ export const ProGateModal: React.FC<ProGateModalProps> = ({
                 cursor: 'pointer',
                 display: 'flex',
                 flexDirection: 'column',
-                gap: 4,
+                gap: 3,
                 position: 'relative',
                 transition: 'all 0.15s ease',
               }}
@@ -226,27 +278,28 @@ export const ProGateModal: React.FC<ProGateModalProps> = ({
               <div
                 style={{
                   position: 'absolute',
-                  top: -9,
-                  right: 8,
-                  padding: '2px 8px',
+                  top: -8,
+                  right: 6,
+                  padding: '2px 6px',
                   borderRadius: 100,
                   backgroundColor: 'var(--brand-primary, #e11d48)',
                   color: '#ffffff',
-                  fontSize: '0.62rem',
+                  fontSize: '0.58rem',
                   fontWeight: 900,
-                  letterSpacing: '0.04em',
+                  letterSpacing: '0.03em',
                 }}
               >
                 {t.pro_plan_best_value || 'BEST VALUE'}
               </div>
-              <div style={{ fontSize: '0.82rem', fontWeight: 800, color: selectedPlan === 'lifetime' ? 'var(--brand-primary, #e11d48)' : 'var(--text-main)' }}>
-                {t.pro_plan_lifetime_name || 'Lifetime Pass'}
+              <div style={{ fontSize: '0.78rem', fontWeight: 800, color: selectedPlan === 'lifetime' ? 'var(--brand-primary, #e11d48)' : 'var(--text-main)' }}>
+                {t.pro_plan_lifetime_name || 'Lifetime'}
               </div>
-              <div style={{ fontSize: '1.05rem', fontWeight: 900, color: 'var(--text-main)' }}>
-                {t.pro_plan_lifetime_price || '$39 once'}
+              <div style={{ fontSize: '1.05rem', fontWeight: 900, color: 'var(--text-main)', lineHeight: 1.1 }}>
+                $129<span style={{ fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 500 }}> once</span>
               </div>
-              <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', lineHeight: 1.3 }}>
-                {t.pro_plan_lifetime_desc || 'Pay once, own forever'}
+              <div style={{ fontSize: '0.68rem', color: 'var(--text-muted)', lineHeight: 1.2 }}>
+                <span style={{ textDecoration: 'line-through', marginRight: 4 }}>$169</span>
+                4 Webs + Apps
               </div>
             </div>
           </div>
@@ -278,10 +331,14 @@ export const ProGateModal: React.FC<ProGateModalProps> = ({
               {!user
                 ? (selectedPlan === 'monthly'
                     ? (t.pro_signin_subscribe_monthly_btn || 'Sign In & Subscribe Monthly')
+                    : selectedPlan === 'yearly'
+                    ? (t.pro_signin_subscribe_yearly_btn || 'Sign In & Subscribe Yearly')
                     : (t.pro_signin_get_pass || 'Sign In & Get Lifetime Pass'))
                 : (selectedPlan === 'monthly'
-                    ? (t.pro_subscribe_monthly_btn || 'Subscribe Monthly ($4.99/mo)')
-                    : (t.pro_get_lifetime_pass || 'Get Lifetime PRO Pass ($39)'))}
+                    ? (t.pro_subscribe_monthly_btn || 'Subscribe Monthly ($9.99/mo)')
+                    : selectedPlan === 'yearly'
+                    ? (t.pro_subscribe_yearly_btn || 'Subscribe Yearly ($79/yr)')
+                    : (t.pro_get_lifetime_pass || 'Get Lifetime Pass ($129)'))}
             </span>
           </button>
 

@@ -42,7 +42,7 @@ export const editorTranslations: Record<string, Record<string, string>> = {
     "batch_pro_badge": "PRO: Unlimited Batch Active",
     "batch_upgrade_btn": "Upgrade to PRO",
     "batch_continue_free_btn": "Process First 10 Files (Free)",
-    "batch_unlock_pro_btn": "Get Lifetime PRO Pass ($39 / Rp 249.000)",
+    "batch_unlock_pro_btn": "Get Lifetime PRO Pass ($129)",
     "batch_limit_warning": "Free plan allows max 10 files. First 10 will be processed. Upgrade to PRO to process all files.",
 
     "batch_title": "Ultra-Batch PDF Processing",

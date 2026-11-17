@@ -1,7 +1,7 @@
 // src/utils/lemonSqueezy.ts
 // Helper untuk mengarahkan pengguna ke Lemon Squeezy Checkout dengan metadata user
 
-export type PlanType = 'lifetime' | 'monthly';
+export type PlanType = 'lifetime' | 'monthly' | 'yearly';
 
 export interface CheckoutUser {
   uid: string;
@@ -14,10 +14,17 @@ export const getLemonSqueezyCheckoutUrl = (
   plan: PlanType = 'lifetime'
 ): string => {
   const defaultLifetimeBuyUrl = 'https://thismyown.lemonsqueezy.com/checkout/buy/bd84d992-e4ed-4d88-a5ff-f1ab944f5815';
+  const defaultMonthlyBuyUrl = 'https://thismyown.lemonsqueezy.com/checkout/buy/monthly';
+  const defaultYearlyBuyUrl = 'https://thismyown.lemonsqueezy.com/checkout/buy/yearly';
   
-  const buyUrl = plan === 'monthly'
-    ? (import.meta.env.VITE_LEMONSQUEEZY_MONTHLY_BUY_URL || defaultLifetimeBuyUrl)
-    : (import.meta.env.VITE_LEMONSQUEEZY_LIFETIME_BUY_URL || defaultLifetimeBuyUrl);
+  let buyUrl = defaultLifetimeBuyUrl;
+  if (plan === 'monthly') {
+    buyUrl = import.meta.env.VITE_LEMONSQUEEZY_MONTHLY_BUY_URL || defaultMonthlyBuyUrl;
+  } else if (plan === 'yearly') {
+    buyUrl = import.meta.env.VITE_LEMONSQUEEZY_YEARLY_BUY_URL || defaultYearlyBuyUrl;
+  } else {
+    buyUrl = import.meta.env.VITE_LEMONSQUEEZY_LIFETIME_BUY_URL || defaultLifetimeBuyUrl;
+  }
 
   try {
     const url = new URL(buyUrl);
