@@ -44,11 +44,13 @@ const MI: React.FC<{
   </div>
 );
 
-// Helper to convert ALL-CAPS or raw text to clean Title Case for mobile navigation
+// Helper to convert ALL-CAPS or raw text to clean Title Case for navigation
 const toTitleCase = (str: string): string => {
   if (!str) return '';
-  const clean = str.replace(/^[\p{Emoji}\s]+/u, '').trim();
-  return clean
+  const emojiMatch = str.match(/^([\p{Extended_Pictographic}\u2600-\u27BF\uFE0F\s]+)(.*)$/u);
+  const emoji = emojiMatch ? emojiMatch[1] : '';
+  const rawText = emojiMatch ? emojiMatch[2] : str;
+  const formatted = rawText
     .toLowerCase()
     .split(' ')
     .map((word) => {
@@ -61,6 +63,7 @@ const toTitleCase = (str: string): string => {
       return word.charAt(0).toUpperCase() + word.slice(1);
     })
     .join(' ');
+  return emoji ? `${emoji.trim()} ${formatted}` : formatted;
 };
 
 export const Navbar: React.FC<NavbarProps> = ({
@@ -91,16 +94,16 @@ export const Navbar: React.FC<NavbarProps> = ({
   const en = UI_TRANSLATIONS['en'];
   const authT = authTranslations[currentLang] ?? authTranslations['en'] ?? {};
 
-  // Nav category labels using partial translations with English fallbacks
+  // Nav category labels using partial translations with English fallbacks (Title Case / Capitalized)
   const NAV = {
-    allPdfTools: t.navAllPdfTools ?? en.navAllPdfTools ?? 'ALL PDF TOOLS',
-    organize: t.navOrganizePdf ?? en.navOrganizePdf ?? '📁 ORGANIZE PDF',
-    optimize: t.navOptimizeEnhance ?? en.navOptimizeEnhance ?? '⚡ OPTIMIZE & ENHANCE',
-    spreadsheet: t.navSpreadsheetTools ?? en.navSpreadsheetTools ?? '📊 SPREADSHEET TOOLS',
-    security: t.navSecuritySign ?? en.navSecuritySign ?? '🔐 SECURITY & SIGN',
-    fromPdf: t.navConvertFromPdf ?? en.navConvertFromPdf ?? '📑 CONVERT FROM PDF',
-    toPdf: t.navConvertToPdf ?? en.navConvertToPdf ?? '🔄 CONVERT TO PDF',
-    moreTools: t.navMoreTools ?? en.navMoreTools ?? '🔧 MORE PDF TOOLS',
+    allPdfTools: toTitleCase(t.navAllPdfTools ?? en.navAllPdfTools ?? 'All PDF Tools'),
+    organize: toTitleCase(t.navOrganizePdf ?? en.navOrganizePdf ?? '📁 Organize PDF'),
+    optimize: toTitleCase(t.navOptimizeEnhance ?? en.navOptimizeEnhance ?? '⚡ Optimize & Enhance'),
+    spreadsheet: toTitleCase(t.navSpreadsheetTools ?? en.navSpreadsheetTools ?? '📊 Spreadsheet Tools'),
+    security: toTitleCase(t.navSecuritySign ?? en.navSecuritySign ?? '🔐 Security & Sign'),
+    fromPdf: toTitleCase(t.navConvertFromPdf ?? en.navConvertFromPdf ?? '📑 Convert from PDF'),
+    toPdf: toTitleCase(t.navConvertToPdf ?? en.navConvertToPdf ?? '🔄 Convert to PDF'),
+    moreTools: toTitleCase(t.navMoreTools ?? en.navMoreTools ?? '🔧 More PDF Tools'),
   };
 
   const popularTools = [
@@ -232,6 +235,11 @@ export const Navbar: React.FC<NavbarProps> = ({
   // Close on outside click
   useEffect(() => {
     const fn = (e: MouseEvent) => {
+      const target = e.target as HTMLElement | null;
+      // Do not close if clicking inside the mobile menu drawer
+      if (target?.closest?.('.mobile-menu-container')) {
+        return;
+      }
       if (navRef.current && !navRef.current.contains(e.target as Node)) {
         setIsMegaOpen(false);
         setIsSuiteOpen(false);
@@ -250,11 +258,14 @@ export const Navbar: React.FC<NavbarProps> = ({
   useEffect(() => {
     if (isMobileMenuOpen) {
       document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
     }
     return () => {
       document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
     };
   }, [isMobileMenuOpen]);
 
@@ -291,18 +302,31 @@ export const Navbar: React.FC<NavbarProps> = ({
         </div>
 
         {/* Center: Desktop Quick Tabs */}
-        <nav aria-label="Desktop Quick Navigation" className="desktop-only" style={{ flex: '1 1 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4, minWidth: 0 }}>
+        <nav aria-label="Desktop Quick Navigation" className="desktop-only" style={{ flex: '1 1 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, minWidth: 0 }}>
           {[
-            { id: 'merge-pdf', label: 'MERGE PDF' },
-            { id: 'compress-pdf', label: 'COMPRESS PDF' },
-            { id: 'pdf-to-word', label: 'PDF TO WORD' },
+            { id: 'merge-pdf', label: 'Merge PDF' },
+            { id: 'compress-pdf', label: 'Compress PDF' },
+            { id: 'pdf-to-word', label: 'PDF to Word' },
           ].map(({ id, label }) => (
             <button
               key={id}
               onClick={() => handleToolClick(id)}
               className="nav-tab-btn"
-              style={{ background: 'transparent', border: 'none', color: 'var(--text-main)', padding: '6px 12px', borderRadius: 8, fontSize: '0.92rem', fontWeight: 700, cursor: 'pointer', transition: 'all 0.2s', letterSpacing: '0.02em' }}
-            >{toolNames[id]?.[currentLang]?.toUpperCase() || label}</button>
+              style={{
+                background: 'transparent',
+                border: 'none',
+                color: 'var(--text-main)',
+                padding: '7px 14px',
+                borderRadius: 8,
+                fontSize: '1.02rem',
+                fontWeight: 700,
+                cursor: 'pointer',
+                transition: 'all 0.2s',
+                letterSpacing: '-0.01em',
+              }}
+            >
+              {toolNames[id]?.[currentLang] || label}
+            </button>
           ))}
 
           {/* ALL PDF TOOLS — hover dropdown trigger */}
@@ -316,9 +340,16 @@ export const Navbar: React.FC<NavbarProps> = ({
                 background: isMegaOpen ? 'var(--brand-gradient)' : 'rgba(225,29,72,0.1)',
                 color: isMegaOpen ? '#fff' : 'var(--text-accent)',
                 border: '1px solid rgba(225,29,72,0.3)',
-                padding: '6px 14px', borderRadius: 8, fontSize: '0.92rem', fontWeight: 800,
-                cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 6,
-                transition: 'all 0.2s', letterSpacing: '0.02em',
+                padding: '7px 16px',
+                borderRadius: 8,
+                fontSize: '1.02rem',
+                fontWeight: 800,
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                gap: 6,
+                transition: 'all 0.2s',
+                letterSpacing: '-0.01em',
                 boxShadow: isMegaOpen ? '0 4px 14px rgba(0,0,0,0.15)' : 'none',
               }}
             >
@@ -381,7 +412,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     <MI icon={EyeOff} label={toolNames['redact-pdf']?.[currentLang] || "Redact PDF"} onClick={() => handleToolClick('redact-pdf')} />
                     <div className="mega-menu-title" style={{ marginTop: 12 }}>{NAV.fromPdf}</div>
                     <MI icon={FileText} label={toolNames['pdf-to-word']?.[currentLang] || "PDF to Word"} onClick={() => handleToolClick('pdf-to-word')} highlight={true} />
-                    <MI icon={Presentation} label={toolNames['pdf-to-ppt']?.[currentLang] || "PDF to POWERPOINT"} onClick={() => handleToolClick('pdf-to-ppt')} />
+                    <MI icon={Presentation} label={toolNames['pdf-to-ppt']?.[currentLang] || "PDF to PowerPoint"} onClick={() => handleToolClick('pdf-to-ppt')} />
                     <MI icon={Images} label={toolNames['pdf-to-image']?.[currentLang] || "PDF to JPG / PNG"} onClick={() => handleToolClick('pdf-to-image')} />
                     <MI icon={Image} label={toolNames['extract-images-pdf']?.[currentLang] || "Extract Images"} onClick={() => handleToolClick('extract-images-pdf')} />
                   </div>
@@ -389,8 +420,8 @@ export const Navbar: React.FC<NavbarProps> = ({
                   {/* Col 4: Convert To PDF + More Tools — 7 items */}
                   <div className="mega-menu-col">
                     <div className="mega-menu-title">{NAV.toPdf}</div>
-                    <MI icon={FileSpreadsheet} label={toolNames['excel-to-pdf']?.[currentLang] || "EXCEL to PDF"} onClick={() => handleToolClick('excel-to-pdf')} />
-                    <MI icon={Presentation} label={toolNames['ppt-to-pdf']?.[currentLang] || "POWERPOINT to PDF"} onClick={() => handleToolClick('ppt-to-pdf')} />
+                    <MI icon={FileSpreadsheet} label={toolNames['excel-to-pdf']?.[currentLang] || "Excel to PDF"} onClick={() => handleToolClick('excel-to-pdf')} />
+                    <MI icon={Presentation} label={toolNames['ppt-to-pdf']?.[currentLang] || "PowerPoint to PDF"} onClick={() => handleToolClick('ppt-to-pdf')} />
                     <MI icon={Image} label={toolNames['image-to-pdf']?.[currentLang] || "JPG / PNG to PDF"} onClick={() => handleToolClick('image-to-pdf')} />
                     <MI icon={AlignLeft} label={toolNames['txt-to-pdf']?.[currentLang] || "TXT to PDF"} onClick={() => handleToolClick('txt-to-pdf')} />
                     <div className="mega-menu-title" style={{ marginTop: 12 }}>{NAV.moreTools}</div>
@@ -430,12 +461,12 @@ export const Navbar: React.FC<NavbarProps> = ({
               <button
                 onClick={openAuthModal}
                 style={{
-                  padding: '8px 20px',
+                  padding: '9px 22px',
                   borderRadius: 8,
                   background: 'var(--brand-primary)',
                   color: '#ffffff',
                   border: 'none',
-                  fontSize: '0.86rem',
+                  fontSize: '0.96rem',
                   fontWeight: 700,
                   cursor: 'pointer',
                   display: 'inline-flex',
@@ -1369,7 +1400,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             left: 0,
             right: 0,
             bottom: 0,
-            width: '100vw',
+            width: '100%',
+            maxWidth: '100%',
             background: 'var(--bg-app)',
             borderTop: '1px solid var(--border-color)',
             padding: '16px 16px calc(60px + env(safe-area-inset-bottom, 32px))',
@@ -1682,7 +1714,11 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* 4. Mobile Utility Controls: Language & Theme Toggle */}
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
             <button
-              onClick={() => setIsMobileLangOpen(!isMobileLangOpen)}
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                setIsMobileLangOpen((prev) => !prev);
+              }}
               style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -1699,15 +1735,19 @@ export const Navbar: React.FC<NavbarProps> = ({
                 minHeight: 42,
               }}
             >
-              <Globe size={16} />
+              <span style={{ fontSize: '1.1rem', lineHeight: 1 }}>{getLanguageByCode(currentLang).flag}</span>
               <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                {getLanguageByCode(currentLang).flag} {getLanguageByCode(currentLang).nativeName}
+                {getLanguageByCode(currentLang).nativeName}
               </span>
               <ChevronDown size={14} style={{ transform: isMobileLangOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s ease', flexShrink: 0 }} />
             </button>
 
             <button
-              onClick={onToggleTheme}
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                onToggleTheme();
+              }}
               style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -1732,6 +1772,8 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Inline Language Selector Panel (100% in-flow, zero clipping) */}
           {isMobileLangOpen && (
             <div
+              id="mobile-lang-panel"
+              onClick={(e) => e.stopPropagation()}
               style={{
                 borderRadius: 12,
                 border: '1px solid var(--border-color)',
@@ -1744,11 +1786,15 @@ export const Navbar: React.FC<NavbarProps> = ({
               }}
             >
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                <span style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--text-main)' }}>
+                <span style={{ fontSize: '0.84rem', fontWeight: 700, color: 'var(--text-main)' }}>
                   {t.languageSelect || 'Select Language'} ({SUPPORTED_LANGUAGES.length})
                 </span>
                 <button
-                  onClick={() => setIsMobileLangOpen(false)}
+                  type="button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setIsMobileLangOpen(false);
+                  }}
                   style={{ background: 'none', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', padding: 4 }}
                 >
                   <X size={16} />
@@ -1779,7 +1825,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               </div>
 
               {/* Scrollable Language Grid */}
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 6, maxHeight: 200, overflowY: 'auto' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 6, maxHeight: 220, overflowY: 'auto' }}>
                 {SUPPORTED_LANGUAGES.filter(
                   (l) =>
                     l.name.toLowerCase().includes(langSearch.toLowerCase()) ||
@@ -1789,8 +1835,10 @@ export const Navbar: React.FC<NavbarProps> = ({
                   const isSelected = currentLang === l.code;
                   return (
                     <button
+                      type="button"
                       key={l.code}
-                      onClick={() => {
+                      onClick={(e) => {
+                        e.stopPropagation();
                         onSelectLang(l.code);
                         setIsMobileLangOpen(false);
                         setIsMobileMenuOpen(false);
@@ -1870,11 +1918,14 @@ export const Navbar: React.FC<NavbarProps> = ({
             <span>{currentLang === 'id' ? '100% Olah di Browser · Privasi Bebas Server' : '100% Client-Side WASM · Zero Server Upload'}</span>
           </div>
         </div>,
-        document.body
+        typeof document !== 'undefined' ? document.documentElement : (document.body || null)
       )}
 
       {/* Styles */}
       <style>{`
+        .nav-tab-btn {
+          text-transform: capitalize;
+        }
         .nav-tab-btn:hover {
           color: var(--text-accent) !important;
           background: rgba(225, 29, 72, 0.08) !important;
@@ -1885,13 +1936,14 @@ export const Navbar: React.FC<NavbarProps> = ({
           gap: 4px;
         }
         .mega-menu-title {
-          font-size: 0.85rem;
+          font-size: 0.95rem;
           font-weight: 800;
           color: var(--text-accent);
-          letter-spacing: 0.06em;
+          letter-spacing: 0.01em;
           margin-bottom: 4px;
           border-bottom: 1px dashed var(--border-color);
           padding-bottom: 7px;
+          text-transform: capitalize;
         }
         .mega-menu-item {
           display: flex;
@@ -1910,11 +1962,11 @@ export const Navbar: React.FC<NavbarProps> = ({
           transform: translateX(3px);
         }
         .mega-menu-item .item-title {
-          font-size: 0.92rem;
+          font-size: 1.02rem;
           font-weight: 700;
           color: var(--text-main);
           line-height: 1.2;
-          text-transform: none;
+          text-transform: capitalize;
         }
         .mega-menu-item:hover .item-title {
           color: var(--text-accent);
@@ -1930,7 +1982,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             left: 0 !important;
             right: 0 !important;
             bottom: 0 !important;
-            width: 100vw !important;
+            width: 100% !important;
+            max-width: 100% !important;
             height: auto !important;
             min-height: calc(100% - 60px) !important;
             max-height: none !important;
@@ -1942,6 +1995,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             box-sizing: border-box !important;
             margin: 0 !important;
             border-radius: 0 !important;
+            zoom: 1 !important;
           }
           .navbar-main-inner { padding: 0 16px !important; height: 60px !important; }
           .brand-title { font-size: 1.18rem !important; }

@@ -7,7 +7,7 @@ import { UI_TRANSLATIONS } from '../src/i18n/translations';
 import { GEO_CITATIONS } from '../src/i18n/geoTranslations';
 import { RESEARCH_TRANSLATIONS } from '../src/i18n/researchTranslations';
 import { STATIC_SLUGS, type StaticPageId } from '../src/i18n/staticSlugs';
-import { toolSlugs } from '../src/i18n/slugTranslations';
+import { toolSlugs, toolNames } from '../src/i18n/slugTranslations';
 import { cleanMetaTitle, cleanMetaDescription } from '../src/utils/seoHelpers';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -100,14 +100,14 @@ const buildHeaderNavigation = (lang: string, isEn: boolean): string => {
         </a>
       </div>
       <nav aria-label="Main Quick Navigation" style="display: flex; align-items: center; gap: 8px;">
-        <a href="${mergeSlug}" style="color: var(--seo-text, #f8fafc); text-decoration: none; padding: 6px 12px; border-radius: 8px; font-size: 0.92rem; font-weight: 700; letter-spacing: 0.02em;">MERGE PDF</a>
-        <a href="${compressSlug}" style="color: var(--seo-text, #f8fafc); text-decoration: none; padding: 6px 12px; border-radius: 8px; font-size: 0.92rem; font-weight: 700; letter-spacing: 0.02em;">COMPRESS PDF</a>
-        <a href="${wordSlug}" style="color: var(--seo-text, #f8fafc); text-decoration: none; padding: 6px 12px; border-radius: 8px; font-size: 0.92rem; font-weight: 700; letter-spacing: 0.02em;">PDF TO WORD</a>
+        <a href="${mergeSlug}" style="color: var(--seo-text, #f8fafc); text-decoration: none; padding: 7px 14px; border-radius: 8px; font-size: 1.02rem; font-weight: 700; letter-spacing: -0.01em;">${toolNames['merge-pdf']?.[lang] || 'Merge PDF'}</a>
+        <a href="${compressSlug}" style="color: var(--seo-text, #f8fafc); text-decoration: none; padding: 7px 14px; border-radius: 8px; font-size: 1.02rem; font-weight: 700; letter-spacing: -0.01em;">${toolNames['compress-pdf']?.[lang] || 'Compress PDF'}</a>
+        <a href="${wordSlug}" style="color: var(--seo-text, #f8fafc); text-decoration: none; padding: 7px 14px; border-radius: 8px; font-size: 1.02rem; font-weight: 700; letter-spacing: -0.01em;">${toolNames['pdf-to-word']?.[lang] || 'PDF to Word'}</a>
       </nav>
-      <div style="display: flex; align-items: center; gap: 14px; font-size: 0.9rem; font-weight: 600;">
+      <div style="display: flex; align-items: center; gap: 14px; font-size: 0.98rem; font-weight: 600;">
         <a href="${getStaticHref('pricing')}" style="color: var(--seo-text, #f8fafc); text-decoration: none; font-weight: 700;">Pricing</a>
         <a href="${getStaticHref('languages')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none;">30 Languages</a>
-        <a href="${homeHref}" onclick="if(window.__openAuthModal){window.__openAuthModal();return false;}" style="background: #e11d48; color: #ffffff; padding: 6px 14px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
+        <a href="${homeHref}" onclick="if(window.__openAuthModal){window.__openAuthModal();return false;}" style="background: #e11d48; color: #ffffff; padding: 8px 18px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 0.96rem; display: inline-flex; align-items: center; gap: 6px;">
           <span>${lang === 'id' ? 'Masuk' : 'Sign In'}</span>
         </a>
       </div>

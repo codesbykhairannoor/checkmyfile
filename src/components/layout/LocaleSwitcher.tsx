@@ -72,7 +72,7 @@ export const LocaleSwitcher: React.FC<LocaleSwitcherProps> = ({
           borderRadius: compact ? 8 : (fullWidth ? 10 : 9999),
           cursor: 'pointer',
           fontWeight: 600,
-          fontSize: compact ? '0.82rem' : '0.88rem',
+          fontSize: compact ? '0.88rem' : '0.98rem',
           transition: 'all 0.2s ease',
           userSelect: 'none',
         }}
