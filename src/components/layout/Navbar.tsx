@@ -58,7 +58,8 @@ export const Navbar: React.FC<NavbarProps> = ({
   const [suiteView, setSuiteView] = useState<'main' | 'language'>('main');
   const [langSearch, setLangSearch] = useState('');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isMobileAllOpen, setIsMobileAllOpen] = useState(false);
+  const [mobileSearch, setMobileSearch] = useState('');
+  const [expandedMobileCategory, setExpandedMobileCategory] = useState<string | null>(null);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
   const { user, profile, isPro, openAuthModal, signOut } = useAuth();
   const navRef = useRef<HTMLDivElement>(null);
@@ -82,10 +83,105 @@ export const Navbar: React.FC<NavbarProps> = ({
     moreTools: t.navMoreTools ?? en.navMoreTools ?? '🔧 MORE PDF TOOLS',
   };
 
+  const popularTools = [
+    { id: 'merge-pdf', label: 'Merge PDF', Icon: Combine, color: '#e11d48' },
+    { id: 'compress-pdf', label: 'Compress PDF', Icon: Minimize2, color: '#2563eb' },
+    { id: 'pdf-to-word', label: 'PDF to Word', Icon: FileText, color: '#059669' },
+    { id: 'split-pdf', label: 'Split PDF', Icon: Scissors, color: '#d97706' },
+    { id: 'protect-pdf', label: 'Protect PDF', Icon: Lock, color: '#7c3aed' },
+    { id: 'image-to-pdf', label: 'JPG to PDF', Icon: Images, color: '#db2777' },
+  ];
+
+  const mobileToolCategories = [
+    {
+      title: NAV.organize,
+      icon: Combine,
+      tools: [
+        { id: 'merge-pdf', label: 'Merge PDF', Icon: Combine },
+        { id: 'split-pdf', label: 'Split PDF', Icon: Scissors },
+        { id: 'rotate-pdf', label: 'Rotate PDF', Icon: RotateCw },
+        { id: 'page-numbers', label: 'Page Numbers', Icon: Hash },
+        { id: 'remove-pdf', label: 'Remove Pages', Icon: Trash2 },
+        { id: 'organize-pdf', label: 'Organize PDF', Icon: LayoutList },
+        { id: 'crop-pdf', label: 'Crop PDF', Icon: Crop },
+        { id: 'compare-pdf', label: 'Compare PDF', Icon: Scale },
+        { id: 'resize-pdf', label: 'Resize PDF', Icon: Maximize },
+        { id: 'reverse-pdf', label: 'Reverse PDF', Icon: ArrowDownUp },
+      ],
+    },
+    {
+      title: NAV.optimize,
+      icon: Minimize2,
+      tools: [
+        { id: 'edit-pdf', label: 'Edit PDF', Icon: Edit3 },
+        { id: 'compress-pdf', label: 'Compress PDF', Icon: Minimize2 },
+        { id: 'ocr-pdf', label: 'OCR to Text', Icon: ScanText },
+        { id: 'grayscale-pdf', label: 'Grayscale PDF', Icon: Contrast },
+        { id: 'scan-to-pdf', label: 'Scan to PDF', Icon: ScanLine },
+        { id: 'remove-pdf-metadata', label: 'Remove Metadata', Icon: Eraser },
+        { id: 'edit-pdf-metadata', label: 'Edit Metadata', Icon: SlidersHorizontal },
+      ],
+    },
+    {
+      title: NAV.fromPdf,
+      icon: FileText,
+      tools: [
+        { id: 'pdf-to-word', label: 'PDF to Word', Icon: FileText },
+        { id: 'pdf-to-ppt', label: 'PDF to PPTX', Icon: Presentation },
+        { id: 'pdf-to-image', label: 'PDF to JPG/PNG', Icon: Images },
+        { id: 'extract-images-pdf', label: 'Extract Images', Icon: Image },
+      ],
+    },
+    {
+      title: NAV.toPdf,
+      icon: Presentation,
+      tools: [
+        { id: 'excel-to-pdf', label: 'Excel to PDF', Icon: FileSpreadsheet },
+        { id: 'ppt-to-pdf', label: 'PPTX to PDF', Icon: Presentation },
+        { id: 'image-to-pdf', label: 'JPG/PNG to PDF', Icon: Image },
+        { id: 'txt-to-pdf', label: 'TXT to PDF', Icon: AlignLeft },
+      ],
+    },
+    {
+      title: NAV.security,
+      icon: Lock,
+      tools: [
+        { id: 'watermark-pdf', label: 'Watermark PDF', Icon: Stamp },
+        { id: 'sign-pdf', label: 'Sign PDF', Icon: PenTool },
+        { id: 'protect-pdf', label: 'Protect PDF', Icon: Lock },
+        { id: 'unlock-pdf', label: 'Unlock PDF', Icon: Unlock },
+        { id: 'redact-pdf', label: 'Redact PDF', Icon: EyeOff },
+      ],
+    },
+    {
+      title: NAV.spreadsheet,
+      icon: TableProperties,
+      tools: [
+        { id: 'csv-to-excel', label: 'CSV to Excel', Icon: TableProperties },
+        { id: 'excel-to-csv', label: 'Excel to CSV', Icon: FileText },
+      ],
+    },
+  ];
+
+  const allMobileTools = mobileToolCategories.flatMap((g) =>
+    g.tools.map((t) => ({ ...t, categoryName: g.title }))
+  );
+
+  const filteredMobileTools = mobileSearch.trim()
+    ? allMobileTools.filter((t) => {
+        const q = mobileSearch.toLowerCase().trim();
+        const localized = (toolNames[t.id]?.[currentLang] || t.label).toLowerCase();
+        const idMatch = t.id.toLowerCase().includes(q);
+        const catMatch = t.categoryName.toLowerCase().includes(q);
+        return localized.includes(q) || idMatch || catMatch;
+      })
+    : [];
+
   const handleToolClick = (toolId: string) => {
     setIsMegaOpen(false);
     setIsSuiteOpen(false);
     setIsMobileMenuOpen(false);
+    setMobileSearch('');
     const tool = getToolById(toolId);
     if (tool && onSelectTool) onSelectTool(tool);
     else onNavigateHome();
@@ -122,6 +218,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         setSuiteView('main');
         setLangSearch('');
         setIsMobileMenuOpen(false);
+        setMobileSearch('');
         setIsUserMenuOpen(false);
       }
     };
@@ -155,7 +252,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         {/* Left: Brand Logo */}
         <div style={{ display: 'flex', alignItems: 'center', flexShrink: 0 }}>
           <div onClick={onNavigateHome} aria-label="Navigate to Home" style={{ display: 'flex', alignItems: 'center', gap: 12, cursor: 'pointer', userSelect: 'none', flexShrink: 0 }}>
-            <img src="/logo.png" alt="HandleMyFile Logo" style={{ height: 40, width: 'auto', objectFit: 'contain' }} />
+            <img src="/logo.png" alt="HandleMyFile Logo" className="brand-logo-img" style={{ height: 40, width: 'auto', objectFit: 'contain' }} />
             <div className="brand-title" style={{ fontSize: '1.4rem', fontWeight: 800, letterSpacing: '-0.02em', lineHeight: 1.1, fontFamily: 'var(--font-heading)' }}>
               HandleMy<span className="gradient-text">File</span>
             </div>
@@ -1173,37 +1270,417 @@ export const Navbar: React.FC<NavbarProps> = ({
             <button
               onClick={() => {
                 setIsMobileLangOpen(false);
+                if (isMobileMenuOpen) setMobileSearch('');
                 setIsMobileMenuOpen(!isMobileMenuOpen);
               }}
               aria-label="Toggle Navigation Menu"
               style={{
-                width: 38,
-                height: 38,
-                background: isMobileMenuOpen ? 'var(--brand-primary)' : 'var(--bg-card)',
-                border: '1px solid var(--border-color)',
-                borderRadius: 8,
-                color: isMobileMenuOpen ? 'white' : 'var(--text-main)',
+                width: 40,
+                height: 40,
+                background: isMobileMenuOpen ? 'rgba(225, 29, 72, 0.12)' : 'var(--bg-card)',
+                border: isMobileMenuOpen ? '1px solid rgba(225, 29, 72, 0.4)' : '1px solid var(--border-color)',
+                borderRadius: 10,
+                color: isMobileMenuOpen ? 'var(--brand-primary)' : 'var(--text-main)',
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                boxShadow: '0 2px 6px rgba(0,0,0,0.06)',
+                transition: 'all 0.15s ease',
               }}
             >
-              {isMobileMenuOpen ? <X size={21} /> : <Menu size={21} />}
+              {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
           </div>
         </div>
       </div>
 
-      {/* ── Mobile Dropdown Menu ── */}
+      {/* ── Clean Mobile Dropdown Menu ── */}
       {isMobileMenuOpen && (
         <div
           className="mobile-menu-container"
-          style={{ position: 'absolute', top: 68, left: 0, right: 0, background: 'var(--bg-app)', borderBottom: '1px solid var(--border-color)', padding: '16px 16px 28px', maxHeight: 'calc(100vh - 68px)', overflowY: 'auto', zIndex: 40, boxShadow: '0 12px 30px rgba(0,0,0,0.15)' }}
+          style={{
+            position: 'absolute',
+            top: '100%',
+            left: 0,
+            right: 0,
+            background: 'var(--bg-app)',
+            borderBottom: '1px solid var(--border-color)',
+            padding: '16px 16px 28px',
+            maxHeight: 'calc(100vh - 60px)',
+            overflowY: 'auto',
+            zIndex: 40,
+            boxShadow: '0 20px 40px rgba(0,0,0,0.22)',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: 12,
+          }}
         >
-          {/* Mobile Top Row: Language Selector & Theme Toggle */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 14 }}>
+          {/* 1. Mobile User Profile or Sign In Card */}
+          {!user ? (
+            <button
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                openAuthModal();
+              }}
+              style={{
+                width: '100%',
+                height: 44,
+                borderRadius: 10,
+                background: 'var(--brand-primary)',
+                color: '#ffffff',
+                border: 'none',
+                fontSize: '0.9rem',
+                fontWeight: 700,
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: 8,
+                transition: 'opacity 0.15s ease',
+              }}
+            >
+              <LogIn size={17} />
+              <span>{currentLang === 'id' ? 'Masuk ke Akun' : (authT.nav_signin || 'Sign In')}</span>
+            </button>
+          ) : (
+            <div
+              style={{
+                padding: '10px 14px',
+                borderRadius: 10,
+                background: 'var(--bg-card)',
+                border: '1px solid var(--border-color)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10, minWidth: 0 }}>
+                {user.photoURL ? (
+                  <img src={user.photoURL} alt={user.displayName || 'User'} style={{ width: 34, height: 34, borderRadius: '50%', objectFit: 'cover' }} />
+                ) : (
+                  <div style={{ width: 34, height: 34, borderRadius: '50%', background: 'var(--brand-primary)', color: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontSize: '0.85rem' }}>
+                    {(user.displayName || user.email || 'U')[0].toUpperCase()}
+                  </div>
+                )}
+                <div style={{ minWidth: 0 }}>
+                  <div style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                    {user.displayName || authT.nav_account || 'User'}
+                  </div>
+                  <div style={{ fontSize: '0.74rem', color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                    {user.email}
+                  </div>
+                </div>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexShrink: 0 }}>
+                {isPro && (
+                  <span style={{ background: '#f59e0b', color: '#000000', fontSize: '0.7rem', fontWeight: 800, padding: '2px 8px', borderRadius: 6 }}>
+                    PRO
+                  </span>
+                )}
+                <button
+                  onClick={() => {
+                    setIsMobileMenuOpen(false);
+                    signOut();
+                  }}
+                  style={{
+                    padding: '6px 10px',
+                    background: 'rgba(239,68,68,0.1)',
+                    border: '1px solid rgba(239,68,68,0.25)',
+                    color: '#ef4444',
+                    borderRadius: 6,
+                    fontSize: '0.75rem',
+                    fontWeight: 700,
+                    cursor: 'pointer',
+                  }}
+                >
+                  {authT.nav_signout || 'Sign Out'}
+                </button>
+              </div>
+            </div>
+          )}
+
+          {/* 2. Mobile Pricing / PRO Link Banner */}
+          <a
+            href={currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`}
+            onClick={(e) => {
+              e.preventDefault();
+              setIsMobileMenuOpen(false);
+              window.history.pushState({}, '', currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`);
+              window.dispatchEvent(new PopStateEvent('popstate'));
+            }}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              padding: '10px 14px',
+              borderRadius: 10,
+              background: 'rgba(245, 158, 11, 0.08)',
+              border: '1px solid rgba(245, 158, 11, 0.3)',
+              color: 'var(--text-main)',
+              textDecoration: 'none',
+              transition: 'all 0.15s ease',
+            }}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10, minWidth: 0 }}>
+              <div style={{ width: 32, height: 32, borderRadius: 8, background: 'rgba(245, 158, 11, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#f59e0b', flexShrink: 0 }}>
+                <Crown size={17} />
+              </div>
+              <div style={{ minWidth: 0 }}>
+                <div style={{ fontSize: '0.86rem', fontWeight: 800, color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: 6 }}>
+                  <span>{t.footerPricing || 'Pricing'} &amp; PRO</span>
+                  <span style={{ fontSize: '0.66rem', fontWeight: 800, background: '#f59e0b', color: '#000', padding: '1px 5px', borderRadius: 4 }}>
+                    -34%
+                  </span>
+                </div>
+                <div style={{ fontSize: '0.73rem', color: 'var(--text-muted)' }}>
+                  $9.99/mo &middot; $79/yr &middot; $129 Pass
+                </div>
+              </div>
+            </div>
+            <ArrowRight size={15} color="#f59e0b" style={{ flexShrink: 0 }} />
+          </a>
+
+          {/* 3. Live Tool Search Input */}
+          <div style={{ position: 'relative' }}>
+            <Search size={16} color="var(--text-muted)" style={{ position: 'absolute', left: 13, top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }} />
+            <input
+              type="text"
+              value={mobileSearch}
+              onChange={(e) => setMobileSearch(e.target.value)}
+              placeholder={currentLang === 'id' ? 'Cari 30+ alat PDF (contoh: kompres, word)...' : 'Search 30+ PDF tools (e.g. compress, word)...'}
+              style={{
+                width: '100%',
+                height: 42,
+                padding: '0 36px 0 38px',
+                borderRadius: 10,
+                background: 'var(--bg-card)',
+                border: '1px solid var(--border-color)',
+                color: 'var(--text-main)',
+                fontSize: '0.86rem',
+                fontFamily: 'inherit',
+                outline: 'none',
+                boxSizing: 'border-box',
+              }}
+            />
+            {mobileSearch && (
+              <button
+                onClick={() => setMobileSearch('')}
+                aria-label="Clear Search"
+                style={{
+                  position: 'absolute',
+                  right: 10,
+                  top: '50%',
+                  transform: 'translateY(-50%)',
+                  background: 'transparent',
+                  border: 'none',
+                  color: 'var(--text-muted)',
+                  cursor: 'pointer',
+                  padding: 4,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              >
+                <X size={15} />
+              </button>
+            )}
+          </div>
+
+          {/* 4. Tools Navigation Area */}
+          {mobileSearch.trim() ? (
+            /* Live Filtered Search Results */
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+              {filteredMobileTools.length > 0 ? (
+                filteredMobileTools.map((tool) => (
+                  <button
+                    key={tool.id}
+                    onClick={() => {
+                      setMobileSearch('');
+                      handleToolClick(tool.id);
+                    }}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      padding: '10px 12px',
+                      borderRadius: 10,
+                      background: 'var(--bg-card)',
+                      border: '1px solid var(--border-color)',
+                      color: 'var(--text-main)',
+                      cursor: 'pointer',
+                      textAlign: 'left',
+                    }}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 10, minWidth: 0 }}>
+                      <div style={{ width: 32, height: 32, borderRadius: 8, background: 'rgba(225,29,72,0.1)', color: 'var(--brand-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                        <tool.Icon size={16} />
+                      </div>
+                      <div style={{ minWidth: 0 }}>
+                        <div style={{ fontSize: '0.86rem', fontWeight: 700, color: 'var(--text-main)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                          {toolNames[tool.id]?.[currentLang] || tool.label}
+                        </div>
+                        <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
+                          {tool.categoryName.replace(/^[\p{Emoji}\s]+/u, '')}
+                        </div>
+                      </div>
+                    </div>
+                    <ArrowRight size={15} color="var(--text-muted)" style={{ flexShrink: 0 }} />
+                  </button>
+                ))
+              ) : (
+                <div style={{ padding: '24px 16px', textAlign: 'center', color: 'var(--text-muted)', fontSize: '0.86rem' }}>
+                  <div>{currentLang === 'id' ? 'Tidak ada alat yang cocok untuk' : 'No tools found matching'} "{mobileSearch}"</div>
+                  <button
+                    onClick={() => setMobileSearch('')}
+                    style={{ marginTop: 10, padding: '6px 14px', borderRadius: 8, background: 'var(--bg-card)', border: '1px solid var(--border-color)', color: 'var(--brand-primary)', fontSize: '0.8rem', fontWeight: 700, cursor: 'pointer' }}
+                  >
+                    {currentLang === 'id' ? 'Hapus Pencarian' : 'Clear Search'}
+                  </button>
+                </div>
+              )}
+            </div>
+          ) : (
+            /* Standard Mobile View: Popular Tools + Collapsible Categories */
+            <>
+              {/* Popular Tools Section */}
+              <div>
+                <div style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--text-accent)', letterSpacing: '0.06em', marginBottom: 8, textTransform: 'uppercase' }}>
+                  {currentLang === 'id' ? 'Alat Populer' : 'Popular Tools'}
+                </div>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
+                  {popularTools.map((tool) => (
+                    <button
+                      key={tool.id}
+                      onClick={() => handleToolClick(tool.id)}
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: 9,
+                        padding: '10px 10px',
+                        borderRadius: 10,
+                        background: 'var(--bg-card)',
+                        border: '1px solid var(--border-color)',
+                        color: 'var(--text-main)',
+                        cursor: 'pointer',
+                        textAlign: 'left',
+                        minHeight: 46,
+                      }}
+                    >
+                      <div
+                        style={{
+                          width: 30,
+                          height: 30,
+                          borderRadius: 8,
+                          background: `${tool.color}15`,
+                          color: tool.color,
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          flexShrink: 0,
+                        }}
+                      >
+                        <tool.Icon size={16} />
+                      </div>
+                      <div style={{ minWidth: 0, overflow: 'hidden' }}>
+                        <div style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--text-main)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                          {toolNames[tool.id]?.[currentLang] || tool.label}
+                        </div>
+                      </div>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* All Categories Accordion */}
+              <div>
+                <div style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--text-accent)', letterSpacing: '0.06em', marginBottom: 8, textTransform: 'uppercase' }}>
+                  {NAV.allPdfTools}
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                  {mobileToolCategories.map((group) => {
+                    const isExpanded = expandedMobileCategory === group.title;
+                    return (
+                      <div
+                        key={group.title}
+                        style={{
+                          borderRadius: 10,
+                          border: '1px solid var(--border-color)',
+                          background: isExpanded ? 'var(--bg-card)' : 'transparent',
+                          overflow: 'hidden',
+                          transition: 'all 0.15s ease',
+                        }}
+                      >
+                        <button
+                          onClick={() => setExpandedMobileCategory(isExpanded ? null : group.title)}
+                          style={{
+                            width: '100%',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'space-between',
+                            padding: '11px 14px',
+                            background: 'transparent',
+                            border: 'none',
+                            color: 'var(--text-main)',
+                            fontSize: '0.84rem',
+                            fontWeight: 700,
+                            cursor: 'pointer',
+                          }}
+                        >
+                          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                            <group.icon size={16} color="var(--brand-primary)" />
+                            <span>{group.title.replace(/^[\p{Emoji}\s]+/u, '')}</span>
+                          </div>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                            <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 600, background: 'var(--bg-app)', padding: '2px 7px', borderRadius: 6, border: '1px solid var(--border-color)' }}>
+                              {group.tools.length}
+                            </span>
+                            {isExpanded ? <ChevronUp size={16} color="var(--text-muted)" /> : <ChevronDown size={16} color="var(--text-muted)" />}
+                          </div>
+                        </button>
+
+                        {isExpanded && (
+                          <div style={{ padding: '4px 10px 12px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 6, borderTop: '1px dashed var(--border-color)' }}>
+                            {group.tools.map(({ id, label, Icon }) => (
+                              <button
+                                key={id}
+                                onClick={() => handleToolClick(id)}
+                                style={{
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  gap: 8,
+                                  background: 'var(--bg-app)',
+                                  border: '1px solid var(--border-color)',
+                                  padding: '9px 10px',
+                                  borderRadius: 8,
+                                  fontWeight: 600,
+                                  color: 'var(--text-main)',
+                                  fontSize: '0.78rem',
+                                  cursor: 'pointer',
+                                  textAlign: 'left',
+                                  minWidth: 0,
+                                }}
+                              >
+                                <Icon size={14} color="var(--brand-primary)" style={{ flexShrink: 0 }} />
+                                <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                                  {toolNames[id]?.[currentLang] || label}
+                                </span>
+                              </button>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </>
+          )}
+
+          {/* Bottom Divider */}
+          <div style={{ height: 1, background: 'var(--border-color)', margin: '4px 0 2px' }} />
+
+          {/* 5. Mobile Utility Controls: Language Selector & Theme Toggle */}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
             <LocaleSwitcher
               currentLang={currentLang}
               onSelectLang={(code) => {
@@ -1230,297 +1707,24 @@ export const Navbar: React.FC<NavbarProps> = ({
                 padding: '8px 12px',
                 background: 'var(--bg-card)',
                 border: '1px solid var(--border-color)',
-                borderRadius: 9999,
+                borderRadius: 10,
                 color: 'var(--text-main)',
                 fontWeight: 600,
-                fontSize: '0.82rem',
+                fontSize: '0.84rem',
                 cursor: 'pointer',
-                minHeight: 38,
+                minHeight: 40,
               }}
             >
-              {isLightMode ? <Moon size={15} color="#8b5cf6" /> : <Sun size={15} color="#f59e0b" />}
+              {isLightMode ? <Moon size={16} color="#8b5cf6" /> : <Sun size={16} color="#f59e0b" />}
               <span>{currentLang === 'id' ? (isLightMode ? 'Mode Gelap' : 'Mode Terang') : (isLightMode ? 'Dark Mode' : 'Light Mode')}</span>
             </button>
           </div>
 
-          {/* Mobile User Profile or Sign In Card */}
-          {!user ? (
-            <button
-              onClick={() => {
-                setIsMobileMenuOpen(false);
-                openAuthModal();
-              }}
-              style={{
-                width: '100%',
-                padding: '12px',
-                borderRadius: 10,
-                background: 'var(--brand-primary)',
-                color: '#ffffff',
-                border: 'none',
-                fontSize: '0.9rem',
-                fontWeight: 700,
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: 8,
-                marginBottom: 14,
-              }}
-            >
-              <LogIn size={16} />
-              <span>{currentLang === 'id' ? 'Masuk / Login Akun' : (authT.nav_signin || 'Sign In')}</span>
-            </button>
-          ) : (
-            <div
-              style={{
-                padding: '12px',
-                borderRadius: 10,
-                background: 'var(--bg-card)',
-                border: '1px solid var(--border-color)',
-                marginBottom: 14,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-              }}
-            >
-              <div style={{ display: 'flex', alignItems: 'center', gap: 10, minWidth: 0 }}>
-                {user.photoURL ? (
-                  <img src={user.photoURL} alt={user.displayName || 'User'} style={{ width: 34, height: 34, borderRadius: '50%', objectFit: 'cover' }} />
-                ) : (
-                  <div style={{ width: 34, height: 34, borderRadius: '50%', background: 'var(--brand-primary)', color: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontSize: '0.85rem' }}>
-                    {(user.displayName || user.email || 'U')[0].toUpperCase()}
-                  </div>
-                )}
-                <div style={{ minWidth: 0 }}>
-                  <div style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                    {user.displayName || authT.nav_account || 'User'}
-                  </div>
-                  <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                    {user.email}
-                  </div>
-                </div>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexShrink: 0 }}>
-                {isPro && (
-                  <span style={{ background: '#f59e0b', color: '#000000', fontSize: '0.7rem', fontWeight: 900, padding: '2px 8px', borderRadius: 6 }}>
-                    PRO
-                  </span>
-                )}
-                <button
-                  onClick={() => {
-                    setIsMobileMenuOpen(false);
-                    signOut();
-                  }}
-                  style={{
-                    padding: '6px 10px',
-                    background: 'rgba(239,68,68,0.1)',
-                    border: '1px solid rgba(239,68,68,0.3)',
-                    color: '#ef4444',
-                    borderRadius: 6,
-                    fontSize: '0.75rem',
-                    fontWeight: 700,
-                    cursor: 'pointer',
-                  }}
-                >
-                  {authT.nav_signout || 'Sign Out'}
-                </button>
-              </div>
-            </div>
-          )}
-
-          {/* Mobile Pricing / PRO Link Banner */}
-          <a
-            href={currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`}
-            onClick={(e) => {
-              e.preventDefault();
-              setIsMobileMenuOpen(false);
-              window.history.pushState({}, '', currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`);
-              window.dispatchEvent(new PopStateEvent('popstate'));
-            }}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              padding: '11px 14px',
-              borderRadius: 10,
-              background: 'rgba(245, 158, 11, 0.1)',
-              border: '1px solid rgba(245, 158, 11, 0.35)',
-              color: 'var(--text-main)',
-              textDecoration: 'none',
-              marginBottom: 14,
-              fontSize: '0.88rem',
-              fontWeight: 700,
-            }}
-          >
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-              <Crown size={16} color="#f59e0b" />
-              <span>{t.footerPricing || 'Pricing'} &amp; PRO Suite</span>
-            </div>
-            <span style={{ fontSize: '0.78rem', color: '#f59e0b', fontWeight: 800 }}>
-              $9.99 / $129 Pass &rarr;
-            </span>
-          </a>
-
-          {/* Mobile Suite Ecosystem Card */}
-          <div
-            style={{
-              padding: '12px 14px',
-              borderRadius: 10,
-              background: 'var(--bg-card)',
-              border: '1px solid var(--border-color)',
-              marginBottom: 14,
-            }}
-          >
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 7, fontSize: '0.82rem', fontWeight: 800, color: 'var(--text-main)' }}>
-                <Boxes size={15} color="var(--brand-primary)" />
-                <span>The Privacy Suite</span>
-              </div>
-              <span style={{ fontSize: '0.64rem', fontWeight: 900, padding: '2px 6px', borderRadius: 4, background: 'rgba(225,29,72,0.12)', color: 'var(--brand-primary)' }}>
-                4 Apps
-              </span>
-            </div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
-              {/* HandleMyFile */}
-              <div style={{ padding: '8px 10px', borderRadius: 8, background: 'rgba(225,29,72,0.06)', border: '1px solid rgba(225,29,72,0.25)' }}>
-                <div style={{ fontSize: '0.78rem', fontWeight: 800, color: 'var(--text-main)' }}>HandleMyFile</div>
-                <div style={{ fontSize: '0.66rem', color: '#10b981', fontWeight: 700 }}>● {currentLang === 'id' ? 'Aktif' : 'Current'}</div>
-              </div>
-              {/* HelpMyIMG */}
-              <a href="https://helpmyimg.com" target="_blank" rel="noopener noreferrer" style={{ padding: '8px 10px', borderRadius: 8, background: 'var(--bg-app)', border: '1px solid var(--border-color)', textDecoration: 'none' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 4, fontSize: '0.78rem', fontWeight: 800, color: 'var(--text-main)' }}>
-                  <span>HelpMyIMG</span>
-                  <ExternalLink size={10} color="var(--text-muted)" />
-                </div>
-                <div style={{ fontSize: '0.66rem', color: 'var(--text-muted)' }}>AI Photo Tools</div>
-              </a>
-              {/* SolveMyMedia */}
-              <a href="https://solvemymedia.com" target="_blank" rel="noopener noreferrer" style={{ padding: '8px 10px', borderRadius: 8, background: 'var(--bg-app)', border: '1px solid var(--border-color)', textDecoration: 'none' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 4, fontSize: '0.78rem', fontWeight: 800, color: 'var(--text-main)' }}>
-                  <span>SolveMyMedia</span>
-                  <ExternalLink size={10} color="var(--text-muted)" />
-                </div>
-                <div style={{ fontSize: '0.66rem', color: 'var(--text-muted)' }}>Audio & Video</div>
-              </a>
-              {/* CreateMy-QR */}
-              <a href="https://createmy-qr.com" target="_blank" rel="noopener noreferrer" style={{ padding: '8px 10px', borderRadius: 8, background: 'var(--bg-app)', border: '1px solid var(--border-color)', textDecoration: 'none' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 4, fontSize: '0.78rem', fontWeight: 800, color: 'var(--text-main)' }}>
-                  <span>CreateMy-QR</span>
-                  <ExternalLink size={10} color="var(--text-muted)" />
-                </div>
-                <div style={{ fontSize: '0.66rem', color: 'var(--text-muted)' }}>Vector QR Codes</div>
-              </a>
-            </div>
-
-            {/* Upcoming Native Apps */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 6, marginTop: 8, paddingTop: 8, borderTop: '1px dashed var(--border-color)' }}>
-              <div style={{ fontSize: '0.68rem', color: 'var(--text-muted)' }}>
-                💻 Desktop Windows &amp; Mac <span style={{ color: '#d97706', fontWeight: 800 }}>({currentLang === 'id' ? 'Segera' : 'Soon'})</span>
-              </div>
-              <div style={{ fontSize: '0.68rem', color: 'var(--text-muted)' }}>
-                📱 Android &amp; iOS App <span style={{ color: '#d97706', fontWeight: 800 }}>({currentLang === 'id' ? 'Segera' : 'Soon'})</span>
-              </div>
-            </div>
+          {/* 6. Client-Side Privacy Guarantee */}
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, marginTop: 2, fontSize: '0.74rem', color: 'var(--text-muted)' }}>
+            <ShieldCheck size={14} color="#10b981" />
+            <span>{currentLang === 'id' ? '100% Olah di Browser · Privasi Bebas Server' : '100% Client-Side WASM · Zero Server Upload'}</span>
           </div>
-
-          {/* Quick buttons */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 6, marginBottom: 16 }}>
-            {[
-              { id: 'merge-pdf', label: 'Merge' },
-              { id: 'compress-pdf', label: 'Compress' },
-              { id: 'pdf-to-word', label: 'Word' },
-            ].map(({ id, label }) => (
-              <button key={id} onClick={() => handleToolClick(id)} style={{ background: 'var(--bg-card)', border: '1px solid var(--border-color)', padding: '10px 4px', borderRadius: 8, fontWeight: 700, color: 'var(--text-main)', fontSize: '0.78rem', cursor: 'pointer', textAlign: 'center' }}>{toolNames[id]?.[currentLang]?.toUpperCase() || label}</button>
-            ))}
-          </div>
-
-          {/* Accordion: All Tools */}
-          <button
-            onClick={() => setIsMobileAllOpen(!isMobileAllOpen)}
-            style={{ width: '100%', background: 'var(--brand-gradient)', color: '#fff', border: 'none', padding: '11px 16px', borderRadius: 8, fontWeight: 800, fontSize: '0.9rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', cursor: 'pointer', marginBottom: isMobileAllOpen ? 12 : 0 }}
-          >
-            <span>{NAV.allPdfTools}</span>
-            {isMobileAllOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
-          </button>
-
-          {isMobileAllOpen && (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-              {[
-                {
-                  section: NAV.organize, tools: [
-                    { id: 'merge-pdf', label: 'Merge PDF', Icon: Combine },
-                    { id: 'split-pdf', label: 'Split PDF', Icon: Scissors },
-                    { id: 'rotate-pdf', label: 'Rotate PDF', Icon: RotateCw },
-                    { id: 'page-numbers', label: 'Page Numbers', Icon: Hash },
-                    { id: 'remove-pdf', label: 'Remove Pages', Icon: Trash2 },
-                    { id: 'organize-pdf', label: 'Organize PDF', Icon: LayoutList },
-                    { id: 'crop-pdf', label: 'Crop PDF', Icon: Crop },
-                    { id: 'compare-pdf', label: 'Compare PDF', Icon: Scale },
-                    { id: 'resize-pdf', label: 'Resize PDF', Icon: Maximize },
-                    { id: 'reverse-pdf', label: 'Reverse PDF', Icon: ArrowDownUp },
-                  ]
-                },
-                {
-                  section: NAV.optimize, tools: [
-                    { id: 'edit-pdf', label: 'Edit PDF', Icon: Edit3 },
-                    { id: 'compress-pdf', label: 'Compress PDF', Icon: Minimize2 },
-                    { id: 'ocr-pdf', label: 'OCR to Text', Icon: ScanText },
-                    { id: 'grayscale-pdf', label: 'Grayscale PDF', Icon: Contrast },
-                    { id: 'scan-to-pdf', label: 'Scan to PDF', Icon: ScanLine },
-                    { id: 'remove-pdf-metadata', label: 'Remove Metadata', Icon: Eraser },
-                    { id: 'edit-pdf-metadata', label: 'Edit Metadata', Icon: SlidersHorizontal },
-                  ]
-                },
-                {
-                  section: NAV.spreadsheet, tools: [
-                    { id: 'csv-to-excel', label: 'CSV to Excel', Icon: TableProperties },
-                    { id: 'excel-to-csv', label: 'Excel to CSV', Icon: FileText },
-                  ]
-                },
-                {
-                  section: NAV.security, tools: [
-                    { id: 'watermark-pdf', label: 'Watermark PDF', Icon: Stamp },
-                    { id: 'sign-pdf', label: 'Sign PDF', Icon: PenTool },
-                    { id: 'protect-pdf', label: 'Protect PDF', Icon: Lock },
-                    { id: 'unlock-pdf', label: 'Unlock PDF', Icon: Unlock },
-                    { id: 'redact-pdf', label: 'Redact PDF', Icon: EyeOff },
-                  ]
-                },
-                {
-                  section: NAV.fromPdf, tools: [
-                    { id: 'pdf-to-word', label: 'PDF to Word', Icon: FileText },
-                    { id: 'pdf-to-ppt', label: 'PDF to PPTX', Icon: Presentation },
-                    { id: 'pdf-to-image', label: 'PDF to JPG/PNG', Icon: Images },
-                    { id: 'extract-images-pdf', label: 'Extract Images', Icon: Image },
-                  ]
-                },
-                {
-                  section: NAV.toPdf, tools: [
-                    { id: 'excel-to-pdf', label: 'Excel to PDF', Icon: FileSpreadsheet },
-                    { id: 'ppt-to-pdf', label: 'PPTX to PDF', Icon: Presentation },
-                    { id: 'image-to-pdf', label: 'JPG/PNG to PDF', Icon: Image },
-                    { id: 'txt-to-pdf', label: 'TXT to PDF', Icon: AlignLeft },
-                  ]
-                },
-              ].map(group => (
-                <div key={group.section}>
-                  <div style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--text-accent)', letterSpacing: '0.06em', marginTop: 8, marginBottom: 8, paddingBottom: 6, borderBottom: '1px dashed var(--border-color)' }}>
-                    {group.section}
-                  </div>
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 6 }}>
-                    {group.tools.map(({ id, label, Icon }) => (
-                      <button
-                        key={id}
-                        onClick={() => handleToolClick(id)}
-                        style={{ display: 'flex', alignItems: 'center', gap: 8, background: 'var(--bg-card)', border: '1px solid var(--border-color)', padding: '9px 11px', borderRadius: 8, fontWeight: 600, color: 'var(--text-main)', fontSize: '0.78rem', cursor: 'pointer', textAlign: 'left' }}
-                      >
-                        <Icon size={13} color="var(--brand-primary)" />{toolNames[id]?.[currentLang]?.toUpperCase() || label}</button>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
         </div>
       )}
 
@@ -1573,9 +1777,10 @@ export const Navbar: React.FC<NavbarProps> = ({
         @media (max-width: 768px) {
           .desktop-only { display: none !important; }
           .mobile-only  { display: flex !important; }
-          .mobile-menu-container { display: block !important; }
-          .navbar-main-inner { padding: 0 14px !important; }
-          .brand-title { font-size: 1.2rem !important; }
+          .mobile-menu-container { display: flex !important; flex-direction: column !important; }
+          .navbar-main-inner { padding: 0 16px !important; height: 60px !important; }
+          .brand-title { font-size: 1.18rem !important; }
+          .brand-logo-img { height: 32px !important; }
         }
         @media (min-width: 769px) {
           .mobile-only, .mobile-menu-container { display: none !important; }
