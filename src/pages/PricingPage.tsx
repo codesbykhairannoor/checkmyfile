@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { getUiTranslations } from '../i18n/translations';
 import { SeoHead } from '../components/seo/SeoHead';
-import { Check, X, ShieldCheck, Zap, ServerOff, Coffee, Container, Copy, CheckCircle2, Crown, Sparkles } from 'lucide-react';
+import { Check, ShieldCheck, Zap, ServerOff, Coffee, Copy, CheckCircle2, Crown, Sparkles } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { redirectToLemonSqueezy, type PlanType } from '../utils/lemonSqueezy';
 import { authTranslations } from '../i18n/authTranslations';
+import { getPricingTranslations } from '../i18n/pricingTranslations';
 
 interface Props {
   currentLang: string;
@@ -13,6 +14,7 @@ interface Props {
 export const PricingPage: React.FC<Props> = ({ currentLang }) => {
   const t = getUiTranslations(currentLang);
   const tAuth = authTranslations[currentLang] || authTranslations['en'] || {};
+  const tPricing = getPricingTranslations(currentLang);
   const { user, isPro, openAuthModal } = useAuth();
   const [copied, setCopied] = useState(false);
 
@@ -75,11 +77,11 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
         </section>
 
         {/* Section 2: Pricing Table (4 Cards Grid) */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-app)' }}>
+        <section style={{ width: '100%', padding: '80px 24px', background: 'var(--bg-app)' }}>
           <div style={{ maxWidth: 1320, margin: '0 auto' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 24, marginBottom: 48 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 24 }}>
               
-              {/* Card 1: HandleMyFile Web (Free Starter Plan) */}
+              {/* Card 1: Free Starter Plan */}
               <div style={{ background: 'var(--bg-card)', borderRadius: 24, padding: 32, border: '1.5px solid var(--border-color)', position: 'relative', display: 'flex', flexDirection: 'column' }}>
                 <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 8 }}>
                   {tAuth.pro_plan_free_name || 'Free Starter'}
@@ -88,7 +90,7 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
                   {tAuth.pro_plan_free_desc || 'Essential private document tools for everyone'}
                 </p>
                 <div style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 24, lineHeight: 1 }}>
-                  $0<span style={{ fontSize: '0.95rem', color: 'var(--text-muted)', fontWeight: 500 }}>/forever</span>
+                  $0<span style={{ fontSize: '0.95rem', color: 'var(--text-muted)', fontWeight: 500 }}>{tPricing.period_forever}</span>
                 </div>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 14, flex: 1 }}>
                   <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 600, fontSize: '0.88rem' }}><Check size={18} color="var(--brand-primary)" /> {t.pricingHmfItem1 || '100% Client-side processing'}</li>
@@ -114,7 +116,7 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
                       fontSize: '0.88rem',
                     }}
                   >
-                    {t.useFreeToolsBtn || 'Use Free Tools'}
+                    {tPricing.btn_use_free}
                   </button>
                 </div>
               </div>
@@ -128,7 +130,7 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
                   {tAuth.pro_plan_monthly_desc || 'Flexible monthly billing, cancel anytime in 1 click'}
                 </p>
                 <div style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 24, lineHeight: 1 }}>
-                  $9.99<span style={{ fontSize: '0.95rem', color: 'var(--text-muted)', fontWeight: 500 }}>/mo</span>
+                  $9.99<span style={{ fontSize: '0.95rem', color: 'var(--text-muted)', fontWeight: 500 }}>{tPricing.period_mo}</span>
                 </div>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 14, flex: 1 }}>
                   <li style={{ display: 'flex', gap: 10, alignItems: 'flex-start', color: 'var(--text-main)', fontWeight: 600, fontSize: '0.86rem' }}>
@@ -145,11 +147,11 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
                   </li>
                   <li style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.86rem' }}>
                     <Check size={16} color="var(--brand-primary)" style={{ flexShrink: 0 }} />
-                    <span>Priority WebAssembly CPU & RAM acceleration</span>
+                    <span>{tPricing.feature_priority_speed}</span>
                   </li>
                   <li style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.86rem' }}>
                     <Check size={16} color="var(--brand-primary)" style={{ flexShrink: 0 }} />
-                    <span>Commercial licensing included</span>
+                    <span>{tPricing.feature_commercial_license}</span>
                   </li>
                 </ul>
                 <div style={{ marginTop: 24 }}>
@@ -192,11 +194,11 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
                   {tAuth.pro_plan_yearly_desc || 'Save 34% (was $119.88) • Just $6.58/mo billed annually'}
                 </p>
                 <div style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 8, lineHeight: 1 }}>
-                  $79<span style={{ fontSize: '0.95rem', color: 'var(--text-muted)', fontWeight: 500 }}>/yr</span>
+                  $79<span style={{ fontSize: '0.95rem', color: 'var(--text-muted)', fontWeight: 500 }}>{tPricing.period_yr}</span>
                 </div>
                 <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginBottom: 20 }}>
                   <span style={{ textDecoration: 'line-through', marginRight: 6, fontWeight: 600 }}>$119.88</span>
-                  <span style={{ color: '#10b981', fontWeight: 700 }}>~ $6.58 / month</span>
+                  <span style={{ color: '#10b981', fontWeight: 700 }}>{tPricing.approx_monthly}</span>
                 </div>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 14, flex: 1 }}>
                   <li style={{ display: 'flex', gap: 10, alignItems: 'flex-start', color: 'var(--text-main)', fontWeight: 600, fontSize: '0.86rem' }}>
@@ -213,11 +215,11 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
                   </li>
                   <li style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.86rem' }}>
                     <Check size={16} color="#10b981" style={{ flexShrink: 0 }} />
-                    <span>Priority WebAssembly CPU & RAM acceleration</span>
+                    <span>{tPricing.feature_priority_speed}</span>
                   </li>
                   <li style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.86rem' }}>
                     <Check size={16} color="#10b981" style={{ flexShrink: 0 }} />
-                    <span>Commercial licensing & continuous updates</span>
+                    <span>{tPricing.feature_continuous_updates}</span>
                   </li>
                 </ul>
                 <div style={{ marginTop: 24 }}>
@@ -264,32 +266,32 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
                   {tAuth.pro_plan_lifetime_desc || 'Was $169 • Pay once, own forever • 4 Web Apps + Windows App + Mobile APK'}
                 </p>
                 <div style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 8, lineHeight: 1 }}>
-                  $129<span style={{ fontSize: '0.95rem', color: 'var(--text-muted)', fontWeight: 500 }}> once</span>
+                  $129<span style={{ fontSize: '0.95rem', color: 'var(--text-muted)', fontWeight: 500 }}>{tPricing.period_once}</span>
                 </div>
                 <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginBottom: 20 }}>
                   <span style={{ textDecoration: 'line-through', marginRight: 6, fontWeight: 600 }}>$169</span>
-                  <span style={{ color: 'var(--brand-primary)', fontWeight: 700 }}>Zero subscriptions forever</span>
+                  <span style={{ color: 'var(--brand-primary)', fontWeight: 700 }}>{tPricing.zero_subs_forever}</span>
                 </div>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 14, flex: 1 }}>
                   <li style={{ display: 'flex', gap: 10, alignItems: 'flex-start', color: 'var(--text-main)', fontWeight: 600, fontSize: '0.86rem' }}>
                     <Sparkles size={16} color="var(--brand-primary)" style={{ flexShrink: 0, marginTop: 2 }} />
-                    <span><strong>Lifetime 4 Web Apps:</strong> HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR</span>
+                    <span><strong>4 Web Apps:</strong> HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR</span>
                   </li>
-                  <li style={{ display: 'flex', gap: 10, alignItems: 'flex-start', color: 'var(--text-main)', fontWeight: 600, fontSize: '0.86rem' }}>
+                  <li style={{ display: 'flex', gap: 10, alignItems: 'flex-start', color: 'var(--text-main)', fontSize: '0.86rem' }}>
                     <Check size={16} color="var(--brand-primary)" style={{ flexShrink: 0, marginTop: 2 }} />
-                    <span><strong>Windows App & Mobile APK:</strong> Free lifetime access to upcoming desktop & mobile apps</span>
+                    <span>{tPricing.feature_upcoming_native_apps}</span>
                   </li>
                   <li style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.86rem' }}>
                     <Check size={16} color="var(--brand-primary)" style={{ flexShrink: 0 }} />
-                    <span>Unlimited Ultra-Batch (100+ files simultaneously)</span>
+                    <span>{tAuth.pro_benefit_unlimited_batch || 'Unlimited ultra-batch (100+ files)'}</span>
                   </li>
                   <li style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.86rem' }}>
                     <Check size={16} color="var(--brand-primary)" style={{ flexShrink: 0 }} />
-                    <span>Custom output file renaming without restrictions</span>
+                    <span>{tAuth.pro_benefit_custom_name || 'Custom output file renaming'}</span>
                   </li>
                   <li style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.86rem' }}>
                     <Check size={16} color="var(--brand-primary)" style={{ flexShrink: 0 }} />
-                    <span>VIP founder status, zero renewal fees forever</span>
+                    <span>{tPricing.feature_zero_renewals}</span>
                   </li>
                 </ul>
                 <div style={{ marginTop: 24 }}>
@@ -314,7 +316,7 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
                       }}
                     >
                       <CheckCircle2 size={18} />
-                      PRO Membership Active
+                      {tPricing.badge_pro_active}
                     </button>
                   ) : (
                     <button
@@ -346,68 +348,6 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
                 </div>
               </div>
 
-            </div>
-
-            {/* Comparison with Cloud Competitors & Docker Self-Hosted */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 24 }}>
-              {/* Traditional Cloud Competitors */}
-              <div style={{ background: 'var(--bg-card)', borderRadius: 24, padding: 32, border: '1px solid var(--border-color)', display: 'flex', flexDirection: 'column' }}>
-                <h3 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--text-muted)', marginBottom: 8 }}>
-                  {t.pagePricingComp || 'Traditional Cloud Tools'}
-                </h3>
-                <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: 20 }}>Cloud document converters</p>
-                <div style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 24 }}>
-                  $20<span style={{ fontSize: '1rem', color: 'var(--text-muted)', fontWeight: 500 }}>/mo</span>
-                </div>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 14, flex: 1 }}>
-                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-muted)', fontSize: '0.88rem' }}><X size={18} color="#ef4444" /> {t.pricingCompItem1 || 'Data uploaded to their remote servers'}</li>
-                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-muted)', fontSize: '0.88rem' }}><X size={18} color="#ef4444" /> {t.pricingCompItem2 || 'File size & daily task throttling'}</li>
-                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-muted)', fontSize: '0.88rem' }}><X size={18} color="#ef4444" /> {t.pricingCompItem3 || 'Mandatory email login required'}</li>
-                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-muted)', fontSize: '0.88rem' }}><X size={18} color="#ef4444" /> {t.pricingCompItem4 || 'Slow network upload & processing'}</li>
-                </ul>
-              </div>
-
-              {/* Enterprise On-Premise Docker */}
-              <div style={{ background: 'var(--bg-card)', borderRadius: 24, padding: 32, border: '1px solid var(--border-color)', display: 'flex', flexDirection: 'column' }}>
-                <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, color: 'var(--text-muted)', fontSize: '0.82rem', fontWeight: 700, marginBottom: 8 }}>
-                  <Container size={15} color="var(--brand-primary)" /> {t.pricingEnterpriseTitle || 'On-Premises / Docker'}
-                </div>
-                <h3 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--text-main)', marginBottom: 8 }}>
-                  {t.pricingEnterprisePrice || 'Self-Hosted'}
-                </h3>
-                <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: 20 }}>Deploy to your own servers</p>
-                <div style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 24 }}>
-                  $0<span style={{ fontSize: '0.9rem', color: 'var(--text-muted)', fontWeight: 500 }}> (Open)</span>
-                </div>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 14, flex: 1 }}>
-                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.88rem' }}><Check size={18} color="var(--brand-primary)" /> {t.pricingEnterpriseItem1 || '100% Air-Gapped (Runs offline without internet)'}</li>
-                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.88rem' }}><Check size={18} color="var(--brand-primary)" /> {t.pricingEnterpriseItem2 || 'Docker & Kubernetes deployment ready'}</li>
-                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.88rem' }}><Check size={18} color="var(--brand-primary)" /> {t.pricingEnterpriseItem3 || 'Unlimited internal employee seats'}</li>
-                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.88rem' }}><Check size={18} color="var(--brand-primary)" /> {t.pricingEnterpriseItem4 || 'Zero server cost, zero data egress'}</li>
-                </ul>
-                <div style={{ marginTop: 24 }}>
-                  <a
-                    href="https://github.com/codesbykhairannoor/checkmyfile/blob/main/DOCKER.md"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      display: 'block',
-                      width: '100%',
-                      padding: '12px 16px',
-                      borderRadius: 12,
-                      background: 'var(--bg-app)',
-                      border: '1.5px solid var(--border-color)',
-                      color: 'var(--text-main)',
-                      fontWeight: 700,
-                      textAlign: 'center',
-                      textDecoration: 'none',
-                      fontSize: '0.88rem',
-                    }}
-                  >
-                    {t.pricingEnterpriseBtn || 'View Docker Guide'}
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </section>
