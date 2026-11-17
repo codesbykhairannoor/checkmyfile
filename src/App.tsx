@@ -13,7 +13,7 @@ import { UseCasesPage } from './pages/UseCasesPage';
 import { ComparePage } from './pages/ComparePage';
 import { LanguagesPage } from './pages/LanguagesPage';
 import { AuthModal } from './components/auth/AuthModal';
-import { getToolBySlugAndLang, type ToolDefinition } from './catalog/toolsCatalog';
+import { getToolBySlugAndLang, getToolById, type ToolDefinition } from './catalog/toolsCatalog';
 import { isValidLanguageCode } from './i18n/languages';
 import { getStaticPageIdFromSlug, getLocalizedStaticSlug, type StaticPageId } from './i18n/staticSlugs';
 

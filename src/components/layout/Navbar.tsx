@@ -189,12 +189,12 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   const filteredMobileTools = mobileSearch.trim()
     ? allMobileTools.filter((t) => {
-        const q = mobileSearch.toLowerCase().trim();
-        const localized = (toolNames[t.id]?.[currentLang] || t.label).toLowerCase();
-        const idMatch = t.id.toLowerCase().includes(q);
-        const catMatch = t.categoryName.toLowerCase().includes(q);
-        return localized.includes(q) || idMatch || catMatch;
-      })
+      const q = mobileSearch.toLowerCase().trim();
+      const localized = (toolNames[t.id]?.[currentLang] || t.label).toLowerCase();
+      const idMatch = t.id.toLowerCase().includes(q);
+      const catMatch = t.categoryName.toLowerCase().includes(q);
+      return localized.includes(q) || idMatch || catMatch;
+    })
     : [];
 
   const handleToolClick = (toolId: string) => {

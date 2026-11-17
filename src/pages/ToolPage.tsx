@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { getLocalizedSeo, supportsMultipleFiles, type ToolDefinition } from '../catalog/toolsCatalog';
+import { getLocalizedSeo, supportsMultipleFiles, getCanonicalToolId, type ToolDefinition } from '../catalog/toolsCatalog';
 import { trackFileDownloaded } from '../lib/analytics';
 import { SeoHead } from '../components/seo/SeoHead';
 import { RelatedTools } from '../components/seo/RelatedTools';
