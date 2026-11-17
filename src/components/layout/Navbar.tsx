@@ -277,43 +277,9 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
         </nav>
 
-        {/* Right: Pricing + Auth + 9-Dot Launcher */}
+        {/* Right: Auth + 9-Dot Launcher */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 14, flexShrink: 0, justifyContent: 'flex-end' }}>
           <div className="desktop-only" style={{ display: 'flex', alignItems: 'center', gap: 12, flexShrink: 0 }}>
-            {/* Desktop Pricing Link */}
-            <a
-              href={currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`}
-              onClick={(e) => {
-                e.preventDefault();
-                window.history.pushState({}, '', currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`);
-                window.dispatchEvent(new PopStateEvent('popstate'));
-              }}
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: 6,
-                padding: '7px 14px',
-                borderRadius: 8,
-                fontSize: '0.9rem',
-                fontWeight: 700,
-                color: 'var(--text-main)',
-                textDecoration: 'none',
-                cursor: 'pointer',
-                transition: 'all 0.15s ease',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.color = 'var(--brand-primary)';
-                e.currentTarget.style.background = 'rgba(225, 29, 72, 0.06)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.color = 'var(--text-main)';
-                e.currentTarget.style.background = 'transparent';
-              }}
-            >
-              <Crown size={16} color="#f59e0b" style={{ flexShrink: 0 }} />
-              <span>{t.footerPricing || 'Pricing'}</span>
-            </a>
-
             {/* Desktop Auth Button / User Dropdown */}
             {!user ? (
               <button
@@ -579,73 +545,6 @@ export const Navbar: React.FC<NavbarProps> = ({
                 >
                   {suiteView === 'main' ? (
                     <div>
-                      {/* Header banner */}
-                      <div
-                        style={{
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'space-between',
-                          padding: '16px 22px',
-                          borderBottom: '1px solid var(--border-color)',
-                          background: 'var(--bg-app)',
-                        }}
-                      >
-                        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                          <div
-                            style={{
-                              width: 34,
-                              height: 34,
-                              borderRadius: 8,
-                              background: 'rgba(225,29,72,0.1)',
-                              display: 'flex',
-                              alignItems: 'center',
-                              justifyContent: 'center',
-                              color: 'var(--brand-primary)',
-                            }}
-                          >
-                            <Boxes size={18} />
-                          </div>
-                          <div>
-                            <div style={{ fontSize: '0.92rem', fontWeight: 800, color: 'var(--text-main)', letterSpacing: '-0.01em' }}>
-                              The Privacy Suite Ecosystem
-                            </div>
-                            <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
-                              {currentLang === 'id'
-                                ? '4 Aplikasi Web • 100% Client-Side • 0% Server Upload'
-                                : '4 Web Apps • 100% Client-Side • 0% Server Upload'}
-                            </div>
-                          </div>
-                        </div>
-                        <a
-                          href={currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`}
-                          onClick={(e) => {
-                            e.preventDefault();
-                            setIsSuiteOpen(false);
-                            window.history.pushState({}, '', currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`);
-                            window.dispatchEvent(new PopStateEvent('popstate'));
-                          }}
-                          style={{
-                            display: 'inline-flex',
-                            alignItems: 'center',
-                            gap: 6,
-                            padding: '6px 14px',
-                            borderRadius: 8,
-                            background: '#fef3c7',
-                            color: '#b45309',
-                            border: '1px solid #fde68a',
-                            fontSize: '0.78rem',
-                            fontWeight: 800,
-                            textDecoration: 'none',
-                            cursor: 'pointer',
-                            transition: 'all 0.15s ease',
-                          }}
-                        >
-                          <Crown size={14} color="#b45309" />
-                          <span>{currentLang === 'id' ? 'Founder Pass $129' : 'Founder Pass $129'}</span>
-                          <ArrowRight size={13} color="#b45309" />
-                        </a>
-                      </div>
-
                       {/* 2-Pane Split Content */}
                       <div style={{ display: 'grid', gridTemplateColumns: '1.45fr 1fr', minHeight: 320 }}>
                         {/* LEFT PANE: ECOSYSTEM APPS & PLATFORMS */}
