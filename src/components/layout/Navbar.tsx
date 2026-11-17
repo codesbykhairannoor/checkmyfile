@@ -1168,78 +1168,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
           </div>
 
-          {/* Mobile top-right controls: Auth + Compact Language Selector + Thumb-Friendly Hamburger */}
-          <div className="mobile-only" style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-            {!user ? (
-              <button
-                onClick={openAuthModal}
-                aria-label={currentLang === 'id' ? 'Masuk / Login' : (authT.nav_signin || 'Sign In')}
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: 5,
-                  padding: '6px 12px',
-                  borderRadius: 8,
-                  background: 'var(--brand-primary)',
-                  color: '#ffffff',
-                  border: 'none',
-                  fontSize: '0.82rem',
-                  fontWeight: 700,
-                  cursor: 'pointer',
-                  whiteSpace: 'nowrap',
-                  flexShrink: 0,
-                  boxShadow: '0 2px 8px rgba(225,29,72,0.25)',
-                }}
-              >
-                <LogIn size={14} />
-                <span>{currentLang === 'id' ? 'Login' : (authT.nav_signin || 'Sign In')}</span>
-              </button>
-            ) : (
-              <button
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                aria-label="User Account Profile"
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: 5,
-                  padding: '3px 8px 3px 3px',
-                  background: 'var(--bg-card)',
-                  border: '1px solid var(--border-color)',
-                  borderRadius: 9999,
-                  cursor: 'pointer',
-                  color: 'var(--text-main)',
-                  flexShrink: 0,
-                }}
-              >
-                {user.photoURL ? (
-                  <img src={user.photoURL} alt={user.displayName || 'User'} style={{ width: 26, height: 26, borderRadius: '50%', objectFit: 'cover' }} />
-                ) : (
-                  <div style={{ width: 26, height: 26, borderRadius: '50%', background: 'var(--brand-primary)', color: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.72rem', fontWeight: 700 }}>
-                    {(user.displayName || user.email || 'U')[0].toUpperCase()}
-                  </div>
-                )}
-                {isPro && (
-                  <span style={{ background: '#f59e0b', color: '#000000', fontSize: '0.62rem', fontWeight: 900, padding: '1px 5px', borderRadius: 4 }}>
-                    PRO
-                  </span>
-                )}
-              </button>
-            )}
-
-            <LocaleSwitcher
-              currentLang={currentLang}
-              onSelectLang={(code) => {
-                onSelectLang(code);
-                setIsMobileMenuOpen(false);
-              }}
-              isOpen={isMobileLangOpen}
-              onClose={() => setIsMobileLangOpen(false)}
-              onOpen={() => {
-                setIsMobileMenuOpen(false);
-                setIsMobileLangOpen(true);
-              }}
-              compact={true}
-            />
+          {/* Mobile top-right controls: Thumb-Friendly Hamburger ONLY */}
+          <div className="mobile-only" style={{ display: 'flex', alignItems: 'center' }}>
             <button
               onClick={() => {
                 setIsMobileLangOpen(false);
@@ -1272,46 +1202,44 @@ export const Navbar: React.FC<NavbarProps> = ({
           className="mobile-menu-container"
           style={{ position: 'absolute', top: 68, left: 0, right: 0, background: 'var(--bg-app)', borderBottom: '1px solid var(--border-color)', padding: '16px 16px 28px', maxHeight: 'calc(100vh - 68px)', overflowY: 'auto', zIndex: 40, boxShadow: '0 12px 30px rgba(0,0,0,0.15)' }}
         >
-          {/* Mobile Theme Preference Bar */}
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              padding: '10px 14px',
-              background: 'var(--bg-card)',
-              border: '1px solid var(--border-color)',
-              borderRadius: 10,
-              marginBottom: 14,
-            }}
-          >
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-              {isLightMode ? <Sun size={17} color="#d97706" /> : <Moon size={17} color="#a855f7" />}
-              <span style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)' }}>
-                {currentLang === 'id' ? (isLightMode ? 'Mode Terang' : 'Mode Gelap') : (isLightMode ? 'Light Mode' : 'Dark Mode')}
-              </span>
-            </div>
+          {/* Mobile Top Row: Language Selector & Theme Toggle */}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 14 }}>
+            <LocaleSwitcher
+              currentLang={currentLang}
+              onSelectLang={(code) => {
+                onSelectLang(code);
+                setIsMobileMenuOpen(false);
+                setIsMobileLangOpen(false);
+              }}
+              isOpen={isMobileLangOpen}
+              onClose={() => setIsMobileLangOpen(false)}
+              onOpen={() => {
+                setIsMobileLangOpen(true);
+              }}
+              compact={false}
+              fullWidth={true}
+            />
+
             <button
               onClick={onToggleTheme}
               style={{
-                display: 'inline-flex',
+                display: 'flex',
                 alignItems: 'center',
-                gap: 6,
-                background: isLightMode ? '#fef3c7' : '#1e1b4b',
-                color: isLightMode ? '#d97706' : '#c084fc',
-                border: `1.5px solid ${isLightMode ? '#f59e0b' : '#6366f1'}`,
-                padding: '6px 14px',
+                justifyContent: 'center',
+                gap: 8,
+                padding: '8px 12px',
+                background: 'var(--bg-card)',
+                border: '1px solid var(--border-color)',
                 borderRadius: 9999,
-                fontWeight: 700,
-                fontSize: '0.78rem',
+                color: 'var(--text-main)',
+                fontWeight: 600,
+                fontSize: '0.82rem',
                 cursor: 'pointer',
-                transition: 'all 0.2s',
+                minHeight: 38,
               }}
             >
-              {isLightMode ? <Moon size={13} /> : <Sun size={13} />}
-              <span>
-                {currentLang === 'id' ? (isLightMode ? 'Ganti ke Gelap' : 'Ganti ke Terang') : (isLightMode ? 'Switch to Dark' : 'Switch to Light')}
-              </span>
+              {isLightMode ? <Moon size={15} color="#8b5cf6" /> : <Sun size={15} color="#f59e0b" />}
+              <span>{currentLang === 'id' ? (isLightMode ? 'Mode Gelap' : 'Mode Terang') : (isLightMode ? 'Dark Mode' : 'Light Mode')}</span>
             </button>
           </div>
 

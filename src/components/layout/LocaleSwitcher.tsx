@@ -10,6 +10,7 @@ interface LocaleSwitcherProps {
   onClose: () => void;
   onOpen: () => void;
   compact?: boolean;
+  fullWidth?: boolean;
 }
 
 export const LocaleSwitcher: React.FC<LocaleSwitcherProps> = ({
@@ -19,6 +20,7 @@ export const LocaleSwitcher: React.FC<LocaleSwitcherProps> = ({
   onClose,
   onOpen,
   compact = false,
+  fullWidth = false,
 }) => {
   const [filterQuery, setFilterQuery] = useState('');
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -52,13 +54,15 @@ export const LocaleSwitcher: React.FC<LocaleSwitcherProps> = ({
   }, [isOpen, onClose]);
 
   return (
-    <div style={{ position: 'relative' }} ref={dropdownRef}>
+    <div style={{ position: 'relative', width: fullWidth ? '100%' : undefined }} ref={dropdownRef}>
       {/* Sleek, Professional Navbar Trigger Button */}
       <button
         onClick={() => (isOpen ? onClose() : onOpen())}
         style={{
           display: 'inline-flex',
           alignItems: 'center',
+          justifyContent: fullWidth ? 'center' : 'flex-start',
+          width: fullWidth ? '100%' : undefined,
           gap: compact ? 5 : 8,
           background: isOpen ? 'rgba(225, 29, 72, 0.12)' : 'var(--bg-input)',
           border: isOpen ? '1px solid var(--brand-primary)' : '1px solid var(--border-color)',
@@ -90,8 +94,8 @@ export const LocaleSwitcher: React.FC<LocaleSwitcherProps> = ({
           style={{
             position: 'absolute',
             top: 'calc(100% + 10px)',
-            right: 0,
-            width: compact ? 'min(310px, calc(100vw - 28px))' : 320,
+            ...(fullWidth ? { left: 0 } : { right: 0 }),
+            width: compact ? 'min(310px, calc(100vw - 28px))' : (fullWidth ? 'min(320px, calc(100vw - 32px))' : 320),
             maxHeight: 440,
             padding: 16,
             display: 'flex',
