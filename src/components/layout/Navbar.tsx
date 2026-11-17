@@ -495,689 +495,689 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
 
           {/* 🌟 9-DOT WAFFLE LAUNCHER (iLovePDF Style) 🌟 */}
-            <div
-              style={{ position: 'relative' }}
-              ref={suiteRef}
-              onMouseEnter={handleSuiteEnter}
-              onMouseLeave={handleSuiteLeave}
+          <div
+            style={{ position: 'relative' }}
+            ref={suiteRef}
+            onMouseEnter={handleSuiteEnter}
+            onMouseLeave={handleSuiteLeave}
+          >
+            <button
+              onClick={() => {
+                setIsSuiteOpen(!isSuiteOpen);
+                setIsMegaOpen(false);
+                setIsUserMenuOpen(false);
+              }}
+              aria-label="Apps and Preferences Launcher"
+              title={currentLang === 'id' ? 'Aplikasi & Pengaturan' : 'Apps & Preferences'}
+              style={{
+                width: 38,
+                height: 38,
+                borderRadius: 8,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                background: isSuiteOpen ? 'rgba(225, 29, 72, 0.1)' : 'transparent',
+                color: isSuiteOpen ? 'var(--brand-primary)' : 'var(--text-main)',
+                border: isSuiteOpen ? '1px solid var(--brand-primary)' : '1px solid var(--border-color)',
+                cursor: 'pointer',
+                transition: 'all 0.15s ease',
+              }}
+              onMouseEnter={(e) => {
+                if (!isSuiteOpen) {
+                  e.currentTarget.style.background = 'var(--bg-card)';
+                  e.currentTarget.style.borderColor = 'var(--border-color)';
+                }
+              }}
+              onMouseLeave={(e) => {
+                if (!isSuiteOpen) {
+                  e.currentTarget.style.background = 'transparent';
+                  e.currentTarget.style.borderColor = 'var(--border-color)';
+                }
+              }}
             >
-              <button
-                onClick={() => {
-                  setIsSuiteOpen(!isSuiteOpen);
-                  setIsMegaOpen(false);
-                  setIsUserMenuOpen(false);
-                }}
-                aria-label="Apps and Preferences Launcher"
-                title={currentLang === 'id' ? 'Aplikasi & Pengaturan' : 'Apps & Preferences'}
+              {/* 3x3 Grid Dots SVG */}
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <circle cx="4.5" cy="4.5" r="2" />
+                <circle cx="12" cy="4.5" r="2" />
+                <circle cx="19.5" cy="4.5" r="2" />
+                <circle cx="4.5" cy="12" r="2" />
+                <circle cx="12" cy="12" r="2" />
+                <circle cx="19.5" cy="12" r="2" />
+                <circle cx="4.5" cy="19.5" r="2" />
+                <circle cx="12" cy="19.5" r="2" />
+                <circle cx="19.5" cy="19.5" r="2" />
+              </svg>
+            </button>
+
+            {/* Dropdown Menu anchored to the RIGHT */}
+            {isSuiteOpen && (
+              <div
+                onMouseEnter={handleSuiteEnter}
+                onMouseLeave={handleSuiteLeave}
+                className="suite-flyout-card"
                 style={{
-                  width: 38,
-                  height: 38,
-                  borderRadius: 8,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  background: isSuiteOpen ? 'rgba(225, 29, 72, 0.1)' : 'transparent',
-                  color: isSuiteOpen ? 'var(--brand-primary)' : 'var(--text-main)',
-                  border: isSuiteOpen ? '1px solid var(--brand-primary)' : '1px solid var(--border-color)',
-                  cursor: 'pointer',
-                  transition: 'all 0.15s ease',
-                }}
-                onMouseEnter={(e) => {
-                  if (!isSuiteOpen) {
-                    e.currentTarget.style.background = 'var(--bg-card)';
-                    e.currentTarget.style.borderColor = 'var(--border-color)';
-                  }
-                }}
-                onMouseLeave={(e) => {
-                  if (!isSuiteOpen) {
-                    e.currentTarget.style.background = 'transparent';
-                    e.currentTarget.style.borderColor = 'var(--border-color)';
-                  }
+                  position: 'absolute',
+                  top: 'calc(100% + 12px)',
+                  right: 0,
+                  width: 820,
+                  maxWidth: 'calc(100vw - 24px)',
+                  background: 'var(--bg-card)',
+                  border: '1px solid var(--border-color)',
+                  borderRadius: 16,
+                  boxShadow: '0 24px 60px rgba(0,0,0,0.22)',
+                  overflow: 'hidden',
+                  zIndex: 250,
+                  animation: 'fadeInDown 0.15s ease',
+                  fontFamily: 'var(--font-main)',
                 }}
               >
-                {/* 3x3 Grid Dots SVG */}
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                  <circle cx="4.5" cy="4.5" r="2" />
-                  <circle cx="12" cy="4.5" r="2" />
-                  <circle cx="19.5" cy="4.5" r="2" />
-                  <circle cx="4.5" cy="12" r="2" />
-                  <circle cx="12" cy="12" r="2" />
-                  <circle cx="19.5" cy="12" r="2" />
-                  <circle cx="4.5" cy="19.5" r="2" />
-                  <circle cx="12" cy="19.5" r="2" />
-                  <circle cx="19.5" cy="19.5" r="2" />
-                </svg>
-              </button>
-
-              {/* Dropdown Menu anchored to the RIGHT */}
-              {isSuiteOpen && (
-                <div
-                  onMouseEnter={handleSuiteEnter}
-                  onMouseLeave={handleSuiteLeave}
-                  className="suite-flyout-card"
-                  style={{
-                    position: 'absolute',
-                    top: 'calc(100% + 12px)',
-                    right: 0,
-                    width: 820,
-                    maxWidth: 'calc(100vw - 24px)',
-                    background: 'var(--bg-card)',
-                    border: '1px solid var(--border-color)',
-                    borderRadius: 16,
-                    boxShadow: '0 24px 60px rgba(0,0,0,0.22)',
-                    overflow: 'hidden',
-                    zIndex: 250,
-                    animation: 'fadeInDown 0.15s ease',
-                    fontFamily: 'var(--font-main)',
-                  }}
-                >
-                  {suiteView === 'main' ? (
-                    <div>
-                      {/* 2-Pane Split Content */}
-                      <div className="suite-flyout-grid" style={{ display: 'grid', gridTemplateColumns: '1.45fr 1fr', minHeight: 320 }}>
-                        {/* LEFT PANE: ECOSYSTEM APPS & PLATFORMS */}
-                        <div className="suite-flyout-left-pane" style={{ padding: '20px 22px', borderRight: '1px solid var(--border-color)' }}>
-                          <div style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--text-accent)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 12 }}>
-                            {currentLang === 'id' ? 'Aplikasi Web Ekosistem (0% Upload)' : 'Ecosystem Web Apps (0% Server Upload)'}
-                          </div>
-
-                          {/* 2x2 Grid with Authentic Logos */}
-                          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 16 }}>
-                            {/* App 1: HandleMyFile */}
-                            <div
-                              style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                gap: 10,
-                                padding: '10px 12px',
-                                borderRadius: 10,
-                                background: 'rgba(225,29,72,0.05)',
-                                border: '1px solid rgba(225,29,72,0.25)',
-                              }}
-                            >
-                              <img
-                                src="/ecosystem/handlemyfile.png"
-                                alt="HandleMyFile"
-                                style={{ width: 34, height: 34, borderRadius: 8, objectFit: 'contain', flexShrink: 0 }}
-                              />
-                              <div style={{ flex: 1, minWidth: 0 }}>
-                                <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-                                  <span style={{ fontSize: '0.86rem', fontWeight: 800, color: 'var(--brand-primary)' }}>HandleMyFile</span>
-                                  <span style={{ fontSize: '0.62rem', fontWeight: 800, padding: '1px 5px', borderRadius: 4, background: 'rgba(225,29,72,0.12)', color: 'var(--brand-primary)' }}>
-                                    Active
-                                  </span>
-                                </div>
-                                <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                                  {currentLang === 'id' ? 'Tools PDF & Dokumen' : 'PDF & Document Studio'}
-                                </div>
-                              </div>
-                            </div>
-
-                            {/* App 2: HelpMyIMG */}
-                            <a
-                              href="https://helpmyimg.com"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                gap: 10,
-                                padding: '10px 12px',
-                                borderRadius: 10,
-                                background: 'var(--bg-app)',
-                                border: '1px solid var(--border-color)',
-                                textDecoration: 'none',
-                                cursor: 'pointer',
-                                transition: 'all 0.15s ease',
-                              }}
-                              onMouseEnter={(e) => {
-                                e.currentTarget.style.borderColor = 'rgba(59, 130, 246, 0.4)';
-                                e.currentTarget.style.background = 'rgba(59, 130, 246, 0.05)';
-                              }}
-                              onMouseLeave={(e) => {
-                                e.currentTarget.style.borderColor = 'var(--border-color)';
-                                e.currentTarget.style.background = 'var(--bg-app)';
-                              }}
-                            >
-                              <img
-                                src="/ecosystem/helpmyimg.png"
-                                alt="HelpMyIMG"
-                                style={{ width: 34, height: 34, borderRadius: 8, objectFit: 'contain', flexShrink: 0 }}
-                              />
-                              <div style={{ flex: 1, minWidth: 0 }}>
-                                <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-                                  <span style={{ fontSize: '0.86rem', fontWeight: 800, color: 'var(--text-main)' }}>HelpMyIMG</span>
-                                  <ExternalLink size={11} color="var(--text-muted)" />
-                                </div>
-                                <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                                  {currentLang === 'id' ? 'AI Photo & Edit Foto' : 'AI Photo & Local Editor'}
-                                </div>
-                              </div>
-                            </a>
-
-                            {/* App 3: SolveMyMedia */}
-                            <a
-                              href="https://solvemymedia.com"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                gap: 10,
-                                padding: '10px 12px',
-                                borderRadius: 10,
-                                background: 'var(--bg-app)',
-                                border: '1px solid var(--border-color)',
-                                textDecoration: 'none',
-                                cursor: 'pointer',
-                                transition: 'all 0.15s ease',
-                              }}
-                              onMouseEnter={(e) => {
-                                e.currentTarget.style.borderColor = 'rgba(168, 85, 247, 0.4)';
-                                e.currentTarget.style.background = 'rgba(168, 85, 247, 0.05)';
-                              }}
-                              onMouseLeave={(e) => {
-                                e.currentTarget.style.borderColor = 'var(--border-color)';
-                                e.currentTarget.style.background = 'var(--bg-app)';
-                              }}
-                            >
-                              <img
-                                src="/ecosystem/solvemymedia.png"
-                                alt="SolveMyMedia"
-                                style={{ width: 34, height: 34, borderRadius: 8, objectFit: 'contain', flexShrink: 0 }}
-                              />
-                              <div style={{ flex: 1, minWidth: 0 }}>
-                                <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-                                  <span style={{ fontSize: '0.86rem', fontWeight: 800, color: 'var(--text-main)' }}>SolveMyMedia</span>
-                                  <ExternalLink size={11} color="var(--text-muted)" />
-                                </div>
-                                <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                                  {currentLang === 'id' ? 'Video & Audio Lossless' : 'Lossless Video & Audio'}
-                                </div>
-                              </div>
-                            </a>
-
-                            {/* App 4: CreateMy-QR */}
-                            <a
-                              href="https://createmy-qr.com"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                gap: 10,
-                                padding: '10px 12px',
-                                borderRadius: 10,
-                                background: 'var(--bg-app)',
-                                border: '1px solid var(--border-color)',
-                                textDecoration: 'none',
-                                cursor: 'pointer',
-                                transition: 'all 0.15s ease',
-                              }}
-                              onMouseEnter={(e) => {
-                                e.currentTarget.style.borderColor = 'rgba(245, 158, 11, 0.4)';
-                                e.currentTarget.style.background = 'rgba(245, 158, 11, 0.05)';
-                              }}
-                              onMouseLeave={(e) => {
-                                e.currentTarget.style.borderColor = 'var(--border-color)';
-                                e.currentTarget.style.background = 'var(--bg-app)';
-                              }}
-                            >
-                              <img
-                                src="/ecosystem/createmy-qr.png"
-                                alt="CreateMy-QR"
-                                style={{ width: 34, height: 34, borderRadius: 8, objectFit: 'contain', flexShrink: 0 }}
-                              />
-                              <div style={{ flex: 1, minWidth: 0 }}>
-                                <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-                                  <span style={{ fontSize: '0.86rem', fontWeight: 800, color: 'var(--text-main)' }}>CreateMy-QR</span>
-                                  <ExternalLink size={11} color="var(--text-muted)" />
-                                </div>
-                                <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                                  {currentLang === 'id' ? 'QR Code & Barcode' : 'Vector QR & Barcodes'}
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-
-                          {/* Native Clients (Coming Soon) */}
-                          <div style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--text-accent)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 8 }}>
-                            {currentLang === 'id' ? 'Aplikasi Desktop & Mobile' : 'Desktop & Mobile Clients'}
-                          </div>
-                          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
-                            {/* Windows Desktop */}
-                            <div
-                              style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                gap: 10,
-                                padding: '8px 10px',
-                                borderRadius: 8,
-                                background: 'var(--bg-app)',
-                                border: '1px solid var(--border-color)',
-                              }}
-                            >
-                              <div style={{ width: 28, height: 28, borderRadius: 6, background: 'rgba(255,255,255,0.05)', color: 'var(--text-main)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, border: '1px solid var(--border-color)' }}>
-                                <Monitor size={14} />
-                              </div>
-                              <div style={{ flex: 1, minWidth: 0 }}>
-                                <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
-                                  <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--text-main)' }}>Windows 64-bit</span>
-                                  <span style={{ fontSize: '0.6rem', fontWeight: 800, padding: '1px 5px', borderRadius: 4, background: 'rgba(100,116,139,0.15)', color: 'var(--text-muted)' }}>
-                                    {currentLang === 'id' ? 'Segera' : 'Soon'}
-                                  </span>
-                                </div>
-                                <div style={{ fontSize: '0.68rem', color: 'var(--text-muted)' }}>
-                                  100% Offline .exe
-                                </div>
-                              </div>
-                            </div>
-
-                            {/* Android Mobile */}
-                            <div
-                              style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                gap: 10,
-                                padding: '8px 10px',
-                                borderRadius: 8,
-                                background: 'var(--bg-app)',
-                                border: '1px solid var(--border-color)',
-                              }}
-                            >
-                              <div style={{ width: 28, height: 28, borderRadius: 6, background: 'rgba(255,255,255,0.05)', color: 'var(--text-main)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, border: '1px solid var(--border-color)' }}>
-                                <Smartphone size={14} />
-                              </div>
-                              <div style={{ flex: 1, minWidth: 0 }}>
-                                <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
-                                  <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--text-main)' }}>Android App</span>
-                                  <span style={{ fontSize: '0.6rem', fontWeight: 800, padding: '1px 5px', borderRadius: 4, background: 'rgba(100,116,139,0.15)', color: 'var(--text-muted)' }}>
-                                    {currentLang === 'id' ? 'Segera' : 'Soon'}
-                                  </span>
-                                </div>
-                                <div style={{ fontSize: '0.68rem', color: 'var(--text-muted)' }}>
-                                  Zero-Upload APK
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                {suiteView === 'main' ? (
+                  <div>
+                    {/* 2-Pane Split Content */}
+                    <div className="suite-flyout-grid" style={{ display: 'grid', gridTemplateColumns: '1.45fr 1fr', minHeight: 320 }}>
+                      {/* LEFT PANE: ECOSYSTEM APPS & PLATFORMS */}
+                      <div className="suite-flyout-left-pane" style={{ padding: '20px 22px', borderRight: '1px solid var(--border-color)' }}>
+                        <div style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--text-accent)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 12 }}>
+                          {currentLang === 'id' ? 'Aplikasi Web Ekosistem (0% Upload)' : 'Ecosystem Web Apps (0% Server Upload)'}
                         </div>
 
-                        {/* RIGHT PANE: COMPANY & TRUST */}
-                        <div style={{ padding: '20px 22px', background: 'var(--bg-app)' }}>
-                          <div style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--text-accent)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 12 }}>
-                            {currentLang === 'id' ? 'Perusahaan & Keamanan' : 'Company & Trust'}
-                          </div>
-
-                          <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-                            {/* 1. Pricing Plans */}
-                            <a
-                              href={currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`}
-                              onClick={(e) => {
-                                e.preventDefault();
-                                setIsSuiteOpen(false);
-                                window.history.pushState({}, '', currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`);
-                                window.dispatchEvent(new PopStateEvent('popstate'));
-                              }}
-                              style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                gap: 10,
-                                padding: '10px 12px',
-                                borderRadius: 8,
-                                background: 'var(--bg-card)',
-                                border: '1px solid var(--border-color)',
-                                textDecoration: 'none',
-                                cursor: 'pointer',
-                                transition: 'all 0.15s ease',
-                              }}
-                              onMouseEnter={(e) => {
-                                e.currentTarget.style.borderColor = 'rgba(225, 29, 72, 0.4)';
-                              }}
-                              onMouseLeave={(e) => {
-                                e.currentTarget.style.borderColor = 'var(--border-color)';
-                              }}
-                            >
-                              <div style={{ width: 30, height: 30, borderRadius: 6, background: 'rgba(225, 29, 72, 0.1)', color: 'var(--brand-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                                <CreditCard size={15} />
-                              </div>
-                              <div>
-                                <div style={{ fontSize: '0.84rem', fontWeight: 700, color: 'var(--text-main)' }}>
-                                  {currentLang === 'id' ? 'Paket Harga' : 'Pricing & Plans'}
-                                </div>
-                                <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>
-                                  {currentLang === 'id' ? 'Free Starter, Pro & Founder' : 'Starter, Pro & Founder Pass'}
-                                </div>
-                              </div>
-                            </a>
-
-                            {/* 2. Privacy & Security */}
-                            <a
-                              href={currentLang === 'en' ? '/privacy' : `/${currentLang}/privacy`}
-                              onClick={(e) => {
-                                e.preventDefault();
-                                setIsSuiteOpen(false);
-                                window.history.pushState({}, '', currentLang === 'en' ? '/privacy' : `/${currentLang}/pricing`);
-                                window.dispatchEvent(new PopStateEvent('popstate'));
-                              }}
-                              style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                gap: 10,
-                                padding: '10px 12px',
-                                borderRadius: 8,
-                                background: 'var(--bg-card)',
-                                border: '1px solid var(--border-color)',
-                                textDecoration: 'none',
-                                cursor: 'pointer',
-                                transition: 'all 0.15s ease',
-                              }}
-                              onMouseEnter={(e) => {
-                                e.currentTarget.style.borderColor = 'rgba(16, 185, 129, 0.4)';
-                              }}
-                              onMouseLeave={(e) => {
-                                e.currentTarget.style.borderColor = 'var(--border-color)';
-                              }}
-                            >
-                              <div style={{ width: 30, height: 30, borderRadius: 6, background: 'rgba(16, 185, 129, 0.1)', color: '#10b981', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                                <ShieldCheck size={15} />
-                              </div>
-                              <div>
-                                <div style={{ fontSize: '0.84rem', fontWeight: 700, color: 'var(--text-main)' }}>
-                                  {currentLang === 'id' ? 'Privasi Zero-Server' : 'Zero-Server Privacy'}
-                                </div>
-                                <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>
-                                  {currentLang === 'id' ? '100% Olah di browser via WASM' : '100% Client-Side WebAssembly'}
-                                </div>
-                              </div>
-                            </a>
-
-                            {/* 3. About Us */}
-                            <a
-                              href={currentLang === 'en' ? '/about' : `/${currentLang}/about`}
-                              onClick={(e) => {
-                                e.preventDefault();
-                                setIsSuiteOpen(false);
-                                window.history.pushState({}, '', currentLang === 'en' ? '/about' : `/${currentLang}/about`);
-                                window.dispatchEvent(new PopStateEvent('popstate'));
-                              }}
-                              style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                gap: 10,
-                                padding: '10px 12px',
-                                borderRadius: 8,
-                                background: 'var(--bg-card)',
-                                border: '1px solid var(--border-color)',
-                                textDecoration: 'none',
-                                cursor: 'pointer',
-                                transition: 'all 0.15s ease',
-                              }}
-                              onMouseEnter={(e) => {
-                                e.currentTarget.style.borderColor = 'rgba(139, 92, 246, 0.4)';
-                              }}
-                              onMouseLeave={(e) => {
-                                e.currentTarget.style.borderColor = 'var(--border-color)';
-                              }}
-                            >
-                              <div style={{ width: 30, height: 30, borderRadius: 6, background: 'rgba(139, 92, 246, 0.1)', color: '#8b5cf6', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                                <Sparkles size={15} />
-                              </div>
-                              <div>
-                                <div style={{ fontSize: '0.84rem', fontWeight: 700, color: 'var(--text-main)' }}>
-                                  {currentLang === 'id' ? 'Tentang HandleMyFile' : 'About Us & Mission'}
-                                </div>
-                                <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>
-                                  {currentLang === 'id' ? 'Misi privasi lokal tanpa server' : 'Our local privacy mission'}
-                                </div>
-                              </div>
-                            </a>
-
-                            {/* 4. Terms of Service */}
-                            <a
-                              href={currentLang === 'en' ? '/tos' : `/${currentLang}/tos`}
-                              onClick={(e) => {
-                                e.preventDefault();
-                                setIsSuiteOpen(false);
-                                window.history.pushState({}, '', currentLang === 'en' ? '/tos' : `/${currentLang}/tos`);
-                                window.dispatchEvent(new PopStateEvent('popstate'));
-                              }}
-                              style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                gap: 10,
-                                padding: '10px 12px',
-                                borderRadius: 8,
-                                background: 'var(--bg-card)',
-                                border: '1px solid var(--border-color)',
-                                textDecoration: 'none',
-                                cursor: 'pointer',
-                                transition: 'all 0.15s ease',
-                              }}
-                              onMouseEnter={(e) => {
-                                e.currentTarget.style.borderColor = 'rgba(100, 116, 139, 0.4)';
-                              }}
-                              onMouseLeave={(e) => {
-                                e.currentTarget.style.borderColor = 'var(--border-color)';
-                              }}
-                            >
-                              <div style={{ width: 30, height: 30, borderRadius: 6, background: 'rgba(100, 116, 139, 0.1)', color: 'var(--text-muted)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                                <FileText size={15} />
-                              </div>
-                              <div>
-                                <div style={{ fontSize: '0.84rem', fontWeight: 700, color: 'var(--text-main)' }}>
-                                  {currentLang === 'id' ? 'Syarat & Transparansi' : 'Terms & Legal'}
-                                </div>
-                                <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>
-                                  {currentLang === 'id' ? 'Ketentuan layanan & data' : 'Service terms & transparency'}
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* Footer Bar: Appearance Toggle + Sliding Language Selector Trigger */}
-                      <div
-                        style={{
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'space-between',
-                          padding: '12px 22px',
-                          borderTop: '1px solid var(--border-color)',
-                          background: 'var(--bg-app)',
-                        }}
-                      >
-                        {/* Theme Mode Toggle (Clean button, non-intrusive) */}
-                        <button
-                          onClick={onToggleTheme}
-                          style={{
-                            display: 'inline-flex',
-                            alignItems: 'center',
-                            gap: 8,
-                            padding: '6px 14px',
-                            borderRadius: 8,
-                            background: 'var(--bg-card)',
-                            border: '1px solid var(--border-color)',
-                            color: 'var(--text-main)',
-                            fontSize: '0.78rem',
-                            fontWeight: 700,
-                            cursor: 'pointer',
-                            transition: 'all 0.15s ease',
-                          }}
-                          title={currentLang === 'id' ? 'Ganti mode terang/gelap' : 'Toggle appearance'}
-                        >
-                          {isLightMode ? <Sun size={15} color="#d97706" /> : <Moon size={15} color="#a855f7" />}
-                          <span>
-                            {currentLang === 'id'
-                              ? (isLightMode ? 'Mode Terang' : 'Mode Gelap')
-                              : (isLightMode ? 'Light Mode' : 'Dark Mode')}
-                          </span>
-                        </button>
-
-                        {/* Language Selector Drilldown Button (Sliding Navigation) */}
-                        <button
-                          onClick={() => setSuiteView('language')}
-                          style={{
-                            display: 'inline-flex',
-                            alignItems: 'center',
-                            gap: 8,
-                            padding: '6px 14px',
-                            borderRadius: 8,
-                            background: 'var(--bg-card)',
-                            border: '1px solid var(--border-color)',
-                            color: 'var(--text-main)',
-                            fontSize: '0.78rem',
-                            fontWeight: 700,
-                            cursor: 'pointer',
-                            transition: 'all 0.15s ease',
-                          }}
-                        >
-                          <Globe size={14} color="var(--brand-primary)" />
-                          <span>
-                            {getLanguageByCode(currentLang).flag} {getLanguageByCode(currentLang).nativeName}
-                          </span>
-                          <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
-                            ({currentLang === 'id' ? '30 Bahasa' : '30 Languages'})
-                          </span>
-                          <ArrowRight size={13} color="var(--text-muted)" />
-                        </button>
-                      </div>
-                    </div>
-                  ) : (
-                    /* ── Sliding Language Selector Sub-Panel ── */
-                    <div style={{ animation: 'fadeInDown 0.15s ease' }}>
-                      {/* Sub-Header with Back Button */}
-                      <div
-                        style={{
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'space-between',
-                          padding: '14px 22px',
-                          borderBottom: '1px solid var(--border-color)',
-                          background: 'var(--bg-app)',
-                        }}
-                      >
-                        <button
-                          onClick={() => setSuiteView('main')}
-                          style={{
-                            display: 'inline-flex',
-                            alignItems: 'center',
-                            gap: 6,
-                            background: 'none',
-                            border: 'none',
-                            color: 'var(--brand-primary)',
-                            fontWeight: 800,
-                            fontSize: '0.84rem',
-                            cursor: 'pointer',
-                            padding: '4px 8px',
-                            borderRadius: 6,
-                          }}
-                        >
-                          <ArrowLeft size={16} />
-                          <span>{currentLang === 'id' ? 'Kembali ke Menu Suite' : 'Back to Ecosystem'}</span>
-                        </button>
-                        <div style={{ fontSize: '0.84rem', fontWeight: 800, color: 'var(--text-main)' }}>
-                          {currentLang === 'id' ? 'Pilih Bahasa (30 Bahasa)' : 'Select Language (30 Available)'}
-                        </div>
-                      </div>
-
-                      {/* Language Search Input */}
-                      <div style={{ padding: '12px 22px 8px', borderBottom: '1px solid var(--border-color)' }}>
-                        <div
-                          style={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: 8,
-                            background: 'var(--bg-app)',
-                            border: '1px solid var(--border-color)',
-                            borderRadius: 8,
-                            padding: '7px 12px',
-                          }}
-                        >
-                          <Search size={15} color="var(--text-muted)" />
-                          <input
-                            type="text"
-                            value={langSearch}
-                            onChange={(e) => setLangSearch(e.target.value)}
-                            placeholder={currentLang === 'id' ? 'Cari bahasa (contoh: English, Español, Indonesia)...' : 'Search language (e.g. English, Español, Deutsch)...'}
+                        {/* 2x2 Grid with Authentic Logos */}
+                        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 16 }}>
+                          {/* App 1: HandleMyFile */}
+                          <div
                             style={{
-                              border: 'none',
-                              background: 'transparent',
-                              outline: 'none',
-                              width: '100%',
-                              fontSize: '0.82rem',
-                              color: 'var(--text-main)',
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: 10,
+                              padding: '10px 12px',
+                              borderRadius: 10,
+                              background: 'rgba(225,29,72,0.05)',
+                              border: '1px solid rgba(225,29,72,0.25)',
                             }}
-                          />
-                          {langSearch && (
-                            <button
-                              onClick={() => setLangSearch('')}
-                              style={{ background: 'none', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', padding: 0 }}
-                            >
-                              <X size={14} />
-                            </button>
-                          )}
+                          >
+                            <img
+                              src="/ecosystem/handlemyfile.png"
+                              alt="HandleMyFile"
+                              style={{ width: 34, height: 34, borderRadius: 8, objectFit: 'contain', flexShrink: 0 }}
+                            />
+                            <div style={{ flex: 1, minWidth: 0 }}>
+                              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                                <span style={{ fontSize: '0.86rem', fontWeight: 800, color: 'var(--brand-primary)' }}>HandleMyFile</span>
+                                <span style={{ fontSize: '0.62rem', fontWeight: 800, padding: '1px 5px', borderRadius: 4, background: 'rgba(225,29,72,0.12)', color: 'var(--brand-primary)' }}>
+                                  Active
+                                </span>
+                              </div>
+                              <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                                {currentLang === 'id' ? 'Tools PDF & Dokumen' : 'PDF & Document Studio'}
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* App 2: HelpMyIMG */}
+                          <a
+                            href="https://helpmyimg.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: 10,
+                              padding: '10px 12px',
+                              borderRadius: 10,
+                              background: 'var(--bg-app)',
+                              border: '1px solid var(--border-color)',
+                              textDecoration: 'none',
+                              cursor: 'pointer',
+                              transition: 'all 0.15s ease',
+                            }}
+                            onMouseEnter={(e) => {
+                              e.currentTarget.style.borderColor = 'rgba(59, 130, 246, 0.4)';
+                              e.currentTarget.style.background = 'rgba(59, 130, 246, 0.05)';
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.style.borderColor = 'var(--border-color)';
+                              e.currentTarget.style.background = 'var(--bg-app)';
+                            }}
+                          >
+                            <img
+                              src="/ecosystem/helpmyimg.png"
+                              alt="HelpMyIMG"
+                              style={{ width: 34, height: 34, borderRadius: 8, objectFit: 'contain', flexShrink: 0 }}
+                            />
+                            <div style={{ flex: 1, minWidth: 0 }}>
+                              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                                <span style={{ fontSize: '0.86rem', fontWeight: 800, color: 'var(--text-main)' }}>HelpMyIMG</span>
+                                <ExternalLink size={11} color="var(--text-muted)" />
+                              </div>
+                              <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                                {currentLang === 'id' ? 'AI Photo & Edit Foto' : 'AI Photo & Local Editor'}
+                              </div>
+                            </div>
+                          </a>
+
+                          {/* App 3: SolveMyMedia */}
+                          <a
+                            href="https://solvemymedia.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: 10,
+                              padding: '10px 12px',
+                              borderRadius: 10,
+                              background: 'var(--bg-app)',
+                              border: '1px solid var(--border-color)',
+                              textDecoration: 'none',
+                              cursor: 'pointer',
+                              transition: 'all 0.15s ease',
+                            }}
+                            onMouseEnter={(e) => {
+                              e.currentTarget.style.borderColor = 'rgba(168, 85, 247, 0.4)';
+                              e.currentTarget.style.background = 'rgba(168, 85, 247, 0.05)';
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.style.borderColor = 'var(--border-color)';
+                              e.currentTarget.style.background = 'var(--bg-app)';
+                            }}
+                          >
+                            <img
+                              src="/ecosystem/solvemymedia.png"
+                              alt="SolveMyMedia"
+                              style={{ width: 34, height: 34, borderRadius: 8, objectFit: 'contain', flexShrink: 0 }}
+                            />
+                            <div style={{ flex: 1, minWidth: 0 }}>
+                              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                                <span style={{ fontSize: '0.86rem', fontWeight: 800, color: 'var(--text-main)' }}>SolveMyMedia</span>
+                                <ExternalLink size={11} color="var(--text-muted)" />
+                              </div>
+                              <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                                {currentLang === 'id' ? 'Video & Audio Lossless' : 'Lossless Video & Audio'}
+                              </div>
+                            </div>
+                          </a>
+
+                          {/* App 4: CreateMy-QR */}
+                          <a
+                            href="https://createmy-qr.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: 10,
+                              padding: '10px 12px',
+                              borderRadius: 10,
+                              background: 'var(--bg-app)',
+                              border: '1px solid var(--border-color)',
+                              textDecoration: 'none',
+                              cursor: 'pointer',
+                              transition: 'all 0.15s ease',
+                            }}
+                            onMouseEnter={(e) => {
+                              e.currentTarget.style.borderColor = 'rgba(245, 158, 11, 0.4)';
+                              e.currentTarget.style.background = 'rgba(245, 158, 11, 0.05)';
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.style.borderColor = 'var(--border-color)';
+                              e.currentTarget.style.background = 'var(--bg-app)';
+                            }}
+                          >
+                            <img
+                              src="/ecosystem/createmy-qr.png"
+                              alt="CreateMy-QR"
+                              style={{ width: 34, height: 34, borderRadius: 8, objectFit: 'contain', flexShrink: 0 }}
+                            />
+                            <div style={{ flex: 1, minWidth: 0 }}>
+                              <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                                <span style={{ fontSize: '0.86rem', fontWeight: 800, color: 'var(--text-main)' }}>CreateMy-QR</span>
+                                <ExternalLink size={11} color="var(--text-muted)" />
+                              </div>
+                              <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                                {currentLang === 'id' ? 'QR Code & Barcode' : 'Vector QR & Barcodes'}
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+
+                        {/* Native Clients (Coming Soon) */}
+                        <div style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--text-accent)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 8 }}>
+                          {currentLang === 'id' ? 'Aplikasi Desktop & Mobile' : 'Desktop & Mobile Clients'}
+                        </div>
+                        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
+                          {/* Windows Desktop */}
+                          <div
+                            style={{
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: 10,
+                              padding: '8px 10px',
+                              borderRadius: 8,
+                              background: 'var(--bg-app)',
+                              border: '1px solid var(--border-color)',
+                            }}
+                          >
+                            <div style={{ width: 28, height: 28, borderRadius: 6, background: 'rgba(255,255,255,0.05)', color: 'var(--text-main)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, border: '1px solid var(--border-color)' }}>
+                              <Monitor size={14} />
+                            </div>
+                            <div style={{ flex: 1, minWidth: 0 }}>
+                              <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+                                <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--text-main)' }}>Windows 64-bit</span>
+                                <span style={{ fontSize: '0.6rem', fontWeight: 800, padding: '1px 5px', borderRadius: 4, background: 'rgba(100,116,139,0.15)', color: 'var(--text-muted)' }}>
+                                  {currentLang === 'id' ? 'Segera' : 'Soon'}
+                                </span>
+                              </div>
+                              <div style={{ fontSize: '0.68rem', color: 'var(--text-muted)' }}>
+                                100% Offline .exe
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* Android Mobile */}
+                          <div
+                            style={{
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: 10,
+                              padding: '8px 10px',
+                              borderRadius: 8,
+                              background: 'var(--bg-app)',
+                              border: '1px solid var(--border-color)',
+                            }}
+                          >
+                            <div style={{ width: 28, height: 28, borderRadius: 6, background: 'rgba(255,255,255,0.05)', color: 'var(--text-main)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, border: '1px solid var(--border-color)' }}>
+                              <Smartphone size={14} />
+                            </div>
+                            <div style={{ flex: 1, minWidth: 0 }}>
+                              <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+                                <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--text-main)' }}>Android App</span>
+                                <span style={{ fontSize: '0.6rem', fontWeight: 800, padding: '1px 5px', borderRadius: 4, background: 'rgba(100,116,139,0.15)', color: 'var(--text-muted)' }}>
+                                  {currentLang === 'id' ? 'Segera' : 'Soon'}
+                                </span>
+                              </div>
+                              <div style={{ fontSize: '0.68rem', color: 'var(--text-muted)' }}>
+                                Zero-Upload APK
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
 
-                      {/* 3-Column Grid of 30 Languages with fixed height */}
-                      <div
-                        style={{
-                          display: 'grid',
-                          gridTemplateColumns: 'repeat(3, 1fr)',
-                          gap: 6,
-                          padding: '14px 22px 18px',
-                          maxHeight: 290,
-                          overflowY: 'auto',
-                        }}
-                      >
-                        {SUPPORTED_LANGUAGES.filter(
-                          (l) =>
-                            l.name.toLowerCase().includes(langSearch.toLowerCase()) ||
-                            l.nativeName.toLowerCase().includes(langSearch.toLowerCase()) ||
-                            l.code.toLowerCase().includes(langSearch.toLowerCase())
-                        ).map((l) => {
-                          const isSelected = currentLang === l.code;
-                          return (
-                            <button
-                              key={l.code}
-                              onClick={() => {
-                                onSelectLang(l.code);
-                                setSuiteView('main');
-                              }}
-                              style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'space-between',
-                                padding: '8px 10px',
-                                borderRadius: 8,
-                                border: isSelected ? '1px solid var(--brand-primary)' : '1px solid var(--border-color)',
-                                background: isSelected ? 'rgba(225,29,72,0.08)' : 'var(--bg-app)',
-                                color: isSelected ? 'var(--brand-primary)' : 'var(--text-main)',
-                                fontSize: '0.78rem',
-                                fontWeight: isSelected ? 800 : 500,
-                                cursor: 'pointer',
-                                textAlign: 'left',
-                                transition: 'all 0.12s ease',
-                              }}
-                            >
-                              <span style={{ display: 'flex', alignItems: 'center', gap: 6, minWidth: 0, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                                <span style={{ fontSize: '1rem' }}>{l.flag}</span>
-                                <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{l.nativeName}</span>
-                              </span>
-                              {isSelected && <Check size={14} color="var(--brand-primary)" style={{ flexShrink: 0 }} />}
-                            </button>
-                          );
-                        })}
+                      {/* RIGHT PANE: COMPANY & TRUST */}
+                      <div style={{ padding: '20px 22px', background: 'var(--bg-app)' }}>
+                        <div style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--text-accent)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 12 }}>
+                          {currentLang === 'id' ? 'Perusahaan & Keamanan' : 'Company & Trust'}
+                        </div>
+
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+                          {/* 1. Pricing Plans */}
+                          <a
+                            href={currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`}
+                            onClick={(e) => {
+                              e.preventDefault();
+                              setIsSuiteOpen(false);
+                              window.history.pushState({}, '', currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`);
+                              window.dispatchEvent(new PopStateEvent('popstate'));
+                            }}
+                            style={{
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: 10,
+                              padding: '10px 12px',
+                              borderRadius: 8,
+                              background: 'var(--bg-card)',
+                              border: '1px solid var(--border-color)',
+                              textDecoration: 'none',
+                              cursor: 'pointer',
+                              transition: 'all 0.15s ease',
+                            }}
+                            onMouseEnter={(e) => {
+                              e.currentTarget.style.borderColor = 'rgba(225, 29, 72, 0.4)';
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.style.borderColor = 'var(--border-color)';
+                            }}
+                          >
+                            <div style={{ width: 30, height: 30, borderRadius: 6, background: 'rgba(225, 29, 72, 0.1)', color: 'var(--brand-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                              <CreditCard size={15} />
+                            </div>
+                            <div>
+                              <div style={{ fontSize: '0.84rem', fontWeight: 700, color: 'var(--text-main)' }}>
+                                {currentLang === 'id' ? 'Paket Harga' : 'Pricing & Plans'}
+                              </div>
+                              <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>
+                                {currentLang === 'id' ? 'Free Starter, Pro & Founder' : 'Starter, Pro & Founder Pass'}
+                              </div>
+                            </div>
+                          </a>
+
+                          {/* 2. Privacy & Security */}
+                          <a
+                            href={currentLang === 'en' ? '/privacy' : `/${currentLang}/privacy`}
+                            onClick={(e) => {
+                              e.preventDefault();
+                              setIsSuiteOpen(false);
+                              window.history.pushState({}, '', currentLang === 'en' ? '/privacy' : `/${currentLang}/pricing`);
+                              window.dispatchEvent(new PopStateEvent('popstate'));
+                            }}
+                            style={{
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: 10,
+                              padding: '10px 12px',
+                              borderRadius: 8,
+                              background: 'var(--bg-card)',
+                              border: '1px solid var(--border-color)',
+                              textDecoration: 'none',
+                              cursor: 'pointer',
+                              transition: 'all 0.15s ease',
+                            }}
+                            onMouseEnter={(e) => {
+                              e.currentTarget.style.borderColor = 'rgba(16, 185, 129, 0.4)';
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.style.borderColor = 'var(--border-color)';
+                            }}
+                          >
+                            <div style={{ width: 30, height: 30, borderRadius: 6, background: 'rgba(16, 185, 129, 0.1)', color: '#10b981', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                              <ShieldCheck size={15} />
+                            </div>
+                            <div>
+                              <div style={{ fontSize: '0.84rem', fontWeight: 700, color: 'var(--text-main)' }}>
+                                {currentLang === 'id' ? 'Privasi Zero-Server' : 'Zero-Server Privacy'}
+                              </div>
+                              <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>
+                                {currentLang === 'id' ? '100% Olah di browser via WASM' : '100% Client-Side WebAssembly'}
+                              </div>
+                            </div>
+                          </a>
+
+                          {/* 3. About Us */}
+                          <a
+                            href={currentLang === 'en' ? '/about' : `/${currentLang}/about`}
+                            onClick={(e) => {
+                              e.preventDefault();
+                              setIsSuiteOpen(false);
+                              window.history.pushState({}, '', currentLang === 'en' ? '/about' : `/${currentLang}/about`);
+                              window.dispatchEvent(new PopStateEvent('popstate'));
+                            }}
+                            style={{
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: 10,
+                              padding: '10px 12px',
+                              borderRadius: 8,
+                              background: 'var(--bg-card)',
+                              border: '1px solid var(--border-color)',
+                              textDecoration: 'none',
+                              cursor: 'pointer',
+                              transition: 'all 0.15s ease',
+                            }}
+                            onMouseEnter={(e) => {
+                              e.currentTarget.style.borderColor = 'rgba(139, 92, 246, 0.4)';
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.style.borderColor = 'var(--border-color)';
+                            }}
+                          >
+                            <div style={{ width: 30, height: 30, borderRadius: 6, background: 'rgba(139, 92, 246, 0.1)', color: '#8b5cf6', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                              <Sparkles size={15} />
+                            </div>
+                            <div>
+                              <div style={{ fontSize: '0.84rem', fontWeight: 700, color: 'var(--text-main)' }}>
+                                {currentLang === 'id' ? 'Tentang HandleMyFile' : 'About Us & Mission'}
+                              </div>
+                              <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>
+                                {currentLang === 'id' ? 'Misi privasi lokal tanpa server' : 'Our local privacy mission'}
+                              </div>
+                            </div>
+                          </a>
+
+                          {/* 4. Terms of Service */}
+                          <a
+                            href={currentLang === 'en' ? '/tos' : `/${currentLang}/tos`}
+                            onClick={(e) => {
+                              e.preventDefault();
+                              setIsSuiteOpen(false);
+                              window.history.pushState({}, '', currentLang === 'en' ? '/tos' : `/${currentLang}/tos`);
+                              window.dispatchEvent(new PopStateEvent('popstate'));
+                            }}
+                            style={{
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: 10,
+                              padding: '10px 12px',
+                              borderRadius: 8,
+                              background: 'var(--bg-card)',
+                              border: '1px solid var(--border-color)',
+                              textDecoration: 'none',
+                              cursor: 'pointer',
+                              transition: 'all 0.15s ease',
+                            }}
+                            onMouseEnter={(e) => {
+                              e.currentTarget.style.borderColor = 'rgba(100, 116, 139, 0.4)';
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.style.borderColor = 'var(--border-color)';
+                            }}
+                          >
+                            <div style={{ width: 30, height: 30, borderRadius: 6, background: 'rgba(100, 116, 139, 0.1)', color: 'var(--text-muted)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                              <FileText size={15} />
+                            </div>
+                            <div>
+                              <div style={{ fontSize: '0.84rem', fontWeight: 700, color: 'var(--text-main)' }}>
+                                {currentLang === 'id' ? 'Syarat & Transparansi' : 'Terms & Legal'}
+                              </div>
+                              <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>
+                                {currentLang === 'id' ? 'Ketentuan layanan & data' : 'Service terms & transparency'}
+                              </div>
+                            </div>
+                          </a>
+                        </div>
                       </div>
                     </div>
-                  )}
-                </div>
-              )}
-            </div>
+
+                    {/* Footer Bar: Appearance Toggle + Sliding Language Selector Trigger */}
+                    <div
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                        padding: '12px 22px',
+                        borderTop: '1px solid var(--border-color)',
+                        background: 'var(--bg-app)',
+                      }}
+                    >
+                      {/* Theme Mode Toggle (Clean button, non-intrusive) */}
+                      <button
+                        onClick={onToggleTheme}
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: 8,
+                          padding: '6px 14px',
+                          borderRadius: 8,
+                          background: 'var(--bg-card)',
+                          border: '1px solid var(--border-color)',
+                          color: 'var(--text-main)',
+                          fontSize: '0.78rem',
+                          fontWeight: 700,
+                          cursor: 'pointer',
+                          transition: 'all 0.15s ease',
+                        }}
+                        title={currentLang === 'id' ? 'Ganti mode terang/gelap' : 'Toggle appearance'}
+                      >
+                        {isLightMode ? <Sun size={15} color="#d97706" /> : <Moon size={15} color="#a855f7" />}
+                        <span>
+                          {currentLang === 'id'
+                            ? (isLightMode ? 'Mode Terang' : 'Mode Gelap')
+                            : (isLightMode ? 'Light Mode' : 'Dark Mode')}
+                        </span>
+                      </button>
+
+                      {/* Language Selector Drilldown Button (Sliding Navigation) */}
+                      <button
+                        onClick={() => setSuiteView('language')}
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: 8,
+                          padding: '6px 14px',
+                          borderRadius: 8,
+                          background: 'var(--bg-card)',
+                          border: '1px solid var(--border-color)',
+                          color: 'var(--text-main)',
+                          fontSize: '0.78rem',
+                          fontWeight: 700,
+                          cursor: 'pointer',
+                          transition: 'all 0.15s ease',
+                        }}
+                      >
+                        <Globe size={14} color="var(--brand-primary)" />
+                        <span>
+                          {getLanguageByCode(currentLang).flag} {getLanguageByCode(currentLang).nativeName}
+                        </span>
+                        <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
+                          ({currentLang === 'id' ? '30 Bahasa' : '30 Languages'})
+                        </span>
+                        <ArrowRight size={13} color="var(--text-muted)" />
+                      </button>
+                    </div>
+                  </div>
+                ) : (
+                  /* ── Sliding Language Selector Sub-Panel ── */
+                  <div style={{ animation: 'fadeInDown 0.15s ease' }}>
+                    {/* Sub-Header with Back Button */}
+                    <div
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                        padding: '14px 22px',
+                        borderBottom: '1px solid var(--border-color)',
+                        background: 'var(--bg-app)',
+                      }}
+                    >
+                      <button
+                        onClick={() => setSuiteView('main')}
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: 6,
+                          background: 'none',
+                          border: 'none',
+                          color: 'var(--brand-primary)',
+                          fontWeight: 800,
+                          fontSize: '0.84rem',
+                          cursor: 'pointer',
+                          padding: '4px 8px',
+                          borderRadius: 6,
+                        }}
+                      >
+                        <ArrowLeft size={16} />
+                        <span>{currentLang === 'id' ? 'Kembali ke Menu Suite' : 'Back to Ecosystem'}</span>
+                      </button>
+                      <div style={{ fontSize: '0.84rem', fontWeight: 800, color: 'var(--text-main)' }}>
+                        {currentLang === 'id' ? 'Pilih Bahasa (30 Bahasa)' : 'Select Language (30 Available)'}
+                      </div>
+                    </div>
+
+                    {/* Language Search Input */}
+                    <div style={{ padding: '12px 22px 8px', borderBottom: '1px solid var(--border-color)' }}>
+                      <div
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: 8,
+                          background: 'var(--bg-app)',
+                          border: '1px solid var(--border-color)',
+                          borderRadius: 8,
+                          padding: '7px 12px',
+                        }}
+                      >
+                        <Search size={15} color="var(--text-muted)" />
+                        <input
+                          type="text"
+                          value={langSearch}
+                          onChange={(e) => setLangSearch(e.target.value)}
+                          placeholder={currentLang === 'id' ? 'Cari bahasa (contoh: English, Español, Indonesia)...' : 'Search language (e.g. English, Español, Deutsch)...'}
+                          style={{
+                            border: 'none',
+                            background: 'transparent',
+                            outline: 'none',
+                            width: '100%',
+                            fontSize: '0.82rem',
+                            color: 'var(--text-main)',
+                          }}
+                        />
+                        {langSearch && (
+                          <button
+                            onClick={() => setLangSearch('')}
+                            style={{ background: 'none', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', padding: 0 }}
+                          >
+                            <X size={14} />
+                          </button>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* 3-Column Grid of 30 Languages with fixed height */}
+                    <div
+                      style={{
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(3, 1fr)',
+                        gap: 6,
+                        padding: '14px 22px 18px',
+                        maxHeight: 290,
+                        overflowY: 'auto',
+                      }}
+                    >
+                      {SUPPORTED_LANGUAGES.filter(
+                        (l) =>
+                          l.name.toLowerCase().includes(langSearch.toLowerCase()) ||
+                          l.nativeName.toLowerCase().includes(langSearch.toLowerCase()) ||
+                          l.code.toLowerCase().includes(langSearch.toLowerCase())
+                      ).map((l) => {
+                        const isSelected = currentLang === l.code;
+                        return (
+                          <button
+                            key={l.code}
+                            onClick={() => {
+                              onSelectLang(l.code);
+                              setSuiteView('main');
+                            }}
+                            style={{
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'space-between',
+                              padding: '8px 10px',
+                              borderRadius: 8,
+                              border: isSelected ? '1px solid var(--brand-primary)' : '1px solid var(--border-color)',
+                              background: isSelected ? 'rgba(225,29,72,0.08)' : 'var(--bg-app)',
+                              color: isSelected ? 'var(--brand-primary)' : 'var(--text-main)',
+                              fontSize: '0.78rem',
+                              fontWeight: isSelected ? 800 : 500,
+                              cursor: 'pointer',
+                              textAlign: 'left',
+                              transition: 'all 0.12s ease',
+                            }}
+                          >
+                            <span style={{ display: 'flex', alignItems: 'center', gap: 6, minWidth: 0, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                              <span style={{ fontSize: '1rem' }}>{l.flag}</span>
+                              <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{l.nativeName}</span>
+                            </span>
+                            {isSelected && <Check size={14} color="var(--brand-primary)" style={{ flexShrink: 0 }} />}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
         </div>
+      </div>
 
       {/* ── Mobile Navigation Drawer (Tools-First, Clean & Minimalist) ── */}
       {isMobileMenuOpen && (

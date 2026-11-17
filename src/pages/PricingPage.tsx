@@ -39,14 +39,14 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
           url: shareUrl,
         });
         return;
-      } catch (_) {}
+      } catch (_) { }
     }
     if (typeof navigator !== 'undefined' && navigator.clipboard) {
       try {
         await navigator.clipboard.writeText(shareUrl);
         setCopied(true);
         setTimeout(() => setCopied(false), 3000);
-      } catch (_) {}
+      } catch (_) { }
     }
   };
 
@@ -58,9 +58,9 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
         currentLang={currentLang}
         slug="pricing"
       />
-      
+
       <main style={{ width: '100%', flex: 1, background: 'var(--bg-app)' }}>
-        
+
         {/* Section 1: Hero */}
         <section style={{ width: '100%', padding: '120px 24px', background: 'var(--bg-card)', borderBottom: '1px solid var(--border-color)', position: 'relative', overflow: 'hidden' }}>
           <div style={{ maxWidth: 800, margin: '0 auto', textAlign: 'center', position: 'relative', zIndex: 10 }}>
@@ -80,7 +80,7 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
         <section style={{ width: '100%', padding: '80px 24px', background: 'var(--bg-app)' }}>
           <div style={{ maxWidth: 1320, margin: '0 auto' }}>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 24 }}>
-              
+
               {/* Card 1: Free Starter Plan */}
               <div style={{ background: 'var(--bg-card)', borderRadius: 24, padding: 32, border: '1.5px solid var(--border-color)', position: 'relative', display: 'flex', flexDirection: 'column' }}>
                 <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 8 }}>
