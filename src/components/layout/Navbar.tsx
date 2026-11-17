@@ -66,6 +66,12 @@ const toTitleCase = (str: string): string => {
   return emoji ? `${emoji.trim()} ${formatted}` : formatted;
 };
 
+// Helper to strip emoji completely (used in mobile drawer where red Lucide SVG icons are used)
+const stripEmoji = (str: string): string => {
+  if (!str) return '';
+  return str.replace(/^[\p{Extended_Pictographic}\u2600-\u27BF\uFE0F\s]+/u, '').trim();
+};
+
 export const Navbar: React.FC<NavbarProps> = ({
   currentLang,
   onSelectLang,
@@ -1181,9 +1187,11 @@ export const Navbar: React.FC<NavbarProps> = ({
                             transition: 'all 0.15s ease',
                           }}
                         >
-                          <Globe size={14} color="var(--brand-primary)" />
+                          <span style={{ fontSize: '1rem', lineHeight: 1 }}>
+                            {getLanguageByCode(currentLang).flag}
+                          </span>
                           <span>
-                            {getLanguageByCode(currentLang).flag} {getLanguageByCode(currentLang).nativeName}
+                            {getLanguageByCode(currentLang).nativeName}
                           </span>
                           <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
                             ({currentLang === 'id' ? '30 Bahasa' : '30 Languages'})
@@ -1660,7 +1668,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                         >
                           <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
                             <group.icon size={16} color="var(--brand-primary)" />
-                            <span>{toTitleCase(group.title)}</span>
+                            <span>{stripEmoji(toTitleCase(group.title))}</span>
                           </div>
                           <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                             <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 600, background: 'var(--bg-app)', padding: '2px 7px', borderRadius: 6, border: '1px solid var(--border-color)' }}>

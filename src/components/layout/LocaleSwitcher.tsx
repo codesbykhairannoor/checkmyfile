@@ -78,12 +78,8 @@ export const LocaleSwitcher: React.FC<LocaleSwitcherProps> = ({
         }}
         title="Pilih dari 30 Bahasa Partial URL & Wilayah GEO"
       >
-        <Globe size={compact ? 15 : 16} />
-        {compact ? (
-          <span>{currentLangInfo.code.toUpperCase()}</span>
-        ) : (
-          <span>{currentLangInfo.flag} {currentLangInfo.code.toUpperCase()}</span>
-        )}
+        <span style={{ fontSize: '1.05rem', lineHeight: 1 }}>{currentLangInfo.flag}</span>
+        <span>{currentLangInfo.code.toUpperCase()}</span>
         <span style={{ fontSize: '0.65rem', opacity: 0.7 }}>▼</span>
       </button>
 
