@@ -105,12 +105,10 @@ const buildHeaderNavigation = (lang: string, isEn: boolean): string => {
         <a href="${wordSlug}" style="color: var(--seo-text, #f8fafc); text-decoration: none; padding: 6px 12px; border-radius: 8px; font-size: 0.92rem; font-weight: 700; letter-spacing: 0.02em;">PDF TO WORD</a>
       </nav>
       <div style="display: flex; align-items: center; gap: 14px; font-size: 0.9rem; font-weight: 600;">
-        <a href="${getStaticHref('about')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none;">About</a>
-        <a href="${getStaticHref('security')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none;">Security</a>
-        <a href="${getStaticHref('pricing')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none;">Pricing</a>
-        <a href="${getStaticHref('languages')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none;">Languages</a>
+        <a href="${getStaticHref('pricing')}" style="color: var(--seo-text, #f8fafc); text-decoration: none; font-weight: 700;">Pricing</a>
+        <a href="${getStaticHref('languages')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none;">30 Languages</a>
         <a href="${homeHref}" onclick="if(window.__openAuthModal){window.__openAuthModal();return false;}" style="background: #e11d48; color: #ffffff; padding: 6px 14px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
-          <span>${lang === 'id' ? 'Masuk / Login' : 'Sign In'}</span>
+          <span>${lang === 'id' ? 'Masuk' : 'Sign In'}</span>
         </a>
       </div>
     </header>
@@ -282,8 +280,8 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
   let html = baseHtmlContent;
   const isEn = lang === 'en';
 
-  // Replace lang attribute
-  html = html.replace(/<html lang="[^"]*">/i, `<html lang="${lang}">`);
+  // Replace lang attribute and preserve no-js class
+  html = html.replace(/<html\b[^>]*>/i, `<html lang="${lang}" class="no-js">`);
 
   // Remove existing title/meta/og/twitter tags to avoid duplicates or mismatches
   html = html.replace(/<title>.*?<\/title>/gi, '');

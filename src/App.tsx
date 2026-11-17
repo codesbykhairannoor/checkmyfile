@@ -31,7 +31,7 @@ export const App: React.FC = () => {
     } else if (segments.length > 0) {
       slug = segments[0];
     }
-    
+
     let activePageVal: string | null = null;
     let activeToolVal: ToolDefinition | null = null;
 
@@ -111,13 +111,15 @@ export const App: React.FC = () => {
     return () => window.removeEventListener('popstate', parseUrl);
   }, []);
 
-  // Update theme class on body and persist in localStorage
+  // Update theme class on body and html, and persist in localStorage
   useEffect(() => {
     if (isLightMode) {
       document.body.classList.add('light-theme');
+      document.documentElement.classList.add('light-theme');
       localStorage.setItem('blitzdocs-theme', 'light');
     } else {
       document.body.classList.remove('light-theme');
+      document.documentElement.classList.remove('light-theme');
       localStorage.setItem('blitzdocs-theme', 'dark');
     }
   }, [isLightMode]);

@@ -32,7 +32,7 @@
   --radius-full: 9999px;
 }
 
-body.light-theme {
+html.light-theme, body.light-theme {
   --bg-app: #f4f6fb;
   --bg-card: #ffffff;
   --bg-card-hover: #f8fafc;
@@ -45,6 +45,14 @@ body.light-theme {
   --text-accent: #e11d48;
   --brand-glow: rgba(225, 29, 72, 0.18);
   --shadow-lg: 0 12px 35px -10px rgba(15, 23, 42, 0.08);
+}
+
+/* ==========================================================================
+   PROGRESSIVE ENHANCEMENT & ZERO-FLASH SEO SKELETON
+   Hides static fallback once JavaScript is active to eliminate FOUC / CLS
+   ========================================================================== */
+.js #static-seo {
+  display: none !important;
 }
 
 * {

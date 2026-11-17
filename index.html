@@ -1,9 +1,23 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     
+    <!-- Early execution: Eliminate FOUC, theme flash, and stale deployment chunks -->
+    <script>
+      (function() {
+        try {
+          document.documentElement.classList.replace('no-js', 'js');
+          var saved = localStorage.getItem('blitzdocs-theme');
+          var isLight = saved === 'light' || (!saved && window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches);
+          if (isLight) {
+            document.documentElement.classList.add('light-theme');
+          }
+        } catch (e) {}
+      })();
+    </script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQEME9ME2B"></script>
     <script>
