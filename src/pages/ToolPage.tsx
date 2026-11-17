@@ -191,11 +191,9 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
   return (
     <main style={{
       flex: 1,
-      minHeight: 0,
       width: '100%',
       display: 'flex',
       flexDirection: 'column',
-      overflow: 'auto',
       backgroundColor: 'var(--bg-app)',
     }}>
       <SeoHead tool={tool} lang={currentLang} />
@@ -274,9 +272,9 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
               </div>
             )}
             <React.Suspense fallback={<div style={{ minHeight: 400, display: 'flex', justifyContent: 'center', alignItems: 'center' }}><div className="spinner" style={{ width: 40, height: 40, border: '4px solid var(--border-color)', borderTopColor: 'var(--text-accent)', borderRadius: '50%', animation: 'spin 1s linear infinite' }}></div></div>}>
-              <div className="tool-workspace-container" style={{ display: 'flex', width: '100%', height: '100%', maxHeight: 800, flex: 1, gap: 24, minHeight: 0, justifyContent: 'center' }}>
+              <div className="tool-workspace-container" style={{ display: 'flex', width: '100%', gap: 24, justifyContent: 'center', alignItems: 'flex-start', paddingBottom: 64 }}>
                 {/* Left Workspace */}
-                <div className="tool-workspace-left" style={{ flex: 1, minWidth: 0, minHeight: 0, display: 'flex', flexDirection: 'column', gap: 24, overflow: 'hidden', paddingRight: 8, paddingBottom: 24 }}>
+                <div className="tool-workspace-left" style={{ flex: 1, minWidth: 0, position: 'sticky', top: 88, height: 'calc(100vh - 120px)', maxHeight: 850, minHeight: 520, display: 'flex', flexDirection: 'column', paddingRight: 8, paddingBottom: 24 }}>
                   <DocumentLivePreview
                     files={files}
                     currentLang={currentLang}

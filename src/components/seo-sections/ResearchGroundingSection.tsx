@@ -10,7 +10,7 @@ export const ResearchGroundingSection: React.FC<ResearchGroundingSectionProps> =
   const t = RESEARCH_TRANSLATIONS[lang] || RESEARCH_TRANSLATIONS['en'];
 
   return (
-    <section 
+    <section
       id="research-foundations"
       aria-label="Academic Foundations & Standards"
       style={{
@@ -74,7 +74,7 @@ export const ResearchGroundingSection: React.FC<ResearchGroundingSectionProps> =
           gap: '24px'
         }}>
           {/* Card 1: Local-First Computing */}
-          <article 
+          <article
             className="glass-panel"
             style={{
               backgroundColor: 'var(--bg-card)',
@@ -152,7 +152,7 @@ export const ResearchGroundingSection: React.FC<ResearchGroundingSectionProps> =
           </article>
 
           {/* Card 2: WebAssembly */}
-          <article 
+          <article
             className="glass-panel"
             style={{
               backgroundColor: 'var(--bg-card)',
@@ -230,7 +230,7 @@ export const ResearchGroundingSection: React.FC<ResearchGroundingSectionProps> =
           </article>
 
           {/* Card 3: ISO Standard */}
-          <article 
+          <article
             className="glass-panel"
             style={{
               backgroundColor: 'var(--bg-card)',

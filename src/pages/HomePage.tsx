@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { SlidersHorizontal,
+import {
+  SlidersHorizontal,
   Search, X, SearchX, ArrowRight, ShieldCheck, Check,
   Combine, PenTool, Scissors, RotateCw, Hash, Stamp, Trash2,
   LayoutList, Lock, Unlock, Crop, Images, Contrast, Eraser, Scale,
@@ -48,23 +49,23 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
       <SeoHead lang={currentLang} />
 
       {/* Hero Section */}
-      <section style={{ 
+      <section style={{
         position: 'relative',
-        paddingTop: 'clamp(56px, 10vw, 96px)', 
+        paddingTop: 'clamp(56px, 10vw, 96px)',
         paddingBottom: '40px',
         textAlign: 'center',
       }}>
         <div style={{ maxWidth: 1440, margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 10 }}>
-          
+
 
 
           {/* Monumental Headline */}
           <h1
             className="homepage-hero-title"
-            style={{ 
-              fontSize: 'clamp(2.5rem, 5.2vw, 4.5rem)', 
-              fontWeight: 900, 
-              letterSpacing: '-0.03em', 
+            style={{
+              fontSize: 'clamp(2.5rem, 5.2vw, 4.5rem)',
+              fontWeight: 900,
+              letterSpacing: '-0.03em',
               lineHeight: 1.15,
               color: 'var(--text-main)',
               marginBottom: 24,
@@ -131,7 +132,7 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
               </button>
             )}
           </div>
-          
+
           {/* Category Filters */}
           <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: 12, marginTop: 48 }}>
             {[
@@ -169,10 +170,10 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
       {/* Tools Grid Section */}
       <section style={{ padding: '40px 24px 60px', background: 'rgba(0,0,0,0.02)' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-          
+
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 40 }}>
             <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, fontFamily: 'var(--font-display)', letterSpacing: '-0.02em' }}>
-              {selectedCategory === 'all' ? t.allTools : selectedCategory.toUpperCase()} 
+              {selectedCategory === 'all' ? t.allTools : selectedCategory.toUpperCase()}
               <span style={{ marginLeft: 12, color: 'var(--text-muted)', fontWeight: 600, fontSize: '1.4rem' }}>({filteredTools.length})</span>
             </h2>
           </div>
@@ -248,16 +249,16 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
       {/* 100% Client-Side Sandbox Showcase Section */}
       <section style={{ padding: '96px 24px', background: 'var(--bg-app)' }}>
         <div style={{ maxWidth: 1240, margin: '0 auto' }}>
-          <div className="glass-panel" style={{ 
-            borderRadius: 36, 
-            padding: 'clamp(36px, 6vw, 64px)', 
-            position: 'relative', 
+          <div className="glass-panel" style={{
+            borderRadius: 36,
+            padding: 'clamp(36px, 6vw, 64px)',
+            position: 'relative',
             overflow: 'hidden',
             border: '1px solid var(--border-color)',
             background: 'var(--bg-card)'
           }}>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 480px), 1fr))', gap: 48, alignItems: 'center' }}>
-              
+
               {/* Left Column: Core Guarantee */}
               <div>
                 <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '6px 14px', borderRadius: 9999, border: '1px solid rgba(225, 29, 72, 0.25)', background: 'rgba(225, 29, 72, 0.08)', color: 'var(--brand-primary)', fontWeight: 800, fontSize: '0.75rem', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 20 }}>
@@ -370,11 +371,11 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
       {/* GEO SECTIONS: Definitions & Trust Bento Grid */}
       <section style={{ padding: '96px 24px', background: 'var(--bg-card)', borderTop: '1px solid var(--border-color)' }}>
         <div style={{ maxWidth: 1240, margin: '0 auto' }}>
-          
+
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 520px), 1fr))', gap: 32 }}>
-            
+
             {/* Bento Card 1: What is HandleMyFile? */}
-            <div 
+            <div
               className="glass-panel"
               style={{
                 borderRadius: 28,
@@ -420,7 +421,7 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
             </div>
 
             {/* Bento Card 2: Why is this 100% Secure & Private? */}
-            <div 
+            <div
               className="glass-panel"
               style={{
                 borderRadius: 28,
@@ -479,7 +480,7 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
       {/* GEO SECTIONS: Key Takeaways & FAQ */}
       <section style={{ padding: '96px 24px', background: 'var(--bg-app)', borderTop: '1px solid var(--border-color)' }}>
         <div style={{ maxWidth: 1240, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 500px), 1fr))', gap: 56, alignItems: 'start' }}>
-          
+
           {/* Key Takeaways Column */}
           <div>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, padding: '4px 12px', borderRadius: 9999, background: 'rgba(225, 29, 72, 0.08)', color: 'var(--brand-primary)', fontSize: '0.75rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 16 }}>
@@ -497,17 +498,17 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
                 t.homeGeoTakeawaysItem2 || 'Zero file uploads required, ensuring total data privacy.',
                 t.homeGeoTakeawaysItem3 || 'Powered by WebAssembly for high-speed offline conversions.'
               ].map((item, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="glass-panel"
-                  style={{ 
-                    padding: '20px 22px', 
-                    borderRadius: 18, 
-                    background: 'var(--bg-card)', 
+                  style={{
+                    padding: '20px 22px',
+                    borderRadius: 18,
+                    background: 'var(--bg-card)',
                     border: '1px solid var(--border-color)',
-                    display: 'flex', 
-                    alignItems: 'center', 
-                    gap: 16 
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 16
                   }}
                 >
                   <div style={{ width: 32, height: 32, borderRadius: '50%', background: 'rgba(225, 29, 72, 0.1)', color: 'var(--brand-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
@@ -542,24 +543,24 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
               {[
-                { 
-                  q: t.homeGeoFaq1Q || 'How does HandleMyFile work without a server?', 
+                {
+                  q: t.homeGeoFaq1Q || 'How does HandleMyFile work without a server?',
                   a: t.homeGeoFaq1A || 'It utilizes WebAssembly (WASM) to run heavy C++ and Rust processing libraries directly inside your web browser engine.'
                 },
-                { 
-                  q: t.homeGeoFaq2Q || 'Are there any file size limits?', 
+                {
+                  q: t.homeGeoFaq2Q || 'Are there any file size limits?',
                   a: t.homeGeoFaq2A || 'No. Since processing happens on your local device, the only limit is your computer\'s available RAM.'
                 },
-                { 
-                  q: t.homeGeoFaq3Q || 'Is this safe for confidential company documents?', 
+                {
+                  q: t.homeGeoFaq3Q || 'Is this safe for confidential company documents?',
                   a: t.homeGeoFaq3A || 'Yes, it is the safest method available. Files never leave your device and are never transmitted over the internet.'
                 },
-                { 
-                  q: t.homeGeoFaq4Q || 'Does it work entirely offline?', 
+                {
+                  q: t.homeGeoFaq4Q || 'Does it work entirely offline?',
                   a: t.homeGeoFaq4A || 'Yes. Once the web application loads in your browser, you can disconnect from the internet and continue processing files.'
                 }
               ].map((faq, idx) => (
-                <div 
+                <div
                   key={idx}
                   className="glass-panel"
                   style={{

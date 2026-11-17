@@ -98,7 +98,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
   const canonicalId = getCanonicalToolId(tool.id);
 
   return (
-    <div className="mobile-full-width" style={{ flexShrink: 0, flex: 1, minWidth: 350, minHeight: 0, paddingRight: 8, paddingBottom: 24, display: 'flex', flexDirection: 'column', gap: 16, marginTop: 0, overflowY: 'auto' }}>
+    <div className="mobile-full-width tool-workspace-right" style={{ flex: 1, minWidth: 350, paddingRight: 8, paddingBottom: 64, display: 'flex', flexDirection: 'column', gap: 16, marginTop: 0 }}>
       <input 
         type="file" 
         ref={fileInputRef} 
