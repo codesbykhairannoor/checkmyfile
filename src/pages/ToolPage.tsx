@@ -195,7 +195,8 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
       width: '100%',
       display: 'flex',
       flexDirection: 'column',
-      overflow: 'auto'
+      overflow: 'auto',
+      backgroundColor: 'var(--bg-app)',
     }}>
       <SeoHead tool={tool} lang={currentLang} />
 

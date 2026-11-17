@@ -124,6 +124,18 @@ export const App: React.FC = () => {
     }
   }, [isLightMode]);
 
+  // Lock body scroll in workspace mode to keep interactive editor focused
+  useEffect(() => {
+    if (isEditorActive) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isEditorActive]);
+
   const handleSelectLang = (code: string) => {
     // Track language switch (GEO signal)
     trackLanguageSwitched({ from_language: currentLang, to_language: code });
@@ -174,7 +186,17 @@ export const App: React.FC = () => {
   };
 
   return (
-    <div style={isEditorActive ? { display: 'flex', flexDirection: 'column', position: 'fixed', inset: 0, overflow: 'hidden' } : { display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        height: isEditorActive ? '100vh' : 'auto',
+        minHeight: '100vh',
+        width: '100%',
+        overflow: isEditorActive ? 'hidden' : 'visible',
+        backgroundColor: 'var(--bg-app)',
+      }}
+    >
       <Navbar
         currentLang={currentLang}
         onSelectLang={handleSelectLang}
@@ -184,7 +206,7 @@ export const App: React.FC = () => {
         onSelectTool={handleSelectTool}
       />
 
-      <div style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: 'column' }}>
+      <div style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: 'column', backgroundColor: 'var(--bg-app)' }}>
         <React.Suspense fallback={<div style={{ minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><div className="spinner" style={{ width: 36, height: 36, border: '3px solid var(--border-color)', borderTopColor: 'var(--brand-primary)', borderRadius: '50%', animation: 'spin 0.8s linear infinite' }} /></div>}>
           {activeTool ? (
             <ToolPage

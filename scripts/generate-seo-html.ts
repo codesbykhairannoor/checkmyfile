@@ -344,6 +344,7 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
         --seo-muted: #94a3b8;
         --seo-primary: #e11d48;
       }
+      html.light-theme,
       body.light-theme {
         --seo-bg: #f4f6fb;
         --seo-card: #ffffff;

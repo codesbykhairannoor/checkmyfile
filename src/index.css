@@ -71,6 +71,11 @@ body.light-theme {
   display: flex !important;
 }
 
+html {
+  background-color: var(--bg-app);
+  min-height: 100%;
+}
+
 body {
   font-family: var(--font-main);
   background-color: var(--bg-app);
