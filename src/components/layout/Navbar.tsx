@@ -263,11 +263,10 @@ export const Navbar: React.FC<NavbarProps> = ({
       className="main-site-header"
       aria-label="Main Site Header"
       style={{
-        position: 'sticky', top: 0, zIndex: 50,
+        position: 'sticky', top: 0, zIndex: 100,
         background: 'var(--bg-app)',
         borderBottom: '1px solid var(--border-color)',
-        backdropFilter: 'blur(20px)',
-        boxShadow: '0 4px 28px rgba(0,0,0,0.12)',
+        boxShadow: '0 2px 10px rgba(0,0,0,0.06)',
         fontFamily: 'var(--font-main)',
       }}
     >
@@ -1295,30 +1294,9 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
           </div>
 
-          {/* Mobile top-right controls: Compact Sign In / Avatar + Hamburger */}
+          {/* Mobile top-right controls: Avatar (if logged in) + Hamburger */}
           <div className="mobile-only" style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-            {!user ? (
-              <button
-                onClick={openAuthModal}
-                style={{
-                  height: 36,
-                  padding: '0 12px',
-                  borderRadius: 8,
-                  background: 'rgba(225, 29, 72, 0.08)',
-                  border: '1px solid rgba(225, 29, 72, 0.25)',
-                  color: 'var(--brand-primary)',
-                  fontSize: '0.8rem',
-                  fontWeight: 700,
-                  cursor: 'pointer',
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: 6,
-                }}
-              >
-                <LogIn size={14} />
-                <span>{authT.nav_signin || (currentLang === 'id' ? 'Masuk' : 'Sign In')}</span>
-              </button>
-            ) : (
+            {user && (
               <div
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}
@@ -1372,51 +1350,43 @@ export const Navbar: React.FC<NavbarProps> = ({
             height: 'calc(100dvh - 60px)',
             background: 'var(--bg-app)',
             borderTop: '1px solid var(--border-color)',
-            padding: '16px 16px calc(32px + env(safe-area-inset-bottom, 20px))',
+            padding: '16px 16px calc(36px + env(safe-area-inset-bottom, 24px))',
             overflowY: 'auto',
             WebkitOverflowScrolling: 'touch',
-            zIndex: 9999,
+            zIndex: 99999,
             display: 'flex',
             flexDirection: 'column',
             gap: 14,
             boxSizing: 'border-box',
           }}
         >
-          {/* 1. Mobile User Profile or Sleek Sign In Card */}
+          {/* 1. Mobile Sign In Button / User Profile */}
           {!user ? (
-            <div
+            <button
               onClick={() => {
                 setIsMobileMenuOpen(false);
                 openAuthModal();
               }}
               style={{
+                width: '100%',
+                height: 44,
+                borderRadius: 10,
+                background: 'rgba(225, 29, 72, 0.08)',
+                border: '1px solid rgba(225, 29, 72, 0.3)',
+                color: 'var(--brand-primary)',
+                fontSize: '0.88rem',
+                fontWeight: 700,
+                cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'space-between',
-                padding: '10px 14px',
-                borderRadius: 10,
-                background: 'var(--bg-card)',
-                border: '1px solid var(--border-color)',
-                cursor: 'pointer',
+                justifyContent: 'center',
+                gap: 8,
+                transition: 'all 0.15s ease',
               }}
             >
-              <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                <div style={{ width: 34, height: 34, borderRadius: 8, background: 'rgba(225, 29, 72, 0.1)', color: 'var(--brand-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                  <LogIn size={16} />
-                </div>
-                <div>
-                  <div style={{ fontSize: '0.86rem', fontWeight: 700, color: 'var(--text-main)' }}>
-                    {authT.nav_signin || (currentLang === 'id' ? 'Masuk' : 'Sign In')}
-                  </div>
-                  <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
-                    {currentLang === 'id' ? 'Simpan riwayat & sinkron Pro' : 'Sync history & access Pro'}
-                  </div>
-                </div>
-              </div>
-              <span style={{ fontSize: '0.76rem', fontWeight: 700, color: '#ffffff', background: 'var(--brand-primary)', padding: '5px 12px', borderRadius: 6, flexShrink: 0 }}>
-                {authT.nav_signin || (currentLang === 'id' ? 'Masuk' : 'Sign In')}
-              </span>
-            </div>
+              <LogIn size={16} />
+              <span>{currentLang === 'id' ? 'Masuk ke Akun' : (authT.nav_signin || 'Sign In')}</span>
+            </button>
           ) : (
             <div
               style={{
@@ -1947,7 +1917,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           font-weight: 700;
           color: var(--text-main);
           line-height: 1.2;
-          text-transform: uppercase;
+          text-transform: none;
         }
         .mega-menu-item:hover .item-title {
           color: var(--text-accent);
@@ -1955,7 +1925,27 @@ export const Navbar: React.FC<NavbarProps> = ({
         @media (max-width: 768px) {
           .desktop-only { display: none !important; }
           .mobile-only  { display: flex !important; }
-          .mobile-menu-container { display: flex !important; flex-direction: column !important; }
+          .mobile-menu-container {
+            display: flex !important;
+            flex-direction: column !important;
+            position: fixed !important;
+            top: 60px !important;
+            left: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
+            width: 100vw !important;
+            height: calc(100dvh - 60px) !important;
+            min-height: calc(100vh - 60px) !important;
+            max-height: none !important;
+            background: var(--bg-app) !important;
+            z-index: 99999 !important;
+            overflow-y: auto !important;
+            -webkit-overflow-scrolling: touch !important;
+            padding: 16px 16px calc(36px + env(safe-area-inset-bottom, 24px)) !important;
+            box-sizing: border-box !important;
+            margin: 0 !important;
+            border-radius: 0 !important;
+          }
           .navbar-main-inner { padding: 0 16px !important; height: 60px !important; }
           .brand-title { font-size: 1.18rem !important; }
           .brand-logo-img { height: 32px !important; }
