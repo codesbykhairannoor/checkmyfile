@@ -17,6 +17,7 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
   const tPricing = getPricingTranslations(currentLang);
   const { user, isPro, openAuthModal } = useAuth();
   const [copied, setCopied] = useState(false);
+  const [billingTab, setBillingTab] = useState<'monthly' | 'yearly' | 'lifetime'>('yearly');
 
   const handleBuyPlan = (plan: PlanType) => {
     if (!user) {
@@ -76,21 +77,134 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
           </div>
         </section>
 
-        {/* Section 2: Pricing Table (4 Cards Grid) */}
-        <section style={{ width: '100%', padding: '80px 24px', background: 'var(--bg-app)' }}>
-          <div style={{ maxWidth: 1320, margin: '0 auto' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 24 }}>
+        {/* Section 2: Pricing Table (Tab Switcher + 2 Cards) */}
+        <section style={{ width: '100%', padding: '60px 24px 80px', background: 'var(--bg-app)' }}>
+          <div style={{ maxWidth: 960, margin: '0 auto' }}>
+
+            {/* Segmented Billing Period Switcher */}
+            <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 44 }}>
+              <div
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  padding: 5,
+                  background: 'var(--bg-card)',
+                  border: '1.5px solid var(--border-color)',
+                  borderRadius: 14,
+                  gap: 6,
+                  boxShadow: '0 4px 12px rgba(0,0,0,0.04)',
+                  flexWrap: 'wrap',
+                  justifyContent: 'center',
+                }}
+              >
+                {/* Monthly Tab */}
+                <button
+                  type="button"
+                  onClick={() => setBillingTab('monthly')}
+                  style={{
+                    padding: '10px 18px',
+                    borderRadius: 10,
+                    border: 'none',
+                    background: billingTab === 'monthly' ? 'var(--brand-primary)' : 'transparent',
+                    color: billingTab === 'monthly' ? '#ffffff' : 'var(--text-main)',
+                    fontWeight: 700,
+                    fontSize: '0.88rem',
+                    cursor: 'pointer',
+                    transition: 'all 0.15s ease',
+                  }}
+                >
+                  {tAuth.pro_plan_monthly_name || 'Monthly'} ($9.99{tPricing.period_mo})
+                </button>
+
+                {/* Yearly Tab (Popular) */}
+                <button
+                  type="button"
+                  onClick={() => setBillingTab('yearly')}
+                  style={{
+                    padding: '10px 18px',
+                    borderRadius: 10,
+                    border: 'none',
+                    background: billingTab === 'yearly' ? '#10b981' : 'transparent',
+                    color: billingTab === 'yearly' ? '#ffffff' : 'var(--text-main)',
+                    fontWeight: 700,
+                    fontSize: '0.88rem',
+                    cursor: 'pointer',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: 8,
+                    transition: 'all 0.15s ease',
+                  }}
+                >
+                  <span>{tAuth.pro_plan_yearly_name || 'Yearly'} ($79{tPricing.period_yr})</span>
+                  <span
+                    style={{
+                      fontSize: '0.72rem',
+                      fontWeight: 900,
+                      padding: '2px 8px',
+                      borderRadius: 6,
+                      background: billingTab === 'yearly' ? 'rgba(255,255,255,0.25)' : 'rgba(16,185,129,0.15)',
+                      color: billingTab === 'yearly' ? '#ffffff' : '#10b981',
+                      letterSpacing: '0.04em',
+                    }}
+                  >
+                    {tAuth.pro_plan_yearly_save || 'SAVE 34%'}
+                  </span>
+                </button>
+
+                {/* Lifetime Tab (Best Value) */}
+                <button
+                  type="button"
+                  onClick={() => setBillingTab('lifetime')}
+                  style={{
+                    padding: '10px 18px',
+                    borderRadius: 10,
+                    border: 'none',
+                    background: billingTab === 'lifetime' ? 'var(--brand-primary)' : 'transparent',
+                    color: billingTab === 'lifetime' ? '#ffffff' : 'var(--text-main)',
+                    fontWeight: 700,
+                    fontSize: '0.88rem',
+                    cursor: 'pointer',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: 8,
+                    transition: 'all 0.15s ease',
+                  }}
+                >
+                  <Crown size={15} />
+                  <span>{tAuth.pro_plan_lifetime_name || 'Lifetime Pass'} ($129)</span>
+                  <span
+                    style={{
+                      fontSize: '0.72rem',
+                      fontWeight: 900,
+                      padding: '2px 8px',
+                      borderRadius: 6,
+                      background: billingTab === 'lifetime' ? 'rgba(255,255,255,0.25)' : 'rgba(225,29,72,0.15)',
+                      color: billingTab === 'lifetime' ? '#ffffff' : 'var(--brand-primary)',
+                      letterSpacing: '0.04em',
+                    }}
+                  >
+                    {tAuth.pro_plan_best_value || 'BEST VALUE'}
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            {/* 2 Symmetrical Cards (Free Starter vs PRO Plan) */}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 28, alignItems: 'stretch' }}>
 
               {/* Card 1: Free Starter Plan */}
-              <div style={{ background: 'var(--bg-card)', borderRadius: 24, padding: 32, border: '1.5px solid var(--border-color)', position: 'relative', display: 'flex', flexDirection: 'column' }}>
+              <div style={{ background: 'var(--bg-card)', borderRadius: 24, padding: 32, border: '1.5px solid var(--border-color)', position: 'relative', display: 'flex', flexDirection: 'column', boxShadow: '0 4px 20px rgba(0,0,0,0.03)' }}>
                 <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 8 }}>
                   {tAuth.pro_plan_free_name || 'Free Starter'}
                 </h3>
                 <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: 20 }}>
                   {tAuth.pro_plan_free_desc || 'Essential private document tools for everyone'}
                 </p>
-                <div style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 24, lineHeight: 1 }}>
+                <div style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 8, lineHeight: 1 }}>
                   $0<span style={{ fontSize: '0.95rem', color: 'var(--text-muted)', fontWeight: 500 }}>{tPricing.period_forever}</span>
+                </div>
+                <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginBottom: 24 }}>
+                  {tAuth.pro_plan_free_period || 'Free Forever'}
                 </div>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 14, flex: 1 }}>
                   <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 600, fontSize: '0.88rem' }}><Check size={18} color="var(--brand-primary)" /> {t.pricingHmfItem1 || '100% Client-side processing'}</li>
@@ -98,7 +212,7 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
                   <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 600, fontSize: '0.88rem' }}><Check size={18} color="var(--brand-primary)" /> {t.pricingHmfItem3 || 'No account or credit card needed'}</li>
                   <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 600, fontSize: '0.88rem' }}><Check size={18} color="var(--brand-primary)" /> {t.pricingHmfItem4 || 'Instant WebAssembly speed'}</li>
                 </ul>
-                <div style={{ marginTop: 24 }}>
+                <div style={{ marginTop: 28 }}>
                   <button
                     type="button"
                     onClick={() => {
@@ -106,14 +220,15 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
                     }}
                     style={{
                       width: '100%',
-                      padding: '12px 16px',
+                      padding: '13px 16px',
                       borderRadius: 12,
                       background: 'var(--bg-app)',
-                      border: '1px solid var(--border-color)',
+                      border: '1.5px solid var(--border-color)',
                       color: 'var(--text-main)',
                       fontWeight: 700,
                       cursor: 'pointer',
-                      fontSize: '0.88rem',
+                      fontSize: '0.9rem',
+                      transition: 'all 0.15s ease',
                     }}
                   >
                     {tPricing.btn_use_free}
@@ -121,193 +236,128 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
                 </div>
               </div>
 
-              {/* Card 2: PRO Monthly ($9.99/mo) */}
-              <div style={{ background: 'var(--bg-card)', borderRadius: 24, padding: 32, border: '1.5px solid var(--border-color)', position: 'relative', display: 'flex', flexDirection: 'column' }}>
-                <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 8 }}>
-                  {tAuth.pro_plan_monthly_name || 'PRO Monthly'}
-                </h3>
-                <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: 20 }}>
-                  {tAuth.pro_plan_monthly_desc || 'Flexible monthly billing, cancel anytime in 1 click'}
-                </p>
-                <div style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 24, lineHeight: 1 }}>
-                  $9.99<span style={{ fontSize: '0.95rem', color: 'var(--text-muted)', fontWeight: 500 }}>{tPricing.period_mo}</span>
-                </div>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 14, flex: 1 }}>
-                  <li style={{ display: 'flex', gap: 10, alignItems: 'flex-start', color: 'var(--text-main)', fontWeight: 600, fontSize: '0.86rem' }}>
-                    <Sparkles size={16} color="var(--brand-primary)" style={{ flexShrink: 0, marginTop: 2 }} />
-                    <span><strong>4 Web Apps:</strong> HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR</span>
-                  </li>
-                  <li style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.86rem' }}>
-                    <Check size={16} color="var(--brand-primary)" style={{ flexShrink: 0 }} />
-                    <span>{tAuth.pro_benefit_unlimited_batch || 'Unlimited ultra-batch (100+ files)'}</span>
-                  </li>
-                  <li style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.86rem' }}>
-                    <Check size={16} color="var(--brand-primary)" style={{ flexShrink: 0 }} />
-                    <span>{tAuth.pro_benefit_custom_name || 'Custom output file renaming'}</span>
-                  </li>
-                  <li style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.86rem' }}>
-                    <Check size={16} color="var(--brand-primary)" style={{ flexShrink: 0 }} />
-                    <span>{tPricing.feature_priority_speed}</span>
-                  </li>
-                  <li style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.86rem' }}>
-                    <Check size={16} color="var(--brand-primary)" style={{ flexShrink: 0 }} />
-                    <span>{tPricing.feature_commercial_license}</span>
-                  </li>
-                </ul>
-                <div style={{ marginTop: 24 }}>
-                  <button
-                    type="button"
-                    onClick={() => handleBuyPlan('monthly')}
-                    style={{
-                      width: '100%',
-                      padding: '12px 16px',
-                      borderRadius: 12,
-                      background: 'var(--bg-app)',
-                      border: '1.5px solid var(--brand-primary)',
-                      color: 'var(--brand-primary)',
-                      fontWeight: 800,
-                      fontSize: '0.88rem',
-                      cursor: 'pointer',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      gap: 8,
-                    }}
-                  >
-                    <Crown size={16} />
-                    {!user
-                      ? (tAuth.pro_signin_subscribe_monthly_btn || 'Sign In & Subscribe Monthly')
-                      : (tAuth.pro_subscribe_monthly_btn || 'Subscribe Monthly ($9.99/mo)')}
-                  </button>
-                </div>
-              </div>
+              {/* Card 2: Dynamic PRO Plan */}
+              <div
+                style={{
+                  background: 'var(--bg-card)',
+                  borderRadius: 24,
+                  padding: 32,
+                  border: billingTab === 'yearly' ? '2px solid #10b981' : '2px solid var(--brand-primary)',
+                  position: 'relative',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  boxShadow: billingTab === 'yearly' ? '0 8px 30px rgba(16,185,129,0.12)' : '0 8px 30px rgba(225,29,72,0.12)',
+                }}
+              >
+                {/* Clean, Non-Stretched Badge */}
+                {billingTab === 'yearly' && (
+                  <div style={{ position: 'absolute', top: -14, left: '50%', transform: 'translateX(-50%)', background: '#10b981', color: '#fff', padding: '4px 18px', borderRadius: 100, fontWeight: 800, fontSize: '0.75rem', letterSpacing: '0.05em', whiteSpace: 'nowrap' }}>
+                    POPULAR • {tAuth.pro_plan_yearly_save || 'SAVE 34%'}
+                  </div>
+                )}
+                {billingTab === 'lifetime' && (
+                  <div style={{ position: 'absolute', top: -14, left: '50%', transform: 'translateX(-50%)', background: 'var(--brand-primary)', color: '#fff', padding: '4px 18px', borderRadius: 100, fontWeight: 800, fontSize: '0.75rem', letterSpacing: '0.05em', whiteSpace: 'nowrap' }}>
+                    {tAuth.pro_plan_best_value || 'BEST VALUE'}
+                  </div>
+                )}
 
-              {/* Card 3: PRO Yearly ($79/yr) - MOST POPULAR */}
-              <div style={{ background: 'var(--bg-card)', borderRadius: 24, padding: 32, border: '2px solid #10b981', position: 'relative', display: 'flex', flexDirection: 'column', boxShadow: '0 8px 30px rgba(0,0,0,0.06)' }}>
-                <div style={{ position: 'absolute', top: -14, left: '50%', transform: 'translateX(-50%)', background: '#10b981', color: '#fff', padding: '4px 18px', borderRadius: 100, fontWeight: 800, fontSize: '0.75rem', letterSpacing: '0.05em', whiteSpace: 'nowrap' }}>
-                  POPULAR • {tAuth.pro_plan_yearly_save || 'SAVE 34%'}
-                </div>
-                <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 8 }}>
-                  {tAuth.pro_plan_yearly_name || 'PRO Yearly'}
-                </h3>
-                <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: 12 }}>
-                  {tAuth.pro_plan_yearly_desc || 'Save 34% (was $119.88) • Just $6.58/mo billed annually'}
-                </p>
-                <div style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 8, lineHeight: 1 }}>
-                  $79<span style={{ fontSize: '0.95rem', color: 'var(--text-muted)', fontWeight: 500 }}>{tPricing.period_yr}</span>
-                </div>
-                <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginBottom: 20 }}>
-                  <span style={{ textDecoration: 'line-through', marginRight: 6, fontWeight: 600 }}>$119.88</span>
-                  <span style={{ color: '#10b981', fontWeight: 700 }}>{tPricing.approx_monthly}</span>
-                </div>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 14, flex: 1 }}>
-                  <li style={{ display: 'flex', gap: 10, alignItems: 'flex-start', color: 'var(--text-main)', fontWeight: 600, fontSize: '0.86rem' }}>
-                    <Sparkles size={16} color="#10b981" style={{ flexShrink: 0, marginTop: 2 }} />
-                    <span><strong>4 Web Apps:</strong> HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR</span>
-                  </li>
-                  <li style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.86rem' }}>
-                    <Check size={16} color="#10b981" style={{ flexShrink: 0 }} />
-                    <span>{tAuth.pro_benefit_unlimited_batch || 'Unlimited ultra-batch (100+ files)'}</span>
-                  </li>
-                  <li style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.86rem' }}>
-                    <Check size={16} color="#10b981" style={{ flexShrink: 0 }} />
-                    <span>{tAuth.pro_benefit_custom_name || 'Custom output file renaming'}</span>
-                  </li>
-                  <li style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.86rem' }}>
-                    <Check size={16} color="#10b981" style={{ flexShrink: 0 }} />
-                    <span>{tPricing.feature_priority_speed}</span>
-                  </li>
-                  <li style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.86rem' }}>
-                    <Check size={16} color="#10b981" style={{ flexShrink: 0 }} />
-                    <span>{tPricing.feature_continuous_updates}</span>
-                  </li>
-                </ul>
-                <div style={{ marginTop: 24 }}>
-                  <button
-                    type="button"
-                    onClick={() => handleBuyPlan('yearly')}
-                    style={{
-                      width: '100%',
-                      padding: '12px 16px',
-                      borderRadius: 12,
-                      background: '#10b981',
-                      border: 'none',
-                      color: '#ffffff',
-                      fontWeight: 800,
-                      fontSize: '0.88rem',
-                      cursor: 'pointer',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      gap: 8,
-                      boxShadow: '0 4px 14px rgba(16, 185, 129, 0.35)',
-                    }}
-                  >
-                    <Crown size={16} />
-                    {!user
-                      ? (tAuth.pro_signin_subscribe_yearly_btn || 'Sign In & Subscribe Yearly')
-                      : (tAuth.pro_subscribe_yearly_btn || 'Subscribe Yearly ($79/yr)')}
-                  </button>
-                </div>
-              </div>
-
-              {/* Card 4: Founder Lifetime Pass ($129) - BEST VALUE */}
-              <div style={{ background: 'var(--bg-card)', borderRadius: 24, padding: 32, border: '2px solid var(--brand-primary)', position: 'relative', display: 'flex', flexDirection: 'column', boxShadow: '0 8px 30px rgba(0,0,0,0.06)' }}>
-                <div style={{ position: 'absolute', top: -14, left: '50%', transform: 'translateX(-50%)', background: 'var(--brand-primary)', color: '#fff', padding: '4px 18px', borderRadius: 100, fontWeight: 800, fontSize: '0.75rem', letterSpacing: '0.05em', whiteSpace: 'nowrap' }}>
-                  {tAuth.pro_plan_best_value || 'BEST VALUE'} • {tAuth.pro_lifetime_apps_included || '4 WEBS + WINDOWS + APK'}
-                </div>
+                {/* Plan Header */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
-                  <Crown size={20} color="var(--brand-primary)" />
-                  <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: 'var(--brand-primary)', margin: 0 }}>
-                    {tAuth.pro_plan_lifetime_name || 'Founder Lifetime Pass'}
+                  <Crown size={20} color={billingTab === 'yearly' ? '#10b981' : 'var(--brand-primary)'} />
+                  <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: billingTab === 'yearly' ? '#10b981' : 'var(--brand-primary)', margin: 0 }}>
+                    {billingTab === 'monthly'
+                      ? (tAuth.pro_plan_monthly_name || 'PRO Monthly')
+                      : billingTab === 'yearly'
+                        ? (tAuth.pro_plan_yearly_name || 'PRO Yearly')
+                        : (tAuth.pro_plan_lifetime_name || 'Founder Lifetime Pass')}
                   </h3>
                 </div>
-                <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: 12 }}>
-                  {tAuth.pro_plan_lifetime_desc || 'Was $169 • Pay once, own forever • 4 Web Apps + Windows App + Mobile APK'}
+
+                <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: 16 }}>
+                  {billingTab === 'monthly'
+                    ? (tAuth.pro_plan_monthly_desc || 'Flexible monthly billing, cancel anytime in 1 click')
+                    : billingTab === 'yearly'
+                      ? (tAuth.pro_plan_yearly_desc || 'Save 34% (was $119.88) • Just $6.58/mo billed annually')
+                      : (tAuth.pro_plan_lifetime_desc || 'Was $169 • Pay once, own forever • 4 Web Apps + Desktop & Mobile Apps')}
                 </p>
-                <div style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 8, lineHeight: 1 }}>
-                  $129<span style={{ fontSize: '0.95rem', color: 'var(--text-muted)', fontWeight: 500 }}>{tPricing.period_once}</span>
+
+                {/* Price Display */}
+                <div style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 6, lineHeight: 1 }}>
+                  {billingTab === 'monthly' && (
+                    <>$9.99<span style={{ fontSize: '0.95rem', color: 'var(--text-muted)', fontWeight: 500 }}>{tPricing.period_mo}</span></>
+                  )}
+                  {billingTab === 'yearly' && (
+                    <>$79<span style={{ fontSize: '0.95rem', color: 'var(--text-muted)', fontWeight: 500 }}>{tPricing.period_yr}</span></>
+                  )}
+                  {billingTab === 'lifetime' && (
+                    <>$129<span style={{ fontSize: '0.95rem', color: 'var(--text-muted)', fontWeight: 500 }}>{tPricing.period_once}</span></>
+                  )}
                 </div>
-                <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginBottom: 20 }}>
-                  <span style={{ textDecoration: 'line-through', marginRight: 6, fontWeight: 600 }}>$169</span>
-                  <span style={{ color: 'var(--brand-primary)', fontWeight: 700 }}>{tPricing.zero_subs_forever}</span>
+
+                {/* Subprice / Strikethrough */}
+                <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginBottom: 24 }}>
+                  {billingTab === 'monthly' && (
+                    <span>{currentLang === 'id' ? 'Ditagih per bulan • Batalkan kapan saja' : 'Billed monthly • Cancel anytime'}</span>
+                  )}
+                  {billingTab === 'yearly' && (
+                    <>
+                      <span style={{ textDecoration: 'line-through', marginRight: 6, fontWeight: 600 }}>$119.88</span>
+                      <span style={{ color: '#10b981', fontWeight: 700 }}>{tPricing.approx_monthly}</span>
+                    </>
+                  )}
+                  {billingTab === 'lifetime' && (
+                    <>
+                      <span style={{ textDecoration: 'line-through', marginRight: 6, fontWeight: 600 }}>$169</span>
+                      <span style={{ color: 'var(--brand-primary)', fontWeight: 700 }}>{tPricing.zero_subs_forever}</span>
+                    </>
+                  )}
                 </div>
+
+                {/* Honest PRO Feature Checklist */}
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 14, flex: 1 }}>
-                  <li style={{ display: 'flex', gap: 10, alignItems: 'flex-start', color: 'var(--text-main)', fontWeight: 600, fontSize: '0.86rem' }}>
-                    <Sparkles size={16} color="var(--brand-primary)" style={{ flexShrink: 0, marginTop: 2 }} />
+                  <li style={{ display: 'flex', gap: 10, alignItems: 'flex-start', color: 'var(--text-main)', fontWeight: 600, fontSize: '0.88rem' }}>
+                    <Sparkles size={16} color={billingTab === 'yearly' ? '#10b981' : 'var(--brand-primary)'} style={{ flexShrink: 0, marginTop: 2 }} />
                     <span><strong>4 Web Apps:</strong> HandleMyFile + HelpMyIMG + SolveMyMedia + CreateMy-QR</span>
                   </li>
-                  <li style={{ display: 'flex', gap: 10, alignItems: 'flex-start', color: 'var(--text-main)', fontSize: '0.86rem' }}>
-                    <Check size={16} color="var(--brand-primary)" style={{ flexShrink: 0, marginTop: 2 }} />
-                    <span>{tPricing.feature_upcoming_native_apps}</span>
-                  </li>
-                  <li style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.86rem' }}>
-                    <Check size={16} color="var(--brand-primary)" style={{ flexShrink: 0 }} />
+                  {billingTab === 'lifetime' && (
+                    <li style={{ display: 'flex', gap: 10, alignItems: 'flex-start', color: 'var(--text-main)', fontWeight: 600, fontSize: '0.88rem' }}>
+                      <Check size={16} color="var(--brand-primary)" style={{ flexShrink: 0, marginTop: 2 }} />
+                      <span>{tPricing.feature_upcoming_native_apps}</span>
+                    </li>
+                  )}
+                  <li style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.88rem' }}>
+                    <Check size={16} color={billingTab === 'yearly' ? '#10b981' : 'var(--brand-primary)'} style={{ flexShrink: 0 }} />
                     <span>{tAuth.pro_benefit_unlimited_batch || 'Unlimited ultra-batch (100+ files)'}</span>
                   </li>
-                  <li style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.86rem' }}>
-                    <Check size={16} color="var(--brand-primary)" style={{ flexShrink: 0 }} />
+                  <li style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.88rem' }}>
+                    <Check size={16} color={billingTab === 'yearly' ? '#10b981' : 'var(--brand-primary)'} style={{ flexShrink: 0 }} />
                     <span>{tAuth.pro_benefit_custom_name || 'Custom output file renaming'}</span>
                   </li>
-                  <li style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.86rem' }}>
-                    <Check size={16} color="var(--brand-primary)" style={{ flexShrink: 0 }} />
-                    <span>{tPricing.feature_zero_renewals}</span>
+                  <li style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.88rem' }}>
+                    <Check size={16} color={billingTab === 'yearly' ? '#10b981' : 'var(--brand-primary)'} style={{ flexShrink: 0 }} />
+                    <span>{tPricing.feature_priority_speed}</span>
+                  </li>
+                  <li style={{ display: 'flex', gap: 10, alignItems: 'center', color: 'var(--text-main)', fontSize: '0.88rem' }}>
+                    <Check size={16} color={billingTab === 'yearly' ? '#10b981' : 'var(--brand-primary)'} style={{ flexShrink: 0 }} />
+                    <span>{billingTab === 'lifetime' ? tPricing.feature_zero_renewals : tPricing.feature_commercial_license}</span>
                   </li>
                 </ul>
-                <div style={{ marginTop: 24 }}>
+
+                {/* Primary CTA Button */}
+                <div style={{ marginTop: 28 }}>
                   {isPro ? (
                     <button
                       type="button"
                       disabled
                       style={{
                         width: '100%',
-                        padding: '12px 16px',
+                        padding: '13px 16px',
                         borderRadius: 12,
                         background: '#22c55e',
                         border: 'none',
                         color: '#ffffff',
                         fontWeight: 700,
-                        fontSize: '0.88rem',
+                        fontSize: '0.9rem',
                         cursor: 'default',
                         display: 'flex',
                         alignItems: 'center',
@@ -321,28 +371,41 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
                   ) : (
                     <button
                       type="button"
-                      onClick={() => handleBuyPlan('lifetime')}
+                      onClick={() => handleBuyPlan(billingTab)}
                       style={{
                         width: '100%',
-                        padding: '12px 16px',
+                        padding: '13px 16px',
                         borderRadius: 12,
-                        background: 'var(--brand-primary)',
+                        background: billingTab === 'yearly' ? '#10b981' : 'var(--brand-primary)',
                         border: 'none',
                         color: '#ffffff',
                         fontWeight: 700,
-                        fontSize: '0.88rem',
+                        fontSize: '0.9rem',
                         cursor: 'pointer',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
                         gap: 8,
-                        boxShadow: '0 4px 14px rgba(225, 29, 72, 0.35)',
+                        boxShadow: billingTab === 'yearly' ? '0 4px 14px rgba(16, 185, 129, 0.35)' : '0 4px 14px rgba(225, 29, 72, 0.35)',
+                        transition: 'all 0.15s ease',
                       }}
                     >
                       <Crown size={18} />
-                      {!user
-                        ? (tAuth.pro_signin_get_pass || 'Sign In & Get Lifetime Pass')
-                        : (tAuth.pro_get_lifetime_pass || 'Get Lifetime Pass ($129)')}
+                      {billingTab === 'monthly' && (
+                        !user
+                          ? (tAuth.pro_signin_subscribe_monthly_btn || 'Sign In & Subscribe Monthly')
+                          : (tAuth.pro_subscribe_monthly_btn || 'Subscribe Monthly ($9.99/mo)')
+                      )}
+                      {billingTab === 'yearly' && (
+                        !user
+                          ? (tAuth.pro_signin_subscribe_yearly_btn || 'Sign In & Subscribe Yearly')
+                          : (tAuth.pro_subscribe_yearly_btn || 'Subscribe Yearly ($79/yr)')
+                      )}
+                      {billingTab === 'lifetime' && (
+                        !user
+                          ? (tAuth.pro_signin_get_pass || 'Sign In & Get Lifetime Pass')
+                          : (tAuth.pro_get_lifetime_pass || 'Get Lifetime Pass ($129)')
+                      )}
                     </button>
                   )}
                 </div>
