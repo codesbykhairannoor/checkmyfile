@@ -13,7 +13,7 @@ import { getToolById, type ToolDefinition } from '../../catalog/toolsCatalog';
 import { toolNames } from '../../i18n/slugTranslations';
 import { UI_TRANSLATIONS } from '../../i18n/translations';
 import { authTranslations } from '../../i18n/authTranslations';
-import { getLanguageByCode } from '../../i18n/languages';
+import { getLanguageByCode, SUPPORTED_LANGUAGES } from '../../i18n/languages';
 import { useAuth } from '../../context/AuthContext';
 
 interface NavbarProps {
@@ -54,6 +54,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   const [isMobileLangOpen, setIsMobileLangOpen] = useState(false);
   const [isMegaOpen, setIsMegaOpen] = useState(false);
   const [isSuiteOpen, setIsSuiteOpen] = useState(false);
+  const [isSuiteLangSelectOpen, setIsSuiteLangSelectOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMobileAllOpen, setIsMobileAllOpen] = useState(false);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
@@ -115,6 +116,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       if (navRef.current && !navRef.current.contains(e.target as Node)) {
         setIsMegaOpen(false);
         setIsSuiteOpen(false);
+        setIsSuiteLangSelectOpen(false);
         setIsMobileMenuOpen(false);
         setIsUserMenuOpen(false);
       }
@@ -142,606 +144,17 @@ export const Navbar: React.FC<NavbarProps> = ({
         padding: '0 24px',
         maxWidth: 1440, margin: '0 auto',
         display: 'flex', alignItems: 'center',
-        justifyContent: 'space-between', height: 60,
+        justifyContent: 'space-between', height: 68,
         position: 'relative'
       }}>
 
-        {/* Left: Logo & Suite Hub Switcher */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 14, flexShrink: 0 }}>
-
-          {/* Brand */}
+        {/* Left: Brand Logo */}
+        <div style={{ display: 'flex', alignItems: 'center', flexShrink: 0 }}>
           <div onClick={onNavigateHome} aria-label="Navigate to Home" style={{ display: 'flex', alignItems: 'center', gap: 12, cursor: 'pointer', userSelect: 'none', flexShrink: 0 }}>
-            <img src="/logo.png" alt="HandleMyFile Logo" style={{ height: 38, width: 'auto', objectFit: 'contain' }} />
-            <div className="brand-title" style={{ fontSize: '1.35rem', fontWeight: 800, letterSpacing: '-0.02em', lineHeight: 1.1, fontFamily: 'var(--font-heading)' }}>
+            <img src="/logo.png" alt="HandleMyFile Logo" style={{ height: 40, width: 'auto', objectFit: 'contain' }} />
+            <div className="brand-title" style={{ fontSize: '1.4rem', fontWeight: 800, letterSpacing: '-0.02em', lineHeight: 1.1, fontFamily: 'var(--font-heading)' }}>
               HandleMy<span className="gradient-text">File</span>
             </div>
-          </div>
-
-          {/* Suite Switcher Pill (Desktop) */}
-          <div
-            style={{ position: 'relative' }}
-            className="desktop-only"
-            onMouseEnter={handleSuiteEnter}
-            onMouseLeave={handleSuiteLeave}
-          >
-            <button
-              onClick={() => {
-                setIsSuiteOpen(!isSuiteOpen);
-                setIsMegaOpen(false);
-                setIsUserMenuOpen(false);
-                setIsDesktopLangOpen(false);
-              }}
-              aria-label="Privacy Suite Ecosystem"
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: 7,
-                padding: '6px 12px',
-                borderRadius: 8,
-                background: isSuiteOpen ? 'rgba(225, 29, 72, 0.08)' : 'var(--bg-card)',
-                border: isSuiteOpen ? '1px solid var(--brand-primary)' : '1px solid var(--border-color)',
-                color: 'var(--text-main)',
-                fontSize: '0.84rem',
-                fontWeight: 700,
-                cursor: 'pointer',
-                transition: 'all 0.15s ease',
-              }}
-            >
-              <Boxes size={15} color="var(--brand-primary)" />
-              <span>Suite</span>
-              <span
-                style={{
-                  fontSize: '0.64rem',
-                  fontWeight: 900,
-                  letterSpacing: '0.04em',
-                  padding: '1px 6px',
-                  borderRadius: 4,
-                  background: 'rgba(225, 29, 72, 0.12)',
-                  color: 'var(--brand-primary)',
-                  textTransform: 'uppercase',
-                }}
-              >
-                4 Apps
-              </span>
-              <ChevronDown
-                size={13}
-                style={{
-                  transform: isSuiteOpen ? 'rotate(180deg)' : 'none',
-                  transition: 'transform 0.2s ease',
-                  color: 'var(--text-muted)',
-                }}
-              />
-            </button>
-
-            {/* 🌟 SUITE ECOSYSTEM DROPDOWN FLYOUT 🌟 */}
-            {isSuiteOpen && (
-              <div
-                onMouseEnter={handleSuiteEnter}
-                onMouseLeave={handleSuiteLeave}
-                className="suite-flyout-card"
-                style={{
-                  position: 'absolute',
-                  top: 'calc(100% + 8px)',
-                  left: 0,
-                  width: 780,
-                  background: 'var(--bg-card)',
-                  border: '1px solid var(--border-color)',
-                  borderRadius: 14,
-                  boxShadow: '0 20px 48px rgba(0,0,0,0.22)',
-                  padding: '20px',
-                  zIndex: 250,
-                  animation: 'fadeInDown 0.15s ease',
-                  fontFamily: 'var(--font-main)',
-                }}
-              >
-                {/* Header banner */}
-                <div
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    paddingBottom: 14,
-                    borderBottom: '1px solid var(--border-color)',
-                    marginBottom: 16,
-                  }}
-                >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                    <div
-                      style={{
-                        width: 32,
-                        height: 32,
-                        borderRadius: 8,
-                        background: 'rgba(225,29,72,0.1)',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        color: 'var(--brand-primary)',
-                      }}
-                    >
-                      <Boxes size={18} />
-                    </div>
-                    <div>
-                      <div style={{ fontSize: '0.92rem', fontWeight: 800, color: 'var(--text-main)', letterSpacing: '-0.01em' }}>
-                        The Privacy Suite Ecosystem
-                      </div>
-                      <div style={{ fontSize: '0.74rem', color: 'var(--text-muted)' }}>
-                        {currentLang === 'id'
-                          ? '1 Akun & 1 Pass Membuka Semua 4 Web Apps + Desktop & Mobile'
-                          : '1 Account & 1 Pass Unlocks All 4 Web Apps + Desktop & Mobile'}
-                      </div>
-                    </div>
-                  </div>
-                  <a
-                    href={currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setIsSuiteOpen(false);
-                      window.history.pushState({}, '', currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`);
-                      window.dispatchEvent(new PopStateEvent('popstate'));
-                    }}
-                    style={{
-                      display: 'inline-flex',
-                      alignItems: 'center',
-                      gap: 6,
-                      padding: '5px 12px',
-                      borderRadius: 6,
-                      background: '#fef3c7',
-                      color: '#b45309',
-                      border: '1px solid #fde68a',
-                      fontSize: '0.76rem',
-                      fontWeight: 800,
-                      textDecoration: 'none',
-                      cursor: 'pointer',
-                    }}
-                  >
-                    <Crown size={13} color="#b45309" />
-                    <span>{currentLang === 'id' ? 'Founder Pass $129' : 'Founder Pass $129'}</span>
-                  </a>
-                </div>
-
-                {/* 3-Column Grid */}
-                <div style={{ display: 'grid', gridTemplateColumns: '1.25fr 1fr 1fr', gap: 18 }}>
-
-                  {/* Col 1: Web Applications (The 4 Web Apps) */}
-                  <div>
-                    <div style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--text-accent)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 10 }}>
-                      {currentLang === 'id' ? '🌐 4 Web Applications' : '🌐 4 Web Applications'}
-                    </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
-                      {/* App 1: HandleMyFile */}
-                      <div
-                        onClick={() => {
-                          setIsSuiteOpen(false);
-                          onNavigateHome();
-                        }}
-                        style={{
-                          display: 'flex',
-                          alignItems: 'center',
-                          gap: 10,
-                          padding: '8px 10px',
-                          borderRadius: 8,
-                          background: 'rgba(225,29,72,0.06)',
-                          border: '1px solid rgba(225,29,72,0.25)',
-                          cursor: 'pointer',
-                          transition: 'all 0.15s ease',
-                        }}
-                      >
-                        <div style={{ width: 28, height: 28, borderRadius: 6, background: 'var(--brand-primary)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                          <FileText size={15} />
-                        </div>
-                        <div style={{ flex: 1, minWidth: 0 }}>
-                          <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-                            <span style={{ fontSize: '0.84rem', fontWeight: 800, color: 'var(--text-main)' }}>HandleMyFile</span>
-                            <span style={{ fontSize: '0.62rem', fontWeight: 800, padding: '1px 5px', borderRadius: 4, background: '#10b981', color: '#fff' }}>
-                              {currentLang === 'id' ? 'Aktif' : 'Current'}
-                            </span>
-                          </div>
-                          <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                            {currentLang === 'id' ? 'PDF, Dokumen & Scan Tools' : 'PDF, Document & Scan Tools'}
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* App 2: HelpMyIMG */}
-                      <a
-                        href="https://helpmyimg.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{
-                          display: 'flex',
-                          alignItems: 'center',
-                          gap: 10,
-                          padding: '8px 10px',
-                          borderRadius: 8,
-                          background: 'var(--bg-app)',
-                          border: '1px solid var(--border-color)',
-                          textDecoration: 'none',
-                          cursor: 'pointer',
-                          transition: 'all 0.15s ease',
-                        }}
-                        onMouseEnter={(e) => {
-                          e.currentTarget.style.borderColor = 'rgba(59, 130, 246, 0.4)';
-                          e.currentTarget.style.background = 'rgba(59, 130, 246, 0.05)';
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.borderColor = 'var(--border-color)';
-                          e.currentTarget.style.background = 'var(--bg-app)';
-                        }}
-                      >
-                        <div style={{ width: 28, height: 28, borderRadius: 6, background: '#3b82f6', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                          <Sparkles size={15} />
-                        </div>
-                        <div style={{ flex: 1, minWidth: 0 }}>
-                          <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-                            <span style={{ fontSize: '0.84rem', fontWeight: 800, color: 'var(--text-main)' }}>HelpMyIMG</span>
-                            <ExternalLink size={11} color="var(--text-muted)" />
-                          </div>
-                          <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                            {currentLang === 'id' ? 'AI Photo & In-Browser Editor' : 'AI Photo & In-Browser Editor'}
-                          </div>
-                        </div>
-                      </a>
-
-                      {/* App 3: SolveMyMedia */}
-                      <a
-                        href="https://solvemymedia.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{
-                          display: 'flex',
-                          alignItems: 'center',
-                          gap: 10,
-                          padding: '8px 10px',
-                          borderRadius: 8,
-                          background: 'var(--bg-app)',
-                          border: '1px solid var(--border-color)',
-                          textDecoration: 'none',
-                          cursor: 'pointer',
-                          transition: 'all 0.15s ease',
-                        }}
-                        onMouseEnter={(e) => {
-                          e.currentTarget.style.borderColor = 'rgba(168, 85, 247, 0.4)';
-                          e.currentTarget.style.background = 'rgba(168, 85, 247, 0.05)';
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.borderColor = 'var(--border-color)';
-                          e.currentTarget.style.background = 'var(--bg-app)';
-                        }}
-                      >
-                        <div style={{ width: 28, height: 28, borderRadius: 6, background: '#a855f7', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                          <Film size={15} />
-                        </div>
-                        <div style={{ flex: 1, minWidth: 0 }}>
-                          <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-                            <span style={{ fontSize: '0.84rem', fontWeight: 800, color: 'var(--text-main)' }}>SolveMyMedia</span>
-                            <ExternalLink size={11} color="var(--text-muted)" />
-                          </div>
-                          <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                            {currentLang === 'id' ? 'Lossless Video & Audio Engine' : 'Lossless Video & Audio Engine'}
-                          </div>
-                        </div>
-                      </a>
-
-                      {/* App 4: CreateMy-QR */}
-                      <a
-                        href="https://createmy-qr.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{
-                          display: 'flex',
-                          alignItems: 'center',
-                          gap: 10,
-                          padding: '8px 10px',
-                          borderRadius: 8,
-                          background: 'var(--bg-app)',
-                          border: '1px solid var(--border-color)',
-                          textDecoration: 'none',
-                          cursor: 'pointer',
-                          transition: 'all 0.15s ease',
-                        }}
-                        onMouseEnter={(e) => {
-                          e.currentTarget.style.borderColor = 'rgba(245, 158, 11, 0.4)';
-                          e.currentTarget.style.background = 'rgba(245, 158, 11, 0.05)';
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.borderColor = 'var(--border-color)';
-                          e.currentTarget.style.background = 'var(--bg-app)';
-                        }}
-                      >
-                        <div style={{ width: 28, height: 28, borderRadius: 6, background: '#f59e0b', color: '#000', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                          <QrCode size={15} />
-                        </div>
-                        <div style={{ flex: 1, minWidth: 0 }}>
-                          <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-                            <span style={{ fontSize: '0.84rem', fontWeight: 800, color: 'var(--text-main)' }}>CreateMy-QR</span>
-                            <ExternalLink size={11} color="var(--text-muted)" />
-                          </div>
-                          <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                            {currentLang === 'id' ? 'Vector & Dynamic Barcodes' : 'Vector & Dynamic Barcodes'}
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-
-                  {/* Col 2: Native Platforms & Founder Pass */}
-                  <div>
-                    <div style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--text-accent)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 10 }}>
-                      {currentLang === 'id' ? '💻 Native Clients' : '💻 Native Clients'}
-                    </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: 6, marginBottom: 12 }}>
-                      {/* Windows Desktop */}
-                      <div
-                        style={{
-                          display: 'flex',
-                          alignItems: 'center',
-                          gap: 9,
-                          padding: '8px 10px',
-                          borderRadius: 8,
-                          background: 'var(--bg-app)',
-                          border: '1px solid var(--border-color)',
-                        }}
-                      >
-                        <div style={{ width: 26, height: 26, borderRadius: 6, background: 'rgba(255,255,255,0.08)', color: 'var(--text-main)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, border: '1px solid var(--border-color)' }}>
-                          <Monitor size={14} />
-                        </div>
-                        <div style={{ flex: 1, minWidth: 0 }}>
-                          <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-                            <span style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--text-main)' }}>Windows Client</span>
-                            <span style={{ fontSize: '0.62rem', fontWeight: 800, padding: '1px 4px', borderRadius: 4, background: 'rgba(16,185,129,0.15)', color: '#10b981' }}>
-                              Offline
-                            </span>
-                          </div>
-                          <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>
-                            {currentLang === 'id' ? 'Native 64-bit .exe engine' : 'Native 64-bit .exe engine'}
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* Android App */}
-                      <div
-                        style={{
-                          display: 'flex',
-                          alignItems: 'center',
-                          gap: 9,
-                          padding: '8px 10px',
-                          borderRadius: 8,
-                          background: 'var(--bg-app)',
-                          border: '1px solid var(--border-color)',
-                        }}
-                      >
-                        <div style={{ width: 26, height: 26, borderRadius: 6, background: 'rgba(255,255,255,0.08)', color: 'var(--text-main)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, border: '1px solid var(--border-color)' }}>
-                          <Smartphone size={14} />
-                        </div>
-                        <div style={{ flex: 1, minWidth: 0 }}>
-                          <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-                            <span style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--text-main)' }}>Android App</span>
-                            <span style={{ fontSize: '0.62rem', fontWeight: 800, padding: '1px 4px', borderRadius: 4, background: 'rgba(59,130,246,0.15)', color: '#3b82f6' }}>
-                              APK
-                            </span>
-                          </div>
-                          <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>
-                            {currentLang === 'id' ? 'Pemrosesan lokal tanpa upload' : 'Zero-upload on-device'}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Founder Pass Mini Card */}
-                    <div
-                      style={{
-                        padding: '10px 12px',
-                        borderRadius: 8,
-                        background: 'rgba(245, 158, 11, 0.08)',
-                        border: '1px solid rgba(245, 158, 11, 0.3)',
-                      }}
-                    >
-                      <div style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: '0.78rem', fontWeight: 800, color: '#f59e0b' }}>
-                        <Crown size={13} />
-                        <span>{currentLang === 'id' ? 'Akses Seumur Hidup' : 'Lifetime Suite Pass'}</span>
-                      </div>
-                      <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)', marginTop: 3, lineHeight: 1.35 }}>
-                        {currentLang === 'id'
-                          ? 'Bayar 1x $129 untuk akses selamanya ke 4 web apps + Windows & Android apps.'
-                          : 'One-time $129 pass covers all 4 web apps plus Windows & Android apps forever.'}
-                      </div>
-                      <a
-                        href={currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setIsSuiteOpen(false);
-                          window.history.pushState({}, '', currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`);
-                          window.dispatchEvent(new PopStateEvent('popstate'));
-                        }}
-                        style={{
-                          display: 'inline-flex',
-                          alignItems: 'center',
-                          gap: 4,
-                          marginTop: 8,
-                          fontSize: '0.72rem',
-                          fontWeight: 800,
-                          color: '#f59e0b',
-                          textDecoration: 'none',
-                        }}
-                      >
-                        <span>{currentLang === 'id' ? 'Lihat Rincian Paket' : 'View Pass Details'}</span>
-                        <ArrowRight size={11} />
-                      </a>
-                    </div>
-                  </div>
-
-                  {/* Col 3: Preferences & Utilities (Dark Mode + Language + Trust) */}
-                  <div>
-                    <div style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--text-accent)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 10 }}>
-                      {currentLang === 'id' ? '⚙️ Preferensi' : '⚙️ Preferences'}
-                    </div>
-
-                    {/* Theme Mode Segmented Button */}
-                    <div style={{ marginBottom: 14 }}>
-                      <div style={{ fontSize: '0.74rem', fontWeight: 700, color: 'var(--text-muted)', marginBottom: 6 }}>
-                        {currentLang === 'id' ? 'Mode Tampilan' : 'Appearance'}
-                      </div>
-                      <div
-                        style={{
-                          display: 'grid',
-                          gridTemplateColumns: '1fr 1fr',
-                          gap: 4,
-                          background: 'var(--bg-app)',
-                          padding: 3,
-                          borderRadius: 8,
-                          border: '1px solid var(--border-color)',
-                        }}
-                      >
-                        <button
-                          onClick={() => { if (!isLightMode) onToggleTheme(); }}
-                          style={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            gap: 5,
-                            padding: '6px 8px',
-                            borderRadius: 6,
-                            border: isLightMode ? '1px solid #f59e0b' : 'none',
-                            background: isLightMode ? '#fef3c7' : 'transparent',
-                            color: isLightMode ? '#b45309' : 'var(--text-muted)',
-                            fontWeight: 700,
-                            fontSize: '0.75rem',
-                            cursor: 'pointer',
-                            transition: 'all 0.15s ease',
-                          }}
-                        >
-                          <Sun size={13} color={isLightMode ? '#d97706' : 'var(--text-muted)'} />
-                          <span>{currentLang === 'id' ? 'Terang' : 'Light'}</span>
-                        </button>
-                        <button
-                          onClick={() => { if (isLightMode) onToggleTheme(); }}
-                          style={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            gap: 5,
-                            padding: '6px 8px',
-                            borderRadius: 6,
-                            border: !isLightMode ? '1px solid #6366f1' : 'none',
-                            background: !isLightMode ? '#1e1b4b' : 'transparent',
-                            color: !isLightMode ? '#c084fc' : 'var(--text-muted)',
-                            fontWeight: 700,
-                            fontSize: '0.75rem',
-                            cursor: 'pointer',
-                            transition: 'all 0.15s ease',
-                          }}
-                        >
-                          <Moon size={13} color={!isLightMode ? '#a855f7' : 'var(--text-muted)'} />
-                          <span>{currentLang === 'id' ? 'Gelap' : 'Dark'}</span>
-                        </button>
-                      </div>
-                    </div>
-
-                    {/* Language Selector */}
-                    <div style={{ marginBottom: 14 }}>
-                      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 6 }}>
-                        <span style={{ fontSize: '0.74rem', fontWeight: 700, color: 'var(--text-muted)' }}>
-                          {currentLang === 'id' ? 'Bahasa' : 'Language'}
-                        </span>
-                        <span style={{ fontSize: '0.7rem', color: 'var(--text-accent)', fontWeight: 700 }}>
-                          {getLanguageByCode(currentLang).flag} {getLanguageByCode(currentLang).nativeName}
-                        </span>
-                      </div>
-                      {/* Top 6 Popular Languages Chips */}
-                      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 4, marginBottom: 6 }}>
-                        {[
-                          { code: 'en', flag: '🇺🇸', label: 'EN' },
-                          { code: 'id', flag: '🇮🇩', label: 'ID' },
-                          { code: 'es', flag: '🇪🇸', label: 'ES' },
-                          { code: 'fr', flag: '🇫🇷', label: 'FR' },
-                          { code: 'de', flag: '🇩🇪', label: 'DE' },
-                          { code: 'ja', flag: '🇯🇵', label: 'JA' },
-                        ].map((lang) => (
-                          <button
-                            key={lang.code}
-                            onClick={() => onSelectLang(lang.code)}
-                            style={{
-                              padding: '5px 4px',
-                              borderRadius: 6,
-                              border: currentLang === lang.code ? '1px solid var(--brand-primary)' : '1px solid var(--border-color)',
-                              background: currentLang === lang.code ? 'rgba(225,29,72,0.1)' : 'var(--bg-app)',
-                              color: currentLang === lang.code ? 'var(--brand-primary)' : 'var(--text-main)',
-                              fontSize: '0.72rem',
-                              fontWeight: 700,
-                              cursor: 'pointer',
-                              display: 'flex',
-                              alignItems: 'center',
-                              justifyContent: 'center',
-                              gap: 4,
-                              transition: 'all 0.15s ease',
-                            }}
-                          >
-                            <span>{lang.flag}</span>
-                            <span>{lang.label}</span>
-                          </button>
-                        ))}
-                      </div>
-                      {/* Button to open full 30-language selector */}
-                      <button
-                        onClick={() => {
-                          setIsSuiteOpen(false);
-                          setIsDesktopLangOpen(true);
-                        }}
-                        style={{
-                          width: '100%',
-                          padding: '6px 8px',
-                          borderRadius: 6,
-                          border: '1px dashed var(--border-color)',
-                          background: 'transparent',
-                          color: 'var(--text-muted)',
-                          fontSize: '0.72rem',
-                          fontWeight: 600,
-                          cursor: 'pointer',
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          gap: 6,
-                        }}
-                      >
-                        <Globe size={13} />
-                        <span>{currentLang === 'id' ? 'Pilih Semua 30 Bahasa...' : 'Browse 30 Languages...'}</span>
-                      </button>
-                    </div>
-
-                    {/* Quick Trust Links */}
-                    <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: 10, display: 'flex', flexDirection: 'column', gap: 6 }}>
-                      <a
-                        href={currentLang === 'en' ? '/privacy' : `/${currentLang}/privacy`}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setIsSuiteOpen(false);
-                          window.history.pushState({}, '', currentLang === 'en' ? '/privacy' : `/${currentLang}/privacy`);
-                          window.dispatchEvent(new PopStateEvent('popstate'));
-                        }}
-                        style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: '0.73rem', color: 'var(--text-muted)', textDecoration: 'none' }}
-                      >
-                        <ShieldCheck size={13} color="#10b981" />
-                        <span>{currentLang === 'id' ? 'Privasi: 0% Server Upload' : 'Zero-Server Privacy'}</span>
-                      </a>
-                      <a
-                        href={currentLang === 'en' ? '/tos' : `/${currentLang}/tos`}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setIsSuiteOpen(false);
-                          window.history.pushState({}, '', currentLang === 'en' ? '/tos' : `/${currentLang}/tos`);
-                          window.dispatchEvent(new PopStateEvent('popstate'));
-                        }}
-                        style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: '0.73rem', color: 'var(--text-muted)', textDecoration: 'none' }}
-                      >
-                        <FileText size={13} color="var(--text-muted)" />
-                        <span>{currentLang === 'id' ? 'Syarat & Ketentuan Suite' : 'Terms of Service'}</span>
-                      </a>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            )}
           </div>
         </div>
 
@@ -789,7 +202,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 onMouseLeave={handleMegaLeave}
                 style={{
                   position: 'fixed',
-                  top: 60, left: 0, right: 0,
+                  top: 68, left: 0, right: 0,
                   background: 'var(--bg-card)',
                   borderBottom: '2px solid var(--brand-primary)',
                   boxShadow: '0 24px 60px rgba(0,0,0,0.35)',
@@ -860,8 +273,8 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
         </nav>
 
-        {/* Right: Theme + Lang + Mobile Nav */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexShrink: 0, justifyContent: 'flex-end' }}>
+        {/* Right: Pricing + Auth + 9-Dot Launcher */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 14, flexShrink: 0, justifyContent: 'flex-end' }}>
           <div className="desktop-only" style={{ display: 'flex', alignItems: 'center', gap: 12, flexShrink: 0 }}>
             {/* Desktop Pricing Link */}
             <a
@@ -875,9 +288,9 @@ export const Navbar: React.FC<NavbarProps> = ({
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: 6,
-                padding: '6px 12px',
+                padding: '7px 14px',
                 borderRadius: 8,
-                fontSize: '0.88rem',
+                fontSize: '0.9rem',
                 fontWeight: 700,
                 color: 'var(--text-main)',
                 textDecoration: 'none',
@@ -893,36 +306,21 @@ export const Navbar: React.FC<NavbarProps> = ({
                 e.currentTarget.style.background = 'transparent';
               }}
             >
-              <Crown size={15} color="#f59e0b" style={{ flexShrink: 0 }} />
+              <Crown size={16} color="#f59e0b" style={{ flexShrink: 0 }} />
               <span>{t.footerPricing || 'Pricing'}</span>
             </a>
-
-            <button
-              onClick={onToggleTheme}
-              style={{ width: 36, height: 36, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: isLightMode ? '#fef3c7' : '#1e1b4b', color: isLightMode ? '#d97706' : '#a855f7', border: `1.5px solid ${isLightMode ? '#f59e0b' : '#6366f1'}`, cursor: 'pointer', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', transition: 'all 0.2s', flexShrink: 0 }}
-              title={isLightMode ? 'Dark Mode' : 'Light Mode'}
-            >
-              {isLightMode ? <Moon size={16} /> : <Sun size={16} />}
-            </button>
-            <LocaleSwitcher
-              currentLang={currentLang}
-              onSelectLang={onSelectLang}
-              isOpen={isDesktopLangOpen}
-              onClose={() => setIsDesktopLangOpen(false)}
-              onOpen={() => setIsDesktopLangOpen(true)}
-            />
 
             {/* Desktop Auth Button / User Dropdown */}
             {!user ? (
               <button
                 onClick={openAuthModal}
                 style={{
-                  padding: '7px 18px',
+                  padding: '8px 20px',
                   borderRadius: 8,
                   background: 'var(--brand-primary)',
                   color: '#ffffff',
                   border: 'none',
-                  fontSize: '0.85rem',
+                  fontSize: '0.86rem',
                   fontWeight: 700,
                   cursor: 'pointer',
                   display: 'inline-flex',
@@ -1097,6 +495,610 @@ export const Navbar: React.FC<NavbarProps> = ({
                 )}
               </div>
             )}
+
+            {/* 🌟 9-DOT WAFFLE LAUNCHER (iLovePDF Style) 🌟 */}
+            <div
+              style={{ position: 'relative' }}
+              ref={suiteRef}
+              onMouseEnter={handleSuiteEnter}
+              onMouseLeave={handleSuiteLeave}
+            >
+              <button
+                onClick={() => {
+                  setIsSuiteOpen(!isSuiteOpen);
+                  setIsMegaOpen(false);
+                  setIsUserMenuOpen(false);
+                }}
+                aria-label="Apps and Preferences Launcher"
+                title={currentLang === 'id' ? 'Aplikasi & Pengaturan' : 'Apps & Preferences'}
+                style={{
+                  width: 38,
+                  height: 38,
+                  borderRadius: 8,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  background: isSuiteOpen ? 'rgba(225, 29, 72, 0.1)' : 'transparent',
+                  color: isSuiteOpen ? 'var(--brand-primary)' : 'var(--text-main)',
+                  border: isSuiteOpen ? '1px solid var(--brand-primary)' : '1px solid var(--border-color)',
+                  cursor: 'pointer',
+                  transition: 'all 0.15s ease',
+                }}
+                onMouseEnter={(e) => {
+                  if (!isSuiteOpen) {
+                    e.currentTarget.style.background = 'var(--bg-card)';
+                    e.currentTarget.style.borderColor = 'var(--border-color)';
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (!isSuiteOpen) {
+                    e.currentTarget.style.background = 'transparent';
+                    e.currentTarget.style.borderColor = 'var(--border-color)';
+                  }
+                }}
+              >
+                {/* 3x3 Grid Dots SVG */}
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <circle cx="4.5" cy="4.5" r="2" />
+                  <circle cx="12" cy="4.5" r="2" />
+                  <circle cx="19.5" cy="4.5" r="2" />
+                  <circle cx="4.5" cy="12" r="2" />
+                  <circle cx="12" cy="12" r="2" />
+                  <circle cx="19.5" cy="12" r="2" />
+                  <circle cx="4.5" cy="19.5" r="2" />
+                  <circle cx="12" cy="19.5" r="2" />
+                  <circle cx="19.5" cy="19.5" r="2" />
+                </svg>
+              </button>
+
+              {/* Dropdown Menu anchored to the RIGHT */}
+              {isSuiteOpen && (
+                <div
+                  onMouseEnter={handleSuiteEnter}
+                  onMouseLeave={handleSuiteLeave}
+                  className="suite-flyout-card"
+                  style={{
+                    position: 'absolute',
+                    top: 'calc(100% + 14px)',
+                    right: 0,
+                    width: 820,
+                    maxWidth: 'calc(100vw - 32px)',
+                    background: 'var(--bg-card)',
+                    border: '1px solid var(--border-color)',
+                    borderRadius: 14,
+                    boxShadow: '0 20px 48px rgba(0,0,0,0.22)',
+                    padding: '22px 24px',
+                    zIndex: 250,
+                    animation: 'fadeInDown 0.15s ease',
+                    fontFamily: 'var(--font-main)',
+                  }}
+                >
+                  {/* Header banner */}
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      paddingBottom: 14,
+                      borderBottom: '1px solid var(--border-color)',
+                      marginBottom: 16,
+                    }}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                      <div
+                        style={{
+                          width: 34,
+                          height: 34,
+                          borderRadius: 8,
+                          background: 'rgba(225,29,72,0.1)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          color: 'var(--brand-primary)',
+                        }}
+                      >
+                        <Boxes size={18} />
+                      </div>
+                      <div>
+                        <div style={{ fontSize: '0.94rem', fontWeight: 800, color: 'var(--text-main)', letterSpacing: '-0.01em' }}>
+                          The Privacy Suite Ecosystem
+                        </div>
+                        <div style={{ fontSize: '0.74rem', color: 'var(--text-muted)' }}>
+                          {currentLang === 'id'
+                            ? '1 Akun & 1 Pass Membuka Semua Tools • 0% Server Upload'
+                            : '1 Account & 1 Pass Unlocks All Tools • 0% Server Upload'}
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      href={currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setIsSuiteOpen(false);
+                        window.history.pushState({}, '', currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`);
+                        window.dispatchEvent(new PopStateEvent('popstate'));
+                      }}
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: 6,
+                        padding: '6px 14px',
+                        borderRadius: 8,
+                        background: '#fef3c7',
+                        color: '#b45309',
+                        border: '1px solid #fde68a',
+                        fontSize: '0.78rem',
+                        fontWeight: 800,
+                        textDecoration: 'none',
+                        cursor: 'pointer',
+                      }}
+                    >
+                      <Crown size={14} color="#b45309" />
+                      <span>{currentLang === 'id' ? 'Founder Pass $129' : 'Founder Pass $129'}</span>
+                    </a>
+                  </div>
+
+                  {/* 3-Column Grid */}
+                  <div style={{ display: 'grid', gridTemplateColumns: '1.25fr 1fr 1fr', gap: 20 }}>
+
+                    {/* Col 1: OTHER PRODUCTS (Sama persis iLovePDF: OTHER PRODUCTS) */}
+                    <div>
+                      <div style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--text-accent)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 12 }}>
+                        {currentLang === 'id' ? 'Produk Lainnya' : 'Other Products'}
+                      </div>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+                        {/* App: HelpMyIMG */}
+                        <a
+                          href="https://helpmyimg.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: 10,
+                            padding: '10px 12px',
+                            borderRadius: 10,
+                            background: 'var(--bg-app)',
+                            border: '1px solid var(--border-color)',
+                            textDecoration: 'none',
+                            cursor: 'pointer',
+                            transition: 'all 0.15s ease',
+                          }}
+                          onMouseEnter={(e) => {
+                            e.currentTarget.style.borderColor = 'rgba(59, 130, 246, 0.4)';
+                            e.currentTarget.style.background = 'rgba(59, 130, 246, 0.05)';
+                          }}
+                          onMouseLeave={(e) => {
+                            e.currentTarget.style.borderColor = 'var(--border-color)';
+                            e.currentTarget.style.background = 'var(--bg-app)';
+                          }}
+                        >
+                          <div style={{ width: 32, height: 32, borderRadius: 8, background: '#3b82f6', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                            <Sparkles size={16} />
+                          </div>
+                          <div style={{ flex: 1, minWidth: 0 }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+                              <span style={{ fontSize: '0.86rem', fontWeight: 800, color: 'var(--text-main)' }}>HelpMyIMG</span>
+                              <ExternalLink size={11} color="var(--text-muted)" />
+                            </div>
+                            <div style={{ fontSize: '0.73rem', color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                              {currentLang === 'id' ? 'Edit & kompresi foto berbasis AI browser' : 'AI photo & in-browser image tools'}
+                            </div>
+                          </div>
+                        </a>
+
+                        {/* App: SolveMyMedia */}
+                        <a
+                          href="https://solvemymedia.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: 10,
+                            padding: '10px 12px',
+                            borderRadius: 10,
+                            background: 'var(--bg-app)',
+                            border: '1px solid var(--border-color)',
+                            textDecoration: 'none',
+                            cursor: 'pointer',
+                            transition: 'all 0.15s ease',
+                          }}
+                          onMouseEnter={(e) => {
+                            e.currentTarget.style.borderColor = 'rgba(168, 85, 247, 0.4)';
+                            e.currentTarget.style.background = 'rgba(168, 85, 247, 0.05)';
+                          }}
+                          onMouseLeave={(e) => {
+                            e.currentTarget.style.borderColor = 'var(--border-color)';
+                            e.currentTarget.style.background = 'var(--bg-app)';
+                          }}
+                        >
+                          <div style={{ width: 32, height: 32, borderRadius: 8, background: '#a855f7', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                            <Film size={16} />
+                          </div>
+                          <div style={{ flex: 1, minWidth: 0 }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+                              <span style={{ fontSize: '0.86rem', fontWeight: 800, color: 'var(--text-main)' }}>SolveMyMedia</span>
+                              <ExternalLink size={11} color="var(--text-muted)" />
+                            </div>
+                            <div style={{ fontSize: '0.73rem', color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                              {currentLang === 'id' ? 'Konversi video & audio tanpa hilang kualitas' : 'Lossless video & audio engine'}
+                            </div>
+                          </div>
+                        </a>
+
+                        {/* App: CreateMy-QR */}
+                        <a
+                          href="https://createmy-qr.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: 10,
+                            padding: '10px 12px',
+                            borderRadius: 10,
+                            background: 'var(--bg-app)',
+                            border: '1px solid var(--border-color)',
+                            textDecoration: 'none',
+                            cursor: 'pointer',
+                            transition: 'all 0.15s ease',
+                          }}
+                          onMouseEnter={(e) => {
+                            e.currentTarget.style.borderColor = 'rgba(245, 158, 11, 0.4)';
+                            e.currentTarget.style.background = 'rgba(245, 158, 11, 0.05)';
+                          }}
+                          onMouseLeave={(e) => {
+                            e.currentTarget.style.borderColor = 'var(--border-color)';
+                            e.currentTarget.style.background = 'var(--bg-app)';
+                          }}
+                        >
+                          <div style={{ width: 32, height: 32, borderRadius: 8, background: '#f59e0b', color: '#000', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                            <QrCode size={16} />
+                          </div>
+                          <div style={{ flex: 1, minWidth: 0 }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+                              <span style={{ fontSize: '0.86rem', fontWeight: 800, color: 'var(--text-main)' }}>CreateMy-QR</span>
+                              <ExternalLink size={11} color="var(--text-muted)" />
+                            </div>
+                            <div style={{ fontSize: '0.73rem', color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                              {currentLang === 'id' ? 'Pembuat QR Code vektor & dinamis' : 'Vector QR & dynamic barcodes'}
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+
+                    {/* Col 2: APPLICATIONS (COMING SOON) & FOUNDER PASS */}
+                    <div>
+                      <div style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--text-accent)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 12 }}>
+                        {currentLang === 'id' ? 'Aplikasi (Segera Hadir)' : 'Applications (Coming Soon)'}
+                      </div>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: 8, marginBottom: 14 }}>
+                        {/* Windows Desktop */}
+                        <div
+                          style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: 10,
+                            padding: '10px 12px',
+                            borderRadius: 10,
+                            background: 'var(--bg-app)',
+                            border: '1px solid var(--border-color)',
+                            opacity: 0.9,
+                          }}
+                        >
+                          <div style={{ width: 30, height: 30, borderRadius: 8, background: 'rgba(255,255,255,0.06)', color: 'var(--text-main)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, border: '1px solid var(--border-color)' }}>
+                            <Monitor size={15} />
+                          </div>
+                          <div style={{ flex: 1, minWidth: 0 }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                              <span style={{ fontSize: '0.84rem', fontWeight: 700, color: 'var(--text-main)' }}>Desktop App</span>
+                              <span style={{ fontSize: '0.62rem', fontWeight: 800, padding: '2px 6px', borderRadius: 4, background: 'rgba(245, 158, 11, 0.15)', color: '#d97706' }}>
+                                {currentLang === 'id' ? 'Segera Hadir' : 'Coming Soon'}
+                              </span>
+                            </div>
+                            <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
+                              Windows &amp; macOS (100% Offline)
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Android Mobile */}
+                        <div
+                          style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: 10,
+                            padding: '10px 12px',
+                            borderRadius: 10,
+                            background: 'var(--bg-app)',
+                            border: '1px solid var(--border-color)',
+                            opacity: 0.9,
+                          }}
+                        >
+                          <div style={{ width: 30, height: 30, borderRadius: 8, background: 'rgba(255,255,255,0.06)', color: 'var(--text-main)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, border: '1px solid var(--border-color)' }}>
+                            <Smartphone size={15} />
+                          </div>
+                          <div style={{ flex: 1, minWidth: 0 }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                              <span style={{ fontSize: '0.84rem', fontWeight: 700, color: 'var(--text-main)' }}>Mobile App</span>
+                              <span style={{ fontSize: '0.62rem', fontWeight: 800, padding: '2px 6px', borderRadius: 4, background: 'rgba(245, 158, 11, 0.15)', color: '#d97706' }}>
+                                {currentLang === 'id' ? 'Segera Hadir' : 'Coming Soon'}
+                              </span>
+                            </div>
+                            <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
+                              Android APK &amp; iOS
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Founder Pass Card */}
+                      <div
+                        style={{
+                          padding: '12px 14px',
+                          borderRadius: 10,
+                          background: 'rgba(245, 158, 11, 0.08)',
+                          border: '1px solid rgba(245, 158, 11, 0.3)',
+                        }}
+                      >
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: '0.82rem', fontWeight: 800, color: '#f59e0b' }}>
+                          <Crown size={14} />
+                          <span>{currentLang === 'id' ? 'Founder Lifetime Pass' : 'Founder Lifetime Pass'}</span>
+                        </div>
+                        <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', marginTop: 4, lineHeight: 1.4 }}>
+                          {currentLang === 'id'
+                            ? 'Akses seumur hidup ke 4 web tools + aplikasi desktop & mobile saat rilis.'
+                            : 'Lifetime access to all 4 web tools plus desktop & mobile apps upon release.'}
+                        </div>
+                        <a
+                          href={currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            setIsSuiteOpen(false);
+                            window.history.pushState({}, '', currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`);
+                            window.dispatchEvent(new PopStateEvent('popstate'));
+                          }}
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: 5,
+                            marginTop: 8,
+                            fontSize: '0.75rem',
+                            fontWeight: 800,
+                            color: '#f59e0b',
+                            textDecoration: 'none',
+                          }}
+                        >
+                          <span>{currentLang === 'id' ? 'Lihat Paket ($129) →' : 'View Pricing ($129) →'}</span>
+                        </a>
+                      </div>
+                    </div>
+
+                    {/* Col 3: PREFERENCES & UTILITIES */}
+                    <div>
+                      <div style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--text-accent)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 12 }}>
+                        {currentLang === 'id' ? 'Preferensi' : 'Preferences'}
+                      </div>
+
+                      {/* Theme Mode Segmented Button */}
+                      <div style={{ marginBottom: 14 }}>
+                        <div style={{ fontSize: '0.74rem', fontWeight: 700, color: 'var(--text-muted)', marginBottom: 6 }}>
+                          {currentLang === 'id' ? 'Mode Tampilan' : 'Appearance'}
+                        </div>
+                        <div
+                          style={{
+                            display: 'grid',
+                            gridTemplateColumns: '1fr 1fr',
+                            gap: 4,
+                            background: 'var(--bg-app)',
+                            padding: 3,
+                            borderRadius: 8,
+                            border: '1px solid var(--border-color)',
+                          }}
+                        >
+                          <button
+                            onClick={() => { if (!isLightMode) onToggleTheme(); }}
+                            style={{
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              gap: 6,
+                              padding: '7px 8px',
+                              borderRadius: 6,
+                              border: isLightMode ? '1px solid #f59e0b' : 'none',
+                              background: isLightMode ? '#fef3c7' : 'transparent',
+                              color: isLightMode ? '#b45309' : 'var(--text-muted)',
+                              fontWeight: 700,
+                              fontSize: '0.78rem',
+                              cursor: 'pointer',
+                              transition: 'all 0.15s ease',
+                            }}
+                          >
+                            <Sun size={14} color={isLightMode ? '#d97706' : 'var(--text-muted)'} />
+                            <span>{currentLang === 'id' ? 'Terang' : 'Light'}</span>
+                          </button>
+                          <button
+                            onClick={() => { if (isLightMode) onToggleTheme(); }}
+                            style={{
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              gap: 6,
+                              padding: '7px 8px',
+                              borderRadius: 6,
+                              border: !isLightMode ? '1px solid #6366f1' : 'none',
+                              background: !isLightMode ? '#1e1b4b' : 'transparent',
+                              color: !isLightMode ? '#c084fc' : 'var(--text-muted)',
+                              fontWeight: 700,
+                              fontSize: '0.78rem',
+                              cursor: 'pointer',
+                              transition: 'all 0.15s ease',
+                            }}
+                          >
+                            <Moon size={14} color={!isLightMode ? '#a855f7' : 'var(--text-muted)'} />
+                            <span>{currentLang === 'id' ? 'Gelap' : 'Dark'}</span>
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Language Selector */}
+                      <div style={{ marginBottom: 14 }}>
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 6 }}>
+                          <span style={{ fontSize: '0.74rem', fontWeight: 700, color: 'var(--text-muted)' }}>
+                            {currentLang === 'id' ? 'Bahasa' : 'Language'}
+                          </span>
+                          <span style={{ fontSize: '0.72rem', color: 'var(--text-accent)', fontWeight: 700 }}>
+                            {getLanguageByCode(currentLang).flag} {getLanguageByCode(currentLang).nativeName}
+                          </span>
+                        </div>
+                        {/* 6 Popular Languages Chips */}
+                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 5, marginBottom: 8 }}>
+                          {[
+                            { code: 'en', flag: '🇺🇸', label: 'EN' },
+                            { code: 'id', flag: '🇮🇩', label: 'ID' },
+                            { code: 'es', flag: '🇪🇸', label: 'ES' },
+                            { code: 'fr', flag: '🇫🇷', label: 'FR' },
+                            { code: 'de', flag: '🇩🇪', label: 'DE' },
+                            { code: 'ja', flag: '🇯🇵', label: 'JA' },
+                          ].map((lang) => (
+                            <button
+                              key={lang.code}
+                              onClick={() => onSelectLang(lang.code)}
+                              style={{
+                                padding: '6px 4px',
+                                borderRadius: 6,
+                                border: currentLang === lang.code ? '1px solid var(--brand-primary)' : '1px solid var(--border-color)',
+                                background: currentLang === lang.code ? 'rgba(225,29,72,0.1)' : 'var(--bg-app)',
+                                color: currentLang === lang.code ? 'var(--brand-primary)' : 'var(--text-main)',
+                                fontSize: '0.74rem',
+                                fontWeight: 700,
+                                cursor: 'pointer',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                gap: 4,
+                                transition: 'all 0.15s ease',
+                              }}
+                            >
+                              <span>{lang.flag}</span>
+                              <span>{lang.label}</span>
+                            </button>
+                          ))}
+                        </div>
+                        {/* All 30 Languages Trigger */}
+                        <div style={{ position: 'relative' }}>
+                          <button
+                            onClick={() => {
+                              setIsSuiteLangSelectOpen(!isSuiteLangSelectOpen);
+                            }}
+                            style={{
+                              width: '100%',
+                              padding: '7px 10px',
+                              borderRadius: 6,
+                              border: '1px dashed var(--border-color)',
+                              background: 'transparent',
+                              color: 'var(--text-main)',
+                              fontSize: '0.75rem',
+                              fontWeight: 600,
+                              cursor: 'pointer',
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'space-between',
+                            }}
+                          >
+                            <span style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                              <Globe size={13} color="var(--text-muted)" />
+                              <span>{currentLang === 'id' ? 'Daftar Semua 30 Bahasa' : 'Browse All 30 Languages'}</span>
+                            </span>
+                            <span style={{ fontSize: '0.68rem', color: 'var(--text-muted)' }}>
+                              {isSuiteLangSelectOpen ? '▲' : '▼'}
+                            </span>
+                          </button>
+
+                          {/* Expanded 30-Language Scroll Panel inside Column 3 */}
+                          {isSuiteLangSelectOpen && (
+                            <div
+                              style={{
+                                maxHeight: 160,
+                                overflowY: 'auto',
+                                background: 'var(--bg-app)',
+                                border: '1px solid var(--border-color)',
+                                borderRadius: 8,
+                                marginTop: 6,
+                                padding: '4px',
+                                display: 'flex',
+                                flexDirection: 'column',
+                                gap: 2,
+                              }}
+                            >
+                              {SUPPORTED_LANGUAGES.map((l) => (
+                                <button
+                                  key={l.code}
+                                  onClick={() => {
+                                    onSelectLang(l.code);
+                                    setIsSuiteLangSelectOpen(false);
+                                  }}
+                                  style={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'space-between',
+                                    padding: '5px 8px',
+                                    borderRadius: 4,
+                                    border: 'none',
+                                    background: currentLang === l.code ? 'rgba(225,29,72,0.08)' : 'transparent',
+                                    color: currentLang === l.code ? 'var(--brand-primary)' : 'var(--text-main)',
+                                    fontSize: '0.73rem',
+                                    fontWeight: currentLang === l.code ? 700 : 500,
+                                    cursor: 'pointer',
+                                    textAlign: 'left',
+                                  }}
+                                >
+                                  <span>{l.flag} {l.nativeName}</span>
+                                  <span style={{ fontSize: '0.66rem', opacity: 0.6 }}>{l.code.toUpperCase()}</span>
+                                </button>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Quick Trust Links */}
+                      <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: 10, display: 'flex', flexDirection: 'column', gap: 6 }}>
+                        <a
+                          href={currentLang === 'en' ? '/privacy' : `/${currentLang}/privacy`}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            setIsSuiteOpen(false);
+                            window.history.pushState({}, '', currentLang === 'en' ? '/privacy' : `/${currentLang}/pricing`);
+                            window.dispatchEvent(new PopStateEvent('popstate'));
+                          }}
+                          style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: '0.74rem', color: 'var(--text-muted)', textDecoration: 'none' }}
+                        >
+                          <ShieldCheck size={13} color="#10b981" />
+                          <span>{currentLang === 'id' ? 'Privasi: 0% Server Upload' : 'Zero-Server Privacy'}</span>
+                        </a>
+                        <a
+                          href={currentLang === 'en' ? '/tos' : `/${currentLang}/tos`}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            setIsSuiteOpen(false);
+                            window.history.pushState({}, '', currentLang === 'en' ? '/tos' : `/${currentLang}/tos`);
+                            window.dispatchEvent(new PopStateEvent('popstate'));
+                          }}
+                          style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: '0.74rem', color: 'var(--text-muted)', textDecoration: 'none' }}
+                        >
+                          <FileText size={13} color="var(--text-muted)" />
+                          <span>{currentLang === 'id' ? 'Syarat & Ketentuan Suite' : 'Terms of Service'}</span>
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Mobile top-right controls: Auth + Compact Language Selector + Thumb-Friendly Hamburger */}
@@ -1201,7 +1203,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       {isMobileMenuOpen && (
         <div
           className="mobile-menu-container"
-          style={{ position: 'absolute', top: 60, left: 0, right: 0, background: 'var(--bg-app)', borderBottom: '1px solid var(--border-color)', padding: '16px 16px 28px', maxHeight: 'calc(100vh - 60px)', overflowY: 'auto', zIndex: 40, boxShadow: '0 12px 30px rgba(0,0,0,0.15)' }}
+          style={{ position: 'absolute', top: 68, left: 0, right: 0, background: 'var(--bg-app)', borderBottom: '1px solid var(--border-color)', padding: '16px 16px 28px', maxHeight: 'calc(100vh - 68px)', overflowY: 'auto', zIndex: 40, boxShadow: '0 12px 30px rgba(0,0,0,0.15)' }}
         >
           {/* Mobile Theme Preference Bar */}
           <div
@@ -1413,6 +1415,16 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </div>
                 <div style={{ fontSize: '0.66rem', color: 'var(--text-muted)' }}>Vector QR Codes</div>
               </a>
+            </div>
+
+            {/* Upcoming Native Apps */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 6, marginTop: 8, paddingTop: 8, borderTop: '1px dashed var(--border-color)' }}>
+              <div style={{ fontSize: '0.68rem', color: 'var(--text-muted)' }}>
+                💻 Desktop Windows &amp; Mac <span style={{ color: '#d97706', fontWeight: 800 }}>({currentLang === 'id' ? 'Segera' : 'Soon'})</span>
+              </div>
+              <div style={{ fontSize: '0.68rem', color: 'var(--text-muted)' }}>
+                📱 Android &amp; iOS App <span style={{ color: '#d97706', fontWeight: 800 }}>({currentLang === 'id' ? 'Segera' : 'Soon'})</span>
+              </div>
             </div>
           </div>
 
