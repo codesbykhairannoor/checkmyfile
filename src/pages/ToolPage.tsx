@@ -360,9 +360,9 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
               </div>
             )}
             <React.Suspense fallback={<div style={{ minHeight: 400, display: 'flex', justifyContent: 'center', alignItems: 'center' }}><div className="spinner" style={{ width: 40, height: 40, border: '4px solid var(--border-color)', borderTopColor: 'var(--text-accent)', borderRadius: '50%', animation: 'spin 1s linear infinite' }}></div></div>}>
-              <div className="tool-workspace-container" style={{ display: 'flex', width: '100%', gap: 24, justifyContent: 'center', alignItems: 'flex-start', paddingBottom: 64 }}>
+              <div className="tool-workspace-container" style={{ display: 'flex', width: '100%', gap: 24, justifyContent: 'center', alignItems: 'stretch', paddingBottom: 64 }}>
                 {/* Left Workspace */}
-                <div className="tool-workspace-left" style={{ flex: '1 1 0%', minWidth: 0, position: 'sticky', top: 88, height: 'calc(100vh - 120px)', maxHeight: 850, minHeight: 520, display: 'flex', flexDirection: 'column', paddingRight: 4, paddingBottom: 24, boxSizing: 'border-box' }}>
+                <div className="tool-workspace-left" style={{ flex: '1 1 0%', minWidth: 0, display: 'flex', flexDirection: 'column', minHeight: 520, paddingRight: 4, boxSizing: 'border-box' }}>
                   <DocumentLivePreview
                     files={files}
                     currentLang={currentLang}

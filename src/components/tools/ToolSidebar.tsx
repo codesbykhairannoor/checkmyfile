@@ -138,7 +138,6 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
         display: 'flex',
         flexDirection: 'column',
         gap: 16,
-        paddingBottom: 24,
         boxSizing: 'border-box',
       }}
     >
