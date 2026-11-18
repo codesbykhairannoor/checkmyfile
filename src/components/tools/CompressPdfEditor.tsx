@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Minimize2, Download, Settings2, Zap, Shield, Image as ImageIcon, Sliders } from 'lucide-react';
 
-export type CompressQuality = 'extreme' | 'balanced' | 'high' | 'custom';
+export type CompressQuality = 'extreme' | 'balanced' | 'high' | 'custom' | 'target';
 
 interface CompressPdfEditorProps {
   tUi?: Record<string, string>;
@@ -9,6 +9,8 @@ interface CompressPdfEditorProps {
   setQuality: (quality: CompressQuality) => void;
   percent?: number;
   setPercent?: (percent: number) => void;
+  targetSizeKB?: number;
+  setTargetSizeKB?: (size: number) => void;
   onApply: () => void;
   isProcessing: boolean;
   originalSizeKB?: number;
@@ -20,16 +22,23 @@ export const CompressPdfEditor: React.FC<CompressPdfEditorProps> = ({
   setQuality,
   percent = 50,
   setPercent,
+  targetSizeKB = 200,
+  setTargetSizeKB,
   onApply,
   isProcessing,
   originalSizeKB = 0
 }) => {
-  const [mode, setMode] = useState<'preset' | 'custom'>(quality === 'custom' ? 'custom' : 'preset');
+  const [mode, setMode] = useState<'preset' | 'custom' | 'target'>(
+    quality === 'target' ? 'target' : quality === 'custom' ? 'custom' : 'preset'
+  );
 
-  const handleModeChange = (newMode: 'preset' | 'custom') => {
+  const handleModeChange = (newMode: 'preset' | 'custom' | 'target') => {
     setMode(newMode);
     if (newMode === 'custom') {
       setQuality('custom');
+    } else if (newMode === 'target') {
+      setQuality('target');
+      if (!targetSizeKB && setTargetSizeKB) setTargetSizeKB(200);
     } else {
       setQuality('balanced');
     }
@@ -37,6 +46,11 @@ export const CompressPdfEditor: React.FC<CompressPdfEditorProps> = ({
 
   const getEstimatedSize = () => {
     if (!originalSizeKB) return 'TBD';
+    if (mode === 'target') {
+      const target = targetSizeKB || 200;
+      const reduction = Math.max(0, Math.round(((originalSizeKB - target) / originalSizeKB) * 100));
+      return `Target: ≤ ${target} KB (-${reduction}%)`;
+    }
     if (mode === 'custom') {
       const reduction = (percent / 100) * 0.75; // up to ~75% reduction
       const estimated = Math.max(10, Math.round(originalSizeKB * (1 - reduction)));
@@ -57,54 +71,142 @@ export const CompressPdfEditor: React.FC<CompressPdfEditorProps> = ({
           <span>{t("interactive_compress", "Interactive Compress")}</span>
         </h4>
         <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)', lineHeight: 1.4 }}>
-          {t("compress_desc", "Choose compression level or adjust percentage slider. Live preview will simulate result.")}
+          {t("compress_desc", "Choose compression level, set percentage slider, or enter target file size.")}
         </p>
       </div>
 
       {/* Mode Switcher Tabs */}
-      <div style={{ display: 'flex', background: 'var(--bg-input)', padding: 4, borderRadius: 12, border: '1px solid var(--border-color)', gap: 4 }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', background: 'var(--bg-input)', padding: 4, borderRadius: 12, border: '1px solid var(--border-color)', gap: 4 }}>
         <button
           type="button"
           onClick={() => handleModeChange('preset')}
           style={{
-            flex: 1,
-            padding: '8px 12px',
+            padding: '7px 8px',
             borderRadius: 8,
-            fontSize: '0.82rem',
+            fontSize: '0.76rem',
             fontWeight: 700,
             border: 'none',
             cursor: 'pointer',
+            textAlign: 'center',
             transition: 'all 0.2s ease',
             background: mode === 'preset' ? 'var(--brand-primary)' : 'transparent',
             color: mode === 'preset' ? '#fff' : 'var(--text-muted)'
           }}
         >
-          {t("preset_mode", "Preset Mode")}
+          {t("preset_mode", "Prasetel")}
         </button>
         <button
           type="button"
           onClick={() => handleModeChange('custom')}
           style={{
-            flex: 1,
-            padding: '8px 12px',
+            padding: '7px 8px',
             borderRadius: 8,
-            fontSize: '0.82rem',
+            fontSize: '0.76rem',
             fontWeight: 700,
             border: 'none',
             cursor: 'pointer',
+            textAlign: 'center',
             transition: 'all 0.2s ease',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: 6,
             background: mode === 'custom' ? 'var(--brand-primary)' : 'transparent',
             color: mode === 'custom' ? '#fff' : 'var(--text-muted)'
           }}
         >
-          <Sliders size={14} />
-          <span>{t("custom_slider_mode", "Custom Slider (%)")}</span>
+          {t("custom_slider_mode", "Slider (%)")}
+        </button>
+        <button
+          type="button"
+          onClick={() => handleModeChange('target')}
+          style={{
+            padding: '7px 8px',
+            borderRadius: 8,
+            fontSize: '0.76rem',
+            fontWeight: 700,
+            border: 'none',
+            cursor: 'pointer',
+            textAlign: 'center',
+            transition: 'all 0.2s ease',
+            background: mode === 'target' ? 'var(--brand-primary)' : 'transparent',
+            color: mode === 'target' ? '#fff' : 'var(--text-muted)'
+          }}
+        >
+          🎯 {t("target_kb_mode", "Target (KB)")}
         </button>
       </div>
+
+      {/* Mode 3: Target Size (KB) Precision Optimizer */}
+      {mode === 'target' && (
+        <div style={{ background: 'var(--bg-input)', padding: 18, borderRadius: 14, border: '1px solid var(--border-color)', display: 'flex', flexDirection: 'column', gap: 14 }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <div>
+              <span style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)', display: 'block' }}>
+                {t("target_size_label", "Batas Maksimal File (Target Size)")}
+              </span>
+              <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
+                {t("target_size_sub", "Mesin kompresi akan menyesuaikan DPI agar file di bawah batas ini.")}
+              </span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 4, background: 'var(--bg-card)', padding: '6px 10px', borderRadius: 8, border: '1px solid var(--border-color)' }}>
+              <input
+                type="number"
+                min={20}
+                max={50000}
+                value={targetSizeKB || 200}
+                onChange={(e) => setTargetSizeKB?.(Math.max(10, parseInt(e.target.value) || 200))}
+                style={{
+                  width: 60,
+                  border: 'none',
+                  background: 'transparent',
+                  color: 'var(--brand-primary)',
+                  fontWeight: 900,
+                  fontSize: '1rem',
+                  textAlign: 'right',
+                  outline: 'none',
+                }}
+              />
+              <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-muted)' }}>KB</span>
+            </div>
+          </div>
+
+          {/* Quick Target Chips */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+            <span style={{ fontSize: '0.72rem', fontWeight: 600, color: 'var(--text-muted)' }}>
+              {t("quick_presets", "Pilihan Cepat Standar:")}
+            </span>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 8 }}>
+              {[
+                { label: 'CPNS / BUMN', size: 200 },
+                { label: 'Paspor / Visa', size: 300 },
+                { label: 'Beasiswa / Kampus', size: 500 },
+                { label: 'Lampiran Email', size: 1000 },
+              ].map((chip) => (
+                <button
+                  key={chip.size}
+                  type="button"
+                  onClick={() => setTargetSizeKB?.(chip.size)}
+                  style={{
+                    padding: '8px 10px',
+                    borderRadius: 8,
+                    border: targetSizeKB === chip.size ? '2px solid var(--brand-primary)' : '1px solid var(--border-color)',
+                    background: targetSizeKB === chip.size ? 'rgba(225, 29, 72, 0.08)' : 'var(--bg-card)',
+                    color: targetSizeKB === chip.size ? 'var(--brand-primary)' : 'var(--text-main)',
+                    fontSize: '0.75rem',
+                    fontWeight: 700,
+                    cursor: 'pointer',
+                    textAlign: 'left',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: 2,
+                    transition: 'all 0.15s ease',
+                  }}
+                >
+                  <span>{chip.size} KB</span>
+                  <span style={{ fontSize: '0.68rem', fontWeight: 500, color: 'var(--text-muted)' }}>{chip.label}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Mode 1: Preset Options */}
       {mode === 'preset' && (

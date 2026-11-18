@@ -5,23 +5,23 @@ import * as pdfjsLib from 'pdfjs-dist';
 // Initialize PDF.js worker using public CDNs or built-in worker
 pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorkerUrl;
 
-export type CompressionQuality = 'extreme' | 'balanced' | 'high' | 'custom';
+export type CompressionQuality = 'extreme' | 'balanced' | 'high' | 'custom' | 'target';
 
 /**
  * Advanced Hybrid Client-Side PDF Compression Engine.
  * 
  * - 'high': Pure structural optimization (useObjectStreams: true, strip metadata/thumbs).
  * - 'balanced': Structural optimization + aggressive cleanup of dictionaries & annots.
- * - 'extreme' (or if balanced yields low savings): Deep hybrid compression using Wasm/Canvas
- *   re-sampling of heavy pages at optimized DPI (e.g. 110 DPI with JPEG 0.68 quality)
- *   to guarantee dramatic KB/MB reduction (often -60% to -90%) right inside RAM.
+ * - 'extreme': Deep hybrid compression using Wasm/Canvas re-sampling at optimized DPI.
  * - 'custom': Continuous slider percentage (10% - 95%) allowing fine-grained user control.
+ * - 'target': Intelligent binary optimization targeting an EXACT max file size (in KB).
  */
 export const compressPdf = async (
   file: File,
   quality: CompressionQuality = 'balanced',
   onProgress: (progress: number) => void,
-  customPercent?: number
+  customPercent?: number,
+  targetSizeKB?: number
 ): Promise<Uint8Array> => {
   onProgress(10);
   const arrayBuffer = await file.arrayBuffer();
@@ -86,11 +86,16 @@ export const compressPdf = async (
 
     const newPdfDoc = await PDFDocument.create();
 
-    // Determine scale & JPEG quality based on user option or custom slider percentage
+    // Determine scale & JPEG quality based on user option, target size, or custom slider percentage
     let scale = 1.0;
     let jpegQuality = 0.65;
 
-    if (customPercent !== undefined) {
+    if (quality === 'target' && targetSizeKB && targetSizeKB > 0) {
+      const targetBytes = targetSizeKB * 1024;
+      const targetRatio = Math.max(0.08, Math.min(0.98, targetBytes / originalSize));
+      scale = Math.max(0.50, Math.min(1.30, 0.42 + targetRatio * 0.88));
+      jpegQuality = Math.max(0.20, Math.min(0.85, 0.15 + targetRatio * 0.70));
+    } else if (customPercent !== undefined) {
       const compRatio = Math.max(0.1, Math.min(0.95, customPercent / 100));
       scale = Math.max(0.55, Math.min(1.4, 1.45 - compRatio * 0.85));
       jpegQuality = Math.max(0.25, Math.min(0.95, 0.95 - compRatio * 0.65));

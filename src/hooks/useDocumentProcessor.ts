@@ -16,6 +16,7 @@ interface ProcessorOptions {
   watermarkConfig?: any;
   compressQuality?: any;
   compressPercent?: number;
+  targetSizeKB?: number;
   extractImageFormat?: 'png' | 'jpg';
   removeRange?: string;
   insertFile?: File | null;
@@ -117,6 +118,13 @@ async function processSingleFile(
       return { bytes, name: `${baseName}_reversed.pdf` };
     }
 
+    case 'repair-pdf': {
+      const result = await (await import('../engines/pdf/repairPdf')).repairPdf(file, (p, text) => {
+        onProgress(p);
+      });
+      return { bytes: result.bytes, name: `${baseName}_repaired.pdf`, metadata: result.diagnostics };
+    }
+
     case 'resize-pdf': {
       const resizeOptions = {
         pageSize: options.resizePageSize || 'A4',
@@ -183,7 +191,13 @@ async function processSingleFile(
     }
 
     case 'compress-pdf': {
-      const bytes = await (await import('../engines/compressEngine')).compressPdf(file, options.compressQuality, onProgress, options.compressPercent);
+      const bytes = await (await import('../engines/compressEngine')).compressPdf(
+        file,
+        options.compressQuality,
+        onProgress,
+        options.compressPercent,
+        options.targetSizeKB
+      );
       return { bytes, name: `${baseName}_compressed.pdf` };
     }
 
@@ -227,9 +241,16 @@ async function processSingleFile(
     }
 
     case 'ocr-pdf': {
-      const ocrRes = await (await import('../engines/ocrEngine')).runOcrOnDocument(file, options.currentLang, (p) => {
-        onProgress(p);
-      });
+      const format = (options.extractImageFormat as any) || 'txt';
+      const ocrRes = await (await import('../engines/ocrEngine')).runOcrOnDocument(
+        file,
+        options.currentLang,
+        (p) => onProgress(p),
+        format
+      );
+      if (format === 'xlsx' && ocrRes.excelBytes) {
+        return { bytes: ocrRes.excelBytes, name: `${baseName}_tables.xlsx`, ocrText: ocrRes.text };
+      }
       const encoder = new TextEncoder();
       return { bytes: encoder.encode(ocrRes.text), name: `${baseName}_ocr_extracted.txt`, ocrText: ocrRes.text };
     }

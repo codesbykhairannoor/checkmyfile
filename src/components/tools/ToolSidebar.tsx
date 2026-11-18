@@ -23,6 +23,7 @@ import { RedactPdfEditor } from './RedactPdfEditor';
 import { ReversePdfEditor } from './ReversePdfEditor';
 import { ResizePdfEditor } from './ResizePdfEditor';
 import { EditPdfEditor } from './EditPdfEditor';
+import { RepairPdfEditor } from './RepairPdfEditor';
 import { getCanonicalToolId, type ToolDefinition } from '../../catalog/toolsCatalog';
 import { editorTranslations } from '../../i18n/editorTranslations';
 import { useAuth } from '../../context/AuthContext';
@@ -43,10 +44,12 @@ interface ToolSidebarProps {
   setWatermarkConfig: (v: any) => void;
   pageNumberConfig: any;
   setPageNumberConfig: (v: any) => void;
-  compressQuality: 'extreme' | 'balanced' | 'high' | 'custom';
-  setCompressQuality: (v: 'extreme' | 'balanced' | 'high' | 'custom') => void;
+  compressQuality: 'extreme' | 'balanced' | 'high' | 'custom' | 'target';
+  setCompressQuality: (v: 'extreme' | 'balanced' | 'high' | 'custom' | 'target') => void;
   compressPercent?: number;
   setCompressPercent?: (v: number) => void;
+  compressTargetSizeKB?: number;
+  setCompressTargetSizeKB?: (v: number) => void;
 
   extractImageFormat?: 'png' | 'jpg';
   setExtractImageFormat?: (v: 'png' | 'jpg') => void;
@@ -77,7 +80,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
   tool, files, setFiles, activeFileIndex, setActiveFileIndex, isProcessing, handleStartProcessing,
   splitRange, setSplitRange, rotateDegrees, setRotateDegrees,
   pageNumberConfig, setPageNumberConfig, watermarkConfig, setWatermarkConfig, compressQuality, setCompressQuality,
-  compressPercent, setCompressPercent,
+  compressPercent, setCompressPercent, compressTargetSizeKB, setCompressTargetSizeKB,
   extractImageFormat, setExtractImageFormat,
   removeRange, setRemoveRange, insertFile, setInsertFile, insertAtIndex, setInsertAtIndex, signatureConfig, setSignatureConfig,
   pdfPassword, setPdfPassword, cropConfig, setCropConfig, redactConfig, setRedactConfig,
@@ -250,6 +253,8 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
           setQuality={setCompressQuality}
           percent={compressPercent ?? 50}
           setPercent={setCompressPercent}
+          targetSizeKB={compressTargetSizeKB}
+          setTargetSizeKB={setCompressTargetSizeKB}
           onApply={handleStartProcessing}
           tUi={tUi}
           isProcessing={isProcessing}
@@ -286,6 +291,9 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
       )}
       {canonicalId === 'resize-pdf' && resizeConfig && setResizeConfig && (
         <ResizePdfEditor config={resizeConfig} setConfig={setResizeConfig} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
+      )}
+      {canonicalId === 'repair-pdf' && (
+        <RepairPdfEditor onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
       {canonicalId === 'edit-pdf' && (
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>

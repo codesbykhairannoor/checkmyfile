@@ -198,6 +198,13 @@ export const getCanonicalToolId = (toolId: string): string => {
     case 'memindai-pdf-ke-teks-ocr':
       return 'ocr-pdf';
 
+    // 33. Repair PDF
+    case 'repair-pdf':
+    case 'perbaiki-pdf':
+    case 'repair-corrupted-pdf':
+    case 'perbaiki-pdf-rusak':
+      return 'repair-pdf';
+
     default:
       return toolId;
   }

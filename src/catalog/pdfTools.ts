@@ -2548,6 +2548,30 @@ export const advancedPdfTools: ToolDefinition[] = [
       },
     },
   },
+  {
+    id: 'repair-pdf',
+    category: 'pdf',
+    iconName: 'Wrench',
+    slugs: generateSlugsForId('repair-pdf', {
+      en: 'repair-pdf',
+      id: 'perbaiki-pdf',
+      es: 'reparar-pdf',
+    }),
+    seo: {
+      en: {
+        title: 'Repair PDF Online Free - Fix Corrupted & Damaged PDF Files Locally',
+        h1: 'Repair and Recover Corrupted PDF Documents in Your Browser',
+        description: 'Fix broken, damaged, or unreadable PDF files using in-browser WebAssembly recovery. Rebuilds xref tables and salvages document pages with 100% privacy.',
+        faqs: defaultFaqs('Repair PDF', 'en'),
+      },
+      id: {
+        title: 'Perbaiki PDF Rusak Online Gratis - Pulihkan Berkas PDF Corrupt di Browser',
+        h1: 'Perbaiki dan Pulihkan Dokumen PDF yang Rusak atau Error',
+        description: 'Pulihkan file PDF yang rusak, error, atau terpotong dengan mesin rekonstruksi biner WebAssembly lokal. 100% aman tanpa unggah berkas ke server.',
+        faqs: defaultFaqs('Perbaiki PDF', 'id'),
+      },
+    },
+  },
 ];
 
 pdfTools.push(...advancedPdfTools);

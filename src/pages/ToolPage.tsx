@@ -115,8 +115,9 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
     scale: 1,
     rotation: 45
   });
-  const [compressQuality, setCompressQuality] = useState<'extreme' | 'balanced' | 'high' | 'custom'>('balanced');
+  const [compressQuality, setCompressQuality] = useState<'extreme' | 'balanced' | 'high' | 'custom' | 'target'>('balanced');
   const [compressPercent, setCompressPercent] = useState<number>(50);
+  const [compressTargetSizeKB, setCompressTargetSizeKB] = useState<number>(200);
   const [extractImageFormat, setExtractImageFormat] = useState<'png' | 'jpg'>('png');
 
   // New Tools States
@@ -215,7 +216,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
 
     startProcessing({
       files, toolId: tool.id, toolCategory: tool.category, currentLang, isPro,
-      splitRange, rotateDegrees, pageNumberConfig, watermarkConfig, compressQuality, compressPercent, extractImageFormat,
+      splitRange, rotateDegrees, pageNumberConfig, watermarkConfig, compressQuality, compressPercent, targetSizeKB: compressTargetSizeKB, extractImageFormat,
       removeRange, insertFile, insertAtIndex, signatureConfig, pdfPassword, cropConfig, redactConfig,
       resizePageSize: resizeConfig.pageSize, resizeOrientation: resizeConfig.orientation, resizeMargin: resizeConfig.margin,
       ...options
@@ -452,6 +453,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                   watermarkConfig={watermarkConfig} setWatermarkConfig={setWatermarkConfig}
                   compressQuality={compressQuality} setCompressQuality={setCompressQuality}
                   compressPercent={compressPercent} setCompressPercent={setCompressPercent}
+                  compressTargetSizeKB={compressTargetSizeKB} setCompressTargetSizeKB={setCompressTargetSizeKB}
                   extractImageFormat={extractImageFormat} setExtractImageFormat={setExtractImageFormat}
                   removeRange={removeRange} setRemoveRange={setRemoveRange}
                   insertFile={insertFile} setInsertFile={setInsertFile}

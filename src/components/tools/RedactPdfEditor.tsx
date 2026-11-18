@@ -98,6 +98,24 @@ export const RedactPdfEditor: React.FC<RedactPdfEditorProps> = ({
           </button>
         </div>
 
+        {/* Certified Compliance Certificate Toggle */}
+        <div style={{ background: 'var(--bg-card)', padding: 14, borderRadius: 12, border: '1px solid var(--border-color)', marginBottom: 16, display: 'flex', flexDirection: 'column', gap: 8 }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+            <span style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--text-main)' }}>
+              📜 Sertifikat Sanitasi GDPR / HIPAA
+            </span>
+            <input
+              type="checkbox"
+              checked={redactConfig?.includeComplianceCertificate !== false}
+              onChange={(e) => setRedactConfig((prev: any) => ({ ...prev, includeComplianceCertificate: e.target.checked }))}
+              style={{ accentColor: '#ef4444', width: 16, height: 16, cursor: 'pointer' }}
+            />
+          </div>
+          <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)', lineHeight: 1.4 }}>
+            Melampirkan sertifikat bukti hukum pemusnahan biner di halaman terakhir PDF.
+          </span>
+        </div>
+
         <div style={{ padding: 16, background: 'rgba(239, 68, 68, 0.05)', border: '1px solid rgba(239, 68, 68, 0.2)', borderRadius: 12, display: 'flex', gap: 12 }}>
           <AlertTriangle color="#ef4444" size={24} style={{ flexShrink: 0, marginTop: 2 }} />
           <p style={{ margin: 0, fontSize: '0.8rem', color: '#f87171', lineHeight: 1.5 }}>

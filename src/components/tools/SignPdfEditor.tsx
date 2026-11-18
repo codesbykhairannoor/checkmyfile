@@ -173,6 +173,53 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
         </div>
       )}
 
+      {/* Cryptographic SHA-256 Audit Trail (PRO Security Feature) */}
+      <div style={{ background: 'var(--bg-input)', padding: 14, borderRadius: 12, border: '1px solid var(--border-color)', display: 'flex', flexDirection: 'column', gap: 10 }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <ShieldCheck size={18} color="#10b981" />
+            <span style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)' }}>
+              {t("audit_cert_title", "Sertifikat Audit SHA-256 (Anti-Palsu)")}
+            </span>
+          </div>
+          <label style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
+            <input
+              type="checkbox"
+              checked={signatureConfig?.includeAuditTrail !== false}
+              onChange={(e) => setSignatureConfig((prev: any) => ({ ...prev, includeAuditTrail: e.target.checked }))}
+              style={{ accentColor: 'var(--brand-primary)', width: 16, height: 16, cursor: 'pointer' }}
+            />
+          </label>
+        </div>
+
+        <p style={{ fontSize: '0.74rem', color: 'var(--text-muted)', margin: 0, lineHeight: 1.45 }}>
+          {t("audit_cert_desc", "Melampirkan lembar sertifikat integritas kriptografis dan hash SHA-256 bukti dokumen tidak dimanipulasi setelah ditandatangani.")}
+        </p>
+
+        {signatureConfig?.includeAuditTrail !== false && (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 6, marginTop: 4 }}>
+            <label style={{ fontSize: '0.72rem', fontWeight: 600, color: 'var(--text-muted)' }}>
+              {t("signer_name_label", "Nama Penandatangan (Opsional):")}
+            </label>
+            <input
+              type="text"
+              placeholder="Contoh: Khairan Noor Fadhlillah"
+              value={signatureConfig?.signerName || ''}
+              onChange={(e) => setSignatureConfig((prev: any) => ({ ...prev, signerName: e.target.value }))}
+              style={{
+                width: '100%',
+                padding: '8px 12px',
+                borderRadius: 8,
+                border: '1px solid var(--border-color)',
+                background: 'var(--bg-card)',
+                color: 'var(--text-main)',
+                fontSize: '0.8rem',
+              }}
+            />
+          </div>
+        )}
+      </div>
+
       <div style={{ marginTop: 'auto', paddingTop: 24, borderTop: '1px solid var(--border-color)' }}>
         <button
           onClick={onApply}
