@@ -179,7 +179,7 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
           <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
             <ShieldCheck size={18} color="#10b981" />
             <span style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)' }}>
-              {t("audit_cert_title", "Sertifikat Audit SHA-256 (Anti-Palsu)")}
+              {t("audit_cert_title", "SHA-256 Audit Trail Certificate")}
             </span>
           </div>
           <label style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
@@ -193,17 +193,17 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
         </div>
 
         <p style={{ fontSize: '0.74rem', color: 'var(--text-muted)', margin: 0, lineHeight: 1.45 }}>
-          {t("audit_cert_desc", "Melampirkan lembar sertifikat integritas kriptografis dan hash SHA-256 bukti dokumen tidak dimanipulasi setelah ditandatangani.")}
+          {t("audit_cert_desc", "Appends a cryptographic proof sheet with SHA-256 hashes verifying the document has not been tampered with.")}
         </p>
 
         {signatureConfig?.includeAuditTrail !== false && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: 6, marginTop: 4 }}>
             <label style={{ fontSize: '0.72rem', fontWeight: 600, color: 'var(--text-muted)' }}>
-              {t("signer_name_label", "Nama Penandatangan (Opsional):")}
+              {t("signer_name_label", "Signer Name (Optional):")}
             </label>
             <input
               type="text"
-              placeholder="Contoh: Khairan Noor Fadhlillah"
+              placeholder={t("signer_name_placeholder", "e.g. John Doe")}
               value={signatureConfig?.signerName || ''}
               onChange={(e) => setSignatureConfig((prev: any) => ({ ...prev, signerName: e.target.value }))}
               style={{

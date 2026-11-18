@@ -29,11 +29,11 @@ export const GenericConvertEditor: React.FC<GenericConvertEditorProps> = ({
       <div>
         <h4 style={{ fontWeight: 800, fontSize: '1.1rem', color: 'var(--text-main)', marginBottom: 6, display: 'flex', alignItems: 'center', gap: 8 }}>
           <Settings2 size={18} className="text-brand-primary" />
-          <span>{isOcr ? t("ocr_convert_title", "OCR Ekstraksi Dokumen") : t("generic_convert", "Convert Document")}</span>
+          <span>{isOcr ? t("ocr_convert_title", "OCR Document Extraction") : t("generic_convert", "Convert Document")}</span>
         </h4>
         <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
-          {isOcr 
-            ? t("ocr_convert_desc", "Ekstrak teks atau tabel dari pindaian PDF/gambar langsung menjadi format dokumen terstruktur.")
+          {isOcr
+            ? t("ocr_convert_desc", "Extract text and tabular data from scanned PDFs or images into structured document formats.")
             : t("generic_convert_desc", "Fast client-side document conversion with preserved fonts and layouts.")}
         </p>
       </div>
@@ -41,7 +41,7 @@ export const GenericConvertEditor: React.FC<GenericConvertEditorProps> = ({
       {isOcr && (
         <div style={{ display: 'flex', flexDirection: 'column', gap: 8, background: 'var(--bg-input)', padding: 12, borderRadius: 10, border: '1px solid var(--border-color)' }}>
           <label style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--text-main)' }}>
-            {t("ocr_output_format", "Pilih Format Hasil Ekstraksi:")}
+            {t("ocr_output_format", "Select Output Format:")}
           </label>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
             <button
@@ -59,7 +59,7 @@ export const GenericConvertEditor: React.FC<GenericConvertEditorProps> = ({
                 textAlign: 'center',
               }}
             >
-              📄 Teks Polos (.txt)
+              📄 {t("ocr_format_txt", "Plain Text (.txt)")}
             </button>
             <button
               type="button"
@@ -76,17 +76,17 @@ export const GenericConvertEditor: React.FC<GenericConvertEditorProps> = ({
                 textAlign: 'center',
               }}
             >
-              📊 Tabel Excel (.xlsx)
+              📊 {t("ocr_format_xlsx", "Excel Spreadsheet (.xlsx)")}
             </button>
           </div>
           {ocrFormat === 'xlsx' && (
             <span style={{ fontSize: '0.72rem', color: '#10b981', fontWeight: 600 }}>
-              ✨ Mesin AI Table Detector akan memetakan baris & kolom pindaian ke spreadsheet Excel.
+              ✨ {t("ocr_table_hint", "AI Table Detector maps scanned columns and rows directly into native Excel cells.")}
             </span>
           )}
         </div>
       )}
-      
+
       <div style={{ padding: 12, borderRadius: 8, background: 'var(--bg-input)', border: '1px solid var(--border-color)', fontSize: '0.8rem', color: 'var(--text-accent)' }}>
         {t("local_privacy_badge", "✨ 100% Client-Side Privacy: Your files never leave your device.")}
       </div>
@@ -112,7 +112,7 @@ export const GenericConvertEditor: React.FC<GenericConvertEditorProps> = ({
         ) : (
           <Download size={18} />
         )}
-        <span>{isProcessing ? t("generic_converting_btn", "Converting...") : (isOcr ? t("start_ocr_btn", "Jalankan Ekstraksi OCR") : t("apply_generic_convert", "Start Conversion"))}</span>
+        <span>{isProcessing ? t("generic_converting_btn", "Converting...") : (isOcr ? t("start_ocr_btn", "Start OCR Extraction") : t("apply_generic_convert", "Start Conversion"))}</span>
       </button>
     </div>
   );

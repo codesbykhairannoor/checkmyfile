@@ -291,7 +291,7 @@ export function useDocumentProcessor() {
     const { files, toolId, toolCategory, currentLang } = options;
     if (files.length === 0) return;
     const t = getUiTranslations(currentLang);
-    
+
     setIsProcessing(true);
     setIsCompleted(false);
     setProgress(5);

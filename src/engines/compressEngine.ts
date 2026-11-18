@@ -51,10 +51,10 @@ export const compressPdf = async (
         if (dict.has('PieceInfo' as any)) dict.delete('PieceInfo' as any);
         if (dict.has('Metadata' as any)) dict.delete('Metadata' as any);
         if (isAggressive && dict.has('Annots' as any)) {
-          try { dict.delete('Annots' as any); } catch (_) {}
+          try { dict.delete('Annots' as any); } catch (_) { }
         }
       }
-    } catch (_) {}
+    } catch (_) { }
   }
   onProgress(55);
 
@@ -63,7 +63,7 @@ export const compressPdf = async (
       const catalog = pdfDoc.catalog;
       if (catalog.has('Metadata' as any)) catalog.delete('Metadata' as any);
       if (catalog.has('PieceInfo' as any)) catalog.delete('PieceInfo' as any);
-    } catch (_) {}
+    } catch (_) { }
   }
   onProgress(70);
 
@@ -126,7 +126,7 @@ export const compressPdf = async (
         context.fillRect(0, 0, canvas.width, canvas.height);
         await page.render({ canvasContext: context, viewport, canvas } as any).promise;
         const jpegDataUrl = canvas.toDataURL('image/jpeg', jpegQuality);
-        
+
         // Convert base64 data url directly to Uint8Array to prevent fetch() blockages
         const base64Data = jpegDataUrl.split(',')[1];
         const binaryStr = window.atob(base64Data);

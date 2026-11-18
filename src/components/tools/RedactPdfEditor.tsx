@@ -62,7 +62,7 @@ export const RedactPdfEditor: React.FC<RedactPdfEditorProps> = ({
       <div style={{ padding: '24px', flex: 1, overflowY: 'auto' }}>
         <div className="glass-panel" style={{ padding: '20px', marginBottom: 20 }}>
           <label style={{ fontSize: '0.85rem', fontWeight: 700, display: 'block', marginBottom: 12 }}>
-            {t("black_box_mode", "Black Box Mode")}
+            {t("redaction_mode", "Redaction Mode")}
           </label>
           <div style={{ display: 'flex', gap: 12, marginBottom: 16 }}>
             <button
@@ -102,7 +102,7 @@ export const RedactPdfEditor: React.FC<RedactPdfEditorProps> = ({
         <div style={{ background: 'var(--bg-card)', padding: 14, borderRadius: 12, border: '1px solid var(--border-color)', marginBottom: 16, display: 'flex', flexDirection: 'column', gap: 8 }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <span style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--text-main)' }}>
-              📜 Sertifikat Sanitasi GDPR / HIPAA
+              📜 {t("gdpr_cert_title", "GDPR / HIPAA Sanitization Certificate")}
             </span>
             <input
               type="checkbox"
@@ -112,7 +112,7 @@ export const RedactPdfEditor: React.FC<RedactPdfEditorProps> = ({
             />
           </div>
           <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)', lineHeight: 1.4 }}>
-            Melampirkan sertifikat bukti hukum pemusnahan biner di halaman terakhir PDF.
+            {t("gdpr_cert_desc", "Appends legal proof of permanent binary data destruction as the final PDF page.")}
           </span>
         </div>
 

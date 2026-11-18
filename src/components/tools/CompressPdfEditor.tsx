@@ -93,7 +93,7 @@ export const CompressPdfEditor: React.FC<CompressPdfEditorProps> = ({
             color: mode === 'preset' ? '#fff' : 'var(--text-muted)'
           }}
         >
-          {t("preset_mode", "Prasetel")}
+          {t("preset_mode", "Presets")}
         </button>
         <button
           type="button"
@@ -139,10 +139,10 @@ export const CompressPdfEditor: React.FC<CompressPdfEditorProps> = ({
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <div>
               <span style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)', display: 'block' }}>
-                {t("target_size_label", "Batas Maksimal File (Target Size)")}
+                {t("target_size_label", "Max File Size Limit (Target)")}
               </span>
               <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
-                {t("target_size_sub", "Mesin kompresi akan menyesuaikan DPI agar file di bawah batas ini.")}
+                {t("target_size_sub", "Compresses precisely below this limit for strict portal uploads.")}
               </span>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 4, background: 'var(--bg-card)', padding: '6px 10px', borderRadius: 8, border: '1px solid var(--border-color)' }}>
@@ -170,14 +170,14 @@ export const CompressPdfEditor: React.FC<CompressPdfEditorProps> = ({
           {/* Quick Target Chips */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
             <span style={{ fontSize: '0.72rem', fontWeight: 600, color: 'var(--text-muted)' }}>
-              {t("quick_presets", "Pilihan Cepat Standar:")}
+              {t("target_presets_label", "Common Size Standards:")}
             </span>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 8 }}>
               {[
-                { label: 'CPNS / BUMN', size: 200 },
-                { label: 'Paspor / Visa', size: 300 },
-                { label: 'Beasiswa / Kampus', size: 500 },
-                { label: 'Lampiran Email', size: 1000 },
+                { labelKey: 'preset_target_200', defaultLabel: 'Strict Web Portals', size: 200, badge: '200 KB' },
+                { labelKey: 'preset_target_300', defaultLabel: 'Government / ID Forms', size: 300, badge: '300 KB' },
+                { labelKey: 'preset_target_500', defaultLabel: 'Job & College Applications', size: 500, badge: '500 KB' },
+                { labelKey: 'preset_target_1000', defaultLabel: 'Email Attachment (1 MB)', size: 1000, badge: '1 MB' },
               ].map((chip) => (
                 <button
                   key={chip.size}
@@ -199,8 +199,10 @@ export const CompressPdfEditor: React.FC<CompressPdfEditorProps> = ({
                     transition: 'all 0.15s ease',
                   }}
                 >
-                  <span>{chip.size} KB</span>
-                  <span style={{ fontSize: '0.68rem', fontWeight: 500, color: 'var(--text-muted)' }}>{chip.label}</span>
+                  <span>{chip.badge}</span>
+                  <span style={{ fontSize: '0.68rem', fontWeight: 500, color: 'var(--text-muted)' }}>
+                    {t(chip.labelKey, chip.defaultLabel)}
+                  </span>
                 </button>
               ))}
             </div>
@@ -214,10 +216,10 @@ export const CompressPdfEditor: React.FC<CompressPdfEditorProps> = ({
           <button
             type="button"
             onClick={() => setQuality('extreme')}
-            style={{ 
-              display: 'flex', alignItems: 'center', gap: 14, padding: '14px 16px', 
-              background: quality === 'extreme' ? 'var(--brand-gradient)' : 'var(--bg-input)', 
-              border: quality === 'extreme' ? 'none' : '1px solid var(--border-color)', 
+            style={{
+              display: 'flex', alignItems: 'center', gap: 14, padding: '14px 16px',
+              background: quality === 'extreme' ? 'var(--brand-gradient)' : 'var(--bg-input)',
+              border: quality === 'extreme' ? 'none' : '1px solid var(--border-color)',
               borderRadius: 12, cursor: 'pointer', textAlign: 'left',
               color: quality === 'extreme' ? '#fff' : 'var(--text-main)',
               transition: 'all 0.2s ease'
@@ -233,10 +235,10 @@ export const CompressPdfEditor: React.FC<CompressPdfEditorProps> = ({
           <button
             type="button"
             onClick={() => setQuality('balanced')}
-            style={{ 
-              display: 'flex', alignItems: 'center', gap: 14, padding: '14px 16px', 
-              background: quality === 'balanced' ? 'var(--brand-gradient)' : 'var(--bg-input)', 
-              border: quality === 'balanced' ? 'none' : '1px solid var(--border-color)', 
+            style={{
+              display: 'flex', alignItems: 'center', gap: 14, padding: '14px 16px',
+              background: quality === 'balanced' ? 'var(--brand-gradient)' : 'var(--bg-input)',
+              border: quality === 'balanced' ? 'none' : '1px solid var(--border-color)',
               borderRadius: 12, cursor: 'pointer', textAlign: 'left',
               color: quality === 'balanced' ? '#fff' : 'var(--text-main)',
               transition: 'all 0.2s ease'
@@ -252,10 +254,10 @@ export const CompressPdfEditor: React.FC<CompressPdfEditorProps> = ({
           <button
             type="button"
             onClick={() => setQuality('high')}
-            style={{ 
-              display: 'flex', alignItems: 'center', gap: 14, padding: '14px 16px', 
-              background: quality === 'high' ? 'var(--brand-gradient)' : 'var(--bg-input)', 
-              border: quality === 'high' ? 'none' : '1px solid var(--border-color)', 
+            style={{
+              display: 'flex', alignItems: 'center', gap: 14, padding: '14px 16px',
+              background: quality === 'high' ? 'var(--brand-gradient)' : 'var(--bg-input)',
+              border: quality === 'high' ? 'none' : '1px solid var(--border-color)',
               borderRadius: 12, cursor: 'pointer', textAlign: 'left',
               color: quality === 'high' ? '#fff' : 'var(--text-main)',
               transition: 'all 0.2s ease'

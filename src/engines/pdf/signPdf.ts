@@ -8,7 +8,7 @@ export interface SignatureConfig {
   width: number;
   height: number;
   imageUrl: string; // Base64 data URL
-  
+
   // Optional cryptographic P12/PFX signing
   p12Bytes?: ArrayBuffer;
   password?: string;
@@ -40,7 +40,7 @@ export async function signPdf(
   onProgress?: (progress: number) => void
 ): Promise<Blob> {
   onProgress?.(10);
-  
+
   const arrayBuffer = await file.arrayBuffer();
   onProgress?.(25);
 
@@ -49,7 +49,7 @@ export async function signPdf(
   const page = pages[config.pageIndex];
 
   if (!page) {
-    throw new Error('Halaman target tanda tangan tidak valid.');
+    throw new Error('Target signature page does not exist or is invalid.');
   }
 
   // Parse image format
@@ -138,7 +138,7 @@ export async function signPdf(
 
     // Compute original and signed SHA-256
     const originalHash = await computeSha256Hex(arrayBuffer);
-    
+
     // Save intermediate to compute final hash
     const intermediateBytes = await pdfDoc.save();
     const signedHash = await computeSha256Hex(intermediateBytes);
