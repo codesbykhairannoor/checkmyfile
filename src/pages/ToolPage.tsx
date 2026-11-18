@@ -604,8 +604,8 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                           setProGateReason({
                             featureName: currentLang === 'id' ? 'Kustomisasi Nama File' : 'Custom File Name',
                             desc: currentLang === 'id'
-                              ? 'Fitur kustomisasi nama file unduhan khusus untuk anggota PRO Lifetime. Upgrade sekali bayar untuk akses selamanya.'
-                              : 'Renaming and customizing output download file names is an exclusive PRO Lifetime feature.',
+                              ? 'Beri nama dan atur file unduhan Anda secara bebas tanpa batasan.'
+                              : 'Name and organize your processed output files freely without restrictions.',
                           });
                           setShowProGateModal(true);
                         }}
