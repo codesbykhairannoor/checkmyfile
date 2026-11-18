@@ -19,6 +19,8 @@ export interface UserProfile {
   expiresAt?: number | null; // Timestamp millisecond
   createdAt: number;
   lastLoginAt: number;
+  monthlyBatchesUsed?: number;
+  monthlyBatchResetMonth?: string;
 }
 
 export interface AuthContextType {

@@ -17,6 +17,7 @@ import {
 import { doc, getDoc, setDoc, updateDoc } from 'firebase/firestore';
 import { auth, db, googleProvider, isFirebaseConfigured } from '../config/firebase';
 import type { UserProfile, AuthContextType } from '../types/auth';
+import { getCurrentMonthKey } from '../utils/batchQuota';
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
@@ -27,6 +28,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [isAuthModalOpen, setIsAuthModalOpen] = useState<boolean>(false);
 
   const fetchOrCreateProfile = useCallback(async (firebaseUser: User): Promise<UserProfile> => {
+    const monthKey = getCurrentMonthKey();
     const fallbackProfile: UserProfile = {
       uid: firebaseUser.uid,
       email: firebaseUser.email,
@@ -36,6 +38,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       subscriptionStatus: 'inactive',
       createdAt: Date.now(),
       lastLoginAt: Date.now(),
+      monthlyBatchesUsed: 0,
+      monthlyBatchResetMonth: monthKey,
     };
 
     if (!db) {
@@ -51,6 +55,17 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         let currentPlan = data.plan;
         let currentStatus = data.subscriptionStatus;
 
+        let batchesUsed = data.monthlyBatchesUsed || 0;
+        let batchMonth = data.monthlyBatchResetMonth || monthKey;
+        if (batchMonth !== monthKey) {
+          batchesUsed = 0;
+          batchMonth = monthKey;
+        }
+
+        try {
+          localStorage.setItem(`hmf_batch_${firebaseUser.uid}_${monthKey}`, String(batchesUsed));
+        } catch (_) {}
+
         if (data.plan === 'pro' && data.expiresAt && Date.now() > data.expiresAt) {
           currentPlan = 'free';
           currentStatus = 'inactive';
@@ -58,12 +73,16 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
             plan: 'free',
             subscriptionStatus: 'inactive',
             lastLoginAt: Date.now(),
+            monthlyBatchesUsed: batchesUsed,
+            monthlyBatchResetMonth: batchMonth,
           });
         } else {
           await updateDoc(userDocRef, {
             lastLoginAt: Date.now(),
             displayName: firebaseUser.displayName || data.displayName,
             photoURL: firebaseUser.photoURL || data.photoURL,
+            monthlyBatchesUsed: batchesUsed,
+            monthlyBatchResetMonth: batchMonth,
           });
         }
 
@@ -72,6 +91,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           plan: currentPlan,
           subscriptionStatus: currentStatus,
           lastLoginAt: Date.now(),
+          monthlyBatchesUsed: batchesUsed,
+          monthlyBatchResetMonth: batchMonth,
         };
       } else {
         await setDoc(userDocRef, fallbackProfile);

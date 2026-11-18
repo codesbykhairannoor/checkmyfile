@@ -233,24 +233,24 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
           const detectedRatio = baseViewport.width / baseViewport.height;
           setPageAspectRatio(detectedRatio);
 
-          // Use static fallback dimensions since we rely on CSS for dynamic scaling now
+          // Calculate available workspace dimensions with safety padding for scrollbars & margins
           const rawParentWidth = previewWrapperRef.current?.parentElement?.clientWidth || 0;
-          const workspaceWidth = Math.max(300, rawParentWidth > 50 ? rawParentWidth : 680);
-          
-          // Subtract Toolbar height (~64px) + margin/padding/gap (~76px) so the paper fits PERFECTLY
           const rawParentHeight = previewWrapperRef.current?.parentElement?.clientHeight || 0;
-          const workspaceHeight = Math.max(300, (rawParentHeight > 150 ? rawParentHeight : 600) - 120);
+          const containerEl = previewWrapperRef.current;
+          const containerClientW = containerEl?.clientWidth || (rawParentWidth - 32);
+          const containerClientH = containerEl?.clientHeight || (rawParentHeight - 64);
 
-          const paddingX = 0;
-          const paddingY = 0;
+          // Subtract 36px so the paper canvas has comfortable breathing room and never gets clipped by borders or scrollbars
+          const availableW = Math.max(260, containerClientW - 36);
+          const availableH = Math.max(260, containerClientH - 32);
 
-          const scaleX = Math.max(0.1, (workspaceWidth - paddingX) / baseViewport.width);
-          const scaleY = Math.max(0.1, (workspaceHeight - paddingY) / baseViewport.height);
+          const scaleX = Math.max(0.1, availableW / baseViewport.width);
+          const scaleY = Math.max(0.1, availableH / baseViewport.height);
 
           const isMobile = window.innerWidth <= 768;
-          const fitScale = (isMobile) ? scaleX : Math.min(scaleX, scaleY);
+          const fitScale = isMobile ? scaleX : Math.min(scaleX, scaleY);
           const renderScale = fitScale * zoomScale;
-          setPixelWidth(baseViewport.width * renderScale);
+          setPixelWidth(Math.round(baseViewport.width * renderScale));
         } else if (['png', 'jpg', 'jpeg', 'webp', 'gif'].includes(ext)) {
           // Image object URL and aspect ratio are now handled by a dedicated useEffect
           // to prevent continuous recreation when workspaceDim changes (which causes flickering/shrinking)
@@ -434,7 +434,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
         style={{
           background: 'var(--bg-input)',
           borderRadius: 12,
-          padding: '12px 16px',
+          padding: '16px',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
@@ -443,18 +443,21 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
           width: '100%',
           flex: 1,
           overflow: 'auto',
+          boxSizing: 'border-box',
         }}
       >
         {/* Main Paper / Render area */}
         <div
           style={{
             position: 'relative',
-            width: '100%',
-            maxWidth: '100%',
+            width: pixelWidth ? `${pixelWidth}px` : '100%',
+            maxWidth: zoomScale <= 1.0 ? '100%' : 'none',
+            margin: '0 auto',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            flex: isTxt ? 1 : undefined
+            flex: isTxt ? 1 : undefined,
+            transition: 'width 0.15s ease-out',
           }}
         >
           {/* Loading overlay inside the desk surface */}

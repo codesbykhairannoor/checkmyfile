@@ -136,35 +136,51 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
                 onChange={(e) => setActiveFileIndex(Number(e.target.value))}
                 style={{
                   width: '100%',
-                  padding: '8px 12px',
+                  maxWidth: '100%',
+                  padding: '9px 12px',
                   borderRadius: 8,
-                  fontSize: '0.85rem',
+                  fontSize: '0.84rem',
                   fontWeight: 600,
                   background: 'var(--bg-input)',
                   border: '1px solid var(--border-color)',
                   color: 'var(--text-main)',
                   outline: 'none',
-                  cursor: 'pointer'
+                  cursor: 'pointer',
+                  boxSizing: 'border-box',
                 }}
               >
-                {files.map((f, idx) => (
-                  <option key={idx} value={idx}>
-                    #{idx + 1}: {f.name} ({formatSize(f.size)})
-                  </option>
-                ))}
+                {files.map((f, idx) => {
+                  const maxChars = 34;
+                  let displayName = f.name;
+                  if (f.name.length > maxChars) {
+                    const ext = f.name.includes('.') ? '.' + f.name.split('.').pop() : '';
+                    const base = f.name.slice(0, f.name.length - ext.length);
+                    displayName = base.slice(0, 20) + '...' + (ext ? ext : '');
+                  }
+                  return (
+                    <option key={idx} value={idx} title={f.name}>
+                      #{idx + 1}: {displayName} ({formatSize(f.size)})
+                    </option>
+                  );
+                })}
               </select>
             </div>
           )}
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
-            <span style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)', wordBreak: 'break-all' }}>
+            <span style={{ fontSize: '0.86rem', fontWeight: 700, color: 'var(--text-main)', overflowWrap: 'break-word', wordBreak: 'break-word', lineHeight: 1.4 }}>
               {files[activeFileIndex]?.name}
             </span>
-            <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', display: 'flex', alignItems: 'center', gap: 6 }}>
-              <span style={{ background: 'var(--bg-input)', padding: '2px 8px', borderRadius: 12 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 2 }}>
+              <span style={{ fontSize: '0.74rem', fontWeight: 600, color: 'var(--text-muted)', background: 'var(--bg-input)', padding: '2px 8px', borderRadius: 8, border: '1px solid var(--border-color)' }}>
                 {formatSize(files[activeFileIndex]?.size || 0)}
               </span>
-            </span>
+              {files.length > 1 && (
+                <span style={{ fontSize: '0.74rem', color: 'var(--text-muted)' }}>
+                  #{activeFileIndex + 1} / {files.length}
+                </span>
+              )}
+            </div>
           </div>
 
           {/* Quick Actions for Files */}

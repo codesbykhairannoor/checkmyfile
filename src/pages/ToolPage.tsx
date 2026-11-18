@@ -7,9 +7,11 @@ import { FileDropzone } from '../components/common/FileDropzone';
 import { ProgressBar } from '../components/common/ProgressBar';
 import { SeoRichSections, useSeoData } from '../components/common/SeoRichSections';
 import { ToolResearchSection } from '../components/seo-sections/ToolResearchSection';
-import { Download, Crown, AlertCircle } from 'lucide-react';
+import { Download, Crown, AlertCircle, Sparkles } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { ProGateModal } from '../components/common/ProGateModal';
+import { BatchGateModal, type BatchGateType } from '../components/common/BatchGateModal';
+import { checkBatchQuota, recordBatchUsage } from '../utils/batchQuota';
 import { useWorkspaceFiles } from '../hooks/useWorkspaceFiles';
 import { useDocumentProcessor } from '../hooks/useDocumentProcessor';
 import { smartHighlight } from '../utils/textFormatting';
@@ -52,6 +54,20 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
   const { user, isPro, openAuthModal } = useAuth();
   const [showProGateModal, setShowProGateModal] = useState<boolean>(false);
   const [proGateReason, setProGateReason] = useState<{ title?: string; desc?: string; featureName?: string; filesCount?: number }>({});
+
+  // Batch Mode Quota & Gate Modal States (3 free batches/mo for logged-in free users)
+  const [showBatchGateModal, setShowBatchGateModal] = useState<boolean>(false);
+  const [batchGateType, setBatchGateType] = useState<BatchGateType>('auth');
+  const [batchQuota, setBatchQuota] = useState(() => checkBatchQuota(user, isPro));
+
+  React.useEffect(() => {
+    const updateQuota = () => {
+      setBatchQuota(checkBatchQuota(user, isPro));
+    };
+    updateQuota();
+    window.addEventListener('batch-quota-updated', updateQuota);
+    return () => window.removeEventListener('batch-quota-updated', updateQuota);
+  }, [user, isPro]);
 
   const { files, setFiles } = useWorkspaceFiles(tool.id);
   const {
@@ -143,15 +159,21 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
   const tAuth = authTranslations[currentLang] || authTranslations['en'] || {};
 
   const handleStartProcessing = (options?: any) => {
-    // 10-document batch limit for Free users across all tools
-    if (!isPro && files.length > 10) {
-      setProGateReason({
-        title: tAuth.batch_free_limit_title || 'Batch Limit Exceeded (10 Documents)',
-        desc: tAuth.batch_free_limit_desc || `The Free Starter plan processes up to 10 files simultaneously (${files.length} files selected). Upgrade to PRO Lifetime for unlimited batch processing in browser RAM.`,
-        filesCount: files.length,
-      });
-      setShowProGateModal(true);
-      return;
+    // Batch processing gating (files.length > 1)
+    if (files.length > 1 && !isPro) {
+      if (!user) {
+        setBatchGateType('auth');
+        setShowBatchGateModal(true);
+        return;
+      }
+      const quota = checkBatchQuota(user, isPro);
+      if (!quota.allowed) {
+        setBatchGateType('upgrade');
+        setShowBatchGateModal(true);
+        return;
+      }
+      // Consume 1 batch usage
+      recordBatchUsage(user.uid);
     }
 
     startProcessing({
@@ -218,13 +240,22 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
         {/* Interactive Document Live Preview & Editor */}
         {files.length > 0 && !isCompleted && (
           <div style={{ maxWidth: 1440, margin: '0 auto', width: '100%', padding: '24px 24px 0', flex: 1, display: 'flex', flexDirection: 'column' }}>
-            {!isPro && files.length > 10 && (
+            {/* Batch Processing Quota Banner */}
+            {!isPro && files.length > 1 && (
               <div
                 style={{
                   width: '100%',
                   padding: '12px 20px',
-                  backgroundColor: 'rgba(234, 179, 8, 0.1)',
-                  border: '1px solid rgba(234, 179, 8, 0.3)',
+                  backgroundColor: !user 
+                    ? 'rgba(225, 29, 72, 0.08)' 
+                    : batchQuota.remaining > 0 
+                      ? 'rgba(16, 185, 129, 0.08)' 
+                      : 'rgba(234, 179, 8, 0.1)',
+                  border: !user 
+                    ? '1px solid rgba(225, 29, 72, 0.25)' 
+                    : batchQuota.remaining > 0 
+                      ? '1px solid rgba(16, 185, 129, 0.25)' 
+                      : '1px solid rgba(234, 179, 8, 0.3)',
                   borderRadius: 12,
                   marginBottom: 16,
                   display: 'flex',
@@ -232,43 +263,89 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                   justifyContent: 'space-between',
                   gap: 12,
                   flexWrap: 'wrap',
-                  color: '#ca8a04',
+                  color: 'var(--text-main)',
                   fontSize: '0.86rem',
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                  <AlertCircle size={18} style={{ flexShrink: 0 }} />
+                  {!user ? (
+                    <Sparkles size={18} color="var(--brand-primary)" style={{ flexShrink: 0 }} />
+                  ) : batchQuota.remaining > 0 ? (
+                    <Sparkles size={18} color="#10b981" style={{ flexShrink: 0 }} />
+                  ) : (
+                    <Crown size={18} color="#ca8a04" style={{ flexShrink: 0 }} />
+                  )}
                   <span>
-                    {tAuth.batch_limit_warning || `Free plan allows max 10 files. First 10 will be processed. Upgrade to PRO to process all files.`}
+                    {!user
+                      ? (currentLang === 'id'
+                          ? `Mode Batch (${files.length} dokumen) memerlukan akun gratis. Dapatkan 3 batch gratis setiap bulan.`
+                          : `Batch Mode (${files.length} documents) requires a free account. Get 3 free batches every month.`)
+                      : batchQuota.remaining > 0
+                        ? (currentLang === 'id'
+                            ? `Paket Free: Tersisa ${batchQuota.remaining} dari 3 batch gratis bulan ini.`
+                            : `Free Plan: ${batchQuota.remaining} of 3 free batches remaining this month.`)
+                        : (currentLang === 'id'
+                            ? `Batas 3 Batch Gratis Bulanan Telah Tercapai. Upgrade ke PRO untuk memproses semua dokumen.`
+                            : `Monthly Free Batch Limit (3/3) Reached. Upgrade to PRO to process all documents.`)}
                   </span>
                 </div>
-                <button
-                  type="button"
-                  onClick={() => {
-                    setProGateReason({
-                      title: tAuth.batch_free_limit_title || 'Batch Limit Exceeded (10 Documents)',
-                      filesCount: files.length,
-                    });
-                    setShowProGateModal(true);
-                  }}
-                  style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: 6,
-                    padding: '6px 14px',
-                    borderRadius: 8,
-                    background: '#eab308',
-                    color: '#000000',
-                    border: 'none',
-                    fontWeight: 800,
-                    fontSize: '0.8rem',
-                    cursor: 'pointer',
-                    flexShrink: 0,
-                  }}
-                >
-                  <Crown size={14} />
-                  <span>{tAuth.batch_upgrade_btn || 'Upgrade to PRO'}</span>
-                </button>
+
+                {!user ? (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setBatchGateType('auth');
+                      setShowBatchGateModal(true);
+                    }}
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 6,
+                      padding: '7px 16px',
+                      borderRadius: 8,
+                      background: 'var(--brand-primary)',
+                      color: '#ffffff',
+                      border: 'none',
+                      fontWeight: 700,
+                      fontSize: '0.82rem',
+                      cursor: 'pointer',
+                      flexShrink: 0,
+                      boxShadow: '0 2px 8px rgba(225, 29, 72, 0.25)',
+                    }}
+                  >
+                    <Sparkles size={14} />
+                    <span>{currentLang === 'id' ? 'Masuk & Buka 3 Batch Gratis' : 'Sign In for 3 Free Batches'}</span>
+                  </button>
+                ) : (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setBatchGateType('upgrade');
+                      setShowBatchGateModal(true);
+                    }}
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 6,
+                      padding: '6px 14px',
+                      borderRadius: 8,
+                      background: batchQuota.remaining > 0 ? 'rgba(245, 158, 11, 0.15)' : '#eab308',
+                      color: batchQuota.remaining > 0 ? '#d97706' : '#000000',
+                      border: batchQuota.remaining > 0 ? '1px solid rgba(245, 158, 11, 0.3)' : 'none',
+                      fontWeight: 800,
+                      fontSize: '0.8rem',
+                      cursor: 'pointer',
+                      flexShrink: 0,
+                    }}
+                  >
+                    <Crown size={14} />
+                    <span>
+                      {batchQuota.remaining > 0
+                        ? (currentLang === 'id' ? 'Buka Batch Tanpa Batas (PRO)' : 'Unlock Unlimited (PRO)')
+                        : (tAuth.batch_upgrade_btn || 'Upgrade to PRO')}
+                    </span>
+                  </button>
+                )}
               </div>
             )}
             <React.Suspense fallback={<div style={{ minHeight: 400, display: 'flex', justifyContent: 'center', alignItems: 'center' }}><div className="spinner" style={{ width: 40, height: 40, border: '4px solid var(--border-color)', borderTopColor: 'var(--text-accent)', borderRadius: '50%', animation: 'spin 1s linear infinite' }}></div></div>}>
@@ -510,6 +587,14 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
           setShowProGateModal(false);
         } : undefined}
         continueFreeLabel={tAuth.batch_continue_free_btn || 'Process First 10 Files (Free)'}
+      />
+
+      <BatchGateModal
+        isOpen={showBatchGateModal}
+        onClose={() => setShowBatchGateModal(false)}
+        type={batchGateType}
+        currentLang={currentLang}
+        filesCount={files.length}
       />
     </main>
   );
