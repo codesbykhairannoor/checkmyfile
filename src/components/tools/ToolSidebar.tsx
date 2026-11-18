@@ -70,6 +70,7 @@ interface ToolSidebarProps {
   pdfPagesCount?: number;
   currentLang: string;
   onBatchBlocked?: (type: 'auth' | 'upgrade') => void;
+  sidebarRef?: React.Ref<HTMLDivElement>;
 }
 
 export const ToolSidebar: React.FC<ToolSidebarProps> = ({
@@ -82,7 +83,8 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
   pdfPassword, setPdfPassword, cropConfig, setCropConfig, redactConfig, setRedactConfig,
   resizeConfig, setResizeConfig, editElements, setEditElements, selectedEditId, setSelectedEditId,
   formatSize, acceptTypes = '*', allowMultiple = false, pdfPagesCount = 100, currentLang,
-  onBatchBlocked
+  onBatchBlocked,
+  sidebarRef,
 }) => {
   const { user, isPro } = useAuth();
   const fileInputRef = React.useRef<HTMLInputElement>(null);
@@ -131,6 +133,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
 
   return (
     <div
+      ref={sidebarRef}
       className="mobile-full-width tool-workspace-right"
       style={{
         flex: '1 1 0%',

@@ -159,6 +159,32 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
 
   const [activeFileIndex, setActiveFileIndex] = useState<number>(0);
 
+  const rightSidebarRef = React.useRef<HTMLDivElement>(null);
+  const [sidebarHeight, setSidebarHeight] = useState<number | null>(null);
+
+  React.useEffect(() => {
+    if (!rightSidebarRef.current) return;
+    const updateHeight = () => {
+      if (rightSidebarRef.current) {
+        const h = Math.round(rightSidebarRef.current.offsetHeight);
+        if (h > 0) setSidebarHeight(h);
+      }
+    };
+    updateHeight();
+
+    const observer = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        const h = Math.round(
+          entry.borderBoxSize?.[0]?.blockSize ?? (entry.target as HTMLElement).offsetHeight ?? entry.contentRect.height
+        );
+        if (h > 0) setSidebarHeight(h);
+      }
+    });
+
+    observer.observe(rightSidebarRef.current);
+    return () => observer.disconnect();
+  }, [files, activeFileIndex, tool.id, compressQuality, compressPercent]);
+
   const formatSize = (bytes: number) => {
     if (bytes < 1024) return `${bytes} B`;
     if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
@@ -362,7 +388,19 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
             <React.Suspense fallback={<div style={{ minHeight: 400, display: 'flex', justifyContent: 'center', alignItems: 'center' }}><div className="spinner" style={{ width: 40, height: 40, border: '4px solid var(--border-color)', borderTopColor: 'var(--text-accent)', borderRadius: '50%', animation: 'spin 1s linear infinite' }}></div></div>}>
               <div className="tool-workspace-container" style={{ display: 'flex', width: '100%', gap: 24, justifyContent: 'center', alignItems: 'flex-start', paddingBottom: 64 }}>
                 {/* Left Workspace */}
-                <div className="tool-workspace-left" style={{ flex: '1 1 0%', minWidth: 0, position: 'sticky', top: 88, height: 'calc(100vh - 120px)', maxHeight: 850, minHeight: 520, display: 'flex', flexDirection: 'column', paddingRight: 4, boxSizing: 'border-box' }}>
+                <div
+                  className="tool-workspace-left"
+                  style={{
+                    flex: '1 1 0%',
+                    minWidth: 0,
+                    height: sidebarHeight ? `${Math.max(sidebarHeight, 520)}px` : 'calc(100vh - 120px)',
+                    minHeight: 520,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    paddingRight: 4,
+                    boxSizing: 'border-box',
+                  }}
+                >
                   <DocumentLivePreview
                     files={files}
                     currentLang={currentLang}
@@ -386,6 +424,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                   />
                 </div>
                 <ToolSidebar
+                  sidebarRef={rightSidebarRef}
                   currentLang={currentLang}
                   tool={tool} files={files} setFiles={setFiles} activeFileIndex={activeFileIndex} setActiveFileIndex={setActiveFileIndex}
                   isProcessing={isProcessing}
