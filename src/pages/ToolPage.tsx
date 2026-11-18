@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { getLocalizedSeo, supportsMultipleFiles, getCanonicalToolId, type ToolDefinition } from '../catalog/toolsCatalog';
 import { trackFileDownloaded } from '../lib/analytics';
 import { SeoHead } from '../components/seo/SeoHead';
@@ -86,6 +86,11 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
     processorMetadata,
     startProcessing, resetProcessor
   } = useDocumentProcessor();
+
+  const stableResultPreviewFiles = useMemo(() => {
+    if (resultPreviewFiles && resultPreviewFiles.length > 0) return resultPreviewFiles;
+    return resultFile ? [resultFile] : [];
+  }, [resultPreviewFiles, resultFile]);
 
   const isWorkspaceMode = files.length > 0;
 
@@ -548,7 +553,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
         {/* Live Preview of the Converted / Processed Result */}
         {isCompleted && resultFile && (
           <React.Suspense fallback={<div style={{ minHeight: 400, display: 'flex', justifyContent: 'center', alignItems: 'center' }}><div className="spinner" style={{ width: 40, height: 40, border: '4px solid var(--border-color)', borderTopColor: 'var(--text-accent)', borderRadius: '50%', animation: 'spin 1s linear infinite' }}></div></div>}>
-            <div style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: 'column', overflow: 'hidden', maxWidth: 1440, margin: '0 auto', width: '100%', padding: '32px 24px 0' }}>
+            <div style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: 'column', maxWidth: 1440, margin: '0 auto', width: '100%', padding: '32px 24px 0' }}>
               {tool.id === 'compare-pdf' ? (
                 <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0, gap: 24, alignItems: 'center' }}>
                   <div className="tool-workspace-container" style={{ display: 'flex', flex: 1, width: '100%', minHeight: 0, maxHeight: 800, gap: 24, overflow: 'hidden', justifyContent: 'center' }}>
@@ -583,7 +588,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                 </div>
               ) : (
                 <DocumentLivePreview
-                  files={resultPreviewFiles || [resultFile]}
+                  files={stableResultPreviewFiles}
                   currentLang={currentLang}
                   isResult={true}
                   renderBottomRight={

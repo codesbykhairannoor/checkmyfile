@@ -154,17 +154,23 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
     };
   }, [isPdf, totalPages, isLoadingPreview, activeFile]);
 
-  // Reset page number & states on file change
+  // Reset page number & states on actual file change (keyed to file identity to avoid resetting on reference changes)
+  const currentFileKey = activeFile ? `${activeFile.name}_${activeFile.size}_${activeFile.lastModified}` : '';
+  const prevFileKeyRef = useRef<string>(currentFileKey);
+
   useEffect(() => {
-    setPageNumber(1);
-    setZoomScale(1.0);
-    setPageAspectRatio(A4_PORTRAIT_RATIO);
-    setErrorText(null);
-    setTextPreviewContent(null);
-    if (previewWrapperRef.current) {
-      previewWrapperRef.current.scrollTop = 0;
+    if (prevFileKeyRef.current !== currentFileKey) {
+      prevFileKeyRef.current = currentFileKey;
+      setPageNumber(1);
+      setZoomScale(1.0);
+      setPageAspectRatio(A4_PORTRAIT_RATIO);
+      setErrorText(null);
+      setTextPreviewContent(null);
+      if (previewWrapperRef.current) {
+        previewWrapperRef.current.scrollTop = 0;
+      }
     }
-  }, [activeFileIndex, localActiveIndex, files, isResult]);
+  }, [currentFileKey, activeFileIndex, localActiveIndex, isResult]);
 
   // Dedicated effect to load PDF Document once to prevent thumbnail flashing
   useEffect(() => {
@@ -466,7 +472,9 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
           minHeight: 0,
           width: '100%',
           flex: 1,
-          overflow: 'auto',
+          overflowY: 'auto',
+          overflowX: 'hidden',
+          overscrollBehavior: 'contain',
           boxSizing: 'border-box',
         }}
       >
@@ -655,9 +663,13 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
   );
 
   if (isResult) {
+    if (hideSidebar) {
+      return content;
+    }
+
     return (
       <div className="tool-workspace-container mobile-col" style={{ display: 'flex', width: '100%', height: 'calc(100vh - 220px)', maxHeight: 800, minHeight: 0, flex: 1, gap: 24, justifyContent: 'center' }}>
-        <div className="tool-workspace-left mobile-full-width" style={{ flex: 1, height: '100%', minWidth: 0, minHeight: 0, display: 'flex', flexDirection: 'column', gap: 12, overflow: 'hidden', paddingRight: 8, paddingBottom: 24 }}>
+        <div className="tool-workspace-left mobile-full-width" style={{ flex: '1 1 0%', minWidth: 0, minHeight: 0, display: 'flex', flexDirection: 'column', gap: 12, overflow: 'hidden', paddingRight: 8, paddingBottom: 24 }}>
           {content}
         </div>
 
