@@ -19,6 +19,13 @@ import { auth, db, googleProvider, isFirebaseConfigured } from '../config/fireba
 import type { UserProfile, AuthContextType } from '../types/auth';
 import { getCurrentMonthKey } from '../utils/batchQuota';
 
+export const FOUNDER_LIFETIME_EMAILS = ['erstaunenn@gmail.com'];
+
+export const isFounderLifetimeEmail = (email?: string | null): boolean => {
+  if (!email) return false;
+  return FOUNDER_LIFETIME_EMAILS.includes(email.trim().toLowerCase());
+};
+
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -29,13 +36,16 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const fetchOrCreateProfile = useCallback(async (firebaseUser: User): Promise<UserProfile> => {
     const monthKey = getCurrentMonthKey();
+    const isFounder = isFounderLifetimeEmail(firebaseUser.email);
+
     const fallbackProfile: UserProfile = {
       uid: firebaseUser.uid,
       email: firebaseUser.email,
       displayName: firebaseUser.displayName,
       photoURL: firebaseUser.photoURL,
-      plan: 'free',
-      subscriptionStatus: 'inactive',
+      plan: isFounder ? 'pro' : 'free',
+      subscriptionStatus: isFounder ? 'active' : 'inactive',
+      expiresAt: null,
       createdAt: Date.now(),
       lastLoginAt: Date.now(),
       monthlyBatchesUsed: 0,
@@ -52,8 +62,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
       if (userDocSnap.exists()) {
         const data = userDocSnap.data() as UserProfile;
-        let currentPlan = data.plan;
-        let currentStatus = data.subscriptionStatus;
+        let currentPlan = isFounder ? 'pro' : data.plan;
+        let currentStatus = isFounder ? 'active' : data.subscriptionStatus;
 
         let batchesUsed = data.monthlyBatchesUsed || 0;
         let batchMonth = data.monthlyBatchResetMonth || monthKey;
@@ -66,7 +76,18 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           localStorage.setItem(`hmf_batch_${firebaseUser.uid}_${monthKey}`, String(batchesUsed));
         } catch (_) {}
 
-        if (data.plan === 'pro' && data.expiresAt && Date.now() > data.expiresAt) {
+        if (isFounder) {
+          currentPlan = 'pro';
+          currentStatus = 'active';
+          await updateDoc(userDocRef, {
+            plan: 'pro',
+            subscriptionStatus: 'active',
+            expiresAt: null,
+            lastLoginAt: Date.now(),
+            monthlyBatchesUsed: 0,
+            monthlyBatchResetMonth: batchMonth,
+          });
+        } else if (data.plan === 'pro' && data.expiresAt && Date.now() > data.expiresAt) {
           currentPlan = 'free';
           currentStatus = 'inactive';
           await updateDoc(userDocRef, {
@@ -90,6 +111,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           ...data,
           plan: currentPlan,
           subscriptionStatus: currentStatus,
+          expiresAt: isFounder ? null : data.expiresAt,
           lastLoginAt: Date.now(),
           monthlyBatchesUsed: batchesUsed,
           monthlyBatchResetMonth: batchMonth,
@@ -293,9 +315,11 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }, []);
 
   const isPro = Boolean(
-    profile?.plan === 'pro' &&
-    profile?.subscriptionStatus === 'active' &&
-    (!profile.expiresAt || profile.expiresAt > Date.now())
+    isFounderLifetimeEmail(user?.email) ||
+    isFounderLifetimeEmail(profile?.email) ||
+    (profile?.plan === 'pro' &&
+      profile?.subscriptionStatus === 'active' &&
+      (!profile.expiresAt || profile.expiresAt > Date.now()))
   );
 
   return (

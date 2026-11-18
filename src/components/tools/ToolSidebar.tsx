@@ -25,6 +25,8 @@ import { ResizePdfEditor } from './ResizePdfEditor';
 import { EditPdfEditor } from './EditPdfEditor';
 import { getCanonicalToolId, type ToolDefinition } from '../../catalog/toolsCatalog';
 import { editorTranslations } from '../../i18n/editorTranslations';
+import { useAuth } from '../../context/AuthContext';
+import { checkBatchQuota } from '../../utils/batchQuota';
 
 interface ToolSidebarProps {
   tool: ToolDefinition;
@@ -56,7 +58,7 @@ interface ToolSidebarProps {
   pdfPassword?: string; setPdfPassword?: (v: string) => void;
   cropConfig?: any; setCropConfig?: (v: any) => void;
   redactConfig?: any; setRedactConfig?: (v: any) => void;
-  
+
   // New tools config
   resizeConfig?: any; setResizeConfig?: (v: any) => void;
   editElements?: any[]; setEditElements?: React.Dispatch<React.SetStateAction<any[]>>;
@@ -67,6 +69,7 @@ interface ToolSidebarProps {
   allowMultiple?: boolean;
   pdfPagesCount?: number;
   currentLang: string;
+  onBatchBlocked?: (type: 'auth' | 'upgrade') => void;
 }
 
 export const ToolSidebar: React.FC<ToolSidebarProps> = ({
@@ -78,15 +81,44 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
   removeRange, setRemoveRange, insertFile, setInsertFile, insertAtIndex, setInsertAtIndex, signatureConfig, setSignatureConfig,
   pdfPassword, setPdfPassword, cropConfig, setCropConfig, redactConfig, setRedactConfig,
   resizeConfig, setResizeConfig, editElements, setEditElements, selectedEditId, setSelectedEditId,
-  formatSize, acceptTypes = '*', allowMultiple = false, pdfPagesCount = 100, currentLang
+  formatSize, acceptTypes = '*', allowMultiple = false, pdfPagesCount = 100, currentLang,
+  onBatchBlocked
 }) => {
+  const { user, isPro } = useAuth();
   const fileInputRef = React.useRef<HTMLInputElement>(null);
+
+  const handleAddFilesClick = () => {
+    if (allowMultiple && !isPro) {
+      if (!user) {
+        onBatchBlocked?.('auth');
+        return;
+      }
+      const quota = checkBatchQuota(user, isPro);
+      if (!quota.allowed) {
+        onBatchBlocked?.('upgrade');
+        return;
+      }
+    }
+    fileInputRef.current?.click();
+  };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files.length > 0) {
       const newFiles = Array.from(e.target.files);
       if (allowMultiple) {
-        setFiles(prev => [...prev, ...newFiles]);
+        const combined = [...files, ...newFiles];
+        if (combined.length > 1 && !isPro) {
+          if (!user) {
+            onBatchBlocked?.('auth');
+            return;
+          }
+          const quota = checkBatchQuota(user, isPro);
+          if (!quota.allowed) {
+            onBatchBlocked?.('upgrade');
+            return;
+          }
+        }
+        setFiles(combined);
       } else {
         setFiles(newFiles);
         setActiveFileIndex(0);
@@ -98,14 +130,32 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
   const canonicalId = getCanonicalToolId(tool.id);
 
   return (
-    <div className="mobile-full-width tool-workspace-right" style={{ flex: 1, minWidth: 350, paddingRight: 8, paddingBottom: 64, display: 'flex', flexDirection: 'column', gap: 16, marginTop: 0 }}>
-      <input 
-        type="file" 
-        ref={fileInputRef} 
-        onChange={handleFileChange} 
-        accept={acceptTypes} 
-        multiple={allowMultiple} 
-        style={{ display: 'none' }} 
+    <div
+      className="mobile-full-width tool-workspace-right"
+      style={{
+        flex: '1 1 0%',
+        minWidth: 0,
+        position: 'sticky',
+        top: 88,
+        height: 'calc(100vh - 120px)',
+        maxHeight: 850,
+        minHeight: 520,
+        overflowY: 'auto',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 16,
+        paddingRight: 4,
+        paddingBottom: 24,
+        boxSizing: 'border-box',
+      }}
+    >
+      <input
+        type="file"
+        ref={fileInputRef}
+        onChange={handleFileChange}
+        accept={acceptTypes}
+        multiple={allowMultiple}
+        style={{ display: 'none' }}
       />
 
       {files.length > 0 && (
@@ -150,13 +200,11 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
                 }}
               >
                 {files.map((f, idx) => {
-                  const maxChars = 34;
-                  let displayName = f.name;
-                  if (f.name.length > maxChars) {
-                    const ext = f.name.includes('.') ? '.' + f.name.split('.').pop() : '';
-                    const base = f.name.slice(0, f.name.length - ext.length);
-                    displayName = base.slice(0, 20) + '...' + (ext ? ext : '');
-                  }
+                  const lastDot = f.name.lastIndexOf('.');
+                  const ext = lastDot !== -1 ? f.name.slice(lastDot) : '';
+                  const base = lastDot !== -1 ? f.name.slice(0, lastDot) : f.name;
+                  const truncatedBase = base.length > 20 ? `${base.slice(0, 18).trim()}…` : base;
+                  const displayName = `${truncatedBase}${ext}`;
                   return (
                     <option key={idx} value={idx} title={f.name}>
                       #{idx + 1}: {displayName} ({formatSize(f.size)})
@@ -186,7 +234,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
           {/* Quick Actions for Files */}
           <div style={{ marginTop: 12, paddingTop: 12, borderTop: '1px solid var(--border-color)', display: 'flex', gap: 8 }}>
             <button
-              onClick={() => fileInputRef.current?.click()}
+              onClick={handleAddFilesClick}
               className="btn-secondary"
               style={{ flex: 1, padding: '8px', fontSize: '0.75rem', display: 'flex', justifyContent: 'center', background: 'var(--bg-input)' }}
             >
@@ -252,10 +300,10 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
             </summary>
             <div style={{ padding: '20px 16px', display: 'flex', flexDirection: 'column', gap: 24, background: 'var(--bg-card)' }}>
               {editElements && setEditElements && setSelectedEditId && (
-                <EditPdfEditor 
-                  elements={editElements} setElements={setEditElements} 
+                <EditPdfEditor
+                  elements={editElements} setElements={setEditElements}
                   selectedId={selectedEditId || null} setSelectedId={setSelectedEditId}
-                  activePageIndex={activeFileIndex} onApply={() => handleStartProcessing({ toolId: 'edit-pdf' })} tUi={tUi} isProcessing={isProcessing} 
+                  activePageIndex={activeFileIndex} onApply={() => handleStartProcessing({ toolId: 'edit-pdf' })} tUi={tUi} isProcessing={isProcessing}
                 />
               )}
               <div style={{ height: 1, background: 'var(--border-color)', margin: '0 -16px' }} />
@@ -283,7 +331,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
               )}
             </div>
           </details>
-          
+
           <details className="glass-panel" style={{ borderRadius: 16, border: '1px solid var(--border-color)', overflow: 'hidden' }}>
             <summary style={{ padding: '16px 20px', fontWeight: 800, cursor: 'pointer', outline: 'none', background: 'var(--bg-input)', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: 12 }}>
               <span style={{ flex: 1 }}>🛡️ {tUi['Security & Extras'] || (tUi["Security & Extras"] || "Security & Extras")}</span>

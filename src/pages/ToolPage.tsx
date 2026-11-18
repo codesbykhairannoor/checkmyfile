@@ -59,6 +59,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
   const [showBatchGateModal, setShowBatchGateModal] = useState<boolean>(false);
   const [batchGateType, setBatchGateType] = useState<BatchGateType>('auth');
   const [batchQuota, setBatchQuota] = useState(() => checkBatchQuota(user, isPro));
+  const [pendingBatchFiles, setPendingBatchFiles] = useState<File[] | null>(null);
 
   React.useEffect(() => {
     const updateQuota = () => {
@@ -68,6 +69,16 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
     window.addEventListener('batch-quota-updated', updateQuota);
     return () => window.removeEventListener('batch-quota-updated', updateQuota);
   }, [user, isPro]);
+
+  React.useEffect(() => {
+    if (user && pendingBatchFiles && pendingBatchFiles.length > 1) {
+      const quota = checkBatchQuota(user, isPro);
+      if (quota.allowed) {
+        setFiles(pendingBatchFiles);
+        setPendingBatchFiles(null);
+      }
+    }
+  }, [user, isPro, pendingBatchFiles]);
 
   const { files, setFiles } = useWorkspaceFiles(tool.id);
   const {
@@ -246,15 +257,15 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                 style={{
                   width: '100%',
                   padding: '12px 20px',
-                  backgroundColor: !user 
-                    ? 'rgba(225, 29, 72, 0.08)' 
-                    : batchQuota.remaining > 0 
-                      ? 'rgba(16, 185, 129, 0.08)' 
+                  backgroundColor: !user
+                    ? 'rgba(225, 29, 72, 0.08)'
+                    : batchQuota.remaining > 0
+                      ? 'rgba(16, 185, 129, 0.08)'
                       : 'rgba(234, 179, 8, 0.1)',
-                  border: !user 
-                    ? '1px solid rgba(225, 29, 72, 0.25)' 
-                    : batchQuota.remaining > 0 
-                      ? '1px solid rgba(16, 185, 129, 0.25)' 
+                  border: !user
+                    ? '1px solid rgba(225, 29, 72, 0.25)'
+                    : batchQuota.remaining > 0
+                      ? '1px solid rgba(16, 185, 129, 0.25)'
                       : '1px solid rgba(234, 179, 8, 0.3)',
                   borderRadius: 12,
                   marginBottom: 16,
@@ -278,15 +289,15 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                   <span>
                     {!user
                       ? (currentLang === 'id'
-                          ? `Mode Batch (${files.length} dokumen) memerlukan akun gratis. Dapatkan 3 batch gratis setiap bulan.`
-                          : `Batch Mode (${files.length} documents) requires a free account. Get 3 free batches every month.`)
+                        ? `Mode Batch (${files.length} dokumen) memerlukan akun gratis. Dapatkan 3 batch gratis setiap bulan.`
+                        : `Batch Mode (${files.length} documents) requires a free account. Get 3 free batches every month.`)
                       : batchQuota.remaining > 0
                         ? (currentLang === 'id'
-                            ? `Paket Free: Tersisa ${batchQuota.remaining} dari 3 batch gratis bulan ini.`
-                            : `Free Plan: ${batchQuota.remaining} of 3 free batches remaining this month.`)
+                          ? `Paket Free: Tersisa ${batchQuota.remaining} dari 3 batch gratis bulan ini.`
+                          : `Free Plan: ${batchQuota.remaining} of 3 free batches remaining this month.`)
                         : (currentLang === 'id'
-                            ? `Batas 3 Batch Gratis Bulanan Telah Tercapai. Upgrade ke PRO untuk memproses semua dokumen.`
-                            : `Monthly Free Batch Limit (3/3) Reached. Upgrade to PRO to process all documents.`)}
+                          ? `Batas 3 Batch Gratis Bulanan Telah Tercapai. Upgrade ke PRO untuk memproses semua dokumen.`
+                          : `Monthly Free Batch Limit (3/3) Reached. Upgrade to PRO to process all documents.`)}
                   </span>
                 </div>
 
@@ -351,7 +362,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
             <React.Suspense fallback={<div style={{ minHeight: 400, display: 'flex', justifyContent: 'center', alignItems: 'center' }}><div className="spinner" style={{ width: 40, height: 40, border: '4px solid var(--border-color)', borderTopColor: 'var(--text-accent)', borderRadius: '50%', animation: 'spin 1s linear infinite' }}></div></div>}>
               <div className="tool-workspace-container" style={{ display: 'flex', width: '100%', gap: 24, justifyContent: 'center', alignItems: 'flex-start', paddingBottom: 64 }}>
                 {/* Left Workspace */}
-                <div className="tool-workspace-left" style={{ flex: 1, minWidth: 0, position: 'sticky', top: 88, height: 'calc(100vh - 120px)', maxHeight: 850, minHeight: 520, display: 'flex', flexDirection: 'column', paddingRight: 8, paddingBottom: 24 }}>
+                <div className="tool-workspace-left" style={{ flex: '1 1 0%', minWidth: 0, position: 'sticky', top: 88, height: 'calc(100vh - 120px)', maxHeight: 850, minHeight: 520, display: 'flex', flexDirection: 'column', paddingRight: 4, paddingBottom: 24, boxSizing: 'border-box' }}>
                   <DocumentLivePreview
                     files={files}
                     currentLang={currentLang}
@@ -416,6 +427,10 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                   formatSize={formatSize}
                   acceptTypes={getAcceptTypes(tool.id)}
                   allowMultiple={supportsMultipleFiles(tool.id)}
+                  onBatchBlocked={(type) => {
+                    setBatchGateType(type);
+                    setShowBatchGateModal(true);
+                  }}
                 />
               </div>
             </React.Suspense>
@@ -450,6 +465,24 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
               <FileDropzone
                 currentLang={currentLang}
                 onFilesSelected={(selected) => {
+                  if (selected.length > 1 && !isPro) {
+                    if (!user) {
+                      setPendingBatchFiles(selected);
+                      setBatchGateType('auth');
+                      setShowBatchGateModal(true);
+                      setFiles([selected[0]]);
+                      resetProcessor();
+                      return;
+                    }
+                    const quota = checkBatchQuota(user, isPro);
+                    if (!quota.allowed) {
+                      setBatchGateType('upgrade');
+                      setShowBatchGateModal(true);
+                      setFiles([selected[0]]);
+                      resetProcessor();
+                      return;
+                    }
+                  }
                   setFiles(selected);
                   resetProcessor();
                 }}

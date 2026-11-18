@@ -59,7 +59,8 @@ export const recordBatchUsage = async (uid: string): Promise<number> => {
 };
 
 export const checkBatchQuota = (user: any | null, isPro: boolean): BatchQuotaStatus => {
-  if (isPro) {
+  const isFounder = Boolean(user?.email && user.email.toLowerCase().trim() === 'erstaunenn@gmail.com');
+  if (isPro || isFounder) {
     return {
       allowed: true,
       reason: 'ok',

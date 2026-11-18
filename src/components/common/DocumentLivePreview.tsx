@@ -68,7 +68,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
   const [pageNumber, setPageNumber] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>(1);
   const [zoomScale, setZoomScale] = useState<number>(1.0);
-  
+
   const [pdfDoc, setPdfDoc] = useState<any>(null);
   // pageAspectRatio: width / height of the actual document page (A4 portrait = 0.707)
   const [pageAspectRatio, setPageAspectRatio] = useState<number>(A4_PORTRAIT_RATIO);
@@ -119,7 +119,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
 
   useEffect(() => {
     if (!isPdf || totalPages <= 0) return;
-    
+
     const observer = new IntersectionObserver((entries) => {
       for (const entry of entries) {
         if (entry.isIntersecting) {
@@ -171,14 +171,14 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
         try {
           const arrayBuffer = await activeFile.arrayBuffer();
           if (isCancelled) return;
-          
+
           // Add 30-second timeout to prevent silent worker hangs on massive generated PDFs
           const pdfjsLib = await import('pdfjs-dist');
           pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorkerUrl;
           const pdfPromise = pdfjsLib.getDocument({ data: new Uint8Array(arrayBuffer) }).promise;
           const timeoutPromise = new Promise((_, reject) => setTimeout(() => reject(new Error('PDF parsing timeout')), 30000));
           const pdf = await Promise.race([pdfPromise, timeoutPromise]) as any;
-          
+
           if (isCancelled) {
             pdf.destroy();
             return;
@@ -199,7 +199,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
       return () => {
         isCancelled = true;
         if (currentPdf) {
-          try { currentPdf.destroy(); } catch(e) {}
+          try { currentPdf.destroy(); } catch (e) { }
         }
       };
     } else {
@@ -221,7 +221,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
 
         if (ext === 'pdf') {
           if (!pdfDoc) return; // Wait until pdfDoc is parsed
-          
+
           const page = await pdfDoc.getPage(Math.min(pageNumber, pdfDoc.numPages));
           const baseRotate = page.rotate || 0;
           // Ensure rotation is always positive (0, 90, 180, 270)
@@ -258,16 +258,16 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
           const workspaceWidth = Math.max(300, rawParentWidth > 50 ? rawParentWidth : 680);
           const rawParentHeight = previewWrapperRef.current?.parentElement?.clientHeight || 0;
           const workspaceHeight = Math.max(300, (rawParentHeight > 150 ? rawParentHeight : 600) - 120);
-          
+
           const baseWidth = 1000;
           const baseHeight = baseWidth / (pageAspectRatio || 1);
-          
+
           const scaleX = Math.max(0.1, workspaceWidth / baseWidth);
           const scaleY = Math.max(0.1, workspaceHeight / baseHeight);
-          
+
           const fitScale = Math.min(scaleX, scaleY);
           const renderScale = fitScale * zoomScale;
-          
+
           if (pageAspectRatio > 0.1) {
             setPixelWidth(baseWidth * renderScale);
           }
@@ -374,27 +374,45 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
           {isPdf && (
             <>
               <div style={{ width: 1, height: 22, background: 'var(--border-color)' }} />
-              <>
-                <button onClick={() => handlePageChange(Math.max(1, pageNumber - 1))} disabled={pageNumber <= 1 || isLoadingPreview} className="btn-secondary" style={{ width: 28, height: 28, padding: 0, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%' }}>
-                  <ChevronLeft size={16} />
-                </button>
-                <input
-                  type="range"
-                  min={1}
-                  max={totalPages}
-                  value={pageNumber}
-                  onChange={(e) => handlePageChange(parseInt(e.target.value))}
-                  style={{ width: 80, margin: '0 8px', cursor: 'pointer' }}
-                  title="Geser untuk pindah halaman dengan cepat"
-                />
-                <span style={{ fontWeight: 700, fontSize: '0.88rem', minWidth: 60, textAlign: 'center' }}>
-                  {pageNumber} / {totalPages}
+              {totalPages > 1 ? (
+                <div style={{ display: 'inline-flex', alignItems: 'center', gap: 4, background: 'var(--bg-input)', padding: '2px 8px', borderRadius: 8, border: '1px solid var(--border-color)' }}>
+                  <button
+                    onClick={() => handlePageChange(Math.max(1, pageNumber - 1))}
+                    disabled={pageNumber <= 1 || isLoadingPreview}
+                    className="btn-secondary"
+                    style={{ width: 26, height: 26, padding: 0, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', borderRadius: 6, border: 'none', background: 'transparent' }}
+                    title="Previous page"
+                  >
+                    <ChevronLeft size={15} />
+                  </button>
+                  <input
+                    type="range"
+                    min={1}
+                    max={totalPages}
+                    value={pageNumber}
+                    onChange={(e) => handlePageChange(parseInt(e.target.value))}
+                    style={{ width: 68, margin: '0 4px', cursor: 'pointer', accentColor: 'var(--brand-primary)' }}
+                    title="Slider halaman"
+                  />
+                  <span style={{ fontWeight: 700, fontSize: '0.82rem', minWidth: 54, textAlign: 'center', color: 'var(--text-main)' }}>
+                    {pageNumber} / {totalPages}
+                  </span>
+                  <button
+                    onClick={() => handlePageChange(Math.min(totalPages, pageNumber + 1))}
+                    disabled={pageNumber >= totalPages || isLoadingPreview}
+                    className="btn-secondary"
+                    style={{ width: 26, height: 26, padding: 0, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', borderRadius: 6, border: 'none', background: 'transparent' }}
+                    title="Next page"
+                  >
+                    <ChevronRight size={15} />
+                  </button>
+                </div>
+              ) : (
+                <span style={{ fontSize: '0.78rem', fontWeight: 600, color: 'var(--text-muted)', padding: '4px 10px', borderRadius: 8, background: 'var(--bg-input)', border: '1px solid var(--border-color)' }}>
+                  1 Page
                 </span>
-                <button onClick={() => handlePageChange(Math.min(totalPages, pageNumber + 1))} disabled={pageNumber >= totalPages || isLoadingPreview} className="btn-secondary" style={{ width: 28, height: 28, padding: 0, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%' }}>
-                  <ChevronRight size={16} />
-                </button>
-                <div style={{ width: 1, height: 22, background: 'var(--border-color)' }} />
-              </>
+              )}
+              <div style={{ width: 1, height: 22, background: 'var(--border-color)' }} />
               <button onClick={() => setZoomScale((z) => Math.max(0.5, z - 0.15))} className="btn-secondary" style={{ width: 28, height: 28, padding: 0, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%' }} title="Zoom Out">
                 <ZoomOut size={16} />
               </button>
@@ -528,13 +546,13 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
           {/* ===== ENCRYPTED / ERROR PDF RENDER AREA ===== */}
           {isPdf && !isLoadingPreview && !pdfDoc && errorText && (
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', flex: 1, minHeight: '100%', padding: 32, textAlign: 'center' }}>
-                <div style={{ width: 64, height: 64, borderRadius: 16, background: 'rgba(245, 158, 11, 0.1)', color: '#f59e0b', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
-                  <Lock size={32} />
-                </div>
-                <h5 style={{ fontSize: '1.1rem', fontWeight: 800, marginBottom: 8, color: '#1a202c' }}>Pratinjau Tidak Tersedia</h5>
-                <p style={{ color: '#64748b', fontSize: '0.9rem', lineHeight: 1.6, maxWidth: 400, margin: '0 auto' }}>
-                  {errorText}
-                </p>
+              <div style={{ width: 64, height: 64, borderRadius: 16, background: 'rgba(245, 158, 11, 0.1)', color: '#f59e0b', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
+                <Lock size={32} />
+              </div>
+              <h5 style={{ fontSize: '1.1rem', fontWeight: 800, marginBottom: 8, color: '#1a202c' }}>Pratinjau Tidak Tersedia</h5>
+              <p style={{ color: '#64748b', fontSize: '0.9rem', lineHeight: 1.6, maxWidth: 400, margin: '0 auto' }}>
+                {errorText}
+              </p>
             </div>
           )}
 
@@ -543,16 +561,16 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
             <div
               style={{
                 width: pixelWidth ? `${pixelWidth}px` : '100%',
-              aspectRatio: isTxt ? undefined : `${pageAspectRatio}`,
-              height: isTxt ? '100%' : undefined,
-              flexShrink: 0,
-              position: 'relative',
-              background: '#ffffff',
-              borderRadius: 4,
-              boxShadow: paperShadow,
-              overflow: 'hidden',
-              transition: 'aspect-ratio 0.3s ease, width 0.3s ease',
-              backgroundImage: `
+                aspectRatio: isTxt ? undefined : `${pageAspectRatio}`,
+                height: isTxt ? '100%' : undefined,
+                flexShrink: 0,
+                position: 'relative',
+                background: '#ffffff',
+                borderRadius: 4,
+                boxShadow: paperShadow,
+                overflow: 'hidden',
+                transition: 'aspect-ratio 0.3s ease, width 0.3s ease',
+                backgroundImage: `
                 repeating-linear-gradient(
                   0deg,
                   transparent,
@@ -561,67 +579,67 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
                   rgba(0,0,0,0.018) 28px
                 )
               `,
-            }}
-          >
+              }}
+            >
 
-            {/* Image — fills paper proportionally */}
-            {isImage && files.length > 0 && !isLoadingPreview && (
-              <img
-                src={previewImageUrl || undefined}
-                alt={activeFile.name}
-                style={{
-                  display: 'block',
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'contain',
-                  transform: `rotate(${previewRotate}deg)`,
-                  transition: 'transform 0.2s ease',
-                  transformOrigin: 'center center',
-                }}
-              />
-            )}
+              {/* Image — fills paper proportionally */}
+              {isImage && files.length > 0 && !isLoadingPreview && (
+                <img
+                  src={previewImageUrl || undefined}
+                  alt={activeFile.name}
+                  style={{
+                    display: 'block',
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'contain',
+                    transform: `rotate(${previewRotate}deg)`,
+                    transition: 'transform 0.2s ease',
+                    transformOrigin: 'center center',
+                  }}
+                />
+              )}
 
-            {isTxt && (
-              <OfficePreview
-                isDocx={false}
-                isText={isTxt}
-                isLoadingPreview={isLoadingPreview}
-                docxContainerRef={docxContainerRef}
-                textPreviewContent={textPreviewContent}
-              />
-            )}
+              {isTxt && (
+                <OfficePreview
+                  isDocx={false}
+                  isText={isTxt}
+                  isLoadingPreview={isLoadingPreview}
+                  docxContainerRef={docxContainerRef}
+                  textPreviewContent={textPreviewContent}
+                />
+              )}
 
-            {/* PPTX Live Preview */}
-            {isOfficeOther && isPptx && !isLoadingPreview && (
-              <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
-                <PptxPreview file={activeFile} zoomScale={zoomScale} />
-              </div>
-            )}
-
-            {/* Other unsupported Office files placeholder */}
-            {isOfficeOther && !isPptx && !isSpreadsheet && !isLoadingPreview && (
-              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', flex: 1, minHeight: '100%', padding: 32, textAlign: 'center' }}>
-                <div style={{ width: 64, height: 64, borderRadius: 16, background: 'rgba(225,29,72,0.1)', color: '#e11d48', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
-                  {fileExt.includes('doc') ? <FileText size={32} /> : fileExt.includes('xls') || fileExt.includes('csv') ? <FileSpreadsheet size={32} /> : <Presentation size={32} />}
+              {/* PPTX Live Preview */}
+              {isOfficeOther && isPptx && !isLoadingPreview && (
+                <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+                  <PptxPreview file={activeFile} zoomScale={zoomScale} />
                 </div>
-                <h5 style={{ fontSize: '1rem', fontWeight: 800, marginBottom: 8, color: '#1a202c' }}>{activeFile.name}</h5>
-                <p style={{ color: '#64748b', fontSize: '0.88rem', lineHeight: 1.6, marginBottom: 16 }}>
-                  Dokumen terverifikasi siap diproses dengan fidelitas tinggi tanpa watermark.
-                </p>
-                <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(16,185,129,0.12)', color: '#10b981', padding: '8px 16px', borderRadius: 999, fontWeight: 700, fontSize: '0.82rem' }}>
-                  <CheckCircle size={14} />
-                  <span>Ready for Wasm Execution</span>
-                </div>
-              </div>
-            )}
+              )}
 
-            {/* Error notice inside paper */}
-            {errorText && (
-              <div style={{ padding: '20px 24px', fontSize: '0.82rem', color: '#64748b', fontStyle: 'italic', textAlign: 'center' }}>
-                {errorText}
-              </div>
-            )}
-          </div>
+              {/* Other unsupported Office files placeholder */}
+              {isOfficeOther && !isPptx && !isSpreadsheet && !isLoadingPreview && (
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', flex: 1, minHeight: '100%', padding: 32, textAlign: 'center' }}>
+                  <div style={{ width: 64, height: 64, borderRadius: 16, background: 'rgba(225,29,72,0.1)', color: '#e11d48', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
+                    {fileExt.includes('doc') ? <FileText size={32} /> : fileExt.includes('xls') || fileExt.includes('csv') ? <FileSpreadsheet size={32} /> : <Presentation size={32} />}
+                  </div>
+                  <h5 style={{ fontSize: '1rem', fontWeight: 800, marginBottom: 8, color: '#1a202c' }}>{activeFile.name}</h5>
+                  <p style={{ color: '#64748b', fontSize: '0.88rem', lineHeight: 1.6, marginBottom: 16 }}>
+                    Dokumen terverifikasi siap diproses dengan fidelitas tinggi tanpa watermark.
+                  </p>
+                  <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(16,185,129,0.12)', color: '#10b981', padding: '8px 16px', borderRadius: 999, fontWeight: 700, fontSize: '0.82rem' }}>
+                    <CheckCircle size={14} />
+                    <span>Ready for Wasm Execution</span>
+                  </div>
+                </div>
+              )}
+
+              {/* Error notice inside paper */}
+              {errorText && (
+                <div style={{ padding: '20px 24px', fontSize: '0.82rem', color: '#64748b', fontStyle: 'italic', textAlign: 'center' }}>
+                  {errorText}
+                </div>
+              )}
+            </div>
           )}
         </div>
       </div>
@@ -639,71 +657,71 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
 
         {/* Right Sidebar - Thumbnails */}
         {!hideSidebar && ((isPdf && pdfDoc) || (isImage && files.length > 0) || isPptx || isSpreadsheet || isTxt || renderBottomRight) ? (
-          <aside className="tool-workspace-right mobile-full-width" style={{ flex: 1, minWidth: 350, minHeight: 0, display: 'flex', flexDirection: 'column', paddingBottom: 24 }}>
+          <aside className="tool-workspace-right mobile-full-width" style={{ flex: '1 1 0%', minWidth: 0, minHeight: 0, display: 'flex', flexDirection: 'column', paddingBottom: 24 }}>
             {isPdf && pdfDoc && (
-            <div
-              className="glass-panel mobile-scroll-panel"
-              style={{
-                width: '100%',
-                flex: 1,
-                minHeight: 0,
-                display: 'flex',
-                flexDirection: 'column',
-              }}
-            >
-              <div style={{ flex: 1, minHeight: 0, width: '100%', overflowY: 'auto' }}>
+              <div
+                className="glass-panel mobile-scroll-panel"
+                style={{
+                  width: '100%',
+                  flex: 1,
+                  minHeight: 0,
+                  display: 'flex',
+                  flexDirection: 'column',
+                }}
+              >
+                <div style={{ flex: 1, minHeight: 0, width: '100%', overflowY: 'auto' }}>
                   <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: 20 }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 12, borderBottom: '1px solid var(--border-color)', paddingBottom: 16 }}>
-                <div style={{ background: 'var(--brand-primary)', color: 'white', padding: '8px', borderRadius: 8 }}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
-                </div>
-                <div>
-                  <h3 style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-display)', margin: 0 }}>{tUi.document_navigation || tUi["Document Navigation"] || t.previewNavDoc || "Document Navigation"}</h3>
-                  <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: 0, marginTop: 4 }}>{tUi.select_page_to_jump || tUi["Select page to jump"] || tUi["Pilih halaman untuk melompat"] || "Select page to jump"}</p>
-                </div>
-              </div>
-
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(120px, 1fr))', gap: 12 }}>
-                {Array.from({ length: totalPages }).map((_, i) => (
-                  <div
-                    key={`thumb-${i}`}
-                    onClick={() => handlePageChange(i + 1)}
-                    style={{ cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, transition: 'transform 0.1s ease', }}
-                    onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
-                    onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
-                  >
-                    <div style={{ pointerEvents: 'none', width: '100%', border: pageNumber === i + 1 ? '2px solid var(--brand-primary)' : '2px solid transparent', borderRadius: 6 }}>
-                      <LazyPdfPage
-                        pdfDoc={pdfDoc}
-                        pageNum={i + 1}
-                        zoomScale={1.0}
-                        totalRotate={((externalRotate !== undefined ? externalRotate : previewRotate) % 360 + 360) % 360}
-                        wrapperWidth={110}
-                        paperShadow="0 2px 5px rgba(0,0,0,0.15)"
-                        defaultRatio={pageAspectRatio}
-                      />
+                      <div style={{ background: 'var(--brand-primary)', color: 'white', padding: '8px', borderRadius: 8 }}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+                      </div>
+                      <div>
+                        <h3 style={{ fontSize: '1.2rem', fontWeight: 800, fontFamily: 'var(--font-display)', margin: 0 }}>{tUi.document_navigation || tUi["Document Navigation"] || t.previewNavDoc || "Document Navigation"}</h3>
+                        <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: 0, marginTop: 4 }}>{tUi.select_page_to_jump || tUi["Select page to jump"] || tUi["Pilih halaman untuk melompat"] || "Select page to jump"}</p>
+                      </div>
                     </div>
-                    <span style={{ fontSize: '0.8rem', fontWeight: 700, color: pageNumber === i + 1 ? 'var(--brand-primary)' : 'var(--text-muted)' }}>{tUi.page_count_label || "Page"} {i + 1}</span>
+
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(120px, 1fr))', gap: 12 }}>
+                      {Array.from({ length: totalPages }).map((_, i) => (
+                        <div
+                          key={`thumb-${i}`}
+                          onClick={() => handlePageChange(i + 1)}
+                          style={{ cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, transition: 'transform 0.1s ease', }}
+                          onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+                          onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                        >
+                          <div style={{ pointerEvents: 'none', width: '100%', border: pageNumber === i + 1 ? '2px solid var(--brand-primary)' : '2px solid transparent', borderRadius: 6 }}>
+                            <LazyPdfPage
+                              pdfDoc={pdfDoc}
+                              pageNum={i + 1}
+                              zoomScale={1.0}
+                              totalRotate={((externalRotate !== undefined ? externalRotate : previewRotate) % 360 + 360) % 360}
+                              wrapperWidth={110}
+                              paperShadow="0 2px 5px rgba(0,0,0,0.15)"
+                              defaultRatio={pageAspectRatio}
+                            />
+                          </div>
+                          <span style={{ fontSize: '0.8rem', fontWeight: 700, color: pageNumber === i + 1 ? 'var(--brand-primary)' : 'var(--text-muted)' }}>{tUi.page_count_label || "Page"} {i + 1}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                ))}
+                </div>
               </div>
-                  </div>
-              </div>
-            </div>
             )}
 
             {isImage && files.length > 0 && (
-            <div
-              className="glass-panel mobile-scroll-panel"
-              style={{
-                width: '100%',
-                flex: 1,
-                minHeight: 0,
-                display: 'flex',
-                flexDirection: 'column',
-              }}
-            >
-              <div style={{ flex: 1, minHeight: 0, width: '100%', overflowY: 'auto' }}>
+              <div
+                className="glass-panel mobile-scroll-panel"
+                style={{
+                  width: '100%',
+                  flex: 1,
+                  minHeight: 0,
+                  display: 'flex',
+                  flexDirection: 'column',
+                }}
+              >
+                <div style={{ flex: 1, minHeight: 0, width: '100%', overflowY: 'auto' }}>
                   <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: 20 }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 12, borderBottom: '1px solid var(--border-color)', paddingBottom: 16 }}>
                       <div style={{ background: 'var(--brand-primary)', color: 'white', padding: '8px', borderRadius: 8 }}>
@@ -729,15 +747,15 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
                             boxShadow: localActiveIndex === i ? '0 0 0 3px var(--brand-primary)' : '0 2px 8px rgba(0,0,0,0.1)',
                             overflow: 'hidden', padding: 4, display: 'flex', alignItems: 'center', justifyContent: 'center'
                           }}>
-                            <img src={galleryUrls[i]} alt={`Preview ${i+1}`} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+                            <img src={galleryUrls[i]} alt={`Preview ${i + 1}`} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
                           </div>
                           <span style={{ fontSize: '0.8rem', fontWeight: 600, color: localActiveIndex === i ? 'var(--brand-primary)' : 'var(--text-muted)', wordBreak: 'break-all', textAlign: 'center' }}>{file.name}</span>
                         </div>
                       ))}
                     </div>
                   </div>
+                </div>
               </div>
-            </div>
             )}
 
             {isPptx && (
@@ -809,7 +827,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
                 </div>
               </div>
             )}
-            
+
             {isTxt && (
               <div
                 className="glass-panel"
