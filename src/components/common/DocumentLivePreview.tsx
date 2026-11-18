@@ -96,6 +96,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
 
   const docxContainerRef = useRef<HTMLDivElement>(null);
   const previewWrapperRef = useRef<HTMLDivElement>(null);
+  const isProgrammaticScroll = useRef<boolean>(false);
 
   const activeFile = files[localActiveIndex] || files[activeFileIndex] || files[0] || null;
 
@@ -108,11 +109,15 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
     if (isPdf && previewWrapperRef.current) {
       const el = document.getElementById(`pdf-page-${newPage}`);
       if (el) {
+        isProgrammaticScroll.current = true;
         const container = previewWrapperRef.current;
         const containerRect = container.getBoundingClientRect();
         const elRect = el.getBoundingClientRect();
-        const targetScrollTop = container.scrollTop + (elRect.top - containerRect.top) - (container.clientHeight / 2) + (el.clientHeight / 2);
+        const targetScrollTop = container.scrollTop + (elRect.top - containerRect.top) - 16;
         container.scrollTo({ top: Math.max(0, targetScrollTop), behavior: 'smooth' });
+        setTimeout(() => {
+          isProgrammaticScroll.current = false;
+        }, 700);
       }
     }
   };
@@ -121,6 +126,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
     if (!isPdf || totalPages <= 0) return;
 
     const observer = new IntersectionObserver((entries) => {
+      if (isProgrammaticScroll.current) return;
       for (const entry of entries) {
         if (entry.isIntersecting) {
           const match = entry.target.id.match(/pdf-page-(\d+)/);
@@ -131,7 +137,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
       }
     }, {
       root: previewWrapperRef.current,
-      rootMargin: "-49% 0px -49% 0px", // Trigger when the element crosses the center of the container
+      rootMargin: "-40% 0px -40% 0px", // Trigger when the element crosses the active center viewing zone
     });
 
     // Small delay to ensure elements are mounted in the DOM
@@ -140,7 +146,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
         const el = document.getElementById(`pdf-page-${i}`);
         if (el) observer.observe(el);
       }
-    }, 100);
+    }, 150);
 
     return () => {
       clearTimeout(timeout);
@@ -222,7 +228,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
         if (ext === 'pdf') {
           if (!pdfDoc) return; // Wait until pdfDoc is parsed
 
-          const page = await pdfDoc.getPage(Math.min(pageNumber, pdfDoc.numPages));
+          const page = await pdfDoc.getPage(1);
           const baseRotate = page.rotate || 0;
           // Ensure rotation is always positive (0, 90, 180, 270)
           const finalPreviewRotate = externalRotate !== undefined ? externalRotate : previewRotate;
@@ -313,7 +319,7 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
     };
 
     renderPreview();
-  }, [activeFile, pdfDoc, pageNumber, zoomScale, previewRotate, externalRotate, isResult]);
+  }, [activeFile, pdfDoc, zoomScale, previewRotate, externalRotate, isResult]);
 
   // Dedicated effect for images to prevent blob URL flickering
   useEffect(() => {

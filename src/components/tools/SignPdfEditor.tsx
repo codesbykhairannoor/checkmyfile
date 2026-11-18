@@ -51,7 +51,7 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
     const rect = canvas.getBoundingClientRect();
     const xRaw = ('touches' in e) ? e.touches[0].clientX - rect.left : (e as React.MouseEvent).clientX - rect.left;
     const yRaw = ('touches' in e) ? e.touches[0].clientY - rect.top : (e as React.MouseEvent).clientY - rect.top;
-    
+
     const x = xRaw * (canvas.width / rect.width);
     const y = yRaw * (canvas.height / rect.height);
 
@@ -69,7 +69,7 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
     const rect = canvas.getBoundingClientRect();
     const xRaw = ('touches' in e) ? e.touches[0].clientX - rect.left : (e as React.MouseEvent).clientX - rect.left;
     const yRaw = ('touches' in e) ? e.touches[0].clientY - rect.top : (e as React.MouseEvent).clientY - rect.top;
-    
+
     const x = xRaw * (canvas.width / rect.width);
     const y = yRaw * (canvas.height / rect.height);
 
@@ -123,13 +123,13 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
       </div>
 
       <div style={{ display: 'flex', gap: 8, background: 'var(--bg-input)', padding: 4, borderRadius: 8 }}>
-        <button 
+        <button
           onClick={() => setTab('draw')}
           style={{ flex: 1, padding: '8px', fontSize: '0.8rem', fontWeight: 600, borderRadius: 6, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, background: tab === 'draw' ? 'var(--bg-card)' : 'transparent', color: tab === 'draw' ? 'var(--brand-primary)' : 'var(--text-muted)', border: 'none', cursor: 'pointer' }}
         >
           <PenTool size={14} />{t("signature_type_draw", "Draw Signature")}
         </button>
-        <button 
+        <button
           onClick={() => setTab('upload')}
           style={{ flex: 1, padding: '8px', fontSize: '0.8rem', fontWeight: 600, borderRadius: 6, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, background: tab === 'upload' ? 'var(--bg-card)' : 'transparent', color: tab === 'upload' ? 'var(--brand-primary)' : 'var(--text-muted)', border: 'none', cursor: 'pointer' }}
         >
@@ -140,10 +140,10 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
       {tab === 'draw' && (
         <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
           <div style={{ position: 'relative', width: '100%', border: '2px dashed var(--border-color)', borderRadius: 8, background: '#fff', overflow: 'hidden' }}>
-            <canvas 
-              ref={canvasRef} 
-              width={320} 
-              height={180} 
+            <canvas
+              ref={canvasRef}
+              width={320}
+              height={180}
               style={{ display: 'block', width: '100%', height: '180px', cursor: 'crosshair', touchAction: 'none' }}
               onMouseDown={startDrawing}
               onMouseMove={draw}
@@ -153,7 +153,7 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
               onTouchMove={draw}
               onTouchEnd={stopDrawing}
             />
-            <button 
+            <button
               onClick={clearCanvas}
               style={{ position: 'absolute', top: 8, right: 8, background: 'rgba(0,0,0,0.1)', border: 'none', borderRadius: 4, padding: 6, cursor: 'pointer', color: '#333' }}
               title="Clear"
