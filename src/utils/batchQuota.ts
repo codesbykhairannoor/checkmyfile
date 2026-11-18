@@ -40,7 +40,7 @@ export const recordBatchUsage = async (uid: string): Promise<number> => {
   // Trigger UI event for reactive status updates
   try {
     window.dispatchEvent(new Event('batch-quota-updated'));
-  } catch (_) {}
+  } catch (_) { }
 
   // Sync with Firestore in background if available
   if (db) {

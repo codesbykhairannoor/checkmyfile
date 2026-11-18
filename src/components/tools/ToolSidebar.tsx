@@ -135,16 +135,9 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
       style={{
         flex: '1 1 0%',
         minWidth: 0,
-        position: 'sticky',
-        top: 88,
-        height: 'calc(100vh - 120px)',
-        maxHeight: 850,
-        minHeight: 520,
-        overflowY: 'auto',
         display: 'flex',
         flexDirection: 'column',
         gap: 16,
-        paddingRight: 4,
         paddingBottom: 24,
         boxSizing: 'border-box',
       }}
@@ -158,7 +151,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
         style={{ display: 'none' }}
       />
 
-      {files.length > 0 && (
+      {canonicalId !== 'merge-pdf' && files.length > 0 && (
         <div style={{ background: 'var(--bg-card)', padding: 16, borderRadius: 12, border: '1px solid var(--border-color)', boxShadow: 'var(--shadow-sm)' }}>
           {files.length > 1 && (
             <div style={{ paddingBottom: 10, marginBottom: 12, borderBottom: '1px solid var(--border-color)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>

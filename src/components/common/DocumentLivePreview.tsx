@@ -359,8 +359,8 @@ export const DocumentLivePreview: React.FC<DocumentLivePreviewProps> = ({
         style={{
           flex: '0 0 auto',
           minHeight: 0,
-          padding: '16px 24px',
-          marginBottom: isResult ? 0 : 24,
+          padding: '10px 18px',
+          marginBottom: isResult ? 0 : 16,
           borderLeft: isResult ? '4px solid #10b981' : '4px solid var(--brand-primary)',
           background: isResult ? 'rgba(16, 185, 129, 0.05)' : undefined,
           width: '100%',

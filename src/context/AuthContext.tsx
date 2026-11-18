@@ -74,7 +74,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
         try {
           localStorage.setItem(`hmf_batch_${firebaseUser.uid}_${monthKey}`, String(batchesUsed));
-        } catch (_) {}
+        } catch (_) { }
 
         if (isFounder) {
           currentPlan = 'pro';

@@ -18,7 +18,7 @@ export const MergePdfEditor: React.FC<MergePdfEditorProps> = ({
   isProcessing
 }) => {
   return (
-    <div className="glass-panel" style={{ padding: 24, display: 'flex', flexDirection: 'column', gap: 24, minWidth: 280, minHeight: 0 }}>
+    <div className="glass-panel" style={{ padding: 24, display: 'flex', flexDirection: 'column', gap: 20, minWidth: 280 }}>
       <div>
         <h4 style={{ fontWeight: 800, fontSize: '1.1rem', color: 'var(--text-main)', marginBottom: 6, display: 'flex', alignItems: 'center', gap: 8 }}>
           <Layers size={18} className="text-brand-primary" />
@@ -29,11 +29,11 @@ export const MergePdfEditor: React.FC<MergePdfEditorProps> = ({
         </p>
       </div>
 
-      <div style={{ flex: 1, minHeight: 0, overflowY: 'auto', paddingRight: 4 }}>
+      <div style={{ width: '100%', minHeight: 160 }}>
         <MergeWorkspace files={files} setFiles={setFiles} tUi={tUi} />
       </div>
 
-      <div style={{ marginTop: 'auto', paddingTop: 24, borderTop: '1px solid var(--border-color)' }}>
+      <div style={{ marginTop: 'auto', paddingTop: 20, borderTop: '1px solid var(--border-color)' }}>
         {files.length < 2 && (
           <div style={{ fontSize: '0.8rem', color: '#ef4444', background: 'rgba(239, 68, 68, 0.1)', padding: 12, borderRadius: 8, textAlign: 'center', marginBottom: 12 }}>
             {tUi['merge_min_warning'] || tUi['Minimal butuh 2 file untuk digabungkan.'] || 'At least 2 files required to merge.'}
