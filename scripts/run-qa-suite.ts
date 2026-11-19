@@ -193,6 +193,22 @@ async function runBrowserE2ETests() {
     });
     assert('Sign PDF editor page rendered with ISO 32000-1 Adobe Acrobat standard', signPdfRendered);
 
+    // Scenario D: Core PDF Tool Suites (Merge, Split, Convert, Protect)
+    console.log('\n  -- Testing Scenario D: Core PDF Tool Availability & Routing --');
+    const toolsToTest = [
+      { path: '/merge-pdf', expected: 'merge', label: 'Merge PDF Tool' },
+      { path: '/split-pdf', expected: 'split', label: 'Split PDF Tool' },
+      { path: '/pdf-to-word', expected: 'word', label: 'PDF to Word Converter' },
+      { path: '/protect-pdf', expected: 'protect', label: 'Protect PDF Tool' },
+    ];
+
+    for (const tool of toolsToTest) {
+      await page.goto(`${BASE_URL}${tool.path}`, { waitUntil: 'domcontentloaded' });
+      await page.waitForSelector('h1', { timeout: 8000 });
+      const h1Text = await page.evaluate(() => document.querySelector('h1')?.textContent?.toLowerCase() || '');
+      assert(`${tool.label} (${tool.path}) renders correctly with valid H1 header`, h1Text.includes(tool.expected));
+    }
+
   } finally {
     await browser.close();
   }
