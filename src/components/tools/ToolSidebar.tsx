@@ -92,16 +92,23 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
   const { user, isPro } = useAuth();
   const fileInputRef = React.useRef<HTMLInputElement>(null);
 
+  const tUi = editorTranslations[currentLang] || editorTranslations['en'] || {};
+  const canonicalId = getCanonicalToolId(tool.id);
+  const isMultiFileInput = ['merge-pdf', 'image-to-pdf'].includes(canonicalId);
+
   const handleAddFilesClick = () => {
     if (allowMultiple && !isPro) {
-      if (!user) {
-        onBatchBlocked?.('auth');
-        return;
-      }
-      const quota = checkBatchQuota(user, isPro);
-      if (!quota.allowed) {
-        onBatchBlocked?.('upgrade');
-        return;
+      const isBatchBlocked = isMultiFileInput ? files.length >= 10 : files.length >= 1;
+      if (isBatchBlocked) {
+        if (!user) {
+          onBatchBlocked?.('auth');
+          return;
+        }
+        const quota = checkBatchQuota(user, isPro);
+        if (!quota.allowed) {
+          onBatchBlocked?.('upgrade');
+          return;
+        }
       }
     }
     fileInputRef.current?.click();
@@ -112,7 +119,8 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
       const newFiles = Array.from(e.target.files);
       if (allowMultiple) {
         const combined = [...files, ...newFiles];
-        if (combined.length > 1 && !isPro) {
+        const isBatchTrigger = isMultiFileInput ? combined.length > 10 : combined.length > 1;
+        if (isBatchTrigger && !isPro) {
           if (!user) {
             onBatchBlocked?.('auth');
             return;
@@ -130,9 +138,6 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
       }
     }
   };
-
-  const tUi = editorTranslations[currentLang] || editorTranslations['en'] || {};
-  const canonicalId = getCanonicalToolId(tool.id);
 
   return (
     <div

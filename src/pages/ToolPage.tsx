@@ -52,6 +52,8 @@ const getAcceptTypes = (toolId: string): string => {
 
 export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorActive }) => {
   const { user, isPro, openAuthModal } = useAuth();
+  const canonicalId = getCanonicalToolId(tool.id);
+  const isMultiFileInput = ['merge-pdf', 'image-to-pdf'].includes(canonicalId);
   const [showProGateModal, setShowProGateModal] = useState<boolean>(false);
   const [proGateReason, setProGateReason] = useState<{ title?: string; desc?: string; featureName?: string; filesCount?: number }>({});
 
@@ -71,14 +73,20 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
   }, [user, isPro]);
 
   React.useEffect(() => {
-    if (user && pendingBatchFiles && pendingBatchFiles.length > 1) {
-      const quota = checkBatchQuota(user, isPro);
-      if (quota.allowed) {
+    if (user && pendingBatchFiles) {
+      const isBatchMode = isMultiFileInput ? pendingBatchFiles.length > 10 : pendingBatchFiles.length > 1;
+      if (isBatchMode) {
+        const quota = checkBatchQuota(user, isPro);
+        if (quota.allowed) {
+          setFiles(pendingBatchFiles);
+          setPendingBatchFiles(null);
+        }
+      } else {
         setFiles(pendingBatchFiles);
         setPendingBatchFiles(null);
       }
     }
-  }, [user, isPro, pendingBatchFiles]);
+  }, [user, isPro, pendingBatchFiles, isMultiFileInput]);
 
   const { files, setFiles } = useWorkspaceFiles(tool.id);
   const {
@@ -202,8 +210,9 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
   const tAuth = authTranslations[currentLang] || authTranslations['en'] || {};
 
   const handleStartProcessing = (options?: any) => {
-    // Batch processing gating (files.length > 1)
-    if (files.length > 1 && !isPro) {
+    // Batch processing gating (files.length > 1 for single-file tools, > 10 for merge/combine tools)
+    const isBatchMode = isMultiFileInput ? files.length > 10 : files.length > 1;
+    if (isBatchMode && !isPro) {
       if (!user) {
         setBatchGateType('auth');
         setShowBatchGateModal(true);
@@ -291,7 +300,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
         {files.length > 0 && !isCompleted && (
           <div style={{ maxWidth: 1440, margin: '0 auto', width: '100%', padding: '24px 24px 0', flex: 1, display: 'flex', flexDirection: 'column' }}>
             {/* Batch Processing Quota Banner */}
-            {!isPro && files.length > 1 && (
+            {!isPro && (isMultiFileInput ? files.length > 10 : files.length > 1) && (
               <div
                 style={{
                   width: '100%',
@@ -518,12 +527,13 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
               <FileDropzone
                 currentLang={currentLang}
                 onFilesSelected={(selected) => {
-                  if (selected.length > 1 && !isPro) {
+                  const isBatchMode = isMultiFileInput ? selected.length > 10 : selected.length > 1;
+                  if (isBatchMode && !isPro) {
                     if (!user) {
                       setPendingBatchFiles(selected);
                       setBatchGateType('auth');
                       setShowBatchGateModal(true);
-                      setFiles([selected[0]]);
+                      setFiles(isMultiFileInput ? selected.slice(0, 10) : [selected[0]]);
                       resetProcessor();
                       return;
                     }
@@ -531,7 +541,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                     if (!quota.allowed) {
                       setBatchGateType('upgrade');
                       setShowBatchGateModal(true);
-                      setFiles([selected[0]]);
+                      setFiles(isMultiFileInput ? selected.slice(0, 10) : [selected[0]]);
                       resetProcessor();
                       return;
                     }
