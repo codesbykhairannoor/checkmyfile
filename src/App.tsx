@@ -15,6 +15,7 @@ import { LanguagesPage } from './pages/LanguagesPage';
 import { AuthModal } from './components/auth/AuthModal';
 import { DeleteAccountModal } from './components/auth/DeleteAccountModal';
 import { ChangePasswordModal } from './components/auth/ChangePasswordModal';
+import { LogoutConfirmModal } from './components/auth/LogoutConfirmModal';
 import { UnverifiedEmailBanner } from './components/auth/UnverifiedEmailBanner';
 import { getToolBySlugAndLang, getToolById, type ToolDefinition } from './catalog/toolsCatalog';
 import { isValidLanguageCode } from './i18n/languages';
@@ -229,6 +230,7 @@ export const App: React.FC = () => {
       <AuthModal currentLang={currentLang} />
       <DeleteAccountModal currentLang={currentLang} />
       <ChangePasswordModal currentLang={currentLang} />
+      <LogoutConfirmModal currentLang={currentLang} />
     </div>
   );
 };

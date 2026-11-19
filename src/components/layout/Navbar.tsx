@@ -90,7 +90,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   const [mobileSearch, setMobileSearch] = useState('');
   const [expandedMobileCategory, setExpandedMobileCategory] = useState<string | null>(null);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
-  const { user, profile, isPro, openAuthModal, openDeleteModal, openChangePasswordModal, signOut } = useAuth();
+  const { user, profile, isPro, openAuthModal, openDeleteModal, openChangePasswordModal, openLogoutConfirmModal, signOut } = useAuth();
   const navRef = useRef<HTMLDivElement>(null);
   const suiteRef = useRef<HTMLDivElement>(null);
   const megaTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -238,12 +238,12 @@ export const Navbar: React.FC<NavbarProps> = ({
     suiteTimerRef.current = setTimeout(() => setIsSuiteOpen(false), 140);
   };
 
-  // Close on outside click
+  // Close on outside click or touch
   useEffect(() => {
-    const fn = (e: MouseEvent) => {
+    const fn = (e: MouseEvent | TouchEvent) => {
       const target = e.target as HTMLElement | null;
-      // Do not close if clicking inside the mobile menu drawer
-      if (target?.closest?.('.mobile-menu-container')) {
+      // Do not close if clicking inside the mobile menu drawer or modal
+      if (target?.closest?.('.mobile-menu-container') || target?.closest?.('.mobile-account-dropdown')) {
         return;
       }
       if (navRef.current && !navRef.current.contains(e.target as Node)) {
@@ -256,21 +256,22 @@ export const Navbar: React.FC<NavbarProps> = ({
       }
     };
     document.addEventListener('mousedown', fn);
-    return () => document.removeEventListener('mousedown', fn);
+    document.addEventListener('touchstart', fn, { passive: true });
+    return () => {
+      document.removeEventListener('mousedown', fn);
+      document.removeEventListener('touchstart', fn);
+    };
   }, []);
 
-  // Lock background scroll when mobile menu is open
+  // Lock background scroll on body when mobile menu is open (without touching documentElement to prevent layout shift)
   useEffect(() => {
     if (isMobileMenuOpen) {
       document.body.style.overflow = 'hidden';
-      document.documentElement.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = '';
-      document.documentElement.style.overflow = '';
     }
     return () => {
       document.body.style.overflow = '';
-      document.documentElement.style.overflow = '';
     };
   }, [isMobileMenuOpen]);
 
@@ -683,7 +684,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     <button
                       onClick={() => {
                         setIsUserMenuOpen(false);
-                        signOut();
+                        openLogoutConfirmModal();
                       }}
                       style={{
                         width: '100%',
@@ -1330,21 +1331,245 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <span>{authT.nav_signin || (currentLang === 'id' ? 'Masuk' : 'Sign In')}</span>
               </button>
             ) : (
-              <div
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}
-              >
-                {user.photoURL ? (
-                  <img src={user.photoURL} alt="User" style={{ width: 32, height: 32, borderRadius: '50%', objectFit: 'cover', border: '1px solid var(--border-color)' }} />
-                ) : (
-                  <div style={{ width: 32, height: 32, borderRadius: '50%', background: 'var(--brand-primary)', color: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontSize: '0.78rem' }}>
-                    {(user.displayName || user.email || 'U')[0].toUpperCase()}
+              <div style={{ position: 'relative' }}>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setIsMobileMenuOpen(false);
+                    setIsUserMenuOpen(!isUserMenuOpen);
+                  }}
+                  aria-label="Toggle user account menu"
+                  style={{
+                    cursor: 'pointer',
+                    display: 'flex',
+                    alignItems: 'center',
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                  }}
+                >
+                  {user.photoURL ? (
+                    <img
+                      src={user.photoURL}
+                      alt="User"
+                      style={{
+                        width: 32,
+                        height: 32,
+                        borderRadius: '50%',
+                        objectFit: 'cover',
+                        border: isUserMenuOpen ? '2px solid var(--brand-primary)' : '1px solid var(--border-color)',
+                      }}
+                    />
+                  ) : (
+                    <div
+                      style={{
+                        width: 32,
+                        height: 32,
+                        borderRadius: '50%',
+                        background: 'var(--brand-primary)',
+                        color: '#ffffff',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        fontWeight: 700,
+                        fontSize: '0.78rem',
+                        boxShadow: isUserMenuOpen ? '0 0 0 2px var(--brand-primary)' : 'none',
+                      }}
+                    >
+                      {(user.displayName || user.email || 'U')[0].toUpperCase()}
+                    </div>
+                  )}
+                </button>
+
+                {/* 🌟 Mobile User Account Dropdown 🌟 */}
+                {isUserMenuOpen && (
+                  <div
+                    className="mobile-account-dropdown"
+                    style={{
+                      position: 'absolute',
+                      top: 'calc(100% + 8px)',
+                      right: 0,
+                      width: 250,
+                      maxWidth: 'calc(100vw - 32px)',
+                      background: 'var(--bg-card)',
+                      border: '1px solid var(--border-color)',
+                      borderRadius: 12,
+                      boxShadow: '0 12px 30px rgba(0,0,0,0.25)',
+                      padding: '12px',
+                      zIndex: 300,
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: 8,
+                      animation: 'fadeInDown 0.15s ease',
+                      fontFamily: 'var(--font-main)',
+                    }}
+                  >
+                    <div style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: 8 }}>
+                      <div style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                        {user.displayName || authT.nav_account || 'User'}
+                      </div>
+                      <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                        {user.email}
+                      </div>
+                      {!isPro && !user.emailVerified && (
+                        <div
+                          style={{
+                            marginTop: 6,
+                            padding: '4px 8px',
+                            background: 'rgba(239, 68, 68, 0.1)',
+                            border: '1px solid rgba(239, 68, 68, 0.25)',
+                            borderRadius: 6,
+                            fontSize: '0.72rem',
+                            color: '#ef4444',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'space-between',
+                            gap: 6,
+                          }}
+                        >
+                          <span style={{ fontWeight: 600 }}>{authT.auth_status_unverified || (currentLang === 'id' ? 'Belum Verifikasi' : 'Unverified')}</span>
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setIsUserMenuOpen(false);
+                              openAuthModal();
+                            }}
+                            style={{
+                              background: '#ef4444',
+                              color: '#ffffff',
+                              border: 'none',
+                              borderRadius: 4,
+                              padding: '2px 6px',
+                              fontSize: '0.68rem',
+                              fontWeight: 700,
+                              cursor: 'pointer',
+                            }}
+                          >
+                            {authT.auth_verify_btn_action || (currentLang === 'id' ? 'Verifikasi' : 'Verify')}
+                          </button>
+                        </div>
+                      )}
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.8rem', padding: '4px 0' }}>
+                      <span style={{ color: 'var(--text-muted)' }}>Status:</span>
+                      <span style={{ fontWeight: 700, color: isPro ? '#f59e0b' : 'var(--text-main)' }}>
+                        {isPro
+                          ? (profile?.billingInterval === 'monthly'
+                            ? (authT.pro_plan_monthly_name || 'PRO Monthly')
+                            : (authT.nav_pro_active || 'PRO Lifetime'))
+                          : (authT.nav_free_tier || 'Free Starter')}
+                      </span>
+                    </div>
+                    {!isPro && (
+                      <a
+                        href={currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsUserMenuOpen(false);
+                          window.history.pushState({}, '', currentLang === 'en' ? '/pricing' : `/${currentLang}/pricing`);
+                          window.dispatchEvent(new PopStateEvent('popstate'));
+                        }}
+                        style={{
+                          padding: '8px 10px',
+                          background: 'rgba(225, 29, 72, 0.1)',
+                          color: 'var(--brand-primary)',
+                          borderRadius: 8,
+                          fontSize: '0.8rem',
+                          fontWeight: 700,
+                          textDecoration: 'none',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          gap: 6,
+                        }}
+                      >
+                        <Crown size={14} />
+                        {authT.nav_upgrade_pro || 'Upgrade to PRO'}
+                      </a>
+                    )}
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setIsUserMenuOpen(false);
+                        openChangePasswordModal();
+                      }}
+                      style={{
+                        width: '100%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: 8,
+                        padding: '8px 10px',
+                        background: 'none',
+                        border: 'none',
+                        color: 'var(--text-main)',
+                        fontSize: '0.8rem',
+                        fontWeight: 600,
+                        cursor: 'pointer',
+                        borderRadius: 6,
+                        textAlign: 'left',
+                      }}
+                    >
+                      <KeyRound size={14} color="var(--text-muted)" />
+                      {authT.auth_change_password_title || 'Change Password'}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setIsUserMenuOpen(false);
+                        openLogoutConfirmModal();
+                      }}
+                      style={{
+                        width: '100%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: 8,
+                        padding: '8px 10px',
+                        background: 'none',
+                        border: 'none',
+                        color: 'var(--text-main)',
+                        fontSize: '0.8rem',
+                        fontWeight: 600,
+                        cursor: 'pointer',
+                        borderRadius: 6,
+                        textAlign: 'left',
+                      }}
+                    >
+                      <LogOut size={14} />
+                      {authT.nav_signout || 'Sign Out'}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setIsUserMenuOpen(false);
+                        openDeleteModal();
+                      }}
+                      style={{
+                        width: '100%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: 8,
+                        padding: '6px 10px',
+                        background: 'none',
+                        border: 'none',
+                        color: '#ef4444',
+                        fontSize: '0.74rem',
+                        fontWeight: 600,
+                        cursor: 'pointer',
+                        borderRadius: 6,
+                        textAlign: 'left',
+                        opacity: 0.85,
+                      }}
+                    >
+                      <Trash2 size={13} />
+                      {authT.auth_delete_account_btn || 'Delete Account'}
+                    </button>
                   </div>
                 )}
               </div>
             )}
             <button
               onClick={() => {
+                setIsUserMenuOpen(false);
                 setIsMobileLangOpen(false);
                 if (isMobileMenuOpen) setMobileSearch('');
                 setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -1479,7 +1704,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <button
                   onClick={() => {
                     setIsMobileMenuOpen(false);
-                    signOut();
+                    openLogoutConfirmModal();
                   }}
                   style={{
                     padding: '6px 10px',
@@ -2005,7 +2230,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <span>{currentLang === 'id' ? '100% Olah di Browser · Privasi Bebas Server' : '100% Client-Side WASM · Zero Server Upload'}</span>
           </div>
         </div>,
-        typeof document !== 'undefined' ? document.documentElement : (document.body || null)
+        typeof document !== 'undefined' ? (document.body || document.documentElement) : null
       )}
 
       {/* Styles */}
@@ -2062,6 +2287,12 @@ export const Navbar: React.FC<NavbarProps> = ({
         @media (max-width: 768px) {
           .desktop-only { display: none !important; }
           .mobile-only  { display: flex !important; }
+          .main-site-header {
+            position: sticky !important;
+            top: 0 !important;
+            margin: 0 !important;
+            transform: none !important;
+          }
           .mobile-menu-container {
             display: flex !important;
             flex-direction: column !important;
@@ -2072,8 +2303,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             bottom: 0 !important;
             width: 100% !important;
             max-width: 100% !important;
-            height: auto !important;
-            min-height: calc(100% - 60px) !important;
+            height: calc(100dvh - 60px) !important;
+            min-height: calc(100vh - 60px) !important;
             max-height: none !important;
             background: var(--bg-app) !important;
             z-index: 999999 !important;
@@ -2083,7 +2314,6 @@ export const Navbar: React.FC<NavbarProps> = ({
             box-sizing: border-box !important;
             margin: 0 !important;
             border-radius: 0 !important;
-            zoom: 1 !important;
           }
           .navbar-main-inner { padding: 0 16px !important; height: 60px !important; }
           .brand-title { font-size: 1.18rem !important; }

@@ -44,6 +44,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [isAuthModalOpen, setIsAuthModalOpen] = useState<boolean>(false);
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState<boolean>(false);
   const [isChangePasswordModalOpen, setIsChangePasswordModalOpen] = useState<boolean>(false);
+  const [isLogoutConfirmOpen, setIsLogoutConfirmOpen] = useState<boolean>(false);
 
   const fetchOrCreateProfile = useCallback(async (firebaseUser: User): Promise<UserProfile> => {
     const monthKey = getCurrentMonthKey();
@@ -429,6 +430,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const openChangePasswordModal = () => setIsChangePasswordModalOpen(true);
   const closeChangePasswordModal = () => setIsChangePasswordModalOpen(false);
 
+  const openLogoutConfirmModal = () => setIsLogoutConfirmOpen(true);
+  const closeLogoutConfirmModal = () => setIsLogoutConfirmOpen(false);
+
   const deleteAccount = async (passwordConfirmation?: string) => {
     if (!auth || !auth.currentUser) {
       throw new Error('No user currently authenticated.');
@@ -542,6 +546,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         isChangePasswordModalOpen,
         openChangePasswordModal,
         closeChangePasswordModal,
+        isLogoutConfirmOpen,
+        openLogoutConfirmModal,
+        closeLogoutConfirmModal,
         refreshProfile,
       }}
     >

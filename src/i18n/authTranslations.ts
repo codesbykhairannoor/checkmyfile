@@ -139,8 +139,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_change_pw_cancel_btn": "Cancel",
     "auth_change_pw_same_as_current": "New password cannot be the same as your current password.",
     "auth_change_pw_min_len": "Password must be at least 6 characters.",
-    "auth_change_pw_wrong_current": "Current password is incorrect. If you forgot it, click \"Forgot current password?\" below."
-  },
+    "auth_change_pw_wrong_current": "Current password is incorrect. If you forgot it, click \"Forgot current password?\" below.",
+      "auth_logout_confirm_title": "Log Out of Your Account?",
+      "auth_logout_confirm_desc": "Are you sure you want to log out? You will need to sign in again to access PRO features and your account settings.",
+      "auth_logout_confirm_btn": "Yes, Log Out",
+      "auth_logout_cancel_btn": "Cancel"
+},
   "id": {
     "auth_signin_title": "Masuk ke HandleMyFile",
     "auth_signup_title": "Buat Akun Anda",
@@ -280,8 +284,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_change_pw_cancel_btn": "Batal",
     "auth_change_pw_same_as_current": "Kata sandi baru tidak boleh sama dengan kata sandi saat ini.",
     "auth_change_pw_min_len": "Kata sandi minimal harus 6 karakter.",
-    "auth_change_pw_wrong_current": "Kata sandi saat ini salah. Jika Anda lupa, klik \"Lupa kata sandi saat ini?\" di bawah."
-  },
+    "auth_change_pw_wrong_current": "Kata sandi saat ini salah. Jika Anda lupa, klik \"Lupa kata sandi saat ini?\" di bawah.",
+      "auth_logout_confirm_title": "Keluar dari Akun Anda?",
+      "auth_logout_confirm_desc": "Apakah Anda yakin ingin keluar? Anda perlu masuk kembali untuk mengakses fitur PRO dan pengaturan akun Anda.",
+      "auth_logout_confirm_btn": "Ya, Keluar",
+      "auth_logout_cancel_btn": "Batal"
+},
   "es": {
     "auth_signin_title": "Iniciar sesión en HandleMyFile",
     "auth_signup_title": "Crea tu cuenta",
@@ -411,8 +419,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "Eliminar cuenta y datos permanentemente",
     "auth_delete_btn_cancel": "Conservar mi cuenta",
     "auth_delete_success": "Tu cuenta y datos se han eliminado permanentemente de las 4 aplicaciones.",
-    "auth_delete_error": "Error al eliminar la cuenta. Verifica tus credenciales o inténtalo de nuevo."
-  },
+    "auth_delete_error": "Error al eliminar la cuenta. Verifica tus credenciales o inténtalo de nuevo.",
+      "auth_logout_confirm_title": "¿Cerrar sesión de su cuenta?",
+      "auth_logout_confirm_desc": "¿Está seguro de que desea cerrar sesión? Deberá iniciar sesión nuevamente para acceder a las funciones PRO y a la configuración de su cuenta.",
+      "auth_logout_confirm_btn": "Sí, cerrar sesión",
+      "auth_logout_cancel_btn": "Cancelar"
+},
   "fr": {
     "auth_signin_title": "Connectez-vous à HandleMyFile",
     "auth_signup_title": "Créez votre compte",
@@ -542,8 +554,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "Supprimer définitivement le compte et les données",
     "auth_delete_btn_cancel": "Conserver mon compte",
     "auth_delete_success": "Votre compte et vos données ont été définitivement supprimés des 4 applications.",
-    "auth_delete_error": "Échec de la suppression du compte. Veuillez vérifier vos identifiants ou réessayer."
-  },
+    "auth_delete_error": "Échec de la suppression du compte. Veuillez vérifier vos identifiants ou réessayer.",
+      "auth_logout_confirm_title": "Se déconnecter de votre compte ?",
+      "auth_logout_confirm_desc": "Êtes-vous sûr de vouloir vous déconnecter ? Vous devrez vous reconnecter pour accéder aux fonctionnalités PRO et aux paramètres de votre compte.",
+      "auth_logout_confirm_btn": "Oui, se déconnecter",
+      "auth_logout_cancel_btn": "Annuler"
+},
   "de": {
     "auth_signin_title": "Melden Sie sich bei HandleMyFile an",
     "auth_signup_title": "Erstellen Sie Ihr Konto",
@@ -673,8 +689,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "Konto & Daten dauerhaft löschen",
     "auth_delete_btn_cancel": "Mein Konto behalten",
     "auth_delete_success": "Ihr Konto und Ihre Daten wurden in allen 4 Apps dauerhaft gelöscht.",
-    "auth_delete_error": "Fehler beim Löschen des Kontos. Bitte prüfen Sie Ihre Angaben oder versuchen Sie es erneut."
-  },
+    "auth_delete_error": "Fehler beim Löschen des Kontos. Bitte prüfen Sie Ihre Angaben oder versuchen Sie es erneut.",
+      "auth_logout_confirm_title": "Von Ihrem Konto abmelden?",
+      "auth_logout_confirm_desc": "Sind Sie sicher, dass Sie sich abmelden möchten? Sie müssen sich erneut anmelden, um auf PRO-Funktionen und Ihre Kontoeinstellungen zuzugreifen.",
+      "auth_logout_confirm_btn": "Ja, abmelden",
+      "auth_logout_cancel_btn": "Abbrechen"
+},
   "ja": {
     "auth_signin_title": "HandleMyFile にサインインする",
     "auth_signup_title": "アカウントを作成する",
@@ -804,8 +824,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "アカウントとデータを完全に削除",
     "auth_delete_btn_cancel": "アカウントを保持する",
     "auth_delete_success": "アカウントとデータは全4つのスイートアプリから完全に削除されました。",
-    "auth_delete_error": "アカウントの削除に失敗しました。認証情報を確認するか、もう一度お試しください。"
-  },
+    "auth_delete_error": "アカウントの削除に失敗しました。認証情報を確認するか、もう一度お試しください。",
+      "auth_logout_confirm_title": "アカウントからサインアウトしますか？",
+      "auth_logout_confirm_desc": "本当にサインアウトしますか？PRO機能やアカウント設定にアクセスするには、再度サインインする必要があります。",
+      "auth_logout_confirm_btn": "はい、サインアウト",
+      "auth_logout_cancel_btn": "キャンセル"
+},
   "pt": {
     "auth_signin_title": "Faça login no HandleMyFile",
     "auth_signup_title": "Crie sua conta",
@@ -935,8 +959,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "Excluir conta e dados permanentemente",
     "auth_delete_btn_cancel": "Manter minha conta",
     "auth_delete_success": "Sua conta e dados foram excluídos permanentemente de todos os 4 aplicativos.",
-    "auth_delete_error": "Falha ao excluir a conta. Verifique suas credenciais ou tente novamente."
-  },
+    "auth_delete_error": "Falha ao excluir a conta. Verifique suas credenciais ou tente novamente.",
+      "auth_logout_confirm_title": "Sair da sua conta?",
+      "auth_logout_confirm_desc": "Tem certeza de que deseja sair? Você precisará entrar novamente para acessar os recursos PRO e as configurações da sua conta.",
+      "auth_logout_confirm_btn": "Sim, sair",
+      "auth_logout_cancel_btn": "Cancelar"
+},
   "zh": {
     "auth_signin_title": "登录 HandleMyFile",
     "auth_signup_title": "创建您的帐户",
@@ -1066,8 +1094,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "永久删除账户与数据",
     "auth_delete_btn_cancel": "保留我的账户",
     "auth_delete_success": "您的账户与数据已在全部 4 个套件应用中永久删除。",
-    "auth_delete_error": "删除账户失败。请验证您的密码或稍后再试。"
-  },
+    "auth_delete_error": "删除账户失败。请验证您的密码或稍后再试。",
+      "auth_logout_confirm_title": "退出您的账户？",
+      "auth_logout_confirm_desc": "您确定要退出登录吗？您需要重新登录才能使用 PRO 功能和访问账户设置。",
+      "auth_logout_confirm_btn": "确认退出",
+      "auth_logout_cancel_btn": "取消"
+},
   "ru": {
     "auth_signin_title": "Войдите в HandleMyFile",
     "auth_signup_title": "Создайте свою учетную запись",
@@ -1197,8 +1229,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "Удалить аккаунт и данные навсегда",
     "auth_delete_btn_cancel": "Сохранить мой аккаунт",
     "auth_delete_success": "Ваш аккаунт и данные были окончательно удалены из всех 4 приложений.",
-    "auth_delete_error": "Не удалось удалить аккаунт. Проверьте данные и повторите попытку."
-  },
+    "auth_delete_error": "Не удалось удалить аккаунт. Проверьте данные и повторите попытку.",
+      "auth_logout_confirm_title": "Выйти из аккаунта?",
+      "auth_logout_confirm_desc": "Вы уверены, что хотите выйти? Чтобы получить доступ к функциям PRO и настройкам аккаунта, потребуется войти снова.",
+      "auth_logout_confirm_btn": "Да, выйти",
+      "auth_logout_cancel_btn": "Отмена"
+},
   "hi": {
     "auth_signin_title": "HandleMyFile में साइन इन करें",
     "auth_signup_title": "अपना खाता बनाएं",
@@ -1328,8 +1364,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "Permanently Delete Account & Data",
     "auth_delete_btn_cancel": "Keep My Account",
     "auth_delete_success": "Your account and data have been permanently deleted across all 4 suite applications.",
-    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again."
-  },
+    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again.",
+      "auth_logout_confirm_title": "अपने खाते से साइन आउट करें?",
+      "auth_logout_confirm_desc": "क्या आप निश्चित रूप से साइन आउट करना चाहते हैं? PRO सुविधाओं और अपनी खाता सेटिंग्स तक पहुँचने के लिए आपको फिर से साइन इन करना होगा।",
+      "auth_logout_confirm_btn": "हाँ, साइन आउट करें",
+      "auth_logout_cancel_btn": "रद्द करें"
+},
   "it": {
     "auth_signin_title": "Accedi a HandleMyFile",
     "auth_signup_title": "Crea il tuo account",
@@ -1459,8 +1499,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "Elimina definitivamente account e dati",
     "auth_delete_btn_cancel": "Mantieni il mio account",
     "auth_delete_success": "Il tuo account e i tuoi dati sono stati eliminati definitivamente da tutte e 4 le app.",
-    "auth_delete_error": "Impossibile eliminare l'account. Verifica le credenziali e riprova."
-  },
+    "auth_delete_error": "Impossibile eliminare l'account. Verifica le credenziali e riprova.",
+      "auth_logout_confirm_title": "Disconnettersi dal proprio account?",
+      "auth_logout_confirm_desc": "Sei sicuro di voler uscire? Dovrai accedere di nuovo per utilizzare le funzionalità PRO e le impostazioni del tuo account.",
+      "auth_logout_confirm_btn": "Sì, esci",
+      "auth_logout_cancel_btn": "Annulla"
+},
   "ar": {
     "auth_signin_title": "قم بتسجيل الدخول إلى HandleMyFile",
     "auth_signup_title": "أنشئ حسابك",
@@ -1590,8 +1634,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "Permanently Delete Account & Data",
     "auth_delete_btn_cancel": "Keep My Account",
     "auth_delete_success": "Your account and data have been permanently deleted across all 4 suite applications.",
-    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again."
-  },
+    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again.",
+      "auth_logout_confirm_title": "تسجيل الخروج من حسابك؟",
+      "auth_logout_confirm_desc": "هل أنت متأكد من رغبتك في تسجيل الخروج؟ ستحتاج إلى تسجيل الدخول مرة أخرى للوصول إلى ميزات PRO وإعدادات حسابك.",
+      "auth_logout_confirm_btn": "نعم، تسجيل الخروج",
+      "auth_logout_cancel_btn": "إلغاء"
+},
   "ko": {
     "auth_signin_title": "HandleMyFile에 로그인",
     "auth_signup_title": "계정 만들기",
@@ -1721,8 +1769,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "Permanently Delete Account & Data",
     "auth_delete_btn_cancel": "Keep My Account",
     "auth_delete_success": "Your account and data have been permanently deleted across all 4 suite applications.",
-    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again."
-  },
+    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again.",
+      "auth_logout_confirm_title": "계정에서 로그아웃하시겠습니까?",
+      "auth_logout_confirm_desc": "정말 로그아웃하시겠습니까? PRO 기능 및 계정 설정을 이용하려면 다시 로그인해야 합니다.",
+      "auth_logout_confirm_btn": "예, 로그아웃",
+      "auth_logout_cancel_btn": "취소"
+},
   "pl": {
     "auth_signin_title": "Zaloguj się do HandleMyFile",
     "auth_signup_title": "Utwórz swoje konto",
@@ -1852,8 +1904,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "Permanently Delete Account & Data",
     "auth_delete_btn_cancel": "Keep My Account",
     "auth_delete_success": "Your account and data have been permanently deleted across all 4 suite applications.",
-    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again."
-  },
+    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again.",
+      "auth_logout_confirm_title": "Wylogować się z konta?",
+      "auth_logout_confirm_desc": "Czy na pewno chcesz się wylogować? Aby korzystać z funkcji PRO i ustawień konta, konieczne będzie ponowne zalogowanie.",
+      "auth_logout_confirm_btn": "Tak, wyloguj",
+      "auth_logout_cancel_btn": "Anuluj"
+},
   "vi": {
     "auth_signin_title": "Đăng nhập vào HandleMyFile",
     "auth_signup_title": "Tạo tài khoản của bạn",
@@ -1983,8 +2039,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "Permanently Delete Account & Data",
     "auth_delete_btn_cancel": "Keep My Account",
     "auth_delete_success": "Your account and data have been permanently deleted across all 4 suite applications.",
-    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again."
-  },
+    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again.",
+      "auth_logout_confirm_title": "Đăng xuất khỏi tài khoản của bạn?",
+      "auth_logout_confirm_desc": "Bạn có chắc chắn muốn đăng xuất không? Bạn sẽ cần đăng nhập lại để truy cập các tính năng PRO và cài đặt tài khoản.",
+      "auth_logout_confirm_btn": "Có, đăng xuất",
+      "auth_logout_cancel_btn": "Hủy"
+},
   "nl": {
     "auth_signin_title": "Meld u aan bij HandleMyFile",
     "auth_signup_title": "Maak uw account aan",
@@ -2114,8 +2174,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "Permanently Delete Account & Data",
     "auth_delete_btn_cancel": "Keep My Account",
     "auth_delete_success": "Your account and data have been permanently deleted across all 4 suite applications.",
-    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again."
-  },
+    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again.",
+      "auth_logout_confirm_title": "Uitloggen van uw account?",
+      "auth_logout_confirm_desc": "Weet u zeker dat u wilt uitloggen? U moet opnieuw inloggen om toegang te krijgen tot PRO-functies en uw accountinstellingen.",
+      "auth_logout_confirm_btn": "Ja, uitloggen",
+      "auth_logout_cancel_btn": "Annuleren"
+},
   "tr": {
     "auth_signin_title": "HandleMyFile'da oturum açın",
     "auth_signup_title": "Hesabınızı oluşturun",
@@ -2245,8 +2309,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "Permanently Delete Account & Data",
     "auth_delete_btn_cancel": "Keep My Account",
     "auth_delete_success": "Your account and data have been permanently deleted across all 4 suite applications.",
-    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again."
-  },
+    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again.",
+      "auth_logout_confirm_title": "Hesabınızdan çıkış yapılsın mı?",
+      "auth_logout_confirm_desc": "Çıkış yapmak istediğinizden emin misiniz? PRO özelliklerine ve hesap ayarlarınıza erişmek için tekrar giriş yapmanız gerekecektir.",
+      "auth_logout_confirm_btn": "Evet, Çıkış Yap",
+      "auth_logout_cancel_btn": "İptal"
+},
   "el": {
     "auth_signin_title": "Συνδεθείτε στο HandleMyFile",
     "auth_signup_title": "Δημιουργήστε τον λογαριασμό σας",
@@ -2376,8 +2444,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "Permanently Delete Account & Data",
     "auth_delete_btn_cancel": "Keep My Account",
     "auth_delete_success": "Your account and data have been permanently deleted across all 4 suite applications.",
-    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again."
-  },
+    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again.",
+      "auth_logout_confirm_title": "Αποσύνδεση από τον λογαριασμό σας;",
+      "auth_logout_confirm_desc": "Είστε βέβαιοι ότι θέλετε να αποσυνδεθείτε; Θα πρέπει να συνδεθείτε ξανά για πρόσβαση στις λειτουργίες PRO και στις ρυθμίσεις του λογαριασμού σας.",
+      "auth_logout_confirm_btn": "Ναι, αποσύνδεση",
+      "auth_logout_cancel_btn": "Ακύρωση"
+},
   "sv": {
     "auth_signin_title": "Logga in på HandleMyFile",
     "auth_signup_title": "Skapa ditt konto",
@@ -2507,8 +2579,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "Permanently Delete Account & Data",
     "auth_delete_btn_cancel": "Keep My Account",
     "auth_delete_success": "Your account and data have been permanently deleted across all 4 suite applications.",
-    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again."
-  },
+    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again.",
+      "auth_logout_confirm_title": "Logga ut från ditt konto?",
+      "auth_logout_confirm_desc": "Är du säker på att du vill logga ut? Du måste logga in igen för att få åtkomst till PRO-funktioner och dina kontoinställningar.",
+      "auth_logout_confirm_btn": "Ja, logga ut",
+      "auth_logout_cancel_btn": "Avbryt"
+},
   "th": {
     "auth_signin_title": "ลงชื่อเข้าใช้ HandleMyFile",
     "auth_signup_title": "สร้างบัญชีของคุณ",
@@ -2638,8 +2714,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "Permanently Delete Account & Data",
     "auth_delete_btn_cancel": "Keep My Account",
     "auth_delete_success": "Your account and data have been permanently deleted across all 4 suite applications.",
-    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again."
-  },
+    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again.",
+      "auth_logout_confirm_title": "ออกจากระบบจากบัญชีของคุณหรือไม่?",
+      "auth_logout_confirm_desc": "คุณแน่ใจหรือไม่ว่าต้องการออกจากระบบ? คุณจะต้องเข้าสู่ระบบอีกครั้งเพื่อเข้าถึงฟีเจอร์ PRO และการตั้งค่าบัญชีของคุณ",
+      "auth_logout_confirm_btn": "ใช่ ออกจากระบบ",
+      "auth_logout_cancel_btn": "ยกเลิก"
+},
   "da": {
     "auth_signin_title": "Log ind på HandleMyFile",
     "auth_signup_title": "Opret din konto",
@@ -2769,8 +2849,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "Permanently Delete Account & Data",
     "auth_delete_btn_cancel": "Keep My Account",
     "auth_delete_success": "Your account and data have been permanently deleted across all 4 suite applications.",
-    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again."
-  },
+    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again.",
+      "auth_logout_confirm_title": "Log ud af din konto?",
+      "auth_logout_confirm_desc": "Er du sikker på, at du vil logge ud? Du skal logge ind igen for at få adgang til PRO-funktioner og dine kontoindstillinger.",
+      "auth_logout_confirm_btn": "Ja, log ud",
+      "auth_logout_cancel_btn": "Annuller"
+},
   "cs": {
     "auth_signin_title": "Přihlaste se do HandleMyFile",
     "auth_signup_title": "Vytvořte si účet",
@@ -2900,8 +2984,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "Permanently Delete Account & Data",
     "auth_delete_btn_cancel": "Keep My Account",
     "auth_delete_success": "Your account and data have been permanently deleted across all 4 suite applications.",
-    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again."
-  },
+    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again.",
+      "auth_logout_confirm_title": "Odhlásit se z účtu?",
+      "auth_logout_confirm_desc": "Opravdu se chcete odhlásit? Pro přístup k funkcím PRO a nastavení účtu se budete muset znovu přihlásit.",
+      "auth_logout_confirm_btn": "Ano, odhlásit se",
+      "auth_logout_cancel_btn": "Zrušit"
+},
   "fi": {
     "auth_signin_title": "Kirjaudu sisään HandleMyFileen",
     "auth_signup_title": "Luo tili",
@@ -3031,8 +3119,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "Permanently Delete Account & Data",
     "auth_delete_btn_cancel": "Keep My Account",
     "auth_delete_success": "Your account and data have been permanently deleted across all 4 suite applications.",
-    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again."
-  },
+    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again.",
+      "auth_logout_confirm_title": "Kirjaudutaanko ulos tililtäsi?",
+      "auth_logout_confirm_desc": "Haluatko varmasti kirjautua ulos? Sinun on kirjauduttava uudelleen sisään käyttääksesi PRO-ominaisuuksia ja tilisi asetuksia.",
+      "auth_logout_confirm_btn": "Kyllä, kirjaudu ulos",
+      "auth_logout_cancel_btn": "Peruuta"
+},
   "he": {
     "auth_signin_title": "היכנס אל HandleMyFile",
     "auth_signup_title": "צור את החשבון שלך",
@@ -3162,8 +3254,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "Permanently Delete Account & Data",
     "auth_delete_btn_cancel": "Keep My Account",
     "auth_delete_success": "Your account and data have been permanently deleted across all 4 suite applications.",
-    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again."
-  },
+    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again.",
+      "auth_logout_confirm_title": "להתנתק מהחשבון שלך?",
+      "auth_logout_confirm_desc": "האם אתה בטוח שברצונך להתנתק? תצטרך להתחבר שוב כדי לגשת לתכונות PRO ולהגדרות החשבון שלך.",
+      "auth_logout_confirm_btn": "כן, התנתק",
+      "auth_logout_cancel_btn": "ביטול"
+},
   "ro": {
     "auth_signin_title": "Conectați-vă la HandleMyFile",
     "auth_signup_title": "Creați-vă contul",
@@ -3293,8 +3389,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "Permanently Delete Account & Data",
     "auth_delete_btn_cancel": "Keep My Account",
     "auth_delete_success": "Your account and data have been permanently deleted across all 4 suite applications.",
-    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again."
-  },
+    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again.",
+      "auth_logout_confirm_title": "Deconectare din contul dvs.?",
+      "auth_logout_confirm_desc": "Sigur doriți să vă deconectați? Va trebui să vă conectați din nou pentru a accesa funcțiile PRO și setările contului dvs.",
+      "auth_logout_confirm_btn": "Da, deconectare",
+      "auth_logout_cancel_btn": "Anulează"
+},
   "hu": {
     "auth_signin_title": "Jelentkezzen be a HandleMyFile-ba",
     "auth_signup_title": "Hozd létre a fiókodat",
@@ -3424,8 +3524,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "Permanently Delete Account & Data",
     "auth_delete_btn_cancel": "Keep My Account",
     "auth_delete_success": "Your account and data have been permanently deleted across all 4 suite applications.",
-    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again."
-  },
+    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again.",
+      "auth_logout_confirm_title": "Kijelentkezik fiókjából?",
+      "auth_logout_confirm_desc": "Biztosan ki szeretne jelentkezni? A PRO funkciók és a fiókbeállítások eléréséhez újra be kell jelentkeznie.",
+      "auth_logout_confirm_btn": "Igen, kijelentkezés",
+      "auth_logout_cancel_btn": "Mégse"
+},
   "no": {
     "auth_signin_title": "Logg på HandleMyFile",
     "auth_signup_title": "Opprett kontoen din",
@@ -3555,8 +3659,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "Permanently Delete Account & Data",
     "auth_delete_btn_cancel": "Keep My Account",
     "auth_delete_success": "Your account and data have been permanently deleted across all 4 suite applications.",
-    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again."
-  },
+    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again.",
+      "auth_logout_confirm_title": "Logge ut av kontoen din?",
+      "auth_logout_confirm_desc": "Er du sikker på at du vil logge ut? Du må logge inn på nytt for å få tilgang til PRO-funksjoner og kontoinnstillingene dine.",
+      "auth_logout_confirm_btn": "Ja, logg ut",
+      "auth_logout_cancel_btn": "Avbryt"
+},
   "sk": {
     "auth_signin_title": "Prihláste sa do HandleMyFile",
     "auth_signup_title": "Vytvorte si účet",
@@ -3686,8 +3794,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "Permanently Delete Account & Data",
     "auth_delete_btn_cancel": "Keep My Account",
     "auth_delete_success": "Your account and data have been permanently deleted across all 4 suite applications.",
-    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again."
-  },
+    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again.",
+      "auth_logout_confirm_title": "Odhlásiť sa z účtu?",
+      "auth_logout_confirm_desc": "Naozaj sa chcete odhlásiť? Pre prístup k funkciám PRO a nastaveniam účtu sa budete musieť znova prihlásiť.",
+      "auth_logout_confirm_btn": "Áno, odhlásiť sa",
+      "auth_logout_cancel_btn": "Zrušiť"
+},
   "uk": {
     "auth_signin_title": "Увійдіть у HandleMyFile",
     "auth_signup_title": "Створіть свій акаунт",
@@ -3817,8 +3929,12 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "Permanently Delete Account & Data",
     "auth_delete_btn_cancel": "Keep My Account",
     "auth_delete_success": "Your account and data have been permanently deleted across all 4 suite applications.",
-    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again."
-  },
+    "auth_delete_error": "Failed to delete account. Please verify your credentials or try again.",
+      "auth_logout_confirm_title": "Вийти з облікового запису?",
+      "auth_logout_confirm_desc": "Ви впевнені, що хочете вийти? Щоб отримати доступ до функцій PRO та налаштувань облікового запису, вам знадобиться знову увійти.",
+      "auth_logout_confirm_btn": "Так, вийти",
+      "auth_logout_cancel_btn": "Скасувати"
+},
   "ms": {
     "auth_signin_title": "Log masuk ke HandleMyFile",
     "auth_signup_title": "Buat akaun anda",
@@ -3948,6 +4064,10 @@ export const authTranslations: Record<string, Record<string, string>> = {
     "auth_delete_btn_submit": "Padam Akaun & Data Secara Kekal",
     "auth_delete_btn_cancel": "Kekalkan Akaun Saya",
     "auth_delete_success": "Akaun dan data anda telah dipadamkan secara kekal dari kesemua 4 aplikasi.",
-    "auth_delete_error": "Gagal memadam akaun. Sila semak kelayakan anda atau cuba lagi."
-  }
+    "auth_delete_error": "Gagal memadam akaun. Sila semak kelayakan anda atau cuba lagi.",
+      "auth_logout_confirm_title": "Log keluar dari akaun anda?",
+      "auth_logout_confirm_desc": "Adakah anda pasti mahu log keluar? Anda perlu log masuk semula untuk mengakses ciri PRO dan tetapan akaun anda.",
+      "auth_logout_confirm_btn": "Ya, Log Keluar",
+      "auth_logout_cancel_btn": "Batal"
+}
 };

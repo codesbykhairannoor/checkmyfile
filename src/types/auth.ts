@@ -47,5 +47,8 @@ export interface AuthContextType {
   isChangePasswordModalOpen: boolean;
   openChangePasswordModal: () => void;
   closeChangePasswordModal: () => void;
+  isLogoutConfirmOpen: boolean;
+  openLogoutConfirmModal: () => void;
+  closeLogoutConfirmModal: () => void;
   refreshProfile: () => Promise<void>;
 }
