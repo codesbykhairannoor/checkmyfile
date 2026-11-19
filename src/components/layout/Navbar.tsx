@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { LocaleSwitcher } from './LocaleSwitcher';
 import {
+  KeyRound,
   Sun, Moon, FileText, ChevronDown, ChevronUp, Grid,
   Combine, Scissors, Minimize2, FileSpreadsheet, LayoutList, Crop,
   ScanText, ScanLine, Eraser, Scale, EyeOff, RotateCw, Hash, Stamp,
@@ -89,7 +90,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   const [mobileSearch, setMobileSearch] = useState('');
   const [expandedMobileCategory, setExpandedMobileCategory] = useState<string | null>(null);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
-  const { user, profile, isPro, openAuthModal, openDeleteModal, signOut } = useAuth();
+  const { user, profile, isPro, openAuthModal, openDeleteModal, openChangePasswordModal, signOut } = useAuth();
   const navRef = useRef<HTMLDivElement>(null);
   const suiteRef = useRef<HTMLDivElement>(null);
   const megaTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -655,6 +656,30 @@ export const Navbar: React.FC<NavbarProps> = ({
                         {authT.nav_upgrade_pro || 'Upgrade to PRO'}
                       </a>
                     )}
+                    <button
+                      onClick={() => {
+                        setIsUserMenuOpen(false);
+                        openChangePasswordModal();
+                      }}
+                      style={{
+                        width: '100%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: 8,
+                        padding: '8px 10px',
+                        background: 'none',
+                        border: 'none',
+                        color: 'var(--text-main)',
+                        fontSize: '0.8rem',
+                        fontWeight: 600,
+                        cursor: 'pointer',
+                        borderRadius: 6,
+                        textAlign: 'left',
+                      }}
+                    >
+                      <KeyRound size={14} color="var(--text-muted)" />
+                      {authT.auth_change_password_title || 'Change Password'}
+                    </button>
                     <button
                       onClick={() => {
                         setIsUserMenuOpen(false);
@@ -1405,6 +1430,29 @@ export const Navbar: React.FC<NavbarProps> = ({
                     PRO
                   </span>
                 )}
+                <button
+                  onClick={() => {
+                    setIsMobileMenuOpen(false);
+                    openChangePasswordModal();
+                  }}
+                  style={{
+                    padding: '6px 8px',
+                    background: 'rgba(255,255,255,0.06)',
+                    border: '1px solid var(--border-color)',
+                    color: 'var(--text-main)',
+                    borderRadius: 6,
+                    fontSize: '0.75rem',
+                    fontWeight: 700,
+                    cursor: 'pointer',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                  title={authT.auth_change_password_title || 'Change Password'}
+                  aria-label={authT.auth_change_password_title || 'Change Password'}
+                >
+                  <KeyRound size={13} />
+                </button>
                 <button
                   onClick={() => {
                     setIsMobileMenuOpen(false);

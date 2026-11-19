@@ -44,5 +44,8 @@ export interface AuthContextType {
   isDeleteModalOpen: boolean;
   openDeleteModal: () => void;
   closeDeleteModal: () => void;
+  isChangePasswordModalOpen: boolean;
+  openChangePasswordModal: () => void;
+  closeChangePasswordModal: () => void;
   refreshProfile: () => Promise<void>;
 }

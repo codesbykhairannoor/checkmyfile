@@ -14,6 +14,7 @@ import { ComparePage } from './pages/ComparePage';
 import { LanguagesPage } from './pages/LanguagesPage';
 import { AuthModal } from './components/auth/AuthModal';
 import { DeleteAccountModal } from './components/auth/DeleteAccountModal';
+import { ChangePasswordModal } from './components/auth/ChangePasswordModal';
 import { getToolBySlugAndLang, getToolById, type ToolDefinition } from './catalog/toolsCatalog';
 import { isValidLanguageCode } from './i18n/languages';
 import { getStaticPageIdFromSlug, getLocalizedStaticSlug, type StaticPageId } from './i18n/staticSlugs';
@@ -225,6 +226,7 @@ export const App: React.FC = () => {
       {!isEditorActive && <Footer currentLang={currentLang} onSelectTool={handleSelectTool} onNavigatePage={handleNavigatePage} />}
       <AuthModal currentLang={currentLang} />
       <DeleteAccountModal currentLang={currentLang} />
+      <ChangePasswordModal currentLang={currentLang} />
     </div>
   );
 };

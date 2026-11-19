@@ -24,7 +24,7 @@ export const PrivacyPage: React.FC<Props> = ({ currentLang }) => {
         slug="privacy"
       />
       <main style={{ width: '100%', flex: 1, background: 'var(--bg-app)' }}>
-        
+
         {/* Section 1: Hero Vault */}
         <section style={{ width: '100%', padding: '120px 24px', background: 'var(--bg-card)', borderBottom: '1px solid var(--border-color)', position: 'relative', overflow: 'hidden' }}>
           <div style={{ maxWidth: 900, margin: '0 auto', textAlign: 'center', position: 'relative', zIndex: 10 }}>

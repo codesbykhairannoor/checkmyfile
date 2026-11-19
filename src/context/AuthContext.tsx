@@ -43,6 +43,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [loading, setLoading] = useState<boolean>(true);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState<boolean>(false);
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState<boolean>(false);
+  const [isChangePasswordModalOpen, setIsChangePasswordModalOpen] = useState<boolean>(false);
 
   const fetchOrCreateProfile = useCallback(async (firebaseUser: User): Promise<UserProfile> => {
     const monthKey = getCurrentMonthKey();
@@ -174,7 +175,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
       setUser(currentUser);
       if (currentUser) {
-        setIsAuthModalOpen(false);
+        // Only close auth modal if user is verified (e.g. Google sign-in or verified user)
+        if (currentUser.emailVerified) {
+          setIsAuthModalOpen(false);
+        }
         try {
           const userProfile = await fetchOrCreateProfile(currentUser);
           setProfile(userProfile);
@@ -252,6 +256,32 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     auth.languageCode = activeLang;
 
     const currentOrigin = typeof window !== 'undefined' ? window.location.origin : 'https://handlemyfile.com';
+
+    // 1. First try custom branded HandleMyFile email via Serverless Resend API (0% HelpMyIMG traces)
+    if (userToVerify.email) {
+      try {
+        const response = await fetch('/api/send-verification-email/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            email: userToVerify.email.trim(),
+            origin: currentOrigin,
+            lang: activeLang,
+          }),
+        });
+
+        if (response.ok) {
+          const data = await response.json().catch(() => ({}));
+          if (data.success) {
+            return;
+          }
+        }
+      } catch (apiErr) {
+        console.warn('API send verification email call failed, trying client SDK fallback:', apiErr);
+      }
+    }
+
+    // 2. Client SDK fallback with scoped actionCodeSettings
     const actionCodeSettings: ActionCodeSettings = {
       // Directs strictly back to HandleMyFile to avoid mixing with other sites
       url: `${currentOrigin}/?mode=verifyEmail`,
@@ -307,6 +337,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     const result = await createUserWithEmailAndPassword(auth, trimmedEmail, password);
     const userProfile = await fetchOrCreateProfile(result.user);
     setProfile(userProfile);
+    setIsAuthModalOpen(true);
 
     // Automatically send verification email specifically for HandleMyFile
     try {
@@ -395,6 +426,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const openDeleteModal = () => setIsDeleteModalOpen(true);
   const closeDeleteModal = () => setIsDeleteModalOpen(false);
 
+  const openChangePasswordModal = () => setIsChangePasswordModalOpen(true);
+  const closeChangePasswordModal = () => setIsChangePasswordModalOpen(false);
+
   const deleteAccount = async (passwordConfirmation?: string) => {
     if (!auth || !auth.currentUser) {
       throw new Error('No user currently authenticated.');
@@ -423,7 +457,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           }
         }
         keysToRemove.forEach((k) => localStorage.removeItem(k));
-      } catch (_) {}
+      } catch (_) { }
 
       // 3. Delete user account from Firebase Auth
       await deleteUser(currentUser);
@@ -499,6 +533,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         isDeleteModalOpen,
         openDeleteModal,
         closeDeleteModal,
+        isChangePasswordModalOpen,
+        openChangePasswordModal,
+        closeChangePasswordModal,
         refreshProfile,
       }}
     >
