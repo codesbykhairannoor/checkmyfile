@@ -14,7 +14,8 @@
     "sitemaps": "npx tsx scripts/generate-multilingual-sitemaps.ts",
     "audit": "node scripts/audit-seo.cjs",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:qa": "npx tsx scripts/run-qa-suite.ts"
   },
   "dependencies": {
     "@pdfsmaller/pdf-decrypt": "^1.0.1",
