@@ -274,7 +274,14 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                 return smartHighlight(fullTitle);
               })()}
             </h1>
-            <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem', maxWidth: 800, margin: '0 auto', lineHeight: 1.6 }}>
+            <p style={{
+              color: 'var(--text-muted)',
+              fontSize: 'clamp(1.05rem, 2vw, 1.25rem)',
+              maxWidth: 820,
+              margin: '0 auto',
+              lineHeight: 1.7,
+              fontWeight: 500
+            }}>
               {seoData.data?.description || seoData.data?.heroDescription || seo.description}
             </p>
           </div>
