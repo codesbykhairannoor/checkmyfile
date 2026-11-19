@@ -171,10 +171,10 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
       <section style={{ padding: '40px 24px 60px', background: 'rgba(0,0,0,0.02)' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
 
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 40 }}>
-            <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 900, fontFamily: 'var(--font-display)', letterSpacing: '-0.02em' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 28 }}>
+            <h2 style={{ fontSize: 'clamp(1.5rem, 2.5vw, 1.85rem)', fontWeight: 800, fontFamily: 'var(--font-display)', letterSpacing: '-0.02em', color: 'var(--text-main)' }}>
               {selectedCategory === 'all' ? t.allTools : selectedCategory.toUpperCase()}
-              <span style={{ marginLeft: 12, color: 'var(--text-muted)', fontWeight: 600, fontSize: '1.4rem' }}>({filteredTools.length})</span>
+              <span style={{ marginLeft: 10, color: 'var(--text-muted)', fontWeight: 600, fontSize: '1.05rem' }}>({filteredTools.length})</span>
             </h2>
           </div>
 

@@ -5,6 +5,37 @@
   --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 
+  /* ==========================================================================
+     GLOBAL FLUID TYPOGRAPHY TOKENS (Utopia Type Scale & Modern SaaS Standards)
+     Calculated via utopia-core (min: 360px -> max: 1440px)
+     ========================================================================== */
+  --step--2: clamp(0.6944rem, 0.6859rem + 0.0379vw, 0.75rem);
+  /* 11px -> 12px: Badges, pills, overline */
+  --step--1: clamp(0.8333rem, 0.8111rem + 0.0988vw, 0.9rem);
+  /* 13.5px -> 14.5px: Small text, tooltips */
+  --step-0: clamp(1rem, 0.9583rem + 0.1852vw, 1.125rem);
+  /* 16px -> 18px: Base body text */
+  --step-1: clamp(1.05rem, 2vw, 1.25rem);
+  /* 17px -> 20px: Section descriptions / Lead P */
+  --step-2: clamp(1.25rem, 3vw, 1.5rem);
+  /* 20px -> 24px: Sub-titles (H3) */
+  --step-3: clamp(1.5rem, 3.5vw, 2.0rem);
+  /* 24px -> 32px: Mid headings */
+  --step-4: clamp(2.2rem, 5vw, 3.5rem);
+  /* 35px -> 56px: Section Titles (H2) */
+  --step-5: clamp(1.8rem, 4vw, 3.5rem);
+  /* 29px -> 56px: Hero/Main Titles (H1) */
+  --step-6: clamp(2.5rem, 5vw, 4.5rem);
+  /* 40px -> 72px: Giant Display Titles */
+
+  /* Navbar Typography Tokens (+1.5px adjustment: 14px -> 15.5px) */
+  --nav-link-size: 15.5px;
+  --nav-link-weight: 600;
+  --nav-link-letter-spacing: -0.01em;
+  --nav-btn-size: 15.5px;
+  --nav-btn-weight: 700;
+  --nav-brand-size: 21.5px;
+
   /* Premium Sleek Dark Mode (iLovePDF & Vercel Modern Vibe) */
   --bg-app: #080a0f;
   --bg-card: #111520;
@@ -95,6 +126,70 @@ input,
 select,
 textarea {
   font-family: inherit;
+}
+
+/* ==========================================================================
+   GLOBAL TYPOGRAPHY UTILITIES & HEADING DEFAULTS
+   ========================================================================== */
+.text-step--2 {
+  font-size: var(--step--2);
+}
+
+.text-step--1 {
+  font-size: var(--step--1);
+}
+
+.text-step-0 {
+  font-size: var(--step-0);
+}
+
+.text-step-1 {
+  font-size: var(--step-1);
+}
+
+.text-step-2 {
+  font-size: var(--step-2);
+}
+
+.text-step-3 {
+  font-size: var(--step-3);
+}
+
+.text-step-4 {
+  font-size: var(--step-4);
+}
+
+.text-step-5 {
+  font-size: var(--step-5);
+}
+
+.text-step-6 {
+  font-size: var(--step-6);
+}
+
+h1 {
+  font-size: var(--step-5);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  font-size: var(--step-4);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+h3 {
+  font-size: var(--step-2);
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+}
+
+p {
+  line-height: 1.65;
 }
 
 /* Glassmorphism utility */

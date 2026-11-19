@@ -299,7 +299,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div style={{ display: 'flex', alignItems: 'center', flexShrink: 0 }}>
           <div onClick={onNavigateHome} aria-label="Navigate to Home" style={{ display: 'flex', alignItems: 'center', gap: 12, cursor: 'pointer', userSelect: 'none', flexShrink: 0 }}>
             <img src="/logo.png" alt="HandleMyFile Logo" className="brand-logo-img" style={{ height: 40, width: 'auto', objectFit: 'contain' }} />
-            <div className="brand-title" style={{ fontSize: '1.4rem', fontWeight: 800, letterSpacing: '-0.02em', lineHeight: 1.1, fontFamily: 'var(--font-heading)' }}>
+            <div className="brand-title" style={{ fontSize: 'var(--nav-brand-size, 1.25rem)', fontWeight: 800, letterSpacing: '-0.02em', lineHeight: 1.1, fontFamily: 'var(--font-heading)' }}>
               HandleMy<span className="gradient-text">File</span>
             </div>
           </div>
@@ -320,10 +320,10 @@ export const Navbar: React.FC<NavbarProps> = ({
                 background: 'transparent',
                 border: 'none',
                 color: 'var(--text-main)',
-                padding: '7px 14px',
+                padding: '6px 14px',
                 borderRadius: 8,
-                fontSize: '1.02rem',
-                fontWeight: 700,
+                fontSize: 'var(--nav-link-size, 0.875rem)',
+                fontWeight: 600,
                 cursor: 'pointer',
                 transition: 'all 0.2s',
                 letterSpacing: '-0.01em',
@@ -344,10 +344,10 @@ export const Navbar: React.FC<NavbarProps> = ({
                 background: isMegaOpen ? 'var(--brand-gradient)' : 'rgba(225,29,72,0.1)',
                 color: isMegaOpen ? '#fff' : 'var(--text-accent)',
                 border: '1px solid rgba(225,29,72,0.3)',
-                padding: '7px 16px',
+                padding: '6px 14px',
                 borderRadius: 8,
-                fontSize: '1.02rem',
-                fontWeight: 800,
+                fontSize: 'var(--nav-link-size, 0.875rem)',
+                fontWeight: 700,
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
@@ -465,12 +465,12 @@ export const Navbar: React.FC<NavbarProps> = ({
               <button
                 onClick={openAuthModal}
                 style={{
-                  padding: '9px 22px',
+                  padding: '7px 18px',
                   borderRadius: 8,
                   background: 'var(--brand-primary)',
                   color: '#ffffff',
                   border: 'none',
-                  fontSize: '0.96rem',
+                  fontSize: 'var(--nav-btn-size, 0.875rem)',
                   fontWeight: 700,
                   cursor: 'pointer',
                   display: 'inline-flex',
@@ -1828,21 +1828,21 @@ export const Navbar: React.FC<NavbarProps> = ({
           gap: 4px;
         }
         .mega-menu-title {
-          font-size: 0.95rem;
+          font-size: 13px;
           font-weight: 800;
           color: var(--text-accent);
-          letter-spacing: 0.01em;
-          margin-bottom: 4px;
-          border-bottom: 1px dashed var(--border-color);
-          padding-bottom: 7px;
-          text-transform: capitalize;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+          margin-bottom: 6px;
+          border-bottom: 1px solid var(--border-color);
+          padding-bottom: 6px;
         }
         .mega-menu-item {
           display: flex;
           align-items: center;
-          gap: 9px;
-          padding: 7px 9px;
-          border-radius: 8px;
+          gap: 8px;
+          padding: 6px 8px;
+          border-radius: 6px;
           cursor: pointer;
           transition: all 0.15s ease;
           color: var(--text-main);
@@ -1854,10 +1854,11 @@ export const Navbar: React.FC<NavbarProps> = ({
           transform: translateX(3px);
         }
         .mega-menu-item .item-title {
-          font-size: 1.02rem;
-          font-weight: 700;
+          font-size: var(--nav-link-size, 0.875rem);
+          font-weight: 600;
           color: var(--text-main);
-          line-height: 1.2;
+          line-height: 1.25;
+          letter-spacing: -0.01em;
           text-transform: capitalize;
         }
         .mega-menu-item:hover .item-title {

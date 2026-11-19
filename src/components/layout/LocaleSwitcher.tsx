@@ -67,12 +67,12 @@ export const LocaleSwitcher: React.FC<LocaleSwitcherProps> = ({
           background: isOpen ? 'rgba(225, 29, 72, 0.12)' : 'var(--bg-input)',
           border: isOpen ? '1px solid var(--brand-primary)' : '1px solid var(--border-color)',
           color: isOpen ? 'var(--text-accent)' : 'var(--text-main)',
-          padding: compact ? '6px 10px' : '8px 14px',
+          padding: compact ? '6px 10px' : '7px 12px',
           height: compact ? 38 : (fullWidth ? 40 : undefined),
           borderRadius: compact ? 8 : (fullWidth ? 10 : 9999),
           cursor: 'pointer',
           fontWeight: 600,
-          fontSize: compact ? '0.88rem' : '0.98rem',
+          fontSize: compact ? '0.84rem' : 'var(--nav-link-size, 0.875rem)',
           transition: 'all 0.2s ease',
           userSelect: 'none',
         }}
@@ -103,7 +103,7 @@ export const LocaleSwitcher: React.FC<LocaleSwitcherProps> = ({
           }}
         >
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid var(--border-color)', paddingBottom: 10 }}>
-            <span style={{ fontSize: '0.88rem', fontWeight: 800, color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: 6 }}>
+            <span style={{ fontSize: '0.96rem', fontWeight: 800, color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: 6 }}>
               <Globe size={16} className="text-accent" />
               <span>{t.languageSelect} ({SUPPORTED_LANGUAGES.length})</span>
             </span>
@@ -173,7 +173,7 @@ export const LocaleSwitcher: React.FC<LocaleSwitcherProps> = ({
                     cursor: 'pointer',
                     textAlign: 'left',
                     transition: 'all 0.15s ease',
-                    fontSize: '0.85rem',
+                    fontSize: '0.94rem',
                     fontWeight: lang.code === currentLang ? 700 : 500,
                   }}
                 >
