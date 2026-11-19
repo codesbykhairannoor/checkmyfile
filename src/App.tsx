@@ -15,6 +15,7 @@ import { LanguagesPage } from './pages/LanguagesPage';
 import { AuthModal } from './components/auth/AuthModal';
 import { DeleteAccountModal } from './components/auth/DeleteAccountModal';
 import { ChangePasswordModal } from './components/auth/ChangePasswordModal';
+import { UnverifiedEmailBanner } from './components/auth/UnverifiedEmailBanner';
 import { getToolBySlugAndLang, getToolById, type ToolDefinition } from './catalog/toolsCatalog';
 import { isValidLanguageCode } from './i18n/languages';
 import { getStaticPageIdFromSlug, getLocalizedStaticSlug, type StaticPageId } from './i18n/staticSlugs';
@@ -196,6 +197,7 @@ export const App: React.FC = () => {
         onNavigateHome={handleNavigateHome}
         onSelectTool={handleSelectTool}
       />
+      <UnverifiedEmailBanner currentLang={currentLang} />
 
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', backgroundColor: 'var(--bg-app)' }}>
         <React.Suspense fallback={<div style={{ minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><div className="spinner" style={{ width: 36, height: 36, border: '3px solid var(--border-color)', borderTopColor: 'var(--brand-primary)', borderRadius: '50%', animation: 'spin 0.8s linear infinite' }} /></div>}>

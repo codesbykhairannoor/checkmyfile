@@ -596,7 +596,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                             gap: 6,
                           }}
                         >
-                          <span style={{ fontWeight: 600 }}>{currentLang === 'id' ? 'Belum Verifikasi' : 'Unverified'}</span>
+                          <span style={{ fontWeight: 600 }}>{authT.auth_status_unverified || (currentLang === 'id' ? 'Belum Verifikasi' : 'Unverified')}</span>
                           <button
                             type="button"
                             onClick={() => {
@@ -614,7 +614,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                               cursor: 'pointer',
                             }}
                           >
-                            {currentLang === 'id' ? 'Verifikasi' : 'Verify'}
+                            {authT.auth_verify_btn_action || (currentLang === 'id' ? 'Verifikasi' : 'Verify')}
                           </button>
                         </div>
                       )}
@@ -1422,6 +1422,29 @@ export const Navbar: React.FC<NavbarProps> = ({
                   <div style={{ fontSize: '0.74rem', color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                     {user.email}
                   </div>
+                  {!isPro && !user.emailVerified && (
+                    <div style={{ marginTop: 4 }}>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setIsMobileMenuOpen(false);
+                          openAuthModal();
+                        }}
+                        style={{
+                          background: 'rgba(239, 68, 68, 0.15)',
+                          color: '#ef4444',
+                          border: '1px solid rgba(239, 68, 68, 0.3)',
+                          borderRadius: 4,
+                          padding: '1px 6px',
+                          fontSize: '0.68rem',
+                          fontWeight: 700,
+                          cursor: 'pointer',
+                        }}
+                      >
+                        {authT.auth_status_unverified || 'Unverified'} • {authT.auth_verify_btn_action || 'Verify'}
+                      </button>
+                    </div>
+                  )}
                 </div>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexShrink: 0 }}>

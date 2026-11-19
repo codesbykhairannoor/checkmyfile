@@ -509,7 +509,7 @@ export const ChangePasswordModal: React.FC<ChangePasswordModalProps> = ({ curren
                     cursor: loading ? 'not-allowed' : 'pointer',
                   }}
                 >
-                  Cancel
+                  {t.auth_change_pw_cancel_btn || (currentLang === 'id' ? 'Batal' : 'Cancel')}
                 </button>
               </div>
             </form>

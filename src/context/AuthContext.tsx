@@ -436,6 +436,13 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
     const currentUser = auth.currentUser;
     const uid = currentUser.uid;
+    const isPasswordProvider = currentUser.providerData.some((p) => p.providerId === 'password');
+
+    // If password user provided confirmation, verify credentials first
+    if (isPasswordProvider && passwordConfirmation && currentUser.email) {
+      const credential = EmailAuthProvider.credential(currentUser.email, passwordConfirmation);
+      await reauthenticateWithCredential(currentUser, credential);
+    }
 
     const performDeletion = async () => {
       // 1. Delete Firestore user document
@@ -471,7 +478,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       await performDeletion();
     } catch (err: any) {
       if (err?.code === 'auth/requires-recent-login') {
-        const isPasswordProvider = currentUser.providerData.some((p) => p.providerId === 'password');
         const isGoogleProvider = currentUser.providerData.some((p) => p.providerId === 'google.com');
 
         if (isPasswordProvider) {

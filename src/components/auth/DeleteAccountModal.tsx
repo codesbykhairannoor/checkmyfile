@@ -36,6 +36,8 @@ export const DeleteAccountModal: React.FC<DeleteAccountModalProps> = ({ currentL
 
   const isConfirmed = confirmText.trim().toUpperCase() === 'DELETE';
   const isPasswordUser = user.providerData?.some((p: any) => p.providerId === 'password');
+  const isPasswordValid = !isPasswordUser || (password && password.trim().length >= 6);
+  const canSubmit = isConfirmed && isPasswordValid && !loading;
 
   const handleClose = () => {
     if (loading) return;
@@ -51,7 +53,7 @@ export const DeleteAccountModal: React.FC<DeleteAccountModalProps> = ({ currentL
     e.preventDefault();
     if (!isConfirmed) return;
 
-    if (isPasswordUser && requiresPassword && !password) {
+    if (isPasswordUser && (!password || password.trim().length < 6)) {
       setErrorMsg(t.auth_delete_password_required || 'Please enter your password to confirm account deletion.');
       return;
     }
@@ -343,23 +345,23 @@ export const DeleteAccountModal: React.FC<DeleteAccountModalProps> = ({ currentL
               <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '6px' }}>
                 <button
                   type="submit"
-                  disabled={!isConfirmed || loading}
+                  disabled={!canSubmit}
                   style={{
                     width: '100%',
                     padding: '12px 16px',
-                    backgroundColor: isConfirmed ? '#ef4444' : 'rgba(239, 68, 68, 0.25)',
+                    backgroundColor: canSubmit ? '#ef4444' : 'rgba(239, 68, 68, 0.25)',
                     color: '#ffffff',
                     border: 'none',
                     borderRadius: '10px',
                     fontSize: '14px',
                     fontWeight: 800,
-                    cursor: isConfirmed && !loading ? 'pointer' : 'not-allowed',
+                    cursor: canSubmit ? 'pointer' : 'not-allowed',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                     gap: '8px',
-                    opacity: isConfirmed ? 1 : 0.65,
-                    boxShadow: isConfirmed ? '0 4px 14px rgba(239, 68, 68, 0.35)' : 'none',
+                    opacity: canSubmit ? 1 : 0.65,
+                    boxShadow: canSubmit ? '0 4px 14px rgba(239, 68, 68, 0.35)' : 'none',
                     transition: 'all 0.15s ease',
                   }}
                 >
