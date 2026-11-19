@@ -89,7 +89,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   const [mobileSearch, setMobileSearch] = useState('');
   const [expandedMobileCategory, setExpandedMobileCategory] = useState<string | null>(null);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
-  const { user, profile, isPro, openAuthModal, signOut } = useAuth();
+  const { user, profile, isPro, openAuthModal, openDeleteModal, signOut } = useAuth();
   const navRef = useRef<HTMLDivElement>(null);
   const suiteRef = useRef<HTMLDivElement>(null);
   const megaTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -668,7 +668,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                         padding: '8px 10px',
                         background: 'none',
                         border: 'none',
-                        color: '#ef4444',
+                        color: 'var(--text-main)',
                         fontSize: '0.8rem',
                         fontWeight: 600,
                         cursor: 'pointer',
@@ -678,6 +678,31 @@ export const Navbar: React.FC<NavbarProps> = ({
                     >
                       <LogOut size={14} />
                       {authT.nav_signout || 'Sign Out'}
+                    </button>
+                    <button
+                      onClick={() => {
+                        setIsUserMenuOpen(false);
+                        openDeleteModal();
+                      }}
+                      style={{
+                        width: '100%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: 8,
+                        padding: '6px 10px',
+                        background: 'none',
+                        border: 'none',
+                        color: '#ef4444',
+                        fontSize: '0.74rem',
+                        fontWeight: 600,
+                        cursor: 'pointer',
+                        borderRadius: 6,
+                        textAlign: 'left',
+                        opacity: 0.85,
+                      }}
+                    >
+                      <Trash2 size={13} />
+                      {authT.auth_delete_account_btn || 'Delete Account'}
                     </button>
                   </div>
                 )}
@@ -1387,9 +1412,9 @@ export const Navbar: React.FC<NavbarProps> = ({
                   }}
                   style={{
                     padding: '6px 10px',
-                    background: 'rgba(239,68,68,0.1)',
-                    border: '1px solid rgba(239,68,68,0.25)',
-                    color: '#ef4444',
+                    background: 'rgba(255,255,255,0.06)',
+                    border: '1px solid var(--border-color)',
+                    color: 'var(--text-main)',
                     borderRadius: 6,
                     fontSize: '0.75rem',
                     fontWeight: 700,
@@ -1397,6 +1422,29 @@ export const Navbar: React.FC<NavbarProps> = ({
                   }}
                 >
                   {authT.nav_signout || 'Sign Out'}
+                </button>
+                <button
+                  onClick={() => {
+                    setIsMobileMenuOpen(false);
+                    openDeleteModal();
+                  }}
+                  style={{
+                    padding: '6px 8px',
+                    background: 'rgba(239,68,68,0.1)',
+                    border: '1px solid rgba(239,68,68,0.25)',
+                    color: '#ef4444',
+                    borderRadius: 6,
+                    fontSize: '0.75rem',
+                    fontWeight: 700,
+                    cursor: 'pointer',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                  title={authT.auth_delete_account_btn || 'Delete Account'}
+                  aria-label={authT.auth_delete_account_btn || 'Delete Account'}
+                >
+                  <Trash2 size={13} />
                 </button>
               </div>
             </div>

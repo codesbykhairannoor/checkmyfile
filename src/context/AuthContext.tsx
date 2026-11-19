@@ -12,12 +12,16 @@ import {
   confirmPasswordReset,
   sendEmailVerification,
   applyActionCode,
+  deleteUser,
+  EmailAuthProvider,
+  reauthenticateWithCredential,
+  reauthenticateWithPopup,
   type ActionCodeSettings,
   signOut as firebaseSignOut,
   onAuthStateChanged,
   type User,
 } from 'firebase/auth';
-import { doc, getDoc, setDoc, updateDoc } from 'firebase/firestore';
+import { doc, getDoc, setDoc, updateDoc, deleteDoc } from 'firebase/firestore';
 import { auth, db, googleProvider, isFirebaseConfigured } from '../config/firebase';
 import type { UserProfile, AuthContextType } from '../types/auth';
 import { getCurrentMonthKey } from '../utils/batchQuota';
@@ -38,6 +42,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState<boolean>(false);
+  const [isDeleteModalOpen, setIsDeleteModalOpen] = useState<boolean>(false);
 
   const fetchOrCreateProfile = useCallback(async (firebaseUser: User): Promise<UserProfile> => {
     const monthKey = getCurrentMonthKey();
@@ -387,6 +392,76 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const openAuthModal = () => setIsAuthModalOpen(true);
   const closeAuthModal = () => setIsAuthModalOpen(false);
 
+  const openDeleteModal = () => setIsDeleteModalOpen(true);
+  const closeDeleteModal = () => setIsDeleteModalOpen(false);
+
+  const deleteAccount = async (passwordConfirmation?: string) => {
+    if (!auth || !auth.currentUser) {
+      throw new Error('No user currently authenticated.');
+    }
+
+    const currentUser = auth.currentUser;
+    const uid = currentUser.uid;
+
+    const performDeletion = async () => {
+      // 1. Delete Firestore user document
+      if (db) {
+        try {
+          await deleteDoc(doc(db, 'users', uid));
+        } catch (e) {
+          console.warn('Failed to delete user doc in Firestore:', e);
+        }
+      }
+
+      // 2. Clear local storage records related to user across all 4 apps
+      try {
+        const keysToRemove: string[] = [];
+        for (let i = 0; i < localStorage.length; i++) {
+          const k = localStorage.key(i);
+          if (k && (k.includes(uid) || k.startsWith('hmf_batch_') || k.startsWith('hmf_crypto_audit_'))) {
+            keysToRemove.push(k);
+          }
+        }
+        keysToRemove.forEach((k) => localStorage.removeItem(k));
+      } catch (_) {}
+
+      // 3. Delete user account from Firebase Auth
+      await deleteUser(currentUser);
+
+      setUser(null);
+      setProfile(null);
+      setIsDeleteModalOpen(false);
+    };
+
+    try {
+      await performDeletion();
+    } catch (err: any) {
+      if (err?.code === 'auth/requires-recent-login') {
+        const isPasswordProvider = currentUser.providerData.some((p) => p.providerId === 'password');
+        const isGoogleProvider = currentUser.providerData.some((p) => p.providerId === 'google.com');
+
+        if (isPasswordProvider) {
+          if (!passwordConfirmation) {
+            const reauthErr = new Error('Password confirmation required.');
+            (reauthErr as any).code = 'auth/requires-password-confirmation';
+            throw reauthErr;
+          }
+          if (currentUser.email) {
+            const credential = EmailAuthProvider.credential(currentUser.email, passwordConfirmation);
+            await reauthenticateWithCredential(currentUser, credential);
+            await performDeletion();
+            return;
+          }
+        } else if (isGoogleProvider) {
+          await reauthenticateWithPopup(currentUser, googleProvider);
+          await performDeletion();
+          return;
+        }
+      }
+      throw err;
+    }
+  };
+
   useEffect(() => {
     if (typeof window !== 'undefined') {
       (window as unknown as { __openAuthModal?: () => void }).__openAuthModal = openAuthModal;
@@ -417,9 +492,13 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         verifyEmailWithCode,
         reloadUser,
         signOut,
+        deleteAccount,
         isAuthModalOpen,
         openAuthModal,
         closeAuthModal,
+        isDeleteModalOpen,
+        openDeleteModal,
+        closeDeleteModal,
         refreshProfile,
       }}
     >

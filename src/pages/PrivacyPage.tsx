@@ -3,7 +3,8 @@ import { getUiTranslations } from '../i18n/translations';
 import { RESEARCH_TRANSLATIONS } from '../i18n/researchTranslations';
 import { SeoHead } from '../components/seo/SeoHead';
 
-import { ShieldAlert, Lock, Database, EyeOff, Cpu, BookOpen } from 'lucide-react';
+import { ShieldAlert, Lock, Database, EyeOff, Cpu, BookOpen, Trash2 } from 'lucide-react';
+import { useAuth } from '../context/AuthContext';
 
 interface Props {
   currentLang: string;
@@ -12,6 +13,7 @@ interface Props {
 export const PrivacyPage: React.FC<Props> = ({ currentLang }) => {
   const t = getUiTranslations(currentLang);
   const rt = RESEARCH_TRANSLATIONS[currentLang] || RESEARCH_TRANSLATIONS['en'];
+  const { user, openAuthModal, openDeleteModal } = useAuth();
 
   return (
     <>
@@ -130,6 +132,60 @@ export const PrivacyPage: React.FC<Props> = ({ currentLang }) => {
             <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: 40 }}>
               {t.pagePrivacySec4Desc || 'Because our architecture mathematically prevents us from accessing your files, HandleMyFile inherently exceeds the privacy requirements of GDPR, CCPA, and other global data protection regulations.'}
             </p>
+
+            <div
+              style={{
+                marginTop: 24,
+                padding: '24px 28px',
+                background: 'var(--bg-card)',
+                border: '1px solid var(--border-color)',
+                borderRadius: 16,
+                textAlign: 'left',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: 12,
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                <Trash2 size={22} color="#ef4444" />
+                <h3 style={{ margin: 0, fontSize: '1.25rem', fontWeight: 800, color: 'var(--text-main)' }}>
+                  {currentLang === 'id' ? 'GDPR Pasal 17: Hak Penghapusan Data (Right to Erasure)' : 'GDPR Article 17: Right to Erasure'}
+                </h3>
+              </div>
+              <p style={{ margin: 0, fontSize: '0.96rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>
+                {currentLang === 'id'
+                  ? 'Kami menghormati hak privasi Anda sepenuhnya. Anda dapat menghapus akun dan seluruh data profil Anda kapan saja secara permanen dari seluruh ekosistem 4 aplikasi ThisMyOwn Privacy Suite (HandleMyFile, HelpMyIMG, SolveMyMedia, CreateMy-QR).'
+                  : 'We strictly honor your right to be forgotten. You can permanently erase your account, login credentials, and profile data at any time across all 4 ThisMyOwn Privacy Suite applications (HandleMyFile, HelpMyIMG, SolveMyMedia, CreateMy-QR).'}
+              </p>
+              <div>
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (user) {
+                      openDeleteModal();
+                    } else {
+                      openAuthModal();
+                    }
+                  }}
+                  style={{
+                    padding: '10px 18px',
+                    background: 'rgba(239, 68, 68, 0.1)',
+                    border: '1px solid rgba(239, 68, 68, 0.3)',
+                    color: '#ef4444',
+                    borderRadius: 8,
+                    fontSize: '0.88rem',
+                    fontWeight: 700,
+                    cursor: 'pointer',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: 8,
+                  }}
+                >
+                  <Trash2 size={16} />
+                  <span>{currentLang === 'id' ? 'Ajukan Penghapusan Akun & Data' : 'Request Account & Data Deletion'}</span>
+                </button>
+              </div>
+            </div>
           </div>
         </section>
 

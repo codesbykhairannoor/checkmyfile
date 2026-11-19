@@ -37,8 +37,12 @@ export interface AuthContextType {
   verifyEmailWithCode: (oobCode: string) => Promise<void>;
   reloadUser: () => Promise<any>;
   signOut: () => Promise<void>;
+  deleteAccount: (passwordConfirmation?: string) => Promise<void>;
   isAuthModalOpen: boolean;
   openAuthModal: () => void;
   closeAuthModal: () => void;
+  isDeleteModalOpen: boolean;
+  openDeleteModal: () => void;
+  closeDeleteModal: () => void;
   refreshProfile: () => Promise<void>;
 }
