@@ -579,6 +579,44 @@ export const Navbar: React.FC<NavbarProps> = ({
                       <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                         {user.email}
                       </div>
+                      {!isPro && !user.emailVerified && (
+                        <div
+                          style={{
+                            marginTop: 6,
+                            padding: '4px 8px',
+                            background: 'rgba(239, 68, 68, 0.1)',
+                            border: '1px solid rgba(239, 68, 68, 0.25)',
+                            borderRadius: 6,
+                            fontSize: '0.72rem',
+                            color: '#ef4444',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'space-between',
+                            gap: 6,
+                          }}
+                        >
+                          <span style={{ fontWeight: 600 }}>{currentLang === 'id' ? 'Belum Verifikasi' : 'Unverified'}</span>
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setIsUserMenuOpen(false);
+                              openAuthModal();
+                            }}
+                            style={{
+                              background: '#ef4444',
+                              color: '#ffffff',
+                              border: 'none',
+                              borderRadius: 4,
+                              padding: '2px 6px',
+                              fontSize: '0.68rem',
+                              fontWeight: 700,
+                              cursor: 'pointer',
+                            }}
+                          >
+                            {currentLang === 'id' ? 'Verifikasi' : 'Verify'}
+                          </button>
+                        </div>
+                      )}
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.8rem', padding: '4px 0' }}>
                       <span style={{ color: 'var(--text-muted)' }}>Status:</span>
@@ -1361,6 +1399,44 @@ export const Navbar: React.FC<NavbarProps> = ({
                   {authT.nav_signout || 'Sign Out'}
                 </button>
               </div>
+            </div>
+          )}
+
+          {user && !isPro && !user.emailVerified && (
+            <div
+              style={{
+                padding: '8px 12px',
+                background: 'rgba(239, 68, 68, 0.1)',
+                border: '1px solid rgba(239, 68, 68, 0.25)',
+                borderRadius: 8,
+                fontSize: '0.78rem',
+                color: '#ef4444',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                gap: 8,
+              }}
+            >
+              <span>{currentLang === 'id' ? 'Email Anda belum diverifikasi' : 'Your email is not verified'}</span>
+              <button
+                type="button"
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  openAuthModal();
+                }}
+                style={{
+                  background: '#ef4444',
+                  color: '#ffffff',
+                  border: 'none',
+                  borderRadius: 6,
+                  padding: '4px 10px',
+                  fontSize: '0.74rem',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                }}
+              >
+                {currentLang === 'id' ? 'Verifikasi' : 'Verify'}
+              </button>
             </div>
           )}
 

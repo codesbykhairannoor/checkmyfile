@@ -7,7 +7,7 @@ import { FileDropzone } from '../components/common/FileDropzone';
 import { ProgressBar } from '../components/common/ProgressBar';
 import { SeoRichSections, useSeoData } from '../components/common/SeoRichSections';
 import { ToolResearchSection } from '../components/seo-sections/ToolResearchSection';
-import { Download, Crown, AlertCircle, Sparkles } from 'lucide-react';
+import { Download, Crown, Sparkles } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { ProGateModal } from '../components/common/ProGateModal';
 import { BatchGateModal, type BatchGateType } from '../components/common/BatchGateModal';
@@ -221,6 +221,10 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
       }
       const quota = checkBatchQuota(user, isPro);
       if (!quota.allowed) {
+        if (quota.reason === 'unverified_email') {
+          openAuthModal();
+          return;
+        }
         setBatchGateType('upgrade');
         setShowBatchGateModal(true);
         return;
@@ -240,6 +244,10 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
       }
       const auditQuota = checkCryptoAuditQuota(user, isPro);
       if (!auditQuota.allowed) {
+        if (auditQuota.reason === 'unverified_email') {
+          openAuthModal();
+          return;
+        }
         setProGateReason({
           featureName: 'SHA-256 Audit Trail Certificate',
           title: currentLang === 'id' ? 'Buka Sertifikat Audit Kriptografis' : 'Unlock Cryptographic Audit Trail',
@@ -565,8 +573,12 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                     }
                     const quota = checkBatchQuota(user, isPro);
                     if (!quota.allowed) {
-                      setBatchGateType('upgrade');
-                      setShowBatchGateModal(true);
+                      if (quota.reason === 'unverified_email') {
+                        openAuthModal();
+                      } else {
+                        setBatchGateType('upgrade');
+                        setShowBatchGateModal(true);
+                      }
                       setFiles(isMultiFileInput ? selected.slice(0, 10) : [selected[0]]);
                       resetProcessor();
                       return;

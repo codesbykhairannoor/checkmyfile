@@ -19,11 +19,14 @@ export const AuthModal: React.FC<AuthModalProps> = ({ currentLang = 'en' }) => {
     signUpWithEmail,
     sendPasswordReset,
     confirmNewPassword,
+    sendVerificationEmail,
+    verifyEmailWithCode,
+    reloadUser,
   } = useAuth();
 
   const t = authTranslations[currentLang] || authTranslations['en'];
 
-  const [mode, setMode] = useState<'signin' | 'signup' | 'forgot' | 'reset'>('signin');
+  const [mode, setMode] = useState<'signin' | 'signup' | 'forgot' | 'reset' | 'verify' | 'verify-success'>('signin');
   const [resetCode, setResetCode] = useState<string | null>(null);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -31,7 +34,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ currentLang = 'en' }) => {
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [successMsg, setSuccessMsg] = useState<string | null>(null);
 
-  // Check URL query parameters for password reset links (?mode=resetPassword&oobCode=XYZ)
+  // Check URL query parameters for password reset links or verify email links
   useEffect(() => {
     if (typeof window === 'undefined') return;
     const urlParams = new URLSearchParams(window.location.search);
@@ -43,8 +46,23 @@ export const AuthModal: React.FC<AuthModalProps> = ({ currentLang = 'en' }) => {
       setMode('reset');
       openAuthModal();
       window.history.replaceState({}, document.title, window.location.pathname);
+    } else if (urlMode === 'verifyEmail' && oobCode) {
+      setMode('verify-success');
+      openAuthModal();
+      setLoading(true);
+      verifyEmailWithCode(oobCode)
+        .then(() => {
+          setSuccessMsg(t.auth_verify_success || 'Email successfully verified! Your 3x free quotas are now active.');
+        })
+        .catch((err) => {
+          setErrorMsg(err?.message || 'Verification link expired or invalid.');
+        })
+        .finally(() => {
+          setLoading(false);
+          window.history.replaceState({}, document.title, window.location.pathname);
+        });
     }
-  }, [openAuthModal]);
+  }, [openAuthModal, verifyEmailWithCode, t]);
 
   const resetForm = useCallback(() => {
     setEmail('');
@@ -54,13 +72,27 @@ export const AuthModal: React.FC<AuthModalProps> = ({ currentLang = 'en' }) => {
     setLoading(false);
   }, []);
 
-  // Close modal when user is logged in
+  // If user is logged in but unverified and auth modal is opened, switch to verify mode
+  useEffect(() => {
+    if (isAuthModalOpen && user && !user.emailVerified) {
+      if (mode !== 'verify' && mode !== 'verify-success') {
+        setMode('verify');
+      }
+    }
+  }, [isAuthModalOpen, user, mode]);
+
+  // Close modal when user is logged in (unless on verify or verify-success screen)
   useEffect(() => {
     if (user && isAuthModalOpen) {
-      resetForm();
-      closeAuthModal();
+      if (mode === 'verify' || mode === 'verify-success') {
+        return;
+      }
+      if (user.emailVerified) {
+        resetForm();
+        closeAuthModal();
+      }
     }
-  }, [user, isAuthModalOpen, closeAuthModal, resetForm]);
+  }, [user, isAuthModalOpen, closeAuthModal, resetForm, mode]);
 
   // Handle escape key
   useEffect(() => {
@@ -75,12 +107,48 @@ export const AuthModal: React.FC<AuthModalProps> = ({ currentLang = 'en' }) => {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isAuthModalOpen, closeAuthModal]);
 
-  if (!isAuthModalOpen || user) return null;
+  if (!isAuthModalOpen || (user && user.emailVerified && mode !== 'verify' && mode !== 'verify-success')) return null;
 
-  const handleSwitchMode = (newMode: 'signin' | 'signup' | 'forgot' | 'reset') => {
+  const handleSwitchMode = (newMode: 'signin' | 'signup' | 'forgot' | 'reset' | 'verify' | 'verify-success') => {
     setMode(newMode);
     setErrorMsg(null);
     setSuccessMsg(null);
+  };
+
+  const handleCheckVerified = async () => {
+    setLoading(true);
+    setErrorMsg(null);
+    setSuccessMsg(null);
+    try {
+      const refreshed = await reloadUser();
+      if (refreshed?.emailVerified) {
+        setSuccessMsg(t.auth_verify_success || 'Email verified successfully! Welcome to HandleMyFile.');
+        setTimeout(() => {
+          resetForm();
+          closeAuthModal();
+        }, 1200);
+      } else {
+        setErrorMsg(t.auth_verify_not_yet || 'Email not verified yet. Please check your inbox/spam folder or click Resend below.');
+      }
+    } catch (err: any) {
+      setErrorMsg(err?.message || 'Failed to check verification status.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleResendVerification = async () => {
+    setLoading(true);
+    setErrorMsg(null);
+    setSuccessMsg(null);
+    try {
+      await sendVerificationEmail();
+      setSuccessMsg(t.auth_verify_resent || 'Verification link resent! Please check your inbox or spam folder.');
+    } catch (err: any) {
+      setErrorMsg(err?.message || 'Failed to resend verification email.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleEmailAuth = async (e: React.FormEvent) => {
@@ -161,14 +229,19 @@ export const AuthModal: React.FC<AuthModalProps> = ({ currentLang = 'en' }) => {
     try {
       if (mode === 'signin') {
         await signInWithEmail(email, password);
+        resetForm();
+        closeAuthModal();
       } else {
         await signUpWithEmail(email, password);
+        setMode('verify');
+        setLoading(false);
+        return;
       }
-      resetForm();
-      closeAuthModal();
     } catch (err: any) {
       const code = err?.code;
-      if (
+      if (code === 'auth/disposable-email-blocked') {
+        setErrorMsg(t.auth_disposable_blocked || 'Temporary/disposable email addresses are not permitted. Please use a real email address.');
+      } else if (
         code === 'auth/invalid-credential' ||
         code === 'auth/user-not-found' ||
         code === 'auth/wrong-password' ||
@@ -254,7 +327,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ currentLang = 'en' }) => {
           }}
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            {mode !== 'signin' && mode !== 'reset' && (
+            {mode !== 'signin' && mode !== 'reset' && mode !== 'verify-success' && (
               <button
                 type="button"
                 onClick={() => handleSwitchMode('signin')}
@@ -278,6 +351,8 @@ export const AuthModal: React.FC<AuthModalProps> = ({ currentLang = 'en' }) => {
               {mode === 'signup' && (t.auth_signup_title || 'Create your account')}
               {mode === 'forgot' && (t.auth_forgot_title || 'Reset Password')}
               {mode === 'reset' && (t.auth_reset_title || 'Set New Password')}
+              {mode === 'verify' && (t.auth_verify_title || 'Verify your email address')}
+              {mode === 'verify-success' && (t.auth_verify_success || 'Email Verified!')}
             </h3>
           </div>
           <button
@@ -343,277 +418,418 @@ export const AuthModal: React.FC<AuthModalProps> = ({ currentLang = 'en' }) => {
             </div>
           )}
 
-          {/* Google Sign In Button */}
-          {mode !== 'forgot' && mode !== 'reset' && (
-            <>
-              <button
-                type="button"
-                onClick={handleGoogleSignIn}
-                disabled={loading}
+          {/* Email Verification Pending Screen */}
+          {mode === 'verify' && (
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '16px', padding: '12px 0' }}>
+              <div
                 style={{
-                  width: '100%',
+                  width: '64px',
+                  height: '64px',
+                  borderRadius: '50%',
+                  background: 'rgba(99, 102, 241, 0.12)',
+                  color: '#6366f1',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  gap: '12px',
-                  padding: '12px 16px',
-                  backgroundColor: 'var(--bg-card, #ffffff)',
-                  color: '#1e293b',
-                  border: '1px solid var(--border-color, #cbd5e1)',
-                  borderRadius: '10px',
-                  fontSize: '14px',
-                  fontWeight: 600,
-                  cursor: loading ? 'not-allowed' : 'pointer',
-                  opacity: loading ? 0.7 : 1,
-                  transition: 'background-color 0.15s ease',
+                  border: '1px solid rgba(99, 102, 241, 0.25)',
                 }}
               >
-                <svg width="18" height="18" viewBox="0 0 24 24">
-                  <path
-                    fill="#4285F4"
-                    d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"
-                  />
-                  <path
-                    fill="#34A853"
-                    d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"
-                  />
-                  <path
-                    fill="#FBBC05"
-                    d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.98 0 12s.45 3.82 1.25 5.42l4.03-3.15z"
-                  />
-                  <path
-                    fill="#EA4335"
-                    d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"
-                  />
-                </svg>
-                <span>{t.auth_continue_google || 'Continue with Google'}</span>
-              </button>
-
-              <div
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  margin: '20px 0',
-                  color: 'var(--text-muted, #64748b)',
-                  fontSize: '12px',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.05em',
-                }}
-              >
-                <div style={{ flex: 1, height: '1px', backgroundColor: 'var(--border-color, #334155)' }} />
-                <span style={{ padding: '0 12px' }}>{t.auth_or_email || 'or with email'}</span>
-                <div style={{ flex: 1, height: '1px', backgroundColor: 'var(--border-color, #334155)' }} />
+                <Mail size={32} />
               </div>
-            </>
-          )}
 
-          {/* Form */}
-          <form onSubmit={handleEmailAuth} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            {mode !== 'reset' && (
               <div>
-                <label
-                  style={{
-                    display: 'block',
-                    fontSize: '13px',
-                    fontWeight: 600,
-                    marginBottom: '6px',
-                    color: 'var(--text-main, #e2e8f0)',
-                  }}
-                >
-                  {t.auth_email_label || 'Email Address'}
-                </label>
-                <div style={{ position: 'relative' }}>
-                  <Mail
-                    size={16}
-                    style={{
-                      position: 'absolute',
-                      left: '12px',
-                      top: '50%',
-                      transform: 'translateY(-50%)',
-                      color: 'var(--text-muted, #64748b)',
-                    }}
-                  />
-                  <input
-                    type="email"
-                    required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="name@example.com"
-                    style={{
-                      width: '100%',
-                      boxSizing: 'border-box',
-                      padding: '10px 14px 10px 38px',
-                      backgroundColor: 'rgba(0, 0, 0, 0.2)',
-                      border: '1px solid var(--border-color, #334155)',
-                      borderRadius: '8px',
-                      color: 'var(--text-main, #ffffff)',
-                      fontSize: '14px',
-                      outline: 'none',
-                    }}
-                  />
+                <h4 style={{ margin: '0 0 8px 0', fontSize: '18px', fontWeight: 800, color: 'var(--text-main, #ffffff)' }}>
+                  {t.auth_verify_title || 'Verify your email address'}
+                </h4>
+                <p style={{ margin: 0, fontSize: '13.5px', color: 'var(--text-muted, #94a3b8)', lineHeight: 1.55 }}>
+                  {t.auth_verify_desc || 'We sent a verification link to your email. Click the link in your inbox to verify your account and activate your 3x monthly free quotas.'}
+                </p>
+                <div style={{ marginTop: '10px', padding: '6px 14px', background: 'rgba(255,255,255,0.06)', borderRadius: '8px', fontSize: '13px', fontWeight: 700, color: 'var(--text-main, #ffffff)', display: 'inline-block', border: '1px solid var(--border-color, rgba(255,255,255,0.1))' }}>
+                  {email || user?.email}
                 </div>
               </div>
-            )}
 
-            {mode !== 'forgot' && (
+              <div style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '6px' }}>
+                <button
+                  type="button"
+                  onClick={handleCheckVerified}
+                  disabled={loading}
+                  style={{
+                    width: '100%',
+                    padding: '12px 16px',
+                    backgroundColor: 'var(--brand-primary, #e11d48)',
+                    color: '#ffffff',
+                    border: 'none',
+                    borderRadius: '10px',
+                    fontSize: '14px',
+                    fontWeight: 700,
+                    cursor: loading ? 'not-allowed' : 'pointer',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '8px',
+                    boxShadow: '0 4px 14px rgba(225, 29, 72, 0.35)',
+                  }}
+                >
+                  {loading && <Loader2 size={16} className="animate-spin" />}
+                  <span>{t.auth_verify_btn_check || "I've Verified My Email"}</span>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={handleResendVerification}
+                  disabled={loading}
+                  style={{
+                    width: '100%',
+                    padding: '10px 16px',
+                    backgroundColor: 'transparent',
+                    color: 'var(--text-main, #ffffff)',
+                    border: '1px solid var(--border-color, rgba(255, 255, 255, 0.15))',
+                    borderRadius: '10px',
+                    fontSize: '13px',
+                    fontWeight: 600,
+                    cursor: loading ? 'not-allowed' : 'pointer',
+                  }}
+                >
+                  {t.auth_verify_resend_btn || 'Resend Verification Email'}
+                </button>
+              </div>
+
+              <p style={{ fontSize: '12px', color: 'var(--text-muted, #64748b)', margin: '4px 0 0' }}>
+                {t.auth_verify_spam_hint || "Can't find the email? Check your spam or junk folder."}
+              </p>
+            </div>
+          )}
+
+          {/* Email Verification Success Celebration Screen */}
+          {mode === 'verify-success' && (
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '16px', padding: '16px 0' }}>
+              <div
+                style={{
+                  width: '64px',
+                  height: '64px',
+                  borderRadius: '50%',
+                  background: 'rgba(34, 197, 94, 0.12)',
+                  color: '#22c55e',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  border: '1px solid rgba(34, 197, 94, 0.25)',
+                }}
+              >
+                <CheckCircle2 size={34} />
+              </div>
+
               <div>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '6px' }}>
-                  <label
+                <h4 style={{ margin: '0 0 8px 0', fontSize: '18px', fontWeight: 800, color: 'var(--text-main, #ffffff)' }}>
+                  {t.auth_verify_success || 'Email Verified Successfully!'}
+                </h4>
+                <p style={{ margin: 0, fontSize: '13.5px', color: 'var(--text-muted, #94a3b8)', lineHeight: 1.55 }}>
+                  {t.auth_verify_desc_success || 'Your account is verified and your 3x monthly free quotas are now active. Enjoy HandleMyFile!'}
+                </p>
+              </div>
+
+              <button
+                type="button"
+                onClick={() => {
+                  resetForm();
+                  closeAuthModal();
+                }}
+                style={{
+                  width: '100%',
+                  padding: '12px 16px',
+                  backgroundColor: 'var(--brand-primary, #e11d48)',
+                  color: '#ffffff',
+                  border: 'none',
+                  borderRadius: '10px',
+                  fontSize: '14px',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                  marginTop: '8px',
+                  boxShadow: '0 4px 14px rgba(225, 29, 72, 0.35)',
+                }}
+              >
+                Continue to HandleMyFile
+              </button>
+            </div>
+          )}
+
+          {/* Standard Auth Forms (Sign In, Sign Up, Forgot, Reset) */}
+          {mode !== 'verify' && mode !== 'verify-success' && (
+            <>
+              {/* Google Sign In Button */}
+              {mode !== 'forgot' && mode !== 'reset' && (
+                <>
+                  <button
+                    type="button"
+                    onClick={handleGoogleSignIn}
+                    disabled={loading}
                     style={{
-                      fontSize: '13px',
+                      width: '100%',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      gap: '12px',
+                      padding: '12px 16px',
+                      backgroundColor: 'var(--bg-card, #ffffff)',
+                      color: '#1e293b',
+                      border: '1px solid var(--border-color, #cbd5e1)',
+                      borderRadius: '10px',
+                      fontSize: '14px',
                       fontWeight: 600,
-                      color: 'var(--text-main, #e2e8f0)',
+                      cursor: loading ? 'not-allowed' : 'pointer',
+                      opacity: loading ? 0.7 : 1,
+                      transition: 'background-color 0.15s ease',
                     }}
                   >
-                    {mode === 'reset' ? (t.auth_new_password_label || 'New Password') : (t.auth_password_label || 'Password')}
-                  </label>
+                    <svg width="18" height="18" viewBox="0 0 24 24">
+                      <path
+                        fill="#4285F4"
+                        d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"
+                      />
+                      <path
+                        fill="#34A853"
+                        d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"
+                      />
+                      <path
+                        fill="#FBBC05"
+                        d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.98 0 12s.45 3.82 1.25 5.42l4.03-3.15z"
+                      />
+                      <path
+                        fill="#EA4335"
+                        d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"
+                      />
+                    </svg>
+                    <span>{t.auth_continue_google || 'Continue with Google'}</span>
+                  </button>
+
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      margin: '20px 0',
+                      color: 'var(--text-muted, #64748b)',
+                      fontSize: '12px',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.05em',
+                    }}
+                  >
+                    <div style={{ flex: 1, height: '1px', backgroundColor: 'var(--border-color, #334155)' }} />
+                    <span style={{ padding: '0 12px' }}>{t.auth_or_email || 'or with email'}</span>
+                    <div style={{ flex: 1, height: '1px', backgroundColor: 'var(--border-color, #334155)' }} />
+                  </div>
+                </>
+              )}
+
+              {/* Form */}
+              <form onSubmit={handleEmailAuth} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                {mode !== 'reset' && (
+                  <div>
+                    <label
+                      style={{
+                        display: 'block',
+                        fontSize: '13px',
+                        fontWeight: 600,
+                        marginBottom: '6px',
+                        color: 'var(--text-main, #e2e8f0)',
+                      }}
+                    >
+                      {t.auth_email_label || 'Email Address'}
+                    </label>
+                    <div style={{ position: 'relative' }}>
+                      <Mail
+                        size={16}
+                        style={{
+                          position: 'absolute',
+                          left: '12px',
+                          top: '50%',
+                          transform: 'translateY(-50%)',
+                          color: 'var(--text-muted, #64748b)',
+                        }}
+                      />
+                      <input
+                        type="email"
+                        required
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        placeholder="name@example.com"
+                        style={{
+                          width: '100%',
+                          boxSizing: 'border-box',
+                          padding: '10px 14px 10px 38px',
+                          backgroundColor: 'rgba(0, 0, 0, 0.2)',
+                          border: '1px solid var(--border-color, #334155)',
+                          borderRadius: '8px',
+                          color: 'var(--text-main, #ffffff)',
+                          fontSize: '14px',
+                          outline: 'none',
+                        }}
+                      />
+                    </div>
+                  </div>
+                )}
+
+                {mode !== 'forgot' && (
+                  <div>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '6px' }}>
+                      <label
+                        style={{
+                          fontSize: '13px',
+                          fontWeight: 600,
+                          color: 'var(--text-main, #e2e8f0)',
+                        }}
+                      >
+                        {mode === 'reset' ? (t.auth_new_password_label || 'New Password') : (t.auth_password_label || 'Password')}
+                      </label>
+                      {mode === 'signin' && (
+                        <button
+                          type="button"
+                          onClick={() => handleSwitchMode('forgot')}
+                          style={{
+                            background: 'none',
+                            border: 'none',
+                            color: 'var(--brand-primary, #e11d48)',
+                            fontSize: '12px',
+                            cursor: 'pointer',
+                            padding: 0,
+                          }}
+                        >
+                          {t.auth_forgot_password_link || 'Forgot password?'}
+                        </button>
+                      )}
+                    </div>
+                    <div style={{ position: 'relative' }}>
+                      <Lock
+                        size={16}
+                        style={{
+                          position: 'absolute',
+                          left: '12px',
+                          top: '50%',
+                          transform: 'translateY(-50%)',
+                          color: 'var(--text-muted, #64748b)',
+                        }}
+                      />
+                      <input
+                        type="password"
+                        required
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        placeholder={mode === 'reset' ? 'Minimum 6 characters' : '••••••••'}
+                        style={{
+                          width: '100%',
+                          boxSizing: 'border-box',
+                          padding: '10px 14px 10px 38px',
+                          backgroundColor: 'rgba(0, 0, 0, 0.2)',
+                          border: '1px solid var(--border-color, rgba(255, 255, 255, 0.1))',
+                          borderRadius: '8px',
+                          color: 'var(--text-main, #ffffff)',
+                          fontSize: '14px',
+                          outline: 'none',
+                        }}
+                      />
+                    </div>
+                  </div>
+                )}
+
+                <button
+                  type="submit"
+                  disabled={loading}
+                  style={{
+                    marginTop: '4px',
+                    width: '100%',
+                    padding: '12px',
+                    backgroundColor: 'var(--brand-primary, #e11d48)',
+                    color: '#ffffff',
+                    border: 'none',
+                    borderRadius: '8px',
+                    fontSize: '14px',
+                    fontWeight: 700,
+                    cursor: loading ? 'not-allowed' : 'pointer',
+                    opacity: loading ? 0.7 : 1,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '8px',
+                    boxShadow: '0 4px 14px rgba(225, 29, 72, 0.35)',
+                  }}
+                >
+                  {loading && <Loader2 size={16} className="animate-spin" />}
+                  <span>
+                    {mode === 'signin' && (t.auth_signin_btn || 'Sign In')}
+                    {mode === 'signup' && (t.auth_signup_btn || 'Create Free Account')}
+                    {mode === 'forgot' && (t.auth_send_reset_btn || 'Send Reset Link')}
+                    {mode === 'reset' && (t.auth_update_password_btn || 'Update Password')}
+                  </span>
+                </button>
+              </form>
+
+              {/* Mode Switching Footer */}
+              {mode !== 'reset' && (
+                <div
+                  style={{
+                    marginTop: '20px',
+                    textAlign: 'center',
+                    fontSize: '13px',
+                    color: 'var(--text-muted, #94a3b8)',
+                  }}
+                >
                   {mode === 'signin' && (
+                    <>
+                      {t.auth_dont_have_account || "Don't have an account?"}{' '}
+                      <button
+                        type="button"
+                        onClick={() => handleSwitchMode('signup')}
+                        style={{
+                          background: 'none',
+                          border: 'none',
+                          color: 'var(--brand-primary, #e11d48)',
+                          fontWeight: 600,
+                          cursor: 'pointer',
+                          padding: 0,
+                        }}
+                      >
+                        {t.auth_signup_free_link || 'Sign up free'}
+                      </button>
+                    </>
+                  )}
+                  {mode === 'signup' && (
+                    <>
+                      {t.auth_already_have_account || 'Already have an account?'}{' '}
+                      <button
+                        type="button"
+                        onClick={() => handleSwitchMode('signin')}
+                        style={{
+                          background: 'none',
+                          border: 'none',
+                          color: 'var(--brand-primary, #e11d48)',
+                          fontWeight: 600,
+                          cursor: 'pointer',
+                          padding: 0,
+                        }}
+                      >
+                        {t.auth_signin_link || 'Sign in'}
+                      </button>
+                    </>
+                  )}
+                  {mode === 'forgot' && (
                     <button
                       type="button"
-                      onClick={() => handleSwitchMode('forgot')}
+                      onClick={() => handleSwitchMode('signin')}
                       style={{
                         background: 'none',
                         border: 'none',
                         color: 'var(--brand-primary, #e11d48)',
-                        fontSize: '12px',
+                        fontWeight: 600,
                         cursor: 'pointer',
                         padding: 0,
                       }}
                     >
-                      {t.auth_forgot_password_link || 'Forgot password?'}
+                      {t.auth_back_to_signin || 'Return to sign in'}
                     </button>
                   )}
                 </div>
-                <div style={{ position: 'relative' }}>
-                  <Lock
-                    size={16}
-                    style={{
-                      position: 'absolute',
-                      left: '12px',
-                      top: '50%',
-                      transform: 'translateY(-50%)',
-                      color: 'var(--text-muted, #64748b)',
-                    }}
-                  />
-                  <input
-                    type="password"
-                    required
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    placeholder={mode === 'reset' ? 'Minimum 6 characters' : '••••••••'}
-                    style={{
-                      width: '100%',
-                      boxSizing: 'border-box',
-                      padding: '10px 14px 10px 38px',
-                      backgroundColor: 'rgba(0, 0, 0, 0.2)',
-                      border: '1px solid var(--border-color, rgba(255, 255, 255, 0.1))',
-                      borderRadius: '8px',
-                      color: 'var(--text-main, #ffffff)',
-                      fontSize: '14px',
-                      outline: 'none',
-                    }}
-                  />
-                </div>
-              </div>
-            )}
-
-            <button
-              type="submit"
-              disabled={loading}
-              style={{
-                marginTop: '4px',
-                width: '100%',
-                padding: '12px',
-                backgroundColor: 'var(--brand-primary, #e11d48)',
-                color: '#ffffff',
-                border: 'none',
-                borderRadius: '8px',
-                fontSize: '14px',
-                fontWeight: 700,
-                cursor: loading ? 'not-allowed' : 'pointer',
-                opacity: loading ? 0.7 : 1,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: '8px',
-                boxShadow: '0 4px 14px rgba(225, 29, 72, 0.35)',
-              }}
-            >
-              {loading && <Loader2 size={16} className="animate-spin" />}
-              <span>
-                {mode === 'signin' && (t.auth_signin_btn || 'Sign In')}
-                {mode === 'signup' && (t.auth_signup_btn || 'Create Free Account')}
-                {mode === 'forgot' && (t.auth_send_reset_btn || 'Send Reset Link')}
-                {mode === 'reset' && (t.auth_update_password_btn || 'Update Password')}
-              </span>
-            </button>
-          </form>
-
-          {/* Mode Switching Footer */}
-          {mode !== 'reset' && (
-            <div
-              style={{
-                marginTop: '20px',
-                textAlign: 'center',
-                fontSize: '13px',
-                color: 'var(--text-muted, #94a3b8)',
-              }}
-            >
-              {mode === 'signin' && (
-                <>
-                  {t.auth_dont_have_account || "Don't have an account?"}{' '}
-                  <button
-                    type="button"
-                    onClick={() => handleSwitchMode('signup')}
-                    style={{
-                      background: 'none',
-                      border: 'none',
-                      color: 'var(--brand-primary, #e11d48)',
-                      fontWeight: 600,
-                      cursor: 'pointer',
-                      padding: 0,
-                    }}
-                  >
-                    {t.auth_signup_free_link || 'Sign up free'}
-                  </button>
-                </>
               )}
-              {mode === 'signup' && (
-                <>
-                  {t.auth_already_have_account || 'Already have an account?'}{' '}
-                  <button
-                    type="button"
-                    onClick={() => handleSwitchMode('signin')}
-                    style={{
-                      background: 'none',
-                      border: 'none',
-                      color: 'var(--brand-primary, #e11d48)',
-                      fontWeight: 600,
-                      cursor: 'pointer',
-                      padding: 0,
-                    }}
-                  >
-                    {t.auth_signin_link || 'Sign in'}
-                  </button>
-                </>
-              )}
-              {mode === 'forgot' && (
-                <button
-                  type="button"
-                  onClick={() => handleSwitchMode('signin')}
-                  style={{
-                    background: 'none',
-                    border: 'none',
-                    color: 'var(--brand-primary, #e11d48)',
-                    fontWeight: 600,
-                    cursor: 'pointer',
-                    padding: 0,
-                  }}
-                >
-                  {t.auth_back_to_signin || 'Return to sign in'}
-                </button>
-              )}
-            </div>
+            </>
           )}
         </div>
       </div>

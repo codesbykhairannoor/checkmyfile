@@ -8,7 +8,7 @@ export const MAX_FREE_CRYPTO_AUDIT_PER_MONTH = 3;
 
 export interface CryptoAuditQuotaStatus {
   allowed: boolean;
-  reason: 'unauthenticated' | 'limit_reached' | 'ok';
+  reason: 'unauthenticated' | 'unverified_email' | 'limit_reached' | 'ok';
   used: number;
   max: number;
   remaining: number;
@@ -72,6 +72,17 @@ export const checkCryptoAuditQuota = (user: any | null, isPro: boolean): CryptoA
     return {
       allowed: false,
       reason: 'unauthenticated',
+      used: 0,
+      max: MAX_FREE_CRYPTO_AUDIT_PER_MONTH,
+      remaining: 0,
+    };
+  }
+
+  // Anti-abuse: manual email accounts must verify their email to unlock free quota
+  if (!user.emailVerified) {
+    return {
+      allowed: false,
+      reason: 'unverified_email',
       used: 0,
       max: MAX_FREE_CRYPTO_AUDIT_PER_MONTH,
       remaining: 0,

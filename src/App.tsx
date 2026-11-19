@@ -128,6 +128,9 @@ export const App: React.FC = () => {
     // Track language switch (GEO signal)
     trackLanguageSwitched({ from_language: currentLang, to_language: code });
     setCurrentLang(code);
+    try {
+      localStorage.setItem('hmf_user_lang', code);
+    } catch (_) {}
     const isEn = code === 'en';
     let newPath = isEn ? '/' : `/${code}`;
     if (activeTool) {

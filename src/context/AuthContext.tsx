@@ -10,6 +10,9 @@ import {
   createUserWithEmailAndPassword,
   sendPasswordResetEmail,
   confirmPasswordReset,
+  sendEmailVerification,
+  applyActionCode,
+  type ActionCodeSettings,
   signOut as firebaseSignOut,
   onAuthStateChanged,
   type User,
@@ -18,6 +21,8 @@ import { doc, getDoc, setDoc, updateDoc } from 'firebase/firestore';
 import { auth, db, googleProvider, isFirebaseConfigured } from '../config/firebase';
 import type { UserProfile, AuthContextType } from '../types/auth';
 import { getCurrentMonthKey } from '../utils/batchQuota';
+import { isDisposableEmail } from '../utils/disposableEmailBlocker';
+import { isValidLanguageCode } from '../i18n/languages';
 
 export const FOUNDER_LIFETIME_EMAILS = ['erstaunenn@gmail.com'];
 
@@ -219,6 +224,67 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     setIsAuthModalOpen(false);
   };
 
+  const sendVerificationEmail = async (targetUser?: User | null) => {
+    if (!isFirebaseConfigured || !auth) {
+      throw new Error('Firebase belum dikonfigurasi.');
+    }
+
+    const userToVerify = targetUser || auth.currentUser || user;
+    if (!userToVerify) {
+      throw new Error('No user currently authenticated.');
+    }
+
+    // Set auth language to active UI language or English
+    let activeLang = 'en';
+    if (typeof window !== 'undefined') {
+      const pathSeg = window.location.pathname.replace(/^\/+/, '').split('/')[0];
+      if (pathSeg && isValidLanguageCode(pathSeg)) {
+        activeLang = pathSeg;
+      } else {
+        activeLang = localStorage.getItem('hmf_user_lang') || 'en';
+      }
+    }
+    auth.languageCode = activeLang;
+
+    const currentOrigin = typeof window !== 'undefined' ? window.location.origin : 'https://handlemyfile.com';
+    const actionCodeSettings: ActionCodeSettings = {
+      // Directs strictly back to HandleMyFile to avoid mixing with other sites
+      url: `${currentOrigin}/?mode=verifyEmail`,
+      handleCodeInApp: true,
+    };
+
+    try {
+      await sendEmailVerification(userToVerify, actionCodeSettings);
+    } catch (err: any) {
+      if (err?.code === 'auth/unauthorized-continue-uri') {
+        // Fallback without actionCodeSettings if domain is not yet whitelisted in Firebase
+        await sendEmailVerification(userToVerify);
+      } else {
+        throw err;
+      }
+    }
+  };
+
+  const verifyEmailWithCode = async (oobCode: string) => {
+    if (!isFirebaseConfigured || !auth) {
+      throw new Error('Firebase belum dikonfigurasi.');
+    }
+    await applyActionCode(auth, oobCode);
+    if (auth.currentUser) {
+      await auth.currentUser.reload();
+      setUser({ ...auth.currentUser });
+      await refreshProfile();
+    }
+  };
+
+  const reloadUser = async () => {
+    if (!auth?.currentUser) return null;
+    await auth.currentUser.reload();
+    setUser({ ...auth.currentUser });
+    await refreshProfile();
+    return auth.currentUser;
+  };
+
   const signUpWithEmail = async (email: string, password: string) => {
     if (!isFirebaseConfigured || !auth) {
       throw new Error(
@@ -226,10 +292,23 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       );
     }
 
-    const result = await createUserWithEmailAndPassword(auth, email.trim(), password);
+    const trimmedEmail = email.trim().toLowerCase();
+    if (isDisposableEmail(trimmedEmail)) {
+      const err = new Error('Disposable / temporary email addresses are not permitted. Please use a valid email.');
+      (err as any).code = 'auth/disposable-email-blocked';
+      throw err;
+    }
+
+    const result = await createUserWithEmailAndPassword(auth, trimmedEmail, password);
     const userProfile = await fetchOrCreateProfile(result.user);
     setProfile(userProfile);
-    setIsAuthModalOpen(false);
+
+    // Automatically send verification email specifically for HandleMyFile
+    try {
+      await sendVerificationEmail(result.user);
+    } catch (verifErr) {
+      console.warn('Failed to send verification email on signup:', verifErr);
+    }
   };
 
   const sendPasswordReset = async (email: string) => {
@@ -334,6 +413,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         signUpWithEmail,
         sendPasswordReset,
         confirmNewPassword,
+        sendVerificationEmail,
+        verifyEmailWithCode,
+        reloadUser,
         signOut,
         isAuthModalOpen,
         openAuthModal,
