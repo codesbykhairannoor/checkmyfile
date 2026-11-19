@@ -12,6 +12,7 @@ import { useAuth } from '../context/AuthContext';
 import { ProGateModal } from '../components/common/ProGateModal';
 import { BatchGateModal, type BatchGateType } from '../components/common/BatchGateModal';
 import { checkBatchQuota, recordBatchUsage } from '../utils/batchQuota';
+import { checkCryptoAuditQuota, recordCryptoAuditUsage } from '../utils/cryptoAuditQuota';
 import { useWorkspaceFiles } from '../hooks/useWorkspaceFiles';
 import { useDocumentProcessor } from '../hooks/useDocumentProcessor';
 import { smartHighlight } from '../utils/textFormatting';
@@ -226,6 +227,31 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
       }
       // Consume 1 batch usage
       recordBatchUsage(user.uid);
+    }
+
+    // Crypto Audit Certificate gating (Adobe Acrobat Sign Standard - PRO or Free 3x/month)
+    const activeSignatureConfig = options?.signatureConfig || signatureConfig;
+    const isSigningWithAudit = (tool.id === 'sign-pdf' || options?.toolId === 'sign-pdf') && activeSignatureConfig?.includeAuditTrail === true;
+
+    if (isSigningWithAudit && !isPro) {
+      if (!user) {
+        openAuthModal();
+        return;
+      }
+      const auditQuota = checkCryptoAuditQuota(user, isPro);
+      if (!auditQuota.allowed) {
+        setProGateReason({
+          featureName: 'SHA-256 Audit Trail Certificate',
+          title: currentLang === 'id' ? 'Buka Sertifikat Audit Kriptografis' : 'Unlock Cryptographic Audit Trail',
+          desc: currentLang === 'id'
+            ? 'Batas kuota gratis 3x sertifikat audit bulan ini telah tercapai. Upgrade ke PRO untuk akses tanda tangan bersertifikat tanpa batas.'
+            : 'Your monthly 3 free audit certificate limit has been reached. Upgrade to PRO for unlimited enterprise certified signing.',
+        });
+        setShowProGateModal(true);
+        return;
+      }
+      // Record 1 crypto audit usage for free user
+      recordCryptoAuditUsage(user.uid);
     }
 
     startProcessing({

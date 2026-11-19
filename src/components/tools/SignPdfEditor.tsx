@@ -1,6 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { normalizeImageDataUrl } from '../../utils/imageOrientation';
-import { PenTool, Download, Settings2, Image as ImageIcon, RotateCcw, ShieldCheck, Lock } from 'lucide-react';
+import { PenTool, Download, Settings2, Image as ImageIcon, RotateCcw, ShieldCheck, Lock, Crown } from 'lucide-react';
+import { useAuth } from '../../context/AuthContext';
+import { checkCryptoAuditQuota } from '../../utils/cryptoAuditQuota';
+import { ProGateModal } from '../common/ProGateModal';
 
 interface SignPdfEditorProps {
   tUi?: Record<string, string>;
@@ -17,10 +20,59 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
   onApply,
   isProcessing
 }) => {
+  const { user, isPro, openAuthModal } = useAuth();
+  const [quota, setQuota] = useState(() => checkCryptoAuditQuota(user, isPro));
+  const [showProGate, setShowProGate] = useState(false);
+
+  useEffect(() => {
+    const handleUpdate = () => setQuota(checkCryptoAuditQuota(user, isPro));
+    window.addEventListener('crypto-audit-quota-updated', handleUpdate);
+    setQuota(checkCryptoAuditQuota(user, isPro));
+    return () => window.removeEventListener('crypto-audit-quota-updated', handleUpdate);
+  }, [user, isPro]);
+
+  // Sync initial audit state with auth/quota status
+  useEffect(() => {
+    if (!user) {
+      // Guests default to clean signature without audit certificate
+      if (signatureConfig?.includeAuditTrail === true) {
+        setSignatureConfig((prev: any) => ({ ...prev, includeAuditTrail: false }));
+      }
+    } else if (signatureConfig?.includeAuditTrail === undefined) {
+      if (isPro || quota.allowed) {
+        setSignatureConfig((prev: any) => ({ ...prev, includeAuditTrail: true }));
+      } else {
+        setSignatureConfig((prev: any) => ({ ...prev, includeAuditTrail: false }));
+      }
+    }
+  }, [user, isPro, quota.allowed, setSignatureConfig, signatureConfig?.includeAuditTrail]);
+
+  const isAuditChecked = signatureConfig?.includeAuditTrail === true;
+
+  const handleToggleAudit = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const desired = e.target.checked;
+    if (!desired) {
+      setSignatureConfig((prev: any) => ({ ...prev, includeAuditTrail: false }));
+      return;
+    }
+
+    if (!user) {
+      openAuthModal();
+      return;
+    }
+
+    const currentQuota = checkCryptoAuditQuota(user, isPro);
+    if (!currentQuota.allowed) {
+      setShowProGate(true);
+      return;
+    }
+
+    setSignatureConfig((prev: any) => ({ ...prev, includeAuditTrail: true }));
+  };
   const t = (key: string, fallback: string) => tUi[key] || tUi[fallback] || fallback;
   const [tab, setTab] = useState<'draw' | 'upload'>('draw');
   const [isDrawing, setIsDrawing] = useState(false);
-  const [lineWidth, setLineWidth] = useState(2);
+  const [lineWidth] = useState(2);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const fileRef = useRef<HTMLInputElement>(null);
 
@@ -173,30 +225,82 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
         </div>
       )}
 
-      {/* Cryptographic SHA-256 Audit Trail (PRO Security Feature) */}
-      <div style={{ background: 'var(--bg-input)', padding: 14, borderRadius: 12, border: '1px solid var(--border-color)', display: 'flex', flexDirection: 'column', gap: 10 }}>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-            <ShieldCheck size={18} color="#10b981" />
-            <span style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)' }}>
+      {/* Cryptographic SHA-256 Audit Trail (Adobe Sign Standard - PRO / 3x Free with Login) */}
+      <div
+        style={{
+          background: 'var(--bg-input)',
+          padding: 14,
+          borderRadius: 12,
+          border: isAuditChecked ? '1px solid rgba(16, 185, 129, 0.4)' : '1px solid var(--border-color)',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 10,
+          transition: 'border-color 0.2s ease',
+        }}
+      >
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+            <ShieldCheck size={18} color={isAuditChecked ? '#10b981' : '#64748b'} />
+            <span style={{ fontSize: '0.84rem', fontWeight: 700, color: 'var(--text-main)' }}>
               {t("audit_cert_title", "SHA-256 Audit Trail Certificate")}
             </span>
+            {isPro ? (
+              <span style={{ fontSize: '0.65rem', fontWeight: 800, padding: '2px 7px', borderRadius: 999, background: 'rgba(245, 158, 11, 0.15)', color: '#d97706', border: '1px solid rgba(245, 158, 11, 0.3)', display: 'inline-flex', alignItems: 'center', gap: 3 }}>
+                <Crown size={10} /> PRO UNLIMITED
+              </span>
+            ) : !user ? (
+              <span style={{ fontSize: '0.65rem', fontWeight: 700, padding: '2px 7px', borderRadius: 999, background: 'rgba(99, 102, 241, 0.1)', color: '#6366f1', border: '1px solid rgba(99, 102, 241, 0.25)', display: 'inline-flex', alignItems: 'center', gap: 3 }}>
+                <Lock size={10} /> 3x Free with Login
+              </span>
+            ) : quota.allowed ? (
+              <span style={{ fontSize: '0.65rem', fontWeight: 700, padding: '2px 7px', borderRadius: 999, background: 'rgba(16, 185, 129, 0.1)', color: '#059669', border: '1px solid rgba(16, 185, 129, 0.25)' }}>
+                {quota.remaining}/{quota.max} Free Left
+              </span>
+            ) : (
+              <span style={{ fontSize: '0.65rem', fontWeight: 700, padding: '2px 7px', borderRadius: 999, background: 'rgba(239, 68, 68, 0.1)', color: '#dc2626', border: '1px solid rgba(239, 68, 68, 0.25)', display: 'inline-flex', alignItems: 'center', gap: 3 }}>
+                <Lock size={10} /> 0/3 Left
+              </span>
+            )}
           </div>
-          <label style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
+          <label style={{ display: 'flex', alignItems: 'center', cursor: 'pointer', flexShrink: 0 }}>
             <input
               type="checkbox"
-              checked={signatureConfig?.includeAuditTrail !== false}
-              onChange={(e) => setSignatureConfig((prev: any) => ({ ...prev, includeAuditTrail: e.target.checked }))}
+              checked={isAuditChecked}
+              onChange={handleToggleAudit}
               style={{ accentColor: 'var(--brand-primary)', width: 16, height: 16, cursor: 'pointer' }}
             />
           </label>
         </div>
 
         <p style={{ fontSize: '0.74rem', color: 'var(--text-muted)', margin: 0, lineHeight: 1.45 }}>
-          {t("audit_cert_desc", "Appends a cryptographic proof sheet with SHA-256 hashes verifying the document has not been tampered with.")}
+          {t("audit_cert_desc", "Appends an official Adobe Acrobat Sign standard Audit Report with SHA-256 integrity hashes & legal non-repudiation proof.")}
         </p>
 
-        {signatureConfig?.includeAuditTrail !== false && (
+        {!user && (
+          <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap' }}>
+            <span>{t("audit_guest_hint", "Want the audit certificate?")}</span>
+            <button
+              onClick={openAuthModal}
+              style={{ background: 'none', border: 'none', color: 'var(--brand-primary)', fontWeight: 700, cursor: 'pointer', textDecoration: 'underline', padding: 0, fontSize: '0.72rem' }}
+            >
+              {t("audit_login_btn", "Log In to Claim 3x Free / Month")}
+            </button>
+          </div>
+        )}
+
+        {user && !isPro && !quota.allowed && (
+          <div style={{ fontSize: '0.72rem', color: '#dc2626', display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap' }}>
+            <span>{t("audit_limit_hint", "Monthly 3 free limit reached.")}</span>
+            <button
+              onClick={() => setShowProGate(true)}
+              style={{ background: 'none', border: 'none', color: '#d97706', fontWeight: 700, cursor: 'pointer', textDecoration: 'underline', padding: 0, fontSize: '0.72rem' }}
+            >
+              {t("audit_upgrade_btn", "Upgrade to PRO for Unlimited")}
+            </button>
+          </div>
+        )}
+
+        {isAuditChecked && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: 6, marginTop: 4 }}>
             <label style={{ fontSize: '0.72rem', fontWeight: 600, color: 'var(--text-muted)' }}>
               {t("signer_name_label", "Signer Name (Optional):")}
@@ -219,6 +323,14 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
           </div>
         )}
       </div>
+
+      <ProGateModal
+        isOpen={showProGate}
+        onClose={() => setShowProGate(false)}
+        title="Buka Sertifikat Audit Kriptografis"
+        description="Batas kuota gratis 3x sertifikat audit bulan ini telah tercapai. Upgrade ke PRO untuk menikmati sertifikat audit tanda tangan digital Adobe Sign Standard tanpa batas."
+        featureName="SHA-256 Audit Trail Certificate"
+      />
 
       <div style={{ marginTop: 'auto', paddingTop: 24, borderTop: '1px solid var(--border-color)' }}>
         <button

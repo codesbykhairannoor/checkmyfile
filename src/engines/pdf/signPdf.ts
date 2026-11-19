@@ -127,8 +127,8 @@ export async function signPdf(
 
   onProgress?.(60);
 
-  // Append Web Crypto SHA-256 Audit Trail Certificate if requested (default: true)
-  if (config.includeAuditTrail !== false) {
+  // Append Web Crypto SHA-256 Audit Trail Certificate if requested (PRO / 3x Free per month)
+  if (config.includeAuditTrail === true) {
     onProgress?.(75);
     const now = new Date();
     const timestampIso = now.toISOString();
