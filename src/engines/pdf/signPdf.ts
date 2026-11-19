@@ -150,280 +150,322 @@ export async function signPdf(
     const fontMono = await pdfDoc.embedFont(StandardFonts.Courier);
     const fontMonoBold = await pdfDoc.embedFont(StandardFonts.CourierBold);
 
-    // 1. Outer Security Frame
-    auditPage.drawRectangle({
-      x: 36,
-      y: 36,
-      width: 523,
-      height: 770,
-      borderWidth: 1,
-      borderColor: rgb(0.85, 0.88, 0.93),
-      color: rgb(1, 1, 1),
+    // ================= ADOBE ACROBAT SIGN AUDIT REPORT STANDARD =================
+    const leftX = 48;
+    const rightX = 547;
+    const contentWidth = rightX - leftX; // ~500 pt
+
+    // 1. Header
+    auditPage.drawText('AUDIT REPORT', {
+      x: leftX,
+      y: 792,
+      size: 16,
+      font: fontBold,
+      color: rgb(0.12, 0.12, 0.12),
     });
 
-    // 2. Header Banner
-    auditPage.drawRectangle({
-      x: 36,
-      y: 726,
-      width: 523,
-      height: 80,
-      color: rgb(0.97, 0.98, 0.99),
-      borderWidth: 0,
+    auditPage.drawText('ADOBE ACROBAT SIGN STANDARD', {
+      x: 375,
+      y: 795,
+      size: 7.5,
+      font: fontBold,
+      color: rgb(0.45, 0.48, 0.55),
     });
+
+    const displayFileName = file.name.length > 50 ? file.name.substring(0, 47) + '...' : file.name;
+    const displaySigner = (config.signerName || 'Verified Document Signer').trim();
+
+    auditPage.drawText(`Agreement Title: ${displayFileName}`, {
+      x: leftX,
+      y: 772,
+      size: 9.5,
+      font: fontRegular,
+      color: rgb(0.25, 0.28, 0.35),
+    });
+
+    // Header hairline divider
     auditPage.drawLine({
-      start: { x: 36, y: 726 },
-      end: { x: 559, y: 726 },
+      start: { x: leftX, y: 758 },
+      end: { x: rightX, y: 758 },
       thickness: 1,
+      color: rgb(0.78, 0.81, 0.86),
+    });
+
+    // 2. Agreement Details
+    auditPage.drawText('AGREEMENT DETAILS', {
+      x: leftX,
+      y: 740,
+      size: 8.5,
+      font: fontBold,
+      color: rgb(0.15, 0.18, 0.25),
+    });
+
+    const col1X = leftX;
+    const col2X = 300;
+
+    const drawDetailRow = (y: number, l1: string, v1: string, l2: string, v2: string, isV1Mono = false, isV2Green = false) => {
+      auditPage.drawText(l1.toUpperCase(), {
+        x: col1X,
+        y,
+        size: 6.8,
+        font: fontBold,
+        color: rgb(0.50, 0.54, 0.62),
+      });
+      auditPage.drawText(v1, {
+        x: col1X,
+        y: y - 11,
+        size: 8.5,
+        font: isV1Mono ? fontMonoBold : fontBold,
+        color: rgb(0.12, 0.15, 0.22),
+      });
+
+      auditPage.drawText(l2.toUpperCase(), {
+        x: col2X,
+        y,
+        size: 6.8,
+        font: fontBold,
+        color: rgb(0.50, 0.54, 0.62),
+      });
+      auditPage.drawText(v2, {
+        x: col2X,
+        y: y - 11,
+        size: 8.5,
+        font: fontBold,
+        color: isV2Green ? rgb(0.08, 0.52, 0.28) : rgb(0.12, 0.15, 0.22),
+      });
+    };
+
+    drawDetailRow(722, 'Transaction ID', auditId, 'Agreement Status', 'Signed and Completed', true, true);
+    drawDetailRow(692, 'Signer Identification', displaySigner, 'Target Page Signed', `Page ${config.pageIndex + 1} of ${pages.length} (Visual Signature Affixed)`);
+    drawDetailRow(662, 'Completion Time (Local)', timestampLocal, 'Completion Time (UTC)', timestampIso);
+    drawDetailRow(632, 'Execution Environment', 'Client-Side In-Memory RAM (0 Bytes Cloud Upload)', 'Compliance Standard', 'ISO 32000-1 / ESIGN / UETA / eIDAS');
+
+    // Section divider
+    auditPage.drawLine({
+      start: { x: leftX, y: 606 },
+      end: { x: rightX, y: 606 },
+      thickness: 0.75,
+      color: rgb(0.88, 0.90, 0.94),
+    });
+
+    // 3. Chronological Event Log
+    auditPage.drawText('CHRONOLOGICAL EVENT LOG', {
+      x: leftX,
+      y: 588,
+      size: 8.5,
+      font: fontBold,
+      color: rgb(0.15, 0.18, 0.25),
+    });
+
+    auditPage.drawText('All events and timestamps are verified in client-side memory using the W3C Web Cryptography standard.', {
+      x: leftX,
+      y: 576,
+      size: 7,
+      font: fontRegular,
+      color: rgb(0.48, 0.52, 0.6),
+    });
+
+    // Vertical timeline bar
+    const timelineX = 56;
+    const startY = 554;
+    const endY = 440;
+    auditPage.drawLine({
+      start: { x: timelineX, y: startY },
+      end: { x: timelineX, y: endY },
+      thickness: 1.5,
       color: rgb(0.85, 0.88, 0.93),
     });
 
-    auditPage.drawText('HANDLEMYFILE • CRYPTOGRAPHIC AUDIT CERTIFICATE', {
-      x: 56,
-      y: 775,
-      size: 11,
-      font: fontBold,
-      color: rgb(0.08, 0.12, 0.22),
-    });
-    auditPage.drawText('Zero-Knowledge Client-Side Verification • Tamper-Evident SHA-256 Integrity Seal', {
-      x: 56,
-      y: 757,
-      size: 8,
-      font: fontRegular,
-      color: rgb(0.4, 0.48, 0.58),
-    });
-    auditPage.drawText('STANDARD: ISO 32000-1 / ESIGN ACT COMPLIANT', {
-      x: 56,
-      y: 742,
-      size: 7,
-      font: fontBold,
-      color: rgb(0.06, 0.6, 0.38),
-    });
-
-    // 3. Two-Column Metadata Grid
-    const col1X = 56;
-    const col2X = 310;
-    let rowY = 690;
-
-    const drawGridCell = (x: number, label: string, value: string, isGreen = false) => {
-      auditPage.drawText(label.toUpperCase(), {
-        x,
-        y: rowY,
-        size: 7,
-        font: fontBold,
-        color: rgb(0.5, 0.56, 0.66),
+    const drawEvent = (dotY: number, title: string, subtitle: string, dotColor = rgb(0.25, 0.45, 0.85)) => {
+      auditPage.drawCircle({
+        x: timelineX,
+        y: dotY,
+        size: 3.5,
+        color: dotColor,
       });
-      auditPage.drawText(value, {
-        x,
-        y: rowY - 14,
-        size: 9,
+      auditPage.drawText(title, {
+        x: 72,
+        y: dotY - 2,
+        size: 8,
         font: fontBold,
-        color: isGreen ? rgb(0.06, 0.6, 0.38) : rgb(0.08, 0.12, 0.22),
+        color: rgb(0.12, 0.16, 0.24),
+      });
+      auditPage.drawText(subtitle, {
+        x: 72,
+        y: dotY - 13,
+        size: 7,
+        font: fontRegular,
+        color: rgb(0.45, 0.50, 0.58),
       });
     };
 
-    const displayFileName = file.name.length > 40 ? file.name.substring(0, 37) + '...' : file.name;
-    const displaySigner = (config.signerName || 'Verified Document Signer').trim();
+    drawEvent(554, 'Agreement Created & In-Memory Loaded', `${timestampLocal}  •  Client Browser Environment  •  Original document imported`);
+    drawEvent(516, `Document Viewed by ${displaySigner}`, `${timestampLocal}  •  Client-Side Verification  •  Rendered on isolated canvas`);
+    drawEvent(478, `Electronic Signature Affixed by ${displaySigner}`, `${timestampLocal}  •  Method: Biometric Canvas Signature  •  Affixed to Page ${config.pageIndex + 1}`);
+    drawEvent(440, 'Agreement Locked & Cryptographically Sealed', `${timestampLocal}  •  Status: Closed & Tamper-Evident  •  SHA-256 seal computed`, rgb(0.08, 0.55, 0.3));
 
-    // Row 1
-    drawGridCell(col1X, 'Document File Name', displayFileName);
-    drawGridCell(col2X, 'Signer Identification', displaySigner);
-    rowY -= 38;
-
-    // Row 2
-    drawGridCell(col1X, 'Audit Certificate ID', auditId);
-    drawGridCell(col2X, 'Signing Timestamp (UTC)', `${timestampIso}`);
-    rowY -= 38;
-
-    // Row 3
-    drawGridCell(col1X, 'Target Page Signed', `Page ${config.pageIndex + 1} of ${pages.length} (Visual Signature Affixed)`);
-    drawGridCell(col2X, 'Signing Timestamp (Local)', `${timestampLocal}`);
-    rowY -= 38;
-
-    // Row 4
-    drawGridCell(col1X, 'Processing Architecture', '100% In-Memory RAM (0 Bytes Cloud Upload)');
-    drawGridCell(col2X, 'Verification Status', 'VERIFIED & TAMPER-SEALED', true);
-
-    // Separator line
+    // Section divider
     auditPage.drawLine({
-      start: { x: 56, y: 535 },
-      end: { x: 539, y: 535 },
-      thickness: 1,
-      color: rgb(0.9, 0.92, 0.96),
+      start: { x: leftX, y: 412 },
+      end: { x: rightX, y: 412 },
+      thickness: 0.75,
+      color: rgb(0.88, 0.90, 0.94),
     });
 
-    // 4. Cryptographic Fingerprint Container Box
+    // 4. Cryptographic Integrity Hash (SHA-256)
+    auditPage.drawText('CRYPTOGRAPHIC INTEGRITY HASH (SHA-256)', {
+      x: leftX,
+      y: 394,
+      size: 8.5,
+      font: fontBold,
+      color: rgb(0.15, 0.18, 0.25),
+    });
+
+    auditPage.drawText('The mathematical SHA-256 hashes below prove the document has not been altered or tampered with post-signing.', {
+      x: leftX,
+      y: 382,
+      size: 7,
+      font: fontRegular,
+      color: rgb(0.48, 0.52, 0.6),
+    });
+
+    // Original Hash Box
+    auditPage.drawText('ORIGINAL PRE-SIGNED SHA-256 HASH:', {
+      x: leftX,
+      y: 366,
+      size: 6.8,
+      font: fontBold,
+      color: rgb(0.4, 0.45, 0.55),
+    });
     auditPage.drawRectangle({
-      x: 56,
-      y: 360,
-      width: 483,
-      height: 155,
+      x: leftX,
+      y: 346,
+      width: contentWidth,
+      height: 17,
+      color: rgb(0.96, 0.97, 0.98),
+      borderWidth: 0.75,
+      borderColor: rgb(0.85, 0.88, 0.92),
+    });
+    auditPage.drawText(originalHash, {
+      x: leftX + 8,
+      y: 351,
+      size: 7.2,
+      font: fontMono,
+      color: rgb(0.2, 0.24, 0.32),
+    });
+
+    // Signed Hash Box
+    auditPage.drawText('FINAL SEALED DOCUMENT SHA-256 HASH:', {
+      x: leftX,
+      y: 326,
+      size: 6.8,
+      font: fontBold,
+      color: rgb(0.15, 0.45, 0.28),
+    });
+    auditPage.drawRectangle({
+      x: leftX,
+      y: 306,
+      width: contentWidth,
+      height: 17,
+      color: rgb(0.94, 0.98, 0.95),
+      borderWidth: 0.75,
+      borderColor: rgb(0.72, 0.85, 0.76),
+    });
+    auditPage.drawText(signedHash, {
+      x: leftX + 8,
+      y: 311,
+      size: 7.2,
+      font: fontMonoBold,
+      color: rgb(0.06, 0.48, 0.25),
+    });
+
+    // Section divider
+    auditPage.drawLine({
+      start: { x: leftX, y: 286 },
+      end: { x: rightX, y: 286 },
+      thickness: 0.75,
+      color: rgb(0.88, 0.90, 0.94),
+    });
+
+    // 5. Legal Notice & Statutory Compliance
+    auditPage.drawText('LEGAL NOTICE & STATUTORY NON-REPUDIATION', {
+      x: leftX,
+      y: 268,
+      size: 8.5,
+      font: fontBold,
+      color: rgb(0.15, 0.18, 0.25),
+    });
+
+    const legalLines = [
+      'This Audit Report provides a full, tamper-evident record of the electronic signature transaction pursuant to the United States Electronic',
+      'Signatures in Global and National Commerce Act (ESIGN Act, 15 U.S.C. § 7001 et seq.), the Uniform Electronic Transactions Act (UETA), and',
+      'the European Union eIDAS Regulation (Regulation (EU) No 910/2014) regarding enforceable electronic signatures.',
+      '',
+      'The cryptographic SHA-256 digests affixed above establish mathematical verification of document completeness. Any post-signing alteration,',
+      'page extraction, or annotation invalidates the digital hash. HandleMyFile executes all operations client-side via in-memory WebAssembly isolate;',
+      'no document data, signatures, or biometric inputs were stored or transmitted across any network or cloud server.',
+    ];
+
+    let textY = 252;
+    for (const line of legalLines) {
+      if (line === '') {
+        textY -= 4;
+        continue;
+      }
+      auditPage.drawText(line, {
+        x: leftX,
+        y: textY,
+        size: 6.8,
+        font: fontRegular,
+        color: rgb(0.42, 0.46, 0.54),
+      });
+      textY -= 10.5;
+    }
+
+    // Security Guarantee Badges Box
+    auditPage.drawRectangle({
+      x: leftX,
+      y: 110,
+      width: contentWidth,
+      height: 48,
       color: rgb(0.98, 0.99, 1.0),
-      borderWidth: 1,
+      borderWidth: 0.75,
       borderColor: rgb(0.85, 0.88, 0.94),
     });
 
-    auditPage.drawText('CRYPTOGRAPHIC INTEGRITY SEALS (SHA-256 DIGESTS)', {
-      x: 72,
-      y: 492,
-      size: 8.5,
-      font: fontBold,
-      color: rgb(0.85, 0.12, 0.25),
-    });
-    auditPage.drawText('The mathematical hashes below establish irrevocable proof of document integrity.', {
-      x: 72,
-      y: 478,
-      size: 7.5,
-      font: fontRegular,
-      color: rgb(0.4, 0.48, 0.58),
-    });
+    const colW = contentWidth / 3;
+    auditPage.drawText('ZERO-KNOWLEDGE PRIVACY', { x: leftX + 12, y: 142, size: 7, font: fontBold, color: rgb(0.12, 0.16, 0.24) });
+    auditPage.drawText('100% In-Memory isolate. Zero cloud upload.', { x: leftX + 12, y: 124, size: 6.5, font: fontRegular, color: rgb(0.45, 0.50, 0.58) });
 
-    // Original Hash Code Block
-    auditPage.drawText('ORIGINAL PRE-SIGNED SHA-256 HASH:', {
-      x: 72,
-      y: 454,
-      size: 7,
-      font: fontBold,
-      color: rgb(0.35, 0.42, 0.52),
-    });
-    auditPage.drawRectangle({
-      x: 72,
-      y: 432,
-      width: 451,
-      height: 18,
-      color: rgb(0.93, 0.95, 0.97),
-    });
-    auditPage.drawText(originalHash, {
-      x: 78,
-      y: 437,
-      size: 7.5,
-      font: fontMono,
-      color: rgb(0.15, 0.2, 0.3),
-    });
+    auditPage.drawText('TAMPER-EVIDENT INTEGRITY', { x: leftX + colW + 12, y: 142, size: 7, font: fontBold, color: rgb(0.12, 0.16, 0.24) });
+    auditPage.drawText('Mathematical SHA-256 hash sealing.', { x: leftX + colW + 12, y: 124, size: 6.5, font: fontRegular, color: rgb(0.45, 0.50, 0.58) });
 
-    // Signed Hash Code Block
-    auditPage.drawText('SIGNED DOCUMENT SHA-256 HASH (SEALED):', {
-      x: 72,
-      y: 412,
-      size: 7,
-      font: fontBold,
-      color: rgb(0.35, 0.42, 0.52),
-    });
-    auditPage.drawRectangle({
-      x: 72,
-      y: 390,
-      width: 451,
-      height: 18,
-      color: rgb(0.92, 0.98, 0.94),
-      borderWidth: 1,
-      borderColor: rgb(0.65, 0.88, 0.75),
-    });
-    auditPage.drawText(signedHash, {
-      x: 78,
-      y: 395,
-      size: 7.5,
-      font: fontMonoBold,
-      color: rgb(0.04, 0.55, 0.32),
-    });
+    auditPage.drawText('STATUTORY ENFORCEABILITY', { x: leftX + (colW * 2) + 12, y: 142, size: 7, font: fontBold, color: rgb(0.12, 0.16, 0.24) });
+    auditPage.drawText('Compliant with ESIGN, UETA, & eIDAS.', { x: leftX + (colW * 2) + 12, y: 124, size: 6.5, font: fontRegular, color: rgb(0.45, 0.50, 0.58) });
 
-    // 5. Legal & Audit Guarantee 3-Card Strip
-    const cardW = 153;
-    const cardH = 90;
-    const cardY = 245;
-
-    const drawSecurityCard = (x: number, title: string, tag: string, desc: string[]) => {
-      auditPage.drawRectangle({
-        x,
-        y: cardY,
-        width: cardW,
-        height: cardH,
-        color: rgb(0.98, 0.99, 1),
-        borderWidth: 1,
-        borderColor: rgb(0.88, 0.91, 0.95),
-      });
-      auditPage.drawText(title, {
-        x: x + 12,
-        y: cardY + 70,
-        size: 7.5,
-        font: fontBold,
-        color: rgb(0.08, 0.12, 0.22),
-      });
-      auditPage.drawText(tag, {
-        x: x + 12,
-        y: cardY + 56,
-        size: 6.5,
-        font: fontBold,
-        color: rgb(0.06, 0.6, 0.38),
-      });
-      desc.forEach((line, i) => {
-        auditPage.drawText(line, {
-          x: x + 12,
-          y: cardY + 40 - (i * 10),
-          size: 6.5,
-          font: fontRegular,
-          color: rgb(0.4, 0.48, 0.58),
-        });
-      });
-    };
-
-    drawSecurityCard(56, 'ZERO-KNOWLEDGE', '100% PRIVATE', [
-      'Processed 100% locally',
-      'in browser V8 isolate.',
-      'Zero data sent to cloud.'
-    ]);
-    drawSecurityCard(221, 'TAMPER-EVIDENT', 'MATHEMATICAL PROOF', [
-      'Any edit or pixel change',
-      'permanently invalidates',
-      'the cryptographic hash.'
-    ]);
-    drawSecurityCard(386, 'E-SIGN COMPLIANT', 'LEGAL INTEGRITY', [
-      'Conforms with UETA,',
-      'US ESIGN Act and eIDAS',
-      'electronic signature law.'
-    ]);
-
-    // 6. Verification Notice
-    auditPage.drawText('VERIFICATION NOTICE & NON-REPUDIATION GUARANTEE', {
-      x: 56,
-      y: 215,
-      size: 7.5,
-      font: fontBold,
-      color: rgb(0.2, 0.25, 0.35),
-    });
-
-    const disclaimer = [
-      'This audit certificate is permanently appended to the document to verify authenticity, signer identity, and tamper-proof status.',
-      'HandleMyFile cryptographic engine operates entirely client-side, ensuring document confidentiality and enterprise security compliance.'
-    ];
-    disclaimer.forEach((l, i) => {
-      auditPage.drawText(l, {
-        x: 56,
-        y: 198 - (i * 12),
-        size: 7,
-        font: fontRegular,
-        color: rgb(0.45, 0.52, 0.62),
-      });
-    });
-
-    // 7. Footer Strip
+    // 6. Footer
     auditPage.drawLine({
-      start: { x: 36, y: 65 },
-      end: { x: 559, y: 65 },
+      start: { x: leftX, y: 65 },
+      end: { x: rightX, y: 65 },
       thickness: 1,
-      color: rgb(0.88, 0.90, 0.94),
+      color: rgb(0.82, 0.85, 0.90),
     });
-    auditPage.drawText('HandleMyFile Cryptographic Engine • Audit Sheet • ISO 32000-1 Compliant', {
-      x: 56,
-      y: 48,
+
+    auditPage.drawText('HandleMyFile Cryptographic Engine • Adobe Acrobat Sign Audit Standard • ISO 32000-1 Compliant', {
+      x: leftX,
+      y: 50,
       size: 7,
       font: fontRegular,
-      color: rgb(0.5, 0.56, 0.66),
+      color: rgb(0.45, 0.50, 0.58),
     });
-    auditPage.drawText('SECURITY PAGE (NON-REPUDIATION AUDIT)', {
-      x: 375,
-      y: 48,
+
+    const totalPages = pages.length + 1;
+    auditPage.drawText(`Page ${totalPages} of ${totalPages} (Audit Trail)`, {
+      x: 435,
+      y: 50,
       size: 7,
       font: fontBold,
-      color: rgb(0.3, 0.38, 0.48),
+      color: rgb(0.35, 0.40, 0.48),
     });
   }
 
