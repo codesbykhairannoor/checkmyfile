@@ -200,8 +200,8 @@ export const GenericConvertEditor: React.FC<GenericConvertEditorProps> = ({
           onClose={() => setShowProGate(false)}
           currentLang={currentLang}
           featureName="AI OCR to Excel Table Extraction"
-          customTitle={currentLang === 'id' ? 'Buka Fitur OCR ke Excel (PRO)' : 'Unlock OCR to Excel (PRO)'}
-          customDescription={currentLang === 'id'
+          title={currentLang === 'id' ? 'Buka Fitur OCR ke Excel (PRO)' : 'Unlock OCR to Excel (PRO)'}
+          description={currentLang === 'id'
             ? 'Batas uji coba gratis 3x OCR ke Excel bulan ini telah tercapai. Upgrade ke PRO untuk ekstraksi tabel tak terbatas.'
             : 'Your monthly 3 free OCR to Excel trial limit has been reached. Upgrade to PRO for unlimited table extraction.'}
         />

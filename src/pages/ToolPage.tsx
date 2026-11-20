@@ -53,7 +53,7 @@ const getAcceptTypes = (toolId: string): string => {
 };
 
 export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorActive }) => {
-  const { user, isPro, openAuthModal } = useAuth();
+  const { user, profile, isPro, openAuthModal } = useAuth();
   const canonicalId = getCanonicalToolId(tool.id);
   const isMultiFileInput = ['merge-pdf', 'image-to-pdf'].includes(canonicalId);
   const [showProGateModal, setShowProGateModal] = useState<boolean>(false);
