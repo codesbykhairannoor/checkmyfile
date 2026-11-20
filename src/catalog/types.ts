@@ -71,7 +71,7 @@ export const defaultFaqs = (toolName: string, lang: string): ToolFaqItem[] => {
   return [
     {
       q: `Is this ${toolName} tool free to use?`,
-      a: `Yes! Our ${toolName} tool includes a generous Free Starter plan (up to 10 files per batch) with zero subscriptions or account required. For unlimited batch processing (100+ files) and custom output renaming, an affordable Founder Lifetime Pass is available.`,
+      a: `Yes! Our ${toolName} tool includes a generous Free Starter plan (up to 10 files per batch) with no credit card required to start. For unlimited batch processing (100+ files) and custom output renaming, an affordable Founder Lifetime Pass is available.`,
     },
     {
       q: `Are my private documents uploaded to remote cloud servers?`,

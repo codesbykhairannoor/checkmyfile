@@ -86,7 +86,7 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
             margin: '0 auto 48px',
             fontWeight: 500
           }}>
-            {t.homeHeroSubtitle || 'Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly. Free, no size limits, and highly secure.'}
+            {t.homeHeroSubtitle || 'Merge, split, compress, convert Office files, and OCR directly in your browser. 100% processed offline via WebAssembly. Free Starter for daily tasks, unlimited with PRO.'}
           </p>
 
 
@@ -409,13 +409,13 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
 
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, paddingTop: 16, borderTop: '1px solid var(--border-color)' }}>
                 <span style={{ fontSize: '0.76rem', fontWeight: 700, padding: '4px 12px', borderRadius: 8, background: 'var(--bg-card)', color: 'var(--text-main)', border: '1px solid var(--border-color)' }}>
-                  ✨ 30+ Free Web Tools
+                  ✨ 30+ Client-Side Tools
                 </span>
                 <span style={{ fontSize: '0.76rem', fontWeight: 700, padding: '4px 12px', borderRadius: 8, background: 'var(--bg-card)', color: 'var(--text-main)', border: '1px solid var(--border-color)' }}>
                   ⚡ WebAssembly (WASM)
                 </span>
                 <span style={{ fontSize: '0.76rem', fontWeight: 700, padding: '4px 12px', borderRadius: 8, background: 'var(--bg-card)', color: 'var(--text-main)', border: '1px solid var(--border-color)' }}>
-                  🚫 No Sign-Up Needed
+                  🚀 Instant Free Starter
                 </span>
               </div>
             </div>

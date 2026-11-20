@@ -134,7 +134,7 @@ async function createOgImage() {
 
     <!-- Bottom URL & Proof -->
     <text x="75" y="572" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="700" fill="#3b82f6" letter-spacing="0.2px">handlemyfile.com</text>
-    <text x="1125" y="572" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="500" fill="#64748b">Private • Fast • In-Browser • Free Forever</text>
+    <text x="1125" y="572" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="500" fill="#64748b">100% Private • Fast • In-Browser • Client-Side WASM</text>
   </svg>
   `;
 

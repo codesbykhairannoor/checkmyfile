@@ -184,7 +184,7 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
     "sign-pdf-without-registration": {
       "title": "Sign PDF Online Without Registration - Free E-Sign",
       "h1": "E-Sign PDF Documents Online Without Registration",
-      "description": "Place your electronic signature on any PDF file instantly. No account required, no signup, 100% private and free."
+      "description": "Place your electronic signature on any PDF file instantly in your browser with 100% client-side privacy."
     },
     "ocr-pdf": {
       "title": "Free Browser OCR - Extract Text from Scanned PDF & Images",
@@ -369,9 +369,9 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "description": "Satukan banyak berkas PDF menjadi satu file secara lokal di dalam browser Anda tanpa perlu mengunggah ke server internet."
     },
     "sign-pdf-without-registration": {
-      "title": "Tanda Tangan PDF Tanpa Daftar - E-Sign Gratis & Tanpa Akun",
-      "h1": "Tanda Tangani Dokumen PDF Tanpa Registrasi Akun",
-      "description": "Bubuhkan tanda tangan elektronik ke berkas PDF secara instan dan gratis tanpa registrasi akun atau langganan."
+      "title": "Tanda Tangan PDF Tanpa Daftar - E-Sign Gratis & Cepat",
+      "h1": "Tanda Tangani Dokumen PDF Secara Online",
+      "description": "Bubuhkan tanda tangan elektronik ke berkas PDF secara instan di browser Anda dengan jaminan privasi 100% offline."
     },
     "ocr-pdf": {
       "title": "OCR Browser Gratis - Ekstrak Teks dari PDF & Gambar yang Dipindai",

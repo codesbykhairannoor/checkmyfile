@@ -69,7 +69,7 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
               <Zap size={16} /> {t.pagePricingBadge || 'Fair & Transparent Pricing'}
             </div>
             <h1 style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', fontWeight: 900, fontFamily: 'var(--font-display)', marginBottom: 24, letterSpacing: '-0.03em', color: 'var(--text-main)', lineHeight: 1.1 }}>
-              {t.pagePricingHero || 'Zero Subscriptions. Fair & Private.'}
+              {t.pagePricingHero || 'Flexible Plans & Lifetime Pass. 100% Private.'}
             </h1>
             <p style={{ fontSize: 'clamp(1.05rem, 2vw, 1.25rem)', color: 'var(--text-muted)', lineHeight: 1.7, maxWidth: 700, margin: '0 auto' }}>
               {t.pagePricingHeroSub || 'Enterprise-grade document tools usually cost $20/month. We believe privacy and utility should be accessible to everyone. HandleMyFile offers a generous free tier and an affordable lifetime pass.'}
@@ -204,12 +204,12 @@ export const PricingPage: React.FC<Props> = ({ currentLang }) => {
                   $0<span style={{ fontSize: '0.95rem', color: 'var(--text-muted)', fontWeight: 500 }}>{tPricing.period_forever}</span>
                 </div>
                 <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginBottom: 24 }}>
-                  {tAuth.pro_plan_free_period || 'Free Forever'}
+                  {tAuth.pro_plan_free_period || 'Free Starter Tier'}
                 </div>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 14, flex: 1 }}>
                   <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 600, fontSize: '0.88rem' }}><Check size={18} color="var(--brand-primary)" /> {t.pricingHmfItem1 || '100% Client-side processing'}</li>
                   <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 600, fontSize: '0.88rem' }}><Check size={18} color="var(--brand-primary)" /> {t.pricingHmfItem2 || 'Standard batch up to 10 files'}</li>
-                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 600, fontSize: '0.88rem' }}><Check size={18} color="var(--brand-primary)" /> {t.pricingHmfItem3 || 'No account or credit card needed'}</li>
+                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 600, fontSize: '0.88rem' }}><Check size={18} color="var(--brand-primary)" /> {t.pricingHmfItem3 || 'No credit card required to start'}</li>
                   <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 600, fontSize: '0.88rem' }}><Check size={18} color="var(--brand-primary)" /> {t.pricingHmfItem4 || 'Instant WebAssembly speed'}</li>
                 </ul>
                 <div style={{ marginTop: 28 }}>

@@ -55,7 +55,7 @@ export const AboutUsPage: React.FC<Props> = ({ currentLang }) => {
               <div className="hover-lift" style={{ padding: 40, borderRadius: 24, background: 'var(--bg-app)', border: '1px solid var(--border-color)', textAlign: 'center' }}>
                 <Users size={48} className="text-brand-primary" style={{ margin: '0 auto 24px' }} />
                 <h3 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: 16 }}>{t.pageAboutCard3Title || 'For Everyone'}</h3>
-                <p style={{ color: 'var(--text-muted)', lineHeight: 1.6 }}>{t.pageAboutCard3Desc || 'We translated our entire platform into 30 languages. No subscriptions, no hidden fees, just world-class tools available globally.'}</p>
+                <p style={{ color: 'var(--text-muted)', lineHeight: 1.6 }}>{t.pageAboutCard3Desc || 'We translated our entire platform into 30 languages. Transparent pricing, no hidden fees, and world-class client-side tools available globally.'}</p>
               </div>
             </div>
           </div>
