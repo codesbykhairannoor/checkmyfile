@@ -90,7 +90,7 @@ export const PrivacyPage: React.FC<Props> = ({ currentLang }) => {
               <div className="hover-lift" style={{ padding: 40, background: 'var(--bg-app)', borderRadius: 24, border: '1px solid var(--border-color)', borderTop: '4px solid var(--brand-primary)' }}>
                 <EyeOff size={32} className="text-brand-primary" style={{ marginBottom: 20 }} />
                 <h3 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: 16 }}>{t.pagePrivacyCard3Title || 'Anonymous Usage'}</h3>
-                <p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>{t.pagePrivacyCard3Desc || 'No account or email registration required to use our free document tools. You remain completely anonymous with zero server uploads.'}</p>
+                <p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>{t.pagePrivacyCard3Desc || 'Guests can process documents immediately without forced account creation. All document processing stays strictly local and anonymous with zero server uploads.'}</p>
               </div>
             </div>
           </div>

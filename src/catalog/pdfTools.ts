@@ -398,13 +398,13 @@ export const pdfTools: ToolDefinition[] = [
       en: {
         title: 'Sign PDF Online Without Registration',
         h1: 'E-Sign PDF Documents Online Without Registration',
-        description: 'Place your electronic signature on any PDF file instantly. No account required, no signup, 100% private and free.',
+        description: 'Place your electronic signature on any PDF file instantly. Instant guest access, 100% private and client-side.',
         faqs: defaultFaqs('Sign PDF Without Registration', 'en'),
       },
       id: {
         title: 'Tanda Tangan PDF Tanpa Daftar',
         h1: 'Tanda Tangani Dokumen PDF Tanpa Registrasi Akun',
-        description: 'Bubuhkan tanda tangan elektronik ke berkas PDF secara instan dan gratis tanpa registrasi akun atau langganan.',
+        description: 'Bubuhkan tanda tangan elektronik ke berkas PDF secara instan. Akses tamu langsung tanpa hambatan, 100% privat di peramban Anda.',
         faqs: defaultFaqs('Tanda Tangan PDF Tanpa Daftar', 'id'),
       },
     },

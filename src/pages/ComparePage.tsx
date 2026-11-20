@@ -60,7 +60,7 @@ export const ComparePage: React.FC<Props> = ({ currentLang }) => {
                     [t.compareTr3Col1 || 'Max File Size Limit', t.compareTr3Col2 || 'Typically 5MB - 15MB', t.compareTr3Col3 || 'Unlimited (RAM constrained)'],
                     [t.compareTr4Col1 || 'Offline Capability', <X size={20} color="var(--text-muted)" />, <Check size={20} color="var(--brand-primary)" />],
                     [t.compareTr5Col1 || 'Cost', t.compareTr5Col2 || 'Free Tier + $20/mo', t.compareTr5Col3 || 'Free Starter + Lifetime Pass'],
-                    [t.compareTr6Col1 || 'Account Registration', t.compareTr6Col2 || 'Required for large files', t.compareTr6Col3 || 'Not Required for Free Tools'],
+                    [t.compareTr6Col1 || 'Account Registration', t.compareTr6Col2 || 'Required for large files', t.compareTr6Col3 || 'Optional (Guest Mode Available)'],
                     [t.compareTr7Col1 || 'Processing Speed', t.compareTr7Col2 || 'Dependent on Internet Speed', t.compareTr7Col3 || 'Instant (Local CPU)']
                   ].map((row, i) => (
                     <tr key={i} style={{ borderBottom: i === 6 ? 'none' : '1px solid var(--border-color)' }}>

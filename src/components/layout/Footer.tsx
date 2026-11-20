@@ -114,11 +114,11 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool, onNav
 
   return (
     <footer style={{ background: 'var(--bg-card)', borderTop: '1px solid var(--border-color)', marginTop: 'auto' }}>
-      <div 
+      <div
         className="footer-grid-container"
-        style={{ 
-          maxWidth: 1440, 
-          margin: '0 auto', 
+        style={{
+          maxWidth: 1440,
+          margin: '0 auto',
           padding: '64px 32px',
           display: 'grid',
           gridTemplateColumns: '1.5fr 1fr 1fr 1fr',
@@ -137,7 +137,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool, onNav
             {t.brandDescription || 'The all-in-one platform to handle your documents securely. Edit, convert, and sign PDFs with 100% client-side privacy. Fast, free, and strictly confidential.'}
           </p>
           <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginTop: 12 }}>
-            <button 
+            <button
               style={{
                 display: 'flex', alignItems: 'center', gap: 8, padding: '10px 20px',
                 background: 'var(--brand-primary)', color: 'white', borderRadius: 8,
@@ -221,7 +221,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool, onNav
               <span>{t.privacyBadge?.replace('🔒 ', '')?.trim() || '100% Client-Side Privacy'}</span>
             </div>
           </div>
-          
+
           <div style={{ display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap' }}>
             <a
               href="https://discord.gg/NcWY6bcVdN"
@@ -252,7 +252,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool, onNav
           </div>
         </div>
       </div>
-      
+
       {/* Mobile Styles (Using inline style tag to keep it self-contained) */}
       <style>{`
         @media (max-width: 992px) {

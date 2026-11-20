@@ -40,7 +40,7 @@ export const defaultFaqs = (toolName: string, lang: string): ToolFaqItem[] => {
     return [
       {
         q: `Apakah alat ${toolName} ini gratis digunakan?`,
-        a: `Ya! Alat ${toolName} kami menyediakan paket Free Starter gratis (hingga 10 berkas per batch) tanpa perlu registrasi akun atau langganan bulanan. Untuk pemrosesan batch tak terbatas (100+ berkas) dan kustomisasi nama berkas output, tersedia opsi Founder Lifetime Pass.`,
+        a: `Ya! Alat ${toolName} kami menyediakan paket Free Starter gratis (hingga 10 berkas per batch) tanpa perlu kartu kredit atau komitmen biaya bulanan. Untuk pemrosesan batch tak terbatas (100+ berkas) dan kustomisasi nama berkas output, tersedia opsi Founder Lifetime Pass.`,
       },
       {
         q: `Apakah dokumen saya diunggah ke server awan?`,
@@ -56,7 +56,7 @@ export const defaultFaqs = (toolName: string, lang: string): ToolFaqItem[] => {
     return [
       {
         q: `¿Es gratuita esta herramienta de ${toolName}?`,
-        a: `¡Sí! Nuestra herramienta ofrece un plan Free Starter gratuito (hasta 10 archivos por lote) sin necesidad de registro ni suscripciones. También disponemos de un Founder Lifetime Pass para procesamiento por lotes ilimitado (más de 100 archivos) y personalización del nombre de salida.`,
+        a: `¡Sí! Nuestra herramienta ofrece un plan Free Starter gratuito (hasta 10 archivos por lote) sin necesidad de tarjeta de crédito ni suscripciones obligatorias. También disponemos de un Founder Lifetime Pass para procesamiento por lotes ilimitado (más de 100 archivos) y personalización del nombre de salida.`,
       },
       {
         q: `¿Mis documentos se suben a algún servidor?`,
