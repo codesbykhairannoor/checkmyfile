@@ -51,7 +51,32 @@ const SOURCE_STRINGS = {
   clear: "Clear",
   cancel: "Cancel",
   insert_signature: "Insert on Page",
-  double_click_to_edit: "Double click to edit text"
+  double_click_to_edit: "Double click to edit text",
+  select_tool: "Select / Move",
+  pages_tab: "Pages",
+  page_thumbnails: "Page Thumbnails",
+  fit_width: "Fit Width",
+  bring_forward: "Bring Forward",
+  send_backward: "Send Backward",
+  document_overview: "Document Overview",
+  page_actions: "Page Actions",
+  shortcuts_guide: "Keyboard Shortcuts",
+  transparent_fill: "Transparent",
+  change_document: "Change Document",
+  page_number_label: "Page",
+  of_pages: "of",
+  zoom_in: "Zoom In",
+  zoom_out: "Zoom Out",
+  clear_page_edits: "Clear Page Edits",
+  no_selection_title: "Canvas & Document",
+  no_selection_desc: "Select an element on the canvas to customize properties, or pick a tool to start designing.",
+  drag_drop_move: "Drag to move • Corner handles to resize",
+  double_click_inline: "Double-click text to edit inline",
+  replace_image: "Replace Image",
+  layer_order: "Layer Order",
+  custom_color: "Custom Color",
+  presets: "Presets",
+  pen_draw: "Pen / Draw"
 };
 
 const CACHE_FILE = path.join(__dirname, 'edit-translations-cache.json');

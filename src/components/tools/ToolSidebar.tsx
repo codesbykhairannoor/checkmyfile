@@ -300,61 +300,12 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
       {canonicalId === 'repair-pdf' && (
         <RepairPdfEditor onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
       )}
-      {canonicalId === 'edit-pdf' && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-          <details open className="glass-panel" style={{ borderRadius: 16, border: '1px solid var(--border-color)', overflow: 'hidden' }}>
-            <summary style={{ padding: '16px 20px', fontWeight: 800, cursor: 'pointer', outline: 'none', background: 'var(--bg-input)', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: 12 }}>
-              <span style={{ flex: 1 }}>✍️ {tUi['Edit & Sign'] || (tUi["Edit & Sign"] || "Edit & Sign")}</span>
-            </summary>
-            <div style={{ padding: '20px 16px', display: 'flex', flexDirection: 'column', gap: 24, background: 'var(--bg-card)' }}>
-              {editElements && setEditElements && setSelectedEditId && (
-                <EditPdfEditor
-                  elements={editElements} setElements={setEditElements}
-                  selectedId={selectedEditId || null} setSelectedId={setSelectedEditId}
-                  activePageIndex={activeFileIndex} onApply={() => handleStartProcessing({ toolId: 'edit-pdf' })} tUi={tUi} isProcessing={isProcessing}
-                />
-              )}
-              <div style={{ height: 1, background: 'var(--border-color)', margin: '0 -16px' }} />
-              {signatureConfig && setSignatureConfig && (
-                <SignPdfEditor signatureConfig={signatureConfig} setSignatureConfig={setSignatureConfig} onApply={() => handleStartProcessing({ toolId: 'sign-pdf' })} tUi={tUi} isProcessing={isProcessing} />
-              )}
-            </div>
-          </details>
-
-          <details className="glass-panel" style={{ borderRadius: 16, border: '1px solid var(--border-color)', overflow: 'hidden' }}>
-            <summary style={{ padding: '16px 20px', fontWeight: 800, cursor: 'pointer', outline: 'none', background: 'var(--bg-input)', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: 12 }}>
-              <span style={{ flex: 1 }}>📄 {tUi['Organize Pages'] || (tUi["Organize Pages"] || "Organize Pages")}</span>
-            </summary>
-            <div style={{ padding: '20px 16px', display: 'flex', flexDirection: 'column', gap: 24, background: 'var(--bg-card)' }}>
-              <RotatePdfEditor rotation={rotateDegrees} setRotation={setRotateDegrees} onApply={() => handleStartProcessing({ toolId: 'rotate-pdf' })} tUi={tUi} isProcessing={isProcessing} />
-              <div style={{ height: 1, background: 'var(--border-color)', margin: '0 -16px' }} />
-              <SplitPdfEditor splitRange={splitRange} setSplitRange={setSplitRange} onApply={() => handleStartProcessing({ toolId: 'split-pdf' })} tUi={tUi} isProcessing={isProcessing} />
-              <div style={{ height: 1, background: 'var(--border-color)', margin: '0 -16px' }} />
-              {cropConfig && setCropConfig && (
-                <CropPdfEditor cropConfig={cropConfig} setCropConfig={setCropConfig} onApply={() => handleStartProcessing({ toolId: 'crop-pdf' })} tUi={tUi} isProcessing={isProcessing} />
-              )}
-              <div style={{ height: 1, background: 'var(--border-color)', margin: '0 -16px' }} />
-              {removeRange !== undefined && setRemoveRange && (
-                <RemovePdfEditor removeRange={removeRange} setRemoveRange={setRemoveRange} onApply={() => handleStartProcessing({ toolId: 'remove-pdf' })} tUi={tUi} isProcessing={isProcessing} />
-              )}
-            </div>
-          </details>
-
-          <details className="glass-panel" style={{ borderRadius: 16, border: '1px solid var(--border-color)', overflow: 'hidden' }}>
-            <summary style={{ padding: '16px 20px', fontWeight: 800, cursor: 'pointer', outline: 'none', background: 'var(--bg-input)', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: 12 }}>
-              <span style={{ flex: 1 }}>🛡️ {tUi['Security & Extras'] || (tUi["Security & Extras"] || "Security & Extras")}</span>
-            </summary>
-            <div style={{ padding: '20px 16px', display: 'flex', flexDirection: 'column', gap: 24, background: 'var(--bg-card)' }}>
-              <WatermarkPdfEditor config={watermarkConfig} setConfig={setWatermarkConfig} onApply={() => handleStartProcessing({ toolId: 'watermark-pdf' })} tUi={tUi} isProcessing={isProcessing} />
-              <div style={{ height: 1, background: 'var(--border-color)', margin: '0 -16px' }} />
-              <PageNumbersPdfEditor config={pageNumberConfig} setConfig={setPageNumberConfig} onApply={() => handleStartProcessing({ toolId: 'page-numbers' })} tUi={tUi} isProcessing={isProcessing} />
-              <div style={{ height: 1, background: 'var(--border-color)', margin: '0 -16px' }} />
-              {pdfPassword !== undefined && setPdfPassword && (
-                <ProtectPdfEditor pdfPassword={pdfPassword} setPdfPassword={setPdfPassword} onApply={() => handleStartProcessing({ toolId: 'protect-pdf' })} tUi={tUi} isProcessing={isProcessing} />
-              )}
-            </div>
-          </details>
-        </div>
+      {canonicalId === 'edit-pdf' && editElements && setEditElements && setSelectedEditId && (
+        <EditPdfEditor
+          elements={editElements} setElements={setEditElements}
+          selectedId={selectedEditId || null} setSelectedId={setSelectedEditId}
+          activePageIndex={activeFileIndex} onApply={() => handleStartProcessing({ toolId: 'edit-pdf' })} tUi={tUi} isProcessing={isProcessing}
+        />
       )}
       {canonicalId === 'extract-images-pdf' && (
         <ExtractImagesEditor onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />

@@ -749,3 +749,52 @@ p {
     transform: rotate(360deg);
   }
 }
+
+/* ==========================================================================
+   PDF STUDIO WORKSPACE (Dedicated Canva/Figma-style PDF Editor)
+   ========================================================================== */
+.pdf-studio-workspace {
+  transition: all 0.2s ease;
+}
+
+@media (max-width: 1024px) {
+  .hide-on-tablet {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  .pdf-studio-workspace {
+    height: auto !important;
+    max-height: none !important;
+    border-radius: 12px !important;
+  }
+
+  .pdf-studio-workspace > header {
+    flex-wrap: wrap;
+    height: auto !important;
+    padding: 10px 12px !important;
+    gap: 8px !important;
+  }
+
+  .pdf-studio-workspace > div {
+    flex-direction: column !important;
+    height: auto !important;
+  }
+
+  .pdf-studio-workspace aside {
+    width: 100% !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-top: 1px solid var(--border-color);
+  }
+
+  .pdf-studio-workspace main {
+    padding: 20px 8px !important;
+    min-height: 480px;
+  }
+}

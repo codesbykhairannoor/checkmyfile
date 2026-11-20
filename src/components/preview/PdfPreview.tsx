@@ -97,7 +97,7 @@ const DraggableSignature = ({ config, onUpdate, t }: { config: any, onUpdate: (x
   );
 };
 
-const DraggableEditElement = ({ 
+export const DraggableEditElement = ({ 
   element, 
   isSelected, 
   onClick, 

@@ -22,6 +22,7 @@ import { authTranslations } from '../i18n/authTranslations';
 
 import { DocumentLivePreview } from '../components/common/DocumentLivePreview';
 import { ToolSidebar } from '../components/tools/ToolSidebar';
+import { PdfStudioWorkspace } from '../components/tools/PdfStudioWorkspace';
 
 interface ToolPageProps {
   tool: ToolDefinition;
@@ -360,7 +361,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
 
         {/* Interactive Document Live Preview & Editor */}
         {files.length > 0 && !isCompleted && (
-          <div style={{ maxWidth: 1440, margin: '0 auto', width: '100%', padding: '24px 24px 0', flex: 1, display: 'flex', flexDirection: 'column' }}>
+          <div style={{ maxWidth: tool.id === 'edit-pdf' ? 1680 : 1440, margin: '0 auto', width: '100%', padding: tool.id === 'edit-pdf' ? '16px 20px 0' : '24px 24px 0', flex: 1, display: 'flex', flexDirection: 'column' }}>
             {/* Batch Processing Quota Banner */}
             {!isPro && (isMultiFileInput ? files.length > 10 : files.length > 1) && (
               <div
@@ -470,93 +471,117 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
               </div>
             )}
             <React.Suspense fallback={<div style={{ minHeight: 400, display: 'flex', justifyContent: 'center', alignItems: 'center' }}><div className="spinner" style={{ width: 40, height: 40, border: '4px solid var(--border-color)', borderTopColor: 'var(--text-accent)', borderRadius: '50%', animation: 'spin 1s linear infinite' }}></div></div>}>
-              <div className="tool-workspace-container" style={{ display: 'flex', width: '100%', gap: 24, justifyContent: 'center', alignItems: 'flex-start', paddingBottom: 64 }}>
-                {/* Left Workspace */}
-                <div
-                  className="tool-workspace-left"
-                  style={{
-                    flex: '1 1 0%',
-                    minWidth: 0,
-                    height: sidebarHeight ? `${Math.max(sidebarHeight, 520)}px` : 'calc(100vh - 120px)',
-                    minHeight: 520,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    paddingRight: 4,
-                    boxSizing: 'border-box',
-                  }}
-                >
-                  <DocumentLivePreview
+              {tool.id === 'edit-pdf' ? (
+                <div style={{ width: '100%', paddingBottom: 48 }}>
+                  <PdfStudioWorkspace
+                    file={files[activeFileIndex] || files[0]}
                     files={files}
-                    currentLang={currentLang}
+                    setFiles={setFiles}
                     activeFileIndex={activeFileIndex}
-                    externalRotate={rotateDegrees}
-                    watermarkConfig={tool.id === 'watermark-pdf' ? watermarkConfig : undefined}
-                    pageNumberConfig={tool.id === 'page-numbers' ? pageNumberConfig : undefined}
-                    splitRange={tool.id === 'split-pdf' ? splitRange : undefined}
-                    compressQuality={['compress-pdf', 'compress-pdf-for-email', 'compress-pdf-to-100kb', 'compress-pdf-without-losing-quality'].includes(tool.id) ? compressQuality : undefined}
-                    removeRange={tool.id === 'remove-pdf' ? removeRange : undefined}
-                    signatureConfig={['sign-pdf', 'sign-pdf-without-registration'].includes(tool.id) ? signatureConfig : undefined}
-                    cropConfig={tool.id === 'crop-pdf' ? cropConfig : undefined}
-                    redactConfig={tool.id === 'redact-pdf' ? redactConfig : undefined}
-                    resizeConfig={tool.id === 'resize-pdf' ? resizeConfig : undefined}
-                    editElements={tool.id === 'edit-pdf' ? editElements : undefined}
+                    setActiveFileIndex={setActiveFileIndex}
+                    currentLang={currentLang}
+                    editElements={editElements}
                     setEditElements={setEditElements}
-                    selectedEditId={tool.id === 'edit-pdf' ? selectedEditId : undefined}
+                    selectedEditId={selectedEditId}
                     setSelectedEditId={setSelectedEditId}
-                    setRedactConfig={setRedactConfig}
-                    onSignatureUpdate={(x, y, pageIndex) => setSignatureConfig(prev => prev ? ({ ...prev, x, y, ...(pageIndex !== undefined ? { pageIndex } : {}) }) : prev)}
+                    isProcessing={isProcessing}
+                    onApply={() => handleStartProcessing({ toolId: 'edit-pdf', editElements })}
+                    onDownload={handleDownload}
+                    downloadBlobUrl={downloadBlobUrl}
+                    downloadFilename={downloadFilename}
+                    isCompleted={isCompleted}
+                    onReset={handleReset}
                   />
                 </div>
-                <ToolSidebar
-                  sidebarRef={rightSidebarRef}
-                  currentLang={currentLang}
-                  tool={tool} files={files} setFiles={setFiles} activeFileIndex={activeFileIndex} setActiveFileIndex={setActiveFileIndex}
-                  isProcessing={isProcessing}
-                  handleStartProcessing={(options) => handleStartProcessing({
-                    splitRange,
-                    rotateDegrees,
-                    pageNumberConfig,
-                    watermarkConfig,
-                    compressQuality,
-                    extractImageFormat,
-                    removeRange,
-                    insertFile,
-                    insertAtIndex,
-                    signatureConfig,
-                    pdfPassword,
-                    cropConfig,
-                    redactConfig,
-                    resizeConfig,
-                    editElements,
-                    ...options
-                  })}
-                  splitRange={splitRange} setSplitRange={setSplitRange}
-                  rotateDegrees={rotateDegrees} setRotateDegrees={setRotateDegrees}
-                  pageNumberConfig={pageNumberConfig} setPageNumberConfig={setPageNumberConfig}
-                  watermarkConfig={watermarkConfig} setWatermarkConfig={setWatermarkConfig}
-                  compressQuality={compressQuality} setCompressQuality={setCompressQuality}
-                  compressPercent={compressPercent} setCompressPercent={setCompressPercent}
-                  compressTargetSizeKB={compressTargetSizeKB} setCompressTargetSizeKB={setCompressTargetSizeKB}
-                  extractImageFormat={extractImageFormat} setExtractImageFormat={setExtractImageFormat}
-                  removeRange={removeRange} setRemoveRange={setRemoveRange}
-                  insertFile={insertFile} setInsertFile={setInsertFile}
-                  insertAtIndex={insertAtIndex} setInsertAtIndex={setInsertAtIndex}
-                  signatureConfig={signatureConfig} setSignatureConfig={setSignatureConfig}
-                  pdfPassword={pdfPassword} setPdfPassword={setPdfPassword}
-                  cropConfig={cropConfig} setCropConfig={setCropConfig}
-                  redactConfig={redactConfig} setRedactConfig={setRedactConfig}
-                  resizeConfig={resizeConfig} setResizeConfig={setResizeConfig}
-                  editElements={editElements} setEditElements={setEditElements}
-                  selectedEditId={selectedEditId} setSelectedEditId={setSelectedEditId}
-                  formatSize={formatSize}
-                  acceptTypes={getAcceptTypes(tool.id)}
-                  allowMultiple={supportsMultipleFiles(tool.id)}
-                  onBatchBlocked={(type) => {
-                    setBatchGateType(type);
-                    setShowBatchGateModal(true);
-                  }}
-                />
-              </div>
+              ) : (
+                <div className="tool-workspace-container" style={{ display: 'flex', width: '100%', gap: 24, justifyContent: 'center', alignItems: 'flex-start', paddingBottom: 64 }}>
+                  {/* Left Workspace */}
+                  <div
+                    className="tool-workspace-left"
+                    style={{
+                      flex: '1 1 0%',
+                      minWidth: 0,
+                      height: sidebarHeight ? `${Math.max(sidebarHeight, 520)}px` : 'calc(100vh - 120px)',
+                      minHeight: 520,
+                      display: 'flex',
+                      flexDirection: 'column',
+                      paddingRight: 4,
+                      boxSizing: 'border-box',
+                    }}
+                  >
+                    <DocumentLivePreview
+                      files={files}
+                      currentLang={currentLang}
+                      activeFileIndex={activeFileIndex}
+                      externalRotate={rotateDegrees}
+                      watermarkConfig={tool.id === 'watermark-pdf' ? watermarkConfig : undefined}
+                      pageNumberConfig={tool.id === 'page-numbers' ? pageNumberConfig : undefined}
+                      splitRange={tool.id === 'split-pdf' ? splitRange : undefined}
+                      compressQuality={['compress-pdf', 'compress-pdf-for-email', 'compress-pdf-to-100kb', 'compress-pdf-without-losing-quality'].includes(tool.id) ? compressQuality : undefined}
+                      removeRange={tool.id === 'remove-pdf' ? removeRange : undefined}
+                      signatureConfig={['sign-pdf', 'sign-pdf-without-registration'].includes(tool.id) ? signatureConfig : undefined}
+                      cropConfig={tool.id === 'crop-pdf' ? cropConfig : undefined}
+                      redactConfig={tool.id === 'redact-pdf' ? redactConfig : undefined}
+                      resizeConfig={tool.id === 'resize-pdf' ? resizeConfig : undefined}
+                      editElements={tool.id === 'edit-pdf' ? editElements : undefined}
+                      setEditElements={setEditElements}
+                      selectedEditId={tool.id === 'edit-pdf' ? selectedEditId : undefined}
+                      setSelectedEditId={setSelectedEditId}
+                      setRedactConfig={setRedactConfig}
+                      onSignatureUpdate={(x, y, pageIndex) => setSignatureConfig(prev => prev ? ({ ...prev, x, y, ...(pageIndex !== undefined ? { pageIndex } : {}) }) : prev)}
+                    />
+                  </div>
+                  <ToolSidebar
+                    sidebarRef={rightSidebarRef}
+                    currentLang={currentLang}
+                    tool={tool} files={files} setFiles={setFiles} activeFileIndex={activeFileIndex} setActiveFileIndex={setActiveFileIndex}
+                    isProcessing={isProcessing}
+                    handleStartProcessing={(options) => handleStartProcessing({
+                      splitRange,
+                      rotateDegrees,
+                      pageNumberConfig,
+                      watermarkConfig,
+                      compressQuality,
+                      extractImageFormat,
+                      removeRange,
+                      insertFile,
+                      insertAtIndex,
+                      signatureConfig,
+                      pdfPassword,
+                      cropConfig,
+                      redactConfig,
+                      resizeConfig,
+                      editElements,
+                      ...options
+                    })}
+                    splitRange={splitRange} setSplitRange={setSplitRange}
+                    rotateDegrees={rotateDegrees} setRotateDegrees={setRotateDegrees}
+                    pageNumberConfig={pageNumberConfig} setPageNumberConfig={setPageNumberConfig}
+                    watermarkConfig={watermarkConfig} setWatermarkConfig={setWatermarkConfig}
+                    compressQuality={compressQuality} setCompressQuality={setCompressQuality}
+                    compressPercent={compressPercent} setCompressPercent={setCompressPercent}
+                    compressTargetSizeKB={compressTargetSizeKB} setCompressTargetSizeKB={setCompressTargetSizeKB}
+                    extractImageFormat={extractImageFormat} setExtractImageFormat={setExtractImageFormat}
+                    removeRange={removeRange} setRemoveRange={setRemoveRange}
+                    insertFile={insertFile} setInsertFile={setInsertFile}
+                    insertAtIndex={insertAtIndex} setInsertAtIndex={setInsertAtIndex}
+                    signatureConfig={signatureConfig} setSignatureConfig={setSignatureConfig}
+                    pdfPassword={pdfPassword} setPdfPassword={setPdfPassword}
+                    cropConfig={cropConfig} setCropConfig={setCropConfig}
+                    redactConfig={redactConfig} setRedactConfig={setRedactConfig}
+                    resizeConfig={resizeConfig} setResizeConfig={setResizeConfig}
+                    editElements={editElements} setEditElements={setEditElements}
+                    selectedEditId={selectedEditId} setSelectedEditId={setSelectedEditId}
+                    formatSize={formatSize}
+                    acceptTypes={getAcceptTypes(tool.id)}
+                    allowMultiple={supportsMultipleFiles(tool.id)}
+                    onBatchBlocked={(type) => {
+                      setBatchGateType(type);
+                      setShowBatchGateModal(true);
+                    }}
+                  />
+                </div>
+              )}
             </React.Suspense>
           </div>
         )}
