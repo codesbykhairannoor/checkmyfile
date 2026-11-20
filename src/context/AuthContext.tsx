@@ -21,7 +21,7 @@ import {
   onAuthStateChanged,
   type User,
 } from 'firebase/auth';
-import { doc, getDoc, setDoc, updateDoc, deleteDoc } from 'firebase/firestore';
+import { doc, getDoc, setDoc, updateDoc, deleteDoc, onSnapshot } from 'firebase/firestore';
 import { auth, db, googleProvider, isFirebaseConfigured } from '../config/firebase';
 import type { UserProfile, AuthContextType } from '../types/auth';
 import { getCurrentMonthKey } from '../utils/batchQuota';
@@ -62,6 +62,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       lastLoginAt: Date.now(),
       monthlyBatchesUsed: 0,
       monthlyBatchResetMonth: monthKey,
+      monthlyCryptoAuditUsed: 0,
+      monthlyCryptoAuditResetMonth: monthKey,
+      monthlyOcrExcelUsed: 0,
+      monthlyOcrExcelResetMonth: monthKey,
     };
 
     if (!db) {
@@ -84,40 +88,52 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           batchMonth = monthKey;
         }
 
+        let cryptoAuditUsed = data.monthlyCryptoAuditUsed || 0;
+        let cryptoMonth = data.monthlyCryptoAuditResetMonth || monthKey;
+        if (cryptoMonth !== monthKey) {
+          cryptoAuditUsed = 0;
+          cryptoMonth = monthKey;
+        }
+
+        let ocrExcelUsed = data.monthlyOcrExcelUsed || 0;
+        let ocrMonth = data.monthlyOcrExcelResetMonth || monthKey;
+        if (ocrMonth !== monthKey) {
+          ocrExcelUsed = 0;
+          ocrMonth = monthKey;
+        }
+
         try {
           localStorage.setItem(`hmf_batch_${firebaseUser.uid}_${monthKey}`, String(batchesUsed));
+          localStorage.setItem(`hmf_crypto_audit_${firebaseUser.uid}_${monthKey}`, String(cryptoAuditUsed));
+          localStorage.setItem(`hmf_ocr_excel_${firebaseUser.uid}_${monthKey}`, String(ocrExcelUsed));
         } catch (_) { }
+
+        const updates: any = {
+          lastLoginAt: Date.now(),
+          displayName: firebaseUser.displayName || data.displayName,
+          photoURL: firebaseUser.photoURL || data.photoURL,
+          monthlyBatchesUsed: isFounder ? 0 : batchesUsed,
+          monthlyBatchResetMonth: batchMonth,
+          monthlyCryptoAuditUsed: isFounder ? 0 : cryptoAuditUsed,
+          monthlyCryptoAuditResetMonth: cryptoMonth,
+          monthlyOcrExcelUsed: isFounder ? 0 : ocrExcelUsed,
+          monthlyOcrExcelResetMonth: ocrMonth,
+        };
 
         if (isFounder) {
           currentPlan = 'pro';
           currentStatus = 'active';
-          await updateDoc(userDocRef, {
-            plan: 'pro',
-            subscriptionStatus: 'active',
-            expiresAt: null,
-            lastLoginAt: Date.now(),
-            monthlyBatchesUsed: 0,
-            monthlyBatchResetMonth: batchMonth,
-          });
+          updates.plan = 'pro';
+          updates.subscriptionStatus = 'active';
+          updates.expiresAt = null;
         } else if (data.plan === 'pro' && data.expiresAt && Date.now() > data.expiresAt) {
           currentPlan = 'free';
           currentStatus = 'inactive';
-          await updateDoc(userDocRef, {
-            plan: 'free',
-            subscriptionStatus: 'inactive',
-            lastLoginAt: Date.now(),
-            monthlyBatchesUsed: batchesUsed,
-            monthlyBatchResetMonth: batchMonth,
-          });
-        } else {
-          await updateDoc(userDocRef, {
-            lastLoginAt: Date.now(),
-            displayName: firebaseUser.displayName || data.displayName,
-            photoURL: firebaseUser.photoURL || data.photoURL,
-            monthlyBatchesUsed: batchesUsed,
-            monthlyBatchResetMonth: batchMonth,
-          });
+          updates.plan = 'free';
+          updates.subscriptionStatus = 'inactive';
         }
+
+        await updateDoc(userDocRef, updates);
 
         return {
           ...data,
@@ -125,8 +141,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           subscriptionStatus: currentStatus,
           expiresAt: isFounder ? null : data.expiresAt,
           lastLoginAt: Date.now(),
-          monthlyBatchesUsed: batchesUsed,
+          monthlyBatchesUsed: isFounder ? 0 : batchesUsed,
           monthlyBatchResetMonth: batchMonth,
+          monthlyCryptoAuditUsed: isFounder ? 0 : cryptoAuditUsed,
+          monthlyCryptoAuditResetMonth: cryptoMonth,
+          monthlyOcrExcelUsed: isFounder ? 0 : ocrExcelUsed,
+          monthlyOcrExcelResetMonth: ocrMonth,
         };
       } else {
         await setDoc(userDocRef, fallbackProfile);
@@ -173,7 +193,14 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         }
       });
 
+    let unsubscribeSnapshot: (() => void) | null = null;
+
     const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
+      if (unsubscribeSnapshot) {
+        unsubscribeSnapshot();
+        unsubscribeSnapshot = null;
+      }
+
       setUser(currentUser);
       if (currentUser) {
         // Only close auth modal if user is verified (e.g. Google sign-in or verified user)
@@ -186,13 +213,63 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         } catch (error) {
           console.error('Error fetching user profile:', error);
         }
+
+        // Live real-time Firestore sync across tabs, devices, and quota operations
+        if (db) {
+          try {
+            const userDocRef = doc(db, 'users', currentUser.uid);
+            unsubscribeSnapshot = onSnapshot(userDocRef, (docSnap) => {
+              if (docSnap.exists()) {
+                const data = docSnap.data() as UserProfile;
+                const monthKey = getCurrentMonthKey();
+                const isFounder = isFounderLifetimeEmail(currentUser.email);
+
+                const batchesUsed = data.monthlyBatchResetMonth === monthKey ? (data.monthlyBatchesUsed || 0) : 0;
+                const cryptoAuditUsed = data.monthlyCryptoAuditResetMonth === monthKey ? (data.monthlyCryptoAuditUsed || 0) : 0;
+                const ocrExcelUsed = data.monthlyOcrExcelResetMonth === monthKey ? (data.monthlyOcrExcelUsed || 0) : 0;
+
+                try {
+                  localStorage.setItem(`hmf_batch_${currentUser.uid}_${monthKey}`, String(batchesUsed));
+                  localStorage.setItem(`hmf_crypto_audit_${currentUser.uid}_${monthKey}`, String(cryptoAuditUsed));
+                  localStorage.setItem(`hmf_ocr_excel_${currentUser.uid}_${monthKey}`, String(ocrExcelUsed));
+                } catch (_) { }
+
+                setProfile((prev) => ({
+                  ...(prev || data),
+                  ...data,
+                  plan: isFounder ? 'pro' : data.plan,
+                  subscriptionStatus: isFounder ? 'active' : data.subscriptionStatus,
+                  monthlyBatchesUsed: isFounder ? 0 : batchesUsed,
+                  monthlyBatchResetMonth: monthKey,
+                  monthlyCryptoAuditUsed: isFounder ? 0 : cryptoAuditUsed,
+                  monthlyCryptoAuditResetMonth: monthKey,
+                  monthlyOcrExcelUsed: isFounder ? 0 : ocrExcelUsed,
+                  monthlyOcrExcelResetMonth: monthKey,
+                }));
+
+                window.dispatchEvent(new Event('batch-quota-updated'));
+                window.dispatchEvent(new Event('crypto-audit-quota-updated'));
+                window.dispatchEvent(new Event('ocr-excel-quota-updated'));
+              }
+            }, (err) => {
+              console.warn('Firestore onSnapshot listener error:', err);
+            });
+          } catch (e) {
+            console.warn('Failed to attach onSnapshot:', e);
+          }
+        }
       } else {
         setProfile(null);
       }
       setLoading(false);
     });
 
-    return () => unsubscribe();
+    return () => {
+      unsubscribe();
+      if (unsubscribeSnapshot) {
+        unsubscribeSnapshot();
+      }
+    };
   }, [fetchOrCreateProfile]);
 
   const signInWithGoogle = async () => {
@@ -416,6 +493,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       await firebaseSignOut(auth);
       setUser(null);
       setProfile(null);
+      window.dispatchEvent(new Event('batch-quota-updated'));
+      window.dispatchEvent(new Event('crypto-audit-quota-updated'));
+      window.dispatchEvent(new Event('ocr-excel-quota-updated'));
     } catch (error) {
       console.error('Sign Out Error:', error);
     }
@@ -463,7 +543,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         const keysToRemove: string[] = [];
         for (let i = 0; i < localStorage.length; i++) {
           const k = localStorage.key(i);
-          if (k && (k.includes(uid) || k.startsWith('hmf_batch_') || k.startsWith('hmf_crypto_audit_'))) {
+          if (k && (k.includes(uid) || k.startsWith('hmf_batch_') || k.startsWith('hmf_crypto_audit_') || k.startsWith('hmf_ocr_excel_'))) {
             keysToRemove.push(k);
           }
         }

@@ -89,7 +89,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
   onBatchBlocked,
   sidebarRef,
 }) => {
-  const { user, isPro } = useAuth();
+  const { user, profile, isPro } = useAuth();
   const fileInputRef = React.useRef<HTMLInputElement>(null);
 
   const tUi = editorTranslations[currentLang] || editorTranslations['en'] || {};
@@ -104,7 +104,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
           onBatchBlocked?.('auth');
           return;
         }
-        const quota = checkBatchQuota(user, isPro);
+        const quota = checkBatchQuota(user, isPro, profile);
         if (!quota.allowed) {
           onBatchBlocked?.('upgrade');
           return;
@@ -125,7 +125,7 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
             onBatchBlocked?.('auth');
             return;
           }
-          const quota = checkBatchQuota(user, isPro);
+          const quota = checkBatchQuota(user, isPro, profile);
           if (!quota.allowed) {
             onBatchBlocked?.('upgrade');
             return;
@@ -384,11 +384,16 @@ export const ToolSidebar: React.FC<ToolSidebarProps> = ({
         />
       )}
       {canonicalId === 'compare-pdf' && (
-        <ComparePdfEditor onProcess={(options) => handleStartProcessing(options)} tUi={tUi} isProcessing={isProcessing} />
+        <ComparePdfEditor
+          onProcess={(options) => handleStartProcessing(options)}
+          onApply={() => handleStartProcessing()}
+          tUi={tUi}
+          isProcessing={isProcessing}
+        />
       )}
 
       {['pdf-to-word', 'word-to-pdf', 'excel-to-pdf', 'image-to-pdf', 'ppt-to-pdf', 'pdf-to-ppt', 'csv-to-pdf', 'txt-to-pdf', 'csv-to-excel', 'excel-to-csv', 'ocr-pdf'].includes(canonicalId) && (
-        <GenericConvertEditor toolId={canonicalId} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} />
+        <GenericConvertEditor toolId={canonicalId} onApply={handleStartProcessing} tUi={tUi} isProcessing={isProcessing} currentLang={currentLang} />
       )}
     </div>
   );

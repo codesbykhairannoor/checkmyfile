@@ -13,6 +13,7 @@ import { ProGateModal } from '../components/common/ProGateModal';
 import { BatchGateModal, type BatchGateType } from '../components/common/BatchGateModal';
 import { checkBatchQuota, recordBatchUsage } from '../utils/batchQuota';
 import { checkCryptoAuditQuota, recordCryptoAuditUsage } from '../utils/cryptoAuditQuota';
+import { checkOcrExcelQuota, recordOcrExcelUsage } from '../utils/ocrExcelQuota';
 import { useWorkspaceFiles } from '../hooks/useWorkspaceFiles';
 import { useDocumentProcessor } from '../hooks/useDocumentProcessor';
 import { smartHighlight } from '../utils/textFormatting';
@@ -61,23 +62,23 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
   // Batch Mode Quota & Gate Modal States (3 free batches/mo for logged-in free users)
   const [showBatchGateModal, setShowBatchGateModal] = useState<boolean>(false);
   const [batchGateType, setBatchGateType] = useState<BatchGateType>('auth');
-  const [batchQuota, setBatchQuota] = useState(() => checkBatchQuota(user, isPro));
+  const [batchQuota, setBatchQuota] = useState(() => checkBatchQuota(user, isPro, profile));
   const [pendingBatchFiles, setPendingBatchFiles] = useState<File[] | null>(null);
 
   React.useEffect(() => {
     const updateQuota = () => {
-      setBatchQuota(checkBatchQuota(user, isPro));
+      setBatchQuota(checkBatchQuota(user, isPro, profile));
     };
     updateQuota();
     window.addEventListener('batch-quota-updated', updateQuota);
     return () => window.removeEventListener('batch-quota-updated', updateQuota);
-  }, [user, isPro]);
+  }, [user, isPro, profile]);
 
   React.useEffect(() => {
     if (user && pendingBatchFiles) {
       const isBatchMode = isMultiFileInput ? pendingBatchFiles.length > 10 : pendingBatchFiles.length > 1;
       if (isBatchMode) {
-        const quota = checkBatchQuota(user, isPro);
+        const quota = checkBatchQuota(user, isPro, profile);
         if (quota.allowed) {
           setFiles(pendingBatchFiles);
           setPendingBatchFiles(null);
@@ -219,7 +220,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
         setShowBatchGateModal(true);
         return;
       }
-      const quota = checkBatchQuota(user, isPro);
+      const quota = checkBatchQuota(user, isPro, profile);
       if (!quota.allowed) {
         if (quota.reason === 'unverified_email') {
           openAuthModal();
@@ -242,7 +243,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
         openAuthModal();
         return;
       }
-      const auditQuota = checkCryptoAuditQuota(user, isPro);
+      const auditQuota = checkCryptoAuditQuota(user, isPro, profile);
       if (!auditQuota.allowed) {
         if (auditQuota.reason === 'unverified_email') {
           openAuthModal();
@@ -260,6 +261,33 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
       }
       // Record 1 crypto audit usage for free user
       recordCryptoAuditUsage(user.uid);
+    }
+
+    // OCR to Excel gating (PRO or Free Trial 3x/month for authenticated accounts, Guest blocked)
+    const isOcrToExcel = (tool.id === 'ocr-pdf' || options?.toolId === 'ocr-pdf') && (options?.extractImageFormat === 'xlsx');
+    if (isOcrToExcel && !isPro) {
+      if (!user) {
+        openAuthModal();
+        return;
+      }
+      const ocrQuota = checkOcrExcelQuota(user, isPro, profile);
+      if (!ocrQuota.allowed) {
+        if (ocrQuota.reason === 'unverified_email') {
+          openAuthModal();
+          return;
+        }
+        setProGateReason({
+          featureName: 'AI OCR to Excel Table Extraction',
+          title: currentLang === 'id' ? 'Buka Fitur OCR ke Excel (PRO)' : 'Unlock OCR to Excel (PRO)',
+          desc: currentLang === 'id'
+            ? 'Batas uji coba gratis 3x OCR ke Excel bulan ini telah tercapai. Upgrade ke PRO untuk ekstraksi tabel tak terbatas.'
+            : 'Your monthly 3 free OCR to Excel limit has been reached. Upgrade to PRO for unlimited table extraction.',
+        });
+        setShowProGateModal(true);
+        return;
+      }
+      // Record 1 OCR Excel usage for free user
+      recordOcrExcelUsage(user.uid);
     }
 
     startProcessing({
@@ -571,7 +599,7 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                       resetProcessor();
                       return;
                     }
-                    const quota = checkBatchQuota(user, isPro);
+                    const quota = checkBatchQuota(user, isPro, profile);
                     if (!quota.allowed) {
                       if (quota.reason === 'unverified_email') {
                         openAuthModal();

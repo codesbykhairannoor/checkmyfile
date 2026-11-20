@@ -24,52 +24,67 @@ const LazyPdfPage = ({
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const renderTaskRef = useRef<any>(null);
   const [aspectRatio, setAspectRatio] = useState<number>(defaultRatio);
-  
+
   useEffect(() => {
+    // Dynamic two-way observer: unloads canvas memory when scrolled far away (>600px)
+    // Prevents "Out of Memory" crashes on documents with many pages
     const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        setIsVisible(true);
-        observer.disconnect(); 
-      }
-    }, { rootMargin: '400px' });
+      setIsVisible(entry.isIntersecting);
+    }, { rootMargin: '600px 0px 600px 0px' });
+
     if (containerRef.current) observer.observe(containerRef.current);
     return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
-    if (!isVisible || !pdfDoc) return;
-    
+    if (!isVisible) {
+      if (renderTaskRef.current) {
+        try { renderTaskRef.current.cancel(); } catch (_) {}
+        renderTaskRef.current = null;
+      }
+      // Zero out canvas bitmap when offscreen to immediately free GPU memory
+      if (canvasRef.current) {
+        canvasRef.current.width = 1;
+        canvasRef.current.height = 1;
+        const ctx = canvasRef.current.getContext('2d');
+        ctx?.clearRect(0, 0, 1, 1);
+      }
+      return;
+    }
+
+    if (!pdfDoc) return;
+
     let isCancelled = false;
-    
     let activePage: any = null;
+
     const renderPage = async () => {
       try {
         const page = await pdfDoc.getPage(pageNum);
         if (isCancelled) return;
         activePage = page;
-        
+
         const baseRotate = page.rotate || 0;
         const finalRotate = ((baseRotate + totalRotate) % 360 + 360) % 360;
-        
+
         const baseViewport = page.getViewport({ scale: 1.0, rotation: finalRotate });
         setAspectRatio(baseViewport.width / baseViewport.height);
-        
+
         const renderScale = (wrapperWidth / baseViewport.width) * zoomScale;
         const viewport = page.getViewport({ scale: renderScale, rotation: finalRotate });
-        
+
         const canvas = canvasRef.current;
         if (canvas) {
-          const context = canvas.getContext('2d');
+          const context = canvas.getContext('2d', { willReadFrequently: false });
           if (context) {
             context.setTransform(1, 0, 0, 1, 0, 0);
-            
-            // Bump pixel ratio to 3 for ultra-HD crisp text (safe here due to lazy loading)
-            const pixelRatio = Math.max(window.devicePixelRatio || 1, 3);
+
+            // Cap pixel ratio to 2 for crisp Retina text without unbounded GPU memory consumption
+            const pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
             canvas.width = Math.floor(viewport.width * pixelRatio);
             canvas.height = Math.floor(viewport.height * pixelRatio);
             context.scale(pixelRatio, pixelRatio);
             context.clearRect(0, 0, viewport.width, viewport.height);
-            
+
             const renderTask = page.render({ canvasContext: context, viewport, canvas } as any);
             renderTaskRef.current = renderTask;
             await renderTask.promise;
@@ -81,18 +96,23 @@ const LazyPdfPage = ({
         }
       }
     };
+
     renderPage();
+
     return () => {
       isCancelled = true;
-      if (renderTaskRef.current) renderTaskRef.current.cancel();
-      if (activePage) {
-        try { activePage.cleanup(); } catch (e) {}
+      if (renderTaskRef.current) {
+        try { renderTaskRef.current.cancel(); } catch (_) {}
+        renderTaskRef.current = null;
       }
-    }
+      if (activePage) {
+        try { activePage.cleanup(); } catch (_) {}
+      }
+    };
   }, [isVisible, pdfDoc, pageNum, zoomScale, totalRotate, wrapperWidth]);
 
   return (
-    <div 
+    <div
       ref={containerRef}
       id={id}
       style={{

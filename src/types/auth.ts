@@ -21,6 +21,10 @@ export interface UserProfile {
   lastLoginAt: number;
   monthlyBatchesUsed?: number;
   monthlyBatchResetMonth?: string;
+  monthlyCryptoAuditUsed?: number;
+  monthlyCryptoAuditResetMonth?: string;
+  monthlyOcrExcelUsed?: number;
+  monthlyOcrExcelResetMonth?: string;
 }
 
 export interface AuthContextType {

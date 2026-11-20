@@ -11,7 +11,8 @@ export async function grayscalePdf(
   const numPages = pdf.numPages;
   const newPdfDoc = await PDFDocument.create();
 
-  for (let pageNum = 1; pageNum <= numPages; pageNum++) {
+  try {
+    for (let pageNum = 1; pageNum <= numPages; pageNum++) {
     const page = await pdf.getPage(pageNum);
     // Use 2x scale for decent print quality without crashing browser memory
     const viewport = page.getViewport({ scale: 2.0 });
@@ -66,8 +67,16 @@ export async function grayscalePdf(
     if (onProgress) {
       onProgress(Math.round((pageNum / numPages) * 100));
     }
+
+    // Immediately release page and canvas bitmap memory
+    canvas.width = 0;
+    canvas.height = 0;
+    try { page.cleanup?.(); } catch (_) {}
   }
 
   const pdfBytes = await newPdfDoc.save();
   return new Blob([pdfBytes as any], { type: 'application/pdf' });
+  } finally {
+    try { await pdf.destroy(); } catch (_) {}
+  }
 }

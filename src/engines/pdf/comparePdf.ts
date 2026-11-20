@@ -28,7 +28,8 @@ export const comparePdf = async (
   let totalDiffPixels = 0;
   let totalPixels = 0;
 
-  for (let i = 1; i <= maxPages; i++) {
+  try {
+    for (let i = 1; i <= maxPages; i++) {
     let page1, page2;
     try { page1 = await pdfDoc1.getPage(i); } catch (e) {}
     try { page2 = await pdfDoc2.getPage(i); } catch (e) {}
@@ -358,6 +359,14 @@ export const comparePdf = async (
     if (onProgress) {
       onProgress((i / maxPages) * 100);
     }
+
+    // Immediately release page objects and canvas bitmaps from memory
+    canvas1.width = 0; canvas1.height = 0;
+    canvas2.width = 0; canvas2.height = 0;
+    diffCanvas1.width = 0; diffCanvas1.height = 0;
+    diffCanvas2.width = 0; diffCanvas2.height = 0;
+    try { page1?.cleanup?.(); } catch (_) {}
+    try { page2?.cleanup?.(); } catch (_) {}
   }
 
   const accuracy = totalPixels > 0 ? Math.max(0, 100 - (totalDiffPixels / totalPixels) * 100) : 100;
@@ -366,4 +375,8 @@ export const comparePdf = async (
     originalBytes: await newPdf1.save(),
     accuracy 
   };
+  } finally {
+    try { await pdfDoc1.destroy(); } catch (_) {}
+    try { await pdfDoc2.destroy(); } catch (_) {}
+  }
 };

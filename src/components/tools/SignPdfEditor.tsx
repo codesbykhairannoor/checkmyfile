@@ -20,16 +20,16 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
   onApply,
   isProcessing
 }) => {
-  const { user, isPro, openAuthModal } = useAuth();
-  const [quota, setQuota] = useState(() => checkCryptoAuditQuota(user, isPro));
+  const { user, profile, isPro, openAuthModal } = useAuth();
+  const [quota, setQuota] = useState(() => checkCryptoAuditQuota(user, isPro, profile));
   const [showProGate, setShowProGate] = useState(false);
 
   useEffect(() => {
-    const handleUpdate = () => setQuota(checkCryptoAuditQuota(user, isPro));
+    const handleUpdate = () => setQuota(checkCryptoAuditQuota(user, isPro, profile));
     window.addEventListener('crypto-audit-quota-updated', handleUpdate);
-    setQuota(checkCryptoAuditQuota(user, isPro));
+    setQuota(checkCryptoAuditQuota(user, isPro, profile));
     return () => window.removeEventListener('crypto-audit-quota-updated', handleUpdate);
-  }, [user, isPro]);
+  }, [user, isPro, profile]);
 
   // Sync initial audit state with auth/quota status
   useEffect(() => {
@@ -61,7 +61,7 @@ export const SignPdfEditor: React.FC<SignPdfEditorProps> = ({
       return;
     }
 
-    const currentQuota = checkCryptoAuditQuota(user, isPro);
+    const currentQuota = checkCryptoAuditQuota(user, isPro, profile);
     if (!currentQuota.allowed) {
       setShowProGate(true);
       return;

@@ -19,7 +19,8 @@ export const redactPdf = async (
 
   const scale = 2.0;
 
-  for (let i = 1; i <= numPages; i++) {
+  try {
+    for (let i = 1; i <= numPages; i++) {
     const page = await pdfDoc.getPage(i);
     const viewport = page.getViewport({ scale });
 
@@ -104,6 +105,14 @@ export const redactPdf = async (
     if (onProgress) {
       onProgress((i / numPages) * 90);
     }
+
+    // Immediately release page and canvas bitmap memory
+    canvas.width = 0;
+    canvas.height = 0;
+    try { page.cleanup?.(); } catch (_) {}
+  }
+  } finally {
+    try { await pdfDoc.destroy(); } catch (_) {}
   }
 
   // Purge all metadata from newPdf

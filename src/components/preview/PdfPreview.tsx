@@ -525,7 +525,7 @@ export const PdfPreview: React.FC<PdfPreviewProps> = ({
                   border: '2px dashed var(--brand-primary)',
                 }}>
                   <div style={{ position: 'absolute', top: -24, left: 0, background: 'var(--brand-primary)', color: 'white', padding: '2px 8px', fontSize: '0.75rem', borderRadius: 4, fontWeight: 700 }}>
-                    Area Pemotongan
+                    Crop Area
                   </div>
                 </div>
               </div>
@@ -551,13 +551,13 @@ export const PdfPreview: React.FC<PdfPreviewProps> = ({
               if (!isSelected) {
                 return (
                   <div style={{ position: 'absolute', inset: 0, background: 'rgba(255,255,255,0.6)', zIndex: 30, display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: 4 }}>
-                    <span style={{ background: '#ef4444', color: '#fff', padding: '8px 16px', borderRadius: 20, fontWeight: 700, fontSize: '0.85rem' }}>{t.previewSkipped || "DILEWATI"}</span>
+                    <span style={{ background: '#ef4444', color: '#fff', padding: '8px 16px', borderRadius: 20, fontWeight: 700, fontSize: '0.85rem' }}>{t.previewSkipped || "SKIPPED"}</span>
                   </div>
                 );
               }
               return (
                 <div style={{ position: 'absolute', inset: 0, border: '4px solid #10b981', zIndex: 30, pointerEvents: 'none', borderRadius: 4 }}>
-                  <span style={{ position: 'absolute', top: 16, right: 16, background: '#10b981', color: '#fff', padding: '4px 12px', borderRadius: 12, fontWeight: 700, fontSize: '0.75rem' }}>✓ DIEKSTRAK</span>
+                  <span style={{ position: 'absolute', top: 16, right: 16, background: '#10b981', color: '#fff', padding: '4px 12px', borderRadius: 12, fontWeight: 700, fontSize: '0.75rem' }}>✓ EXTRACTED</span>
                 </div>
               );
             })()}
@@ -582,7 +582,7 @@ export const PdfPreview: React.FC<PdfPreviewProps> = ({
               if (isRemoved) {
                 return (
                   <div style={{ position: 'absolute', inset: 0, background: 'rgba(239, 68, 68, 0.15)', border: '4px solid #ef4444', zIndex: 30, display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: 4 }}>
-                    <span style={{ background: '#ef4444', color: '#fff', padding: '8px 16px', borderRadius: 20, fontWeight: 700, fontSize: '0.85rem' }}>X DIHAPUS</span>
+                    <span style={{ background: '#ef4444', color: '#fff', padding: '8px 16px', borderRadius: 20, fontWeight: 700, fontSize: '0.85rem' }}>✕ REMOVED</span>
                   </div>
                 );
               }

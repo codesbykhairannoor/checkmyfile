@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { LayoutList, Download, Settings2, FileUp, Info } from 'lucide-react';
+import { LayoutList, Download, Settings2, FileUp, X } from 'lucide-react';
 
 interface OrganizePdfEditorProps {
   tUi?: Record<string, string>;
@@ -26,7 +26,7 @@ export const OrganizePdfEditor: React.FC<OrganizePdfEditorProps> = ({
   const fileRef = useRef<HTMLInputElement>(null);
 
   return (
-    <div className="glass-panel" style={{ padding: 24, display: 'flex', flexDirection: 'column', gap: 24, minWidth: 280 }}>
+    <div className="glass-panel" style={{ padding: 24, display: 'flex', flexDirection: 'column', gap: 24, minWidth: 280, maxWidth: '100%', boxSizing: 'border-box' }}>
       <div>
         <h4 style={{ fontWeight: 800, fontSize: '1.1rem', color: 'var(--text-main)', marginBottom: 6, display: 'flex', alignItems: 'center', gap: 8 }}>
           <LayoutList size={18} className="text-brand-primary" color="#8b5cf6" />
@@ -37,8 +37,8 @@ export const OrganizePdfEditor: React.FC<OrganizePdfEditorProps> = ({
         </p>
       </div>
 
-      <div>
-        <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'block', marginBottom: 8 }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 8, maxWidth: '100%' }}>
+        <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-accent)', display: 'block', marginBottom: 2 }}>
           {t("insert_file_label", "Insert Document")}
         </label>
         
@@ -49,17 +49,86 @@ export const OrganizePdfEditor: React.FC<OrganizePdfEditorProps> = ({
           ref={fileRef}
           onChange={(e) => {
             if (e.target.files?.[0]) setInsertFile(e.target.files[0]);
+            e.target.value = '';
           }}
         />
         
-        <button 
-          onClick={() => fileRef.current?.click()}
-          className="btn-secondary"
-          style={{ width: '100%', padding: '12px', justifyContent: 'center', background: 'var(--bg-input)' }}
-        >
-          <FileUp size={16} />
-          <span>{insertFile ? insertFile.name : t("select_second_pdf", "Select PDF File to Insert...")}</span>
-        </button>
+        {insertFile ? (
+          <div style={{
+            background: 'var(--bg-input)',
+            padding: '12px 14px',
+            borderRadius: 12,
+            border: '1px solid var(--border-color)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            gap: 10,
+            maxWidth: '100%',
+            overflow: 'hidden',
+            boxSizing: 'border-box'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10, minWidth: 0, flex: 1, overflow: 'hidden' }}>
+              <FileUp size={20} className="text-brand-primary" style={{ flexShrink: 0, color: '#8b5cf6' }} />
+              <div style={{ minWidth: 0, flex: 1, overflow: 'hidden' }}>
+                <div style={{
+                  fontSize: '0.85rem',
+                  fontWeight: 700,
+                  whiteSpace: 'nowrap',
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis',
+                  maxWidth: '100%'
+                }} title={insertFile.name}>
+                  {insertFile.name}
+                </div>
+                <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
+                  {(insertFile.size / 1024).toFixed(1)} KB
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              onClick={() => setInsertFile(null)}
+              style={{
+                background: 'none',
+                border: 'none',
+                cursor: 'pointer',
+                color: 'var(--text-muted)',
+                padding: 4,
+                display: 'flex',
+                alignItems: 'center',
+                flexShrink: 0
+              }}
+              title="Remove file"
+            >
+              <X size={16} />
+            </button>
+          </div>
+        ) : (
+          <button 
+            type="button"
+            onClick={() => fileRef.current?.click()}
+            className="btn-secondary"
+            style={{
+              width: '100%',
+              maxWidth: '100%',
+              padding: '12px',
+              justifyContent: 'center',
+              background: 'var(--bg-input)',
+              overflow: 'hidden',
+              boxSizing: 'border-box'
+            }}
+          >
+            <FileUp size={16} style={{ flexShrink: 0 }} />
+            <span style={{
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+              whiteSpace: 'nowrap',
+              minWidth: 0
+            }}>
+              {t("select_second_pdf", "Select PDF File to Insert...")}
+            </span>
+          </button>
+        )}
       </div>
 
       <div>

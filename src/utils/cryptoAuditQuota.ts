@@ -1,8 +1,10 @@
 // src/utils/cryptoAuditQuota.ts
 // Handles 3-free-crypto-audit-certificates/month limit for authenticated free users and gates PRO access.
+// Firebase Firestore is the authoritative source of truth.
 
-import { doc, updateDoc } from 'firebase/firestore';
+import { doc, getDoc, updateDoc } from 'firebase/firestore';
 import { db } from '../config/firebase';
+import type { UserProfile } from '../types/auth';
 
 export const MAX_FREE_CRYPTO_AUDIT_PER_MONTH = 3;
 
@@ -21,9 +23,19 @@ export const getCurrentMonthKey = (): string => {
   return `${year}-${month}`;
 };
 
-export const getCryptoAuditUsage = (uid: string): number => {
-  if (typeof window === 'undefined' || !uid) return 0;
+export const getCryptoAuditUsage = (uid: string, profile?: UserProfile | null): number => {
   const monthKey = getCurrentMonthKey();
+
+  // 1. Authoritative Firestore profile check
+  if (profile && profile.uid === uid) {
+    if (profile.monthlyCryptoAuditResetMonth === monthKey) {
+      return profile.monthlyCryptoAuditUsed || 0;
+    }
+    return 0;
+  }
+
+  // 2. Fallback to cached value in localStorage
+  if (typeof window === 'undefined' || !uid) return 0;
   const raw = localStorage.getItem(`hmf_crypto_audit_${uid}_${monthKey}`);
   if (!raw) return 0;
   const count = parseInt(raw, 10);
@@ -33,30 +45,39 @@ export const getCryptoAuditUsage = (uid: string): number => {
 export const recordCryptoAuditUsage = async (uid: string): Promise<number> => {
   if (typeof window === 'undefined' || !uid) return 0;
   const monthKey = getCurrentMonthKey();
-  const current = getCryptoAuditUsage(uid);
-  const next = current + 1;
+
+  let next = getCryptoAuditUsage(uid) + 1;
+
+  // Direct authoritative update to Firestore
+  if (db) {
+    try {
+      const userRef = doc(db, 'users', uid);
+      const snap = await getDoc(userRef);
+      if (snap.exists()) {
+        const data = snap.data();
+        const firestoreMonth = data.monthlyCryptoAuditResetMonth;
+        const firestoreUsed = firestoreMonth === monthKey ? (data.monthlyCryptoAuditUsed || 0) : 0;
+        next = firestoreUsed + 1;
+        await updateDoc(userRef, {
+          monthlyCryptoAuditUsed: next,
+          monthlyCryptoAuditResetMonth: monthKey,
+        });
+      }
+    } catch (err) {
+      console.warn('Firestore crypto audit quota sync warning:', err);
+    }
+  }
+
   localStorage.setItem(`hmf_crypto_audit_${uid}_${monthKey}`, String(next));
 
   try {
     window.dispatchEvent(new Event('crypto-audit-quota-updated'));
   } catch { }
 
-  if (db) {
-    try {
-      const userRef = doc(db, 'users', uid);
-      await updateDoc(userRef, {
-        monthlyCryptoAuditUsed: next,
-        monthlyCryptoAuditResetMonth: monthKey,
-      });
-    } catch (err) {
-      console.warn('Firestore crypto audit quota sync warning:', err);
-    }
-  }
-
   return next;
 };
 
-export const checkCryptoAuditQuota = (user: any | null, isPro: boolean): CryptoAuditQuotaStatus => {
+export const checkCryptoAuditQuota = (user: any | null, isPro: boolean, profile?: UserProfile | null): CryptoAuditQuotaStatus => {
   const isFounder = Boolean(user?.email && user.email.toLowerCase().trim() === 'erstaunenn@gmail.com');
   if (isPro || isFounder) {
     return {
@@ -89,7 +110,7 @@ export const checkCryptoAuditQuota = (user: any | null, isPro: boolean): CryptoA
     };
   }
 
-  const used = getCryptoAuditUsage(user.uid);
+  const used = getCryptoAuditUsage(user.uid, profile);
   const max = MAX_FREE_CRYPTO_AUDIT_PER_MONTH;
   const remaining = Math.max(0, max - used);
   const allowed = used < max;
