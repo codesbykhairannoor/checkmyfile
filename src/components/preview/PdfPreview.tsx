@@ -1,6 +1,7 @@
 import { getUiTranslations } from '../../i18n/translations';
 import React, { useState, useEffect, useRef } from 'react';
 import LazyPdfPage from './LazyPdfPage';
+import { Trash2, X } from 'lucide-react';
 
 const toRoman = (num: number): string => {
   if (num < 1) return '';
@@ -100,34 +101,54 @@ const DraggableEditElement = ({
   element, 
   isSelected, 
   onClick, 
-  onUpdate 
+  onUpdate,
+  onDelete
 }: { 
   element: any; 
   isSelected: boolean;
   onClick: () => void;
   onUpdate: (updates: Partial<any>) => void;
+  onDelete?: () => void;
 }) => {
   const [isDragging, setIsDragging] = useState(false);
+  const [isResizing, setIsResizing] = useState(false);
+  const [isInlineEditing, setIsInlineEditing] = useState(false);
   const startPos = useRef({ x: 0, y: 0 });
-  const startConfig = useRef({ x: 0, y: 0 });
+  const startConfig = useRef({ x: 0, y: 0, w: 0, h: 0 });
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      if (!isDragging || !containerRef.current?.parentElement) return;
+      if (!containerRef.current?.parentElement) return;
       const parent = containerRef.current.parentElement;
       const dx = e.clientX - startPos.current.x;
       const dy = e.clientY - startPos.current.y;
       
-      const newX = startConfig.current.x + (dx / parent.clientWidth) * 100;
-      const newY = startConfig.current.y + (dy / parent.clientHeight) * 100;
-      
-      onUpdate({ x: Math.max(0, Math.min(100, newX)), y: Math.max(0, Math.min(100, newY)) });
+      if (isDragging) {
+        const curW = element.width || 20;
+        const curH = element.height || 10;
+        const newX = startConfig.current.x + (dx / parent.clientWidth) * 100;
+        const newY = startConfig.current.y + (dy / parent.clientHeight) * 100;
+        onUpdate({ 
+          x: Math.max(0, Math.min(100 - (element.type === 'text' && !element.width ? 10 : curW), newX)), 
+          y: Math.max(0, Math.min(100 - (element.type === 'text' && !element.height ? 5 : curH), newY)) 
+        });
+      } else if (isResizing) {
+        const newW = startConfig.current.w + (dx / parent.clientWidth) * 100;
+        const newH = startConfig.current.h + (dy / parent.clientHeight) * 100;
+        onUpdate({ 
+          width: Math.max(4, Math.min(100 - element.x, newW)),
+          height: Math.max(2, Math.min(100 - element.y, newH))
+        });
+      }
     };
 
-    const handleMouseUp = () => setIsDragging(false);
+    const handleMouseUp = () => {
+      setIsDragging(false);
+      setIsResizing(false);
+    };
 
-    if (isDragging) {
+    if (isDragging || isResizing) {
       window.addEventListener('mousemove', handleMouseMove);
       window.addEventListener('mouseup', handleMouseUp);
     }
@@ -135,50 +156,316 @@ const DraggableEditElement = ({
       window.removeEventListener('mousemove', handleMouseMove);
       window.removeEventListener('mouseup', handleMouseUp);
     };
-  }, [isDragging, onUpdate]);
+  }, [isDragging, isResizing, element, onUpdate]);
+
+  // Keyboard shortcut to delete element if selected
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (!isSelected || isInlineEditing) return;
+      if (e.key === 'Delete' || e.key === 'Backspace') {
+        const targetTag = (e.target as HTMLElement)?.tagName?.toLowerCase();
+        if (targetTag === 'input' || targetTag === 'textarea') return;
+        e.preventDefault();
+        onDelete?.();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isSelected, isInlineEditing, onDelete]);
+
+  const defaultWidth = element.type === 'text' && !element.width ? 'auto' : `${element.width || 20}%`;
+  const defaultHeight = element.type === 'text' && !element.height ? 'auto' : `${element.height || 10}%`;
 
   return (
     <div
       ref={containerRef}
       onMouseDown={(e) => {
+        if ((e.target as HTMLElement).closest('.edit-action-handle') || isInlineEditing) return;
         setIsDragging(true);
         startPos.current = { x: e.clientX, y: e.clientY };
-        startConfig.current = { x: element.x, y: element.y };
+        startConfig.current = { 
+          x: element.x, 
+          y: element.y, 
+          w: element.width || 20, 
+          h: element.height || 10 
+        };
         onClick();
         e.stopPropagation();
         e.preventDefault();
+      }}
+      onDoubleClick={(e) => {
+        if (element.type === 'text') {
+          setIsInlineEditing(true);
+          e.stopPropagation();
+        }
       }}
       style={{
         position: 'absolute',
         left: `${element.x}%`,
         top: `${element.y}%`,
-        width: element.type === 'image' ? `${element.width}%` : 'auto',
-        height: element.type === 'image' ? `${element.height}%` : 'auto',
-        zIndex: 50,
-        border: isSelected ? '2px dashed #3b82f6' : '1px solid transparent',
-        background: isSelected ? 'rgba(59, 130, 246, 0.1)' : 'transparent',
-        display: 'flex', 
-        alignItems: element.type === 'image' ? 'center' : 'flex-start', 
-        justifyContent: element.type === 'image' ? 'center' : 'flex-start',
-        cursor: isDragging ? 'grabbing' : 'grab',
-        padding: element.type === 'text' ? '4px 8px' : 0,
+        width: defaultWidth,
+        height: defaultHeight,
+        zIndex: isSelected ? 60 : 45,
+        border: isSelected ? '2px solid #3b82f6' : '1px solid transparent',
+        boxShadow: isSelected ? '0 0 0 1px rgba(255,255,255,0.85), 0 4px 14px rgba(59,130,246,0.3)' : 'none',
+        borderRadius: element.type === 'whiteout' ? 0 : 4,
+        cursor: isDragging ? 'grabbing' : (isInlineEditing ? 'text' : 'grab'),
+        userSelect: isInlineEditing ? 'auto' : 'none',
+        transform: element.rotation ? `rotate(${element.rotation}deg)` : undefined,
+        transformOrigin: 'center center',
       }}>
       
+      {/* ── 1. TEXT ELEMENT ── */}
       {element.type === 'text' && (
         <div style={{
-          color: element.color,
-          fontSize: `${element.fontSize}px`,
-          fontFamily: element.fontFamily === 'bold' ? 'Helvetica, Arial, sans-serif' : 'Helvetica, Arial, sans-serif',
-          fontWeight: element.fontFamily === 'bold' ? 'bold' : 'normal',
-          whiteSpace: 'pre-wrap',
-          pointerEvents: 'none'
+          width: '100%',
+          height: '100%',
+          padding: '2px 4px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: element.textAlign === 'center' ? 'center' : (element.textAlign === 'right' ? 'flex-end' : 'flex-start'),
+          backgroundColor: element.backgroundColor || 'transparent',
+          opacity: element.opacity !== undefined ? element.opacity : 1,
         }}>
-          {element.text}
+          {isInlineEditing ? (
+            <textarea
+              autoFocus
+              value={element.text || ''}
+              onChange={(e) => onUpdate({ text: e.target.value })}
+              onBlur={() => setIsInlineEditing(false)}
+              onKeyDown={(e) => {
+                if (e.key === 'Escape') setIsInlineEditing(false);
+              }}
+              style={{
+                width: '100%',
+                minWidth: 120,
+                minHeight: 40,
+                color: element.color || '#000000',
+                fontSize: `${element.fontSize || 16}px`,
+                fontFamily: element.fontFamily?.includes('Courier') ? 'Courier, monospace' : (element.fontFamily?.includes('Times') ? 'Times New Roman, serif' : 'Helvetica, Arial, sans-serif'),
+                fontWeight: element.fontFamily?.includes('Bold') ? 'bold' : 'normal',
+                background: 'rgba(255,255,255,0.95)',
+                border: '1px solid #3b82f6',
+                borderRadius: 4,
+                padding: '4px',
+                outline: 'none',
+                resize: 'both',
+              }}
+            />
+          ) : (
+            <div style={{
+              color: element.color || '#000000',
+              fontSize: `${element.fontSize || 16}px`,
+              fontFamily: element.fontFamily?.includes('Courier') ? 'Courier, monospace' : (element.fontFamily?.includes('Times') ? 'Times New Roman, serif' : 'Helvetica, Arial, sans-serif'),
+              fontWeight: element.fontFamily?.includes('Bold') ? 'bold' : 'normal',
+              textAlign: element.textAlign || 'left',
+              whiteSpace: 'pre-wrap',
+              wordBreak: 'break-word',
+              pointerEvents: 'none',
+              width: '100%',
+            }}>
+              {element.text || 'Double click to edit text'}
+            </div>
+          )}
         </div>
       )}
 
+      {/* ── 2. WHITEOUT ELEMENT (Solid Masking Box) ── */}
+      {element.type === 'whiteout' && (
+        <div style={{
+          width: '100%',
+          height: '100%',
+          backgroundColor: element.fillColor || '#ffffff',
+          border: element.strokeColor ? `${element.strokeWidth || 1}px solid ${element.strokeColor}` : 'none',
+          opacity: element.opacity !== undefined ? element.opacity : 1,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}>
+          {isSelected && (
+            <span style={{ fontSize: '0.65rem', fontWeight: 700, color: '#94a3b8', pointerEvents: 'none', letterSpacing: '0.05em' }}>
+              WHITEOUT
+            </span>
+          )}
+        </div>
+      )}
+
+      {/* ── 3. HIGHLIGHT ELEMENT (Translucent Overlay) ── */}
+      {element.type === 'highlight' && (
+        <div style={{
+          width: '100%',
+          height: '100%',
+          backgroundColor: element.fillColor || '#facc15',
+          opacity: element.opacity !== undefined ? element.opacity : 0.38,
+          mixBlendMode: 'multiply',
+          borderRadius: 2,
+        }} />
+      )}
+
+      {/* ── 4. SHAPE ELEMENT (Vector Shapes) ── */}
+      {element.type === 'shape' && (
+        <div style={{ width: '100%', height: '100%', opacity: element.opacity !== undefined ? element.opacity : 1 }}>
+          {element.shapeType === 'circle' ? (
+            <svg width="100%" height="100%" style={{ overflow: 'visible' }}>
+              <ellipse
+                cx="50%" cy="50%" rx="48%" ry="48%"
+                fill={element.fillColor || 'transparent'}
+                stroke={element.strokeColor || '#ef4444'}
+                strokeWidth={element.strokeWidth || 2}
+              />
+            </svg>
+          ) : element.shapeType === 'line' ? (
+            <svg width="100%" height="100%" style={{ overflow: 'visible' }}>
+              <line
+                x1="0%" y1="0%" x2="100%" y2="100%"
+                stroke={element.strokeColor || '#ef4444'}
+                strokeWidth={element.strokeWidth || 2}
+              />
+            </svg>
+          ) : element.shapeType === 'arrow' ? (
+            <svg width="100%" height="100%" style={{ overflow: 'visible' }}>
+              <defs>
+                <marker id={`arrow-${element.id}`} markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+                  <path d="M0,0 L0,6 L6,3 z" fill={element.strokeColor || '#ef4444'} />
+                </marker>
+              </defs>
+              <line
+                x1="5%" y1="15%" x2="95%" y2="85%"
+                stroke={element.strokeColor || '#ef4444'}
+                strokeWidth={element.strokeWidth || 2}
+                markerEnd={`url(#arrow-${element.id})`}
+              />
+            </svg>
+          ) : (
+            <svg width="100%" height="100%" style={{ overflow: 'visible' }}>
+              <rect
+                x="2%" y="2%" width="96%" height="96%"
+                rx="4" ry="4"
+                fill={element.fillColor || 'transparent'}
+                stroke={element.strokeColor || '#ef4444'}
+                strokeWidth={element.strokeWidth || 2}
+              />
+            </svg>
+          )}
+        </div>
+      )}
+
+      {/* ── 5. INK ELEMENT (Freehand Vector Lines) ── */}
+      {element.type === 'ink' && element.points && (
+        <svg width="100%" height="100%" style={{ overflow: 'visible', pointerEvents: 'none', opacity: element.opacity !== undefined ? element.opacity : 1 }}>
+          <polyline
+            points={element.points.map((p: any) => `${p.x}%,${p.y}%`).join(' ')}
+            fill="none"
+            stroke={element.strokeColor || '#1e3a8a'}
+            strokeWidth={element.strokeWidth || 2.5}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      )}
+
+      {/* ── 6. IMAGE ELEMENT ── */}
       {element.type === 'image' && element.imageUrl && (
-        <img src={element.imageUrl} alt="Edit Element" style={{ width: '100%', height: '100%', objectFit: 'contain', pointerEvents: 'none' }} />
+        <img
+          src={element.imageUrl}
+          alt="Placed graphic"
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'contain',
+            pointerEvents: 'none',
+            opacity: element.opacity !== undefined ? element.opacity : 1,
+          }}
+        />
+      )}
+
+      {/* ── SELECTION CONTROLS (Handles & Action Buttons) ── */}
+      {isSelected && (
+        <>
+          {/* Tag Pill */}
+          <div
+            className="edit-action-handle"
+            style={{
+              position: 'absolute',
+              top: -24,
+              left: 0,
+              background: '#3b82f6',
+              color: '#ffffff',
+              fontSize: '0.68rem',
+              fontWeight: 800,
+              padding: '2px 8px',
+              borderRadius: 4,
+              letterSpacing: '0.04em',
+              textTransform: 'uppercase',
+              pointerEvents: 'none',
+              boxShadow: '0 2px 6px rgba(0,0,0,0.15)',
+            }}
+          >
+            {element.type}
+          </div>
+
+          {/* Direct Delete Button */}
+          {onDelete && (
+            <button
+              className="edit-action-handle"
+              onClick={(e) => {
+                e.stopPropagation();
+                onDelete();
+              }}
+              title="Delete element (Del)"
+              style={{
+                position: 'absolute',
+                top: -12,
+                right: -12,
+                width: 24,
+                height: 24,
+                background: '#ef4444',
+                color: '#ffffff',
+                border: '2px solid #ffffff',
+                borderRadius: '50%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                cursor: 'pointer',
+                boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
+                zIndex: 70,
+              }}
+            >
+              <X size={13} />
+            </button>
+          )}
+
+          {/* Bottom-Right Resize Handle */}
+          <div
+            className="edit-action-handle"
+            onMouseDown={(e) => {
+              setIsResizing(true);
+              startPos.current = { x: e.clientX, y: e.clientY };
+              startConfig.current = {
+                x: element.x,
+                y: element.y,
+                w: element.width || 20,
+                h: element.height || 10,
+              };
+              e.stopPropagation();
+              e.preventDefault();
+            }}
+            title="Drag to resize"
+            style={{
+              position: 'absolute',
+              bottom: -6,
+              right: -6,
+              width: 14,
+              height: 14,
+              background: '#3b82f6',
+              border: '2px solid #ffffff',
+              borderRadius: '50%',
+              cursor: 'se-resize',
+              boxShadow: '0 2px 6px rgba(0,0,0,0.25)',
+              zIndex: 70,
+            }}
+          />
+        </>
       )}
     </div>
   );
@@ -416,6 +703,10 @@ export const PdfPreview: React.FC<PdfPreviewProps> = ({
                     isSelected={selectedEditId === el.id}
                     onClick={() => setSelectedEditId(el.id)}
                     onUpdate={(updates) => setEditElements(prev => prev.map(e => e.id === el.id ? { ...e, ...updates } : e))}
+                    onDelete={() => {
+                      setEditElements(prev => prev.filter(e => e.id !== el.id));
+                      setSelectedEditId(null);
+                    }}
                   />
                 ))}
               </>

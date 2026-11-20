@@ -136,8 +136,8 @@ async function processSingleFile(
     }
 
     case 'edit-pdf': {
-      if (!options.editElements) throw new Error("Konfigurasi elemen edit tidak ditemukan.");
-      const bytes = await (await import('../engines/pdf/editPdf')).editPdf(file, options.editElements, onProgress);
+      const editElements = options.editElements || [];
+      const bytes = await (await import('../engines/pdf/editPdf')).editPdf(file, editElements, onProgress);
       return { bytes, name: `${baseName}_edited.pdf` };
     }
 
