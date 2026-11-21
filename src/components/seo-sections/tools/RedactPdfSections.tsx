@@ -6,9 +6,9 @@ import type { SectionProps } from '../types';
 export const RedactHeroSection: React.FC<SectionProps> = ({ section, badges, stats, buttonText }) => (
   <section className="seo-section hero" style={{ padding: '100px 24px', margin: '80px 0 60px', background: '#000000', borderRadius: 40, position: 'relative', overflow: 'hidden' }}>
     {/* Classified Stamp Background */}
-    <div style={{ position: 'absolute', top: '10%', left: '5%', opacity: 0.05, transform: 'rotate(-15deg)', pointerEvents: 'none' }}>
-       <h1 style={{ fontSize: '15rem', color: 'red', margin: 0, lineHeight: 0.8, letterSpacing: '0.1em' }}>TOP</h1>
-       <h1 style={{ fontSize: '15rem', color: 'red', margin: 0, lineHeight: 0.8, letterSpacing: '0.1em' }}>SECRET</h1>
+    <div aria-hidden="true" style={{ position: 'absolute', top: '10%', left: '5%', opacity: 0.05, transform: 'rotate(-15deg)', pointerEvents: 'none' }}>
+       <span style={{ display: 'block', fontWeight: 900, fontSize: '15rem', color: 'red', margin: 0, lineHeight: 0.8, letterSpacing: '0.1em' }}>TOP</span>
+       <span style={{ display: 'block', fontWeight: 900, fontSize: '15rem', color: 'red', margin: 0, lineHeight: 0.8, letterSpacing: '0.1em' }}>SECRET</span>
     </div>
     
     <div style={{ maxWidth: 1200, margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: 64, alignItems: 'center', position: 'relative', zIndex: 1 }}>
