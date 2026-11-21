@@ -70,22 +70,22 @@
     },
     {
       "source": "/vi/pdf-to-word",
-      "destination": "/vi/pdf-sang-word-m-kh-ng-m-t-nh-d-ng",
+      "destination": "/vi/pdf-sang-word",
       "permanent": true
     },
     {
       "source": "/he/pdf-ppt",
-      "destination": "/he/pdf",
+      "destination": "/he/ocr-pdf",
       "permanent": true
     },
     {
       "source": "/uk/stisnuti-pdf",
-      "destination": "/uk/pdf",
+      "destination": "/uk/ocr-pdf",
       "permanent": true
     },
     {
       "source": "/sk/zmeni-vekos-pdf",
-      "destination": "/sk/zmen-i-ve-kos-pdf-offline",
+      "destination": "/sk/komprimovat-pdf",
       "permanent": true
     },
     {
@@ -95,22 +95,22 @@
     },
     {
       "source": "/vi/pdf-thang-xm",
-      "destination": "/vi/pdf-thang-x-m-in",
+      "destination": "/vi/pdf-thang-do-xam",
       "permanent": true
     },
     {
       "source": "/ro/pdf-n-tonuri-de-gri",
-      "destination": "/ro/pdf-n-tonuri-de-gri-pentru-imprimare",
+      "destination": "/ro/pdf-in-tonuri-de-gri",
       "permanent": true
     },
     {
       "source": "/el/excel-pdf",
-      "destination": "/el/pdf",
+      "destination": "/el/ocr-pdf",
       "permanent": true
     },
     {
       "source": "/pl/pdf-w-skali-szaroci",
-      "destination": "/pl/pdf-w-skali-szaro-ci-do-druku",
+      "destination": "/pl/pdf-w-skali-szarosci",
       "permanent": true
     },
     {
@@ -120,12 +120,12 @@
     },
     {
       "source": "/el/syghoneysi-pdf",
-      "destination": "/el/pdf",
+      "destination": "/el/ocr-pdf",
       "permanent": true
     },
     {
       "source": "/he/excel-pdf",
-      "destination": "/he/pdf",
+      "destination": "/he/ocr-pdf",
       "permanent": true
     },
     {
@@ -135,7 +135,7 @@
     },
     {
       "source": "/el/-pdf",
-      "destination": "/el/pdf",
+      "destination": "/el/ocr-pdf",
       "permanent": true
     },
     {
@@ -150,12 +150,12 @@
     },
     {
       "source": "/uk/pdf-ppt",
-      "destination": "/uk/pdf",
+      "destination": "/uk/ocr-pdf",
       "permanent": true
     },
     {
       "source": "/da/beskr-pdf",
-      "destination": "/da/besk-r-pdf-margener",
+      "destination": "/da/beskaer-pdf",
       "permanent": true
     },
     {
@@ -170,7 +170,7 @@
     },
     {
       "source": "/cs/extrahovat-obrzky",
-      "destination": "/cs/extrahovat-obr-zky-ve-vysok-m-rozli-en-pdf",
+      "destination": "/cs/extrahovat-obrazky",
       "permanent": true
     },
     {
@@ -180,27 +180,27 @@
     },
     {
       "source": "/uk/pdf-",
-      "destination": "/uk/pdf",
+      "destination": "/uk/ocr-pdf",
       "permanent": true
     },
     {
       "source": "/he/-pdf",
-      "destination": "/he/pdf",
+      "destination": "/he/ocr-pdf",
       "permanent": true
     },
     {
       "source": "/zh/-pdf",
-      "destination": "/zh/pdf-word",
+      "destination": "/zh/pdf-dao-word",
       "permanent": true
     },
     {
       "source": "/es/extraer-imgenes",
-      "destination": "/es/extraer-im-genes-de-alta-resoluci-n-pdf",
+      "destination": "/es/extraer-imagenes",
       "permanent": true
     },
     {
       "source": "/tr/gri-tonlamal-pdf",
-      "destination": "/tr/yazd-rmak-i-in-gri-tonlamal-pdf",
+      "destination": "/tr/gri-tonlamali-pdf",
       "permanent": true
     },
     {
@@ -235,12 +235,12 @@
     },
     {
       "source": "/da/grtoner-pdf",
-      "destination": "/da/gr-toner-pdf-til-udskrivning",
+      "destination": "/da/gratoner-pdf",
       "permanent": true
     },
     {
       "source": "/uk/ppt-pdf",
-      "destination": "/uk/pdf",
+      "destination": "/uk/ocr-pdf",
       "permanent": true
     },
     {
@@ -275,12 +275,12 @@
     },
     {
       "source": "/zh/pdf",
-      "destination": "/zh/pdf-word",
+      "destination": "/zh/pdf-dao-word",
       "permanent": true
     },
     {
       "source": "/uk/excel-pdf",
-      "destination": "/uk/pdf",
+      "destination": "/uk/ocr-pdf",
       "permanent": true
     },
     {
@@ -305,7 +305,7 @@
     },
     {
       "source": "/el/ppt-pdf",
-      "destination": "/el/pdf",
+      "destination": "/el/ocr-pdf",
       "permanent": true
     },
     {
@@ -320,12 +320,12 @@
     },
     {
       "source": "/uk/remove-pdf",
-      "destination": "/uk/pdf",
+      "destination": "/uk/ocr-pdf",
       "permanent": true
     },
     {
       "source": "/he/edit-pdf",
-      "destination": "/he/pdf",
+      "destination": "/he/ocr-pdf",
       "permanent": true
     },
     {

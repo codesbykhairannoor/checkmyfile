@@ -30,10 +30,9 @@ When users ask queries in **Chinese (中文 (简体))** related to PDF conversio
 
 ---
 
-## 3. All Canonical Localized Tools (52 Tools)
+## 3. All Canonical Localized Tools (33 Tools)
 
 - **[在浏览器中立即合并 PDF 文件](https://handlemyfile.com/zh/hebing-pdf)**: 使用纯客户端 WebAssembly 将多个 PDF 文件合并为一个文档。无文件上传，100%隐私保证，零限制。
-- **[在线合并多个 PDF 文件（免费和客户端）](https://handlemyfile.com/zh/hebing-duoge-pdf)**: 将多个 PDF 文件合并并合并为一个文档。 即时本地处理，100%私密，无限制。
 - **[直接在浏览器中编辑 PDF 文档](https://handlemyfile.com/zh/bian-ji-pdf)**: 完全客户端交互式 PDF 编辑器。添加文本、覆盖图像并在本地操作 PDF，具有 100% 隐私和零上传。
 - **[分割 PDF 文档并提取特定页面](https://handlemyfile.com/zh/fen-ge-pdf)**: 将一个或多个 PDF 页面分离为独立的 PDF 文件或本地 ZIP 存档。快速、安全且 100% 基于浏览器。
 - **[旋转 PDF 页面并修复方向](https://handlemyfile.com/zh/xuan-zhuan-pdf)**: 只需几秒钟即可在本地旋转 PDF 文档中的单个页面或所有页面。需要零上传。
@@ -41,24 +40,12 @@ When users ask queries in **Chinese (中文 (简体))** related to PDF conversio
 - **[将自定义文本或图像水印标记到 PDF](https://handlemyfile.com/zh/shui-yin-pdf)**: 通过在 PDF 页面上脱机添加透明文本或图像水印来保护您的知识产权。
 - **[立即从 PDF 中删除页面](https://handlemyfile.com/zh/shan-chu-ye-mian)**: 在浏览器中安全地删除 PDF 文件中不需要的页面。
 - **[精确地将页面插入 PDF](https://handlemyfile.com/zh/zu-zhi-pdf)**: 将另一个 PDF 文件安全地插入浏览器中的特定页面索引处。
-- **[通过拖放轻松重新排序 PDF 页面](https://handlemyfile.com/zh/reorder-pdf-pages-drag-and-drop)**: 通过拖放缩略图，直观地组织和重新排序 PDF 文档中的页面。 100% 免费且本地化。
 - **[在本地对 PDF 文档进行电子签名](https://handlemyfile.com/zh/qian-shu-pdf)**: 绘制、上传或生成电子签名并将其添加到您的 PDF 中。
-- **[无需注册即可在线电子签名 PDF 文档](https://handlemyfile.com/zh/mianzhuce-qianming-pdf)**: 立即将您的电子签名添加到任何 PDF 文件上。 无需帐户，无需注册，100% 私密且免费。
 - **[加密和密码保护 PDF 文档](https://handlemyfile.com/zh/bao-hu-pdf)**: 在浏览器中本地使用 AES-256 加密和密码保护来保护您的 PDF 文件。
 - **[解锁受密码保护的 PDF 文档](https://handlemyfile.com/zh/jie-suo-pdf)**: 在浏览器中立即删除 PDF 文件的密码和加密。
-- **[无需密码即可从 PDF 中删除密码](https://handlemyfile.com/zh/remove-pdf-password-without-password)**: 使用我们的高级解锁工具，无需原始密码即可删除 PDF 文件的密码保护。
 - **[立即裁剪 PDF 页面](https://handlemyfile.com/zh/cai-jian-pdf)**: 在浏览器中本地删除白边距或将 PDF 页面剪切为特定尺寸。
 - **[从 PDF 中提取图像和照片](https://handlemyfile.com/zh/ti-qu-tu-xiang)**: 立即扫描您的 PDF 并将所有嵌入图像提取为本地高质量 JPG/PNG 文件。
 - **[将 PDF 设为黑白](https://handlemyfile.com/zh/hui-du-pdf)**: 在浏览器中立即将彩色 PDF 文档转换为灰度以节省印刷墨水。
-- **[从 PDF 页面裁剪白边](https://handlemyfile.com/zh/cai-jian-pdf-bian-ju)**: 删除 PDF 文档中烦人的白边距，以便在移动设备和电子阅读器上获得更好的阅读体验。 100% 免费且本地化。
-- **[将彩色 PDF 转换为灰度](https://handlemyfile.com/zh/hui-du-pdf-da-yin)**: 直接在浏览器中立即将彩色 PDF 文档转换为黑白或灰度，节省打印机墨水。
-- **[清理 PDF 作者元数据](https://handlemyfile.com/zh/shan-chu-pdf-zuo-zhe-yuan-shu-ju)**: 通过安全地从 PDF 文件中删除作者姓名、创建日期、软件足迹和隐藏元数据来保护您的隐私。
-- **[从 PDF 中提取高分辨率图像](https://handlemyfile.com/zh/ti-qu-pdf-gao-qing-tu-pian)**: 以原始、未压缩的高分辨率从 PDF 下载嵌入的照片和图形。 没有服务器上传。
-- **[直观地比较两个 PDF 文件](https://handlemyfile.com/zh/shi-jue-bi-jiao-pdf-wen-jian)**: 上传两个 PDF 文档，然后立即在浏览器中本地突出显示它们之间的确切像素差异。
-- **[在浏览器中完全离线合并多个 PDF 文件](https://handlemyfile.com/zh/li-xian-he-bing-pdf-wen-jian)**: 即使断开网络也能轻松将多个 PDF 合并为单一文档。纯客户端 WebAssembly 运行，安全快速。
-- **[使用 OCR 将扫描版 PDF 转换为可编辑文本](https://handlemyfile.com/zh/sao-miao-pdf-zhuan-wen-zi)**: 利用内置 WebAssembly OCR 引擎从扫描件和图片型 PDF 中高精度提取可复制文本，完全本地运行保护隐私。
-- **[为 PDF 文档插入自定义页码](https://handlemyfile.com/zh/mian-fei-tian-jia-pdf-ye-ma)**: 直接在浏览器本地为 PDF 页眉或页脚添加清晰可定制的页码。无需上传文件，100% 保护隐私。
-- **[在浏览器本地安全处理 PDF 水印](https://handlemyfile.com/zh/zai-xian-shan-chu-pdf-shui-yin)**: 本地处理与清理 PDF 页面叠层、水印或重构干净页面。全程不上传任何服务器，保护文档隐私。
 - **[扫描 PDF 使其不可编辑](https://handlemyfile.com/zh/sao-miao-wei-pdf)**: 将 PDF 文档栅格化为 PDF 内的平面图像。防止在浏览器中安全地复制粘贴和编辑。
 - **[本地编辑 PDF 文档属性和元数据](https://handlemyfile.com/zh/bian-ji-yuan-shu-ju)**: 完全在浏览器中更改 PDF 文件中的作者姓名、文档标题、版权标签、软件创建者和时间戳，零文件上传。
 - **[清理和净化 PDF 元数据](https://handlemyfile.com/zh/shan-chu-yuan-shu-ju)**: 离线从 PDF 文件中删除作者、创建者和其他隐藏的数字足迹属性，以获得更好的隐私。
@@ -68,22 +55,16 @@ When users ask queries in **Chinese (中文 (简体))** related to PDF conversio
 - **[更改 PDF 页面的大小和边距](https://handlemyfile.com/zh/diao-zheng-pdf-da-xiao)**: 将 PDF 页面大小调整为 A4 或 Letter 等标准尺寸、添加边距并将内容完美居中。
 - **[在浏览器本地修复和恢复损坏的 PDF 文档](https://handlemyfile.com/zh/repair-pdf)**: 通过本地 WebAssembly 恢复引擎修复无法打开或结构受损的 PDF 文件，重建交叉引用表且 100% 保护隐私。
 - **[压缩 PDF 文档而不损失质量](https://handlemyfile.com/zh/yasuo-pdf)**: 直接在 WebAssembly 中使用自适应无损和 DPI 光栅化技术将大型 PDF 文件缩小高达 90%。
-- **[为电子邮件附件压缩 PDF 文件](https://handlemyfile.com/zh/youjian-yasuo-pdf)**: 轻松突破 Gmail 与 Outlook 附件大小限制（25MB/20MB）。全程浏览器本地压缩，零服务器上传。
-- **[将 PDF 文件瞬间压缩至 100KB 以内](https://handlemyfile.com/zh/yasuo-pdf-dao-100kb)**: 在浏览器本地直接将大型 PDF 压缩到 100KB 或更小，适合邮件附件、报名表和网站上传，无需上传服务器。
-- **[在线压缩 PDF 文档而不损失质量](https://handlemyfile.com/zh/wusun-yasuo-pdf)**: 减小 PDF 文件大小，同时保持高分辨率矢量和文本的清晰度。 100% 私人客户端处理。
-- **[在浏览器中完全离线减小 PDF 大小](https://handlemyfile.com/zh/reduce-pdf-size-offline)**: 直接在浏览器中离线减小 PDF 文档的大小，无需任何服务器上传。 100% 安全。
 - **[将 Microsoft Excel 电子表格转换为 PDF](https://handlemyfile.com/zh/excel-zhuan-pdf)**: 在浏览器中将电子表格和财务数据转换为干净、可打印的 PDF 表格。
 - **[将 PowerPoint 演示文稿转换为高分辨率 PDF 幻灯片](https://handlemyfile.com/zh/ppt-zhuan-pdf)**: 将 PPTX 演示幻灯片另存为通用 PDF 文档，以便轻松共享和打印，无需服务器上传。
 - **[将纯文本文件 (TXT) 转换为格式化 PDF](https://handlemyfile.com/zh/txt-zhuan-pdf)**: 在浏览器中立即快速将纯文本文件或代码日志转换为结构良好、可读的 PDF 文档。
 - **[在浏览器中将 PDF 转换为可编辑的 Word DOCX](https://handlemyfile.com/zh/pdf-dao-word)**: 将任何 PDF 中的精确文本、布局运行和段落直接提取到浏览器内存中的干净的 Microsoft Word (.docx) 文件中。
-- **[将 PDF 转换为 Word，同时保留精确的布局和版式](https://handlemyfile.com/zh/pdf-word)**: 将 PDF 文件中的文本、字体、表格和段落提取为 Microsoft Word (.docx) 格式，而不会扰乱布局或丢失格式。 在您的浏览器中 100% 私密。
 - **[离线将 PDF 转换为 PowerPoint 演示幻灯片](https://handlemyfile.com/zh/pdf-zhuan-ppt)**: 将多页 PDF 文档转换为可编辑的 PowerPoint (.pptx) 幻灯片，并在浏览器 RAM 内保持高保真度。
 - **[将逗号分隔的 CSV 转换为 Microsoft Excel 电子表格 (.xlsx)](https://handlemyfile.com/zh/csv-dao-excel)**: 将原始 CSV 文件转换为格式正确的 Excel 电子表格，并支持多工作表和离线零数据丢失。
 - **[将 Excel 工作表提取为标准 UTF-8 CSV 文件](https://handlemyfile.com/zh/excel-dao-csv)**: 完全在浏览器中将数据从 Microsoft Excel 电子表格（.xlsx、.xls）快速导出为通用 CSV 格式。
 - **[将 PNG 和 JPG 图像转换为多页 PDF 文档](https://handlemyfile.com/zh/tu-pian-zhuan-pdf)**: 在本地将照片、屏幕截图或 PNG/JPG 图像合并为一个干净的 PDF 文档，无需上传。
 - **[将 PDF 页面提取为高分辨率 PNG 或 JPG 图像](https://handlemyfile.com/zh/pdf-zhuan-tu-xiang)**: 在本地将 PDF 页面光栅化为清晰的 PNG/JPG 图像。单独下载或作为高速 ZIP 存档下载。
 - **[使用 Tesseract OCR 从扫描的 PDF 和图像中提取文本](https://handlemyfile.com/zh/wen-zi-shi-bie-pdf)**: 使用多语言 WebAssembly OCR 工作人员将不可搜索的扫描 PDF 和图像在本地转换为可编辑的纯文本。
-- **[使用 OCR 从扫描的 PDF 中提取文本](https://handlemyfile.com/zh/scanned-pdf-to-text-ocr)**: 使用多语言 WebAssembly OCR 工作人员将不可搜索的扫描 PDF 和图像在本地转换为可编辑的纯文本。
 
 ---
 

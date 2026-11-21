@@ -48,7 +48,7 @@ export const App: React.FC = () => {
         if (!tool) {
           const pdfToWordSlugs = ['pdf-to-word', 'pdf-ke-word', 'pdf-a-word', 'pdf-to-docx', 'pdf-ke-docx', 'pdf-in-word'];
           if (pdfToWordSlugs.includes(slug.toLowerCase())) {
-            tool = getToolById('pdf-to-word-without-losing-formatting');
+            tool = getToolById('pdf-to-word');
           }
         }
         activeToolVal = tool || null;
@@ -98,7 +98,7 @@ export const App: React.FC = () => {
           if (!tool) {
             const pdfToWordSlugs = ['pdf-to-word', 'pdf-ke-word', 'pdf-a-word', 'pdf-to-docx', 'pdf-ke-docx', 'pdf-in-word'];
             if (pdfToWordSlugs.includes(slug.toLowerCase())) {
-              tool = getToolById('pdf-to-word-without-losing-formatting');
+              tool = getToolById('pdf-to-word');
             }
           }
           setActiveTool(tool || null);

@@ -517,9 +517,9 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                       watermarkConfig={tool.id === 'watermark-pdf' ? watermarkConfig : undefined}
                       pageNumberConfig={tool.id === 'page-numbers' ? pageNumberConfig : undefined}
                       splitRange={tool.id === 'split-pdf' ? splitRange : undefined}
-                      compressQuality={['compress-pdf', 'compress-pdf-for-email', 'compress-pdf-to-100kb', 'compress-pdf-without-losing-quality'].includes(tool.id) ? compressQuality : undefined}
+                      compressQuality={canonicalId === 'compress-pdf' ? compressQuality : undefined}
                       removeRange={tool.id === 'remove-pdf' ? removeRange : undefined}
-                      signatureConfig={['sign-pdf', 'sign-pdf-without-registration'].includes(tool.id) ? signatureConfig : undefined}
+                      signatureConfig={canonicalId === 'sign-pdf' ? signatureConfig : undefined}
                       cropConfig={tool.id === 'crop-pdf' ? cropConfig : undefined}
                       redactConfig={tool.id === 'redact-pdf' ? redactConfig : undefined}
                       resizeConfig={tool.id === 'resize-pdf' ? resizeConfig : undefined}
@@ -710,8 +710,8 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
                         onDownload={handleDownload}
                         onReset={handleReset}
                         originalFilename={downloadFilename}
-                        originalSize={['compress-pdf', 'compress-pdf-for-email', 'compress-pdf-to-100kb', 'compress-pdf-without-losing-quality'].includes(tool.id) && files.length > 0 ? files[0].size : undefined}
-                        compressedSize={['compress-pdf', 'compress-pdf-for-email', 'compress-pdf-to-100kb', 'compress-pdf-without-losing-quality'].includes(tool.id) && resultFile ? resultFile.size : undefined}
+                        originalSize={canonicalId === 'compress-pdf' && files.length > 0 ? files[0].size : undefined}
+                        compressedSize={canonicalId === 'compress-pdf' && resultFile ? resultFile.size : undefined}
                         isPro={isPro}
                         onOpenProModal={() => {
                           setProGateReason({

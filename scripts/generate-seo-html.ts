@@ -157,41 +157,33 @@ const buildAllToolsDirectory = (lang: string, isEn: boolean, currentToolId?: str
       name: t.pdfTools || 'PDF Organize & Edit',
       ids: [
         'merge-pdf', 'split-pdf', 'edit-pdf', 'sign-pdf', 'rotate-pdf', 'crop-pdf',
-        'page-numbers-pdf', 'watermark-pdf', 'grayscale-pdf', 'reverse-pdf',
-        'remove-pages-pdf', 'resize-pdf', 'organize-pdf', 'redact-pdf',
-        'protect-pdf', 'unlock-pdf', 'remove-metadata-pdf', 'scan-to-pdf',
-        'compare-pdf', 'crop-pdf-white-margins'
+        'page-numbers', 'watermark-pdf', 'grayscale-pdf', 'reverse-pdf',
+        'remove-pdf', 'resize-pdf', 'organize-pdf', 'redact-pdf',
+        'protect-pdf', 'unlock-pdf', 'remove-pdf-metadata', 'edit-pdf-metadata',
+        'scan-to-pdf', 'compare-pdf', 'repair-pdf'
       ]
     },
     {
       name: t.compressTools || 'PDF Compression & Optimization',
-      ids: [
-        'compress-pdf', 'compress-pdf-100kb', 'compress-pdf-email',
-        'compress-pdf-without-losing-quality', 'reduce-pdf-size-offline',
-        'grayscale-pdf-print', 'remove-pdf-watermark-online'
-      ]
+      ids: ['compress-pdf']
     },
     {
       name: t.officeTools || 'Convert Office & Data to/from PDF',
       ids: [
-        'word-to-pdf', 'excel-to-pdf', 'ppt-to-pdf', 'txt-to-pdf', 'csv-to-pdf',
-        'pdf-to-word', 'pdf-to-excel', 'pdf-to-ppt', 'pdf-to-txt', 'pdf-to-csv',
-        'csv-to-excel', 'excel-to-csv', 'pdf-to-word-no-formatting-loss',
-        'docx-to-pdf-converter'
+        'excel-to-pdf', 'ppt-to-pdf', 'txt-to-pdf',
+        'pdf-to-word', 'pdf-to-ppt',
+        'csv-to-excel', 'excel-to-csv'
       ]
     },
     {
       name: t.imageTools || 'Convert Images to/from PDF',
       ids: [
-        'jpg-to-pdf', 'png-to-pdf', 'image-to-pdf', 'pdf-to-jpg', 'pdf-to-png',
-        'pdf-to-image', 'extract-images-pdf', 'extract-high-res-images-pdf'
+        'image-to-pdf', 'pdf-to-image', 'extract-images-pdf'
       ]
     },
     {
       name: t.ocrTools || 'OCR & Text Extraction',
-      ids: [
-        'ocr-pdf', 'scanned-pdf-to-text', 'searchable-pdf-ocr'
-      ]
+      ids: ['ocr-pdf']
     }
   ];
 
@@ -1168,14 +1160,16 @@ const run = async () => {
     }
   };
 
-  // A. Generate redirects for all 168 404 URLs identified from Google Search Console
-  const gscMapPath = path.join(__dirname, '404-redirect-map.json');
-  if (fs.existsSync(gscMapPath)) {
-    const gscMap: Record<string, string> = JSON.parse(fs.readFileSync(gscMapPath, 'utf8'));
-    for (const [sourceUrl, targetUrl] of Object.entries(gscMap)) {
-      const langMatch = sourceUrl.match(/^\/([a-z]{2})\//);
-      const lang = langMatch ? langMatch[1] : 'en';
-      createRedirectFile(sourceUrl, targetUrl, lang);
+  // A. Generate redirects for all GSC 404 URLs + retired pSEO clone URLs
+  for (const mapFile of ['404-redirect-map.json', 'removed-pseo-redirects.json']) {
+    const mapPath = path.join(__dirname, mapFile);
+    if (fs.existsSync(mapPath)) {
+      const urlMap: Record<string, string> = JSON.parse(fs.readFileSync(mapPath, 'utf8'));
+      for (const [sourceUrl, targetUrl] of Object.entries(urlMap)) {
+        const langMatch = sourceUrl.match(/^\/([a-z]{2})\//);
+        const lang = langMatch ? langMatch[1] : 'en';
+        createRedirectFile(sourceUrl, targetUrl, lang);
+      }
     }
   }
 
