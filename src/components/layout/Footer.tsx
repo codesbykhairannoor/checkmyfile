@@ -2,6 +2,7 @@ import React from 'react';
 import { getUiTranslations } from '../../i18n/translations';
 import { TOOLS_CATALOG, getLocalizedSeo, type ToolDefinition } from '../../catalog/toolsCatalog';
 import { ShieldCheck, Mail } from 'lucide-react';
+import { getLocalizedStaticSlug, type StaticPageId } from '../../i18n/staticSlugs';
 
 interface FooterProps {
   currentLang: string;
@@ -71,7 +72,8 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool, onNav
   };
 
   const renderLinkItem = (label: string, slug: string) => {
-    const href = currentLang === 'en' ? `/${slug}` : `/${currentLang}/${slug}`;
+    const localizedSlug = getLocalizedStaticSlug(slug as StaticPageId, currentLang);
+    const href = currentLang === 'en' ? `/${localizedSlug}` : `/${currentLang}/${localizedSlug}`;
     return (
       <li>
         <a

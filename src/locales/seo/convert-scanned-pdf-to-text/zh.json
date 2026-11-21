@@ -1,37 +1,31 @@
 {
-  "id": "convert-scanned-pdf-to-text",
-  "supportCenter": true,
-  "heroTitle": "Turn Scanned PDFs into Editable Text",
-  "heroDescription": "Use advanced browser-based OCR to extract text from scanned images and unsearchable PDFs. 100% free and private.",
+  "title": "扫描版 PDF 转可编辑文本 — 浏览器本地 OCR",
+  "h1": "使用 OCR 将扫描版 PDF 转换为可编辑文本",
+  "description": "利用内置 WebAssembly OCR 引擎从扫描件和图片型 PDF 中高精度提取可复制文本，完全本地运行保护隐私。",
   "sections": [
     {
-      "type": "image_geo_targeting",
-      "title": "WebAssembly OCR",
-      "content": "Tesseract OCR runs right in your browser. No cloud APIs involved."
+      "type": "ocr_geo_targeting",
+      "title": "WebAssembly 离线 OCR",
+      "content": "Tesseract OCR 直接在浏览器本地执行文字识别，无需调用第三方云端接口。",
+      "badgeText": "本地 OCR"
     },
     {
-      "type": "redact_privacy_security",
-      "title": "Confidential Extraction",
-      "content": "Extract text from sensitive ID cards or medical records safely."
-    },
-    {
-      "type": "scan_performance",
-      "title": "High Accuracy",
-      "content": "Support for multiple languages and skewed scans."
+      "type": "ocr_privacy_security",
+      "title": "机密证件安全提取",
+      "content": "安全识别身份证、护照、医疗报告或财务单据中的文字内容。",
+      "badgeText": "隐私优先"
     }
   ],
   "faqs": [
     {
-      "q": "Does this OCR support multiple languages?",
-      "a": "Yes, our Tesseract-based WebAssembly engine supports over 100 languages. Just ensure the scan is clear."
+      "q": "OCR 支持多种语言识别吗？",
+      "a": "支持，基于 Tesseract WebAssembly 的引擎支持超过 100 种语言识别。"
     },
     {
-      "q": "Is it safe to extract text from my passport or ID?",
-      "a": "Absolutely. We do not upload your documents to our servers. The entire OCR process happens within your own browser."
-    },
-    {
-      "q": "Why is the text sometimes inaccurate?",
-      "a": "OCR accuracy depends heavily on the image quality. For best results, ensure your scans have high contrast and are not blurry."
+      "q": "提取敏感证件文本安全吗？",
+      "a": "绝对安全，所有识别均在您的本地浏览器内存中完成，绝不上传云端。"
     }
-  ]
+  ],
+  "faqTitle": "常见问题",
+  "buttonText": "提取扫描文本"
 }

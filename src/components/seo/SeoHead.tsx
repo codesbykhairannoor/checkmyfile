@@ -89,7 +89,18 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang, currentLang, title
       el.setAttribute('content', content);
     };
 
-    // 3. Update standard meta and GEO metadata (SUPER SEO & GEO)
+    setMetaTag('title', 'name', title);
+
+    const isCurrentEn = activeLang === 'en';
+    const currentSlug = tool ? (tool.slugs[activeLang] || tool.id) : (slug ? getLocalizedStaticSlug(slug as StaticPageId, activeLang) : '');
+    const currentPath = isCurrentEn
+      ? (currentSlug ? `/${currentSlug}` : `/`)
+      : (currentSlug ? `/${activeLang}/${currentSlug}` : `/${activeLang}`);
+    const canonicalUrl = `${origin}${currentPath}`;
+    const existingCanonical = document.querySelector('link[rel="canonical"]')?.getAttribute('href');
+    const isInitialSsrMatch = existingCanonical === canonicalUrl;
+
+    // 3. Update standard meta and GEO metadata
     setMetaTag('description', 'name', description);
     setMetaTag('geo.region', 'name', langInfo.geoRegion);
     setMetaTag('geo.placename', 'name', langInfo.geoPlacename);
@@ -109,18 +120,13 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang, currentLang, title
     setMetaTag('twitter:description', 'name', description);
     setMetaTag('twitter:image', 'name', ogImageUrl);
     setMetaTag('twitter:image:alt', 'name', title);
-    setMetaTag('llm-context', 'name', `/llms-${activeLang}.txt`);
+    setMetaTag('llm-context', 'name', isCurrentEn ? '/llms.txt' : `/llms-${activeLang}.txt`);
 
     // 4. Update Canonical & Hreflang Tags (Partial Lang URL structure)
     document.querySelectorAll('link[rel="canonical"], link[rel="alternate"][hreflang]').forEach((el) => el.remove());
 
-    const isCurrentEn = activeLang === 'en';
-    const currentSlug = tool ? (tool.slugs[activeLang] || tool.id) : (slug ? getLocalizedStaticSlug(slug as StaticPageId, activeLang) : '');
-    const currentPath = isCurrentEn
-      ? (currentSlug ? `/${currentSlug}` : `/`)
-      : (currentSlug ? `/${activeLang}/${currentSlug}` : `/${activeLang}`);
-    const canonicalUrl = `${origin}${currentPath}`;
     setMetaTag('og:url', 'property', canonicalUrl);
+    setMetaTag('twitter:url', 'name', canonicalUrl);
 
     // Add canonical link
     const canonicalLink = document.createElement('link');
@@ -151,44 +157,69 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang, currentLang, title
     xDefaultLink.setAttribute('href', `${origin}${xDefaultPath}`);
     document.head.appendChild(xDefaultLink);
 
-    // 5. Update JSON-LD Schemas (FAQPage + BreadcrumbList)
-    document.querySelectorAll('script[data-seo="jsonld"]').forEach((el) => el.remove());
+    // 5. Structured Data (JSON-LD): Preserve single clean SSR @graph on initial load; rebuild cleanly on SPA route transitions
+    const existingJsonLd = document.querySelectorAll('script[type="application/ld+json"]');
+    if (isInitialSsrMatch && existingJsonLd.length === 1) {
+      return;
+    }
 
-    // Breadcrumb Schema for Partial Lang URLs
-    const breadcrumbSchema = {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        {
-          '@type': 'ListItem',
-          position: 1,
-          name: `Home (${langInfo.nativeName})`,
-          item: isCurrentEn ? `${origin}/` : `${origin}/${activeLang}`,
+    existingJsonLd.forEach((el) => el.remove());
+
+    const graph: any[] = [
+      {
+        '@type': 'WebApplication',
+        '@id': `${canonicalUrl}/#webapp`,
+        url: canonicalUrl,
+        name: title,
+        description,
+        applicationCategory: 'UtilitiesApplication',
+        operatingSystem: 'Any',
+        browserRequirements: 'Requires HTML5 and WebAssembly support',
+        isAccessibleForFree: true,
+        about: [
+          'https://www.wikidata.org/wiki/Q28853',
+          'https://www.wikidata.org/wiki/Q42332',
+        ],
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+          priceCurrency: 'USD',
+          description: 'Free Starter plan included; optional PRO upgrade available',
         },
-        ...(currentSlug
-          ? [
-              {
-                '@type': 'ListItem',
-                position: 2,
-                name: title.split('|')[0].trim(),
-                item: canonicalUrl,
-              },
-            ]
-          : []),
-      ],
-    };
+        creator: {
+          '@type': 'Organization',
+          name: 'HandleMyFile',
+          url: origin,
+        },
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': `${canonicalUrl}/#breadcrumb`,
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: `Home (${langInfo.nativeName})`,
+            item: isCurrentEn ? `${origin}/` : `${origin}/${activeLang}`,
+          },
+          ...(currentSlug
+            ? [
+                {
+                  '@type': 'ListItem',
+                  position: 2,
+                  name: title,
+                  item: canonicalUrl,
+                },
+              ]
+            : []),
+        ],
+      },
+    ];
 
-    const breadcrumbScript = document.createElement('script');
-    breadcrumbScript.setAttribute('type', 'application/ld+json');
-    breadcrumbScript.setAttribute('data-seo', 'jsonld');
-    breadcrumbScript.textContent = JSON.stringify(breadcrumbSchema);
-    document.head.appendChild(breadcrumbScript);
-
-    // FAQPage Schema
     if (faqs.length > 0) {
-      const faqSchema = {
-        '@context': 'https://schema.org',
+      graph.push({
         '@type': 'FAQPage',
+        '@id': `${canonicalUrl}/#faq`,
         mainEntity: faqs.map((faq) => ({
           '@type': 'Question',
           name: faq.q,
@@ -197,61 +228,30 @@ export const SeoHead: React.FC<SeoHeadProps> = ({ tool, lang, currentLang, title
             text: faq.a,
           },
         })),
-      };
-
-      const faqScript = document.createElement('script');
-      faqScript.setAttribute('type', 'application/ld+json');
-      faqScript.setAttribute('data-seo', 'jsonld');
-      faqScript.textContent = JSON.stringify(faqSchema);
-      document.head.appendChild(faqScript);
+      });
     }
 
-    // SoftwareApplication Schema for AI Crawlers
-    const softwareSchema = {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      'name': 'HandleMyFile',
-      'applicationCategory': 'BrowserApplication',
-      'operatingSystem': 'Any',
-      'description': 'A 100% Client-Side secure document and PDF processing suite. Uses WebAssembly to process files locally in the browser memory without uploading to any servers. The safest alternative to cloud-based PDF tools.',
-      'sameAs': [
-        'https://en.wikipedia.org/wiki/WebAssembly',
-        'https://en.wikipedia.org/wiki/PDF'
-      ],
-      'offers': {
-        '@type': 'Offer',
-        'price': '0',
-        'priceCurrency': 'USD'
-      }
-    };
-    
-    const softwareScript = document.createElement('script');
-    softwareScript.setAttribute('type', 'application/ld+json');
-    softwareScript.setAttribute('data-seo', 'jsonld');
-    softwareScript.textContent = JSON.stringify(softwareSchema);
-    document.head.appendChild(softwareScript);
-
-    // Organization Schema to establish brand credibility for AI Citations
     if (!tool) {
-      const orgSchema = {
-        '@context': 'https://schema.org',
+      graph.push({
         '@type': 'Organization',
-        'name': 'HandleMyFile',
-        'url': origin,
-        'logo': `${origin}/logo.png`,
-        'description': 'A privacy-first, 100% client-side document processing software powered by WebAssembly. No uploads, no servers.',
-        'sameAs': [
-          'https://github.com/codesbykhairannoor'
-        ]
-      };
-      
-      const orgScript = document.createElement('script');
-      orgScript.setAttribute('type', 'application/ld+json');
-      orgScript.setAttribute('data-seo', 'jsonld');
-      orgScript.textContent = JSON.stringify(orgSchema);
-      document.head.appendChild(orgScript);
+        '@id': `${origin}/#organization`,
+        name: 'HandleMyFile',
+        url: origin,
+        logo: `${origin}/logo.png`,
+        description: 'Privacy-first, 100% client-side document processing platform powered by WebAssembly.',
+        sameAs: ['https://github.com/codesbykhairannoor'],
+      });
     }
-  }, [tool, lang, currentLang, customTitle, customDescription]);
+
+    const unifiedScript = document.createElement('script');
+    unifiedScript.setAttribute('type', 'application/ld+json');
+    unifiedScript.setAttribute('data-seo', 'jsonld');
+    unifiedScript.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@graph': graph,
+    });
+    document.head.appendChild(unifiedScript);
+  }, [tool, lang, currentLang, customTitle, customDescription, slug]);
 
   return null;
 };

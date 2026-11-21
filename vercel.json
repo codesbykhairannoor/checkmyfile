@@ -12,6 +12,366 @@
       ],
       "destination": "https://handlemyfile.com/:path*",
       "permanent": true
+    },
+    {
+      "source": "/en",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/en/:path*",
+      "destination": "/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/ja/pdf-",
+      "destination": "/ja/ocr-pdf",
+      "permanent": true
+    },
+    {
+      "source": "/ar/-csv",
+      "destination": "/ar/ksl-l~-csv",
+      "permanent": true
+    },
+    {
+      "source": "/th/pdf-to-image",
+      "destination": "/th/pdf-epnruupphaaph",
+      "permanent": true
+    },
+    {
+      "source": "/ru/remove-pdf",
+      "destination": "/ru/udalit-stranicy",
+      "permanent": true
+    },
+    {
+      "source": "/it/pdf-to-image",
+      "destination": "/it/pdf-in-immagine",
+      "permanent": true
+    },
+    {
+      "source": "/th/protect-pdf",
+      "destination": "/th/p-ngkan-pdf",
+      "permanent": true
+    },
+    {
+      "source": "/it/edit-pdf",
+      "destination": "/it/modifica-pdf",
+      "permanent": true
+    },
+    {
+      "source": "/tr/sayfa-numaralar",
+      "destination": "/tr/sayfa-numaralari",
+      "permanent": true
+    },
+    {
+      "source": "/tr/pptden-pdfye",
+      "destination": "/tr/ppt-den-pdf-ye",
+      "permanent": true
+    },
+    {
+      "source": "/vi/pdf-to-word",
+      "destination": "/vi/pdf-sang-word-m-kh-ng-m-t-nh-d-ng",
+      "permanent": true
+    },
+    {
+      "source": "/he/pdf-ppt",
+      "destination": "/he/pdf",
+      "permanent": true
+    },
+    {
+      "source": "/uk/stisnuti-pdf",
+      "destination": "/uk/pdf",
+      "permanent": true
+    },
+    {
+      "source": "/sk/zmeni-vekos-pdf",
+      "destination": "/sk/zmen-i-ve-kos-pdf-offline",
+      "permanent": true
+    },
+    {
+      "source": "/ja/-pdf",
+      "destination": "/ja/ocr-pdf",
+      "permanent": true
+    },
+    {
+      "source": "/vi/pdf-thang-xm",
+      "destination": "/vi/pdf-thang-x-m-in",
+      "permanent": true
+    },
+    {
+      "source": "/ro/pdf-n-tonuri-de-gri",
+      "destination": "/ro/pdf-n-tonuri-de-gri-pentru-imprimare",
+      "permanent": true
+    },
+    {
+      "source": "/el/excel-pdf",
+      "destination": "/el/pdf",
+      "permanent": true
+    },
+    {
+      "source": "/pl/pdf-w-skali-szaroci",
+      "destination": "/pl/pdf-w-skali-szaro-ci-do-druku",
+      "permanent": true
+    },
+    {
+      "source": "/th/pdf-",
+      "destination": "/th/ruam-pdf",
+      "permanent": true
+    },
+    {
+      "source": "/el/syghoneysi-pdf",
+      "destination": "/el/pdf",
+      "permanent": true
+    },
+    {
+      "source": "/he/excel-pdf",
+      "destination": "/he/pdf",
+      "permanent": true
+    },
+    {
+      "source": "/ar/pdf-",
+      "destination": "/ar/qrn-pdf",
+      "permanent": true
+    },
+    {
+      "source": "/el/-pdf",
+      "destination": "/el/pdf",
+      "permanent": true
+    },
+    {
+      "source": "/ar/-pdf",
+      "destination": "/ar/qrn-pdf",
+      "permanent": true
+    },
+    {
+      "source": "/nl/security",
+      "destination": "/nl/veiligheid-en-vertrouwen",
+      "permanent": true
+    },
+    {
+      "source": "/uk/pdf-ppt",
+      "destination": "/uk/pdf",
+      "permanent": true
+    },
+    {
+      "source": "/da/beskr-pdf",
+      "destination": "/da/besk-r-pdf-margener",
+      "permanent": true
+    },
+    {
+      "source": "/fr/pdf-invers",
+      "destination": "/fr/pdf-inverse",
+      "permanent": true
+    },
+    {
+      "source": "/ro/comparai-pdf",
+      "destination": "/ro/compara",
+      "permanent": true
+    },
+    {
+      "source": "/cs/extrahovat-obrzky",
+      "destination": "/cs/extrahovat-obr-zky-ve-vysok-m-rozli-en-pdf",
+      "permanent": true
+    },
+    {
+      "source": "/tr/txtden-pdfye",
+      "destination": "/tr/txt-den-pdf-ye",
+      "permanent": true
+    },
+    {
+      "source": "/uk/pdf-",
+      "destination": "/uk/pdf",
+      "permanent": true
+    },
+    {
+      "source": "/he/-pdf",
+      "destination": "/he/pdf",
+      "permanent": true
+    },
+    {
+      "source": "/zh/-pdf",
+      "destination": "/zh/pdf-word",
+      "permanent": true
+    },
+    {
+      "source": "/es/extraer-imgenes",
+      "destination": "/es/extraer-im-genes-de-alta-resoluci-n-pdf",
+      "permanent": true
+    },
+    {
+      "source": "/tr/gri-tonlamal-pdf",
+      "destination": "/tr/yazd-rmak-i-in-gri-tonlamal-pdf",
+      "permanent": true
+    },
+    {
+      "source": "/extract-images-pdf",
+      "destination": "/extract-images-from-pdf",
+      "permanent": true
+    },
+    {
+      "source": "/tr/pdfyi-imzala",
+      "destination": "/tr/pdf-yi-imzala",
+      "permanent": true
+    },
+    {
+      "source": "/ja/-pdf-",
+      "destination": "/ja/ocr-pdf",
+      "permanent": true
+    },
+    {
+      "source": "/th/pricing",
+      "destination": "/th/raakhaa",
+      "permanent": true
+    },
+    {
+      "source": "/de/pricing",
+      "destination": "/de/preise",
+      "permanent": true
+    },
+    {
+      "source": "/tr/excelden-csvye",
+      "destination": "/tr/excel-den-csv-ye",
+      "permanent": true
+    },
+    {
+      "source": "/da/grtoner-pdf",
+      "destination": "/da/gr-toner-pdf-til-udskrivning",
+      "permanent": true
+    },
+    {
+      "source": "/uk/ppt-pdf",
+      "destination": "/uk/pdf",
+      "permanent": true
+    },
+    {
+      "source": "/da/pricing",
+      "destination": "/da/prissaetning",
+      "permanent": true
+    },
+    {
+      "source": "/ko/pdf-",
+      "destination": "/ko/ocr-pdf",
+      "permanent": true
+    },
+    {
+      "source": "/ja/remove-pdf",
+      "destination": "/ja/peji-sakujo",
+      "permanent": true
+    },
+    {
+      "source": "/tr/languages",
+      "destination": "/tr/desteklenen-diller",
+      "permanent": true
+    },
+    {
+      "source": "/th/security",
+      "destination": "/th/khwaampl-dphayaelakhwaamnaaechuue-thuue",
+      "permanent": true
+    },
+    {
+      "source": "/zh/remove-pdf-metadata",
+      "destination": "/zh/shan-chu-yuan-shu-ju",
+      "permanent": true
+    },
+    {
+      "source": "/zh/pdf",
+      "destination": "/zh/pdf-word",
+      "permanent": true
+    },
+    {
+      "source": "/uk/excel-pdf",
+      "destination": "/uk/pdf",
+      "permanent": true
+    },
+    {
+      "source": "/it/security",
+      "destination": "/it/sicurezza-e-fiducia",
+      "permanent": true
+    },
+    {
+      "source": "/remove-pdf",
+      "destination": "/remove-pages-pdf",
+      "permanent": true
+    },
+    {
+      "source": "/pt/languages",
+      "destination": "/pt/idiomas-suportados",
+      "permanent": true
+    },
+    {
+      "source": "/id/security",
+      "destination": "/id/keamanan-kepercayaan",
+      "permanent": true
+    },
+    {
+      "source": "/el/ppt-pdf",
+      "destination": "/el/pdf",
+      "permanent": true
+    },
+    {
+      "source": "/da/scan-to-pdf",
+      "destination": "/da/scan-til-pdf",
+      "permanent": true
+    },
+    {
+      "source": "/hi/protect-pdf",
+      "destination": "/hi/piiddiieph-ko-surkssit-rkhen",
+      "permanent": true
+    },
+    {
+      "source": "/uk/remove-pdf",
+      "destination": "/uk/pdf",
+      "permanent": true
+    },
+    {
+      "source": "/he/edit-pdf",
+      "destination": "/he/pdf",
+      "permanent": true
+    },
+    {
+      "source": "/ko/unlock-pdf",
+      "destination": "/ko/pdf-jamgeum-haeje",
+      "permanent": true
+    },
+    {
+      "source": "/fi/pdf-to-image",
+      "destination": "/fi/pdf-kuvaksi",
+      "permanent": true
+    },
+    {
+      "source": "/pt/remove-pdf",
+      "destination": "/pt/remover-paginas",
+      "permanent": true
+    },
+    {
+      "source": "/nl/rotate-pdf",
+      "destination": "/nl/pdf-roteren",
+      "permanent": true
+    },
+    {
+      "source": "/sv/txt-to-pdf",
+      "destination": "/sv/txt-till-pdf",
+      "permanent": true
+    },
+    {
+      "source": "/es/compare",
+      "destination": "/es/comparar",
+      "permanent": true
+    },
+    {
+      "source": "/ko/image-to-pdf",
+      "destination": "/ko/imijireul-pdfro",
+      "permanent": true
+    },
+    {
+      "source": "/ms/pricing",
+      "destination": "/ms/harga",
+      "permanent": true
+    },
+    {
+      "source": "/es/remove-pdf",
+      "destination": "/es/eliminar-paginas",
+      "permanent": true
     }
   ],
   "headers": [
@@ -69,12 +429,6 @@
           "value": "public, max-age=31536000, immutable"
         }
       ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/((?!api/).*)",
-      "destination": "/index.html"
     }
   ]
 }

@@ -232,7 +232,7 @@ export const STATIC_SLUGS: Record<string, Record<StaticPageId, string>> = {
     "compare": "vertaa",
     "languages": "tuetut-kielet"
   },
-  "iw": {
+  "he": {
     "about": "vdvtynv",
     "privacy": "mdynyvt-prtyvt",
     "terms": "tnym-vhgblvt",

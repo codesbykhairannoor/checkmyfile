@@ -20,9 +20,9 @@ import { smartHighlight } from '../utils/textFormatting';
 import { getUiTranslations } from '../i18n/translations';
 import { authTranslations } from '../i18n/authTranslations';
 
-import { DocumentLivePreview } from '../components/common/DocumentLivePreview';
-import { ToolSidebar } from '../components/tools/ToolSidebar';
-import { PdfStudioWorkspace } from '../components/tools/PdfStudioWorkspace';
+const DocumentLivePreview = React.lazy(() => import('../components/common/DocumentLivePreview').then(m => ({ default: m.DocumentLivePreview })));
+const ToolSidebar = React.lazy(() => import('../components/tools/ToolSidebar').then(m => ({ default: m.ToolSidebar })));
+const PdfStudioWorkspace = React.lazy(() => import('../components/tools/PdfStudioWorkspace').then(m => ({ default: m.PdfStudioWorkspace })));
 
 interface ToolPageProps {
   tool: ToolDefinition;

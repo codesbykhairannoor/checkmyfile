@@ -32,19 +32,34 @@ export const SUFFIX_BY_LANG: Record<string, string> = {
 };
 
 /**
- * Ensures title does not exceed 60 characters for optimal SERP display and Ahrefs compliance.
+ * Ensures title fits cleanly within SERP display limits (~60 chars) without mid-word "..." truncation.
  */
 export const cleanMetaTitle = (title: string): string => {
-  let t = title.trim();
-  if (t.length > 60) {
-    if (t.includes(' | HandleMyFile')) {
-      const stripped = t.replace(' | HandleMyFile', '').trim();
-      if (stripped.length <= 60) return stripped;
-      return stripped.slice(0, 57).trim() + '...';
-    }
-    return t.slice(0, 57).trim() + '...';
+  let t = title.replace(/\s+/g, ' ').trim();
+  if (t.length <= 60) return t;
+
+  if (t.includes(' | HandleMyFile')) {
+    t = t.replace(' | HandleMyFile', '').trim();
+    if (t.length <= 60) return t;
   }
-  return t;
+
+  // Try splitting on common subtitle separators and keeping the primary keyword phrase
+  for (const sep of [' — ', ' – ', ' - ', ': ', ' | ']) {
+    if (t.includes(sep)) {
+      const primary = t.split(sep)[0].trim();
+      if (primary.length >= 18 && primary.length <= 60) {
+        return primary;
+      }
+    }
+  }
+
+  // Word-boundary trim without injecting "..."
+  const sliced = t.slice(0, 60);
+  const lastSpace = sliced.lastIndexOf(' ');
+  if (lastSpace >= 25) {
+    return sliced.slice(0, lastSpace).replace(/[\s\-–—:,|]+$/, '').trim();
+  }
+  return sliced.trim();
 };
 
 /**

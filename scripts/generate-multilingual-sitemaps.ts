@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { TOOLS_CATALOG } from '../src/catalog/toolsCatalog';
+import { TOOLS_CATALOG, getLocalizedSeo } from '../src/catalog/toolsCatalog';
 import { SUPPORTED_LANGUAGES } from '../src/i18n/languages';
 import { STATIC_SLUGS, type StaticPageId } from '../src/i18n/staticSlugs';
 
@@ -264,16 +264,21 @@ export const generateMultilingualSitemaps = () => {
   rssXml += `    <lastBuildDate>${nowRfc822}</lastBuildDate>\n`;
   rssXml += `    <atom:link href="${BASE_URL}/feed.xml" rel="self" type="application/rss+xml" />\n`;
 
+  const escapeXml = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
   // Include top tools in RSS feed
   for (const tool of TOOLS_CATALOG) {
     const enSlug = tool.slugs['en'] || tool.id;
     const itemUrl = `${BASE_URL}/${enSlug}`;
+    const enSeo = getLocalizedSeo(tool, 'en');
+    const itemTitle = escapeXml(`${enSeo.h1 || enSeo.title || tool.id} - HandleMyFile`);
+    const itemDesc = escapeXml(enSeo.description || `Private client-side ${tool.id} tool with zero server uploads.`);
     rssXml += `    <item>\n`;
-    rssXml += `      <title>${tool.title || tool.id} - HandleMyFile</title>\n`;
+    rssXml += `      <title>${itemTitle}</title>\n`;
     rssXml += `      <link>${itemUrl}</link>\n`;
     rssXml += `      <guid isPermaLink="true">${itemUrl}</guid>\n`;
     rssXml += `      <pubDate>${nowRfc822}</pubDate>\n`;
-    rssXml += `      <description>${tool.description || `Free client-side ${tool.id} tool with zero server uploads.`}</description>\n`;
+    rssXml += `      <description>${itemDesc}</description>\n`;
     rssXml += `    </item>\n`;
   }
   rssXml += `  </channel>\n`;
@@ -296,12 +301,15 @@ export const generateMultilingualSitemaps = () => {
   for (const tool of TOOLS_CATALOG) {
     const enSlug = tool.slugs['en'] || tool.id;
     const itemUrl = `${BASE_URL}/${enSlug}`;
+    const enSeo = getLocalizedSeo(tool, 'en');
+    const itemTitle = escapeXml(enSeo.h1 || enSeo.title || tool.id);
+    const itemDesc = escapeXml(enSeo.description || `Private client-side ${tool.id} utility.`);
     atomXml += `  <entry>\n`;
-    atomXml += `    <title>${tool.title || tool.id}</title>\n`;
+    atomXml += `    <title>${itemTitle}</title>\n`;
     atomXml += `    <link href="${itemUrl}" />\n`;
     atomXml += `    <id>${itemUrl}</id>\n`;
     atomXml += `    <updated>${nowIso}</updated>\n`;
-    atomXml += `    <summary>${tool.description || `Free private ${tool.id} utility.`}</summary>\n`;
+    atomXml += `    <summary>${itemDesc}</summary>\n`;
     atomXml += `  </entry>\n`;
   }
   atomXml += `</feed>\n`;

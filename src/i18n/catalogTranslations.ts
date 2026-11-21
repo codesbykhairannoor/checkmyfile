@@ -190,6 +190,81 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "Free Browser OCR - Extract Text from Scanned PDF & Images",
       "h1": "Extract Text from Scanned PDFs & Images with Tesseract OCR",
       "description": "Turn non-searchable scanned PDFs and images into editable plain text locally using multi-language WebAssembly OCR workers."
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "Reorder PDF Pages Drag and Drop Free",
+      "h1": "Reorder PDF Pages Easily with Drag and Drop",
+      "description": "Organize and reorder pages in your PDF document visually by dragging and dropping thumbnails. 100% free and local."
+    },
+    "remove-pdf-password-without-password": {
+      "title": "Remove PDF Password Without Password",
+      "h1": "Remove Password from PDF Without Password",
+      "description": "Remove password protection from your PDF files without needing the original password using our advanced unlock tool."
+    },
+    "crop-pdf-margins": {
+      "title": "Crop PDF Margins — Trim White Spaces Online",
+      "h1": "Crop White Margins from PDF Pages",
+      "description": "Remove annoying white margins from your PDF documents for a better reading experience on mobile devices and e-readers. 100% free and local."
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "Grayscale PDF for Printing — Convert Color to B&W",
+      "h1": "Convert Color PDF to Grayscale",
+      "description": "Save printer ink by instantly converting colored PDF documents to black and white or grayscale directly in your browser."
+    },
+    "remove-pdf-author-metadata": {
+      "title": "Remove PDF Author Metadata — Sanitize PDF Properties",
+      "h1": "Sanitize PDF Author Metadata",
+      "description": "Protect your privacy by securely removing author names, creation dates, software footprints, and hidden metadata from your PDF files."
+    },
+    "extract-high-res-images-pdf": {
+      "title": "Extract High-Res Images from PDF — Get Original Photos",
+      "h1": "Extract High-Resolution Images from PDF",
+      "description": "Download embedded photos and graphics from your PDF in their original, uncompressed high resolution. No server uploads."
+    },
+    "compare-pdf-files-visually": {
+      "title": "Compare PDF Files Visually — Find Pixel Differences",
+      "h1": "Visually Compare Two PDF Files",
+      "description": "Upload two PDF documents and instantly highlight the exact pixel differences between them locally in your browser."
+    },
+    "merge-pdf-files-offline": {
+      "title": "Merge Your PDFs Offline in the Browser",
+      "h1": "Merge Your PDFs Offline in the Browser",
+      "description": "Combine multiple highly sensitive PDF documents without an internet connection. Works fully offline after loading."
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "Turn Scanned PDFs into Editable Text",
+      "h1": "Turn Scanned PDFs into Editable Text",
+      "description": "Use advanced browser-based OCR to extract text from scanned images and unsearchable PDFs. 100% free and private."
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "Insert Page Numbers into PDF Documents",
+      "h1": "Insert Page Numbers into PDF Documents",
+      "description": "Easily paginate your PDF files. Add customizable page numbers to headers or footers instantly for free."
+    },
+    "remove-pdf-watermark-online": {
+      "title": "Remove Watermarks from PDF Files Safely",
+      "h1": "Remove Watermarks from PDF Files Safely",
+      "description": "Redact or remove intrusive watermarks from your PDF documents. Fully private, browser-based watermark removal tool."
+    },
+    "repair-pdf": {
+      "title": "Repair PDF Online - Fix Corrupted PDF Files Locally",
+      "h1": "Repair and Recover Corrupted PDF Documents in Your Browser",
+      "description": "Fix broken, damaged, or unreadable PDF files using in-browser WebAssembly recovery. Rebuilds xref tables cleanly with 100% privacy."
+    },
+    "reduce-pdf-size-offline": {
+      "title": "Reduce PDF Size Offline",
+      "h1": "Reduce PDF Size Completely Offline in Your Browser",
+      "description": "Reduce the size of your PDF documents offline directly in your browser without any server uploads. 100% secure."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "Convert PDF to Word Without Losing Formatting — Free DOCX Converter",
+      "h1": "Convert PDF to Word While Preserving Exact Layout & Typography",
+      "description": "Extract text, fonts, tables, and paragraphs from PDF files into Microsoft Word (.docx) format without scrambling layout or losing formatting. 100% private in your browser."
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "Convert Scanned PDF to Text",
+      "h1": "Extract Text from Scanned PDFs with OCR",
+      "description": "Turn non-searchable scanned PDFs and images into editable plain text locally using multi-language WebAssembly OCR workers."
     }
   },
   "id": {
@@ -377,6 +452,86 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "OCR Browser Gratis - Ekstrak Teks dari PDF & Gambar yang Dipindai",
       "h1": "Ekstrak Teks dari PDF & Gambar yang Dipindai dengan Tesseract OCR",
       "description": "Ubah PDF dan gambar pindaian yang tidak dapat dicari menjadi teks biasa yang dapat diedit secara lokal menggunakan pekerja OCR WebAssembly multi-bahasa."
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "Susun Ulang Halaman PDF Seret dan Lepas Gratis",
+      "h1": "Susun Ulang Halaman PDF dengan Mudah dengan Seret dan Lepas",
+      "description": "Atur dan susun ulang halaman dalam dokumen PDF Anda secara visual dengan menyeret dan melepaskan thumbnail. 100% gratis dan lokal."
+    },
+    "remove-pdf-password-without-password": {
+      "title": "Hapus Kata Sandi PDF Tanpa Kata Sandi",
+      "h1": "Hapus Kata Sandi dari PDF Tanpa Kata Sandi",
+      "description": "Hapus perlindungan kata sandi dari file PDF Anda tanpa memerlukan kata sandi asli menggunakan alat pembuka kunci canggih kami."
+    },
+    "crop-pdf-margins": {
+      "title": "Pangkas Margin PDF — Pangkas Spasi Putih Secara Online",
+      "h1": "Pangkas Margin Putih dari Halaman PDF",
+      "description": "Hapus margin putih yang mengganggu dari dokumen PDF Anda untuk pengalaman membaca yang lebih baik di perangkat seluler dan e-reader. 100% gratis dan lokal."
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "PDF skala abu-abu untuk Pencetakan — Ubah Warna menjadi Hitam Putih",
+      "h1": "Konversi PDF Berwarna ke Skala Abu-abu",
+      "description": "Hemat tinta printer dengan langsung mengonversi dokumen PDF berwarna menjadi hitam putih atau skala abu-abu langsung di browser Anda."
+    },
+    "remove-pdf-author-metadata": {
+      "title": "Hapus Metadata Penulis PDF — Sanitasi Properti PDF",
+      "h1": "Sanitasi Metadata Penulis PDF",
+      "description": "Lindungi privasi Anda dengan menghapus secara aman nama penulis, tanggal pembuatan, jejak perangkat lunak, dan metadata tersembunyi dari file PDF Anda."
+    },
+    "extract-high-res-images-pdf": {
+      "title": "Ekstrak Gambar Resolusi Tinggi dari PDF — Dapatkan Foto Asli",
+      "h1": "Ekstrak Gambar Resolusi Tinggi dari PDF",
+      "description": "Unduh foto dan grafik yang disematkan dari PDF Anda dalam resolusi tinggi aslinya yang tidak terkompresi. Tidak ada unggahan server."
+    },
+    "compare-pdf-files-visually": {
+      "title": "Bandingkan File PDF Secara Visual — Temukan Perbedaan Piksel",
+      "h1": "Bandingkan Dua File PDF secara Visual",
+      "description": "Unggah dua dokumen PDF dan langsung sorot perbedaan piksel yang tepat di antara keduanya secara lokal di browser Anda."
+    },
+    "merge-pdf-files-offline": {
+      "title": "Gabungkan PDF Anda Secara Offline di Browser",
+      "h1": "Gabungkan PDF Anda Secara Offline di Browser",
+      "description": "Gabungkan beberapa dokumen PDF yang sangat sensitif tanpa koneksi internet. Bekerja sepenuhnya offline setelah memuat."
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "Ubah PDF yang Dipindai menjadi Teks yang Dapat Diedit",
+      "h1": "Ubah PDF yang Dipindai menjadi Teks yang Dapat Diedit",
+      "description": "Gunakan OCR berbasis browser tingkat lanjut untuk mengekstrak teks dari gambar yang dipindai dan PDF yang tidak dapat dicari. 100% gratis dan pribadi."
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "Masukkan Nomor Halaman ke dalam Dokumen PDF",
+      "h1": "Masukkan Nomor Halaman ke dalam Dokumen PDF",
+      "description": "Buat halaman file PDF Anda dengan mudah. Tambahkan nomor halaman yang dapat disesuaikan ke header atau footer secara instan dan gratis."
+    },
+    "remove-pdf-watermark-online": {
+      "title": "Hapus Tanda Air dari File PDF dengan Aman",
+      "h1": "Hapus Tanda Air dari File PDF dengan Aman",
+      "description": "Sunting atau hapus tanda air yang mengganggu dari dokumen PDF Anda. Alat penghapus tanda air berbasis browser yang sepenuhnya pribadi."
+    },
+    "repair-pdf": {
+      "title": "Perbaiki PDF Rusak Online - Pulihkan File Corrupt",
+      "h1": "Perbaiki dan Pulihkan Dokumen PDF yang Rusak atau Error",
+      "description": "Pulihkan file PDF yang rusak, error, atau tidak bisa dibuka dengan rekonstruksi biner WebAssembly lokal. 100% aman tanpa unggah ke server."
+    },
+    "compress-pdf-for-email": {
+      "title": "Kompres PDF untuk Email",
+      "h1": "Kompres Berkas PDF untuk Lampiran Email",
+      "description": "Atasi batas lampiran Gmail dan Outlook (25MB/20MB). Kecilkan PDF besar secara instan di memori browser tanpa mengunggah dokumen pribadi ke server."
+    },
+    "reduce-pdf-size-offline": {
+      "title": "Kurangi Ukuran PDF Offline",
+      "h1": "Kurangi Ukuran PDF Sepenuhnya Offline di Browser Anda",
+      "description": "Kurangi ukuran dokumen PDF Anda secara offline langsung di browser Anda tanpa unggahan server apa pun. 100% aman."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "Konversi PDF ke Word Tanpa Kehilangan Pemformatan — Konverter DOCX Gratis",
+      "h1": "Konversi PDF ke Word Sambil Mempertahankan Tata Letak & Tipografi yang Tepat",
+      "description": "Ekstrak teks, font, tabel, dan paragraf dari file PDF ke format Microsoft Word (.docx) tanpa mengacak tata letak atau kehilangan format. 100% pribadi di browser Anda."
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "Konversi PDF yang Dipindai ke Teks",
+      "h1": "Ekstrak Teks dari PDF yang Dipindai dengan OCR",
+      "description": "Ubah PDF dan gambar pindaian yang tidak dapat dicari menjadi teks biasa yang dapat diedit secara lokal menggunakan pekerja OCR WebAssembly multi-bahasa."
     }
   },
   "es": {
@@ -543,6 +698,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
     "ocr-pdf": {
       "title": "OCR de navegador gratuito: extraiga texto de imágenes y PDF escaneados",
       "h1": "Extraiga texto de imágenes y archivos PDF escaneados con Tesseract OCR",
+      "description": "Convierta archivos PDF e imágenes escaneados que no se pueden buscar en texto sin formato editable localmente utilizando los trabajadores OCR de WebAssembly en varios idiomas."
+    },
+    "combine-multiple-pdf-files": {
+      "title": "Combine varios archivos PDF: combine archivos PDF en línea gratis",
+      "h1": "Combine varios archivos PDF en línea (gratis y del lado del cliente)",
+      "description": "Fusione y combine varios archivos PDF en un solo documento. Procesamiento local instantáneo, 100% privado, sin límite."
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "Reordenar páginas PDF Arrastrar y soltar gratis",
+      "h1": "Reordene páginas PDF fácilmente con arrastrar y soltar",
+      "description": "Organice y reordene las páginas de su documento PDF visualmente arrastrando y soltando miniaturas. 100% gratis y local."
+    },
+    "sign-pdf-without-registration": {
+      "title": "Firme PDF en línea sin registrarse",
+      "h1": "Firma electrónica de documentos PDF en línea sin registro",
+      "description": "Coloque su firma electrónica en cualquier archivo PDF al instante. No se requiere cuenta, no es necesario registrarse, 100% privado y gratuito."
+    },
+    "remove-pdf-password-without-password": {
+      "title": "Eliminar contraseña de PDF sin contraseña",
+      "h1": "Eliminar contraseña de PDF sin contraseña",
+      "description": "Elimine la protección con contraseña de sus archivos PDF sin necesidad de la contraseña original utilizando nuestra herramienta de desbloqueo avanzada."
+    },
+    "crop-pdf-margins": {
+      "title": "Recortar márgenes de PDF: recortar espacios en blanco en línea",
+      "h1": "Recortar márgenes blancos de páginas PDF",
+      "description": "Elimine los molestos márgenes blancos de sus documentos PDF para disfrutar de una mejor experiencia de lectura en dispositivos móviles y lectores electrónicos. 100% gratis y local."
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "PDF en escala de grises para imprimir: convierta color a blanco y negro",
+      "h1": "Convertir PDF en color a escala de grises",
+      "description": "Ahorre tinta de la impresora al convertir instantáneamente documentos PDF en color a blanco y negro o escala de grises directamente en su navegador."
+    },
+    "remove-pdf-author-metadata": {
+      "title": "Eliminar metadatos de autor de PDF: desinfectar las propiedades de PDF",
+      "h1": "Desinfectar metadatos de la autora PDF",
+      "description": "Proteja su privacidad eliminando de forma segura los nombres de los autores, las fechas de creación, las huellas del software y los metadatos ocultos de sus archivos PDF."
+    },
+    "extract-high-res-images-pdf": {
+      "title": "Extraiga imágenes de alta resolución de PDF: obtenga fotografías originales",
+      "h1": "Extraiga imágenes de alta resolución de PDF",
+      "description": "Descargue fotografías y gráficos incrustados desde su PDF en su alta resolución original sin comprimir. No hay cargas del servidor."
+    },
+    "compare-pdf-files-visually": {
+      "title": "Compare archivos PDF visualmente: encuentre diferencias de píxeles",
+      "h1": "Comparar visualmente dos archivos PDF",
+      "description": "Cargue dos documentos PDF y resalte instantáneamente las diferencias exactas de píxeles entre ellos localmente en su navegador."
+    },
+    "merge-pdf-files-offline": {
+      "title": "Combine sus archivos PDF sin conexión en el navegador",
+      "h1": "Combine sus archivos PDF sin conexión en el navegador",
+      "description": "Combine varios documentos PDF altamente confidenciales sin conexión a Internet. Funciona completamente sin conexión después de la carga."
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "Convierta archivos PDF escaneados en texto editable",
+      "h1": "Convierta archivos PDF escaneados en texto editable",
+      "description": "Utilice OCR avanzado basado en navegador para extraer texto de imágenes escaneadas y archivos PDF que no se pueden buscar. 100% gratis y privado."
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "Insertar números de página en documentos PDF",
+      "h1": "Insertar números de página en documentos PDF",
+      "description": "Pagina fácilmente tus archivos PDF. Agregue números de página personalizables a encabezados o pies de página al instante y de forma gratuita."
+    },
+    "remove-pdf-watermark-online": {
+      "title": "Eliminar marcas de agua de archivos PDF de forma segura",
+      "h1": "Eliminar marcas de agua de archivos PDF de forma segura",
+      "description": "Redacte o elimine marcas de agua intrusivas de sus documentos PDF. Herramienta de eliminación de marcas de agua totalmente privada y basada en navegador."
+    },
+    "repair-pdf": {
+      "title": "Reparar PDF Online - Recuperar Archivos PDF Dañados",
+      "h1": "Repara y Recupera Documentos PDF Dañados en tu Navegador",
+      "description": "Soluciona archivos PDF rotos o ilegibles con recuperación WebAssembly local. Reconstruye tablas xref con 100% de privacidad."
+    },
+    "compress-pdf-for-email": {
+      "title": "Comprimir PDF para Correo",
+      "h1": "Comprimir Archivos PDF para Adjuntos de Correo Electrónico",
+      "description": "Supera los límites de archivos adjuntos de Gmail y Outlook. Comprime PDFs grandes bajo 25MB localmente sin subir archivos a ningún servidor."
+    },
+    "compress-pdf-to-100kb": {
+      "title": "Comprime PDF a 100 KB sin perder calidad",
+      "h1": "Comprime PDF a 100 KB sin perder calidad",
+      "description": "Reduzca sus archivos PDF a 100 KB o menos directamente en su navegador. Perfecto para archivos adjuntos de correo electrónico y para compartir rápidamente. 100% privado."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "Comprima PDF sin perder calidad: alta definición sin pérdidas",
+      "h1": "Comprima documentos PDF en línea sin perder calidad",
+      "description": "Reduzca el tamaño del archivo PDF manteniendo los vectores y textos de alta resolución perfectamente nítidos. Procesamiento 100% privado del lado del cliente."
+    },
+    "reduce-pdf-size-offline": {
+      "title": "Reducir el tamaño del PDF sin conexión: compresor de PDF local",
+      "h1": "Reduzca el tamaño del PDF completamente sin conexión en su navegador",
+      "description": "Reduzca el tamaño de sus documentos PDF sin conexión directamente en su navegador sin necesidad de cargarlos en el servidor. 100% seguro."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "Convierta PDF a Word sin perder formato: convertidor DOCX gratuito",
+      "h1": "Convierta PDF a Word manteniendo el diseño y la tipografía exactos",
+      "description": "Extraiga texto, fuentes, tablas y párrafos de archivos PDF al formato de Microsoft Word (.docx) sin alterar el diseño ni perder el formato. 100% privado en tu navegador."
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "Convierta PDF escaneado a texto",
+      "h1": "Extraiga texto de archivos PDF escaneados con OCR",
       "description": "Convierta archivos PDF e imágenes escaneados que no se pueden buscar en texto sin formato editable localmente utilizando los trabajadores OCR de WebAssembly en varios idiomas."
     }
   },
@@ -711,6 +966,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "OCR de navigateur gratuit - Extraire le texte des PDF et des images numérisés",
       "h1": "Extrayez le texte des PDF et des images numérisés avec Tesseract OCR",
       "description": "Transformez des PDF et des images numérisés non consultables en texte brut modifiable localement à l'aide des outils OCR WebAssembly multilingues."
+    },
+    "combine-multiple-pdf-files": {
+      "title": "Combinez plusieurs fichiers PDF",
+      "h1": "Combinez plusieurs fichiers PDF en ligne (gratuit et côté client)",
+      "description": "Fusionnez et combinez plusieurs fichiers PDF en un seul document. Traitement local instantané, 100% privé, sans limite."
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "Réorganiser les pages PDF Glisser-déposer gratuitement",
+      "h1": "Réorganisez facilement les pages PDF par glisser-déposer",
+      "description": "Organisez et réorganisez visuellement les pages de votre document PDF en faisant glisser et en déposant des vignettes. 100% gratuit et local."
+    },
+    "sign-pdf-without-registration": {
+      "title": "Signez un PDF en ligne sans inscription",
+      "h1": "Signer électroniquement des documents PDF en ligne sans inscription",
+      "description": "Placez instantanément votre signature électronique sur n’importe quel fichier PDF. Aucun compte requis, aucune inscription, 100% privé et gratuit."
+    },
+    "remove-pdf-password-without-password": {
+      "title": "Supprimer le mot de passe PDF sans mot de passe",
+      "h1": "Supprimer le mot de passe du PDF sans mot de passe",
+      "description": "Supprimez la protection par mot de passe de vos fichiers PDF sans avoir besoin du mot de passe d'origine à l'aide de notre outil de déverrouillage avancé."
+    },
+    "crop-pdf-margins": {
+      "title": "Recadrer les marges du PDF – Couper les espaces blancs en ligne",
+      "h1": "Recadrer les marges blanches des pages PDF",
+      "description": "Supprimez les marges blanches gênantes de vos documents PDF pour une meilleure expérience de lecture sur les appareils mobiles et les liseuses. 100% gratuit et local."
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "PDF en niveaux de gris pour l'impression - Convertir la couleur en noir et blanc",
+      "h1": "Convertir un PDF couleur en niveaux de gris",
+      "description": "Économisez l'encre de l'imprimante en convertissant instantanément les documents PDF couleur en noir et blanc ou en niveaux de gris directement dans votre navigateur."
+    },
+    "remove-pdf-author-metadata": {
+      "title": "Supprimer les métadonnées de l'auteur PDF - Nettoyer les propriétés PDF",
+      "h1": "Désinfecter les métadonnées de l'auteur PDF",
+      "description": "Protégez votre confidentialité en supprimant en toute sécurité les noms d'auteurs, les dates de création, les empreintes logicielles et les métadonnées cachées de vos fichiers PDF."
+    },
+    "extract-high-res-images-pdf": {
+      "title": "Extrayez des images haute résolution à partir d'un PDF - Obtenez des photos originales",
+      "h1": "Extraire des images haute résolution à partir d'un PDF",
+      "description": "Téléchargez des photos et des graphiques intégrés à partir de votre PDF dans leur haute résolution originale non compressée. Aucun téléchargement sur le serveur."
+    },
+    "compare-pdf-files-visually": {
+      "title": "Comparez visuellement les fichiers PDF – Trouvez les différences de pixels",
+      "h1": "Comparez visuellement deux fichiers PDF",
+      "description": "Téléchargez deux documents PDF et mettez instantanément en évidence les différences exactes en pixels entre eux localement dans votre navigateur."
+    },
+    "merge-pdf-files-offline": {
+      "title": "Fusionnez vos PDF hors ligne dans le navigateur",
+      "h1": "Fusionnez vos PDF hors ligne dans le navigateur",
+      "description": "Combinez plusieurs documents PDF hautement sensibles sans connexion Internet. Fonctionne entièrement hors ligne après le chargement."
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "Transformez les PDF numérisés en texte modifiable",
+      "h1": "Transformez les PDF numérisés en texte modifiable",
+      "description": "Utilisez l'OCR avancé basé sur un navigateur pour extraire le texte des images numérisées et des PDF impossibles à rechercher. 100% gratuit et privé."
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "Insérer des numéros de page dans des documents PDF",
+      "h1": "Insérer des numéros de page dans des documents PDF",
+      "description": "Paginez facilement vos fichiers PDF. Ajoutez instantanément et gratuitement des numéros de page personnalisables aux en-têtes ou aux pieds de page."
+    },
+    "remove-pdf-watermark-online": {
+      "title": "Supprimez les filigranes des fichiers PDF en toute sécurité",
+      "h1": "Supprimez les filigranes des fichiers PDF en toute sécurité",
+      "description": "Rédigez ou supprimez les filigranes intrusifs de vos documents PDF. Outil de suppression de filigrane entièrement privé, basé sur un navigateur."
+    },
+    "repair-pdf": {
+      "title": "Réparer PDF en Ligne - Corriger Fichiers Endommagés",
+      "h1": "Réparez et Récupérez des Documents PDF Corrompus",
+      "description": "Réparez les fichiers PDF illisibles ou endommagés directement dans votre navigateur via WebAssembly avec 100 % de confidentialité."
+    },
+    "compress-pdf-for-email": {
+      "title": "Compresser PDF pour Email",
+      "h1": "Compresser les Fichiers PDF pour les Pièces Jointes Email",
+      "description": "Contournez les limites de pièces jointes de Gmail et Outlook. Compressez les gros PDFs sous 25Mo localement sans aucun téléchargement serveur."
+    },
+    "compress-pdf-to-100kb": {
+      "title": "Compresser le PDF à 100 Ko sans perte de qualité",
+      "h1": "Compresser le PDF à 100 Ko sans perte de qualité",
+      "description": "Réduisez vos fichiers PDF à 100 Ko ou moins directement dans votre navigateur. Parfait pour les pièces jointes aux e-mails et le partage rapide. 100% privé."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "Compresser un PDF sans perte de qualité",
+      "h1": "Compresser des documents PDF en ligne sans perte de qualité",
+      "description": "Réduisez la taille des fichiers PDF tout en conservant des vecteurs et des textes haute résolution parfaitement nets. Traitement 100 % privé côté client."
+    },
+    "reduce-pdf-size-offline": {
+      "title": "Réduire la taille du PDF hors ligne",
+      "h1": "Réduisez la taille du PDF complètement hors ligne dans votre navigateur",
+      "description": "Réduisez la taille de vos documents PDF hors ligne directement dans votre navigateur sans aucun téléchargement sur le serveur. 100% sécurisé."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "Convertissez un PDF en Word sans perdre le formatage - Convertisseur DOCX gratuit",
+      "h1": "Convertissez un PDF en Word tout en préservant la mise en page et la typographie exactes",
+      "description": "Extrayez le texte, les polices, les tableaux et les paragraphes des fichiers PDF au format Microsoft Word (.docx) sans brouiller la mise en page ni perdre le formatage. 100% privé dans votre navigateur."
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "Convertir un PDF numérisé en texte",
+      "h1": "Extraire le texte des PDF numérisés avec OCR",
+      "description": "Transformez des PDF et des images numérisés non consultables en texte brut modifiable localement à l'aide des outils OCR WebAssembly multilingues."
     }
   },
   "de": {
@@ -877,6 +1232,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
     "ocr-pdf": {
       "title": "Kostenlose Browser-OCR – Text aus gescannten PDFs und Bildern extrahieren",
       "h1": "Extrahieren Sie Text aus gescannten PDFs und Bildern mit Tesseract OCR",
+      "description": "Wandeln Sie nicht durchsuchbare gescannte PDFs und Bilder mit mehrsprachigen WebAssembly-OCR-Workern lokal in bearbeitbaren Klartext um."
+    },
+    "combine-multiple-pdf-files": {
+      "title": "Kombinieren Sie mehrere PDF-Dateien",
+      "h1": "Kombinieren Sie mehrere PDF-Dateien online (kostenlos und clientseitig)",
+      "description": "Führen Sie mehrere PDF-Dateien zusammen und kombinieren Sie sie zu einem einzigen Dokument. Sofortige lokale Verarbeitung, 100 % privat, keine Begrenzung."
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "Ordnen Sie PDF-Seiten kostenlos per Drag & Drop neu an",
+      "h1": "Ordnen Sie PDF-Seiten einfach per Drag & Drop neu an",
+      "description": "Organisieren und ordnen Sie Seiten in Ihrem PDF-Dokument visuell neu, indem Sie Miniaturansichten per Drag & Drop verschieben. 100 % kostenlos und lokal."
+    },
+    "sign-pdf-without-registration": {
+      "title": "Unterschreiben Sie PDFs online ohne Registrierung",
+      "h1": "PDF-Dokumente online ohne Registrierung elektronisch signieren",
+      "description": "Platzieren Sie Ihre elektronische Signatur sofort in jeder PDF-Datei. Kein Konto erforderlich, keine Anmeldung, 100 % privat und kostenlos."
+    },
+    "remove-pdf-password-without-password": {
+      "title": "PDF-Passwort ohne Passwort entfernen",
+      "h1": "Entfernen Sie das Passwort aus PDF ohne Passwort",
+      "description": "Entfernen Sie den Passwortschutz aus Ihren PDF-Dateien, ohne dass Sie das Originalpasswort benötigen, indem Sie unser erweitertes Entsperrtool verwenden."
+    },
+    "crop-pdf-margins": {
+      "title": "PDF-Ränder zuschneiden – Leerräume online kürzen",
+      "h1": "Weiße Ränder von PDF-Seiten zuschneiden",
+      "description": "Entfernen Sie störende weiße Ränder aus Ihren PDF-Dokumenten für ein besseres Leseerlebnis auf Mobilgeräten und E-Readern. 100 % kostenlos und lokal."
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "Graustufen-PDF zum Drucken – Konvertieren Sie Farbe in Schwarzweiß",
+      "h1": "Konvertieren Sie Farb-PDF in Graustufen",
+      "description": "Sparen Sie Druckertinte, indem Sie farbige PDF-Dokumente direkt in Ihrem Browser sofort in Schwarzweiß oder Graustufen konvertieren."
+    },
+    "remove-pdf-author-metadata": {
+      "title": "PDF-Autor-Metadaten entfernen – PDF-Eigenschaften bereinigen",
+      "h1": "Bereinigen Sie PDF-Autor-Metadaten",
+      "description": "Schützen Sie Ihre Privatsphäre, indem Sie Autorennamen, Erstellungsdaten, Software-Footprints und versteckte Metadaten sicher aus Ihren PDF-Dateien entfernen."
+    },
+    "extract-high-res-images-pdf": {
+      "title": "Extrahieren Sie hochauflösende Bilder aus PDF – erhalten Sie Originalfotos",
+      "h1": "Extrahieren Sie hochauflösende Bilder aus PDF",
+      "description": "Laden Sie eingebettete Fotos und Grafiken aus Ihrem PDF in ihrer ursprünglichen, unkomprimierten hohen Auflösung herunter. Keine Server-Uploads."
+    },
+    "compare-pdf-files-visually": {
+      "title": "Vergleichen Sie PDF-Dateien visuell – finden Sie Pixelunterschiede",
+      "h1": "Vergleichen Sie zwei PDF-Dateien visuell",
+      "description": "Laden Sie zwei PDF-Dokumente hoch und markieren Sie sofort die genauen Pixelunterschiede zwischen ihnen lokal in Ihrem Browser."
+    },
+    "merge-pdf-files-offline": {
+      "title": "Führen Sie Ihre PDFs offline im Browser zusammen",
+      "h1": "Führen Sie Ihre PDFs offline im Browser zusammen",
+      "description": "Kombinieren Sie mehrere hochsensible PDF-Dokumente ohne Internetverbindung. Funktioniert nach dem Laden vollständig offline."
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "Verwandeln Sie gescannte PDFs in bearbeitbaren Text",
+      "h1": "Verwandeln Sie gescannte PDFs in bearbeitbaren Text",
+      "description": "Verwenden Sie erweiterte browserbasierte OCR, um Text aus gescannten Bildern und nicht durchsuchbaren PDFs zu extrahieren. 100 % kostenlos und privat."
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "Fügen Sie Seitenzahlen in PDF-Dokumente ein",
+      "h1": "Fügen Sie Seitenzahlen in PDF-Dokumente ein",
+      "description": "Paginieren Sie Ihre PDF-Dateien ganz einfach. Fügen Sie sofort und kostenlos anpassbare Seitenzahlen zu Kopf- oder Fußzeilen hinzu."
+    },
+    "remove-pdf-watermark-online": {
+      "title": "Entfernen Sie Wasserzeichen sicher aus PDF-Dateien",
+      "h1": "Entfernen Sie Wasserzeichen sicher aus PDF-Dateien",
+      "description": "Schwärzen oder entfernen Sie störende Wasserzeichen aus Ihren PDF-Dokumenten. Vollständig privates, browserbasiertes Tool zum Entfernen von Wasserzeichen."
+    },
+    "repair-pdf": {
+      "title": "PDF Reparieren Online - Beschädigte PDFs Wiederherstellen",
+      "h1": "Beschädigte PDF-Dokumente Direkt im Browser Reparieren",
+      "description": "Stellen Sie defekte oder unlesbare PDF-Dateien lokal per WebAssembly wieder her. Rekonstruiert XRef-Tabellen ohne Server-Upload."
+    },
+    "compress-pdf-for-email": {
+      "title": "PDF für E-Mail komprimieren",
+      "h1": "PDF-Dateien für E-Mail-Anhänge komprimieren",
+      "description": "Umgehe die Anhang-Grenzen von Gmail und Outlook. Komprimiere große PDFs unter 25MB lokal ohne Serveruploads."
+    },
+    "compress-pdf-to-100kb": {
+      "title": "Komprimieren Sie PDF auf 100 KB, ohne an Qualität zu verlieren",
+      "h1": "Komprimieren Sie PDF auf 100 KB, ohne an Qualität zu verlieren",
+      "description": "Verkleinern Sie Ihre PDF-Dateien direkt in Ihrem Browser auf 100 KB oder weniger. Perfekt für E-Mail-Anhänge und schnelles Teilen. 100 % privat."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "Komprimieren Sie PDF ohne Qualitätsverlust",
+      "h1": "Komprimieren Sie PDF-Dokumente online, ohne an Qualität zu verlieren",
+      "description": "Reduzieren Sie die Größe von PDF-Dateien und sorgen Sie gleichzeitig dafür, dass hochauflösende Vektoren und Texte perfekt scharf bleiben. 100 % private, kundenseitige Abwicklung."
+    },
+    "reduce-pdf-size-offline": {
+      "title": "PDF-Größe offline reduzieren",
+      "h1": "Reduzieren Sie die PDF-Größe vollständig offline in Ihrem Browser",
+      "description": "Reduzieren Sie die Größe Ihrer PDF-Dokumente offline direkt in Ihrem Browser, ohne Server-Uploads. 100 % sicher."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "Konvertieren Sie PDF in Word, ohne die Formatierung zu verlieren – kostenloser DOCX-Konverter",
+      "h1": "Konvertieren Sie PDF in Word und behalten Sie dabei das exakte Layout und die Typografie bei",
+      "description": "Extrahieren Sie Text, Schriftarten, Tabellen und Absätze aus PDF-Dateien in das Microsoft Word-Format (.docx), ohne das Layout zu verfälschen oder Formatierungen zu verlieren. 100 % privat in Ihrem Browser."
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "Konvertieren Sie gescannte PDFs in Text",
+      "h1": "Extrahieren Sie Text aus gescannten PDFs mit OCR",
       "description": "Wandeln Sie nicht durchsuchbare gescannte PDFs und Bilder mit mehrsprachigen WebAssembly-OCR-Workern lokal in bearbeitbaren Klartext um."
     }
   },
@@ -1045,6 +1500,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "無料のブラウザ OCR - スキャンした PDF と画像からテキストを抽出",
       "h1": "Tesseract OCR を使用してスキャンした PDF と画像からテキストを抽出",
       "description": "多言語の WebAssembly OCR ワーカーを使用して、検索不可能なスキャンされた PDF と画像をローカルで編集可能なプレーン テキストに変換します。"
+    },
+    "combine-multiple-pdf-files": {
+      "title": "複数の PDF ファイルを結合",
+      "h1": "複数の PDF ファイルをオンラインで結合 (無料およびクライアント側)",
+      "description": "複数の PDF ファイルを 1 つのドキュメントに結合します。 即時ローカル処理、100% プライベート、制限なし。"
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "PDF ページを並べ替える 無料のドラッグ アンド ドロップ",
+      "h1": "ドラッグ アンド ドロップで PDF ページを簡単に並べ替える",
+      "description": "サムネイルをドラッグ アンド ドロップすることで、PDF ドキュメント内のページを視覚的に整理および並べ替えます。 完全に無料でローカルです。"
+    },
+    "sign-pdf-without-registration": {
+      "title": "登録なしでオンラインで PDF に署名",
+      "h1": "登録なしでオンラインで PDF ドキュメントに電子署名",
+      "description": "PDF ファイルに電子署名を即座に追加します。 アカウントもサインアップも必要なく、完全にプライベートで無料です。"
+    },
+    "remove-pdf-password-without-password": {
+      "title": "パスワードなしで PDF パスワードを削除",
+      "h1": "パスワードなしで PDF からパスワードを削除する",
+      "description": "高度なロック解除ツールを使用すると、元のパスワードを必要とせずに PDF ファイルからパスワード保護を解除できます。"
+    },
+    "crop-pdf-margins": {
+      "title": "PDF の余白をトリミング — オンラインで空白をトリミング",
+      "h1": "PDF ページから白い余白をトリミングする",
+      "description": "PDF ドキュメントから煩わしい白い余白を削除して、モバイル デバイスや電子書籍リーダーでの読書体験を向上させます。 完全に無料でローカルです。"
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "印刷用のグレースケール PDF — カラーを白黒に変換",
+      "h1": "カラー PDF をグレースケールに変換",
+      "description": "カラーの PDF ドキュメントをブラウザーで直接白黒またはグレースケールに瞬時に変換することで、プリンターのインクを節約します。"
+    },
+    "remove-pdf-author-metadata": {
+      "title": "PDF 作成者のメタデータを削除する — PDF プロパティをサニタイズする",
+      "h1": "PDF 作成者のメタデータをサニタイズする",
+      "description": "PDF ファイルから作成者名、作成日、ソフトウェアのフットプリント、非表示のメタデータを安全に削除してプライバシーを保護します。"
+    },
+    "extract-high-res-images-pdf": {
+      "title": "PDF から高解像度画像を抽出 — オリジナルの写真を取得",
+      "h1": "PDF から高解像度画像を抽出",
+      "description": "PDF から埋め込まれた写真やグラフィックを、元の非圧縮の高解像度でダウンロードします。 サーバーへのアップロードはありません。"
+    },
+    "compare-pdf-files-visually": {
+      "title": "PDF ファイルを視覚的に比較 — ピクセルの違いを見つける",
+      "h1": "2 つの PDF ファイルを視覚的に比較する",
+      "description": "2 つの PDF ドキュメントをアップロードすると、ローカルのブラウザでそれらの間の正確なピクセルの違いが即座に強調表示されます。"
+    },
+    "merge-pdf-files-offline": {
+      "title": "ブラウザでオフラインで PDF を結合する",
+      "h1": "ブラウザでオフラインで PDF を結合する",
+      "description": "インターネット接続なしで、複数の機密性の高い PDF ドキュメントを結合します。 ロード後は完全にオフラインで動作します。"
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "スキャンした PDF を編集可能なテキストに変換する",
+      "h1": "スキャンした PDF を編集可能なテキストに変換する",
+      "description": "高度なブラウザベースの OCR を使用して、スキャンされた画像や検索不可能な PDF からテキストを抽出します。 完全に無料でプライベートです。"
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "PDF ドキュメントにページ番号を挿入する",
+      "h1": "PDF ドキュメントにページ番号を挿入する",
+      "description": "PDF ファイルのページネーションを簡単に行えます。 カスタマイズ可能なページ番号をヘッダーまたはフッターに無料ですぐに追加できます。"
+    },
+    "remove-pdf-watermark-online": {
+      "title": "PDF ファイルからウォーターマークを安全に削除する",
+      "h1": "PDF ファイルからウォーターマークを安全に削除する",
+      "description": "PDF ドキュメントから邪魔な透かしを編集または削除します。 完全にプライベートなブラウザベースのウォーターマーク除去ツール。"
+    },
+    "repair-pdf": {
+      "title": "PDF修復オンライン — 破損したPDFをブラウザで復元",
+      "h1": "破損・エラーになったPDF文書をローカルで修復・復元",
+      "description": "WebAssemblyによるローカル修復で開けない・破損したPDFファイルを復元。サーバー送信なしで100%安全。"
+    },
+    "compress-pdf-for-email": {
+      "title": "メール添付用PDF圧縮 — 25MB以下に軽量化",
+      "h1": "メール添付用にPDFファイルを圧縮",
+      "description": "GmailやOutlookの容量制限（25MB/20MB）に対応。ブラウザ上でサーバー送信ゼロのままPDFを高速圧縮。"
+    },
+    "compress-pdf-to-100kb": {
+      "title": "品質を損なうことなくPDFを100KBに圧縮",
+      "h1": "品質を損なうことなくPDFを100KBに圧縮",
+      "description": "ブラウザで PDF ファイルを直接 100KB 以下に縮小します。 電子メールの添付や高速共有に最適です。 100%プライベートです。"
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "品質を落とさずに PDF を圧縮",
+      "h1": "品質を損なうことなく PDF ドキュメントをオンラインで圧縮",
+      "description": "高解像度のベクターとテキストを完璧に鮮明に保ちながら、PDF ファイルのサイズを削減します。 100% プライベートなクライアント側処理。"
+    },
+    "reduce-pdf-size-offline": {
+      "title": "オフラインで PDF サイズを縮小",
+      "h1": "ブラウザ上でオフラインで PDF サイズを完全に縮小",
+      "description": "サーバーにアップロードせずに、ブラウザーで直接 PDF ドキュメントのサイズをオフラインで縮小します。 100%安全です。"
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "書式を失わずに PDF を Word に変換 — 無料の DOCX コンバータ",
+      "h1": "正確なレイアウトとタイポグラフィを維持しながら PDF を Word に変換",
+      "description": "レイアウトを乱したり書式を失うことなく、PDF ファイルからテキスト、フォント、表、段落を Microsoft Word (.docx) 形式に抽出します。 ブラウザ内では 100% プライベートです。"
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "スキャンした PDF をテキストに変換",
+      "h1": "OCR を使用してスキャンした PDF からテキストを抽出する",
+      "description": "多言語の WebAssembly OCR ワーカーを使用して、検索不可能なスキャンされた PDF と画像をローカルで編集可能なプレーン テキストに変換します。"
     }
   },
   "pt": {
@@ -1211,6 +1766,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
     "ocr-pdf": {
       "title": "OCR de navegador gratuito - Extraia texto de PDF e imagens digitalizados",
       "h1": "Extraia texto de PDFs e imagens digitalizados com Tesseract OCR",
+      "description": "Transforme PDFs e imagens digitalizados não pesquisáveis ​​em texto simples editável localmente usando trabalhadores de OCR WebAssembly multilíngues."
+    },
+    "combine-multiple-pdf-files": {
+      "title": "Combine vários arquivos PDF",
+      "h1": "Combine vários arquivos PDF online (gratuito e do lado do cliente)",
+      "description": "Mesclar e combinar vários arquivos PDF em um único documento. Processamento local instantâneo, 100% privado, sem limite."
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "Reordenar páginas PDF, arrastar e soltar gratuitamente",
+      "h1": "Reordene páginas PDF facilmente arrastando e soltando",
+      "description": "Organize e reordene visualmente as páginas do seu documento PDF arrastando e soltando miniaturas. 100% gratuito e local."
+    },
+    "sign-pdf-without-registration": {
+      "title": "Assine PDF Online Sem Registro",
+      "h1": "Assine documentos PDF on-line sem registro",
+      "description": "Coloque sua assinatura eletrônica em qualquer arquivo PDF instantaneamente. Nenhuma conta necessária, nenhuma inscrição, 100% privada e gratuita."
+    },
+    "remove-pdf-password-without-password": {
+      "title": "Remover senha do PDF sem senha",
+      "h1": "Remover senha do PDF sem senha",
+      "description": "Remova a proteção por senha dos seus arquivos PDF sem precisar da senha original usando nossa ferramenta avançada de desbloqueio."
+    },
+    "crop-pdf-margins": {
+      "title": "Cortar margens do PDF — Aparar espaços em branco online",
+      "h1": "Cortar margens brancas de páginas PDF",
+      "description": "Remova as irritantes margens brancas dos seus documentos PDF para uma melhor experiência de leitura em dispositivos móveis e leitores eletrônicos. 100% gratuito e local."
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "PDF em escala de cinza para impressão — Converta cores em preto e branco",
+      "h1": "Converter PDF colorido em escala de cinza",
+      "description": "Economize tinta da impressora convertendo instantaneamente documentos PDF coloridos em preto e branco ou em escala de cinza diretamente no seu navegador."
+    },
+    "remove-pdf-author-metadata": {
+      "title": "Remover metadados do autor do PDF — Sanitizar propriedades do PDF",
+      "h1": "Limpe os metadados do autor do PDF",
+      "description": "Proteja sua privacidade removendo com segurança nomes de autores, datas de criação, pegadas de software e metadados ocultos de seus arquivos PDF."
+    },
+    "extract-high-res-images-pdf": {
+      "title": "Extraia imagens de alta resolução de PDF – Obtenha fotos originais",
+      "h1": "Extraia imagens de alta resolução de PDF",
+      "description": "Baixe fotos e gráficos incorporados do seu PDF em sua alta resolução original e não compactada. Nenhum upload de servidor."
+    },
+    "compare-pdf-files-visually": {
+      "title": "Compare arquivos PDF visualmente – Encontre diferenças de pixels",
+      "h1": "Compare visualmente dois arquivos PDF",
+      "description": "Carregue dois documentos PDF e destaque instantaneamente as diferenças exatas de pixels entre eles localmente no seu navegador."
+    },
+    "merge-pdf-files-offline": {
+      "title": "Mesclar seus PDFs off-line no navegador",
+      "h1": "Mesclar seus PDFs off-line no navegador",
+      "description": "Combine vários documentos PDF altamente confidenciais sem conexão com a Internet. Funciona totalmente offline após o carregamento."
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "Transforme PDFs digitalizados em texto editável",
+      "h1": "Transforme PDFs digitalizados em texto editável",
+      "description": "Use OCR avançado baseado em navegador para extrair texto de imagens digitalizadas e PDFs não pesquisáveis. 100% gratuito e privado."
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "Insira números de página em documentos PDF",
+      "h1": "Insira números de página em documentos PDF",
+      "description": "Pagine facilmente seus arquivos PDF. Adicione números de página personalizáveis ​​a cabeçalhos ou rodapés instantaneamente e gratuitamente."
+    },
+    "remove-pdf-watermark-online": {
+      "title": "Remova marcas d'água de arquivos PDF com segurança",
+      "h1": "Remova marcas d'água de arquivos PDF com segurança",
+      "description": "Edite ou remova marcas d'água intrusivas de seus documentos PDF. Ferramenta de remoção de marca d'água totalmente privada baseada em navegador."
+    },
+    "repair-pdf": {
+      "title": "Reparar PDF Online - Recuperar Arquivos Corrompidos",
+      "h1": "Repare e Recupere Documentos PDF Corrompidos no Navegador",
+      "description": "Corrija PDFs danificados ou ilegíveis usando recuperação local em WebAssembly com 100% de privacidade e zero uploads."
+    },
+    "compress-pdf-for-email": {
+      "title": "Comprimir PDF para E-mail — Abaixo de 25MB",
+      "h1": "Comprimir Arquivos PDF para Anexos de E-mail",
+      "description": "Supere o limite de anexos do Gmail e Outlook (25MB/20MB). Reduza PDFs grandes no navegador com zero uploads."
+    },
+    "compress-pdf-to-100kb": {
+      "title": "Compacte PDF em 100 KB sem perder qualidade",
+      "h1": "Compacte PDF em 100 KB sem perder qualidade",
+      "description": "Reduza seus arquivos PDF para 100 KB ou menos diretamente em seu navegador. Perfeito para anexos de e-mail e compartilhamento rápido. 100% privado."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "Compactar PDF sem perder qualidade",
+      "h1": "Compacte documentos PDF online sem perder qualidade",
+      "description": "Reduza o tamanho do arquivo PDF enquanto mantém vetores e textos de alta resolução perfeitamente nítidos. Processamento 100% privado do lado do cliente."
+    },
+    "reduce-pdf-size-offline": {
+      "title": "Reduzir o tamanho do PDF off-line",
+      "h1": "Reduza o tamanho do PDF completamente offline no seu navegador",
+      "description": "Reduza o tamanho dos seus documentos PDF off-line diretamente no seu navegador, sem nenhum upload no servidor. 100% seguro."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "Converta PDF para Word sem perder a formatação — Conversor DOCX gratuito",
+      "h1": "Converta PDF em Word preservando o layout e a tipografia exatos",
+      "description": "Extraia texto, fontes, tabelas e parágrafos de arquivos PDF para o formato Microsoft Word (.docx) sem embaralhar o layout ou perder a formatação. 100% privado no seu navegador."
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "Converter PDF digitalizado em texto",
+      "h1": "Extraia texto de PDFs digitalizados com OCR",
       "description": "Transforme PDFs e imagens digitalizados não pesquisáveis ​​em texto simples editável localmente usando trabalhadores de OCR WebAssembly multilíngues."
     }
   },
@@ -1379,6 +2034,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "Бесплатное распознавание текста в браузере — извлечение текста из отсканированных PDF-файлов и изображений",
       "h1": "Извлечение текста из отсканированных PDF-файлов и изображений с помощью Tesseract OCR",
       "description": "Превращайте отсканированные PDF-файлы и изображения, не доступные для поиска, в редактируемый простой текст локально с помощью многоязычных программ OCR WebAssembly."
+    },
+    "combine-multiple-pdf-files": {
+      "title": "Объедините несколько файлов PDF — Объедините PDF-файлы онлайн бесплатно",
+      "h1": "Объединение нескольких PDF-файлов онлайн (бесплатно и на стороне клиента)",
+      "description": "Объединяйте и объединяйте несколько файлов PDF в один документ. Мгновенная локальная обработка, 100% конфиденциальность, без ограничений."
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "Изменение порядка страниц PDF. Бесплатное перетаскивание — сортировка страниц PDF.",
+      "h1": "Легко меняйте порядок страниц PDF с помощью перетаскивания",
+      "description": "Визуально организуйте и измените порядок страниц в PDF-документе, перетаскивая миниатюры. 100% бесплатно и локально."
+    },
+    "sign-pdf-without-registration": {
+      "title": "Подпишите PDF онлайн без регистрации — бесплатная электронная подпись",
+      "h1": "Электронная подпись PDF-документов онлайн без регистрации",
+      "description": "Мгновенно поместите свою электронную подпись на любой PDF-файл. Никакой учетной записи не требуется, никакой регистрации, 100% конфиденциальность и бесплатность."
+    },
+    "remove-pdf-password-without-password": {
+      "title": "Удалить пароль PDF без пароля",
+      "h1": "Удалить пароль из PDF без пароля",
+      "description": "Снимите защиту паролем с ваших PDF-файлов без необходимости использования исходного пароля с помощью нашего расширенного инструмента разблокировки."
+    },
+    "crop-pdf-margins": {
+      "title": "Обрезать поля PDF — обрезать пробелы онлайн",
+      "h1": "Обрезать белые поля на страницах PDF",
+      "description": "Удалите раздражающие белые поля из PDF-документов, чтобы их было удобнее читать на мобильных устройствах и в электронных книгах. 100% бесплатный и локальный."
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "PDF в оттенках серого для печати — преобразование цветного изображения в черно-белое",
+      "h1": "Преобразование цветного PDF в оттенки серого",
+      "description": "Экономьте чернила принтера, мгновенно преобразуя цветные PDF-документы в черно-белые или в оттенках серого прямо в браузере."
+    },
+    "remove-pdf-author-metadata": {
+      "title": "Удаление метаданных автора PDF — очистка свойств PDF",
+      "h1": "Обеззараживание метаданных автора PDF",
+      "description": "Защитите свою конфиденциальность, надежно удалив имена авторов, даты создания, следы программного обеспечения и скрытые метаданные из ваших PDF-файлов."
+    },
+    "extract-high-res-images-pdf": {
+      "title": "Извлекайте изображения высокого разрешения из PDF — получайте оригинальные фотографии",
+      "h1": "Извлечение изображений высокого разрешения из PDF",
+      "description": "Загрузите встроенные фотографии и графику из PDF-файла в исходном несжатом высоком разрешении. Нет загрузки на сервер."
+    },
+    "compare-pdf-files-visually": {
+      "title": "Визуальное сравнение PDF-файлов — найдите различия в пикселях",
+      "h1": "Визуальное сравнение двух PDF-файлов",
+      "description": "Загрузите два PDF-документа и мгновенно выделите точные различия в пикселях между ними локально в браузере."
+    },
+    "merge-pdf-files-offline": {
+      "title": "Объедините свои PDF-файлы в автономном режиме в браузере",
+      "h1": "Объедините свои PDF-файлы в автономном режиме в браузере",
+      "description": "Объединяйте несколько конфиденциальных PDF-документов без подключения к Интернету. Работает полностью в автономном режиме после загрузки."
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "Превратите отсканированные PDF-файлы в редактируемый текст",
+      "h1": "Превратите отсканированные PDF-файлы в редактируемый текст",
+      "description": "Используйте расширенное распознавание текста на базе браузера для извлечения текста из отсканированных изображений и PDF-файлов, недоступных для поиска. 100% бесплатно и конфиденциально."
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "Вставка номеров страниц в PDF-документы",
+      "h1": "Вставка номеров страниц в PDF-документы",
+      "description": "Легко разбивайте PDF-файлы на страницы. Добавляйте настраиваемые номера страниц в верхние или нижние колонтитулы мгновенно и бесплатно."
+    },
+    "remove-pdf-watermark-online": {
+      "title": "Безопасное удаление водяных знаков из PDF-файлов",
+      "h1": "Безопасное удаление водяных знаков из PDF-файлов",
+      "description": "Отредактируйте или удалите навязчивые водяные знаки из ваших PDF-документов. Полностью конфиденциальный инструмент для удаления водяных знаков на основе браузера."
+    },
+    "repair-pdf": {
+      "title": "Восстановить PDF Онлайн — Исправить Поврежденный PDF",
+      "h1": "Восстановление и Ремонт Поврежденных PDF в Браузере",
+      "description": "Исправьте нечитаемые или поврежденные PDF-файлы локально через WebAssembly без загрузки на сторонние серверы."
+    },
+    "compress-pdf-for-email": {
+      "title": "Сжать PDF для почты — до 25 МБ локально",
+      "h1": "Сжать PDF-файлы для отправки по электронной почте",
+      "description": "Обойдите лимиты вложений Gmail и Outlook (25 МБ/20 МБ). Сжимайте PDF прямо в браузере без загрузки на сервер."
+    },
+    "compress-pdf-to-100kb": {
+      "title": "Сжимайте PDF до 100 КБ без потери качества",
+      "h1": "Сжимайте PDF до 100 КБ без потери качества",
+      "description": "Уменьшите размер PDF-файлов до 100 КБ или меньше прямо в браузере. Идеально подходит для вложений в электронную почту и быстрого обмена. 100% приват."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "Сжимайте PDF без потери качества — высокое разрешение без потерь",
+      "h1": "Сжимайте PDF-документы онлайн без потери качества",
+      "description": "Уменьшите размер PDF-файла, сохраняя при этом идеальную четкость векторов и текста с высоким разрешением. 100% частная обработка на стороне клиента."
+    },
+    "reduce-pdf-size-offline": {
+      "title": "Уменьшить размер PDF в автономном режиме — локальный PDF-компрессор",
+      "h1": "Уменьшите размер PDF полностью в автономном режиме в браузере",
+      "description": "Уменьшите размер PDF-документов в автономном режиме прямо в браузере без загрузки на сервер. 100% безопасность."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "Конвертируйте PDF в Word без потери форматирования — бесплатный конвертер DOCX",
+      "h1": "Преобразование PDF в Word с сохранением точного макета и типографики",
+      "description": "Извлекайте текст, шрифты, таблицы и абзацы из файлов PDF в формат Microsoft Word (.docx) без искажения макета или потери форматирования. 100% конфиденциальность в вашем браузере."
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "Конвертируйте отсканированный PDF в текст — бесплатное распознавание текста в браузере",
+      "h1": "Извлечение текста из отсканированных PDF-файлов с помощью OCR",
+      "description": "Превращайте отсканированные PDF-файлы и изображения, не доступные для поиска, в редактируемый простой текст локально с помощью многоязычных программ OCR WebAssembly."
     }
   },
   "zh": {
@@ -1545,6 +2300,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
     "ocr-pdf": {
       "title": "免费浏览器 OCR - 从扫描的 PDF 和图像中提取文本",
       "h1": "使用 Tesseract OCR 从扫描的 PDF 和图像中提取文本",
+      "description": "使用多语言 WebAssembly OCR 工作人员将不可搜索的扫描 PDF 和图像在本地转换为可编辑的纯文本。"
+    },
+    "combine-multiple-pdf-files": {
+      "title": "合并多个 PDF 文件",
+      "h1": "在线合并多个 PDF 文件（免费和客户端）",
+      "description": "将多个 PDF 文件合并并合并为一个文档。 即时本地处理，100%私密，无限制。"
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "自由拖放重新排序 PDF 页面",
+      "h1": "通过拖放轻松重新排序 PDF 页面",
+      "description": "通过拖放缩略图，直观地组织和重新排序 PDF 文档中的页面。 100% 免费且本地化。"
+    },
+    "sign-pdf-without-registration": {
+      "title": "无需注册即可在线签署 PDF",
+      "h1": "无需注册即可在线电子签名 PDF 文档",
+      "description": "立即将您的电子签名添加到任何 PDF 文件上。 无需帐户，无需注册，100% 私密且免费。"
+    },
+    "remove-pdf-password-without-password": {
+      "title": "删除 PDF 密码 无密码",
+      "h1": "无需密码即可从 PDF 中删除密码",
+      "description": "使用我们的高级解锁工具，无需原始密码即可删除 PDF 文件的密码保护。"
+    },
+    "crop-pdf-margins": {
+      "title": "裁剪 PDF 边距 — 在线修剪空白",
+      "h1": "从 PDF 页面裁剪白边",
+      "description": "删除 PDF 文档中烦人的白边距，以便在移动设备和电子阅读器上获得更好的阅读体验。 100% 免费且本地化。"
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "用于打印的灰度 PDF — 将彩色转换为黑白",
+      "h1": "将彩色 PDF 转换为灰度",
+      "description": "直接在浏览器中立即将彩色 PDF 文档转换为黑白或灰度，节省打印机墨水。"
+    },
+    "remove-pdf-author-metadata": {
+      "title": "删除 PDF 作者元数据 — 清理 PDF 属性",
+      "h1": "清理 PDF 作者元数据",
+      "description": "通过安全地从 PDF 文件中删除作者姓名、创建日期、软件足迹和隐藏元数据来保护您的隐私。"
+    },
+    "extract-high-res-images-pdf": {
+      "title": "从 PDF 中提取高分辨率图像 — 获取原始照片",
+      "h1": "从 PDF 中提取高分辨率图像",
+      "description": "以原始、未压缩的高分辨率从 PDF 下载嵌入的照片和图形。 没有服务器上传。"
+    },
+    "compare-pdf-files-visually": {
+      "title": "直观地比较 PDF 文件 — 查找像素差异",
+      "h1": "直观地比较两个 PDF 文件",
+      "description": "上传两个 PDF 文档，然后立即在浏览器中本地突出显示它们之间的确切像素差异。"
+    },
+    "merge-pdf-files-offline": {
+      "title": "离线合并 PDF 文件 — 浏览器本地零上传",
+      "h1": "在浏览器中完全离线合并多个 PDF 文件",
+      "description": "即使断开网络也能轻松将多个 PDF 合并为单一文档。纯客户端 WebAssembly 运行，安全快速。"
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "扫描版 PDF 转可编辑文本 — 浏览器本地 OCR",
+      "h1": "使用 OCR 将扫描版 PDF 转换为可编辑文本",
+      "description": "利用内置 WebAssembly OCR 引擎从扫描件和图片型 PDF 中高精度提取可复制文本，完全本地运行保护隐私。"
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "PDF 添加页码工具 — 本地免费处理",
+      "h1": "为 PDF 文档插入自定义页码",
+      "description": "直接在浏览器本地为 PDF 页眉或页脚添加清晰可定制的页码。无需上传文件，100% 保护隐私。"
+    },
+    "remove-pdf-watermark-online": {
+      "title": "PDF 水印管理与清理工具 — 浏览器本地处理",
+      "h1": "在浏览器本地安全处理 PDF 水印",
+      "description": "本地处理与清理 PDF 页面叠层、水印或重构干净页面。全程不上传任何服务器，保护文档隐私。"
+    },
+    "repair-pdf": {
+      "title": "在线修复损坏的 PDF 文件 — 浏览器本地恢复工具",
+      "h1": "在浏览器本地修复和恢复损坏的 PDF 文档",
+      "description": "通过本地 WebAssembly 恢复引擎修复无法打开或结构受损的 PDF 文件，重建交叉引用表且 100% 保护隐私。"
+    },
+    "compress-pdf-for-email": {
+      "title": "压缩 PDF 用于邮件发送 — 本地缩减至 25MB 内",
+      "h1": "为电子邮件附件压缩 PDF 文件",
+      "description": "轻松突破 Gmail 与 Outlook 附件大小限制（25MB/20MB）。全程浏览器本地压缩，零服务器上传。"
+    },
+    "compress-pdf-to-100kb": {
+      "title": "压缩 PDF 至 100KB — 无损画质本地处理",
+      "h1": "将 PDF 文件瞬间压缩至 100KB 以内",
+      "description": "在浏览器本地直接将大型 PDF 压缩到 100KB 或更小，适合邮件附件、报名表和网站上传，无需上传服务器。"
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "压缩 PDF 而不损失质量",
+      "h1": "在线压缩 PDF 文档而不损失质量",
+      "description": "减小 PDF 文件大小，同时保持高分辨率矢量和文本的清晰度。 100% 私人客户端处理。"
+    },
+    "reduce-pdf-size-offline": {
+      "title": "离线缩小 PDF 大小",
+      "h1": "在浏览器中完全离线减小 PDF 大小",
+      "description": "直接在浏览器中离线减小 PDF 文档的大小，无需任何服务器上传。 100% 安全。"
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "将 PDF 转换为 Word，而不丢失格式 — 免费 DOCX 转换器",
+      "h1": "将 PDF 转换为 Word，同时保留精确的布局和版式",
+      "description": "将 PDF 文件中的文本、字体、表格和段落提取为 Microsoft Word (.docx) 格式，而不会扰乱布局或丢失格式。 在您的浏览器中 100% 私密。"
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "将扫描的 PDF 转换为文本",
+      "h1": "使用 OCR 从扫描的 PDF 中提取文本",
       "description": "使用多语言 WebAssembly OCR 工作人员将不可搜索的扫描 PDF 和图像在本地转换为可编辑的纯文本。"
     }
   },
@@ -1713,6 +2568,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "متصفح مجاني للتعرف الضوئي على الحروف - استخراج النص من ملفات PDF والصور الممسوحة ضوئيًا",
       "h1": "استخرج النص من ملفات PDF والصور الممسوحة ضوئيًا باستخدام Tesseract OCR",
       "description": "قم بتحويل ملفات PDF والصور الممسوحة ضوئيًا غير القابلة للبحث إلى نص عادي قابل للتحرير محليًا باستخدام عمال WebAssembly OCR متعدد اللغات."
+    },
+    "combine-multiple-pdf-files": {
+      "title": "دمج ملفات PDF متعددة",
+      "h1": "دمج ملفات PDF متعددة عبر الإنترنت (مجاني ومن جانب العميل)",
+      "description": "دمج ودمج ملفات PDF متعددة في وثيقة واحدة. معالجة محلية فورية، خاصة بنسبة 100%، بلا حدود."
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "إعادة ترتيب صفحات PDF بالسحب والإسقاط مجانًا",
+      "h1": "أعد ترتيب صفحات PDF بسهولة باستخدام السحب والإسقاط",
+      "description": "قم بتنظيم وإعادة ترتيب الصفحات في مستند PDF الخاص بك بشكل مرئي عن طريق سحب الصور المصغرة وإسقاطها. 100% مجاني ومحلي."
+    },
+    "sign-pdf-without-registration": {
+      "title": "قم بتوقيع PDF عبر الإنترنت بدون تسجيل",
+      "h1": "التوقيع الإلكتروني على مستندات PDF عبر الإنترنت بدون تسجيل",
+      "description": "ضع توقيعك الإلكتروني على أي ملف PDF على الفور. لا يوجد حساب مطلوب، لا الاشتراك، 100٪ خاص ومجاني."
+    },
+    "remove-pdf-password-without-password": {
+      "title": "إزالة كلمة مرور PDF بدون كلمة مرور",
+      "h1": "إزالة كلمة المرور من ملف PDF بدون كلمة مرور",
+      "description": "قم بإزالة حماية كلمة المرور من ملفات PDF الخاصة بك دون الحاجة إلى كلمة المرور الأصلية باستخدام أداة إلغاء القفل المتقدمة الخاصة بنا."
+    },
+    "crop-pdf-margins": {
+      "title": "قص هوامش ملف PDF - قص المسافات البيضاء عبر الإنترنت",
+      "h1": "قص الهوامش البيضاء من صفحات PDF",
+      "description": "قم بإزالة الهوامش البيضاء المزعجة من مستندات PDF الخاصة بك للحصول على تجربة قراءة أفضل على الأجهزة المحمولة وأجهزة القراءة الإلكترونية. 100% مجاني ومحلي."
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "ملفات PDF ذات تدرج رمادي للطباعة - تحويل الألوان إلى أبيض وأسود",
+      "h1": "تحويل ملف PDF الملون إلى تدرج الرمادي",
+      "description": "يمكنك توفير حبر الطابعة عن طريق تحويل مستندات PDF الملونة على الفور إلى أبيض وأسود أو تدرج رمادي مباشرةً في متصفحك."
+    },
+    "remove-pdf-author-metadata": {
+      "title": "إزالة البيانات التعريفية لمؤلف PDF - تعقيم خصائص PDF",
+      "h1": "تطهير البيانات الوصفية للمؤلف PDF",
+      "description": "قم بحماية خصوصيتك عن طريق إزالة أسماء المؤلفين وتواريخ الإنشاء وآثار البرامج والبيانات الوصفية المخفية من ملفات PDF الخاصة بك بشكل آمن."
+    },
+    "extract-high-res-images-pdf": {
+      "title": "استخرج الصور عالية الدقة من ملف PDF واحصل على الصور الأصلية",
+      "h1": "استخراج صور عالية الدقة من PDF",
+      "description": "قم بتنزيل الصور والرسومات المضمنة من ملف PDF الخاص بك بدقة عالية أصلية وغير مضغوطة. لا توجد تحميلات الخادم."
+    },
+    "compare-pdf-files-visually": {
+      "title": "قارن ملفات PDF بصريًا - ابحث عن اختلافات البكسل",
+      "h1": "مقارنة بصريا بين ملفين PDF",
+      "description": "قم بتحميل مستندين بتنسيق PDF وقم على الفور بإبراز اختلافات البكسل الدقيقة بينهما محليًا في متصفحك."
+    },
+    "merge-pdf-files-offline": {
+      "title": "دمج ملفات PDF الخاصة بك دون اتصال بالإنترنت في المتصفح",
+      "h1": "دمج ملفات PDF الخاصة بك دون اتصال بالإنترنت في المتصفح",
+      "description": "اجمع بين عدة مستندات PDF حساسة للغاية دون الاتصال بالإنترنت. يعمل دون اتصال بالإنترنت بشكل كامل بعد التحميل."
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "تحويل ملفات PDF الممسوحة ضوئيًا إلى نص قابل للتحرير",
+      "h1": "تحويل ملفات PDF الممسوحة ضوئيًا إلى نص قابل للتحرير",
+      "description": "استخدم تقنية التعرف الضوئي على الحروف (OCR) المتقدمة المستندة إلى المستعرض لاستخراج النص من الصور الممسوحة ضوئيًا وملفات PDF غير القابلة للبحث. 100% مجاني وخاص."
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "إدراج أرقام الصفحات في مستندات PDF",
+      "h1": "إدراج أرقام الصفحات في مستندات PDF",
+      "description": "قم بترقيم ملفات PDF الخاصة بك بسهولة. أضف أرقام صفحات قابلة للتخصيص إلى الرؤوس أو التذييلات على الفور مجانًا."
+    },
+    "remove-pdf-watermark-online": {
+      "title": "إزالة العلامات المائية من ملفات PDF بأمان",
+      "h1": "إزالة العلامات المائية من ملفات PDF بأمان",
+      "description": "قم بتنقيح العلامات المائية المتطفلة أو إزالتها من مستندات PDF الخاصة بك. أداة إزالة العلامات المائية الخاصة بالكامل والمعتمدة على المتصفح."
+    },
+    "repair-pdf": {
+      "title": "إصلاح ملفات PDF التالفة — استعادة محلية بالمتصفح",
+      "h1": "إصلاح واستعادة مستندات PDF التالفة داخل متصفحك",
+      "description": "أصلح ملفات PDF التالفة أو غير القابلة للقراءة محليًا عبر WebAssembly مع الحفاظ التام على الخصوصية دون رفع الملفات."
+    },
+    "compress-pdf-for-email": {
+      "title": "ضغط ملفات PDF للبريد الإلكتروني — أقل من 25 ميجابايت",
+      "h1": "ضغط ملفات PDF لمرفقات البريد الإلكتروني",
+      "description": "تجاوز حدود مرفقات Gmail وOutlook بسهولة. قلّل حجم ملفات PDF محليًا في متصفحك دون رفع أي ملفات."
+    },
+    "compress-pdf-to-100kb": {
+      "title": "ضغط ملف PDF إلى 100 كيلو بايت دون فقدان الجودة",
+      "h1": "ضغط ملف PDF إلى 100 كيلو بايت دون فقدان الجودة",
+      "description": "قم بتقليص حجم ملفات PDF الخاصة بك إلى 100 كيلو بايت أو أقل مباشرةً في متصفحك. مثالي لمرفقات البريد الإلكتروني والمشاركة السريعة. خاص 100%."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "ضغط ملفات PDF دون فقدان الجودة",
+      "h1": "ضغط مستندات PDF عبر الإنترنت دون فقدان الجودة",
+      "description": "قم بتقليل حجم ملف PDF مع الحفاظ على دقة النصوص والمتجهات عالية الدقة. معالجة خاصة من جانب العميل بنسبة 100%."
+    },
+    "reduce-pdf-size-offline": {
+      "title": "تقليل حجم PDF في وضع عدم الاتصال",
+      "h1": "قم بتقليل حجم ملف PDF بشكل كامل دون الاتصال بالإنترنت في متصفحك",
+      "description": "قم بتقليل حجم مستندات PDF الخاصة بك دون الاتصال بالإنترنت مباشرة في متصفحك دون أي تحميلات على الخادم. آمن بنسبة 100%."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "تحويل PDF إلى Word دون فقدان التنسيق - محول DOCX مجاني",
+      "h1": "تحويل PDF إلى Word مع الحفاظ على التخطيط الدقيق والطباعة",
+      "description": "قم باستخراج النص والخطوط والجداول والفقرات من ملفات PDF إلى تنسيق Microsoft Word (.docx) دون تشويه التخطيط أو فقدان التنسيق. خصوصية 100% في متصفحك."
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "تحويل ملف PDF الممسوح ضوئيًا إلى نص",
+      "h1": "استخراج النص من ملفات PDF الممسوحة ضوئيًا باستخدام تقنية التعرف الضوئي على الحروف (OCR).",
+      "description": "قم بتحويل ملفات PDF والصور الممسوحة ضوئيًا غير القابلة للبحث إلى نص عادي قابل للتحرير محليًا باستخدام عمال WebAssembly OCR متعدد اللغات."
     }
   },
   "hi": {
@@ -1879,6 +2834,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
     "ocr-pdf": {
       "title": "मुफ़्त ब्राउज़र ओसीआर - स्कैन की गई पीडीएफ और छवियों से टेक्स्ट निकालें",
       "h1": "Tesseract OCR के साथ स्कैन की गई PDF और छवियों से टेक्स्ट निकालें",
+      "description": "बहु-भाषा वेबअसेंबली ओसीआर कार्यकर्ताओं का उपयोग करके स्थानीय रूप से गैर-खोज योग्य स्कैन की गई पीडीएफ और छवियों को संपादन योग्य सादे पाठ में बदलें।"
+    },
+    "combine-multiple-pdf-files": {
+      "title": "एकाधिक पीडीएफ फाइलों को संयोजित करें",
+      "h1": "एकाधिक पीडीएफ फाइलों को ऑनलाइन संयोजित करें (निःशुल्क और क्लाइंट-साइड)",
+      "description": "एकाधिक पीडीएफ फाइलों को एक ही दस्तावेज़ में मर्ज और संयोजित करें। त्वरित स्थानीय प्रसंस्करण, 100% निजी, कोई सीमा नहीं।"
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "पीडीएफ पेजों को पुनः व्यवस्थित करें, खींचें और छोड़ें निःशुल्क",
+      "h1": "ड्रैग और ड्रॉप के साथ पीडीएफ पेजों को आसानी से पुनः व्यवस्थित करें",
+      "description": "थंबनेल खींचकर और छोड़ कर अपने पीडीएफ दस्तावेज़ में पृष्ठों को व्यवस्थित और पुन: व्यवस्थित करें। 100% मुफ़्त और स्थानीय।"
+    },
+    "sign-pdf-without-registration": {
+      "title": "बिना पंजीकरण के ऑनलाइन पीडीएफ पर हस्ताक्षर करें",
+      "h1": "बिना पंजीकरण के पीडीएफ दस्तावेज़ों पर ऑनलाइन ई-साइन करें",
+      "description": "किसी भी पीडीएफ फाइल पर तुरंत अपना इलेक्ट्रॉनिक हस्ताक्षर रखें। किसी खाते की आवश्यकता नहीं, कोई साइनअप नहीं, 100% निजी और निःशुल्क।"
+    },
+    "remove-pdf-password-without-password": {
+      "title": "पासवर्ड के बिना पीडीएफ पासवर्ड हटाएं",
+      "h1": "बिना पासवर्ड के पीडीएफ से पासवर्ड हटाएं",
+      "description": "हमारे उन्नत अनलॉक टूल का उपयोग करके मूल पासवर्ड की आवश्यकता के बिना अपनी पीडीएफ फाइलों से पासवर्ड सुरक्षा हटाएं।"
+    },
+    "crop-pdf-margins": {
+      "title": "पीडीएफ मार्जिन क्रॉप करें - सफेद रिक्त स्थान को ऑनलाइन ट्रिम करें",
+      "h1": "पीडीएफ पेजों से सफेद मार्जिन काटें",
+      "description": "मोबाइल उपकरणों और ई-रीडर्स पर बेहतर पढ़ने के अनुभव के लिए अपने पीडीएफ दस्तावेजों से कष्टप्रद सफेद हाशिए हटा दें। 100% मुफ़्त और स्थानीय।"
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "मुद्रण के लिए ग्रेस्केल पीडीएफ - रंग को B&W में बदलें",
+      "h1": "कलर पीडीएफ को ग्रेस्केल में बदलें",
+      "description": "सीधे अपने ब्राउज़र में रंगीन पीडीएफ दस्तावेज़ों को तुरंत काले और सफेद या ग्रेस्केल में परिवर्तित करके प्रिंटर स्याही बचाएं।"
+    },
+    "remove-pdf-author-metadata": {
+      "title": "पीडीएफ लेखक मेटाडेटा हटाएं - पीडीएफ गुणों को साफ करें",
+      "h1": "पीडीएफ लेखक मेटाडेटा को स्वच्छ करें",
+      "description": "अपनी पीडीएफ फाइलों से लेखक के नाम, निर्माण तिथियां, सॉफ्टवेयर पदचिह्न और छिपे हुए मेटाडेटा को सुरक्षित रूप से हटाकर अपनी गोपनीयता को सुरक्षित रखें।"
+    },
+    "extract-high-res-images-pdf": {
+      "title": "पीडीएफ से उच्च-रिज़ॉल्यूशन छवियां निकालें - मूल फ़ोटो प्राप्त करें",
+      "h1": "पीडीएफ से उच्च-रिज़ॉल्यूशन छवियां निकालें",
+      "description": "अपने पीडीएफ से एम्बेडेड फ़ोटो और ग्राफिक्स को उनके मूल, असंपीड़ित उच्च रिज़ॉल्यूशन में डाउनलोड करें। कोई सर्वर अपलोड नहीं."
+    },
+    "compare-pdf-files-visually": {
+      "title": "पीडीएफ फाइलों की दृश्य रूप से तुलना करें - पिक्सेल अंतर खोजें",
+      "h1": "दो पीडीएफ फाइलों की दृष्टिगत तुलना करें",
+      "description": "दो पीडीएफ दस्तावेज़ अपलोड करें और तुरंत अपने ब्राउज़र में स्थानीय रूप से उनके बीच सटीक पिक्सेल अंतर को उजागर करें।"
+    },
+    "merge-pdf-files-offline": {
+      "title": "अपनी पीडीएफ़ को ब्राउज़र में ऑफ़लाइन मर्ज करें",
+      "h1": "अपनी पीडीएफ़ को ब्राउज़र में ऑफ़लाइन मर्ज करें",
+      "description": "बिना इंटरनेट कनेक्शन के अनेक अत्यधिक संवेदनशील पीडीएफ दस्तावेज़ों को संयोजित करें। लोड होने के बाद पूरी तरह ऑफ़लाइन काम करता है।"
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "स्कैन की गई पीडीएफ़ को संपादन योग्य टेक्स्ट में बदलें",
+      "h1": "स्कैन की गई पीडीएफ़ को संपादन योग्य टेक्स्ट में बदलें",
+      "description": "स्कैन की गई छवियों और न खोजी जा सकने वाली पीडीएफ़ से पाठ निकालने के लिए उन्नत ब्राउज़र-आधारित ओसीआर का उपयोग करें। 100% मुफ़्त और निजी।"
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "पीडीएफ दस्तावेजों में पेज नंबर डालें",
+      "h1": "पीडीएफ दस्तावेजों में पेज नंबर डालें",
+      "description": "अपनी पीडीएफ फाइलों को आसानी से पेजिनेट करें। शीर्षलेखों या पादलेखों में तुरंत निःशुल्क अनुकूलन योग्य पृष्ठ संख्याएँ जोड़ें।"
+    },
+    "remove-pdf-watermark-online": {
+      "title": "पीडीएफ फाइलों से वॉटरमार्क सुरक्षित रूप से हटाएं",
+      "h1": "पीडीएफ फाइलों से वॉटरमार्क सुरक्षित रूप से हटाएं",
+      "description": "अपने पीडीएफ दस्तावेजों से घुसपैठिए वॉटरमार्क को सुधारें या हटाएं। पूरी तरह से निजी, ब्राउज़र-आधारित वॉटरमार्क हटाने वाला उपकरण।"
+    },
+    "repair-pdf": {
+      "title": "खराब PDF ठीक करें — लोकल ब्राउज़र PDF रिपेयर टूल",
+      "h1": "ब्राउज़र में खराब और करप्ट PDF दस्तावेज़ की मरम्मत करें",
+      "description": "लोकल WebAssembly रिकवरी से टूटी हुई या न खुलने वाली PDF फ़ाइलों को 100% गोपनीयता के साथ ठीक करें।"
+    },
+    "compress-pdf-for-email": {
+      "title": "ईमेल के लिए PDF कंप्रेस करें — 25MB से कम साइज",
+      "h1": "ईमेल अटैचमेंट के लिए PDF फ़ाइलें कंप्रेस करें",
+      "description": "Gmail और Outlook की 25MB/20MB सीमा को आसानी से पार करें। बिना सर्वर अपलोड किए ब्राउज़र में ही PDF छोटा करें।"
+    },
+    "compress-pdf-to-100kb": {
+      "title": "गुणवत्ता खोए बिना पीडीएफ को 100KB तक संपीड़ित करें",
+      "h1": "गुणवत्ता खोए बिना पीडीएफ को 100KB तक संपीड़ित करें",
+      "description": "सीधे अपने ब्राउज़र में अपनी पीडीएफ फाइलों को 100KB या उससे कम करें। ईमेल अनुलग्नकों और तेज़ साझाकरण के लिए बिल्कुल सही। 100% निजी."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "गुणवत्ता खोए बिना पीडीएफ को संपीड़ित करें",
+      "h1": "गुणवत्ता खोए बिना पीडीएफ दस्तावेज़ों को ऑनलाइन संपीड़ित करें",
+      "description": "उच्च-रिज़ॉल्यूशन वाले वैक्टर और टेक्स्ट को पूरी तरह से शार्प रखते हुए पीडीएफ फ़ाइल का आकार कम करें। 100% निजी क्लाइंट-साइड प्रोसेसिंग।"
+    },
+    "reduce-pdf-size-offline": {
+      "title": "ऑफ़लाइन पीडीएफ आकार कम करें",
+      "h1": "अपने ब्राउज़र में पीडीएफ का आकार पूरी तरह ऑफ़लाइन कम करें",
+      "description": "बिना किसी सर्वर अपलोड के सीधे अपने ब्राउज़र में ऑफ़लाइन अपने पीडीएफ दस्तावेज़ों का आकार कम करें। 100% सुरक्षित."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "फ़ॉर्मेटिंग खोए बिना पीडीएफ को वर्ड में कनवर्ट करें - मुफ़्त DOCX कन्वर्टर",
+      "h1": "सटीक लेआउट और टाइपोग्राफी को संरक्षित करते हुए पीडीएफ को वर्ड में बदलें",
+      "description": "लेआउट में गड़बड़ी किए बिना या फ़ॉर्मेटिंग खोए बिना पीडीएफ फाइलों से टेक्स्ट, फ़ॉन्ट, टेबल और पैराग्राफ को माइक्रोसॉफ्ट वर्ड (.docx) फॉर्मेट में निकालें। आपके ब्राउज़र में 100% निजी।"
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "स्कैन की गई पीडीएफ को टेक्स्ट में बदलें",
+      "h1": "ओसीआर के साथ स्कैन की गई पीडीएफ से टेक्स्ट निकालें",
       "description": "बहु-भाषा वेबअसेंबली ओसीआर कार्यकर्ताओं का उपयोग करके स्थानीय रूप से गैर-खोज योग्य स्कैन की गई पीडीएफ और छवियों को संपादन योग्य सादे पाठ में बदलें।"
     }
   },
@@ -2047,6 +3102,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "OCR browser gratuito: estrae testo da PDF e immagini scansionati",
       "h1": "Estrai testo da PDF e immagini scansionati con Tesseract OCR",
       "description": "Trasforma PDF e immagini scansionati non ricercabili in testo semplice modificabile localmente utilizzando gli operatori OCR WebAssembly multilingue."
+    },
+    "combine-multiple-pdf-files": {
+      "title": "Combina più file PDF: unisci PDF online gratuitamente",
+      "h1": "Combina più file PDF online (gratuito e lato client)",
+      "description": "Unisci e combina più file PDF in un unico documento. Elaborazione locale istantanea, privata al 100%, senza limiti."
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "Riordina le pagine PDF Trascina e rilascia gratuitamente: ordina le pagine PDF",
+      "h1": "Riordina facilmente le pagine PDF con il trascinamento della selezione",
+      "description": "Organizza e riordina visivamente le pagine del tuo documento PDF trascinando e rilasciando le miniature. 100% gratuito e locale."
+    },
+    "sign-pdf-without-registration": {
+      "title": "Firma PDF online senza registrazione: firma elettronica gratuita",
+      "h1": "Firma elettronicamente i documenti PDF online senza registrazione",
+      "description": "Inserisci istantaneamente la tua firma elettronica su qualsiasi file PDF. Nessun account richiesto, nessuna registrazione, 100% privato e gratuito."
+    },
+    "remove-pdf-password-without-password": {
+      "title": "Rimuovi password PDF senza password: sblocca PDF",
+      "h1": "Rimuovi la password dal PDF senza password",
+      "description": "Rimuovi la protezione tramite password dai tuoi file PDF senza bisogno della password originale utilizzando il nostro strumento di sblocco avanzato."
+    },
+    "crop-pdf-margins": {
+      "title": "Ritaglia i margini del PDF: ritaglia gli spazi bianchi online",
+      "h1": "Ritaglia i margini bianchi dalle pagine PDF",
+      "description": "Rimuovi i fastidiosi margini bianchi dai tuoi documenti PDF per una migliore esperienza di lettura su dispositivi mobili ed e-reader. 100% gratuito e locale."
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "PDF in scala di grigi per la stampa: converti il ​​colore in bianco e nero",
+      "h1": "Converti PDF a colori in scala di grigi",
+      "description": "Risparmia inchiostro della stampante convertendo istantaneamente documenti PDF a colori in bianco e nero o in scala di grigi direttamente nel tuo browser."
+    },
+    "remove-pdf-author-metadata": {
+      "title": "Rimuovi i metadati dell'autore del PDF: disinfetta le proprietà del PDF",
+      "h1": "Disinfetta i metadati dell'autore del PDF",
+      "description": "Proteggi la tua privacy rimuovendo in modo sicuro nomi di autori, date di creazione, impronte di software e metadati nascosti dai tuoi file PDF."
+    },
+    "extract-high-res-images-pdf": {
+      "title": "Estrai immagini ad alta risoluzione da PDF: ottieni foto originali",
+      "h1": "Estrai immagini ad alta risoluzione da PDF",
+      "description": "Scarica foto e grafica incorporati dal tuo PDF nella loro alta risoluzione originale, non compressa. Nessun caricamento sul server."
+    },
+    "compare-pdf-files-visually": {
+      "title": "Confronta visivamente i file PDF: trova le differenze di pixel",
+      "h1": "Confronta visivamente due file PDF",
+      "description": "Carica due documenti PDF ed evidenzia immediatamente le esatte differenze di pixel tra loro localmente nel tuo browser."
+    },
+    "merge-pdf-files-offline": {
+      "title": "Unisci i tuoi PDF offline nel browser",
+      "h1": "Unisci i tuoi PDF offline nel browser",
+      "description": "Combina più documenti PDF altamente sensibili senza una connessione Internet. Funziona completamente offline dopo il caricamento."
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "Trasforma i PDF scansionati in testo modificabile",
+      "h1": "Trasforma i PDF scansionati in testo modificabile",
+      "description": "Utilizza l'OCR avanzato basato su browser per estrarre testo da immagini scansionate e PDF non ricercabili. 100% gratuito e privato."
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "Inserisci i numeri di pagina nei documenti PDF",
+      "h1": "Inserisci i numeri di pagina nei documenti PDF",
+      "description": "Impagina facilmente i tuoi file PDF. Aggiungi istantaneamente e gratuitamente numeri di pagina personalizzabili alle intestazioni o ai piè di pagina."
+    },
+    "remove-pdf-watermark-online": {
+      "title": "Rimuovi filigrane dai file PDF in modo sicuro",
+      "h1": "Rimuovi filigrane dai file PDF in modo sicuro",
+      "description": "Redisci o rimuovi filigrane invadenti dai tuoi documenti PDF. Strumento di rimozione filigrana completamente privato e basato su browser."
+    },
+    "repair-pdf": {
+      "title": "Ripara PDF Online - Recupera File PDF Danneggiati",
+      "h1": "Ripara e Recupera Documenti PDF Corrotti nel Browser",
+      "description": "Correggi file PDF danneggiati o illeggibili localmente con WebAssembly. Ricostruzione sicura con zero caricamenti."
+    },
+    "compress-pdf-for-email": {
+      "title": "Comprimi PDF per Email — Sotto i 25MB",
+      "h1": "Comprimi File PDF per Allegati Email",
+      "description": "Supera i limiti di allegato di Gmail e Outlook (25MB/20MB). Riduci PDF pesanti nel browser con zero caricamenti."
+    },
+    "compress-pdf-to-100kb": {
+      "title": "Comprimi PDF a 100KB senza perdere la qualità",
+      "h1": "Comprimi PDF a 100KB senza perdere la qualità",
+      "description": "Riduci i tuoi file PDF fino a 100KB o meno direttamente nel tuo browser. Perfetto per allegati e-mail e condivisione rapida. 100% privato."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "Comprimi PDF senza perdere qualità: alta definizione senza perdite",
+      "h1": "Comprimi documenti PDF online senza perdere la qualità",
+      "description": "Riduci le dimensioni del file PDF mantenendo perfettamente nitidi i vettori e i testi ad alta risoluzione. Elaborazione lato client privata al 100%."
+    },
+    "reduce-pdf-size-offline": {
+      "title": "Riduci le dimensioni del PDF offline",
+      "h1": "Riduci le dimensioni del PDF completamente offline nel tuo browser",
+      "description": "Riduci le dimensioni dei tuoi documenti PDF offline direttamente nel tuo browser senza alcun caricamento sul server. Sicuro al 100%."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "Converti PDF in Word senza perdere la formattazione: convertitore DOCX gratuito",
+      "h1": "Converti PDF in Word preservando layout e tipografia esatti",
+      "description": "Estrai testo, caratteri, tabelle e paragrafi da file PDF nel formato Microsoft Word (.docx) senza confondere il layout o perdere la formattazione. Privato al 100% nel tuo browser."
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "Converti PDF scansionato in testo: OCR del browser gratuito",
+      "h1": "Estrai testo da PDF scansionati con OCR",
+      "description": "Trasforma PDF e immagini scansionati non ricercabili in testo semplice modificabile localmente utilizzando gli operatori OCR WebAssembly multilingue."
     }
   },
   "ko": {
@@ -2213,6 +3368,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
     "ocr-pdf": {
       "title": "무료 브라우저 OCR - 스캔한 PDF 및 이미지에서 텍스트 추출",
       "h1": "Tesseract OCR을 사용하여 스캔한 PDF 및 이미지에서 텍스트 추출",
+      "description": "다국어 WebAssembly OCR 작업자를 사용하여 검색 불가능한 스캔 PDF 및 이미지를 로컬에서 편집 가능한 일반 텍스트로 변환합니다."
+    },
+    "combine-multiple-pdf-files": {
+      "title": "여러 PDF 파일 결합",
+      "h1": "여러 PDF 파일을 온라인으로 결합(무료 및 클라이언트측)",
+      "description": "여러 PDF 파일을 하나의 문서로 병합하고 결합합니다. 즉각적인 로컬 처리, 100% 비공개, 제한 없음."
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "PDF 페이지 재정렬 드래그 앤 드롭 무료",
+      "h1": "드래그 앤 드롭으로 PDF 페이지를 쉽게 재정렬",
+      "description": "축소판을 끌어서 놓아 PDF 문서의 페이지를 시각적으로 구성하고 재정렬합니다. 100% 무료이며 로컬입니다."
+    },
+    "sign-pdf-without-registration": {
+      "title": "등록 없이 온라인으로 PDF에 서명",
+      "h1": "등록 없이 온라인으로 PDF 문서에 전자 서명",
+      "description": "PDF 파일에 전자 서명을 즉시 삽입하세요. 계정이 필요하지 않으며 가입도 필요하지 않으며 100% 비공개이며 무료입니다."
+    },
+    "remove-pdf-password-without-password": {
+      "title": "비밀번호 없이 PDF 비밀번호 제거",
+      "h1": "비밀번호 없이 PDF에서 비밀번호 제거",
+      "description": "고급 잠금 해제 도구를 사용하면 원래 비밀번호 없이 PDF 파일에서 비밀번호 보호를 제거할 수 있습니다."
+    },
+    "crop-pdf-margins": {
+      "title": "PDF 여백 자르기 - 온라인으로 공백 자르기",
+      "h1": "PDF 페이지에서 흰색 여백 자르기",
+      "description": "모바일 장치 및 e-reader에서 더 나은 읽기 환경을 위해 PDF 문서에서 성가신 흰색 여백을 제거하십시오. 100% 무료이며 로컬입니다."
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "인쇄용 그레이스케일 PDF — 컬러를 흑백으로 변환",
+      "h1": "컬러 PDF를 그레이스케일로 변환",
+      "description": "브라우저에서 컬러 PDF 문서를 흑백 또는 회색조로 즉시 변환하여 프린터 잉크를 절약하세요."
+    },
+    "remove-pdf-author-metadata": {
+      "title": "PDF 작성자 메타데이터 제거 - PDF 속성 삭제",
+      "h1": "PDF 작성자 메타데이터 삭제",
+      "description": "PDF 파일에서 작성자 이름, 생성 날짜, 소프트웨어 발자국 및 숨겨진 메타데이터를 안전하게 제거하여 개인 정보를 보호하세요."
+    },
+    "extract-high-res-images-pdf": {
+      "title": "PDF에서 고해상도 이미지 추출 — 원본 사진 얻기",
+      "h1": "PDF에서 고해상도 이미지 추출",
+      "description": "PDF에 포함된 사진과 그래픽을 압축되지 않은 원본 고해상도로 다운로드하세요. 서버 업로드가 없습니다."
+    },
+    "compare-pdf-files-visually": {
+      "title": "PDF 파일을 시각적으로 비교 - 픽셀 차이점 찾기",
+      "h1": "두 개의 PDF 파일을 시각적으로 비교",
+      "description": "두 개의 PDF 문서를 업로드하고 브라우저에서 로컬로 두 문서 간의 정확한 픽셀 차이를 즉시 강조 표시하세요."
+    },
+    "merge-pdf-files-offline": {
+      "title": "브라우저에서 오프라인으로 PDF를 병합하세요",
+      "h1": "브라우저에서 오프라인으로 PDF를 병합하세요",
+      "description": "인터넷 연결 없이 여러 개의 매우 민감한 PDF 문서를 결합합니다. 로드 후 완전히 오프라인으로 작동합니다."
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "스캔한 PDF를 편집 가능한 텍스트로 변환",
+      "h1": "스캔한 PDF를 편집 가능한 텍스트로 변환",
+      "description": "고급 브라우저 기반 OCR을 사용하여 스캔한 이미지와 검색할 수 없는 PDF에서 텍스트를 추출합니다. 100% 무료이며 비공개입니다."
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "PDF 문서에 페이지 번호 삽입",
+      "h1": "PDF 문서에 페이지 번호 삽입",
+      "description": "PDF 파일의 페이지를 쉽게 매깁니다. 머리글이나 바닥글에 사용자 정의 가능한 페이지 번호를 무료로 즉시 추가하세요."
+    },
+    "remove-pdf-watermark-online": {
+      "title": "PDF 파일에서 워터마크를 안전하게 제거하세요",
+      "h1": "PDF 파일에서 워터마크를 안전하게 제거하세요",
+      "description": "PDF 문서에서 방해가 되는 워터마크를 수정하거나 제거하세요. 완전 비공개 브라우저 기반 워터마크 제거 도구입니다."
+    },
+    "repair-pdf": {
+      "title": "손상된 PDF 복구 온라인 — 브라우저 로컬 복원",
+      "h1": "브라우저에서 손상되거나 깨진 PDF 문서 복구",
+      "description": "로컬 WebAssembly 복구 엔진으로 열리지 않거나 손상된 PDF 파일을 서버 업로드 없이 100% 안전하게 복구하세요."
+    },
+    "compress-pdf-for-email": {
+      "title": "이메일 첨부용 PDF 압축 — 25MB 이하로 축소",
+      "h1": "이메일 첨부용 PDF 파일 압축",
+      "description": "Gmail 및 Outlook 첨부 제한(25MB/20MB)을 해결하세요. 서버 업로드 없이 브라우저 메모리에서 즉시 압축합니다."
+    },
+    "compress-pdf-to-100kb": {
+      "title": "품질 저하 없이 PDF를 100KB로 압축",
+      "h1": "품질 저하 없이 PDF를 100KB로 압축",
+      "description": "브라우저에서 PDF 파일을 100KB 이하로 직접 축소하세요. 이메일 첨부 및 빠른 공유에 적합합니다. 100% 비공개입니다."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "품질 저하 없이 PDF 압축",
+      "h1": "품질 저하 없이 PDF 문서를 온라인으로 압축",
+      "description": "고해상도 벡터와 텍스트를 완벽하게 선명하게 유지하면서 PDF 파일 크기를 줄입니다. 100% 개인 클라이언트측 처리."
+    },
+    "reduce-pdf-size-offline": {
+      "title": "오프라인에서 PDF 크기 줄이기",
+      "h1": "브라우저에서 PDF 크기를 완전히 오프라인으로 줄이기",
+      "description": "서버를 업로드하지 않고도 브라우저에서 오프라인으로 PDF 문서의 크기를 직접 줄일 수 있습니다. 100% 안전합니다."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "서식 손실 없이 PDF를 Word로 변환 — 무료 DOCX 변환기",
+      "h1": "정확한 레이아웃과 타이포그래피를 유지하면서 PDF를 Word로 변환",
+      "description": "레이아웃을 뒤섞거나 서식을 잃지 않고 PDF 파일의 텍스트, 글꼴, 표 및 단락을 Microsoft Word(.docx) 형식으로 추출합니다. 귀하의 브라우저에서는 100% 비공개입니다."
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "스캔한 PDF를 텍스트로 변환",
+      "h1": "OCR을 사용하여 스캔한 PDF에서 텍스트 추출",
       "description": "다국어 WebAssembly OCR 작업자를 사용하여 검색 불가능한 스캔 PDF 및 이미지를 로컬에서 편집 가능한 일반 텍스트로 변환합니다."
     }
   },
@@ -2381,6 +3636,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "Gratis browser-OCR - Tekst extraheren uit gescande PDF's en afbeeldingen",
       "h1": "Extraheer tekst uit gescande PDF's en afbeeldingen met Tesseract OCR",
       "description": "Zet niet-doorzoekbare gescande PDF's en afbeeldingen lokaal om in bewerkbare platte tekst met behulp van meertalige WebAssembly OCR-workers."
+    },
+    "combine-multiple-pdf-files": {
+      "title": "Combineer meerdere PDF-bestanden",
+      "h1": "Combineer meerdere PDF-bestanden online (gratis en aan de clientzijde)",
+      "description": "Voeg meerdere PDF-bestanden samen en combineer ze tot één enkel document. Directe lokale verwerking, 100% privé, geen limiet."
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "PDF-pagina's opnieuw ordenen Gratis slepen en neerzetten",
+      "h1": "Herschik PDF-pagina's eenvoudig met slepen en neerzetten",
+      "description": "Organiseer en herschik pagina's in uw PDF-document visueel door miniaturen te slepen en neer te zetten. 100% gratis en lokaal."
+    },
+    "sign-pdf-without-registration": {
+      "title": "Onderteken PDF online zonder registratie",
+      "h1": "PDF-documenten elektronisch online ondertekenen zonder registratie",
+      "description": "Plaats uw elektronische handtekening onmiddellijk op elk PDF-bestand. Geen account vereist, geen aanmelding, 100% privé en gratis."
+    },
+    "remove-pdf-password-without-password": {
+      "title": "PDF-wachtwoord verwijderen zonder wachtwoord",
+      "h1": "Wachtwoord verwijderen uit PDF zonder wachtwoord",
+      "description": "Verwijder de wachtwoordbeveiliging van uw PDF-bestanden zonder dat u het originele wachtwoord nodig heeft met behulp van onze geavanceerde ontgrendelingstool."
+    },
+    "crop-pdf-margins": {
+      "title": "PDF-marges bijsnijden — Witruimten online bijsnijden",
+      "h1": "Witte marges uit PDF-pagina's bijsnijden",
+      "description": "Verwijder vervelende witte marges uit uw PDF-documenten voor een betere leeservaring op mobiele apparaten en e-readers. 100% gratis en lokaal."
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "PDF in grijstinten voor afdrukken — Converteer kleur naar zwart-wit",
+      "h1": "Converteer kleuren-PDF naar grijswaarden",
+      "description": "Bespaar printerinkt door gekleurde PDF-documenten direct in uw browser naar zwart-wit of grijstinten te converteren."
+    },
+    "remove-pdf-author-metadata": {
+      "title": "Metagegevens van PDF-auteur verwijderen — PDF-eigenschappen opschonen",
+      "h1": "Metagegevens van PDF-auteurs opschonen",
+      "description": "Bescherm uw privacy door auteursnamen, aanmaakdatums, softwarefootprints en verborgen metagegevens veilig uit uw PDF-bestanden te verwijderen."
+    },
+    "extract-high-res-images-pdf": {
+      "title": "Extraheer afbeeldingen met hoge resolutie uit PDF: ontvang originele foto's",
+      "h1": "Extraheer afbeeldingen met hoge resolutie uit PDF",
+      "description": "Download ingesloten foto's en afbeeldingen uit uw PDF in hun originele, ongecomprimeerde hoge resolutie. Geen serveruploads."
+    },
+    "compare-pdf-files-visually": {
+      "title": "Vergelijk PDF-bestanden visueel: zoek pixelverschillen",
+      "h1": "Vergelijk visueel twee PDF-bestanden",
+      "description": "Upload twee PDF-documenten en markeer direct de exacte pixelverschillen daartussen lokaal in uw browser."
+    },
+    "merge-pdf-files-offline": {
+      "title": "Voeg uw PDF's offline samen in de browser",
+      "h1": "Voeg uw PDF's offline samen in de browser",
+      "description": "Combineer meerdere zeer gevoelige PDF-documenten zonder internetverbinding. Werkt volledig offline na het laden."
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "Zet gescande PDF's om in bewerkbare tekst",
+      "h1": "Zet gescande PDF's om in bewerkbare tekst",
+      "description": "Gebruik geavanceerde browsergebaseerde OCR om tekst uit gescande afbeeldingen en ondoorzoekbare PDF's te extraheren. 100% gratis en privé."
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "Paginanummers invoegen in PDF-documenten",
+      "h1": "Paginanummers invoegen in PDF-documenten",
+      "description": "Pagineer eenvoudig uw PDF-bestanden. Voeg direct gratis aanpasbare paginanummers toe aan kop- en voetteksten."
+    },
+    "remove-pdf-watermark-online": {
+      "title": "Verwijder watermerken veilig uit PDF-bestanden",
+      "h1": "Verwijder watermerken veilig uit PDF-bestanden",
+      "description": "Bewerk of verwijder opdringerige watermerken uit uw PDF-documenten. Volledig privé, browsergebaseerd hulpmiddel voor het verwijderen van watermerken."
+    },
+    "repair-pdf": {
+      "title": "PDF Repareren Online - Herstel Beschadigde PDF-bestanden",
+      "h1": "Repareer en Herstel Beschadigde PDF-documenten Lokaal",
+      "description": "Herstel kapotte of onleesbare PDF-bestanden lokaal in uw browser met WebAssembly en 100% privacy zonder serverupload."
+    },
+    "compress-pdf-for-email": {
+      "title": "PDF Comprimeren voor E-mail — Onder 25MB",
+      "h1": "PDF-bestanden Comprimeren voor E-mailbijlagen",
+      "description": "Omzeil bijlagelimieten van Gmail en Outlook (25MB/20MB). Verklein grote PDF’s lokaal in je browser zonder uploads."
+    },
+    "compress-pdf-to-100kb": {
+      "title": "Comprimeer PDF tot 100 KB zonder kwaliteitsverlies",
+      "h1": "Comprimeer PDF tot 100 KB zonder kwaliteitsverlies",
+      "description": "Verklein uw PDF-bestanden rechtstreeks in uw browser tot 100 KB of minder. Perfect voor e-mailbijlagen en snel delen. 100% privé."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "Comprimeer PDF zonder kwaliteitsverlies",
+      "h1": "Comprimeer PDF-documenten online zonder kwaliteitsverlies",
+      "description": "Verklein de PDF-bestandsgrootte terwijl vectoren en teksten met hoge resolutie perfect scherp blijven. 100% particuliere verwerking aan de clientzijde."
+    },
+    "reduce-pdf-size-offline": {
+      "title": "Verklein de PDF-grootte offline",
+      "h1": "Verklein de PDF-grootte volledig offline in uw browser",
+      "description": "Verklein de grootte van uw PDF-documenten offline, rechtstreeks in uw browser, zonder serveruploads. 100% veilig."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "Converteer PDF naar Word zonder de opmaak te verliezen - Gratis DOCX-converter",
+      "h1": "Converteer PDF naar Word met behoud van de exacte lay-out en typografie",
+      "description": "Extraheer tekst, lettertypen, tabellen en alinea's uit PDF-bestanden naar Microsoft Word-indeling (.docx) zonder de lay-out te vervormen of de opmaak te verliezen. 100% privé in uw browser."
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "Converteer gescande PDF naar tekst",
+      "h1": "Extraheer tekst uit gescande PDF's met OCR",
+      "description": "Zet niet-doorzoekbare gescande PDF's en afbeeldingen lokaal om in bewerkbare platte tekst met behulp van meertalige WebAssembly OCR-workers."
     }
   },
   "tr": {
@@ -2547,6 +3902,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
     "ocr-pdf": {
       "title": "Ücretsiz Tarayıcı OCR - Taranan PDF ve Görüntülerden Metin Çıkarma",
       "h1": "Tesseract OCR ile Taranan PDF'lerden ve Görüntülerden Metin Çıkarma",
+      "description": "Çok dilli WebAssembly OCR çalışanlarını kullanarak, aranamayan taranmış PDF'leri ve görüntüleri yerel olarak düzenlenebilir düz metne dönüştürün."
+    },
+    "combine-multiple-pdf-files": {
+      "title": "Birden Çok PDF Dosyasını Birleştirin",
+      "h1": "Birden Çok PDF Dosyasını Çevrimiçi Birleştirin (Ücretsiz ve İstemci Tarafı)",
+      "description": "Birden fazla PDF dosyasını tek bir belgede birleştirin ve birleştirin. Anında yerel işlem, %100 özel, limitsiz."
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "PDF Sayfalarını Yeniden Sıralayın Ücretsiz Sürükle ve Bırakın",
+      "h1": "Sürükle ve Bırak ile PDF Sayfalarını Kolayca Yeniden Sıralayın",
+      "description": "Küçük resimleri sürükleyip bırakarak PDF belgenizdeki sayfaları görsel olarak düzenleyin ve yeniden sıralayın. %100 ücretsiz ve yerel."
+    },
+    "sign-pdf-without-registration": {
+      "title": "PDF'yi Kayıt Olmadan Çevrimiçi İmzalayın",
+      "h1": "PDF Belgelerini Kayıt Olmadan Online E-İmzalayın",
+      "description": "Elektronik imzanızı herhangi bir PDF dosyasına anında yerleştirin. Hesap gerekmez, kayıt gerekmez, %100 özel ve ücretsiz."
+    },
+    "remove-pdf-password-without-password": {
+      "title": "PDF Şifresini Şifre Olmadan Kaldır",
+      "h1": "Şifreyi PDF'den Şifre Olmadan Kaldır",
+      "description": "Gelişmiş kilit açma aracımızı kullanarak orijinal şifreye ihtiyaç duymadan PDF dosyalarınızdan şifre korumasını kaldırın."
+    },
+    "crop-pdf-margins": {
+      "title": "PDF Kenar Boşluklarını Kırp — Beyaz Boşlukları Çevrimiçi Kırpın",
+      "h1": "PDF Sayfalarından Beyaz Kenar Boşluklarını Kırp",
+      "description": "Mobil cihazlarda ve e-okuyucularda daha iyi bir okuma deneyimi için PDF belgelerinizdeki can sıkıcı beyaz kenar boşluklarını kaldırın. %100 ücretsiz ve yerel."
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "Yazdırma için Gri Tonlamalı PDF — Renkliyi Siyah Beyaza Dönüştürün",
+      "h1": "Renkli PDF'yi Gri Tonlamaya Dönüştür",
+      "description": "Renkli PDF belgelerini doğrudan tarayıcınızda anında siyah beyaza veya gri tonlamaya dönüştürerek yazıcı mürekkebinden tasarruf edin."
+    },
+    "remove-pdf-author-metadata": {
+      "title": "PDF Yazar Meta Verilerini Kaldır — PDF Özelliklerini Temizleyin",
+      "h1": "PDF Yazar Meta Verilerini Temizleme",
+      "description": "Yazar adlarını, oluşturulma tarihlerini, yazılım ayak izlerini ve gizli meta verileri PDF dosyalarınızdan güvenli bir şekilde kaldırarak gizliliğinizi koruyun."
+    },
+    "extract-high-res-images-pdf": {
+      "title": "PDF'den Yüksek Çözünürlüklü Görüntüleri Çıkarın — Orijinal Fotoğraflar Alın",
+      "h1": "PDF'den Yüksek Çözünürlüklü Görüntüleri Çıkarın",
+      "description": "Gömülü fotoğrafları ve grafikleri PDF'nizden orijinal, sıkıştırılmamış yüksek çözünürlükte indirin. Sunucu yüklemesi yok."
+    },
+    "compare-pdf-files-visually": {
+      "title": "PDF Dosyalarını Görsel Olarak Karşılaştırın — Piksel Farklarını Bulun",
+      "h1": "İki PDF Dosyasını Görsel Olarak Karşılaştırın",
+      "description": "İki PDF belgesi yükleyin ve aralarındaki tam piksel farklarını tarayıcınızda yerel olarak anında vurgulayın."
+    },
+    "merge-pdf-files-offline": {
+      "title": "Tarayıcıda PDF'lerinizi Çevrimdışı Birleştirin",
+      "h1": "Tarayıcıda PDF'lerinizi Çevrimdışı Birleştirin",
+      "description": "Çok sayıda son derece hassas PDF belgesini internet bağlantısı olmadan birleştirin. Yüklemeden sonra tamamen çevrimdışı çalışır."
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "Taranmış PDF'leri Düzenlenebilir Metne Dönüştürün",
+      "h1": "Taranmış PDF'leri Düzenlenebilir Metne Dönüştürün",
+      "description": "Taranmış görüntülerden ve aranamayan PDF'lerden metin çıkarmak için gelişmiş tarayıcı tabanlı OCR'yi kullanın. %100 ücretsiz ve özel."
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "PDF Belgelerine Sayfa Numaraları Ekleme",
+      "h1": "PDF Belgelerine Sayfa Numaraları Ekleme",
+      "description": "PDF dosyalarınızı kolayca sayfalandırın. Üstbilgilere veya altbilgilere anında ücretsiz olarak özelleştirilebilir sayfa numaraları ekleyin."
+    },
+    "remove-pdf-watermark-online": {
+      "title": "Filigranları PDF Dosyalarından Güvenle Kaldırın",
+      "h1": "Filigranları PDF Dosyalarından Güvenle Kaldırın",
+      "description": "PDF belgelerinizdeki izinsiz filigranları düzenleyin veya kaldırın. Tamamen özel, tarayıcı tabanlı filigran kaldırma aracı."
+    },
+    "repair-pdf": {
+      "title": "PDF Onarma Online - Bozuk PDF Dosyalarını Kurtarın",
+      "h1": "Tarayıcınızda Bozuk ve Hasarlı PDF Belgelerini Onarın",
+      "description": "Okunamayan veya hasar görmüş PDF dosyalarını yerel WebAssembly kurtarma motoruyla sunucuya yüklemeden onarın."
+    },
+    "compress-pdf-for-email": {
+      "title": "E-posta İçin PDF Sıkıştırma — 25MB Altına Düşürün",
+      "h1": "E-posta Ekleri İçin PDF Dosyalarını Sıkıştırın",
+      "description": "Gmail ve Outlook ek sınırlarını (25MB/20MB) aşın. Sunucuya yükleme yapmadan tarayıcınızda PDF boyutunu küçültün."
+    },
+    "compress-pdf-to-100kb": {
+      "title": "Kaliteyi Kaybetmeden PDF'yi 100 KB'ye Sıkıştırın",
+      "h1": "Kaliteyi Kaybetmeden PDF'yi 100 KB'ye Sıkıştırın",
+      "description": "PDF dosyalarınızı doğrudan tarayıcınızda 100 KB veya daha azına kadar küçültün. E-posta ekleri ve hızlı paylaşım için mükemmeldir. %100 özel."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "Kaliteyi Kaybetmeden PDF'yi Sıkıştırın",
+      "h1": "PDF Belgelerini Kaliteyi Kaybetmeden Çevrimiçi Sıkıştırın",
+      "description": "Yüksek çözünürlüklü vektörleri ve metinleri mükemmel derecede keskin tutarken PDF dosya boyutunu küçültün. %100 özel istemci tarafı işleme."
+    },
+    "reduce-pdf-size-offline": {
+      "title": "Çevrimdışı PDF Boyutunu Azaltın",
+      "h1": "Tarayıcınızda PDF Boyutunu Tamamen Çevrimdışı Olarak Azaltın",
+      "description": "Herhangi bir sunucuya yükleme yapmadan PDF belgelerinizin boyutunu çevrimdışı olarak doğrudan tarayıcınızda azaltın. %100 güvenli."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "Biçimlendirmeyi Kaybetmeden PDF'yi Word'e Dönüştürün - Ücretsiz DOCX Dönüştürücü",
+      "h1": "Tam Düzeni ve Tipografiyi Korurken PDF'yi Word'e Dönüştürün",
+      "description": "Düzeni bozmadan veya biçimlendirmeyi kaybetmeden PDF dosyalarından metinleri, yazı tiplerini, tabloları ve paragrafları Microsoft Word (.docx) biçimine çıkarın. Tarayıcınızda %100 gizli."
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "Taranan PDF'yi Metne Dönüştürün",
+      "h1": "OCR ile Taranan PDF'lerden Metin Çıkarma",
       "description": "Çok dilli WebAssembly OCR çalışanlarını kullanarak, aranamayan taranmış PDF'leri ve görüntüleri yerel olarak düzenlenebilir düz metne dönüştürün."
     }
   },
@@ -2715,6 +4170,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "Darmowy OCR w przeglądarce — wyodrębnij tekst ze zeskanowanych plików PDF i obrazów",
       "h1": "Wyodrębnij tekst ze zeskanowanych plików PDF i obrazów za pomocą Tesseract OCR",
       "description": "Zamień nieprzeszukiwalne, zeskanowane pliki PDF i obrazy na lokalnie edytowalny zwykły tekst, korzystając z wielojęzycznych modułów roboczych OCR WebAssembly."
+    },
+    "combine-multiple-pdf-files": {
+      "title": "Połącz wiele plików PDF — łącz pliki PDF online za darmo",
+      "h1": "Połącz wiele plików PDF online (bezpłatnie i po stronie klienta)",
+      "description": "Scal i połącz wiele plików PDF w jeden dokument. Natychmiastowe przetwarzanie lokalne, 100% prywatności, bez ograniczeń."
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "Zmień kolejność stron PDF Przeciągnij i upuść bezpłatnie",
+      "h1": "Z łatwością zmieniaj kolejność stron PDF za pomocą metody „przeciągnij i upuść”.",
+      "description": "Organizuj i zmieniaj kolejność stron w dokumencie PDF wizualnie, przeciągając i upuszczając miniatury. 100% bezpłatne i lokalne."
+    },
+    "sign-pdf-without-registration": {
+      "title": "Podpisuj PDF online bez rejestracji — bezpłatny podpis elektroniczny",
+      "h1": "Podpisuj elektronicznie dokumenty PDF online bez rejestracji",
+      "description": "Natychmiast umieść swój podpis elektroniczny na dowolnym pliku PDF. Nie jest wymagane żadne konto ani rejestracja, w 100% prywatne i bezpłatne."
+    },
+    "remove-pdf-password-without-password": {
+      "title": "Usuń hasło PDF bez hasła",
+      "h1": "Usuń hasło z pliku PDF bez hasła",
+      "description": "Usuń ochronę hasłem z plików PDF bez konieczności podawania oryginalnego hasła, korzystając z naszego zaawansowanego narzędzia odblokowującego."
+    },
+    "crop-pdf-margins": {
+      "title": "Przytnij marginesy PDF — Przytnij białe przestrzenie online",
+      "h1": "Przytnij białe marginesy ze stron PDF",
+      "description": "Usuń irytujące białe marginesy z dokumentów PDF, aby zapewnić lepszą jakość czytania na urządzeniach mobilnych i e-czytnikach. 100% bezpłatne i lokalne."
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "Plik PDF w skali szarości do druku — Konwertuj kolor na czarno-biały",
+      "h1": "Konwertuj kolorowy plik PDF na skalę szarości",
+      "description": "Oszczędzaj tusz do drukarki, natychmiastowo konwertując kolorowe dokumenty PDF na czarno-białe lub w skali szarości bezpośrednio w przeglądarce."
+    },
+    "remove-pdf-author-metadata": {
+      "title": "Usuń metadane autora pliku PDF — Oczyść właściwości pliku PDF",
+      "h1": "Oczyść metadane autora pliku PDF",
+      "description": "Chroń swoją prywatność, bezpiecznie usuwając nazwiska autorów, daty utworzenia, ślady oprogramowania i ukryte metadane z plików PDF."
+    },
+    "extract-high-res-images-pdf": {
+      "title": "Wyodrębnij obrazy w wysokiej rozdzielczości z pliku PDF — uzyskaj oryginalne zdjęcia",
+      "h1": "Wyodrębnij obrazy w wysokiej rozdzielczości z pliku PDF",
+      "description": "Pobierz osadzone zdjęcia i grafikę z pliku PDF w ich oryginalnej, nieskompresowanej wysokiej rozdzielczości. Brak przesyłania plików na serwer."
+    },
+    "compare-pdf-files-visually": {
+      "title": "Porównaj wizualnie pliki PDF — znajdź różnice w pikselach",
+      "h1": "Porównaj wizualnie dwa pliki PDF",
+      "description": "Prześlij dwa dokumenty PDF i natychmiast zaznacz w przeglądarce dokładne różnice w pikselach między nimi."
+    },
+    "merge-pdf-files-offline": {
+      "title": "Scal swoje pliki PDF offline w przeglądarce",
+      "h1": "Scal swoje pliki PDF offline w przeglądarce",
+      "description": "Łącz wiele bardzo poufnych dokumentów PDF bez połączenia z Internetem. Działa całkowicie offline po załadowaniu."
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "Zamień zeskanowane pliki PDF w edytowalny tekst",
+      "h1": "Zamień zeskanowane pliki PDF w edytowalny tekst",
+      "description": "Użyj zaawansowanego OCR opartego na przeglądarce, aby wyodrębnić tekst ze zeskanowanych obrazów i nieprzeszukiwalnych plików PDF. 100% darmowy i prywatny."
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "Wstaw numery stron do dokumentów PDF",
+      "h1": "Wstaw numery stron do dokumentów PDF",
+      "description": "Z łatwością podziel na strony swoje pliki PDF. Natychmiast i bezpłatnie dodawaj konfigurowalne numery stron do nagłówków i stopek."
+    },
+    "remove-pdf-watermark-online": {
+      "title": "Bezpiecznie usuwaj znaki wodne z plików PDF",
+      "h1": "Bezpiecznie usuwaj znaki wodne z plików PDF",
+      "description": "Zredaguj lub usuń uciążliwe znaki wodne z dokumentów PDF. W pełni prywatne narzędzie do usuwania znaków wodnych oparte na przeglądarce."
+    },
+    "repair-pdf": {
+      "title": "Napraw PDF Online - Odzyskaj Uszkodzone Pliki PDF",
+      "h1": "Napraw i Odzyskaj Uszkodzone Dokumenty PDF w Przeglądarce",
+      "description": "Napraw uszkodzone lub nieczytelne pliki PDF lokalnie przez WebAssembly z pełną prywatnością i bez wysyłania na serwer."
+    },
+    "compress-pdf-for-email": {
+      "title": "Kompresuj PDF do E-maila — Poniżej 25MB",
+      "h1": "Kompresuj Pliki PDF do Załączników E-mail",
+      "description": "Omiń limity załączników Gmail i Outlook (25MB/20MB). Zmniejsz duże pliki PDF w przeglądarce bez wysyłania na serwer."
+    },
+    "compress-pdf-to-100kb": {
+      "title": "Kompresuj plik PDF do 100 KB bez utraty jakości",
+      "h1": "Kompresuj plik PDF do 100 KB bez utraty jakości",
+      "description": "Zmniejsz pliki PDF do 100 KB lub mniej bezpośrednio w przeglądarce. Idealny do załączników do wiadomości e-mail i szybkiego udostępniania. 100% prywatności."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "Kompresuj pliki PDF bez utraty jakości — bezstratna rozdzielczość w wysokiej rozdzielczości",
+      "h1": "Kompresuj dokumenty PDF online bez utraty jakości",
+      "description": "Zmniejsz rozmiar pliku PDF, zachowując doskonałą ostrość wektorów i tekstów o wysokiej rozdzielczości. 100% prywatne przetwarzanie po stronie klienta."
+    },
+    "reduce-pdf-size-offline": {
+      "title": "Zmniejsz rozmiar pliku PDF w trybie offline — lokalny kompresor plików PDF",
+      "h1": "Zmniejsz rozmiar pliku PDF całkowicie offline w swojej przeglądarce",
+      "description": "Zmniejsz rozmiar dokumentów PDF w trybie offline, bezpośrednio w przeglądarce, bez konieczności przesyłania ich na serwer. 100% bezpieczeństwa."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "Konwertuj pliki PDF na Word bez utraty formatowania — darmowy konwerter DOCX",
+      "h1": "Konwertuj pliki PDF na Word, zachowując dokładny układ i typografię",
+      "description": "Wyodrębnij tekst, czcionki, tabele i akapity z plików PDF do formatu Microsoft Word (.docx) bez zmiany układu i utraty formatowania. 100% prywatności w Twojej przeglądarce."
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "Konwertuj zeskanowany plik PDF na tekst — bezpłatna przeglądarka OCR",
+      "h1": "Wyodrębnij tekst ze zeskanowanych plików PDF za pomocą OCR",
+      "description": "Zamień nieprzeszukiwalne, zeskanowane pliki PDF i obrazy na lokalnie edytowalny zwykły tekst, korzystając z wielojęzycznych modułów roboczych OCR WebAssembly."
     }
   },
   "vi": {
@@ -2881,6 +4436,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
     "ocr-pdf": {
       "title": "Trình duyệt miễn phí OCR - Trích xuất văn bản từ PDF và hình ảnh được quét",
       "h1": "Trích xuất văn bản từ các tệp PDF và hình ảnh được quét bằng Tesseract OCR",
+      "description": "Biến các tệp PDF và hình ảnh được quét không thể tìm kiếm thành văn bản thuần túy có thể chỉnh sửa cục bộ bằng cách sử dụng trình xử lý WebAssugging OCR đa ngôn ngữ."
+    },
+    "combine-multiple-pdf-files": {
+      "title": "Kết hợp nhiều tệp PDF",
+      "h1": "Kết hợp nhiều tệp PDF trực tuyến (miễn phí & phía máy khách)",
+      "description": "Hợp nhất và kết hợp nhiều tệp PDF thành một tài liệu duy nhất. Xử lý cục bộ ngay lập tức, riêng tư 100%, không giới hạn."
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "Sắp xếp lại các trang PDF Kéo và thả miễn phí",
+      "h1": "Sắp xếp lại các trang PDF dễ dàng bằng cách kéo và thả",
+      "description": "Sắp xếp và sắp xếp lại các trang trong tài liệu PDF của bạn một cách trực quan bằng cách kéo và thả hình thu nhỏ. 100% miễn phí và địa phương."
+    },
+    "sign-pdf-without-registration": {
+      "title": "Ký PDF trực tuyến mà không cần đăng ký",
+      "h1": "Ký điện tử tài liệu PDF trực tuyến mà không cần đăng ký",
+      "description": "Đặt chữ ký điện tử của bạn vào bất kỳ tệp PDF nào ngay lập tức. Không cần tài khoản, không cần đăng ký, 100% riêng tư và miễn phí."
+    },
+    "remove-pdf-password-without-password": {
+      "title": "Xóa mật khẩu PDF không cần mật khẩu",
+      "h1": "Xóa mật khẩu khỏi PDF không cần mật khẩu",
+      "description": "Xóa bảo vệ bằng mật khẩu khỏi tệp PDF của bạn mà không cần mật khẩu ban đầu bằng công cụ mở khóa nâng cao của chúng tôi."
+    },
+    "crop-pdf-margins": {
+      "title": "Cắt lề PDF — Cắt các khoảng trắng trực tuyến",
+      "h1": "Cắt lề trắng từ trang PDF",
+      "description": "Loại bỏ các lề trắng khó chịu khỏi tài liệu PDF của bạn để có trải nghiệm đọc tốt hơn trên thiết bị di động và thiết bị đọc sách điện tử. 100% miễn phí và địa phương."
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "PDF thang độ xám để in - Chuyển đổi màu sang đen trắng",
+      "h1": "Chuyển đổi PDF màu sang thang độ xám",
+      "description": "Tiết kiệm mực máy in bằng cách chuyển đổi ngay các tài liệu PDF màu sang đen trắng hoặc thang độ xám trực tiếp trong trình duyệt của bạn."
+    },
+    "remove-pdf-author-metadata": {
+      "title": "Xóa siêu dữ liệu tác giả PDF - Vệ sinh thuộc tính PDF",
+      "h1": "Vệ sinh siêu dữ liệu tác giả PDF",
+      "description": "Bảo vệ quyền riêng tư của bạn bằng cách xóa an toàn tên tác giả, ngày tạo, dấu chân phần mềm và siêu dữ liệu ẩn khỏi tệp PDF của bạn."
+    },
+    "extract-high-res-images-pdf": {
+      "title": "Trích xuất hình ảnh có độ phân giải cao từ PDF — Nhận ảnh gốc",
+      "h1": "Trích xuất hình ảnh độ phân giải cao từ PDF",
+      "description": "Tải xuống ảnh và đồ họa được nhúng từ tệp PDF của bạn ở độ phân giải cao gốc, không nén. Không có tải lên máy chủ."
+    },
+    "compare-pdf-files-visually": {
+      "title": "So sánh các tệp PDF một cách trực quan - Tìm sự khác biệt về pixel",
+      "h1": "So sánh trực quan hai tệp PDF",
+      "description": "Tải lên hai tài liệu PDF và ngay lập tức đánh dấu sự khác biệt chính xác về pixel giữa chúng trong trình duyệt của bạn."
+    },
+    "merge-pdf-files-offline": {
+      "title": "Hợp nhất các tệp PDF của bạn ngoại tuyến trong trình duyệt",
+      "h1": "Hợp nhất các tệp PDF của bạn ngoại tuyến trong trình duyệt",
+      "description": "Kết hợp nhiều tài liệu PDF có độ nhạy cao mà không cần kết nối internet. Hoạt động hoàn toàn ngoại tuyến sau khi tải."
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "Biến các tệp PDF được quét thành văn bản có thể chỉnh sửa",
+      "h1": "Biến các tệp PDF được quét thành văn bản có thể chỉnh sửa",
+      "description": "Sử dụng OCR dựa trên trình duyệt nâng cao để trích xuất văn bản từ hình ảnh được quét và các tệp PDF không thể tìm kiếm. 100% miễn phí và riêng tư."
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "Chèn số trang vào tài liệu PDF",
+      "h1": "Chèn số trang vào tài liệu PDF",
+      "description": "Dễ dàng phân trang các tập tin PDF của bạn. Thêm số trang có thể tùy chỉnh vào đầu trang hoặc chân trang ngay lập tức miễn phí."
+    },
+    "remove-pdf-watermark-online": {
+      "title": "Xóa hình mờ khỏi tệp PDF một cách an toàn",
+      "h1": "Xóa hình mờ khỏi tệp PDF một cách an toàn",
+      "description": "Biên tập lại hoặc xóa hình mờ xâm nhập khỏi tài liệu PDF của bạn. Công cụ xóa hình mờ hoàn toàn riêng tư, dựa trên trình duyệt."
+    },
+    "repair-pdf": {
+      "title": "Sửa Lỗi PDF Online - Khôi Phục Tệp PDF Bị Hỏng",
+      "h1": "Sửa Chữa và Khôi Phục Tài Liệu PDF Bị Lỗi Trong Trình Duyệt",
+      "description": "Khắc phục tệp PDF bị hỏng hoặc không thể mở bằng công cụ phục hồi WebAssembly cục bộ, 100% bảo mật."
+    },
+    "compress-pdf-for-email": {
+      "title": "Nén PDF Gửi Email — Giảm Xuống Dưới 25MB",
+      "h1": "Nén Tệp PDF Cho Tệp Đính Kèm Email",
+      "description": "Vượt giới hạn tệp đính kèm của Gmail và Outlook (25MB/20MB). Nén PDF lớn ngay trong trình duyệt mà không cần tải lên máy chủ."
+    },
+    "compress-pdf-to-100kb": {
+      "title": "Nén PDF thành 100KB mà không làm giảm chất lượng",
+      "h1": "Nén PDF thành 100KB mà không làm giảm chất lượng",
+      "description": "Thu nhỏ tệp PDF của bạn xuống còn 100KB hoặc ít hơn trực tiếp trong trình duyệt của bạn. Hoàn hảo cho việc đính kèm email và chia sẻ nhanh chóng. 100% riêng tư."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "Nén PDF mà không làm giảm chất lượng",
+      "h1": "Nén tài liệu PDF trực tuyến mà không làm giảm chất lượng",
+      "description": "Giảm kích thước tệp PDF trong khi vẫn giữ được các vectơ và văn bản có độ phân giải cao sắc nét hoàn hảo. Xử lý phía khách hàng riêng 100%."
+    },
+    "reduce-pdf-size-offline": {
+      "title": "Giảm kích thước PDF ngoại tuyến",
+      "h1": "Giảm kích thước PDF hoàn toàn ngoại tuyến trong trình duyệt của bạn",
+      "description": "Giảm kích thước tài liệu PDF ngoại tuyến trực tiếp trong trình duyệt của bạn mà không cần tải lên máy chủ. An toàn 100%."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "Chuyển đổi PDF sang Word mà không làm mất định dạng — Trình chuyển đổi DOCX miễn phí",
+      "h1": "Chuyển đổi PDF sang Word trong khi vẫn giữ nguyên bố cục và kiểu chữ chính xác",
+      "description": "Trích xuất văn bản, phông chữ, bảng và đoạn văn từ tệp PDF sang định dạng Microsoft Word (.docx) mà không làm xáo trộn bố cục hoặc mất định dạng. Riêng tư 100% trong trình duyệt của bạn."
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "Chuyển đổi PDF được quét thành văn bản",
+      "h1": "Trích xuất văn bản từ các tệp PDF được quét bằng OCR",
       "description": "Biến các tệp PDF và hình ảnh được quét không thể tìm kiếm thành văn bản thuần túy có thể chỉnh sửa cục bộ bằng cách sử dụng trình xử lý WebAssugging OCR đa ngôn ngữ."
     }
   },
@@ -3049,6 +4704,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "OCR เบราว์เซอร์ฟรี - แยกข้อความจาก PDF และรูปภาพที่สแกน",
       "h1": "แยกข้อความจาก PDF และรูปภาพที่สแกนด้วย Tesseract OCR",
       "description": "เปลี่ยนไฟล์ PDF และรูปภาพที่สแกนที่ไม่สามารถค้นหาได้ให้เป็นข้อความธรรมดาที่แก้ไขได้ในเครื่องโดยใช้โปรแกรมทำงาน WebAssembly OCR หลายภาษา"
+    },
+    "combine-multiple-pdf-files": {
+      "title": "รวมไฟล์ PDF หลายไฟล์",
+      "h1": "รวมไฟล์ PDF หลายไฟล์ออนไลน์ (ฟรี & ฝั่งไคลเอ็นต์)",
+      "description": "รวมและรวมไฟล์ PDF หลายไฟล์เป็นเอกสารเดียว การประมวลผลในพื้นที่ทันที เป็นส่วนตัว 100% ไม่จำกัด"
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "จัดลำดับหน้า PDF ใหม่ด้วยการลากและวางฟรี",
+      "h1": "จัดลำดับหน้า PDF ใหม่ได้อย่างง่ายดายด้วยการลากและวาง",
+      "description": "จัดระเบียบและจัดลำดับหน้าใหม่ในเอกสาร PDF ของคุณด้วยการลากและวางภาพขนาดย่อ ฟรี 100% และในท้องถิ่น"
+    },
+    "sign-pdf-without-registration": {
+      "title": "ลงนาม PDF ออนไลน์โดยไม่ต้องลงทะเบียน",
+      "h1": "ลงนามเอกสาร PDF ออนไลน์โดยไม่ต้องลงทะเบียน",
+      "description": "วางลายเซ็นอิเล็กทรอนิกส์ของคุณลงในไฟล์ PDF ได้ทันที ไม่ต้องมีบัญชี ไม่ต้องสมัคร เป็นส่วนตัว 100% และฟรี"
+    },
+    "remove-pdf-password-without-password": {
+      "title": "ลบรหัสผ่าน PDF โดยไม่ต้องใช้รหัสผ่าน",
+      "h1": "ลบรหัสผ่านออกจาก PDF โดยไม่ต้องใช้รหัสผ่าน",
+      "description": "ลบการป้องกันด้วยรหัสผ่านออกจากไฟล์ PDF ของคุณโดยไม่ต้องใช้รหัสผ่านเดิมโดยใช้เครื่องมือปลดล็อคขั้นสูงของเรา"
+    },
+    "crop-pdf-margins": {
+      "title": "ครอบตัดระยะขอบ PDF — ตัด White Spaces ออนไลน์",
+      "h1": "ครอบตัดขอบสีขาวจากหน้า PDF",
+      "description": "ลบขอบสีขาวที่น่ารำคาญออกจากเอกสาร PDF ของคุณเพื่อประสบการณ์การอ่านที่ดียิ่งขึ้นบนอุปกรณ์พกพาและ e-reader ฟรี 100% และในท้องถิ่น"
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "PDF ระดับสีเทาสำหรับการพิมพ์ — แปลงสีเป็นขาวดำ",
+      "h1": "แปลง PDF สีเป็นระดับสีเทา",
+      "description": "ประหยัดหมึกเครื่องพิมพ์โดยการแปลงเอกสาร PDF แบบสีเป็นขาวดำหรือระดับสีเทาในเบราว์เซอร์ของคุณโดยตรง"
+    },
+    "remove-pdf-author-metadata": {
+      "title": "ลบข้อมูลเมตาของผู้เขียน PDF — ฆ่าเชื้อคุณสมบัติ PDF",
+      "h1": "ฆ่าเชื้อข้อมูลเมตาของผู้เขียน PDF",
+      "description": "ปกป้องความเป็นส่วนตัวของคุณโดยการลบชื่อผู้เขียน วันที่สร้าง รอยเท้าซอฟต์แวร์ และข้อมูลเมตาที่ซ่อนอยู่ออกจากไฟล์ PDF ของคุณอย่างปลอดภัย"
+    },
+    "extract-high-res-images-pdf": {
+      "title": "แยกรูปภาพความละเอียดสูงจาก PDF — รับรูปภาพต้นฉบับ",
+      "h1": "แยกรูปภาพความละเอียดสูงจาก PDF",
+      "description": "ดาวน์โหลดรูปภาพและกราฟิกที่ฝังไว้จาก PDF ของคุณในความละเอียดสูงต้นฉบับที่ไม่มีการบีบอัด ไม่มีการอัปโหลดเซิร์ฟเวอร์"
+    },
+    "compare-pdf-files-visually": {
+      "title": "เปรียบเทียบไฟล์ PDF ด้วยสายตา — ค้นหาความแตกต่างของพิกเซล",
+      "h1": "เปรียบเทียบไฟล์ PDF สองไฟล์ด้วยสายตา",
+      "description": "อัปโหลดเอกสาร PDF สองฉบับและเน้นความแตกต่างพิกเซลที่แน่นอนระหว่างเอกสารเหล่านั้นในเบราว์เซอร์ของคุณทันที"
+    },
+    "merge-pdf-files-offline": {
+      "title": "รวม PDF ของคุณแบบออฟไลน์ในเบราว์เซอร์",
+      "h1": "รวม PDF ของคุณแบบออฟไลน์ในเบราว์เซอร์",
+      "description": "รวมเอกสาร PDF ที่มีความไวสูงหลายชุดโดยไม่ต้องเชื่อมต่ออินเทอร์เน็ต ทำงานแบบออฟไลน์ได้อย่างสมบูรณ์หลังจากโหลด"
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "เปลี่ยน PDF ที่สแกนเป็นข้อความที่แก้ไขได้",
+      "h1": "เปลี่ยน PDF ที่สแกนเป็นข้อความที่แก้ไขได้",
+      "description": "ใช้ OCR บนเบราว์เซอร์ขั้นสูงเพื่อแยกข้อความจากรูปภาพที่สแกนและ PDF ที่ไม่สามารถค้นหาได้ ฟรี 100% และเป็นส่วนตัว"
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "แทรกหมายเลขหน้าลงในเอกสาร PDF",
+      "h1": "แทรกหมายเลขหน้าลงในเอกสาร PDF",
+      "description": "แบ่งหน้าไฟล์ PDF ของคุณได้อย่างง่ายดาย เพิ่มหมายเลขหน้าที่ปรับแต่งได้ที่ส่วนหัวหรือส่วนท้ายทันทีฟรี"
+    },
+    "remove-pdf-watermark-online": {
+      "title": "ลบลายน้ำออกจากไฟล์ PDF อย่างปลอดภัย",
+      "h1": "ลบลายน้ำออกจากไฟล์ PDF อย่างปลอดภัย",
+      "description": "แก้ไขหรือลบลายน้ำที่ล่วงล้ำออกจากเอกสาร PDF ของคุณ เครื่องมือลบลายน้ำแบบส่วนตัวบนเบราว์เซอร์"
+    },
+    "repair-pdf": {
+      "title": "ซ่อมแซมไฟล์ PDF เสียหาย — กู้คืน PDF ในเบราว์เซอร์",
+      "h1": "ซ่อมแซมและกู้คืนเอกสาร PDF ที่เสียหายในเบราว์เซอร์ของคุณ",
+      "description": "แก้ไขไฟล์ PDF ที่เปิดไม่ได้หรือเสียหายด้วยเอนจิน WebAssembly บนเครื่องคุณเอง ปลอดภัย 100% ไม่อัปโหลดขึ้นเซิร์ฟเวอร์"
+    },
+    "compress-pdf-for-email": {
+      "title": "บีบอัด PDF สำหรับส่งอีเมล — ลดขนาดต่ำกว่า 25MB",
+      "h1": "บีบอัดไฟล์ PDF สำหรับไฟล์แนบอีเมล",
+      "description": "ส่งไฟล์ผ่าน Gmail และ Outlook ได้สบาย (ต่ำกว่า 25MB/20MB) บีบอัด PDF ในเบราว์เซอร์โดยไม่อัปโหลดขึ้นเซิร์ฟเวอร์"
+    },
+    "compress-pdf-to-100kb": {
+      "title": "บีบอัด PDF เป็น 100KB โดยไม่สูญเสียคุณภาพ",
+      "h1": "บีบอัด PDF เป็น 100KB โดยไม่สูญเสียคุณภาพ",
+      "description": "ย่อขนาดไฟล์ PDF ของคุณลงเหลือ 100KB หรือน้อยกว่านั้นในเบราว์เซอร์ของคุณโดยตรง เหมาะสำหรับแนบไฟล์อีเมลและการแชร์ที่รวดเร็ว ส่วนตัว 100%"
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "บีบอัด PDF โดยไม่สูญเสียคุณภาพ",
+      "h1": "บีบอัดเอกสาร PDF ออนไลน์โดยไม่สูญเสียคุณภาพ",
+      "description": "ลดขนาดไฟล์ PDF ในขณะที่รักษาเวกเตอร์และข้อความที่มีความละเอียดสูงให้คมชัดอย่างสมบูรณ์แบบ การประมวลผลฝั่งไคลเอ็นต์ส่วนตัว 100%"
+    },
+    "reduce-pdf-size-offline": {
+      "title": "ลดขนาด PDF ออฟไลน์",
+      "h1": "ลดขนาด PDF ออฟไลน์โดยสมบูรณ์ในเบราว์เซอร์ของคุณ",
+      "description": "ลดขนาดเอกสาร PDF ของคุณแบบออฟไลน์ในเบราว์เซอร์โดยตรงโดยไม่ต้องอัปโหลดเซิร์ฟเวอร์ ปลอดภัย 100%"
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "แปลง PDF เป็น Word โดยไม่สูญเสียการจัดรูปแบบ — โปรแกรมแปลง DOCX ฟรี",
+      "h1": "แปลง PDF เป็น Word โดยยังคงรักษาเค้าโครงและการพิมพ์ที่แน่นอน",
+      "description": "แยกข้อความ แบบอักษร ตาราง และย่อหน้าจากไฟล์ PDF เป็นรูปแบบ Microsoft Word (.docx) โดยไม่ต้องสลับเค้าโครงหรือสูญเสียการจัดรูปแบบ ส่วนตัว 100% ในเบราว์เซอร์ของคุณ"
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "แปลง PDF ที่สแกนเป็นข้อความ",
+      "h1": "แยกข้อความจาก PDF ที่สแกนด้วย OCR",
+      "description": "เปลี่ยนไฟล์ PDF และรูปภาพที่สแกนที่ไม่สามารถค้นหาได้ให้เป็นข้อความธรรมดาที่แก้ไขได้ในเครื่องโดยใช้โปรแกรมทำงาน WebAssembly OCR หลายภาษา"
     }
   },
   "sv": {
@@ -3216,6 +4971,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "Gratis webbläsare OCR - Extrahera text från skannade PDF och bilder",
       "h1": "Extrahera text från skannade PDF-filer och bilder med Tesseract OCR",
       "description": "Förvandla icke-sökbara skannade PDF-filer och bilder till redigerbar vanlig text lokalt med hjälp av flerspråkiga WebAssembly OCR-arbetare."
+    },
+    "combine-multiple-pdf-files": {
+      "title": "Kombinera flera PDF-filer",
+      "h1": "Kombinera flera PDF-filer online (gratis och klientsidan)",
+      "description": "Slå samman och kombinera flera PDF-filer till ett enda dokument. Omedelbar lokal bearbetning, 100 % privat, ingen gräns."
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "Ordna om PDF-sidor Dra och släpp gratis",
+      "h1": "Ordna om PDF-sidor enkelt med dra och släpp",
+      "description": "Organisera och ändra ordning på sidor i ditt PDF-dokument visuellt genom att dra och släppa miniatyrer. 100 % gratis och lokalt."
+    },
+    "sign-pdf-without-registration": {
+      "title": "Signera PDF online utan registrering",
+      "h1": "E-signera PDF-dokument online utan registrering",
+      "description": "Placera din elektroniska signatur på en PDF-fil direkt. Inget konto krävs, ingen registrering, 100% privat och gratis."
+    },
+    "remove-pdf-password-without-password": {
+      "title": "Ta bort PDF-lösenord utan lösenord",
+      "h1": "Ta bort lösenord från PDF utan lösenord",
+      "description": "Ta bort lösenordsskyddet från dina PDF-filer utan att behöva det ursprungliga lösenordet med vårt avancerade upplåsningsverktyg."
+    },
+    "crop-pdf-margins": {
+      "title": "Beskär PDF-marginaler — Trimma vita utrymmen online",
+      "h1": "Beskär vita marginaler från PDF-sidor",
+      "description": "Ta bort irriterande vita marginaler från dina PDF-dokument för en bättre läsupplevelse på mobila enheter och e-läsare. 100 % gratis och lokalt."
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "Gråskala PDF för utskrift — Konvertera färg till svartvitt",
+      "h1": "Konvertera färg PDF till gråskala",
+      "description": "Spara skrivarbläck genom att omedelbart konvertera färgade PDF-dokument till svartvitt eller gråskala direkt i din webbläsare."
+    },
+    "remove-pdf-author-metadata": {
+      "title": "Ta bort PDF-författarens metadata — Rensa PDF-egenskaper",
+      "h1": "Rensa Författarmetadata från PDF",
+      "description": "Skydda din integritet genom att på ett säkert sätt ta bort författarnamn, skapandedatum, programvaruavtryck och dolda metadata från dina PDF-filer."
+    },
+    "extract-high-res-images-pdf": {
+      "title": "Extrahera högupplösta bilder från PDF — Få originalfoton",
+      "h1": "Extrahera högupplösta bilder från PDF",
+      "description": "Ladda ner inbäddade foton och grafik från din PDF i deras ursprungliga, okomprimerade högupplösning. Inga serveruppladdningar."
+    },
+    "compare-pdf-files-visually": {
+      "title": "Jämför PDF-filer visuellt — Hitta Pixelskillnader",
+      "h1": "Jämför två PDF-filer visuellt",
+      "description": "Ladda upp två PDF-dokument och markera direkt de exakta pixelskillnaderna mellan dem lokalt i din webbläsare."
+    },
+    "merge-pdf-files-offline": {
+      "title": "Slå samman dina PDF-filer offline i webbläsaren",
+      "h1": "Slå samman dina PDF-filer offline i webbläsaren",
+      "description": "Kombinera flera mycket känsliga PDF-dokument utan internetanslutning. Fungerar helt offline efter laddning."
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "Förvandla skannade PDF-filer till redigerbar text",
+      "h1": "Förvandla skannade PDF-filer till redigerbar text",
+      "description": "Använd avancerad webbläsarbaserad OCR för att extrahera text från skannade bilder och osökbara PDF-filer. 100 % gratis och privat."
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "Infoga sidnummer i PDF-dokument",
+      "h1": "Infoga sidnummer i PDF-dokument",
+      "description": "Sida in dina PDF-filer enkelt. Lägg till anpassningsbara sidnummer i sidhuvuden eller sidfötter direkt gratis."
+    },
+    "remove-pdf-watermark-online": {
+      "title": "Ta bort vattenstämplar från PDF-filer på ett säkert sätt",
+      "h1": "Ta bort vattenstämplar från PDF-filer på ett säkert sätt",
+      "description": "Redigera eller ta bort påträngande vattenstämplar från dina PDF-dokument. Helt privat, webbläsarbaserat verktyg för borttagning av vattenstämplar."
+    },
+    "repair-pdf": {
+      "title": "Reparera PDF Online - Återställ Skadade PDF-filer",
+      "h1": "Reparera och Återställ Skadade PDF-dokument i Webbläsaren",
+      "description": "Laga trasiga eller oläsbara PDF-filer lokalt med WebAssembly-återställning och 100 % integritet utan serveruppladdningar."
+    },
+    "compress-pdf-for-email": {
+      "title": "Komprimera PDF för E-post — Under 25MB",
+      "h1": "Komprimera PDF-filer för E-postbilagor",
+      "description": "Kringgå bilagegränser i Gmail och Outlook (25MB/20MB). Minska stora PDF-filer lokalt i webbläsaren utan uppladdningar."
+    },
+    "compress-pdf-to-100kb": {
+      "title": "Komprimera PDF till 100KB utan att förlora kvalitet",
+      "h1": "Komprimera PDF till 100KB utan att förlora kvalitet",
+      "description": "Förminska dina PDF-filer till 100 KB eller mindre direkt i din webbläsare. Perfekt för e-postbilagor och snabb delning. 100% privat."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "Komprimera PDF utan att förlora kvalitet",
+      "h1": "Komprimera PDF-dokument online utan att förlora kvalitet",
+      "description": "Minska PDF-filstorleken samtidigt som du håller högupplösta vektorer och texter perfekt skarpa. Bearbetning på 100 % privat klientsida."
+    },
+    "reduce-pdf-size-offline": {
+      "title": "Minska PDF-storlek offline",
+      "h1": "Minska PDF-storleken helt offline i din webbläsare",
+      "description": "Minska storleken på dina PDF-dokument offline direkt i din webbläsare utan några serveruppladdningar. 100% säker."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "Konvertera PDF till Word utan att förlora formatering — Gratis DOCX Converter",
+      "h1": "Konvertera PDF till Word samtidigt som exakt layout och typografi bevaras",
+      "description": "Extrahera text, teckensnitt, tabeller och stycken från PDF-filer till Microsoft Word (.docx)-format utan att förvränga layouten eller förlora formateringen. 100 % privat i din webbläsare."
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "Konvertera skannad PDF till text",
+      "h1": "Extrahera text från skannade PDF-filer med OCR",
+      "description": "Förvandla icke-sökbara skannade PDF-filer och bilder till redigerbar vanlig text lokalt med hjälp av flerspråkiga WebAssembly OCR-arbetare."
     }
   },
   "cs": {
@@ -3286,7 +5141,7 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
     },
     "grayscale-pdf": {
       "title": "Převést PDF do stupňů šedi – černobílé PDF online",
-      "h1": "Make PDF Black and White",
+      "h1": "Převést PDF na černobílé (stupně šedi)",
       "description": "Okamžitě převádějte barevné dokumenty PDF do stupňů šedi ve svém prohlížeči, abyste ušetřili tiskový inkoust."
     },
     "scan-to-pdf": {
@@ -3382,6 +5237,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
     "ocr-pdf": {
       "title": "OCR v prohlížeči zdarma – extrahování textu z naskenovaných PDF a obrázků",
       "h1": "Extrahujte text z naskenovaných PDF a obrázků pomocí Tesseract OCR",
+      "description": "Pomocí vícejazyčných pracovníků WebAssembly OCR přeměňte naskenované soubory PDF a obrázky bez možnosti vyhledávání na upravitelný prostý text lokálně."
+    },
+    "combine-multiple-pdf-files": {
+      "title": "Kombinace více souborů PDF",
+      "h1": "Kombinujte více souborů PDF online (zdarma a na straně klienta)",
+      "description": "Sloučit a kombinovat více souborů PDF do jednoho dokumentu. Okamžité místní zpracování, 100% soukromé, bez omezení."
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "Změna pořadí stránek PDF Přetažení zdarma",
+      "h1": "Změňte pořadí stránek PDF snadno pomocí přetažení",
+      "description": "Uspořádejte a změňte pořadí stránek v dokumentu PDF vizuálně přetažením miniatur. 100% zdarma a místní."
+    },
+    "sign-pdf-without-registration": {
+      "title": "Podepište PDF online bez registrace",
+      "h1": "E-Sign PDF dokumenty online bez registrace",
+      "description": "Okamžitě umístěte svůj elektronický podpis na jakýkoli soubor PDF. Není vyžadován žádný účet, žádná registrace, 100% soukromé a zdarma."
+    },
+    "remove-pdf-password-without-password": {
+      "title": "Odebrat heslo PDF bez hesla",
+      "h1": "Odebrat heslo z PDF bez hesla",
+      "description": "Odstraňte ochranu heslem ze souborů PDF, aniž byste potřebovali původní heslo pomocí našeho pokročilého nástroje pro odemykání."
+    },
+    "crop-pdf-margins": {
+      "title": "Oříznout okraje PDF — oříznout bílá místa online",
+      "h1": "Oříznout bílé okraje ze stránek PDF",
+      "description": "Odstraňte nepříjemné bílé okraje z dokumentů PDF, abyste si mohli lépe číst na mobilních zařízeních a elektronických čtečkách. 100% zdarma a místní."
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "PDF ve stupních šedi pro tisk — Převeďte barvu na černobílou",
+      "h1": "Převést barevné PDF na stupně šedi",
+      "description": "Šetřete inkoust v tiskárně okamžitým převodem barevných dokumentů PDF na černobílé nebo ve stupních šedi přímo ve vašem prohlížeči."
+    },
+    "remove-pdf-author-metadata": {
+      "title": "Odebrat metadata autora PDF — Vyčistěte vlastnosti PDF",
+      "h1": "Vyčistěte metadata autora PDF",
+      "description": "Chraňte své soukromí bezpečným odstraněním jmen autorů, dat vytvoření, softwarových stop a skrytých metadat ze souborů PDF."
+    },
+    "extract-high-res-images-pdf": {
+      "title": "Extrahujte obrázky ve vysokém rozlišení z PDF — Získejte originální fotografie",
+      "h1": "Extrahujte obrázky ve vysokém rozlišení z PDF",
+      "description": "Stáhněte si vložené fotografie a grafiku z vašeho PDF v jejich původním, nekomprimovaném vysokém rozlišení. Žádné nahrávání na server."
+    },
+    "compare-pdf-files-visually": {
+      "title": "Vizuálně porovnejte soubory PDF — Najděte rozdíly v pixelech",
+      "h1": "Vizuálně porovnejte dva soubory PDF",
+      "description": "Nahrajte dva dokumenty PDF a okamžitě zvýrazněte přesné rozdíly v pixelech mezi nimi lokálně ve vašem prohlížeči."
+    },
+    "merge-pdf-files-offline": {
+      "title": "Sloučení souborů PDF offline v prohlížeči",
+      "h1": "Sloučení souborů PDF offline v prohlížeči",
+      "description": "Kombinujte více vysoce citlivých dokumentů PDF bez připojení k internetu. Po načtení funguje plně offline."
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "Přeměňte naskenované soubory PDF na upravitelný text",
+      "h1": "Přeměňte naskenované soubory PDF na upravitelný text",
+      "description": "Použijte pokročilé OCR založené na prohlížeči k extrahování textu z naskenovaných obrázků a souborů PDF, které nelze prohledávat. 100% zdarma a soukromé."
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "Vkládání čísel stránek do dokumentů PDF",
+      "h1": "Vkládání čísel stránek do dokumentů PDF",
+      "description": "Snadno stránkujte své soubory PDF. Přidejte přizpůsobitelná čísla stránek do záhlaví nebo zápatí okamžitě a zdarma."
+    },
+    "remove-pdf-watermark-online": {
+      "title": "Odstraňte vodoznaky ze souborů PDF bezpečně",
+      "h1": "Odstraňte vodoznaky ze souborů PDF bezpečně",
+      "description": "Upravte nebo odstraňte rušivé vodoznaky z dokumentů PDF. Plně soukromý nástroj pro odstranění vodoznaku založený na prohlížeči."
+    },
+    "repair-pdf": {
+      "title": "Opravit PDF Online - Obnova Poškozených PDF Souborů",
+      "h1": "Opravte a Obnovte Poškozené PDF Dokumenty v Prohlížeči",
+      "description": "Opravte poškozené nebo nečitelné soubory PDF lokálně pomocí WebAssembly se 100% soukromím a bez nahrávání na server."
+    },
+    "compress-pdf-for-email": {
+      "title": "Komprimovat PDF pro E-mail — Pod 25 MB",
+      "h1": "Komprimace PDF souborů pro e-mailové přílohy",
+      "description": "Obejděte limity příloh v Gmailu a Outlooku (25 MB / 20 MB). Zmenšete velké PDF lokálně v prohlížeči bez nahrávání na server."
+    },
+    "compress-pdf-to-100kb": {
+      "title": "Komprimujte PDF na 100 kB bez ztráty kvality",
+      "h1": "Komprimujte PDF na 100 kB bez ztráty kvality",
+      "description": "Zmenšete své soubory PDF na 100 kB nebo méně přímo ve vašem prohlížeči. Ideální pro e-mailové přílohy a rychlé sdílení. 100% soukromé."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "Komprimujte PDF bez ztráty kvality",
+      "h1": "Komprimujte dokumenty PDF online bez ztráty kvality",
+      "description": "Zmenšete velikost souboru PDF a zároveň ponechte vektory a texty ve vysokém rozlišení dokonale ostré. 100% privátní zpracování na straně klienta."
+    },
+    "reduce-pdf-size-offline": {
+      "title": "Zmenšit velikost PDF offline",
+      "h1": "Zmenšete velikost PDF zcela offline ve svém prohlížeči",
+      "description": "Zmenšete velikost svých dokumentů PDF offline přímo ve vašem prohlížeči bez jakéhokoli nahrávání na server. 100% bezpečné."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "Převeďte PDF do Wordu bez ztráty formátování – bezplatný převodník DOCX",
+      "h1": "Převeďte PDF do Wordu při zachování přesného rozvržení a typografie",
+      "description": "Extrahujte text, písma, tabulky a odstavce ze souborů PDF do formátu Microsoft Word (.docx), aniž byste museli zakódovat rozvržení nebo ztratit formátování. 100% soukromé ve vašem prohlížeči."
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "Převést naskenované PDF na text",
+      "h1": "Extrahujte text z naskenovaných PDF pomocí OCR",
       "description": "Pomocí vícejazyčných pracovníků WebAssembly OCR přeměňte naskenované soubory PDF a obrázky bez možnosti vyhledávání na upravitelný prostý text lokálně."
     }
   },
@@ -3550,6 +5505,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "Gratis browser OCR - Udtræk tekst fra scannede PDF og billeder",
       "h1": "Uddrag tekst fra scannede PDF'er og billeder med Tesseract OCR",
       "description": "Gør ikke-søgbare scannede PDF'er og billeder til redigerbar almindelig tekst lokalt ved hjælp af flersprogede WebAssembly OCR-arbejdere."
+    },
+    "combine-multiple-pdf-files": {
+      "title": "Kombiner flere PDF-filer",
+      "h1": "Kombiner flere PDF-filer online (gratis og klient-side)",
+      "description": "Flet og kombiner flere PDF-filer til et enkelt dokument. Øjeblikkelig lokal behandling, 100% privat, ingen grænse."
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "Omarranger PDF-sider Træk og slip gratis",
+      "h1": "Omarranger PDF-sider nemt med træk og slip",
+      "description": "Organiser og omarranger siderne i dit PDF-dokument visuelt ved at trække og slippe thumbnails. 100 % gratis og lokalt."
+    },
+    "sign-pdf-without-registration": {
+      "title": "Signer PDF online uden registrering",
+      "h1": "E-Sign PDF-dokumenter online uden registrering",
+      "description": "Placer din elektroniske signatur på enhver PDF-fil med det samme. Ingen konto påkrævet, ingen tilmelding, 100% privat og gratis."
+    },
+    "remove-pdf-password-without-password": {
+      "title": "Fjern PDF-adgangskode uden adgangskode",
+      "h1": "Fjern adgangskode fra PDF uden adgangskode",
+      "description": "Fjern adgangskodebeskyttelse fra dine PDF-filer uden at skulle bruge den originale adgangskode ved hjælp af vores avancerede oplåsningsværktøj."
+    },
+    "crop-pdf-margins": {
+      "title": "Beskær PDF-margener — Trim hvide mellemrum online",
+      "h1": "Beskær hvide margener fra PDF-sider",
+      "description": "Fjern irriterende hvide margener fra dine PDF-dokumenter for en bedre læseoplevelse på mobile enheder og e-læsere. 100 % gratis og lokalt."
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "PDF i gråtoner til udskrivning — Konverter farve til sort/hvid",
+      "h1": "Konverter farve PDF til gråtoner",
+      "description": "Spar printerblæk ved øjeblikkeligt at konvertere farvede PDF-dokumenter til sort/hvid eller gråtoner direkte i din browser."
+    },
+    "remove-pdf-author-metadata": {
+      "title": "Fjern PDF-forfattermetadata — Rengør PDF-egenskaber",
+      "h1": "Rens Forfattermetadata fra PDF",
+      "description": "Beskyt dit privatliv ved sikkert at fjerne forfatternavne, oprettelsesdatoer, softwarefodspor og skjulte metadata fra dine PDF-filer."
+    },
+    "extract-high-res-images-pdf": {
+      "title": "Udtræk billeder i høj opløsning fra PDF — Få originale billeder",
+      "h1": "Udtræk billeder i høj opløsning fra PDF",
+      "description": "Download indlejrede fotos og grafik fra din PDF i deres originale, ukomprimerede høje opløsning. Ingen serveruploads."
+    },
+    "compare-pdf-files-visually": {
+      "title": "Sammenlign PDF-filer visuelt - Find pixelforskelle",
+      "h1": "Sammenlign to PDF-filer visuelt",
+      "description": "Upload to PDF-dokumenter, og fremhæv øjeblikkeligt de nøjagtige pixelforskelle mellem dem lokalt i din browser."
+    },
+    "merge-pdf-files-offline": {
+      "title": "Flet dine PDF'er offline i browseren",
+      "h1": "Flet dine PDF'er offline i browseren",
+      "description": "Kombiner flere meget følsomme PDF-dokumenter uden internetforbindelse. Fungerer fuldt offline efter indlæsning."
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "Gør scannede PDF'er til redigerbar tekst",
+      "h1": "Gør scannede PDF'er til redigerbar tekst",
+      "description": "Brug avanceret browserbaseret OCR til at udtrække tekst fra scannede billeder og usøgelige PDF-filer. 100 % gratis og privat."
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "Indsæt sidetal i PDF-dokumenter",
+      "h1": "Indsæt sidetal i PDF-dokumenter",
+      "description": "Paginér nemt dine PDF-filer. Tilføj sidetal, der kan tilpasses, til sidehoveder eller sidefødder med det samme gratis."
+    },
+    "remove-pdf-watermark-online": {
+      "title": "Fjern vandmærker fra PDF-filer sikkert",
+      "h1": "Fjern vandmærker fra PDF-filer sikkert",
+      "description": "Rediger eller fjern påtrængende vandmærker fra dine PDF-dokumenter. Fuldstændig privat, browserbaseret værktøj til fjernelse af vandmærker."
+    },
+    "repair-pdf": {
+      "title": "Reparer PDF Online - Gendan Beskadigede PDF-filer",
+      "h1": "Reparer og Gendan Beskadigede PDF-dokumenter i Browseren",
+      "description": "Ret ødelagte eller ulæselige PDF-filer lokalt via WebAssembly med 100 % privatliv og uden serverupload."
+    },
+    "compress-pdf-for-email": {
+      "title": "Komprimer PDF til E-mail — Under 25MB",
+      "h1": "Komprimer PDF-filer til E-mailvedhæftninger",
+      "description": "Kom under grænserne for Gmail og Outlook (25MB/20MB). Formindsk store PDF-filer lokalt i browseren uden serverupload."
+    },
+    "compress-pdf-to-100kb": {
+      "title": "Komprimer PDF til 100KB uden at miste kvalitet",
+      "h1": "Komprimer PDF til 100KB uden at miste kvalitet",
+      "description": "Formindsk dine PDF-filer til 100KB eller mindre direkte i din browser. Perfekt til vedhæftede filer i e-mail og hurtig deling. 100% privat."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "Komprimer PDF uden at miste kvalitet",
+      "h1": "Komprimer PDF-dokumenter online uden at miste kvalitet",
+      "description": "Reducer PDF-filstørrelsen, mens du holder højopløselige vektorer og tekster perfekt skarpe. 100 % privat behandling på klientsiden."
+    },
+    "reduce-pdf-size-offline": {
+      "title": "Reducer PDF-størrelse offline",
+      "h1": "Reducer PDF-størrelsen helt offline i din browser",
+      "description": "Reducer størrelsen af ​​dine PDF-dokumenter offline direkte i din browser uden nogen serveruploads. 100% sikker."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "Konverter PDF til Word uden at miste formatering - Gratis DOCX Converter",
+      "h1": "Konverter PDF til Word, mens du bevarer nøjagtigt layout og typografi",
+      "description": "Udpak tekst, skrifttyper, tabeller og afsnit fra PDF-filer til Microsoft Word (.docx)-format uden at forvride layout eller miste formatering. 100 % privat i din browser."
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "Konverter scannet PDF til tekst",
+      "h1": "Uddrag tekst fra scannede PDF'er med OCR",
+      "description": "Gør ikke-søgbare scannede PDF'er og billeder til redigerbar almindelig tekst lokalt ved hjælp af flersprogede WebAssembly OCR-arbejdere."
     }
   },
   "el": {
@@ -3595,7 +5650,7 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
     },
     "sign-pdf": {
       "title": "Υπογραφή PDF Online - Προσθήκη Ηλεκτρονικής Υπογραφής σε PDF",
-      "h1": "E-Sign PDF Documents Locally",
+      "h1": "Ηλεκτρονική Υπογραφή Εγγράφων PDF Τοπικά",
       "description": "Σχεδιάστε, μεταφορτώστε ή δημιουργήστε μια ηλεκτρονική υπογραφή και προσθέστε τη στο PDF σας."
     },
     "protect-pdf": {
@@ -3716,6 +5771,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
     "ocr-pdf": {
       "title": "Δωρεάν OCR προγράμματος περιήγησης - Εξαγωγή κειμένου από σαρωμένο PDF & εικόνες",
       "h1": "Εξαγωγή κειμένου από σαρωμένα PDF και εικόνες με Tesseract OCR",
+      "description": "Μετατρέψτε τα σαρωμένα PDF και τις εικόνες που δεν μπορούν να αναζητηθούν σε επεξεργάσιμο απλό κείμενο τοπικά χρησιμοποιώντας πολυγλωσσικά προγράμματα OCR WebAssembly."
+    },
+    "combine-multiple-pdf-files": {
+      "title": "Συνδυάστε πολλαπλά αρχεία PDF",
+      "h1": "Συνδυάστε πολλαπλά αρχεία PDF στο διαδίκτυο (δωρεάν & από την πλευρά του πελάτη)",
+      "description": "Συγχωνεύστε και συνδυάστε πολλά αρχεία PDF σε ένα μόνο έγγραφο. Άμεση τοπική επεξεργασία, 100% ιδιωτική, χωρίς όριο."
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "Αναδιάταξη σελίδων PDF Δωρεάν μεταφορά και απόθεση",
+      "h1": "Αναδιάταξη σελίδων PDF εύκολα με μεταφορά και απόθεση",
+      "description": "Οργανώστε και αναδιατάξτε τις σελίδες στο έγγραφό σας PDF οπτικά με μεταφορά και απόθεση μικρογραφιών. 100% δωρεάν και τοπικό."
+    },
+    "sign-pdf-without-registration": {
+      "title": "Υπογραφή PDF Online χωρίς εγγραφή",
+      "h1": "E-Sign PDF Documents Online χωρίς εγγραφή",
+      "description": "Τοποθετήστε την ηλεκτρονική σας υπογραφή σε οποιοδήποτε αρχείο PDF αμέσως. Δεν απαιτείται λογαριασμός, χωρίς εγγραφή, 100% ιδιωτικός και δωρεάν."
+    },
+    "remove-pdf-password-without-password": {
+      "title": "Κατάργηση κωδικού πρόσβασης PDF χωρίς κωδικό πρόσβασης",
+      "h1": "Αφαιρέστε τον κωδικό πρόσβασης από το PDF χωρίς κωδικό πρόσβασης",
+      "description": "Καταργήστε την προστασία με κωδικό πρόσβασης από τα αρχεία PDF σας χωρίς να χρειάζεστε τον αρχικό κωδικό πρόσβασης χρησιμοποιώντας το προηγμένο εργαλείο ξεκλειδώματος."
+    },
+    "crop-pdf-margins": {
+      "title": "Περικοπή περιθωρίων PDF — Περικοπή λευκών διαστημάτων στο διαδίκτυο",
+      "h1": "Περικοπή λευκών περιθωρίων από σελίδες PDF",
+      "description": "Αφαιρέστε τα ενοχλητικά λευκά περιθώρια από τα έγγραφά σας PDF για καλύτερη εμπειρία ανάγνωσης σε κινητές συσκευές και ηλεκτρονικά προγράμματα ανάγνωσης. 100% δωρεάν και τοπικό."
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "PDF σε κλίμακα του γκρι για εκτύπωση — Μετατροπή χρώματος σε ασπρόμαυρο",
+      "h1": "Μετατροπή έγχρωμου PDF σε κλίμακα του γκρι",
+      "description": "Εξοικονομήστε μελάνι εκτυπωτή μετατρέποντας άμεσα έγχρωμα έγγραφα PDF σε ασπρόμαυρα ή σε κλίμακα του γκρι απευθείας στο πρόγραμμα περιήγησής σας."
+    },
+    "remove-pdf-author-metadata": {
+      "title": "Κατάργηση μεταδεδομένων συντάκτη PDF — Εξυγίανση των ιδιοτήτων PDF",
+      "h1": "Απολυμάνετε τα Μεταδεδομένα Συντάκτη PDF",
+      "description": "Προστατέψτε το απόρρητό σας αφαιρώντας με ασφάλεια ονόματα συγγραφέων, ημερομηνίες δημιουργίας, αποτυπώματα λογισμικού και κρυφά μεταδεδομένα από τα αρχεία PDF σας."
+    },
+    "extract-high-res-images-pdf": {
+      "title": "Εξαγωγή εικόνων υψηλής ανάλυσης από PDF — Λάβετε πρωτότυπες φωτογραφίες",
+      "h1": "Εξαγωγή εικόνων υψηλής ανάλυσης από PDF",
+      "description": "Κατεβάστε τις ενσωματωμένες φωτογραφίες και τα γραφικά από το PDF σας στην αρχική, ασυμπίεστη υψηλή ανάλυση. Δεν υπάρχουν μεταφορτώσεις διακομιστή."
+    },
+    "compare-pdf-files-visually": {
+      "title": "Συγκρίνετε αρχεία PDF οπτικά — Βρείτε τις διαφορές εικονοστοιχείων",
+      "h1": "Συγκρίνετε οπτικά δύο αρχεία PDF",
+      "description": "Ανεβάστε δύο έγγραφα PDF και επισημάνετε αμέσως τις ακριβείς διαφορές μεταξύ των pixel μεταξύ τους τοπικά στο πρόγραμμα περιήγησής σας."
+    },
+    "merge-pdf-files-offline": {
+      "title": "Συγχωνεύστε τα PDF σας εκτός σύνδεσης στο πρόγραμμα περιήγησης",
+      "h1": "Συγχωνεύστε τα PDF σας εκτός σύνδεσης στο πρόγραμμα περιήγησης",
+      "description": "Συνδυάστε πολλά εξαιρετικά ευαίσθητα έγγραφα PDF χωρίς σύνδεση στο διαδίκτυο. Λειτουργεί πλήρως εκτός σύνδεσης μετά τη φόρτωση."
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "Μετατρέψτε τα σαρωμένα PDF σε επεξεργάσιμο κείμενο",
+      "h1": "Μετατρέψτε τα σαρωμένα PDF σε επεξεργάσιμο κείμενο",
+      "description": "Χρησιμοποιήστε προηγμένο OCR που βασίζεται σε πρόγραμμα περιήγησης για να εξαγάγετε κείμενο από σαρωμένες εικόνες και αρχεία PDF που δεν μπορούν να αναζητηθούν. 100% δωρεάν και ιδιωτικό."
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "Εισαγάγετε αριθμούς σελίδων σε έγγραφα PDF",
+      "h1": "Εισαγάγετε αριθμούς σελίδων σε έγγραφα PDF",
+      "description": "Πραγματοποιήστε σελιδοποίηση των αρχείων PDF σας εύκολα. Προσθέστε προσαρμόσιμους αριθμούς σελίδων σε κεφαλίδες ή υποσέλιδα άμεσα δωρεάν."
+    },
+    "remove-pdf-watermark-online": {
+      "title": "Αφαιρέστε τα υδατογραφήματα από τα αρχεία PDF με ασφάλεια",
+      "h1": "Αφαιρέστε τα υδατογραφήματα από τα αρχεία PDF με ασφάλεια",
+      "description": "Διορθώστε ή αφαιρέστε τα παρεμβατικά υδατογραφήματα από τα έγγραφά σας PDF. Πλήρως ιδιωτικό εργαλείο αφαίρεσης υδατογραφήματος που βασίζεται σε πρόγραμμα περιήγησης."
+    },
+    "repair-pdf": {
+      "title": "Επιδιόρθωση PDF Online - Ανάκτηση Κατεστραμμένων PDF",
+      "h1": "Επιδιορθώστε και Ανακτήστε Κατεστραμμένα PDF στον Browser",
+      "description": "Διορθώστε κατεστραμμένα ή μη αναγνώσιμα αρχεία PDF τοπικά μέσω WebAssembly με 100% ιδιωτικότητα."
+    },
+    "compress-pdf-for-email": {
+      "title": "Συμπίεση PDF για Email — Κάτω από 25MB",
+      "h1": "Συμπίεση Αρχείων PDF για Συνημμένα Email",
+      "description": "Ξεπεράστε τα όρια συνημμένων σε Gmail και Outlook (25MB/20MB). Μειώστε μεγάλα PDF τοπικά στον browser χωρίς μεταφορτώσεις."
+    },
+    "compress-pdf-to-100kb": {
+      "title": "Συμπιέστε το PDF στα 100 KB χωρίς απώλεια ποιότητας",
+      "h1": "Συμπιέστε το PDF στα 100 KB χωρίς απώλεια ποιότητας",
+      "description": "Μειώστε τα αρχεία PDF σας σε 100 KB ή λιγότερο απευθείας στο πρόγραμμα περιήγησής σας. Ιδανικό για συνημμένα email και γρήγορη κοινή χρήση. 100% ιδιωτικό."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "Συμπίεση PDF χωρίς απώλεια ποιότητας",
+      "h1": "Συμπίεση εγγράφων PDF σε απευθείας σύνδεση χωρίς απώλεια ποιότητας",
+      "description": "Μειώστε το μέγεθος του αρχείου PDF, διατηρώντας παράλληλα τέλεια διανύσματα και κείμενα υψηλής ανάλυσης. 100% ιδιωτική επεξεργασία από την πλευρά του πελάτη."
+    },
+    "reduce-pdf-size-offline": {
+      "title": "Μειώστε το μέγεθος PDF εκτός σύνδεσης",
+      "h1": "Μειώστε το μέγεθος PDF εντελώς εκτός σύνδεσης στο πρόγραμμα περιήγησής σας",
+      "description": "Μειώστε το μέγεθος των εγγράφων PDF εκτός σύνδεσης απευθείας στο πρόγραμμα περιήγησής σας χωρίς μεταφορτώσεις διακομιστή. 100% ασφαλής."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "Μετατροπή PDF σε Word χωρίς απώλεια μορφοποίησης — Δωρεάν μετατροπέας DOCX",
+      "h1": "Μετατροπή PDF σε Word διατηρώντας την ακριβή διάταξη και την τυπογραφία",
+      "description": "Εξαγάγετε κείμενο, γραμματοσειρές, πίνακες και παραγράφους από αρχεία PDF σε μορφή Microsoft Word (.docx) χωρίς να ανακατεύετε τη διάταξη ή να χάσετε τη μορφοποίηση. 100% ιδιωτικό στο πρόγραμμα περιήγησής σας."
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "Μετατροπή σαρωμένου PDF σε κείμενο",
+      "h1": "Εξαγωγή κειμένου από σαρωμένα αρχεία PDF με OCR",
       "description": "Μετατρέψτε τα σαρωμένα PDF και τις εικόνες που δεν μπορούν να αναζητηθούν σε επεξεργάσιμο απλό κείμενο τοπικά χρησιμοποιώντας πολυγλωσσικά προγράμματα OCR WebAssembly."
     }
   },
@@ -3884,6 +6039,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "Ilmainen selaimen OCR - Pura tekstiä skannatuista PDF-tiedostoista ja kuvista",
       "h1": "Pura tekstiä skannatuista PDF-tiedostoista ja kuvista Tesseractin OCR:llä",
       "description": "Muuta ei-hakukelpoiset skannatut PDF-tiedostot ja kuvat muokattavaksi tavalliseksi tekstiksi paikallisesti käyttämällä monikielisiä WebAssembly OCR -työntekijöitä."
+    },
+    "combine-multiple-pdf-files": {
+      "title": "Yhdistä useita PDF-tiedostoja",
+      "h1": "Yhdistä useita PDF-tiedostoja verkossa (ilmainen ja asiakaspuoli)",
+      "description": "Yhdistä ja yhdistä useita PDF-tiedostoja yhdeksi asiakirjaksi. Välitön paikallinen käsittely, 100 % yksityinen, ei rajoituksia."
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "Järjestä PDF-sivut uudelleen Vedä ja pudota ilmaiseksi",
+      "h1": "Järjestä PDF-sivuja helposti vetämällä ja pudottamalla",
+      "description": "Järjestä ja järjestä PDF-dokumentin sivut visuaalisesti vetämällä ja pudottamalla pikkukuvia. 100% ilmainen ja paikallinen."
+    },
+    "sign-pdf-without-registration": {
+      "title": "Allekirjoita PDF verkossa ilman rekisteröintiä",
+      "h1": "E-allekirjoita PDF-asiakirjoja verkossa ilman rekisteröintiä",
+      "description": "Aseta sähköinen allekirjoituksesi mihin tahansa PDF-tiedostoon välittömästi. Ei vaadi tiliä, ei kirjautumista, 100% yksityinen ja ilmainen."
+    },
+    "remove-pdf-password-without-password": {
+      "title": "Poista PDF-salasana ilman salasanaa",
+      "h1": "Poista salasana PDF-tiedostosta ilman salasanaa",
+      "description": "Poista salasanasuojaus PDF-tiedostoistasi ilman alkuperäistä salasanaa edistyneellä lukituksen avaustyökalullamme."
+    },
+    "crop-pdf-margins": {
+      "title": "Rajaa PDF-marginaalit — leikkaa valkoisia välilyöntejä verkossa",
+      "h1": "Rajaa valkoisia marginaaleja PDF-sivuilta",
+      "description": "Poista ärsyttävät valkoiset marginaalit PDF-dokumenteistasi parantaaksesi lukukokemusta mobiililaitteissa ja e-lukijoissa. 100% ilmainen ja paikallinen."
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "Harmaasävy PDF tulostettaviksi — Muunna värit mustavalkoiseksi",
+      "h1": "Muunna värillinen PDF harmaasävyiksi",
+      "description": "Säästä tulostimen mustetta muuntamalla värilliset PDF-asiakirjat mustavalkoisiksi tai harmaasävyiksi suoraan selaimessasi."
+    },
+    "remove-pdf-author-metadata": {
+      "title": "Poista PDF-tekijän metatiedot — Puhdista PDF-ominaisuudet",
+      "h1": "Puhdista PDF-tekijän metatiedot",
+      "description": "Suojaa yksityisyyttäsi poistamalla turvallisesti tekijöiden nimet, luontipäivämäärät, ohjelmistojalanjäljet ​​ja piilotetut metatiedot PDF-tiedostoistasi."
+    },
+    "extract-high-res-images-pdf": {
+      "title": "Pura korkearesoluutioisia kuvia PDF-tiedostosta – hanki alkuperäisiä valokuvia",
+      "h1": "Pura korkearesoluutioisia kuvia PDF-tiedostosta",
+      "description": "Lataa upotetut valokuvat ja grafiikat PDF-tiedostosta alkuperäisessä, pakkaamattomassa korkeassa resoluutiossa. Ei palvelinlatauksia."
+    },
+    "compare-pdf-files-visually": {
+      "title": "Vertaa PDF-tiedostoja visuaalisesti – Etsi pikselieroja",
+      "h1": "Vertaa visuaalisesti kahta PDF-tiedostoa",
+      "description": "Lataa kaksi PDF-dokumenttia ja korosta välittömästi niiden väliset tarkat pikselierot paikallisesti selaimessasi."
+    },
+    "merge-pdf-files-offline": {
+      "title": "Yhdistä PDF-tiedostosi offline-tilassa selaimessa",
+      "h1": "Yhdistä PDF-tiedostosi offline-tilassa selaimessa",
+      "description": "Yhdistä useita erittäin arkaluonteisia PDF-dokumentteja ilman Internet-yhteyttä. Toimii täysin offline-tilassa latauksen jälkeen."
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "Muuta skannatut PDF-tiedostot muokattavaksi tekstiksi",
+      "h1": "Muuta skannatut PDF-tiedostot muokattavaksi tekstiksi",
+      "description": "Käytä kehittynyttä selainpohjaista tekstintunnistusta tekstin poimimiseen skannatuista kuvista ja PDF-tiedostoista, joita ei voi hakea. 100% ilmainen ja yksityinen."
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "Lisää sivunumerot PDF-dokumentteihin",
+      "h1": "Lisää sivunumerot PDF-dokumentteihin",
+      "description": "Sivuttele PDF-tiedostosi helposti. Lisää mukautettavat sivunumerot ylä- tai alatunnisteisiin välittömästi ilmaiseksi."
+    },
+    "remove-pdf-watermark-online": {
+      "title": "Poista vesileimat PDF-tiedostoista turvallisesti",
+      "h1": "Poista vesileimat PDF-tiedostoista turvallisesti",
+      "description": "Muokkaa tai poista häiritseviä vesileimoja PDF-dokumenteistasi. Täysin yksityinen selainpohjainen vesileiman poistotyökalu."
+    },
+    "repair-pdf": {
+      "title": "Korjaa PDF Online - Palauta Vioittuneet PDF-tiedostot",
+      "h1": "Korjaa ja Palauta Vioittuneet PDF-asiakirjat Selaimessa",
+      "description": "Korjaa rikkinäiset tai lukukelvottomat PDF-tiedostot paikallisesti WebAssemblyllä 100 % yksityisyydellä."
+    },
+    "compress-pdf-for-email": {
+      "title": "Pakkaa PDF Sähköpostiin — Alle 25 Mt",
+      "h1": "Pakkaa PDF-tiedostot Sähköpostiliitteiksi",
+      "description": "Ohita Gmailin ja Outlookin liiterajoitukset (25 Mt / 20 Mt). Pienennä suuret PDF-tiedostot selaimessa ilman palvelinlatauksia."
+    },
+    "compress-pdf-to-100kb": {
+      "title": "Pakkaa PDF 100 kilotavuun menettämättä laatua",
+      "h1": "Pakkaa PDF 100 kilotavuun menettämättä laatua",
+      "description": "Pienennä PDF-tiedostosi 100 kilotavuun tai pienempään suoraan selaimessasi. Täydellinen sähköpostin liitteisiin ja nopeaan jakamiseen. 100% yksityinen."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "Pakkaa PDF menettämättä laatua",
+      "h1": "Pakkaa PDF-asiakirjat verkossa menettämättä laatua",
+      "description": "Pienennä PDF-tiedoston kokoa pitäen samalla korkearesoluutioiset vektorit ja tekstit täysin terävinä. 100 % yksityinen asiakaspuolen käsittely."
+    },
+    "reduce-pdf-size-offline": {
+      "title": "Pienennä PDF-kokoa offline-tilassa",
+      "h1": "Pienennä PDF-kokoa kokonaan offline-tilassa selaimessasi",
+      "description": "Pienennä PDF-dokumenttien kokoa offline-tilassa suoraan selaimessasi ilman palvelimen latauksia. 100% varma."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "Muunna PDF Wordiksi menettämättä muotoilua — ilmainen DOCX-muunnin",
+      "h1": "Muunna PDF Wordiksi säilyttäen samalla tarkan asettelun ja typografian",
+      "description": "Pura tekstiä, fontteja, taulukoita ja kappaleita PDF-tiedostoista Microsoft Word (.docx) -muotoon sekoittamatta asettelua tai menettämättä muotoilua. 100 % yksityinen selaimessasi."
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "Muunna skannattu PDF tekstiksi",
+      "h1": "Pura tekstiä skannatuista PDF-tiedostoista OCR:llä",
+      "description": "Muuta ei-hakukelpoiset skannatut PDF-tiedostot ja kuvat muokattavaksi tavalliseksi tekstiksi paikallisesti käyttämällä monikielisiä WebAssembly OCR -työntekijöitä."
     }
   },
   "he": {
@@ -4050,6 +6305,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
     "ocr-pdf": {
       "title": "OCR דפדפן בחינם - חלץ טקסט מ-PDF ותמונות סרוקות",
       "h1": "חלץ טקסט מקובצי PDF ותמונות סרוקים עם Tesseract OCR",
+      "description": "הפוך קובצי PDF ותמונות סרוקים שאינם ניתנים לחיפוש לטקסט רגיל הניתן לעריכה באופן מקומי באמצעות עובדי WebAssembly OCR מרובי שפות."
+    },
+    "combine-multiple-pdf-files": {
+      "title": "שלב קובצי PDF מרובים",
+      "h1": "שלב קובצי PDF מרובים באינטרנט (בחינם וצד הלקוח)",
+      "description": "מיזוג ושלב קובצי PDF מרובים למסמך אחד. עיבוד מקומי מיידי, 100% פרטי, ללא הגבלה."
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "סידור מחדש של דפי PDF גרור ושחרר בחינם",
+      "h1": "סדר מחדש את דפי PDF בקלות עם גרירה ושחרור",
+      "description": "ארגן וסדר מחדש דפים במסמך ה-PDF שלך באופן חזותי על ידי גרירה ושחרור של תמונות ממוזערות. 100% חינם ומקומי."
+    },
+    "sign-pdf-without-registration": {
+      "title": "חתום על PDF באינטרנט ללא רישום",
+      "h1": "חתום אלקטרוני על מסמכי PDF באופן מקוון ללא רישום",
+      "description": "הצב את החתימה האלקטרונית שלך על כל קובץ PDF באופן מיידי. אין צורך בחשבון, אין הרשמה, 100% פרטי וחינמי."
+    },
+    "remove-pdf-password-without-password": {
+      "title": "הסר סיסמת PDF ללא סיסמה",
+      "h1": "הסר סיסמה מ-PDF ללא סיסמה",
+      "description": "הסר את הגנת הסיסמה מקובצי ה-PDF שלך מבלי להזדקק לסיסמה המקורית באמצעות כלי הנעילה המתקדם שלנו."
+    },
+    "crop-pdf-margins": {
+      "title": "חיתוך שולי PDF - חתוך רווחים לבנים באינטרנט",
+      "h1": "חיתוך שוליים לבנים מדפי PDF",
+      "description": "הסר שוליים לבנים מעצבנים ממסמכי ה-PDF שלך לחוויית קריאה טובה יותר במכשירים ניידים ובקוראי אלקטרוני. 100% חינם ומקומי."
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "PDF בגווני אפור להדפסה - המרת צבע לשחור-לבן",
+      "h1": "המרת PDF צבעוני לגווני אפור",
+      "description": "חסוך בדיו למדפסת על ידי המרה מיידית של מסמכי PDF צבעוניים לשחור לבן או לגווני אפור ישירות בדפדפן שלך."
+    },
+    "remove-pdf-author-metadata": {
+      "title": "הסר מטא נתונים של מחבר PDF - חיטוי מאפייני PDF",
+      "h1": "ניקוי מטא נתונים של מחבר PDF",
+      "description": "הגן על הפרטיות שלך על ידי הסרה מאובטחת של שמות מחברים, תאריכי יצירה, עקבות תוכנה ומטא נתונים נסתרים מקובצי ה-PDF שלך."
+    },
+    "extract-high-res-images-pdf": {
+      "title": "חלץ תמונות ברזולוציה גבוהה מ-PDF - קבל תמונות מקוריות",
+      "h1": "חלץ תמונות ברזולוציה גבוהה מ-PDF",
+      "description": "הורד תמונות וגרפיקה משובצות מה-PDF שלך ברזולוציה הגבוהה המקורית והלא דחוסה. אין העלאות שרתים."
+    },
+    "compare-pdf-files-visually": {
+      "title": "השווה קבצי PDF באופן ויזואלי - מצא הבדלי פיקסלים",
+      "h1": "השווה חזותית שני קבצי PDF",
+      "description": "העלה שני מסמכי PDF והדגש באופן מיידי את הבדלי הפיקסלים המדויקים ביניהם באופן מקומי בדפדפן שלך."
+    },
+    "merge-pdf-files-offline": {
+      "title": "מיזוג קובצי PDF במצב לא מקוון בדפדפן",
+      "h1": "מיזוג קובצי PDF במצב לא מקוון בדפדפן",
+      "description": "שלב מספר מסמכי PDF רגישים במיוחד ללא חיבור לאינטרנט. עובד במצב לא מקוון לחלוטין לאחר טעינה."
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "הפוך קובצי PDF סרוקים לטקסט הניתן לעריכה",
+      "h1": "הפוך קובצי PDF סרוקים לטקסט הניתן לעריכה",
+      "description": "השתמש ב-OCR מתקדם מבוסס דפדפן כדי לחלץ טקסט מתמונות סרוקות ומקובצי PDF בלתי ניתנים לחיפוש. 100% חינם ופרטי."
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "הכנס מספרי עמודים למסמכי PDF",
+      "h1": "הכנס מספרי עמודים למסמכי PDF",
+      "description": "עימוד בקלות את קובצי ה-PDF שלך. הוסף מספרי עמודים הניתנים להתאמה אישית לכותרות עליונות או תחתונות באופן מיידי בחינם."
+    },
+    "remove-pdf-watermark-online": {
+      "title": "הסר סימני מים מקבצי PDF בצורה בטוחה",
+      "h1": "הסר סימני מים מקבצי PDF בצורה בטוחה",
+      "description": "ערוך או הסר סימני מים פולשניים ממסמכי ה-PDF שלך. כלי להסרת סימני מים פרטי לחלוטין, מבוסס דפדפן."
+    },
+    "repair-pdf": {
+      "title": "תיקון PDF אונליין - שחזור קובצי PDF פגומים בדפדפן",
+      "h1": "תקן ושחזר מסמכי PDF פגומים ישירות בדפדפן שלך",
+      "description": "תקן קובצי PDF פגומים או בלתי קריאים מקומית באמצעות WebAssembly עם 100% פרטיות וללא העלאה לשרת."
+    },
+    "compress-pdf-for-email": {
+      "title": "דחיסת PDF לאימייל — הקטנה מתחת ל-25MB",
+      "h1": "דחוס קובצי PDF עבור קבצים מצורפים באימייל",
+      "description": "עקוף את מגבלות הקבצים של Gmail ו-Outlook (25MB/20MB). הקטן קובצי PDF גדולים בדפדפן ללא העלאה לשרת."
+    },
+    "compress-pdf-to-100kb": {
+      "title": "דחוס PDF ל-100KB מבלי לאבד איכות",
+      "h1": "דחוס PDF ל-100KB מבלי לאבד איכות",
+      "description": "כווץ את קובצי ה-PDF שלך עד ל-100KB או פחות ישירות בדפדפן שלך. מושלם עבור קבצים מצורפים לדוא\"ל ושיתוף מהיר. 100% פרטי."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "דחוס PDF מבלי לאבד איכות",
+      "h1": "דחוס מסמכי PDF באופן מקוון מבלי לאבד איכות",
+      "description": "צמצם את גודל קובץ ה-PDF תוך שמירה על וקטורים וטקסטים ברזולוציה גבוהה בצורה מושלמת. 100% עיבוד פרטי בצד הלקוח."
+    },
+    "reduce-pdf-size-offline": {
+      "title": "הקטנת גודל PDF במצב לא מקוון",
+      "h1": "הקטנת גודל PDF באופן לא מקוון לחלוטין בדפדפן שלך",
+      "description": "הקטן את גודל מסמכי ה-PDF שלך במצב לא מקוון ישירות בדפדפן שלך ללא העלאות שרת. 100% בטוח."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "המר PDF ל-Word מבלי לאבד עיצוב - ממיר DOCX בחינם",
+      "h1": "המר PDF ל-Word תוך שמירה על פריסה מדויקת וטיפוגרפיה",
+      "description": "חלץ טקסט, גופנים, טבלאות ופסקאות מקובצי PDF לפורמט Microsoft Word (.docx) מבלי לערבב את הפריסה או לאבד את העיצוב. 100% פרטי בדפדפן שלך."
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "המרת PDF סרוק לטקסט",
+      "h1": "חלץ טקסט מקובצי PDF סרוקים באמצעות OCR",
       "description": "הפוך קובצי PDF ותמונות סרוקים שאינם ניתנים לחיפוש לטקסט רגיל הניתן לעריכה באופן מקומי באמצעות עובדי WebAssembly OCR מרובי שפות."
     }
   },
@@ -4218,6 +6573,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "Ingyenes böngésző OCR - Szöveg kivonat a beolvasott PDF-ből és képekből",
       "h1": "Szöveg kibontása a beszkennelt PDF-ekből és képekből a Tesseract OCR segítségével",
       "description": "A nem kereshető beolvasott PDF-fájlokat és képeket helyileg szerkeszthető egyszerű szöveggé alakíthatja a többnyelvű WebAssembly OCR-munkások segítségével."
+    },
+    "combine-multiple-pdf-files": {
+      "title": "Több PDF-fájl egyesítése",
+      "h1": "Több PDF-fájl online kombinálása (ingyenes és ügyféloldali)",
+      "description": "Egyesítsen és egyesítsen több PDF-fájlt egyetlen dokumentumban. Azonnali helyi feldolgozás, 100%-ban privát, korlátozás nélkül."
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "PDF-oldalak átrendezése Drag and Drop Ingyenesen",
+      "h1": "A PDF-oldalak egyszerű átrendezése a fogd és vidd funkcióval",
+      "description": "Rendezheti és átrendezheti a PDF-dokumentum oldalait vizuálisan a bélyegképek húzásával. 100%-ban ingyenes és helyi."
+    },
+    "sign-pdf-without-registration": {
+      "title": "PDF aláírása online regisztráció nélkül",
+      "h1": "PDF dokumentumok elektronikus aláírása online regisztráció nélkül",
+      "description": "Azonnal helyezze el elektronikus aláírását bármely PDF-fájlba. Nincs szükség fiókra, nincs regisztráció, 100%-ban privát és ingyenes."
+    },
+    "remove-pdf-password-without-password": {
+      "title": "PDF-jelszó eltávolítása jelszó nélkül",
+      "h1": "Jelszó eltávolítása a PDF-ből jelszó nélkül",
+      "description": "Speciális feloldó eszközünk segítségével távolítsa el a jelszavas védelmet PDF-fájljaiból anélkül, hogy az eredeti jelszóra lenne szüksége."
+    },
+    "crop-pdf-margins": {
+      "title": "Vágja le a PDF-margókat — vágja le a fehér mezőket online",
+      "h1": "Fehér margók levágása PDF-oldalakról",
+      "description": "Távolítsa el a bosszantó fehér margókat PDF-dokumentumairól a jobb olvasási élmény érdekében mobileszközökön és e-olvasókon. 100%-ban ingyenes és helyi."
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "Szürkeárnyalatos PDF nyomtatáshoz — Színek konvertálása fekete-fehérké",
+      "h1": "Színes PDF konvertálása szürkeárnyalatossá",
+      "description": "Takarítson meg nyomtatótintát azáltal, hogy a színes PDF dokumentumokat azonnal fekete-fehérré vagy szürkeárnyalatossá alakítja közvetlenül a böngészőben."
+    },
+    "remove-pdf-author-metadata": {
+      "title": "A PDF szerzői metaadatainak eltávolítása — A PDF tulajdonságainak megtisztítása",
+      "h1": "A PDF szerzői metaadatainak megtisztítása",
+      "description": "Védje magánéletét a szerzők neveinek, a létrehozási dátumoknak, a szoftver lábnyomainak és a rejtett metaadatoknak a PDF-fájljaiból való biztonságos eltávolításával."
+    },
+    "extract-high-res-images-pdf": {
+      "title": "Nagy felbontású képek kibontása PDF-ből – Eredeti fényképek beszerzése",
+      "h1": "Nagy felbontású képek kibontása PDF-ből",
+      "description": "Töltse le a beágyazott fényképeket és grafikákat a PDF-ből az eredeti, tömörítetlen nagy felbontásban. Nincs szerver feltöltés."
+    },
+    "compare-pdf-files-visually": {
+      "title": "Hasonlítsa össze a PDF-fájlokat vizuálisan – keresse meg a pixelkülönbségeket",
+      "h1": "Hasonlítsa össze vizuálisan két PDF-fájlt",
+      "description": "Töltsön fel két PDF dokumentumot, és azonnal jelölje ki a köztük lévő pontos képpont-különbségeket helyileg a böngészőjében."
+    },
+    "merge-pdf-files-offline": {
+      "title": "Egyesítse PDF-fájljait offline módban a böngészőben",
+      "h1": "Egyesítse PDF-fájljait offline módban a böngészőben",
+      "description": "Kombináljon több rendkívül érzékeny PDF-dokumentumot internetkapcsolat nélkül. Betöltés után teljesen offline módban működik."
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "A beolvasott PDF-fájlokat szerkeszthető szöveggé alakíthatja",
+      "h1": "A beolvasott PDF-fájlokat szerkeszthető szöveggé alakíthatja",
+      "description": "Használjon fejlett böngészőalapú OCR-t a beolvasott képekből és a nem kereshető PDF-fájlokból történő szöveg kivonásához. 100% ingyenes és privát."
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "Oldalszámok beszúrása PDF dokumentumokba",
+      "h1": "Oldalszámok beszúrása PDF dokumentumokba",
+      "description": "Könnyen lapozhatja PDF fájljait. Adjon testreszabható oldalszámokat a fejlécekhez vagy láblécekhez azonnal, ingyenesen."
+    },
+    "remove-pdf-watermark-online": {
+      "title": "Távolítsa el biztonságosan a vízjeleket a PDF-fájlokból",
+      "h1": "Távolítsa el biztonságosan a vízjeleket a PDF-fájlokból",
+      "description": "Változtassa meg vagy távolítsa el a tolakodó vízjeleket PDF-dokumentumaiból. Teljesen privát, böngésző alapú vízjeleltávolító eszköz."
+    },
+    "repair-pdf": {
+      "title": "PDF Javítás Online - Sérült PDF Fájlok Helyreállítása",
+      "h1": "Javítsa és Állítsa Helyre a Sérült PDF-eket a Böngészőben",
+      "description": "Javítsa ki a hibás vagy olvashatatlan PDF fájlokat helyben WebAssembly segítségével, szerverfeltöltés nélkül."
+    },
+    "compress-pdf-for-email": {
+      "title": "PDF Tömörítése E-mailhez — 25 MB Alá",
+      "h1": "PDF-fájlok Tömörítése E-mail Mellékletekhez",
+      "description": "Lépje túl a Gmail és Outlook mellékletkorlátait (25MB/20MB). Kicsinyítse PDF-jeit helyben, szerverfeltöltés nélkül."
+    },
+    "compress-pdf-to-100kb": {
+      "title": "A PDF tömörítése 100 KB-ra a minőség elvesztése nélkül",
+      "h1": "A PDF tömörítése 100 KB-ra a minőség elvesztése nélkül",
+      "description": "Csökkentse PDF-fájljait 100 KB-ra vagy kevesebbre közvetlenül a böngészőben. Tökéletes e-mail mellékletekhez és gyors megosztáshoz. 100% privát."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "PDF tömörítése minőségromlás nélkül",
+      "h1": "PDF dokumentumok online tömörítése minőségromlás nélkül",
+      "description": "Csökkentse a PDF-fájl méretét, miközben a nagy felbontású vektorokat és szövegeket tökéletesen élesen tartja. 100%-ban privát ügyféloldali feldolgozás."
+    },
+    "reduce-pdf-size-offline": {
+      "title": "PDF méretének csökkentése offline módban",
+      "h1": "Csökkentse a PDF méretét teljesen offline módban a böngészőben",
+      "description": "Csökkentse PDF-dokumentumai méretét offline módban, közvetlenül a böngészőben, szerverre történő feltöltés nélkül. 100%-ban biztonságos."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "PDF konvertálása Word-be a formázás elvesztése nélkül – Ingyenes DOCX konverter",
+      "h1": "Konvertálja a PDF-et Word-be, miközben megőrzi a pontos elrendezést és tipográfiát",
+      "description": "Szövegeket, betűtípusokat, táblázatokat és bekezdéseket bontsa ki PDF-fájlokból Microsoft Word (.docx) formátumba az elrendezés vagy a formázás elvesztése nélkül. 100%-ban privát a böngészőjében."
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "Szkennelt PDF konvertálása szöveggé",
+      "h1": "Szöveg kibontása a beolvasott PDF-ekből az OCR segítségével",
+      "description": "A nem kereshető beolvasott PDF-fájlokat és képeket helyileg szerkeszthető egyszerű szöveggé alakíthatja a többnyelvű WebAssembly OCR-munkások segítségével."
     }
   },
   "no": {
@@ -4384,6 +6839,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
     "ocr-pdf": {
       "title": "Gratis nettleser OCR - Trekk ut tekst fra skannede PDF og bilder",
       "h1": "Trekk ut tekst fra skannede PDF-er og bilder med Tesseract OCR",
+      "description": "Gjør ikke-søkbare skannede PDF-er og bilder til redigerbar ren tekst lokalt ved hjelp av flerspråklige WebAssembly OCR-arbeidere."
+    },
+    "combine-multiple-pdf-files": {
+      "title": "Kombiner flere PDF-filer",
+      "h1": "Kombiner flere PDF-filer online (gratis og klientsiden)",
+      "description": "Slå sammen og kombiner flere PDF-filer til ett enkelt dokument. Øyeblikkelig lokal behandling, 100 % privat, ingen grense."
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "Omorganiser PDF-sider Dra og slipp gratis",
+      "h1": "Omorganiser PDF-sider enkelt med dra og slipp",
+      "description": "Organiser og omorganiser sider i PDF-dokumentet ditt visuelt ved å dra og slippe miniatyrbilder. 100 % gratis og lokalt."
+    },
+    "sign-pdf-without-registration": {
+      "title": "Signer PDF på nett uten registrering",
+      "h1": "E-signer PDF-dokumenter online uten registrering",
+      "description": "Plasser din elektroniske signatur på en PDF-fil umiddelbart. Ingen konto kreves, ingen registrering, 100% privat og gratis."
+    },
+    "remove-pdf-password-without-password": {
+      "title": "Fjern PDF-passord uten passord",
+      "h1": "Fjern passord fra PDF uten passord",
+      "description": "Fjern passordbeskyttelsen fra PDF-filene dine uten å trenge det originale passordet ved å bruke vårt avanserte opplåsingsverktøy."
+    },
+    "crop-pdf-margins": {
+      "title": "Beskjær PDF-marginer — Trim hvite mellomrom online",
+      "h1": "Beskjær hvite marger fra PDF-sider",
+      "description": "Fjern irriterende hvite marger fra PDF-dokumentene dine for en bedre leseopplevelse på mobile enheter og e-lesere. 100 % gratis og lokalt."
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "Gråtoner PDF for utskrift — Konverter farge til svart-hvitt",
+      "h1": "Konverter farge-PDF til gråtoner",
+      "description": "Spar skriverblekk ved å umiddelbart konvertere fargede PDF-dokumenter til svart-hvitt eller gråtoner direkte i nettleseren din."
+    },
+    "remove-pdf-author-metadata": {
+      "title": "Fjern PDF-forfattermetadata — Rengjør PDF-egenskaper",
+      "h1": "Fjern Forfattermetadata fra PDF",
+      "description": "Beskytt personvernet ditt ved å fjerne forfatternavn, opprettelsesdatoer, programvarefotavtrykk og skjulte metadata fra PDF-filene på en sikker måte."
+    },
+    "extract-high-res-images-pdf": {
+      "title": "Trekk ut høyoppløselige bilder fra PDF – Få originale bilder",
+      "h1": "Trekk ut høyoppløselige bilder fra PDF",
+      "description": "Last ned innebygde bilder og grafikk fra PDF-en din i original, ukomprimert høy oppløsning. Ingen serveropplastinger."
+    },
+    "compare-pdf-files-visually": {
+      "title": "Sammenlign PDF-filer visuelt – Finn pikselforskjeller",
+      "h1": "Sammenlign to PDF-filer visuelt",
+      "description": "Last opp to PDF-dokumenter og fremhev umiddelbart de nøyaktige pikselforskjellene mellom dem lokalt i nettleseren din."
+    },
+    "merge-pdf-files-offline": {
+      "title": "Slå sammen PDF-filene dine frakoblet i nettleseren",
+      "h1": "Slå sammen PDF-filene dine frakoblet i nettleseren",
+      "description": "Kombiner flere svært sensitive PDF-dokumenter uten internettforbindelse. Fungerer helt offline etter lasting."
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "Gjør skannede PDF-er til redigerbar tekst",
+      "h1": "Gjør skannede PDF-er til redigerbar tekst",
+      "description": "Bruk avansert nettleserbasert OCR for å trekke ut tekst fra skannede bilder og usøkbare PDF-filer. 100 % gratis og privat."
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "Sett inn sidetall i PDF-dokumenter",
+      "h1": "Sett inn sidetall i PDF-dokumenter",
+      "description": "Paginerer enkelt PDF-filene dine. Legg til sidetall som kan tilpasses til topp- eller bunntekster umiddelbart gratis."
+    },
+    "remove-pdf-watermark-online": {
+      "title": "Fjern vannmerker fra PDF-filer trygt",
+      "h1": "Fjern vannmerker fra PDF-filer trygt",
+      "description": "Rediger eller fjern påtrengende vannmerker fra PDF-dokumentene dine. Helt privat, nettleserbasert verktøy for fjerning av vannmerker."
+    },
+    "repair-pdf": {
+      "title": "Reparer PDF Online - Gjenopprett Skadede PDF-filer",
+      "h1": "Reparer og Gjenopprett Skadede PDF-dokumenter i Nettleseren",
+      "description": "Fiks ødelagte eller uleselige PDF-filer lokalt med WebAssembly-gjenoppretting og 100 % personvern."
+    },
+    "compress-pdf-for-email": {
+      "title": "Komprimer PDF for E-post — Under 25 MB",
+      "h1": "Komprimer PDF-filer for E-postvedlegg",
+      "description": "Unngå vedleggsgrenser i Gmail og Outlook (25 MB / 20 MB). Reduser store PDF-filer lokalt i nettleseren uten opplasting."
+    },
+    "compress-pdf-to-100kb": {
+      "title": "Komprimer PDF til 100KB uten å miste kvalitet",
+      "h1": "Komprimer PDF til 100KB uten å miste kvalitet",
+      "description": "Krymp PDF-filene dine ned til 100 KB eller mindre direkte i nettleseren din. Perfekt for e-postvedlegg og rask deling. 100% privat."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "Komprimer PDF uten å miste kvalitet",
+      "h1": "Komprimer PDF-dokumenter online uten å miste kvalitet",
+      "description": "Reduser PDF-filstørrelsen mens du holder høyoppløselige vektorer og tekster perfekt skarpe. 100 % privat behandling på klientsiden."
+    },
+    "reduce-pdf-size-offline": {
+      "title": "Reduser PDF-størrelse frakoblet",
+      "h1": "Reduser PDF-størrelsen helt frakoblet i nettleseren din",
+      "description": "Reduser størrelsen på PDF-dokumentene dine offline direkte i nettleseren din uten serveropplastinger. 100% sikker."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "Konverter PDF til Word uten å miste formatering - Gratis DOCX Converter",
+      "h1": "Konverter PDF til Word mens du beholder nøyaktig layout og typografi",
+      "description": "Trekk ut tekst, skrifter, tabeller og avsnitt fra PDF-filer til Microsoft Word (.docx)-format uten å forvrenge layout eller miste formatering. 100 % privat i nettleseren din."
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "Konverter skannet PDF til tekst",
+      "h1": "Trekk ut tekst fra skannede PDF-filer med OCR",
       "description": "Gjør ikke-søkbare skannede PDF-er og bilder til redigerbar ren tekst lokalt ved hjelp av flerspråklige WebAssembly OCR-arbeidere."
     }
   },
@@ -4552,6 +7107,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "OCR gratuit de browser - Extrageți text din PDF și imagini scanate",
       "h1": "Extrageți text din PDF-uri și imagini scanate cu Tesseract OCR",
       "description": "Transformați PDF-urile și imaginile scanate care nu pot fi căutate în text simplu editabil la nivel local, folosind lucrătorii OCR WebAssembly în mai multe limbi."
+    },
+    "combine-multiple-pdf-files": {
+      "title": "Combinați mai multe fișiere PDF",
+      "h1": "Combinați mai multe fișiere PDF online (gratuit și partea client)",
+      "description": "Îmbinați și combinați mai multe fișiere PDF într-un singur document. Procesare locală instantanee, 100% privată, fără limită."
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "Reordonați paginile PDF Trageți și plasați gratuit",
+      "h1": "Reordonați paginile PDF cu ușurință prin glisare și plasare",
+      "description": "Organizați și reordonați vizual paginile din documentul PDF prin glisarea și plasarea miniaturilor. 100% gratuit și local."
+    },
+    "sign-pdf-without-registration": {
+      "title": "Semnați PDF online fără înregistrare",
+      "h1": "E-Sign documente PDF online fără înregistrare",
+      "description": "Puneți semnătura electronică pe orice fișier PDF instantaneu. Nu este nevoie de cont, fără înregistrare, 100% privat și gratuit."
+    },
+    "remove-pdf-password-without-password": {
+      "title": "Eliminați parola PDF fără parolă",
+      "h1": "Eliminați parola din PDF fără parolă",
+      "description": "Eliminați protecția prin parolă din fișierele PDF fără a avea nevoie de parola originală, folosind instrumentul nostru avansat de deblocare."
+    },
+    "crop-pdf-margins": {
+      "title": "Decupați marginile PDF - Decupați spațiile albe online",
+      "h1": "Decupați marjele albe din paginile PDF",
+      "description": "Eliminați marginile albe enervante din documentele PDF pentru o experiență de citire mai bună pe dispozitive mobile și cititoare electronice. 100% gratuit și local."
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "PDF în tonuri de gri pentru imprimare — Convertiți culoarea în alb și negru",
+      "h1": "Convertiți PDF color în tonuri de gri",
+      "description": "Economisiți cerneala de imprimantă conversia instantanee a documentelor PDF colorate în alb-negru sau în tonuri de gri direct în browser."
+    },
+    "remove-pdf-author-metadata": {
+      "title": "Eliminați metadatele autorului PDF - Dezinfectați proprietățile PDF",
+      "h1": "Dezinfectează metadatele autorului PDF",
+      "description": "Protejați-vă confidențialitatea prin eliminarea în siguranță a numelor de autori, a datelor de creație, a urmelor software și a metadatelor ascunse din fișierele dvs. PDF."
+    },
+    "extract-high-res-images-pdf": {
+      "title": "Extrageți imagini de înaltă rezoluție din PDF — Obțineți fotografii originale",
+      "h1": "Extrageți imagini de înaltă rezoluție din PDF",
+      "description": "Descărcați fotografii și grafice încorporate din PDF-ul dvs. la rezoluția lor originală, necomprimată. Fără încărcări de server."
+    },
+    "compare-pdf-files-visually": {
+      "title": "Comparați vizual fișierele PDF — Găsiți diferențe de pixeli",
+      "h1": "Comparați vizual două fișiere PDF",
+      "description": "Încărcați două documente PDF și evidențiați instantaneu diferențele exacte de pixeli dintre ele local în browser."
+    },
+    "merge-pdf-files-offline": {
+      "title": "Îmbinați fișierele PDF offline în browser",
+      "h1": "Îmbinați fișierele PDF offline în browser",
+      "description": "Combinați mai multe documente PDF foarte sensibile fără o conexiune la internet. Funcționează complet offline după încărcare."
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "Transformați PDF-urile scanate în text editabil",
+      "h1": "Transformați PDF-urile scanate în text editabil",
+      "description": "Utilizați OCR avansat bazat pe browser pentru a extrage text din imaginile scanate și din PDF-uri care nu pot fi căutate. 100% gratuit și privat."
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "Inserați numere de pagină în documentele PDF",
+      "h1": "Inserați numere de pagină în documentele PDF",
+      "description": "Paginați cu ușurință fișierele PDF. Adăugați gratuit numere de pagină personalizabile la anteturi sau subsoluri."
+    },
+    "remove-pdf-watermark-online": {
+      "title": "Eliminați în siguranță filigranele din fișierele PDF",
+      "h1": "Eliminați în siguranță filigranele din fișierele PDF",
+      "description": "Redactați sau eliminați filigranele intruzive din documentele PDF. Instrument complet privat, bazat pe browser pentru eliminarea filigranelor."
+    },
+    "repair-pdf": {
+      "title": "Reparare PDF Online - Recuperați Fișiere PDF Corupte",
+      "h1": "Reparați și Recuperați Documente PDF Deteriorate în Browser",
+      "description": "Corectați fișierele PDF deteriorate sau ilizibile local prin WebAssembly, cu 100% confidențialitate și fără încărcare pe server."
+    },
+    "compress-pdf-for-email": {
+      "title": "Comprimare PDF pentru E-mail — Sub 25MB",
+      "h1": "Comprimă Fișiere PDF pentru Atașamente E-mail",
+      "description": "Depășește limitele Gmail și Outlook (25MB/20MB). Micșorează PDF-urile mari local în browser fără încărcări pe server."
+    },
+    "compress-pdf-to-100kb": {
+      "title": "Comprimați PDF la 100 KB fără a pierde calitatea",
+      "h1": "Comprimați PDF la 100 KB fără a pierde calitatea",
+      "description": "Reduceți fișierele PDF până la 100 KB sau mai puțin direct în browser. Perfect pentru atașamentele de e-mail și partajarea rapidă. 100% privat."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "Comprimați PDF fără a pierde calitatea",
+      "h1": "Comprimați documente PDF online fără a pierde calitatea",
+      "description": "Reduceți dimensiunea fișierului PDF păstrând în același timp vectorii și textele de înaltă rezoluție perfect clare. Procesare 100% privată pe partea clientului."
+    },
+    "reduce-pdf-size-offline": {
+      "title": "Reduceți dimensiunea PDF offline",
+      "h1": "Reduceți dimensiunea PDF complet offline în browser",
+      "description": "Reduceți dimensiunea documentelor PDF offline direct în browser, fără încărcări de server. 100% sigur."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "Convertiți PDF în Word fără a pierde formatarea - Convertor DOCX gratuit",
+      "h1": "Convertiți PDF în Word, păstrând aspectul și tipografia exacte",
+      "description": "Extrageți text, fonturi, tabele și paragrafe din fișierele PDF în format Microsoft Word (.docx) fără a amesteca aspectul sau a pierde formatarea. 100% privat în browserul dvs."
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "Convertiți PDF scanat în text",
+      "h1": "Extrageți text din PDF-urile scanate cu OCR",
+      "description": "Transformați PDF-urile și imaginile scanate care nu pot fi căutate în text simplu editabil la nivel local, folosind lucrătorii OCR WebAssembly în mai multe limbi."
     }
   },
   "sk": {
@@ -4622,7 +7277,7 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
     },
     "grayscale-pdf": {
       "title": "Previesť PDF do odtieňov sivej – čiernobiele PDF online",
-      "h1": "Make PDF Black and White",
+      "h1": "Previesť PDF na čiernobiele (odtiene sivej)",
       "description": "Okamžite konvertujte farebné dokumenty PDF do odtieňov sivej vo svojom prehliadači, aby ste ušetrili tlačový atrament."
     },
     "scan-to-pdf": {
@@ -4719,6 +7374,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "title": "Bezplatný prehliadač OCR – extrahovanie textu z naskenovaného PDF a obrázkov",
       "h1": "Extrahujte text z naskenovaných PDF a obrázkov pomocou Tesseract OCR",
       "description": "Premeňte naskenované súbory PDF a obrázky bez možnosti vyhľadávania na upraviteľný obyčajný text lokálne pomocou viacjazyčných pracovníkov WebAssembly OCR."
+    },
+    "combine-multiple-pdf-files": {
+      "title": "Spojenie viacerých súborov PDF",
+      "h1": "Spojte viacero súborov PDF online v prehliadači",
+      "description": "Spojte viaceré dokumenty PDF do jedného súboru priamo v prehliadači pomocou WebAssembly. Nulové nahrávanie na server a 100 % súkromie."
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "Zmeniť poradie stránok PDF Drag and Drop Free",
+      "h1": "Zmeňte poradie stránok PDF jednoducho pomocou funkcie Drag and Drop",
+      "description": "Usporiadajte a zmeňte poradie strán v dokumente PDF vizuálne presunutím miniatúr. 100% zadarmo a miestne."
+    },
+    "sign-pdf-without-registration": {
+      "title": "Podpísať PDF online bez registrácie",
+      "h1": "Elektronické podpisovanie PDF dokumentov online bez registrácie",
+      "description": "Okamžite umiestnite svoj elektronický podpis na akýkoľvek súbor PDF. Nevyžaduje sa žiadny účet, žiadna registrácia, 100% súkromné ​​a bezplatné."
+    },
+    "remove-pdf-password-without-password": {
+      "title": "Odstrániť heslo PDF bez hesla",
+      "h1": "Odstrániť heslo z PDF bez hesla",
+      "description": "Odstráňte ochranu heslom zo svojich súborov PDF bez potreby pôvodného hesla pomocou nášho pokročilého nástroja na odomknutie."
+    },
+    "crop-pdf-margins": {
+      "title": "Orezať okraje PDF — orezať biele miesta online",
+      "h1": "Orezať biele okraje zo stránok PDF",
+      "description": "Odstráňte nepríjemné biele okraje z dokumentov PDF, aby ste získali lepší zážitok z čítania na mobilných zariadeniach a elektronických čítačkách. 100% zadarmo a miestne."
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "PDF v odtieňoch sivej na tlač — konvertujte farbu na čiernobielu",
+      "h1": "Previesť farebné PDF do odtieňov sivej",
+      "description": "Šetrite atrament v tlačiarni okamžitým prevodom farebných dokumentov PDF na čiernobiele alebo odtiene sivej priamo vo vašom prehliadači."
+    },
+    "remove-pdf-author-metadata": {
+      "title": "Odstrániť metadáta autora PDF — Vyčistite vlastnosti PDF",
+      "h1": "Vyčistite metadáta autora PDF",
+      "description": "Chráňte svoje súkromie bezpečným odstránením mien autorov, dátumov vytvorenia, softvérových odtlačkov a skrytých metadát zo súborov PDF."
+    },
+    "extract-high-res-images-pdf": {
+      "title": "Extrahujte obrázky vo vysokom rozlíšení z PDF — získajte originálne fotografie",
+      "h1": "Extrahujte obrázky vo vysokom rozlíšení z PDF",
+      "description": "Stiahnite si vložené fotografie a grafiku z vášho PDF v ich pôvodnom, nekomprimovanom vysokom rozlíšení. Žiadne nahrávanie na server."
+    },
+    "compare-pdf-files-visually": {
+      "title": "Vizuálne porovnajte súbory PDF – nájdite rozdiely v pixeloch",
+      "h1": "Vizuálne porovnajte dva súbory PDF",
+      "description": "Nahrajte dva dokumenty PDF a okamžite zvýraznite presné pixelové rozdiely medzi nimi lokálne vo vašom prehliadači."
+    },
+    "merge-pdf-files-offline": {
+      "title": "Zlúčte svoje súbory PDF v režime offline v prehliadači",
+      "h1": "Zlúčte svoje súbory PDF v režime offline v prehliadači",
+      "description": "Kombinujte viacero vysoko citlivých dokumentov PDF bez internetového pripojenia. Po načítaní funguje plne offline."
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "Premeňte naskenované súbory PDF na upraviteľný text",
+      "h1": "Premeňte naskenované súbory PDF na upraviteľný text",
+      "description": "Použite pokročilé OCR založené na prehliadači na extrahovanie textu z naskenovaných obrázkov a nevyhľadateľných súborov PDF. 100% zadarmo a súkromne."
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "Vložte čísla strán do dokumentov PDF",
+      "h1": "Vložte čísla strán do dokumentov PDF",
+      "description": "Jednoducho stránkujte svoje súbory PDF. Pridajte prispôsobiteľné čísla strán do hlavičky alebo päty okamžite zadarmo."
+    },
+    "remove-pdf-watermark-online": {
+      "title": "Bezpečne odstráňte vodoznaky zo súborov PDF",
+      "h1": "Bezpečne odstráňte vodoznaky zo súborov PDF",
+      "description": "Upravte alebo odstráňte rušivé vodoznaky z dokumentov PDF. Úplne súkromný nástroj na odstránenie vodoznaku založený na prehliadači."
+    },
+    "repair-pdf": {
+      "title": "Opraviť PDF Online - Obnova Poškodených Súborov PDF",
+      "h1": "Opravte a Obnovte Poškodené PDF Dokumenty v Prehliadači",
+      "description": "Opravte poškodené alebo nečitateľné PDF súbory lokálne cez WebAssembly so 100 % súkromím bez nahrávania na server."
+    },
+    "compress-pdf-for-email": {
+      "title": "Komprimovať PDF pre E-mail — Pod 25 MB",
+      "h1": "Komprimujte súbory PDF pre e-mailové prílohy",
+      "description": "Obíďte limity príloh v Gmaile a Outlooku (25 MB / 20 MB). Zmenšite veľké PDF lokálne v prehliadači bez nahrávania."
+    },
+    "compress-pdf-to-100kb": {
+      "title": "Komprimujte PDF na 100 kB bez straty kvality",
+      "h1": "Komprimujte PDF na 100 kB bez straty kvality",
+      "description": "Zmenšite svoje PDF súbory na 100 kB alebo menej priamo vo vašom prehliadači. Ideálne pre e-mailové prílohy a rýchle zdieľanie. 100% súkromné."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "Komprimujte PDF bez straty kvality",
+      "h1": "Komprimujte dokumenty PDF online bez straty kvality",
+      "description": "Zmenšite veľkosť súboru PDF pri zachovaní dokonale ostrých vektorov a textov s vysokým rozlíšením. 100% súkromné ​​spracovanie na strane klienta."
+    },
+    "reduce-pdf-size-offline": {
+      "title": "Zmenšiť veľkosť PDF offline",
+      "h1": "Znížte veľkosť PDF úplne offline vo svojom prehliadači",
+      "description": "Znížte veľkosť svojich dokumentov PDF offline priamo vo vašom prehliadači bez akéhokoľvek nahrávania na server. 100% bezpečné."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "Prevod PDF do Wordu bez straty formátovania — bezplatný prevodník DOCX",
+      "h1": "Prevod PDF do Wordu pri zachovaní presného rozloženia a typografie",
+      "description": "Extrahujte text, písma, tabuľky a odseky zo súborov PDF do formátu Microsoft Word (.docx) bez toho, aby ste museli pokaziť rozloženie alebo stratiť formátovanie. 100% súkromné ​​vo vašom prehliadači."
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "Prevod naskenovaného PDF na text",
+      "h1": "Extrahujte text z naskenovaných PDF pomocou OCR",
+      "description": "Premeňte naskenované súbory PDF a obrázky bez možnosti vyhľadávania na upraviteľný obyčajný text lokálne pomocou viacjazyčných pracovníkov WebAssembly OCR."
     }
   },
   "uk": {
@@ -4748,29 +7503,29 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
       "description": "Легко додавайте чіткі, настроювані номери сторінок до верхнього або нижнього колонтитула PDF-файлу з повним контролем стилю у вашому браузері."
     },
     "watermark-pdf": {
-      "title": "Add Watermark to PDF - Stamp Custom Text or Image Locally",
-      "h1": "Stamp Custom Text or Image Watermarks onto PDF",
-      "description": "Protect your intellectual property by stamping transparent text or image watermarks across your PDF pages offline."
+      "title": "Додати водяний знак до PDF — водяний знак у режимі офлайн",
+      "h1": "Поштампуйте PDF-файли текстовими або графічними водяними знаками локально",
+      "description": "Додавайте «КОНФІДЕНЦІЙНО», логотипи або власні водяні знаки до PDF-файлів у своєму браузері. Без завантаження. 100% безпечна локальна обробка."
     },
     "remove-pdf": {
-      "title": "Remove PDF Pages Online - Delete Pages from PDF Locally",
+      "title": "Видалити сторінки з PDF — видалити PDF-сторінки в автономному режимі",
       "h1": "Миттєво видаляйте сторінки з PDF",
-      "description": "Delete unwanted pages from your PDF file securely inside your browser."
+      "description": "Надійно видаліть непотрібні сторінки зі свого PDF-файлу в браузері. Швидко та повністю безпечно."
     },
     "organize-pdf": {
-      "title": "Organize PDF Online - Insert Pages into PDF Locally",
-      "h1": "Точно вставити сторінки в PDF",
-      "description": "Insert another PDF file at a specific page index securely inside your browser."
+      "title": "Упорядковуйте PDF-сторінки — змінюйте порядок і видаляйте офлайн",
+      "h1": "Змініть порядок, видаліть або дублюйте PDF-сторінки локально",
+      "description": "Перетягніть і опустіть, щоб змінити порядок, видалити або повністю дублювати PDF-сторінки у вашому браузері. Швидко та повністю безпечно."
     },
     "sign-pdf": {
-      "title": "Sign PDF Online - Add Electronic Signature to PDF",
-      "h1": "Електронний підпис PDF-документів локально",
-      "description": "Draw, upload, or generate an electronic signature and add it to your PDF."
+      "title": "Підпишіть PDF онлайн — намалюйте підпис офлайн",
+      "h1": "Підписуйте PDF-документи своїм підписом без завантаження",
+      "description": "Намалюйте, введіть або завантажте свій підпис і розмістіть його на PDF-файлах у своєму браузері. Без хмари. 100% безпечна локальна обробка."
     },
     "protect-pdf": {
-      "title": "Protect PDF Online - Password Protect PDF Locally",
-      "h1": "Шифруйте та захищайте PDF-документи паролем",
-      "description": "Secure your PDF files with AES-256 encryption and password protection locally in your browser."
+      "title": "Захист PDF паролем — захист файлів у режимі офлайн",
+      "h1": "Миттєво додайте захист паролем до PDF-файлів",
+      "description": "Шифруйте файли PDF за допомогою AES-256 безпосередньо у вашому браузері. Ваш документ ніколи не покидає ваш пристрій. 100% безпечна локальна обробка."
     },
     "unlock-pdf": {
       "title": "Розблокуйте PDF в Інтернеті - видаліть пароль PDF локально",
@@ -4885,6 +7640,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
     "ocr-pdf": {
       "title": "Безкоштовне оптичне розпізнавання символів у веб-переглядачі – вилучення тексту зі сканованих PDF-файлів і зображень",
       "h1": "Витягніть текст зі сканованих PDF-файлів і зображень за допомогою Tesseract OCR",
+      "description": "Перетворюйте відскановані PDF-файли та зображення без можливості пошуку на звичайний текст, який можна редагувати локально за допомогою багатомовних програм OCR WebAssembly."
+    },
+    "combine-multiple-pdf-files": {
+      "title": "Об’єднайте кілька PDF-файлів",
+      "h1": "Об’єднайте кілька PDF-файлів онлайн (безкоштовно та на стороні клієнта)",
+      "description": "Об’єднайте та об’єднайте кілька файлів PDF в один документ. Миттєва локальна обробка, 100% приватність, без обмежень."
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "Змініть порядок PDF-сторінок, перетягніть і опустіть безкоштовно",
+      "h1": "Легко змінюйте порядок сторінок PDF за допомогою перетягування",
+      "description": "Візуально впорядковуйте та змінюйте порядок сторінок у своєму PDF-документі, перетягуючи мініатюри. 100% безкоштовний і локальний."
+    },
+    "sign-pdf-without-registration": {
+      "title": "Підписуйте PDF онлайн без реєстрації",
+      "h1": "Електронний підпис PDF-документів онлайн без реєстрації",
+      "description": "Миттєво розмістіть свій електронний підпис на будь-якому файлі PDF. Обліковий запис не потрібен, реєстрація не потрібна, 100% приватний і безкоштовний."
+    },
+    "remove-pdf-password-without-password": {
+      "title": "Видалення пароля PDF без пароля",
+      "h1": "Видалення пароля з PDF без пароля",
+      "description": "Зніміть захист паролем із ваших PDF-файлів, не потребуючи оригінального пароля за допомогою нашого розширеного інструменту розблокування."
+    },
+    "crop-pdf-margins": {
+      "title": "Обрізати поля PDF — обрізати пробіли онлайн",
+      "h1": "Обрізати білі поля зі сторінок PDF",
+      "description": "Видаліть надокучливі білі поля з PDF-документів для кращого читання на мобільних пристроях і електронних пристроях. 100% безкоштовний і локальний."
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "PDF-файл у відтінках сірого для друку — перетворення кольорового на чорно-білий",
+      "h1": "Перетворіть кольоровий PDF у відтінки сірого",
+      "description": "Економте чорнило для принтера, миттєво перетворюючи кольорові PDF-документи на чорно-білі або у відтінках сірого безпосередньо у вашому браузері."
+    },
+    "remove-pdf-author-metadata": {
+      "title": "Видалити метадані автора PDF — очистити властивості PDF",
+      "h1": "Очистити метадані автора PDF",
+      "description": "Захистіть свою конфіденційність, надійно видаливши імена авторів, дати створення, сліди програмного забезпечення та приховані метадані з ваших PDF-файлів."
+    },
+    "extract-high-res-images-pdf": {
+      "title": "Видобувайте зображення високої роздільної здатності з PDF — отримуйте оригінальні фотографії",
+      "h1": "Видобувайте зображення високої роздільної здатності з PDF",
+      "description": "Завантажуйте вбудовані фотографії та графіку з вашого PDF-файлу в оригінальній нестисненій високій роздільній здатності. Немає завантажень на сервер."
+    },
+    "compare-pdf-files-visually": {
+      "title": "Порівняйте PDF-файли візуально — знайдіть відмінності в пікселях",
+      "h1": "Візуально порівняйте два файли PDF",
+      "description": "Завантажте два PDF-документи та миттєво виділіть точну різницю в пікселях між ними локально у вашому браузері."
+    },
+    "merge-pdf-files-offline": {
+      "title": "Об’єднайте свої PDF-файли офлайн у браузері",
+      "h1": "Об’єднайте свої PDF-файли офлайн у браузері",
+      "description": "Об’єднайте кілька дуже конфіденційних PDF-документів без підключення до Інтернету. Працює повністю в автономному режимі після завантаження."
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "Перетворіть відскановані PDF-файли на редагований текст",
+      "h1": "Перетворіть відскановані PDF-файли на редагований текст",
+      "description": "Використовуйте вдосконалене оптичне розпізнавання тексту на основі браузера, щоб видобувати текст із відсканованих зображень і PDF-файлів, у яких неможливо шукати. 100% безкоштовно та приватно."
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "Вставте номери сторінок у документи PDF",
+      "h1": "Вставте номери сторінок у документи PDF",
+      "description": "Легко розбивайте PDF-файли на сторінки. Безкоштовно миттєво додайте настроювані номери сторінок до колонтитулів."
+    },
+    "remove-pdf-watermark-online": {
+      "title": "Безпечно видаліть водяні знаки з PDF-файлів",
+      "h1": "Безпечно видаліть водяні знаки з PDF-файлів",
+      "description": "Відредагуйте або видаліть нав’язливі водяні знаки з документів PDF. Повністю приватний інструмент для видалення водяних знаків у браузері."
+    },
+    "repair-pdf": {
+      "title": "Відновити PDF Онлайн — Виправити Пошкоджені Файли",
+      "h1": "Відновлення та Ремонт Пошкоджених PDF-документів у Браузері",
+      "description": "Виправляйте пошкоджені або нечитабельні PDF-файли локально через WebAssembly зі 100% конфіденційністю без завантаження на сервер."
+    },
+    "compress-pdf-for-email": {
+      "title": "Стиснути PDF для Пошти — Менше 25 МБ",
+      "h1": "Стискайте PDF-файли для вкладень електронної пошти",
+      "description": "Обійдіть ліміти вкладень у Gmail та Outlook (25 МБ / 20 МБ). Зменшуйте PDF у браузері без завантаження на сервер."
+    },
+    "compress-pdf-to-100kb": {
+      "title": "Стисніть PDF до 100 КБ без втрати якості",
+      "h1": "Стисніть PDF до 100 КБ без втрати якості",
+      "description": "Зменште PDF-файли до 100 КБ або менше безпосередньо у браузері. Ідеально підходить для вкладень електронної пошти та швидкого обміну. 100% приватний."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "Стискайте PDF без втрати якості",
+      "h1": "Стискайте PDF-документи онлайн без втрати якості",
+      "description": "Зменште розмір PDF-файлу, зберігаючи ідеальну чіткість векторів і текстів високої роздільної здатності. 100% приватна обробка на стороні клієнта."
+    },
+    "reduce-pdf-size-offline": {
+      "title": "Зменшення розміру PDF-файлу в режимі офлайн",
+      "h1": "Зменште розмір PDF-файлу повністю в автономному режимі у вашому браузері",
+      "description": "Зменшуйте розмір ваших PDF-документів у автономному режимі безпосередньо у вашому браузері без жодних завантажень на сервер. 100% безпечний."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "Перетворіть PDF у Word без втрати форматування — безкоштовний конвертер DOCX",
+      "h1": "Перетворюйте PDF у Word, зберігаючи точний макет і типографіку",
+      "description": "Витягніть текст, шрифти, таблиці й абзаци з PDF-файлів у формат Microsoft Word (.docx) без перемішування макета чи втрати форматування. 100% конфіденційність у вашому браузері."
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "Перетворюйте відскановані PDF-файли на текст",
+      "h1": "Витягніть текст зі сканованих PDF-файлів за допомогою OCR",
       "description": "Перетворюйте відскановані PDF-файли та зображення без можливості пошуку на звичайний текст, який можна редагувати локально за допомогою багатомовних програм OCR WebAssembly."
     }
   },
@@ -5052,6 +7907,106 @@ export const catalogTranslations: Record<string, Record<string, { title: string,
     "ocr-pdf": {
       "title": "OCR Pelayar Percuma - Ekstrak Teks daripada PDF & Imej Diimbas",
       "h1": "Ekstrak Teks daripada PDF & Imej Imbasan dengan Tesseract OCR",
+      "description": "Tukar PDF dan imej imbasan yang tidak boleh dicari kepada teks biasa yang boleh diedit secara setempat menggunakan pekerja OCR WebAssembly berbilang bahasa."
+    },
+    "combine-multiple-pdf-files": {
+      "title": "Gabungkan Berbilang Fail PDF",
+      "h1": "Gabungkan Berbilang Fail PDF Dalam Talian (Percuma & Sebelah Pelanggan)",
+      "description": "Gabung dan gabungkan berbilang fail PDF ke dalam satu dokumen tunggal. Pemprosesan tempatan segera, 100% peribadi, tiada had."
+    },
+    "reorder-pdf-pages-drag-and-drop": {
+      "title": "Susun Semula Halaman PDF Seret dan Lepas Percuma",
+      "h1": "Susun Semula Halaman PDF dengan Mudah dengan Seret dan Lepas",
+      "description": "Susun dan susun semula halaman dalam dokumen PDF anda secara visual dengan menyeret dan menjatuhkan imej kecil. 100% percuma dan tempatan."
+    },
+    "sign-pdf-without-registration": {
+      "title": "Tandatangan PDF Dalam Talian Tanpa Pendaftaran",
+      "h1": "E-Tandatangan Dokumen PDF Dalam Talian Tanpa Pendaftaran",
+      "description": "Letakkan tandatangan elektronik anda pada mana-mana fail PDF serta-merta. Tiada akaun diperlukan, tiada pendaftaran, 100% peribadi dan percuma."
+    },
+    "remove-pdf-password-without-password": {
+      "title": "Buang Kata Laluan PDF Tanpa Kata Laluan",
+      "h1": "Buang Kata Laluan daripada PDF Tanpa Kata Laluan",
+      "description": "Alih keluar perlindungan kata laluan daripada fail PDF anda tanpa memerlukan kata laluan asal menggunakan alat buka kunci lanjutan kami."
+    },
+    "crop-pdf-margins": {
+      "title": "Potong Jidar PDF — Potong Ruang Putih Dalam Talian",
+      "h1": "Pangkas Margin Putih daripada Halaman PDF",
+      "description": "Alih keluar jidar putih yang menjengkelkan daripada dokumen PDF anda untuk pengalaman membaca yang lebih baik pada peranti mudah alih dan e-pembaca. 100% percuma dan tempatan."
+    },
+    "grayscale-pdf-for-printing": {
+      "title": "PDF Skala Kelabu untuk Pencetakan — Tukar Warna kepada B&W",
+      "h1": "Tukar PDF Warna kepada Skala Kelabu",
+      "description": "Simpan dakwat pencetak dengan menukar serta-merta dokumen PDF berwarna kepada hitam putih atau skala kelabu terus dalam penyemak imbas anda."
+    },
+    "remove-pdf-author-metadata": {
+      "title": "Alih Keluar Metadata Pengarang PDF — Bersihkan Hartanah PDF",
+      "h1": "Bersihkan Metadata Pengarang PDF",
+      "description": "Lindungi privasi anda dengan mengalih keluar nama pengarang, tarikh penciptaan, jejak perisian dan metadata tersembunyi dengan selamat daripada fail PDF anda."
+    },
+    "extract-high-res-images-pdf": {
+      "title": "Ekstrak Imej Resolusi Tinggi daripada PDF — Dapatkan Foto Asal",
+      "h1": "Ekstrak Imej Resolusi Tinggi daripada PDF",
+      "description": "Muat turun foto dan grafik terbenam daripada PDF anda dalam peleraian tinggi asalnya yang tidak dimampatkan. Tiada muat naik pelayan."
+    },
+    "compare-pdf-files-visually": {
+      "title": "Bandingkan Fail PDF Secara Visual — Cari Perbezaan Piksel",
+      "h1": "Bandingkan Dua Fail PDF secara Visual",
+      "description": "Muat naik dua dokumen PDF dan serta-merta serlahkan perbezaan piksel yang tepat antara mereka secara setempat dalam penyemak imbas anda."
+    },
+    "merge-pdf-files-offline": {
+      "title": "Gabungkan PDF Anda Luar Talian dalam Penyemak Imbas",
+      "h1": "Gabungkan PDF Anda Luar Talian dalam Penyemak Imbas",
+      "description": "Gabungkan berbilang dokumen PDF yang sangat sensitif tanpa sambungan internet. Berfungsi sepenuhnya di luar talian selepas dimuatkan."
+    },
+    "convert-scanned-pdf-to-text": {
+      "title": "Tukar PDF yang Diimbas kepada Teks Boleh Diedit",
+      "h1": "Tukar PDF yang Diimbas kepada Teks Boleh Diedit",
+      "description": "Gunakan OCR berasaskan pelayar lanjutan untuk mengekstrak teks daripada imej yang diimbas dan PDF yang tidak boleh dicari. 100% percuma dan peribadi."
+    },
+    "add-page-numbers-to-pdf-free": {
+      "title": "Masukkan Nombor Halaman ke dalam Dokumen PDF",
+      "h1": "Masukkan Nombor Halaman ke dalam Dokumen PDF",
+      "description": "Buka penomboran fail PDF anda dengan mudah. Tambahkan nombor halaman yang boleh disesuaikan pada pengepala atau pengaki serta-merta secara percuma."
+    },
+    "remove-pdf-watermark-online": {
+      "title": "Alih Keluar Tera Air daripada Fail PDF dengan Selamat",
+      "h1": "Alih Keluar Tera Air daripada Fail PDF dengan Selamat",
+      "description": "Sunting atau alih keluar tera air yang mengganggu daripada dokumen PDF anda. Alat penyingkiran tera air berasaskan pelayar peribadi sepenuhnya."
+    },
+    "repair-pdf": {
+      "title": "Baiki PDF Dalam Talian - Pulihkan Fail PDF Rosak",
+      "h1": "Baiki dan Pulihkan Dokumen PDF Rosak dalam Pelayar Anda",
+      "description": "Baiki fail PDF yang rosak atau gagal dibuka menggunakan pemulihan WebAssembly tempatan dengan privasi 100% tanpa muat naik pelayan."
+    },
+    "compress-pdf-for-email": {
+      "title": "Kompres PDF untuk E-mel — Bawah 25MB",
+      "h1": "Kompres Fail PDF untuk Lampiran E-mel",
+      "description": "Atasi had saiz lampiran Gmail dan Outlook (25MB/20MB). Kecilkan PDF besar dalam pelayar tanpa muat naik ke pelayan."
+    },
+    "compress-pdf-to-100kb": {
+      "title": "Mampatkan PDF kepada 100KB Tanpa Kehilangan Kualiti",
+      "h1": "Mampatkan PDF kepada 100KB Tanpa Kehilangan Kualiti",
+      "description": "Kecilkan fail PDF anda kepada 100KB atau kurang terus dalam penyemak imbas anda. Sesuai untuk lampiran e-mel dan perkongsian pantas. 100% persendirian."
+    },
+    "compress-pdf-without-losing-quality": {
+      "title": "Mampat PDF Tanpa Kehilangan Kualiti",
+      "h1": "Mampatkan Dokumen PDF Dalam Talian Tanpa Kehilangan Kualiti",
+      "description": "Kurangkan saiz fail PDF sambil mengekalkan vektor dan teks resolusi tinggi dengan tajam. 100% pemprosesan sisi pelanggan persendirian."
+    },
+    "reduce-pdf-size-offline": {
+      "title": "Kurangkan Saiz PDF Luar Talian",
+      "h1": "Kurangkan Saiz PDF Sepenuhnya Luar Talian dalam Penyemak Imbas Anda",
+      "description": "Kurangkan saiz dokumen PDF anda di luar talian terus dalam penyemak imbas anda tanpa sebarang muat naik pelayan. 100% selamat."
+    },
+    "pdf-to-word-without-losing-formatting": {
+      "title": "Tukar PDF kepada Word Tanpa Kehilangan Pemformatan — Penukar DOCX Percuma",
+      "h1": "Tukar PDF kepada Word Sambil Memelihara Reka Letak & Tipografi Tepat",
+      "description": "Ekstrak teks, fon, jadual dan perenggan daripada fail PDF ke dalam format Microsoft Word (.docx) tanpa berebut reka letak atau kehilangan pemformatan. 100% peribadi dalam penyemak imbas anda."
+    },
+    "scanned-pdf-to-text-ocr": {
+      "title": "Tukar PDF Diimbas kepada Teks",
+      "h1": "Ekstrak Teks daripada PDF yang Diimbas dengan OCR",
       "description": "Tukar PDF dan imej imbasan yang tidak boleh dicari kepada teks biasa yang boleh diedit secara setempat menggunakan pekerja OCR WebAssembly berbilang bahasa."
     }
   }

@@ -1,78 +1,44 @@
 {
-  "title": "Compress PDF for Email",
-  "h1": "Compress PDF Files for Email Attachments",
-  "description": "Bypass Gmail, Outlook, and Yahoo file attachment size limits. Compress large PDFs under 25MB locally inside browser memory with 0 bytes upload.",
+  "title": "Komprimovat PDF pro E-mail — Pod 25 MB",
+  "h1": "Komprimace PDF souborů pro e-mailové přílohy",
+  "description": "Obejděte limity příloh v Gmailu a Outlooku (25 MB / 20 MB). Zmenšete velké PDF lokálně v prohlížeči bez nahrávání na server.",
   "sections": [
     {
       "type": "protect_hero_features",
-      "title": "Bypass Email Attachment Size Limits Instantly",
-      "content": "Struggling to send a large PDF report or contract over Gmail or Outlook? Our browser compressor shrinks your PDF below email attachment limits (25MB/20MB) in seconds with 0 bytes uploaded to any server.",
-      "badgeText": "Email Compression"
+      "title": "Komprimace PDF souborů pro e-mailové přílohy",
+      "content": "Obejděte limity příloh v Gmailu a Outlooku (25 MB / 20 MB). Zmenšete velké PDF lokálně v prohlížeči bez nahrávání na server.",
+      "badgeText": "Komprimovat PDF pro E-mail"
     },
     {
       "type": "rotate_how_to_steps",
-      "title": "How to Compress PDF for Email in 3 Steps",
-      "badgeText": "Quick Guide",
+      "title": "Komprimovat PDF pro E-mail — Pod 25 MB",
       "steps": [
         {
-          "title": "Drop Your PDF File",
-          "description": "Drag & drop your large PDF into the secure local browser sandbox."
+          "title": "Vyberte PDF",
+          "description": "Obejděte limity příloh v Gmailu a Outlooku (25 MB / 20 MB). Zmenšete velké PDF lokálně v prohlížeči bez nahrávání na server."
         },
         {
-          "title": "Select Compression Preset",
-          "description": "Choose medium or strong compression to shrink below 25MB."
+          "title": "Zvolte Kompresi",
+          "description": "Obejděte limity příloh v Gmailu a Outlooku (25 MB / 20 MB). Zmenšete velké PDF lokálně v prohlížeči bez nahrávání na server."
         },
         {
-          "title": "Attach & Send Email",
-          "description": "Download your lightweight PDF and attach it to your email in seconds."
+          "title": "Stáhněte a Odešlete",
+          "description": "Obejděte limity příloh v Gmailu a Outlooku (25 MB / 20 MB). Zmenšete velké PDF lokálně v prohlížeči bez nahrávání na server."
         }
       ]
     },
     {
       "type": "sign_geo_targeting",
-      "title": "100% Private Offline Processing for Confidential Emails",
-      "content": "Sending confidential legal or financial contracts via email? Our WebAssembly engine processes your file entirely inside your browser. No third party ever sees your attachments.",
-      "subTitle": "Zero Upload Policy",
-      "subContent": "0 bytes leave your device. No cloud storage. No GDPR risk."
-    },
-    {
-      "type": "watermark_privacy_security",
-      "title": "Bank-Grade Privacy for Work Emails",
-      "content": "Never risk uploading confidential corporate documents to public cloud converters. HandleMyFile operates 100% offline with WebAssembly — your files never touch a server."
-    },
-    {
-      "type": "compare_performance",
-      "title": "Zero Latency WebAssembly Compression",
-      "content": "Skip waiting for long file uploads. Local browser processing compresses 50MB PDFs in seconds without internet bandwidth waste.",
-      "badgeText": "Lightning Fast"
+      "title": "Komprimovat PDF pro E-mail",
+      "content": "Obejděte limity příloh v Gmailu a Outlooku (25 MB / 20 MB). Zmenšete velké PDF lokálně v prohlížeči bez nahrávání na server."
     }
   ],
   "faqs": [
     {
-      "q": "What is the maximum PDF file size limit for Gmail & Outlook?",
-      "a": "Gmail has a 25MB attachment limit, while Outlook and Yahoo cap attachments at 20MB. Our tool shrinks large PDFs below these limits easily."
-    },
-    {
-      "q": "Will compressing the PDF for email reduce document quality?",
-      "a": "No. Our adaptive compression algorithm preserves high-definition text readability and image clarity while optimizing embedded content."
-    },
-    {
-      "q": "Is it safe to compress confidential work contracts here?",
-      "a": "Yes! 100% of processing happens locally in your device's browser memory. 0 bytes are ever sent over the internet."
+      "q": "Komprimace PDF souborů pro e-mailové přílohy?",
+      "a": "Obejděte limity příloh v Gmailu a Outlooku (25 MB / 20 MB). Zmenšete velké PDF lokálně v prohlížeči bez nahrávání na server."
     }
   ],
-  "badges": [
-    "Gmail Ready",
-    "Outlook Safe",
-    "Zero Upload"
-  ],
-  "stats": [
-    "Gmail Ready",
-    "Outlook Safe",
-    "WebAssembly",
-    "Zero Upload"
-  ],
-  "buttonText": "Compress PDF for Email",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "buttonText": "Komprimovat PDF pro E-mail",
+  "faqTitle": "Často kladené otázky"
 }

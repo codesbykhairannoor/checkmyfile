@@ -65,13 +65,7 @@ export const RelatedTools: React.FC<RelatedToolsProps> = ({ currentToolId, categ
           {relatedTools.map((tool) => {
             const seo = getLocalizedSeo(tool, currentLang);
             const slug = tool.slugs[currentLang] || tool.id;
-            // Generate fallback title just like SeoHead does
-            const hasSpecificSeo = !!tool.seo[currentLang];
-            let displayTitle = seo.h1;
-            if (!hasSpecificSeo) {
-              const slugStr = tool.slugs[currentLang] || tool.id;
-              displayTitle = slugStr.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-            }
+            const displayTitle = seo.h1 || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
             
             const IconComponent = ICON_MAP[tool.iconName] || FileText;
 

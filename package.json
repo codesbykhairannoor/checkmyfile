@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "npx vite",
-    "build": "node scripts/create-og-image.cjs && npx vite build && npx tsx scripts/generate-seo-html.ts && npx tsx scripts/generate-multilingual-sitemaps.ts && node scripts/generate-multilingual-llms.cjs && node scripts/ping-indexnow.cjs",
+    "build": "node scripts/create-og-image.cjs && npx vite build && npx tsx scripts/generate-seo-html.ts && npx tsx scripts/generate-multilingual-sitemaps.ts && npx tsx scripts/generate-multilingual-llms.ts && node scripts/ping-indexnow.cjs",
     "verify:geo": "node scripts/verify-seo-geo-vercel.cjs",
     "index:google": "npx tsx scripts/submit-google-indexing.ts",
     "index:smart": "node scripts/smart-google-indexer.cjs",

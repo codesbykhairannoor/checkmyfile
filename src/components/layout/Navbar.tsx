@@ -32,18 +32,43 @@ interface NavbarProps {
 const MI: React.FC<{
   icon: React.ElementType;
   label: string;
+  href?: string;
   onClick: () => void;
   highlight?: boolean;
-}> = ({ icon: Icon, label, onClick, highlight }) => (
-  <div
-    onClick={onClick}
-    className="mega-menu-item"
-    style={highlight ? { background: 'rgba(225,29,72,0.06)', borderColor: 'rgba(225,29,72,0.2)' } : {}}
-  >
-    <Icon size={15} style={{ flexShrink: 0, color: highlight ? 'var(--brand-primary)' : undefined }} />
-    <span className="item-title" style={highlight ? { color: 'var(--brand-primary)' } : {}}>{label}</span>
-  </div>
-);
+}> = ({ icon: Icon, label, href, onClick, highlight }) => {
+  if (href) {
+    return (
+      <a
+        href={href}
+        onClick={(e) => {
+          if (!e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey && e.button === 0) {
+            e.preventDefault();
+            onClick();
+          }
+        }}
+        className="mega-menu-item"
+        style={{
+          textDecoration: 'none',
+          color: 'inherit',
+          ...(highlight ? { background: 'rgba(225,29,72,0.06)', borderColor: 'rgba(225,29,72,0.2)' } : {})
+        }}
+      >
+        <Icon size={15} style={{ flexShrink: 0, color: highlight ? 'var(--brand-primary)' : undefined }} />
+        <span className="item-title" style={highlight ? { color: 'var(--brand-primary)' } : {}}>{label}</span>
+      </a>
+    );
+  }
+  return (
+    <div
+      onClick={onClick}
+      className="mega-menu-item"
+      style={highlight ? { background: 'rgba(225,29,72,0.06)', borderColor: 'rgba(225,29,72,0.2)' } : {}}
+    >
+      <Icon size={15} style={{ flexShrink: 0, color: highlight ? 'var(--brand-primary)' : undefined }} />
+      <span className="item-title" style={highlight ? { color: 'var(--brand-primary)' } : {}}>{label}</span>
+    </div>
+  );
+};
 
 // Helper to convert ALL-CAPS or raw text to clean Title Case for navigation
 const toTitleCase = (str: string): string => {
@@ -206,6 +231,12 @@ export const Navbar: React.FC<NavbarProps> = ({
     })
     : [];
 
+  const getToolHref = (toolId: string) => {
+    const tool = getToolById(toolId);
+    const slug = tool?.slugs?.[currentLang] || toolId;
+    return currentLang === 'en' ? `/${slug}` : `/${currentLang}/${slug}`;
+  };
+
   const handleToolClick = (toolId: string) => {
     setIsMegaOpen(false);
     setIsSuiteOpen(false);
@@ -299,12 +330,22 @@ export const Navbar: React.FC<NavbarProps> = ({
 
         {/* Left: Brand Logo */}
         <div style={{ display: 'flex', alignItems: 'center', flexShrink: 0 }}>
-          <div onClick={onNavigateHome} aria-label="Navigate to Home" style={{ display: 'flex', alignItems: 'center', gap: 12, cursor: 'pointer', userSelect: 'none', flexShrink: 0 }}>
+          <a
+            href={currentLang === 'en' ? '/' : `/${currentLang}`}
+            onClick={(e) => {
+              if (!e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                e.preventDefault();
+                onNavigateHome();
+              }
+            }}
+            aria-label="Navigate to Home"
+            style={{ display: 'flex', alignItems: 'center', gap: 12, cursor: 'pointer', userSelect: 'none', flexShrink: 0, textDecoration: 'none', color: 'inherit' }}
+          >
             <img src="/logo.png" alt="HandleMyFile Logo" className="brand-logo-img" style={{ height: 40, width: 'auto', objectFit: 'contain' }} />
             <div className="brand-title" style={{ fontSize: 'var(--nav-brand-size, 1.25rem)', fontWeight: 800, letterSpacing: '-0.02em', lineHeight: 1.1, fontFamily: 'var(--font-heading)' }}>
               HandleMy<span className="gradient-text">File</span>
             </div>
-          </div>
+          </a>
         </div>
 
         {/* Center: Desktop Quick Tabs */}
@@ -314,9 +355,15 @@ export const Navbar: React.FC<NavbarProps> = ({
             { id: 'compress-pdf', label: 'Compress PDF' },
             { id: 'pdf-to-word', label: 'PDF to Word' },
           ].map(({ id, label }) => (
-            <button
+            <a
               key={id}
-              onClick={() => handleToolClick(id)}
+              href={getToolHref(id)}
+              onClick={(e) => {
+                if (!e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                  e.preventDefault();
+                  handleToolClick(id);
+                }
+              }}
               className="nav-tab-btn"
               style={{
                 background: 'transparent',
@@ -329,10 +376,11 @@ export const Navbar: React.FC<NavbarProps> = ({
                 cursor: 'pointer',
                 transition: 'all 0.2s',
                 letterSpacing: '-0.01em',
+                textDecoration: 'none',
               }}
             >
               {toolNames[id]?.[currentLang] || label}
-            </button>
+            </a>
           ))}
 
           {/* ALL PDF TOOLS — hover dropdown trigger */}
@@ -384,56 +432,56 @@ export const Navbar: React.FC<NavbarProps> = ({
                   {/* Col 1: Organize PDF — 8 items */}
                   <div className="mega-menu-col">
                     <div className="mega-menu-title">{NAV.organize}</div>
-                    <MI icon={Combine} label={toolNames['merge-pdf']?.[currentLang] || "Merge PDF"} onClick={() => handleToolClick('merge-pdf')} />
-                    <MI icon={Scissors} label={toolNames['split-pdf']?.[currentLang] || "Split PDF"} onClick={() => handleToolClick('split-pdf')} />
-                    <MI icon={RotateCw} label={toolNames['rotate-pdf']?.[currentLang] || "Rotate PDF"} onClick={() => handleToolClick('rotate-pdf')} />
-                    <MI icon={Hash} label={toolNames['page-numbers']?.[currentLang] || "Page Numbers"} onClick={() => handleToolClick('page-numbers')} />
-                    <MI icon={Trash2} label={toolNames['remove-pdf']?.[currentLang] || "Remove Pages"} onClick={() => handleToolClick('remove-pdf')} />
-                    <MI icon={LayoutList} label={toolNames['organize-pdf']?.[currentLang] || "Organize PDF"} onClick={() => handleToolClick('organize-pdf')} />
-                    <MI icon={Crop} label={toolNames['crop-pdf']?.[currentLang] || "Crop PDF"} onClick={() => handleToolClick('crop-pdf')} />
+                    <MI icon={Combine} label={toolNames['merge-pdf']?.[currentLang] || "Merge PDF"} href={getToolHref('merge-pdf')} onClick={() => handleToolClick('merge-pdf')} />
+                    <MI icon={Scissors} label={toolNames['split-pdf']?.[currentLang] || "Split PDF"} href={getToolHref('split-pdf')} onClick={() => handleToolClick('split-pdf')} />
+                    <MI icon={RotateCw} label={toolNames['rotate-pdf']?.[currentLang] || "Rotate PDF"} href={getToolHref('rotate-pdf')} onClick={() => handleToolClick('rotate-pdf')} />
+                    <MI icon={Hash} label={toolNames['page-numbers']?.[currentLang] || "Page Numbers"} href={getToolHref('page-numbers')} onClick={() => handleToolClick('page-numbers')} />
+                    <MI icon={Trash2} label={toolNames['remove-pdf']?.[currentLang] || "Remove Pages"} href={getToolHref('remove-pdf')} onClick={() => handleToolClick('remove-pdf')} />
+                    <MI icon={LayoutList} label={toolNames['organize-pdf']?.[currentLang] || "Organize PDF"} href={getToolHref('organize-pdf')} onClick={() => handleToolClick('organize-pdf')} />
+                    <MI icon={Crop} label={toolNames['crop-pdf']?.[currentLang] || "Crop PDF"} href={getToolHref('crop-pdf')} onClick={() => handleToolClick('crop-pdf')} />
                   </div>
 
                   {/* Col 2: Optimize & Spreadsheet — 8 items */}
                   <div className="mega-menu-col">
                     <div className="mega-menu-title">{NAV.optimize}</div>
-                    <MI icon={Edit3} label={toolNames['edit-pdf']?.[currentLang] || "Edit PDF"} onClick={() => handleToolClick('edit-pdf')} />
-                    <MI icon={Minimize2} label={toolNames['compress-pdf']?.[currentLang] || "Compress PDF"} onClick={() => handleToolClick('compress-pdf')} />
-                    <MI icon={ScanText} label={toolNames['ocr-pdf']?.[currentLang] || "OCR PDF to Text"} onClick={() => handleToolClick('ocr-pdf')} />
-                    <MI icon={Contrast} label={toolNames['grayscale-pdf']?.[currentLang] || "Grayscale PDF"} onClick={() => handleToolClick('grayscale-pdf')} />
-                    <MI icon={ScanLine} label={toolNames['scan-to-pdf']?.[currentLang] || "Scan to PDF"} onClick={() => handleToolClick('scan-to-pdf')} />
-                    <MI icon={Eraser} label={toolNames['remove-pdf-metadata']?.[currentLang] || "Remove Metadata"} onClick={() => handleToolClick('remove-pdf-metadata')} />
-                    <MI icon={SlidersHorizontal} label={toolNames['edit-pdf-metadata']?.[currentLang] || "Edit Metadata"} onClick={() => handleToolClick('edit-pdf-metadata')} />
+                    <MI icon={Edit3} label={toolNames['edit-pdf']?.[currentLang] || "Edit PDF"} href={getToolHref('edit-pdf')} onClick={() => handleToolClick('edit-pdf')} />
+                    <MI icon={Minimize2} label={toolNames['compress-pdf']?.[currentLang] || "Compress PDF"} href={getToolHref('compress-pdf')} onClick={() => handleToolClick('compress-pdf')} />
+                    <MI icon={ScanText} label={toolNames['ocr-pdf']?.[currentLang] || "OCR PDF to Text"} href={getToolHref('ocr-pdf')} onClick={() => handleToolClick('ocr-pdf')} />
+                    <MI icon={Contrast} label={toolNames['grayscale-pdf']?.[currentLang] || "Grayscale PDF"} href={getToolHref('grayscale-pdf')} onClick={() => handleToolClick('grayscale-pdf')} />
+                    <MI icon={ScanLine} label={toolNames['scan-to-pdf']?.[currentLang] || "Scan to PDF"} href={getToolHref('scan-to-pdf')} onClick={() => handleToolClick('scan-to-pdf')} />
+                    <MI icon={Eraser} label={toolNames['remove-pdf-metadata']?.[currentLang] || "Remove Metadata"} href={getToolHref('remove-pdf-metadata')} onClick={() => handleToolClick('remove-pdf-metadata')} />
+                    <MI icon={SlidersHorizontal} label={toolNames['edit-pdf-metadata']?.[currentLang] || "Edit Metadata"} href={getToolHref('edit-pdf-metadata')} onClick={() => handleToolClick('edit-pdf-metadata')} />
                     <div className="mega-menu-title" style={{ marginTop: 12 }}>{NAV.spreadsheet}</div>
-                    <MI icon={TableProperties} label={toolNames['csv-to-excel']?.[currentLang] || "CSV to Excel (.xlsx)"} onClick={() => handleToolClick('csv-to-excel')} />
-                    <MI icon={FileText} label={toolNames['excel-to-csv']?.[currentLang] || "Excel to CSV"} onClick={() => handleToolClick('excel-to-csv')} />
+                    <MI icon={TableProperties} label={toolNames['csv-to-excel']?.[currentLang] || "CSV to Excel (.xlsx)"} href={getToolHref('csv-to-excel')} onClick={() => handleToolClick('csv-to-excel')} />
+                    <MI icon={FileText} label={toolNames['excel-to-csv']?.[currentLang] || "Excel to CSV"} href={getToolHref('excel-to-csv')} onClick={() => handleToolClick('excel-to-csv')} />
                   </div>
 
                   {/* Col 3: Security & Convert From — 8 items */}
                   <div className="mega-menu-col">
                     <div className="mega-menu-title">{NAV.security}</div>
-                    <MI icon={Stamp} label={toolNames['watermark-pdf']?.[currentLang] || "Watermark PDF"} onClick={() => handleToolClick('watermark-pdf')} />
-                    <MI icon={PenTool} label={toolNames['sign-pdf']?.[currentLang] || "Sign PDF"} onClick={() => handleToolClick('sign-pdf')} />
-                    <MI icon={Lock} label={toolNames['protect-pdf']?.[currentLang] || "Protect PDF"} onClick={() => handleToolClick('protect-pdf')} />
-                    <MI icon={Unlock} label={toolNames['unlock-pdf']?.[currentLang] || "Unlock PDF"} onClick={() => handleToolClick('unlock-pdf')} />
-                    <MI icon={EyeOff} label={toolNames['redact-pdf']?.[currentLang] || "Redact PDF"} onClick={() => handleToolClick('redact-pdf')} />
+                    <MI icon={Stamp} label={toolNames['watermark-pdf']?.[currentLang] || "Watermark PDF"} href={getToolHref('watermark-pdf')} onClick={() => handleToolClick('watermark-pdf')} />
+                    <MI icon={PenTool} label={toolNames['sign-pdf']?.[currentLang] || "Sign PDF"} href={getToolHref('sign-pdf')} onClick={() => handleToolClick('sign-pdf')} />
+                    <MI icon={Lock} label={toolNames['protect-pdf']?.[currentLang] || "Protect PDF"} href={getToolHref('protect-pdf')} onClick={() => handleToolClick('protect-pdf')} />
+                    <MI icon={Unlock} label={toolNames['unlock-pdf']?.[currentLang] || "Unlock PDF"} href={getToolHref('unlock-pdf')} onClick={() => handleToolClick('unlock-pdf')} />
+                    <MI icon={EyeOff} label={toolNames['redact-pdf']?.[currentLang] || "Redact PDF"} href={getToolHref('redact-pdf')} onClick={() => handleToolClick('redact-pdf')} />
                     <div className="mega-menu-title" style={{ marginTop: 12 }}>{NAV.fromPdf}</div>
-                    <MI icon={FileText} label={toolNames['pdf-to-word']?.[currentLang] || "PDF to Word"} onClick={() => handleToolClick('pdf-to-word')} highlight={true} />
-                    <MI icon={Presentation} label={toolNames['pdf-to-ppt']?.[currentLang] || "PDF to PowerPoint"} onClick={() => handleToolClick('pdf-to-ppt')} />
-                    <MI icon={Images} label={toolNames['pdf-to-image']?.[currentLang] || "PDF to JPG / PNG"} onClick={() => handleToolClick('pdf-to-image')} />
-                    <MI icon={Image} label={toolNames['extract-images-pdf']?.[currentLang] || "Extract Images"} onClick={() => handleToolClick('extract-images-pdf')} />
+                    <MI icon={FileText} label={toolNames['pdf-to-word']?.[currentLang] || "PDF to Word"} href={getToolHref('pdf-to-word')} onClick={() => handleToolClick('pdf-to-word')} highlight={true} />
+                    <MI icon={Presentation} label={toolNames['pdf-to-ppt']?.[currentLang] || "PDF to PowerPoint"} href={getToolHref('pdf-to-ppt')} onClick={() => handleToolClick('pdf-to-ppt')} />
+                    <MI icon={Images} label={toolNames['pdf-to-image']?.[currentLang] || "PDF to JPG / PNG"} href={getToolHref('pdf-to-image')} onClick={() => handleToolClick('pdf-to-image')} />
+                    <MI icon={Image} label={toolNames['extract-images-pdf']?.[currentLang] || "Extract Images"} href={getToolHref('extract-images-pdf')} onClick={() => handleToolClick('extract-images-pdf')} />
                   </div>
 
                   {/* Col 4: Convert To PDF + More Tools — 7 items */}
                   <div className="mega-menu-col">
                     <div className="mega-menu-title">{NAV.toPdf}</div>
-                    <MI icon={FileSpreadsheet} label={toolNames['excel-to-pdf']?.[currentLang] || "Excel to PDF"} onClick={() => handleToolClick('excel-to-pdf')} />
-                    <MI icon={Presentation} label={toolNames['ppt-to-pdf']?.[currentLang] || "PowerPoint to PDF"} onClick={() => handleToolClick('ppt-to-pdf')} />
-                    <MI icon={Image} label={toolNames['image-to-pdf']?.[currentLang] || "JPG / PNG to PDF"} onClick={() => handleToolClick('image-to-pdf')} />
-                    <MI icon={AlignLeft} label={toolNames['txt-to-pdf']?.[currentLang] || "TXT to PDF"} onClick={() => handleToolClick('txt-to-pdf')} />
+                    <MI icon={FileSpreadsheet} label={toolNames['excel-to-pdf']?.[currentLang] || "Excel to PDF"} href={getToolHref('excel-to-pdf')} onClick={() => handleToolClick('excel-to-pdf')} />
+                    <MI icon={Presentation} label={toolNames['ppt-to-pdf']?.[currentLang] || "PowerPoint to PDF"} href={getToolHref('ppt-to-pdf')} onClick={() => handleToolClick('ppt-to-pdf')} />
+                    <MI icon={Image} label={toolNames['image-to-pdf']?.[currentLang] || "JPG / PNG to PDF"} href={getToolHref('image-to-pdf')} onClick={() => handleToolClick('image-to-pdf')} />
+                    <MI icon={AlignLeft} label={toolNames['txt-to-pdf']?.[currentLang] || "TXT to PDF"} href={getToolHref('txt-to-pdf')} onClick={() => handleToolClick('txt-to-pdf')} />
                     <div className="mega-menu-title" style={{ marginTop: 12 }}>{NAV.moreTools}</div>
-                    <MI icon={Scale} label={toolNames['compare-pdf']?.[currentLang] || "Compare PDF"} onClick={() => handleToolClick('compare-pdf')} />
-                    <MI icon={Maximize} label={toolNames['resize-pdf']?.[currentLang] || "Resize PDF"} onClick={() => handleToolClick('resize-pdf')} />
-                    <MI icon={ArrowDownUp} label={toolNames['reverse-pdf']?.[currentLang] || "Reverse PDF"} onClick={() => handleToolClick('reverse-pdf')} />
+                    <MI icon={Scale} label={toolNames['compare-pdf']?.[currentLang] || "Compare PDF"} href={getToolHref('compare-pdf')} onClick={() => handleToolClick('compare-pdf')} />
+                    <MI icon={Maximize} label={toolNames['resize-pdf']?.[currentLang] || "Resize PDF"} href={getToolHref('resize-pdf')} onClick={() => handleToolClick('resize-pdf')} />
+                    <MI icon={ArrowDownUp} label={toolNames['reverse-pdf']?.[currentLang] || "Reverse PDF"} href={getToolHref('reverse-pdf')} onClick={() => handleToolClick('reverse-pdf')} />
                   </div>
                 </div>
               </div>

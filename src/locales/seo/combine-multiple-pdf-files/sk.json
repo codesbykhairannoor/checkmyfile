@@ -1,79 +1,44 @@
 {
-  "title": "Combine Multiple PDF Files",
-  "h1": "Combine Multiple PDF Files Online (Free & Client-Side)",
-  "description": "Merge and combine multiple PDF files into one single document. Instant local processing, 100% private in browser memory.",
+  "title": "Spojenie viacerých súborov PDF",
+  "h1": "Spojte viacero súborov PDF online v prehliadači",
+  "description": "Spojte viaceré dokumenty PDF do jedného súboru priamo v prehliadači pomocou WebAssembly. Nulové nahrávanie na server a 100 % súkromie.",
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "Combine Multiple PDF Files into One",
-      "content": "Organize your workflow by merging invoices, reports, or chapters into a single PDF file instantly. No upload required.",
-      "badgeText": "Instant Merging"
+      "type": "merge_hero_features",
+      "title": "Spojenie viacerých PDF do jedného dokumentu",
+      "content": "Rýchlo spojte faktúry, zmluvy a prezentácie do jedného PDF priamo na vašom zariadení bez nahrávania na cudzie servery.",
+      "badgeText": "Lokálne spracovanie"
     },
     {
-      "type": "protect_how_to_steps",
-      "title": "How to Combine PDF Files",
-      "badgeText": "Easy Guide",
+      "type": "merge_how_to_steps",
+      "title": "Ako spojiť PDF súbory v 3 krokoch",
+      "badgeText": "Rýchly návod",
       "steps": [
         {
-          "title": "Upload Files",
-          "description": "Drag and drop all the PDFs you want to merge."
+          "title": "Vyberte PDF súbory",
+          "description": "Presuňte viaceré súbory PDF do zabezpečeného lokálneho poľa."
         },
         {
-          "title": "Reorder Pages",
-          "description": "Drag to rearrange the order of the documents as you see fit."
+          "title": "Usporiadajte poradie",
+          "description": "Zmeňte poradie súborov a stránok pretiahnutím myšou."
         },
         {
-          "title": "Merge & Download",
-          "description": "Click merge and download your combined PDF immediately."
+          "title": "Stiahnite spojené PDF",
+          "description": "Okamžite uložte výsledný PDF dokument priamo do počítača."
         }
       ]
-    },
-    {
-      "type": "rotate_geo_targeting",
-      "title": "Combine Dozens of Files Securely",
-      "content": "Because we process everything in your browser, you can merge gigabytes of PDFs without waiting for slow internet uploads.",
-      "subTitle": "Zero Server Uploads",
-      "subContent": "All merging is done using your computer's RAM.",
-      "badgeText": "Zero Server Uploads"
-    },
-    {
-      "type": "sign_privacy_security",
-      "title": "Keep Your Invoices & Reports Organized",
-      "content": "Whether you are a student submitting assignments or a freelancer sending invoices, merging them into one file makes it much cleaner."
-    },
-    {
-      "type": "resize_performance",
-      "title": "Instant Merging Speed",
-      "content": "Combine 50 files in under 2 seconds.",
-      "badgeText": "Lightning Fast"
     }
   ],
   "faqs": [
     {
-      "q": "Is there a limit to how many files I can combine?",
-      "a": "The Free Starter tier allows combining up to 10 files per batch. For unlimited batch processing (100+ files), an affordable Lifetime Pass is available."
+      "q": "Nahrávajú sa moje súbory PDF na server?",
+      "a": "Nie. Všetko spájanie prebieha lokálne v pamäti RAM vášho prehliadača pomocou WebAssembly."
     },
     {
-      "q": "Can I rearrange the order?",
-      "a": "Yes, you can easily drag and drop the files into your desired order before merging."
-    },
-    {
-      "q": "Do my files go to a server?",
-      "a": "Absolutely not. The merging happens 100% offline within your browser."
+      "q": "Koľko súborov PDF môžem spojiť naraz?",
+      "a": "V pláne Free Starter môžete spojiť až 10 súborov v jednej dávke a s PRO neobmedzene."
     }
   ],
-  "badges": [
-    "No Uploads",
-    "Merge PDFs",
-    "Fast Merging"
-  ],
-  "stats": [
-    "Client-Side",
-    "Fast",
-    "Secure",
-    "Private"
-  ],
-  "buttonText": "Combine PDF Files",
-  "supportCenter": "Support Center",
-  "faqTitle": "Frequently Asked Questions"
+  "faqTitle": "Často kladené otázky",
+  "buttonText": "Spojiť PDF súbory"
 }

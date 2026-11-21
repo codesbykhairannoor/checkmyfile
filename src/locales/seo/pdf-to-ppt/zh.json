@@ -1,80 +1,25 @@
 {
-  "title": "PDF to PowerPoint — Recover Editable Slides",
-  "h1": "Convert PDF to PowerPoint Presentation Offline",
-  "description": "Transform PDF documents back into editable .pptx presentations locally. No cloud needed. Perfect for users in Beijing.",
-  "buttonText": "Convert to PPT",
-  "badges": [
-    "Editable Slides",
-    "Presentation Recovery",
-    "Fast Conversion"
-  ],
-  "stats": [
-    "100%",
-    "Local",
-    "0s",
-    "Wait Time"
-  ],
+  "title": "PDF 转 PowerPoint (PPTX) — 本地安全转换",
+  "h1": "在浏览器中将 PDF 转换为可编辑的 PowerPoint",
+  "description": "快速将 PDF 页面转换为清晰的 PowerPoint (.pptx) 演示文稿幻灯片。全流程浏览器本地处理，零服务器上传。",
   "sections": [
     {
-      "type": "split_hero_features",
-      "title": "为什么要离线使用？",
-      "content": "Recovering slide content from a PDF for editing should not require uploading sensitive decks to a cloud service."
-    },
-    {
-      "type": "split_how_to_steps",
-      "title": "如何使用",
-      "steps": [
-        {
-          "title": "Upload PDF",
-          "description": "Select the PDF containing your slide content."
-        },
-        {
-          "title": "Map Pages to Slides",
-          "description": "Each PDF page becomes one editable slide."
-        },
-        {
-          "title": "Download .pptx",
-          "description": "Get your fully editable PowerPoint presentation."
-        }
-      ]
-    },
-    {
-      "type": "split_geo_targeting",
-      "title": "Slide Recovery in Beijing",
-      "content": "Presenters in Beijing use our tool to recover and re-edit presentations from old PDF archives."
-    },
-    {
-      "type": "split_privacy_security",
-      "title": "Your Slides Are Never Exposed",
-      "content": "Confidential slide decks recovered and converted without any server interaction."
-    },
-    {
-      "type": "split_performance",
-      "title": "Convert Slides at Lightning Speed",
-      "content": "A 60-slide PDF converted to PowerPoint in under 10 seconds with zero upload time."
+      "type": "ppt_hero_features",
+      "title": "轻松把 PDF 变成 PPT 幻灯片",
+      "content": "将 PDF 报告和讲义无损导出为高分辨率 PowerPoint 幻灯片，无需担心商业机密泄露。",
+      "badgeText": "高保真转换"
     }
   ],
   "faqs": [
     {
-      "q": "Are slide layouts preserved?",
-      "a": "Content is mapped to slides; some layout adjustments may be needed."
+      "q": "转换后可以保留每页的布局吗？",
+      "a": "是的，每一页 PDF 都会精准渲染为对应尺寸与清晰度的 PPTX 幻灯片。"
     },
     {
-      "q": "Can I edit the slides after?",
-      "a": "Yes, the .pptx file is fully editable in PowerPoint or Google Slides."
-    },
-    {
-      "q": "Is there a page limit?",
-      "a": "No, convert as many pages as your RAM allows."
-    },
-    {
-      "q": "Does it work with image-heavy PDFs?",
-      "a": "Yes, images are embedded in each slide."
-    },
-    {
-      "q": "Is this free?",
-      "a": "是的，完全免费。"
+      "q": "是否需要上传文件到云端？",
+      "a": "完全不需要，全部转换过程在本地浏览器内存内完成。"
     }
   ],
-  "faqTitle": "常见问题"
+  "faqTitle": "常见问题",
+  "buttonText": "PDF 转 PPTX"
 }

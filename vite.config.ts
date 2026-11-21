@@ -6,6 +6,22 @@ export default defineConfig({
   plugins: [react()],
   build: {
     chunkSizeWarningLimit: 1500,
+    modulePreload: {
+      resolveDependencies(_filename, deps) {
+        return deps.filter((dep) =>
+          !dep.includes('i18n-editor') &&
+          !dep.includes('vendor-pdfjs') &&
+          !dep.includes('vendor-xlsx') &&
+          !dep.includes('vendor-jspdf') &&
+          !dep.includes('vendor-docx') &&
+          !dep.includes('vendor-pdflib') &&
+          !dep.includes('vendor-tesseract') &&
+          !dep.includes('vendor-html2canvas') &&
+          !dep.includes('vendor-handlemyfile-wasm') &&
+          !dep.includes('vendor-fflate')
+        );
+      }
+    },
     rollupOptions: {
       output: {
         manualChunks(id) {

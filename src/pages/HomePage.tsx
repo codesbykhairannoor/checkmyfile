@@ -13,6 +13,7 @@ import { TOOLS_CATALOG, getLocalizedSeo, type ToolDefinition } from '../catalog/
 import { SeoHead } from '../components/seo/SeoHead';
 import { smartHighlight } from '../utils/textFormatting';
 import { ResearchGroundingSection } from '../components/seo-sections/ResearchGroundingSection';
+import { getLocalizedStaticSlug } from '../i18n/staticSlugs';
 
 const ICON_MAP: Record<string, React.ComponentType<{ size?: number; style?: React.CSSProperties; className?: string; strokeWidth?: number }>> = {
   Combine, PenTool, Scissors, RotateCw, Hash, Stamp, Trash2,
@@ -190,12 +191,20 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
             <div className="tools-grid">
               {filteredTools.map((tool: ToolDefinition) => {
                 const seo = getLocalizedSeo(tool, currentLang);
+                const toolSlug = tool.slugs[currentLang] || tool.id;
+                const toolHref = currentLang === 'en' ? `/${toolSlug}` : `/${currentLang}/${toolSlug}`;
                 const IconComponent = ICON_MAP[tool.iconName] || FileText;
 
                 return (
-                  <div
+                  <a
                     key={tool.id}
-                    onClick={() => onSelectTool(tool)}
+                    href={toolHref}
+                    onClick={(e) => {
+                      if (!e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                        e.preventDefault();
+                        onSelectTool(tool);
+                      }
+                    }}
                     className="tool-card glass-panel"
                     style={{
                       padding: 32,
@@ -205,7 +214,9 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
                       flexDirection: 'column',
                       height: '100%',
                       position: 'relative',
-                      overflow: 'hidden'
+                      overflow: 'hidden',
+                      textDecoration: 'none',
+                      color: 'inherit'
                     }}
                     onMouseEnter={(e) => {
                       e.currentTarget.style.transform = 'translateY(-8px)';
@@ -238,7 +249,7 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
                       <span>{t.homeTryNow || 'Try Now Offline'}</span>
                       <ArrowRight size={18} />
                     </div>
-                  </div>
+                  </a>
                 );
               })}
             </div>
@@ -450,8 +461,8 @@ export const HomePage: React.FC<HomePageProps> = ({ currentLang, onSelectTool })
 
                 <p style={{ fontSize: 'clamp(1.05rem, 2vw, 1.25rem)', color: 'var(--text-muted)', lineHeight: 1.75, margin: 0 }}>
                   {t.homeGeoTrustDesc || 'Unlike traditional cloud-based PDF tools that require you to upload sensitive documents to their servers, HandleMyFile executes all algorithms inside your browser\'s secure sandbox. The application uses WebAssembly and JavaScript TypedArrays to manipulate files locally. This architecture guarantees zero data leakage. For more technical details on our security audits and practices, visit our '}{' '}
-                  <a href={`/${currentLang === 'en' ? '' : currentLang + '/'}about`} style={{ color: 'var(--brand-primary)', textDecoration: 'underline', fontWeight: 700 }}>
-                    {currentLang === 'id' ? 'Halaman Tentang Kami' : 'About Page'}
+                  <a href={currentLang === 'en' ? `/${getLocalizedStaticSlug('about', 'en')}` : `/${currentLang}/${getLocalizedStaticSlug('about', currentLang)}`} style={{ color: 'var(--brand-primary)', textDecoration: 'underline', fontWeight: 700 }}>
+                    {currentLang === 'id' ? 'Halaman Tentang Kami' : (t.footerAbout || 'About Page')}
                   </a>.
                 </p>
               </div>

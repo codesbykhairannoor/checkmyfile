@@ -1,14 +1,16 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { SUPPORTED_LANGUAGES } from '../src/i18n/languages';
+import { SUPPORTED_LANGUAGES, getLanguageByCode } from '../src/i18n/languages';
 import { TOOLS_CATALOG, getLocalizedSeo } from '../src/catalog/toolsCatalog';
 import { UI_TRANSLATIONS } from '../src/i18n/translations';
+import { authTranslations } from '../src/i18n/authTranslations';
 import { GEO_CITATIONS } from '../src/i18n/geoTranslations';
 import { RESEARCH_TRANSLATIONS } from '../src/i18n/researchTranslations';
 import { STATIC_SLUGS, type StaticPageId } from '../src/i18n/staticSlugs';
 import { toolSlugs, toolNames } from '../src/i18n/slugTranslations';
 import { cleanMetaTitle, cleanMetaDescription } from '../src/utils/seoHelpers';
+import { STATIC_CHROME_I18N } from './staticChromeI18n';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -79,8 +81,11 @@ const buildHreflangTags = (pageType: 'tool' | 'home' | 'static', pageId?: string
   return tags.join('\n    ');
 };
 
-// Helper: Semantic Header Navigation with crawlable outgoing internal links
+// Helper: Semantic Header Navigation with localized labels and crawlable outgoing internal links
 const buildHeaderNavigation = (lang: string, isEn: boolean): string => {
+  const t = UI_TRANSLATIONS[lang] || UI_TRANSLATIONS['en'];
+  const authT = authTranslations[lang] || authTranslations['en'] || {};
+  const chrome = STATIC_CHROME_I18N[lang] || STATIC_CHROME_I18N['en'];
   const homeHref = isEn ? '/' : `/${lang}`;
   const getStaticHref = (pageKey: StaticPageId) => {
     const slug = STATIC_SLUGS[lang]?.[pageKey] || STATIC_SLUGS['en']?.[pageKey] || pageKey;
@@ -105,18 +110,20 @@ const buildHeaderNavigation = (lang: string, isEn: boolean): string => {
         <a href="${wordSlug}" style="color: var(--seo-text, #f8fafc); text-decoration: none; padding: 7px 14px; border-radius: 8px; font-size: 1.02rem; font-weight: 700; letter-spacing: -0.01em;">${toolNames['pdf-to-word']?.[lang] || 'PDF to Word'}</a>
       </nav>
       <div style="display: flex; align-items: center; gap: 14px; font-size: 0.98rem; font-weight: 600;">
-        <a href="${getStaticHref('pricing')}" style="color: var(--seo-text, #f8fafc); text-decoration: none; font-weight: 700;">Pricing</a>
-        <a href="${getStaticHref('languages')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none;">30 Languages</a>
+        <a href="${getStaticHref('pricing')}" style="color: var(--seo-text, #f8fafc); text-decoration: none; font-weight: 700;">${t.footerPricing || 'Pricing'}</a>
+        <a href="${getStaticHref('languages')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none;">${chrome.langsCount}</a>
         <a href="${homeHref}" onclick="if(window.__openAuthModal){window.__openAuthModal();return false;}" style="background: #e11d48; color: #ffffff; padding: 8px 18px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 0.96rem; display: inline-flex; align-items: center; gap: 6px;">
-          <span>${lang === 'id' ? 'Masuk' : 'Sign In'}</span>
+          <span>${authT.nav_signin || 'Sign In'}</span>
         </a>
       </div>
     </header>
   `;
 };
 
-// Helper: Semantic footer with crawlable outgoing internal links
+// Helper: Semantic localized footer with crawlable outgoing internal links
 const buildStaticFooter = (lang: string, isEn: boolean): string => {
+  const t = UI_TRANSLATIONS[lang] || UI_TRANSLATIONS['en'];
+  const chrome = STATIC_CHROME_I18N[lang] || STATIC_CHROME_I18N['en'];
   const homeHref = isEn ? '/' : `/${lang}`;
   const getStaticHref = (pageKey: StaticPageId) => {
     const slug = STATIC_SLUGS[lang]?.[pageKey] || STATIC_SLUGS['en']?.[pageKey] || pageKey;
@@ -126,26 +133,28 @@ const buildStaticFooter = (lang: string, isEn: boolean): string => {
   return `
     <footer style="margin-top: 60px; padding: 48px 24px 32px; border-top: 1px solid var(--seo-border, rgba(255,255,255,0.08)); font-size: 0.9rem; color: var(--seo-muted, #94a3b8); background: var(--seo-bg, #080a0f);">
       <nav aria-label="Footer Navigation" style="display: flex; flex-wrap: wrap; gap: 18px; margin-bottom: 20px; justify-content: center;">
-        <a href="${homeHref}" style="color: var(--seo-muted, #94a3b8); text-decoration: none; font-weight: 500;">Home</a>
-        <a href="${getStaticHref('about')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none; font-weight: 500;">About</a>
-        <a href="${getStaticHref('privacy')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none; font-weight: 500;">Privacy Policy</a>
-        <a href="${getStaticHref('terms')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none; font-weight: 500;">Terms of Service</a>
-        <a href="${getStaticHref('pricing')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none; font-weight: 500;">Pricing</a>
-        <a href="${getStaticHref('security')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none; font-weight: 500;">Security</a>
-        <a href="${getStaticHref('use-cases')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none; font-weight: 500;">Use Cases</a>
-        <a href="${getStaticHref('compare')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none; font-weight: 500;">Compare</a>
-        <a href="${getStaticHref('languages')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none; font-weight: 500;">Languages</a>
+        <a href="${homeHref}" style="color: var(--seo-muted, #94a3b8); text-decoration: none; font-weight: 500;">${chrome.home}</a>
+        <a href="${getStaticHref('about')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none; font-weight: 500;">${t.footerAbout || 'About'}</a>
+        <a href="${getStaticHref('privacy')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none; font-weight: 500;">${t.footerPrivacy || 'Privacy Policy'}</a>
+        <a href="${getStaticHref('terms')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none; font-weight: 500;">${t.footerTos || 'Terms of Service'}</a>
+        <a href="${getStaticHref('pricing')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none; font-weight: 500;">${t.footerPricing || 'Pricing'}</a>
+        <a href="${getStaticHref('security')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none; font-weight: 500;">${t.footerSecurity || 'Security'}</a>
+        <a href="${getStaticHref('use-cases')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none; font-weight: 500;">${t.footerUseCases || 'Use Cases'}</a>
+        <a href="${getStaticHref('compare')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none; font-weight: 500;">${t.footerCompare || 'Compare'}</a>
+        <a href="${getStaticHref('languages')}" style="color: var(--seo-muted, #94a3b8); text-decoration: none; font-weight: 500;">${t.footerLanguages || 'Languages'}</a>
       </nav>
-      <p style="margin: 0; text-align: center; font-size: 0.85rem; color: var(--seo-muted, #94a3b8);">&copy; 2026 HandleMyFile. Private browser-based document processing with WebAssembly.</p>
+      <p style="margin: 0; text-align: center; font-size: 0.85rem; color: var(--seo-muted, #94a3b8);">${chrome.footerCopy}</p>
     </footer>
   `;
 };
 
-// Helper: Complete Categorized Tools Directory (Eliminates ALL Orphan Pages)
+// Helper: Complete Categorized Tools Directory (Localized + Eliminates ALL Orphan Pages)
 const buildAllToolsDirectory = (lang: string, isEn: boolean, currentToolId?: string): string => {
+  const t = UI_TRANSLATIONS[lang] || UI_TRANSLATIONS['en'];
+  const chrome = STATIC_CHROME_I18N[lang] || STATIC_CHROME_I18N['en'];
   const categories = [
     {
-      name: 'PDF Organize & Edit',
+      name: t.pdfTools || 'PDF Organize & Edit',
       ids: [
         'merge-pdf', 'split-pdf', 'edit-pdf', 'sign-pdf', 'rotate-pdf', 'crop-pdf',
         'page-numbers-pdf', 'watermark-pdf', 'grayscale-pdf', 'reverse-pdf',
@@ -155,7 +164,7 @@ const buildAllToolsDirectory = (lang: string, isEn: boolean, currentToolId?: str
       ]
     },
     {
-      name: 'PDF Compression & Optimization',
+      name: t.compressTools || 'PDF Compression & Optimization',
       ids: [
         'compress-pdf', 'compress-pdf-100kb', 'compress-pdf-email',
         'compress-pdf-without-losing-quality', 'reduce-pdf-size-offline',
@@ -163,7 +172,7 @@ const buildAllToolsDirectory = (lang: string, isEn: boolean, currentToolId?: str
       ]
     },
     {
-      name: 'Convert Office & Data to/from PDF',
+      name: t.officeTools || 'Convert Office & Data to/from PDF',
       ids: [
         'word-to-pdf', 'excel-to-pdf', 'ppt-to-pdf', 'txt-to-pdf', 'csv-to-pdf',
         'pdf-to-word', 'pdf-to-excel', 'pdf-to-ppt', 'pdf-to-txt', 'pdf-to-csv',
@@ -172,14 +181,14 @@ const buildAllToolsDirectory = (lang: string, isEn: boolean, currentToolId?: str
       ]
     },
     {
-      name: 'Convert Images to/from PDF',
+      name: t.imageTools || 'Convert Images to/from PDF',
       ids: [
         'jpg-to-pdf', 'png-to-pdf', 'image-to-pdf', 'pdf-to-jpg', 'pdf-to-png',
         'pdf-to-image', 'extract-images-pdf', 'extract-high-res-images-pdf'
       ]
     },
     {
-      name: 'OCR & Text Extraction',
+      name: t.ocrTools || 'OCR & Text Extraction',
       ids: [
         'ocr-pdf', 'scanned-pdf-to-text', 'searchable-pdf-ocr'
       ]
@@ -187,30 +196,30 @@ const buildAllToolsDirectory = (lang: string, isEn: boolean, currentToolId?: str
   ];
 
   const listedIds = new Set(categories.flatMap(c => c.ids));
-  const otherTools = TOOLS_CATALOG.filter(t => !listedIds.has(t.id));
+  const otherTools = TOOLS_CATALOG.filter(tItem => !listedIds.has(tItem.id));
   if (otherTools.length > 0) {
     categories.push({
-      name: 'More Document Tools',
-      ids: otherTools.map(t => t.id)
+      name: chrome.moreTools,
+      ids: otherTools.map(tItem => tItem.id)
     });
   }
 
   const categoryBlocks = categories.map(cat => {
     const toolsInCat = cat.ids
-      .map(id => TOOLS_CATALOG.find(t => t.id === id))
-      .filter((t): t is typeof TOOLS_CATALOG[0] => Boolean(t));
+      .map(id => TOOLS_CATALOG.find(tItem => tItem.id === id))
+      .filter((tItem): tItem is typeof TOOLS_CATALOG[0] => Boolean(tItem));
 
     if (toolsInCat.length === 0) return '';
 
-    const toolLinks = toolsInCat.map(t => {
-      const slug = t.slugs[lang] || t.id;
+    const toolLinks = toolsInCat.map(tItem => {
+      const slug = tItem.slugs[lang] || tItem.id;
       const href = isEn ? `/${slug}` : `/${lang}/${slug}`;
-      const seo = getLocalizedSeo(t, lang);
-      const isCurrent = t.id === currentToolId;
+      const seo = getLocalizedSeo(tItem, lang);
+      const isCurrent = tItem.id === currentToolId;
       return `
         <li style="margin-bottom: 6px;">
           <a href="${href}" style="color: ${isCurrent ? 'var(--seo-primary, #e11d48)' : 'var(--seo-text, #f8fafc)'}; font-weight: ${isCurrent ? '700' : '500'}; text-decoration: none; display: block; padding: 4px 0; font-size: 0.9rem;">
-            ${seo.h1 || t.id}
+            ${seo.h1 || tItem.id}
           </a>
         </li>
       `;
@@ -231,7 +240,7 @@ const buildAllToolsDirectory = (lang: string, isEn: boolean, currentToolId?: str
   return `
     <section style="margin-top: 56px; padding-top: 36px; border-top: 1px solid var(--seo-border, rgba(255,255,255,0.08));">
       <h2 style="font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin-bottom: 24px; text-align: center;">
-        Complete Document Tools Directory
+        ${chrome.directoryTitle}
       </h2>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px;">
         ${categoryBlocks}
@@ -242,6 +251,7 @@ const buildAllToolsDirectory = (lang: string, isEn: boolean, currentToolId?: str
 
 // Helper: Global Localized Editions Switcher (30 Languages Hub)
 const buildLanguageSwitcher = (lang: string, pageType: 'tool' | 'home' | 'static', pageId?: string): string => {
+  const chrome = STATIC_CHROME_I18N[lang] || STATIC_CHROME_I18N['en'];
   const links = SUPPORTED_LANGUAGES.map(l => {
     const isLEn = l.code === 'en';
     let href = isLEn ? '/' : `/${l.code}`;
@@ -260,14 +270,14 @@ const buildLanguageSwitcher = (lang: string, pageType: 'tool' | 'home' | 'static
     const isCurrent = l.code === lang;
     return `
       <a href="${href}" style="padding: 6px 10px; border-radius: 8px; background: ${isCurrent ? 'var(--seo-primary, #e11d48)' : 'var(--seo-card, #111520)'}; color: ${isCurrent ? '#ffffff' : 'var(--seo-text, #f8fafc)'}; border: 1px solid ${isCurrent ? 'transparent' : 'var(--seo-border, rgba(255,255,255,0.08))'}; text-decoration: none; font-size: 0.82rem; font-weight: 600;">
-        ${l.name} (${l.nativeName})
+        ${l.nativeName}
       </a>
     `;
   }).join('');
 
   return `
     <nav aria-label="International Language Hubs" style="margin-top: 48px; padding: 24px; background: var(--seo-card, #111520); border-radius: 16px; border: 1px solid var(--seo-border, rgba(255,255,255,0.08));">
-      <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--seo-text, #f8fafc); margin-top: 0; margin-bottom: 16px;">Global Localized Editions (30 Languages)</h3>
+      <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--seo-text, #f8fafc); margin-top: 0; margin-bottom: 16px;">${chrome.langHubTitle}</h3>
       <div style="display: flex; flex-wrap: wrap; gap: 8px;">
         ${links}
       </div>
@@ -279,50 +289,70 @@ const buildLanguageSwitcher = (lang: string, pageType: 'tool' | 'home' | 'static
 const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: string, pageType: 'tool' | 'home' | 'static', pageId?: string) => {
   let html = baseHtmlContent;
   const isEn = lang === 'en';
+  const langInfo = getLanguageByCode(lang);
+  const chrome = STATIC_CHROME_I18N[lang] || STATIC_CHROME_I18N['en'];
+  const dirAttr = langInfo.dir === 'rtl' ? ' dir="rtl"' : '';
 
-  // Replace lang attribute and preserve no-js class
-  html = html.replace(/<html\b[^>]*>/i, `<html lang="${lang}" class="no-js">`);
+  // Replace lang attribute, RTL dir if needed, and preserve no-js class
+  html = html.replace(/<html\b[^>]*>/i, `<html lang="${lang}"${dirAttr} class="no-js">`);
 
-  // Remove existing title/meta/og/twitter tags to avoid duplicates or mismatches
+  // Remove existing title/meta/og/twitter/JSON-LD tags to avoid duplicates or mismatches
   html = html.replace(/<title>.*?<\/title>/gi, '');
+  html = html.replace(/<meta name="title"[^>]*>\n?\s*/gi, '');
   html = html.replace(/<meta name="description"[^>]*>\n?\s*/gi, '');
+  html = html.replace(/<meta name="keywords"[^>]*>\n?\s*/gi, '');
+  html = html.replace(/<meta name="llm-context"[^>]*>\n?\s*/gi, '');
   html = html.replace(/<link rel="canonical"[^>]*>\n?\s*/gi, '');
   html = html.replace(/<meta property="og:title"[^>]*>\n?\s*/gi, '');
   html = html.replace(/<meta property="og:description"[^>]*>\n?\s*/gi, '');
   html = html.replace(/<meta property="og:url"[^>]*>\n?\s*/gi, '');
+  html = html.replace(/<meta property="og:locale"[^>]*>\n?\s*/gi, '');
   html = html.replace(/<meta property="og:image[^"]*"[^>]*>\n?\s*/gi, '');
   html = html.replace(/<meta property="twitter:title"[^>]*>\n?\s*/gi, '');
   html = html.replace(/<meta property="twitter:description"[^>]*>\n?\s*/gi, '');
   html = html.replace(/<meta property="twitter:url"[^>]*>\n?\s*/gi, '');
   html = html.replace(/<meta (property|name)="twitter:[^"]*"[^>]*>\n?\s*/gi, '');
   html = html.replace(/<link rel="alternate" hreflang="[^"]+" href="[^"]+" \/>\n?\s*/g, '');
+  html = html.replace(/<link rel="alternate" type="text\/markdown"[^>]*>\n?\s*/g, '');
+  html = html.replace(/<link rel="service-doc"[^>]*>\n?\s*/g, '');
+  html = html.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>\n?\s*/gi, '');
 
   const fullUrl = `${DOMAIN}${urlPath}`;
   const finalTitle = cleanMetaTitle(seoTitle);
   const finalDesc = cleanMetaDescription(seoDesc, lang);
+  const escapedTitle = finalTitle.replace(/"/g, '&quot;');
+  const escapedDesc = finalDesc.replace(/"/g, '&quot;');
 
-  // Inject accurate tags matching canonical URL exactly (eliminates Open Graph mismatches)
+  // Inject accurate tags matching canonical URL exactly (eliminates Open Graph & JSON-LD duplicates)
   const titleTag = `<title>${finalTitle}</title>`;
-  const metaDesc = `<meta name="description" content="${finalDesc.replace(/"/g, '&quot;')}" />`;
+  const metaTitle = `<meta name="title" content="${escapedTitle}" />`;
+  const metaDesc = `<meta name="description" content="${escapedDesc}" />`;
+  const geoMeta = `<meta name="geo.region" content="${langInfo.geoRegion}" />\n    <meta name="geo.placename" content="${langInfo.geoPlacename}" />`;
+  const llmMeta = `<meta name="llm-context" content="${isEn ? '/llms.txt' : `/llms-${lang}.txt`}" />`;
   const canonical = `<link rel="canonical" href="${fullUrl}" />`;
-  const ogTitle = `<meta property="og:title" content="${finalTitle.replace(/"/g, '&quot;')}" />`;
-  const ogDesc = `<meta property="og:description" content="${finalDesc.replace(/"/g, '&quot;')}" />`;
+  const ogTitle = `<meta property="og:title" content="${escapedTitle}" />`;
+  const ogDesc = `<meta property="og:description" content="${escapedDesc}" />`;
   const ogUrl = `<meta property="og:url" content="${fullUrl}" />`;
-  const ogImages = `<meta property="og:image" content="${DOMAIN}/og-image.png" />\n    <meta property="og:image:secure_url" content="${DOMAIN}/og-image.png" />\n    <meta property="og:image:type" content="image/png" />\n    <meta property="og:image:width" content="1200" />\n    <meta property="og:image:height" content="630" />\n    <meta property="og:image:alt" content="${finalTitle.replace(/"/g, '&quot;')}" />`;
+  const ogLocale = `<meta property="og:locale" content="${langInfo.localeCode}" />`;
+  const ogImages = `<meta property="og:image" content="${DOMAIN}/og-image.png" />\n    <meta property="og:image:secure_url" content="${DOMAIN}/og-image.png" />\n    <meta property="og:image:type" content="image/png" />\n    <meta property="og:image:width" content="1200" />\n    <meta property="og:image:height" content="630" />\n    <meta property="og:image:alt" content="${escapedTitle}" />`;
   const twitterCard = `<meta name="twitter:card" content="summary_large_image" />`;
-  const twitterTitle = `<meta name="twitter:title" content="${finalTitle.replace(/"/g, '&quot;')}" />`;
-  const twitterDesc = `<meta name="twitter:description" content="${finalDesc.replace(/"/g, '&quot;')}" />`;
+  const twitterTitle = `<meta name="twitter:title" content="${escapedTitle}" />`;
+  const twitterDesc = `<meta name="twitter:description" content="${escapedDesc}" />`;
   const twitterUrl = `<meta name="twitter:url" content="${fullUrl}" />`;
-  const twitterImage = `<meta name="twitter:image" content="${DOMAIN}/og-image.png" />\n    <meta name="twitter:image:alt" content="${finalTitle.replace(/"/g, '&quot;')}" />`;
+  const twitterImage = `<meta name="twitter:image" content="${DOMAIN}/og-image.png" />\n    <meta name="twitter:image:alt" content="${escapedTitle}" />`;
   const hreflangTags = buildHreflangTags(pageType, pageId);
 
   const headInjection = `
     ${titleTag}
+    ${metaTitle}
     ${metaDesc}
+    ${geoMeta}
+    ${llmMeta}
     ${canonical}
     ${ogTitle}
     ${ogDesc}
     ${ogUrl}
+    ${ogLocale}
     ${ogImages}
     ${twitterCard}
     ${twitterTitle}
@@ -422,10 +452,12 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
     }
 
     if (seoJson) {
+      const seoH1 = seoJson.h1 || seoJson.heroTitle || finalTitle;
+      const seoSummary = seoJson.description || seoJson.heroDescription || finalDesc;
       const geoText = GEO_CITATIONS[lang] || GEO_CITATIONS['en'];
       let sectionsHtml = `
         <div style="margin: 32px 0; padding: 20px 24px; background: var(--seo-card, #111520); border: 1px solid var(--seo-border, rgba(255,255,255,0.08)); border-left: 4px solid #10b981; border-radius: 12px; font-weight: 500; font-size: 0.95rem; line-height: 1.6; color: var(--seo-muted, #94a3b8);">
-          <strong style="color: var(--seo-text, #f8fafc); display: block; margin-bottom: 4px;">ISO 32000-2 Document Processing Standard</strong>
+          <strong style="color: var(--seo-text, #f8fafc); display: block; margin-bottom: 4px;">${chrome.isoHeader}</strong>
           ${geoText}
         </div>
       `;
@@ -438,7 +470,7 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; margin-top: 24px;">
               ${sec.steps.map((step: any, sIdx: number) => `
                 <div style="background: var(--seo-card, #111520); border: 1px solid var(--seo-border, rgba(255,255,255,0.08)); border-radius: 14px; padding: 24px;">
-                  <div style="display: inline-block; padding: 2px 10px; background: rgba(225,29,72,0.12); color: var(--seo-primary, #e11d48); border-radius: 6px; font-size: 0.82rem; font-weight: 700; margin-bottom: 12px;">Step ${sIdx + 1}</div>
+                  <div style="display: inline-block; padding: 2px 10px; background: rgba(225,29,72,0.12); color: var(--seo-primary, #e11d48); border-radius: 6px; font-size: 0.82rem; font-weight: 700; margin-bottom: 12px;">${chrome.step} ${sIdx + 1}</div>
                   <h3 style="font-size: clamp(1.25rem, 3vw, 1.5rem); font-weight: 700; color: var(--seo-text, #f8fafc); margin: 0 0 10px;">${step.title}</h3>
                   <p style="font-size: clamp(1.05rem, 2vw, 1.25rem); color: var(--seo-muted, #94a3b8); line-height: 1.7; margin: 0;">${step.description}</p>
                 </div>
@@ -449,22 +481,20 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
       `).join('');
 
       const faqsHtml = (seoJson.faqs || []).map((faq: any) => `
-        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="background: var(--seo-card, #111520); border: 1px solid var(--seo-border, rgba(255,255,255,0.08)); border-radius: 12px; padding: 20px 24px; margin-bottom: 14px;">
-          <h3 itemprop="name" style="font-size: clamp(1.15rem, 2.5vw, 1.35rem); font-weight: 700; color: var(--seo-text, #f8fafc); margin: 0 0 10px;">${faq.q}</h3>
-          <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <p itemprop="text" style="font-size: 1rem; color: var(--seo-muted, #94a3b8); line-height: 1.7; margin: 0;">${faq.a}</p>
-          </div>
+        <div style="background: var(--seo-card, #111520); border: 1px solid var(--seo-border, rgba(255,255,255,0.08)); border-radius: 12px; padding: 20px 24px; margin-bottom: 14px;">
+          <h3 style="font-size: clamp(1.15rem, 2.5vw, 1.35rem); font-weight: 700; color: var(--seo-text, #f8fafc); margin: 0 0 10px;">${faq.q}</h3>
+          <p style="font-size: 1rem; color: var(--seo-muted, #94a3b8); line-height: 1.7; margin: 0;">${faq.a}</p>
         </div>
       `).join('');
 
-      // Build JSON-LD Schema
+      // Single unified JSON-LD Schema (@graph)
       const schemaGraph: any[] = [
         {
           "@type": "WebApplication",
-          "@id": `${DOMAIN}${urlPath}/#webapp`,
-          "url": `${DOMAIN}${urlPath}`,
-          "name": seoJson.h1 || finalTitle,
-          "description": seoJson.description || finalDesc,
+          "@id": `${fullUrl}/#webapp`,
+          "url": fullUrl,
+          "name": seoH1,
+          "description": seoSummary,
           "applicationCategory": "UtilitiesApplication",
           "applicationSubCategory": "PDF & Document Conversion Utility",
           "operatingSystem": "All (Web Browser, Chrome, Firefox, Safari, Edge)",
@@ -481,17 +511,39 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
             "name": "HandleMyFile",
             "url": DOMAIN
           },
-          "sameAs": [
+          "about": [
             "https://www.wikidata.org/wiki/Q28853",
             "https://www.wikidata.org/wiki/Q42332",
             "https://www.wikidata.org/wiki/Q7246237"
+          ],
+          "sameAs": [
+            "https://github.com/codesbykhairannoor"
           ],
           "offers": {
             "@type": "Offer",
             "price": "0",
             "priceCurrency": "USD",
+            "description": "Free Starter plan included (no credit card required); optional PRO upgrade available",
             "availability": "https://schema.org/InStock"
           }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": `${fullUrl}/#breadcrumb`,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": chrome.home,
+              "item": isEn ? `${DOMAIN}/` : `${DOMAIN}/${lang}`
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": seoH1,
+              "item": fullUrl
+            }
+          ]
         }
       ];
 
@@ -500,10 +552,10 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
         if (howToSec) {
           schemaGraph.push({
             "@type": "HowTo",
-            "@id": `${DOMAIN}${urlPath}/#howto`,
-            "name": howToSec.title || "How To",
-            "description": howToSec.content || "Steps to use this tool.",
-            "step": howToSec.steps.map((step: any, idx: number) => ({
+            "@id": `${fullUrl}/#howto`,
+            "name": howToSec.title || seoH1,
+            "description": howToSec.content || seoSummary,
+            "step": howToSec.steps.map((step: any) => ({
               "@type": "HowToStep",
               "name": step.title,
               "text": step.description
@@ -515,7 +567,7 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
       if (seoJson.faqs && seoJson.faqs.length > 0) {
         schemaGraph.push({
           "@type": "FAQPage",
-          "@id": `${DOMAIN}${urlPath}/#faq`,
+          "@id": `${fullUrl}/#faq`,
           "mainEntity": seoJson.faqs.map((faq: any) => ({
             "@type": "Question",
             "name": faq.q,
@@ -540,16 +592,16 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
           ${buildHeaderNavigation(lang, isEn)}
           <div style="max-width: 1200px; margin: 0 auto; padding: 40px 24px 60px;">
             <nav aria-label="Breadcrumb" style="margin-bottom: 24px; font-size: 0.9rem; color: var(--seo-muted, #94a3b8);">
-              <a href="${isEn ? '/' : `/${lang}`}" style="color: var(--seo-primary, #e11d48); text-decoration: none; font-weight: 600;">Home</a> &gt; 
-              <span>${seoJson.h1 || finalTitle}</span>
+              <a href="${isEn ? '/' : `/${lang}`}" style="color: var(--seo-primary, #e11d48); text-decoration: none; font-weight: 600;">${chrome.home}</a> &gt; 
+              <span>${seoH1}</span>
             </nav>
             <article itemscope itemtype="https://schema.org/Article">
               <header style="text-align: center; max-width: 860px; margin: 0 auto 36px;">
                 <h1 itemprop="headline" style="font-size: clamp(1.8rem, 4vw, 3.5rem); font-weight: 900; letter-spacing: -0.02em; line-height: 1.2; margin-bottom: 16px; color: var(--seo-text, #f8fafc);">
-                  ${seoJson.h1 || finalTitle}
+                  ${seoH1}
                 </h1>
                 <p itemprop="description" style="font-size: clamp(1.05rem, 2vw, 1.25rem); color: var(--seo-muted, #94a3b8); line-height: 1.7; margin: 0;">
-                  ${seoJson.description || finalDesc}
+                  ${seoSummary}
                 </p>
               </header>
 
@@ -558,9 +610,9 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
                 <div style="width: 56px; height: 56px; margin: 0 auto 16px; background: rgba(225, 29, 72, 0.12); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--seo-primary, #e11d48);">
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
                 </div>
-                <p style="font-size: 1.15rem; font-weight: 700; margin-bottom: 8px; color: var(--seo-text, #f8fafc);">Select or Drop PDF File Here</p>
-                <p style="font-size: 0.9rem; color: var(--seo-muted, #94a3b8); margin-bottom: 20px;">100% In-Browser Memory Processing • Zero Server Uploads</p>
-                <div style="display: inline-block; padding: 12px 28px; background: var(--seo-primary, #e11d48); color: #fff; font-weight: 700; border-radius: 10px; font-size: 0.95rem;">Choose Files</div>
+                <p style="font-size: 1.15rem; font-weight: 700; margin-bottom: 8px; color: var(--seo-text, #f8fafc);">${chrome.dropTitle}</p>
+                <p style="font-size: 0.9rem; color: var(--seo-muted, #94a3b8); margin-bottom: 20px;">${chrome.dropSub}</p>
+                <div style="display: inline-block; padding: 12px 28px; background: var(--seo-primary, #e11d48); color: #fff; font-weight: 700; border-radius: 10px; font-size: 0.95rem;">${seoJson.buttonText || chrome.dropBtn}</div>
               </div>
 
               ${sectionsHtml}
@@ -572,7 +624,7 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
                       <div style="display: inline-block; padding: 4px 12px; background: rgba(37,99,235,0.12); border-radius: 9999px; color: #60a5fa; font-size: 0.85rem; font-weight: 700; margin-bottom: 12px;">${rt.researchBadge}</div>
                       <h3 style="font-size: clamp(1.25rem, 3vw, 1.5rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin-bottom: 10px;">${rt.toolRedactResearchTitle}</h3>
                       <p style="color: var(--seo-muted, #94a3b8); line-height: 1.7; margin-bottom: 12px;">${rt.toolRedactResearchDesc}</p>
-                      <p style="font-size: 0.85rem; color: #64748b; font-style: italic; margin: 0;"><strong style="color: var(--seo-text, #f8fafc);">Academic Reference:</strong> <cite>${rt.toolRedactResearchCite}</cite></p>
+                      <p style="font-size: 0.85rem; color: #64748b; font-style: italic; margin: 0;"><strong style="color: var(--seo-text, #f8fafc);">${chrome.academicRef}:</strong> <cite>${rt.toolRedactResearchCite}</cite></p>
                     </section>
                   `;
           } else if (pageId.includes('ocr') || pageId.includes('scanned')) {
@@ -581,7 +633,7 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
                       <div style="display: inline-block; padding: 4px 12px; background: rgba(37,99,235,0.12); border-radius: 9999px; color: #60a5fa; font-size: 0.85rem; font-weight: 700; margin-bottom: 12px;">${rt.researchBadge}</div>
                       <h3 style="font-size: clamp(1.25rem, 3vw, 1.5rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin-bottom: 10px;">${rt.toolOcrResearchTitle}</h3>
                       <p style="color: var(--seo-muted, #94a3b8); line-height: 1.7; margin-bottom: 12px;">${rt.toolOcrResearchDesc}</p>
-                      <p style="font-size: 0.85rem; color: #64748b; font-style: italic; margin: 0;"><strong style="color: var(--seo-text, #f8fafc);">Academic Reference:</strong> <cite>${rt.toolOcrResearchCite}</cite></p>
+                      <p style="font-size: 0.85rem; color: #64748b; font-style: italic; margin: 0;"><strong style="color: var(--seo-text, #f8fafc);">${chrome.academicRef}:</strong> <cite>${rt.toolOcrResearchCite}</cite></p>
                     </section>
                   `;
           } else if (pageId.includes('compress')) {
@@ -590,7 +642,7 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
                       <div style="display: inline-block; padding: 4px 12px; background: rgba(37,99,235,0.12); border-radius: 9999px; color: #60a5fa; font-size: 0.85rem; font-weight: 700; margin-bottom: 12px;">${rt.researchBadge}</div>
                       <h3 style="font-size: clamp(1.25rem, 3vw, 1.5rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin-bottom: 10px;">${rt.toolCompressResearchTitle}</h3>
                       <p style="color: var(--seo-muted, #94a3b8); line-height: 1.7; margin-bottom: 12px;">${rt.toolCompressResearchDesc}</p>
-                      <p style="font-size: 0.85rem; color: #64748b; font-style: italic; margin: 0;"><strong style="color: var(--seo-text, #f8fafc);">Academic Reference:</strong> <cite>${rt.toolCompressResearchCite}</cite></p>
+                      <p style="font-size: 0.85rem; color: #64748b; font-style: italic; margin: 0;"><strong style="color: var(--seo-text, #f8fafc);">${chrome.academicRef}:</strong> <cite>${rt.toolCompressResearchCite}</cite></p>
                     </section>
                   `;
           } else if (pageId.includes('sign')) {
@@ -599,7 +651,7 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
                       <div style="display: inline-block; padding: 4px 12px; background: rgba(37,99,235,0.12); border-radius: 9999px; color: #60a5fa; font-size: 0.85rem; font-weight: 700; margin-bottom: 12px;">${rt.researchBadge}</div>
                       <h3 style="font-size: clamp(1.25rem, 3vw, 1.5rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin-bottom: 10px;">${rt.toolSignResearchTitle}</h3>
                       <p style="color: var(--seo-muted, #94a3b8); line-height: 1.7; margin-bottom: 12px;">${rt.toolSignResearchDesc}</p>
-                      <p style="font-size: 0.85rem; color: #64748b; font-style: italic; margin: 0;"><strong style="color: var(--seo-text, #f8fafc);">Academic Reference:</strong> <cite>${rt.toolSignResearchCite}</cite></p>
+                      <p style="font-size: 0.85rem; color: #64748b; font-style: italic; margin: 0;"><strong style="color: var(--seo-text, #f8fafc);">${chrome.academicRef}:</strong> <cite>${rt.toolSignResearchCite}</cite></p>
                     </section>
                   `;
           }
@@ -607,7 +659,7 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
         })()}
               ${faqsHtml ? `
                 <section style="margin-top: 56px;">
-                  <h2 style="font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin-bottom: 24px;">${seoJson.faqTitle || 'Frequently Asked Questions'}</h2>
+                  <h2 style="font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin-bottom: 24px;">${seoJson.faqTitle || geo.homeGeoFaqTitle || chrome.commonFaqBadge}</h2>
                   ${faqsHtml}
                 </section>
               ` : ''}
@@ -620,12 +672,19 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
       `;
     }
   } else if (pageType === 'home') {
-    // 2. Home Page (100% Safe Pre-rendering of HomeSections + Links to All Tools)
+    // 2. Home Page (100% Safe Pre-rendering of HomeSections + Localized FAQ Schema + Links to All Tools)
+    const homeFaqItems = [
+      { q: geo.homeGeoFaq1Q, a: geo.homeGeoFaq1A },
+      { q: geo.homeGeoFaq2Q, a: geo.homeGeoFaq2A },
+      { q: geo.homeGeoFaq3Q, a: geo.homeGeoFaq3A },
+      { q: geo.homeGeoFaq4Q, a: geo.homeGeoFaq4A },
+    ].filter(item => item.q && item.a);
+
     const schemaGraph: any[] = [
       {
         "@type": "WebApplication",
-        "@id": `${DOMAIN}${urlPath}/#webapp`,
-        "url": `${DOMAIN}${urlPath}`,
+        "@id": `${fullUrl}/#webapp`,
+        "url": fullUrl,
         "name": finalTitle,
         "description": finalDesc,
         "applicationCategory": "UtilitiesApplication",
@@ -644,49 +703,46 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
           "name": "HandleMyFile",
           "url": DOMAIN
         },
-        "sameAs": [
+        "about": [
           "https://www.wikidata.org/wiki/Q28853",
           "https://www.wikidata.org/wiki/Q42332",
           "https://www.wikidata.org/wiki/Q7246237"
+        ],
+        "sameAs": [
+          "https://github.com/codesbykhairannoor"
         ],
         "offers": {
           "@type": "Offer",
           "price": "0",
           "priceCurrency": "USD",
+          "description": "Free Starter plan included (no credit card required); optional PRO upgrade available",
           "availability": "https://schema.org/InStock"
         }
       },
       {
-        "@type": "FAQPage",
-        "@id": `${DOMAIN}${urlPath}/#faq`,
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Are my files uploaded to any external server?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No. HandleMyFile executes 100% of document processing in browser RAM via WebAssembly. Your files never leave your device."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the best free alternative to iLovePDF and Smallpdf without file limits?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "HandleMyFile is the premier free alternative to iLovePDF and Smallpdf, offering unlimited document processing with zero paywalls and zero watermarks."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Does HandleMyFile work offline in Airplane Mode?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Once loaded, HandleMyFile runs fully offline without an internet connection using local browser WebAssembly."
-            }
-          }
-        ]
+        "@type": "Organization",
+        "@id": `${DOMAIN}/#organization`,
+        "name": "HandleMyFile",
+        "url": DOMAIN,
+        "logo": `${DOMAIN}/logo.png`,
+        "sameAs": ["https://github.com/codesbykhairannoor"]
       }
     ];
+
+    if (homeFaqItems.length > 0) {
+      schemaGraph.push({
+        "@type": "FAQPage",
+        "@id": `${fullUrl}/#faq`,
+        "mainEntity": homeFaqItems.map(faq => ({
+          "@type": "Question",
+          "name": faq.q,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.a
+          }
+        }))
+      });
+    }
 
     const jsonLdScript = `<script type="application/ld+json">\n${JSON.stringify({
       "@context": "https://schema.org",
@@ -705,21 +761,21 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
           <article itemscope itemtype="https://schema.org/Article">
             <header style="text-align: center; max-width: 960px; margin: 0 auto 40px;">
               <h1 itemprop="headline" style="font-size: clamp(2.5rem, 5.2vw, 4.5rem); font-weight: 900; letter-spacing: -0.03em; line-height: 1.15; color: var(--seo-text, #f8fafc); margin: 0 auto 20px;">
-                ${finalTitle}
+                ${geo.homeHeroTitle || finalTitle}
               </h1>
               <p itemprop="description" style="font-size: clamp(1.05rem, 2vw, 1.25rem); color: var(--seo-muted, #94a3b8); line-height: 1.6; max-width: 780px; margin: 0 auto 32px; font-weight: 500;">
-                ${finalDesc}
+                ${geo.homeHeroSubtitle || finalDesc}
               </p>
 
               <!-- Simulated Search Box -->
               <div style="max-width: 600px; margin: 0 auto 32px; padding: 14px 20px; background: var(--seo-card, #111520); border: 1px solid var(--seo-border, rgba(255,255,255,0.08)); border-radius: 9999px; display: flex; align-items: center; gap: 12px; color: var(--seo-muted, #94a3b8); font-size: 0.95rem;">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                <span>Search 30+ document tools (PDF, Word, Excel, Compress, OCR)...</span>
+                <span>${geo.searchPlaceholder || chrome.searchHint}</span>
               </div>
 
               <!-- ISO & Privacy Trust Banner -->
               <div style="padding: 16px 20px; background: var(--seo-card, #111520); border: 1px solid var(--seo-border, rgba(255,255,255,0.08)); border-left: 4px solid #10b981; border-radius: 12px; text-align: left; font-size: 0.95rem; line-height: 1.6; color: var(--seo-muted, #94a3b8);">
-                <strong style="color: var(--seo-text, #f8fafc); display: block; margin-bottom: 4px;">ISO 32000-2 Document Standard • 100% Client-Side WebAssembly Processing</strong>
+                <strong style="color: var(--seo-text, #f8fafc); display: block; margin-bottom: 4px;">${chrome.isoHeader}</strong>
                 ${geoText}
               </div>
             </header>
@@ -727,18 +783,18 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
             <!-- Featured Tools Grid -->
             <section style="margin-top: 56px;">
               <h2 style="font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 800; color: var(--seo-text, #f8fafc); text-align: center; margin-bottom: 32px;">
-                Popular Document Tools
+                ${chrome.popularTools}
               </h2>
               <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px;">
-                ${TOOLS_CATALOG.slice(0, 20).map(t => {
-      const slug = t.slugs[lang] || t.id;
+                ${TOOLS_CATALOG.slice(0, 20).map(tItem => {
+      const slug = tItem.slugs[lang] || tItem.id;
       const href = isEn ? `/${slug}` : `/${lang}/${slug}`;
-      const seo = getLocalizedSeo(t, lang);
+      const seo = getLocalizedSeo(tItem, lang);
       return `
                     <a href="${href}" style="display: block; padding: 22px; background: var(--seo-card, #111520); border: 1px solid var(--seo-border, rgba(255,255,255,0.08)); border-radius: 14px; text-decoration: none;">
-                      <div style="font-size: 0.75rem; font-weight: 700; color: var(--seo-primary, #e11d48); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">${t.category}</div>
-                      <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--seo-text, #f8fafc); margin: 0 0 8px;">${seo.h1 || t.id}</h3>
-                      <p style="font-size: 0.88rem; color: var(--seo-muted, #94a3b8); line-height: 1.5; margin: 0;">${seo.description.slice(0, 110)}...</p>
+                      <div style="font-size: 0.75rem; font-weight: 700; color: var(--seo-primary, #e11d48); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">${tItem.category}</div>
+                      <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--seo-text, #f8fafc); margin: 0 0 8px;">${seo.h1 || tItem.id}</h3>
+                      <p style="font-size: 0.88rem; color: var(--seo-muted, #94a3b8); line-height: 1.5; margin: 0;">${seo.description.slice(0, 110)}</p>
                     </a>
                   `;
     }).join('')}
@@ -755,17 +811,17 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
                 <div style="background: var(--seo-bg, #080a0f); padding: 28px 24px; border-radius: 18px; border: 1px solid var(--seo-border, rgba(255,255,255,0.08));">
                   <h3 style="font-size: clamp(1.25rem, 3vw, 1.5rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin-bottom: 10px; line-height: 1.3;">${rt.homeCard1Title}</h3>
                   <p style="color: var(--seo-muted, #94a3b8); font-size: 0.96rem; line-height: 1.65; margin-bottom: 16px;">${rt.homeCard1Desc}</p>
-                  <p style="font-size: 0.82rem; color: #64748b; margin: 0;"><strong style="color: var(--seo-text, #f8fafc); display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">Academic Reference:</strong><cite>${rt.homeCard1Cite}</cite></p>
+                  <p style="font-size: 0.82rem; color: #64748b; margin: 0;"><strong style="color: var(--seo-text, #f8fafc); display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">${chrome.academicRef}:</strong><cite>${rt.homeCard1Cite}</cite></p>
                 </div>
                 <div style="background: var(--seo-bg, #080a0f); padding: 28px 24px; border-radius: 18px; border: 1px solid var(--seo-border, rgba(255,255,255,0.08));">
                   <h3 style="font-size: clamp(1.25rem, 3vw, 1.5rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin-bottom: 10px; line-height: 1.3;">${rt.homeCard2Title}</h3>
                   <p style="color: var(--seo-muted, #94a3b8); font-size: 0.96rem; line-height: 1.65; margin-bottom: 16px;">${rt.homeCard2Desc}</p>
-                  <p style="font-size: 0.82rem; color: #64748b; margin: 0;"><strong style="color: var(--seo-text, #f8fafc); display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">Scientific Paper:</strong><cite>${rt.homeCard2Cite}</cite></p>
+                  <p style="font-size: 0.82rem; color: #64748b; margin: 0;"><strong style="color: var(--seo-text, #f8fafc); display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">${chrome.scientificPaper}:</strong><cite>${rt.homeCard2Cite}</cite></p>
                 </div>
                 <div style="background: var(--seo-bg, #080a0f); padding: 28px 24px; border-radius: 18px; border: 1px solid var(--seo-border, rgba(255,255,255,0.08));">
                   <h3 style="font-size: clamp(1.25rem, 3vw, 1.5rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin-bottom: 10px; line-height: 1.3;">${rt.homeCard3Title}</h3>
                   <p style="color: var(--seo-muted, #94a3b8); font-size: 0.96rem; line-height: 1.65; margin-bottom: 16px;">${rt.homeCard3Desc}</p>
-                  <p style="font-size: 0.82rem; color: #64748b; margin: 0;"><strong style="color: var(--seo-text, #f8fafc); display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">Industry Standard:</strong><cite>${rt.homeCard3Cite}</cite></p>
+                  <p style="font-size: 0.82rem; color: #64748b; margin: 0;"><strong style="color: var(--seo-text, #f8fafc); display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">${chrome.industryStd}:</strong><cite>${rt.homeCard3Cite}</cite></p>
                 </div>
               </div>
             </section>
@@ -773,13 +829,13 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
             <!-- GEO Bento Grid: Definition & Trust -->
             <section style="margin-top: 60px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: 24px;">
               <div style="background: var(--seo-card, #111520); padding: 36px 30px; border-radius: 24px; border: 1px solid var(--seo-border, rgba(255,255,255,0.08));">
-                <div style="display: inline-block; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--seo-primary, #e11d48); margin-bottom: 12px;">Architecture & Platform</div>
+                <div style="display: inline-block; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--seo-primary, #e11d48); margin-bottom: 12px;">${chrome.archBadge}</div>
                 <h2 style="font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; color: var(--seo-text, #f8fafc); margin-bottom: 16px; line-height: 1.2;">${geo.homeGeoDefTitle}</h2>
                 <p style="font-size: clamp(1.05rem, 2vw, 1.25rem); color: var(--seo-muted, #94a3b8); line-height: 1.75; margin: 0;">${geo.homeGeoDefDesc}</p>
               </div>
 
               <div style="background: var(--seo-card, #111520); padding: 36px 30px; border-radius: 24px; border: 1px solid var(--seo-border, rgba(255,255,255,0.08));">
-                <div style="display: inline-block; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: #10b981; margin-bottom: 12px;">Data Privacy & Compliance</div>
+                <div style="display: inline-block; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: #10b981; margin-bottom: 12px;">${chrome.privacyBadge}</div>
                 <h2 style="font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; color: var(--seo-text, #f8fafc); margin-bottom: 16px; line-height: 1.2;">${geo.homeGeoTrustTitle}</h2>
                 <p style="font-size: clamp(1.05rem, 2vw, 1.25rem); color: var(--seo-muted, #94a3b8); line-height: 1.75; margin: 0;">${geo.homeGeoTrustDesc}</p>
               </div>
@@ -788,7 +844,7 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
             <!-- GEO 2-Column: Key Takeaways & FAQ -->
             <section style="margin-top: 60px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: 36px; align-items: start;">
               <div>
-                <div style="display: inline-block; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--seo-primary, #e11d48); margin-bottom: 12px;">Executive Summary</div>
+                <div style="display: inline-block; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--seo-primary, #e11d48); margin-bottom: 12px;">${chrome.execSummaryBadge}</div>
                 <h2 style="font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; color: var(--seo-text, #f8fafc); margin-bottom: 24px; line-height: 1.15;">${geo.homeGeoTakeawaysTitle}</h2>
                 <div style="display: flex; flexDirection: column; gap: 14px;">
                   <div style="background: var(--seo-card, #111520); padding: 18px 20px; border-radius: 16px; border: 1px solid var(--seo-border, rgba(255,255,255,0.08)); font-size: 1.05rem; font-weight: 600; color: var(--seo-text, #f8fafc); line-height: 1.5;">✓ ${geo.homeGeoTakeawaysItem1}</div>
@@ -798,32 +854,14 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
               </div>
 
               <div>
-                <div style="display: inline-block; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: #8b5cf6; margin-bottom: 12px;">Common Questions</div>
+                <div style="display: inline-block; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: #8b5cf6; margin-bottom: 12px;">${chrome.commonFaqBadge}</div>
                 <h2 style="font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; color: var(--seo-text, #f8fafc); margin-bottom: 24px; line-height: 1.15;">${geo.homeGeoFaqTitle}</h2>
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="background: var(--seo-card, #111520); border: 1px solid var(--seo-border, rgba(255,255,255,0.08)); border-radius: 16px; padding: 20px 24px; margin-bottom: 14px;">
-                  <h3 itemprop="name" style="font-size: clamp(1.15rem, 2.5vw, 1.3rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin: 0 0 10px; line-height: 1.4;">${geo.homeGeoFaq1Q}</h3>
-                  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <p itemprop="text" style="font-size: 1rem; color: var(--seo-muted, #94a3b8); line-height: 1.7; margin: 0;">${geo.homeGeoFaq1A}</p>
+                ${homeFaqItems.map(faq => `
+                  <div style="background: var(--seo-card, #111520); border: 1px solid var(--seo-border, rgba(255,255,255,0.08)); border-radius: 16px; padding: 20px 24px; margin-bottom: 14px;">
+                    <h3 style="font-size: clamp(1.15rem, 2.5vw, 1.3rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin: 0 0 10px; line-height: 1.4;">${faq.q}</h3>
+                    <p style="font-size: 1rem; color: var(--seo-muted, #94a3b8); line-height: 1.7; margin: 0;">${faq.a}</p>
                   </div>
-                </div>
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="background: var(--seo-card, #111520); border: 1px solid var(--seo-border, rgba(255,255,255,0.08)); border-radius: 16px; padding: 20px 24px; margin-bottom: 14px;">
-                  <h3 itemprop="name" style="font-size: clamp(1.15rem, 2.5vw, 1.3rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin: 0 0 10px; line-height: 1.4;">${geo.homeGeoFaq2Q}</h3>
-                  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <p itemprop="text" style="font-size: 1rem; color: var(--seo-muted, #94a3b8); line-height: 1.7; margin: 0;">${geo.homeGeoFaq2A}</p>
-                  </div>
-                </div>
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="background: var(--seo-card, #111520); border: 1px solid var(--seo-border, rgba(255,255,255,0.08)); border-radius: 16px; padding: 20px 24px; margin-bottom: 14px;">
-                  <h3 itemprop="name" style="font-size: clamp(1.15rem, 2.5vw, 1.3rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin: 0 0 10px; line-height: 1.4;">${geo.homeGeoFaq3Q}</h3>
-                  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <p itemprop="text" style="font-size: 1rem; color: var(--seo-muted, #94a3b8); line-height: 1.7; margin: 0;">${geo.homeGeoFaq3A}</p>
-                  </div>
-                </div>
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="background: var(--seo-card, #111520); border: 1px solid var(--seo-border, rgba(255,255,255,0.08)); border-radius: 16px; padding: 20px 24px; margin-bottom: 14px;">
-                  <h3 itemprop="name" style="font-size: clamp(1.15rem, 2.5vw, 1.3rem); font-weight: 800; color: var(--seo-text, #f8fafc); margin: 0 0 10px; line-height: 1.4;">${geo.homeGeoFaq4Q}</h3>
-                  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                    <p itemprop="text" style="font-size: 1rem; color: var(--seo-muted, #94a3b8); line-height: 1.7; margin: 0;">${geo.homeGeoFaq4A}</p>
-                  </div>
-                </div>
+                `).join('')}
               </div>
             </section>
 
@@ -950,22 +988,40 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
         <section><h2>${geo.pageLangSec4Title || 'Global Performance'}</h2><p>${geo.pageLangSec4Desc || ''}</p></section>
         ${geo.pageLangSec5Title ? `<section><h2>${geo.pageLangSec5Title}</h2><p>${geo.pageLangSec5Desc || ''}</p></section>` : ''}
         <section style="margin-top: 32px;">
-          <h2>Available Languages & Locales</h2>
+          <h2>${geo.footerLanguages || chrome.langHubTitle}</h2>
           <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; list-style: none; padding: 0; margin-top: 16px;">
-            ${SUPPORTED_LANGUAGES.map(l => `<li><a href="${l.code === 'en' ? '/' : `/${l.code}`}" style="color: #3b82f6; text-decoration: none; font-weight: 500;">${l.name} (${l.nativeName})</a></li>`).join('')}
+            ${SUPPORTED_LANGUAGES.map(l => `<li><a href="${l.code === 'en' ? '/' : `/${l.code}`}" style="color: #3b82f6; text-decoration: none; font-weight: 500;">${l.nativeName}</a></li>`).join('')}
           </ul>
         </section>
       `;
     }
 
-    // Default Schema for Static Pages
-    const schemaGraph = [
+    // Unified Schema for Static Pages
+    const schemaGraph: any[] = [
       {
         "@type": "WebPage",
-        "@id": `${DOMAIN}${urlPath}/#webpage`,
-        "url": `${DOMAIN}${urlPath}`,
+        "@id": `${fullUrl}/#webpage`,
+        "url": fullUrl,
         "name": finalTitle,
         "description": finalDesc
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${fullUrl}/#breadcrumb`,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": chrome.home,
+            "item": isEn ? `${DOMAIN}/` : `${DOMAIN}/${lang}`
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": finalTitle,
+            "item": fullUrl
+          }
+        ]
       }
     ];
 
@@ -983,7 +1039,7 @@ const generateHtml = (lang: string, urlPath: string, seoTitle: string, seoDesc: 
         ${buildHeaderNavigation(lang, isEn)}
         <div style="max-width: 1100px; margin: 0 auto; padding: 32px 24px 60px;">
           <nav aria-label="Breadcrumb" style="margin-bottom: 24px; font-size: 0.9rem; color: var(--seo-muted, #94a3b8);">
-            <a href="${isEn ? '/' : `/${lang}`}" style="color: #3b82f6; text-decoration: none;">Home</a> &gt; 
+            <a href="${isEn ? '/' : `/${lang}`}" style="color: #3b82f6; text-decoration: none;">${chrome.home}</a> &gt; 
             <span>${finalTitle}</span>
           </nav>
           <div style="margin-bottom: 28px; padding: 16px 20px; background: rgba(34, 197, 94, 0.08); border-left: 4px solid #22c55e; border-radius: 8px; font-size: 0.95rem; line-height: 1.6; color: var(--seo-text, #f8fafc);">
@@ -1087,7 +1143,7 @@ const run = async () => {
   // 4. Generate Legacy Redirect Alias Pages to prevent any 404 from obsolete slugs & GSC historical URLs
   let redirectCount = 0;
 
-  // Helper to safely write a redirect file
+  // Helper to safely write a redirect file (marked noindex, follow to preserve crawl budget)
   const createRedirectFile = (urlPath: string, targetUrl: string, langCode: string = 'en') => {
     const cleanPath = urlPath.replace(/^\//, '').replace(/\/$/, '');
     if (!cleanPath) return;
@@ -1098,6 +1154,7 @@ const run = async () => {
 <head>
   <meta charset="UTF-8">
   <title>Redirecting...</title>
+  <meta name="robots" content="noindex, follow" />
   <link rel="canonical" href="${DOMAIN}${targetUrl}" />
   <meta http-equiv="refresh" content="0; url=${DOMAIN}${targetUrl}" />
   <script>window.location.replace("${DOMAIN}${targetUrl}");</script>
