@@ -46,7 +46,7 @@ if (!sitemapDirective) {
   console.log(`✅ Sitemap referenced in robots.txt: ${sitemapDirective[1]}\n`);
 }
 
-// 2. Sitemap.xml Inspection
+// 2. Sitemap.xml Inspection (supports both <sitemapindex> and <urlset>)
 console.log('🔍 [Phase 2] Inspecting & Parsing sitemap.xml...');
 const sitemapPath = path.join(distDir, 'sitemap.xml');
 if (!fs.existsSync(sitemapPath)) {
@@ -54,7 +54,25 @@ if (!fs.existsSync(sitemapPath)) {
   process.exit(1);
 }
 const sitemapXml = fs.readFileSync(sitemapPath, 'utf8');
-const sitemapLocs = [...sitemapXml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
+let sitemapLocs: string[] = [];
+if (sitemapXml.includes('<sitemapindex')) {
+  const childMaps = [...sitemapXml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
+  console.log(`ℹ️ Detected <sitemapindex> referencing ${childMaps.length} child sitemaps.`);
+  const urlSet = new Set<string>();
+  for (const childUrl of childMaps) {
+    const childName = childUrl.replace(`${DOMAIN}/`, '');
+    const childPath = path.join(distDir, childName);
+    if (fs.existsSync(childPath)) {
+      const childXml = fs.readFileSync(childPath, 'utf8');
+      for (const m of childXml.matchAll(/<loc>([^<]+)<\/loc>/g)) {
+        urlSet.add(m[1]);
+      }
+    }
+  }
+  sitemapLocs = [...urlSet];
+} else {
+  sitemapLocs = [...sitemapXml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
+}
 console.log(`✅ Total URLs discovered in sitemap: ${sitemapLocs.length}`);
 
 // 3. Full Crawl Engine

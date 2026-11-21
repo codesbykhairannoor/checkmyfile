@@ -338,10 +338,10 @@ export const Navbar: React.FC<NavbarProps> = ({
                 onNavigateHome();
               }
             }}
-            aria-label="Navigate to Home"
+            aria-label="HandleMyFile Home"
             style={{ display: 'flex', alignItems: 'center', gap: 12, cursor: 'pointer', userSelect: 'none', flexShrink: 0, textDecoration: 'none', color: 'inherit' }}
           >
-            <img src="/logo.png" alt="HandleMyFile Logo" className="brand-logo-img" style={{ height: 40, width: 'auto', objectFit: 'contain' }} />
+            <img src="/logo-icon.webp" alt="HandleMyFile Logo" width={40} height={40} className="brand-logo-img" style={{ height: 40, width: 'auto', objectFit: 'contain' }} />
             <div className="brand-title" style={{ fontSize: 'var(--nav-brand-size, 1.25rem)', fontWeight: 800, letterSpacing: '-0.02em', lineHeight: 1.1, fontFamily: 'var(--font-heading)' }}>
               HandleMy<span className="gradient-text">File</span>
             </div>

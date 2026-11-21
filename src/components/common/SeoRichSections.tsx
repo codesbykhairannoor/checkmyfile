@@ -180,17 +180,19 @@ export const SeoRichSections: React.FC<SeoRichSectionsProps> = ({ data }) => {
     <article className="seo-rich-sections-container" style={{ width: '100%', paddingTop: 60, display: 'flex', flexDirection: 'column' }}>
 
       {/* ── Dynamic Sections ── */}
-      {ordered.map((section, index) => {
-        const type     = resolveType(section.type);
-        const Section  = SECTION_REGISTRY[type];
-        if (!Section) return null;
+      <React.Suspense fallback={<div style={{ minHeight: '90vh' }} />}>
+        {ordered.map((section, index) => {
+          const type     = resolveType(section.type);
+          const Section  = SECTION_REGISTRY[type];
+          if (!Section) return null;
 
-        const flipLayout  = index % 2 !== 0;
+          const flipLayout  = index % 2 !== 0;
 
-        return <Section key={`${type}-${index}`} section={section} flipLayout={flipLayout} badges={data.badges} stats={data.stats} buttonText={data.buttonText} />;
-      })}
+          return <Section key={`${type}-${index}`} section={section} flipLayout={flipLayout} badges={data.badges} stats={data.stats} buttonText={data.buttonText} />;
+        })}
+      </React.Suspense>
 
-      {/* ── FAQ + Schema.org JSON-LD ── */}
+      {/* ── FAQ Section (JSON-LD handled cleanly in unified @graph via SeoHead + SSR) ── */}
       {faqs?.length > 0 && (
         <section className="seo-section faqs" style={{ marginTop: 80, padding: '60px 24px', background: 'var(--bg-app)', borderRadius: 32, marginBottom: 80, border: '1px solid var(--border-color)' }}>
           <div style={{ textAlign: 'center', marginBottom: 48 }}>
@@ -212,10 +214,6 @@ export const SeoRichSections: React.FC<SeoRichSectionsProps> = ({ data }) => {
               />
             ))}
           </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-            '@context': 'https://schema.org', '@type': 'FAQPage',
-            mainEntity: faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } }))
-          })}} />
         </section>
       )}
     </article>

@@ -82,9 +82,9 @@ export const FileDropzone: React.FC<FileDropzoneProps> = ({
             className="animate-float-fast" 
             style={{ margin: '0 auto 20px', color: 'var(--brand-primary)' }} 
           />
-          <h3 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: 8, fontFamily: 'var(--font-display)' }}>
+          <h2 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: 8, fontFamily: 'var(--font-display)' }}>
             {t.dropzoneTitle}
-          </h3>
+          </h2>
           <p style={{ color: 'var(--text-muted)', fontSize: '1rem', marginBottom: 28, fontWeight: 500 }}>
             {t.dropzoneSubtitle}
           </p>
@@ -99,9 +99,9 @@ export const FileDropzone: React.FC<FileDropzoneProps> = ({
 
       {selectedFiles.length > 0 && (
         <div style={{ marginTop: 24 }}>
-          <h4 style={{ fontSize: '0.95rem', fontWeight: 600, marginBottom: 12, color: 'var(--text-accent)' }}>
+          <h3 style={{ fontSize: '0.95rem', fontWeight: 600, marginBottom: 12, color: 'var(--text-accent)' }}>
             Selected Files ({selectedFiles.length}):
-          </h4>
+          </h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
             {selectedFiles.map((file, i) => (
               <div

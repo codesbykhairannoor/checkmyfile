@@ -130,7 +130,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool, onNav
         {/* Column 1: Brand & Intro */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 12, userSelect: 'none' }}>
-            <img src="/logo.png" alt="HandleMyFile Logo" style={{ height: 42, width: 'auto', objectFit: 'contain' }} />
+            <img src="/logo-icon.webp" alt="HandleMyFile Logo" width={42} height={42} style={{ height: 42, width: 'auto', objectFit: 'contain' }} />
             <span style={{ fontSize: 26, fontWeight: 800, color: 'var(--text-main)', letterSpacing: '-0.5px' }}>
               HandleMy<span className="gradient-text">File</span>
             </span>
@@ -156,19 +156,19 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool, onNav
 
         {/* Column 2: Popular Tools */}
         <div>
-          <h5 style={{ fontWeight: 800, marginBottom: 24, color: 'var(--text-main)', fontSize: '0.95rem', letterSpacing: '0.05em', textTransform: 'uppercase' }}>{t.navAllPdfTools || 'Popular Tools'}</h5>
+          <h2 style={{ fontWeight: 800, marginBottom: 24, color: 'var(--text-main)', fontSize: '0.95rem', letterSpacing: '0.05em', textTransform: 'uppercase' }}>{t.navAllPdfTools || 'Popular Tools'}</h2>
           {renderToolList(popularTools)}
         </div>
 
         {/* Column 3: Convert Tools */}
         <div>
-          <h5 style={{ fontWeight: 800, marginBottom: 24, color: 'var(--text-main)', fontSize: '0.95rem', letterSpacing: '0.05em', textTransform: 'uppercase' }}>{t.ocrTools || 'Convert & OCR'}</h5>
+          <h2 style={{ fontWeight: 800, marginBottom: 24, color: 'var(--text-main)', fontSize: '0.95rem', letterSpacing: '0.05em', textTransform: 'uppercase' }}>{t.ocrTools || 'Convert & OCR'}</h2>
           {renderToolList(convertTools)}
         </div>
 
         {/* Column 4: Resources & Company */}
         <div>
-          <h5 style={{ fontWeight: 800, marginBottom: 24, color: 'var(--text-main)', fontSize: '0.95rem', letterSpacing: '0.05em', textTransform: 'uppercase' }}>{t.footerCompany || 'Company'}</h5>
+          <h2 style={{ fontWeight: 800, marginBottom: 24, color: 'var(--text-main)', fontSize: '0.95rem', letterSpacing: '0.05em', textTransform: 'uppercase' }}>{t.footerCompany || 'Company'}</h2>
           <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 14, padding: 0, margin: 0 }}>
             {renderLinkItem(t.footerAbout || 'About Us', 'about')}
             {renderLinkItem(t.footerPrivacy || 'Privacy Policy', 'privacy')}
