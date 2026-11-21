@@ -57,7 +57,8 @@ export const RESEARCH_TRANSLATIONS: Record<string, ResearchTranslations> = {
   en: enResearch as ResearchTranslations,
 };
 
-const researchModules = typeof import.meta.glob === 'function'
+const isNodeRuntime = typeof process !== 'undefined' && Boolean(process.versions?.node);
+const researchModules = !isNodeRuntime
   ? import.meta.glob<{ default: ResearchTranslations }>('./locales/research/*.json')
   : {};
 

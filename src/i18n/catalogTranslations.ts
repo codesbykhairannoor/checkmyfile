@@ -6,7 +6,8 @@ export const catalogTranslations: Record<string, Record<string, CatalogEntry>> =
   en: enCatalog as Record<string, CatalogEntry>,
 };
 
-const catalogModules = typeof import.meta.glob === 'function'
+const isNodeRuntime = typeof process !== 'undefined' && Boolean(process.versions?.node);
+const catalogModules = !isNodeRuntime
   ? import.meta.glob<{ default: Record<string, CatalogEntry> }>('./locales/catalog/*.json')
   : {};
 

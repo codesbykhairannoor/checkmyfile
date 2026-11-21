@@ -5,7 +5,8 @@ export const authTranslations: Record<string, Record<string, string>> = {
   en: enAuth as Record<string, string>,
 };
 
-const authModules = typeof import.meta.glob === 'function'
+const isNodeRuntime = typeof process !== 'undefined' && Boolean(process.versions?.node);
+const authModules = !isNodeRuntime
   ? import.meta.glob<{ default: Record<string, string> }>('./locales/auth/*.json')
   : {};
 

@@ -552,7 +552,8 @@ export const UI_TRANSLATIONS: Record<string, UiDictionary> = {
   en: baseDict,
 };
 
-const uiModules = typeof import.meta.glob === 'function'
+const isNodeRuntime = typeof process !== 'undefined' && Boolean(process.versions?.node);
+const uiModules = !isNodeRuntime
   ? import.meta.glob<{ default: UiDictionary }>('./locales/ui/*.json')
   : {};
 

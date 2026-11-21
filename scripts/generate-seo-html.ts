@@ -1149,11 +1149,11 @@ const run = async () => {
   <title>Redirecting...</title>
   <meta name="robots" content="noindex, follow" />
   <link rel="canonical" href="${DOMAIN}${targetUrl}" />
-  <meta http-equiv="refresh" content="0; url=${DOMAIN}${targetUrl}" />
-  <script>window.location.replace("${DOMAIN}${targetUrl}");</script>
+  <meta http-equiv="refresh" content="0; url=${targetUrl}" />
+  <script>window.location.replace("${targetUrl}");</script>
 </head>
 <body style="font-family: sans-serif; padding: 40px; text-align: center;">
-  <p>Redirecting to <a href="${DOMAIN}${targetUrl}">${DOMAIN}${targetUrl}</a>...</p>
+  <p>Redirecting to <a href="${targetUrl}">${DOMAIN}${targetUrl}</a>...</p>
 </body>
 </html>`;
       writeFileSafe(targetFile, redirectHtml);
