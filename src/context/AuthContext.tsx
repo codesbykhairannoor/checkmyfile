@@ -1,28 +1,10 @@
 // src/context/AuthContext.tsx
 // Global Firebase Auth & Subscription (Free vs Pro) Provider for HandleMyFile
+// Engineered with lazy Firebase SDK loading so unauthenticated visitors & crawlers download 0 KB of Firebase/Firestore.
 
-import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
-import {
-  signInWithPopup,
-  signInWithRedirect,
-  getRedirectResult,
-  signInWithEmailAndPassword,
-  createUserWithEmailAndPassword,
-  sendPasswordResetEmail,
-  confirmPasswordReset,
-  sendEmailVerification,
-  applyActionCode,
-  deleteUser,
-  EmailAuthProvider,
-  reauthenticateWithCredential,
-  reauthenticateWithPopup,
-  type ActionCodeSettings,
-  signOut as firebaseSignOut,
-  onAuthStateChanged,
-  type User,
-} from 'firebase/auth';
-import { doc, getDoc, setDoc, updateDoc, deleteDoc, onSnapshot } from 'firebase/firestore';
-import { auth, db, googleProvider, isFirebaseConfigured } from '../config/firebase';
+import React, { createContext, useContext, useState, useEffect, useCallback, useRef } from 'react';
+import type { ActionCodeSettings, User } from 'firebase/auth';
+import { isFirebaseConfigured, getFirebaseClient } from '../config/firebase';
 import type { UserProfile, AuthContextType } from '../types/auth';
 import { getCurrentMonthKey } from '../utils/batchQuota';
 import { isDisposableEmail } from '../utils/disposableEmailBlocker';
@@ -37,6 +19,8 @@ export const isFounderLifetimeEmail = (email?: string | null): boolean => {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
+const AUTH_SESSION_HINT_KEY = 'hmf_auth_session';
+
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<User | null>(null);
   const [profile, setProfile] = useState<UserProfile | null>(null);
@@ -45,6 +29,11 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState<boolean>(false);
   const [isChangePasswordModalOpen, setIsChangePasswordModalOpen] = useState<boolean>(false);
   const [isLogoutConfirmOpen, setIsLogoutConfirmOpen] = useState<boolean>(false);
+
+  const authListenerBoundRef = useRef(false);
+  const authInitPromiseRef = useRef<Promise<void> | null>(null);
+  const unsubAuthRef = useRef<(() => void) | null>(null);
+  const unsubSnapshotRef = useRef<(() => void) | null>(null);
 
   const fetchOrCreateProfile = useCallback(async (firebaseUser: User): Promise<UserProfile> => {
     const monthKey = getCurrentMonthKey();
@@ -68,11 +57,13 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       monthlyOcrExcelResetMonth: monthKey,
     };
 
+    const { db } = await getFirebaseClient();
     if (!db) {
       return fallbackProfile;
     }
 
     try {
+      const { doc, getDoc, setDoc, updateDoc } = await import('firebase/firestore');
       const userDocRef = doc(db, 'users', firebaseUser.uid);
       const userDocSnap = await getDoc(userDocRef);
 
@@ -146,7 +137,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           monthlyCryptoAuditUsed: isFounder ? 0 : cryptoAuditUsed,
           monthlyCryptoAuditResetMonth: cryptoMonth,
           monthlyOcrExcelUsed: isFounder ? 0 : ocrExcelUsed,
-          monthlyOcrExcelResetMonth: ocrMonth,
+          monthlyOcrExcelResetMonth: monthKey,
         };
       } else {
         await setDoc(userDocRef, fallbackProfile);
@@ -157,6 +148,128 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       return fallbackProfile;
     }
   }, []);
+
+  const ensureFirebaseSubscribed = useCallback(async () => {
+    if (authListenerBoundRef.current) return;
+    if (authInitPromiseRef.current) return authInitPromiseRef.current;
+
+    authInitPromiseRef.current = (async () => {
+      if (!isFirebaseConfigured) {
+        setLoading(false);
+        return;
+      }
+
+      const { auth, db } = await getFirebaseClient();
+      if (!auth) {
+        setLoading(false);
+        return;
+      }
+
+      const [{ getRedirectResult, onAuthStateChanged }, { doc, onSnapshot }] = await Promise.all([
+        import('firebase/auth'),
+        import('firebase/firestore'),
+      ]);
+
+      // Handle sign-in redirect result if popup was blocked
+      getRedirectResult(auth)
+        .then(async (result) => {
+          if (result?.user) {
+            try {
+              localStorage.setItem(AUTH_SESSION_HINT_KEY, '1');
+            } catch (_) { }
+            try {
+              const userProfile = await fetchOrCreateProfile(result.user);
+              setProfile(userProfile);
+              setIsAuthModalOpen(false);
+            } catch (e) {
+              console.error('Error fetching profile from redirect result:', e);
+            }
+          }
+        })
+        .catch((err) => {
+          if (err?.code !== 'auth/popup-closed-by-user') {
+            console.error('Google Redirect Sign-In Error:', err);
+          }
+        });
+
+      unsubAuthRef.current = onAuthStateChanged(auth, async (currentUser) => {
+        if (unsubSnapshotRef.current) {
+          unsubSnapshotRef.current();
+          unsubSnapshotRef.current = null;
+        }
+
+        setUser(currentUser);
+        if (currentUser) {
+          try {
+            localStorage.setItem(AUTH_SESSION_HINT_KEY, '1');
+          } catch (_) { }
+          if (currentUser.emailVerified) {
+            setIsAuthModalOpen(false);
+          }
+          try {
+            const userProfile = await fetchOrCreateProfile(currentUser);
+            setProfile(userProfile);
+          } catch (error) {
+            console.error('Error fetching user profile:', error);
+          }
+
+          if (db) {
+            try {
+              const userDocRef = doc(db, 'users', currentUser.uid);
+              unsubSnapshotRef.current = onSnapshot(userDocRef, (docSnap) => {
+                if (docSnap.exists()) {
+                  const data = docSnap.data() as UserProfile;
+                  const monthKey = getCurrentMonthKey();
+                  const isFounder = isFounderLifetimeEmail(currentUser.email);
+
+                  const batchesUsed = data.monthlyBatchResetMonth === monthKey ? (data.monthlyBatchesUsed || 0) : 0;
+                  const cryptoAuditUsed = data.monthlyCryptoAuditResetMonth === monthKey ? (data.monthlyCryptoAuditUsed || 0) : 0;
+                  const ocrExcelUsed = data.monthlyOcrExcelResetMonth === monthKey ? (data.monthlyOcrExcelUsed || 0) : 0;
+
+                  try {
+                    localStorage.setItem(`hmf_batch_${currentUser.uid}_${monthKey}`, String(batchesUsed));
+                    localStorage.setItem(`hmf_crypto_audit_${currentUser.uid}_${monthKey}`, String(cryptoAuditUsed));
+                    localStorage.setItem(`hmf_ocr_excel_${currentUser.uid}_${monthKey}`, String(ocrExcelUsed));
+                  } catch (_) { }
+
+                  setProfile((prev) => ({
+                    ...(prev || data),
+                    ...data,
+                    plan: isFounder ? 'pro' : data.plan,
+                    subscriptionStatus: isFounder ? 'active' : data.subscriptionStatus,
+                    monthlyBatchesUsed: isFounder ? 0 : batchesUsed,
+                    monthlyBatchResetMonth: monthKey,
+                    monthlyCryptoAuditUsed: isFounder ? 0 : cryptoAuditUsed,
+                    monthlyCryptoAuditResetMonth: monthKey,
+                    monthlyOcrExcelUsed: isFounder ? 0 : ocrExcelUsed,
+                    monthlyOcrExcelResetMonth: monthKey,
+                  }));
+
+                  window.dispatchEvent(new Event('batch-quota-updated'));
+                  window.dispatchEvent(new Event('crypto-audit-quota-updated'));
+                  window.dispatchEvent(new Event('ocr-excel-quota-updated'));
+                }
+              }, (err) => {
+                console.warn('Firestore onSnapshot listener error:', err);
+              });
+            } catch (e) {
+              console.warn('Failed to attach onSnapshot:', e);
+            }
+          }
+        } else {
+          try {
+            localStorage.removeItem(AUTH_SESSION_HINT_KEY);
+          } catch (_) { }
+          setProfile(null);
+        }
+        setLoading(false);
+      });
+
+      authListenerBoundRef.current = true;
+    })();
+
+    return authInitPromiseRef.current;
+  }, [fetchOrCreateProfile]);
 
   const refreshProfile = useCallback(async () => {
     if (!user) return;
@@ -169,118 +282,70 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }, [user, fetchOrCreateProfile]);
 
   useEffect(() => {
-    if (!auth || !isFirebaseConfigured) {
+    if (!isFirebaseConfigured) {
       setLoading(false);
       return;
     }
 
-    // Handle sign-in redirect result if popup was blocked
-    getRedirectResult(auth)
-      .then(async (result) => {
-        if (result?.user) {
-          try {
-            const userProfile = await fetchOrCreateProfile(result.user);
-            setProfile(userProfile);
-            setIsAuthModalOpen(false);
-          } catch (e) {
-            console.error('Error fetching profile from redirect result:', e);
+    let cancelled = false;
+    const detectExistingSession = async () => {
+      try {
+        const search = typeof window !== 'undefined' ? window.location.search : '';
+        const hasAuthActionQuery = search.includes('mode=') || search.includes('oobCode=');
+        const hasHint = localStorage.getItem(AUTH_SESSION_HINT_KEY) === '1';
+
+        if (hasAuthActionQuery || hasHint) {
+          await ensureFirebaseSubscribed();
+          return;
+        }
+
+        // Fast native IndexedDB check (0 KB Firebase loaded for clean guests & crawlers)
+        if (typeof indexedDB !== 'undefined' && typeof indexedDB.databases === 'function') {
+          const dbs = await indexedDB.databases().catch(() => []);
+          if (!cancelled && Array.isArray(dbs) && dbs.some((d) => d.name === 'firebaseLocalStorageDb')) {
+            await ensureFirebaseSubscribed();
+            return;
           }
         }
-      })
-      .catch((err) => {
-        if (err?.code !== 'auth/popup-closed-by-user') {
-          console.error('Google Redirect Sign-In Error:', err);
-        }
-      });
-
-    let unsubscribeSnapshot: (() => void) | null = null;
-
-    const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
-      if (unsubscribeSnapshot) {
-        unsubscribeSnapshot();
-        unsubscribeSnapshot = null;
+      } catch (_) {
+        // Ignore detection errors
       }
-
-      setUser(currentUser);
-      if (currentUser) {
-        // Only close auth modal if user is verified (e.g. Google sign-in or verified user)
-        if (currentUser.emailVerified) {
-          setIsAuthModalOpen(false);
-        }
-        try {
-          const userProfile = await fetchOrCreateProfile(currentUser);
-          setProfile(userProfile);
-        } catch (error) {
-          console.error('Error fetching user profile:', error);
-        }
-
-        // Live real-time Firestore sync across tabs, devices, and quota operations
-        if (db) {
-          try {
-            const userDocRef = doc(db, 'users', currentUser.uid);
-            unsubscribeSnapshot = onSnapshot(userDocRef, (docSnap) => {
-              if (docSnap.exists()) {
-                const data = docSnap.data() as UserProfile;
-                const monthKey = getCurrentMonthKey();
-                const isFounder = isFounderLifetimeEmail(currentUser.email);
-
-                const batchesUsed = data.monthlyBatchResetMonth === monthKey ? (data.monthlyBatchesUsed || 0) : 0;
-                const cryptoAuditUsed = data.monthlyCryptoAuditResetMonth === monthKey ? (data.monthlyCryptoAuditUsed || 0) : 0;
-                const ocrExcelUsed = data.monthlyOcrExcelResetMonth === monthKey ? (data.monthlyOcrExcelUsed || 0) : 0;
-
-                try {
-                  localStorage.setItem(`hmf_batch_${currentUser.uid}_${monthKey}`, String(batchesUsed));
-                  localStorage.setItem(`hmf_crypto_audit_${currentUser.uid}_${monthKey}`, String(cryptoAuditUsed));
-                  localStorage.setItem(`hmf_ocr_excel_${currentUser.uid}_${monthKey}`, String(ocrExcelUsed));
-                } catch (_) { }
-
-                setProfile((prev) => ({
-                  ...(prev || data),
-                  ...data,
-                  plan: isFounder ? 'pro' : data.plan,
-                  subscriptionStatus: isFounder ? 'active' : data.subscriptionStatus,
-                  monthlyBatchesUsed: isFounder ? 0 : batchesUsed,
-                  monthlyBatchResetMonth: monthKey,
-                  monthlyCryptoAuditUsed: isFounder ? 0 : cryptoAuditUsed,
-                  monthlyCryptoAuditResetMonth: monthKey,
-                  monthlyOcrExcelUsed: isFounder ? 0 : ocrExcelUsed,
-                  monthlyOcrExcelResetMonth: monthKey,
-                }));
-
-                window.dispatchEvent(new Event('batch-quota-updated'));
-                window.dispatchEvent(new Event('crypto-audit-quota-updated'));
-                window.dispatchEvent(new Event('ocr-excel-quota-updated'));
-              }
-            }, (err) => {
-              console.warn('Firestore onSnapshot listener error:', err);
-            });
-          } catch (e) {
-            console.warn('Failed to attach onSnapshot:', e);
-          }
-        }
-      } else {
-        setProfile(null);
-      }
-      setLoading(false);
-    });
-
-    return () => {
-      unsubscribe();
-      if (unsubscribeSnapshot) {
-        unsubscribeSnapshot();
+      if (!cancelled) {
+        setLoading(false);
       }
     };
-  }, [fetchOrCreateProfile]);
+
+    detectExistingSession();
+
+    return () => {
+      cancelled = true;
+      if (unsubAuthRef.current) {
+        unsubAuthRef.current();
+        unsubAuthRef.current = null;
+      }
+      if (unsubSnapshotRef.current) {
+        unsubSnapshotRef.current();
+        unsubSnapshotRef.current = null;
+      }
+    };
+  }, [ensureFirebaseSubscribed]);
 
   const signInWithGoogle = async () => {
+    await ensureFirebaseSubscribed();
+    const { auth, googleProvider } = await getFirebaseClient();
     if (!isFirebaseConfigured || !auth || !googleProvider) {
       throw new Error(
         'Firebase belum dikonfigurasi. Silakan isi konfigurasi VITE_FIREBASE_* di file .env.local.'
       );
     }
 
+    const { signInWithPopup, signInWithRedirect } = await import('firebase/auth');
+
     try {
       const result = await signInWithPopup(auth, googleProvider);
+      try {
+        localStorage.setItem(AUTH_SESSION_HINT_KEY, '1');
+      } catch (_) { }
       const userProfile = await fetchOrCreateProfile(result.user);
       setProfile(userProfile);
       setIsAuthModalOpen(false);
@@ -299,19 +364,27 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const signInWithEmail = async (email: string, password: string) => {
+    await ensureFirebaseSubscribed();
+    const { auth } = await getFirebaseClient();
     if (!isFirebaseConfigured || !auth) {
       throw new Error(
         'Firebase belum dikonfigurasi. Silakan isi konfigurasi VITE_FIREBASE_* di file .env.local.'
       );
     }
 
+    const { signInWithEmailAndPassword } = await import('firebase/auth');
     const result = await signInWithEmailAndPassword(auth, email.trim(), password);
+    try {
+      localStorage.setItem(AUTH_SESSION_HINT_KEY, '1');
+    } catch (_) { }
     const userProfile = await fetchOrCreateProfile(result.user);
     setProfile(userProfile);
     setIsAuthModalOpen(false);
   };
 
   const sendVerificationEmail = async (targetUser?: User | null) => {
+    await ensureFirebaseSubscribed();
+    const { auth } = await getFirebaseClient();
     if (!isFirebaseConfigured || !auth) {
       throw new Error('Firebase belum dikonfigurasi.');
     }
@@ -321,7 +394,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       throw new Error('No user currently authenticated.');
     }
 
-    // Set auth language to active UI language or English
     let activeLang = 'en';
     if (typeof window !== 'undefined') {
       const pathSeg = window.location.pathname.replace(/^\/+/, '').split('/')[0];
@@ -335,7 +407,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
     const currentOrigin = typeof window !== 'undefined' ? window.location.origin : 'https://handlemyfile.com';
 
-    // 1. First try custom branded HandleMyFile email via Serverless Resend API (0% HelpMyIMG traces)
     if (userToVerify.email) {
       try {
         const response = await fetch('/api/send-verification-email/', {
@@ -359,9 +430,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       }
     }
 
-    // 2. Client SDK fallback with scoped actionCodeSettings
+    const { sendEmailVerification } = await import('firebase/auth');
     const actionCodeSettings: ActionCodeSettings = {
-      // Directs strictly back to HandleMyFile to avoid mixing with other sites
       url: `${currentOrigin}/?mode=verifyEmail`,
       handleCodeInApp: true,
     };
@@ -370,7 +440,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       await sendEmailVerification(userToVerify, actionCodeSettings);
     } catch (err: any) {
       if (err?.code === 'auth/unauthorized-continue-uri') {
-        // Fallback without actionCodeSettings if domain is not yet whitelisted in Firebase
         await sendEmailVerification(userToVerify);
       } else {
         throw err;
@@ -379,9 +448,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const verifyEmailWithCode = async (oobCode: string) => {
+    await ensureFirebaseSubscribed();
+    const { auth } = await getFirebaseClient();
     if (!isFirebaseConfigured || !auth) {
       throw new Error('Firebase belum dikonfigurasi.');
     }
+    const { applyActionCode } = await import('firebase/auth');
     await applyActionCode(auth, oobCode);
     if (auth.currentUser) {
       await auth.currentUser.reload();
@@ -391,6 +463,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const reloadUser = async () => {
+    await ensureFirebaseSubscribed();
+    const { auth } = await getFirebaseClient();
     if (!auth?.currentUser) return null;
     await auth.currentUser.reload();
     setUser({ ...auth.currentUser });
@@ -399,6 +473,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const signUpWithEmail = async (email: string, password: string) => {
+    await ensureFirebaseSubscribed();
+    const { auth } = await getFirebaseClient();
     if (!isFirebaseConfigured || !auth) {
       throw new Error(
         'Firebase belum dikonfigurasi. Silakan isi konfigurasi VITE_FIREBASE_* di file .env.local.'
@@ -412,12 +488,15 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       throw err;
     }
 
+    const { createUserWithEmailAndPassword } = await import('firebase/auth');
     const result = await createUserWithEmailAndPassword(auth, trimmedEmail, password);
+    try {
+      localStorage.setItem(AUTH_SESSION_HINT_KEY, '1');
+    } catch (_) { }
     const userProfile = await fetchOrCreateProfile(result.user);
     setProfile(userProfile);
     setIsAuthModalOpen(true);
 
-    // Automatically send verification email specifically for HandleMyFile
     try {
       await sendVerificationEmail(result.user);
     } catch (verifErr) {
@@ -426,6 +505,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const sendPasswordReset = async (email: string) => {
+    await ensureFirebaseSubscribed();
+    const { auth } = await getFirebaseClient();
     if (!isFirebaseConfigured || !auth) {
       throw new Error(
         'Firebase belum dikonfigurasi. Silakan isi konfigurasi VITE_FIREBASE_* di file .env.local.'
@@ -433,6 +514,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
 
     const currentOrigin = typeof window !== 'undefined' ? window.location.origin : 'https://handlemyfile.com';
+    const { sendPasswordResetEmail } = await import('firebase/auth');
 
     try {
       const response = await fetch('/api/reset-password/', {
@@ -453,7 +535,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           throw err;
         }
 
-        // If serverless endpoint is not available (e.g., local vite dev without vercel api), fall back to client SDK
         if (response.status === 404 || response.status === 500) {
           console.warn('Custom branded reset API unavailable, falling back to Firebase client SDK...');
           const actionCodeSettings = {
@@ -478,19 +559,27 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const confirmNewPassword = async (oobCode: string, newPassword: string) => {
+    await ensureFirebaseSubscribed();
+    const { auth } = await getFirebaseClient();
     if (!isFirebaseConfigured || !auth) {
       throw new Error(
         'Firebase belum dikonfigurasi. Silakan isi konfigurasi VITE_FIREBASE_* di file .env.local.'
       );
     }
 
+    const { confirmPasswordReset } = await import('firebase/auth');
     await confirmPasswordReset(auth, oobCode, newPassword);
   };
 
   const signOut = async () => {
+    const { auth } = await getFirebaseClient();
     if (!auth) return;
     try {
+      const { signOut: firebaseSignOut } = await import('firebase/auth');
       await firebaseSignOut(auth);
+      try {
+        localStorage.removeItem(AUTH_SESSION_HINT_KEY);
+      } catch (_) { }
       setUser(null);
       setProfile(null);
       window.dispatchEvent(new Event('batch-quota-updated'));
@@ -501,35 +590,47 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   };
 
-  const openAuthModal = () => setIsAuthModalOpen(true);
+  const openAuthModal = () => {
+    ensureFirebaseSubscribed();
+    setIsAuthModalOpen(true);
+  };
   const closeAuthModal = () => setIsAuthModalOpen(false);
 
-  const openDeleteModal = () => setIsDeleteModalOpen(true);
+  const openDeleteModal = () => {
+    ensureFirebaseSubscribed();
+    setIsDeleteModalOpen(true);
+  };
   const closeDeleteModal = () => setIsDeleteModalOpen(false);
 
-  const openChangePasswordModal = () => setIsChangePasswordModalOpen(true);
+  const openChangePasswordModal = () => {
+    ensureFirebaseSubscribed();
+    setIsChangePasswordModalOpen(true);
+  };
   const closeChangePasswordModal = () => setIsChangePasswordModalOpen(false);
 
   const openLogoutConfirmModal = () => setIsLogoutConfirmOpen(true);
   const closeLogoutConfirmModal = () => setIsLogoutConfirmOpen(false);
 
   const deleteAccount = async (passwordConfirmation?: string) => {
+    await ensureFirebaseSubscribed();
+    const { auth, db, googleProvider } = await getFirebaseClient();
     if (!auth || !auth.currentUser) {
       throw new Error('No user currently authenticated.');
     }
+
+    const [{ EmailAuthProvider, reauthenticateWithCredential, reauthenticateWithPopup, deleteUser }, { doc, deleteDoc }] =
+      await Promise.all([import('firebase/auth'), import('firebase/firestore')]);
 
     const currentUser = auth.currentUser;
     const uid = currentUser.uid;
     const isPasswordProvider = currentUser.providerData.some((p) => p.providerId === 'password');
 
-    // If password user provided confirmation, verify credentials first
     if (isPasswordProvider && passwordConfirmation && currentUser.email) {
       const credential = EmailAuthProvider.credential(currentUser.email, passwordConfirmation);
       await reauthenticateWithCredential(currentUser, credential);
     }
 
     const performDeletion = async () => {
-      // 1. Delete Firestore user document
       if (db) {
         try {
           await deleteDoc(doc(db, 'users', uid));
@@ -538,8 +639,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         }
       }
 
-      // 2. Clear local storage records related to user across all 4 apps
       try {
+        localStorage.removeItem(AUTH_SESSION_HINT_KEY);
         const keysToRemove: string[] = [];
         for (let i = 0; i < localStorage.length; i++) {
           const k = localStorage.key(i);
@@ -550,7 +651,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         keysToRemove.forEach((k) => localStorage.removeItem(k));
       } catch (_) { }
 
-      // 3. Delete user account from Firebase Auth
       await deleteUser(currentUser);
 
       setUser(null);
@@ -576,7 +676,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
             await performDeletion();
             return;
           }
-        } else if (isGoogleProvider) {
+        } else if (isGoogleProvider && googleProvider) {
           await reauthenticateWithPopup(currentUser, googleProvider);
           await performDeletion();
           return;
@@ -590,7 +690,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     if (typeof window !== 'undefined') {
       (window as unknown as { __openAuthModal?: () => void }).__openAuthModal = openAuthModal;
     }
-  }, []);
+  });
 
   const isPro = Boolean(
     isFounderLifetimeEmail(user?.email) ||

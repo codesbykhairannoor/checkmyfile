@@ -237,7 +237,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onSelectTool, onNav
                 borderRadius: 9999,
                 background: 'rgba(88, 101, 242, 0.1)',
                 border: '1px solid rgba(88, 101, 242, 0.3)',
-                color: '#5865F2',
+                color: 'var(--discord-text, #4338ca)',
                 fontSize: '0.8rem',
                 fontWeight: 700,
                 textDecoration: 'none'

@@ -12,16 +12,23 @@ const SecurityPage = React.lazy(() => import('./pages/SecurityPage').then(m => (
 const UseCasesPage = React.lazy(() => import('./pages/UseCasesPage').then(m => ({ default: m.UseCasesPage })));
 const ComparePage = React.lazy(() => import('./pages/ComparePage').then(m => ({ default: m.ComparePage })));
 const LanguagesPage = React.lazy(() => import('./pages/LanguagesPage').then(m => ({ default: m.LanguagesPage })));
-import { AuthModal } from './components/auth/AuthModal';
-import { DeleteAccountModal } from './components/auth/DeleteAccountModal';
-import { ChangePasswordModal } from './components/auth/ChangePasswordModal';
-import { LogoutConfirmModal } from './components/auth/LogoutConfirmModal';
+const AuthModal = React.lazy(() => import('./components/auth/AuthModal').then(m => ({ default: m.AuthModal })));
+const DeleteAccountModal = React.lazy(() => import('./components/auth/DeleteAccountModal').then(m => ({ default: m.DeleteAccountModal })));
+const ChangePasswordModal = React.lazy(() => import('./components/auth/ChangePasswordModal').then(m => ({ default: m.ChangePasswordModal })));
+const LogoutConfirmModal = React.lazy(() => import('./components/auth/LogoutConfirmModal').then(m => ({ default: m.LogoutConfirmModal })));
 import { UnverifiedEmailBanner } from './components/auth/UnverifiedEmailBanner';
+import { useAuth } from './context/AuthContext';
 import { getToolBySlugAndLang, getToolById, type ToolDefinition } from './catalog/toolsCatalog';
 import { isValidLanguageCode } from './i18n/languages';
+import { loadUiLocale } from './i18n/translations';
+import { loadCatalogLocale } from './i18n/catalogTranslations';
+import { loadResearchLocale } from './i18n/researchTranslations';
+import { loadAuthLocale } from './i18n/authTranslations';
 import { getStaticPageIdFromSlug, getLocalizedStaticSlug, type StaticPageId } from './i18n/staticSlugs';
 
 export const App: React.FC = () => {
+  const { isAuthModalOpen, isDeleteModalOpen, isChangePasswordModalOpen, isLogoutConfirmOpen } = useAuth();
+  const [authLocaleReady, setAuthLocaleReady] = useState(false);
   const parseUrlState = () => {
     const pathname = typeof window !== 'undefined' ? window.location.pathname.replace(/^\/+/, '') : '';
     const segments = pathname.split('/').filter(Boolean);
@@ -128,9 +135,21 @@ export const App: React.FC = () => {
     }
   }, [isLightMode]);
 
-  const handleSelectLang = (code: string) => {
+  useEffect(() => {
+    if (isAuthModalOpen || isDeleteModalOpen || isChangePasswordModalOpen || isLogoutConfirmOpen) {
+      loadAuthLocale(currentLang).then(() => setAuthLocaleReady((prev) => !prev));
+    }
+  }, [isAuthModalOpen, isDeleteModalOpen, isChangePasswordModalOpen, isLogoutConfirmOpen, currentLang]);
+
+  const handleSelectLang = async (code: string) => {
     // Track language switch (GEO signal)
     trackLanguageSwitched({ from_language: currentLang, to_language: code });
+    await Promise.all([
+      loadUiLocale(code),
+      loadCatalogLocale(code),
+      loadResearchLocale(code),
+      loadAuthLocale(code),
+    ]);
     setCurrentLang(code);
     try {
       localStorage.setItem('hmf_user_lang', code);
@@ -227,10 +246,14 @@ export const App: React.FC = () => {
       </div>
 
       {!isEditorActive && <Footer currentLang={currentLang} onSelectTool={handleSelectTool} onNavigatePage={handleNavigatePage} />}
-      <AuthModal currentLang={currentLang} />
-      <DeleteAccountModal currentLang={currentLang} />
-      <ChangePasswordModal currentLang={currentLang} />
-      <LogoutConfirmModal currentLang={currentLang} />
+      {(isAuthModalOpen || isDeleteModalOpen || isChangePasswordModalOpen || isLogoutConfirmOpen) && (
+        <React.Suspense fallback={null} key={String(authLocaleReady)}>
+          {isAuthModalOpen && <AuthModal currentLang={currentLang} />}
+          {isDeleteModalOpen && <DeleteAccountModal currentLang={currentLang} />}
+          {isChangePasswordModalOpen && <ChangePasswordModal currentLang={currentLang} />}
+          {isLogoutConfirmOpen && <LogoutConfirmModal currentLang={currentLang} />}
+        </React.Suspense>
+      )}
     </div>
   );
 };

@@ -30,7 +30,10 @@ export default defineConfig({
           !dep.includes('vendor-tesseract') &&
           !dep.includes('vendor-html2canvas') &&
           !dep.includes('vendor-handlemyfile-wasm') &&
-          !dep.includes('vendor-fflate')
+          !dep.includes('vendor-fflate') &&
+          !dep.includes('firebase') &&
+          !dep.includes('re2js') &&
+          !dep.includes('AuthModal')
         );
       }
     },

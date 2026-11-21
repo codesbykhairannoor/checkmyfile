@@ -2,8 +2,6 @@
 // Handles 3-free-batches/month limit for authenticated free users and gates batch processing.
 // Firebase Firestore is the authoritative source of truth.
 
-import { doc, getDoc, updateDoc } from 'firebase/firestore';
-import { db } from '../config/firebase';
 import type { UserProfile } from '../types/auth';
 
 export const MAX_FREE_BATCHES_PER_MONTH = 3;
@@ -48,9 +46,14 @@ export const recordBatchUsage = async (uid: string): Promise<number> => {
 
   let next = getBatchUsage(uid) + 1;
 
-  // Direct authoritative update to Firestore
-  if (db) {
-    try {
+  // Direct authoritative update to Firestore (lazy-loaded)
+  try {
+    const [{ getFirebaseClient }, { doc, getDoc, updateDoc }] = await Promise.all([
+      import('../config/firebase'),
+      import('firebase/firestore'),
+    ]);
+    const { db } = await getFirebaseClient();
+    if (db) {
       const userRef = doc(db, 'users', uid);
       const snap = await getDoc(userRef);
       if (snap.exists()) {
@@ -63,9 +66,9 @@ export const recordBatchUsage = async (uid: string): Promise<number> => {
           monthlyBatchResetMonth: monthKey,
         });
       }
-    } catch (err) {
-      console.warn('Firestore batch quota sync warning:', err);
     }
+  } catch (err) {
+    console.warn('Firestore batch quota sync warning:', err);
   }
 
   // Update local cache

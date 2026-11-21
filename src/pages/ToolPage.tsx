@@ -6,11 +6,12 @@ import { RelatedTools } from '../components/seo/RelatedTools';
 import { FileDropzone } from '../components/common/FileDropzone';
 import { ProgressBar } from '../components/common/ProgressBar';
 import { SeoRichSections, useSeoData } from '../components/common/SeoRichSections';
-import { ToolResearchSection } from '../components/seo-sections/ToolResearchSection';
+const ToolResearchSection = React.lazy(() => import('../components/seo-sections/ToolResearchSection').then(m => ({ default: m.ToolResearchSection })));
 import { Download, Crown, Sparkles } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
-import { ProGateModal } from '../components/common/ProGateModal';
-import { BatchGateModal, type BatchGateType } from '../components/common/BatchGateModal';
+const ProGateModal = React.lazy(() => import('../components/common/ProGateModal').then(m => ({ default: m.ProGateModal })));
+const BatchGateModal = React.lazy(() => import('../components/common/BatchGateModal').then(m => ({ default: m.BatchGateModal })));
+import type { BatchGateType } from '../components/common/BatchGateModal';
 import { checkBatchQuota, recordBatchUsage } from '../utils/batchQuota';
 import { checkCryptoAuditQuota, recordCryptoAuditUsage } from '../utils/cryptoAuditQuota';
 import { checkOcrExcelQuota, recordOcrExcelUsage } from '../utils/ocrExcelQuota';
@@ -649,10 +650,12 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
             ) : (
               <>
                 <SeoRichSections data={seoData.data} />
-                {tool.id.includes('redact') && <ToolResearchSection toolType="redact" lang={currentLang} />}
-                {(tool.id.includes('ocr') || tool.id.includes('scanned')) && <ToolResearchSection toolType="ocr" lang={currentLang} />}
-                {tool.id.includes('compress') && <ToolResearchSection toolType="compress" lang={currentLang} />}
-                {tool.id.includes('sign') && <ToolResearchSection toolType="sign" lang={currentLang} />}
+                <React.Suspense fallback={null}>
+                  {tool.id.includes('redact') && <ToolResearchSection toolType="redact" lang={currentLang} />}
+                  {(tool.id.includes('ocr') || tool.id.includes('scanned')) && <ToolResearchSection toolType="ocr" lang={currentLang} />}
+                  {tool.id.includes('compress') && <ToolResearchSection toolType="compress" lang={currentLang} />}
+                  {tool.id.includes('sign') && <ToolResearchSection toolType="sign" lang={currentLang} />}
+                </React.Suspense>
               </>
             )}
           </>
@@ -761,28 +764,36 @@ export const ToolPage: React.FC<ToolPageProps> = ({ tool, currentLang, onEditorA
 
       </article>
 
-      <ProGateModal
-        isOpen={showProGateModal}
-        onClose={() => setShowProGateModal(false)}
-        currentLang={currentLang}
-        title={proGateReason.title}
-        description={proGateReason.desc}
-        featureName={proGateReason.featureName}
-        filesCount={proGateReason.filesCount || files.length}
-        onContinueFree={files.length > 10 ? () => {
-          setFiles(files.slice(0, 10));
-          setShowProGateModal(false);
-        } : undefined}
-        continueFreeLabel={tAuth.batch_continue_free_btn || 'Process First 10 Files (Free)'}
-      />
+      {(showProGateModal || showBatchGateModal) && (
+        <React.Suspense fallback={null}>
+          {showProGateModal && (
+            <ProGateModal
+              isOpen={showProGateModal}
+              onClose={() => setShowProGateModal(false)}
+              currentLang={currentLang}
+              title={proGateReason.title}
+              description={proGateReason.desc}
+              featureName={proGateReason.featureName}
+              filesCount={proGateReason.filesCount || files.length}
+              onContinueFree={files.length > 10 ? () => {
+                setFiles(files.slice(0, 10));
+                setShowProGateModal(false);
+              } : undefined}
+              continueFreeLabel={tAuth.batch_continue_free_btn || 'Process First 10 Files (Free)'}
+            />
+          )}
 
-      <BatchGateModal
-        isOpen={showBatchGateModal}
-        onClose={() => setShowBatchGateModal(false)}
-        type={batchGateType}
-        currentLang={currentLang}
-        filesCount={files.length}
-      />
+          {showBatchGateModal && (
+            <BatchGateModal
+              isOpen={showBatchGateModal}
+              onClose={() => setShowBatchGateModal(false)}
+              type={batchGateType}
+              currentLang={currentLang}
+              filesCount={files.length}
+            />
+          )}
+        </React.Suspense>
+      )}
     </main>
   );
 };

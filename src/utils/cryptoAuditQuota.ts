@@ -2,8 +2,6 @@
 // Handles 3-free-crypto-audit-certificates/month limit for authenticated free users and gates PRO access.
 // Firebase Firestore is the authoritative source of truth.
 
-import { doc, getDoc, updateDoc } from 'firebase/firestore';
-import { db } from '../config/firebase';
 import type { UserProfile } from '../types/auth';
 
 export const MAX_FREE_CRYPTO_AUDIT_PER_MONTH = 3;
@@ -48,9 +46,14 @@ export const recordCryptoAuditUsage = async (uid: string): Promise<number> => {
 
   let next = getCryptoAuditUsage(uid) + 1;
 
-  // Direct authoritative update to Firestore
-  if (db) {
-    try {
+  // Direct authoritative update to Firestore (lazy-loaded)
+  try {
+    const [{ getFirebaseClient }, { doc, getDoc, updateDoc }] = await Promise.all([
+      import('../config/firebase'),
+      import('firebase/firestore'),
+    ]);
+    const { db } = await getFirebaseClient();
+    if (db) {
       const userRef = doc(db, 'users', uid);
       const snap = await getDoc(userRef);
       if (snap.exists()) {
@@ -63,9 +66,9 @@ export const recordCryptoAuditUsage = async (uid: string): Promise<number> => {
           monthlyCryptoAuditResetMonth: monthKey,
         });
       }
-    } catch (err) {
-      console.warn('Firestore crypto audit quota sync warning:', err);
     }
+  } catch (err) {
+    console.warn('Firestore crypto audit quota sync warning:', err);
   }
 
   localStorage.setItem(`hmf_crypto_audit_${uid}_${monthKey}`, String(next));

@@ -1,9 +1,10 @@
 // src/config/firebase.ts
-// Inisialisasi Firebase App, Authentication, dan Firestore Database
+// Lazy initializer for Firebase App, Authentication, and Firestore Database
+// Keeping top-level free of firebase/* imports prevents ~750 KB from landing on unauthenticated initial page loads.
 
-import { initializeApp, getApps, type FirebaseApp } from 'firebase/app';
-import { getAuth, GoogleAuthProvider, type Auth } from 'firebase/auth';
-import { getFirestore, type Firestore } from 'firebase/firestore';
+import type { FirebaseApp } from 'firebase/app';
+import type { Auth, GoogleAuthProvider } from 'firebase/auth';
+import type { Firestore } from 'firebase/firestore';
 
 const env = (typeof import.meta !== 'undefined' && (import.meta as any)?.env) || {};
 
@@ -22,27 +23,43 @@ export const isFirebaseConfigured = Boolean(
   firebaseConfig.projectId
 );
 
-let app: FirebaseApp | null = null;
-let auth: Auth | null = null;
-let db: Firestore | null = null;
-let googleProvider: GoogleAuthProvider | null = null;
-
-if (isFirebaseConfigured) {
-  try {
-    app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
-    auth = getAuth(app);
-    db = getFirestore(app);
-    googleProvider = new GoogleAuthProvider();
-    googleProvider.setCustomParameters({
-      prompt: 'select_account',
-    });
-  } catch (error) {
-    console.error('Firebase initialization error:', error);
-  }
-} else {
-  console.warn(
-    '[HandleMyFile] Firebase credentials not configured. Please set VITE_FIREBASE_* in .env.local to enable real Firebase authentication.'
-  );
+export interface FirebaseClient {
+  app: FirebaseApp | null;
+  auth: Auth | null;
+  db: Firestore | null;
+  googleProvider: GoogleAuthProvider | null;
 }
 
-export { app, auth, db, googleProvider };
+let clientPromise: Promise<FirebaseClient> | null = null;
+let cachedClient: FirebaseClient | null = null;
+
+export const getFirebaseClient = async (): Promise<FirebaseClient> => {
+  if (cachedClient) return cachedClient;
+  if (!isFirebaseConfigured) {
+    cachedClient = { app: null, auth: null, db: null, googleProvider: null };
+    return cachedClient;
+  }
+  if (!clientPromise) {
+    clientPromise = (async () => {
+      try {
+        const [{ initializeApp, getApps }, { getAuth, GoogleAuthProvider }, { getFirestore }] = await Promise.all([
+          import('firebase/app'),
+          import('firebase/auth'),
+          import('firebase/firestore'),
+        ]);
+        const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+        const googleProvider = new GoogleAuthProvider();
+        googleProvider.setCustomParameters({ prompt: 'select_account' });
+        cachedClient = { app, auth, db, googleProvider };
+        return cachedClient;
+      } catch (error) {
+        console.error('Firebase initialization error:', error);
+        clientPromise = null;
+        return { app: null, auth: null, db: null, googleProvider: null };
+      }
+    })();
+  }
+  return clientPromise;
+};

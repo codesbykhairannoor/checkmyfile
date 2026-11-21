@@ -53,6 +53,8 @@
   --warning-color: #f59e0b;
   --error-color: #ef4444;
 
+  --brand-text-accessible: #fb7185;
+  --discord-text: #a5b4fc;
   --shadow-lg: 0 12px 35px -10px rgba(0, 0, 0, 0.65);
   --radius-sm: 8px;
   --radius-md: 12px;
@@ -71,7 +73,9 @@ body.light-theme {
 
   --text-main: #0f172a;
   --text-muted: #475569;
-  --text-accent: #e11d48;
+  --text-accent: #be123c;
+  --brand-text-accessible: #be123c;
+  --discord-text: #4338ca;
   --brand-glow: rgba(225, 29, 72, 0.18);
   --shadow-lg: 0 12px 35px -10px rgba(15, 23, 42, 0.08);
 }
